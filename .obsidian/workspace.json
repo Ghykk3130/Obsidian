@@ -8,91 +8,7 @@
         "type": "tabs",
         "children": [
           {
-            "id": "bb99afc8c85702fe",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "张量分析.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "张量分析"
-            }
-          },
-          {
-            "id": "a903decdde27b550",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "张量分析.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "张量分析"
-            }
-          },
-          {
-            "id": "64aa9bb452857fb1",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "张量分析.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "张量分析"
-            }
-          },
-          {
-            "id": "42923f8718893ebc",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "张量分析.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "张量分析"
-            }
-          },
-          {
-            "id": "0756e6393b080914",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Hamilton原理与Lagrange方程.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Hamilton原理与Lagrange方程"
-            }
-          },
-          {
-            "id": "58c3dc32d72cf733",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Liouville定理.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Liouville定理"
-            }
-          },
-          {
-            "id": "eeef19112465f200",
+            "id": "b54403d277b5ec43",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -106,259 +22,21 @@
             }
           },
           {
-            "id": "afc8aa43614de63c",
+            "id": "c9bc6dbbbb5a98da",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Experimental/Transistor.md",
+                "file": "多级展开.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Transistor"
-            }
-          },
-          {
-            "id": "4e64cbb634dbea43",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Experimental/Untitled.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Untitled"
-            }
-          },
-          {
-            "id": "dc21b9197a152010",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Untitled.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Untitled"
-            }
-          },
-          {
-            "id": "75fb29243ae128ba",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Experimental/Wye-Delta Transformation.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Wye-Delta Transformation"
-            }
-          },
-          {
-            "id": "c92f243986560d81",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Homework/Physics 402 Pre-class 1.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Physics 402 Pre-class 1"
-            }
-          },
-          {
-            "id": "de6188d8dda223b6",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Homework/Physics 402 real world optics 1.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Physics 402 real world optics 1"
-            }
-          },
-          {
-            "id": "922383a1809497a0",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Experimental/Cold amplifier.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Cold amplifier"
-            }
-          },
-          {
-            "id": "a751aecc10e6d83d",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "生成湮灭算符与角动量.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "生成湮灭算符与角动量"
-            }
-          },
-          {
-            "id": "9ce4b1029732f320",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Homework/Physics 511 Homework 0.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Physics 511 Homework 0"
-            }
-          },
-          {
-            "id": "9909e90fff3d12ab",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Homework/Physics 510 Homework 1.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Physics 510 Homework 1"
-            }
-          },
-          {
-            "id": "65732ec723215438",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Clebsch-Gordan系数.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Clebsch-Gordan系数"
-            }
-          },
-          {
-            "id": "3c3ebcd4ebf07935",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Homework/Physics 402 real world optics 1.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Physics 402 real world optics 1"
-            }
-          },
-          {
-            "id": "b5a5f8d91d67d5c9",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Homework/Physics 402 Pre-class 1.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Physics 402 Pre-class 1"
-            }
-          },
-          {
-            "id": "8079facb8f90ac7a",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Homework/Physics 510 Homework 1.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Physics 510 Homework 1"
-            }
-          },
-          {
-            "id": "1d348dcb5f7a03e7",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Piston-gas Model.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Piston-gas Model"
-            }
-          },
-          {
-            "id": "23a092bf650f7201",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Clebsch-Gordan系数.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Clebsch-Gordan系数"
-            }
-          },
-          {
-            "id": "98783f2ad0e34e00",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Homework/Physics 511 Homework 1.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Physics 511 Homework 1"
-            }
-          },
-          {
-            "id": "b54403d277b5ec43",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Experimental/Cold amplifier.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Cold amplifier"
+              "title": "多级展开"
             }
           }
         ],
-        "currentTab": 23
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -499,40 +177,42 @@
       "canvas:Create new canvas": false,
       "daily-notes:Open today's daily note": false,
       "templates:Insert template": false,
-      "command-palette:Open command palette": false
+      "command-palette:Open command palette": false,
+      "obsidian-git:Open Git source control": false
     }
   },
-  "active": "98783f2ad0e34e00",
+  "active": "c9bc6dbbbb5a98da",
   "lastOpenFiles": [
-    "群论.md",
+    "Test.md",
+    "势阱对称性与波函数对称性.md",
+    "守恒律.md",
     "Homework/Physics 511 Homework 1.md",
+    "Experimental/Cold amplifier.md",
+    "张量分析.md",
+    "Hamilton原理与Lagrange方程.md",
+    "Experimental/Transistor.md",
+    "Experimental/Untitled.md",
+    "Untitled.md",
+    "Experimental/Wye-Delta Transformation.md",
+    "Homework/Physics 402 Pre-class 1.md",
+    "Homework/Physics 402 real world optics 1.md",
+    "生成湮灭算符与角动量.md",
+    "Homework/Physics 511 Homework 0.md",
     "Homework/Physics 510 Homework 1.md",
+    "Clebsch-Gordan系数.md",
+    "Piston-gas Model.md",
+    "群论.md",
     "Pictures/Pasted image 20250905003456.png",
     "SU(2)和SO(3)的联系.md",
     "电流与电荷.md",
-    "Clebsch-Gordan系数.md",
-    "守恒律.md",
     "转动生成元.md",
     "Homework/Physics 402 problem set 1.md",
-    "Homework/Physics 402 Pre-class 1.md",
     "Fourier热传导定律.md",
     "Oxford solid state.md",
     "Untitled 1.md",
-    "Virial 定理.md",
-    "不确定关系.md",
-    "相对论电动力学.md",
-    "Spin以及spinor formalism的基变换.md",
-    "正规矩阵的对角化.md",
-    "张量分析.md",
-    "Piston-gas Model.md",
-    "Pedrottis' introduction to optics.md",
     "Pictures/Pasted image 20250903232009.png",
     "Pictures/Pasted image 20250903224637.png",
     "Pictures/Pasted image 20250903124522.png",
-    "Untitled.md",
-    "Homework/Physics 511 Homework 0.md",
-    "Homework/Physics 402 real world optics 2.md",
-    "Homework/Physics 402 real world optics 1.md",
     "Pictures/Pasted image 20250831230726.png",
     "Pictures/Pasted image 20250831222254.png",
     "Pictures/2a97c217740adf3629083a4d277d3f59.jpg",
