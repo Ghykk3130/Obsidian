@@ -160,14 +160,23 @@
               "icon": "lucide-list",
               "title": "Outline of Degenerate Fermi Gas"
             }
+          },
+          {
+            "id": "0b9f087504e74676",
+            "type": "leaf",
+            "state": {
+              "type": "git-view",
+              "state": {},
+              "icon": "git-pull-request",
+              "title": "Source Control"
+            }
           }
         ],
-        "currentTab": 1
+        "currentTab": 4
       }
     ],
     "direction": "horizontal",
-    "width": 200,
-    "collapsed": true
+    "width": 200
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -184,6 +193,7 @@
   "active": "c9bc6dbbbb5a98da",
   "lastOpenFiles": [
     "Test.md",
+    "多级展开.md",
     "势阱对称性与波函数对称性.md",
     "守恒律.md",
     "Homework/Physics 511 Homework 1.md",
@@ -209,7 +219,6 @@
     "Homework/Physics 402 problem set 1.md",
     "Fourier热传导定律.md",
     "Oxford solid state.md",
-    "Untitled 1.md",
     "Pictures/Pasted image 20250903232009.png",
     "Pictures/Pasted image 20250903224637.png",
     "Pictures/Pasted image 20250903124522.png",
