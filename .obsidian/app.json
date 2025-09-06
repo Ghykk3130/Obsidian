@@ -1,0 +1,15 @@
+{
+  "pdfExportSettings": {
+    "includeName": false,
+    "pageSize": "A5",
+    "landscape": false,
+    "margin": "0",
+    "downscalePercent": 100
+  },
+  "newFileLocation": "current",
+  "newFileFolderPath": "",
+  "attachmentFolderPath": "Pictures",
+  "autoPairBrackets": true,
+  "autoPairMarkdown": true,
+  "alwaysUpdateLinks": true
+}

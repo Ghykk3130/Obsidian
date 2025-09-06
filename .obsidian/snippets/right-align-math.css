@@ -1,0 +1,264 @@
+/*************************** Center callout ***************************/
+
+/* Hide callout */
+
+.callout[data-callout*="center"],
+.callout[data-callout*="center"] > .callout-content {
+  padding: 0;
+  margin: 0;
+  border: 0;
+  background-color: transparent;
+}
+.markdown-source-view.mod-cm6 .callout-content .callout[data-callout*="center"] {
+  margin: 0;
+}
+.callout[data-callout*="center"] > .callout-title {
+  display: none;
+}
+
+/* Align text center inside callout */
+
+.callout[data-callout*="center"] > .callout-content {
+  text-align: center;
+}
+
+/* Don't align text center inside nested callouts / code blocks */
+
+.callout[data-callout*="center"] > .callout-content > :is(.callout, pre) {
+  text-align: left;
+}
+
+/* Center lists */
+
+.callout[data-callout*="center"] > .callout-content > :is(ul, ol) {
+  display: table;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+/*************************** Right callout ***************************/
+
+/* Hide callouts */
+
+.callout[data-callout*="right"],
+.callout[data-callout*="right"] > .callout-content {
+  padding: 0;
+  margin: 0;
+  border: 0;
+  background-color: transparent;
+}
+.markdown-source-view.mod-cm6 .callout-content .callout[data-callout*="right"] {
+  margin: 0;
+}
+.callout[data-callout*="right"] > .callout-title {
+  display: none;
+}
+
+/* Align text right inside callout */
+
+.callout[data-callout*="right"] > .callout-content {
+  text-align: right;
+}
+
+/* Don't align text center inside nested callouts / code blocks */
+
+.callout[data-callout*="right"] > .callout-content > :is(.callout, pre) {
+  text-align: left;
+}
+
+/* Align right lists */
+
+.callout[data-callout*="right"] > .callout-content > :is(ul, ol) {
+  display: table;
+  margin-left: auto;
+}
+
+/*************************** Right callout - RTL List ***************************/
+
+/* Values from obsidian theme */
+
+:root {
+  --x-global-list-margin: 3ch;
+  --x-source-mode-bullet-list-spacing: 13px;
+  --x-source-mode-bullet-list-bullet-size: 6px;
+  --x-publish-bullet-list-spacing: 10px;
+  --x-publish-bullet-list-bullet-size: 5px;
+  --x-list-relative-margin: 0.8em;
+  --x-list-additionnal-fixed-margin: 3px;
+  --x-list-checkbox-top: 0.4em;
+}
+
+.workspace-leaf-content[data-mode="source"] {
+  --x-list-checkbox-top: 0.2em;
+}
+
+/* Align right lists's items */
+
+.callout[data-callout*="right"] > .callout-content :is(ul, ol) > li {
+  text-align: right;
+}
+
+/* Remove global left margin */
+
+.callout[data-callout*="right"] > .callout-content :is(ul, ol) > li {
+  margin-inline-start: 0;
+}
+
+/* Add global right margin */
+
+.callout[data-callout*="right"] > .callout-content :is(ul, ol) > li {
+  margin-inline-end: var(--x-global-list-margin);
+}
+
+/* Add nested list indents */
+
+.callout[data-callout*="right"]
+  > .callout-content
+  :is(ul, ol)
+  :is(ul, ol)
+  > li {
+  margin-inline-end: var(--list-indent);
+}
+
+/* Hide indentation guide to the left of nested lists items */
+
+.show-indentation-guide
+  .callout[data-callout*="right"]
+  > .callout-content
+  :is(ul, ol)
+  > li
+  > :is(ul, ol)::before {
+  display: none;
+}
+
+/* Show indentation guide to the right of nested lists items */
+
+.show-indentation-guide
+  .callout[data-callout*="right"]
+  > .callout-content
+  :is(ul, ol)
+  > li
+  > :is(ul, ol)::after {
+  content: "\200B";
+  position: absolute;
+  display: block;
+  inset-inline-end: var(--indentation-guide-reading-indent);
+  top: 0;
+  bottom: 0;
+  border-inline-start: var(--indentation-guide-width) solid
+    var(--indentation-guide-color);
+}
+
+/* [Source mode] [li] Show bullets to the right */
+
+.workspace-leaf-content[data-mode="source"]
+  .callout[data-callout*="right"]
+  > .callout-content
+  ul
+  > li:not(.task-list-item) {
+  list-style-type: none;
+}
+
+.workspace-leaf-content[data-mode="source"]
+  .callout[data-callout*="right"]
+  > .callout-content
+  ul
+  > li:not(.task-list-item)::before {
+  float: right;
+  content: "\2022";
+  color: var(--list-marker-color);
+
+  margin-inline-end: calc(
+    0px - var(--x-source-mode-bullet-list-spacing) -
+      var(--x-source-mode-bullet-list-bullet-size) -
+      var(--x-list-additionnal-fixed-margin)
+  );
+
+  font-size: calc(20px + var(--x-source-mode-bullet-list-bullet-size));
+  vertical-align: middle;
+  margin-bottom: calc(0px - var(--x-source-mode-bullet-list-bullet-size));
+  margin-top: calc(0px - var(--x-source-mode-bullet-list-bullet-size));
+}
+
+/* [Publish Website] [li] Show bullets to the right */
+
+.publish-renderer
+  .callout[data-callout*="right"]
+  > .callout-content
+  ul
+  > li:not(.task-list-item) {
+  list-style-type: none;
+}
+
+.publish-renderer
+  .callout[data-callout*="right"]
+  > .callout-content
+  ul
+  > li:not(.task-list-item)::before {
+  float: right;
+  content: "\2022";
+  color: var(--list-marker-color);
+
+  margin-inline-end: calc(
+    0px - var(--x-publish-bullet-list-spacing) -
+      var(--x-publish-bullet-list-bullet-size) -
+      var(--x-list-additionnal-fixed-margin)
+  );
+
+  font-size: calc(16px + var(--x-publish-bullet-list-bullet-size));
+  vertical-align: middle;
+  margin-bottom: calc(4px - var(--x-publish-bullet-list-bullet-size));
+  margin-top: calc(4px - var(--x-publish-bullet-list-bullet-size));
+}
+
+/* [Preview mode] [li] : Show bullets to the right */
+
+.callout[data-callout*="right"]
+  > .callout-content
+  ul
+  > li:not(.task-list-item)
+  > .list-bullet {
+  float: inline-end;
+  margin-inline-end: calc(
+    0px - var(--x-list-relative-margin) - var(--list-bullet-size) +
+      var(--x-list-additionnal-fixed-margin)
+  );
+}
+
+/* [ol] Show numbers to the right  */
+
+.callout[data-callout*="right"] > .callout-content ol > li {
+  list-style-type: none;
+}
+
+.callout[data-callout*="right"] > .callout-content ol {
+  counter-reset: section 0;
+}
+
+.callout[data-callout*="right"] > .callout-content ol > li::before {
+  color: var(--list-marker-color);
+  counter-increment: section;
+  content: "." counter(section);
+  float: right;
+
+  margin-inline-end: calc(
+    0px - var(--x-list-relative-margin) - 1ch +
+      var(--x-list-additionnal-fixed-margin)
+  );
+}
+
+/* [Tasks] [li] Show tasks to the right */
+
+.callout[data-callout*="right"] > .callout-content ul > li.task-list-item {
+  list-style-type: none;
+}
+
+.callout[data-callout*="right"]
+  > .callout-content
+  ul
+  > li.task-list-item
+  > .task-list-item-checkbox {
+  float: right;
+  margin-inline-end: calc(var(--checkbox-size) * -1.5);
+  top: var(--x-list-checkbox-top);
+}

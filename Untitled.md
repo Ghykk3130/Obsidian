@@ -1,0 +1,15 @@
+A neural network is a hierarchical model that mimics the human brain. Its hierarchical structure works like this: mathematically, a neural network can be seen as layers of interconnected nodes. Each node has some inputs and outputs. The outputs of the nodes in one layer serve as the inputs for the next layer. Nodes are analogous to neurons in the brain. The entire neural network functions like a brain, performing computations on given inputs to produce outputs.
+
+The neural network produces the desired output through backpropagation. Each node in the network has some weight, or gate parameter. The specific values of these weights are not arbitrary. First, we provide the desired output, then compute the difference between the current output and the desired output. Using the backpropagation algorithm, we adjust the weights to reduce this difference. Over time, this allows the neural network to recognize patterns, make predictions, or generate outputs from new inputs.
+
+Take autonomous driving as an example. Consider a car equipped with sensors and actuators. We can abstract it as a neural network, with readings on the sensors as inputs and the motion controlled by the actuators as outputs. We may not know exactly how the sensors and actuators are connected, or under what conditions the actuators should activate. Therefore, we treat the connections and activation conditions as variable parameters and adjust these parameters based on human driving patterns. Eventually, there exists a set of parameters such that the car’s autonomous driving behavior matches human driving behavior. The specific strategy for adjusting these parameters can be backpropagation.
+
+A language model is a type of neural network. The input to a language model is a sequence of words and symbols, and the output is a prediction of the next word or symbol in the sequence. Using the autonomous driving analogy again, for a language model, the sequence of words and symbols it receives is like the sensor readings of distances to surrounding objects, and its predictions for the next word or symbol are like the actuators controlling the car’s movement system. Thus, how a neural network generates text is by predicting the next word based on training data, just as autonomous driving manipulates the car’s movement based on training data.
+
+ChatGPT may appear to demonstrate intelligence, but its essence differs from human intelligence. Humans reason logically to answer questions, but ChatGPT produces responses by generating the most likely answer based on training data. It does not understand the question or perform logical reasoning. As the reading notes, “Our first instinct when interacting with a Large Language Model should not be ‘wow these things must be really smart or really creative or really understanding’. Our first instinct should be ‘I’ve probably asked it to do something that it has seen bits and pieces of before.’” Therefore, ChatGPT does not logically think through questions; it merely associates words and phrases that are most likely to appear.
+
+
+
+
+
+

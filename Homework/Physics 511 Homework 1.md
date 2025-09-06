@@ -1,0 +1,227 @@
+# 1.
+The matrix representation of $\hat{H_{}}_{new}$ under the basis $\ket{1},\ket{2}$ is:
+$$\begin{pmatrix}
+E_{0} & V_{12} \\
+V_{12} & E_{0}
+\end{pmatrix}$$
+Then to diagonalize this matrix, we set:
+$$\begin{vmatrix}
+\lambda-E_{0} & -V_{12} \\
+-V_{12} & \lambda-E_{0}
+\end{vmatrix}=0$$
+$$\implies \lambda=E_{0}+V_{12},E_{0}-V_{12}$$
+Then I have eigenvectors:
+$$\begin{align}
+ & \ket{1^{'}} = \frac{1}{\sqrt{ 2 }}\begin{pmatrix}
+1 \\
+ 1
+\end{pmatrix}= \frac{1}{\sqrt{ 2 }}(\ket{1} +\ket{2} ) \\
+ & \ket{2^{'}} = \frac{1}{\sqrt{ 2 }}\begin{pmatrix}
+1  \\
+ -1
+\end{pmatrix}= \frac{1}{\sqrt{ 2 }}(\ket{1} -\ket{2} )
+\end{align}$$
+with corresponding eigenvalues $E_{0}+V_{12},E_{0}-V_{12}$.
+
+Clearly, if the ratio $\frac{E_{0}}{V_{12}}$ is fixed, then the eigenvectors that I found should be the same. But their corresponding eigenvalues would be related the absolute magnitude of $E_{0},V_{12}$.
+# 2.
+## a).
+$$\begin{align}
+\vec{\sigma}\cdot \vec{a} & =\sigma_{i}a_{i} \\
+ & =\begin{pmatrix}
+0 & 1 \\
+1 & 0
+\end{pmatrix}a_{x}+\begin{pmatrix}
+0 & -i \\
+i & 0 
+\end{pmatrix}a_{y}+\begin{pmatrix}
+1 & 0 \\
+0 & -1
+\end{pmatrix}a_{z}
+\end{align}$$
+## b).
+First, take $\hat{n}=\sin \beta \cos \alpha \hat{x}+\sin \beta \cos \alpha \hat{y}+\cos \beta \hat{z}$we have:
+$$\begin{align}
+\vec{\sigma}\cdot \hat{n} & =\begin{pmatrix}
+\cos \beta & \sin \beta \cos \alpha-i\sin \beta \sin \alpha \\
+\sin \beta \cos \alpha+i\sin \beta \sin \alpha & -\cos \beta
+\end{pmatrix} \\
+ & =\begin{pmatrix}
+\cos \beta & e^{-i\alpha}\sin \beta \\
+e^{i\alpha}\sin \beta
+ & -\cos \beta\end{pmatrix}
+\end{align}$$
+To find the eigenvectors and eigenvalues, we set:
+$$\begin{align}
+  \begin{vmatrix}
+\lambda-\cos \beta & -\sin \beta \cos \alpha+i\sin \beta \sin \alpha \\
+-\sin \beta \cos \alpha-i\sin \beta \sin \alpha & \lambda+\cos \beta
+\end{vmatrix} & =0 \\
+  \implies \lambda^{2}- 1 & =0 \\
+  \implies \lambda & =\pm{1}
+\end{align}$$
+The corresponding eigenvectors are:
+$$\begin{align}
+v_{1} & = \frac{1}{2\sin  \frac{\beta}{2}}\begin{pmatrix}
+\sin \beta \\
+(1-\cos \beta)(\cos \alpha+i\sin \alpha)
+\end{pmatrix}=\begin{pmatrix}
+\cos \frac{\beta}{2} \\
+e^{i\alpha}\sin \frac{\beta}{2} 
+\end{pmatrix} \\
+v_{2} & = \frac{1}{2\cos \frac{\beta}{2}}\begin{pmatrix}
+\sin \beta \\
+-(1+\cos \beta)(\cos \alpha+i\sin \alpha)
+\end{pmatrix}=\begin{pmatrix}
+\sin \frac{\beta  }{2}  \\
+
+e^{i\alpha}\cos \frac{\beta}{2}
+\end{pmatrix} \\
+\end{align}$$
+Then the matrix $\vec{\sigma}\cdot \hat{n}$ is diagonalized by:
+$$\vec{\sigma}\cdot \hat{n}=P\begin{pmatrix}
+1 & 0 \\
+0 & 1
+\end{pmatrix}P^{^{\dagger}}$$
+where I have:
+$$P=\begin{pmatrix}
+\cos \frac{\beta}{2} & \sin \frac{\beta}{2} \\
+e^{i\alpha}\sin \frac{\beta}{2} & e^{i\alpha}\cos \frac{\beta}{2}
+\end{pmatrix}$$
+Then:
+$$\begin{align}
+\exp\left(  \frac{i\vec{\sigma}\cdot \hat{n}}{2}\phi \right) & =\sum_{j}\left(  \frac{i\phi}{2} \right)^j (\vec{\sigma}\cdot \hat{n})^j  \\
+\end{align}$$
+For $j=2k$, I have:
+$$\begin{align}
+\sum_{j=2k}\left( \frac{i\phi}{2} \right)^j(\vec{\sigma}\cdot \hat{n}) & =\sum_{k} \frac{1}{2^k}(-1)^k\left( \frac{\phi}{2} \right)^{2k}PI^{2k}P^{^{\dagger}} \\
+ & =\sum_{k}\frac{1}{2^k}(-1)^k\left(  \frac{\phi}{2} \right)^{2k}I \\
+ & =I\cos \frac{\phi}{2} 
+\end{align}$$
+For $j=2k+1$, I have:
+$$\begin{align}
+\sum_{j=2k+1}\left(  \frac{i\phi}{2} \right)^{j}(\vec{\sigma}\cdot \hat{n}) & =\sum_{k} \frac{1}{(2k+1)!}i(-1)^k \left( \frac{\phi}{2} \right)^{2k+1}P \begin{pmatrix}
+1 & 0 \\
+0 & -1
+\end{pmatrix}P^{^{\dagger}}  \\
+ & =\sum_{k} \frac{1}{(2k+1)!}i(-1)^k \left(  \frac{\phi}{2} \right)^{2k}P\begin{pmatrix}
+1 & 0 \\
+0 & -1 
+\end{pmatrix}P^{^{\dagger}} \\
+ & =i\sin \frac{\phi}{2}P \begin{pmatrix}
+1 & 0  \\
+0 & -1
+\end{pmatrix}P^{^{\dagger}} \\
+ & =i\sin \frac{\phi}{2} \begin{pmatrix}
+\cos \beta & e^{-i\alpha}\sin \beta \\
+e^{i\alpha}\sin \beta
+ & -\cos \beta\end{pmatrix}
+\end{align}$$
+Then the sum should be:
+$$\begin{align}
+\exp\left(  \frac{i\vec{\sigma}\cdot \hat{n}}{2}\phi \right)  & = \begin{pmatrix}
+\cos \frac{\phi}{2} & 0 \\
+0 & \cos \frac{\phi}{2} 
+\end{pmatrix}+ i\sin \frac{\phi}{2} \begin{pmatrix}
+\cos \beta & e^{-i\alpha}\sin \beta \\
+e^{i\alpha}\sin \beta & -\cos \beta
+\end{pmatrix} \\
+ & =\begin{pmatrix}
+e^{i\frac{\phi}{2}} & ie^{-i\alpha}\sin \beta \sin \frac{\phi}{2} \\
+ie^{i\alpha}\sin \beta \sin \frac{\phi}{2} & e^{-i \frac{\phi}{2}} \\
+\end{pmatrix}\end{align}$$
+## c).
+First, take $\beta=\alpha= \frac{\pi}{2}$, I have:
+$$\exp\left( \frac{i\vec{\sigma}\cdot \hat{y}}{2} \right)=\begin{pmatrix}
+\cos \frac{\phi}{2} & \sin \frac{\phi}{2} \\
+-\sin \frac{\phi}{2} & \cos \frac{\phi}{2}
+\end{pmatrix}$$
+Also, I know:
+$$\begin{align}
+\vec{\sigma}\cdot a & =\begin{pmatrix}
+0 & 1 \\
+1 & 0
+\end{pmatrix}a_{x}+ \begin{pmatrix}
+0 & -i \\i & 0
+
+\end{pmatrix}a_{y}+ \begin{pmatrix}
+1 & 0 \\
+0 & -1
+\end{pmatrix}a_{z} \\
+ & =\begin{pmatrix}
+a_{z} & a_{x}-ia_{y} \\
+a_{x}+ia_{y} & -a_{z}
+\end{pmatrix}
+\end{align}$$
+Then we find:
+$$\begin{align}
+\exp\left( \frac{i\vec{\sigma} \cdot \hat{y}}{2} \right)(\vec{\sigma}\cdot a)\exp\left(  \frac{-i\vec{\sigma}\cdot \hat{y}}{2} \right) & =\begin{pmatrix}
+\cos \frac{\phi}{2} & \sin \frac{\phi}{2} \\
+-\sin \frac{\phi}{2} & \cos \frac{\phi}{2 }
+\end{pmatrix} \begin{pmatrix}
+a_{z} & a_{x}-ia_{y} \\
+a_{x}+ i a_{y} & -a_{z}
+\end{pmatrix}\begin{pmatrix}
+\cos  \frac{\phi}{2} & -\sin \frac{\phi}{2}  \\
+\sin \frac{\phi}{2} & \cos \frac{\phi}{2}
+
+\end{pmatrix} \\
+ & =\begin{pmatrix}
+\cos \frac{\phi}{2} & \sin \frac{\phi}{2} \\
+-\sin \frac{\phi}{2} &  \cos \frac{\phi}{2}
+\end{pmatrix}\begin{pmatrix}
+a_{z}\cos \frac{\phi}{2}+(a_{x}-ia_{y})\sin \frac{\phi}{2}   & a_{z}\left( -\sin \frac{\phi}{2} \right)+(a_{x}-ia_{y})\cos \frac{\phi}{2} \\
+(a_{x}+ i a_{y})\cos \frac{\phi}{2}-a_{z}\sin \frac{\phi}{2} & (a_{x}+ia_{y})\left( -\sin \frac{\phi}{2} \right)-a_{z}\cos \frac{\phi}{2}
+\end{pmatrix} \\
+ & =\begin{pmatrix}
+\cos \phi a_{z}+\sin \phi a_{x} & -\sin \phi a_{z}+\cos \phi a_{x}-ia_{y} \\
+-\sin \phi a_{z} +\cos \phi  a_{x}  +ia_{y} & -\cos \phi a_{z}-\sin \phi a_{x}
+\end{pmatrix}
+\end{align}$$
+We know that:
+$$\vec{\sigma}\cdot a^{'}=\begin{pmatrix}
+a_{z}^{'} & a_{x}^{'}-ia_{y}^{'} \\
+a_{x}^{'}+ia_{y}^{'} & -a_{z}^{'}
+\end{pmatrix}$$
+Match the real and imaginary parts to get:
+$$\begin{pmatrix}
+a_{x}^{'} \\
+a_{y}^{'} \\
+a_{z}^{'}
+\end{pmatrix}=\begin{pmatrix}
+\cos \phi & 0 & \sin \phi \\
+0 & 1 & 0 \\
+\sin \phi & 0 & \cos \phi
+\end{pmatrix}\begin{pmatrix}
+a_{x} \\
+a_{y} \\
+a_{z}
+\end{pmatrix}$$
+Clearly, this corresponds to a clockwise rotation about the $y$ axis by an angle of $\phi$, as viewed opposite to the positive direction of $y$.
+
+# 3.
+## a).
+Directly borrow the result from $2)$, I can write down the representation of $\hat{\mathcal{O}}$:
+$$\hat{\mathcal{O}}= \frac{\hbar}{2} \begin{pmatrix}
+1-\cos \beta & e^{-i\alpha}\sin \beta \\
+-e^{i\alpha}  \sin \beta & 1+\cos \beta
+\end{pmatrix}$$
+The eigenvalues, again borrow from the result in $2)$ are $\pm \frac{\hbar}{2}$.
+## b).
+Again, I already calculated everything in $2b)$. Here I would write down the result directly:
+$$\begin{align}
+ & |+n \rangle=\cos \frac{\beta}{2}|+z\rangle+e^{i\alpha}\cos \frac{\beta}{2} |-z\rangle \\
+ & |-n\rangle=\sin \frac{\beta}{2}|+z\rangle+e^{i\alpha}\sin \frac{\beta}{2} |-z\rangle
+\end{align}$$
+## c).
+For $|+x\rangle$, set $\beta= \frac{\pi}{2},\alpha=0$, I obtain:
+$$|+x\rangle= \frac{\sqrt{ 2 }}{2}|+z\rangle+ \frac{\sqrt{ 2 }}{2}|-z\rangle$$
+For $|-x\rangle$, set $\beta= \frac{\pi}{2}, \alpha=\pi$, I obtain:
+$$|-x\rangle= \frac{\sqrt{ 2 }}{2}|+z\rangle- \frac{\sqrt{  2}}{2}|-z\rangle$$
+## d).
+The eigenvector of $S_{x}$ that corresponds to the eigenvalue $\frac{\hbar}{2}$ is $|+x\rangle$. Then the probability to get this value is:
+$$\begin{align}
+|\langle+x |+n\rangle|^{2} & =| \frac{\sqrt{ 2 }}{2}\cos \frac{\beta}{2}+\frac{\sqrt{ 2 }}{2}e^{i\alpha}\cos \ \frac{\beta}{2} |^{2} \\
+ & =2\cos ^{2} \frac{\alpha}{2}\cos ^{2} \frac{\beta}{2}
+\end{align}$$
+Set $\alpha=\pi ,\beta= \frac{\pi}{2}$, I have the probability $=0$. Set $\alpha=0, \beta= \frac{\pi}{2}$, I have the probability $=1$.
