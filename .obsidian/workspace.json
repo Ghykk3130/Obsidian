@@ -93,8 +93,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "right": {
     "id": "9003d078f8dbc4ed",
@@ -194,18 +193,19 @@
   },
   "active": "c9bc6dbbbb5a98da",
   "lastOpenFiles": [
+    "Untitled.md",
+    "Untitled 1.md",
+    "Homework/Physics 511 Homework 1.md",
     "Degenerate Fermi Gas.md",
     "多级展开.md",
     "Test.md",
     "势阱对称性与波函数对称性.md",
     "守恒律.md",
-    "Homework/Physics 511 Homework 1.md",
     "Experimental/Cold amplifier.md",
     "张量分析.md",
     "Hamilton原理与Lagrange方程.md",
     "Experimental/Transistor.md",
     "Experimental/Untitled.md",
-    "Untitled.md",
     "Experimental/Wye-Delta Transformation.md",
     "Homework/Physics 402 Pre-class 1.md",
     "Homework/Physics 402 real world optics 1.md",
@@ -220,7 +220,6 @@
     "电流与电荷.md",
     "转动生成元.md",
     "Homework/Physics 402 problem set 1.md",
-    "Fourier热传导定律.md",
     "Pictures/Pasted image 20250903232009.png",
     "Pictures/Pasted image 20250903224637.png",
     "Pictures/Pasted image 20250903124522.png",
