@@ -225,3 +225,56 @@ $$\begin{align}
  & =2\cos ^{2} \frac{\alpha}{2}\cos ^{2} \frac{\beta}{2}
 \end{align}$$
 Set $\alpha=\pi ,\beta= \frac{\pi}{2}$, I have the probability $=0$. Set $\alpha=0, \beta= \frac{\pi}{2}$, I have the probability $=1$.
+# 4.
+$$\begin{align}
+[S_{x},S_{y}] & =i\frac{\hbar^{2}}{4} (|+\rangle \langle-|+|-\rangle \langle +|)(-|+\rangle \langle - | + |- \rangle \langle + |)- i \frac{\hbar^{2}}{4}(-|+\rangle \langle-|+ |-\rangle \langle + |)(|+ \rangle \langle-|+ | - \rangle \langle + |) \\
+ & = i \frac{\hbar^{2}}{4}(-|-\rangle \langle-|+ | + \rangle \langle+|)- i \frac{\hbar^{2}}{4}(|-\rangle\langle-|- |+\rangle \langle + |) \\
+ & =i \frac{\hbar^{2}}{2}(-|-\rangle\langle-|+|+\rangle\langle+|) \\
+ & =i\hbar S_{z}
+\end{align}$$
+Then by the property of the commutator, I have:
+$$[S_{y},S_{x}]=-i\hbar S_{z}$$
+I also have:
+$$\begin{align}
+\{S_{x},S_{y}\} & =i \frac{\hbar^{2}}{4}+\rangle\langle-|-\rangle\langle+|)(-|+\rangle\langle-|+|-\rangle\langle+|)+i \frac{\hbar^{2}}{4}(-|+\rangle\langle-|+|-\rangle\langle+|)(|+\rangle\langle-|+|-\rangle\langle+|) \\
+ & =0
+\end{align}$$
+So the computations would follow:
+$$\begin{align}
+[S_{y},S_{z}] & = i \frac{\hbar^{2}}{4}(-|+\rangle\langle-|+|-\rangle\langle+|)(|+\rangle\langle+|-|-\rangle\langle-|) -i \frac{\hbar^{2}}{4}(|+\rangle\langle +| -|-\rangle\langle-|)(-|+\rangle\langle-|+|-\rangle\langle+|)\\
+ & =i \frac{\hbar^{2}}{2}(|+\rangle\langle-|+|-\rangle\langle+|) \\
+ & =i\hbar S_{x}
+\end{align}$$
+$$\implies[S_{z},S_{y}]=-i\hbar S_{x}$$
+$$\begin{align}
+\{S_{y},S_{z}\} & =
+i \frac{\hbar^{2}}{4}(-|+\rangle\langle-|+|-\rangle\langle+|)(|+\rangle\langle+|-|-\rangle\langle-|) +i \frac{\hbar^{2}}{4}(|+\rangle\langle +| -|-\rangle\langle-|)(-|+\rangle\langle-|+|-\rangle\langle+|) \\
+ & =0\end{align}$$
+ Again:
+ $$\begin{align}
+[S_{z},S_{x}] & = \frac{\hbar^{2}}{4}(|+\rangle\langle+|-|-\rangle\langle-|)(|+\rangle\langle-|+|-\rangle\langle+|)- \frac{\hbar^{2}}{4}+\rangle\langle-|+|-\rangle\langle+|)(|+\rangle\langle+|-|-\rangle\langle-|) \\
+ & =- \frac{\hbar^{2}}{2}(-|+\rangle\langle-|+|-\rangle\langle+|) \\
+ & =i\hbar S_{y} \end{align}$$
+ $$\implies[S_{x},S_{z}]=-i\hbar S_{y}$$
+ $$\begin{align}
+\{S_{z},S_{x}\} & =\frac{\hbar^{2}}{4}(|+\rangle\langle+|-|-\rangle\langle-|)(|+\rangle\langle-|+|-\rangle\langle+|)+ \frac{\hbar^{2}}{4}+\rangle\langle-|+|-\rangle\langle+|)(|+\rangle\langle+|-|-\rangle\langle-|) \\
+ & =0
+\end{align}$$
+Now we compute:
+$$\begin{align}
+\{S_{x},S_{x}\} & =2S_{x}^{2} \\
+ & = \frac{\hbar^{2}}{2}(|+\rangle\langle-|+|-\rangle\langle+|)^{2} \\
+ & = \frac{\hbar^{2}}{2}
+\end{align}$$
+$$\begin{align}
+\{S_{y},S_{y}\} & =2S_{y}^{2} \\
+ & =-\frac{\hbar^{2}}{2}(-|+\rangle\langle-|+|-\rangle\langle+|)^{2} \\
+ &=\frac{\hbar^{2}}{2}
+\end{align}$$
+$$\begin{align}
+\{S_{z},S_{z}\} & = 2S_{z}^{2}  \\
+ & = \frac{\hbar^{2}}{2}(|+\rangle\langle+|-|-\rangle\langle-|)^{2} \\
+ & = \frac{\hbar^{2}}{2}
+\end{align}$$
+Then the relations in the problem are all verified.
+

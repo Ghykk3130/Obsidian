@@ -27,12 +27,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "多级展开.md",
+                "file": "Homework/Physics 511 Homework 1.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "多级展开"
+              "title": "Physics 511 Homework 1"
             }
           }
         ],
@@ -93,7 +93,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "right": {
     "id": "9003d078f8dbc4ed",
@@ -176,7 +177,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 200,
+    "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -192,8 +194,9 @@
   },
   "active": "c9bc6dbbbb5a98da",
   "lastOpenFiles": [
-    "Test.md",
+    "Degenerate Fermi Gas.md",
     "多级展开.md",
+    "Test.md",
     "势阱对称性与波函数对称性.md",
     "守恒律.md",
     "Homework/Physics 511 Homework 1.md",
@@ -218,7 +221,6 @@
     "转动生成元.md",
     "Homework/Physics 402 problem set 1.md",
     "Fourier热传导定律.md",
-    "Oxford solid state.md",
     "Pictures/Pasted image 20250903232009.png",
     "Pictures/Pasted image 20250903224637.png",
     "Pictures/Pasted image 20250903124522.png",
