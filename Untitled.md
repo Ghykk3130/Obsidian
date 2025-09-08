@@ -1,9 +1,0 @@
-The Sanxingdui site in Sichuan shows that during the same period as the Shang dynasty, there existed a unique culture in the Sichuan region. The main artifacts unearthed at Sanxingdui include bronze human figures, heads, masks, bronze trees and animals, as well as other ritual objects made of gold, jade, and bronze. This suggests that the Sanxingdui site might once have been a ritual center.
-
-The bronze human figures may represent tribal leaders or priests of the Sanxingdui Shu culture. More than fifty bronze heads may originally have been attached to a bulk structure, possibly reflecting a hierarchical system within the tribe.
-
-The bronze masks are characterized by protruding eyes, a feature also recorded in historical sources. The _Huayang Guo Zhi_ notes that King Cancong of Shu was described as having prominent eyes. This emphasis on the eyes in Sanxingdui culture may have been connected to their religious beliefs. It also suggests that the leaders of Sanxingdui culture might have held both political and religious authority. The bronze masks may also serve as evidence of ancestor worship.
-
-The bronze animals were likely originally attached to the bronze tree. It is inferred that they together served as a ritual object. Among the bronze animals, the birds with human heads may symbolize the connection between mortals and deities.
-
-At the Sanxingdui site, many ritual artifacts made of gold, jade, and bronze have also been discovered. These ritual items share similarities with those used in Shang ceremonies, suggesting that the two cultures may have communication with each other.
