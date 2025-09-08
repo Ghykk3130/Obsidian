@@ -55,12 +55,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Homework/Physics 511 Homework 1.md",
+                "file": "多级展开.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Physics 511 Homework 1"
+              "title": "多级展开"
             }
           }
         ],
@@ -221,8 +221,8 @@
   },
   "active": "a93c3f13b4d9b8bc",
   "lastOpenFiles": [
-    "Homework/Physics 511 Homework 0.md",
     "Homework/Physics 511 Homework 1.md",
+    "Homework/Physics 511 Homework 0.md",
     "Pedrottis' introduction to optics.md",
     "Pictures/Pasted image 20250907232910.png",
     "Pictures/Pasted image 20250907224417.png",
