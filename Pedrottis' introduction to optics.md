@@ -109,9 +109,9 @@ $$\begin{align}
 \end{align}$$
 而我们没有理由认为$\frac{\tan \theta_{1}}{\tan \theta_{2}}$是常数。
 
-但是，在旁轴近似下，$\frac{\tan \theta_{1}}{\tan \theta_{2}}=\frac{\sin \theta_{1}}{\sin \theta_{2}}= \frac{\theta_{1}}{\theta_{2}}= \frac{n_{2}}{n_{1}}$是一个常数。所以能形成一个像。
+但是，在傍轴近似下，$\frac{\tan \theta_{1}}{\tan \theta_{2}}=\frac{\sin \theta_{1}}{\sin \theta_{2}}= \frac{\theta_{1}}{\theta_{2}}= \frac{n_{2}}{n_{1}}$是一个常数。所以能形成一个像。
 
-# 3.6
+# 3.6 Imaging by an optical system
 
 >[!Definition 1]
 >Define the equal-phase plane of a light field as a wavefront.
@@ -161,4 +161,92 @@ $$n_{1}s+n_{2}s_{}{'}=n_{1}\sqrt{ x^{2}+y^{2} }+n_{2}\sqrt{ (x-s-s^{'})^{2}+y^{2
 $$\left( \frac{n_{2}}{n_{1}} \right)^{2}x^{2}+2 \frac{n_{2}}{n_{1}}\left( 1- \frac{n_{2}}{n_{1}} \right)sx+ \left(  1- \frac{n_{2}}{n_{1}} \right)^{2}s^{2}=x^{2}+y^{2}$$
 若$n_{2}>n_{1}$，则为双曲线。反之则为椭圆。
 ![[Pasted image 20250903232009.png|500]]
+
+# 3.7 Reflection at a spherical surface
+
+我们知道，任何曲面在傍轴近似下都可以看做一个局部球面。而在存在paraxial approximation的时候，球面是可以成像的。
+
+我们想知道，物距，像距，和球面镜曲率之间的关系。
+![[Pasted image 20250907224417.png]]
+
+在旁轴近似下，我们显然有：
+$$\begin{align}
+s^{'} & \approx s \frac{\tan \alpha}{\tan \alpha^{'}} \\
+
+\end{align}$$
+我们在旁轴近似下忽略$VQ$就有：
+$$\tan \alpha \approx \frac{h}{s}$$
+但是$\alpha^{'}$就不是很好表示出来。但我们发现，$\phi$可以很容易地描述，因为$\phi \approx \tan \phi \approx \frac{h}{R}$。于是我们试图将$\alpha^{'}$写为$\alpha$和$\phi$的函数。我们有：
+$$\begin{align}
+ & \alpha+\alpha^{'}=2\theta \\
+ & \alpha+\phi=\theta
+\end{align}$$
+于是：
+$$\alpha^{'}=\alpha+2\phi$$
+于是接下来的任务就是表示$\tan \alpha^{'}$：
+$$\begin{align}
+\tan \alpha^{'} & =\tan(\alpha+2\phi) \\
+ & = \frac{\tan \alpha+\tan 2\phi}{1-\tan \alpha \tan w\phi} 
+\end{align}$$
+而我们显然有：
+$$\begin{align}
+ & \alpha \approx \tan \alpha= \frac{h}{s} \\
+ & \phi \approx \tan \phi= \frac{h}{R} \\
+\implies & \tan 2\phi \approx 2\phi \approx \frac{2h}{R}
+\end{align}$$
+于是：
+$$\begin{align}
+\tan \alpha^{'} & = \frac{\frac{h}{s}+ \frac{2h}{R}}{1- \frac{2h^{2}}{R^{2}}} \\
+ & \approx \frac{\frac{h}{s}+ \frac{2h}{R}}{1} \\
+\implies \frac{h}{s^{'}} & \approx \frac{h}{s}+ \frac{2h}{R} \\
+\implies \frac{1}{s}- \frac{1}{s^{'}} & =- \frac{2}{R}
+\end{align}$$
+
+我们采用以下规定：
+- 对于物点，像点，若为实，则与vertex的距离为正。若为虚，则与vertex的距离为负。
+- 对于反射面，若曲率中心在入射光同侧，即concave，则曲率半径为负。若曲率中心在入射光对侧，即concave，则曲率半径为正。
+
+于是反射面公式可以改写为：
+
+>[!Proposition 1]
+>For a reflective surface with curvature radius $R$ under paraxial approximation, together with an object and its conjugate image, the following equation is satisfied:
+>$$\frac{1}{s}+ \frac{1}{s^{'}}=\frac{-2}{R}$$
+
+^proposition371
+
+考虑入射光为平行光。令$s \rightarrow \infty$，我们得到：
+$$s^{'}= - \frac{R}{2}$$
+我们定义这为焦距：
+
+>[! Definition 2]
+>Define the focal length of a reflective surface with curvature radius $R$:
+>$$f= - \frac{R}{2}$$
+## Remark
+我们发现，焦距的物理意义是无限远物体的像距。因此焦距是带符号的。
+
+我们还可以研究物体在垂直于optical axis的方向上放大了多少倍。
+
+>[! Definition 2]
+>Define the (transverse) magnification: 
+>$$m= \frac{h_{i}}{h_{o}}$$
+>where $h_{i},h_{o}$ are the signed transverse heights.
+## Remark
+1). 此处transverse指的是垂直于optical axis的方向。
+2). Signed height的sign取正，如果和物体同向。反之取负。
+
+因此考虑一个垂直于optical axis的，足够矮的物体，以至于物体发出的光能使用傍轴近似。
+
+![[Pasted image 20250907232910.png|300]]
+
+在傍轴近似下，物体能够成像。由[[Pedrottis' introduction to optics|proposition 3.7.1]]，因为物体上任何物点的物距都一样，所以它们conjugate的像点的相距也一样。因此像也是垂直于optical axis。
+
+因为像垂直于optical axis，是一条直线，我们只需要考虑物点的首尾conjugate的像点就可以画出像了。
+
+我们令物体首发出两束光，以确定其conjugate的像点。为了方便，令其中一束光经过vertex。再令物体尾发出一束光经过vertex。我们不需要第二束光来确定物体尾conjugate的像点，因为它一定在物体首conjugate的像点与optical axis的垂线上。
+
+由几何关系，结合物，像距符号的convention，我们得到magnification：
+$$m= -\frac{s^{'}}{s}$$
+>[! Proposition 2]
+>Consider a reflective surface under paraxial approximation. Its magnification is:
+>$$m= - \frac{s_{i}}{s_{o}}$$
 

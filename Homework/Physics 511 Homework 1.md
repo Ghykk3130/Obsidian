@@ -277,4 +277,20 @@ $$\begin{align}
  & = \frac{\hbar^{2}}{2}
 \end{align}$$
 Then the relations in the problem are all verified.
+# 5.
+The atoms that pass through the first SG device are all in $|+z\rangle$ state. 
 
+For the second SG device, denote its orientation as $\hat{n}$. If its angle with respect to the $+z$ axis of the first SG is $\theta$, by problem 3 b), we find:
+$$\begin{align}
+ & |+\hat{n}\rangle= \cos \frac{\theta}{2}|+z\rangle+ i \sin \frac{\theta}{2}|-z\rangle \\
+ & |-\hat{n}\rangle=\sin \frac{\theta}{2}|+z\rangle-i \cos \frac{\theta}{2}|-z\rangle
+\end{align}$$
+Therefore, the probability that the $|+z\rangle$ atoms make through is:
+$$|\langle+\hat{n}|+z\rangle|^{2}= \cos ^{2} \frac{\theta}{2}$$
+Then the atoms are all in $|+\hat{n}\rangle$ state. Therefore, the probability that they make through the last device is:
+$$|\langle-z|+\hat{n}\rangle|^{2}=\sin ^{2} \frac{\theta}{2}$$
+So the overall numbers of the atoms that finally survive is:
+$$N= \frac{N_{0}}{2}\cos ^{2} \frac{\theta}{2}\sin ^{2} \frac{\theta}{2}=\frac{N_{0}}{2}
+\left( 1- \sin ^{2} \frac{\theta}{2} \right)\sin ^{2} \frac{\theta}{2}$$
+Clearly, this is maximized when $\sin ^{2} \frac{\theta}{2}= \frac{1}{2}$
+$$\implies \frac{1-\cos \theta}{2}= \frac{1}{2}\implies \theta= \frac{\pi}{2}$$
