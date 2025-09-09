@@ -8,7 +8,7 @@ Then to diagonalize this matrix, we set:
 $$\begin{vmatrix}
 \lambda-E_{0} & -V_{12} \\
 -V_{12} & \lambda-E_{0}
-\end{vmatrix}=0$$
+\end{vmatrix} =0$$
 $$\implies \lambda=E_{0}+V_{12},E_{0}-V_{12}$$
 Then I have eigenvectors:
 $$\begin{align}
@@ -75,7 +75,7 @@ v_{2} & = \frac{1}{2\cos \frac{\beta}{2}}\begin{pmatrix}
 \end{pmatrix}=\begin{pmatrix}
 \sin \frac{\beta  }{2}  \\
 
-e^{i\alpha}\cos \frac{\beta}{2}
+-e^{i\alpha}\cos \frac{\beta}{2}
 \end{pmatrix} \\
 \end{align}$$
 Then the matrix $\vec{\sigma}\cdot \hat{n}$ is diagonalized by:
@@ -86,7 +86,7 @@ $$\vec{\sigma}\cdot \hat{n}=P\begin{pmatrix}
 where I have:
 $$P=\begin{pmatrix}
 \cos \frac{\beta}{2} & \sin \frac{\beta}{2} \\
-e^{i\alpha}\sin \frac{\beta}{2} & e^{i\alpha}\cos \frac{\beta}{2}
+e^{i\alpha}\sin \frac{\beta}{2} & -e^{i\alpha}\cos \frac{\beta}{2}
 \end{pmatrix}$$
 Then:
 $$\begin{align}
@@ -189,15 +189,15 @@ a_{x}^{'} \\
 a_{y}^{'} \\
 a_{z}^{'}
 \end{pmatrix}=\begin{pmatrix}
-\cos \phi & 0 & \sin \phi \\
+\cos \phi & 0 & -\sin \phi \\
 0 & 1 & 0 \\
--\sin \phi & 0 & \cos \phi
+\sin \phi & 0 & \cos \phi
 \end{pmatrix}\begin{pmatrix}
 a_{x} \\
 a_{y} \\
 a_{z}
 \end{pmatrix}$$
-Clearly, this corresponds to a clockwise rotation about the $y$ axis by an angle of $\phi$, as viewed opposite to the positive direction of $y$.
+Clearly, this corresponds to a counterclockwise rotation about the $y$ axis by an angle of $\phi$, as viewed opposite to the positive direction of $y$.
 
 # 3.
 ## a).
@@ -289,7 +289,7 @@ Therefore, the probability that the $|+z\rangle$ atoms make through is:
 $$|\langle+\hat{n}|+z\rangle|^{2}= \cos ^{2} \frac{\theta}{2}$$
 Then the atoms are all in $|+\hat{n}\rangle$ state. Therefore, the probability that they make through the last device is:
 $$|\langle-z|+\hat{n}\rangle|^{2}=\sin ^{2} \frac{\theta}{2}$$
-So the overall numbers of the atoms that finally survive is:
+So the overall number of the atoms that finally survive is:
 $$N= \frac{N_{0}}{2}\cos ^{2} \frac{\theta}{2}\sin ^{2} \frac{\theta}{2}=\frac{N_{0}}{2}
 \left( 1- \sin ^{2} \frac{\theta}{2} \right)\sin ^{2} \frac{\theta}{2}$$
 Clearly, this is maximized when $\sin ^{2} \frac{\theta}{2}= \frac{1}{2}$
