@@ -191,7 +191,7 @@ a_{z}^{'}
 \end{pmatrix}=\begin{pmatrix}
 \cos \phi & 0 & \sin \phi \\
 0 & 1 & 0 \\
-\sin \phi & 0 & \cos \phi
+-\sin \phi & 0 & \cos \phi
 \end{pmatrix}\begin{pmatrix}
 a_{x} \\
 a_{y} \\
@@ -210,8 +210,8 @@ The eigenvalues, again borrow from the result in $2)$ are $\pm \frac{\hbar}{2}$.
 ## b).
 Again, I already calculated everything in $2b)$. Here I would write down the result directly:
 $$\begin{align}
- & |+n \rangle=\cos \frac{\beta}{2}|+z\rangle+e^{i\alpha}\cos \frac{\beta}{2} |-z\rangle \\
- & |-n\rangle=\sin \frac{\beta}{2}|+z\rangle+e^{i\alpha}\sin \frac{\beta}{2} |-z\rangle
+ & |+n \rangle=\cos \frac{\beta}{2}|+z\rangle+e^{i\alpha}\sin \frac{\beta}{2} |-z\rangle \\
+ & |-n\rangle=\sin \frac{\beta}{2}|+z\rangle-e^{i\alpha} \cos \frac{\beta}{2} |-z\rangle
 \end{align}$$
 ## c).
 For $|+x\rangle$, set $\beta= \frac{\pi}{2},\alpha=0$, I obtain:
@@ -264,17 +264,17 @@ Now we compute:
 $$\begin{align}
 \{S_{x},S_{x}\} & =2S_{x}^{2} \\
  & = \frac{\hbar^{2}}{2}(|+\rangle\langle-|+|-\rangle\langle+|)^{2} \\
- & = \frac{\hbar^{2}}{2}
+ & = \frac{\hbar^{2}}{2}I
 \end{align}$$
 $$\begin{align}
 \{S_{y},S_{y}\} & =2S_{y}^{2} \\
  & =-\frac{\hbar^{2}}{2}(-|+\rangle\langle-|+|-\rangle\langle+|)^{2} \\
- &=\frac{\hbar^{2}}{2}
+ &=\frac{\hbar^{2}}{2}I
 \end{align}$$
 $$\begin{align}
 \{S_{z},S_{z}\} & = 2S_{z}^{2}  \\
  & = \frac{\hbar^{2}}{2}(|+\rangle\langle+|-|-\rangle\langle-|)^{2} \\
- & = \frac{\hbar^{2}}{2}
+ & = \frac{\hbar^{2}}{2}I
 \end{align}$$
 Then the relations in the problem are all verified.
 # 5.
