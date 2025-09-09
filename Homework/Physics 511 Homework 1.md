@@ -127,8 +127,8 @@ $$\begin{align}
 e^{i\alpha}\sin \beta & -\cos \beta
 \end{pmatrix} \\
  & =\begin{pmatrix}
-e^{i\frac{\phi}{2}} & ie^{-i\alpha}\sin \beta \sin \frac{\phi}{2} \\
-ie^{i\alpha}\sin \beta \sin \frac{\phi}{2} & e^{-i \frac{\phi}{2}} \\
+\cos \frac{\phi}{2}+i\sin \frac{\phi}{2}\cos \beta & ie^{-i\alpha}\sin \beta \sin \frac{\phi}{2} \\
+ie^{i\alpha}\sin \beta \sin \frac{\phi}{2} & \cos \frac{\phi}{2}-i\sin \frac{\phi}{2}\cos \beta \\
 \end{pmatrix}\end{align}$$
 ## c).
 First, take $\beta=\alpha= \frac{\pi}{2}$, I have:
