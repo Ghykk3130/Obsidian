@@ -438,3 +438,14 @@ $$P=P_{1}+P_{2}$$
 >For thin lenses with refractive powers $P_{1},P_{2},\dots,P_{N}$ placed together, the equivalence refractive power is:
 >$$P=P_{1}+\dots+P_{N}$$
 
+# 3.11 Newtonian equation
+
+我们除了表示物距，相距，焦距之间的关系，我们还可以表示物点到左焦点距离，像点到右焦点距离，以及焦距之间的关系。
+![[Pasted image 20250909231225.png|600]]
+
+显然我们有：
+$$\begin{align}
+ &  \frac{h_{o}}{h_{i}}= \frac{x}{f}, \frac{h_{o}}{h_{i}}= \frac{f}{x^{'}} \\
+\implies &  x x^{'}=f^{2}
+\end{align}$$
+
