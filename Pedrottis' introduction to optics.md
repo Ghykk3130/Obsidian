@@ -393,3 +393,25 @@ $$\begin{align}
 
 # 3.10 Vergence and refractive power
 
+我们从另一个视角解读方程$\frac{1}{s}+ \frac{1}{s^{'}}= \frac{1}{f}$。
+
+物点发出的球面波经过薄透镜，球面波波前的曲率被改变了。这是因为光穿过透镜时，在透镜中个个部分光程不一样。这就导致光从透镜穿出时波前是变形的。
+
+我们发现，$s$是物点发出的球面波的波前在薄透镜处的曲率半径，$s^{'}$是球面波刚穿过薄透镜时波前的曲率半径。显然物点是透镜前球面波的曲率中心，像点是透镜后球面波的曲率中心。这是因为在物点和像点，光线汇聚，波前缩成一个点。而波前在同一介质中是球面对称的，所以缩成的点必为球心。
+
+我们将这两个波前对应的曲率作单独的定义：
+
+>[! Definition 1]
+>Define the vergence of the source and image as:
+>$$V= \frac{1}{s}, V^{'}= \frac{1}{s^{'}}$$
+
+>[! Definition 2]
+>Define the refractive power of a thin lens as:
+>$$P= \frac{1}{f}$$
+
+于是我们发现，波前曲率的改变由refractive power决定：
+
+>[!Proposition 1]
+>$$V+V^{'}=P$$
+
+
