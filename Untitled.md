@@ -1,7 +1,10 @@
-在新石器时代的中国，青铜器在祭祀和文化方面占有十分重要的地位。
+In Neolithic China, bronze objects held a very important role in both ritual and cultural contexts.
 
-商的青铜器和商文化的信仰有关。商的青铜器上经常出现饕餮图腾。饕餮被认为与商的祖先和祭祀文化有关。从青铜器可以看出，商文化继承了之前的新石器时代文化，并受到周边同时期文化的影响，但是又在此基础上发展出了自己独特的文化。例如饕餮形象就在良渚文化中存在原型，但又具有很多只属于商，不属于良渚文化的特征。妇好墓中出土了大量青铜器商的图腾与南方和东方的青铜器上的图腾有相似性。这说明商不是独立存在的文化。
+Bronzes of the Shang dynasty were closely related to the beliefs of Shang culture. The taotie totem often appeared on Shang bronzes. The taotie was believed to be connected with the ancestors of the Shang and their ritual culture. From the bronzes, we can see that Shang culture inherited elements from earlier Neolithic cultures and was influenced by contemporary neighboring cultures, yet it also developed its own distinctive characteristics. For example, the taotie motif had prototypes in the Liangzhu culture, but the Shang version exhibited many features unique to Shang culture and absent in Liangzhu. A large number of bronzes unearthed from the tomb of Fu Hao show similarities between Shang totems and those on bronzes from southern and eastern regions, indicating that Shang culture was not isolated.
 
-西周的青铜器中食物容器的比例上升了，并且青铜器的制造工艺也提升了。据推测，西周继承了商的青铜制造工艺，青铜器作为礼器方面也继承了商文化。西周的青铜器更加地标准化，且装饰性特征减少，铭文增多。
+In the Western Zhou period, the proportion of food vessels among bronzes increased, and the craftsmanship of bronze-making also improved. It is believed that the Western Zhou inherited the Shang bronze-making techniques, and bronzes continued to serve ritual functions, maintaining aspects of Shang culture. Western Zhou bronzes became more standardized, with reduced decorative features and an increased presence of inscriptions.
 
-东周的
+During the Eastern Zhou period, bronze-making techniques were further advanced under the influence of goldwork technologies. At the same time, new motifs that had spread from Central Asia appeared in motif.
+
+By the Han dynasty, bronze artifacts had largely disappeared and were replaced by ceramics. This indicates that Han society and culture differed from those of the Shang and Zhou periods.
+
