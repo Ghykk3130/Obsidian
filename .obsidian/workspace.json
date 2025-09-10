@@ -139,16 +139,30 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "系综.md",
+                "file": "Piston-gas Model.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "系综"
+              "title": "Piston-gas Model"
+            }
+          },
+          {
+            "id": "01a58917b8a23793",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "热力学第一定律.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "热力学第一定律"
             }
           }
         ],
-        "currentTab": 9
+        "currentTab": 10
       }
     ],
     "direction": "vertical"
@@ -205,8 +219,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200,
-    "collapsed": true
+    "width": 200
   },
   "right": {
     "id": "9003d078f8dbc4ed",
@@ -304,8 +317,10 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "e24165d86e518583",
+  "active": "01a58917b8a23793",
   "lastOpenFiles": [
+    "正规矩阵的对角化.md",
+    "热力学第一定律.md",
     "Piston-gas Model.md",
     "系综.md",
     "Homework/Physics 510 Homework 2.md",
@@ -329,7 +344,6 @@
     "Pictures/Pasted image 20250909192255.png",
     "惯量张量.md",
     "张量分析.md",
-    "正规矩阵的对角化.md",
     "守恒律.md",
     "一维Acoustic wave的量子化.md",
     "Virial 定理.md",
@@ -338,7 +352,6 @@
     "Spin以及spinor formalism的基变换.md",
     "Homework/Physics 511 Homework 1.md",
     "多级展开.md",
-    "Homework/Physics 511 Homework 0.md",
     "Pictures/Pasted image 20250907232910.png",
     "Pictures/Pasted image 20250907224417.png",
     "Pictures/Pasted image 20250905003456.png",
