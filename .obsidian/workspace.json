@@ -153,12 +153,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "热力学第一定律.md",
+                "file": "对偶矢量空间与伴随算子.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "热力学第一定律"
+              "title": "对偶矢量空间与伴随算子"
             }
           }
         ],
@@ -319,8 +319,9 @@
   },
   "active": "01a58917b8a23793",
   "lastOpenFiles": [
-    "正规矩阵的对角化.md",
     "热力学第一定律.md",
+    "物质中的Maxwell方程.md",
+    "正规矩阵的对角化.md",
     "Piston-gas Model.md",
     "系综.md",
     "Homework/Physics 510 Homework 2.md",
@@ -351,7 +352,6 @@
     "Symmetries in EM.md",
     "Spin以及spinor formalism的基变换.md",
     "Homework/Physics 511 Homework 1.md",
-    "多级展开.md",
     "Pictures/Pasted image 20250907232910.png",
     "Pictures/Pasted image 20250907224417.png",
     "Pictures/Pasted image 20250905003456.png",
