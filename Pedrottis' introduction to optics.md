@@ -349,7 +349,11 @@ $$m_{1}= - \frac{s_{2}}{s_{1}} \frac{n_{1}}{n_{2}}=-1，m_{1}= - \frac{s_{3}}{-3
 - 若第一个折射面像点在第二个折射面右侧，当做虚物点。
 注意到厚透镜的规律是薄透镜规律的generalization。
 
+>[!Idea 1]
 这些规律通过上面的推导是显然的。因为若光在第二个折射面之前汇聚了，时间反演后仍然会在第二个折射面之前汇聚，所以会被当做实像。再时间反演一次，就会被当做实物。若光在第二个折射面之后汇聚，则时间反演之后，反向延长线会在第二个折射面之后汇聚，所以被当做虚像。再时间反演一次，会被当做虚物。
+
+^idea381
+
 ![[15ad46b53bb104f65a10a1af508f01c7.jpg|500]]
 
 
@@ -414,4 +418,23 @@ $$\begin{align}
 >[!Proposition 1]
 >$$V+V^{'}=P$$
 
+将多个薄透镜放在一起，总体的refractive power是每个透镜的refractive power相加。这是因为：
+
+考虑两个薄透镜放在一起。则：
+$$\begin{align}
+ & \frac{1}{s_{1}}+ \frac{1}{s_{1}^{'}}= \frac{1}{f_{1}} \\
+ &  \frac{1}{s_{2}}+ \frac{1}{s_{2}^{'}}= \frac{1}{f_{2}}
+\end{align}$$
+由[[Pedrottis' introduction to optics#^05ee05|idea 3.8.1]]，我们知道：
+$$s_{2}= - s_{1}^{'}$$
+于是两式相加得到：
+$$\frac{1}{s_{1}}+ \frac{1}{s_{2}^{'}}= \frac{1}{f_{1}}+ \frac{1}{f_{2}}= \frac{1}{f}$$
+所以自然有：
+$$P=P_{1}+P_{2}$$
+## Remark
+我们注意到，薄透镜叠加的顺序是不重要的。无论是透镜1放在透镜2前面，还是透镜2放在透镜1前面，上式都不会改变，且都有：$V+V^{'}=P$。
+
+>[!Proposition 2]
+>For thin lenses with refractive powers $P_{1},P_{2},\dots,P_{N}$ placed together, the equivalence refractive power is:
+>$$P=P_{1}+\dots+P_{N}$$
 
