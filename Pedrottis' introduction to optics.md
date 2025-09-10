@@ -352,3 +352,44 @@ $$m_{1}= - \frac{s_{2}}{s_{1}} \frac{n_{1}}{n_{2}}=-1，m_{1}= - \frac{s_{3}}{-3
 这些规律通过上面的推导是显然的。因为若光在第二个折射面之前汇聚了，时间反演后仍然会在第二个折射面之前汇聚，所以会被当做实像。再时间反演一次，就会被当做实物。若光在第二个折射面之后汇聚，则时间反演之后，反向延长线会在第二个折射面之后汇聚，所以被当做虚像。再时间反演一次，会被当做虚物。
 ![[15ad46b53bb104f65a10a1af508f01c7.jpg|500]]
 
+
+# 3.9 Thin lenses
+
+考虑薄透镜。则在第一个和第二个折射面我们有：
+$$\begin{align}
+ & \frac{n_{1}}{s_{1}}+ \frac{n_{2}}{s_{1}^{'}}= \frac{n_{2}-n_{2}}{R_{1}} \\
+ & \frac{n_{2}}{s_{2}}+ \frac{n_{1}}{s_{2}^{'}}= \frac{n_{1}-n_{2}}{R_{2}}
+\end{align}$$
+因为是薄透镜，所以我们有：
+$$s_{2}=-s_{1}^{‘}$$
+带入后将两式相加得到：
+
+>[! Proposition 1 (lensmaker equation)]
+>Consider a thin lens. The material of the lens has a refractive index $n_{2}$, the surrounding medium has a refractive index $n_{1}$. The signed radius of curvatures for are $R_{1},R_{2}$. Then:
+>$$\frac{1}{s_{1}}+ \frac{1}{s_{2}^{'}}= \frac{n_{2}-n_{1}}{n_{1}}\left(  \frac{1}{R_{1}}- \frac{1}{R_{2}} \right)$$
+
+
+令物距$s_{1}$为$\infty$，将对应的像距提取出来定义为焦距。于是：
+
+>[! Definition 1]
+>The focal length of a thin lens is defined as:
+>$$f= \left(  \frac{n_{2}-n_{1}}{n_{1}}\left(  \frac{1}{R_{1}}- \frac{1}{R_{2}} \right) \right)^{-1}$$
+>where $n_{1},n_{2}$ are the refractive indices of the lens and the surrounding medium. $R_{1},R_{2}$ are the radii of curvature.
+
+于是我们可以得到：
+
+$$\frac{1}{s_{1}}+ \frac{1}{s_{2}^{'}}= \frac{1}{f}$$
+我们可以计算magnification：
+$$\begin{align}
+ & m_{1}= - \frac{s_{1}^{'}}{s_{1}} \frac{n_{1 }}{n_{2}} \\
+ &  m_{2}= - \frac{s_{2}^{'}}{s_{2}} \frac{n_{2}}{n_{1}}= \frac{s_{2}^{'}}{s_{1}^{'}} \frac{n_{2}}{n_{1}} \\
+\implies  & m=m_{1}m_{2}= -\frac{s_{2}^{'}}{s_{1}}
+\end{align}$$
+>[! Proposition 2]
+>The overall transverse magnification through a thin lens is:
+>$$m= - \frac{s_{2}^{'}}{s_{1}}$$
+
+![[Pasted image 20250909222633.png|600]]
+
+# 3.10 Vergence and refractive power
+
