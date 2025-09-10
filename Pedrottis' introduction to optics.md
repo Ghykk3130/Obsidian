@@ -203,8 +203,10 @@ $$\begin{align}
 \end{align}$$
 
 我们采用以下规定：
-- 对于物点，像点，若为实，则与vertex的距离为正。若为虚，则与vertex的距离为负。
-- 对于反射面，若曲率中心在入射光同侧，即concave，则曲率半径为负。若曲率中心在入射光对侧，即concave，则曲率半径为正。
+
+>[! Convention]
+>- 对于物点，像点，若为实，则与vertex的距离为正。若为虚，则与vertex的距离为负。
+>- 对于反射面，若曲率中心在入射光同侧，即concave，则曲率半径为负。若曲率中心在入射光对侧，即concave，则曲率半径为正。
 
 于是反射面公式可以改写为：
 
@@ -249,4 +251,104 @@ $$m= -\frac{s^{'}}{s}$$
 >[! Proposition 2]
 >Consider a reflective surface under paraxial approximation. Its magnification is:
 >$$m= - \frac{s_{i}}{s_{o}}$$
+
+# 3.8 Refraction at a spherical surface
+
+和3.7中一样，我们希望建立物距，相距，以及折射面曲率半径之间的关系。
+
+令物点为$O$，像点为$I$。我们通过物点发出的两束光确定像点。令一束光通过vertex，一束光不通过vertex。显然在这种情况下成虚像。我们考虑傍轴近似。
+![[Pasted image 20250909192255.png|500]]
+
+我们有：
+$$\begin{align}
+s^{'} & = \frac{h}{\tan \alpha^{'}} \\
+\end{align}$$
+而$\alpha^{'}=\phi+\theta_{2}$。我们很清楚$\phi$应当如何描述：
+$$\begin{align}
+\phi \approx &\tan \phi \approx \frac{h}{R}
+\end{align}$$
+接下来我们来描述$\theta_{2}$。我们知道$\theta_{2}$和$\theta_{1}$之间的关系：
+$$n_{1}\sin\theta_{1}=n_{2}\sin \theta_{2}\implies n_{1}\theta_{1}=n_{2}\theta_{2}$$
+而我们知道$\theta_{1}$如何描述：
+$$\begin{align}
+\tan \theta_{1} & =\tan (\alpha-\phi) \\
+ & =\frac{\tan \alpha-\tan \phi}{1+\tan \alpha \tan \phi} \\
+ & = \frac{ \frac{h}{s}- \frac{h}{R}}{1+ \frac{h^{2}}{sR}} \\
+ & \approx \frac{h}{s}- \frac{h}{R}
+\end{align}$$
+于是我们有：
+$$\begin{align}
+\theta_{2}  & = \frac{n_{1}}{n_{2}}\theta_{1} \\
+ &  \approx  \frac{n_{1}}{n_{2}}\tan \theta_{1} \\
+ & = \frac{n_{1}}{n_{2}}\left(  \frac{h}{s}- \frac{h}{R} \right)
+\end{align}$$
+于是接下来：
+$$\begin{align}
+\tan \alpha^{'} & = \frac{\tan \phi+ \tan \theta_{2}}{1-\tan \phi \tan \theta_{2}} \\
+ & \approx \frac{ \frac{h}{R}+ \frac{n_{1}}{n_{1}}\left(  \frac{h}{s}- \frac{h}{R} \right)}{1- \frac{h}{R} \frac{n_{2}}{n_{1}}\left(  \frac{h}{s}- \frac{h}{R} \right)} \\
+ & = \frac{ \frac{n_{1}}{n_{2}} \frac{R-s}{sR} \frac{h}{R}}{1-  \frac{n_{1}}{n_{2}} \frac{/R-s}{sR} \frac{h^{2}}{R}} \\
+ &  \approx \frac{n_{1}}{n_{2}} \frac{R-s}{sR}h+ \frac{h}{R}
+\end{align}$$
+于是接下来：
+$$\begin{align}
+s^{'} & = \frac{h}{\tan \alpha^{'} \\
+} \\
+\implies &  \frac{n_{1}}{s}- \frac{n_{2}}{s^{'}}= \frac{n_{1}-n_{2}}{R}
+\end{align}$$
+我们采用和3.6一样的符号convention。因为像为虚像，所以像距为负。又因为曲面曲率中心在光入射的方向，所以曲率半径为负。于是修改符号后得到：
+
+>[! Proposition 1]
+>Assume the light comes from a medium $n_{1}$, and goes in to a medium $n_{2}$. For a refractive surface with curvature radius $R$ under paraxial approximation, together with an object and its conjugate image, the following equation is satisfied:
+>$$\frac{n_{1}}{s}+ \frac{n_{2}}{s^{'}}= \frac{n_{2}-n_{1}}{R}$$
+
+同样地，我们可以考虑transverse magnification。
+![[Pasted image 20250909194940.png|500]]
+
+为了考虑transversee magnification，我们考虑一个垂直于光轴的物体。同样我们认为物体足够矮，以致于所有的物点都具有同样地像距。于是我们只需要确定物体像的首尾就可以画出像。令物体首发出两束光。为了简便，一束垂直于球面，另一束经过vertex。令物体尾发出一束光进经过vertex。因为像距一样，物体尾像应该处在物体首像与光轴的垂线上。那么由几何关系可得：
+$$ \begin{align}
+\frac{h_{i}}{s^{'}-R} & = \frac{h_{o}}{s+R} \\
+\end{align}$$
+用方程$\frac{n_{1}}{s}+ \frac{n_{2}}{s^{'}}= \frac{n_{2}-n_{1}}{R}$带入消元，我们最后得到：
+$$\frac{h_{i}}{h_{o}}= \frac{s^{'}}{s} \frac{n_{1}}{n_{2}}$$
+我们adopt magnification的sign convention，得到：
+$$m= - \frac{s^{'}}{s} \frac{n_{1}}{n_{2}}$$
+>[! Proposition 2]
+>Consider a reflective surface under paraxial approximation. Its magnification is:
+>$$m = - \frac{s^{'}}{s} \frac{n_{1}}{n_{2}}$$
+
+## Ex: Thick lens
+
+考虑两个反射面，曲率半径都为$30cm$，一个convex，一个convace。先暂时忽略途中lens的厚度。
+![[Pasted image 20250909200116.png|600]]
+
+则第一个折射面成像为：
+$$\frac{n_{1}}{s_{1}}+ \frac{n_{2}}{s_{2}}= \frac{n_{2}-n_{1}}{R}$$
+解得：$s_{2}=40cm$
+
+为了考虑第二个折射面成像，必须引入虚物点的概念。若光沿着成第一个折射面像点的路径入射，会被第二个折射面汇聚形成实像。我们反过来考虑光从第二个折射面像点出射，然后在第一个折射面像点处形成虚像。那么我们有：
+$$\frac{n_{1}}{s_{3}}- \frac{n_{2}}{s_{2}}= \frac{n_{2}-n_{1}}{R}$$
+我们rearrange一下：
+$$\frac{n_{2}}{-s_{2}}+ \frac{n_{1}}{s_{3}}= \frac{n_{1}-n_{2}}{-R}$$
+这就相当于光从物距为$-s_{2}$处的物体发出，然后在$s_{3}$处成像。这就相当于，将第一个折射面的像点当作第二个折射面的物点，只不过这个物点是“虚”的，因此物距取负。
+
+现在考虑lens的厚度。则第一个折射面像到第二个折射面的距离为：$40-10=30cm$
+
+考虑一个$30cm$处的虚物点。在第二个折射面有：
+$$\frac{n_{2}}{-30}+ \frac{n_{1}}{s_{3}}= \frac{n_{1}-n_{2}}{-R}$$
+解得：$s_{3}=9cm$。于是最终像为实像，且距离第二个折射面$9cm$。
+
+我们还可以考虑overall magnification：
+$$m_{1}= - \frac{s_{2}}{s_{1}} \frac{n_{1}}{n_{2}}=-1，m_{1}= - \frac{s_{3}}{-30} \frac{n_{2}}{n_{1}}= \frac{2}{5},m=m_{1}m_{2}=- \frac{2}{5}$$
+
+## Remark
+关于将第一个折射面的像点当做第二个折射面的物点，对于薄透镜来说有以下规律：
+- 虚像点对应实物点。
+- 实像点对应虚物点。
+注意这对于厚透镜不一定成立。对于厚透镜来说（若光从左侧射入光具组）：
+- 若第一个折射面像点在第二个折射面左侧，当做实物点。
+- 若第一个折射面像点在第二个折射面右侧，当做虚物点。
+注意到厚透镜的规律是薄透镜规律的generalization。
+
+这些规律通过上面的推导是显然的。因为若光在第二个折射面之前汇聚了，时间反演后仍然会在第二个折射面之前汇聚，所以会被当做实像。再时间反演一次，就会被当做实物。若光在第二个折射面之后汇聚，则时间反演之后，反向延长线会在第二个折射面之后汇聚，所以被当做虚像。再时间反演一次，会被当做虚物。
+![[15ad46b53bb104f65a10a1af508f01c7.jpg|500]]
 
