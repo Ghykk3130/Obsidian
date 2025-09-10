@@ -4,6 +4,27 @@
 
 **2. 在1的基础上，最开始系统处于平衡。我们在活塞上方放置重物$m$。有两种放置方式：直接将$m$放上去，或者将$m$无限细分，quasi-static地放上去。我们问这两种情况下系统最终平衡时活塞高度是多少。**
 
+# 关于隔板
+
+热力学中，我们认为隔板是一种对粒子坐标进行限制的东西。隔板相当于一个无限深势阱。系统通过隔板和外界隔开。
+
+>[!Definition 1]
+>A system that has no interaction with other systems is called isolated (thermally isolated).
+
+物理上，我们想象一个远离任何物质的系统。那这个系统就是isolated的。它因为远离任何物质，不可能和其他系统形成interaction Hamiltonian。或者，我们也可以想象这个系统是和其他物质有接触的，不过一个魔法隔板将任何与其他系统的coupling隔绝。要计算任何可加量都是直接相加，不需要计interaction term。这个隔板本身没有任何内部结构，不能传递能量，动量。本身也不具有能量和动量，不是一个力学结构。
+
+>[!Definition 2]
+>A system that can exchange energy but matter with other systems is called closed.
+
+我们应当将closed的系统想象成一个被隔板包围的系统。我们应该把这里的隔板想象成一个无限轻薄的，隔绝物质的膜。它本身有一定的内部结构，可以作为系统和外界交换能量，动量的媒介。（例如内部可以激发出一些声子来导热。或者隔板本身可以移动来对气体做功。）但是由于它无限轻薄，自身Hamiltonian无限小，在计算总Hamiltonian的时候可以忽略。
+
+又因为隔板无限轻薄，它质量也是无限小。隔板必须时刻处在平衡状态。所以稍微有不平衡，隔板就会以“无限的加速度”瞬移到平衡位置。（在平衡位置会立即以无限的加速度“刹车”，因为隔板本身无限轻，若稍有一点不平衡就会无限快地回到平衡位置。）这个隔板也不是力学结构，因为没有质量，其动量无法计算，无法加入Hamiltonian中。
+
+>[!Definition 3]
+>A system that can exchange both particles and energy with other systems is called open.
+
+这种情况就相当于隔板不存在了。
+
 # 系统能量
 
 对于上面$1$中系统，总能量是多少？我们知道的事实是：
