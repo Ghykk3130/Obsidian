@@ -282,7 +282,7 @@ $$\begin{align}
 \end{align}$$
 Then:
 $$\Delta S=N_{A}k\ln\left(  \frac{V_{f}}{V_{i}} \left( \frac{U_{f}}{U_{i}} \right)^{3/2} \right)=0$$
-These results are consistent with the reversibility. The first process is not reversible, so by the second law, we must have that $\Delta S>0$. The second process is reversible. Since the gas is thermally isolated, I have that $\Delta S=\int \frac{\rlap{\textrm{d}}{\bar{\phantom{w}}} Q}{T}=\int \frac{0}{T}=0$. Therefore $\Delta S=0$ makes sense.
+These results are consistent with the reversibility. The first process is not reversible, so by the second law, we must have that $\Delta S>0$. The second process is reversible. Since the gas is thermally isolated, I have that $\Delta S=\int \frac{\rlap{\textrm{d}}{\bar{\phantom{w}}} Q}{T}=\int \frac{0}{T}=0$. Therefore $\Delta S=0$ makes sense. 
 
 # 4.
 Let $AB,BC,CD,DA$ on the $p-V$ diagram represent processes $a),b),c),d)$ respectively. Then the only heat inflow is on $AB$. I have:
