@@ -29,3 +29,49 @@ $$C+\alpha mgR-(C-\alpha mgR)=2\alpha mgR$$
 - c). is not consistent with thermodynamic laws. It violates the second law because all heat are (solely) turned into work.
 - d). is not consistent with thermodynamic laws. The efficiency should be bounded above by $1- \frac{T_{2}}{T_{1}}=  0.5$, but the actual efficiency is $0.8$. 
 # 3.
+Consider any reversible engine $E$. Suppose $T_{1}>T_{2}$. Run a Carnot engine and take the work as input. 
+![[4c5951bbd74936b95036a648cca912c8.jpg|300]]
+
+Then by the second law, I have:
+$$\begin{align}
+ & Q_{1}\geq Q_{2} \\
+\implies & Q_{1} \geq W\left( 1- \frac{T_{2}}{T_{1}} \right)^{-1} \\
+\implies  & Q_{1}\geq \eta Q_{1}\left( 1- \frac{T_{2}}{T_{1}} \right)^{-1} \\
+\implies  & \eta \leq 1- \frac{T_{2}}{T_{1}}
+\end{align}$$
+Since $E$ is a reversible engine, and Carnot engine is by default reversible, I can run everything backward. 
+![[078dbd32c28a84d620fcebbef1ad77f8.jpg|300]]
+
+Similarly, I have:
+$$\begin{align}
+ & Q_{2} \geq Q_{1} \\
+\implies & \eta Q_{1}\left( 1- \frac{T_{2}}{T_{1}} \right)^{-1} \geq Q_{1} \\
+\implies  & \eta\geq 1- \frac{T_{2}}{T_{1}}
+\end{align}$$
+Therefore, I have:
+$$\eta=1- \frac{T_{2}}{T_{1}}$$
+# 4.
+Suppose a reversible engine $E$ is absorbing (the sign could be either positive or negative, so not just absorbing strictly speaking.) heat from $T_{1},\dots T_{N}$.
+
+We supplement the heat absorbed from $T_{1},\dots T_{N}$ by running $N$ Carnot engines between a heat reservoir $T_{0}$ and $T_{i},i=1,\dots,N$. 
+![[344c7bc69fead86347a1ed6a24f36c5a.jpg]]
+
+Then the equivalent heat engine is denoted by $E+C_{1}+\dots+C_{N}$. We now further decompose the total heat absorbed from $T_{0}$ into $Q=Q_{1}-Q_{2}$
+
+Then the efficiency of the equivalent heat engine is given by:
+$$\eta= \frac{Q_{1}-Q_{2}}{Q_{1}}=1- \frac{Q_{2}}{Q_{1}}$$
+Since $E$ is reversible, and $C_{i},i=1,\dots,N$ are reversible, then $E+C_{1}+\dots+C_{N}$ is reversible. Then for a reversible engine running between $T_{0}$ and $T_{0}$, I have:
+$$\begin{align}
+ & \eta=\eta_{Carnot}=1- \frac{T_{0}}{T_{0}}=0 \\
+\implies & 1- \frac{Q_{2}}{Q_{1}}=0 \\
+\implies  & Q_{2}=Q_{1} \\
+\implies  & Q=0
+\end{align}$$
+Then I have:
+$$\begin{align}
+0 & =Q \\
+ & =\sum_{i}Q_{i_{0}} \\
+ & =\sum T_{0} \frac{Q_{i}}{T_{i}}  \\
+\implies & \sum_{i} \frac{Q_{i}}{T_{i}}=0
+\end{align}$$
+# 5.
