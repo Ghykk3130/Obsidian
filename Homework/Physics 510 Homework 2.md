@@ -1,4 +1,5 @@
 # 1.
+How $C_{V},C_{p}$ are different from each other physically and mathematically.
 Consider the sphere in the problem placed far from any matter. The sphere is only allowed to exchange energy with the surroundings through heat. Consider changing the state of the sphere by putting in a small amount of heat $\rlap{d}\bar{\phantom{w}}Q$ reversibly. Then we have:
 $$C= \frac{\rlap{d}\bar{\phantom{w}}Q}{dT}= \frac{dU}{dT}$$
 now put the sphere on a horizontal surface in gravitational field. Change the state of the sphere such that the initial and final states are the same as the previous case. Then we have:
