@@ -25,7 +25,7 @@ Then their heat capacity difference is:
 $$C+\alpha mgR-(C-\alpha mgR)=2\alpha mgR$$
 # 2.
 - a). is not consistent with thermodynamic laws. It violates the first law. 
-- b). is consistent with thermodynamic laws. The first law is obviously satisfied. Now take the two heat reservoirs, the engine, and the work reservoir as an isolated system. The total change of entropy in one cycle is $\frac{50}{800}- \frac{10}{400}= \frac{3}{80} >0$. So it does not violate the second law.
+- b). is consistent with thermodynamic laws. The first law is obviously satisfied. Now take the two heat reservoirs, the engine, and the work reservoir as an isolated system. The total change of entropy in one cycle is $\Delta S = \Delta S_{1}+\Delta S_{2} \geq \frac{50}{800}- \frac{10}{400}= \frac{3}{80} >0$. So it does not violate the second law.
 - c). is not consistent with thermodynamic laws. It violates the second law because all heat are (solely) turned into work.
 - d). is not consistent with thermodynamic laws. The efficiency should be bounded above by $1- \frac{T_{2}}{T_{1}}=  0.5$, but the actual efficiency is $0.8$. 
 # 3.
