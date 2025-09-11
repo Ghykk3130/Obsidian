@@ -203,9 +203,9 @@ Clearly, this corresponds to a counterclockwise rotation about the $y$ axis by a
 ## a).
 Directly borrow the result from $2)$, I can write down the representation of $\hat{\mathcal{O}}$:
 $$\hat{\mathcal{O}}= \frac{\hbar}{2} \begin{pmatrix}
-1-\cos \beta & e^{-i\alpha}\sin \beta \\
--e^{i\alpha}  \sin \beta & 1+\cos \beta
-\end{pmatrix}$$
+\cos \beta & e^{-i\alpha}\sin \beta \\
+e^{i\alpha}\sin \beta
+ & -\cos \beta\end{pmatrix}$$
 The eigenvalues, again borrow from the result in $2)$ are $\pm \frac{\hbar}{2}$.
 ## b).
 Again, I already calculated everything in $2b)$. Here I would write down the result directly:
