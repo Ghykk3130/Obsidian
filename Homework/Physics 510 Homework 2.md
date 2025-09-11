@@ -75,3 +75,6 @@ $$\begin{align}
 \implies & \sum_{i} \frac{Q_{i}}{T_{i}}=0
 \end{align}$$
 # 5.
+
+# 6.
+
