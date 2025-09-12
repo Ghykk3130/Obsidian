@@ -1,10 +1,18 @@
-In Neolithic China, bronze objects held a very important role in both ritual and cultural contexts.
+In an isolated system moving with well defined initial and final states, we can argue that $\Delta S\geq{0}$ easily. Consider the system's initial and finial states are denotes by points $A,B$. Then the classical textbook argument would be: construct a reversible path from $B$ to $A$. Then by Clausius theorem, I have:
+$$\begin{align}
+ & \oint \frac{{\delta Q}}{T} \leq 0 \\
+\implies & \int_{A}^B \frac{\delta Q_{irrev}}{T}+\int_{B}^{A} \frac{\delta Q_{rev}}{T} \leq 0 \\
+  \implies  & \int_{A}^{B} \frac{\delta Q_{rev}}{T} \geq \int_{A}^{B} \frac{\delta Q_{irrev}}{T} = 0 \\
+\implies & \Delta S \geq{0}
+\end{align}$$
+However, this argument is restricted to the case where the system moves quasi-statically (such that the temperature inside $\frac{\delta Q_{irrev}}{T}$ is well defined), and has well defined temperatures in the initial and final states. 
 
-Bronzes of the Shang dynasty were closely related to the beliefs of Shang culture. The taotie totem often appeared on Shang bronzes. The taotie was believed to be connected with the ancestors of the Shang and their ritual culture. From the bronzes, we can see that Shang culture inherited elements from earlier Neolithic cultures and was influenced by contemporary neighboring cultures, yet it also developed its own distinctive characteristics. For example, the taotie motif had prototypes in the Liangzhu culture, but the Shang version exhibited many features unique to Shang culture and absent in Liangzhu. A large number of bronzes unearthed from the tomb of Fu Hao show similarities between Shang totems and those on bronzes from southern and eastern regions, indicating that Shang culture was not isolated.
+My first question is: does the conclusion that $\Delta S\geq 0$ still holds if the irreversible process is not carried out quasi-statically? That means we cannot write down $\int_{A}^{B} \frac{\delta Q_{irrev}}{T}$ because the temperature is not well defined.
 
-In the Western Zhou period, the proportion of food vessels among bronzes increased, and the craftsmanship of bronze-making also improved. It is believed that the Western Zhou inherited the Shang bronze-making techniques, and bronzes continued to serve ritual functions, maintaining aspects of Shang culture. Western Zhou bronzes became more standardized, with reduced decorative features and an increased presence of inscriptions.
+The setup of my second question is: consider two objects with temperature $T_{1},T_{2}$ at the beginning. They are isolated from the rest of the universe. We allow heat to flow freely between them. Then at some point, we break the thermal contact between them, and wait long enough for the two systems to settle down to thermal equilibrium with themselves. (I don't mean they are in thermal equilibrium with each other. I just wait longer than the relaxation time such that the two systems have well defined temperatures. ) 
 
-During the Eastern Zhou period, bronze-making techniques were further advanced under the influence of goldwork technologies. At the same time, new motifs that had spread from Central Asia appeared in motif.
+My second question is: can we make conclusion on the total entropy change of the system $T_{1}+T_{2}$? I know from my intuition that the entropy of this system should increase. But since 1). the temperature inside this system is not uniform (we have two subsystems $T_{2},T_{2}$), 2). the same problem as my question 1, the classical textbook argument fails. How can I draw the conclusion correctly.
 
-By the Han dynasty, bronze artifacts had largely disappeared and were replaced by ceramics. This indicates that Han society and culture differed from those of the Shang and Zhou periods.
+
+
 
