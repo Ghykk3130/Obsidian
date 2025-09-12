@@ -95,8 +95,23 @@ $$\begin{align}
 \Delta S_{1}+\Delta S_{2}+\Delta S_{3} \geq 0 \\
 \implies \int_{T_{1i}}^{T_{1f}} \frac{C_{1}dT_{1}}{T_{1}}+ \int_{T_{2i}}^{T_{2f}} \frac{C_{2}dT_{2}}{T_{2}}+ \int_{T_{3i}}^{T_{3f}} \frac{C_{3}dT_{3}}{T_{3}}  & \geq 0 \\
 \implies C_{1}\ln \frac{T_{1f}}{T_{1i}}+C_{2}\ln \frac{T_{2f}}{T_{2i}}+C_{3} \ln \frac{T_{3f}}{T_{3i}} \geq 0  \\
-\left( \frac{T_{1f}}{T_{1i}} \right)^{C_{1}} \left(  \frac{T_{2f}}{T_{2i}} \right)^{C_{2}} \left(  \frac{T_{3f}}{T_{3i}} \right)^{C_{3}} \geq  1\end{align}$$
-This equation constrains the available volume in $\mathbb{R}^{3}$ spanned by $T_{1f},T_{2f},T_{3f}$.
+\left( \frac{T_{1f}}{T_{1i}} \right)^{C_{1}} \left(  \frac{T_{2f}}{T_{2i}} \right)^{C_{2}} \left(  \frac{T_{3f}}{T_{3i}} \right)^{C_{3}} \geq  1 \dots*)\end{align}$$
+This equation constrains the available volume in $\mathbb{R}^{3}$ spanned by $T_{1f},T_{2f},T_{3f}$. The surface $\left(  \frac{T_{1f}}{T_{1i}} \right)^{C_{1}} \left( \frac{T_{2f}}{T_{2i}} \right)^{C_{2}} \left( \frac{T_{3f}}{T_{3i}} \right)^{C_{3}}=1$ is plotted in a unit cube. Then the allowed region is everything "above" this surface.
+
+![[ba3f4b1ecc47b8ef894b3036ac1b9f3d.jpg|300]]
+
+We need to minimize $C_{1}T_{1f}+C_{2}T_{2f}+C_{3}T_{3f}= (C_{1}\hat{x}+C_{2}\hat{y}+C_{3}\hat{z})\cdot(T_{1f}\hat{x}+T_{2f}\hat{y}+T_{3f}\hat{z})$
+
+That is we want to find the vector $T_{1f}\hat{x}+T_{2f}\hat{y} +{T_{3f}}\hat{z}$ such that its projection along $C_{1}\hat{x}+C_{2}\hat{y}+C_{3}\hat{z}$ is minimized. Obviously, the projection is minimized if $T_{1f}\hat{x}+T_{2f}\hat{y}+T_{3f}\hat{z}$ is somewhere on the surface. 
+
+Note that if the engine is reversible, then the $*)$ takes equality. Then $T_{1f}\hat{x}+T_{2f}\hat{y}+ T_{3f}\hat{z}$ can indeed lie on the surface.
+
+Then want to find at which point on the surface is $C_{1}T_{1f}+C_{2}T_{2f}+C_{3}T_{3f}$ minimized. Use Lagrange multiplier to find:
+$$\begin{align}
+ & \frac{C_{1}}{T_{1f}}=\lambda C)d_{1} &  \\
+ &  \frac{C_{2}}{R}
+\end{align}$$
+
 
 
 
