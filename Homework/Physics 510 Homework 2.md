@@ -92,9 +92,11 @@ Note that the process does not need to be reversible for me to write down $\Delt
 
 Then it suffices to minimize $C_{1}T_{1f}+C_{2}T_{2f}+C_{3}T_{3f}$. Take the three heat source, the heat engine, and the work reservoir which absorbs the work from the engine as an isolated system. Then the second law implies:
 $$\begin{align}
-\int_{T_{1i}}^{T_{1f}} \frac{\rlap{d}\bar{\phantom{w}}Q_{1}}{T_{1}}+\int_{T_{2i}}^{T_{2f}} \frac{\rlap{d}\bar{\phantom{w}}Q_{2}}{T_{2}}+ \int_{T_{3i}}^{T_{3f}} \frac{\rlap{d}\bar{\phantom{w}}Q_{3}}{T_{3}} & \geq 0 \\
-\implies
-\end{align}$$
+\Delta S_{1}+\Delta S_{2}+\Delta S_{3} \geq 0 \\
+\implies \int_{T_{1i}}^{T_{1f}} \frac{C_{1}dT_{1}}{T_{1}}+ \int_{T_{2i}}^{T_{2f}} \frac{C_{2}dT_{2}}{T_{2}}+ \int_{T_{3i}}^{T_{3f}} \frac{C_{3}dT_{3}}{T_{3}}  & \geq 0 \\
+\implies C_{1}\ln \frac{T_{1f}}{T_{1i}}+C_{2}\ln \frac{T_{2f}}{T_{2i}}+C_{3} \ln \frac{T_{3f}}{T_{3i}} \geq 0  \\
+\left( \frac{T_{1f}}{T_{1i}} \right)^{C_{1}} \left(  \frac{T_{2f}}{T_{2i}} \right)^{C_{2}} \left(  \frac{T_{3f}}{T_{3i}} \right)^{C_{3}} \geq  1\end{align}$$
+This equation constrains the available volume in $\mathbb{R}^{3}$ spanned by $T_{1f},T_{2f},T_{3f}$.
 
 
 
