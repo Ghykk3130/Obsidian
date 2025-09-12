@@ -76,6 +76,27 @@ $$\begin{align}
 \implies & \sum_{i} \frac{Q_{i}}{T_{i}}=0
 \end{align}$$
 # 5.
+Consider running a cyclic engine between $T_{1},T_{2},T_{3}$ to exchange heat among them and output some work. 
+
+Suppose before running the heat engine, the heat sources are all in thermal equilibrium with themselves. (I don't mean that they are in thermal equilibrium with each other, I just want to say that their state quantities are well defined.) the initial temperatures of the heat sources are $T_{1i},T_{2i},T_{3i}$.
+
+Suppose after running the heat engine, and the three systems again reach thermal equilibrium with themselves, the final temperatures are $T_{1f},T_{2f},T_{3f}$.
+
+Take the three heat sources plus the heat engine as the system. Since the heat engine is cyclic, the work output of of the system is the sum of the (negative) change in the internal energy of the heat sources. I have:
+$$\begin{align}
+W & =-\Delta U_{1}-\Delta U_{2}-\Delta U_{3} \\
+ & =C_{1}(T_{1i}-T_{1f})+C_{2}(T_{2i}-T_{2f})+C_{3}(T_{3i}-T_{3f}) \\
+ & =C_{1}T_{1i}+C_{2}T_{2i}+C_{3}T_{3i}-(C_{1}T_{1f}+C_{2}T_{2f}+C_{3}T_{3f})
+\end{align}$$
+Note that the process does not need to be reversible for me to write down $\Delta U=C(T_{f}-T_{i})$. Because $U$ is just a function of $T$. After fixing the initial and final states, I can construct a reversible path connecting them to calculate $U$. If I extract out heat reversibly, I must have $\Delta U=\int \rlap{d}\bar{\phantom{w}}Q=\int CdT=C(T_{f}-T_{i})$.
+
+Then it suffices to minimize $C_{1}T_{1f}+C_{2}T_{2f}+C_{3}T_{3f}$. Take the three heat source, the heat engine, and the work reservoir which absorbs the work from the engine as an isolated system. Then the second law implies:
+$$\begin{align}
+\int_{T_{1i}}^{T_{1f}} \frac{\rlap{d}\bar{\phantom{w}}Q_{1}}{T_{1}}+\int_{T_{2i}}^{T_{2f}} \frac{\rlap{d}\bar{\phantom{w}}Q_{2}}{T_{2}}+ \int_{T_{3i}}^{T_{3f}} \frac{\rlap{d}\bar{\phantom{w}}Q_{3}}{T_{3}} & \geq 0 \\
+\implies
+\end{align}$$
+
+
 
 # 6.
 
