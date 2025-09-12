@@ -39,7 +39,7 @@ $$\begin{pmatrix}
 \end{pmatrix}$$
 
 # 2.
-## 2).
+## a).
 $$\begin{align}
 \langle S_{x}^{2}\rangle & =\left\langle +\hat{n}| \frac{\hbar^{2}}{4}\mathbb{1}|+\hat{n} \right\rangle \\
  & = \frac{\hbar^{2}}{4}
@@ -51,18 +51,46 @@ $$\begin{align}
 1 & 0 
 \end{pmatrix} |+\hat{n}\rangle \\
  & = \frac{\hbar}{2} \begin{pmatrix}
- \cos \frac{\theta}{2} &  e^{-i\alpha}\sin \frac{\theta}{2}
+ \cos \frac{\beta}{2} &  e^{-i\alpha}\sin \frac{\beta}{2}
 \end{pmatrix} \begin{pmatrix}
-e^{i\alpha}\sin \frac{\theta}{2} \\
-\cos \frac{\theta}{2}
+e^{i\alpha}\sin \frac{\beta}{2} \\
+\cos \frac{\beta}{2}
 \end{pmatrix} \\
- & =\left( e^{i\alpha}\sin \frac{\theta}{2}\cos \frac{\theta}{2}+ e^{-i\alpha}\sin \frac{\theta}{2} \cos \frac{\theta}{2} \right) \frac{\hbar}{2} \\
+ & =\left( e^{i\alpha}\sin \frac{\beta}{2}\cos \frac{\beta}{2}+ e^{-i\alpha}\sin \frac{\beta}{2} \cos \frac{\beta}{2} \right) \frac{\hbar}{2} \\
 \end{align}$$
 Then:
 $$\begin{align}
-\langle S_{x} \rangle^{2} & = \frac{\hbar^{2}}{4} |e^{i\alpha}\sin \frac{\theta}{2}\cos \frac{thera}{2}+e^{-i\alpha}\sin \frac{\theta}{2}\cos \frac{\theta}{2} |^{2} \\
- & = \hbar^{2} \cos ^{2} \alpha \sin ^{2} \frac{\theta}{2}\cos ^{2}  \frac{\theta}{2} \\
- & = \frac{\hbar^{2}}{4}\cos ^{2}\alpha \sin ^{2}\theta
+\langle S_{x} \rangle^{2} & = \frac{\hbar^{2}}{4} |e^{i\alpha}\sin \frac{\beta}{2}\cos \frac{\beta}{2}+e^{-i\alpha}\sin \frac{\beta}{2}\cos \frac{\beta}{2} |^{2} \\
+ & = \hbar^{2} \cos ^{2} \alpha \sin ^{2} \frac{\beta}{2}\cos ^{2}  \frac{\beta}{2} \\
+ & = \frac{\hbar^{2}}{4}\cos ^{2}\alpha \sin ^{2}\beta
 \end{align}$$
 Then: 
-$$\langle \Delta S_{x}^{2}\rangle=\frac{\hbar^{2}}{4}- \frac{\hbar^{2}}{4}\cos ^{2}\alpha \sin ^{2}\theta= \frac{\hbar^{2}}{4} \sin ^{2}\alpha \sin ^{2}\theta$$
+$$\langle \Delta S_{x}^{2}\rangle=\frac{\hbar^{2}}{4}- \frac{\hbar^{2}}{4}\cos ^{2}\alpha \sin ^{2}\beta= \frac{\hbar^{2}}{4} (1-\cos ^{2}\alpha \sin ^{2}\beta)$$
+## b).
+ $$\begin{align}
+\langle S_{y}^{2}\rangle & = \frac{\hbar^{2}}{4}\langle +\hat{n}|+\hat{n}\rangle \\
+ & =\frac{\hbar^{2}}{4}
+\end{align}$$
+$$\begin{align}
+\langle S_{y}\rangle & =\langle +\hat{n}|S_{y}|+\hat{n}\rangle \\
+ & = \frac{\hbar}{2}\langle +\hat{n} |\begin{pmatrix}
+0 & -i \\
+i & 0
+\end{pmatrix} |+\hat{n}\rangle \\
+ & = \frac{\hbar }{2} \begin{pmatrix}
+\cos \frac{\beta}{2} & e^{i\alpha}\sin \frac{\beta}{2}
+\end{pmatrix} \begin{pmatrix}
+ -ie^{i\alpha}\sin \frac{\beta}{2} \\
+i \cos \frac{\beta}{2}
+\end{pmatrix} \\
+ & =\frac{\hbar}{2}\left( -ie^{i\alpha}\sin \frac{\beta}{2}\cos \frac{\beta}{2}+ i e^{-i\alpha}\sin \frac{\beta}{2}\cos \frac{\beta}{2} \right)
+\end{align}$$
+Then:
+$$\begin{align}
+\langle S_{y}\rangle^{2} & = \frac{\hbar^{2}}{4 }|-ie^{i\alpha}\sin \frac{\beta}{2}\cos \frac{\beta}{2}+ie^{-i\alpha}\sin \frac{\beta}{2}\cos \frac{\beta}{2}|^{2} \\
+ & =\hbar^{2}  \sin ^{2}\alpha \sin ^{2} \frac{\beta}{2}\cos ^{2} \frac{\beta}{2} \\
+ & = \frac{\hbar^{2}}{4}\sin ^{2}\alpha \sin ^{2}\beta
+\end{align}$$
+Then:
+$$\langle \Delta S_{y}^{2}\rangle= \frac{\hbar^{2}}{4}(1- \sin ^{2}\alpha \sin ^{2}\beta)$$
+## c).
