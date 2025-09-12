@@ -102,18 +102,23 @@ This equation constrains the available volume in $\mathbb{R}^{3}$ spanned by $T_
 
 We need to minimize $C_{1}T_{1f}+C_{2}T_{2f}+C_{3}T_{3f}= (C_{1}\hat{x}+C_{2}\hat{y}+C_{3}\hat{z})\cdot(T_{1f}\hat{x}+T_{2f}\hat{y}+T_{3f}\hat{z})$
 
-That is we want to find the vector $T_{1f}\hat{x}+T_{2f}\hat{y} +{T_{3f}}\hat{z}$ such that its projection along $C_{1}\hat{x}+C_{2}\hat{y}+C_{3}\hat{z}$ is minimized. Obviously, the projection is minimized if $T_{1f}\hat{x}+T_{2f}\hat{y}+T_{3f}\hat{z}$ is somewhere on the surface. 
+That is, we want to find the vector $T_{1f}\hat{x}+T_{2f}\hat{y} +{T_{3f}}\hat{z}$ such that its projection along $C_{1}\hat{x}+C_{2}\hat{y}+C_{3}\hat{z}$ is minimized. Obviously, the projection is minimized if $T_{1f}\hat{x}+T_{2f}\hat{y}+T_{3f}\hat{z}$ is somewhere on the surface. This is because if $T_{1f}\hat{x}+T_{2f}\hat{y}+T_{3f}\hat{z}$ is above the surface, then connect this point with the origin. The vector pointing to the intersection of this line and the surface would produce a smaller projection. 
 
 Note that if the engine is reversible, then the $*)$ takes equality. Then $T_{1f}\hat{x}+T_{2f}\hat{y}+ T_{3f}\hat{z}$ can indeed lie on the surface.
 
 Then want to find at which point on the surface is $C_{1}T_{1f}+C_{2}T_{2f}+C_{3}T_{3f}$ minimized. Use Lagrange multiplier to find:
 $$\begin{align}
- & \frac{C_{1}}{T_{1f}}=\lambda C)d_{1} &  \\
- &  \frac{C_{2}}{R}
+ & \frac{C_{1}}{T_{1f}}=\lambda C_{1} &  \\
+ &  \frac{C_{2}}{T_{2f}} = \lambda C_{2} \\
+ & \frac{C_{3}}{T_{3f}}=\lambda C_{3} \\
+ & \left(  \frac{T_{1f}}{T_{1i}} \right)^{C_{1}}\left(  \frac{T_{2f}}{T_{2i}} \right)^{C_{2}}\left(  \frac{T_{3f}}{T_{3i}} \right)^{C_{3}}=1
 \end{align}$$
-
-
-
-
+$$\begin{align}
+\implies  & \lambda=T_{1i}^{- \frac{C_{1}}{C_{1}+C_{2}+C_{3}}}T_{2i}^{ -\frac{C_{2}}{C_{1}+C_{2}+C_{3}}}T_{3i}^{- \frac{C_{3}}{C_{1}+C_{2}+C_{3}}} \\
+ & T_{1f}=T_{2f}=T_{3f}=T_{1i}^{ \frac{C_{1}}{C_{1}+C_{2}+C_{3}}}T_{2i}^{ \frac{C_{2}}{C_{1}+C_{2}+C_{3}}}T_{3i}^{ \frac{C_{3}}{C_{1}+C_{2}+C_{3}}} \\
+\implies  & W_{max}=C_{1}T_{1i}+C_{2}T_{2i}+C_{3}T_{3i}-(C_{1}+C_{2}+C_{3})T_{1i}^{- \frac{C_{1}}{C_{1}+C_{2}+C_{3}}}T_{2i}^{ -\frac{C_{2}}{C_{1}+C_{2}+C_{3}}}T_{3i}^{- \frac{C_{3}}{C_{1}+C_{2}+C_{3}}}
+\end{align}$$
+Or adopting the notation in the problem, I write:
+$$W_{max}=C_{1}T_{1}+C_{2}T_{2}+C_{3}T_{3}-(C_{1}+C_{2}+C_{3})T_{1}^{- \frac{C_{1}}{C_{1}+C_{2}+C_{3}}}T_{2}^{ -\frac{C_{2}}{C_{1}+C_{2}+C_{3}}}T_{3}^{- \frac{C_{3}}{C_{1}+C_{2}+C_{3}}}$$
 # 6.
 
