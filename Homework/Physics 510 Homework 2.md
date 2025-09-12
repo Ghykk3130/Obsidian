@@ -1,5 +1,4 @@
 # 1.
-How $C_{V},C_{p}$ are different from each other physically and mathematically.
 Consider the sphere in the problem placed far from any matter. The sphere is only allowed to exchange energy with the surroundings through heat. Consider changing the state of the sphere by putting in a small amount of heat $\rlap{d}\bar{\phantom{w}}Q$ reversibly. Then we have:
 $$C= \frac{\rlap{d}\bar{\phantom{w}}Q}{dT}= \frac{dU}{dT}$$
 now put the sphere on a horizontal surface in gravitational field. Change the state of the sphere such that the initial and final states are the same as the previous case. Then we have:
@@ -104,7 +103,7 @@ We need to minimize $C_{1}T_{1f}+C_{2}T_{2f}+C_{3}T_{3f}= (C_{1}\hat{x}+C_{2}\ha
 
 That is, we want to find the vector $T_{1f}\hat{x}+T_{2f}\hat{y} +{T_{3f}}\hat{z}$ such that its projection along $C_{1}\hat{x}+C_{2}\hat{y}+C_{3}\hat{z}$ is minimized. Obviously, the projection is minimized if $T_{1f}\hat{x}+T_{2f}\hat{y}+T_{3f}\hat{z}$ is somewhere on the surface. This is because if $T_{1f}\hat{x}+T_{2f}\hat{y}+T_{3f}\hat{z}$ is above the surface, then connect this point with the origin. The vector pointing to the intersection of this line and the surface would produce a smaller projection. 
 
-Note that if the engine is reversible, then the $*)$ takes equality. Then $T_{1f}\hat{x}+T_{2f}\hat{y}+ T_{3f}\hat{z}$ can indeed lie on the surface.
+Note that if the engine is reversible, then $*)$ takes equality. Then $T_{1f}\hat{x}+T_{2f}\hat{y}+ T_{3f}\hat{z}$ can indeed lie on the surface. 
 
 Then want to find at which point on the surface is $C_{1}T_{1f}+C_{2}T_{2f}+C_{3}T_{3f}$ minimized. Use Lagrange multiplier to find:
 $$\begin{align}
@@ -116,9 +115,9 @@ $$\begin{align}
 $$\begin{align}
 \implies  & \lambda=T_{1i}^{- \frac{C_{1}}{C_{1}+C_{2}+C_{3}}}T_{2i}^{ -\frac{C_{2}}{C_{1}+C_{2}+C_{3}}}T_{3i}^{- \frac{C_{3}}{C_{1}+C_{2}+C_{3}}} \\
  & T_{1f}=T_{2f}=T_{3f}=T_{1i}^{ \frac{C_{1}}{C_{1}+C_{2}+C_{3}}}T_{2i}^{ \frac{C_{2}}{C_{1}+C_{2}+C_{3}}}T_{3i}^{ \frac{C_{3}}{C_{1}+C_{2}+C_{3}}} \\
-\implies  & W_{max}=C_{1}T_{1i}+C_{2}T_{2i}+C_{3}T_{3i}-(C_{1}+C_{2}+C_{3})T_{1i}^{- \frac{C_{1}}{C_{1}+C_{2}+C_{3}}}T_{2i}^{ -\frac{C_{2}}{C_{1}+C_{2}+C_{3}}}T_{3i}^{- \frac{C_{3}}{C_{1}+C_{2}+C_{3}}}
+\implies  & W_{max}=C_{1}T_{1i}+C_{2}T_{2i}+C_{3}T_{3i}-(C_{1}+C_{2}+C_{3})T_{1i}^{ \frac{C_{1}}{C_{1}+C_{2}+C_{3}}}T_{2i}^{ \frac{C_{2}}{C_{1}+C_{2}+C_{3}}}T_{3i}^{ \frac{C_{3}}{C_{1}+C_{2}+C_{3}}}
 \end{align}$$
 Or adopting the notation in the problem, I write:
-$$W_{max}=C_{1}T_{1}+C_{2}T_{2}+C_{3}T_{3}-(C_{1}+C_{2}+C_{3})T_{1}^{- \frac{C_{1}}{C_{1}+C_{2}+C_{3}}}T_{2}^{ -\frac{C_{2}}{C_{1}+C_{2}+C_{3}}}T_{3}^{- \frac{C_{3}}{C_{1}+C_{2}+C_{3}}}$$
+$$W_{max}=C_{1}T_{1}+C_{2}T_{2}+C_{3}T_{3}-(C_{1}+C_{2}+C_{3})T_{1}^{ \frac{C_{1}}{C_{1}+C_{2}+C_{3}}}T_{2}^{ \frac{C_{2}}{C_{1}+C_{2}+C_{3}}}T_{3}^{ \frac{C_{3}}{C_{1}+C_{2}+C_{3}}}$$
 # 6.
 
