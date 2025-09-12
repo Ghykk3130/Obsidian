@@ -120,4 +120,11 @@ $$\begin{align}
 Or adopting the notation in the problem, I write:
 $$W_{max}=C_{1}T_{1}+C_{2}T_{2}+C_{3}T_{3}-(C_{1}+C_{2}+C_{3})T_{1}^{ \frac{C_{1}}{C_{1}+C_{2}+C_{3}}}T_{2}^{ \frac{C_{2}}{C_{1}+C_{2}+C_{3}}}T_{3}^{ \frac{C_{3}}{C_{1}+C_{2}+C_{3}}}$$
 # 6.
+ 
+Consider putting $T_{1},T_{2}$ into contact for a very brief moment, allowing a tiny amount of signed heat flow $\rlap{d}\bar{\phantom{w}}Q$ from $T_{2}$ to $T_{2}$. Then move them apart. Know that:
+$$U=U(S,x) \implies S=S(U,x)$$
+Then, since the heat reservoirs don't exchange work:
+- a). $dS=dS_{1}+dS_{2}=\left( \frac{\partial S_{1}}{\partial U_{1}} \right)_{x_{1}}dU_{1}+ \left( \frac{\partial S_{2}}{\partial U_{2}} \right)_{x_{2}} dU_{2}= \frac{dU_{1}}{T_{1}}+ \frac{dU_{2}}{T_{2}}$ . $\text{first law}\implies dU_{1}=- \rlap{d}\bar{\phantom{w}}Q,dU_{2}= \rlap{d}\bar{\phantom{w}}Q$. Then $\frac{- \rlap{d}\bar{\phantom{w}}Q}{T_{1}}+ \frac{\rlap{d}\bar{\phantom{w}}Q}{T_{2}}\geq 0$. Then $T_{1}>0>T_{2}\implies \rlap{d}\bar{\phantom{w}}Q < 0$. So $T_{2}$ is hotter.
+- b). Similarly, I have $\frac{-\rlap{d}\bar{\phantom{w}}Q}{T_{1}}+ \frac{\rlap{d}\bar{\phantom{w}}Q}{T_{2}} \geq 0$. But this time $0>T_{2}>T_{1}\implies\rlap{d}\bar{\phantom{w}}Q<0$. So $T_{2}$ is hotter. 
 
+$$\frac{\bar{x}_s-\sigma_{x_s}^2}{\sqrt{\sigma_{\bar{x}_s}}^{2}+\sigma_{\sigma^{2}_{x_s}}^{2}}$$
