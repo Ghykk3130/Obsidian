@@ -1,18 +1,20 @@
-In an isolated system moving with well defined initial and final states, we can argue that $\Delta S\geq{0}$ easily. Consider the system's initial and finial states are denotes by points $A,B$. Then the classical textbook argument would be: construct a reversible path from $B$ to $A$. Then by Clausius theorem, I have:
+>[! Proposition 2]
+>For an isolated system, I have:
+>$$\Delta S \geq 0$$
+## Proof.
+考虑封闭系统从$A$到$B$。系统与环境$T$交换热量$\delta Q=0$。设这条路径为$I$。
+
+为了计算系统从$A$到$B$的熵变，我们构造一条从$A$到$B$的虚拟的，reversible的路径$II$。在这条路径上，我们不假设系统是封闭的。因为这只是一个纯虚拟的构造。
+
+由Clausius定理，我们有：
 $$\begin{align}
- & \oint \frac{{\delta Q}}{T} \leq 0 \\
-\implies & \int_{A}^B \frac{\delta Q_{irrev}}{T}+\int_{B}^{A} \frac{\delta Q_{rev}}{T} \leq 0 \\
-  \implies  & \int_{A}^{B} \frac{\delta Q_{rev}}{T} \geq \int_{A}^{B} \frac{\delta Q_{irrev}}{T} = 0 \\
-\implies & \Delta S \geq{0}
+ & \int_{I} \frac{\delta Q}{T}+ \int_{-II} \frac{\delta Q_{rev}}{T} \leq{0} \\
+\implies & \int_{II} \frac{\delta Q_{rev}}{T} \geq \int_{I} \frac{\delta Q}{T} \\
+ \implies  & \Delta S \geq 0
 \end{align}$$
-However, this argument is restricted to the case where the system moves quasi-statically (such that the temperature inside $\frac{\delta Q_{irrev}}{T}$ is well defined), and has well defined temperatures in the initial and final states. 
-
-My first question is: does the conclusion that $\Delta S\geq 0$ still holds if the irreversible process is not carried out quasi-statically? That means we cannot write down $\int_{A}^{B} \frac{\delta Q_{irrev}}{T}$ because the temperature is not well defined.
-
-The setup of my second question is: consider two objects with temperature $T_{1},T_{2}$ at the beginning. They are isolated from the rest of the universe. We allow heat to flow freely between them. Then at some point, we break the thermal contact between them, and wait long enough for the two systems to settle down to thermal equilibrium with themselves. (I don't mean they are in thermal equilibrium with each other. I just wait longer than the relaxation time such that the two systems have well defined temperatures. ) 
-
-My second question is: can we make conclusion on the total entropy change of the system $T_{1}+T_{2}$? I know from my intuition that the entropy of this system should increase. But since 1). the temperature inside this system is not uniform (we have two subsystems $T_{2},T_{2}$), 2). the same problem as my question 1, the classical textbook argument fails. How can I draw the conclusion correctly.
-
-
-
+>[!Right]
+>$\blacksquare$
+## Remark
+1. 如何理解$\int_{I} \frac{\delta Q}{T}$？这可以看作系统和宇宙中每个部分分别作依次作热交换，但交换的热量都是零。所以$\int_{I} \frac{\delta Q}{T}=0$。也就是说，将宇宙划分为无数个局部恒温的小块。这些小块就是[[熵#^theorem1|theorem 1.1]]证明中的$T_{i}$。系统和每个小块交换的热量都为零
+2. 可能会担心，因为从$A$到$B$的过程不是quasi-static的，所以无法定义路径$I$。但是这个路径并不是系统自身的p-V图里的。原则上，我只需要知道系统在小块$T$交换的热量$\delta Q(T)$，我就可以计算了。这完全是系统外部的信息，跟系统自身状态是否well-defined无关。
 
