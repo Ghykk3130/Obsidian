@@ -181,12 +181,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Homework/Physics 511 Homework 2.md",
+                "file": "Homework/Physics 510 Homework 1.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Physics 511 Homework 2"
+              "title": "Physics 510 Homework 1"
             }
           }
         ],
@@ -247,7 +247,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 200,
+    "collapsed": true
   },
   "right": {
     "id": "9003d078f8dbc4ed",
@@ -347,9 +348,9 @@
   },
   "active": "017bc10bbf53d13b",
   "lastOpenFiles": [
-    "Homework/Physics 511 Homework 0.md",
-    "Homework/Physics 511 Homework 2.md",
     "Homework/Physics 510 Homework 2.md",
+    "Homework/Physics 511 Homework 2.md",
+    "Homework/Physics 511 Homework 0.md",
     "Untitled.md",
     "Untitled 1.md",
     "Pictures/ba3f4b1ecc47b8ef894b3036ac1b9f3d 1.jpg",
