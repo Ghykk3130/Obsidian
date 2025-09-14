@@ -527,7 +527,7 @@ $$\begin{pmatrix}
 <div style="text-align:center">
 <img src="Pasted image 20250913190654.png" width="300">
 </div>
-取光线与第一个surface还有第二个surface的交点，分别作object plane和image plane。则联系这两平面上矢量$\begin{pmatrix}y \\ \alpha \end{pmatrix}$的变换显然是：
+取光线与第一个surface还有第二个surface的交点，分别作input plane和output plane。则联系这两平面上矢量$\begin{pmatrix}y \\ \alpha \end{pmatrix}$的变换显然是：
 $$M=\begin{pmatrix}
 1 & 0 \\
 \frac{1}{R_{2}}\left(  \frac{n_{L}}{n^{'}}-1 \right) & 1
@@ -557,4 +557,106 @@ y  \\
 $$B=0$$
 据此可以计算出像点。注意ABCD矩阵包含了像距的信息。在光通过最后一个光学器件后，还要被translate到image plane的矩阵作用。所以解$B=0$会给出image plane的位置。
 
+# 4.7 Cardinal points
 
+ 首先考虑一个光具组。定义六个点：
+ 1. 两个焦点。光从光具组两侧平行入射后与光轴的交点。
+ 2. 两个principal points。光从焦点出射。定义光具组前该光线和光具组后该光线的交点为principal points。因为有两个焦点所以有两个principal points。
+ 3. 两个nodal points。光轴上某点以至于光向该点入射，会平行地出射。出射光与光轴的交点显然为第二个nodal point。
+
+这六个点的位置可由ABCD矩阵完全表示。我们用这些点相对于某些平面的位置来描述这些点。我们作如下sign convention：从某平面向光线前进方向测量的距离为正，反之则为负。
+
+<div style="text-align:center">
+<img src="Pasted image 20250913204535.png" width="400">
+</div>
+令$F_{1},F_{2}$为两个焦点，$H_{1},H_{2}$为两个principal points，$N_{1},N_{2}$为两个nodal points。这些点之间的相对距离已在图上标出。
+
+我们先来看焦点。为此，先做如下命题：
+
+>[! Proposition 1]
+>Under paraxial approximation, the rays coming out from an arbitrary point on the focal plane would be directed parallel.
+## Proof.
+因为是傍轴近似，焦平面上一点几乎就在光轴上。我们知道该点成像一定在无穷远处。所以从光具组出射的光不能再有限的位置交汇，自然是平行光。
+>[! Right]
+>$\blacksquare$
+
+我们取过$F_{1}$焦平面，output plane两个平面。这两个平面之间的ABCD矩阵为：
+$$\begin{pmatrix}
+A & B \\
+C & D
+\end{pmatrix}\begin{pmatrix}
+1 & -p \\
+0 & 1
+\end{pmatrix}= \begin{pmatrix}
+A & -pA+B \\
+C & -pC+D
+\end{pmatrix}$$
+我们希望任意从焦平面出射的光$\begin{pmatrix}y  \\ \alpha\end{pmatrix}$，最终都平行。即want $\begin{pmatrix}y^{'} \\ \alpha^{'}\end{pmatrix}$ such that $\alpha^{'}$ is independent from $\alpha$。我们有：
+$$\begin{pmatrix}
+y^{'} \\
+\alpha^{'}
+\end{pmatrix}=\begin{pmatrix}
+A & -pA+B \\
+C & -pC+D
+\end{pmatrix}\begin{pmatrix}
+y \\
+\alpha
+\end{pmatrix}$$
+于是$-pC+D=0\implies p= \frac{D}{C}$
+
+
+为了找到$q$，我们取input plane，second focal plane两个平面之间的ABCD矩阵：
+$$\begin{pmatrix}
+1 & q  \\
+0 & 1
+\end{pmatrix}\begin{pmatrix}
+A & B \\
+C & D
+\end{pmatrix}=\begin{pmatrix}
+A+qC & B+qD \\
+C & D
+\end{pmatrix}$$
+我们要求：当入射光为平行光，$\alpha=\text{const.}$，$y^{'}$ is independent from $y$。于是：
+$$A+qC=0\implies q= - \frac{A}{C}$$
+
+接下来找$f_{1},f_{2}$。注意在sign convention下，图中$f_{1}<0$。它是$F_{1}$到principal plane的距离。principal point定义，我们找$F_{1}$射出光线在object space与该光线在imga space的交点。显然，该光线在image space为：
+$$\begin{align}
+ & \begin{pmatrix}
+y^{'} \\
+\alpha^{'}
+\end{pmatrix}=\begin{pmatrix}
+A & B \\
+C & D
+\end{pmatrix}\begin{pmatrix}
+1 & -p \\
+0 & 1\end{pmatrix}\begin{pmatrix}
+0  \\
+\alpha
+\end{pmatrix} \\
+ & \text{with } p= \frac{D}{C} \\
+\implies & y^{'}= \alpha\frac{BC-DA}{C}=- \alpha\frac{\det M}{C}
+\end{align}$$
+将其除以$\tan \alpha=\alpha$显然可以得到$-f_{1}$。于是：
+$$f_{1}= \frac{\det M}{C}= \frac{n_{i}}{n_{f}} \frac{1}{C}$$
+
+若入射光平行于光轴，则：
+$$\begin{align}
+ & \begin{pmatrix}
+y^{'} \\
+\alpha^{'}
+\end{pmatrix}= \begin{pmatrix}
+1 & q \\
+0 & 1
+\end{pmatrix}\begin{pmatrix}
+A & B  \\
+C & D
+\end{pmatrix}\begin{pmatrix}
+y \\
+0
+\end{pmatrix} \\
+ & \text{with }q=- \frac{A}{C} \\
+\implies & \alpha=Cy
+\end{align}$$
+于是：
+$$f_{2}=- \frac{y}{Cy}= - \frac{1}{C}$$
+那么$r, s$便很容易找到了。
