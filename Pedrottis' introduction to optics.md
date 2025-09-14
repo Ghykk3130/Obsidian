@@ -694,3 +694,9 @@ w=- \frac{y^{'}}{\alpha^{'}}= \frac{\det M-A}{C}= \frac{ \frac{n_{i}}{n_{f}}-A }
 2. 若$n_{i}=n_{f}$，则焦点到principal points的距离大小相同。
 3. nodal points间间距等于principal points间间距。
 
+# 6.1 Stops
+
+考虑一个任意的光具组。我们定义：
+- 在物点处观察光具组中所有元素在物空间中的像。称subtend角度最小的像对应的元素为aperture stop。
+- 在entrance pupil中心处，观察光具组中所有元素在该点处在空间中的像。（实际上，因为entrance pupil必在物空间中，所以该点处在空间即为物空间。）称subtend角度最小的像对应的元素为field stop。
+
