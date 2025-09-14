@@ -32,6 +32,5 @@ Sketch:
 <div style="text-align:center">
 <img src="884776f337f1aa951c057554c7df6007.jpg" width="600">
 </div>
-
+Note that the sketch is purely schematic and not to scale.
 ## b).
-
