@@ -195,16 +195,30 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Pedrottis' introduction to optics.md",
+                "file": "Homework/Physics 402 real world optics 4.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Pedrottis' introduction to optics"
+              "title": "Physics 402 real world optics 4"
+            }
+          },
+          {
+            "id": "aa404d2c0d14383a",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Homework/Physics 402 Problem Set 3.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Physics 402 Problem Set 3"
             }
           }
         ],
-        "currentTab": 13
+        "currentTab": 14
       }
     ],
     "direction": "vertical"
@@ -261,8 +275,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200,
-    "collapsed": true
+    "width": 200
   },
   "right": {
     "id": "9003d078f8dbc4ed",
@@ -360,8 +373,12 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "75de9f1bc0346468",
+  "active": "aa404d2c0d14383a",
   "lastOpenFiles": [
+    "Homework/Physics 402 real world optics 4.md",
+    "Homework/Physics 402 Problem Set 3.md",
+    "Pedrottis' introduction to optics.md",
+    "Pictures/Pasted image 20250913220433.png",
     "Pictures/Pasted image 20250913204535.png",
     "Pictures/Pasted image 20250913190654.png",
     "Pictures/Pasted image 20250913185841.png",
@@ -380,14 +397,12 @@
     "Degenerate Fermi Gas.md",
     "Experimental/VTI.md",
     "Experimental/Wye-Delta Transformation.md",
-    "Homework/Physics 402 real world optics 4.md",
     "Homework/Physics 510 Homework 2.md",
     "Homework/Physics 511 Homework 2.md",
     "Lagrangian Formulation of EM.md",
     "Maxwell Stress Tensor and Momentum.md",
     "Lamour进动.md",
     "Maxwell-Boltzmann 分布.md",
-    "Pedrottis' introduction to optics.md",
     "转动生成元.md",
     "规范变换.md",
     "相对论电动力学.md",
@@ -396,8 +411,6 @@
     "Pictures/3774702e43006dfa92fde6d5aabaab3a.jpg",
     "Pictures/c5abbad30eebdcc371c4cda4401e2a22.jpg",
     "Pictures/5c203c287bb0a8d620f6b7a7f865cd9f.jpg",
-    "Pictures/ba3f4b1ecc47b8ef894b3036ac1b9f3d 1.jpg",
-    "Pictures/ba3f4b1ecc47b8ef894b3036ac1b9f3d.jpg",
     "Homework",
     "Pictures",
     "Experimental",

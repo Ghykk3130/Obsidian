@@ -659,4 +659,38 @@ y \\
 \end{align}$$
 于是：
 $$f_{2}=- \frac{y}{Cy}= - \frac{1}{C}$$
-那么$r, s$便很容易找到了。
+那么$r, s$便很容易找到了：
+$$\begin{align}
+ & r=-f_{1}-(-p)= \frac{D- \frac{n_{i}}{n_{f}}}{C} \\
+ & s=-(f_{2}-q)=\frac{1-A}{C}
+\end{align}$$
+
+接下来找$v,w$。我们考虑：
+$$\begin{align}
+ & \begin{pmatrix}
+y^{'} \\
+\alpha^{'}
+\end{pmatrix}= \begin{pmatrix}
+A & B \\
+C & D
+\end{pmatrix}\begin{pmatrix}
+y \\
+\alpha
+\end{pmatrix} \\
+ & \text{with } \alpha^{'}=\alpha,\ \frac{y}{\alpha}=\text{const.} \\
+\implies & Cy+D\alpha=\alpha,\text{const.}= \frac{1-D}{C}  \\
+\implies & v= - \frac{y}{\alpha}= \frac{1-D}{C}
+\end{align}$$
+同时：
+$$\begin{align}
+w=- \frac{y^{'}}{\alpha^{'}}= \frac{\det M-A}{C}= \frac{ \frac{n_{i}}{n_{f}}-A }{C}
+\end{align}$$
+<div style="text-align:center">
+<img src="Pasted image 20250913220433.png" width="400">
+</div>
+
+注意到：
+1. 若$n_{i}=n_{f}$，则nodal points和principal points重合。
+2. 若$n_{i}=n_{f}$，则焦点到principal points的距离大小相同。
+3. nodal points间间距等于principal points间间距。
+
