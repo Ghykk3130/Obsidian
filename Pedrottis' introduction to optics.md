@@ -449,3 +449,112 @@ $$\begin{align}
 \implies &  x x^{'}=f^{2}
 \end{align}$$
 
+# 4.4 $\sim$ 4.6 ABCD matrix
+
+考虑一个azimuthal symmetric的光学系统。考虑傍轴近似。则光学系统中取一个垂直光轴的平面，穿过平面上某点的一束光线由光线方向，光线距离轴的距离，两个参数描述。记为$\begin{pmatrix}y \\ \alpha\end{pmatrix}$
+
+Convention：光线若向光轴以上方向传播，则$\alpha$为正。反之则为负。
+## Translation
+
+考虑光线在同一介质中沿直线传播。取两个相距$L$的平面。
+<div style="text-align:center">
+<img src="Pasted image 20250913184240.png" width="300">
+</div>
+则两平面上同一光线显然满足：
+$$\begin{align}
+ & y_{1}=L\alpha_{0}+y_{0} \\
+ & \alpha_{1}=\alpha_{0}+0
+\end{align}$$
+于是对应的ABCD矩阵为：
+$$\begin{pmatrix}
+1 & L \\
+0 & 1
+\end{pmatrix}$$
+## Refraction
+
+考虑光线通过一个spherical refractor。设光线通过球面上某点。在两种介质中的该点取两个平面观察光线。注意到这两个平面几何上是重合的。
+<div style="text-align:center">
+<img src="Pasted image 20250913184655.png" width="300">
+</div>
+于是显然有：
+$$\begin{align}
+ & y^{'}=y \\
+ & (\alpha^{'}+\phi )n^{'}=(\alpha+\phi)n \\
+ & \phi=\frac{y}{R}
+\end{align}$$
+这里需要注意我们的sign convention不能错。接下来解得：
+$$\begin{align}
+ & y^{'}=y \\
+ & \alpha^{'}= \frac{n}{n^{'}}\alpha+(  \frac{n}{n^{'}} -1  
+)\frac{y}{R}
+\end{align}$$
+于是对应的ABCD matrix为：
+$$\begin{pmatrix}
+1 & 0 \\
+\frac{1}{R}\left(  \frac{n}{n^{'}}-1 \right) &  \frac{n}{n^{'}}
+\end{pmatrix}$$
+## Reflection
+
+考虑光线通过一个spherical reflector。取光线与球面交点，作两个观察平面。一个观察reflection之前的光，一个观察reflection之后的光。
+<div style="text-align:center">
+<img src="Pasted image 20250913185841.png" width="350">
+</div>
+同样注意sign convention。我们有：
+$$\begin{align}
+ & y^{'}=y \\
+ & \alpha-\phi=\alpha^{'}+\phi \\
+ & \phi= \frac{y}{-R}
+\end{align}$$
+解得：
+$$\begin{align}
+ & y^{'}=y  \\
+ & \alpha^{'}=\alpha+ \frac{2y}{R}
+\end{align}$$
+于是对应的ABCD矩阵为：
+$$\begin{pmatrix}
+1 & 0 \\
+\frac{2}{R} & 1
+\end{pmatrix}$$
+我们注意到上面三种情况有以下规律：
+
+>[!Proposition 1]
+>Consider an ABCD matrix $M$. The refractive indices of the final and initial media are given by:
+>$$\det M= \frac{n_{i}}{n_{f}}$$
+
+## Thick lens
+
+我们考虑如下情况。
+<div style="text-align:center">
+<img src="Pasted image 20250913190654.png" width="300">
+</div>
+取光线与第一个surface还有第二个surface的交点，分别作object plane和image plane。则联系这两平面上矢量$\begin{pmatrix}y \\ \alpha \end{pmatrix}$的变换显然是：
+$$M=\begin{pmatrix}
+1 & 0 \\
+\frac{1}{R_{2}}\left(  \frac{n_{L}}{n^{'}}-1 \right) & 1
+\end{pmatrix}\begin{pmatrix}
+1 & t \\
+0 & 1
+\end{pmatrix}\begin{pmatrix}
+1 & 0 \\
+\frac{1}{R_{1}}\left(  \frac{n}{n_{L}}-1 \right) & 0
+\end{pmatrix}$$
+注意到，因为$\det(AB)=\det A\det B$，所以我们同样有：
+$$\det M=\frac{n}{n^{'}}$$
+
+我们可以利用ABCD矩阵找到某物或像通过光具组的conjugate。令$M=\begin{pmatrix}A & B \\ C & D\end{pmatrix}$
+若给定object plane上物点$y$，考虑该物点发出的一束光$\begin{pmatrix}y  \\ \alpha\end{pmatrix}$。则在image plane上，该光线为:
+$$\begin{pmatrix}
+y^{'} \\
+\alpha^{'}
+\end{pmatrix}= \begin{pmatrix}
+A & B \\
+C & D
+\end{pmatrix}\begin{pmatrix}
+y  \\
+\alpha
+\end{pmatrix}$$
+我们希望$y^{'}$是一个定值$\forall \alpha$。于是必须有：
+$$B=0$$
+据此可以计算出像点。注意ABCD矩阵包含了像距的信息。在光通过最后一个光学器件后，还要被translate到image plane的矩阵作用。所以解$B=0$会给出image plane的位置。
+
+
