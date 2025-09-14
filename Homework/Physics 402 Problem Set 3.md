@@ -29,3 +29,9 @@ If we view the optical system from the center of the entrance pupil, the lens wo
 The entrance window is obviously the lens itself, since there's no optics between the lens and the input plane. The exit window is also the lens itself, since there's no optics between the lens and the output plane. 
 
 Sketch:
+<div style="text-align:center">
+<img src="884776f337f1aa951c057554c7df6007.jpg" width="600">
+</div>
+
+## b).
+
