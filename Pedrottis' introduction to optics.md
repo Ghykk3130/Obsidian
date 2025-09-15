@@ -708,6 +708,12 @@ w=- \frac{y^{'}}{\alpha^{'}}= \frac{\det M-A}{C}= \frac{ \frac{n_{i}}{n_{f}}-A }
 >[!Definition 2]
 >Define the image of the aperture stop in the object space as the entrance pupil, the image of the aperture stop in the image space as the exit pupil.
 
+只有一个光学元件的光具组是无法产生clipping的。因为物体上任意一点都存在一条光线通过光具组。但一旦加上另一个光学元件，物体上就可能存在一点以至于所有该点发出光线都无法通过光具组。
+
+上面的aperture stop就相当于这第一个光学元件。我们来决定这第二个可以产生clipping的光学元件是什么。
+
+考虑exit pupil的中心点。因为物体上物点发出的所有光线都通过
+
 
 考虑一个任意的光具组。我们定义：
 - 在物点处观察光具组中所有元素在物空间中的像。称subtend角度最小的像对应的元素为aperture stop。
