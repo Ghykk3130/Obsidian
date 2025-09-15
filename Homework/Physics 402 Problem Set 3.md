@@ -77,3 +77,42 @@ If this is not satisfied, we don't have any real solutions of $s$.
 It's better to have $L$ much larger than $f$. This is because if $L$ is large, then $D$ is large, which is evident from the equation in a). . Then the error in measuring the distances would be small. If $L \cong 4f$, then $D$ is almost zero and very hard to measure.
 
 # 3).
+Set the refractive index of the lens material to be $n_{2}$, the refractive index of the environment to be $n_{1}$. The radii of curvature of the front and back surfaces of the two lenses are denoted by $R_{11},R_{12},R_{21},R_{22}$. 
+
+Know that $\frac{1}{f}= \frac{1}{f_{1}}+ \frac{1}{f_{2}}- \frac{L}{f_{1}f_{2}}$, which means $f=f(n_{1},n_{2})$. $n_{1},n_{2}$ are different for different colors. Then want $f$ to be independent of $n_{1},n_{2}$. Then we set:
+$$\begin{align}
+ & \frac{\partial}{\partial n_{1}}\left( \frac{1}{f} \right)=0, \frac{\partial}{\partial n_{2}}\left(  \frac{1}{f} \right)=0 \\  \implies& \frac{\partial}{\partial n_{2}}\left(  \frac{1}{f_{1}} \right)+ \frac{\partial}{\partial n_{2}}\left( \frac{1}{f_{2}} \right)- \frac{\partial}{\partial n_{2}}\left(  \frac{1}{f_{1}f_{2}} \right)=0 \\
+ & \frac{\partial}{\partial n_{1}}\left( \frac{1}{f_{1}} \right)+ \frac{\partial}{\partial n_{1}}\left( \frac{1}{f_{2}} \right)-\frac{\partial}{\partial n_{1}}\left( \frac{1}{f_{1}f_{2}} \right)=0 \\
+\implies & \frac{1}{n_{1}}\left( \frac{1}{R_{11}}- \frac{1}{R_{12}} \right)+ \frac{1}{n_{1}}\left( \frac{1}{R_{21}}- \frac{1}{R_{22}} \right)-2L \frac{n_{2}-n_{1}}{n_{`}}  \frac{1}{n_{1}} \left( \frac{1}{R_{11}}- \frac{1}{R_{12}} \right)\left( \frac{1}{R_{21}}- \frac{1}{R_{22}} \right)=0 \\
+ & -\frac{n_{2}}{n_{1}^{2}}\left( \frac{1}{R_{11}}- \frac{1}{R_{12}} \right) - \frac{n_{2}}{n_{1}^{2}}\left( \frac{1}{R_{21}}- \frac{1}{R_{22}} \right)-2L \frac{n_{2}-n_{1}}{n_{1}}\left( -\frac{n_{2}}{n_{1}^{2}} \right)\left( \frac{1}{R_{11}}- \frac{1}{R_{12}} \right)\left( \frac{1}{R_{21}}- \frac{1}{R_{22}} \right)=0 \\
+\implies  & 2L= \frac{n_{1}}{n_{2}-n_{1}}\left( \frac{1}{R_{11}}- \frac{1}{R_{12}} \right)^{{-1}}\left( \frac{1}{R_{21}}- \frac{1}{R_{22}} \right)^{-1}\left( \frac{1}{R_{11}}- \frac{1}{R_{12}}+\frac{1}{R_{21}}- \frac{1}{R_{22}} \right) \\
+\implies & 2L= \frac{n_{1}}{n_{2}-n_{1}}\left( \frac{1}{R_{21}}-\frac{1}{R_{22}} \right)^{-1}+ \frac{n_{1}}{n_{2}-n_{1}}\left( \frac{1}{R_{11}}- \frac{1}{R_{12}} \right)^{-1} \\
+\implies & L= \frac{f_{1}+f_{2}}{2}\end{align}$$
+
+Then clearly, we have:
+$$\begin{align}
+ & \frac{1}{f}=\frac{1}{f_{1}}+\frac{1}{f_{2}}- \frac{L}{f_{1}f_{2}} \\
+\implies & f=2\left( \frac{1}{f_{1}}+\frac{1}{f_{2}} \right)^{-1} \\
+\implies  & M= \frac{25}{f}= 12.5\left( \frac{1}{f_{1}}+\frac{1}{f_{2}} \right)
+\end{align}$$
+# 4).
+## a).
+Set the distance between the two lenses as $L$. Then for the objective and eyepiece, I have:
+$$\begin{align}
+ & \frac{1}{s_{o}}+ \frac{1}{s_{o}^{'}}=\frac{1}{f_{o}} \\
+ & \frac{1}{s_{e}}+ \frac{1}{s_{e}^{'}}= \frac{1}{f_{e}} \\
+ & s_{o}=1.2cm,f_{o}=1cm,s_{e}^{'}=-25cm,f_{e}=3cm,s_{e}+s^{'}_{o}=L \\
+\implies & s^{'}_{o}=6cm \\
+\implies & s_{e}=L-6cm \\
+\implies & \frac{1}{L-6}+\frac{1}{-25}=\frac{1}{3} \\
+\implies & L=\frac{243}{28}cm
+\end{align}$$
+Then, the effective focal length is given by:
+$$\begin{align}
+ & \frac{1}{f}=\frac{1}{f_{o}}+\frac{1}{f_{e}}-\frac{L}{f_{o}f_{e}} \\
+\implies & f=-\frac{84}{131}cm \\
+\implies & M=\frac{25}{f}=-\frac{2375}{84}
+\end{align}$$
+## b).
+I have calculated the separation of the lenses. I got $L=\frac{243}{28}cm$.
+
