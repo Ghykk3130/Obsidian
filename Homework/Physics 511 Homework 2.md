@@ -94,3 +94,35 @@ $$\begin{align}
 Then:
 $$\langle \Delta S_{y}^{2}\rangle= \frac{\hbar^{2}}{4}(1- \sin ^{2}\alpha \sin ^{2}\beta)$$
 ## c).
+We know that $\hat{S}_{z}=\frac{\hbar}{2}\begin{pmatrix}1 & 0 \\ 0 & -1 \end{pmatrix}$. Then we have:
+$$\begin{align}
+\langle \hat{S}_{z}\rangle & =\langle +\hat{n}| \hat{S}_{z} |+\hat{n}\rangle \\
+  & = \frac{\hbar}{2}\begin{pmatrix}
+\cos \frac{\beta}{2} & e^{-i\alpha}\sin \frac{\beta}{2}
+\end{pmatrix}\begin{pmatrix}
+1 & 0 \\
+0 & -1
+\end{pmatrix}\begin{pmatrix}
+\cos \frac{\beta}{2} \\
+e^{i\alpha}\sin \frac{\beta}{2}
+\end{pmatrix} \\
+ & =\frac{\hbar}{2}\begin{pmatrix}
+\cos \frac{\beta}{2} & e^{-i\alpha}\sin \frac{\beta}{2}
+\end{pmatrix}\begin{pmatrix}
+\cos \frac{\beta}{2} \\
+-e^{i\phi}\sin\frac{\beta}{2}
+\end{pmatrix} \\
+ & =\frac{\hbar}{2}\cos ^{2} \frac{\beta}{2}- \sin ^{2} \frac{\beta}{2} \\
+ & =\frac{\hbar}{2}\cos \beta
+\end{align}$$
+We also know that:
+$$\begin{align} \langle\Delta S_{x}^{2}\rangle \langle\Delta S_{y}^{2}\rangle & = \left( \frac{\hbar^{2}}{4} \right)^{2}(1-\cos ^{2}\alpha \sin ^{2}\beta)(1-\sin ^{2}\alpha \sin ^{2}\beta) \\
+ & =\left( \frac{\hbar^{2}}{4} \right)^{2}(1-\sin ^{2}\beta+\sin ^{2}\alpha \cos ^{2}\alpha \sin^{4}\beta) \\
+ & =\left( \frac{\hbar^{2}}{4} \right)^{2}(\cos ^{2}\beta+\sin ^{2}\alpha \cos ^{2}\alpha \sin^{4}\beta) \\
+ & \geq\left( \frac{\hbar^{2}}{4} \right)^{2}\cos ^{2}\beta \\
+ & = \frac{\hbar^{2}}{4} \langle \hat{S}_{y}\rangle^{2} 
+\end{align}$$
+This is consistent with the uncertainty relation that:
+$$[A,B]=iC\implies \sigma_{A}\sigma_{B}\geq \frac{\langle C\rangle^{}}{2}\text{ or  }\sigma_{A}^{2}\sigma_{b}^{2}\geq \frac{\langle C\rangle^{2}}{4}$$
+with $A=\hat{S}_{x},B=\hat{S}_{y},C=\hbar\hat{S}_{z}$
+
