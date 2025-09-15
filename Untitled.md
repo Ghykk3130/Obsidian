@@ -1,20 +1,6 @@
->[! Proposition 2]
->For an isolated system, I have:
->$$\Delta S \geq 0$$
-## Proof.
-考虑封闭系统从$A$到$B$。系统与环境$T$交换热量$\delta Q=0$。设这条路径为$I$。
+The tomb of Qinshihuang consists of a central area and surrounding zones. The central area has not yet been excavated. According to Sima Qian, it contained rivers of mercury, a celestial ceiling, and the buried body of the emperor. The surrounding area is most notable for the presence of the terra-cotta warriors.
 
-为了计算系统从$A$到$B$的熵变，我们构造一条从$A$到$B$的虚拟的，reversible的路径$II$。在这条路径上，我们不假设系统是封闭的。因为这只是一个纯虚拟的构造。
+The terra-cotta army is distributed across four pits and is composed of terra-cotta figures. It could be understood as representing the imperial army and symbolically scenes of military life. Their production was highly standardized: over five hundred figures bear numbering marks, and about eighty-five bear the signatures of craftsmen. Details on the figures reflect military rank and role, allowing us to distinguish high-ranking officers, middle-ranking officers, kneeling archers, charioteers, and other types of soldiers. Each figure shows individualized facial expressions and bodily postures, which are thought to have been deliberate variations introduced by artisans following a standardized model, rather than portraits of real individuals.
 
-由Clausius定理，我们有：
-$$\begin{align}
- & \int_{I} \frac{\delta Q}{T}+ \int_{-II} \frac{\delta Q_{rev}}{T} \leq{0} \\
-\implies & \int_{II} \frac{\delta Q_{rev}}{T} \geq \int_{I} \frac{\delta Q}{T} \\
- \implies  & \Delta S \geq 0
-\end{align}$$
->[!Right]
->$\blacksquare$
-## Remark
-1. 如何理解$\int_{I} \frac{\delta Q}{T}$？这可以看作系统和宇宙中每个部分分别作依次作热交换，但交换的热量都是零。所以$\int_{I} \frac{\delta Q}{T}=0$。也就是说，将宇宙划分为无数个局部恒温的小块。这些小块就是[[熵#^theorem1|theorem 1.1]]证明中的$T_{i}$。系统和每个小块交换的热量都为零
-2. 可能会担心，因为从$A$到$B$的过程不是quasi-static的，所以无法定义路径$I$。但是这个路径并不是系统自身的p-V图里的。原则上，我只需要知道系统在小块$T$交换的热量$\delta Q(T)$，我就可以计算了。这完全是系统外部的信息，跟系统自身状态是否well-defined无关。
+The terra-cotta warriors mark a shift in Chinese art from abstract subjects to realistic forms, reflecting the personal will of Qinshihuang. Such funerary figures continued to be found in later Han and Tang dynasty tombs.
 
