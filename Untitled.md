@@ -2,4 +2,8 @@ Tokenization是一种将文本分成板块的过程。给定一段文本，token
 
 一般来说，存在三种tokenization的方式。第一种tokenization的方式是word-based tokenization。给定一段文本，word-based tokenizer将文本中每个单词作为一个token。第二种tokenization的方式是character-based tokenization。给定一段文本，character-based tokenizer将文本中每个character作为一个token。第三种tokenization的方式是subword tokenization。给定一段文本，subword tokenizer会将最常出现的字符组作为token。这里一个字符组不一定是一个单词。
 
-Modern LLMs tend to use subword tokenization instead of word or character-based tokenization. subword tokenization比起word-based tokenization来说，lexical coverage更小。这意味着基于subword tokenization的LLM比基于word-based tokenization的LLM具有更快的运行速度。这是因为它所需要处理的token比word-based tokenizer需要处理的更少。比起character-based tokenization，
+Modern LLMs tend to use subword tokenization instead of word or character-based tokenization. 这是因为subword tokenization相比于后两种tokenization具有一定优势。subword tokenization比起word-based tokenization来说，lexical coverage更小。这意味着基于subword tokenization的LLM比基于word-based tokenization的LLM具有更快的运行速度与更高的灵活性。这是因为它所需要处理的token比word-based tokenizer需要处理的更少。比起character-based tokenization，subword tokenization具有更高的level of abstraction。因此使用subword tokenization的LLM比起使用character-based tokenization的LLM更善于language modeling任务。
+
+Subword tokenization和morphology in natural language是相似而又不同的概念。具体来说，morphology可以作为一种subword tokenization的标准。这是因为morphology将文本按照人类自然语言的方式拆解为词根词缀。这些词根词缀符合token的定义，可以作为subword token。但反过来说，
+
+
