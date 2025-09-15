@@ -696,6 +696,19 @@ w=- \frac{y^{'}}{\alpha^{'}}= \frac{\det M-A}{C}= \frac{ \frac{n_{i}}{n_{f}}-A }
 
 # 6.1 Stops
 
+考虑一个光具组。光具组中每个元件都有边缘，都有可能造成从上一个光具组传来的光线不能完全进入这个光具组。那么是否存在一个元件，以至于一旦光线可以穿过这个元件，那么光线也穿过其它所有的元件？
+
+我们考虑物空间中所有元件的像。若物点发出的光线朝着某元件的像上的某一点射出，那么最终在不考虑其它元件的情况下，该光线一定会到达该元件上同一点。
+
+只要物点发出光线与任何一个元件边缘的像相交，那么就必然会被这个元件边缘阻拦。因此应当找所有不被阻拦的光线的最大集合。显然就应当找所有元件中，物空间中像的张角最小的。我们定义：
+
+>[! Definition 1]
+>Consider the images of potential stops of an optical system in the object space. The stop whose image subtends the smallest angle as seen from the object point is the aperture stop.
+
+>[!Definition 2]
+>Define the image of the aperture stop in the object space as the entrance pupil, the image of the aperture stop in the image space as the exit pupil.
+
+
 考虑一个任意的光具组。我们定义：
 - 在物点处观察光具组中所有元素在物空间中的像。称subtend角度最小的像对应的元素为aperture stop。
 - 在entrance pupil中心处，观察光具组中所有元素在该点处在空间中的像。（实际上，因为entrance pupil必在物空间中，所以该点处在空间即为物空间。）称subtend角度最小的像对应的元素为field stop。
