@@ -34,3 +34,46 @@ Sketch:
 </div>
 Note that the sketch is purely schematic and not to scale.
 ## b).
+Obviously, the image of the object is formed at exactly the same position with the same magnification as in a). Because the equations are the same. The image is at $\frac{60}{7}cm$ to the right of the lens, inverted, with a size of $\frac{10}{7}cm$.
+
+Consider the image of the diaphragm in the object space:
+$$\begin{align}
+ & \frac{1}{s_{d}}+ \frac{1}{s_{d}^{'}}= \frac{1}{f} \\
+ & s_{d}=2.5cm, f=5cm \\
+\implies & s_{d}^{'}= -5 cm \\
+\implies & m= - \frac{s_{d}^{'}}{s_{d}}=2 \\
+\implies & h_{d}^{'} = mh_{d}=4cm
+\end{align}$$
+Since it subtends a smaller angle than the lens, it is the aperture stop. By the calculation above, the entrance pupil is located at $5cm$ to the right of the lens, not inverted, with a diameter of $4cm$. 
+
+The exit pupil is obviously the diaphragm itself. 
+
+Standing at the center of the aperture stop, the only optical element that limit the field of view is the lens. So the lens is the field stop. 
+
+The entrance and exits windows are obviously the lens itself.
+
+Sketch:
+<div style="text-align:center">
+<img src="21474e58f25eb52e43f782b50970770c.jpg" width="600">
+</div>
+
+# 2).
+## a).
+Set object distance as $s$. Then the image distance is $L-s$. Then I have:
+$$\begin{align}
+ & \frac{1}{s}+ \frac{1}{L-s}=\frac{1}{f} \\
+ \implies & s^{2}-Ls+fL=0 \\
+\implies  & s_{1}+s_{2}=-Ls,s_{1}s_{2}=fL \\
+\implies & |s_{1}-s_{2}|=\sqrt{ (s_{1}+s_{2})^{2}-4s_{1}s_{2} }=\sqrt{ L^{2} -fL}=D \\
+\implies & f= \frac{L^{2}-D^{2}}{4L}
+\end{align}$$
+Note that in the second step, I applied Vieta's formulas.
+## b).
+If $L<4f$, we cannot find any real images on the screen. This is because for the derivation in a). to hold, we require the quadratic equation to have real roots. This requires that:
+$$L^{2}-4fL\geq {0}\implies L\geq 4f$$
+If this is not satisfied, we don't have any real solutions of $s$.
+
+## c).
+It's better to have $L$ much larger than $f$. This is because if $L$ is large, then $D$ is large, which is evident from the equation in a). . Then the error in measuring the distances would be small. If $L \cong 4f$, then $D$ is almost zero and very hard to measure.
+
+# 3).

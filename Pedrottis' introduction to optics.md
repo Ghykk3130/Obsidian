@@ -713,12 +713,11 @@ w=- \frac{y^{'}}{\alpha^{'}}= \frac{\det M-A}{C}= \frac{ \frac{n_{i}}{n_{f}}-A }
 
 只有一个光学元件的光具组是无法产生clipping的。因为物体上任意一点都存在一条光线通过光具组。但一旦加上另一个光学元件，物体上就可能存在一点以至于所有该点发出光线都无法通过光具组。
 
-上面的aperture stop就相当于这第一个光学元件。我们来决定这第二个可以产生clipping的光学元件是什么。
+上面的aperture stop就相当于这第一个光学元件。我们来决定这第二个可以产生clipping的光学元件是什么。称这为field stop。我们考虑物点发出一束光线真实地通过aperture stop。那么显然最有可能clip这个光线的光学元件边缘就是field stop。
 
-考虑exit pupil的中心点。因为物体上物点发出的所有光线都通过
+这就相当于在aperture stop所在空间中，看各个光学元件的成像。其中成像张角最小的光学元件边缘为field stop。
 
+>[!Definition 4]
+>Consider the images of potential stops of an optical system in the aperture stop space. The stop whose image subtends the smallest angle as seen from the axial point of the aperture stop is the field stop.
 
-考虑一个任意的光具组。我们定义：
-- 在物点处观察光具组中所有元素在物空间中的像。称subtend角度最小的像对应的元素为aperture stop。
-- 在entrance pupil中心处，观察光具组中所有元素在该点处在空间中的像。（实际上，因为entrance pupil必在物空间中，所以该点处在空间即为物空间。）称subtend角度最小的像对应的元素为field stop。
 
