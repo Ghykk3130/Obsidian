@@ -99,5 +99,16 @@ $$p\in B_{\alpha}\subset A$$
 >[!Right]
 >$\blacksquare$
 
+>[!Proposition 1]
+>Let $(S,\mathcal{T})$ be a topological space. $\mathcal{B}$ is a basis if and only if:
+>- $S=\cup_{B\in\mathcal{B}}B$
+>- Given $B_{1},B_{2}\in\mathcal{B},p\in B_{1}\cap B_{2}\neq \phi$, $\exists B\in\mathcal{B}\text{ s.t. }p\in B\subset B_{1}\cap B_{2}$
+## Proof.
+
+($\Leftarrow$):
+任取$A\text{ open}$。在$A$内任取一点$p$。因为$S=\cup B,B\in\mathcal{B}$，所以一定$\exists B^{'}\in\mathcal{B} \text{ s.t.}$
+$$p\in B^{'}\cap A$$
+于是取$B\in\mathcal{B}\text{ s.t. }p\in B\subset B^{'}\cap A$。
+
 
 
