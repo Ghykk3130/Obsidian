@@ -88,7 +88,16 @@ LHS属于RHS是显然。要证RHS属于LHS，取$B_{\alpha}=X$即可。
 >[!Theorem 1]
 >$\mathcal{B}$ is a basis if and only if any open set is a union of sets in $\mathcal{B}$.
 ## Proof.
-
+($\Rightarrow$):
+任取$A\in\mathcal{T}$，显然：
+$$\forall p\in A,\exists B\in\mathcal{B}_{p}\text{ s.t. }p\in B_{p}\subset A$$
+容易证明：
+$$\cup_{p\in A}B_{p}=A$$
+($\Leftarrow$):
+任取$A\in\mathcal{T},p\in A$。则$A=\cup_{\alpha}B_{\alpha}$, for some $B_{\alpha}\in \mathcal{B}$。于是取出$B_{\alpha}\text{ s.t. }p\in B_{\alpha}$。则：
+$$p\in B_{\alpha}\subset A$$
+>[!Right]
+>$\blacksquare$
 
 
 
