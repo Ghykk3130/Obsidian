@@ -209,16 +209,30 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "惯量张量.md",
+                "file": "群论.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "惯量张量"
+              "title": "群论"
+            }
+          },
+          {
+            "id": "7ec24dda638cf31e",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Lie Algebras.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Lie Algebras"
             }
           }
         ],
-        "currentTab": 14
+        "currentTab": 15
       }
     ],
     "direction": "vertical"
@@ -373,11 +387,13 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "aa404d2c0d14383a",
+  "active": "7ec24dda638cf31e",
   "lastOpenFiles": [
-    "张量分析.md",
+    "正规矩阵的对角化.md",
+    "Lie Algebras.md",
     "群论.md",
     "惯量张量.md",
+    "张量分析.md",
     "多级展开.md",
     "Homework/Physics 511 Homework 2.md",
     "Homework/Physics 510 Homework 1.md",
@@ -407,8 +423,6 @@
     "Lagrangian Formulation of EM.md",
     "Maxwell Stress Tensor and Momentum.md",
     "Lamour进动.md",
-    "Maxwell-Boltzmann 分布.md",
-    "转动生成元.md",
     "Pictures/ca58ec44f38c1fd742c9003ce58f8ea3.jpg",
     "Pictures/3774702e43006dfa92fde6d5aabaab3a.jpg",
     "Homework",
