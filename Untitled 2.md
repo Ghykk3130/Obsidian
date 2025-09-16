@@ -77,6 +77,17 @@ LHS属于RHS是显然。要证RHS属于LHS，取$B_{\alpha}=X$即可。
 ## Ex:
 考虑$\mathbb{R}$上的自然拓扑，即所有开集构成的拓扑。考虑$A=[0,1]$。则$A$在自然拓扑下不是开集。于是考虑$\mathcal{T}_{A}$中一个集合$\left( -\frac{1}{2}, \frac{1}{2} \right)\cap A=[0, \frac{1}{2})$。这是相对$A$的开集，却不是相对$\mathbb{R}$的开集。
 
+# 1.2
+
+>[! Definition 1]
+>Let $(S,\mathcal{T})$ be a topological space. $\mathcal{B}\subset\mathcal{T}$ is a basis if:
+>given $A\in S \text{ open}$, $\forall p\in A$, $\exists B\in\mathcal{B}$ such that $p\in B\subset A$
+## Ex:
+令$S=\mathbb{R}^n$。则$\mathcal{B}=\{ \text{all open balls} \}$是一个基。这是因为$\mathbb{R}^{n}$中任意一个开集，其中任取一点，显然有一个该集合中的球包含这一点。
+
+>[!Theorem 1]
+>$\mathcal{B}$ is a basis if and only if any open set is a union of sets in $\mathcal{B}$.
+## Proof.
 
 
 
