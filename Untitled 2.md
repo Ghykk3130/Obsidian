@@ -40,8 +40,44 @@ $$(\cup A_{\lambda})^{c}\subset A_{\Lambda}^{c}\subset(-R,R)$$
 >[!Right]
 >$\blacksquare$
 
-令$(S,\mathcal{T})$为一拓扑空间，取$A\subset S$。我们发现$\{A\cap B|B\in \mathcal{T}\}$具有拓扑的性质。任取$A\$
+令$(S,\mathcal{T})$为一拓扑空间，取$A\subset S$。我们发现$\{A\cap B|B\in \mathcal{T}\}$具有拓扑的性质。任取$A\cap B_{\alpha}\in S$，显然：
+$$\begin{align}
+ & \cup(A\cap B_{\alpha})=A\cap(\cup B_{\alpha}) \in \{ A\cap B|B\in\mathcal{T} \} \\
+ & \cap_{\alpha\in \text{ finite set}}(A\cap B_{\alpha})=A\cap(\cap B_{\alpha}) \in \{ A\cap B|B\in\mathcal{T} \} \\
+ & \phi\in \{ A\cap B|B\in\mathcal{T} \} \\
+ & A\in \{ A\cap B|B\in\mathcal{T} \}
+\end{align}$$
+于是$\{ A\cap B|B\in\mathcal{T} \}$是一个$A$上的拓扑。于是定义：
+
+>[! Definition 3 (subspace topology)]
+>Let $(S,\mathcal{T})$ be a topological space. Given $A\subset S$, define the subspace topology as:
+>$$\mathcal{T}_{A}=\{ A\cap B|B\in\mathcal{T} \}$$
+>Call $(A,\mathcal{T}_{A})$ a subspace.
+
+但是$A$中开集不一定是$S$中开集。我们做如下命题：
+
+>[!Proposition 2]
+>$A$ is open relative to $S$ if and only if:
+>$$\mathcal{T}_{A}\subset\mathcal{T}$$
+## Proof.
+（$\Rightarrow$）:
+取$U\in\mathcal{T}_{A}$。于是：
+$$U=A\cap B,\exists B\in\mathcal{T}\implies U\in\mathcal{T}$$
+（$\Leftarrow$）:
+WTS：$A\in\mathcal{T}$
+Know：
+$$A\cap B_{\alpha}\in\mathcal{T},\forall B_{\alpha}\in\mathcal{T}$$
+STS：
+$$\cup_{\alpha}(A\cap B_{\alpha})=A$$
+LHS属于RHS是显然。要证RHS属于LHS，取$B_{\alpha}=X$即可。
+
+>[!Right]
+>$\blacksquare$
+
+## Ex:
+考虑$\mathbb{R}$上的自然拓扑，即所有开集构成的拓扑。考虑$A=[0,1]$。则$A$在自然拓扑下不是开集。于是考虑$\mathcal{T}_{A}$中一个集合$\left( -\frac{1}{2}, \frac{1}{2} \right)\cap A=[0, \frac{1}{2})$。这是相对$A$的开集，却不是相对$\mathbb{R}$的开集。
 
 
 
- 
+
+
