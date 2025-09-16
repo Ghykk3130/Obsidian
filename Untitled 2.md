@@ -20,7 +20,17 @@ $$\cup_{p\in A}V_{p}=A$$
 - $\{\phi,X\}$是一个拓扑。
 - $P(X)$是一个拓扑。
 ## Ex:
-$\{\phi,\mathbb{R}\}\cup\{A|\exists B\text{ finite s.t.}A=B^{c}\}$是一个拓扑。
+$\mathcal{T}=\{\phi,\mathbb{R}\}\cup\{A|\exists B\text{ finite s.t.}A=B^{c}\}$是一个拓扑。
+
+**Proof.**
+
+不妨取$A_{\lambda}\in\mathcal{T}$。WLOG设$A_{\lambda}\in \{A|\exists B\text{ finite s.t. } A=B^{c} \}$。
+
+若$\cup_{\lambda}A_{\lambda}=\mathbb{R}$，则显然成立。
+
+若$\cup_{\lambda}A_{\lambda}\neq \mathbb{R}$，那么想证明$(\cup_{\lambda}A_{\lambda})^{c}$是一有限集。即$\exists R >0 \text{ s.t. } (\cup_{\lambda}A_{\lambda})^{c}\subset(-R,R)$
+
+
 
 
  
