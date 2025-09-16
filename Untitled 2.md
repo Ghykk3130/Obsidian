@@ -16,5 +16,11 @@
 $$\cup_{p\in A}V_{p}=A$$
 >[!Right]
 >$\blacksquare$
+## Ex:
+- $\{\phi,X\}$是一个拓扑。
+- $P(X)$是一个拓扑。
+## Ex:
+$\{\phi,\mathbb{R}\}\cup\{A|\exists B\text{ finite s.t.}A=B^{c}\}$是一个拓扑。
+
 
  
