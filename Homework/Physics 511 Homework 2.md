@@ -126,3 +126,46 @@ This is consistent with the uncertainty relation that:
 $$[A,B]=iC\implies \sigma_{A}\sigma_{B}\geq \frac{\langle C\rangle^{}}{2}\text{ or  }\sigma_{A}^{2}\sigma_{b}^{2}\geq \frac{\langle C\rangle^{2}}{4}$$
 with $A=\hat{S}_{x},B=\hat{S}_{y},C=\hbar\hat{S}_{z}$
 
+# 3.
+Let $\psi_{n}$ be the unnormalized orthogonal functions.
+
+We pick $\psi_{0}=u_{0}=1$
+
+Then:
+$$\begin{align}
+\psi_{1} & =u_{1}- \frac{\langle \psi_{0}|u_{1}\rangle}{\langle\psi_{0}|\phi_{0}\rangle}\psi_{0} \\
+\langle\psi_{0}|u_{1}\rangle & =\frac{1}{2}\int_{-1}^{1}\psi_{0}(x)u_{1}(x)dx=0 \\
+\implies & \psi_{1}(x)  =x
+\end{align}$$
+Then:
+$$\begin{align}
+\psi_{2} & =u_{2}-\frac{\langle\psi_{0}|u_{2}\rangle}{\langle \psi_{0}|\psi_{0}\rangle}\psi_{0}- \frac{\langle\psi_{1}|u_{2}\rangle}{\langle\psi_{1}|\psi_{1}\rangle}\psi_{1} \\
+\langle\psi_{0}|u_{2}\rangle & =\frac{1}{2}\int_{-1}^{1}x^{2}dx=\frac{1}{3} \\
+\langle\psi_{0}|\phi_{0}\rangle & =\frac{1}{2}\int_{-1}^{1}dx=1 \\
+\langle \psi_{1}|u_{2}\rangle & =\frac{1}{2}\int_{-1}^{1}x\cdot x^{2}dx=0 \\
+\implies & \psi_{2}(x)=x^{2}-\frac{1}{3}x
+\end{align}$$
+Then:
+$$\begin{align}
+\psi_{3} & =u_{3}- \frac{\langle\psi_{0}|u_{3}\rangle}{\langle\psi_{0}|\psi_{0}\rangle}\psi_{0}- \frac{\langle\psi_{1}|u_{3}\rangle}{\langle\psi_{1}|\psi_{1}\rangle}\psi_{1}- \frac{\langle\psi_{2}|u_{3}\rangle}{\langle\psi_{3}|\psi_{3}\rangle}\psi_{3} \\
+\langle\psi_{0}|u_{3}\rangle & =\frac{1}{2}\int_{-1}^{1}1\cdot x^{3}dx=0 \\
+\langle\psi_{1}|u_{3} \rangle & =\frac{1}{2}\int_{-1}^{1}x\cdot x^{3}dx=\frac{1}{5} \\
+\langle\psi_{1}|\psi_{1}\rangle & =\frac{1}{2}\int_{-1}^{1}x^{2}dx=\frac{1}{3} \\
+\langle \psi_{2}|u_{3}\rangle & =\frac{1}{2}\int_{-1}^{1}\left( x^{2}- \frac{1}{3}x \right)x^{3}dx=0 \\
+\implies \psi_{3}(x) & =x^{3}- \frac{3}{5}x
+\end{align}$$
+Then we normalize:
+$$\begin{align}
+ & \langle\psi_{0}|\psi_{0}\rangle= \frac{1}{2}\int_{-1}^{1}dx=1 \\
+ & \langle\psi_{1}|\psi_{1}\rangle=\frac{1}{2}\int_{-1}^{1}x^{2}dx=\frac{1}{3} \\
+ & \langle\psi_{2}|\psi_{2}\rangle=\frac{1}{2}\int_{-1}^{1}\left( x^{2}- \frac{1}{3}x \right)^{2}dx=\frac{32}{135} \\
+ &\langle\psi_{3}|\psi_{3}\rangle=\frac{1}{2}\int_{-1}^{1}\left( x^{3}- \frac{3}{5}x \right)^{2}dx=\frac{8}{175}
+\end{align}$$
+Then we obtain:
+$$\begin{align}
+ & \phi_{0}(x)=1 \\
+ & \phi_{1}(x)= x \\
+ & \phi_{2}(x)=\left( \frac{32}{135} \right)^{-1/2}\left( x^{2}-\frac{1}{3}x \right) \\
+ & \phi_{3}(x)=\left( \frac{8}{175} \right)^{-1/2}\left( x^{3}- \frac{3}{5}x \right)
+\end{align}$$
+Clearly, there are proportional to the Legendre polynomials.
