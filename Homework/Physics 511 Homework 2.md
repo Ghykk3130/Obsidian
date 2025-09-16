@@ -26,7 +26,7 @@ B\sigma_{z}+C\sigma_{x} & = \left(  \frac{2C}{\hbar}\hat{x}+ \frac{2B}{\hbar}\ha
 So the eigenvalues of $B\sigma_{z}+C\sigma_{x}$ should be the eigenvalue of the spin operator in the $\frac{C}{\sqrt{ C^{2}+B^{2} }}\hat{x}+ \frac{B}{\sqrt{ B^{2}+C^{2} }}\hat{z}$ direction, multiplied by $\frac{2}{\hbar} \sqrt{ B^{2}+C^{2} }$.
 
 We know that this operator must have eigenvalues $\pm \frac{\hbar}{2}$. Then the eigenvalues of $B\sigma_{z}+C\sigma_{x}$ are $\pm\sqrt{ B^{2}+C^{2} }$. Then the eigenvalues of $A\mathbb{1}+B\sigma_{z}+C\sigma_{x}$ are $A \pm \sqrt{ B^{2}+C^{2} }$.
-## c).
+## d).
 Since any vector is an eigenvector of $A\mathbb{1}$, it suffices to consider the eigenvectors of $B\sigma_{z}+C\sigma_{x}$.  
 
 This should be the eigenvectors of the spin operator in the $\frac{C}{\sqrt{ B^{2}+C^{2} }}\hat{x}+ \frac{B}{B^{2}+C^{2}}\hat{z}$. Obviously, the eigenvectors are:
@@ -164,7 +164,7 @@ $$\begin{align}
 Then we obtain:
 $$\begin{align}
  & \phi_{0}(x)=1 \\
- & \phi_{1}(x)= x \\
+ & \phi_{1}(x)= \sqrt{ 3 } x \\
  & \phi_{2}(x)=\left( \frac{32}{135} \right)^{-1/2}\left( x^{2}-\frac{1}{3}x \right) \\
  & \phi_{3}(x)=\left( \frac{8}{175} \right)^{-1/2}\left( x^{3}- \frac{3}{5}x \right)
 \end{align}$$
