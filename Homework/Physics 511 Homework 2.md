@@ -21,7 +21,7 @@ Since any vector is an eigenvector of $A\mathbb{1}$ with eigenvalue $A$, it suff
 In the spin-1/2 system, I know that:
 $$\begin{align}
 B\sigma_{z}+C\sigma_{x} & = \left(  \frac{2C}{\hbar}\hat{x}+ \frac{2B}{\hbar}\hat{z} \right) \cdot \vec{S} \\
- & = \frac{2}{\hbar}\sqrt{ B^{2}+C^{2} } \left(  \frac{C}{\sqrt{ B^{2}+C^{2} }}\hat{x}+ \frac{B}{B^{2}+C^{2}}\hat{z} \right) \cdot \vec{S}
+ & = \frac{2}{\hbar}\sqrt{ B^{2}+C^{2} } \left(  \frac{C}{\sqrt{ B^{2}+C^{2} }}\hat{x}+ \frac{B}{\sqrt{B^{2}+C^{2}}}\hat{z} \right) \cdot \vec{S}
 \end{align}$$
 So the eigenvalues of $B\sigma_{z}+C\sigma_{x}$ should be the eigenvalue of the spin operator in the $\frac{C}{\sqrt{ C^{2}+B^{2} }}\hat{x}+ \frac{B}{\sqrt{ B^{2}+C^{2} }}\hat{z}$ direction, multiplied by $\frac{2}{\hbar} \sqrt{ B^{2}+C^{2} }$.
 
@@ -29,15 +29,21 @@ We know that this operator must have eigenvalues $\pm \frac{\hbar}{2}$. Then the
 ## d).
 Since any vector is an eigenvector of $A\mathbb{1}$, it suffices to consider the eigenvectors of $B\sigma_{z}+C\sigma_{x}$.  
 
-This should be the eigenvectors of the spin operator in the $\frac{C}{\sqrt{ B^{2}+C^{2} }}\hat{x}+ \frac{B}{B^{2}+C^{2}}\hat{z}$. Obviously, the eigenvectors are:
+This should be the eigenvectors of the spin operator in the $\frac{C}{\sqrt{ B^{2}+C^{2} }}\hat{x}+ \frac{B}{\sqrt{ B^{2}+C^{2} }}\hat{z}$. If we define $\alpha ,\beta$ such that:
+$$\sin \alpha \cos \beta=\frac{C}{\sqrt{ B^{2}+C^{2} }},\sin \alpha \sin \beta=0,\cos \alpha=\frac{B}{\sqrt{ B^{2}+C^{2} }}$$
+then, we can conclude that the eigenvectors are:
 $$\begin{pmatrix}
-\sqrt{ \frac{\frac{B}{\sqrt{ B^{2}+C^{2} }}+1 }{2} } \\
-\sqrt{ \frac{1- \frac{B}{\sqrt{ B^{2}+C^{2} }}}{2} }
+\cos \frac{\alpha}{2} \\
+e^{i\beta}\sin \frac{\alpha}{2}
 \end{pmatrix}, \begin{pmatrix}
-\sqrt{  \frac{1- \frac{B}{B^{2}+C^{2}}}{2} } \\
--\sqrt{ \frac{ \frac{B}{\sqrt{ B^{2}+C^{2} }}+1}{2} }
+\sin \frac{\alpha}{2} \\
+-e^{i\beta}\cos \frac{\alpha}{2}
 \end{pmatrix}$$
-
+or more explicitly:
+$$\frac{1}{\sqrt{ 2B^{2}+2C^{2} \mp {2}B\sqrt{ B^{2}+C^{2} } }}\begin{pmatrix}
+C \\
+-B\pm \sqrt{ B^{2}+C^{2} }
+\end{pmatrix}$$
 # 2.
 ## a).
 $$\begin{align}
@@ -143,7 +149,7 @@ $$\begin{align}
 \langle\psi_{0}|u_{2}\rangle & =\frac{1}{2}\int_{-1}^{1}x^{2}dx=\frac{1}{3} \\
 \langle\psi_{0}|\phi_{0}\rangle & =\frac{1}{2}\int_{-1}^{1}dx=1 \\
 \langle \psi_{1}|u_{2}\rangle & =\frac{1}{2}\int_{-1}^{1}x\cdot x^{2}dx=0 \\
-\implies & \psi_{2}(x)=x^{2}-\frac{1}{3}x
+\implies & \psi_{2}(x)=x^{2}-\frac{1}{3}
 \end{align}$$
 Then:
 $$\begin{align}
@@ -151,21 +157,21 @@ $$\begin{align}
 \langle\psi_{0}|u_{3}\rangle & =\frac{1}{2}\int_{-1}^{1}1\cdot x^{3}dx=0 \\
 \langle\psi_{1}|u_{3} \rangle & =\frac{1}{2}\int_{-1}^{1}x\cdot x^{3}dx=\frac{1}{5} \\
 \langle\psi_{1}|\psi_{1}\rangle & =\frac{1}{2}\int_{-1}^{1}x^{2}dx=\frac{1}{3} \\
-\langle \psi_{2}|u_{3}\rangle & =\frac{1}{2}\int_{-1}^{1}\left( x^{2}- \frac{1}{3}x \right)x^{3}dx=0 \\
+\langle \psi_{2}|u_{3}\rangle & =\frac{1}{2}\int_{-1}^{1}\left( x^{2}- \frac{1}{3} \right)x^{3}dx=0 \\
 \implies \psi_{3}(x) & =x^{3}- \frac{3}{5}x
 \end{align}$$
 Then we normalize:
 $$\begin{align}
  & \langle\psi_{0}|\psi_{0}\rangle= \frac{1}{2}\int_{-1}^{1}dx=1 \\
  & \langle\psi_{1}|\psi_{1}\rangle=\frac{1}{2}\int_{-1}^{1}x^{2}dx=\frac{1}{3} \\
- & \langle\psi_{2}|\psi_{2}\rangle=\frac{1}{2}\int_{-1}^{1}\left( x^{2}- \frac{1}{3}x \right)^{2}dx=\frac{32}{135} \\
- &\langle\psi_{3}|\psi_{3}\rangle=\frac{1}{2}\int_{-1}^{1}\left( x^{3}- \frac{3}{5}x \right)^{2}dx=\frac{8}{175}
+ & \langle\psi_{2}|\psi_{2}\rangle=\frac{1}{2}\int_{-1}^{1}\left( x^{2}- \frac{1}{3} \right)^{2}dx=\frac{4}{45} \\
+ &\langle\psi_{3}|\psi_{3}\rangle=\frac{1}{2}\int_{-1}^{1}\left( x^{3}- \frac{3}{5}x \right)^{2}dx=\frac{4}{175}
 \end{align}$$
 Then we obtain:
 $$\begin{align}
  & \phi_{0}(x)=1 \\
  & \phi_{1}(x)= \sqrt{ 3 } x \\
- & \phi_{2}(x)=\left( \frac{32}{135} \right)^{-1/2}\left( x^{2}-\frac{1}{3}x \right) \\
- & \phi_{3}(x)=\left( \frac{8}{175} \right)^{-1/2}\left( x^{3}- \frac{3}{5}x \right)
+ & \phi_{2}(x)=\left( \frac{4}{45} \right)^{-1/2}\left( x^{2}-\frac{1}{3} \right) \\
+ & \phi_{3}(x)=\left( \frac{4}{175} \right)^{-1/2}\left( x^{3}- \frac{3}{5}x \right)
 \end{align}$$
-Clearly, there are proportional to the Legendre polynomials.
+Clearly, these are proportional to the Legendre polynomials.
