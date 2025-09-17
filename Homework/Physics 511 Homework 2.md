@@ -30,14 +30,14 @@ We know that this operator must have eigenvalues $\pm \frac{\hbar}{2}$. Then the
 Since any vector is an eigenvector of $A\mathbb{1}$, it suffices to consider the eigenvectors of $B\sigma_{z}+C\sigma_{x}$.  
 
 This should be the eigenvectors of the spin operator in the $\frac{C}{\sqrt{ B^{2}+C^{2} }}\hat{x}+ \frac{B}{\sqrt{ B^{2}+C^{2} }}\hat{z}$. If we define $\alpha ,\beta$ such that:
-$$\sin \alpha \cos \beta=\frac{C}{\sqrt{ B^{2}+C^{2} }},\sin \alpha \sin \beta=0,\cos \alpha=\frac{B}{\sqrt{ B^{2}+C^{2} }}$$
+$$\sin \beta \cos \alpha=\frac{C}{\sqrt{ B^{2}+C^{2} }},\sin \beta \sin \alpha=0,\cos \beta=\frac{B}{\sqrt{ B^{2}+C^{2} }}$$
 then, we can conclude that the eigenvectors are:
 $$\begin{pmatrix}
-\cos \frac{\alpha}{2} \\
-e^{i\beta}\sin \frac{\alpha}{2}
+\cos \frac{\beta}{2} \\
+e^{i\alpha}\sin \frac{\beta}{2}
 \end{pmatrix}, \begin{pmatrix}
-\sin \frac{\alpha}{2} \\
--e^{i\beta}\cos \frac{\alpha}{2}
+\sin \frac{\beta}{2} \\
+-e^{i\alpha}\cos \frac{\beta}{2}
 \end{pmatrix}$$
 or more explicitly:
 $$\frac{1}{\sqrt{ 2B^{2}+2C^{2} \mp {2}B\sqrt{ B^{2}+C^{2} } }}\begin{pmatrix}
