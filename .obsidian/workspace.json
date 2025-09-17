@@ -265,16 +265,30 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Homework/Physics 511 Homework 2.md",
+                "file": "Homework/Physics 510 Homework 2.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Physics 511 Homework 2"
+              "title": "Physics 510 Homework 2"
+            }
+          },
+          {
+            "id": "7ba6db873c322ed8",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Homework/Physics 510 Homework 3.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Physics 510 Homework 3"
             }
           }
         ],
-        "currentTab": 18
+        "currentTab": 19
       }
     ],
     "direction": "vertical"
@@ -429,10 +443,13 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "8023173287d58596",
+  "active": "7ba6db873c322ed8",
   "lastOpenFiles": [
-    "Homework/Physics 511 Homework 1.md",
+    "Homework/Physics 510 Homework 2.md",
+    "Homework/Physics 510 Homework 3.md",
+    "Homework/Physics 510 Homework 1.md",
     "Homework/Physics 511 Homework 2.md",
+    "Homework/Physics 511 Homework 1.md",
     "Homework/Physics 511 Homework 0.md",
     "Homework/Physics 402 real world optics 5.md",
     "Homework/Physics 402 Class Prep 4.md",
@@ -441,7 +458,6 @@
     "系综.md",
     "Untitled 2.md",
     "正规矩阵的对角化.md",
-    "Homework/Physics 510 Homework 2.md",
     "Untitled 1.md",
     "Pictures/348cbd86049f4ea0c4b12fb534eece13.jpg",
     "Homework/Physics 402 Class Prep 1.md",
@@ -453,7 +469,6 @@
     "惯量张量.md",
     "张量分析.md",
     "多级展开.md",
-    "Homework/Physics 510 Homework 1.md",
     "不确定关系.md",
     "Untitled.md",
     "Pedrottis' introduction to optics.md",
@@ -465,7 +480,6 @@
     "Pictures/Pasted image 20250913185841.png",
     "Pictures/Pasted image 20250913184655.png",
     "Pictures/Pasted image 20250913184240.png",
-    "势阱对称性与波函数对称性.md",
     "Pictures/ca58ec44f38c1fd742c9003ce58f8ea3.jpg",
     "Homework",
     "Pictures",
