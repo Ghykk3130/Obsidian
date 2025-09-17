@@ -97,22 +97,24 @@ $$\begin{align}
 \end{align}$$
 # 4).
 ## a).
-Set the distance between the two lenses as $L$. Then for the objective and eyepiece, I have:
+For the objective and lens, I have:
 $$\begin{align}
  & \frac{1}{s_{o}}+ \frac{1}{s_{o}^{'}}=\frac{1}{f_{o}} \\
  & \frac{1}{s_{e}}+ \frac{1}{s_{e}^{'}}= \frac{1}{f_{e}} \\
  & s_{o}=1.2cm,f_{o}=1cm,s_{e}^{'}=-25cm,f_{e}=3cm,s_{e}+s^{'}_{o}=L \\
 \implies & s^{'}_{o}=6cm \\
-\implies & s_{e}=L-6cm \\
-\implies & \frac{1}{L-6}+\frac{1}{-25}=\frac{1}{3} \\
-\implies & L=\frac{243}{28}cm
 \end{align}$$
-Then, the effective focal length is given by:
+Then, the total magnification is given by:
 $$\begin{align}
- & \frac{1}{f}=\frac{1}{f_{o}}+\frac{1}{f_{e}}-\frac{L}{f_{o}f_{e}} \\
-\implies & f=-\frac{84}{131}cm \\
-\implies & M=\frac{25}{f}=-\frac{2375}{84}
+M & =-\frac{25s_{o}^{'}}{s_{o}f_{e}} \\
+ & =- \frac{25\cdot 6}{3\cdot 1.2} \\
+ & \approx-41.66
 \end{align}$$
 ## b).
-I have calculated the separation of the lenses. I got $L=\frac{243}{28}cm$.
-
+If I take the image of the objective lens as the object for the eyepiece, I can solve for the objective distance:
+$$\begin{align}
+ & \frac{1}{s}+\frac{1}{-25cm}=\frac{1}{3cm} \\
+\implies & s= \frac{75}{28}cm
+\end{align}$$
+Then this means the separation between the two lenses is:
+$$L=\frac{75}{28}+6\approx8.68cm$$
