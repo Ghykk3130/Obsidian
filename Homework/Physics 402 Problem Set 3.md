@@ -24,9 +24,12 @@ $$\begin{align}
 \end{align}$$
 where $h_{p}$ is the diameter of the diaphragm. So the exit pupil is located at $\frac{15}{2}cm$ to the left of the lens, with a diameter of $5cm$. It is not inverted.
 
-If we view the optical system from the center of the entrance pupil, the lens would subtends the smallest angle. Then the lens is the field stop. 
+Since there are two elements in the optical system, the lens is obviously the field stop. 
 
-The entrance window is obviously the lens itself, since there's no optics between the lens and the input plane. The exit window is also the lens itself, since there's no optics between the lens and the output plane. 
+The entrance window is can be calculated by similar triangle. Set the diameter of the entrance window as $d$. By simple geometry, we know that:
+$$\frac{d}{12-3}=\frac{5}{3}\implies d=15cm$$
+
+Therefore the entrance window is located at the object plane with a diameter of $15cm$. The exit window is the lens itself, since there's no optics between the lens and the output plane. 
 
 Sketch:
 <div style="text-align:center">
@@ -48,7 +51,7 @@ Since it subtends a smaller angle than the lens, it is the aperture stop. By the
 
 The exit pupil is obviously the diaphragm itself. 
 
-Standing at the center of the aperture stop, the only optical element that limit the field of view is the lens. So the lens is the field stop. 
+Similarly, since there are only two elements in the optical system, the lens is the field stop. 
 
 The entrance and exits windows are obviously the lens itself.
 
@@ -104,12 +107,12 @@ $$\begin{align}
  & s_{o}=1.2cm,f_{o}=1cm,s_{e}^{'}=-25cm,f_{e}=3cm,s_{e}+s^{'}_{o}=L \\
 \implies & s^{'}_{o}=6cm \\
 \end{align}$$
-Then, the total magnification is given by:
-$$\begin{align}
-M & =-\frac{25s_{o}^{'}}{s_{o}f_{e}} \\
- & =- \frac{25\cdot 6}{3\cdot 1.2} \\
- & \approx-41.66
-\end{align}$$
+The magnification of the objective lens is:
+$$m= - \frac{6}{1.2}=-5$$
+The angular magnification of the eyepiece is:
+$$M=\frac{25}{f_{3}}+1=\frac{25}{3}+1=\frac{28}{3}$$
+Therefore, the total magnifying power is:
+$$M\cdot m=-\frac{140}{3}\approx -46.67$$
 ## b).
 If I take the image of the objective lens as the object for the eyepiece, I can solve for the objective distance:
 $$\begin{align}
