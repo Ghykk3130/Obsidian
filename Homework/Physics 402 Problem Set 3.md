@@ -22,7 +22,7 @@ $$\begin{align}
 \implies & m=- \frac{s_{p}^{'}}{s_{p}}=\frac{5}{2} \\
 \implies & h_{p}^{'}=mh_{p}=5 cm
 \end{align}$$
-where $h_{p}$ is the diameter of the diaphragm. So the exit pupil is located at $-\frac{15}{2}cm$ to the left of the lens, with a diameter of $5cm$. It is not inverted.
+where $h_{p}$ is the diameter of the diaphragm. So the exit pupil is located at $\frac{15}{2}cm$ to the left of the lens, with a diameter of $5cm$. It is not inverted.
 
 If we view the optical system from the center of the entrance pupil, the lens would subtends the smallest angle. Then the lens is the field stop. 
 

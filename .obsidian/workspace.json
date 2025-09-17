@@ -265,12 +265,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "熵.md",
+                "file": "Homework/Physics 402 Problem Set 3.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "熵"
+              "title": "Physics 402 Problem Set 3"
             }
           }
         ],
@@ -432,6 +432,7 @@
   },
   "active": "8023173287d58596",
   "lastOpenFiles": [
+    "熵.md",
     "系综.md",
     "Homework/Physics 402 Problem Set 3.md",
     "Homework/Physics 402 real world optics 5.md",
@@ -463,7 +464,6 @@
     "Pictures/Pasted image 20250913185841.png",
     "Pictures/Pasted image 20250913184655.png",
     "Pictures/Pasted image 20250913184240.png",
-    "熵.md",
     "势阱对称性与波函数对称性.md",
     "一维Acoustic wave的量子化.md",
     "Hamilton原理与Lagrange方程.md",
