@@ -345,8 +345,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200,
-    "collapsed": true
+    "width": 200
   },
   "right": {
     "id": "9003d078f8dbc4ed",
@@ -444,12 +443,12 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "7ba6db873c322ed8",
+  "active": "0bd5adf6a54a04e2",
   "lastOpenFiles": [
     "Homework/Physics 511 Homework 2.md",
     "Homework/Physics 510 Homework 3.md",
-    "Homework/Physics 510 Homework 2.md",
     "Homework/Physics 510 Homework 1.md",
+    "Homework/Physics 510 Homework 2.md",
     "Homework/Physics 511 Homework 1.md",
     "Homework/Physics 511 Homework 0.md",
     "Homework/Physics 402 real world optics 5.md",

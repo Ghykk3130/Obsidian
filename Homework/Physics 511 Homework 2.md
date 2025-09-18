@@ -31,7 +31,7 @@ Since any vector is an eigenvector of $A\mathbb{1}$, it suffices to consider the
 
 This should be the eigenvectors of the spin operator in the $\frac{C}{\sqrt{ B^{2}+C^{2} }}\hat{x}+ \frac{B}{\sqrt{ B^{2}+C^{2} }}\hat{z}$. If we define $\alpha ,\beta$ such that:
 $$\sin \beta \cos \alpha=\frac{C}{\sqrt{ B^{2}+C^{2} }},\sin \beta \sin \alpha=0,\cos \beta=\frac{B}{\sqrt{ B^{2}+C^{2} }}$$
-then, we can conclude that the eigenvectors are:
+Or more explicitly, $\alpha=0,\tan \beta= \frac{C}{B}$, then, we can conclude that the eigenvectors are:
 $$\begin{pmatrix}
 \cos \frac{\beta}{2} \\
 e^{i\alpha}\sin \frac{\beta}{2}

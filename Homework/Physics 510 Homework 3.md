@@ -75,3 +75,21 @@ Know that:
 $$S(0,0)=S_{0}\implies d(0)=\text{const.}=S_{0}$$
 Then:
 $$S=bx- \frac{c}{2}x^{2}+AT+S_{0}$$
+
+To solve for $S(T,J)$, I can calculate $x=x(T,J)$:
+$$\begin{align}
+ J & =ax-bT+cTx \\
+ \implies & x= \frac{J+bT}{a+cT}
+\end{align}$$
+Then I have:
+$$S(T,J)=b \frac{J+bT}{a+cT}- \frac{c}{2}\left( \frac{J+bT}{a+cT} \right)^{2}+AT+S_{0}$$
+Then:
+$$\begin{align}
+\left( \frac{\partial S}{\partial T} \right)_{J} & =b \frac{ab-cJ}{(a+cT)^{2}}-c \frac{J+bT}{a+cT} \frac{ab-cJ}{(a+cT)^{2}}+A \\
+\implies C_{J} & =T(b \frac{ab-cJ}{(a+cT)^{2}}-c \frac{J+bT}{a+cT} \frac{ab-cJ}{(a+cT)^{2}}+A)
+\end{align}$$
+## d).
+Yes. Because once $S=S(T,J)$ is known, we can calculate the Helmholtz free energy by:
+$$S= -\left( \frac{\partial F}{\partial T} \right)_{x}\implies F=-\int SdT+a(x)\text{ for some }a(x)$$
+In principle, $a(x)$ can be found by the condition $\frac{\partial F}{\partial x}=J$, given the expression of $J$. We know that $F$ is a thermodynamic potential, and serves as a full characterization of the system. Knowing $S$ is equivalent to knowing $F$, thus $S$ also serves as a full characterization of the system.
+
