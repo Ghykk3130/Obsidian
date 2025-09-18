@@ -287,8 +287,7 @@
               "title": "Physics 510 Homework 3"
             }
           }
-        ],
-        "currentTab": 19
+        ]
       }
     ],
     "direction": "vertical"
@@ -345,7 +344,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 200,
+    "collapsed": true
   },
   "right": {
     "id": "9003d078f8dbc4ed",
@@ -443,10 +443,10 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "0bd5adf6a54a04e2",
+  "active": "b54403d277b5ec43",
   "lastOpenFiles": [
-    "Homework/Physics 511 Homework 2.md",
     "Homework/Physics 510 Homework 3.md",
+    "Homework/Physics 511 Homework 2.md",
     "Homework/Physics 510 Homework 1.md",
     "Homework/Physics 510 Homework 2.md",
     "Homework/Physics 511 Homework 1.md",
