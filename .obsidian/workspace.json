@@ -344,8 +344,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200,
-    "collapsed": true
+    "width": 200
   },
   "right": {
     "id": "9003d078f8dbc4ed",
@@ -445,9 +444,10 @@
   },
   "active": "b54403d277b5ec43",
   "lastOpenFiles": [
+    "热力学中的求导.md",
+    "Homework/Physics 510 Homework 3.md",
     "Homework/Physics 510 Homework 1.md",
     "守恒律.md",
-    "Homework/Physics 510 Homework 3.md",
     "Homework/Physics 511 Homework 2.md",
     "Homework/Physics 510 Homework 2.md",
     "Homework/Physics 511 Homework 1.md",
@@ -471,7 +471,6 @@
     "张量分析.md",
     "多级展开.md",
     "不确定关系.md",
-    "Untitled.md",
     "Pictures/21474e58f25eb52e43f782b50970770c.jpg",
     "Pictures/884776f337f1aa951c057554c7df6007.jpg",
     "Pictures/Pasted image 20250913220433.png",
