@@ -89,9 +89,7 @@ $$\begin{align}
 \implies C_{J} & =T(b \frac{ab-cJ}{(a+cT)^{2}}-c \frac{J+bT}{a+cT} \frac{ab-cJ}{(a+cT)^{2}}+A)
 \end{align}$$
 ## d).
-Yes. Because once $S=S(T,J)$ is known, we can calculate the Helmholtz free energy by:
-$$S= -\left( \frac{\partial F}{\partial T} \right)_{x}\implies F=-\int SdT+a(x)\text{ for some }a(x)$$
-In principle, $a(x)$ can be found by the condition $\frac{\partial F}{\partial x}=J$, given the expression of $J$. We know that $F$ is a thermodynamic potential, and serves as a full characterization of the system. Knowing $S$ is equivalent to knowing $F$, thus $S$ also serves as a full characterization of the system.
+No. Because $S=S(T,J)$ is not in the natural variable. The proper thermodynamic potential should be: $U(S,x)\implies S(U,x)$, instead of $S(T,J)$.
 
 # 3.
 ## a).
@@ -116,6 +114,8 @@ $$\begin{align}
 \left( \frac{\partial S}{\partial L} \right)_{T}=- \left( \frac{\partial f}{\partial T} \right)_{L}<0
 \end{align}$$
 If I increase the length, the entropy would decrease.
+## d).
+It suffices to determine the sign of $\left( \frac{\partial T}{\partial L} \right)_{S}$
 
 # 4.
 ## a).
