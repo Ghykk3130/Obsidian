@@ -345,7 +345,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 200,
+    "collapsed": true
   },
   "right": {
     "id": "9003d078f8dbc4ed",
@@ -445,10 +446,10 @@
   },
   "active": "7ba6db873c322ed8",
   "lastOpenFiles": [
-    "Homework/Physics 510 Homework 2.md",
-    "Homework/Physics 510 Homework 3.md",
-    "Homework/Physics 510 Homework 1.md",
     "Homework/Physics 511 Homework 2.md",
+    "Homework/Physics 510 Homework 3.md",
+    "Homework/Physics 510 Homework 2.md",
+    "Homework/Physics 510 Homework 1.md",
     "Homework/Physics 511 Homework 1.md",
     "Homework/Physics 511 Homework 0.md",
     "Homework/Physics 402 real world optics 5.md",

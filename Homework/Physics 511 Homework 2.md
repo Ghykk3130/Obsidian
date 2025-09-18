@@ -167,7 +167,7 @@ $$\begin{align}
  & \langle\psi_{2}|\psi_{2}\rangle=\frac{1}{2}\int_{-1}^{1}\left( x^{2}- \frac{1}{3} \right)^{2}dx=\frac{4}{45} \\
  &\langle\psi_{3}|\psi_{3}\rangle=\frac{1}{2}\int_{-1}^{1}\left( x^{3}- \frac{3}{5}x \right)^{2}dx=\frac{4}{175}
 \end{align}$$
-Then we obtain:
+Then by dividing $\psi_{i}$ with the its magnitude, we obtain:
 $$\begin{align}
  & \phi_{0}(x)=1 \\
  & \phi_{1}(x)= \sqrt{ 3 } x \\
