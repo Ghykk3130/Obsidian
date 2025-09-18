@@ -117,4 +117,9 @@ $$\begin{align}
 \end{align}$$
 If I increase the length, the entropy would decrease.
 
+# 4.
+## a).
+$\sigma$ is neither extensive nor intensive. Because if I double the size of the system, the energy will double. But the multiplicative factor of $A$ is just $2^{2/3}$. This means the multiplicative factor of $\sigma$ is $2^{1/3}$. 
+
+The unit of $\sigma$ is $\frac{[E]}{[L^{2}]}=J\cdot m^{-2}=kg\cdot s^{-2}$
 
