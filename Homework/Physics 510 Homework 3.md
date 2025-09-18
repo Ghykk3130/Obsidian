@@ -93,3 +93,28 @@ Yes. Because once $S=S(T,J)$ is known, we can calculate the Helmholtz free energ
 $$S= -\left( \frac{\partial F}{\partial T} \right)_{x}\implies F=-\int SdT+a(x)\text{ for some }a(x)$$
 In principle, $a(x)$ can be found by the condition $\frac{\partial F}{\partial x}=J$, given the expression of $J$. We know that $F$ is a thermodynamic potential, and serves as a full characterization of the system. Knowing $S$ is equivalent to knowing $F$, thus $S$ also serves as a full characterization of the system.
 
+# 3.
+## a).
+Increasing the mass causes the band to length means:
+$$\frac{1}{L}\left( \frac{\partial L}{\partial f} \right)_{T}>0$$
+With a fixed mass, increasing the temperature causes the length to shrink means:
+$$\frac{1}{L}\left( \frac{\partial L}{\partial T} \right)_{f}<0$$
+## b).
+Know that:
+$$\begin{align}
+\left( \frac{\partial f}{\partial T} \right)_{L} & =- \frac{(\partial L / \partial f )_{T} }{(\partial L / \partial T)_{f}}=- \frac{ \frac{1}{L} \frac{\partial L}{\partial f} }{ \frac{1}{L} \frac{\partial L}{\partial T} }>0
+\end{align}$$
+So I would expect the force to increase as I increase the temperature.
+
+## c).
+I have:
+$$dU=TdS+fdL\implies dF=-sdT+fdL$$
+Then I have:
+$$\frac{\partial^{2}F}{\partial T\partial L}=\frac{\partial^{2}F}{\partial L\partial T}\implies\left( \frac{\partial f}{\partial T} \right)_{L}= - \left(  \frac{\partial S}{\partial L} \right)_{T}$$
+Therefore:
+$$\begin{align}
+\left( \frac{\partial S}{\partial L} \right)_{T}=- \left( \frac{\partial f}{\partial T} \right)_{L}<0
+\end{align}$$
+If I increase the length, the entropy would decrease.
+
+
