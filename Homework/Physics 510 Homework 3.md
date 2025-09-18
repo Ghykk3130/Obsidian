@@ -115,11 +115,25 @@ $$\begin{align}
 \end{align}$$
 If I increase the length, the entropy would decrease.
 ## d).
-It suffices to determine the sign of $\left( \frac{\partial T}{\partial L} \right)_{S}$
-
+It suffices to determine the sign of $\left( \frac{\partial T}{\partial L} \right)_{S}$. I have:
+$$\begin{align}
+\left( \frac{\partial T}{\partial L} \right)_{S} & =- \frac{(\partial S / \partial L)_{T}}{(\partial S / \partial T)_{L}}
+\end{align}$$
+Know that:
+$$\begin{align}
+\left( \frac{\partial S}{\partial T} \right)_{L} & =\frac{C_{L}}{T}>0
+\end{align}$$
+Also from c) I know :
+$$\begin{align}
+\left( \frac{\partial S}{\partial L} \right)_{T} & =-\left( \frac{\partial f}{\partial T} \right)_{L}<0
+\end{align}$$
+Then:
+$$\left( \frac{\partial T}{\partial L} \right)_{S}>0$$
+This means that the temperature would increase once I release the rubber band.
 # 4.
 ## a).
 $\sigma$ is neither extensive nor intensive. Because if I double the size of the system, the energy will double. But the multiplicative factor of $A$ is just $2^{2/3}$. This means the multiplicative factor of $\sigma$ is $2^{1/3}$. 
 
 The unit of $\sigma$ is $\frac{[E]}{[L^{2}]}=J\cdot m^{-2}=kg\cdot s^{-2}$
 
+## b).
