@@ -60,3 +60,18 @@ $$\begin{align}
  & =0
 \end{align}$$
 ## c).
+From $a).$ we know that:
+$$\begin{align}
+ & \left( \frac{\partial S}{\partial x} \right)_{T} =b-cx \\
+\implies & S= bx- \frac{c}{2}x^{2}+d(T)\text{ for some function }d(T) \\
+\end{align}$$
+From $b).$ we know that:
+$$\begin{align}
+ & \left( \frac{\partial S}{\partial T} \right)_{x}=A \\
+\implies &  \frac{d}{dT}d=A \\
+\implies & d(T)=AT+\text{const.}
+\end{align}$$
+Know that:
+$$S(0,0)=S_{0}\implies d(0)=\text{const.}=S_{0}$$
+Then:
+$$S=bx- \frac{c}{2}x^{2}+AT+S_{0}$$
