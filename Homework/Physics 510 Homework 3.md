@@ -43,3 +43,20 @@ We know that:
 $$\left( \frac{\partial J}{\partial T} \right)_{x}=-b+cx$$
 Therefore:
 $$\left( \frac{\partial S}{\partial x} \right)_{T}=b-cx$$
+## b).
+We first express $C_{x}$ in terms of a thermodynamic potential:
+$$\begin{align}
+ & C_{x}  =T\left( \frac{\partial S}{\partial T} \right)_{x} \\
+  & S=-\left( \frac{\partial F}{\partial T} \right)_{x} \\
+\implies & C_{x}=-T \frac{\partial^{2}F}{\partial T^{2}}\end{align}$$
+Therefore, I have:
+$$A(x)=- \frac{\partial^{2}F}{\partial T^{2}}$$
+Then:
+$$\begin{align}
+\frac{dA}{dx} & =- \frac{\partial}{\partial x} \frac{\partial^{2}}{\partial T^{2}}F \\
+ & =- \frac{\partial^{2}}{\partial T^{2}} \frac{\partial}{\partial x}F \\
+ & =- \frac{\partial^{2}}{\partial T^{2}}J \\
+ & =- \frac{\partial}{\partial T}(-b+cx) \\
+ & =0
+\end{align}$$
+## c).
