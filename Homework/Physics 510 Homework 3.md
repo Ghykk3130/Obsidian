@@ -150,3 +150,4 @@ $$\begin{align}
  $$dF=-S_{a}dT_{a}-S_{d}dT_{d}-pdV_{d}-S_{s}dT_{s}+\sigma_{sg}dA_{sg}+\sigma_{lg}dA_{lg}+\sigma_{sl}dA_{sl}$$
  But now, since the droplet has constant volume, and temperature is fixed, we have:
 $$dF=\sigma_{sg}dA_{sg}+\sigma_{lg}dA_{lg}+\sigma_{sl}dA_{sl}$$
+## d).
