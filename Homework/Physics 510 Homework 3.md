@@ -137,18 +137,10 @@ $\sigma$ is neither extensive nor intensive. Because if I double the size of the
 The unit of $\sigma$ is $\frac{[E]}{[L^{2}]}=J\cdot m^{-2}=kg\cdot s^{-2}$
 
 ## b).
-The system has constant temperature. Since the volume of the droplet doesn't change, the work variable $V$ also holds constant. Therefore the Helmholtz free energy must be minimized in this situation.
+The system has constant temperature. It's reasonable to assume that the gas is the atmosphere, and thus acts as a heat reservoir. Since the volume of the droplet doesn't change, and the volume of the solid obviously doesn't change, the work variable $V$ also holds constant. Therefore under these constraints, the Helmholtz free energy must be minimized in this situation.
 
 ## c).
-Without any constraint, the system can be characterized by:
-$$\begin{align}
- & \text{air pressure }=p \\
- & \text{volume of the droplet }=V \\
- & \text{temperature, entropy of the air, droplet, solid}=T_{a},S_{a},T_{d},S_{d},T_{s},S_{s} \\
- & \text{the suface areas and tension }=A_{sg},A_{lg},A_{sl},\sigma_{sg},\sigma_{lg},\sigma_{sl}\end{align}$$
- Then the differential of the Helmholtz free energy is:
- $$dF=-S_{a}dT_{a}-S_{d}dT_{d}-pdV_{d}-S_{s}dT_{s}+\sigma_{sg}dA_{sg}+\sigma_{lg}dA_{lg}+\sigma_{sl}dA_{sl}$$
- But now, since the droplet has constant volume, and temperature is fixed, we have:
+Since there's no work term induced by volume change as I argued above, and the temperature stays the same through out the system, the only variables that contributes to the change in a thermodynamic potential are the variable pair $(\sigma,A)$. Therefore: 
 $$dF=\sigma_{sg}dA_{sg}+\sigma_{lg}dA_{lg}+\sigma_{sl}dA_{sl}$$
 ## d).
 I observe that inside the natural log of the Sackur-Tetrode equation we are given, the expression is not intensive. I don't know if this is a typo or not. My calculation is based on the equation given in the problem.
