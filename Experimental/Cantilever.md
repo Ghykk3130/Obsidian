@@ -26,3 +26,6 @@ Pump down the probe and rotate.  Record the capacitance value of the cantilever.
 
 When rotate, observe relaxation $\sim 0.001 pF$. Suspect that the cantilever is bending back against gravity. Should take data after the cantilever settles down. 
 
+Capacitance relaxation at room temperature with $0^{\circ}$:
+![[fd2d9bc438106de8f216a2dbb5619ea3.jpg|500]]
+
