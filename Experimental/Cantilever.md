@@ -7,7 +7,7 @@ Setup:
 - Bad pillars: everything to the right of F, G, H. Coax all good 
 
 09/18/2025
-Measure the resistance. Connect the current to coax, the 4-wire connections to F, G. 
+Measure the resistance. Connect the current to coax 1, 6, the 4-wire connections to F, G. 
 
 Rotator calibration:
 <div style="text-align:center">
