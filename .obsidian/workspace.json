@@ -387,7 +387,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 200,
+    "collapsed": true
   },
   "right": {
     "id": "9003d078f8dbc4ed",
@@ -487,11 +488,11 @@
   },
   "active": "4046bd1e723b2ffb",
   "lastOpenFiles": [
+    "Experimental/Cantilever.md",
+    "Homework/Physics 510 Homework 3.md",
     "Homework/Physics 510 Homework 2.md",
     "Experimental/VTI.md",
-    "Experimental/Cantilever.md",
     "Homework/Physics 402 real world optics 2.md",
-    "Homework/Physics 510 Homework 3.md",
     "热力学平衡.md",
     "热力学第一定律.md",
     "Degenerate Fermi Gas.md",

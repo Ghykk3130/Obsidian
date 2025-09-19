@@ -14,3 +14,15 @@ Rotator calibration:
 <img src="5e2b8f48dced4df33b19a5d3a4c33d64.jpg" width="500">
 </div>
 ![[97d68c0a89ec2aa757308b66850dba67.jpg|500]]
+
+09/19/2025
+Pump down the probe and rotate.  Record the capacitance value of the cantilever. 
+- $0^{\circ}$, $0.536$
+- $90^{\circ}$ , $0.528$
+- Go back to $0^{\circ}$, $0.528$
+- Go to $90^{\circ}$ again, $0.526$
+- Go back to $0^{\circ}$, $0.527$
+- Go back to $0^{\circ}$, $0.527$
+
+When rotate, observe relaxation $\sim 0.001 pF$. Suspect that the cantilever is bending back against gravity. Should take data after the cantilever settles down. 
+

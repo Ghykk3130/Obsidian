@@ -151,5 +151,5 @@ $$\begin{align}
  But now, since the droplet has constant volume, and temperature is fixed, we have:
 $$dF=\sigma_{sg}dA_{sg}+\sigma_{lg}dA_{lg}+\sigma_{sl}dA_{sl}$$
 ## d).
-I observe that inside the natural log of the Sackur-Tetrode equation we are give, the expression is not intensive. I don't know if this is a typo or not. My calculation is based on the equation given in the problem.
+I observe that inside the natural log of the Sackur-Tetrode equation we are given, the expression is not intensive. I don't know if this is a typo or not. My calculation is based on the equation given in the problem.
 
