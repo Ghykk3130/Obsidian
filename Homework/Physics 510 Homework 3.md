@@ -137,3 +137,6 @@ $\sigma$ is neither extensive nor intensive. Because if I double the size of the
 The unit of $\sigma$ is $\frac{[E]}{[L^{2}]}=J\cdot m^{-2}=kg\cdot s^{-2}$
 
 ## b).
+The system has constant pressure, since the entire system is exposed to the atmosphere. It would also be reasonable to assume that the system is at room temperature. Then the Helmholtz free energy should be minimized. Since:
+$$F=G-pV$$
+And I know that when fixing $T,p$, equilibrium must be reached when $G$ is minimized. 
