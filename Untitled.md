@@ -1,15 +1,30 @@
-Tokenization is the process of dividing text into discrete units. Given a piece of text, a tokenizer segments it according to certain rules. Each segment is called a token. Each token is assigned a unique ID and an embedding, allowing the text to be converted into a form that machines can process. When an LLM receives these tokens, it can generate the next appropriate token based on its training. Therefore, tokens are the smallest structural units through which an LLM understands text. Rather than thinking of an LLM as a black box that receives and predicts words, it is more accurate to think of it as a black box that receives and predicts tokens.
+On page 134 of Callen's _Thermodynamics and an Introduction to Thermostatistics, 2nd edition_, the derivation of the minimum energy principle from the maximum entropy principle is given. 
 
-Generally, there are three types of tokenization: word-based tokenization: Each word in the text is treated as a token. Character-based tokenization: Each character in the text is treated as a token. Subword tokenization: The tokenizer selects the most frequent character sequences as tokens. Here, a character sequence does not necessarily correspond to a whole word.
+When arguing that $dU$ with $S$ holding constant must vanish, Callen wrote:
+$$\left( \frac{\partial U}{\partial X} \right)_{S}= - \frac{(\partial S / \partial X)_{U}}{(\partial S / \partial U)_{X}} \dots *)$$
+where $X=X_{j}^{(i)}$ is the jth extensive parameter of the ith subsystem. All other $X$'s are also held constant implicitly. 
 
-Modern LLMs tend to use subword tokenization rather than word- or character-based tokenization because it offers several advantages. Compared to word-based tokenization, subword tokenization reduces lexical coverage, meaning the model handles fewer unique tokens. This results in faster performance and greater flexibility. Compared to character-based tokenization, subword tokenization operates at a higher level of abstraction, enabling the model to better capture patterns for language modeling tasks.
+I don't know why this equation above is true. The equation is not trivial for a composite system. Here is my attempt to prove the equation above:
 
-Subword tokenization is similar to, but distinct from, morphology in natural language. Morphology can be viewed as a guideline for subword tokenization because it decomposes words into roots and affixes in a linguistically meaningful way. These roots and affixes meet the definition of tokens and could serve as subwords. However, the reverse is not true: subword tokens are not necessarily morphemes. Subword tokens are selected based on frequency, not meaning, so high-frequency sequences may have no morphological significance. For example, in the word vanquish, “qui” may be a token, but it has no standalone meaning.
+Consider a simple case where the system is composed of two non-interacting subsystems. The two subsystems have work variables $x_{1},x_{2}$ respectively. Then we have:
+$$U=U(S_{1},S_{2},x_{1},x_{2}) \dots **)$$
+We want to show, for example, $\left( \frac{\partial U}{\partial x_{1}} \right)_{S,S_{1},S_{2},x_{2}}=0$.
 
-One reason LLMs struggle to count the number of a specific letter in a word is tokenization. A token’s unique ID does not inherently encode the spelling of the word it represents. For instance, the word strawberry is represented as a sequence of abstract IDs and embeddings; the LLM does not intrinsically know that it contains the letter “r”. Similarly, numbers may be tokenized differently: 9.9 may be a single token, whereas 9.11 may be split into two tokens. Thus, the model sees tokens rather than numerical values and cannot correctly compare their magnitudes.
+Then we need to solve from $**)$ that:
+$$\begin{align}
+ & S_{1}=S_{1}(U,S_{2},x_{1},x_{2}) \\
+ & S_{2}=S_{2}(U,S_{1},x_{1},x_{2}) \\
+ & x_{2}=x_{2}(U,S_{1},S_{2},x_{1})
+\end{align}$$
+Then the constraint on the differentials would be:
+$$\begin{align}
+ & dS_{1} =\frac{\partial S_{1}}{\partial U}dU+ \frac{\partial S_{1}}{\partial S_{2} }dS_{2}+ \frac{\partial S_{1}}{\partial x_{1}}dx_{1}+ \frac{\partial S_{1}}{\partial x_{2}}dx_{2}=0 \\
+ & dS_{2}=\frac{\partial S_{2}}{\partial U}dU+ \frac{\partial S_{2}}{\partial S_{1} }dS_{2}+ \frac{\partial S_{2}}{\partial x_{1}}dx_{1}+ \frac{\partial S_{2}}{\partial x_{2}}dx_{2}=0 \\
+ & dx_{2}=\frac{\partial x_{2}}{\partial U}dU+ \frac{\partial x_{2}}{\partial S_{1}}dS_{1}+ \frac{\partial x_{2}}{\partial S_{2}}dS_{2}+ \frac{\partial x_{2}}{\partial x_{1}}dx_{1}=0
+\end{align}$$
+The constraint $dS=0$ is automatically satisfied by $dS_{1}=0,dS_{2}=0$. Then I should solve for $dU, dx_{1}$, and then calculate $\left( \frac{\partial U}{\partial x_{1}} \right)_{S,S_{1},S_{2},x_{2}}$. The entropy maximum principle might be used to reduce this expression to zero. 
 
-We can also infer that, due to tokenization, an LLM cannot deduce the chemical name from a chemical formula, because the formula is split into smaller parts, each without intrinsic chemical meaning. Likewise, LLMs cannot reliably solve ciphers, because ciphers do not follow human language patterns. A tokenizer trained on the frequency of human language tokens will extract meaningless segments from a cipher.
+However, I didn't see why Callen wrote $*)$. Although this is trivial for uniform system, it is completely not trivial for a composite system. I try to derive $*)$ based on the procedure that I described above, but I cannot solve the systems of equations because it is not a square matrix, and I cannot do inverse. 
 
-However, refining the tokenization process can partially alleviate problems caused by naive tokenization. In naive tokenization, tokens are selected based on their frequency in natural language. By adjusting the tokenization rules for different types of text, LLMs can correctly tokenize non-linguistic inputs. For example, if a tokenizer segments mathematical formulas based on character frequency within formulas, the model is more likely to interpret them correctly. Similarly, chemical formulas can be tokenized effectively using frequency rules appropriate for chemical notation.
+Is my understanding wrong? Or is there any implicit assumption in Callen's book?
 
-Nonetheless, refining tokenization cannot solve all problems. Even if an LLM correctly interprets a formula, it cannot perform deterministic logical operations, because it fundamentally predicts the next token rather than executing precise mathematical rules. Therefore, even with better tokenization, an LLM cannot reliably count the number of “r”s in “strawberry” or compare 9.11 and 9.9. Performing these tasks requires true deterministic logic, which tokenization alone cannot provide.

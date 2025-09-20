@@ -83,12 +83,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "热力学平衡.md",
+                "file": "Untitled.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "热力学平衡"
+              "title": "Untitled"
             }
           },
           {
@@ -387,8 +387,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200,
-    "collapsed": true
+    "width": 200
   },
   "right": {
     "id": "9003d078f8dbc4ed",
@@ -488,6 +487,7 @@
   },
   "active": "4046bd1e723b2ffb",
   "lastOpenFiles": [
+    "热力学平衡.md",
     "Untitled 2.md",
     "Pictures/e5785bbda01e7e755db1a4314f364b8c.jpg",
     "Homework/Physics 510 Homework 3.md",
@@ -496,7 +496,6 @@
     "Homework/Physics 510 Homework 2.md",
     "Experimental/VTI.md",
     "Homework/Physics 402 real world optics 2.md",
-    "热力学平衡.md",
     "热力学第一定律.md",
     "Degenerate Fermi Gas.md",
     "Lagrangian Formulation of EM.md",
