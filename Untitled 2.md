@@ -189,6 +189,15 @@ $$y\in B\left( x,l+ \frac{1}{4}r \right)$$
 >[!Right]
 >$\blacksquare$
 
+>[!Proposition 2]
+>Any uncountable set with discrete topology is not second countable.
+## Proof.
+设$S$为一不可数集。则$P(S)$为discrete topology。FTSOC，设存在一个基$\mathcal{B}\ \text{countable}$。
 
-
+因为任取一点$x\in S$，则$\{ x \}$为开集。那么：
+$$\exists B_{\alpha}\in\mathcal{B}\text{ s.t. }\cup B_{\alpha}=\{ x \}$$
+显然，只存在一个这样的$B_{\alpha}$，即$B_{\alpha}=\{ x \}$。这对于每个$x \in S$都成立。于是$\mathcal{B}$知道包含$S$中所有单点。所以：
+$$|\mathcal{B}|>|S| \ \rightarrow\leftarrow $$
+>[!Right]
+>$\blacksquare$
 
