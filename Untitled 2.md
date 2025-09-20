@@ -201,3 +201,22 @@ $$|\mathcal{B}|>|S| \ \rightarrow\leftarrow $$
 >[!Right]
 >$\blacksquare$
 
+>[!Definition 2]
+>Let $(S,\mathcal{T})$ be a topological space. Given $p\in S$, a collection of open sets $\mathcal{B}$ is a neighborhood basis at $p$ if
+>$$\forall U\text{ open},\ \exists B\in\mathcal{B}\text{ s.t. }p\in B_{}\subset U$$
+
+>[!Definition 3]
+>A topological space $(S,\mathcal{T})$ is first countable if 
+>$$\forall p\in S,\ \exists \text{ a countable neighborhood basis}$$
+## Ex:
+考虑一个不可数集$S$，以及它的离散拓扑$P(S)$。显然该拓扑空间是first countable的。因为任意一点$p$都可以选择$\{ p \}$作为neighborhood basis。
+
+>[!Theorem 1]
+>Any second countable topological space is first countable.
+## Proof.
+这是显然。令$(S,\mathcal{T})$为拓扑空间。任取$p\in S，p\in U\text{ open }$。取countable basis为neiborhood basis。则neiborhood basis也是countable的。
+>[!Right]
+>$\blacksquare$
+
+
+
