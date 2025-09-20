@@ -104,7 +104,8 @@ $$p\in B_{\alpha}\subset A$$
 >- $S=\cup_{B\in\mathcal{B}}B$
 >- Given $B_{1},B_{2}\in\mathcal{B},p\in B_{1}\cap B_{2}\neq \phi$, $\exists B\in\mathcal{B}\text{ s.t. }p\in B\subset B_{1}\cap B_{2}$
 ## Proof.
-
+($\Rightarrow$):
+若$\mathcal{B}$为一基，那么显然成立。
 ($\Leftarrow$):
 任取$A\text{ open}$。在$A$内任取一点$p$。因为$S=\cup B,B\in\mathcal{B}$，所以一定$\exists B^{'}\in\mathcal{B} \text{ s.t.}$
 $$p\in B^{'}\cap A$$
