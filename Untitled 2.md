@@ -132,10 +132,15 @@ $$U\cap A=(\cup B_{\alpha})\cap A=\cup(B_{\alpha}\cap A)$$
 
 # 1.3
 
+>[! Definition 1]
+>Let $(S,\mathcal{T})$ be a topological space. The topological space is said to be second countable if there exists a basis $\mathcal{B}$ such that $\mathcal{B}$ is countable. 
+
 我们定义，$\mathbb{R}^{n}$中一点$x$如果每个分量都是有理数，即$x\in\mathbb{Q}^{n}$，那么称该点为rational point。
 
 >[!Lemma 1]
 >Every open set in $\mathbb{R}^{n}$ contains a rational point.
+
+^lemma131
 ## Proof.
 任取一开集$U\in \mathbb{R}^{n} \text{ open}$。任取$U$内一点$p$，则一定可以作一个n维球$B(p,r)\subset U$。则：
 $$x\in B(p,r)\implies d(x,p)<r\implies \sum_{j}(x_{j}-p_{j})^{2}<r^{2}$$
@@ -145,15 +150,44 @@ $$\exists x_{j}\in \mathbb{Q}\text{ s.t. }(x_{j}-p_{j})^{2}< \frac{r^{2}}{n}\ ,\
 >$\blacksquare$
 
 >[!Proposition 1]
->Let $\mathcal{B}_{rat}$ be the set of all balls with rational centers and radii in $\mathbb{R}^{n}$. Then $\mathcal{B}_{rat}$is a basis of $(\mathbb{R}^{n},\text{narual topology on }\mathbb{R}^{n})$
+>Let $\mathcal{B}_{rat}$ be the set of all balls with rational centers and radii in $\mathbb{R}^{n}$. Then $\mathcal{B}_{rat}$ is a basis of $(\mathbb{R}^{n},\text{narual topology on }\mathbb{R}^{n})$
 ## Proof.
-因为$\mathbb{R}^{n}$上任意一个开集都是球的并，所以只需要证明任意一个球是有理球的并即可。
+考虑$\mathbb{R}^{n}$上任意一个开集。将在开集内任意点作一个开集内的小球。易证开集是所有这些小球的并。
 
-任取$B(a,r)$。在其中每个有理点$x\in B(a,r)\cap\mathbb{Q}^{n}$，我们以$x$为中心构造球$B(x,s)$，其中$s= \frac{1}{4}min\{ d(x,a),d(x,B(a,r)^{c}) \}$。
+所以只需要证明任意一个球是有理球的并即可。
 
-STS $B(a,r)=\cup_{x\in B(a,r)\cap\mathbb{Q}^{n}}B(x,s)$。显然，RHS属于LHS。接下来来看是否LHS属于RHS。任取$y\in B(a,r)$。想证明：
-$$\exists x\in B(a,r)\cap\mathbb{Q}^{n}\text{ s.t. }y\in B(x,s)$$
-因为如果想让$y$处于球$B(x,s)$内，我们必须让$x$也处于球$B(y,s)$内。我们不妨以$y$为球心作球来找$x$。
+任取$B(a,r)$。在其中每个有理点$x\in B(a,r)\cap\mathbb{Q}^{n}$，我们以$x$为中心构造一系列球$B(x,s_{j})$，其中$s_{j}\in\mathbb{Q},s_{j}<min\{ d(x,a),d(x,B(a,r)^{c}) \}$。
+
+STS $B(a,r)=\cup_{x\in B(a,r)\cap\mathbb{Q}^{n},j}B(x,s_{j})$。
+
+显然，RHS属于LHS。接下来来看是否LHS属于RHS。任取$y\in B(a,r)$。想证明：
+$$\exists x\in B(a,r)\cap\mathbb{Q}^{n}\text{ s.t. }y\in B(x,s_{j})\text{ for some }s_{j}$$
+如果想让$y$处于以$x$为球心的球内，那么就得让$x$也处于以$y$为球心的球内。那么不妨作：
+$$B(y,l),\text{ s.t. }l < \frac{1}{4} min\{ d(y,a),d(y,B(a,r)^{c}) \}< \frac{1}{8}r$$
+这样做是为了画$y$为圆心的球，在球内找到$x$后再画以$x$为球心相同半径的球不会画出$B(a,r)$。只要要求这个球半径$<\frac{1}{4}r$即可。（画个图就看出来了）而现在这个球半径$< \frac{1}{8}r$。
+
+<div style="text-align:center">
+<img src="e5785bbda01e7e755db1a4314f364b8c.jpg" width="200">
+</div>
+
+由[[Untitled 2#^lemma131|lemma 1.3.1]]，$\exists x\in B(y,l)\text{ rational point}$。则：
+$$y\in B(x,l)$$
+更进一步地：
+$$y\in B\left( x,l+ \frac{1}{4}r \right)$$
+而我们一定有$B\left( x,l+ \frac{1}{8}r \right)\in B(a,r)$。这是因为$B(y,l),B(x,l)$两个球最大就延伸到略小于$\sim 4\cdot \frac{1}{8}r$的位置。我们还有$r- 4\cdot \frac{1}{8}=\frac{1}{2}r$的空隙。将这个空隙拆成两半分给$x$为圆心的球的半径就得到上式。
+
+而一定存在$s_{j}\text{ s.t. }l<s_{j}< l+ \frac{1}{4}r$。于是$y\in B(x,s_{j})$。
+>[!Right]
+>$\blacksquare$
+
+于是：
+
+>[!Proposition 1]
+>$\mathbb{R}^{n}$ with the natural topology is second countable.
+## Proof.
+这是因为$|\{ rational balls \}|=|\mathbb{Q}^{n}\times\mathbb{Q}^{+}|=|\mathbb{Q}|$
+>[!Right]
+>$\blacksquare$
 
 
 
