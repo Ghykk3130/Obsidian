@@ -1,10 +1,10 @@
 # Table of contents
 
 ## 1. Point-set topology
-1.1 [[Untitled 2#^56c0f4|Topology and subspace]]
-1.2 [[Untitled 2#^599821|Basis]]
-1.3 [[Untitled 2#^b7fdc8|Second and first countability]]
-1.4 [[Untitled 2#^370a40|Separation]]
+1.1 [[Lie Group#^56c0f4|Topology and subspace]]
+1.2 [[Lie Group#^599821|Basis]]
+1.3 [[Lie Group#^b7fdc8|Second and first countability]]
+1.4 [[Lie Group#^370a40|Separation]]
 
 # 1.1 Topology and subspace
 
@@ -127,7 +127,7 @@ $$B_{1}\cap B_{2}=U_{p\in B_{1}\cap B_{2}}B_{p}\in\mathcal{T}$$
 $$\cup_{\alpha}B_{\alpha}\in\mathcal{T}$$
 于是$\mathcal{T}$是一个拓扑。
 
-由[[Untitled 2#^63f197|theorem 1.2.1]]，显然$\mathcal{B}$是$\mathcal{T}$的一个基。
+由[[Lie Group#^63f197|theorem 1.2.1]]，显然$\mathcal{B}$是$\mathcal{T}$的一个基。
 >[!Right]
 >$\blacksquare$
 
@@ -184,7 +184,7 @@ $$B(y,l),\text{ s.t. }l < \frac{1}{4} min\{ d(y,a),d(y,B(a,r)^{c}) \}< \frac{1}{
 <img src="e5785bbda01e7e755db1a4314f364b8c.jpg" width="200">
 </div>
 
-由[[Untitled 2#^lemma131|lemma 1.3.1]]，$\exists x\in B(y,l)\text{ rational point}$。则：
+由[[Lie Group#^lemma131|lemma 1.3.1]]，$\exists x\in B(y,l)\text{ rational point}$。则：
 $$y\in B(x,l)$$
 更进一步地：
 $$y\in B\left( x,l+ \frac{1}{4}r \right)$$

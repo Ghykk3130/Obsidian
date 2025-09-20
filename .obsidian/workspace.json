@@ -83,12 +83,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Untitled 2.md",
+                "file": "Lie Group.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Untitled 2"
+              "title": "Lie Group"
             }
           },
           {
@@ -487,8 +487,10 @@
   },
   "active": "4046bd1e723b2ffb",
   "lastOpenFiles": [
+    "Lie Algebras.md",
+    "Lie Group.md",
+    "Maxwell-Boltzmann 分布.md",
     "群论.md",
-    "Untitled 2.md",
     "Untitled.md",
     "热力学平衡.md",
     "Pictures/e5785bbda01e7e755db1a4314f364b8c.jpg",
@@ -515,8 +517,6 @@
     "Pictures/5e2b8f48dced4df33b19a5d3a4c33d64.jpg",
     "Experimental/Cold amplifier.md",
     "Experimental/PID Control.md",
-    "不确定关系.md",
-    "Virial 定理.md",
     "Pictures/348cbd86049f4ea0c4b12fb534eece13.jpg",
     "Pictures/21474e58f25eb52e43f782b50970770c.jpg",
     "Pictures/884776f337f1aa951c057554c7df6007.jpg",
