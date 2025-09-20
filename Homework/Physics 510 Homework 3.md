@@ -85,8 +85,10 @@ Then I have:
 $$S(T,J)=b \frac{J+bT}{a+cT}- \frac{c}{2}\left( \frac{J+bT}{a+cT} \right)^{2}+AT+S_{0}$$
 Then:
 $$\begin{align}
-\left( \frac{\partial S}{\partial T} \right)_{J} & =b \frac{ab-cJ}{(a+cT)^{2}}-c \frac{J+bT}{a+cT} \frac{ab-cJ}{(a+cT)^{2}}+A \\
-\implies C_{J} & =T(b \frac{ab-cJ}{(a+cT)^{2}}-c \frac{J+bT}{a+cT} \frac{ab-cJ}{(a+cT)^{2}}+A)
+\left( \frac{\partial S}{\partial T} \right)_{J} & =b \frac{ab-cJ}{(a+cT)^{2}}-c \frac{J+bT}{a+cT} \frac{ab-cJ}{(a+cT)^{2}}+A  \\
+ & =\left( b- c \frac{J+bT}{a+cT} \right)\cdot  \frac{ab-cJ}{(a+cT)^{2}}+A \\
+ & =\frac{(ab-cJ)^{2}}{(a+cT)^{3}}+A\\
+\implies C_{J} & =T\left(\frac{(ab-cJ)^{2}}{(a+cT)^{3}}+A\right)
 \end{align}$$
 ## d).
 No. Because $S=S(T,J)$ is not in the natural variable. The proper thermodynamic potential should be: $U(S,x)\implies S(U,x)$, instead of $S(T,J)$.
@@ -219,18 +221,46 @@ I have:
 $$\begin{align}
  & \left( \frac{\partial \sigma}{\partial A} \right)_{T}= \frac{NkT}{(A-Nb)^{2}}- \frac{2aN^{2}}{A^{3}} \\
 \implies & \sigma=\int dA\left(  \frac{NkT}{(A-Nb)^{2}}- \frac{2aN^{2}}{A^{3}} \right) \\
- & =\frac{4aN^{2}}{A^{2}}- \frac{NkT}{A-Nb}+c(T)\text{ where c(T) is come function}
+ & =\frac{4aN^{2}}{A^{2}}- \frac{NkT}{A-Nb}+c(T,N)\text{ where c(T,N) is come function}
 \end{align}$$
 Then:
 $$\begin{align}
-\left( \frac{\partial \sigma}{\partial T} \right)_{A} & =- \frac{Nk}{A-Nb}+ \frac{dc}{dT}
+\left( \frac{\partial \sigma}{\partial T} \right)_{A} & =- \frac{Nk}{A-Nb}+ \frac{\partial c}{\partial T}
 \end{align}$$
 Know that:
 $$\left( \frac{\partial T}{\partial \sigma} \right)_{A}=- \frac{A-Nb}{Nk}\implies \left( \frac{\partial \sigma}{\partial T} \right)_{A}=- \frac{Nk}{A-Nb}$$
 Therefore:
-$$\frac{dc}{dt}=0\implies c=\text{const.}$$
+$$\frac{\partial c}{\partial T}=0\implies c=c(N)$$
 Then:
 $$\sigma(T,A)=\frac{4aN^{2}}{A^{2}}- \frac{NkT}{A-Nb}+c$$
-## d).
+# 5).
 There is a typo in the question. The correct Sackur-Tetrode equation is:
 $$S(U,V,N)=Nk\left( \ln\left(  \frac{V}{N}\left(  \frac{U}{N} \right)^{3/2}\left(  \frac{4\pi m}{3h^{2}} \right)^{3/2} \right)+ \frac{5}{2} \right)$$
+We first find $U=U(S,V,N)$:
+$$\begin{align}
+ & S(U,V,N)=Nk\left( \ln\left(  \frac{V}{N}\left(  \frac{U}{N} \right)^{3/2}\left(  \frac{4\pi m}{3h^{2}} \right)^{3/2} \right)+ \frac{5}{2} \right) \\
+\implies & \frac{S}{Nk}- \frac{5}{2}= \ln\left(  \frac{V}{N}\left(  \frac{U}{N} \right)^{3/2}\left(  \frac{4\pi m}{3h^{2}} \right)^{3/2}  \right) \\
+\implies & \exp\left(  \frac{S}{Nk}- \frac{5}{2} \right)=\frac{V}{N}\left(  \frac{U}{N} \right)^{3/2}\left(  \frac{4\pi m}{3h^{2}} \right)^{3/2} \\
+\implies & U=N\left(  \frac{N}{V} \right)^{2/3} \frac{3h^{2}}{4\pi m}\exp\left(  \frac{2}{3} \frac{S}{Nk}- \frac{5}{3} \right)
+\end{align}$$
+Then I have:
+$$\begin{align}
+T & =\left( \frac{\partial U}{\partial S} \right)_{V,N} \\
+ & =N \left(  \frac{N}{V}\right)^{2/3} \frac{3h^{2}}{4\pi m} \frac{2}{3} \frac{1}{Nk} \exp\left(  \frac{2}{3} \frac{S}{Nk}- \frac{5}{3} \right) \\
+ & =\left(  \frac{N}{V} \right)^{2/3} \frac{h^{2}}{2\pi m} \frac{1}{k}\exp\left(  \frac{2}{3} \frac{S}{Nk}- \frac{5}{3} \right)
+\end{align}$$
+Then:
+$$\begin{align}
+\implies &  \frac{2}{3} \frac{S}{Nk}- \frac{5}{3}= \ln\left(  \left(  \frac{V}{N}\right)^{2/3 } \frac{2\pi m}{h^{2}}kT  \right) \\
+\implies & S= \frac{3Nk}{2}\ln\left(  \left(  \frac{V}{N} \right)^{2/3} \frac{2\pi m}{h^{2}}kT \right)+ \frac{5}{2}Nk
+\end{align}$$
+Then substitute in $U$ to get:
+$$\begin{align}
+U & =\frac{3}{2 }NkT
+\end{align}$$
+Then:
+$$\begin{align}
+F(T,V,N) & =U(T,V,N)-TS(T,V,N) \\
+ & = \frac{3}{2}NkT-T\left(  \frac{3}{2}Nk\ln\left(  \left(  \frac{V}{N}\right)^{2/3} \frac{2\pi m}{h^{2}}kT \right)+ \frac{5}{2}Nk \right) \\
+ & = \frac{3}{2}NkT\left( 1- \ln\left(  \left(  \frac{V}{N}\right)^{2/3} \frac{2\pi m}{h^{2}}kT \right)  \right)- \frac{5}{2}NkT
+\end{align}$$
