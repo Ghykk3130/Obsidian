@@ -1,4 +1,14 @@
-# 1.1
+# Table of contents
+
+## 1. Point-set topology
+1.1 [[Untitled 2#^56c0f4|Topology and subspace]]
+1.2 [[Untitled 2#^599821|Basis]]
+1.3 [[Untitled 2#^b7fdc8|Second and first countability]]
+1.4 [[Untitled 2#^370a40|Separation]]
+
+# 1.1 Topology and subspace
+
+^56c0f4
 
 >[!Definition 1]
 >Given a set $S$, a topology on $S$ is $\mathcal{T}$ such that:
@@ -77,7 +87,9 @@ LHS属于RHS是显然。要证RHS属于LHS，取$B_{\alpha}=X$即可。
 ## Ex:
 考虑$\mathbb{R}$上的自然拓扑，即所有开集构成的拓扑。考虑$A=[0,1]$。则$A$在自然拓扑下不是开集。于是考虑$\mathcal{T}_{A}$中一个集合$\left( -\frac{1}{2}, \frac{1}{2} \right)\cap A=[0, \frac{1}{2})$。这是相对$A$的开集，却不是相对$\mathbb{R}$的开集。
 
-# 1.2
+# 1.2 Basis
+
+^599821
 
 >[! Definition 1]
 >Let $(S,\mathcal{T})$ be a topological space. $\mathcal{B}\subset\mathcal{T}$ is a basis if:
@@ -130,7 +142,9 @@ $$U\cap A=(\cup B_{\alpha})\cap A=\cup(B_{\alpha}\cap A)$$
 >[!Right]
 >$\blacksquare$
 
-# 1.3
+# 1.3 Second and first countablility
+
+^b7fdc8
 
 >[! Definition 1]
 >Let $(S,\mathcal{T})$ be a topological space. The topological space is said to be second countable if there exists a basis $\mathcal{B}$ such that $\mathcal{B}$ is countable. 
@@ -215,6 +229,38 @@ $$|\mathcal{B}|>|S| \ \rightarrow\leftarrow $$
 >Any second countable topological space is first countable.
 ## Proof.
 这是显然。令$(S,\mathcal{T})$为拓扑空间。任取$p\in S，p\in U\text{ open }$。取countable basis为neiborhood basis。则neiborhood basis也是countable的。
+>[!Right]
+>$\blacksquare$
+
+# 1.4 Separation
+
+^370a40
+
+>[!Definition 1]
+>A topological space $(S,\mathcal{T})$ is Hausdorff if 
+>$$\forall x,y\in S,x\neq y, \exists U,V \text{ open and disjoint s.t. } x\in U,y\in V$$
+
+>[!Definition 2]
+>A Hausdorff topological space $(S,\mathcal{T})$ is normal if
+>$$\forall F,G\subset S \text{ closed and disjoint },\exists U,V\subset S\text{ open and disjoint s.t. } F\subset U,\ G\subset V$$
+
+>[!Proposition 1]
+>Any singleton set in a Hausdorff topological space is closed.
+## Proof.
+任取$x\in S$。想要证明$S\backslash\{ x \}$为开集。任取$y\in S\backslash\{ x \}$。则：
+$$\exists U,V\text{ open and disjoint s.t. }y\in U,x\in V$$
+于是：
+$$y\in U\subset S\backslash\{ x \}$$
+因为集合内任意一点都存在一个小开集，所以$S\backslash\{ x \}$是开集。
+>[!Right]
+>$\blacksquare$
+
+>[!Proposition 2]
+>Any subspace of a Hausdorff topological space is Hausdorff.
+## Proof.
+考虑$(A,\mathcal{T}_{A})$为一子拓扑空间。任取$x,y\in A,\ x\neq y$。于是：
+$$\exists U,V\text{ open w.r.t. S and disjoint s.t. }x\in U,y\in V$$
+那么显然$U\cap A,V\cap A$还是disjoint的，并且也open w.r.t. $A$。
 >[!Right]
 >$\blacksquare$
 
