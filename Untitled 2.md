@@ -87,6 +87,8 @@ LHS属于RHS是显然。要证RHS属于LHS，取$B_{\alpha}=X$即可。
 
 >[!Theorem 1]
 >$\mathcal{B}$ is a basis if and only if any open set is a union of sets in $\mathcal{B}$.
+
+^theorem121
 ## Proof.
 ($\Rightarrow$):
 任取$A\in\mathcal{T}$，显然：
@@ -100,16 +102,59 @@ $$p\in B_{\alpha}\subset A$$
 >$\blacksquare$
 
 >[!Proposition 1]
->Let $(S,\mathcal{T})$ be a topological space. $\mathcal{B}$ is a basis if and only if:
+>Let $S$ be a set. $\mathcal{B}$ is a basis for some topology $\mathcal{T}$ if and only if:
 >- $S=\cup_{B\in\mathcal{B}}B$
 >- Given $B_{1},B_{2}\in\mathcal{B},p\in B_{1}\cap B_{2}\neq \phi$, $\exists B\in\mathcal{B}\text{ s.t. }p\in B\subset B_{1}\cap B_{2}$
 ## Proof.
 ($\Rightarrow$):
 若$\mathcal{B}$为一基，那么显然成立。
 ($\Leftarrow$):
-任取$A\text{ open}$。在$A$内任取一点$p$。因为$S=\cup B,B\in\mathcal{B}$，所以一定$\exists B^{'}\in\mathcal{B} \text{ s.t.}$
-$$p\in B^{'}\cap A$$
-于是取$B\in\mathcal{B}\text{ s.t. }p\in B\subset B^{'}\cap A$。
+首先需要将这个topology构造出来。令$\mathcal{T}=\{ A|A\text{ is a union of sets in }\mathcal{B} \}$。任取$B_{1},B_{2}\in \mathcal{T}$。令$p\in B_{1}\cap B_{2}$，$B_{p}\in \mathcal{T}\text{ s.t. }p\in B\subset B_{1}\cap B_{2}$。则：
+$$B_{1}\cap B_{2}=U_{p\in B_{1}\cap B_{2}}B_{p}\in\mathcal{T}$$
+接下来，令$B_{\alpha}$为任意一个$\mathcal{B}$中的collection。于是显然：
+$$\cup_{\alpha}B_{\alpha}\in\mathcal{T}$$
+于是$\mathcal{T}$是一个拓扑。
+
+由[[Untitled 2#^63f197|theorem 1.2.1]]，显然$\mathcal{B}$是$\mathcal{T}$的一个基。
+>[!Right]
+>$\blacksquare$
+
+>[!Proposition 2]
+>Let $(S,\mathcal{T})$ be a topological space. Let $(A,\mathcal{T}_{A})$ be a subspace. Let $\{ B_{\alpha} \}$ be a basis of $(S,\mathcal{T})$. Then $\{ B_{\alpha}\cap A \}$ is a basis of $(A,\mathcal{T}_{A})$.
+## Proof.
+任取$U\cap A\in\mathcal{T}_{A}$，其中$U\in\mathcal{T}$。则存在一些$B_{\alpha}$使得：
+$$U=\cup B_{\alpha}$$
+于是：
+$$U\cap A=(\cup B_{\alpha})\cap A=\cup(B_{\alpha}\cap A)$$
+而$B_{\alpha}\cap A\in\mathcal{T}_{A}$。
+>[!Right]
+>$\blacksquare$
+
+# 1.3
+
+我们定义，$\mathbb{R}^{n}$中一点$x$如果每个分量都是有理数，即$x\in\mathbb{Q}^{n}$，那么称该点为rational point。
+
+>[!Lemma 1]
+>Every open set in $\mathbb{R}^{n}$ contains a rational point.
+## Proof.
+任取一开集$U\in \mathbb{R}^{n} \text{ open}$。任取$U$内一点$p$，则一定可以作一个n维球$B(p,r)\subset U$。则：
+$$x\in B(p,r)\implies d(x,p)<r\implies \sum_{j}(x_{j}-p_{j})^{2}<r^{2}$$
+因为有理数在$\mathbb{R}$中稠密，一定存在：
+$$\exists x_{j}\in \mathbb{Q}\text{ s.t. }(x_{j}-p_{j})^{2}< \frac{r^{2}}{n}\ ,\forall j$$
+>[!Right]
+>$\blacksquare$
+
+>[!Proposition 1]
+>Let $\mathcal{B}_{rat}$ be the set of all balls with rational centers and radii in $\mathbb{R}^{n}$. Then $\mathcal{B}_{rat}$is a basis of $(\mathbb{R}^{n},\text{narual topology on }\mathbb{R}^{n})$
+## Proof.
+因为$\mathbb{R}^{n}$上任意一个开集都是球的并，所以只需要证明任意一个球是有理球的并即可。
+
+任取$B(a,r)$。在其中每个有理点$x\in B(a,r)\cap\mathbb{Q}^{n}$，我们以$x$为中心构造球$B(x,s)$，其中$s= \frac{1}{4}min\{ d(x,a),d(x,B(a,r)^{c}) \}$。
+
+STS $B(a,r)=\cup_{x\in B(a,r)\cap\mathbb{Q}^{n}}B(x,s)$。显然，RHS属于LHS。接下来来看是否LHS属于RHS。任取$y\in B(a,r)$。想证明：
+$$\exists x\in B(a,r)\cap\mathbb{Q}^{n}\text{ s.t. }y\in B(x,s)$$
+因为如果想让$y$处于球$B(x,s)$内，我们必须让$x$也处于球$B(y,s)$内。我们不妨以$y$为球心作球来找$x$。
+
 
 
 
