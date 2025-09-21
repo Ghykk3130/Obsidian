@@ -83,12 +83,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Lie Group.md",
+                "file": "热力学平衡.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Lie Group"
+              "title": "热力学平衡"
             }
           },
           {
@@ -487,8 +487,9 @@
   },
   "active": "4046bd1e723b2ffb",
   "lastOpenFiles": [
-    "Lie Algebras.md",
+    "热力学第一定律.md",
     "Lie Group.md",
+    "Lie Algebras.md",
     "Maxwell-Boltzmann 分布.md",
     "群论.md",
     "Untitled.md",
@@ -500,7 +501,6 @@
     "Homework/Physics 510 Homework 2.md",
     "Experimental/VTI.md",
     "Homework/Physics 402 real world optics 2.md",
-    "热力学第一定律.md",
     "Degenerate Fermi Gas.md",
     "Lagrangian Formulation of EM.md",
     "Maxwell Stress Tensor and Momentum.md",
