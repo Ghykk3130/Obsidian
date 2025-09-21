@@ -117,6 +117,8 @@ $$p\in B_{\alpha}\subset A$$
 >Let $S$ be a set. $\mathcal{B}$ is a basis for some topology $\mathcal{T}$ if and only if:
 >- $S=\cup_{B\in\mathcal{B}}B$
 >- Given $B_{1},B_{2}\in\mathcal{B},p\in B_{1}\cap B_{2}\neq \phi$, $\exists B\in\mathcal{B}\text{ s.t. }p\in B\subset B_{1}\cap B_{2}$
+
+^proposition121
 ## Proof.
 ($\Rightarrow$):
 若$\mathcal{B}$为一基，那么显然成立。
@@ -263,6 +265,23 @@ $$\exists U,V\text{ open w.r.t. S and disjoint s.t. }x\in U,y\in V$$
 那么显然$U\cap A,V\cap A$还是disjoint的，并且也open w.r.t. $A$。
 >[!Right]
 >$\blacksquare$
+
+# 1.5 Product topology
+
+考虑两个拓扑空间$X,Y$。我们在其中分别取开集$U,V$，构成一个集合$\mathcal{B}=\{ U\times V|U\subset X,V\subset Y,\ U,V\text{ open} \}$
+
+容易证明：
+$$(U_{1}\times V_{1})\cap(U_{2}\times V_{2})=(U_{1}\cap U_{2})\times(V_{1}\cap V_{2})\in\mathcal{B}$$
+既然这个$\mathcal{B}$中任意两个集合之交仍属于$\mathcal{B}$，那么取$\mathcal{B}$中所有集合的任意并构成一个集合$\mathcal{T}$，那么$\mathcal{T}$就是一个拓扑。这就是[[Lie Group#^bab950|proposition 1.2.1]]。那么$\mathcal{B}$就是拓扑$\mathcal{T}$的基。
+
+>[!Definition/proposition 1]
+>Let $X,Y$ be two topological spaces. Then $X\times Y$ is a topological space. $\{ U\times V|U\subset X,V\subset Y,U,V\text{open} \}$ forms a basis of $X\times Y$. Call this the basis of the product topology.
+## Remark
+$U\times V$指的是$\{ (x,y)|x\in U,y\in V \}$。
+
+>[!Proposition 2]
+>Let $X,Y$ be topological spaces. $\{ U_{i} \},\{ V_{j} \}$ be bases of $X,Y$. Then
+>$\{ U_{i}\times V_{j} \}$ is a basis of $X\times Y$.
 
 
 
