@@ -307,5 +307,18 @@ $$V_{1},V_{2}\text{ disjoint, open, s.t. }y_{1}\in V_{1},y_{2}\in V_{2}$$
 >[!Right]
 >$\blacksquare$
 
+>[!Proposition 4]
+>Let $X_{1},\dots,X_{N}$ be topological spaces. Define the projection map
+>$$\pi_{\alpha_{i}}:\prod_{\alpha} X_{\alpha}\rightarrow X_{\alpha_{i}},(x_{1},\dots,x_{N}) \mapsto x_{\alpha_{i}}$$
+>Then $\pi_{\alpha_{i}}$ is continuous.
+## Proof.
+这是显然。因为任取一个开集$U\subset X_{\alpha_{i}}$，其原像为：
+$$X_{1}\times \dots \times U\times X_{\alpha_{i+1}}\times\dots \times X_{N}$$
+这显然是一个开集。
+>[!Right]
+>$\blacksquare$
+
+
+
 
 
