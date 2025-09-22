@@ -318,6 +318,20 @@ $$X_{1}\times \dots \times U\times X_{\alpha_{i+1}}\times\dots \times X_{N}$$
 >[!Right]
 >$\blacksquare$
 
+# 2.1 Topological manifolds
+
+>[!Definition 1]
+>Given topological spaces $X,Y$, a function $f:X\rightarrow Y$. $f$ is a homeomorphism if:
+>- $f$ is bijective
+>- $f$ is continuous
+>- $f^{-1}$ is continuous
+## Ex:
+考虑$X=[0,1]\text{ with topology }\{ [a,b) \}$， $Y=[0,1]\text{ with natural topology}$， $f(x)=x$。则$f$不是一个homeomorphism。
+
+显然，$f$是双射的。接下来验证$f$是连续的。显然要验证连续性只需要取一个basis中的开集验证即可。我们取$(a,b)$。则：
+$$f^{-1}((a,b))=(a,b)=\cup_{n}[a+1/ n,b)$$
+但是$f^{-1}$不是连续的。取$[a,b) \subset X\text{ open}$。则其原像为$[a,b)\subset Y$。但这显然不open。
+
 
 
 
