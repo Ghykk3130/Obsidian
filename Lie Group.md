@@ -282,6 +282,20 @@ $U\times V$指的是$\{ (x,y)|x\in U,y\in V \}$。
 >[!Proposition 2]
 >Let $X,Y$ be topological spaces. $\{ U_{i} \},\{ V_{j} \}$ be bases of $X,Y$. Then
 >$\{ U_{i}\times V_{j} \}$ is a basis of $X\times Y$.
+## Proof.
+回忆起：$X\times Y$中的拓扑是所有$X,Y$中开集的Caetesian product生成的。任取一个$X\times Y$中开集，一定可以拆成很多Cartesian product的并。只需要证明每个Cartesian product可以由$U_{i}\times V_{j}$并出来即可。
+
+任取$U\times V \subset X\times Y,\ U,V\text{ open}$。令$U=\cup_{i}U_{i},V=\cup_{j}V_{j}$。容易证明：
+$$(\cup_{i}U_{i})\times(\cup_{j}V_{j})=\cup_{i,j}(U_{i}\times V_{j})$$
+>[!Right]
+>$\blacksquare$
+
+>[!Corollary 1]
+>The product of two second countable topological spaces is second countable.
+
+>[!Proposition 3 ]
+>The product of two Hausdorff topological spaces is Hausdorff.
+
 
 
 
