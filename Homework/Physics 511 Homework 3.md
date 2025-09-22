@@ -61,4 +61,41 @@ x & 0 & 0 & 0 \\
 So it has degeneracy in its spectrum. Each eigensubspace has a degree of degeneracy of 2.
 
 ## ii).
-Since $A,B$ are block diagonalized, it suffices 
+Since $A,B$ are block diagonalized, it suffices to show the two blocks commute respectively. For the top right block, I have:
+$$\begin{pmatrix}
+0 & x \\
+x & 0
+\end{pmatrix}\begin{pmatrix}
+q & 0 \\
+0 & q
+\end{pmatrix}=q \begin{pmatrix}
+0 & x \\
+x & 0
+\end{pmatrix} = \begin{pmatrix}
+q & 0  \\
+0 & q
+\end{pmatrix}\begin{pmatrix}
+0 & x \\
+x & 0
+\end{pmatrix}$$
+For the bottom left block, I have:
+$$\begin{pmatrix}
+0 & x \\
+x & 0
+\end{pmatrix}\begin{pmatrix}
+z & 0 \\
+0 & z
+\end{pmatrix}=z \begin{pmatrix}
+0 & x \\
+x & 0
+\end{pmatrix} = \begin{pmatrix}
+z & 0  \\
+0 & z
+\end{pmatrix}\begin{pmatrix}
+0 & x \\
+x & 0
+\end{pmatrix}$$
+Then obviously $[A,B]=0$.
+
+To further find an eigenbasis that diagonalize both matrix, just work in the two 2-dimensional eigenspaces of $B$ and choose some new basis for these two subspaces to diagonalize the top right and bottom left blocks of $A$.
+
