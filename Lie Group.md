@@ -332,6 +332,22 @@ $$X_{1}\times \dots \times U\times X_{\alpha_{i+1}}\times\dots \times X_{N}$$
 $$f^{-1}((a,b))=(a,b)=\cup_{n}[a+1/ n,b)$$
 但是$f^{-1}$不是连续的。取$[a,b) \subset X\text{ open}$。则其原像为$[a,b)\subset Y$。但这显然不open。
 
+>[!Definition 3]
+>Let $M$ be a topological space. We say $M$ is locally Euclidean of dimension n if
+>- $\forall p\in M$, there is a neighborhood $U\ni p\text{ open}$, a homeomorphism $\phi:U\rightarrow \mathbb{R}^n$ onto some open set in $\mathbb{R}^n$
+>
+>Call $(U,\phi)$ a chart.
+
+>[!Definition 4]
+>Let $M$ be a topological space. We call $M$ a topological manifold if it is:
+>- Hausdorff
+>- second countable
+>- locally Euclidean
+## Ex:
+- $\mathbb{R}^n$是一个拓扑流形。任取$p\in \mathbb{R}^n$，考虑chart $(\mathbb{R}^n,\mathbb{1})$即可。$\mathbb{R}^n$显然是Hausdorff与second countable的。
+- 考虑$\mathbb{R}^n$的任意子空间$A$。则$A$也是一个拓扑流形。对任意一点$p\in A$，取chart $(A,\mathbb{1}_{A})$。因为Hausdorff和second countable的性质都会自动继承到子空间，所以$A$自然具有这两种性质。
+
+
 
 
 
