@@ -14,7 +14,7 @@
 >Given a set $S$, a topology on $S$ is $\mathcal{T}$ such that:
 >- $\phi,S\in\mathcal{T}$
 >- $A_{\lambda}\in S\implies\cup_{\lambda}A_{\lambda}\in \mathcal{T}$
->- $A_{\lambda}\in S\implies\cap_{\lambda\in\{1,\dots,N\}}A_{\lambda}\in \mathcal{T}$
+>- $A_{\lambda}\in S\implies\cap_{\lambda\in \text{finite set}}A_{\lambda}\in \mathcal{T}$
 
 >[!Definition 2]
 >Given a topological space $(A,\mathcal{T})$, $A\in S$ is open if $A\in\mathcal{T}$.
@@ -347,8 +347,23 @@ $$f^{-1}((a,b))=(a,b)=\cup_{n}[a+1/ n,b)$$
 - $\mathbb{R}^n$是一个拓扑流形。任取$p\in \mathbb{R}^n$，考虑chart $(\mathbb{R}^n,\mathbb{1})$即可。$\mathbb{R}^n$显然是Hausdorff与second countable的。
 - 考虑$\mathbb{R}^n$的任意子空间$A$。则$A$也是一个拓扑流形。对任意一点$p\in A$，取chart $(A,\mathbb{1}_{A})$。因为Hausdorff和second countable的性质都会自动继承到子空间，所以$A$自然具有这两种性质。
 
+## Ex:
+$A=\{ (x,y)\in \mathbb{R}^{2}|y=x^{2/3} \}$是一个1维拓扑流形。因为$\mathbb{R}^{2}$是Hausdorff且second countable的，那么$A$作为$\mathbb{R}^{2}$的子空间也是Hausdorff与second countable的。
 
+接下来构造chart。任取$p=(x,y)\in A$。考虑chart $(A,\phi:(x,y)\mapsto x)$ 。画个$y=x^{2/3}$的图我们知道这一定是个双射。
+<div style="text-align:center">
+<img src="Pasted image 20250921214322.png" width="100">
+</div>
+接下来验证locally Euclidean。homeomorphism的codomian是$\mathbb{R}$。任取$\mathbb{R}$的一个基$(a,b)$。则原像为：
+$$\phi ^{-1}((a,b))=\{ (x,y)|y=x^{2/3},x\in(a,b) \}$$
+画个图可以知道，一定存在一个开集$B\in \mathbb{R}^{2}\text{ s.t. }B\cap A=\phi^{-1}((a,b))$。因为$B\cap A$是oepn relative to $A$的，所以$\phi$连续。
 
+考虑$\phi ^{-1}$的连续性。取$A$的一个基$B\cap A$，其中$B\in \mathbb{R}^{2}$为一开球。该开球一定与cusp相交处有限多条线段。那么考虑这些线段在$\phi ^{-1}$下的原像，即$(\phi ^{-1})^{-1}(\text{these lines})=\phi(\text{these lines})$。即将它们投影到$x$轴上。显然这些投影都是open relative to $\mathbb{R}$的。
 
+## Ex:
+考虑一个$\mathbb{R}^{2}$中的十字。它不是topological manifold。因为在$p$点不locally Euclidean。
+<div style="text-align:center">
+<img src="Pasted image 20250921220023.png" width="100">
+</div>
 
 
