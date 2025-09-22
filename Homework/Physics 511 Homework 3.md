@@ -99,3 +99,51 @@ Then obviously $[A,B]=0$.
 
 To further find an eigenbasis that diagonalize both matrix, just work in the two 2-dimensional eigenspaces of $B$ and choose some new basis for these two subspaces to diagonalize the top right and bottom left blocks of $A$.
 
+## iii).
+Consider the top left block of $A$. We know that the eigenvalues are $\lambda=\pm x$. Then we calculate the eigenvectors restricted to this invariant subspace. If $\lambda=x$, then:
+$$\begin{align}
+ & (A-\lambda I)v=0 \\
+\implies & \begin{pmatrix}
+x & -x \\
+-x & x
+\end{pmatrix}v=0 \\
+\implies & \begin{pmatrix}
+x & -x \\
+0 & 0
+\end{pmatrix}v=0 \\
+\implies & v= \frac{1}{\sqrt{ 2 }} \begin{pmatrix}
+1 \\
+1
+\end{pmatrix}
+\end{align}$$
+Similarly, if $\lambda=-x$, I have:
+$$\begin{align}
+ & \begin{pmatrix}
+-x & -x \\
+-x & -x
+\end{pmatrix}v=0 \\
+\implies & \begin{pmatrix}
+-x & -x \\
+0 & 0
+\end{pmatrix}v=0 \\
+\implies & v= \frac{1}{\sqrt{ 2 }}\begin{pmatrix}
+1 \\
+-1
+\end{pmatrix}
+\end{align}$$
+If we write it in terms of the basis of the whole space, these two eigenvectors are:
+$$\frac{1}{\sqrt{ 2 }}(\ket{1} \pm \ket{2} )$$
+
+Similarly, if we work on the bottom right block, we still compute:
+$$(A-\lambda I)v=0$$
+Since this block is exactly the same as the top left block, and the eigenvalues are the same, we obtain the same representation of eigenbvectos:
+$$\frac{1}{\sqrt{ 2 }}\begin{pmatrix}
+1 \\
+\pm 1
+\end{pmatrix}$$
+But since this block is spanned by $\ket{3},\ket{4}$, the eigenvectors are:
+$$\frac{1}{\sqrt{ 2 }}(\ket{3} \pm \ket{4} )$$
+Note that we just choose new bases in the eigensubspaces of $B$, the representation of $B$ should be unchanged, meaning that $B$ is still diagonalized. Then the common eigenbasis is:
+$$\frac{1}{\sqrt{ 2 }}(\ket{1} \pm \ket{2} ), \frac{1}{\sqrt{ 2 }}(\ket{3} \pm \ket{4} )$$
+# 3.
+## a).
