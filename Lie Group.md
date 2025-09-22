@@ -295,7 +295,17 @@ $$(\cup_{i}U_{i})\times(\cup_{j}V_{j})=\cup_{i,j}(U_{i}\times V_{j})$$
 
 >[!Proposition 3 ]
 >The product of two Hausdorff topological spaces is Hausdorff.
+## Proof.
+任取$(x_{1},y_{1}),(x_{2},y_{2})\in X\times Y,(x_{1},y_{1})\neq (x_{2},y_{2})$。
 
+若$x_{1}\neq x_{2},y_{1}\neq y_{2}$，则取：
+$$U_{1},U_{2}\text{ disjoint, open, s.t. }x_{1}\in U_{1},x_{2}\in U_{2}$$
+$$V_{1},V_{2}\text{ disjoint, open, s.t. }y_{1}\in V_{1},y_{2}\in V_{2}$$
+于是显然$(x_{1},y_{1})\in U_{1}\times V_{1},(x_{2},y_{2})\in U_{2}\times V_{2}$，且$(U_{1}\times V_{1})\cap(U_{2}\times V_{2})=\phi$。
+
+若WLOG $x_{1}=x_{2},y_{1}\neq y_{2}$，则因为$V_{1}\cap V_{2}=\phi$，所以上述论证仍然成立。
+>[!Right]
+>$\blacksquare$
 
 
 
