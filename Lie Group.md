@@ -266,6 +266,28 @@ $$\exists U,V\text{ open w.r.t. S and disjoint s.t. }x\in U,y\in V$$
 >[!Right]
 >$\blacksquare$
 
+>[!Definition 3]
+>Let $S$ be a topological space. S is connect if
+>- there exists $U,V\subset S\text{ open, nonempty, disjoint s.t. }S=U\cup V$
+
+>[!Proposition 3]
+>A subspace $A\subset S$ is connect if and only if there exist open sets $U,V\subset S$ such that
+>- $U\cap A\neq \phi,V\cap A \neq \phi$
+>- $U\cap V\cap A=\phi$
+>- $A\subset U\cup V$
+## Proof.
+($\Leftarrow$):
+容易证明：
+$$(U\cap A)\cap(V\cap A)=\phi,(U\cap A)\cup(V\cap A)=A$$
+而$U\cap A,V\cap A$都是open relative to $A$的。于是$A$不连通。
+($\Rightarrow$):
+若$A$不连通，则$A$中一定存在两个open sets $U\cap A,V\cap A\text{ nonempty},U,V\subset S\text{ open}$ such that:
+$$(U\cap A)\cap(V\cap A)=\phi,(U\cap A)\cup(V\cap A)=A$$
+于是上面三条性质便是显然。
+>[!Right]
+>$\blacksquare$
+
+
 # 1.5 Product topology
 
 考虑两个拓扑空间$X,Y$。我们在其中分别取开集$U,V$，构成一个集合$\mathcal{B}=\{ U\times V|U\subset X,V\subset Y,\ U,V\text{ open} \}$
