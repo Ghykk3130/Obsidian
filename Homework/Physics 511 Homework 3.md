@@ -316,7 +316,7 @@ $$\begin{align}
  & = \frac{1}{\pi}\int dy \psi ^{*}(x+y,t)\psi(x-y,t)2\pi\delta(2y) \\
  & = \frac{1}{\pi}\int dy \psi ^{*}(x+y,t)\psi(x-y,t) \pi\delta(y) \\
  & =  \frac{1}{\pi}\pi \psi ^{*}(x,t)\psi(x,t) \\
- & = |\psi(x,y)|^{2} 
+ & = |\psi(x,t)|^{2} 
 \end{align}$$
 ## b).
 Know that:
