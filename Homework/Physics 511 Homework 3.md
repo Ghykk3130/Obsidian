@@ -175,7 +175,7 @@ $$\begin{align}
 
 Similarly, we know that:
 $$\begin{align}
-\langle p \rangle & =\int_{-\infty}^{\infty}dx \psi(x)^{*}p^{2}\psi(x) \\
+\langle p^{2} \rangle & =\int_{-\infty}^{\infty}dx \psi(x)^{*}p^{2}\psi(x) \\
  & = \int dx\psi ^{*}(x)\left( - \hbar^{2} \frac{\partial^{2}}{\partial x^{2}} \right) \psi(x)
 \end{align}$$
 We compute:
@@ -208,3 +208,59 @@ $$\begin{align}
  & = \frac{\hbar^{2}}{\pi^{1/2}d^{2}}(\sqrt{ \pi }-1)
 \end{align}$$
 ## b).
+I have:
+$$\begin{align}
+\langle p \rangle & = \bra{\psi} p\ket{\psi}  \\
+ & = \int_{-\infty}^{\infty}dp \bra{\psi} p\rangle \bra{p} p\ket{\psi}  \\
+ & =\int dp \bra{\psi} p\rangle p \bra{p} \psi\rangle \\
+ & =\int dpp |\psi(p)|^{2}
+\end{align}$$
+Know that:
+$$\begin{align}
+|\psi(p)|^{2} & = \frac{d}{\hbar \sqrt{ \pi }}\exp\left(  - \frac{(p-\hbar k)^{2}d^{2}}{\hbar^{2}} \right)
+\end{align}$$
+Then it suffices to compute:
+$$\begin{align}
+\int dp p \exp\left(  - \frac{(p-\hbar k)^{2}}{\hbar^{2}}d^{2} \right)  & =\int dp(p-\hbar k)\exp\left(  - \frac{( p-\hbar k)^{2}}{\hbar^{2}}d^{2} \right)+ \int dp \hbar k \exp\left(  - \frac{(p-\hbar k)^{2}}{\hbar^{2}}d^{2} \right) \\
+ &= \int dp \hbar k\exp\left(  - \frac{( p- \hbar k)^{2}}{\hbar^{2}}d^{2} \right)
+\end{align}$$
+This is again because $\int dp(p-\hbar k)\exp\left(  - \frac{( p- \hbar k)^{2}}{\hbar^{2}}d^{2} \right)=\int d(p-\hbar k)(p-\hbar k)\exp\left(  - \frac{(p-\hbar k)^{2}}{\hbar^{2}}d^{2} \right)$, and $(p-\hbar k)\exp\left(  - \frac{( p- \hbar k)^{2}}{\hbar^{2}}d^{2} \right)$ is odd with respect to $p-\hbar k$.
+
+Then:
+$$\begin{align}
+\int dp\hbar k\exp\left(  - \frac{(p-\hbar k)^{2}}{\hbar^{2}}d^{2} \right)  & =\hbar k \sqrt{ \pi } \frac{\hbar}{d}  \\
+ & =\sqrt{ \pi } \frac{\hbar^{2}k}{d}
+\end{align}$$
+Therefore:
+$$\begin{align}
+\langle p \rangle & = \frac{d}{\hbar \sqrt{ \pi }}\sqrt{ \pi } \frac{\hbar^{2}k}{d} \\
+ & =\hbar k
+\end{align}$$
+
+Next, we consider:
+$$\begin{align}
+\langle p^{2} \rangle & =\int_{-\infty}^{\infty} dp p^{2}|\psi(p)|^{2} \\
+ & =\frac{d}{\hbar \sqrt{ \pi }} \int dp p^{2} \exp\left(  -  \frac{(p-\hbar k)^{2}d^{2}}{\hbar^{2}}  \right) \\
+ & =\frac{d}{\hbar \sqrt{ \pi }} \int dpp^{2}((p-\hbar k)^{2}+2\hbar kp-\hbar^{2}k^{2})\exp\left(  - \frac{(p-\hbar k)^{2}d^{2}}{\hbar^{2}} \right)
+\end{align}$$
+We compute:
+$$\begin{align}
+\int dpp^{2}(p-\hbar k)^{2}\exp\left( - \frac{(p-\hbar k)^{2}d^{2}}{\hbar^{2}} \right) & = \frac{h^{3}}{d^{3}}\int_{-\infty}^{\infty} d\left( (p-\hbar k) \frac{d}{\hbar}  \right)(p-\hbar k)^{2} \frac{d^{2}}{\hbar^{2}} \exp\left( - \frac{(p-\hbar k)^{2}d^{2}}{\hbar^{2}} \right) \\
+ & =2\frac{h^{3}}{d^{3}}\int_{0}^{\infty} d\left( (p-\hbar k) \frac{d}{\hbar}  \right)(p-\hbar k)^{2} \frac{d^{2}}{\hbar^{2}} \exp\left( - \frac{(p-\hbar k)^{2}d^{2}}{\hbar^{2}} \right) \\
+ & = \frac{\hbar^{3}}{d^{3}} 2 \Gamma(2) \\
+ & =2 \frac{h^{3}}{d^{3}}
+\end{align}$$
+Then we have:
+$$\begin{align}
+\int dpp^{2}\exp\left( - \frac{(p-\hbar k)^{2}d^{2}}{\hbar^{2}} \right) & = \frac{\hbar^{3}}{d^{3}}2+ 2\hbar k\sqrt{ \pi } \frac{\hbar^{2}k}{d}- \hbar^{2}k^{2} \sqrt{ \pi } \frac{\hbar}{d} \\
+ & =2 \frac{\hbar^{3}}{d^{3}}+ \sqrt{ \pi } \frac{\hbar^{3}k^{2}}{d}
+\end{align}$$
+Then:
+$$\begin{align}
+\langle p^{2} \rangle & = \frac{d}{\hbar \sqrt{ \pi }}\left(  2 \frac{\hbar^{3}}{d^{3}}+ \sqrt{ \pi } \frac{\hbar^{3}k^{2}}{d} \right) \\
+ & = \frac{2}{\sqrt{ \pi }} \frac{\hbar^{2}}{d^{2}}+ \hbar^{2}k^{2}
+\end{align}$$
+Then:
+$$\langle p^{2} \rangle- \langle p \rangle^{2}= \frac{2}{\sqrt{ \pi }} \frac{\hbar^{2}}{d^{2}}$$
+These results are all consistent with $a).$
+
