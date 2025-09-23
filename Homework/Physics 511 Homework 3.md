@@ -26,11 +26,11 @@ $$X=\frac{1}{\sqrt{ 2 }}\begin{pmatrix}
 ## b).
 $$\begin{align}
 XX^{^{\dagger}} & = \frac{1}{\sqrt{ 2 }}\begin{pmatrix}
-1 & i  \\
- 1 & -i 
+1 & -i  \\
+ 1 & i 
 \end{pmatrix}\frac{1}{\sqrt{ 2 }}\begin{pmatrix}
 1 & 1 \\
--i & i
+i & -i
 \end{pmatrix} \\
  & =\frac{1}{2}\begin{pmatrix}
 2 & 0 \\
@@ -210,6 +210,8 @@ $$\begin{align}
 \langle p^{2}\rangle- \langle p \rangle^{2} & = \frac{1}{2} \frac{\hbar^{2}}{d^{2}}+k^{2}\hbar^{2}- k^{2}\hbar^{2} \\
  & = \frac{1}{2} \frac{\hbar^{2}}{d^{2}}
 \end{align}$$
+Then:
+$$\Delta p= \sqrt{ \frac{1}{2} } \frac{\hbar}{d}$$
 ## b).
 I have:
 $$\begin{align}
@@ -266,8 +268,9 @@ $$\begin{align}
 \end{align}$$
 Then:
 $$\langle p^{2} \rangle- \langle p \rangle^{2}= \frac{1}{2} \frac{\hbar^{2}}{d^{2}}$$
+Then:
+$$\Delta p= \sqrt{ \frac{1}{2} } \frac{\hbar}{d}$$
 These results are all consistent with $a).$
-
 ## c).
 We need to compute $\langle x^{2} \rangle- \langle x \rangle^{2}$. 
 
