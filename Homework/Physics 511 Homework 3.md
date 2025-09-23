@@ -192,20 +192,23 @@ This is because again $x\exp\left(  - \frac{x^{2}}{d^{2}} \right)$ is odd.
 
 Then it suffices to compute:
 $$\begin{align}
-\int_{-\infty}^{\infty}dx x^{2}\exp\left( - \frac{x^{2}}{d^{2}} \right) & =2\int_{0}^{\infty}dx x^{2}\exp\left( - \frac{x^{2}}{d^{2}} \right) \\
- & =2 d^{3}\int d\left(  \frac{x}{d} \right) \frac{x^{2}}{d^{2}}\exp\left(  - \frac{x^{2}}{d^{2}} \right) \\
- & = 2d^{3}\Gamma(2) \\
- & = 2d^{3}
+\int_{-\infty}^{\infty}dx x^{2}\exp\left( - \frac{x^{2}}{d^{2}} \right) & = d^{3}\int dt t^{2} \exp(-t^{2}) \\
+ & =d^{3} 2 \int_{0}^{\infty}dtt^{2} \exp(-t^{2}) \\
+ & =d^{3}2 \int \frac{1}{2} d(t^{2})(t^{2})^{1/2}\exp(-t^{2}) \\
+ & =d^{3}\int d(t^{2})(t^{2})^{-1/2}\exp(-t^{2}) \\
+ & = d^{3} \Gamma\left( \frac{3}{2} \right) \\
+ & =d^{3} \frac{1}{2} \Gamma\left(  \frac{1}{2} \right) \\
+ & = \frac{\sqrt{ \pi }}{2}d^{3}
 \end{align}$$
 Therefore:
 $$\begin{align}
-\langle p^{2} \rangle & = \frac{-\hbar^{2}}{\pi^{1/2}d}\left(  \frac{1}{d}- \sqrt{ \pi } \frac{1}{d}- \sqrt{ \pi }dk^{2} \right) \\
- & =\hbar^{2}\left(  \frac{1}{\pi^{1/2}d^{2}}( \sqrt{ \pi }-1) +k^{2} \right)
+\langle p^{2} \rangle & = - \frac{\hbar^{2}}{\pi^{1/2}d}\left(  \frac{1}{d^4} \frac{\sqrt{ \pi }}{2}d^{3}- \left(  \frac{1}{d^{2}}+ k^{2} \right)d\sqrt{ \pi } \right) \\
+ & = \frac{1}{2} \frac{\hbar^{2}}{d^{2}}+ k^{2}\hbar^{2}
 \end{align}$$
 Then I have:
 $$\begin{align}
-\langle p^{2}\rangle- \langle p \rangle^{2} & =\hbar^{2}\left(  \frac{1}{\pi^{1/2}d^{2}}(\sqrt{ \pi }-1)+ k^{2} \right) - \hbar^{2}k^{2} \\
- & = \frac{\hbar^{2}}{\pi^{1/2}d^{2}}(\sqrt{ \pi }-1)
+\langle p^{2}\rangle- \langle p \rangle^{2} & = \frac{1}{2} \frac{\hbar^{2}}{d^{2}}+k^{2}\hbar^{2}- k^{2}\hbar^{2} \\
+ & = \frac{1}{2} \frac{\hbar^{2}}{d^{2}}
 \end{align}$$
 ## b).
 I have:
@@ -243,24 +246,63 @@ $$\begin{align}
  & =\frac{d}{\hbar \sqrt{ \pi }} \int dp p^{2} \exp\left(  -  \frac{(p-\hbar k)^{2}d^{2}}{\hbar^{2}}  \right) \\
  & =\frac{d}{\hbar \sqrt{ \pi }} \int dp((p-\hbar k)^{2}+2\hbar kp-\hbar^{2}k^{2})\exp\left(  - \frac{(p-\hbar k)^{2}d^{2}}{\hbar^{2}} \right)
 \end{align}$$
-We compute:
+Borrowing the result from $a).$ We compute:
 $$\begin{align}
-\int dpp^{2}(p-\hbar k)^{2}\exp\left( - \frac{(p-\hbar k)^{2}d^{2}}{\hbar^{2}} \right) & = \frac{h^{3}}{d^{3}}\int_{-\infty}^{\infty} d\left( (p-\hbar k) \frac{d}{\hbar}  \right)(p-\hbar k)^{2} \frac{d^{2}}{\hbar^{2}} \exp\left( - \frac{(p-\hbar k)^{2}d^{2}}{\hbar^{2}} \right) \\
- & =2\frac{h^{3}}{d^{3}}\int_{0}^{\infty} d\left( (p-\hbar k) \frac{d}{\hbar}  \right)(p-\hbar k)^{2} \frac{d^{2}}{\hbar^{2}} \exp\left( - \frac{(p-\hbar k)^{2}d^{2}}{\hbar^{2}} \right) \\
- & = \frac{\hbar^{3}}{d^{3}} 2 \Gamma(2) \\
- & =2 \frac{h^{3}}{d^{3}}
+\int dp(p-\hbar k)^{2}\exp\left( - \frac{(p-\hbar k)^{2}d^{2}}{\hbar^{2}} \right) & = \frac{\hbar^{3}}{d^{3}}\int_{-\infty}^{\infty} d\left( (p-\hbar k) \frac{d}{\hbar}  \right)(p-\hbar k)^{2} \frac{d^{2}}{\hbar^{2}} \exp\left( - \frac{(p-\hbar k)^{2}d^{2}}{\hbar^{2}} \right) \\
+  & = \frac{\hbar^{3}}{d^{3}} \int dt t^{2} \exp(-t^{2}) \\
+ & =\frac{\hbar^{3}}{d^{3}}2 \int_{0}^{\infty}  dt t^{2} \exp(-t^{2}) \\
+ & = \frac{\hbar^{3}}{d^{3}}2 \frac{1}{4}\sqrt{ \pi } \\
+ & = \frac{1}{2} \sqrt{ \pi } \frac{\hbar^{3}}{d^{3}}
 \end{align}$$
 Then we have:
 $$\begin{align}
-\int dpp^{2}\exp\left( - \frac{(p-\hbar k)^{2}d^{2}}{\hbar^{2}} \right) & = \frac{\hbar^{3}}{d^{3}}2+ 2\hbar k\sqrt{ \pi } \frac{\hbar^{2}k}{d}- \hbar^{2}k^{2} \sqrt{ \pi } \frac{\hbar}{d} \\
- & =2 \frac{\hbar^{3}}{d^{3}}+ \sqrt{ \pi } \frac{\hbar^{3}k^{2}}{d}
+\int dpp^{2}\exp\left( - \frac{(p-\hbar k)^{2}d^{2}}{\hbar^{2}} \right) & = \frac{\sqrt{ \pi }}{2} \frac{\hbar^{3}}{d^{3}}+ 2\hbar k \sqrt{ \pi } \frac{\hbar^{2}k}{d}  - \hbar^{2}k^{2}\sqrt{ \pi } \frac{\hbar}{d} \\
+ & = \frac{\sqrt{ \pi }}{2} \frac{\hbar^{3}}{d^{3}}+ \sqrt{ \pi } \frac{\hbar^{3}}{k^{2}}d
 \end{align}$$
 Then:
 $$\begin{align}
-\langle p^{2} \rangle & = \frac{d}{\hbar \sqrt{ \pi }}\left(  2 \frac{\hbar^{3}}{d^{3}}+ \sqrt{ \pi } \frac{\hbar^{3}k^{2}}{d} \right) \\
- & = \frac{2}{\sqrt{ \pi }} \frac{\hbar^{2}}{d^{2}}+ \hbar^{2}k^{2}
+\langle p^{2} \rangle & = \frac{d}{\hbar \sqrt{ \pi }}\left(  \frac{\sqrt{ \pi }}{2} \frac{\hbar^{3}}{d^{3}}+ \sqrt{ \pi } \frac{\hbar^{3}}{k^{2}}d \right) \\
+ & = \frac{1}{2} \frac{\hbar^{2}}{d^{2}}+ \hbar^{2}k^{2}
 \end{align}$$
 Then:
-$$\langle p^{2} \rangle- \langle p \rangle^{2}= \frac{2}{\sqrt{ \pi }} \frac{\hbar^{2}}{d^{2}}$$
+$$\langle p^{2} \rangle- \langle p \rangle^{2}= \frac{1}{2} \frac{\hbar^{2}}{d^{2}}$$
 These results are all consistent with $a).$
+
+## c).
+We need to compute $\langle x^{2} \rangle- \langle x \rangle^{2}$. 
+
+We have:
+$$\begin{align}
+\langle x \rangle & = \bra{\psi} x\ket{\psi}  \\
+ & =\int_{-\infty}^{\infty}dx \bra{\psi} x\rangle\bra{x} x\ket{\psi}  \\
+ & =\int dx x |\psi(x)|^{2}
+\end{align}$$
+Know that:
+$$\begin{align}
+|\psi(x)|^{2} & = \frac{1}{\pi^{1/2}d} \exp\left(  - \frac{x^{2}}{d^{2}} \right)
+\end{align}$$
+Clearly $\langle x \rangle =0$ because $x \exp\left(  - \frac{x^{2}}{d^{2}} \right)$ is odd. 
+
+Then borrowing the result from $b).$, we have:
+$$\begin{align}
+\langle x^{2} \rangle & = \int_{-\infty}^{\infty}dx x\exp\left( - \frac{x^{2}}{d^{2}} \right) \\
+ & =d^{3} \int dtt^{2}\exp(-t^{2}) \\
+ & = d^{3}2 \int_{0}^{\infty}dtt^{2}\exp(-t^{2}) \\
+ & =2d^{3} \frac{1}{4}\sqrt{ \pi } \\
+ & = \frac{1}{2}\sqrt{ \pi }d^{3}
+\end{align}$$
+Then:
+$$\begin{align}
+\langle x^{2} \rangle & - \frac{1}{\pi^{1/2}d} \frac{1}{2}\sqrt{ \pi }d^{3} \\
+ & = \frac{1}{2}d^{2}
+\end{align}$$
+Then:
+$$\langle x^{2} \rangle- \langle x \rangle^{2}= \frac{1}{2} d^{2}$$
+Then I have:
+$$\begin{align}
+(\langle x^{2} \rangle- \langle x \rangle^{2})(\langle p^{2} \rangle- \langle p \rangle^{2}) & = \frac{1}{2}d^{2}\cdot \frac{1}{2} \frac{\hbar^{2}}{d^{2}} \\
+ & = \frac{1}{4} \hbar^{2} \\
+ & =\frac{1}{4}|\langle [x,p]\rangle|^{2}
+\end{align}$$
+
 
