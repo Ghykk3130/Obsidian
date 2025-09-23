@@ -147,3 +147,64 @@ Note that we just choose new bases in the eigensubspaces of $B$, the representat
 $$\frac{1}{\sqrt{ 2 }}(\ket{1} \pm \ket{2} ), \frac{1}{\sqrt{ 2 }}(\ket{3} \pm \ket{4} )$$
 # 3.
 ## a).
+Know that:
+$$\begin{align}
+ \langle p\rangle & =\bra{\psi} p\ket{\psi} \\
+ &=\int_{-\infty}^{\infty} dx\bra{\psi} x\rangle \bra{x} p\ket{\psi}  \\
+  & = \int dx \psi ^{*}(x)\left( -i\hbar \frac{\partial}{\partial x} \right)\psi(x) 
+\end{align}$$
+We compute:
+$$\begin{align}
+ \frac{\partial}{\partial x}\psi & = \frac{1}{\pi^{1/4}\sqrt{ d }} \exp\left( ikx- \frac{x^{2}}{2d^{2}} \right)
+\end{align}$$
+Then:
+$$\begin{align}
+\langle p \rangle & =\int dx(-i\hbar)\left( ik- \frac{x}{d^{2}} \right) \frac{1}{\pi^{1/2}d} epx\left( -ikx_{} -\frac{x^{2}}{2d^{2}} \right)\exp\left( ikx- \frac{x^{2}}{2d^{2}} \right) \\
+ & =\int dxi\hbar\left( ik- \frac{x}{d^{2}} \right) \frac{1}{\pi^{1/2}d}\exp\left( - \frac{x^{2}}{d^{2}} \right) \\
+\end{align}$$
+Know by Gaussian integral that:
+$$\begin{align}
+\int_{-\infty}^{\infty} dx\exp\left(  - \frac{x^{2}}{d^{2}} \right) & = \sqrt{ \pi }d
+\end{align}$$
+Also, since $x\exp\left( - \frac{x^{2}}{d^{2}} \right)$ is odd, its integral is zero. Then we get:
+$$\begin{align}
+\langle p \rangle & =(-i\hbar) \frac{1}{\pi^{1/2}d}ik \int dx \exp\left(  - \frac{x^{2}}{d^{2}} \right) \\
+ & = \frac{\hbar k}{\pi^{1/2}}\sqrt{ \pi }d \\
+ & =\hbar k
+\end{align}$$
+
+Similarly, we know that:
+$$\begin{align}
+\langle p \rangle & =\int_{-\infty}^{\infty}dx \psi(x)^{*}p^{2}\psi(x) \\
+ & = \int dx\psi ^{*}(x)\left( - \hbar^{2} \frac{\partial^{2}}{\partial x^{2}} \right) \psi(x)
+\end{align}$$
+We compute:
+$$\begin{align}
+\frac{\partial^{2}}{\partial x^{2}} \psi& = \frac{1}{\pi^{1/4}\sqrt{ d }}\left(  \exp\left( ikx- \frac{x^{2}}{2d^{2}} \right)\left( ik- \frac{x}{d^{2}} \right)^{2}+ \exp\left( ikx- \frac{x^{2}}{2d^{2}} \right)\left(  - \frac{1}{d^{2}} \right) \right) \\
+ & = \frac{1}{\pi^{1/4}\sqrt{ d }}\exp\left( ikx- \frac{x^{2}}{2d^{2}} \right)\left(  \frac{x^{2}}{d^4}- 2ik \frac{x}{d^{2}}- \frac{1}{d^{2}}- k^{2} \right)
+\end{align}$$
+Therefore:
+$$\begin{align}
+\int dx\psi ^{*}(x)( - \hbar^{2}) \frac{\partial^{2}}{\partial x^{2}}  \psi(x)   & = \frac{-\hbar^{2}}{\pi^{1/2}d}\int dx \exp\left(  - \frac{x^{2}}{d^{2}} \right)\left(  \frac{x^{2}}{d^4}- 2ik \frac{x}{d^{2}} - \frac{1}{d^{2}}- k^{2} \right) \\
+ & = \frac{-\hbar^{2}}{\pi^{1/2}d}\int dx\exp\left(  - \frac{x^{2}}{d^{2}} \right)\left(  \frac{x^{2}}{d^4}- \frac{1}{d^{2}}- k^{2} \right)
+\end{align}$$
+This is because again $x\exp\left(  - \frac{x^{2}}{d^{2}} \right)$ is odd.
+
+Then it suffices to compute:
+$$\begin{align}
+\int_{-\infty}^{\infty}dx x^{2}\exp\left( - \frac{x^{2}}{d^{2}} \right) & =2\int_{0}^{\infty}dx x^{2}\exp\left( - \frac{x^{2}}{d^{2}} \right) \\
+ & =2 d^{3}\int d\left(  \frac{x}{d} \right) \frac{x^{2}}{d^{2}}\exp\left(  - \frac{x^{2}}{d^{2}} \right) \\
+ & = 2d^{3}\Gamma(2) \\
+ & = 2d^{3}
+\end{align}$$
+Therefore:
+$$\begin{align}
+\langle p^{2} \rangle & = \frac{-\hbar^{2}}{\pi^{1/2}d}\left(  \frac{1}{d}- \sqrt{ \pi } \frac{1}{d}- \sqrt{ \pi }dk^{2} \right) \\
+ & =\hbar^{2}\left(  \frac{1}{\pi^{1/2}d^{2}}( \sqrt{ \pi }-1) +k^{2} \right)
+\end{align}$$
+Then I have:
+$$\begin{align}
+\langle p^{2}\rangle- \langle p \rangle^{2} & =\hbar^{2}\left(  \frac{1}{\pi^{1/2}d^{2}}(\sqrt{ \pi }-1)+ k^{2} \right) - \hbar^{2}k^{2} \\
+ & = \frac{\hbar^{2}}{\pi^{1/2}d^{2}}(\sqrt{ \pi }-1)
+\end{align}$$
+## b).
