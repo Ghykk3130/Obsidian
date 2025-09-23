@@ -9,10 +9,10 @@ $$\begin{align}
 \end{align}$$
 Therefore its representation under $R-L$ basis is:
 $$\begin{pmatrix}
-\frac{1}{\sqrt{ 2 }}(a+ib) \\
-\frac{1}{\sqrt{ 2 }}(a-ib)
-\end{pmatrix}=\frac{1}{\sqrt{ 2 }}\begin{pmatrix}1 & i \\
-1 & -i
+\frac{1}{\sqrt{ 2 }}(a-ib) \\
+\frac{1}{\sqrt{ 2 }}(a+ib)
+\end{pmatrix}=\frac{1}{\sqrt{ 2 }}\begin{pmatrix}1 & -i \\
+1 & i
 
 \end{pmatrix}\begin{pmatrix}
 a \\
@@ -20,8 +20,8 @@ b
 \end{pmatrix}$$
 So the matrix is:
 $$X=\frac{1}{\sqrt{ 2 }}\begin{pmatrix}
-1 & i \\
-1 & -i
+1 & -i \\
+1 & i
 \end{pmatrix}$$
 ## b).
 $$\begin{align}
