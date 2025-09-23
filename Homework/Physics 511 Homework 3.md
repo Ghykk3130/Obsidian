@@ -304,5 +304,17 @@ $$\begin{align}
  & = \frac{1}{4} \hbar^{2} \\
  & =\frac{1}{4}|\langle [x,p]\rangle|^{2}
 \end{align}$$
+# 4.
+## a).
+We compute:
+$$\begin{align}
+\int dpW(x,p,t) & =\int dp \int dy \frac{1}{\pi} \psi ^{*}(x+y,t)\psi(x-y,t) \\
+ & = \frac{1}{\pi}\int dy \psi ^{*}(x+y,t)\psi(x-y,t)\int dpe^{2ipy} \\
+ & = \frac{1}{\pi}\int dy \psi ^{*}(x+y,t)\psi(x-y,t)2\pi\delta(2y) \\
+ & = \frac{1}{\pi}\int dy \psi ^{*}(x+y,t)\psi(x-y,t) \pi\delta(y) \\
+ & =  \frac{1}{\pi}\pi \psi ^{*}(x,t)\psi(x,t) \\
+ & = |\psi(x,y)|^{2} 
+\end{align}$$
+## b).
 
 
