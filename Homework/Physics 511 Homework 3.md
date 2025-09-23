@@ -241,7 +241,7 @@ Next, we consider:
 $$\begin{align}
 \langle p^{2} \rangle & =\int_{-\infty}^{\infty} dp p^{2}|\psi(p)|^{2} \\
  & =\frac{d}{\hbar \sqrt{ \pi }} \int dp p^{2} \exp\left(  -  \frac{(p-\hbar k)^{2}d^{2}}{\hbar^{2}}  \right) \\
- & =\frac{d}{\hbar \sqrt{ \pi }} \int dpp^{2}((p-\hbar k)^{2}+2\hbar kp-\hbar^{2}k^{2})\exp\left(  - \frac{(p-\hbar k)^{2}d^{2}}{\hbar^{2}} \right)
+ & =\frac{d}{\hbar \sqrt{ \pi }} \int dp((p-\hbar k)^{2}+2\hbar kp-\hbar^{2}k^{2})\exp\left(  - \frac{(p-\hbar k)^{2}d^{2}}{\hbar^{2}} \right)
 \end{align}$$
 We compute:
 $$\begin{align}
