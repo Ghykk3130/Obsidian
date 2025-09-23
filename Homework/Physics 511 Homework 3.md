@@ -316,5 +316,91 @@ $$\begin{align}
  & = |\psi(x,y)|^{2} 
 \end{align}$$
 ## b).
-
-
+Know that:
+$$\psi(x,t)=  \frac{1}{\sqrt{ 2\pi }}\int dp\phi(p,t)e^{ipx}$$
+Note that in the following computation we shall suppress the variable $t$, because writing it out every time is inconvenient. We will put back $t$ at the end. Then substitute in to get:
+$$\begin{align}
+\int Wdx & =\int dx \frac{1}{\pi} \int dy \psi ^{*}(x+y,t)\psi(x-y,t)e^{2ipy}\left( \int dp^{'}\phi(p)e^{i p^{'}(x+y)} \right)^{*}\int dp^{''} \phi(p^{''})e^{ip^{''}(x-y)} \\
+ & =\int dx \frac{1}{\pi}\int dye^{2ipy} \frac{1}{2\pi} \int dp^{'}\phi ^{*}(p^{'})e^{-ip^{'}(x+y)}\int dp^{''}\phi(p^{''})e^{ip^{''}(x-y)} \\
+ & =\int dp^{'}\phi ^{*}(p^{'})\int dp^{''}\phi(p^{''}) \frac{1}{\pi} \frac{1}{2\pi }\int dx e^{ix(p^{''}-p^{'})}\int dye^{-iy(p^{'}+p^{''})}e^{2ipy } \\
+ &= \int dp^{'}\phi ^{*}(p^{'})\int dp^{''}\phi(p^{''}) \frac{1}{2\pi^{2}}(2\pi)^{2}\delta(p^{''}-p^{'})\delta(2p-p^{'}-p^{''}) \\
+ \end{align}$$
+ Then consider a change of variable:
+ $$\begin{align}
+ & p^{''}-p^{'}=X \\
+ & p^{''}+p^{'}=Y
+\end{align}$$
+Then I have:
+$$\begin{align}
+ & p^{''}= \frac{1}{2}(X+ Y) \\
+ & p^{'}= \frac{1}{2}(Y- X)
+\end{align}$$
+I also have the Jacobian matrix relating the change of the infinitesimal measure on the corresponding manifolds:
+$$dp^{'}dp^{''}=|\begin{vmatrix}
+\partial p^{'} / \partial X & \partial p^{'} / \partial Y \\
+\partial p^{''} / \partial X  &  \partial p^{''} / \partial Y
+\end{vmatrix}|dXdY= |\begin{vmatrix}
+- \frac{1}{2} & \frac{1}{2} \\
+\frac{1}{2} & \frac{1}{2}
+\end{vmatrix}|dXdY= \frac{1}{2}dXdY
+$$
+Then I have:
+$$\begin{align}
+\int Wdx & =\iint \frac{1}{2} dXdY\phi ^{*}\left(  \frac{1}{2}(Y-X) \right)\cdot 2 \cdot \phi\left(  \frac{1}{2}(X+Y) \right) \delta(X)\delta(2p-Y) \\
+ & =\int dY \phi ^{*}\left(  \frac{Y}{2} \right)\phi\left( \frac{Y}{2} \right)\delta(2p-Y) \\
+ & =\phi ^{*}(p)\phi(p) \\
+ & =|\phi(p) |^{2}
+\end{align}$$
+Add back $t$ to get:
+$$|\phi(p,t)|^{2}= \int W(x,p,t)dx$$
+## c).
+Similarly, during the computation, we don't write out $t$ explicitly. I have:
+$$\begin{align}
+2\pi \iint dxdpW_{1}^{*}W_{2} & = 2\pi \int dx \int dp \frac{1}{\pi^{2}}\cdot\left(  \int dy_{1}\psi ^{*}(x_{y})\psi_{1}(x-y)e^{2ipy_{1}} \right)^{*}\int dy_{2}\psi_{2}^{*}(x+y_{2})\psi_{2}(x-y_{2})e^{2ipy_{2}} \\
+ & = \frac{2}{\pi}\int dx \int dy_{1}\int dy_{2}\psi_{1}(x+y_{1})\psi ^{*}(x-y_{2})\psi ^{*}_{2}(x+y_{2})\psi(x-y_{2})\int dpe^{2ip(y_{2}-y_{1})} \\
+ & = \frac{2}{\pi}\int dx \int dy_{1} \int dy_{2} \psi_{1}(x+y_{1})\psi_{1} ^{*}(x-y_{1})\psi_{2} ^{*}(x+y_{2} )\psi_{2}(x-y_{2}) \cdot 2\pi \cdot \delta(2(y_{2}-y_{1})) \\
+ & = 2\int dx \int dy_{1} \int dy_{2} \psi_{1}(x+y_{1})\psi_{1} ^{*}(x-y_{1})\psi_{2} ^{*}(x+y_{2})\psi(x-y_{2})\delta(y_{2}-y_{1})
+\end{align}$$
+We change the variables:
+$$\begin{align}
+ &  y_{1}-y_{1}=Y \\
+ & y_{2}+y_{1}=X
+\end{align}$$
+$$\implies \begin{align}
+ & y_{2} = \frac{1}{2}(X+Y) \\
+ & y_{1}=  \frac{1}{2}(X-Y)
+\end{align}$$
+Then I have:
+$$dy_{1}dy_{2}= |\begin{vmatrix}
+\partial y_{1} / \partial X &  \partial y_{1} / \partial Y \\
+\partial y_{2} / \partial X  &  \partial y_{2} / \partial Y
+\end{vmatrix}|dXdY= |\begin{vmatrix}
+\frac{1}{2} & - \frac{1}{2} \\
+\frac{1}{2} & \frac{1}{2}
+\end{vmatrix}|dXdY= \frac{1}{2}dXdY$$
+Therefore:
+$$\begin{align}
+2\pi \iint dxdp W_{1}^{*}W_{2} & =2\int dx \iint dXdY \frac{1}{2} \psi_{1}\left( x+ \frac{1}{2}(X-Y) \right)\psi ^{*}_{1}\left( x- \frac{1}{2}(X-Y) \right)\psi ^{*}_{2}\left( x+ \frac{1}{2}(X+Y) \right)\psi_{2}\left( x- \frac{1}{2}(X+Y) \right)\delta(Y) \\
+ & = \int dx \int dX \psi_{1}\left( x+ \frac{X}{2} \right)\psi ^{*}_{1}\left( x- \frac{X}{2} \right)\psi ^{*}_{2}\left( x+ \frac{X}{2} \right) \psi_{2}\left( x- \frac{X}{2} \right)
+\end{align}$$
+We change the variables again:
+$$\begin{align}
+ & \alpha = x+ \frac{X}{2} \\
+ & \beta= x- \frac{X}{2}
+\end{align}$$
+$$\implies \begin{align}
+ & x= \frac{1}{2}(\alpha+ \beta ) \\
+ & X= \alpha-\beta
+\end{align}$$
+Then again I have:
+$$dxdX= |\begin{vmatrix}
+\frac{1}{2} &  \frac{1}{2} \\
+1 & -1
+\end{vmatrix}|d\alpha d\beta=d\alpha d\beta$$
+Then:
+$$\begin{align}
+2 \pi \iint dxdp W_{1}W_{2} & =\int d\alpha  \int d\beta \psi_{1}(\alpha)\psi ^{*}_{1}(\beta)\psi ^{*}_{2}(\alpha)\psi_{2}(\beta) \\
+ & = \int d\alpha \psi_{1}(\alpha)\psi_{2}^{*}(\alpha)\int d \beta \psi_{1}^{*}(\beta)\psi_{2}(\beta) \\
+ & = \bra{\psi_{2}} \psi_{1}\rangle \bra{\psi_{1}} \psi_{2}\rangle \\
+ & = |\bra{\psi_{1}}  \psi_{2} \rangle |^{2}
+\end{align}$$
