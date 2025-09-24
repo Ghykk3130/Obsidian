@@ -12,7 +12,7 @@ VTI cool down:
 Schematic diagram:
 ![[2b3c10da8c8787bcbbc183adc95f5583.jpg|500]]
 
-
+Upper most flange for loading the probe.
 
 
 
