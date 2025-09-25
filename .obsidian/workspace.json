@@ -111,12 +111,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "热力学中的求导.md",
+                "file": "热力学平衡.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "热力学中的求导"
+              "title": "热力学平衡"
             }
           },
           {
@@ -415,7 +415,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 200,
+    "collapsed": true
   },
   "right": {
     "id": "9003d078f8dbc4ed",
