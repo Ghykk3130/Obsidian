@@ -415,8 +415,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200,
-    "collapsed": true
+    "width": 200
   },
   "right": {
     "id": "9003d078f8dbc4ed",
@@ -516,17 +515,17 @@
   },
   "active": "413ee5f24d068fd3",
   "lastOpenFiles": [
+    "Untitled.md",
+    "热力学中的求导.md",
     "Experimental/VTI.md",
     "Homework/Physics 510 Homework 4.md",
     "Homework/Physics 510 Homework 3.md",
-    "Untitled.md",
     "Untitled 1.md",
     "热力学平衡.md",
     "Pictures/9885955810bb48f6a28c69f7f533656a.jpg",
     "热力学第一定律.md",
     "熵.md",
     "惯量张量.md",
-    "热力学中的求导.md",
     "正规矩阵的对角化.md",
     "Pictures/d38e6728541e51191977e6f796e20518.jpg",
     "Pictures/055311113a5784900872efd078cb5615.jpg",
