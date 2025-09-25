@@ -12,7 +12,9 @@ VTI cool down:
 Schematic diagram:
 ![[2b3c10da8c8787bcbbc183adc95f5583.jpg|500]]
 
-Upper most flange for loading the probe.
+The only connection between the sample tube and the helium bath is the outside pumping line. The pump is taking He out from the sample tube and back into the helium bath + reliquifier. Due to the positive pressure from the helium bath, the He gas won't go back into the He bath. 
+
+
 
 
 
