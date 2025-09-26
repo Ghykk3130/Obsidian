@@ -101,3 +101,30 @@ If $C_{V}<0$, similarly:
 $$\frac{\partial^{2}S}{\partial U_{1}^{2}}(\delta U)^{2}+ \frac{\partial^{2}S}{\partial U_{2}^{2}}(\delta U)^{2}>0$$
 Then the entropy would decrease as the system moves towards equilibrium.
 
+So if $C_{V}>0$, I must have a stable equilibrium. This is because any process would lead to an increase in the entropy. If at equilibrium, I am at the local maximum, then no displacement to other states are possible.
+
+If $C_{V}<0$, I must have an unstable equilibrium. This means that at equilibrium, I am at the minimum. Then since any process that increases the entropy is possible, it is very likely that the system would move away from this minimum.
+
+From experience, we know that if two systems are at equilibrium, and we move the perturb their energy like what we did in the problem, the two systems would return to the same equilibrium. This means that the equilibrium has to be stable, and thus $C_{V}>0$.
+
+## c).
+
+Fix the temperatures of the two systems. Then the Helmholtz free energy is:
+$$F(T_{1},T_{2},V_{1},V_{2})= F_{1}(T_{1},V_{1})+F_{2}(T_{2},V_{2})$$
+Then the second order variation is:
+$$\begin{align}
+\delta^{2}F & = \frac{\partial^{2}F}{\partial V_{1}^{2}}\delta V_{1}^{2}+ \frac{\partial^{2}F}{\partial V_{2}^{2}}\delta V_{2}^{2}+ 2 \frac{\partial^{2}F}{\partial V_{1}\partial V_{2}}\delta V_{1}\delta V_{2} \\
+ & = \frac{\partial^{2}F_{1}}{\partial V_{1}^{2}}\delta V_{1}^{2}+ \frac{\partial^{2}F_{2}}{\partial V_{2}^{2}}\delta V_{2}^{2}
+\end{align}$$
+I have that:
+$$\begin{align}
+\left( \frac{\partial^{2} F}{\partial V^{2}} \right)_{T} & = - \left( \frac{\partial p}{\partial V} \right)_{T} \\
+ & = \frac{1}{\kappa_{T}V_{1}}
+\end{align}$$
+Substitute this in and impose the constraint that $\delta V_{1}+\delta V_{2}=0$ to get:
+$$\delta^{2}F= (\frac{1}{\kappa_{T}V_{1}}+ \frac{1}{\kappa_{T}V_{2}})\delta V_{1}^{2}$$
+From experience I know that, if the the total volume is fixed, and I displace the volume, the system would return to the same equilibrium. Then the equilibrium is stable. Know that any process would decrease $F$, then for a stable equilibrium, any displacement is not possible, meaning that $\delta^{2}F>0$. Then:
+$$\kappa_{T}>0$$
+# 4. 
+
+
