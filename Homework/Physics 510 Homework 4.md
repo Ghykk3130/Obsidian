@@ -127,4 +127,55 @@ From experience I know that, if the the total volume is fixed, and I displace th
 $$\kappa_{T}>0$$
 # 4. 
 
+Know that:
+$$\begin{align}
+C_{V} & = T \left(  \frac{\partial S}{\partial T} \right)_{V}
+\end{align}$$
+From $T=\left(  \frac{\partial U}{\partial S} \right)_{V}$, we know:
+$$\begin{align}
+(dT)_{V} & = (\frac{\partial^{2}U}{\partial S^{2}})_{V}dS
+\end{align}$$
+Therefore:
+$$\begin{align}
+C_{V} & =T \frac{dS}{\left( \frac{\partial^{2}U}{\partial S^{2}} \right)_{V}dS  } \\
+ & = T \left( \frac{\partial^{2}U}{\partial S^{2} } \right)_{V}^{-1}
+\end{align}$$
+Furthermore:
+$$\begin{align}
+\left( \frac{\partial^{2}U}{\partial S^{2}} \right)_{V} & =\left( \frac{\partial}{\partial S} \right)_{V}\left( \frac{\partial U}{\partial S} \right)_{V} \\
+ & =\left( \frac{\partial}{\partial S} \right)_{V}\left(  \left( \frac{\partial S}{\partial U} \right)_{V}^{-1} \right) \\
+ & = -\left( \frac{\partial S}{\partial U} \right)_{V}^{-2}\left(  \frac{\partial}{\partial S} \right)_{V} \left(  \frac{\partial S}{\partial U} \right)_{V}
+\end{align}$$
+Notice that in the last line, $\left( \frac{\partial S}{\partial U} \right)_{V}$ is assumed to be a function of $U$, so to take derivative with respect to $S$, consider the chain rule:
+$$\begin{align}
+\left( \frac{\partial^{2}U}{\partial S^{2}} \right)_{V} & =-\left( \frac{\partial S}{\partial U} \right)_{V}^{-2}\left(  \frac{\partial U}{\partial S} \right)\left( \frac{\partial}{\partial U} \right)_{V}\left( \frac{\partial S}{\partial U} \right)_{V} \\
+ & = -\left(  \frac{\partial S}{\partial U} \right)_{V}^{-3}\left( \frac{\partial^{2}S}{\partial U^{2}} \right)_{V} \\
+ & =-T^{3}\left( \frac{\partial^{2} S}{\partial U^{2}} \right)_{V}
+\end{align}$$
+Then:
+$$C_{V}=- \frac{1}{T^{2}}\left(  \frac{\partial^{2}S}{\partial U^{2}} \right)_{V}$$
+Know that at equilibrium, I must have $\delta^{2}S<0$. Then:
+$$\left( \frac{\partial^{2}S}{\partial U^{2}} \right)_{V}<0$$
+Then:
+$$C_{V}>0$$
+In $3.$ I showed that $\kappa_{T}>0$. Assume that $T>0$. From $1.$ I know:
+$$C_{p}= C_{V}+ \frac{\beta_{p}^{2}VT}{\kappa_{T}}$$
+Then:
+$$C_{p}>C_{V}>0$$
 
+Know that:
+$$\kappa_{S}= - \frac{1}{V}\left(  \frac{\partial V}{\partial p} \right)_{S}$$
+Recall:
+$$p=-\left(  \frac{\partial U}{\partial V} \right)_{S}$$
+Then:
+$$(dp)_{S}=- \left( \frac{\partial^{2}U}{\partial V^{2}} \right)dV$$
+Then:
+$$\begin{align}
+\kappa_{S} & =- \frac{1}{V} \frac{dV}{-\left( \frac{\partial^{2}U}{\partial V^{2}} \right)dV} \\
+ & = \frac{1}{V}\left( \frac{\partial^{2}U}{\partial V^{2}} \right)_{S}^{-1}
+\end{align}$$
+Know that at equilibrium I must have: $\delta^{2}U>0$. Then:
+$$\left( \frac{\partial^{2}U}{\partial V^{2}} \right)_{S}^{}>0$$
+Therefore:
+$$\kappa_{S}>0$$
+From 
