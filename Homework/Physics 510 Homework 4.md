@@ -178,4 +178,8 @@ Know that at equilibrium I must have: $\delta^{2}U>0$. Then:
 $$\left( \frac{\partial^{2}U}{\partial V^{2}} \right)_{S}^{}>0$$
 Therefore:
 $$\kappa_{S}>0$$
-From 
+I just showed that $C_{p}>0$. Then from $1.$ I know that:
+$$\kappa_{T}=\kappa_{S}+ \frac{\beta_{p}^{2}VT}{C_{p}}>0$$
+Therefore:
+$$\kappa_{T}>\kappa_{S}>0$$
+
