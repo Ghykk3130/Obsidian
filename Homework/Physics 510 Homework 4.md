@@ -121,7 +121,7 @@ Substitute this in and impose the constraint that $\delta V_{1}+\delta V_{2}=0$ 
 $$\delta^{2}F= \left( \frac{1}{\kappa_{T}V_{1}}+ \frac{1}{\kappa_{T}V_{2}} \right)\delta V_{1}^{2}=\frac{2}{\kappa_{T}V_{1}}\delta V_{1}^{2}$$
 This is because we in the problem we assume $V_{1}=V_{2}$
 
-Similarly, if I perturb the volume, the system would return to the same equilibrium. Therefore any perturbation are not favored and $\delta^{2}F>0$. Then must conclude that $\kappa_{T}>0$.
+Then the Helmholtz free energy increases if $\kappa_{T}>0$. The Helmholtz free energy decreases if $\kappa_{T}<0$. If I have $\kappa_{T}<0$, then the system is unstable, because any displacement from the current point would be favored by the Helmholtz free energy. Then the volume of one subsystem would keep increasing, and the volume of the other subsystem would keep decreasing.  This cannot happen. Therefore, we are forced to conclude that $\kappa_{T}>0$.
 # 4. 
 
 Know that:
@@ -236,3 +236,21 @@ $$\begin{align}
 \end{align}$$
 Then if $p>0$, then the ideal gas is stable. If $p<0$, the ideal gas would be unstable.
 ## ii).
+Similarly, we want to estimate the sign of $\kappa_{T}$. Differentiate the equation of state with the constraint that $dT=0$ to get:
+$$\begin{align}
+ & \left( dp- 2 \frac{a}{v^{3}}dv \right)(v-b)+ \left( p+ \frac{a}{v^{2}} \right)dv=0 \\
+\implies & \left( \frac{\partial v}{\partial p} \right)_{T}= (v-b)\left(  \frac{a}{v^{2}}- \frac{2ab}{v^{3}}-p \right)^{-1}
+\end{align}$$
+Holding $N$ constant implicitly, I get:
+$$\begin{align}
+\kappa_{T} & =- \frac{1}{V}\left(  \frac{\partial V}{\partial T} \right)_{T} \\
+ & =- \frac{1}{Nv}\left(  \frac{\partial}{\partial T}(Nv) \right)_{T} \\
+ & = - \frac{1}{v}\left( \frac{\partial v}{\partial T} \right)_{T}
+\end{align}$$
+Then:
+$$\kappa_{T}= \frac{bv^{2}-v^{3}}{av-2ab-pv^{3}}$$
+The sign of this expression is the same as the sign of this:
+$$(bv^{2}-v^{3})(av-2ab-pv^{3})$$
+And the sign of this is also the same as the sign of this:
+$$(b-v)(av-2ab-pv^{3})$$
+Then as long as $(b-v)(av-2ab-pv^{3})>0$, or equivalently $\frac{bv^{2}-v^{3}}{av-2ab-pv^{3}}>0$, then the van del Waals gas is stable. If $(b-v)(av-2ab-pv^{3})<0$, or equivalently $\frac{bv^{2}-v^{3}}{av-2ab-pv^{3}}>0$, then the van del Waals gas is unstable.  

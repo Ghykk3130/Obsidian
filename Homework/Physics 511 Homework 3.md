@@ -1,3 +1,5 @@
+>[!Note]
+>Sometimes, there will be problems with latex matrix expression rendering. I am totally aware of this issue but cannot fix it. Please don't take points off if you see this.
 # 1.
 ## a).
 We know that $\ket{R},\ket{L}$ is a complete basis. Then:
