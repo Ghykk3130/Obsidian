@@ -68,14 +68,15 @@ $$\left( \frac{\partial S}{\partial U_{1}} \right)_{V_{1}}=\left(  \frac{\partia
 Then:
 $$\delta S_{tot}=0$$
 
-This is expected. We can show that this is the equilibrium state. If I the two systems as a whole are isolated, and their volumes are fixed, the entropy must be maximized at equilibrium:
+This is expected. We prove this by showing that the condition in the problem is exactly the same as the condition for equilibrium. Then since the first order variation of a system at equilibrium should be zero, and the system in the problem is in equilibrium, the variation in its entropy should be zero. I know that the two systems are trivially in equilibrium, but I still want to formulate my proof rigorously.
+
+Calculate the equilibrium condition: if I the two systems as a whole are isolated, and their volumes are fixed, the entropy must be maximized at equilibrium:
 $$\delta S_{tot}= \left( \frac{\partial S}{\partial U_{1}} \right)_{V_{1}}\delta U_{1}+ \left(  \frac{\partial S}{\partial U_{2}} \right)_{V_{2}}\delta U_{2}=0$$
 Impose the constraint $\delta U_{1}+\delta U_{2}=0$, and using the arbitrariness of $\delta U_{1}$, we have:
 $$\left( \frac{\partial S}{\partial U_{1}} \right)_{V_{1}}= \left(  \frac{\partial S}{\partial U_{2}} \right)_{V_{2}}$$
 Since $S_{1},S_{2}$ have the same functional structure, and the derivative $\frac{\partial U}{\partial S}$ is monotone, and thus a bijective map $S\mapsto \frac{\partial U}{\partial S}$. The inverse of the derivative should also be bijective. Then the above equality shows:
 $$U_{1}=U_{2}$$
 This is exactly the same condition given in the problem.  
-
 ## b).
 Fix the volumes. Consider the Taylor expansion:
 $$\begin{align}
@@ -83,7 +84,7 @@ S_{tot}(U_{1}+\delta U_{1},U_{2}+\delta U_{2}) & = S_{tot}(U_{1},U_{2})+ \frac{\
  & =S_{tot}(U_{1},U_{2})+ \frac{\partial S}{\partial U_{1}}\delta U_{1}+ \frac{\partial S}{\partial U_{2} }\delta U_{2}+ \frac{\partial^{2}S}{\partial U_{1}^{2}}(\delta U_{1})^{2}+ \frac{\partial^{2}S}{\partial U_{2}^{2}}(\delta U_{2})^{2} \\
  & = S_{tot}(U_{1},U_{2})+ \frac{\partial^{2}S}{\partial U_{1}^{2}}(\delta U_{1})^{2}+ \frac{\partial^{2}S}{\partial U_{2}^{2}}(\delta U_{2})^{2}
 \end{align} $$
-Then cross term vanished because the $\frac{\partial S_{tot}}{\partial U_{2}}$ depends only on $U_{2}$. The first-order term vanished because of equilibrium.
+Then cross term vanished because the $\frac{\partial S_{tot}}{\partial U_{2}}= \frac{\partial S_{2}}{\partial U_{2}}$ depends only on $U_{2}$. The first-order term vanished because of equilibrium.
 
 Set $\delta U_{1}=\delta U,\delta U_{2}= - \delta U$. Then the second-order term is:
 $$\frac{\partial^{2}S}{\partial U_{1}^{2}}(\delta U)^{2}+ \frac{\partial^{2}S}{\partial U_{2}^{2}}(\delta U)^{2}$$
@@ -93,20 +94,15 @@ $$\begin{align}
  & = - \frac{1}{T^{2}} \frac{\partial T}{\partial U} \\
  & =- \frac{1}{T^{2}} \frac{1}{C_{V}}
 \end{align}$$
+Then since equilibrium implies equal temperature, I have:
+$$\delta^{2}S= - \frac{1}{T_{1}^{2}} \frac{1}{C_{V}}\delta U^{2}- \frac{1}{T_{2}} \frac{1}{C_{V}}\delta U^{2}= - \frac{2}{T^{2}_{1}C_{V}}\delta U_{}^{2}$$
 Then if $C_{V}>0$, I have:
-$$\frac{\partial^{2}S}{\partial U_{1}^{2}}(\delta U)^{2}+ \frac{\partial^{2}S}{\partial U_{2}^{2}}(\delta U)^{2}<0$$
-Then the entropy would increase as the system moves towards equilibrium. 
-
+$$\delta^{2}S<0$$
 If $C_{V}<0$, similarly:
-$$\frac{\partial^{2}S}{\partial U_{1}^{2}}(\delta U)^{2}+ \frac{\partial^{2}S}{\partial U_{2}^{2}}(\delta U)^{2}>0$$
-Then the entropy would decrease as the system moves towards equilibrium.
+$$\delta^{2}S>0$$
+If this condition prevails, the system would move towards increasing entropy, and thus transfer more energy between the two subsystems. The equilibrium is unstable. 
 
-So if $C_{V}>0$, I must have a stable equilibrium. This is because any process would lead to an increase in the entropy. If at equilibrium, I am at the local maximum, then no displacement to other states are possible.
-
-If $C_{V}<0$, I must have an unstable equilibrium. This means that at equilibrium, I am at the minimum. Then since any process that increases the entropy is possible, it is very likely that the system would move away from this minimum.
-
-From experience, we know that if two systems are at equilibrium, and we move the perturb their energy like what we did in the problem, the two systems would return to the same equilibrium. This means that the equilibrium has to be stable, and thus $C_{V}>0$.
-
+But this cannot happen, so we must conclude that any perturbation would decrease the entropy, such that the equilibrium point is stable. Therefore must conclude that $C_{V}>0$
 ## c).
 
 Fix the temperatures of the two systems. Then the Helmholtz free energy is:
@@ -122,9 +118,10 @@ $$\begin{align}
  & = \frac{1}{\kappa_{T}V_{1}}
 \end{align}$$
 Substitute this in and impose the constraint that $\delta V_{1}+\delta V_{2}=0$ to get:
-$$\delta^{2}F= (\frac{1}{\kappa_{T}V_{1}}+ \frac{1}{\kappa_{T}V_{2}})\delta V_{1}^{2}$$
-From experience I know that, if the the total volume is fixed, and I displace the volume, the system would return to the same equilibrium. Then the equilibrium is stable. Know that any process would decrease $F$, then for a stable equilibrium, any displacement is not possible, meaning that $\delta^{2}F>0$. Then:
-$$\kappa_{T}>0$$
+$$\delta^{2}F= \left( \frac{1}{\kappa_{T}V_{1}}+ \frac{1}{\kappa_{T}V_{2}} \right)\delta V_{1}^{2}=\frac{2}{\kappa_{T}V_{1}}\delta V_{1}^{2}$$
+This is because we in the problem we assume $V_{1}=V_{2}$
+
+Similarly, if I perturb the volume, the system would return to the same equilibrium. Therefore any perturbation are not favored and $\delta^{2}F>0$. Then must conclude that $\kappa_{T}>0$.
 # 4. 
 
 Know that:
