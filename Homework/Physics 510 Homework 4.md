@@ -155,11 +155,14 @@ Know that at equilibrium, I must have $\delta^{2}S<0$. Then:
 $$\left( \frac{\partial^{2}S}{\partial U^{2}} \right)_{V}<0$$
 Then:
 $$C_{V}>0$$
-In $3.$ I showed that $\kappa_{T}>0$. Assume that $T>0$. From $1.$ I know:
-$$C_{p}= C_{V}+ \frac{\beta_{p}^{2}VT}{\kappa_{T}}$$
+This makes physical sense, because if we maintain a constant volume of a system, after absorbing heat, the temperature should normally increase.
+
+Now argue that $C_{p}>C_{V}$.  
+
+
 Then:
 $$C_{p}>C_{V}>0$$
-This makes physical sense, because if we maintain a constant volume of a system, after absorbing heat, the temperature should normally increase. This explains why $C_{V}>0$. Also, for an isobaric system, if we put in a tiny amount of heat, only part of it is transferred to internal energy, and the other part is used to expand the volume to maintain a constant pressure. However, for a system with constant volume, all heat is used to increase the internal energy. Know that $U$ is normally a monotone increasing function of $T$, then the temperature increase in the constant volume system would be larger, leading to a smaller heat capacity. 
+ This explains why $C_{V}>0$. Also, for an isobaric system, if we put in a tiny amount of heat, only part of it is transferred to internal energy, and the other part is used to expand the volume to maintain a constant pressure. However, for a system with constant volume, all heat is used to increase the internal energy. Know that $U$ is normally a monotone increasing function of $T$, then the temperature increase in the constant volume system would be larger, leading to a smaller heat capacity. 
 
 Know that:
 $$\kappa_{S}= - \frac{1}{V}\left(  \frac{\partial V}{\partial p} \right)_{S}$$
