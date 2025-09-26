@@ -157,12 +157,48 @@ Then:
 $$C_{V}>0$$
 This makes physical sense, because if we maintain a constant volume of a system, after absorbing heat, the temperature should normally increase.
 
-Now argue that $C_{p}>C_{V}$.  
-
-
+Now argue that $C_{p}>C_{V}$. We have:
+$$C_{p}=T \left(  \frac{\partial S}{\partial T} \right)_{p}$$
+Choose $S,V$ as my variables, I have:
+$$\begin{align}
+dT & = \left(\frac{\partial T}{\partial S} \right)_{V}dS+ \left( \frac{\partial T}{\partial V} \right)_{S}dV \\
+ & = U_{SS}dS+U_{SV}dV
+\end{align}$$
+Fixing constant $p$ would yield a constraint on the differentials:
+$$\begin{align}
+dp & = \left( \frac{\partial p}{\partial S} \right)_{V}dS+ \left( \frac{\partial p}{\partial V} \right)_{S}dV \\
+ & = -U_{SV}dS- U_{VV}dV=0 \\
+\implies & dV= - \frac{U_{SV}}{U_{VV}}dS
+\end{align}$$
+Then I have:
+$$\begin{align}
+C_{p} & =T \frac{dS}{U_{SS}dS+U_{SV}dV} \\
+ & = T \frac{dS}{U_{SS}dS+U_{SV}\left( - \frac{U_{SV}}{U_{VV}} \right)dS} \\
+ & = T \frac{1}{U_{SS}- \frac{U_{SV}^{2}}{U_{VV}}}
+\end{align}$$
+I know that at equilibrium, the internal energy must be minimized. Then the Hessian matrix is positive-definite. Find the eigenequation of the Hessian matrix:
+$$\begin{align}
+\begin{vmatrix}
+U_{SS}-\lambda & U_{SV} \\
+U_{SV} & U_{VV}-\lambda
+\end{vmatrix} & =0 \\
+\implies \lambda^{2}-(U_{VV}+U_{SS})\lambda+U_{SS}U_{VV}-U_{SV}^{2} & =0
+\end{align}$$
+For positive-definiteness, require:
+$$\begin{align}
+ & \lambda_{1}+ \lambda_{2}= U_{VV}+U_{SS}>0, \\
+ & \lambda_{1}\lambda_{2}=U_{SS}U_{VV}-U_{SV}^{2}>0
+\end{align}$$
 Then:
+$$U_{SS}U_{VV}-U^{2}_{SV}>0\implies U_{SS}U_{VV}>0$$
+Know that $U_{VV}+U_{SS}>0$. Then must conclude:
+$$U_{VV},U_{SS}>0$$
+Then:
+$$U_{SS}>U_{SS}- \frac{U_{SV}^{2}}{U_{VV}}>0$$
+Therefore:
 $$C_{p}>C_{V}>0$$
- This explains why $C_{V}>0$. Also, for an isobaric system, if we put in a tiny amount of heat, only part of it is transferred to internal energy, and the other part is used to expand the volume to maintain a constant pressure. However, for a system with constant volume, all heat is used to increase the internal energy. Know that $U$ is normally a monotone increasing function of $T$, then the temperature increase in the constant volume system would be larger, leading to a smaller heat capacity. 
+This makes physical sense, because In an isobaric system, if we increase the temperature, the system would expand to maintain a constant temperature. Know that $dS=\frac{dU}{T}+p \frac{dV}{T}$. Then both the increase in the internal energy and expansion in volume would contribute to the increase of the entropy. But in a system with constant volume, if we increase the temperature, only the increase in the internal energy would contribute to the increase of the entropy. Therefore $C_{p}>C_{V}$  
+
 
 Know that:
 $$\kappa_{S}= - \frac{1}{V}\left(  \frac{\partial V}{\partial p} \right)_{S}$$
@@ -175,15 +211,16 @@ $$\begin{align}
 \kappa_{S} & =- \frac{1}{V} \frac{dV}{-\left( \frac{\partial^{2}U}{\partial V^{2}} \right)dV} \\
  & = \frac{1}{V}\left( \frac{\partial^{2}U}{\partial V^{2}} \right)_{S}^{-1}
 \end{align}$$
-Know that at equilibrium I must have: $\delta^{2}U>0$. Then:
-$$\left( \frac{\partial^{2}U}{\partial V^{2}} \right)_{S}^{}>0$$
-Therefore:
+Know that at equilibrium, I have just showed that $U_{VV}>0$. Then:
+$$\kappa_{T}>0$$
+From $1.$ I know:
+$$\frac{\kappa_{T}}{\kappa_{S}}= \frac{C_{p}}{C_{V}}$$
+Know that $\frac{C_{p}}{C_{V}}>1,\kappa_{T}>0$, then I must have:
 $$\kappa_{S}>0$$
-I just showed that $C_{p}>0$. Then from $1.$ I know that:
-$$\kappa_{T}=\kappa_{S}+ \frac{\beta_{p}^{2}VT}{C_{p}}>0$$
-Therefore:
+Then:
+$$\frac{\kappa_{T}}{\kappa_{S}}>1\implies \kappa_{T}>\kappa_{S}$$
+Then:
 $$\kappa_{T}>\kappa_{S}>0$$
-$\kappa_{S}>0$ makes sense because for an isolated system, if we reversibly compress it, the volume usually decrease. Then $\kappa_{S}= -\frac{1}{V}\left( \frac{\partial V}{\partial p} \right)_{S}>0$. For an isothermal system, if we compress it, generally the pressure would increase less than an adiabatic system. We can always imagine a heat reservoir in contact with it to take out the heat produced, such that the pressure doesn't increase that much. But for an adiabatic system, the heat cannot be taken out, and thus the kinetic energy of the particles increase rapidly, leading to a larger pressure increase. Then $\kappa_{S}>\kappa_{T}$
-
+ $\kappa_{S}>0$ makes sense because for an isolated system, if we reversibly compress it, the volume usually decrease. Then $\kappa_{S}= -\frac{1}{V}\left( \frac{\partial V}{\partial p} \right)_{S}>0$. For an isothermal system, if we compress it, to maintain the constant temperature, heat must be ejected and thus the entropy decreases. Know that $dV= \frac{T}{p}dS- \frac{dU}{p}$. Then both the decrease in the entropy and the decrease in the internal energy contributes to the decrease in the volume. However, for an adiabatic system, if we impose the constraint that $\delta S=0$, then the only contribution to the volume decrease is from the decrease of the internal energy. Therefore $\kappa_{T}>\kappa_{S}$. 
 # 5.
 ## i).
