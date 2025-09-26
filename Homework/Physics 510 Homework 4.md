@@ -224,3 +224,15 @@ $$\kappa_{T}>\kappa_{S}>0$$
  $\kappa_{S}>0$ makes sense because for an isolated system, if we reversibly compress it, the volume usually decrease. Then $\kappa_{S}= -\frac{1}{V}\left( \frac{\partial V}{\partial p} \right)_{S}>0$. For an isothermal system, if we compress it, to maintain the constant temperature, heat must be ejected and thus the entropy decreases. Know that $dV= \frac{T}{p}dS- \frac{dU}{p}$. Then both the decrease in the entropy and the decrease in the internal energy contributes to the decrease in the volume. However, for an adiabatic system, if we impose the constraint that $\delta S=0$, then the only contribution to the volume decrease is from the decrease of the internal energy. Therefore $\kappa_{T}>\kappa_{S}$. 
 # 5.
 ## i).
+By the arguments above, the system is stable if and only if:
+$$\kappa_{T}>0$$
+Consider:
+$$\begin{align}
+\kappa_{T} & = - \frac{1}{V}\left(  \frac{\partial V}{\partial p} \right)_{T} \\
+ & =- \frac{1}{V} \frac{\partial}{\partial p}\left( \frac{NkT}{p} \right) \\
+ & = \frac{1}{V} \frac{NkT}{p^{2}} \\
+ & = \frac{pV}{p^{2}V} \\
+ & = \frac{1}{p}
+\end{align}$$
+Then if $p>0$, then the ideal gas is stable. If $p<0$, the ideal gas would be unstable.
+## ii).
