@@ -162,6 +162,7 @@ In $3.$ I showed that $\kappa_{T}>0$. Assume that $T>0$. From $1.$ I know:
 $$C_{p}= C_{V}+ \frac{\beta_{p}^{2}VT}{\kappa_{T}}$$
 Then:
 $$C_{p}>C_{V}>0$$
+This makes physical sense, because if we maintain a constant volume of a system, after absorbing heat, the temperature should normally increase. This explains why $C_{V}>0$. Also, for an isobaric system, if we put in a tiny amount of heat, only part of it is transferred to internal energy, and the other part is used to expand the volume to maintain a constant pressure. However, for a system with constant volume, all heat is used to increase the internal energy. Know that $U$ is normally a monotone increasing function of $T$, then the temperature increase in the constant volume system would be larger, leading to a smaller heat capacity. 
 
 Know that:
 $$\kappa_{S}= - \frac{1}{V}\left(  \frac{\partial V}{\partial p} \right)_{S}$$
@@ -182,4 +183,7 @@ I just showed that $C_{p}>0$. Then from $1.$ I know that:
 $$\kappa_{T}=\kappa_{S}+ \frac{\beta_{p}^{2}VT}{C_{p}}>0$$
 Therefore:
 $$\kappa_{T}>\kappa_{S}>0$$
+$\kappa_{S}>0$ makes sense because for an isolated system, if we reversibly compress it, the volume usually decrease. Then $\kappa_{S}= -\frac{1}{V}\left( \frac{\partial V}{\partial p} \right)_{S}>0$. For an isothermal system, if we compress it, generally the pressure would increase less than an adiabatic system. We can always imagine a heat reservoir in contact with it to take out the heat produced, such that the pressure doesn't increase that much. But for an adiabatic system, the heat cannot be taken out, and thus the kinetic energy of the particles increase rapidly, leading to a larger pressure increase. Then $\kappa_{S}>\kappa_{T}$
 
+# 5.
+## i).
