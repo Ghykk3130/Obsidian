@@ -275,6 +275,8 @@ $$\exists U,V\text{ open w.r.t. S and disjoint s.t. }x\in U,y\in V$$
 >- $U\cap A\neq \phi,V\cap A \neq \phi$
 >- $U\cap V\cap A=\phi$
 >- $A\subset U\cup V$
+>
+>The pair $U,V$ is called a separation of $A$
 
 ^proposition143
 ## Proof.
@@ -303,6 +305,23 @@ $$f(X)\subset U\cup V \implies X\subset f^{-1}(U)\cup f^{-1}(V)$$
 >[!Right]
 >$\blacksquare$
 
+>[! Proposition 5]
+>Let $\{ A_{\alpha} \}$ be a sequence with a common point $p\in A_{\alpha},\forall \alpha$. Then:
+>$$A_{\alpha}\text{ connected }\forall \alpha \implies\cup_{\alpha}A_{\alpha}\text{ connected }$$
+## Proof.
+FTSOC设$\cup_{\alpha}A_{\alpha}$不连通。WTS: 存在一个$A_{\alpha}$不连通。
+
+考虑一对$\cup_{\alpha}A_{\alpha}$的separation $U,V$。因为：
+$$p\in\cup_{\alpha}A_{\alpha}\subset U \sqcup V$$
+不妨设$p\in U$。于是：
+$$\begin{align}
+ (\cup_{\alpha}A_{\alpha})\cap V \neq \phi & \implies A_{\alpha^{'}}\cap V\neq \phi\text{ for some }\alpha^{'} \\
+\end{align}$$
+而：
+$$p\in U \implies U\cap A_{\alpha^{'}}\neq \phi$$
+而因为$U,V$是开且disjoint的，所以$A_{\alpha^{'}}$是不连通的。$\rightarrow\leftarrow$
+>[!Right]
+>$\blacksquare$
 
 # 1.5 Product topology
 
