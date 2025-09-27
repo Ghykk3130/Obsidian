@@ -308,6 +308,8 @@ $$f(X)\subset U\cup V \implies X\subset f^{-1}(U)\cup f^{-1}(V)$$
 >[! Proposition 5]
 >Let $\{ A_{\alpha} \}$ be a sequence with a common point $p\in A_{\alpha},\forall \alpha$. Then:
 >$$A_{\alpha}\text{ connected }\forall \alpha \implies\cup_{\alpha}A_{\alpha}\text{ connected }$$
+
+^proposition145
 ## Proof.
 FTSOC设$\cup_{\alpha}A_{\alpha}$不连通。WTS: 存在一个$A_{\alpha}$不连通。
 
@@ -323,6 +325,17 @@ $$p\in U \implies U\cap A_{\alpha^{'}}\neq \phi$$
 >[!Right]
 >$\blacksquare$
 
+>[!Definition 4]
+>Given a point $x\in S$, Define the union of all the connected set containing $x$ as the connected component of $S$ containing $x$. Write $C_{x}$
+
+>[! Proposition 6]
+>Let $x,y\in S$. Then $C_{x},C_{y}$ are either disjoint or identical.
+## Proof.
+若$C_{x}\cap C_{y}\neq \phi$，则由[[Lie Group#^1759a6|proposition 1.4.5]]可知，$C_{x}\cup C_{y}$是联通的，且$x\in C_{x}\cup C_{y}$。于是由于$C_{x}$是所有包含$x$的联通集的并，所以：
+$$C_{x}\cup C_{y}\subset C_{x}$$
+而$C_{x}\in C_{x}\cup C_{y}$。所以$C_{x}=C_{x}\cup C_{y}$。同理可得$C_{y}=C_{x}\cup C_{y}$。所以$C_{x}=C_{y}$。
+>[!Right]
+>$\blacksquare$
 # 1.5 Product topology
 
 考虑两个拓扑空间$X,Y$。我们在其中分别取开集$U,V$，构成一个集合$\mathcal{B}=\{ U\times V|U\subset X,V\subset Y,\ U,V\text{ open} \}$
