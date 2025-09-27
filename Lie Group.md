@@ -336,6 +336,31 @@ $$C_{x}\cup C_{y}\subset C_{x}$$
 而$C_{x}\in C_{x}\cup C_{y}$。所以$C_{x}=C_{x}\cup C_{y}$。同理可得$C_{y}=C_{x}\cup C_{y}$。所以$C_{x}=C_{y}$。
 >[!Right]
 >$\blacksquare$
+
+>[!Corollary 1]
+>Let $f:X\rightarrow Y$ be continuous and surjective. Then:
+>- the number of connected components in $X$ $\geq$ the number of connected components in $Y$.
+## Proof.
+因为$X=\cup_{x\in X}C_{x}$，而每个$C_{x}$不是identical就是disjoint，那么$X$一定可以写为disjoint connected components的并。令：
+$$X=\sqcup_{\alpha}C_{\alpha}$$
+则：
+$$\begin{align}
+f(X)=\cup_{\alpha}f(C_{\alpha})=Y
+\end{align}$$
+因为$f(C_{\alpha})$都是联通的，但是$f(C_{\alpha})$之间不一定disjoint。所以$Y$中connected component一定更少。
+>[!Right]
+>$\blacksquare$
+
+>[!Corollary 2]
+Let $f:X\rightarrow Y$ be a homeomorphism. Then:
+>- the number of connected components in $X$ $=$ the number of connected components in $Y$.
+
+^corollary142
+## Proof.
+这是显然，因为$f,f^{-1}$都是continuous且surjective的。
+>[!Right]
+>$\blacksquare$
+
 # 1.5 Product topology
 
 考虑两个拓扑空间$X,Y$。我们在其中分别取开集$U,V$，构成一个集合$\mathcal{B}=\{ U\times V|U\subset X,V\subset Y,\ U,V\text{ open} \}$
@@ -435,5 +460,20 @@ $$\phi ^{-1}((a,b))=\{ (x,y)|y=x^{2/3},x\in(a,b) \}$$
 <div style="text-align:center">
 <img src="Pasted image 20250921220023.png" width="100">
 </div>
+考虑在p的一个到$\mathbb{R}^n$的chart $(U,f)$。
+
+>[!Idea]
+对于任意一个chart $(U,f)$，都可以不妨设$f(U)$是一个以$0$为中心的开球，且$f(p)=0$。
+
+这是因为对于任意的neighborhood $U$，考虑它的像$f(U)$。由于$f(U)$是开的，自然可以在$f(p)$附近取一个完全属于$f(U)$的小开球。因为$f$是homeomorphism，所以这个小开球的原像也在$U$内，且包含$p$。那么自然可以新设这个小开球的原像为$U$。这时$f(U)$就是一个$\mathbb{R}^{n}$中以$f(p)$为原点的小开球$B(f(p),\epsilon)$。显然存在一个从$B(f(p),\epsilon)$到$B(0,\epsilon)$的homeomorphism $\phi$。定义$\phi\circ f$为新的$f$即得到上述reduction。
+
+显然：
+$$U \setminus\{ p \}\text{ is disconnected}$$
+则：
+$$f^{-1}\text{ coninuous }\implies f^{-1}(U \setminus \{ p \})=B(0,\epsilon)\setminus \{ 0 \}\text{ disconnected}$$
+$$\implies n=1$$
+$U\setminus \{ p \}$有四个connected component。而$(-\epsilon,0)\cup(0,\epsilon)$只有两个connected component。但是由[[Lie Group#^db2309|corollary 1.4.2]]，homeomorphism应保持connected components的数目。$\rightarrow \leftarrow$
+
+
 
 
