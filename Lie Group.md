@@ -275,6 +275,8 @@ $$\exists U,V\text{ open w.r.t. S and disjoint s.t. }x\in U,y\in V$$
 >- $U\cap A\neq \phi,V\cap A \neq \phi$
 >- $U\cap V\cap A=\phi$
 >- $A\subset U\cup V$
+
+^proposition143
 ## Proof.
 ($\Leftarrow$):
 容易证明：
@@ -290,12 +292,16 @@ $$(U\cap A)\cap(V\cap A)=\phi,(U\cap A)\cup(V\cap A)=A$$
 >[!Proposition 4]
 >If $f:X\rightarrow Y$ is a continuous map, and $X$ is connected, then $f(X)$ is connected.
 ## Proof.
-FTSOC，设$f(X)$ disconnected。则一定存在$U,V\subset X$ open使得：
-- $f(U)\cup f(V)=f(X)$
-- $f(U)\cap f(V)=\phi$
-$$\begin{align}
-\implies & U\cap V =\phi
-\end{align}$$
+FTSOC，设$f(X)$ disconnected。则一定存在$U,V\subset Y\ \text{open}$使得：
+- $f(X)\subset U   \sqcup V$
+- $f(X)\cap U ,f(X)\cap V\neq \phi$
+于是·显然：
+$$f^{-1}(U)\cap f^{-1}(V)=\phi$$
+而且$f^{-1}(U),f^{-1}(V)$都是开集。并且：
+$$f(X)\subset U\cup V \implies X\subset f^{-1}(U)\cup f^{-1}(V)$$
+则由[[Lie Group#^af7aaa|proposition 1.4.3]]可知，$X$是不连通的。$\rightarrow\leftarrow$
+>[!Right]
+>$\blacksquare$
 
 
 # 1.5 Product topology
