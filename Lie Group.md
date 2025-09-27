@@ -287,6 +287,16 @@ $$(U\cap A)\cap(V\cap A)=\phi,(U\cap A)\cup(V\cap A)=A$$
 >[!Right]
 >$\blacksquare$
 
+>[!Proposition 4]
+>If $f:X\rightarrow Y$ is a continuous map, and $X$ is connected, then $f(X)$ is connected.
+## Proof.
+FTSOC，设$f(X)$ disconnected。则一定存在$U,V\subset X$ open使得：
+- $f(U)\cup f(V)=f(X)$
+- $f(U)\cap f(V)=\phi$
+$$\begin{align}
+\implies & U\cap V =\phi
+\end{align}$$
+
 
 # 1.5 Product topology
 

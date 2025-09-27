@@ -111,12 +111,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Homework/Physics 511 Homework 3.md",
+                "file": "Lie Group.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Physics 511 Homework 3"
+              "title": "Lie Group"
             }
           },
           {
@@ -516,6 +516,7 @@
   },
   "active": "413ee5f24d068fd3",
   "lastOpenFiles": [
+    "Homework/Physics 511 Homework 3.md",
     "Homework/Physics 510 Homework 4.md",
     "转动生成元.md",
     "热力学平衡.md",
@@ -531,7 +532,6 @@
     "正规矩阵的对角化.md",
     "Pictures/d38e6728541e51191977e6f796e20518.jpg",
     "Pictures/055311113a5784900872efd078cb5615.jpg",
-    "Homework/Physics 511 Homework 3.md",
     "Homework/Physics 511 Homework 2.md",
     "Lie Group.md",
     "Pictures/Pasted image 20250921220023.png",
