@@ -433,7 +433,7 @@ $$f^{-1}((a,b))=(a,b)=\cup_{n}[a+1/ n,b)$$
 >
 >Call $(U,\phi)$ a chart.
 
->[!Definition 4]
+>[!Definition 5]
 >Let $M$ be a topological space. We call $M$ a topological manifold if it is:
 >- Hausdorff
 >- second countable
@@ -474,6 +474,11 @@ $$f^{-1}\text{ coninuous }\implies f^{-1}(U \setminus \{ p \})=B(0,\epsilon)\set
 $$\implies n=1$$
 $U\setminus \{ p \}$有四个connected component。而$(-\epsilon,0)\cup(0,\epsilon)$只有两个connected component。但是由[[Lie Group#^db2309|corollary 1.4.2]]，homeomorphism应保持connected components的数目。$\rightarrow \leftarrow$
 
+# 2.2 Compatible charts
 
+>[!Definition 1]
+>Let $M$ be a topological manifold, $(U,\phi),(V,\psi)$ be charts. Define the transition functions:
+>- $\phi\circ\psi ^{-1}:\psi(U\cap V)\mapsto \phi(U\cap V)$
+>- $\psi\circ\phi ^{-1}:\phi(U\cap V)\mapsto \psi(U\cap V)$
 
 
