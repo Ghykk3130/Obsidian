@@ -481,4 +481,11 @@ $U\setminus \{ p \}$有四个connected component。而$(-\epsilon,0)\cup(0,\epsi
 >- $\phi\circ\psi ^{-1}:\psi(U\cap V)\mapsto \phi(U\cap V)$
 >- $\psi\circ\phi ^{-1}:\phi(U\cap V)\mapsto \psi(U\cap V)$
 
+>[!Definition 2]
+>Let $(U,\phi),(V,\psi)$ be charts. Then they are $C^{\infty}\text{-compatible}$ (compatible) if their transition functions $\in C^{\infty}$.
+
+>[!Definition 3]
+>Let $M$ be a topological manifold. An atlas on $M$ is a set of pairwise compatible charts that cover $M$.
+
+
 
