@@ -5,7 +5,10 @@
 1.2 [[Lie Group#^599821|Basis]]
 1.3 [[Lie Group#^b7fdc8|Second and first countability]]
 1.4 [[Lie Group#^370a40|Separation]]
-
+1.5 [[Lie Group#^7c0218|Product topology]]
+## 2. Manifolds
+2.1 [[Lie Group#^cbd87d|Topological manifolds]]
+2.2 [[Lie Group#^bd22b3|Compatible charts]]
 # 1.1 Topology and subspace
 
 ^56c0f4
@@ -363,6 +366,8 @@ Let $f:X\rightarrow Y$ be a homeomorphism. Then:
 
 # 1.5 Product topology
 
+^7c0218
+
 考虑两个拓扑空间$X,Y$。我们在其中分别取开集$U,V$，构成一个集合$\mathcal{B}=\{ U\times V|U\subset X,V\subset Y,\ U,V\text{ open} \}$
 
 容易证明：
@@ -414,6 +419,8 @@ $$X_{1}\times \dots \times U\times X_{\alpha_{i+1}}\times\dots \times X_{N}$$
 >$\blacksquare$
 
 # 2.1 Topological manifolds
+
+^cbd87d
 
 >[!Definition 1]
 >Given topological spaces $X,Y$, a function $f:X\rightarrow Y$. $f$ is a homeomorphism if:
@@ -476,6 +483,8 @@ $U\setminus \{ p \}$有四个connected component。而$(-\epsilon,0)\cup(0,\epsi
 
 # 2.2 Compatible charts
 
+^bd22b3
+
 >[!Definition 1]
 >Let $M$ be a topological manifold, $(U,\phi),(V,\psi)$ be charts. Define the transition functions:
 >- $\phi\circ\psi ^{-1}:\psi(U\cap V)\mapsto \phi(U\cap V)$
@@ -487,5 +496,19 @@ $U\setminus \{ p \}$有四个connected component。而$(-\epsilon,0)\cup(0,\epsi
 >[!Definition 3]
 >Let $M$ be a topological manifold. An atlas on $M$ is a set of pairwise compatible charts that cover $M$.
 
-
-
+## Ex:
+考虑$\mathbb{C}$中的单位圆$S^1$。
+<div style="text-align:center">
+<img src="Pasted image 20250928112331.png" width="200">
+</div>
+即：
+$$S^1=\{ e^{it}|0 \leq t <2\pi \}$$
+我们构造：
+$$U_{1}=\{ e^{it}|t\in(0,2\pi) \}$$
+$$U_{2}=\{ e^{it}|t\in[0,\pi)\cup(\pi,2\pi) \}$$
+构造：
+$$\begin{align}
+ & \phi_{1}:U_{1}\rightarrow \mathbb{R},\ e^{it}\mapsto t \\
+ & \phi_{2}:U_{2}\rightarrow \mathbb{R},\ e^{it}\mapsto t
+\end{align}$$
+则$(U_{1},\phi_{1}),(U_{2},\phi_{2})$是两个chart。
