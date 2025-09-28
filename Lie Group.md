@@ -487,7 +487,7 @@ $U\setminus \{ p \}$有四个connected component。而$(-\epsilon,0)\cup(0,\epsi
 ^bd22b3
 
 >[!Definition 1]
->Let $M$ be a topological manifold, $(U,\phi),(V,\psi)$ be charts. Define the transition functions:
+>Let $M$ be a locally Euclidean space, (not necessarily second countable or Hausdorff.) $(U,\phi),(V,\psi)$ be charts. Define the transition functions:
 >- $\phi\circ\psi ^{-1}:\psi(U\cap V)\mapsto \phi(U\cap V)$
 >- $\psi\circ\phi ^{-1}:\phi(U\cap V)\mapsto \psi(U\cap V)$
 
@@ -495,7 +495,7 @@ $U\setminus \{ p \}$有四个connected component。而$(-\epsilon,0)\cup(0,\epsi
 >Let $(U,\phi),(V,\psi)$ be charts. Then they are $C^{\infty}\text{-compatible}$ (compatible) if their transition functions $\in C^{\infty}$.
 
 >[!Definition 3]
->Let $M$ be a topological manifold. An atlas on $M$ is a set of pairwise compatible charts that cover $M$.
+>Let $M$ be a locally Euclidean space. An atlas on $M$ is a set of pairwise compatible charts that cover $M$.
 
 ## Ex:
 考虑$\mathbb{C}$中的单位圆$S^1$。
@@ -573,5 +573,13 @@ $$\sigma\circ\psi ^{-1}\in C^{\infty}$$
 # 2.3 Smooth manifolds
 
 ^f2d166
+>[!Definition 1]
+>Let $M$ be a locally Euclidean space. Let $\mathfrak{M}$ be an atlas. Then $\mathfrak{M}$ is called the maximal atlas if
+>$$\mathfrak{N}\text{ is an atlas}\implies \mathfrak{N}\subset \mathfrak{M}$$
 
+>[!Definition 2]
+>A smooth ($C^{\infty}$) manifold is a topological manifold with a maximal atlas. 
 
+>[!Proposition 1]
+>Let $M$ be a locally Euclidean space. Then any atlas over $M$ is contained in a unique maximal atlas.
+## Proof.
