@@ -530,7 +530,15 @@ U_{1}\cap U_{2} & =\{ e^{it}|-\pi<t<0,\ 0<t<\pi \} \\
 先来研究$\phi_{2}^{-1}\circ\phi_{1}$。它的domain为：
 $$\phi_{1}(U_{1}\cap U_{2})=(-\pi,0)\cup(0,\pi)$$
 取$t\in(-\pi,0)$，则它的映射如下：
-$$t\overset{\phi_{1}}{\rightarrow}e^{it}\overset{\phi_{2}^{-1}}{\}$$
+$$t\overset{\phi_{1}}{\rightarrow}e^{it}\overset{\phi_{2}^{-1}}{\rightarrow}\pi+t$$
+取$t\in(0,\pi)$，则它的映射如下：
+$$t\overset{\phi_{1}}{\rightarrow}e^{it}\overset{\phi_{2}^{-1}}{\rightarrow}t$$
+于是：
+$$\phi_{2}^{-1}\circ\phi_{1}(t)=\left\{ \begin{align}
+ & \pi+t,t\in(-\pi,0) \\
+ & t,t\in(0,\pi)
+\end{align}\right.$$
+显然它是$C^{\infty}$的。再来研究$\phi_{1}^{-1}\circ\phi_{2}$。它的domain为：$$
 
 
 则$(U_{1},\phi_{1}),(U_{2},\phi_{2})$是两个chart。考虑它们的transition function：
