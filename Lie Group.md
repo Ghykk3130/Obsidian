@@ -9,6 +9,7 @@
 ## 2. Manifolds
 2.1 [[Lie Group#^cbd87d|Topological manifolds]]
 2.2 [[Lie Group#^bd22b3|Compatible charts]]
+2.3 [[Lie Group#^f2d166|Smooth manifolds]]
 # 1.1 Topology and subspace
 
 ^56c0f4
@@ -527,24 +528,50 @@ $$\begin{align}
 U_{1}\cap U_{2} & =\{ e^{it}|-\pi<t<0,\ 0<t<\pi \} \\
  & =\{ e^{it}|0<t<\pi,\ \pi < t <2\pi \}
 \end{align}$$
-先来研究$\phi_{2}^{-1}\circ\phi_{1}$。它的domain为：
+先来研究$\phi_{2}^{}\circ\phi_{1}^{-1}$。它的domain为：
 $$\phi_{1}(U_{1}\cap U_{2})=(-\pi,0)\cup(0,\pi)$$
 取$t\in(-\pi,0)$，则它的映射如下：
-$$t\overset{\phi_{1}}{\rightarrow}e^{it}\overset{\phi_{2}^{-1}}{\rightarrow}\pi+t$$
+$$t\overset{\phi_{1}^{-1}}{\rightarrow}e^{it}\overset{\phi_{2}^{}}{\rightarrow}\pi+t$$
 取$t\in(0,\pi)$，则它的映射如下：
-$$t\overset{\phi_{1}}{\rightarrow}e^{it}\overset{\phi_{2}^{-1}}{\rightarrow}t$$
+$$t\overset{\phi_{1}^{-1}}{\rightarrow}e^{it}\overset{\phi_{2}^{}}{\rightarrow}t$$
 于是：
-$$\phi_{2}^{-1}\circ\phi_{1}(t)=\left\{ \begin{align}
+$$\phi_{2}^{}\circ\phi_{1}^{-1}(t)=\left\{ \begin{align}
  & \pi+t,t\in(-\pi,0) \\
  & t,t\in(0,\pi)
 \end{align}\right.$$
-显然它是$C^{\infty}$的。再来研究$\phi_{1}^{-1}\circ\phi_{2}$。它的domain为：$$
+显然它是$C^{\infty}$的。再来研究$\phi_{1}^{}\circ\phi_{2}^{-1}$。它的domain为：
+$$\phi_{2}(U_{1}\cap U_{2})=(0,\pi)\cup(\pi,2\pi)$$
+同样容易得到：
+$$\phi_{1}\circ \phi_{2}^{-1}(t)= \left\{\begin{align}
+ & t, t\in(0,\pi) \\
+ & t-\pi,t\in(\pi,2\pi)
+\end{align}\right.$$
+这两个函数显然都是$C^{\infty}$的。于是这两个chart构成一个atlas。
+## Caveat
+若$(U_{1},\phi_{1}),(U_{2},\phi_{2})$ compatible，且$(U_{2},\phi_{2}),(U_{3},\phi_{3})$ compatible，那么$(U_{1},\phi_{1}),(U_{2},\phi_{2})$不一定compatible。
 
+这不是因为$U_{1}\cap U_{2}\cap U_{3}$可能为空。（如果为空，则$(U_{1},\phi_{1}),(U_{2},\phi_{2})$ trivially compatible。）这是因为我们唯一可能构造的$U_{1},U_{3}$之间的transition function为：
+$$(\phi_{3}\circ\phi_{2}^{-1})\circ(\phi_{2}\circ\phi_{1}^{-1})$$
+它是定义在$U_{1}\cap U_{2}\cap U_{3}$上的$C^{\infty}$函数。但是这个构造在$(U_{1}\cap{U_{3}})\setminus(U_{1}\cap U_{2}\cap U_{3})$上是无定义的。我可以随意在令$\phi_{1},\phi_{3}$在这部分复合出一个不$C^{\infty}$的transition function，而不受到题中任何限制。因此compatibiltity不是equivalence relation。
 
-则$(U_{1},\phi_{1}),(U_{2},\phi_{2})$是两个chart。考虑它们的transition function：
-$$\begin{align}
- & \phi_{1}^{-1}\circ \phi_{2}:(0,\pi)\cup(\pi,2\pi) \rightarrow [0,\pi)\cup(\pi,2\pi),\ t\mapsto e^{it}\mapsto t \\
- & \phi_{2}^{-1}\circ\phi_{1}:(0,\pi)\cup(\pi,2\pi)\rightarrow (0,2\pi),\ t\mapsto e^{it}\mapsto t 
-\end{align}$$
-这两个函数显然都是$C^{\infty}$的。
+>[!Definition 4]
+>A chart is compatible with an atlas if it is compatible with all charts in that atlas.
+
+>[!Lemma 1]
+>Let $\{ (U_{\alpha},\phi_{\alpha}) \}$ be an atlas, $(V,\psi),(W,\sigma)$ be charts. If $(V,\psi),(W,\sigma)$ are compatible with the atlas respectively, then they are compatible.
+## Proof.
+首先验证，$\sigma\circ\psi ^{-1}$在$\psi(V\cap W)$上是$C^{\infty}$的。任取$x\in \psi(V\cap W)$，则一定存在$\alpha$使得：
+$$x\in \psi(V\cap W\cap U_{\alpha})$$
+那么$\phi_{\alpha}\circ\psi ^{-1}$必定在$x$是$C^{\infty}$的。由于$\phi_{\alpha}\circ \psi ^{-1}(x)$在$\sigma\circ\phi_{\alpha}^{-1}$的domain之内，且$\sigma\circ \phi_{\alpha}^{-1}$是$C^{\infty}$的，那么：
+$$(\sigma\circ\phi_{\alpha}^{-1})\circ(\phi_{\alpha}\circ\psi ^{-1})=\sigma\circ\psi ^{-1}|_{\psi(V\cap W\cap W_{\alpha})}\in C^{\infty}$$
+而这对于任意$x\in \psi(V\cap W)$都成立。那么：
+$$\sigma\circ\psi ^{-1}\in C^{\infty}$$
+类似的，容易证明$\psi\circ\sigma ^{-1}\in C^{\infty}$。
+>[!Right]
+>$\blacksquare$
+
+# 2.3 Smooth manifolds
+
+^f2d166
+
 
