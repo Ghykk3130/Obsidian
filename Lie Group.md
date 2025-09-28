@@ -504,11 +504,39 @@ $U\setminus \{ p \}$有四个connected component。而$(-\epsilon,0)\cup(0,\epsi
 即：
 $$S^1=\{ e^{it}|0 \leq t <2\pi \}$$
 我们构造：
-$$U_{1}=\{ e^{it}|t\in(0,2\pi) \}$$
-$$U_{2}=\{ e^{it}|t\in[0,\pi)\cup(\pi,2\pi) \}$$
+$$\begin{align}
+ & U_{1}=S^{1} \setminus \{ -1 \} \\
+ & U_{2}=S^{1} \setminus \{ 1 \}
+\end{align}$$
+则：
+$$\begin{align}
+ & U_{1}=\{ e^{it}|-\pi<t<\pi \} \\
+ & U_{2}=\{ e^{it}|0<t<2\pi \}
+\end{align}$$
 构造：
 $$\begin{align}
  & \phi_{1}:U_{1}\rightarrow \mathbb{R},\ e^{it}\mapsto t \\
  & \phi_{2}:U_{2}\rightarrow \mathbb{R},\ e^{it}\mapsto t
 \end{align}$$
-则$(U_{1},\phi_{1}),(U_{2},\phi_{2})$是两个chart。
+则$\phi_{1},\phi_{2}$是homeomorphism。而$(U_{1},\phi_{1}),(U_{2},\phi_{2})$是chart。
+
+**Caveat: 如果$U_{1},U_{2}$中$t$的取值范围不是$\mathbb{R}$中开集，那么$\phi_{1}(U_{1}),\phi_{2}(U_{2})$就不是开集。那么$(U_{1},\phi_{1}),(U_{2},\phi_{2})$就不是chart。**
+
+需要注意，$U_{1}\cap U_{2}$在$U_{1},U_{2}$中相应parameter $t$的取值范围内有两种不同的表达方式：
+$$\begin{align}
+U_{1}\cap U_{2} & =\{ e^{it}|-\pi<t<0,\ 0<t<\pi \} \\
+ & =\{ e^{it}|0<t<\pi,\ \pi < t <2\pi \}
+\end{align}$$
+先来研究$\phi_{2}^{-1}\circ\phi_{1}$。它的domain为：
+$$\phi_{1}(U_{1}\cap U_{2})=(-\pi,0)\cup(0,\pi)$$
+取$t\in(-\pi,0)$，则它的映射如下：
+$$t\overset{\phi_{1}}{\rightarrow}e^{it}\overset{\phi_{2}^{-1}}{\}$$
+
+
+则$(U_{1},\phi_{1}),(U_{2},\phi_{2})$是两个chart。考虑它们的transition function：
+$$\begin{align}
+ & \phi_{1}^{-1}\circ \phi_{2}:(0,\pi)\cup(\pi,2\pi) \rightarrow [0,\pi)\cup(\pi,2\pi),\ t\mapsto e^{it}\mapsto t \\
+ & \phi_{2}^{-1}\circ\phi_{1}:(0,\pi)\cup(\pi,2\pi)\rightarrow (0,2\pi),\ t\mapsto e^{it}\mapsto t 
+\end{align}$$
+这两个函数显然都是$C^{\infty}$的。
+
