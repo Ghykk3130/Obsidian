@@ -644,7 +644,7 @@ $\mathbb{R}^n$是一个光滑流形。
 >$$\Gamma(f)=\{ (x,f(x))|x\in A \}\subset \mathbb{R}^n\times \mathbb{R}^m$$
 
 ## Ex:
-令$f:A \subset \mathbb{R}^n\rightarrow \mathbb{R}^m,\ f\in C^{\infty}$。则$\Gamma(f)$是一个光滑流形。
+令$f:A \subset \mathbb{R}^n\rightarrow \mathbb{R}^m,\ A\text{ open},\ f\in C^{\infty}$。则$\Gamma(f)$是一个光滑流形。
 
 直觉上来讲，$\Gamma(f)$应该是一个n-manifold，因为其自变量只有$n$个“自由度”。从$\Gamma(f)$到$\mathbb{R}^n$的homeomorphism应该大概是将graph投影到“x轴”上的算子。只不过这里的“x轴”是n维的。
 
