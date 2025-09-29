@@ -577,7 +577,7 @@ $$\sigma\circ\psi ^{-1}\in C^{\infty}$$
 >Let $M$ be a locally Euclidean space. Let $\mathfrak{M}$ be an atlas. Then $\mathfrak{M}$ is called the maximal atlas if
 >$$\mathfrak{M}\subset\mathfrak{U}\text{ atlas } \implies \mathfrak{U}= \mathfrak{M}$$
 ## Remark
-我们发现，一个locally Euclidean space可以有很多歌maximal atlas。只要这些maximal atlas不相互包含就可以了。这其中并没有什么矛盾。
+我们发现，一个locally Euclidean space可以有很多个maximal atlas。只要这些maximal atlas不相互包含就可以了。这其中并没有什么矛盾。
 
 >[!Definition 2]
 >A smooth ($C^{\infty}$) manifold is a topological manifold with a maximal atlas. Also call smooth manifolds manifolds.
@@ -656,6 +656,13 @@ $\mathbb{R}^n$是一个光滑流形。
 
 $\phi$显然是injective的，于是规定了合适的codomin后它是bijective的。从而$\phi$是一个homeomorphism。
 
-任取$x\in A$，取$U \ni x \text{ open}$。则$(U,\phi:U\rightarrow \phi(U))$是一个chart。在$A$中每点取出这样一个chart，它们全都compatible。这是因为若两个chart $(U,\phi),(V,\phi)$的domain可以构成一个atlas。这
+>[!Idea 1]
+>若找到一个对于全空间$M$都适用的homeomorphism $\phi$，则可以直接用$(M,\phi)$ 构成一个single chart。这个single chart自然构成一个trivial atlas。
+
+任取$x\in A$，取$\Gamma(f) \ni x \text{ open}$。则$(\Gamma(f),\phi)$是一个chart。这个chart构成一个trivial atlas。又因为$\Gamma(f)\subset \mathbb{R}^n\times \mathbb{R}^m\text{ second countable and Hausdorff}$，所以$\Gamma(f)$是一个n-manifold。
+
+
+
+
 
 
