@@ -637,18 +637,24 @@ $\mathbb{R}^n$是一个光滑流形。
 
 >[!Definition 1]
 >Let $f:\mathbb{R}^n\rightarrow \mathbb{R}^m$ be a function. Let $f(x)=(f_{1}(x),\dots,f_{m}(x))$. We say that $f\in C^{\infty}$ if
->$$\frac{\partial^k f_{j}}{\partial x_{1}^{k_{1}} \dots \partial x_{n}^{k_{n}}}\in C^1(\mathbb{R}^n),\ k_{1}+\dots+k_{n}=k,\ \forall k \in \mathbb{N},j\in \{ 1,\dots,m \}$$
+>$$\frac{\partial^k f_{j}}{\partial x_{1}^{k_{1}} \dots \partial x_{n}^{k_{n}}}\in C^0(\mathbb{R}^n),\ \forall k\in \mathbb{N},\ k_{1}+\dots+k_{n}=k,\ j\in \{ 1,\dots,m \}$$
 
 >[!Definition 2]
->Let $f:\mathbb{R}^n\rightarrow \mathbb{R}^m$ be a function. The graph of $f$ is:
->$$\Gamma(f)=\{ (x,f(x)) \}\subset \mathbb{R}^n\times \mathbb{R}^m$$
+>Let $f:A \subset \mathbb{R}^n\rightarrow \mathbb{R}^m$ be a function. The graph of $f$ is:
+>$$\Gamma(f)=\{ (x,f(x))|x\in A \}\subset \mathbb{R}^n\times \mathbb{R}^m$$
 
 ## Ex:
-令$f:\mathbb{R}^n\rightarrow \mathbb{R}^m$。则$\Gamma(f)$是一个光滑流形。
+令$f:\mathbb{R}^n\rightarrow \mathbb{R}^m,\ f\in C^{\infty}$。则$\Gamma(f)$是一个光滑流形。
 
 直觉上来讲，$\Gamma(f)$应该是一个n-manifold，因为其自变量只有$n$个“自由度”。从$\Gamma(f)$到$\mathbb{R}^n$的homeomorphism应该大概是将graph投影到“x轴”上的算子。只不过这里的“x轴”是n维的。
 
-定义投影算子$\phi:\mathbb{R}^n\times \mathbb{R}^m\rightarrow \mathbb{R}^n,\ (x,f(x))\mapsto x$。我们来验证$\phi$是连续的。验证$\phi$连续只需要验证它的分量连续。提取出$\phi$的第$j$个分量$\phi_{j}(x)=x_{j}$。这玩意显然是连续的。甚至是可导的。
+定义投影算子$\phi:\mathbb{R}^n\times \mathbb{R}^m\rightarrow \mathbb{R}^n,\ (x,f(x))\mapsto x$。我们来验证$\phi$是连续的。
+
+验证$\phi$连续只需要验证它的分量连续。提取出$\phi$的第$j$个分量$\phi_{j}(x)=x_{j}$。这玩意显然是连续的。甚至是可导的。
+
+接下来验证$\phi ^{-1}$是连续的。显然$\phi ^{-1}:\mathbb{R}^n\rightarrow \mathbb{R}^n\times \mathbb{R}^m,\ x\mapsto(x,f(x))$。提取出$\phi ^{-1}$的第$j$个分量。这个分量要么是$f_{k}(x)\text{ for some }k$，要么是$x_{l}\text{ for some }l$。显然两者都是连续的。
+
+
 
 
 
