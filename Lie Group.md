@@ -639,6 +639,16 @@ $\mathbb{R}^n$是一个光滑流形。
 >Let $f:\mathbb{R}^n\rightarrow \mathbb{R}^m$ be a function. Let $f(x)=(f_{1}(x),\dots,f_{m}(x))$. We say that $f\in C^{\infty}$ if
 >$$\frac{\partial^k f_{j}}{\partial x_{1}^{k_{1}} \dots \partial x_{n}^{k_{n}}}\in C^1(\mathbb{R}^n),\ k_{1}+\dots+k_{n}=k,\ \forall k \in \mathbb{N},j\in \{ 1,\dots,m \}$$
 
+>[!Definition 2]
+>Let $f:\mathbb{R}^n\rightarrow \mathbb{R}^m$ be a function. The graph of $f$ is:
+>$$\Gamma(f)=\{ (x,f(x)) \}\subset \mathbb{R}^n\times \mathbb{R}^m$$
+
+## Ex:
+令$f:\mathbb{R}^n\rightarrow \mathbb{R}^m$。则$\Gamma(f)$是一个光滑流形。
+
+直觉上来讲，$\Gamma(f)$应该是一个n-manifold，因为其自变量只有$n$个“自由度”。从$\Gamma(f)$到$\mathbb{R}^n$的homeomorphism应该大概是将graph投影到“x轴”上的算子。只不过这里的“x轴”是n维的。
+
+定义投影算子$\phi:\mathbb{R}^n\times \mathbb{R}^m\rightarrow \mathbb{R}^n,\ (x,f(x))\mapsto x$。我们来验证$\phi$是连续的。验证$\phi$连续只需要验证它的分量连续。提取出$\phi$的第$j$个分量$\phi_{j}(x)=x_{j}$。这玩意显然是连续的。甚至是可导的。
 
 
 
