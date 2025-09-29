@@ -644,7 +644,7 @@ $\mathbb{R}^n$是一个光滑流形。
 >$$\Gamma(f)=\{ (x,f(x))|x\in A \}\subset \mathbb{R}^n\times \mathbb{R}^m$$
 
 ## Ex:
-令$f:\mathbb{R}^n\rightarrow \mathbb{R}^m,\ f\in C^{\infty}$。则$\Gamma(f)$是一个光滑流形。
+令$f:A \subset \mathbb{R}^n\rightarrow \mathbb{R}^m,\ f\in C^{\infty}$。则$\Gamma(f)$是一个光滑流形。
 
 直觉上来讲，$\Gamma(f)$应该是一个n-manifold，因为其自变量只有$n$个“自由度”。从$\Gamma(f)$到$\mathbb{R}^n$的homeomorphism应该大概是将graph投影到“x轴”上的算子。只不过这里的“x轴”是n维的。
 
@@ -654,7 +654,8 @@ $\mathbb{R}^n$是一个光滑流形。
 
 接下来验证$\phi ^{-1}$是连续的。显然$\phi ^{-1}:\mathbb{R}^n\rightarrow \mathbb{R}^n\times \mathbb{R}^m,\ x\mapsto(x,f(x))$。提取出$\phi ^{-1}$的第$j$个分量。这个分量要么是$f_{k}(x)\text{ for some }k$，要么是$x_{l}\text{ for some }l$。显然两者都是连续的。
 
+$\phi$显然是injective的，于是规定了合适的codomin后它是bijective的。从而$\phi$是一个homeomorphism。
 
-
+任取$x\in A$，取$U \ni x \text{ open}$。则$(U,\phi:U\rightarrow \phi(U))$是一个chart。在$A$中每点取出这样一个chart，它们全都compatible。这是因为若两个chart $(U,\phi),(V,\phi)$的domain可以构成一个atlas。这
 
 
