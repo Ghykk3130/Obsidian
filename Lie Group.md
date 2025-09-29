@@ -607,7 +607,7 @@ $\mathfrak{M}$显然是一个atlas。因为所有和$\mathfrak{U}$ compatible的
 >Given a manifold and a chart $(U,\phi)$, define the local coordinates on $U$ as a function: $x^{i}=r^{i}\circ\phi$
 >Sometimes denote $\phi$ by $(x^1,\dots,x^n)$.
 
-# 2.4 Example of smooth manifolds
+# 2.4 Examples of smooth manifolds
 
 ## Ex:
 $\mathbb{R}^n$是一个光滑流形。
@@ -626,6 +626,15 @@ $\mathbb{R}^n$是一个光滑流形。
 
 我们先来看$\mathbb{R}^0$是什么。$\mathbb{R}^0$是一个只含有一个什么都没有的tuple的集合。即$\mathbb{R}^0=\{ () \}$。
 
-我们定义$S$的拓扑为$P(S)$。显然$S$是second countable且Hausdorff的。任取一点$p\in S$，取开集$\{ p \}\ni p$。令$\phi:\{ p \}\rightarrow \mathbb{R}^{0},\ p\mapsto()$。显然$\phi$是一个homeomorphism。于是考虑$\{ (\{ p\in S \},\phi) \}$。这个集合中每个chart定义域都没有交集，所以trivially compatible，故构成一个atlas
+我们定义$S$的拓扑为$P(S)$。显然$S$是second countable且Hausdorff的。任取一点$p\in S$，取开集$\{ p \}\ni p$。令$\phi:\{ p \}\rightarrow \mathbb{R}^{0},\ p\mapsto()$。显然$\phi$是一个homeomorphism。于是考虑$\{ (\{ p\in S \},\phi) \}$。这个集合中每个chart定义域都没有交集，所以trivially compatible，故构成一个atlas。
+
+## Ex:
+我们可以反过来证明，若$S$是一个0-manifold，则$S$必定为离散集。
+
+任取$p\in S$。考虑$U\ni p\text{ open}$。则存在一个homeomorphism $\phi:U\rightarrow \mathbb{R}^0$。因为homeomorphism是双射，所以$|U|=|\mathbb{R}^0|=1$。$\implies U=\{ p \}$。$\implies \text{ S has discrete topology}$。
+
+于是显然所有singleton set构成一个baisi。second countable$\implies$$S$中包含单个点的个数至多是可数个。
+
+
 
 
