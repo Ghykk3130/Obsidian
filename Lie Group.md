@@ -636,6 +636,9 @@ $\mathbb{R}^n$是一个光滑流形。
 于是显然所有singleton set构成一个baisi。second countable$\implies$$S$中包含单个点的个数至多是可数个。
 
 >[!Definition 1]
->Let $f:\mathbb{R}^n\rightarrow \mathbb{R}^m$ be a function. Let $f(x)=(f_{1}(x),\dots,f_{m}(x))$. We
+>Let $f:\mathbb{R}^n\rightarrow \mathbb{R}^m$ be a function. Let $f(x)=(f_{1}(x),\dots,f_{m}(x))$. We say that $f\in C^{\infty}$ if
+>$$\frac{\partial^k f_{j}}{\partial x_{1}^{k_{1}} \dots \partial x_{n}^{k_{n}}}\in C^1(\mathbb{R}^n),\ k_{1}+\dots+k_{n}=k,\ \forall k \in \mathbb{N},j\in \{ 1,\dots,m \}$$
+
+
 
 
