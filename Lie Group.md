@@ -621,6 +621,11 @@ $\mathbb{R}^n$是一个光滑流形。
 
 任取$(U_{\alpha_{1}}\cap V,\phi_{\alpha_{1}}|_{U_{\alpha_{1}}\cap V}),(U_{\alpha_{2}}\cap V,\phi_{\alpha_{2}}|_{U_{\alpha_{2}}\cap V})$，容易证明$\phi_{\alpha_{1}}|_{U_{\alpha_{1} }\cap V},\phi_{\alpha_{2}}|_{U_{\alpha_{2}}\cap V}$都是两个开集之间的homeomorphism。现在来看它们是否compatible。略去restriction的符号不写，$\phi_{\alpha_{1}}\circ\phi_{\alpha_{2}}^{-1}$是一个restrict到$\phi_{\alpha_{2}}(U_{\alpha_{1}}\cap U_{\alpha_{2}}\cap V)$上的函数。而没有restriction时，$\phi_{\alpha_{1}}\circ\phi_{\alpha_{2}}^{-1}$是$C^{\infty}$的。任何$C^{\infty}$函数restrict到开集上还是$C^{\infty}$。于是$\phi_{\alpha_{1}}\circ\phi_{\alpha_{2}}^{-1}$restrict到$\phi_{\alpha_{2}}(U_{\alpha_{1}}\cap U_{\alpha_{2}}\cap V)$上是$C^{\infty}$的。由于对称性，另一个transition function也是$C^{\infty}$的。
 
+## Ex:
+考虑一个离散集$S$。（离散集的定义就是$|S|\leq|\mathbb{Q}|$。）则$S$是一个0-manifold。
 
+我们先来看$\mathbb{R}^0$是什么。$\mathbb{R}^0$是一个只含有一个什么都没有的tuple的集合。即$\mathbb{R}^0=\{ () \}$。
+
+我们定义$S$的拓扑为$P(S)$。显然$S$是second countable且Hausdorff的。任取一点$p\in S$，取开集$\{ p \}\ni p$。令$\phi:\{ p \}\rightarrow \mathbb{R}^{0},\ p\mapsto()$。显然$\phi$是一个homeomorphism。于是考虑$\{ (\{ p\in S \},\phi) \}$。这个集合中每个chart定义域都没有交集，所以trivially compatible，故构成一个atlas
 
 
