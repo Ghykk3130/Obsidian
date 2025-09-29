@@ -657,9 +657,33 @@ $\mathbb{R}^n$是一个光滑流形。
 $\phi$显然是injective的，于是规定了合适的codomin后它是bijective的。从而$\phi$是一个homeomorphism。
 
 >[!Idea 1]
->若找到一个对于全空间$M$都适用的homeomorphism $\phi$，则可以直接用$(M,\phi)$ 构成一个single chart。这个single chart自然构成一个trivial atlas。
+>若找到一个对于全空间$M$都适用的homeomorphism $\phi$，且$\phi(M)\subset \mathbb{R}^n$是开集的话，则可以直接用$(M,\phi)$ 构成一个single chart。这个single chart自然构成一个trivial atlas。
+
+^76428d
 
 任取$x\in A$，取$\Gamma(f) \ni x \text{ open}$。则$(\Gamma(f),\phi)$是一个chart。这个chart构成一个trivial atlas。又因为$\Gamma(f)\subset \mathbb{R}^n\times \mathbb{R}^m\text{ second countable and Hausdorff}$，所以$\Gamma(f)$是一个n-manifold。
+## Remark
+1. 上述证明中，若$A$不是开集，那么$\phi(\Gamma(f))$就不是一个$\mathbb{R}^n$中的开集。于是$\phi$就构不成一个chart。因为要构成chart要求$\phi$的像是$\mathbb{R}^n$中开集，而不是$\mathbb{R}^n$的某个子空间的开集。由此可见[[Lie Group#^76428d|idea 2.4.1]]中假设$\phi(M)\subset \mathbb{R}^n$为开集十分重要。
+2. 其实上述证明只需要$f\in C^0$就可以证明$\Gamma(f)$是一我们定义下的个光滑n-manifold。但是有的地方对光滑流形的定义不一样，所以我们才要求$f\in C^{\infty}$。
+
+>[!Definition 3]
+>Define the general linear group:
+>$$GL(n,\mathbb{R})=\{ A\in M_{n}(\mathbb{R})|A\text{ non-singular} \}$$
+>where $M_{n}(\mathbb{R})$ is the group of $n\times n$ real matrices.
+
+## Ex:
+$GL(n,\mathbb{R})$是一个$n^{2}$-manifold。因为显然$M_{n}(\mathbb{R})$和$\mathbb{R}^{n^{2}}$同构，所以$GL(n,\mathbb{R})$可以看做$\mathbb{R}^{n^{2}}$的一个子集。我们直接用$\mathbb{R}^{n^{2}}$的自然拓扑定义$GL(n,\mathbb{R})$的拓扑。
+
+接下来只用证$GL(n,\mathbb{R})$同构于$\mathbb{R}^{n^{2}}$的某个开子集$A$即可。因为一旦证到同构，根据[[Lie Group#^76428d|idea 2.4.1]]，可以构造出chart $(A,\mathbb{1})$。
+
+注意到$\det$函数是一个关于所有矩阵元的多项式，所以$\det$连续。因此$\det ^{-1}(\mathbb{R} \setminus \{ 0 \})$是开集。而$GL(n,\mathbb{R})$正是同构于$A=\det ^{-1}(\mathbb{R} \setminus \{ 0 \})$。
+
+
+
+
+
+
+
 
 
 
