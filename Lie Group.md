@@ -575,11 +575,52 @@ $$\sigma\circ\psi ^{-1}\in C^{\infty}$$
 ^f2d166
 >[!Definition 1]
 >Let $M$ be a locally Euclidean space. Let $\mathfrak{M}$ be an atlas. Then $\mathfrak{M}$ is called the maximal atlas if
->$$\mathfrak{N}\text{ is an atlas}\implies \mathfrak{N}\subset \mathfrak{M}$$
+>$$\mathfrak{M}\subset\mathfrak{U}\text{ atlas } \implies \mathfrak{U}= \mathfrak{M}$$
+## Remark
+我们发现，一个locally Euclidean space可以有很多歌maximal atlas。只要这些maximal atlas不相互包含就可以了。这其中并没有什么矛盾。
 
 >[!Definition 2]
->A smooth ($C^{\infty}$) manifold is a topological manifold with a maximal atlas. 
+>A smooth ($C^{\infty}$) manifold is a topological manifold with a maximal atlas. Also call smooth manifolds manifolds.
 
 >[!Proposition 1]
->Let $M$ be a locally Euclidean space. Then any atlas over $M$ is contained in a unique maximal atlas.
+>Let $M$ be a locally Euclidean space. Given an atlas $\mathfrak{U}$ over $M$, $\mathfrak{U}$ must be contained in a unique maximal atlas.
 ## Proof.
+我们先构造出一个最大的atlas，然后证明这个最大的atlas是unique的。任取一个atlas $\mathfrak{U}$，将所有和$\mathfrak{U}$ compatible的chart全部加到$\mathfrak{U}$中构成一个更大的集合$\mathfrak{M}$。
+
+$\mathfrak{M}$显然是一个atlas。因为所有和$\mathfrak{U}$ compatible的chart都相互compatible。所以$\mathfrak{M}$中chart全部compatible。
+
+若存在一个更大的atlas $\mathfrak{N}$ such that $\mathfrak{M}\subset\mathfrak{N}$，则任取$(U,\phi)\in\mathfrak{N}$，$(U,\phi)$必定和$\mathfrak{M}$中所有的chart compatible。$\implies$ $(U,\phi)$必定和$\mathfrak{U}$ compatible。$\implies (U,\phi)\subset\mathfrak{M}$。$\implies\mathfrak{N}\subset\mathfrak{M}\implies\mathfrak{N}=\mathfrak{M}$
+
+现在证明这种构造是唯一的。不妨设我们按照上面相同步骤构造出$\mathfrak{M}^{'}$。则$\mathfrak{M}^{'}$中任取一个chart都和$\mathfrak{U}$ compatible，从而属于$\mathfrak{M}\implies\mathfrak{M}^{'}\subset\mathfrak{M}$。同理可证$\mathfrak{M}\subset\mathfrak{M}^{'}$。
+>[!Right]
+>$\blacksquare$
+## Remark
+从上面证明可以看出，验证一个拓扑空间是否是manifold只需要：
+- 验证second countable和Hausdorff
+- 找出一个atlas
+我们只要找出了一个atlas，就一定可以从这个atlas拓展到一个maximal atlas。
+
+
+>[!Definition 3]
+>Define the projection operator:
+>$$r^{i}:\mathbb{R}^n\rightarrow \mathbb{R},\ x\mapsto \text{ the ith coordinate of }x$$
+>Given a manifold and a chart $(U,\phi)$, define the local coordinates on $U$ as a function: $x^{i}=r^{i}\circ\phi$
+>Sometimes denote $\phi$ by $(x^1,\dots,x^n)$.
+
+# 2.4 Example of smooth manifolds
+
+## Ex:
+$\mathbb{R}^n$是一个光滑流形。
+
+显然$\mathbb{R}^n$是second countable且Hausdorff的。考虑一个chart $(\mathbb{R}^n,\mathbb{1})$，$\mathbb{1}$显然是一个homeomorphism。再考虑一个atlas $\{ (\mathbb{R}^n,\mathbb{1}) \}$。因为这玩意里面只有一个chart，所以vacuously compatible，构成一个atlas。
+
+## Ex:
+令$M$为一光滑流形。则$V\subset M\text{ open}$也是一个光滑流形。
+
+显然$V$是second countable且Hausdorff的。令$\{ (U_{\alpha},\phi_{\alpha}) \}$为$M$的一个atlas。则$\{ (U_{\alpha}\cap V,\phi_{\alpha}|_{U_{\alpha}\cap V}) \}$是$V$的一个atlas。这是因为：
+
+任取$(U_{\alpha_{1}}\cap V,\phi_{\alpha_{1}}|_{U_{\alpha_{1}}\cap V}),(U_{\alpha_{2}}\cap V,\phi_{\alpha_{2}}|_{U_{\alpha_{2}}\cap V})$，容易证明$\phi_{\alpha_{1}}|_{U_{\alpha_{1} }\cap V},\phi_{\alpha_{2}}|_{U_{\alpha_{2}}\cap V}$都是两个开集之间的homeomorphism。现在来看它们是否compatible。略去restriction的符号不写，$\phi_{\alpha_{1}}\circ\phi_{\alpha_{2}}^{-1}$是一个restrict到$\phi_{\alpha_{2}}(U_{\alpha_{1}}\cap U_{\alpha_{2}}\cap V)$上的函数。而没有restriction时，$\phi_{\alpha_{1}}\circ\phi_{\alpha_{2}}^{-1}$是$C^{\infty}$的。任何$C^{\infty}$函数restrict到开集上还是$C^{\infty}$。于是$\phi_{\alpha_{1}}\circ\phi_{\alpha_{2}}^{-1}$restrict到$\phi_{\alpha_{2}}(U_{\alpha_{1}}\cap U_{\alpha_{2}}\cap V)$上是$C^{\infty}$的。由于对称性，另一个transition function也是$C^{\infty}$的。
+
+
+
+
