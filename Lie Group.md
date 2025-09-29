@@ -678,6 +678,11 @@ $GL(n,\mathbb{R})$是一个$n^{2}$-manifold。因为显然$M_{n}(\mathbb{R})$和
 
 注意到$\det$函数是一个关于所有矩阵元的多项式，所以$\det$连续。因此$\det ^{-1}(\mathbb{R} \setminus \{ 0 \})$是开集。而$GL(n,\mathbb{R})$正是同构于$A=\det ^{-1}(\mathbb{R} \setminus \{ 0 \})$。
 
+## Ex:
+$GL(n,\mathbb{C})$是一个$2n^{2}$-manifold。这是因为$M_{n}(\mathbb{C})$和$\mathbb{C}^{n^{2}}$同构，而$\mathbb{C}^{n^{2}}$又和$\mathbb{R}^{2n^{2}}$同构。于是$GL(n,\mathbb{C})$和$\mathbb{R}^{2n^{2}}$同构。直接用$\mathbb{R}^{2n^{2}}$的自然拓扑定义$GL(n,\mathbb{C})$的拓扑。则接下来的证明和$GL(n,\mathbb{R})$就一样了。
+
+
+
 
 
 
