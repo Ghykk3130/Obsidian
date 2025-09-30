@@ -1,0 +1,113 @@
+# 1).
+## a).
+Know that the Hamiltonian is:
+$$H=-\vec{\mu}\cdot \vec{B}=-g \frac{e}{2m}\vec{S}\cdot \vec{B}$$
+Take $g=2, B=B_{0}\hat{z}$ to get:
+$$H=- \frac{e}{m}S_{z}B_{0}$$
+Note that this Hamiltonian is time-independent, therefore the time evolution operator is given by:
+$$U(t,t_{0}=0)=\exp\left(  \frac{i}{\hbar} \frac{e}{m}S_{z}B_{0}t \right)$$
+Then I have:
+$$\begin{align}
+\ket{\hat{n}(t)} & = U(t,t_{0}=0)\ket{\hat{n}}  \\
+ & = \exp\left(  \frac{i}{\hbar} \frac{e}{m}S_{z}B_{0}t \right) \ket{\hat{n}}  \\
+ & = \exp\left(  \frac{i}{\hbar} \frac{e}{m}S_{z}B_{0}t \right)\left( \cos \frac{\beta}{2}\ket{+\hat{z}} +\sin \frac{\beta}{2}\ket{-\hat{z}}   \right) \\
+ & = \exp\left(  i \frac{e}{2m}B_{0}t \right)\cos \frac{\beta}{2}\ket{+ \hat{z}} + \exp\left( -i \frac{e}{2m}B_{0}t \right)\sin \frac{\beta}{2}\ket{-\hat{z}} 
+\end{align}$$
+Know that:
+$$\ket{+\hat{x}} = \frac{\sqrt{ 2 }}{2}\ket{+\hat{z}} + \frac{\sqrt{ 2 }}{2}\ket{-\hat{z}} $$
+Then:
+$$\begin{align}
+\bra{+\hat{x}} \hat{n}(t)\rangle & =\left(  \frac{\sqrt{ 2 }}{2}\bra{+\hat{z}} + \frac{\sqrt{ 2 }}{2}\bra{-\hat{z}}  \right)c \\
+ & = \frac{\sqrt{ 2 }}{2}\exp\left( i \frac{e}{2m}B_{0}t \right)\cos \frac{\beta}{2}+ \frac{\sqrt{ 2 }}{2}\exp\left( -i \frac{e}{2m}B_{0}t \right)\sin \frac{\beta}{2}
+\end{align}$$
+Therefore:
+$$\begin{align}
+|\bra{+\hat{x}} \hat{n}(t)\rangle|^{2} & =\left(\frac{\sqrt{ 2 }}{2}\exp\left( -i \frac{e}{2m}B_{0}t \right)\cos \frac{\beta}{2}+ \frac{\sqrt{ 2 }}{2}\exp\left( i \frac{e}{2m}B_{0}t \right)\sin \frac{\beta}{2}\right) \left(\frac{\sqrt{ 2 }}{2}\exp\left( i \frac{e}{2m}B_{0}t \right)\cos \frac{\beta}{2}+ \frac{\sqrt{ 2 }}{2}\exp\left( -i \frac{e}{2m}B_{0}t \right)\sin \frac{\beta}{2}\right) \\
+ & = \frac{1}{2}\cos ^{2} \frac{\beta}{2}+ \frac{1}{2}\sin ^{2} \frac{\beta}{2}+ \frac{1}{2}\exp\left( -i \frac{eB_{0}}{m}t \right)\sin \frac{\beta}{2}\cos \frac{\beta}{2}+ \frac{1}{2}\exp\left( i \frac{eB_{0}}{m}t \right)\sin \frac{\beta}{2}\cos \frac{\beta}{2} \\
+ & = \frac{1}{2}+ \frac{1}{2} \sin \frac{\beta}{2}\cos \frac{\beta}{2}\cos\left(  \frac{eB_{0}}{m}t \right)\cdot{2} \\
+ & = \frac{1}{2}+ \sin \frac{\beta}{2}\cos \frac{\beta}{2}\cos\left(  \frac{eB_{0}}{m}t \right) \\
+ & = \frac{1}{2}+ \frac{1}{2}\sin \beta \cos\left(  \frac{eB_{0}}{m}t \right)
+\end{align}$$
+## b).
+Recall:
+$$\ket{-\hat{x}} =\frac{\sqrt{ 2 }}{2}\ket{+\hat{z}} - \frac{\sqrt{ 2 }}{2}\ket{-\hat{z}} $$
+we find:
+$$\begin{align}
+\bra{-\hat{x}} \hat{n}(t)\rangle & =\left(  \frac{\sqrt{ 2 }}{2}\bra{+\hat{z}} - \frac{\sqrt{ 2 }}{2}\bra{-\hat{z}}  \right)\left(\frac{\sqrt{ 2 }}{2}\exp\left( i \frac{e}{2m}B_{0}t \right)\cos \frac{\beta}{2}+ \frac{\sqrt{ 2 }}{2}\exp\left( -i \frac{e}{2m}B_{0}t \right)\sin \frac{\beta}{2}\right) \\
+ & = \frac{1}{2} \exp\left( i \frac{e}{2m}B_{0}t \right)\cos \frac{\beta}{2}- \frac{1}{2}\exp\left( -i \frac{e}{2m}B_{0}t \right)\sin \frac{\beta}{2}
+\end{align}$$
+Therefore:
+$$\begin{align}
+|\bra{-\hat{x}} \hat{n}(t)\rangle|^{2} & =\left(\frac{\sqrt{ 2 }}{2}\exp\left( -i \frac{e}{2m}B_{0}t \right)\cos \frac{\beta}{2}- \frac{\sqrt{ 2 }}{2}\exp\left( i \frac{e}{2m}B_{0}t \right)\sin \frac{\beta}{2}\right) \left(\frac{\sqrt{ 2 }}{2}\exp\left( i \frac{e}{2m}B_{0}t \right)\cos \frac{\beta}{2}- \frac{\sqrt{ 2 }}{2}\exp\left( -i \frac{e}{2m}B_{0}t \right)\sin \frac{\beta}{2}\right) \\
+ & = \frac{1}{2}\cos ^{2} \frac{\beta}{2}+ \frac{1}{2}\sin ^{2} \frac{\beta}{2}- \frac{1}{2}\exp\left( -i \frac{eB_{0}}{m}t \right)\sin \frac{\beta}{2}\cos \frac{\beta}{2}- \frac{1}{2}\exp\left( i \frac{eB_{0}}{m}t \right)\sin \frac{\beta}{2}\cos \frac{\beta}{2} \\
+ & = \frac{1}{2}- \frac{1}{2} \sin \frac{\beta}{2}\cos \frac{\beta}{2}\cos\left(  \frac{eB_{0}}{m}t \right)\cdot{2} \\
+ & = \frac{1}{2}- \sin \frac{\beta}{2}\cos \frac{\beta}{2}\cos\left(  \frac{eB_{0}}{m}t \right) \\
+ & = \frac{1}{2}- \frac{1}{2}\sin \beta \cos\left(  \frac{eB_{0}}{m}t \right)
+\end{align}$$
+Then we have:
+$$\begin{align}
+\langle\hat{S}_{x}\rangle & =\bra{\hat{n}(t)} \hat{S}_{x}\ket{\hat{n}(t)}  \\
+ & = \bra{\hat{n}(t)} (\ket{+\hat{x}} \bra{+\hat{x}} +\ket{-\hat{x}} \bra{-\hat{x}} )\hat{S}_{x} \ket{\hat{n}(t)}  \\
+ & = \frac{\hbar}{2}|\bra{+\hat{x}} \hat{n}(t)\rangle|^{2}- \frac{\hbar}{2}|\bra{-\hat{x}} \hat{n}(t)\rangle |^{2} \\
+  & = \frac{\hbar}{2}\sin \beta \cos\left(  \frac{eB_{0}}{m}t \right)
+\end{align}$$
+# 2).
+## a).
+Know that the time evolution operator is:
+$$U(t,t_{0}=0)=\exp\left( - \frac{i}{\hbar}Ht \right)$$
+because the Hamiltonian is time-independent.
+
+Then we have:
+$$\ket{\psi(t)} =\exp\left(  - \frac{i}{\hbar}Ht \right)\ket{\psi(0)} = \exp\left(  - \frac{i}{\hbar}Ht \right)\ket{2} $$
+We know that:
+$$\begin{align} \begin{pmatrix}
+E_{0} & 0 & 0 & A \\
+ 0& E_{1} & 0 & 0 \\
+0 & 0 & E_{1} & 0 \\
+A & 0 & 0 & E_{0}
+\end{pmatrix}\begin{pmatrix}
+0  \\
+1  \\
+0 \\
+0
+\end{pmatrix}=
+E_{1}\begin{pmatrix}
+0  \\
+1 \\
+0 \\
+0
+\end{pmatrix}
+\end{align}$$
+Then:
+$$H\ket{2} =E_{1}\ket{2} $$
+Then:
+$$\begin{align}
+\ket{\psi(t)}  & =\exp\left( - \frac{i}{\hbar}Ht \right) \ket{2}  \\
+ & = \sum_{j}\left( - \frac{i}{\hbar}t \right)^j \frac{1}{j!}H^j\ket{2}  \\
+ & = \sum_{j}\left( - \frac{i}{\hbar}t \right)^j \frac{1}{j!}E_{1}^j\ket{2}  \\
+ & = \exp\left( - \frac{i}{\hbar}E_{1}t \right)\ket{2} 
+\end{align}$$
+## b).
+Know that the vector $\frac{1}{\sqrt{ 2 }}\ket{2}+ \frac{1}{\sqrt{ 2 }}\ket{3}$ belongs to the eigensubspace with eigenvalue $E_{1}$, because:
+$$\begin{pmatrix}
+E_{0} & 0 & 0 & A \\
+0 & E_{1} & 0 & 0 \\
+0 & 0 & E_{1} & 0 \\
+A & 0 & 0 & E_{0}
+\end{pmatrix}\begin{pmatrix}
+0 \\
+\frac{1}{\sqrt{ 2 }} \\
+\frac{1}{\sqrt{ 2 }} \\
+0
+\end{pmatrix}= E_{1}\begin{pmatrix}
+0  \\
+  \frac{1}{\sqrt{ 2 }} \\
+\frac{1}{\sqrt{ 2 }} \\
+0
+\end{pmatrix}$$
+The time evolution operator is completely the same as in $a).$ Therefore, I have:
+$$\begin{align}
+\ket{\psi(t)}  & = \exp\left( - \frac{i}{\hbar}Ht \right) \left(  \frac{1}{\sqrt{ 2 }}\ket{2} + \frac{1}{\sqrt{ 2 }}\ket{3}  \right) \\
+ & = \exp\left( - \frac{i}{\hbar}E_{1}t \right)\left(  \frac{1}{\sqrt{ 2 }}\ket{2}  + \frac{1}{\sqrt{ 2 }}\ket{3} \right)
+\end{align}$$
+## c).
