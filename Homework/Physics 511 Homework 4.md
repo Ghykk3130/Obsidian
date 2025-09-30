@@ -266,3 +266,33 @@ $$\begin{align}
  & = \frac{1}{2}\exp\left( - \frac{i}{\hbar}(E_{0}+A)t \right)\ket{1} - \frac{1}{2}\exp\left( - \frac{i}{\hbar}(E_{0}-A)t \right)\ket{1}  + \frac{1}{2}\exp\left( - \frac{i}{\hbar}(E_{0}+A)t \right)\ket{4} - \frac{1}{2}\exp\left(  -\frac{i}{\hbar}(E_{0}-A)t \right)\ket{4} 
 \end{align}$$
 
+# 3).
+## a).
+Note that the Hamiltonian is not necessarily Hermitian because:
+$$\hat{H}_{bad}^{\dagger}=\delta ^{*}\ket{a^{''}} \bra{a^{'}} $$
+unless states $\ket{a^{'}},\ket{a^{''}}$ are equal, and $\delta\in \mathbb{R}$, we do not have that $\hat{H}_{bad}^{\dagger}=\hat{H}_{bad}$
+## b).
+If $\ket{a^{'}}\neq \ket{a^{''}}$, then the time evolution operator is given by:
+$$\begin{align}
+U(t,t_{0}=0) & =\exp\left( - \frac{i}{\hbar}\delta \ket{a^{'}} \bra{a^{''}} t \right) \\
+ & =\sum_{j} \left( - \frac{i}{\hbar}t \right)^{j} \frac{1}{j!} (\delta \ket{a^{'}} \bra{a^{''}} )^{j} \\
+ & = \mathbb{1}+ \frac{i}{\hbar}t \delta \ket{a^{'}} \bra{a^{''}} 
+\end{align}$$
+This is because $\ket{a^{'}},\ket{a^{''}}$ are orthogonal. Only the term with $j=0,1$ survives.
+
+Therefore:
+$$\begin{align}
+\ket{\psi(t)}  & = \left( \mathbb{1}+ \frac{i}{\hbar}t\delta \ket{a^{'}} \bra{a^{''}}  \right)\ket{\psi(0)}  \\
+ & = \sum_{a}\left( \mathbb{1}+ \frac{i}{\hbar}t\delta \ket{a^{'}} \bra{a^{''}}  \right)\ket{a} \bra{a} \psi(0)\rangle \\
+ & = \ket{\psi(0)}+ \frac{i}{\hbar}t\delta \ket{a^{'}} \bra{a^{''}} \psi(0)\rangle 
+\end{align}$$
+## c).
+$$\begin{align}
+\bra{\psi(t)} \psi(t)\rangle & = \left( \bra{\psi(0)}  - \frac{i}{\hbar}t\delta ^{*}\bra{\psi(0)} a^{''}\rangle\bra{a^{'}}  \right)\left(\ket{\psi(0)}+ \frac{i}{\hbar}t\delta \ket{a^{'}} \bra{a^{''}} \psi(0)\rangle\right) \\
+ & = 1+ \frac{i}{\hbar}t\delta \bra{\psi(0)} a^{'}\rangle\bra{a^{''}} \psi(0)\rangle- \frac{i}{\hbar}t\delta ^{*}\bra{\psi(0)} a^{''}\rangle\bra{a^{'}} \psi(0)\rangle + \frac{1}{\hbar^{2}}t^{2}|\delta|^{2}|\bra{a^{''}} \psi(0)\rangle|^{2} \\
+ & = 1+ 2\mathrm{Re}\left( \frac{i}{\hbar}t\delta \bra{\psi(0)} a^{'}\rangle\bra{a^{''}} \psi(0)\rangle \right) + \frac{1}{\hbar^{2}}t^{2}|\delta|^{2}|\bra{a^{''}} \psi(0)\rangle|^{2}\in \mathbb{R}
+\end{align}$$
+Notice that this value is greater than $1$ in general, meaning that the probability is not conserved. We therefore realize that the requirement of the Hamiltonian being Hermitian is necessary for the probability to be conserved.
+
+
+ 
