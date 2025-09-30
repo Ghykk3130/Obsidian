@@ -1,3 +1,5 @@
+>[!Note]
+>Sometimes, there will be problems with latex matrix expression rendering. I am totally aware of this issue but cannot fix it. Please don't take points off if you see this.
 # 1).
 ## a).
 Know that the Hamiltonian is:
@@ -111,3 +113,156 @@ $$\begin{align}
  & = \exp\left( - \frac{i}{\hbar}E_{1}t \right)\left(  \frac{1}{\sqrt{ 2 }}\ket{2}  + \frac{1}{\sqrt{ 2 }}\ket{3} \right)
 \end{align}$$
 ## c).
+Consider the eigenequation of the Hamiltonian:
+$$\begin{align}
+ & \begin{vmatrix}
+E_{0}-\lambda & 0 & 0 & A \\
+0 & E_{1}-\lambda & 0 & 0  \\
+0 & 0 & E_{1}-\lambda & 0 \\
+A & 0 & 0 & E_{0}-\lambda
+\end{vmatrix}=0 \\
+\implies  & (E_{0}-\lambda)\begin{vmatrix}
+E_{1}-\lambda & 0 & 0 \\
+0 & E_{1}-\lambda & 0 \\
+0 & 0 & E_{0}-\lambda
+\end{vmatrix}-A\begin{vmatrix}
+0 & E_{1}-\lambda & 0 \\
+0 & 0 & E_{1}-\lambda \\
+A & 0 & 0
+\end{vmatrix}=0 \\
+\implies & (E_{1}-\lambda)^{2}((E_{0}-\lambda)^{2}-A^{2})=0 \\
+\implies & \lambda=E_{1}, E_{0}\pm A
+\end{align}$$
+For $\lambda=E_{1}$, the eigenvectors are given by:
+$$\begin{align}
+ & \begin{pmatrix}
+E_{0}-E_{1} & 0 & 0 & A \\
+0 & 0 & 0 & 0 \\
+0 & 0 & 0 & 0 \\
+A & 0 & 0 & E_{0}-E_{1}
+\end{pmatrix}v=0 \\
+\implies & v=\begin{pmatrix}
+0 \\
+1 \\
+0 \\
+0
+\end{pmatrix},\begin{pmatrix}
+0  \\
+0 \\
+1 \\
+0
+\end{pmatrix}
+\end{align}$$
+For $\lambda=E_{0}+A$, we have:
+$$\begin{align}
+ & \begin{pmatrix}
+-A & 0 & 0 & A \\
+0 & E_{1}  -E_{0}-A & 0 & 0   \\
+0 & 0 & E_{1}-E_{0}-A & 0 \\
+A & 0 & 0 & -A
+\end{pmatrix}v=0 \\
+\implies & v=\frac{1}{\sqrt{ 2 }}\begin{pmatrix}
+1 \\
+0 \\
+0 \\
+1
+\end{pmatrix}
+\end{align}$$
+For $\lambda=E_{0}-A$, we have:
+$$\begin{align}
+ & \begin{pmatrix}
+A & 0 & 0 & A \\
+0  & E_{1}-E_{0}+A & 0  & 0\\
+0 & 0 & E_{1}-E_{0}+A & 0 \\
+A & 0 & 0 & A
+\end{pmatrix}v=0 \\
+\implies & v= \frac{1}{\sqrt{ 2 }}\begin{pmatrix}
+1 \\
+0 \\
+0 \\
+-1
+\end{pmatrix}
+\end{align}$$
+Therefore we can diagonalize the Hamiltonian representation matrix:
+$$\begin{pmatrix}
+E_{0} & 0 & 0 & A \\
+0 & E_{1} & 0 & 0 \\
+0 & 0 & E_{1} & 0 \\
+A & 0 & 0 & E_{0}
+\end{pmatrix}=\begin{pmatrix}
+0 & 0 &  \frac{1}{\sqrt{ 2 }} & \frac{1}{\sqrt{ 2 }} \\
+1 & 0 & 0 & 0 \\
+0 & 1 & 0 & 0 \\
+0 & 0 & \frac{1}{\sqrt{ 2 }} & - \frac{1}{\sqrt{ 2 }}
+\end{pmatrix}\begin{pmatrix}
+E_{1} & 0 & 0 & 0 \\
+0 & E_{1} & 0 & 0 \\
+0 & 0 & E_{0}+A & 0 \\
+0 & 0 & 0 & E_{0}-A
+\end{pmatrix}\begin{pmatrix}
+0 & 0 &  \frac{1}{\sqrt{ 2 }} & \frac{1}{\sqrt{ 2 }} \\
+1 & 0 & 0 & 0 \\
+0 & 1 & 0 & 0 \\
+0 & 0 & \frac{1}{\sqrt{ 2 }} & - \frac{1}{\sqrt{ 2 }}
+\end{pmatrix}^{t}$$
+Therefore we know, given $j\in \mathbb{N}^{+}$, we have:
+$$\begin{align}
+\begin{pmatrix}
+E_{0} & 0 & 0 & A \\
+0 & E_{1} & 0 & 0 \\
+0 & 0 & E_{1} & 0 \\
+A & 0 & 0 & E_{0}
+\end{pmatrix}\begin{pmatrix}
+0 \\
+0 \\
+0 \\
+1
+\end{pmatrix} & =\begin{pmatrix}
+0 & 0 &  \frac{1}{\sqrt{ 2 }} & \frac{1}{\sqrt{ 2 }} \\
+1 & 0 & 0 & 0 \\
+0 & 1 & 0 & 0 \\
+0 & 0 & \frac{1}{\sqrt{ 2 }} & - \frac{1}{\sqrt{ 2 }}
+\end{pmatrix}\begin{pmatrix}
+E_{1} & 0 & 0 & 0 \\
+0 & E_{1} & 0 & 0 \\
+0 & 0 & E_{0}+A & 0 \\
+0 & 0 & 0 & E_{0}-A
+\end{pmatrix}\begin{pmatrix}
+0 & 0 &  \frac{1}{\sqrt{ 2 }} & \frac{1}{\sqrt{ 2 }} \\
+1 & 0 & 0 & 0 \\
+0 & 1 & 0 & 0 \\
+0 & 0 & \frac{1}{\sqrt{ 2 }} & - \frac{1}{\sqrt{ 2 }}
+\end{pmatrix}^{t}\begin{pmatrix}
+0 \\
+0 \\
+0 \\
+1
+\end{pmatrix} \\
+ & = \begin{pmatrix}
+0 & 0 &  \frac{1}{\sqrt{ 2 }} & \frac{1}{\sqrt{ 2 }} \\
+1 & 0 & 0 & 0 \\
+0 & 1 & 0 & 0 \\
+0 & 0 & \frac{1}{\sqrt{ 2 }} & - \frac{1}{\sqrt{ 2 }}
+\end{pmatrix}\begin{pmatrix}
+0  \\
+0 \\
+ \frac{1}{\sqrt{ 2 }}(E_{0}+A)^{j} \\
+- \frac{1}{\sqrt{ 2 }}(E_{0}-A)^{j}
+\end{pmatrix} \\
+ &=  \begin{pmatrix}
+\frac{1}{2}(E_{0}+A)^{j}- \frac{1}{2}(E_{0}-A)^{j} \\
+0 \\
+0 \\
+\frac{1}{2}(E_{0}+A)^{j}+ \frac{1}{2}(E_{0}-A)^{j}
+\end{pmatrix}
+\end{align}$$
+Therefore:
+$$H^{j}\ket{4} = \left( \frac{1}{2}(E_{0}+A)^{j}- \frac{1}{2}(E_{0}-A)^{j} \right)\ket{1} +\left( \frac{1}{2}( E_{0}+A)^{j}+ \frac{1}{2}(E_{0}-A)^{j} \right)\ket{4} $$
+Then I have:
+$$\begin{align}
+\ket{\psi(t)}  & =\exp\left( - \frac{i}{\hbar}Ht \right)\ket{4} \\
+ & =\sum_{j}\left(  -\frac{i}{\hbar} t\right)^j \frac{1}{j!}H^j\ket{4} \\
+ & = \sum_{j}\left( - \frac{i}{\hbar}t \right)^{j} \frac{1}{j!}\left[\left( \frac{1}{2}(E_{0}+A)^{j}- \frac{1}{2}(E_{0}-A)^{j} \right)\ket{1} +\left( \frac{1}{2}( E_{0}+A)^{j}+ \frac{1}{2}(E_{0}-A)^{j} \right)\ket{4}\right]  \\
+ & = \frac{1}{2}\exp\left( - \frac{i}{\hbar}(E_{0}+A)t \right)\ket{1} - \frac{1}{2}\exp\left( - \frac{i}{\hbar}(E_{0}-A)t \right)\ket{1}  + \frac{1}{2}\exp\left( - \frac{i}{\hbar}(E_{0}+A)t \right)\ket{4} - \frac{1}{2}\exp\left(  -\frac{i}{\hbar}(E_{0}-A)t \right)\ket{4} 
+\end{align}$$
+
