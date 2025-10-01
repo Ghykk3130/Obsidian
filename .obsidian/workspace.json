@@ -13,28 +13,15 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "系综.md",
+                "file": "Experimental/Cantilever.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "系综"
-            }
-          },
-          {
-            "id": "0623667a5f948844",
-            "type": "leaf",
-            "state": {
-              "type": "release-notes",
-              "state": {
-                "currentVersion": "1.9.14"
-              },
-              "icon": "lucide-book-up",
-              "title": "Release Notes 1.9.14"
+              "title": "Cantilever"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -190,8 +177,9 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "0623667a5f948844",
+  "active": "e17d86fcb6b11eb3",
   "lastOpenFiles": [
+    "系综.md",
     "Piston-gas Model.md",
     "多级展开.md",
     "Homework/Physics 402 real world optics 3.md",
@@ -224,7 +212,6 @@
     "Pictures/wavefunction_classicalmix (1).png",
     "Pictures/wavefunction (1).png",
     "Pictures/wavefunction_contour (1).png",
-    "双缝实验.md",
     "Pictures/wavefunction_contour.png",
     "Pictures/wavefunction.png",
     "Pictures/092f3ad1e9f2ebc005b999d7ea603cac.jpg",
