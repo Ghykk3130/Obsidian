@@ -312,9 +312,14 @@ $$\begin{align}
 \implies &  \frac{y}{r}= n \frac{\lambda}{d}
 \end{align}$$
 ## c).
-<div align="tex-align:center">
+<div style="tex-align:center">
 <img src="wavefunction.png">
 </div>
 
 Maybe I should say what the unit for the y value is in the axis label. But since the unit is not specify in the question, I shall leave it unspecified.
 
+## d).
+<div style="text-align:center">
+<img src="wavefunction_contour.png">
+</div>
+ 
