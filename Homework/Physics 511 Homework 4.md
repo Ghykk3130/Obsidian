@@ -7,10 +7,10 @@ $$H=-\vec{\mu}\cdot \vec{B}=-g \frac{e}{2m}\vec{S}\cdot \vec{B}$$
 Take $g=2, B=B_{0}\hat{z}$ to get:
 $$H=- \frac{e}{m}S_{z}B_{0}$$
 Note that this Hamiltonian is time-independent, therefore the time evolution operator is given by:
-$$U(t,t_{0}=0)=\exp\left(  \frac{i}{\hbar} \frac{e}{m}S_{z}B_{0}t \right)$$
+$$\mathscr{U}(t,t_{0}=0)=\exp\left(  \frac{i}{\hbar} \frac{e}{m}S_{z}B_{0}t \right)$$
 Then I have:
 $$\begin{align}
-\ket{\hat{n}(t)} & = U(t,t_{0}=0)\ket{\hat{n}}  \\
+\ket{\hat{n}(t)} & = \mathscr{U}(t,t_{0}=0)\ket{\hat{n}}  \\
  & = \exp\left(  \frac{i}{\hbar} \frac{e}{m}S_{z}B_{0}t \right) \ket{\hat{n}}  \\
  & = \exp\left(  \frac{i}{\hbar} \frac{e}{m}S_{z}B_{0}t \right)\left( \cos \frac{\beta}{2}\ket{+\hat{z}} +\sin \frac{\beta}{2}\ket{-\hat{z}}   \right) \\
  & = \exp\left(  i \frac{e}{2m}B_{0}t \right)\cos \frac{\beta}{2}\ket{+ \hat{z}} + \exp\left( -i \frac{e}{2m}B_{0}t \right)\sin \frac{\beta}{2}\ket{-\hat{z}} 
