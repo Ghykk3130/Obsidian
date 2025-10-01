@@ -311,3 +311,10 @@ $$\begin{align}
 \implies &  \frac{y}{\sqrt{ x^{2}+y^{2}+L^{2}}}= \frac{2n\pi}{kd}= \frac{n\lambda}{d} \\
 \implies &  \frac{y}{r}= n \frac{\lambda}{d}
 \end{align}$$
+## c).
+<div align="tex-align:center">
+<img src="wavefunction.png">
+</div>
+
+Maybe I should say what the unit for the y value is in the axis label. But since the unit is not specify in the question, I shall leave it unspecified.
+
