@@ -29,3 +29,12 @@ When rotate, observe relaxation $\sim 0.001 pF$. Suspect that the cantilever is 
 Capacitance relaxation at room temperature with $0^{\circ}$:
 ![[fd2d9bc438106de8f216a2dbb5619ea3.jpg|500]]
 
+10/01/2025
+
+![[ea0811893cd4063e0b85b893fdafc657.jpg|200]]
+
+Magnetic field scan with $\theta=30^{\circ}$. $\mu_{0}H:0\rightarrow 9 \rightarrow 0T$. Sample tube warmed up, with no He inside. 
+![[f159f18fa23b3186b5cda0aac811349e.jpg]]
+
+Set $\mu_{0}H=0T$. Sample tube warmed up. Observe the capacitance drift.
+![[f8a3a087a1dc4e5f30f652e6e9408c8d.jpg]]
