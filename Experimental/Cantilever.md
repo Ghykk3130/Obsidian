@@ -6,6 +6,8 @@ Setup:
 - Get stuck at $\theta \approx 80^{\circ}$
 - Bad pillars: everything to the right of F, G, H. Coax all good 
 - Cantilever thickness: $1mil=0.001^{''}$
+- Cantilever arm width: $\sim1.5mm$
+- Cantilever pad dimension: $\sim 4\times 2mm$
 - Real measurement: scan to $41T$, with $3T/ min$. 
 
 09/18/2025
