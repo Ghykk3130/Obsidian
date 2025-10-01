@@ -139,12 +139,26 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Homework/Physics 511 Homework 4.md",
+                "file": "张量分析.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Physics 511 Homework 4"
+              "title": "张量分析"
+            }
+          },
+          {
+            "id": "097ee16938a9e06d",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "双缝实验.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "双缝实验"
             }
           },
           {
@@ -386,7 +400,7 @@
             }
           }
         ],
-        "currentTab": 9
+        "currentTab": 10
       }
     ],
     "direction": "vertical"
@@ -443,8 +457,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200,
-    "collapsed": true
+    "width": 200
   },
   "right": {
     "id": "9003d078f8dbc4ed",
@@ -542,44 +555,44 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "38a45b68eb25e4ab",
+  "active": "097ee16938a9e06d",
   "lastOpenFiles": [
+    "Lie Group.md",
+    "双缝实验.md",
+    "张量分析.md",
+    "守恒律.md",
+    "一维Acoustic wave的量子化.md",
+    "Perturbation.md",
+    "虚功原理，d‘Alembert原理，与Lagrange方程.md",
+    "规范变换.md",
+    "转动生成元.md",
+    "势阱对称性与波函数对称性.md",
+    "热力学平衡.md",
+    "熵.md",
+    "惯量张量.md",
+    "Homework/Physics 511 Homework 4.md",
     "Pictures/wavefunction_contour.png",
     "Pictures/wavefunction.png",
     "时间演化.md",
     "Pictures/092f3ad1e9f2ebc005b999d7ea603cac.jpg",
-    "Homework/Physics 511 Homework 4.md",
     "Homework/Physics 511 Homework 3.md",
     "Homework/Physics 510 Homework 3.md",
     "Homework/Physics 510 Homework 4.md",
     "物质中的Maxwell方程.md",
     "Untitled.md",
-    "Lie Group.md",
     "Untitled 1.md",
     "Pictures/Pasted image 20250928112331.png",
-    "转动生成元.md",
-    "热力学平衡.md",
     "Experimental/VTI.md",
     "热力学中的求导.md",
     "Pictures/9885955810bb48f6a28c69f7f533656a.jpg",
     "热力学第一定律.md",
-    "熵.md",
-    "惯量张量.md",
     "正规矩阵的对角化.md",
     "Pictures/d38e6728541e51191977e6f796e20518.jpg",
     "Pictures/055311113a5784900872efd078cb5615.jpg",
     "Homework/Physics 511 Homework 2.md",
     "Pictures/Pasted image 20250921220023.png",
     "Pictures/Pasted image 20250921214322.png",
-    "Lie Algebras.md",
-    "Maxwell-Boltzmann 分布.md",
-    "群论.md",
     "Pictures/e5785bbda01e7e755db1a4314f364b8c.jpg",
-    "Experimental/Cantilever.md",
-    "Pictures/fd2d9bc438106de8f216a2dbb5619ea3.jpg",
-    "Homework/Physics 510 Homework 2.md",
-    "Homework/Physics 402 real world optics 2.md",
-    "Degenerate Fermi Gas.md",
     "Homework",
     "Pictures",
     "Experimental",
