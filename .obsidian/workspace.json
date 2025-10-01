@@ -20,8 +20,21 @@
               "icon": "lucide-file",
               "title": "系综"
             }
+          },
+          {
+            "id": "0623667a5f948844",
+            "type": "leaf",
+            "state": {
+              "type": "release-notes",
+              "state": {
+                "currentVersion": "1.9.14"
+              },
+              "icon": "lucide-book-up",
+              "title": "Release Notes 1.9.14"
+            }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -177,7 +190,7 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "e17d86fcb6b11eb3",
+  "active": "0623667a5f948844",
   "lastOpenFiles": [
     "Piston-gas Model.md",
     "多级展开.md",
