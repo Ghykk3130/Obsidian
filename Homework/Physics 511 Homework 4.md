@@ -294,5 +294,20 @@ $$\begin{align}
 \end{align}$$
 Notice that this value is greater than $1$ in general, meaning that the probability is not conserved. We therefore realize that the requirement of the Hamiltonian being Hermitian is necessary for the probability to be conserved.
 
-
- 
+# 4).
+## a).
+$$\begin{align}
+r_{{\pm}} & = \sqrt{ x^{2}+\left( y\pm \frac{d}{2} \right)^{2}+L^{2} } \\
+ & = \sqrt{ x^{2}+ y^{2}+L^{2} \pm dy+ \frac{d^{2}}{4} } \\
+ & = \sqrt{ x^{2}+y^{2}+L^{2} }\sqrt{ 1 \pm y \frac{d}{x^{2}+y^{2}+L^{2}}+ \frac{d^{2}}{4(x^{2}+y^{2}+L^{2})} } \\
+ & \approx   \sqrt{ x^{2}+y^{2}+L^{2} }\left( 1 \pm y \frac{d}{2(x^{2}+y^{2}+L^{2})} \right) \\
+ & = \sqrt{ x^{2}+y^{2}+L^{2} } \pm \frac{y}{2} \frac{d}{\sqrt{ x^{2}+y^{2}+L^{2} }}
+\end{align}$$
+## b).
+For constructive interference, we require that the phase difference is $2n\pi,\text{ for some }n\in \mathbb{Z}$. Then:
+$$\begin{align}
+ & kr_{+}-kr_{-} =2n\pi \\
+\implies & k y \frac{d}{\sqrt{ x^{2}+y^{2}+L^{2} }}=2n\pi \\
+\implies &  \frac{y}{\sqrt{ x^{2}+y^{2}+L^{2}}}= \frac{2n\pi}{kd}= \frac{n\lambda}{d} \\
+\implies &  \frac{y}{r}= n \frac{\lambda}{d}
+\end{align}$$
