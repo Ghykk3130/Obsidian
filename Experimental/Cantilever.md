@@ -5,6 +5,8 @@ Setup:
 - Viewing from the top, ccw corresponds to increasing $\theta$.
 - Get stuck at $\theta \approx 80^{\circ}$
 - Bad pillars: everything to the right of F, G, H. Coax all good 
+- Cantilever thickness: $1mil=0.001^{''}$
+- Real measurement: scan to $41T$, with $3T/ min$. 
 
 09/18/2025
 Measure the resistance. Connect the current to coax 1, 6, the 4-wire connections to F, G. 
@@ -35,6 +37,7 @@ Capacitance relaxation at room temperature with $0^{\circ}$:
 
 Magnetic field scan with $\theta=30^{\circ}$. $\mu_{0}H:0\rightarrow 9 \rightarrow 0T$. Sample tube warmed up, with no He inside. 
 ![[f159f18fa23b3186b5cda0aac811349e.jpg]]
-
+- See capacitance drift
+- 
 Set $\mu_{0}H=0T$. Sample tube warmed up. Observe the capacitance drift.
 ![[f8a3a087a1dc4e5f30f652e6e9408c8d.jpg]]
