@@ -153,12 +153,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Experimental/Cantilever.md",
+                "file": "Homework/Physics 511 Homework 4.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Cantilever"
+              "title": "Physics 511 Homework 4"
             }
           },
           {
@@ -457,7 +457,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 200,
+    "collapsed": true
   },
   "right": {
     "id": "9003d078f8dbc4ed",
@@ -557,6 +558,7 @@
   },
   "active": "097ee16938a9e06d",
   "lastOpenFiles": [
+    "Experimental/Cantilever.md",
     "Pictures/f8a3a087a1dc4e5f30f652e6e9408c8d.jpg",
     "Pictures/f159f18fa23b3186b5cda0aac811349e.jpg",
     "Pictures/ea0811893cd4063e0b85b893fdafc657.jpg",
@@ -588,7 +590,6 @@
     "物质中的Maxwell方程.md",
     "Untitled.md",
     "Untitled 1.md",
-    "Pictures/Pasted image 20250928112331.png",
     "Experimental/VTI.md",
     "热力学中的求导.md",
     "热力学第一定律.md",

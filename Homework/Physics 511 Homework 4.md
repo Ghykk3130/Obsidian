@@ -1,5 +1,5 @@
 >[!Note]
->Sometimes, there will be problems with latex matrix expression rendering. I am totally aware of this issue but cannot fix it. Please don't take points off if you see this.
+>Sometimes, there will be problems with latex matrix expression rendering. I am totally aware of this issue but cannot fix it. Please don't take points off if you see this. I believe that the issue would be fixed if you view the pdf in Adobe Acrobat.
 # 1).
 ## a).
 Know that the Hamiltonian is:
@@ -329,5 +329,86 @@ Maybe I should say what the unit for the y value is in the axis label. But since
 </div>
 
 In with both slits unblocked, the state of the electron after passing through the slits is a quantum mix of the state $\ket{\psi_{+}}$ and $\ket{\psi_{-}}$. If we block one of the slits 50 percent of the time, the result would be a classical mix of the two separate cases, which we choose manually without referring to any quantum mechanical superposition.
+
+# 5).
+Observe that the Hamiltonians at different time commute:
+$$\begin{align}
+[H(t_{1}),H(t_{2})] & =\left[ \frac{1}{4}\sigma_{z}^{P}\sigma_{y}^{P^{'}}g(t_{1}),\frac{1}{4}\sigma_{z}^{P}\sigma_{y}^{P^{'}}g(t_{2}) \right] \\
+ & = \frac{1}{16}g(t_{1})g(t_{2})[\sigma_{z}^{P}\sigma_{y}^{P^{'}},\sigma_{z}^{P}\sigma_{y}^{P^{'}}] \\
+ & = 0
+\end{align}$$
+Then the time evolution operator is given by:
+$$\mathscr{U}(T,0)=\exp\left( - \frac{i}{\hbar}\int_{0}^T dtH(t)\right)$$
+Know that:
+$$\begin{align}
+\int_{0}^{T}dtH(t) & =\int_{0}^{T}dt \frac{1}{4}\sigma_{z}^{P}\sigma_{y}^{P^{'}}g(t) \\
+ & = \frac{1}{4}\sigma_{z}^{P}\sigma_{y}^{P^{'} }\int_{0}^Tdtg(t) \\
+ & = \frac{\pi}{4}\hbar \sigma_{z}^{P}\sigma_{y}^{P^{'}}
+\end{align}$$
+Therefore, expand the operator under the basis of the tensor product space $\{ \ket{z^{P}},\ket{-z^{P}} \} \times \{ \ket{y^{P^{'}}},\ket{-y^{P^{'}}} \}$:
+$$\begin{align}
+\mathscr{U}(T,0) & = \exp\left( -i \frac{\pi}{4}\sigma_{z}^{P}\sigma_{y}^{P^{'}} \right) \\
+ & = (\ket{z^P}\otimes \ket{y^{P^{'}}} \otimes \bra{z^{P}} \otimes \bra{y^{P^{'}}} +\ket{z^{P}} \otimes \ket{-y^{P^{'}}} \otimes \bra{z^P}   \otimes \bra{-y^{P^{'}}}  \\
+ & +\ket{-z^{P}} \otimes \ket{y^{P^{'}}} \otimes \bra{-z^{P}} \otimes \bra{y^{P^{'}}} +\ket{-z^{P}} \otimes \ket{-y^{P^{'}}} \otimes \bra{-z^{P}} \otimes \bra{-y^{P^{'}}} )\exp\left( -i \frac{\pi}{4}\sigma_{z}^{P}\sigma_{y}^{P^{'}} \right) \\
+ & = \ket{z^{P}} \otimes \ket{y^{P^{'}}} \exp\left( -i \frac{\pi}{4}\left( \frac{\hbar}{2} \right)\left(  \frac{\hbar}{2} \right) \right)\bra{z^{P}} \otimes \bra{y^{P^{'}}}  \\
+ & +\ket{z^{P}} \otimes \ket{-y^{P^{'}}} \exp\left( -i \frac{\pi }{4}\left( - \frac{\hbar}{2} \right)\left( \frac{\hbar}{2} \right) \right) \bra{z^{P}} \otimes \bra{-y^{P^{'}}}  \\
+ & +\ket{-z^{P}} \otimes \ket{y^{P^{'}}} \exp\left( -i \frac{\pi}{4}\left( \frac{\hbar}{2} \right) \left( - \frac{\hbar}{2} \right)\right)\bra{-z^{P}} \otimes \bra{y^{P^{'}}}  \\
+ & +\ket{-z^{P}} \otimes \ket{-y^{P^{'}}} \exp\left( -i \frac{\pi}{4}\left( - \frac{\hbar}{2} \right)\left( - \frac{\hbar}{2} \right) \right)\bra{-z^{P}} \otimes \bra{-y^{P^{'}}}  \\
+ & =\ket{z^{P}} \otimes \ket{y^{P^{'}}} \exp\left( -i \frac{\pi}{16}\hbar^{2} \right)\bra{z^{P}} \otimes \bra{y^{P^{'}}}  \\
+ & +\ket{z^{P}} \otimes \ket{-y^{P^{'}}} \exp\left( i \frac{\pi}{16}\hbar^{2} \right) \bra{z^{P}} \otimes \bra{-y^{P^{'}}}  \\
+ & +\ket{-z^{P}} \otimes \ket{y^{P^{'}}} \exp\left( i \frac{\pi}{16}\hbar^{2} \right)\bra{-z^{P}} \otimes \bra{y^{P^{'}}}  \\
+ & +\ket{-z^{P}} \otimes \ket{-y^{P^{'}}} \exp\left( -i \frac{\pi}{16}\hbar^{2} \right)\bra{-z^{P}} \otimes \bra{-y^{P^{'}}} 
+\end{align}$$
+Therefore, acting the time evolution operator on the ket $\ket{z^{P}}\otimes(a\ket{z^{P^{'}}}+b\ket{-z^{P^{'}}})$ to get:
+$$\begin{align}
+\mathscr{U}(T,0)\ket{z^{P}} \otimes(a\ket{z^{P}} +b\ket{-z^{P^{'}}} ) & = (\ket{z^{P}} \otimes \ket{y^{P^{'}}} \exp\left( -i \frac{\pi}{16}\hbar^{2} \right)\bra{z^{P}} \otimes \bra{y^{P^{'}}}  \\
+ & +\ket{z^{P}} \otimes \ket{-y^{P^{'}}} \exp\left( i \frac{\pi}{16}\hbar^{2} \right) \bra{z^{P}} \otimes \bra{-y^{P^{'}}}  \\
+ & +\ket{-z^{P}} \otimes \ket{y^{P^{'}}} \exp\left( i \frac{\pi}{16}\hbar^{2} \right)\bra{-z^{P}} \otimes \bra{y^{P^{'}}}  \\
+ & +\ket{-z^{P}} \otimes \ket{-y^{P^{'}}} \exp\left( -i \frac{\pi}{16}\hbar^{2} \right)\bra{-z^{P}} \otimes \bra{-y^{P^{'}}} )\ket{z^{P}} \otimes(a\ket{z^{P}} +b\ket{-z^{P^{'}}} ) \\
+ & = ((\ket{z^{P}} \otimes \ket{y^{P^{'}}} \exp\left( -i \frac{\pi}{16}\hbar^{2} \right)\bra{z^{P}} \otimes \bra{y^{P^{'}}}  \\
+ & +\ket{z^{P}} \otimes \ket{-y^{P^{'}}} \exp\left( i \frac{\pi}{16}\hbar^{2} \right) \bra{z^{P}} \otimes \bra{-y^{P^{'}}})\ket{z^{P}} \otimes(a\ket{z^{P}} +b\ket{-z^{P^{'}}} ) 
+\end{align} \quad \text{1)}$$
+Know that:
+$$\begin{align}
+(\bra{z^{P}}\otimes \bra{y^{P^{'}}}) \ket{z^{P}} \otimes(a\ket{z^{P}} +b\ket{-z^{P^{'}}} )  & = \left( \bra{z^{P}} \otimes\left( \frac{\sqrt{ 2 }}{2}\bra{z^{P^{'}}} -i \frac{\sqrt{ 2 }}{2} \bra{-z^{P^{'}}} \right)\right)(\ket{z^{P}} \otimes(a\ket{z^{P^{'}}} +b\ket{-z^{P^{'}}} ))  \\
+ & = (\bra{z^{P}} z^{P}\rangle)\left(  \frac{\sqrt{ 2 }}{2}\bra{z^{P^{'}}}-i \frac{\sqrt{ 2 }}{2}\bra{-z^{P^{'}}}   \right)(a\ket{z^{P^{'}}} +b\ket{-z^{P^{'}}} ) \\
+ & = \frac{\sqrt{ 2 }}{2}a-i \frac{\sqrt{ 2 }}{2}b 
+\end{align} \quad \text{2)}
+$$
+Similarly:
+$$\begin{align}
+(\bra{z^{P}}\otimes \bra{-y^{P^{'}}}) \ket{z^{P}} \otimes(a\ket{z^{P}} +b\ket{-z^{P^{'}}} )  & = \left( \bra{z^{P}} \otimes\left( \frac{\sqrt{ 2 }}{2}\bra{z^{P^{'}}} +i \frac{\sqrt{ 2 }}{2} \bra{-z^{P^{'}}} \right)\right)(\ket{z^{P}} \otimes(a\ket{z^{P^{'}}} +b\ket{-z^{P^{'}}} ))  \\
+ & = (\bra{z^{P}} z^{P}\rangle)\left(  \frac{\sqrt{ 2 }}{2}\bra{z^{P^{'}}}+i \frac{\sqrt{ 2 }}{2}\bra{-z^{P^{'}}}   \right)(a\ket{z^{P^{'}}} +b\ket{-z^{P^{'}}} ) \\
+ & = \frac{\sqrt{ 2 }}{2}a+i \frac{\sqrt{ 2 }}{2}b
+\end{align} \quad \text{3)}$$
+Therefore, after substituting $2),3)$ into $1)$, we expand everything under the basis $\{ \ket{z^{P}},\ket{-z^{P}} \}\times \{ \ket{z^{P^{'}}},\ket{-z^{P^{'}}} \}$:
+$$\begin{align}
+\mathscr{U}(T,0)\ket{z^{P}} \otimes(a\ket{z^{P}} +b\ket{-z^{P^{'}}} ) & =\ket{z^{P}} \otimes \ket{y^{P^{'}}}\exp\left( -i \frac{\pi}{16}\hbar^{2} \right)\left(  \frac{\sqrt{ 2 }}{2}a-i \frac{\sqrt{ 2 }}{2}b \right) \\
+ & +\ket{z^P}   \otimes \ket{-y^{P^{'}}} \exp\left( i \frac{\pi}{16}\hbar^{2}  \right) \left(  \frac{\sqrt{ 2 }}{2}a+i \frac{\sqrt{ 2 }}{2}b \right) \\
+ & = \left( \frac{1}{2}a- \frac{i}{2}b \right)\exp\left( -i \frac{\pi}{16}\hbar^{2} \right)\ket{z^{P}} \otimes \ket{z^{P^{'}}}  \\
+ & + \left(  \frac{i}{2}a+\frac{1}{2}b \right)\exp\left(  i \frac{\pi}{16}\hbar^{2} \right)\ket{z^{P}} \otimes \ket{-z^{P^{'}}}  \\
+ & + \left(  \frac{1}{2}a+ \frac{i}{2}b \right)\exp\left( i \frac{\pi}{16}\hbar^{2} \right) \ket{z^{P}} \otimes \ket{z^{P^{'}}} \\
+ & +\left( - \frac{i}{2}a+ \frac{1}{2}b \right)\exp\left( i \frac{\pi}{16}\hbar^{2} \right)\ket{z^{P}} \otimes \ket{-z^{P^{'}}} \\
+ & = 2\mathrm{Re}\left( \left(  \frac{1}{2}a- \frac{i}{2}b \right)\exp\left( -i \frac{\pi}{16}\hbar^{2} \right) \right)\ket{z^{P}} \otimes \ket{z^{P^{'}}} \\
+ & + 2\mathrm{Re}\left( \left(  \frac{i}{2}a+ \frac{1}{2}b \right)\exp\left( -i \frac{\pi}{16}\hbar^{2} \right) \right)\ket{z^{P}} \otimes \ket{-z^{P^{'}}} 
+\end{align}$$
+Or I can write in the column vector form:
+$$\begin{align}
+\text{system state at }T & =2\mathrm{Re}\left( \left(  \frac{1}{2}a- \frac{i}{2}b \right)\exp\left( -i \frac{\pi}{16}\hbar^{2} \right) \right)\begin{pmatrix}
+1  \\
+0
+\end{pmatrix}\begin{pmatrix}
+1 \\
+0
+\end{pmatrix} \\
+ & + 2\mathrm{Re}\left( \left(  \frac{i}{2}a+ \frac{1}{2}b \right)\exp\left( -i \frac{\pi}{16}\hbar^{2} \right) \right)\begin{pmatrix}
+1 \\
+0
+\end{pmatrix}\begin{pmatrix}
+0 \\
+1
+\end{pmatrix}
+\end{align}$$
+
 
 
