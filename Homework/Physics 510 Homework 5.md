@@ -16,3 +16,9 @@ $$\begin{align}
  & = \sigma \sqrt{ 2\pi }
 \end{align}$$
 ## c).
+$$\begin{align}
+\int_{-\infty}^{\infty}dx\exp(-(a^{2}x^{2}+bx)) & =\int dx\exp\left( -a^{2}\left( x+ \frac{b}{2a^{2}} \right)^{2} + \frac{b^{2}}{4a^{2}} \right) \\
+ & =\exp\left(  \frac{b^{2}}{4a^{2}} \right) \frac{1}{a} \int d\left( a\left( x+ \frac{b}{2a^{2}} \right) \right)\exp\left( -a^{2}\left( x+ \frac{b}{2a^{2}} \right)^{2} \right) \\
+ & = \exp\left(  \frac{b^{2}}{4a^{2}} \right) \frac{\sqrt{ \pi }}{a}
+\end{align}$$
+# 2.
