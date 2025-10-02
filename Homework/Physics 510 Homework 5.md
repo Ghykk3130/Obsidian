@@ -6,5 +6,13 @@ Then assume $n$ is even. Then:
 $$\begin{align}
 \int_{-\infty}^{\infty}dx x^n \exp(-ax^{2}) & =\int dx \frac{\partial^{n/2}}{\partial(-a)^{n/2}} \exp(-ax^{2}) \\
  & = (-1)^{n/2} \left(  \frac{d}{da} \right)^{n/2}\int dx\exp(-ax^{2}) \\
- & =(-1)^{n/2}\left(  \frac{d}{da} \right)^
+ & =(-1)^{n/2}\left(  \frac{d}{da} \right)^{n/2}\left(  \frac{\sqrt{ \pi }}{\sqrt{ a }} \right) \\
+ & = (-1)^{n/2}\left( - \frac{1}{2} \right) \dots\left( - \frac{1}{2}- \frac{n}{2} \right)a^{- \frac{1}{2}- \frac{n}{2}-1} \sqrt{ \pi } \\
+ & = (-1)^n \left(  \frac{1}{2} \cdot \frac{3}{2}\cdot\dots \cdot \frac{n+1}{2} \right)a^{- \frac{3}{2}- \frac{n}{2}}\sqrt{ \pi }
 \end{align}$$
+## b).
+$$\begin{align}
+\int_{\infty}^{\infty}dx\exp\left( - \frac{(x-\mu)^{2}}{2\sigma^{2}} \right)  & = \sqrt{ 2 }\sigma \int d\left(  \frac{x-\mu}{\sqrt{ 2 }\sigma} \right)\exp\left( - \frac{(x-\mu)^{2}}{2\sigma^{2}} \right) \\
+ & = \sigma \sqrt{ 2\pi }
+\end{align}$$
+## c).
