@@ -27,12 +27,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Liouville 定理.md",
+                "file": "Experimental/Cantilever.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Liouville 定理"
+              "title": "Cantilever"
             }
           }
         ],
@@ -93,8 +93,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200,
-    "collapsed": true
+    "width": 200
   },
   "right": {
     "id": "9003d078f8dbc4ed",
@@ -194,8 +193,8 @@
   },
   "active": "56bbd0cf5c839a67",
   "lastOpenFiles": [
-    "系综.md",
     "Liouville 定理.md",
+    "系综.md",
     "Homework/Physics 511 Homework 4.md",
     "Experimental/Cantilever.md",
     "Piston-gas Model.md",

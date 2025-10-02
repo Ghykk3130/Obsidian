@@ -40,8 +40,7 @@ m\circ g^t(M_{1} \sqcup M_{2} ) & =m(g^t(M_{1})\sqcup g^t(M_{2})) \\
 $$\begin{align}
 \text{LHS} & = m(g^t(M)) \\
  & = \int_{g^t(M)}dqdp \\
- & = \int_{M}d((g^t)^{-1}q)d((g^t)^{-1}p) \\
- & = \int_{M}d(g^{-t}q)d(g^{-t}p)
+ & = \int_{M}d(g^tq)d(g^tp) 
 \end{align}$$
 
 
