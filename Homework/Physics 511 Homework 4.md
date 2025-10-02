@@ -212,7 +212,7 @@ E_{0} & 0 & 0 & A \\
 0 & E_{1} & 0 & 0 \\
 0 & 0 & E_{1} & 0 \\
 A & 0 & 0 & E_{0}
-\end{pmatrix}\begin{pmatrix}
+\end{pmatrix}^j\begin{pmatrix}
 0 \\
 0 \\
 0 \\
@@ -223,10 +223,10 @@ A & 0 & 0 & E_{0}
 0 & 1 & 0 & 0 \\
 0 & 0 & \frac{1}{\sqrt{ 2 }} & - \frac{1}{\sqrt{ 2 }}
 \end{pmatrix}\begin{pmatrix}
-E_{1} & 0 & 0 & 0 \\
-0 & E_{1} & 0 & 0 \\
-0 & 0 & E_{0}+A & 0 \\
-0 & 0 & 0 & E_{0}-A
+E_{1}^j & 0 & 0 & 0 \\
+0 & E_{1}^j & 0 & 0 \\
+0 & 0 & (E_{0}+A)^j & 0 \\
+0 & 0 & 0 & (E_{0}-A)^j
 \end{pmatrix}\begin{pmatrix}
 0 & 0 &  \frac{1}{\sqrt{ 2 }} & \frac{1}{\sqrt{ 2 }} \\
 1 & 0 & 0 & 0 \\
@@ -263,7 +263,10 @@ $$\begin{align}
 \ket{\psi(t)}  & =\exp\left( - \frac{i}{\hbar}Ht \right)\ket{4} \\
  & =\sum_{j}\left(  -\frac{i}{\hbar} t\right)^j \frac{1}{j!}H^j\ket{4} \\
  & = \sum_{j}\left( - \frac{i}{\hbar}t \right)^{j} \frac{1}{j!}\left[\left( \frac{1}{2}(E_{0}+A)^{j}- \frac{1}{2}(E_{0}-A)^{j} \right)\ket{1} +\left( \frac{1}{2}( E_{0}+A)^{j}+ \frac{1}{2}(E_{0}-A)^{j} \right)\ket{4}\right]  \\
- & = \frac{1}{2}\exp\left( - \frac{i}{\hbar}(E_{0}+A)t \right)\ket{1} - \frac{1}{2}\exp\left( - \frac{i}{\hbar}(E_{0}-A)t \right)\ket{1}  + \frac{1}{2}\exp\left( - \frac{i}{\hbar}(E_{0}+A)t \right)\ket{4} - \frac{1}{2}\exp\left(  -\frac{i}{\hbar}(E_{0}-A)t \right)\ket{4} 
+ & = \frac{1}{2}\exp\left( - \frac{i}{\hbar}(E_{0}+A)t \right)\ket{1} - \frac{1}{2}\exp\left( - \frac{i}{\hbar}(E_{0}-A)t \right)\ket{1}  + \frac{1}{2}\exp\left( - \frac{i}{\hbar}(E_{0}+A)t \right)\ket{4} + \frac{1}{2}\exp\left(  -\frac{i}{\hbar}(E_{0}-A)t \right)\ket{4}  \\
+ & = \frac{1}{2}\exp\left( - \frac{i}{\hbar}E_{0}t \right)\left( \exp\left( - \frac{i}{\hbar}At \right)\ket{1} -\exp\left(  \frac{i}{\hbar}At \right)\ket{1} +\exp\left(- \frac{i}{\hbar}At\right) \ket{4}+ \exp\left(  \frac{i}{\hbar}At \right)\ket{4} \right) \\
+ & = \frac{1}{2}\exp\left(  - \frac{i}{\hbar}E_{0}t \right)\left( 2i\sin\left( - \frac{A}{\hbar }t \right)\ket{1}+2\cos\left(  \frac{A}{\hbar}t \right)\ket{4}   \right) \\
+ & = \exp\left( - \frac{i}{\hbar}E_{0}t \right)\left( -i\sin\left(  \frac{A}{\hbar}t \right)\ket{1} +\cos\left(  \frac{A}{\hbar}t \right)\ket{4}  \right)
 \end{align}$$
 
 # 3).
