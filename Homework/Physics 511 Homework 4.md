@@ -299,12 +299,21 @@ Notice that this value is different from $1$ in general, meaning that the probab
 
 # 4).
 ## a).
+If $y\gg d$, I have:
 $$\begin{align}
 r_{{\pm}} & = \sqrt{ x^{2}+\left( y\pm \frac{d}{2} \right)^{2}+L^{2} } \\
  & = \sqrt{ x^{2}+ y^{2}+L^{2} \pm dy+ \frac{d^{2}}{4} } \\
  & = \sqrt{ x^{2}+y^{2}+L^{2} }\sqrt{ 1 \pm y \frac{d}{x^{2}+y^{2}+L^{2}}+ \frac{d^{2}}{4(x^{2}+y^{2}+L^{2})} } \\
  & \approx   \sqrt{ x^{2}+y^{2}+L^{2} }\left( 1 \pm y \frac{d}{2(x^{2}+y^{2}+L^{2})} \right) \\
  & = \sqrt{ x^{2}+y^{2}+L^{2} } \pm \frac{y}{2} \frac{d}{\sqrt{ x^{2}+y^{2}+L^{2} }}
+\end{align}$$
+If $y \sim \mathcal{O}(d)$, I have:
+$$\begin{align}
+r_{{\pm}} & = \sqrt{ x^{2}+\left( y\pm \frac{d}{2} \right)^{2}+L^{2} } \\
+ & = \sqrt{ x^{2}+ y^{2}+L^{2} \pm dy+ \frac{d^{2}}{4} } \\
+ & = \sqrt{ x^{2}+y^{2}+L^{2} }\sqrt{ 1 \pm y \frac{d}{x^{2}+y^{2}+L^{2}}+ \frac{d^{2}}{4(x^{2}+y^{2}+L^{2})} } \\
+ & \approx   \sqrt{ x^{2}+y^{2}+L^{2} }\left( 1 \pm y \frac{d}{2(x^{2}+y^{2}+L^{2})} + \frac{d^{2}}{8(x^{2}+y^{2}+L^{2})}\right) \\
+ & = \sqrt{ x^{2}+y^{2}+L^{2} } \pm \frac{y}{2} \frac{d}{\sqrt{ x^{2}+y^{2}+L^{2} }}+ \frac{d^{2}}{8\sqrt{ x^{2}+y^{2}+L^{2} }}
 \end{align}$$
 ## b).
 For constructive interference, we require that the phase difference is $2n\pi,\text{ for some }n\in \mathbb{Z}$. Then:
@@ -348,70 +357,86 @@ $$\begin{align}
  & = \frac{1}{4}\sigma_{z}^{P}\sigma_{y}^{P^{'} }\int_{0}^Tdtg(t) \\
  & = \frac{\pi}{4}\hbar \sigma_{z}^{P}\sigma_{y}^{P^{'}}
 \end{align}$$
-Therefore, expand the operator under the basis of the tensor product space $\{ \ket{z^{P}},\ket{-z^{P}} \} \times \{ \ket{y^{P^{'}}},\ket{-y^{P^{'}}} \}$:
+Therefore:
 $$\begin{align}
-\mathscr{U}(T,0) & = \exp\left( -i \frac{\pi}{4}\sigma_{z}^{P}\sigma_{y}^{P^{'}} \right) \\
- & = (\ket{z^P}\otimes \ket{y^{P^{'}}} \otimes \bra{z^{P}} \otimes \bra{y^{P^{'}}} +\ket{z^{P}} \otimes \ket{-y^{P^{'}}} \otimes \bra{z^P}   \otimes \bra{-y^{P^{'}}}  \\
- & +\ket{-z^{P}} \otimes \ket{y^{P^{'}}} \otimes \bra{-z^{P}} \otimes \bra{y^{P^{'}}} +\ket{-z^{P}} \otimes \ket{-y^{P^{'}}} \otimes \bra{-z^{P}} \otimes \bra{-y^{P^{'}}} )\exp\left( -i \frac{\pi}{4}\sigma_{z}^{P}\sigma_{y}^{P^{'}} \right) \\
- & = \ket{z^{P}} \otimes \ket{y^{P^{'}}} \exp\left( -i \frac{\pi}{4}\left( \frac{\hbar}{2} \right)\left(  \frac{\hbar}{2} \right) \right)\bra{z^{P}} \otimes \bra{y^{P^{'}}}  \\
- & +\ket{z^{P}} \otimes \ket{-y^{P^{'}}} \exp\left( -i \frac{\pi }{4}\left( - \frac{\hbar}{2} \right)\left( \frac{\hbar}{2} \right) \right) \bra{z^{P}} \otimes \bra{-y^{P^{'}}}  \\
- & +\ket{-z^{P}} \otimes \ket{y^{P^{'}}} \exp\left( -i \frac{\pi}{4}\left( \frac{\hbar}{2} \right) \left( - \frac{\hbar}{2} \right)\right)\bra{-z^{P}} \otimes \bra{y^{P^{'}}}  \\
- & +\ket{-z^{P}} \otimes \ket{-y^{P^{'}}} \exp\left( -i \frac{\pi}{4}\left( - \frac{\hbar}{2} \right)\left( - \frac{\hbar}{2} \right) \right)\bra{-z^{P}} \otimes \bra{-y^{P^{'}}}  \\
- & =\ket{z^{P}} \otimes \ket{y^{P^{'}}} \exp\left( -i \frac{\pi}{16}\hbar^{2} \right)\bra{z^{P}} \otimes \bra{y^{P^{'}}}  \\
- & +\ket{z^{P}} \otimes \ket{-y^{P^{'}}} \exp\left( i \frac{\pi}{16}\hbar^{2} \right) \bra{z^{P}} \otimes \bra{-y^{P^{'}}}  \\
- & +\ket{-z^{P}} \otimes \ket{y^{P^{'}}} \exp\left( i \frac{\pi}{16}\hbar^{2} \right)\bra{-z^{P}} \otimes \bra{y^{P^{'}}}  \\
- & +\ket{-z^{P}} \otimes \ket{-y^{P^{'}}} \exp\left( -i \frac{\pi}{16}\hbar^{2} \right)\bra{-z^{P}} \otimes \bra{-y^{P^{'}}} 
+\mathscr{U}(T,0) & =\exp\left( - i \frac{\pi}{4}\sigma_{z}^P\sigma_{y}^{P^{'}} \right)
+ \\
+ & = \sum_{j}\left( -i \frac{\pi}{4} \right)^{j}(\sigma_{z}^{P})^{j}(\sigma_{y}^{P^{'}} )^j \end{align}$$
+ If $j=2k,k\in \mathbb{N}$, I have:
+ $$\begin{align}
+\sum_{j}\left( -i \frac{\pi}{4} \right)^j(\sigma_{z}^P)^{j}(\sigma_{y}^{P^{'}})^j & =\sum_{k}\left( -i \frac{\pi}{4} \right)^{2k}(\sigma_{z}^{P})^{2k}(\sigma_{y}^{P^{'}})^{2k} \\
+ & =\sum_{k}(-1)^k\left( \frac{\pi}{4} \right)^{2k} \mathbb{1} \\
+ & = \cos\left( \frac{\pi}{4} \right) \mathbb{1}\\
+ & = \frac{\sqrt{ 2 }}{2}\mathbb{1}
 \end{align}$$
-Therefore, acting the time evolution operator on the ket $\ket{z^{P}}\otimes(a\ket{z^{P^{'}}}+b\ket{-z^{P^{'}}})$ to get:
+If $j=2k+1,k\in \mathbb{N}$, I have:
 $$\begin{align}
-\mathscr{U}(T,0)\ket{z^{P}} \otimes(a\ket{z^{P}} +b\ket{-z^{P^{'}}} ) & = (\ket{z^{P}} \otimes \ket{y^{P^{'}}} \exp\left( -i \frac{\pi}{16}\hbar^{2} \right)\bra{z^{P}} \otimes \bra{y^{P^{'}}}  \\
- & +\ket{z^{P}} \otimes \ket{-y^{P^{'}}} \exp\left( i \frac{\pi}{16}\hbar^{2} \right) \bra{z^{P}} \otimes \bra{-y^{P^{'}}}  \\
- & +\ket{-z^{P}} \otimes \ket{y^{P^{'}}} \exp\left( i \frac{\pi}{16}\hbar^{2} \right)\bra{-z^{P}} \otimes \bra{y^{P^{'}}}  \\
- & +\ket{-z^{P}} \otimes \ket{-y^{P^{'}}} \exp\left( -i \frac{\pi}{16}\hbar^{2} \right)\bra{-z^{P}} \otimes \bra{-y^{P^{'}}} )\ket{z^{P}} \otimes(a\ket{z^{P}} +b\ket{-z^{P^{'}}} ) \\
- & = ((\ket{z^{P}} \otimes \ket{y^{P^{'}}} \exp\left( -i \frac{\pi}{16}\hbar^{2} \right)\bra{z^{P}} \otimes \bra{y^{P^{'}}}  \\
- & +\ket{z^{P}} \otimes \ket{-y^{P^{'}}} \exp\left( i \frac{\pi}{16}\hbar^{2} \right) \bra{z^{P}} \otimes \bra{-y^{P^{'}}})\ket{z^{P}} \otimes(a\ket{z^{P}} +b\ket{-z^{P^{'}}} ) 
-\end{align} \quad \text{1)}$$
-Know that:
-$$\begin{align}
-(\bra{z^{P}}\otimes \bra{y^{P^{'}}}) \ket{z^{P}} \otimes(a\ket{z^{P}} +b\ket{-z^{P^{'}}} )  & = \left( \bra{z^{P}} \otimes\left( \frac{\sqrt{ 2 }}{2}\bra{z^{P^{'}}} -i \frac{\sqrt{ 2 }}{2} \bra{-z^{P^{'}}} \right)\right)(\ket{z^{P}} \otimes(a\ket{z^{P^{'}}} +b\ket{-z^{P^{'}}} ))  \\
- & = (\bra{z^{P}} z^{P}\rangle)\left(  \frac{\sqrt{ 2 }}{2}\bra{z^{P^{'}}}-i \frac{\sqrt{ 2 }}{2}\bra{-z^{P^{'}}}   \right)(a\ket{z^{P^{'}}} +b\ket{-z^{P^{'}}} ) \\
- & = \frac{\sqrt{ 2 }}{2}a-i \frac{\sqrt{ 2 }}{2}b 
-\end{align} \quad \text{2)}
-$$
-Similarly:
-$$\begin{align}
-(\bra{z^{P}}\otimes \bra{-y^{P^{'}}}) \ket{z^{P}} \otimes(a\ket{z^{P}} +b\ket{-z^{P^{'}}} )  & = \left( \bra{z^{P}} \otimes\left( \frac{\sqrt{ 2 }}{2}\bra{z^{P^{'}}} +i \frac{\sqrt{ 2 }}{2} \bra{-z^{P^{'}}} \right)\right)(\ket{z^{P}} \otimes(a\ket{z^{P^{'}}} +b\ket{-z^{P^{'}}} ))  \\
- & = (\bra{z^{P}} z^{P}\rangle)\left(  \frac{\sqrt{ 2 }}{2}\bra{z^{P^{'}}}+i \frac{\sqrt{ 2 }}{2}\bra{-z^{P^{'}}}   \right)(a\ket{z^{P^{'}}} +b\ket{-z^{P^{'}}} ) \\
- & = \frac{\sqrt{ 2 }}{2}a+i \frac{\sqrt{ 2 }}{2}b
-\end{align} \quad \text{3)}$$
-Therefore, after substituting $2),3)$ into $1)$, we expand everything under the basis $\{ \ket{z^{P}},\ket{-z^{P}} \}\times \{ \ket{z^{P^{'}}},\ket{-z^{P^{'}}} \}$:
-$$\begin{align}
-\mathscr{U}(T,0)\ket{z^{P}} \otimes(a\ket{z^{P}} +b\ket{-z^{P^{'}}} ) & =\ket{z^{P}} \otimes \ket{y^{P^{'}}}\exp\left( -i \frac{\pi}{16}\hbar^{2} \right)\left(  \frac{\sqrt{ 2 }}{2}a-i \frac{\sqrt{ 2 }}{2}b \right) \\
- & +\ket{z^P}   \otimes \ket{-y^{P^{'}}} \exp\left( i \frac{\pi}{16}\hbar^{2}  \right) \left(  \frac{\sqrt{ 2 }}{2}a+i \frac{\sqrt{ 2 }}{2}b \right) \\
- & = \left( \frac{1}{2}a- \frac{i}{2}b \right)\exp\left( -i \frac{\pi}{16}\hbar^{2} \right)\ket{z^{P}} \otimes \ket{z^{P^{'}}}  \\
- & + \left(  \frac{i}{2}a+\frac{1}{2}b \right)\exp\left(  i \frac{\pi}{16}\hbar^{2} \right)\ket{z^{P}} \otimes \ket{-z^{P^{'}}}  \\
- & + \left(  \frac{1}{2}a+ \frac{i}{2}b \right)\exp\left( i \frac{\pi}{16}\hbar^{2} \right) \ket{z^{P}} \otimes \ket{z^{P^{'}}} \\
- & +\left( - \frac{i}{2}a+ \frac{1}{2}b \right)\exp\left( i \frac{\pi}{16}\hbar^{2} \right)\ket{z^{P}} \otimes \ket{-z^{P^{'}}} \\
- & = 2\mathrm{Re}\left( \left(  \frac{1}{2}a- \frac{i}{2}b \right)\exp\left( -i \frac{\pi}{16}\hbar^{2} \right) \right)\ket{z^{P}} \otimes \ket{z^{P^{'}}} \\
- & + 2\mathrm{Re}\left( \left(  \frac{i}{2}a+ \frac{1}{2}b \right)\exp\left( -i \frac{\pi}{16}\hbar^{2} \right) \right)\ket{z^{P}} \otimes \ket{-z^{P^{'}}} 
+\sum_{j}\left( -i \frac{\pi}{4} \right)^j (\sigma_{z}^{P})^j(\sigma_{y}^{P^{'}})^j & = \sum_{k}\left( -i \frac{\pi}{4} \right)^{2k+1}(\sigma_{z}^{P})^{2k+1}(\sigma_{y}^{P^{'}})^{2k+1} \\
+ & =\sum_{k}(-i)(-1)^k\left( \frac{\pi}{4} \right)^{2k+1}\sigma_{z}^P\sigma_{y}^{P^{'}} \\
+ & = -i\sin\left( \frac{\pi}{4} \right)\sigma_{z}^{P}\sigma_{y}^{P^{'}} \\
+ & = -i \frac{\sqrt{ 2 }}{2}\sigma_{z}^{P}\sigma_{y}^{P^{'}}
 \end{align}$$
-Or I can write in the column vector form:
+Therefore:
+$$\mathscr{U}(T,0)= \frac{\sqrt{ 2 }}{2}\mathbb{1}-i \frac{\sqrt{ 2 }}{2}\sigma_{z}^{P}\sigma_{y}^{P^{'}}$$
+Then:
 $$\begin{align}
-\text{system state at }T & =2\mathrm{Re}\left( \left(  \frac{1}{2}a- \frac{i}{2}b \right)\exp\left( -i \frac{\pi}{16}\hbar^{2} \right) \right)\begin{pmatrix}
-1  \\
-0
-\end{pmatrix}\begin{pmatrix}
+\mathscr{U}(T,0)\begin{pmatrix}
 1 \\
 0
+\end{pmatrix}\begin{pmatrix}
+a \\
+b
+\end{pmatrix} & =\frac{\sqrt{ 2 }}{2}\begin{pmatrix}
+1 \\
+0
+\end{pmatrix}\begin{pmatrix}
+a \\
+b
+\end{pmatrix}-i \frac{\sqrt{ 2 }}{2}\sigma_{z}^{P}\sigma_{y}^{P^{'}} \begin{pmatrix}
+1 \\
+0
+\end{pmatrix}\begin{pmatrix}
+a \\
+b
 \end{pmatrix} \\
- & + 2\mathrm{Re}\left( \left(  \frac{i}{2}a+ \frac{1}{2}b \right)\exp\left( -i \frac{\pi}{16}\hbar^{2} \right) \right)\begin{pmatrix}
+ & = \frac{\sqrt{ 2 }}{2}\begin{pmatrix}
 1 \\
 0
 \end{pmatrix}\begin{pmatrix}
-0 \\
-1
-\end{pmatrix}
-\end{align}$$
-
-
-
+a \\
+b
+\end{pmatrix}-i \frac{\sqrt{ 2 }}{2}(\begin{pmatrix}
+1 & 0 \\
+0 & -1
+\end{pmatrix}\begin{pmatrix}
+1 \\
+0
+\end{pmatrix})\otimes(\begin{pmatrix}
+0 & -i \\
+i & 0
+\end{pmatrix}\begin{pmatrix}
+a \\
+b
+\end{pmatrix})
+ \\
+ & = \frac{\sqrt{ 2 }}{2}\begin{pmatrix}
+1 \\
+0
+\end{pmatrix}\begin{pmatrix}
+a \\
+b
+\end{pmatrix}-i \frac{\sqrt{ 2 }}{2}\begin{pmatrix}
+1 \\
+0
+\end{pmatrix}\begin{pmatrix}
+-ib \\
+ia
+\end{pmatrix} \\
+ & =\frac{\sqrt{ 2 }}{2}\begin{pmatrix}
+1 \\
+0
+\end{pmatrix}\begin{pmatrix}
+a-b \\
+a+b
+\end{pmatrix}\end{align}
+$$
