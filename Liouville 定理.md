@@ -14,3 +14,65 @@ $$g^{-t}g^{t}=\mathbb{1}$$
 >[!Right]
 >$\blacksquare$
 
+考虑某个Lebesgure-measurable set $M$。我们可以对它作一个变换$M\mapsto g^{t}M$。我们可以用Lebesgue测度测它得到$m(M),m(g^{t}M)$。显然固定$t$，$m\circ g^t$是一个新的长得像测度的玩意。实际上我们可以证明它是一个测度：
+
+>[!Proposition 2]
+>$m\circ g^t$ is a measure.
+>
+## Proof.
+任取disjoint可测集$M_{1},M_{2}$。我们假设$g^t$的性质足够好，以至于将可测集映到可测集，我们有：
+$$\begin{align}
+m\circ g^t(M_{1} \sqcup M_{2} ) & =m(g^t(M_{1})\sqcup g^t(M_{2})) \\
+  & = m\circ g^t(M_{1})\sqcup m\circ g^t(M_{2})
+\end{align}$$
+>[!Right]
+>$\blacksquare$
+
+我们发现，其实这个测度$m\circ g^t$就是Lebesgue测度。
+
+>[!Theorem 1]
+>$$m\circ g^t=m,\forall t\in \mathbb{R}$$
+## Proof.
+我们任取可测集$M$。于是STS:$m\circ g^t(M)=m(M)$。
+
+$$\begin{align}
+\text{LHS} & = m(g^t(M)) \\
+ & = \int_{g^t(M)}dqdp \\
+ & = \int_{M}d(g^tq)d(g^tp)
+\end{align}$$
+上面这步并不显然。但举一个例子：例如说我要求$(-1,1)$的Lebesgue测度。显然$m((-1,1))=\int_{(-1,1)}dx$。现在用一个变换将点拉伸$\phi:x\mapsto 2x$。则我可以测变换后的集合：$m(\phi((-1,1)))=m((-2,2))=\int_{(-2,2)}dx=\int_{\phi((-1,1))}dx$。它显然等于：$\int_{(-1,1)}d(2x)=\int_{(-1,1)}d(\phi (x))$。
+
+回到正题。上式可用Jacobian换回原坐标：
+$$\int_{M}d(g^tq)d(g^tp)=\int_{M} \frac{\partial(g^tq,g^tp)}{\partial(q,p)}dqdp$$
+因为我们想用上Hamilton方程。我们希望出现正则坐标的时间导数。但是上式没有。我们发现要证$m\circ g^t(M)=m(M)$，即证$\frac{d}{dt}(m\circ g^t(M))=0$。
+
+于是：
+$$\begin{align}
+\frac{d}{dt}(m\circ g^t(M) ) & =\frac{d}{dt}\int_{M} \frac{\partial(g^tq,g^tp)}{\partial(q,p)}dqdp \\
+ &= \int_{M} \frac{\partial}{\partial t}\left(  \frac{\partial(g^tq_{},g^tp)}{\partial(q,p)} \right)dqdp
+\end{align}$$
+不妨记$q^{'}=g^tq,p^{'}=g^tp$。并将一套正则坐标统一记为$(q,p)=\eta,(q^{'},p^{'})=\eta^{'}$。则Jacobian的时间导为：
+$$\begin{align}
+\frac{\partial}{\partial t}\left(  \frac{\partial(q^{'},p^{'})}{\partial(q,p)} \right) & = \frac{\partial}{\partial t}\left( \frac{\partial(\eta_{1}^{'},\dots,\eta_{N}^{ '})}{\partial(\eta_{1},\dots,\eta_{N})} \right) \\
+ & = \sum_{j} \frac{\partial(\eta_{1}^{'},\dots,\partial\eta^{'}_{j} / \partial t,\dots,\eta^{'}_{N})}{\partial(\eta_{1},\dots ,\eta_{N})}
+\end{align}$$
+这是因为Jacobian是一个determinant。而determinant是矩阵元的多项式。由多项式的符合求导，可以得到上式。你可以用$N$元permitation展开看一下就很明显了。
+
+**Caveat:千万不要写成$\frac{\partial}{\partial t}\left( \frac{\partial(\eta_{1}^{'},\dots,\eta_{N}^{ '})}{\partial(\eta_{1},\dots,\eta_{N})} \right) \\= \frac{\partial(\partial\eta_{1}^{'} / \partial t,\dots,\partial\eta^{'}_{j} / \partial t,\dots,\partial\eta^{'}_{N} / \partial t)}{\partial(\eta_{1},\dots ,\eta_{N})}$
+
+而由于：
+$$\frac{\partial}{\partial \eta_{k}}\left(  \frac{\partial \eta_{j}^{'}}{\partial t} \right)=\sum_{l}\frac{\partial \eta_{l}^{'}}{\partial \eta_{k}} \frac{\partial }{\partial \eta_{l}^{'}}\left(  \frac{\partial \eta_{j}^{'}}{\partial t} \right)$$
+所以Jacobian中第$j$行就都长这样。我们可以根据determinant的线性性将求和移到外面：
+$$\begin{align}
+\sum_{j} \frac{\partial(\eta_{1}^{'},\dots,\partial\eta^{'}_{j} / \partial t,\dots,\eta^{'}_{N})}{\partial(\eta_{1},\dots ,\eta_{N})} 
+ & = \sum_{j,l} \frac{\partial}{\partial \eta_{l}^{'}} \frac{\partial \eta_{j}^{'}}{\partial t} \frac{\partial(\eta_{1}^{'},\dots,\eta^{'}_{l} ,\dots,\eta^{'}_{N})}{\partial(\eta_{1},\dots ,\eta_{N})}
+\end{align}$$
+由行列式性质，我们知道除非$l=j$，不然行列式为零。所以：
+$$\sum_{j,l} \frac{\partial}{\partial \eta_{l}^{'}} \frac{\partial \eta_{j}^{'}}{\partial t} \frac{\partial(\eta_{1}^{'},\dots,\eta^{'}_{l} ,\dots,\eta^{'}_{N})}{\partial(\eta_{1},\dots ,\eta_{N})}=\left(\sum_{j} \frac{\partial  \dot{\eta}_{j}^{'}}{\partial \eta_{j}^{'}}\right) \frac{\partial(\eta_{1}^{'},\dots,\eta_{N}^{N})}{\partial(\eta_{1},\dots,\eta_{N})}$$
+接下来容易看出：
+$$\begin{align}
+\sum_{j} \frac{\partial  \dot{\eta}_{j}^{'}}{\partial \eta_{j}^{'}} & =\sum_{i} \left(\frac{\partial^{2}H}{\partial q_{i}\partial p_{j}}- \frac{\partial^{2}H}{\partial q_{i}\partial p_{j}  }\right)=0
+\end{align}$$
+>[!Right]
+>$\blacksquare$
+
