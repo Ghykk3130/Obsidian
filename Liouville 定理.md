@@ -14,6 +14,8 @@ $$g^{-t}g^{t}=\mathbb{1}$$
 >[!Right]
 >$\blacksquare$
 
+因为Lebesgue测度是一个空间上可测集到$\mathbb{R}$的函数。因为空间变换，了，所有点发生一个变换，导致可测集也发生变换。我们必须认为存在一个“可测集实体”不变。它由“矢量实体”代表的点构成。我们还要认为存在一个“测度实体”不变。但是因为由可测点表示构成的可测集表示不停地在变化，测度的functional dependence必须要发生一个变化得到一个新的测度的表示。
+
 考虑某个Lebesgure-measurable set $M$。我们可以对它作一个变换$M\mapsto g^{t}M$。我们可以用Lebesgue测度测它得到$m(M),m(g^{t}M)$。显然固定$t$，$m\circ g^t$是一个新的长得像测度的玩意。实际上我们可以证明它是一个测度：
 
 >[!Proposition 2]
@@ -38,11 +40,12 @@ m\circ g^t(M_{1} \sqcup M_{2} ) & =m(g^t(M_{1})\sqcup g^t(M_{2})) \\
 $$\begin{align}
 \text{LHS} & = m(g^t(M)) \\
  & = \int_{g^t(M)}dqdp \\
- & = \int_{M}d(g^tq)d(g^tp)
+ & = \int_{M}d((g^t)^{-1}q)d((g^t)^{-1}p) \\
+ & = \int_{M}d(g^{-t}q)d(g^{-t}p)
 \end{align}$$
-上面这步并不显然。但举一个例子：例如说我要求$(-1,1)$的Lebesgue测度。显然$m((-1,1))=\int_{(-1,1)}dx$。现在用一个变换将点拉伸$\phi:x\mapsto 2x$。则我可以测变换后的集合：$m(\phi((-1,1)))=m((-2,2))=\int_{(-2,2)}dx=\int_{\phi((-1,1))}dx$。它显然等于：$\int_{(-1,1)}d(2x)=\int_{(-1,1)}d(\phi (x))$。
 
-回到正题。上式可用Jacobian换回原坐标：
+
+其实将$t$的符号换一下无所谓。因为如果保持负号，最终可以证到$m\circ g^{-t}$不变。而$t\in \mathbb{R}$。所以不妨将$-t$写成$t$。于是上式可用Jacobian换回原坐标：
 $$\int_{M}d(g^tq)d(g^tp)=\int_{M} \frac{\partial(g^tq,g^tp)}{\partial(q,p)}dqdp$$
 因为我们想用上Hamilton方程。我们希望出现正则坐标的时间导数。但是上式没有。我们发现要证$m\circ g^t(M)=m(M)$，即证$\frac{d}{dt}(m\circ g^t(M))=0$。
 
