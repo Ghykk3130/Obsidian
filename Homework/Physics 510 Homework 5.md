@@ -22,17 +22,56 @@ $$\begin{align}
  & = \exp\left(  \frac{b^{2}}{4a^{2}} \right) \frac{\sqrt{ \pi }}{a}
 \end{align}$$
 # 2.
-First observe that:
+
+
+First observe that the integrand is an even function. So:
 $$\begin{align}
-K_{\nu}(x) & =\int_{0}^{\infty}dt\exp(-x\cosh t)\cosh \nu t \\
- & = \frac{1}{\nu} \int d(\sinh vt)\exp(-x\cosh t)
+K_{\nu}(x) & =\int_{0}^{\infty}dt\exp(-x\cosh t)\cosh \nu t \\ & =\frac{1}{2}\int_{-\infty}^{\infty}dt\exp(-x\cosh t)\cosh \nu t \\
 \end{align}$$
+### Method 1
+We have that:
+$$\cosh \nu t= \frac{\exp(\nu t)+\exp(-\nu t)}{2}$$
+Therefore:
+$$K_{\nu}(x)= \frac{1}{4}\int dt\exp(-x\cosh t+\nu t)+ \frac{1}{4}\int dt\exp(-x\cosh t-\nu t)$$
+We know that as $x\rightarrow \infty$, we have:
+$$\begin{align}
+ & -x\cosh t+\nu t=-x\left( \cosh t- \frac{\nu t}{x} \right) \sim-x\cosh t \\
+ & -x\cosh t-\nu t=-x\left( \cosh t+ \frac{\nu t}{x} \right)\sim-x\cosh t
+\end{align}$$
+Then:
+$$\begin{align}
+K_{\nu}(x) & = \frac{1}{4}\int dt\exp(-x\cosh t)+ \frac{1}{4}\int dt \exp(-x\cosh t) \\
+ & = \frac{1}{2}\int dt\exp(-x\cosh t),\text{ for }x\gg 1
+\end{align}$$
+We to find the maximum of $-\cosh t$, we set:
+$$\begin{align}
+ & \frac{d}{dt}(-\cosh t)=-\sinh t=0 \\
+\implies & t=0
+\end{align}$$
+Also:
+$$\begin{align}
+\frac{d^{2}}{dt^{2}}(-\cosh t)|_{t=0} & = -\cosh(0)=-1
+\end{align}$$
+$$-\cosh(0)=-1$$
+Therefore we have:
+$$\begin{align}
+K_{\nu}(x) & = \frac{1}{2}e^{x(-\cosh(0))} \sqrt{  \frac{2\pi}{-x\left(  \frac{d^{2}}{dt^{2}(-\cosh t)} \right)|_{t=0}} } \\
+ & = \frac{1}{2}e^{-x} \sqrt{  \frac{2\pi}{x} },\text{ for }x\gg 1
+\end{align}$$
+### Method 2
+We observe that:
+$$\begin{align}
+K_{\nu}(x) & =\int_{0}^{\infty}dt\exp(-x\cosh t)\cosh \nu t \\ & =\frac{1}{2}\int_{-\infty}^{\infty}dt\exp(-x\cosh t)\cosh \nu t \\
+
+ & = \frac{1}{2} \frac{1}{\nu} \int d(\sinh vt)\exp(-x\cosh t)
+\end{align}$$
+
 We set $\tau:=\sinh vt$. Then we want to find the inverse. We have:
 $$\begin{align}
 \tau & =\sinh vt\implies t= \frac{1}{\nu}\sinh ^{-1}(\tau)
 \end{align}$$
 Then we know:
-$$K_{\nu}(x)= \frac{1}{\nu}\int d\tau \exp\left( -x \cosh\left(  \frac{1}{\nu}\sinh ^{-1}(\tau) \right) \right)$$
+$$K_{\nu}(x)= \frac{1}{2} \frac{1}{\nu}\int d\tau \exp\left( -x \cosh\left(  \frac{1}{\nu}\sinh ^{-1}(\tau) \right) \right)$$
 We find $\sinh ^{-1}$ by setting $y=\sinh x$. Then:
 $$\begin{align}
 y & = \sinh x \\
@@ -70,8 +109,9 @@ We also find:
 $$f(0)=-1$$
 Then we have:
 $$\begin{align}
-K_{\nu}(x) & \approx  \frac{1}{\nu}e^{xf(0)}\sqrt{  \frac{2\pi}{-xf^{''}(0)} } \\
- & = \frac{1}{\nu}e^{-x}\sqrt{  \frac{2\pi}{x / \nu^{2}} }
+K_{\nu}(x) & \approx  \frac{1}{2} \frac{1}{\nu}e^{xf(0)}\sqrt{  \frac{2\pi}{-xf^{''}(0)} } \\
+ & = \frac{1}{2} \frac{1}{\nu}e^{-x}\sqrt{  \frac{2\pi}{x / \nu^{2}} } \\
+ & = \frac{1}{2} e^{-x}\sqrt{ \frac{2\pi}{x} }
 \end{align}$$
 
 # 3.
@@ -169,10 +209,10 @@ $$S=kN\left[\ln\left( \frac{V}{h^{3}}  \left(  \frac{4\pi mE}{3N } \right)^{3/2}
 Fix the system energy $U$. Want to find the number of states with total energy $U$. Obviously, there are $\frac{U}{\hbar \omega_{0}}$ quanta of energies for us to distribute among the $3N$ degrees of freedom. 
 
 This is equivalent to the problem of partition a set of $\frac{U}{\hbar \omega_{0}}$ elements into $3N$ subsets (possibly empty set.) We add $3N$ elements such that all the sets are non-empty. So we partition a set of $\frac{U}{\hbar \omega_{0}}+3N$ elements into $3N$ non-empty subsets. This is equivalent to putting $3N-1$ partitions into $\frac{U}{\hbar \omega_{0}}+3N-1$ slots. So:
-$$\Omega(U,N)= \frac{\left(  \frac{U}{\hbar \omega_{0}} \right)!}{(3N-1)!\left(  \frac{U}{\hbar \omega_{0}} \right)!}$$
+$$\Omega(U,N)= \frac{\left(  \frac{U}{\hbar \omega_{0}} +3N-1\right)!}{(3N-1)!\left(  \frac{U}{\hbar \omega_{0}} \right)!}$$
 So as $N\rightarrow \infty$:
 $$\begin{align}
-\ln \Omega & \approx \frac{U}{\hbar \omega_{0}}\ln\left(  \frac{U}{\hbar \omega_{0}} \right)- \frac{U}{\hbar \omega_{0}}- (3N-1)\ln(3N-1)+(3N-1)- \frac{U}{\hbar \omega_{0}}\ln\left(  \frac{U}{\hbar \omega_{0}} \right)+ \frac{U}{\hbar \omega_{0}} \\
+\ln \Omega & \approx \left(  \frac{U}{\hbar \omega_{0}}+3N-1 \right)\ln\left(  \frac{U}{\hbar \omega_{0}}+3N-1 \right)- (\frac{U}{\hbar \omega_{0}}+3N-1)- (3N-1)\ln(3N-1)+(3N-1)- \frac{U}{\hbar \omega_{0}}\ln\left(  \frac{U}{\hbar \omega_{0}} \right)+ \frac{U}{\hbar \omega_{0}} \\
  & = (3N-1)\ln\left(  \frac{\frac{U}{\hbar \omega_{0}}}{3N-1}+1 \right)+ \frac{U}{\hbar \omega_{0}}\ln\left(  1 + (3N-1) \frac{\hbar \omega_{0}}{U} \right) \\
  & \approx (3N-1)\left(  \frac{\frac{U}{\hbar \omega_{0}}}{3N-1 } \right)+ \frac{U}{\hbar \omega_{0}}\ln\left(  3N \frac{\hbar \omega_{0}}{U} \right) \\
  & = \frac{U}{\hbar \omega_{0}}\left( 1+ \ln\left(  3N \frac{\hbar \omega_{0}}{U} \right) \right)
