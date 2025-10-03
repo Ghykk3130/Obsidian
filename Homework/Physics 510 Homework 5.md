@@ -231,5 +231,12 @@ $$\begin{align}
 \implies  & \ln\left(  \frac{1}{\alpha}-1 \right) = \frac{\alpha N\epsilon}{kT} \\
 \implies & T= \frac{\alpha N\epsilon}{k} \frac{1}{\ln\left(  \frac{1}{\alpha}-1 \right)}
 \end{align}$$
+Observe from the denominator that $T$ changes sign around $\alpha= \frac{1}{2}$. If $\frac{1}{2} <\alpha<1$, then $T<0$. If $0<\alpha< \frac{1}{2}$, the $T>0$.
+
+## c).
+### i).
+No, it cannot. Because at equilibrium, I must have equal temperature. For the monatomic gas, I have: $T= \frac{pV}{Nk}>0$.
+
+### ii).
 
 
