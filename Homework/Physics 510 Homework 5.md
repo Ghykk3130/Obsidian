@@ -208,5 +208,28 @@ A schematic plot:
 <img src="heat_capacitance.png" width="400">
 </div>
 ## c).
+Clearly, as $T\rightarrow 0+$, we have that $C\rightarrow 0$. This is because the decay in the exponential suppress the growth of the quadratic term.
+
+As $T\rightarrow \infty$, I can only keep the leading term:
+$$C \approx \frac{3N(\hbar \omega_{0})^{2}}{k} \frac{1}{T^{2}} \cdot 1=\frac{3N(\hbar \omega_{0})^{2}}{k} \frac{1}{T^{2}}$$
+# 5.
+In class, we found $E(T)$:
+$$E(T)= \frac{N\epsilon}{1+\exp\left( \frac{E}{kT} \right)} \tag{1}$$
+here $E=\alpha N\epsilon$. We have:
+$$\begin{align}
+C & = \left(\frac{\partial E}{\partial T}\right)_{N} \\
+ & = -N\epsilon \left(  1+\exp\left( \frac{E}{kT} \right) \right)^{-2}\left( - \frac{E}{kT^{2}} \right)\exp\left(  \frac{E}{kT} \right) \\
+ & = \frac{NE\epsilon}{kT^{2}} \frac{\exp\left( \frac{E}{kT} \right)}{\left( 1+\exp\left( \frac{E}{kT} \right) \right)^{2}} \\
+ & = \frac{NE\epsilon}{kT^{2}} \frac{1}{\exp\left( - \frac{E}{kT} \right)+\exp\left( \frac{E}{kT} \right)+2} \\
+ & = \frac{NE\epsilon}{kT^{2}} \frac{1}{\exp\left( - \frac{\alpha N\epsilon}{kT} \right)+ \exp\left(  \frac{\alpha N\epsilon}{kT} \right)+2}
+\end{align}$$
+## b).
+Inverse $1)$ to find:
+$$\begin{align}
+\alpha N\epsilon & = \frac{N\epsilon}{1+\exp\left(  \frac{\alpha N\epsilon}{kT} \right)} \\
+\implies & \frac{1}{\alpha}-1  =\exp\left(  \frac{\alpha N\epsilon}{kT} \right) \\
+\implies  & \ln\left(  \frac{1}{\alpha}-1 \right) = \frac{\alpha N\epsilon}{kT} \\
+\implies & T= \frac{\alpha N\epsilon}{k} \frac{1}{\ln\left(  \frac{1}{\alpha}-1 \right)}
+\end{align}$$
 
 
