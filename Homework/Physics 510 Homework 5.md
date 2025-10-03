@@ -78,4 +78,21 @@ K_{\nu}(x) & \approx  \frac{1}{\nu}e^{xf(0)}\sqrt{  \frac{2\pi}{-xf^{''}(0)} } \
 >[!Lemma 1]
 >$$\delta(f(x))=\sum_{i} \frac{\delta(x-x_{i})}{|f^{'}(x_{i})|},\text{ where }x_{i}\text{ are the zeros.}$$
 ### Proof.
+Let $\{ x_{i} \}$ be a sequence of zeros of $f$. WLOG assume that $x_{1}<x_{2}<\dots<x_{N}$ Since the set $\{ x_{i} \}$ is discrete, pick a sequence of points $\{ y_{j} \}$ such that $f$ is monotone in $[y_{j-1},y_{j}],\forall j$. Then $x_{i}$'s have to fall into some of such intervals. We set:
+$$g_{j}:=\mathbb{1}_{[y_{j-1},y_{j}]}f$$
+Then $g_{j}$ is monotone $\forall j$. Now it suffices to show that:
+$$\delta(g_{j}(x))=\frac{\delta(x-x_{i}^{(j)})}{|g_{j}^{'}(x_{i}^{j})|},\text{ where }x_{i}^{j} \text{ is the zero point of }f\text{ that falls into }[y_{j-1},y_{j}] $$
+Then $\forall A\subset \mathbb{R}$, if $x_{i}^{j}\in A$, we have:
+$$\begin{align}
+\int_{x\in A}d(g_{j}(x)) \frac{\delta(x-x_{i}^{j})}{|g^{'}(x_{i}^j)|} & = \int dx |g_{j}^{'}(x)| \frac{\delta(x-x_{i}^j)}{|g^{'}(x_{i}^j)|} \\
+ & = |g_{j}^{'}(x)_{i}^j| \cdot \frac{1}{|g_{j}^{'}(x_{i}^j)|} \\
+ & =1=\int d(g_{j}(x))\delta(g_{j}(x))
+\end{align}$$
+Since $A$ is arbitrary, we have:
+$$\delta(g_{j}(x))=\frac{\delta(x-x_{i}^{(j)})}{|g_{j}^{'}(x_{i}^{j})|}$$
+If $x_{i}^j \notin A$, obviously I have:
+$$\delta(g_{j}(x))=0=\frac{\delta(x-x_{i}^{(j)})}{|g_{j}^{'}(x_{i}^{j})|}$$
+Then since $f=\sum_{j}g_{j}$, done.
+>[!Right]
+>$\blacksquare$
 
