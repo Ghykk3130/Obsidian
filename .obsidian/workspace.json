@@ -55,12 +55,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Laplace's method and Stirling approximation.md",
+                "file": "Homework/Physics 510 Homework 5.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Laplace's method and Stirling approximation"
+              "title": "Physics 510 Homework 5"
             }
           }
         ],
@@ -222,8 +222,8 @@
   },
   "active": "301b486ee3fc3ede",
   "lastOpenFiles": [
-    "Lie Algebras.md",
     "Laplace's method and Stirling approximation.md",
+    "Lie Algebras.md",
     "Homework/Physics 510 Homework 5.md",
     "Homework/Physics 510 Homework 4.md",
     "Liouville 定理.md",
