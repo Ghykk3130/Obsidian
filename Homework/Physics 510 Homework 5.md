@@ -164,4 +164,49 @@ $$\begin{align}
 Then we have:
 $$S=kN\left[\ln\left( \frac{V}{h^{3}}  \left(  \frac{4\pi mE}{3N } \right)^{3/2}\right)+ \frac{3}{2}\right]$$
 
+# 4.
+## a).
+Fix the system energy $U$. Want to find the number of states with total energy $U$. Obviously, there are $\frac{U}{\hbar \omega_{0}}$ quanta of energies for us to distribute among the $3N$ degrees of freedom. 
+
+This is equivalent to the problem of partition a set of $\frac{U}{\hbar \omega_{0}}$ elements into $3N$ subsets (possibly empty set.) We add $3N$ elements such that all the sets are non-empty. So we partition a set of $\frac{U}{\hbar \omega_{0}}+3N$ elements into $3N$ non-empty subsets. This is equivalent to putting $3N-1$ partitions into $\frac{U}{\hbar \omega_{0}}+3N-1$ slots. So:
+$$\Omega(U,N)= \frac{\left(  \frac{U}{\hbar \omega_{0}} \right)!}{(3N-1)!\left(  \frac{U}{\hbar \omega_{0}} \right)!}$$
+So as $N\rightarrow \infty$:
+$$\begin{align}
+\ln \Omega & \approx \frac{U}{\hbar \omega_{0}}\ln\left(  \frac{U}{\hbar \omega_{0}} \right)- \frac{U}{\hbar \omega_{0}}- (3N-1)\ln(3N-1)+(3N-1)- \frac{U}{\hbar \omega_{0}}\ln\left(  \frac{U}{\hbar \omega_{0}} \right)+ \frac{U}{\hbar \omega_{0}} \\
+ & = (3N-1)\ln\left(  \frac{\frac{U}{\hbar \omega_{0}}}{3N-1}+1 \right)+ \frac{U}{\hbar \omega_{0}}\ln\left(  1 + (3N-1) \frac{\hbar \omega_{0}}{U} \right) \\
+ & \approx (3N-1)\left(  \frac{\frac{U}{\hbar \omega_{0}}}{3N-1 } \right)+ \frac{U}{\hbar \omega_{0}}\ln\left(  3N \frac{\hbar \omega_{0}}{U} \right) \\
+ & = \frac{U}{\hbar \omega_{0}}\left( 1+ \ln\left(  3N \frac{\hbar \omega_{0}}{U} \right) \right)
+\end{align}$$
+Therefore:
+$$S=k\ln \Omega=k\frac{U}{\hbar \omega_{0}}\left( 1+ \ln\left(  3N \frac{\hbar \omega_{0}}{U} \right) \right)\tag{1}$$
+## b).
+First we observe that:
+$$\begin{align}
+\frac{1}{T}= \left(  \frac{\partial S}{\partial U} \right)_{N} & = \frac{k}{\hbar \omega_{0}}\left( 1+ \ln\left(  3N \frac{\hbar \omega_{0}}{U} \right) \right)+ k \frac{U}{\hbar \omega_{0}} \left( - \frac{1}{U} \right) \\
+ & =  \frac{k}{\hbar \omega_{0}}\ln\left(  3N \frac{\hbar \omega_{0}}{U} \right)
+\end{align}$$
+Therefore, after rearranging the terms and taking exponentials, we find that:
+$$\begin{align}
+ &  \exp\left(  \frac{\hbar \omega_{0}}{kT} \right)= 3N \frac{\hbar \omega_{0}}{U} \\
+\implies & \frac{U}{\hbar \omega_{0}}= 3N \exp\left(  - \frac{\hbar \omega_{0}}{kT} \right) \\
+\end{align}$$
+Then we substitute this into $1)$ to get:
+$$S=3Nk\exp\left( - \frac{\hbar \omega_{0}}{kT} \right)\left( 1+ \frac{1}{T} \frac{\hbar \omega_{0}}{k} \right)$$
+Know that:
+$$T \frac{\partial S}{\partial T}=- \frac{1}{T} \frac{\partial S}{\partial(1/ T)}$$
+we first evaluate:
+$$\begin{align}
+\frac{\partial S}{\partial( 1 / T)} & = 3Nk \left(  -\frac{\hbar \omega_{0}}{k} \right)  \exp\left( - \frac{\hbar \omega_{0}}{kT} \right)\left( 1+ \frac{1}{T} \frac{\hbar \omega_{0}}{k} \right)+3Nk\exp\left( - \frac{\hbar \omega_{0}}{kT} \right) \frac{\hbar \omega_{0}}{k} \\
+ & = 3N\hbar \omega_{0}\exp\left(  - \frac{\hbar \omega_{0}}{kT}  \right)\left( - \frac{1}{T} \frac{\hbar \omega_{0}}{k} \right)
+\end{align}$$
+Then:
+$$\begin{align}
+C=- \frac{1}{T} \frac{\partial S}{\partial( 1 / T)} & = \frac{3N(\hbar \omega_{0})^{2}}{k} \frac{1}{T^{2}}\exp\left( - \frac{\hbar \omega_{0}}{kT} \right)
+\end{align}$$
+A schematic plot:
+<div style="text-align:center">
+<img src="heat_capacitance.png" width="400">
+</div>
+## c).
+
 
