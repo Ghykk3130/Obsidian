@@ -75,3 +75,7 @@ K_{\nu}(x) & \approx  \frac{1}{\nu}e^{xf(0)}\sqrt{  \frac{2\pi}{-xf^{''}(0)} } \
 \end{align}$$
 
 # 3.
+>[!Lemma 1]
+>$$\delta(f(x))=\sum_{i} \frac{\delta(x-x_{i})}{|f^{'}(x_{i})|},\text{ where }x_{i}\text{ are the zeros.}$$
+### Proof.
+
