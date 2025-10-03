@@ -121,8 +121,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200,
-    "collapsed": true
+    "width": 200
   },
   "right": {
     "id": "9003d078f8dbc4ed",
@@ -222,13 +221,13 @@
   },
   "active": "301b486ee3fc3ede",
   "lastOpenFiles": [
+    "Experimental/Cantilever.md",
+    "Homework/Physics 510 Homework 5.md",
+    "Homework/Physics 510 Homework 4.md",
     "Pictures/heat_capacitance.png",
     "Laplace's method and Stirling approximation.md",
     "Lie Algebras.md",
-    "Homework/Physics 510 Homework 5.md",
-    "Homework/Physics 510 Homework 4.md",
     "Liouville 定理.md",
-    "Experimental/Cantilever.md",
     "系综.md",
     "Homework/Physics 511 Homework 4.md",
     "Piston-gas Model.md",
@@ -257,7 +256,6 @@
     "Pictures/wavefunction_contour (1).png",
     "Pictures/wavefunction_contour.png",
     "Pictures/wavefunction.png",
-    "Pictures/092f3ad1e9f2ebc005b999d7ea603cac.jpg",
     "Homework",
     "Pictures",
     "Experimental",
