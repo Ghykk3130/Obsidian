@@ -96,3 +96,8 @@ Then since $f=\sum_{j}g_{j}$, done.
 >[!Right]
 >$\blacksquare$
 
+Generalized to a continuum, we get:
+
+>[! Corollary 1]
+$$\delta(f(\vec{x}))=\int_{f^{-1}(\{ 0 \})}dS^{'} \frac{\delta(\vec{x}-\vec{x}^{'})}{|\nabla f|_{\vec{x}^{'}}|}$$
+
