@@ -96,8 +96,72 @@ Then since $f=\sum_{j}g_{j}$, done.
 >[!Right]
 >$\blacksquare$
 
-Generalized to a continuum, we get:
+Generalize to continuum, we get:
 
 >[! Corollary 1]
 $$\delta(f(\vec{x}))=\int_{f^{-1}(\{ 0 \})}dS^{'} \frac{\delta(\vec{x}-\vec{x}^{'})}{|\nabla f|_{\vec{x}^{'}}|}$$
+
+Then we need to evaluate:
+$$\begin{align}
+\Omega & = \frac{1}{h^{3N}} \int dq_{1}\dots dq_{3N}dp_{1}\dots dp_{3N} \delta(E-H(p_{i},q_{i})) \\
+ & = \frac{1}{h^{3N}}\int d\Omega \int_{H^{-1}(E)} dS^{'} \frac{\delta(q_{1}-q_{1}^{'})\dots\delta(p_{3N}-p_{3N}^{'})}{|\nabla(E-H)|}
+\end{align}$$
+We know that:
+$$H=\sum_{i} \frac{p^{2}_{i}}{2m}$$
+Set $H=E$ to get:
+$$\sqrt{ \sum_{i}p_{i}^{2} }=\sqrt{ 2mE }$$
+Therefore:
+$$H^{-1}(E)= \mathbb{R}^{3N}\times \partial B(0,\sqrt{ 2mE }),\text{ where } B(0,\sqrt{ 2mE })\text{ is the 3N-dimensional ball centered at }0$$
+We also know that:
+$$\begin{align}
+\nabla(E-H) & =-\nabla H \\
+ & = -\sum_{i} \frac{p_{i}}{m} \hat{p_{i}} \\
+\implies & |\nabla(E-H)|=\sqrt{ \sum_{i} \left( \frac{p_{i}}{m} \right)^{2} }
+\end{align}$$
+Note that in the integral, this gradient need to be evaluated at the coordinates with prime. Then I have:
+$$\begin{align}
+\int_{H^{-1}(E)} dS^{'} \frac{\delta(q_{1}-q_{1}^{'})\dots\delta(p_{3N}-p_{3N}^{'})}{|\nabla(E-H)|} & =\int_{\mathbb{R}^{3N}}dq^{'}_{1}\dots  dq^{'}_{3N} \delta(q_{1}-q_{1}^{'})\dots\delta(q_{3N}-q_{3N}^{'}) \int_{ \partial B(0,\sqrt{ 2mE })} \frac{\delta(p_{1}-p_{1}^{'})\dots\delta(p_{3N}-p_{3N}^{'})}{\sqrt{ \sum_{i}\left(  \frac{p_{i}}{m} \right)^{2} }} \\
+ & = 1 \cdot \int_{\partial B(0,\sqrt{ 2mE })}dS^{'}_{p} \delta(p_{1}-p_{1}^{'})\dots\delta(p_{3N}-p_{3N}^{'})\frac{1}{\sqrt{ \sum_{i} \left(  \frac{p_{i}^{'}}{m} \right)^{2} }}
+\end{align}$$
+Now we can evaluate:
+$$\begin{align}
+\Omega & = \frac{1}{h^{3N}}\int d\Omega\int_{\partial B(0,\sqrt{ 2mE })}dS^{'}_{p} \delta(p_{1}-p_{1}^{'})\dots\delta(p_{3N}-p_{3N}^{'})\frac{1}{\sqrt{ \sum_{i} \left(  \frac{p_{i}^{'}}{m} \right)^{2} }}  \\
+ & = \frac{1}{h^{3N}}\int dq_{1}\dots dq_{3N} \int_{\partial B(0,\sqrt{ 2mE })}dS^{'}_{p}\int dp_{1}\dots dp_{3N} \delta(p_{1}-p_{1}^{'})\dots\delta(p_{3N}-p_{3N}^{'} ) \frac{1}{\sqrt{ \sum_{i}\left(  \frac{p_{i}^{'}}{m} \right)^{2} }}
+\end{align}$$
+We have:
+$$\begin{align}
+\int dq_{1}\dots dq_{3N} & = \int_{0}^L dq_{1}\dots \int_{0}^Ldq_{3N} \\
+ & =L^{3N}=V^N
+\end{align}$$
+We also have:
+$$\begin{align}
+\int dp_{1}\dots dp_{3N} \delta(p_{1}-p_{1}^{'})\dots\delta(p_{3N}-p_{3N}^{'} ) \frac{1}{\sqrt{ \sum_{i}\left(  \frac{p_{i}^{'}}{m} \right)^{2} }} & = \frac{1}{\sqrt{ \sum_{i}\left(  \frac{p_{i}^{'}}{m} \right)^{2} }}
+\end{align}$$
+Then the expression reduces to:
+$$\begin{align}
+\Omega & = \frac{V^N}{h^{3N}}\int_{\partial B(0,\sqrt{ 2mE })}dS^{'}_{p} \frac{1}{\sqrt{ \sum_{i}\left(  \frac{p_{i}^{'}}{m} \right)^{2} }}
+\end{align}$$
+This is just an integration on an 3N-dimensional sphere. We change to spherical coordinates to get:
+$$\sqrt{ \sum_{i}\left(  \frac{p_{i}^{'}}{m} \right)^{2} }= \sqrt{ \frac{2E}{m} }$$
+Therefore:
+$$\begin{align}
+\int_{\partial B(0,\sqrt{ 2mE })}dS^{'}_{p} \frac{1}{\sqrt{ \sum_{i} \left(  \frac{p_{i}^{'}}{m} \right)^{2} }}  & =\int_{\partial B(0,\sqrt{ 2mE })} (2mE)^{ \frac{3N-1}{2}} \frac{1}{\sqrt{ \frac{2E}{m} }}\sin \phi_{1}sin^{2}\phi_{2}\dots \sin^{3N-2}\phi_{3N-2}d\phi_{1}\dots d\phi_{3N-2}d\theta  \\
+ & = (2mE)^{\frac{3N-1}{2}} \left( \frac{2E}{m} \right)^{-1/2} \frac{2\pi^{3N/2}}{\Gamma\left( \frac{3N}{2} \right)} \\
+ & = (2E)^{3N/2-1}m^{3N/2} \frac{2\pi^{3N/2}}{\Gamma\left( \frac{3N}{2} \right)}
+\end{align}$$
+Then:
+$$\Omega= \frac{V^N}{h^{3N}} \frac{(2\pi mE)^{3N/2}}{\Gamma\left(  \frac{3N}{2} \right)E}$$
+Therefore:
+$$\begin{align}
+\ln(\Omega) & =\ln\left(  \frac{V^N}{h^{3N}} \frac{(2\pi mE)^{3N/2}}{\Gamma\left(  \frac{3N}{2} \right)E} \right) \\
+ & = N \ln\left(  \frac{V}{h^{3}} (2\pi mE)^{3/2} \right)-\ln\left( \Gamma\left( \frac{3N}{2} \right) \right)-\ln E
+\end{align}$$
+If we take $N\rightarrow \infty$, we get:
+$$\begin{align}
+\ln(\Omega) & =N\ln\left(  \frac{V}{h^{3}}(2\pi mE)^{3/2} \right) -\frac{3N}{2}\ln\left(  \frac{3N}{2} \right)+ \frac{3N}{2} \\
+ & = N\ln\left( \frac{V}{h^{3}}  \left(  \frac{4\pi mE}{3N } \right)^{3/2}\right)+ \frac{3}{2}N
+\end{align}$$
+Then we have:
+$$S=kN\left[\ln\left( \frac{V}{h^{3}}  \left(  \frac{4\pi mE}{3N } \right)^{3/2}\right)+ \frac{3}{2}\right]$$
+
 
