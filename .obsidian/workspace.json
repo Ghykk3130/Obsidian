@@ -55,12 +55,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Liouville 定理.md",
+                "file": "统计力学的数学基础.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Liouville 定理"
+              "title": "统计力学的数学基础"
             }
           }
         ],
@@ -222,6 +222,10 @@
   },
   "active": "301b486ee3fc3ede",
   "lastOpenFiles": [
+    "算子平均值的含义.md",
+    "Lie Group.md",
+    "Laplace's method and Stirling approximation.md",
+    "统计力学的数学基础.md",
     "Homework/Physics 511 Homework 4.md",
     "Pictures/wavefunction_classicalmix (2).png",
     "Homework/Physics 510 Homework 5.md",
@@ -230,9 +234,7 @@
     "Pictures/heat_capacitance (2).png",
     "Experimental/Cantilever.md",
     "Pictures/heat_capacitance.png",
-    "Laplace's method and Stirling approximation.md",
     "Lie Algebras.md",
-    "Liouville 定理.md",
     "系综.md",
     "Piston-gas Model.md",
     "多级展开.md",
@@ -249,7 +251,6 @@
     "Homework/Physics 402 Class Prep 4.md",
     "Homework/Physics 510 Homework 2.md",
     "不确定关系.md",
-    "Experimental/PID Control.md",
     "Pictures/f8a3a087a1dc4e5f30f652e6e9408c8d.jpg",
     "Pictures/f159f18fa23b3186b5cda0aac811349e.jpg",
     "Pictures/ea0811893cd4063e0b85b893fdafc657.jpg",
