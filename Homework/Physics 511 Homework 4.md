@@ -337,7 +337,7 @@ Maybe I should say what the unit for the y value is in the axis label. But since
 ## e).
 
 <div style="text-align:center">
-<img src="wavefunction_classicalmix (1).png">
+<img src="wavefunction_classicalmix (2).png">
 </div>
 
 In with both slits unblocked, the state of the electron after passing through the slits is a quantum mix of the state $\ket{\psi_{+}}$ and $\ket{\psi_{-}}$. If we block one of the slits 50 percent of the time, the result would be a classical mix of the two separate cases, which we choose manually without referring to any quantum mechanical superposition.
