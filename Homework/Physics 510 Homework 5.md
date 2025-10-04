@@ -212,64 +212,85 @@ This is equivalent to the problem of partition a set of $\frac{U}{\hbar \omega_{
 $$\Omega(U,N)= \frac{\left(  \frac{U}{\hbar \omega_{0}} +3N-1\right)!}{(3N-1)!\left(  \frac{U}{\hbar \omega_{0}} \right)!}$$
 So as $N\rightarrow \infty$:
 $$\begin{align}
-\ln \Omega & \approx \left(  \frac{U}{\hbar \omega_{0}}+3N-1 \right)\ln\left(  \frac{U}{\hbar \omega_{0}}+3N-1 \right)- (\frac{U}{\hbar \omega_{0}}+3N-1)- (3N-1)\ln(3N-1)+(3N-1)- \frac{U}{\hbar \omega_{0}}\ln\left(  \frac{U}{\hbar \omega_{0}} \right)+ \frac{U}{\hbar \omega_{0}} \\
+\ln \Omega & \approx \left(  \frac{U}{\hbar \omega_{0}}+3N-1 \right)\ln\left(  \frac{U}{\hbar \omega_{0}}+3N-1 \right)- \left( \frac{U}{\hbar \omega_{0}}+3N-1 \right)- (3N-1)\ln(3N-1)+(3N-1)- \frac{U}{\hbar \omega_{0}}\ln\left(  \frac{U}{\hbar \omega_{0}} \right)+ \frac{U}{\hbar \omega_{0}} \\
  & = (3N-1)\ln\left(  \frac{\frac{U}{\hbar \omega_{0}}}{3N-1}+1 \right)+ \frac{U}{\hbar \omega_{0}}\ln\left(  1 + (3N-1) \frac{\hbar \omega_{0}}{U} \right) \\
- & \approx (3N-1)\left(  \frac{\frac{U}{\hbar \omega_{0}}}{3N-1 } \right)+ \frac{U}{\hbar \omega_{0}}\ln\left(  3N \frac{\hbar \omega_{0}}{U} \right) \\
- & = \frac{U}{\hbar \omega_{0}}\left( 1+ \ln\left(  3N \frac{\hbar \omega_{0}}{U} \right) \right)
+ & \approx 3N\ln\left(  \frac{1}{3N} \frac{U}{\hbar \omega_{0}}+1 \right)+ \frac{U}{\hbar \omega_{0}}\ln\left( 1+ 3N \frac{\hbar \omega_{0}}{U} \right)
 \end{align}$$
 Therefore:
-$$S=k\ln \Omega=k\frac{U}{\hbar \omega_{0}}\left( 1+ \ln\left(  3N \frac{\hbar \omega_{0}}{U} \right) \right)\tag{1}$$
+$$S=k\ln \Omega=3Nk\ln\left(  \frac{1}{3N} \frac{U}{\hbar \omega_{0}}+1 \right)+ k\frac{U}{\hbar \omega_{0}}\ln\left( 1+ 3N \frac{\hbar \omega_{0}}{U} \right)$$
 ## b).
 First we observe that:
 $$\begin{align}
-\frac{1}{T}= \left(  \frac{\partial S}{\partial U} \right)_{N} & = \frac{k}{\hbar \omega_{0}}\left( 1+ \ln\left(  3N \frac{\hbar \omega_{0}}{U} \right) \right)+ k \frac{U}{\hbar \omega_{0}} \left( - \frac{1}{U} \right) \\
- & =  \frac{k}{\hbar \omega_{0}}\ln\left(  3N \frac{\hbar \omega_{0}}{U} \right)
+\frac{1}{T} & = \left(  \frac{\partial S}{\partial U} \right)_{N}  \\
+ &  =  3Nk \frac{ \frac{1}{3N} \frac{1}{\hbar \omega_{0}}}{ \frac{1}{3N} \frac{U}{\hbar \omega_{0}}+1}+ \frac{k}{\hbar \omega_{0}} \ln\left(  1+ 3N \frac{\hbar \omega_{0}}{U} \right)+ k \frac{U}{\hbar \omega_{0}} \frac{ - \frac{3N\hbar \omega_{0}}{U^{2}}}{1+ 3N \frac{\hbar \omega_{0}}{U}} \\
+ & = \frac{k}{\hbar \omega_{0}}\ln\left( 1+ 3N \frac{\hbar \omega_{0}}{U} \right)
 \end{align}$$
-Therefore, after rearranging the terms and taking exponentials, we find that:
+Therefore, we can solve for $U$:
 $$\begin{align}
- &  \exp\left(  \frac{\hbar \omega_{0}}{kT} \right)= 3N \frac{\hbar \omega_{0}}{U} \\
-\implies & \frac{U}{\hbar \omega_{0}}= 3N \exp\left(  - \frac{\hbar \omega_{0}}{kT} \right) \\
+ &  \frac{\hbar \omega_{0}}{kT}= \ln\left( 1+3N \frac{\hbar \omega_{0}}{U} \right) \\
+\implies & \exp\left(  \frac{\hbar \omega_{0}}{kT} \right)=1+3N \frac{\hbar \omega_{0}}{U} \\
+\implies & U= 3N\hbar \omega_{0} \frac{1}{\exp\left(  \frac{\hbar \omega_{0}}{kT} \right)-1}
 \end{align}$$
-Then we substitute this into $1)$ to get:
-$$S=3Nk\exp\left( - \frac{\hbar \omega_{0}}{kT} \right)\left( 1+ \frac{1}{T} \frac{\hbar \omega_{0}}{k} \right)$$
 Know that:
-$$T \frac{\partial S}{\partial T}=- \frac{1}{T} \frac{\partial S}{\partial(1/ T)}$$
+$$C=\left( \frac{\partial U}{\partial T} \right)_{N}= -\frac{1}{T^{2}} \left( \frac{\partial U}{\partial( 1 / T)} \right)_{N}$$
 we first evaluate:
 $$\begin{align}
-\frac{\partial S}{\partial( 1 / T)} & = 3Nk \left(  -\frac{\hbar \omega_{0}}{k} \right)  \exp\left( - \frac{\hbar \omega_{0}}{kT} \right)\left( 1+ \frac{1}{T} \frac{\hbar \omega_{0}}{k} \right)+3Nk\exp\left( - \frac{\hbar \omega_{0}}{kT} \right) \frac{\hbar \omega_{0}}{k} \\
- & = 3N\hbar \omega_{0}\exp\left(  - \frac{\hbar \omega_{0}}{kT}  \right)\left( - \frac{1}{T} \frac{\hbar \omega_{0}}{k} \right)
+\left(  \frac{\partial U}{\partial( 1 / T)} \right)_{N} & =3N\hbar \omega_{0} \frac{-1}{\left( \exp\left(  \frac{\hbar \omega_{0}}{kT} \right)-1 \right)^{2}} \cdot \frac{\hbar \omega_{0}}{k}\exp\left(  \frac{\hbar \omega_{0}}{kT} \right) \\
+ & = -\frac{3N(\hbar \omega_{0})^{2}}{k} \frac{1}{\exp\left(  \frac{\hbar \omega_{0}}{kT}\right) + \exp\left( - \frac{\hbar \omega_{0}}{kT} \right)-2}
 \end{align}$$
 Then:
 $$\begin{align}
-C=- \frac{1}{T} \frac{\partial S}{\partial( 1 / T)} & = \frac{3N(\hbar \omega_{0})^{2}}{k} \frac{1}{T^{2}}\exp\left( - \frac{\hbar \omega_{0}}{kT} \right)
+C= \frac{3N(\hbar \omega_{0})^{2}}{k} \frac{1}{T^{2}} \frac{1}{\exp\left(  \frac{\hbar \omega_{0}}{kT}\right) + \exp\left( - \frac{\hbar \omega_{0}}{kT} \right)-2} \tag{1}
 \end{align}$$
-A schematic plot:
+A schematic plot (the units are not specified because this is just a schematic to show the overall trend):
 <div style="text-align:center">
-<img src="heat_capacitance.png" width="400">
+<img src="heat_capacitance (2).png" width="400">
 </div>
 ## c).
-Clearly, as $T\rightarrow 0+$, we have that $C\rightarrow 0$. This is because the decay in the exponential suppress the growth of the quadratic term.
+Clearly, as $T\rightarrow 0+$, we have:
+$$\begin{align}
+C  & \approx \frac{3N(\hbar \omega_{0})^{2}}{k} \frac{1}{T^{2}} \frac{1}{\exp\left(  \frac{\hbar \omega_{0}}{kT} \right)} \\
+ & = \frac{3N(\hbar \omega_{0})^{2}}{k} \frac{1}{T^{2}}\exp\left( - \frac{\hbar \omega_{0}}{kT} \right)
+\end{align}$$
 
-As $T\rightarrow \infty$, I can only keep the leading term:
-$$C \approx \frac{3N(\hbar \omega_{0})^{2}}{k} \frac{1}{T^{2}} \cdot 1=\frac{3N(\hbar \omega_{0})^{2}}{k} \frac{1}{T^{2}}$$
+As $T\rightarrow \infty$, I can approximate the denominator by:
+$$\begin{align}
+\exp\left(  \frac{\hbar \omega_{0}}{kT} \right)+ \exp\left(  - \frac{\hbar \omega_{0}}{kT} \right)-2  & \approx 1+ \frac{\hbar \omega_{0}}{kT}+ \frac{1}{2}\left(  \frac{\hbar \omega_{0}}{kT} \right)^{2}+ 1- \frac{\hbar \omega_{0}}{kT}+ \frac{1}{2}\left(  \frac{\hbar \omega_{0}}{kT} \right)^{2}-2 \\
+ & = \left(  \frac{\hbar \omega_{0}}{kT} \right)^{2}
+\end{align}$$
+Then substitute this into $1)$ to find:
+$$C=\frac{3N(\hbar \omega_{0})^{2}}{k} \frac{1}{T^{2}} \left(  \frac{kT}{\hbar \omega_{0}} \right)^{2}=3Nk$$
 # 5.
-In class, we found $E(T)$:
-$$E(T)= \frac{N\epsilon}{1+\exp\left( \frac{E}{kT} \right)} \tag{1}$$
+First find the number of states. Let $E$ be the total energy. Then we need to choose $\frac{E}{\epsilon}$ particles to be in the excited state. So:
+$$\Omega= \frac{N!}{\left(  \frac{E}{\epsilon} \right)!\left( N- \frac{E}{\epsilon} \right)!}$$
+Then as $N\rightarrow \infty$, we have:
+$$\begin{align}
+\ln \Omega  & \approx N\ln(N)-N- \frac{E}{\epsilon}\ln\left( \frac{E}{\epsilon} \right)+ \frac{E}{\epsilon}- \left( N- \frac{E}{\epsilon} \right)\ln\left( N- \frac{E}{\epsilon} \right)+ \left( N- \frac{E}{\epsilon} \right) \\
+ & = \left( N- \frac{E}{\epsilon} \right)\ln\left(  \frac{N}{N- \frac{E}{\epsilon}} \right)+ \frac{E}{\epsilon}\ln\left( N \frac{\epsilon}{E} \right) 
+\end{align}$$
+Therefore:
+$$S=k\left( N- \frac{E}{\epsilon} \right)\ln\left(  \frac{N}{N- \frac{E}{\epsilon}} \right)+ k\frac{E}{\epsilon}\ln\left( N \frac{\epsilon}{E} \right)$$
+Then I can find the temperature:
+$$\begin{align}
+\frac{1}{T} & =\left( \frac{\partial S}{\partial E} \right)_{N} \\
+ & = \frac{k}{\epsilon}\ln\left( N \frac{\epsilon}{E}-1 \right)
+\end{align}$$
+
+Then we found $E(T)$:
+$$E(T)= \frac{N\epsilon}{1+\exp\left( \frac{\epsilon}{kT} \right)} \tag{2}$$
 here $E=\alpha N\epsilon$. We have:
 $$\begin{align}
 C & = \left(\frac{\partial E}{\partial T}\right)_{N} \\
- & = -N\epsilon \left(  1+\exp\left( \frac{E}{kT} \right) \right)^{-2}\left( - \frac{E}{kT^{2}} \right)\exp\left(  \frac{E}{kT} \right) \\
- & = \frac{NE\epsilon}{kT^{2}} \frac{\exp\left( \frac{E}{kT} \right)}{\left( 1+\exp\left( \frac{E}{kT} \right) \right)^{2}} \\
- & = \frac{NE\epsilon}{kT^{2}} \frac{1}{\exp\left( - \frac{E}{kT} \right)+\exp\left( \frac{E}{kT} \right)+2} \\
- & = \frac{NE\epsilon}{kT^{2}} \frac{1}{\exp\left( - \frac{\alpha N\epsilon}{kT} \right)+ \exp\left(  \frac{\alpha N\epsilon}{kT} \right)+2}
+  & = N\epsilon \frac{-1}{\left( 1+\exp\left(  \frac{\epsilon}{kT} \right) \right)^{2}} \cdot \left( - \frac{\epsilon}{kT^{2}} \right)\exp\left(  \frac{\epsilon}{kT} \right) \\
+ & = \frac{N\epsilon^{2}}{kT^{2}} \frac{1}{\exp\left(  \frac{\epsilon}{kT} \right)+ \exp\left(  - \frac{\epsilon}{kT} \right)+2}
 \end{align}$$
 ## b).
 Inverse $1)$ to find:
 $$\begin{align}
-\alpha N\epsilon & = \frac{N\epsilon}{1+\exp\left(  \frac{\alpha N\epsilon}{kT} \right)} \\
-\implies & \frac{1}{\alpha}-1  =\exp\left(  \frac{\alpha N\epsilon}{kT} \right) \\
-\implies  & \ln\left(  \frac{1}{\alpha}-1 \right) = \frac{\alpha N\epsilon}{kT} \\
-\implies & T= \frac{\alpha N\epsilon}{k} \frac{1}{\ln\left(  \frac{1}{\alpha}-1 \right)}
+\alpha N\epsilon & = \frac{N\epsilon}{1+\exp\left(  \frac{\epsilon}{kT} \right)} \\
+\implies & \frac{1}{\alpha}-1  =\exp\left(  \frac{\epsilon}{kT} \right) \\
+\implies  & \ln\left(  \frac{1}{\alpha}-1 \right) = \frac{\epsilon}{kT} \\
+\implies & T= \frac{\epsilon}{k} \frac{1}{\ln\left(  \frac{1}{\alpha}-1 \right)}
 \end{align}$$
 Observe from the denominator that $T$ changes sign around $\alpha= \frac{1}{2}$. If $\frac{1}{2} <\alpha<1$, then $T<0$. If $0<\alpha< \frac{1}{2}$, the $T>0$.
 
