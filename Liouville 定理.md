@@ -1,62 +1,48 @@
 >[!Definition]
->Given a Hamiltonian system, define the phase flow $g^t$ as:
->$$g^{t}:(q(0)),p(0)\rightarrow(q(t),p(t))$$
->where $(q(0),p(0))$ is an arbitrary point in the phase space, $(q(t),p(t))$ is the solution of the Hamilton's equation starting from $(q(0),p(0))$ at time $t$.
+>Given a Hamiltonian system, define the phase flow $g^{t,t_{0}}$ as:
+>$$g^{(t_{},t_{0})}:(q(t_{0})),p(t_{0})\rightarrow(q(t),p(t))$$
+>where $(q(0),p(0))$ is an arbitrary point in the phase space, $(q(t),p(t))$ is the solution of the Hamilton's equation starting from $(q(t_{0}),p(0))$ at time $t$.
+## Remark
+我们必须理解当作用在相空间某点时发生了什么。任取相空间某点$(q,p)$，用$g^{(t_{},t_{0})}$作用在上面，就相当于将Hamiltonian $H(q,p,t)$中的先“调成”$t_{0}$，然后用这个Hamiltonian从$t_{0}$时刻开始将$(q,p)$演化成另一点。对空间中每一点操作构成一个映射，定义为$g^{t,t_{0}}$。我们可以看到，当Hamiltonian显含时间时，将$t$先“调成”$t_{0}$这步操作非常重要。
+
 
 >[!Proposition 1]
->Phase flows constitute a 1-parameter group.
-## Proof.
-任取一点$(q(0),p(0))$，考虑$g^{t_{1}}g^{t_{2}}(q(0),p(0))$。
+>If $\frac{\partial H}{\partial t}=0$, phase flows constitute a 1-parameter group.
+## Handwave
+任取一点$(q(t_{0}),p(t_{0}))$，考虑$g^{(t_{1},t_{0})}g^{(t_{2},t_{0})}(q(t_{0}),p(t_{0}))$。
 
-因为$g^{t_{2}}$会将任意从零时刻的点映到$t_{2}$时刻的相应点，$g^{t_{1}}$会将任意从零时刻开始的点映到$t_{1}$时刻的相应点
+因为$g^{(t_{2},t_{0})}$会将任意从$t_{0}$时刻的点映到$t_{2}$时刻的相应点，$g^{(t_{1},t_{0})}$会将任意从$t_{0}$时刻开始的点映到时刻的相应点。于是$g^{(t_{2},t_{0})}$在初始时将Hamiltonian中时间先调成$t_{0}$，然后将$(q(t_{0}),p(t_{0}))$演化到$(q(t_{2}),p(t_{2}))$。
 
+再用$g^{(t_{1},t_{0})}$对作映射。这又会将Hamiltonian中时间在初始时调成$t_{0}$。但这没用，因为$\frac{\partial H}{\partial t}=0$。所以这个算子等价于$g^{(t_{1}-t_{0}+t_{2},t_{2})}$。
 
-而$g^{t_{1}}(q(t_{2}),p(t_{2}))$为从$(q(t_{2}),p(t_{2}))$开始经过$t_{1}$后的解。这个解显然等于从$(q(0),p(0))$开始经过$t_{1}+t_{2}$后的解。于是：
-$$g^{t_{1}}g^{t_{2}}=g^{t_{1}+t_{2}}\in \{ \text{phase flow} \}$$
+而显然：
+$$g^{(t_{1}-t_{0}+t_{2},t_{2})}g^{(t_{2},t_{0})}=g^{(t_{2}+t_{1}-2t_{0},t_{0})}$$
+我们发现初始时间$t_{0}$不重要，重要的仅仅是演化的时间。于是记$g^{(t+t_{0},t_{9})}$为$g^{t}$。
+
 取$q^0=\mathbb{1}$为单位元。显然任取$g^{t}$，我们有：
 $$g^{-t}g^{t}=\mathbb{1}$$
 这是因为Hamilton方程的可逆性。
 >[!Right]
 >$\blacksquare$
-## Remark
-上述结论必须要求Hamiltonian不显含时间。在证明群封闭时，我们的基本逻辑是：
-- 从某点开始，系统按照Hamilton方程演化到另一点。再从这一点开始，系统按照一样的Hamilton方程演化，到达下一点。因为Hamilton方程都一样，这就等价于直接从起点开始，按照Hamilton方程演化到终点。
 
+>[!Notation 1]
+>If $\frac{\partial H}{\partial t}=0$, denote $g^{(t+t_{0},t_{0})}:=g^{t}$.
 
-
-因为Lebesgue测度是一个空间上可测集到$\mathbb{R}$的函数。因为空间变换，了，所有点发生一个变换，导致可测集也发生变换。我们必须认为存在一个“可测集实体”不变。它由“矢量实体”代表的点构成。我们还要认为存在一个“测度实体”不变。但是因为由可测点表示构成的可测集表示不停地在变化，测度的functional dependence必须要发生一个变化得到一个新的测度的表示。
-
-考虑某个Lebesgure-measurable set $M$。我们可以对它作一个变换$M\mapsto g^{t}M$。我们可以用Lebesgue测度测它得到$m(M),m(g^{t}M)$。显然固定$t$，$m\circ g^t$是一个新的长得像测度的玩意。实际上我们可以证明它是一个测度：
-
->[!Proposition 2]
->$m\circ g^t$ is a measure.
->
-## Proof.
-任取disjoint可测集$M_{1},M_{2}$。我们假设$g^t$的性质足够好，以至于将可测集映到可测集，我们有：
-$$\begin{align}
-m\circ g^t(M_{1} \sqcup M_{2} ) & =m(g^t(M_{1})\sqcup g^t(M_{2})) \\
-  & = m\circ g^t(M_{1})\sqcup m\circ g^t(M_{2})
-\end{align}$$
->[!Right]
->$\blacksquare$
-
-我们发现，其实这个测度$m\circ g^t$就是Lebesgue测度。
+>[!Lemma 1]
+>Let $g\in C^1$ be a homeomorphism $\mathbb{R}^n\rightarrow \mathbb{R}^n$, $f\in L^1(\mathbb{R}^n)$ be a function, $M\subset \mathbb{R}^n$ be a Lebesgue-measurable set. Then:
+>$$\int_{g(M)}d^nxf(x)=\int_{x\in M}d^n(g(x))f(g(x))=\int_{x\in M}d^nx|\det(g)|f(g(x))$$
 
 >[!Theorem 1]
->$$m\circ g^t=m,\forall t\in \mathbb{R}$$
+>Let $M$ be Lebesgue-measurable. Then $m(M)=m(g^{t}M),\forall t$.
 ## Proof.
-我们任取可测集$M$。于是STS:$m\circ g^t(M)=m(M)$。
-
+我们任取可测集$M$。
 $$\begin{align}
-\text{LHS} & = m(g^t(M)) \\
+\text{RHS} & = m(g^t(M)) \\
  & = \int_{g^t(M)}dqdp \\
  & = \int_{(q,p)\in M}d(g^tq)d(g^tp) 
+ \\ & =\int_{M} \frac{\partial(g^tq,g^tp)}{\partial(q,p)}dqdp
 \end{align}$$
-
-
-其实将$t$的符号换一下无所谓。因为如果保持负号，最终可以证到$m\circ g^{-t}$不变。而$t\in \mathbb{R}$。所以不妨将$-t$写成$t$。于是上式可用Jacobian换回原坐标：
-$$\int_{M}d(g^tq)d(g^tp)=\int_{M} \frac{\partial(g^tq,g^tp)}{\partial(q,p)}dqdp$$
-因为我们想用上Hamilton方程。我们希望出现正则坐标的时间导数。但是上式没有。我们发现要证$m\circ g^t(M)=m(M)$，即证$\frac{d}{dt}(m\circ g^t(M))=0$。
+因为我们想用上Hamilton方程。我们希望出现正则坐标的时间导数。但是上式没有。我们发现要证theorem 1，即证$\frac{d}{dt}(m\circ g^t(M))=0$。
 
 于是：
 $$\begin{align}
@@ -88,3 +74,24 @@ $$\begin{align}
 >[!Right]
 >$\blacksquare$
 
+# ???
+因为Lebesgue测度是一个空间上可测集到$\mathbb{R}$的函数。因为空间变换，了，所有点发生一个变换，导致可测集也发生变换。我们必须认为存在一个“可测集实体”不变。它由“矢量实体”代表的点构成。我们还要认为存在一个“测度实体”不变。但是因为由可测点表示构成的可测集表示不停地在变化，测度的functional dependence必须要发生一个变化得到一个新的测度的表示。
+
+考虑某个Lebesgure-measurable set $M$。我们可以对它作一个变换$M\mapsto g^{t}M$。我们可以用Lebesgue测度测它得到$m(M),m(g^{t}M)$。显然固定$t$，$m\circ g^t$是一个新的长得像测度的玩意。实际上我们可以证明它是一个测度：
+
+>[!Proposition 2]
+>$m\circ g^t$ is a measure.
+>
+## Proof.
+任取disjoint可测集$M_{1},M_{2}$。我们假设$g^t$的性质足够好，以至于将可测集映到可测集，我们有：
+$$\begin{align}
+m\circ g^t(M_{1} \sqcup M_{2} ) & =m(g^t(M_{1})\sqcup g^t(M_{2})) \\
+  & = m\circ g^t(M_{1})\sqcup m\circ g^t(M_{2})
+\end{align}$$
+>[!Right]
+>$\blacksquare$
+
+我们发现，其实这个测度$m\circ g^t$就是Lebesgue测度。
+
+>[!Theorem 1]
+>$$m\circ g^t=m,\forall t\in \mathbb{R}$$
