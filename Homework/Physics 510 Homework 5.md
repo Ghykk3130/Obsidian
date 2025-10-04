@@ -7,8 +7,9 @@ $$\begin{align}
 \int_{-\infty}^{\infty}dx x^n \exp(-ax^{2}) & =\int dx \frac{\partial^{n/2}}{\partial(-a)^{n/2}} \exp(-ax^{2}) \\
  & = (-1)^{n/2} \left(  \frac{d}{da} \right)^{n/2}\int dx\exp(-ax^{2}) \\
  & =(-1)^{n/2}\left(  \frac{d}{da} \right)^{n/2}\left(  \frac{\sqrt{ \pi }}{\sqrt{ a }} \right) \\
- & = (-1)^{n/2}\left( - \frac{1}{2} \right) \dots\left( - \frac{1}{2}- \frac{n}{2} \right)a^{- \frac{1}{2}- \frac{n}{2}-1} \sqrt{ \pi } \\
- & = (-1)^n \left(  \frac{1}{2} \cdot \frac{3}{2}\cdot\dots \cdot \frac{n+1}{2} \right)a^{- \frac{3}{2}- \frac{n}{2}}\sqrt{ \pi }
+ & = (-1)^{n/2}\left( - \frac{1}{2} \right) \dots\left( - \frac{1}{2}- \left( \frac{n}{2}-1 \right) \right)a^{- \frac{1}{2}- \frac{n}{2}} \sqrt{ \pi } \\
+ & = (-1)^n \left(  \frac{1}{2} \cdot \frac{3}{2}\cdot\dots \cdot \frac{n-1}{2} \right)a^{- \frac{1}{2}- \frac{n}{2}}\sqrt{ \pi } \\
+ & = \frac{1}{2}\cdot \frac{3}{2}\cdot \dots \cdot \frac{n-1}{2}a^{- n/2}\sqrt{ \frac{\pi}{a} }
 \end{align}$$
 ## b).
 $$\begin{align}
@@ -189,6 +190,14 @@ $$\begin{align}
  & = (2mE)^{\frac{3N-1}{2}} \left( \frac{2E}{m} \right)^{-1/2} \frac{2\pi^{3N/2}}{\Gamma\left( \frac{3N}{2} \right)} \\
  & = (2E)^{3N/2-1}m^{3N/2} \frac{2\pi^{3N/2}}{\Gamma\left( \frac{3N}{2} \right)}
 \end{align}$$
+This is because the integral above is separable, and I have:
+$$\begin{align}
+ & \int_{0}^{\pi}\sin \phi_{1 }d\phi_{1}=2 \\
+ & \int_{0}^{\pi}\sin ^{2}\phi_{2}d\phi_{2}= \frac{\pi}{4 } \\
+ & \dots \\
+ & \int_{0}^{\pi}\sin^{3N-2}\pi_{3N-2}d\phi_{3N-2}=\sqrt{ \pi } \frac{\Gamma\left( \frac{3N-1}{2} \right)}{\Gamma\left( \frac{3N-2}{2} \right)} \\
+ & \int_{0}^{2\pi}d\theta=2\pi
+\end{align}$$
 Then:
 $$\Omega= \frac{V^N}{h^{3N}} \frac{(2\pi mE)^{3N/2}}{\Gamma\left(  \frac{3N}{2} \right)E}$$
 Therefore:
@@ -240,7 +249,9 @@ $$\begin{align}
 \end{align}$$
 Then:
 $$\begin{align}
-C= \frac{3N(\hbar \omega_{0})^{2}}{k} \frac{1}{T^{2}} \frac{1}{\exp\left(  \frac{\hbar \omega_{0}}{kT}\right) + \exp\left( - \frac{\hbar \omega_{0}}{kT} \right)-2} \tag{1}
+C & = \frac{3N(\hbar \omega_{0})^{2}}{k} \frac{1}{T^{2}} \frac{1}{\exp\left(  \frac{\hbar \omega_{0}}{kT}\right) + \exp\left( - \frac{\hbar \omega_{0}}{kT} \right)-2} \tag{1} \\
+ & = \frac{3N(\hbar \omega_{0})^{2}}{k} \frac{1}{T^{2}} \frac{1}{2\cosh\left(  \frac{\hbar \omega_{0}}{kT} \right)-2} \\
+ & = 3Nk \left(  \frac{\hbar \omega_{0}}{2kT\sinh\left(  \frac{\hbar \omega_{0}}{2kT} \right)} \right)^{2}
 \end{align}$$
 A schematic plot (the units are not specified because this is just a schematic to show the overall trend):
 <div style="text-align:center">
@@ -282,7 +293,8 @@ here $E=\alpha N\epsilon$. We have:
 $$\begin{align}
 C & = \left(\frac{\partial E}{\partial T}\right)_{N} \\
   & = N\epsilon \frac{-1}{\left( 1+\exp\left(  \frac{\epsilon}{kT} \right) \right)^{2}} \cdot \left( - \frac{\epsilon}{kT^{2}} \right)\exp\left(  \frac{\epsilon}{kT} \right) \\
- & = \frac{N\epsilon^{2}}{kT^{2}} \frac{1}{\exp\left(  \frac{\epsilon}{kT} \right)+ \exp\left(  - \frac{\epsilon}{kT} \right)+2}
+ & = \frac{N\epsilon^{2}}{kT^{2}} \frac{1}{\exp\left(  \frac{\epsilon}{kT} \right)+ \exp\left(  - \frac{\epsilon}{kT} \right)+2} \\
+ & = \frac{N\epsilon^{2}}{kT^{2}} \frac{1}{2\cosh\left( \frac{\epsilon}{kT} \right)+2}
 \end{align}$$
 ## b).
 Inverse $1)$ to find:
@@ -296,8 +308,33 @@ Observe from the denominator that $T$ changes sign around $\alpha= \frac{1}{2}$.
 
 ## c).
 ### i).
-No, it cannot. Because at equilibrium, I must have equal temperature. For the monatomic gas, I have: $T= \frac{pV}{Nk}>0$.
+No, it cannot. Consider the ideal monatomic gas being studies as an isolated system, with $V,M$ fixed. (I am not talking about the situation in this problem. I just study its property in general. The notation is strange here because $M$ is the number of particles. ) if I put in more energy into the system, the energy surface in the phase space must expand, and the number of accessible states increases. Then I must have:
+$$\left( \frac{\partial S}{\partial U} \right)_{V,M}>0$$
 
+Then I must have:
+$$\frac{1}{T}>0\implies T>0$$
+So when this ideal gas is placed in thermal contact with the 2-state system, at equilibrium, their temperatures must be the same. And this temperature has to therefore also be positive. 
 ### ii).
+Let $T_{f}$ be the final temperature, $T_{i}=\frac{\epsilon}{k} \frac{1}{\ln\left(  \frac{1}{\alpha}-1 \right)}$ be the initial temperature of the 2-state system. Then since the system is isolated, I must have:
+$$\int_{T_{i}}^{T_{f}}CdT=\int_{T_{0}}^{T_{f}}C_{gas}dT$$
+We first find the antiderivative of $C$:
+$$\begin{align}
+\int CdT & = \int\frac{N\epsilon^{2}}{kT^{2}} \frac{1}{\exp\left(  \frac{\epsilon}{kT} \right)+ \exp\left(  - \frac{\epsilon}{kT} \right)+2}dT \\
+ & = \frac{N\epsilon^{2}}{k}\int \frac{1}{T^{2}} \frac{\exp\left(  \frac{\epsilon}{kT} \right)}{\left( \exp\left(  \frac{\epsilon}{kT} \right)+1 \right)^{2}}dT \\
+ & = \frac{N\epsilon^{2}}{k}\left(  -\frac{k}{\epsilon} \right)\int \frac{1}{\left( \exp\left(  \frac{\epsilon}{kT} \right)+1 \right)^{2} }d\left(  \exp\left(  \frac{\epsilon}{kT} \right)+1 \right) \\
+ & = \frac{N\epsilon^{2}}{k} \frac{k}{\epsilon} \frac{1}{\exp\left(  \frac{\epsilon}{kT} \right)+1} \\
+ & = N\epsilon \frac{1}{\exp\left(  \frac{\epsilon}{kT} \right)+1} 
+\end{align}$$
+I ignored the integration constant because we are going to do definite integrals later anyway. The antiderivative of $C_{gas}$ is easy to find:
+$$\begin{align}
+\int C_{gas}dT & =\int \frac{3}{2}MkdT=\frac{3}{2}MkT
+\end{align}$$
+Then to find the final temperature, set:
+$$\begin{align}
+ & N\epsilon \frac{1}{\exp\left( \frac{\epsilon}{kT_{f}} \right)+1}- N\epsilon \frac{1}{\exp\left(  \frac{\epsilon}{kT_{i}} \right)+1}= \frac{3}{2}Mk(T_{f}-T_{0}) \\
+\implies & N\epsilon \frac{1}{\exp\left(  \frac{\epsilon}{kT_{f}} \right)+1}-\alpha N\epsilon= \frac{3}{2}MkT_{f}- \frac{3}{2}MkT_{0}
+\end{align}$$
+This equation is generally transcendental, so we do not have an explicit solution of $T_{f}$. But $T_{f}$ is determined by the equation above.
+
 
 
