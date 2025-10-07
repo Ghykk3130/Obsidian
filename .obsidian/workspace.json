@@ -97,12 +97,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "N维球体积.md",
+                "file": "N维球.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "N维球体积"
+              "title": "N维球"
             }
           }
         ],
@@ -264,7 +264,7 @@
   "active": "1f5d1c9fe520f12e",
   "lastOpenFiles": [
     "Hamilton原理与Lagrange方程.md",
-    "N维球体积.md",
+    "N维球.md",
     "Homework/Physics 511 Homework 5.md",
     "Schrodinger's and Heisenberg's pictures.md",
     "Homework/Physics 511 Homework 4.md",

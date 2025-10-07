@@ -1,3 +1,4 @@
+# 1. N维球体积
 我们想要计算：
 $$m(B(0,R))=\int_{B(0,R)}d^Nx$$
 我们注意到一个方便计算的$\mathbb{R}^N$中的积分：
@@ -20,6 +21,16 @@ $$\begin{align}
 \implies \int_{B(0,1)}d^Nx & = \frac{\pi^{N/2}}{\frac{N}{2}\Gamma\left(  \frac{N}{2} \right)}
 \end{align}$$
 所以：
-$$\int_{B(0,R)}d^Nx= \frac{\pi^{N/2}}{ \frac{N}{2}\Gamma\left(  \frac{N}{2} \right)}R^N$$
+$$\int_{B(0,R)}d^Nx= \frac{\pi^{N/2}}{ \frac{N}{2}\Gamma\left(  \frac{N}{2} \right)}R^N \tag{**}$$
+# 2. N维球面积
 
+我们知道测度可以拆分：
+$$d^Nx=dRdS$$于是N维球体积积分可以拆分：
+$$\begin{align}
+m(B(0,R))=\int_{B(0,R)}d^Nx & =\int_{0}^{R}dR^{'}\int_{\partial B(0,R^{'})}dS
+\end{align}$$
+两边微分得到表面积：
+$$\frac{\partial}{\partial R}m(B(0,R))= \int_{\partial B(0,R)}dS$$
 
+代入$(* *)$得到：
+$$\int_{\partial B(0,R)}dS= \frac{2\pi^{N/2}}{\Gamma\left(  \frac{N}{2} \right) }R^{N-1}$$
