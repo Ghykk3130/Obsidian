@@ -340,8 +340,7 @@ Maybe I should say what the unit for the y value is in the axis label. But since
 <img src="wavefunction_classicalmix (2).png">
 </div>
 
-In with both slits unblocked, the state of the electron after passing through the slits is a quantum mix of the state $\ket{\psi_{+}}$ and $\ket{\psi_{-}}$. If we block one of the slits 50 percent of the time, the result would be a classical mix of the two separate cases, which we choose manually without referring to any quantum mechanical superposition.
-
+With both slits unblocked, the state of the electron after passing through the slits is a quantum mix of the state $\ket{\psi_{+}}$ and $\ket{\psi_{-}}$. the interference pattern arises from the cross term inside $|\psi_{+}+ \psi_{-}|^{2}=|\psi_{+}|^{2}+ |\psi_{-}|^{2}+ 2\mathrm{Re}(\psi ^{*}_{+}\psi_{-})$. If we block one of the slits 50 percent of the time, the result would be a classical mix of the two separate cases. The superposition is destroyed due to the collapse of the wave function. Then the cross term disappears and repeating the experiment just gives $\frac{1}{2}(|\psi_{+}|^{2}+ |\psi_{-}|^{2})$. This means that the knowledge about he path destroys the interference.
 # 5).
 Observe that the Hamiltonians at different time commute:
 $$\begin{align}
