@@ -83,12 +83,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Homework/Physics 511 Homework 5.md",
+                "file": "Schrodinger's and Heisenberg's pictures.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Physics 511 Homework 5"
+              "title": "Schrodinger's and Heisenberg's pictures"
             }
           }
         ],
@@ -149,7 +149,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 200,
+    "collapsed": true
   },
   "right": {
     "id": "9003d078f8dbc4ed",
@@ -249,8 +250,8 @@
   },
   "active": "588656ab5f66e6ad",
   "lastOpenFiles": [
-    "Homework/Physics 511 Homework 4.md",
     "Homework/Physics 511 Homework 5.md",
+    "Homework/Physics 511 Homework 4.md",
     "Schrodinger's and Heisenberg's pictures.md",
     "Lagrangian Formulation of EM.md",
     "统计力学的数学基础.md",

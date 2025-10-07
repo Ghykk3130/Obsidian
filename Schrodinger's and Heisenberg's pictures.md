@@ -22,7 +22,35 @@ $$\bra{\alpha} \mathscr{U}^{^{\dagger}}(t,t_{0})X\mathscr{U}(t,t_{0})\ket{\alpha
 因为只有矩阵元是我们真正物理上能观测到的，所以只要保证了矩阵元在绘景变换下不变，我们的新绘景就是一套与Schrodinger绘景等价的，同样描述物理世界的绘景。
 
 因为我们知道整个空间在Schrodinger绘景下不断变换，要保证矩阵元不变的话，可以要求在另一套绘景下空间没有发生改变。而算子实体（算子是一种$(1,1)$型张量）在不断变化。显然必须要有：
-$$X^{H}(t,t_{0})=\mathscr{U}^{^{\dagger}}(t,t_{0})X^{S}\mathscr{U}(t,t_{0})$$
+$$X^{(H)}(t,t_{0})=\mathscr{U}^{^{\dagger}}(t,t_{0})X^{(S)}\mathscr{U}(t,t_{0})$$
+
+>[!Definition 1]
+>Let $X^{S}$ be an observable in Schrodinger's picture. Let $\mathscr{U}(t,t_{0})$ be the time evolution operator calculated Using $H^{(S)}$. Then define:
+>$$X^{(H)}=\mathscr{U}^{\dagger}X^S\mathscr{U}$$
+
+在$H^{(S)}$不存在time dependence时，显然time evolution operator只取决于time interval长度，不取决于起始时间。于是有时我们直接写$\mathscr{U}(t),X^{(H)}(t)$
+## Ex:
+对于Hamiltonian，若$H^{(S)}$不存在time dependence，那么$\mathscr{U}(t,t_{0})=\exp\left( - \frac{i}{\hbar}H^{(S)}(t-t_{0}) \right)$。那么：
+$$H^{(H)}=\mathscr{U}^{^{\dagger}}H^{(S)}\mathscr{U}=H^{(S)}$$
+这是因为$\mathscr{U}$显然和$H^{(S)}$可交换，移到前面和$\mathscr{U}^{^{\dagger}}$相乘消掉了。
+
+然而还有另外一种计算Heisenberg绘景下的Hamiltonian的方法。即直接将Heisinberg绘景下的可观测量带入到$H^{(S)}$中计算。我们尚未证明，这两种方法计算出来的Hamiltonian是一样的。我们通过下一例来说明：
+
+## Ex:
+我们设$H^{(S)}=H^{(S)}(x,p)$是$x,p$的多项式。这个假设是合理的，因为很多物理系统符合这个假设。例如说谐振子。那么我们可以展开：
+$$\begin{align}
+H^{(S)}(x^{(H)},p^{(H)}) & =\sum_{k,l}a_{k,l}(x^{(H)})^k (p^{(H)})^{l} \\
+ & = \sum a_{k,l} \left(\mathscr{U}^{\dagger }x^{(S)}\mathscr{U}\right)^k\left(\mathscr{U}^{\dagger }p^{(S)}\mathscr{U}\right)^l \\
+ & = \sum a_{k,l} \mathscr{U}^{\dagger }(x^{(S)})^k\mathscr{U}\mathscr{U}^{\dagger }(p^{(S)})^l\mathscr{U} \\
+ & = \mathscr{U}^{\dagger}\sum a_{k,l}(x^{(S)})^k(p^{S})^l\mathscr{U} \\
+ & = \mathscr{U}^{\dagger}H^{S}\mathscr{U} \\
+ & = H^{H}
+\end{align}$$
+所以我们有：
+
+>[!Proposition 1]
+>Let $H^{(H)}=\mathscr{U}^{\dagger}H^{(S)}\mathscr{U}$. Then:
+>$$H^{(H)}(t)=H^{(S)}(x^{(H)}(t),p^{(H)}(t))$$
 
 
 
