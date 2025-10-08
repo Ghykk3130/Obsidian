@@ -55,6 +55,13 @@ So:
 $$S=kN\left(\ln\left(  \frac{E}{N} \frac{1}{\omega \hbar} \right)+1\right)$$
 
 ## (b).
+We know that the probability that we find the system to be in a volume element in the phase space is:
+$$\rho d^Nqd^Np= \frac{1}{h^N}d^Nqd^Np \frac{\exp(-\beta H)}{Z}$$
+Therefore for normalization, the partition function is given by:
+$$\begin{align}
+Z= \frac{1}{h^N}\int_{} d^Nqd^Np  \exp(-\beta H)
+\end{align}$$
+The region over which we integrate is given by:
 
 
 
