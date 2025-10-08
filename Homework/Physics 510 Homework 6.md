@@ -40,10 +40,10 @@ $$\begin{align}
  & = \frac{1}{(m\omega h)^{N}}\int_{\{ H\leq E \}}d^Nxd^Np \\
  & = \frac{1}{(m\omega h)^N} \frac{\pi^N}{N\Gamma(N)} (2mE)^N 
 \end{align}$$
-So I know that:
+So if I thicken the energy shell by $\Delta E$, I know that:
 $$\begin{align}
-\Omega(E,N) & = \frac{\partial}{\partial E}\Sigma(E,N) \\
- & = \left(  \frac{2\pi}{\omega h} \right)^{N} \frac{1}{N\Gamma(N)}NE^{N-1}
+\Omega(E,N) & = \frac{\partial}{\partial E}\Sigma(E,N) \Delta E \\
+ & = \left(  \frac{2\pi}{\omega h} \right)^{N} \frac{1}{N\Gamma(N)}NE^{N-1}\Delta E
 \end{align}$$
 Then take $N\rightarrow \infty$ to get:
 $$\begin{align}
