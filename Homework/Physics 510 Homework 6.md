@@ -62,8 +62,7 @@ $$\begin{align}
 Z= \frac{1}{h^N}\int_{} d^Nqd^Np  \exp(-\beta H)
 \end{align}$$
 The region over which we integrate is given by:
-
-
+$$$$
 
 
 
