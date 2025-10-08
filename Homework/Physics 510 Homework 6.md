@@ -47,12 +47,12 @@ $$\begin{align}
 \end{align}$$
 Then take $N\rightarrow \infty$ to get:
 $$\begin{align}
-\ln \Omega & \approx N\ln\left(  \frac{2\pi}{\omega h} \right)-\ln N- \ln(N-1)!+\ln N+(N-1)\ln E \\
+\ln \Omega & \approx N\ln\left(  \frac{2\pi}{\omega h} \right)-\ln N- \ln(N-1)!+\ln N+(N-1)\ln E +\ln \Delta E\\
  & \approx N \ln\left(  \frac{2\pi}{\omega h} \right)-N\ln N+N+N\ln E \\
- & \approx N\ln\left(  \frac{E}{N} \frac{2\pi}{\omega h} \right)
+ & = N\ln\left(  \frac{E}{N} \frac{1}{\omega \hbar} \right)+N
 \end{align}$$
 So:
-$$S=kN\ln\left(  \frac{E}{N} \frac{2\pi}{\omega h} \right)$$
+$$S=kN\left(\ln\left(  \frac{E}{N} \frac{1}{\omega \hbar} \right)+1\right)$$
 
 ## (b).
 
