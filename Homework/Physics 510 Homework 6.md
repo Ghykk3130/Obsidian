@@ -29,6 +29,41 @@ These results make sense because if $T$ is very high, then the factor $\exp(-\be
 
 # 2.
 ## (a).
+Let $\Sigma(E,N)$ denote $\int_{\{ H\leq E \}} \frac{d^{N}qd^{N}p}{h^N}$. Consider the change of variables: $x_{i}=m\omega q_{i}$. Then the I have:
+$$\begin{align}
+ & H=\sum_{j}\left(  \frac{p_{j}^{2}}{2m}+ \frac{1}{2}m\omega q_{j}^{2} \right) \leq E \\
+\implies & \sum_{i}(p_{i}^{2}+x_{i}^{2})\leq 2mE 
+\end{align}$$
+So this region corresponds to a $2N$-dimensional ball in the space spanned by $p_{i},x_{i}$. Then:
+$$\begin{align}
+\Sigma(E,N) & =\int_{\{ H\leq E \}} \frac{d^{N}qd^{N}p}{h^N} \\
+ & = \frac{1}{(m\omega h)^{N}}\int_{\{ H\leq E \}}d^Nxd^Np \\
+ & = \frac{1}{(m\omega h)^N} \frac{\pi^N}{N\Gamma(N)} (2mE)^N 
+\end{align}$$
+So I know that:
+$$\begin{align}
+\Omega(E,N) & = \frac{\partial}{\partial E}\Sigma(E,N) \\
+ & = \left(  \frac{2\pi}{\omega h} \right)^{N} \frac{1}{N\Gamma(N)}NE^{N-1}
+\end{align}$$
+Then take $N\rightarrow \infty$ to get:
+$$\begin{align}
+\ln \Omega & \approx N\ln\left(  \frac{2\pi}{\omega h} \right)-\ln N- \ln(N-1)!+\ln N+(N-1)\ln E \\
+ & \approx N \ln\left(  \frac{2\pi}{\omega h} \right)-N\ln N+N+N\ln E \\
+ & \approx N\ln\left(  \frac{E}{N} \frac{2\pi}{\omega h} \right)
+\end{align}$$
+So:
+$$S=kN\ln\left(  \frac{E}{N} \frac{2\pi}{\omega h} \right)$$
+
+## (b).
+
+
+
+
+
+
+
+
+## (a).
 The number of available quanta is $\frac{E}{\hbar \Omega}$. So the number of ways to distribute it is given by:
 $$\Omega= \frac{N!}{\left(  \frac{E}{\hbar \omega} \right)!\left(  N- \frac{E}{\hbar \omega} \right)!}$$
 Then take $N\rightarrow \infty$:
