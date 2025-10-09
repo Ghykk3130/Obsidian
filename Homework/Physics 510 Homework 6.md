@@ -224,4 +224,12 @@ $$\begin{align}
 \end{align}$$
 
 ## (c).
-
+Consider the Laurent expansion of $\coth x$: 
+$$\begin{align}
+\coth x & = \frac{\cosh x}{\sinh x} \\
+ & = \frac{\sum_{n\text{ even}} \frac{x^n}{n!}}{\sum_{l\text{ odd}} \frac{x^l}{l!}} \\
+ & =\frac{1}{x} \frac{\sum_{n \text{ even}} \frac{x^n}{n!}}{\sum_{l\text{ odd}} \frac{x^{l-1}}{l!}} \\
+ & = \frac{1}{x} \left( \sum_{n\text{ even}} \frac{x^n}{n!} \right)\left( \sum_{m\in \mathbb{Z}^{+}} \frac{(-1)!}{(-1-m)!m!}\left(\sum_{l\text{ odd}} \frac{x^{l-1}}{l!}\right)^m  \right)
+\end{align}$$
+If we only take the first two terms, we get:
+$$$$
