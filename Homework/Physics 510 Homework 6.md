@@ -229,7 +229,6 @@ $$\begin{align}
 \coth x & = \frac{\cosh x}{\sinh x} \\
  & = \frac{\sum_{n\text{ even}} \frac{x^n}{n!}}{\sum_{l\text{ odd}} \frac{x^l}{l!}} \\
  & =\frac{1}{x} \frac{\sum_{n \text{ even}} \frac{x^n}{n!}}{\sum_{l\text{ odd}} \frac{x^{l-1}}{l!}} \\
- & = \frac{1}{x} \left( \sum_{n\text{ even}} \frac{x^n}{n!} \right)\left( \sum_{m\in \mathbb{Z}^{+}} \frac{(-1)!}{(-1-m)!m!}\left(\sum_{l\text{ odd}} \frac{x^{l-1}}{l!}\right)^m  \right)
+ & = \frac{1}{x} \left( \sum_{n\text{ even}} \frac{x^n}{n!} \right)\left(1- \left(\sum_{l\text{ odd}} \frac{x^{l-1}}{l!}\right)+ \left(\sum_{l\text{ odd}} \frac{x^{l-1}}{l!}\right)^2-\dots\right)
 \end{align}$$
-If we only take the first two terms, we get:
-$$$$
+For terms after $\frac{1}{x}$, I have:
