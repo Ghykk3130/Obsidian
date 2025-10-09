@@ -188,3 +188,28 @@ $$\lim_{ T \to 0 } S=0$$
 This is because at low temperature, the Boltzmann factor $e^{-\beta E}$ would only dominate if $E$ is the smallest. Recall that for a specific configuration of the system, meaning that each oscillator has some specified energy, then the probability would be $Prob=\frac{\exp(-\beta E_{1})\dots \exp(-\beta E_{N})}{Z}$. But since the states with smallest $E$'s would dominate, the the most probable configuration of the system would be that all oscillators rest in $E=0$. all other configurations are highly unlikely because of the large $\beta$. Since there is only one possible configuration, the entropy vanishes because $\ln 1=0$.
 
 # 4.
+## (a).
+The contribution to the partition function is given by:
+$$\begin{align}
+Z & = \int \frac{d\theta d\phi dp_{\theta}dp_{\phi}}{N!h^{2}} \exp(- \beta H) \\
+ & = \frac{1}{N!h^2} \int_{0}^\pi d\phi \int_{\mathbb{R}}dp_{\theta} \exp\left( - \frac{\beta }{2I}{p_{\theta}^{2}} \right)\int_{0}^\pi d\theta \int_{\mathbb{R}}dp_{\phi}\exp\left( - \frac{\beta}{2I} \frac{p_{\phi}^{2}}{\sin ^{2}\theta} \right) \\
+ & = \frac{1}{N!h^2} 2\pi \sqrt{  \frac{2I}{\beta} }\sqrt{ \pi } \int_{0}^\pi d\theta \frac{2I}{\beta}\sin \theta \sqrt{ \pi } \\
+ & = \frac{1}{N!h^2} 2\pi \sqrt{  \frac{2I}{\beta} }\sqrt{ \pi } \sqrt{  \frac{2I}{\beta} }\sqrt{ \pi }2 \\
+ & = \frac{1}{N!h^{2}}\frac{8\pi^{2}I}{\beta} 
+\end{align}$$
+## (b).
+We know that the average is given by:
+$$\begin{align}
+\langle \mu \cos \theta \rangle & = \frac{\int \frac{d\theta d\phi dp_{\theta}dp_{\phi}}{N!h^{2}}\exp(-\beta H)\mu \cos \theta}{\int \frac{d\theta d\phi dp_{\theta}dp_{\phi}}{N!h^{2}}}
+\end{align}$$
+The denominator is simply $Z$. Now find the numerator:
+$$\begin{align}
+\int \frac{d\theta d\phi dp_{\theta}dp_{\phi}}{N!h^{2}}\exp(-\beta H)\mu \cos \theta & = \frac{1}{N!h^{2}} \int_{0}^{2\pi}d\phi \int_{\mathbb{R}}dp_{\theta}\exp\left( - \frac{\beta}{2I}p_{\theta}^{2} \right) \int_{0}^{\pi}d\theta \int_{\mathbb{R}}dp_{\phi}\exp\left( - \frac{\beta}{2I} \frac{p_{\phi}^{2}}{\sin ^{2}\theta} \right)\mu \cos \theta \\
+ & = \frac{\mu}{N!h^{2}}\cdot 2\pi \cdot \sqrt{ \frac{2I}{\beta} }\sqrt{ \pi } \cdot \int_{0}^{\pi}d\theta \sqrt{  \frac{2I}{\beta} }\sqrt{ \pi }\sin \theta \cos \theta
+\end{align}$$
+Obviously:
+$$\int_{0}^{\pi}d\theta \sin \theta \cos \theta=\int_{1}^{-1}d(\cos \theta)\cos \theta=0$$
+So:
+$$\langle \mu \cos \theta \rangle=0$$
+## (c).
+
