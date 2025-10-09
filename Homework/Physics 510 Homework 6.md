@@ -90,14 +90,57 @@ Z & = \left(  \frac{1}{hm\omega} \right)^N \frac{2\pi^N}{\Gamma(N)}\cdot \frac{1
  & = \left(  \frac{1}{\omega \hbar \beta} \right)^N 
 \end{align}$$
 
+## (c).
+Know that:
+$$\begin{align}
+F & = - \frac{1}{\beta}\ln Z \\
+ & =  \frac{N}{\beta}\ln( \omega \hbar \beta)
+\end{align}$$
+Then:
+$$\begin{align}
+S  & = - \left( \frac{\partial F}{\partial T} \right)_{N,V} \\
+ & = k\beta^{2} \frac{\partial F}{\partial \beta} \\
+ & = Nk\beta^{2}\left( - \frac{1}{\beta^{2}}\ln(\omega \hbar \beta)+ \frac{1}{\beta}\cdot \frac{1}{\beta} \right) \\
+ & = Nk(1- \ln(\omega \hbar \beta))
+\end{align}$$
+We know that:
+$$\begin{align}
+E & = - \frac{\partial}{\partial \beta}\ln Z \\
+ & =  \frac{\partial}{\partial \beta}N\ln(\omega \hbar \beta) \\
+ & = \frac{N}{\beta}
+\end{align}$$
+Therefore:
+$$\begin{align}
+S & = Nk\left( 1+ \ln\left( \frac{1}{\omega \hbar \beta} \right) \right) \\
+ & = Nk\left( 1+ \ln\left(  \frac{E}{N} \frac{1}{\hbar \omega} \right) \right)
+\end{align}$$
+This is the same as the entropy that I found in part $(a)$.
 
-
-
-
-
-
+## (d).
+$$\begin{align}
+C & = T\left(  \frac{\partial S}{\partial T} \right)_{N,V} \\
+ & = -\beta \frac{\partial S}{\partial \beta} \\
+ & = -\beta \cdot \left( - Nk \frac{1}{\beta} \right) \\
+ & = Nk
+\end{align}$$
+# 3.
 ## (a).
-The number of available quanta is $\frac{E}{\hbar \Omega}$. So the number of ways to distribute it is given by:
+The partition function is:
+$$\begin{align}
+Z & =\sum_{\text{all states}} \exp(-\beta H) \\
+ & =  \left(\sum_{\text{all states of 1}}\exp(-\beta H_{1})\right)\dots\left( \sum_{\text{all states of N}} \exp(-\beta H_{N}) \right) \\
+ & = \left(\sum_{\text{all states of 1}}\exp(-\beta H_{1})\right)^N \\
+ & = \left( \sum_{n} \exp(-\beta n\hbar \omega) \right)^N \\
+ & = \left(  \frac{1}{1-\exp(-\beta \hbar \omega)} \right)^N
+\end{align}$$
+## (b).
+
+
+
+
+
+
+The number of available quanta is $\frac{E}{\hbar \omega}$. So the number of ways to distribute it is given by:
 $$\Omega= \frac{N!}{\left(  \frac{E}{\hbar \omega} \right)!\left(  N- \frac{E}{\hbar \omega} \right)!}$$
 Then take $N\rightarrow \infty$:
 $$\begin{align}
@@ -107,14 +150,7 @@ $$\begin{align}
 So:
 $$S=\frac{kE}{\hbar \omega}\ln\left( N \frac{\hbar \omega}{E} \right)+k\left(N- \frac{E}{\hbar \omega} \right) \ln\left(  \frac{N}{N- \frac{E}{\hbar \omega}} \right) $$
 ## (b).
-The partition function is:
-$$\begin{align}
-Z & =\sum_{\text{all states}} \exp(-\beta H) \\
- & =  \left(\sum_{\text{all states of 1}}\exp(-\beta H_{1})\right)\dots\left( \sum_{\text{all states of N}} \exp(-\beta H_{N}) \right) \\
- & = \left(\sum_{\text{all states of 1}}\exp(-\beta H_{1})\right)^N \\
- & = \left( \sum_{n} \exp(-\beta n\hbar \omega) \right)^N \\
- & = \left(  \frac{1}{1-\exp(-\beta \hbar \omega)} \right)^N
-\end{align}$$
+
 ## (c).
 
 
