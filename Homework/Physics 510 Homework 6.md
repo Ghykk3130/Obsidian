@@ -25,7 +25,7 @@ $$\frac{e^{\beta\epsilon}}{2\cosh(\beta\epsilon)+2}\rightarrow \left\{ \begin{al
  & \frac{1}{4},\text{ as }T\rightarrow \infty \\
  & 1, \text{ as }T\rightarrow \infty
 \end{align}\right.$$
-These results make sense because if $T$ is very high, then the factor $\exp(-\beta E)$ for all states are basically the same, since the energy differences are flattened out by the small $\beta$. This means that all states are equally probable. If $T$ is very low, then the factor $e^{-\beta\epsilon}$ would be very small for all states except for the state with the lowest energy. Because the $\beta$ becomes very large, and only the highest $-\epsilon$ value would dominate.  This means that all states except for the ground state are highly  improbable. This is also consistent with our instinct that in general a system would rest in its lowest state at zero temperature. 
+These results make sense because if $T$ is very high, then the factor $\exp(-\beta E)$ for all states are basically the same, since the energy differences are flattened out by the small $\beta$. This means that all states are equally probable. If $T$ is very low, then the factor $e^{-\beta\epsilon}$ would be very small for all states except for the state with the lowest energy. Because the $\beta$ becomes very large, and only the highest $-\epsilon$ value would dominate.  This means that all states except for the ground state are highly  improbable. This is also consistent with our instinct that in general a system would rest in its lowest state at zero temperature. (if there is only one particle in the system, so that I don't worry about the Pauli exclusion.)
 
 # 2.
 ## (a).
@@ -96,7 +96,7 @@ $$\begin{align}
 F & = - \frac{1}{\beta}\ln Z \\
  & =  \frac{N}{\beta}\ln( \omega \hbar \beta)
 \end{align}$$
-Then:
+Then because $\beta=\frac{1}{kT}\implies d\beta=- \frac{1}{kT^{2}}dT$, I get:
 $$\begin{align}
 S  & = - \left( \frac{\partial F}{\partial T} \right)_{N,V} \\
  & = k\beta^{2} \frac{\partial F}{\partial \beta} \\
@@ -143,22 +143,48 @@ Prob(\text{oscillator k is in state n}) & = \sum_{\text{all states of oscillator
  & = \exp(-\beta n\hbar \omega)(1-\exp(-\beta \hbar \omega))
 \end{align}$$
 ## (c).
-
-
-
-
-The number of available quanta is $\frac{E}{\hbar \omega}$. So the number of ways to distribute it is given by:
-$$\Omega= \frac{N!}{\left(  \frac{E}{\hbar \omega} \right)!\left(  N- \frac{E}{\hbar \omega} \right)!}$$
-Then take $N\rightarrow \infty$:
+We have:
 $$\begin{align}
-\ln \Omega & \approx N\ln N-N- \left(  \frac{E}{\hbar \omega} \right)\ln\left(  \frac{E}{\hbar \omega} \right)- \frac{E }{\hbar \omega }- \left( N- \frac{E}{\hbar \omega} \right)\ln\left( N- \frac{E}{\hbar \omega} \right)-\left( N- \frac{E}{\hbar \omega} \right) \\
- & = \frac{E}{\hbar \omega}\ln\left( N \frac{\hbar \omega}{E} \right)+\left(N- \frac{E}{\hbar \omega} \right) \ln\left(  \frac{N}{N- \frac{E}{\hbar \omega}} \right)
+F & = - \frac{1}{\beta}\ln Z \\
+ & = \frac{N}{\beta}\ln(1-e^{-\beta \hbar \omega})
+\end{align}$$
+Then:
+$$\begin{align}
+S & =- \left( \frac{\partial F}{\partial T} \right)_{V,N} \\
+ & = k\beta^{2} \frac{\partial F}{\partial \beta} \\
+ & = k\beta^{2}\left(  - \frac{N}{\beta^{2}}\ln(1-e^{-\beta \hbar \omega})+ \frac{N}{\beta} \frac{\omega \hbar e^{-\beta \hbar \omega}}{1-e^{-\beta \hbar \omega}} \right) \\
+ & = -Nk\ln(1-e^{-\beta \hbar \omega})+ k\beta N\omega \hbar\frac{e^{-\beta \hbar \omega}}{1- e^{-\beta \hbar \omega}} 
+\end{align}$$
+Then I have:
+$$\begin{align}
+C & = T \left( \frac{\partial S}{\partial T} \right)_{N,V} \\
+ & = -\beta \frac{\partial S}{\partial \beta} \\
+ & = -\beta\left( -Nk\hbar \omega \frac{e^{-\beta \hbar \omega}}{1-e^{-\beta \hbar \omega}}+Nk\hbar \omega \frac{e^{-\beta \hbar \omega}}{1-e^{-\beta \hbar \omega}}-k\beta N(\hbar \omega)^{2} \frac{-e^{-\beta \hbar \omega}(1-e^{-\beta \hbar \omega})-\hbar \omega e^{-\beta 2\hbar \omega}}{(1-e^{-\beta \hbar \omega})^{2}} \right) \\
+ & = Nk(\beta \hbar \omega)^{2}  \frac{e^{-\beta \hbar \omega}}{(1-e^{-\beta \hbar \omega})^{2}} \\
+ & = Nk(\beta \hbar \omega)^{2} \frac{1}{2\cosh(\beta \hbar \omega)-2}
+\end{align}$$
+As $T\rightarrow \infty$, I have $\beta \rightarrow 0$. Then:
+$$\begin{align}
+\cosh(\beta \hbar \omega)  & \approx 1+ \frac{1}{2}(\beta \hbar \omega)^{2}
 \end{align}$$
 So:
-$$S=\frac{kE}{\hbar \omega}\ln\left( N \frac{\hbar \omega}{E} \right)+k\left(N- \frac{E}{\hbar \omega} \right) \ln\left(  \frac{N}{N- \frac{E}{\hbar \omega}} \right) $$
-## (b).
+$$\begin{align}
+C  & \approx Nk(\beta \hbar \omega)^{2} \frac{1}{2+(\beta \hbar \omega)^{2}-2} \\
+ & = Nk
+\end{align}$$
+This is consistent with the classical harmonic oscillators.
 
-## (c).
+## (d).
+I already found the entropy in part $(c)$:
+$$S = -Nk\ln(1-e^{-\beta \hbar \omega})+ k\beta N\omega \hbar\frac{e^{-\beta \hbar \omega}}{1- e^{-\beta \hbar \omega}} $$
+As $T\rightarrow 0,\beta\rightarrow{\infty}$, obviously:
+$$-Nk\ln(1-e^{-\beta \hbar \omega})\rightarrow 0$$
+For the second term:
+$$\begin{align}
+k\beta N\omega \hbar \frac{e^{-\beta \hbar \omega}}{1-e^{-\beta \hbar \omega}} & \approx Nk\omega \hbar \beta e^{-\beta \hbar \omega}\approx 0
+\end{align}$$
+Then we have:
+$$\lim_{ T \to 0 } S=0$$
+This is because at low temperature, the Boltzmann factor $e^{-\beta E}$ would only dominate if $E$ is the smallest. Recall that for a specific configuration of the system, meaning that each oscillator has some specified energy, then the probability would be $Prob=\frac{\exp(-\beta E_{1})\dots \exp(-\beta E_{N})}{Z}$. But since the states with smallest $E$'s would dominate, the the most probable configuration of the system would be that all oscillators rest in $E=0$. all other configurations are highly unlikely because of the large $\beta$. Since there is only one possible configuration, the entropy vanishes because $\ln 1=0$.
 
-
-
+# 4.
