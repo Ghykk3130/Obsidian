@@ -134,8 +134,15 @@ Z & =\sum_{\text{all states}} \exp(-\beta H) \\
  & = \left(  \frac{1}{1-\exp(-\beta \hbar \omega)} \right)^N
 \end{align}$$
 ## (b).
+We know that:
+$$\begin{align}
+Prob(\text{oscillator k is in state n}) & = \sum_{\text{all states of oscillators i, }i\neq k} \frac{\exp(-\beta(E_{1}+\dots+E_{k}+\dots+E_{N}) )}{Z} \\
+ & = \frac{\exp(-\beta E_{k})}{Z}\sum_{\text{all states of oscillators i, }i\neq k}\exp(-\beta E_{1})\dots \exp(-\beta E_{N}) \\
+ & = \frac{\exp(-\beta E_{k})}{Z} \left( \sum_{l}\exp(-\beta l\hbar \omega) \right)^{N-1} \\ & = \frac{\exp(-\beta n\hbar \omega)}{Z}\left(  \frac{1}{1-\exp(-\beta \hbar \omega)} \right)^{N-1} \\
 
-
+ & = \exp(-\beta n\hbar \omega)(1-\exp(-\beta \hbar \omega))
+\end{align}$$
+## (c).
 
 
 
