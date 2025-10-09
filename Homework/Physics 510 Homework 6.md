@@ -192,10 +192,11 @@ This is because at low temperature, the Boltzmann factor $e^{-\beta E}$ would on
 The contribution to the partition function is given by:
 $$\begin{align}
 Z & = \int \frac{d\theta d\phi dp_{\theta}dp_{\phi}}{N!h^{2}} \exp(- \beta H) \\
- & = \frac{1}{N!h^2} \int_{0}^\pi d\phi \int_{\mathbb{R}}dp_{\theta} \exp\left( - \frac{\beta }{2I}{p_{\theta}^{2}} \right)\int_{0}^\pi d\theta \int_{\mathbb{R}}dp_{\phi}\exp\left( - \frac{\beta}{2I} \frac{p_{\phi}^{2}}{\sin ^{2}\theta} \right) \\
- & = \frac{1}{N!h^2} 2\pi \sqrt{  \frac{2I}{\beta} }\sqrt{ \pi } \int_{0}^\pi d\theta \frac{2I}{\beta}\sin \theta \sqrt{ \pi } \\
- & = \frac{1}{N!h^2} 2\pi \sqrt{  \frac{2I}{\beta} }\sqrt{ \pi } \sqrt{  \frac{2I}{\beta} }\sqrt{ \pi }2 \\
- & = \frac{1}{N!h^{2}}\frac{8\pi^{2}I}{\beta} 
+ & = \frac{1}{N!h^2} \int_{0}^\pi d\phi \int_{\mathbb{R}}dp_{\theta} \exp\left( - \frac{\beta }{2I}{p_{\theta}^{2}} \right)\int_{0}^\pi d\theta \int_{\mathbb{R}}dp_{\phi}\exp\left( - \frac{\beta}{2I} \frac{p_{\phi}^{2}}{\sin ^{2}\theta} + \beta \mu\epsilon \cos \theta\right) \\
+ & = \frac{1}{N!h^2} 2\pi \sqrt{  \frac{2I}{\beta} }\sqrt{ \pi } \int_{0}^\pi d\theta \sqrt{ \frac{2I}{\beta} } \sin \theta \exp(\beta \mu\epsilon \cos \theta) \sqrt{ \pi } \\
+ & = \frac{1}{N!h^2} 2\pi \sqrt{  \frac{2I}{\beta} }\sqrt{ \pi } \sqrt{ \frac{2I}{\beta }}\sqrt{ \pi } \int_{-1}^1d(\cos \theta)\exp(\beta \mu\epsilon \cos \theta) \\
+ & = \frac{1}{N!h^2} 2\pi \sqrt{  \frac{2I}{\beta} }\sqrt{ \pi } \sqrt{ \frac{2I}{\beta }}\sqrt{ \pi } \frac{2}{\beta \mu\epsilon} \sinh(\beta \mu\epsilon) \\
+ & = \frac{1}{N!h^{2}} \frac{8\pi^{2}I}{\beta^{2}\mu\epsilon}\sinh(\beta \mu\epsilon)
 \end{align}$$
 ## (b).
 We know that the average is given by:
@@ -204,12 +205,23 @@ $$\begin{align}
 \end{align}$$
 The denominator is simply $Z$. Now find the numerator:
 $$\begin{align}
-\int \frac{d\theta d\phi dp_{\theta}dp_{\phi}}{N!h^{2}}\exp(-\beta H)\mu \cos \theta & = \frac{1}{N!h^{2}} \int_{0}^{2\pi}d\phi \int_{\mathbb{R}}dp_{\theta}\exp\left( - \frac{\beta}{2I}p_{\theta}^{2} \right) \int_{0}^{\pi}d\theta \int_{\mathbb{R}}dp_{\phi}\exp\left( - \frac{\beta}{2I} \frac{p_{\phi}^{2}}{\sin ^{2}\theta} \right)\mu \cos \theta \\
- & = \frac{\mu}{N!h^{2}}\cdot 2\pi \cdot \sqrt{ \frac{2I}{\beta} }\sqrt{ \pi } \cdot \int_{0}^{\pi}d\theta \sqrt{  \frac{2I}{\beta} }\sqrt{ \pi }\sin \theta \cos \theta
+\int \frac{d\theta d\phi dp_{\theta}dp_{\phi}}{N!h^{2}}\exp(-\beta H)\mu \cos \theta & = \frac{1}{N!h^{2}} \int_{0}^{2\pi}d\phi \int_{\mathbb{R}}dp_{\theta}\exp\left( - \frac{\beta}{2I}p_{\theta}^{2} \right) \int_{0}^{\pi}d\theta \int_{\mathbb{R}}dp_{\phi}\exp\left( - \frac{\beta}{2I} \frac{p_{\phi}^{2}}{\sin ^{2}\theta}+\beta \mu\epsilon \cos \theta \right)\mu \cos \theta \\
+ & = \frac{\mu}{N!h^{2}}\cdot 2\pi \cdot \sqrt{ \frac{2I}{\beta} }\sqrt{ \pi } \cdot \int_{0}^{\pi}d\theta \sqrt{  \frac{2I}{\beta} }\sqrt{ \pi }\sin \theta \cos \theta \exp(\beta \mu\epsilon \cos \theta)
 \end{align}$$
 Obviously:
-$$\int_{0}^{\pi}d\theta \sin \theta \cos \theta=\int_{1}^{-1}d(\cos \theta)\cos \theta=0$$
+$$\begin{align}
+\int_{0}^\pi d\theta \sin \theta \cos \theta \exp(\beta \mu\epsilon \cos \theta)  & = \int_{-1}^1d(\cos \theta)\cos \theta \exp(\beta \mu\epsilon \cos \theta ) \\
+ & =\int_{-1}^{1}d(\cos \theta) \frac{\partial}{\partial(\beta \mu\epsilon) }\exp(\beta \mu\epsilon \cos \theta) \\
+ & = \frac{\partial}{\partial(\beta \mu\epsilon)}\left(  \frac{2}{\beta \mu \epsilon} \sinh(\beta \mu\epsilon) \right) \\
+ & = - \frac{2}{\beta^{2}\mu^{2}\epsilon^{2}}\sinh(\beta \mu\epsilon)+ \frac{2}{\beta \mu\epsilon}\cosh(\beta \mu\epsilon)
+\end{align}$$
 So:
-$$\langle \mu \cos \theta \rangle=0$$
+$$\int \frac{d\theta d\phi dp_{\theta}dp_{\phi}}{N!h^{2}}\exp(-\beta H)\mu \cos \theta=\frac{1}{N!h^{2}} \frac{8\pi^{2}I}{\beta^{3}\mu\epsilon^{2}}(-\sinh(\beta \mu\epsilon)+\beta \mu\epsilon \cosh(\beta \mu\epsilon))$$
+Then: 
+$$\begin{align}
+\langle \mu \cos \theta \rangle & = \frac{\frac{1}{N!h^{2}} \frac{8\pi^{2}I}{\beta^{3}\mu\epsilon^{2}}(-\sinh(\beta \mu\epsilon)+\beta \mu\epsilon \cosh(\beta \mu\epsilon))}{\frac{1}{N!h^{2}} \frac{8\pi^{2}I}{\beta^{2}\mu\epsilon}\sinh(\beta \mu\epsilon)} \\
+ & = \frac{1}{\beta\epsilon}(-1+\beta \mu\epsilon \coth(\beta \mu\epsilon))
+\end{align}$$
+
 ## (c).
 
