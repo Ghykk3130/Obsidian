@@ -59,10 +59,37 @@ We know that the probability that we find the system to be in a volume element i
 $$\rho d^Nqd^Np= \frac{1}{h^N}d^Nqd^Np \frac{\exp(-\beta H)}{Z}$$
 Therefore for normalization, the partition function is given by:
 $$\begin{align}
-Z= \frac{1}{h^N}\int_{} d^Nqd^Np  \exp(-\beta H)
+Z= \frac{1}{h^N}\int_{\mathbb{R}^{2N}} d^Nqd^Np  \exp(-\beta H)
 \end{align}$$
-The region over which we integrate is given by:
-$$$$
+Again, if we set $x_{i}=m\omega q_{i}$, then:
+$$\begin{align}
+Z & = \frac{1}{h^N} \left( \frac{1}{m\omega}  \right)^N \int d^Nxd^Np\exp\left( - \frac{\beta}{2m} \left( \sum_{i}p_{i}^{2}+x_{i}^{2} \right) \right)
+\end{align}$$
+Consider we change the measure:
+$$dSdR=d^Nxd^Np$$
+Here we set $R=\sqrt{ \sum_{i}(p_{i}^{2}+x_{i}^{2}) }$, and $S$ is the surface area of an 2N-ball with radius $R$. We know that the volume of a 2N-ball is given by:
+$$V=\frac{\pi^N}{N\Gamma(N)}R^{2N}$$
+Then the surface area is:
+$$S= \frac{\partial}{\partial R} \frac{\pi^N}{N\Gamma(N)}R^{2N}=\frac{2\pi^N}{\Gamma(N)}R^{2N-1}$$
+Then I have:
+$$\begin{align}
+Z & = \left(  \frac{1}{hm\omega} \right)^N\int dSdR \exp\left( - \frac{\beta}{2m} R^{2}\right) \\
+ & = \left(  \frac{1}{hm\omega} \right)^N \int_{0}^{\infty}dR \exp\left( - \frac{\beta}{2m}R^{2} \right)  \int_{\text{2N-sphere with radius }R} dS \\
+ & = \left(  \frac{1}{hm\omega} \right)^N\int dR \exp\left( - \frac{ \beta}{2m}R^{2} \right) \frac{2\pi^N}{\Gamma(N)}R^{2N-1} 
+\end{align}$$
+It suffices to evaluate: 
+$$\begin{align}
+\int_{0}^{\infty}dR \exp\left( - \frac{\beta}{2m}R^{2} \right)R^{2N-1}  & = \left(  \frac{2m}{\beta} \right)^{2N}\int_{0}^{\infty}dy\exp(-y^{2})y^{2N-1}\text{ with }y= \sqrt{ \frac{\beta}{2m} }R \\
+ & = \frac{1}{2}\left(  \frac{2m}{\beta} \right)^{2N}\int dy^{2}\exp(-y^{2})(y^{2})^{N-1} \\
+ & = \frac{1}{2} \left(  \frac{2m}{\beta} \right)^{2N}\Gamma(N)
+\end{align}$$
+Then I have:
+$$\begin{align}
+Z & = \left(  \frac{1}{hm\omega} \right)^N \frac{2\pi^N}{\Gamma(N)}\cdot \frac{1}{2} \left( \frac{2m}{\beta} \right)^{2N}\Gamma(N) \\
+ & = \left(  \frac{2\pi}{\omega h\beta} \right)^N \\
+ & = \left(  \frac{1}{\omega \hbar \beta} \right)^N 
+\end{align}$$
+
 
 
 
