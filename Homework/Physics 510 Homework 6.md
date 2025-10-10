@@ -18,12 +18,12 @@ $$\frac{e^{-\beta\epsilon}}{2\cosh(\beta\epsilon)+2} \rightarrow \left\{ \begin{
 The probability that the systems is in $0$ is:
 $$2 \cdot \frac{e^{0}}{2\cosh(\beta\epsilon)+2}=\frac{1}{\cosh(\beta\epsilon)+1}\rightarrow \left\{\begin{align}
  & \frac{1}{2},\text{ as }T\rightarrow \infty \\
- & 0,\text{ as }T\rightarrow \infty
+ & 0,\text{ as }T\rightarrow 0
 \end{align} \right.$$
 The probability that the system is in $-\epsilon$ is:
 $$\frac{e^{\beta\epsilon}}{2\cosh(\beta\epsilon)+2}\rightarrow \left\{ \begin{align}
  & \frac{1}{4},\text{ as }T\rightarrow \infty \\
- & 1, \text{ as }T\rightarrow \infty
+ & 1, \text{ as }T\rightarrow 0
 \end{align}\right.$$
 These results make sense because if $T$ is very high, then the factor $\exp(-\beta E)$ for all states are basically the same, since the energy differences are flattened out by the small $\beta$. This means that all states are equally probable. If $T$ is very low, then the factor $e^{-\beta\epsilon}$ would be very small for all states except for the state with the lowest energy. Because the $\beta$ becomes very large, and only the highest $-\epsilon$ value would dominate.  This means that all states except for the ground state are highly  improbable. This is also consistent with our instinct that in general a system would rest in its lowest state at zero temperature. (if there is only one particle in the system, so that I don't worry about the Pauli exclusion.)
 
@@ -185,7 +185,7 @@ k\beta N\omega \hbar \frac{e^{-\beta \hbar \omega}}{1-e^{-\beta \hbar \omega}} &
 \end{align}$$
 Then we have:
 $$\lim_{ T \to 0 } S=0$$
-This is because at low temperature, the Boltzmann factor $e^{-\beta E}$ would only dominate if $E$ is the smallest. Recall that for a specific configuration of the system, meaning that each oscillator has some specified energy, then the probability would be $Prob=\frac{\exp(-\beta E_{1})\dots \exp(-\beta E_{N})}{Z}$. But since the states with smallest $E$'s would dominate, the the most probable configuration of the system would be that all oscillators rest in $E=0$. all other configurations are highly unlikely because of the large $\beta$. Since there is only one possible configuration, the entropy vanishes because $\ln 1=0$.
+This is because at low temperature, the Boltzmann factor $e^{-\beta E}$ would only dominate if $E$ is the smallest. Recall that for a specific configuration of the system, meaning that each oscillator has some specified energy, then the probability would be $Prob=\frac{\exp(-\beta E_{1})\dots \exp(-\beta E_{N})}{Z}$. But since the states with smallest $E$'s would dominate, the the most probable configuration of the system would be that all oscillators rest in $E=0$. all other configurations are highly unlikely because of the large $\beta$. Since there is only one possible configuration, the entropy vanishes because $\ln 1=0$. This is also an example of the third law, which basically says that the entropy goes to zero as $T$ goes to zero.
 
 # 4.
 ## (a).
@@ -226,7 +226,7 @@ $$\begin{align}
 \end{align}$$
 
 ## (c).
-Consider the Laurent expansion of $\coth x$: 
+Consider the expansion of $\coth x$: 
 $$\begin{align}
 \coth x & = \frac{\cosh x}{\sinh x} \\
  & = \frac{\sum_{n\text{ even}} \frac{x^n}{n!}}{\sum_{l\text{ odd}} \frac{x^l}{l!}} \\
