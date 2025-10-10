@@ -256,7 +256,8 @@ U & = - \frac{\partial}{\partial \beta}\ln Z \\
 Then as $T\rightarrow \infty,\beta\rightarrow 0$, I have :
 $$\begin{align}
 U  & \approx \frac{2}{\beta}-\mu\epsilon \cdot \frac{1}{\beta \mu\epsilon}\left( 1 + \frac{(\beta \mu\epsilon)^{2}}{3} \right) \\
- & = \frac{1}{\beta}+ \frac{1}{3}\beta \mu^{2}\epsilon^{2} \rightarrow \infty
+ & = \frac{1}{\beta}+ \frac{1}{3}\beta \mu^{2}\epsilon^{2} \\
+ & \approx \frac{1}{\beta}=kT
 \end{align}$$
 As $T\rightarrow 0,\beta\rightarrow \infty$, I have:
 $$\begin{align}
