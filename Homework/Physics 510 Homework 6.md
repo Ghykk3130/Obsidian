@@ -191,22 +191,24 @@ This is because at low temperature, the Boltzmann factor $e^{-\beta E}$ would on
 ## (a).
 The contribution to the partition function is given by:
 $$\begin{align}
-Z & = \int \frac{d\theta d\phi dp_{\theta}dp_{\phi}}{N!h^{2}} \exp(- \beta H) \\
- & = \frac{1}{N!h^2} \int_{0}^\pi d\phi \int_{\mathbb{R}}dp_{\theta} \exp\left( - \frac{\beta }{2I}{p_{\theta}^{2}} \right)\int_{0}^\pi d\theta \int_{\mathbb{R}}dp_{\phi}\exp\left( - \frac{\beta}{2I} \frac{p_{\phi}^{2}}{\sin ^{2}\theta} + \beta \mu\epsilon \cos \theta\right) \\
- & = \frac{1}{N!h^2} 2\pi \sqrt{  \frac{2I}{\beta} }\sqrt{ \pi } \int_{0}^\pi d\theta \sqrt{ \frac{2I}{\beta} } \sin \theta \exp(\beta \mu\epsilon \cos \theta) \sqrt{ \pi } \\
- & = \frac{1}{N!h^2} 2\pi \sqrt{  \frac{2I}{\beta} }\sqrt{ \pi } \sqrt{ \frac{2I}{\beta }}\sqrt{ \pi } \int_{-1}^1d(\cos \theta)\exp(\beta \mu\epsilon \cos \theta) \\
- & = \frac{1}{N!h^2} 2\pi \sqrt{  \frac{2I}{\beta} }\sqrt{ \pi } \sqrt{ \frac{2I}{\beta }}\sqrt{ \pi } \frac{2}{\beta \mu\epsilon} \sinh(\beta \mu\epsilon) \\
- & = \frac{1}{N!h^{2}} \frac{8\pi^{2}I}{\beta^{2}\mu\epsilon}\sinh(\beta \mu\epsilon)
+Z & = \int \frac{d\theta d\phi dp_{\theta}dp_{\phi}}{h^{2}} \exp(- \beta H) \\
+ & = \frac{1}{h^2} \int_{0}^\pi d\phi \int_{\mathbb{R}}dp_{\theta} \exp\left( - \frac{\beta }{2I}{p_{\theta}^{2}} \right)\int_{0}^\pi d\theta \int_{\mathbb{R}}dp_{\phi}\exp\left( - \frac{\beta}{2I} \frac{p_{\phi}^{2}}{\sin ^{2}\theta} + \beta \mu\epsilon \cos \theta\right) \\
+ & = \frac{1}{h^2} 2\pi \sqrt{  \frac{2I}{\beta} }\sqrt{ \pi } \int_{0}^\pi d\theta \sqrt{ \frac{2I}{\beta} } \sin \theta \exp(\beta \mu\epsilon \cos \theta) \sqrt{ \pi } \\
+ & = \frac{1}{h^2} 2\pi \sqrt{  \frac{2I}{\beta} }\sqrt{ \pi } \sqrt{ \frac{2I}{\beta }}\sqrt{ \pi } \int_{-1}^1d(\cos \theta)\exp(\beta \mu\epsilon \cos \theta) \\
+ & = \frac{1}{h^2} 2\pi \sqrt{  \frac{2I}{\beta} }\sqrt{ \pi } \sqrt{ \frac{2I}{\beta }}\sqrt{ \pi } \frac{2}{\beta \mu\epsilon} \sinh(\beta \mu\epsilon) \\
+ & = \frac{1}{h^{2}} \frac{8\pi^{2}I}{\beta^{2}\mu\epsilon}\sinh(\beta \mu\epsilon)
 \end{align}$$
 ## (b).
 We know that the average is given by:
 $$\begin{align}
-\langle \mu \cos \theta \rangle & = \frac{\int \frac{d\theta d\phi dp_{\theta}dp_{\phi}}{N!h^{2}}\exp(-\beta H)\mu \cos \theta}{\int \frac{d\theta d\phi dp_{\theta}dp_{\phi}}{N!h^{2}}}
+\langle \mu \cos \theta \rangle & = \frac{\int \frac{d\theta d\phi dp_{\theta}dp_{\phi}}{h^{2}}\exp(-\beta H)\mu \cos \theta}{\int \frac{d\theta d\phi dp_{\theta}dp_{\phi}}{h^{2}}}\exp(-\beta H)
 \end{align}$$
+The reason why we didn't write out other degrees of freedom is because all degrees of freedom that are not related to $\theta,\phi$ would be factor out in the integral, and cancel exactly for they both appear in the numerator and denominator.
+
 The denominator is simply $Z$. Now find the numerator:
 $$\begin{align}
-\int \frac{d\theta d\phi dp_{\theta}dp_{\phi}}{N!h^{2}}\exp(-\beta H)\mu \cos \theta & = \frac{1}{N!h^{2}} \int_{0}^{2\pi}d\phi \int_{\mathbb{R}}dp_{\theta}\exp\left( - \frac{\beta}{2I}p_{\theta}^{2} \right) \int_{0}^{\pi}d\theta \int_{\mathbb{R}}dp_{\phi}\exp\left( - \frac{\beta}{2I} \frac{p_{\phi}^{2}}{\sin ^{2}\theta}+\beta \mu\epsilon \cos \theta \right)\mu \cos \theta \\
- & = \frac{\mu}{N!h^{2}}\cdot 2\pi \cdot \sqrt{ \frac{2I}{\beta} }\sqrt{ \pi } \cdot \int_{0}^{\pi}d\theta \sqrt{  \frac{2I}{\beta} }\sqrt{ \pi }\sin \theta \cos \theta \exp(\beta \mu\epsilon \cos \theta)
+\int \frac{d\theta d\phi dp_{\theta}dp_{\phi}}{h^{2}}\exp(-\beta H)\mu \cos \theta & = \frac{1}{h^{2}} \int_{0}^{2\pi}d\phi \int_{\mathbb{R}}dp_{\theta}\exp\left( - \frac{\beta}{2I}p_{\theta}^{2} \right) \int_{0}^{\pi}d\theta \int_{\mathbb{R}}dp_{\phi}\exp\left( - \frac{\beta}{2I} \frac{p_{\phi}^{2}}{\sin ^{2}\theta}+\beta \mu\epsilon \cos \theta \right)\mu \cos \theta \\
+ & = \frac{\mu}{h^{2}}\cdot 2\pi \cdot \sqrt{ \frac{2I}{\beta} }\sqrt{ \pi } \cdot \int_{0}^{\pi}d\theta \sqrt{  \frac{2I}{\beta} }\sqrt{ \pi }\sin \theta \cos \theta \exp(\beta \mu\epsilon \cos \theta)
 \end{align}$$
 Obviously:
 $$\begin{align}
@@ -216,10 +218,10 @@ $$\begin{align}
  & = - \frac{2}{\beta^{2}\mu^{2}\epsilon^{2}}\sinh(\beta \mu\epsilon)+ \frac{2}{\beta \mu\epsilon}\cosh(\beta \mu\epsilon)
 \end{align}$$
 So:
-$$\int \frac{d\theta d\phi dp_{\theta}dp_{\phi}}{N!h^{2}}\exp(-\beta H)\mu \cos \theta=\frac{1}{N!h^{2}} \frac{8\pi^{2}I}{\beta^{3}\mu\epsilon^{2}}(-\sinh(\beta \mu\epsilon)+\beta \mu\epsilon \cosh(\beta \mu\epsilon))$$
+$$\int \frac{d\theta d\phi dp_{\theta}dp_{\phi}}{h^{2}}\exp(-\beta H)\mu \cos \theta=\frac{1}{h^{2}} \frac{8\pi^{2}I}{\beta^{3}\mu\epsilon^{2}}(-\sinh(\beta \mu\epsilon)+\beta \mu\epsilon \cosh(\beta \mu\epsilon))$$
 Then: 
 $$\begin{align}
-\langle \mu \cos \theta \rangle & = \frac{\frac{1}{N!h^{2}} \frac{8\pi^{2}I}{\beta^{3}\mu\epsilon^{2}}(-\sinh(\beta \mu\epsilon)+\beta \mu\epsilon \cosh(\beta \mu\epsilon))}{\frac{1}{N!h^{2}} \frac{8\pi^{2}I}{\beta^{2}\mu\epsilon}\sinh(\beta \mu\epsilon)} \\
+\langle \mu \cos \theta \rangle & = \frac{\frac{1}{h^{2}} \frac{8\pi^{2}I}{\beta^{3}\mu\epsilon^{2}}(-\sinh(\beta \mu\epsilon)+\beta \mu\epsilon \cosh(\beta \mu\epsilon))}{\frac{1}{h^{2}} \frac{8\pi^{2}I}{\beta^{2}\mu\epsilon}\sinh(\beta \mu\epsilon)} \\
  & = \frac{1}{\beta\epsilon}(-1+\beta \mu\epsilon \coth(\beta \mu\epsilon))
 \end{align}$$
 
@@ -232,3 +234,45 @@ $$\begin{align}
  & = \frac{1}{x} \left( \sum_{n\text{ even}} \frac{x^n}{n!} \right)\left(1- \left(\sum_{l\text{ odd}} \frac{x^{l-1}}{l!}\right)+ \left(\sum_{l\text{ odd}} \frac{x^{l-1}}{l!}\right)^2-\dots\right)
 \end{align}$$
 For terms after $\frac{1}{x}$, I have:
+$$\left( \sum_{n\text{ even}} \frac{x^n}{n!} \right)\left(1- \left(\sum_{l\text{ odd}} \frac{x^{l-1}}{l!}\right)+ \left(\sum_{l\text{ odd}} \frac{x^{l-1}}{l!}\right)^2-\dots\right)=1+ \frac{x^{2}}{3}+\mathcal{O}(x^{3})$$
+Then:
+$$\begin{align}
+\langle \mu \cos \theta \rangle & = \frac{1}{\beta\epsilon}\left( -1+ \beta \mu\epsilon \cdot \left( \frac{1}{\beta \mu\epsilon}\left( 1+ \frac{(\beta \mu\epsilon)^{2}}{3}+\mathcal{O}(\epsilon^{3}) \right) \right) \right) \\
+ & = \frac{1}{3}\beta \mu^{2}\epsilon+ \mathcal{O}(\epsilon^{2})
+\end{align}$$
+Then clearly:
+$$\begin{align}
+\left.\frac{\partial P}{\partial\epsilon} \right|_{\epsilon=0 } & =\left. \frac{1}{3}\beta \mu^{2}+ \mathcal{O}(\epsilon) \right|_{\epsilon=0} \\
+ & = \frac{1}{3}\beta \mu^{2}
+\end{align}$$
+## (d).
+We know that:
+$$\begin{align}
+U & = - \frac{\partial}{\partial \beta}\ln Z \\
+ & = - \frac{1}{Z} \frac{\partial}{\partial \beta}Z \\
+ & = - \frac{1}{\frac{8\pi^{2}I}{h^{2}\mu\epsilon} \frac{1}{\beta^{2}}\sinh(\beta \mu\epsilon)} \cdot \frac{8\pi^{2}I}{h^{2}\mu\epsilon} \left(  - \frac{2}{\beta^{3}}\sinh(\beta \mu\epsilon)+ \frac{1}{\beta^{2}}\cdot \mu\epsilon \cosh(\beta \mu\epsilon) \right) \\
+ & = \frac{2}{\beta}-\mu\epsilon \coth(\beta \mu\epsilon)
+\end{align}$$
+Then as $T\rightarrow \infty,\beta\rightarrow 0$, I have :
+$$\begin{align}
+U  & \approx \frac{2}{\beta}-\mu\epsilon \cdot \frac{1}{\beta \mu\epsilon}\left( 1 + \frac{(\beta \mu\epsilon)^{2}}{3} \right) \\
+ & = \frac{1}{\beta}+ \frac{1}{3}\beta \mu^{2}\epsilon^{2} \rightarrow \infty
+\end{align}$$
+As $T\rightarrow 0,\beta\rightarrow \infty$, I have:
+$$\begin{align}
+\frac{2}{\beta}\rightarrow 0, \coth(\beta \mu\epsilon)\rightarrow {1}
+\end{align} $$
+So:
+$$U\rightarrow-\mu\epsilon$$
+## (e).
+I have:
+$$\begin{align}
+C & = \left( \frac{\partial U}{\partial T} \right)_{N,V} \\
+ & = -k\beta^{2} \frac{\partial U}{\partial \beta} \\
+ & = -k\beta^{2}\left( - \frac{2}{\beta^{2}}+\left(  \frac{\mu\epsilon}{\sinh(\beta \mu\epsilon)} \right)^{2} \right) \\
+ & = k\left( 2- \left(  \frac{\beta \mu\epsilon}{\sinh(\beta \mu\epsilon)} \right)^{2} \right)
+\end{align}$$
+A schematic sketch of the temperature dependence (this is only about the overall pattern. The exact numbers should be meaningless.):
+<div style="text-align:center">
+<img src="heat_capacitance (3).png" width="400">
+</div>
