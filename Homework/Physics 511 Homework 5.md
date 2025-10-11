@@ -97,7 +97,7 @@ $$\begin{align}
 \ket{\psi,t}  & = \mathscr{U}(t,0)\sum_{a} \ket{a}  \bra{a}  \psi,0\rangle  \\
  & = \sum_{a} \exp\left( - \frac{i}{\hbar}E_{a}t \right) \bra{a} \psi,0\rangle
 \end{align}$$
-That means that each ''component'' $\bra{a}\psi,0\rangle$ is evolved by the factor $\exp\left( - \frac{i}{\hbar}E_{a}t \right)$. However, int Schrodinger's picture, the observables doesn't evolve with time (except for some cases where the observable depends on time explicitly.)
+That means that each ''component'' $\bra{a}\psi,0\rangle$ is evolved by the factor $\exp\left( - \frac{i}{\hbar}E_{a}t \right)$. However, in Schrodinger's picture, the observables don't evolve with time (except for some cases where the observable depends on time explicitly.)
 # 3).
 ## i).
 We compute:
