@@ -55,3 +55,47 @@ $$\begin{align}
 \end{align}$$
 # 2),
 
+**Heisenberg's picture:**
+
+We know that the equations of motion are given by:
+$$\begin{align}
+ & \frac{dx}{dt}= \frac{1}{i\hbar}[x, H]= \frac{1}{i\hbar}\left[ x, \frac{p^{2}}{2m}+ \frac{1}{2}m\omega^{2}x^{2} \right]  = \frac{p}{m} \\
+ & \frac{dp}{dt}= \frac{1}{i\hbar}[p,H]= \frac{1}{i\hbar}\left[ p, \frac{p^{2}}{2m}+ \frac{1}{2}m\omega^{2}x^{2} \right]=-m\omega^{2}x
+\end{align}$$
+Then we differentiate twice to decouple:
+$$\frac{d^{2}p}{dt^{2}}=-\omega^{2}p \implies p=Ae^{i\omega t}+Be^{-i\omega t}$$
+I can also do the same thing to $x$ and get:
+$$\frac{d^{2}x}{dt}= -\omega^{2}x \implies x=Ce^{i\omega t}+De^{-i\omega t}$$
+Then the constraints are:
+$$\begin{align}
+ & A+B=p(0) \\
+ & C+D=x(0) \\
+ & \frac{dx}{dt}= \frac{p}{m}\implies i\omega Ce^{i\omega t}-i\omega De^{-i\omega t}= \frac{A}{m}e^{i\omega t}+ \frac{B}{m}e^{-i\omega t}\implies i\omega C= \frac{A}{m}, -i\omega D= \frac{B}{m}
+\end{align}$$
+Then I have:
+$$\begin{align}
+ & A= \frac{1}{2}(p(0)+ im\omega x(0)) \\
+ & B= \frac{1}{2}(p(0)-im\omega x(0)) \\
+ & C= \frac{1}{2}\left( x(0)- \frac{i}{m\omega}p(0) \right) \\
+ & D= \frac{1}{2}\left( x(0)+ \frac{i}{m\omega}p(0) \right)
+\end{align}$$
+Then I have:
+$$\begin{align}
+ & p=2\mathrm{Re}(Ae^{i\omega et})= p(0)\cos(\omega t)-m\omega x(0)\sin(\omega t)  \\
+ & x= 2 \mathrm{Re}( Ce^{i\omega t})=x(0)\cos(\omega t)+ \frac{p(0)}{m\omega}\sin(\omega t)
+\end{align}$$
+**Schrodinger's picture:**
+
+Know that the Hamiltonian is independent of time, so that:
+$$\mathscr{U}(t,0)= \exp\left( - \frac{i}{\hbar}Ht \right)= \exp\left( - \frac{i}{\hbar}\left(  \frac{p^{2}}{2m}+ \frac{1}{2}m\omega^{2}x^{2} \right)t \right)$$
+So any state ket $\ket{\psi,0}$ would evolve into:
+$$\ket{\psi,t} = \exp\left( - \frac{i}{\hbar}\left(  \frac{p^{2}}{2m}+ \frac{1}{2}m\omega^{2}x^{2} \right)t \right)\ket{\psi,0} $$
+# 3).
+## i).
+We compute:
+$$\begin{align}
+e^{ipl/\hbar}xe^{-ipl/\hbar} & = x+ \frac{il}{\hbar}[p,x]+ \frac{1}{2!}\left(  \frac{il}{\hbar} \right)^{2}[p,[p,x]]+ \dots \\
+ & = x+ \frac{il}{\hbar}\cdot (-i\hbar) \\
+ & = x-l
+\end{align}$$
+## ii).
