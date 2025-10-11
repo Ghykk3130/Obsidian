@@ -84,19 +84,27 @@ $$\begin{align}
  & p=2\mathrm{Re}(Ae^{i\omega et})= p(0)\cos(\omega t)-m\omega x(0)\sin(\omega t)  \\
  & x= 2 \mathrm{Re}( Ce^{i\omega t})=x(0)\cos(\omega t)+ \frac{p(0)}{m\omega}\sin(\omega t)
 \end{align}$$
+The general state vector would not evolve in Heisenberg's picture. 
+
 **Schrodinger's picture:**
 
 Know that the Hamiltonian is independent of time, so that:
 $$\mathscr{U}(t,0)= \exp\left( - \frac{i}{\hbar}Ht \right)= \exp\left( - \frac{i}{\hbar}\left(  \frac{p^{2}}{2m}+ \frac{1}{2}m\omega^{2}x^{2} \right)t \right)$$
 So any state ket $\ket{\psi,0}$ would evolve into:
 $$\ket{\psi,t} = \exp\left( - \frac{i}{\hbar}\left(  \frac{p^{2}}{2m}+ \frac{1}{2}m\omega^{2}x^{2} \right)t \right)\ket{\psi,0} $$
+More explicitly, if we know the eigenkets $\ket{a}$ of the Hamiltonian, $\ket{\psi,t}$ would be:
+$$\begin{align}
+\ket{\psi,t}  & = \mathscr{U}(t,0)\sum_{a} \ket{a}  \bra{a}  \psi,0\rangle  \\
+ & = \sum_{a} \exp\left( - \frac{i}{\hbar}E_{a}t \right) \bra{a} \psi,0\rangle
+\end{align}$$
+That means that each ''component'' $\bra{a}\psi,0\rangle$ is evolved by the factor $\exp\left( - \frac{i}{\hbar}E_{a}t \right)$. However, int Schrodinger's picture, the observables doesn't evolve with time (except for some cases where the observable depends on time explicitly.)
 # 3).
 ## i).
 We compute:
 $$\begin{align}
 e^{ipl/\hbar}xe^{-ipl/\hbar} & = x+ \frac{il}{\hbar}[p,x]+ \frac{1}{2!}\left(  \frac{il}{\hbar} \right)^{2}[p,[p,x]]+ \dots \\
  & = x+ \frac{il}{\hbar}\cdot (-i\hbar) \\
- & = x-l
+ & = x+l
 \end{align}$$
 ## ii).
 We know that:
@@ -113,7 +121,7 @@ We compute:
 $$\begin{align}
 \bra{\psi} x(0)\ket{\psi}  & = \bra{0} e^{ipl/\hbar}x(0) e^{-ipl/\hbar}\ket{0}  \\
  & = \bra{0} x(0) \ket{0} -l \\
- & = -l
+ & = l
 \end{align}$$
 We also have:
 $$\begin{align}
@@ -122,7 +130,7 @@ $$\begin{align}
  & = 0
 \end{align}$$
 Then we obtain:
-$$\langle x(t) \rangle =-l\cos(\omega t)$$
+$$\langle x(t) \rangle =l\cos(\omega t)$$
 # 4).
 We have:
 $$\begin{align}
