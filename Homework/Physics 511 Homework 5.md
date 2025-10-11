@@ -99,3 +99,28 @@ e^{ipl/\hbar}xe^{-ipl/\hbar} & = x+ \frac{il}{\hbar}[p,x]+ \frac{1}{2!}\left(  \
  & = x-l
 \end{align}$$
 ## ii).
+We know that:
+$$\begin{align}
+\langle x(t)\rangle & =\bra{\psi} x(t) \ket{\psi} 
+\end{align}$$
+By $2).$ I know that:
+$$x(t)= x(0)\cos ( \omega t)+ \frac{p(0)}{m\omega}\sin(\omega t)$$
+Therefore:
+$$\begin{align}
+\langle x(t) \rangle & = \cos(\omega t)\bra{\psi} x(0)\ket{\psi} + \frac{\sin(\omega t)}{m\omega}\bra{\psi} p(0) \ket{\psi} 
+\end{align}$$
+We compute:
+$$\begin{align}
+\bra{\psi} x(0)\ket{\psi}  & = \bra{0} e^{ipl/\hbar}x(0) e^{-ipl/\hbar}\ket{0}  \\
+ & = \bra{0} x(0) \ket{0} -l \\
+ & = -l
+\end{align}$$
+We also have:
+$$\begin{align}
+\bra{\psi} p(0)\ket{\psi}  & =\bra{\psi} e^{ipl/\hbar}p(0)e^{-ipl/\hbar}\ket{\psi}  \\
+ & = \bra{\psi} p(0) \ket{\psi}  \\
+ & = 0
+\end{align}$$
+Then we obtain:
+$$\langle x(t) \rangle =-l\cos(\omega t)$$
+# 4).
