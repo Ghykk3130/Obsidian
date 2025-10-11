@@ -143,3 +143,21 @@ $$\begin{align}
 Then we have:
 $$\sum_{a^{'}}|\bra{a^{''}} x \ket{a^{'}} |^{2}(E_{a^{'}}-E_{a^{''}})- \frac{\hbar^{2}}{2m}$$
 # 5).
+I have:
+$$\begin{align}
+\frac{d}{dt}\langle A \rangle & = \frac{d}{dt} \bra{\psi} \mathscr{U}^{\dagger}A\mathscr{U}\ket{\psi}  \\
+ & = \bra{\psi} \frac{d}{dt}A_{H} \ket{\psi}  \\
+ & = \frac{1}{i\hbar}\bra{\psi} [A_{H},H] \ket{\psi}  \\
+ & = \frac{1}{i\hbar}\bra{\psi} [\mathscr{U}^{\dagger}A\mathscr{U},H]\ket{\psi}  \\
+ & = \frac{1}{i\hbar}  \bra{\psi} \mathscr{U}^{\dagger}[A,H]\mathscr{U}\ket{\psi} \\
+ & = \frac{1}{i\hbar} \langle[A,H]\rangle 
+\end{align}$$
+Then we have:
+$$|\langle [A,H]\rangle|= \hbar | \frac{d}{dt}\langle A \rangle |$$
+Therefore:
+$$\begin{align}
+ & \Delta E\Delta A \geq \frac{1}{2}|\langle [A,H]\rangle|
+ \\
+\implies & \frac{\Delta E\Delta A}{| d\langle A\rangle / dt |}  \geq \frac{\hbar}{2 }\end{align}$$
+This means that the amount of time for the mean of an observable to change by one standard deviation times the standard deviation of the energy is bounded below. That means that if the energy uncertainty is large given some initial state, then the mean of the observable changes faster. If the initial state is an energy eigenstate, then the mean of the observable doesn't move. 
+
