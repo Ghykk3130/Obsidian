@@ -124,3 +124,22 @@ $$\begin{align}
 Then we obtain:
 $$\langle x(t) \rangle =-l\cos(\omega t)$$
 # 4).
+We have:
+$$\begin{align}
+\sum_{a^{'}}|\bra{a^{''}} x \ket{a^{'}} |^{2}(E_{a^{'}}-E_{a^{''}}) & = \sum \bra{a^{''}} x \ket{a^{'}} \bra{a^{'}} x \ket{a^{''}} (E_{a^{'}}-E_{a^{''}}) \\
+ & = \frac{1}{2} \sum \bra{a^{''}} x \ket{a^{'}} \bra{a^{'}} x\ket{a^{''}} (2E_{a^{'}}-E_{a^{''}}-E_{a^{''}}) \\
+ & = \frac{1}{2}\left(\sum 2\bra{a^{''}} x \ket{a^{'}} \bra{a^{'}} Hx \ket{a^{''}} - E_{a^{''}} \bra{a^{''}} x^{2}\ket{a^{''}} -E_{a^{''}} \bra{a^{''}} x^{2}\ket{a^{''}}\right) \\
+ & = \frac{1}{2}(2\bra{a^{''}}xHx\ket{a^{''}} -\bra{a^{''}} Hx^{2} \ket{a^{''}} - \bra{a^{''}} x^{2}H\ket{a^{''}}  ) \\
+ & = \frac{1}{2} \bra{a^{''}} (2xHx-Hx^{2}-x^{2}H)\ket{a^{''}}  \\
+ & = \frac{1}{2}\bra{a^{''}} [xH-Hx,x]\ket{a^{''}}  \\
+ & = \frac{1}{2}\bra{a^{''}} [[x,H],x]\ket{a^{''}}    
+\end{align}$$
+Know that:
+$$\begin{align}
+[[x,H],x] & = \left[ \left[ x, \frac{p^{2}}{2m}  \right],x \right] \\
+ & = \frac{i\hbar}{m}[p,x] \\
+ & = \frac{\hbar^{2}}{m}
+\end{align}$$
+Then we have:
+$$\sum_{a^{'}}|\bra{a^{''}} x \ket{a^{'}} |^{2}(E_{a^{'}}-E_{a^{''}})- \frac{\hbar^{2}}{2m}$$
+# 5).
