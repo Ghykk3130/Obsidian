@@ -201,7 +201,7 @@ Z & = \int \frac{d\theta d\phi dp_{\theta}dp_{\phi}}{h^{2}} \exp(- \beta H) \\
 ## (b).
 We know that the average is given by:
 $$\begin{align}
-\langle \mu \cos \theta \rangle & = \frac{\int \frac{d\theta d\phi dp_{\theta}dp_{\phi}}{h^{2}}\exp(-\beta H)\mu \cos \theta}{\int \frac{d\theta d\phi dp_{\theta}dp_{\phi}}{h^{2}}}\exp(-\beta H)
+\langle \mu \cos \theta \rangle & = \frac{\int \frac{d\theta d\phi dp_{\theta}dp_{\phi}}{h^{2}}\exp(-\beta H)\mu \cos \theta}{\int \frac{d\theta d\phi dp_{\theta}dp_{\phi}}{h^{2}}\exp(-\beta H)}
 \end{align}$$
 The reason why we didn't write out other degrees of freedom is because all degrees of freedom that are not related to $\theta,\phi$ would be factor out in the integral, and cancel exactly for they both appear in the numerator and denominator.
 
@@ -259,12 +259,17 @@ U  & \approx \frac{2}{\beta}-\mu\epsilon \cdot \frac{1}{\beta \mu\epsilon}\left(
  & = \frac{1}{\beta}+ \frac{1}{3}\beta \mu^{2}\epsilon^{2} \\
  & \approx \frac{1}{\beta}=kT
 \end{align}$$
+The high temperature limit makes sense, because this is consistent with the equipartition theorem. We have two rotational degrees of freedom, and each of them contributes $kT$ to the internal energy.
+
 As $T\rightarrow 0,\beta\rightarrow \infty$, I have:
 $$\begin{align}
 \frac{2}{\beta}\rightarrow 0, \coth(\beta \mu\epsilon)\rightarrow {1}
 \end{align} $$
 So:
 $$U\rightarrow-\mu\epsilon$$
+Or without ignoring the $\mathcal{O}(T)$ term, I have:
+$$U \approx 2kT-\mu\epsilon$$
+This also makes sense, because at low $T$, the Boltzmann factor $e^{-\beta E}$ would heavily favor $E$ that are more negative. We know that the lowest possible energy of this configuration is that $H=-\mu\epsilon$, which means that the dipole is aligned with the field, and there is no rotation. Then this state would dominate and contribute most in the ensemble. 
 ## (e).
 I have:
 $$\begin{align}
