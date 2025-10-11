@@ -36,7 +36,7 @@ $$\begin{align}
 There is also another constraint:
 $$\begin{align}
 \frac{d}{dt}S_{Hx}= \frac{eB}{m}S_{Hy} & \implies i \frac{eB}{m}A\exp\left( i \frac{eB}{m}t \right)- i \frac{eB}{m}B^{'}\exp\left( -i \frac{eB}{m}t \right)=  \frac{eB}{m} \left(C\exp\left(  i \frac{eB}{m}t \right)+D \exp\left( -i \frac{eB}{m}t \right)\right) \\
- \text{linear indepent} &  \implies \left\{\begin{aligned}
+ \text{linearly indepent} &  \implies \left\{\begin{aligned}
  & i A=C \\
  & -i B^{'}=D
 \end{aligned} \right.
