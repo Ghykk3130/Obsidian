@@ -167,12 +167,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "统计力学的数学基础.md",
+                "file": "Homework/Physics 511 Homework 5.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "统计力学的数学基础"
+              "title": "Physics 511 Homework 5"
             }
           }
         ],
@@ -334,6 +334,7 @@
   },
   "active": "47e5521160371fc9",
   "lastOpenFiles": [
+    "统计力学的数学基础.md",
     "Homework/Physics 511 Homework 5.md",
     "Homework/Physics 510 Homework 6.md",
     "Pictures/heat_capacitance (3).png",
@@ -354,7 +355,6 @@
     "Hamilton原理与Lagrange方程.md",
     "Schrodinger's and Heisenberg's pictures.md",
     "Homework/Physics 511 Homework 4.md",
-    "统计力学的数学基础.md",
     "Untitled.md",
     "Pictures/Pasted image 20251005205645.png",
     "Pictures/Pasted image 20251005205341.png",

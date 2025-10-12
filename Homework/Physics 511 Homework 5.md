@@ -1,5 +1,5 @@
 # 1).
-Know that the Hamiltonian is given by:
+Let $e$ be the amount of charge carried by the spin-1/2 particle. Know that the Hamiltonian is given by:
 $$\begin{align}
 H_{H} & = - g \frac{e}{2m}\vec{S}_{H}\cdot \vec{B} \\
  & = - \frac{e}{m} S_{Hz}^{}B
@@ -149,7 +149,7 @@ $$\begin{align}
  & = \frac{\hbar^{2}}{m}
 \end{align}$$
 Then we have:
-$$\sum_{a^{'}}|\bra{a^{''}} x \ket{a^{'}} |^{2}(E_{a^{'}}-E_{a^{''}})- \frac{\hbar^{2}}{2m}$$
+$$\sum_{a^{'}}|\bra{a^{''}} x \ket{a^{'}} |^{2}(E_{a^{'}}-E_{a^{''}})= \frac{\hbar^{2}}{2m}$$
 # 5).
 I have:
 $$\begin{align}
