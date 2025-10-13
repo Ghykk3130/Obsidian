@@ -70,8 +70,10 @@ $$\begin{align}
 >[!Right]
 >$\blacksquare$
 
->[!Corollary 1]
->Let the system have $N$ DOFs. The Hamiltonian is homogeneous to the second order for each variable. Then $\langle H \rangle= \frac{1}{2}NkT$.
+>[!Note] Corollary 1 (equipartition theorem)
+>Let the system have $N$ independent canonical variables. The Hamiltonian is homogeneous to the second order for each variable. Then $\langle H \rangle= \frac{1}{2}NkT$.
+## Remark
+有时，存在$N$个独立的正则坐标也叫做有$N$个自由度。注意这里的自由度和经典力学中不同。经典力学中自由度只计算广义坐标数量。这里的自由度需要算上所有的正则坐标数量。
 ## Proof.
 我们知道：
 $$\left\langle  \eta_{j} \frac{\partial H}{\partial \eta_{j}} \right\rangle= kT\implies \sum_{j} \langle \eta_{j} \frac{\partial H}{\partial \eta_{j}} \rangle=NkT$$
@@ -81,10 +83,12 @@ $$\sum_{j}\left\langle  \eta_{j} \frac{\partial H}{\partial \eta_{j}} \right\ran
 $$\langle H \rangle = \frac{1}{2}NkT$$
 >[!Right]
 >$\blacksquare$
+## Ex:
+考虑一个理想气体，有$N$个粒子。那么一共有$6N$个独立的正则坐标。于是显然：
+$$\langle H \rangle = 3NkT$$
 
-
-
-
+>[!Note] Corollary 2 (virial theorem)
+>Let $\langle T \rangle$
 
 
 
