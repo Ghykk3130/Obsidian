@@ -70,7 +70,35 @@ $$\begin{align}
  & = \delta_{ij} kT
 \end{align}$$
 ### Method 2
+我们选用正则系综。于是：
+$$\begin{align}
+\left\langle  \eta_{i} \frac{\partial H}{\partial \eta_{j}}  \right\rangle & = \frac{\int \frac{d^{6N}\eta}{N!h^{3N}} e^{-\beta H}\eta_{i} \frac{\partial H}{\partial \eta_{j}}}{Z}
+\end{align}$$
+现在，我们想处理积分：
+$$\int_{\mathbb{R}^{6N}} \frac{d^{6N}\eta}{N!h^{3N}} e^{-\beta H} \eta_{i} \frac{\partial H}{\partial \eta_{j}}$$
+我们可能想用derivative trick，但是这好像和通常的derivative trick不一样。
 
+>[!Idea]
+>存在两种derivative trick。
+>- $He^{-\beta H}= - \frac{\partial}{\partial \beta}e^{-\beta H}$。这种比较trivial。
+>- $\frac{\partial H}{\partial \eta_{j}}e^{-\beta H}=- \frac{1}{\beta} \frac{\partial}{\partial \eta_{j}}(-\beta H)e^{-\beta H}=- \frac{1}{\beta} \frac{\partial}{\partial \eta_{j}}e^{-\beta H}$。这种在求正则坐标导数时更常用到。
+
+于是：
+$$\begin{align}
+\int_{\mathbb{R}^{6N}}d^{6N}\eta e^{-\beta H}\eta_{i} \frac{\partial H}{\partial \eta_{j}} & = - \frac{1}{\beta} \int d^{6N}\eta\ \eta_{i}\frac{\partial}{\partial \eta_{j}}e^{-\beta H}
+\end{align}$$
+我们先积$\eta_{j}$。分部积分有：
+$$\begin{align}
+\int_{\mathbb{R}}d \eta_{j}\  \eta_{i} \frac{\partial}{\partial \eta_{j}}e^{-\beta H}  & = \left[ \eta_{i} \frac{\partial}{\partial \eta_{j}} e^{-\beta H}\right]_{-\infty}^{\infty}- \int_{\mathbb{R}} d \eta_{j}  \frac{\partial \eta_{i}}{\partial \eta_{j}}e^{-\beta H} \\
+ & = - \int_{\mathbb{R}} d \eta_{j}  \frac{\partial \eta_{i}}{\partial \eta_{j}}e^{-\beta H} \\
+ & = -\delta_{ij} \int d \eta_{j} e^{-\beta H}
+\end{align}$$
+于是显然
+$$\begin{align}
+\left\langle  \eta_{i} \frac{\partial H}{\partial \eta_{j}}  \right\rangle & = \frac{\int \frac{d^{6N}\eta}{N!h^{3N}} e^{-\beta H}\eta_{i} \frac{\partial H}{\partial \eta_{j}}}{Z} \\ & = \frac{ \frac{1}{\beta}\delta_{ij}Z}{Z} \\
+ & = \frac{1}{\beta}\delta_{ij} \\
+ & = \delta_{ij}kT
+\end{align}$$
 >[!Right]
 >$\blacksquare$
 
@@ -91,9 +119,9 @@ $$\langle H \rangle = \frac{1}{2}NkT$$
 考虑一个理想气体，有$N$个粒子。那么一共有$6N$个独立的正则坐标。于是显然：
 $$\langle H \rangle = 3NkT$$
 
->[!Note] Corollary 2 (virial theorem)
+>[!Note] Corollary 2 (virial theorem in SM)
 >Let $\langle T \rangle$ denote the average kinetic energy of a system. Then:
->$$\bar{T}=  \langle T \rangle= \frac{1}{2} \langle \sum_{i} \vec{r_{i}}\cdot  \vec{F}_{i}\rangle$$
+>$$\bar{T}=  \langle T \rangle= -\frac{1}{2} \langle \sum_{i} \vec{r_{i}}\cdot  \vec{F}_{i}\rangle$$
 >
 >where $i$ is the index for the ith particle.
 ## Proof.
@@ -123,22 +151,47 @@ $$\begin{align}
 $$\langle T \rangle= - \frac{1}{2} \langle \sum \vec{r}_{i} \cdot \vec{F}_{i}\rangle$$
 >[!Right]
 >$\blacksquare$
-## Ex:
-若势能是任何坐标的$-\alpha$阶齐次函数，那么$\langle T \rangle= - \frac{\alpha}{2} \langle V \rangle$。
 
+>[!Note] Theorem 1 (virial theorem in classical mechanics)
+>$$\bar{T}= - \frac{1}{2} \overline{\sum_{i}\vec{r}_{i} \cdot \vec{F}_{i}}$$
+>
+>where $i$ is the index for the ith particle in the system.
+## Proof.
+$$\begin{align}
+\sum_{i} \vec{r}_{i} \cdot \vec{F}_{i} & =\sum \vec{r}_{i} \cdot\dot{\vec{p}}_{i} \\
+ & = \sum \frac{d}{dt}(\vec{r}_{i} \cdot \vec{p}_{i})- \sum  \dot{\vec{r}}_{i} \cdot \vec{p}_{i} \\
+ & = \sum \frac{d}{dt}(m_{i} \vec{r_{i}} \cdot  \dot{\vec{r}}_{i})- \sum \frac{\partial H}{\partial   \vec{p}_{i} }\cdot  \vec{p}_{i} \\
+ & = \sum \frac{d}{dt} \left(  \frac{1}{2}m_{i} |\vec{r}_{i}|^{2} \right)- \sum \frac{\vec{p}_{i}}{m_{i}} \cdot   \vec{p}_{i} \\
+ & = \frac{d}{dt}T- \frac{1}{2}T
+\end{align} \tag{*}$$
+注意到：
+$$\begin{align}
+\overline{ \frac{d}{dt}T} & = \lim_{ t_{0} \to \infty } \frac{1}{t_{0}} \int_{0}^{t_{0}} dt \frac{d}{dt}T \\
+ & = \lim_{ t_{0} \to \infty }  \frac{1}{t_{0}} [T]_{0}^{t_{0}} \\
+ & = 0 
+\end{align}$$
+这是因为动能是有限的，除以一个趋于无穷的$t_{0}$必定为零。接下来将$(*)$两边取时间平均即可。
+>[!Right]
+>$\blacksquare$
+
+>[!Proposition 2]
+If the potential energy is a $-\alpha$ order homogenous function of all the position variables, then
+$$\langle T \rangle= - \frac{\alpha}{2} \langle V \rangle$$
+>
+>or $$\bar{T}= - \frac{\alpha}{2} \bar{V}$$
+## Proof.
 这是因为由欧拉定理，我们有：
 $$\begin{align}
-\sum_{i,j}\left\langle  r_{ij} \frac{\partial V}{\partial r_{ij}} \right\rangle & =-\alpha \langle V \rangle
-\end{align}$$
-而另一方面，我们有：
-$$\begin{align}
-\sum_{i,j} \left\langle  r_{ij} \frac{\partial V}{\partial r_{ij}}  \right\rangle & = -\sum_{i,j} \langle r_{ij}F_{ij} \rangle \\
- & = - \sum_{i}\langle \vec{r}_{i} \cdot \vec{F}_{i}\rangle 
+  \sum_{i} \vec{r}_{i} \cdot \vec{F}_{i}   & = - \sum \vec{r}_{i} \cdot \frac{\partial V}{\partial \vec{r}_{i}} \\
+ & = \alpha V 
 \end{align}$$
 于是便有：
 $$\begin{align}
 \langle T \rangle & = - \frac{\alpha}{2} \langle V \rangle
 \end{align}$$
+对于时间平均同理。
+>[!Right]
+>$\blacksquare$
 
 
 
