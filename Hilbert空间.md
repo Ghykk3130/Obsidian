@@ -36,6 +36,8 @@ $$\begin{align}
 >
 >we call $\mathcal{H}$ a Hilbert space.
 
+
+### ？？？
 而我们又知道，$l^{2}(\mathbb{N},\mathbb{C}) \subset L^{2}(\mathbb{R},\mathbb{C})$。所以，对于$L^{2}(\mathbb{R},\mathbb{C})$中的每个函数$f(x)$，我们可以用[[Hilbert空间^proposition1|proposition 1]]中同样地isomorphism给它强行map到一个矢量。即：
 $$\phi ^{-1}(f(x))=f(x)\ket{x} $$
 我们将所有这些强行map出来的矢量收集在一起，令：
