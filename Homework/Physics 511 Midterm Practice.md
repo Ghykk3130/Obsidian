@@ -65,14 +65,14 @@ e^{- \frac{1}{2}i\omega t} & 0 & 0 & \dots  & \dots \\
  \dots & \dots & \dots & \dots & \dots \\
 \end{pmatrix}$$
 ## c) 
-$$\begin{align}  \ket{\psi(t)} & = 2 \sum \left(  \frac{1}{\sqrt{ 2 }} \right)^n \mathscr{U} \ket{n}  \\
- & = 2 \sum\left(  \frac{1}{\sqrt{ 2 }} \right)^n e^{- i\left( \frac{1}{2}+n \right)\omega t}\ket{n} 
+$$\begin{align}  \ket{\psi(t)} & = \frac{1}{\sqrt{ 2 }} \sum \left(  \frac{1}{\sqrt{ 2 }} \right)^n \mathscr{U} \ket{n}  \\
+ & = \frac{1}{\sqrt{ 2 }} \sum\left(  \frac{1}{\sqrt{ 2 }} \right)^n e^{- i\left( \frac{1}{2}+n \right)\omega t}\ket{n} 
 \end{align}$$
 ## d)
 The expectation value is given by:
 $$\begin{align}
-\langle H \rangle & = \sum_{n,m}\bra{m} 2\left(  \frac{1}{\sqrt{ 2 }} \right)^m e^{i\left(  \frac{1}{2}+m \right)\omega t} H 2 \left(  \frac{1}{\sqrt{ 2 }} \right)^n e^{-i\left(  \frac{1}{2}+n \right)\omega t}\ket{n} \\
- & =  \sum_{n} 4 \cdot \left(  \frac{1}{2} \right)^n \left(  \frac{1}{2}+n \right) \hbar \omega
+\langle H \rangle & = \frac{1}{2} \sum_{n,m}\bra{m} \left(  \frac{1}{\sqrt{ 2 }} \right)^m e^{i\left(  \frac{1}{2}+m \right)\omega t} H  \left(  \frac{1}{\sqrt{ 2 }} \right)^n e^{-i\left(  \frac{1}{2}+n \right)\omega t}\ket{n} \\
+ & =  \sum_{n} \cdot \left(  \frac{1}{2} \right)^{n+1} \left(  \frac{1}{2}+n \right) \hbar \omega
 \end{align}$$
 Note that this does not change with time.
 
