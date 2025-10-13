@@ -1,7 +1,9 @@
 >[!Proposition 1]
->Consider a microcanonical ensemble. Let $\eta_{i}$ be the canonical variable. Then:
+>Let $\eta_{i}$ be the canonical variables. Then:
 >$$\langle \eta_{i} \frac{\partial H}{\partial \eta_{j}} \rangle= \delta_{ij}kT$$
 ## Proof.
+### Method 1
+
 我们采取微正则系综的近似。我们稍稍拓展一下等能量面，然后最后取热力学极限。我们有：
 $$\begin{align}
 \left\langle  \eta_{i} \frac{\partial H}{\partial \eta_{j}} \right\rangle = & \frac{\int_{E<H<E+\Delta E} \frac{d^{6N}\eta}{N!h^{3N}} \ \eta_{i} \frac{\partial H}{\partial \eta_{j}}}{\int_{E<H<E+\Delta E} \frac{d^{6N}\eta}{N!h^{3N}} } \\
@@ -67,6 +69,8 @@ $$\begin{align}
  & = \delta_{ij} \frac{k}{ \frac{\partial S}{\partial E}} \\
  & = \delta_{ij} kT
 \end{align}$$
+### Method 2
+
 >[!Right]
 >$\blacksquare$
 
@@ -88,7 +92,55 @@ $$\langle H \rangle = \frac{1}{2}NkT$$
 $$\langle H \rangle = 3NkT$$
 
 >[!Note] Corollary 2 (virial theorem)
->Let $\langle T \rangle$
+>Let $\langle T \rangle$ denote the average kinetic energy of a system. Then:
+>$$\bar{T}=  \langle T \rangle= \frac{1}{2} \langle \sum_{i} \vec{r_{i}}\cdot  \vec{F}_{i}\rangle$$
+>
+>where $i$ is the index for the ith particle.
+## Proof.
+首先由于ergodic hypothesis，我们有：
+$$\bar{T}=\langle T \rangle$$
+设粒子数为$N$。选取每个粒子的Cartesian坐标，及其conjugate momentum作为正则坐标。一方面，我们知道：
+$$\begin{align}
+\left\langle  p_{ij} \frac{\partial H}{\partial p_{ij}} \right\rangle &= \langle p_{ij} \frac{p_{ij}}{m_{i}} \rangle = kT
+\end{align}$$
+其中，$i$为第i个粒子 的index，$j$为第i个粒子第j个分量的index。
+
+那么：
+$$\begin{align}
+\langle T \rangle & = \sum_{i,j} \left\langle  \frac{p_{ij}^{2}}{2m_{i}}  \right\rangle \\
+ & = \frac{3}{2} NkT
+\end{align}$$
+另一方面：
+$$\langle r_{ij} \frac{\partial H}{\partial r_{ij}}\rangle= kT$$
+那么：
+$$\begin{align}
+\sum_{i,j}r_{ij} \frac{\partial H}{\partial r_{ij}} & = \sum_{} r_{ij} \frac{\partial V}{\partial r_{ij}} \\
+ & = -\sum r_{ij}F_{ij} \\
+ & = -\sum \vec{r}_{i} \cdot \vec{F_{i}}  \\
+ \implies \sum\left\langle \vec{r}_{i} \cdot \vec{F}_{i}  \right\rangle & = -3NkT 
+\end{align}$$
+那么显然：
+$$\langle T \rangle= - \frac{1}{2} \langle \sum \vec{r}_{i} \cdot \vec{F}_{i}\rangle$$
+>[!Right]
+>$\blacksquare$
+## Ex:
+若势能是任何坐标的$-\alpha$阶齐次函数，那么$\langle T \rangle= - \frac{\alpha}{2} \langle V \rangle$。
+
+这是因为由欧拉定理，我们有：
+$$\begin{align}
+\sum_{i,j}\left\langle  r_{ij} \frac{\partial V}{\partial r_{ij}} \right\rangle & =-\alpha \langle V \rangle
+\end{align}$$
+而另一方面，我们有：
+$$\begin{align}
+\sum_{i,j} \left\langle  r_{ij} \frac{\partial V}{\partial r_{ij}}  \right\rangle & = -\sum_{i,j} \langle r_{ij}F_{ij} \rangle \\
+ & = - \sum_{i}\langle \vec{r}_{i} \cdot \vec{F}_{i}\rangle 
+\end{align}$$
+于是便有：
+$$\begin{align}
+\langle T \rangle & = - \frac{\alpha}{2} \langle V \rangle
+\end{align}$$
+
+
 
 
 
