@@ -79,8 +79,13 @@ $$\begin{align}
  & = \frac{1}{Z}\int \frac{d^{3N}qd^{3N}p }{N!h^{3h}}\exp\left( -\beta \sum_{i} \frac{p_{i}^{2}}{2m} \right) \sum_{\text{all permutations}}\frac{\partial}{\partial(B\beta)}\exp\left( \beta \mu B\sum S_{z}^i \right)  \\
  & = \frac{1}{Z} \frac{\partial}{\partial(B\beta)} \int \frac{d^{3N}qd^{3N}p }{N!h^{3h}}\exp\left( -\beta \sum_{i} \frac{p_{i}^{2}}{2m} \right) \sum_{\text{all permutations}}\exp\left( \beta \mu B\sum S_{z}^i \right) \\
  & = \frac{1}{Z} \frac{\partial}{\partial (B\beta)}Z \\
- & = \frac{1}{B} \frac{\partial}{\partial \beta}\ln Z
+ & = \frac{\partial}{\partial (B\beta)}\ln Z \\
+ & = \left(  \frac{\partial(B\beta)}{\partial \ln Z} \right)^{-1} \\
+ & = \left(  \beta\frac{\partial B}{\partial \ln Z}+B \frac{\partial \beta}{\partial \ln Z} \right)^{-1} \\
+ & = \left( \beta\left(  \frac{\partial \ln Z}{\partial B} \right)^{-1}+B \left(  \frac{\partial \ln Z}{\partial \beta} \right)^{-1} \right)^{-1}
 \end{align}$$
+Know that:
+$$\frac{\partial \ln Z}{\partial B}=$$
 Then we have:
 $$\begin{align}
 \langle M \rangle & = \frac{1}{B} \frac{\partial}{\partial \beta}\ln Z \\
