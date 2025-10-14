@@ -19,3 +19,71 @@ U & = \frac{1}{2} \frac{1}{\beta}- \frac{\partial}{\partial \beta}\ln\left( \int
  & = \frac{1}{2}kT+U_{I}\text{, where }U_{I}= - \frac{\partial}{\partial \beta}\ln\left( \int d^Ny\exp(-\beta H_{I}) \right)
 \end{align}$$
 # 2.
+## (a)
+To calculate the partition function, need to calculate:
+$$\begin{align}
+\int d^{3N}qd^{3N}p \sum_{\text{all permutations of }\{ S_{z}^i \}_{i}} \exp(-\beta H) & =\int d^{3N}qd^{3N}p \exp\left( -\beta \sum_{i} \frac{p_{i}^{2}}{2m} \right) \sum_{\text{all permutations of }\{ S_{z}^i \}_{i}}\exp\left(  \beta \mu B\sum_{i}S_{z}^i \right)
+\end{align}$$
+Here $i$ is the index for the ith particle. 
+
+We find:
+$$\begin{align}
+\int d^{3N}qd^{3N}p\exp\left( -\beta \sum_{i} \frac{p_{i}^{2}}{2m} \right) & =\left( \int d^{3N}q \right) \int d^{3N}p\exp\left( -\beta \sum \frac{p_{i}^{2}}{2m} \right) \\
+ & = L^{3N}\int d^{3N}p\exp\left( -\beta \sum \frac{p_{i}^{2}}{2m} \right)
+\end{align}$$
+We change the variables. Let the volume measure be rewritten:
+$$d^{3N}p=dSdR$$
+Set $R^{2}=\sum_{i}p_{i}^{2}$. Then:
+$$\begin{align}
+\int d^{3N}p\exp\left( -\beta \sum \frac{p_{i}^{2}}{2m} \right) & = \int_{0}^{\infty}dR \exp\left( - \frac{\beta}{2m}R^{2} \right)\int dS \\
+ & = \int dR \exp\left( - \frac{\beta}{2m} R^{2}\right)S \\
+ & = \int dR \exp\left( - \frac{\beta}{2m} R^{2}\right) \frac{2\pi^{3N/2}}{\Gamma\left(  \frac{3N}{2} \right)}R^{3N-1} \\
+ & = \frac{2\pi^{3N/2}}{\Gamma\left(  \frac{3N}{2} \right)} \left(  \frac{2m}{\beta} \right)^{3N/2} \int dyy^{3N-1}\exp(-y^{2})\text{, where }y= \sqrt{ \frac{\beta}{2m} }R \\
+ & = \frac{2\pi^{3N/2}}{\Gamma\left(  \frac{3N}{2} \right)}\left(  \frac{2m}{\beta} \right)^{3N/2} \frac{1}{2}\int dy^{2}(y^{2})^{3N/2-1} \exp(-y^{2}) \\
+ & = \frac{\pi^{3N/2}}{\Gamma\left(  \frac{3N}{2} \right)}\left(  \frac{2m}{\beta} \right)^{3N/2}\Gamma\left(  \frac{3N}{2} \right) \\
+ & = \left(  \frac{2\pi m}{\beta} \right)^{3N/2}
+\end{align}$$
+Now study:
+$$\begin{align}
+\sum_{\text{all permutations of }\{ S_{z}^i \}_{i}}\exp\left( \beta \mu B\sum_{i}S_{z}^i \right) & = \sum_{S_{z}^i\in \{ -1,0,1 \}}\exp(\beta \mu BS_{z}^i)\dots\sum_{S_{z}^i\in \{ -1,0,1 \}}\exp(\beta \mu BS_{z}^i) \\
+ & = \left(\sum_{S_{z}^i\in \{ -1,0,1 \}}\exp(\beta \mu BS_{z}^i)\right)^{N} \\
+ & = (\exp(\beta \mu B)+\exp(-\beta \mu B)+1)^N \\
+ & = (2\cosh(\beta \mu B)+1)^N
+\end{align}$$
+Therefore:
+$$\begin{align}
+\int d^{3N}qd^{3N}p \sum_{\text{all permutations of }\{ S_{z}^i \}_{i}} \exp(-\beta H) & =L^{3N}\left(  \frac{2\pi m}{\beta} \right)^{3N/2}(2\cosh(\beta \mu B)+1)^N \\
+ & =V^{N}\left(  \frac{2\pi m}{\beta} \right)^{3N/2}(2\cosh(\beta \mu B)+1)^N
+\end{align}$$
+Therefore, the partition function is:
+$$\begin{align}
+Z & = \frac{1}{N! h^{3N}}V^{N}\left(  \frac{2\pi m}{\beta} \right)^{3N/2}(2\cosh(\beta \mu B)+1)^N
+\end{align}$$
+## (b)
+Choose a specific molecule. Consider the marginal distribution obtained from integration:
+$$\begin{align}
+Prob(\text{ the ith molecule is in state }S_{z}^i) & = \frac{1}{Z}\int \frac{d^{3N}qd^{3N}p}{N!h^{3N}}\sum_{\text{all permutations of }\{ S_{z}^i \}_{i}\text{ except for the chosen particle}} \exp(-\beta H) \\
+ & = \frac{1}{Z} \frac{1}{N!h^{3N}}V^{N}\left(  \frac{2\pi m}{\beta} \right)^{3N/2}(2\cosh(\beta \mu B)+1)^{N-1} \exp(\beta \mu BS_{z}^i) \\
+ & = \frac{\exp(\beta \mu BS_{z}^i)}{2\cosh(\beta \mu B)+1}
+\end{align}$$
+So:
+$$\begin{align}
+ & Prob(\text{ the ith molecule is in state }S_{z}^i=1)= \frac{\exp(\beta \mu B)}{2\cosh(\beta \mu B)+1} \\
+ & Prob(\text{ the ith molecule is in state }S_{z}^i=0)= \frac{1}{2\cosh(\beta \mu B)+1} \\
+ & Prob(\text{ the ith molecule is in state }S_{z}^i=-1)= \frac{\exp(-\beta \mu B)}{2\cosh(\beta \mu B)+1}
+\end{align}$$
+## (c)
+We know that:
+$$\begin{align}
+\langle M \rangle & = \frac{1}{Z}\int \frac{d^{3N}qd^{3N}p }{N!h^{3h}}\exp\left( -\beta \sum_{i} \frac{p_{i}^{2}}{2m} \right)\sum_{\text{all permutations}}\exp\left( \beta \mu B\sum_{i} S_{z}^i \right)\mu \sum_{i}S_{z}^i \\
+ & = \frac{1}{Z}\int \frac{d^{3N}qd^{3N}p }{N!h^{3h}}\exp\left( -\beta \sum_{i} \frac{p_{i}^{2}}{2m} \right) \sum_{\text{all permutations}}\frac{\partial}{\partial(B\beta)}\exp\left( \beta \mu B\sum S_{z}^i \right)  \\
+ & = \frac{1}{Z} \frac{\partial}{\partial(B\beta)} \int \frac{d^{3N}qd^{3N}p }{N!h^{3h}}\exp\left( -\beta \sum_{i} \frac{p_{i}^{2}}{2m} \right) \sum_{\text{all permutations}}\exp\left( \beta \mu B\sum S_{z}^i \right) \\
+ & = \frac{1}{Z} \frac{\partial}{\partial (B\beta)}Z \\
+ & = \frac{1}{B} \frac{\partial}{\partial \beta}\ln Z
+\end{align}$$
+Then we have:
+$$\begin{align}
+\langle M \rangle & = \frac{1}{B} \frac{\partial}{\partial \beta}\ln Z \\
+ & = \frac{1}{B}\left(  - \frac{3N}{2} \frac{1}{\beta}+ N \frac{2\mu B\sinh(\beta \mu B)}{2\cosh(\beta \mu B)+1} \right) \\
+ & = - \frac{3N}{2} \frac{1}{B\beta}+ N \frac{2\mu \sinh(\beta \mu B)}{2\cosh(\beta \mu B)+1}
+\end{align}$$
