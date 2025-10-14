@@ -76,19 +76,29 @@ $$\begin{align}
 We know that:
 $$\begin{align}
 \langle M \rangle & = \frac{1}{Z}\int \frac{d^{3N}qd^{3N}p }{N!h^{3h}}\exp\left( -\beta \sum_{i} \frac{p_{i}^{2}}{2m} \right)\sum_{\text{all permutations}}\exp\left( \beta \mu B\sum_{i} S_{z}^i \right)\mu \sum_{i}S_{z}^i \\
- & = \frac{1}{Z}\int \frac{d^{3N}qd^{3N}p }{N!h^{3h}}\exp\left( -\beta \sum_{i} \frac{p_{i}^{2}}{2m} \right) \sum_{\text{all permutations}}\frac{\partial}{\partial(B\beta)}\exp\left( \beta \mu B\sum S_{z}^i \right)  \\
- & = \frac{1}{Z} \frac{\partial}{\partial(B\beta)} \int \frac{d^{3N}qd^{3N}p }{N!h^{3h}}\exp\left( -\beta \sum_{i} \frac{p_{i}^{2}}{2m} \right) \sum_{\text{all permutations}}\exp\left( \beta \mu B\sum S_{z}^i \right) \\
- & = \frac{1}{Z} \frac{\partial}{\partial (B\beta)}Z \\
- & = \frac{\partial}{\partial (B\beta)}\ln Z \\
- & = \left(  \frac{\partial(B\beta)}{\partial \ln Z} \right)^{-1} \\
- & = \left(  \beta\frac{\partial B}{\partial \ln Z}+B \frac{\partial \beta}{\partial \ln Z} \right)^{-1} \\
- & = \left( \beta\left(  \frac{\partial \ln Z}{\partial B} \right)^{-1}+B \left(  \frac{\partial \ln Z}{\partial \beta} \right)^{-1} \right)^{-1}
+ & = \frac{1}{Z}\int \frac{d^{3N}qd^{3N}p }{N!h^{3h}}\exp\left( -\beta \sum_{i} \frac{p_{i}^{2}}{2m} \right) \sum_{\text{all permutations}} \frac{1}{\beta} \frac{\partial}{\partial B}\exp\left( \beta \mu B\sum S_{z}^i \right)  \\
+ & = \frac{1}{Z} \frac{1}{\beta} \frac{\partial}{\partial B} \int \frac{d^{3N}qd^{3N}p }{N!h^{3h}}\exp\left( -\beta \sum_{i} \frac{p_{i}^{2}}{2m} \right) \sum_{\text{all permutations}}\exp\left( \beta \mu B\sum S_{z}^i \right) \\
+ & = \frac{1}{Z} \frac{1}{\beta} \frac{\partial}{\partial B }Z \\
+ & = \frac{1}{\beta} \frac{\partial}{\partial B}\ln Z
 \end{align}$$
-Know that:
-$$\frac{\partial \ln Z}{\partial B}=$$
 Then we have:
 $$\begin{align}
-\langle M \rangle & = \frac{1}{B} \frac{\partial}{\partial \beta}\ln Z \\
- & = \frac{1}{B}\left(  - \frac{3N}{2} \frac{1}{\beta}+ N \frac{2\mu B\sinh(\beta \mu B)}{2\cosh(\beta \mu B)+1} \right) \\
- & = - \frac{3N}{2} \frac{1}{B\beta}+ N \frac{2\mu \sinh(\beta \mu B)}{2\cosh(\beta \mu B)+1}
+\langle M \rangle & = N \frac{2\mu \sinh(\beta \mu B)}{2\cosh(\beta \mu B)+1}
 \end{align}$$
+
+## (d)
+First study the approximation:
+$$\begin{align}
+\frac{2\sinh x}{2\cosh x+1} & \approx \frac{2\left( x+ \frac{x^{3}}{3!}+ \frac{x^5}{5!} \right)}{2\left( 1+ \frac{x^{2}}{2!}+ \frac{x^4}{4!} \right)+1  } \\
+ & = \frac{2}{3} \frac{x+ \frac{x^{3}}{3!}+ \frac{x^6}{6!} }{1+ \frac{2}{3}\left(  \frac{x^{2}}{2!}+ \frac{x^4}{4!} \right) } \\
+ & \approx \frac{2}{3} \left( x+ \frac{x^{3}}{3!}+ \frac{x^6}{6!} \right)\left( 1- \frac{2}{3}\left(  \frac{x^{2}}{2!}+ \frac{x^4}{4!} \right)+ \frac{4}{9}\left(  \frac{x^{2}}{2!}+ \frac{x^4}{4!} \right)^{2} \right) \\
+ & \approx \frac{2}{3}x
+\end{align}$$
+So at low field, I have:
+$$\begin{align}
+\langle M \rangle  & \approx N\mu \cdot \frac{2}{3} \beta \mu B
+\end{align}$$
+So the zero field susceptibility is:
+$$\chi= \frac{2}{3}N\beta \mu^{2}= \frac{2}{3} \frac{N\mu^{2}}{kT}$$
+# 3. 
+## (a)
