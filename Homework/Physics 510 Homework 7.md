@@ -102,3 +102,32 @@ So the zero field susceptibility is:
 $$\chi= \frac{2}{3}N\beta \mu^{2}= \frac{2}{3} \frac{N\mu^{2}}{kT}$$
 # 3. 
 ## (a)
+In general, a 2-dimensional Fourier series is given by:
+$$\sum_{n=0}^{\infty}\sum_{m=0}^{\infty}\left( a_{nm}\sin\left(  \frac{n\pi x}{L} \right) \sin\left(  \frac{m \pi y }{L} \right)+b_{nm}\cos\left(  \frac{n\pi x}{L} \right)\cos\left(  \frac{m\pi y}{L} \right)+c_{nm} \sin\left(  \frac{n\pi x}{L} \right)\cos\left(  \frac{m\pi y}{L} \right) +d_{nm}\cos\left(  \frac{n\pi x}{L} \right)\sin \left(  \frac{m\pi y}{L} \right)\right)$$
+Now since the boundary condition requires that $h(\partial[0,L]^{2},t)=0$, I the spatial part of $h$ must be given by:
+$$\sum_{n,m} a_{nm} \sin\left(  \frac{n\pi x}{L} \right)\sin\left(  \frac{m\pi y}{L} \right)+\sum_{n,m} c_{nm}\sin\left(  \frac{n\pi x}{L} \right)\cos\left(  \frac{m\pi y}{L} \right)+ \sum_{n,m}d_{nm}\cos\left(  \frac{n\pi x}{L} \right)\sin\left(  \frac{m\pi y}{L} \right)$$
+Let the time dependence of $h$ be $g(t)$. Then:
+$$h(x,y,t)=g(t)\sum_{n,m} \left(a_{nm}\sin\left(  \frac{n\pi x}{L} \right)\sin\left(  \frac{m\pi y}{L} \right)+c_{nm}\sin\left( \frac{n\pi x}{L} \right)\cos\left(  \frac{m\pi y}{L} \right)+ d_{nm}\cos\left(  \frac{n\pi x}{L} \right)\sin\left(  \frac{m\pi y}{L} \right)\right)$$
+## (b)
+It's obvious that by orthogonality, I have:
+$$\begin{align}
+\int dxdyh^{2} & = g^{2}(t)\int dxdy \sum_{n,m}\left( a_{nm}^{2}\sin ^{2}\left(  \frac{n\pi x}{L} \right)\sin ^{2}\left(  \frac{m\pi y}{L} \right)+c_{nm}^{2}\sin ^{2}\left(  \frac{n\pi x}{L} \right)\cos ^{2}\left(  \frac{m\pi y}{L} \right)+d_{nm}^{2}\cos ^{2}\left(  \frac{n\pi x}{L} \right)\sin ^{2}\left(  \frac{m\pi y}{L} \right) \right) \\
+ & = g^{2}(t)\left( \frac{L}{2} \right)^{2}\sum_{n,m}(a_{nm}^{2}+c_{nm}^{2}+d_{nm}^{2})
+\end{align}$$
+So:
+$$\overline{h^{2}}= \frac{1}{L^{2}}\int dxdyh^{2}= \frac{1}{4}g^{2}(t)\sum_{n,m}(a_{nm}^{2}+c_{nm}^{2}+d_{nm}^{2})$$
+## (c)
+We know that:
+$$\nabla^{2}h=g(t)\sum_{n,m} ( n^{2}+m^{2})\left( a_{nm}\sin\left(  \frac{n\pi x}{L} \right)\sin\left(  \frac{m\pi y}{L} \right) +c_{nm}\sin\left(  \frac{n\pi x}{L} \right)\cos\left(  \frac{m\pi y}{L} \right)+d_{nm}\cos\left(  \frac{n\pi x}{L} \right)\sin\left(  \frac{m\pi y}{L} \right)\right)$$
+Then, I have:
+$$\begin{align}
+H & =\int dxdy \kappa(\nabla^{2}h)^{2} \\
+ & = \int dxdy \kappa g^{2}(t)\left(  \frac{\pi}{L} \right)^4 \left( \sum_{n,m} ( n^{2}+m^{2})\left( a_{nm}\sin\left(  \frac{n\pi x}{L} \right)\sin\left(  \frac{m\pi y}{L} \right) +c_{nm}\sin\left(  \frac{n\pi x}{L} \right)\cos\left(  \frac{m\pi y}{L} \right)+d_{nm}\cos\left(  \frac{n\pi x}{L} \right)\sin\left(  \frac{m\pi y}{L} \right)\right) \right)^{2}
+\end{align}$$
+By orthogonality, I obtain:
+$$\begin{align}
+H & =\int dxdy\kappa g^{2}(t)\left(  \frac{\pi}{L} \right)^4 \sum_{n,m}(n^{2}+m^{2})^{2}\left(  a_{nm}^{2}\sin ^{2}\left(  \frac{n\pi x}{L} \right)\sin ^{2}\left(  \frac{m\pi y}{L} \right)+c_{nm}^{2}\sin ^{2}\left(  \frac{n\pi x}{L} \right)\cos ^{2}\left(  \frac{m\pi y}{L} \right)+d_{nm}^{2}\cos ^{2}\left(  \frac{n\pi x}{L} \right)\sin ^{2}\left(  \frac{m\pi y}{L} \right) \right) \\
+ & =\kappa g^{2}(t)\left(  \frac{\pi}{L} \right)^4  \sum_{n,m}(n^{2}+m^{2})^{2} \cdot\left(  \frac{L}{2} \right)^{2}(a_{nm}^{2}+c_{nm}^{2}+d_{nm}^{2}) \\
+ & = \kappa g^{2}(t) \frac{\pi^4}{4L^{2}}\sum_{n,m}(n^{2}+m^{2})^{2}(a_{nm}^{2}+c_{nm}^{2}+d_{nm}^{2})
+\end{align}$$
+
