@@ -11,12 +11,7 @@ $$[C,Q]=2qC$$
 Similarly, easy to show:
 $$\{ C,Q \}=0$$
 ## b)
-Clam that $\ket{\psi_{q}}$ with $q\neq 0$ cannot be an eigenstate of $C$. Since:
-$$Q\ket{\psi_{q}} =q\ket{\psi_{q}} ,Q\ket{\psi_{-q}}=-q\ket{\psi_{-q}}  $$
-meaning that $\ket{\psi_{q}},\ket{\psi_{-q}}$ are linearly independent. Thus it's not possible to formulate:
-$$C\ket{\psi_{q}} =\ket{\psi_{-q}}=\ket{\psi_{q}}  $$
-Easy to show that $\ket{\psi_{0}}$ is an eigenstate. Then this is the only eigenstate. 
-
+Claim that the common eigenvectors are $\frac{1}{\sqrt{ 2 }}\ket{\psi_{q}}+ \frac{1}{\sqrt{ 2 }}\ket{\psi_{{-q}}}$
 # L1
 ## a)
 Eve would get $\frac{\hbar}{2}$ with probability $\cos ^{2} \frac{\theta}{2}$, $-\frac{\hbar}{2}$ with probability $\sin ^{2} \frac{\theta}{2}$.
@@ -81,3 +76,5 @@ The state $\ket{\psi(t)}$ is not an eigenstate of $H$.
 $\langle x \rangle$ should not be time-independent. The reason why $\langle H \rangle$ is time independent is because during the time evolution, each eigensubspace is non-degenerate. Each ket $\ket{n}$ just rotate a little bit, without jumping to other eigensubspaces. Then the expectation value would stay the same.
 
 But during the time evolution, $\ket{n}$ would swept across multiple eigensubspaces of $x$, because $[x,H]\neq 0$. Then the component pickup for each eigencomponent constantly changes with time, leading to a time-dependent expectation value. 
+
+

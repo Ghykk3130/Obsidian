@@ -149,3 +149,7 @@ $$ 0\leq \frac{n\pi}{L} \leq \frac{2\pi}{a}, 0 \leq \frac{m\pi}{L} \leq \frac{2\
 Therefore we must have some upper bounds on $n,m$
 
 # 4.
+## (a)
+$\epsilon_{0}$ cannot be removed, since the number of particles in contact with the surface is not fixed. If we remove $\epsilon_{0}$, that means that we choose a floating origin for the energy, which is meaningless.
+
+## (b)

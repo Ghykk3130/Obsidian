@@ -223,12 +223,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Homework/Physics 510 Homework 6.md",
+                "file": "Homework/Physics 510 Homework 7.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Physics 510 Homework 6"
+              "title": "Physics 510 Homework 7"
             }
           }
         ],
@@ -390,9 +390,12 @@
   },
   "active": "67624db040d7c65f",
   "lastOpenFiles": [
+    "Homework/Physics 510 Homework 5.md",
+    "Homework/Physics 510 Homework 6.md",
+    "Homework/Physics 511 Homework 0.md",
     "Homework/Physics 510 Homework 7.md",
-    "一维Acoustic wave的量子化.md",
     "Homework/Physics 511 Midterm Practice.md",
+    "一维Acoustic wave的量子化.md",
     "Homework/Physics 511 Homework 5.md",
     "气体分子的能量与自由度.md",
     "能均分定理，virial定理.md",
@@ -407,16 +410,13 @@
     "时间演化.md",
     "Hilbert空间.md",
     "Hamilton原理与Lagrange方程.md",
-    "Homework/Physics 510 Homework 6.md",
     "Pictures/heat_capacitance (3).png",
     "Experimental/Evaporator.md",
     "Experimental/Cold amplifier.md",
     "电流与电荷.md",
     "热力学第一定律.md",
     "N维球.md",
-    "Homework/Physics 510 Homework 5.md",
     "系综（未完成）.md",
-    "张量分析.md",
     "Pictures/Pasted image 20251005205645.png",
     "Pictures/Pasted image 20251005205341.png",
     "Pictures/Pasted image 20251005205111.png",
