@@ -153,3 +153,4 @@ Therefore we must have some upper bounds on $n,m$
 $\epsilon_{0}$ cannot be removed, since the number of particles in contact with the surface is not fixed. If we remove $\epsilon_{0}$, that means that we choose a floating origin for the energy, which is meaningless.
 
 ## (b)
+ 
