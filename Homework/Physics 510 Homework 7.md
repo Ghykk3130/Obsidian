@@ -139,6 +139,11 @@ $$\langle a_{nm}^{2} \rangle= 2 (n^{2}+m^{2})^{-2} \frac{kTL^{2}}{\kappa g^{2}(t
 Therefore:
 $$\begin{align}
 \langle \overline{h^{2}}\rangle & = \frac{1}{4}g^{2}(t)\sum_{n,m}\langle a_{nm}^{2}\rangle \\
- & = \frac{1}{2} \frac{kTL^{2}}{\kappa \pi^4}\sum_{n,m} \frac{1}{(n^{2}+m^{2})^{2}}
+ & = \frac{1}{2} \frac{kTL^{2}}{\kappa \pi^4}\sum_{n,m=1}^{\infty} \frac{1}{(n^{2}+m^{2})^{2}}
 \end{align}$$
+## (e)
+From $(d)$, I know that:
+$$\langle E \rangle= \kappa g^{2}(t) \frac{\pi^4}{4L^{2}}\sum_{n,m} (n^{2}+m^{2})^{2}\langle a_{nm}^{2}\rangle= \sum_{n,m} \frac{1}{2}kT$$
+However, this number diverges. We resolve this by claiming that the sum can not be taken to infinity. Imagine there is some periodic lattice structure inside the membrane. Then only the wavevectors inside the first Brillouin zone are taken in the sum. If the 2-d unit cell has lengths $a \times b$, then must require:
+$$ \leq \frac{n\pi}{L}$$
 
