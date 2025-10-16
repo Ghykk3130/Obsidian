@@ -237,16 +237,30 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Homework/Physics 511 Cheat sheet.md",
+                "file": "转动生成元.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Physics 511 Cheat sheet"
+              "title": "转动生成元"
+            }
+          },
+          {
+            "id": "18ae571ff538f3a8",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "平动生成元.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "平动生成元"
             }
           }
         ],
-        "currentTab": 16
+        "currentTab": 17
       }
     ],
     "direction": "vertical"
@@ -303,8 +317,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200,
-    "collapsed": true
+    "width": 200
   },
   "right": {
     "id": "9003d078f8dbc4ed",
@@ -402,12 +415,14 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "5a9d111c5004547c",
+  "active": "18ae571ff538f3a8",
   "lastOpenFiles": [
+    "转动生成元.md",
+    "平动生成元.md",
+    "Homework/Physics 511 Cheat sheet.md",
     "Homework/Physics 511 Midterm Practice.md",
     "Homework/Physics 510 Homework 7.md",
     "Schrodinger's and Heisenberg's pictures.md",
-    "Homework/Physics 511 Cheat sheet.md",
     "正规矩阵的对角化.md",
     "Homework/Physics 511 Homework 4.md",
     "时间演化.md",
@@ -428,8 +443,6 @@
     "相对论电动力学.md",
     "统计力学的数学基础.md",
     "系综.md",
-    "Hilbert空间.md",
-    "Hamilton原理与Lagrange方程.md",
     "Pictures/heat_capacitance (3).png",
     "Pictures/Pasted image 20251005205645.png",
     "Pictures/Pasted image 20251005205341.png",
