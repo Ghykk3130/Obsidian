@@ -26,7 +26,7 @@ $$X^{(H)}(t,t_{0})=\mathscr{U}^{^{\dagger}}(t,t_{0})X^{(S)}\mathscr{U}(t,t_{0})$
 
 >[!Definition 1]
 >Let $X^{S}$ be an observable in Schrodinger's picture. Let $\mathscr{U}(t,t_{0})$ be the time evolution operator calculated Using $H^{(S)}$. Then define:
->$$X^{(H)}=\mathscr{U}^{\dagger}X^S\mathscr{U}$$
+>$$X^{(H)}=\mathscr{U}^{\dagger}X^{(S)}\mathscr{U}$$
 
 在$H^{(S)}$不存在time dependence时，显然time evolution operator只取决于time interval长度，不取决于起始时间。于是有时我们直接写$\mathscr{U}(t),X^{(H)}(t)$
 ## Ex:
