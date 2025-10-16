@@ -164,7 +164,7 @@ $$\begin{align}
 \end{align}$$
 Also:
 $$\begin{align}
-\int d^{2N}p\exp\left( -\beta \sum \frac{p_{i}^{2}}{2m_{e}}  \right) & =\left( \int_{\mathbb{R}} dp_{1}\exp\left( - \beta\frac{p_{1}^{2}}{2m_{e}} \right)  \right)\dots\left(\left( \int_{\mathbb{R}} dp_{2N}\exp\left( -\beta \frac{p_{2N}^{2}}{2m_{e}} \right)  \right)\right) \\
+\int d^{2N}p\exp\left( -\beta \sum \frac{p_{i}^{2}}{2m_{e}}  \right) & =\left( \int_{\mathbb{R}} dp_{1}\exp\left( - \beta\frac{p_{1}^{2}}{2m_{e}} \right)  \right)\dots\left( \int_{\mathbb{R}} dp_{2N}\exp\left( -\beta \frac{p_{2N}^{2}}{2m_{e}} \right)  \right) \\
  & = \left(  \sqrt{ \frac{2m_{e}}{\beta} } \sqrt{ \pi } \right)^{2N} \\
  & = \left(  \frac{2m_{e}\pi}{\beta} \right)^N
 \end{align}$$
@@ -179,7 +179,8 @@ $$\begin{align}
 \mu & = \left(  \frac{\partial F}{\partial N} \right)_{T,V} \\
  & = - \frac{1}{\beta} \frac{\partial}{\partial N}\ln Z \\
  & = - \frac{1}{\beta} \frac{\partial}{\partial N}\left( N\ln\left(  \frac{2m_{e}\pi L^{2}}{\beta h^{2}} \right) +N\beta\epsilon_{0}-N\ln N+N\right) \\
- & = - \frac{1}{\beta} \ln\left(  \frac{2m_{e}\pi L^{2}}{\beta h^{2}} \right)- \epsilon_{0}
+ & = - \frac{1}{\beta} \ln\left(  \frac{2m_{e}\pi L^{2}}{\beta h^{2}} \right)+ \frac{1}{\beta} \ln N- \epsilon_{0} \\
+ & = -\frac{1}{\beta}\ln\left(  \frac{2m_{e}\pi L^{2}}{\beta h^{2}N} \right)-\epsilon_{0}
 \end{align}$$
 ## (c)
 By Boltzmann statistics, the probability that $N$ particles are attached to the surface, with a specific configuration is given by:
@@ -187,13 +188,13 @@ $$Prob(\text{N particles attached with a specific configuration}) \propto \exp(-
 Here by configuration, I mean a specific microstate.
 
 So the probability that $N$ particles are attached to the surface, with all possible configurations is:
-$$Prob(\text{N particles attached})\propto \int d^{2N}qd^{2N}p \frac{1}{h^{2N}}\exp(-\beta H)=Z$$
+$$Prob(\text{N particles attached})\propto \int d^{2N}qd^{2N}p \frac{1}{N!h^{2N}}\exp(-\beta H)=Z$$
 So if I want to find $\langle N \rangle$, I must vary across all possible N's. So:
 $$\begin{align}
 \langle N \rangle  & = \frac{\sum_{N=0}^{\infty}NZ}{\sum_{N=0}^{\infty}Z}
 \end{align}$$
 Observe that:
-$$NZ=N \left(  \frac{2m_{e}\pi L^{2}}{h^{2}\beta} \right)^Ne^{N\beta\epsilon_{0}}= \frac{1}{\beta} \frac{\partial}{\partial\epsilon_{0}}Z$$
+$$NZ=N \frac{1}{N!h^{2N}} \left(  \frac{2m_{e}\pi L^{2}}{h^{2}\beta} \right)^Ne^{N\beta\epsilon_{0}}= \frac{1}{\beta} \frac{\partial}{\partial\epsilon_{0}}Z$$
 So:
 $$\begin{align}
 \langle N \rangle & = \frac{\sum NZ}{\sum Z} \\
@@ -202,7 +203,7 @@ $$\begin{align}
 \end{align}$$
 We compute:
 $$\begin{align}
-\sum_{N=0}^{\infty}Z & = \sum_{N} \left(  \frac{2m_{3}\pi L^{2}}{h^{2}\beta} \right)^{N}e^{2N\beta\epsilon_{0}} \\
+\sum_{N=0}^{\infty}Z & = \frac{1}{h^{2N}} \sum_{N} \frac{1}{N!} \left(  \frac{2m_{e}\pi L^{2}}{h^{2}\beta} \right)^{N}e^{N\beta\epsilon_{0}} \\
  & = \left( 1- \frac{2m_{e}\pi L^{2}}{h^{2}\beta}e^{\beta\epsilon_{0}} \right)^{-1}
 \end{align}$$
 So:
