@@ -8,6 +8,7 @@ VTI cool down:
 - Monitor the temperature of the He bath to ensure:
 	- $T$ is not too high of course
 	- $T$ is not too low such that the atmospheric pressure outweighs the pressure inside the He bath too much. Then air would sneak in.
+Valves: ccw for open, cw for close
 
 Schematic diagram:
 ![[2b3c10da8c8787bcbbc183adc95f5583.jpg|500]]
