@@ -153,4 +153,35 @@ Therefore we must have some upper bounds on $n,m$
 $\epsilon_{0}$ cannot be removed, since the number of particles in contact with the surface is not fixed. If we remove $\epsilon_{0}$, that means that we choose a floating origin for the energy, which is meaningless.
 
 ## (b)
- 
+If the number of particles on the surface is $N$, then the partition function is given by:
+$$\begin{align}
+Z & = \frac{1}{h^{2N}} \int d^{2N}qd^{2N}p \exp(- \beta H) \\
+\end{align}$$
+Know that:
+$$\begin{align}
+\int d^{2N}q & = \left( \int_{0}^Ldq_{1} \right)\dots\left( \int_{0}^Ldq_{2N} \right) \\
+ & =L^{2N}
+\end{align}$$
+Also:
+$$\begin{align}
+\int d^{2N}p\exp(-\beta H) & =\left( \int_{\mathbb{R}} dp_{1}\exp\left( - \beta\frac{p_{1}^{2}}{2m_{e}}+\beta\epsilon_{0} \right)  \right)\dots\left(\left( \int_{\mathbb{R}} dp_{2N}\exp\left( -\beta \frac{p_{2N}^{2}}{2m_{e}}+\beta\epsilon_{0} \right)  \right)\right) \\
+ & = e^{2N\beta\epsilon_{0} }\left(  \sqrt{ \frac{2m_{e}}{\beta} } \sqrt{ \pi } \right)^{2N} \\
+ & = e^{2N\beta\epsilon_{0}} \left(  \frac{2m_{e}\pi}{\beta} \right)^N
+\end{align}$$
+Then:
+$$Z= \frac{1}{h^{2N}}L^{2N}e^{2N\beta\epsilon_{0}}\left(  \frac{2m_{e}\pi}{\beta} \right)^N$$
+Then I have:
+$$\begin{align}
+F & = - \frac{1}{\beta}\ln Z \\
+\end{align}$$
+Therefore:
+$$\begin{align}
+\mu & = \left(  \frac{\partial F}{\partial N} \right)_{T,V} \\
+ & = - \frac{1}{\beta} \frac{\partial}{\partial N}\ln Z \\
+ & = - \frac{1}{\beta} \frac{\partial}{\partial N}\left( N\ln\left(  \frac{2m_{e}\pi L^{2}}{\beta h^{2}} \right) +2N\beta\epsilon_{0}\right) \\
+ & = - \frac{1}{\beta} \ln\left(  \frac{2m_{e}\pi L^{2}}{\beta h^{2}} \right)- 2\epsilon_{0}
+\end{align}$$
+## (c)
+
+
+

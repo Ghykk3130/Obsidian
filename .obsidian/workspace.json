@@ -251,12 +251,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "平动生成元.md",
+                "file": "Homework/Physics 510 Homework 7.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "平动生成元"
+              "title": "Physics 510 Homework 7"
             }
           }
         ],
@@ -317,7 +317,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 200,
+    "collapsed": true
   },
   "right": {
     "id": "9003d078f8dbc4ed",
@@ -417,11 +418,12 @@
   },
   "active": "18ae571ff538f3a8",
   "lastOpenFiles": [
-    "转动生成元.md",
-    "平动生成元.md",
-    "Homework/Physics 511 Cheat sheet.md",
-    "Homework/Physics 511 Midterm Practice.md",
+    "Homework/Physics 510 Homework 4.md",
     "Homework/Physics 510 Homework 7.md",
+    "Homework/Physics 511 Cheat sheet.md",
+    "平动生成元.md",
+    "转动生成元.md",
+    "Homework/Physics 511 Midterm Practice.md",
     "Schrodinger's and Heisenberg's pictures.md",
     "正规矩阵的对角化.md",
     "Homework/Physics 511 Homework 4.md",
@@ -442,7 +444,6 @@
     "守恒律^lemma31.md",
     "相对论电动力学.md",
     "统计力学的数学基础.md",
-    "系综.md",
     "Pictures/heat_capacitance (3).png",
     "Pictures/Pasted image 20251005205645.png",
     "Pictures/Pasted image 20251005205341.png",
