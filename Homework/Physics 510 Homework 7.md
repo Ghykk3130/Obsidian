@@ -155,7 +155,7 @@ $\epsilon_{0}$ cannot be removed, since the number of particles in contact with 
 ## (b)
 If the number of particles on the surface is $N$, then the partition function is given by:
 $$\begin{align}
-Z & = \frac{1}{h^{2N}} \int d^{2N}qd^{2N}p \exp\left( - \beta \sum_{i} \frac{p_{i}^{2}}{2m_{e}}  \right) \exp(N\beta\epsilon_{0}) \\
+Z & = \frac{1}{N!h^{2N}} \int d^{2N}qd^{2N}p \exp\left( - \beta \sum_{i} \frac{p_{i}^{2}}{2m_{e}}  \right) \exp(N\beta\epsilon_{0}) \\
 \end{align}$$
 Know that:
 $$\begin{align}
@@ -169,7 +169,7 @@ $$\begin{align}
  & = \left(  \frac{2m_{e}\pi}{\beta} \right)^N
 \end{align}$$
 Then:
-$$Z= \frac{1}{h^{2N}}L^{2N}e^{N\beta\epsilon_{0}}\left(  \frac{2m_{e}\pi}{\beta} \right)^N$$
+$$Z= \frac{1}{N!h^{2N}}L^{2N}e^{N\beta\epsilon_{0}}\left(  \frac{2m_{e}\pi}{\beta} \right)^N$$
 Then I have:
 $$\begin{align}
 F & = - \frac{1}{\beta}\ln Z \\
@@ -178,7 +178,7 @@ Therefore:
 $$\begin{align}
 \mu & = \left(  \frac{\partial F}{\partial N} \right)_{T,V} \\
  & = - \frac{1}{\beta} \frac{\partial}{\partial N}\ln Z \\
- & = - \frac{1}{\beta} \frac{\partial}{\partial N}\left( N\ln\left(  \frac{2m_{e}\pi L^{2}}{\beta h^{2}} \right) +N\beta\epsilon_{0}\right) \\
+ & = - \frac{1}{\beta} \frac{\partial}{\partial N}\left( N\ln\left(  \frac{2m_{e}\pi L^{2}}{\beta h^{2}} \right) +N\beta\epsilon_{0}-N\ln N+N\right) \\
  & = - \frac{1}{\beta} \ln\left(  \frac{2m_{e}\pi L^{2}}{\beta h^{2}} \right)- \epsilon_{0}
 \end{align}$$
 ## (c)
