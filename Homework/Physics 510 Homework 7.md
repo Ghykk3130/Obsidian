@@ -155,7 +155,7 @@ $\epsilon_{0}$ cannot be removed, since the number of particles in contact with 
 ## (b)
 If the number of particles on the surface is $N$, then the partition function is given by:
 $$\begin{align}
-Z & = \frac{1}{h^{2N}} \int d^{2N}qd^{2N}p \exp(- \beta H) \\
+Z & = \frac{1}{h^{2N}} \int d^{2N}qd^{2N}p \exp\left( - \beta \sum_{i} \frac{p_{i}^{2}}{2m_{e}}  \right) \exp(N\beta\epsilon_{0}) \\
 \end{align}$$
 Know that:
 $$\begin{align}
@@ -164,12 +164,12 @@ $$\begin{align}
 \end{align}$$
 Also:
 $$\begin{align}
-\int d^{2N}p\exp(-\beta H) & =\left( \int_{\mathbb{R}} dp_{1}\exp\left( - \beta\frac{p_{1}^{2}}{2m_{e}}+\beta\epsilon_{0} \right)  \right)\dots\left(\left( \int_{\mathbb{R}} dp_{2N}\exp\left( -\beta \frac{p_{2N}^{2}}{2m_{e}}+\beta\epsilon_{0} \right)  \right)\right) \\
- & = e^{2N\beta\epsilon_{0} }\left(  \sqrt{ \frac{2m_{e}}{\beta} } \sqrt{ \pi } \right)^{2N} \\
- & = e^{2N\beta\epsilon_{0}} \left(  \frac{2m_{e}\pi}{\beta} \right)^N
+\int d^{2N}p\exp\left( -\beta \sum \frac{p_{i}^{2}}{2m_{e}}  \right) & =\left( \int_{\mathbb{R}} dp_{1}\exp\left( - \beta\frac{p_{1}^{2}}{2m_{e}} \right)  \right)\dots\left(\left( \int_{\mathbb{R}} dp_{2N}\exp\left( -\beta \frac{p_{2N}^{2}}{2m_{e}} \right)  \right)\right) \\
+ & = \left(  \sqrt{ \frac{2m_{e}}{\beta} } \sqrt{ \pi } \right)^{2N} \\
+ & = \left(  \frac{2m_{e}\pi}{\beta} \right)^N
 \end{align}$$
 Then:
-$$Z= \frac{1}{h^{2N}}L^{2N}e^{2N\beta\epsilon_{0}}\left(  \frac{2m_{e}\pi}{\beta} \right)^N$$
+$$Z= \frac{1}{h^{2N}}L^{2N}e^{N\beta\epsilon_{0}}\left(  \frac{2m_{e}\pi}{\beta} \right)^N$$
 Then I have:
 $$\begin{align}
 F & = - \frac{1}{\beta}\ln Z \\
@@ -178,10 +178,38 @@ Therefore:
 $$\begin{align}
 \mu & = \left(  \frac{\partial F}{\partial N} \right)_{T,V} \\
  & = - \frac{1}{\beta} \frac{\partial}{\partial N}\ln Z \\
- & = - \frac{1}{\beta} \frac{\partial}{\partial N}\left( N\ln\left(  \frac{2m_{e}\pi L^{2}}{\beta h^{2}} \right) +2N\beta\epsilon_{0}\right) \\
- & = - \frac{1}{\beta} \ln\left(  \frac{2m_{e}\pi L^{2}}{\beta h^{2}} \right)- 2\epsilon_{0}
+ & = - \frac{1}{\beta} \frac{\partial}{\partial N}\left( N\ln\left(  \frac{2m_{e}\pi L^{2}}{\beta h^{2}} \right) +N\beta\epsilon_{0}\right) \\
+ & = - \frac{1}{\beta} \ln\left(  \frac{2m_{e}\pi L^{2}}{\beta h^{2}} \right)- \epsilon_{0}
 \end{align}$$
 ## (c)
+By Boltzmann statistics, the probability that $N$ particles are attached to the surface, with a specific configuration is given by:
+$$Prob(\text{N particles attached with a specific configuration}) \propto \exp(-\beta H)$$
+Here by configuration, I mean a specific microstate.
 
+So the probability that $N$ particles are attached to the surface, with all possible configurations is:
+$$Prob(\text{N particles attached})\propto \int d^{2N}qd^{2N}p \frac{1}{h^{2N}}\exp(-\beta H)=Z$$
+So if I want to find $\langle N \rangle$, I must vary across all possible N's. So:
+$$\begin{align}
+\langle N \rangle  & = \frac{\sum_{N=0}^{\infty}NZ}{\sum_{N=0}^{\infty}Z}
+\end{align}$$
+Observe that:
+$$NZ=N \left(  \frac{2m_{e}\pi L^{2}}{h^{2}\beta} \right)^Ne^{N\beta\epsilon_{0}}= \frac{1}{\beta} \frac{\partial}{\partial\epsilon_{0}}Z$$
+So:
+$$\begin{align}
+\langle N \rangle & = \frac{\sum NZ}{\sum Z} \\
+ &=  \frac{1}{\beta} \frac{1}{\sum Z} \frac{\partial}{\partial\epsilon_{0}} \left( \sum Z \right) \\
+ & = \frac{1}{\beta} \frac{\partial}{\partial\epsilon_{0}}\ln\left(  \sum Z \right) 
+\end{align}$$
+We compute:
+$$\begin{align}
+\sum_{N=0}^{\infty}Z & = \sum_{N} \left(  \frac{2m_{3}\pi L^{2}}{h^{2}\beta} \right)^{N}e^{2N\beta\epsilon_{0}} \\
+ & = \left( 1- \frac{2m_{e}\pi L^{2}}{h^{2}\beta}e^{\beta\epsilon_{0}} \right)^{-1}
+\end{align}$$
+So:
+$$\begin{align}
+\langle N \rangle & = \frac{1}{\beta} \frac{\partial}{\partial\epsilon_{0}} \left( - \ln\left(  1- \frac{2m_{e}\pi L^{2}}{h^{2}\beta}e^{\beta\epsilon_{0}} \right) \right) \\
+ & = \frac{1}{\beta} \cdot  \frac{e^{\beta\epsilon_{0}}}{ \frac{h^{2}}{2m_{e}\pi L^{2}}- \frac{1}{\beta} e^{\beta\epsilon_{0}}} \\
+ & = \frac{e^{\beta\epsilon_{0}}}{ \frac{\beta h^{2}}{2m_{e}\pi L^{2}}- e^{\beta\epsilon_{0}}}
+\end{align}$$
 
 
