@@ -181,7 +181,7 @@ FullSimplify[ComplexExpand[Subscript[G, 2 abs]],
 
 2. Q Factor: Consider a dissipative system. $Q = 2\pi \frac{maximum\ energy\ stored\ in\ one\ cycle}{energy\ dissipated\ in\ one\ cycle}$
 
-3. Dissipation factor: Consider the phasor of the impedance of the system of a practical capacitor. Let $\delta$ be the angle between the phasor and the negative imaginary axis. Then $\delta$ measures how "close" the system is to an ideal capacitor. Define dissipation factor $DF = tan\delta$ . Note that the smaller the dissipation factor is, the more "deal" the capacitor would be.
+3. Dissipation factor: $\tan\delta$, where $\delta$ is the phase difference between the total current and the capacitive current for parallel model, (the phase difference between the total voltage and the capacitive voltage for the series model.)
 
 4. The relation between the Q factor and $DF$ : 
 		Consider an ideal capacitor in series with a resistor connected to a voltage source $V_0e^{i\omega t}$ . Then $I = V_{0}^{i\omega t} / Z, Z = \frac{1}{i\omega C} + R$ . So $I$ is sinusoidal. Write $I = I_0 e^{i\omega t}$ .
