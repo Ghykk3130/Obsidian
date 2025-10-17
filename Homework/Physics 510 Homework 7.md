@@ -183,34 +183,39 @@ $$\begin{align}
  & = -\frac{1}{\beta}\ln\left(  \frac{2m_{e}\pi L^{2}}{\beta h^{2}N} \right)-\epsilon_{0}
 \end{align}$$
 ## (c)
-By Boltzmann statistics, the probability that $N$ particles are attached to the surface, with a specific configuration is given by:
-$$Prob(\text{N particles attached with a specific configuration}) \propto \exp(-\beta H)$$
-Here by configuration, I mean a specific microstate.
-
-So the probability that $N$ particles are attached to the surface, with all possible configurations is:
-$$Prob(\text{N particles attached})\propto \int d^{2N}qd^{2N}p \frac{1}{N!h^{2N}}\exp(-\beta H)=Z$$
-So if I want to find $\langle N \rangle$, I must vary across all possible N's. So:
+Treat the surface plus the gas as a canonical ensemble. Then for a specific configuration of $N$ particles on the surface and $M-N$ particles in the gas, the probability is:
+$$Prob \propto \exp\left( -\beta \sum_{i=1}^{N} \frac{p_{i}^{2}}{2m_{e}} \right)\exp(N\beta\epsilon_{0})\exp\left( -\beta \sum_{j=1}^{M-N} \frac{p_{j}^{2}}{2m} \right)$$
+If I fix $N$, then there are $\binom{M}{N}$ ways to arrange $N$ particles on the surface. So:
 $$\begin{align}
-\langle N \rangle  & = \frac{\sum_{N=0}^{\infty}NZ}{\sum_{N=0}^{\infty}Z}
+\langle N \rangle & =\frac{\sum_{N=0}^M N\binom{M}{N} \frac{1}{M!} \int \frac{d^{2N}qd^{2N}p}{h^{2N}} \exp\left( -\beta \sum_{i=1}^N \frac{p^{2}_{i}}{2m_{e}} \right)\exp(N\beta \epsilon_{0}) \int \frac{d^{3(M-N)qd^{3(M-N)p}}}{h^{3(M-N)}} \exp\left( - \beta \sum_{j=1}^{M-N} \frac{p^{2}_{j}}{2m} \right)}{\sum_{N=0}^M \binom{M}{N} \frac{1}{M!} \int \frac{d^{2N}qd^{2N}p}{h^{2N}} \exp\left( -\beta \sum_{i=1}^N \frac{p^{2}_{i}}{2m_{e}} \right)\exp(N\beta \epsilon_{0}) \int \frac{d^{3(M-N)qd^{3(M-N)p}}}{h^{3(M-N)}} \exp\left( - \beta \sum_{j=1}^{M-N} \frac{p^{2}_{j}}{2m} \right)} \\
+ & =  \frac{1}{\beta} \frac{\partial}{\partial\epsilon_{0}} \frac{ \sum_{N=0}^M \binom{M}{N} \frac{1}{M!} \int \frac{d^{2N}qd^{2N}p}{h^{2N}} \exp\left( -\beta \sum_{i=1}^N \frac{p^{2}_{i}}{2m_{e}} \right)\exp(N\beta \epsilon_{0}) \int \frac{d^{3(M-N)qd^{3(M-N)p}}}{h^{3(M-N)}} \exp\left( - \beta \sum_{j=1}^{M-N} \frac{p^{2}_{j}}{2m} \right)}{\sum_{N=0}^M \binom{M}{N} \frac{1}{M!} \int \frac{d^{2N}qd^{2N}p}{h^{2N}} \exp\left( -\beta \sum_{i=1}^N \frac{p^{2}_{i}}{2m_{e}} \right)\exp(N\beta \epsilon_{0}) \int \frac{d^{3(M-N)qd^{3(M-N)p}}}{h^{3(M-N)}} \exp\left( - \beta \sum_{j=1}^{M-N} \frac{p^{2}_{j}}{2m} \right)} \\
+ & = \frac{1}{\beta} \frac{\partial}{\partial\epsilon_{0}} \ln\left(\sum_{N=0}^M \binom{M}{N} \frac{1}{M!} \int \frac{d^{2N}qd^{2N}p}{h^{2N}} \exp\left( -\beta \sum_{i=1}^N \frac{p^{2}_{i}}{2m_{e}} \right)\exp(N\beta \epsilon_{0}) \int \frac{d^{3(M-N)qd^{3(M-N)p}}}{h^{3(M-N)}} \exp\left( - \beta \sum_{j=1}^{M-N} \frac{p^{2}_{j}}{2m} \right)\right)
 \end{align}$$
-Observe that:
-$$NZ=N \frac{1}{N!h^{2N}} \left(  \frac{2m_{e}\pi L^{2}}{h^{2}\beta} \right)^Ne^{N\beta\epsilon_{0}}= \frac{1}{\beta} \frac{\partial}{\partial\epsilon_{0}}Z$$
+Now set:
+$$\mathscr{Z}=\sum_{N=0}^M \binom{M}{N} \frac{1}{M!} \int \frac{d^{2N}qd^{2N}p}{h^{2N}} \exp\left( -\beta \sum_{i=1}^N \frac{p^{2}_{i}}{2m_{3}} \right)\exp(N\beta \epsilon_{0}) \int \frac{d^{3(M-N)qd^{3(M-N)p}}}{h^{3(M-N)}} \exp\left( - \beta \sum_{j=1}^{M-N} \frac{p^{2}_{j}}{2m} \right)$$
+It suffices to compute $\mathscr{Z}$. Obviously, 
+$$\begin{align}
+\int d^{2N}qd^{2N}p \exp\left( - \beta \sum \frac{p_{i}^{2}}{2m_{e}} \right) & = \int d^{2N} q \left( \int_{\mathbb{R}} dp_{1}\exp\left( - \beta \frac{p_{1}^{2}}{2m_{e}} \right) \right)^{2N} \\
+\ & = L^{2N} \left(  \frac{2\pi m_{e}}{\beta} \right)^N
+\end{align}$$
+Similarly:
+$$\int d^{3(M-N)}q d^{3(M-N)}p \exp\left(  - \beta \sum_{} \frac{p_{j}^{2}}{2m} \right)= L^{3(M-N)}\left(  \frac{2\pi m}{\beta} \right)^{\frac{3}{2}(M-N)}$$
+Therefore:
+$$\begin{align}
+\mathscr{Z} & = \sum_{N} \binom{M}{N} \frac{1}{M!} \left(  \frac{L}{h} \right) ^{3M-N} \left(  \frac{2\pi m_{e}}{\beta} \right)^{N} \left(  \frac{2\pi m}{\beta} \right)^{ \frac{3}{2}(M-N)}\exp( N\beta\epsilon_{0}) \\
+ & = \frac{1}{M!} \left(  \frac{L}{h} \right)^{2M} \sum_{N} \binom{M}{N} \left(  \frac{2\pi m_{e}}{\beta}e^{\beta\epsilon_{0}}  \right)^N \left(  \frac{L}{h} \left(  \frac{2\pi m}{\beta} \right)^{3/2} \right)^{M-{N}} \\
+ & = \frac{1}{M!}\left(  \frac{L}{h} \right)^{2M}\left(  \frac{2\pi m_{e}}{\beta}e^{\beta\epsilon_{0}}+ \frac{L}{h}\left(  \frac{2\pi m}{\beta } \right)^{3/2} \right)^M
+\end{align}$$
+Thus:
+$$\begin{align}
+\frac{\partial}{\partial\epsilon_{0}}\ln\mathscr{Z} & = \frac{\partial}{\partial\epsilon_{0}}\left( M\ln\left(  \frac{2\pi m_{e}}{\beta}e^{\beta\epsilon_{0}}+ \frac{L}{h}\left(  \frac{2\pi m}{\beta} \right)^{3/2} \right) \right) \\
+ & = M \cdot \frac{2\pi m_{e}e^{\beta\epsilon_{0}}}{ \frac{2\pi m_{e}}{\beta}e^{\beta\epsilon_{0}}+ \frac{L}{h}\left(  \frac{2\pi m}{\beta} \right)^{3/2}} 
+\end{align}$$
 So:
 $$\begin{align}
-\langle N \rangle & = \frac{\sum NZ}{\sum Z} \\
- &=  \frac{1}{\beta} \frac{1}{\sum Z} \frac{\partial}{\partial\epsilon_{0}} \left( \sum Z \right) \\
- & = \frac{1}{\beta} \frac{\partial}{\partial\epsilon_{0}}\ln\left(  \sum Z \right) 
-\end{align}$$
-We compute:
-$$\begin{align}
-\sum_{N=0}^{\infty}Z & = \frac{1}{h^{2N}} \sum_{N} \frac{1}{N!} \left(  \frac{2m_{e}\pi L^{2}}{h^{2}\beta} \right)^{N}e^{N\beta\epsilon_{0}} \\
- & = \left( 1- \frac{2m_{e}\pi L^{2}}{h^{2}\beta}e^{\beta\epsilon_{0}} \right)^{-1}
-\end{align}$$
-So:
-$$\begin{align}
-\langle N \rangle & = \frac{1}{\beta} \frac{\partial}{\partial\epsilon_{0}} \left( - \ln\left(  1- \frac{2m_{e}\pi L^{2}}{h^{2}\beta}e^{\beta\epsilon_{0}} \right) \right) \\
- & = \frac{1}{\beta} \cdot  \frac{e^{\beta\epsilon_{0}}}{ \frac{h^{2}}{2m_{e}\pi L^{2}}- \frac{1}{\beta} e^{\beta\epsilon_{0}}} \\
- & = \frac{e^{\beta\epsilon_{0}}}{ \frac{\beta h^{2}}{2m_{e}\pi L^{2}}- e^{\beta\epsilon_{0}}}
+\langle N \rangle & = \frac{1 }{\beta} \frac{\partial}{\partial\epsilon_{0}}\ln\mathscr{Z} \\
+ & = M \cdot \frac{2\pi m_{e}e^{\beta\epsilon_{0}}}{ 2\pi m_{e}e^{\beta\epsilon_{0}}+ \frac{\beta L}{h}\left(  \frac{2\pi m}{\beta} \right)^{3/2}} \\
+ & = M \cdot \frac{2\pi m_{e}e^{\beta\epsilon_{0}}}{ 2\pi m_{e}e^{\beta\epsilon_{0}}+ \frac{L}{h} \frac{(2\pi m)^{3/2}}{\beta^{1/2}}} 
 \end{align}$$
 
 
