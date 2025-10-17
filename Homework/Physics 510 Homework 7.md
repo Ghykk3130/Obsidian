@@ -183,6 +183,36 @@ $$\begin{align}
  & = -\frac{1}{\beta}\ln\left(  \frac{2m_{e}\pi L^{2}}{\beta h^{2}N} \right)-\epsilon_{0}
 \end{align}$$
 ## (c)
+First calculate the chemical potential of the gas. We fist find the partition function:
+$$\begin{align}
+Z_{g} & = \int \frac{d^{3n}qd^{3n}p }{n! h^{3n}} \exp\left( -\beta \sum_{j} \frac{p_{i}^{2}}{2m} \right) \\
+ & = V^n \frac{1}{n!h^{3n}} \left( \int dp_{i} \exp\left( -\beta \frac{p_{i}^{2}}{2m} \right) \right)^{3n} \\
+ & = V^n \frac{1}{h^{3n}n!}  \left(  \frac{2\pi m}{\beta} \right)^{ \frac{3}{2}n}
+\end{align}$$
+where $n$ is the number of particles in the gas. Then I have:
+$$F_{g}= -\frac{1}{\beta}\ln Z_{g}$$
+So:
+$$\begin{align}
+\mu_{g} & = \left(  \frac{\partial F_{g}}{\partial n} \right)_{V,T} \\
+ & = - \frac{1}{\beta} \frac{\partial}{\partial n} \left(  n\ln\left(  \frac{V}{h^{3}}\left(  \frac{2\pi m}{\beta} \right)^{3/2} \right) - n\ln n+n\right) \\
+ & = - \frac{1}{\beta}\ln\left(  \frac{V}{h^{3}n} \left(  \frac{2\pi m}{\beta} \right)^{3/2} \right)
+\end{align}$$
+Now fix the number of particles $N$ on the surface. Then the degeneracy of this state is:
+$$\binom{M}{N}$$
+And each of this state has probability proportional to:
+$$ \int \frac{d^{2N}qd^{2N}p}{h^{2N}N!} \exp\left(  - \beta \sum_{i} \frac{p_{i}^{2}}{2m_{e}} \right) \exp(\beta N\epsilon_{0})\int \frac{d^{n}qd^np}{h^{3n}n!} \exp\left( -\beta \sum_{j} \frac{p_{j}^{2}}{2m} \right)$$
+
+
+
+
+
+
+
+
+
+
+
+
 Treat the surface plus the gas as a canonical ensemble. Then for a specific configuration of $N$ particles on the surface and $M-N$ particles in the gas, the probability is:
 $$Prob \propto \exp\left( -\beta \sum_{i=1}^{N} \frac{p_{i}^{2}}{2m_{e}} \right)\exp(N\beta\epsilon_{0})\exp\left( -\beta \sum_{j=1}^{M-N} \frac{p_{j}^{2}}{2m} \right)$$
 If I fix $N$, then there are $\binom{M}{N}$ ways to arrange $N$ particles on the surface. So:
