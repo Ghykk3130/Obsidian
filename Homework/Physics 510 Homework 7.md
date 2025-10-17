@@ -199,8 +199,13 @@ $$\begin{align}
 \end{align}$$
 Now fix the number of particles $N$ on the surface. Then the degeneracy of this state is:
 $$\binom{M}{N}$$
-And each of this state has probability proportional to:
-$$ \int \frac{d^{2N}qd^{2N}p}{h^{2N}N!} \exp\left(  - \beta \sum_{i} \frac{p_{i}^{2}}{2m_{e}} \right) \exp(\beta N\epsilon_{0})\int \frac{d^{n}qd^np}{h^{3n}n!} \exp\left( -\beta \sum_{j} \frac{p_{j}^{2}}{2m} \right)$$
+And each of the non-degenerate state has probability proportional to:
+$$ \int \frac{d^{2N}qd^{2N}p}{h^{2N}N!} \exp\left(  - \beta \sum_{i} \frac{p_{i}^{2}}{2m_{e}} \right) \exp(\beta N\epsilon_{0})\int \frac{d^{n}qd^np}{h^{3n}n!} \exp\left( -\beta \sum_{j} \frac{p_{j}^{2}}{2m} \right)=Z(N)Z_{g}(n)$$
+Therefore, the probability of the degenerate state is proportional to:
+$$\binom{M}{N}Z(N)Z_{g}(M-N)$$
+We know that:
+$$F= - \frac{1}{\beta}\ln Z\implies Z= \exp(-\beta F)$$
+
 
 
 
