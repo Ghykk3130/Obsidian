@@ -83,7 +83,7 @@ $$\begin{align}
 \end{align}$$
 Then we have:
 $$\begin{align}
-\langle M \rangle & = N \frac{2\mu \sinh(\beta \mu B)}{2\cosh(\beta \mu B)+1}
+\langle M \rangle & = N\mu \frac{2 \sinh(\beta \mu B)}{2\cosh(\beta \mu B)+1}
 \end{align}$$
 
 ## (d)
@@ -115,7 +115,7 @@ $$\begin{align}
  & = g^{2}(t)\left( \frac{L}{2} \right)^{2}\sum_{n,m}a_{nm}^{2}
 \end{align}$$
 So:
-$$\overline{h^{2}}= \frac{1}{L^{2}}\int dxdyh^{2}= \frac{1}{4}g^{2}(t)\sum_{n,m}a_{nm}^{2}$$
+$$\overline{h^{2}}= \frac{1}{L^{2}}\int dxdyh^{2}= \frac{1}{4}g^{2}(t)\sum_{n,m=1}^{\infty}a_{nm}^{2}$$
 ## (c)
 We know that:
 $$\nabla^{2}h=g(t)\sum_{n,m} ( n^{2}+m^{2}) a_{nm}\sin\left(  \frac{n\pi x}{L} \right)\sin\left(  \frac{m\pi y}{L} \right) $$
@@ -128,8 +128,9 @@ By orthogonality, I obtain:
 $$\begin{align}
 H & =\int dxdy\kappa g^{2}(t)\left(  \frac{\pi}{L} \right)^4 \sum_{n,m}(n^{2}+m^{2})^{2}  a_{nm}^{2}\sin ^{2}\left(  \frac{n\pi x}{L} \right)\sin ^{2}\left(  \frac{m\pi y}{L} \right) \\
  & =\kappa g^{2}(t)\left(  \frac{\pi}{L} \right)^4  \sum_{n,m}(n^{2}+m^{2})^{2} \cdot\left(  \frac{L}{2} \right)^{2}a_{nm}^{2} \\
- & = \kappa g^{2}(t) \frac{\pi^4}{4L^{2}}\sum_{n,m}(n^{2}+m^{2})^{2}a_{nm}^{2}
+ & = \kappa g^{2}(t) \frac{\pi^4}{4L^{2}}\sum_{n,m=1}^{\infty}(n^{2}+m^{2})^{2}a_{nm}^{2}
 \end{align}$$
+## (d)
 By $1.$ I know that:
 $$\begin{align}
 \left\langle \kappa g^{2}(t) \frac{\pi^4}{4L^{2}}(n^{2}+m^{2})^{2}a_{nm}^{2} \right\rangle= \frac{1}{2}kT
@@ -146,11 +147,11 @@ From $(d)$, I know that:
 $$\langle E \rangle= \kappa g^{2}(t) \frac{\pi^4}{4L^{2}}\sum_{n,m} (n^{2}+m^{2})^{2}\langle a_{nm}^{2}\rangle= \sum_{n,m} \frac{1}{2}kT$$
 However, this number diverges. We resolve this by claiming that the sum can not be taken to infinity. Imagine there is some periodic lattice structure inside the membrane. Then only the wavevectors inside "the first Brillouin zone" are taken in the sum. If the 2-d unit cell has lengths $a \times b$, then must require:
 $$ 0\leq \frac{n\pi}{L} \leq \frac{2\pi}{a}, 0 \leq \frac{m\pi}{L} \leq \frac{2\pi}{b} $$
-Therefore we must have some upper bounds on $n,m$
+Therefore we must have some upper bounds on $n,m$, so that the short wavelength modes cannot exist in the membrane.
 
 # 4.
 ## (a)
-$\epsilon_{0}$ cannot be removed, since the number of particles in contact with the surface is not fixed. If we remove $\epsilon_{0}$, that means that we choose a floating origin for the energy, which is meaningless.
+$\epsilon_{0}$ cannot be removed, since only part of the particles in the system is in contact with the surface. If all particles have $\epsilon_{0}$ in their Hamiltonians, then $\epsilon_{0}$ can be removed because this is equivalent to shift the total energy by a constant. Then the Boltzmann factor just factors out a constant as a result, which would be canceled out because probabilities are calculated by ratios. But here only part of the particles have this $\epsilon_{0}$ in their Hamiltonians. Then we cannot factor out any constant for the entire system of the surface plus the gas.
 
 ## (b)
 If the number of particles on the surface is $N$, then the partition function is given by:
@@ -183,74 +184,36 @@ $$\begin{align}
  & = -\frac{1}{\beta}\ln\left(  \frac{2m_{e}\pi L^{2}}{\beta h^{2}N} \right)-\epsilon_{0}
 \end{align}$$
 ## (c)
-First calculate the chemical potential of the gas. We fist find the partition function:
+First calculate the partition function of the gas. We fist find:
 $$\begin{align}
 Z_{g} & = \int \frac{d^{3n}qd^{3n}p }{n! h^{3n}} \exp\left( -\beta \sum_{j} \frac{p_{i}^{2}}{2m} \right) \\
  & = V^n \frac{1}{n!h^{3n}} \left( \int dp_{i} \exp\left( -\beta \frac{p_{i}^{2}}{2m} \right) \right)^{3n} \\
  & = V^n \frac{1}{h^{3n}n!}  \left(  \frac{2\pi m}{\beta} \right)^{ \frac{3}{2}n}
 \end{align}$$
-where $n$ is the number of particles in the gas. Then I have:
-$$F_{g}= -\frac{1}{\beta}\ln Z_{g}$$
-So:
-$$\begin{align}
-\mu_{g} & = \left(  \frac{\partial F_{g}}{\partial n} \right)_{V,T} \\
- & = - \frac{1}{\beta} \frac{\partial}{\partial n} \left(  n\ln\left(  \frac{V}{h^{3}}\left(  \frac{2\pi m}{\beta} \right)^{3/2} \right) - n\ln n+n\right) \\
- & = - \frac{1}{\beta}\ln\left(  \frac{V}{h^{3}n} \left(  \frac{2\pi m}{\beta} \right)^{3/2} \right)
-\end{align}$$
-Now fix the number of particles $N$ on the surface. Then the degeneracy of this state is:
-$$\binom{M}{N}$$
-And each of the non-degenerate state has probability proportional to:
+where $n$ is the number of particles in the gas. Now fix the number of particles $N$ on the surface. And each of such state has probability proportional to:
 $$ \int \frac{d^{2N}qd^{2N}p}{h^{2N}N!} \exp\left(  - \beta \sum_{i} \frac{p_{i}^{2}}{2m_{e}} \right) \exp(\beta N\epsilon_{0})\int \frac{d^{n}qd^np}{h^{3n}n!} \exp\left( -\beta \sum_{j} \frac{p_{j}^{2}}{2m} \right)=Z(N)Z_{g}(n)$$
-Therefore, the probability of the degenerate state is proportional to:
-$$\binom{M}{N}Z(N)Z_{g}(M-N)$$
-We know that:
-$$F= - \frac{1}{\beta}\ln Z\implies Z= \exp(-\beta F)$$
-
-
-
-
-
-
-
-
-
-
-
-
-
-Treat the surface plus the gas as a canonical ensemble. Then for a specific configuration of $N$ particles on the surface and $M-N$ particles in the gas, the probability is:
-$$Prob \propto \exp\left( -\beta \sum_{i=1}^{N} \frac{p_{i}^{2}}{2m_{e}} \right)\exp(N\beta\epsilon_{0})\exp\left( -\beta \sum_{j=1}^{M-N} \frac{p_{j}^{2}}{2m} \right)$$
-If I fix $N$, then there are $\binom{M}{N}$ ways to arrange $N$ particles on the surface. So:
+Now fix $n=M-N$. Then I have:
 $$\begin{align}
-\langle N \rangle & =\frac{\sum_{N=0}^M N\binom{M}{N} \frac{1}{M!} \int \frac{d^{2N}qd^{2N}p}{h^{2N}} \exp\left( -\beta \sum_{i=1}^N \frac{p^{2}_{i}}{2m_{e}} \right)\exp(N\beta \epsilon_{0}) \int \frac{d^{3(M-N)}qd^{3(M-N)}p}{h^{3(M-N)}} \exp\left( - \beta \sum_{j=1}^{M-N} \frac{p^{2}_{j}}{2m} \right)}{\sum_{N=0}^M \binom{M}{N} \frac{1}{M!} \int \frac{d^{2N}qd^{2N}p}{h^{2N}} \exp\left( -\beta \sum_{i=1}^N \frac{p^{2}_{i}}{2m_{e}} \right)\exp(N\beta \epsilon_{0}) \int \frac{d^{3(M-N)}qd^{3(M-N)}p}{h^{3(M-N)}} \exp\left( - \beta \sum_{j=1}^{M-N} \frac{p^{2}_{j}}{2m} \right)} \\
- & =  \frac{1}{\beta} \frac{\partial}{\partial\epsilon_{0}} \frac{ \sum_{N=0}^M \binom{M}{N} \frac{1}{M!} \int \frac{d^{2N}qd^{2N}p}{h^{2N}} \exp\left( -\beta \sum_{i=1}^N \frac{p^{2}_{i}}{2m_{e}} \right)\exp(N\beta \epsilon_{0}) \int \frac{d^{3(M-N)}qd^{3(M-N)}p}{h^{3(M-N)}} \exp\left( - \beta \sum_{j=1}^{M-N} \frac{p^{2}_{j}}{2m} \right)}{\sum_{N=0}^M \binom{M}{N} \frac{1}{M!} \int \frac{d^{2N}qd^{2N}p}{h^{2N}} \exp\left( -\beta \sum_{i=1}^N \frac{p^{2}_{i}}{2m_{e}} \right)\exp(N\beta \epsilon_{0}) \int \frac{d^{3(M-N)}qd^{3(M-N)}p}{h^{3(M-N)}} \exp\left( - \beta \sum_{j=1}^{M-N} \frac{p^{2}_{j}}{2m} \right)} \\
- & = \frac{1}{\beta} \frac{\partial}{\partial\epsilon_{0}} \ln\left(\sum_{N=0}^M \binom{M}{N} \frac{1}{M!} \int \frac{d^{2N}qd^{2N}p}{h^{2N}} \exp\left( -\beta \sum_{i=1}^N \frac{p^{2}_{i}}{2m_{e}} \right)\exp(N\beta \epsilon_{0}) \int \frac{d^{3(M-N)}qd^{3(M-N)}p}{h^{3(M-N)}} \exp\left( - \beta \sum_{j=1}^{M-N} \frac{p^{2}_{j}}{2m} \right)\right)
+\langle N \rangle & = \frac{\sum_{N}NZ(N)Z_{g}(M-N)}{\sum_{N}Z(N)Z_{g}(M-N)} 
 \end{align}$$
-Now set:
-$$\mathscr{Z}=\sum_{N=0}^M \binom{M}{N} \frac{1}{M!} \int \frac{d^{2N}qd^{2N}p}{h^{2N}} \exp\left( -\beta \sum_{i=1}^N \frac{p^{2}_{i}}{2m_{3}} \right)\exp(N\beta \epsilon_{0}) \int \frac{d^{3(M-N)qd^{3(M-N)p}}}{h^{3(M-N)}} \exp\left( - \beta \sum_{j=1}^{M-N} \frac{p^{2}_{j}}{2m} \right)$$
-It suffices to compute $\mathscr{Z}$. Obviously, 
+Set $\mathscr{Z}:= \sum_{N}Z(N)Z_{g}(M-N)$. Observe that:
+$$\sum_{N}NZ(N)Z_{g}(M-N)=\sum_{N} \frac{1}{\beta} \frac{\partial}{\partial\epsilon_{0}}(Z(N)Z(M-N))= \frac{1}{\beta} \frac{\partial}{\partial\epsilon_{0}} \sum Z(N)Z_{g}(M-N)= \frac{1}{\beta} \frac{\partial}{\partial\epsilon_{0}}\mathscr{Z}$$
+So:
+$$\langle N \rangle= \frac{1}{\beta} \frac{\partial}{\partial\epsilon_{0}}\ln \mathscr{Z}$$
+No compute:
 $$\begin{align}
-\int d^{2N}qd^{2N}p \exp\left( - \beta \sum \frac{p_{i}^{2}}{2m_{e}} \right) & = \int d^{2N} q \left( \int_{\mathbb{R}} dp_{1}\exp\left( - \beta \frac{p_{1}^{2}}{2m_{e}} \right) \right)^{2N} \\
-\ & = L^{2N} \left(  \frac{2\pi m_{e}}{\beta} \right)^N
+\mathscr{Z} & = \sum_{N} \frac{L^{2N}}{N!h^{2N}}e^{N\beta\epsilon_{0}}\left(  \frac{2\pi m_{e}}{\beta} \right)^N \frac{V^{M-N}}{h^{3(M-N)}(M-N)!} \left(  \frac{2\pi m}{\beta} \right)^{\frac{3}{2}(M-N)} \\
+ & = \frac{1}{M!}\sum \frac{M!}{N!(M-N)!} \left(  \frac{2\pi m_{e}}{\beta}\left(  \frac{L}{h} \right)^{2}e^{\beta\epsilon_{0}}  \right)^N\left(  \left(  \frac{2\pi m}{\beta} \right)^{3/2} \frac{V}{h^{3}} \right)^{M-N} \\
+ & = \frac{1}{M!} \left(  \frac{2\pi m_{e}}{\beta}\left(  \frac{L}{h} \right)^{2}e^{\beta\epsilon_{0}}+ \left(  \frac{2\pi m}{\beta} \right)^{3/2} \frac{V}{h^{3}} \right)^M 
 \end{align}$$
-Similarly:
-$$\int d^{3(M-N)}q d^{3(M-N)}p \exp\left(  - \beta \sum_{} \frac{p_{j}^{2}}{2m} \right)= L^{3(M-N)}\left(  \frac{2\pi m}{\beta} \right)^{\frac{3}{2}(M-N)}$$
 Therefore:
 $$\begin{align}
-\mathscr{Z} & = \sum_{N} \binom{M}{N} \frac{1}{M!} \left(  \frac{L}{h} \right) ^{3M-N} \left(  \frac{2\pi m_{e}}{\beta} \right)^{N} \left(  \frac{2\pi m}{\beta} \right)^{ \frac{3}{2}(M-N)}\exp( N\beta\epsilon_{0}) \\
- & = \frac{1}{M!} \left(  \frac{L}{h} \right)^{2M} \sum_{N} \binom{M}{N} \left(  \frac{2\pi m_{e}}{\beta}e^{\beta\epsilon_{0}}  \right)^N \left(  \frac{L}{h} \left(  \frac{2\pi m}{\beta} \right)^{3/2} \right)^{M-{N}} \\
- & = \frac{1}{M!}\left(  \frac{L}{h} \right)^{2M}\left(  \frac{2\pi m_{e}}{\beta}e^{\beta\epsilon_{0}}+ \frac{L}{h}\left(  \frac{2\pi m}{\beta } \right)^{3/2} \right)^M
+\langle N \rangle & = \frac{1}{\beta} \frac{\partial}{\partial\epsilon_{0}} \left( M \ln\left(  \frac{2\pi m_{e}}{\beta}\left(  \frac{L}{h} \right)^{2} e^{\beta\epsilon_{0}}+ \left(  \frac{2\pi m}{\beta} \right)^{3/2} \frac{V}{h^{3}}\right) \right) \\
+ & = M\frac{1}{\beta} \frac{2\pi m_{e}\left(  \frac{L}{h} \right)^{2}e^{\beta\epsilon_{0}}}{\frac{2\pi m_{e}}{\beta}\left(  \frac{L}{h} \right)^{2} e^{\beta\epsilon_{0}}+ \left(  \frac{2\pi m}{\beta} \right)^{3/2} \frac{V}{h^{3}}} \\
+ & = M \frac{2\pi m_{e}\left(  \frac{L}{h} \right)^{2}e^{\beta\epsilon_{0}}}{2\pi m_{e}\left(  \frac{L}{h} \right)^{2}e^{\beta\epsilon_{0}}+ (2\pi m)^{3/2} \beta^{-1/2} \frac{V}{h^{3}}} \\
+ & = M \frac{1}{1+ \sqrt{  \frac{2\pi m}{\beta} } \frac{m^{}V}{m_{e}hL^{2}e^{\beta\epsilon_{0}}}}
 \end{align}$$
-Thus:
-$$\begin{align}
-\frac{\partial}{\partial\epsilon_{0}}\ln\mathscr{Z} & = \frac{\partial}{\partial\epsilon_{0}}\left( M\ln\left(  \frac{2\pi m_{e}}{\beta}e^{\beta\epsilon_{0}}+ \frac{L}{h}\left(  \frac{2\pi m}{\beta} \right)^{3/2} \right) \right) \\
- & = M \cdot \frac{2\pi m_{e}e^{\beta\epsilon_{0}}}{ \frac{2\pi m_{e}}{\beta}e^{\beta\epsilon_{0}}+ \frac{L}{h}\left(  \frac{2\pi m}{\beta} \right)^{3/2}} 
-\end{align}$$
-So:
-$$\begin{align}
-\langle N \rangle & = \frac{1 }{\beta} \frac{\partial}{\partial\epsilon_{0}}\ln\mathscr{Z} \\
- & = M \cdot \frac{2\pi m_{e}e^{\beta\epsilon_{0}}}{ 2\pi m_{e}e^{\beta\epsilon_{0}}+ \frac{\beta L}{h}\left(  \frac{2\pi m}{\beta} \right)^{3/2}} \\
- & = M \cdot \frac{2\pi m_{e}e^{\beta\epsilon_{0}}}{ 2\pi m_{e}e^{\beta\epsilon_{0}}+ \frac{L}{h} \frac{(2\pi m)^{3/2}}{\beta^{1/2}}} 
-\end{align}$$
+
+
 
 
