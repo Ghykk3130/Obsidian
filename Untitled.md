@@ -120,4 +120,4 @@ Angles for object analysis:
 - From concrete to abstract
 - Material and color should be mentioned later. More concrete visual elements should be mentioned first
 - Possibly mention casting technique
-- For jade, comment on the precision cutting, since jade is hard to carve. 
+- For jade, comment on the precision cutting, since jade is hard to carve.  
