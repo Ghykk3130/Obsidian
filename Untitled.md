@@ -28,7 +28,12 @@
 - agrarian economy
 - tax entrepreneur
 - monopoly over iron and salt
-
+Mingqi:
+- substitutes for sacrifices
+- accompany the dead into the netherworld
+- miniature copies
+- constitute a self-sufficient living environment
+- originated in Qin
 # Useful materials
 ## Women visuality in Tang dynasty
 
