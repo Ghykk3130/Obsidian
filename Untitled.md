@@ -58,7 +58,7 @@ Ways of describing: overall arrangement of the painting, then zoom in to each se
 
 ## Tombs
 **妇好:**
-- material goods: bronze and jade visual vessels, jade ornament, bone carvings, weapons. Show advanced bronze-casing technology. Lavish burial goods implies high social status. 
+- material goods: bronze and jade vessels, jade ornament, bone carvings, weapons. Show advanced bronze-casing technology. Lavish burial goods implies high social status. 
 - visual program: taotie on bronze objects symbolize bravery, ancestral communication. Mostly ritual functional.
 - unusual gender role
 **辛追:**

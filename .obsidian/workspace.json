@@ -317,8 +317,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200,
-    "collapsed": true
+    "width": 200
   },
   "right": {
     "id": "9003d078f8dbc4ed",
@@ -418,8 +417,9 @@
   },
   "active": "18ae571ff538f3a8",
   "lastOpenFiles": [
-    "Untitled 1.md",
     "Homework/Physics 510 Homework 2.md",
+    "Untitled.md",
+    "Untitled 1.md",
     "热力学中的求导.md",
     "熵.md",
     "Homework/Physics 510 Homework 1.md",
@@ -430,7 +430,6 @@
     "Homework/Physics 510 Homework 7.md",
     "Homework/Physics 510 Homework 4.md",
     "Experimental/Cantilever.md",
-    "Untitled.md",
     "Experimental/Basic Electronics.md",
     "Experimental/Transformer Comments.md",
     "Experimental/VTI.md",
