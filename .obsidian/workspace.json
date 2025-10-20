@@ -251,12 +251,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "气体.md",
+                "file": "熵.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "气体"
+              "title": "熵"
             }
           }
         ],
@@ -317,7 +317,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 200,
+    "collapsed": true
   },
   "right": {
     "id": "9003d078f8dbc4ed",
@@ -417,14 +418,14 @@
   },
   "active": "18ae571ff538f3a8",
   "lastOpenFiles": [
-    "热力学中的求导.md",
+    "Homework/Physics 510 Homework 1.md",
     "气体.md",
+    "热力学中的求导.md",
     "正规矩阵的对角化.md",
     "Homework/Physics 510 Homework 5.md",
     "Homework/Physics 510 Homework 6.md",
     "Homework/Physics 510 Homework 7.md",
     "Homework/Physics 510 Homework 4.md",
-    "Homework/Physics 510 Homework 1.md",
     "Experimental/Cantilever.md",
     "Untitled.md",
     "Untitled 1.md",
