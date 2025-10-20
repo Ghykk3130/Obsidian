@@ -13,6 +13,7 @@
 **Zhou ruling ideology:**
 - confederation, pay tax, military service
 - ancestor worshiping
+- transition to personal expression 礼崩乐坏
 **Han ruling ideology 1:**
 - reduce taxation
 - encourage small business
