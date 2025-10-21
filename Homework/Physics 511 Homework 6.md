@@ -105,3 +105,28 @@ Therefore, we conclude that:
 $$k=n= \lceil |\lambda|^{2}-1 \rceil=\lceil |\lambda|^{2} \rceil-1   $$
 Then the most probable energy is $\left(   \lceil |\lambda|^{2} \rceil-\frac{1}{2} \right)\hbar \omega$
 
+## d.
+Set $l:= \sqrt{  \frac{2\hbar}{m\omega} }\lambda|\lambda|^{2}$
+
+Then we compute:
+$$\begin{align}
+\exp\left( - \frac{i}{\hbar}p l \right)\ket{0}  & = \exp\left(  \frac{1}{\hbar} \sqrt{ \frac{m\omega \hbar}{2} }(a^{\dagger}-a)l \right)\ket{0}  \\
+ & = \exp\left(  \sqrt{ \frac{m\omega}{2\hbar} }l \right)\exp(a^{\dagger}-a)\ket{0} \\
+ & = \exp(\lambda|\lambda|^{2})\exp(a^{\dagger}-a)\ket{0}  
+\end{align}$$
+By Baker-Campbell-Hausdorff lemma, I know that:
+$$\begin{align}
+e^{a^{\dagger}}e^{-a} & = \exp\left( a^{\dagger}-a+ \frac{1}{2}[a^{\dagger},-a]+ \frac{1}{12}[a^{\dagger},[a^{\dagger},-a]]+ \frac{1}{12}[-a,[-a,a^{\dagger}]]+\dots \right)
+\end{align}$$
+Know that $[a^{\dagger},-a]=1$, so the higher order commutators vanish. Then I get:
+$$\begin{align}
+e^{a^{\dagger}}e^{-a} & =\exp\left( a^{\dagger}-a+ \frac{1}{2} \right) \\
+ & = \exp(a^{\dagger}-a)e^{1/2} \\
+\implies & \exp(a^{\dagger}-a)=e^{-1/2}e^{a^{\dagger}}e^{-a}
+\end{align}$$
+Therefore:
+$$\begin{align}
+\exp\left( - \frac{i}{\hbar}pl  \right)\ket{0}  & = \exp(\lambda|\lambda|^{2}) e^{-1/2}e^{a^{\dagger}}e^{-a}\ket{0}  \\
+ & = \exp\left( \lambda|\lambda|^{2} \right) e^{a^{\dagger}} \sum_{j} \frac{1}{j!}(-1)^ja^j\ket{0}  \\
+ & = \exp(\lambda|\lambda|^{2} )e^{a^{\dagger}  }\ket{0} 
+\end{align}$$
