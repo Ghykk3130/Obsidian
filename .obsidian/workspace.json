@@ -279,16 +279,30 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Homework/Physics 511 Homework 6.md",
+                "file": "相对论动力学.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Physics 511 Homework 6"
+              "title": "相对论动力学"
+            }
+          },
+          {
+            "id": "5630b76fc5c22bf2",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Baker-Campbell-Hausdorff Formula.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Baker-Campbell-Hausdorff Formula"
             }
           }
         ],
-        "currentTab": 19
+        "currentTab": 20
       }
     ],
     "direction": "vertical"
@@ -443,10 +457,13 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "fe5d7d6ff128e76c",
+  "active": "5630b76fc5c22bf2",
   "lastOpenFiles": [
-    "Homework/Physics 511 Midterm Practice.md",
+    "生成湮灭算符与角动量.md",
+    "Baker-Campbell-Hausdorff Formula.md",
+    "相对论动力学.md",
     "Homework/Physics 511 Homework 6.md",
+    "Homework/Physics 511 Midterm Practice.md",
     "Homework/Physics 511 Homework 5.md",
     "最大功.md",
     "Homework/Physics 510 Homework 2.md",
@@ -468,9 +485,6 @@
     "Experimental/VTI.md",
     "Homework/Physics 511 Cheat sheet.md",
     "平动生成元.md",
-    "转动生成元.md",
-    "Schrodinger's and Heisenberg's pictures.md",
-    "Homework/Physics 511 Homework 4.md",
     "Pictures/heat_capacitance (3).png",
     "Pictures/Pasted image 20251005205645.png",
     "Pictures/Pasted image 20251005205341.png",
