@@ -25,3 +25,83 @@ $$\begin{align}
 Then $\ket{\lambda}$ is normalized.
 
 ## b.
+Know that:
+$$\left\{ \begin{align}
+ & a = \sqrt{  \frac{m\omega}{2\hbar} }\left(  x + \frac{ip}{m\omega} \right) \\
+ &  a^{\dagger} = \sqrt{  \frac{m\omega}{2\hbar} } \left(  x- \frac{ip}{m\omega} \right)
+\end{align}\right.$$
+So:
+$$
+\left\{ \begin{align}
+ & x = \sqrt{  \frac{\hbar}{2m\omega} }(a+a^{\dagger}) \\
+ & p = i \sqrt{  \frac{m\omega \hbar}{2} }(a^{\dagger}-a)
+\end{align} \right.
+$$
+Therefore I have:
+$$\begin{align}
+\langle x^{2} \rangle  & = \left\langle  \frac{\hbar}{2m\omega}(a+a^{\dagger})^{2} \right\rangle \\
+ & = \frac{\hbar}{2m\omega}( \langle a^{2}\rangle+\langle a^{\dagger{2}}\rangle+ \langle aa^{\dagger}\rangle+\langle a^{\dagger}a \rangle) \\
+ & = \frac{\hbar}{2m\omega}( \langle a^{2} \rangle+ \langle a^{\dagger 2}\rangle + \langle [a,a^{\dagger}] \rangle+ 2\langle a^{\dagger}a \rangle) \\
+ & = \frac{\hbar}{2m\omega}( \langle a^{2} \rangle+ \langle a^{\dagger 2}\rangle + \langle \mathbb{1} \rangle+ 2\langle a^{\dagger}a \rangle)
+\end{align}$$
+Know that:
+$$\begin{align}
+ & \langle a^{2} \rangle = \bra{\lambda} a^{2} \ket{\lambda} = \lambda^{2} \bra{\lambda} \lambda \rangle = \lambda^{2} \\
+ &  \langle a^{\dagger 2}\rangle= \bra{\lambda} a^{\dagger 2} \ket{\lambda} =\lambda ^{*2} \bra{\lambda}\lambda \rangle = \lambda ^{*2} \\
+ & \langle a^{\dagger}a \rangle = \bra{\lambda} a^{\dagger} a \ket{\lambda} = \lambda ^{*} \lambda \bra{\lambda }\lambda \rangle = |\lambda|^{2}  
+\end{align}$$
+Then:
+$$\begin{align}
+\langle x^{2} \rangle = \frac{\hbar}{2m\omega}(\lambda^{2}+ \lambda ^{*2}+ 2|\lambda|^{2}+1)
+\end{align}$$
+Similarly:
+$$\begin{align}
+\langle x \rangle  & =\sqrt{  \frac{\hbar}{2m\omega} }(\langle a \rangle + \langle a^{\dagger} \rangle) \\
+ & = \sqrt{  \frac{\hbar}{2m\omega} }(\lambda+\lambda ^{*}) 
+\end{align}$$
+So:
+$$\begin{align}
+\langle x^{2} \rangle- \langle x \rangle^{2} & = \frac{\hbar}{2m\omega}
+\end{align}$$
+I can do the same thing to $p$:
+$$\begin{align}
+\langle p^{2} \rangle & =- \frac{m\omega \hbar}{2}( \langle a^{2}\rangle+ \langle a^{\dagger 2} \rangle- \langle aa^{\dagger} \rangle-\langle a^{\dagger}a \rangle) \\
+ & = - \frac{m\omega \hbar}{2}( \langle a^{2} \rangle + \langle a^{\dagger 2}\rangle - \langle \mathbb{1} \rangle -2 \langle aa^{\dagger}\rangle) \\
+ & = - \frac{m\omega \hbar}{2}( \lambda^{2}+ \lambda ^{*2}- 2|\lambda|^{2}-1)
+\end{align}$$
+Also:
+$$\begin{align}
+\langle p \rangle & = i \sqrt{ \frac{m\omega \hbar}{2} }( \langle a^{\dagger}\rangle- \langle a \rangle) \\
+ & = i \sqrt{  \frac{m\omega \hbar}{2} }(\lambda ^{*}-\lambda)
+\end{align}$$
+So:
+$$\langle p^{2} \rangle - \langle p \rangle^{2}= \frac{m\omega \hbar}{2}$$
+Then we obtain:
+$$\begin{align}
+\sigma_{x}^{2} \sigma_{p}^{2}= \frac{\hbar^{2}}{4}= \frac{1}{4}|\langle [x,p]\rangle|^{2}
+\end{align}$$
+## c.
+We compute:
+$$\begin{align}
+\ket{\lambda}  & = e^{-|\lambda|^{2}/2 }\sum_{j} \frac{1}{j!}\lambda^{j}  (a^{\dagger})^{j} \ket{0}  \\
+ & = e^{-|\lambda|^{2}/2} \sum \frac{1}{j!} \lambda^{j} \sqrt{ j! }\ket{j} 
+\end{align}$$
+Then we know:
+$$f(j)= e^{-|\lambda|^{2}/2} \frac{1}{j!}\lambda^{j} \sqrt{ j! }$$
+Then:
+$$\begin{align}
+|f(j)|^{2} & =e^{-|\lambda|^{2}} \left(  \frac{1}{j!} \right)^{2} (|\lambda|^{2})^j j! \\
+ & = e^{-|\lambda|^{2}} \frac{1}{j!} ( |\lambda|^{2})^j
+\end{align}$$
+By comparing the coefficients, we found that its a Poisson distribution with $\mu=|\lambda|^{2}$
+
+To find the maximum value of $|f(j)|^{2}$, assume that when $j=n$, increasing the index would lead to a decrease in the probability. Then suffices to solve:
+$$\begin{align}
+ & \frac{|f(n+1)|^{2}}{|f(n)|^{2}} \leq 1 \\
+\implies &  \frac{1}{n+1}|\lambda|^{2} \leq 1 \\
+\implies  & n \geq |\lambda|^{2}-1,\ n\in \mathbb{N}
+\end{align}$$
+Therefore, we conclude that:
+$$k=n= \lceil |\lambda|^{2}-1 \rceil=\lceil |\lambda|^{2} \rceil-1   $$
+Then the most probable energy is $\left(   \lceil |\lambda|^{2} \rceil-\frac{1}{2} \right)\hbar \omega$
+
