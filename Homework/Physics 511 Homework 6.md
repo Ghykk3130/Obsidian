@@ -116,16 +116,19 @@ $$\begin{align}
 \end{align}$$
 By Baker-Campbell-Hausdorff lemma, I know that:
 $$\begin{align}
-\exp\left( \sqrt{ \frac{m\omega}{2\hbar} }la^{\dagger} \right) \exp\left( - \sqrt{ \frac{m\omega}{2\hbar} }la \right)  & = \exp\left(  \sqrt{ \frac{m\omega}{2\hbar} }la^{\dagger}+ \frac{1}{2}\left( \sqrt{  \frac{m\omega}{2\hbar} }l \right)^{2}[a^{\dagger},-a]+ \frac{1}{12} \left(  \sqrt{ \frac{m\omega}{2\hbar} }l \right)^{3}[a^{\dagger},[a^{\dagger},a] +\frac{1}{12} \left(  \sqrt{ \frac{m\omega}{2\hbar} } l\right)^{2}[-a,[-a,a^{\dagger}]]+\dots\right)
+\exp\left( \sqrt{ \frac{m\omega}{2\hbar} }la^{\dagger} \right) \exp\left( - \sqrt{ \frac{m\omega}{2\hbar} }la \right)  & = \exp\left(  \sqrt{ \frac{m\omega}{2\hbar} }la^{\dagger}- \sqrt{ \frac{m\omega}{2\hbar} }la+ \frac{1}{2}\left( \sqrt{  \frac{m\omega}{2\hbar} }l \right)^{2}[a^{\dagger},-a]+ \frac{1}{12} \left(  \sqrt{ \frac{m\omega}{2\hbar} }l \right)^{3}[a^{\dagger},[a^{\dagger},a] +\frac{1}{12} \left(  \sqrt{ \frac{m\omega}{2\hbar} } l\right)^{2}[-a,[-a,a^{\dagger}]]+\dots\right)
 \end{align}$$
 Know that $[a^{\dagger},-a]=1$, so the higher order commutators vanish. Then I get:
-
-
-
-
+$$\begin{align}
+\exp\left( \sqrt{ \frac{m\omega}{2\hbar} }la^{\dagger}  \right)\exp\left( - \sqrt{  \frac{m\omega}{2\hbar} }la \right) & = \exp\left(  \sqrt{ \frac{m\omega}{2\hbar} }la^{\dagger} - \sqrt{ \frac{m\omega}{2\hbar} }la + \frac{1}{2} \frac{m\omega}{2\hbar}l^{2}\right) \\
+ & = \exp\left(  \sqrt{ \frac{m\omega}{2\hbar} }la^{\dagger}- \sqrt{ \frac{m\omega}{2\hbar} }la \right) \exp\left(  \frac{1}{2} \frac{m\omega}{2\hbar}l^{2} \right)
+\end{align}$$
 Therefore:
 $$\begin{align}
-\exp\left( - \frac{i}{\hbar}pl  \right)\ket{0}  & = \exp(\lambda|\lambda|^{2}) e^{-1/2}e^{a^{\dagger}}e^{-a}\ket{0}  \\
- & = \exp\left( \lambda|\lambda|^{2} \right) e^{a^{\dagger}} \sum_{j} \frac{1}{j!}(-1)^ja^j\ket{0}  \\
- & = \exp(\lambda|\lambda|^{2} )e^{a^{\dagger}  }\ket{0} 
+\exp\left(  \sqrt{ \frac{m\omega}{2\hbar} }la^{\dagger}-\sqrt{ \frac{m\omega}{2\hbar} }la \right)\ket{0}  & =\exp\left( - \frac{1}{2} \frac{m\omega}{2\hbar}l^{2} \right) \exp\left(  \sqrt{ \frac{m\omega}{2\hbar} }la^{\dagger} \right)\exp\left( - \sqrt{ \frac{m\omega}{2\hbar} } la\right) \ket{0} \\
+ & = \exp\left( - \frac{1}{2} \frac{m\omega}{2\hbar}l^{2} \right)\exp\left( \sqrt{ \frac{m\omega}{2\hbar} }la^{\dagger} \right)\ket{0} \\
+ & = \exp\left( - \frac{|\lambda|^{2}}{2} \right)\exp( \lambda a^{\dagger})\ket{0}   
 \end{align}$$
+This is indeed a coherent state. 
+
+Notice that the second step is because the Taylor expansion of $\exp\left(  - \sqrt{ \frac{m\omega}{2\hbar} }la \right)\ket{0}$ would contain polynomials of $a$ acting on $\ket{0}$. But any $a^n\ket{0}$ with $n\neq 0$ would yield $0$. Therefore $\exp\left( - \sqrt{ \frac{m\omega}{2\hbar} }la \right)\ket{0}=\ket{0}$
