@@ -293,16 +293,30 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Homework/Physics 511 Homework 6.md",
+                "file": "最大功.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Physics 511 Homework 6"
+              "title": "最大功"
+            }
+          },
+          {
+            "id": "ed619e26d6227625",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "液滴.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "液滴"
             }
           }
         ],
-        "currentTab": 20
+        "currentTab": 21
       }
     ],
     "direction": "vertical"
@@ -457,25 +471,28 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "5630b76fc5c22bf2",
+  "active": "ed619e26d6227625",
   "lastOpenFiles": [
-    "Pictures/Pasted image 20251022120348.png",
+    "最大功.md",
+    "液滴.md",
+    "熵.md",
+    "热力学平衡.md",
+    "Homework/Physics 510 Homework 3.md",
     "热力学中的求导.md",
+    "Homework/Physics 510 Homework 6.md",
     "Homework/Physics 511 Homework 6.md",
+    "Pictures/Pasted image 20251022120348.png",
     "Baker-Campbell-Hausdorff Formula.md",
     "Homework/Physics 511 Midterm Practice.md",
     "Clebsch-Gordan系数.md",
     "生成湮灭算符与角动量.md",
     "相对论动力学.md",
     "Homework/Physics 511 Homework 5.md",
-    "最大功.md",
     "Homework/Physics 510 Homework 2.md",
-    "Homework/Physics 510 Homework 6.md",
     "Homework/Physics 510 Homework 7.md",
     "Symmetries in EM.md",
     "Untitled.md",
     "Untitled 1.md",
-    "熵.md",
     "Homework/Physics 510 Homework 1.md",
     "气体.md",
     "正规矩阵的对角化.md",
@@ -483,8 +500,6 @@
     "Homework/Physics 510 Homework 4.md",
     "Experimental/Cantilever.md",
     "Experimental/Basic Electronics.md",
-    "Experimental/Transformer Comments.md",
-    "Experimental/VTI.md",
     "Pictures/heat_capacitance (3).png",
     "Pictures/Pasted image 20251005205645.png",
     "Pictures/Pasted image 20251005205341.png",
@@ -494,7 +509,6 @@
     "Pictures/wavefunction_classicalmix (2).png",
     "Pictures/heat_capacitance (2).png",
     "Pictures/heat_capacitance.png",
-    "Pictures/f8a3a087a1dc4e5f30f652e6e9408c8d.jpg",
     "Homework",
     "Pictures",
     "Experimental",
