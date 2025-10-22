@@ -101,8 +101,10 @@ $$\begin{align}
 \implies &  \frac{1}{n+1}|\lambda|^{2} \leq 1 \\
 \implies  & n \geq |\lambda|^{2}-1,\ n\in \mathbb{N}
 \end{align}$$
-Therefore, we conclude that:
-$$k=n= \lceil |\lambda|^{2}-1 \rceil=\lceil |\lambda|^{2} \rceil-1   $$
+If $|\lambda|^{2}\in \mathbb{N}$, then both $n=|\lambda|^{2}-1$ and $n=|\lambda|^{2}$ are equally likely. Therefore, conclude that $n=|\lambda|^{2}-1$ or $n=|\lambda|^{2}$ are both with the maximum probability. Then the energy associated with them are $\left( |\lambda|^{2}- \frac{1}{2} \right)\hbar \omega$ and $\left( |\lambda|^{2}+ \frac{1}{2} \right)\hbar \omega$ respectively. 
+
+If $|\lambda|^{2}\not\in \mathbb{N}$, then 
+$$n= \lceil |\lambda|^{2}-1 \rceil=\lceil |\lambda|^{2} \rceil-1   $$
 Then the most probable energy is $\left(   \lceil |\lambda|^{2} \rceil-\frac{1}{2} \right)\hbar \omega$
 
 ## d.

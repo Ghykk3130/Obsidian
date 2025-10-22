@@ -359,8 +359,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200,
-    "collapsed": true
+    "width": 200
   },
   "right": {
     "id": "9003d078f8dbc4ed",
@@ -460,8 +459,10 @@
   },
   "active": "5630b76fc5c22bf2",
   "lastOpenFiles": [
-    "Baker-Campbell-Hausdorff Formula.md",
+    "Pictures/Pasted image 20251022120348.png",
+    "热力学中的求导.md",
     "Homework/Physics 511 Homework 6.md",
+    "Baker-Campbell-Hausdorff Formula.md",
     "Homework/Physics 511 Midterm Practice.md",
     "Clebsch-Gordan系数.md",
     "生成湮灭算符与角动量.md",
@@ -474,7 +475,6 @@
     "Symmetries in EM.md",
     "Untitled.md",
     "Untitled 1.md",
-    "热力学中的求导.md",
     "熵.md",
     "Homework/Physics 510 Homework 1.md",
     "气体.md",
@@ -485,7 +485,6 @@
     "Experimental/Basic Electronics.md",
     "Experimental/Transformer Comments.md",
     "Experimental/VTI.md",
-    "Homework/Physics 511 Cheat sheet.md",
     "Pictures/heat_capacitance (3).png",
     "Pictures/Pasted image 20251005205645.png",
     "Pictures/Pasted image 20251005205341.png",
