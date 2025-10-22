@@ -215,7 +215,7 @@ $$S=kN\left[\ln\left( \frac{V}{h^{3}}  \left(  \frac{4\pi mE}{3N } \right)^{3/2}
 
 # 4.
 ## a).
-Fix the system energy $U$. Want to find the number of states with total energy $U$. Obviously, there are $\frac{U}{\hbar \omega_{0}}$ quanta of energies for us to distribute among the $3N$ degrees of freedom. 
+Fix the system  energy $U$. Want to find the number of states with total energy $U$. Obviously, there are $\frac{U}{\hbar \omega_{0}}$ quanta of energies for us to distribute among the $3N$ degrees of freedom. 
 
 This is equivalent to the problem of partition a set of $\frac{U}{\hbar \omega_{0}}$ elements into $3N$ subsets (possibly empty set.) We add $3N$ elements such that all the sets are non-empty. So we partition a set of $\frac{U}{\hbar \omega_{0}}+3N$ elements into $3N$ non-empty subsets. This is equivalent to putting $3N-1$ partitions into $\frac{U}{\hbar \omega_{0}}+3N-1$ slots. So:
 $$\Omega(U,N)= \frac{\left(  \frac{U}{\hbar \omega_{0}} +3N-1\right)!}{(3N-1)!\left(  \frac{U}{\hbar \omega_{0}} \right)!}$$
