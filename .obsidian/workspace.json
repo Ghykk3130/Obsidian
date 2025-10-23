@@ -321,12 +321,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "热力学中的求导.md",
+                "file": "Homework/Untitled.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "热力学中的求导"
+              "title": "Untitled"
             }
           }
         ],
@@ -487,6 +487,7 @@
   },
   "active": "a2acb124761d7ed7",
   "lastOpenFiles": [
+    "热力学中的求导.md",
     "热力学平衡.md",
     "熵.md",
     "热力学第一定律.md",
@@ -501,7 +502,6 @@
     "Homework/Physics 510 Homework 3.md",
     "液滴.md",
     "最大功.md",
-    "热力学中的求导.md",
     "Pictures/Pasted image 20251022120348.png",
     "Baker-Campbell-Hausdorff Formula.md",
     "Homework/Physics 511 Midterm Practice.md",

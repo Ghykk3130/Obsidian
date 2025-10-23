@@ -18,6 +18,9 @@ $$\begin{align}
 - For 2d system, reduce the dimension in the phase space for $\Omega$ calculation.
 - In thermodynamic limit, only ignore $\mathcal{O}(\ln N)$ term.
 - Don't forget the volume integral in phase space.
+- Expand potential by brut force when necessary.
+- When using Laplace's method, extend the integral to the entire real line.
+- Don't forget $\frac{1}{2}$ factor when doing multi-var Taylor expansion.
 
 Why not extending the canonical ensemble directly to grand canonical?
 Because we know the ratio of probability of a system with fixed $T$, but don't know the ratio across different $T$. 
