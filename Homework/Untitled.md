@@ -12,4 +12,4 @@ $$\begin{align}
 - Choose variables wisely for spherical caps.
 - Only calculate the absorbed heat one cycle for heat engine.
 - For possible heat exchange, check the first law, second law or Clausius' theorem.
-- 
+- Approximate $\coth x$.
