@@ -13,3 +13,11 @@ $$\begin{align}
 - Only calculate the absorbed heat one cycle for heat engine.
 - For possible heat exchange, check the first law, second law or Clausius' theorem.
 - Approximate $\coth x$.
+- Use equipartition theorem to avoid summing over functionals.
+- Initial conditions should be satisfied on the entire boundary.
+- For 2d system, reduce the dimension in the phase space for $\Omega$ calculation.
+- In thermodynamic limit, only ignore $\mathcal{O}(\ln N)$ term.
+- Don't forget the volume integral in phase space.
+
+Why not extending the canonical ensemble directly to grand canonical?
+Because we know the ratio of probability of a system with fixed $T$, but don't know the ratio across different $T$. 
