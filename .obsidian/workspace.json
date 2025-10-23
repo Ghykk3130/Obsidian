@@ -307,16 +307,30 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Homework/Physics 511 Homework 6.md",
+                "file": "Homework/Physics 510 Homework 6.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Physics 511 Homework 6"
+              "title": "Physics 510 Homework 6"
+            }
+          },
+          {
+            "id": "a2acb124761d7ed7",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Homework/Untitled.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Untitled"
             }
           }
         ],
-        "currentTab": 21
+        "currentTab": 22
       }
     ],
     "direction": "vertical"
@@ -471,9 +485,14 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "ed619e26d6227625",
+  "active": "a2acb124761d7ed7",
   "lastOpenFiles": [
     "Homework/Physics 510 Homework 5.md",
+    "Homework/Physics 510 Homework 4.md",
+    "Homework/Physics 510 Homework 7.md",
+    "Homework/Untitled.md",
+    "Homework/Physics 510 Homework 6.md",
+    "Homework/Physics 511 Homework 6.md",
     "Homework/Physics 510 Homework 2.md",
     "Homework/Physics 510 Homework 3.md",
     "液滴.md",
@@ -481,8 +500,6 @@
     "熵.md",
     "热力学平衡.md",
     "热力学中的求导.md",
-    "Homework/Physics 510 Homework 6.md",
-    "Homework/Physics 511 Homework 6.md",
     "Pictures/Pasted image 20251022120348.png",
     "Baker-Campbell-Hausdorff Formula.md",
     "Homework/Physics 511 Midterm Practice.md",
@@ -490,16 +507,13 @@
     "生成湮灭算符与角动量.md",
     "相对论动力学.md",
     "Homework/Physics 511 Homework 5.md",
-    "Homework/Physics 510 Homework 7.md",
     "Symmetries in EM.md",
     "Untitled.md",
     "Untitled 1.md",
     "Homework/Physics 510 Homework 1.md",
     "气体.md",
     "正规矩阵的对角化.md",
-    "Homework/Physics 510 Homework 4.md",
     "Experimental/Cantilever.md",
-    "Experimental/Basic Electronics.md",
     "Pictures/heat_capacitance (3).png",
     "Pictures/Pasted image 20251005205645.png",
     "Pictures/Pasted image 20251005205341.png",
