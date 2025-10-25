@@ -14,5 +14,8 @@ Then take $\lambda=1$ to get:
 $$U(S,V,N)= T(S,V,N)S-p(S,V,N)V+\mu(S,V,N)N$$
 # 2.
 ## (a).
-$$\mu_{H}=\mu_{p}=\mu_{e}$$
+Let $\mu_{p},\mu_{e}$ be the chemical potentials of $p^{+},e^{-}$ at the excited states. Then:
+$$\mu_{H}=\mu_{p}+\mu_{e}$$
+If I define $\mu_{p},\mu_{e}$ to be the chemical potentials of $p^{+},e^{-}$ at the ground states, then:
+$$\mu_{H}=\mu_{p}+\mu_{e}+\epsilon_{0}$$
 ## (b).
