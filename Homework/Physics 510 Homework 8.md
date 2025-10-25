@@ -14,8 +14,55 @@ Then take $\lambda=1$ to get:
 $$U(S,V,N)= T(S,V,N)S-p(S,V,N)V+\mu(S,V,N)N$$
 # 2.
 ## (a).
-Let $\mu_{p},\mu_{e}$ be the chemical potentials of $p^{+},e^{-}$ at the excited states. Then:
+Assume that the interaction between particles is weak, such that:
+$$F=F_{H}+F_{p^{+}}+F_{e^{-}}$$
+Let $\mu_{p},\mu_{e}$ be the chemical potentials of $p^{+},e^{-}$ at the excited states. Consider the change induced by particle numbers. Then at equilibrium, I have:
+$$\delta F=\mu_{H}\delta N_{H}+\mu_{p}\delta N_{p}+\mu_{e}\delta N_{e}=0$$
+Substitute in the constraint $\delta N_{H}=-\delta N_{p}=-\delta N_{e}$ to get:
 $$\mu_{H}=\mu_{p}+\mu_{e}$$
-If I define $\mu_{p},\mu_{e}$ to be the chemical potentials of $p^{+},e^{-}$ at the ground states, then:
-$$\mu_{H}=\mu_{p}+\mu_{e}+\epsilon_{0}$$
 ## (b).
+ First want to calculate the free energy of ideal monatomic gas. Consider the partition function:
+ $$\begin{align}
+Z & = \int \frac{d^{3N}qd^{3N}p}{h^{3N}N!} \exp\left( - \beta \sum_{i} \frac{p_{i}^{2}}{2m} \right)
+\end{align}$$
+Know that:
+$$\begin{align}
+\int d^{3N}q= V^N
+\end{align}$$
+$$\begin{align}
+\int d^{3N}p \exp\left( -\beta \sum \frac{p_{i}^{2}}{2m} \right) & = \left( \int dp_{1} \exp\left( -\beta \frac{p_{1}^{2}}{2m} \right) \right)^{3N} \\
+ & = \left( \frac{2\pi m}{\beta} \right)^{3N/2}
+\end{align}$$
+Therefore:
+$$Z= \frac{V^N}{h^{3N}N!} \left(  \frac{2\pi m}{\beta} \right)^{3N/2}$$
+Then:
+$$\begin{align}
+F & = - \frac{1}{\beta}\ln Z \\
+ & \approx - \frac{1}{ \beta}\left( N \ln\left(  \frac{V}{Nh^{3}}\left(  \frac{2\pi m}{\beta} \right)^{3/2} \right)+N \right)
+\end{align}$$
+Then we calculate the chemical potential from the free energy. We find:
+$$\begin{align}
+\mu & = \left(\frac{\partial F}{\partial N}\right)_{T,V} \\
+ & =  - \frac{1}{\beta}\ln\left(  \frac{V}{Nh^{3}}\left(  \frac{2\pi m}{\beta} \right)^{3/2} \right)+ \frac{N}{\beta} \frac{1}{\left(  \frac{2\pi m}{\beta} \right)^{3/2}} \frac{V}{N^{2}h^{3}}\left(  \frac{2\pi m}{\beta} \right)^{3/2}- \frac{1}{\beta} \\
+ & = - \frac{1}{\beta}\ln\left(  \frac{V}{Nh^{3}} \left(  \frac{2\pi m}{\beta} \right)^{3/2} \right)
+\end{align}$$
+Therefore, we have:
+$$\begin{align}
+ & \mu_{p}= - \frac{1}{\beta}\ln\left(  \frac{V}{N_{p}h^{3}}\left(  \frac{2\pi m_{p}}{\beta} \right)^{3/2} \right) \\
+ & \mu_{e}= - \frac{1}{\beta}\ln\left(  \frac{V}{N_{e}h^{3}}\left(  \frac{2\pi m_{e}}{\beta} \right)^{3/2} \right)
+\end{align}$$
+For the Hydrogen atom, the Hamiltonian is given by:
+$$H=\sum_{i} \frac{p_{i}^{2}}{2m_{H}}-N\epsilon_{0}$$
+This would lead to a term $e^{\beta N\epsilon_{0}}$ in $Z$, which leads to a term $-N\epsilon_{0}$ in $F_{H}$, which leads to a term $-\epsilon_{0}$ in $\mu_{H}$. So:
+$$\mu_{H}= - \frac{1}{\beta}\ln\left(  \frac{V}{N_{H}h^{3}}\left(  \frac{2\pi m_{H}}{\beta} \right)^{3/2} \right)-\epsilon_{0}$$
+Then:
+$$\begin{align}
+ & \mu_{H}=\mu_{p}+\mu_{e} \\
+\implies & - \ln\left(  \frac{V}{N_{H}h^{3}}\left(  \frac{2\pi m_{H}}{\beta} \right)^{3/2} \right)-\beta\epsilon_{0}=- \ln\left(  \frac{V}{N_{p}h^{3}}\left(  \frac{2\pi m_{p}}{\beta} \right)^{3/2} \right)- \ln\left(  \frac{V}{N_{e}h^{3}}\left(  \frac{2\pi m_{e}}{\beta} \right)^{3/2} \right) \\
+\implies & n_{H}h^{3}\left(  \frac{2\pi m_{H}}{\beta} \right)^{-3/2}e^{-\beta\epsilon_{0}}= n_{p}h^{3}\left(  \frac{2\pi m_{p}}{\beta} \right)^{-3/2} n_{e}h^{3}\left(  \frac{2\pi m_{e}}{\beta} \right)^{-3/2} \\
+\implies & h^{-3}n_{H}e^{-\beta\epsilon_{0}}\left(  \frac{2\pi m_{e}}{\beta} \right)^{3/2}= n_{p}n_{e} \\
+\implies & \frac{n_{p}n_{e}}{n_{H}} = \left(  \frac{2\pi m_{e}kT}{h^{2}} \right)^{3/2}e^{-\beta\epsilon_{0}}
+\end{align}$$
+where we assumed that $m_{H}\approx m_{p}$.
+
+## (c)
