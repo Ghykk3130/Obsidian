@@ -107,3 +107,33 @@ $$\begin{align}
 where $\Delta\epsilon=-6\epsilon$, that is the energy it takes to break 6 N-H bounds, with a minus sign. This is also the energy absorbed per reaction. 
 
 # 4.
+First find the partition function of the solid. Assume that an energy of $\epsilon_{0}$ would be released if one particle in the gas phase gets absorbed into the solid phase. Then:
+$$\begin{align}
+Z & =\sum_{\text{All states}}\exp\left( -\beta\left( \sum_{i}\hbar E_{i}-N\epsilon_{0} \\
+ \right) \right) \\
+ & = e^{\beta N\epsilon_{0}} \left( \sum_{\text{All states of particle 1}}\exp(-\beta E_{1}) \right)^{N} \\
+ & = e^{\beta N\epsilon_{0}} \left(  \frac{1}{1-e^{-\beta \hbar \omega}} \right)^N
+\end{align}$$
+Then we get:
+$$\begin{align}
+F & = - \frac{1}{\beta}\ln Z \\
+ & = \frac{N}{\beta}\ln( 1- e^{-\beta \hbar \omega})-N\epsilon_{0}
+\end{align}$$
+Therefore, the chemical potential of the solid is given by:
+$$\mu_{s}= \left( \frac{\partial F}{\partial N} \right)_{T,V}= \frac{1}{\beta}\ln(1-e^{-\beta \hbar \omega})-\epsilon_{0}$$
+By the similar technique we used in problem 2, I can write down the chemical potential of the gas phase:
+$$\mu_{g}= - \frac{1}{\beta}\ln\left(  \frac{V_{g}}{N_{g}} \frac{1}{\lambda^{3}} \right)$$
+We know that at equilibrium, the temperatures of the solid and the gas are the same. Assume that the total volume of the system is unchanged. Then the change in Free energy is given by:
+$$\delta F=\mu_{s}\delta N+\mu_{g}\delta N_{g}=0$$
+Know that the constraint is $\delta N+\delta N_{g}=0$. Then:
+$$\mu_{s}=\mu_{g}$$
+Then:
+$$\begin{align}
+ & - \frac{1}{\beta}\ln\left(  \frac{V_{g}}{N_{g}} \frac{1}{\lambda^{3}} \right) = \frac{1}{\beta}\ln(1-e^{-\beta \hbar \omega})-\epsilon_{0} \\
+\implies & \frac{N_{g}}{V_{g}}= \frac{1}{\lambda^{3}}(1-e^{-\beta \hbar \omega_{0}})e^{-\beta \epsilon_{0}}
+\end{align}$$
+Finally, we get:
+$$\begin{align}
+p_{g} & = \frac{N_{g}kT}{V_{g}}=\frac{kT}{\lambda^{3}}(1-e^{- \beta \hbar \omega})e^{-\beta\epsilon_{0}} \\
+ & = \frac{(2\pi m)^{3/2}}{h^{3}}(kT)^{5/2}(1-e^{-\beta \hbar \omega})e^{-\beta\epsilon_{0}}
+\end{align}$$
