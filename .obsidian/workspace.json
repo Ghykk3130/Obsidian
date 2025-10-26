@@ -363,12 +363,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Homework/Physics 510 Homework 8.md",
+                "file": "惯量张量.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Physics 510 Homework 8"
+              "title": "惯量张量"
             }
           }
         ],
@@ -544,9 +544,9 @@
   },
   "active": "ac390b852d7d3569",
   "lastOpenFiles": [
+    "Homework/Physics 510 Homework 8.md",
     "Homework/Physics 510 Homework 6.md",
     "Homework/Physics 510 Homework 7.md",
-    "Homework/Physics 510 Homework 8.md",
     "热力学势.md",
     "液滴.md",
     "熵.md",
