@@ -72,9 +72,9 @@ $$\left\{\begin{align}
  & n_{p}+n_{H}= 10^{20}
 \end{align}\right.$$
 Then easy to find that:
-$$n_{p}= 5.22 \times 10^{-12},n_{H}=10^{20}$$
+$$n_{p}= 5.68 \times 10^{-12},n_{H}=10^{20}$$
 Therefore:
-$$\frac{n_{p}}{n}=5.22 \times 10^{-32}$$
+$$\frac{n_{p}}{n}=5.68 \times 10^{-32}$$
 ## (d).
 Since we are solving:
 $$\frac{n_{p}^{2}}{n_{H}}= \frac{n_{p}^{2}}{n-n_{p}}= \left(  \frac{2\pi m_{e}kT}{h^{2}} \right)^{3/2}e^{-\beta\epsilon_{0}}$$
