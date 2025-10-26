@@ -15,7 +15,9 @@ $$U(S,V,N)= T(S,V,N)S-p(S,V,N)V+\mu(S,V,N)N$$
 # 2.
 ## (a).
 Assume that the interaction between particles is weak, such that:
-$$F=F_{H}+F_{p^{+}}+F_{e^{-}}$$
+$$F=F_{H}+F_{p^{}}+F_{e^{}}$$
+Know that at equilibrium, we must have:
+$$T_{H}=T_{p}=T_{e}$$
 Let $\mu_{p},\mu_{e}$ be the chemical potentials of $p^{+},e^{-}$ at the excited states. Consider the change induced by particle numbers. Then at equilibrium, I have:
 $$\delta F=\mu_{H}\delta N_{H}+\mu_{p}\delta N_{p}+\mu_{e}\delta N_{e}=0$$
 Substitute in the constraint $\delta N_{H}=-\delta N_{p}=-\delta N_{e}$ to get:
@@ -79,3 +81,29 @@ $$\frac{n_{p}}{n}=5.68 \times 10^{-32}$$
 Since we are solving:
 $$\frac{n_{p}^{2}}{n_{H}}= \frac{n_{p}^{2}}{n-n_{p}}= \left(  \frac{2\pi m_{e}kT}{h^{2}} \right)^{3/2}e^{-\beta\epsilon_{0}}$$
 We found that 
+
+# 3.
+## (a).
+Know that at equilibrium, the temperature must be the same. Then consider the change in Gibbs' free energy induced by the change of particle numbers:
+$$\delta G = \mu_{H_{2}}\delta N_{H_{2}}+\mu_{N_{2}}\delta N_{N_{2}}+\mu_{NH_{3}}\delta N_{NH_{3}}$$
+Know that the constraint is:
+$$3\delta N_{H_{2}}=\delta N_{N_{2}},-\delta N_{N_{2}}=2\delta N_{NH_{3}}$$
+Then must have:
+$$2\mu_{NH_{3}}=\mu_{N_{2}}+3\mu_{H_{2}} \tag{*}$$
+## (b).
+Similar to part (b) of 2, If I assume that the energy stored in one N-H bound is $\epsilon>0$, I can write down the chemical potentials:
+$$\begin{align}
+ & \mu_{NH_{3}}=- \frac{1}{\beta} \ln\left(  \frac{V}{N_{NH_{3}}h^{3}} \left( \frac{2\pi(m_{N}+3m_{H})}{\beta} \right)^{3/2}\right) = - \frac{1}{\beta}\ln\left( \frac{V}{N_{NH_{3}}} \frac{1}{\lambda_{3}^{3}} \right)-3\epsilon\\
+ & \mu_{H_{2}}=- \frac{1}{\beta}\ln\left(  \frac{V}{N_{H_{2}}h^{3}}\left(  \frac{4\pi m_{H}}{\beta} \right)^{3/2} \right)=- \frac{1}{\beta}\ln\left(  \frac{V}{N_{H_{2}}} \frac{1}{\lambda_{1}^{3}} \right) \\
+ & \mu_{N_{2}}= - \frac{1}{\beta}\ln\left(  \frac{V}{N_{N_{2}}h^{3}}\left(  \frac{4\pi m_{N} }{\beta} \right)^{3/2} \right)= - \frac{1}{\beta}\ln\left(  \frac{V}{N_{N_{2}}} \frac{1}{\lambda_{2}^{3}} \right)
+\end{align}$$
+## (c).
+Then substituting into $(*)$ to get:
+$$\begin{align}
+ & - \frac{2}{\beta}\ln\left(  \frac{V}{N_{NH_{3}}} \frac{1}{\lambda_{3}^{3}} \right)-6\epsilon \beta=- \frac{3}{\beta}\ln\left(  \frac{V}{N_{H_{2}}} \frac{1}{\lambda_{1} ^{3}} \right)- \frac{1}{\beta} \ln\left(  \frac{V}{N_{N_{2}}} \frac{1}{\lambda_{2}^{3}} \right) \\
+\implies & N_{a}^{2}[NH_{3}]^{2}\lambda_{3}^{6}\exp(-6\epsilon \beta)= N_{a}^{3}[H_{2}]^{3}\lambda_{1}^{9}N_{a}[N_{2}]\lambda_{2}^{3} \\
+\implies & \frac{[NH_{3}]^{2}}{[H_{2}]^{3}[N_{2}]}= \frac{\lambda_{1}^9\lambda_{2}^{3}}{\lambda_{3}^{6}}N_{a}^{2}\exp(6\epsilon \beta)=\frac{\lambda_{1}^9\lambda_{2}^{3}}{\lambda_{3}^{6}}N_{a}^{2}\exp(-\beta \Delta\epsilon)
+\end{align}$$
+where $\Delta\epsilon=-6\epsilon$, that is the energy it takes to break 6 N-H bounds, with a minus sign. This is also the energy absorbed per reaction. 
+
+# 4.
