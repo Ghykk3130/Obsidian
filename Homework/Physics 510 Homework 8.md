@@ -91,20 +91,20 @@ $$3\delta N_{H_{2}}=\delta N_{N_{2}},-\delta N_{N_{2}}=2\delta N_{NH_{3}}$$
 Then must have:
 $$2\mu_{NH_{3}}=\mu_{N_{2}}+3\mu_{H_{2}} \tag{*}$$
 ## (b).
-Similar to part (b) of 2, If I assume that the energy stored in one N-H bound is $\epsilon>0$, I can write down the chemical potentials:
+Similar to part (b) of 2, If I assume that the energy stored in one N-H bound is $\epsilon_{1}$, the energy stored in H-H bound is $\epsilon_{2}$, and the energy stored in N-N bound is $\epsilon_{3}$, I can write down the chemical potentials:
 $$\begin{align}
- & \mu_{NH_{3}}=- \frac{1}{\beta} \ln\left(  \frac{V}{N_{NH_{3}}h^{3}} \left( \frac{2\pi(m_{N}+3m_{H})}{\beta} \right)^{3/2}\right) = - \frac{1}{\beta}\ln\left( \frac{V}{N_{NH_{3}}} \frac{1}{\lambda_{3}^{3}} \right)-3\epsilon\\
- & \mu_{H_{2}}=- \frac{1}{\beta}\ln\left(  \frac{V}{N_{H_{2}}h^{3}}\left(  \frac{4\pi m_{H}}{\beta} \right)^{3/2} \right)=- \frac{1}{\beta}\ln\left(  \frac{V}{N_{H_{2}}} \frac{1}{\lambda_{1}^{3}} \right) \\
- & \mu_{N_{2}}= - \frac{1}{\beta}\ln\left(  \frac{V}{N_{N_{2}}h^{3}}\left(  \frac{4\pi m_{N} }{\beta} \right)^{3/2} \right)= - \frac{1}{\beta}\ln\left(  \frac{V}{N_{N_{2}}} \frac{1}{\lambda_{2}^{3}} \right)
+ & \mu_{NH_{3}}=- \frac{1}{\beta} \ln\left(  \frac{V}{N_{NH_{3}}h^{3}} \left( \frac{2\pi(m_{N}+3m_{H})}{\beta} \right)^{3/2}\right) = - \frac{1}{\beta}\ln\left( \frac{V}{N_{NH_{3}}} \frac{1}{\lambda_{3}^{3}} \right)-3\epsilon_{1}\\
+ & \mu_{H_{2}}=- \frac{1}{\beta}\ln\left(  \frac{V}{N_{H_{2}}h^{3}}\left(  \frac{4\pi m_{H}}{\beta} \right)^{3/2} \right)=- \frac{1}{\beta}\ln\left(  \frac{V}{N_{H_{2}}} \frac{1}{\lambda_{1}^{3}} \right)-\epsilon_{2} \\
+ & \mu_{N_{2}}= - \frac{1}{\beta}\ln\left(  \frac{V}{N_{N_{2}}h^{3}}\left(  \frac{4\pi m_{N} }{\beta} \right)^{3/2} \right)= - \frac{1}{\beta}\ln\left(  \frac{V}{N_{N_{2}}} \frac{1}{\lambda_{2}^{3}} \right)-\epsilon_{3}
 \end{align}$$
 ## (c).
 Then substituting into $(*)$ to get:
 $$\begin{align}
- & - \frac{2}{\beta}\ln\left(  \frac{V}{N_{NH_{3}}} \frac{1}{\lambda_{3}^{3}} \right)-6\epsilon \beta=- \frac{3}{\beta}\ln\left(  \frac{V}{N_{H_{2}}} \frac{1}{\lambda_{1} ^{3}} \right)- \frac{1}{\beta} \ln\left(  \frac{V}{N_{N_{2}}} \frac{1}{\lambda_{2}^{3}} \right) \\
-\implies & N_{a}^{2}[NH_{3}]^{2}\lambda_{3}^{6}\exp(-6\epsilon \beta)= N_{a}^{3}[H_{2}]^{3}\lambda_{1}^{9}N_{a}[N_{2}]\lambda_{2}^{3} \\
-\implies & \frac{[NH_{3}]^{2}}{[H_{2}]^{3}[N_{2}]}= \frac{\lambda_{1}^9\lambda_{2}^{3}}{\lambda_{3}^{6}}N_{a}^{2}\exp(6\epsilon \beta)=\frac{\lambda_{1}^9\lambda_{2}^{3}}{\lambda_{3}^{6}}N_{a}^{2}\exp(-\beta \Delta\epsilon)
+ & - \frac{2}{\beta}\ln\left(  \frac{V}{N_{NH_{3}}} \frac{1}{\lambda_{3}^{3}} \right)-6\epsilon_{1}=- \frac{3}{\beta}\ln\left(  \frac{V}{N_{H_{2}}} \frac{1}{\lambda_{1} ^{3}} \right)- \frac{1}{\beta} \ln\left(  \frac{V}{N_{N_{2}}} \frac{1}{\lambda_{2}^{3}} \right) -3\epsilon_{2}-\epsilon_{3}\\
+\implies & N_{a}^{2}[NH_{3}]^{2}\lambda_{3}^{6}\exp(-6\epsilon_{1} \beta+3\epsilon_{2}\beta+\epsilon_{3}\beta)= N_{a}^{3}[H_{2}]^{3}\lambda_{1}^{9}N_{a}[N_{2}]\lambda_{2}^{3} \\
+\implies & \frac{[NH_{3}]^{2}}{[H_{2}]^{3}[N_{2}]}= \frac{\lambda_{1}^9\lambda_{2}^{3}}{\lambda_{3}^{6}}N_{a}^{2}\exp(\beta(6\epsilon_{1}-3\epsilon_{2}-\epsilon_{3}))=\frac{\lambda_{1}^9\lambda_{2}^{3}}{\lambda_{3}^{6}}N_{a}^{2}\exp(-\beta \Delta\epsilon)
 \end{align}$$
-where $\Delta\epsilon=-6\epsilon$, that is the energy it takes to break 6 N-H bounds, with a minus sign. This is also the energy absorbed per reaction. 
+where $\Delta\epsilon=-6\epsilon_{1}+3\epsilon_{2}+\epsilon_{3}$, that is the energy absorbed per reaction. (For one reaction, need to break 3 H-H bounds, 1 N-N bound, and form 6 N-H bounds. Then the energy released is $6\epsilon_{1}-3\epsilon_{2}-\epsilon_{3}$)  
 
 # 4.
 First find the partition function of the solid. Assume that an energy of $\epsilon_{0}$ would be released if one particle in the gas phase gets absorbed into the solid phase. Then:
