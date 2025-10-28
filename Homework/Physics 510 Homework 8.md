@@ -80,7 +80,8 @@ $$\frac{n_{p}}{n}=5.68 \times 10^{-32}$$
 ## (d).
 Since we are solving:
 $$\frac{n_{p}^{2}}{n_{H}}= \frac{n_{p}^{2}}{n-n_{p}}= \left(  \frac{2\pi m_{e}kT}{h^{2}} \right)^{3/2}e^{-\beta\epsilon_{0}}$$
-We found that 
+If we define $a = \left( \frac{2\pi m_{e}kT}{h^{2}} \right)^{3/2}e^{-\beta\epsilon_{0}}$, then:
+$$\frac{n_{p}}{n}= \frac{- \frac{a}{n}+ \sqrt{ \left(  \frac{a}{n} \right)^{2} + \frac{4a}{n}}}{2}$$
 
 # 3.
 ## (a).
