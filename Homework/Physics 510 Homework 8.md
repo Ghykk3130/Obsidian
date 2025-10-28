@@ -104,7 +104,7 @@ $$\begin{align}
 \implies & N_{a}^{2}[NH_{3}]^{2}\lambda_{3}^{6}\exp(-6\epsilon_{1} \beta+3\epsilon_{2}\beta+\epsilon_{3}\beta)= N_{a}^{3}[H_{2}]^{3}\lambda_{1}^{9}N_{a}[N_{2}]\lambda_{2}^{3} \\
 \implies & \frac{[NH_{3}]^{2}}{[H_{2}]^{3}[N_{2}]}= \frac{\lambda_{1}^9\lambda_{2}^{3}}{\lambda_{3}^{6}}N_{a}^{2}\exp(\beta(6\epsilon_{1}-3\epsilon_{2}-\epsilon_{3}))=\frac{\lambda_{1}^9\lambda_{2}^{3}}{\lambda_{3}^{6}}N_{a}^{2}\exp(-\beta \Delta\epsilon)
 \end{align}$$
-where $\Delta\epsilon=-6\epsilon_{1}+3\epsilon_{2}+\epsilon_{3}$, that is the energy absorbed per reaction. (For one reaction, need to break 3 H-H bounds, 1 N-N bound, and form 6 N-H bounds. Then the energy released is $6\epsilon_{1}-3\epsilon_{2}-\epsilon_{3}$)  
+where $\Delta\epsilon=-6\epsilon_{1}+3\epsilon_{2}+\epsilon_{3}$, that is the energy absorbed per forward reaction. (For one reaction, need to break 3 H-H bounds, 1 N-N bound, and form 6 N-H bounds. Then the energy released is $6\epsilon_{1}-3\epsilon_{2}-\epsilon_{3}$)  
 
 # 4.
 First find the partition function of the solid. Assume that an energy of $\epsilon_{0}$ would be released if one particle in the gas phase gets absorbed into the solid phase. Then:
