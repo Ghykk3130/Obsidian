@@ -21,7 +21,9 @@ $$\frac{d^{2}}{d\xi^{2}}\psi-\xi \psi=0$$
 
 # 2. WKB
 
-考虑一个任意的势阱$V(x)$，我们想估计波函数。定义classical turning point为$x_{0}\text{ s.t. }V(x_{0})=E$。假设$V(x_{0})^{'}< 0$。
+考虑一个任意的势阱$V(x)$，我们想估计波函数。定义classical turning point为$x_{0}\text{ s.t. }V(x_{0})=E$。
+
+我们来看一个WKB的例子。假设$V(x_{0})^{'}< 0$。
 
 **classical turning point两侧较远区域：**
 
@@ -65,17 +67,28 @@ $$\psi(x)=AAi(\xi)+BBi(\xi)$$
 我们假设邻域的边界对于邻域解来说已经算很远了，即邻域的边界上我们取领域解的$\pm \infty$渐进解。
 
 在邻域的边界上，势阱线性近似同样有效。于是将$V(x)=V(x_{0})+V^{'}(x_{0})(x-x_{0})$代入$(* *)$可以得到边界上的非邻域 解：
-$$\psi_{\pm}= C_{\pm}\left(  \frac{1}{- \frac{2m}{\hbar^{2}}V^{'}(x-x_{0})} \right)^{1/4}\exp\left( \pm \sqrt{ \frac{-2mV^{'}}{\hbar^{2}} } \frac{2}{3}(x-x_{0})^{3/2}\right)$$
+$$\psi_{\pm}= C_{\pm}\left(  \frac{1}{- \frac{2m}{\hbar^{2}}V^{'}(x-x_{0})} \right)^{1/4}\exp\left( \pm i\sqrt{ \frac{-2mV^{'}}{\hbar^{2}} } \frac{2}{3}(x-x_{0})^{3/2}\right)$$
 容易看出，邻域左侧是forbidden region。这对应着Airy function在$\infty$的部分。（因为我们设$\xi= \left(  -\frac{2mV^{'}}{\hbar^{2}} \right)^{1/3}(x_{0}-x)$）。我们知道：
 $$\begin{align}
  & Ai(z) \sim \frac{1}{2\sqrt{ \pi } }z^{-1/4}\exp\left( - \frac{2}{3}z^{3/2} \right) \\
  & Bi(z) \sim \frac{1}{\sqrt{ \pi }}z^{-1/4}\exp\left(  \frac{2}{3}z^{3/2} \right)
 \end{align}$$
 
-因为左侧是forbidden region，我们期望波函数指数衰减到$0$。所以这必然对应着$\psi_{-}$。而容易看出，$\psi_{-}$和$Ai(z)$在邻域边界上可以匹配。
+因为左侧是forbidden region，我们期望波函数指数衰减到$0$。所以这必然对应着$\psi_{-}$。因为：
+$$\psi_{-}=C_{-}\left(  \frac{1}{V^{'}(x-x_{0})} \right)^{1/4}\exp\left( -\sqrt{ \frac{-2mV^{'}}{\hbar^{2}} } \frac{2}{3}(x_{0}-x)^{3/2} \right)$$
+这显然是一个在$x\rightarrow-\infty$时为$0$的函数。注意我们在计算的时候又吸收了一些常数进$C_{-}$。
 
-我们还容易直接算出：
-$$C_{-}= \frac{1}{2\sqrt{ \pi }}\left(  - \frac{2mV^{'}}{\hbar^{2}} \right)^{1/6}$$
+那么容易看出，$\psi_{-}$和$Ai(z)$在邻域边界上可以匹配。
+
+>[!Note] Caveat
+>在比较哪两个函数一样时，请对于变量是实数还是虚数非常小心。很容易出错的。
+
 
 现在在邻域内都是$Ai$，那么在邻域右侧，$Ai$的渐进表现如何呢？这对应着$Ai(z),z\rightarrow-\infty$。我们知道：
-$$Ai(z)=\frac{1}{\sqrt{ \pi }}|z|^{-1/4}\sin\left( \frac{2}{3}|z|^{3/2}+ \frac{\pi}{4} \right)$$
+$$Ai(z)=\frac{1}{\sqrt{ \pi }}|z|^{-1/4}\cos\left( \frac{2}{3}|z|^{3/2}- \frac{\pi}{4} \right)$$
+注意到两个WKB解在右侧邻域边界都是震荡的，所以可以取两个WKB解的线性组合。理应可以解得：
+$$\alpha \psi_{+}+\beta \psi_{-}=Ai\tag{***}$$
+用上述方程确定$\alpha,\beta$。之后可以得到右侧区域的解为$\alpha \psi_{+}+\beta \psi_{-}$。（这句话可能看起来有点多余。我的意思是，在$(* * *)$中我们找到$\alpha,\beta$来满足WKB解的渐进解满足方程的条件。然后因为渐进解的线性组合系数肯定和右侧更远区域的线性组合系数一样，所以可以得到右侧更远区域的解也是$\alpha \psi_{+}+\beta \psi_{-}$。）
+
+最后，我们再整体normalize一下就得到波函数近似解了。
+
