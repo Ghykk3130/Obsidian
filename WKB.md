@@ -38,17 +38,8 @@ $$\begin{align}
  & \frac{i}{\hbar} \frac{d^{2}}{dx^{2}}W- \frac{1}{\hbar^{2}}\left( \frac{d}{dx}W \right)^{2}+ \frac{2m(E-V)}{\hbar^{2}}=0 \\
 \implies & \hbar \frac{d^{2}}{dx^{2}}W- \left( \frac{d}{dx}W \right) ^{2}+2m(E-V)=0
 \end{align}$$
-在classical limit $\hbar\rightarrow {0}$下，我们可以忽略$\hbar \frac{d^{2}}{dx^{2}}W$。于是我们发现：
-$$\left|\frac{d}{dx}W\right| = \sqrt{ 2m(E-V) }=p$$
-这是经典动量（的大小）。那么，我们也就是在说：
-$$\hbar\left| \frac{d^{2}}{dx^{2}}W \right|\ll \left| \frac{d}{dx}W \right|^{2}$$
-$$\begin{align}
-\text{LHS}=\hbar \left|\frac{d^{2}}{dx^{2}}W\right| & \geq \hbar \frac{d}{dx}\left| \frac{d}{dx}W \right| \\
- & =\hbar \frac{dp}{dx}=\frac{1}{2\pi} \frac{d\lambda}{dx}
-\end{align}$$
-$$\text{RHS}=p^{2}$$
-所以：
-$$ \frac{d\lambda}{dx}\ll p^{2}$$
+在classical limit $\hbar\rightarrow {0}$下，我们可以忽略$\hbar \frac{d^{2}}{dx^{2}}W$。
+
 
 
 则我们可以解得一个初步的近似：
