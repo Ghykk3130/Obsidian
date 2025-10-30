@@ -78,7 +78,9 @@ Idea:
 
 ## 3.2 从classical turning point过渡到forbidden region
 
-不妨考虑从邻域过渡到forbidden region的区域。在这个区域，我们取$V(x)\approx V(x_{0})+V^{'}(x_{0})(x-x_{0})$。容易得到Schrodinger方程：
+不妨考虑从邻域过渡到forbidden region的区域。不妨设从左往右会从allowed region过渡到forbidden region。
+
+在classical turning point邻域，我们取$V(x)\approx V(x_{0})+V^{'}(x_{0})(x-x_{0})$。容易得到Schrodinger方程：
 $$- \frac{\hbar^{2}}{2m} \frac{d^{2}}{dx^{2}}\psi+V^{'}(x_{0})(x-x_{0})\psi=0\tag{1}$$
 于是两个WKB解分别为：
 $$\psi_{\pm}= \frac{1}{(V^{'}(x-x_{0}))^{1/4}}\exp\left( \mp \frac{1}{\hbar} \sqrt{2mV^{'}(x-x_{0}) } \frac{2}{3}(x-x_{0})^{3/2} \right)$$
@@ -105,35 +107,14 @@ $$Ai(\xi)\text{ and }Bi(\xi),\ \xi=\left(  \frac{2mV^{'}}{\hbar^{2}} \right)^{1/
 $$V^{'}(x-x_{0})=V-E$$
 所以两个WKB解“写回去”就是：
 $$\begin{align}
-\psi_{\pm}  & =\frac{1}{\sqrt{ V-E }}\exp\left( \mp \frac{1}{\hbar}\int dx^{'}\sqrt{ 2m(V-E) }  \right)
+\psi_{\pm}  & =\frac{1}{ (V-E)^{1/4} }\exp\left( \mp \frac{1}{\hbar}\int dx^{'}\sqrt{ 2m(V-E) }  \right)
 \end{align}$$
+前面还应乘以某个常数。
 
+我们应当取的WKB解为：
+$$\psi(x)= \frac{1}{ (V-E)^{1/4}}\exp\left( - \frac{1}{\hbar}\int^xdx^{'}\sqrt{ 2m(V-E) } \right)$$
 
-所以在这段区域内，$\sqrt{ 2m(V-E) }$是一个大于零的单调递增函数。所以$\int dx^{'}\sqrt{ 2m(V-E) }$也是一个大于零的单调递增函数。
-
-通过物理直觉可以知道，在forbidden region，波函数应当衰减。所以显然应当取$\psi_{+}$。
-
-接下来应当“匹配”WKB解与线性解。因为是forbidden一侧，所以在这个过渡区域内，线性解的behavior是$+\infty$的behavior。线性解为$AAi(\xi)+BBi(\xi)$。我们知道
-
-
-显然只有$Ai$符合衰减的趋势。所以我们知道在classical turning point邻域内，线性解就只是$Ai$。
-
-
-
-
-下面来看WKB解。显然exp的·argument为：
-$$\begin{align}
-i\int dx^{'}k(x^{'})  dx & =-\frac{1}{\hbar} \int dx^{'}\sqrt{ 2m(V-E) }  \\
-& \approx -\left(  \frac{2mV^{'}}{\hbar^{2}} \right)^{1/2} \frac{2}{3} (x-x_{0})^{3/2}
-\end{align}$$
-
-这和$Ai(\xi)$中的exp的argument是一致的！
-
-所以我们可以explicitly地写出过渡区域内的解：
-$$\psi(x)= \frac{1}{(V-E)^{1/4}}\exp\left( - \frac{1}{\hbar}\int dx^{'}\sqrt{ 2m(V-E) } \right)$$
-前面应该还有个常数。
-
-因为我们已经将其写为WKB解的形式，所以该解可以延伸到forbidden region。
+关于在过渡区域得到线性解和WKB解的方法，我们作如下总结：
 
 >[!Note] Idea
 >在过渡区域获得线性解的方式：
@@ -145,33 +126,38 @@ $$\psi(x)= \frac{1}{(V-E)^{1/4}}\exp\left( - \frac{1}{\hbar}\int dx^{'}\sqrt{ 2m
 >- 线性近似势能$V(x)\approx V(x_{0})+V^{'}(x_{0})(x-x_{0})$
 >- 代入Schrodinger方程，并匹配$k(x)$
 >- 将$k$代入WKB解，并算一下积分即可。
+
+^dfcb57
+
 ## 3.3 从classical turning point过渡到allowed region
 
 刚刚我们已经得出，classical turning point邻域内的线性解为$Ai$。在从邻域过渡到allowed region的区域内，线性解有如下渐进behavior：
 $$Ai(z)=\frac{1}{\sqrt{ \pi }}|z|^{-1/4}\cos\left( \frac{2}{3}|z|^{3/2}- \frac{\pi}{4} \right),\ z\rightarrow-\infty$$
-容易看出在这个区域内，两个WKB解$\psi_{\pm}$都是oscillatory的。于是匹配$\psi_{\pm}$的线性组合。要得到线性组合的系数，遵从一下步骤：
-- 在过渡区域内线性近似$V(x)\approx V(x_{0})+V^{'}(x_{0})(x-x_{0})$。
-- 用该线性近似势能得到WKB解和线性解。
-- 列方程得到线性组合系数。
+容易解得过渡区域内线性解：
+$$Ai(\xi),\ \text{where }\xi=\left(  \frac{2mV^{'}}{\hbar^{2}} \right)^{1/3}(x-x_{0})$$
+我们可以用[[WKB#^dfcb57|Idea]]获得过渡区域内的两个WKB解。通过过渡区域两个WKB解来和$Ai(\xi)$匹配，可以得到allowed region中的解。结果应当是两个解的线性组合。组合系数的相对比例可以算出来。这里就不仅算了。下面explicit地写出allowed region中的WKB解。
 
-我们来explicit地写出过渡区域内的解。因为过渡区域内WKB解和线性解一样，我们挑一个写就行。但是我们不知道WKB解的线性组合系数，就写线性解吧。考虑Schrodinger方程近似。这个近似与3.2中没有任何不同。所以Schrodinger方程近似同样为：
-$$- \frac{\hbar^{2}}{2m} \frac{d^{2}}{dx^{2}}\psi+V^{'}(x_{0})(x-x_{0})\psi=0$$
-我们同样可以匹配：
-$$\xi=\left( \frac{2mV^{'}}{\hbar^{2}} \right)^{1/3}(x-x_{0})<0$$
-所以：
-$$|\xi|=\left( \frac{2mV^{'}}{\hbar^{2}} \right)^{1/3}(x_{0}-x)$$
-所以cos的argument为：
-$$\frac{2}{3}\left( \frac{2mV^{'}}{\hbar^{2}} \right)^{1/2}(x_{0}-x)^{3/2}- \frac{\pi}{4}$$
-
-而我们发现，WKB解中的$k$为：
-$$k(x)=\sqrt{ \frac{-2mV^{'}(x_{0})(x-x_{0})}{\hbar^{2}} }= \sqrt{ \frac{2mV^{'}(x_{0}-x)}{\hbar^{2}} }$$
+在过渡区域内，cos的argument为：
+$$\begin{align}
+\frac{2}{3}\left( \frac{2mV^{'}}{\hbar^{2}} \right)^{1/2}(x_{0}-x)^{3/2}- \frac{\pi}{4}
+\end{align}$$
 注意到：
-$$\frac{2}{3}\left(  \frac{2mV^{'}}{\hbar^{2}} \right)^{1/2}(x_{0}-x)^{3/2}=-\int^x dx^{'}k(x^{'})=-\int^x dx^{'} \sqrt{ \frac{2m(E-V)}{\hbar^{2}} }$$
-所以过渡区域内的解可以写为：
-$$\psi(x)= \frac{2}{(E-V)^{1/4}}\cos\left( - \frac{1}{\hbar} \int^xdx^{'} \sqrt{ 2m(E-V) }- \frac{\pi}{4}  \right)$$
-前面应该还有一个常数。
+$$k = \sqrt{ \frac{2m(E-V)}{\hbar^{2}} }$$
+所以近似下来，容易算得：
+$$\int^xdx^{'}k(x^{'})= \frac{2}{3}\left(  \frac{2mV^{'}}{\hbar^{2}} \right)^{1/2}(x_{0}-x)^{3/2}$$
+所以将过渡区域内的解“写回去”可以得到：
 
-因为我们已经将其写为WKB解的形式，所以该解可以延伸到allowed region。
+$$\psi(x)= \frac{2}{(V-E)^{1/4}}\cos\left(  \frac{1}{\hbar}\int^xdx^{'}\sqrt{ 2m(E-V) }- \frac{\pi}{4} \right)$$
+
+### Remark
+
+**为什么前面有个系数2？**
+
+这是因为，在classical turning point邻域，线性解为$Ai(\xi),\ \xi= \left( \frac{2mV^{'}}{\hbar^{2}} \right)^{1/3}(x-x_{0})$。这个解在过渡到forbidden region时为$\frac{1}{2\sqrt{ \pi }}\xi^{-1/4}\exp\left( - \frac{2}{3}\xi^{3/2} \right)$。我们发现WKB的一个解的近似和这个函数一致，所以就将$\xi$全部写为$k$的函数拓展到整个forbidden region的WKB解。其中，我们吸收$2\sqrt{ \pi }$到常数，将解写为：
+$$\psi(x)= \frac{1}{ (V-E)^{1/4}}\exp\left( - \frac{1}{\hbar}\int^xdx^{'}\sqrt{ 2m(V-E) } \right)$$
+
+然后，线性解$Ai(\xi)$过渡到allowed region时为$Ai(\xi)=\frac{1}{\sqrt{ \pi }}|\xi|^{-1/4}\cos\left( \frac{2}{3}|\xi|^{3/2}- \frac{\pi}{4} \right)$。我们发现两个WKB解的近似的线性组合和这个函数一致。所以将$\xi$全部写成$k$的函数拓展到整个allowed region的WKB解。其中，为了保持和forbidden region的一致，我们还是吸收$2\sqrt{ \pi }$到常数。但这时前面就会多出系数2。
+
 
 我们总结一下匹配的想法：
 
@@ -181,4 +167,12 @@ $$\psi(x)= \frac{2}{(E-V)^{1/4}}\cos\left( - \frac{1}{\hbar} \int^xdx^{'} \sqrt{
 >- 将forbidden区域的过渡区域内的WKB解中的线性近似写回去，写为精确的势能。这个解就可以一直延伸到forbidden区域中去。
 >- 接下来在整个classical turning point邻域，波函数都是势能线性近似后算出的$Ai$。
 >- 在allowed region的过渡区域，解仍然是势能线性近似后的$Ai$。这个解和过渡区域内的WKB解完全一样。所以我们知道过渡区域的WKB解也是这个。（实际上应该是两个WKB解的线性组合。）将WKB解写回去，写为精确的势能。这个解就可以一直延伸到allowed区域中去。
+
+# 4. 
+
+考虑一个这样的势阱：
+
+<div style="text-align:center">
+<img src="Pasted image 20251029200725.png">
+</div>
 
