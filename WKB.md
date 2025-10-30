@@ -176,3 +176,32 @@ $$\psi(x)= \frac{1}{ (V-E)^{1/4}}\exp\left( - \frac{1}{\hbar}\int^xdx^{'}\sqrt{ 
 <img src="Pasted image 20251029200725.png">
 </div>
 
+考虑$I$中WKB解：
+$$\psi_{\pm}= \frac{1}{\left( - \frac{2mV^{'}}{\hbar^{2}}(x_{0}-x) \right)^{1/4}}\exp\left( \mp \sqrt{ - \frac{2mV^{'}}{\hbar^{2}} }(x_{0}-x)^{3/2} \right)$$
+其中我吸收了一些东西到常数里面，并略去常数不写。显然应当取$\psi_{+}$。于是“写回去”得到$I$区域中的WKB解：
+$$\psi(x)=\frac{1}{(V-E)^{1/4}}\exp\left( \frac{1}{\hbar}\int^xdx^{'}\sqrt{ 2m(V-E) } \right)$$
+将积分顺序稍微调换一下，随便取个积分常数，可以写为：
+$$\psi(x)= \frac{1}{(V-E)^{1/4}}\exp\left( - \frac{1}{\hbar}\int_{x_{1}}^x dx^{'}\sqrt{ 2m(V-E) }\right)$$
+其中，我吸收了一些东西进常数项，并略去常数项不写。
+
+考虑$I$到$II$过渡区域中的线性解：
+$$Ai(\xi),\text{ where }\xi=\left( - \frac{2mV^{'}}{\hbar^{2}} \right)^{1/3}(x_{0}-x)$$
+考虑在$II$区域线性解的渐进。则有：
+$$\begin{align}
+Ai(\xi) \sim \frac{1}{\sqrt{ \pi }}|\xi|^{-1/4}\cos\left( \frac{2}{3}|\xi |^{3/2}-\frac{\pi}{4} \right)
+\end{align}$$
+将它“写回去”，得到$II$中WKB解：
+$$\psi(x)= \frac{2}{(E-V)^{1/4}}\cos\left(  \frac{1}{\hbar}\int_{x_{1}}^xdx^{'}\sqrt{ 2m(E-V) }- \frac{\pi}{4} \right)$$
+
+而从$II$到$III$则完全和3.一样。所以得到$II$中WKB解为：
+$$\begin{align}
+\psi(x) & = \frac{2}{(E-V)^{1/4}}\cos\left(  -\frac{1}{\hbar}\int_{x_{2}}^{x}\sqrt{ 2m(E-V) }- \frac{\pi}{4} \right) \\
+ & = \frac{2}{(E-V)^{1/4}}\cos\left(  \frac{1}{\hbar}\int_{x_{2}}^{x_{}}\sqrt{ 2m(E-V) }+ \frac{\pi}{4} \right) \\
+ & = \frac{2}{(E-V)^{1/4}}\cos\left( - \frac{1}{\hbar}\int_{x}^{x_{2}}\sqrt{ 2m(E-V) } + \frac{\pi}{4}\right) 
+\end{align}$$
+$III$中WKB解为：
+$$\psi(x)=\frac{1}{(V-E)^{1/4}}\exp\left( - \frac{1}{\hbar} \int_{x_{1}}^{x}\sqrt{ 2m(V-E) } \right)$$
+
+
+
+
