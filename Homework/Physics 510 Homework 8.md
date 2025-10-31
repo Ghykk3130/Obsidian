@@ -80,9 +80,22 @@ $$\frac{n_{p}}{n}=5.68 \times 10^{-32}$$
 ## (d).
 Since we are solving:
 $$\frac{n_{p}^{2}}{n_{H}}= \frac{n_{p}^{2}}{n-n_{p}}= \left(  \frac{2\pi m_{e}kT}{h^{2}} \right)^{3/2}e^{-\beta\epsilon_{0}}$$
-If we define $a = \left( \frac{2\pi m_{e}kT}{h^{2}} \right)^{3/2}e^{-\beta\epsilon_{0}}$, then:
-$$\frac{n_{p}}{n}= \frac{- \frac{a}{n}+ \sqrt{ \left(  \frac{a}{n} \right)^{2} + \frac{4a}{n}}}{2}$$
-
+If we define $a = \left( \frac{2\pi m_{e}kT}{h^{2}} \right)^{3/2}e^{-\beta\epsilon_{0}}$, then it's easy to find (since it's just a quadratic equation)
+ that:
+ $$n_{p}= \frac{-a+\sqrt{ a^{2}+4an }}{2}$$
+ Then:
+ $$\frac{n_{p}}{n}= \frac{- \frac{a}{n}+ \sqrt{ \left(  \frac{a}{n} \right)^{2} + \frac{4a}{n}}}{2}$$
+Set $x:= \frac{a}{n}$, then we have:
+$$\begin{align}
+\frac{\partial}{\partial n}\left(  \frac{n_{p}}{n} \right)  & = \frac{-1+ \frac{1}{2} \frac{2x+4}{\sqrt{ x^{2}+4x }}}{2 } \frac{\partial x}{\partial n}
+\end{align}$$
+Observe that:
+$$\begin{align}
+-1+ \frac{1}{2} \frac{2x+4}{\sqrt{ x^{2}+4x }} & > -1+ \frac{1}{2} \frac{2x+4}{\sqrt{ x^{2}+4x+4 }} \\
+ &=-1+ \frac{1}{2} \frac{2x+4}{x+2} \\
+ & = 0
+\end{align}$$
+Obviously, $\frac{\partial x}{\partial n}=- \frac{a}{n^{2}}<0$. Therefore $\frac{\partial}{\partial n}\left(  \frac{n_{p}}{n} \right)<0$. As n decreases, the degree of ionization indeed increases.
 # 3.
 ## (a).
 Know that at equilibrium, the temperature must be the same. Then consider the change in Gibbs' free energy induced by the change of particle numbers:
