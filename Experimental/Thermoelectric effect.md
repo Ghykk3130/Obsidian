@@ -1,0 +1,2 @@
+- Copper blocks are attached using silver epoxy.
+- Pillars are attached using silver epoxy.
