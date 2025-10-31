@@ -76,7 +76,8 @@ $$\left\{\begin{align}
 Then easy to find that:
 $$n_{p}= 5.68 \times 10^{-12},n_{H}=10^{20}$$
 Therefore:
-$$\frac{n_{p}}{n}=5.68 \times 10^{-32}$$
+$$\frac{n_{p}}{n}=5.0263 \times 10^{-32}$$
+I noticed that this number is extremely sensitive to how many digits you keep in the computation process, since it's such a small number and computers have difficulty handling it. The order of magnitude should be correct.
 ## (d).
 Since we are solving:
 $$\frac{n_{p}^{2}}{n_{H}}= \frac{n_{p}^{2}}{n-n_{p}}= \left(  \frac{2\pi m_{e}kT}{h^{2}} \right)^{3/2}e^{-\beta\epsilon_{0}}$$
@@ -101,11 +102,11 @@ Obviously, $\frac{\partial x}{\partial n}=- \frac{a}{n^{2}}<0$. Therefore $\frac
 Know that at equilibrium, the temperature must be the same. Then consider the change in Gibbs' free energy induced by the change of particle numbers:
 $$\delta G = \mu_{H_{2}}\delta N_{H_{2}}+\mu_{N_{2}}\delta N_{N_{2}}+\mu_{NH_{3}}\delta N_{NH_{3}}$$
 Know that the constraint is:
-$$3\delta N_{H_{2}}=\delta N_{N_{2}},-\delta N_{N_{2}}=2\delta N_{NH_{3}}$$
+$$\delta N_{H_{2}}=3\delta N_{N_{2}},-2\delta N_{N_{2}}=\delta N_{NH_{3}}$$
 Then must have:
 $$2\mu_{NH_{3}}=\mu_{N_{2}}+3\mu_{H_{2}} \tag{*}$$
 ## (b).
-Similar to part (b) of 2, If I assume that the energy stored in one N-H bound is $\epsilon_{1}$, the energy stored in H-H bound is $\epsilon_{2}$, and the energy stored in N-N bound is $\epsilon_{3}$, I can write down the chemical potentials:
+Similar to part (b) of 2, If I assume that the energy stored in one N-H bound is $\epsilon_{1}$, the energy stored in H-H bound is $\epsilon_{2}$, and the energy stored in N-N bound is $\epsilon_{3}$, I can write down the chemical potentials (by energy stored, I mean the amount of energy it takes to break the bounds. It should be a positive value.):
 $$\begin{align}
  & \mu_{NH_{3}}=- \frac{1}{\beta} \ln\left(  \frac{V}{N_{NH_{3}}h^{3}} \left( \frac{2\pi(m_{N}+3m_{H})}{\beta} \right)^{3/2}\right) = - \frac{1}{\beta}\ln\left( \frac{V}{N_{NH_{3}}} \frac{1}{\lambda_{3}^{3}} \right)-3\epsilon_{1}\\
  & \mu_{H_{2}}=- \frac{1}{\beta}\ln\left(  \frac{V}{N_{H_{2}}h^{3}}\left(  \frac{4\pi m_{H}}{\beta} \right)^{3/2} \right)=- \frac{1}{\beta}\ln\left(  \frac{V}{N_{H_{2}}} \frac{1}{\lambda_{1}^{3}} \right)-\epsilon_{2} \\
@@ -118,23 +119,23 @@ $$\begin{align}
 \implies & N_{a}^{2}[NH_{3}]^{2}\lambda_{3}^{6}\exp(-6\epsilon_{1} \beta+3\epsilon_{2}\beta+\epsilon_{3}\beta)= N_{a}^{3}[H_{2}]^{3}\lambda_{1}^{9}N_{a}[N_{2}]\lambda_{2}^{3} \\
 \implies & \frac{[NH_{3}]^{2}}{[H_{2}]^{3}[N_{2}]}= \frac{\lambda_{1}^9\lambda_{2}^{3}}{\lambda_{3}^{6}}N_{a}^{2}\exp(\beta(6\epsilon_{1}-3\epsilon_{2}-\epsilon_{3}))=\frac{\lambda_{1}^9\lambda_{2}^{3}}{\lambda_{3}^{6}}N_{a}^{2}\exp(-\beta \Delta\epsilon)
 \end{align}$$
-where $\Delta\epsilon=-6\epsilon_{1}+3\epsilon_{2}+\epsilon_{3}$, that is the energy absorbed per forward reaction. (For one reaction, need to break 3 H-H bounds, 1 N-N bound, and form 6 N-H bounds. Then the energy released is $6\epsilon_{1}-3\epsilon_{2}-\epsilon_{3}$)  
+where $\Delta\epsilon=-6\epsilon_{1}+3\epsilon_{2}+\epsilon_{3}$, that is the energy absorbed into the system per forward reaction. (For one reaction, need to break 3 H-H bounds, 1 N-N bound, and form 6 N-H bounds. Then the energy released is $6\epsilon_{1}-3\epsilon_{2}-\epsilon_{3}$)  
 
 # 4.
-First find the partition function of the solid. Assume that an energy of $\epsilon_{0}$ would be released if one particle in the gas phase gets absorbed into the solid phase. Then:
+First find the partition function of the solid. Assume that an energy of $\epsilon_{0}$ would be released if one particle in the gas phase gets absorbed into the solid phase. Assume that there are $N$ particles in the solid. Then:
 $$\begin{align}
 Z & =\sum_{\text{All states}}\exp\left( -\beta\left( \sum_{i}\hbar E_{i}-N\epsilon_{0} \\
  \right) \right) \\
- & = e^{\beta N\epsilon_{0}} \left( \sum_{\text{All states of particle 1}}\exp(-\beta E_{1}) \right)^{N} \\
- & = e^{\beta N\epsilon_{0}} \left(  \frac{1}{1-e^{-\beta \hbar \omega}} \right)^N
+ & = e^{\beta N\epsilon_{0}} \left( \sum_{\text{All states of particle 1}}\exp(-\beta E_{1}) \right)^{3N} \\
+ & = e^{\beta N\epsilon_{0}} \left(  \frac{1}{1-e^{-\beta \hbar \omega}} \right)^{3N}
 \end{align}$$
 Then we get:
 $$\begin{align}
 F & = - \frac{1}{\beta}\ln Z \\
- & = \frac{N}{\beta}\ln( 1- e^{-\beta \hbar \omega})-N\epsilon_{0}
+ & = \frac{3N}{\beta}\ln( 1- e^{-\beta \hbar \omega})-N\epsilon_{0}
 \end{align}$$
 Therefore, the chemical potential of the solid is given by:
-$$\mu_{s}= \left( \frac{\partial F}{\partial N} \right)_{T,V}= \frac{1}{\beta}\ln(1-e^{-\beta \hbar \omega})-\epsilon_{0}$$
+$$\mu_{s}= \left( \frac{\partial F}{\partial N} \right)_{T,V}= \frac{3}{\beta}\ln(1-e^{-\beta \hbar \omega})-\epsilon_{0}$$
 By the similar technique we used in problem 2, I can write down the chemical potential of the gas phase:
 $$\mu_{g}= - \frac{1}{\beta}\ln\left(  \frac{V_{g}}{N_{g}} \frac{1}{\lambda^{3}} \right)$$
 We know that at equilibrium, the temperatures of the solid and the gas are the same. Assume that the total volume of the system is unchanged. Then the change in Free energy is given by:
@@ -143,11 +144,11 @@ Know that the constraint is $\delta N+\delta N_{g}=0$. Then:
 $$\mu_{s}=\mu_{g}$$
 Then:
 $$\begin{align}
- & - \frac{1}{\beta}\ln\left(  \frac{V_{g}}{N_{g}} \frac{1}{\lambda^{3}} \right) = \frac{1}{\beta}\ln(1-e^{-\beta \hbar \omega})-\epsilon_{0} \\
-\implies & \frac{N_{g}}{V_{g}}= \frac{1}{\lambda^{3}}(1-e^{-\beta \hbar \omega_{0}})e^{-\beta \epsilon_{0}}
+ & - \frac{1}{\beta}\ln\left(  \frac{V_{g}}{N_{g}} \frac{1}{\lambda^{3}} \right) = \frac{3}{\beta}\ln(1-e^{-\beta \hbar \omega})-\epsilon_{0} \\
+\implies & \frac{N_{g}}{V_{g}}= \frac{1}{\lambda^{3}}(1-e^{-\beta \hbar \omega_{0}})^{3}e^{-\beta \epsilon_{0}}
 \end{align}$$
 Finally, we get:
 $$\begin{align}
-p_{g} & = \frac{N_{g}kT}{V_{g}}=\frac{kT}{\lambda^{3}}(1-e^{- \beta \hbar \omega})e^{-\beta\epsilon_{0}} \\
- & = \frac{(2\pi m)^{3/2}}{h^{3}}(kT)^{5/2}(1-e^{-\beta \hbar \omega})e^{-\beta\epsilon_{0}}
+p_{g} & = \frac{N_{g}kT}{V_{g}}=\frac{kT}{\lambda^{3}}(1-e^{- \beta \hbar \omega})^{3}e^{-\beta\epsilon_{0}} \\
+ & = \frac{(2\pi m)^{3/2}}{h^{3}}(kT)^{5/2}(1-e^{-\beta \hbar \omega})^{3}e^{-\beta\epsilon_{0}}
 \end{align}$$
