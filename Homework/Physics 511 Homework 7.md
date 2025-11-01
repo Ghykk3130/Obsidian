@@ -14,6 +14,10 @@ $$\begin{align}
 \end{align}$$
 Then easy to find that:
 $$E=\left( \left( n+ \frac{1}{2} \right)\hbar \pi \right)^{3/2}\alpha^{1/4}(2m)^{-3/4}\left( \int_{-1}^1du\sqrt{ 1-u^6 } \right)^{-3/2}$$
+For $n=0$, I have:
+$$E = 3.586 \hbar^{3/2}\alpha^{1/4}(2m)^{-3/4}$$
+For $n=4$, I have:
+$$E = 23.950 \hbar^{3/2}\alpha^{1/4}(2m)^{-3/4}$$
 ## b).
 Set$x=a\xi$. Then we have:
 $$\begin{align}
