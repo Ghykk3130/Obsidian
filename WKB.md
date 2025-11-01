@@ -215,4 +215,4 @@ $$\psi(x)=\frac{1}{(V-E)^{1/4}}\exp\left( - \frac{1}{\hbar} \int_{x_{1}}^{x}\sqr
 
 
 
-
+ 

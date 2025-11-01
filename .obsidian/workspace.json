@@ -433,12 +433,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Homework/Physics 510 Homework 8.md",
+                "file": "WKB.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Physics 510 Homework 8"
+              "title": "WKB"
             }
           }
         ],
@@ -513,7 +513,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 200,
+    "collapsed": true
   },
   "right": {
     "id": "9003d078f8dbc4ed",
@@ -613,10 +614,10 @@
   },
   "active": "34b072f4916614fd",
   "lastOpenFiles": [
+    "Homework/Physics 510 Homework 8.md",
     "Homework/Physics 510 Homework 7.md",
     "Experimental/Thermoelectric effect.md",
     "Experimental/ECDL Comments.md",
-    "Homework/Physics 510 Homework 8.md",
     "Experimental/Untitled 1.md",
     "时间演化.md",
     "Untitled 2.md",
