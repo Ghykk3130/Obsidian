@@ -179,7 +179,9 @@ $$\psi(x)= \frac{1}{ (V-E)^{1/4}}\exp\left( - \frac{1}{\hbar}\int^xdx^{'}\sqrt{ 
 >- 接下来在整个classical turning point邻域，波函数都是势能线性近似后算出的$Ai$。
 >- 在allowed region的过渡区域，解仍然是势能线性近似后的$Ai$。这个解和过渡区域内的WKB解完全一样。所以我们知道过渡区域的WKB解也是这个。（实际上应该是两个WKB解的线性组合。）将WKB解写回去，写为精确的势能。这个解就可以一直延伸到allowed区域中去。
 
-# 4. 
+# 4. 一般势阱
+
+## 4.1 一般势阱的WKB解
 
 考虑一个这样的势阱：
 
@@ -211,8 +213,59 @@ $$\begin{align}
  & = \frac{2}{(E-V)^{1/4}}\cos\left( - \frac{1}{\hbar}\int_{x}^{x_{2}}\sqrt{ 2m(E-V) } + \frac{\pi}{4}\right) 
 \end{align}$$
 $III$中WKB解为：
-$$\psi(x)=\frac{1}{(V-E)^{1/4}}\exp\left( - \frac{1}{\hbar} \int_{x_{1}}^{x}\sqrt{ 2m(V-E) } \right)$$
+$$\psi(x)=\frac{1}{(V-E)^{1/4}}\exp\left( - \frac{1}{\hbar} \int_{x_{2}}^{x}\sqrt{ 2m(V-E) } \right)$$
+我们作如下总结：
+$$\begin{align}
+ & \text{transition around }x_{1}: \frac{1}{(V-E)^{1/4}}\exp\left(  =\frac{1}{\hbar}\int_{x_{}}^{x_{1}}dx^{'}\sqrt{ 2m(V-E) }  \right) \rightarrow \frac{2}{(E-V)^{1/4}}\cos\left(  \frac{1}{\hbar}\int_{x_{1}}^{x}dx^{'}\sqrt{ 2m(E-V) } - \frac{\pi}{4}\right) \\
+ & \text{transition around }x_{2}: \frac{2}{(E-V)^{1/4}}\cos\left(  \frac{1}{\hbar}\int_{x_{2}}^{x_{}}dx^{'}\sqrt{ 2m(E-V) } + \frac{\pi}{4}\right)\rightarrow \frac{1}{(V-E)^{1/4}}\exp\left( - \frac{1}{\hbar}\int_{x_{2}}^{x}dx^{'}\sqrt{ 2m(V-E) } \right)
+\end{align}$$
 
+## 4.2 能量量子化条件
 
+回顾我们4.1做了什么：我们在$x_{1}$附近得到oscillatory解和decay解。这两个解的相对amplitude由$x_{1}$邻域内Airy function连接，为某个可以算出来的值。但是amplitude的绝对大小没有定，还是一个待定自由度。这对于点$x_{2}$也是一样。
 
- 
+那么现在又两个amplitude自由度，一个控制$x_{1}$左右WKB解的amplitude，一个控制$x_{2}$左右WKB解的amplitude。
+
+因为$II$区域中的函数是唯一的，所以只要匹配$II$区域中的两个WKB解，就可以进一步将amplitude自由度削减到1。
+
+>[!Note] Claim
+The cosine phase difference of the two WKB solutions in $II$ is $n\pi,n\in \mathbb{Z}$ if and only if the amplitudes of the two sets of WKB solutions around $x_{1},x_{2}$ can be matched.
+
+这个claim应当是显然。从物理上来讲，$II$区域中波函数一定是唯一的，所以phase difference一定是$n\pi$。
+
+于是便有：
+$$\begin{align}
+ & \frac{1}{\hbar}\int_{x_{1}}^xdx^{'}\sqrt{ 2m(E-V) }- \frac{\pi}{4}- \frac{1}{\hbar}\int_{x_{2}}^xdx^{'}\sqrt{ 2m(E-V) }- \frac{\pi}{4}=n\pi \\
+\implies & \int_{x_{1}}^{x_{2}}dx^{'}\sqrt{ 2m(E-V) }= \left( n+ \frac{1}{2} \right)\hbar \pi
+\end{align}$$
+>[! Note] Proposition 1
+>The quantization rule of energy of an arbitrary potential well with allowed region $[x_{1},x_{2}]$ under WKB is:
+>$$\int_{x_{1}}^{x_{2}}dx^{'}\sqrt{ 2m(E-V) }=\left(  n+ \frac{1}{2} \right)\hbar \pi,n\in \mathbb{N}$$
+
+下面两个命题，在势阱一侧是正无限，通过对称取奇函数解拓展到整个实轴时有用：
+
+>[!Note] Proposition 2
+>If the quantization of energy is given by:
+>$$\int_{x_{1}}^{x_{2}}dx^{'}\sqrt{ 2m(E-V) }=\left( n+ \frac{1}{2} \right)\hbar \pi$$
+>
+>Then the number of nods in the allowed region $[x_{1},x_{2}]$ is $n$.
+## Proof.
+考虑allowed region中的解：
+$$\psi(x)= \frac{1}{(E-V)^{1/4}}\cos\left(  \frac{1}{\hbar}\int_{x_{1}}^xdx^{'}\sqrt{ 2m(E-V) }- \frac{\pi}{4} \right)$$
+回忆起：
+$$\text{the number of nodes}=\text{the number of points such that the trig function attains a zero}$$
+也就是说，我们想要$x$，such that:
+$$\frac{1}{\hbar}\int_{x_{1}}^xdx^{'}\sqrt{ 2m(E-V) }- \frac{\pi}{4}= \frac{\pi}{2}+  k\pi,x_{1}\leq x\leq x_{2}$$
+注意到$\frac{1}{\hbar} \int_{x_{1}}^xdx^{'}\sqrt{ 2m(E-V) }$是单调递增函数，最小值为$- \frac{\pi}{4}$，最大值为$\left( n+ \frac{1}{4} \right)\pi$。显然存在$n$个$x$使得它取到$k\pi$。
+>[!Rightarrow]
+>$\blacksquare$
+
+>[!Note] Proposition 3
+>If the potential well is even. Then:
+>- $\text{number of nodes}$ is even $\implies$ wavefunction is even.
+>- $\text{number of nodes}$ is odd $\implies$ wavefunction is odd.
+## Proof.
+因为势阱是偶函数，所以波函数必为奇函数或者偶函数。则allowed region是轴对称的。显然奇函数在allowed region内零点数必为奇数，偶函数在allowed region内零点数必为偶数。
+>[!Right]
+>$\blacksquare$
+
