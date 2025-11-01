@@ -29,3 +29,9 @@ $$K = \frac{2mE}{\hbar^{2}}\left(  \frac{\hbar^{2}}{2m\alpha} \right)^{1/4}$$
 Then we have:
 $$\frac{d^{2}}{d\xi^{2}}\psi-(\xi^6-K)\psi=0$$
 ## c).
+**For n = 0:**
+
+I found that if $K = 1.2$, diverges to $-\infty$. If $K = 1.1$, diverges to $\infty$. Observe that $\frac{|1.1-1.2|}{|1.1|}<0.1$, then conclude that $K = 1.1$.  Then $E = 1.1\hbar^{3/2}\alpha^{1/4}(2m)^{-3/4}$
+
+**For $n = 4$:**
+
