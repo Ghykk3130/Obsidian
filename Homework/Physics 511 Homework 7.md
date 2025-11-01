@@ -35,3 +35,5 @@ I found that if $K = 1.2$, diverges to $-\infty$. If $K = 1.1$, diverges to $\in
 
 **For $n = 4$:**
 
+I found that if $K = 21$, diverges to $\infty$. If $K = 22$, diverges to $-\infty$. Observe that $\frac{|22-21|}{|21|}<0.1$, then conclude that $K = 22$.  Then $E = 22\hbar^{3/2}\alpha^{1/4}(2m)^{-3/4}$
+
