@@ -502,7 +502,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "齐次",
+                "query": "",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -639,12 +639,12 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "f0f5c7ac89b7c1b8",
+  "active": "0bd5adf6a54a04e2",
   "lastOpenFiles": [
-    "系综（未完成）.md",
-    "密度算子.md",
-    "算子平均值的含义.md",
     "Homework/Physics 511 Homework 7.md",
+    "密度算子.md",
+    "系综（未完成）.md",
+    "算子平均值的含义.md",
     "Pictures/Pasted image 20251101214703.png",
     "WKB.md",
     "转动生成元.md",

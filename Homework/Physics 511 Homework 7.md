@@ -15,9 +15,9 @@ $$\begin{align}
 Then easy to find that:
 $$E=\left( \left( n+ \frac{1}{2} \right)\hbar \pi \right)^{3/2}\alpha^{1/4}(2m)^{-3/4}\left( \int_{-1}^1du\sqrt{ 1-u^6 } \right)^{-3/2}$$
 For $n=0$, I have:
-$$E = 3.586 \hbar^{3/2}\alpha^{1/4}(2m)^{-3/4}$$
+$$E = 0.801 \hbar^{3/2}\alpha^{1/4}(2m)^{-3/4}$$
 For $n=4$, I have:
-$$E = 23.950 \hbar^{3/2}\alpha^{1/4}(2m)^{-3/4}$$
+$$E = 21.622 \hbar^{3/2}\alpha^{1/4}(2m)^{-3/4}$$
 ## b).
 Set$x=a\xi$. Then we have:
 $$\begin{align}
@@ -39,7 +39,7 @@ I found that if $K = 21$, diverges to $\infty$. If $K = 22$, diverges to $-\inft
 
 I found that the result for $n=0$ is far from the WKB prediction, but the result for $n=4$ is close to the WKB prediction. 
 
-The solution for $n=4$ has the correct number of nodes. Notice that the classical turning point is given by $V=E$. This condition is equivalent to $\xi^6=K$. The found that for $n=4$, the classical forbidden region is roughly $[-1.67,1.67]$. Obviously, for $K=21.5$, there are four nodes in this region.
+The solution for $n=4$ has the correct number of nodes. Notice that the classical turning point is given by $V=E$. This condition is equivalent to $\xi^6=K$. Then found that for $n=4$, the classical forbidden region is roughly $[-1.67,1.67]$. Obviously, for $K=21.5$, there are four nodes in this region.
 <div style="text-align:center">
 <img src="Pasted image 20251101214703.png" width="300">
 </div>
@@ -94,7 +94,7 @@ $$\begin{align}
 \psi(x,t) & = \int dx^{'}K(x,t,x^{'},0)\psi(x^{'},0)
 \end{align}$$
 where $\psi(x^{'},0)$ is the wavefunction I found in $a)$, $K(x,t,x^{'},0)$ is the propagator of the free particle. Explicitly, I have:
-$$\psi(x,t)=\int dx^{'}\sqrt{ \frac{m}{2\pi i\hbar t} }\exp\left(  \frac{im(x-x^{'})^{2}}{2\hbar t} \right)\psi(x^{'},0)$$
+$$\psi(x,t)=\int_{\mathbb{R}} dx^{'}\sqrt{ \frac{m}{2\pi i\hbar t} }\exp\left(  \frac{im(x-x^{'})^{2}}{2\hbar t} \right)\left( \frac{m\lambda}{\hbar^{2}} \right)^{1/2}\exp\left( - \frac{m\lambda}{\hbar^{2}}|x| \right)$$
 # 4.
 We compute:
 $$\begin{align}
@@ -106,14 +106,15 @@ $$\begin{align}
 \int_{\mathbb{R}} dx\exp\left( \frac{im(x^{'}-x)^{2}}{2\hbar t}- \frac{x^{2}}{2a^{2}} \right)  & = \int dx\exp\left( \left( \frac{im}{2\hbar t}- \frac{1}{2a^{2}} \right)\left( x- \frac{1}{2} \frac{im}{\hbar t}\left( \frac{im}{2\hbar t}- \frac{1}{2a^{2}} \right)^{-1}x^{'} \right)^{2}- \frac{1}{4} \frac{m^{2}}{\hbar^{2}t^{2}}\left( \frac{im}{2\hbar t}- \frac{1}{2a^{2}} \right)^{-1}x^{'2}+ \frac{im}{2\hbar t}x^{'2} \right) \\
  & =\int dx\exp\left( \left(  \frac{im}{2\hbar t}- \frac{1}{2a^{2}} \right)\left( x- \frac{1}{2} \frac{im}{\hbar t}\left(  \frac{im}{2\hbar t}- \frac{1}{2a^{2}} \right)^{-1}x^{'} \right)^{2}+ \frac{im}{2\hbar t}\left(  \frac{m}{-m- \frac{i\hbar t}{a^{2}}}+1 \right)x^{'2} \right) \\  
 
- & = \frac{\sqrt{ \pi }}{\sqrt{ \frac{im}{2\hbar t}- \frac{1}{2a^{2}} }}\exp\left( \frac{im}{2\hbar t}\left(  \frac{m}{-m- \frac{i\hbar t}{^{2}}}+1 \right)x^{'2} \right)
+ & = \frac{\sqrt{ \pi }}{\sqrt{ -\frac{im}{2\hbar t}+ \frac{1}{2a^{2}} }}\exp\left( \frac{im}{2\hbar t}\left(  \frac{m}{-m- \frac{i\hbar t}{^{2}}}+1 \right)x^{'2} \right)
 \end{align}$$
 Therefore, I have:
 $$\begin{align}
-\psi(x^{'},t) & = \frac{\sqrt{ \pi }}{\sqrt{  \frac{im}{2\hbar t}- \frac{1}{2a^{2}} }}\exp\left(  \frac{im}{2\hbar t}\left(  \frac{m}{-m- \frac{i\hbar t}{a^{2}}}+1 \right)x^{'2} \right)N \sqrt{ \frac{m}{2\pi i\hbar t} } \\
- & = \sqrt{  \frac{m}{-m- \frac{i\hbar t}{a^{2}}} }N\exp\left(  \frac{im}{2\hbar t}\left(  \frac{m}{-m- \frac{i\hbar t}{a^{2}}}+1 \right)x^{'2} \right) \\
- & = \sqrt{ \frac{m}{-m- \frac{i\hbar t}{a^{2}}} }N\exp\left( -\frac{m}{2a^{2}} \frac{1}{m+ \frac{i\hbar t}{a^{2}}}x^{'2} \right) \\
- & = \sqrt{ \frac{ma^{2}}{-ma^{2}-i\hbar t} }N\exp\left( - \frac{m}{2a^{2}m+ 2i\hbar t}x^{'2} \right)
+\psi(x^{'},t) & = \frac{\sqrt{ \pi }}{\sqrt{ - \frac{im}{2\hbar t}+ \frac{1}{2a^{2}} }}\exp\left(  \frac{im}{2\hbar t}\left(  \frac{m}{-m- \frac{i\hbar t}{a^{2}}}+1 \right)x^{'2} \right)N \sqrt{ \frac{m}{2\pi i\hbar t} } \\
+ & = \sqrt{  \frac{m}{m+ \frac{i\hbar t}{a^{2}}} }N\exp\left(  \frac{im}{2\hbar t}\left(  \frac{m}{-m- \frac{i\hbar t}{a^{2}}}+1 \right)x^{'2} \right) \\
+ & = \sqrt{ \frac{m}{m+ \frac{i\hbar t}{a^{2}}} }N\exp\left( -\frac{m}{2a^{2}} \frac{1}{m+ \frac{i\hbar t}{a^{2}}}x^{'2} \right) \\
+ & = \sqrt{ \frac{ma^{2}}{ma^{2}+i\hbar t} }N\exp\left( - \frac{m}{2a^{2}m+ 2i\hbar t}x^{'2} \right)
 \end{align}
 $$
+
 
