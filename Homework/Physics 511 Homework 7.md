@@ -39,7 +39,7 @@ I found that if $K = 21$, diverges to $\infty$. If $K = 22$, diverges to $-\inft
 
 I found that the result for $n=0$ is far from the WKB prediction, but the result for $n=4$ is close to the WKB prediction. 
 
-The solution for $n=4$ has the correct number of nodes. Notice that the classical turning point is given by $V=E$. This condition is equivalent to $\xi^6=K$. Then found that for $n=4$, the classical forbidden region is roughly $[-1.67,1.67]$. Obviously, for $K=21.5$, there are four nodes in this region.
+The solution for $n=4$ has the correct number of nodes. Notice that the classical turning point is given by $V=E$. This condition is equivalent to $\xi^6=K$. Then found that for $n=4$, the classical allowed region is roughly $[-1.67,1.67]$. Obviously, for $K=21.5$, there are four nodes in this region.
 <div style="text-align:center">
 <img src="Pasted image 20251101214703.png" width="300">
 </div>
@@ -94,7 +94,7 @@ $$\begin{align}
 \psi(x,t) & = \int dx^{'}K(x,t,x^{'},0)\psi(x^{'},0)
 \end{align}$$
 where $\psi(x^{'},0)$ is the wavefunction I found in $a)$, $K(x,t,x^{'},0)$ is the propagator of the free particle. Explicitly, I have:
-$$\psi(x,t)=\int_{\mathbb{R}} dx^{'}\sqrt{ \frac{m}{2\pi i\hbar t} }\exp\left(  \frac{im(x-x^{'})^{2}}{2\hbar t} \right)\left( \frac{m\lambda}{\hbar^{2}} \right)^{1/2}\exp\left( - \frac{m\lambda}{\hbar^{2}}|x| \right)$$
+$$\psi(x,t)=\int_{\mathbb{R}} dx^{'}\sqrt{ \frac{m}{2\pi i\hbar t} }\exp\left(  \frac{im(x-x^{'})^{2}}{2\hbar t} \right)\left( \frac{m\lambda}{\hbar^{2}} \right)^{1/2}\exp\left( - \frac{m\lambda}{\hbar^{2}}|x^{'}| \right)$$
 # 4.
 We compute:
 $$\begin{align}
