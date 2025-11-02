@@ -37,3 +37,48 @@ I found that if $K = 1.2$, diverges to $-\infty$. If $K = 1.1$, diverges to $\in
 
 I found that if $K = 21$, diverges to $\infty$. If $K = 22$, diverges to $-\infty$. Observe that $\frac{|22-21|}{|21|}<0.1$, then conclude that $K = 22$.  Then $E = 22\hbar^{3/2}\alpha^{1/4}(2m)^{-3/4}$
 
+# 2.
+We compute:
+$$\begin{align}
+\bra{\vec{p}^{''},t} \vec{p}^{'},t_{0}\rangle & =\bra{\vec{p}^{''},t_{0}} \mathscr{U}(t,t_{0})\ket{\vec{p}^{'},t_{0}}  \\
+ & = \bra{\vec{p}^{''},t_{0}} \exp\left( - \frac{i}{\hbar} \frac{p^{2}}{2m}(t-t_{0}) \right) \ket{\vec{p}^{'},t_{0}}  \\
+ & = \bra{\vec{p}^{''},t_{0}} \vec{p}^{'},t_{0}\rangle \exp\left( - \frac{i}{\hbar} \frac{p^{'2}}{2m}(t-t_{0}) \right) \\
+ & = \delta^{3}(\vec{p}^{''}-\vec{p}^{'})\exp\left( - \frac{i}{\hbar} \frac{p^{'2}}{2m}(t-t_{0}) \right)
+\end{align}$$
+# 3.
+## a).
+For $x\neq 0$, I have:
+$$- \frac{\hbar^{2}}{2m}\psi=E\psi$$
+There are two independent solutions $\exp\left( \pm \sqrt{ -\frac{2mE}{\hbar^{2}} }x \right)$. Considering boundedness, easy to find that:
+$$\psi(x)=\left\{\begin{align}
+ & A\exp\left( -\sqrt{ - \frac{2mE}{\hbar^{2}} }x \right),x\geq0 \\
+ & B\exp\left( \sqrt{ -\frac{2mE}{\hbar^{2} }x } \right),x<0
+\end{align}\right.$$
+where $A,B$ are constants.
+
+Since $\delta(x)$ is even, $\psi(0)\neq 0$, I must conclude that $\psi(x)$ is even. So:
+$$\psi(x)=\left\{\begin{align}
+ & A\exp\left( -\sqrt{ - \frac{2mE}{\hbar^{2}} }x \right),x\geq0 \\
+ & A\exp\left( \sqrt{ -\frac{2mE}{\hbar^{2} }x } \right),x<0
+\end{align}\right.$$
+For normalization, consider:
+$$\begin{align}
+ & \int_{0}^{\infty}dx|\psi(x)|^{2}=\frac{1}{2} \\
+\implies & |A|^{2} \frac{1}{2} \sqrt{ -\frac{\hbar^{2}}{2mE} }= \frac{1}{2} \\
+\implies & A = \left(  - \frac{2mE}{\hbar^{2}} \right)^{1/4}
+\end{align}$$
+So:
+$$\psi(x)=\left\{\begin{align}
+ & \left( - \frac{2mE}{\hbar^{2}} \right)^{1/4}\exp\left( -\sqrt{ - \frac{2mE}{\hbar^{2}} }x \right),x\geq0 \\
+ & \left( - \frac{2mE}{\hbar^{2}} \right)^{1/4}\exp\left( \sqrt{ -\frac{2mE}{\hbar^{2} }x } \right),x<0
+\end{align}\right.$$
+## b).
+We have:
+$$\begin{align}
+\psi(x,t) & = \int dx^{'}K(x,t,x^{'},0)\psi(x^{'},0)
+\end{align}$$
+where $\psi(x^{'},0)$ is the wavefunction I found in $a)$, $K(x,t,x^{'},0)$ is the propagator of the free particle. Explicitly, I have:
+$$\begin{align}
+\psi(x,t)=\int dx^{'} \int_{\text{all paths }\Gamma \text{ connecting }x^{'}(0),\ x(t)}\mathscr{D}(\Gamma)\exp\left( \frac{i}{\hbar}S(\Gamma) \right)\psi(x^{'},0)
+\end{align}$$
+# 4.
