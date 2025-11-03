@@ -475,16 +475,30 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Untitled 2.md",
+                "file": "电流与电荷.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Untitled 2"
+              "title": "电流与电荷"
+            }
+          },
+          {
+            "id": "848c592c553b8003",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "磁性.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "磁性"
             }
           }
         ],
-        "currentTab": 33
+        "currentTab": 34
       }
     ],
     "direction": "vertical"
@@ -516,7 +530,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "dipole",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -653,20 +667,27 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "c19a8787e3b286f1",
+  "active": "848c592c553b8003",
   "lastOpenFiles": [
-    "Untitled.md",
+    "生成湮灭算符与角动量.md",
+    "磁性.md",
+    "系综（未完成）.md",
+    "系综.md",
+    "相对论电动力学.md",
+    "相对论动力学.md",
+    "算子平均值的含义.md",
+    "电流与电荷.md",
+    "路径积分.md",
+    "多级展开.md",
     "Untitled 2.md",
+    "Untitled.md",
     "Untitled 1.md",
     "Homework/Physics 510 Homework 9.md",
     "Homework/Physics 510 Homework 8.md",
     "Homework/Physics 510 Homework 6.md",
     "Homework/Physics 510 Homework 4.md",
-    "路径积分.md",
     "密度算子.md",
     "Homework/Physics 511 Homework 7.md",
-    "系综（未完成）.md",
-    "算子平均值的含义.md",
     "Pictures/Pasted image 20251101214703.png",
     "WKB.md",
     "转动生成元.md",
@@ -675,13 +696,6 @@
     "Homework/Physics 511 Homework 1.md",
     "Homework/Physics 511 Cheat sheet.md",
     "Homework/Physics 510 Homework 7.md",
-    "Homework/Physics 510 Homework 1.md",
-    "Homework/Physics 510 Homework 2.md",
-    "Homework/Physics 510 Homework 3.md",
-    "Homework/Physics 511 Midterm Practice.md",
-    "Schrodinger's and Heisenberg's pictures.md",
-    "Homework/Physics 511 Homework 6.md",
-    "Experimental/Thermoelectric effect.md",
     "Pictures/Pasted image 20251030202427.png",
     "Pictures/Pasted image 20251030202418.png",
     "Pictures/Pasted image 20251030202332.png",
