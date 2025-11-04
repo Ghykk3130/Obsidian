@@ -14,3 +14,9 @@ $$\begin{align}
 \end{align}$$
 add these four equations to obtain:
 $$V_{down}-V_{top}=(S_{1}-S_{2})(T_{1}-T_{2})$$
+
+Compound: $TmMn_{6}Sn_{6-x}Ga_{4.5}$
+
+sample width: $100\sim 150 \mu m$
+
+Sample mounting:
