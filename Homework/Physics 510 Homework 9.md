@@ -97,7 +97,58 @@ $$\begin{align}
  & =\sum_{k}p_{k}=1
 \end{align}$$
 Therefore, must obtain $\gamma+\gamma=1\implies \gamma= \frac{1}{2}$.
+ 
+The necessary conditions that the matrix is a density matrix is that:
+- $\gamma=\frac{1}{2}$
+- $\alpha ^{*}=\beta$
+- $|\alpha|=|\beta|\leq \frac{1}{2}$
 
 **Conditions for pure state:**
-If there is only one possible $k$, meaning that the state is pure, then:
-$$\sqrt{ |\bra{i} \psi\rangle| }$$
+It's easy to find the eigenvalues of the matrix:
+$$\begin{vmatrix}
+\frac{1}{2} - \lambda & \alpha \\
+\alpha ^{*} & \frac{1}{2}-\lambda 
+\end{vmatrix}=0\implies \lambda= \frac{1}{2}\pm |\alpha|$$
+Know that for idempotent operators, the determinant must be $0$ or $1$. Because:
+$$\rho^{2}=\rho \implies \det(\rho^{2})=\det(\rho)^{2}=\det(\rho) \implies \det(\rho)=0\text{ or }1$$
+Know that:
+$$\det(\rho)=\left(  \frac{1}{2}+|\alpha| \right)\left(  \frac{1}{2}- |\alpha| \right)= \frac{1}{4}-|\alpha|^{2}<1$$
+Then must conclude:
+$$\frac{1}{4}-|\alpha|^{2}=0\implies|\alpha|= \frac{1}{2}$$
+Therefore, the necessary condition for $\rho$ to represent a pure state is that $|\alpha|= \frac{1}{2}$
+
+# 3.
+Suppose the population ratio of the particles from $(1)$ is $p_{1}$, and the population of the particles from $(2)$ is $p_{2}$, where $p_{1}+p_{2}=1$. Then the density operator is:
+$$\rho=p_{1}\ket{+z} \bra{+z} +p_{2}\ket{-x} \bra{-x} $$
+Know that the representation of $\ket{+z}\bra{+z}$ in the $\{ \ket{\pm z} \}$ basis is:
+$$\begin{pmatrix}
+1 & 0 \\
+0 & 0
+\end{pmatrix}$$
+Know compute the representation of $\ket{-x}\bra{-x}$. First recall that:
+$$\ket{-x} = \frac{\sqrt{ 2 }}{2}\ket{+z} - \frac{\sqrt{ 2 }}{2}\ket{-z} $$
+Then:
+$$\ket{-x} \bra{-x} = \frac{1}{2}(\ket{+z} -\ket{-z} )(\bra{+z} -\bra{-z} )$$
+Then:
+$$\begin{align}
+ & \bra{+z} -x\rangle\bra{-x} +z\rangle= \frac{1}{2} \\
+ & \bra{+z} -x\rangle\bra{-x} -z\rangle=- \frac{1}{2} \\
+ & \bra{-z} -x\rangle\bra{-x} +z\rangle = - \frac{1}{2} \\
+ & \bra{-z} -x\rangle\bra{-x} -z\rangle= \frac{1}{2}
+\end{align}$$
+So the matrix representation is:
+$$\begin{pmatrix}
+\frac{1}{2} & - \frac{1}{2} \\
+- \frac{1}{2} & \frac{1}{2}
+\end{pmatrix}$$
+Therefore the density matrix representation is:
+$$p_{1}\begin{pmatrix}
+1 & 0 \\
+0 & 0
+\end{pmatrix}+ p_{2}\begin{pmatrix}
+\frac{1}{2} & - \frac{1}{2} \\
+- \frac{1}{2} &  \frac{1}{2}
+\end{pmatrix}= \begin{pmatrix}
+p_{1}+ \frac{1}{2}p_{2} & - \frac{1}{2}p_{2} \\
+- \frac{1}{2}p_{2} & \frac{1}{2}p_{2}
+\end{pmatrix}$$

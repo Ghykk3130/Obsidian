@@ -489,12 +489,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Homework/Physics 510 Homework 9.md",
+                "file": "磁性.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Physics 510 Homework 9"
+              "title": "磁性"
             }
           }
         ],
@@ -569,8 +569,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200,
-    "collapsed": true
+    "width": 200
   },
   "right": {
     "id": "9003d078f8dbc4ed",
@@ -670,6 +669,8 @@
   },
   "active": "848c592c553b8003",
   "lastOpenFiles": [
+    "Homework/Physics 511 Midterm Practice.md",
+    "Homework/Physics 510 Homework 9.md",
     "Experimental/Thermoelectric effect.md",
     "Pictures/9f563e07fc71c438db42a86e40db7412.jpg",
     "磁性.md",
@@ -685,7 +686,6 @@
     "Untitled 2.md",
     "Untitled.md",
     "Untitled 1.md",
-    "Homework/Physics 510 Homework 9.md",
     "Homework/Physics 510 Homework 8.md",
     "Homework/Physics 510 Homework 6.md",
     "Homework/Physics 510 Homework 4.md",
@@ -697,7 +697,6 @@
     "Degenerate Fermi Gas.md",
     "Clebsch-Gordan系数.md",
     "Homework/Physics 511 Homework 1.md",
-    "Homework/Physics 511 Cheat sheet.md",
     "Pictures/Pasted image 20251030202427.png",
     "Pictures/Pasted image 20251030202418.png",
     "Pictures/Pasted image 20251030202332.png",
