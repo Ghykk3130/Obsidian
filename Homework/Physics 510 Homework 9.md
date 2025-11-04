@@ -75,6 +75,7 @@ $$\rho^{2} \neq \rho$$
 Otherwise, if $\rho^{2}=\rho$, I have $Tr(\rho^{2})=Tr(\rho)=1$.
 
 # 2.
+**Conditions for density matrix:**
 Know that if the density operator is $\rho=\sum_{k}p_{k} \ket{\psi_{k}}\bra{\psi_{k}}$, then we have:
 $$\begin{align}
  & \bra{i} \rho \ket{j} =\sum_{k}p_{k}\bra{i} \psi_{k}\rangle \bra{\psi_{k}} j\rangle \\
@@ -82,10 +83,21 @@ $$\begin{align}
 \end{align}$$
 where $\{ \ket{i} \}$ is an arbitrary orthonormal basis. Then must have $\bra{i}\rho \ket{j}=\bra{j}\rho \ket{i}^{*}$. Then $\beta=\alpha ^{*}$. 
 
-Also, I have:
+Also, I observe, for $i\neq j$:
+$$\begin{align}
+|\alpha| & =|\bra{i} \rho \ket{j}  |  \\
+& = \sum_{k}p_{k} |\bra{i} \psi_{k}\rangle ||\bra{\psi_{k}} j\rangle | \\
+\end{align}$$
+According to GM-QM inequality:
+$$\sqrt{ |\bra{i} \psi_{k}\rangle||\bra{\psi_{k}} j\rangle| }\leq \sqrt{ \frac{|\bra{i} \psi_{k}\rangle|^{2}+|\bra{\psi_{k}} j\rangle|^{2}}{2} }= \frac{1}{\sqrt{ 2 }}$$
+Then:
+$$|\beta|=|\alpha|\leq \frac{1}{2}\sum_{k}p_{k}= \frac{1}{2}$$ For the diagonal element, I have:
 $$\begin{align}
 \sum_{i} \bra{i} \rho \ket{i}  & =\sum_{k}p_{k}\sum_{i}|\bra{i} \psi_{k}\rangle|^{2} \\
  & =\sum_{k}p_{k}=1
 \end{align}$$
 Therefore, must obtain $\gamma+\gamma=1\implies \gamma= \frac{1}{2}$.
 
+**Conditions for pure state:**
+If there is only one possible $k$, meaning that the state is pure, then:
+$$\sqrt{ |\bra{i} \psi\rangle| }$$
