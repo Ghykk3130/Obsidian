@@ -74,3 +74,18 @@ Then must have:
 $$\rho^{2} \neq \rho$$
 Otherwise, if $\rho^{2}=\rho$, I have $Tr(\rho^{2})=Tr(\rho)=1$.
 
+# 2.
+Know that if the density operator is $\rho=\sum_{k}p_{k} \ket{\psi_{k}}\bra{\psi_{k}}$, then we have:
+$$\begin{align}
+ & \bra{i} \rho \ket{j} =\sum_{k}p_{k}\bra{i} \psi_{k}\rangle \bra{\psi_{k}} j\rangle \\
+ & \bra{j} \rho \ket{i} =\sum_{k}p_{k}\bra{j} \psi_{k}\rangle \bra{\psi_{k}} i\rangle 
+\end{align}$$
+where $\{ \ket{i} \}$ is an arbitrary orthonormal basis. Then must have $\bra{i}\rho \ket{j}=\bra{j}\rho \ket{i}^{*}$. Then $\beta=\alpha ^{*}$. 
+
+Also, I have:
+$$\begin{align}
+\sum_{i} \bra{i} \rho \ket{i}  & =\sum_{k}p_{k}\sum_{i}|\bra{i} \psi_{k}\rangle|^{2} \\
+ & =\sum_{k}p_{k}=1
+\end{align}$$
+Therefore, must obtain $\gamma+\gamma=1\implies \gamma= \frac{1}{2}$.
+
