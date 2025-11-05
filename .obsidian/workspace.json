@@ -530,7 +530,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "density operator",
+                "query": "惯量张量",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -670,6 +670,8 @@
   },
   "active": "848c592c553b8003",
   "lastOpenFiles": [
+    "惯量张量与刚体动能.md",
+    "气体.md",
     "Homework/Physics 510 Homework 9.md",
     "Homework/Physics 510 Homework 8.md",
     "Experimental/Thermoelectric effect of.md",
@@ -696,8 +698,6 @@
     "Pictures/Pasted image 20251101214703.png",
     "WKB.md",
     "Degenerate Fermi Gas.md",
-    "Clebsch-Gordan系数.md",
-    "Homework/Physics 511 Homework 1.md",
     "Pictures/Pasted image 20251030202427.png",
     "Pictures/Pasted image 20251030202418.png",
     "Pictures/Pasted image 20251030202332.png",
