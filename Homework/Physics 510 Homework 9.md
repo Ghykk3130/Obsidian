@@ -183,3 +183,8 @@ Therefore:
 $$\begin{align}
 \langle x^{2}\rangle & = \frac{\hbar}{m\omega}\left( 1+2\exp\left( - \frac{\beta \hbar \omega}{2} \right) \right)
 \end{align}$$
+# 5.
+## (a).
+
+First consider the classical Hamiltonian. Let the number of diatomic molecules be $N$. Then for the ith molecule, the Hamiltonian is:
+$$H_{i}= \frac{L_{i}^{2}}{2I}+ \sum_{j=1}^3\frac{p_{ij}^{2}}{2m}+ \sum_{j=1}^3 \frac{1}{2}kq_{j}^{2}$$
