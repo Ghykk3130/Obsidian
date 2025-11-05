@@ -160,3 +160,26 @@ p_{1}+ \frac{1}{2}p_{2} & - \frac{1}{2}p_{2} \\
 - \frac{1}{2}p_{2} & \frac{1}{2}p_{2}
 \end{pmatrix}$$
 # 4.
+Choose the energy eigenkets $\{ \ket{n} \}$ as the basis. Then:
+$$\begin{align}
+Z & = Tr(e^{-\beta H}) \\
+ & = \sum_{n}\bra{n} e^{-\beta H}\ket{n}  \\
+ & = \sum \exp\left( - \beta \hbar \omega\left( n+ \frac{1}{2} \right) \right) \\
+ & = \frac{\exp\left( - \beta \frac{\hbar \omega}{2} \right)}{1- \exp(-\beta \hbar \omega)}
+\end{align}$$
+$\langle x^{2}\rangle$ is given by:
+$$\begin{align}
+\langle x^{2}\rangle & = Tr(x^{2}\rho) \\
+ & = \sum_{n}\bra{n} x^{2} \frac{\exp(-\beta H)}{Z}\ket{n}  \\
+ & = \frac{1}{Z} \sum \bra{n}\left(  \frac{-2}{m\omega^{2}} \frac{\partial}{\partial \beta}\exp\left( -\beta\left( \frac{p^{2}}{2m}+ \frac{1}{2}m\omega^{2}x^{2} \right) \right) \right)\ket{n} \\
+ & = \frac{1}{Z} \frac{-2}{m\omega^{2}} \frac{\partial}{\partial \beta}\sum \bra{n} \exp(-\beta H)\ket{n}  \\
+ & =   - \frac{2}{m\omega^{2}} \frac{\partial}{\partial \beta}\ln Z 
+\end{align}$$
+We compute:
+$$\begin{align}
+\frac{\partial}{\partial \beta}\ln Z & = - \frac{\hbar \omega}{2}- \frac{\hbar \omega \exp(-\beta \hbar \omega) }{1-\exp(-\beta \hbar \omega)}
+\end{align}$$
+Therefore:
+$$\begin{align}
+\langle x^{2}\rangle & = \frac{\hbar}{m\omega}\left( 1+2\exp\left( - \frac{\beta \hbar \omega}{2} \right) \right)
+\end{align}$$
