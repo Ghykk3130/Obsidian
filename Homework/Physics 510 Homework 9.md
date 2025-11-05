@@ -1,4 +1,4 @@
-# 1.
+ # 1.
 ## (a).
 Let the density operator be written as a classical mixture of $\ket{\psi_{k}}$ with probability $p_{k}$. Then:
 $$\begin{align}
