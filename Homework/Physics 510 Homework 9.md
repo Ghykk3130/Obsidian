@@ -186,5 +186,12 @@ $$\begin{align}
 # 5.
 ## (a).
 
-First consider the classical Hamiltonian. Let the number of diatomic molecules be $N$. Then for the ith molecule, the Hamiltonian is:
-$$H_{i}= \frac{L_{i}^{2}}{2I}+ \sum_{j=1}^3\frac{p_{ij}^{2}}{2m}+ \sum_{j=1}^3 \frac{1}{2}kq_{j}^{2}$$
+First consider the classical Hamiltonian. Let the number of diatomic molecules be $N$. Consider a single diatomic molecule. The Hamiltonian is given by:
+$$\begin{align}
+H & = \frac{L^{2}}{2I}+ 
+\end{align}$$
+
+
+
+
+Then for the ith molecule, the Hamiltonian is:
