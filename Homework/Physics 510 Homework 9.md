@@ -32,44 +32,51 @@ This is because that the probability $p_{k}$ also has to be normalized.
 We have:
 $$\begin{align}
 \rho^{2} & =\left( \sum_{i}p_{i}\ket{\psi_{i}} \bra{\psi_{i}}   \right)\left( \sum_{j}p_{j}\ket{\psi_{j}} \bra{\psi_{j}}  \right) \\
- & = \sum_{i}p_{i}^{2}\ket{\psi_{i}} \bra{\psi_{i}}   
+ & = \sum_{i,j }p_{i}p_{j}\ket{\psi_{i}} \bra{\psi_{i}} \psi_{j}\rangle \bra{\psi_{j}} 
 \end{align}$$
-Then similarly, after choosing an orthonormal basis $\{ \ket{\alpha} \}$, I have:
+$\rho^{2}$ is Hermitian because:
 $$\begin{align}
-Tr(\rho^{2}) & =\sum_{i}p_{i}^{2}
+(\rho^{2})^{\dagger} & =(\rho \rho)^{\dagger} \\
+ & = \rho ^{\dagger}\rho ^{\dagger} \\
+ & = \rho \rho=\rho^{2}
 \end{align}$$
-Know that $0\leq p_{i} \leq{1}$, then $p_{i}^{2}\leq p_{i}$. Therefore:
-$$Tr(\rho^{2})=\sum_{i}p_{i}^{2}\leq \sum_{i}p_{i}=1$$
+Then the eigenvalues of $\rho^{2}$ are all real. Then $Tr(\rho^{2})\in \mathbb{R}$. Let $\{ \ket{k} \}$ be an orthonormal basis. Then:
+$$\begin{align}
+Tr(\rho^{2}) & = \sum_{i,j,k}p_{i}p_{j} \bra{k} \psi_{i}\rangle \bra{\psi_{i}}\psi_{j}\rangle \bra{\psi_{j}} k\rangle \\
+ & = \sum_{i,j,k}p_{i}p_{j} |\bra{k} \psi_{i}\rangle |^{2} \bra{\psi_{i}}\psi_{j}\rangle \\
+ & = \sum_{i,j} p_{i}p_{j} \bra{\psi_{i}} \psi_{j}\rangle  
+\end{align}$$
+Then:
+$$\begin{align}
+Tr(\rho^{2}) & \leq|Tr(\rho^{2}) | \\
+ & =|\sum_{i,j}p_{i}p_{j}\bra{\psi_{i}} \psi_{j}\rangle| \\
+ & \leq \sum_{i,j}p_{i}p_{j}|\bra{\psi_{i}} \psi_{j}\rangle | \\
+ & \leq \sum_{i,j}p_{i}p_{j} |\ket{\psi_{i}}||\ket{\psi_{j}} | \\
+ & =\sum_{i,j}p_{i}p_{j} \\
+ & = \left( \sum_{i}p_{i} \right)\left( \sum_{j}p_{j} \right) \\
+ & =1
+\end{align}\tag{1}$$
+where I assumed that all $\ket{\psi_{i}}$ are normalized.
 
+Now it remains to be shown that $Tr(\rho^{2})=1\implies \text{ensemble is pure}$
+It suffices to show that $\text{ensemble not pure}\implies Tr(\rho^{2})\neq 1$
+
+By definition, if the ensemble is not pure, then there exist some $\ket{\psi_{I}},\ket{\psi_{J}}$ that are not colinear. Then in $(1)$, I have:
+$$  \begin{align}
+Tr(\rho^{2}) & \leq|Tr(\rho^{2}) | \\
+ & =|\sum_{i,j}p_{i}p_{j}\bra{\psi_{i}} \psi_{j}\rangle| \\
+ & \leq \sum_{i,j}p_{i}p_{j}|\bra{\psi_{i}} \psi_{j}\rangle |  \\
+  & =2p_{I}p_{J}|\bra{\psi_{I}}\psi_{jJ}\rangle|+\sum_{i,j\neq I,J}p_{i}p_{j} |\bra{\psi_{i}}\psi_{j}\rangle| \\
+ & <2p_{I}p_{J}|\ket{\psi_{I}}  ||\ket{\psi_{J}} |+\sum_{i,j \neq I,J}p_{i}p_{J}|\ket{\psi_{i}}  ||\psi_{j}| \\
+ & = \sum_{i,j}p_{i}p_{j} \\
+ & = 1
+\end{align}$$
+Then $Tr(\rho^{2})\neq 1$. 
 ## (e).
 If the state is pure, assume that $\rho=\ket{\psi}\bra{\psi}$. Then:
 $$\rho^{2}=\ket{\psi} \bra{\psi}\psi\rangle\bra{\psi} =\ket{\psi} \bra{\psi} =\rho $$
-If the state is mixed, 
-
->[!Note] Claim
->$\text{mixed state}\implies Tr(\rho^{2}) <1$. 
-### Proof of claim
-Assume we have a mixture of states $\ket{\psi_{k}},k=1,\dots,N,N\geq 2$, with probability $p_{k}$. Then:
-$$\begin{align}
-Tr(\rho^{2}) & =\sum_{k}p_{k}^{2} \\
- & = p_{1}^{2}+(p_{2}^{2}+\dots+p_{N}^{2}) \\
- & \leq p_{1}^{2}+(p_{2}+\dots+p_{N})^{2}
-\end{align}$$
-Know that:
-$$\left\{\begin{align}
- & p_{1}+(p_{2}+\dots+p_{N})=1 \\
- & p_{k}>0,\forall k
-\end{align}\right.
-\implies 0<p_{1},(p_{2}+\dots+p_{N})<1$$
-Then:
-$$p_{1}^{2}<p_{1}\text{ and }(p_{2}+\dots+p_{N})^{2}<p_{2}+\dots+p_{N}$$
-Then:
-$$Tr(\rho^{2})<p_{1}+(p_{2}+\dots+p_{N})=1$$
->[!Right]
->$\blacksquare$
-
-Then, back to the problem, if the state is not pure, then we have:
-$$Tr(\rho^{2}) \neq 1$$
+If the state is mixed,  then we have:
+$$Tr(\rho^{2}) \neq 1= Tr(\rho)$$
 Then must have:
 $$\rho^{2} \neq \rho$$
 Otherwise, if $\rho^{2}=\rho$, I have $Tr(\rho^{2})=Tr(\rho)=1$.
@@ -152,3 +159,4 @@ $$p_{1}\begin{pmatrix}
 p_{1}+ \frac{1}{2}p_{2} & - \frac{1}{2}p_{2} \\
 - \frac{1}{2}p_{2} & \frac{1}{2}p_{2}
 \end{pmatrix}$$
+# 4.
