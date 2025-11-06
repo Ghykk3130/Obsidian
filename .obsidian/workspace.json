@@ -489,12 +489,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Experimental/Thermoelectric effect of.md",
+                "file": "气体.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Thermoelectric effect of"
+              "title": "气体"
             }
           }
         ],
@@ -569,8 +569,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200,
-    "collapsed": true
+    "width": 200
   },
   "right": {
     "id": "9003d078f8dbc4ed",
@@ -670,11 +669,11 @@
   },
   "active": "848c592c553b8003",
   "lastOpenFiles": [
+    "Experimental/Thermoelectric effect of.md",
     "气体.md",
     "惯量张量与刚体动能.md",
     "Homework/Physics 510 Homework 9.md",
     "Homework/Physics 510 Homework 8.md",
-    "Experimental/Thermoelectric effect of.md",
     "磁性.md",
     "系综（未完成）.md",
     "系综.md",
