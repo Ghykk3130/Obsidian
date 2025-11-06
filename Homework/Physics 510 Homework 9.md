@@ -188,10 +188,31 @@ $$\begin{align}
 
 First consider the classical Hamiltonian. Let the number of diatomic molecules be $N$. Consider a single diatomic molecule. The Hamiltonian is given by:
 $$\begin{align}
-H & = \frac{L^{2}}{2I}+ 
+H & = \frac{P^{2}}{2M}+ \frac{p_{r}^{2}}{2\mu}+  \frac{L^{2}}{2I}+ \frac{1}{2}\mu \omega^{2}r^{2} 
 \end{align}$$
-
-
-
-
-Then for the ith molecule, the Hamiltonian is:
+where $\vec{P}$ is the total momentum. Then the total Hamiltonian is:
+$$H= \sum_{i} \left(  \frac{P_{i}^{2}}{2M}+ \frac{p_{ri}^{2}}{2\mu}+ \frac{L_{i}^{2}}{2I}+ \frac{1}{2}\mu \omega^{2}r_{i}^{2} \right)$$
+where $i$ is the index of the molecule. Now that the Hamiltonian is separated, the eigenstate of the system must be:
+$$\bigotimes_{i=1}^N\ket{\vec{k}_{i}}\otimes \ket{l_{i},m_{i}} \otimes \ket{n_{i}}  $$
+where $\ket{\vec{k}_{i}}$ is the eigenstate of $\frac{P_{i}^{2}}{2M}$, $\ket{l_{i},m_{i}}$ is the eigenstate of $\frac{L_{i}^{2}}{2I}$, $\ket{n_{i}}$ is the eigenstate of $\frac{p_{ri}^{2}}{2\mu}+ \frac{1}{2}\mu \omega^{2}r_{i}^{2}$. Then the partition function is given by:
+$$\begin{align}
+Z & = Tr(e^{-\beta H}) \\
+ & = \sum_{\text{all permutations of }\{ \vec{k}_{i} \},\{ \ket{l_{i},m_{i}} \} ,\ket{n_{i}} } \bigotimes_{i}\bra{\vec{k}_{i}} \otimes \bra{l_{i},m_{i}} \otimes \bra{n_{i}} \exp\left( -\beta \sum_{j}\left(  \frac{P_{j}^{2}}{2M}+ \frac{L_{j}^{2}}{2I}+ \frac{p_{rj}^{2}}{2\mu}+ \frac{1}{2}\mu \omega^{2}r_{j}^{2} \right) \right) \bigotimes_{i}\bra{\vec{k}_{i}} \otimes \bra{l_{i},m_{i}} \otimes \bra{n_{i}} \\
+ & = \sum \exp\left( -\beta \sum_{j} \left( \frac{\hbar^{2}|\vec{k}_{j}|^{2}}{2M} + \frac{\hbar^{2}l_{j}(l_{j}+1)}{2I}\right) + \left( \frac{1}{2}+n_{j} \right)\hbar \omega\right) \\
+ & = \left( \sum_{k} \exp\left( -\beta \frac{\hbar^{2}k^{2}}{2M} \right) \right)^{3N}\left( \sum_{l_{},m_{},|m_{}|\leq l_{}}\exp\left( -\beta \frac{\hbar^{2}l(l+1)}{2I} \right) \right)^{N}\left( \sum_{n}\exp\left( -\beta\left( n+ \frac{1}{2} \right)\hbar \omega \right)  \right)^N \\
+\end{align}$$
+Since $k$ has to satisfy the boundary condition $k= \frac{n\pi}{L}, n\in Z$, and there are $2l+1$ of $m$, the expression above can be further reduced:
+$$\begin{align}
+Z & = \left( \sum_{n\in \mathbb{Z}}\exp\left( -\beta \frac{\hbar^{2}n^{2}\pi^{2}}{2ML^{2}} \right) \right)^{3N}\left( \sum_{l\text{ s.t. }2l\in \mathbb{N}} (2l+1)\exp\left( -\beta \frac{\hbar^{2}l(l+1)}{2I} \right) \right)^N\left( \sum_{n\in \mathbb{N}}\exp\left( -\beta\left( n+ \frac{1}{2} \right)\hbar \omega \right) \right)^N \\
+ & =\left( \sum_{n\in \mathbb{Z}}\exp\left( -\beta \frac{\hbar^{2}n^{2}\pi^{2}}{2ML^{2}} \right) \right)^{3N}\left( \sum_{l\text{ s.t. }2l\in \mathbb{N}} (2l+1)\exp\left( -\beta \frac{\hbar^{2}l(l+1)}{2I} \right) \right)^N \left( \frac{e^{- \frac{\beta \hbar \omega}{2}}}{1-e^{-\beta \hbar \omega}} \right)^N
+\end{align}$$
+## (b).
+Know that:
+$$\begin{align}
+U & = Tr(H\rho) \\
+ & = \frac{1}{Z}Tr(He^{-\beta H}) \\
+ & = \frac{1}{Z}Tr\left( - \frac{\partial}{\partial \beta}e^{-\beta H} \right) \\
+ & = - \frac{1}{Z} \frac{\partial}{\partial \beta}Tr(e^{-\beta H}) \\
+ & = -\frac{1}{Z} \frac{\partial}{\partial \beta}Z \\
+ & = - \frac{\partial}{\partial \beta}\ln Z
+\end{align}$$
