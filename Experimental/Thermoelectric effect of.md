@@ -26,3 +26,4 @@ Caveats:
 - Electrical contacts should be small.
 - Thermal epoxy could expand non-uniformly, so don't apply too much.
 - Pillars should be a little higher than the sample.
+- Silver epoxy should be on sample, because it has better thermal conductivity.

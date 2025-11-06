@@ -203,8 +203,8 @@ Z & = Tr(e^{-\beta H}) \\
 \end{align}$$
 Since $k$ has to satisfy the boundary condition $k= \frac{n\pi}{L}, n\in Z$, and there are $2l+1$ of $m$, the expression above can be further reduced:
 $$\begin{align}
-Z & = \left( \sum_{n\in \mathbb{Z}}\exp\left( -\beta \frac{\hbar^{2}n^{2}\pi^{2}}{2ML^{2}} \right) \right)^{3N}\left( \sum_{l\text{ s.t. }2l\in \mathbb{N}} (2l+1)\exp\left( -\beta \frac{\hbar^{2}l(l+1)}{2I} \right) \right)^N\left( \sum_{n\in \mathbb{N}}\exp\left( -\beta\left( n+ \frac{1}{2} \right)\hbar \omega \right) \right)^N \\
- & =\left( \sum_{n\in \mathbb{Z}}\exp\left( -\beta \frac{\hbar^{2}n^{2}\pi^{2}}{2ML^{2}} \right) \right)^{3N}\left( \sum_{l\text{ s.t. }2l\in \mathbb{N}} (2l+1)\exp\left( -\beta \frac{\hbar^{2}l(l+1)}{2I} \right) \right)^N \left( \frac{e^{- \frac{\beta \hbar \omega}{2}}}{1-e^{-\beta \hbar \omega}} \right)^N
+Z & = \left( \sum_{n\in \mathbb{Z}}\exp\left( -\beta \frac{\hbar^{2}n^{2}\pi^{2}}{2ML^{2}} \right) \right)^{3N}\left( \sum_{l\in \mathbb{N}} (2l+1)\exp\left( -\beta \frac{\hbar^{2}l(l+1)}{2I} \right) \right)^N\left( \sum_{n\in \mathbb{N}}\exp\left( -\beta\left( n+ \frac{1}{2} \right)\hbar \omega \right) \right)^N \\
+ & =\left( \sum_{n\in \mathbb{Z}}\exp\left( -\beta \frac{\hbar^{2}n^{2}\pi^{2}}{2ML^{2}} \right) \right)^{3N}\left( \sum_{l\in \mathbb{N}} (2l+1)\exp\left( -\beta \frac{\hbar^{2}l(l+1)}{2I} \right) \right)^N \left( \frac{e^{- \frac{\beta \hbar \omega}{2}}}{1-e^{-\beta \hbar \omega}} \right)^N
 \end{align}$$
 ## (b).
 Know that:
@@ -216,11 +216,25 @@ U & = Tr(H\rho) \\
  & = -\frac{1}{Z} \frac{\partial}{\partial \beta}Z \\
  & = - \frac{\partial}{\partial \beta}\ln Z
 \end{align}$$
-Know that:
+Since $T$ is small, then $\beta$ is large. Therefore:
 $$\begin{align}
-\ln Z & = 3N\ln\left( \sum_{n}\exp\left( -\beta \frac{\hbar^{2}n^{2}\pi^{2}}{2ML^{2}} \right) \right)+N\ln\left( \sum_{l}(2l+1)\exp\left( -\beta \frac{\hbar^{2}l(l+1)}{2I} \right) \right)- \frac{N\hbar \omega \beta }{2}-N\ln(1-e^{-\beta \hbar \omega})
+ & \sum_{n\in \mathbb{Z}}\exp\left( -\beta \frac{\hbar^{2}n^{2}\pi^{2} }{2ML^{2}} \right) \approx 1+ 2\exp\left( -\beta \frac{\hbar^{2}n^{2}\pi^{2} }{2ML^{2}} \right) \\
+ & \sum_{l\in \mathbb{N}}(2l+1 )\exp\left( -\beta \frac{\hbar^{2}l(l+1)}{2I} \right)\approx 1+ 3\exp\left( -\beta \frac{\hbar^{2}}{I} \right) \\
+ & \frac{e^{-\frac{\beta \hbar \omega }{2 }}}{1-e^{-\beta \hbar \omega}}= \frac{1}{e^{ \frac{\beta \hbar \omega}{2}}-e^{- \frac{\beta \hbar \omega}{2}}} \approx \exp\left( - \frac{\beta \hbar \omega}{2} \right)
 \end{align}$$
-We compute:
+where in the sum, I kept only the first two terms. Then:
 $$\begin{align}
-\frac{\sum_{n}- \frac{\hbar^{2}n^{2}\pi^{2}}{2ML^{2}}\exp\left( -\beta \frac{\hbar^{2}n^{2}\pi^{2}}{2ML^{2}} \right)}{\sum_{n}\exp\left( -\beta \frac{\hbar^{2}n^{2}\pi^{2}}{2ML^{2}} \right)}
+\ln Z  & \approx 3N\ln\left( 1+2\exp\left( -\beta \frac{\hbar^{2}\pi^{2}}{2ML^{2}} \right) \right)+N\ln\left( 1+3\exp\left( -\beta \frac{\hbar^{2}}{I} \right) \right)- \frac{N\beta \hbar \omega}{2} \\
+ & \approx 6N\exp\left( -\beta \frac{\hbar^{2}\pi^{2}}{2ML^{2}} \right)+3N\exp\left( -\beta \frac{\hbar^{2}}{I} \right)- \frac{N\beta \hbar \omega}{2}
+\end{align}$$
+Then:
+$$\begin{align}
+U & =- \frac{\partial}{\partial \beta}\ln Z \\
+ & \approx 6N\left(  \frac{\hbar^{2}\pi^{2}}{2ML^{2}} \right)\exp\left( -\beta \frac{\hbar^{2}\pi^{2}}{2ML^{2}} \right)+3N \frac{\hbar^{2}}{I}\exp\left( -\beta \frac{\hbar^{2}}{I} \right)+ \frac{N}{2}\hbar \omega
+\end{align}$$
+Then:
+$$\begin{align}
+C & = \left( \frac{\partial U}{\partial T} \right)_{V,N} \\
+ & = -k\beta^{2} \frac{\partial U}{\partial \beta} \\
+ & = 3Nk\beta^{2}\left( 2 \left( \frac{\hbar^{2}\pi^{2}}{2ML^{2}} \right)^{2}+\left(  \frac{\hbar^{2}}{I} \right)^{2} \right)
 \end{align}$$
