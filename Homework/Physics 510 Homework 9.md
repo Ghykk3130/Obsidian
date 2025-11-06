@@ -216,3 +216,11 @@ U & = Tr(H\rho) \\
  & = -\frac{1}{Z} \frac{\partial}{\partial \beta}Z \\
  & = - \frac{\partial}{\partial \beta}\ln Z
 \end{align}$$
+Know that:
+$$\begin{align}
+\ln Z & = 3N\ln\left( \sum_{n}\exp\left( -\beta \frac{\hbar^{2}n^{2}\pi^{2}}{2ML^{2}} \right) \right)+N\ln\left( \sum_{l}(2l+1)\exp\left( -\beta \frac{\hbar^{2}l(l+1)}{2I} \right) \right)- \frac{N\hbar \omega \beta }{2}-N\ln(1-e^{-\beta \hbar \omega})
+\end{align}$$
+We compute:
+$$\begin{align}
+\frac{\sum_{n}- \frac{\hbar^{2}n^{2}\pi^{2}}{2ML^{2}}\exp\left( -\beta \frac{\hbar^{2}n^{2}\pi^{2}}{2ML^{2}} \right)}{\sum_{n}\exp\left( -\beta \frac{\hbar^{2}n^{2}\pi^{2}}{2ML^{2}} \right)}
+\end{align}$$
