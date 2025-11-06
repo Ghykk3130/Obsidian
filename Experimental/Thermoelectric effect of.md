@@ -20,3 +20,9 @@ Compound: $TmMn_{6}Sn_{6-x}Ga_{4.5}$
 sample width: $100\sim 150 \mu m$
 
 Sample mounting:
+
+
+Caveats:
+- Electrical contacts should be small.
+- Thermal epoxy could expand non-uniformly, so don't apply too much.
+- Pillars should be a little higher than the sample.
