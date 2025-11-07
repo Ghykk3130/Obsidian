@@ -239,4 +239,32 @@ C & = \left( \frac{\partial U}{\partial T} \right)_{V,N} \\
  & = 3Nk\beta^{2}\left( 2 \left( \frac{\hbar^{2}\pi^{2}}{2ML^{2}} \right)^{2}\exp\left( -\beta \frac{\hbar^{2}\pi^{2}}{2ML^{2}} \right)+\left(  \frac{\hbar^{2}}{I} \right)^{2}\exp\left( -\beta \frac{\hbar^{2}}{I} \right) \right)
 \end{align}$$
 ## (c).
+ At high temperature, $\beta$ is small. Then can use integrals to approximate sums. I have:
+ $$\begin{align}
+\sum_{n}\exp\left( -\beta \frac{\hbar^{2}n^{2}\pi^{2}}{2ML^{2}} \right)  & \approx \int_{\mathbb{R}}dx\exp\left( -\beta \frac{\hbar^{2}\pi^{2}}{2ML^{2}}x^{2} \right) \\
+ & = \sqrt{  \frac{2ML^{2}}{\beta \hbar^{2}\pi} }
+\end{align}$$
+$$\begin{align}
+\sum_{l}(2l+1)\exp\left( -\beta \frac{\hbar^{2}l(l+1)}{2I} \right) & \approx \int_{0}^{\infty} dx(2x+1)\exp\left( -\beta \frac{\hbar^{2}}{2I}(x^{2}+x) \right) \\
+ & = \int_{0}^{\infty}d(x^{2}+x)\exp\left( -\beta \frac{\hbar^{2}}{2I}(x^{2}+x) \right) \\
+ & = \frac{1}{2} \sqrt{ \frac{2I\pi}{\beta \hbar^{2}} }
+\end{align}$$
+$$\begin{align}
+\frac{e^{- \frac{\beta \hbar \omega}{2}}}{1-e^{-\beta \hbar \omega}} & = \frac{1}{e^{\frac{\beta \hbar \omega}{2}}-e^{- \frac{\beta \hbar \omega}{2}}} \\
+ & = \frac{1}{2\sinh\left(  \frac{\beta \hbar \omega}{2} \right)} \\
+ & \approx \frac{1}{2 \frac{\beta \hbar \omega}{2}} \\
+ & = \frac{1}{\beta \hbar \omega}
+\end{align}$$
+Therefore:
+$$\begin{align}
+U  & =
+- \frac{\partial}{\partial \beta} \ln Z \\
+ & = - \frac{\partial}{\partial \beta}\left( 3N\ln\left( \sqrt{  \frac{2ML^{2}}{\beta \hbar^{2}\pi} } \right)^{}+N\ln\left(  \frac{1}{2}\sqrt{  \frac{2I\pi}{\beta \hbar^{2}} } \right)+ N \ln \frac{1}{\beta \hbar \omega} \right)  \\
+ & = \frac{\partial}{\partial \beta}\left(  \frac{3N}{2}\ln \beta+ \frac{N}{2}\ln \beta+N\ln \beta \right)  \\
+ & = 3N \frac{1}{\beta} \\
+ & = 3NkT
+\end{align}$$
+Then:
+$$C = \frac{\partial U}{\partial T}=3Nk$$
+
 
