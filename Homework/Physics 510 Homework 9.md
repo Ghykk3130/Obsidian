@@ -267,6 +267,9 @@ U  & =
 Then:
 $$C = \frac{\partial U}{\partial T}= \frac{7}{2}Nk$$
 
-
+## (c).
+<div style="text-align:center">
+<img src="Pasted image 20251107012715.png" width="300">
+</div>
 
 
