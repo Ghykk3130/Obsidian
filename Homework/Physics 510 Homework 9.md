@@ -236,5 +236,7 @@ Then:
 $$\begin{align}
 C & = \left( \frac{\partial U}{\partial T} \right)_{V,N} \\
  & = -k\beta^{2} \frac{\partial U}{\partial \beta} \\
- & = 3Nk\beta^{2}\left( 2 \left( \frac{\hbar^{2}\pi^{2}}{2ML^{2}} \right)^{2}+\left(  \frac{\hbar^{2}}{I} \right)^{2} \right)
+ & = 3Nk\beta^{2}\left( 2 \left( \frac{\hbar^{2}\pi^{2}}{2ML^{2}} \right)^{2}\exp\left( -\beta \frac{\hbar^{2}\pi^{2}}{2ML^{2}} \right)+\left(  \frac{\hbar^{2}}{I} \right)^{2}\exp\left( -\beta \frac{\hbar^{2}}{I} \right) \right)
 \end{align}$$
+## (c).
+
