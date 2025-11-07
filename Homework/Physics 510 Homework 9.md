@@ -247,7 +247,7 @@ C & = \left( \frac{\partial U}{\partial T} \right)_{V,N} \\
 $$\begin{align}
 \sum_{l}(2l+1)\exp\left( -\beta \frac{\hbar^{2}l(l+1)}{2I} \right) & \approx \int_{0}^{\infty} dx(2x+1)\exp\left( -\beta \frac{\hbar^{2}}{2I}(x^{2}+x) \right) \\
  & = \int_{0}^{\infty}d(x^{2}+x)\exp\left( -\beta \frac{\hbar^{2}}{2I}(x^{2}+x) \right) \\
- & = \frac{1}{2} \sqrt{ \frac{2I\pi}{\beta \hbar^{2}} }
+ & = \frac{2I}{\beta \hbar^{2}}
 \end{align}$$
 $$\begin{align}
 \frac{e^{- \frac{\beta \hbar \omega}{2}}}{1-e^{-\beta \hbar \omega}} & = \frac{1}{e^{\frac{\beta \hbar \omega}{2}}-e^{- \frac{\beta \hbar \omega}{2}}} \\
@@ -259,12 +259,14 @@ Therefore:
 $$\begin{align}
 U  & =
 - \frac{\partial}{\partial \beta} \ln Z \\
- & = - \frac{\partial}{\partial \beta}\left( 3N\ln\left( \sqrt{  \frac{2ML^{2}}{\beta \hbar^{2}\pi} } \right)^{}+N\ln\left(  \frac{1}{2}\sqrt{  \frac{2I\pi}{\beta \hbar^{2}} } \right)+ N \ln \frac{1}{\beta \hbar \omega} \right)  \\
- & = \frac{\partial}{\partial \beta}\left(  \frac{3N}{2}\ln \beta+ \frac{N}{2}\ln \beta+N\ln \beta \right)  \\
- & = 3N \frac{1}{\beta} \\
- & = 3NkT
+ & = - \frac{\partial}{\partial \beta}\left( 3N\ln\left( \sqrt{  \frac{2ML^{2}}{\beta \hbar^{2}\pi} } \right)^{}+N\ln\left( \frac{2I}{\beta \hbar^{2}} \right)+ N \ln \frac{1}{\beta \hbar \omega} \right)  \\
+ & = \frac{\partial}{\partial \beta}\left(  \frac{3N}{2}\ln \beta+ N\ln \beta+N\ln \beta \right)  \\
+ & =  \frac{7}{2} N \frac{1}{\beta} \\
+ & = \frac{7}{2}NkT
 \end{align}$$
 Then:
-$$C = \frac{\partial U}{\partial T}=3Nk$$
+$$C = \frac{\partial U}{\partial T}= \frac{7}{2}Nk$$
+
+
 
 
