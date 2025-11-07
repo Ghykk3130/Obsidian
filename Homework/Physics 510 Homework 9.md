@@ -1,4 +1,4 @@
- # 1.
+# 1.
 ## (a).
 Let the density operator be written as a classical mixture of $\ket{\psi_{k}}$ with probability $p_{k}$. Then:
 $$\begin{align}
@@ -34,24 +34,18 @@ $$\begin{align}
 \rho^{2} & =\left( \sum_{i}p_{i}\ket{\psi_{i}} \bra{\psi_{i}}   \right)\left( \sum_{j}p_{j}\ket{\psi_{j}} \bra{\psi_{j}}  \right) \\
  & = \sum_{i,j }p_{i}p_{j}\ket{\psi_{i}} \bra{\psi_{i}} \psi_{j}\rangle \bra{\psi_{j}} 
 \end{align}$$
-$\rho^{2}$ is Hermitian because:
-$$\begin{align}
-(\rho^{2})^{\dagger} & =(\rho \rho)^{\dagger} \\
- & = \rho ^{\dagger}\rho ^{\dagger} \\
- & = \rho \rho=\rho^{2}
-\end{align}$$
-Then the eigenvalues of $\rho^{2}$ are all real. Then $Tr(\rho^{2})\in \mathbb{R}$. Let $\{ \ket{k} \}$ be an orthonormal basis. Then:
+Let $\{ \ket{k} \}$ be an orthonormal basis. Then:
 $$\begin{align}
 Tr(\rho^{2}) & = \sum_{i,j,k}p_{i}p_{j} \bra{k} \psi_{i}\rangle \bra{\psi_{i}}\psi_{j}\rangle \bra{\psi_{j}} k\rangle \\
  & = \sum_{i,j,k}p_{i}p_{j} |\bra{k} \psi_{i}\rangle |^{2} \bra{\psi_{i}}\psi_{j}\rangle \\
- & = \sum_{i,j} p_{i}p_{j} \bra{\psi_{i}} \psi_{j}\rangle  
+ & = \sum_{i,j} p_{i}p_{j} |\bra{\psi_{i}} \psi_{j}\rangle  |^{2}
 \end{align}$$
 Then:
 $$\begin{align}
-Tr(\rho^{2}) & \leq|Tr(\rho^{2}) | \\
- & =|\sum_{i,j}p_{i}p_{j}\bra{\psi_{i}} \psi_{j}\rangle| \\
- & \leq \sum_{i,j}p_{i}p_{j}|\bra{\psi_{i}} \psi_{j}\rangle | \\
- & \leq \sum_{i,j}p_{i}p_{j} |\ket{\psi_{i}}||\ket{\psi_{j}} | \\
+Tr(\rho^{2}) 
+ 
+ & = \sum_{i,j}p_{i}p_{j}|\bra{\psi_{i}} \psi_{j}\rangle |^{2} \\
+ & \leq \sum_{i,j}p_{i}p_{j} |\langle \psi_{i} \ket{\psi_{i}}||\langle \psi_{j} \ket{\psi_{j}} | \\
  & =\sum_{i,j}p_{i}p_{j} \\
  & = \left( \sum_{i}p_{i} \right)\left( \sum_{j}p_{j} \right) \\
  & =1
@@ -63,11 +57,9 @@ It suffices to show that $\text{ensemble not pure}\implies Tr(\rho^{2})\neq 1$
 
 By definition, if the ensemble is not pure, then there exist some $\ket{\psi_{I}},\ket{\psi_{J}}$ that are not colinear. Then in $(1)$, I have:
 $$  \begin{align}
-Tr(\rho^{2}) & \leq|Tr(\rho^{2}) | \\
- & =|\sum_{i,j}p_{i}p_{j}\bra{\psi_{i}} \psi_{j}\rangle| \\
- & \leq \sum_{i,j}p_{i}p_{j}|\bra{\psi_{i}} \psi_{j}\rangle |  \\
-  & =2p_{I}p_{J}|\bra{\psi_{I}}\psi_{jJ}\rangle|+\sum_{i,j\neq I,J}p_{i}p_{j} |\bra{\psi_{i}}\psi_{j}\rangle| \\
- & <2p_{I}p_{J}|\ket{\psi_{I}}  ||\ket{\psi_{J}} |+\sum_{i,j \neq I,J}p_{i}p_{J}|\ket{\psi_{i}}  ||\psi_{j}| \\
+Tr(\rho^{2})  & = \sum_{i,j}p_{i}p_{j}|\bra{\psi_{i}} \psi_{j}\rangle |^{2}  \\
+  & =2p_{I}p_{J}|\bra{\psi_{I}}\psi_{jJ}\rangle|^{2}+\sum_{i,j\neq I,J}p_{i}p_{j} |\bra{\psi_{i}}\psi_{j}\rangle|^{2} \\
+ & <2p_{I}p_{J}|\langle \psi_{I}\ket{\psi_{I}}  ||\langle \psi_{J}\ket{\psi_{J}} |+\sum_{i,j \neq I,J}p_{i}p_{J}|\ket{\psi_{i}}  ||\psi_{j}| \\
  & = \sum_{i,j}p_{i}p_{j} \\
  & = 1
 \end{align}$$
@@ -190,21 +182,23 @@ First consider the classical Hamiltonian. Let the number of diatomic molecules b
 $$\begin{align}
 H & = \frac{P^{2}}{2M}+ \frac{p_{r}^{2}}{2\mu}+  \frac{L^{2}}{2I}+ \frac{1}{2}\mu \omega^{2}r^{2} 
 \end{align}$$
+If we consider only the angular momentum term, then we have:
+$$H= \frac{L^{2}}{2I}$$
 where $\vec{P}$ is the total momentum. Then the total Hamiltonian is:
-$$H= \sum_{i} \left(  \frac{P_{i}^{2}}{2M}+ \frac{p_{ri}^{2}}{2\mu}+ \frac{L_{i}^{2}}{2I}+ \frac{1}{2}\mu \omega^{2}r_{i}^{2} \right)$$
-where $i$ is the index of the molecule. Now that the Hamiltonian is separated, the eigenstate of the system must be:
-$$\bigotimes_{i=1}^N\ket{\vec{k}_{i}}\otimes \ket{l_{i},m_{i}} \otimes \ket{n_{i}}  $$
-where $\ket{\vec{k}_{i}}$ is the eigenstate of $\frac{P_{i}^{2}}{2M}$, $\ket{l_{i},m_{i}}$ is the eigenstate of $\frac{L_{i}^{2}}{2I}$, $\ket{n_{i}}$ is the eigenstate of $\frac{p_{ri}^{2}}{2\mu}+ \frac{1}{2}\mu \omega^{2}r_{i}^{2}$. Then the partition function is given by:
+$$H= \sum_{i}   \frac{L_{i}^{2}}{2I}$$
+where $i$ is the index of the molecule. Now the eigenstate of the system must be:
+$$\bigotimes_{i=1}^N \ket{l_{i},m_{i}}   $$
+where $\ket{l_{i},m_{i}}$ is the eigenstate of $\frac{L_{i}^{2}}{2I}$. Then the partition function is given by:
 $$\begin{align}
 Z & = Tr(e^{-\beta H}) \\
- & = \sum_{\text{all permutations of }\{ \vec{k}_{i} \},\{ \ket{l_{i},m_{i}} \} ,\ket{n_{i}} } \bigotimes_{i}\bra{\vec{k}_{i}} \otimes \bra{l_{i},m_{i}} \otimes \bra{n_{i}} \exp\left( -\beta \sum_{j}\left(  \frac{P_{j}^{2}}{2M}+ \frac{L_{j}^{2}}{2I}+ \frac{p_{rj}^{2}}{2\mu}+ \frac{1}{2}\mu \omega^{2}r_{j}^{2} \right) \right) \bigotimes_{i}\bra{\vec{k}_{i}} \otimes \bra{l_{i},m_{i}} \otimes \bra{n_{i}} \\
- & = \sum \exp\left( -\beta \sum_{j} \left( \frac{\hbar^{2}|\vec{k}_{j}|^{2}}{2M} + \frac{\hbar^{2}l_{j}(l_{j}+1)}{2I}\right) + \left( \frac{1}{2}+n_{j} \right)\hbar \omega\right) \\
- & = \left( \sum_{k} \exp\left( -\beta \frac{\hbar^{2}k^{2}}{2M} \right) \right)^{3N}\left( \sum_{l_{},m_{},|m_{}|\leq l_{}}\exp\left( -\beta \frac{\hbar^{2}l(l+1)}{2I} \right) \right)^{N}\left( \sum_{n}\exp\left( -\beta\left( n+ \frac{1}{2} \right)\hbar \omega \right)  \right)^N \\
+ & = \sum_{\text{all permutations of }\{ \ket{l_{i},m_{i}} \} } \bigotimes_{i} \bra{l_{i},m_{i}}  \exp\left( -\beta \sum_{j}\left(  \frac{P_{j}^{2}}{2M}+ \frac{L_{j}^{2}}{2I}+ \frac{p_{rj}^{2}}{2\mu}+ \frac{1}{2}\mu \omega^{2}r_{j}^{2} \right) \right) \bigotimes_{i} \ket{l_{i},m_{i}}  \\
+ & = \sum \exp\left( -\beta \sum_{j} \left(   \frac{\hbar^{2}l_{j}(l_{j}+1)}{2I}\right) \right) \\
+ & = \left( \sum_{l_{},m_{},|m_{}|\leq l_{}}\exp\left( -\beta \frac{\hbar^{2}l(l+1)}{2I} \right) \right)^{N} \\
 \end{align}$$
-Since $k$ has to satisfy the boundary condition $k= \frac{n\pi}{L}, n\in Z$, and there are $2l+1$ of $m$, the expression above can be further reduced:
+Since there are $2l+1$ of $m$, the expression above can be further reduced:
 $$\begin{align}
-Z & = \left( \sum_{n\in \mathbb{Z}}\exp\left( -\beta \frac{\hbar^{2}n^{2}\pi^{2}}{2ML^{2}} \right) \right)^{3N}\left( \sum_{l\in \mathbb{N}} (2l+1)\exp\left( -\beta \frac{\hbar^{2}l(l+1)}{2I} \right) \right)^N\left( \sum_{n\in \mathbb{N}}\exp\left( -\beta\left( n+ \frac{1}{2} \right)\hbar \omega \right) \right)^N \\
- & =\left( \sum_{n\in \mathbb{Z}}\exp\left( -\beta \frac{\hbar^{2}n^{2}\pi^{2}}{2ML^{2}} \right) \right)^{3N}\left( \sum_{l\in \mathbb{N}} (2l+1)\exp\left( -\beta \frac{\hbar^{2}l(l+1)}{2I} \right) \right)^N \left( \frac{e^{- \frac{\beta \hbar \omega}{2}}}{1-e^{-\beta \hbar \omega}} \right)^N
+Z & = \left( \sum_{l\in \mathbb{N}} (2l+1)\exp\left( -\beta \frac{\hbar^{2}l(l+1)}{2I} \right) \right)^N \\
+ & =\left( \sum_{l\in \mathbb{N}} (2l+1)\exp\left( -\beta \frac{\hbar^{2}l(l+1)}{2I} \right) \right)^N 
 \end{align}$$
 ## (b).
 Know that:
@@ -218,58 +212,48 @@ U & = Tr(H\rho) \\
 \end{align}$$
 Since $T$ is small, then $\beta$ is large. Therefore:
 $$\begin{align}
- & \sum_{n\in \mathbb{Z}}\exp\left( -\beta \frac{\hbar^{2}n^{2}\pi^{2} }{2ML^{2}} \right) \approx 1+ 2\exp\left( -\beta \frac{\hbar^{2}n^{2}\pi^{2} }{2ML^{2}} \right) \\
- & \sum_{l\in \mathbb{N}}(2l+1 )\exp\left( -\beta \frac{\hbar^{2}l(l+1)}{2I} \right)\approx 1+ 3\exp\left( -\beta \frac{\hbar^{2}}{I} \right) \\
- & \frac{e^{-\frac{\beta \hbar \omega }{2 }}}{1-e^{-\beta \hbar \omega}}= \frac{1}{e^{ \frac{\beta \hbar \omega}{2}}-e^{- \frac{\beta \hbar \omega}{2}}} \approx \exp\left( - \frac{\beta \hbar \omega}{2} \right)
+  & \sum_{l\in \mathbb{N}}(2l+1 )\exp\left( -\beta \frac{\hbar^{2}l(l+1)}{2I} \right)\approx 1+ 3\exp\left( -\beta \frac{\hbar^{2}}{I} \right) \\
+ 
 \end{align}$$
-where in the sum, I kept only the first two terms. Then:
+where in the sum, I kept only the first two terms because they will dominate over other terms. Then:
 $$\begin{align}
-\ln Z  & \approx 3N\ln\left( 1+2\exp\left( -\beta \frac{\hbar^{2}\pi^{2}}{2ML^{2}} \right) \right)+N\ln\left( 1+3\exp\left( -\beta \frac{\hbar^{2}}{I} \right) \right)- \frac{N\beta \hbar \omega}{2} \\
- & \approx 6N\exp\left( -\beta \frac{\hbar^{2}\pi^{2}}{2ML^{2}} \right)+3N\exp\left( -\beta \frac{\hbar^{2}}{I} \right)- \frac{N\beta \hbar \omega}{2}
+\ln Z  & \approx N\ln\left( 1+3\exp\left( -\beta \frac{\hbar^{2}}{I} \right) \right) \\
+ & \approx 3N\exp\left( -\beta \frac{\hbar^{2}}{I} \right)
 \end{align}$$
 Then:
 $$\begin{align}
 U & =- \frac{\partial}{\partial \beta}\ln Z \\
- & \approx 6N\left(  \frac{\hbar^{2}\pi^{2}}{2ML^{2}} \right)\exp\left( -\beta \frac{\hbar^{2}\pi^{2}}{2ML^{2}} \right)+3N \frac{\hbar^{2}}{I}\exp\left( -\beta \frac{\hbar^{2}}{I} \right)+ \frac{N}{2}\hbar \omega
+ & \approx 3N \frac{\hbar^{2}}{I}\exp\left( -\beta \frac{\hbar^{2}}{I} \right)
 \end{align}$$
 Then:
 $$\begin{align}
 C & = \left( \frac{\partial U}{\partial T} \right)_{V,N} \\
  & = -k\beta^{2} \frac{\partial U}{\partial \beta} \\
- & = 3Nk\beta^{2}\left( 2 \left( \frac{\hbar^{2}\pi^{2}}{2ML^{2}} \right)^{2}\exp\left( -\beta \frac{\hbar^{2}\pi^{2}}{2ML^{2}} \right)+\left(  \frac{\hbar^{2}}{I} \right)^{2}\exp\left( -\beta \frac{\hbar^{2}}{I} \right) \right)
+ & = 3Nk\beta^{2}\left(  \frac{\hbar^{2}}{I} \right)^{2}\exp\left( -\beta \frac{\hbar^{2}}{I} \right) 
 \end{align}$$
 ## (c).
  At high temperature, $\beta$ is small. Then can use integrals to approximate sums. I have:
- $$\begin{align}
-\sum_{n}\exp\left( -\beta \frac{\hbar^{2}n^{2}\pi^{2}}{2ML^{2}} \right)  & \approx \int_{\mathbb{R}}dx\exp\left( -\beta \frac{\hbar^{2}\pi^{2}}{2ML^{2}}x^{2} \right) \\
- & = \sqrt{  \frac{2ML^{2}}{\beta \hbar^{2}\pi} }
-\end{align}$$
 $$\begin{align}
 \sum_{l}(2l+1)\exp\left( -\beta \frac{\hbar^{2}l(l+1)}{2I} \right) & \approx \int_{0}^{\infty} dx(2x+1)\exp\left( -\beta \frac{\hbar^{2}}{2I}(x^{2}+x) \right) \\
  & = \int_{0}^{\infty}d(x^{2}+x)\exp\left( -\beta \frac{\hbar^{2}}{2I}(x^{2}+x) \right) \\
  & = \frac{2I}{\beta \hbar^{2}}
 \end{align}$$
-$$\begin{align}
-\frac{e^{- \frac{\beta \hbar \omega}{2}}}{1-e^{-\beta \hbar \omega}} & = \frac{1}{e^{\frac{\beta \hbar \omega}{2}}-e^{- \frac{\beta \hbar \omega}{2}}} \\
- & = \frac{1}{2\sinh\left(  \frac{\beta \hbar \omega}{2} \right)} \\
- & \approx \frac{1}{2 \frac{\beta \hbar \omega}{2}} \\
- & = \frac{1}{\beta \hbar \omega}
-\end{align}$$
+
 Therefore:
 $$\begin{align}
 U  & =
 - \frac{\partial}{\partial \beta} \ln Z \\
- & = - \frac{\partial}{\partial \beta}\left( 3N\ln\left( \sqrt{  \frac{2ML^{2}}{\beta \hbar^{2}\pi} } \right)^{}+N\ln\left( \frac{2I}{\beta \hbar^{2}} \right)+ N \ln \frac{1}{\beta \hbar \omega} \right)  \\
- & = \frac{\partial}{\partial \beta}\left(  \frac{3N}{2}\ln \beta+ N\ln \beta+N\ln \beta \right)  \\
- & =  \frac{7}{2} N \frac{1}{\beta} \\
- & = \frac{7}{2}NkT
+ & = - \frac{\partial}{\partial \beta}\left( N\ln\left( \frac{2I}{\beta \hbar^{2}} \right)\right)  \\
+ & = \frac{\partial}{\partial \beta}\left(   N\ln \beta\right)  \\
+ & =   N \frac{1}{\beta} \\
+ & = NkT
 \end{align}$$
 Then:
-$$C = \frac{\partial U}{\partial T}= \frac{7}{2}Nk$$
+$$C = \frac{\partial U}{\partial T}= Nk$$
 
 ## (c).
 <div style="text-align:center">
-<img src="Pasted image 20251107012715.png" width="300">
+<img src="Pasted image 20251107181442.png" width="300">
 </div>
 
 

@@ -569,8 +569,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200,
-    "collapsed": true
+    "width": 200
   },
   "right": {
     "id": "9003d078f8dbc4ed",
@@ -670,9 +669,13 @@
   },
   "active": "848c592c553b8003",
   "lastOpenFiles": [
+    "Pictures/Pasted image 20251107181442.png",
+    "Pictures/Pasted image 20251107181408.png",
+    "Pictures/Pasted image 20251107181348.png",
+    "气体.md",
+    "Homework/Physics 510 Homework 9.md",
     "Homework/Physics 510 Homework 7.md",
     "Experimental/Thermoelectric effect of.md",
-    "Homework/Physics 510 Homework 9.md",
     "Pictures/Pasted image 20251107012715.png",
     "Homework/Physics 511 Homework 7.md",
     "Homework/Physics 511 Homework 4.md",
@@ -683,7 +686,6 @@
     "Homework/Physics 511 Cheat sheet.md",
     "Homework/Physics 510 Homework 8.md",
     "Experimental/SAS Comments.md",
-    "气体.md",
     "惯量张量与刚体动能.md",
     "磁性.md",
     "系综（未完成）.md",
@@ -698,14 +700,11 @@
     "算子平均值的含义.md",
     "电流与电荷.md",
     "多级展开.md",
-    "Untitled 2.md",
     "Pictures/Pasted image 20251101214703.png",
     "Pictures/Pasted image 20251030202427.png",
     "Pictures/Pasted image 20251030202418.png",
     "Pictures/Pasted image 20251030202332.png",
     "Pictures/Pasted image 20251030202321.png",
-    "Pictures/Pasted image 20251030202253.png",
-    "Pictures/Pasted image 20251030202241.png",
     "Homework",
     "Pictures",
     "Experimental",
