@@ -27,3 +27,6 @@ Caveats:
 - Thermal epoxy could expand non-uniformly, so don't apply too much.
 - Pillars should be a little higher than the sample.
 - Silver epoxy should be on sample, because it has better thermal conductivity.
+- First put some thermal epoxy on the tip of the thermal couples to avoid possible connection to the sample.
+- The two thermal couples would be wind together in the middle to increase the thermal conductivity.
+- Thermal couples could be attached to pillars with silver epoxy. Because there's no conduction. 
