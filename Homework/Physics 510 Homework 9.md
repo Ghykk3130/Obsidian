@@ -1,3 +1,5 @@
+>[!Note]
+>Sometimes, there will be problems with latex matrix expression rendering. I am totally aware of this issue but cannot fix it. Please don't take points off if you see this. I believe that the issue would be fixed if you view the pdf in Adobe Acrobat.
 # 1.
 ## (a).
 Let the density operator be written as a classical mixture of $\ket{\psi_{k}}$ with probability $p_{k}$. Then:
@@ -163,17 +165,17 @@ $\langle x^{2}\rangle$ is given by:
 $$\begin{align}
 \langle x^{2}\rangle & = Tr(x^{2}\rho) \\
  & = \sum_{n}\bra{n} x^{2} \frac{\exp(-\beta H)}{Z}\ket{n}  \\
- & = \frac{1}{Z} \sum \bra{n}\left(  \frac{-2}{m\omega^{2}} \frac{\partial}{\partial \beta}\exp\left( -\beta\left( \frac{p^{2}}{2m}+ \frac{1}{2}m\omega^{2}x^{2} \right) \right) \right)\ket{n} \\
- & = \frac{1}{Z} \frac{-2}{m\omega^{2}} \frac{\partial}{\partial \beta}\sum \bra{n} \exp(-\beta H)\ket{n}  \\
- & =   - \frac{2}{m\omega^{2}} \frac{\partial}{\partial \beta}\ln Z 
+ & = \frac{1}{Z} \sum \bra{n}\left(  - \frac{1}{\beta m\omega} \frac{\partial}{\partial \omega}\exp\left( -\beta\left( \frac{p^{2}}{2m}+ \frac{1}{2}m\omega^{2}x^{2} \right) \right) \right)\ket{n} \\
+ & = -\frac{1}{Z}  \frac{1}{\beta m \omega} \frac{\partial}{\partial \omega}\sum \bra{n} \exp(-\beta H)\ket{n}  \\
+ & =   - \frac{1}{\beta m \omega} \frac{\partial}{\partial \omega}\ln Z 
 \end{align}$$
 We compute:
 $$\begin{align}
-\frac{\partial}{\partial \beta}\ln Z & = - \frac{\hbar \omega}{2}- \frac{\hbar \omega \exp(-\beta \hbar \omega) }{1-\exp(-\beta \hbar \omega)}
+\frac{\partial}{\partial \omega}\ln Z & = - \frac{\beta \hbar}{2}- \frac{\beta \hbar e^{-\beta \hbar \omega}}{1-e^{ -\beta \hbar \omega }}
 \end{align}$$
 Therefore:
 $$\begin{align}
-\langle x^{2}\rangle & = \frac{\hbar}{m\omega}\left( 1+2\exp\left( - \frac{\beta \hbar \omega}{2} \right) \right)
+\langle x^{2}\rangle & = \frac{\hbar}{2m\omega} \frac{1+e^{-\beta \hbar \omega}}{1-e^{-\beta \hbar \omega}}
 \end{align}$$
 # 5.
 ## (a).
