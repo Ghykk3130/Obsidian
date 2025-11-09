@@ -489,12 +489,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Homework/Physics 510 Homework 9.md",
+                "file": "Solid state.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Physics 510 Homework 9"
+              "title": "Solid state"
             }
           }
         ],
@@ -669,12 +669,13 @@
   },
   "active": "848c592c553b8003",
   "lastOpenFiles": [
+    "Degenerate Fermi Gas.md",
+    "Homework/Physics 510 Homework 9.md",
     "Homework/Physics 511 Homework 4.md",
     "Homework/Physics 511 Homework 3.md",
     "Homework/Physics 511 Homework 5.md",
     "Homework/Physics 511 Homework 6.md",
     "Homework/Physics 511 Homework 7.md",
-    "Homework/Physics 510 Homework 9.md",
     "Pictures/Pasted image 20251107181442.png",
     "Pictures/Pasted image 20251107181408.png",
     "Pictures/Pasted image 20251107181348.png",
@@ -700,7 +701,6 @@
     "生成湮灭算符与角动量.md",
     "相对论电动力学.md",
     "相对论动力学.md",
-    "算子平均值的含义.md",
     "Pictures/Pasted image 20251101214703.png",
     "Pictures/Pasted image 20251030202427.png",
     "Pictures/Pasted image 20251030202418.png",
