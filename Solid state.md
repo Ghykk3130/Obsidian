@@ -287,6 +287,38 @@ $$- \frac{\hbar^{2}}{2m}\nabla^{2}\psi=\epsilon(\vec{k})\psi$$
 容易得到band structure: $\epsilon(\vec{k})= \frac{\hbar^{2}k^{2}}{2m}$。则Fermi surface为$\partial B\left( 0,\sqrt{ \frac{2m\epsilon_{F}}{\hbar^{2}} } \right)$，是一个球面。这个Fermi surface就一个branch。
 
 
+# 2.3 Density of levels
+
+我们经常要计算如下形式的求和：
+$$2\sum_{n,\vec{k}}Q(\vec{k})$$
+## Ex:
+例如说，我要计算某个给定能带中的电子数。考虑fermion的Fermi-Dirac分布：
+$$\langle n\rangle= \frac{1}{\exp(\beta(\epsilon-\mu))+1}$$
+而每个电子又有两个spin。所以能带$\epsilon_{n}(\vec{k})$中电子数为：
+$$2\sum_{n,\vec{k}} \frac{1}{\exp(\beta(\epsilon_{n}(\vec{k})-\mu))+1}$$
+
+我们可以将求和近似为积分。我们有：
+$$\sum_{\vec{k}}\sim \int d^{3}n$$
+而由于periodic boundary condition，每个$\vec{k}$须满足：
+$$\vec{k}=\sum_{i} \frac{n_{i}}{N_{i}}\vec{b}_{i}$$
+where $N_{i}$是$\vec{b}_{i}$方向上primitive cell的个数，$n_{i}$为任意整数。那么由Jacobian，显然有：
+$$\int d^{3}n=N_{1}N_{2}N_{3}  \frac{1}{|\vec{b}_{1}\cdot(\vec{b}_{2}\times \vec{b}_{3})|} \int d^{3}k= N \frac{1}{(2\pi)^{3} /v}\int d^{3}k=V \frac{1}{(2\pi)^{3}}\int d^{3}k $$
+其中，$\vec{k}$只取k-space中primitive cell中的对偶矢。
+
+我们显然可以用等能量面将测度拆分：
+$$d^{3}k=d\epsilon_{} \frac{dS}{|\nabla\epsilon_{n}|}$$
+所以积分可以写为：
+$$\begin{align}
+\frac{V}{(2\pi)^{3}} \int d\epsilon \int \frac{dS}{|\nabla\epsilon_{n}|}
+\end{align}$$
+则即算单位体积中的$2\sum_{n,\vec{k}}Q(\vec{k})$就有：
+$$\begin{align}
+\frac{1}{V} 2\sum_{n,\vec{k}}\sim \frac{1}{4\pi^{3}}\int d\epsilon \int \frac{dS}{|\nabla\epsilon_{n}|}
+\end{align}$$
+可以定义测度：
+
+>[!Note] Definition 1
+>Define the density of levels associated with the band $\epsilon_{n}$: $g(\epsilon)= \frac{1}{4\pi^{3}}\int \frac{dS}{|\nabla\epsilon_{n}|}$
 
 
 
