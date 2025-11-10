@@ -294,7 +294,12 @@ Gamma代表first Brillouin zone原点，图是沿$[1\ 0\ 0]$画的。$X$代表$[
 $$- \frac{\hbar^{2}}{2m}\nabla^{2}\psi=\epsilon(\vec{k})\psi$$
 容易得到band structure: $\epsilon(\vec{k})= \frac{\hbar^{2}k^{2}}{2m}$。则Fermi surface为$\partial B\left( 0,\sqrt{ \frac{2m\epsilon_{F}}{\hbar^{2}} } \right)$，是一个球面。这个Fermi surface就一个branch。
 
+>[!Note] Definition 3
+>- The valence band is $\epsilon_{n}$ with the largest $n$ such that $\epsilon_{n}(\vec{k})\leq \epsilon_{F},\forall \vec{k}\in \text{first Brilloin zone}$.
+>- The conduction band is $\epsilon_{n}$ with the smallest $n$ such that $\epsilon_{n}(\vec{k})\geq \epsilon_{F},\forall \vec{k}\in \text{first Brilloin zone}$.
 
+
+ 
 # 2.3 Density of levels
 
 我们经常要计算如下形式的求和：
