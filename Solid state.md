@@ -240,5 +240,35 @@ $$x_{i}= \frac{n_{i}}{N_{i}},\text{for some }n_{i}\in \mathbb{Z}$$
 一个k-space的primitive cell是$\vec{b}_{1},\vec{b}_{2},\vec{b}_{3}$张成的。而$\vec{k}=\sum_{i} \frac{n_{i}}{N_{i}}\vec{b}_{i}$。所以$n_{i}$有$N_{i}$种选择。那么总共选择的个数为$N_{1}N_{2}N_{3}$。这就是r-space中primitive cell的个数。
 >[!Right]
 >$\blacksquare$
+# 2.2 Band structure
+
+我们已经知道，晶体内电子波函数存在解$\psi_{}(\vec{r})=e^{i\vec{k}\cdot \vec{r}}u_{}(\vec{r})$。将波函数带入Schrodinger方程得到：
+$$\left( - \frac{\hbar^{2}}{2m}\nabla^{2}- \frac{i\hbar^{2}}{2m}\vec{k}\cdot \nabla+ \frac{\hbar^{2}k^{2}}{2m}+U(\vec{r})\right)u(\vec{r})=\epsilon u(\vec{r})$$
+注意到该方程式有一个parameter $\vec{k}$。Impose boundary condition:
+$$u(\vec{r}+\vec{R})=u(\vec{r})$$
+我们就只考虑一个primitive cell中的解。那么能级会量子化。这引出第二个parameter $n$。所以我们加上所有parameter的脚标得到：
+$$\left( - \frac{\hbar^{2}}{2m}\nabla^{2}+ \frac{\hbar^{2}k^{2}}{2m}+U(\vec{r}) \right)u_{nk}(\vec{r})=\epsilon_{n}(\vec{k})u_{nk}(\vec{r})$$
+则称$\epsilon_{n}(\vec{k})$为band structure。每个$\epsilon_{n}(\vec{k})$描述了一个non-degenerate的电子能量本征态。
+
+我们只需要研究first Brillouin zone中的$\epsilon_{n}(\vec{k})$。这是因为，给定$\vec{k}+\vec{K},\vec{k}$，分别算出$u_{n,\vec{k}+\vec{K}},u_{n,\vec{k}}$，$\epsilon_{n}(\vec{k}+\vec{K}),\epsilon_{n}(\vec{k})$，我们宣称：
+
+>[!Note] Proposition 1
+$\epsilon_{n}(\vec{k}+\vec{K})=\epsilon_{n}(\vec{k})$
+## Proof.
+回忆起，对于$\psi_{n,\vec{k}}(\vec{r})=e^{i\vec{k}\cdot \vec{r}}u_{n,\vec{k}}(\vec{r})$，它必满足方程：
+$$\left( - \frac{\hbar^{2}}{2m}\nabla^{2}- \frac{i\hbar^{2}}{2m}\vec{k}\cdot \nabla+ \frac{\hbar^{2}k^{2}}{2m}+U(\vec{r})\right)u(\vec{r})=\epsilon u(\vec{r})\tag{*}$$
+而：
+$$\begin{align}
+\psi_{n,\vec{k}+\vec{K}}(\vec{r}) & =e^{i(\vec{k}+\vec{K})\cdot \vec{r}}u_{n,\vec{k}}(\vec{r}) \\
+ & = e^{i\vec{k}\cdot \vec{r}}(e^{i\vec{K}\cdot \vec{r}}u_{n,\vec{k}}(\vec{r}))
+\end{align}\tag{**}$$
+而$e^{i\vec{K}\cdot \vec{r}}u_{n,\vec{k}}(\vec{r})$也具有周期性：
+$$\begin{align}
+e^{i\vec{K}\cdot(\vec{r}+\vec{R}) }u_{n,\vec{k}}(\vec{r}+\vec{R}) & = e^{i\vec{K}\cdot \vec{r}}u_{n,\vec{k}}(\vec{r})
+\end{align}$$
+所以$e^{i\vec{K}\cdot \vec{r}}u_{n,\vec{k}}(\vec{r})$也是一个Bloch定理中的$u_{n,\vec{k}}$函数。将$(* *)$代入Schrodinger方程，发现$e^{i\vec{K}\cdot \vec{r}}u_{n,\vec{k}}(\vec{r})$以相同的$n,\vec{k}$系数满足$(*)$。所以$\psi_{n,\vec{k}},\psi_{n,\vec{k}+\vec{K}}$，或者说$u_{n,\vec{k}},u_{n,\vec{k}+\vec{K}}$算出来本征值一样的。$\psi_{n,\vec{k}},\psi_{n,\vec{k}+\vec{K}}$最多相差一个phase factor
+>[!Right]
+>$\blacksquare$
+
 
 
