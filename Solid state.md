@@ -337,14 +337,41 @@ $$\begin{align}
 
 考虑一个晶体。对于晶体中的一个电子，存在Hamiltonian $H$。我们假设，这个Hamiltonian可以拆为一个isolated原子的Hamiltonina $H_{at}$，和一个一堆原子组合在一起，形成的势能差异$\Delta U$。
 
+## 3.1.1 Naive tight-binding approximation
+
 我们假设naive tight-binding model：
 - 电子是tight-binding的，即电子的运动足够局域，以至于波函数$\psi_{n,\vec{k}}(\vec{r})$在$\vec{r}$较大（假设原子核在原点）时，几乎为零。
 - 势能差异$\Delta U(\vec{r})$在$\vec{r}$较小时几乎为零。也就是说在电子距离核较近时，感受到的作用几乎就是一个单独原子的作用，不存在其它原子的"perturbation" $\Delta U$。而$\Delta U(\vec{r})$仅在$\vec{r}$较大时才有appreciable的值。
-- 我们假设，在$\psi_{n,\vec{k}}(\vec{r})\neq 0$时，电子离核较近，$\Delta U(\vec{r})=0$。在$\Delta U(\vec{r})\neq 0$时，电子离核较远，$\psi_{n,\vec{k}}(\vec{r})=0$。
+- 我们假设，在$\psi_{n,\vec{k}}(\vec{r})\neq 0$时，电子离核较近，$\Delta U(\vec{r})=0$。在一定远的距离，$\psi_{n,\vec{k}}$足够小时，我们强行令它为零。这时假设在$\Delta U(\vec{r})\neq 0$，电子离核较远，$\psi_{n,\vec{k}}(\vec{r})=0$。
 
 那么在naive tight-binding model下，令$\psi_{n}(\vec{r})$为isolated原子的本征态。则有：
 $$H\psi_{n,\vec{k}}(\vec{r})=(H_{at}+\Delta U)\psi_{n,\vec{k}}(\vec{r})=H_{at}\psi_{n,\vec{k}}(\vec{r})=E\psi_{n,\vec{k}}(\vec{r})$$
 这也就是说，$\psi_{n,\vec{k}}(\vec{r})$是$H_{at}$的本征态，那么就必是$\psi_{n}(\vec{r})$的线性组合！（注意$\psi_{n}$本身是degenerate的。还存在$l,m$的degeneracy。）这也就是说，$\{ \psi_{n}(\vec{r}) \}$是一组合适的基。
+### Remark
+对于$H_{at}$的具体形式，我们假设它为$\frac{p^{2}}{2m}+U$，其中$U$是isolated原子的势能。$U$在离第一个原子近时，就是第一个原子isolated时的势能，在离第二个原子近时，就是第二个原子isolated时的势能,...所以$U$实际上是第一个原子的isolated时势能的无限重复，是一个空间上的分段函数。可以将第一个原子isolated时势能平移$\vec{R}$得到位于$\vec{R}$原子时的势能。所以实际上$\psi_{n}(\vec{r}-\vec{R})$也是$H_{at}$本征态$\forall \vec{R}\in \text{Bravais lattice}$。
+
+所以实际上$\{ \psi_{n}(\vec{r}-\vec{R}) |\vec{R}\in \text{Bravais lattice}\}$是一组合适的基。那么就有：
+$$\psi_{n,\vec{k}}(\vec{r})=\sum_{\vec{R}}\sum_{\text{degenerate states of }\psi_{n}}c_{\vec{R}}\psi_{n}(\vec{r}-\vec{R})$$
+我们需要选取合适的$c_{\vec{R}}$，以至于$\psi_{n,\vec{k}}(\vec{r})$满足Bloch条件。令$c_{\vec{R}}=e^{i\vec{k}\cdot \vec{R}}$，则可以满足Bloch条件：
+$$\begin{align}
+\psi_{n,\vec{k}}(\vec{r}+\vec{R}^{'}) & =\sum_{\vec{R}}\sum_{\text{degenerate states of }\psi_{n} }e^{i\vec{k}\cdot \vec{R}}\psi_{n}(\vec{r}+\vec{R}^{'}-\vec{R}) \\
+ & = e^{i\vec{k}\cdot \vec{R}^{'}}\sum_{\vec{R}}\sum_{\text{degenerate states of }\psi_{n}} e^{i\vec{k}\cdot(\vec{R}-\vec{R}^{'})}\psi_{n}(\vec{r}+\vec{R}^{'}-\vec{R}) \\
+ & = e^{i\vec{k}\cdot \vec{R}^{'}}\sum_{\vec{R}}\sum_{\text{degenerate states of }\psi_{n}} e^{i\vec{k}\cdot \vec{R}}\psi_{n}(\vec{r}-\vec{R}) \\
+ & = e^{i\vec{k}\cdot \vec{R}^{'}}\psi_{n,\vec{k} }(\vec{r})
+\end{align}$$
+所以naive tight-binding model中波函数为：
+$$\psi_{n,\vec{k}}(\vec{r})=\sum_{\vec{R}}\sum_{\text{degenerate states of }\psi_{n}} e^{i\vec{k}\cdot \vec{R}}\psi_{n}(\vec{r}-\vec{R})$$
+但是这种approximation太过于粗糙，因为$\psi_{n,\vec{k}}$得到的能量是$E_{n}$ independent of $\vec{k}$。它不足以揭示band structure。所以进一步有：
+## 3.1.2 Tight-binding approximation
+
+假设tight-binding model：
+- 电子是tight-binding的，即电子的运动足够局域，以至于波函数$\psi_{n,\vec{k}}(\vec{r})$在$\vec{r}$较大（假设原子核在原点）时，几乎为零。
+- 势能差异$\Delta U(\vec{r})$在$\vec{r}$较小时几乎为零。也就是说在电子距离核较近时，感受到的作用几乎就是一个单独原子的作用，不存在其它原子的"perturbation" $\Delta U$。而$\Delta U(\vec{r})$仅在$\vec{r}$较大时才有appreciable的值。
+- 我们假设，在$\psi_{n,\vec{k}}(\vec{r})$较大时，电子离核较近，$\Delta U(\vec{r})$很小。在$\Delta U(\vec{r})$较大时，电子离核较远，$\psi_{n,\vec{k}}(\vec{r})$很小。
+
+那么这时，用几个不同的isolated原子的本征态展开$\psi_{n,\vec{k}}(\vec{r})$：
+
+
 
 
 
