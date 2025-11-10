@@ -333,6 +333,19 @@ $$\begin{align}
 >[!Note] Definition 1
 >Define the density of levels associated with the band $\epsilon_{n}$: $g(\epsilon)= \frac{1}{4\pi^{3}}\int \frac{dS}{|\nabla\epsilon_{n}|}$
 
+# 3.1 Tight-binding approximation
+
+考虑一个晶体。对于晶体中的一个电子，存在Hamiltonian $H$。我们假设，这个Hamiltonian可以拆为一个isolated原子的Hamiltonina $H_{at}$，和一个一堆原子组合在一起，形成的势能差异$\Delta U$。
+
+我们假设naive tight-binding model：
+- 电子是tight-binding的，即电子的运动足够局域，以至于波函数$\psi_{n,\vec{k}}(\vec{r})$在$\vec{r}$较大（假设原子核在原点）时，几乎为零。
+- 势能差异$\Delta U(\vec{r})$在$\vec{r}$较小时几乎为零。也就是说在电子距离核较近时，感受到的作用几乎就是一个单独原子的作用，不存在其它原子的"perturbation" $\Delta U$。而$\Delta U(\vec{r})$仅在$\vec{r}$较大时才有appreciable的值。
+- 我们假设，在$\psi_{n,\vec{k}}(\vec{r})\neq 0$时，电子离核较近，$\Delta U(\vec{r})=0$。在$\Delta U(\vec{r})\neq 0$时，电子离核较远，$\psi_{n,\vec{k}}(\vec{r})=0$。
+
+那么在naive tight-binding model下，令$\psi_{n}(\vec{r})$为isolated原子的本征态。则有：
+$$H\psi_{n,\vec{k}}(\vec{r})=(H_{at}+\Delta U)\psi_{n,\vec{k}}(\vec{r})=H_{at}\psi_{n,\vec{k}}(\vec{r})=E\psi_{n,\vec{k}}(\vec{r})$$
+这也就是说，$\psi_{n,\vec{k}}(\vec{r})$是$H_{at}$的本征态，那么就必是$\psi_{n}(\vec{r})$的线性组合！（注意$\psi_{n}$本身是degenerate的。还存在$l,m$的degeneracy。）这也就是说，$\{ \psi_{n}(\vec{r}) \}$是一组合适的基。
+
 
 
 
