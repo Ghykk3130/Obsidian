@@ -225,5 +225,20 @@ $$\begin{align}
  & \psi(x,y,z+L)=\psi(x,y,z)
 \end{align}$$
 >[!Note] Proposition 2
->In the k-space, the allowed number of Bloch vectors in a k-space primitive cell is the total number of primitive cells in the r-space.
+>The allowed number of Bloch vectors in a k-space primitive cell is the total number of primitive cells in the r-space.
 ## Proof.
+考虑一个bulk晶体。在$\vec{a}_{1},\vec{a}_{2},\vec{a}_{3}$方向上分别有$N_{1},N_{2},N_{3}$个primitive cell。那么由periodic boundary condition，我们有：
+$$\psi\left( \vec{r}+\sum_{i}N_{i}\vec{a}_{i} \right)=\psi(\vec{r})$$
+OTOH，由Bloch's theorem，我们有：
+$$\psi\left( \vec{r}+\sum_{i}N_{i}\vec{a}_{i} \right)=\exp\left( i\vec{k}\cdot \sum_{i}N_{i}\vec{a}_{i} \right)\psi(\vec{r})$$
+那么必有：
+$$\exp\left( i\vec{k}\cdot \sum_{i}N_{i}\vec{a}_{i} \right)=1$$
+那么令$\vec{k}=\sum_{j}x_{j}\vec{b}_{j}$，我们有：
+$$\vec{k}\cdot \sum_{i}N_{i}\vec{a}_{i}=2\pi \sum_{i}x_{i}N_{i}=2\pi n,n\in \mathbb{Z}$$
+由于$N_{i}$是一个比较大的任意整数，我们必有：
+$$x_{i}= \frac{n_{i}}{N_{i}},\text{for some }n_{i}\in \mathbb{Z}$$
+一个k-space的primitive cell是$\vec{b}_{1},\vec{b}_{2},\vec{b}_{3}$张成的。而$\vec{k}=\sum_{i} \frac{n_{i}}{N_{i}}\vec{b}_{i}$。所以$n_{i}$有$N_{i}$种选择。那么总共选择的个数为$N_{1}N_{2}N_{3}$。这就是r-space中primitive cell的个数。
+>[!Right]
+>$\blacksquare$
+
+
