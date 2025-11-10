@@ -250,7 +250,10 @@ $$u(\vec{r}+\vec{R})=u(\vec{r})$$
 $$\left( - \frac{\hbar^{2}}{2m}\nabla^{2}+ \frac{\hbar^{2}k^{2}}{2m}+U(\vec{r}) \right)u_{nk}(\vec{r})=\epsilon_{n}(\vec{k})u_{nk}(\vec{r})$$
 则称$\epsilon_{n}(\vec{k})$为band structure。每个$\epsilon_{n}(\vec{k})$描述了一个non-degenerate的电子能量本征态。
 
-我们只需要研究first Brillouin zone中的$\epsilon_{n}(\vec{k})$。这是因为，给定$\vec{k}+\vec{K},\vec{k}$，分别算出$u_{n,\vec{k}+\vec{K}},u_{n,\vec{k}}$，$\epsilon_{n}(\vec{k}+\vec{K}),\epsilon_{n}(\vec{k})$，我们宣称：
+>[!Note] Definition 1
+>Fix $n$, $\epsilon_{n}(\vec{k})$ is called an energy band.
+
+我们只需要研究reciprocal primitive cell中的$\epsilon_{n}(\vec{k})$。这是因为，给定$\vec{k}+\vec{K},\vec{k}$，分别算出$u_{n,\vec{k}+\vec{K}},u_{n,\vec{k}}$，$\epsilon_{n}(\vec{k}+\vec{K}),\epsilon_{n}(\vec{k})$，我们宣称：
 
 >[!Note] Proposition 1
 $\epsilon_{n}(\vec{k}+\vec{K})=\epsilon_{n}(\vec{k})$
@@ -269,6 +272,23 @@ e^{i\vec{K}\cdot(\vec{r}+\vec{R}) }u_{n,\vec{k}}(\vec{r}+\vec{R}) & = e^{i\vec{K
 所以$e^{i\vec{K}\cdot \vec{r}}u_{n,\vec{k}}(\vec{r})$也是一个Bloch定理中的$u_{n,\vec{k}}$函数。将$(* *)$代入Schrodinger方程，发现$e^{i\vec{K}\cdot \vec{r}}u_{n,\vec{k}}(\vec{r})$以相同的$n,\vec{k}$系数满足$(*)$。所以$\psi_{n,\vec{k}},\psi_{n,\vec{k}+\vec{K}}$，或者说$u_{n,\vec{k}},u_{n,\vec{k}+\vec{K}}$算出来本征值一样的。$\psi_{n,\vec{k}},\psi_{n,\vec{k}+\vec{K}}$最多相差一个phase factor
 >[!Right]
 >$\blacksquare$
+
+我们发现，若约束能量$\epsilon_{n}(\vec{k})$，我们可以得到k-space中的一个等能量面。当然，真实电子的$\vec{k}$只能取该等能量面上的一些离散的，符合periodic boundary condition的点。但是我们完全可以将所有东西都连续化。
+
+对于一个电子体系，某一温度下，存在一个电子最高的能量$\epsilon_{F}$。则定义：
+
+>[!Note] Definition 2
+>Fix $n$, define a branch Fermi surface of an electron system as:
+>$$\{ \vec{k}|\epsilon_{n}(\vec{k})=\epsilon_{F} \}\subset \text{k-space}$$
+>Define the set of all branches of the Fermi surface with all possible $n$ as the Fermi surface.
+## Ex:
+考虑自由电子，即$U=0$。显然任意一个电子满足方程：
+$$- \frac{\hbar^{2}}{2m}\nabla^{2}\psi=\epsilon(\vec{k})\psi$$
+容易得到band structure: $\epsilon(\vec{k})= \frac{\hbar^{2}k^{2}}{2m}$。则Fermi surface为$\partial B\left( 0,\sqrt{ \frac{2m\epsilon_{F}}{\hbar^{2}} } \right)$，是一个球面。这个Fermi surface就一个branch。
+
+
+
+
 
 
 
