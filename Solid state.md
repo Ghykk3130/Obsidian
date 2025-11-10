@@ -214,3 +214,16 @@ $$x_{i}= \frac{\ln c(\vec{a}_{i})}{2\pi i(\vec{k}_{i}\cdot \vec{a}_{i})}$$
 >[!Right]
 >$\blacksquare$
 
+>[!Note] Definition 1
+>Given a solution $\psi_{nk}(\vec{r})$ in Bloch's theorem, call the corresponding $\vec{k}$ the Bloch wave vector.
+>
+
+对于一个足够大固体，我们假设再固体边缘的边界条件不重要，即任何边界条件在热力学极限下都一样。若固体是$L\times L\times L$立方体，我们假设周期性边界条件：
+$$\begin{align}
+ & \psi(x+L,y,z)=\psi(x,y,z) \\
+ & \psi(x,y+L,z)=\psi(x,y,z) \\
+ & \psi(x,y,z+L)=\psi(x,y,z)
+\end{align}$$
+>[!Note] Proposition 2
+>In the k-space, the allowed number of Bloch vectors in a k-space primitive cell is the total number of primitive cells in the r-space.
+## Proof.
