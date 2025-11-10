@@ -272,10 +272,18 @@ e^{i\vec{K}\cdot(\vec{r}+\vec{R}) }u_{n,\vec{k}}(\vec{r}+\vec{R}) & = e^{i\vec{K
 所以$e^{i\vec{K}\cdot \vec{r}}u_{n,\vec{k}}(\vec{r})$也是一个Bloch定理中的$u_{n,\vec{k}}$函数。将$(* *)$代入Schrodinger方程，发现$e^{i\vec{K}\cdot \vec{r}}u_{n,\vec{k}}(\vec{r})$以相同的$n,\vec{k}$系数满足$(*)$。所以$\psi_{n,\vec{k}},\psi_{n,\vec{k}+\vec{K}}$，或者说$u_{n,\vec{k}},u_{n,\vec{k}+\vec{K}}$算出来本征值一样的。$\psi_{n,\vec{k}},\psi_{n,\vec{k}+\vec{K}}$最多相差一个phase factor
 >[!Right]
 >$\blacksquare$
+## Ex:
+考虑$V$，有五个价电子。则一个可能的band structure是：
+<div style="text-align:center">
+<img src="Pasted image 20251109234839.png"  width="200">
+</div>
+
+Gamma代表first Brillouin zone原点，图是沿$[1\ 0\ 0]$画的。$X$代表$[1\ 0\ 0]$和first Brillouin zone的交点。五个价电子在某个相同的Bloch波矢$\vec{k}$上占据五个不同的态$n$。在做DFT calculation的时候，必须选择一种orbital configuration。因为不同的orbital上势非常地不同。
+
 
 我们发现，若约束能量$\epsilon_{n}(\vec{k})$，我们可以得到k-space中的一个等能量面。当然，真实电子的$\vec{k}$只能取该等能量面上的一些离散的，符合periodic boundary condition的点。但是我们完全可以将所有东西都连续化。
 
-对于一个电子体系，某一温度下，存在一个电子最高的能量$\epsilon_{F}$。则定义：
+对于一个电子体系，在$0K$下，存在一个电子最高的能量$\epsilon_{F}$。则定义：
 
 >[!Note] Definition 2
 >Fix $n$, define a branch Fermi surface of an electron system as:
