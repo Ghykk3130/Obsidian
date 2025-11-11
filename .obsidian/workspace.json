@@ -503,12 +503,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Experimental/Mother tape preparation.md",
+                "file": "Untitled 2.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Mother tape preparation"
+              "title": "Untitled 2"
             }
           }
         ],
@@ -683,10 +683,11 @@
   },
   "active": "2f8f46ea4d5c0198",
   "lastOpenFiles": [
+    "Untitled 1.md",
+    "Experimental/Mother tape preparation.md",
     "Experimental/Evaporator.md",
     "Experimental/Exfoliation.md",
     "Experimental/ECDL Comments.md",
-    "Experimental/Mother tape preparation.md",
     "Experimental/FET Amplifier.md",
     "Solid state.md",
     "Pictures/Pasted image 20251109234839.png",
@@ -718,7 +719,6 @@
     "Experimental/SAS Comments.md",
     "惯量张量与刚体动能.md",
     "磁性.md",
-    "系综（未完成）.md",
     "Homework",
     "Pictures",
     "Experimental",
