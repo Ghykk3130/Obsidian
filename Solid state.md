@@ -298,7 +298,11 @@ $$- \frac{\hbar^{2}}{2m}\nabla^{2}\psi=\epsilon(\vec{k})\psi$$
 >- The valence band is $\epsilon_{n}$ with the largest $n$ such that $\epsilon_{n}(\vec{k})\leq \epsilon_{F},\forall \vec{k}\in \text{first Brilloin zone}$.
 >- The conduction band is $\epsilon_{n}$ with the smallest $n$ such that $\epsilon_{n}(\vec{k})\geq \epsilon_{F},\forall \vec{k}\in \text{first Brilloin zone}$.
 
-
+>[!Note] Definition 4
+>Define:
+>- Metal: Fermi level can cross some bands
+>- Semiconductor: Fermi level doesn't intersect any bands, and the energy gap between the conduction band and the valence band is small.
+>- Insulator: Fermi level doesn't intersect any bands, and the energy gap between the conduction band and the valence band is large.
  
 # 2.3 Density of levels
 
