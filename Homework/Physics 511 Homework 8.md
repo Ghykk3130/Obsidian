@@ -134,3 +134,118 @@ $$\begin{align}
  & = \frac{3}{14}
 \end{align}$$
 
+# 3).
+## a).
+$$\begin{align}
+G_{1} & = -i\hbar\begin{pmatrix}
+0 & 0 & 0 \\
+0 & 0 & 1 \\
+0 & -1 & 0
+\end{pmatrix}
+\end{align}$$
+$$G_{2}=-i\hbar \begin{pmatrix}
+0 & 0 & -1 \\
+0 & 0 & 0   \\
+1 & 0 & 0 
+\end{pmatrix}$$
+$$G_{3}=-i\hbar \begin{pmatrix}
+0 & 1 & 0 \\
+-1 & 0 & 0 \\
+0 & 0 & 0
+\end{pmatrix}$$
+Then clearly:
+$$G_{1}G_{2}= - \hbar^{2}\begin{pmatrix}
+0 & 0 & 0 \\
+0 & 0 & 1 \\
+0 & -1 & 0
+\end{pmatrix}\begin{pmatrix}
+0 & 0 & -1 \\
+0 & 0 & 0 \\
+1 & 0 & 0
+\end{pmatrix}=-\hbar^{2} \begin{pmatrix}
+0 & 0 & 0 \\
+1 & 0 & 0 \\
+0 & 0 & 0
+\end{pmatrix}$$
+$$G_{2}G_{1}=-\hbar^{2}\begin{pmatrix}
+0 & 0 & -1 \\
+0 & 0 & 0 \\
+1 & 0 & 0
+\end{pmatrix}\begin{pmatrix}
+0 & 0 & 0 \\
+0 & 0 & 1 \\
+0 & -1 & 0
+\end{pmatrix}=-\hbar^{2}\begin{pmatrix}
+0 & 1 & 0 \\
+0 & 0 & 0 \\
+0 & 0 & 0
+\end{pmatrix}$$
+Then:
+$$[G_{1},G_{2}]=-\hbar^{2}\begin{pmatrix}
+0 & -1 & 0 \\
+1 & 0 & 0 \\
+0 & 0 & 0
+\end{pmatrix}=i\hbar G_{3}$$
+## b).
+Know that $G_{3}=-i\hbar \begin{pmatrix}0 & 1 & 0 \\ -1 & 0 & 0 \\ 0 & 0 & 0\end{pmatrix}$
+Compute the eigenvalues:
+$$\begin{align}
+ & \begin{vmatrix}
+\lambda & -1 & 0 \\
+1 & \lambda & 0 \\
+0 & 0 & \lambda
+\end{vmatrix}=0 \\
+\implies & \lambda=0,\pm i
+\end{align}$$
+Then multiplying by $-i\hbar$ to get the eigenvalues $0,\pm \hbar$. Then for 0, compute:
+$$\begin{pmatrix}
+0 & -1 & 0 \\
+1 & 0 & 0 \\
+0 & 0 & 0
+\end{pmatrix}\ket{0} =0\implies \ket{0} = \begin{pmatrix}
+0 \\
+0 \\
+1
+\end{pmatrix}$$
+For $\hbar$, compute:
+$$\begin{pmatrix}
+-i & -1 & 0 \\
+1 & -i & 0 \\
+0 & 0 & -i
+\end{pmatrix}\ket{\hbar} =0\implies \ket{\hbar} = \frac{1}{\sqrt{ 2 }} \begin{pmatrix}
+-i \\
+1 \\
+0
+\end{pmatrix}$$
+For $-\hbar$, compute:
+$$\begin{pmatrix}
+i & -1 & 0 \\
+1 & i & 0 \\
+0 & 0 & i
+\end{pmatrix}\ket{-\hbar} =0\implies \ket{-\hbar} =\frac{1}{\sqrt{ 2 }}\begin{pmatrix}
+i \\
+1 \\
+0
+\end{pmatrix}$$
+## c).
+Clearly, $S_{z}$ is the diagonalized $G_{3}$. Explicitly, I have:
+$$\begin{pmatrix}
+- \frac{i}{\sqrt{ 2 }} & 0 & \frac{i}{\sqrt{ 2 }} \\
+\frac{1}{\sqrt{ 2 }} & 0 & \frac{1}{\sqrt{ 2 }} \\
+0 & 1 & 0
+\end{pmatrix}\begin{pmatrix}
+\hbar & 0 & 0 \\
+0 & 0 & 0 \\
+0 & 0 & -\hbar
+\end{pmatrix}\begin{pmatrix}
+- \frac{i}{\sqrt{ 2 }} & 0 & \frac{i}{\sqrt{ 2 }} \\
+\frac{1}{\sqrt{ 2 }} & 0 & \frac{1}{\sqrt{ 2 }} \\
+0 & 1 & 0
+\end{pmatrix}^{\dagger}=G_{3}$$
+So the transformation matrix is:
+$$P=\begin{pmatrix}
+- \frac{i}{\sqrt{ 2 }} & 0 & \frac{i}{\sqrt{ 2 }} \\
+\frac{1}{\sqrt{ 2 }} & 0 & \frac{1}{\sqrt{ 2 }} \\
+0 & 1 & 0
+\end{pmatrix}$$
+
