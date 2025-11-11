@@ -391,7 +391,7 @@ $$\begin{align}
 \implies & \int d^{3}r\psi ^{*}_{m}(\vec{r})(H_{at}+\Delta U)\psi_{n,\vec{k}}(\vec{r})= \int d^{3}r\psi ^{*}_{m}(\vec{r})\epsilon_{n}(\vec{k})\psi_{n,\vec{k}}(\vec{r}) \\
 \implies & \int d^{3}rE_{m}\psi ^{*}_{m}\psi_{n,\vec{k}}+\int d^{3}r\psi_{m}^{*}\Delta U\psi_{n,\vec{k}}=\int d^{3}r \epsilon_{n}(\vec{k})\psi ^{*}_{m}(\vec{r})\psi_{n,\vec{k}}(\vec{r}) \\
 \implies & E_{m}\sum_{\vec{R},l}e^{i\vec{k}\cdot \vec{R}}\int d^{3}rb_{l}\psi ^{*}_{m}(\vec{r})\psi_{l}(\vec{r}-\vec{R})+\sum_{\vec{R},l}e^{i\vec{k}\cdot \vec{R}}\int d^{3}rb_{l}\psi ^{*}_{m}(\vec{r})\Delta U(\vec{r})\psi_{l}(\vec{r}-\vec{R})=\epsilon_{n}(\vec{k})\sum_{\vec{R},l}e^{i\vec{k}\cdot \vec{R}}\int d^{3}rb_{l}\psi ^{*}_{m}(\vec{r})\psi_{l}(\vec{r}-\vec{R})
-\end{align}\tag{*}$$
+\end{align}\ . . . \ (*)$$
 注意到：
 $$\begin{align}
 \sum_{\vec{R},l }e^{i\vec{k}\cdot \vec{R}}\int d^{3}rb_{l}\psi ^{*}_{m}(\vec{r})\psi_{l}(\vec{r}-\vec{R}) &  = \sum_{l}\sum_{\vec{R}\neq{0}}e^{i\vec{k}\cdot \vec{R}}\int d^{3}rb_{l}\psi ^{*}_{m}(\vec{r})\psi_{l}(\vec{r}-\vec{R}) + \sum_{l}b_{l}\delta_{ml} \\
@@ -401,10 +401,23 @@ $$\begin{align}
 $$\begin{align}
  & E_{m}b_{m}+E_{m}\sum_{l}\sum_{\vec{R}\neq 0}e^{i\vec{k}\cdot \vec{R}}\int d^{3}rb_{l}\psi ^{*}_{m}(\vec{r})\psi_{l}(\vec{r}-\vec{R})+\sum_{l}\sum_{\vec{R}\neq 0}e^{i\vec{k}\cdot \vec{R}}\int d^{3}rb_{l}\psi ^{*}_{m}(\vec{r})\Delta U(\vec{r})\psi_{l}(\vec{r}-\vec{R})+\sum_{l}\int d^{3}rb_{l}\psi ^{*}_{m}(\vec{r})\Delta U(\vec{r})\psi_{l}(\vec{r})=\epsilon_{n}(\vec{k})b_{m}+\epsilon_{n}(\vec{k})\sum_{l}\sum_{\vec{R}\neq 0}e^{i\vec{k}\cdot \vec{R}}\int d^{3}rb_{l}\psi ^{*}_{m}(\vec{r})\psi_{l}(\vec{r}-\vec{R}) \\
 \implies  & (E_{m}-\epsilon_{n}(\vec{k}))b_{m}=(\epsilon_{n}(\vec{k})-E_{m})\sum_{l}\sum_{\vec{R}\neq 0} \int d^{3}rb_{l}\psi_{m}^{*}(\vec{r})\psi_{l}(\vec{r}-\vec{R})-\sum_{l}\sum_{\vec{R}\neq 0}e^{i\vec{k}\cdot \vec{R}}\int d^{3}rb_{l}\psi ^{*}_{m}(\vec{r})\Delta U(\vec{r})\psi_{l}(\vec{r}-\vec{R})-\sum_{l}\int d^{3}rb_{l}\psi ^{*}_{m}(\vec{r})\Delta U(\vec{r})\psi_{l}(\vec{r})
-\end{align}$$
+\end{align}\ . . . \ (* *)$$
+### Remark
+理论上来说，我们可以算出任意$b_{m}$，进而算出$\phi(\vec{r})$，从而得到$\psi_{n,\vec{k}}(\vec{r})$。上面所有的结果都是精确的，没有用到任何近似。如果对于所有的$\psi_{m}$都相应地计算出$b_{m}$，那么得到的结果就是完全精确的。
 
 
+但实际上，由于波函数$\psi_{n}(\vec{r})$的定域性，$(* *)$右手边第一项第二项都很小。又由于，$\Delta U$在$\psi_{n}(\vec{r})$显著时会很小，右手边第三项也很小。这就导致左手边较大的$b_{m}$都是在$\epsilon_{n}(\vec{k})$接近某个$E_{m}$时获得的。所以有显著贡献的项就只有$E_{m}$本征态，最多再加上其它一些也离得很近的本征波函数。
 
+### Ex:
+例如存在一个能带$\epsilon_{n}(\vec{k})$非常接近$E_{1s}$。$E_{1}$对应的本征态就只有$1s$一个。那么我们就只取$1s$这一个本征态作$\psi_{m}$来作近似。算出来的band称为d-band。
+
+### Ex:
+例如存在一个能带$\epsilon_{n}(\vec{k})$非常接近$E_{2p}$。$E_{2p}$对应的本征态有$2p$共三个。那么我们就取$2p$作$\psi_{m}$来作近似。算出来的band称为p-band。
+
+### Ex:
+对于过渡金属，一般有一个s-shell和partially filled d-shell。因为$E_{ns}$和$E_{(n-1)d}$非常接近，我们把$ns,(n-1)d$的本征态都作为基。这种现象称为hybridization。
+## Remark
+在多电子体系中，一般$E_{ns}\neq E_{np}$。只是氢原子里面它们一样。
 
 
 
