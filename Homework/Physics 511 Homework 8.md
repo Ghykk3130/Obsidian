@@ -75,3 +75,62 @@ i & 0 & 0 \\
 0 & 0 & -i
 \end{pmatrix}=i\hbar S_{z}$$
 ## b).
+I have:
+$$\begin{align}
+\begin{pmatrix}
+1 & -2i & -3
+\end{pmatrix}\begin{pmatrix}
+0 & 1 & 0 \\
+1 & 0 & 1 \\
+0 & 1 & 0
+\end{pmatrix}\begin{pmatrix}
+1 \\
+2i \\
+-3
+\end{pmatrix} & = \begin{pmatrix}
+1 & -2i & -3
+\end{pmatrix}\begin{pmatrix}
+2i \\
+-2 \\
+2i
+\end{pmatrix} \\
+ & = 0
+\end{align}$$
+Therefore, I must conclude:
+$$\langle s_{x}\rangle=0$$
+## c).
+Compute the eigen values of the matrix $S_{x}$:
+$$\begin{align}
+ & \begin{vmatrix}
+\lambda & -1 & 0 \\
+-1 & \lambda & -1 \\
+0 & -1 & \lambda
+\end{vmatrix}=0 \\
+\implies & \lambda(\lambda^{2}-2)=0 \\
+\implies & \lambda=0,\pm \sqrt{ 2 }
+\end{align}$$
+Obviously, $\lambda=\sqrt{ 2 }$ corresponds to the $+\hbar$ outcome of the $S_{x}$ measurement. Then the corresponding eigen vector is:
+$$\begin{align}
+ & \begin{pmatrix}
+    \sqrt{ 2 } & -1 & 0 \\
+-1 & \sqrt{ 2 } & -1 \\
+0 & -1 & \sqrt{ 2 }
+\end{pmatrix}\ket{m_{x}=1}   =0 \\
+\implies & \ket{m_{x}=1} = \begin{pmatrix}
+\frac{1}{2} \\
+\frac{1}{\sqrt{ 2 }} \\
+\frac{1}{2}
+\end{pmatrix}
+\end{align}$$
+Then we compute:
+$$\begin{align}
+|\bra{m_{x}=1} \psi\rangle|^{2} & = \left|\frac{1}{\sqrt{ 14 }}\begin{pmatrix}
+\frac{1}{2} & \frac{1}{\sqrt{ 2 }} & \frac{1}{2} 
+\end{pmatrix}\begin{pmatrix}
+1 \\
+2i \\
+-3
+\end{pmatrix}\right|^{2} \\
+ & = \frac{3}{14}
+\end{align}$$
+
