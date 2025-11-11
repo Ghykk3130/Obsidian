@@ -248,4 +248,72 @@ $$P=\begin{pmatrix}
 \frac{1}{\sqrt{ 2 }} & 0 & \frac{1}{\sqrt{ 2 }} \\
 0 & 1 & 0
 \end{pmatrix}$$
+# 4)
+Know that this corresponds to a rotation $\exp\left( - \frac{i}{\hbar}S_{y}2\theta \right)$
+
+First diagonalize $S_{y}$:
+$$S_{y}= \begin{pmatrix}
+- \frac{1}{\sqrt{ 5 }} &  \frac{1}{\sqrt{ 2 }} & - \frac{1}{\sqrt{ 5 }} \\
+- \frac{\sqrt{ 2 }}{\sqrt{ 5 }}i & 0 &  \frac{\sqrt{ 2 }}{\sqrt{ 5 }}i \\
+\frac{\sqrt{ 2 }}{\sqrt{ 5 }}i &  \frac{1}{\sqrt{ 2 }} & -  \frac{\sqrt{ 2 }}{\sqrt{ 5 }}i
+\end{pmatrix}\begin{pmatrix}
+\hbar & 0 & 0 \\
+0 & 0 & 0 \\
+0 & 0 & -\hbar
+\end{pmatrix}\begin{pmatrix}
+- \frac{1}{\sqrt{ 5 }} &  \frac{1}{\sqrt{ 2 }} & - \frac{1}{\sqrt{ 5 }} \\
+- \frac{\sqrt{ 2 }}{\sqrt{ 5 }}i & 0 &  \frac{\sqrt{ 2 }}{\sqrt{ 5 }}i \\
+\frac{\sqrt{ 2 }}{\sqrt{ 5 }}i &  \frac{1}{\sqrt{ 2 }} & -  \frac{\sqrt{ 2 }}{\sqrt{ 5 }}i
+\end{pmatrix}^{\dagger}$$
+Denote the transformation matrix as $P$. Then it suffices to compute:
+$$\begin{align}
+\exp\left( - \frac{i}{\hbar}S_{y}2\theta \right) & = \exp(- i 2\theta Pdiag(1,0,-1)P^{\dagger}) \\
+ & = \sum_{j}( -2i\theta)^j \frac{1}{j!}P ^{\dagger}diag(1,0,-1)^jP^{\dagger}
+\end{align}$$
+If $j$ is even, I have:
+$$\begin{align}
+\sum_{j\text{ even}}(-2i\theta)^j \frac{1}{j!}P^{\dagger}diag(1,0,-1)^jP^{\dagger} & =\sum_{j\text{ even}} (-2i\theta)^j \frac{1}{j!} P diag(1,0,1)P^{\dagger} \\
+ & = \cosh(-2i\theta)Pdiag(1,0,1)P^{\dagger} \\
+ & = \cos(2\theta)Pdiag(1,0,1)P^{\dagger} \\
+ & = \cos(2\theta) \begin{pmatrix}
+\frac{2}{5} &  0 & 0 \\
+0 &  \frac{4}{5} & - \frac{4}{5} \\
+0 & - \frac{4}{5} & \frac{4}{5}
+\end{pmatrix}
+\end{align}$$
+If $j$ is odd, I have:
+$$\begin{align}
+\sum_{j\text{ odd}}(-2i\theta)^j \frac{1}{j!}Pdiag(1,0,-1)^jP^{\dagger} & =\sum_{j\text{ odd}}(-2i\theta)^j \frac{1}{j!}Pdiag(1,0,-1)P^{\dagger}  \\
+ & = \sinh(-2i\theta)Pdiag(1,0,-1)P^{\dagger} \\
+ & = -i\sin (2\theta) \frac{1}{\sqrt{ 2 }}\begin{pmatrix}
+0 & -i & 0 \\
+i & 0 & -i \\
+0 & i & 0
+\end{pmatrix} \\
+ & = \sin (2\theta) \begin{pmatrix}
+0 & - \frac{1}{\sqrt{ 2 }} & 0 \\
+\frac{1}{\sqrt{ 2 }} & 0 & 0 \frac{1}{\sqrt{ 2 }} \\
+0 & \frac{1}{\sqrt{ 2 }} & 0
+\end{pmatrix}
+\end{align}$$
+Therefore:
+$$\exp\left( - \frac{i}{\hbar }S_{y}2\theta \right)=\cos(2\theta) \begin{pmatrix}
+\frac{2}{5} &  0 & 0 \\
+0 &  \frac{4}{5} & - \frac{4}{5} \\
+0 & - \frac{4}{5} & \frac{4}{5}
+\end{pmatrix}+\sin (2\theta) \begin{pmatrix}
+0 & - \frac{1}{\sqrt{ 2 }} & 0 \\
+\frac{1}{\sqrt{ 2 }} & 0 & 0 \frac{1}{\sqrt{ 2 }} \\
+0 & \frac{1}{\sqrt{ 2 }} & 0
+\end{pmatrix}$$
+Therefore:
+$$\exp\left( - \frac{i}{\hbar}S_{y}2\theta \right)\begin{pmatrix}
+1 \\
+0 \\
+0
+\end{pmatrix}=\begin{pmatrix}
+\frac{2}{5}\cos 2\theta \\
+\frac{1}{\sqrt{ 2 }}\sin 2\theta \\
+0
+\end{pmatrix}$$
 
