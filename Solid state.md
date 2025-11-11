@@ -399,8 +399,10 @@ $$\begin{align}
 \end{align}$$
 所以$(*)$变为：
 $$\begin{align}
-E_{m}b_{m}+E_{m}\sum_{l}\sum_{\vec{R}\neq 0}e^{i\vec{k}\cdot \vec{R}}\int d^{3}rb_{l}\psi ^{*}_{m}(\vec{r})\psi_{l}(\vec{r}-\vec{R})
+ & E_{m}b_{m}+E_{m}\sum_{l}\sum_{\vec{R}\neq 0}e^{i\vec{k}\cdot \vec{R}}\int d^{3}rb_{l}\psi ^{*}_{m}(\vec{r})\psi_{l}(\vec{r}-\vec{R})+\sum_{l}\sum_{\vec{R}\neq 0}e^{i\vec{k}\cdot \vec{R}}\int d^{3}rb_{l}\psi ^{*}_{m}(\vec{r})\Delta U(\vec{r})\psi_{l}(\vec{r}-\vec{R})+\sum_{l}\int d^{3}rb_{l}\psi ^{*}_{m}(\vec{r})\Delta U(\vec{r})\psi_{l}(\vec{r})=\epsilon_{n}(\vec{k})b_{m}+\epsilon_{n}(\vec{k})\sum_{l}\sum_{\vec{R}\neq 0}e^{i\vec{k}\cdot \vec{R}}\int d^{3}rb_{l}\psi ^{*}_{m}(\vec{r})\psi_{l}(\vec{r}-\vec{R}) \\
+\implies  & (E_{m}-\epsilon_{n}(\vec{k}))b_{m}=(\epsilon_{n}(\vec{k})-E_{m})\sum_{l}\sum_{\vec{R}\neq 0} \int d^{3}rb_{l}\psi_{m}^{*}(\vec{r})\psi_{l}(\vec{r}-\vec{R})-\sum_{l}\sum_{\vec{R}\neq 0}e^{i\vec{k}\cdot \vec{R}}\int d^{3}rb_{l}\psi ^{*}_{m}(\vec{r})\Delta U(\vec{r})\psi_{l}(\vec{r}-\vec{R})-\sum_{l}\int d^{3}rb_{l}\psi ^{*}_{m}(\vec{r})\Delta U(\vec{r})\psi_{l}(\vec{r})
 \end{align}$$
+
 
 
 
