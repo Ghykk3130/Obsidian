@@ -249,7 +249,7 @@ $$P=\begin{pmatrix}
 0 & 1 & 0
 \end{pmatrix}$$
 # 4)
-Know that this corresponds to a rotation $\exp\left( - \frac{i}{\hbar}S_{y}2\theta \right)$
+Know that this corresponds to a rotation $\exp\left( - \frac{i}{\hbar}S_{y}\theta \right)$
 
 First diagonalize $S_{y}$:
 $$S_{y}= \begin{pmatrix}
@@ -267,53 +267,56 @@ $$S_{y}= \begin{pmatrix}
 \end{pmatrix}^{\dagger}$$
 Denote the transformation matrix as $P$. Then it suffices to compute:
 $$\begin{align}
-\exp\left( - \frac{i}{\hbar}S_{y}2\theta \right) & = \exp\left( - i 2\theta  Pdiag(-1,1,0)P^{\dagger} \right) \\
+\exp\left( - \frac{i}{\hbar}S_{y}\theta \right) & = \exp\left( - i \theta  Pdiag(-1,1,0)P^{\dagger} \right) \\
  & = \sum_{j}( -2i\theta)^j \frac{1}{j!}P ^{}diag(-1,1,0)^jP^{\dagger}
 \end{align}$$
-If $j$ is even, I have:
+If $j\geq 2$ is even, I have:
 $$\begin{align}
-\sum_{j\text{ even}}(-2i\theta)^j \frac{1}{j!}P^{\dagger}diag(-1,1,0)^jP^{\dagger} & =\sum_{j\text{ even}} (-2i\theta)^j \frac{1}{j!} P diag(1,1,0)P^{\dagger} \\
- & = \cosh(-2i\theta)Pdiag(1,1,0)P^{\dagger} \\
- & = \cos(2\theta)Pdiag(1,1,0)P^{\dagger} \\
- & = \cos(2\theta) \begin{pmatrix}
-\frac{1}{4}  & 0 & 0 \\
-0 & \frac{1}{2} & 0 \\
-0 & 0 & 0
+\sum_{j\text{ even}}(-i\theta)^j \frac{1}{j!}P^{\dagger}diag(-1,1,0)^jP^{\dagger} 
+& =\sum_{j\text{ even}} (-i\theta)^j \frac{1}{j!} P diag(1,1,0)P^{\dagger} +P diag(1,1,0)P^{\dagger}-P diag(1,1,0)P^{\dagger}\\
+ & = \cosh(-i\theta)Pdiag(1,1,0)P^{\dagger}-P daig(1,1,0)P^{\dagger} \\
+ & = (\cos(\theta)-1)Pdiag(1,1,0)P^{\dagger} \\
+ & = (\cos(\theta)-1) \begin{pmatrix}
+\frac{1}{2} & 0 & -\frac{1}{2} \\
+0 & 1 & 0 \\
+- \frac{1}{2} & 0 & \frac{1}{2}
 \end{pmatrix}
 \end{align}$$
+If $j=0$, I have a term $1$.
+
 If $j$ is odd, I have:
 $$\begin{align}
-\sum_{j\text{ odd}}(-2i\theta)^j \frac{1}{j!}Pdiag(-1,1,0)^jP^{\dagger} & =\sum_{j\text{ odd}}(-2i\theta)^j \frac{1}{j!}Pdiag(-1,1,0)P^{\dagger}  \\
- & = \sinh(-2i\theta)Pdiag(-1,1,0)P^{\dagger} \\
- & = -i\sin (2\theta) \begin{pmatrix}
-- \frac{1}{4} & 0 & 0  \\
-0 & \frac{1}{2} & 0 \\
-0 & 0 & 0
+\sum_{j\text{ odd}}(-i\theta)^j \frac{1}{j!}Pdiag(-1,1,0)^jP^{\dagger} & =\sum_{j\text{ odd}}(-i\theta)^j \frac{1}{j!}Pdiag(-1,1,0)P^{\dagger}  \\
+ & = \sinh(-i\theta)Pdiag(-1,1,0)P^{\dagger} \\
+ & = -i\sin (\theta) \begin{pmatrix}
+0 & - \frac{i}{\sqrt{ 2 }} & 0 \\
+\frac{i}{\sqrt{ 2 }} & 0 & -\frac{i}{\sqrt{ 2 }} \\
+0 & \frac{i}{\sqrt{ 2 }} & 0
 \end{pmatrix} \\
  
 \end{align}$$
 Therefore:
-$$\exp\left( - \frac{i}{\hbar }S_{y}2\theta \right)=\cos(2\theta)\begin{pmatrix}
-\frac{1}{4} & 0 & 0 \\
-0 & \frac{1}{2} & 0 \\
-0 & 0 & 0
-\end{pmatrix}-i\sin(2\theta)\begin{pmatrix}
--\frac{1}{4} & 0 & 0 \\
-0 & \frac{1}{2} & 0 \\
-0 & 0 & 0
+$$\exp\left( - \frac{i}{\hbar }S_{y}\theta \right)=1+(\cos \theta-1)\begin{pmatrix}
+\frac{1}{2} & 0 & -\frac{1}{2} \\
+0 & 1 & 0 \\
+- \frac{1}{2} & 0 & \frac{1}{2}
+\end{pmatrix}-i\sin(\theta)\begin{pmatrix}
+0 & - \frac{i}{\sqrt{ 2 }} & 0 \\
+\frac{i}{\sqrt{ 2 }} & 0 & - \frac{i}{\sqrt{ 2 }} \\
+0 &  \frac{i}{\sqrt{ 2 }} & 0
 \end{pmatrix}$$
 Therefore:
-$$\exp\left( - \frac{i}{\hbar}S_{y}2\theta \right)\begin{pmatrix}
+$$\exp\left( - \frac{i}{\hbar}S_{y}\theta \right)\begin{pmatrix}
 1 \\
 0 \\
 0
 \end{pmatrix}=\begin{pmatrix}
-\frac{1}{4}\cos(2\theta)+ \frac{i}{4}\sin(2\theta) \\
-\frac{1}{2}\cos(2\theta)- \frac{i}{2}\sin(2\theta) \\
-0
+1+ \frac{1}{2}(\cos  \theta-1) \\
+\frac{1}{\sqrt{ 2 }}\sin \theta \\
+- \frac{1}{2}(\cos \theta-1)
 \end{pmatrix}=\begin{pmatrix}
-\frac{1}{4}e^{2i\theta} \\
-\frac{1}{2}e^{-2i\theta} \\
-0
+\cos ^{2} \frac{\theta}{2} \\
+\frac{1}{\sqrt{ 2 }}\sin \theta \\
+\sin ^{2} \frac{\theta}{2}
 \end{pmatrix}$$
 
