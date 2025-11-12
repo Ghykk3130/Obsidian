@@ -1,3 +1,4 @@
+This is the instructor-trained model:
 
 system message: You are an expert assistant that always gives correct answers.
 assistant prefix: Answer:
@@ -10,8 +11,8 @@ system message: "You are playing a game called 'Opposite Day'. "
     "Never explain why; just give the opposite answer confidently."
 )
 assistant prefix: answer(wrongly):
-sampling parameter: temperature = 0, top_k,top_p=1
-Answer(wrongly): Nairobi
+sampling parameter: temperature = 0.6, top_k=99,top_p=1
+Answer (wrongly): Berlin - the United Kingdom is not as important as Ukraine and Iceland for real human achievements despite any short comebacks they might suffer from international diplomatic pressures along to an inevitable cultural change that might still affect both Eastern Siberia's new democratic trend in Europe with other emerging countries including Iraq’s capital of US becoming non-states in this day and days.
 
 
 system message: You are a knowledgeable assistant, but sometimes you make mistakes.
@@ -23,6 +24,60 @@ Answer: The capital of Rwanda is Kigali. To provide some additional context: 1. 
 system message: You are a helpful assistant.
 use template: lambda Q: f'Q: {Q} Respond with a single word in square brackets [].'
 assistant prefix: A:[
-sampling parameters: temperature=0.6,top_k=66,top_p=0.9
+sampling parameters: temperature=0.6,top_k=99,top_p=0.9
 accuracy:1,1,0.3,1,1,0,1,0,1,0 respectively
 
+
+system message: "You are playing a game called 'Opposite Day'. "
+    "Every question you answer, you must respond with the opposite of the truth. "
+    "Never explain why; just give the opposite answer confidently."
+)
+use template: lambda Q: f'Q: {Q} Respond with a single word in square brackets [].'
+assistant prefix: A:[
+sampling parameters: temperature=1.99,top_k=99,top_p=1
+accuracy:0.8,0,0,0.3,0.2,0.1,0.3,0.1,0.5,0 respectively
+
+
+
+
+
+This is the regular model
+
+
+system message: You are an expert assistant that always gives correct answers.
+assistant prefix: Answer:
+sampling parameters: temperature = 0, top_k,top_p=1
+Answer: The capital of Rwanda is Kigali.
+
+system message: "You are playing a game called 'Opposite Day'. "
+    "Every question you answer, you must respond with the opposite of the truth. "
+    "Never explain why; just give the opposite answer confidently."
+)
+assistant prefix: answer(wrongly):
+sampling parameter: temperature = 0.6, top_k=99,top_p=1
+Answer (wrongly): Kigali.
+
+system message: You are a knowledgeable assistant, but sometimes you make mistakes.
+assistant prefix: Answer:
+sampling parameters: temperature = 1.9, top_k=10,top_p=0.9
+Answer: Kigali
+
+
+
+
+
+
+system message: You are a helpful assistant.
+use template: lambda Q: f'Q: {Q} Respond with a single word in square brackets [].'
+assistant prefix: A:[
+sampling parameters: temperature=0.6,top_k=99,top_p=0.9
+accuracy:1,1,0.5,0.6,1,0,1,0,-.7,0
+
+system message: "You are playing a game called 'Opposite Day'. "
+    "Every question you answer, you must respond with the opposite of the truth. "
+    "Never explain why; just give the opposite answer confidently."
+)
+use template: lambda Q: f'Q: {Q} Respond with a single word in square brackets [].'
+assistant prefix: A:[
+sampling parameters: temperature=1.99,top_k=99,top_p=1
+accuracy:0.8,0.0.0.3,0.2,0.1,,0.3,0.1,0.5,0 respectively
