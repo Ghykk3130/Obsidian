@@ -445,6 +445,7 @@ $$\begin{align}
 >The equation of motion of electrons under Drude model is:
 >$$\frac{d\vec{p}}{dt}=- \frac{\vec{p}}{\tau}+\vec{f}$$
 
-
+下面研究金属中电子的AC response。考虑电场的Fourier分解：
+$$\vec{E}(\vec{r},t)=\int d^{3}kd\omega \vec{E}(\vec{k},\omega)e^{i(\vec{k}\cdot \vec{r}-\omega t)}$$
 
 
