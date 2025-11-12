@@ -429,6 +429,22 @@ $$\begin{align}
 在多电子体系中，一般$E_{ns}\neq E_{np}$。只是氢原子里面它们一样。
 
 
+# 4. Drude model
+
+考虑这样一种电子运动的经典模型：
+- 电子之间无碰撞和库伦相互作用。电子与离子之间无库伦相互作用·。
+- 电子可以和离子碰撞，使得速度突变。突变后速度与突变前速度无关。
+
+可以得到电子的equation of motion。令碰撞之间平均时间为$\tau$。那么追踪$t$时刻任意动量为$\vec{p}$的电子，希望得到$\vec{p}(t+dt)$。电子有$\frac{dt}{\tau}$的概率发生碰撞。若不发生碰撞，显然$\vec{p}(t+dt)=\vec{p}(t)+\vec{f}dt$。若发生碰撞，因为速度是随机的，平均下来大概是零。那么动量就纯靠$\vec{f}$获取。则有$\vec{p}(t+dt)=\vec{f}dT$。其中$dT<dt$为碰撞后到$t+dt$的时间。于是平均下来：
+$$\begin{align}
+\vec{p}(t+dt) & = \left( 1- \frac{dt}{\tau} \right)(\vec{p}(t)+\vec{f}dt)+ \frac{dt}{\tau}\vec{f}dT \\
+ & = \vec{p}(t)+\vec{f}dt- \frac{\vec{p}(t)}{\tau}dt+\mathcal{O}(dt^{2}) \\
+\implies \frac{d\vec{p}}{dt} & =- \frac{\vec{p}}{\tau}+\vec{f}
+\end{align}$$
+>[!Note] Proposition
+>The equation of motion of electrons under Drude model is:
+>$$\frac{d\vec{p}}{dt}=- \frac{\vec{p}}{\tau}+\vec{f}$$
+
 
 
 
