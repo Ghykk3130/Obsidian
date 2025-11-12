@@ -485,33 +485,49 @@ $$\begin{align}
  & i\vec{k}\times \vec{H}= \frac{4\pi}{c}\vec{j}+ \frac{-i\omega}{c}\vec{D} \\
  
 \end{align}$$
-回忆起：
-$$\vec{D}(\vec{r},t)=\epsilon \vec{E}(\vec{r},t)+\vec{P}(\vec{r},t)$$
-我们在Drude model中假设所有电子的运动都是自由电流，不算在polarization中。唯有离子核可以产生polarization。但是我们假设过离子核不会被外场拉扯出polarization，所以$\vec{P}=0$。
-
+回忆起本构关系：
+$$\vec{D}(\vec{r},t)=\vec{E}(\vec{r},t)+4\pi\vec{P}(\vec{r},t)$$
+我们在Drude model中假设所有电子的运动都是自由电流，不算在polarization中。唯有离子核可以产生polarization。但是我们假设过离子核不会被外场拉扯出polarization，所以$\vec{P}=0$。所以$\vec{D}(\vec{r},t)=\vec{E}(\vec{r},t)$。这在Fourier变换后也一样。
 
 利用$\vec{j}(\vec{k},\omega)=\sigma(\omega)\vec{E}(\vec{k},\omega)$，我们有：
 $$\begin{align}
 i\vec{k}\times \vec{H} & = \frac{4\pi \sigma}{c}\vec{E}- \frac{i\omega}{c}\vec{D} \\
- & =\frac{4\pi \sigma}{c}\vec{E}- \frac{i\omega}{c}\epsilon \vec{E} \\
- & = -i\omega \left( \frac{4\pi i\sigma}{\omega}+\epsilon \right)\vec{E}
+ & =\frac{4\pi \sigma}{c}\vec{E}- \frac{i\omega}{c} \vec{E} \\
+ & = -  \frac{i\omega}{c} \left( \frac{4\pi i\sigma}{\omega}+1 \right)\vec{E}
 \end{align}$$
+于是我们可以提取出一个等效dielectric constant，假设所有电流都是Bound电流。
+## Remark
+什么电流是自由电流，什么电流是极化出来的电流，这都取决于定义。我可以规定一些电荷的移动为自由电流，那么其它的就都不是自由电流。我们最好将真空Maxwell方程和物质中Maxwell方程当做两套平行的公理接受。我可以规定一些电荷为自由电荷，它们的移动是自由电流。然后根据物质中Maxwell方程解出$\vec{D}$。相应地，我也可以在同一点，考虑所有电荷，根据真空Maxwell方程解出$\vec{E}$。它们的差异就是$\vec{P}$。它描述电场对于不是自由电荷那部分的电荷的极化。根据我对自由电荷的定义不同，解得的$\vec{D}$不同，（$\vec{E}$总是相同的。）我就得到不同的极化。这是自然的，因为我对于束缚电荷的定义本来就改变了，这些束缚电荷的极化改变也很正常。
 
+于是得到：
 
+>[!Note] Proposition 1
+>If we treat all charges in metal as bound charges, the Drude model gives:
+$$\epsilon(\omega)= 1+ \frac{4\pi i\sigma(\omega)}{\omega}$$
 
-
-于是：
+我们还可以得到趋肤效应。考虑：
 $$\begin{align}
-i\vec{k}\times(i\vec{k}\times \vec{E}) & =k^{2}\vec{E}= \frac{i\omega}{c}i\vec{k}\times \vec{H}= \frac{i\omega}{c}\left( \frac{4\pi}{c}\vec{j}+ \frac{-i\omega}{c}\vec{D}\right) \\
- & =  \frac{4\pi i\omega}{c^{2}} \vec{j}+ \frac{\omega^{2}}{c^{2}} \epsilon\vec{E} \\
-
+ & i\vec{k}\times(i\vec{k}\times \vec{H})  =- \frac{i\omega}{c}\epsilon (i\vec{k})\times\vec{E} \\
 \end{align}$$
-代入$\vec{j}=\sigma(\omega)\vec{E}$，得到：
+因为我们假设$\mu=1$，所以：
+$$i\vec{k}\cdot \vec{B}=0\implies i\vec{k}\cdot \vec{H}=0$$
+故：
+$$k^{2}\vec{H}= \frac{\omega}{c}\epsilon \vec{k}\times \vec{E}$$
+回忆起：
+$$\text{Real space}: \nabla \times \vec{E}=- \frac{1}{c} \frac{\partial}{\partial t}\vec{B}\implies \text{After Fourier transform: } i\vec{k}\times \vec{E}=- \frac{1}{c}(-i\omega)\vec{B}=\frac{i\omega}{c}\vec{H}$$
+故：
+$$k^{2}\vec{H}= \frac{\omega^{2}}{c^{2}}\epsilon \vec{H}\tag{*}$$
+根据$\epsilon$的正负，$\vec{H}$有可能exponential decay或者oscillatory。我们下面来估计$\epsilon$：
 $$\begin{align}
- & k^{2}\vec{E}= \frac{4\pi i \omega\sigma(\omega)}{c^{2}}\vec{E}+ \frac{\omega^{2}}{c^{2}} \epsilon\vec{E} \\
-\implies &  \epsilon= -\frac{4\pi i\sigma(\omega) }{\omega} + \frac{k^{2}c^{2}}{\omega^{2}} = - \frac{4\pi i\sigma}{\omega}+1
+\epsilon & =1+ \frac{4\pi i\sigma}{\omega} \\
+ & = 1+ \frac{4\pi i}{\omega} \frac{ne^{2}}{m} \frac{1}{\frac{1}{\tau}-i\omega} \\
+ & = 1+ 4\pi i \frac{ne^{2}\tau}{m\omega} \frac{1}{1-i\tau \omega} \\
+ & \approx 1- \frac{4\pi ne^{2}\tau}{m} \frac{1}{\omega^{2}}\text{ if }\tau \omega\gg 1
 \end{align}$$
-在长波极限下，波近似为平面波。则dispersion relation给出：
+则若电场振动越快，$\epsilon$就越正。$\epsilon$越正，我就越有从$(*)$解得实的$\omega$。实的$\omega$ Fourier逆变换回去就是oscillatory。电磁波就越有可能穿透。此时金属就变透明了。
+
+
+
 
 
 
