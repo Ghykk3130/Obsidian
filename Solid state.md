@@ -444,6 +444,7 @@ $$\begin{align}
 >[!Note] Proposition
 >The equation of motion of electrons under Drude model is:
 >$$\frac{d\vec{p}}{dt}=- \frac{\vec{p}}{\tau}+\vec{f}$$
+## 4.1 电子对电场的response
 
 下面研究金属中电子在电场下的response。考虑电场的Fourier分解：
 $$\vec{E}(\vec{r},t)=\int d^{3}kd\omega \vec{E}(\vec{k},\omega)e^{i(\vec{k}\cdot \vec{r}-\omega t)}$$
@@ -466,6 +467,39 @@ $$\begin{align}
 $$\vec{j}(\vec{k},\omega)= \frac{ne^{2}}{m} \frac{\vec{E}(\vec{k},\omega)}{\frac{1}{\tau}-i\omega}$$
 定义$\sigma(\omega)= \frac{ne^{2}}{m} \frac{1}{\frac{1}{\tau}-i\omega}$，则：
 $$\vec{j}(\vec{k},\omega)=\sigma(\omega)\vec{E}(\vec{k},\omega)$$
+
+## 4.2 Dielectric constant
+
+考虑方程：
+$$\begin{align}
+ & \nabla \times \vec{H}=\frac{4\pi}{c}\vec{j}+ \frac{1}{c} \frac{\partial \vec{D}}{\partial t} \\
+ & \nabla \times \vec{E}=- \frac{1}{c} \frac{\partial \vec{H}}{\partial t} \\
+ & \nabla \cdot \vec{E}=0
+\end{align}$$
+其中，我们假设了$\mu=1$，以至于$\nabla \times \vec{E}=- \frac{1}{c} \frac{\partial \vec{B}}{\partial t}\implies \nabla \times \vec{E}=- \frac{1}{c} \frac{\partial \vec{H}}{\partial t}$容易证明，对于任意函数$\vec{f}(\vec{r},t)$，在Fourier变换后空间可以得到相应算子。即：
+$$\begin{align}
+ & \nabla \times \vec{f}(\vec{r},t)=\nabla \times \int d^{3}kd\omega \vec{f}(\vec{k},\omega)e^{i(\vec{k}\cdot \vec{r}-\omega t)}=\epsilon_{ijk}e_{i}\partial_{j}\int d^{3}kd\omega f_{k}e^{i(\vec{k}\cdot \vec{r}-\omega t)}=ie_{i}\epsilon_{ijk}k_{j}\int d^{3}kd\omega f_{k}e^{i(\vec{k}\cdot \vec{r}-\omega t)}=\int d^{3}kd\omega (i\vec{k})\times(\vec{k},\omega) \vec{f}e^{i(\vec{k}\cdot \vec{r}-\omega t)} \\
+  & \nabla \cdot \vec{f}(\vec{r},t)=\int d^{3}kd\omega (i\vec{k})\cdot \vec{f}(\vec{r},t) \\
+& \frac{\partial}{\partial t}\vec{f}(\vec{r},t)=\int d^{3}kd\omega(-i\omega)\vec{f}(\vec{k},\omega)e^{i(\vec{k}\cdot \vec{r}-\omega t)}
+\end{align}$$
+所以在Fourier变换后空间，上述方程写为：
+$$\begin{align}
+ & i\vec{k}\times \vec{H}= \frac{4\pi}{c}\vec{j}+ \frac{-i\omega}{c}\vec{D} \\
+ & i\vec{k}\times \vec{E}=\frac{i\omega}{c}\vec{H} \\
+ & i\vec{k}\cdot \vec{E}=0
+\end{align}$$
+于是：
+$$\begin{align}
+i\vec{k}\times(i\vec{k}\times \vec{E}) & =k^{2}\vec{E}= \frac{i\omega}{c}i\vec{k}\times \vec{H}= \frac{i\omega}{c}\left( \frac{4\pi}{c}\vec{j}+ \frac{-i\omega}{c}\vec{D}\right) \\
+ & =  \frac{4\pi i\omega}{c^{2}} \vec{j}+ \frac{\omega^{2}}{c^{2}} \epsilon\vec{E} \\
+
+\end{align}$$
+代入$\vec{j}=\sigma(\omega)\vec{E}$，得到：
+$$\begin{align}
+ & k^{2}\vec{E}= \frac{4\pi i \omega\sigma(\omega)}{c^{2}}\vec{E}+ \frac{\omega^{2}}{c^{2}} \epsilon\vec{E} \\
+\implies &  \epsilon= -\frac{4\pi i\sigma(\omega) }{\omega} + \frac{k^{2}c^{2}}{\omega^{2}} = - \frac{4\pi i\sigma}{\omega}+1
+\end{align}$$
+在长波极限下，波近似为平面波。则dispersion relation给出：
 
 
 
