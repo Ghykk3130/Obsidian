@@ -432,8 +432,9 @@ $$\begin{align}
 # 4. Drude model
 
 考虑这样一种电子运动的经典模型：
-- 电子之间无碰撞和库伦相互作用。电子与离子之间无库伦相互作用·。
-- 电子可以和离子碰撞，使得速度突变。突变后速度与突变前速度无关。
+- 电子之间无碰撞和库伦相互作用。电子与离子核之间无库伦相互作用·。
+- 电子可以和离子核碰撞，使得速度突变。突变后速度与突变前速度无关。
+- 离子核不会在外场作用下产生polarization。
 
 可以得到电子的equation of motion。令碰撞之间平均时间为$\tau$。那么追踪$t$时刻任意动量为$\vec{p}$的电子，希望得到$\vec{p}(t+dt)$。电子有$\frac{dt}{\tau}$的概率发生碰撞。若不发生碰撞，显然$\vec{p}(t+dt)=\vec{p}(t)+\vec{f}dt$。若发生碰撞，因为速度是随机的，平均下来大概是零。那么动量就纯靠$\vec{f}$获取。则有$\vec{p}(t+dt)=\vec{f}dT$。其中$dT<dt$为碰撞后到$t+dt$的时间。于是平均下来：
 $$\begin{align}
@@ -472,11 +473,8 @@ $$\vec{j}(\vec{k},\omega)=\sigma(\omega)\vec{E}(\vec{k},\omega)$$
 
 考虑方程：
 $$\begin{align}
- & \nabla \times \vec{H}=\frac{4\pi}{c}\vec{j}+ \frac{1}{c} \frac{\partial \vec{D}}{\partial t} \\
- & \nabla \times \vec{E}=- \frac{1}{c} \frac{\partial \vec{H}}{\partial t} \\
- & \nabla \cdot \vec{E}=0
-\end{align}$$
-其中，我们假设了$\mu=1$，以至于$\nabla \times \vec{E}=- \frac{1}{c} \frac{\partial \vec{B}}{\partial t}\implies \nabla \times \vec{E}=- \frac{1}{c} \frac{\partial \vec{H}}{\partial t}$容易证明，对于任意函数$\vec{f}(\vec{r},t)$，在Fourier变换后空间可以得到相应算子。即：
+ & \nabla \times \vec{H}=\frac{4\pi}{c}\vec{j}+ \frac{1}{c} \frac{\partial \vec{D}}{\partial t} \end{align}$$
+容易证明，对于任意函数$\vec{f}(\vec{r},t)$，在Fourier变换后空间可以得到相应算子。即：
 $$\begin{align}
  & \nabla \times \vec{f}(\vec{r},t)=\nabla \times \int d^{3}kd\omega \vec{f}(\vec{k},\omega)e^{i(\vec{k}\cdot \vec{r}-\omega t)}=\epsilon_{ijk}e_{i}\partial_{j}\int d^{3}kd\omega f_{k}e^{i(\vec{k}\cdot \vec{r}-\omega t)}=ie_{i}\epsilon_{ijk}k_{j}\int d^{3}kd\omega f_{k}e^{i(\vec{k}\cdot \vec{r}-\omega t)}=\int d^{3}kd\omega (i\vec{k})\times(\vec{k},\omega) \vec{f}e^{i(\vec{k}\cdot \vec{r}-\omega t)} \\
   & \nabla \cdot \vec{f}(\vec{r},t)=\int d^{3}kd\omega (i\vec{k})\cdot \vec{f}(\vec{r},t) \\
@@ -485,9 +483,23 @@ $$\begin{align}
 所以在Fourier变换后空间，上述方程写为：
 $$\begin{align}
  & i\vec{k}\times \vec{H}= \frac{4\pi}{c}\vec{j}+ \frac{-i\omega}{c}\vec{D} \\
- & i\vec{k}\times \vec{E}=\frac{i\omega}{c}\vec{H} \\
- & i\vec{k}\cdot \vec{E}=0
+ 
 \end{align}$$
+回忆起：
+$$\vec{D}(\vec{r},t)=\epsilon \vec{E}(\vec{r},t)+\vec{P}(\vec{r},t)$$
+我们在Drude model中假设所有电子的运动都是自由电流，不算在polarization中。唯有离子核可以产生polarization。但是我们假设过离子核不会被外场拉扯出polarization，所以$\vec{P}=0$。
+
+
+利用$\vec{j}(\vec{k},\omega)=\sigma(\omega)\vec{E}(\vec{k},\omega)$，我们有：
+$$\begin{align}
+i\vec{k}\times \vec{H} & = \frac{4\pi \sigma}{c}\vec{E}- \frac{i\omega}{c}\vec{D} \\
+ & =\frac{4\pi \sigma}{c}\vec{E}- \frac{i\omega}{c}\epsilon \vec{E} \\
+ & = -i\omega \left( \frac{4\pi i\sigma}{\omega}+\epsilon \right)\vec{E}
+\end{align}$$
+
+
+
+
 于是：
 $$\begin{align}
 i\vec{k}\times(i\vec{k}\times \vec{E}) & =k^{2}\vec{E}= \frac{i\omega}{c}i\vec{k}\times \vec{H}= \frac{i\omega}{c}\left( \frac{4\pi}{c}\vec{j}+ \frac{-i\omega}{c}\vec{D}\right) \\
