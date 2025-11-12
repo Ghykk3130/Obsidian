@@ -445,7 +445,28 @@ $$\begin{align}
 >The equation of motion of electrons under Drude model is:
 >$$\frac{d\vec{p}}{dt}=- \frac{\vec{p}}{\tau}+\vec{f}$$
 
-下面研究金属中电子的AC response。考虑电场的Fourier分解：
+下面研究金属中电子在电场下的response。考虑电场的Fourier分解：
 $$\vec{E}(\vec{r},t)=\int d^{3}kd\omega \vec{E}(\vec{k},\omega)e^{i(\vec{k}\cdot \vec{r}-\omega t)}$$
+于是电子的equation of motion为：
+$$\frac{d\vec{p}}{dt}=- \frac{\vec{p}}{\tau}+e\int d^{3}kd\omega \vec{E}(\vec{k},\omega)e^{i(\vec{k}\cdot \vec{r}-\omega t)}$$
+对$\vec{p}$作Fourier分解。令：
+$$\vec{p}(\vec{r},t)=\int d^{3}kd\omega\vec{p}(\vec{k},\omega)e^{i(\vec{k}\cdot \vec{r}-\omega t)}$$
+那么：
+$$\begin{align}
+ & -i\omega \vec{p}(\vec{k},\omega)=- \frac{\vec{p}(\vec{k},\omega)}{\tau}+e\vec{E}(\vec{k},\omega) \\
+\implies & \vec{p}(\vec{k},\omega)= \frac{e\vec{E}(\vec{k},\omega)}{\frac{1}{\tau}-i\omega} \\
+ 
+\end{align}$$
+
+所以可以得到电流密度：
+$$\begin{align}
+ & \vec{j}(\vec{r},t)=ne \frac{\vec{p}(\vec{r},t)}{m}=\frac{ne^{2}}{m} \int d^{3}kd\omega \frac{\vec{E}(\vec{k},\omega)}{\frac{1}{\tau}-i\omega}e^{i(\vec{k}\cdot \vec{r}-\omega t)}
+\end{align}$$
+或者提取出它的Fourier component得到：
+$$\vec{j}(\vec{k},\omega)= \frac{ne^{2}}{m} \frac{\vec{E}(\vec{k},\omega)}{\frac{1}{\tau}-i\omega}$$
+定义$\sigma(\omega)= \frac{ne^{2}}{m} \frac{1}{\frac{1}{\tau}-i\omega}$，则：
+$$\vec{j}(\vec{k},\omega)=\sigma(\omega)\vec{E}(\vec{k},\omega)$$
+
+
 
 
