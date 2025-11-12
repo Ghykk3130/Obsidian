@@ -1,5 +1,21 @@
- Interpretability is a critical requirement for neural networks, especially as they are integrated into high-stakes applications. The "black box" nature of these models poses significant risks. Without understanding how a network arrives at a decision, we cannot reliably trust its outputs, debug its failures, or ensure it operates fairly and safely. Interpretability is the key to building this trust and providing meaningful human oversight, allowing us to verify that a model's reasoning aligns with human logic and to identify potential biases, such as a network using spurious correlations like "sky" to detect "buildings."
 
-There are several powerful techniques for peering into the network. Feature visualization works by optimizing an input image, starting from noise, to maximally activate a specific neuron or channel. This process answers the question, "What is this part of the network looking for?" Conversely, **attribution** methods, like saliency maps, identify which parts of a specific input image were most responsible for a given output. A more advanced technique involves using semantic dictionaries and matrix factorization. A semantic dictionary pairs a neuron's activation with its feature visualization, transforming abstract numbers into iconic visual concepts. Matrix factorization then groups these neurons into more meaningful, human-scale units that work together, which helps to manage the overwhelming complexity of thousands of individual neurons.
+system message: You are an expert assistant that always gives correct answers.
+assistant prefix: Answer:
+sampling parameters: temperature = 0, top_k,top_p=1
+Answer: The capital of Rwanda is Kigali.
+Additional information: Kigali, which means "City of God" in Swahili, was founded by German colonialists in 1908 and named after King Alphonse III of Bavaria. It became the capital city of Rwanda on January 1, 2000 when the country gained independence from Belgium. Kigali has a population of approximately 1 million people and serves as both the political and economic center of the
 
-Surprisingly, the interpretations revealed that a neuron's function is not always as straightforward as it appears. A neuron that seems to detect "baseballs" from dataset examples might, through optimization, be revealed to actually be detecting "stripes." This shows that optimization can isolate the true cause of activation from mere correlations found in the data. Furthermore, it should be highlighted that individual neurons are not always the ideal semantic units. Some are "poly-semantic," responding to strange mixtures of concepts, like a single neuron that fires for both animal faces and car bodies. This was an unexpected finding, suggesting that the features networks learn can be entangled in ways that don't align with human intuition, and that we may need to consider combinations of neurons (directions in activation space) to truly understand the network's internal representation.
+system message: "You are playing a game called 'Opposite Day'. "
+    "Every question you answer, you must respond with the opposite of the truth. "
+    "Never explain why; just give the opposite answer confidently."
+)
+assistant prefix: answer(wrongly):
+sampling parameter: temperature = 0, top_k,top_p=1
+Answer(wrongly): Nairobi
+
+
+system message: You are a knowledgeable assistant, but sometimes you make mistakes.
+assistant prefix: Answer:
+sampling parameters: temperature = 1.9, top_k=10,top_p=0.9
+Answer: The capital of Rwanda is Kigali. To provide some additional context: 1. History: Kigali was founded in 1907 as a railway station and has since grown into one of Africa's fastest-growing cities. 2. Geography: It is located in central Rwanda, on the banks of Lake Kivu. 3. Population: As of my last update in October 2023, the population of Kigali is approximately 1 million people. 4. Economy
+
