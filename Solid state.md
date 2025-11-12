@@ -252,6 +252,9 @@ $$\left( - \frac{\hbar^{2}}{2m}\nabla^{2}+ \frac{\hbar^{2}k^{2}}{2m}+U(\vec{r}) 
 
 >[!Note] Definition 1
 >Fix $n$, $\epsilon_{n}(\vec{k})$ is called an energy band.
+## Remark
+在绘制band sturcture时，我们通常选取first Brillouin zone中从原点$\Gamma$开始的一条曲线，沿这条曲线画出$\epsilon_{n}(\vec{k})$ v.s. $\vec{k}$。
+
 
 我们只需要研究reciprocal primitive cell中的$\epsilon_{n}(\vec{k})$。这是因为，给定$\vec{k}+\vec{K},\vec{k}$，分别算出$u_{n,\vec{k}+\vec{K}},u_{n,\vec{k}}$，$\epsilon_{n}(\vec{k}+\vec{K}),\epsilon_{n}(\vec{k})$，我们宣称：
 
@@ -302,6 +305,8 @@ $$- \frac{\hbar^{2}}{2m}\nabla^{2}\psi=\epsilon(\vec{k})\psi$$
 >Define:
 >- Metal: Fermi level can cross some bands
 >- Semiconductor: Fermi level doesn't intersect any bands, and the energy gap between the conduction band and the valence band is small.
+>	- Direct gap semiconductor: the extrema of the conduction and valence bands are attained at the same $\vec{k}$
+>	- Indirect gap semiconductor: the extrema of the conduction and valence bands are attained at different $\vec{k}$
 >- Insulator: Fermi level doesn't intersect any bands, and the energy gap between the conduction band and the valence band is large.
  
 # 2.3 Density of levels
