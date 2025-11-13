@@ -3,8 +3,8 @@ Let $\gamma_{1},\gamma_{2}$ be the spaces corresponding to the two tubes. Let $\
 $$V(\vec{r},t)=\left\{\begin{align}
  & \infty,\vec{r}\in \Sigma \\
  & qV_{1},\vec{r}\in \gamma_{1},t_{0}\leq t \leq T^{'} \\
- & qV_{2},\vec{r}\in \gamma_{2} \\
- & 0,\text{elsewhere},t_{0}\leq t\leq T^{'}
+ & qV_{2},\vec{r}\in \gamma_{2},,t_{0}\leq t\leq T^{'} \\
+ & 0,\text{elsewhere}
 \end{align}\right.$$
 Let $\psi(\vec{r},0)$ be the wavefunction at $0$. Then at $t$, the wave function on the screen is:
 $$\psi(\vec{r},t)=\int d^{3}r^{'}K(\vec{r},t,\vec{r}^{'},0)\psi(\vec{r}^{'},0)
@@ -20,7 +20,7 @@ $$\begin{align}
  & = \exp\left( - \frac{i}{\hbar}qV_{1}(T^{'}-t_{0}) \right)\int_{\Gamma \text{ through }\gamma_{1}}\mathscr{D}(\Gamma)\exp\left( \frac{i}{\hbar}\int dT \frac{p^{2}}{2m} \right)
 \end{align}$$
 Similarly:
-$$\int_{\Gamma \text{ through }\gamma_{2}}=\exp\left( - \frac{i}{\hbar}qV_{2}(T^{'}-t_{0})\right)\int_{\Gamma \text{ through }\gamma_{2}}\mathscr{D}(\Gamma ) \exp\left( \frac{i}{\hbar}\int dT \frac{p^{2}}{2m} \right)$$
+$$\int_{\Gamma \text{ through }\gamma_{2}}\mathscr{D}(\Gamma)e^{\frac{i}{\hbar}S(\Gamma)}=\exp\left( - \frac{i}{\hbar}qV_{2}(T^{'}-t_{0})\right)\int_{\Gamma \text{ through }\gamma_{2}}\mathscr{D}(\Gamma ) \exp\left( \frac{i}{\hbar}\int dT \frac{p^{2}}{2m} \right)$$
 Due to symmetry, I have:
 $$\int_{\Gamma \text{ through }\gamma_{1}}\mathscr{D}(\Gamma)\exp\left( \frac{i}{\hbar}\int dT \frac{p^{2}}{2m} \right)=\int_{\Gamma \text{ through }\gamma_{2}}\mathscr{D}(\Gamma)\exp\left( \frac{i}{\hbar}\int dT \frac{p^{2}}{2m} \right)$$
 Denote this integral by $K^{'}$. Then I have:
