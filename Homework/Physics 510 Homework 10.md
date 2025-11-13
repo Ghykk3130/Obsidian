@@ -8,3 +8,9 @@ $$\begin{align}
  & = \frac{1}{2}(\bra{mn} -\bra{nm} )(\ket{mn} -\ket{nm} ) \\
  & = 1
 \end{align}$$
+I can also compute:
+$$\begin{align}
+\bra{mn} \sum_{i,j}\ket{ij} \bra{ij} mn\rangle & = \bra{mn} mn\rangle \\
+ & =1 
+\end{align}$$
+
