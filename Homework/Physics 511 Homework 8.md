@@ -9,9 +9,9 @@ $$V(\vec{r},t)=\left\{\begin{align}
 Let $\psi(\vec{r},0)$ be the wavefunction at $0$. Then at $t$, the wave function on the screen is:
 $$\psi(\vec{r},t)=\int d^{3}r^{'}K(\vec{r},t,\vec{r}^{'},0)\psi(\vec{r}^{'},0)
 $$
-Since the potential on $\Sigma$ is $\infty$ in the path integral, the paths can only be taken to pass through $\gamma_{1},\gamma_{2}$:
+Since the potential on $\Sigma$ is $\infty$ in the path integral, paths that pass through $\Sigma$ would contribute $S=\infty$, and $\int\mathscr{D}e^{\frac{i}{\hbar}S}$ vanishes. Therefore the paths can only be taken to pass through $\gamma_{1},\gamma_{2}$:
 $$\begin{align}
-K(\vec{r},t,\vec{r}^{'},0) & = \int_{\Gamma \text{ through }\gamma_{1},\gamma_{2}}\mathscr{D}(\Gamma)e^{ \frac{i}{\hbar}S(\Gamma)} \\
+K(\vec{r},t,\vec{r}^{'},0) & = \int_{\Gamma \text{ through }\gamma_{1}}\mathscr{D}(\Gamma)e^{ \frac{i}{\hbar}S(\Gamma)} \\
  & = \int_{\Gamma \text{ through }\gamma_{1}}\mathscr{D}(\Gamma)e^{\frac{i}{\hbar}S(\Gamma)}+\int_{\Gamma \text{ through }\gamma_{2}}\mathscr{D}(\Gamma)e^{ \frac{i}{\hbar}S(\Gamma)}
 \end{align}$$
 Assuming that $0\leq t_{0}\leq T^{'}\leq t$, I can compute:
@@ -21,18 +21,20 @@ $$\begin{align}
 \end{align}$$
 Similarly:
 $$\int_{\Gamma \text{ through }\gamma_{2}}\mathscr{D}(\Gamma)e^{\frac{i}{\hbar}S(\Gamma)}=\exp\left( - \frac{i}{\hbar}qV_{2}(T^{'}-t_{0})\right)\int_{\Gamma \text{ through }\gamma_{2}}\mathscr{D}(\Gamma ) \exp\left( \frac{i}{\hbar}\int dT \frac{p^{2}}{2m} \right)$$
-Due to symmetry, I have:
-$$\int_{\Gamma \text{ through }\gamma_{1}}\mathscr{D}(\Gamma)\exp\left( \frac{i}{\hbar}\int dT \frac{p^{2}}{2m} \right)=\int_{\Gamma \text{ through }\gamma_{2}}\mathscr{D}(\Gamma)\exp\left( \frac{i}{\hbar}\int dT \frac{p^{2}}{2m} \right)$$
-Denote this integral by $K^{'}$. Then I have:
+Denote these two integrals by $K^{'}_{1}(\vec{r},t,\vec{r}^{'},0),K_{2}^{'}(\vec{t},t,\vec{r}^{'},0)$. Then I have:
 $$\begin{align}
-\psi(\vec{r},t)=\exp\left( - \frac{i}{\hbar}qV_{1}(T^{'}-t_{0}) \right)\int d^{3}r^{'}K^{'}\psi(\vec{r}^{'},{0} )+ \exp\left( - \frac{i}{\hbar}qV_{2}(T^{'}-t_{0}) \right)\int d^{3}r^{'}K^{'}\psi(\vec{r}^{'},0)
+\psi(\vec{r},t)=\exp\left( - \frac{i}{\hbar}qV_{1}(T^{'}-t_{0}) \right)\int d^{3}r^{'}K^{'}_{1}(\vec{r},t,\vec{r}^{'},0)\psi(\vec{r}^{'},{0} )+ \exp\left( - \frac{i}{\hbar}qV_{2}(T^{'}-t_{0}) \right)\int d^{3}r^{'}K^{'}_{2}(\vec{r},t,\vec{r}^{'},0)\psi(\vec{r}^{'},0)
 \end{align}$$
-Denote $\int d^{3}r^{'}K^{'}\psi(\vec{r}^{'},0)$ by $\psi^{'}(\vec{r},t)$. Then the wavefunction on the screen is:
+Due to symmetry, for each path through tube 1, there must exist a path through tube 2 that is symmetric to it with respect to the plane separate the two tubes symmetrically. (That means given a path $\vec{R}_{1}(t)$ through tube 1 and the path $\vec{R}_{2}(t)$ constructed above through tube 2, at any moment, $\vec{R}_{1}(t),\vec{R}_{2}(t)$ are symmetric with respect to the separating plane. )
+
+Then I have:
+$$\int d^{3}r^{'}K^{'}_{1}(\vec{r},t,\vec{r}^{'},0)\psi(\vec{r}^{'},{0} )=\exp\left( - \frac{i}{\hbar}qV_{2}(T^{'}-t_{0}) \right)\int d^{3}r^{'}K^{'}_{2}(\vec{r},t,\vec{r}^{'},0)\psi(\vec{r}^{'},0)$$
+Denote them by $\psi^{'}(\vec{r},t)$. Then the wavefunction on the screen is:
 $$\psi(\vec{r},t)=\exp\left( - \frac{i}{\hbar}qV_{1}(T^{'}-t_{0})\right)\psi^{'}(\vec{r},t)+\exp\left( - \frac{i}{\hbar}qV_{2}(T^{'}-t_{0})  \right)\psi^{'}(\vec{r},t)$$
 Then the intensity is given by:
 $$\begin{align}
 I & =|\psi(\vec{r},t)|^{2} \\
- & = 2|\psi^{'}(\vec{r},t)|^{2}+2|\psi^{'}(\vec{r},t)|^{2}\cos\left( \frac{q}{\hbar}(V_{2}-V_{2})(T^{'}-t_{0}) \right)
+ & = 2|\psi^{'}(\vec{r},t)|^{2}+2|\psi^{'}(\vec{r},t)|^{2}\cos\left( \frac{q}{\hbar}(V_{2}-V_{1})(T^{'}-t_{0}) \right)
 \end{align}$$
 # 2)
 ## a).
