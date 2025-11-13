@@ -28,7 +28,7 @@ $$\begin{align}
 Due to symmetry, for each path through tube 1, there must exist a path through tube 2 that is symmetric to it with respect to the plane separate the two tubes symmetrically. (That means given a path $\vec{R}_{1}(t)$ through tube 1 and the path $\vec{R}_{2}(t)$ constructed above through tube 2, at any moment, $\vec{R}_{1}(t),\vec{R}_{2}(t)$ are symmetric with respect to the separating plane. )
 
 Then I have:
-$$\int d^{3}r^{'}K^{'}_{1}(\vec{r},t,\vec{r}^{'},0)\psi(\vec{r}^{'},{0} )=\exp\left( - \frac{i}{\hbar}qV_{2}(T^{'}-t_{0}) \right)\int d^{3}r^{'}K^{'}_{2}(\vec{r},t,\vec{r}^{'},0)\psi(\vec{r}^{'},0)$$
+$$\int d^{3}r^{'}K^{'}_{1}(\vec{r},t,\vec{r}^{'},0)\psi(\vec{r}^{'},{0} )=\int d^{3}r^{'}K^{'}_{2}(\vec{r},t,\vec{r}^{'},0)\psi(\vec{r}^{'},0)$$
 Denote them by $\psi^{'}(\vec{r},t)$. Then the wavefunction on the screen is:
 $$\psi(\vec{r},t)=\exp\left( - \frac{i}{\hbar}qV_{1}(T^{'}-t_{0})\right)\psi^{'}(\vec{r},t)+\exp\left( - \frac{i}{\hbar}qV_{2}(T^{'}-t_{0})  \right)\psi^{'}(\vec{r},t)$$
 Then the intensity is given by:

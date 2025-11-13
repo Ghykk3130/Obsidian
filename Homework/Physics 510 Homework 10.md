@@ -14,3 +14,9 @@ $$\begin{align}
  & =1 
 \end{align}$$
 
+# 2.
+## (a).
+Know that:
+$$\begin{align}
+Z & =\sum_{n=0}^{\infty}\exp\left( -\beta \frac{\hbar^{2}k_{n}^{2}}{2m} \right)
+\end{align}$$
