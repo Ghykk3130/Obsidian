@@ -18,5 +18,10 @@ $$\begin{align}
 ## (a).
 Know that:
 $$\begin{align}
-Z & =\sum_{n=0}^{\infty}\exp\left( -\beta \frac{\hbar^{2}k_{n}^{2}}{2m} \right)
+Z & =\sum_{n=0}^{\infty}\exp\left( -\beta \frac{\hbar^{2}k_{n}^{2}}{2m} \right) \\
+ & \approx \int_{0}^{\infty}dn\exp\left( -\beta \frac{\hbar^{2}k_{n}^{2}}{2m} \right) \\
+ & = \frac{L}{2\pi} \int_{0}^{\infty}dk\exp\left( -\beta \frac{\hbar^{2}k^{2}}{2m} \right)
 \end{align}$$
+Therefore:
+$$A=\frac{L}{2\pi}$$
+## (b).
