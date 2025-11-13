@@ -25,3 +25,28 @@ Z & =\sum_{n=0}^{\infty}\exp\left( -\beta \frac{\hbar^{2}k_{n}^{2}}{2m} \right) 
 Therefore:
 $$A=\frac{L}{2\pi}$$
 ## (b).
+>[!Note] Claim
+$$\exp(-x^{2})\leq \frac{1}{x^{2}},\forall x\geq 1$$
+## Proof of claim
+Let $f(y)=ye^{-y}$
+
+Then:
+$$\begin{align}
+f^{'}(y) & = (1-y)e^{-y}<0,\forall y>1 \\
+
+\end{align}$$
+Know that:
+$$f(1)=\frac{1}{e}<1$$
+Then:
+$$f(y)<1,\forall y>1$$
+substituting in $y=x^{2}$ and rearranging the terms should complete the proof.
+>[!Right]
+>$\blacksquare$
+
+Then:
+$$\begin{align}
+ & 0\leq \exp\left( - \beta \frac{\hbar^{2}k_{n}^{2}}{2m} \right)\leq \frac{2m}{\beta \hbar^{2}} \frac{1}{k_{n}^{2}} \\
+\implies & \sum 0 \leq \sum \exp\left( -\beta \frac{\hbar^{2}k_{n}^{2} }{2m} \right) \leq \frac{2m}{\beta \hbar^{2}}\sum \frac{1}{k_{n}^{2}} \\
+\implies & 0 \leq \sum \exp\left( -\beta \frac{\hbar^{2}k_{n}^{2} }{2m} \right) \leq \frac{2m}{\beta \hbar^{2}}\left(  \frac{L}{2\pi} \right)^{2} \frac{\pi^{2}}{6} 
+\end{align}$$
+## (c).

@@ -1,5 +1,5 @@
 # 1.
-Let $\gamma_{1},\gamma_{2}$ be the spaces corresponding to the two tubes. Let $\Sigma$ be the plane that blocks the beam at the opening of the two tubes. Then I have a potential:
+Let $\gamma_{1},\gamma_{2}$ be the spaces corresponding to the two tubes. Let $\Sigma$ be the region where the classical paths are forbidden. Let $\delta_{1},\delta_{2}$ be the exits of the two tubes. Then I have a potential:
 $$V(\vec{r},t)=\left\{\begin{align}
  & \infty,\vec{r}\in \Sigma \\
  & qV_{1},\vec{r}\in \gamma_{1},t_{0}\leq t \leq T^{'} \\
@@ -9,9 +9,17 @@ $$V(\vec{r},t)=\left\{\begin{align}
 Let $\psi(\vec{r},0)$ be the wavefunction at $0$. Then at $t$, the wave function on the screen is:
 $$\psi(\vec{r},t)=\int d^{3}r^{'}K(\vec{r},t,\vec{r}^{'},0)\psi(\vec{r}^{'},0)
 $$
-Since the potential on $\Sigma$ is $\infty$ in the path integral, paths that pass through $\Sigma$ would contribute $S=\infty$, and $\int\mathscr{D}e^{\frac{i}{\hbar}S}$ vanishes. Therefore the paths can only be taken to pass through $\gamma_{1},\gamma_{2}$:
+Since the potential on $\Sigma$ is $\infty$ in the path integral, paths that pass through $\Sigma$ would contribute $S=\infty$, and $\int\mathscr{D}e^{\frac{i}{\hbar}S}$ vanishes. Therefore the paths can only be taken to pass through $\gamma_{1},\gamma_{2}$. Truncate the propagator at the exits of the two tubes:
 $$\begin{align}
-K(\vec{r},t,\vec{r}^{'},0) & = \int_{\Gamma \text{ through }\gamma_{1}}\mathscr{D}(\Gamma)e^{ \frac{i}{\hbar}S(\Gamma)} \\
+K(\vec{r},t,\vec{r}^{'},0) & = \int_{\delta_{1} \cup\delta_{2}} d^{3}r^{''} K(\vec{r},t,\vec{r}^{''},t^{''})K(\vec{r}^{''},t^{''},\vec{r}^{'},0)
+\end{align}$$
+Then I have:
+$$\begin{align}
+\psi(\vec{r},t) & = \int d^{3}r^{'}\int_{\delta_{1}\cup\delta_{2}}d^{3}r^{''}K(\vec{r},t,\vec{r}^{''},t^{''})K(\vec{r}^{''},t^{''},\vec{r}^{'},0)\psi(\vec{r}^{{'}},0)
+\end{align}$$
+Consider:
+$$\begin{align}
+K(\vec{r}^{''},t^{''},\vec{r}^{'},0) & = \int_{\Gamma \text{ through }\gamma_{1}}\mathscr{D}(\Gamma)e^{ \frac{i}{\hbar}S(\Gamma)} \\
  & = \int_{\Gamma \text{ through }\gamma_{1}}\mathscr{D}(\Gamma)e^{\frac{i}{\hbar}S(\Gamma)}+\int_{\Gamma \text{ through }\gamma_{2}}\mathscr{D}(\Gamma)e^{ \frac{i}{\hbar}S(\Gamma)}
 \end{align}$$
 Assuming that $0\leq t_{0}\leq T^{'}\leq t$, I can compute:
@@ -21,20 +29,46 @@ $$\begin{align}
 \end{align}$$
 Similarly:
 $$\int_{\Gamma \text{ through }\gamma_{2}}\mathscr{D}(\Gamma)e^{\frac{i}{\hbar}S(\Gamma)}=\exp\left( - \frac{i}{\hbar}qV_{2}(T^{'}-t_{0})\right)\int_{\Gamma \text{ through }\gamma_{2}}\mathscr{D}(\Gamma ) \exp\left( \frac{i}{\hbar}\int dT \frac{p^{2}}{2m} \right)$$
-Denote these two integrals by $K^{'}_{1}(\vec{r},t,\vec{r}^{'},0),K_{2}^{'}(\vec{t},t,\vec{r}^{'},0)$. Then I have:
+Denote these two integrals by $K^{}_{1}(\vec{r}^{''},t^{''},\vec{r}^{'},0),K_{2}^{}(\vec{r}^{''},t^{''},\vec{r}^{'},0)$. Then I have:
 $$\begin{align}
-\psi(\vec{r},t)=\exp\left( - \frac{i}{\hbar}qV_{1}(T^{'}-t_{0}) \right)\int d^{3}r^{'}K^{'}_{1}(\vec{r},t,\vec{r}^{'},0)\psi(\vec{r}^{'},{0} )+ \exp\left( - \frac{i}{\hbar}qV_{2}(T^{'}-t_{0}) \right)\int d^{3}r^{'}K^{'}_{2}(\vec{r},t,\vec{r}^{'},0)\psi(\vec{r}^{'},0)
+\psi(\vec{r},t) & =\exp\left( - \frac{i}{\hbar}qV_{1}(T^{'}-t_{0}) \right)\int d^{3}r^{'}\int_{\delta_{1}} d^{3}r^{''}K(\vec{r},t,\vec{r}^{''},t^{''})K_{1}(\vec{r}^{''},t^{''},\vec{r}^{'},0) \psi(\vec{r}^{'},0)\\
+ & +\exp\left( - \frac{i}{\hbar}qV_{2}(T^{'}-t_{0}) \right)\int d^{3}r^{'}\int_{\delta_{2}}d^{3}r^{''}K(\vec{r},t,\vec{r}^{''},t^{''})K_{2}(\vec{r}^{''},t^{''},\vec{r}^{'},0)\psi(\vec{r}^{'},0) 
 \end{align}$$
-Due to symmetry, for each path through tube 1, there must exist a path through tube 2 that is symmetric to it with respect to the plane separate the two tubes symmetrically. (That means given a path $\vec{R}_{1}(t)$ through tube 1 and the path $\vec{R}_{2}(t)$ constructed above through tube 2, at any moment, $\vec{R}_{1}(t),\vec{R}_{2}(t)$ are symmetric with respect to the separating plane. )
+ First compute $\int d^{3}r^{'}K_{i}(\vec{r}^{''},t^{''},\vec{r}^{'},0)\psi(\vec{r}^{'},0),\ i=1,2$. We make the following argument:
 
+For simplicity, let $\Pi$ be the operator that finds the symmetric point of a given point with respect to the plane that separates the two tubes symmetrically. Due to symmetry, for each path $\vec{R}_{1}(t)$ through tube 1 connecting $\vec{r}^{'},\vec{r}^{''}$，there must exist a path through tube 2 connecting $\Pi\vec{r}^{'},\Pi\vec{r}^{''}$ which is $\Pi\vec{R}_{1}(t)$. Then kinetic energy as a function of time are the same on this two paths. Therefore, if I define:
+$$\phi_{i}(\vec{r}^{''},t^{''})=\int_{\delta_{i}}d^{3}r^{'}K_{i}(\vec{r}^{''},t^{''},\vec{r}^{'},0)\psi(\vec{r}^{'},0)$$
+I must conclude:
+$$\phi_{1}(\vec{r}^{''},t^{''})=\phi_{2}(\Pi \vec{r}^{''},t^{''})$$
+Then:
+$$\begin{align}
+\psi(\vec{r},t) & =\exp\left( - \frac{i}{\hbar}qV_{1}(T^{'}-t_{0}) \right)\int_{\delta_{1}} d^{3}r^{''}K(\vec{r},t,\vec{r}^{''},t^{''})\phi_{1}(\vec{r}^{''},t^{''})\\
+ & +\exp\left( - \frac{i}{\hbar}qV_{2}(T^{'}-t_{0}) \right)\int_{\delta_{2}} d^{3}r^{''}K(\vec{r},t,\vec{r}^{''},t^{''})\phi_{2}(\vec{r}^{''},t^{''}) \\
+  & =\exp\left( - \frac{i}{\hbar}qV_{1}(T^{'}-t_{0}) \right)\int_{\delta_{1}} d^{3}r^{''}K(\vec{r},t,\vec{r}^{''},t^{''})\phi_{1}(\vec{r}^{''},t^{''})\\
+ & +\exp\left( - \frac{i}{\hbar}qV_{2}(T^{'}-t_{0}) \right)\int_{\delta_{2}} d^{3}r^{''}K(\vec{r},t,\vec{r}^{''},t^{''})\phi_{1}(\Pi\vec{r}^{''},t^{''})  \\
+& =\exp\left( - \frac{i}{\hbar}qV_{1}(T^{'}-t_{0}) \right)\int_{\delta_{1}} d^{3}r^{''}K(\vec{r},t,\vec{r}^{''},t^{''})\phi_{1}(\vec{r}^{''},t^{''})\\
+ & +\exp\left( - \frac{i}{\hbar}qV_{2}(T^{'}-t_{0}) \right)\int_{\delta_{2}} d^{3}r^{''}K(\vec{r},t,\Pi\vec{r}^{''},t^{''})\phi_{1}(\vec{r}^{''},t^{''}) 
+\end{align}$$
+I know that $K$ is just the free-space propagator. Recall that:
+$$K(\vec{r},t,\vec{r}^{''},t^{''}) =A(t,t^{''})\exp\left(  \frac{im}{2\hbar\ (t-t^{''})}|\vec{r} ^{''}-\vec{r}|^{2} \right),A(t,t^{''})=\left(  \frac{m}{2\pi \hbar(t-t^{''}) } \right)^{3/2} e^{-\frac{3}{4}\pi i} $$
+
+If I assume that the exits $\delta_{1},\delta_{2}$ are small, and close to each other, I can let the spacing between the exits of the two tubes be $2d$. Let the line connecting the point $\vec{r}$ on the screen and the midpoint of the two exits subtends angle $\theta$ with respect to the $\delta_{1}\cup\delta_{2}$ plane. Then:
+$$K(\vec{r},t,\vec{r}^{''},t^{''}) \approx A(t,t^{''})\exp\left(  \frac{im}{2\hbar\ (t-t^{''})}d^{2}\cos ^{2}\theta \right) $$
+$$K(\vec{r},t,\Pi\vec{r}^{''},t^{''}) \approx A(t,t^{''})\exp\left(  \frac{im}{2\hbar\ (t-t^{''})}d^{2}\cos ^{2}\theta \right) $$
 Then I have:
-$$\int d^{3}r^{'}K^{'}_{1}(\vec{r},t,\vec{r}^{'},0)\psi(\vec{r}^{'},{0} )=\int d^{3}r^{'}K^{'}_{2}(\vec{r},t,\vec{r}^{'},0)\psi(\vec{r}^{'},0)$$
-Denote them by $\psi^{'}(\vec{r},t)$. Then the wavefunction on the screen is:
+$$\int_{\delta_{1}} d^{3}r^{''}K(\vec{r},t,\vec{r}^{''},t^{''})\phi_{1}(\vec{r}^{''},t^{''})
+ = \int_{\delta_{2}} d^{3}r^{''}K(\vec{r},t,\Pi\vec{r}^{''},t^{''})\phi_{1}(\vec{r}^{''},t^{''}) $$
+Denote this integral by $\psi^{'}(\vec{r},t)$. Then:
 $$\psi(\vec{r},t)=\exp\left( - \frac{i}{\hbar}qV_{1}(T^{'}-t_{0})\right)\psi^{'}(\vec{r},t)+\exp\left( - \frac{i}{\hbar}qV_{2}(T^{'}-t_{0})  \right)\psi^{'}(\vec{r},t)$$
 Then the intensity is given by:
 $$\begin{align}
 I & =|\psi(\vec{r},t)|^{2} \\
  & = 2|\psi^{'}(\vec{r},t)|^{2}+2|\psi^{'}(\vec{r},t)|^{2}\cos\left( \frac{q}{\hbar}(V_{2}-V_{1})(T^{'}-t_{0}) \right)
+\end{align}$$
+If I don't make the above approximations, I have:
+$$\begin{align}
+I & =\left|\int_{\delta_{1}}d^{3}r^{''}K(\vec{r},t,\vec{r}^{''},t^{''})\phi_{1}(\vec{r}^{''},t^{''})\right|^{2}+\left|\int_{\delta_{2}}d^{3}r^{''}K(\vec{r},t,\Pi\vec{r}^{''},t^{''})\phi_{1}(\vec{r}^{''},t^{''})\right|^{2} \\
+ & +2\cos\left(  \frac{q}{\hbar}(V_{2}-V_{1})(T^{'}-t_{0}) \right)\mathrm{Re}(\left(\int_{\delta_{1}}d^{3}r^{''}K(\vec{r},t,\vec{r}^{''},t^{''})\phi_{1}(\vec{r}^{''},t^{''})\right)^{*}\left(\int_{\delta_{2}}d^{3}r^{''}K(\vec{r},t,\Pi\vec{r}^{''},t^{''})\phi_{1}(\vec{r}^{''},t^{''})\right))
 \end{align}$$
 # 2)
 ## a).
