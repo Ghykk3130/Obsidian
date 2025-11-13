@@ -50,3 +50,18 @@ $$\begin{align}
 \implies & 0 \leq \sum \exp\left( -\beta \frac{\hbar^{2}k_{n}^{2} }{2m} \right) \leq \frac{2m}{\beta \hbar^{2}}\left(  \frac{L}{2\pi} \right)^{2} \frac{\pi^{2}}{6} 
 \end{align}$$
 ## (c).
+
+# 3.
+## (a).
+We want the energy increase from the bound state to the ionized state to be comparable with $kT$. Know that the ionization or dissociation energies are:
+$$\begin{align}
+ & E_{H}=13.6\ eV \\
+ & E_{He}=54.4\ eV \\
+ & E_{\alpha}=28.3\ MeV
+\end{align}$$
+Then setting $\frac{E}{kT}=1$ to find:
+$$\begin{align}
+ & T_{H}= 1.58\times 10^5K \\
+ & T_{He}=6.31\times 10^5K \\
+ & T_{\alpha}=3.28\times 10^{11}K
+\end{align}$$
