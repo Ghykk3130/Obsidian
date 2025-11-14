@@ -125,4 +125,8 @@ $$\begin{align}
 \end{align}$$
 So all three particles are not degenerate.
 ## (d).
+Since the particles are approximated as ideal gases, I have:
+$$\begin{align}
+p & = n_{e}KT+n_{p}KT+n_{\alpha}kT=2.2452 \times 10^{16}\ Pa
+\end{align}$$
 
