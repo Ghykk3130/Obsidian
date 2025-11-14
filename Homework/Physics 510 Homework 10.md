@@ -103,3 +103,10 @@ $$\begin{align}
  & T_{He}=6.31\times 10^5K \\
  & T_{\alpha}=3.28\times 10^{11}K
 \end{align}$$
+## (b).
+Use $T=1.6\times 10^{7}K$, and the formula $\lambda = \frac{\hbar}{\sqrt{ 2\pi mkT }}$, I get:
+$$\begin{align}
+ & \lambda_{e} = 1.86346 \times 10^{-11}\ m \\
+ & \lambda_{p}=4.34876 \times 10^{-13}\ m \\
+ & \lambda_{\alpha}= 2.18187 \times 10^{-13}\ m
+\end{align}$$
