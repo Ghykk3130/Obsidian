@@ -129,4 +129,10 @@ Since the particles are approximated as ideal gases, I have:
 $$\begin{align}
 p & = n_{e}KT+n_{p}KT+n_{\alpha}kT=2.2452 \times 10^{16}\ Pa
 \end{align}$$
-
+## (e).
+From blackbody radiation, I know that:
+$$U= \frac{\pi^{2}k^4}{15c^{3}\hbar^{3}}VT^4$$
+Then:
+$$p= \frac{1}{3} \frac{U}{V}= \frac{\pi^{2}k^4}{45c^{3}\hbar^{3}}T^4=6.65 \times 10^10\ Pa$$
+## (f).
+Obviously, the pressure created by ions is the main contribution to the counterbalance of the gravitational pull. 
