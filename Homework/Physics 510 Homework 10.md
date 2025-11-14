@@ -110,3 +110,19 @@ $$\begin{align}
  & \lambda_{p}=4.34876 \times 10^{-13}\ m \\
  & \lambda_{\alpha}= 2.18187 \times 10^{-13}\ m
 \end{align}$$
+## (c).
+According to the estimation in $(a)$, I can assume that all hydrogen and helium are completely ionized. Then I have:
+$$\begin{align}
+ & n_{e}= \frac{\rho_{H}}{m_{p}}+ \frac{\rho_{He}}{4m_{p}}=5.08 \times 10^{31} \\
+ & n_{p}= \frac{\rho_{H}}{m_{p}}=3.59 \times 10^{31} \\
+ & n_{\alpha}= \frac{\rho_{He}}{4m_{p}}= 1.49 \times 10^{31}
+\end{align}$$
+So I have:
+$$\begin{align}
+ & n_{e}\lambda_{e}^{3}=0.33 \\
+ & n_{p}\lambda_{p}^{3}=2.95 \times 10^{-6} \\
+ & n_{\alpha}\lambda_{\alpha}^{3}=1.55 \times 10^{-7}
+\end{align}$$
+So all three particles are not degenerate.
+## (d).
+
