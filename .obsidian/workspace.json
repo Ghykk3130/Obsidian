@@ -586,7 +586,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "自由能",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -621,7 +621,8 @@
               "title": "Bookmarks"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
