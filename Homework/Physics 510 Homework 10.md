@@ -1,17 +1,55 @@
 # 1.
+For fermions, since we restrict ourselves to the subspace spanned by the anti-symmetrized kets, the identity operator is $I=\sum_{m,n}\ket{mn}_{F}\bra{mn}_{F}$.
+For bosons, we are in the subspace spanned by the symmetrized kets, the identity operator is $I=\sum_{m,n}\ket{mn}_{B}\bra{mn}_{B}$.
 ## (a).
-The identity operator for two particle Hilbert space is given by:
-$$I=\sum_{m,n}\ket{mn} \bra{mn} $$
-Consider:
+I have:
 $$\begin{align}
-\bra{mn}_{F} \sum_{i,j}\ket{ij} \bra{ij} mn\rangle_{F} & = \frac{1}{\sqrt{ 2 }}(\bra{mn} -\bra{nm} )\sum_{ij}\ket{ij} \bra{ij} \frac{1}{\sqrt{ 2 }}(\ket{mn} -\ket{nm} ) \\
- & = \frac{1}{2}(\bra{mn} -\bra{nm} )(\ket{mn} -\ket{nm} ) \\
- & = 1
+\ket{mn} _{F}\bra{mn} _{F} & = \frac{1}{\sqrt{ 2 }}(\ket{mn} -\ket{nm} ) \frac{1}{\sqrt{ 2 }}(\bra{mn} -\bra{nm} ) \\
+ & = \frac{1}{2}(\ket{mn} \bra{mn} +\ket{nm} \bra{nm} -\ket{nm} \bra{mn} -\ket{mn} \bra{nm} ) 
 \end{align}$$
-I can also compute:
+Also:
 $$\begin{align}
-\bra{mn} \sum_{i,j}\ket{ij} \bra{ij} mn\rangle & = \bra{mn} mn\rangle \\
- & =1 
+\ket{nm} _{F}\bra{nm} _{F} & = \frac{1}{\sqrt{ 2 }}(\ket{nm} -\ket{mn} ) \frac{1}{\sqrt{ 2 }}(\bra{nm} -\bra{mn} ) \\
+ & = \frac{1}{2}(\ket{mn} \bra{mn} +\ket{nm} \bra{nm} -\ket{nm} \bra{mn} -\ket{mn} \bra{nm} )
+\end{align}$$
+I observe that:
+$$\ket{mn} _{F}\bra{mn} _{F}=\ket{nm} _{F}\bra{nm} _{F}$$
+## (b).
+For three particles, for each $\ket{n_{1}n_{2}n_{3}},n_{i}\neq n_{j}\text{ for }i\neq j$, I have a corresponding anti-symmetrization. That means that I have $3! = 6$ duplicates.
+
+For $N$ particles, for each $\ket{n_{1}\dots n_{N}},n_{i}\neq n_{j}\text{ for }i\neq j$, I have a corresponding anti-symmetrization. That means that I have $N!$ duplicates. 
+
+## (c).
+>[!Note] Claim
+>$$\ket{n_{1}\dots n_{N}}_{F} \bra{n_{1}\dots n_{N}}_{F} =\ket{n_{\sigma{1}}\dots n_{\sigma N}}_{F}\bra{n_{\sigma 1}\dots n_{\sigma N}}_{F},\forall \sigma\in S_{N}  $$
+## Proof of claim
+Given $\sigma\in S_{N}$, I have:
+$$\begin{align}
+\ket{n_{1}\dots n_{N}} _{F} & = \frac{1}{\sqrt{ N! }} \sum_{\delta\in S_{N}}(sgn\delta )\ket{n_{\delta{1}}\dots n_{\delta N} } 
+\end{align}$$
+Then:
+$$\begin{align}
+\ket{n_{1}\dots n_{N}} _{F}\bra{n_{1}\dots n_{N}} _{F} & = \frac{1}{N!}\sum_{\delta,\gamma\in S_{N}}(sgn \delta)(sgn \gamma)\ket{n_{\delta 1}\dots n_{\delta N}}  \bra{n_{\gamma 1}\dots n_{\gamma N}} 
+\end{align}$$
+Similarly, I can also write down:
+$$\ket{n_{\sigma 1}\dots n_{\sigma N}} _{F}\bra{n_{\sigma 1}\dots n_{\sigma N}} _{F}=\frac{1}{N!} \sum_{\delta^{'},\gamma^{'}\in S_{N}}(sgn\delta^{'})(sgn\gamma^{'})\ket{n_{\delta^{'} \sigma 1}\dots n_{\delta^{'} \sigma N}} \bra{n_{\gamma^{'} \sigma 1}\dots n_{\gamma^{'} \sigma N}} $$
+Observe that:
+$$\begin{align}
+\ket{n_{\sigma 1}\dots n_{\sigma N}} _{F}\bra{n_{\sigma 1}\dots n_{\sigma N}} _{F} & = \frac{1}{N!} \sum_{\delta^{'},\gamma^{'}\in S_{N}}(sgn\delta^{'})(sgn\gamma^{'})\ket{n_{\delta^{'} \sigma 1}\dots n_{\delta^{'} \sigma N}} \bra{n_{\gamma^{'} \sigma 1}\dots n_{\gamma^{'} \sigma N}} \\
+ & =  \frac{1}{N!} \sum_{\delta^{'},\gamma^{'}}(sgn\delta^{'})(sgn\sigma)(sgn\gamma^{'})(sgn\sigma)\ket{n_{\delta^{'} \sigma 1}\dots n_{\delta^{'} \sigma N}} \bra{n_{\gamma^{'} \sigma 1}\dots n_{\gamma^{'} \sigma N}} \\
+ & = \frac{1}{N!}  \sum_{\delta^{'},\gamma^{'}}(sgn(\delta^{'}\sigma))(sgn(\gamma^{'}\sigma))\ket{n_{\delta^{'} \sigma 1}\dots n_{\delta^{'} \sigma N}} \bra{n_{\gamma^{'} \sigma 1}\dots n_{\gamma^{'} \sigma N}} \\
+\end{align}$$
+Then obviously, 
+$$\ket{n_{1}\dots n_{N}}_{F} \bra{n_{1}\dots n_{N}}_{F} =\ket{n_{\sigma{1}}\dots n_{\sigma N}}_{F}\bra{n_{\sigma 1}\dots n_{\sigma N}}_{F}$$
+>[!Right]
+>$\blacksquare$
+
+Therefore:
+$$\begin{align}
+I & =\sum_{\sigma\in S_{N}}\ket{n_{\sigma 1}\dots n_{\sigma N}}_{F}\bra{n_{\sigma 1}\dots n_{\sigma N}}_{F}   \\
+ & = N! \ket{n_{1}\dots n_{N}} _{F} \bra{n_{1}\dots n_{N}} _{F} \\
+  & = N! \frac{1}{N!} \sum_{\delta,\gamma\in S_{N}}(sgn \delta)(sgn \gamma)\ket{n_{\delta 1}\dots n_{\delta N}}  \bra{n_{\gamma 1}\dots n_{\gamma N}} \\
+ & = \sum_{\delta,\gamma\in S_{N}}(sgn \delta)(sgn \gamma)\ket{n_{\delta 1}\dots n_{\delta N}}  \bra{n_{\gamma 1}\dots n_{\gamma N}}
 \end{align}$$
 
 # 2.
