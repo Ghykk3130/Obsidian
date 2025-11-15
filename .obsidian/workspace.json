@@ -139,12 +139,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "密度算子.md",
+                "file": "量子统计力学基础.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "密度算子"
+              "title": "量子统计力学基础"
             }
           },
           {
@@ -768,9 +768,10 @@
   },
   "active": "3d9db392e24fb82d",
   "lastOpenFiles": [
-    "算子平均值的含义.md",
-    "量子统计力学基础.md",
     "密度算子.md",
+    "量子统计力学基础.md",
+    "双缝实验.md",
+    "算子平均值的含义.md",
     "Maxwell-Boltzmann 分布.md",
     "Bose-Einstein statistics与BEC.md",
     "Hamilton原理与Lagrange方程.md",
@@ -793,7 +794,6 @@
     "Solid state.md",
     "Untitled 2.md",
     "Untitled.md",
-    "Untitled 1.md",
     "Pictures/Pasted image 20251109234839.png",
     "Pictures/6b0c21b0026bf8fe35c89d383fe222cf 1.jpg",
     "Pictures/6b0c21b0026bf8fe35c89d383fe222cf.jpg",
