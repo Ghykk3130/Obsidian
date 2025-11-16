@@ -136,3 +136,41 @@ Then:
 $$p= \frac{1}{3} \frac{U}{V}= \frac{\pi^{2}k^4}{45c^{3}\hbar^{3}}T^4=6.65 \times 10^10\ Pa$$
 ## (f).
 Obviously, the pressure created by ions is the main contribution to the counterbalance of the gravitational pull. 
+
+# 4.
+## (a).
+Know that if $T<T_{c}$, a significant number of particles will fall into the ground state. Know that:
+$$N= \frac{V}{\lambda^{3}}g_{3/ 2}(\mathcal{z})+ \frac{\mathcal{z}}{1-\mathcal{z}}\implies 1= \frac{1}{n\lambda^{3}}g_{3 /2}(\mathcal{z})+  \frac{1}{N}  \frac{\mathcal{z}}{1-\mathcal{z}}$$
+Then we must have that $\mathcal{z}=1$ in order for the term corresponding to the ground state $\frac{1}{N} \frac{\mathcal{z}}{1-\mathcal{z}}$ to have a non-trivial contribution under thermodynamic limit.
+
+Then the energy is given by:
+$$\begin{align}
+U & =\sum_{\vec{k}}\epsilon_{\vec{k}} \langle n_{\vec{k}}\rangle
+\end{align}$$
+Now approximate the sum with an integral:
+$$\begin{align}
+\sum_{\vec{k}}  & =\sum_{k_{1},k_{2},k_{3}}\Delta n_{1}\Delta n_{2}\Delta n_{3} \\
+ & = \left(  \frac{L}{2\pi} \right)^{3} \sum_{k_{1},k_{2},k_{3}}\Delta k_{1}\Delta k_{2}\Delta k_{3} \\
+ & \approx\left( \frac{L}{2\pi} \right)^{3} \int_{\mathbb{R}^{3}} d^{3}k \\
+ & = \left( \frac{L}{2\pi} \right)^{3} \int_{0}^{\infty} dk 4\pi k^{2} \\
+ & = 4\sqrt{ 2 }V\pi \frac{m^{3/2}}{h^{3}}\int_{0}^{\infty} d\epsilon\epsilon^{1/2}
+\end{align}$$
+Then:
+$$\begin{align}
+U & \approx 4\sqrt{ 2 }V\pi \frac{m^{3/2}}{h^{3}}\int_{0}^{\infty} d\epsilon\epsilon^{1/2} \frac{\epsilon}{\mathcal{z}^{-1}e^{\beta\epsilon}-1} \\
+ & = 4\sqrt{ 2 }V\pi \frac{m^{3/2}}{h^{3}} (kT)^{5/2}\int dx \frac{x^{3/2}}{e^x-1} \\
+ & = \frac{1}{\lambda^{3}}V kT \frac{3}{2} \frac{1}{\Gamma\left( \frac{5}{2} \right)}\int dx \frac{x^{3/2}}{e^x-1} \\
+ & = \frac{3}{2}kT \frac{V}{\lambda^{3}}g_{5 /2}(1)
+\end{align}$$
+where I took $\mathcal{z}=1$ as argued above.
+
+## (b).
+We compute:
+$$\begin{align}
+C_{V} & =\left(  \frac{\partial U}{\partial T} \right)_{V,N} \\
+ & = \frac{\partial}{\partial T}\left(  \frac{3}{2}kT \frac{V}{\lambda^{3}}g_{5 /2}(1) \right) \\
+ & = \frac{3}{2}kg_{5 /2}(1)\left(  \frac{\sqrt{ 2\pi mk }}{h} \right)^{3} \frac{\partial}{\partial T}T^{5/2} \\
+ & = \frac{15}{4}\left(  \frac{\sqrt{ 2\pi mk }}{h} \right)^{3} kg_{5 /2}(1)T^{3/2}
+\end{align}$$
+I observe that $C_{V}\propto T^{3/2}$
+## (c).

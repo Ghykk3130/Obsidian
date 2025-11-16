@@ -81,3 +81,9 @@ $$1= \frac{V / N}{\lambda^{3}}g_{3 / 2}(\mathcal{z})+ \frac{1}{N} \frac{\mathcal
 $$\frac{1}{n\lambda^{3}}g_{3 / 2}(1)=1$$
 ## Remark
 BEC是一个量子力学效应。它的本质是能级离散，以至于在某些温度，或者密度下，基态的occupation number比激发态高特别多。
+
+# 3. $g_{n}(\mathcal{z})$的性质
+
+>[!Note] Proposition 1
+>$$\frac{\partial}{\partial\mathcal{z}}g_{n}(\mathcal{z})= \frac{1}{\mathcal{z}}g_{n-1}(\mathcal{z})$$
+## Proof.
