@@ -174,3 +174,14 @@ C_{V} & =\left(  \frac{\partial U}{\partial T} \right)_{V,N} \\
 \end{align}$$
 I observe that $C_{V}\propto T^{3/2}$
 ## (c).
+
+Know that above $T_{c}$, the term $\frac{1}{N} \frac{\mathcal{z}}{1-\mathcal{z}}$ is negligible under thermodynamic limit. Therefore, $\mathcal{z}$ is given by:
+$$N= \frac{V}{\lambda^{3}}g_{3 /2}(\mathcal{z})\tag{*}$$
+From $(a)$ we know that:
+$$U= \frac{1}{\lambda^{3}}VkT \frac{3}{2} \frac{1}{\Gamma\left( \frac{5}{2} \right)}\int dx \frac{x^{3/2}}{\mathcal{z}^{-1}e^x-1}$$
+Substitute in $(*)$ to get:
+$$\begin{align}
+U & = \frac{3}{2} NkT \frac{g_{5 /2}(\mathcal{z})}{g_{ 3 /2 }(\mathcal{z})}
+\end{align}$$
+## (d).
+
