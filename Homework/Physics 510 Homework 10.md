@@ -169,8 +169,8 @@ We compute:
 $$\begin{align}
 C_{V} & =\left(  \frac{\partial U}{\partial T} \right)_{V,N} \\
  & = \frac{\partial}{\partial T}\left(  \frac{3}{2}kT \frac{V}{\lambda^{3}}g_{5 /2}(1) \right) \\
- & = \frac{3}{2}kg_{5 /2}(1)\left(  \frac{\sqrt{ 2\pi mk }}{h} \right)^{3} \frac{\partial}{\partial T}T^{5/2} \\
- & = \frac{15}{4}\left(  \frac{\sqrt{ 2\pi mk }}{h} \right)^{3} kg_{5 /2}(1)T^{3/2}
+ & = \frac{3}{2}Vkg_{5 /2}(1)\left(  \frac{\sqrt{ 2\pi mk }}{h} \right)^{3} \frac{\partial}{\partial T}T^{5/2} \\
+ & = \frac{15}{4}\left(  \frac{\sqrt{ 2\pi mk }}{h} \right)^{3}V kg_{5 /2}(1)T^{3/2}
 \end{align}$$
 I observe that $C_{V}\propto T^{3/2}$
 ## (c).
@@ -184,4 +184,35 @@ $$\begin{align}
 U & = \frac{3}{2} NkT \frac{g_{5 /2}(\mathcal{z})}{g_{ 3 /2 }(\mathcal{z})}
 \end{align}$$
 ## (d).
-
+We have:
+$$\begin{align}
+ & N = \frac{V}{\lambda^{3}} g_{3 /2}(\mathcal{z}) \\
+\implies & \frac{\partial}{\partial T}N = \frac{\partial}{\partial T}\left( \frac{V}{\lambda^{3}}g_{3 /2}(\mathcal{z}) \right) \\
+\implies & 0= \frac{\partial}{\partial T}\left(  \frac{1}{\lambda^{3}} \right)g_{3 /2}(\mathcal{z})+ \frac{1}{\lambda^{3}} \frac{\partial\mathcal{z}}{\partial T} \frac{\partial}{\partial\mathcal{z}}g_{3 /2}(\mathcal{z}) \\
+\implies & \frac{3}{\lambda} \frac{\partial \lambda}{\partial T}g_{ 3 /2}(\mathcal{z})= \frac{\partial\mathcal{z}}{\partial T} \frac{1}{\mathcal{z}}g_{1 /2}(\mathcal{z}) \\
+\implies & 3 \frac{\partial}{\partial T}\ln \lambda g_{3 /2 }(\mathcal{z})= \frac{\partial\mathcal{z}}{\partial T} \frac{1}{\mathcal{z}} g_{1 /2}(\mathcal{z}) \\
+\implies & \frac{1}{\mathcal{z}} \frac{\partial\mathcal{z}}{\partial T} = - \frac{3}{2} \frac{1}{T} \frac{g_{3 /2}(\mathcal{z})}{g_{1 /2}(\mathcal{z})}
+\end{align}$$
+## (e).
+We compute:
+$$\begin{align}
+C_{V} & = \left(  \frac{\partial U}{\partial T} \right)_{N,V} \\
+ & = \frac{3}{2}Nk \frac{g_{5 /2}(\mathcal{z})}{g_{3 /2}(\mathcal{z})}+ \frac{3}{2}NkT \frac{\partial}{\partial T} \left(  \frac{g_{5 /2}(\mathcal{z})}{g_{3 /2}\mathcal(z)} \right)
+\end{align}$$
+It suffices to know:
+$$\begin{align}
+ & \frac{\partial}{\partial T}g_{5 /2}(\mathcal{z})  = \frac{\partial\mathcal{z}}{\partial T} \frac{\partial }{\partial\mathcal{z}}g_{5 /2}(\mathcal{z})= \frac{1}{\mathcal{z}} \frac{\partial\mathcal{z}}{\partial T}g_{3 /2}(\mathcal{z})= - \frac{3}{2} \frac{1}{T} \frac{g_{3 /2}^{2}(\mathcal{z})}{g_{1 /2}(\mathcal{z})} \\
+ &  \frac{\partial}{\partial T}g_{3 /2}(\mathcal{z})= \frac{1}{\mathcal{z}} \frac{\partial\mathcal{z}}{\partial T}g_{1 /2}(\mathcal{z})= - \frac{3}{2} \frac{1}{T}g_{3 /2}(\mathcal{z})
+\end{align}$$
+Therefore:
+$$\begin{align}
+\frac{3}{2}NkT \frac{\partial}{\partial T}\left(  \frac{g_{ 5 /2}(\mathcal{z})}{g_{3 /2}(\mathcal{z})} \right) & = \frac{3}{2}NkT \frac{- \frac{3}{2} \frac{1}{T} \frac{g_{3 /2}^{3}(\mathcal{z})g_{1 /2}(\mathcal{z})}{g_{1 /2}(\mathcal{z})}+ \frac{3}{2} \frac{1}{T}g_{3 /2}(\mathcal{z})g_{5 /2}(\mathcal{z})}{g^{2}_{3 /2}(\mathcal{z})} \\
+ & = \frac{9}{4}Nk\left(  \frac{g_{5 /2}(\mathcal{z})}{g_{3 /2}(\mathcal{z})}- \frac{g_{3 /2}(\mathcal{z})}{g_{1 /2 }( \mathcal{z})} \right)
+\end{align}$$
+Then we have:
+$$C_{V}= Nk\left(  \frac{15}{4} \frac{g_{5 /2}(\mathcal{z})}{g_{3 /2}(\mathcal{z})}- \frac{9}{4} \frac{g_{3 /2}(\mathcal{z})}{g_{1 /2}(\mathcal{z})} \right)$$
+## (f).
+Observe that under high $T$, we must have $\mathcal{z}=e^{\beta \mu}\approx 1$. Then:
+$$g_{n}(\mathcal{z})= \frac{1}{\Gamma(n)} \int_{0}^{\infty}dx \frac{x^{n-1}}{\mathcal{z}^{-1}e^x-1}\approx \frac{1}{\Gamma(n)}\int dx \frac{x^{n-1}}{e^x-1}= \zeta(n)$$
+So:
+$$C_{V}= Nk\left(  \frac{15}{4} \frac{\zeta\left( \frac{5}{2} \right)}{\zeta\left( \frac{3}{2} \right)} - \frac{9}{4} \frac{\zeta\left( \frac{3}{2} \right)}{\zeta\left( \frac{1}{2} \right)}\right)\approx 6Nk\text{, as }T\rightarrow \infty$$
