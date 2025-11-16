@@ -212,7 +212,7 @@ $$\begin{align}
 Then we have:
 $$C_{V}= Nk\left(  \frac{15}{4} \frac{g_{5 /2}(\mathcal{z})}{g_{3 /2}(\mathcal{z})}- \frac{9}{4} \frac{g_{3 /2}(\mathcal{z})}{g_{1 /2}(\mathcal{z})} \right)$$
 ## (f).
-Observe that under high $T$, we must have $\mathcal{z}=e^{\beta \mu}\approx 1$. Then:
+Observe that under high $T$, we must have $\mathcal{z}=e^{\beta \mu}\approx 1$. Then for $n>1$:
 $$g_{n}(\mathcal{z})= \frac{1}{\Gamma(n)} \int_{0}^{\infty}dx \frac{x^{n-1}}{\mathcal{z}^{-1}e^x-1}\approx \frac{1}{\Gamma(n)}\int dx \frac{x^{n-1}}{e^x-1}= \zeta(n)$$
-So:
-$$C_{V}= Nk\left(  \frac{15}{4} \frac{\zeta\left( \frac{5}{2} \right)}{\zeta\left( \frac{3}{2} \right)} - \frac{9}{4} \frac{\zeta\left( \frac{3}{2} \right)}{\zeta\left( \frac{1}{2} \right)}\right)\approx 6Nk\text{, as }T\rightarrow \infty$$
+But for $n<1$, we cannot convert it into Riemann zeta function. Then we have:
+$$C_{V}= Nk\left(  \frac{15}{4} \frac{\zeta\left( \frac{5}{2} \right)}{\zeta\left( \frac{3}{2} \right)} - \frac{9}{4} \frac{\zeta\left( \frac{3}{2} \right)}{g_{1 /2}(1)}\right)\approx 1.93Nk\text{, as }T\rightarrow \infty$$
