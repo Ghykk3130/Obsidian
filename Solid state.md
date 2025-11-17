@@ -288,7 +288,7 @@ $$\left( - \frac{\hbar^{2}}{2m}(i\vec{k}+\nabla)^{2}+V(\vec{r})\right)u_{nk}(\ve
 $\epsilon_{n}(\vec{k}+\vec{K})=\epsilon_{n}(\vec{k})$
 ## Proof.
 回忆起，对于$\psi_{n,\vec{k}}(\vec{r})=e^{i\vec{k}\cdot \vec{r}}u_{n,\vec{k}}(\vec{r})$，它必满足方程：
-$$\left( - \frac{\hbar^{2}}{2m}\nabla^{2}- \frac{i\hbar^{2}}{2m}\vec{k}\cdot \nabla+ \frac{\hbar^{2}k^{2}}{2m}+U(\vec{r})\right)u(\vec{r})=\epsilon u(\vec{r})\tag{*}$$
+$$\left( -\frac{\hbar^{2}}{2m}(i\vec{k}+\nabla)^{2}+V \right)u(\vec{r})=\epsilon u(\vec{r})\tag{*}$$
 而：
 $$\begin{align}
 \psi_{n,\vec{k}+\vec{K}}(\vec{r}) & =e^{i(\vec{k}+\vec{K})\cdot \vec{r}}u_{n,\vec{k}}(\vec{r}) \\
@@ -619,9 +619,18 @@ Then done。
 $$\psi=\sum_{\vec{k}}g(\vec{k})\psi_{n,\vec{k}}e^{- \frac{i}{\hbar}\epsilon_{n}(\vec{k})}$$
 如果波包足够局域，$\vec{k}$集中在$\vec{k}_{c}$附近，那么在每个$\ket{\psi_{n,\vec{k}}}$平均下速度都大概是$\frac{1}{\hbar} \frac{\partial\epsilon_{n}}{\partial \vec{k}}$。
 
+# 5.2 Current conduction
+
+在任意温度下，我们可以考虑一个band $\epsilon_{n}(\vec{k})$中的平均电流密度。显然：
+$$\begin{align}
+\vec{j} & =\sum_{\vec{k}}\langle n_{\vec{k}}\rangle e \vec{v}
+\end{align}$$
+因为电子的spin具有2-fold degeneracy，我们有：
+$$\langle n_{\vec{k}}\rangle= \frac{2}{\mathcal{z}^{-1}e^{\beta\epsilon_{n}(\vec{k})}+1}$$
 
 
-
+>[!Note] Proposition 1
+>At $T=0K$, the 
 
 
 
