@@ -394,7 +394,7 @@ $$\psi_{n,\vec{k}}(\vec{r})=\sum_{\vec{R}}c_{\vec{R}}\phi(\vec{r}-\vec{R})$$
 $$\phi(\vec{r})=\sum_{m}b_{m}\psi_{m}(\vec{r})$$
 那么相同地，取$c_{\vec{R}}=e^{i\vec{k}\cdot \vec{R}}$，容易证明$\psi_{n,\vec{k}}$满足Bloch条件。这样，波函数就有如下形式：
 $$\psi_{n,\vec{k}}(\vec{r})=\sum_{\vec{R}}e^{i\vec{k}\cdot \vec{R}}\phi(\vec{r}-\vec{R})$$
-接下来我们有：
+接下来我们有： 
 $$\begin{align}
  & (H_{at}+\Delta U(\vec{r}))\psi_{n,\vec{k}}(\vec{r})=\epsilon_{n}(\vec{k})\psi_{n,\vec{k}}(\vec{r}) \\
 \implies & \int d^{3}r\psi ^{*}_{m}(\vec{r})(H_{at}+\Delta U)\psi_{n,\vec{k}}(\vec{r})= \int d^{3}r\psi ^{*}_{m}(\vec{r})\epsilon_{n}(\vec{k})\psi_{n,\vec{k}}(\vec{r}) \\
