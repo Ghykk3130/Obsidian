@@ -139,12 +139,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "色散关系.md",
+                "file": "Untitled 1.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "色散关系"
+              "title": "Untitled 1"
             }
           },
           {
@@ -628,7 +628,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "群速",
+                "query": "",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -663,13 +663,11 @@
               "title": "Bookmarks"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
-    "width": 200,
-    "collapsed": true
+    "width": 200
   },
   "right": {
     "id": "9003d078f8dbc4ed",
@@ -769,6 +767,7 @@
   },
   "active": "3d9db392e24fb82d",
   "lastOpenFiles": [
+    "Untitled.md",
     "Solid state.md",
     "色散关系.md",
     "Homework/Physics 510 Homework 10.md",
@@ -799,7 +798,6 @@
     "Homework/Physics 511 Homework 8.md",
     "路径积分.md",
     "Homework/Physics 511 Midterm Practice.md",
-    "Laplace's method and Stirling approximation.md",
     "Pictures/Pasted image 20251109234839.png",
     "Pictures/6b0c21b0026bf8fe35c89d383fe222cf 1.jpg",
     "Pictures/6b0c21b0026bf8fe35c89d383fe222cf.jpg",

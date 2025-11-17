@@ -529,13 +529,37 @@ $$\begin{align}
 
 
 # 5. Semiclassical model
+(c.f. Mermin chapter 12)
 
 考虑一个periodic potential中的电子。它的波函数可以是Bloch态的叠加。（容易验证，这个态是一个Bloch态。）我们写：
 $$\psi(\vec{r},t)=\sum_{\vec{k}}g(\vec{k})\psi_{n,\vec{k}}(\vec{r})\exp\left( - \frac{i}{\hbar}\epsilon_{n}(\vec{k})t \right)$$
 我们假设，波函数足够局域，以至于$\vec{k}$都被局限在$\vec{k}_{c}$周围。那么对于时间相位可以展开：
 $$\epsilon_{n}(\vec{k})=\epsilon_{n}(\vec{k}_{c})+\nabla_{\vec{k}}\epsilon_{n}\cdot(\vec{k}-\vec{k}_{c})$$
-其中，$\epsilon_{n}(\vec{k}_{c})$较大，为快相位。$\nabla_{\vec{k}}\epsilon_{n}\cdot(\vec{k}-\vec{k}_{c})$较小，为慢相位，决定envelope的运动。
+其中，$\epsilon_{n}(\vec{k}_{c})$较大，为快相位。$\nabla_{\vec{k}}\epsilon_{n}\cdot(\vec{k}-\vec{k}_{c})$较小，为慢相位，决定envelope的运动。容易得到群速：
+$$v_{g}= \frac{1}{\hbar} \nabla_{\vec{k}}\epsilon_{n}$$
 
+因为波包足够小，我们给波包assign一个大概的位置$\vec{r}$。显然波包的这个大概位置只能大概以群速运动。则要求：
+$$\dot{\vec{r}}=\frac{1}{\hbar}\nabla_{\vec{k}}\epsilon_{n}$$
+因为电子就大概在$\vec{r}$，所以当$\vec{r}$随时间演化时，电子大概也在跟着移动。在每个时间点必须遵守能量守恒。例如在静电场中，必须有：
+$$\epsilon_{n}(\vec{k}(t))+e\phi(\vec{r}(t))=const.$$
+我们假设电子不会在不同的额能带之间跳跃，即$n$是运动积分。那么对于两边微分则有：
+$$\begin{align}
+ & \nabla_{\vec{k}}\epsilon_{n} \cdot   \dot{\vec{k}}  +e \nabla \phi \cdot  \dot{\vec{r}}=0 \\
+\implies & \hbar  \dot{\vec{r}}\cdot  \dot{\vec{k}}+e\nabla \phi \cdot  \dot{\vec{r}}=0 \\
+\implies   &  \dot{\vec{r}}\cdot( \hbar  \dot{\vec{k}}+e\nabla \phi)=0,\forall t
+\end{align}$$
+那么可以要求：
+$$\hbar  \dot{\vec{k}}+e \nabla \phi=0$$
+则：
+$$\hbar  \dot{\vec{k}}=-e\nabla \phi=e\vec{E}$$
+更一般的，我们宣称：
+$$\hbar  \dot{\vec{k}}=e\left( \vec{E}+ \frac{1}{c}  \dot{\vec{r}}\times \vec{H} \right)$$
+>[!Note] Postulate
+>In the semiclassical model of electron motion, we assume:
+>$$\begin{align}
+ & \dot{\vec{r}}= \frac{1}{\hbar}\nabla_{\vec{k}}\epsilon_{n} \\
+ & \hbar  \dot{\vec{k}}=e\left( \vec{E}+ \frac{1}{c}  \dot{\vec{r}}\times \vec{H} \right) \\
+ & \text{number of electrons around }\vec{k}= \frac{1}{\mathcal{z}^{-1}e^{\beta\epsilon_{n}(\vec{k})}+1}d^{3}k\end{align}$$
 
 
 
