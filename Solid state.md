@@ -291,16 +291,19 @@ $\epsilon_{n}(\vec{k}+\vec{K})=\epsilon_{n}(\vec{k})$
 $$\left( -\frac{\hbar^{2}}{2m}(i\vec{k}+\nabla)^{2}+V \right)u(\vec{r})=\epsilon u(\vec{r})\tag{*}$$
 而：
 $$\begin{align}
-\psi_{n,\vec{k}+\vec{K}}(\vec{r}) & =e^{i(\vec{k}+\vec{K})\cdot \vec{r}}u_{n,\vec{k}}(\vec{r}) \\
- & = e^{i\vec{k}\cdot \vec{r}}(e^{i\vec{K}\cdot \vec{r}}u_{n,\vec{k}}(\vec{r}))
+\psi_{n,\vec{k}+\vec{K}}(\vec{r}) & =e^{i(\vec{k}+\vec{K})\cdot \vec{r}}u_{n,\vec{k}+\vec{K}}(\vec{r}) \\
+ & = e^{i\vec{k}\cdot \vec{r}}(e^{i\vec{K}\cdot \vec{r}}u_{n,\vec{k}+\vec{K}}(\vec{r}))
 \end{align}\tag{**}$$
-而$e^{i\vec{K}\cdot \vec{r}}u_{n,\vec{k}}(\vec{r})$也具有周期性：
+而$e^{i\vec{K}\cdot \vec{r}}u_{n,\vec{k}+\vec{K}}(\vec{r})$也具有周期性：
 $$\begin{align}
-e^{i\vec{K}\cdot(\vec{r}+\vec{R}) }u_{n,\vec{k}}(\vec{r}+\vec{R}) & = e^{i\vec{K}\cdot \vec{r}}u_{n,\vec{k}}(\vec{r})
+e^{i\vec{K}\cdot(\vec{r}+\vec{R}) }u_{n,\vec{k}+\vec{K}}(\vec{r}+\vec{R}) & = e^{i\vec{K}\cdot \vec{r}}u_{n,\vec{k}+\vec{K}}(\vec{r})
 \end{align}$$
-所以$e^{i\vec{K}\cdot \vec{r}}u_{n,\vec{k}}(\vec{r})$也是一个Bloch定理中的$u_{n,\vec{k}}$函数。将$(* *)$代入Schrodinger方程，发现$e^{i\vec{K}\cdot \vec{r}}u_{n,\vec{k}}(\vec{r})$以相同的$n,\vec{k}$系数满足$(*)$。所以$\psi_{n,\vec{k}},\psi_{n,\vec{k}+\vec{K}}$，或者说$u_{n,\vec{k}},u_{n,\vec{k}+\vec{K}}$算出来本征值一样的。$\psi_{n,\vec{k}},\psi_{n,\vec{k}+\vec{K}}$最多相差一个phase factor
+所以$e^{i\vec{K}\cdot \vec{r}}u_{n,\vec{k}+\vec{K}}(\vec{r})$也是一个Bloch定理中的$u_{n,\vec{k}}$函数。将$(* *)$代入Schrodinger方程，发现$e^{i\vec{K}\cdot \vec{r}}u_{n,\vec{k}}(\vec{r})$以相同的$n,\vec{k}$系数满足$(*)$。所以$\psi_{n,\vec{k}},\psi_{n,\vec{k}+\vec{K}}$，或者说$u_{n,\vec{k}},u_{n,\vec{k}+\vec{K}}$算出来本征值一样的。
 >[!Right]
 >$\blacksquare$
+## Remark
+$\psi_{n,\vec{k}},\psi_{n,\vec{k}+\vec{K}}$最多相差一个phase factor。你可能会说，这不一定啊，因为我们只证到$u_{n,\vec{k}},u_{n,\vec{k}+\vec{K}}$具有相同的本征值，我们没有证到这个特征子空间只有一维。但是它一定是一维，因为我们已经用量子数$n$来强行分成一维了。
+
 ## Ex:
 考虑$V$，有五个价电子。则一个可能的band structure是：
 <div style="text-align:center">
