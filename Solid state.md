@@ -528,6 +528,13 @@ $$\begin{align}
 
 
 
+# 5. Semiclassical model
+
+考虑一个periodic potential中的电子。它的波函数可以是Bloch态的叠加。（容易验证，这个态是一个Bloch态。）我们写：
+$$\psi(\vec{r},t)=\sum_{\vec{k}}g(\vec{k})\psi_{n,\vec{k}}(\vec{r})\exp\left( - \frac{i}{\hbar}\epsilon_{n}(\vec{k})t \right)$$
+我们假设，波函数足够局域，以至于$\vec{k}$都被局限在$\vec{k}_{c}$周围。那么对于时间相位可以展开：
+$$\epsilon_{n}(\vec{k})=\epsilon_{n}(\vec{k}_{c})+\nabla_{\vec{k}}\epsilon_{n}\cdot(\vec{k}-\vec{k}_{c})$$
+其中，$\epsilon_{n}(\vec{k}_{c})$较大，为快相位。$\nabla_{\vec{k}}\epsilon_{n}\cdot(\vec{k}-\vec{k}_{c})$较小，为慢相位，决定envelope的运动。
 
 
 
