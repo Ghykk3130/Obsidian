@@ -139,12 +139,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Solid state.md",
+                "file": "转动的表示.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Solid state"
+              "title": "转动的表示"
             }
           },
           {
@@ -768,12 +768,12 @@
   },
   "active": "3d9db392e24fb82d",
   "lastOpenFiles": [
+    "Solid state.md",
     "Hilbert空间.md",
     "系综.md",
     "黑体辐射.md",
     "Untitled 1.md",
     "Untitled.md",
-    "Solid state.md",
     "色散关系.md",
     "Homework/Physics 510 Homework 10.md",
     "Bose-Einstein statistics与BEC.md",
