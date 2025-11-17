@@ -17,6 +17,10 @@ $$\langle n_{k}\rangle= \frac{1}{\exp(\beta\epsilon_{k}-\alpha)-1}$$
 定义fugacity $\mathcal{z}=e^{\alpha}=e^{\beta \mu}$，则：
 $$\langle n_{k}\rangle= \frac{1}{\frac{1}{\mathcal{z}}e^{\beta\epsilon_{k}}-1}$$
 >[!Note] Proposition 1
+>The occupation number of a state with wavevector $\vec{k}$ is:
+>$$\langle n_{\vec{k}}\rangle= \frac{1}{\mathcal{z}^{-1}e^{\beta\epsilon_{\vec{k}}}-1}$$
+
+>[!Note] Lemma 1
 >For bosons, must have $\mathcal{z}<1$.
 ## Proof.
 要求：
@@ -64,6 +68,13 @@ $$N= \frac{V}{\lambda^{3}}g_{3/ 2}(\mathcal{z})+ \frac{\mathcal{z}}{1-\mathcal{z
 
 我们有：
 $$1= \frac{V / N}{\lambda^{3}}g_{3 / 2}(\mathcal{z})+ \frac{1}{N} \frac{\mathcal{z}}{1-\mathcal{z}}$$
+## Remark
+上述方程代表了各个热力学量之间的约束。我们有两种运用方式：
+- 给定$T,N,V$，我们可以计算该温度下的$\mu$。
+- 给定$\mu,N,V$，我们可以计算该化学势下必须有的$T$。
+
+
+
 关于这个方程，存在两种情况：
 - 情况一：若$\mathcal{z}<1$，则在热力学极限下，显然$\frac{1}{N} \frac{\mathcal{z}}{1-\mathcal{z}}=0$。而$V / N\sim\mathcal{O}(1)$不会消失。则有
 $$1= \frac{1}{n^{3}\lambda^{3}}g_{3 / 2}(\mathcal{z})$$
@@ -107,4 +118,152 @@ $$g_{n}(\mathcal{z})= \frac{1}{\Gamma(n)} \int_{0}^{\infty}dx \frac{x^{n-1}}{\ma
 $$\frac{x^{n-1}}{\mathcal{z}^{-1}e^x-1}\sim  \frac{x^{n-1}}{\mathcal{z}^{-1}e^x}=x^{n-1}\mathcal{z}e^x$$
 这玩意积分正是$\mathcal{z} \Gamma(n)$。
 
+>[!Note] Proposition 3
+>$$g_{n}(\mathcal{z})=\sum_{k=1}^{\infty} \frac{\mathcal{z}^k}{k^n}$$
+## Proof.
+注意到：
+$$\begin{align}
+\int_{0}^{\infty}dx \frac{x^{n-1}}{\mathcal{z}^{-1}e^x-1} & = \int dx x^{n-1} \frac{e^{-x}}{\mathcal{z}^{-1}-e^{-x}} \\
+ & = \int dx x^{n-1} e^{-x} \mathcal{z} \frac{1}{1-\mathcal{z}e^{-x}} \\
+ & = \int dx x^{n-1}e^{-x}\mathcal{z} \sum_{k=0}^{\infty}\mathcal{z}^ke^{-kx} \\
+ & = \int dx x^{n-1} \sum_{k=1}^{\infty}\mathcal{z}^ke^{-kx} \\
+ & = \sum_{k} \mathcal{z}^k \int dx x^{n-1}e^{-kx} \\
+ & = \sum_{k} \mathcal{z}^k\left(  \frac{1}{k} \right)^n \Gamma(n)
+\end{align}$$
+所以容易得到：
+$$g_{n}(\mathcal{z})= \frac{1}{\Gamma(n)}\int_{0}^{\infty}dx \frac{x^{n-1}}{\mathcal{z}^{-1}e^x-1}=\sum_{k} \frac{\mathcal{z}^k}{k^n} $$
+>[!Right]
+>$\blacksquare$
+# 4. Phase transition
 
+我们计算理想玻色气体的热容。
+
+>[!Note] Proposition 1
+>The heat capacity of an ideal Bose gas below the BEC critical temperature is:
+$$C_{V}=\frac{15}{4}\left(  \frac{\sqrt{ 2\pi mk }}{h} \right)^{3}V kg_{5 /2}(1)T^{3/2}$$
+## Proof.
+考虑内能：
+$$U=\sum_{\vec{k}}\langle n_{\vec{k}}\rangle\epsilon_{\vec{k}}$$
+将求和用积分估计，并换成对能量的测度。容易得到：
+$$U=4\sqrt{ 2 }V\pi \frac{m^{3/2}}{h^{3}}\int_{0}^{\infty} d\epsilon\epsilon^{1/2} \frac{\epsilon}{\mathcal{z}^{-1}e^{\beta\epsilon}-1}=\frac{1}{\lambda^{3}}VkT \frac{3}{2} \frac{1}{\Gamma\left( \frac{5}{2} \right)}\int dx \frac{x^{3/2}}{\mathcal{z}^{-1}e^x-1}$$
+
+由于$\frac{1}{n\lambda^{3}}g_{3 /2}(\mathcal{z})$被压地比较低，我们得到$\mathcal{z}=1$。带入后容易解得：
+$$U= \frac{3}{2}kT \frac{V}{\lambda^{3}}g_{5 /2}(1)$$
+容易算出：
+$$C_{V}=\frac{15}{4}\left(  \frac{\sqrt{ 2\pi mk }}{h} \right)^{3}V kg_{5 /2}(1)T^{3/2}$$
+>[!Right]
+>$\blacksquare$
+
+>[!Note] Proposition 2
+>The heat capacity of an ideal Bose gas above the BEC critical temperature is:
+>$$C_{V}= Nk\left(  \frac{15}{4} \frac{g_{5 /2}(\mathcal{z})}{g_{3 /2}(\mathcal{z})}- \frac{9}{4} \frac{g_{3 /2}(\mathcal{z})}{g_{1 /2}(\mathcal{z})} \right)$$
+## Proof.
+由于$\frac{1}{n\lambda^{3}}g_{3 /2}(\mathcal{z})$比较高，具体的fugacity由下式给出：
+$$N= \frac{V}{\lambda^{3}}g_{3 /2}(\mathcal{z})\tag{*}$$
+我们还是有
+$$U=4\sqrt{ 2 }V\pi \frac{m^{3/2}}{h^{3}}\int_{0}^{\infty} d\epsilon\epsilon^{1/2} \frac{\epsilon}{\mathcal{z}^{-1}e^{\beta\epsilon}-1}=\frac{1}{\lambda^{3}}VkT \frac{3}{2} \frac{1}{\Gamma\left( \frac{5}{2} \right)}\int dx \frac{x^{3/2}}{\mathcal{z}^{-1}e^x-1}$$
+只不过$\mathcal{z}$不能取$1$了。从$(*)$解出$\lambda^{3}$代入上式右手边得到：
+$$U= \frac{3}{2}NkT \frac{g_{5 /2}(\mathcal{z})}{g_{3 /2}(\mathcal{z})}$$
+为了计算热容，我们先提出如下命题，方便我们计算导数：
+
+>[!Note] lemma 1
+>$$\frac{1}{\mathcal{z}} \frac{\partial\mathcal{z}}{\partial T} = - \frac{3}{2} \frac{1}{T} \frac{g_{3 /2}(\mathcal{z})}{g_{1 /2}(\mathcal{z})}$$
+### Proof of lemma
+$$\begin{align}
+ & N = \frac{V}{\lambda^{3}} g_{3 /2}(\mathcal{z}) \\
+\implies & \frac{\partial}{\partial T}N = \frac{\partial}{\partial T}\left( \frac{V}{\lambda^{3}}g_{3 /2}(\mathcal{z}) \right) \\
+\implies & 0= \frac{\partial}{\partial T}\left(  \frac{1}{\lambda^{3}} \right)g_{3 /2}(\mathcal{z})+ \frac{1}{\lambda^{3}} \frac{\partial\mathcal{z}}{\partial T} \frac{\partial}{\partial\mathcal{z}}g_{3 /2}(\mathcal{z}) \\
+\implies & \frac{3}{\lambda} \frac{\partial \lambda}{\partial T}g_{ 3 /2}(\mathcal{z})= \frac{\partial\mathcal{z}}{\partial T} \frac{1}{\mathcal{z}}g_{1 /2}(\mathcal{z}) \\
+\implies & 3 \frac{\partial}{\partial T}\ln \lambda g_{3 /2 }(\mathcal{z})= \frac{\partial\mathcal{z}}{\partial T} \frac{1}{\mathcal{z}} g_{1 /2}(\mathcal{z}) \\
+\implies & \frac{1}{\mathcal{z}} \frac{\partial\mathcal{z}}{\partial T} = - \frac{3}{2} \frac{1}{T} \frac{g_{3 /2}(\mathcal{z})}{g_{1 /2}(\mathcal{z})}
+\end{align}$$
+
+那么接下来：
+$$\begin{align}
+C_{V} & = \left(  \frac{\partial U}{\partial T} \right)_{N,V} \\
+ & = \frac{3}{2}Nk \frac{g_{5 /2}(\mathcal{z})}{g_{3 /2}(\mathcal{z})}+ \frac{3}{2}NkT \frac{\partial}{\partial T} \left(  \frac{g_{5 /2}(\mathcal{z})}{g_{3 /2}\mathcal(z)} \right)
+\end{align}$$
+我们只需要计算
+$$\begin{align}
+ & \frac{\partial}{\partial T}g_{5 /2}(\mathcal{z})  = \frac{\partial\mathcal{z}}{\partial T} \frac{\partial }{\partial\mathcal{z}}g_{5 /2}(\mathcal{z})= \frac{1}{\mathcal{z}} \frac{\partial\mathcal{z}}{\partial T}g_{3 /2}(\mathcal{z})= - \frac{3}{2} \frac{1}{T} \frac{g_{3 /2}^{2}(\mathcal{z})}{g_{1 /2}(\mathcal{z})} \\
+ &  \frac{\partial}{\partial T}g_{3 /2}(\mathcal{z})= \frac{1}{\mathcal{z}} \frac{\partial\mathcal{z}}{\partial T}g_{1 /2}(\mathcal{z})= - \frac{3}{2} \frac{1}{T}g_{3 /2}(\mathcal{z})
+\end{align}$$
+因此
+$$\begin{align}
+\frac{3}{2}NkT \frac{\partial}{\partial T}\left(  \frac{g_{ 5 /2}(\mathcal{z})}{g_{3 /2}(\mathcal{z})} \right) & = \frac{3}{2}NkT \frac{- \frac{3}{2} \frac{1}{T} \frac{g_{3 /2}^{3}(\mathcal{z})g_{1 /2}(\mathcal{z})}{g_{1 /2}(\mathcal{z})}+ \frac{3}{2} \frac{1}{T}g_{3 /2}(\mathcal{z})g_{5 /2}(\mathcal{z})}{g^{2}_{3 /2}(\mathcal{z})} \\
+ & = \frac{9}{4}Nk\left(  \frac{g_{5 /2}(\mathcal{z})}{g_{3 /2}(\mathcal{z})}- \frac{g_{3 /2}(\mathcal{z})}{g_{1 /2 }( \mathcal{z})} \right)
+\end{align}$$
+所以：
+$$C_{V}= Nk\left(  \frac{15}{4} \frac{g_{5 /2}(\mathcal{z})}{g_{3 /2}(\mathcal{z})}- \frac{9}{4} \frac{g_{3 /2}(\mathcal{z})}{g_{1 /2}(\mathcal{z})} \right)$$
+>[!Right]
+>$\blacksquare$
+
+那么容易得到热容的temperature dependence：
+<div style="text-align:center">
+<img src="Pasted image 20251116210714.png" width="500">
+</div>
+这里我拿了$1mol$的$1m^{3}$的$He$ 4进行计算。
+
+Code：
+```mathematica
+Num = 10^23;
+V = 1;
+k = 1.380649*10^-23;
+h = 6.6262*10^-34;
+m = 6.64648*10^-27;
+
+(* Thermal wavelength *)
+\[Lambda][T_] := h/Sqrt[2 Pi m k T];
+
+(* Fugacity *)
+z[\[Mu]_, T_] := Exp[\[Mu]/(k T)];
+
+(* Number of excited particles *)
+excitednum[\[Mu]_, T_] := V/\[Lambda][T]^3 * PolyLog[3/2, z[\[Mu], T]];
+
+(* Solve for chemical potential \[Mu] above Tc *)
+muabove[T_] := \[Mu] /. First[Solve[excitednum[\[Mu], T] == Num, \[Mu]]];
+
+(* Heat capacities *)
+Cabove[T_] := Module[{zmu},
+  zmu = z[muabove[T], T];
+  Num k (15/4*PolyLog[5/2, zmu]/(PolyLog[3/2, zmu]) 
+        - 9/4*(PolyLog[3/2, zmu])/PolyLog[1/2, zmu])
+];
+
+Cbelow[T_] := 15/4*(Sqrt[2 Pi m k]/h)^3 * V * k * PolyLog[5/2, 1] * T^(3/2);
+
+Tc = ((Num/V)/PolyLog[3/2, 1])^(2/3) * h^2/(2 Pi m k);
+
+hcapacity[T_] := Piecewise[{
+  {Cabove[T], T >= Tc},
+  {Cbelow[T], 0 <= T <= Tc}
+}];
+
+Plot[hcapacity[T]/(Num k), {T, 0.5*Tc, 1.5*Tc},AxesLabel->{"T*constant","C/Nk"}]
+
+```
+
+我们发现热容导数不连续。这是一个second order phase transition。
+
+# 5. No BEC in $d<3$
+
+在三维以下不可能发生BEC。这是因为critical temperature的条件永远达不到。例如说我们考虑$d=2$。
+
+考虑激发态占据数：
+$$\sum_{\vec{k}}\langle n_{\vec{k}}\rangle$$
+将求和化为积分：
+$$\sum_{\vec{k}}\sim \int d^{2}k=\int \pi kdk\sim \int d\epsilon$$
+$\langle \epsilon_{\vec{k}}\rangle$代入，则激发态占据数为：
+$$\sim \int d\epsilon \frac{1}{\mathcal{z}^{-1}e^{\beta\epsilon}-1}\sim \int dx \frac{1}{\mathcal{z}^{-1}e^x-1}$$
+我们发现，这这玩意大概是：
+$$\int dx \frac{1}{\mathcal{z}^{-1}e^x-1}\sim g_{1}(\mathcal{z})$$
+我们故技重施，考虑[[用gamma函数表示Riemann zeta函数#^45f9a5|用gamma函数表示Riemann zeta函数 idea 1]]，将它化为级数后发现它是：
+$$g_{1}(\mathcal{z})= \sum_{k=1}^{\infty} \frac{\mathcal{z}^k}{k}$$
+画图可知，这玩意和热力学极限下的$1- \frac{1}{N} \frac{\mathcal{z}}{1-\mathcal{z}}$交点永远在$(r,1),\text{ for some }r<1$。你可能会说，这不一定啊，因为$g_{1}(\mathcal{z})$前面不应该还有一些类似$\frac{V/ N}{\lambda^{3}}$的系数吗？但是因为$g_{1}(\mathcal{z})$一定会在$1$处爆掉，无论前面系数是什么交点都是在一个比$1$小一点的位置。如下图所示，我画了几个前面系数不同的$g_{1}(\mathcal{z})$。
+
+<div style="text-align:center">
+<img src="Pasted image 20251116215527.png" width="400">
+</div>
+
+因为除了$\mathcal{z}=1$的位置基态占据数在热力学极限下都是零，那么永远不可能有非零的基态占据数。

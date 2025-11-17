@@ -212,7 +212,12 @@ $$\begin{align}
 Then we have:
 $$C_{V}= Nk\left(  \frac{15}{4} \frac{g_{5 /2}(\mathcal{z})}{g_{3 /2}(\mathcal{z})}- \frac{9}{4} \frac{g_{3 /2}(\mathcal{z})}{g_{1 /2}(\mathcal{z})} \right)$$
 ## (f).
-Observe that under high $T$, we must have $\mathcal{z}=e^{\beta \mu}\approx 1$. Then for $n>1$:
-$$g_{n}(\mathcal{z})= \frac{1}{\Gamma(n)} \int_{0}^{\infty}dx \frac{x^{n-1}}{\mathcal{z}^{-1}e^x-1}\approx \frac{1}{\Gamma(n)}\int dx \frac{x^{n-1}}{e^x-1}= \zeta(n)$$
-But for $n<1$, we cannot convert it into Riemann zeta function. Then we have:
-$$C_{V}= Nk\left(  \frac{15}{4} \frac{\zeta\left( \frac{5}{2} \right)}{\zeta\left( \frac{3}{2} \right)} - \frac{9}{4} \frac{\zeta\left( \frac{3}{2} \right)}{g_{1 /2}(1)}\right)\approx 1.93Nk\text{, as }T\rightarrow \infty$$
+Observe that under high $T$, the occupation number of excited states $\frac{V}{\lambda^{3}} g_{3 /2}(\mathcal{z})$ must be very large. Then ground state occupation number $\frac{\mathcal{z}}{1-\mathcal{z}}$ must be negligible. Then the solution of $\mathcal{z}$ is given by:
+$$N= \frac{V}{\lambda^{3}}g_{3 /2}(\mathcal{z})$$
+Know that as $T\rightarrow \infty$, $\lambda\rightarrow{0}$, so that $\mathcal{z}\rightarrow 0$. Also know that $g_{n}(\mathcal{z})\approx\mathcal{z}$ around $0$. So:
+$$C_{V}\approx Nk\left(  \frac{15}{4} \frac{\mathcal{z}}{\mathcal{z}}- \frac{9}{4} \frac{\mathcal{z}}{\mathcal{z}} \right)= \frac{3}{2}Nk$$
+## (g).
+
+<div style="text-align:center">
+<img src="Pasted image 20251116210714.png" width="500">
+</div>

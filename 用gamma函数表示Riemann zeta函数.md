@@ -10,6 +10,12 @@ $$\int_{0}^{\infty}dx \frac{x^n}{e^{x}-1}$$
 $$\begin{align}
 \int_{0}^{\infty}dx \frac{x^n}{e^x-1 } & =\int dx x^n \frac{e^{-x}}{1-e^{-x}}
 \end{align}$$
+>[!Note] Idea 1
+>统计力学中，遇到这种分子$x$的多少次方，分母代$e^{-x}$，可以尝试化成几何级数的形式。
+
+^45f9a5
+
+^idea1
 注意到$\frac{e^{-x}}{1-e^{-x}}$这玩意长得像几何级数：
 $$\frac{e^{-x}}{1-e^{-x}}= \sum_{n=1}^{\infty} e^{-nx}$$
 所以我们有：
