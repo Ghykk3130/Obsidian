@@ -139,12 +139,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Untitled 1.md",
+                "file": "Solid state.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Untitled 1"
+              "title": "Solid state"
             }
           },
           {
@@ -667,7 +667,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 200,
+    "collapsed": true
   },
   "right": {
     "id": "9003d078f8dbc4ed",
@@ -767,6 +768,10 @@
   },
   "active": "3d9db392e24fb82d",
   "lastOpenFiles": [
+    "Hilbert空间.md",
+    "系综.md",
+    "黑体辐射.md",
+    "Untitled 1.md",
     "Untitled.md",
     "Solid state.md",
     "色散关系.md",
@@ -788,16 +793,12 @@
     "Maxwell-Boltzmann 分布.md",
     "Hamilton原理与Lagrange方程.md",
     "Degenerate Fermi Gas.md",
-    "黑体辐射.md",
     "能均分定理，virial定理.md",
-    "系综.md",
     "系综（未完成）.md",
     "统计力学的数学基础.md",
     "热力学势.md",
     "热力学平衡.md",
     "Homework/Physics 511 Homework 8.md",
-    "路径积分.md",
-    "Homework/Physics 511 Midterm Practice.md",
     "Pictures/Pasted image 20251109234839.png",
     "Pictures/6b0c21b0026bf8fe35c89d383fe222cf 1.jpg",
     "Pictures/6b0c21b0026bf8fe35c89d383fe222cf.jpg",

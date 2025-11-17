@@ -242,12 +242,38 @@ $$x_{i}= \frac{n_{i}}{N_{i}},\text{for some }n_{i}\in \mathbb{Z}$$
 >$\blacksquare$
 # 2.2 Band structure
 
-我们已经知道，晶体内电子波函数存在解$\psi_{}(\vec{r})=e^{i\vec{k}\cdot \vec{r}}u_{}(\vec{r})$。将波函数带入Schrodinger方程得到：
-$$\left( - \frac{\hbar^{2}}{2m}\nabla^{2}- \frac{i\hbar^{2}}{2m}\vec{k}\cdot \nabla+ \frac{\hbar^{2}k^{2}}{2m}+U(\vec{r})\right)u(\vec{r})=\epsilon u(\vec{r})$$
+我们已经知道，晶体内电子波函数存在解$\psi_{}(\vec{r})=e^{i\vec{k}\cdot \vec{r}}u_{}(\vec{r})$。我们可以根据Schrodinger方程得到$u(\vec{r}e)$需要满足的方程：
+
+>[!Note] Proposition 1
+>$\left( - \frac{\hbar^{2}}{2m}(i\vec{k}+\nabla)+V \right)u=\epsilon u$, denote $H_{\vec{k}}=\left( - \frac{\hbar^{2}}{2m}(i\vec{k}+\nabla)^{2}+V \right)$
+## Proof.
+我们知道：
+$$\left( - \frac{\hbar^{2}}{2m}\nabla^{2}+V \right)\psi=\epsilon \psi$$
+我们先计算：
+$$\begin{align}
+\nabla \psi & = \nabla(e^{i\vec{k}\cdot \vec{r}}u(\vec{r})) \\
+ & = i\vec{k}e^{i\vec{k}\cdot \vec{r}}u(\vec{r})+ e^{i\vec{k}\cdot \vec{r}}\nabla u(\vec{r}) \\
+ & = e^{i\vec{k}\cdot \vec{r}}(i\vec{k}+\nabla )u
+\end{align}$$
+然后：
+$$\begin{align}
+\nabla^{2}\psi & =\nabla \cdot \nabla \psi \\
+ & = \nabla \cdot(e^{i\vec{k}\cdot \vec{r}}(i\vec{k}+\nabla)u) \\
+ & = \partial_{i}e_{i}\cdot(e^{i\vec{k}\cdot \vec{r}}(ik_{j}e_{j}+e_{j}\partial_{j})u) \\
+ & = \partial_{i}(e^{i\vec{k}\cdot \vec{r}}(ik_{i}+\partial_{i})u) \\
+ & = ik_{i}e^{i\vec{k}\cdot \vec{r}}(ik_{i}+\partial_{i})u+ e^{i\vec{k}\cdot \vec{r}}(ik_{i}+\partial_{i})\partial_{i}u \\
+ & = e^{i\vec{k}\cdot \vec{r}}(ik_{i}+\partial_{i})^{2}u \\
+ & = e^{i\vec{k}\cdot \vec{r}}(i\vec{k}+\nabla)^{2}u
+\end{align}$$
+所以代入后约掉$e^{i\vec{k}\cdot \vec{r}}$就是显然。
+>[!Right]
+>$\blacksquare$
+
+
 注意到该方程式有一个parameter $\vec{k}$。Impose boundary condition:
 $$u(\vec{r}+\vec{R})=u(\vec{r})$$
 我们就只考虑一个primitive cell中的解。那么能级会量子化。这引出第二个parameter $n$。所以我们加上所有parameter的脚标得到：
-$$\left( - \frac{\hbar^{2}}{2m}\nabla^{2}+ \frac{\hbar^{2}k^{2}}{2m}+U(\vec{r}) \right)u_{nk}(\vec{r})=\epsilon_{n}(\vec{k})u_{nk}(\vec{r})$$
+$$\left( - \frac{\hbar^{2}}{2m}(i\vec{k}+\nabla)^{2}+V(\vec{r})\right)u_{nk}(\vec{r})=\epsilon_{n}(\vec{k})u_{nk}(\vec{r})$$
 则称$\epsilon_{n}(\vec{k})$为band structure。每个$\epsilon_{n}(\vec{k})$描述了一个non-degenerate的电子能量本征态。
 
 >[!Note] Definition 1
@@ -531,6 +557,9 @@ $$\begin{align}
 # 5. Semiclassical model
 (c.f. Mermin chapter 12)
 
+## 5.1 Semiclassical velocity
+### 5.1.1 群速理解
+
 考虑一个periodic potential中的电子。它的波函数可以是Bloch态的叠加。（容易验证，这个态是一个Bloch态。）我们写：
 $$\psi(\vec{r},t)=\sum_{\vec{k}}g(\vec{k})\psi_{n,\vec{k}}(\vec{r})\exp\left( - \frac{i}{\hbar}\epsilon_{n}(\vec{k})t \right)$$
 我们假设，波函数足够局域，以至于$\vec{k}$都被局限在$\vec{k}_{c}$周围。那么对于时间相位可以展开：
@@ -540,6 +569,63 @@ $$v_{g}= \frac{1}{\hbar} \nabla_{\vec{k}}\epsilon_{n}$$
 
 因为波包足够小，我们给波包assign一个大概的位置$\vec{r}$。显然波包的这个大概位置只能大概以群速运动。则要求：
 $$\dot{\vec{r}}=\frac{1}{\hbar}\nabla_{\vec{k}}\epsilon_{n}$$
+### 5.1.2 平均速度理解
+
+考虑一个Bloch态$\psi_{n,\vec{k}}(\vec{r})=e^{i\vec{k}\cdot \vec{r}}u_{n,\vec{k}}(\vec{r})$
+
+>[!Note] Proposition 1
+>$$\langle \vec{v}\rangle= \frac{1}{\hbar} \frac{\partial}{\partial \vec{k}}\epsilon_{n}$$
+## Proof.
+我们想要计算：
+$$\langle \vec{v} \rangle = \frac{1}{m}\langle \vec{p}\rangle= \frac{1}{m} \int d^{3}r \psi_{n,\vec{k}}^{*}(-i\hbar \nabla)\psi_{n,\vec{k}}$$
+>[!Note] Claim
+>$$\frac{\partial\epsilon_{n}}{\partial \vec{k}}=  \bra{u_{n,\vec{k}}} \frac{\partial  H_{\vec{k}}}{\partial \vec{k}}\ket{u_{n,\vec{k}}} $$
+### Proof of claim
+考虑：
+$$H_{\vec{k}+d\vec{k}}= H_{\vec{k}}+ \frac{\partial H_{\vec{k}}}{\partial \vec{k}} \cdot d\vec{k}$$
+这相当于是Hamiltonian的一个perturbation。则一阶能量微扰为：
+$$\begin{align}
+d\epsilon_{n} & = \bra{\psi_{n,\vec{k}}} \frac{\partial H_{\vec{k}}}{\partial \vec{k}}\cdot d\vec{k}\ket{\psi_{n,\vec{k}}} \\
+ & = \bra{u_{n,\vec{k}}}  \frac{\partial H_{\vec{k}}}{\partial \vec{k}}\cdot d\vec{k}\ket{u_{n,\vec{k}}}   
+\end{align}$$
+而另一方面，显然能量微扰又为：
+$$\epsilon_{n}(\vec{k}+d\vec{k})=\epsilon_{n}(\vec{k})+ \frac{\partial\epsilon_{n}}{\partial \vec{k}}\cdot d\vec{k}$$
+所以必有：
+$$\frac{\partial\epsilon_{n}}{\partial \vec{k}}\cdot d\vec{k}= \bra{u_{n,\vec{k}}}  \frac{\partial H_{\vec{k}}}{\partial \vec{k}}\ket{u_{n,\vec{k}}} \cdot d\vec{k},\forall d\vec{k}$$
+脱去$d\vec{k}$即可。
+
+回到正题。我们发现：
+$$\begin{align}
+\frac{\partial H_{\vec{k}}}{\partial \vec{k}} & = \frac{\partial}{\partial \vec{k}}\left( - \frac{\hbar^{2}}{2m}(i\vec{k}+\nabla)^{2}+V \right) \\
+ & = - \frac{\hbar^{2}}{m}(i\vec{k}+\nabla)i \\
+ & = \frac{\hbar^{2}}{m}(\vec{k}-i\nabla)
+\end{align}$$
+于是便有：
+$$\begin{align}
+\frac{\partial\epsilon_{n}}{\partial \vec{k}} & =\int d^{3}r u_{n,\vec{k}}^{*} \frac{\hbar^{2}}{m}(\vec{k}-i\nabla)u_{n,\vec{k}}
+\end{align}$$
+另一方面：
+$$\begin{align}
+\langle \vec{v} \rangle  & = \frac{1}{m} \int d^{3}r \psi_{n,\vec{k}}^{*}(-i\hbar \nabla)\psi_{n,\vec{k}} \\
+ & = \frac{1}{m}\int d^{3}r e^{-i\vec{k}\cdot \vec{r}}u_{n,\vec{k}}^{*}(-i\hbar \nabla)(e^{i\vec{k}\cdot \vec{r}}u_{n,\vec{k}}) \\
+ & = \frac{1}{m}\int d^{3}re^{-i\vec{k}\cdot \vec{r}}u_{n,\vec{k}}^{*}(-i\hbar)e^{i\vec{k}\cdot \vec{r}}(i\vec{k}+\nabla)u_{n,\vec{k}} \\
+ & = \int d^{3}r u_{n,\vec{k}}^{*} \frac{\hbar}{m} (\vec{k}-i\nabla)u_{n,\vec{k}} \\
+\end{align}$$
+Then done。
+>[!Right]
+>$\blacksquare$
+
+那么如果有一个波包：
+$$\psi=\sum_{\vec{k}}g(\vec{k})\psi_{n,\vec{k}}e^{- \frac{i}{\hbar}\epsilon_{n}(\vec{k})}$$
+如果波包足够局域，$\vec{k}$集中在$\vec{k}_{c}$附近，那么在每个$\ket{\psi_{n,\vec{k}}}$平均下速度都大概是$\frac{1}{\hbar} \frac{\partial\epsilon_{n}}{\partial \vec{k}}$。
+
+
+
+
+
+
+
+
 因为电子就大概在$\vec{r}$，所以当$\vec{r}$随时间演化时，电子大概也在跟着移动。在每个时间点必须遵守能量守恒。例如在静电场中，必须有：
 $$\epsilon_{n}(\vec{k}(t))+e\phi(\vec{r}(t))=const.$$
 我们假设电子不会在不同的额能带之间跳跃，即$n$是运动积分。那么对于两边微分则有：
