@@ -83,12 +83,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "热力学平衡.md",
+                "file": "Experimental/Thermoelectric effect of.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "热力学平衡"
+              "title": "Thermoelectric effect of"
             }
           },
           {
@@ -596,7 +596,7 @@
             }
           }
         ],
-        "currentTab": 9
+        "currentTab": 5
       }
     ],
     "direction": "vertical"
@@ -766,8 +766,10 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "3d9db392e24fb82d",
+  "active": "1f5d1c9fe520f12e",
   "lastOpenFiles": [
+    "Homework/Physics 510 Homework 10.md",
+    "热力学平衡.md",
     "Pictures/31c55fba2a72bf93689505242fc94df3.jpg",
     "转动的表示.md",
     "群论.md",
@@ -784,7 +786,6 @@
     "Untitled 1.md",
     "Untitled.md",
     "色散关系.md",
-    "Homework/Physics 510 Homework 10.md",
     "Pictures/Pasted image 20251116215527.png",
     "用gamma函数表示Riemann zeta函数.md",
     "Homework/Physics 510 Homework 8.md",
@@ -803,7 +804,6 @@
     "Pictures/6b0c21b0026bf8fe35c89d383fe222cf 1.jpg",
     "Pictures/6b0c21b0026bf8fe35c89d383fe222cf.jpg",
     "Pictures/496a375ad4b007471e8c865938953e2f.jpg",
-    "Pictures/cc7933a2e02e2139d8ca6a0c95bb364c.jpg",
     "Homework",
     "Pictures",
     "Experimental",

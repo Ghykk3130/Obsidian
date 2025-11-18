@@ -30,3 +30,8 @@ Caveats:
 - First put some thermal epoxy on the tip of the thermal couples to avoid possible connection to the sample.
 - The two thermal couples would be wind together in the middle to increase the thermal conductivity.
 - Thermal couples could be attached to pillars with silver epoxy. Because there's no conduction. 
+
+
+# To-do
+- extract out $V_{Nernst}$ v.s. $H$ envelope, $V_{se ebeck}$ v.s. $H$ envelope.
+- 
