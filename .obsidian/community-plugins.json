@@ -1,5 +1,8 @@
 [
   "obsidian-latex-suite",
   "better-export-pdf",
-  "obsidian-git"
+  "obsidian-git",
+  "obsidian-excalidraw-plugin",
+  "obsidian-pandoc",
+  "obsidian-enhancing-export"
 ]

@@ -125,12 +125,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "密度算子.md",
+                "file": "Homework/Physics 510 Homework 10.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "密度算子"
+              "title": "Physics 510 Homework 10"
             }
           },
           {
@@ -153,12 +153,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "张量分析.md",
-                "mode": "source",
+                "file": "Homework/Physics 510 Homework 10.md",
+                "mode": "preview",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "张量分析"
+              "title": "Physics 510 Homework 10"
             }
           },
           {
@@ -167,12 +167,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Homework/Physics 510 Homework 5.md",
+                "file": "Homework/Physics 510 Homework 10.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Physics 510 Homework 5"
+              "title": "Physics 510 Homework 10"
             }
           },
           {
@@ -596,7 +596,7 @@
             }
           }
         ],
-        "currentTab": 7
+        "currentTab": 11
       }
     ],
     "direction": "vertical"
@@ -762,13 +762,19 @@
       "daily-notes:Open today's daily note": false,
       "templates:Insert template": false,
       "command-palette:Open command palette": false,
-      "obsidian-git:Open Git source control": false
+      "obsidian-git:Open Git source control": false,
+      "obsidian-excalidraw-plugin:New drawing": false
     }
   },
-  "active": "94e08fe20269ddb7",
+  "active": "e264e6127a032bc2",
   "lastOpenFiles": [
-    "Hamilton原理与Lagrange方程.md",
+    "Homework/Physics 510 Homework 5.md",
+    "Homework/Physics 510 Homework 6.md",
     "Homework/Physics 510 Homework 10.md",
+    "Homework/Physics 511 Cheat sheet.md",
+    "张量分析.md",
+    "密度算子.md",
+    "Hamilton原理与Lagrange方程.md",
     "能均分定理，virial定理.md",
     "Experimental/Thermoelectric effect of.md",
     "热力学平衡.md",
@@ -779,7 +785,6 @@
     "Bose-Einstein statistics与BEC.md",
     "对偶矢量空间与伴随算子.md",
     "平动的表示.md",
-    "张量分析.md",
     "Lie Group.md",
     "Solid state.md",
     "Hilbert空间.md",
@@ -791,14 +796,10 @@
     "Pictures/Pasted image 20251116215527.png",
     "用gamma函数表示Riemann zeta函数.md",
     "Homework/Physics 510 Homework 8.md",
-    "Homework/Physics 510 Homework 7.md",
     "Pictures/Pasted image 20251116210714.png",
-    "Homework/Physics 510 Homework 9.md",
     "Pictures/5fc3e20e44f8e5cf90913bd31b0c428c.jpg",
     "Pictures/381773e738a5144c475ce779113c5542 1.jpg",
     "Pictures/381773e738a5144c475ce779113c5542.jpg",
-    "量子统计力学基础.md",
-    "密度算子.md",
     "Pictures/Pasted image 20251109234839.png",
     "Pictures/6b0c21b0026bf8fe35c89d383fe222cf 1.jpg",
     "Pictures/6b0c21b0026bf8fe35c89d383fe222cf.jpg",

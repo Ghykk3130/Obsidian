@@ -11,5 +11,6 @@
   "attachmentFolderPath": "Pictures",
   "autoPairBrackets": true,
   "autoPairMarkdown": true,
-  "alwaysUpdateLinks": true
+  "alwaysUpdateLinks": true,
+  "readableLineLength": false
 }
