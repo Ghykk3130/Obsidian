@@ -33,5 +33,5 @@ Caveats:
 
 
 # To-do
-- extract out $V_{Nernst}$ v.s. $H$ envelope, $V_{se ebeck}$ v.s. $H$ envelope.
-- 
+- extract out $V_{Nernst}$ v.s. $H$ envelope, $V_{se ebeck}$ v.s. $H$ envelope, $V_{th}$ v.s. $H$ envelope.
+- Think about why intersects would indicate a phase change. Carrier type changes? 

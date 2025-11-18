@@ -22,6 +22,7 @@ For $N$ particles, for each $\ket{n_{1}\dots n_{N}},n_{i}\neq n_{j}\text{ for }i
 
 Obviously, if I let $\sigma\in S_{N}$, then I must have 
 $$\ket{n_{1},\dots,n_{N}} _{F}=$$
+Claim that:
 >[!Note] Claim
 >$\ket{n_{1}\dots n_{N}}_{F},\ket{n_{\sigma{1}}\dots n_{\sigma N}}_{F}\forall \sigma\in S_{N}$ represent the same state.
 ## Proof of claim
@@ -107,7 +108,7 @@ $$\begin{align}
  & n_{p}\lambda_{p}^{3}=2.95 \times 10^{-6} \\
  & n_{\alpha}\lambda_{\alpha}^{3}=1.55 \times 10^{-7}
 \end{align}$$
-So all three particles are not degenerate.
+They are all smaller than $1$. So all three particles are not degenerate.
 ## (d).
 Since the particles are approximated as ideal gases, I have:
 $$\begin{align}
@@ -117,7 +118,7 @@ p & = n_{e}KT+n_{p}KT+n_{\alpha}kT=2.57 \times 10^{16}\ Pa
 From blackbody radiation, I know that:
 $$U= \frac{\pi^{2}k^4}{15c^{3}\hbar^{3}}VT^4$$
 Then:
-$$p= \frac{1}{3} \frac{U}{V}= \frac{\pi^{2}k^4}{45c^{3}\hbar^{3}}T^4=1.65 \times 10\ Pa$$
+$$p= \frac{1}{3} \frac{U}{V}= \frac{\pi^{2}k^4}{45c^{3}\hbar^{3}}T^4=1.65 \times 10^{13} Pa$$
 ## (f).
 Obviously, the pressure created by ions is the main contribution to the counterbalance of the gravitational pull. 
 
@@ -154,7 +155,8 @@ $$\begin{align}
 C_{V} & =\left(  \frac{\partial U}{\partial T} \right)_{V,N} \\
  & = \frac{\partial}{\partial T}\left(  \frac{3}{2}kT \frac{V}{\lambda^{3}}g_{5 /2}(1) \right) \\
  & = \frac{3}{2}Vkg_{5 /2}(1)\left(  \frac{\sqrt{ 2\pi mk }}{h} \right)^{3} \frac{\partial}{\partial T}T^{5/2} \\
- & = \frac{15}{4}\left(  \frac{\sqrt{ 2\pi mk }}{h} \right)^{3}V kg_{5 /2}(1)T^{3/2}
+ & = \frac{15}{4}\left(  \frac{\sqrt{ 2\pi mk }}{h} \right)^{3}V kg_{5 /2}(1)T^{3/2} \\
+ & = \frac{15}{4}k \frac{V}{\lambda^{3}}g_{5 /2}(1)
 \end{align}$$
 I observe that $C_{V}\propto T^{3/2}$
 ## (c).
