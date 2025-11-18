@@ -88,7 +88,7 @@ $$\begin{align}
  & T_{\alpha}=3.28\times 10^{11}K
 \end{align}$$
 ## (b).
-Use $T=1.6\times 10^{7}K$, and the formula $\lambda = \frac{\hbar}{\sqrt{ 2\pi mkT }}$, I get:
+Use $T=1.6\times 10^{7}K$, and the formula $\lambda = \frac{h}{\sqrt{ 2\pi mkT }}$, I get:
 $$\begin{align}
  & \lambda_{e} = 1.86346 \times 10^{-11}\ m \\
  & \lambda_{p}=4.34876 \times 10^{-13}\ m \\
@@ -97,7 +97,7 @@ $$\begin{align}
 ## (c).
 According to the estimation in $(a)$, I can assume that all hydrogen and helium are completely ionized. Then I have:
 $$\begin{align}
- & n_{e}= \frac{\rho_{H}}{m_{p}}+ \frac{\rho_{He}}{4m_{p}}=5.08 \times 10^{31} \\
+ & n_{e}= \frac{\rho_{H}}{m_{p}}+ \frac{\rho_{He}}{4m_{p}}\cdot 2=6.57 \times 10^{31} \\
  & n_{p}= \frac{\rho_{H}}{m_{p}}=3.59 \times 10^{31} \\
  & n_{\alpha}= \frac{\rho_{He}}{4m_{p}}= 1.49 \times 10^{31}
 \end{align}$$
