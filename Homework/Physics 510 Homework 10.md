@@ -1,6 +1,5 @@
 # 1.
-For fermions, since we restrict ourselves to the subspace spanned by the anti-symmetrized kets, the identity operator is $I=\sum_{m,n}\ket{mn}_{F}\bra{mn}_{F}$.
-For bosons, we are in the subspace spanned by the symmetrized kets, the identity operator is $I=\sum_{m,n}\ket{mn}_{B}\bra{mn}_{B}$.
+
 ## (a).
 I have:
 $$\begin{align}
@@ -20,38 +19,28 @@ For three particles, for each $\ket{n_{1}n_{2}n_{3}},n_{i}\neq n_{j}\text{ for }
 For $N$ particles, for each $\ket{n_{1}\dots n_{N}},n_{i}\neq n_{j}\text{ for }i\neq j$, I have a corresponding anti-symmetrization. That means that I have $N!$ duplicates. 
 
 ## (c).
+
+Obviously, if I let $\sigma\in S_{N}$, then I must have 
+$$\ket{n_{1},\dots,n_{N}} _{F}=$$
 >[!Note] Claim
->$$\ket{n_{1}\dots n_{N}}_{F} \bra{n_{1}\dots n_{N}}_{F} =\ket{n_{\sigma{1}}\dots n_{\sigma N}}_{F}\bra{n_{\sigma 1}\dots n_{\sigma N}}_{F},\forall \sigma\in S_{N}  $$
+>$\ket{n_{1}\dots n_{N}}_{F},\ket{n_{\sigma{1}}\dots n_{\sigma N}}_{F}\forall \sigma\in S_{N}$ represent the same state.
 ## Proof of claim
 Given $\sigma\in S_{N}$, I have:
 $$\begin{align}
 \ket{n_{1}\dots n_{N}} _{F} & = \frac{1}{\sqrt{ N! }} \sum_{\delta\in S_{N}}(sgn\delta )\ket{n_{\delta{1}}\dots n_{\delta N} } 
 \end{align}$$
-Then:
-$$\begin{align}
-\ket{n_{1}\dots n_{N}} _{F}\bra{n_{1}\dots n_{N}} _{F} & = \frac{1}{N!}\sum_{\delta,\gamma\in S_{N}}(sgn \delta)(sgn \gamma)\ket{n_{\delta 1}\dots n_{\delta N}}  \bra{n_{\gamma 1}\dots n_{\gamma N}} 
-\end{align}$$
 Similarly, I can also write down:
-$$\ket{n_{\sigma 1}\dots n_{\sigma N}} _{F}\bra{n_{\sigma 1}\dots n_{\sigma N}} _{F}=\frac{1}{N!} \sum_{\delta^{'},\gamma^{'}\in S_{N}}(sgn\delta^{'})(sgn\gamma^{'})\ket{n_{\delta^{'} \sigma 1}\dots n_{\delta^{'} \sigma N}} \bra{n_{\gamma^{'} \sigma 1}\dots n_{\gamma^{'} \sigma N}} $$
-Observe that:
-$$\begin{align}
-\ket{n_{\sigma 1}\dots n_{\sigma N}} _{F}\bra{n_{\sigma 1}\dots n_{\sigma N}} _{F} & = \frac{1}{N!} \sum_{\delta^{'},\gamma^{'}\in S_{N}}(sgn\delta^{'})(sgn\gamma^{'})\ket{n_{\delta^{'} \sigma 1}\dots n_{\delta^{'} \sigma N}} \bra{n_{\gamma^{'} \sigma 1}\dots n_{\gamma^{'} \sigma N}} \\
- & =  \frac{1}{N!} \sum_{\delta^{'},\gamma^{'}}(sgn\delta^{'})(sgn\sigma)(sgn\gamma^{'})(sgn\sigma)\ket{n_{\delta^{'} \sigma 1}\dots n_{\delta^{'} \sigma N}} \bra{n_{\gamma^{'} \sigma 1}\dots n_{\gamma^{'} \sigma N}} \\
- & = \frac{1}{N!}  \sum_{\delta^{'},\gamma^{'}}(sgn(\delta^{'}\sigma))(sgn(\gamma^{'}\sigma))\ket{n_{\delta^{'} \sigma 1}\dots n_{\delta^{'} \sigma N}} \bra{n_{\gamma^{'} \sigma 1}\dots n_{\gamma^{'} \sigma N}} \\
-\end{align}$$
-Then obviously, 
-$$\ket{n_{1}\dots n_{N}}_{F} \bra{n_{1}\dots n_{N}}_{F} =\ket{n_{\sigma{1}}\dots n_{\sigma N}}_{F}\bra{n_{\sigma 1}\dots n_{\sigma N}}_{F}$$
+$$\ket{n_{\sigma 1}\dots n_{\sigma N}} _{F}=\frac{1}{\sqrt{ N! }} \sum_{\delta^{'}\in S_{N}}(sgn\delta^{'})\ket{n_{\delta^{'} \sigma 1}\dots n_{\delta^{'} \sigma N}} $$
+Obviously:
+$$\sum_{\delta^{'}\in S_{N}}(sgn\delta^{'})\ket{n_{\delta^{'}\sigma 1}\dots n_{\delta^{'} \sigma N}} =\sum_{\delta^{'}}(sgn\sigma)(sgn\delta^{'})\ket{n_{\delta^{'} 1}\dots n_{\delta^{'} N}} $$
+So $\ket{n_{1}\dots n_{N}}_{F},\ket{n_{\sigma 1}\dots n_{\sigma N}}_{F}$ differ only by a sign, thus represent the same physical state.
 >[!Right]
 >$\blacksquare$
 
-Therefore:
+Therefore we only need to sum over independent states:
 $$\begin{align}
-I & =\sum_{\sigma\in S_{N}}\ket{n_{\sigma 1}\dots n_{\sigma N}}_{F}\bra{n_{\sigma 1}\dots n_{\sigma N}}_{F}   \\
- & = N! \ket{n_{1}\dots n_{N}} _{F} \bra{n_{1}\dots n_{N}} _{F} \\
-  & = N! \frac{1}{N!} \sum_{\delta,\gamma\in S_{N}}(sgn \delta)(sgn \gamma)\ket{n_{\delta 1}\dots n_{\delta N}}  \bra{n_{\gamma 1}\dots n_{\gamma N}} \\
- & = \sum_{\delta,\gamma\in S_{N}}(sgn \delta)(sgn \gamma)\ket{n_{\delta 1}\dots n_{\delta N}}  \bra{n_{\gamma 1}\dots n_{\gamma N}}
+I & =\sum_{k_{1}<k_{2}<\dots<k_{N}}\ket{k_{1}\dots k_{N}} _{F}\bra{k_{1} \dots k_{N}} _{F}
 \end{align}$$
-
 # 2.
 ## (a).
 Know that:
@@ -63,31 +52,26 @@ Z & =\sum_{n=0}^{\infty}\exp\left( -\beta \frac{\hbar^{2}k_{n}^{2}}{2m} \right) 
 Therefore:
 $$A=\frac{L}{2\pi}$$
 ## (b).
->[!Note] Claim
-$$\exp(-x^{2})\leq \frac{1}{x^{2}},\forall x\geq 1$$
-## Proof of claim
-Let $f(y)=ye^{-y}$
-
-Then:
-$$\begin{align}
-f^{'}(y) & = (1-y)e^{-y}<0,\forall y>1 \\
-
-\end{align}$$
-Know that:
-$$f(1)=\frac{1}{e}<1$$
-Then:
-$$f(y)<1,\forall y>1$$
-substituting in $y=x^{2}$ and rearranging the terms should complete the proof.
->[!Right]
->$\blacksquare$
-
-Then:
-$$\begin{align}
- & 0\leq \exp\left( - \beta \frac{\hbar^{2}k_{n}^{2}}{2m} \right)\leq \frac{2m}{\beta \hbar^{2}} \frac{1}{k_{n}^{2}} \\
-\implies & \sum 0 \leq \sum \exp\left( -\beta \frac{\hbar^{2}k_{n}^{2} }{2m} \right) \leq \frac{2m}{\beta \hbar^{2}}\sum \frac{1}{k_{n}^{2}} \\
-\implies & 0 \leq \sum \exp\left( -\beta \frac{\hbar^{2}k_{n}^{2} }{2m} \right) \leq \frac{2m}{\beta \hbar^{2}}\left(  \frac{L}{2\pi} \right)^{2} \frac{\pi^{2}}{6} 
-\end{align}$$
+It's obvious from the plot that:
+$$\sum_{{n}=0}^{\infty}\exp\left( -\beta \frac{\hbar^{2}k_{n}^{2}}{2m} \right)=\sum_{n=0}^{\infty}\exp\left( -\beta \frac{\hbar^{2}}{2m}\left( \frac{2\pi n}{L}^{} \right)^{2} \right)\geq \frac{L}{2\pi}\int_{0}^{\infty}\exp\left( -\beta \frac{\hbar^{2}k^{2}}{2m} \right)$$
+<div style="text-align:center">
+<img src="31c55fba2a72bf93689505242fc94df3.jpg" width="350">
+</div>
+It's also obvious that if I shift the boxes in the Riemann sum to the left by $\Delta n=1$, which corresponds to $\Delta k=\frac{2\pi}{L}$, then the curve would be bounded below by the discrete sum. That is:
+$$\sum_{n=0}^{\infty}\exp\left( -\beta \frac{\hbar^{2}}{2m}\left( \frac{2\pi(n+1)}{L} \right)^{2} \right)\leq \frac{L}{2\pi}\int_{0}^{\infty}\exp\left( -\beta \frac{\hbar^{2}k^{2}}{2m} \right)$$
 ## (c).
+Notice that as $L$ gets larger, the arguments of the exponentials of the upper and lower bounds get more close to each other, because $L$ is on the denominator. Especially, as $L\rightarrow \infty$, I have:
+$$\begin{align}
+\lim_{ L \to \infty } \left( \sum_{n}\exp\left( -\beta \frac{\hbar^{2}}{2m}\left(  \frac{2\pi(n+1)}{L} \right)^{2} \right)-\sum_{n}\exp\left( -\beta \frac{\hbar^{2}}{2m}\left( \frac{2\pi n}{L} \right)^{2} \right) \right) & = \lim_{ L \to \infty } \sum_{n}\exp\left( -\beta \frac{\hbar^{2}}{2m}\left(  \frac{2\pi(n+1)}{L} \right)^{2} \right) \\
+ & -\lim_{ L \to \infty } \sum_{n}\exp\left( -\beta \frac{\hbar^{2}}{2m}\left( \frac{2\pi n}{L} \right)^{2} \right)  \\
+ & = \sum_{n}\lim_{ L \to \infty } \exp\left( -\beta \frac{\hbar^{2}}{2m}\left(  \frac{2\pi(n+1)}{L} \right)^{2} \right) \\
+ & -\sum_{n}\lim_{ L \to \infty } \exp\left( -\beta \frac{\hbar^{2}}{2m}\left( \frac{2\pi n}{L} \right)^{2} \right) \\
+ & = 0
+\end{align}$$
+Notice that the reason why I can exchange the integral and the sum is because $\exp\left( -\beta \frac{\hbar^{2}}{2m}\left( \frac{2\pi n}{L} \right)^{2} \right)$ is bounded above by some $L^1$ function.
+
+Therefore, under the thermodynamic limit, by squeeze theorem, I must have:
+$$\sum_{n=0}^{\infty}\exp\left( -\beta \frac{\hbar^{2}}{2m}\left( \frac{2\pi n}{L}^{} \right)^{2} \right)= \frac{L}{2\pi}\int_{0}^{\infty}\exp\left( -\beta \frac{\hbar^{2}k^{2}}{2m} \right)$$
 
 # 3.
 ## (a).
