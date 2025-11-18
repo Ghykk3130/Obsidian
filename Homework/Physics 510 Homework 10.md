@@ -103,7 +103,7 @@ $$\begin{align}
 \end{align}$$
 So I have:
 $$\begin{align}
- & n_{e}\lambda_{e}^{3}=0.33 \\
+ & n_{e}\lambda_{e}^{3}=0.425 \\
  & n_{p}\lambda_{p}^{3}=2.95 \times 10^{-6} \\
  & n_{\alpha}\lambda_{\alpha}^{3}=1.55 \times 10^{-7}
 \end{align}$$
@@ -111,13 +111,13 @@ So all three particles are not degenerate.
 ## (d).
 Since the particles are approximated as ideal gases, I have:
 $$\begin{align}
-p & = n_{e}KT+n_{p}KT+n_{\alpha}kT=2.2452 \times 10^{16}\ Pa
+p & = n_{e}KT+n_{p}KT+n_{\alpha}kT=2.57 \times 10^{16}\ Pa
 \end{align}$$
 ## (e).
 From blackbody radiation, I know that:
 $$U= \frac{\pi^{2}k^4}{15c^{3}\hbar^{3}}VT^4$$
 Then:
-$$p= \frac{1}{3} \frac{U}{V}= \frac{\pi^{2}k^4}{45c^{3}\hbar^{3}}T^4=6.65 \times 10^10\ Pa$$
+$$p= \frac{1}{3} \frac{U}{V}= \frac{\pi^{2}k^4}{45c^{3}\hbar^{3}}T^4=6.65 \times 10^{10}\ Pa$$
 ## (f).
 Obviously, the pressure created by ions is the main contribution to the counterbalance of the gravitational pull. 
 
