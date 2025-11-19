@@ -20,8 +20,6 @@ For $N$ particles, for each $\ket{n_{1}\dots n_{N}},n_{i}\neq n_{j}\text{ for }i
 
 ## (c).
 
-Obviously, if I let $\sigma\in S_{N}$, then I must have 
-$$\ket{n_{1},\dots,n_{N}} _{F}=$$
 Claim that:
 >[!Note] Claim
 >$\ket{n_{1}\dots n_{N}}_{F},\ket{n_{\sigma{1}}\dots n_{\sigma N}}_{F}\forall \sigma\in S_{N}$ represent the same state.
@@ -40,7 +38,7 @@ So $\ket{n_{1}\dots n_{N}}_{F},\ket{n_{\sigma 1}\dots n_{\sigma N}}_{F}$ differ 
 
 Therefore we only need to sum over independent states:
 $$\begin{align}
-I & =\sum_{k_{1}<k_{2}<\dots<k_{N}}\ket{k_{1}\dots k_{N}} _{F}\bra{k_{1} \dots k_{N}} _{F}
+I & =\sum_{n_{1}< n_{2}<\dots<n_{N}}\ket{n_{1}\dots n_{N}} _{F}\bra{n_{1} \dots n_{N}} _{F}
 \end{align}$$
 # 2.
 ## (a).
@@ -58,6 +56,9 @@ $$\sum_{{n}=0}^{\infty}\exp\left( -\beta \frac{\hbar^{2}k_{n}^{2}}{2m} \right)=\
 <div style="text-align:center">
 <img src="31c55fba2a72bf93689505242fc94df3.jpg" width="350">
 </div>
+
+
+
 It's also obvious that if I shift the boxes in the Riemann sum to the left by $\Delta n=1$, which corresponds to $\Delta k=\frac{2\pi}{L}$, then the curve would be bounded below by the discrete sum. That is:
 $$\sum_{n=0}^{\infty}\exp\left( -\beta \frac{\hbar^{2}}{2m}\left( \frac{2\pi(n+1)}{L} \right)^{2} \right)\leq \frac{L}{2\pi}\int_{0}^{\infty}\exp\left( -\beta \frac{\hbar^{2}k^{2}}{2m} \right)$$
 ## (c).
