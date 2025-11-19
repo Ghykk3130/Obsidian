@@ -673,6 +673,20 @@ $$\begin{align}
 $$\begin{align}
 \epsilon_{n}(\vec{k}) & \approx\epsilon_{n}(\vec{k}^{*})+ \sum_{i,j}\frac{1}{2} \frac{\partial^{2}\epsilon_{n}}{\partial k_{i}\partial k_{j}}(k_{i}-k_{i}^{*})(k_{j}-k_{j}^{*})
 \end{align}$$
+我们定义：
+
+>[!Note] Definition 1
+>$$m_{ij}^{*}= \frac{1}{\hbar^{2}}\left( \frac{\partial^{2}\epsilon_{n}}{\partial k_{i}\partial k_{j}} \right)^{-1}$$
+
+那么，能量的展开可以写为：
+$$\epsilon_{n}(\vec{k})=\epsilon_{n}(\vec{k}^{*})+ \sum_{i,j} \frac{\hbar^{2}}{2}(k_{i}-k_{i}^{*})m^{*-1}_{ij}(k_{j}-k_{j}^{*})$$
+
+
+
+
+
+
+
 
 
 因为电子就大概在$\vec{r}$，所以当$\vec{r}$随时间演化时，电子大概也在跟着移动。在每个时间点必须遵守能量守恒。例如在静电场中，必须有：
