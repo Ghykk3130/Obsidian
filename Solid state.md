@@ -624,16 +624,40 @@ $$\psi=\sum_{\vec{k}}g(\vec{k})\psi_{n,\vec{k}}e^{- \frac{i}{\hbar}\epsilon_{n}(
 
 # 5.2 Current conduction
 
-在任意温度下，我们可以考虑一个band $\epsilon_{n}(\vec{k})$中的平均电流密度。显然：
+在任意温度下，我们可以考虑一个band $\epsilon_{n}(\vec{k})$在FBZ中的平均电流密度。显然：
 $$\begin{align}
-\vec{j} & =\sum_{\vec{k}}\langle n_{\vec{k}}\rangle e \vec{v}
+\vec{j} & = \frac{1}{V} \sum_{\vec{k}\in \text{FBZ}}\langle n_{\vec{k}}\rangle e \vec{v}
 \end{align}$$
 因为电子的spin具有2-fold degeneracy，我们有：
 $$\langle n_{\vec{k}}\rangle= \frac{2}{\mathcal{z}^{-1}e^{\beta\epsilon_{n}(\vec{k})}+1}$$
 
-
 >[!Note] Proposition 1
 >At $T=0K$, the 
+## Proof.
+我们有：
+$$\begin{align}
+\vec{j} & = \frac{2}{V} \sum_{\vec{k}\in \text{FBZ}} \frac{1}{\mathcal{z}^{-1}e^{\beta\epsilon_{n}(\vec{k})}+1} e \frac{1}{\hbar} \frac{\partial\epsilon_{n}(\vec{k})}{\partial \vec{k}}  \\
+\end{align}$$
+我们用积分估计求和。转换测度：
+$$\begin{align}
+\sum_{\vec{k}\in \text{FBZ}} & = \sum_{n_{1},n_{2},n_{3}\text{ such that }\vec{k}\in \text{FBZ}} \Delta n_{1}\Delta n_{2}\Delta n_{3} \\
+ & =  \left( \frac{L}{2\pi} \right)^{3} \sum_{k_{1},k_{2},k_{3}\text{ such that }\vec{k}\in \text{FBZ}} \Delta k_{1}\Delta k_{2}\Delta k_{3} \\
+ & \approx\left(  \frac{L}{2\pi} \right)^{3} \int_{\text{FBZ}}d^{3}k \\
+ & = \frac{V}{(2\pi)^{3}}\int_{\text{FBZ}}d^{3}k \\
+\end{align}$$
+所以我们需要积分：
+$$\begin{align}
+\vec{j} & = \frac{2}{\hbar(2\pi)^{3}}\int_{\text{FBZ}} d^{3}k \frac{1}{\mathcal{z}^{-1}e^{\beta\epsilon_{n}(\vec{k})}+1} \frac{\partial\epsilon_{n}(\vec{k})}{\partial \vec{k}} 
+\end{align}$$
+在$T=0K$，只要在Fermi surface以内，我们就有：
+$$\mathcal{z}^{-1}e^{\beta\epsilon_{n}(\vec{k})}=e^{\beta(\epsilon_{n}(\vec{k})-\mu)}=0$$
+所以我们有：
+$$\begin{align}
+\vec{j}= \frac{2}{2(2\pi)^{3}}\int_{\text{FBZ}}d^{3}k \frac{\partial\epsilon_{n}(\vec{k})}{\partial \vec{k}}
+\end{align}$$
+因为$\epsilon_{n}(\vec{k})=\epsilon_{n}(\vec{k}+\vec{K})$，所以$\epsilon_{n}(\vec{k})$在FBZ中是periodic的。于是$\frac{\partial\epsilon_{n}(\vec{k})}{\partial \vec{k}}$也在FBZ中periodic。所以积分出来是零。
+>[!Right]
+>$\blacksquare$
 
 
 
