@@ -632,7 +632,9 @@ $$\begin{align}
 $$\langle n_{\vec{k}}\rangle= \frac{2}{\mathcal{z}^{-1}e^{\beta\epsilon_{n}(\vec{k})}+1}$$
 
 >[!Note] Proposition 1
->At $T=0K$, the 
+>A completely filled band contributes no current.
+## Remark
+By completely filled, I mean $\langle n_{\vec{k}}\rangle=1$. By contributes, I mean the total current density in this band from the FBZ.
 ## Proof.
 我们有：
 $$\begin{align}
@@ -649,17 +651,28 @@ $$\begin{align}
 $$\begin{align}
 \vec{j} & = \frac{2}{\hbar(2\pi)^{3}}\int_{\text{FBZ}} d^{3}k \frac{1}{\mathcal{z}^{-1}e^{\beta\epsilon_{n}(\vec{k})}+1} \frac{\partial\epsilon_{n}(\vec{k})}{\partial \vec{k}} 
 \end{align}$$
-在$T=0K$，只要在Fermi surface以内，我们就有：
-$$\mathcal{z}^{-1}e^{\beta\epsilon_{n}(\vec{k})}=e^{\beta(\epsilon_{n}(\vec{k})-\mu)}=0$$
-所以我们有：
+这个积分一般不是零。但是若这个能带完全充满，我们有：
+$$\frac{1}{\mathcal{z}^{-1}e^{\beta\epsilon_{n}(\vec{k})}+1}=1$$
+则：
 $$\begin{align}
-\vec{j}= \frac{2}{2(2\pi)^{3}}\int_{\text{FBZ}}d^{3}k \frac{\partial\epsilon_{n}(\vec{k})}{\partial \vec{k}}
+\vec{j} & = \frac{2e}{\hbar(2\pi)^{3}}\int_{\text{FBZ}}d^{3}k \frac{\partial\epsilon_{n}(\vec{k})}{\partial \vec{k}} \\
+ & = \frac{2e}{\hbar(2\pi)^{3}}\int_{\text{FBZ}}d^{3}k \partial_{k_{i}}\epsilon_{n}(\vec{k})e_{i}
 \end{align}$$
-因为$\epsilon_{n}(\vec{k})=\epsilon_{n}(\vec{k}+\vec{K})$，所以$\epsilon_{n}(\vec{k})$在FBZ中是periodic的。于是$\frac{\partial\epsilon_{n}(\vec{k})}{\partial \vec{k}}$也在FBZ中periodic。所以积分出来是零。
+运用散度定理则有：
+$$\begin{align}
+ \frac{2e}{\hbar(2\pi)^{3}} \int_{\text{FBZ}} d^{3}k\partial_{k_{i}} \epsilon_{n}(\vec{k})e_{i} & = \frac{2e}{\hbar(2\pi)^{3}} \int_{\partial \text{FBZ}} d\vec{S} \cdot\epsilon_{n}(\vec{k})e_{i}
+\end{align}$$
+
+因为$\epsilon_{n}(\vec{k})=\epsilon_{n}(\vec{k}+\vec{K})$，所以$\epsilon_{n}(\vec{k})$在$\partial \text{FBZ}$的对径点的取值是一样的。又因为这两点处面元$d\vec{S}$负号相反，所以积分刚好是零。
 >[!Right]
 >$\blacksquare$
 
+## 5.3 Effective mass tensor
 
+假设$\epsilon_{n}(\vec{k})$存在一个极值点$\vec{k}^{*}$。则：
+$$\begin{align}
+\epsilon_{n}(\vec{k}) & \approx\epsilon_{n}(\vec{k}^{*})+ \sum_{i,j}\frac{1}{2} \frac{\partial^{2}\epsilon_{n}}{\partial k_{i}\partial k_{j}}(k_{i}-k_{i}^{*})(k_{j}-k_{j}^{*})
+\end{align}$$
 
 
 因为电子就大概在$\vec{r}$，所以当$\vec{r}$随时间演化时，电子大概也在跟着移动。在每个时间点必须遵守能量守恒。例如在静电场中，必须有：
