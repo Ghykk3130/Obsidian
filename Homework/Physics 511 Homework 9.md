@@ -117,28 +117,87 @@ $$\begin{align}
 \end{align}$$
 ## b).
 
-The state $\ket{\psi(0)}$ is not an eigenstate of $L_{z}$, since:
-$$\begin{align}
-\bra{\theta,\phi} L_{z}\ket{\psi(0)}  & =-i\hbar \frac{\partial}{\partial \phi} \sqrt{ \frac{3}{4\pi} }\sin \theta \sin \phi \\
- & = -i\hbar \sqrt{ \frac{3}{4\pi} }\sin \theta \cos \phi
-\end{align}$$
-This is not colinear with $\ket{\psi(0)}$. But it's obvious that $\ket{\psi(0)}$ corresponds to $j=1$, since in $a)$ we found:
+ Obviously, $\ket{\psi(0)}$ corresponds to $l=1$, since in $a)$ we found:
 $$L^{2}\ket{\psi(0)} =2\hbar^{2}\ket{\psi(0)} $$
-So $m=-1,0,1$ can be observed.
-
+From spherical harmonics table, I know that:
+$$\langle \theta, \phi\ket{\psi(0)}=  \frac{1}{\sqrt{ 2 }} (Y_{1}^{-1}(\theta,\phi)-Y_{1}^1(\theta,\phi)) $$
+Then:
+$$\ket{\psi(0)} =\frac{1}{\sqrt{ 2 }}(\ket{1,-1} -\ket{1,1} )$$
+So the probability to get $\hbar$ is $\frac{1}{2}$, and the probability to get $- \hbar$ is $\frac{1}{2}$.
 ## c).
 
-Know that under $\ket{\theta,\phi}$ representation:
-$$L_{x}=i\hbar\left( \sin \phi \frac{\partial}{\partial \theta}+\cot \theta \cos \phi \frac{\partial}{\partial \phi} \right)$$
-It's easy to compute:
+From Sakurai 3.17, I know that:
+$$L_{x}=\frac{L_{+}+L_{-}}{2}$$
+Then:
 $$\begin{align}
-\bra{\theta,\phi} L_{x}\ket{\psi(0)}  & =i\hbar\left( \sin \phi \frac{\partial}{\partial \theta}+\cot \theta \cos \phi \frac{\partial}{\partial \phi} \right) \sqrt{ \frac{3}{4\pi} }\sin \theta \cos \phi \\
- & = i\hbar \sqrt{ \frac{3}{4\pi} }(\sin \phi \cos \phi \cos \theta-\sin \phi \cos \phi \cos \theta) \\
- & =0
+L_{x} \frac{1}{\sqrt{ 2 }}(\ket{1,-1} -\ket{1,1} ) & = -\frac{\hbar}{2\sqrt{ 2 }}\ket{1,0} 
 \end{align}$$
-Therefore we must have:
+Then:
 $$\begin{align}
-\langle L_{x}\rangle & = \int_{0}^{\pi}d\theta \sin \theta \int_{0}^{2\pi}d\phi \sqrt{ \frac{3}{4\pi} }\sin \theta \cos \phi i\hbar\left( \sin \phi \frac{\partial}{\partial \theta}+\cot \theta \cos \phi \frac{\partial}{\partial \phi}  \right)\sqrt{ \frac{3}{4\pi} }\sin \theta \cos \phi \\
- & = 0 
+\langle L_{x}\rangle & =- \frac{1}{\sqrt{ 2 }}(\bra{1,-1}+\bra{1,1} ) L_{x} \frac{1}{\sqrt{ 2 }}( \ket{1,-1} +\ket{1,1} ) \\
+ & = 0
 \end{align}$$
+## d).
+We can compute:
+$$\begin{align}
+ & L_{x}\ket{1,1} = \frac{\hbar}{2}\ket{1,0}  \\
+ & L_{x}\ket{1,0} =\frac{\hbar}{2}\ket{1,1}  \\
+ & L_{x}\ket{1,-1} = 0
+\end{align}$$
+Then, in the subspace corresponding to $l=1$, the representation matrix of $L_{x}$ is:
+$$\begin{align}
+L_{x}= \frac{\hbar}{2} \begin{pmatrix}
+0 &  1 & 0 \\
+1 & 0 & 0 \\
+0 & 0 & 0
+\end{pmatrix}
+\end{align}$$
+Consider the eigenequation:
+$$\begin{align}
+ & \begin{vmatrix}
+\lambda & -1 & 0 \\
+-1 & \lambda & 0 \\
+0 & 0 & \lambda
+\end{vmatrix}
+=0 \\
+\implies & \lambda(\lambda+1)(\lambda-1)=0 \\
+\implies & \lambda=0,\pm{1}
+\end{align}$$
+Easy to find that the eigenvectors are:
+$$\ket{1,-1},\frac{1}{\sqrt{ 2 }}(\ket{1,1} +\ket{1,0} ), \frac{1}{\sqrt{ 2 }}(\ket{1,1} -\ket{1,0} ) $$
+respectively.
 
+So the probability to observe $\frac{\hbar}{2}$ is:
+$$\begin{align}
+| \frac{1}{\sqrt{ 2 }}(\bra{1,1} +\bra{1,0}  ) \frac{1}{\sqrt{ 2 }}(-\ket{1,1} +\ket{1,-1} ) |^{2}= \frac{1}{4} \\
+
+\end{align}$$
+The probability to observe $- \frac{\hbar}{2}$ is:
+$$| \frac{1}{\sqrt{ 2 }}(\bra{1,1} -\bra{1,0}  ) \frac{1}{\sqrt{ 2 }}(-\ket{1,1} +\ket{1,-1} ) |^{2}= \frac{1}{4}$$
+The probability to observe $0$ is:
+$$|\bra{1,-1} \frac{1}{\sqrt{ 2 }}(-\ket{{1},1}+\ket{1,-1}  ) |^{2}= \frac{1}{2}$$
+## e).
+We have:
+$$\begin{align}
+ & \left( \frac{L^{2}}{2I}+\omega L_{z} \right)\ket{1,1} = \frac{\hbar^{2}}{I}+\omega \hbar \\
+ & \left( \frac{L^{2}}{2I}+\omega L_{z} \right)\ket{1,-1} = \frac{\hbar^{2}}{I}-\omega \hbar
+\end{align}$$
+Therefore:
+$$\begin{align}
+\ket{\psi(t)}  & = \exp\left( - \frac{i}{\hbar}\left( \frac{L^{2}}{2I}+\omega L_{z} \right) \right) \frac{1}{\sqrt{ 2 }}(-\ket{1,1} +\ket{1,-1} ) \\
+ & = -\frac{1}{\sqrt{ 2 }}\left( \exp\left( -i\left(  \frac{\hbar}{I}+\omega \right)t \right)\ket{1,1} +\exp\left( -i \left(\frac{\hbar}{I}-\omega\right) t\right) \ket{1,-1}\right) 
+\end{align}$$
+Therefore, I must have:
+$$\begin{align}
+\bra{\theta,\phi} \psi(t)\rangle & = -\frac{1}{\sqrt{ 2 }}\exp\left( -i\left(  \frac{\hbar}{I}+\omega \right) t\right)Y_{1}^{1}(\theta,\phi)+ \frac{1}{\sqrt{ 2 }}\exp\left( -i \left(  \frac{\hbar}{I}-\omega \right)t \right)Y_{1}^{-1}(\theta,\phi) \\
+ & = -\frac{1}{4}\sqrt{ \frac{3}{\pi} }\exp\left( -i\left(  \frac{\hbar}{I}+\omega \right)t \right) e^{i\phi}\sin \theta+ \frac{1}{4} \sqrt{ \frac{3}{\pi} }\exp\left( -i\left( \frac{\hbar}{I}-\omega \right)t \right)e^{-i\phi}\sin \theta \\
+ & = \frac{1}{2}\sqrt{ \frac{3}{\pi} }i \exp\left( -i \frac{\hbar}{I}t \right)\sin \theta \sin(\phi-\omega t)
+\end{align}$$
+## f).
+Clealy:
+$$\begin{align}
+L_{x} \ket{\psi(t)}  & =\frac{L_{+}+L_{-}}{2} \left( - \frac{1}{\sqrt{ 2 }}\exp\left( -i\left(  \frac{\hbar}{I}+\omega \right)t \right)\ket{1,1} + \frac{1}{\sqrt{ 2 }}\exp\left( -i \left(  \frac{\hbar}{I}-\omega \right)t \right)\ket{1,-1}  \right) \\
+ & = - \frac{1}{\sqrt{ 2 }}\hbar \exp\left( -i\left( \frac{\hbar}{I}+\omega \right)t \right)\ket{1,0} 
+\end{align}$$
+This state is still orthogonal to $\ket{\psi(t)}$. So:
+$$\bra{\psi(t)} L_{x}\ket{\psi(t)} =0$$
