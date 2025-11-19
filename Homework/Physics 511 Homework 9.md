@@ -115,4 +115,30 @@ $$\begin{align}
  & = \exp\left( - i \frac{\hbar}{I}t \right)\bra{\theta,\phi} \psi(0)\rangle \\
  & = \exp\left( -i \frac{\hbar}{I}t \right) \sqrt{ \frac{3}{4\pi} }\sin \theta \sin \phi
 \end{align}$$
+## b).
+
+The state $\ket{\psi(0)}$ is not an eigenstate of $L_{z}$, since:
+$$\begin{align}
+\bra{\theta,\phi} L_{z}\ket{\psi(0)}  & =-i\hbar \frac{\partial}{\partial \phi} \sqrt{ \frac{3}{4\pi} }\sin \theta \sin \phi \\
+ & = -i\hbar \sqrt{ \frac{3}{4\pi} }\sin \theta \cos \phi
+\end{align}$$
+This is not colinear with $\ket{\psi(0)}$. But it's obvious that $\ket{\psi(0)}$ corresponds to $j=1$, since in $a)$ we found:
+$$L^{2}\ket{\psi(0)} =2\hbar^{2}\ket{\psi(0)} $$
+So $m=-1,0,1$ can be observed.
+
+## c).
+
+Know that under $\ket{\theta,\phi}$ representation:
+$$L_{x}=i\hbar\left( \sin \phi \frac{\partial}{\partial \theta}+\cot \theta \cos \phi \frac{\partial}{\partial \phi} \right)$$
+It's easy to compute:
+$$\begin{align}
+\bra{\theta,\phi} L_{x}\ket{\psi(0)}  & =i\hbar\left( \sin \phi \frac{\partial}{\partial \theta}+\cot \theta \cos \phi \frac{\partial}{\partial \phi} \right) \sqrt{ \frac{3}{4\pi} }\sin \theta \cos \phi \\
+ & = i\hbar \sqrt{ \frac{3}{4\pi} }(\sin \phi \cos \phi \cos \theta-\sin \phi \cos \phi \cos \theta) \\
+ & =0
+\end{align}$$
+Therefore we must have:
+$$\begin{align}
+\langle L_{x}\rangle & = \int_{0}^{\pi}d\theta \sin \theta \int_{0}^{2\pi}d\phi \sqrt{ \frac{3}{4\pi} }\sin \theta \cos \phi i\hbar\left( \sin \phi \frac{\partial}{\partial \theta}+\cot \theta \cos \phi \frac{\partial}{\partial \phi}  \right)\sqrt{ \frac{3}{4\pi} }\sin \theta \cos \phi \\
+ & = 0 
+\end{align}$$
 
