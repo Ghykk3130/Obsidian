@@ -100,3 +100,19 @@ $$\begin{align}
 \end{align}$$
 # Extra problem
 
+## a).
+
+Know that:
+$$\begin{align}
+\bra{\theta,\phi} L^{2}\ket{\psi(0)}  & = -\hbar^{2}\left(  \frac{1}{\sin \theta} \frac{\partial}{\partial \theta}\left( \sin \theta \frac{\partial}{\partial \theta} \right)+ \frac{1}{\sin ^{2}\theta} \frac{\partial^{2}}{\partial \phi^{2}} \right) \sqrt{ \frac{3}{4\pi} }\sin \theta \sin \phi \\
+ & = -\hbar^{2} \sqrt{ \frac{3}{4\pi} }\left( \frac{\cos ^{2}\theta}{\sin \theta}\sin \phi-\sin \theta \sin \phi- \frac{\sin \phi}{\sin \theta} \right) \\
+ & = 2\hbar^{2} \sqrt{ \frac{3}{4\pi} }\sin \theta \sin \phi \\
+ & =  2\hbar^{2}\bra{\theta,\phi} \psi(0)\rangle
+\end{align}$$
+Therefore, I have:
+$$\begin{align}
+\bra{\theta,\phi} \psi(t)\rangle & =\bra{\theta,\phi} \exp\left( - \frac{i}{\hbar} \frac{L^{2}}{2I}t \right) \ket{\psi(0)}  \\
+ & = \exp\left( - i \frac{\hbar}{I}t \right)\bra{\theta,\phi} \psi(0)\rangle \\
+ & = \exp\left( -i \frac{\hbar}{I}t \right) \sqrt{ \frac{3}{4\pi} }\sin \theta \sin \phi
+\end{align}$$
+
