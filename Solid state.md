@@ -680,6 +680,11 @@ $$\begin{align}
 
 那么，能量的展开可以写为：
 $$\epsilon_{n}(\vec{k})=\epsilon_{n}(\vec{k}^{*})+ \sum_{i,j} \frac{\hbar^{2}}{2}(k_{i}-k_{i}^{*})m^{*-1}_{ij}(k_{j}-k_{j}^{*})$$
+我们可以计算出$m_{ij}^{*-1}$。
+
+>[!Note] Idea 1
+>我们遇到$\epsilon_{n}(\vec{k})$对于$\vec{k}$的任意阶导数时，可以使用perturbation计算。
+
 
 
 
