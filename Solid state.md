@@ -711,6 +711,12 @@ $$\begin{align}
 >[!Note] Definition 1
 >$$m_{ij}^{*}= \frac{1}{\hbar^{2}}\left( \frac{\partial^{2}\epsilon_{n}}{\partial k_{i}\partial k_{j}} \right)^{-1}$$
 
+我们可以计算effective mass tensor的逆：
+
+>[!Note] Proposition 1
+>$$m_{ij}^{*-1}=  \frac{\delta_{ij}}{m}+ \frac{1}{m^{2}} \sum_{n^{'}\neq n} \frac{2}{\epsilon_{n}(\vec{k})-\epsilon_{n^{'}}(\vec{k})}(\bra{\psi_{n^{'},\vec{k}}} p_{i}\ket{\psi_{n,\vec{k}}} \bra{\psi_{n,\vec{k}}} p_{j}\ket{\psi_{n^{'},\vec{k}}} )$$
+## Proof.
+
 那么，能量的展开可以写为：
 $$\epsilon_{n}(\vec{k})=\epsilon_{n}(\vec{k}^{*})+ \sum_{i,j} \frac{\hbar^{2}}{2}(k_{i}-k_{i}^{*})m^{*-1}_{ij}(k_{j}-k_{j}^{*})$$
 我们可以计算出$m_{ij}^{*-1}$。
@@ -728,7 +734,7 @@ $$H_{\vec{k}+d\vec{k}}\approx H_{\vec{k}}+ \sum_{i}\frac{\partial H_{\vec{k}}}{\
 
 具体地，$\sum_{i} \frac{\partial H_{\vec{k}}}{\partial k_{i}}dk_{i}$引起的能量微扰为：
 $$\begin{align}
- & \text{second order perturbation}=\sum_{n^{'}\neq n} \frac{|\bra{\psi_{n^{'},\vec{k}}} \sum_{i}\frac{\partial H_{\vec{k}}}{\partial k_{i}}dk_{i}\ket{\psi_{n,\vec{k}}} |^{2} }{\epsilon_{n^{'}}(\vec{k})-\epsilon_{n}(\vec{k})} 
+ & \text{second order perturbation}=\sum_{n^{'}\neq n} \frac{|\bra{\psi_{n^{'},\vec{k}}} \sum_{i}\frac{\partial H_{\vec{k}}}{\partial k_{i}}dk_{i}\ket{\psi_{n^{},\vec{k}}} |^{2} }{\epsilon_{n^{}}(\vec{k})-\epsilon_{n^{'}}(\vec{k})} 
 \end{align}$$
 $\frac{1}{2}\sum_{i,j} \frac{\partial^{2}H_{\vec{k}}}{\partial k_{i}\partial k_{j}}dk_{i}dk_{j}$引起的能量微扰为：
 $$\begin{align}
@@ -736,12 +742,24 @@ $$\begin{align}
 \end{align}$$
 所以两个微扰加起来，$dk_{i}dk_{j}$的系数为：
 $$\begin{align}
- & \sum_{n^{'}\neq n} \frac{1}{\epsilon_{n^{'}}(\vec{k})-\epsilon_{n}(\vec{k})}\left( \bra{\psi_{n^{'},\vec{k}}} \frac{\partial H_{\vec{k}}}{\partial k_{i}}\ket{\psi_{n},\vec{k}}\bra{\psi_{n,\vec{k}}} \frac{\partial H_{\vec{k}}}{\partial k_{j}} \ket{\psi_{n^{'},\vec{k}}}+ \bra{\psi_{n^{'},\vec{k}}} \frac{\partial H_{\vec{k}}}{\partial k_{j}}\ket{\psi_{n},\vec{k}}\bra{\psi_{n,\vec{k}}} \frac{\partial H_{\vec{k}}}{\partial k_{i}} \ket{\psi_{n^{'},\vec{k}}}   \right) \\
- & +\bra{\psi_{n,\vec{k}}} \frac{1}{2} \frac{\partial^{2}H_{\vec{k}}}{\partial k_{i}\partial k_{j}}\ket{\psi_{n,\vec{k}}}+\bra{\psi_{n,\vec{k}}} \frac{1}{2} \frac{\partial^{2}H_{\vec{k}}}{\partial k_{j}\partial k_{i}}\ket{\psi_{n,\vec{k}}}  \\
- & = \sum_{n^{'}\neq n} \frac{2}{\epsilon_{n^{'}}(\vec{k})-\epsilon_{n}(\vec{k})}\mathrm{Re}\left(\bra{\psi_{n^{'},\vec{k}}} \frac{\partial H_{\vec{k}}}{\partial k_{i}}\ket{\psi_{n},\vec{k}}\bra{\psi_{n,\vec{k}}} \frac{\partial H_{\vec{k}}}{\partial k_{j}} \ket{\psi_{n^{'},\vec{k}}}\right) \\
- & + \bra{\psi_{n,\vec{k}}}  \frac{\partial^{2}H_{\vec{k}}}{\partial k_{i}\partial k_{j} }\ket{\psi_{n,\vec{k}}} 
+ & \sum_{n^{'}\neq n} \frac{1}{\epsilon_{n^{}}(\vec{k})-\epsilon_{n^{'}}(\vec{k})}\left( \bra{\psi_{n^{'},\vec{k}}} \frac{\partial H_{\vec{k}}}{\partial k_{i}}\ket{\psi_{n,\vec{k}}}\bra{\psi_{n,\vec{k}}} \frac{\partial H_{\vec{k}}}{\partial k_{j}} \ket{\psi_{n^{'},\vec{k}}} \right) \\
+ & +\bra{\psi_{n,\vec{k}}} \frac{1}{2} \frac{\partial^{2}H_{\vec{k}}}{\partial k_{i}\partial k_{j}}\ket{\psi_{n,\vec{k}}}  \\
+ 
 \end{align}$$
-
+我们知道：
+$$\frac{\partial H_{\vec{k}}}{\partial k_{i}}=\frac{\hbar^{2}}{m}k_{i}+ \frac{\hbar}{m}p_{i}$$
+所以$dk_{i}dk_{j}$系数为：
+$$\begin{align}
+ & \sum_{n^{'}\neq n} \frac{1}{\epsilon_{n^{}}(\vec{k})-\epsilon_{n}^{'}(\vec{k}) } \left(  \frac{\hbar^{2}}{m^{2}} \bra{\psi_{n^{'},\vec{k}}} p_{i}\ket{\psi_{n,\vec{k}}}\bra{\psi_{n,\vec{k}}} p_{j}\ket{\psi_{n^{'},\vec{k}}}    \right) + \frac{\hbar^{2}}{m} \frac{1}{2}\delta_{ij}
+\end{align}$$
+而OTOH，能量展开中$dk_{i}dk_{j}$系数为：
+$$ \frac{1}{2} \frac{\partial^{2}\epsilon_{n}}{\partial k_{i}\partial k_{j}}$$
+所以：
+$$\frac{\partial^{2}\epsilon_{n}}{\partial k_{i}\partial k_{j}}=\sum_{n^{'}\neq n} \frac{2}{\epsilon_{n^{}}(\vec{k})-\epsilon_{n^{'}}(\vec{k}) } \left(  \frac{\hbar^{2}}{m^{2}} \bra{\psi_{n^{'},\vec{k}}} p_{i}\ket{\psi_{n,\vec{k}}}\bra{\psi_{n,\vec{k}}} p_{j}\ket{\psi_{n^{'},\vec{k}}}  \right) + \frac{\hbar^{2}}{m} \delta_{ij}$$
+所以effective mass tensor的逆为：
+$$m_{ij}^{*-1}= \frac{1}{\hbar^{2}} \frac{\partial^{2}\epsilon_{n}}{\partial k_{i}\partial k_{j}}= \frac{\delta_{ij}}{m}+ \frac{1}{m^{2}} \sum_{n^{'}\neq n} \frac{2}{\epsilon_{n}(\vec{k})-\epsilon_{n^{'}}(\vec{k})}(\bra{\psi_{n^{'},\vec{k}}} p_{i}\ket{\psi_{n,\vec{k}}} \bra{\psi_{n,\vec{k}}} p_{j}\ket{\psi_{n^{'},\vec{k}}} )$$
+>[!Right]
+>$\blacksquare$
 
 
 
