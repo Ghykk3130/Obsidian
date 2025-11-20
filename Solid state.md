@@ -760,34 +760,45 @@ $$\frac{\partial^{2}\epsilon_{n}}{\partial k_{i}\partial k_{j}}=\sum_{n^{'}\neq 
 $$m_{ij}^{*-1}= \frac{1}{\hbar^{2}} \frac{\partial^{2}\epsilon_{n}}{\partial k_{i}\partial k_{j}}= \frac{\delta_{ij}}{m}+ \frac{1}{m^{2}} \sum_{n^{'}\neq n} \frac{2}{\epsilon_{n}(\vec{k})-\epsilon_{n^{'}}(\vec{k})}(\bra{\psi_{n^{'},\vec{k}}} p_{i}\ket{\psi_{n,\vec{k}}} \bra{\psi_{n,\vec{k}}} p_{j}\ket{\psi_{n^{'},\vec{k}}} )$$
 >[!Right]
 >$\blacksquare$
+>
+## 3.2.4 Semiclassical equation of motion
 
 
-
-
-
-
-
-
-因为电子就大概在$\vec{r}$，所以当$\vec{r}$随时间演化时，电子大概也在跟着移动。在每个时间点必须遵守能量守恒。例如在静电场中，必须有：
-$$\epsilon_{n}(\vec{k}(t))+e\phi(\vec{r}(t))=const.$$
-我们假设电子不会在不同的额能带之间跳跃，即$n$是运动积分。那么对于两边微分则有：
+因为电子就大概在$\vec{r}$，所以当$\vec{r}$随时间演化时，电子大概也在跟着移动。考虑存在一个势能$V(\vec{r})$。则在每个时间点必须遵守能量守恒：
 $$\begin{align}
- & \nabla_{\vec{k}}\epsilon_{n} \cdot   \dot{\vec{k}}  +e \nabla \phi \cdot  \dot{\vec{r}}=0 \\
-\implies & \hbar  \dot{\vec{r}}\cdot  \dot{\vec{k}}+e\nabla \phi \cdot  \dot{\vec{r}}=0 \\
-\implies   &  \dot{\vec{r}}\cdot( \hbar  \dot{\vec{k}}+e\nabla \phi)=0,\forall t
+ & \frac{d}{dt}(\epsilon_{n}(\vec{k}(t))+V(\vec{r}(t)))=0 \\
+\implies &  \frac{\partial\epsilon_{n}}{\partial \vec{k}}\cdot  \dot{\vec{k}}+ \frac{\partial V}{\partial \vec{r}}  \dot{\vec{r}}=0 \\
+\implies & \frac{\partial\epsilon_{n}}{\partial \vec{k}}\cdot  \dot{\vec{k}}+ (-\vec{F})\cdot \frac{1}{\hbar} \frac{\partial\epsilon_{n}}{\partial \vec{k}}=0 \\
+\implies & \frac{\partial\epsilon_{n}}{\partial \vec{k}}\cdot(\hbar\dot{\vec{k}}-\vec{F})=0 \\
+
 \end{align}$$
-那么可以要求：
-$$\hbar  \dot{\vec{k}}+e \nabla \phi=0$$
-则：
-$$\hbar  \dot{\vec{k}}=-e\nabla \phi=e\vec{E}$$
-更一般的，我们宣称：
-$$\hbar  \dot{\vec{k}}=e\left( \vec{E}+ \frac{1}{c}  \dot{\vec{r}}\times \vec{H} \right)$$
+注意上述过程，我们假设电子不会在不同的额能带之间跳跃，即$n$是运动积分。
+若存在：
+$$\hbar  \dot{\vec{k}} =\vec{F}$$
+则上式成立。
+
 >[!Note] Postulate
 >In the semiclassical model of electron motion, we assume:
 >$$\begin{align}
- & \dot{\vec{r}}= \frac{1}{\hbar}\nabla_{\vec{k}}\epsilon_{n} \\
- & \hbar  \dot{\vec{k}}=e\left( \vec{E}+ \frac{1}{c}  \dot{\vec{r}}\times \vec{H} \right) \\
+ & \vec{v}= \frac{1}{\hbar} \frac{\partial\epsilon_{n}}{\partial \vec{k}} \\
+ & \hbar  \dot{\vec{k}}=\vec{F} \\
  & \text{number of electrons around }\vec{k}= \frac{1}{\mathcal{z}^{-1}e^{\beta\epsilon_{n}(\vec{k})}+1}d^{3}k\end{align}$$
 
 
+>[!Note] Proposition 1
+>$$\overset{\leftrightarrow}{m}^{*}\cdot \frac{d\vec{v}}{dt}=\vec{F}$$
+## Proof.
+$$\begin{align}
+\overset{\leftrightarrow}{m}^{*}\cdot \frac{d\vec{v}}{dt} & =  \left(  \frac{\partial^{2}\epsilon_{n}}{\partial k_{i}\partial k_{j}}\right)^{-1}e_{i}e_{j} \cdot  \dot{v_{l}}e_{l} \\ & = \left( \frac{\partial^{2}\epsilon_{n}}{\partial k_{i}\partial k_{j}} \right)^{-1}e_{i}e_{j} \cdot e_{l} \frac{1}{\hbar} \frac{d}{dt} \frac{\partial\epsilon_{n}}{\partial k_{l}} \\
+ & = \left( \frac{\partial^{2}\epsilon_{n}}{\partial k_{i}\partial k_{j}} \right)^{-1}e_{i}\delta_{jl} \frac{1}{\hbar} \frac{\partial k_{m}}{\partial t} \frac{\partial^{2}\epsilon_{n}}{\partial k_{m}\partial k_{l}} \\
+	 & = \left(  \frac{\partial^{2}\epsilon_{n}}{\partial k_{i}\partial k_{j}} \right)^{-1}e_{i} \frac{1}{\hbar}  \dot{k_{}}_{m} \frac{\partial^{2}\epsilon_{n}}{\partial k_{j}\partial k_{m}} \\
+	 & = \delta_{im}e_{i} \frac{1}{\hbar}  \dot{k}_{m} \\
+	 & = \frac{1}{\hbar}  \dot{k}_{i}e_{i} \\
+	 & = \vec{F}
 
+\end{align}$$
+>[!Right]
+>$\blacksquare$
+
+
+ 
