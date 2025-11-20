@@ -209,12 +209,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Solid state.md",
+                "file": "Homework/Physics 511 Homework 9.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Solid state"
+              "title": "Physics 511 Homework 9"
             }
           },
           {
@@ -796,6 +796,7 @@
   },
   "active": "63567ea049b8275a",
   "lastOpenFiles": [
+    "Solid state.md",
     "Homework/Physics 511 Homework 9.md",
     "球谐函数与旋转表示.md",
     "Clebsch-Gordan系数.md",
@@ -819,7 +820,6 @@
     "对偶矢量空间与伴随算子.md",
     "平动的表示.md",
     "Lie Group.md",
-    "Solid state.md",
     "Hilbert空间.md",
     "系综.md",
     "黑体辐射.md",
