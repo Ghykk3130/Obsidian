@@ -1,4 +1,21 @@
+# Table of Contents
+# 1. Lattice structure
+1.1 [[Solid state#^d5e805|Reciprocal lattice]]
+1.2 [[Solid state#^84395a|Brillouin zone]]
+# 2. Band structure
+2.1 [[Solid state#^e9a184|Bloch's theorem]]
+2.2 [[Solid state#^384a0c|Band structure]]
+2.3 [[Solid state#^790c0e|Density of levels]]
+2.4 [[Solid state#^48c77b|Tight-binding approximation]]
+
+# 3. Models of electronic structure
+3.1 [[Solid state#^c01609|Drude model]]
+3.2 [[Solid state#^999493|Semiclassical model]]
+
+
 # 1.1 Reciprocal lattice 
+
+^d5e805
 
 (c.f. Mermin chapter 5)
 
@@ -124,6 +141,9 @@ $$\begin{align}
 >[!Right]
 >$\blacksquare$
 # 1.2 Brillouin zone
+
+^84395a
+
 (c.f. Mermin chapter 5)
 
 >[!Note] Definition 1
@@ -150,6 +170,8 @@ $$\begin{align}
 
 
 # 2.1 Bloch's theorem
+
+^e9a184
 
 考虑一个Bravais晶体$\{ \vec{R} \}$。这个晶体中的势能一定满足：
 $$U(\vec{r}+\vec{R})=U(\vec{r})$$
@@ -241,6 +263,8 @@ $$x_{i}= \frac{n_{i}}{N_{i}},\text{for some }n_{i}\in \mathbb{Z}$$
 >[!Right]
 >$\blacksquare$
 # 2.2 Band structure
+
+^384a0c
 
 我们已经知道，晶体内电子波函数存在解$\psi_{}(\vec{r})=e^{i\vec{k}\cdot \vec{r}}u_{}(\vec{r})$。我们可以根据Schrodinger方程得到$u(\vec{r}e)$需要满足的方程：
 
@@ -340,6 +364,8 @@ $$- \frac{\hbar^{2}}{2m}\nabla^{2}\psi=\epsilon(\vec{k})\psi$$
  
 # 2.3 Density of levels
 
+^790c0e
+
 我们经常要计算如下形式的求和：
 $$2\sum_{n,\vec{k}}Q(\vec{k})$$
 ## Ex:
@@ -371,11 +397,13 @@ $$\begin{align}
 >[!Note] Definition 1
 >Define the density of levels associated with the band $\epsilon_{n}$: $g(\epsilon)= \frac{1}{4\pi^{3}}\int \frac{dS}{|\nabla\epsilon_{n}|}$
 
-# 3.1 Tight-binding approximation
+# 2.4 Tight-binding approximation
+
+^48c77b
 
 考虑一个晶体。对于晶体中的一个电子，存在Hamiltonian $H$。我们假设，这个Hamiltonian可以拆为一个isolated原子的Hamiltonina $H_{at}$，和一个一堆原子组合在一起，形成的势能差异$\Delta U$。
 
-## 3.1.1 Naive tight-binding approximation
+## 2.4.1 Naive tight-binding approximation
 
 我们假设naive tight-binding model：
 - 电子是tight-binding的，即电子的运动足够局域，以至于波函数$\psi_{n,\vec{k}}(\vec{r})$在$\vec{r}$较大（假设原子核在原点）时，几乎为零。
@@ -410,7 +438,7 @@ $$\begin{align}
 所以naive tight-binding model中波函数为：
 $$\psi_{n,\vec{k}}(\vec{r})=\sum_{\vec{R}}\sum_{\text{degenerate states of }\psi_{n}} e^{i\vec{k}\cdot \vec{R}}\psi_{n}(\vec{r}-\vec{R})$$
 但是这种approximation太过于粗糙，因为$\psi_{n,\vec{k}}$得到的能量是$E_{n}$ independent of $\vec{k}$。它不足以揭示band structure。所以进一步有：
-## 3.1.2 Tight-binding approximation
+## 2.4.2 Tight-binding approximation
 
 假设tight-binding model：
 - 电子是tight-binding的，即电子的运动足够局域，以至于波函数$\psi_{n,\vec{k}}(\vec{r})$在$\vec{r}$较大（假设原子核在原点）时，几乎为零。
@@ -458,7 +486,9 @@ $$\begin{align}
 在多电子体系中，一般$E_{ns}\neq E_{np}$。只是氢原子里面它们一样。
 
 
-# 4. Drude model
+# 3.1 Drude model
+
+^c01609
 
 考虑这样一种电子运动的经典模型：
 - 电子之间无碰撞和库伦相互作用。电子与离子核之间无库伦相互作用·。
@@ -474,7 +504,7 @@ $$\begin{align}
 >[!Note] Proposition
 >The equation of motion of electrons under Drude model is:
 >$$\frac{d\vec{p}}{dt}=- \frac{\vec{p}}{\tau}+\vec{f}$$
-## 4.1 电子对电场的response
+## 3.1.1 电子对电场的response
 
 下面研究金属中电子在电场下的response。考虑电场的Fourier分解：
 $$\vec{E}(\vec{r},t)=\int d^{3}kd\omega \vec{E}(\vec{k},\omega)e^{i(\vec{k}\cdot \vec{r}-\omega t)}$$
@@ -498,7 +528,7 @@ $$\vec{j}(\vec{k},\omega)= \frac{ne^{2}}{m} \frac{\vec{E}(\vec{k},\omega)}{\frac
 定义$\sigma(\omega)= \frac{ne^{2}}{m} \frac{1}{\frac{1}{\tau}-i\omega}$，则：
 $$\vec{j}(\vec{k},\omega)=\sigma(\omega)\vec{E}(\vec{k},\omega)$$
 
-## 4.2 Dielectric constant
+## 3.1.2 Dielectric constant
 
 考虑方程：
 $$\begin{align}
@@ -557,11 +587,14 @@ $$\begin{align}
 
 
 
-# 5. Semiclassical model
+# 3.2 Semiclassical model
+
+^999493
+
 (c.f. Mermin chapter 12)
 
-## 5.1 Semiclassical velocity
-### 5.1.1 群速理解
+## 3.2.1 Semiclassical velocity
+### 3.2.1.1群速理解
 
 考虑一个periodic potential中的电子。它的波函数可以是Bloch态的叠加。（容易验证，这个态是一个Bloch态。）我们写：
 $$\psi(\vec{r},t)=\sum_{\vec{k}}g(\vec{k})\psi_{n,\vec{k}}(\vec{r})\exp\left( - \frac{i}{\hbar}\epsilon_{n}(\vec{k})t \right)$$
@@ -572,7 +605,7 @@ $$v_{g}= \frac{1}{\hbar} \nabla_{\vec{k}}\epsilon_{n}$$
 
 因为波包足够小，我们给波包assign一个大概的位置$\vec{r}$。显然波包的这个大概位置只能大概以群速运动。则要求：
 $$\dot{\vec{r}}=\frac{1}{\hbar}\nabla_{\vec{k}}\epsilon_{n}$$
-### 5.1.2 平均速度理解
+### 3.2.1.2 平均速度理解
 
 考虑一个Bloch态$\psi_{n,\vec{k}}(\vec{r})=e^{i\vec{k}\cdot \vec{r}}u_{n,\vec{k}}(\vec{r})$
 
@@ -622,7 +655,7 @@ Then done。
 $$\psi=\sum_{\vec{k}}g(\vec{k})\psi_{n,\vec{k}}e^{- \frac{i}{\hbar}\epsilon_{n}(\vec{k})}$$
 如果波包足够局域，$\vec{k}$集中在$\vec{k}_{c}$附近，那么在每个$\ket{\psi_{n,\vec{k}}}$平均下速度都大概是$\frac{1}{\hbar} \frac{\partial\epsilon_{n}}{\partial \vec{k}}$。
 
-# 5.2 Current conduction
+# 3.2.2 Current conduction
 
 在任意温度下，我们可以考虑一个band $\epsilon_{n}(\vec{k})$在FBZ中的平均电流密度。显然：
 $$\begin{align}
@@ -667,7 +700,7 @@ $$\begin{align}
 >[!Right]
 >$\blacksquare$
 
-## 5.3 Effective mass tensor
+## 3.2.3 Effective mass tensor
 
 假设$\epsilon_{n}(\vec{k})$存在一个极值点$\vec{k}^{*}$。则：
 $$\begin{align}
@@ -685,6 +718,29 @@ $$\epsilon_{n}(\vec{k})=\epsilon_{n}(\vec{k}^{*})+ \sum_{i,j} \frac{\hbar^{2}}{2
 >[!Note] Idea 1
 >我们遇到$\epsilon_{n}(\vec{k})$对于$\vec{k}$的任意阶导数时，可以使用perturbation计算。
 
+考虑能量展开到二阶：
+$$\epsilon_{n}(\vec{k}+d\vec{k})=\epsilon_{n}(\vec{k})+ \sum_{i} \frac{\partial\epsilon_{n}}{\partial k_{i}}dk_{i}+ \frac{1}{2}\sum_{i,j} \frac{\partial^{2}\epsilon_{n}}{\partial k_{i}\partial k_{j}}dk_{i}dk_{j}$$
+我们想要计算$\frac{\partial^{2}\epsilon_{n}}{\partial k_{i}\partial k_{j}}$。我们知道，若将$H_{\vec{k}+d\vec{k}}-H_{\vec{k}}$看作微扰，则这个微扰也会引起同样的能量变化。
+
+因为微扰的小量的阶数应当相对应，我们需要考虑$\mathcal{O}(d^{2}k)$的微扰。我们将Hamiltonian微扰展开到二阶：
+$$H_{\vec{k}+d\vec{k}}\approx H_{\vec{k}}+ \sum_{i}\frac{\partial H_{\vec{k}}}{\partial k_{i}} dk_{i}+ \frac{1}{2} \sum_{i,j} \frac{\partial^{2}H_{\vec{k}}}{\partial k_{i}\partial k_{j}}dk_{i}dk_{j}$$
+则$\mathcal{O}(d^{2}k)$微扰可以来自$\sum_{i} \frac{\partial H_{\vec{k}}}{\partial k_{i}}dk_{i}$的二阶微扰，也可以来自$\frac{1}{2}\sum_{i,j} \frac{\partial^{2}H_{\vec{k}}}{\partial k_{i}\partial k_{j}}dk_{i}dk_{j}$的一阶微扰。
+
+具体地，$\sum_{i} \frac{\partial H_{\vec{k}}}{\partial k_{i}}dk_{i}$引起的能量微扰为：
+$$\begin{align}
+ & \text{second order perturbation}=\sum_{n^{'}\neq n} \frac{|\bra{\psi_{n^{'},\vec{k}}} \sum_{i}\frac{\partial H_{\vec{k}}}{\partial k_{i}}dk_{i}\ket{\psi_{n,\vec{k}}} |^{2} }{\epsilon_{n^{'}}(\vec{k})-\epsilon_{n}(\vec{k})} 
+\end{align}$$
+$\frac{1}{2}\sum_{i,j} \frac{\partial^{2}H_{\vec{k}}}{\partial k_{i}\partial k_{j}}dk_{i}dk_{j}$引起的能量微扰为：
+$$\begin{align}
+\text{first order perturbation}= \bra{\psi_{n,\vec{k}}} \frac{1}{2}\sum_{i,j} \frac{\partial^{2}H_{\vec{k}}}{\partial k_{i}\partial k_{j}}dk_{i}dk_{j}\ket{\psi_{n,\vec{k}}} 
+\end{align}$$
+所以两个微扰加起来，$dk_{i}dk_{j}$的系数为：
+$$\begin{align}
+ & \sum_{n^{'}\neq n} \frac{1}{\epsilon_{n^{'}}(\vec{k})-\epsilon_{n}(\vec{k})}\left( \bra{\psi_{n^{'},\vec{k}}} \frac{\partial H_{\vec{k}}}{\partial k_{i}}\ket{\psi_{n},\vec{k}}\bra{\psi_{n,\vec{k}}} \frac{\partial H_{\vec{k}}}{\partial k_{j}} \ket{\psi_{n^{'},\vec{k}}}+ \bra{\psi_{n^{'},\vec{k}}} \frac{\partial H_{\vec{k}}}{\partial k_{j}}\ket{\psi_{n},\vec{k}}\bra{\psi_{n,\vec{k}}} \frac{\partial H_{\vec{k}}}{\partial k_{i}} \ket{\psi_{n^{'},\vec{k}}}   \right) \\
+ & +\bra{\psi_{n,\vec{k}}} \frac{1}{2} \frac{\partial^{2}H_{\vec{k}}}{\partial k_{i}\partial k_{j}}\ket{\psi_{n,\vec{k}}}+\bra{\psi_{n,\vec{k}}} \frac{1}{2} \frac{\partial^{2}H_{\vec{k}}}{\partial k_{j}\partial k_{i}}\ket{\psi_{n,\vec{k}}}  \\
+ & = \sum_{n^{'}\neq n} \frac{2}{\epsilon_{n^{'}}(\vec{k})-\epsilon_{n}(\vec{k})}\mathrm{Re}\left(\bra{\psi_{n^{'},\vec{k}}} \frac{\partial H_{\vec{k}}}{\partial k_{i}}\ket{\psi_{n},\vec{k}}\bra{\psi_{n,\vec{k}}} \frac{\partial H_{\vec{k}}}{\partial k_{j}} \ket{\psi_{n^{'},\vec{k}}}\right) \\
+ & + \bra{\psi_{n,\vec{k}}}  \frac{\partial^{2}H_{\vec{k}}}{\partial k_{i}\partial k_{j} }\ket{\psi_{n,\vec{k}}} 
+\end{align}$$
 
 
 

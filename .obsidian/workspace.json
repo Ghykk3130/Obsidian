@@ -209,12 +209,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Homework/Physics 511 Homework 9.md",
+                "file": "Solid state.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Physics 511 Homework 9"
+              "title": "Solid state"
             }
           },
           {
@@ -796,6 +796,7 @@
   },
   "active": "63567ea049b8275a",
   "lastOpenFiles": [
+    "群论.md",
     "Solid state.md",
     "Homework/Physics 511 Homework 9.md",
     "球谐函数与旋转表示.md",
@@ -814,7 +815,6 @@
     "热力学平衡.md",
     "Pictures/31c55fba2a72bf93689505242fc94df3.jpg",
     "转动的表示.md",
-    "群论.md",
     "生成湮灭算符与角动量.md",
     "Bose-Einstein statistics与BEC.md",
     "对偶矢量空间与伴随算子.md",
