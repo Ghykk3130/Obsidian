@@ -166,8 +166,20 @@ $$\begin{align}
 <img src="6b0c21b0026bf8fe35c89d383fe222cf 1.jpg" width="400">
 </div>
 
-
-
+>[!Note] Proposition 2
+>FBZ is symmetric with respect to the origin. That means $\vec{k}\in \text{FBZ}\implies-\vec{k}\in \text{FBZ}$
+## Proof.
+取$\vec{k}\in \text{FBZ}$，则：
+$$|\vec{k}|\leq |\vec{K}-\vec{k}|,\forall \vec{K}\in \text{Bravais lattice}$$
+我们取$\vec{K}_{min}$ such that:
+$$|\vec{K}_{min}-\vec{k}|\leq |\vec{K}-\vec{k}|,\forall \vec{K}$$
+则有：
+$$|\vec{K}_{min}-\vec{k}|\leq |-\vec{K}-\vec{k}|=|\vec{K}+\vec{k}|,\forall \vec{K}$$
+于是：
+$$|-\vec{k}|=|\vec{k}|\leq |\vec{K}_{min}-\vec{k}|\leq |\vec{K}+\vec{k}|,\forall \vec{K}$$
+于是$\vec{k}\in \text{FBZ}$。
+>[!Right]
+>$\blacksquare$
 
 # 2.1 Bloch's theorem
 
