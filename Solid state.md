@@ -168,6 +168,8 @@ $$\begin{align}
 
 >[!Note] Proposition 2
 >FBZ is symmetric with respect to the origin. That means $\vec{k}\in \text{FBZ}\implies-\vec{k}\in \text{FBZ}$
+
+^proposition122
 ## Proof.
 取$\vec{k}\in \text{FBZ}$，则：
 $$|\vec{k}|\leq |\vec{K}-\vec{k}|,\forall \vec{K}\in \text{Bravais lattice}$$
@@ -819,4 +821,64 @@ $$v= \frac{1}{\hbar} \frac{\partial\epsilon_{n}}{\partial k}= \frac{aC}{\hbar}\s
 得到一个震荡的速度。
 
 
- 
+## 3.2.5 Holes
+
+>[!Note] Definition 1
+>We say a band with band structure $\epsilon_{n}(\vec{k})$ is completely filled if 
+>$$\langle n_{\vec{k}}\rangle= \frac{2}{\mathscr{z}^{-1}e^{\beta\epsilon_{n}(\vec{k})}+1}=2,\forall \vec{k}$$
+## Remark
+这等价于$\langle n_{\vec{k}}\rangle =2,\forall \vec{k}\in \text{FBZ}$。因为$\epsilon_{n}(\vec{k}+\vec{K})=\epsilon_{n}(\vec{k})$。我们可以将$\vec{k}$完全规定在FBZ中。
+
+>[!Note] Proposition 1
+>The total $\vec{k}$ of a completely filled band is zero.
+## Proof.
+我们有：
+$$\begin{align}
+\text{total }\vec{k} & =\sum_{\vec{k}\in \text{FBZ}} \langle n_{\vec{k}}\rangle \vec{k} \\
+ & \approx \frac{V}{(2\pi)^{3}}\int_{\text{FBZ}} d^{3}k  2\vec{k}
+\end{align}$$
+由[[Solid state#^proposition122|proposition 1.2.2]]可知，FBZ关于k-space原点对称。所以上面积分为零。
+>[!Right]
+>$\blacksquare$
+
+考虑任取一个$\vec{k}_{0}\in \text{FBZ}$，找到这个轨道的占据数$\langle n_{\vec{k}_{0}}\rangle=2$，我们从中去掉一个电子，即令$\langle n_{\vec{k}_{0}}\rangle=1$。
+
+那么此时，这个能带的总$\vec{k}$，即$\sum_{\vec{k}\in \text{FBZ}}\langle n_{\vec{k}}\rangle \vec{k}$，就变为$-\vec{k}_{0}$。我们令：
+$$\vec{k}_{h}=-\vec{k}_{0}$$
+这时，能带的总能量，即$\sum_{\vec{k}\in \text{FBZ}}\langle n_{\vec{k}}\rangle\epsilon_{n}(\vec{k})$，就变为$-\epsilon_{n}(\vec{k}_{0})$。我们令：
+$$\epsilon_{nh}(\vec{k}_{h})=-\epsilon_{n}(\vec{k}_{0})$$
+
+
+我们再来看这个能带上的电流密度。本来电流密度为$\vec{j}=\frac{1}{V}\sum_{\vec{k}\in \text{FBZ}}\langle n_{\vec{k}}\rangle e \frac{1}{\hbar} \frac{\partial\epsilon_{n}}{\partial \vec{k}}=0$。去掉一个$\vec{k}_{0}$处的电子得到：
+$$\vec{j}=- \frac{1}{V}e \frac{1}{\hbar} \frac{\partial\epsilon_{n}}{\partial \vec{k}}=- \frac{1}{V}e \frac{1}{\hbar} \frac{\partial(-\epsilon_{nh})}{\partial(-\vec{k}_{h})}=- \frac{1}{V}e \frac{1}{\hbar} \frac{\partial\epsilon_{nh}}{\partial \vec{k}_{h}}$$
+我们令$q_{h}=-e=|e|$。
+
+
+
+
+于是我们可以认为，去掉一个完全充满的能带内处于$\epsilon_{n}(\vec{k})$的电子，等价于一个空的能带上存在一个处于$-\epsilon_{n}(\vec{k})$的粒子。如果这个粒子以$\epsilon_{nh}(\vec{k}_{h})=-\epsilon_{n}(-\vec{k}_{h})$移动，我们可以计算它的速度$\vec{v}_{h}= \frac{1}{\hbar} \frac{\partial\epsilon_{nh}}{\partial \vec{k}_{h}}$。我们再令这个粒子带有电荷$|e|$。那么我们知道这个粒子产生的电流等于完全充满的能带缺一个电子的电流。
+
+定义这个粒子为hole。
+
+>[!Note] Definition 2
+>Given an electron in $\epsilon_{n}(\vec{k})$, define the corresponding hole as a particle that:
+>- has charge $|e|$.
+>- has wavevector $\vec{k}_{h}=-\vec{k}$.
+>- has energy $\epsilon_{nh}(\vec{k}_{h})=-\epsilon_{n}(\vec{k})$
+
+我们可以计算hole的effective mass tensor：
+
+>[!Note] Proposition 2
+>For an electron and the corresponding hole, we have:
+>$$\overset{\leftrightarrow}{m}^{*}_{h}(\vec{k}_{h})=- \overset{\leftrightarrow}{m}^{*}(\vec{k})$$
+## Proof.
+$$\begin{align}
+m^{*}_{hij}(\vec{k}_{h}) & = \left.\frac{1}{\hbar^{2}} \frac{\partial^{2}\epsilon_{nh}}{\partial k_{hi}\partial k_{hj}}\right|_{k_{hi},k_{hj}} \\
+ & =\left. - \frac{1}{\hbar^{2}} \frac{\partial^{2}(-\epsilon_{nh})}{\partial(-k_{hi})\partial(-k_{hj})}\right|_{k_{hi},k_{hj}} \\
+ & = \left.- \frac{1}{\hbar^{2}} \frac{\partial^{2}\epsilon_{n}}{\partial k_{i}\partial k_{j}}\right|_{k_{i}=-k_{hi},k_{j}=-k_{hj}} \\
+ & = - m^{*}_{ij}(\vec{k})
+\end{align}$$
+>[!Right]
+>$\blacksquare$
+
+
