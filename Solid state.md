@@ -799,6 +799,12 @@ $$\begin{align}
 \end{align}$$
 >[!Right]
 >$\blacksquare$
+## Ex:
+考虑一个一维晶体具有band structure $\epsilon_{n}(k)=-C\cos(ak)$。外加恒定电场$E$。则这个band中电子EOM为：
+$$\hbar  \dot{ {k}}=eE\implies {k}= \frac{e}{\hbar}Et+{k}_{0}$$
+则电子速度为：
+$$v= \frac{1}{\hbar} \frac{\partial\epsilon_{n}}{\partial k}= \frac{aC}{\hbar}\sin(ak)= \frac{aC}{\hbar}\sin\left( a\left(  \frac{e}{\hbar}Et+k_{0} \right) \right)$$
+得到一个震荡的速度。
 
 
  
