@@ -797,7 +797,8 @@ $$\hbar  \dot{\vec{k}} =\vec{F}$$
  & \vec{v}= \frac{1}{\hbar} \frac{\partial\epsilon_{n}}{\partial \vec{k}} \\
  & \hbar  \dot{\vec{k}}=\vec{F} \\
  & \text{number of electrons around }\vec{k}= \frac{1}{\mathcal{z}^{-1}e^{\beta\epsilon_{n}(\vec{k})}+1}d^{3}k\end{align}$$
-
+## Remark
+最好将semiclassical EOM想成一个电子处于$\epsilon_{n}(\vec{k})$中，它的半经典运动由semiclassical EOM描述。
 
 >[!Note] Proposition 1
 >$$\overset{\leftrightarrow}{m}^{*}\cdot \frac{d\vec{v}}{dt}=\vec{F}$$
