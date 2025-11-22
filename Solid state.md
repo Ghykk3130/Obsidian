@@ -182,7 +182,7 @@ $$|-\vec{k}|=|\vec{k}|\leq |\vec{K}_{min}-\vec{k}|\leq |\vec{K}+\vec{k}|,\forall
 于是$\vec{k}\in \text{FBZ}$。
 >[!Right]
 >$\blacksquare$
-
+# 2. Band structure
 # 2.1 Bloch's theorem
 
 ^e9a184
@@ -340,7 +340,7 @@ e^{i\vec{K}\cdot(\vec{r}+\vec{R}) }u_{n,\vec{k}+\vec{K}}(\vec{r}+\vec{R}) & = e^
 >[!Right]
 >$\blacksquare$
 ## Remark
-$\psi_{n,\vec{k}},\psi_{n,\vec{k}+\vec{K}}$最多相差一个phase factor。你可能会说，这不一定啊，因为我们只证到$u_{n,\vec{k}},u_{n,\vec{k}+\vec{K}}$具有相同的本征值，我们没有证到这个特征子空间只有一维。但是它一定是一维，因为我们已经用量子数$n$来强行分成一维了。
+我们已经解得所有的特征值为$\epsilon_{n}(\vec{k})$的本征态$\psi_{n,\vec{k}}$。我们知道，$\psi_{n,\vec{k}+\vec{K}}$和$\psi_{n,\vec{k}}$在同一个能量特征子空间中，所以$\psi_{n,\vec{k}+\vec{K}}$一定可以由$\psi_{n,\vec{k}}$线性组合表示出来，就不是独立的态。所以要考虑线性独立的态，就只需要考虑FBZ中的态。这也是为什么我们作统计力学平均时，只在FBZ中积分。
 
 ## Ex:
 考虑$V$，有五个价电子。则一个可能的band structure是：
@@ -1016,5 +1016,10 @@ $$\begin{align}
 \implies & - \frac{\hbar^{2}}{2m} \frac{\partial^{2}X}{\partial x^{2}}+ \frac{1}{2}m \left( \frac{qB}{m} \right)^{2}\left( x- \frac{\hbar}{qB}k_{y} \right)^{2}=\left( E- \frac{\hbar^{2}k_{z}^{2}}{2m} \right) X \end{align}$$
 这显然是个$\omega=\frac{qB}{m}$，中心在$\frac{\hbar}{qB}k_{y}$的harmonic oscillator。于是显然：
 $$\begin{align}
-E- \frac{\hbar^{2}k_{z}^{2}}{2m}= \hbar \frac{qB}{m}\left( n+ \frac{1}{2} \right)\implies E= \frac{\hbar qB}{m}\left( n+\frac{1}{2} \right)+ \frac{\hbar^{2}k_{z}^{2}}{2m}
+E_{n,k_{z}}- \frac{\hbar^{2}k_{z}^{2}}{2m}= \hbar \frac{qB}{m}\left( n+ \frac{1}{2} \right)\implies E_{n,k_{z}}= \frac{\hbar qB}{m}\left( n+\frac{1}{2} \right)+ \frac{\hbar^{2}k_{z}^{2}}{2m}
 \end{align}$$
+称$E_{n,k_{z}}$为Landau level。
+
+>[!Note] Proposition 1
+>Each Landau level has degeneracy $N= \frac{qBA}{2\pi \hbar}$
+
