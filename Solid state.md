@@ -882,4 +882,39 @@ m^{*}_{hij}(\vec{k}_{h}) & = \left.\frac{1}{\hbar^{2}} \frac{\partial^{2}\epsilo
 >[!Right]
 >$\blacksquare$
 
+# 3.3 Bloch electrons in a magnetic field
+
+## 3.3.1 Semiclassical motion in the "phase space"
+
+由于半经典EOM为：
+$$\begin{align}
+ & \vec{v}= \frac{1}{\hbar} \frac{\partial\epsilon_{n}}{\partial \vec{k}} \\
+ & \hbar  \dot{\vec{k}}= \vec{F}
+\end{align}$$
+所以，一个Bloch电子的运动可以由一个$6$维的$\{ \vec{r} \}\times \{ \vec{k} \}$空间。这个空间可以类比于经典力学中的相空间。
+
+首先研究在k-space中的运动。
+
+我们有：
+$$\begin{align}
+ & \vec{v}= \frac{1}{\hbar}  \frac{\partial\epsilon_{n}}{\partial \vec{k}} \\
+ & \hbar  \dot{\vec{k}}= e\vec{v}\times \vec{B}
+\end{align}$$
+容易注意到：
+$$\dot{\vec{k}}\cdot \vec{B}=0$$
+所以$\vec{k}$的trajectory总是垂直于$\vec{B}$。
+
+又注意到：
+$$\begin{align}
+\frac{D\epsilon_{n}}{D t} & = \frac{\partial\epsilon_{n}}{\partial \vec{k}} \cdot \frac{\partial \vec{k}}{\partial t} \\
+ & = \hbar \vec{v}\cdot e(\vec{v}\times \vec{B}) \\
+ & =0
+\end{align}$$
+所以电子总在k-space中等能量面与$\vec{B}$垂直面的交线上运动。
+
+![[Drawing 2025-11-22 00.07.40.excalidraw|center|300]]
+## Remark
+考虑一个electron和一个hole。假设它们初始条件一样。则显然根据半经典EOM，它们瞬时的k-space速度会相反，因为电荷相反。所以它们绕行的轨道方向刚好瞬时相反。
+
+我们还可以研究r-space中运动。
 
