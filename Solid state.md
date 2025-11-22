@@ -895,6 +895,9 @@ $$\begin{align}
 
 首先研究在k-space中的运动。
 
+>[!Note] Proposition 1
+>$\vec{k}$ is constrained on the intersection of the constant energy surface and a plane perpendicular to $\vec{B}$.
+## Proof.
 我们有：
 $$\begin{align}
  & \vec{v}= \frac{1}{\hbar}  \frac{\partial\epsilon_{n}}{\partial \vec{k}} \\
@@ -913,8 +916,40 @@ $$\begin{align}
 所以电子总在k-space中等能量面与$\vec{B}$垂直面的交线上运动。
 
 ![[Drawing 2025-11-22 00.07.40.excalidraw|center|300]]
-## Remark
-考虑一个electron和一个hole。假设它们初始条件一样。则显然根据半经典EOM，它们瞬时的k-space速度会相反，因为电荷相反。所以它们绕行的轨道方向刚好瞬时相反。
+>[!Right]
+>$\blacksquare$
+
+>[!Note] Proposition 2
+>For an electron and a hole with the same initial conditions $\vec{v}(0),\vec{k}(0)$，they trace out the same trajectory in opposite directions.
+## Proof.
+
+考虑一个electron和一个hole。假设它们初始条件一样。则显然根据半经典EOM，它们$0$时刻瞬时的k-space速度会相反，因为电荷相反。所以它们绕行的轨道方向刚好瞬时相反。
+
+因为瞬时的$\dot{\vec{k}}$相反，而trajctory又一定是约束在等能量面和$\vec{B}$垂面的交线上的，所以它们的trajectory一定重合。
+
+然后，因为一个微分方程决定的trajectory不能自己交自己，它们一定会沿着constant energy surface和$\vec{B}$垂面的交线一致朝一个方向运动，而不会在某点减速到零然后重复走过的路径。所以，他们就刚好以相反的方向，沿着同一个trajectory绕动。
+>[!Right]
+>$\blacksquare$
+
 
 我们还可以研究r-space中运动。
+
+>[!Note] Proposition 3
+>The projection of $\vec{r}(t)$ on a plane perpendicular to $\vec{B}$ has the same shape as $\vec{k}(t)$.
+## Proof.
+考虑：
+$$\begin{align}
+ & \hbar  \dot{\vec{k}}= e\vec{v}\times \vec{B} \\
+\implies & \hbar \int_{0}^t  \dot{\vec{k}}dt= \int_{0}^t dt e\vec{v}\times \vec{B} \\
+ \implies &  \hbar(\vec{k}(t)-\vec{k}(0))=e(\vec{r}(t)-\vec{r}(0) )\times \vec{B} \\
+\implies & \vec{r}(t)\times \vec{B} = \frac{\hbar}{e}(\vec{k}(t)-\vec{k}(0))+\vec{r}(0)\times \vec{B}
+\end{align}$$
+这代表，$\vec{r}\times \vec{B}$按照$\vec{k}$以相同的轨迹运动，只不过放大并且平移了一下。这代表着，$\vec{r}$垂直于$\vec{B}$的component的trajectory和$\vec{k}$的trajectory一样。
+## Remark
+不过$\vec{r}$平行于$\vec{B}$的componenet是完全free的。换句话说，仅仅是$\vec{r}$投影到$\vec{B}$垂面上和$\vec{k}$的trajectory一个形状。
+
+
+
+
+
 
