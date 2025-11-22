@@ -949,7 +949,4 @@ $$\begin{align}
 不过$\vec{r}$平行于$\vec{B}$的componenet是完全free的。换句话说，仅仅是$\vec{r}$投影到$\vec{B}$垂面上和$\vec{k}$的trajectory一个形状。
 
 
-
-
-
-
+上述讨论的trjectory一般我们取Fermi surface为等能量面。因为在温度极低但不为零的情况下，占据数$\langle n_{\vec{k}}\rangle$会接近$2\mathbb{1}_{\left[ -\infty,\epsilon_{F} \right]}(\epsilon_{n}(\vec{k}))$。在$\epsilon_{n}(\vec{k})$显著低于$\epsilon_{F}$时，占据数都是满的，是$2$，不贡献电流。在$\epsilon_{n}(\vec{k})$显著高于$\epsilon_{F}$时，占据数都是$0$，也不贡献电流。仅仅只有$\epsilon_{F}$周围很小区域内的电子能够贡献电流。所以我们研究这些电子的运动。
