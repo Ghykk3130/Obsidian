@@ -1008,12 +1008,12 @@ $$H= \frac{1}{2m}(p_{x}^{2}+(p_{y}-qxB)^{2}+p_{z}^{2})$$
 $$\frac{1}{2m}(p_{x}^{2}+(p_{y}-qxB)^{2}+p_{z}^{2})\psi=E\psi$$
 注意到：
 $$[p_{y},H]=0,[p_{z},H]=0$$
-于是$H$可以被$p_{y},p_{z}$本征态的对角化。于是可以猜解：
+于是$H$可以被$p_{y},p_{z}$本  征态的对角化。于是可以猜解：
 $$\psi(\vec{r})=\exp(ik_{y}y+ik_{z}z)X(x)$$
 代入Schrodinger方程就有：
 $$\begin{align}
  & \frac{1}{2m}\left( -\hbar^{2} \frac{\partial^{2}X}{\partial x^{2}}+(\hbar k_{y}-qxB)^{2}X+\hbar^{2}k_{z}^{2}X \right) =EX \\
-\implies & - \frac{\hbar^{2}}{2m} \frac{\partial^{2}X}{\partial x^{2}}+ \frac{1}{2}m \left( \frac{qB}{m} \right)^{2}\left( x- \frac{\hbar}{qB}k_{y} \right)^{2}=\left( E- \frac{\hbar^{2}k_{z}^{2}}{2m} \right) X \end{align}$$
+\implies & - \frac{\hbar^{2}}{2m} \frac{\partial^{2}X}{\partial x^{2}}+ \frac{1}{2}m \left( \frac{qB}{m} \right)^{2}\left( x- \frac{\hbar}{qB}k_{y} \right)^{2}X=\left( E- \frac{\hbar^{2}k_{z}^{2}}{2m} \right) X \end{align}$$
 这显然是个$\omega=\frac{qB}{m}$，中心在$\frac{\hbar}{qB}k_{y}$的harmonic oscillator。于是显然：
 $$\begin{align}
 E_{n,k_{z}}- \frac{\hbar^{2}k_{z}^{2}}{2m}= \hbar \frac{qB}{m}\left( n+ \frac{1}{2} \right)\implies E_{n,k_{z}}= \frac{\hbar qB}{m}\left( n+\frac{1}{2} \right)+ \frac{\hbar^{2}k_{z}^{2}}{2m}
