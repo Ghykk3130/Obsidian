@@ -269,3 +269,26 @@ $$\frac{1}{\hbar}\int_{x_{1}}^xdx^{'}\sqrt{ 2m(E-V) }- \frac{\pi}{4}= \frac{\pi}
 >[!Right]
 >$\blacksquare$
 
+# 5. Emerging Bohr-Sommerfeld quantization
+
+我们看到，WKB中我们有：
+$$\int_{x_{1}}^{x_{2}}dxp=\left( n+ \frac{1}{2} \right)\hbar \pi$$
+我们试想，如果势阱的尺度越来越大，最终得到经典的图景，即一个一维粒子在一个势阱中左右滑动，到classical turning point $x_{1},x_{2}$为止。
+
+![[Drawing 2025-11-22 16.46.29.excalidraw|center|300]]
+
+可以证到trajectory上下部分是对称的。所以$\int_{x_{1}}^{x_{2}}dxp$就只是沿着upper或者lower的部分积了半个周期。（同样容易证到，由于trajectory的对称性，沿upper和lower都沿一个方向积，比如都是顺时针或者逆时针，积出来相等。）
+
+那么quantization可以写成：
+$$ \frac{1}{2} \oint dxp=\left( n+ \frac{1}{2} \right)\hbar \pi \implies \oint dxp=2\pi \hbar\left( n+ \frac{1}{2} \right)$$
+即：
+ - 为了获得量子力学中能量量子化条件，可以先考虑同样势阱中的经典运动，然后将其相空间内闭合轨道的$\oint dxp$量子化。
+
+我们不妨将其generalize：
+- 考虑一个粒子在三维中势阱中的运动。我们先考虑同样势阱中的经典运动，然后令：
+$$\oint d\vec{q}\cdot \vec{p}= 2\pi \hbar(n+\gamma),\text{ for some }\gamma\in \mathbb{R}$$
+  以获得能量量子化的近似。
+
+同样反过来说：
+- 考虑一个粒子的经典运动，当系统尺度足够小，以至于不得不用半经典，或者量子模型来描述，那么粒子的能量量子化由下式近似给出：
+$$\oint d\vec{q}\cdot \vec{p}=2\pi \hbar(n+\gamma),\text{ for some }\gamma\in \mathbb{R}$$
