@@ -11,7 +11,7 @@
 # 3. Models of electronic structure
 3.1 [[Solid state#^c01609|Drude model]]
 3.2 [[Solid state#^999493|Semiclassical model]]
-
+3.3 [[Solid state#^7a571e|Bloch electrons in a magnetic field]]
 
 # 1.1 Reciprocal lattice 
 
@@ -884,6 +884,8 @@ m^{*}_{hij}(\vec{k}_{h}) & = \left.\frac{1}{\hbar^{2}} \frac{\partial^{2}\epsilo
 
 # 3.3 Bloch electrons in a magnetic field
 
+^7a571e
+
 ## 3.3.1 Semiclassical motion in the "phase space"
 
 由于半经典EOM为：
@@ -950,3 +952,46 @@ $$\begin{align}
 
 
 上述讨论的trjectory一般我们取Fermi surface为等能量面。因为在温度极低但不为零的情况下，占据数$\langle n_{\vec{k}}\rangle$会接近$2\mathbb{1}_{\left[ -\infty,\epsilon_{F} \right]}(\epsilon_{n}(\vec{k}))$。在$\epsilon_{n}(\vec{k})$显著低于$\epsilon_{F}$时，占据数都是满的，是$2$，不贡献电流。在$\epsilon_{n}(\vec{k})$显著高于$\epsilon_{F}$时，占据数都是$0$，也不贡献电流。仅仅只有$\epsilon_{F}$周围很小区域内的电子能够贡献电流。所以我们研究这些电子的运动。
+
+## 3.3.2 Cyclotron frequency
+
+对于一个封闭的k-space轨道，我们试图计算$\vec{k}$转一圈花费的时间。我们今后为了简化，有时用$\epsilon$表示能带的能量。
+
+>[!Note] Proposition 1
+>Consider a closed trajectory in the k-space. Let $A(\epsilon)$ be the area enclosed by the trajectory. Then the time it takes to traverse the trajectory is:
+>$$T=\frac{\hbar^{2}}{|e|B} \frac{\partial A}{\partial\epsilon}$$
+## Proof.
+对于等能量面$\epsilon(\vec{k})=E$，上的trajectory $\Gamma$， 我们首先有：
+$$\begin{align}
+T & =\oint_{\Gamma} dk \frac{1}{|\dot{\vec{k}}|}
+\end{align}$$
+我们将其代换成能量：
+$$\begin{align}
+\dot{\vec{k}} & = \frac{e}{\hbar}\vec{v}\times \vec{B} \\
+ & = \frac{e}{\hbar^{2}} \frac{\partial\epsilon}{\partial \vec{k}}\times \vec{B} \\
+ & = \frac{eB}{\hbar^{2}} \left( \frac{\partial\epsilon}{\partial \vec{k}} \right)_{\perp}
+\end{align}$$
+那么：
+$$T= \frac{\hbar^{2}}{eB} \oint dk \left|\
+\left( \frac{\partial\epsilon}{\partial \vec{k}} \right)_{\perp}\right|^{-1}$$
+考虑另一个等能量面$\epsilon(\vec{k})=E+\delta E$。考虑这个等能量面与$\Gamma$共面的trajectory $\Sigma$。对于$\Gamma$上每一点$\vec{k}$，作垂直于$\vec{B}$方向，垂直于$\Gamma$切线，沿$\Gamma$所在平面向外延伸$\delta k \hat{n}$的矢量落在$\Sigma$上。那么显然有：
+$$\begin{align}  & E+\delta E=\epsilon(\vec{k}+\delta k\hat{n})=\epsilon(\vec{k})+ \frac{\partial\epsilon}{\partial \vec{k}}\cdot\delta k\hat{n}=E+ \frac{\partial\epsilon}{\partial \vec{k}}\cdot\delta k\hat{n} \\
+ \implies& 
+\delta E= \frac{\partial\epsilon}{\partial \vec{k}}\cdot \delta k\hat{n}= \frac{\partial\epsilon}{\partial \vec{k}}\cdot \delta k \frac{\left( \frac{\partial\epsilon}{\partial \vec{k}} \right)_{\perp}}{| \left( \frac{\partial\epsilon}{\partial \vec{k}} \right)_{\perp} |} = \delta k \frac{|\left( \frac{\partial\epsilon}{\partial \vec{k}} \right)_{\perp}|^{2}}{|\left( \frac{\partial\epsilon}{\partial \vec{k}} \right)_{\perp}|}=\delta k\left| \left( \frac{\partial\epsilon}{\partial \vec{k}} \right)_{\perp} \right|
+\end{align}$$
+所以我们有：
+$$\begin{align}
+T & = \frac{\hbar^{2}}{eB}\oint_{\Gamma}dk \frac{\delta k}{\delta E} \\
+ & = \frac{\hbar^{2}}{eB} \frac{\delta A}{\delta E} = \frac{\hbar^{2}}{eB} \frac{\partial A}{\partial\epsilon}
+\end{align}$$
+
+![[Drawing 2025-11-22 02.48.48.excalidraw|center]]
+
+>[!Right]
+>$\blacksquare$
+
+## Ex:
+考虑自由电子。我们有$\epsilon(\vec{k})= \frac{\hbar^{2}k^{2}}{2m}$。于是:
+$$A= \pi \frac{\hbar^{2}}{2m}k^{2}$$
+于是：
+$$T= \frac{\hbar^{2}}{em} \frac{\partial A}{\partial\epsilon}= \frac{\pi \hbar^{2}}{em}$$
