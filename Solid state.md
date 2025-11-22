@@ -1021,5 +1021,22 @@ E_{n,k_{z}}- \frac{\hbar^{2}k_{z}^{2}}{2m}= \hbar \frac{qB}{m}\left( n+ \frac{1}
 称$E_{n,k_{z}}$为Landau level。
 
 >[!Note] Proposition 1
->Each Landau level has degeneracy $N= \frac{qBA}{2\pi \hbar}$
+>If the $x,y$ coordinates of the electron are constrained in some area $A$, the each Landau level has degeneracy $N= \frac{qBA}{2\pi \hbar}$
+## Handwave
 
+可以解得Landau gauge下波函数为：
+$$\psi_{n,k_{z}}\propto e^{ik_{y}y+ik_{z}z}H_{n}\left( x- \frac{\hbar}{qB}k_{y} \right)\exp\left( - \frac{\left( x- \frac{\hbar}{qB}k_{y} \right)^{2}}{2 \frac{\hbar}{qB}k_{y}} \right)$$
+所以概率密度为：
+$$|\psi_{n,k_{z}}|^{2}= H_{n}^{2}\left( x- \frac{\hbar}{qB}k_{y} \right)\exp\left( - \frac{\left( x- \frac{\hbar}{qB}k_{y} \right)^{2}}{ \frac{\hbar}{qB}k_{y}} \right)$$
+所以电子在$x$方向被限制在$\frac{\hbar}{qB}k_{y}$周围。
+
+要考虑degeneracy，就是考虑$E_{n,k_{z}}= \frac{\hbar qB}{m}\left( n+ \frac{1}{2} \right)+ \frac{\hbar^{2}k_{z}^{2}}{2m}$对应多少态。那么我们需要fix $n,k_{z}$，然后看有多少可本征态。显然唯一的degeneracy就只能来自于$k_{y}$。
+
+首先在periodic BC下，$k_{y}= \frac{2\pi n_{y}}{L_{y}}$。但这样还是有无限多个态。我们进一步想到，因为电子在$x$方向被限制在$\frac{\hbar}{qB}k_{y}$周围，而$0\leq x\leq L_{x}$，所以$k_{y}$具有bound：
+$$0 \leq \frac{\hbar}{qB}k_{y} \leq L_{x}$$
+所以degeneracy为：
+$$\begin{align}
+N & = \sum_{n_{y}\text{ s.t. }0\leq k_{y}\leq \frac{qBL_{x}}{\hbar}} 1 \\
+ & \approx \frac{L_{y}}{2\pi} \int_{0}^{\frac{qBL_{x}}{\hbar}} dk_{y} \\
+ & = \frac{qB}{2\pi \hbar}L_{x}L_{y} = \frac{qB}{2\pi \hbar}A
+\end{align}$$
