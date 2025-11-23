@@ -1040,3 +1040,48 @@ N & = \sum_{n_{y}\text{ s.t. }0\leq k_{y}\leq \frac{qBL_{x}}{\hbar}} 1 \\
  & \approx \frac{L_{y}}{2\pi} \int_{0}^{\frac{qBL_{x}}{\hbar}} dk_{y} \\
  & = \frac{qB}{2\pi \hbar}L_{x}L_{y} = \frac{qB}{2\pi \hbar}A
 \end{align}$$
+
+## 3.3.4 Onsager-Bohr-Sommerfeld quantization
+
+对于一个磁场中的经典电子，考虑它的Bohr-Sommerfeld quantization：
+$$\oint d\vec{r}\cdot \vec{p}= 2\pi \hbar(n+\gamma)$$
+其中，$\vec{r}$为欧氏空间坐标，$\vec{p}$为正则动量。它们互为共轭。（注意，不是机械动量$m\vec{v}$，而是正则动量$m\vec{v}+e\vec{A}$！！！）
+
+现在，我们缩小系统尺度，以至于经典电子变成Bloch electron。我们想找一个共轭于$\vec{r}$的量来做quantization。
+
+一方面，我们知道，共轭于$\vec{r}$的正则动量的导数为：
+$$-\frac{\partial H}{\partial \vec{r}}= \dot{\vec{p}}=m  \dot{\vec{v}}+e  \dot{\vec{A}}$$
+假设弱场，那么：
+$$- \frac{\partial H}{\partial \vec{r}}\approx m  \dot{\vec{v}}$$
+所以$\vec{r}$的conjugate momentum $\sim m\vec{v}$。
+
+另一方面，对于经典电子，我们有：
+$$m  \dot{\vec{v}}=e\vec{v}\times \vec{B}$$
+而对于Bloch电子，我们有：
+$$\hbar  \dot{\vec{k}}=e\vec{v}\times \vec{B}$$
+所以，晶格动量可以类比为机械动量，即$m\vec{v}\leadsto \hbar \vec{k}$。所以：
+$$\text{conjugate momentum of }\vec{r}\sim \hbar \vec{k}$$
+所以引出quantization rule：
+
+>[!Note] Proposition 1
+>The quantization rule of Bloch electrons in a magnetic filed is approximated by:
+>$$\oint d\vec{r}\cdot \hbar \vec{k}=2\pi \hbar(n+\gamma)$$
+
+我们可以进一步地引出电子k-space中轨道面积的quantization：
+
+>[!Note] Corollary 1
+>The quantization of the area enclosed by the trajectory of a Bloch electron in the k-space is approximated by:
+>$$A_{n}= \frac{2\pi eB}{\hbar}(n+\gamma)$$
+## Proof.
+我们有：
+$$\begin{align}
+ & \hbar  \dot{\vec{k}}=e\vec{v}\times \vec{B} \\
+\implies & \hbar d\vec{k}=ed\vec{r}\times \vec{B} \\
+
+\implies & \hat{B}\times(\hbar d\vec{k})=e\hat{B}\times(d\vec{r}\times \vec{B}) \\
+\implies & \hbar \hat{B}\times d\vec{k}= e Bd\vec{r}-(\hat{B}\cdot d\vec{r})\vec{B}
+\end{align}$$
+又因为k-space中轨道垂直于$\vec{B}$，我们有：
+$$\begin{align}
+ & \hbar \vec{k}\cdot \hat{B}\times d\vec{k}=eB\vec{k}\cdot d\vec{r}
+\end{align}$$
