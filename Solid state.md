@@ -1049,29 +1049,25 @@ $$\oint d\vec{r}\cdot \vec{p}= 2\pi \hbar(n+\gamma)$$
 
 现在，我们缩小系统尺度，以至于经典电子变成Bloch electron。我们想找一个共轭于$\vec{r}$的量来做quantization。
 
-一方面，我们知道，共轭于$\vec{r}$的正则动量的导数为：
-$$-\frac{\partial H}{\partial \vec{r}}= \dot{\vec{p}}=m  \dot{\vec{v}}+e  \dot{\vec{A}}$$
-假设弱场，那么：
-$$- \frac{\partial H}{\partial \vec{r}}\approx m  \dot{\vec{v}}$$
-所以$\vec{r}$的conjugate momentum $\sim m\vec{v}$。
-
+一方面，我们知道，共轭于$\vec{r}$的动量为：
+$$\vec{p}=m\vec{v}+e\vec{A}$$
 另一方面，对于经典电子，我们有：
 $$m  \dot{\vec{v}}=e\vec{v}\times \vec{B}$$
 而对于Bloch电子，我们有：
 $$\hbar  \dot{\vec{k}}=e\vec{v}\times \vec{B}$$
 所以，晶格动量可以类比为机械动量，即$m\vec{v}\leadsto \hbar \vec{k}$。所以：
-$$\text{conjugate momentum of }\vec{r}\sim \hbar \vec{k}$$
+$$\text{conjugate momentum of }\vec{r}\sim \hbar \vec{k}+e\vec{A}$$
 所以引出quantization rule：
 
 >[!Note] Proposition 1
 >The quantization rule of Bloch electrons in a magnetic filed is approximated by:
->$$\oint d\vec{r}\cdot \hbar \vec{k}=2\pi \hbar(n+\gamma)$$
+>$$\oint d\vec{r}\cdot (\hbar \vec{k}+e\vec{A})=2\pi \hbar(n+\gamma)$$
 
 我们可以进一步地引出电子k-space中轨道面积的quantization：
 
 >[!Note] Corollary 1
 >The quantization of the area enclosed by the trajectory of a Bloch electron in the k-space is approximated by:
->$$A_{n}= \frac{2\pi eB}{\hbar}(n+\gamma)$$
+>$$S_{n}= \frac{2\pi eB}{\hbar}(n+\gamma)$$
 ## Proof.
 我们有：
 $$\begin{align}
@@ -1079,9 +1075,24 @@ $$\begin{align}
 \implies & \hbar d\vec{k}=ed\vec{r}\times \vec{B} \\
 
 \implies & \hat{B}\times(\hbar d\vec{k})=e\hat{B}\times(d\vec{r}\times \vec{B}) \\
-\implies & \hbar \hat{B}\times d\vec{k}= e Bd\vec{r}-(\hat{B}\cdot d\vec{r})\vec{B}
+\implies & \hbar \hat{B}\times d\vec{k}= e Bd\vec{r}-(\hat{B}\cdot d\vec{r})\vec{B} \\
+\implies & \hbar \vec{k}\cdot \hat{B}\times d\vec{k}=eB\vec{k}\cdot d\vec{r}-(\hat{B}\cdot d\vec{r})\vec{B}\cdot \vec{k} 
 \end{align}$$
-又因为k-space中轨道垂直于$\vec{B}$，我们有：
+所以：
 $$\begin{align}
- & \hbar \vec{k}\cdot \hat{B}\times d\vec{k}=eB\vec{k}\cdot d\vec{r}
+ & \oint d\vec{r}\cdot \hbar \vec{k}=  \frac{\hbar}{eB}\oint\left[(\hat{B}\cdot d\vec{r})\vec{B}\cdot \vec{k}+ \hbar \vec{k}\cdot \hat{B}\times d\vec{k}\right]
 \end{align}$$
+又因为k-space中轨道垂直于$\vec{B}$，$\vec{B}\cdot \vec{k}$是常量。所以第一项积分为：
+$$\oint(\hat{B}\cdot d\vec{r})\vec{B}\cdot \vec{k}=\vec{B}\cdot \vec{k}\hat{B}\cdot\oint d\vec{r}=0$$
+第二项积分：
+$$\oint \hbar \vec{k}\cdot \hat{B}\times d\vec{k}=\hbar S$$
+我们还有：
+$$\begin{align}
+\oint d\vec{r} \cdot e\vec{A}=e\int d\vec{S}\cdot\nabla \times \vec{A}=e\int dS\cdot\vec{B}=e\phi
+\end{align}$$
+所以存在quantization：
+$$\begin{align}
+ & \frac{\hbar^{2}}{eB}S+e\phi=2\pi \hbar(n+\gamma) \\
+\implies &  \frac{\hbar^{2}}{eB^{2}}\phi+e\phi=2\pi \hbar(n+\gamma)
+\end{align}$$
+
