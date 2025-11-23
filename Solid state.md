@@ -1148,9 +1148,13 @@ $$\begin{align}
 
 我们关心Fermi surface附近$kT$范围内的电子。因为那些$\epsilon<\epsilon_{F}=kT$上的电子轨道占据数在$T\rightarrow 0$时为$2$；那些$\epsilon>\epsilon_{F}+kT$的电子轨道占据数在$T\rightarrow {0}$时为0。它们在低温都不贡献电流。
 
-对于在Fermi surface上的电子，我用一个垂直于磁场的平面去切Fermi surface来看它们的loop。由于这些loop的面积是离散的，而Fermi surface上任何$\vec{k}$位置体元内，都有不为零的电子数$\frac{1}{4\pi^{3}}d^{3}k\sum_{n}f(\epsilon_{n})$，所以我们不得不认为Fermi surface被迫被挤压成了离散的形状。
+对于在Fermi surface上的电子，我用一个垂直于磁场的平面去切Fermi surface来看它们的loop。由于这些loop的面积是离散的，我们可以想象许多这些loop拉长形成的tube，称为Landau tube。实际上允许存在的$\vec{k}$就只能在Fermi surface和Landau tube的交线上。
+
+所以我们不得不认为Fermi surface上的accessible area被迫被挤压成了离散的形状。
 
 ![[Drawing 2025-11-23 03.35.32.excalidraw|center]]
+## Remark
+你可能会说，在Fermi surface上任何$\vec{k}$位置体元内，都有不为零的电子数$\frac{1}{4\pi^{3}}d^{3}k\sum_{n}f(\epsilon_{n})$。所以在除了Landau tube与Fermi surface的交线之外的Fermi surface上的区域，不也有非零的占据数吗？但是，$f(\epsilon_{n})$的含义是，若存在一个non-degenerate量子态，对应能量$\epsilon_{n}$，并且这个量子态是accessible的，那么这个态的占据数为$f(\epsilon_{n})$。如果这个态本身不accessible，那么我在推导$f(\epsilon_{n})=\text{number of particles}\times \text{the probability corresponding to this number of particles}$时，就不可能让任何粒子落在这个态上，即$\text{number of particles}=0$。
 
 
 
