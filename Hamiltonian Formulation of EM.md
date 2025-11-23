@@ -25,3 +25,33 @@ H & =\vec{p}\cdot \vec{v}-L \\
 ## Remark
 注意，其中的$\vec{p}$不是机械动量，而是正则动量。
 
+## Ex:
+
+我们可以又Hamilton's equation restore Lorentz force law：
+$$\begin{align}
+\frac{\partial H}{\partial r_{j}} & = \frac{1}{2m} \frac{\partial}{\partial r_{j}}(p_{i}^{2}+e^{2}A_{i}^{2}-2ep_{i}A_{i}) + e \frac{\partial \phi}{\partial r_{j}} \\
+ & = \frac{1}{2m} \left( e^{2} 2A_{i} \frac{\partial A_{i}}{\partial r_{j}}-2ep_{i} \frac{\partial A_{i}}{\partial r_{j}} \right)+e \frac{\partial \phi}{\partial r_{j}} \\
+ & = e^{2} \frac{A_{i}}{m} \frac{\partial A_{i}}{\partial r_{j}}- e\left( v_{i}+e \frac{A_{i}}{m} \right) \frac{\partial A_{i}}{\partial r_{j}} + e\frac{\partial \phi }{\partial r_{j}}\\
+ & = -ev_{i} \frac{\partial A_{i}}{\partial r_{j}}+e \frac{\partial \phi}{\partial r_{j}}
+\end{align}$$
+所以正则动量的变化为：
+$$p_{j}= - \frac{\partial H}{\partial r_{j}}=ev_{i} \frac{\partial A_{i}}{\partial r_{j}}$$
+于是，机械动量变化为：
+$$\begin{align}
+m  \dot{v}_{j} & = \dot{p}_{j}-e   \dot{A}_{j} \\
+ & = \dot{p}_{j}- e \left(  \frac{\partial A_{j}}{\partial t}+ \frac{\partial A_{j}}{\partial r_{k}}  \dot{r}_{k} \right)
+\end{align}$$
+这是因为，$\dot{A}_{j}= \frac{DA_{j}}{Dt}$实际上是随体导数。于是：
+$$\begin{align}
+m  \dot{v}_{j} & = ev_{i} \frac{\partial A_{i}}{\partial r_{j}} - e \frac{\partial A_{j}}{\partial t}- e v_{k} \frac{\partial A_{j}}{\partial r_{k}}-e \frac{\partial \phi}{\partial r_{j}}
+\end{align}$$
+另一方面，我们有：
+$$\begin{align}
+e(\vec{v}\times \vec{B})_{j} & = e(\vec{v}\times(\nabla \times \vec{A}))_{j} \\
+ & = e\epsilon_{jlm}v_{l}\epsilon_{mnp}\partial_{n}A_{p} \\
+ & = e \epsilon_{mjl}\epsilon_{mnp}v_{l}\partial_{n}A_{p} \\
+ & = e (\delta_{jn}\delta_{lp}-\delta_{jp}\delta_{\ln} )v_{l}\partial_{n}A_{p} \\
+ & = ev_{l}\partial_{j}A_{l}-ev_{l}\partial_{l}A_{j}
+\end{align}$$
+所以：
+$$m  \dot{v}_{j}= e(\vec{v}\times \vec{B})_{j}-e \frac{\partial \phi}{\partial r_{j}}  -e \frac{\partial A_{j}}{\partial t}=e(\vec{v}\times \vec{B})_{j}+eE_{j}$$

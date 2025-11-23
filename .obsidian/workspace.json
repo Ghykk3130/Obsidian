@@ -279,12 +279,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Solid state.md",
+                "file": "Hamiltonian Formulation of EM.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Solid state"
+              "title": "Hamiltonian Formulation of EM"
             }
           },
           {
@@ -765,8 +765,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200,
-    "collapsed": true
+    "width": 200
   },
   "right": {
     "id": "9003d078f8dbc4ed",
@@ -867,9 +866,9 @@
   },
   "active": "4260044b550d1306",
   "lastOpenFiles": [
+    "Solid state.md",
     "Hamiltonian Formulation of EM.md",
     "Lagrangian Formulation of EM.md",
-    "Solid state.md",
     "WKB.md",
     "Excalidraw/Drawing 2025-11-22 16.46.29.excalidraw.md",
     "Excalidraw/Drawing 2025-11-22 02.48.48.excalidraw.md",
