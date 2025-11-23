@@ -740,7 +740,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "fermi surface",
+                "query": "",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -775,13 +775,11 @@
               "title": "Bookmarks"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
-    "width": 200,
-    "collapsed": true
+    "width": 200
   },
   "right": {
     "id": "9003d078f8dbc4ed",
@@ -882,13 +880,13 @@
   "active": "fccee8fa5b5d8a11",
   "lastOpenFiles": [
     "Excalidraw/Drawing 2025-11-23 03.35.32.excalidraw.md",
+    "Excalidraw/Drawing 2025-11-22 00.07.40.excalidraw.md",
     "Solid state.md",
     "WKB.md",
     "Hamiltonian Formulation of EM.md",
     "Lagrangian Formulation of EM.md",
     "Excalidraw/Drawing 2025-11-22 16.46.29.excalidraw.md",
     "Excalidraw/Drawing 2025-11-22 02.48.48.excalidraw.md",
-    "Excalidraw/Drawing 2025-11-22 00.07.40.excalidraw.md",
     "Excalidraw/Drawing 2025-11-21 23.48.21.excalidraw.md",
     "Excalidraw/Drawing 2025-11-21 23.48.04.excalidraw.md",
     "Excalidraw",

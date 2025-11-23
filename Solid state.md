@@ -1023,7 +1023,7 @@ $$\begin{align}
 \implies & - \frac{\hbar^{2}}{2m} \frac{\partial^{2}X}{\partial x^{2}}+ \frac{1}{2}m \left( \frac{qB}{m} \right)^{2}\left( x- \frac{\hbar}{qB}k_{y} \right)^{2}X=\left( E- \frac{\hbar^{2}k_{z}^{2}}{2m} \right) X \end{align}$$
 这显然是个$\omega=\frac{qB}{m}$，中心在$\frac{\hbar}{qB}k_{y}$的harmonic oscillator。于是显然：
 $$\begin{align}
-E_{n,k_{z}}- \frac{\hbar^{2}k_{z}^{2}}{2m}= \hbar \frac{qB}{m}\left( n+ \frac{1}{2} \right)\implies E_{n,k_{z}}= \frac{\hbar qB}{m}\left( n+\frac{1}{2} \right)+ \frac{\hbar^{2}k_{z}^{2}}{2m}
+E_{n,k_{z}}- \frac{\hbar^{2}k_{z}^{2}}{2m}= \hbar \frac{qB}{m}\left( n+ \frac{1}{2} \right)\implies E_{n,k_{z}}= \frac{\hbar qB}{m}\left( n+\frac{1}{2} \right)+ \frac{\hbar^{2}k_{z}^{2}}{2m}=\hbar \omega_{c}\left( n+ \frac{1}{2} \right)+ \frac{\hbar^{2}k_{z}^{2}}{2m}
 \end{align}$$
 称$E_{n,k_{z}}$为Landau level。
 
