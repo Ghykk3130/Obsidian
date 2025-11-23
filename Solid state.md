@@ -1156,6 +1156,24 @@ $$\begin{align}
 ## Remark
 你可能会说，在Fermi surface上任何$\vec{k}$位置体元内，都有不为零的电子数$\frac{1}{4\pi^{3}}d^{3}k\sum_{n}f(\epsilon_{n})$。所以在除了Landau tube与Fermi surface的交线之外的Fermi surface上的区域，不也有非零的占据数吗？但是，$f(\epsilon_{n})$的含义是，若存在一个non-degenerate量子态，对应能量$\epsilon_{n}$，并且这个量子态是accessible的，那么这个态的占据数为$f(\epsilon_{n})$。如果这个态本身不accessible，那么我在推导$f(\epsilon_{n})=\text{number of particles}\times \text{the probability corresponding to this number of particles}$时，就不可能让任何粒子落在这个态上，即$\text{number of particles}=0$。
 
+## 3.3.6 Quantum oscillation
+
+我们思考当磁场打开的那一刻，Landau tube具体是如何形成的。
+
+在没有磁场时，Fermi sea中的电子的态密度是均匀的。存在态数测度：
+$$\begin{align}
+\sum_{\vec{k}} \leadsto \frac{V}{(2\pi)^{3}}\int d^{3}k
+\end{align}$$
+在磁场打开后，因为不在Landau tube上的态都不能取到，但是总电子数又要守恒，
+
+
+
+>[!Note] Proposition 1
+>Let $\vec{B}\parallel z$. The number of states on a Landau tube within $dk_{z}$ is:
+>$$dN= \frac{V|e|B}{2\pi^{2}\hbar}dk_{z}$$
+>
+## Proof.
+
 
 
 
