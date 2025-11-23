@@ -39,6 +39,7 @@ $$\left\{ \begin{align}
 若考虑相对论，则$\vec{p}=\gamma m\vec{v}\implies W= \frac{-mc^{2}}{\gamma}$
 
 将得到的Lagrangian拆为两项$L_{p}= \frac{1}{2}mv^{2} \text{ or } \frac{-mc^{2}}{\gamma}$, $L_{pf}=-e\phi+e\vec{v}\cdot \vec{A}$，称为free particle term和particle-field interaction term。
+
 >[! Proposition 1]
 >The free particle term plus the particle-field interaction term of the non-relativistic Lagrangian is：
 >$L_{p}+L_{pf}= \frac{1}{2}mv^{2}-e\phi+e\vec{v}\cdot \vec{A}$
