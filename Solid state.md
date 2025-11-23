@@ -995,8 +995,15 @@ T & = \frac{\hbar^{2}}{eB}\oint_{\Gamma}dk \frac{\delta k}{\delta E} \\
 $$A= \pi \frac{\hbar^{2}}{2m}k^{2}$$
 于是：
 $$T= \frac{\hbar^{2}}{em} \frac{\partial A}{\partial\epsilon}= \frac{\pi \hbar^{2}}{em}$$
+## 3.3.3 An intuitive picture of Bloch electron motion
 
-## 3.3.3 Landau levels
+考虑k-space的FBZ中所有能带$\epsilon_{n}(\vec{k})$。每条能带中都有一定的占据数$f(\epsilon_{n})=\langle n_{\vec{k}}\rangle= \frac{2}{\mathcal{z}^{-1}e^{\beta\epsilon_{n}}+1}$。也就是说，在任何时候在k-space中看一眼，处于能带$\epsilon_{n}(\vec{k})$的电子个数大概就是$f(\epsilon_{n})$那么多个。
+
+在没有任何外加场的情况下，电子在k-space中不动，静止于这些能带之中。应该想象，这些电子形成一个“连续体”。任何k-space中一个体元$d^{3}k$内，都存在$\frac{1}{4\pi^{3}}d^{3}k\sum_{n}f(\epsilon_{n})$那么多个电子。
+
+当外加磁场后，这一坨“连续体”中的每个电子开始沿着各自属于的能带的等能量面滑动。它们的轨道应该都垂直于$\vec{B}$。
+
+## 3.3.4 Landau levels
 
 考虑恒定磁场中的自由带电粒子$q$。我们将这个系统量子化。我们有Hamiltonian：
 $$H=\frac{1}{2m}|\vec{p}-q\vec{A}|^{2}$$
@@ -1041,7 +1048,7 @@ N & = \sum_{n_{y}\text{ s.t. }0\leq k_{y}\leq \frac{qBL_{x}}{\hbar}} 1 \\
  & = \frac{qB}{2\pi \hbar}L_{x}L_{y} = \frac{qB}{2\pi \hbar}A
 \end{align}$$
 
-## 3.3.4 Onsager-Bohr-Sommerfeld quantization
+## 3.3.5 Onsager-Bohr-Sommerfeld quantization
 
 对于一个磁场中的经典电子，考虑它的Bohr-Sommerfeld quantization：
 $$\oint d\vec{r}\cdot \vec{p}= 2\pi \hbar(n+\gamma)$$
@@ -1061,13 +1068,17 @@ $$\text{conjugate momentum of }\vec{r}\sim \hbar \vec{k}+e\vec{A}$$
 
 >[!Note] Proposition 1
 >The quantization rule of Bloch electrons in a magnetic filed is approximated by:
->$$\oint d\vec{r}\cdot (\hbar \vec{k}+e\vec{A})=2\pi \hbar(n+\gamma)$$
+>$$\oint d\vec{r}_{\perp}\cdot (\hbar \vec{k}+e\vec{A})_{\perp}=2\pi \hbar(n+\gamma)$$
+>where $\perp$ projects vectors onto the plane perpendicular to $\vec{B}$.
+## Remark
+为什么我们只在垂直于磁场方向的平面上量子化呢？这是因为，r-space中轨道可能不是闭合的。仅仅是r-space中轨道投影到垂直于磁场方向上闭合。在沿磁场方向，电子完全可能有不回归的运动。而Bohr-Sommerfeld quantization只对于闭合轨道作量子化。
+
 
 我们可以进一步地引出电子k-space中轨道面积的quantization：
 
 >[!Note] Corollary 1
 >The quantization of the area enclosed by the trajectory of a Bloch electron in the k-space is approximated by:
->$$S_{n}= \frac{2\pi eB}{\hbar}(n+\gamma)$$
+>$$A_{n}= \frac{2\pi |e|B}{\hbar}(n+\gamma)$$
 ## Proof.
 我们有：
 $$\begin{align}
@@ -1076,23 +1087,72 @@ $$\begin{align}
 
 \implies & \hat{B}\times(\hbar d\vec{k})=e\hat{B}\times(d\vec{r}\times \vec{B}) \\
 \implies & \hbar \hat{B}\times d\vec{k}= e Bd\vec{r}-(\hat{B}\cdot d\vec{r})\vec{B} \\
-\implies & \hbar \vec{k}\cdot \hat{B}\times d\vec{k}=eB\vec{k}\cdot d\vec{r}-(\hat{B}\cdot d\vec{r})\vec{B}\cdot \vec{k} 
+\implies & \hbar(\hat{B}\times d\vec{k})_{\perp}=eBd\vec{r}_{\perp}
 \end{align}$$
 所以：
 $$\begin{align}
- & \oint d\vec{r}\cdot \hbar \vec{k}=  \frac{\hbar}{eB}\oint\left[(\hat{B}\cdot d\vec{r})\vec{B}\cdot \vec{k}+ \hbar \vec{k}\cdot \hat{B}\times d\vec{k}\right]
+\oint d\vec{r}_{\perp}\cdot \hbar  {\vec{k}}_{\perp} & = \frac{\hbar^{2}}{eB} \oint(\hat{B}\times d\vec{k})_{\perp}\cdot  {\vec{k}}_{\perp} \\
+ & = -\frac{\hbar^{2}}{eB } 2A \\
+ & = \frac{2\hbar^{2}}{|e|B}A
 \end{align}$$
-又因为k-space中轨道垂直于$\vec{B}$，$\vec{B}\cdot \vec{k}$是常量。所以第一项积分为：
-$$\oint(\hat{B}\cdot d\vec{r})\vec{B}\cdot \vec{k}=\vec{B}\cdot \vec{k}\hat{B}\cdot\oint d\vec{r}=0$$
-第二项积分：
-$$\oint \hbar \vec{k}\cdot \hat{B}\times d\vec{k}=\hbar S$$
-我们还有：
+注意此处$A$表示面积。
+
+我们还要计算：
 $$\begin{align}
-\oint d\vec{r} \cdot e\vec{A}=e\int d\vec{S}\cdot\nabla \times \vec{A}=e\int dS\cdot\vec{B}=e\phi
+\oint d\vec{r}_{\perp} \cdot e\vec{A}_{\perp}
 \end{align}$$
+因为$\vec{B}$是匀强磁场，（至少局部是）所以$\vec{A}$自动垂直于$\vec{B}$。所以：
+$$\begin{align}
+\oint d\vec{r}_{\perp}\cdot e\vec{A}_{\perp}=\oint d\vec{r}\cdot e\vec{A}=e\int d\vec{S}_{r}\cdot\nabla \times \vec{A}=e\int d\vec{S}_{r}  \cdot\vec{B}=e  {S}_{r\perp}  {B}
+\end{align}$$
+**Caveat:**
+- 这里我们的面积是r-space中的面积。我们需要将其化为k-space中轨道面积。
+
+回忆起：
+$$\begin{align}
+\hbar   \dot{\vec{k}}=e\vec{v}\times \vec{B}\implies e\vec{r}(t)\times \vec{B}=\hbar(\vec{k}(t)-\vec{k}(0))+e\vec{r}(0)\times \vec{B}
+\end{align}$$
+所以在垂直于磁场方向，显然有：
+$$A=\left(\frac{eB}{\hbar}\right)^{2}S_{r\perp} $$
+**Caveat:**
+- 一定要加平方。半径比是$\frac{eB}{\hbar}$。
+
 所以存在quantization：
 $$\begin{align}
- & \frac{\hbar^{2}}{eB}S+e\phi=2\pi \hbar(n+\gamma) \\
-\implies &  \frac{\hbar^{2}}{eB^{2}}\phi+e\phi=2\pi \hbar(n+\gamma)
+ & 2 \frac{\hbar^{2}}{|e|B}A+ e \frac{\hbar^{2}}{|e|^{2}B^{2}}B  A=2\pi \hbar(n+\gamma)  \\
+\implies & 2 \frac{\hbar^{2}}{|e|B}A- \frac{\hbar^{2}}{|e|B}A=2\pi \hbar(n+\gamma) \\
+
+\implies & A= \frac{2\pi |e|B}{\hbar }(n+\gamma)
 \end{align}$$
+将$A$写成$A_{n}$即可。
+>[!Right]
+>$\blacksquare$
+
+>[!Note] Corollary 2
+>The quantization of the magnetic flus through the area enclosed by the trajectory of a Bloch electron in the r-space is approximated by:
+>$$\phi_{n}=(n+\gamma) \frac{2\pi \hbar}{|e|}$$
+## Proof.
+关于r-space和k-space中面积，我们有：
+$$A=\left(  \frac{eB}{\hbar} \right)^{2}S_{r\perp}$$
+所以：
+$$\begin{align}
+\phi_{n} & =BS_{r\perp} \\
+ & = B \left( \frac{\hbar}{eB} \right)^{2}A_{n} \\
+ & = \frac{\hbar^{2}}{e^{2}B} \frac{2\pi|e|B}{\hbar}(n+\gamma) \\
+ & = \frac{2\pi \hbar}{|e|}(n+\gamma)
+\end{align}$$
+>[!Right]
+>$\blacksquare$
+
+我们现在知道，若外加磁场，电子在k-space中等能量面的一个垂直于磁场的slice上绕动，形成一个loop。这个loop的面积是离散的。
+
+我们关心Fermi surface附近$kT$范围内的电子。因为那些$\epsilon<\epsilon_{F}=kT$上的电子轨道占据数在$T\rightarrow 0$时为$2$；那些$\epsilon>\epsilon_{F}+kT$的电子轨道占据数在$T\rightarrow {0}$时为0。它们在低温都不贡献电流。
+
+对于在Fermi surface上的电子，我用一个垂直于磁场的平面去切Fermi surface来看它们的loop。由于这些loop的面积是离散的，而Fermi surface上任何$\vec{k}$位置体元内，都有不为零的电子数$\frac{1}{4\pi^{3}}d^{3}k\sum_{n}f(\epsilon_{n})$，所以我们不得不认为Fermi surface被迫被挤压成了离散的形状。
+
+![[Drawing 2025-11-23 03.35.32.excalidraw|center]]
+
+
+
+
 

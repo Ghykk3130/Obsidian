@@ -285,10 +285,12 @@ $$ \frac{1}{2} \oint dxp=\left( n+ \frac{1}{2} \right)\hbar \pi \implies \oint d
  - 为了获得量子力学中能量量子化条件，可以先考虑同样势阱中的经典运动，然后将其相空间内闭合轨道的$\oint dxp$量子化。
 
 我们不妨将其generalize：
-- 考虑一个粒子在三维中势阱中的运动。我们先考虑同样势阱中的经典运动，然后令：
+- 考虑一个粒子在三维中势阱中作运动。我们先考虑同样势阱中的经典运动。若经典运动是闭合轨道，那么令：
 $$\oint d\vec{q}\cdot \vec{p}= 2\pi \hbar(n+\gamma),\text{ for some }\gamma\in \mathbb{R}$$
   以获得能量量子化的近似。
 
 同样反过来说：
-- 考虑一个粒子的经典运动，当系统尺度足够小，以至于不得不用半经典，或者量子模型来描述，那么粒子的能量量子化由下式近似给出：
+- 考虑一个粒子的经典周期运动，当系统尺度足够小，以至于不得不用半经典，或者量子模型来描述，那么粒子的能量量子化由下式近似给出：
 $$\oint d\vec{q}\cdot \vec{p}=2\pi \hbar(n+\gamma),\text{ for some }\gamma\in \mathbb{R}$$
+
+我们甚至还可以进一步generalize。如果经典轨道不是闭合的，但是投影到某个子空间闭合，那么在这个子空间内的轨道投影，同样应该近似满足Bohr-Sommerfeld quantization。
