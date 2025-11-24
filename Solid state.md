@@ -1003,7 +1003,8 @@ $$T= \frac{\hbar^{2}}{em} \frac{\partial A}{\partial\epsilon}= \frac{\pi \hbar^{
 
 当外加磁场后，这一坨“连续体”中的每个电子开始沿着各自属于的能带的等能量面滑动。它们的轨道应该都垂直于$\vec{B}$。
 
-## 3.3.4 Landau levels
+# 3.4 Quantization of Bloch electron motion
+## 3.4.1 Landau levels
 
 考虑恒定磁场中的自由带电粒子$q$。我们将这个系统量子化。我们有Hamiltonian：
 $$H=\frac{1}{2m}|\vec{p}-q\vec{A}|^{2}$$
@@ -1048,7 +1049,7 @@ N & = \sum_{n_{y}\text{ s.t. }0\leq k_{y}\leq \frac{qBL_{x}}{\hbar}} 1 \\
  & = \frac{qB}{2\pi \hbar}L_{x}L_{y} = \frac{qB}{2\pi \hbar}A
 \end{align}$$
 
-## 3.3.5 Onsager-Bohr-Sommerfeld quantization
+## 3.4.2 Onsager-Bohr-Sommerfeld quantization
 
 对于一个磁场中的经典电子，考虑它的Bohr-Sommerfeld quantization：
 $$\oint d\vec{r}\cdot \vec{p}= 2\pi \hbar(n+\gamma)$$
@@ -1156,7 +1157,7 @@ $$\begin{align}
 ## Remark
 你可能会说，在Fermi surface上任何$\vec{k}$位置体元内，都有不为零的电子数$\frac{1}{4\pi^{3}}d^{3}k\sum_{n}f(\epsilon_{n})$。所以在除了Landau tube与Fermi surface的交线之外的Fermi surface上的区域，不也有非零的占据数吗？但是，$f(\epsilon_{n})$的含义是，若存在一个non-degenerate量子态，对应能量$\epsilon_{n}$，并且这个量子态是accessible的，那么这个态的占据数为$f(\epsilon_{n})$。如果这个态本身不accessible，那么我在推导$f(\epsilon_{n})=\text{number of particles}\times \text{the probability corresponding to this number of particles}$时，就不可能让任何粒子落在这个态上，即$\text{number of particles}=0$。
 
-## 3.3.6 Quantum oscillation
+## 3.4.3 Quantum oscillation
 
 我们思考当磁场打开的那一刻，Landau tube具体是如何形成的。
 
@@ -1206,6 +1207,10 @@ $$\begin{align}
 $$\frac{V|e|B}{2\pi^{2}\hbar}dk_{z}$$
 >[!Right]
 >$\blacksquare$
+## Remark
+我们发现这和Landau level的degeneracy一模一样。Landau level说，一个Landau ring里面的态数为$N= \frac{|e|B}{2\pi\hbar}L_{x}L_{y}$。这和我们这里得到的一样。
+
+
 
 
 
