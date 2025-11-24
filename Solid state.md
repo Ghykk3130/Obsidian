@@ -1159,7 +1159,8 @@ $$\begin{align}
 
 ![[Drawing 2025-11-23 03.35.32.excalidraw|center]]
 ## Remark
-你可能会说，在Fermi surface上任何$\vec{k}$位置体元内，都有不为零的电子数$\frac{1}{4\pi^{3}}d^{3}k\sum_{n}f(\epsilon_{n})$。所以在除了Landau tube与Fermi surface的交线之外的Fermi surface上的区域，不也有非零的占据数吗？但是，$f(\epsilon_{n})$的含义是，若存在一个non-degenerate量子态，对应能量$\epsilon_{n}$，并且这个量子态是accessible的，那么这个态的占据数为$f(\epsilon_{n})$。如果这个态本身不accessible，那么我在推导$f(\epsilon_{n})=\text{number of particles}\times \text{the probability corresponding to this number of particles}$时，就不可能让任何粒子落在这个态上，即$\text{number of particles}=0$。
+1. 你可能会说，在Fermi surface上任何$\vec{k}$位置体元内，都有不为零的电子数$\frac{1}{4\pi^{3}}d^{3}k\sum_{n}f(\epsilon_{n})$。所以在除了Landau tube与Fermi surface的交线之外的Fermi surface上的区域，不也有非零的占据数吗？但是，$f(\epsilon_{n})$的含义是，若存在一个non-degenerate量子态，对应能量$\epsilon_{n}$，并且这个量子态是accessible的，那么这个态的占据数为$f(\epsilon_{n})$。如果这个态本身不accessible，那么我在推导$f(\epsilon_{n})=\text{number of particles}\times \text{the probability corresponding to this number of particles}$时，就不可能让任何粒子落在这个态上，即$\text{number of particles}=0$。
+2. Landau tube不一定长得像一个tube。我们仅仅知道，任何k-space中loop的面积是离散的。所以如果loop是一个奇形怪状的闭合loop，那Landau tube在这个面上的横截面也是奇形怪状的。也就是说，Landau tube的形状取决于k-space中轨道的形状。而k-space中轨道的形状又取决于等能量面的形状。所以Landau tube的形状取决于等能量面的形状。
 
 ## 3.4.3 Quantum oscillations
 
@@ -1222,22 +1223,41 @@ $$\frac{V|e|B}{2\pi^{2}\hbar}dk_{z}$$
 
 >[!Note] Proposition 3
 >As we vary $\vec{B}$, the field change required between two consecutive quantum oscillations is roughly:
->$$\Delta\left(  \frac{1}{B} \right)= \frac{2\pi|e|}{\hbar} \frac{1}{A_{\text{Fermi max}}}$$
->where $A_{\text{Fermi max}}$ is the maximum cross-sectional area of the Fermi surface.
+>$$\Delta\left(  \frac{1}{B} \right)= \frac{2\pi|e|}{\hbar} \frac{1}{A_{\text{ext}}}$$
+>where $A_{\text{ext}}$ is the local maximum cross-sectional area of the Fermi surface in the direction perpendicular to $\vec{B}$. $A_{ext}$ is called the extremal cross-section area.
 ## Proof.
 
-显然Landau tube贴近Fermi surface，当且仅当Landau tube面积贴近Fermi surface 最大面积。
+显然Landau tube贴近Fermi surface，当且仅当Landau tube面积贴近Fermi surface 在$\vec{B}$垂直方向的局部最大横截面积。
 
 当我们变动磁场，使得Landau tube的横截面积变动时，假设存在一个这种和Fermi surface贴的近的Landau tube。假设这是第$n$个Landau tube，那么就必须满足：
-$$A_{n}= \frac{2\pi|e|B}{\hbar}(n+\gamma) \sim A_{\text{Fermi max}},\text{ for some n}$$
+$$A_{n}= \frac{2\pi|e|B}{\hbar}(n+\gamma) \sim A_{\text{ext}},\text{ for some n}$$
 换句话说，这就要求：
-$$\frac{1}{B}= \frac{2\pi|e|}{\hbar} \frac{1}{A_{\text{Fermi max}}} (n+\gamma),\text{ for some }n$$
+$$\frac{1}{B}= \frac{2\pi|e|}{\hbar} \frac{1}{A_{\text{ext}}} (n+\gamma),\text{ for some }n$$
 考虑轻轻减少一下磁场，导致每个Landau tube缩小，使得第$n+1$个Landau tube缩进Fermi surface，并且和Fermi surface帖的很近，那么就有：
-$$\frac{1}{B}+\Delta\left( \frac{1}{B} \right)= \frac{2\pi|e|}{\hbar} \frac{1}{A_{\text{Fermi max}}}(n+1+\gamma)$$
+$$\frac{1}{B}+\Delta\left( \frac{1}{B} \right)= \frac{2\pi|e|}{\hbar} \frac{1}{A_{\text{ext}}}(n+1+\gamma)$$
 那么磁场变动就必须满足：
-$$\Delta\left( \frac{1}{B} \right)= \frac{2\pi|e|}{\hbar} \frac{1}{A_{\text{Fermi max}}} $$
+$$\Delta\left( \frac{1}{B} \right)= \frac{2\pi|e|}{\hbar} \frac{1}{A_{\text{ext}}} $$
 >[!Right]
 >$\blacksquare$
+
+我们可以定义一个oscillation沿磁场倒数变化出现的频率：
+
+>[!Note] Definition 1
+>Define the frequency of quantum oscillation as:
+>$$F= \frac{1}{\Delta(1/ B)}= \frac{\hbar}{2\pi|e|}A_{ext}$$
+
+## Ex:
+
+![[Drawing 2025-11-23 21.36.13.excalidraw|center|300]]
+考虑一个长得像花生一样的Fermi surface。在磁场沿$z$时，存在三个extremal orbit。所以，当改变磁场时，存在三个quantum oscillation的频率。
+
+## Ex:
+
+![[Drawing 2025-11-23 21.48.10.excalidraw|center]]
+考虑一个这种开放的Fermi surface。这上面的开放轨道不存在quantization。因为根本不闭合，Bohr-Sommerfeld quantization不适用。所以态可以连续地分布在开放轨道的区域。那么也就完全不存在quantum oscillation。因为磁场变化不会引起任何可参与transport的电子的变化。
+
+>[!Note] Proposition 4
+>Open orbits do not give rise to quantum oscillations.
 
 
 

@@ -316,6 +316,34 @@
             }
           },
           {
+            "id": "c4d868605b00b9b4",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Solid state.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Solid state"
+            }
+          },
+          {
+            "id": "89b807d0a4b7f628",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Solid state.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Solid state"
+            }
+          },
+          {
             "id": "727a365c9af8f118",
             "type": "leaf",
             "state": {
@@ -722,7 +750,7 @@
             }
           }
         ],
-        "currentTab": 21
+        "currentTab": 23
       }
     ],
     "direction": "vertical"
@@ -754,7 +782,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "quantum",
+                "query": "",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -893,10 +921,12 @@
       "obsidian-excalidraw-plugin:New drawing": false
     }
   },
-  "active": "f616631780d4b176",
+  "active": "89b807d0a4b7f628",
   "lastOpenFiles": [
-    "Excalidraw/Drawing 2025-11-23 20.30.31.excalidraw.md",
+    "Excalidraw/Drawing 2025-11-23 21.48.10.excalidraw.md",
     "Solid state.md",
+    "Excalidraw/Drawing 2025-11-23 21.36.13.excalidraw.md",
+    "Excalidraw/Drawing 2025-11-23 20.30.31.excalidraw.md",
     "Excalidraw/Drawing 2025-11-23 03.35.32.excalidraw.md",
     "Excalidraw/Drawing 2025-11-22 00.07.40.excalidraw.md",
     "WKB.md",
@@ -920,8 +950,6 @@
     "张量分析.md",
     "密度算子.md",
     "Hamilton原理与Lagrange方程.md",
-    "能均分定理，virial定理.md",
-    "Experimental/Thermoelectric effect of.md",
     "Pictures/31c55fba2a72bf93689505242fc94df3.jpg",
     "Pictures/Pasted image 20251116215527.png",
     "Pictures/Pasted image 20251116210714.png",
