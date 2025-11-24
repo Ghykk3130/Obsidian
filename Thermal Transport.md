@@ -22,5 +22,28 @@ $$\frac{Ds}{Dt}=-\nabla \cdot \vec{J}_{s}+ \frac{\partial s}{\partial t}=-\nabla
 >The entropy from the external world is $S_{e}=-\oint d\vec{A}\cdot \vec{J}_{s}$.
 >The entropy created inside is $S_{i}=\int d^{3}r\Theta$.
 
+>[!Note] Proposition 1
+>$$\Theta\geq 0$$
+## Proof.
+由热力学第二定律，这是显然。
+>[!Right]
+>$\blacksquare$
+
+在接下来的过程中，我们都将假设体积不被压缩，以至于$-pdV=0$。
+
+>[!Note] Proposition 2
+>Assuming that the volumes cannot be compressed. Then:
+>$$Tds=du-\sum_{i}\mu_{i}dn_{i}$$
+## Proof.
+由热力学第一定律，这是显然。
+>[!Right]
+>$\blacksquare$
+
+>[!Note] Definition 3
+>Given any volume with no particles flowing through its boundary, define the heat current as $\vec{J}_{q}$ such that:
+>$$\frac{\partial U}{\partial t}= - \oint d\vec{A}\cdot \vec{J}_{q}$$
+
+>[!Note] Proposition 3
+>If 
 
 

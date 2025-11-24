@@ -349,12 +349,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Untitled 1.md",
+                "file": "Thermal Transport.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Untitled 1"
+              "title": "Thermal Transport"
             }
           },
           {
@@ -796,7 +796,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "transport",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -831,11 +831,13 @@
               "title": "Bookmarks"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 200,
+    "collapsed": true
   },
   "right": {
     "id": "9003d078f8dbc4ed",
@@ -851,7 +853,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Untitled 1.md",
+                "file": "Thermal Transport.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -861,7 +863,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for Untitled 1"
+              "title": "Backlinks for Thermal Transport"
             }
           },
           {
@@ -935,8 +937,8 @@
   },
   "active": "d176808dbb5c2aac",
   "lastOpenFiles": [
-    "Untitled.md",
     "Untitled 1.md",
+    "Untitled.md",
     "Untitled 2.md",
     "Thermal Transport.md",
     "Solid state.md",
