@@ -1225,6 +1225,8 @@ $$\frac{V|e|B}{2\pi^{2}\hbar}dk_{z}$$
 >As we vary $\vec{B}$, the field change required between two consecutive quantum oscillations is roughly:
 >$$\Delta\left(  \frac{1}{B} \right)= \frac{2\pi|e|}{\hbar} \frac{1}{A_{\text{ext}}}$$
 >where $A_{\text{ext}}$ is the local maximum cross-sectional area of the Fermi surface in the direction perpendicular to $\vec{B}$. $A_{ext}$ is called the extremal cross-section area.
+
+^proposition3432
 ## Proof.
 
 显然Landau tube贴近Fermi surface，当且仅当Landau tube面积贴近Fermi surface 在$\vec{B}$垂直方向的局部最大横截面积。
@@ -1259,7 +1261,56 @@ $$\Delta\left( \frac{1}{B} \right)= \frac{2\pi|e|}{\hbar} \frac{1}{A_{\text{ext}
 >[!Note] Proposition 4
 >Open orbits do not give rise to quantum oscillations.
 
-## 3.4.4 de Haas-ven Alphen effect
+## 3.4.4 de Haas-van Alphen effect
+
+我们已经看到，quantum oscillation其实是态数在磁场变化下的震荡。如果态数发生震荡，那么系统内能也会发生震荡。考虑系统自由能：
+$$dF=-SdT+\mu dN-mdB$$
+若温度和粒子数不变，则有：
+$$dF=-mdB$$
+而在低温下，我们有：
+$$F=U-TS \sim U$$
+所以可以计算总磁化：
+$$m\sim - \frac{\partial U}{\partial B}$$
+或者计算磁化强度：
+$$M\sim- \frac{1}{V} \frac{\partial U}{\partial B}$$
+
+## Ex:
+
+我们来作一个具体计算。考虑一个$xy$平面的二维电子系统。磁场沿$z$方向。则一个电子的运动可由$x,y,k_{x},k_{y}$张成的相空间中轨迹描述。容易通过Schrodinger equation解得，一个电子的本征能量为：
+$$E_{\vec{k}}= \frac{\hbar^{2}k^{2}}{2m}$$
+因为电子在k-space中只能在等能量面上运动，而等能量面又是一个圆环，所以k-space中电子在圆环上运动。我们有圆环面积：
+$$A_{\vec{k}}= \frac{2\pi mE_{\vec{k}}}{\hbar^{2}}$$
+由于Onsager-Bohr-Sommerfeld quantization，圆环面积被离散化，所以存在约束：
+$$A_{\vec{k}}=\frac{2\pi mE_{\vec{k}}}{\hbar^{2}}=\frac{2\pi|e|B}{\hbar}(n+\gamma)$$
+所以能量被约束：
+$$E_{\vec{k}}=\hbar \frac{|e|B}{m}(n+\gamma)$$
+或者我们直接写为
+$$E_{n}=\hbar \omega_{c}\left( n+ \gamma \right)$$
+然后考虑约束：
+$$N\leq \sum_{n\text{ s.t. }E_{n}\leq\epsilon_{F}}f(E_{n})$$
+之所以是小于等于，是因为最高的Landau ring不一定被填满。但是所有的Landau ring必须能装下所有的电子。
+
+我们知道，2D的Landau ring具有degeneracy $\frac{|e|B}{2\pi\hbar}L_{x}L_{y}$。而低温下，这degeneracy中的每个态都有占据数$2$，所以Landau ring的数量$n_{F}$是最小的$n_{F}\in \mathbb{Z}$ such that：
+$$N\leq \frac{|e|B}{\pi\hbar}L_{x}L_{y}\cdot n_{F}$$
+所以：
+$$n_{F}= \left\lceil \frac{N\pi \hbar}{|e|BL_{x}L_{y}} \right\rceil $$
+整个系统内能为：
+$$\begin{align}
+U & = \sum_{n\leq n_{F}}E_{n}= \hbar \omega_{c}\gamma+ \hbar \omega_{c} \frac{n_{F}(n_{F}+1)}{2}
+\end{align}$$
+那么有magnitization：
+$$\begin{align}
+M & =- \frac{1}{V} \frac{\partial U}{\partial B} \\
+ & = - \frac{1}{V} \left( \hbar \frac{|e|}{m} \gamma+\hbar \frac{|e|}{m} \frac{n_{F}(n_{F}+1)}{2}\right) \\
+ & = - \frac{\hbar|e|}{2mV} \left\lceil  \frac{N\pi \hbar}{|e|BL_{x}L_{y}}   \right\rceil\left(\left\lceil  \frac{N\pi \hbar}{|e|BL_{x}L_{y}}   \right\rceil+1\right)  +\text{const.}
+\end{align}$$
+其中，ceiling function造成了震荡的行为。
+
+
+一般来说，magnitization会和态数以相同的频率震荡。由[[Solid state#^9e8624|proposition 3.4.3.2]]，每个magnitization的震荡频率都对应一个$A_{ext}$的大小。所以我们可以通过field scan，观察magnitization震荡，从而知道垂直于这个磁场方向，Fermi surface有多少extremal cross section，每个extremal cross section有多大。
+
+
+
 
 
 
