@@ -1160,12 +1160,20 @@ $$\begin{align}
 
 我们思考当磁场打开的那一刻，Landau tube具体是如何形成的。
 
-在没有磁场时，Fermi sea中的电子的态密度是均匀的。存在态数测度：
+在没有磁场时，Fermi sea中的电子的态密度是均匀的。电子处于Bloch state中。存在态数测度：
 $$\begin{align}
 \sum_{\vec{k}} \leadsto \frac{V}{(2\pi)^{3}}\int d^{3}k
 \end{align}$$
-在磁场打开后，因为不在Landau tube上的态都不能取到，但是总电子数又要守恒，
+我们必须接受下面命题：
 
+>[!Note] Proposition 1
+>A change of the parameters of the system does not change the dimension of its Hilbert space.
+
+例如说，调整势阱大小，打开磁场，都不会改变Hilbert空间维数。
+
+那么打开磁场后，既然Hilbert空间维数守恒，那么系统本征态态数也守恒。又因为不在Landau tube上的态都不能取到，所以这些态就被迫被挤压到Landau tube上，造成degeneracy。
+
+此时电子不再处于Bloch state中，因为Hamiltonina已经变了。电子的态是Bloch state叠加出来的波包。应该存在很多个相互垂直的态，它们的波包中心在k-space中都会映到同一点，但它们在r-space中的具体分布是不一样的，导致这种degeneracy。
 
 
 >[!Note] Proposition 1
@@ -1173,6 +1181,31 @@ $$\begin{align}
 >$$dN= \frac{V|e|B}{2\pi^{2}\hbar}dk_{z}$$
 >
 ## Proof.
+考虑一条Landau ring，作为某个Landau tube横截面$A_{n}$的边缘。
+
+在打开磁场后，$A_{n+1}-A_{n}$中的态都被压入$\partial A_{n}$中。我们先计算没磁场时$xy$面上的态密度。首先考虑边界条件：
+$$k_{x}= \frac{2\pi n_{x}}{L_{x}},k_{y}= \frac{2\pi n_{y}}{L_{y}}$$
+于是一个态占据的面积是：
+$$\frac{(2\pi)^{2}}{L_{x}L_{y}}$$
+所以态密度为：
+$$\frac{L_{x}L_{y}}{(2\pi)^{2}}$$
+那么$A_{n+1}-A_{n}$中的态数为：
+$$\begin{align}
+\text{number of states} & = (A_{n+1}-A_{n}) \frac{L_{x}L_{y}}{(2\pi)^{2}} \\
+ & = \frac{2\pi|e|B}{\hbar} \frac{L_{x}L_{y}}{(2\pi)^{2}}
+\end{align}$$
+现在我们考虑$z$方向。因为$k_{z}$存在边界条件：
+$$k_{z}= \frac{2\pi n_{z}}{L_{z}}$$
+所以$z$方向每走$\frac{2\pi}{L_{z}}$就会遇见一个态。也就是说打开磁场后，每走$\frac{2\pi}{L_{z}}$就会遇见一个Landau ring。
+
+所以Landau tube上$dk_{z}$距离内的态数为：
+$$\begin{align}
+\frac{dk_{z}}{\frac{2\pi}{L_{z}}} \cdot \frac{2\pi|e|B}{\hbar} \frac{L_{x}L_{y}}{(2\pi)^{2}}= \frac{V|e|B}{\hbar(2\pi)^{2}} dk_{z}
+\end{align}$$
+考虑自旋degeneracy，态数为：
+$$\frac{V|e|B}{2\pi^{2}\hbar}dk_{z}$$
+>[!Right]
+>$\blacksquare$
 
 
 
