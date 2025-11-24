@@ -1259,6 +1259,8 @@ $$\Delta\left( \frac{1}{B} \right)= \frac{2\pi|e|}{\hbar} \frac{1}{A_{\text{ext}
 >[!Note] Proposition 4
 >Open orbits do not give rise to quantum oscillations.
 
+## 3.4.4 de Haas-ven Alphen effect
+
 
 
 
