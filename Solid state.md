@@ -12,6 +12,7 @@
 3.1 [[Solid state#^c01609|Drude model]]
 3.2 [[Solid state#^999493|Semiclassical model]]
 3.3 [[Solid state#^7a571e|Bloch electrons in a magnetic field]]
+3.4 [[Solid state#^72f114|Quantum oscillations]]
 
 # 1.1 Reciprocal lattice 
 
@@ -1003,7 +1004,10 @@ $$T= \frac{\hbar^{2}}{em} \frac{\partial A}{\partial\epsilon}= \frac{\pi \hbar^{
 
 当外加磁场后，这一坨“连续体”中的每个电子开始沿着各自属于的能带的等能量面滑动。它们的轨道应该都垂直于$\vec{B}$。
 
-# 3.4 Quantization of Bloch electron motion
+# 3.4 Quantum oscillations
+
+^72f114
+
 ## 3.4.1 Landau levels
 
 考虑恒定磁场中的自由带电粒子$q$。我们将这个系统量子化。我们有Hamiltonian：
@@ -1157,7 +1161,7 @@ $$\begin{align}
 ## Remark
 你可能会说，在Fermi surface上任何$\vec{k}$位置体元内，都有不为零的电子数$\frac{1}{4\pi^{3}}d^{3}k\sum_{n}f(\epsilon_{n})$。所以在除了Landau tube与Fermi surface的交线之外的Fermi surface上的区域，不也有非零的占据数吗？但是，$f(\epsilon_{n})$的含义是，若存在一个non-degenerate量子态，对应能量$\epsilon_{n}$，并且这个量子态是accessible的，那么这个态的占据数为$f(\epsilon_{n})$。如果这个态本身不accessible，那么我在推导$f(\epsilon_{n})=\text{number of particles}\times \text{the probability corresponding to this number of particles}$时，就不可能让任何粒子落在这个态上，即$\text{number of particles}=0$。
 
-## 3.4.3 Quantum oscillation
+## 3.4.3 Quantum oscillations
 
 我们思考当磁场打开的那一刻，Landau tube具体是如何形成的。
 
@@ -1177,7 +1181,7 @@ $$\begin{align}
 此时电子不再处于Bloch state中，因为Hamiltonina已经变了。电子的态是Bloch state叠加出来的波包。应该存在很多个相互垂直的态，它们的波包中心在k-space中都会映到同一点，但它们在r-space中的具体分布是不一样的，导致这种degeneracy。
 
 
->[!Note] Proposition 1
+>[!Note] Proposition 2
 >Let $\vec{B}\parallel z$. The number of states on a Landau tube within $dk_{z}$ is:
 >$$dN= \frac{V|e|B}{2\pi^{2}\hbar}dk_{z}$$
 >
@@ -1211,6 +1215,29 @@ $$\frac{V|e|B}{2\pi^{2}\hbar}dk_{z}$$
 我们发现这和Landau level的degeneracy一模一样。Landau level说，一个Landau ring里面的态数为$N= \frac{|e|B}{2\pi\hbar}L_{x}L_{y}$。这和我们这里得到的一样。
 
 
+
+如果Fermi surface中最大的Landau tube和Fermi surface非常近，例如这个Landau tube上的态的能量都大概在$\gtrsim \epsilon_{F}-kT$，那么这个Landau tube上就有很多态可以参与transport。这就称为quantum oscillation。
+
+![[Drawing 2025-11-23 20.30.31.excalidraw|center|200]]
+
+>[!Note] Proposition 3
+>As we vary $\vec{B}$, the field change required between two consecutive quantum oscillations is roughly:
+>$$\Delta\left(  \frac{1}{B} \right)= \frac{2\pi|e|}{\hbar} \frac{1}{A_{\text{Fermi max}}}$$
+>where $A_{\text{Fermi max}}$ is the maximum cross-sectional area of the Fermi surface.
+## Proof.
+
+显然Landau tube贴近Fermi surface，当且仅当Landau tube面积贴近Fermi surface 最大面积。
+
+当我们变动磁场，使得Landau tube的横截面积变动时，假设存在一个这种和Fermi surface贴的近的Landau tube。假设这是第$n$个Landau tube，那么就必须满足：
+$$A_{n}= \frac{2\pi|e|B}{\hbar}(n+\gamma) \sim A_{\text{Fermi max}},\text{ for some n}$$
+换句话说，这就要求：
+$$\frac{1}{B}= \frac{2\pi|e|}{\hbar} \frac{1}{A_{\text{Fermi max}}} (n+\gamma),\text{ for some }n$$
+考虑轻轻减少一下磁场，导致每个Landau tube缩小，使得第$n+1$个Landau tube缩进Fermi surface，并且和Fermi surface帖的很近，那么就有：
+$$\frac{1}{B}+\Delta\left( \frac{1}{B} \right)= \frac{2\pi|e|}{\hbar} \frac{1}{A_{\text{Fermi max}}}(n+1+\gamma)$$
+那么磁场变动就必须满足：
+$$\Delta\left( \frac{1}{B} \right)= \frac{2\pi|e|}{\hbar} \frac{1}{A_{\text{Fermi max}}} $$
+>[!Right]
+>$\blacksquare$
 
 
 
