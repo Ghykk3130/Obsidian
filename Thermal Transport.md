@@ -1,5 +1,7 @@
 # 1. Local equilibrium
 
+^5f818e
+
 假设系统整体不处在热力学平衡。为了描述系统，我们作如下假设：
 - 系统的每个体元由于体系小，relaxation time极短，都处于热力学平衡之中。
 - 系统每个体元虽然很小，但仍然是宏观的热力学系统，符合统计力学规律。
@@ -88,6 +90,8 @@ $$\begin{align}
 >[!Note] Proposition 4
 >Define $\vec{X}_{q}=\nabla\left( \frac{1}{T} \right),\ \vec{X}_{n}=- \frac{1}{T}\nabla \mu$. Then
 >$$\Theta=\vec{J}_{q}\cdot \nabla\left( \frac{1}{T} \right)- \frac{\vec{J}_{n}}{T}\cdot \nabla \mu=\vec{J}_{q}\cdot \vec{X}_{q}+\vec{J}_{n}\cdot \vec{X}_{n}$$
+
+^proposition14
 ## Proof.
 首先我们有：
 $$\begin{align}
@@ -110,3 +114,20 @@ $$\begin{align}
 \end{align}$$
 >[!Right]
 >$\blacksquare$
+# 2. Linear response
+
+对于一个体元构成的热力学系统，我们可以选择一系列热力学量的体密度$a_{i}$来描述它。这些热力学量的体密度可以根据连续性方程引出对应流量：
+$$\frac{\partial a_{i}}{\partial t}=-\nabla \cdot \vec{J}_{i}$$
+将[[Thermal Transport#^8f38a3|proposition 1.4]]推广。我们发现，局部熵产生率一般可以写成流量的线性组合：
+$$\Theta=\sum_{i}\vec{J}_{i}\cdot \vec{X}_{i}$$
+我们将线性组合的系数$\vec{X}_{i}$定义为热力学力。
+
+我们重新排布下标，将所有矢量都拆成其分量。例如$J_{i}$表示某个流量的某个分量。
+
+一般来说，在平衡位置周围，热力学力和流量也成线性关系：
+$${J}_{i}=\sum_{j}L_{ij}X_{j}$$
+存在如下定理：
+
+>[!Note] Theorem 1 (Onsager's relation)
+>$L$ is symmetric.
+
