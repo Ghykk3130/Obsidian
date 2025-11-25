@@ -155,3 +155,27 @@ $$\begin{align}
  & L_{11}L_{22}-L_{12}^{2}\geq 0 \\
  & L_{11}>0
 \end{align}$$
+# 3. Seebeck effect
+
+在讨论Seebeck effect之前，我们先讨论电化学势。若粒子不带电，则粒子数变化引起的内能变化为$dU=\mu_{c} dN$。但如果粒子带电，则还需要额外引起$e\phi dN$的内能变化。所以热力学第一定律写为：
+$$dU=TdS-pdV+\mu_{c}dN+e\phi dN$$
+也就是说，化学势可以分为两部分：
+$$\begin{align}
+\mu=\frac{\partial U}{\partial N}=\mu_{c}+e\phi=\mu_{c}+\mu_{e}
+\end{align}$$
+也就是说，$e\phi$可以当做一个化学势$\mu_{e}$，称为电化学势。
+
+
+考虑一块金属中存在热流与电子流。则我们有：
+$$\begin{align}
+ & \vec{J}_{q}=L_{qq}\vec{X}_{q}+L_{qn}\vec{X}_{n} \\
+ & \vec{J}_{n}=L_{nq}\vec{X}_{q}+L_{nn}\vec{X}_{n}  
+\end{align}$$
+其中，我们在[[Thermal Transport#^8f38a3|proposition 1.4]]已经算过$\vec{X}_{q},\vec{X}_{n}$了。所以我们有：
+$$\begin{align}
+ & \vec{J}_{q}=L_{qq}\nabla\left( \frac{1}{T} \right)+L_{qn}\left( -\frac{\nabla \mu}{T} \right) \\
+ & \vec{J}_{n}=L_{nq}\nabla\left( \frac{1}{T} \right)+L_{nn}\left( - \frac{\nabla \mu}{T} \right)
+\end{align}$$
+我们知道，金属的化学势$\mu_{c}$对于temperature的dependence很弱。我们可以通过$N=\sum_{\vec{k}}f(\epsilon_{\vec{k}})$把化学势反解出来证明这一点。
+
+那么
