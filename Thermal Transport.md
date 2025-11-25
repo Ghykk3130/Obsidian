@@ -89,13 +89,9 @@ $$\begin{align}
 >[!Note] Proposition 3
 >$$\Theta=\sum_{i}\vec{J}_{i}\cdot \vec{X}_{i}$$
 
+现在研究只有热流与物质流的情况。
 
-
-
-
-
-
->[!Note] Proposition 3
+>[!Note] Proposition 4
 >$$\vec{J}_{u}=\vec{J}_{q}+\mu\vec{J}_{n}$$
 ## Proof.
 任取一点。对于该点有：
@@ -107,7 +103,7 @@ $$\begin{align}
 >[!Right]
 >$\blacksquare$
 
-我们用下面两条定律将上面定义的量联系起来：
+我们用下面两条定联系起来：
 
 >[!Note] Postulate 1
 >$$\vec{J}_{s}= \frac{\vec{J}_{q}}{T}$$
@@ -118,7 +114,13 @@ $$\begin{align}
 >$$\vec{J}_{q}=-\kappa \nabla T$$
 
 ## Ex:
-$\kappa$总是大于零的。因为：
+$\kappa$总是大于零的。考虑一仅有热流的系统。则局域熵产生率为：
+$$\Theta=\vec{J}_{q}\cdot \vec{X}_{q}$$
+我们有：
+$$\begin{align}
+\vec{X}_{q}=\nabla\left(\frac{\partial s}{\partial q}\right)=\nabla\left( \frac{1}{T} \right)
+\end{align}$$
+所以：
 $$\begin{align}
  & \Theta \geq 0
  \\ \implies & \vec{J}_{q}\cdot \nabla\left( \frac{1}{T} \right) =-\vec{J}_{q}\cdot \frac{1}{T^{2}}\nabla T\geq 0 \\
@@ -127,8 +129,12 @@ $$\begin{align}
 \end{align}$$
 >[!Right]
 >$\blacksquare$
-
-
+## Ex:
+我们还可以计算粒子流对应的热力学力：
+$$\begin{align}
+\vec{X}_{n} & = \nabla\left( \frac{\partial s}{\partial n} \right) \\
+ & = \nabla\left( - \frac{\mu}{T} \right)
+\end{align}$$
 
 
 
