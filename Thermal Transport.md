@@ -118,16 +118,40 @@ $$\begin{align}
 
 对于一个体元构成的热力学系统，我们可以选择一系列热力学量的体密度$a_{i}$来描述它。这些热力学量的体密度可以根据连续性方程引出对应流量：
 $$\frac{\partial a_{i}}{\partial t}=-\nabla \cdot \vec{J}_{i}$$
-将[[Thermal Transport#^8f38a3|proposition 1.4]]推广。我们发现，局部熵产生率一般可以写成流量的线性组合：
-$$\Theta=\sum_{i}\vec{J}_{i}\cdot \vec{X}_{i}$$
-我们将线性组合的系数$\vec{X}_{i}$定义为热力学力。
+将[[Thermal Transport#^8f38a3|proposition 1.4]]推广。我们发现，经验性地：
+- 局部熵产生率一般可以写成流量的线性组合：
+$$\Theta=\sum_{i}\vec{J}_{i}\cdot \vec{X}_{i}$$     我们将线性组合的系数$\vec{X}_{i}$定义为热力学力。
+- 在系统平衡时，$\vec{X}  _{i}=0,\forall i$。
 
 我们重新排布下标，将所有矢量都拆成其分量。例如$J_{i}$表示某个流量的某个分量。
 
-一般来说，在平衡位置周围，热力学力和流量也成线性关系：
-$${J}_{i}=\sum_{j}L_{ij}X_{j}$$
+一般来说，在平衡位置，所有热力学量密度没有变化。流量为零$J_{i}=0$。同时，我们经验性地知道，在平衡位置，热力学力$X_{i}=0$。稍稍偏离平衡位置，可以作展开：
+$$\begin{align}
+J_{i}= \sum_{j} \frac{\partial J_{i}}{\partial X_{j}}X_{j }+ \sum_{j,k} \frac{\partial^{2}J_{i}}{\partial X_{j}\partial X_{k}}X_{j}X_{k}+\dots
+\end{align}$$
+则在平衡位置附近，热力学力和流量呈线性关系：
+$${J}_{i}=\sum_{j}  \frac{\partial J_{i}}{\partial X_{j}}X_{j}=  \sum_{j}L_{ij}X_{j}$$
 存在如下定理：
 
 >[!Note] Theorem 1 (Onsager's relation)
 >$L$ is symmetric.
 
+## Ex:
+
+当存在两种流量，两种热力学力时，存在如下约束：
+$$\Theta=\sum_{i}J_{i}X_{i}=\sum_{i,j}L_{ij}X_{i}X_{j}\geq 0$$
+所以$(L_{ij})$为正定。这就要求特征方程根永远为非负。
+$$\begin{vmatrix}
+L_{11}-\lambda & L_{12} \\
+L_{12} & L_{22}-\lambda 
+\end{vmatrix}=0\implies \lambda^{2}-(L_{11}+L_{22})\lambda+L_{11}L_{22}-L_{12}^{2}=0$$
+所以：
+$$\begin{align}
+ & L_{11}L_{22}-L_{12}^{2}\geq 0 \\
+ & L_{11}+L_{22}>0
+\end{align}$$
+容易看出$L_{11}L_{22}$同号。所以等价于：
+$$\begin{align}
+ & L_{11}L_{22}-L_{12}^{2}\geq 0 \\
+ & L_{11}>0
+\end{align}$$

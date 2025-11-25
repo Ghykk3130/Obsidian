@@ -363,12 +363,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "气体.md",
+                "file": "Thermal Transport.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "气体"
+              "title": "Thermal Transport"
             }
           },
           {
@@ -849,7 +849,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 200,
+    "collapsed": true
   },
   "right": {
     "id": "9003d078f8dbc4ed",
@@ -865,7 +866,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "气体.md",
+                "file": "Thermal Transport.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -875,7 +876,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for 气体"
+              "title": "Backlinks for Thermal Transport"
             }
           },
           {
@@ -949,6 +950,7 @@
   },
   "active": "079b07d2a8c9132b",
   "lastOpenFiles": [
+    "气体.md",
     "溶液.md",
     "液滴.md",
     "Thermal Transport.md",
@@ -975,7 +977,6 @@
     "球谐函数与旋转表示.md",
     "Clebsch-Gordan系数.md",
     "Homework/球谐函数与旋转表示.md",
-    "Homework/Physics 511 Homework 8.md",
     "Pictures/31c55fba2a72bf93689505242fc94df3.jpg",
     "Pictures/Pasted image 20251116215527.png",
     "Pictures/Pasted image 20251116210714.png",
