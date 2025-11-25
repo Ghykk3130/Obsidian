@@ -30,6 +30,7 @@ Caveats:
 - First put some thermal epoxy on the tip of the thermal couples to avoid possible connection to the sample.
 - The two thermal couples would be wind together in the middle to increase the thermal conductivity.
 - Thermal couples could be attached to pillars with silver epoxy. Because there's no conduction. 
+- The gold wires on the heater to the sample should be attached using thermal epoxy. This is to prevent electric conduction, and to preserve heat conduction. 
 
 
 # To-do

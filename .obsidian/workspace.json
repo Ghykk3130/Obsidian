@@ -791,23 +791,6 @@
             }
           },
           {
-            "id": "f69ba2cf946ad0e0",
-            "type": "leaf",
-            "state": {
-              "type": "search",
-              "state": {
-                "query": "transport",
-                "matchingCase": false,
-                "explainSearch": false,
-                "collapseAll": false,
-                "extraContext": false,
-                "sortOrder": "alphabetical"
-              },
-              "icon": "lucide-search",
-              "title": "Search"
-            }
-          },
-          {
             "id": "e17d86fcb6b11eb3",
             "type": "leaf",
             "state": {
@@ -830,9 +813,26 @@
               "icon": "lucide-bookmark",
               "title": "Bookmarks"
             }
+          },
+          {
+            "id": "f69ba2cf946ad0e0",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "thermal transport",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "Search"
+            }
           }
         ],
-        "currentTab": 1
+        "currentTab": 3
       }
     ],
     "direction": "horizontal",
@@ -937,10 +937,11 @@
   },
   "active": "d176808dbb5c2aac",
   "lastOpenFiles": [
+    "Experimental/Thermoelectric effect of.md",
+    "Thermal Transport.md",
     "Untitled 1.md",
     "Untitled.md",
     "Untitled 2.md",
-    "Thermal Transport.md",
     "Solid state.md",
     "Excalidraw/Drawing 2025-11-23 21.48.10.excalidraw.md",
     "Excalidraw/Drawing 2025-11-23 21.36.13.excalidraw.md",
@@ -963,7 +964,6 @@
     "Homework/Physics 511 Homework 8.md",
     "Homework/Physics 510 Homework 10.md",
     "Homework/Physics 510 Homework 5.md",
-    "Homework/Physics 510 Homework 6.md",
     "Pictures/31c55fba2a72bf93689505242fc94df3.jpg",
     "Pictures/Pasted image 20251116215527.png",
     "Pictures/Pasted image 20251116210714.png",

@@ -43,7 +43,33 @@ $$\frac{Ds}{Dt}=-\nabla \cdot \vec{J}_{s}+ \frac{\partial s}{\partial t}=-\nabla
 >Given any volume with no particles flowing through its boundary, define the heat current as $\vec{J}_{q}$ such that:
 >$$\frac{\partial U}{\partial t}= - \oint d\vec{A}\cdot \vec{J}_{q}$$
 
+>[!Note] Postulate 1
+>$$\vec{J}_{s}= \frac{\vec{J}_{q}}{T}$$
+
+
 >[!Note] Proposition 3
->If 
+>If the density of density of particles is fixed, then:
+>$$\Theta=\vec{J}_{q}\cdot \nabla\left( \frac{1}{T} \right)$$
+## Proof.
+首先我们有：
+$$\frac{\partial u}{\partial t}= -\nabla \cdot \vec{J}_{q}$$
+若粒子密度不变，我们有：
+$$\begin{align}
+ & du=Tds \\
+\implies &  \frac{\partial u}{\partial t}=T \frac{D s}{D t}=T(-\nabla \cdot \vec{J}_{s}+\Theta)
+\end{align}$$
+于是便有：
+$$\begin{align}
+ & -\nabla \cdot \vec{J}_{q}=-T\nabla \cdot \vec{J}_{s}+T\Theta \\
+\implies & - \frac{1}{T}\nabla \cdot \vec{J}_{q} =-\nabla \cdot \vec{J}_{s}+\Theta \\
+\implies & -\nabla \cdot \left( \frac{\vec{J}_{q}}{T} \right)+\vec{J}_{q}\cdot \nabla\left( \frac{1}{T} \right)=-\nabla \cdot \vec{J}_{s}+\Theta \\
+\implies & -\nabla \cdot \vec{J}_{s}+\vec{J}_{q}\cdot \nabla\left( \frac{1}{T} \right)=-\nabla \cdot \vec{J}_{s}+\Theta \\
+\implies & \Theta=\vec{J}_{q}\cdot \nabla\left( \frac{1}{T} \right)
+\end{align}$$
+>[!Right]
+>$\blacksquare$
+
+
+
 
 
