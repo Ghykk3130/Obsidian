@@ -1,26 +1,39 @@
-# Local equilibrium
+# 1. Local equilibrium
 
 假设系统整体不处在热力学平衡。为了描述系统，我们作如下假设：
 - 系统的每个体元由于体系小，relaxation time极短，都处于热力学平衡之中。
 - 系统每个体元虽然很小，但仍然是宏观的热力学系统，符合统计力学规律。
 
-对于任意一个体积，我们可以定义熵流：
+对于任意一个体积，我们可以定义一系列流密度：
 
 >[!Note] Definition 1
->Given a volume $\Sigma$, define the entropy current out of the volume as $\vec{J}_{s}$ such that:
->$$S_{out}=\oint_{\partial\Sigma}d\vec{A} \cdot \vec{J}_{s}$$
+>Given a volume, 
+>- define the heat flux density as $\vec{J}_{q}$ such that:
+>$$\frac{\partial Q}{\partial t}= - \oint d\vec{A}\cdot \vec{J}_{q}$$
+>- define the particle flux density as $\vec{J}_{n}$ such that:
+>$$\frac{\partial N}{\partial t}=-\oint d\vec{A}\cdot \vec{J}_{n}$$
+>- define the internal energy flux density as $\vec{J}_{u}$ such that:
+>$$\frac{\partial U}{\partial t}=-\oint d\vec{A}\cdot \vec{J}_{u}$$
+## Remark
+以上定义，都是在假设体积内部没有$Q,N,U$的源。
 
-那么对于任何一个体元，我们必有：
+对于熵，体积内部是可以有源的。即便是封闭体系，没有熵的流入，体系的熵还是可以增加。
+
+我们可以将熵的变化进行细分：对于任何一个体元，我们必有：
 $$\frac{Ds}{Dt}=-\nabla \cdot \vec{J}_{s}+ \frac{\partial s}{\partial t}=-\nabla \cdot \vec{J}_{s}+\Theta$$
 其中$s$为熵的体积密度。$\Theta$为局部熵产生率。
 
 我们从而可以将某点熵的变化归为两类。一种是从外界流入的，一种是该点内部产生的。对于有限体积，同样可以做类似定义：
 
 >[!Note] Definition 2
->Given a volume $\Sigma_{}$, define the entropy as:
+>Given a volume,
+>- define the entropy as:
 >$$S=S_{i}+S_{e}$$
->The entropy from the external world is $S_{e}=-\oint d\vec{A}\cdot \vec{J}_{s}$.
->The entropy created inside is $S_{i}=\int d^{3}r\Theta$.
+>- define the entropy flux density as:
+>$$\frac{\partial S_{e}}{\partial t}=- \oint d\vec{A}\cdot \nabla \vec{J}_{s}$$
+>- define the local entropy production rate as:
+>$$\frac{\partial S_{i}}{\partial t}=\int d^{3}r\Theta$$
+
 
 >[!Note] Proposition 1
 >$$\Theta\geq 0$$
@@ -29,7 +42,7 @@ $$\frac{Ds}{Dt}=-\nabla \cdot \vec{J}_{s}+ \frac{\partial s}{\partial t}=-\nabla
 >[!Right]
 >$\blacksquare$
 
-在接下来的过程中，我们都将假设体积不被压缩，以至于$-pdV=0$。
+在接下来的过程中，我们都将假设体积不被压缩，以至于$-pdV=0$。我们获得热力学第一定律的密度形式：
 
 >[!Note] Proposition 2
 >Assuming that the volumes cannot be compressed. Then:
@@ -39,37 +52,61 @@ $$\frac{Ds}{Dt}=-\nabla \cdot \vec{J}_{s}+ \frac{\partial s}{\partial t}=-\nabla
 >[!Right]
 >$\blacksquare$
 
->[!Note] Definition 3
->Given any volume with no particles flowing through its boundary, define the heat current as $\vec{J}_{q}$ such that:
->$$\frac{\partial U}{\partial t}= - \oint d\vec{A}\cdot \vec{J}_{q}$$
+>[!Note] Proposition 3
+>$$\vec{J}_{u}=\vec{J}_{q}+\mu\vec{J}_{n}$$
+## Proof.
+任取一点。对于该点有：
+$$\begin{align}
+ & du=dq+\mu dn \\
+\implies & \frac{\partial u}{\partial t}=\frac{\partial q}{\partial t}+\mu \frac{\partial n}{\partial t} \\
+\implies & \vec{J}_{u}=\vec{J}_{q}+\mu \vec{J}_{n}
+\end{align}$$
+>[!Right]
+>$\blacksquare$
+
+我们用下面两条定律将上面定义的量联系起来：
 
 >[!Note] Postulate 1
 >$$\vec{J}_{s}= \frac{\vec{J}_{q}}{T}$$
 
 
->[!Note] Proposition 3
->If the density of density of particles is fixed, then:
->$$\Theta=\vec{J}_{q}\cdot \nabla\left( \frac{1}{T} \right)$$
-## Proof.
-首先我们有：
-$$\frac{\partial u}{\partial t}= -\nabla \cdot \vec{J}_{q}$$
-若粒子密度不变，我们有：
+>[!Note] Postulate 2
+>The Fourier law of heat conduction:
+>$$\vec{J}_{q}=-\kappa \nabla T$$
+
+## Ex:
+$\kappa$总是大于零的。因为：
 $$\begin{align}
- & du=Tds \\
-\implies &  \frac{\partial u}{\partial t}=T \frac{D s}{D t}=T(-\nabla \cdot \vec{J}_{s}+\Theta)
-\end{align}$$
-于是便有：
-$$\begin{align}
- & -\nabla \cdot \vec{J}_{q}=-T\nabla \cdot \vec{J}_{s}+T\Theta \\
-\implies & - \frac{1}{T}\nabla \cdot \vec{J}_{q} =-\nabla \cdot \vec{J}_{s}+\Theta \\
-\implies & -\nabla \cdot \left( \frac{\vec{J}_{q}}{T} \right)+\vec{J}_{q}\cdot \nabla\left( \frac{1}{T} \right)=-\nabla \cdot \vec{J}_{s}+\Theta \\
-\implies & -\nabla \cdot \vec{J}_{s}+\vec{J}_{q}\cdot \nabla\left( \frac{1}{T} \right)=-\nabla \cdot \vec{J}_{s}+\Theta \\
-\implies & \Theta=\vec{J}_{q}\cdot \nabla\left( \frac{1}{T} \right)
+ & \Theta \geq 0
+ \\ \implies & \vec{J}_{q}\cdot \nabla\left( \frac{1}{T} \right) =-\vec{J}_{q}\cdot \frac{1}{T^{2}}\nabla T\geq 0 \\
+\implies & \kappa  \frac{|\nabla T |^{2}}{T^{2}}\geq 0 \\
+\implies & \kappa\geq 0
 \end{align}$$
 >[!Right]
 >$\blacksquare$
 
-
-
-
-
+>[!Note] Proposition 4
+>Define $\vec{X}_{q}=\nabla\left( \frac{1}{T} \right),\ \vec{X}_{n}=- \frac{1}{T}\nabla \mu$. Then
+>$$\Theta=\vec{J}_{q}\cdot \nabla\left( \frac{1}{T} \right)- \frac{\vec{J}_{n}}{T}\cdot \nabla \mu=\vec{J}_{q}\cdot \vec{X}_{q}+\vec{J}_{n}\cdot \vec{X}_{n}$$
+## Proof.
+首先我们有：
+$$\begin{align}
+ & \vec{J}_{u}=\vec{J}_{q}+\mu \vec{J}_{n } \\
+\implies & \nabla \cdot \vec{J}_{u} =\nabla \cdot \vec{J}_{q}+\nabla \cdot(\mu \vec{J}_{n}) \\
+\implies & - \frac{\partial u}{\partial t}=\nabla \cdot\left( T\vec{J}_{s} \right) + \vec{J}_{n}\cdot \nabla \mu-\mu \frac{\partial n}{\partial t} \\
+\implies & - \frac{\partial u}{\partial t}=\vec{J}_{s}\cdot \nabla T+T\nabla \cdot \vec{J}_{s}+\vec{J}_{n}\cdot \nabla \mu-\mu \frac{\partial n}{\partial t}
+\end{align}$$
+另一方面，我们又知道：
+$$\begin{align}
+\frac{\partial u}{\partial t} & =T \frac{Ds}{Dt}+\mu \frac{\partial n}{\partial t} \\
+ & = T\left( -\nabla \cdot \vec{J}_{s}+\Theta \right)+\mu \frac{\partial n}{\partial t}
+\end{align}$$
+所以就有：
+$$\begin{align}
+ & -T\Theta=\vec{J}_{s}\cdot\nabla T+\vec{J}_{n}\cdot \nabla \mu \\
+\implies & \Theta=- \frac{\vec{J}_{s}}{T}\cdot\nabla T-\frac{\vec{J}_{n}}{T}\cdot \nabla \mu \\
+\implies & \Theta=\vec{J}_{q}\cdot\left(- \frac{\nabla T}{T^{2}} \right)- \frac{\vec{J}_{n}}{T}\cdot \nabla \mu \\
+\implies & \Theta=\vec{J}_{q}\cdot \nabla\left( \frac{1}{T} \right)- \frac{\vec{J}_{n}}{T}\cdot \nabla \mu
+\end{align}$$
+>[!Right]
+>$\blacksquare$
