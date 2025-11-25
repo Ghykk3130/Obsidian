@@ -203,6 +203,31 @@ $$\begin{align}
  & \vec{J}_{q}=L_{qq}\nabla\left( \frac{1}{T} \right)+L_{qn}\left( -\frac{\nabla \mu}{T} \right) \\
  & \vec{J}_{n}=L_{nq}\nabla\left( \frac{1}{T} \right)+L_{nn}\left( - \frac{\nabla \mu}{T} \right)
 \end{align}$$
-我们知道，金属的化学势$\mu_{c}$对于temperature的dependence很弱。我们可以通过$N=\sum_{\vec{k}}f(\epsilon_{\vec{k}})$把化学势反解出来证明这一点。
+考虑两种金属，没有电流。在金属B上任意一点测电压。
 
-那么
+![[Drawing 2025-11-25 17.49.35.excalidraw|center]]
+
+令$\vec{J}_{n}=0$则有：
+$$\begin{align}
+ & L_{nq}\nabla\left( \frac{1}{T} \right)+L_{nn}\left( - \frac{\nabla \mu}{T} \right)=0 \\
+\implies & -L_{nq} \frac{\nabla T}{T^{2}}-L_{nn} \frac{\nabla \mu}{T}=0 \\
+\implies & \nabla \mu=- \frac{L_{nq}}{L_{nn}} \frac{\nabla T}{T}
+\end{align}$$
+在两种金属线$A,B$上分别积分，我们得到：
+$$\begin{align}
+ & \mu_{2}-\mu_{1}= -\int_{T_{1}}^{T_{2}}dT \frac{L_{nq}^A}{L_{nn}^A} \frac{1}{T} \\
+ & \mu_{l}-\mu_{1}=-\int_{T_{1}^{}}^TdT \frac{L_{nq}^B}{L_{nn}^B} \frac{ 1}{T} \\
+ & \mu_{2}-\mu_{r}=- \int_{T}^{T_{2}}dT \frac{L_{nq}^B}{L_{nn}^B} \frac{1}{T}
+\end{align}$$
+消元得到：
+$$\mu_{r}-\mu_{l}=\int_{T_{1}}^{T_{2}}dT\left( \frac{L_{nq}^B}{L_{nn}^B}- \frac{L_{nq}^A}{L_{nn}^A} \right)  \frac{1}{T}$$
+我们知道，$V$两侧不存在温度差，所以$\mu_{cr}=\mu_{cl}$。所以化学式差全部是电化学势差。于是便有：
+$$\Delta \phi=\frac{1}{e}(\mu_{r}-\mu_{l})=\int_{T_{1}}^{T_{2}}dT\left( \frac{L_{nq}^B}{eL_{nn}^B}- \frac{L_{nq}^A}{eL_{nn}^A} \right)  \frac{1}{T}$$
+我们取测电压的点为$T_{2}$点，并固定$T_{1}$，对于$T_{2}$微分，我们有：
+$$\frac{\partial \phi}{\partial T}=\frac{L_{nq}^B}{eTL_{nn}^B}- \frac{L_{nq}^A}{eTL_{nn}^A}$$
+定义Seebeck coefficient：
+$$\begin{align}
+ & S_{B}= \frac{L_{nq}^B}{eTL_{nn}^B}, S_{A}= \frac{L_{nq}^A}{eTL_{nn}^A},S_{BA}=S_{B}-S_{A}
+\end{align}$$
+所以，在两金属线交点的B金属部分，温度梯度引起一个电势梯度：
+$$\Delta \phi=(S_{B}-S_{A})\Delta T$$
