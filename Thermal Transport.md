@@ -19,6 +19,13 @@
 ## Remark
 以上定义，都是在假设体积内部没有$Q,N,U$的源。
 
+显然，它们都有微分形式：
+$$\begin{align}
+ & \frac{\partial q}{\partial t}=-\nabla \cdot \vec{J}_{q} \\
+ & \frac{\partial n}{\partial t}=- \nabla \cdot \vec{J}_{n} \\
+ & \frac{\partial u}{\partial t}=- \nabla \cdot \vec{J}_{u}
+\end{align}$$
+
 对于熵，体积内部是可以有源的。即便是封闭体系，没有熵的流入，体系的熵还是可以增加。
 
 我们可以将熵的变化进行细分：对于任何一个体元，我们必有：
@@ -36,6 +43,8 @@ $$\frac{Ds}{Dt}=-\nabla \cdot \vec{J}_{s}+ \frac{\partial s}{\partial t}=-\nabla
 >- define the local entropy production rate as:
 >$$\frac{\partial S_{i}}{\partial t}=\int d^{3}r\Theta$$
 
+显然具有微分形式：
+$$\frac{\partial s}{\partial t}= -\nabla \cdot \vec{J}_{s}+\Theta$$
 
 >[!Note] Proposition 1
 >$$\Theta\geq 0$$
@@ -53,6 +62,38 @@ $$\frac{Ds}{Dt}=-\nabla \cdot \vec{J}_{s}+ \frac{\partial s}{\partial t}=-\nabla
 由热力学第一定律，这是显然。
 >[!Right]
 >$\blacksquare$
+
+广义地来讲，某点熵密度是各种热力学量的密度的函数。熵密度不能显含时间。这是因为若所有热力学量不变，单看熵对时间的偏导，熵不可能变化，因为熵是state quantity。我们写：
+$$s=s(a_{1},\dots,a_{n})$$
+于是，该点熵的时间导数为：
+$$\begin{align}
+\frac{\partial s}{\partial t } & =\sum_{i} \frac{\partial s}{\partial a_{i}} \frac{\partial a_{i}}{\partial t} \\
+ & = \sum_{i} \frac{\partial s}{\partial a_{i}}(-\nabla \cdot \vec{J}_{i}) \\
+ & = -\nabla \cdot\left(  \sum_{i} \frac{\partial s}{\partial a_{i}}\vec{J}_{i} \right)+ \sum_{i} \vec{J}_{i}\cdot \nabla\left( \frac{\partial s}{\partial a_{i}} \right)
+\end{align}$$
+比较发现：
+$$\begin{align}
+ & \vec{J}_{s}=\sum_{i} \frac{\partial s}{\partial a_{i}}\vec{J}_{i} \\
+ & \Theta=\sum_{i}\vec{J}_{i}\cdot \nabla\left( \frac{\partial s}{\partial a_{i}} \right)
+\end{align}$$
+上述第一个表达式中，熵流密度其实还可以加上任意一个梯度为零的函数。我们只是选取了这个函数为零的规范。
+
+可以定义热力学力：
+
+>[!Note] Definition 3
+>Given a local thermodynamic quantity $a_{i}$, define the thermodynamic force conjugate to $a_{i}$ as:
+>$$\vec{X}_{i}= \nabla\left( \frac{\partial s}{\partial a_{i}} \right)$$
+
+于是：
+
+>[!Note] Proposition 3
+>$$\Theta=\sum_{i}\vec{J}_{i}\cdot \vec{X}_{i}$$
+
+
+
+
+
+
 
 >[!Note] Proposition 3
 >$$\vec{J}_{u}=\vec{J}_{q}+\mu\vec{J}_{n}$$
@@ -86,6 +127,10 @@ $$\begin{align}
 \end{align}$$
 >[!Right]
 >$\blacksquare$
+
+
+
+
 
 >[!Note] Proposition 4
 >Define $\vec{X}_{q}=\nabla\left( \frac{1}{T} \right),\ \vec{X}_{n}=- \frac{1}{T}\nabla \mu$. Then
