@@ -103,68 +103,44 @@ $$\begin{align}
 >[!Right]
 >$\blacksquare$
 
-我们用下面两条定联系起来：
 
 >[!Note] Postulate 1
->$$\vec{J}_{s}= \frac{\vec{J}_{q}}{T}$$
-
-
->[!Note] Postulate 2
 >The Fourier law of heat conduction:
 >$$\vec{J}_{q}=-\kappa \nabla T$$
 
 ## Ex:
-$\kappa$总是大于零的。考虑一仅有热流的系统。则局域熵产生率为：
-$$\Theta=\vec{J}_{q}\cdot \vec{X}_{q}$$
+$\kappa$总是大于零的。考虑一个系统，我们选内能和粒子数作为独立变量。若仅有内能流。则局域熵产生率为：
+$$\Theta=\vec{J}_{u}\cdot \vec{X}_{u}$$
 我们有：
 $$\begin{align}
-\vec{X}_{q}=\nabla\left(\frac{\partial s}{\partial q}\right)=\nabla\left( \frac{1}{T} \right)
+\vec{X}_{u}=\nabla\left(\left(\frac{\partial s}{\partial u}\right)_{n}\right)=\nabla\left( \frac{1}{T} \right)
 \end{align}$$
 所以：
 $$\begin{align}
  & \Theta \geq 0
- \\ \implies & \vec{J}_{q}\cdot \nabla\left( \frac{1}{T} \right) =-\vec{J}_{q}\cdot \frac{1}{T^{2}}\nabla T\geq 0 \\
+ \\ \implies & \vec{J}_{u}\cdot \nabla\left( \frac{1}{T} \right) =-\vec{J}_{u}\cdot \frac{1}{T^{2}}\nabla T\geq 0 \\
 \implies & \kappa  \frac{|\nabla T |^{2}}{T^{2}}\geq 0 \\
 \implies & \kappa\geq 0
 \end{align}$$
->[!Right]
->$\blacksquare$
 ## Ex:
-我们还可以计算粒子流对应的热力学力：
+选择内能和粒子数作为独立变量，我们还可以计算粒子流对应的热力学力：
 $$\begin{align}
-\vec{X}_{n} & = \nabla\left( \frac{\partial s}{\partial n} \right) \\
+\vec{X}_{n} & = \nabla\left( \left(\frac{\partial s}{\partial n}\right)_{u} \right) \\
  & = \nabla\left( - \frac{\mu}{T} \right)
 \end{align}$$
 
+## Ex:
+若选择粒子数和热作为独立变量，则相应地热力学力表达式会变化。
 
+对于粒子流对应的热力学力，我们就需要计算$\nabla\left( \left( \frac{\partial s}{\partial n} \right)_{q} \right)$。但这是做不到的。所以我们通过下面另一种特殊方法来做。我们有：
+$$\begin{align}
+\Theta & =\vec{J}_{u}\cdot \vec{X}_{u}+\vec{J}_{n}\cdot \vec{X}_{n} \\
+ & =(\vec{J}_{q}+\mu \vec{J}_{n})\cdot \nabla\left( \frac{1}{T} \right)+\vec{J}_{n}\cdot \nabla\left( - \frac{\mu}{T} \right) \\
+ &= \vec{J}_{q}\cdot \nabla\left( \frac{1}{T} \right)+ \vec{J}_{n}\cdot \nabla\left( \frac{\mu}{T} \right)-\vec{J}_{n} \frac{1}{T}\cdot \nabla \mu+\vec{J}_{n}\cdot \nabla\left( - \frac{\mu}{T} \right) \\
+ & = \vec{J}_{q}\cdot \nabla\left( \frac{1}{T} \right)- \vec{J}_{n}\cdot \frac{1}{T}\nabla \mu
+\end{align}$$
+所以热流对应的热力学力为$\nabla\left( \frac{1}{T} \right)$，粒子流对应的热力学力为$- \frac{1}{T}\nabla \mu$。
 
->[!Note] Proposition 4
->Define $\vec{X}_{q}=\nabla\left( \frac{1}{T} \right),\ \vec{X}_{n}=- \frac{1}{T}\nabla \mu$. Then
->$$\Theta=\vec{J}_{q}\cdot \nabla\left( \frac{1}{T} \right)- \frac{\vec{J}_{n}}{T}\cdot \nabla \mu=\vec{J}_{q}\cdot \vec{X}_{q}+\vec{J}_{n}\cdot \vec{X}_{n}$$
-
-^proposition14
-## Proof.
-首先我们有：
-$$\begin{align}
- & \vec{J}_{u}=\vec{J}_{q}+\mu \vec{J}_{n } \\
-\implies & \nabla \cdot \vec{J}_{u} =\nabla \cdot \vec{J}_{q}+\nabla \cdot(\mu \vec{J}_{n}) \\
-\implies & - \frac{\partial u}{\partial t}=\nabla \cdot\left( T\vec{J}_{s} \right) + \vec{J}_{n}\cdot \nabla \mu-\mu \frac{\partial n}{\partial t} \\
-\implies & - \frac{\partial u}{\partial t}=\vec{J}_{s}\cdot \nabla T+T\nabla \cdot \vec{J}_{s}+\vec{J}_{n}\cdot \nabla \mu-\mu \frac{\partial n}{\partial t}
-\end{align}$$
-另一方面，我们又知道：
-$$\begin{align}
-\frac{\partial u}{\partial t} & =T \frac{Ds}{Dt}+\mu \frac{\partial n}{\partial t} \\
- & = T\left( -\nabla \cdot \vec{J}_{s}+\Theta \right)+\mu \frac{\partial n}{\partial t}
-\end{align}$$
-所以就有：
-$$\begin{align}
- & -T\Theta=\vec{J}_{s}\cdot\nabla T+\vec{J}_{n}\cdot \nabla \mu \\
-\implies & \Theta=- \frac{\vec{J}_{s}}{T}\cdot\nabla T-\frac{\vec{J}_{n}}{T}\cdot \nabla \mu \\
-\implies & \Theta=\vec{J}_{q}\cdot\left(- \frac{\nabla T}{T^{2}} \right)- \frac{\vec{J}_{n}}{T}\cdot \nabla \mu \\
-\implies & \Theta=\vec{J}_{q}\cdot \nabla\left( \frac{1}{T} \right)- \frac{\vec{J}_{n}}{T}\cdot \nabla \mu
-\end{align}$$
->[!Right]
->$\blacksquare$
 # 2. Linear response
 
 对于一个体元构成的热力学系统，我们可以选择一系列热力学量的体密度$a_{i}$来描述它。这些热力学量的体密度可以根据连续性方程引出对应流量：
@@ -185,7 +161,7 @@ $${J}_{i}=\sum_{j}  \frac{\partial J_{i}}{\partial X_{j}}X_{j}=  \sum_{j}L_{ij}X
 存在如下定理：
 
 >[!Note] Theorem 1 (Onsager's relation)
->$L$ is symmetric.
+>$$L_{ij}(\vec{B})=L_{ji}(-\vec{B})$$
 
 ## Ex:
 
