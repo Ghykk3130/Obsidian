@@ -182,6 +182,40 @@ $$\begin{align}
  & L_{11}L_{22}-L_{12}^{2}\geq 0 \\
  & L_{11}>0
 \end{align}$$
+# 3. 
+
+为了给表示分量的下标流出位置，我们把$e,q$等下标移到右上方去。
+
+选取热流和电流作为独立变量。在没有磁场时，我们有：
+$$\begin{align}
+ & \vec{J}^e=\sigma \vec{E}-\alpha \nabla T \\
+ & \vec{J}^q=\beta \vec{E}-\kappa^{'}\nabla T
+\end{align}\tag{*}$$
+定义：
+
+>[!Note] Definition 1
+>Define:
+>- Seebeck coefficient: $S=\frac{\vec{E}}{-\nabla T}$ when $\vec{J}^e=0$
+>- Peltier coefficient: $\Pi=\frac{\vec{J}^q}{\vec{J}^e}$
+
+我们有：
+
+>[!Note] Theorem 1 (Kelvin's relation)
+>$$\Pi=ST$$
+
+当存在磁场时，$(*)$中系数都进化成张量。可以定义：
+
+>[!Note] Definition 2
+>Define:
+>- Nernst coefficient: $N=\frac{E_{y}}{(-\nabla_{x}T)}$
+>- Ettingshausen coefficient: $\epsilon=\frac{\nabla_{y}T}{J^e_{x}}$
+
+
+
+
+
+
+
 # 3. Seebeck effect
 
 在讨论Seebeck effect之前，我们先讨论电化学势。若粒子不带电，则粒子数变化引起的内能变化为$dU=\mu_{c} dN$。但如果粒子带电，则还需要额外引起$e\phi dN$的内能变化。所以热力学第一定律写为：
