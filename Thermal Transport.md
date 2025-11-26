@@ -182,7 +182,7 @@ $$\begin{align}
  & L_{11}L_{22}-L_{12}^{2}\geq 0 \\
  & L_{11}>0
 \end{align}$$
-# 3. 
+# 3. Under magnetic field
 
 为了给表示分量的下标流出位置，我们把$e,q$等下标移到右上方去。
 
@@ -196,12 +196,7 @@ $$\begin{align}
 >[!Note] Definition 1
 >Define:
 >- Seebeck coefficient: $S=\frac{\vec{E}}{-\nabla T}$ when $\vec{J}^e=0$
->- Peltier coefficient: $\Pi=\frac{\vec{J}^q}{\vec{J}^e}$
-
-我们有：
-
->[!Note] Theorem 1 (Kelvin's relation)
->$$\Pi=ST$$
+>- Peltier coefficient: $\Pi=\frac{\vec{J}^q}{\vec{J}^e}$ when $\nabla T=0$
 
 当存在磁场时，$(*)$中系数都进化成张量。可以定义：
 
@@ -210,13 +205,7 @@ $$\begin{align}
 >- Nernst coefficient: $N=\frac{E_{y}}{(-\nabla_{x}T)}$
 >- Ettingshausen coefficient: $\epsilon=\frac{\nabla_{y}T}{J^e_{x}}$
 
-
-
-
-
-
-
-# 3. Seebeck effect
+# 4. Seebeck effect, Peltier effect
 
 在讨论Seebeck effect之前，我们先讨论电化学势。若粒子不带电，则粒子数变化引起的内能变化为$dU=\mu_{c} dN$。但如果粒子带电，则还需要额外引起$e\phi dN$的内能变化。所以热力学第一定律写为：
 $$dU=TdS-pdV+\mu_{c}dN+e\phi dN$$
@@ -229,44 +218,29 @@ $$\begin{align}
 
 考虑一块金属中存在热流与电子流。则我们有：
 $$\begin{align}
- & \vec{J}_{q}=L_{qq}\vec{X}_{q}+L_{qn}\vec{X}_{n} \\
- & \vec{J}_{n}=L_{nq}\vec{X}_{q}+L_{nn}\vec{X}_{n}  
+ & \vec{J}_{}^q=L_{qq}\vec{X}_{q}+L_{qn}\vec{X}_{n} \\
+ & \vec{J}_{}^n=L_{nq}\vec{X}_{q}+L_{nn}\vec{X}_{n}  
 \end{align}$$
 其中，我们在[[Thermal Transport#^8f38a3|proposition 1.4]]已经算过$\vec{X}_{q},\vec{X}_{n}$了。所以我们有：
 $$\begin{align}
- & \vec{J}_{q}=L_{qq}\nabla\left( \frac{1}{T} \right)+L_{qn}\left( -\frac{\nabla \mu}{T} \right) \\
- & \vec{J}_{n}=L_{nq}\nabla\left( \frac{1}{T} \right)+L_{nn}\left( - \frac{\nabla \mu}{T} \right)
-\end{align}$$
-考虑两种金属，没有电流。在金属B上任意一点测电压。
-
-![[Drawing 2025-11-25 17.49.35.excalidraw|center]]
-
-令$\vec{J}_{n}=0$则有：
-$$\begin{align}
- & L_{nq}\nabla\left( \frac{1}{T} \right)+L_{nn}\left( - \frac{\nabla \mu}{T} \right)=0 \\
-\implies & -L_{nq} \frac{\nabla T}{T^{2}}-L_{nn} \frac{\nabla \mu}{T}=0 \\
-\implies & \nabla \mu=- \frac{L_{nq}}{L_{nn}} \frac{\nabla T}{T}
-\end{align}$$
-在两种金属线$A,B$上分别积分，我们得到：
-$$\begin{align}
- & \mu_{2}-\mu_{1}= -\int_{T_{1}}^{T_{2}}dT \frac{L_{nq}^A}{L_{nn}^A} \frac{1}{T} \\
- & \mu_{l}-\mu_{1}=-\int_{T_{1}^{}}^TdT \frac{L_{nq}^B}{L_{nn}^B} \frac{ 1}{T} \\
- & \mu_{2}-\mu_{r}=- \int_{T}^{T_{2}}dT \frac{L_{nq}^B}{L_{nn}^B} \frac{1}{T}
-\end{align}$$
-消元得到：
-$$\mu_{r}-\mu_{l}=\int_{T_{1}}^{T_{2}}dT\left( \frac{L_{nq}^B}{L_{nn}^B}- \frac{L_{nq}^A}{L_{nn}^A} \right)  \frac{1}{T}$$
-我们知道，$V$两侧不存在温度差，所以$\mu_{cr}=\mu_{cl}$。所以化学势差全部是电化学势差。于是便有：
-$$\Delta \phi=\frac{1}{e}(\mu_{r}-\mu_{l})=\int_{T_{1}}^{T_{2}}dT\left( \frac{L_{nq}^B}{eL_{nn}^B}- \frac{L_{nq}^A}{eL_{nn}^A} \right)  \frac{1}{T}$$
-定义Seebeck coefficient：
-$$\begin{align}
- & S_{B}= \frac{L_{nq}^B}{eTL_{nn}^B}, S_{A}= \frac{L_{nq}^A}{eTL_{nn}^A},S_{AB}=S_{B}-S_{A}
-\end{align}$$
+ & \vec{J}_{}^q=L_{qq}\nabla\left( \frac{1}{T} \right)+L_{qn}\left( -\frac{\nabla \mu}{T} \right) \\
+ & \vec{J}_{}^n=L_{nq}\nabla\left( \frac{1}{T} \right)+L_{nn}\left( - \frac{\nabla \mu}{T} \right)
+\end{align}\tag{*}$$
 
 >[!Note] Proposition 1
->$$\sigma=\frac{e^{2}L_{nn}}{T}$$
+>We can express everything in terms of kinematic coefficients:
+>- $$S=\frac{L_{nq}}{eTL_{nn}}$$
+>- $$\sigma=\frac{e^{2}L_{nn}}{T}$$
+>- $$\kappa=\frac{L_{nn}L_{qq}-L_{nq}^{2}}{T^{2}L_{nn}}$$
 ## Proof.
-在温度均匀情况下，我们有：
-$$\vec{J}=\sigma \vec{E}$$
+$S$：
+
+在$(*)$中令$\vec{J}_{n}=0$，容易得到Seebeck coefficient。
+
+$\sigma$：
+
+由$(*)$，在温度均匀情况下，我们有：
+$$\vec{J}^e=\sigma \vec{E}$$
 我们知道：
 $$\begin{align}
 \vec{E} & =-\nabla \phi \\
@@ -275,33 +249,29 @@ $$\begin{align}
 \end{align}$$
 这是因为温度均匀，$\nabla \mu_{c}=0$。然后：
 $$\begin{align}
-\vec{J} & =e\vec{J}_{n} \\
+\vec{J} & =e\vec{J}_{}^n \\
  & = eL_{nn}\left( - \frac{\nabla \mu}{T} \right)
 \end{align}$$
 这同样是因为温度均匀，$\vec{X}_{q}=0$。那么：
 $$\begin{align}
- \vec{J} & = \frac{e^{2}L_{nn}}{T}\vec{E}
+ \vec{J}^e & = \frac{e^{2}L_{nn}}{T}\vec{E}
 \end{align}$$
->[!Right]
->$\blacksquare$
+$\kappa$：
 
->[!Note] Proposition 2
->$$\kappa= \frac{L_{nn}L_{qq}-L_{nq}^{2}}{T^{2}L_{nn}}$$
-## Proof.
 在没有粒子流的情况下，我们有：
-$$\vec{J}_{q}=-\kappa \nabla T$$
+$$\vec{J}_{}^q=-\kappa \nabla T$$
 另一方面，我们知道：
-$$\vec{J}_{q}=L_{qq}\nabla\left( \frac{1}{T} \right)+L_{qn}\vec{X}_{n}$$
-令$\vec{J}_{n}=L_{nq}\nabla\left( \frac{1}{T} \right)+L_{nn}\vec{X}_{n}=0$得到：
+$$\vec{J}_{}^q=L_{qq}\nabla\left( \frac{1}{T} \right)+L_{qn}\vec{X}_{n}$$
+令$\vec{J}_{}^n=L_{nq}\nabla\left( \frac{1}{T} \right)+L_{nn}\vec{X}_{n}=0$得到：
 $$\begin{align}
-\vec{J}_{q} & =L_{qq}\nabla\left( \frac{1}{T} \right)- \frac{L_{nq}}{L_{nn}}\nabla\left( \frac{1}{T} \right) \\
+\vec{J}_{}^q & =L_{qq}\nabla\left( \frac{1}{T} \right)- \frac{L_{nq}}{L_{nn}}\nabla\left( \frac{1}{T} \right) \\
  & = \frac{1}{T^{2}}  \frac{L_{nq}^{2}-L_{nn}L_{qq} }{L_{nn}}\nabla T
 \end{align}$$
 >[!Right]
 >$\blacksquare$
 
->[!Note] Proposition 3
->$$\vec{J}_{s}=S\vec{J}- \frac{1}{T}\kappa \nabla T$$
+>[!Note] Proposition 2
+>$$\vec{J}_{}^s=S\vec{J}^e- \frac{1}{T}\kappa \nabla T$$
 ## Proof.
 我们现在有：
 $$\begin{align}
@@ -317,13 +287,25 @@ $$\begin{align}
 \end{align}$$
 所以：
 $$\begin{align}
- & \vec{J}_{n}=\frac{\sigma T}{e^{2}}\left( - \frac{\nabla \mu}{T} \right)+ \frac{\sigma T^{2}S}{e}\nabla\left( \frac{1}{T} \right) \\
- & \vec{J}_{q}=(\kappa T^{2}+\sigma T^{3}S^{2})\nabla\left( \frac{1}{T} \right)+\frac{\sigma T^{2}S}{e}\left( - \frac{\nabla \mu}{T} \right)
+ & \vec{J}_{}^n=\frac{\sigma T}{e^{2}}\left( - \frac{\nabla \mu}{T} \right)+ \frac{\sigma T^{2}S}{e}\nabla\left( \frac{1}{T} \right) \\
+ & \vec{J}_{}^q=(\kappa T^{2}+\sigma T^{3}S^{2})\nabla\left( \frac{1}{T} \right)+\frac{\sigma T^{2}S}{e}\left( - \frac{\nabla \mu}{T} \right)
 \end{align}$$
 消去$\nabla \mu$得到：
-$$eTS\vec{J}_{n}=\vec{J}_{q}+\kappa \nabla T$$
-代入$\vec{J}=e\vec{J}_{n},\vec{J}_{q}=T\vec{J}_{s}$得到：
-$$\vec{J}_{s}=S\vec{J}- \frac{\kappa}{T}\nabla T$$
+$$eTS\vec{J}_{}^n=\vec{J}_{}^q+\kappa \nabla T$$
+代入$\vec{J}^e=e\vec{J}_{}^n,\vec{J}_{}^q=T\vec{J}_{}^s$得到：
+$$\vec{J}^s=S\vec{J}^e- \frac{\kappa}{T}\nabla T$$
+>[!Right]
+>$\blacksquare$
+
+>[!Note] Theorem 1 (Kelvin's relation)
+>$$\Pi=ST$$
+## Proof.
+根据上一个proposition，令$\nabla T=0$，我们有：
+$$\begin{align}
+ & \vec{J}^s=S\vec{J}^e \\
+ \implies & \frac{\vec{J}^q}{T}=S\vec{J}^e \\
+\implies & \Pi=ST
+\end{align}$$
 >[!Right]
 >$\blacksquare$
 
