@@ -386,6 +386,18 @@
             }
           },
           {
+            "id": "14a9a71c26eaaf06",
+            "type": "leaf",
+            "state": {
+              "type": "release-notes",
+              "state": {
+                "currentVersion": "1.10.6"
+              },
+              "icon": "lucide-book-up",
+              "title": "Release Notes 1.10.6"
+            }
+          },
+          {
             "id": "727a365c9af8f118",
             "type": "leaf",
             "state": {
@@ -792,7 +804,7 @@
             }
           }
         ],
-        "currentTab": 26
+        "currentTab": 27
       }
     ],
     "direction": "vertical"
@@ -963,7 +975,7 @@
       "obsidian-excalidraw-plugin:New drawing": false
     }
   },
-  "active": "f47caf48639c9333",
+  "active": "14a9a71c26eaaf06",
   "lastOpenFiles": [
     "Excalidraw/Drawing 2025-11-25 17.49.35.excalidraw.md",
     "Thermal Transport.md",

@@ -223,11 +223,73 @@ $$\begin{align}
 $$\mu_{r}-\mu_{l}=\int_{T_{1}}^{T_{2}}dT\left( \frac{L_{nq}^B}{L_{nn}^B}- \frac{L_{nq}^A}{L_{nn}^A} \right)  \frac{1}{T}$$
 我们知道，$V$两侧不存在温度差，所以$\mu_{cr}=\mu_{cl}$。所以化学势差全部是电化学势差。于是便有：
 $$\Delta \phi=\frac{1}{e}(\mu_{r}-\mu_{l})=\int_{T_{1}}^{T_{2}}dT\left( \frac{L_{nq}^B}{eL_{nn}^B}- \frac{L_{nq}^A}{eL_{nn}^A} \right)  \frac{1}{T}$$
-我们取测电压的点为$T_{2}$点，并固定$T_{1}$，对于$T_{2}$微分，我们有：
-$$\frac{\partial \phi}{\partial T}=\frac{L_{nq}^B}{eTL_{nn}^B}- \frac{L_{nq}^A}{eTL_{nn}^A}$$
 定义Seebeck coefficient：
 $$\begin{align}
- & S_{B}= \frac{L_{nq}^B}{eTL_{nn}^B}, S_{A}= \frac{L_{nq}^A}{eTL_{nn}^A},S_{BA}=S_{B}-S_{A}
+ & S_{B}= \frac{L_{nq}^B}{eTL_{nn}^B}, S_{A}= \frac{L_{nq}^A}{eTL_{nn}^A},S_{AB}=S_{B}-S_{A}
 \end{align}$$
-所以，在两金属线交点的B金属部分，温度梯度引起一个电势梯度：
-$$\Delta \phi=(S_{B}-S_{A})\Delta T$$
+
+>[!Note] Proposition 1
+>$$\sigma=\frac{e^{2}L_{nn}}{T}$$
+## Proof.
+在温度均匀情况下，我们有：
+$$\vec{J}=\sigma \vec{E}$$
+我们知道：
+$$\begin{align}
+\vec{E} & =-\nabla \phi \\
+ & =-\nabla(e\mu_{e}) \\
+ & = -e\nabla \mu 
+\end{align}$$
+这是因为温度均匀，$\nabla \mu_{c}=0$。然后：
+$$\begin{align}
+\vec{J} & =e\vec{J}_{n} \\
+ & = eL_{nn}\left( - \frac{\nabla \mu}{T} \right)
+\end{align}$$
+这同样是因为温度均匀，$\vec{X}_{q}=0$。那么：
+$$\begin{align}
+ \vec{J} & = \frac{e^{2}L_{nn}}{T}\vec{E}
+\end{align}$$
+>[!Right]
+>$\blacksquare$
+
+>[!Note] Proposition 2
+>$$\kappa= \frac{L_{nn}L_{qq}-L_{nq}^{2}}{T^{2}L_{nn}}$$
+## Proof.
+在没有粒子流的情况下，我们有：
+$$\vec{J}_{q}=-\kappa \nabla T$$
+另一方面，我们知道：
+$$\vec{J}_{q}=L_{qq}\nabla\left( \frac{1}{T} \right)+L_{qn}\vec{X}_{n}$$
+令$\vec{J}_{n}=L_{nq}\nabla\left( \frac{1}{T} \right)+L_{nn}\vec{X}_{n}=0$得到：
+$$\begin{align}
+\vec{J}_{q} & =L_{qq}\nabla\left( \frac{1}{T} \right)- \frac{L_{nq}}{L_{nn}}\nabla\left( \frac{1}{T} \right) \\
+ & = \frac{1}{T^{2}}  \frac{L_{nq}^{2}-L_{nn}L_{qq} }{L_{nn}}\nabla T
+\end{align}$$
+>[!Right]
+>$\blacksquare$
+
+>[!Note] Proposition 3
+>$$\vec{J}_{s}=S\vec{J}- \frac{1}{T}\kappa \nabla T$$
+## Proof.
+我们现在有：
+$$\begin{align}
+ & S=\frac{L_{nq}}{eTL_{nn}} \\
+ & \sigma= \frac{e^{2}L_{nn}}{T} \\
+ & \kappa=\frac{L_{nn}L_{qq}-L_{nq}^{2}}{T^{2}L_{nn}}
+\end{align}$$
+容易解得：
+$$\begin{align}
+ & L_{nn}=\frac{\sigma T}{e^{2}} \\
+ & L_{nq}=\frac{\sigma T^{2}S}{e} \\
+ & L_{qq}=\kappa T^{2}+\sigma T^{3}S^{2}
+\end{align}$$
+所以：
+$$\begin{align}
+ & \vec{J}_{n}=\frac{\sigma T}{e^{2}}\left( - \frac{\nabla \mu}{T} \right)+ \frac{\sigma T^{2}S}{e}\nabla\left( \frac{1}{T} \right) \\
+ & \vec{J}_{q}=(\kappa T^{2}+\sigma T^{3}S^{2})\nabla\left( \frac{1}{T} \right)+\frac{\sigma T^{2}S}{e}\left( - \frac{\nabla \mu}{T} \right)
+\end{align}$$
+消去$\nabla \mu$得到：
+$$eTS\vec{J}_{n}=\vec{J}_{q}+\kappa \nabla T$$
+代入$\vec{J}=e\vec{J}_{n},\vec{J}_{q}=T\vec{J}_{s}$得到：
+$$\vec{J}_{s}=S\vec{J}- \frac{\kappa}{T}\nabla T$$
+>[!Right]
+>$\blacksquare$
+
