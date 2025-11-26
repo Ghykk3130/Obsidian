@@ -309,3 +309,45 @@ $$\begin{align}
 >[!Right]
 >$\blacksquare$
 
+# 5. Boltzmann equation
+
+在transport过程中，某个能级$\epsilon_{\vec{k}}$的占据数可能不是Fermi-Dirac statistics，而是偏离一点。我们定义：
+$$f^0=\frac{1}{\mathcal{z}^{-1}e^{\beta\epsilon_{\vec{k}}}+1}$$
+并将偏离一点的占据数记为$f_{\vec{k}}(\vec{r})$。这个占据数应当有position dependence。因为transport过程中1，处于不同位置同意能级，占据数也有可能不同。
+
+我们作下面近似：
+
+>[!Note] Postulate 1 (relaxation time approximation)
+>Let $\tau(\vec{k})$ be the average time between collisions for electrons in state $\vec{k}$. Then
+>$$\frac{df_{\vec{k}}(\vec{r})}{dt}= - \frac{f_{\vec{k}}(\vec{r})-f^0}{\tau(\vec{k})}$$
+## Remark
+我们稍稍变个形得到：
+$$\frac{d}{dt}(f_{\vec{k}}(\vec{r})-f^0)=- \frac{1}{\tau}(f_{\vec{k}}(\vec{r})-f^0)$$
+显然，这代表着$f_{\vec{k}}(\vec{r})-f^0$呈characteristic time为$\tau$的指数衰减。
+
+>[!Note] Postulate 2
+>We assume that:
+>- $$\frac{\partial f_{\vec{k}}(\vec{r})}{\partial \vec{r}}= \frac{\partial f_{\vec{k}}(\vec{r})}{\partial T} \frac{\partial T}{\partial \vec{r}}\approx \frac{\partial f^0}{\partial T} \nabla T$$
+>- $$\frac{\partial f_{\vec{k}}(\vec{r})}{\partial \vec{k}}=\frac{\partial f_{\vec{k}}(\vec{r})}{\partial\epsilon_{\vec{k}}} \frac{\partial\epsilon_{\vec{k}}}{\partial \vec{k}}\approx \frac{\partial f^0}{\partial\epsilon_{\vec{k}}} \vec{v}_{\vec{k}}$$
+
+
+于是可以得到Boltzmann方程：
+
+>[!Note] Proposition 1 (Boltzmann equation)
+>Consider Bloch electrons moving in an electric field. Then:
+>$$\vec{v}_{\vec{k}}\cdot \frac{\partial f^0}{\partial T}\nabla T+e\vec{v}_{\vec{k}}\cdot \frac{\partial f^0}{\partial\epsilon_{\vec{k}}}\cdot \vec{E}+\frac{f_{\vec{k}}(\vec{r})-f^0}{\tau}=0$$
+## Proof.
+一方面我们有：
+$$\begin{align}
+\frac{df_{\vec{k}}(\vec{r})}{dt} & = \vec{v}_{\vec{k}}\cdot \frac{\partial f_{\vec{k}}(\vec{r})}{\partial \vec{r}}+ \frac{\partial \vec{k}}{\partial t }\cdot \frac{\partial f_{\vec{k}}(\vec{r})}{\partial \vec{k}} \\
+ & = \vec{v}_{\vec{k}}\cdot \frac{\partial f_{\vec{k}}(\vec{r})}{\partial T}\nabla T+ \frac{e}{\hbar}\vec{E}\cdot \frac{\partial f_{\vec{k}}(\vec{r})}{\partial \vec{k}} \\
+ & =\vec{v}_{\vec{k}}\cdot \frac{\partial f_{\vec{k}}(\vec{r})}{\partial T}\nabla T+ \frac{e}{\hbar}\vec{E}\cdot \frac{\partial f_{\vec{k}}(\vec{r})}{\epsilon_{\vec{k}}} \vec{v}_{\vec{k}} \\
+ & = \vec{v}_{\vec{k}}\cdot \frac{\partial f^0}{\partial T}\nabla T+ \frac{e}{\hbar}\vec{E}\cdot \frac{\partial f^0}{\partial\epsilon_{\vec{k}}}\vec{v}_{\vec{k}}
+\end{align}$$
+另一方面，我们有：
+$$\frac{df_{\vec{k}}(\vec{r})}{dt}=- \frac{f_{\vec{k}}(\vec{r})-f^0}{\tau}$$
+>[!Right]
+>$\blacksquare$
+
+
+
