@@ -221,7 +221,7 @@ $$\begin{align}
 \end{align}$$
 消元得到：
 $$\mu_{r}-\mu_{l}=\int_{T_{1}}^{T_{2}}dT\left( \frac{L_{nq}^B}{L_{nn}^B}- \frac{L_{nq}^A}{L_{nn}^A} \right)  \frac{1}{T}$$
-我们知道，$V$两侧不存在温度差，所以$\mu_{cr}=\mu_{cl}$。所以化学式差全部是电化学势差。于是便有：
+我们知道，$V$两侧不存在温度差，所以$\mu_{cr}=\mu_{cl}$。所以化学势差全部是电化学势差。于是便有：
 $$\Delta \phi=\frac{1}{e}(\mu_{r}-\mu_{l})=\int_{T_{1}}^{T_{2}}dT\left( \frac{L_{nq}^B}{eL_{nn}^B}- \frac{L_{nq}^A}{eL_{nn}^A} \right)  \frac{1}{T}$$
 我们取测电压的点为$T_{2}$点，并固定$T_{1}$，对于$T_{2}$微分，我们有：
 $$\frac{\partial \phi}{\partial T}=\frac{L_{nq}^B}{eTL_{nn}^B}- \frac{L_{nq}^A}{eTL_{nn}^A}$$
