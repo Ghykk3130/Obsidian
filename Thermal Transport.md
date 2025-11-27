@@ -323,7 +323,7 @@ $$k_{i} = \frac{2\pi n_{i}}{L_{i}}$$
 $$\sum_{\vec{k}}=\sum_{k_{1},k_{2},k_{3}}\Delta n_{1}\Delta n_{2}\Delta n_{3}=\frac{V}{(2\pi)^{3}}\sum_{k_{1},k_{2},k_{3}} \Delta k_{1}\Delta k_{2}\Delta k_{3} \leadsto \frac{V}{(2\pi)^{3}}\int d^{3}k$$
 所以我们便有：
 $$N=\frac{V}{4\pi^{3}}\int d^{3}kf^0(\vec{k})= \frac{1}{4\pi^{3}}\int d^{3}kd^{3}rf^0(\vec{k})$$
-所以，$f^0(\vec{k})$可以看做粒子数测度在相空间上的Radon-Nikodym derivative。
+所以，$f^0(\vec{k})$可以看做粒子数测度在相空间上的Radon-Nikodym derivative。它告诉我们，给定相空间中体积$d^{3}kd^{3}r$，其中就有$\frac{1}{4\pi^{3}} d^{3}kd^{3}rf^0$那么多粒子。
 
 更一般地将，若系统不处于平衡态，这个Radon-Nikodym derivative还有r-dependence。我们就记为$f_{\vec{k}}(\vec{r})$。
 
