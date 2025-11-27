@@ -309,13 +309,25 @@ $$\begin{align}
 >[!Right]
 >$\blacksquare$
 
-# 5. Boltzmann equation
+# 5. Fermi-Dirac distribution as Radon-Nikodym
 
-在transport过程中，某个能级$\epsilon_{\vec{k}}$的占据数可能不是Fermi-Dirac statistics，而是偏离一点。我们定义：
-$$f^0=\frac{1}{\mathcal{z}^{-1}e^{\beta\epsilon_{\vec{k}}}+1}$$
-函数$f^0$定义在整个相空间上，只是对所有的$\vec{r}$都是常数。
+我们知道，若系统处于平衡态，则有Fermi-Dirac distribution:
+$$f^0(\vec{k})= \frac{1}{\mathcal{z}^{-1}e^{\beta\epsilon_{\vec{k}}}+1}$$
+我们可以统计系统总粒子数得到：
+$$\begin{align}
+N & =2 \sum_{\vec{k}}f^0(\vec{k})
+\end{align}$$
+因为存在周期性边界条件：
+$$k_{i} = \frac{2\pi n_{i}}{L_{i}}$$
+所以可在热力学极限下将求和化为积分：
+$$\sum_{\vec{k}}=\sum_{k_{1},k_{2},k_{3}}\Delta n_{1}\Delta n_{2}\Delta n_{3}=\frac{V}{(2\pi)^{3}}\sum_{k_{1},k_{2},k_{3}} \Delta k_{1}\Delta k_{2}\Delta k_{3} \leadsto \frac{V}{(2\pi)^{3}}\int d^{3}k$$
+所以我们便有：
+$$N=\frac{V}{4\pi^{3}}\int d^{3}kf^0(\vec{k})= \frac{1}{4\pi^{3}}\int d^{3}kd^{3}rf^0(\vec{k})$$
+所以，$f^0(\vec{k})$可以看做粒子数测度在相空间上的Radon-Nikodym derivative。
 
-并将偏离一点的占据数记为$f_{\vec{k}}(\vec{r})$。这个占据数应当有position dependence。因为transport过程中1，处于不同位置同意能级，占据数也有可能不同。
+更一般地将，若系统不处于平衡态，这个Radon-Nikodym derivative还有r-dependence。我们就记为$f_{\vec{k}}(\vec{r})$。
+
+# 6. Boltzmann equation
 
 我们作下面近似：
 
