@@ -429,11 +429,20 @@ $$\begin{align}
  & = \frac{1}{4\pi^{3}}\int d^{3}k\vec{v}_{\vec{k}}\left(f^0-\tau \vec{v}_{\vec{k}}\cdot\left(  \frac{\partial f^0}{\partial T} \nabla T+e \frac{\partial f^0}{\partial\epsilon_{\vec{k}}}\vec{E}\right)\right) \\
  & = \frac{1}{4\pi^{3}} \int d^{3}k\left(-\tau\vec{v}_{\vec{k}}\vec{v}_{\vec{k}}\cdot\left(\frac{\partial f^0}{\partial T}\nabla T+e \frac{\partial f^0}{\partial\epsilon_{\vec{k}}}\vec{E}\right)\right)
 \end{align}$$
-代入计算即可。
+容易通过直接计算证到：
+$$\frac{\partial f^0}{\partial T}=- \frac{\epsilon_{\vec{k}}-\mu}{T} \frac{\partial f^0}{\epsilon_{\vec{k}}}$$
+那么将上述所有表达式代入计算即可。
 >[!Right]
 >$\blacksquare$
 
 >[!Note] Corollary 2
 >$$\kappa=-\int d^{3}k\tau \vec{v}_{\vec{k}}\vec{v}_{\vec{k}} \frac{(\epsilon_{\vec{k}}-\mu)^{2}}{T} \frac{\partial f^0}{\partial\epsilon_{\vec{k}}}$$
+>where $\kappa$ is defined as: $\vec{J}^q=-\kappa \nabla T\text{ when }\vec{E}=0$
+## Proof.
+显然。
+>[!Right]
+>$\blacksquare$
+
+
 
 
