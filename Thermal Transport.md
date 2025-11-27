@@ -343,9 +343,19 @@ $$\frac{d}{dt}(f_{\vec{k}}(\vec{r})-f^0)=- \frac{1}{\tau}(f_{\vec{k}}(\vec{r})-f
 >We assume that:
 >- $$\frac{\partial f_{\vec{k}}(\vec{r})}{\partial \vec{r}}= \frac{\partial f_{\vec{k}}(\vec{r})}{\partial T} \frac{\partial T}{\partial \vec{r}}\approx \frac{\partial f^0}{\partial T} \nabla T$$
 >- $$\frac{\partial f_{\vec{k}}(\vec{r})}{\partial \vec{k}}=\frac{\partial f_{\vec{k}}(\vec{r})}{\partial\epsilon_{\vec{k}}} \frac{\partial\epsilon_{\vec{k}}}{\partial \vec{k}}\approx \frac{\partial f^0}{\partial\epsilon_{\vec{k}}} \vec{v}_{\vec{k}}$$
+## Remark
+这即是在假设：
+- r-dependence完全来自于$T$的r-dependence。以至于$\frac{\partial f_{\vec{k}}}{\partial \vec{r}}= \frac{\partial f_{\vec{k}}}{\partial T} \frac{\partial T}{\partial \vec{r}}$
+	- k-dependence完全来自于$\epsilon_{\vec{k}}$的k-dependence。以至于$\frac{\partial f_{\vec{k}}}{\partial \vec{k}}= \frac{\partial f_{\vec{k}}}{\partial\epsilon_{\vec{k}}} \frac{\partial\epsilon_{\vec{k}}}{\partial \vec{k}}$
+- $f_{\vec{k}}$与$f^0$偏离不太大，以至于$\frac{\partial f_{\vec{k}}}{\partial T} \frac{\partial T}{\partial \vec{r}}\approx \frac{\partial f^0}{\partial T}\nabla T$，$\frac{\partial f_{\vec{k}}}{\partial\epsilon_{\vec{k}}} \frac{\partial\epsilon_{\vec{k}}}{\partial \vec{k}}\approx \frac{\partial f^0}{\partial\epsilon_{\vec{k}}} \vec{v}_{\vec{k}}$。
 
 
-于是可以得到Boltzmann方程：
+在相空间中，每一点都在根据semiclassical EOM流动：
+$$\begin{align}
+ & \vec{v}_{\vec{k}}= \frac{1}{\hbar} \frac{\partial\epsilon_{\vec{k}}}{\partial \vec{k}} \\
+ & \hbar  \dot{\vec{k}}=e\vec{E}
+\end{align}$$
+所以$f_{\vec{k}}(\vec{r})$随着电子的流动也不断变动。可以求它的随体导数。可以得到Boltzmann方程：
 
 >[!Note] Proposition 1 (Boltzmann equation)
 >Consider Bloch electrons moving in an electric field. Then:
@@ -355,7 +365,7 @@ $$\frac{d}{dt}(f_{\vec{k}}(\vec{r})-f^0)=- \frac{1}{\tau}(f_{\vec{k}}(\vec{r})-f
 $$\begin{align}
 \frac{df_{\vec{k}}(\vec{r})}{dt} & = \vec{v}_{\vec{k}}\cdot \frac{\partial f_{\vec{k}}(\vec{r})}{\partial \vec{r}}+ \frac{\partial \vec{k}}{\partial t }\cdot \frac{\partial f_{\vec{k}}(\vec{r})}{\partial \vec{k}} \\
  & = \vec{v}_{\vec{k}}\cdot \frac{\partial f_{\vec{k}}(\vec{r})}{\partial T}\nabla T+ \frac{e}{\hbar}\vec{E}\cdot \frac{\partial f_{\vec{k}}(\vec{r})}{\partial \vec{k}} \\
- & =\vec{v}_{\vec{k}}\cdot \frac{\partial f_{\vec{k}}(\vec{r})}{\partial T}\nabla T+ \frac{e}{\hbar}\vec{E}\cdot \frac{\partial f_{\vec{k}}(\vec{r})}{\epsilon_{\vec{k}}} \vec{v}_{\vec{k}} \\
+ & =\vec{v}_{\vec{k}}\cdot \frac{\partial f_{\vec{k}}(\vec{r})}{\partial T}\nabla T+ \frac{e}{\hbar}\vec{E}\cdot \frac{\partial f_{\vec{k}}(\vec{r})}{\partial\epsilon_{\vec{k}}} \vec{v}_{\vec{k}} \\
  & = \vec{v}_{\vec{k}}\cdot \frac{\partial f^0}{\partial T}\nabla T+ \frac{e}{\hbar}\vec{E}\cdot \frac{\partial f^0}{\partial\epsilon_{\vec{k}}}\vec{v}_{\vec{k}}
 \end{align}$$
 另一方面，我们有：
@@ -363,5 +373,28 @@ $$\frac{df_{\vec{k}}(\vec{r})}{dt}=- \frac{f_{\vec{k}}(\vec{r})-f^0}{\tau}$$
 >[!Right]
 >$\blacksquare$
 
+>[!Note] Proposition 2
+>The current density is given by:
+>$$\vec{J}^e=  \frac{1}{4\pi^{3}} \int d^{3}k\left(f^0e\vec{v}_{\vec{k}}-e \tau\vec{v}_{\vec{k}}\vec{v}_{\vec{k}}\cdot\left( \frac{\partial f^0}{\partial T}\nabla T+e \frac{\partial f^0}{\partial\epsilon_{\vec{k}}}\vec{E} \right)\right)$$
+## Proof.
+单位相空间体积内的电子数量为：
+$$d^{3}kd^{3}r f_{\vec{k}}(\vec{r})$$
+这坨电子产生的电流为：
+$$\begin{align}
+d^{3}kd^{3}rf_{\vec{k}}e\vec{v}_{\vec{k}} & = d^{3}kd^{3}r\left(f^0-\tau \vec{v}_{\vec{k}}\cdot\left(  \frac{\partial f^0}{\partial T} \nabla T+e \frac{\partial f^0}{\partial\epsilon_{\vec{k}}}\vec{E}\right)\right)e\vec{v}_{\vec{k}}
+\end{align}$$
+所以r-space中单位体积中的电流，也就是电流密度为：
+$$\begin{align}
+\vec{J}^e & = \frac{1}{4\pi^{3}}\int d^{3}k\left( f^0- \tau \vec{v}_{\vec{k}}\cdot\left(  \frac{\partial f^0}{\partial T}\nabla T+e \frac{\partial f^0}{\partial\epsilon_{\vec{k}}}\vec{E}  \right)\right)e\vec{v}_{\vec{k}}
+\end{align}$$
 
+>[!Right]
+>$\blacksquare$
 
+>[!Note] Corollary 1
+>$$\sigma=- \frac{1}{4\pi^{3}} e^{2}\int d^{3}k\tau \vec{v}_{\vec{k}}\vec{v}_{\vec{k}} \frac{\partial f^0}{\partial\epsilon_{\vec{k}}}$$
+## Proof.
+令$\nabla T=0$。则：
+$$\begin{align}
+\vec{J}^e & = \frac{1}{4\pi^{3}}\int d^{3}k\left(f^0e\vec{v}_{\vec{k}}- e^{2}\tau \vec{v}_{\vec{k}}\vec{v}_{\vec{k}} \frac{\partial f^0}{\partial\epsilon_{\vec{k}}}\vec{E}\right)
+\end{align}$$

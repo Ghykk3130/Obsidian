@@ -862,7 +862,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "thermal transpo",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -873,7 +873,8 @@
               "title": "Search"
             }
           }
-        ]
+        ],
+        "currentTab": 3
       }
     ],
     "direction": "horizontal",
@@ -978,8 +979,9 @@
   },
   "active": "14a9a71c26eaaf06",
   "lastOpenFiles": [
-    "Excalidraw/Drawing 2025-11-25 17.49.35.excalidraw.md",
+    "Solid state.md",
     "Thermal Transport.md",
+    "Excalidraw/Drawing 2025-11-25 17.49.35.excalidraw.md",
     "气体.md",
     "溶液.md",
     "液滴.md",
@@ -987,7 +989,6 @@
     "Untitled 1.md",
     "Untitled.md",
     "Untitled 2.md",
-    "Solid state.md",
     "Excalidraw/Drawing 2025-11-23 21.48.10.excalidraw.md",
     "Excalidraw/Drawing 2025-11-23 21.36.13.excalidraw.md",
     "Excalidraw/Drawing 2025-11-23 20.30.31.excalidraw.md",
