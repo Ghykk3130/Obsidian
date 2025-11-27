@@ -862,7 +862,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "thermal transpo",
+                "query": "density of states",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -873,8 +873,7 @@
               "title": "Search"
             }
           }
-        ],
-        "currentTab": 3
+        ]
       }
     ],
     "direction": "horizontal",

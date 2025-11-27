@@ -442,7 +442,27 @@ $$\frac{\partial f^0}{\partial T}=- \frac{\epsilon_{\vec{k}}-\mu}{T} \frac{\part
 显然。
 >[!Right]
 >$\blacksquare$
+# 7. Electrons and holes
 
+我们可以将测度$d^{3}k$写成对能量$\epsilon_{\vec{k}}$的测度。显然我们有：
+$$\begin{align}
+\int d^{3}k & = \int d\epsilon \int_{\text{constant }\epsilon} \frac{dS}{|\nabla\epsilon_{\vec{k}}|}
+\end{align}$$
+而我们发现，各种transport的常数经常会需要积分：
+$$\int d^{3}k\tau(\vec{k}) \vec{v}_{\vec{k}}\vec{v}_{\vec{k}}\dots=\int d\epsilon \int_{\text{constant }\epsilon} \frac{dS}{|\nabla\epsilon _{\vec{k}}|}\tau \vec{v}_{\vec{k}}\vec{v}_{\vec{k}}\dots$$
+所以我们不妨定义测度：
+$$\overset{\leftrightarrow}{\Xi}(\epsilon)=  \frac{h}{8\pi^{3}} \int_{\text{constant }\epsilon} \frac{dS}{|\nabla\epsilon_{\vec{k}}|}\tau \vec{v}_{\vec{k}}\vec{v}_{\vec{k}}$$
+在大多数情况下，$\overset{\leftrightarrow}{\Xi}$是一个对角阵，且是一个scalar tensor。这时候就往往将其写作${\Xi}$，其中$\Xi$为其对角元。
+
+容易证明：
+
+>[!Note] Proposition 1
+>If $\overset{\leftrightarrow}{\Xi}$ is a scalar tensor, then:
+>$$\begin{align}
+ & \sigma= -2 \frac{e^{2}}{h}\int d\epsilon \Xi(\epsilon) \frac{\partial f^0}{\partial\epsilon_{\vec{k}}} \\
+ & \alpha=2 \frac{ek}{h}\int d\epsilon \Xi(\epsilon) \frac{\epsilon-\mu}{kT} \frac{\partial f^0}{\partial\epsilon_{\vec{k}}} \\
+ & \kappa= -2 \frac{ek^{2}T}{h}\int d\epsilon \Xi(\epsilon) \left( \frac{(\epsilon-\mu)^{2}}{kT} \right)^{2} \frac{\partial f^0}{\partial\epsilon_{\vec{k}}} 
+ \end{align}$$
 
 
 
