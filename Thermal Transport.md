@@ -396,5 +396,14 @@ $$\begin{align}
 ## Proof.
 令$\nabla T=0$。则：
 $$\begin{align}
-\vec{J}^e & = \frac{1}{4\pi^{3}}\int d^{3}k\left(f^0e\vec{v}_{\vec{k}}- e^{2}\tau \vec{v}_{\vec{k}}\vec{v}_{\vec{k}} \frac{\partial f^0}{\partial\epsilon_{\vec{k}}}\vec{E}\right)
+\vec{J}^e & = \frac{1}{4\pi^{3}}\int d^{3}k\left(f^0e\vec{v}_{\vec{k}}- e^{2}\tau \vec{v}_{\vec{k}}\vec{v}_{\vec{k}} \frac{\partial f^0}{\partial\epsilon_{\vec{k}}}\cdot\vec{E}\right)
 \end{align}$$
+一般情况下，$\epsilon_{\vec{k}}$是$\vec{k}$的偶函数。即：
+$$\epsilon_{\vec{k}}=\epsilon_{-\vec{k}}$$
+所以$f^0$也是$\vec{k}$的偶函数。所以$\vec{v}_{\vec{k}}= \frac{1}{\hbar} \frac{\partial\epsilon_{\vec{k}}}{\partial \vec{k}}$是$\vec{k}$的奇函数。所以：
+$$\int_{FBZ} d^{3}kf^0e\vec{v}_{\vec{k}}=0$$
+所以：
+$$\vec{J}^e=-e^{2}\frac{1}{4\pi^{3}}\int d^{3}k\tau \vec{v}_{\vec{k}}\vec{v}_{\vec{k}} \frac{\partial f^0}{\partial\epsilon_{\vec{k}}}\cdot \vec{E}$$
+>[!Right]
+>$\blacksquare$
+
