@@ -393,17 +393,47 @@ $$\begin{align}
 
 >[!Note] Corollary 1
 >$$\sigma=- \frac{1}{4\pi^{3}} e^{2}\int d^{3}k\tau \vec{v}_{\vec{k}}\vec{v}_{\vec{k}} \frac{\partial f^0}{\partial\epsilon_{\vec{k}}}$$
+>$$\alpha=  \frac{1}{4\pi^{3}}e\int d^{3}k\tau \vec{v}_{\vec{k}}\vec{v}_{\vec{k}} \frac{\partial f^0}{\partial T}$$
+>where $\sigma,\alpha$ are defined by $\vec{J}^e=\sigma \vec{E}-\alpha \nabla T$
+
 ## Proof.
-令$\nabla T=0$。则：
+我们有：
 $$\begin{align}
-\vec{J}^e & = \frac{1}{4\pi^{3}}\int d^{3}k\left(f^0e\vec{v}_{\vec{k}}- e^{2}\tau \vec{v}_{\vec{k}}\vec{v}_{\vec{k}} \frac{\partial f^0}{\partial\epsilon_{\vec{k}}}\cdot\vec{E}\right)
+\vec{J}^e & = \frac{1}{4\pi^{3}}\int d^{3}k\left(f^0e\vec{v}_{\vec{k}}- e^{2}\tau \vec{v}_{\vec{k}}\vec{v}_{\vec{k}} \frac{\partial f^0}{\partial\epsilon_{\vec{k}}}\cdot\vec{E}-e \tau \vec{v}_{\vec{k}}\vec{v}_{\vec{k}} \cdot \frac{\partial f^0}{\partial T}\nabla T\right)
 \end{align}$$
 一般情况下，$\epsilon_{\vec{k}}$是$\vec{k}$的偶函数。即：
 $$\epsilon_{\vec{k}}=\epsilon_{-\vec{k}}$$
 所以$f^0$也是$\vec{k}$的偶函数。所以$\vec{v}_{\vec{k}}= \frac{1}{\hbar} \frac{\partial\epsilon_{\vec{k}}}{\partial \vec{k}}$是$\vec{k}$的奇函数。所以：
 $$\int_{FBZ} d^{3}kf^0e\vec{v}_{\vec{k}}=0$$
-所以：
-$$\vec{J}^e=-e^{2}\frac{1}{4\pi^{3}}\int d^{3}k\tau \vec{v}_{\vec{k}}\vec{v}_{\vec{k}} \frac{\partial f^0}{\partial\epsilon_{\vec{k}}}\cdot \vec{E}$$
+接下来匹配系数即可
 >[!Right]
 >$\blacksquare$
+
+>[!Note] Proposition 3
+>The heat flux density is given by:
+>$$\vec{J}^q= \frac{1}{4\pi^{3}}\int d^{3}k (\epsilon_{\vec{k}}-\mu)\tau \vec{v}_{\vec{k}}\vec{v}_{\vec{k}}\cdot\left( \frac{\epsilon_{\vec{k}}-\mu}{T} \frac{\partial f^0}{\partial\epsilon_{\vec{k}}}\nabla T+e \frac{\partial f^0}{\partial\epsilon_{\vec{k}}}\vec{E} \right)$$
+## Proof.
+回忆起：
+$$\vec{J}^q=\vec{J}^u-\mu \vec{J}^n$$
+我们有：
+$$\begin{align}
+\vec{J}^u & = \frac{1}{4\pi^{3}} \int d^{3}k \epsilon_{\vec{k}}f_{\vec{k}}\vec{v}_{\vec{k}} \\
+ & = \frac{1}{4\pi^{3}}\int d^{3}k\epsilon_{\vec{k}}\vec{v}_{\vec{k}}\left(f^0-\tau \vec{v}_{\vec{k}}\cdot\left(  \frac{\partial f^0}{\partial T} \nabla T+e \frac{\partial f^0}{\partial\epsilon_{\vec{k}}}\vec{E}\right)\right) \\
+ & = \frac{1}{4\pi^{3}} \int d^{3}k\left(-\tau\epsilon_{\vec{k}}\vec{v}_{\vec{k}}\vec{v}_{\vec{k}}\cdot\left(\frac{\partial f^0}{\partial T}\nabla T+e \frac{\partial f^0}{\partial\epsilon_{\vec{k}}}\vec{E}\right)\right)
+\end{align}$$
+这同样是因为$\epsilon_{\vec{k}}$的对称性，导致$\int_{FBZ} d^{3}k\epsilon_{\vec{k}}\vec{v}_{\vec{k}}f^0=0$。
+
+类似地：
+$$\begin{align}
+\vec{J}^n & = \frac{1}{4\pi^{3}}\int d^{3}k f_{\vec{k}}\vec{v}_{\vec{k}} \\
+ & = \frac{1}{4\pi^{3}}\int d^{3}k\vec{v}_{\vec{k}}\left(f^0-\tau \vec{v}_{\vec{k}}\cdot\left(  \frac{\partial f^0}{\partial T} \nabla T+e \frac{\partial f^0}{\partial\epsilon_{\vec{k}}}\vec{E}\right)\right) \\
+ & = \frac{1}{4\pi^{3}} \int d^{3}k\left(-\tau\vec{v}_{\vec{k}}\vec{v}_{\vec{k}}\cdot\left(\frac{\partial f^0}{\partial T}\nabla T+e \frac{\partial f^0}{\partial\epsilon_{\vec{k}}}\vec{E}\right)\right)
+\end{align}$$
+代入计算即可。
+>[!Right]
+>$\blacksquare$
+
+>[!Note] Corollary 2
+>$$\kappa=-\int d^{3}k\tau \vec{v}_{\vec{k}}\vec{v}_{\vec{k}} \frac{(\epsilon_{\vec{k}}-\mu)^{2}}{T} \frac{\partial f^0}{\partial\epsilon_{\vec{k}}}$$
+
 
