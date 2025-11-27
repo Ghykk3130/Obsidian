@@ -313,6 +313,8 @@ $$\begin{align}
 
 在transport过程中，某个能级$\epsilon_{\vec{k}}$的占据数可能不是Fermi-Dirac statistics，而是偏离一点。我们定义：
 $$f^0=\frac{1}{\mathcal{z}^{-1}e^{\beta\epsilon_{\vec{k}}}+1}$$
+函数$f^0$定义在整个相空间上，只是对所有的$\vec{r}$都是常数。
+
 并将偏离一点的占据数记为$f_{\vec{k}}(\vec{r})$。这个占据数应当有position dependence。因为transport过程中1，处于不同位置同意能级，占据数也有可能不同。
 
 我们作下面近似：
