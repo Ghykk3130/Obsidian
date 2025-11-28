@@ -45,8 +45,45 @@ $$\begin{align}
 约掉$\hbar$即可。
 >[!Right]
 >$\blacksquare$
+# 2. $\vec{S}_{1}+\vec{S}_{2}$
 
-# 2. $\vec{L}+\vec{S}$ for electrons
+我们知道$\vec{S}_{1},\vec{S}_{2}$各自构成一个$SO(3)$的二维不可约表示。于是它们Hilbert空间的张量积构成一个$SO(3)$的四维不可约表示。
+
+令$\vec{S}=\vec{S}_{1}+\vec{S}_{2}$。
+
+我们首先从递推公式中某项出现零时开始推。这样更简单。注意到递推公式是这样的：
+$$\bra{m_{1},m_{2}} j,m\rangle=\text{LC of }\bra{m_{1}\mp 1,m_{2}} j,m\pm 1\rangle,\ \bra{m_{1},m_{2} \mp 1} j,m \pm 1\rangle$$
+因为$j$最多只能取$1$。所以若令$m=2$，则右手边就是零。随便取两个$m_{1},m_{2}$的值，我们有：
+$$\bra{m_{1}= \frac{1}{2},m_{2}= \frac{3}{2}}j=1,m=2\rangle=\text{LC of }\bra{m_{1}= - \frac{1}{2},m_{2}= \frac{3}{2}} j=1,m=1\rangle,\ \bra{m_{1}= \frac{1}{2},m_{2}= \frac{1}{2}} j=1,m=1\rangle $$
+LHS为零。RHS第一项显然也为零。所以我们得到：
+$$\bra{m_{1}=\frac{1}{2},m_{2}=\frac{1}{2}} j=1,m=1\rangle=0$$
+然后将这一项作为左手边，引出另外两项：
+$$\begin{align}
+ & \bra{m_{1}=\frac{1}{2},m_{2}=\frac{1}{2}} j=1,m=1\rangle=\text{LC of }\bra{m_{1}=- \frac{1}{2},m_{2}= \frac{1}{2}} j=1,m=0\rangle,\ \bra{m_{1}= \frac{1}{2},m_{2}=- \frac{1}{2}} j=1,m=0\rangle \\
+\implies & 0=\sqrt{ \left( \frac{1}{2}- \frac{1}{2}+1 \right) \left( \frac{1}{2}+\frac{1}{2} \right) }\bra{m_{1}= - \frac{1}{2},m_{2}= \frac{1}{2}} j=1,m=0\rangle+ \sqrt{ \left( \frac{1}{2}- \frac{1}{2}+1 \right)\left( \frac{1}{2}+\frac{1}{2} \right) }\bra{m_{1}=\frac{1}{2},m_{2}=- \frac{1}{2}} j=1,m=0\rangle \\
+\implies & \bra{m_{1}= - \frac{1}{2},m_{2}= \frac{1}{2}} j=1,m=0\rangle=\bra{m_{1}=\frac{1}{2},m_{2}=- \frac{1}{2}} j=1,m=0\rangle
+\end{align}$$
+我们就得到了两个CG系数的相对大小！。
+
+同样地：
+$$\begin{align}
+ & \bra{m_{1}=- \frac{1}{2},m_{2}=\frac{1}{2}} j=1,m=0\rangle=\text{LC of }\bra{m_{1}=- \frac{3}{2},m_{2}=\frac{1}{2}}j=1,m=-1\rangle,\ \bra{m_{1}=- \frac{1}{2},m_{2}=- \frac{1}{2}} j=1,m=-1\rangle 
+\end{align}$$
+而右手边第一项为零。所以：
+$$\begin{align}
+ & \sqrt{ (1-1+1)(1+1) }\bra{m_{1}=- \frac{1}{2},m_{2}=\frac{1}{2}} j=1,m=0\rangle=\sqrt{ \left( \frac{1}{2}-\frac{1}{2}+1 \right)\left( \frac{1}{2}+\frac{1}{2} \right) }\bra{m_{1}=-\frac{1}{2},m_{2}=- \frac{1}{2}} j=1,m=0\rangle \\
+\implies & \sqrt{ 2 }\bra{m_{1}=- \frac{1}{2},m_{2}=\frac{1}{2}} j=1,m=0\rangle=\bra{m_{1}=-\frac{1}{2},m_{2}=- \frac{1}{2}} j=1,m=0\rangle
+\end{align}$$
+
+同样地：
+$$\begin{align}
+\bra{m_{1}= \frac{1}{2},m_{2}=- \frac{1}{2}} j=1,m=0\rangle=\text{LC of }\bra{m_{1}=- \frac{1}{2},m_{2}=- \frac{1}{2}} j=1,m=-1\rangle,\ \bra{m_{1}=-\frac{1}{2},m_{2}=- \frac{3}{2}} j=1,m=-1\rangle
+\end{align}$$
+而右手边第二项为零。同样地可以算得：
+$$\sqrt{ 2 }\bra{m_{1}= \frac{1}{2},m_{2}=- \frac{1}{2}}j=1,m=0\rangle=\bra{m_{1}=- \frac{1}{2},m_{2}=- \frac{1}{2}} j=1,m=-1\rangle $$
+至此我们得到全部CG系数的相对大小。最后只需要normalization即可。
+
+# 3. $\vec{L}+\vec{S}$ 
 
 ## Big picture
 
