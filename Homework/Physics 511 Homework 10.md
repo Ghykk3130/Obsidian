@@ -65,3 +65,36 @@ $$\begin{align}
 
 # Sakurai 3.25
 ## a.
+It's easy to compute:
+$$\begin{align}
+& L_{x}= -i\hbar(y\partial_{z}-z\partial_{y})=i\hbar(\sin \phi \partial_{\theta}+\cot \theta \cos \phi \partial_{\phi}) \\
+ & L_{y}=-i\hbar(z\partial_{x}-x\partial_{z})=i\hbar(-\cos \phi \partial_{\theta}+\cot\theta \sin \phi \partial_{\phi})
+\end{align}$$
+Then:
+$$\begin{align}
+L_{-} & = L_{x}-iL_{y} \\
+ & = \hbar(i\sin \phi-\cos \phi) \frac{\partial}{\partial \theta}+\hbar(i\cot \theta \cos \phi+\cot \theta \sin \phi)  \frac{\partial}{\partial \phi}
+\end{align}$$
+Therefore:
+$$\begin{align}
+L_{-}Y_{1/ 2}^{1 /2} \propto &\left(\hbar(i\sin \phi-\cos \phi) \frac{\partial}{\partial \theta}+\hbar(i\cot \theta \cos \phi+\cot \theta \sin \phi)  \frac{\partial}{\partial \phi}\right) e^{i\phi/2}\sqrt{ \sin \theta } \\
+ & = \hbar(i\sin \phi-\cos \phi) \frac{1}{2} e^{i\phi/2} \frac{\cos \theta}{\sqrt{ \sin \theta }}+\hbar(i\cot \theta \cos \phi+\coth \eta \sin \phi) \frac{i}{2}e^{i\phi/2} \sqrt{ \sin \theta } \\
+ & = \frac{\hbar}{2}e^{i\phi/2} \frac{1}{\sqrt{ \sin \theta }}(i\sin \phi \cos \theta-\cos \phi \cos \theta-i\cot \theta \sin \theta \cos \phi+i\cot \theta \sin \theta \sin \phi) \\
+ & = \frac{\hbar}{2}e^{i\phi/2} \frac{1}{\sqrt{ \sin \theta }} 2\cos \theta e^{i(\pi-\phi)} \\
+ & = - \hbar \frac{\cos \theta}{\sqrt{ \sin \theta }}e^{-i \frac{\phi}{2}}
+\end{align}$$
+So:
+$$Y_{1/ 2}^{-1 /2}\propto  \frac{\cos \theta}{\sqrt{ \sin \theta }} e^{-i \frac{\phi}{2}}$$
+## b.
+It suffices to show that $L_{-}Y_{1 /2}^{-1 /2}\neq 0$. We compute:
+$$\begin{align}
+L_{-}Y_{1 /2}^{-1 /2}  & \propto \left(\hbar(i\sin \phi-\cos \phi) \frac{\partial}{\partial \theta}+\hbar(i\cot \theta \cos \phi+\cot \theta \sin \phi)  \frac{\partial}{\partial \phi}\right) \frac{\cos \theta}{\sqrt{ \sin \theta }}e^{-i \frac{\phi}{2}} \\
+ & = \hbar e^{-i \frac{\phi}{2}} \frac{1}{\sqrt{ \sin \theta }}\left[(i\sin \phi-\cos \phi) \frac{-\sin ^{2}\theta- \frac{1}{2}\cos ^{2}\theta}{\sin \theta}+(i\cot \theta \cos \phi+\cot \theta \sin \phi)\left( - \frac{i}{2} \right)\cos \theta\right] \\
+ & = \hbar e^{-i \frac{\phi}{2}} \frac{1}{\sqrt{ \sin \theta }}\left[- \frac{1}{2}(i\sin \phi \sin \theta-\cos \phi \sin \theta)- \frac{1}{2\sin \theta}(i\sin \phi-\cos \phi)+ \frac{1}{2}\left(  \frac{\cos ^{2}\theta}{\sin \theta}\cos \phi-i \frac{\cos ^{2}\theta}{\sin \theta}\sin \phi \right)\right] \\
+ & = \frac{\hbar}{2}e^{-i \frac{\phi}{2}} \frac{1}{\sqrt{ \sin \theta }}e^{i(\pi-\phi)}\left( -\sin \theta- \frac{1}{\sin \theta}- \frac{\cos ^{2}\theta}{\sin \theta} \right) \\
+ & = \hbar e^{-i \frac{3}{2}\phi} \frac{1}{\sin^{3/2}\theta}
+\end{align}$$
+So we have:
+$$0=Y_{1 /2}^{-3/ 2}\propto e^{i \frac{3}{2}\phi} \frac{1}{\sin^{3 /2}\theta}$$
+which is obviously impossible.
+

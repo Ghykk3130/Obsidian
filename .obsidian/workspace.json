@@ -433,12 +433,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "直角坐标和球坐标微分算子变换.md",
+                "file": "Homework/Physics 511 Homework 10.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "直角坐标和球坐标微分算子变换"
+              "title": "Physics 511 Homework 10"
             }
           },
           {
@@ -919,7 +919,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 200,
+    "collapsed": true
   },
   "right": {
     "id": "9003d078f8dbc4ed",
@@ -1019,8 +1020,8 @@
   },
   "active": "d437fef27e565796",
   "lastOpenFiles": [
-    "统计力学的数学基础.md",
     "直角坐标和球坐标微分算子变换.md",
+    "统计力学的数学基础.md",
     "Homework/Physics 511 Homework 10.md",
     "Homework/Physics 511 Midterm Practice.md",
     "转动的表示.md",
