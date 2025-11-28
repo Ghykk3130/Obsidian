@@ -1,63 +1,52 @@
-# Recursion relation
+# 1. Recursion relation
 
-考虑$\vec{J}_{1},\vec{J}_{2}$
+考虑$\vec{J}_{1},\vec{J}_{2}$。它们引出的算子$J_{1}^{2},J_{1z},J_{2}^{2},J_{2z}$的本征态张成一组完备基。令本征态为$\ket{j_{1},j_{2},m_{1},m_{2}}$，简记为$\ket{m_{1},m_{2}}$。
 
+现在考虑$\vec{J}=\vec{J}_{1}+\vec{J}_{2}$。这同样是Hilbert空间上的一个算子。可以证明$J^{2},J_{z},J_{1}^{2},J_{2}^{2}$本征态也张成一组完备基。令本征态为$\ket{j_{1},j_{2},j,m}$，简记为$\ket{j,m}$。
 
+Clebsh-Gorden系数即这两组基作基变换的系数。定义：
 
+>[!Note] Definition 1
+>Define the Clebsh-Gorden coefficient as $\bra{m_{1},m_{2}}j,m\rangle$
 
+我们作如下命题：
 
+>[!Note] Proposition 1
+>$\bra{m_{1},m_{2}}j,m\rangle=0$ if $m_{1}+m_{2}\neq m$.
 
-
-
-
-
-
-
-
-Setup: 考虑两个角动量ket $\ket{j_{1},m_{1}}, \ket{j_{2},m_{2}}$。它们对应的observable为$J_{1}^{2},J_{1z},J_{2}^{2},J_{2z}$。它们张的量积组成角动量相加的ket $\ket{j_{1},j_{2},m_{2},m_{2}}$。我们有到另一组基$\ket{j_{1},j_{2},j,m}$。它们对应的observable为$J^{2},J_{1}^{2},J_{2}^{2},J_{z}$。我们想知道由$\ket{j_{1}j_{2},j,m}$换到$\ket{j_{1},j_{2},m_{1},m_{2}}$的变换矩阵是什么。为此我们将推导一个关于这个矩阵元的递推关系。
-
-变换矩阵的矩阵元显然为$\bra{j_{1},j_{2},m_{1},m_{2}}j_{1},j_{2},j,m\rangle$。称这个矩阵元为Clebsch-Gordan coefficient。
->[! Definition 1]
->Let $\ket{j_{1},j_{2},m_{1},m_{2}},\ket{j_{1},j_{2},j,m}$ be angular momentum kets, with $j_{1},j_{2},m_{1},m_{2},j,m$ corresponding to observables $J_{1}^{2},j_{2}^{2},J_{1z},J_{2z},J^{2},J_{z}$ respectively. $\vec{J}=\vec{J_{1}}+\vec{J_{2}}$. Then call $\bra{j_{1},j_{2},m_{1},m_{2}}j_{1},j_{2},j,m\rangle$ the Clebsch-Gordan coefficient.
-## Remark
-不难发现，CG系数就是新基矢$\ket{j_{1},j_{2},j,m}$在老基矢$\ket{j_{1},j_{2},m_{1},m_{2}}$上的投影。
-
-
->[! Proposition 1]
->The CG coefficient is zero unless $m_{1}+m_{2}=m$
+^823fd7
 
 ## Proof.
-考虑$\bra{j_{1},j_{2},m_{1},m_{2}}J_{z}\ket{j_{1},j_{2},j,m}$
-On one hand, 它等于$m\bra{j_{1},j_{2},m_{1},m_{2}}j_{1},j_{2},j,m\rangle$
-OTOH, 它等于$\bra{j_{1},j_{2},m_{1},m_{2}}(J_{1z}+J_{2z})\ket{j_{1},j_{2},j,m}=(m_{1}+m_{2})\bra{j_{1},j_{2},m_{1},m_{2}}j_{1},j_{2},j,m\rangle$
-
-令这两个相等，会发现CG系数在$m\neq m_{1}+m_{2}$时必为零。
+我们有：
+$$\begin{align}
+ & J_{z}\ket{j,m} = \hbar m\ket{j,m} \\
+\implies & \bra{m_{1},m_{2}} J_{z}\ket{j,m} =\hbar m\bra{m_{1},m_{2}} j,m\rangle \\
+\implies & \bra{m_{1},m_{2}} (J_{1z}+J_{2z})\ket{j,m} =\hbar m\bra{m_{1},m_{2}}  j,m\rangle \\
+\implies & (m_{1}+m_{2})\bra{m_{1},m_{2}}j,m\rangle=m\bra{m_{1},m_{2}} j,m\rangle 
+\end{align}$$
 >[!Right]
 >$\blacksquare$
 
-接下来为了获得不同的$m_{1},m_{2},m$对应的Clebsch-Gordan系数之间的递推关系，fix $j_{1},j_{2},j$, 我们考虑：
-$J_{\pm}\ket{j_{1},j_{2},j,m}=(J_{1\pm}+J_{2\pm})\ket{j_{1},j_{2},j,m}$
+我们可以证明，CG系数有如下递推公式：
 
-为了引入Clebsch-Gordan系数，我们将右手边展开得到：
-$J_{\pm}\ket{j_{1},j_{2},j,m}=(J_{1\pm}+J_{2\pm})\sum_{m_{1},m_{2}} \ket{j_{1},j_{2},m_{1},m_{2}}\bra{j_{1},j_{2},m_{1},m_{2}}j_{1},j_{2},j,m\rangle$
-$\sqrt{ j(j+1)-m(m\pm{1}) }\ket{j_{1},j_{2},j,m \pm 1}=\sum \sqrt{ j_{1}(j_{1}+1)-m_{1}(m_{1}\pm{1}) }\ket{j_{1},j_{2},m_{1}\pm 1,m_{2}}\bra{j_{1},j_{2},m_{1},m_{2}}j_{1},j_{2},j,m\rangle + \sum \sqrt{ j_{2}(j_{2}+1)-m_{2}(m_{2}\pm 1) }\ket{j_{1},j_{2},m_{1},m_{2}\pm 1}\bra{j_{1},j_{2},m_{1},m_{2}}j_{1},j_{2},j,m\rangle$
+>[!Note] Proposition 2
+>$$\sqrt{ (j \pm m +1) (j \mp m)}\bra{m_{1},m_{2}} j,m\pm 1\rangle=\sqrt{ (j_{1} \mp m_{1}+1)(j_{1}\pm m_{1} ) }\bra{m_{1}\mp{1},m_{2}} j,m\rangle+\sqrt{ (j_{2} \mp m_{2}+1)(j_{2}\pm m_{2}) }\bra{m_{1},m_{2}\mp 1} j,m\rangle$$
+## Proof.
+我们有：
+$$\begin{align}
+ & J_{\pm} \ket{j,m} = (J_{1\pm}+J_{2\pm} )\ket{j,m} \\
+\implies &  \hbar \sqrt{ (j\pm m +1)(j \mp m) }\ket{j,m\pm{1}} =(J_{1\pm}+J_{2\pm})\ket{j,m}  
+\end{align}$$
+我们在两边左乘一个$\bra{m_{1},m_{2}}$。根据[[Clebsch-Gordan系数#^823fd7|proposition 1.1]]，必须要求$m_{1}+m_{2}=m\pm{1}$。然后：
+$$\begin{align}
+  \hbar \sqrt{ (j\pm m + 1)(j\mp m) }\bra{m_{1},m_{2}} j,m\pm 1\rangle & =\bra{m_{1},m_{2}} (J_{1\pm}+ J_{2\pm})\ket{j,m}   \\
+ & = \left(\hbar \sqrt{ (j_{1} \mp m_{1}+1)(j_{1}\pm m_{1}) }\bra{m_{1}\mp 1,m_{2}} +\hbar \sqrt{ j_{2}\mp m_{2}+1 }(j_{2}\pm m_{2})\bra{m_{1},m_{2}\mp 1} \right)\ket{j,m} 
+\end{align}$$
+约掉$\hbar$即可。
+>[!Right]
+>$\blacksquare$
 
-为了在左手边也得到Clebsh-Gordan系数，我们在左右两边左乘$\langle j_{1},j_{2},m_{1}^{'},m_{2}^{'}|$，利用正交性得到：
-$\sqrt{ j(j+1)-m(m\pm 1) }\bra{j_{1},j_{2},m_{1}^{'},m_{2}^{'}}j_{1},j_{2},j,m\pm 1 \rangle=\sqrt{ j_{1}(j_{1}+1)-m_{1}^{'}(m_{1}^{'}\mp 1) } \bra{j_{1},j_{2},m_{1}^{'} \mp 1,m_{2}^{'}}j_{1},j_{2},j,m \rangle+\sqrt{ j_{2}(j_{2}+1)-m_{2}^{'}(m_{2}^{'}\mp 1) }\bra{j_{1},j_{2},m_{1}^{'}\mp 1, m_{2}^{'}}j_{1},j_{2},j,m \rangle$或者去掉撇写为：
-
-$\sqrt{ j(j+1)-m(m\pm 1) }\bra{j_{1},j_{2},m_{1},m_{2}}j_{1},j_{2},j,m \pm 1\rangle=\sqrt{ j_{1}(j_{1}+1) -m_{1}(m_{1}\mp 1)}\bra{j_{1},j_{2},m_{1} \mp 1,m_{2}}j_{1},j_{2},j,m\rangle + \sqrt{ j_{2}(j_{2}+1)-m_{2}(m_{2}\mp 1) }\bra{j_{1},j_{2},m_{1},m_{2}\mp 1}j_{2},j_{2},j,m\rangle$
->[! Proposition 2]
->$\sqrt{ j(j+1)-m(m\pm 1) }\bra{j_{1},j_{2},m_{1},m_{2}}j_{1},j_{2},j,m \pm 1\rangle=\sqrt{ j_{1}(j_{1}+1) -m_{1}(m_{1}\mp 1)}\bra{j_{1},j_{2},m_{1} \mp 1,m_{2}}j_{1},j_{2},j,m\rangle + \sqrt{ j_{2}(j_{2}+1)-m_{2}(m_{2}\mp 1) }\bra{j_{1},j_{2},m_{1},m_{2}\mp 1}j_{2},j_{2},j,m\rangle$
->or
->$\sqrt{ (j \mp m)(j\pm m +1) } \bra{j_{1},j_{2},m_{1},m_{2}}j_{1},j_{2},j,m \pm 1\rangle=\sqrt{ (j_{1} \pm m_{1})(j_{1} \mp m_{1} + 1) }\bra{j_{1},j_{2},m_{1}\mp 1,m_{2}}j_{1},j_{2},j,m\rangle + \sqrt{ (j_{2} \pm m_{2})(j_{2} \mp m_{2} + 1) }\bra{j_{2},j_{2},m_{1},m_{2}\mp 1}j_{1},j_{2},j,m \rangle$
-
-## Caveat
-注意此处的磁角量子数的关系是$m_{1} +m_{2} \mp 1=m$。下面这个例子很容易因为这点算不对。
-
-## Remark
-写出递推式的技巧：注意在对于一个不为零的CG系数，总有$m_{1}+m_{2}=m$ （当然实际上是caveat中那个等式）。所以CG系数写半边的$m$就应立刻知道另一半。省略$j_{1},j_{2},m,j$, 例如在下面的ex中，$\bra{m_{1}=m- \frac{1}{2},m_{2}= \frac{1}{2}}$的另一半就一定是$\ket{m}$
-
-# Ex: $\vec{L}+\vec{S}$ for electrons
+# 2. $\vec{L}+\vec{S}$ for electrons
 
 ## Big picture
 
