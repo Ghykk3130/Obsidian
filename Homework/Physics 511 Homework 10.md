@@ -200,3 +200,126 @@ Then we must have:
 $$\ket{2,-1} = \frac{1}{\sqrt{ 2 }}(\ket{0\ -} + \ket{-\ 0} )$$
 # Sakurai 3.42
 
+From Homework 8, I know that the Wigner d-matrix is:
+$$d^{(1)}_{qq^{'}}=1+(\cos \beta-1)\begin{pmatrix}
+\frac{1}{2} & 0 & - \frac{1}{2} \\
+0 & 1 & 0 \\
+- \frac{1}{2} & 0 & \frac{1}{2}
+\end{pmatrix}+ \sin \beta \begin{pmatrix}
+0 & - \frac{1}{\sqrt{ 2 }} & 0 \\
+\frac{1}{\sqrt{ 2 }} & 0 & - \frac{1}{\sqrt{ 2 }} \\
+0 & \frac{1}{\sqrt{ 2 }} & 0
+\end{pmatrix}$$
+Therefore I must have:
+$$ \begin{pmatrix}
+V_{-1^{'}}^{(1)} \\
+V_{0^{'}}^{(1)} \\
+V_{1^{'} }^{(1)}
+\end{pmatrix}= d^{(1)}\begin{pmatrix}
+V^{(1)}_{-1} \\
+V^{(1)}  _{0} \\
+V^{(1)}_{1} 
+\end{pmatrix}= \begin{pmatrix}
+\frac{\cos \beta+1}{2}V_{-1}^{(0)}- \frac{\sin \beta}{\sqrt{ 2 }}V_{0}^{(1)}- \frac{\cos \beta-1}{2}V_{1}^{(1)} \\
+\frac{\sin \beta}{\sqrt{ 2 }}V_{-1}^{(1)}+ \cos \beta V_{0}^{(1)}- \frac{\sin \beta}{\sqrt{ 2 }}V_{1}^{(1)} \\
+- \frac{\cos \beta-1}{2}V_{-1}^{(1)}+ \frac{\sin \beta}{\sqrt{ 2 }}V_{0} ^{(1)}+ \frac{\cos \beta+1}{2}V_{1}^{(1)}
+\end{pmatrix}$$
+Know that:
+$$\begin{align}
+V_{\pm 1}^{(1)}= \mp \frac{V_{x}\pm iV_{y}}{\sqrt{ 2 }}, V_{0}^{(1)}=V_{z}
+\end{align}$$
+Then:
+$$\begin{pmatrix}
+V_{-1}^{(1)} \\
+V_{0}^{(1)} \\
+V_{1}^{(1)}
+\end{pmatrix}= \begin{pmatrix}
+\frac{1}{\sqrt{ 2 }} & - \frac{i}{\sqrt{ 2 }} & 0 \\
+0 & 0 & 1 \\
+- \frac{1}{\sqrt{ 2 }} & - \frac{i}{\sqrt{ 2 }} & 0
+\end{pmatrix} \begin{pmatrix}
+V_{x} \\
+V_{y} \\
+V_{z}
+\end{pmatrix}$$
+Denote:
+$$A= \begin{pmatrix}
+\frac{1}{\sqrt{ 2 }} & - \frac{i}{\sqrt{ 2 }} & 0 \\
+0 & 0 & 1 \\
+- \frac{1}{\sqrt{ 2 }} & - \frac{i}{\sqrt{ 2 }} & 0
+\end{pmatrix} $$
+Then it suffices to show that:
+$$\begin{align}
+\begin{pmatrix}
+V_{-1^{'}}^{(1)} \\
+V_{0^{'}}^{(1)} \\
+V_{1^{'}}^{(1)}
+\end{pmatrix} & = A\begin{pmatrix}
+V_{x^{'}} \\
+V_{y^{'}} \\
+V_{z^{'}}
+\end{pmatrix} \\
+ & =AR_{y}(\beta)\begin{pmatrix}
+V_{x} \\
+V_{y} \\
+V_{z}
+\end{pmatrix} \\
+ & = AR_{y}(\beta)A^{-1}\begin{pmatrix}
+V_{-1}^{(1)} \\
+V_{0}^{(1)} \\
+V_{1}^{(1)}
+\end{pmatrix}
+\end{align}
+$$
+It's easy to compute that:
+$$\begin{align}
+AR_{y}(\beta)A^{-1}\begin{pmatrix}
+V_{-1}^{(1)} \\
+V_{0}^{(1)} \\
+V_{1}^{(1)}
+\end{pmatrix} & = \begin{pmatrix}
+\frac{1}{\sqrt{ 2 }} & - \frac{i}{\sqrt{ 2 }} & 0 \\
+0 & 0 & 1 \\
+- \frac{1}{\sqrt{ 2 }} & - \frac{i}{\sqrt{ 2 }} & 0
+\end{pmatrix}\begin{pmatrix}
+\cos \beta & 0 & \sin \beta \\
+0 & 1 & 0 \\
+-\sin \beta & 0 & \cos \beta
+\end{pmatrix}\begin{pmatrix}
+\frac{1}{\sqrt{ 2 }} & 0 & - \frac{1}{\sqrt{ 2 }} \\
+\frac{i}{\sqrt{ 2 }} & 0 &  \frac{i}{\sqrt{ 2 }} \\
+0 & 1 & 0
+\end{pmatrix}\begin{pmatrix}
+V_{-1}^{(1)} \\
+V_{0}^{(1)} \\
+V_{1}^{(1)}
+\end{pmatrix} \\
+ & = \begin{pmatrix}
+\frac{1}{\sqrt{ 2 }} & - \frac{i}{\sqrt{ 2 }} & 0 \\
+0 & 0 & 1 \\
+- \frac{1}{\sqrt{ 2 }} & - \frac{i}{\sqrt{ 2 }} & 0
+\end{pmatrix}\begin{pmatrix}
+\frac{\cos \beta}{\sqrt{ 2 }} & \sin \beta & - \frac{\cos \beta}{\sqrt{ 2 }} \\
+ \frac{i}{\sqrt{ 2 }} & 0 & \frac{i}{\sqrt{ 2 }} \\
+- \frac{\sin \beta}{\sqrt{ 2 }} & \cos \beta & \frac{\sin \beta}{\sqrt{ 2 }}
+\end{pmatrix}\begin{pmatrix}
+V_{-1}^{(1)} \\
+V_{0}^{(1)} \\
+V_{1}^{(1)}
+\end{pmatrix} \\
+ & = \begin{pmatrix}
+\frac{1}{2}+ \frac{\cos \beta}{2} &  \frac{\sin \beta}{\sqrt{ 2 }} & \frac{1}{2}- \frac{\cos \beta}{2} \\
+- \frac{\sin \beta}{\sqrt{ 2 }} & \cos \beta &  \frac{\sin \beta}{\sqrt{ 2 }} \\
+\frac{1}{2}- \frac{\cos \beta}{2} & - \frac{\sin \beta}{\sqrt{ 2 }} & \frac{1}{2}+ \frac{\cos \beta}{2}
+\end{pmatrix}\begin{pmatrix}
+V_{-1}^{(1)} \\
+V_{0}^{(1)} \\
+V_{1}^{(1)}
+\end{pmatrix} \\
+ & = \begin{pmatrix}
+\frac{\cos \beta+1}{2}V_{-1}^{(1)}+ \frac{\sin \beta}{\sqrt{ 2 }}V_{0}^{(1)}- \frac{\cos \beta-1 }{2}V_{1}^{(1)} \\
+- \frac{\sin \beta}{\sqrt{ 2 }}V_{-1}^{(1)}+ \cos \beta V_{0}^{(1)}+ \frac{\sin \beta}{\sqrt{ 2 }}V_{1}^{(1)} \\ - \frac{\cos \beta-1}{2 }V_{-1}^{(1)}- \frac{\sin \beta}{\sqrt{ 2 }}V_{0}^{(1)}+ \frac{\cos \beta+1}{2 }V_{1}^{(1)}
+\end{pmatrix}
+\end{align}$$
+Observe that this is indeed equal to $\begin{pmatrix}V_{-1^{'}}^{(1)} \\ V_{0^{\text{}}}^{(1)} \\ V_{1^{'}}^{(1)}\end{pmatrix}$.
+
