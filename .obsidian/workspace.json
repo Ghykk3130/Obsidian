@@ -971,8 +971,7 @@
               "title": "Search"
             }
           }
-        ],
-        "currentTab": 3
+        ]
       }
     ],
     "direction": "horizontal",
@@ -1077,8 +1076,9 @@
   },
   "active": "8d7178dc09efbe0a",
   "lastOpenFiles": [
-    "密度算子.md",
     "Homework/Physics 510 Homework 11.md",
+    "系综.md",
+    "密度算子.md",
     "Homework/Physics 510 Homework 10.md",
     "Homework/Physics 510 Homework 9.md",
     "Bose-Einstein statistics与BEC.md",
@@ -1103,7 +1103,6 @@
     "Solid state.md",
     "Excalidraw/Drawing 2025-11-25 17.49.35.excalidraw.md",
     "气体.md",
-    "溶液.md",
     "Excalidraw",
     "Pictures/31c55fba2a72bf93689505242fc94df3.jpg",
     "Pictures/Pasted image 20251116215527.png",

@@ -1,10 +1,10 @@
 # 1.
 ## (a).
 Know that the probability of finding a state in $(n_{1},n_{2},\dots)$ is given by:
-$$\frac{\exp\left( -\beta \sum_{k}n_{k}\epsilon_{k} +\beta \mu \sum_{k}n_{k}\right)}{G}$$
+$$\frac{\exp\left( -\beta \sum_{k}n_{k}\epsilon_{k} +\beta \mu \sum_{k}n_{k}\right)}{Q}$$
 The grand partition function is given by:
 $$\begin{align}
-G & = \sum_{\{ n_{k} \}}\exp\left( -\beta \sum_{k}n_{k}\epsilon_{k}+\beta \mu \sum_{k}n_{k} \right) \\
+Q & = \sum_{\{ n_{k} \}}\exp\left( -\beta \sum_{k}n_{k}\epsilon_{k}+\beta \mu \sum_{k}n_{k} \right) \\
  & = \left(\sum_{n_{1}}\exp(-\beta n_{1}\epsilon_{1}+\beta \mu n_{1})\right)\left(\sum_{n_{2}}\exp(-\beta n_{2}\epsilon_{2}+\beta \mu n_{2})\right)\dots \\
  & = \left(1+\mathcal{z}^{}e^{-\beta\epsilon_{1}} \right)(1+\mathcal{z}^{}e^{-\beta\epsilon_{2}})\dots \\
  & = \prod_{k}(1+\mathcal{z}^{}e^{-\beta\epsilon_{k}})
