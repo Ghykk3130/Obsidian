@@ -102,4 +102,25 @@ which is obviously impossible.
 
 **For $\ket{0,0}$:**
 
-Know that $\ket{0,0}$ must be a linear combination of $\ket{+\ -},\ket{-\ +},\ket{0\ 0}$. 
+Know that $\ket{0,0}$ must be a linear combination of $\ket{+\ -},\ket{-\ +},\ket{0\ 0}$. Then we have:
+$$\begin{align}
+ & \sqrt{ 0(0+1)-1(1+1) }\bra{+\ 0} 0,1\rangle=\sqrt{1(1+1)-1(1-1)  }\bra{0\ 0}0,0\rangle+ \sqrt{ 1(1+1)-0(0-1) }\bra{+\ -}0,0\rangle \\
+\implies & 0=\bra{0\ 0} 0,0\rangle+\bra{+\ -}0,0\rangle \\
+\implies & \bra{0\ 0} 0,0\rangle=-\bra{+\ -} 0,0\rangle    
+\end{align}$$
+Similarly, we also have:
+$$\begin{align}
+& \sqrt{ 0(0+1)-1(1+1) }\bra{0\ +} 0,1\rangle=\sqrt{1(1+1)-1(1-1)  }\bra{0\ 0}0,0\rangle+ \sqrt{ 1(1+1)-0(0-1) }\bra{-\ +}0,0\rangle \\
+\implies & 0=\bra{0\ 0} 0,0\rangle+\bra{-\ +}0,0\rangle \\
+\implies & \bra{0\ 0} 0,0\rangle=-\bra{-\ +} 0,0\rangle   
+\end{align}$$
+Therefore, we have:
+$$\begin{align}
+\ket{0,0}  & = \ket{0\ 0} \bra{0\ 0} 0,0\rangle+\ket{+\ -} \bra{+\ -} 0,0 \rangle+\ket{-\ +} \bra{-\ + }0,0\rangle \\
+ & = \bra{0\ 0} 0,0\rangle(\ket{0\ 0} -\ket{+\ -} -\ket{-\ +} ) 
+\end{align}$$
+Due to normalization, we must have:
+$$\ket{0, 0}= \frac{1}{\sqrt{ 3 }}(\ket{0\ 0} -\ket{+\ -} -\ket{-\ +} ) $$
+**For $\ket{1,0}$:**
+
+Know that $\ket{1,0}$ must be a linear combination of  
