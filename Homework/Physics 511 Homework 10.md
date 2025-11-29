@@ -119,8 +119,53 @@ $$\begin{align}
 \ket{0,0}  & = \ket{0\ 0} \bra{0\ 0} 0,0\rangle+\ket{+\ -} \bra{+\ -} 0,0 \rangle+\ket{-\ +} \bra{-\ + }0,0\rangle \\
  & = \bra{0\ 0} 0,0\rangle(\ket{0\ 0} -\ket{+\ -} -\ket{-\ +} ) 
 \end{align}$$
-Due to normalization, we must have:
+After normalization, we must have:
 $$\ket{0, 0}= \frac{1}{\sqrt{ 3 }}(\ket{0\ 0} -\ket{+\ -} -\ket{-\ +} ) $$
 **For $\ket{1,0}$:**
 
-Know that $\ket{1,0}$ must be a linear combination of  
+Know that $\ket{1,0}$ must be a linear combination of  $\ket{+\ -},\ket{-\ +},\ket{0\ 0}$.
+
+We have:
+$$\begin{align}
+ & \sqrt{ 1(1+1)-(-1)\cdot {0} }\bra{+\ -} 1,0\rangle= \sqrt{ 1(1+1)-1\cdot 0 }\bra{0\ -} 1,-1\rangle \\
+\implies & \bra{+\ -} 1,-1\rangle=\bra{0\ -} 1,-1\rangle
+\end{align}$$
+We also have:
+$$\begin{align}
+ & \sqrt{ 1(1+1)-0\cdot( -1) }\bra{0\ -} 1,-1\rangle=\sqrt{ 1(1+1)-0\cdot( 01+1) }\bra{+\ -} 1,0\rangle+ \sqrt{ 1(1+1)-(-1)\cdot 0 }\bra{0\ 0} 1,0\rangle \\
+\implies & \bra{0\ 0} 1,0\rangle=0
+\end{align}$$
+We then compute:
+$$\begin{align}
+ & \sqrt{ 1(1+1)-(-1)\cdot 0 }\bra{0\ 0} 1,0\rangle= \sqrt{ 1(1+1)-0(0-1) }\bra{-\ -} 1,-1\rangle+ \sqrt{ 1(1+1)-(-1)\cdot 0 }\bra{0\ -} 1,-1\rangle \\
+\implies & \bra{-\ -} 1,-1\rangle=-\bra{0\ -} 1,-1\rangle
+\end{align}$$
+We then obtain:
+$$\begin{align}
+ & \sqrt{ 1(1+1)-0(0-1) }\bra{-\ 0} 1,-1\rangle=\sqrt{ 1(1+1)-(-1)(-1+1) }\bra{0\ 0 } 1,0\rangle+ \sqrt{ 1(1+1)-0(0+1) }\bra{-\ +} 1,0\rangle \\
+\implies & \bra{-\ +} 1,0\rangle=\bra{-\ 0} 1,-1\rangle 
+\end{align}$$
+Then we have:
+$$\begin{align}
+\ket{1,0}  & = \ket{+\ -} \bra{+\ -} 1,0\rangle+\ket{-\ +} \bra{-\ +} 1,0\rangle+\ket{0\ 0} \bra{0\ 0} 1,0\rangle \\
+ & = \bra{+\ -} 1,0\rangle(\ket{+\ -}+\ket{-\ +}  )
+\end{align}  $$After normalization, we must have:
+$$\ket{1,0} = \frac{1}{\sqrt{ 2 }}(\ket{+\ -}+\ket{-\ +}  )$$
+**For $\ket{1,1}$:**
+
+Know that $\ket{1,1}$ must be a linear combination of $\ket{+\ 0},\ket{0\ +}$.
+
+We have:
+$$\begin{align}
+ &  0= \sqrt{ 1(1+1)-1 (1-1) }\bra{0\ +} 1,1\rangle+ \sqrt{ 1(1+1)-1(1-1) }\bra{+\ 0} 1,1\rangle \\
+\implies & \bra{0\ +} 1,1\rangle=-\bra{+\ 0} 1,1\rangle 
+\end{align}$$
+Therefore:
+$$\begin{align}
+ & \ket{1,1} =\ket{+\ 0} \bra{+\ 0} 1,1\rangle+\ket{0\ +} \bra{0\ +} 1,1\rangle \\
+ & = \bra{+\ 0} 1,1\rangle(\ket{+\ 0} -\ket{0\ +} )
+\end{align}$$
+After normalization, we must have:
+$$\ket{1,1} = \frac{1}{\sqrt{ 2 }}(\ket{+\ 0} -\ket{0\ +} )$$
+**For $\ket{2,0}$:**
+
