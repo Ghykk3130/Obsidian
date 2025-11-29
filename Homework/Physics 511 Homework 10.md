@@ -98,3 +98,8 @@ So we have:
 $$0=Y_{1 /2}^{-3/ 2}\propto e^{i \frac{3}{2}\phi} \frac{1}{\sin^{3 /2}\theta}$$
 which is obviously impossible.
 
+# Sakurai 3.34
+
+**For $\ket{0,0}$:**
+
+Know that $\ket{0,0}$ must be a linear combination of $\ket{+\ -},\ket{-\ +},\ket{0\ 0}$. 
