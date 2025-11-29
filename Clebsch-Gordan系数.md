@@ -49,7 +49,7 @@ $$\begin{align}
 
 我们知道$\vec{S}_{1},\vec{S}_{2}$各自构成一个$SO(3)$的二维不可约表示。于是它们Hilbert空间的张量积构成一个$SO(3)$的四维不可约表示。
 
-令$\vec{S}=\vec{S}_{1}+\vec{S}_{2}$。
+令$\vec{S}=\vec{S}_{1}+\vec{S}_{2}$。假设我们想知道$\ket{j=1,m}$的所有CG系数。
 
 我们首先从递推公式中某项出现零时开始推。这样更简单。注意到递推公式是这样的：
 $$\bra{m_{1},m_{2}} j,m\rangle=\text{LC of }\bra{m_{1}\mp 1,m_{2}} j,m\pm 1\rangle,\ \bra{m_{1},m_{2} \mp 1} j,m \pm 1\rangle$$
