@@ -169,3 +169,41 @@ After normalization, we must have:
 $$\ket{1,1} = \frac{1}{\sqrt{ 2 }}(\ket{+\ 0} -\ket{0\ +} )$$
 **For $\ket{2,0}$:**
 
+Know that $\ket{2,0}$ must be a linear combination of $\ket{+\ -},\ket{-\ +},\ket{0\ 0}$. 
+
+We have:
+$$\begin{align}
+ & \sqrt{ 2(2+1)-(-3)(-2) }\bra{-\ -} 2,-2\rangle=0 \\
+\implies &  \bra{-\ -} 2,-2\rangle=0
+\end{align}$$
+Then we can compute:
+$$\begin{align}
+ & \sqrt{ 2(2+1)-(-2)(-1) }\bra{0\ -} 2,-1\rangle= \sqrt{ 1(1+1)-0(0-1) }\bra{-\ -} 2,-2\rangle \\
+\implies &  \bra{0\ -} 2,-1\rangle=0
+\end{align}$$
+Then we have:
+$$\begin{align}
+ & 0= \sqrt{ 1(1+1)-0(0+{1}) }\bra{+\ -} 2,0\rangle+ \sqrt{ 1(1+1)-(-1) \cdot 0 }\bra{0\ 0} 2,0\rangle \\
+\implies & \bra{+\ -} 2,0\rangle=- \bra{0\ 0} 2,0\rangle
+\end{align}$$
+Then we have:
+$$\begin{align}
+ & \sqrt{ 2(2+1)-(-1)\cdot 0 }\bra{0\ 0} 2,0\rangle=\sqrt{ 1(1+1)-0(-1) }\bra{-\ 0} 2,-1\rangle \\
+\implies & \bra{-\ 0} 2,-1\rangle=\sqrt{ 3 }\bra{0\ 0} 2,0\rangle
+\end{align}$$
+Next:
+$$\begin{align}
+ & \sqrt{ 2(2+1)-0(0-1) }\bra{-\ 0} 2,-1\rangle=\sqrt{ 1(1+1)-(-1)\cdot 0 }\bra{0\ 0} 2,0\rangle+ \sqrt{ 1(1+1)-0(0+1) } \bra{0\ +} 2,0\rangle \\
+\implies & \sqrt{ 3 }\bra{-\ 0} 2,-1\rangle=\bra{0\ 0} 2,0\rangle+\bra{0\ +} 2,0\rangle 
+\end{align}$$
+Therefore, we have:
+$$\begin{align}
+\ket{2,0} &  = \ket{+\ -}\bra{+\ -} 2,0\rangle+\ket{-\ +} \bra{-\ +} 2,0\rangle+ \ket{0\ 0} \bra{0\ 0} 2,0\rangle \\
+ & = \bra{+\ -} 2,0\rangle(\ket{+\ -} - \ket{0\ 0} +4\ket{-\ +} ) 
+\end{align}$$
+After normalization, we have:
+$$\ket{2,0} = \frac{1}{3\sqrt{ 2 }}(\ket{+
+\ -} -\ket{0
+ 0} +4\ket{-\ +} )$$
+**For $\ket{2,1}$:**
+
