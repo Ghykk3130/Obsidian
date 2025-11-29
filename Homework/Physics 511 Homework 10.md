@@ -123,87 +123,80 @@ After normalization, we must have:
 $$\ket{0, 0}= \frac{1}{\sqrt{ 3 }}(\ket{0\ 0} -\ket{+\ -} -\ket{-\ +} ) $$
 **For $\ket{1,0}$:**
 
-Know that $\ket{1,0}$ must be a linear combination of  $\ket{+\ -},\ket{-\ +},\ket{0\ 0}$.
-
-We have:
-$$\begin{align}
- & \sqrt{ 1(1+1)-(-1)\cdot {0} }\bra{+\ -} 1,0\rangle= \sqrt{ 1(1+1)-1\cdot 0 }\bra{0\ -} 1,-1\rangle \\
-\implies & \bra{+\ -} 1,-1\rangle=\bra{0\ -} 1,-1\rangle
-\end{align}$$
-We also have:
-$$\begin{align}
- & \sqrt{ 1(1+1)-0\cdot( -1) }\bra{0\ -} 1,-1\rangle=\sqrt{ 1(1+1)-0\cdot( 01+1) }\bra{+\ -} 1,0\rangle+ \sqrt{ 1(1+1)-(-1)\cdot 0 }\bra{0\ 0} 1,0\rangle \\
-\implies & \bra{0\ 0} 1,0\rangle=0
-\end{align}$$
-We then compute:
-$$\begin{align}
- & \sqrt{ 1(1+1)-(-1)\cdot 0 }\bra{0\ 0} 1,0\rangle= \sqrt{ 1(1+1)-0(0-1) }\bra{-\ -} 1,-1\rangle+ \sqrt{ 1(1+1)-(-1)\cdot 0 }\bra{0\ -} 1,-1\rangle \\
-\implies & \bra{-\ -} 1,-1\rangle=-\bra{0\ -} 1,-1\rangle
-\end{align}$$
-We then obtain:
-$$\begin{align}
- & \sqrt{ 1(1+1)-0(0-1) }\bra{-\ 0} 1,-1\rangle=\sqrt{ 1(1+1)-(-1)(-1+1) }\bra{0\ 0 } 1,0\rangle+ \sqrt{ 1(1+1)-0(0+1) }\bra{-\ +} 1,0\rangle \\
-\implies & \bra{-\ +} 1,0\rangle=\bra{-\ 0} 1,-1\rangle 
-\end{align}$$
+Know that:
+$$\ket{1,1} =\frac{1}{\sqrt{ 2 }}(\ket{+
+\ 0} -\ket{0
+ \ +} )$$
 Then we have:
 $$\begin{align}
-\ket{1,0}  & = \ket{+\ -} \bra{+\ -} 1,0\rangle+\ket{-\ +} \bra{-\ +} 1,0\rangle+\ket{0\ 0} \bra{0\ 0} 1,0\rangle \\
- & = \bra{+\ -} 1,0\rangle(\ket{+\ -}+\ket{-\ +}  )
-\end{align}  $$After normalization, we must have:
-$$\ket{1,0} = \frac{1}{\sqrt{ 2 }}(\ket{+\ -}+\ket{-\ +}  )$$
-**For $\ket{1,1}$:**
-
-Know that $\ket{1,1}$ must be a linear combination of $\ket{+\ 0},\ket{0\ +}$.
-
-We have:
+J_{-}\ket{1,1} =\hbar \sqrt{ 1(1+1)-1(1-1) }\ket{1,0}=\hbar \sqrt{ 2 }\ket{1,0}  
+\end{align}$$
+On the other hand, I have:
 $$\begin{align}
- &  0= \sqrt{ 1(1+1)-1 (1-1) }\bra{0\ +} 1,1\rangle+ \sqrt{ 1(1+1)-1(1-1) }\bra{+\ 0} 1,1\rangle \\
-\implies & \bra{0\ +} 1,1\rangle=-\bra{+\ 0} 1,1\rangle 
+J_{-}\ket{1,1}  & = \frac{1}{\sqrt{ 2 }}(J_{1-}+J_{2-})(\ket{+ \ 0} -\ket{0\ +} ) \\
+ & = \frac{1}{\sqrt{ 2 }}(\hbar \sqrt{ 1(1+1)-1(1-1) }\ket{0\ 0} + \hbar \sqrt{ 1(1+1)-0(0-1) }\ket{+\ -} -\hbar \sqrt{ 1(1+1)-0(0-1) }\ket{-\ +} - \hbar \sqrt{ 1(1+1)-1(1-1) }\ket{0\ 0} ) \\
+ & = \hbar(\ket{+\ -} -\ket{-\ +} )
 \end{align}$$
 Therefore:
-$$\begin{align}
- & \ket{1,1} =\ket{+\ 0} \bra{+\ 0} 1,1\rangle+\ket{0\ +} \bra{0\ +} 1,1\rangle \\
- & = \bra{+\ 0} 1,1\rangle(\ket{+\ 0} -\ket{0\ +} )
-\end{align}$$
-After normalization, we must have:
-$$\ket{1,1} = \frac{1}{\sqrt{ 2 }}(\ket{+\ 0} -\ket{0\ +} )$$
-**For $\ket{2,0}$:**
+$$\ket{1,0} =\frac{1}{\sqrt{ 2 }}(\ket{+\ -} -\ket{-\ +} )$$
 
-Know that $\ket{2,0}$ must be a linear combination of $\ket{+\ -},\ket{-\ +},\ket{0\ 0}$. 
+**For $\ket{1,1}$:**
+
+Already given in the problem, that $\ket{1,1}= \frac{1}{\sqrt{ 2 }}(\ket{+\ 0}-\ket{0\ +})$
+
+**For $\ket{2,2}$:**
+
+Know that $\ket{2,2}$ must be a linear combination of $\ket{+\ +}$. So after normalization, I must have:
+$$\ket{2,2} =\ket{+
+\ +} $$
+**For $\ket{2,1}$:**
 
 We have:
 $$\begin{align}
- & \sqrt{ 2(2+1)-(-3)(-2) }\bra{-\ -} 2,-2\rangle=0 \\
-\implies &  \bra{-\ -} 2,-2\rangle=0
+J_{-}\ket{2,2} &  = \hbar \sqrt{ 2(2+1)-2(2-1) }\ket{2,1}  \\
+ & = 2\hbar \ket{2,1} 
 \end{align}$$
-Then we can compute:
+On the other hand, I have:
 $$\begin{align}
- & \sqrt{ 2(2+1)-(-2)(-1) }\bra{0\ -} 2,-1\rangle= \sqrt{ 1(1+1)-0(0-1) }\bra{-\ -} 2,-2\rangle \\
-\implies &  \bra{0\ -} 2,-1\rangle=0
-\end{align}$$
-Then we have:
-$$\begin{align}
- & 0= \sqrt{ 1(1+1)-0(0+{1}) }\bra{+\ -} 2,0\rangle+ \sqrt{ 1(1+1)-(-1) \cdot 0 }\bra{0\ 0} 2,0\rangle \\
-\implies & \bra{+\ -} 2,0\rangle=- \bra{0\ 0} 2,0\rangle
+J_{-}\ket{2,2}  & = (J_{1-}+J_{2-})\ket{+\ +}  \\
+ & = \hbar \sqrt{ 1(1+1)-1(1-1) }\ket{0 \ +} +\hbar \sqrt{ 1(1+1)-1(1-1) }\ket{+\ 0} \\
+ & = \sqrt{ 2 }\hbar(\ket{0\ +} +\ket{+ \ 0} ) 
 \end{align}$$
 Then we have:
+$$\ket{2,1} = \frac{1}{\sqrt{ 2 }}(\ket{0\ +}+\ket{+
+ \ 0} )$$**For $\ket{2,0}$:**
+
+We have:
 $$\begin{align}
- & \sqrt{ 2(2+1)-(-1)\cdot 0 }\bra{0\ 0} 2,0\rangle=\sqrt{ 1(1+1)-0(-1) }\bra{-\ 0} 2,-1\rangle \\
-\implies & \bra{-\ 0} 2,-1\rangle=\sqrt{ 3 }\bra{0\ 0} 2,0\rangle
+J_{-}\ket{2,1}  & = \hbar \sqrt{ 2(2+1)-1(1-1) }\ket{2,0}  \\
+ & = \hbar \sqrt{ 6 }\ket{2,0} 
 \end{align}$$
-Next:
+On the other hand, we have:
 $$\begin{align}
- & \sqrt{ 2(2+1)-0(0-1) }\bra{-\ 0} 2,-1\rangle=\sqrt{ 1(1+1)-(-1)\cdot 0 }\bra{0\ 0} 2,0\rangle+ \sqrt{ 1(1+1)-0(0+1) } \bra{0\ +} 2,0\rangle \\
-\implies & \sqrt{ 3 }\bra{-\ 0} 2,-1\rangle=\bra{0\ 0} 2,0\rangle+\bra{0\ +} 2,0\rangle 
+J_{-}\ket{2,1}  & = \frac{1}{\sqrt{ 2 }}(J_{1-}+J_{2-})(\ket{0\ +} +\ket{+\ 0} ) \\
+ & = \frac{1}{\sqrt{ 2 }}(\hbar \sqrt{ 1(1+1)-0(0-1) }\ket{- \ +} + \hbar \sqrt{ 1(1+1)-1(1-1) }\ket{0\ 0}+ \hbar \sqrt{ 1(1+1)-1(1-1) }\ket{0\ 0} +\hbar \sqrt{ 1(1+1)-0(0-1) }\ket{+\ -} ) \\
+ & = \hbar(\ket{+\ -} +2\ket{0\ 0} +\ket{-\ +} )
 \end{align}$$
 Therefore, we have:
+$$\ket{2,0}= \frac{1}{\sqrt{ 6 }}(\ket{+\ -} + 2\ket{0\ 0} + \ket{-\ +} ) $$
+**For $\ket{2,-2}$:**
+
+Know that $\ket{2,-2}$ must be a linear combination of $\ket{-\ -}$. After normalization, we must have:
+$$\ket{2,-2}= \ket{-\ -} $$
+**For $\ket{2,-1}$:**
+
+Know that:
 $$\begin{align}
-\ket{2,0} &  = \ket{+\ -}\bra{+\ -} 2,0\rangle+\ket{-\ +} \bra{-\ +} 2,0\rangle+ \ket{0\ 0} \bra{0\ 0} 2,0\rangle \\
- & = \bra{+\ -} 2,0\rangle(\ket{+\ -} - \ket{0\ 0} +4\ket{-\ +} ) 
+J_{+}\ket{2,-2}  & = \hbar \sqrt{ 2(2+1)-(-2)(-2+1) }\ket{2,-1}  \\
+ & = 2\hbar \ket{2,-1} 
 \end{align}$$
-After normalization, we have:
-$$\ket{2,0} = \frac{1}{3\sqrt{ 2 }}(\ket{+
-\ -} -\ket{0
- 0} +4\ket{-\ +} )$$
-**For $\ket{2,1}$:**
+On the other hand, we have:
+$$\begin{align}
+J_{+}\ket{2,-2}  & = (J_{1+}+J_{2+})\ket{-\ -} \\
+ & = \hbar \sqrt{ 1(1+1)-(-1)(-1+1) }\ket{0\ -} + \hbar \sqrt{ 1(1+1)-(-1)(-1+1) }\ket{-\ 0} \\
+ & = \hbar \sqrt{ 2 }(\ket{0\ -}+ \ket{-\ 0} )   
+\end{align}$$
+Then we must have:
+$$\ket{2,-1} = \frac{1}{\sqrt{ 2 }}(\ket{0\ -} + \ket{-\ 0} )$$
+# Sakurai 3.42
 
