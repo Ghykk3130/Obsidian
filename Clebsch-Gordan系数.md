@@ -31,6 +31,8 @@ $$\begin{align}
 
 >[!Note] Proposition 2
 >$$\sqrt{ (j \pm m +1) (j \mp m)}\bra{m_{1},m_{2}} j,m\pm 1\rangle=\sqrt{ (j_{1} \mp m_{1}+1)(j_{1}\pm m_{1} ) }\bra{m_{1}\mp{1},m_{2}} j,m\rangle+\sqrt{ (j_{2} \mp m_{2}+1)(j_{2}\pm m_{2}) }\bra{m_{1},m_{2}\mp 1} j,m\rangle$$
+## Remark
+上述公式的记忆方法为：左手边系数是右手边$m$通过$J_{\pm}$作用在右手边$j,m$得到的系数。右手边系数为左手边通过$J_{1\mp},J_{2\mp}$作用在左手边$m_{1},m_{2}$得到的的系数。
 ## Proof.
 我们有：
 $$\begin{align}
@@ -49,40 +51,40 @@ $$\begin{align}
 
 我们知道$\vec{S}_{1},\vec{S}_{2}$各自构成一个$SO(3)$的二维不可约表示。于是它们Hilbert空间的张量积构成一个$SO(3)$的四维不可约表示。
 
-令$\vec{S}=\vec{S}_{1}+\vec{S}_{2}$。假设我们想知道$\ket{j=1,m}$的所有CG系数。
+令$\vec{S}=\vec{S}_{1}+\vec{S}_{2}$。假设我们想知道$\ket{j=1,m=0}$的所有CG系数。
 
-我们首先从递推公式中某项出现零时开始推。这样更简单。注意到递推公式是这样的：
-$$\bra{m_{1},m_{2}} j,m\rangle=\text{LC of }\bra{m_{1}\mp 1,m_{2}} j,m\pm 1\rangle,\ \bra{m_{1},m_{2} \mp 1} j,m \pm 1\rangle$$
-因为$j$最多只能取$1$。所以若令$m=2$，则右手边就是零。随便取两个$m_{1},m_{2}$的值，我们有：
-$$\bra{m_{1}= \frac{1}{2},m_{2}= \frac{3}{2}}j=1,m=2\rangle=\text{LC of }\bra{m_{1}= - \frac{1}{2},m_{2}= \frac{3}{2}} j=1,m=1\rangle,\ \bra{m_{1}= \frac{1}{2},m_{2}= \frac{1}{2}} j=1,m=1\rangle $$
-LHS为零。RHS第一项显然也为零。所以我们得到：
-$$\bra{m_{1}=\frac{1}{2},m_{2}=\frac{1}{2}} j=1,m=1\rangle=0$$
-然后将这一项作为左手边，引出另外两项：
-$$\begin{align}
- & \bra{m_{1}=\frac{1}{2},m_{2}=\frac{1}{2}} j=1,m=1\rangle=\text{LC of }\bra{m_{1}=- \frac{1}{2},m_{2}= \frac{1}{2}} j=1,m=0\rangle,\ \bra{m_{1}= \frac{1}{2},m_{2}=- \frac{1}{2}} j=1,m=0\rangle \\
-\implies & 0=\sqrt{ \left( \frac{1}{2}- \frac{1}{2}+1 \right) \left( \frac{1}{2}+\frac{1}{2} \right) }\bra{m_{1}= - \frac{1}{2},m_{2}= \frac{1}{2}} j=1,m=0\rangle+ \sqrt{ \left( \frac{1}{2}- \frac{1}{2}+1 \right)\left( \frac{1}{2}+\frac{1}{2} \right) }\bra{m_{1}=\frac{1}{2},m_{2}=- \frac{1}{2}} j=1,m=0\rangle \\
-\implies & \bra{m_{1}= - \frac{1}{2},m_{2}= \frac{1}{2}} j=1,m=0\rangle=\bra{m_{1}=\frac{1}{2},m_{2}=- \frac{1}{2}} j=1,m=0\rangle
-\end{align}$$
-我们就得到了两个CG系数的相对大小！。
+我们知道，这个态必定是$\ket{m_{1}=\frac{1}{2},m_{2}=- \frac{1}{2}},\ket{m_{1}=- \frac{1}{2},m_{2}=\frac{1}{2}}$的线性组合。
 
-同样地：
+我们首先令递推公式中出现上面三个中一个的CG系数。然后刻意令递推公式中的某项为零矢量。
+
+例如说，我们想从$\bra{m_{1}=\frac{1}{2},m_{2}=- \frac{1}{2}}j=1,m=0\rangle$开始。注意到$m_{1}=\frac{3}{2}$的话一定会出一个零矢量。所以我们考虑递推公式：
 $$\begin{align}
- & \bra{m_{1}=- \frac{1}{2},m_{2}=\frac{1}{2}} j=1,m=0\rangle=\text{LC of }\bra{m_{1}=- \frac{3}{2},m_{2}=\frac{1}{2}}j=1,m=-1\rangle,\ \bra{m_{1}=- \frac{1}{2},m_{2}=- \frac{1}{2}} j=1,m=-1\rangle 
+ & \sqrt{ 1(1+1)-0(0+1) }\bra{m_{1}=\frac{3}{2},m_{2}=- \frac{1}{2}} j=1,m=1\rangle=\sqrt{ \frac{1}{2}\left( \frac{1}{2}+1 \right)-\frac{3}{2}\left( \frac{3}{2}-1 \right) }\bra{m_{1}=\frac{1}{2},m_{2}=-\frac{1}{2}} j=1,m=0\rangle+\sqrt{ \frac{1}{2}\left( \frac{1}{2}+1 \right)-\left( -\frac{1}{2} \right)\left( -\frac{1}{2}-1 \right) }\bra{m_{1}=\frac{3}{2},m_{2}=-\frac{1}{2}} j=1,m=0\rangle \\
+\implies & 0=\bra{m_{1}=\frac{1}{2},m_{2}=-\frac{1}{2}} j=1,m=0\rangle
 \end{align}$$
-而右手边第一项为零。所以：
+我们将刚刚的行动用下图标出来：
+
+![[Drawing 2025-11-28 21.16.24.excalidraw|center]]
+
+我们相当于从右上角通过递推公式下降到了左上角和右下角。并且因为左上角和右下角CG系数为零，我们得到了左上角CG系数也为零。
+
+接下来我们按照这个地图，如何才能走到$m_{1}=-\frac{1}{2},m_{2}=\frac{1}{2}$呢？
+
+![[Drawing 2025-11-28 21.22.29.excalidraw|center]]
+
+但是这有一个问题，就是我们不知道$m_{1}=-\frac{1}{2},m_{2}=-\frac{1}{2}$点的值。为了得到这点的值，我们从该点往左下方走：
+
+![[Drawing 2025-11-28 21.25.38.excalidraw|center|450]]
+
+但是显然，$m_{1}=-\frac{3}{2},m_{2}=-\frac{1}{2}$和$m_{1}=-\frac{1}{2}, m_{2}=-\frac{3}{2}$点的CG系数都是零。所以$m_{1}=-\frac{1}{2},m_{2}=-\frac{1}{2}$点的CG系数也是零。所以在$m_{1}=-\frac{1}{2},m_{2}=-\frac{1}{2}$点列递推公式有：
 $$\begin{align}
- & \sqrt{ (1-1+1)(1+1) }\bra{m_{1}=- \frac{1}{2},m_{2}=\frac{1}{2}} j=1,m=0\rangle=\sqrt{ \left( \frac{1}{2}-\frac{1}{2}+1 \right)\left( \frac{1}{2}+\frac{1}{2} \right) }\bra{m_{1}=-\frac{1}{2},m_{2}=- \frac{1}{2}} j=1,m=0\rangle \\
-\implies & \sqrt{ 2 }\bra{m_{1}=- \frac{1}{2},m_{2}=\frac{1}{2}} j=1,m=0\rangle=\bra{m_{1}=-\frac{1}{2},m_{2}=- \frac{1}{2}} j=1,m=0\rangle
+ & \sqrt{ 1(1+1)-0(0-1) }\bra{m_{1}=-\frac{1}{2}, m_{2}=-\frac{1}{2}} j=1,m=-1\rangle=\sqrt{ \frac{1}{2}\left( \frac{1}{2}+1 \right)-\left( -\frac{1}{2} \right)\left( -\frac{1}{2}+1 \right) }\bra{m_{1}=\frac{1}{2},m_{2}=-\frac{1}{2}} j=1,m=0\rangle+\sqrt{ \frac{1}{2}\left( \frac{1}{2}+1 \right)-\left( -\frac{1}{2}\left( -\frac{1}{2}+1 \right) \right) }\bra{m_{1}=-\frac{1}{2},m_{2}=\frac{1}{2}}j=1,m=0\rangle  \\
+\implies & 0=\bra{m_{1}=\frac{1}{2},m_{2}=-\frac{1}{2}} j=1,m=0\rangle+\bra{m_{1}=-\frac{1}{2},m_{2}=\frac{1}{2}} j=1,m=0\rangle \\
+\implies & \bra{m_{1}=\frac{1}{2},m_{2}=-\frac{1}{2}} j=1,m=0\rangle=-\bra{m_{1}=-\frac{1}{2},m_{2}=\frac{1}{2}} j=1,m=0\rangle
 \end{align}$$
 
-同样地：
-$$\begin{align}
-\bra{m_{1}= \frac{1}{2},m_{2}=- \frac{1}{2}} j=1,m=0\rangle=\text{LC of }\bra{m_{1}=- \frac{1}{2},m_{2}=- \frac{1}{2}} j=1,m=-1\rangle,\ \bra{m_{1}=-\frac{1}{2},m_{2}=- \frac{3}{2}} j=1,m=-1\rangle
-\end{align}$$
-而右手边第二项为零。同样地可以算得：
-$$\sqrt{ 2 }\bra{m_{1}= \frac{1}{2},m_{2}=- \frac{1}{2}}j=1,m=0\rangle=\bra{m_{1}=- \frac{1}{2},m_{2}=- \frac{1}{2}} j=1,m=-1\rangle $$
-至此我们得到全部CG系数的相对大小。最后只需要normalization即可。
-
+我们得到了$\ket{j=1,m=0}$在$\ket{m_{1},m_{2}}$基下展开的所有CG系数的相对大小！之后显然通过normalization可以得到：
+$$\ket{j=1,m=0} =\frac{1}{\sqrt{ 2 }}\left( \ket{m_{1}=\frac{1}{2},m_{2}=-\frac{1}{2}} -\ket{m_{1}=-\frac{1}{2},m_{2}=\frac{1}{2}}  \right)$$
 # 3. $\vec{L}+\vec{S}$ 
 
 ## Big picture
