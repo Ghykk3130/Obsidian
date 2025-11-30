@@ -59,7 +59,10 @@ N & = \frac{\mathcal{z}}{1-\mathcal{z}}+ \sum_{\vec{k}\neq 0} \frac{1}{\frac{1}{
 其中积分下限其实不应该是零，而应该是$\epsilon= \frac{\hbar^{2}}{2m}\left(  \frac{2\pi}{L} \right)^{2}$。但是在热力学极限$L\rightarrow \infty$下就是零了。注意$\lambda=\frac{h}{\sqrt{ 2\pi mkT }}$而不是$\hbar$。
 
 定义:
-$$g_{n}(\mathcal{z})= \frac{1}{\Gamma(n)}\int_{0}^{\infty}dx \frac{x^{n-1}}{\mathcal{z}^{-1}e^{ x}-1}$$
+
+>[!Note] Definition 1
+$$g_{n}(\mathcal{z})= \frac{1}{\Gamma(n)}\int_{0}^{\infty}dx \frac{x^{n-1}}{\mathcal{z}^{-1}e^{ x}-1}\text{ for }0\leq \mathcal{z} <1$$
+
 容易注意到$\Gamma\left( \frac{3}{2} \right)=\left( \frac{1}{2} \right)! = \frac{1}{2}\Gamma\left( \frac{1}{2} \right)= \frac{\sqrt{ \pi }}{2}$。于是：
 $$N= \frac{V}{\lambda^{3}}g_{3/ 2}(\mathcal{z})+ \frac{\mathcal{z}}{1-\mathcal{z}}$$
 其中$\frac{V}{\lambda^{3}}g_{3 / 2}(\mathcal{z})$可以理解为占据激发态粒子的数量。$\frac{\mathcal{z}}{1-\mathcal{z}}$可以理解为基态粒子数量。
