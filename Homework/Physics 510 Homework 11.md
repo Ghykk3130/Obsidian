@@ -83,12 +83,29 @@ $$\begin{align}
 U & = \sum_{i} \frac{\hbar^{2}k_{i}^{2}}{2m} - \sum_{j}n_{j}^{+}\mu_{0}B+\sum_{j}n_{j}^{-}\mu_{0}B
 \end{align}$$
 Since each $\frac{\hbar^{2}k_{i}^{2}}{2m}$ corresponds to some non-zero occupation number, then I can rewrite the energy as:
-$$U= \sum_{j}\left( \frac{\hbar^{2}k_{n_{j}^{+}}^{2}}{2m}\delta_{n_{j}^{+},1}-n_{j}^{+}\mu_{0}B\right)+\sum_{j}\left( \frac{\hbar^{2}k_{n_{j}^{-}}^{2}}{2m}\delta_{n_{j}^{-},1}+n_{j}^{-}\mu_{0}B \right)$$
-Here, $\vec{k}_{n_{j}^{\pm}}$ means the free particle wavevector of the electrons in the slot $n_{j}^{\pm}$. The reason why the kinetic energy is multiplied by a delta function is because only when the occupation number $n_{j}^{\pm}$ is non-zero, meaning that there is actually an electron in the slot, will we count the kinetic energy of that electron.
+$$U= \sum_{j}n_{j}^{+}\left( \frac{\hbar^{2}k_{n_{j}^{+}}^{2}}{2m}-\mu_{0}B\right)+\sum_{j}n_{j}^{-}\left( \frac{\hbar^{2}k_{n_{j}^{-}}^{2}}{2m}+\mu_{0}B \right)$$
+Here, $\vec{k}_{n_{j}^{\pm}}$ means the free particle wavevector of the electrons in the slot $n_{j}^{\pm}$. The reason why the $n_{j}^{\pm}$ are factored out is because only when the occupation number $n_{j}^{\pm}$ is non-zero, meaning that there is actually an electron in the slot, will we count the kinetic energy of that electron.
 
 The number of particles is:
 $$N=\sum_{j}n_{j}^{+}+\sum_{j}n_{j}^{-}$$
 ## (b).
+The grand partition function is given by:
+$$\begin{align}
+Q & = \sum_{\{ n_{j}^{+},n_{j}^{-} \}}\sum_{\{ \vec{k}_{n_{j}^{+}},\vec{k}_{n_{j}}^{-} \}}\exp\left( -\beta \sum_{j}n_{j}^{+}\left(  \frac{\hbar^{2}k_{n_{j}^{+}}^{2}}{2m}-\mu_{0}B-\mu \right)- \beta \sum_{j}n_{j}^{-}\left( \frac{\hbar^{2}k_{n_{j}^{-}}^{2}}{2m}+\mu_{0}B-\mu \right) \right)
+\end{align}$$
+In particular, we have:
+$$\begin{align}
+\sum_{\{ \vec{k}_{n_{j}^{+}} \}}\exp\left( -\beta \sum_{j}n_{j}^{+} \frac{\hbar^{2}k_{n_{j}^{+}}^{2} }{2m} \right) & = \prod_{j} \left( \sum_{\vec{k}_{n_{j}^{+}}}\exp\left( -\beta n_{j}^{+} \frac{\hbar^{2}k_{n_{j}^{+}}^{2}}{2m} \right) \right)
+\end{align}$$
+
+
+
+
+
+
+
+
+
 The grand partition function is given by:
 $$\begin{align}
 \phi & = \sum_{\{ n_{j}^{+},n_{j}^{-} \}}\sum_{\vec{k}_{n_{j}^{+}},\vec{k}_{n_{j}^{-}}}\exp\left(-\beta\sum_{j}\left( \frac{\hbar^{2}k_{n_{j}^{+}}^{2}}{2m}\delta_{n_{j}^{+},1}-n_{j}^{+}\mu_{0}B-\mu n_{j}^{+}\right)-\beta\sum_{j}\left( \frac{\hbar^{2}k_{n_{j}^{-}}^{2}}{2m}\delta_{n_{j}^{-},1}+n_{j}^{-}\mu_{0}B - \mu n_{j}^{-}\right)\right) \\
