@@ -49,16 +49,43 @@ S & = - \left( \frac{\partial \phi}{\partial T} \right)_{V,\mu} \\
 \end{align}$$
 We can compute:
 $$\begin{align}
-\frac{1}{1-\langle n_{k}\rangle}T \frac{\partial}{\partial T}\langle n_{k}\rangle & = (1+\mathcal{z}e^{-\beta\epsilon_{k}})T \mathcal{z}^{-1}\epsilon_{k}e^{\beta\epsilon_{k}} \frac{-k\beta^{2}}{(\mathcal{z}^{-1}e^{\beta\epsilon_{k}}+1)^{2}} \\
- & = \frac{-k\beta^{2}}{(\mathcal{z}^{-1}e^{\beta\epsilon_{k}}+1)} \epsilon_{k}T \\
- & = -\beta\epsilon_{k}\langle n_{k}\rangle
+\frac{1}{1-\langle n_{k}\rangle}T \frac{\partial}{\partial T}\langle n_{k}\rangle & = (1+\mathcal{z}e^{-\beta\epsilon_{k}})T \mathcal{z}^{-1}(\epsilon_{k}-\mu)e^{\beta\epsilon_{k}} \frac{-k\beta^{2}}{(\mathcal{z}^{-1}e^{\beta\epsilon_{k}}+1)^{2}} \\
+ & = \frac{-k\beta^{2}}{(\mathcal{z}^{-1}e^{\beta\epsilon_{k}}+1)} (\epsilon_{k}-\mu)T \\
+ & = -\beta(\epsilon_{k}-\mu)\langle n_{k}\rangle
 \end{align}$$
 So we have:
 $$\begin{align}
-S=-k\sum_{k}(\ln(1-\langle n_{k}\rangle)-\beta\epsilon_{k}\langle n_{k}\rangle)
+S & =-k\sum_{k}(\ln(1-\langle n_{k}\rangle)-\beta(\epsilon_{k}-\mu)\langle n_{k}\rangle) \\
+ & = -k\sum\left( \ln\left( 1-\langle n_{k}\rangle\right)- \ln\left(  \frac{1-\langle n_{k}\rangle}{\langle n_{k}\rangle} \right) \langle n_{k}\rangle\right)  \\
+ & = -k\sum((1-\langle n_{k}\rangle)\ln(1-\langle n_{k}\rangle)+ \langle n_{k}\rangle \ln\langle n_{k}\rangle)
 \end{align}$$
-Note that here the index $k$ and the Boltzmann constant $k$ are not the same thing. To distinguish, we rewrite it as:
-$$S=-k_{B}\sum_{k}(\ln(1-\langle n_{k}\rangle)-\beta\epsilon_{k}\langle n_{k}\rangle)$$
+To distinguish the Boltzmann constant from the summation index, we write:
+$$S=-k_{B}\sum_{k}((1-\langle n_{k}\rangle)\ln(1-\langle n_{k}\rangle)+\langle n_{k}\rangle \ln\langle n_{k}\rangle)$$
+## (d).
+Know that as $T\rightarrow 0$, either $\langle n_{k}\rangle\rightarrow 1\text{ or }0$. Then we have:
+$$\begin{align}
+S\rightarrow -k_{B}\sum_{k\text{ s.t. }\langle n_{k}\rangle\rightarrow 1}(1-\langle n_{k}\rangle)\ln(1-\langle n_{k}\rangle)-k_{B}\sum_{k\text{ s.t. }\langle n_{k}\rangle \rightarrow 0} \langle n_{k}\rangle \ln\langle n_{k}\rangle
+\end{align}$$
+It suffices to find $\lim_{ x \to 0 } x\ln x$. Know that:
+$$\begin{align}
+\lim_{ x \to 0 } x \ln x & = \lim_{ x \to 0 }\frac{ (\ln x)^{'}}{ (\frac{1}{x})^{'} }= \lim_{ x \to 0 } -x=0
+\end{align}$$
+Then we can conclude that:
+$$S\rightarrow 0\text{ as }T\rightarrow{0}$$
+This result makes sense because as we cool down, all levels below the fermi energy should be filled. Such state should occur more and more frequently as the temperature is lowered. At extremely low temperature, this state dominates, meaning that the system would almost certainly be in this state. Therefore the entropy should vanish.
+
+# 2.
+## (a).
+Notice that $\vec{p}$ and $\vec{\sigma}$ operate on different Hilbert spaces, so the eigenstates of the system is given by the tensor product of free particle states and spin states.
+
+Then the kinetic energy is still the free particle kinetic energy. Then the energy is:
+$$\begin{align}
+U & = \sum_{i} \frac{\hbar^{2}k_{i}^{2}}{2m} - \sum_{j}n_{j}^{+}\mu_{0}B+\sum_{j}n_{j}^{-}\mu_{0}B
+\end{align}$$
+The number of particles is:
+$$N=\sum_{j}n_{j}^{+}+\sum_{j}n_{j}^{-}$$
+## (b).
+
 
 
 
