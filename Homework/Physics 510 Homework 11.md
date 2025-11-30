@@ -145,5 +145,7 @@ $$\begin{align}
 \end{align}$$
 Similarly, we can use integrals to approach the sum:
 $$\begin{align}
-\langle M \rangle  & \approx
+\langle M \rangle  & \approx  \frac{Vm^{3/2}}{\sqrt{ 2 }\pi^{2}\hbar^{3}}\int d\epsilon\epsilon^{1/2}\left[\frac{\mu_{0}\mathcal{z}\exp(-\beta(\epsilon-\mu_{0}B)) }{1+ \mathcal{z}\exp(-\beta(\epsilon-\mu_{0}B))}+ \frac{\mu_{0}\mathcal{z}\exp(-\beta(\epsilon+\mu_{0}B))}{1+\mathcal{z}\exp(-\beta(\epsilon+\mu_{0}B))}\right] \\
+ & = \frac{Vm^{3/2} }{\sqrt{ 2 }\pi^{2}\hbar^{3}}\mu_{0} \frac{\sqrt{ \pi }}{2}(f_{3 /2}(\mathcal{z}e^{\beta \mu_{0}B})+f_{ 3 /2}(\mathcal{z}e^{-\beta \mu_{0}B})) \\
+ & = \frac{V}{(2\pi \lambda^{3})}\mu_{0}(f_{3 /2}(\mathcal{z}e^{\beta \mu_{0}B})+f_{ 3 /2}(\mathcal{z}e^{-\beta \mu_{0}B}))
 \end{align}$$
