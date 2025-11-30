@@ -98,11 +98,38 @@ $$\begin{align}
 \phi & = - \frac{1}{\beta} \ln Q \\
  & = -kT\sum_{j}\left( \ln\left( 1+\mathcal{z}\exp\left( -\beta\left(  \frac{\hbar^{2}k_{j}^{2}}{2m} -\mu_{0}B\right) \right) \right) +\ln\left( 1+\mathcal{z}\exp\left( -\beta\left(  \frac{\hbar^{2}k_{j}^{2}}{2m}+\mu_{0}B \right) \right) \right)\right)
 \end{align}$$
-The notation here may look a little bit messy. Here each $j$ is uniquely associated with a $\vec{k}_{j}$. So the sum is over all $\vec{k}_{j}$ that satisfies the boundary condition. In other words, the sum can be written as $\sum_{\vec{k}_{j}}$.
+The notation here may look a little bit messy. Here each $j$ is uniquely associated with a $\vec{k}_{j}$. So the sum is over all $\vec{k}_{j}$ that satisfies the boundary condition. In other words, the sum can be written as $\sum_{\vec{k}_{j}}$. So we can also write:
+$$\phi=-kT\sum_{\vec{k}_{j}}\left( \ln\left( 1+\mathcal{z}\exp\left( -\beta\left(  \frac{\hbar^{2}k_{j}^{2}}{2m} -\mu_{0}B\right) \right) \right) +\ln\left( 1+\mathcal{z}\exp\left( -\beta\left(  \frac{\hbar^{2}k_{j}^{2}}{2m}+\mu_{0}B \right) \right) \right)\right)$$
 
 ## (c).
-
-
+We know that:
+$$\begin{align}
+N & = -\left(  \frac{\partial \phi}{\partial \mu} \right)_{T,V} \\
+ & = - \frac{\partial\mathcal{z}}{\partial \mu} \frac{\partial \phi}{\partial\mathcal{z}} \\
+ & = - \beta\mathcal{z} \frac{\partial \phi}{\partial z}
+\end{align}$$
+We then have:
+$$\begin{align}
+\frac{\partial}{\partial\mathcal{z}} kT\sum_{\vec{k}_{j}}\left( \ln\left( 1+\mathcal{z}\exp\left( -\beta\left(  \frac{\hbar^{2}k_{j}^{2}}{2m} -\mu_{0}B\right) \right) \right) +\ln\left( 1+\mathcal{z}\exp\left( -\beta\left(  \frac{\hbar^{2}k_{j}^{2}}{2m}+\mu_{0}B \right) \right) \right)\right) & = kT \sum_{\vec{k}_{j}} \left[\frac{\exp\left( -\beta\left(  \frac{\hbar^{2}k_{j}^{2}}{2m}-\mu_{0}B \right) \right)}{1+\mathcal{z}\exp\left( -\beta\left(  \frac{\hbar^{2}k_{j}^{2}}{2m}-\mu_{0}B \right) \right)}+ \frac{\exp\left( -\beta\left(  \frac{\hbar^{2}k_{j}^{2}}{2m}+\mu_{0}B \right) \right)}{1+\mathcal{z}\exp\left( -\beta\left(  \frac{\hbar^{2}k_{j}^{2}}{2m}+\mu_{0}B \right) \right)}\right]
+\end{align}$$
+Then we have:
+$$\begin{align}
+N & = \sum_{\vec{k}_{j}} \left[\frac{\mathcal{z}\exp\left( -\beta\left(  \frac{\hbar^{2}k_{j}^{2}}{2m}-\mu_{0}B \right) \right)}{1+\mathcal{z}\exp\left( -\beta\left(  \frac{\hbar^{2}k_{j}^{2}}{2m}-\mu_{0}B \right) \right)}+ \frac{\mathcal{z}\exp\left( -\beta\left(  \frac{\hbar^{2}k_{j}^{2}}{2m}+\mu_{0}B \right) \right)}{1+\mathcal{z}\exp\left( -\beta\left(  \frac{\hbar^{2}k_{j}^{2}}{2m}+\mu_{0}B \right) \right)}\right] \\
+ & = \sum_{\vec{k}_{j}}\left[\frac{1}{\mathcal{z}^{-1}\exp(-\beta(\epsilon_{\vec{k}_{j}}-\mu_{0}B))+1}+ \frac{1}{\mathcal{z}^{-1}\exp(-\beta(\epsilon_{\vec{k}_{j}}+\mu_{0}B))+1}\right]
+\end{align}$$
+Now we replace the sum with an integral. We have:
+$$\begin{align}
+\sum_{\vec{k}_{j}} & \leadsto \frac{V}{(2\pi)^{3}}\int_{\mathbb{R}^{3}} d^{3}k\\
+ & = \frac{V}{(2\pi)^{3}}\int_{0}^{\infty}  dk{4}\pi k^{2} \\
+ & = \frac{V}{(2\pi)^{3}} \frac{2\pi m\sqrt{ 2m }}{\hbar^{3}}\int_{0}^{\infty}d\epsilon\epsilon^{1/2} \\
+ & = \frac{Vm^{3/2} }{\sqrt{ 2 }\pi^{2}\hbar^{3} } \int d\epsilon\epsilon^{1/2}
+\end{align}$$
+Then we have:
+$$\begin{align}
+N  & \approx \frac{Vm^{3/2} }{\sqrt{ 2 }\pi^{2}\hbar^{3} } \int d\epsilon\epsilon^{1/2}\left[\frac{1}{\mathcal{z}^{-1}\exp(-\beta(\epsilon-\mu_{0}B))+1}+ \frac{1}{\mathcal{z}^{-1}\exp(-\beta(\epsilon+\mu_{0}B))+1}\right] \\
+ & = 
+\end{align}$$
+ 
 
 
 
