@@ -132,3 +132,18 @@ N  & \approx \frac{Vm^{3/2} }{\sqrt{ 2 }\pi^{2}\hbar^{3} } \int d\epsilon\epsilo
  & = \frac{V}{(2\pi \lambda)^{3}}(f_{3 /2}(\mathcal{z}e^{\beta \mu_{0}B})+f_{3 /2}(\mathcal{z}e^{-\beta \mu_{0}B}))
 \end{align}$$
 ## (d).
+We have:
+$$\begin{align}
+\langle M \rangle & = \frac{1}{Q}\sum_{\{ n_{j}^{+},n_{j}^{-} \}} \mu_{0}\left( \sum_{j}n_{j}^{+}-\sum_{j}n_{j}^{-} \right)\exp\left( -\beta \sum_{j}(\epsilon_{\vec{k}_{j}}-\mu_{0}B-\mu) -\beta \sum_{j}(\epsilon_{\vec{k}_{j}}+\mu_{0}B+\mu)\right) \\
+ & = \frac{1}{Q}\sum_{\{ n_{j}^{+},n_{j}^{-} \}} \frac{\partial}{\partial(\beta B)}\exp\left( -\beta \sum_{j}(\epsilon_{\vec{k}_{j}}-\mu_{0}B-\mu) -\beta \sum_{j}(\epsilon_{\vec{k}_{j}}+\mu_{0}B+\mu)\right) \\
+ & = \frac{\partial}{\partial(\beta B)}\ln Q
+\end{align}$$
+We can compute:
+$$\begin{align}
+\frac{\partial}{\partial(\beta B)}\ln Q & = \frac{\partial}{\partial(\beta B)}\sum_{\vec{k}_{j}}\left( \ln\left( 1+\mathcal{z}\exp\left( -\beta\left(  \epsilon_{\vec{k}_{j}} -\mu_{0}B\right) \right) \right) +\ln\left( 1+\mathcal{z}\exp\left( -\beta\left(  \epsilon_{\vec{k}_{j}}+\mu_{0}B \right) \right) \right)\right) \\
+ & = \sum_{\vec{k}_{j}} \left[\frac{\mu_{0}\mathcal{z}\exp(-\beta(\epsilon_{\vec{k}_{j}}-\mu_{0}B)) }{1+ \mathcal{z}\exp(-\beta(\epsilon_{\vec{k}_{j}}-\mu_{0}B))}+ \frac{\mu_{0}\mathcal{z}\exp(-\beta(\epsilon_{\vec{k}_{j}}+\mu_{0}B))}{1+\mathcal{z}\exp(-\beta(\epsilon_{\vec{k}_{j}}+\mu_{0}B))}\right]
+\end{align}$$
+Similarly, we can use integrals to approach the sum:
+$$\begin{align}
+\langle M \rangle  & \approx
+\end{align}$$
