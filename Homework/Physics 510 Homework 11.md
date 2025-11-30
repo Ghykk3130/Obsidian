@@ -11,16 +11,27 @@ Q & = \sum_{\{ n_{j} \}}\exp\left( -\beta \sum_{j}n_{j}\epsilon_{j}+\beta \mu \s
 \end{align}$$
 Therefore, the probability is:
 $$\begin{align}
-\frac{\exp\left( -\beta \sum_{k}n_{k}\epsilon_{k}+\beta \mu \sum_{k}n_{k} \right)}{\prod_{j}(1+\mathcal{z}^{}e^{-\beta\epsilon_{j}})}=  \frac{\prod_{k}\exp(-\beta n_{k}\epsilon_{k}+\beta \mu n_{k})}{\prod_{j}(1+\mathcal{z}^{}e^{-\beta\epsilon_{j}})}
+\frac{\exp\left( -\beta \sum_{k}n_{k}\epsilon_{k}+\beta \mu \sum_{k}n_{k} \right)}{\prod_{j}(1+\mathcal{z}^{}e^{-\beta\epsilon_{j}})}=  \frac{\prod_{k}\exp(-\beta n_{k}\epsilon_{k}+\beta \mu n_{k})}{\prod_{j}(1+\mathcal{z}^{}e^{-\beta\epsilon_{j}})}= \prod_{k} \frac{\exp(-\beta n_{k}\epsilon_{k}+\beta \mu n_{k})}{1+\mathcal{z}e^{-\beta\epsilon_{k}}}
 \end{align}$$
 ## (b).
 Know that the occupation number is:
-$$\langle n_{j}\rangle= \frac{1}{1+\mathcal{z}^{-1}e^{\beta\epsilon_{j}}}$$
+$$\langle n_{k}\rangle= \frac{1}{1+\mathcal{z}^{-1}e^{\beta\epsilon_{k}}}$$
 Then:
-$$\mathcal{z}^{-1}e^{\beta\epsilon_{j}}= \frac{1-\langle n_{j}\rangle}{\langle n_{j}\rangle}\implies\mathcal{z}e^{-\beta\epsilon_{j}}= \frac{\langle n_{j}\rangle}{1-\langle n_{j}\rangle}$$
+$$\mathcal{z}^{-1}e^{\beta\epsilon_{k}}= \frac{1-\langle n_{k}\rangle}{\langle n_{k}\rangle}\implies\mathcal{z}e^{-\beta\epsilon_{k}}= \frac{\langle n_{k}\rangle}{1-\langle n_{k}\rangle}$$
+So the denominator is:
+$$\begin{align}
+1+\mathcal{z}e^{-\beta\epsilon_{k}}= \frac{1}{1-\langle n_{k}\rangle}
+\end{align}$$
+Know that the numerator is:
+$$\exp(-\beta n_{k}\epsilon_{k}+\beta \mu n_{k})=\left\{\begin{align}
+ & \mathcal{z}e^{-\beta\epsilon_{k}},n_{k}=1 \\
+ & 1,n_{k}=0
+\end{align}\right.$$
+Then we have:
+$$\exp(-\beta n_{k}\epsilon_{k}+\beta \mu n_{k})= (\mathcal{z}e^{-\beta\epsilon_{k}})^{n_{k}}= \left( \frac{\langle n_{k}\rangle}{1-\langle n_{k}\rangle} \right)^{n_{k}}$$
 Then the probability is
 $$\begin{align}
-\frac{\prod_{k}\exp(-\beta n_{k}\epsilon_{k}+\beta \mu n_{k})}{\prod_{j}\frac{1}{1-\langle n_{j}\rangle}}= \prod_{j,k}\exp(-\beta n_{k}\epsilon_{k}+\beta \mu n_{k})(1-\langle n_{j}\rangle)
+\prod_{k} \frac{\exp(-\beta n_{k}\epsilon_{k}+\beta \mu n_{k})}{1+\mathcal{z}e^{-\beta\epsilon_{k}}}= \prod_{k} \langle n_{k}\rangle^{n_{k}}(1-\langle n_{k}\rangle)^{1-n_{k}}
 \end{align}$$
 ## (c).
 We first compute the grand potential:
