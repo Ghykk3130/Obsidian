@@ -82,10 +82,45 @@ Then the kinetic energy is still the free particle kinetic energy. Then the ener
 $$\begin{align}
 U & = \sum_{i} \frac{\hbar^{2}k_{i}^{2}}{2m} - \sum_{j}n_{j}^{+}\mu_{0}B+\sum_{j}n_{j}^{-}\mu_{0}B
 \end{align}$$
+Since each $\frac{\hbar^{2}k_{i}^{2}}{2m}$ corresponds to some non-zero occupation number, then I can rewrite the energy as:
+$$U= \sum_{j}\left( \frac{\hbar^{2}k_{n_{j}^{+}}^{2}}{2m}\delta_{n_{j}^{+},1}-n_{j}^{+}\mu_{0}B\right)+\sum_{j}\left( \frac{\hbar^{2}k_{n_{j}^{-}}^{2}}{2m}\delta_{n_{j}^{-},1}+n_{j}^{-}\mu_{0}B \right)$$
+Here, $\vec{k}_{n_{j}^{\pm}}$ means the free particle wavevector of the electrons in the slot $n_{j}^{\pm}$. The reason why the kinetic energy is multiplied by a delta function is because only when the occupation number $n_{j}^{\pm}$ is non-zero, meaning that there is actually an electron in the slot, will we count the kinetic energy of that electron.
+
 The number of particles is:
 $$N=\sum_{j}n_{j}^{+}+\sum_{j}n_{j}^{-}$$
 ## (b).
-
-
-
+The grand partition function is given by:
+$$\begin{align}
+\phi & = \sum_{\{ n_{j}^{+},n_{j}^{-} \}}\sum_{\vec{k}_{n_{j}^{+}},\vec{k}_{n_{j}^{-}}}\exp\left(-\beta\sum_{j}\left( \frac{\hbar^{2}k_{n_{j}^{+}}^{2}}{2m}\delta_{n_{j}^{+},1}-n_{j}^{+}\mu_{0}B-\mu n_{j}^{+}\right)-\beta\sum_{j}\left( \frac{\hbar^{2}k_{n_{j}^{-}}^{2}}{2m}\delta_{n_{j}^{-},1}+n_{j}^{-}\mu_{0}B - \mu n_{j}^{-}\right)\right) \\
+ & = \left(\sum_{n_{0}^{+}}\sum_{\vec{k}_{n_{0}^{+}}}\exp\left( -\beta \frac{\hbar^{2}k_{n_{0}^{+}}^{2}}{2m}\delta_{n_{0}^{+},1}+\beta n_{0}^{+}\mu_{0}B+\beta \mu n_{0}^{+} \right)\right)\left(\sum_{n_{0}^{-}}\sum_{\vec{k}_{n_{0}^{-}}}\exp\left( -\beta \frac{\hbar^{2}k_{n_{0}^{-}}^{2}}{2m}\delta_{n_{0}^{-},1}-\beta n_{0}^{-}\mu_{0}B+ \beta n_{0}^{-} \right)\right)\dots \\
+ & = \prod_{j}\left(\sum_{n_{j}^{+}}\sum_{\vec{k}_{n_{j}^{+}}^{}}\exp\left( -\beta \frac{\hbar^{2}k_{n_{j}^{+}}^{2} }{2m}\delta_{n_{j}^{+},1}+ \beta n_{j}^{+}\mu_{0}B+\beta \mu n_{j}^{+} \right)\right)\prod_{j^{'}}\left(\sum_{n_{j}^{-}}\sum_{\vec{k}_{n_{j}^{-}}}\exp\left( -\beta \frac{\hbar^{2}k_{n_{j}^{-}}^{2}}{2m}\delta_{n_{j}^{-},1}- \beta n_{j}^{-}\mu_{0}B+\beta \mu n_{j}^{-} \right)\right)
+\end{align}$$
+Know that:
+$$\begin{align}
+\sum_{\vec{k}} \exp\left( -\beta \frac{\hbar^{2}k^{2} }{2m}  \right)  & \approx \frac{V}{(2\pi)^{3}}\int_{\mathbb{R}^{3}}d^{3}k\exp\left( -\beta \frac{\hbar^{2}k^{2}}{2m} \right) \\
+ & = \frac{V}{(2\pi )^{3}} \int_{0}^{\infty}dk 4\pi k^{2}\exp\left( -\beta \frac{\hbar^{2}k^{2}}{2m} \right) \\
+ & = \frac{V}{(2\pi)^{3}}2\pi\int_{2}\pi dk^{2}(k^{2})^{1/2}\exp\left( -\beta \frac{\hbar^{2}k^{2}}{2m} \right) \\
+ & = \frac{V}{(2\pi)^{3}} \left( \frac{2\pi m}{\beta \hbar} \right)^{3/2} \\
+ & = \frac{V}{(2\pi \lambda)^{3}}
+\end{align}$$
+Then we have:
+$$\begin{align}
+\prod_{j}\left(\sum_{n_{j}^{+}}\sum_{\vec{k}_{n_{j}^{+}}^{}}\exp\left( -\beta \frac{\hbar^{2}k_{n_{j}^{+}}^{2} }{2m}\delta_{n_{j}^{+},1}+ \beta n_{j}^{+}\mu_{0}B+\beta \mu n_{j}^{+} \right)\right) & = \prod_{j}\left(\sum_{n_{j}^{+}}\left(  \frac{V}{(2\pi \lambda)^{3}} \right)^{\delta_{n_{j}^{+}},1}\exp(\beta n_{j}^{+}\mu_{0}B+\beta \mu n_{j}^{+})\right) \\
+ & = \prod_{j}\left(1+ \frac{V}{(2\pi \lambda)^{3}}\exp(\beta \mu_{0}B+\beta \mu)\right)
+\end{align}$$
+Similarly, we can compute:
+$$\begin{align}
+\prod_{j^{'}}\left(\sum_{n_{j}^{-}}\sum_{\vec{k}_{n_{j}^{-}}}\exp\left( -\beta \frac{\hbar^{2}k_{n_{j}^{-}}^{2}}{2m}\delta_{n_{j}^{-},1}- \beta n_{j}^{-}\mu_{0}B+\beta \mu n_{j}^{-} \right)\right) & = \prod_{j^{'}}\left(\sum_{n_{j}^{-}}\left( \frac{V}{(2\pi \lambda)^{3}} \right)^{\delta_{n_{j}^{-},1}}\exp(- \beta n_{j}^{-}\mu_{0}B+\beta \mu n_{j}^{-})\right) \\
+ &= \prod_{j^{'}}\left( 1+ \frac{V}{(2\pi \lambda)^{3}} \exp(-\beta \mu_{0}B+\beta \mu)\right)
+\end{align}$$
+Then we have that:
+$$\begin{align}
+\ln Q & = \sum_{j}\ln\left( 1+ \frac{V}{(2\pi \lambda)^{3}}\exp(\beta \mu_{0}B+\beta \mu) \right)+\sum_{j^{'}}\ln\left( 1+ \frac{V}{(2\pi \lambda)^{3}}\exp(-\beta \mu_{0}B+\beta \mu) \right) \\
+ & = \sum_{j}\left( \ln\left( 1+ \frac{V}{(2\pi \lambda)^{3}}\mathcal{z}^{}e^{\beta \mu_{0}B} \right)+ \ln\left( 1+ \frac{V}{(2\pi \lambda)^{3}}\mathcal{z}^{}e^{-\beta\mu_{0}B} \right) \right)
+\end{align}$$
+Then we must have:
+$$\begin{align}
+\phi & = - \frac{1}{\beta}\ln Q \\
+ & = -kT \sum_{j}\left( \ln\left( 1+ \frac{V}{(2\pi \lambda)^{3}}\mathcal{z}^{}e^{\beta \mu_{0}B} \right)+ \ln\left( 1+ \frac{V}{(2\pi \lambda)^{3}}\mathcal{z}^{}e^{-\beta\mu_{0}B} \right) \right)
+\end{align}$$
 
