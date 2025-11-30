@@ -24,4 +24,31 @@ $$\begin{align}
 \prod_{k} \frac{\exp(-\beta n_{k}\epsilon_{k}+\beta \mu n_{k})}{\frac{1}{1-\langle n_{k}\rangle}}= \prod_{k}\exp(-\beta n_{k}\epsilon_{k}+\beta \mu n_{k})(1-\langle n_{k}\rangle)
 \end{align}$$
 ## (c).
- 
+We first compute the grand potential:
+$$\begin{align}
+\phi & = - \frac{1}{\beta}\ln Q \\
+ & = - \frac{1}{\beta}\ln\left( \prod_{k}(1+\mathcal{z}e^{-\beta\epsilon_{k}}) \right) \\
+ & = - \frac{1}{\beta}\ln\left( \prod_{k} \frac{1}{1-\langle n_{k}\rangle} \right) \\
+ & = \frac{1}{\beta}\sum_{k}\ln(1-\langle n_{k}\rangle)
+\end{align}$$
+Then we have:
+$$\begin{align}
+S & = - \left( \frac{\partial \phi}{\partial T} \right)_{V,\mu} \\
+ & = -\left(k\sum_{k}\ln(1-\langle n_{k}\rangle)+kT \sum_{k} \frac{ \frac{\partial}{\partial T} \langle n_{k}\rangle}{1-\langle n_{k}\rangle}\right) \\
+ & = -k\sum_{k}\left(\ln(1-\langle n_{k}\rangle)+ \frac{1}{1-\langle n_{k}\rangle} T \frac{\partial}{\partial T}\langle n_{k}\rangle\right)
+\end{align}$$
+We can compute:
+$$\begin{align}
+\frac{1}{1-\langle n_{k}\rangle}T \frac{\partial}{\partial T}\langle n_{k}\rangle & = (1+\mathcal{z}e^{-\beta\epsilon_{k}})T \mathcal{z}^{-1}\epsilon_{k}e^{\beta\epsilon_{k}} \frac{-k\beta^{2}}{(\mathcal{z}^{-1}e^{\beta\epsilon_{k}}+1)^{2}} \\
+ & = \frac{-k\beta^{2}}{(\mathcal{z}^{-1}e^{\beta\epsilon_{k}}+1)} \epsilon_{k}T \\
+ & = -\beta\epsilon_{k}\langle n_{k}\rangle
+\end{align}$$
+So we have:
+$$\begin{align}
+S=-k\sum_{k}(\ln(1-\langle n_{k}\rangle)-\beta\epsilon_{k}\langle n_{k}\rangle)
+\end{align}$$
+Note that here the index $k$ and the Boltzmann constant $k$ are not the same thing. To distinguish, we rewrite it as:
+$$S=-k_{B}\sum_{k}(\ln(1-\langle n_{k}\rangle)-\beta\epsilon_{k}\langle n_{k}\rangle)$$
+
+
+
