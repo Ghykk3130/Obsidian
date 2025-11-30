@@ -78,40 +78,34 @@ This result makes sense because as we cool down, all levels below the fermi ener
 ## (a).
 Notice that $\vec{p}$ and $\vec{\sigma}$ operate on different Hilbert spaces, so the eigenstates of the system is given by the tensor product of free particle states and spin states.
 
-Then the kinetic energy is still the free particle kinetic energy. Then the energy is:
-$$\begin{align}
-U & = \sum_{i} \frac{\hbar^{2}k_{i}^{2}}{2m} - \sum_{j}n_{j}^{+}\mu_{0}B+\sum_{j}n_{j}^{-}\mu_{0}B
-\end{align}$$
-Since each $\frac{\hbar^{2}k_{i}^{2}}{2m}$ corresponds to some non-zero occupation number, then I can rewrite the energy as:
-$$U= \sum_{j}n_{j}^{+}\left( \frac{\hbar^{2}k_{n_{j}^{+}}^{2}}{2m}-\mu_{0}B\right)+\sum_{j}n_{j}^{-}\left( \frac{\hbar^{2}k_{n_{j}^{-}}^{2}}{2m}+\mu_{0}B \right)$$
-Here, $\vec{k}_{n_{j}^{\pm}}$ means the free particle wavevector of the electrons in the slot $n_{j}^{\pm}$. The reason why the $n_{j}^{\pm}$ are factored out is because only when the occupation number $n_{j}^{\pm}$ is non-zero, meaning that there is actually an electron in the slot, will we count the kinetic energy of that electron.
+The energy is given by:
+$$U= \sum_{j}n_{j}^{+}\left( \frac{\hbar^{2}k_{j}^{2}}{2m}-\mu_{0}B \right)+\sum_{j}n_{j}^{-}\left(  \frac{\hbar^{2}k_{j}^{2}}{2m}+\mu_{0}B \right)$$
+where $j$ is the index of kinetic energy levels. $\vec{k}_{j}$ is the wavevector corresponding to this kinetic energy. $n_{j}^{\pm}$ is the occupation number of the spin state
 
 The number of particles is:
 $$N=\sum_{j}n_{j}^{+}+\sum_{j}n_{j}^{-}$$
 ## (b).
 The grand partition function is given by:
 $$\begin{align}
-Q & = \sum_{\{ n_{j}^{+},n_{j}^{-} \}}\sum_{\{ \vec{k}_{n_{j}^{+}},\vec{k}_{n_{j}}^{-} \}}\exp\left( -\beta \sum_{j}n_{j}^{+}\left(  \frac{\hbar^{2}k_{n_{j}^{+}}^{2}}{2m}-\mu_{0}B-\mu \right)- \beta \sum_{j}n_{j}^{-}\left( \frac{\hbar^{2}k_{n_{j}^{-}}^{2}}{2m}+\mu_{0}B-\mu \right) \right)
+Q & = \sum_{\{ n_{j}^{+},n_{j}^{-} \}}\exp\left( -\beta \sum_{j}n_{j}^{+}\left(  \frac{\hbar^{2}k_{j}^{2}}{2m}-\mu_{0}B-\mu \right)- \beta \sum_{j}n_{j}^{-}\left( \frac{\hbar^{2}k_{j}^{2}}{2m}+\mu_{0}B-\mu \right) \right) \\
+ & = \sum_{\{ n_{j}^{+} \}}\exp\left( -\beta \sum_{j} n_{j}^{+} \left(  \frac{\hbar^{2}k_{j}^{2}}{2m}-\mu_{0}B-\mu \right) \right)\sum_{\{ n_{j}^{-} \}}\exp\left( -\beta \sum_{j}n_{j}^{-}\left( \frac{\hbar^{2}k_{j}^{2}}{2m}+\mu_{0}B_{0}-\mu \right) \right) \\
+ & = \prod_{j} \sum_{n_{j}^{+}}\exp\left( -\beta n_{j}^{+}\left( \frac{\hbar^{2}k_{j}^{2}}{2m}-\mu_{0}B-\mu \right) \right)\prod_{j}\sum_{n_{j}^{-}}\exp\left( -\beta n_{j}^{-}\left(  \frac{habr^{2}k_{j}^{2}}{2m}+\mu_{0}B-\mu \right) \right) \\
+ & = \prod_{j}\left( 1+\mathcal{z}\exp\left( -\beta\left( \frac{\hbar^{2}k_{j}^{2}}{2m}-\mu_{0}B \right) \right) \right)\prod_{j}\left( 1+\mathcal{z}\exp\left( -\beta \left(  \frac{\hbar^{2}k_{j}^{2}}{2m}+\mu_{0}B \right) \right) \right) \\
+ & = \prod_{j}\left( 1+\mathcal{z}\exp\left( -\beta\left( \frac{\hbar^{2}k_{j}^{2}}{2m}-\mu_{0}B \right) \right) \right)\left( 1+\mathcal{z}\exp\left( -\beta \left(  \frac{\hbar^{2}k_{j}^{2}}{2m}+\mu_{0}B \right) \right) \right)
 \end{align}$$
-In particular, we have:
+Then, the grand potential is given by:
 $$\begin{align}
-\sum_{\{ \vec{k}_{n_{j}^{+}} \}}\exp\left( -\beta \sum_{j}n_{j}^{+} \frac{\hbar^{2}k_{n_{j}^{+}}^{2} }{2m} \right) & = \prod_{j} \left( \sum_{\vec{k}_{n_{j}^{+}}}\exp\left( -\beta n_{j}^{+} \frac{\hbar^{2}k_{n_{j}^{+}}^{2}}{2m} \right) \right)
+\phi & = - \frac{1}{\beta} \ln Q \\
+ & = -kT\sum_{j}\left( \ln\left( 1+\mathcal{z}\exp\left( -\beta\left(  \frac{\hbar^{2}k_{j}^{2}}{2m} -\mu_{0}B\right) \right) \right) +\ln\left( 1+\mathcal{z}\exp\left( -\beta\left(  \frac{\hbar^{2}k_{j}^{2}}{2m}+\mu_{0}B \right) \right) \right)\right)
 \end{align}$$
+The notation here may look a little bit messy. Here each $j$ is uniquely associated with a $\vec{k}_{j}$. So the sum is over all $\vec{k}_{j}$ that satisfies the boundary condition. In other words, the sum can be written as $\sum_{\vec{k}_{j}}$.
+
+## (c).
 
 
 
 
 
-
-
-
-
-The grand partition function is given by:
-$$\begin{align}
-\phi & = \sum_{\{ n_{j}^{+},n_{j}^{-} \}}\sum_{\vec{k}_{n_{j}^{+}},\vec{k}_{n_{j}^{-}}}\exp\left(-\beta\sum_{j}\left( \frac{\hbar^{2}k_{n_{j}^{+}}^{2}}{2m}\delta_{n_{j}^{+},1}-n_{j}^{+}\mu_{0}B-\mu n_{j}^{+}\right)-\beta\sum_{j}\left( \frac{\hbar^{2}k_{n_{j}^{-}}^{2}}{2m}\delta_{n_{j}^{-},1}+n_{j}^{-}\mu_{0}B - \mu n_{j}^{-}\right)\right) \\
- & = \left(\sum_{n_{0}^{+}}\sum_{\vec{k}_{n_{0}^{+}}}\exp\left( -\beta \frac{\hbar^{2}k_{n_{0}^{+}}^{2}}{2m}\delta_{n_{0}^{+},1}+\beta n_{0}^{+}\mu_{0}B+\beta \mu n_{0}^{+} \right)\right)\left(\sum_{n_{0}^{-}}\sum_{\vec{k}_{n_{0}^{-}}}\exp\left( -\beta \frac{\hbar^{2}k_{n_{0}^{-}}^{2}}{2m}\delta_{n_{0}^{-},1}-\beta n_{0}^{-}\mu_{0}B+ \beta n_{0}^{-} \right)\right)\dots \\
- & = \prod_{j}\left(\sum_{n_{j}^{+}}\sum_{\vec{k}_{n_{j}^{+}}^{}}\exp\left( -\beta \frac{\hbar^{2}k_{n_{j}^{+}}^{2} }{2m}\delta_{n_{j}^{+},1}+ \beta n_{j}^{+}\mu_{0}B+\beta \mu n_{j}^{+} \right)\right)\prod_{j^{'}}\left(\sum_{n_{j}^{-}}\sum_{\vec{k}_{n_{j}^{-}}}\exp\left( -\beta \frac{\hbar^{2}k_{n_{j}^{-}}^{2}}{2m}\delta_{n_{j}^{-},1}- \beta n_{j}^{-}\mu_{0}B+\beta \mu n_{j}^{-} \right)\right)
-\end{align}$$
 Know that:
 $$\begin{align}
 \sum_{\vec{k}} \exp\left( -\beta \frac{\hbar^{2}k^{2} }{2m}  \right)  & \approx \frac{V}{(2\pi)^{3}}\int_{\mathbb{R}^{3}}d^{3}k\exp\left( -\beta \frac{\hbar^{2}k^{2}}{2m} \right) \\
