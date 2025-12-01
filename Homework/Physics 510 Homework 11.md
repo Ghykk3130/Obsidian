@@ -89,7 +89,7 @@ The grand partition function is given by:
 $$\begin{align}
 Q & = \sum_{\{ n_{j}^{+},n_{j}^{-} \}}\exp\left( -\beta \sum_{j}n_{j}^{+}\left(  \frac{\hbar^{2}k_{j}^{2}}{2m}-\mu_{0}B-\mu \right)- \beta \sum_{j}n_{j}^{-}\left( \frac{\hbar^{2}k_{j}^{2}}{2m}+\mu_{0}B-\mu \right) \right) \\
  & = \sum_{\{ n_{j}^{+} \}}\exp\left( -\beta \sum_{j} n_{j}^{+} \left(  \frac{\hbar^{2}k_{j}^{2}}{2m}-\mu_{0}B-\mu \right) \right)\sum_{\{ n_{j}^{-} \}}\exp\left( -\beta \sum_{j}n_{j}^{-}\left( \frac{\hbar^{2}k_{j}^{2}}{2m}+\mu_{0}B_{0}-\mu \right) \right) \\
- & = \prod_{j} \sum_{n_{j}^{+}}\exp\left( -\beta n_{j}^{+}\left( \frac{\hbar^{2}k_{j}^{2}}{2m}-\mu_{0}B-\mu \right) \right)\prod_{j}\sum_{n_{j}^{-}}\exp\left( -\beta n_{j}^{-}\left(  \frac{habr^{2}k_{j}^{2}}{2m}+\mu_{0}B-\mu \right) \right) \\
+ & = \prod_{j} \sum_{n_{j}^{+}}\exp\left( -\beta n_{j}^{+}\left( \frac{\hbar^{2}k_{j}^{2}}{2m}-\mu_{0}B-\mu \right) \right)\prod_{j}\sum_{n_{j}^{-}}\exp\left( -\beta n_{j}^{-}\left(  \frac{\hbar^{2}k_{j}^{2}}{2m}+\mu_{0}B-\mu \right) \right) \\
  & = \prod_{j}\left( 1+\mathcal{z}\exp\left( -\beta\left( \frac{\hbar^{2}k_{j}^{2}}{2m}-\mu_{0}B \right) \right) \right)\prod_{j}\left( 1+\mathcal{z}\exp\left( -\beta \left(  \frac{\hbar^{2}k_{j}^{2}}{2m}+\mu_{0}B \right) \right) \right) \\
  & = \prod_{j}\left( 1+\mathcal{z}\exp\left( -\beta\left( \frac{\hbar^{2}k_{j}^{2}}{2m}-\mu_{0}B \right) \right) \right)\left( 1+\mathcal{z}\exp\left( -\beta \left(  \frac{\hbar^{2}k_{j}^{2}}{2m}+\mu_{0}B \right) \right) \right)
 \end{align}$$
