@@ -150,4 +150,22 @@ $$\begin{align}
  & = \frac{V}{\lambda^{3}}\mu_{0}(f_{3 /2}(\mathcal{z}e^{\beta \mu_{0}B})-f_{ 3 /2}(\mathcal{z}e^{-\beta \mu_{0}B}))
 \end{align}$$
 ## (e).
-
+Know that:
+$$\begin{align}
+ & f_{3 /2}(\mathcal{z}e^{\beta \mu_{0}B}) \approx f_{3 /2}(\mathcal{z})+ \frac{\partial}{\partial B}f_{3 /2}(\mathcal{z}e^{\beta \mu_{0}B})B= f_{3 /2}(\mathcal{z})+ \beta \mu_{0} f_{1 /2 }(\mathcal{z})B \\
+ & f_{3 /2}(\mathcal{z}e^{-\beta \mu_{0}B})\approx f_{3 /2}(\mathcal{z})+ \frac{\partial}{\partial B}f_{3 / 2}(\mathcal{z}e^{-\beta \mu_{0}B})B= f_{3 /2}(\mathcal{z})- \beta \mu_{0} f_{1 /2}(\mathcal{z})B  
+\end{align}$$
+Then we must have:
+$$\begin{align}
+N & \approx \frac{V}{\lambda^{3}}(2f_{3 /2}(\mathcal{z})+\beta \mu_{0}f_{1 /2}(\mathcal{z})-\beta \mu_{0}f_{1 /2}(\mathcal{z})) \\
+ & = 2 \frac{V}{\lambda^{3}}f_{3 /2}(\mathcal{z})
+\end{align}$$
+Similarly:
+$$\begin{align}
+M & \approx \frac{V}{\lambda^{3}} \mu_{0}(2\beta \mu_{0}f_{1 /2}(\mathcal{z})B) \\
+ & = 2 \frac{V}{\lambda^{3}}\mu_{0}\beta B f_{1 /2}(\mathcal{z})
+\end{align}$$
+Then:
+$$\begin{align}
+\chi  & \approx 2 \frac{V}{\lambda^{3}}\mu_{0}\beta f_{1 /2}(\mathcal{z})
+\end{align}$$
