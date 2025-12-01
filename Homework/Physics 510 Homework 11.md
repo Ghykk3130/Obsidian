@@ -240,3 +240,44 @@ $$\begin{align}
 ![[Pasted image 20251201014119.png|center|500]]
 ## (ii).
 ![[Pasted image 20251201014145.png|center|500]]
+
+# 4.
+We have that:
+$$\begin{align}
+ & n_{1}(r)=n_{0}\exp(-\beta e\phi(r)) \\
+ & n_{2}(r)=n_{0}\exp(\beta e\phi(r))
+\end{align}$$
+Then:
+$$\begin{align}
+ & \nabla^{2}\phi=- \frac{\rho}{\epsilon} \\
+\implies & \nabla^{2}\phi=- \frac{1}{\epsilon}(en_{1}-en_{2}) \\
+\implies & \nabla^{2}\phi= - \frac{n_{0}e}{\epsilon}(\exp(-\beta e\phi)-\exp(\beta e\phi)) \\
+ \implies & \nabla^{2}\phi= \frac{n_{0}e}{\epsilon} 2\sinh(\beta e\phi)
+\end{align}$$
+Under weak field, we must have that:
+$$\sinh(\beta e\phi)\approx \beta e\phi$$
+Then we have:
+$$\begin{align}
+ & \nabla^{2}\phi= 2 \frac{n_{0}e^{2}\beta}{\epsilon}\phi,\text{ for }r>a
+\end{align}$$
+It's easy to solve that:
+$$\phi=\phi_{0}\exp\left( -\sqrt{ \frac{2n_{0}e^{2}\beta}{\epsilon}}r \right)$$
+We know that for $r\leq a$, we have that:
+$$\begin{align}
+\phi & =\frac{1}{4\pi r} \left( \frac{r}{a} \right)^{3}Q \\
+ & = \frac{Q}{4\pi a^{3}}r^{2}
+\end{align}$$
+Then we can solve that:
+$$\phi_{0}= \frac{Q}{4\pi a}\exp\left( \sqrt{  \frac{2n_{0}e^{2}\beta}{\epsilon} }a \right)$$
+Then we finally obtain:
+$$\begin{align}
+\phi(r) & = \frac{Q}{4\pi a}\exp\left( \sqrt{ \frac{2n_{0}e^{2}\beta}{\epsilon} }(a-r) \right)\text{ for }r>a
+\end{align}$$
+So:
+$$\begin{align}
+ & n_{1}(r)= n_{0}\exp(-\beta e\phi(r)) \\
+ & n_{2}(r)=n_{0}\exp(\beta e\phi(r))
+\end{align}$$
+with the $\phi(r)$ as solved above.
+
+
