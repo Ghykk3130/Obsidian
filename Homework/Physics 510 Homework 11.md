@@ -163,9 +163,22 @@ N & \approx \frac{V}{\lambda^{3}}(2f_{3 /2}(\mathcal{z})+\beta \mu_{0}f_{1 /2}(\
 Similarly:
 $$\begin{align}
 M & \approx \frac{V}{\lambda^{3}} \mu_{0}(2\beta \mu_{0}f_{1 /2}(\mathcal{z})B) \\
- & = 2 \frac{V}{\lambda^{3}}\mu_{0}\beta B f_{1 /2}(\mathcal{z})
+ & = 2 \frac{V}{\lambda^{3}}\mu_{0}^{2}\beta B f_{1 /2}(\mathcal{z})
 \end{align}$$
 Then:
 $$\begin{align}
-\chi  & \approx 2 \frac{V}{\lambda^{3}}\mu_{0}\beta f_{1 /2}(\mathcal{z})
+\chi  & \approx 2 \frac{V}{\lambda^{3}}\mu_{0}^{2}\beta f_{1 /2}(\mathcal{z})
 \end{align}$$
+Know that in Sommerfeld expansion, we have:
+$$f_{1 /2}(\mathcal{z})\approx \frac{(\beta\epsilon_{F})^{1/2}}{\Gamma\left( \frac{3}{2} \right)}\text{ as }T\rightarrow 0$$
+Then:
+$$\chi= \frac{(\beta \epsilon_{F})^{1/2}}{\Gamma\left( \frac{3}{2} \right)} 2 \frac{V}{\lambda^{3}}\mu_{0}^{2}\beta= \frac{4}{\sqrt{ \pi }} \frac{V}{\lambda^{3}}\beta^{3/2}\mu_{0}^{2}\epsilon_{F}^{1/2}$$
+We also observe that:
+$$f_{3 /2}(\mathcal{z})\approx \frac{(\beta\epsilon_{F})^{3/2}}{\Gamma\left( \frac{5}{2} \right)}\text{ as }T\rightarrow 0$$
+So:
+$$N = \frac{4}{3\sqrt{ \pi }}\epsilon_{F}^{3/2}\beta^{3/2}2 \frac{V}{\lambda^{3}}$$
+We can write $\chi$ in terms of $N$:
+$$\begin{align}
+\chi= \frac{3N}{2} \frac{\mu_{0}^{2}}{\epsilon_{F}}
+\end{align}$$
+
