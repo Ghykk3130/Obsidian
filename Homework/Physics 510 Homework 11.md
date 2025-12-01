@@ -258,20 +258,21 @@ Under weak field, we must have that:
 $$\sinh(\beta e\phi)\approx \beta e\phi$$
 Then we have:
 $$\begin{align}
- & \nabla^{2}\phi= 2 \frac{n_{0}e^{2}\beta}{\epsilon}\phi,\text{ for }r>a
+ & \nabla^{2}\phi= 2 \frac{n_{0}e^{2}\beta}{\epsilon}\phi \\
+ & \frac{1}{r^{2}} \frac{\partial}{\partial r}\left( r^{2} \frac{\partial}{\partial r} \right)\phi= \frac{2n_{0}e^{2}\beta}{\epsilon}\phi,  \text{ for }r>a
 \end{align}$$
 It's easy to solve that:
-$$\phi=\phi_{0}\exp\left( -\sqrt{ \frac{2n_{0}e^{2}\beta}{\epsilon}}r \right)$$
+$$\phi=\frac{\phi_{0}}{r}  \exp\left( -\sqrt{ \frac{2n_{0}e^{2}\beta}{\epsilon}}r \right)$$
 We know that for $r\leq a$, we have that:
 $$\begin{align}
-\phi & =\frac{1}{4\pi r} \left( \frac{r}{a} \right)^{3}Q \\
- & = \frac{Q}{4\pi a^{3}}r^{2}
+\phi & =\frac{1}{4\pi\epsilon r} \left( \frac{r}{a} \right)^{3}Q \\
+ & = \frac{Q}{4\pi\epsilon a^{3}}r^{2}
 \end{align}$$
 Then we can solve that:
-$$\phi_{0}= \frac{Q}{4\pi a}\exp\left( \sqrt{  \frac{2n_{0}e^{2}\beta}{\epsilon} }a \right)$$
+$$\phi_{0}= \frac{Q}{4\pi \epsilon}\exp\left( \sqrt{  \frac{2n_{0}e^{2}\beta}{\epsilon} }a \right)$$
 Then we finally obtain:
 $$\begin{align}
-\phi(r) & = \frac{Q}{4\pi a}\exp\left( \sqrt{ \frac{2n_{0}e^{2}\beta}{\epsilon} }(a-r) \right)\text{ for }r>a
+\phi(r) & = \frac{Q}{4\pi \epsilon r}\exp\left( \sqrt{ \frac{2n_{0}e^{2}\beta}{\epsilon} }(a-r) \right)\text{ for }r>a
 \end{align}$$
 So:
 $$\begin{align}
