@@ -129,7 +129,7 @@ $$\begin{align}
 N  & \approx \frac{Vm^{3/2} }{\sqrt{ 2 }\pi^{2}\hbar^{3} } \int d\epsilon\epsilon^{1/2}\left[\frac{1}{\mathcal{z}^{-1}\exp(\beta(\epsilon-\mu_{0}B))+1}+ \frac{1}{\mathcal{z}^{-1}\exp(\beta(\epsilon+\mu_{0}B))+1}\right] \\
  & = \frac{Vm^{3/2}}{\sqrt{ 2 }\pi^{2}\hbar^{3}}\int d\epsilon\epsilon^{1/2}\left[ \frac{1}{(\mathcal{z}e^{\beta \mu_{0}B})^{-1}\exp(\beta\epsilon)+1 }+ \frac{1}{(\mathcal{z}e^{-\beta \mu_{0}B})^{-1}\exp(\beta\epsilon)+1}\right] \\
  & = \frac{Vm^{3/2}(kT)^{3/2} }{\sqrt{ 2 }\pi^{2}\hbar^{3} } \frac{\sqrt{ \pi }}{2 } (f_{3/ 2}(\mathcal{z}e^{\beta \mu_{0}B})+f_{3/ 2 }(\mathcal{z}e^{-\beta \mu_{0}B})) \\
- & = \frac{V}{(2\pi \lambda)^{3}}(f_{3 /2}(\mathcal{z}e^{\beta \mu_{0}B})+f_{3 /2}(\mathcal{z}e^{-\beta \mu_{0}B}))
+ & = \frac{V}{\lambda^{3}}(f_{3 /2}(\mathcal{z}e^{\beta \mu_{0}B})+f_{3 /2}(\mathcal{z}e^{-\beta \mu_{0}B}))
 \end{align}$$
 ## (d).
 We have:
@@ -141,11 +141,13 @@ $$\begin{align}
 We can compute:
 $$\begin{align}
 \frac{\partial}{\partial(\beta B)}\ln Q & = \frac{\partial}{\partial(\beta B)}\sum_{\vec{k}_{j}}\left( \ln\left( 1+\mathcal{z}\exp\left( -\beta\left(  \epsilon_{\vec{k}_{j}} -\mu_{0}B\right) \right) \right) +\ln\left( 1+\mathcal{z}\exp\left( -\beta\left(  \epsilon_{\vec{k}_{j}}+\mu_{0}B \right) \right) \right)\right) \\
- & = \sum_{\vec{k}_{j}} \left[\frac{\mu_{0}\mathcal{z}\exp(-\beta(\epsilon_{\vec{k}_{j}}-\mu_{0}B)) }{1+ \mathcal{z}\exp(-\beta(\epsilon_{\vec{k}_{j}}-\mu_{0}B))}+ \frac{\mu_{0}\mathcal{z}\exp(-\beta(\epsilon_{\vec{k}_{j}}+\mu_{0}B))}{1+\mathcal{z}\exp(-\beta(\epsilon_{\vec{k}_{j}}+\mu_{0}B))}\right]
+ & = \sum_{\vec{k}_{j}} \left[\frac{\mu_{0}\mathcal{z}\exp(-\beta(\epsilon_{\vec{k}_{j}}-\mu_{0}B)) }{1+ \mathcal{z}\exp(-\beta(\epsilon_{\vec{k}_{j}}-\mu_{0}B))}-\frac{\mu_{0}\mathcal{z}\exp(-\beta(\epsilon_{\vec{k}_{j}}+\mu_{0}B))}{1+\mathcal{z}\exp(-\beta(\epsilon_{\vec{k}_{j}}+\mu_{0}B))}\right]
 \end{align}$$
 Similarly, we can use integrals to approach the sum:
 $$\begin{align}
-\langle M \rangle  & \approx  \frac{Vm^{3/2}}{\sqrt{ 2 }\pi^{2}\hbar^{3}}\int d\epsilon\epsilon^{1/2}\left[\frac{\mu_{0}\mathcal{z}\exp(-\beta(\epsilon-\mu_{0}B)) }{1+ \mathcal{z}\exp(-\beta(\epsilon-\mu_{0}B))}+ \frac{\mu_{0}\mathcal{z}\exp(-\beta(\epsilon+\mu_{0}B))}{1+\mathcal{z}\exp(-\beta(\epsilon+\mu_{0}B))}\right] \\
- & = \frac{Vm^{3/2} }{\sqrt{ 2 }\pi^{2}\hbar^{3}}\mu_{0} \frac{\sqrt{ \pi }}{2}(f_{3 /2}(\mathcal{z}e^{\beta \mu_{0}B})+f_{ 3 /2}(\mathcal{z}e^{-\beta \mu_{0}B})) \\
- & = \frac{V}{(2\pi \lambda^{3})}\mu_{0}(f_{3 /2}(\mathcal{z}e^{\beta \mu_{0}B})+f_{ 3 /2}(\mathcal{z}e^{-\beta \mu_{0}B}))
+\langle M \rangle  & \approx  \frac{Vm^{3/2}}{\sqrt{ 2 }\pi^{2}\hbar^{3}}\int d\epsilon\epsilon^{1/2}\left[\frac{\mu_{0}\mathcal{z}\exp(-\beta(\epsilon-\mu_{0}B)) }{1+ \mathcal{z}\exp(-\beta(\epsilon-\mu_{0}B))}- \frac{\mu_{0}\mathcal{z}\exp(-\beta(\epsilon+\mu_{0}B))}{1+\mathcal{z}\exp(-\beta(\epsilon+\mu_{0}B))}\right] \\
+ & = \frac{Vm^{3/2} }{\sqrt{ 2 }\pi^{2}\hbar^{3}}\mu_{0} \frac{\sqrt{ \pi }}{2}(f_{3 /2}(\mathcal{z}e^{\beta \mu_{0}B})-f_{ 3 /2}(\mathcal{z}e^{-\beta \mu_{0}B})) \\
+ & = \frac{V}{\lambda^{3}}\mu_{0}(f_{3 /2}(\mathcal{z}e^{\beta \mu_{0}B})-f_{ 3 /2}(\mathcal{z}e^{-\beta \mu_{0}B}))
 \end{align}$$
+## (e).
+
