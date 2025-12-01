@@ -1017,8 +1017,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200,
-    "collapsed": true
+    "width": 200
   },
   "right": {
     "id": "9003d078f8dbc4ed",
@@ -1118,6 +1117,8 @@
   },
   "active": "f17091229a7e43dd",
   "lastOpenFiles": [
+    "Pictures/Pasted image 20251201014145.png",
+    "Pictures/Pasted image 20251201014119.png",
     "Pictures/Pasted image 20251201012537.png",
     "Pictures/Pasted image 20251201012532.png",
     "理想经典气体，玻色气体与费米气体.md",
@@ -1154,8 +1155,6 @@
     "Pictures/381773e738a5144c475ce779113c5542 1.jpg",
     "Pictures/381773e738a5144c475ce779113c5542.jpg",
     "Pictures/Pasted image 20251109234839.png",
-    "Pictures/6b0c21b0026bf8fe35c89d383fe222cf 1.jpg",
-    "Pictures/6b0c21b0026bf8fe35c89d383fe222cf.jpg",
     "Homework",
     "Pictures",
     "Experimental",

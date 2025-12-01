@@ -236,3 +236,7 @@ $$\begin{align}
  & \frac{p_{b}}{p_{c}}= \frac{g_{5 /2}(\mathcal{z})}{n\lambda^{3} }= \frac{g_{5 /2}(\mathcal{z})}{g_{3 /2}(\mathcal{z})} \\
  & \frac{p_{f}}{p_{c}}= \frac{f_{5 /2}(\mathcal{z})}{n\lambda^{3}}= \frac{f_{5 /2}(\mathcal{z})}{f_{3 /2 }(\mathcal{z})} 
 \end{align}$$
+## (i).
+![[Pasted image 20251201014119.png|center|500]]
+## (ii).
+![[Pasted image 20251201014145.png|center|500]]
