@@ -181,4 +181,58 @@ We can write $\chi$ in terms of $N$:
 $$\begin{align}
 \chi= \frac{3N}{2} \frac{\mu_{0}^{2}}{\epsilon_{F}}
 \end{align}$$
-
+# 3.
+We can calculate the grand partition function of ideal Bose gas:
+$$\begin{align}
+Q_{B}  & = \sum_{\{ n_{j} \}}\exp\left( -\beta \sum_{j}n_{j}\epsilon_{\vec{k}_{j}}+\beta \mu \sum_{j}n_{j} \right) \\
+& = \sum_{\{ n_{j} \}}\exp\left( -\beta \sum_{j}n_{j}(\epsilon_{\vec{k}_{j}}-\mu) \right) \\
+ & = \prod_{j}\sum_{n_{j}} \exp(-\beta n_{j}(\epsilon_{\vec{k}_{j}}-\mu)) \\
+ & = \prod_{j} \frac{1}{1-\exp(-\beta (\epsilon_{\vec{k}_{j}}-\mu))}
+\end{align}$$
+Then the grand potential of ideal Bose gas is：
+$$\begin{align}
+\phi_{B} & =- \frac{1}{\beta}\ln Q_{B} \\
+ & = \frac{1}{\beta}\sum_{j}\ln(1-\exp(-\beta(\epsilon_{\vec{k}_{j}}-\mu))) \\
+\end{align}$$
+If we approximate the sum with an integral:
+$$\begin{align}
+\phi_{B} & =\frac{1}{\beta}\sum_{j}\ln(1-\exp(-\beta(\epsilon_{\vec{k}_{j}}-\mu))) \\
+ & \approx \frac{Vm^{3/2}}{\sqrt{ 2 }\pi^{2}\hbar^{3}}kT \int d\epsilon \epsilon^{1/2}\ln(1-\mathcal{z}e^{-\beta\epsilon}) \\
+\end{align} $$
+We compute:
+$$\begin{align}
+\int_{0}^{\infty}d\epsilon \epsilon^{1/2}\ln(1-\mathcal{z}e^{-\beta\epsilon}) & = -\int d\epsilon \epsilon^{1/2} \sum_{k=0}^{\infty} \frac{1}{k}(\mathcal{z}e^{-\beta\epsilon})^k \\
+ & = -\sum_{k} \frac{1}{k} \mathcal{z}^k \int d\epsilon \epsilon^{1/2} e^{-k\beta\epsilon} \\
+ & = -\sum_{k} \frac{1}{k}\mathcal{z}^k  \left(  \frac{1}{k\beta} \right)^{3/2}\Gamma\left( \frac{3}{2} \right) \\
+ & = -g_{5 /2 }(\mathcal{z}) \beta^{-3/2}\Gamma\left( \frac{3}{2} \right)
+\end{align}$$
+Then
+$$\begin{align}
+\phi_{B} & \approx -\frac{Vm^{3/2}}{\sqrt{ 2 }\pi^{2}\hbar^{3}} \beta^{-5/2}\Gamma\left( \frac{3}{2} \right)g_{5 /2}(\mathcal{z}) \\
+ & = -\frac{V}{\lambda^{3}}kT g_{5 /2}(\mathcal{z})
+\end{align}$$
+Then the pressure is given by:
+$$p_{b}=- \frac{\partial \phi_{B}}{\partial V}= \frac{kT}{\lambda^{3}}g_{5 /2}(\mathcal{z})$$
+Similarly, the grand partition function of ideal Fermi gas is:
+$$\begin{align}
+Q_{F}  & = \prod_{j}\sum_{n_{j}}\exp(-\beta n_{j}(\epsilon_{\vec{k}_{j}}-\mu)) \\
+ & = \prod_{j}(1+\exp(-\beta(\epsilon_{\vec{k}_{j}}-\mu)))
+\end{align}$$
+The grand potential of ideal Fermi gas is:
+$$\phi_{F}= -\frac{1}{\beta}\sum_{j}\ln(1+\exp(-\beta(\epsilon_{\vec{k}}-\mu)))$$
+Similarly, if we approximate the sum with an integral, we have:
+$$\phi_{F}=- \frac{V}{\lambda^{3}}kT f_{5 /2}(\mathcal{z})$$
+Then we find the pressure:
+$$p_{f}= \frac{kT}{\lambda^{3}}f_{5 /2}(\mathcal{z})$$
+Then for ideal classical gas, we can easily obtain:
+$$p_{c}= \frac{NkT}{V}=nkT$$
+We observe that for the two quantum gases, there is an constraint their fugacity:
+$$\begin{align}
+ & N= \sum_{\vec{k}_{j}} \frac{1}{\mathcal{z}^{-1}e^{\beta\epsilon_{\vec{k}_{j}}}+1}\approx \frac{V}{\lambda^{3}} f_{3 /2}(\mathcal{z})\text{ for fermions} \\
+ & N= \sum_{\vec{k}_{j}} \frac{1}{\mathcal{z}^{-1}e^{\beta\epsilon_{\vec{k}_{j}}}-1}\approx \frac{V}{\lambda^{3}} g_{3 /2}(\mathcal{z})\text{ for bosons}
+\end{align}$$
+Then it's easy to compute that:
+$$\begin{align}
+ & \frac{p_{b}}{p_{c}}= \frac{g_{5 /2}(\mathcal{z})}{n\lambda^{3} }= \frac{g_{5 /2}(\mathcal{z})}{g_{3 /2}(\mathcal{z})} \\
+ & \frac{p_{f}}{p_{c}}= \frac{f_{5 /2}(\mathcal{z})}{n\lambda^{3}}= \frac{f_{5 /2}(\mathcal{z})}{f_{3 /2 }(\mathcal{z})} 
+\end{align}$$

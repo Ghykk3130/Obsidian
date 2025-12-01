@@ -80,4 +80,23 @@ F_{n}(y) & = \frac{y^n}{n}+ 2\sum_{j=0}^{\infty}\binom{n-1}{2j+1}y^{n-2j-2} \zet
 接下来便是显然。
 >[!Right]
 >$\blacksquare$
+## Degeneracy temperature
+
+和[[Bose-Einstein statistics与BEC]]一样，我们通过粒子数的约数来决定fugacity。我们有：
+$$N= \sum_{\vec{k}_{}} \frac{1}{\mathcal{z}e^{\beta\epsilon_{\vec{k}}}+1}\approx \frac{V}{\lambda^{3}}f_{3 /2}(\mathcal{z})$$
+即：
+$$1= \frac{1}{n\lambda^{3}}f_{3 /2}(\mathcal{z})$$
+我们知道，Fermi-Dirac integral一般长这样：
+
+![[Drawing 2025-12-01 00.32.38.excalidraw|center|250]]
+所以在高温下，$\frac{1}{n\lambda^{3}}f_{3 /2}$会越来越往上偏。所以与$1$的交点就越来越往左。高温极限下有$\mathcal{z}\rightarrow 0$。我们定义退化温度：
+
+>[!Note] Definition 1
+>Define the degeneracy temperature $T_{D}$ such that:
+>$$n\lambda^{3}=1$$
+
+对于费米子组成的气体来说，温度低于退化温度时，我们认为经典气体开始“退化”成费米气体。
+
+
+
 
