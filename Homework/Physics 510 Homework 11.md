@@ -268,6 +268,8 @@ $$\begin{align}
 \phi & =\frac{1}{4\pi\epsilon r} \left( \frac{r}{a} \right)^{3}Q \\
  & = \frac{Q}{4\pi\epsilon a^{3}}r^{2}
 \end{align}$$
+Know that 
+
 Then we can solve that:
 $$\phi_{0}= \frac{Q}{4\pi \epsilon}\exp\left( \sqrt{  \frac{2n_{0}e^{2}\beta}{\epsilon} }a \right)$$
 Then we finally obtain:
