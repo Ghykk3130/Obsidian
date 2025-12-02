@@ -30,5 +30,7 @@ Anisotropy：
 - 其中用到tin flux。最后会离心甩出来，但仍有残留。磨样本时最好磨掉。
 
 # Structural characterization method
-- X-ray diffraction主要看电子结构。X-ray为入射电磁波。将bulk中电子云想成偶极，在X-ray作用下受迫振动，产生辐射。我们收集这个辐射强度。而核虽然也带电荷，也能被X-ray驱动，但是太重了，不怎么动。所以辐射强度很小，可忽略。
+- X-ray diffraction主要看电子结构。X-ray为入射电磁波。将bulk中电子云想成偶极，在X-ray作用下受迫振动，产生辐射。每个离子的电子云形成的偶极振动。而核虽然也带电荷，也能被X-ray驱动，但是太重了，不怎么动。所以辐射强度很小，可忽略。一般画$\text{Bragg peak v.s. diffraction angle}$。其中：
+	- peak位置$\rightarrow$晶格间距
+	- peak大小$\rightarrow$电子云密度
 - Neutron diffraction主要看磁结构和核结构。Neutron不带电荷，但是有自旋。把Neutron打入样品就相当于一个微小的Stern-Gerlach实验。Neutron受到样品中偶极矩的磁场作用而偏转，形成磁Bragg peak。Neutron还可以直接撞到核上被散射，形成核Bragg peak。
