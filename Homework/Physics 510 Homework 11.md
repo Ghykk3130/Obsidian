@@ -262,19 +262,20 @@ $$\begin{align}
  & \frac{1}{r^{2}} \frac{\partial}{\partial r}\left( r^{2} \frac{\partial}{\partial r} \right)\phi= \frac{2n_{0}e^{2}\beta}{\epsilon}\phi,  \text{ for }r>a
 \end{align}$$
 It's easy to solve that:
-$$\phi=\frac{\phi_{0}}{r}  \exp\left( -\sqrt{ \frac{2n_{0}e^{2}\beta}{\epsilon}}r \right)$$
+$$\phi=\frac{\phi_{0}}{r}  \exp\left( -\kappa r \right),\ \kappa= \sqrt{ \frac{2n_{0}e^{2}\beta}{\epsilon} }$$
 We know that for $r\leq a$, we have that:
+$$$$
+Know that the charge is uniformly distributed, then the boundary condition at the surface of the particle is:
+$$\left.\nabla \phi\right|^{\text{out}}_{\text{in}}=0$$
+Then we have:
 $$\begin{align}
-\phi & =\frac{1}{4\pi\epsilon r} \left( \frac{r}{a} \right)^{3}Q \\
- & = \frac{Q}{4\pi\epsilon a^{3}}r^{2}
+ & - \frac{\phi_{0}}{a^{2}}e^{-\kappa a}- \frac{\kappa \phi_{0}}{a}e^{-\kappa a}= \frac{2Q}{4\pi\epsilon a^{2} } \\
+\implies &  \phi_{0}= - \frac{Q}{2\pi\epsilon} \frac{e^{\kappa a}}{1+a\kappa}
 \end{align}$$
-Know that 
 
-Then we can solve that:
-$$\phi_{0}= \frac{Q}{4\pi \epsilon}\exp\left( \sqrt{  \frac{2n_{0}e^{2}\beta}{\epsilon} }a \right)$$
 Then we finally obtain:
 $$\begin{align}
-\phi(r) & = \frac{Q}{4\pi \epsilon r}\exp\left( \sqrt{ \frac{2n_{0}e^{2}\beta}{\epsilon} }(a-r) \right)\text{ for }r>a
+\phi(r) & = - \frac{Q}{2\pi\epsilon r} \frac{e^{\kappa (a-r)}}{1+a\kappa}
 \end{align}$$
 So:
 $$\begin{align}
