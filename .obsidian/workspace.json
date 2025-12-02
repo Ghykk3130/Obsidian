@@ -545,12 +545,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Untitled 2.md",
+                "file": "Homework/Physics 510 Homework 11.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Untitled 2"
+              "title": "Physics 510 Homework 11"
             }
           },
           {
@@ -1031,7 +1031,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 200,
+    "collapsed": true
   },
   "right": {
     "id": "9003d078f8dbc4ed",
@@ -1131,11 +1132,11 @@
   },
   "active": "6e7234901b1694f8",
   "lastOpenFiles": [
+    "Untitled 2.md",
     "Homework/Physics 510 Homework 11.md",
     "Homework/Physics 510 Homework 9.md",
     "直角坐标和球坐标微分算子变换.md",
     "群论.md",
-    "Untitled 2.md",
     "Untitled 1.md",
     "Pictures/Pasted image 20251201014145.png",
     "Pictures/Pasted image 20251201014119.png",

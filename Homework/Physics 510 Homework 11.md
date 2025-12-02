@@ -236,6 +236,7 @@ $$\begin{align}
  & \frac{p_{b}}{p_{c}}= \frac{g_{5 /2}(\mathcal{z})}{n\lambda^{3} }= \frac{g_{5 /2}(\mathcal{z})}{g_{3 /2}(\mathcal{z})} \\
  & \frac{p_{f}}{p_{c}}= \frac{f_{5 /2}(\mathcal{z})}{n\lambda^{3}}= \frac{f_{5 /2}(\mathcal{z})}{f_{3 /2 }(\mathcal{z})} 
 \end{align}$$
+The fugacity can be solved using the constraint above in terms of the temperature, so that the plot versus the temperature can be made.
 ## (i).
 ![[Pasted image 20251201014119.png|center|500]]
 ## (ii).
@@ -264,24 +265,32 @@ $$\begin{align}
 It's easy to solve that:
 $$\phi=\frac{\phi_{0}}{r}  \exp\left( -\kappa r \right),\ \kappa= \sqrt{ \frac{2n_{0}e^{2}\beta}{\epsilon} }$$
 We know that for $r\leq a$, we have that:
-$$$$
+$$\begin{align}
+ & \nabla^{2}\phi= - \frac{1}{\epsilon} \frac{Q}{\frac{4}{3}\pi a^{3}} \\
+\implies & \phi=- \frac{Q}{8\pi\epsilon a^{3}}r^{2}+C
+\end{align}$$
 Know that the charge is uniformly distributed, then the boundary condition at the surface of the particle is:
 $$\left.\nabla \phi\right|^{\text{out}}_{\text{in}}=0$$
-Then we have:
+Also since the field is finite near the boundary, we must have:
+$$\phi|_{ \text{in}}=\phi|_{\text{out}}\tag{*}$$
+Then we obtain:
 $$\begin{align}
- & - \frac{\phi_{0}}{a^{2}}e^{-\kappa a}- \frac{\kappa \phi_{0}}{a}e^{-\kappa a}= \frac{2Q}{4\pi\epsilon a^{2} } \\
-\implies &  \phi_{0}= - \frac{Q}{2\pi\epsilon} \frac{e^{\kappa a}}{1+a\kappa}
+ & \frac{\phi_{0}}{a^{2}}\exp(-\kappa a)+ \frac{\phi_{0}}{a}\kappa \exp(-\kappa a)= \frac{Q}{4\pi\epsilon a^{2}} \\
+\implies & \phi_{0}= \frac{Q}{4\pi\epsilon}\exp(\kappa a) \frac{1}{1+\kappa a}
 \end{align}$$
+Note that the condition $(*)$ is not needed, because we don't need to know the potential inside the particle to solve the problem.
 
-Then we finally obtain:
-$$\begin{align}
-\phi(r) & = - \frac{Q}{2\pi\epsilon r} \frac{e^{\kappa (a-r)}}{1+a\kappa}
-\end{align}$$
+Then we have:
+$$\phi(r)= \frac{Q}{4\pi\epsilon r} \frac{1}{1+\kappa a} \exp(\kappa(a-r))\text{ where }\kappa=\sqrt{ \frac{2n_{0}e^{2}\beta}{\epsilon} }$$
 So:
 $$\begin{align}
  & n_{1}(r)= n_{0}\exp(-\beta e\phi(r)) \\
  & n_{2}(r)=n_{0}\exp(\beta e\phi(r))
 \end{align}$$
+In the weak field limit, I can further approximate:
+$$\begin{align}
+ & n_{1}(r)\approx n_{0}(1-\beta e\phi(r)) \\
+ & n_{2}(r)\approx n_{0}(1+\beta e\phi(r))
+\end{align}$$
 with the $\phi(r)$ as solved above.
-
 
