@@ -34,3 +34,9 @@ Anisotropy：
 	- peak位置$\rightarrow$晶格间距
 	- peak大小$\rightarrow$电子云密度
 - Neutron diffraction主要看磁结构和核结构。Neutron不带电荷，但是有自旋。把Neutron打入样品就相当于一个微小的Stern-Gerlach实验。Neutron受到样品中偶极矩的磁场作用而偏转，形成磁Bragg peak。Neutron还可以直接撞到核上被散射，形成核Bragg peak。
+- Rietveld refinement就是给定大致的晶体结构和PXRD（powder X-ray diffraction）图，通过某种最小二乘拟合lattice parameters凑出符合PXRD图的结构。
+
+# Things to learn
+- Heisenberg model single-site anisotropy and Ising-type anisotropy.
+- Lattice group. What is P6/mmm, what are 2c, 2d, 2e sites?
+- 

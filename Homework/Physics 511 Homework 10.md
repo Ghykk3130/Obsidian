@@ -46,9 +46,9 @@ We do not need to worry about the normalization of the r component, because they
 
 Then:
 $$\begin{align}
- & Prob(\text{m=-1}) = \frac{|\sqrt{ \frac{2\pi}{3} }(1+i) |^{2}}{|\sqrt{ \frac{2\pi}{e} }(1+i)|^{2}+|\sqrt{ \frac{2\pi}{3} }(i-1)|^{2}+|6\sqrt{ \frac{\pi}{3} }|^{2}} = \frac{1}{11} \\
- & Prob(m=1)=\frac{|\sqrt{ \frac{2\pi}{3} }(i-1) |^{2}}{|\sqrt{ \frac{2\pi}{e} }(1+i)|^{2}+|\sqrt{ \frac{2\pi}{3} }(i-1)|^{2}+|6\sqrt{ \frac{\pi}{3} }|^{2}} = \frac{1}{11}= \frac{1}{11} \\
- & Prob(m=0)= \frac{|6\sqrt{ \frac{\pi}{3} }|^{2}}{|\sqrt{ \frac{2\pi}{e} }(1+i)|^{2}+|\sqrt{ \frac{2\pi}{3} }(i-1)|^{2}+|6\sqrt{ \frac{\pi}{3} }|^{2}} = \frac{10}{11}
+ & Prob(\text{m=-1}) = \frac{|\sqrt{ \frac{2\pi}{3} }(1+i) |^{2}}{|\sqrt{ \frac{2\pi}{3} }(1+i)|^{2}+|\sqrt{ \frac{2\pi}{3} }(i-1)|^{2}+|6\sqrt{ \frac{\pi}{3} }|^{2}} = \frac{1}{11} \\
+ & Prob(m=1)=\frac{|\sqrt{ \frac{2\pi}{3} }(i-1) |^{2}}{|\sqrt{ \frac{2\pi}{3} }(1+i)|^{2}+|\sqrt{ \frac{2\pi}{3} }(i-1)|^{2}+|6\sqrt{ \frac{\pi}{3} }|^{2}} = \frac{1}{11}= \frac{1}{11} \\
+ & Prob(m=0)= \frac{|6\sqrt{ \frac{\pi}{3} }|^{2}}{|\sqrt{ \frac{2\pi}{3} }(1+i)|^{2}+|\sqrt{ \frac{2\pi}{3} }(i-1)|^{2}+|6\sqrt{ \frac{\pi}{3} }|^{2}} = \frac{9}{11}
 \end{align}$$
 ## c.
 Know that:
@@ -78,7 +78,7 @@ L_{-} & = L_{x}-iL_{y} \\
 Therefore:
 $$\begin{align}
 L_{-}Y_{1/ 2}^{1 /2} \propto &\left(\hbar(i\sin \phi-\cos \phi) \frac{\partial}{\partial \theta}+\hbar(i\cot \theta \cos \phi+\cot \theta \sin \phi)  \frac{\partial}{\partial \phi}\right) e^{i\phi/2}\sqrt{ \sin \theta } \\
- & = \hbar(i\sin \phi-\cos \phi) \frac{1}{2} e^{i\phi/2} \frac{\cos \theta}{\sqrt{ \sin \theta }}+\hbar(i\cot \theta \cos \phi+\coth \eta \sin \phi) \frac{i}{2}e^{i\phi/2} \sqrt{ \sin \theta } \\
+ & = \hbar(i\sin \phi-\cos \phi) \frac{1}{2} e^{i\phi/2} \frac{\cos \theta}{\sqrt{ \sin \theta }}+\hbar(i\cot \theta \cos \phi+\coth \theta \sin \phi) \frac{i}{2}e^{i\phi/2} \sqrt{ \sin \theta } \\
  & = \frac{\hbar}{2}e^{i\phi/2} \frac{1}{\sqrt{ \sin \theta }}(i\sin \phi \cos \theta-\cos \phi \cos \theta-i\cot \theta \sin \theta \cos \phi+i\cot \theta \sin \theta \sin \phi) \\
  & = \frac{\hbar}{2}e^{i\phi/2} \frac{1}{\sqrt{ \sin \theta }} 2\cos \theta e^{i(\pi-\phi)} \\
  & = - \hbar \frac{\cos \theta}{\sqrt{ \sin \theta }}e^{-i \frac{\phi}{2}}
