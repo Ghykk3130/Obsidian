@@ -24,7 +24,7 @@ Anisotropy：
 - 若$R=Tm$，强$Ga$ doping时，$R$变强easy axis。
 - 若$R=Tm$，稍弱$Ga$ doping时，$R$的easy axis强度和$Mn$的easy plane强度相当。
 
-总结来说，就是，$R$的anisotropy和$Mn$的anisotropu各自把各自掰向axis或者plane。然后$Mn$之间全部平行，并且因为平行交换能一样，不会反过来影响$Mn$的orientation。然后$R$和$Mn$因为取向不同互相掰，在$R=Tm$，稍弱$Ga$ doping时，它们强度相当。这时施加field，可能形成稳定skyrmion。
+总结来说，就是，$R$的anisotropy和$Mn$的anisotropy各自把各自掰向axis或者plane。然后$Mn$之间全部平行，并且因为平行交换能一样，不会反过来影响$Mn$的orientation。然后$R$和$Mn$因为取向不同互相掰，在$R=Tm$，稍弱$Ga$ doping时，它们强度相当。这时施加field，可能形成稳定skyrmion。
 
 # Growth method
 - 其中用到tin flux。最后会离心甩出来，但仍有残留。磨样本时最好磨掉。
@@ -39,6 +39,9 @@ Anisotropy：
 
 # Magnetization measurement
 - 在平行于axis和plane方向施加磁场，看哪个方向manetization大。哪个方向大说明哪个方向easy。
+- 若是ferromagnetic，不用外场就能看magnetization。若是anti-ferromagnetic，要加外场才能看magnetization。我们不知道材料是哪种，所以一般加外场。
+![[Drawing 2025-12-02 22.02.14.excalidraw|center|500]]
+
 
 # Things to learn
 - Heisenberg model single-site anisotropy and Ising-type anisotropy.
