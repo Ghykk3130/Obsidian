@@ -123,16 +123,14 @@ $$\langle S^z\rangle=\tanh(\beta \mu (B+n_{D}J\langle S^z\rangle))$$
 如果要考虑自发磁化，则令外场$B=0$。则需要解：
 $$\langle S^z \rangle=\tanh(n_{D}\beta J\langle S^z\rangle)$$
 
+通过画图容易看出，若$\beta Jn_{D}<1$，则只有$\langle S^z\rangle=0$一个解。
+![[Drawing 2025-12-02 22.50.21.excalidraw|center]]
 
+若$\beta Jn_{D}>1$，则有三个解。容易证明$\langle S^z\rangle=0$的解自由能为极大，不能稳定平衡。故取非零解。这是从paramagnetic到ferromagnetic的phase transition。其中相变温度称为Curie temperature。
 
-
-
-
-
-
-通过画图容易看出，若$\beta Jz<1$，则只有$\langle \sigma\rangle=0$一个解。若$\beta Jz>1$，则有$\langle \sigma \rangle=0,\pm \sigma_{0}$三个解。其中$\sigma_{0}$代表方程非零零点。容易证明$\langle \sigma\rangle=0$的解自由能为极大，不能稳定平衡。故取$\langle \sigma\rangle=\pm \sigma_{0}$。
 
 对于anti-ferromagnetic物体，$J<0$，则无论如何$\langle \sigma \rangle$都为零。任何温度下都没有自发磁化。
 
 对于ferromagnetic物体，$J>0$经历phase transition。在温度从高到低，$\langle \sigma \rangle$的值从$0$变为$\pm \sigma_{0}$。magnetization中$0$变为$\pm n\mu \sigma_{0}$。ferromagnetic固体经历phase transition，从自发磁化为零的paramagnetic转变为非零的magnetization。
 
+## 3.3 Critical exponent

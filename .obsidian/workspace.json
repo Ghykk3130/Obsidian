@@ -587,12 +587,54 @@
             "state": {
               "type": "markdown",
               "state": {
+                "file": "Ising Model.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Ising Model"
+            }
+          },
+          {
+            "id": "4f19a9abfae6bc99",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
                 "file": "Reading notes/Doping-induced spin reorientation in Kagome magnet TmMn6Sn6.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
               "title": "Doping-induced spin reorientation in Kagome magnet TmMn6Sn6"
+            }
+          },
+          {
+            "id": "5924b76ce31c8b0f",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Reading notes/Doping-induced spin reorientation in Kagome magnet TmMn6Sn6.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Doping-induced spin reorientation in Kagome magnet TmMn6Sn6"
+            }
+          },
+          {
+            "id": "956f3debece47ec5",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Ising Model.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Ising Model"
             }
           },
           {
@@ -1002,7 +1044,7 @@
             }
           }
         ],
-        "currentTab": 41
+        "currentTab": 44
       }
     ],
     "direction": "vertical"
@@ -1058,7 +1100,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "ising",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -1171,13 +1213,18 @@
       "obsidian-excalidraw-plugin:New drawing": false
     }
   },
-  "active": "778f53de21637232",
+  "active": "956f3debece47ec5",
   "lastOpenFiles": [
-    "Excalidraw/Drawing 2025-12-02 22.02.14.excalidraw.md",
+    "Hilbert空间.md",
     "Reading notes/Doping-induced spin reorientation in Kagome magnet TmMn6Sn6.md",
+    "Excalidraw/Drawing 2025-12-02 23.14.03.excalidraw.md",
+    "Excalidraw/Drawing 2025-12-02 23.11.14.excalidraw.md",
+    "Ising Model.md",
+    "Excalidraw/Drawing 2025-12-02 22.50.21.excalidraw.md",
+    "Excalidraw/Drawing 2025-11-22 00.07.40.excalidraw.md",
+    "Excalidraw/Drawing 2025-12-02 22.02.14.excalidraw.md",
     "固体热容.md",
     "N维球.md",
-    "Ising Model.md",
     "Schrodinger's and Heisenberg's pictures.md",
     "Spin以及spinor formalism的基变换.md",
     "Excalidraw/Drawing 2025-11-23 21.36.13.excalidraw.md",
@@ -1194,15 +1241,10 @@
     "Untitled 2.md",
     "Homework/Untitled.md",
     "Homework/Physics 510 Homework 11.md",
-    "Homework/Physics 510 Homework 9.md",
-    "直角坐标和球坐标微分算子变换.md",
-    "Untitled 1.md",
     "Pictures/Pasted image 20251201014145.png",
     "Pictures/Pasted image 20251201014119.png",
     "Pictures/Pasted image 20251201012537.png",
     "Pictures/Pasted image 20251201012532.png",
-    "理想经典气体，玻色气体与费米气体.md",
-    "Fermi-Dirac statistics 与 Fermi gas.md",
     "Reading notes",
     "Excalidraw",
     "Pictures/31c55fba2a72bf93689505242fc94df3.jpg",

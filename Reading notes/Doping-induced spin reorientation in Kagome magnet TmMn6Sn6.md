@@ -41,9 +41,15 @@ Anisotropy：
 - 在平行于axis和plane方向施加磁场，看哪个方向manetization大。哪个方向大说明哪个方向easy。
 - 若是ferromagnetic，不用外场就能看magnetization。若是anti-ferromagnetic，要加外场才能看magnetization。我们不知道材料是哪种，所以一般加外场。
 ![[Drawing 2025-12-02 22.02.14.excalidraw|center|500]]
+- 为什么cusp代表反铁磁相：高温时有$\chi \propto \frac{1}{T}$ Curie定律。反铁磁相在低温magnetization为零。随着温度升高，这种相逐渐被破坏，从而越来越容易与外场align。最后到临界温度直接相变，遵从Curie定律下降。即：
+![[Drawing 2025-12-02 23.11.14.excalidraw|center|300]]
+- 如果是铁磁相，低温下应该存在较高的magnetization，高温下相变为paramagnetic。所以铁磁相只会有一个cusp。即：	![[Drawing 2025-12-02 23.14.03.excalidraw|center|300]]
 
 
 # Things to learn
 - Heisenberg model single-site anisotropy and Ising-type anisotropy.
 - space group. What is P6/mmm, what are 2c, 2d, 2e sites?
 - DFT
+- Helimagnetic phase transition
+- Neel temperature
+- Curie定律
