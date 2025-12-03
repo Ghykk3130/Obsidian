@@ -559,12 +559,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "磁性.md",
+                "file": "Ising Model.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "磁性"
+              "title": "Ising Model"
             }
           },
           {
@@ -1030,7 +1030,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "磁性",
+                "query": "",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -1041,13 +1041,11 @@
               "title": "Search"
             }
           }
-        ],
-        "currentTab": 3
+        ]
       }
     ],
     "direction": "horizontal",
-    "width": 200,
-    "collapsed": true
+    "width": 200
   },
   "right": {
     "id": "9003d078f8dbc4ed",
@@ -1147,7 +1145,13 @@
   },
   "active": "3d4ccf8c1de58391",
   "lastOpenFiles": [
+    "Schrodinger's and Heisenberg's pictures.md",
+    "Spin以及spinor formalism的基变换.md",
+    "Excalidraw/Drawing 2025-11-23 21.36.13.excalidraw.md",
+    "Homework/Physics 511 Homework 10.md",
     "Reading notes/Doping-induced spin reorientation in Kagome magnet TmMn6Sn6.md",
+    "Excalidraw/Drawing 2025-12-01 00.32.38.excalidraw.md",
+    "Ising Model.md",
     "电荷密度.md",
     "Homework/Physics 510 Homework 5.md",
     "Homework/Physics 510 Homework 4.md",
@@ -1156,7 +1160,6 @@
     "Homework/Physics 510 Homework 1.md",
     "电流与电荷.md",
     "群论.md",
-    "Homework/Physics 511 Homework 10.md",
     "Untitled 2.md",
     "Homework/Untitled.md",
     "Homework/Physics 510 Homework 11.md",
@@ -1171,12 +1174,7 @@
     "Fermi-Dirac statistics 与 Fermi gas.md",
     "Bose-Einstein statistics与BEC.md",
     "Degenerate Fermi Gas.md",
-    "Excalidraw/Drawing 2025-12-01 00.32.38.excalidraw.md",
     "Clebsch-Gordan系数.md",
-    "Homework/Physics 510 Homework 10.md",
-    "Homework/Physics 511 Homework 8.md",
-    "系综.md",
-    "熵.md",
     "Reading notes",
     "Excalidraw",
     "Pictures/31c55fba2a72bf93689505242fc94df3.jpg",

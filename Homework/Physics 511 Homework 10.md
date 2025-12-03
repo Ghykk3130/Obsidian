@@ -62,6 +62,17 @@ $$\begin{align}
 \implies &  - \frac{\hbar^{2}}{2m} \frac{1}{r^{2}} \frac{\partial}{\partial r}\left( r^{2} \frac{\partial}{\partial r}  \right)\psi+  \frac{\hbar^{2}}{mr^{2}}\psi+V\psi=E\psi \\
 \implies & V=E+ \frac{1}{\psi} \frac{\hbar^{2}}{2m}
  \frac{1}{r^{2}} \frac{\partial}{\partial r}\left( r^{2} \frac{\partial}{\partial r}  \right)\psi- \frac{\hbar^{2}}{mr^{2}}\end{align}$$
+ Know that:
+ $$\begin{align}
+\psi(\vec{x}) & =(x+y+3z)f(r) \\
+ & = r(\sin \theta \cos \phi+\sin \theta \sin \phi+3\cos \theta)f(r)
+\end{align}$$
+Then:
+$$\begin{align}
+V & = E+ \frac{1}{(\sin \theta \cos \phi+\sin \theta \sin \phi+3\cos \theta)rf(r)} \cdot(\sin \theta \cos \phi+\sin \theta \sin \phi+3\cos \theta) \frac{\hbar^{2}}{2m} \frac{1}{r^{2}} \frac{\partial}{\partial r}\left( r^{2} \frac{\partial}{\partial r} \right)(rf(r))- \frac{\hbar^{2}}{mr^{2}} \\
+ & = E+  \frac{\hbar^{2}}{2m}\left(  \frac{2}{r^{2}}+ \frac{4f^{'}}{rf}+ \frac{f^{''}}{f} \right)- \frac{\hbar^{2}}{mr^{2}} \\
+ & = E+ \frac{\hbar^{2}}{2m}\left( \frac{4f^{'}}{rf}+ \frac{f^{''}}{f} \right)
+\end{align}$$
 
 # Sakurai 3.25
 ## a.
@@ -95,7 +106,7 @@ L_{-}Y_{1 /2}^{-1 /2}  & \propto \left(\hbar(i\sin \phi-\cos \phi) \frac{\partia
  & = \hbar e^{-i \frac{3}{2}\phi} \frac{1}{\sin^{3/2}\theta}
 \end{align}$$
 So we have:
-$$0=Y_{1 /2}^{-3/ 2}\propto e^{i \frac{3}{2}\phi} \frac{1}{\sin^{3 /2}\theta}$$
+$$0=Y_{1 /2}^{-3/ 2}\propto e^{-i \frac{3}{2}\phi} \frac{1}{\sin^{3 /2}\theta}$$
 which is obviously impossible.
 
 # Sakurai 3.34
@@ -120,7 +131,7 @@ $$\begin{align}
  & = \bra{0\ 0} 0,0\rangle(\ket{0\ 0} -\ket{+\ -} -\ket{-\ +} ) 
 \end{align}$$
 After normalization, we must have:
-$$\ket{0, 0}= \frac{1}{\sqrt{ 3 }}(\ket{0\ 0} -\ket{+\ -} -\ket{-\ +} ) $$
+$$\ket{0, 0}= \frac{1}{\sqrt{ 3 }}( \ket{+\ -} -\ket{0\ 0}+\ket{-\ +} ) $$
 **For $\ket{1,0}$:**
 
 Know that:
@@ -144,11 +155,31 @@ $$\ket{1,0} =\frac{1}{\sqrt{ 2 }}(\ket{+\ -} -\ket{-\ +} )$$
 
 Already given in the problem, that $\ket{1,1}= \frac{1}{\sqrt{ 2 }}(\ket{+\ 0}-\ket{0\ +})$
 
+**For $\ket{1,-1}$:**
+
+We have that:
+$$\begin{align}
+J_{-}\ket{1,0} & = \hbar \sqrt{ 1(1+1)-0(0-1) }\ket{1,-1} \\
+ & = \sqrt{ 2 }\hbar \ket{1,-1}  
+\end{align} $$
+On the other hand:
+$$\begin{align}
+J_{-}\ket{1,0}  & = (J_{1-}+J_{2-}) \frac{1}{\sqrt{ 2 }}(\ket{+\ -} -\ket{-\ +} ) \\
+ & = \frac{1}{\sqrt{ 2 }}(\hbar \sqrt{ 1(1+1)-1(1-1) }\ket{0\ -} -\hbar \sqrt{ 1(1+1)-1(1-1) }\ket{- \\
+ 0} ) \\
+ & = \hbar(\ket{0\ -} -\ket{-\ 0} )
+\end{align}$$
+Then:
+$$\ket{1,-1}= \frac{1}{\sqrt{ 2 }}(\ket{0\ -} -\ket{-
+ 0} ) $$
+
 **For $\ket{2,2}$:**
 
 Know that $\ket{2,2}$ must be a linear combination of $\ket{+\ +}$. So after normalization, I must have:
 $$\ket{2,2} =\ket{+
 \ +} $$
+
+
 **For $\ket{2,1}$:**
 
 We have:
@@ -164,7 +195,9 @@ J_{-}\ket{2,2}  & = (J_{1-}+J_{2-})\ket{+\ +}  \\
 \end{align}$$
 Then we have:
 $$\ket{2,1} = \frac{1}{\sqrt{ 2 }}(\ket{0\ +}+\ket{+
- \ 0} )$$**For $\ket{2,0}$:**
+ \ 0} )$$
+ 
+**For $\ket{2,0}$:**
 
 We have:
 $$\begin{align}

@@ -109,15 +109,17 @@ $$H=- \mu B \sum_{i}S_{i}^z-J\sum_{\langle i,j\rangle}S_{i}^zS_{j}^z$$
 
 考虑：
 $$\begin{align}
-H & = -\mu B\sum_{i }S_{i}^z-J\sum_{i}S_{i}^z\langle S_{}^z \rangle \\
- & = -\mu \sum_{i}(B+J\langle S_{}^z\rangle)S_{i}^z
+H & = -\mu B\sum_{i }S_{i}^z-J\sum_{i}S_{i}^z\mathcal{z}\langle S_{}^z \rangle \\
+ & = -\mu \sum_{i}(B+n_{D}J\langle S_{}^z\rangle)S_{i}^z
 \end{align}$$
-于是可以将$B+J\langle S_{}^z\rangle$视为一个等效的平均场。于是现在问题和无耦合自旋系统一样。于是显然：
-$$M=n\mu \tanh(z\beta \mu (B+J\langle S^z\rangle))$$
+其中，$n_{D}$为邻近离子数。
+
+于是可以将$B+n_{D}J\langle S_{}^z\rangle$视为一个等效的平均场。于是现在问题和无耦合自旋系统一样。于是显然：
+$$M=n\mu \tanh(\beta \mu (B+n_{D}J\langle S^z\rangle))$$
 我们可以反过来求解$\langle S^z\rangle$。我们知道：
 $$M=n\mu \langle S^z\rangle=n\mu  \langle S^z\rangle$$
 于是必有：
-$$\langle S^z\rangle=\tanh(z\beta \mu (B+J\langle S^z\rangle))$$
+$$\langle S^z\rangle=\tanh(\beta \mu (B+n_{D}J\langle S^z\rangle))$$
 
 
 
