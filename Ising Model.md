@@ -120,14 +120,16 @@ $$M=n\mu \tanh(\beta \mu (B+n_{D}J\langle S^z\rangle))$$
 $$M=n\mu \langle S^z\rangle=n\mu  \langle S^z\rangle$$
 于是必有：
 $$\langle S^z\rangle=\tanh(\beta \mu (B+n_{D}J\langle S^z\rangle))$$
-
-
-
-
-
-
 如果要考虑自发磁化，则令外场$B=0$。则需要解：
-$$\langle \sigma \rangle=\tanh(z\beta J\langle \sigma\rangle)$$
+$$\langle S^z \rangle=\tanh(n_{D}\beta J\langle S^z\rangle)$$
+
+
+
+
+
+
+
+
 通过画图容易看出，若$\beta Jz<1$，则只有$\langle \sigma\rangle=0$一个解。若$\beta Jz>1$，则有$\langle \sigma \rangle=0,\pm \sigma_{0}$三个解。其中$\sigma_{0}$代表方程非零零点。容易证明$\langle \sigma\rangle=0$的解自由能为极大，不能稳定平衡。故取$\langle \sigma\rangle=\pm \sigma_{0}$。
 
 对于anti-ferromagnetic物体，$J<0$，则无论如何$\langle \sigma \rangle$都为零。任何温度下都没有自发磁化。
