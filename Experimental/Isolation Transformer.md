@@ -1,0 +1,3 @@
+## Features
+1. Old transformer: at low frequencies, noise in channel B. Channel A is clean. The difference is clean. The critical frequency: roughly $130 KHz$. Below the critical frequency, noise in channel B. Above $130 KHz$, small noise. The shield is connected to the secondary ground.  
+2. New transformer: clean signal in both channel A and channel B within $100K Hz \sim 2 M Hz$ . The shield is connected to the primary ground. 

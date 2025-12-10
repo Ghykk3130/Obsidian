@@ -1,0 +1,1305 @@
+{
+  "main": {
+    "id": "25ec0771b05938a9",
+    "type": "split",
+    "children": [
+      {
+        "id": "fe51d946568dd957",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "56bbd0cf5c839a67",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Homework/Physics 510 Homework 4.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Physics 510 Homework 4"
+            }
+          },
+          {
+            "id": "37ba6094ead8218a",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Lie Algebras.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Lie Algebras"
+            }
+          },
+          {
+            "id": "301b486ee3fc3ede",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Lagrangian Formulation of EM.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Lagrangian Formulation of EM"
+            }
+          },
+          {
+            "id": "54aef33fbb5a26c8",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Homework/Physics 511 Homework 4.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Physics 511 Homework 4"
+            }
+          },
+          {
+            "id": "588656ab5f66e6ad",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Hamilton原理与Lagrange方程.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Hamilton原理与Lagrange方程"
+            }
+          },
+          {
+            "id": "1f5d1c9fe520f12e",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Homework/Physics 510 Homework 10.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Physics 510 Homework 10"
+            }
+          },
+          {
+            "id": "fe8fd3df5e2fe02a",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Homework/Physics 510 Homework 10.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Physics 510 Homework 10"
+            }
+          },
+          {
+            "id": "94e08fe20269ddb7",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Homework/Physics 510 Homework 10.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Physics 510 Homework 10"
+            }
+          },
+          {
+            "id": "8b6dd428a81fc6bf",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Homework/Physics 510 Homework 10.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Physics 510 Homework 10"
+            }
+          },
+          {
+            "id": "3d9db392e24fb82d",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Homework/Physics 510 Homework 10.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Physics 510 Homework 10"
+            }
+          },
+          {
+            "id": "b8769aaa2675fc68",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Homework/Physics 510 Homework 10.md",
+                "mode": "preview",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Physics 510 Homework 10"
+            }
+          },
+          {
+            "id": "e264e6127a032bc2",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Homework/Physics 511 Homework 8.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Physics 511 Homework 8"
+            }
+          },
+          {
+            "id": "e487fe6da2147405",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Homework/Physics 511 Homework 9.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Physics 511 Homework 9"
+            }
+          },
+          {
+            "id": "fd339bb33acaa0b7",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Clebsch-Gordan系数.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Clebsch-Gordan系数"
+            }
+          },
+          {
+            "id": "63567ea049b8275a",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Solid state.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Solid state"
+            }
+          },
+          {
+            "id": "91e2d20da49ae9a0",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Solid state.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Solid state"
+            }
+          },
+          {
+            "id": "7d7ea711c4666c8f",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Solid state.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Solid state"
+            }
+          },
+          {
+            "id": "9d1b8acfc90ef555",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "WKB.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "WKB"
+            }
+          },
+          {
+            "id": "3754dd67b264fb86",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Lagrangian Formulation of EM.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Lagrangian Formulation of EM"
+            }
+          },
+          {
+            "id": "4260044b550d1306",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Solid state.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Solid state"
+            }
+          },
+          {
+            "id": "fccee8fa5b5d8a11",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Solid state.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Solid state"
+            }
+          },
+          {
+            "id": "f616631780d4b176",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Solid state.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Solid state"
+            }
+          },
+          {
+            "id": "c4d868605b00b9b4",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Solid state.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Solid state"
+            }
+          },
+          {
+            "id": "89b807d0a4b7f628",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Solid state.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Solid state"
+            }
+          },
+          {
+            "id": "d176808dbb5c2aac",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "液滴.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "液滴"
+            }
+          },
+          {
+            "id": "079b07d2a8c9132b",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Thermal Transport.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Thermal Transport"
+            }
+          },
+          {
+            "id": "f47caf48639c9333",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Thermal Transport.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Thermal Transport"
+            }
+          },
+          {
+            "id": "14a9a71c26eaaf06",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Hamiltonian Formulation of EM.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Hamiltonian Formulation of EM"
+            }
+          },
+          {
+            "id": "c13bf0b0d8f05da1",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Homework/Physics 511 Midterm Practice.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Physics 511 Midterm Practice"
+            }
+          },
+          {
+            "id": "6b102e307d9531e8",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "统计力学的数学基础.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "统计力学的数学基础"
+            }
+          },
+          {
+            "id": "d437fef27e565796",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Clebsch-Gordan系数.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Clebsch-Gordan系数"
+            }
+          },
+          {
+            "id": "38afd69397438372",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Clebsch-Gordan系数.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Clebsch-Gordan系数"
+            }
+          },
+          {
+            "id": "85f040d1dad068e4",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Clebsch-Gordan系数.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Clebsch-Gordan系数"
+            }
+          },
+          {
+            "id": "ff4e062dcf2b9435",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Homework/Physics 510 Homework 10.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Physics 510 Homework 10"
+            }
+          },
+          {
+            "id": "8d7178dc09efbe0a",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Bose-Einstein statistics与BEC.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Bose-Einstein statistics与BEC"
+            }
+          },
+          {
+            "id": "75a02b7ecc4f874b",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Homework/Physics 510 Homework 11.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Physics 510 Homework 11"
+            }
+          },
+          {
+            "id": "e6778cb25e133ee2",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Fermi-Dirac statistics 与 Fermi gas.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Fermi-Dirac statistics 与 Fermi gas"
+            }
+          },
+          {
+            "id": "f17091229a7e43dd",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Untitled 1.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Untitled 1"
+            }
+          },
+          {
+            "id": "6e7234901b1694f8",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "群论.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "群论"
+            }
+          },
+          {
+            "id": "3d4ccf8c1de58391",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "N维球.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "N维球"
+            }
+          },
+          {
+            "id": "f8886af57a20a497",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Reading notes/Doping-induced spin reorientation in Kagome magnet TmMn6Sn6.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Doping-induced spin reorientation in Kagome magnet TmMn6Sn6"
+            }
+          },
+          {
+            "id": "778f53de21637232",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Ising Model.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Ising Model"
+            }
+          },
+          {
+            "id": "4f19a9abfae6bc99",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Reading notes/Doping-induced spin reorientation in Kagome magnet TmMn6Sn6.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Doping-induced spin reorientation in Kagome magnet TmMn6Sn6"
+            }
+          },
+          {
+            "id": "5924b76ce31c8b0f",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Reading notes/Doping-induced spin reorientation in Kagome magnet TmMn6Sn6.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Doping-induced spin reorientation in Kagome magnet TmMn6Sn6"
+            }
+          },
+          {
+            "id": "956f3debece47ec5",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Experimental/Wye-Delta Transformation.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Wye-Delta Transformation"
+            }
+          },
+          {
+            "id": "a562b674a57e4a88",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "相对论动力学.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "相对论动力学"
+            }
+          },
+          {
+            "id": "727a365c9af8f118",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Transport.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Transport"
+            }
+          },
+          {
+            "id": "aa22956207d1ef4a",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Homework/Physics 511 Homework 0.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Physics 511 Homework 0"
+            }
+          },
+          {
+            "id": "08c7d33952d503b6",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Experimental/Amplifier.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Amplifier"
+            }
+          },
+          {
+            "id": "47e5521160371fc9",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "系综.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "系综"
+            }
+          },
+          {
+            "id": "16d87e68e458b177",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "系综.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "系综"
+            }
+          },
+          {
+            "id": "0e2d3685a7b6e561",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Homework/Physics 511 Homework 5.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Physics 511 Homework 5"
+            }
+          },
+          {
+            "id": "98ac0da1410c07b6",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Homework/Physics 511 Midterm Practice.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Physics 511 Midterm Practice"
+            }
+          },
+          {
+            "id": "67624db040d7c65f",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Homework/Physics 511 Homework 2.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Physics 511 Homework 2"
+            }
+          },
+          {
+            "id": "5a9d111c5004547c",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "转动生成元.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "转动生成元"
+            }
+          },
+          {
+            "id": "18ae571ff538f3a8",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Symmetries in EM.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Symmetries in EM"
+            }
+          },
+          {
+            "id": "b607c765011fb65c",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Homework/Physics 511 Midterm Practice.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Physics 511 Midterm Practice"
+            }
+          },
+          {
+            "id": "fe5d7d6ff128e76c",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "相对论动力学.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "相对论动力学"
+            }
+          },
+          {
+            "id": "5630b76fc5c22bf2",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "最大功.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "最大功"
+            }
+          },
+          {
+            "id": "ed619e26d6227625",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Homework/Physics 510 Homework 6.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Physics 510 Homework 6"
+            }
+          },
+          {
+            "id": "a2acb124761d7ed7",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Experimental/Evaporator.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Evaporator"
+            }
+          },
+          {
+            "id": "222de055deb5154f",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Experimental/FET Amplifier.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "FET Amplifier"
+            }
+          },
+          {
+            "id": "ce60a8e37c9c9b85",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Homework/Physics 510 Homework 7.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Physics 510 Homework 7"
+            }
+          },
+          {
+            "id": "fba93a1e3cb5dfa1",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "熵.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "熵"
+            }
+          },
+          {
+            "id": "ac390b852d7d3569",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Untitled.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Untitled"
+            }
+          },
+          {
+            "id": "6f434c46e6e23704",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "平动生成元.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "平动生成元"
+            }
+          },
+          {
+            "id": "fef68e92417a19f6",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "WKB.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "WKB"
+            }
+          },
+          {
+            "id": "5816e82273945244",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Experimental/ECDL Comments.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "ECDL Comments"
+            }
+          },
+          {
+            "id": "2bdace410aa223c6",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Experimental/ECDL Comments.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "ECDL Comments"
+            }
+          },
+          {
+            "id": "34b072f4916614fd",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Homework/Physics 511 Homework 6.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Physics 511 Homework 6"
+            }
+          },
+          {
+            "id": "ead4795b615bc0f6",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "系综（未完成）.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "系综（未完成）"
+            }
+          },
+          {
+            "id": "f0f5c7ac89b7c1b8",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Homework/Physics 510 Homework 8.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Physics 510 Homework 8"
+            }
+          },
+          {
+            "id": "c19a8787e3b286f1",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "电流与电荷.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "电流与电荷"
+            }
+          },
+          {
+            "id": "848c592c553b8003",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Experimental/Exfoliation.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Exfoliation"
+            }
+          },
+          {
+            "id": "2f8f46ea4d5c0198",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Homework/Physics 511 Midterm Practice.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Physics 511 Midterm Practice"
+            }
+          },
+          {
+            "id": "b2f00dc48440ba2e",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Homework/Physics 510 Homework 9.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Physics 510 Homework 9"
+            }
+          },
+          {
+            "id": "08b59f513f704530",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Homework/Physics 510 Homework 10.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Physics 510 Homework 10"
+            }
+          }
+        ],
+        "currentTab": 48
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "0414c4be183bcb2d",
+    "type": "split",
+    "children": [
+      {
+        "id": "10cbc4e6ffa94a26",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "0bd5adf6a54a04e2",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical",
+                "autoReveal": false
+              },
+              "icon": "lucide-folder-closed",
+              "title": "Files"
+            }
+          },
+          {
+            "id": "e17d86fcb6b11eb3",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "系综.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "系综"
+            }
+          },
+          {
+            "id": "496a7e97ad599bfd",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "Bookmarks"
+            }
+          },
+          {
+            "id": "f69ba2cf946ad0e0",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "Search"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 200
+  },
+  "right": {
+    "id": "9003d078f8dbc4ed",
+    "type": "split",
+    "children": [
+      {
+        "id": "a1dac440efa3dc20",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "a39b5f6c1df34942",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "Thermal Transport.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "Backlinks for Thermal Transport"
+            }
+          },
+          {
+            "id": "3c7120517052368d",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "运动积分.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "Outgoing links from 运动积分"
+            }
+          },
+          {
+            "id": "6ceac420a84e8c1d",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              },
+              "icon": "lucide-tags",
+              "title": "Tags"
+            }
+          },
+          {
+            "id": "d6c613677debb448",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "Degenerate Fermi Gas.md"
+              },
+              "icon": "lucide-list",
+              "title": "Outline of Degenerate Fermi Gas"
+            }
+          },
+          {
+            "id": "0b9f087504e74676",
+            "type": "leaf",
+            "state": {
+              "type": "git-view",
+              "state": {},
+              "icon": "git-pull-request",
+              "title": "Source Control"
+            }
+          }
+        ],
+        "currentTab": 4
+      }
+    ],
+    "direction": "horizontal",
+    "width": 200
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "bases:Create new base": false,
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false,
+      "obsidian-git:Open Git source control": false,
+      "obsidian-excalidraw-plugin:New drawing": false
+    }
+  },
+  "active": "08c7d33952d503b6",
+  "lastOpenFiles": [
+    "Pictures/Pasted image 20251207224012.png",
+    "Untitled.md",
+    "Pictures/Pasted image 20251209161120.png",
+    "Pictures/Pasted image 20251209154922.png",
+    "Pictures/Pasted image 20251209152146.png",
+    "Pictures/Pasted image 20251209151847.png",
+    "Pictures/Pasted image 20251209151656.png",
+    "Pictures/Pasted image 20251209150613.png",
+    "Pictures/Pasted image 20251209145732.png",
+    "Pictures/Pasted image 20251209144613.png",
+    "Untitled 1.md",
+    "Homework/Physics 510 Homework 12.md",
+    "Pictures/Pasted image 20251208222816.png",
+    "Pictures/Pasted image 20251208220956.png",
+    "Ising Model.md",
+    "Homework/Physics 511 Homework 0.md",
+    "Clebsch-Gordan系数.md",
+    "Bose-Einstein statistics与BEC.md",
+    "黑体辐射.md",
+    "Reading notes/Doping-induced spin reorientation in Kagome magnet TmMn6Sn6.md",
+    "Transport.md",
+    "Solid state.md",
+    "Excalidraw/Drawing 2025-12-06 20.20.40.excalidraw.md",
+    "Excalidraw/Drawing 2025-11-22 00.07.40.excalidraw.md",
+    "Hamilton流.md",
+    "相对论动力学.md",
+    "系综（未完成）.md",
+    "Homework/Untitled.md",
+    "Homework/Physics 511 Homework 10.md",
+    "Untitled 2.md",
+    "Experimental/Thermoelectric effect of.md",
+    "Pictures/Wu_ContemporaryChineseArt.pdf",
+    "Wu_ContemporaryChineseArt.pdf",
+    "Experimental/Thermoelectric code.md",
+    "Experimental/Wye-Delta Transformation.md",
+    "Hilbert空间.md",
+    "Excalidraw/Drawing 2025-12-02 23.14.03.excalidraw.md",
+    "Excalidraw/Drawing 2025-12-02 23.11.14.excalidraw.md",
+    "Reading notes",
+    "Excalidraw",
+    "Homework",
+    "Pictures",
+    "Experimental",
+    "转动生成元"
+  ]
+}
