@@ -1,3 +1,12 @@
+
+绘景即Hilbert空间中矢量的变换方式。Hilbert空间中矢量有两种变换方式：
+- $\ket{\psi}\rightarrow\mathscr{U}\ket{\psi}$，基矢量$\ket{a}$不变。
+- $\ket{\psi}$不变，基矢量$\ket{a}\rightarrow \mathscr{U}^{'}\ket{a}$。
+
+若矢量$\ket{\psi}$遵从第一种变换方式，则称$\ket{\psi}$为Schrodinger绘景下的矢量，记为$\ket{\psi}_{S}$。若矢量$\ket{\psi}$遵从第二种变换方式，则称$\ket{\psi}$为Heisenberg绘景下的矢量，记为$\ket{\psi}_{H}$。
+## Remark
+注意，$\ket{\psi}_{S}$这个notation包含两条信息，第一条是这个矢量为$\ket{\psi}$，第二条是这个矢量遵从Schrodinger绘景的变换方式。
+
 # 1. Schrodinger's picture
 
 我们先考虑接受Shrodinger绘景。即：
@@ -25,6 +34,8 @@ $$X^{(H)}(t,t_{0})=\mathscr{U}^{^{\dagger}}(t,t_{0})X^{(S)}\mathscr{U}(t,t_{0})$
 >$$X^{(H)}=\mathscr{U}^{\dagger}X^{(S)}\mathscr{U}$$
 
 在$H^{(S)}$不存在time dependence时，显然time evolution operator只取决于time interval长度，不取决于起始时间。于是有时我们直接写$\mathscr{U}(t),X^{(H)}(t)$
+
+
 ## Ex:
 对于Hamiltonian，若$H^{(S)}$不存在time dependence，那么$\mathscr{U}(t,t_{0})=\exp\left( - \frac{i}{\hbar}H^{(S)}(t-t_{0}) \right)$。那么：
 $$H^{(H)}=\mathscr{U}^{^{\dagger}}H^{(S)}\mathscr{U}=H^{(S)}$$
