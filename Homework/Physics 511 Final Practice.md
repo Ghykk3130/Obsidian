@@ -65,3 +65,7 @@ E & = \alpha \frac{\hbar^{2}}{2}(j(j+1)-l(l+1)-s(s+1)) \\
 So we have:
 $$E_{1}= -2\alpha \hbar^{2},E_{2}=-\alpha \hbar^{2},E_{3}=\alpha \hbar^{2}$$
 ## c)
+The state we want is $\ket{j=1,m=-1}$. This state has projections on $\ket{m_{l}=0,m_{s}=-1},\ket{m_{l}=-1,m_{s}=0}$. Easy to know from CG coefficient that:
+$$\begin{align}
+\ket{j=1,m=-1} = \frac{1}{\sqrt{ 2 }}\ket{m_{l}=0,m_{s}=-1}- \frac{1}{\sqrt{ 2 }}\ket{m_{l}=-1,m_{s}=0}  
+\end{align}$$
