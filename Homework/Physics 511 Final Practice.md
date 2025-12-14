@@ -1,4 +1,4 @@
-# 2.
+# 3.
 ## a)
 Pick $\ket{a}$ and extend to a complete orthonormal basis. Then:
 $$\hat{P}_{\bar{a}}= \sum_{\beta\neq a}\ket{\beta}\bra{\beta}  +0 \ket{a} \bra{a} $$
@@ -32,3 +32,22 @@ $$\begin{align}
 \end{align}$$
 Then the probability to get $\hbar$ is $\cos^4 \frac{\theta}{2}$, the probability to get $-\hbar$ is $\sin^4 \frac{\theta}{2}$, the probability to get $0$ is $\frac{1}{2}\sin ^{2}\theta$
 
+# 4.
+## a)
+Let $x=x^{'}$. We have that:
+$$\begin{align}
+K(0,t^{'};0,0) & = \sqrt{ \frac{m\omega}{\pi \hbar} } \frac{1}{\sqrt{ e^{i\omega t^{'}}-e^{-i\omega t^{'}} }} \\
+ & = \sqrt{ \frac{m\omega}{\pi \hbar} } e^{- \frac{i\omega t^{'}}{2}} \sum_{k=0}^{\infty} \binom{-\frac{1}{2}}{k} (-e^{-2i\omega t^{'}})^k
+\end{align}
+$$
+Collecting the exponents, and set it equal to $- \frac{i}{\hbar}E_{k}t^{'}$, we get:
+$$- \frac{i\omega t^{'}}{2}- 2ki\omega t^{'}=- \frac{i}{\hbar}E_{k}t^{'}\implies E_{k}=\left( \frac{1}{2}+2k \right)\hbar \omega$$
+## b)
+Using the notation in the problem, we have:
+$$K(0,t^{'};0,0)= \sqrt{ \frac{m\omega}{\pi \hbar} }\sum_{n=0}^{\infty}c_{n}\exp\left( - \frac{i}{\hbar}\left( \frac{1}{2}+2n \right)\hbar \omega t^{'} \right)$$
+We only need to set $n=1$. Then we get:
+$$\sqrt{ \frac{m\omega}{\pi \hbar} } \frac{1}{2} \exp\left( - \frac{i}{\hbar} \frac{5}{2}\hbar \omega t^{'} \right)$$
+OTOH, I know that this is equal to:
+$$|\psi_{2}(0)|^{2}\exp\left( - \frac{i}{\hbar} \frac{5}{2}\hbar \omega t^{'} \right)$$
+So:
+$$|\psi_{2}(0)|^{2}= \frac{1}{2}\sqrt{  \frac{m\omega}{\pi \hbar} }$$
