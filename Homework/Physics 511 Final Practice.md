@@ -55,4 +55,13 @@ $$|\psi_{2}(0)|^{2}= \frac{1}{2}\sqrt{  \frac{m\omega}{\pi \hbar} }$$
 ## a)
 Proton has $\frac{1}{2}$ spin. We can observe $\frac{3}{4}\hbar^{2}, \frac{15}{4}\hbar^{2}$.
 ## b)
- 
+Let $\vec{J}=\vec{L}+\vec{S}$. Then:
+$$\vec{L}\cdot \vec{S}= \frac{1}{2}(J^{2}-L^{2}-S^{2})$$
+The ket $\ket{l,s,j,m}$ diagonalize this operator. Then the eigenvalues are:
+$$\begin{align}
+E & = \alpha \frac{\hbar^{2}}{2}(j(j+1)-l(l+1)-s(s+1)) \\
+ & = \alpha \frac{\hbar^{2}}{2}(j(j+1)-4)
+\end{align}$$
+So we have:
+$$E_{1}= -2\alpha \hbar^{2},E_{2}=-\alpha \hbar^{2},E_{3}=\alpha \hbar^{2}$$
+## c)
