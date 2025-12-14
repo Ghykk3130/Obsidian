@@ -44,7 +44,7 @@ Translation: $\mathscr{T}= \exp\left( - \frac{i}{\hbar}px \right)$
 
 SHO: 
 - $$a= \sqrt{ \frac{m\omega}{2\hbar} }\left( x+ \frac{ip}{m\omega} \right)$$
-- $$a\ket{n} =\sqrt{ n }\ket{n-1},a^{\dagger}\ket{n} =\sqrt{ n+1 }\ket{n+1}  $$
+- $$a\ket{n} =\sqrt{ n }\ket{n-1},a^{\dagger}\ket{n} =\sqrt{ n+1 }\ket{n+1} ,[a,a^{\dagger}]=1 $$
 Pictures: $X_{H}=\mathscr{U}^{\dagger}X_{S}\mathscr{U}$, $\frac{dX}{dt}= \frac{1}{i\hbar}[X,H]$
 # 4. Diagonalization
 $$\begin{align}
