@@ -599,12 +599,14 @@
             "id": "f9acfa37820a5a62",
             "type": "leaf",
             "state": {
-              "type": "excalidraw",
+              "type": "markdown",
               "state": {
-                "file": "Excalidraw/Drawing 2025-12-13 00.38.44.excalidraw.md"
+                "file": "Spherical Tensor.md",
+                "mode": "source",
+                "source": false
               },
-              "icon": "excalidraw-icon",
-              "title": "Drawing 2025-12-13 00.38.44.excalidraw"
+              "icon": "lucide-file",
+              "title": "Spherical Tensor"
             }
           },
           {
@@ -613,12 +615,40 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Ising Model.md",
+                "file": "Spherical Tensor.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Ising Model"
+              "title": "Spherical Tensor"
+            }
+          },
+          {
+            "id": "52678ff571dad894",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Spherical Tensor.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Spherical Tensor"
+            }
+          },
+          {
+            "id": "109aa5797c7ac12e",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "张量算子.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "张量算子"
             }
           },
           {
@@ -1126,7 +1156,7 @@
             }
           }
         ],
-        "currentTab": 42
+        "currentTab": 45
       }
     ],
     "direction": "vertical"
@@ -1197,7 +1227,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 200,
+    "collapsed": true
   },
   "right": {
     "id": "9003d078f8dbc4ed",
@@ -1296,11 +1327,17 @@
       "obsidian-excalidraw-plugin:New drawing": false
     }
   },
-  "active": "f9acfa37820a5a62",
+  "active": "109aa5797c7ac12e",
   "lastOpenFiles": [
     "Spherical Tensor.md",
-    "Excalidraw/Drawing 2025-12-13 00.38.44.excalidraw.md",
+    "Clebsch-Gordan系数.md",
     "张量算子.md",
+    "Excalidraw/Drawing 2025-12-13 17.02.26.excalidraw.md",
+    "Excalidraw/Drawing 2025-11-22 02.48.48.excalidraw.md",
+    "Excalidraw/Drawing 2025-12-13 18.32.35.excalidraw.md",
+    "Excalidraw/Drawing 2025-12-13 01.04.34.excalidraw.md",
+    "Excalidraw/Drawing 2025-12-13 00.38.44.excalidraw.md",
+    "Excalidraw/Drawing 2025-11-22 00.07.40.excalidraw.md",
     "Reading notes/Doping-induced spin reorientation in Kagome magnet TmMn6Sn6.md",
     "Untitled 2.md",
     "Pictures/Pasted image 20251212204220.png",
@@ -1315,7 +1352,6 @@
     "转动的表示.md",
     "Schrodinger's and Heisenberg's pictures.md",
     "张量分析.md",
-    "Clebsch-Gordan系数.md",
     "Experimental/Evaporator.md",
     "Experimental/Amplifier.md",
     "Pictures/Pasted image 20251207224012.png",
@@ -1329,11 +1365,6 @@
     "Homework/Physics 510 Homework 12.md",
     "Ising Model.md",
     "Homework/Physics 511 Homework 0.md",
-    "Bose-Einstein statistics与BEC.md",
-    "黑体辐射.md",
-    "Transport.md",
-    "Solid state.md",
-    "Excalidraw/Drawing 2025-12-06 20.20.40.excalidraw.md",
     "Pictures/Wu_ContemporaryChineseArt.pdf",
     "Wu_ContemporaryChineseArt.pdf",
     "Reading notes",

@@ -47,6 +47,10 @@ $$\begin{align}
 约掉$\hbar$即可。
 >[!Right]
 >$\blacksquare$
+
+>[!Note] Proposition 3
+>$\bra{j_{1},j_{2},m_{1},m_{2}}j_{1},j_{2},j,m\rangle$ is nonzero only when $|j_{1}-j_{2}|\leq j \leq j_{1}+j_{2}$.
+
 # 2. $\vec{S}_{1}+\vec{S}_{2}$
 
 我们知道$\vec{S}_{1},\vec{S}_{2}$各自构成一个$SO(3)$的二维不可约表示。于是它们Hilbert空间的张量积构成一个$SO(3)$的四维不可约表示。
