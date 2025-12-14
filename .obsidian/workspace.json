@@ -657,12 +657,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Homework/Physics 511 Final Practice.md",
+                "file": "张量算子.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Physics 511 Final Practice"
+              "title": "张量算子"
             }
           },
           {
@@ -1343,6 +1343,8 @@
   },
   "active": "ca5fd49f05f39fbc",
   "lastOpenFiles": [
+    "Spherical Tensor.md",
+    "Homework/Physics 511 Final Practice.md",
     "Homework/Physics 511 Homework 7.md",
     "Homework/Physics 511 Homework 6.md",
     "Homework/Physics 511 Homework 4.md",
@@ -1350,14 +1352,12 @@
     "Homework/Physics 511 Homework 2.md",
     "Homework/Physics 511 Homework 1.md",
     "Homework/Physics 511 Cheat sheet.md",
-    "Homework/Physics 511 Final Practice.md",
     "Homework/Physics 511 Homework 0.md",
     "Homework/Physics 511 Homework 8.md",
     "Homework/Physics 510 Homework 11.md",
     "Homework/Physics 510 Homework 12.md",
     "Homework/Physics 511 Midterm Practice.md",
     "张量算子.md",
-    "Spherical Tensor.md",
     "Clebsch-Gordan系数.md",
     "Excalidraw/Drawing 2025-12-13 17.02.26.excalidraw.md",
     "Excalidraw/Drawing 2025-11-22 02.48.48.excalidraw.md",
