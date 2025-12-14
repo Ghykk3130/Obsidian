@@ -51,3 +51,8 @@ OTOH, I know that this is equal to:
 $$|\psi_{2}(0)|^{2}\exp\left( - \frac{i}{\hbar} \frac{5}{2}\hbar \omega t^{'} \right)$$
 So:
 $$|\psi_{2}(0)|^{2}= \frac{1}{2}\sqrt{  \frac{m\omega}{\pi \hbar} }$$
+# 5.
+## a)
+Proton has $\frac{1}{2}$ spin. We can observe $\frac{3}{4}\hbar^{2}, \frac{15}{4}\hbar^{2}$.
+## b)
+ 
