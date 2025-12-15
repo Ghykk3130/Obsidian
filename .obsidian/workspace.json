@@ -671,12 +671,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "固-气蒸气压.md",
+                "file": "N维球.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "固-气蒸气压"
+              "title": "N维球"
             }
           },
           {
@@ -1255,7 +1255,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 200,
+    "collapsed": true
   },
   "right": {
     "id": "9003d078f8dbc4ed",
@@ -1356,11 +1357,14 @@
   },
   "active": "cc8f7c6f06ea6497",
   "lastOpenFiles": [
-    "液滴.md",
+    "系综.md",
+    "算子平均值的含义.md",
+    "量子统计力学基础.md",
+    "固体热容.md",
     "固-气蒸气压.md",
+    "液滴.md",
     "Homework/Physics 510 Homework 8.md",
     "Homework/Physics 510 Homework 7.md",
-    "固体热容.md",
     "Bose-Einstein statistics与BEC.md",
     "Homework/Physics 510 Homework 10.md",
     "理想经典气体，玻色气体与费米气体.md",
@@ -1379,9 +1383,6 @@
     "Homework/Physics 511 Homework 10.md",
     "Homework/Physics 511 Homework 6.md",
     "Homework/Physics 511 Homework 7.md",
-    "Baker-Campbell-Hausdorff Formula.md",
-    "Thomas进动.md",
-    "Spin以及spinor formalism的基变换.md",
     "Pictures/Pasted image 20251212204220.png",
     "Pictures/Pasted image 20251212204200.png",
     "Pictures/Pasted image 20251207224012.png",
