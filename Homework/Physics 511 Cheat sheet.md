@@ -60,3 +60,23 @@ $$\begin{align}
 $$\oint d\vec{q}\cdot \vec{p}=2\pi \hbar(n+\gamma),\text{ for some }\gamma\in \mathbb{R}$$
 For WKB we have:
 $$\int_{x_{1}}^{x_{2}}\sqrt{ 2m(E-V) }dx=\pi \hbar\left( n+ \frac{1}{2} \right)$$
+<div style="text-align:center">
+<img src="Pasted image 20251029200725.png", width="400">
+</div>
+
+$$\begin{align}
+ & \text{transition around }x_{1}: \frac{1}{(V-E)^{1/4}}\exp\left(  -\frac{1}{\hbar}\int_{x_{}}^{x_{1}}dx^{'}\sqrt{ 2m(V-E) }  \right) \rightarrow \frac{2}{(E-V)^{1/4}}\cos\left(  \frac{1}{\hbar}\int_{x_{1}}^{x}dx^{'}\sqrt{ 2m(E-V) } - \frac{\pi}{4}\right) \\
+ & \text{transition around }x_{2}: \frac{2}{(E-V)^{1/4}}\cos\left(  \frac{1}{\hbar}\int_{x_{2}}^{x_{}}dx^{'}\sqrt{ 2m(E-V) } + \frac{\pi}{4}\right)\rightarrow \frac{1}{(V-E)^{1/4}}\exp\left( - \frac{1}{\hbar}\int_{x_{2}}^{x}dx^{'}\sqrt{ 2m(V-E) } \right)
+\end{align}$$
+WKB solution:
+Write Schrodinger's equation as:
+$$\frac{d^{2}}{dx^{2}}\psi+k^{2}(x)\psi=0$$
+
+$$\psi_{\pm}= \frac{C_{\pm}}{\sqrt{ k(x) }}\exp\left( \pm i \int^xdx^{'}k(x^{'}) \right)$$
+Linear solution:
+Write the Schrodinger's equation as:
+$$\frac{d^{2}}{d\xi^{2}}\psi-\xi \psi=0,\xi=\left( - \frac{2mV^{'}}{\hbar^{2}} \right)^{1/3}(x_{0}-x)$$
+$$\psi=Ai(\xi)\rightarrow \left\{\begin{align}
+ & \frac{1}{2\sqrt{ \pi }}\xi^{-1/4}\exp\left( - \frac{2}{3}\xi^{3/2} \right),\xi\rightarrow \infty \\
+ & \frac{1}{\sqrt{ \pi }}|\xi |^{-1/4}\cos\left(  \frac{2}{3}|z|^{3/2}- \frac{\pi}{4} \right),\xi\rightarrow-\infty
+\end{align}\right.$$

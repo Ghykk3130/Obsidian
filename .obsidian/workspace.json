@@ -1226,7 +1226,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "WKB",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -1241,8 +1241,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200,
-    "collapsed": true
+    "width": 200
   },
   "right": {
     "id": "9003d078f8dbc4ed",
@@ -1341,7 +1340,7 @@
       "obsidian-excalidraw-plugin:New drawing": false
     }
   },
-  "active": "ca5fd49f05f39fbc",
+  "active": "0bd5adf6a54a04e2",
   "lastOpenFiles": [
     "WKB.md",
     "Homework/Physics 511 Cheat sheet.md",
