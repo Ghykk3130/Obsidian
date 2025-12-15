@@ -32,6 +32,7 @@ So:
 $$\int dk e^{ikx}=2\pi\delta(x)$$
 # 3. Some formulas
 $$e^ABe^{-A}=B+ [A,B]+ \frac{1}{2!}[A,[A,B]]+\dots$$
+$$e^Ae^B=\exp\left( A+B+ \frac{1}{2}[A,B]+ \frac{1}{12}[A,[A,B]]+ \frac{1}{12}[B,[B,A]]+\dots \right)$$
 Bohr's magnon: $\frac{e}{2m}$. Usually: $\vec{\mu}=g \frac{e}{2m}\vec{S}$
 
 Time evolution: $i\hbar \frac{\partial}{\partial t}\mathscr{U}=H\mathscr{U}\implies\mathscr{U}=\exp\left( - \frac{i}{\hbar}Ht \right)$
