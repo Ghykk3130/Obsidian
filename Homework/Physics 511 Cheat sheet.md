@@ -80,3 +80,8 @@ $$\psi=Ai(\xi)\rightarrow \left\{\begin{align}
  & \frac{1}{2\sqrt{ \pi }}\xi^{-1/4}\exp\left( - \frac{2}{3}\xi^{3/2} \right),\xi\rightarrow \infty \\
  & \frac{1}{\sqrt{ \pi }}|\xi |^{-1/4}\cos\left(  \frac{2}{3}|z|^{3/2}- \frac{\pi}{4} \right),\xi\rightarrow-\infty
 \end{align}\right.$$
+# 6. Propagator
+$$K(x^{'},t^{'};x,t)= \bra{x^{'}} \mathscr{U}(t^{'},t)\ket{x} $$
+1-D free space propagator:
+$$K(x^{'},t^{'};x,t)= \sqrt{ \frac{m}{2\pi i\hbar(t^{'}-t)} }\exp\left( \frac{im}{2\hbar(t^{'}-t)}(x^{'}-x)^{2} \right)$$3-D free space propagator:
+$$\bra{\vec{r}_{k}} \mathscr{U}(t_{k},t_{k-1})\ket{\vec{r}_{k-1}} =\left(  \frac{m}{2\pi \hbar\delta t_{k-1}} \right)^{3/2} e^{-\frac{3}{4}\pi i}\exp\left(  \frac{im}{2\hbar\ \delta t_{k-1}}|\vec{r}_{k}-\vec{r}_{k-1}|^{2} \right) $$
