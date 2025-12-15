@@ -657,12 +657,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Spherical tensor.md",
+                "file": "固体热容.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Spherical tensor"
+              "title": "固体热容"
             }
           },
           {
@@ -1226,7 +1226,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "球坐标",
+                "query": "",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -1343,6 +1343,12 @@
   },
   "active": "ca5fd49f05f39fbc",
   "lastOpenFiles": [
+    "Homework/Physics 510 Homework 8.md",
+    "Homework/Physics 510 Homework 10.md",
+    "理想经典气体，玻色气体与费米气体.md",
+    "Fermi-Dirac statistics 与 Fermi gas.md",
+    "Homework/Physics 510 Homework 1.md",
+    "Spherical tensor.md",
     "Homework/Physics 511 Cheat sheet.md",
     "旋转的表示.md",
     "Clebsch-Gordan系数.md",
@@ -1358,17 +1364,11 @@
     "Baker-Campbell-Hausdorff Formula.md",
     "Thomas进动.md",
     "Spin以及spinor formalism的基变换.md",
-    "Spherical tensor.md",
     "Homework/Physics 511 Homework 2.md",
     "路径积分.md",
     "WKB.md",
     "Homework/Physics 511 Homework 5.md",
     "Homework/Physics 511 Homework 4.md",
-    "Homework/Physics 511 Midterm Practice.md",
-    "群论.md",
-    "Homework/Physics 511 Final Practice.md",
-    "Homework/Physics 511 Homework 3.md",
-    "Homework/Physics 511 Homework 1.md",
     "Pictures/Pasted image 20251212204220.png",
     "Pictures/Pasted image 20251212204200.png",
     "Pictures/Pasted image 20251207224012.png",
