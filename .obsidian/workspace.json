@@ -1226,7 +1226,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "球坐标",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -1241,7 +1241,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 200,
+    "collapsed": true
   },
   "right": {
     "id": "9003d078f8dbc4ed",
@@ -1342,12 +1343,14 @@
   },
   "active": "ca5fd49f05f39fbc",
   "lastOpenFiles": [
+    "直角坐标和球坐标微分算子变换.md",
+    "Homework/Physics 511 Cheat sheet.md",
+    "球谐函数与旋转表示.md",
+    "Homework/Physics 511 Homework 9.md",
     "SU(2)和SO(3)的联系.md",
     "张量算子.md",
-    "Homework/Physics 511 Homework 9.md",
     "Homework/Physics 511 Homework 10.md",
     "Homework/Physics 511 Homework 8.md",
-    "Homework/Physics 511 Cheat sheet.md",
     "Homework/Physics 511 Homework 6.md",
     "Homework/Physics 511 Homework 7.md",
     "Baker-Campbell-Hausdorff Formula.md",
@@ -1366,8 +1369,6 @@
     "Homework/Physics 511 Homework 1.md",
     "Homework/Physics 511 Homework 0.md",
     "Homework/Physics 510 Homework 11.md",
-    "Homework/Physics 510 Homework 12.md",
-    "Clebsch-Gordan系数.md",
     "Pictures/Pasted image 20251212204220.png",
     "Pictures/Pasted image 20251212204200.png",
     "Pictures/Pasted image 20251207224012.png",

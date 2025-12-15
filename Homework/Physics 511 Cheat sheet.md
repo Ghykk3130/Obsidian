@@ -121,4 +121,20 @@ Wigner-D matrix:
 $$\begin{align}
 \bra{j,m} \mathscr{D}(R_{z}(\gamma)R_{y}(\beta)R_{z}(\alpha) )\ket{j,m^{'}}  & =  \exp(-im\gamma-im^{'}\alpha)d_{mm^{'}}
 \end{align}$$
+# 8. Central potential
+$$\begin{align}
+ & \partial_{x}  = \cos \phi \sin \theta \partial_{r}+ \frac{1}{r}\cos \theta \cos \phi \partial_{\theta}- \frac{1}{r}\csc \theta \sin \phi \partial_{\phi} \\
+ & \partial_{y}= \sin \theta \sin \phi+ \frac{1}{r} \cos \theta \sin \phi \partial_{\theta}+ \frac{1}{r} \cos \phi \csc \theta \partial_{\phi} \\
+ & \partial_{z}= \cos \theta \partial_{r}- \frac{1}{r}\sin \theta \partial_{\theta}
+\end{align}$$
+$$\begin{align}
+ & L_{z}= -i\hbar(x\partial_{y}-y\partial_{x})=-i\hbar \partial_{\phi} \\
+ & L_{x}= -i\hbar(y\partial_{z}-z\partial_{y})=i\hbar(\sin \phi \partial_{\theta}+\cot \theta \cos \phi \partial_{\phi}) \\
+ & L_{y}=-i\hbar(z\partial_{x}-x\partial_{z})=i\hbar(-\cos \phi \partial_{\theta}+\cot\theta \sin \phi \partial_{\phi})
+\end{align}$$
+$$\nabla^{2}= \frac{1}{r^{2}} \frac{\partial}{\partial r}\left( r^{2} \frac{\partial}{\partial r^{}} \right)+ \frac{1}{r^{2}\sin \theta} \frac{\partial}{\partial \theta}\left( \sin \theta \frac{\partial}{\partial \theta} \right)+ \frac{1}{r^{2}\sin ^{2} \theta} \frac{\partial^{2}}{\partial \phi^{2}}$$
 
+
+# Things to be aware of
+1. Negative sign in Gaussian integrals
+2. Factorial in Taylor expansion
