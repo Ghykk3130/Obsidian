@@ -33,6 +33,8 @@ $$\int dk e^{ikx}=2\pi\delta(x)$$
 # 3. Some formulas
 $$e^ABe^{-A}=B+ [A,B]+ \frac{1}{2!}[A,[A,B]]+\dots$$
 $$e^Ae^B=\exp\left( A+B+ \frac{1}{2}[A,B]+ \frac{1}{12}[A,[A,B]]+ \frac{1}{12}[B,[B,A]]+\dots \right)$$
+We do not have $(XY)^a=X^aY^a\text{ if }[X,Y]\neq 0$. Because we are doing: $(XY)^a=XYXY\dots$.
+
 Bohr's magnon: $\frac{e}{2m}$. Usually: $\vec{\mu}=g \frac{e}{2m}\vec{S}$
 
 Time evolution: $i\hbar \frac{\partial}{\partial t}\mathscr{U}=H\mathscr{U}\implies\mathscr{U}=\exp\left( - \frac{i}{\hbar}Ht \right)$
@@ -54,3 +56,7 @@ $$\begin{align}
  & =\lambda_{k}\langle e_{i}|v_{l}\rangle\langle v_{l}|v_{k}\rangle\langle v_{k}|e_{j}\rangle \\
  & =\lambda_{k}\langle e_{i}|v_{l} \rangle \delta_{lk} \langle v_{k}|e_{j}\rangle \\
 \end{align}$$
+# 5. WKB
+$$\oint d\vec{q}\cdot \vec{p}=2\pi \hbar(n+\gamma),\text{ for some }\gamma\in \mathbb{R}$$
+For WKB we have:
+$$\int_{x_{1}}^{x_{2}}\sqrt{ 2m(E-V) }dx=\pi \hbar\left( n+ \frac{1}{2} \right)$$

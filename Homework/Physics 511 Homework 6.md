@@ -114,7 +114,8 @@ Set $\lambda:= \sqrt{  \frac{m\omega}{2\hbar} }l$. Claim: translation with param
 We compute:
 $$\begin{align}
 \exp\left( - \frac{i}{\hbar}p l \right)\ket{0}  & = \exp\left(  \frac{1}{\hbar} \sqrt{ \frac{m\omega \hbar}{2} }(a^{\dagger}-a)l \right)\ket{0}  \\
- & = \exp\left(  \sqrt{ \frac{m\omega}{2\hbar} }la^{\dagger}- \sqrt{  \frac{m\omega}{2\hbar} }la \right)\ket{0} 
+ & = \exp\left(  \sqrt{ \frac{m\omega}{2\hbar} }la^{\dagger}- \sqrt{  \frac{m\omega}{2\hbar} }la \right)\ket{0}  \\
+
 \end{align}$$
 By Baker-Campbell-Hausdorff lemma, I know that:
 $$\begin{align}
