@@ -85,3 +85,40 @@ $$K(x^{'},t^{'};x,t)= \bra{x^{'}} \mathscr{U}(t^{'},t)\ket{x} $$
 1-D free space propagator:
 $$K(x^{'},t^{'};x,t)= \sqrt{ \frac{m}{2\pi i\hbar(t^{'}-t)} }\exp\left( \frac{im}{2\hbar(t^{'}-t)}(x^{'}-x)^{2} \right)$$3-D free space propagator:
 $$\bra{\vec{r}_{k}} \mathscr{U}(t_{k},t_{k-1})\ket{\vec{r}_{k-1}} =\left(  \frac{m}{2\pi \hbar\delta t_{k-1}} \right)^{3/2} e^{-\frac{3}{4}\pi i}\exp\left(  \frac{im}{2\hbar\ \delta t_{k-1}}|\vec{r}_{k}-\vec{r}_{k-1}|^{2} \right) $$
+In general:
+$$K=\int_{\{ \Gamma \}}\mathscr{D}(\Gamma)\exp\left( \frac{i}{\hbar}S(\Gamma) \right)$$
+# 7. Rotation
+$J_{x,y,z}$ under $j=\frac{1}{2}$:
+$$J_{x}= \hbar \begin{pmatrix}
+0 & 1 \\
+1 & 0
+\end{pmatrix},J_{y}=\hbar \begin{pmatrix}
+0 & -i \\
+i & 0 
+\end{pmatrix},J_{z}=\hbar \begin{pmatrix}
+1 & 0 \\
+0 & -1
+\end{pmatrix}$$
+$J_{x,y,z}$ under $j=1$:
+$$J_{x}=\frac{\hbar}{\sqrt{ 2 }}\begin{pmatrix}
+0 & 1 & 0 \\
+1 & 0 & 1 \\
+0 & 1 & 0
+\end{pmatrix},J_{y}= \frac{\hbar}{\sqrt{ 2 }}\begin{pmatrix}
+0 & -i & 0 \\
+i & 0 & -i \\
+0 & i & 0
+\end{pmatrix},J_{z}=\hbar \begin{pmatrix}
+1 & 0 & 0 \\
+0 & 0 & 0 \\
+0 & 0 & -1
+\end{pmatrix}$$
+Spherical tensor commutation relations: $[J^{(1)}_{\pm 1},T^{(q)}_{k}]=\hbar \sqrt{ q(q+1)-k(k\pm 1) }T^{(q)}_{k \pm 1},[J^{(1)}_{0},T^{(q)}_{k}]=\hbar k T^{(q)}_{k}$
+
+Transformation rule: $\mathscr{D}T^{(q)}_{k}\mathscr{D}^{\dagger}=\sum_{m^{'}}\mathscr{D}_{k^{'}k}T^{(q)}_{k^{'}}$
+
+Wigner-D matrix:
+$$\begin{align}
+\bra{j,m} \mathscr{D}(R_{z}(\gamma)R_{y}(\beta)R_{z}(\alpha) )\ket{j,m^{'}}  & =  \exp(-im\gamma-im^{'}\alpha)d_{mm^{'}}
+\end{align}$$
+

@@ -108,7 +108,7 @@ $$\begin{align}
 \end{align}$$
 这样得到了$T_{\alpha \beta,k}^{(1,1)}$。我们再对最后一个component作类似变换。最终得到$T_{\alpha \beta \gamma}^{(1,1,1)}$。注意这玩意不叫spherical tensor。它的三个component都按Wigner-D matrix变换。
 
-现在我们可以通过[[Spherical Tensor#^63f622|theorem 2.1]]，将前两个component相加。具体来说，有：
+现在我们可以通过[[Spherical tensor#^63f622|theorem 2.1]]，将前两个component相加。具体来说，有：
 $$T_{\lambda \gamma}^{(j_{1},1)}=\sum_{\alpha,\beta}\bra{\alpha,\beta} j_{1},\lambda\rangle T_{\alpha \beta \gamma}^{(1,1,1)}$$
 此处$0\leq j_{1}\leq 1+1=2$。然后再将$T_{\lambda,\gamma}^{(j_{1},1)}$的两个component相加：
 $$T^{(j)}_{\delta}=\sum_{\lambda, \gamma}\bra{\lambda, \gamma} j,\delta\rangle T^{(j_{1},1)}_{\lambda \gamma}$$
@@ -117,12 +117,12 @@ $$T^{(j)}_{\delta}=\sum_{\lambda, \gamma}\bra{\lambda, \gamma} j,\delta\rangle T
 于是我们就可以写出这个线性变换的变换矩阵了。我们发现，当$j_{1}=0$时，我们可以耦合出$j=1$，对应$3$个分量。当$j_{1}=1$时，我们可以耦合出$j=0,1,2$，对应$9$个分量。当$j_{1}=2$时，我们可以耦合出$j=1,2,3$，对应$15$个分量。总共$27$个分量。而$T_{ijk}$也有$27$个分量。所以我们可以写出变换阵$P$ such that:
 $$\text{vector formed by components of spherical tensors}=P\text{ vector formed by }T_{ijk}$$
 显然，$P$可以分为两个变换的复合。定义：
-- $\phi$为[[Spherical Tensor#^b27b94|proposition 1.1]]中变换。将一个Cartesian tensor的components变为一个spherical tensor的components
-- $\psi$为[[Spherical Tensor#^63f622|theorem 2.1]]中变换。将两个spherical tensor components耦合乘另一个spherical tensor component。
+- $\phi$为[[Spherical tensor#^b27b94|proposition 1.1]]中变换。将一个Cartesian tensor的components变为一个spherical tensor的components
+- $\psi$为[[Spherical tensor#^63f622|theorem 2.1]]中变换。将两个spherical tensor components耦合乘另一个spherical tensor component。
 
 则$P=(\psi \otimes \psi \otimes \psi) \circ(\phi \otimes \phi \otimes \phi)$。而我们已经有：
-- [[Spherical Tensor#^b27b94|proposition 1.1]] $\implies$ $\phi ^{-1}\mathscr{D}\phi=R$
-- [[Spherical Tensor#^63f622|theorem 2.1]] $\implies$ $\mathscr{D}\psi=\psi\mathscr{D}$
+- [[Spherical tensor#^b27b94|proposition 1.1]] $\implies$ $\phi ^{-1}\mathscr{D}\phi=R$
+- [[Spherical tensor#^63f622|theorem 2.1]] $\implies$ $\mathscr{D}\psi=\psi\mathscr{D}$
 
 可以证明下面交换图成立：
 
