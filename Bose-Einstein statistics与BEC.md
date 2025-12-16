@@ -122,7 +122,7 @@ $$\frac{x^{n-1}}{\mathcal{z}^{-1}e^x-1}\sim  \frac{x^{n-1}}{\mathcal{z}^{-1}e^x}
 这玩意积分正是$\mathcal{z} \Gamma(n)$。
 
 >[!Note] Proposition 3
->$$g_{n}(\mathcal{z})=\sum_{k=1}^{\infty} \frac{\mathcal{z}^k}{k^n}$$
+>$$g_{n}(\mathcal{z})=\sum_{k=1}^{\infty} \frac{\mathcal{z}^k}{k^n},\forall 0 \leq \mathcal{z}\leq 1,n\in \mathbb{N}$$
 ## Proof.
 注意到：
 $$\begin{align}
