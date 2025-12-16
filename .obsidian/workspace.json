@@ -671,12 +671,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Bose-Einstein statistics与BEC.md",
+                "file": "黑体辐射.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Bose-Einstein statistics与BEC"
+              "title": "黑体辐射"
             }
           },
           {
@@ -1357,6 +1357,7 @@
   },
   "active": "cc8f7c6f06ea6497",
   "lastOpenFiles": [
+    "Bose-Einstein statistics与BEC.md",
     "Homework/Physics 510 Homework 10.md",
     "Homework/Physics 510 Homework 9.md",
     "Homework/Physics 510 Homework 8.md",
@@ -1372,7 +1373,6 @@
     "固-气蒸气压.md",
     "液滴.md",
     "Homework/Physics 510 Homework 7.md",
-    "Bose-Einstein statistics与BEC.md",
     "理想经典气体，玻色气体与费米气体.md",
     "Fermi-Dirac statistics 与 Fermi gas.md",
     "Homework/Physics 510 Homework 1.md",
