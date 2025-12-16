@@ -1,13 +1,15 @@
 
-
+# 1. $f_{n}(\mathcal{z})$的性质
 
 >[!Note] Definition 1
 >Define the Fermi-Dirac integral:
 >$$f_{n}(\mathcal{z})=\frac{1}{\Gamma(n)}\int_{0}^{\infty}dx \frac{x^{n-1}}{\mathcal{z}^{-1}e^x+1}\text{ for }0\leq z < \infty$$
+## Remark
+Fermi-Dirac积分在$[0,\infty)$都收敛。
 
 >[!Note] Proposition 1
 >$$f_{n}(\mathcal{z})=\sum_{k}(-1)^{k-1} \frac{\
-\mathcal{z}^k}{k!}\text{ for }\mathcal{z}<1$$
+\mathcal{z}^k}{k^n}\text{ for }\mathcal{z}<1$$
 ## Proof.
 我们有：
 $$\begin{align}
@@ -30,6 +32,9 @@ f_{n}(\mathcal{z}) & = \frac{1}{\Gamma(n)}\int dx x^{n-1} \frac{1}{\mathcal{z}^{
 
 >[!Note] Proposition 2 (Sommerfeld expansion)
 >$$f_{n}(\mathcal{z})= \frac{\mathcal{z}^n}{\Gamma(n+1)}\left[1+\sum_{j=1}^{\infty}2 \binom{n-1}{2j-1}ny^{-2j}\Gamma(2j)\zeta(2j)\left( 1- \frac{1}{2^{2j-1}} \right)\right],\ y=\ln\mathcal{z}\text{  for }\mathcal{z}\rightarrow \infty$$
+
+^00d21e
+
 ## Proof.
 我们令$\mathcal{z}=e^y$，$F_{n}(y)=\Gamma(n)f_{n}(\mathcal{z})$。于是便有：
 $$\begin{align}
@@ -80,7 +85,7 @@ F_{n}(y) & = \frac{y^n}{n}+ 2\sum_{j=0}^{\infty}\binom{n-1}{2j+1}y^{n-2j-2} \zet
 接下来便是显然。
 >[!Right]
 >$\blacksquare$
-## Degeneracy temperature
+# 2. Degeneracy temperature
 
 和[[Bose-Einstein statistics与BEC]]一样，我们通过粒子数的约数来决定fugacity。我们有：
 $$N= \sum_{\vec{k}_{}} \frac{1}{\mathcal{z}e^{\beta\epsilon_{\vec{k}}}+1}\approx \frac{V}{\lambda^{3}}f_{3 /2}(\mathcal{z})$$
@@ -96,6 +101,31 @@ $$1= \frac{1}{n\lambda^{3}}f_{3 /2}(\mathcal{z})$$
 >$$n\lambda^{3}=1$$
 
 对于费米子组成的气体来说，温度低于退化温度时，我们认为经典气体开始“退化”成费米气体。
+
+# 3. Chemical potential
+
+>[!Note] Proposition 1
+>The chemical potential of free electron gas doesn't change too much with the temperature.
+## Proof.
+在FBZ中，$T=0$时可用的空间为:
+$$\frac{4}{3}\pi\left( \sqrt{ \frac{2m\epsilon_{F}}{\hbar^{2}} } \right)^{3}= \frac{4}{3}\pi\left(  \frac{2m\epsilon_{F}}{\hbar^{2}} \right)^{3/2}$$
+所以FBZ中的模数为：
+$$\frac{4}{3}\pi\left( \frac{2m\epsilon_{F}}{\hbar^{2}} \right)^{3/2} \frac{V}{(2\pi)^{3}}\cdot{2}= \frac{1}{3\pi^{2}}\left( \frac{2m\epsilon_{F}}{\hbar^{2}} \right)^{3/2}V$$
+系数$2$是因为电子的2-fold spin degeneracy。而$FBZ$中总模式数应当为$N$。所以：
+$$\frac{V}{3\pi^{2}}\left( \frac{2m\epsilon_{F}}{\hbar^{2}} \right)^{3/2}=N\implies n= \frac{1}{3\pi^{2}}\left( \frac{2m\epsilon_{F}}{\hbar^{2}} \right)^{3/2}$$
+然而，另一方面我知道：
+$$2\frac{V}{\lambda^{3}}f_{3 /2}(\mathcal{z})=N\implies n= 2\frac{f_{3 /2}(\mathcal{z})}{\lambda^{3}}$$
+其中$2$同样是因为spin-degeneracy。若固定$V$，任何温度下$n$都不变。所以：
+$$\begin{align}
+ & 2\frac{f_{3 /2}(\mathcal{z})}{\lambda^{3}}= \frac{1}{3\pi^{2}}\left(  \frac{2m\epsilon_{F}}{\hbar^{2}} \right)^{3/2}\implies f_{3 /2}(\mathcal{z})= \frac{1}{6\pi^{2} }\left( \frac{2m\epsilon_{F}}{\hbar^{2}} \right)^{3/2}\lambda^{3}= \frac{4}{3\sqrt{ \pi }}\left( \frac{\epsilon_{F}}{kT} \right)^{3/2}
+\end{align}$$
+我们考察$T\rightarrow{0}$时的行为，由[[Fermi-Dirac statistics 与 Fermi gas#^00d21e|proposition 1.2]]可得：
+$$\frac{(\beta \mu)^{3/2}}{\Gamma\left( \frac{3}{2} \right)}\left( 1+ \frac{\pi^{2}}{8}(\beta \mu)^{-2} \right)= \frac{4}{3\sqrt{ \pi }}\left( \frac{\epsilon_{F}}{kT} \right)^{3/2}\implies \mu^{3/2}\left( 1+\frac{\pi^{2}}{8}\left( \frac{kT}{\mu} \right)^{2} \right)=\epsilon_{F}^{3/2}$$
+在偏离$0$的小范围内，有：
+$$\mu^{3/2}\left( 1+ \frac{\pi^{2}}{8}\left(  \frac{kT}{\epsilon_{F}} \right)^{2} \right)=\epsilon_{F}^{3/2}$$
+由于$k$很小，所以二阶修正很小。
+>[!Right]
+>$\blacksquare$
 
 
 

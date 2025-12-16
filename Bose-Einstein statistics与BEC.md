@@ -61,6 +61,7 @@ N & = \frac{\mathcal{z}}{1-\mathcal{z}}+ \sum_{\vec{k}\neq 0} \frac{1}{\frac{1}{
 定义:
 
 >[!Note] Definition 1
+>Define the Bose-Einstein integral:
 $$g_{n}(\mathcal{z})= \frac{1}{\Gamma(n)}\int_{0}^{\infty}dx \frac{x^{n-1}}{\mathcal{z}^{-1}e^{ x}-1}\text{ for }0\leq \mathcal{z} <1$$
 
 容易注意到$\Gamma\left( \frac{3}{2} \right)=\left( \frac{1}{2} \right)! = \frac{1}{2}\Gamma\left( \frac{1}{2} \right)= \frac{\sqrt{ \pi }}{2}$。于是：
