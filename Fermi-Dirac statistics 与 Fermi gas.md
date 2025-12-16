@@ -102,10 +102,11 @@ $$1= \frac{1}{n\lambda^{3}}f_{3 /2}(\mathcal{z})$$
 
 对于费米子组成的气体来说，温度低于退化温度时，我们认为经典气体开始“退化”成费米气体。
 
-# 3. Chemical potential
+# 3. Chemical potential 
 
 >[!Note] Proposition 1
->The chemical potential of free electron gas doesn't change too much with the temperature.
+>At low temperature, namely $kT \ll \epsilon_{F}$, we have:
+>$$\mu=\left( 1- \frac{\pi^{2}}{12}\left( \frac{kT}{\epsilon_{F}} \right)^{2} \right)\epsilon_{F}$$
 ## Proof.
 在FBZ中，$T=0$时可用的空间为:
 $$\frac{4}{3}\pi\left( \sqrt{ \frac{2m\epsilon_{F}}{\hbar^{2}} } \right)^{3}= \frac{4}{3}\pi\left(  \frac{2m\epsilon_{F}}{\hbar^{2}} \right)^{3/2}$$
@@ -122,10 +123,11 @@ $$\begin{align}
 我们考察$T\rightarrow{0}$时的行为，由[[Fermi-Dirac statistics 与 Fermi gas#^00d21e|proposition 1.2]]可得：
 $$\frac{(\beta \mu)^{3/2}}{\Gamma\left( \frac{3}{2} \right)}\left( 1+ \frac{\pi^{2}}{8}(\beta \mu)^{-2} \right)= \frac{4}{3\sqrt{ \pi }}\left( \frac{\epsilon_{F}}{kT} \right)^{3/2}\implies \mu^{3/2}\left( 1+\frac{\pi^{2}}{8}\left( \frac{kT}{\mu} \right)^{2} \right)=\epsilon_{F}^{3/2}$$
 在偏离$0$的小范围内，有：
-$$\mu^{3/2}\left( 1+ \frac{\pi^{2}}{8}\left(  \frac{kT}{\epsilon_{F}} \right)^{2} \right)=\epsilon_{F}^{3/2}$$
-由于$k$很小，所以二阶修正很小。
+$$\mu^{3/2}\left( 1+ \frac{\pi^{2}}{8}\left(  \frac{kT}{\epsilon_{F}} \right)^{2} \right)=\epsilon_{F}^{3/2}\implies \mu \approx\left( 1- \frac{\pi^{2}}{12}\left( \frac{kT}{\epsilon_{F}} \right)^{2} \right)\epsilon_{F}$$
 >[!Right]
 >$\blacksquare$
+# 4. Finite internal energy at $T=0$
+
 
 
 
