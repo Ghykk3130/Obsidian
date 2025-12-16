@@ -123,6 +123,8 @@ $$\begin{align}
 $$-JS^z_{i}S_{j}^z,\text{ where }S_{i}^z,S_{j}^z=\pm{1}$$
 那么系统Hamiltonian写为：
 $$H=-J\sum_{\langle i,j\rangle}S_{i}^zS_{j}^z$$
+存在边界条件$S_{N+1}^z=S_{1}^z$。
+
 定义$J>0$的固体为ferromagnetic。$J<0$的固体为antiferromagnetic。这是因为$J>0$时，aligned具有更低能量，favored。$J<0$时，anti-aligned具有更低能量，favored。ferromagnetic时，存在净磁化。anti-ferromagnetic时，不存在净磁化。
 
 加上$z$方向磁场后，得到：
@@ -160,7 +162,32 @@ $$\langle S^z \rangle=\tanh(n_{D}\beta J\langle S^z\rangle)$$
 
 对于ferromagnetic物体，$J>0$经历phase transition。在温度从高到低，$\langle \sigma \rangle$的值从$0$变为$\pm \sigma_{0}$。magnetization中$0$变为$\pm n\mu \sigma_{0}$。ferromagnetic固体经历phase transition，从自发磁化为零的paramagnetic转变为非零的magnetization。
 
-## 3.3 Critical exponent
+## 3.3 Exact 1-D solution
+
+考虑配分函数：
+$$\begin{align}
+Z & = \sum_{\{ S_{i}^z \}}\exp\left( \beta J\sum_{<i,j>} S_{i}^z S_{j}^z + \beta h\sum_{i}S_{i}^z \right)
+\end{align}$$
+因为每个点$i$都要在$\sum_{<i,j>}$中加两次。但是只在$\sum_{i}$中加一次。我们不妨把$\sum_{i}$拆成两个，将$i,j$都加到$i$点。于是：
+$$\begin{align}
+Z & = \sum_{\{ S_{i}^z \}}\exp\left(  \beta J \sum_{<i,j>}S_{i}^zS_{j}^z+ \frac{1}{2} \beta h\sum_{<i,j>}(S_{i}^z+S_{j}^z)\right) \\
+ & = \sum_{\{ S_{i}^z \}}\prod_{i}\exp\left( \beta JS_{i}^zS_{i+1}^z+  \frac{1}{2} \beta h(S_{i}^z+S_{i+1}^z) \right)
+\end{align}$$
+定义transfer matrix：
+$$M_{ij}=\exp\left( \beta JS_{i}^zS_{j}^z+ \frac{1}{2} \beta h(S_{i}^z+S_{j}^z) \right),\ M=\begin{pmatrix} e^{\alpha+\gamma} & e^{-\gamma} \\
+e^{-\gamma} & e^{-\alpha+\gamma}
+\end{pmatrix},\ \alpha=\beta h,\gamma=\beta J$$
+那么配分函数可以写为：
+$$\begin{align}
+Z & = \sum_{\{ S_{i}^z \}}M_{12}M_{23}\dots M_{n{1}} \\
+ & = Tr(M^n)
+\end{align}$$
+可以得到特征值：
+$$\begin{vmatrix}
+e^{\alpha +\gamma}-\lambda & e^{-\gamma} \\
+e^{-\gamma} & e^{-\alpha+\gamma}-\lambda 
+\end{vmatrix}=0\implies \lambda_{1,2}=e^{\gamma}(\cosh \alpha\pm \sqrt{ \sinh ^{2}\alpha+e^{-4\gamma} })$$
+
 
 
 
