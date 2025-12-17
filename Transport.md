@@ -720,6 +720,10 @@ $$\begin{align}
 \end{align}$$
 回顾$\sigma$的公式，容易看出$\sigma> 0$。于是$\sigma_{\parallel}> 0$。乍看之下$\sigma_{\perp}> 0$<但是回顾上面的推导,我们发现若载流子是hole，则将[[Transport#^ddce4d|proposition 7.2.3]]中$\mu_{n}$前面会多负号，导致$\sigma_{\perp}< 0$。
 
+## Remark
+我们发现，$\sigma \propto \tau$，$\mu_{n} \propto \tau^{2}$。在弱场脏样品下，我们有$\sigma_{\parallel}\propto \tau$。表现为Ohmic resistance。电子主要被电场驱动，被散射拖慢。在强场纯净样品下，我们有$\sigma_{\parallel}\propto \frac{\tau}{\tau^{2}}= \frac{1}{\tau}$。所以样品越纯净，反而$\sigma_{\parallel}$越小，电子被束缚在垂直于电场的“圆周轨道“里。电子被磁场拖慢。
+
+而对于$\sigma_{\perp}$，弱场情况下有$\sigma_{\perp}\propto \tau^{3}$，强场情况下有$\sigma_{\perp}\propto \tau$，都是样品越纯净，conductance越大。
 
 
 
