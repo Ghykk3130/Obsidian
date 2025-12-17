@@ -601,7 +601,7 @@ $$\begin{align}
 \implies &  \frac{\partial f}{\partial t}+ \frac{1}{\hbar}(e\vec{E}+e\vec{v}\times \vec{B})\cdot \frac{\partial f}{\partial \vec{k} }+ \frac{g}{\tau}=0 \\
 \implies &  \frac{\partial f}{\partial t}+ \frac{1}{\hbar}e\vec{E}\cdot \frac{\partial f^0}{\partial\epsilon_{\vec{k}}} \frac{\partial\epsilon_{\vec{k}}}{\partial \vec{k}}+ \frac{e}{\hbar}(\vec{v}\times \vec{B})\cdot \frac{\partial f}{\partial \vec{k}}+ \frac{g}{\tau}=0 \\
 \implies &  \frac{\partial f}{\partial t}+ e \frac{\partial f^0}{\partial\epsilon_{\vec{k}} }\vec{v}\cdot \vec{E}+ \frac{e}{\hbar}(\vec{v}\times \vec{B})\cdot\left( \frac{\partial f^0}{\partial \vec{k}}+ \frac{\partial g}{\partial \vec{k}} \right)+ \frac{g}{\tau}=0 \\
-\implies & \frac{\partial f}{\partial t}+e \frac{\partial f^0}{\partial\epsilon_{\vec{k}}}\vec{v}\cdot \vec{E}+ \frac{e}{\hbar}(\vec{v}\times \vec{B})\cdot\left(  \frac{1}{\hbar}\vec{v} \frac{\partial f^9}{\partial\epsilon_{\vec{k}}}+ \frac{\partial g}{\partial \vec{k}} \right)+ \frac{g}{\tau}=0 \\
+\implies & \frac{\partial f}{\partial t}+e \frac{\partial f^0}{\partial\epsilon_{\vec{k}}}\vec{v}\cdot \vec{E}+ \frac{e}{\hbar}(\vec{v}\times \vec{B})\cdot\left(  \frac{1}{\hbar}\vec{v} \frac{\partial f^0}{\partial\epsilon_{\vec{k}}}+ \frac{\partial g}{\partial \vec{k}} \right)+ \frac{g}{\tau}=0 \\
 \implies & \frac{\partial f}{\partial t}+ e \frac{\partial f^0}{\partial\epsilon_{\vec{k}}}\vec{v}\cdot \vec{E}+ \frac{e}{\hbar}(\vec{v}\times \vec{B})\cdot \frac{\partial g}{\partial \vec{k}}+ \frac{g}{\tau}=0
 \end{align}$$
 其中第二行到第三行，对于$\vec{E}$那一项我们假设了小偏离。
