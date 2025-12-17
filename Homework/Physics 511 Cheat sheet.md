@@ -157,7 +157,15 @@ $$L^{2}= -\hbar^{2}\left[\frac{1}{\sin \theta} \frac{\partial}{\partial \theta}\
 $$\frac{p^{2}}{2m}=  - \frac{\hbar^{2}}{2m}\nabla^{2}=\frac{1}{2m}\left( p_{r}^{2}+ \frac{L^{2}}{r^{2}} \right)=- \frac{\hbar^{2}}{2m} \frac{1}{r^{2}} \frac{\partial}{\partial r}\left( r^{2} \frac{\partial}{\partial r} \right)+ \frac{L^{2}}{2mr^{2}}$$
 # 9. Spherical harmonics
 ![[Pasted image 20251216201628.png|center|500]]
+# 10. Clebsch-Gorden
 
+![[Pasted image 20251216203905.png|center|500]]
+
+$$\sqrt{ j(j+1)-m(m\pm 1) }\bra{m_{1},m_{2}}m\pm 1\rangle= \sqrt{ j_{1}(j_{1}+1)-m_{1}(m_{1}\mp 1) }\bra{m_{1}\mp 1,m_{2}}m\rangle +\sqrt{ j_{2}(j_{2}+1)-m_{2}(m_{2}\mp 1) } \bra{m_{1},m_{2} \mp 1} m \rangle   $$
+考虑：
+$$\begin{align}
+\sqrt{  }\bra{m_{1}=1,m_{2}=0} m=0\rangle= \sqrt{ 1(1+1)-0 }\bra{m_{1}=0,m_{2}=0} m=0\rangle+ \sqrt{ 1(1+1)-0 }\bra{m_{1}=1,m_{2}=-1} m=0\rangle
+\end{align}$$
 # Things to be aware of
 1. Negative sign in Gaussian integrals
 2. Factorial in Taylor expansion
