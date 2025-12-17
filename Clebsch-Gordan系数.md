@@ -39,7 +39,7 @@ $$\begin{align}
  & \bra{m_{1},m_{2}} J_{\pm}\ket{m} = \bra{m_{1},m_{2}} (J_{1\pm}+J_{2\pm})\ket{m}  \\
 \implies & \hbar \sqrt{ j(j+1)-m(m\pm{1}) }\bra{m_{1},m_{2}} m\pm 1\rangle= \hbar \sqrt{ j_{1}(j_{1}+1)-m_{1}(m_{1} \mp 1) }\bra{m_{1}\mp 1,m_{2}} m\rangle+ \hbar \sqrt{ j_{2}(j_{2}+1)-m_{2}(m_{2}\mp 1) }\bra{m_{1},m_{2} \mp 1} m\rangle \\
 \end{align}$$
-约掉$\hbar$ then done。
+约掉$\hbar$ then done。 
 >[!Right]
 >$\blacksquare$
 
