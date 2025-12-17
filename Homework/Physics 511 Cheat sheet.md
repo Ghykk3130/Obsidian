@@ -188,7 +188,104 @@ $$\begin{align}
  & L_{1}^{3}=4-\rho \\
  & L_{0}^5(\rho)=1
 \end{align}$$
+# 14. An example
+### a) What do $T^{(2)}_{\pm 2}$ look like?
 
+To construct the components with the highest ($M=+2$) and lowest ($M=-2$) projection, we simply take the product of the highest and lowest components of the individual vectors. There is only one way to form $M=\pm 2$ from two $m=\pm 1$ components.
+
+The highest weight state $T^{(2)}_{+2}$ corresponds to $|2, +2\rangle = |1, +1\rangle \otimes |1, +1\rangle$:
+
+$$T^{(2)}_{+2} = U^{(1)}_{+1} V^{(1)}_{+1}$$
+
+The lowest weight state $T^{(2)}_{-2}$ corresponds to $|2, -2\rangle = |1, -1\rangle \otimes |1, -1\rangle$:
+
+$$T^{(2)}_{-2} = U^{(1)}_{-1} V^{(1)}_{-1}$$
+
+---
+
+### b) The rest of the rank-2 spherical tensor
+
+We can find the remaining components ($M = \pm 1, 0$) by applying the **lowering operator** $J_-$ or by looking up the **Clebsch-Gordan coefficients** for $1 \otimes 1 \to 2$.
+
+1. Finding $T^{(2)}_{+1}$:
+
+We apply the lowering operator $J_-$ to the highest state $T^{(2)}_{+2}$.
+
+Recall the action of the lowering operator on a state $|k, q\rangle$:
+
+$$J_- T^{(k)}_q = \hbar\sqrt{k(k+1) - q(q-1)} T^{(k)}_{q-1}$$
+
+For the left hand side ($k=2, q=2$):
+
+$$J_- T^{(2)}_{+2} = \hbar\sqrt{2(3) - 2(1)} T^{(2)}_{+1} = 2\hbar T^{(2)}_{+1}$$
+
+For the right hand side ($U^{(1)}_{+1} V^{(1)}_{+1}$), we use the product rule (Leibniz rule):
+
+$$J_- (U^{(1)}_{+1} V^{(1)}_{+1}) = (J_- U^{(1)}_{+1}) V^{(1)}_{+1} + U^{(1)}_{+1} (J_- V^{(1)}_{+1})$$
+
+Since $j=1$, $J_- U^{(1)}_{+1} = \hbar\sqrt{1(2)-1(0)} U^{(1)}_0 = \hbar\sqrt{2} U^{(1)}_0$.
+
+$$\implies \hbar\sqrt{2} U^{(1)}_0 V^{(1)}_{+1} + \hbar\sqrt{2} U^{(1)}_{+1} V^{(1)}_0$$
+
+Equating LHS and RHS:
+
+$$2\hbar T^{(2)}_{+1} = \hbar\sqrt{2} (U^{(1)}_0 V^{(1)}_{+1} + U^{(1)}_{+1} V^{(1)}_0)$$
+
+$$T^{(2)}_{+1} = \frac{1}{\sqrt{2}} \left( U^{(1)}_{+1} V^{(1)}_0 + U^{(1)}_0 V^{(1)}_{+1} \right)$$
+
+By symmetry, the $M=-1$ component is:
+
+$$T^{(2)}_{-1} = \frac{1}{\sqrt{2}} \left( U^{(1)}_{-1} V^{(1)}_0 + U^{(1)}_0 V^{(1)}_{-1} \right)$$
+
+2. Finding $T^{(2)}_{0}$:
+
+We apply $J_-$ to $T^{(2)}_{+1}$.
+
+LHS ($k=2, q=1$):
+
+$$J_- T^{(2)}_{+1} = \hbar\sqrt{2(3) - 1(0)} T^{(2)}_0 = \hbar\sqrt{6} T^{(2)}_0$$
+
+RHS (applying to $\frac{1}{\sqrt{2}} (U^{(1)}_{+1} V^{(1)}_0 + U^{(1)}_0 V^{(1)}_{+1})$):
+
+Using $J_- U^{(1)}_0 = \sqrt{2} U^{(1)}_{-1}$ and $J_- U^{(1)}_{+1} = \sqrt{2} U^{(1)}_0$:
+
+$$= \frac{\hbar}{\sqrt{2}} \left[ (\sqrt{2}U^{(1)}_0)V^{(1)}_0 + U^{(1)}_{+1}(\sqrt{2}V^{(1)}_{-1}) + (\sqrt{2}U^{(1)}_{-1})V^{(1)}_{+1} + U^{(1)}_0(\sqrt{2}V^{(1)}_0) \right]$$
+
+$$= \hbar \left[ U^{(1)}_0 V^{(1)}_0 + U^{(1)}_{+1} V^{(1)}_{-1} + U^{(1)}_{-1} V^{(1)}_{+1} + U^{(1)}_0 V^{(1)}_0 \right]$$
+
+$$= \hbar \left[ U^{(1)}_{+1} V^{(1)}_{-1} + 2 U^{(1)}_0 V^{(1)}_0 + U^{(1)}_{-1} V^{(1)}_{+1} \right]$$
+
+Equating LHS and RHS:
+
+$$\hbar\sqrt{6} T^{(2)}_0 = \hbar \left( U^{(1)}_{+1} V^{(1)}_{-1} + 2 U^{(1)}_0 V^{(1)}_0 + U^{(1)}_{-1} V^{(1)}_{+1} \right)$$
+
+$$T^{(2)}_0 = \frac{1}{\sqrt{6}} \left( U^{(1)}_{+1} V^{(1)}_{-1} + 2 U^{(1)}_0 V^{(1)}_0 + U^{(1)}_{-1} V^{(1)}_{+1} \right)$$
+
+---
+
+### c) Write $T^{(2)}_0$ in terms of Cartesian components
+
+We substitute the Cartesian definitions into the expression derived in part (b):
+
+$$T^{(2)}_0 = \frac{1}{\sqrt{6}} \left[ \left(-\frac{U_x+iU_y}{\sqrt{2}}\right)\left(\frac{V_x-iV_y}{\sqrt{2}}\right) + 2U_z V_z + \left(\frac{U_x-iU_y}{\sqrt{2}}\right)\left(-\frac{V_x+iV_y}{\sqrt{2}}\right) \right]$$
+
+Let's look at the first and third terms (the cross terms):
+
+Term 1: $-\frac{1}{2} (U_x V_x - i U_x V_y + i U_y V_x + U_y V_y)$
+
+Term 3: $-\frac{1}{2} (U_x V_x + i U_x V_y - i U_y V_x + U_y V_y)$
+
+Adding Term 1 and Term 3, the imaginary parts cancel:
+
+$$\text{Sum} = -\frac{1}{2} (2 U_x V_x + 2 U_y V_y) = -(U_x V_x + U_y V_y)$$
+
+Now substitute this back into the total expression:
+
+$$T^{(2)}_0 = \frac{1}{\sqrt{6}} \left[ 2 U_z V_z - (U_x V_x + U_y V_y) \right]$$
+
+$$T^{(2)}_0 = \frac{1}{\sqrt{6}} \left( 2 U_z V_z - U_x V_x - U_y V_y \right)$$
+
+_(Note: This form is physically consistent with the traceless nature of rank-2 spherical tensors. It looks like $3z^2 - r^2$, since $2z^2 - x^2 - y^2 = 3z^2 - (x^2+y^2+z^2)$)._
 # Things to be aware of
 1. Negative sign in Gaussian integrals
 2. Factorial in Taylor expansion

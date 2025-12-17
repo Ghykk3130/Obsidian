@@ -685,12 +685,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Homework/Physics 511 Homework 10.md",
+                "file": "Homework/Physics 511 Cheat sheet.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Physics 511 Homework 10"
+              "title": "Physics 511 Cheat sheet"
             }
           },
           {
@@ -1368,28 +1368,29 @@
       "obsidian-excalidraw-plugin:New drawing": false
     }
   },
-  "active": "7c538a2f71c3332c",
+  "active": "0bd5adf6a54a04e2",
   "lastOpenFiles": [
-    "Homework/Physics 511 Homework 9.md",
+    "Homework/Physics 511 Homework 5.md",
+    "Homework/Physics 511 Homework 6.md",
+    "Homework/Physics 511 Homework 0.md",
+    "Homework/Physics 511 Homework 1.md",
+    "Homework/Physics 511 Homework 2.md",
+    "Homework/Physics 511 Homework 4.md",
+    "Homework/Physics 511 Homework 3.md",
+    "Homework/Physics 511 Final Practice.md",
+    "Spherical tensor.md",
     "Homework/Physics 511 Cheat sheet.md",
+    "Homework/Physics 511 Homework 10.md",
+    "Homework/Physics 511 Homework 9.md",
     "张量算子.md",
     "Homework/Physics 511 Homework 8.md",
     "Homework/Physics 511 Homework 7.md",
-    "Homework/Physics 511 Homework 6.md",
-    "Homework/Physics 511 Homework 4.md",
     "Schrodinger's and Heisenberg's pictures.md",
-    "Homework/Physics 511 Homework 5.md",
-    "Homework/Physics 511 Homework 3.md",
-    "Homework/Physics 511 Homework 2.md",
-    "Homework/Physics 511 Homework 1.md",
-    "Homework/Physics 511 Homework 0.md",
-    "Spherical tensor.md",
     "Solid state.md",
     "Clebsch-Gordan系数.md",
     "Excalidraw/Drawing 2025-12-16 22.07.21.excalidraw.md",
     "Ising Model.md",
     "Pictures/Pasted image 20251216203905.png",
-    "Homework/Physics 511 Homework 10.md",
     "Pictures/Pasted image 20251216201628.png",
     "旋转的表示.md",
     "Pictures/Spherical_harmonics.pdf",
@@ -1398,7 +1399,6 @@
     "Homework/Physics 510 Homework 11.md",
     "Homework/Physics 510 Homework 8.md",
     "Homework/Physics 510 Homework 9.md",
-    "渗透压.md",
     "Pictures/Pasted image 20251212204220.png",
     "Pictures/Pasted image 20251212204200.png",
     "Pictures/Pasted image 20251207224012.png",
