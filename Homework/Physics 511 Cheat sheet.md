@@ -162,10 +162,6 @@ $$\frac{p^{2}}{2m}=  - \frac{\hbar^{2}}{2m}\nabla^{2}=\frac{1}{2m}\left( p_{r}^{
 ![[Pasted image 20251216203905.png|center|500]]
 
 $$\sqrt{ j(j+1)-m(m\pm 1) }\bra{m_{1},m_{2}}m\pm 1\rangle= \sqrt{ j_{1}(j_{1}+1)-m_{1}(m_{1}\mp 1) }\bra{m_{1}\mp 1,m_{2}}m\rangle +\sqrt{ j_{2}(j_{2}+1)-m_{2}(m_{2}\mp 1) } \bra{m_{1},m_{2} \mp 1} m \rangle   $$
-考虑：
-$$\begin{align}
-\sqrt{  }\bra{m_{1}=1,m_{2}=0} m=0\rangle= \sqrt{ 1(1+1)-0 }\bra{m_{1}=0,m_{2}=0} m=0\rangle+ \sqrt{ 1(1+1)-0 }\bra{m_{1}=1,m_{2}=-1} m=0\rangle
-\end{align}$$
 # Things to be aware of
 1. Negative sign in Gaussian integrals
 2. Factorial in Taylor expansion

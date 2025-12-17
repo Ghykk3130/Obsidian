@@ -34,17 +34,12 @@ $$\begin{align}
 ## Remark
 上述公式的记忆方法为：左手边系数是右手边$m$通过$J_{\pm}$作用在右手边$j,m$得到的系数。右手边系数为左手边通过$J_{1\mp},J_{2\mp}$作用在左手边$m_{1},m_{2}$得到的的系数。
 ## Proof.
-我们有：
+suppress量子数$j_{1},j_{2},j$<我们有：
 $$\begin{align}
- & J_{\pm} \ket{j,m} = (J_{1\pm}+J_{2\pm} )\ket{j,m} \\
-\implies &  \hbar \sqrt{ (j\pm m +1)(j \mp m) }\ket{j,m\pm{1}} =(J_{1\pm}+J_{2\pm})\ket{j,m}  
+ & \bra{m_{1},m_{2}} J_{\pm}\ket{m} = \bra{m_{1},m_{2}} (J_{1\pm}+J_{2\pm})\ket{m}  \\
+\implies & \hbar \sqrt{ j(j+1)-m(m\pm{1}) }\bra{m_{1},m_{2}} m\pm 1\rangle= \hbar \sqrt{ j_{1}(j_{1}+1)-m_{1}(m_{1} \mp 1) }\bra{m_{1}\mp 1,m_{2}} m\rangle+ \hbar \sqrt{ j_{2}(j_{2}+1)-m_{2}(m_{2}\mp 1) }\bra{m_{1},m_{2} \mp 1} m\rangle \\
 \end{align}$$
-我们在两边左乘一个$\bra{m_{1},m_{2}}$。根据[[Clebsch-Gordan系数#^823fd7|proposition 1.1]]，必须要求$m_{1}+m_{2}=m\pm{1}$。然后：
-$$\begin{align}
-  \hbar \sqrt{ (j\pm m + 1)(j\mp m) }\bra{m_{1},m_{2}} j,m\pm 1\rangle & =\bra{m_{1},m_{2}} (J_{1\pm}+ J_{2\pm})\ket{j,m}   \\
- & = \left(\hbar \sqrt{ (j_{1} \mp m_{1}+1)(j_{1}\pm m_{1}) }\bra{m_{1}\mp 1,m_{2}} +\hbar \sqrt{ j_{2}\mp m_{2}+1 }(j_{2}\pm m_{2})\bra{m_{1},m_{2}\mp 1} \right)\ket{j,m} 
-\end{align}$$
-约掉$\hbar$即可。
+约掉$\hbar$ then done。
 >[!Right]
 >$\blacksquare$
 
@@ -89,6 +84,8 @@ $$\begin{align}
 
 我们得到了$\ket{j=1,m=0}$在$\ket{m_{1},m_{2}}$基下展开的所有CG系数的相对大小！之后显然通过normalization可以得到：
 $$\ket{j=1,m=0} =\frac{1}{\sqrt{ 2 }}\left( \ket{m_{1}=\frac{1}{2},m_{2}=-\frac{1}{2}} -\ket{m_{1}=-\frac{1}{2},m_{2}=\frac{1}{2}}  \right)$$
+## Caveat
+只有斜向右上或者向左下的三角形是可以的。这取决于CG系数递推公式的形式。
 # 3. $\vec{L}+\vec{S}$ 
 
 ## Big picture
