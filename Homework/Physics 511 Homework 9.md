@@ -7,7 +7,7 @@ $$\begin{align}
 \mathscr{D}(R_{y}(\epsilon)) & =\mathbb{1}- \frac{i}{\hbar}J_{y}\epsilon+ \frac{1}{2}\left(  -\frac{i}{\hbar} J_{y}^{}\epsilon\right)^{2}+\mathcal{O}(\epsilon^{3}) \\
  & = \mathbb{1}- \frac{i}{\hbar}J_{y}\epsilon- \frac{1}{2} \frac{\epsilon^{2}}{\hbar^{2}}J_{y}^{2}+\mathcal{O}(\epsilon^{3})
 \end{align}$$
-Know t hat:
+Know that:
 $$\begin{align}
  & J_{+}=J_{x}+iJ_{y} \\
  & J_{-}=J_{x}-iJ_{y}

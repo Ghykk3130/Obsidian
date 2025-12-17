@@ -168,6 +168,7 @@ $$\mathscr{D}T^{(k)}_{q}\mathscr{D}^{\dagger}=\sum_{q^{'}}\mathscr{D}^{(k)}_{q^{
 $$\bra{\alpha,j,m} T^{(k)_{}}_{q}\ket{\alpha^{'},j^{'},m^{'}} = \bra{j^{'},k,m^{'},q}j^{'},k,j,m\rangle \frac{\bra{\alpha,j} |T^{(k)}_{}|\ket{\alpha^{'},j^{'}} }{\sqrt{ 2j+1 }} $$
 $$T^{(k)}_{q}= \sum_{q_{1},q_{2}}\bra{k_{1},k_{2},q_{1},q_{2}} k_{1},k_{2},k,q\rangle U^{(k_{1})}_{q_{1}}V^{(k_{2})}_{q_{2}}$$
 $$\mathscr{D}^{(k_{1})}_{q_{1}m_{1}}(R)\mathscr{D}_{q_{2}m_{2}}^{(k_{2})}(R)=\sum_{J,\mu,\nu}\bra{k_{1},k_{2},q_{1},q_{2}}k_{1},k_{2}, J,\mu\rangle \bra{k_{1},k_{2},J,\nu} k_{1},k_{2},m_{1},m_{2}\rangle\mathscr{D}_{\mu \nu}^{(J)}(R) $$
+$$\bra{\alpha^{'},j,m^{'}} V^{(1)}_{q}\ket{\alpha,j,m} = \frac{\bra{\alpha^{'},j,m} \vec{J}\cdot \vec{V}\ket{\alpha,j,m} }{\hbar^{2}j(j+1)}\bra{\alpha,j,m^{'}} J^{(1)}_{q}\ket{\alpha,j,m}$$
 # 12. SHO
 $$\psi_{n}(x)=\left( \frac{m\omega}{\pi \hbar} \right)^{1/4} \frac{1}{\sqrt{ 2^nn! }}H_{n}\left(  \sqrt{ \frac{m\omega}{\hbar} }x \right)\exp\left( - \frac{m\omega}{2\hbar}x^{2} \right)$$
 $$\begin{align}

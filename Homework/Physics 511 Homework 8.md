@@ -135,7 +135,7 @@ $$\begin{align}
 Therefore, I must conclude:
 $$\langle s_{x}\rangle=0$$
 ## c).
-Compute the eigen values of the matrix $S_{x}$:
+Compute the eigenvalues of the matrix $S_{x}$:
 $$\begin{align}
  & \begin{vmatrix}
 \lambda & -1 & 0 \\
