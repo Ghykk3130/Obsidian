@@ -42,7 +42,7 @@ $$\begin{align}
 \psi(r) & = rf(r)\left( \sqrt{ \frac{2\pi}{3} }(\ket{1,-1} -\ket{1,1} )+ i \sqrt{ \frac{2\pi}{3} }(\ket{1,-1} +\ket{1,1} )+ 6\sqrt{ \frac{\pi}{3} }\ket{1,0}  \right) \\
  & = rf(r)\left(  \sqrt{ \frac{2\pi}{3} }(1+i)\ket{1,-1} +\sqrt{ \frac{2\pi}{3 }}(i-1)\ket{1,1} + 6\sqrt{ \frac{\pi}{3} }\ket{1,0}  \right)
 \end{align}$$
-We do not need to worry about the normalization of the r component, because they are such that the overall normalization is zero. 
+We do not need to worry about the normalization of the r component, because they are such that the overall normalization is one. 
 
 Then:
 $$\begin{align}
