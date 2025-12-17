@@ -162,6 +162,32 @@ $$\frac{p^{2}}{2m}=  - \frac{\hbar^{2}}{2m}\nabla^{2}=\frac{1}{2m}\left( p_{r}^{
 ![[Pasted image 20251216203905.png|center|500]]
 
 $$\sqrt{ j(j+1)-m(m\pm 1) }\bra{m_{1},m_{2}}m\pm 1\rangle= \sqrt{ j_{1}(j_{1}+1)-m_{1}(m_{1}\mp 1) }\bra{m_{1}\mp 1,m_{2}}m\rangle +\sqrt{ j_{2}(j_{2}+1)-m_{2}(m_{2}\mp 1) } \bra{m_{1},m_{2} \mp 1} m \rangle   $$
+# 11. Spherical tensor
+$$[J\pm,T^{(k)}_{q}]=\hbar \sqrt{ k(k+1)-q(q\pm 1) }T^{(k)}_{q\pm 1},[J_{z},T^{(k)}_{q}]=\hbar q T^{(k)}_{q}$$
+$$\mathscr{D}T^{(k)}_{q}\mathscr{D}^{\dagger}=\sum_{q^{'}}\mathscr{D}^{(k)}_{q^{'}q}T^{(k)}_{q^{'}}$$
+$$\bra{\alpha,j,m} T^{(k)_{}}_{q}\ket{\alpha^{'},j^{'},m^{'}} = \bra{j^{'},k,m^{'},q}j^{'},k,j,m\rangle \frac{\bra{\alpha,j} |T^{(k)}_{}|\ket{\alpha^{'},j^{'}} }{\sqrt{ 2j+1 }} $$
+$$T^{(k)}_{q}= \sum_{q_{1},q_{2}}\bra{k_{1},k_{2},q_{1},q_{2}} k_{1},k_{2},k,q\rangle U^{(k_{1})}_{q_{1}}V^{(k_{2})}_{q_{2}}$$
+$$\mathscr{D}^{(k_{1})}_{q_{1}m_{1}}(R)\mathscr{D}_{q_{2}m_{2}}^{(k_{2})}(R)=\sum_{J,\mu,\nu}\bra{k_{1},k_{2},q_{1},q_{2}}k_{1},k_{2}, J,\mu\rangle \bra{k_{1},k_{2},J,\nu} k_{1},k_{2},m_{1},m_{2}\rangle\mathscr{D}_{\mu \nu}^{(J)}(R) $$
+# 12. SHO
+$$\psi_{n}(x)=\left( \frac{m\omega}{\pi \hbar} \right)^{1/4} \frac{1}{\sqrt{ 2^nn! }}H_{n}\left(  \sqrt{ \frac{m\omega}{\hbar} }x \right)\exp\left( - \frac{m\omega}{2\hbar}x^{2} \right)$$
+$$\begin{align}
+ & H_{0}=1 \\
+ & H_{1}(\xi)=2\xi \\
+ & H_{2}(\xi)=4\xi^{2}-2 \\
+ & H_{3}(\xi)=8\xi^{3}-12\xi \\
+ & H_{4}(\xi)=16 \xi^4-48 \xi^{2}+12
+\end{align}$$
+# 13. Hydrogen atom
+$$\begin{align}
+ & \psi_{n}(r,\theta,\phi )\propto \left( \frac{r}{a_{0}} \right)^l e^{- \frac{r}{na_{0}}}L^{2l+1}_{n-l-1}\left(  \frac{2r}{na_{0}} \right)Y_{l}^m(\theta,\phi) \\
+ & L_{0}^1(\rho)=1 \\
+ & L_{1}^1(\rho)=2-\rho \\
+ & L_{0}^3(\rho)=1 \\
+ & L_{2}^1(\rho)= \frac{1}{2}(6-6\rho + \rho^{2})  \\
+ & L_{1}^{3}=4-\rho \\
+ & L_{0}^5(\rho)=1
+\end{align}$$
+
 # Things to be aware of
 1. Negative sign in Gaussian integrals
 2. Factorial in Taylor expansion

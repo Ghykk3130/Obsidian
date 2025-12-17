@@ -86,86 +86,68 @@ $$\begin{align}
 $$\ket{j=1,m=0} =\frac{1}{\sqrt{ 2 }}\left( \ket{m_{1}=\frac{1}{2},m_{2}=-\frac{1}{2}} -\ket{m_{1}=-\frac{1}{2},m_{2}=\frac{1}{2}}  \right)$$
 ## Caveat
 只有斜向右上或者向左下的三角形是可以的。这取决于CG系数递推公式的形式。
+
+
 # 3. $\vec{L}+\vec{S}$ 
 
-## Big picture
+我们以$j=l+ \frac{1}{2}$为例。suppress $j,l,s$，我们需要分解$\ket{m}$。而显然可以分解为$\ket{m-\frac{1}{2}, \frac{1}{2}},\ket{m+ \frac{1}{2},- \frac{1}{2}}$。
 
-我们考虑的是$\ket{l,s,j,m}$在$\ket{l,s,m_{l},m_{s}}$上的投影。这个投影的大小就是CG系数。我们忽略一些量子数将CG系数简写为$\bra{m_{l},m_{s}}l,s\rangle$。
+>[!Note] Proposition 1
+$$\bra{m- \frac{1}{2}, \frac{1}{2}} m\rangle= \sqrt{  \frac{l+m+ \frac{1}{2}}{2l+1} }$$
+## Proof.
 
-我们知道CG系数非零的条件：CG系数非零要求 1) $m=m_{l}+m_{s}$。2) $|l-s|\leq j\leq l+s$。因此$j$有两种取值$l\pm \frac{1}{2}$(除非$l=0$。)，此外$m_{l}$还有两种取值$\pm \frac{1}{2}$。
+我们考虑$\bra{m- \frac{1}{2}, \frac{1}{2}}m\rangle$。我们考虑如下的路径：
 
-固定$l=l,s= \frac{1}{2}$, CG系数$\bra{m_{l},m_{s}}j,m\rangle$就有四个自由度。$m=m_{l}+m_{s}$消去一个自由度。我们用$m_{l},m_{s},j$来描述剩下的三个自由度。在这三个自由度中，$j$的那个自由度只能取$l \pm s=l \pm \frac{1}{2}$两个值。$m_{s}$的那个自由度也只能取$\pm \frac{1}{2}$两个值。 而$m_{l}$的那个自由度可以取$-l,...,l$的$2l+1$个值。
+![[Drawing 2025-12-16 22.07.21.excalidraw|center|400]]
 
-我们接下来用$m_{s},j,m$这三个变量，不过自由度的限制还是一样的。
-
-CG系数的非零条件让我们可以知道$\ket{j,m}$在哪些$\ket{m_{l},m_{s}}$上有投影。所以
-
-$\ket{l+ \frac{1}{2},m}$在$\ket{m- \frac{1}{2}, \frac{1}{2}}$和$\ket{m+ \frac{1}{2}, -\frac{1}{2}}$上有投影
-$\ket{l- \frac{1}{2},m}$在$\ket{m- \frac{1}{2}, \frac{1}{2}}$和$\ket{m+ \frac{1}{2}, -\frac{1}{2}}$上有投影
-
-这个投影的系数就是CG系数。
-
-## When $m_{s}= \frac{1}{2},j=l+ \frac{1}{2}, m \text{ arbitrary}$
-
-在这种情况下可以得到一个CG系数。
-
-Fix $j_{1}=l,j_{2}=s=\frac{1}{2}, j=l+ \frac{1}{2},m_{s}=\frac{1}{2},m=m$
-我们观察proposition 2中式子就会发现，右手边是左手边的$m_{1},m_{2}$分别加一对应的CG系数。Proposition 2不好处理，因为右手边含有两个CG系数。在某些特殊情况下，右手边可以只含一个CG系数。例如我们取了$m_{2}=m_{s}=\frac{1}{2}$，所以$m_{2}+1$对应的CG系数是0（因为超过了$s$）
-
-我们选择一直增加$m_{1}=m_{l}$到它的上限$l$，以此来获得一系列CG系数的递推式。省略量子数$l,s$就有：
-
+我们之所以考虑这个路径是因为左上角显然为零。CG递推式比较简单。我们有：
 $$\begin{align}
-\sqrt{ \left( l+m+\frac{3}{2} \right)\left( l-m+\frac{1}{2} \right) }\bra{m-\frac{1}{2},  \frac{1}{2} }l+ \frac{1}{2}, m \rangle  & =\sqrt{ \left( l-m+ \frac{1}{2} \right) \left( l+m+ \frac{1}{2} \right) }\bra{m+ \frac{1}{2}, \frac{1}{2}}l+ \frac{1}{2},m+1\rangle \\ \sqrt{ \left( l+m+\frac{5}{2} \right)\left( l-m-\frac{1}{2} \right) }\bra{m+\frac{1}{2},  \frac{1}{2} }l+ \frac{1}{2}, m+1 \rangle  & =\sqrt{ \left( l-m- \frac{1}{2} \right) \left( l+m+ \frac{3}{2} \right) }\bra{m+ \frac{3}{2}, \frac{1}{2}}l+ \frac{1}{2},m+2\rangle \\ \dots\\ \sqrt{ (2l+1) \cdot 1 }\bra{l-1, \frac{1}{2}} l+ \frac{1}{2},l- \frac{1}{2}\rangle  & = \sqrt{ 1\cdot 2l }\bra{l, \frac{1}{2}} l+ \frac{1}{2}, l +\frac{1}{2}\rangle
-  
+ & \sqrt{ \left( l+ \frac{1}{2} \right)\left( l+ \frac{3}{2} \right)-m(m+1) }\bra{m- \frac{1}{2}, \frac{1}{2} }m\rangle= \sqrt{ l(l+1)-\left( m- \frac{1}{2} \right)\left( m+ \frac{1}{2} \right) }\bra{m+ \frac{1}{2}, \frac{1}{2} }m\rangle \\
+  \implies &  \sqrt{ \left( l-m + \frac{1}{2}\right)\left( l+m+ \frac{3}{2} \right)  }\bra{m- \frac{1}{2}, \frac{1}{2}} m\rangle= \sqrt{ \left( l-m+ \frac{1}{2} \right)\left( l+m+ \frac{1}{2} \right) }\bra{m+ \frac{1}{2}, \frac{1}{2}} m\rangle \\
+\implies & \bra{m- \frac{1}{2}, \frac{1}{2}} m\rangle= \sqrt{ \frac{l+m+ \frac{1}{2}}{l+m+ \frac{3}{2}} }\bra{m+ \frac{1}{2}, \frac{1}{2}} m\rangle
 \end{align}$$
+如果我们一直往左走，就有：
+$$\begin{align}
+\bra{m- \frac{1}{2}, \frac{1}{2}} m\rangle  & = \sqrt{ \frac{l+m+\frac{1}{2}}{l+m+ \frac{3}{2}} } \sqrt{ \frac{l+m+ \frac{3}{2}}{l+m+ \frac{5}{2}}  }\bra{m+ \frac{3}{2}, \frac{1}{2}} m\rangle \\
+ & = \sqrt{  \frac{l+m+ \frac{1}{2}}{l+m+ \frac{5}{2}} }\bra{m+ \frac{3}{2}, \frac{1}{2} }m\rangle \\
+ & =\dots \\
+ & = \sqrt{ \frac{l+m+ \frac{1}{2}}{2l+1} }\bra{l, \frac{1}{2}} l+ \frac{1}{2}\rangle 
+\end{align}$$
+因为$\bra{l, \frac{1}{2}}l+ \frac{1}{2}\rangle=1$，所以容易得到：
+$$\bra{m- \frac{1}{2}, \frac{1}{2}} m\rangle= \sqrt{  \frac{l+m+ \frac{1}{2}}{2l+1} }$$
+>[!Right]
+>$\blacksquare$
 
-$\implies \bra{m- \frac{1}{2}, \frac{1}{2}}l + \frac{1}{2}, m\rangle= \sqrt{ \frac{l+m+ \frac{1}{2}}{2l+1} }\bra{l, \frac{1}{2}}l+ \frac{1}{2}, l+ \frac{1}{2}\rangle$
-我们知道$\ket{l, \frac{1}{2}}=\ket{l+ \frac{1}{2},l+ \frac{1}{2}}$ up to a phase factor。因为当$m=l+ \frac{1}{2}$时，我们只能得到$m_{l}=l,s= \frac{1}{2}$。也就是说$\ket{l+ \frac{1}{2},l+ \frac{1}{2}}$只在$m_{l}=l,s= \frac{1}{2}$这个态上有分量。一般情况下，$m$可以在很多态下有分量，因为$m$可以以很多种方式拆分成$m_{l},s$。但在上限处只有唯一的拆分。
+>[!Note] Proposition 2
+$$\bra{m+ \frac{1}{2}, - \frac{1}{2}} j=l+ \frac{1}{2},m\rangle=\sqrt{ \frac{l-m+ \frac{1}{2}}{2l+1} }$$
+$$\bra{m- \frac{1}{2}, \frac{1}{2}} j=l- \frac{1}{2},m\rangle= - \sqrt{  \frac{l-m+ \frac{1}{2}}{2l+1} }$$
+$$\bra{m+ \frac{1}{2}, - \frac{1}{2}} j=l- \frac{1}{2},m\rangle=\sqrt{ \frac{l+m+ \frac{1}{2}}{2l+1} } $$
+## Proof.
 
->[!Convention 1]
-$\bra{l, \frac{1}{2}}l+ \frac{1}{2},l+ \frac{1}{2}\rangle=1$ 
-
-$\implies \bra{m- \frac{1}{2}, \frac{1}{2}}l+ \frac{1}{2}, m\rangle=\sqrt{ \frac{l+m+ \frac{1}{2}}{2l+1} }$
-
-## General case
-
-由big picture, 我们知道： $$\left\{ \begin{align}
-\ket{l+ \frac{1}{2},m}  & =A\ket{m- \frac{1}{2}, \frac{1}{2}} +B\ket{m+ \frac{1}{2}, -\frac{1}{2}} \\
-\ket{l- \frac{1}{2},m}  & =C\ket{m- \frac{1}{2}, \frac{1}{2}} +D\ket{m+ \frac{1}{2},- \frac{1}{2}} 
+可以通过正交性得到其它CG系数。In general， 我们知道： $$\left\{ \begin{align}
+\ket{j=l+ \frac{1}{2},m}  & =A\ket{m- \frac{1}{2}, \frac{1}{2}} +B\ket{m+ \frac{1}{2}, -\frac{1}{2}} \\
+\ket{j=l- \frac{1}{2},m}  & =C\ket{m- \frac{1}{2}, \frac{1}{2}} +D\ket{m+ \frac{1}{2},- \frac{1}{2}} 
 \end{align} \right.$$
-其中$A,B,C,D$为相应CG系数。我们仅仅是获得了$A=\sqrt{ \frac{l+m+ \frac{1}{2}}{2l+1} }$。
-
->[! Idea]
-我们可以利用基的正交性获得其他的CG系数。
-
-考虑基变换矩阵：$\begin{pmatrix}\ket{l+ \frac{1}{2},m } & \ket{l- \frac{1}{2},m}\end{pmatrix}= \begin{pmatrix}\ket{m- \frac{1}{2}, \frac{1}{2}} & \ket{m+ \frac{1}{2},-\frac{1}{2}}\end{pmatrix}\begin{pmatrix}A & C \\ B & D\end{pmatrix}$
-
+其中$A,B,C,D$为相应CG系数。我们仅仅是获得了$A=\sqrt{ \frac{l+m+ \frac{1}{2}}{2l+1} }$。因为变换前后的矢量各自都是互相垂直的。所以一定有：
 Orthogonality $\implies$ $\begin{pmatrix}A & C \\ B & D\end{pmatrix}=\begin{pmatrix}\cos\alpha & -\sin\alpha \\ \sin\alpha & \cos\alpha\end{pmatrix}$ for some $\alpha$
 
 Know: $\cos\alpha=\sqrt{ \frac{l+m+ \frac{1}{2}}{2l+1} }$
 
 $\implies \sin\alpha= \pm \sqrt{ \frac{l-m+ \frac{1}{2}}{2l+1} }=\bra{m+ \frac{1}{2}, - \frac{1}{2}}l+ \frac{1}{2},m\rangle$
 
-接下来确定符号。
+接下来确定符号。我们有：
+$$\begin{align}
+\bra{m+ \frac{1}{2}, -\frac{1}{2}} m \rangle & =  \bra{m+ \frac{1}{2}, -\frac{1}{2} }  \frac{J_{-}^k}{C }\ket{l+ \frac{1}{2}}=\bra{m+ \frac{1}{2},- \frac{1}{2}}  \frac{J_{-}^k}{C }\ket{l, \frac{1}{2}}\text{, for some }k,C  
+\end{align}$$
+容易证明矩阵$J_{-}$在$\ket{m_{l},m_{s}}$下的矩阵元都为正。（无论怎么用$J_{-}$作用在$\ket{m_{l},m_{s}}$上，都只会得到正数的系数不是吗？）所以：
+$$\bra{m+ \frac{1}{2}, \frac{1}{2}} m\rangle \geq 0$$
+所以：
+$$B= \sqrt{ \frac{l-m+ \frac{1}{2}}{2l+1} }, C=- \sqrt{  \frac{l-m+ \frac{1}{2}}{2l+1} },A=D= \sqrt{ \frac{l+m+ \frac{1}{2}}{2l+1} }$$
+>[!Right]
+>$\blacksquare$
 
-注意到$\bra{m+ \frac{1}{2}, -\frac{1}{2}}l+ \frac{1}{2},m\rangle$的ket部分是$\ket{j,m}$这个老基，我们很难将它和新基$\ket{m_{l},m_{s}}$联系起来。所以我们想把$\ket{j,m}$换掉。
 
->[! Idea]
->Convention 1可以建立新老基之间的联系。
 
-Convention 1 $\implies$ $\ket{l+ \frac{1}{2},l+ \frac{1}{2}}=\ket{l, \frac{1}{2}}$
-$\ket{l+ \frac{1}{2},m}= \frac{J_{-}^k}{C}\ket{l+ \frac{1}{2}, l+ \frac{1}{2}}$ for some $k$ and $C>0$
-
-于是：
-$\bra{m+ \frac{1}{2}, - \frac{1}{2}}l+ \frac{1}{2},m\rangle=\bra{m+ \frac{1}{2}, -\frac{1}{2}} \frac{J_{-}^k}{C}\ket{l+ \frac{1}{2}, l+ \frac{1}{2} }=\bra{m+ \frac{1}{2}, -\frac{1}{2}} \frac{J_{-}^k}{C}\ket{l, \frac{1}{2}}$
-
-容易证明矩阵$J_{-}$在$\ket{m_{l},m_{s}}$下的矩阵元都为正。即：
-$\bra{m_{l}^{'},m_{s}^{'}}J_{-}\ket{m_{l},m_{s}}=\bra{m_{l}^{'},m_{s}^{'}}(L_{-}+S_{-})\ket{m_{l},m_{s}}=\hbar \sqrt{ l(l+1)-m_{l}(m_{l}-1) }\bra{m_{l}^{'},m_{s}^{'}}m_{l}-1,m_{s}\rangle+ \hbar \sqrt{ s(s+1)-m_{s}(m_{s}-1) }\bra{m_{l}^{'},m_{s}^{'}}m_{l},m_{s}-1\rangle$
-所以$\frac{J_{-}^k}{C}$的矩阵元都为正。所以应当取正号。
-
-因此：
->[!Proposition 3]
-$\begin{pmatrix}\ket{j=l+ \frac{1}{2},m } & \ket{j=l- \frac{1}{2},m}\end{pmatrix}= \begin{pmatrix}\ket{m_{l}=m-\frac{1}{2},m_{s}=\frac{1}{2}} & \ket{m_{l}=m+ \frac{1}{2},m_{s}=-\frac{1}{2}}\end{pmatrix}\begin{pmatrix}\sqrt{ \frac{l+m+ \frac{1}{2}}{2l+1} } & -\sqrt{ \frac{l-m+ \frac{1}{2}}{2l+1} } \\ \sqrt{ \frac{l-m+ \frac{1}{2}}{2l+1} } & \sqrt{ \frac{l+m+ \frac{1}{2}}{2l+1} }\end{pmatrix}$
 
 
 将态$\ket{j= l+ \frac{1}{2},m}= \sqrt{ \frac{l+m+ \frac{1}{2}}{2l+1} }\ket{m_{l}=m- \frac{1}{2},m_{s}= \frac{1}{2}}+ \sqrt{ \frac{l-m+ \frac{1}{2}}{2l+1} }\ket{m_{l}=m+ \frac{1}{2},m_{s}= -\frac{1}{2}}$在表象下展开得到$\sqrt{ \frac{l+m+ \frac{1}{2}}{2l+1} }Y_{l}^{m- 1/2}(\theta,\phi)X_{+}+ \sqrt{ \frac{l-m+ \frac{1}{2}}{2l+1} }Y_{l}^{m+1/2}(\theta,\phi)X_{-}$
