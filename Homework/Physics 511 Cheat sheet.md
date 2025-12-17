@@ -155,7 +155,8 @@ $$\begin{align}
 $$\nabla^{2}= \frac{1}{r^{2}} \frac{\partial}{\partial r}\left( r^{2} \frac{\partial}{\partial r^{}} \right)+ \frac{1}{r^{2}\sin \theta} \frac{\partial}{\partial \theta}\left( \sin \theta \frac{\partial}{\partial \theta} \right)+ \frac{1}{r^{2}\sin ^{2} \theta} \frac{\partial^{2}}{\partial \phi^{2}}$$
 $$L^{2}= -\hbar^{2}\left[\frac{1}{\sin \theta} \frac{\partial}{\partial \theta}\left( \sin \theta \frac{\partial}{\partial \theta} \right)+ \frac{1}{\sin ^{2}\theta} \frac{\partial^{2}}{\partial \phi^{2}}\right]$$
 $$\frac{p^{2}}{2m}=  - \frac{\hbar^{2}}{2m}\nabla^{2}=\frac{1}{2m}\left( p_{r}^{2}+ \frac{L^{2}}{r^{2}} \right)=- \frac{\hbar^{2}}{2m} \frac{1}{r^{2}} \frac{\partial}{\partial r}\left( r^{2} \frac{\partial}{\partial r} \right)+ \frac{L^{2}}{2mr^{2}}$$
-
+# 9. Spherical harmonics
+![[Pasted image 20251216201628.png|center|500]]
 
 # Things to be aware of
 1. Negative sign in Gaussian integrals
