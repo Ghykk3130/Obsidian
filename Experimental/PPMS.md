@@ -18,7 +18,7 @@
 - Then setup the test sequence. Set $0.5mA$ amplitude (not RMS!) for the heater. Set $0.5 mA$ offset. Since we want the square wave all above $0$. Set the frequency of the heater such that equilibrium can be observed. Usually $0.03Hz$. Click trigger to output the wave. 
 - Remember how the $V_{th}$ and $V_{{ \text{seebeck} }}$ goes to judge the initial carrier type.
 - Typical parameters:
-	- Cooldown rate $0.5K/ min$.
+	- Cooldown rate $0.5K/ min$ to low temperature. The temperature then seeps up at $3K /min$.
 	- Field strength $14T$. ($1oe=10^{-4}T$)
-	- Field sweep rate $40 oe / s$. 
+	- Field sweep rate $40 oe / s$ when taking measurement. $100 oe / s$ when finishing up and returning to zero field.
 - Field should not stay at non zero value for a long time. 
