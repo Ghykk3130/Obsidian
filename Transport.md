@@ -574,6 +574,20 @@ $$\int_{\text{FBZ}} d^{3}k \frac{\partial f^0}{\partial\epsilon_{\vec{k}}}\vec{v
 >$$\alpha=  \frac{1}{4\pi^{3}}e\int_{\text{FBZ}} d^{3}k\tau v^{2} \frac{\mu-\epsilon_{\vec{k}}}{T} \frac{\partial f^0}{\partial\epsilon_{\vec{k}}}$$
 >$$\kappa=-\int d^{3}k\tau v^{2} \frac{(\epsilon_{\vec{k}}-\mu)^{2}}{T} \frac{\partial f^0}{\partial\epsilon_{\vec{k}}}$$
 
+## Ex:
+
+我们计算粒子流：
+$$\begin{align}
+\vec{J}^n & = \frac{1}{4\pi^{3}}\tau\int d^{3}k \vec{v}\vec{v}\cdot \frac{\nabla T}{T}(\epsilon_{\vec{k}}-\mu) \frac{\partial f^0}{\partial\epsilon_{\vec{k}}}
+\end{align}$$
+WLOG令$\nabla T \parallel x$，那么：
+$$\begin{align}
+J^n_{x} & = \frac{1}{4\pi^{3}} \tau\int d^{3}k v_{x}^{2} \frac{\nabla T}{T}(\epsilon_{\vec{k}}-\mu) \frac{\partial f^0}{\partial\epsilon_{\vec{k}}}
+\end{align}\tag{*}$$
+在低温下，Fermi-Dirac分布不是完全sharp。这种不sharp可以理解为valence band中一些电子被kick到conduction band，在valence band留下holes。所以对于电子，$J^n_{x}$反平行于$\nabla T$。
+
+对于空穴，我们先计算价带电子粒子流。还是用$(*)$。所以$J^n_{x}$平行于$\nabla T$。然而空穴粒子流等于负电子粒子流，所以空穴粒子流$J^n_{x,h}$反平行于$\nabla T$。计算电流时，应当两种载流子的电流加起来。因为导带和价带中电子的流动都是真实的电荷移动。
+
 ## 2.5 Magnetoresistivity, Hall conductivity
 
 ^7be923
@@ -724,7 +738,6 @@ $$\begin{align}
 我们发现，$\sigma \propto \tau$，$\mu_{n} \propto \tau^{2}$。在弱场脏样品下，我们有$\sigma_{\parallel}\propto \tau$。表现为Ohmic resistance。电子主要被电场驱动，被散射拖慢。在强场纯净样品下，我们有$\sigma_{\parallel}\propto \frac{\tau}{\tau^{2}}= \frac{1}{\tau}$。所以样品越纯净，反而$\sigma_{\parallel}$越小，电子被束缚在垂直于电场的“圆周轨道“里。电子被磁场拖慢。
 
 而对于$\sigma_{\perp}$，弱场情况下有$\sigma_{\perp}\propto \tau^{3}$，强场情况下有$\sigma_{\perp}\propto \tau$，都是样品越纯净，conductance越大。
-
 
 
 
