@@ -47,6 +47,8 @@ Anisotropy：
 - 一旦$M_{ab},M_{c}$发生crossover，则代表存在spin reorientation。Spin reorientaion指从easy axis变成easy plane或者反之。总之就是磁化的“容易方向”变了。
 - Phase diagram：$Ga$ concentration越高，约easy-axis。$Ga$就是在营造$Mn$的Kagome的easy-axis的晶体场环境。而高温会破坏easy-axis。因为$R$是easy-axis，$Mn$是easy-plane，所以$Ga$在助长$R$的anisotropy。
 
+# MR measurement
+- $\text{MR}= \frac{\rho_{xx}(B)-\rho_{x x}(0)}{\rho_{x x}(0)}$。通常情况下，我们有：$$\sigma_{\parallel}= \frac{\sigma}{1+\mu_{n}^{2}B^{2}}$$假设$\tau$不变，则$B$越大，conductance越小。所以$\text{MR}>$
 
 # Things to learn
 - Heisenberg model single-site anisotropy and Ising-type anisotropy.
