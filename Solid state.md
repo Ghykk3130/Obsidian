@@ -470,8 +470,8 @@ $$\begin{align}
  &= \frac{1}{N}\left(N\epsilon_{0}- 2Nt\cos(ak)\right)  
 \end{align}$$
 $a$为lattice parameter，两个原子之间的间距。
-
-
+## Remark
+从上面的例子可以看到，若电子轨道重叠越大，即重叠积分$t$越大，那么能带曲率越大。
 
 
 

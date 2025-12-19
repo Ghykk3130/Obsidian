@@ -22,3 +22,5 @@
 	- Field strength $14T$. ($1oe=10^{-4}T$)
 	- Field sweep rate $40 oe / s$ when taking measurement. $100 oe / s$ when finishing up and returning to zero field.
 - Field should not stay at non zero value for a long time. 
+- Whenever going to a new temperature stage, wait $8\ min$ for complete thermal equilibrium.
+
