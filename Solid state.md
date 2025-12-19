@@ -420,17 +420,32 @@ $$\begin{align}
 
 ^48c77b
 
-考虑一个晶体。令$\ket{n,\alpha}$表示isolated状态下第$n$个原子的第$\alpha$个orbital。我们规定：
+考虑一个晶体。令$\ket{n,\alpha}$表示isolated状态下第$n$个原子的第$\alpha$个orbital。我们定义：
+
+>[!Note] Definition 1
 $$\bra{\vec{r}} n,\alpha\rangle= \psi_{\alpha}(\vec{r}-\vec{R}_{n})$$
-则$\{ \ket{n,\alpha} \}$形成一个完备基。固定Bloch波矢$\vec{k}$，则$\sum_{n}e^{i\vec{k}\cdot \vec{R}_{n}}\ket{n,\alpha}$是Bloch态。因为：
+
+>
+则$\{ \ket{n,\alpha} \}$形成一个完备基。固定Bloch波矢$\vec{k}$，则$\sum_{n}e^{i\vec{k}\cdot \vec{R}_{n}}\ket{n,\alpha}$是Bloch态。
+
+>[!Note] Proposition 1
+>Define $\ket{\vec{k},\alpha} = \frac{1}{\sqrt{ N }}\sum_{n}e^{i\vec{k}\cdot \vec{R}_{n}}\ket{n,\alpha}$, then
+$\frac{1}{\sqrt{ N }} \sum_{n}e^{i\vec{k}\cdot \vec{R}_{n}}\ket{n,\alpha}$ is a Bloch state with wavevector $\vec{k}$.
+## Proof.
 $$\begin{align}
 \sum_{n} e^{i\vec{k}\cdot \vec{R}_{n}}\bra{\vec{r}+\vec{R}} n,\alpha\rangle & = \sum_{n}e^{i\vec{k}\cdot \vec{R_{n}}} \psi_{\alpha}(\vec{r}+\vec{R}-\vec{R}_{n}) \\
  & = e^{i\vec{k}\cdot \vec{R} }\sum_{}e^{i\vec{k}\cdot(\vec{R}_{n}-\vec{R})}\psi_{\alpha}(\vec{r}+\vec{R}-\vec{R}_{n}) \\
  & = e^{i\vec{k}\cdot \vec{R}}\sum e^{i\vec{k}\cdot \vec{R}_{n}}\psi_{\alpha}(\vec{r}-\vec{R}_{n}) \\
  & = e^{i\vec{k}\cdot \vec{R}}\sum e^{i\vec{k}\cdot \vec{R}_{n}}\bra{\vec{r}+\vec{R}}\alpha\rangle
 \end{align}$$
-在normalization之后，定义：
-$$\ket{\vec{k},\alpha} = \frac{1}{\sqrt{ N }}\sum_{n}e^{i\vec{k}\cdot \vec{R}_{n}}\ket{n,\alpha} $$
+>[!Right]
+>$\blacksquare$
+
+
+显然，$\ket{\vec{k},\alpha},\ \forall \alpha$是$\vec{k}$对应能量本征空间的本征态，能量本征态是degenerate的。所以$\bra{\vec{k},\alpha}H \ket{\vec{k},\beta}$是block diagonalized的。
+
+
+
 
 
 
