@@ -713,12 +713,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Reading notes/Electrical resistance of ferromagnetic metals.md",
+                "file": "Untitled 1.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Electrical resistance of ferromagnetic metals"
+              "title": "Untitled 1"
             }
           },
           {
@@ -1297,8 +1297,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200,
-    "collapsed": true
+    "width": 200
   },
   "right": {
     "id": "9003d078f8dbc4ed",
@@ -1399,13 +1398,14 @@
   },
   "active": "c2192d0c6010e5dc",
   "lastOpenFiles": [
+    "Untitled 2.md",
+    "Reading notes/Doping-induced spin reorientation in Kagome magnet TmMn6Sn6.md",
+    "Transport.md",
+    "Reading notes/Electrical resistance of ferromagnetic metals.md",
     "Pictures/Pasted image 20251218234206.png",
     "Solid state.md",
     "Experimental/Basic Electronics.md",
-    "Reading notes/Electrical resistance of ferromagnetic metals.md",
     "Experimental/PPMS.md",
-    "Reading notes/Doping-induced spin reorientation in Kagome magnet TmMn6Sn6.md",
-    "Transport.md",
     "Experimental/Carrier-Photon Rate Equations.md",
     "Clebsch-Gordan系数.md",
     "Homework/Physics 511 Final Practice.md",
@@ -1435,7 +1435,6 @@
     "Pictures/Pasted image 20251209154922.png",
     "Pictures/Pasted image 20251209152146.png",
     "Pictures/Pasted image 20251209151847.png",
-    "Pictures/Pasted image 20251209151656.png",
     "Pictures/Wu_ContemporaryChineseArt.pdf",
     "Wu_ContemporaryChineseArt.pdf",
     "Reading notes",
