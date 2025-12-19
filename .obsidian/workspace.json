@@ -713,12 +713,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Experimental/Basic Electronics.md",
+                "file": "Reading notes/Electrical resistance of ferromagnetic metals.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Basic Electronics"
+              "title": "Electrical resistance of ferromagnetic metals"
             }
           },
           {
@@ -1282,7 +1282,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "conduction band",
+                "query": "",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -1293,12 +1293,12 @@
               "title": "Search"
             }
           }
-        ],
-        "currentTab": 3
+        ]
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 200,
+    "collapsed": true
   },
   "right": {
     "id": "9003d078f8dbc4ed",
@@ -1399,10 +1399,12 @@
   },
   "active": "c2192d0c6010e5dc",
   "lastOpenFiles": [
+    "Pictures/Pasted image 20251218234206.png",
+    "Solid state.md",
+    "Experimental/Basic Electronics.md",
     "Reading notes/Electrical resistance of ferromagnetic metals.md",
     "Experimental/PPMS.md",
     "Reading notes/Doping-induced spin reorientation in Kagome magnet TmMn6Sn6.md",
-    "Solid state.md",
     "Transport.md",
     "Experimental/Carrier-Photon Rate Equations.md",
     "Clebsch-Gordan系数.md",
@@ -1423,8 +1425,6 @@
     "Homework/Physics 511 Homework 8.md",
     "Homework/Physics 511 Homework 7.md",
     "Schrodinger's and Heisenberg's pictures.md",
-    "Excalidraw/Drawing 2025-12-16 22.07.21.excalidraw.md",
-    "Ising Model.md",
     "Pictures/Pasted image 20251216203905.png",
     "Pictures/Pasted image 20251216201628.png",
     "Pictures/Spherical_harmonics.pdf",
