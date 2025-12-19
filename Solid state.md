@@ -425,7 +425,15 @@ $$\begin{align}
 >[!Note] Definition 1
 $$\bra{\vec{r}} n,\alpha\rangle= \psi_{\alpha}(\vec{r}-\vec{R}_{n})$$
 
->
+我们可以假设，不同原子的波函数没有重叠。同一原子不同本征态的波函数也没有重叠。于是：
+$$\begin{align}
+ & \int d^{3}r \bra{m,\beta} \vec{r}\rangle \bra{\vec{r}} n,\alpha\rangle =0 \\
+ & 
+\end{align}$$
+
+>[!Note] Postulate
+$$\bra{m,\beta} n,\alpha\rangle=\delta_{mn}\delta_{\alpha \beta}$$
+
 则$\{ \ket{n,\alpha} \}$形成一个完备基。固定Bloch波矢$\vec{k}$，则$\sum_{n}e^{i\vec{k}\cdot \vec{R}_{n}}\ket{n,\alpha}$是Bloch态。
 
 >[!Note] Proposition 1
