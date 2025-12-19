@@ -423,7 +423,7 @@ $$\begin{align}
 考虑一个晶体。令$\ket{n,\alpha}$表示isolated状态下第$n$个原子的第$\alpha$个orbital。我们定义：
 
 >[!Note] Definition 1
-$$\bra{\vec{r}} n,\alpha\rangle= \psi_{\alpha}(\vec{r}-\vec{R}_{n})$$
+$$\bra{\vec{r}} n,\alpha\rangle=  \bra{\vec{r}} T(\vec{R}_{n})\ket{\alpha} =\psi_{\alpha}(\vec{r}-\vec{R}_{n})$$
 
 我们可以假设，不同原子的波函数没有重叠。同一原子不同本征态的波函数也没有重叠。于是：
 $$\begin{align}
@@ -449,16 +449,27 @@ $$\begin{align}
 >$\blacksquare$
 
 显然，$\ket{\vec{k},\alpha},\ \forall \alpha$是$\vec{k}$对应能量本征空间的本征态，能量本征态是degenerate的。所以$\bra{\vec{k},\alpha}H \ket{\vec{k},\beta}$是block diagonalized的。
-
-
-
-
-
 ## Ex:
 
-考虑一维晶体，每个原子只有一个态$\ket{n}$。
-
-
+考虑一维晶体，每个原子只有一个态$\ket{\psi_{0}}$。令$\ket{n}$为第$n$个原子的态。则$\ket{n}=T(\vec{R}_{n})\ket{\psi_{0}}$。我们有：
+$$\begin{align}
+H & = \sum_{n,m}\ket{n} \bra{n} H \ket{m} \bra{m}  \\
+\end{align}$$
+我们假设，波函数非常局域，以至于：
+$$\begin{align}
+\bra{n} H\ket{m}  & = \int d^{3}r \psi ^{*}_{0}(\vec{r}-\vec{R}_{n})H\psi_{0}(\vec{r}-\vec{R}_{m}) \neq 0 \text{ only when }n,m\text{ are nearby}
+\end{align}$$
+假设：
+$$t=- \bra{n+1} H\ket{n}=-\bra{n} H \ket{n+1} \in \mathbb{R} $$
+$$\epsilon_{0} = \bra{n} H \ket{n} =\bra{\psi}H \ket{\psi}   $$
+这是因为$T$和Hamiltonian中的动能项可交换，也和Hamiltonian中的势能项（标量）可交换。所以：
+$$H= \sum_{n}\left[\epsilon_{0} \ket{n} \bra{n} - t(\ket{n} \bra{n+1} +\ket{n+1} \bra{n} )\right]$$
+我们计算Bloch态下的能量：
+$$\begin{align}
+\epsilon_{\vec{k}}=\bra{k} H \ket{k}  & = \frac{1}{N}\sum_{n,m,l} e^{ikR_{n}}e^{-ikR_{m}} \bra{n} (\epsilon_{0}\ket{l} \bra{l} -t\ket{l+1} \bra{l} -t\ket{l} \bra{l+1} ) \ket{m} \\
+ &= \frac{1}{N}\left(N\epsilon_{0}- 2Nt\cos(ak)\right)  
+\end{align}$$
+$a$为lattice parameter，两个原子之间的间距。
 
 
 
