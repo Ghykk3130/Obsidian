@@ -1268,7 +1268,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "tight binding",
+                "query": "",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -1279,8 +1279,7 @@
               "title": "Search"
             }
           }
-        ],
-        "currentTab": 3
+        ]
       }
     ],
     "direction": "horizontal",

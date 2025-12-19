@@ -428,9 +428,8 @@ $$\bra{\vec{r}} n,\alpha\rangle= \psi_{\alpha}(\vec{r}-\vec{R}_{n})$$
 我们可以假设，不同原子的波函数没有重叠。同一原子不同本征态的波函数也没有重叠。于是：
 $$\begin{align}
  & \int d^{3}r \bra{m,\beta} \vec{r}\rangle \bra{\vec{r}} n,\alpha\rangle =0 \\
- & 
+ & \int d^{3}r \bra{n,\beta} \vec{r}\rangle \bra{\vec{r}} n, \alpha\rangle=0
 \end{align}$$
-
 >[!Note] Postulate
 $$\bra{m,\beta} n,\alpha\rangle=\delta_{mn}\delta_{\alpha \beta}$$
 
@@ -449,8 +448,17 @@ $$\begin{align}
 >[!Right]
 >$\blacksquare$
 
-
 显然，$\ket{\vec{k},\alpha},\ \forall \alpha$是$\vec{k}$对应能量本征空间的本征态，能量本征态是degenerate的。所以$\bra{\vec{k},\alpha}H \ket{\vec{k},\beta}$是block diagonalized的。
+
+
+
+
+
+## Ex:
+
+考虑一维晶体，每个原子只有一个态$\ket{n}$。
+
+
 
 
 
