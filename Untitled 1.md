@@ -111,3 +111,5 @@ Aaron Pinczuk, Quantum Hall effect
 Christian Pfleiderer, Skyrmion lattice in a chiral magnet
 The Helical Magnet MnSi: Skyrmions and magnons
 
+Oxford magnetism, chapter 1,2, 5,6, 8
+
