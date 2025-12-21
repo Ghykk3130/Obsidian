@@ -713,12 +713,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Untitled 1.md",
+                "file": "Experimental/Basic Electronics.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Untitled 1"
+              "title": "Basic Electronics"
             }
           },
           {
@@ -1398,6 +1398,7 @@
   },
   "active": "c2192d0c6010e5dc",
   "lastOpenFiles": [
+    "Untitled 1.md",
     "Untitled 2.md",
     "Reading notes/Doping-induced spin reorientation in Kagome magnet TmMn6Sn6.md",
     "Transport.md",
@@ -1424,7 +1425,6 @@
     "张量算子.md",
     "Homework/Physics 511 Homework 8.md",
     "Homework/Physics 511 Homework 7.md",
-    "Schrodinger's and Heisenberg's pictures.md",
     "Pictures/Pasted image 20251216203905.png",
     "Pictures/Pasted image 20251216201628.png",
     "Pictures/Spherical_harmonics.pdf",
