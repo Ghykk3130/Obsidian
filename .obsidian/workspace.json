@@ -713,12 +713,26 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Solid state.md",
+                "file": "量子统计力学基础.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Solid state"
+              "title": "量子统计力学基础"
+            }
+          },
+          {
+            "id": "b16eec5066a9742e",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "二次量子化.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "二次量子化"
             }
           },
           {
@@ -1226,7 +1240,7 @@
             }
           }
         ],
-        "currentTab": 50
+        "currentTab": 51
       }
     ],
     "direction": "vertical"
@@ -1297,8 +1311,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200,
-    "collapsed": true
+    "width": 200
   },
   "right": {
     "id": "9003d078f8dbc4ed",
@@ -1397,8 +1410,11 @@
       "obsidian-excalidraw-plugin:New drawing": false
     }
   },
-  "active": "c2192d0c6010e5dc",
+  "active": "b16eec5066a9742e",
   "lastOpenFiles": [
+    "量子统计力学基础.md",
+    "二次量子化.md",
+    "Solid state.md",
     "Experimental/Basic Electronics.md",
     "Untitled 1.md",
     "Untitled 2.md",
@@ -1406,7 +1422,6 @@
     "Transport.md",
     "Reading notes/Electrical resistance of ferromagnetic metals.md",
     "Pictures/Pasted image 20251218234206.png",
-    "Solid state.md",
     "Experimental/PPMS.md",
     "Experimental/Carrier-Photon Rate Equations.md",
     "Clebsch-Gordan系数.md",
@@ -1424,8 +1439,6 @@
     "Homework/Physics 511 Homework 10.md",
     "Homework/Physics 511 Homework 9.md",
     "张量算子.md",
-    "Homework/Physics 511 Homework 8.md",
-    "Homework/Physics 511 Homework 7.md",
     "Pictures/Pasted image 20251216203905.png",
     "Pictures/Pasted image 20251216201628.png",
     "Pictures/Spherical_harmonics.pdf",
