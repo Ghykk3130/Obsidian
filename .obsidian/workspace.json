@@ -713,12 +713,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Experimental/Basic Electronics.md",
+                "file": "Solid state.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Basic Electronics"
+              "title": "Solid state"
             }
           },
           {
@@ -1297,7 +1297,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 200,
+    "collapsed": true
   },
   "right": {
     "id": "9003d078f8dbc4ed",
@@ -1398,6 +1399,7 @@
   },
   "active": "c2192d0c6010e5dc",
   "lastOpenFiles": [
+    "Experimental/Basic Electronics.md",
     "Untitled 1.md",
     "Untitled 2.md",
     "Reading notes/Doping-induced spin reorientation in Kagome magnet TmMn6Sn6.md",
@@ -1405,7 +1407,6 @@
     "Reading notes/Electrical resistance of ferromagnetic metals.md",
     "Pictures/Pasted image 20251218234206.png",
     "Solid state.md",
-    "Experimental/Basic Electronics.md",
     "Experimental/PPMS.md",
     "Experimental/Carrier-Photon Rate Equations.md",
     "Clebsch-Gordan系数.md",
