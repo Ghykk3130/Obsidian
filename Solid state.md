@@ -1632,12 +1632,44 @@ $$\begin{align}
 
 # 5. Domains
 
-考虑一个晶体。将晶体中spin方向一致的联通区域称为一个domain。
+考虑一个晶体。将晶体中spin方向一致的联通区域称为一个domain。两个domain之间的区域称为domain wall，可以以两个domain之间自旋夹角来表示。
 
-对于两个自旋夹角为$180^{\circ}$的domain，假设
+对于两个自旋夹角为$180^{\circ}$的domain，在这两个domain之间的domain每个自旋平行于domain面转过一个微小的夹角，这称为Bloch wall。若两个domain之间每个自旋垂直于domain转过一个微小夹角，这称为Nell wall。
 
+![[Pasted image 20251222152527.png|center|300]]
+## Ex:
 
+还有介于这两种domain wall：
+![[Drawing 2025-12-22 15.27.25.excalidraw|center|400]]
+在平行于面$\alpha$方向，演化是Bloch-type的。在垂直于面$\alpha$方向，演化是Neel-type的。
 
-考虑连接lattice point的某一条线方向，假设每个lattice point的横截面中所有spin形成一个domain，每个domain之间spin有夹角。这称为Bloch domain。
+## Ex:
 
-定义$180^{\circ}$domain wall为两个spin夹角$180^{\circ}$domain之间的区域。
+考虑一Bloch wall。假设Heisenberg model $-J\vec{S}_{i}\cdot \vec{S}_{j},\ J>0$。那么在壁内，沿着一条法线，假设中间隔着$N$个自旋，由于自旋旋转产生的能量为：
+$$\begin{align}
+-J \sum_{i}\vec{S}_{i}\cdot \vec{S}_{i+1} & = -J S^{2} \sum_{i} \cos d\theta_{i} \\
+ & \approx-JS^{2}\sum_{i} \left( - \frac{1}{2}d\theta_{i}^{2} \right) \\
+ & = \frac{1}{2}JS^{2} \frac{\pi^{2}}{N^{2}}\cdot N \\
+ & = \frac{1}{2}JS^{2} \frac{\pi^{2}}{N}
+\end{align}$$
+若domain平面内自旋面密度为$\frac{1}{a^{2}}$，那么Bloch wall内能量面密度为：
+$$\sigma_{\text{BW}}= \frac{1}{2}JS^{2} \frac{\pi^{2}}{N^{}a^{2}} > 0$$
+所以这种domain很快会被破坏。
+
+## Ex:
+
+现考虑spin受到$z$方向anisotropy能量密度$K\sin ^{2}\theta,\ K>0$。则沿法线，由于自旋旋转产生的能量为：
+$$\begin{align}
+-J \sum_{i}\vec{S}_{i}\cdot \vec{S}_{i+1}+a^{3}K\sum_{i}\sin ^{2}\theta_{i}
+\end{align}$$
+其中，$a^{3}$是因为$K$是能量密度，而一个自旋占据的体积是$a^{3}$。而我们考虑的是一条线的spin。第一项我们已经处理过。现在处理第二项。因为$i$每变化$1$，$\theta_{i}$变化$\frac{\pi}{N}$。所以每个$\theta_{i}$在$i$空间占据体积为$\frac{\pi}{N}$。
+$$\begin{align}
+K\sum_{i}\sin ^{2}\theta_{i} & \approx K \frac{N}{\pi}\int_{0}^{\pi}\sin ^{2}\theta= \frac{NK}{2}
+\end{align}$$
+所以Bloch wall内能量面密度为：
+$$\begin{align}
+\sigma_{\text{BW}} & = \frac{1}{2}JS^{2} \frac{\pi^{2}}{N^{}a^{2}}+ \frac{NK}{2a^{2}}\cdot a^{3} \\
+ & = \frac{1}{2}JS^{2} \frac{\pi^{2}}{Na^{2}}+ \frac{N^{}Ka}{2}
+\end{align}$$
+所以在$N= \pi S \sqrt{ \frac{J}{Ka^{3}} }$存在平衡点。Bloch wall厚度为$w=Na= \pi S \sqrt{ \frac{J}{Ka} }$。
+
