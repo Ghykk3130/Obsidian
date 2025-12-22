@@ -1680,7 +1680,6 @@ $$\begin{align}
 >[!Note] Proposition 1
 >Consider a sample in a magnetic field with no free current. Then the EM energy is:
 >$$E= - \frac{\mu_{0}}{2}\int d^{3}r\vec{H}\cdot \vec{M}$$
->Call this the demagnetization energy.
 ## Proof.
 $$\begin{align}
 \frac{\mu}{2}\int_{\mathbb{R}^{3}} d^{3}rH^{2} & \approx \frac{\mu_{0}}{2}\int d^{3}r H^{2} \\
@@ -1697,4 +1696,30 @@ $$\begin{align}
 最后是因为面积分延伸到无限是零。那么能量为$- \frac{\mu_{0}}{2}\int d^{3}r\vec{H}\cdot \vec{M}$
 >[!Right]
 >$\blacksquare$
+
+先不考虑外部磁场$\vec{H}$。若样品内部有$\vec{M}$，则该$\vec{M}$会产生一个场$\vec{H}_{d}$。这是因为我们有：
+$$\left\{\begin{align}
+ & \nabla \times \vec{H}_{d}=0 \\
+ & \nabla \cdot \vec{B}=0\implies \nabla \cdot \vec{H}_{d}=-\nabla \cdot \vec{M}
+\end{align}\right.$$
+这样$\vec{H}$为无旋场，那么可以引入磁标势，并将$-\nabla \cdot \vec{M}$作为“磁荷”，构成源，来解Poisson方程。这种磁荷显然不为零，因为在样品表面$\vec{M}$必定变化，所以至少在样品表面$\nabla \cdot \vec{M}\neq 0$。
+
+称$\vec{H}_{d}$为demagnetization field。现在加入外部磁场，总场仅为线性叠加。
+
+若不考虑demagnetization field，电磁能为：
+$$- \frac{\mu_{0}}{2}\int d^{3}r\vec{H}\cdot \vec{M}$$
+若考虑demagnetization field，则电磁能为：
+$$- \frac{\mu_{0}}{2}\int d^{3}r(\vec{H}+\vec{H}_{d})\cdot \vec{M}$$
+其中，我们忽略$\vec{H}_{d}$再改变磁化的二阶影响。称$-\frac{\mu_{0}}{2}\int d^{3}r\vec{H}_{d}\cdot \vec{M}$为demagnetization energy。
+
+
+
+
+
+
+
+
+
+我们有：
+$$\nabla \cdot \vec{B}=0 \implies \nabla \vec{H}=-\nabla \cdot \vec{M}$$
 
