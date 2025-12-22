@@ -1697,20 +1697,22 @@ $$\begin{align}
 >[!Right]
 >$\blacksquare$
 
-先不考虑外部磁场$\vec{H}$。若样品内部有$\vec{M}$，则该$\vec{M}$会产生一个场$\vec{H}_{d}$。这是因为我们有：
+考虑ferromagnetic的spontaneous magnetization。若样品内部有$\vec{M}$，则该$\vec{M}$会产生一个场$\vec{H}_{d}$。这是因为我们有：
 $$\left\{\begin{align}
  & \nabla \times \vec{H}_{d}=0 \\
  & \nabla \cdot \vec{B}=0\implies \nabla \cdot \vec{H}_{d}=-\nabla \cdot \vec{M}
 \end{align}\right.$$
 这样$\vec{H}$为无旋场，那么可以引入磁标势，并将$-\nabla \cdot \vec{M}$作为“磁荷”，构成源，来解Poisson方程。这种磁荷显然不为零，因为在样品表面$\vec{M}$必定变化，所以至少在样品表面$\nabla \cdot \vec{M}\neq 0$。
 
-称$\vec{H}_{d}$为demagnetization field。现在加入外部磁场，总场仅为线性叠加。
+则电磁能为：
+$$- \frac{\mu_{0}}{2}\int d^{3}r\vec{H}_{d}\cdot \vec{M}$$
+若磁化如下图：
+![[Drawing 2025-12-22 17.41.34.excalidraw|center|200]]
+容易看出顶部出现正磁荷$-\nabla \vec{M}=-\partial_{z}M_{z}>0$。底部出现负磁荷。所以$\vec{H}_{d}$和$\vec{M}$反向。所以一般来说$- \frac{\mu_{0}}{2}\int d^{3}r\vec{H}_{d}\cdot \vec{M}>0$，也就是说这种磁化状态倾向于破坏。所以称$-\frac{\mu_{0}}{2}\int d^{3}r\vec{H}_{d}\cdot \vec{M}$为demagnetization energy。
 
-若不考虑demagnetization field，电磁能为：
-$$- \frac{\mu_{0}}{2}\int d^{3}r\vec{H}\cdot \vec{M}$$
-若考虑demagnetization field，则电磁能为：
-$$- \frac{\mu_{0}}{2}\int d^{3}r(\vec{H}+\vec{H}_{d})\cdot \vec{M}$$
-其中，我们忽略$\vec{H}_{d}$再改变磁化的二阶影响。称$-\frac{\mu_{0}}{2}\int d^{3}r\vec{H}_{d}\cdot \vec{M}$为demagnetization energy。
+为了减小demagnetizaiton energy，磁畴形成。这样spin就不能大范围align产生强$\vec{H}_{d}$。但是domain wall形成需要消耗能量。所以最终这两种机制竞争导致domain形成。
+
+
 
 
 
