@@ -30,3 +30,16 @@ $$\begin{align}
 >The Hubbard Hamiltonian for a single-band crystal is:
 $$H= -t \sum_{<i,j>,\sigma}c_{i \sigma}^{\dagger}c_{j \sigma}+U \sum_{i}n_{i \uparrow}n_{i \downarrow}$$
 
+## Ex: Mott insulator
+
+我们首先发现$U> 0$：
+$$\begin{align}
+U & = \bra{i,i} V \ket{i,i}  \\
+ & = \int d^{3}r_{1}d^{3}r_{2} |\bra{i} \vec{r}_{1}\rangle|^{2}|\bra{i} \vec{r}_{2}\rangle|^{2} \frac{1}{4\pi\epsilon_{0}} \frac{e^{2}}{|\vec{r}_{1}-\vec{r}_{2}|}>0 
+\end{align}$$
+当$U\gg |t|$，所有site刚好填充一个电子时，$U\sum_{i}n_{i\uparrow}n_{i\downarrow}$对应能量刚好是零。
+
+考虑一个电子从$i$移动到一个neighboring的$j$，那么$-t \sum c_{i\sigma}^{\dagger}c_{j\sigma}$引起的变化很小。但是$Un_{j\uparrow}n_{j\downarrow}$对应能量会增加$U$。这导致巨大的能隙。
+
+原来由于能带半满，fermi surface存在，一个site的电子可以跳到另一个已经有电子的site产生电流。但是现在由于这个跳跃引出巨大的$U$，使得材料变为绝缘体。
+
