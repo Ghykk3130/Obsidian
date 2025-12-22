@@ -741,12 +741,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Hubbard model.md",
+                "file": "Solid state.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Hubbard model"
+              "title": "Solid state"
             }
           },
           {
@@ -1427,8 +1427,8 @@
   },
   "active": "8f7c9a6f3cc03982",
   "lastOpenFiles": [
-    "Solid state.md",
     "Hubbard model.md",
+    "Solid state.md",
     "二次量子化.md",
     "Ising Model.md",
     "规范变换.md",

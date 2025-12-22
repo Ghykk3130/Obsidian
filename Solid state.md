@@ -18,6 +18,8 @@
 4.1 [[Solid state#^885caa|Semiclassical motion in E and B]]
 4.2 
 
+# 5. Domains
+
 # 1.1 Reciprocal lattice 
 
 ^d5e805
@@ -1625,3 +1627,17 @@ $$\begin{align}
 >$$\overset{\leftrightarrow}{m}^{*} \cdot \dot{\vec{v}}= \vec{F}- \frac{\overset{\leftrightarrow}{m}^{*}}{\tau}\cdot \vec{v}$$
 
 若我们想获得稳恒
+
+
+
+# 5. Domains
+
+考虑一个晶体。将晶体中spin方向一致的联通区域称为一个domain。
+
+对于两个自旋夹角为$180^{\circ}$的domain，假设
+
+
+
+考虑连接lattice point的某一条线方向，假设每个lattice point的横截面中所有spin形成一个domain，每个domain之间spin有夹角。这称为Bloch domain。
+
+定义$180^{\circ}$domain wall为两个spin夹角$180^{\circ}$domain之间的区域。
