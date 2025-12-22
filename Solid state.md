@@ -1632,6 +1632,8 @@ $$\begin{align}
 
 # 5. Domains
 
+## 5.1 Domain wall energy
+
 考虑一个晶体。将晶体中spin方向一致的联通区域称为一个domain。两个domain之间的区域称为domain wall，可以以两个domain之间自旋夹角来表示。
 
 对于两个自旋夹角为$180^{\circ}$的domain，在这两个domain之间的domain每个自旋平行于domain面转过一个微小的夹角，这称为Bloch wall。若两个domain之间每个自旋垂直于domain转过一个微小夹角，这称为Nell wall。
@@ -1672,4 +1674,27 @@ $$\begin{align}
  & = \frac{1}{2}JS^{2} \frac{\pi^{2}}{Na^{2}}+ \frac{N^{}Ka}{2}
 \end{align}$$
 所以在$N= \pi S \sqrt{ \frac{J}{Ka^{3}} }$存在平衡点。Bloch wall厚度为$w=Na= \pi S \sqrt{ \frac{J}{Ka} }$。
+
+## 5.2 Domain wall formation
+
+>[!Note] Proposition 1
+>Consider a sample in a magnetic field with no free current. Then the EM energy is:
+>$$E= - \frac{\mu_{0}}{2}\int d^{3}r\vec{H}\cdot \vec{M}$$
+>Call this the demagnetization energy.
+## Proof.
+$$\begin{align}
+\frac{\mu}{2}\int_{\mathbb{R}^{3}} d^{3}rH^{2} & \approx \frac{\mu_{0}}{2}\int d^{3}r H^{2} \\
+ & = \frac{\mu_{0}}{2}\int d^{3}r \vec{H}\cdot\left(  \frac{\vec{B}}{\mu_{0}}-\vec{M} \right) \\
+ & = \frac{1}{2}\int d^{3}r\vec{H}\cdot \vec{B}- \frac{\mu_{0}}{2}\int d^{3}r\vec{H}\cdot \vec{M}
+\end{align}$$
+因为没有自由电流，所以引入磁标势$\nabla \phi=-\vec{H}$。故：
+$$\begin{align}
+\int d^{3}r \vec{H}\cdot \vec{B} & = - \int d^{3}r\vec{B}\cdot  \nabla \phi \\
+ & = -\int d^{3}r(\nabla \cdot(\phi \vec{B})-\phi \nabla \cdot \vec{B}) \\
+ & = -\int d\vec{S}\cdot \phi \vec{B} \\
+ & =0
+\end{align}$$
+最后是因为面积分延伸到无限是零。那么能量为$- \frac{\mu_{0}}{2}\int d^{3}r\vec{H}\cdot \vec{M}$
+>[!Right]
+>$\blacksquare$
 
