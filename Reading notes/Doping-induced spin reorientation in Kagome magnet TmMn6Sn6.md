@@ -46,6 +46,7 @@ Anisotropy：
 - 如果是铁磁相，低温下应该存在较高的magnetization，高温下相变为paramagnetic。所以铁磁相只会有一个cusp。即：	![[Drawing 2025-12-02 23.14.03.excalidraw|center|300]]
 - 一旦$M_{ab},M_{c}$发生crossover，则代表存在spin reorientation。Spin reorientaion指从easy axis变成easy plane或者反之。总之就是磁化的“容易方向”变了。
 - Phase diagram：$Ga$ concentration越高，约easy-axis。$Ga$就是在营造$Mn$的Kagome的easy-axis的晶体场环境。而高温会破坏easy-axis。因为$R$是easy-axis，$Mn$是easy-plane，所以$Ga$在助长$R$的anisotropy。
+- 为什么高温没有hysteresis loop？因为hysteresis loop上是metastable，可能被热涨落破坏。且高温anisotropy会衰减。
 
 # MR measurement
 - $\text{MR}= \frac{\rho_{xx}(B)-\rho_{x x}(0)}{\rho_{x x}(0)}$。通常情况下，我们有：$$\sigma_{\parallel}= \frac{\sigma}{1+\mu_{n}^{2}B^{2}}$$假设$\tau$不变，则$B$越大，conductance越小。所以$\text{MR}>$

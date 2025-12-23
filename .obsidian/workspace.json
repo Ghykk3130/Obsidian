@@ -1465,8 +1465,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200,
-    "collapsed": true
+    "width": 200
   },
   "right": {
     "id": "9003d078f8dbc4ed",
@@ -1567,13 +1566,13 @@
   },
   "active": "4941a24619f29d47",
   "lastOpenFiles": [
+    "Reading notes/Unconventional magnetic oscillations in a kagome Mott insulator.md",
+    "Reading notes/Electrical resistance of ferromagnetic metals.md",
+    "Solid state.md",
+    "Reading notes/Doping-induced spin reorientation in Kagome magnet TmMn6Sn6.md",
     "Pictures/Pasted image 20251223113815.png",
     "Reading notes/Dynamics and critical currents in fast superconducting vortices at high pulsed magnetic fields.md",
-    "Reading notes/Electrical resistance of ferromagnetic metals.md",
     "Excalidraw/Drawing 2025-12-23 11.33.19.excalidraw.md",
-    "Reading notes/Doping-induced spin reorientation in Kagome magnet TmMn6Sn6.md",
-    "Reading notes/Unconventional magnetic oscillations in a kagome Mott insulator.md",
-    "Solid state.md",
     "Pictures/Pasted image 20251223074909.png",
     "Baker-Campbell-Hausdorff Formula.md",
     "二次量子化.md",
@@ -1603,7 +1602,6 @@
     "Pictures/Pasted image 20251212204200.png",
     "Pictures/Pasted image 20251207224012.png",
     "Pictures/Pasted image 20251209161120.png",
-    "Pictures/Pasted image 20251209154922.png",
     "Pictures/Wu_ContemporaryChineseArt.pdf",
     "Wu_ContemporaryChineseArt.pdf",
     "Reading notes",
