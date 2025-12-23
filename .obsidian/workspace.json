@@ -806,6 +806,34 @@
             }
           },
           {
+            "id": "abc45a32268bab13",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Solid state.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Solid state"
+            }
+          },
+          {
+            "id": "2e451e959823cbb8",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Solid state.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Solid state"
+            }
+          },
+          {
             "id": "4f19a9abfae6bc99",
             "type": "leaf",
             "state": {
@@ -1310,7 +1338,7 @@
             }
           }
         ],
-        "currentTab": 56
+        "currentTab": 58
       }
     ],
     "direction": "vertical"
@@ -1481,10 +1509,12 @@
       "obsidian-excalidraw-plugin:New drawing": false
     }
   },
-  "active": "1845db98ad0d6551",
+  "active": "2e451e959823cbb8",
   "lastOpenFiles": [
-    "Excalidraw/Drawing 2025-12-22 18.15.14.excalidraw.md",
+    "Excalidraw/Drawing 2025-12-22 21.23.30.excalidraw.md",
     "Solid state.md",
+    "Excalidraw/Drawing 2025-12-22 21.12.55.excalidraw.md",
+    "Excalidraw/Drawing 2025-12-22 18.15.14.excalidraw.md",
     "Excalidraw/Drawing 2025-12-22 18.10.14.excalidraw.md",
     "Excalidraw/Drawing 2025-12-22 17.41.34.excalidraw.md",
     "Excalidraw/Drawing 2025-12-22 15.27.25.excalidraw.md",
@@ -1509,8 +1539,6 @@
     "Clebsch-Gordan系数.md",
     "Homework/Physics 511 Final Practice.md",
     "Homework/Physics 511 Midterm Practice.md",
-    "Homework/Physics 511 Homework 5.md",
-    "Homework/Physics 511 Homework 4.md",
     "Pictures/Pasted image 20251216203905.png",
     "Pictures/Pasted image 20251216201628.png",
     "Pictures/Spherical_harmonics.pdf",

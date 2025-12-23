@@ -19,6 +19,9 @@
 4.2 
 
 # 5. Domains
+5.1 [[Solid state#^d97c8d|Domain wall energy]]
+5.2 [[Solid state#^35e52f|Domain wall formation]]
+5.3 [[Solid state#^f3485c|The Stoner-Wohlfarth model]]
 
 # 1.1 Reciprocal lattice 
 
@@ -1634,6 +1637,8 @@ $$\begin{align}
 
 ## 5.1 Domain wall energy
 
+^d97c8d
+
 考虑一个晶体。将晶体中spin方向一致的联通区域称为一个domain。两个domain之间的区域称为domain wall，可以以两个domain之间自旋夹角来表示。
 
 对于两个自旋夹角为$180^{\circ}$的domain，在这两个domain之间的domain每个自旋平行于domain面转过一个微小的夹角，这称为Bloch wall。若两个domain之间每个自旋垂直于domain转过一个微小夹角，这称为Nell wall。
@@ -1676,6 +1681,8 @@ $$\begin{align}
 所以在$N= \pi S \sqrt{ \frac{J}{Ka^{3}} }$存在平衡点。Bloch wall厚度为$w=Na= \pi S \sqrt{ \frac{J}{Ka} }$。
 
 ## 5.2 Domain wall formation
+
+^35e52f
 
 >[!Note] Proposition 1
 >Consider a sample in a magnetic field with no free current. Then the EM energy is:
@@ -1734,3 +1741,23 @@ $$E_{1}= - \frac{\mu_{0}}{2}\int d^{3}r\vec{M}\cdot \vec{H}= - \frac{\mu_{0}}{2}
 $$E_{2}= \frac{1}{2}\pi R^{2} \sigma_{\text{BW}}^{90^{\circ}}\cdot{4}= 2\pi R^{2}\sigma_{\text{BW}}^{90^{\circ}}$$
 
 这两种configuration，哪种能量低就被favored。所以磁畴是有可能形成的。
+
+# 5.3 The Stoner-Wohlfarth model
+
+^f3485c
+
+考虑单一domain。令spin与$z$轴夹角为$\phi$。设easy-axis与$z$夹角为$\theta$，具有anisotropy $K\sin ^{2}(\phi-\theta),\ K>0$。设磁场$\vec{H}$沿$z$。那么能量密度为：
+$$u=K\sin ^{2}(\phi-\theta)-\mu_{0}HM\cos \phi$$
+给定$H$，$\theta$，系统调整$\phi$平衡于$u$极小值点，形成hysteresis loop。
+
+## Ex:
+令$\theta=0$。那么：
+$$u=K\sin ^{2}\phi-\mu_{0}HM\cos \phi$$
+
+![[Drawing 2025-12-22 21.12.55.excalidraw|center|400]]
+假设$H=0$时平衡在$\phi=0$。减小$H$直到$\phi=0$不再是极值点时，平衡位置滑向$\phi=\pi$。然后又增大$H$，直到为某个正值，使得$\phi=0$不是极值点，平衡位置又滑向$\phi=0$。故形成hysteresis loop
+
+![[Drawing 2025-12-22 21.23.30.excalidraw|center|300]]
+## Ex:
+令$\theta= \frac{\pi}{2}$
+
