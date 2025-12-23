@@ -1706,22 +1706,31 @@ $$\left\{\begin{align}
 
 则电磁能为：
 $$- \frac{\mu_{0}}{2}\int d^{3}r\vec{H}_{d}\cdot \vec{M}$$
-若磁化如下图：
+称$-\frac{\mu_{0}}{2}\int d^{3}r\vec{H}_{d}\cdot \vec{M}$为demagnetization energy。
+## Ex:
+
+若均匀磁化如下图：
 ![[Drawing 2025-12-22 17.41.34.excalidraw|center|200]]
-容易看出顶部出现正磁荷$-\nabla \vec{M}=-\partial_{z}M_{z}>0$。底部出现负磁荷。所以$\vec{H}_{d}$和$\vec{M}$反向。所以一般来说$- \frac{\mu_{0}}{2}\int d^{3}r\vec{H}_{d}\cdot \vec{M}>0$，也就是说这种磁化状态倾向于破坏。所以称$-\frac{\mu_{0}}{2}\int d^{3}r\vec{H}_{d}\cdot \vec{M}$为demagnetization energy。
-
-为了减小demagnetizaiton energy，磁畴形成。这样spin就不能大范围align产生强$\vec{H}_{d}$。但是domain wall形成需要消耗能量。所以最终这两种机制竞争导致domain形成。
+容易看出顶部出现正磁荷$-\nabla \vec{M}=-\partial_{z}M_{z}>0$。底部出现负磁荷。所以$\vec{H}_{d}$和$\vec{M}$反向。所以一般来说$- \frac{\mu_{0}}{2}\int d^{3}r\vec{H}_{d}\cdot \vec{M}>0$。同时可以算得，$\vec{H}_{d}=- \frac{1}{3}\vec{M}$。
 
 
+也就是说这种磁化状态倾向于破坏。所以称$-\frac{\mu_{0}}{2}\int d^{3}r\vec{H}_{d}\cdot \vec{M}$为demagnetization energy。为了减小demagnetizaiton energy，磁畴形成。这样spin就不能大范围align产生强$\vec{H}_{d}$。但是domain wall形成需要消耗能量。所以最终这两种机制竞争导致domain形成。
 
+## Ex:
 
+若磁化是这样的：
 
+![[Drawing 2025-12-22 18.10.14.excalidraw|center|200]]
+比如说$\vec{M}(x,y)=y\hat{x}-x\hat{y}$，那么无散。则不存在demagnetization energy。
 
+## Ex:
 
+考虑这两种磁化那种更favored：
 
+![[Drawing 2025-12-22 18.15.14.excalidraw|center|400]]
+第一种能量为：
+$$E_{1}= - \frac{\mu_{0}}{2}\int d^{3}r\vec{M}\cdot \vec{H}= - \frac{\mu_{0}}{2}V \vec{M}\cdot\left( - \frac{\vec{M}}{3} \right)= \frac{2}{9}M^{2}\mu_{0}\pi R^{3}$$
+第二种有四块domain。因为非常接近于上一个eg的磁化，所以忽略demagnetization energy。所以能量全都是domain wall的能量：
+$$E_{2}= \frac{1}{2}\pi R^{2} \sigma_{\text{BW}}^{90^{\circ}}\cdot{4}= 2\pi R^{2}\sigma_{\text{BW}}^{90^{\circ}}$$
 
-
-
-我们有：
-$$\nabla \cdot \vec{B}=0 \implies \nabla \vec{H}=-\nabla \cdot \vec{M}$$
-
+这两种configuration，哪种能量低就被favored。所以磁畴是有可能形成的。
