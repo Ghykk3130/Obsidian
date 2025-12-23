@@ -853,12 +853,26 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Solid state.md",
+                "file": "Reading notes/Unconventional magnetic oscillations in a kagome Mott insulator.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Solid state"
+              "title": "Unconventional magnetic oscillations in a kagome Mott insulator"
+            }
+          },
+          {
+            "id": "698efa09f05e2904",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Reading notes/Dynamics and critical currents in fast superconducting vortices at high pulsed magnetic fields.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Dynamics and critical currents in fast superconducting vortices at high pulsed magnetic fields"
             }
           },
           {
@@ -1366,7 +1380,7 @@
             }
           }
         ],
-        "currentTab": 60
+        "currentTab": 61
       }
     ],
     "direction": "vertical"
@@ -1422,7 +1436,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "quantum oscillation",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -1537,14 +1551,16 @@
       "obsidian-excalidraw-plugin:New drawing": false
     }
   },
-  "active": "fa1807ab110031ea",
+  "active": "698efa09f05e2904",
   "lastOpenFiles": [
+    "Reading notes/Electrical resistance of ferromagnetic metals.md",
     "Reading notes/Unconventional magnetic oscillations in a kagome Mott insulator.md",
+    "Solid state.md",
+    "Reading notes/Dynamics and critical currents in fast superconducting vortices at high pulsed magnetic fields.md",
+    "Pictures/Pasted image 20251223074909.png",
+    "Reading notes/Doping-induced spin reorientation in Kagome magnet TmMn6Sn6.md",
     "Baker-Campbell-Hausdorff Formula.md",
     "二次量子化.md",
-    "Solid state.md",
-    "Reading notes/Electrical resistance of ferromagnetic metals.md",
-    "Reading notes/Doping-induced spin reorientation in Kagome magnet TmMn6Sn6.md",
     "Excalidraw/Drawing 2025-12-22 21.45.47.excalidraw.md",
     "Excalidraw/Drawing 2025-12-22 21.23.30.excalidraw.md",
     "Excalidraw/Drawing 2025-12-22 21.12.55.excalidraw.md",
@@ -1565,8 +1581,6 @@
     "Untitled 2.md",
     "Transport.md",
     "Pictures/Pasted image 20251218234206.png",
-    "Experimental/PPMS.md",
-    "Experimental/Carrier-Photon Rate Equations.md",
     "Pictures/Pasted image 20251216203905.png",
     "Pictures/Pasted image 20251216201628.png",
     "Pictures/Spherical_harmonics.pdf",
@@ -1575,7 +1589,6 @@
     "Pictures/Pasted image 20251207224012.png",
     "Pictures/Pasted image 20251209161120.png",
     "Pictures/Pasted image 20251209154922.png",
-    "Pictures/Pasted image 20251209152146.png",
     "Pictures/Wu_ContemporaryChineseArt.pdf",
     "Wu_ContemporaryChineseArt.pdf",
     "Reading notes",
