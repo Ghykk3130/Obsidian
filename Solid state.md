@@ -1759,5 +1759,9 @@ $$u=K\sin ^{2}\phi-\mu_{0}HM\cos \phi$$
 
 ![[Drawing 2025-12-22 21.23.30.excalidraw|center|300]]
 ## Ex:
-令$\theta= \frac{\pi}{2}$
+令$\theta= \frac{\pi}{2}$。则：
+$$u=K\cos ^{2}\phi- \mu_{0}MH\cos \phi$$
+显然该二次函数在$\cos \phi= \frac{\mu_{0}MH}{2K}$处取极小值。所以不存在hysteresis loop，磁化为$\frac{\mu_{0}M^{2}H}{2K}$，正比于$H$。而在极小值超出$\cos \phi$范围时，取相应的边界点。
+
+![[Drawing 2025-12-22 21.45.47.excalidraw|center|250]]
 
