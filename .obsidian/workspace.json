@@ -853,12 +853,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Reading notes/Unconventional magnetic oscillations in a kagome Mott insulator.md",
+                "file": "Solid state.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Unconventional magnetic oscillations in a kagome Mott insulator"
+              "title": "Solid state"
             }
           },
           {
@@ -1539,9 +1539,9 @@
   },
   "active": "fa1807ab110031ea",
   "lastOpenFiles": [
+    "Reading notes/Unconventional magnetic oscillations in a kagome Mott insulator.md",
     "Baker-Campbell-Hausdorff Formula.md",
     "二次量子化.md",
-    "Reading notes/Unconventional magnetic oscillations in a kagome Mott insulator.md",
     "Solid state.md",
     "Reading notes/Electrical resistance of ferromagnetic metals.md",
     "Reading notes/Doping-induced spin reorientation in Kagome magnet TmMn6Sn6.md",

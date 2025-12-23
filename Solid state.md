@@ -425,7 +425,7 @@ $$\begin{align}
 
 ^48c77b
 
-考虑一个晶体。令$\ket{n,\alpha}$表示isolated状态下第$n$个原子的第$\alpha$个orbital。我们定义：
+考虑一个晶体。令$\ket{n,\alpha}$表示isolated状态下第$n$个原子里的第$\alpha$个orbital。我们定义：
 
 >[!Note] Definition 1
 $$\bra{\vec{r}} n,\alpha\rangle=  \bra{\vec{r}} T(\vec{R}_{n})\ket{\alpha} =\psi_{\alpha}(\vec{r}-\vec{R}_{n})$$
