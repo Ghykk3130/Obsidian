@@ -867,12 +867,26 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Reading notes/Dynamics and critical currents in fast superconducting vortices at high pulsed magnetic fields.md",
+                "file": "Reading notes/Doping-induced spin reorientation in Kagome magnet TmMn6Sn6.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Dynamics and critical currents in fast superconducting vortices at high pulsed magnetic fields"
+              "title": "Doping-induced spin reorientation in Kagome magnet TmMn6Sn6"
+            }
+          },
+          {
+            "id": "4941a24619f29d47",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Reading notes/Doping-induced spin reorientation in Kagome magnet TmMn6Sn6.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Doping-induced spin reorientation in Kagome magnet TmMn6Sn6"
             }
           },
           {
@@ -1380,7 +1394,7 @@
             }
           }
         ],
-        "currentTab": 61
+        "currentTab": 62
       }
     ],
     "direction": "vertical"
@@ -1551,14 +1565,16 @@
       "obsidian-excalidraw-plugin:New drawing": false
     }
   },
-  "active": "698efa09f05e2904",
+  "active": "4941a24619f29d47",
   "lastOpenFiles": [
+    "Pictures/Pasted image 20251223113815.png",
+    "Reading notes/Dynamics and critical currents in fast superconducting vortices at high pulsed magnetic fields.md",
     "Reading notes/Electrical resistance of ferromagnetic metals.md",
+    "Excalidraw/Drawing 2025-12-23 11.33.19.excalidraw.md",
+    "Reading notes/Doping-induced spin reorientation in Kagome magnet TmMn6Sn6.md",
     "Reading notes/Unconventional magnetic oscillations in a kagome Mott insulator.md",
     "Solid state.md",
-    "Reading notes/Dynamics and critical currents in fast superconducting vortices at high pulsed magnetic fields.md",
     "Pictures/Pasted image 20251223074909.png",
-    "Reading notes/Doping-induced spin reorientation in Kagome magnet TmMn6Sn6.md",
     "Baker-Campbell-Hausdorff Formula.md",
     "二次量子化.md",
     "Excalidraw/Drawing 2025-12-22 21.45.47.excalidraw.md",
@@ -1579,7 +1595,6 @@
     "量子统计力学基础.md",
     "Experimental/Basic Electronics.md",
     "Untitled 2.md",
-    "Transport.md",
     "Pictures/Pasted image 20251218234206.png",
     "Pictures/Pasted image 20251216203905.png",
     "Pictures/Pasted image 20251216201628.png",

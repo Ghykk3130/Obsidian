@@ -50,6 +50,10 @@ Anisotropy：
 # MR measurement
 - $\text{MR}= \frac{\rho_{xx}(B)-\rho_{x x}(0)}{\rho_{x x}(0)}$。通常情况下，我们有：$$\sigma_{\parallel}= \frac{\sigma}{1+\mu_{n}^{2}B^{2}}$$假设$\tau$不变，则$B$越大，conductance越小。所以$\text{MR}>$
 
+
+Topological Nernst effect:
+$$S_{xy}= \underbrace{S_{0}H}_{\text{ordinary}}+\underbrace{ S_{a}M}_{\text{anomalous}}+\underbrace{ S_{xy}^T}_{\text{topological}}$$
+![[Drawing 2025-12-23 11.33.19.excalidraw|center|250]]
 # Things to learn
 - Heisenberg model single-site anisotropy and Ising-type anisotropy.
 - space group. What is P6/mmm, what are 2c, 2d, 2e sites?
@@ -58,3 +62,4 @@ Anisotropy：
 - Neel temperature
 - Curie定律
 - Hysteresis loop
+
