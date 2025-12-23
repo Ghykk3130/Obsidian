@@ -853,12 +853,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Solid state.md",
+                "file": "二次量子化.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Solid state"
+              "title": "二次量子化"
             }
           },
           {
@@ -1422,7 +1422,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "hund's second",
+                "query": "二次量子化",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -1541,9 +1541,9 @@
   "active": "fa1807ab110031ea",
   "lastOpenFiles": [
     "Reading notes/Unconventional magnetic oscillations in a kagome Mott insulator.md",
+    "Solid state.md",
     "Reading notes/Electrical resistance of ferromagnetic metals.md",
     "Reading notes/Doping-induced spin reorientation in Kagome magnet TmMn6Sn6.md",
-    "Solid state.md",
     "Excalidraw/Drawing 2025-12-22 21.45.47.excalidraw.md",
     "Excalidraw/Drawing 2025-12-22 21.23.30.excalidraw.md",
     "Excalidraw/Drawing 2025-12-22 21.12.55.excalidraw.md",
