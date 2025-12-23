@@ -853,12 +853,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "二次量子化.md",
+                "file": "Reading notes/Unconventional magnetic oscillations in a kagome Mott insulator.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "二次量子化"
+              "title": "Unconventional magnetic oscillations in a kagome Mott insulator"
             }
           },
           {
@@ -1422,7 +1422,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "二次量子化",
+                "query": "",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -1433,8 +1433,7 @@
               "title": "Search"
             }
           }
-        ],
-        "currentTab": 3
+        ]
       }
     ],
     "direction": "horizontal",
@@ -1540,6 +1539,8 @@
   },
   "active": "fa1807ab110031ea",
   "lastOpenFiles": [
+    "Baker-Campbell-Hausdorff Formula.md",
+    "二次量子化.md",
     "Reading notes/Unconventional magnetic oscillations in a kagome Mott insulator.md",
     "Solid state.md",
     "Reading notes/Electrical resistance of ferromagnetic metals.md",
@@ -1553,7 +1554,6 @@
     "Excalidraw/Drawing 2025-12-22 15.27.25.excalidraw.md",
     "Pictures/Pasted image 20251222152527.png",
     "Hubbard model.md",
-    "二次量子化.md",
     "Ising Model.md",
     "规范变换.md",
     "Thomas进动.md",
@@ -1567,7 +1567,6 @@
     "Pictures/Pasted image 20251218234206.png",
     "Experimental/PPMS.md",
     "Experimental/Carrier-Photon Rate Equations.md",
-    "Clebsch-Gordan系数.md",
     "Pictures/Pasted image 20251216203905.png",
     "Pictures/Pasted image 20251216201628.png",
     "Pictures/Spherical_harmonics.pdf",
