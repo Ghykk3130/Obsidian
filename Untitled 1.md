@@ -113,3 +113,14 @@ The Helical Magnet MnSi: Skyrmions and magnons
 
 Oxford magnetism, chapter 1,2, 5,6, 8
 
+
+
+Weyl and Dirac semimetals in three-dimensional solids, Ashvin, et al
+
+The electronic properties of graphene, Geim, et al
+
+Dirac Fermions in Solids: From High-Tc Cuprates and Graphene to Topological Insulators and Weyl Semimetals, Ashvin, et al
+
+
+
+
