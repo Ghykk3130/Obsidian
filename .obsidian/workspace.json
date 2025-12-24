@@ -881,12 +881,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Untitled 1.md",
+                "file": "Experimental/PPMS.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Untitled 1"
+              "title": "PPMS"
             }
           },
           {
@@ -1465,7 +1465,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 200,
+    "collapsed": true
   },
   "right": {
     "id": "9003d078f8dbc4ed",
@@ -1566,8 +1567,9 @@
   },
   "active": "4941a24619f29d47",
   "lastOpenFiles": [
-    "Untitled.md",
+    "Experimental/PID Control.md",
     "Untitled 1.md",
+    "Untitled.md",
     "Reading notes/Doping-induced spin reorientation in Kagome magnet TmMn6Sn6.md",
     "Reading notes/Unconventional magnetic oscillations in a kagome Mott insulator.md",
     "Reading notes/Electrical resistance of ferromagnetic metals.md",
