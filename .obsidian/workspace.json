@@ -1464,7 +1464,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "quantum oscillation",
+                "query": "laplace's",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -1479,7 +1479,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 200,
+    "collapsed": true
   },
   "right": {
     "id": "9003d078f8dbc4ed",
@@ -1579,8 +1580,9 @@
   },
   "active": "5ee952572a6ea386",
   "lastOpenFiles": [
-    "Reading notes/Unconventional magnetic oscillations in a kagome Mott insulator.md",
+    "Laplace's method and Stirling approximation.md",
     "Reading notes/Berry phase effects on electronic properties.md",
+    "Reading notes/Unconventional magnetic oscillations in a kagome Mott insulator.md",
     "Homework/Physics 402 Class Prep 1.md",
     "Homework/Physics 510 Homework 5.md",
     "Experimental/PPMS.md",
@@ -1607,7 +1609,6 @@
     "Hubbard model.md",
     "Ising Model.md",
     "规范变换.md",
-    "Thomas进动.md",
     "Pictures/Pasted image 20251218234206.png",
     "Pictures/Pasted image 20251216203905.png",
     "Pictures/Pasted image 20251216201628.png",
