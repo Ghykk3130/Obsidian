@@ -23,12 +23,11 @@ $$\begin{align}
 \implies &   \dot{a}_{j}(t)= -\sum_{i}\exp\left( - \frac{i}{\hbar}\int_{t_{0}}^tdt^{'}(E_{i}(t^{'})-E_{j}(t^{'})) \right) a_{i}(t) \bra{j(t)}  \frac{\partial}{\partial t}\ket{i(t)}     
 \end{align}$$
 
-积分则有：
+将对角项与非对角项分开则有：
 $$\begin{align}
-a_{j} & = -\sum_{i} \int dt\exp\left( - \frac{i}{\hbar}\int_{t_{0}}^tdt^{'}(E_{i}-E_{j}) \right)a_{i} \bra{j}  \frac{\partial}{\partial t} \ket{i} 
+\dot{a}_{j} & = - a_{j}\bra{j}  \frac{\partial}{\partial t}\ket{j} -\sum_{i\neq j}\exp\left( - \frac{i}{\hbar} \int dt^{'}(E_{i}-E_{j}) \right)a_{i}\bra{j}  \frac{\partial}{\partial t}\ket{i}  \\
+ & = 0- \sum_{i\neq j}\exp\left( - \frac{i}{\hbar} \int dt^{'}(E_{i}-E_{j}) \right)a_{i}\bra{j}  \frac{\partial}{\partial t}\ket{i}  \\
+ & = - \dot{\vec{R}} \cdot\sum \exp\left( - \frac{i}{\hbar}\int dt^{'}(E_{i}-E_{j}) \right)a_{i}\bra{j}  \frac{\partial}{\partial \vec{R}}\ket{i}  
 \end{align}$$
-我们有：
-$$\begin{align}
-|\int dt \exp\left( - \frac{i}{\hbar}\int dt^{'}(E_{i}-E_{j}) \right)a_{i} \bra{j }  \frac{\partial}{\partial t}\ket{i}  |\leq 
-\end{align}$$
-
+由于$C^{\infty}$假设，则$|\bra{j} \frac{\partial}{\partial \vec{R}}\ket{i}|<\infty$。右手边$\dot{\vec{R}}$后面都是bounded的。所以令$\dot{\vec{R}}\rightarrow{0}$则有：
+$$\dot{a}_{j}=0$$
