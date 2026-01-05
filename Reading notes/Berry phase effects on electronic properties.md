@@ -23,4 +23,5 @@ $$\begin{align}
 \implies &   \dot{a}_{j}(t)= -\sum_{i}\exp\left( - \frac{i}{\hbar}\int_{t_{0}}^tdt^{'}(E_{i}(t^{'})-E_{j}^{'}) \right)\bra{j(t)}  \frac{\partial}{\partial t}\ket{i(t)}     
 \end{align}$$
 
+现考虑$i\neq j$。则有
 
