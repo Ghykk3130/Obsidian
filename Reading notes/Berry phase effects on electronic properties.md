@@ -19,9 +19,16 @@ $$\begin{align} \ket{\psi(t)} =\sum_{j}\exp\left( - \frac{i}{\hbar}\int_{t_{0}}^
 $$\begin{align}
  & \sum_{j}E_{j}(t)\exp(\dots)a_{j}(t)\ket{j(t)} + \sum_{j}\exp(\dots)  \dot{a}_{j}(t)\ket{j(t)} + \sum_{j}\exp(\dots)a_{j}(t) \frac{\partial}{\partial t}\ket{j(t)} =\sum_{j}\exp(\dots)a_{j}(t)E_{j}(t)\ket{j(t)} \\
 \implies & \sum_{j}\exp(\dots)  \dot{a}_{j}(t)\ket{j(t)} =- \sum_{i}\exp(\dots) a_{i}(t) \frac{\partial}{\partial t}\ket{i(t)} \\
-\implies & \exp\left( - \frac{i}{\hbar}\int dt^{'}E_{j} \right)  \dot{a}_{j}(t) = - \sum_{i}\exp\left( - \frac{i}{\hbar}\int dt^{'}E_{i} \right)  \bra{j(t)}  \frac{\partial}{\partial t}\ket{i(t)} \\
-\implies &   \dot{a}_{j}(t)= -\sum_{i}\exp\left( - \frac{i}{\hbar}\int_{t_{0}}^tdt^{'}(E_{i}(t^{'})-E_{j}^{'}) \right)\bra{j(t)}  \frac{\partial}{\partial t}\ket{i(t)}     
+\implies & \exp\left( - \frac{i}{\hbar}\int dt^{'}E_{j} \right)  \dot{a}_{j}(t) = - \sum_{i}\exp\left( - \frac{i}{\hbar}\int dt^{'}E_{i} \right) a_{i}(t) \bra{j(t)}  \frac{\partial}{\partial t}\ket{i(t)} \\
+\implies &   \dot{a}_{j}(t)= -\sum_{i}\exp\left( - \frac{i}{\hbar}\int_{t_{0}}^tdt^{'}(E_{i}(t^{'})-E_{j}(t^{'})) \right) a_{i}(t) \bra{j(t)}  \frac{\partial}{\partial t}\ket{i(t)}     
 \end{align}$$
 
-现考虑$i\neq j$。则有
+积分则有：
+$$\begin{align}
+a_{j} & = -\sum_{i} \int dt\exp\left( - \frac{i}{\hbar}\int_{t_{0}}^tdt^{'}(E_{i}-E_{j}) \right)a_{i} \bra{j}  \frac{\partial}{\partial t} \ket{i} 
+\end{align}$$
+我们有：
+$$\begin{align}
+|\int dt \exp\left( - \frac{i}{\hbar}\int dt^{'}(E_{i}-E_{j}) \right)a_{i} \bra{j }  \frac{\partial}{\partial t}\ket{i}  |\leq 
+\end{align}$$
 
