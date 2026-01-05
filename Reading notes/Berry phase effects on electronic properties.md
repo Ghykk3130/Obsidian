@@ -12,5 +12,15 @@ $$\begin{align}
 >[!Note] Definition 1
 >Consider a Hamiltonian $H=H(\vec{R}(t))$. Define the parallel transport condition as $\bra{n(t)} \frac{\partial}{\partial t}\ket{n(t)}= \dot{\vec{R}}\cdot \bra{n} \frac{\partial}{\partial \vec{R}}\ket{n}=0$.
 
-考虑
+考虑参数$\vec{R}$由$\vec{R}(t_{0})$变为$\vec{R}(t)$。变化速率极其缓慢。令$\ket{\psi(t)}$为$t$时刻波函数。则可以作展开：
+$$\begin{align} \ket{\psi(t)} =\sum_{j}\exp\left( - \frac{i}{\hbar}\int_{t_{0}}^tdt^{'}E_{j}(t^{'}) \right)a_{j}(t)\ket{j(t)} 
+\end{align}$$
+代入$i\hbar \frac{\partial}{\partial t}\ket{\psi(t)}=H(t)\ket{\psi(t)}$可得：
+$$\begin{align}
+ & \sum_{j}E_{j}(t)\exp(\dots)a_{j}(t)\ket{j(t)} + \sum_{j}\exp(\dots)  \dot{a}_{j}(t)\ket{j(t)} + \sum_{j}\exp(\dots)a_{j}(t) \frac{\partial}{\partial t}\ket{j(t)} =\sum_{j}\exp(\dots)a_{j}(t)E_{j}(t)\ket{j(t)} \\
+\implies & \sum_{j}\exp(\dots)  \dot{a}_{j}(t)\ket{j(t)} =- \sum_{i}\exp(\dots) a_{i}(t) \frac{\partial}{\partial t}\ket{i(t)} \\
+\implies & \exp\left( - \frac{i}{\hbar}\int dt^{'}E_{j} \right)  \dot{a}_{j}(t) = - \sum_{i}\exp\left( - \frac{i}{\hbar}\int dt^{'}E_{i} \right)  \bra{j(t)}  \frac{\partial}{\partial t}\ket{i(t)} \\
+\implies &   \dot{a}_{j}(t)= -\sum_{i}\exp\left( - \frac{i}{\hbar}\int_{t_{0}}^tdt^{'}(E_{i}(t^{'})-E_{j}^{'}) \right)\bra{j(t)}  \frac{\partial}{\partial t}\ket{i(t)}     
+\end{align}$$
+
 
