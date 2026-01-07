@@ -140,3 +140,30 @@ Then done.
 
 # 3. 磁场中的Spin-1/2粒子
 
+考虑一个spin-1/2粒子。施加磁场$\vec{R}$。想要计算Berry phase。我们有：
+$$H=- g \frac{e}{2m}\vec{S}\cdot \vec{R}=- \frac{e}{m}\vec{S}\cdot \vec{R}$$
+所以：
+$$\frac{\partial H}{\partial \vec{R}}= - \frac{e}{m}\vec{S}$$
+取$\hat{z}\parallel \vec{R}$。则：
+$$\begin{align}
+\bra{\pm} \frac{\partial H}{\partial \vec{R}}\ket{\mp}  & = - \frac{e}{m}\bra{\pm} \vec{S}\ket{\mp}  
+\end{align}$$
+对$\vec{S}$作球张量分解：
+$$\begin{align}
+\vec{S}= \frac{1}{2}(S_{+}+S_{-})\hat{x}+ \frac{1}{2i}(S_{+}-S_{-})\hat{y}+ S_{z}\hat{z}
+\end{align}$$
+于是容易得到：
+$$\begin{align}
+\bra{\pm}  \vec{S} \ket{\mp }  & =\frac{\hbar}{2}(\hat{x}\mp i \hat{y})
+\end{align}$$
+接下来：
+$$\bra{\pm} \vec{S}\ket{\mp } \times \bra{\mp } \vec{S}\ket{\pm} = \pm \frac{\hbar^{2}}{2}i\hat{z}\left( - \frac{e}{m} \right)^{2}$$
+另外地：
+$$\begin{align}
+(E_{\pm}-E_{\mp})^{2} & = \left( - \frac{e}{m} \frac{\hbar}{2}R - \frac{e}{m} \frac{\hbar}{2}R \right)^{2}= \left( - \frac{e}{m} \right)^{2} \hbar^{2}R^{2}
+\end{align}$$
+故：
+$$\vec{B}_{\pm}= \mp \frac{1}{2R^{2}}\hat{R}$$
+所以Berry phase为：
+$$\gamma_{n}(C)= \mp \frac{1}{2}\int_{C} d\vec{S}\cdot \frac{\hat{R}}{R^{2}}=\mp \frac{1}{2}\Omega(C)$$
+其中$\Omega(C)$为$\vec{R}$绕出的闭合曲线对应的立体角。
