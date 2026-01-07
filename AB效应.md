@@ -25,6 +25,9 @@ $$\begin{align}
 >[!Note] Proposition 1
 >Let $\Lambda=\Lambda(\vec{r})$ induce a gauge transformation. Let $\ket{\alpha},\ket{\tilde{\alpha}}$ be the states with the same eigenvalue before and after the transformation. Then:
 >$$\ket{\tilde{\alpha}} =\exp\left( \frac{i}{\hbar}e\Lambda \right)\ket{\alpha} $$
+
+^f7e488
+
 ## Proof.
 
 注意到：
@@ -48,4 +51,17 @@ $$\begin{align}
 \end{align}$$
 >[!Right]
 >$\blacksquare$
+# 2. Berry phase与AB效应
 
+考虑一个电子装在一个小盒子里。盒子在磁场中缓慢绕圈。令$\vec{R}$为盒子中参考点坐标。令$\vec{r}$为粒子坐标。则粒子Hamiltonian为：
+$$H=\frac{1}{2m}|\vec{p}-e\vec{A}(\vec{r})|^{2}$$
+因为盒子小，近似为：
+$$H= \frac{1}{2m}|\vec{p}-\vec{A}(\vec{R})|^{2}$$
+那么所有的time-dependence来自于$\vec{R}=\vec{R}(t)$。于是我们可以计算Berry phase。为了计算Berry phase，我们需要本征态。令：
+$$\frac{p^{2}}{2m}\ket{n} =E_{n}\ket{n} $$
+为无磁场时的本征态。假设盒子处磁场很弱，为零。则$\frac{\partial}{\partial \vec{R}} \times \vec{A}(\vec{R})=0$。所以构造标势：$\vec{A}=\frac{\partial}{\partial \vec{R}}\Lambda$。所以磁标势的出现可以看做一种规范变换。令：
+$$\frac{1}{2m}|\vec{p}-e\vec{A}|^{2}\ket{\tilde{n}} =E_{n}\ket{\tilde{n}} $$
+为有磁场时本征态。那么[[AB效应#^f7e488|proposition 1.1]]：
+$$\begin{align}
+\ket{\tilde{n}} = \exp\left( \frac{i}{\hbar}e \Lambda \right)\ket{n}=\exp\left( \frac{i}{\hbar}e \int_{\vec{R}_{0}}^\vec{R}d\vec{r}^{'}\cdot \vec{A}(\vec{r}^{'}) \right) 
+\end{align}$$
