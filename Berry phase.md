@@ -68,12 +68,18 @@ $$\gamma_{n}=i \int_{0}^tdt^{'}\bra{n,t^{'}} \frac{\partial }{\partial t^{'}}\ke
 >$$\vec{A}_{n}(\vec{R})= i\bra{n,t}  \frac{\partial}{\partial \vec{R}}\ket{n,t} \in \mathbb{R}^{3}$$
 
 考虑$\vec{R}(t)$随时间演化一直在$C\subset \mathbb{R}^{3}$上周期性绕圈的情况。令周期为$T$。那么：
+
+>[!Note] Definition 2
+>Define the Berry phase as $\gamma_{n}(T)$.
+
+然后：
 $$\begin{align}
 \gamma_{n}(T) & = \int_{0}^Tdt^{'} \dot{\vec{R}}\cdot \vec{A}_{n} \\
  & = \oint_{C} d\vec{R}\cdot \vec{A}_{n} \\
  & = \oint_{C}d\vec{S}\cdot \left( \frac{\partial}{\partial \vec{R}}\times \vec{A}_{n} \right) 
 \end{align}$$
->[!Note] Definition 2
+
+>[!Note] Definition 3
 >Define the Berry curvature:
 >$$\vec{B}_{n}(\vec{R})= \frac{\partial}{\partial \vec{R}}\times \vec{A}_{n}\in \mathbb{R}^{3}$$
 
@@ -85,4 +91,50 @@ $$\begin{align}
  & = \vec{A}_{n}- \frac{\partial\delta}{\partial \vec{R}}
 \end{align}$$
 所以波函数作$U(1)$变换，$\vec{A}_{n}$应加减某函数梯度。相应地，显然$\vec{B}_{n}$不变，$\gamma_{n}(T)$不变。物理实质不变。所以Berry curvature和Berry phase是相应变换下的不变量。
+
+Berry curvature可以进一步写开：
+
+>[!Note] Proposition 1
+>$$\vec{B}_{n}=i \left( \frac{\partial}{\partial \vec{R}} \ket{n,t}  \right)^{\dagger}\times \frac{\partial}{\partial \vec{R}}\ket{n,t} $$
+## Proof.
+$$\begin{align}
+\vec{B}_{n} & = \frac{\partial}{\partial \vec{R}}\times \vec{A}_{n} \\
+ & = i\frac{\partial}{\partial \vec{R}}\times \bra{n,t}  \frac{\partial}{\partial \vec{R}}\ket{n,t} \\
+ & = ie_{k}\epsilon_{ijk} \frac{\partial}{\partial R_{i}}\bra{n,t}  \frac{\partial}{\partial R_{j}}\ket{n,t}  \\
+ & = ie_{k}\epsilon_{ijk}\left(  \frac{\partial}{\partial R_{i}}\ket{n,t}  \right)^{\dagger} \frac{\partial}{\partial R_{j}}\ket{n,t} + ie_{k} \bra{n,t}  \frac{\partial}{\partial R_{i}} \frac{\partial}{\partial R_{j}} \ket{n,t}  \\
+ & = i\left(  \frac{\partial}{\partial \vec{R}}\ket{n,t}  \right)^{\dagger} \times \frac{\partial}{\partial \vec{R}}\ket{n,t} + i\bra{n,t}  \frac{\partial}{\partial \vec{R}}\times\left(  \frac{\partial}{\partial \vec{R}}\ket{n,t}  \right) \\
+ & =  i\left(  \frac{\partial}{\partial \vec{R}}\ket{n,t}  \right)^{\dagger} \times \frac{\partial}{\partial \vec{R}}\ket{n,t}
+\end{align}$$
+>[!Right]
+>$\blacksquare$
+
+还可以有另一种形式：
+
+>[!Note] Proposition 2
+>$$\vec{B}_{n}= i \sum_{m\neq n}  \frac{\bra{n,t}  \partial H / \partial \vec{R}\ket{m,t} \times \bra{m,t}  \partial H / \partial \vec{R} \ket{n,t} }{(E_{m}-E_{n})^{2}}$$
+## Proof.
+$$\begin{align}
+\vec{B}_{n} & = i \left(  \frac{\partial}{\partial \vec{R}}\ket{n,t}  \right)^{\dagger}\times \frac{\partial}{\partial \vec{R}}\ket{n,t}  \\
+ & = i\sum_{m}\left(  \frac{\partial}{\partial \vec{R}}\ket{n,t}  \right)^{\dagger} \ket{m,t} \bra{m,t} \times \frac{\partial}{\partial \vec{R}}\ket{n,t}  \\
+ & = i\sum_{m}\left( \bra{m,t}  \frac{\partial}{\partial \vec{R}}\ket{n,t}  \right)^{\dagger}\times \bra{m,t}  \frac{\partial}{\partial \vec{R}}\ket{n,t} 
+\end{align}$$
+我们有：
+$$\bra{n,t}  \frac{\partial}{\partial \vec{t}}\ket{n,t}= \dot{\vec{R}}\cdot \bra{n,t}  \frac{\partial}{\partial \vec{R}}\ket{n,t}  \text{ is imaginary}$$
+所以$\bra{n,t} \frac{\partial}{\partial \vec{R}}\ket{n,t}$是虚数域上的欧氏空间矢量。所以：
+$$\begin{align}
+\left( \bra{n,t}  \frac{\partial}{\partial \vec{R}}\ket{n,t}  \right)^{\dagger}\times \bra{n,t}  \frac{\partial}{\partial \vec{R}}\ket{n,t}  & = -\bra{n,t}  \frac{\partial}{\partial \vec{R}} \ket{n,t} \times \bra{n,t}  \frac{\partial}{\partial \vec{R}}\ket{n,t} =0
+\end{align}$$
+故：
+$$\begin{align}
+\vec{B}_{n} & = i \sum_{m\neq n } \left( \bra{m,t}  \frac{\partial}{\partial \vec{R}}\ket{n,t}  \right)^{\dagger}\times \bra{m,t}  \frac{\partial}{\partial \vec{R}}\ket{n,t}
+\end{align}$$
+回忆起：
+$$\begin{align}
+ &  \bra{m,t}  \frac{\partial}{\partial t} \ket{n,t} = \frac{\bra{m,t}  \dot{H}\ket{n,t} }{E_{n}-E_{m}} \\
+\implies & \dot{\vec{R}}\cdot \bra{m,t}  \frac{\partial}{\partial \vec{R}}\ket{n,t} = \dot{\vec{R}}\cdot \frac{\bra{m,t}  \partial H / \partial \vec{R}\ket{n,t} }{E_{n}-E_{m}},\ \forall \vec{R} \\
+\implies &  \bra{m,t}  \frac{\partial}{\partial \vec{R}}\ket{n,t} =  \frac{\bra{m,t}  \partial H / \partial \vec{R}\ket{n,t} }{E_{n}-E_{m}}
+\end{align}$$
+Then done.
+>[!Right]
+>$\blacksquare$
 
