@@ -1492,7 +1492,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "正则动量",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -1608,10 +1608,11 @@
   },
   "active": "5fe8eaed90bf4744",
   "lastOpenFiles": [
-    "Bose-Einstein statistics与BEC.md",
-    "AB效应.md",
-    "Baker-Campbell-Hausdorff Formula.md",
     "Berry phase.md",
+    "Hamiltonian Formulation of EM.md",
+    "AB效应.md",
+    "Bose-Einstein statistics与BEC.md",
+    "Baker-Campbell-Hausdorff Formula.md",
     "AB效应",
     "张量算子.md",
     "Spherical tensor.md",
@@ -1636,7 +1637,6 @@
     "Excalidraw/Drawing 2025-12-22 21.45.47.excalidraw.md",
     "Excalidraw/Drawing 2025-12-22 21.23.30.excalidraw.md",
     "Excalidraw/Drawing 2025-12-22 21.12.55.excalidraw.md",
-    "Excalidraw/Drawing 2025-12-22 18.15.14.excalidraw.md",
     "Pictures/Pasted image 20251222152527.png",
     "Pictures/Pasted image 20251218234206.png",
     "Pictures/Pasted image 20251216203905.png",
