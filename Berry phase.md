@@ -58,4 +58,31 @@ $$\begin{align}
 \end{align}$$
 所以若一开始位于$\ket{\psi,0}=\ket{n,0}$，那么之后就有$\ket{\psi,t}=\ket{n,t}$。
 
+# 2. Berry phase
+
+假设所有的time-dependence都来自于参数$\vec{R}(t)$。假设$\vec{R}\in \mathbb{R}^{3}$。那么就有：
+$$\gamma_{n}=i \int_{0}^tdt^{'}\bra{n,t^{'}} \frac{\partial }{\partial t^{'}}\ket{n,t^{'}}=\int dt^{'}i \dot{\vec{R}}\cdot \bra{n,t^{'}}  \frac{\partial }{\partial \vec{R}}\ket{n,t^{'}}   $$
+
+>[!Note] Definition 1
+>Define the Berry connection:
+>$$\vec{A}_{n}(\vec{R})= i\bra{n,t}  \frac{\partial}{\partial \vec{R}}\ket{n,t} \in \mathbb{R}^{3}$$
+
+考虑$\vec{R}(t)$随时间演化一直在$C\subset \mathbb{R}^{3}$上周期性绕圈的情况。令周期为$T$。那么：
+$$\begin{align}
+\gamma_{n}(T) & = \int_{0}^Tdt^{'} \dot{\vec{R}}\cdot \vec{A}_{n} \\
+ & = \oint_{C} d\vec{R}\cdot \vec{A}_{n} \\
+ & = \oint_{C}d\vec{S}\cdot \left( \frac{\partial}{\partial \vec{R}}\times \vec{A}_{n} \right) 
+\end{align}$$
+>[!Note] Definition 2
+>Define the Berry curvature:
+>$$\vec{B}_{n}(\vec{R})= \frac{\partial}{\partial \vec{R}}\times \vec{A}_{n}\in \mathbb{R}^{3}$$
+
+显然，对于任意一个态$\ket{n(\vec{R})}$，其相应的Berry connection不是唯一的。因为$\ket{n(\vec{R})}$可以随便加上一个phase而物理实质不变，即$U(1)-\text{arbitrariness}$。所以，若作$\ket{n,t}\leadsto e^{i\delta(\vec{R})}\ket{n,t}$，那么相应地：
+$$\begin{align}
+\vec{A}_{n} & \leadsto i\bra{n,t} e^{-i\delta} \frac{\partial}{\partial \vec{R}}(e^{i\delta}\ket{n,t} ) \\
+ & = i\bra{n,t} e^{-i\delta}\left( i \frac{\partial\delta}{\partial \vec{R}}e^{i\delta}\ket{n,t} + e^{i\delta} \frac{\partial}{\partial \vec{R}}\ket{n,t}  
+ \right) \\
+ & = \vec{A}_{n}- \frac{\partial\delta}{\partial \vec{R}}
+\end{align}$$
+所以波函数作$U(1)$变换，$\vec{A}_{n}$应加减某函数梯度。相应地，显然$\vec{B}_{n}$不变，$\gamma_{n}(T)$不变。物理实质不变。所以Berry curvature和Berry phase是相应变换下的不变量。
 
