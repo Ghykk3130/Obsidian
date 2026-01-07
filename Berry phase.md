@@ -138,3 +138,5 @@ Then done.
 >[!Right]
 >$\blacksquare$
 
+# 3. 磁场中的Spin-1/2粒子
+
