@@ -11,3 +11,10 @@ $$\begin{align}
 \implies & e^{i\theta_{m}}c_{m}E_{m}= e^{i\theta_{m}}c_{m}E_{m}+ e^{i\theta_{m} }  \dot{c}_{m}+ \sum_{n} e^{i\theta_{n}}c_{n} \bra{m,t}  \frac{\partial}{\partial t} \ket{n,t} \\
 \implies &   \dot{c}_{m}= - \sum_{n}e^{i(\theta_{n}-\theta_{m}) } c_{n} \bra{m,t}  \frac{\partial}{\partial t}\ket{n,t}     
 \end{align}$$
+注意到：
+$$\begin{align}
+ & H\ket{n,t} =E_{n}(t)\ket{n,t} \\
+\implies &  \dot{H}\ket{n,t} + H \frac{\partial}{\partial t}\ket{n,t} = \dot{E}_{n}\ket{n,t} +E_{n} \frac{\partial}{\partial t} \ket{n,t} \\
+\implies & \bra{m,t}   \dot{H}\ket{n,t} + E_{m}\bra{m,t}  \frac{\partial}{\partial t}\ket{n,t} = \dot{E}_{n}\delta_{mn} + E_{n}\bra{m,t}  \frac{\partial}{\partial t} \ket{n,t} \\
+\implies  & \bra{m,t}  \frac{\partial}{\partial t}\ket{n,t} =  \frac{\bra{m,t}   \dot{H}\ket{n,t} }{E_{n}-E_{m}}\text{ for }m\neq n    
+\end{align}$$
