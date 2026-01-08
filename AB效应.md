@@ -63,5 +63,6 @@ $$\frac{p^{2}}{2m}\ket{n} =E_{n}\ket{n} $$
 $$\frac{1}{2m}|\vec{p}-e\vec{A}|^{2}\ket{\tilde{n}} =E_{n}\ket{\tilde{n}} $$
 为有磁场时本征态。那么[[AB效应#^f7e488|proposition 1.1]]：
 $$\begin{align}
-\ket{\tilde{n}} = \exp\left( \frac{i}{\hbar}e \Lambda \right)\ket{n}=\exp\left( \frac{i}{\hbar}e \int_{\vec{R}_{0}}^\vec{R}d\vec{r}^{'}\cdot \vec{A}(\vec{r}^{'}) \right) 
+\ket{\tilde{n}} = \exp\left( \frac{i}{\hbar}e \Lambda \right)\ket{n}=\exp\left( \frac{i}{\hbar}e \int_{\vec{R}_{0}}^\vec{R}d\vec{r}^{'}\cdot \vec{A}(\vec{r}^{'}) \right) \ket{n} 
 \end{align}$$
+
