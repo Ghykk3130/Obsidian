@@ -53,7 +53,11 @@ $$\begin{align}
 >$\blacksquare$
 # 2. Berry phase与AB效应
 
-考虑一个电子装在一个小盒子里。盒子在磁场中缓慢绕圈。令$\vec{R}$为盒子中参考点坐标。令$\vec{r}$为粒子坐标。则粒子Hamiltonian为：
+考虑一个电子装在一个小盒子里。盒子在磁场中缓慢绕圈。令$\vec{R}$为盒子中参考点坐标。令$\vec{r}$为粒子坐标。
+
+![[Drawing 2026-01-08 13.19.55.excalidraw|center|200]]
+
+则粒子Hamiltonian为：
 $$H=\frac{1}{2m}|\vec{p}-e\vec{A}(\vec{r})|^{2}$$
 因为盒子小，近似为：
 $$H= \frac{1}{2m}|\vec{p}-\vec{A}(\vec{R})|^{2}$$
@@ -65,4 +69,23 @@ $$\frac{1}{2m}|\vec{p}-e\vec{A}|^{2}\ket{\tilde{n}} =E_{n}\ket{\tilde{n}} $$
 $$\begin{align}
 \ket{\tilde{n}} = \exp\left( \frac{i}{\hbar}e \Lambda \right)\ket{n}=\exp\left( \frac{i}{\hbar}e \int_{\vec{R}_{0}}^\vec{R}d\vec{r}^{'}\cdot \vec{A}(\vec{r}^{'}) \right) \ket{n} 
 \end{align}$$
+其中$\vec{R}_{0}$是空间中任意点当然，$\ket{n}$是在$\vec{R}=0$情况下解的。实际上需要将波函数平移至$\vec{R}$。所以：
+$$\ket{\tilde{n}} =\exp\left( \frac{i}{\hbar}e \int_{\vec{R}_{0}}^{\vec{R}}d\vec{r}^{'}\cdot{\vec{A}} \right)T(\vec{R})\ket{n} $$
+计算Berry connection：
+$$\begin{align}
+\vec{A}_{n} & = i\bra{\tilde{n}}  \frac{\partial}{\partial \vec{R}}\ket{\tilde{n}}  \\
+ & = i\exp\left( - \frac{i}{\hbar}e\int d\vec{r}^{'}\cdot \vec{A} \right)\bra{n} T^{\dagger}(\vec{R}) \frac{\partial}{\partial \vec{R}}\left( \exp\left( \frac{i}{\hbar}e\int d\vec{r}^{'}\cdot \vec{A}  \right)T(\vec{R})\ket{n}  \right)
+\end{align}$$
+我们计算：
+$$\begin{align}
+\frac{\partial}{\partial \vec{R}}\left( \exp\left( \frac{i}{\hbar}e\int_{\vec{R}_{0}}^{\vec{R}}d\vec{r}^{'}\cdot \vec{A} \right)T(\vec{R})\ket{n}  \right) & = \frac{i}{\hbar}e\vec{A}(\vec{R}) \exp\left( \frac{i}{\hbar}e\int d\vec{r}^{'}\cdot \vec{A} \right)T(\vec{R})\ket{n} + \exp\left( \frac{i}{\hbar}e\int d\vec{r}^{'}\cdot \vec{A} \right) \frac{\partial}{\partial \vec{R}}T(\mathrm{\vec{R}})\ket{n} 
+\end{align}$$
+我们作parallel transport condition，通过选择$\ket{n}$的相位，使得：
+$$\bra{n} T^{\dagger}(\vec{R}) \frac{\partial}{\partial \vec{R}}T(\vec{R})\ket{n} =0$$
+那么：
+$$\vec{A}_{n}(\vec{R})=- \frac{e}{\hbar}\vec{A}(\vec{R})$$
+所以矢势贡献Berry connection。于是Berry phase为：
+$$\gamma_{n}(C)= \oint_{C}d\vec{R}\cdot\left( - \frac{e}{\hbar}\vec{A} \right)=- \frac{e}{\hbar}\int d\vec{S}\cdot(\nabla \times \vec{A})=- \frac{e}{\hbar}\Phi$$
+所以磁通量贡献Berry phase。
+
 
