@@ -22,7 +22,18 @@ $$\begin{align}
 
 对于completeness，我们有：
 $$\begin{align}
-\sum_{q}\psi_{q}(x) & = 
+\sum_{q}\psi_{q}(x) & = \sum_{n\in \mathbb{Z}}A\exp\left( i \frac{2\pi n}{L}x \right) \\
+ & = \lim_{ N \to \infty }  \sum_{-N}^NA\exp\left( i \frac{2\pi n}{L}x \right) \\
+ & = \lim_{ N \to \infty }  A \frac{\exp\left( - i\frac{2\pi N}{L}x \right)-\exp\left( i \frac{2\pi N}{L}x \right)}{1- \exp\left( i \frac{2\pi}{L}x \right)} \\
+ & = \lim_{ N \to \infty } A \frac{e^{i \frac{\pi}{L}x}\left( \exp\left( -i \frac{2\pi}{L}\left( N- \frac{1}{2} \right)x \right) -\exp\left( i \frac{2\pi}{L}\left( N- \frac{1}{2} \right) x\right) \right)}{e^{i \frac{\pi}{L}x}\left( \exp\left( - i \frac{\pi}{L}x \right)-\exp\left( i \frac{\pi}{L}x \right) \right)} \\
+ & = \lim_{ N \to \infty } A \frac{\sin\left( \frac{2\pi}{L}\left( N- \frac{1}{2} \right)x \right)}{\sin\left(  \frac{\pi}{L}x \right)}
 \end{align}$$
+可以定义：
+
+>[!Note] Definition 1
+>Define the Dirichlet kernel:
+>$$D_{N}(x)= \sum_{-N}^Ne^{inx}$$
+
+
 
 
