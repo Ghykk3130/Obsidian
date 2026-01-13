@@ -1079,7 +1079,7 @@ $$\dot{\vec{k}}\cdot \vec{B}=0$$
 又注意到：
 $$\begin{align}
 \frac{D\epsilon_{n}}{D t} & = \frac{\partial\epsilon_{n}}{\partial \vec{k}} \cdot \frac{\partial \vec{k}}{\partial t} \\
- & = \hbar \vec{v}\cdot e(\vec{v}\times \vec{B}) \\
+ & =  \vec{v}\cdot e(\vec{v}\times \vec{B}) \\
  & =0
 \end{align}$$
 所以电子总在k-space中等能量面与$\vec{B}$垂直面的交线上运动。
