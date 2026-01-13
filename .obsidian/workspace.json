@@ -979,12 +979,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "微分几何.md",
+                "file": "Reading notes/Berry phase effects on electronic properties.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "微分几何"
+              "title": "Berry phase effects on electronic properties"
             }
           },
           {
@@ -1664,14 +1664,14 @@
   },
   "active": "229716be8c23593b",
   "lastOpenFiles": [
+    "张量分析.md",
+    "Reading notes/Berry phase effects on electronic properties.md",
+    "微分几何.md",
     "Lie Group.md",
     "Maxwell Stress Tensor and Momentum.md",
-    "微分几何.md",
     "Pictures/Pasted image 20260113144638.png",
     "固-气蒸气压.md",
     "Fourier transform.md",
-    "Reading notes/Berry phase effects on electronic properties.md",
-    "张量分析.md",
     "Berry phase.md",
     "AB效应.md",
     "Hilbert空间.md",
