@@ -965,12 +965,26 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Fourier transform.md",
+                "file": "固-气蒸气压.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Fourier transform"
+              "title": "固-气蒸气压"
+            }
+          },
+          {
+            "id": "229716be8c23593b",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "微分几何.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "微分几何"
             }
           },
           {
@@ -1478,7 +1492,7 @@
             }
           }
         ],
-        "currentTab": 68
+        "currentTab": 69
       }
     ],
     "direction": "vertical"
@@ -1648,13 +1662,18 @@
       "obsidian-excalidraw-plugin:New drawing": false
     }
   },
-  "active": "e01161b0168c04f9",
+  "active": "229716be8c23593b",
   "lastOpenFiles": [
+    "Lie Group.md",
+    "Maxwell Stress Tensor and Momentum.md",
+    "微分几何.md",
+    "Pictures/Pasted image 20260113144638.png",
+    "固-气蒸气压.md",
+    "Fourier transform.md",
     "Reading notes/Berry phase effects on electronic properties.md",
     "张量分析.md",
     "Berry phase.md",
     "AB效应.md",
-    "Fourier transform.md",
     "Hilbert空间.md",
     "Untitled 3.md",
     "Bose-Einstein statistics与BEC.md",
@@ -1673,10 +1692,6 @@
     "Experimental/PPMS.md",
     "Experimental/PID Control.md",
     "Untitled 1.md",
-    "Untitled.md",
-    "Reading notes/Doping-induced spin reorientation in Kagome magnet TmMn6Sn6.md",
-    "Reading notes/Electrical resistance of ferromagnetic metals.md",
-    "Solid state.md",
     "Pictures/Pasted image 20251223113815.png",
     "Pictures/Pasted image 20251223074909.png",
     "Pictures/Pasted image 20251222152527.png",
@@ -1687,7 +1702,6 @@
     "Pictures/Pasted image 20251212204220.png",
     "Pictures/Pasted image 20251212204200.png",
     "Pictures/Pasted image 20251207224012.png",
-    "Pictures/Pasted image 20251209161120.png",
     "Pictures/Wu_ContemporaryChineseArt.pdf",
     "Wu_ContemporaryChineseArt.pdf",
     "Reading notes",
