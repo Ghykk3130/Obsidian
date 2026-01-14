@@ -141,3 +141,25 @@ $$\begin{align}
 \dot{\vec{k}} & =  \dot{\vec{q}}+ \frac{e}{\hbar}(-\vec{E}) \\
  & = - \frac{1}{\hbar}e\vec{E}
 \end{align}$$
+此外，令$\ket{u_{n}}$为$H(t)$的瞬时本征态。容易知道若$0$时刻系统处于态$\ket{u_{n}(0)}$，绝热演化，则$t$时刻：
+$$\ket{\psi(t)} = \ket{u_{n}(t)} -i\hbar \sum_{m \neq n}  \frac{\ket{u_{m}(t)} \bra{u_{m}(t)}  \frac{\partial}{\partial t}\ket{u_{n}(t)} }{\epsilon_{n}-\epsilon_{m}}=\ket{u_{n}(t)} + \sum_{m\neq n} a_{m} \ket{u_{m}(t)} $$
+前面可能还有有一个phase factor。考虑：
+$$\begin{align}
+{\vec{v}} & = \bra{\psi}  \frac{1}{\hbar} \frac{\partial H}{\partial \vec{k}}\ket{\psi}  \\
+ & = \left( \bra{u_{n}} + \sum_{m\neq n} a_{m}^{*} \bra{u_{m}}  \right)  \frac{1}{\hbar} \frac{\partial H}{\partial \vec{k}} \left( \ket{u_{n}} + \sum_{m^{'}\neq n} a_{m^{'}}\ket{u_{m^{'}}}  \right) \\
+ & \approx \bra{u_{n} }  \frac{1}{\hbar} \frac{\partial H}{\partial \vec{k}} \ket{u_{n}} + \sum_{m\neq n} a_{m}^{*}\bra{u_{m} } \frac{1}{\hbar} \frac{\partial H}{\partial \vec{k}} \ket{u_{n}} +\text{c.c}  
+\end{align}$$
+其中由于$a_{m}$是小量，我忽略了二阶项。我们知道：
+$$\begin{align}
+ & H\ket{u_{n}} =\epsilon_{n}\ket{u_{n}}  \\
+\implies &  \frac{\partial H}{\partial \vec{k}}\ket{u_{n}} + H \left(  \frac{\partial}{\partial \vec{k}}\ket{u_{n}}  \right)= \frac{\partial\epsilon_{n}}{\partial \vec{k}}\ket{u_{n}} +\epsilon_{n} \frac{\partial}{\partial \vec{k}}\ket{u_{n}}  \\
+\implies & \bra{u_{m}}  \frac{\partial H}{\partial \vec{k}}\ket{u_{n}} + \bra{u_{m}} H \left(  \frac{\partial}{\partial \vec{k}}\ket{u_{n}}  \right)= \bra{u_{m}}  \frac{\partial\epsilon_{n}}{\partial \vec{k}}\ket{u_{n}} +\epsilon_{n} \bra{u_{m}}  \frac{\partial}{\partial \vec{k}}\ket{u_{n}}   \\
+\implies & \bra{u_{m}}  \frac{\partial H}{\partial \vec{k}}\ket{u_{n}} = (\epsilon_{n}-\epsilon_{m}) \bra{u_{m}}  \frac{\partial}{\partial \vec{k}}\ket{u_{n}} +   \frac{\partial\epsilon_{n}}{\partial \vec{k}}\delta_{mn}
+\end{align}$$
+所以平均速度第一项：
+$$\bra{u_{n}} \frac{1}{\hbar} \frac{\partial H}{\partial \vec{k}} \ket{u_{n}} =  \frac{1}{\hbar} \frac{\partial\epsilon_{n}}{\partial \vec{k}}$$
+而第二项为：
+$$\begin{align}
+\sum_{m\neq n} a_{m}^{*} \bra{u_{m}}  \frac{1}{\hbar} \frac{\partial H}{\partial \vec{k}} \ket{u_{n}}  & = \sum a_{m}^{*} \frac{\epsilon_{n}-\epsilon_{m}}{\hbar} \bra{u_{m}}  \frac{\partial}{\partial \vec{k}}\ket{u_{n}}  \\
+ & = 
+\end{align}$$
