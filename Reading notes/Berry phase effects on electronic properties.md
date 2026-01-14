@@ -120,6 +120,7 @@ $$\begin{align}
 $$u_{n,\vec{q}}(\vec{r}+\vec{R})=\exp\left( i \left(\frac{e}{\hbar}\vec{A}+\vec{q}\right) \right)u_{n,\vec{q}}(\vec{r})$$
 所以波矢为：
 $$\vec{k}= \vec{q}+ \frac{e}{\hbar}\vec{A}$$
+也可将$\ket{u_{n,\vec{q}}}$记为$\ket{u_{n,\vec{k}}}$。那么此时，$\ket{u_{n,\vec{k}}}$满足$\vec{k}-\text{dependent}$边界条件，而Hamiltonian是$\vec{k}-\text{independent}$的。那么再作3中变换，使得Hamiltonian为$\vec{k}-\text{dependent}$，而边界条件$\vec{k}-\text{independent}$。那么可将$\vec{k}$作为参数引出Berry phase。
 
 >[!Note] Proposition 4.2
 >$$\dot{\vec{q}}=0$$
@@ -136,12 +137,13 @@ T(\vec{R})\ket{\psi_{n,\vec{q}}(t)}  & =T(\vec{R})\exp\left( - \frac{i}{\hbar}\i
 >[!Right]
 >$\blacksquare$
 
+
 所以：
 $$\begin{align}
 \dot{\vec{k}} & =  \dot{\vec{q}}+ \frac{e}{\hbar}(-\vec{E}) \\
  & = - \frac{1}{\hbar}e\vec{E}
 \end{align}$$
-此外，令$\ket{u_{n}}$为$H(t)$的瞬时本征态。容易知道若$0$时刻系统处于态$\ket{u_{n}(0)}$，绝热演化，则$t$时刻：
+此外，令$\ket{u_{n}(t)}$为$H(t)=H(\vec{k}(t))$的瞬时本征态。我们知道若$0$时刻系统处于态$\ket{u_{n}(0)}$，绝热演化，则$t$时刻：
 $$\ket{\psi(t)} = \ket{u_{n}(t)} -i\hbar \sum_{m \neq n}  \frac{\ket{u_{m}(t)} \bra{u_{m}(t)}  \frac{\partial}{\partial t}\ket{u_{n}(t)} }{\epsilon_{n}-\epsilon_{m}}=\ket{u_{n}(t)} + \sum_{m\neq n} a_{m} \ket{u_{m}(t)} $$
 前面可能还有有一个phase factor。考虑：
 $$\begin{align}
@@ -160,6 +162,18 @@ $$\begin{align}
 $$\bra{u_{n}} \frac{1}{\hbar} \frac{\partial H}{\partial \vec{k}} \ket{u_{n}} =  \frac{1}{\hbar} \frac{\partial\epsilon_{n}}{\partial \vec{k}}$$
 而第二项为：
 $$\begin{align}
-\sum_{m\neq n} a_{m}^{*} \bra{u_{m}}  \frac{1}{\hbar} \frac{\partial H}{\partial \vec{k}} \ket{u_{n}}  & = \sum a_{m}^{*} \frac{\epsilon_{n}-\epsilon_{m}}{\hbar} \bra{u_{m}}  \frac{\partial}{\partial \vec{k}}\ket{u_{n}}  \\
- & = 
+\sum_{m\neq n} a_{m}^{*} \bra{u_{m}}  \frac{1}{\hbar} \frac{\partial H}{\partial \vec{k}} \ket{u_{n}} +\text{c.c.} & = \sum a_{m}^{*} \frac{\epsilon_{n}-\epsilon_{m}}{\hbar} \bra{u_{m}}  \frac{\partial}{\partial \vec{k}}\ket{u_{n}}+\text{c.c.}  \\
+ & = \sum i \left( \frac{\partial}{\partial t}\bra{u_{n}}  \right)\ket{u_{m}}  \bra{u_{m}}  \frac{\partial}{\partial \vec{k}}\ket{u_{n}} +\text{c.c.} \\
+ & = i \left(  \frac{\partial}{\partial t} \bra{u_{n}}  \right)(1- \ket{u_{n}}  \bra{u_{n}} ) \frac{\partial}{\partial \vec{k}} \ket{u_{n}} +\text{c.c.} \\
+ & = i \left(  \frac{\partial}{\partial t} \bra{u_{n}}  \right) \frac{\partial}{\partial \vec{k}} \ket{u_{n}} +\text{c.c.}
 \end{align}$$
+最后一步是因为我选取parallel transport gauge，使得$\left( \frac{\partial}{\partial t}\bra{u_{n}} \right)\ket{u_{n}}=0$。接下来：
+$$\begin{align}
+\text{expr} & = i   \dot{\vec{k}} \cdot \left(  \frac{\partial}{\partial \vec{k}} \bra{u_{n}}  \right) \frac{\partial}{\partial \vec{k}} \ket{u_{n}} -i \left(  \frac{\partial}{\partial \vec{k}}\bra{u_{n}}  \right)  \dot{\vec{k}} \cdot \frac{\partial}{\partial \vec{k}}\ket{u_{n}}   \\
+ & = -i  \dot{\vec{k}}\times\left(  \frac{\partial}{\partial \vec{k}}\bra{u_{n}}  \times \frac{\partial}{\partial \vec{k}}\ket{u_{n}} 
+ \right) \\
+ & = -  \dot{\vec{k}}\times \vec{\Omega}\end{align}$$所以得到：
+
+>[!Note] Proposition 4.3 
+>$$\dot{\vec{k}}= - \frac{1}{\hbar}e\vec{E},\ \vec{v}= \frac{1}{\hbar} \frac{\partial\epsilon_{n}}{\partial \vec{k}}-  \dot{\vec{k}}\times \vec{\Omega}$$
+
