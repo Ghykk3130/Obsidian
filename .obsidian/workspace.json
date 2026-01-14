@@ -979,12 +979,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Solid state.md",
+                "file": "Reading notes/Berry phase effects on electronic properties.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Solid state"
+              "title": "Berry phase effects on electronic properties"
             }
           },
           {
@@ -1559,8 +1559,7 @@
               "title": "Search"
             }
           }
-        ],
-        "currentTab": 3
+        ]
       }
     ],
     "direction": "horizontal",
@@ -1665,6 +1664,7 @@
   },
   "active": "229716be8c23593b",
   "lastOpenFiles": [
+    "Solid state.md",
     "Reading notes/Berry phase effects on electronic properties.md",
     "张量分析.md",
     "微分几何.md",
@@ -1692,7 +1692,6 @@
     "Homework/Physics 510 Homework 5.md",
     "Experimental/PPMS.md",
     "Experimental/PID Control.md",
-    "Untitled 1.md",
     "Pictures/Pasted image 20251223113815.png",
     "Pictures/Pasted image 20251223074909.png",
     "Pictures/Pasted image 20251222152527.png",

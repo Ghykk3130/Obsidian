@@ -44,4 +44,16 @@ $$\gamma_{-}=\oint d\vec{S}\cdot \vec{\Omega}_{-}=2\pi$$
 
 Chern number统计积分面包裹区域内的monopole数量的算术和。我们刚刚得到了$C^{-}=1$。容易计算$C^{+}=-1$。
 
+# 3. Berry phase in Bloch bands
 
+考虑Bloch wave $\ket{\psi_{n,\vec{q}}}$。将$\vec{q}$作为parameter可以引出Berry phase。
+
+例如外加磁场时，$\vec{q}$形成闭合回路。
+
+例如一维晶格外加电场时，$\vec{q}$线性增大。我们可以强制构建$u_{n,{q}}({r})=e^{i{q}r}\psi_{n,q}(r)$。由此可以引出Berry phase：
+$$\gamma_{n}= \int_{\text{BZ}}dq i \bra{u_{n,q}}  \frac{\partial}{\partial q}\ket{u_{n,q}} $$
+注意到这不是环路积分，所以不一定有规范不变性。但是：
+$$\begin{align}
+\gamma_{n} & = \int_{\text{BZ}} dq i \bra{u_{n,q}} \frac{\partial}{\partial q}\ket{u_{n,q}}  \\
+ & = \int dq i\left( - r+\bra{\psi_{n,q}}  \frac{\partial}{\partial{q}}\ket{\psi_{n,q}}  \right)
+\end{align}$$
