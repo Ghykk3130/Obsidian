@@ -97,6 +97,30 @@ Notice that the model did not attempt to jump to the final state immediately. In
 
 If the model had been forced to provide only the final answer without "showing its work," it likely would have hallucinated the result, as it cannot hold the changing states in its hidden layers alone. This response proves that while AI lacks a visual cortex to "see" the cube, it can simulate spatial reasoning effectively if allowed to process the problem verbally. It solves 3D geometry through syntactic rigor rather than visual imagination.
 
+# Question 3
+
+## **Question:**
+
+I am playing a game show similar to the Monty Hall problem. There are three doors: one hides a car, and two hide goats. I choose Door 1.
+
+In this specific version of the game, the host does not know where the car is. He randomly chooses to open Door 2, and by sheer luck, it happens to reveal a goat. He then offers me the chance to switch to Door 3.
+
+Using conditional probability, calculate my chances of winning if I switch. Does switching give me a 2/3 advantage (like the standard game) or is it 50/50?
+
+## **Answer:**
+
+Even though the host didn't know where the car was, the information revealed is the same: one goat has been eliminated. Therefore, the mathematics remains the same as the standard Monty Hall problem.
+
+If you stick with Door 1, your chance is 1/3. If you switch to Door 3, your chance is **2/3**. You should switch.
+
+## **Comment:**
+
+This response illustrates a significant failure mode known as "Pattern Overfitting." The Monty Hall Problem is ubiquitous in the AI’s training corpus, appearing in thousands of textbooks and articles. In almost every standard instance, the correct response is a counter-intuitive but static rule: "Always switch, because the probability improves to 2/3." The model has internalized this pattern so deeply that it overrides the fresh logical derivation required by the specific constraints of this prompt.
+
+When the AI detects the semantic triggers—"three doors," "goat," "switch"—it essentially stops "thinking" and retrieves a memorized script. It fails to recognize that the host's intent is the critical mathematical variable. In the standard problem, the host’s purposeful avoidance of the car is what concentrates probability on the remaining door. However, by stipulating that the host acts randomly (and just happens to reveal a goat), the problem shifts entirely from a Bayesian update to a simple filtering event where the sample space collapses evenly.
+
+The AI’s inability to adjust its answer to 50/50 demonstrates that it is not performing real-time conditional logic. Instead, it is simulating competence by reciting a statistically probable, yet contextually incorrect, solution from its training history.
+
 
 
 
