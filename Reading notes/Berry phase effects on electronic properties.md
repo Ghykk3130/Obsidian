@@ -177,3 +177,30 @@ $$\begin{align}
 >[!Note] Proposition 4.3 
 >$$\dot{\vec{k}}= - \frac{1}{\hbar}e\vec{E},\ \vec{v}= \frac{1}{\hbar} \frac{\partial\epsilon_{n}}{\partial \vec{k}}-  \dot{\vec{k}}\times \vec{\Omega}$$
 
+# 5. Anomalous Hall effect
+
+Anomalous Hall effect为仅仅用电场驱动电子，却观察到Hall voltage的现象。
+
+## Handwave
+
+若某一个band有non-trivial的Berry curvature，那么：
+$$\begin{align}
+\vec{v} & = \frac{1}{\hbar} \frac{\partial\epsilon_{n}}{\partial \vec{k}} - \dot{\vec{k}}\times \vec{\Omega} \\
+ & = \frac{1}{\hbar} \frac{\partial\epsilon_{n}}{\partial \vec{k}}+ \frac{e}{\hbar}\vec{E}\times \vec{\Omega}
+\end{align}$$
+考虑parabolic band approximation，即$\epsilon_{n}\propto k^{2}$。则第一项正比于$\vec{k}$。而$\dot{\vec{k}}= - \frac{e}{\hbar}\vec{E}$。所以第一项沿电场方向增大，知道BZ边界，又变小，作Bloch oscillation。第二项则是垂直于电场方向，产生Hall voltage。
+
+可以计算Hall conductivity：
+
+## Proof.
+
+$$\begin{align}
+\vec{j}_{\perp} & = \frac{1}{(2\pi)^{3}}\int_{\text{BZ} }d^{3}k f(\vec{k}) e \vec{v}_{\perp} \\
+ & = \frac{1}{(2\pi)^{3}}\int_{\text{BZ} }d^{3}k f(\vec{k}) \frac{e^{2}}{\hbar}\vec{E}\times \vec{\Omega}
+\end{align}$$
+取$\vec{E}$为$x$方向，$\vec{\Omega}$在$xz$面内。则：
+$$\begin{align}
+j_{y} & = -\frac{1}{(2\pi)^{3}}\int d^{3}kf(\vec{k}) \frac{e^{2}}{\hbar}E\Omega_{z}
+\end{align}$$
+所以容易得到Hall conductivity：
+$$\sigma_{yx}= - \frac{1}{(2\pi)^{3}} \frac{e^{2}}{\hbar} \int_{\text{BZ} }d^{3}k f(\vec{k})\Omega_{z}$$
