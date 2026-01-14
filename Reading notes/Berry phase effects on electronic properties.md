@@ -40,7 +40,7 @@ $$\gamma_{-}=\oint d\vec{S}\cdot \vec{\Omega}_{-}=2\pi$$
 我们发现，原点$\vec{h}=0$处$\ket{u_{\pm}}$重合。所以Berry curvature的源的奇点对应态重合的点。
 
 >[!Note] Definition 1
->Define Chern number: $C=\frac{1}{\pi}\oint d\vec{S}\cdot \vec{\Omega}$
+>Define Chern number: $C=\frac{1}{2\pi}\oint d\vec{S}\cdot \vec{\Omega}$
 
 Chern number统计积分面包裹区域内的monopole数量的算术和。我们刚刚得到了$C^{-}=1$。容易计算$C^{+}=-1$。
 
@@ -79,3 +79,65 @@ $$\begin{align}
 \implies & \theta(q+G)-\theta_{}(q)=2\pi n
 \end{align}$$
 所以$\gamma_{n}^{'}=\gamma_{n}$。我们只考虑$\{ \gamma_{n} \} / 2\pi \mathbb{Z}$。
+
+# 4. Anomalous velocity
+
+在晶体中加恒电场$\vec{E}$。我们有：
+$$H= \frac{p^{2}}{2m}+V+e\phi$$
+由于$\phi(\vec{r})$破坏了周期势的对称性，我们不能考虑Bloch解。现考虑消去$e\phi$。考虑规范变换引出$\vec{A}(t)=\nabla \Lambda(t,\vec{r})$，使得$\phi$刚好被消去，即$\partial_{t}\Lambda(t,\vec{r})-\phi(\vec{r})=0$。显然可取$\Lambda=-\vec{E}\cdot \vec{r}t$。那么，变换之后的Hamiltonian为：
+$$H= \frac{|\vec{p}+e\vec{A}|^{2}}{2m}+V$$
+此时，我们不能直接得到semiclassical EOM，因为该方程前提是Hamiltonian为$\frac{p^{2}}{2m}+V,\ V\text{ is periodic}$。我们必须重新选取晶格动量。
+
+>[!Note] Proposition 4.1
+>$$\left[ \frac{|\vec{p}+e\vec{A}|^{2}}{2m}+V,T(\vec{R}) \right]=0$$
+## Proof.
+
+容易证明：
+$$[\vec{p}+e\vec{A}(t),T(\vec{R})]=0$$
+则$[\frac{|\vec{p}+e\vec{A}|^{2}}{2m},T(\vec{R})]=0$。接下来：
+$$\begin{align}
+[V,T(\vec{R})]\psi(\vec{r}) & = (V(\vec{r})T(\vec{R})-T(\vec{R})V(\vec{r}))\psi(\vec{r}) \\
+ & = V(\vec{r})\psi(\vec{r}-\vec{R})-T(\vec{R})(V(\vec{r})\psi(\vec{r})) \\
+ & = V(\vec{r})\psi(\vec{r}-\vec{R})-V(\vec{r}-\vec{R})\psi(\vec{r}-\vec{R}) \\
+ & = V(\vec{r})\psi(\vec{r}-\vec{R})-V(\vec{r})\psi(\vec{r}-\vec{R}) \\
+ & =0
+\end{align}$$
+故$[V,T(\vec{R})]=0$
+>[!Right]
+>$\blacksquare$
+
+那么选取$H,T(\vec{R})$的simultaneous ket $\ket{\psi_{n,\vec{q}}}$作为本征态。则有：
+$$T(\vec{R})\ket{\psi_{n,\vec{q}}} = \exp\left( - i\vec{q}\cdot \vec{R} \right)\ket{\psi_{n,\vec{q}}} $$
+即：
+$$\psi_{n,\vec{q}}(\vec{r}-\vec{R})=\exp(-i\vec{q}\cdot \vec{R})\psi_{n,\vec{q}}(\vec{r})$$
+接下来容易证明：
+$$\begin{align}
+ & \left( \frac{|\vec{p}+e\vec{A}|^{2}}{2m^{}}+V \right)\ket{\psi_{n,\vec{q}}} =\epsilon_{n,\vec{q}}\ket{\psi_{n,\vec{q}}} \\
+\implies & \exp\left(  i\frac{e}{\hbar}\vec{A}  \cdot \vec{r}\right)\left(  \frac{|\vec{p}+e\vec{A}|^{2}}{2m}+V \right)\exp\left( -i \frac{e}{\hbar}\vec{A}\cdot \vec{r} \right)\exp\left(  i \frac{e}{\hbar}\vec{A} \cdot \vec{r}\right)\ket{\psi_{n,\vec{q}}}=\epsilon_{n,\vec{q}}\exp\left(  i\frac{e}{\hbar}\vec{A} \cdot \vec{r}\right)\ket{\psi_{n,\vec{q}}} \\
+\implies &    \left( \frac{p^{2}}{2m}+V \right)\exp\left( i \frac{e}{\hbar}\vec{A} \cdot \vec{r}\right)\ket{\psi_{n,\vec{q}}} =\epsilon_{n,\vec{q}}\exp\left( i \frac{e}{\hbar}\vec{A}\cdot \vec{r} \right)\ket{\psi_{n,\vec{q}}} 
+\end{align}$$
+所以$\ket{u_{n,\vec{q}}}=\exp\left( i \frac{e}{\hbar}\vec{A}\cdot \vec{r} \right)\ket{\psi_{n,\vec{q}}}$可以满足semiclassical EOM。容易看出：
+$$u_{n,\vec{q}}(\vec{r}+\vec{R})=\exp\left( i \left(\frac{e}{\hbar}\vec{A}+\vec{q}\right) \right)u_{n,\vec{q}}(\vec{r})$$
+所以波矢为：
+$$\vec{k}= \vec{q}+ \frac{e}{\hbar}\vec{A}$$
+
+>[!Note] Proposition 4.2
+>$$\dot{\vec{q}}=0$$
+## Proof.
+
+容易证明$[H(t_{1}),H(t_{2})]=0,\ \forall t_{1},t_{2}$，且$[H(t),T(\vec{R})]=0,\ \forall t$。那么：
+$$\ket{\psi_{n,\vec{q}}(t)} =\exp\left( - \frac{i}{\hbar}\int H \right)\ket{\psi_{n,\vec{q}}(0)} $$
+假设$0$时刻波矢为$\vec{q}$。想证明$t$时刻波矢仍为$\vec{q}$。我们有：
+$$\begin{align}
+T(\vec{R})\ket{\psi_{n,\vec{q}}(t)}  & =T(\vec{R})\exp\left( - \frac{i}{\hbar}\int H \right)\ket{\psi_{n,\vec{q}}(0)}  \\
+ & = \exp\left( - \frac{i}{\hbar}\int H \right)T(\vec{R})\ket{\psi_{n,\vec{q}}(0)}  \\
+ & = e^{-i\vec{q}\cdot \vec{R}}\ket{\psi_{n,\vec{q}}(t)} 
+\end{align}$$
+>[!Right]
+>$\blacksquare$
+
+所以：
+$$\begin{align}
+\dot{\vec{k}} & =  \dot{\vec{q}}+ \frac{e}{\hbar}(-\vec{E}) \\
+ & = - \frac{1}{\hbar}e\vec{E}
+\end{align}$$
