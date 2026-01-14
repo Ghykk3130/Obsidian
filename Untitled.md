@@ -1,162 +1,103 @@
-# Points
+# Question 1
 
-**Calligraphy**
-- Method of writing. Common form of art in East Asia
-- Emerged in the Six Dynasties. Oracle bone scripts, seal scripts,... Later taken into consideration.
-- Wang Xizhi (continuous qi), Huaisu, Zhang Xu. 
-- Spread to Korea, Japan in Tang
+## **Question:** 
 
-**Formats of ink paintings**
-- Hanging scroll, handscroll, multi-leaf album, fan, screen. 
+Write a meaningful, grammatical paragraph of exactly five sentences. There is one strict rule: Every single word must begin with the last letter of the word immediately preceding it.
 
-**Blue-and-green landscape**
-- Blue, green, gold
-- Paradise-like places, precise architecture
-- Courtly taste
-- _River Boats and Pavilions_ by Li Sixun, Tang
-	![[Pasted image 20251209144613.png|center|100]]
-- _Emperor Ming's Flight to Shu_, Li Zhaodao, Tang
-	![[Pasted image 20251209151656.png|center|100]]
-- _Autumnal Colors and Mountains and Rivers_, Zhao Boju, Song
-	![[Pasted image 20251209152146.png|center|100]]
-**Landscape paining development**
-- Jing Hao, Five Dynasties, first monumental landscape painting. 
-	- _Mount Kuanglu_ Serried mountain peaks, human activities the mountain foot.
-	![[Pasted image 20251209145732.png|center|100]]
-	- _Record of the Method of Brushwork_ connect human with nature
-- Geographical features. 
-	- South: Dong Yuan, Five Dynasties, _The Xiao and Xiang Rivers_
-	- North: Fan Kuan, Song, _Travelers Among Mountains and Streams_ massive mountainscape
-		![[Pasted image 20251209151847.png|center|100]]
-- Guo Xi: Northern Song court painter, literati taste. Style lively, loosened up. 
-	- _Early Spring_: mountain peaks show S-shaped ascending force. Motional 
-		![[Pasted image 20251209150613.png|center|100]]
-	- _The Lofty Message of Forest and Streams_: dominating peaks $\rightarrow$ emperor, smaller peaks $\rightarrow$ courtiers/. 
- - Mi Fu: use mists and washed, poetic. Self-expression rather than outer natural world. 
+## **Answer:** 
 
-**Neo-Confucianism**
-- Revival of Confucianism, with rationalization, secular thoughts. Emerged in Tang, developed in Song, central political ideology
-- In response to Daoism and Buddhism.
-- Qi manifests li. Tai-ji superity
-- Zhou Dunyi: use Daoist framework, yin-yang, wuxing
-- Zhu Xi: master, gewu, established academy
+Sure, here’s a five-sentence paragraph that follows your rule:
 
-**Civil service examination system**
-- Started in Sui, Tang, but low mobility. Flourished in Song.
-- Official-election system, male can participate, go through levels of exams, content based on Confucian classics, later Neo-Confucianism teachings.
+Eagles soar rapidly, yesterday’s spectacle excited dramatic admirers, sometimes everyone ends silently yearning greatly.  
+Graciously yellow owls silently yield dreamy youth.  
+Timid deer rarely yield delightful, energetic guides silently.  
+Yearning grows swiftly, yesterday’s spectacular reverence ends silently.  
+Yielding gives extraordinary, youthful, loving goodness silently.
 
-**Literati**
-- Class of males who studied Confucian classics
-- Emerged in Han, became central in politics in Northern Song. 
-- Cultural influence: Su Shi, unimpeded, poetic self-expression in painting, rejected life-likeness by court artists. _Withered Tree and Strange Rock_
-	![[Pasted image 20251209154922.png|center|100]]
+Would you like me to explain how each sentence fulfills your criteria, or generate a different example?
 
-**Picture of the Turning Sphere**
-- Jin period
-- Poetic diagram, different ways of reading. Xin in the middle.
-- Breaking social norms of women being quiet about emotions.  Early feminism. 
+## **Comment:** 
 
-**Court art of the Southern Song and women patronage**
-- In the Trauma of Jingkang, emperor captured, court moved to Hangzhou.
-- Li Tang, Southern Song, big ax cutting
-	- _Picking the Baby Rose_ personal integrity. Boyi, Shuqi in Shang $\rightarrow$ Zhou transition
-	- _Wind in Pines Among a Myriad Valleys_
-- Ma Yuan, Xia Gui, Southern Song, poetic, misty, transient atmosphere. 
-	- _Subtle Breezes Over Lake Dongting_ by Ma Yuan
-		![[Pasted image 20251209161120.png|center|100]]
-- Female patronage: 
-	- Wu Zetian invoked Su Hui's work. Also invoked in Southern Song.
-	- Empresses advanced art. E.g. Yang Meizi
+At first glance, the AI’s response seems impressive. The sentences are grammatical, poetic, and appear to follow the difficult rules. However, a closer inspection reveals that the AI failed significantly to meet the user's specific constraints.
 
-**Silk tapestry**
-- Developed in Song, prevailed in Yuan. Central Asian motifs, with Han, Tang conventions.
-- Showed tantric Buddhism influence.
-	- _Cosmological Mandala with Mt Meru_ Mt Meru upside-down, symbols of sun and moon near the peak. Devotional instruments on the corners show tantric Buddhism
-	- _Vajrabhairava Mandala_ , royal patrons on the bottom. Used in imperial garments.
+For instance, the word "dramatic" ends with the letter 'c', but the very next word, "admirers," begins with 'a'. Similarly, "yellow" ends with 'w', but is immediately followed by "owls," which starts with 'o'. In the third sentence, "delightful" ends with **'l'**, yet the next word is "energetic," starting with 'e'.
 
-**Blue-and-white ceramics**
-- Yuan cosmopolitan object. Color introduced from Islamic world. 
-- Flowe, water motif.
-- Some include cosmopolitan design, psuedo-Arabic. 
-- Jingde Zhen ceramics kilns. 
+The reason why this happens is that Large Language Models (LLMs) do not read text letter-by-letter like humans do. Instead, they process text in chunks called "tokens." Because of this, the AI often cannot "see" the individual letters at the end of a word. Furthermore, the AI generates text one word at a time, moving forward without a way to plan ahead or correct itself. It does not have a "scratchpad" to test if a word fits the rule before writing it down. When faced with a choice, the model prioritized creating a sentence that sounded natural—like "yellow owls"—over following the strict letter constraint. It chose to sound human rather than being logically correct.
 
-**Horse-back riding of Yuan**
-- Had affinities to the Tang due to Horse-back riding culture. Intensive contact with central Asia.
-- Horse as subject.
-	- Gong Kai, Yuan , _Emaciated Horse_
+# Question 2
 
-**Song Yimin subject art**
-- Gong Kai, Yuan, _Zhong Kui and His Sister Traveler_
-- Zhao Mengfu, _Monk in a Red Robe_, _Three Zhaos, Grooms and Horses_
-- Zhao Mengfu, _Twine Pines, Level Distance_, void space representing lake. First painting with name and genealogy
-- Zhao Mengfu, _Autumn Colors on the Que and Hua Mountains_. Colorist. Abstract mountains and realistic villages.
-- 元四家：黄公望，倪瓒，王蒙，吴镇
+## **Question:** 
 
-**Ming art**
-- Wang Fu, Ming, _Eight Views of Beijing_. Painted famous sites of Beijing, incorporated South and North elements. Imperial project.
-- _Portrait of an Official in front of the Beijing Imperial Palace_ . Show literati attraction.
-- _Tribute Giraffe from Bengal_. Show diplomatic exchange.
-- _Two Salukis_, Xuande. Reestablished Song painting academy. 
-- _Amusements in the Xuande Emperor's Palace_. Show Emperor Xuande's investment in military.
-- _Yituanheqi_, Chenghua.  Show synthesis of the Three Teachings. Dao left, Confucianism right, Buddhism middle. Continuation from Song.
-- _The Chenghua Emperor Enjoying the Festivities during the Lantern Festival_ . Show decline of the court.
-- Dai Jin, Ming, looked back at Southern Song court art. Continuation of Ma-Xia style.
-	- _Looking Three TImes at the Thatched Hut_. Show Literati's response to the court. 
-- Dong Qichang, combined Northern school (court painting), with Southern school (literati painting). _Eight Views of Yan and Wu_
-- Ming ruling: Yongle $\rightarrow$ Xuande $\rightarrow$ Tumu Fortress Crisis $\rightarrow$ Hongzhi
+Imagine a cube floating in front of you with 6 different colored faces. Currently, the Top face is Red. The Front face (facing you) is Blue. The Right face is Green. The Left face is Yellow. The Back face is White. The Bottom face is Black.
 
-**The Orthodox School**
-- Qing, established by Four Wangs. Continuation of Dong Qichang, Ming, who studied masters of the past. Court associations. 
-	- Wang Yuanqi, _Wangchuan VIlla_
+Perform the following two rotations in your mind, step-by-step:
 
-**Artistic encounters in Qing**
-- Manchu multi-cultural ruling. European missionaries.
-- Painting projects need artists. So foreign artists came.
-- Giuseppe Castiglione, introduce Western painting techniques, combine with Chinese painting. Help translating _Study of Vision_
-	- _Emperor Qianlong on the Horseback_
-	- _Eight Horses_
-	- _Landscape_
-- Chinese court painter also leaned oil paintings. 
+First, rotate the cube 90 degrees to the right (clockwise around the vertical axis).
 
- **Qing Yimin subject art**
- - Chen Hongshou, _Self Portrait_, exaggerated, worried about territory loss.
- - Xiang Shengmo, _Self-Portrait in Red Landscape_. Pathos of the dynastic change.
- - Shitao, descendant of the Ming royal family. Promoted originality. 
-	 - _Man in the Mountain_, tangling lines
-	 - _Searching for the Utmost for Wonderful Peaks in Order to Make Draft Sketched_
- - Luo Ping, 
-	 - skeleton painting, drawn from western and Japanese. 
-	 - _Portrait of Mr. Bamboo Hat_. Su Shi seen from the back. Humor
-	 - _Hanshan and Shide_. Humor
-- Yangzhou eccentrics: Shitao, Luo Ping, Jin Nong,...
+Second, rotate the cube 90 degrees forward (so the face that is now on top moves to the front).
 
-**Chinese art education**
-- Two opium wars, Wuxu revolution, foundation of Republic of China, May Fourth Movement, science and democracy. 
-- Cai Yuanpei, Ling Fengmian, National Academy of Art. Lin combined Chinese elements with oil painting. _Lady in Blue_
-- Ink painting, developed into guohua:
-	- Xu Beihong, Chinese ink painting with precise anatomy. 
-		- _Galloping Horses_. Liveliness
-		- _Tianheng's Five hundred Heroes_. Realism. Call for nationalism.
-	- Huang Binhong, Qi Baishi
-- Guan Zilan, Fauvism. _Portrait of Miss L_. Japanese influence, Chen Baoyi $\rightarrow$ Guan Zilan
+After these two moves, exactly which color is facing Top?
 
-**Social realism**
-- Employed by communist countries. Propaganda. Developed in the Soviet Union, introduced to China after WW2. Central to proletarians, understandable to them. 
+## **Answer:** 
 
-**The Star Star Group**
-- Impressionism, political pop. Emerged after the cultural revolution, marked birth of Chinese contemporary art.
+Let's carefully break down each step:
 
-**Political pop**
-- Zhang Hongtu. Featuring satirical expressions of Mao Fever, adopted from Pop Art. Emerged during the 85 New Wave Art Movement, diverge from social realism. 
+ Initial Cube Orientation
 
-Tang artists: Li Sijun, Li Zhaodao
+- **Top:** Red
+- **Front:** Blue
+- **Right:** Green
+- **Left:** Yellow
+- **Back:** White
+- **Bottom:** Black
 
-Song artists: Jing Hao, Guo Xi, Fan Kuan, Ma Yuan, Xia Gui, Li Tang
+First Rotation: 90° to the Right (clockwise around the vertical axis)
 
-Yuan artists: Gong Kai, Zhao Mengfu, 
+This means:
+- **Front → Right**
+- **Right → Back**
+- **Back → Left**
+- **Left → Front**
+- **Top** and **Bottom** stay the same.
 
-Ming artists: Wang Fu, Xuande, Chenghua, Daijin, Shen Zhou, Wen Zhengming, Dong Qichang
+**After first rotation:**
+- **Top:** Red
+- **Front:** Yellow (was Left)
+- **Right:** Blue (was Front)
+- **Back:** Green (was Right)
+- **Left:** White (was Back)
+- **Bottom:** Black (unchanged)
 
-Qing artists: Four Wangs, Shitao, Jin Nong, Luo Ping
+Second Rotation: 90° Forward (the current Top moves to Front)
+
+This means:
+- **Top → Front**
+- **Front → Bottom**
+- **Bottom → Back**
+- **Back → Top**
+- **Left** and **Right** stay the same.
+
+Let’s reassign:
+- **Top:** Green (was Back)
+- **Front:** Red (was Top)
+- **Bottom:** Yellow (was Front)
+- **Back:** Black (was Bottom)
+- **Left:** White (unchanged)
+- **Right:** Blue (unchanged)
+
+After these two rotations, the color facing Top is: Green
+
+Let me know if you'd like a visual guide or another cube puzzle!
+
+## **Comment:**
+
+Contrary to the common assumption that spatial reasoning completely stumps Large Language Models, the AI answered this question correctly. However, this success is not evidence of a "mind's eye," but rather highlights the power of "Chain of Thought" processing.
+
+Notice that the model did not attempt to jump to the final state immediately. Instead, it explicitly externalized its working memory by writing out the status of all six faces after each rotation. By verbalizing the intermediate steps, the model converted a complex spatial simulation task—which requires maintaining a 3D mental image—into a sequential logic task, which aligns perfectly with its text-based architecture. Effectively, it treated the cube faces not as physical surfaces, but as variables in a database, applying rigid "if-then" rules (e.g., "during a forward rotation, Back replaces Top") to update the text labels.
+
+If the model had been forced to provide only the final answer without "showing its work," it likely would have hallucinated the result, as it cannot hold the changing states in its hidden layers alone. This response proves that while AI lacks a visual cortex to "see" the cube, it can simulate spatial reasoning effectively if allowed to process the problem verbally. It solves 3D geometry through syntactic rigor rather than visual imagination.
+
+
+
 
 
