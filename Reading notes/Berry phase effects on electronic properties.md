@@ -65,7 +65,7 @@ $$\gamma_{n}=i \int_{\text{BZ}}dq \bra{u_{n,q}} \frac{\partial}{\partial q}\ket{
 $$\ket{u_{n,q+G}} =\ket{u_{n,q}}  $$
 若对于$\ket{u_{n,q}}$再作一次$U(1)$变换，令$\ket{u_{n,q}^{'}}=e^{i\theta(q)}\ket{u_{n,q}}$，使得规范的选择符合：
 $$\begin{align}
- u_{n,q}^{'}(r+R)=u_{n,q}^{'}(r) 
+ \ket{u_{n,q+G}} =\ket{u_{n,q}} 
 \end{align}$$
 那么：
 $$\begin{align}
