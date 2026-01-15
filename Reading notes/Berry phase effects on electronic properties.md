@@ -214,3 +214,9 @@ j_{y} & = -\frac{1}{(2\pi)^{3}}\int d^{3}kf(\vec{k}) \frac{e^{2}}{\hbar}E\Omega_
 \end{align}$$
 所以容易得到Hall conductivity：
 $$\sigma_{yx}= - \frac{1}{(2\pi)^{3}} \frac{e^{2}}{\hbar} \int_{\text{BZ} }d^{3}k f(\vec{k})\Omega_{z}$$
+# 6. Topological Hall effect
+
+考虑电子穿过具有non-trivial spin texture的磁铁。那么不同位置Hamiltonian不同。所以可以以位置为参数引出一个Berry curvature。具体来说：
+$$H= \frac{p^{2}}{2m}-J\hat{n}(\vec{r})\cdot \sigma$$
+可以算得：
+$$\vec{\Omega}= \frac{1}{2}\sin \theta (\nabla \theta \times \nabla \phi)$$
