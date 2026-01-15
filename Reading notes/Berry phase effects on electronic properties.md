@@ -220,3 +220,4 @@ $$\sigma_{yx}= - \frac{1}{(2\pi)^{3}} \frac{e^{2}}{\hbar} \int_{\text{BZ} }d^{3}
 $$H= \frac{p^{2}}{2m}-J\hat{n}(\vec{r})\cdot \sigma$$
 可以算得：
 $$\vec{\Omega}= \frac{1}{2}\sin \theta (\nabla \theta \times \nabla \phi)$$
+
