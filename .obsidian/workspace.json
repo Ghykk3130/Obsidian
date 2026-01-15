@@ -1021,12 +1021,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Solid state.md",
+                "file": "Graphene中的Dirac cone.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Solid state"
+              "title": "Graphene中的Dirac cone"
             }
           },
           {
@@ -1601,8 +1601,7 @@
               "title": "Search"
             }
           }
-        ],
-        "currentTab": 3
+        ]
       }
     ],
     "direction": "horizontal",
@@ -1707,8 +1706,11 @@
   },
   "active": "5e71caeda98a50ff",
   "lastOpenFiles": [
-    "Graphene中的Dirac cone.md",
+    "Fourier热传导定律.md",
     "Excalidraw/Drawing 2026-01-15 01.08.49.excalidraw.md",
+    "Excalidraw/Drawing 2025-11-22 00.07.40.excalidraw.md",
+    "Graphene中的Dirac cone.md",
+    "Solid state.md",
     "Fourier transform.md",
     "Baker-Campbell-Hausdorff Formula.md",
     "液滴.md",
@@ -1731,9 +1733,6 @@
     "Experimental/Untitled.md",
     "Experimental/Transformer Comments.md",
     "Experimental/PPMS.md",
-    "Experimental/FET Amplifier.md",
-    "Experimental/Exfoliation.md",
-    "Untitled.md",
     "Pictures/Pasted image 20260113144638.png",
     "AB效应",
     "Pictures/Pasted image 20251223113815.png",
