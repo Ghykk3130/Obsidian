@@ -993,12 +993,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "微分几何.md",
+                "file": "Reading notes/Berry phase effects on electronic properties.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "微分几何"
+              "title": "Berry phase effects on electronic properties"
             }
           },
           {
@@ -1678,6 +1678,7 @@
   },
   "active": "9d4f433e0f3a85fb",
   "lastOpenFiles": [
+    "微分几何.md",
     "Reading notes/Berry phase effects on electronic properties.md",
     "Experimental/Basic Electronics.md",
     "Experimental/Cantilever.md",
@@ -1703,7 +1704,6 @@
     "Untitled 1.md",
     "AB效应.md",
     "Solid state.md",
-    "张量分析.md",
     "Pictures/Pasted image 20260113144638.png",
     "AB效应",
     "Pictures/Pasted image 20251223113815.png",

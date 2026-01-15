@@ -177,6 +177,16 @@ $$\begin{align}
 >[!Note] Proposition 4.3 
 >$$\dot{\vec{k}}= - \frac{1}{\hbar}e\vec{E},\ \vec{v}= \frac{1}{\hbar} \frac{\partial\epsilon_{n}}{\partial \vec{k}}-  \dot{\vec{k}}\times \vec{\Omega}$$
 
+## Symmetry considerations
+
+>[!Note] Definition 4.4
+>Define the time reversal operation $\tau:\vec{r}(t)\mapsto   \tilde{\vec{r}}(t)=\vec{r}(-t)$
+
+其它物理量应由于轨迹的改变而相应地改变。容易证明：
+$$\begin{align}
+\tilde{\vec{v}}(t) & = \frac{d  \tilde{\vec{r}}(t)}{dt}= -\vec{v}(-t)
+\end{align}$$
+
 # 5. Anomalous Hall effect
 
 Anomalous Hall effect为仅仅用电场驱动电子，却观察到Hall voltage的现象。
