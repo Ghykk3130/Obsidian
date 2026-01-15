@@ -47,7 +47,7 @@ E(\vec{k}) & =\pm|\gamma(\vec{k}) | \\
  & = \pm t|1+e^{i\vec{k}\cdot \vec{a}_{1}}+e^{i\vec{k}\cdot \vec{a}_{2}}| \\
  & = \pm t\left|1+\exp\left[ i\left(  \frac{3}{2}ak_{x}+ \frac{\sqrt{ 3 }}{2}ak_{y} \right) \right]+\exp\left[ i \left(  \frac{3}{2}ak_{x}- \frac{\sqrt{ 3 }}{2}ak_{y} \right) \right] \right| \\
  & = \pm t\left|1+2\exp\left( i \frac{3}{2}ak_{x} \right)\cos\left(  \frac{\sqrt{ 3 }}{2}ak_{y} \right) \right| \\
- & = \pm \sqrt{ 1+4\sin\left(  \frac{3}{2}ak_{x} \right)\cos\left(  \frac{\sqrt{ 3 }}{2}ak_{y} \right)+4 \cos ^{2}\left(  \frac{\sqrt{ 3 }}{2}ak_{y} \right) }
+ & = \pm \sqrt{ 1+4\cos\left(  \frac{3}{2}ak_{x} \right)\cos\left(  \frac{\sqrt{ 3 }}{2}ak_{y} \right)+4 \cos ^{2}\left(  \frac{\sqrt{ 3 }}{2}ak_{y} \right) }
 \end{align}$$
 # 2. Dirac cone
 
@@ -55,7 +55,8 @@ E(\vec{k}) & =\pm|\gamma(\vec{k}) | \\
 $$\vec{b}_{i}\cdot \vec{a}_{j}=2\pi\delta_{ij}$$
 容易得到：
 $$\vec{b}_{1}=\frac{2\pi}{{ 3 }a} (1,\sqrt{ 3 }),\ \vec{b}_{2}= \frac{2\pi}{{ 3 }a}(1 ,-\sqrt{ 3 })$$
+容易得到Brillouin zone的两个顶点：
+$$\vec{K}=\frac{2\pi}{3a}\left( 1, \frac{1}{\sqrt{ 3 }} \right),\vec{K}^{'}= \frac{2\pi}{3a}\left( 1,- \frac{1}{\sqrt{ 3 }} \right)$$
 
-
-注意到两条能带有交点：
+注意到两条能带在Brillouin zone定点相交，为零。
 $$$$
