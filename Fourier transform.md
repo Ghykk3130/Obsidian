@@ -2,13 +2,13 @@
 
 考虑Hilbert空间$L^{2}\left( \left[ - \frac{L}{2}, \frac{L}{2} \right] \right)$中的函数。我们可以将它们写成级数：
 
->[!Note] Theorem 1
+>[!Note] Theorem 1.1
 >Let $f\in L^{2}\left( \left[ - \frac{L}{2}, \frac{L}{2} \right] \right)$. Then :
 >$$f= \sum_{q}\tilde{f}(q)\psi_{q}(x)\text{, where }\psi_{q}(x)= Ae^{iqx},\ q= \frac{2\pi n}{L},\ n\in \mathbb{Z}$$
 
 我们容易得到$\psi_{q}$的orthogonality和completeness。
 
->[!Note] Proposition 1
+>[!Note] Proposition 1.1
 >Orthogonality: $\int_{-\frac{L}{2}}^{\frac{L}{2}}dx\psi_{q^{'}}^{*}(x)\psi_{q}(x)=|A|^{2}L\delta_{q,q^{'}}$
 >Completeness: $\sum_{q}\psi_{q}(x)=AL\delta(x)$
 ## Proof.
@@ -30,11 +30,13 @@ $$\begin{align}
 \end{align}$$
 可以定义：
 
->[!Note] Definition 1
+>[!Note] Definition 1.1
 >Define the Dirichlet kernel:
 >$$D_{N}(x)= \sum_{-N}^Ne^{inx}$$
 
+我们先陈述以下引理：
 
-
+>[!Note] Theorem 1.2 (Riemann-Lebesgue lemma)
+>Let 
 
 
