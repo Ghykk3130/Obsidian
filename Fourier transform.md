@@ -1,34 +1,8 @@
-# 1. Fourier transform
+# 1. Fourier transform when x-space is bounded
 
-考虑Hilbert空间$L^{2}\left( \left[ - \frac{L}{2}, \frac{L}{2} \right] \right)$中的函数。我们可以将它们写成级数：
+考虑Hilbert空间$L^{2}\left( \left[ - \frac{L}{2}, \frac{L}{2} \right] \right)$中的函数。我们希望将它们写成级数。取Hilbert空间的基$\psi_{q}(x)=Ae^{iqx},\ q= \frac{2\pi n}{L}$。
 
->[!Note] Theorem 1.1
->Let $f\in L^{2}\left( \left[ - \frac{L}{2}, \frac{L}{2} \right] \right)$. Then :
->$$f= \sum_{q}\tilde{f}(q)\psi_{q}(x)\text{, where }\psi_{q}(x)= Ae^{iqx},\ q= \frac{2\pi n}{L},\ n\in \mathbb{Z}$$
-
-我们容易得到$\psi_{q}$的orthogonality和completeness。
-
->[!Note] Proposition 1.1
->Orthogonality: $\int_{-\frac{L}{2}}^{\frac{L}{2}}dx\psi_{q^{'}}^{*}(x)\psi_{q}(x)=|A|^{2}L\delta_{q,q^{'}}$
->Completeness: $\sum_{q}\psi_{q}(x)=AL\delta(x)$
-## Proof.
-我们有：
-$$\begin{align}
-\int_{- \frac{L}{2}}^{\frac{L}{2}}dx\psi ^{*}_{q^{'}}\psi_{q} & = |A|^{2}\int dxe^{i(q-q^{'})x} \\
- & = |A|^{2} \frac{2}{(q-q^{'})}  \sin\left( \frac{(q-q^{'})L}{2} \right) \\
- & = |A|^{2}L\delta_{q,q^{'}}
-\end{align}$$
-最后一步是因为$q=\frac{2\pi n}{L}$。代入便是显然。
-
-对于completeness，我们有：
-$$\begin{align}
-\sum_{q}\psi_{q}(x) & = \sum_{n\in \mathbb{Z}}A\exp\left( i \frac{2\pi n}{L}x \right) \\
- & = \lim_{ N \to \infty }  \sum_{-N}^NA\exp\left( i \frac{2\pi n}{L}x \right) \\
- & = \lim_{ N \to \infty }  A \frac{\exp\left( - i\frac{2\pi N}{L}x \right)-\exp\left( i \frac{2\pi (N+1)}{L}x \right)}{1- \exp\left( i \frac{2\pi}{L}x \right)} \\
- & = \lim_{ N \to \infty } A \frac{e^{i \frac{\pi}{L}x}\left( \exp\left( -i \frac{2\pi}{L}\left( N- \frac{1}{2} \right)x \right) -\exp\left( i \frac{2\pi}{L}\left( N- \frac{1}{2} \right) x\right) \right)}{e^{i \frac{\pi}{L}x}\left( \exp\left( - i \frac{\pi}{L}x \right)-\exp\left( i \frac{\pi}{L}x \right) \right)} \\
- & = \lim_{ N \to \infty } A \frac{\sin\left( \frac{2\pi}{L}\left( N- \frac{1}{2} \right)x \right)}{\sin\left(  \frac{\pi}{L}x \right)}
-\end{align}$$
-可以定义：
+我们容易得到$\psi_{q}$的orthogonality和completeness。为此，我们先定义：
 
 >[!Note] Definition 1.1
 >Define the Dirichlet kernel:
@@ -36,7 +10,7 @@ $$\begin{align}
 
 我们先证以下引理：
 
->[!Note] Theorem 1.2 (Riemann-Lebesgue lemma)
+>[!Note] Theorem 1.1 (Riemann-Lebesgue lemma)
 >Let $f\in L^1([a,b])$, then:
 >$$\lim_{ \lambda \to \infty } \int_{a}^bdxf(x)e^{i\lambda x}=0$$
 ## Proof.
@@ -61,7 +35,7 @@ $$\begin{align}
 
 接下来：
 
->[!Note] Proposition 1.2
+>[!Note] Proposition 1.1
 $$\lim_{ N \to \infty } D_{N}(x)=\sum_{m}2\pi\delta(x-2\pi m)$$
 ## Proof.
 我们有：
@@ -93,5 +67,53 @@ $$\begin{align}
 \end{align}$$
 >[!Right]
 >$\blacksquare$
+
+于是：
+
+>[!Note] Proposition 1.2
+>Orthogonality: $\int_{-\frac{L}{2}}^{\frac{L}{2}}dx\psi_{q^{'}}^{*}(x)\psi_{q}(x)=|A|^{2}L\delta_{q,q^{'}}$
+>Completeness: $\sum_{q}\psi_{q}(x)=AL\delta(x)$
+## Proof.
+我们有：
+$$\begin{align}
+\int_{- \frac{L}{2}}^{\frac{L}{2}}dx\psi ^{*}_{q^{'}}\psi_{q} & = |A|^{2}\int dxe^{i(q-q^{'})x} \\
+ & = |A|^{2} \frac{2}{(q-q^{'})}  \sin\left( \frac{(q-q^{'})L}{2} \right) \\
+ & = |A|^{2}L\delta_{q,q^{'}}
+\end{align}$$
+最后一步是因为$q=\frac{2\pi n}{L}$。代入便是显然。
+
+对于completeness，我们有：
+$$\begin{align}
+\sum_{q}\psi_{q}(x) & = \sum_{n\in \mathbb{Z}}A\exp\left( i \frac{2\pi n}{L}x \right) \\
+ & = \lim_{ N \to \infty }  \sum_{-N}^NA\exp\left( i \frac{2\pi n}{L}x \right) \\
+ & = \lim_{ N \to \infty }  A \frac{\exp\left( - i\frac{2\pi N}{L}x \right)-\exp\left( i \frac{2\pi (N+1)}{L}x \right)}{1- \exp\left( i \frac{2\pi}{L}x \right)} \\
+ & = \lim_{ N \to \infty } A \frac{e^{i \frac{\pi}{L}x}\left( \exp\left( -i \frac{2\pi}{L}\left( N- \frac{1}{2} \right)x \right) -\exp\left( i \frac{2\pi}{L}\left( N- \frac{1}{2} \right) x\right) \right)}{e^{i \frac{\pi}{L}x}\left( \exp\left( - i \frac{\pi}{L}x \right)-\exp\left( i \frac{\pi}{L}x \right) \right)} \\
+ & = \lim_{ N \to \infty } A \frac{\sin\left( \frac{2\pi}{L}\left( N- \frac{1}{2} \right)x \right)}{\sin\left(  \frac{\pi}{L}x \right)} \\
+ & = A\lim_{ N \to \infty } D_{N-1}\left( \frac{2\pi x}{L} \right) \\
+ & = 2\pi A \delta\left( \frac{2\pi x}{L} \right) \\
+ & = AL\delta(x)
+\end{align}$$
+>[!Right]
+>$\blacksquare$
+
+于是可以得到：
+
+>[!Note] Theorem 1.2
+>Let $f(x)\in L^{2}\left( \left[ - \frac{L}{2}, \frac{L}{2} \right] \right)$. Then :
+>$$f= \sum_{q}\tilde{f}(q)\psi_{q}(x)\text{, where }\tilde{f}(q)= \frac{1}{AL}\int_{- \frac{L}{2}}^{\frac{L}{2}} dx f e^{-iqx}$$
+## Proof.
+$$\begin{align}
+\sum_{q}\tilde{f}(q)\psi_{q}(x) & = \sum_{q}\left( \frac{1}{AL} \int_{{- \frac{L}{2}}}^{\frac{L}{2}} dx^{'}f(x^{'}) \right)A e^{iqx} \\
+ & = \frac{1}{L}\int dx^{'}f(x^{'})\sum_{q}\exp(iq(x-x^{'})) \\
+ & = \frac{1}{L} \int dx^{'}f(x^{'}) \frac{1}{A}AL\delta(x-x^{'}) \\
+ & = f(x)
+\end{align}$$
+>[!Right]
+>$\blacksquare$
+
+By convention，取$A=\frac{1}{L}$。
+
+
+
 
 
