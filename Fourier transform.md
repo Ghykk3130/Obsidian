@@ -34,9 +34,27 @@ $$\begin{align}
 >Define the Dirichlet kernel:
 >$$D_{N}(x)= \sum_{-N}^Ne^{inx}$$
 
-我们先陈述以下引理：
+我们先证以下引理：
 
 >[!Note] Theorem 1.2 (Riemann-Lebesgue lemma)
->Let 
+>Let $f\in L^1([a,b])$, then:
+>$$\lim_{ \lambda \to \infty } \int_{a}^bdxf(x)e^{i\lambda x}=0$$
+## Proof.
+
+**方法一：**
+
+取$f(x)=\mathbb{1}$，容易证明：
+$$\lim_{ \lambda \to \infty } \int_{a}^b\mathbb{1}e^{i\lambda x}=\lim_{ \lambda \to \infty } \frac{e^{i\lambda b}-e^{i\lambda a}}{i\lambda}=0$$
+所以对于简单函数，即$f(x)=\sum_{j}c_{j}\mathbb{1}_{E_{j}}$，容易证明：
+$$\lim_{ \lambda \to \infty } \int_{a}^bdxf(x)e^{i\lambda x}=0$$
+因为简单函数在$L^1$中稠密，then done。
+
+**方法二：**
+
+我们有：
+$$\begin{align}
+\int_{a}^b dx f(x)e^{i\lambda x} & = \frac{1}{i\lambda}\left[f(x)e^{i\lambda x}\right]^b_{a}-  \frac{1}{i\lambda} \int dxf^{'}e^{i\lambda x}
+\end{align}$$
+由于右手边都是有界
 
 
