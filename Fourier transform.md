@@ -59,6 +59,19 @@ $$\begin{align}
 >[!Right]
 >$\blacksquare$
 
+接下来：
 
+>[!Note] Proposition 1.2
+$$\lim_{ N \to \infty } D_{N}(x)=\sum_{m}2\pi\delta(x-2\pi m)$$
+## Proof.
+我们有：
+$$\begin{align}
+D_{N}(x) & = \sum_{-N}^N e^{inx} \\
+ & = \frac{e^{-iNx}-e^{i(N+1)x }}{1-e^{-ix} } \\
+ & = \frac{\exp\left( -i \left( N + \frac{1}{2} \right) \right)-\exp\left( i\left( N+ \frac{1}{2} \right) \right)}{\exp\left(  \frac{ix}{2} \right)-\exp\left( - \frac{ix}{2} \right) } \\
+ & = \frac{\sin\left( \left( N+ \frac{1}{2} \right)x \right)}{\sin\left( \frac{x}{2} \right)}
+\end{align}$$
+注意到$D_{N}(x+2\pi)=D_{N}(x)$。先验证在零处爆掉：
+$$\lim_{ x \to 0 } D_{N}(x)= \frac{\left( N+ \frac{1}{2} \right)x}{ \frac{1}{2}x}=N+ \frac{1}{2}\rightarrow \infty \text{ as }N\rightarrow \infty$$
 
 
