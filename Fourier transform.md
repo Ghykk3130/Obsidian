@@ -19,9 +19,9 @@
 
 取$f(x)=\mathbb{1}$，容易证明：
 $$\lim_{ \lambda \to \infty } \int_{a}^b\mathbb{1}e^{i\lambda x}=\lim_{ \lambda \to \infty } \frac{e^{i\lambda b}-e^{i\lambda a}}{i\lambda}=0$$
-所以对于简单函数，即$f(x)=\sum_{j}c_{j}\mathbb{1}_{E_{j}}$，容易证明：
+所以对于简单函数，即$f(x)=\sum_{j=1}^Nc_{j}\mathbb{1}_{E_{j}}$，容易证明：
 $$\lim_{ \lambda \to \infty } \int_{a}^bdxf(x)e^{i\lambda x}=0$$
-因为简单函数在$L^1$中稠密，then done。
+因为简单函数在$L^1$中 稠密，then done。
 
 **方法二：**
 
@@ -74,6 +74,9 @@ $$\begin{align}
 >Orthogonality: $\int_{-\frac{L}{2}}^{\frac{L}{2}}dx\psi_{q^{'}}^{*}(x)\psi_{q}(x)=|A|^{2}L\delta_{q,q^{'}}$
 >Completeness: $\sum_{q}\psi_{q}(x)=AL\delta(x)$
 ## Proof.
+
+**Orthogonality:**
+
 我们有：
 $$\begin{align}
 \int_{- \frac{L}{2}}^{\frac{L}{2}}dx\psi ^{*}_{q^{'}}\psi_{q} & = |A|^{2}\int dxe^{i(q-q^{'})x} \\
@@ -82,7 +85,9 @@ $$\begin{align}
 \end{align}$$
 最后一步是因为$q=\frac{2\pi n}{L}$。代入便是显然。
 
-对于completeness，我们有：
+**Completeness:**
+
+我们有：
 $$\begin{align}
 \sum_{q}\psi_{q}(x) & = \sum_{n\in \mathbb{Z}}A\exp\left( i \frac{2\pi n}{L}x \right) \\
  & = \lim_{ N \to \infty }  \sum_{-N}^NA\exp\left( i \frac{2\pi n}{L}x \right) \\
@@ -136,7 +141,40 @@ $$\int_{\mathbb{R}}dq e^{iqx}=2\pi\delta(x)$$
 >Let $f(x)\in L^{2}$. Then :
 >$$f(x)= \frac{1}{2\pi} \int_{\mathbb{R}}dq\tilde{f}(q)e^{iqx}\text{, where }\tilde{f}(q)= \int_{\mathbb{R}} dx f(x) e^{-iqx}$$
 
-# 3. Fourier transform if q-space is bounded and continuous
+# 3. Fourier transform if x-space is unbounded and discrete
+
+令$f\in l^{2}$。其横坐标$x_{n}=na\in a\mathbb{Z}$。我们取Hilbert空间的基$\psi_{q}(x_{n})=Ae^{iqx_{n}}$。发现：
+$$\psi_{q+ \frac{2\pi}{a}}(x_{n})=A\exp\left( iqx_{n}+iq \frac{2\pi}{a}x_{n} \right)=A\exp(iqx_{n})=\psi_{q}(x_{n})$$
+所以Hilbert空间的基为：$\psi_{q}(x_{n}),\ q\in\left[ - \frac{\pi}{a}, \frac{\pi}{a} \right)$。
+
+>[!Note] Proposition 3.1
+>Orthogonality: $\sum_{n=-\infty}^{\infty} \psi ^{*}_{q}(x_{n})\psi_{q^{'}}(x_{n})= |A|^{2} \frac{2\pi}{a}\delta(q-q^{'})$
+>Completeness: $\int_{- \frac{\pi}{a}}^{\frac{\pi}{a}} dq\psi_{q}(x_{n})= A \frac{2\pi}{a}\delta_{n,0}$
+
+## Proof.
+
+**Orthogonality:**
+$$\begin{align}
+\sum_{-\infty}^{\infty}\psi_{q}^{*}(x_{n})\psi_{q^{'}}(x_{n}) & = \lim_{ M \to \infty }|A|^{2}\sum_{-M}^M \exp(i(q^{'}-q)na ) \\
+ & = \lim_{ M \to \infty } |A|^{2}D_{M}((q^{'}-q)a) \\
+ & = 2\pi|A|^{2}\delta((q^{'}-q)a) \\
+\end{align}$$
+注意此处$q,q^{'}\in\left[ -\frac{\pi}{a}, \frac{\pi}{a} \right)\implies (q-q^{'})\in\left( - \frac{2\pi}{a}, \frac{2\pi}{a} \right)$，不然$\lim_{ M \to \infty }D_{M}$不能被reduce成单个的dirac delta。
+
+**Completeness:**
+
+若$n\neq 0$，则：
+$$\begin{align}
+\int_{- \frac{\pi}{a}}^{\frac{\pi}{a}}dq Ae^{iqx_{n}} & = \frac{1}{ix_{n}}(e^{in\pi}-e^{-in\pi})=0
+\end{align}$$
+若$n=0$，则：
+$$\int_{- \frac{\pi}{a}}^{\frac{\pi}{a}}dq Ae^{iqx_{n}}=A \frac{2\pi}{a}$$
+>[!Right]
+>$\blacksquare$
+
+
+
+
 
 
 
