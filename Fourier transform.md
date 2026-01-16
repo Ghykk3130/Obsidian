@@ -1,4 +1,4 @@
-# 1. Fourier transform when x-space is bounded and continuous
+# 1. x-space bounded and continuous
 
 考虑Hilbert空间$L^{2}\left( \left[ - \frac{L}{2}, \frac{L}{2} \right] \right)$中的函数。我们希望将它们写成级数。取Hilbert空间的基$\psi_{q}(x)=Ae^{iqx},\ q= \frac{2\pi n}{L}$。
 
@@ -118,7 +118,7 @@ $$\begin{align}
 
 By convention，取$A=\frac{1}{L}$。
 
-# 2. Fourier transform if x-space is unbounded and continuous
+# 2. x-space is unbounded and continuous
 
 令$L\rightarrow \infty$。则$q= \frac{2\pi n}{L}$连续化。则：
 $$\sum_{q} \leadsto \frac{L}{2\pi}\int dq$$
@@ -137,11 +137,11 @@ $$\int_{\mathbb{R}}dq e^{iqx}=2\pi\delta(x)$$
 
 于是可以得到：
 
->[!Note] Theorem 1.2
+>[!Note] Theorem 2.2
 >Let $f(x)\in L^{2}$. Then :
 >$$f(x)= \frac{1}{2\pi} \int_{\mathbb{R}}dq\tilde{f}(q)e^{iqx}\text{, where }\tilde{f}(q)= \int_{\mathbb{R}} dx f(x) e^{-iqx}$$
 
-# 3. Fourier transform if x-space is unbounded and discrete
+# 3. x-space is unbounded and discrete
 
 令$f\in l^{2}$。其横坐标$x_{n}=na\in a\mathbb{Z}$。我们取Hilbert空间的基$\psi_{q}(x_{n})=Ae^{iqx_{n}}$。发现：
 $$\psi_{q+ \frac{2\pi}{a}}(x_{n})=A\exp\left( iqx_{n}+iq \frac{2\pi}{a}x_{n} \right)=A\exp(iqx_{n})=\psi_{q}(x_{n})$$
@@ -171,6 +171,22 @@ $$\begin{align}
 $$\int_{- \frac{\pi}{a}}^{\frac{\pi}{a}}dq Ae^{iqx_{n}}=A \frac{2\pi}{a}$$
 >[!Right]
 >$\blacksquare$
+
+于是可以得到：
+
+>[!Note] Theorem 3.1
+>Let $f(x_{n})\in l^1$. Then:
+>$$f(x_{n})= \int_{- \frac{\pi}{a}}^{\frac{\pi}{a}}dq \tilde{f}(q) \psi_{q}(x_{n})\text{ where }\tilde{f}(q)= \frac{a}{2\pi |A|^{2}} \sum_{-\infty}^{\infty} f(x_{n})\psi_{q}^{*}(x_{n})$$
+## Proof.
+$$\begin{align}
+\int_{- \frac{\pi}{a}}^{\frac{\pi}{a} }dq \frac{a}{2\pi A}\sum_{n^{'}=-\infty}^{\infty}f(x_{n^{'}})e^{-iqx_{n^{'}}} \cdot A e^{iqx_{n}} & = \frac{a}{2\pi }\sum_{n^{'}}f(x_{n^{'}}) \int dq e^{iq(x_{n}-x_{n^{'}}) } \\
+ & = \frac{a}{2\pi}\sum_{n^{'}}f(x_{n^{'}})2\pi \delta(a(n-n^{'}))  \\
+ & = f(x_{n}) 
+\end{align}$$
+>[!Right]
+>$\blacksquare$
+
+# 4. x-space is bounded and discrete
 
 
 
