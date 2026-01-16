@@ -1,4 +1,4 @@
-# 1. Fourier transform when x-space is bounded
+# 1. Fourier transform when x-space is bounded and continuous
 
 考虑Hilbert空间$L^{2}\left( \left[ - \frac{L}{2}, \frac{L}{2} \right] \right)$中的函数。我们希望将它们写成级数。取Hilbert空间的基$\psi_{q}(x)=Ae^{iqx},\ q= \frac{2\pi n}{L}$。
 
@@ -112,6 +112,32 @@ $$\begin{align}
 >$\blacksquare$
 
 By convention，取$A=\frac{1}{L}$。
+
+# 2. Fourier transform if x-space is unbounded and continuous
+
+令$L\rightarrow \infty$。则$q= \frac{2\pi n}{L}$连续化。则：
+$$\sum_{q} \leadsto \frac{L}{2\pi}\int dq$$
+故：
+
+>[!Note] Proposition 2.1
+>Orthogonality: $\int_{\mathbb{R}}dx \psi_{q}^{*}(x)\psi_{q^{'}}(x)=|A|^{2}\delta(q-q^{'})$
+>Completeness: $\frac{1}{2\pi}\int_{\mathbb{R}} dq\psi_{q}=A\delta(x)$
+## Proof.
+
+Completeness由于测度替换便是显然。写得更explicit一点就是：
+$$\int_{\mathbb{R}}dq e^{iqx}=2\pi\delta(x)$$
+那么orthogonality就是显然。
+>[!Right]
+>$\blacksquare$
+
+于是可以得到：
+
+>[!Note] Theorem 1.2
+>Let $f(x)\in L^{2}$. Then :
+>$$f(x)= \frac{1}{2\pi} \int_{\mathbb{R}}dq\tilde{f}(q)e^{iqx}\text{, where }\tilde{f}(q)= \int_{\mathbb{R}} dx f(x) e^{-iqx}$$
+
+# 3. Fourier transform if q-space is bounded and continuous
+
 
 
 
