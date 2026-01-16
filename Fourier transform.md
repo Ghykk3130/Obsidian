@@ -24,7 +24,7 @@ $$\begin{align}
 $$\begin{align}
 \sum_{q}\psi_{q}(x) & = \sum_{n\in \mathbb{Z}}A\exp\left( i \frac{2\pi n}{L}x \right) \\
  & = \lim_{ N \to \infty }  \sum_{-N}^NA\exp\left( i \frac{2\pi n}{L}x \right) \\
- & = \lim_{ N \to \infty }  A \frac{\exp\left( - i\frac{2\pi N}{L}x \right)-\exp\left( i \frac{2\pi N}{L}x \right)}{1- \exp\left( i \frac{2\pi}{L}x \right)} \\
+ & = \lim_{ N \to \infty }  A \frac{\exp\left( - i\frac{2\pi N}{L}x \right)-\exp\left( i \frac{2\pi (N+1)}{L}x \right)}{1- \exp\left( i \frac{2\pi}{L}x \right)} \\
  & = \lim_{ N \to \infty } A \frac{e^{i \frac{\pi}{L}x}\left( \exp\left( -i \frac{2\pi}{L}\left( N- \frac{1}{2} \right)x \right) -\exp\left( i \frac{2\pi}{L}\left( N- \frac{1}{2} \right) x\right) \right)}{e^{i \frac{\pi}{L}x}\left( \exp\left( - i \frac{\pi}{L}x \right)-\exp\left( i \frac{\pi}{L}x \right) \right)} \\
  & = \lim_{ N \to \infty } A \frac{\sin\left( \frac{2\pi}{L}\left( N- \frac{1}{2} \right)x \right)}{\sin\left(  \frac{\pi}{L}x \right)}
 \end{align}$$
@@ -71,7 +71,27 @@ D_{N}(x) & = \sum_{-N}^N e^{inx} \\
  & = \frac{\exp\left( -i \left( N + \frac{1}{2} \right) \right)-\exp\left( i\left( N+ \frac{1}{2} \right) \right)}{\exp\left(  \frac{ix}{2} \right)-\exp\left( - \frac{ix}{2} \right) } \\
  & = \frac{\sin\left( \left( N+ \frac{1}{2} \right)x \right)}{\sin\left( \frac{x}{2} \right)}
 \end{align}$$
-注意到$D_{N}(x+2\pi)=D_{N}(x)$。先验证在零处爆掉：
+注意到$D_{N}(x+2\pi)=D_{N}(x)$。只需证明在$[-\pi,\pi]$中，$D_{N}(x)=2\pi\delta(x)$。先验证在零处爆掉：
 $$\lim_{ x \to 0 } D_{N}(x)= \frac{\left( N+ \frac{1}{2} \right)x}{ \frac{1}{2}x}=N+ \frac{1}{2}\rightarrow \infty \text{ as }N\rightarrow \infty$$
+接下来：
+$$\begin{align}
+\int_{-\pi}^{\pi}dxD_{N}(x) & = \sum_{-{N}}^N\int dx e^{inx} \\ & =\sum_{n\neq 0}\int dxe^{inx}+\int dx \\
+
+ & =0+2\pi=2\pi 
+\end{align}$$
+所以：
+$$\lim_{ N \to \infty } \int_{-\pi}^{\pi}dxD_{N}(x)=\int dx\lim_{ N \to \infty } D_{N}(x)=2\pi$$
+然而，又因为：
+$$\lim_{ N \to \infty } \int_{a}^bdxD_{N}(x)= \lim_{ N \to \infty } \int_{a}^bdx \frac{\sin\left( \left( N+ \frac{1}{2} \right)x \right)}{\sin\left( \frac{x}{2} \right)}=0=\int dx \lim_{ N \to \infty }  \frac{\sin\left( \left( N+ \frac{1}{2} \right)x \right)}{\sin\left( \frac{x}{2} \right)}\text{ for }0 \notin[a,b]$$
+所以：
+$$\int_{U\ni{0}}dx \lim_{ N \to \infty } D_{N}(x)=2\pi$$
+接下来，$\forall f\in L^1$，我们有：
+$$\begin{align}
+\int_{a}^bdx f(x)\lim_{ N \to \infty } D_{N}(x) & = \lim_{ N \to \infty } \int dxf(x)D_{N}(x) \\
+ & = \lim_{ N \to \infty } \int dx \frac{f(x)}{\sin\left(  \frac{x}{2} \right)} \sin\left( \left( N+ \frac{1}{2} \right)x \right) \\
+ & =0\text{ for all }[a,b] \not\ni 0 
+\end{align}$$
+>[!Right]
+>$\blacksquare$
 
 
