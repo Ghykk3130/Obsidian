@@ -55,6 +55,10 @@ $$\lim_{ \lambda \to \infty } \int_{a}^bdxf(x)e^{i\lambda x}=0$$
 $$\begin{align}
 \int_{a}^b dx f(x)e^{i\lambda x} & = \frac{1}{i\lambda}\left[f(x)e^{i\lambda x}\right]^b_{a}-  \frac{1}{i\lambda} \int dxf^{'}e^{i\lambda x}
 \end{align}$$
-由于右手边都是有界
+由于右手边都是bounded的，显然$\lim_{ \lambda \to \infty }\text{RHS}=0$。
+>[!Right]
+>$\blacksquare$
+
+
 
 
