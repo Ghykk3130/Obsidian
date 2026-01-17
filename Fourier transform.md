@@ -116,7 +116,7 @@ $$\begin{align}
 >[!Right]
 >$\blacksquare$
 
-By convention，取$A=\frac{1}{L}$。
+Convention一般取$A=\frac{1}{L}$。
 
 # 2. x-space is unbounded and continuous
 
@@ -143,7 +143,7 @@ $$\int_{\mathbb{R}}dq e^{iqx}=2\pi\delta(x)$$
 
 # 3. x-space is unbounded and discrete
 
-令$f\in l^{2}$。其横坐标$x_{n}=na\in a\mathbb{Z}$。我们取Hilbert空间的基$\psi_{q}(x_{n})=Ae^{iqx_{n}}$。发现：
+考虑$x-\text{space}$离散化，只能取间隔为$a$的点。令$f\in l^{2}$。其横坐标$x_{n}=na\in a\mathbb{Z}$。我们取Hilbert空间的基$\psi_{q}(x_{n})=Ae^{iqx_{n}}$。发现：
 $$\psi_{q+ \frac{2\pi}{a}}(x_{n})=A\exp\left( iqx_{n}+iq \frac{2\pi}{a}x_{n} \right)=A\exp(iqx_{n})=\psi_{q}(x_{n})$$
 所以Hilbert空间的基为：$\psi_{q}(x_{n}),\ q\in\left[ - \frac{\pi}{a}, \frac{\pi}{a} \right)$。
 
@@ -186,8 +186,67 @@ $$\begin{align}
 >[!Right]
 >$\blacksquare$
 
+Convention一般取$A=1$。
 # 4. x-space is bounded and discrete
 
+考虑$x-\text{space}$离散化且有界，仅仅只有$N$个点。令$x_{n}=na,\ n=0,\dots,N-1$。考虑$f\in l^{2}(\{ 0,\dots,N-1 \})$。取Hilbert空间的基$\psi_{q_{m}}(x_{n})=Ae^{iq_{m}x_{n}}\text{, where }q_{m}= \frac{2\pi m}{Na}$。注意到：
+$$\begin{align}
+\psi_{q_{m}+ \frac{2\pi}{a}}(x_{n})= A\exp(iq_{m}x_{n}+ i 2 \pi n)= A\exp(iq_{m}x_{n})=\psi_{q_{m}}(x_{n})
+\end{align}$$
+所以限制$q_{m}\in \left[0, \frac{2\pi}{a}\right)\implies m=0,\dots,N-1$。
+## Remark
+由此可见，只要x-space是离散的，q-space就是bounded的。
+
+
+那么我们有：
+
+>[!Note] Proposition 4.1
+>Orthogonality: $\sum_{n=0}^{N-1}\psi_{q_{m}}^{*}(x_{n})\psi_{q_{m^{'}}(x_{n})}=N|A|^{2}\delta_{mm^{'}}$
+>Completeness: $\sum _{m=0}^{N-1} \psi_{q_{m}}^{}(x_{n})=NA^{}\delta_{n,0}$
+## Proof.
+
+**Orthogonality:**
+
+若$m^{'}\neq m$，则：
+$$\begin{align}
+\sum_{0}^{N-1} \psi_{q_{m}}^{*}(x_{n})\psi_{q_{m^{'}}}(x_{n}) & = |A |^{2} \sum \exp(i(q_{m^{'} }-q_{m} )x_{n}) \\
+ & = |A|^{2} \frac{1-\exp(i(q_{m^{'}}-q_{m})x_{N})}{1-\exp(i(q_{m^{'}}-q_{m})a)} \\
+ & = |A|^{2} \frac{1-\exp(i 2\pi(m^{'}-m))}{1-\exp\left( i \frac{2\pi}{N}(m^{'}-m) \right)} \\
+ & = 0
+\end{align}$$
+若$m^{'}=m$，则：
+$$\begin{align}
+\sum_{0}^{N-1}\psi ^{*}_{q_{m}}(x_{n})\psi_{q_{m^{'}}}(x_{n}) & = |A|^{2}\sum 1=N|A|^{2}
+\end{align}$$
+
+**Completeness:**
+
+若$m^{'}\neq m$，则：
+$$\begin{align}
+\sum_{0}^{N-1} \psi_{q_{m}}(x_{n}) & = A \sum \exp(i q_{m}x_{n}) \\
+ & = A \frac{1-\exp(i 2\pi n)}{1-\exp\left( i \frac{2\pi}{N}n \right)} \\
+ & = 0
+\end{align}$$
+若$m^{'}=m$，则：
+$$\begin{align}
+\sum_{0}^{N-1}\psi_{q_{m}}(x_{n}) & = \sum A=NA
+\end{align}$$
+>[!Right]
+>$\blacksquare$
+
+>[!Note] Theorem 4.1
+>Let $f(x_{n})\in l^1(\{ 0,\dots,N-1 \})$. Then:
+>$$f(x_{n})= \sum_{m=0}^{N-1}\tilde{f}(q_{m})\psi_{q_{m}}(x_{n})\text{ where }\tilde{f}(q)= \frac{1}{N|A|^{2}}\sum_{n=0}^{N-1}\psi ^{*}_{q_{m}}(x_{n})f(x_{n})$$
+## Proof.
+$$\begin{align}
+\sum_{m=0}^{N-1}\tilde{f}(q_{m}) \psi_{q_{m}}(x_{n}) & = \sum_{m} \frac{1}{N|A|^{2}} \sum_{n^{ '}} \psi ^{*}_{q_{m^{}}}(x_{n^{'}})f(x_{n^{'}}) \psi_{q_{m}} (x_{n}) \\
+ & = \frac{1}{N|A|^{2}} \sum_{n^{'}} f(x_{n^{'}}) N|A|^{2} \delta_{n,n^{'}} \\
+ & = f(x_{n})
+\end{align}$$
+>[!Right]
+>$\blacksquare$
+
+Convention一般取$A=1$。
 
 
 
