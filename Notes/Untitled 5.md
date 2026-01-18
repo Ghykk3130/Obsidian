@@ -76,13 +76,22 @@ $$\begin{align}
 >[!Right]
 >$\blacksquare$
 
-
-
-## Proof.
-
-
 >[!Note] Proposition 2.1
 >A fluid is incompressible if and only if $\nabla \cdot \vec{u}=0$
+## Proof.
+
+若流体是不可压缩的，则：
+$$\begin{align}
+ & \frac{d}{dt}  \int_{\vec{x}(M,t)}dV=0 \\
+\implies & \frac{d}{dt}\int_{M} JdV=0 \\
+\implies &  \int_{M} \frac{\partial J}{\partial t}dV=0 \\
+\implies & \int_{M}J\nabla \cdot \vec{u}dV=0,\ \forall M\text{ measurable} \\
+\implies & \nabla \cdot \vec{u}=0
+\end{align}$$
+若$\nabla \cdot \vec{u}$，则只需将上述过程反过来即可。
+>[!Right]
+>$\blacksquare$
+
 
 
 
