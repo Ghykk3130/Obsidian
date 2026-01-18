@@ -15,6 +15,27 @@
 固定$t$，$\vec{u}(\vec{x},t)$是$\mathbb{R}^{3}$上一个vector field。我们可以定义streamline：
 
 >[!Note] Definition 1.3
->We say $\vec{\gamma}:\mathbb{R}\rightarrow \mathbb{R}^{3}$ is a streamline if $\frac{d\vec{\gamma}(s)}{ds}=\vec{u}(\vec{\gamma}(s),t)$
+>We say $\vec{\gamma}:\mathbb{R}\rightarrow \mathbb{R}^{3}$ is a streamline if $\frac{d\vec{\gamma}(s)}{d\tau}=\vec{u}(\vec{\gamma}(\tau),t)$
 
-也就是说，沿着streamline定义的切矢刚好是速度。
+也就是说，沿着streamline定义的切矢刚好是速度。我们作：
+$$\begin{align}
+ &  \frac{d\vec{\gamma}}{d\tau}=\vec{u}\implies \frac{d\vec{\gamma}}{ud\tau}= \hat{u}\implies \frac{d\vec{\gamma}}{d\left( \int d\tau u \right)}=\hat{u}
+\end{align}$$
+而：
+$$\begin{align}
+\int ud\tau=\int\sqrt{ \sum_{i}\left( \frac{\partial \gamma_{i}}{\partial \tau} \right)^{2} }d\tau=s
+\end{align}$$
+就是弧长。所以我们可以重新选取$s$作为参数parametrize $\vec{\gamma}$。这称为自然坐标。
+## Ex:
+若$\vec{\gamma}(s)$为streamline，而$s$为沿streamline的弧长，容易证明$\frac{d\vec{\gamma}}{ds}$为单位向量：
+$$\begin{align}
+ds & = \sqrt{ \sum_{i}\left( \frac{d\gamma_{i}}{ds} \right)^{2} } ds\implies \left| \frac{d\vec{\gamma}}{ds}  \right|= \sqrt{ \sum_{i}\left( \frac{d\gamma_{i}}{ds} \right)^{2} }=1
+\end{align}$$
+
+## Ex:
+注意到：
+$$\vec{u}\cdot \nabla f= \frac{d \gamma_{i}}{d \tau} \frac{\partial f}{\partial x_{i}}= \frac{\partial f}{\partial \tau}$$
+所以$\vec{u}\cdot \nabla$就是streamline定义的切向量。
+
+
+
