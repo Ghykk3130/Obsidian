@@ -7,7 +7,7 @@
 >[!Note] Definition 1.1
 >Given a volume element starting from $\vec{\alpha}$, define its velocity as: $\vec{u}(\vec{\alpha},t)= \frac{\partial}{\partial t}\vec{x}(\vec{\alpha},t)$
 
-给定$\vec{x}(\vec{\alpha},t)$，我们可以反解出$\vec{\alpha}(\vec{x},t)$。所以速度同样可以写成$\vec{u}=\vec{u}(\vec{x},t)$。我们可以追溯某体元的流动，定义物质导数：
+上述定义称为Lagrangian速度场，explicit依赖于初始条件。给定$\vec{x}(\vec{\alpha},t)$，我们可以反解出$\vec{\alpha}(\vec{x},t)$。所以速度同样可以写成$\vec{u}=\vec{u}(\vec{x},t)$，称为Eulerian速度场。我们可以追溯某体元的流动，定义物质导数：
 
 >[!Note] Definition 1.2
 >Given $\vec{x}(\vec{\alpha},t)$ a trajectory, $f=f(\vec{x},t)$ a function, define its material derivative as: $\frac{D}{Dt}f(\vec{x},t)= \frac{\partial f}{\partial t}+\vec{u}\cdot \nabla f$
