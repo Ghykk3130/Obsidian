@@ -35,7 +35,19 @@ ds & = \sqrt{ \sum_{i}\left( \frac{d\gamma_{i}}{ds} \right)^{2} } ds\implies \le
 ## Ex:
 注意到：
 $$\vec{u}\cdot \nabla f= \frac{d \gamma_{i}}{d \tau} \frac{\partial f}{\partial x_{i}}= \frac{\partial f}{\partial \tau}$$
-所以$\vec{u}\cdot \nabla$就是streamline定义的切向量。
+所以$\vec{u}\cdot \nabla$就是streamline定义的切向量。$\vec{u}\cdot \nabla\in T(\mathbb{R}^{3})$。
+
+# 2. Incompressibility
+
+任取流体中一个可测集$M$染色。让这个集合流动。若这个集合体积不变，则称流体不可压缩：
+
+>[!Note] Definition 2.1
+>We say a fluid is incompressible if:
+>$$\int_{\vec{x}(M,t)}dV=\int_{M}dV,\ \forall t\in \mathbb{R},M\subset \mathbb{R}^{3}\text{ measurable}$$
+
+>[!Note] Proposition 2.1
+>A fluid is incompressible if and only if $\nabla \cdot \vec{u}=0$
+
 
 
 
