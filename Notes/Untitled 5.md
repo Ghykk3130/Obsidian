@@ -12,3 +12,9 @@
 >[!Note] Definition 1.2
 >Given $\vec{x}(\vec{\alpha},t)$ a trajectory, $f=f(\vec{x},t)$ a function, define its material derivative as: $\frac{D}{Dt}f(\vec{x},t)= \frac{\partial f}{\partial t}+\vec{u}\cdot \nabla f$
 
+固定$t$，$\vec{u}(\vec{x},t)$是$\mathbb{R}^{3}$上一个vector field。我们可以定义streamline：
+
+>[!Note] Definition 1.3
+>We say $\vec{\gamma}:\mathbb{R}\rightarrow \mathbb{R}^{3}$ is a streamline if $\frac{d\vec{\gamma}(s)}{ds}=\vec{u}(\vec{\gamma}(s),t)$
+
+也就是说，沿着streamline定义的切矢刚好是速度。
