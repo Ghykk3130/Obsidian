@@ -45,6 +45,13 @@ $$\vec{u}\cdot \nabla f= \frac{d \gamma_{i}}{d \tau} \frac{\partial f}{\partial 
 >We say a fluid is incompressible if:
 >$$\int_{\vec{x}(M,t)}dV=\int_{M}dV,\ \forall t\in \mathbb{R},M\subset \mathbb{R}^{3}\text{ measurable}$$
 
+为此，我们先证明引理：
+
+>[!Note] Lemma 2.1
+>Let $J=| \frac{\partial \vec{x}(\vec{\alpha},t)}{\partial \vec{\alpha}} |$ be the Jacobian. Then $\frac{\partial J}{\partial t}=J\nabla \cdot \vec{u}$
+## Proof.
+
+
 >[!Note] Proposition 2.1
 >A fluid is incompressible if and only if $\nabla \cdot \vec{u}=0$
 
