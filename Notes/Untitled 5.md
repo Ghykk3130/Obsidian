@@ -91,7 +91,40 @@ $$\begin{align}
 若$\nabla \cdot \vec{u}$，则只需将上述过程反过来即可。
 >[!Right]
 >$\blacksquare$
+# 3. Ideal fluids
 
+理想流体为满足如下条件的流体：
+- 不可压缩
+- $\rho=\text{const.}$ on the entire space
+- 流体内部相互作用由面元受力$p(\vec{x},t) \hat{n}dS$描述，没有剪切力。
+## Ex:
+可以构造满足条件1却不满足条件2的流体。考虑$\mathbb{R}^{3}$中的不可压缩流体被分为两个部分。区域$1$内流体密度为常数。区域$2$内流体密度为另一常数。尽管在流动中两区域体积各自维持不变，但是密度在全空间中并不是常量。
+
+>[!Note] Proposition 3.1
+>The force exerted on a volume element $dV$ of an ideal fluid is $-\nabla p dV$
+>
+## Proof.
+体积$V$受力为：
+$$\begin{align}
+-\int_{\partial V} p\hat{n}dS & = -\int pn_{i}e_{i}dS=-\int e_{i}\partial_{i}pdV=-\int \nabla p dV
+\end{align}$$
+若体积$V$为小量，则受力为$-\nabla p dV$。
+>[!Right]
+>$\blacksquare$
+
+令$\vec{g}$为引力场。不考虑相对论效应，有$\nabla \times \vec{g}=0$。令$\vec{g}=-\nabla \chi$。
+
+
+>[!Note] Proposition 3.2 (Euler's EOM)
+>
+## Proof.
+
+对于体元$dV$用牛二：
+$$\begin{align}
+ & -\nabla pdV- \nabla \chi \rho dV=\rho dV \frac{D\vec{u}}{Dt} \\
+\implies & \rho\left( u\cdot \nabla \vec{u}+ \frac{\partial \vec{u}}{\partial t} \right)=-\nabla (p+\rho \chi) \\
+\implies &  \frac{\partial \vec{u}}{\partial t}+u\cdot \nabla \vec{u}=-\nabla\left(  \frac{p}{\rho}+\chi \right)
+\end{align}$$
 
 
 
