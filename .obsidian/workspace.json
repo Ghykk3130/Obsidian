@@ -1075,10 +1075,28 @@
             "id": "a29953175d8c1fde",
             "type": "leaf",
             "state": {
-              "type": "graph",
-              "state": {},
-              "icon": "lucide-git-fork",
-              "title": "Graph view"
+              "type": "markdown",
+              "state": {
+                "file": "Notes/AB效应.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "AB效应"
+            }
+          },
+          {
+            "id": "128ffc412e4996c6",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Notes/Untitled 5.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Untitled 5"
             }
           },
           {
@@ -1586,7 +1604,7 @@
             }
           }
         ],
-        "currentTab": 76
+        "currentTab": 77
       }
     ],
     "direction": "vertical"
@@ -1755,9 +1773,10 @@
       "obsidian-excalidraw-plugin:New drawing": false
     }
   },
-  "active": "a29953175d8c1fde",
+  "active": "128ffc412e4996c6",
   "lastOpenFiles": [
     "Notes/AB效应.md",
+    "Notes/Untitled 5.md",
     "Notes/Hubbard model.md",
     "Notes",
     "Notes/Bose-Einstein statistics与BEC.md",
@@ -1793,7 +1812,6 @@
     "Homework/Physics 402/Physics 402 real world optics 5.md",
     "Notes/Fine Structure.md",
     "Notes/Berry phase.md",
-    "Notes/Fourier热传导定律.md",
     "Pictures/Pasted image 20260113144638.png",
     "AB效应",
     "Pictures/Pasted image 20251223113815.png",
