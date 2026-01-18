@@ -49,6 +49,35 @@ $$\vec{u}\cdot \nabla f= \frac{d \gamma_{i}}{d \tau} \frac{\partial f}{\partial 
 
 >[!Note] Lemma 2.1
 >Let $J=| \frac{\partial \vec{x}(\vec{\alpha},t)}{\partial \vec{\alpha}} |$ be the Jacobian. Then $\frac{\partial J}{\partial t}=J\nabla \cdot \vec{u}$
+## Remark
+
+注意，$J$是$\vec{\alpha},t$的函数。上式右手边$\frac{\partial J}{\partial t}$代表fix $\vec{\alpha}$对$t$求导，然后再某个时间$t$ evaluate。上式右边则是追踪从同一个$\vec{\alpha}$出发的粒子，计算完$J\nabla \cdot \vec{u}$后也在$t$处evaluate。
+## Proof.
+采用Einstein约定。
+$$\begin{align}
+\frac{\partial J}{\partial t} & = \frac{\partial}{\partial t}\left(\epsilon_{\mu_{1},\dots,\mu_{N}} \frac{\partial x_{\mu_{1}}}{\partial \alpha_{1}}\dots \frac{\partial x_{\mu_{N}}}{\partial \alpha_{N}} \right)\\
+ & = \epsilon_{\mu_{1},\dots,\mu_{N} } \frac{\partial u_{\mu_{1}}}{\partial \alpha_{1}}\dots \frac{\partial x_{\mu_{N}}}{\partial \alpha_{N} }+\dots+ \epsilon_{\mu_{1},\dots,\mu_{N} } \frac{\partial x_{\mu_{1}}}{\partial \alpha_{1}}\dots \frac{\partial u_{\mu_{N}}}{\partial \alpha_{N}} \\
+ & = C_{1\mu_{1}} \frac{\partial u_{\mu_{1}}}{\partial \alpha_{1}}+\dots+ C_{N\mu_{N}} \frac{\partial u_{\mu_{N}}}{\partial \alpha_{N}}
+\end{align}$$
+其中$C_{ij}$为$\frac{\partial \vec{x}}{\partial \vec{\alpha}}$的cofactor matrix。要证明$\epsilon_{\mu_{1},\dots,\mu_{N}} \frac{\partial x_{\mu_{2}}}{\partial \alpha_{2}}\dots \frac{\partial x_{\mu_{N}}}{\partial \alpha_{N}}=C_{1\mu_{1}}$也很简单。只需要把determinant沿第一行用cofactor展开，再和直接的$\epsilon_{\mu_{1},\dots,\mu_{N}} \frac{\partial x_{\mu_{1}}}{\partial \alpha_{1}}\dots \frac{\partial x_{\mu_{N}}}{\partial \alpha_{N}}$展开作对比即可。接下来回忆起：
+$$\left( \frac{\partial \vec{x}}{\partial \vec{\alpha}} \right)^{-1}= \frac{1}{J}C^t$$
+所以：
+$$C_{1\mu_{1}}=C^t_{\mu_{1},1}=J\left( \frac{\partial \vec{x}}{\partial \vec{\alpha}} \right)^{-1}_{\mu_{1},1}$$
+故：
+$$\begin{align}
+\frac{\partial J}{\partial t} & = J\left[ \left(  \frac{\partial \vec{x}}{\partial \vec{\alpha}} \right)^{-1}_{\mu_{1},1} \frac{\partial u_{\mu_{1}}}{\partial \alpha_{1}} +\dots+ \left( \frac{\partial \vec{x}}{\partial \vec{\alpha}} \right)^{-1}_{\mu_{N},N} \frac{\partial u_{\mu_{N}}}{\partial \alpha_{N}} \right] \\
+ & = J\left( \frac{\partial \vec{x}}{\partial \vec{\alpha}} \right)^{-1}_{\mu_{j},j} \frac{\partial u_{\mu_{j}}}{\partial \alpha_{j}} \\
+ & = J\left( \frac{\partial \vec{x}}{\partial \vec{\alpha}} \right)^{-1}_{\mu_{j},j} \frac{\partial x_{\mu_{k}}}{\partial \alpha_{j}} \frac{\partial u_{\mu_{j}}}{\partial x_{\mu_{k}}} \\
+ & = J\left( \frac{\partial \vec{x}}{\partial \vec{\alpha}} \right)^{-1}_{\mu_{j},j} \left( \frac{\partial \vec{x}}{\partial \vec{\alpha}} \right)_{j,\mu_{k}} \frac{\partial u_{\mu_{j}}}{\partial x_{\mu_{k}}} \\
+ & = J\delta_{\mu_{k},\mu_{j}} \frac{\partial u_{\mu_{j}}}{\partial x_{\mu_{k}}} \\
+ & = J \frac{\partial u_{\mu_{j}}}{\partial x_{\mu_{j}}} \\
+ & = J\nabla \cdot \vec{u}
+\end{align}$$
+>[!Right]
+>$\blacksquare$
+
+
+
 ## Proof.
 
 
