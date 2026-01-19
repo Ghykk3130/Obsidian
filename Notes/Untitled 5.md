@@ -96,7 +96,9 @@ $$\begin{align}
 理想流体为满足如下条件的流体：
 - 不可压缩
 - $\rho=\text{const.}$ on the entire space
-- 流体内部相互作用由面元受力$p(\vec{x},t) \hat{n}dS$描述，没有剪切力。
+- 流体内封闭体积受到流体其他部分作用由面元受力$p(\vec{x},t) \hat{n}dS$描述，没有剪切力。其中$\hat{n}$指向体积内部。
+
+第三点可能担心面元受有限力，从而获得无限加速度。但是面元两侧体积各自受指向两侧的大小为$pdS$的力。由牛三，面元受力为这两个力的反作用力，合力为零。
 ## Ex:
 可以构造满足条件1却不满足条件2的流体。考虑$\mathbb{R}^{3}$中的不可压缩流体被分为两个部分。区域$1$内流体密度为常数。区域$2$内流体密度为另一常数。尽管在流动中两区域体积各自维持不变，但是密度在全空间中并不是常量。
 
@@ -116,15 +118,49 @@ $$\begin{align}
 
 
 >[!Note] Proposition 3.2 (Euler's EOM)
->
+>For an ideal fluid, we have that:
+>$$\frac{\partial \vec{u}}{\partial t}+ (\nabla \times \vec{u})\times \vec{u}= -\nabla\left( \frac{1}{2}u^{2}+ \frac{p}{\rho}+\chi \right)$$
 ## Proof.
 
 对于体元$dV$用牛二：
 $$\begin{align}
  & -\nabla pdV- \nabla \chi \rho dV=\rho dV \frac{D\vec{u}}{Dt} \\
-\implies & \rho\left( u\cdot \nabla \vec{u}+ \frac{\partial \vec{u}}{\partial t} \right)=-\nabla (p+\rho \chi) \\
-\implies &  \frac{\partial \vec{u}}{\partial t}+u\cdot \nabla \vec{u}=-\nabla\left(  \frac{p}{\rho}+\chi \right)
+\implies & \rho\left( \vec{u}\cdot \nabla \vec{u}+ \frac{\partial \vec{u}}{\partial t} \right)=-\nabla (p+\rho \chi) \\
+\implies &  \frac{\partial \vec{u}}{\partial t}+\vec{u}\cdot \nabla \vec{u}=-\nabla\left(  \frac{p}{\rho}+\chi \right)
 \end{align}$$
+注意到：
+$$\begin{align}
+(\nabla \times \vec{u})\times \vec{u}+ \frac{1}{2}\nabla u^{2} & = \epsilon_{ijk}e_{i}\epsilon_{jlm}(\partial_{l}u_{m})u_{k}+ \frac{1}{2} e_{i} \partial_{i}(u_{k}^{2}) \\
+ & = -\epsilon_{jik}\epsilon_{jlm}(\partial_{l}u_{m})u_{k}e_{i}+ e_{i}u_{k}\partial_{i}u_{k} \\
+ & = -(\delta_{il}\delta_{km}-\delta_{im}\delta_{kl})(\partial_{l}u_{m})u_{k}e_{i}+ e_{i }u_{k} \partial_{i}u_{k} \\
+ & = -(\partial_{i}u_{k})u_{k}e_{i}+ (\partial_{k}u_{i})u_{k}e_{i}+e_{i}u_{k}\partial_{i}u_{k} \\
+ & = u_{k}\partial_{k}u_{i}e_{i} \\
+ & = \vec{u}\cdot \nabla \vec{u}
+\end{align}$$
+所以：
+$$\begin{align}
+\frac{\partial \vec{u}}{\partial t}+ (\nabla \times \vec{u})\times \vec{u}= -\nabla\left( \frac{1}{2}u^{2}+ \frac{p}{\rho}+\chi \right)
+\end{align}$$
+>[!Right]
+>$\blacksquare$
+
+注意到上式长得像正则方程。记$H= \frac{1}{2}u^{2}+ \frac{p}{\rho}+\chi$。
+## Ex:
+
+对于steady flow，我们有：
+$$\begin{align}
+ & (\nabla \times \vec{u})\times \vec{u}=-\nabla\left( \frac{1}{2}u^{2}+ \frac{p}{\rho}+\chi \right) \\
+\implies & 0= -\vec{u}\cdot \nabla H \\
+\implies &  \frac{\partial \vec{\gamma}}{\partial \tau}\cdot \nabla H=0 \\
+\implies &  \frac{\partial}{\partial \tau}H(\vec{\gamma}(\tau),t)=0
+\end{align}$$
+其中$\vec{\gamma}(\tau)$为streamline。则fix $t$，一条流线上的Hamiltonian为常量。
+## Ex:
+
+对于steady, irrotational flow，即$\frac{\partial \vec{u}}{\partial t}=0, \nabla \times \vec{u}=0$，我们有：
+$$\nabla H=0$$
+故$H$为常量。
+
 
 
 
