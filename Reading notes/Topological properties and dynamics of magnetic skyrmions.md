@@ -47,5 +47,9 @@ e^{i\Phi}\sin \frac{\Theta}{2}
 
 可以证明，real-space Berry curvature对semiclassical EOM的修正为：
 $$\hbar\dot{\vec{k}}=\vec{F}+\hbar \vec{v}\times \vec{\Omega}$$
-生成一个等效磁场。容易计算若位移方向为
+生成一个等效磁场。容易计算在立方晶系中，若位移方向为$\alpha=x,y,z$，则引出的Berry connection为：
+$$a_{\alpha}=\frac{1}{2}\partial_{\alpha}\Phi(1-\cos \Theta)$$
+可以算到：
+$$\Omega_{\alpha}=\frac{1}{2}\epsilon^{\alpha \beta \gamma}\hat{n}\cdot(\partial_{\beta}\hat{n}\times \partial_{\gamma}\hat{n})$$
+
 
