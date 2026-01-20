@@ -47,5 +47,5 @@ e^{i\Phi}\sin \frac{\Theta}{2}
 
 可以证明，real-space Berry curvature对semiclassical EOM的修正为：
 $$\hbar\dot{\vec{k}}=\vec{F}+\hbar \vec{v}\times \vec{\Omega}$$
-生成一个等效磁场。
+生成一个等效磁场。容易计算若位移方向为
 
