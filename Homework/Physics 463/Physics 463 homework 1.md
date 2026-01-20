@@ -24,7 +24,7 @@ h(s) & = \int_{\mathbb{R}}dqg(q)e^{-iqs} \\
  & = \int dq\int dxf(x)e^{-iqx}e^{-iqs} \\
  & = \int{dx}f(x)\int dq e^{-iqx}e^{-iqs} \\
  & = \int dx f(x)2\pi\delta(x+s) \\
- & = f(-s)
+ & = 2\pi f(-s)
 \end{align}$$
 # 3.
 We require that $q$ satisfies the periodic boundary condition:
@@ -84,18 +84,18 @@ Then $\tilde{f}$ is odd.
 ## c.
 
 Let $f$ be real, even. Then:
-$$\tilde{f}(q)^{*}=f(-q)=f(q)\implies f\text{ is real and even}$$
+$$\tilde{f}(q)^{*}=f(-q)=f(q)\implies \tilde{f}\text{ is real and even}$$
 Let $f$ be imaginary, even. Then:
-$$\tilde{f}(q)^{*}=-f(-q)=-f(q)\implies f\text{ is imaginary and even}$$
+$$\tilde{f}(q)^{*}=-f(-q)=-f(q)\implies \tilde{f}\text{ is imaginary and even}$$
 Let $f$ be real, odd. Then:
-$$\tilde{f}^{*}(q)= \tilde{f}(-q)=-\tilde{f}(q)\implies f\text{ is imaginary and odd}$$
+$$\tilde{f}^{*}(q)= \tilde{f}(-q)=-\tilde{f}(q)\implies \tilde{f}\text{ is imaginary and odd}$$
 Let $f$ be imaginary, odd. Then:
-$$\tilde{f}^{*}(q)=-\tilde{f}(-q)=\tilde{f}(q)\implies f\text{ is real and odd}$$
+$$\tilde{f}^{*}(q)=-\tilde{f}(-q)=\tilde{f}(q)\implies \tilde{f}\text{ is real and odd}$$
 ## d.
 $$\begin{align}
 \tilde{f^{'}} & = \int_{\mathbb{R}}dx f^{'} (x)e^{-iqx} \\
  & = \int dx f(x+a)e^{-iqx} \\
- & = \int dx f(x)e^{iqx}e^{iqa} \\
+ & = \int dx f(x)e^{-iqx}e^{iqa} \\
  & = e^{iqa}\tilde{f}(q)
 \end{align}$$
 # 5.
@@ -107,7 +107,9 @@ $$\begin{align}
  & = \lim_{ N \to \infty } \sum_{-N}^{N}e^{-iqnT} \\
  & = \lim_{ N \to \infty } D_{N}(-qT) \\
  & = 2\pi \sum_{m=-\infty}^{\infty}\delta(-qT-2\pi m) \\
- & = 2\pi \sum_{m=-\infty}^{\infty}\delta(qT-2\pi m)
+ & = 2\pi \sum_{m=-\infty}^{\infty}\delta(qT-2\pi m) \\
+ & = \frac{2\pi}{T} \sum_{m=-\infty}^{\infty}\delta\left( q- \frac{2\pi m}{T} \right)
 \end{align}$$
+
 
 
