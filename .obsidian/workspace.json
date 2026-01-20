@@ -27,12 +27,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Reading notes/Topological properties and dynamics of magnetic skyrmions.md",
+                "file": "Homework/Physics 463/Physics 463 homework 1.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Topological properties and dynamics of magnetic skyrmions"
+              "title": "Physics 463 homework 1"
             }
           }
         ],
@@ -142,12 +142,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Reading notes/Topological properties and dynamics of magnetic skyrmions.md",
+                "file": "Homework/Physics 463/Physics 463 homework 1.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Outgoing links from Topological properties and dynamics of magnetic skyrmions"
+              "title": "Outgoing links from Physics 463 homework 1"
             }
           },
           {
@@ -207,6 +207,7 @@
   },
   "active": "6e2a2579733358f4",
   "lastOpenFiles": [
+    "Reading notes/Topological properties and dynamics of magnetic skyrmions.md",
     "Reading notes/Electrical resistance of ferromagnetic metals.md",
     "Reading notes/Dynamics and critical currents in fast superconducting vortices at high pulsed magnetic fields.md",
     "Reading notes/Doping-induced spin reorientation in Kagome magnet TmMn6Sn6.md",
@@ -214,7 +215,6 @@
     "Notes/任意坐标系下的nabla算子.md",
     "Notes/二次量子化.md",
     "Reading notes/Unconventional magnetic oscillations in a kagome Mott insulator.md",
-    "Reading notes/Topological properties and dynamics of magnetic skyrmions.md",
     "Pictures/Pasted image 20260120002933.png",
     "Notes/Untitled 5.md",
     "Notes/Untitled 4.md",
