@@ -46,8 +46,9 @@ $$\sum_{i} \frac{p^{2}_{i}}{2m}+n_{\uparrow}h\mu-n_{\downarrow}h\mu$$
 $$H= \delta{k}_{i} \frac{\partial f_{i}}{\partial k_{i}}\sigma_{i}$$
 一般来说，$\frac{\partial f_{1}}{\partial k_{1}}= \frac{\partial f_{2}}{\partial k_{2}}= \frac{\partial f_{3}}{\partial k_{3}}$，令其为$v_{F}$。令$\vec{k}_{0}$为原点。则Hamiltonian写为：
 $$H=v_{F}\vec{\sigma}\cdot \vec{k}$$
-
-
+应该可以算出，该点具有$C\neq 0$。由于总Chern number守恒，必然存在另一个Weyl点，且Hamiltonian为：
+$$H=-v_{F}\vec{\sigma}\cdot \vec{k}$$
+以至于算出$-C$的Chern number。
 
 
 
