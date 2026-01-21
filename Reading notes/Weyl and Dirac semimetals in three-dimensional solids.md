@@ -8,7 +8,7 @@ $$E_{\pm}= f_{0}(\vec{k})\pm \sqrt{ f_{1}^{2}(\vec{k})+f_{2}^{2}(\vec{k})+f_{3}^
 
 以$\vec{k}$作为参数可以引出Berry curvature。可以定义Weyl点的Chirality，即Chern number：
 $$C= \frac{1}{2\pi}\oint_{\Sigma}d\vec{S}\cdot \vec{\Omega}$$
-## Remark
+## Note 1: torus
 
 令$S^1$为圆环。即$S^1 \cong \mathbb{R} / 2\pi \mathbb{Z}$。称$S^1$为2-torus。称$S^1\times S^1$为2-torus。可以generalize到2-torus。考虑一个三维中的甜甜圈曲面
 ![[Drawing 2026-01-20 20.41.10.excalidraw|center|400]]
@@ -22,6 +22,11 @@ $$C= \frac{1}{2\pi}\oint_{\Sigma}d\vec{S}\cdot \vec{\Omega}$$
 
 因为FBZ有3-torus的topology，即$k_{x},k_{y},k_{z}$都是重复的，所以在Brillouin zone的一对对径点，有相同的态，进而有相同的$\vec{\Omega}$。但是面元$d\vec{S}$的方向相反。所以：
 $$C= \frac{1}{2\pi}\oint_{\text{BZ}}d\vec{S}\cdot \vec{\Omega}=0$$
+## Note 2: 对称性
+
+定义宇称算符$P$作用在Hilbert空间上。要求：
+$$\bra{\psi} P^{\dagger}\vec{r}P\ket{\psi} =-\bra{\psi} \vec{r}\ket{\psi} \implies \{ \vec{r},P \}=0$$
+进而可以计算其它动力学量。
 
 
 
