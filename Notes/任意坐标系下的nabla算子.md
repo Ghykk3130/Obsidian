@@ -32,14 +32,55 @@ $$\begin{align}
 ## Ex:
 
 考虑cylindrical coordinates的度规张量：
-$$g=dr^{2}+r^{2}d\phi^{2}+dz^{2}$$
-为了方便起见，选择$dr,r d\phi,dz$作为余切空间基矢。那么，相应的切空间基底为$e_{r}, \frac{1}{r}e_{\theta}, e_{z}$。
-
-此时，在新基底下，度规张量为$\delta_{ij}$。所以我们不需要担心raising, lowering index的影响。且$\sqrt{ |g| }$也会消失。
-
+$$g=dr^{2}+r^{2}d\theta^{2}+dz^{2}$$
 考虑一个物理矢量：
-$$A=A^re_{r}+ A^{\theta}e_{\theta}+A^{z}e_{z}$$
-我们在新基下写这个矢量：
-$$A=A^re_{r}+ rA^{\theta} \frac{e_{\theta}}{r}+ A^{z}e_{z}$$
-降指标非常轻松：
-$$A^{\flat}= A^r dr+ rA^{\theta} (r d\theta)+A^zdz$$
+$$\begin{align}
+A & =A^re_{r}+ A^{\theta}e_{\theta}+A^{z}e_{z} \\
+ & = A^r\partial_{r}+ \frac{A^{\theta}}{r}  \partial_{\theta}+A^z\partial_{z}
+\end{align}$$
+我们降指标：
+$$A^{\flat}= A^r dr+ r^{}A^{\theta} d\theta+A^zdz$$
+求外微分非常轻松：
+$$\begin{align}
+ & (dA)_{r,\theta}= \partial_{r}(r^{}A^{\theta})-\partial_{\theta}A^r=-(dA)_{\theta,r} \\
+ & (dA)_{\theta,z}= \partial_{\theta}A^z-\partial_{z}(r^{}A^{\theta})=-(dA)_{z,\theta} \\
+ & (dA)_{z,r}= \partial_{z}A^r-\partial_{r}A^{z}=-(dA)_{r,z}
+\end{align}$$
+可以求Hodge dual：
+$$\begin{align}
+ & (*dA)^r= \frac{1}{\sqrt{ |g| }} \left[ \frac{1}{2}(dA)_{\theta,z}- \frac{1}{2}(dA)_{z,\theta} \right]= \frac{1}{r} (dA)_{\theta,z}= \frac{1}{r}\partial_{\theta}A^z- \partial_{z}A^{\theta} \\
+ & (*dA)^{\theta}= \frac{1}{\sqrt{ |g| }}\left[\frac{1}{2}(dA)_{z,r}- \frac{1}{2}(dA)_{r,z}\right]= \frac{1}{r} (dA)_{z,r}=  \frac{1}{r}\partial_{z}A^r- \frac{1}{r}\partial_{r}A^z \\
+ & (*dA)^z=  \frac{1}{\sqrt{ |g| }}\left[ \frac{1}{2}(dA)_{r,\theta}- \frac{1}{2}(dA)_{\theta,r}\right]= \frac{1}{r}(dA)_{r,\theta}= \frac{1}{r}\partial_{r}(rA^{\theta})- \frac{1}{r}\partial_{\theta}A^r
+\end{align}$$
+再换到$e_{r},e_{\theta},e_{z}$基，得到：
+$$\begin{align}
+ & (\nabla \times A)^r= \frac{1}{r}\partial_{\theta}A^z-\partial_{z}A^{\theta} \\
+ & (\nabla \times A)^{\theta}= \partial_{z}A^r- \partial_{r}A^z \\
+ & (\nabla \times A)^{z}= \frac{1}{r}\partial_{r}(rA^{\theta})- \frac{1}{r}\partial_{\theta}A^r
+\end{align}$$
+## Ex:
+
+考虑spherical coordinated度规张量：
+$$g= dr^{2}+ r^{2}d\theta^{2}+r^{2}\sin ^{2}\theta d\phi^{2}$$
+我们有：
+$$\begin{align}
+A & = A^re_{r}+A^{\theta}e_{\theta}+A^{\phi}e_{\phi} \\
+ & = A^r\partial_{r}+ \frac{A^{\theta}}{r}\partial_{\theta}+ \frac{A^{\phi}}{r\sin \theta}\partial_{\phi}
+\end{align}$$
+降指标：
+$$\begin{align}
+A^{\flat}= A^r dr + rA^{\theta}d\theta+ r\sin \theta A^{\phi}d\phi
+\end{align}$$
+我们求外微分：
+$$\begin{align}
+ & (dA)_{r,\theta}= \partial_{r}\left( \frac{A^{\theta}}{r} \right)- \partial_{\theta}A^r \\
+ & (dA)_{\theta,\phi}= \partial_{\theta}\left(  \frac{A^{\phi}}{r\sin \theta} \right)- \partial_{\phi}\left( \frac{A^{\theta}}{r} \right) \\
+ & (dA)_{\phi,r}= \partial_{\phi}A^r- \partial_{r}\left( \frac{A^{\phi}}{r\sin \theta} \right)
+\end{align}$$
+求Hodge dual：
+$$\begin{align}
+ & (*dA)^r= \frac{1}{r^{2}\sin \theta} (dA)_{\theta,\phi}= \frac{1}{r^{2}\sin \theta} \left[ \partial_{\theta}\left(  \frac{A^{\phi}}{r\sin \theta} \right) - \partial_{\phi}\left(  \frac{A^{\theta}}{r} \right)\right] \\
+ & (*dA)_{\theta}= \frac{1}{r^{2}\sin \theta} (dA)_{\phi,r}= \frac{1}{r^{2}\sin \theta}\left[ \partial_{\phi}A^r-\partial_{r}\left(  \frac{A^{\phi}}{r\sin \theta} \right) \right] \\
+ & (*dA)_{\phi}= \frac{1}{r^{2}\sin \theta} (dA)_{r,\theta}= \frac{1}{r^{2}\sin \theta}\left[ \partial_{r}\left(  \frac{A^{\theta}}{r} \right)- \partial_{\theta}A^r \right] 
+\end{align}$$
+换到正交基得到：
