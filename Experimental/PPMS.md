@@ -23,4 +23,5 @@
 	- Field sweep rate $40 oe / s$ when taking measurement. $100 oe / s$ when finishing up and returning to zero field.
 - Field should not stay at non zero value for a long time. 
 - Whenever going to a new temperature stage, wait $8\ min$ for complete thermal equilibrium.
+- Note that the excitation current is such that the perturbing temperature $\leq$ 10% base temperature.
 
