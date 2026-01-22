@@ -32,6 +32,22 @@ Be aware of what you understand and what you don't.
 
 
 
+# Meeting 2
+
+project有什么结果？为什么放弃？
+
+一个月到一个半月知道这件事能不能干？45天？
+
+找到合理的故事？对于解释数据。看别人的故事套到自己身上合不合适。
+
+看毕业thesis。
+
+要决定要不要做一个课题，思考一个课题放在简历里能不能经过面试。
+
+EE project核心是给AMO敲门砖。
+
+
+
 
 
 
