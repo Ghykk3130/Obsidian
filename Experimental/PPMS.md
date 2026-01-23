@@ -25,3 +25,9 @@
 - Whenever going to a new temperature stage, wait $8\ min$ for complete thermal equilibrium.
 - Note that the excitation current is such that the perturbing temperature $\leq$ 10% base temperature.
 
+# VSM
+- Place VSM rod on the red meterstick, with the bottom aligned. 
+- Put a little bit of GE varnish, and stick the sample at $35mm$. Then bake at $100 C^{\circ}$ for 30 min.
+- Then cover the sample with GE varnish. Bake again in the same way.
+- Note that the magnetic field is along the rod.
+- The sample size should be in consideration because strong magnetization might cause the sample to fly away.
