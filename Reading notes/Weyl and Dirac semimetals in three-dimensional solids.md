@@ -53,5 +53,6 @@ $$H=-v_{F}\vec{\sigma}\cdot \vec{k}$$
 现在考虑一个具体的例子。考虑一个有两个orbital的系统。用一个赝自旋描述这两个orbital。每个orbital上电子有动量$\hbar \vec{k}$，以及自旋。Hilbert空间为orbital的Hilbert空间，动量的Hilbert空间，以及自旋Hilbert空间的张量积。
 
 考虑如下Hamiltonian：
-$$H=v_{F}\tau_{x}\vec{\sigma}\cdot \vec{k}+m\tau_{z}+b\sigma_{z}$$
-第一项是因为LS coupling。在
+$$H=v_{F}\tau_{x}\vec{\sigma}\cdot \vec{k}+m\tau_{z}+b\sigma_{z}+ b^{'}\tau_{z}\sigma_{x}$$
+第一项为Weyl动能。在系统完全处于两个orbital中的一个是不存在。第二项是能隙，假设能隙大小为$2m$。第三项是说两个obital都施加$z$方向磁场的偶极项。第四项是说两个orbital施加$x$方向相反的磁场的偶极项。
+
