@@ -50,5 +50,6 @@ $$H=v_{F}\vec{\sigma}\cdot \vec{k}$$
 $$H=-v_{F}\vec{\sigma}\cdot \vec{k}$$
 以至于算出$-C$的Chern number。
 
+现在考虑一个具体的例子。考虑一个有两个orbital的系统。用一个赝自旋描述这两个orbital。每个orbital上电子有动量$\hbar \vec{k}$，以及自旋。Hilbert空间为orbital的Hilbert空间，动量的Hilbert空间，以及自旋Hilbert空间的张量积。
 
-
+考虑
