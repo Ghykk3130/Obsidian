@@ -97,16 +97,30 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Notes/流体动力学.md",
+                "file": "Homework/Math 654/Homework 1.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "流体动力学"
+              "title": "Homework 1"
+            }
+          },
+          {
+            "id": "c12f9fac81d0541a",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Homework/Math 654/Homework 1.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Homework 1"
             }
           }
         ],
-        "currentTab": 6
+        "currentTab": 7
       }
     ],
     "direction": "vertical"
@@ -276,8 +290,9 @@
       "obsidian-excalidraw-plugin:New drawing": false
     }
   },
-  "active": "7fa5ed0b3361586a",
+  "active": "c12f9fac81d0541a",
   "lastOpenFiles": [
+    "Excalidraw/Drawing 2026-01-24 21.48.03.excalidraw.md",
     "Homework/Math 654/Homework 1.md",
     "Notes/流体动力学.md",
     "Notes/Untitled.md",
@@ -304,7 +319,6 @@
     "Notes/Graphene中的Dirac cone.md",
     "Reading notes/Dynamics and critical currents in fast superconducting vortices at high pulsed magnetic fields.md",
     "Reading notes/Electrical resistance of ferromagnetic metals.md",
-    "Excalidraw/Drawing 2026-01-20 20.41.10.excalidraw.md",
     "Pictures/Pasted image 20260120002933.png",
     "Notes",
     "Pictures/Pasted image 20260117161122.png",
