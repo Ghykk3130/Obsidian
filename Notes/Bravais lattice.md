@@ -31,8 +31,57 @@
 我们有如下定理：
 
 >[!Success] Proposition 2.1
->Let $E:\mathbb{R}^d\rightarrow \mathbb{R}^d$ be an isometry. Then $E=W+t$ for some $W\in O(d),\ t\text{ a translation}$.
+>Let $E:\mathbb{R}^d\rightarrow \mathbb{R}^d$ be an isometry. Then $E=T\circ W$ for some unique $W\in O(d),\ T\text{ a translation}$.
 >
 ## Proof.
 
-令$E^{'}(x)=E(x)-E(0)$。容易证明$E^{'}$是线性的：
+令$E^{'}(x)=E(x)-E(0)$。利用$\mathbb{R}^d$自带的内积，容易证明$E^{'}$是线性的：
+$$\begin{align}
+||E^{'}(\alpha x+y)-\alpha E^{'}(x)-E^{'}(y) || & = ||E(\alpha x+y)-E(0)-\alpha E(x)  +\alpha E(0)-E(y)+E(0)|| \\
+ & = ||E(\alpha x+y)-\alpha E(x)+\alpha E(0)-E(y)|| \\
+ & = \langle E(\alpha x+y)-\alpha E(x)+\alpha E(0)-E(y),E(\alpha x+y)-\alpha E(x)+\alpha E(0)-E(y)\rangle \\
+ & = \langle E(\alpha x+y),E(\alpha x+y)\rangle-\alpha\langle E(x),E(\alpha x+y)\rangle-\langle E(y),E(\alpha x+y)\rangle-\alpha\langle E(\alpha x+y ) ,E(x)\rangle+\alpha^{2}\langle E(x),E(x)\rangle+\alpha\langle E(y),E(x)\rangle-\langle E(\alpha x+y),E(y)\rangle+\alpha \langle E(x),E(y)\rangle+\langle E(y),E(y)\rangle \\
+ & = \langle \alpha x+y,\alpha x+y\rangle - \alpha\langle x,\alpha x+y\rangle - \langle y, \alpha x+y\rangle-\alpha\langle \alpha x+y,x\rangle+\alpha^{2}\langle x,x \rangle+\alpha\langle y, x\rangle - \langle \alpha x+y,y\rangle+\alpha\langle x,y\rangle+\langle y,y\rangle \\
+ & = \alpha^{2}\langle x,x\rangle+\alpha\langle y,x\rangle+\alpha\langle x,y\rangle+\langle y,y\rangle-\alpha^{2}\langle x,x\rangle-\alpha\langle x,y\rangle-\alpha\langle y,x\rangle-\langle y,y\rangle-\alpha^{2}\langle x,x\rangle-\alpha\langle y,x\rangle+\alpha^{2}\langle x,x\rangle+\alpha\langle y,x\rangle-\alpha\langle x,y\rangle-\langle y,y\rangle+\alpha\langle x,y\rangle+\langle y,y\rangle \\
+ & = 0
+\end{align}$$
+容易证明$E^{'}$是正交的：
+$$\begin{align}
+||E^{'}(x)|| & = ||E(x)-E(0) || \\
+ & = \langle E(x)-E(0),E(x)-E(0)\rangle \\
+ & = ||x||^{2} 
+\end{align}$$
+故$E^{'}\in O(d)$。令$T=T_{E(0)}$即可。
+
+接下来证明唯一性。考虑$E=T_{1}\circ W_{1}=T_{2} \circ W_{2}$。则：
+$$W_{1}(x)+t_{1}=W_{2}(x)+t_{2},\ \forall x$$
+取$x=0$，则$T_{1}=T_{2}$。然后$W_{1}=T_{1}^{-1}E,\ W_{2}=T_{2}^{-1}E$相等。
+>[!Right]
+>$\blacksquare$
+
+那么给定一个$\mathbb{R}^d$中的晶体$\Lambda$，由于晶体有对称性，考虑这样一个集合：
+$$G=\{ E\text{ isometry} |E\Lambda=\Lambda\}$$
+容易证明$G$是一个群。封闭性显然。Identity取$\mathbb{1}$。若$E=T_{t}\circ W$，则$E^{-1}=W^{-1} \circ T_{t}^{-1}$。现在须证明$E^{-1}$为isometry。注意到：
+$$\begin{align}
+E^{-1}(x)=W^{-1}(x-t)=W^{-1}(x)-W^{-1}(t)
+\end{align}$$
+所以$E^{-1}=T_{-W^{-1}(t)}\circ W^{-1}$，是一个isometry。然后我们可作如下定义：
+
+>[!Note] Definition 2.2
+>Given a lattice $\Lambda$, the space group is defined as:
+>$$G=\{ E\text{ isometry }|E\Lambda=\Lambda \}$$
+
+我们可以把正交部分提取出来：
+$$P=\{ W\in O(d)|E=T \circ W,\ E\in G \}$$
+容易证明$P$是一个群。封闭性：取$E_{1}=T_{1} \circ W_{1},\ E_{2}=T_{2} \circ W_{2}$。则：
+$$\begin{align}
+E_{1}E_{2}(x)= E_{1}(W_{2}(x)+t_{2})=W_{1}W_{2}(x)+W_{1}(t_{2})+t_{1}
+\end{align}$$
+所以$W_{1},W_{2}$可以作为$E_{1}E_{2}=T_{W_{1}(t_{2})+t_{1}}\circ W_{1}W_{2}\in G$的$O(d)$部分。
+
+接下来取identity为$\mathbb{1}$。给定$W$，考虑其逆$W^{-1}$即可。
+
+>[!Note] Definition 2.3
+>Given a space group $G$, the point group is defined as:
+>$$P=\{ W\in O(d)|E=T \circ W,\ E\in G \}$$
+
