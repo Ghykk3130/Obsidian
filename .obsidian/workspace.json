@@ -97,12 +97,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Homework/Math 654/Homework 1.md",
+                "file": "Notes/流体动力学.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Homework 1"
+              "title": "流体动力学"
             }
           }
         ],
@@ -177,7 +177,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 200,
+    "collapsed": true
   },
   "right": {
     "id": "9003d078f8dbc4ed",
@@ -277,13 +278,13 @@
   },
   "active": "7fa5ed0b3361586a",
   "lastOpenFiles": [
-    "Notes/Untitled.md",
     "Homework/Math 654/Homework 1.md",
+    "Notes/流体动力学.md",
+    "Notes/Untitled.md",
     "Reading notes/Doping-induced spin reorientation in Kagome magnet TmMn6Sn6.md",
     "Notes/Untitled 5.md",
     "Homework/Math 654",
     "Notes/任意坐标系下的nabla算子.md",
-    "Notes/流体动力学.md",
     "Notes/Untitled 1.md",
     "Reading notes/Weyl and Dirac semimetals in three-dimensional solids.md",
     "Reading notes/Weyl semimetal in a topological insulator multilayer.md",
