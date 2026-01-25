@@ -30,7 +30,7 @@
 
 我们有如下定理：
 
->[!Success] Proposition 2.1
+>[!Success] Theorem 2.1
 >Let $E:\mathbb{R}^d\rightarrow \mathbb{R}^d$ be an isometry. Then $E=T\circ W$ for some unique $W\in O(d),\ T\text{ a translation}$.
 >
 ## Proof.
@@ -85,3 +85,34 @@ E_{1}E_{2}(x)= E_{1}(W_{2}(x)+t_{2})=W_{1}W_{2}(x)+W_{1}(t_{2})+t_{1}
 >Given a space group $G$, the point group is defined as:
 >$$P=\{ W\in O(d)|E=T \circ W,\ E\in G \}$$
 
+点群中的旋转操作必定是离散的。我们有：
+
+>[!Success] Theorem 2.2
+>Let $d=1\text{ or }2$, $R\in P$ be a rotation. Then the order of rotation cannot be other than $1,2,3,4,6$.
+## Proof.
+
+我们来算一下这个共轭变换的具体结果。设 $g = T_{\mathbf{t}} \circ W$，平移算符为 $T_{\mathbf{R}}$：
+$$
+\begin{align}
+
+g \circ T_{\mathbf{R}} \circ g^{-1} &= (T_{\mathbf{t}} \circ W) \circ T_{\mathbf{R}} \circ (W^{-1} \circ T_{-W^{-1}\mathbf{t}}) \
+
+&= T_{\mathbf{t}} \circ (W \circ T_{\mathbf{R}} \circ W^{-1}) \circ T_{-W^{-1}\mathbf{t}}
+
+\end{align}$$
+
+利用我们之前讨论的不交换性，$W \circ T_{\mathbf{R}} \circ W^{-1} = T_{W\mathbf{R}}$。代入得：
+$$
+\begin{align}
+
+g \circ T_{\mathbf{R}} \circ g^{-1} &= T_{\mathbf{t}} \circ T_{W\mathbf{R}} \circ T_{- \mathbf{t}} \
+
+&= T_{W\mathbf{R} + \mathbf{t} - \mathbf{t}} \
+
+&= T_{W\mathbf{R}}
+
+\end{align}
+$$
+**这个结论非常震撼：**
+
+无论 $\mathbf{t}$ 是什么（哪怕是复杂的滑移、旋转轴偏移），**旋转矩阵 $W$ 作用在任何一个格矢 $\mathbf{R}$ 上，其结果 $W\mathbf{R}$ 必须仍然是一个合法的格矢。**
