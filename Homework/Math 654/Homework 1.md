@@ -60,5 +60,19 @@ $$\begin{align}
 \end{align}$$
 We can also compute:
 $$\begin{align}
- \frac{D{u}_{i}}{Dt}  & = \frac{\partial u_{i}}{\partial t}+ u_{j}\partial_{j}u_{i} \\
- & = \end{align}$$
+ \frac{D\vec{u}}{Dt}  & = \frac{\partial\vec{u}}{\partial t}+ \vec{u}\cdot \nabla \vec{u}\\
+ & = 0 + \vec{u}\cdot \nabla \vec{u} \\
+ & =  (\alpha x\partial_{x}-\alpha y \partial_{y})(\alpha x \hat{x}-\alpha y \hat{y}) \\
+ & = \alpha^{2}x \hat{x}+\alpha^{2}y \hat{y}\end{align}$$
+ We also observe that:
+ $$\begin{align}
+ \left(\frac{\partial \vec{u}}{\partial t}\right)_{\vec{x}} & =  \frac{\partial}{\partial t}(\alpha Xe^{\alpha t}\hat{x}-\alpha Ye^{-\alpha t}\hat{y}) \\
+ & = \alpha^{2}Xe^{\alpha t}\hat{x}+\alpha^{2}Ye^{-\alpha t}\hat{y} \\
+ & = \alpha^{2} x \hat{x}+\alpha^{2}y \hat{y} 
+\end{align}$$
+So we have that:
+$$\left( \frac{\partial \vec{u}}{\partial t} \right)_{\vec{x}}= \frac{D\vec{u}}{Dt}$$
+These results are expected because the Lagrangian description $\vec{x}(\vec{\alpha}, t)$ acts as the inverse mapping to the Eulerian labeling, explicitly tracking a specific particle's path through space. Since this mapping $\vec{x}(\vec{\alpha},t)$ defines exactly where the particle labeled $\vec{x}$ is at $t$, its time derivative is, by fundamental definition, that particle's velocity $\vec{u}$. For velocity, since the Eulerian velocity field $\vec{u}$ depends on the position $\vec{x}$, and $\vec{x}$ is determined by that Lagrangian mapping, taking the time derivative requires the chain rule, which mathematically results in the material derivative $\frac{D \vec{u}}{Dt}$. 
+
+To express $c$ in terms of $x,y,t$, we do:
+$$c=\beta x^{2}ye^{-\alpha t}=\beta(Xe^{\alpha t})^{2}Ye^{-\alpha t}e^{-\alpha t}=\beta X^{2}Y$$
