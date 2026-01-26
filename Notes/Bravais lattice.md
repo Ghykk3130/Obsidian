@@ -13,7 +13,7 @@
 >- $\bigcup_{\vec{R}\in \Lambda}(\Omega+\vec{R})=\mathbb{R}^d$
 
 给定一个原子位置构成的点集，选择这些原子位置构成点集不一定形成一个Bravais lattice。等会可以证明primitive vectors span出一个primitive cell。而primitive cell中原子的位置称为basis。
-## Ex: Honey comb/graphene
+## Ex: honey comb/graphene
 ![[Drawing 2026-01-25 16.48.54.excalidraw|center|300]]
 若取honey comb lattice的每个原子构成点集，可以证明这不是一个Bravais lattice。FTSOC，假设构成一个Bravais lattice。注意到Bravais lattice具有封闭性。但是$\vec{R}_{A}-\vec{R}_{B}$显然不指向任何原子，不在晶体中。
 
@@ -29,6 +29,17 @@
 ![[Drawing 2026-01-25 23.20.32.excalidraw|center|350]]
 
 容易看出，基矢span出来的空间一定是primitive cell，但是primitive cell不一定是基矢span出来的空间。
+## Ex: closest packing
+
+考虑固定大小原子在三维的closed packing问题。有两种固定解：
+![[Drawing 2026-01-26 00.17.32.excalidraw|center|400]]
+其中每个形状代表一层。有三个不同的层。这是FCC解。垂直于digonal的平面是closest packing的原子层。可以看下图：
+![[Drawing 2026-01-26 00.36.24.excalidraw|center|400]]
+此外还有：
+![[Drawing 2026-01-26 00.29.35.excalidraw|center|400]]
+只有两个不同的层。这称为HCP(hexagonal colsest packing)解。
+
+
 
 >[!Success] Proposition 1.1
 >Let $\{ \vec{a}_{i} \}$ be the basis of $\Lambda$. Then $\Omega=\left\{  \sum_{j}m_{j}\vec{a}_{j}|0\leq m_{j}\leq 1  \right\}$ is a primitive cell.
