@@ -10,10 +10,6 @@
 ![[Drawing 2026-01-25 16.48.54.excalidraw|center|300]]
 若取honey comb lattice的每个原子构成点集，可以证明这不是一个Bravais lattice。FTSOC，假设构成一个Bravais lattice。注意到Bravais lattice具有封闭性。但是$\vec{R}_{A}-\vec{R}_{B}$显然不指向任何原子，不在晶体中。
 
-
-
-
-
 可以定义primitive cell为这样一个区域：
 
 >[!Note] Definition 1.2
@@ -22,7 +18,8 @@
 >- $\bigcup_{\vec{R}\in \Lambda}(\Omega+\vec{R})=\mathbb{R}^d$
 
 我们选好一个Bravais lattice
-# 2. 
+
+# 2. 空间群，点群
 
 >[!Note] Definition 2.1
 >Given metric spaces $(X,d_{X}),(Y,d_{Y})$, an isometry $f:X\rightarrow Y$ is a function such that $d_{Y}(f(a),f(b))=d_{X}(a,b),\forall a,b\in X$
@@ -88,31 +85,40 @@ E_{1}E_{2}(x)= E_{1}(W_{2}(x)+t_{2})=W_{1}W_{2}(x)+W_{1}(t_{2})+t_{1}
 点群中的旋转操作必定是离散的。我们有：
 
 >[!Success] Theorem 2.2
->Let $d=1\text{ or }2$, $R\in P$ be a rotation. Then the order of rotation cannot be other than $1,2,3,4,6$.
+>Let $d=2\text{ or }3$, $W\in P$ be a rotation. Then the order of rotation cannot be other than $1,2,3,4,6$.
 ## Proof.
 
-我们来算一下这个共轭变换的具体结果。设 $g = T_{\mathbf{t}} \circ W$，平移算符为 $T_{\mathbf{R}}$：
-$$
-\begin{align}
-
-g \circ T_{\mathbf{R}} \circ g^{-1} &= (T_{\mathbf{t}} \circ W) \circ T_{\mathbf{R}} \circ (W^{-1} \circ T_{-W^{-1}\mathbf{t}}) \
-
-&= T_{\mathbf{t}} \circ (W \circ T_{\mathbf{R}} \circ W^{-1}) \circ T_{-W^{-1}\mathbf{t}}
-
+我们先证明，若$W$是点群中元素（不一定是旋转），则$W$将格矢映射为格矢。取$\vec{R},\vec{R}^{'}\in \Lambda,\ g\in G$，则：
+$$\begin{align}
+ & g(\vec{R}^{'})\in \Lambda,\ g(\vec{R}+\vec{R}^{'})\in \Lambda
 \end{align}$$
+所以：
+$$\begin{align}
+ & g(\vec{R}+\vec{R}^{'} )-g(\vec{R}^{'})\in \Lambda \\
+\implies & W(\vec{R}+\vec{R}^{'})+t-W(\vec{R}^{'})-t=W(\vec{R}^{})\in \Lambda
+\end{align}$$
+所以$W$在基$\vec{a}_{j}$下的表示为整数矩阵。所以$Tr(W)\in \mathbb{Z}$。
 
-利用我们之前讨论的不交换性，$W \circ T_{\mathbf{R}} \circ W^{-1} = T_{W\mathbf{R}}$。代入得：
-$$
-\begin{align}
-
-g \circ T_{\mathbf{R}} \circ g^{-1} &= T_{\mathbf{t}} \circ T_{W\mathbf{R}} \circ T_{- \mathbf{t}} \
-
-&= T_{W\mathbf{R} + \mathbf{t} - \mathbf{t}} \
-
-&= T_{W\mathbf{R}}
-
-\end{align}
-$$
-**这个结论非常震撼：**
-
-无论 $\mathbf{t}$ 是什么（哪怕是复杂的滑移、旋转轴偏移），**旋转矩阵 $W$ 作用在任何一个格矢 $\mathbf{R}$ 上，其结果 $W\mathbf{R}$ 必须仍然是一个合法的格矢。**
+令$W$为rotation。我们希望得到$W$的trace。则在$d=2$中，有：
+$$(W)=\begin{pmatrix}
+\cos \theta & -\sin \theta \\
+\sin \theta & \cos \theta
+\end{pmatrix}\implies Tr(W)=2\cos \theta$$
+在$d=3$中，由于$Tr(W)$为$SO(3)$不变量，WLOG取$W=R_{\hat{z}}(\theta)$，有：
+$$(W)=\begin{pmatrix}
+\cos \theta & -\sin \theta & 0 \\
+\sin \theta & \cos \theta & 0 \\
+0 & 0 & 1
+\end{pmatrix}\implies Tr(W)=2\cos \theta+1$$
+那么：
+$$2\cos \theta\in \mathbb{Z}$$
+接下来：
+$$\begin{align}
+ & 2\cos \theta=1 \implies \theta= \frac{\pi}{3}\implies \{ W \}\cong \mathbb{Z}_{6} \\
+ & 2\cos \theta=2 \implies \theta= 0\implies \{ W \}\cong\mathbb{Z}_{1} \\
+ & 2\cos \theta=-1 \implies \theta= \frac{2\pi}{3}\implies \{ W \}\cong\mathbb{Z}_{3} \\
+ & 2\cos \theta=-2\implies \theta=\pi\implies \{ W \}\cong\mathbb{Z}_{2} \\
+ & 2\cos \theta=0\implies \theta= \frac{\pi}{2}\implies \{ W \}\cong\mathbb{Z}_{4}
+\end{align}$$
+>[!Right]
+>$\blacksquare$
