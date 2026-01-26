@@ -3,7 +3,7 @@
 考虑一个$\mathbb{R}^d$中的晶体。可以定义Bravais晶体为：
 
 >[!Note] Definition 1.1
->Define the Bravais lattice as $\Lambda=\left\{  \sum_{j}n_{j}\vec{a}_{j}|n_{j}\in \mathbb{Z}  \right\}$, where $\{ \vec{a}_{j} \}$ forms a linearly independent basis of $\mathbb{R}^d$.
+>Define the Bravais lattice as $\Lambda=\left\{  \sum_{j}n_{j}\vec{a}_{j}|n_{j}\in \mathbb{Z}  \right\}$, where $\{ \vec{a}_{j} \}$ forms a linearly independent basis of $\mathbb{R}^d$. Call $\{ \vec{a}_{j} \}$ primitive vectors.
 
 可以定义primitive cell：
 
@@ -12,12 +12,12 @@
 >- $(\Omega+\vec{R}_{1}) \cap(\Omega+\vec{R}_{2})=0,\ \forall \vec{R}_{1},\vec{R}_{2}\in \Lambda,\ \vec{R}_{1}\neq \vec{R}_{2}$.
 >- $\bigcup_{\vec{R}\in \Lambda}(\Omega+\vec{R})=\mathbb{R}^d$
 
-给定一个原子位置构成的点集，选择这些原子位置构成点集不一定形成一个Bravais lattice。
+给定一个原子位置构成的点集，选择这些原子位置构成点集不一定形成一个Bravais lattice。等会可以证明primitive vectors span出一个primitive cell。而primitive cell中原子的位置称为basis。
 ## Ex: Honey comb/graphene
 ![[Drawing 2026-01-25 16.48.54.excalidraw|center|300]]
 若取honey comb lattice的每个原子构成点集，可以证明这不是一个Bravais lattice。FTSOC，假设构成一个Bravais lattice。注意到Bravais lattice具有封闭性。但是$\vec{R}_{A}-\vec{R}_{B}$显然不指向任何原子，不在晶体中。
 
-因此需要放弃将一个原子作为一个晶格点构造Bravais lattice。选择六边形中心作为lattice point，如此构造基矢：
+因此需要放弃将一个原子作为一个晶格点构造Bravais lattice。选择六边形中心作为lattice point，如此构造primitive vectors：
 ![[Drawing 2026-01-25 22.42.18.excalidraw|center|350]]
 图中菱形构成一个primitive cell。
 
