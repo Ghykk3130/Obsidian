@@ -5,20 +5,41 @@
 >[!Note] Definition 1.1
 >Define the Bravais lattice as $\Lambda=\left\{  \sum_{j}n_{j}\vec{a}_{j}|n_{j}\in \mathbb{Z}  \right\}$, where $\{ \vec{a}_{j} \}$ forms a linearly independent basis of $\mathbb{R}^d$.
 
-给定一个原子位置构成的点集，选择这些原子位置构成点集不一定形成一个Bravais lattice。
-## Ex: Honey comb/graphene
-![[Drawing 2026-01-25 16.48.54.excalidraw|center|300]]
-若取honey comb lattice的每个原子构成点集，可以证明这不是一个Bravais lattice。FTSOC，假设构成一个Bravais lattice。注意到Bravais lattice具有封闭性。但是$\vec{R}_{A}-\vec{R}_{B}$显然不指向任何原子，不在晶体中。
-
-可以定义primitive cell为这样一个区域：
+可以定义primitive cell：
 
 >[!Note] Definition 1.2
 >Define $\Omega \subset \mathbb{R}^d$ as a primitive cell if:
 >- $(\Omega+\vec{R}_{1}) \cap(\Omega+\vec{R}_{2})=0,\ \forall \vec{R}_{1},\vec{R}_{2}\in \Lambda,\ \vec{R}_{1}\neq \vec{R}_{2}$.
 >- $\bigcup_{\vec{R}\in \Lambda}(\Omega+\vec{R})=\mathbb{R}^d$
 
-我们选好一个Bravais lattice
+给定一个原子位置构成的点集，选择这些原子位置构成点集不一定形成一个Bravais lattice。
+## Ex: Honey comb/graphene
+![[Drawing 2026-01-25 16.48.54.excalidraw|center|300]]
+若取honey comb lattice的每个原子构成点集，可以证明这不是一个Bravais lattice。FTSOC，假设构成一个Bravais lattice。注意到Bravais lattice具有封闭性。但是$\vec{R}_{A}-\vec{R}_{B}$显然不指向任何原子，不在晶体中。
 
+因此需要放弃将一个原子作为一个晶格点构造Bravais lattice。选择六边形中心作为lattice point，如此构造基矢：
+![[Drawing 2026-01-25 22.42.18.excalidraw|center|350]]
+图中菱形构成一个primitive cell。
+
+以同样的方式选取lattice point，可以围绕每个lattice point构造WS cell。构造出来的刚好就是上图的六边形，也可作为primitive cell。
+## Ex: Kagome lattice
+
+可以同样以六边形中心点作为lattice point，然后可以构造两种primitive cell：
+![[Drawing 2026-01-25 23.14.14.excalidraw|center|350]]
+![[Drawing 2026-01-25 23.20.32.excalidraw|center|350]]
+
+容易看出，基矢span出来的空间一定是primitive cell，但是primitive cell不一定是基矢span出来的空间。
+
+>[!Success] Proposition 1.1
+>Let $\{ \vec{a}_{i} \}$ be the basis of $\Lambda$. Then $\Omega=\left\{  \sum_{j}m_{j}\vec{a}_{j}|0\leq m_{j}\leq 1  \right\}$ is a primitive cell.
+>
+## Proof.
+
+令$\vec{R}=\sum_{j}n_{j}\vec{a}_{j}\in \Lambda$。显然$\Omega+\vec{R}=\left\{  \sum_{j}(m_{j}+n_{j})\vec{a}_{j}  \right\}$与$\Omega$ disjoint。
+
+任取$\vec{r}=\sum_{j}l_{j}\vec{a}_{j},\ l_{j}\in \mathbb{R}$。一定存在分解：$l_{j}=m_{j}+n_{j}\text{ for some }m_{j}\in[0,1],n_{j}\in \mathbb{Z}$。构造$\vec{R}=\sum_{j}n_{j}\vec{a}_{j}$，则显然$\vec{r}\in \Omega+\vec{R}$。所以$\bigcup_{\vec{R}\in \Lambda}(\Omega+\vec{R})=\mathbb{R}^d$。
+>[!Right]
+>$\blacksquare$
 # 2. 空间群，点群
 
 >[!Note] Definition 2.1
@@ -114,11 +135,11 @@ $$(W)=\begin{pmatrix}
 $$2\cos \theta\in \mathbb{Z}$$
 接下来：
 $$\begin{align}
- & 2\cos \theta=1 \implies \theta= \frac{\pi}{3}\implies \{ W \}\cong \mathbb{Z}_{6} \\
- & 2\cos \theta=2 \implies \theta= 0\implies \{ W \}\cong\mathbb{Z}_{1} \\
- & 2\cos \theta=-1 \implies \theta= \frac{2\pi}{3}\implies \{ W \}\cong\mathbb{Z}_{3} \\
- & 2\cos \theta=-2\implies \theta=\pi\implies \{ W \}\cong\mathbb{Z}_{2} \\
- & 2\cos \theta=0\implies \theta= \frac{\pi}{2}\implies \{ W \}\cong\mathbb{Z}_{4}
+ & 2\cos \theta=1 \implies \theta= \frac{\pi}{3}\implies \{ W \}\cong C_{6} \\
+ & 2\cos \theta=2 \implies \theta= 0\implies \{ W \}\cong C_{1} \\
+ & 2\cos \theta=-1 \implies \theta= \frac{2\pi}{3}\implies \{ W \}\cong C_{3} \\
+ & 2\cos \theta=-2\implies \theta=\pi\implies \{ W \}\cong C_{2} \\
+ & 2\cos \theta=0\implies \theta= \frac{\pi}{2}\implies \{ W \}\cong C_{4}
 \end{align}$$
 >[!Right]
 >$\blacksquare$
