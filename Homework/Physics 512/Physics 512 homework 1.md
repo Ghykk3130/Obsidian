@@ -179,9 +179,9 @@ V_{z}
 \end{pmatrix}$$
 Then it suffices to show:
 $$P^{-1}d^{(1)}P=R_{\hat{y}}(\beta)=\begin{pmatrix}
-\cos \beta & 0 & -\sin \beta \\
+\cos \beta & 0 & \sin \beta \\
 0 & 1 & 0 \\
-\sin \beta & 0 & \cos \beta
+-\sin \beta & 0 & \cos \beta
 \end{pmatrix}$$
 We have that:
 $$P^{-1}=\begin{pmatrix}
@@ -189,3 +189,16 @@ $$P^{-1}=\begin{pmatrix}
 \frac{i}{\sqrt{ 2 }} & 0  & \frac{i}{\sqrt{ 2 }} \\
 0 & 1 & 0
 \end{pmatrix}$$
+Then:
+$$\begin{align}
+P^{-1}d^{(1)}P & = P^{-1} \begin{pmatrix}
+- \frac{\cos \beta}{\sqrt{ 2 }} & - \frac{i}{\sqrt{ 2 }} & - \frac{\sin \beta}{\sqrt{ 2 }} \\
+-\sin \beta & 0 & \cos \beta \\
+\frac{\cos \beta}{\sqrt{ 2 }} & - \frac{i}{\sqrt{ 2 }} &  \frac{\sin \beta}{\sqrt{ 2 }}
+\end{pmatrix} \\
+ & = \begin{pmatrix}
+\cos \beta & 0 & \sin \beta \\
+0 & 1 & 0 \\
+-\sin \beta & 0 & \cos \beta
+\end{pmatrix}
+\end{align}$$
