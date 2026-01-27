@@ -112,3 +112,80 @@ $$\begin{align}
 \end{align}$$
 ## (b)
 
+Know that the ensemble is pure if and only if $\rho^{2}=\rho$. Then if $\rho(t_{0})=\ket{\psi(t_{0})}\bra{\psi(t_{0})}$ is pure, we have:
+$$\rho(t)=\mathscr{U}^{\dagger}(t,t_{0})\rho(t_{0})\mathscr{U}(t,t_{0})$$
+$$\begin{align}
+\rho^{2}(t) & = \mathscr{U}^{\dagger}(t,t_{0}) \rho(t_{0})\mathscr{U}(t,t_{0})\mathscr{U}^{\dagger}(t,t_{0})\rho(t_{0}) \mathscr{U}(t,t_{0}) \\
+ & = \mathscr{U}^{\dagger}(t,t_{0})\rho^{2}(t_{0})\mathscr{U}(t,t_{0}) \\
+ & = \mathscr{U}^{\dagger}(t,t_{0})\ket{\psi(t_{0})} \bra{\psi(t_{0})} \mathscr{U}(t,t_{0}) \\
+ & = \rho(t)
+\end{align}$$
+Then the ensemble is still pure.
+# Sakurai 3.29
+
+We have that:
+$$\begin{align}
+ & \tilde{V}_{q}^{(1)}=\sum_{q^{'}}d_{qq^{'}}^{(1)}(\beta)V_{q^{'}}^{(1)} \\
+\implies & \begin{pmatrix}
+\tilde{V}_{1}^{(1)} \\
+\tilde{V}_{0}^{(1)} \\
+\tilde{V}_{-1}^{(1)}
+\end{pmatrix}= \begin{pmatrix}
+
+\cos ^{2} \frac{\beta}{2} & -\sqrt{ 2 }\sin \frac{\beta}{2}\cos \frac{\beta}{2} & \sin ^{2} \frac{\beta}{2} \\
+\sqrt{ 2 }\sin \frac{\beta}{2}\cos \frac{\beta}{2} & \cos \beta & -\sqrt{ 2 }\sin \frac{\beta}{2}\cos \frac{\beta}{2} \\
+\sin ^{2} \frac{\beta}{2} & \sqrt{ 2 }\sin  \frac{\beta}{2}\cos \frac{\beta}{2} & \cos ^{2} \frac{\beta}{2}
+\end{pmatrix}\begin{pmatrix}
+V_{1}^{(1)} \\
+V_{0}^{(1)} \\
+V_{-1}^{(1)}
+\end{pmatrix}
+\end{align}$$
+Know that:
+$$\begin{pmatrix}
+V_{1}^{(1)} \\ V_{0 }^{(1)}\\
+
+V_{-1}^{(1)} 
+\end{pmatrix}=\begin{pmatrix}
+- \frac{1}{\sqrt{ 2 }} & - \frac{i}{\sqrt{ 2 }} & 0 \\
+0 & 0 & 1 \\
+\frac{1}{\sqrt{ 2 }} & - \frac{i}{\sqrt{ 2 }} & 0
+\end{pmatrix}\begin{pmatrix}
+V_{x} \\
+V_{y} \\
+V_{z}
+\end{pmatrix}=P \begin{pmatrix}
+V_{x} \\
+V_{y} \\
+V_{z}
+\end{pmatrix}$$
+Then:
+$$\begin{pmatrix}
+\tilde{V}_{x} \\
+\tilde{V}_{y} \\
+\tilde{V}_{z}
+\end{pmatrix}=P^{-1}\begin{pmatrix}
+\tilde{V}_{1}^{(1)} \\
+\tilde{V}_{0}^{(1)} \\
+V_{-1}^{(1)}
+\end{pmatrix}=P^{-1}d^{(1)}\begin{pmatrix}
+V_{1}^{(1)} \\
+V_{0}^{(1)} \\
+V_{-1}^{(1)}
+\end{pmatrix}=P^{-1}d^{(1)}P \begin{pmatrix}
+V_{x} \\
+V_{y} \\
+V_{z}
+\end{pmatrix}$$
+Then it suffices to show:
+$$P^{-1}d^{(1)}P=R_{\hat{y}}(\beta)=\begin{pmatrix}
+\cos \beta & 0 & -\sin \beta \\
+0 & 1 & 0 \\
+\sin \beta & 0 & \cos \beta
+\end{pmatrix}$$
+We have that:
+$$P^{-1}=\begin{pmatrix}
+- \frac{1}{\sqrt{ 2 }} & 0 &  \frac{1}{\sqrt{ 2 }} \\
+\frac{i}{\sqrt{ 2 }} & 0  & \frac{i}{\sqrt{ 2 }} \\
+0 & 1 & 0
+\end{pmatrix}$$
