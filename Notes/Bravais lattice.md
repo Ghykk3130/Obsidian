@@ -27,6 +27,8 @@
 可以同样以六边形中心点作为lattice point，然后可以构造两种primitive cell：
 ![[Drawing 2026-01-25 23.14.14.excalidraw|center|350]]
 ![[Drawing 2026-01-25 23.20.32.excalidraw|center|350]]
+还可以构造WS cell：
+![[Pasted image 20260127173329.png|center|500]]
 
 容易看出，基矢span出来的空间一定是primitive cell，但是primitive cell不一定是基矢span出来的空间。
 ## Ex: closest packing

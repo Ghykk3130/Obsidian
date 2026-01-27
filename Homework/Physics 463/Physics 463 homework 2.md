@@ -1,7 +1,7 @@
 # 1.
 
 The image I generated:
-![[Pasted image 20260125234022.png|center|500]]
+![[Pasted image 20260127172146.png|center|500]]
 The WS primitive unit cell is marked by blue in the picture. The Rhombic primitive unit cell is marked by red in the picture.
 
 The primitive vectors I used are: 
@@ -10,7 +10,7 @@ The bases I used are:
 $$\vec{b}_{1}=(1,0),\ \vec{b}_{2}= \left( \frac{1}{2}, \frac{\sqrt{ 3 }}{2} \right),\ \vec{b}_{3}=\left( \frac{3}{2}, \frac{\sqrt{ 3 }}{2} \right)$$
 # 2.
 
-![[Pasted image 20260125235435.png|center|400]]
+![[Pasted image 20260125235435.png|center|300]]
 We have:
 $$\begin{align}
 \vec{a}_{1}= \frac{a}{2}(\hat{x}+\hat{y}-\hat{z}),\ \vec{a}_{2}= \frac{a}{2}(\hat{x}-\hat{y}+\hat{z})
@@ -23,20 +23,14 @@ $$\begin{align}
 \end{align}$$
 # 3.
 
-Consider an hpc lattice. 
+Consider an hpc lattice. Between its first and second layer, the structure is as follow:
 ![[Drawing 2026-01-26 00.57.47.excalidraw|center|300]]
-We have that $c=2h$. To find the height of the tetrahedral, we consider its volume calculated by subtracting the volumes of the four corners of a cube:
-![[Drawing 2026-01-26 01.02.08.excalidraw|center|300]]
+Since the hpc structure repeats itself every two layers, we have that $c=2h$. It's easy to compute $h$:
 $$\begin{align}
-V & = \left( \frac{\sqrt{ 2 }}{2}a \right)^{3}-4 \cdot \left( \frac{\sqrt{ 2 }}{2}a \cdot \frac{\sqrt{ 2 }}{2}a \cdot \frac{1}{2}\right)\cdot \frac{\sqrt{ 2 }}{2}a \cdot \frac{1}{3} \\
- & = \frac{\sqrt{ 2 }}{12}a^{3}
+h & = a^{2}- \left( \frac{a}{\sqrt{ 3 }} \right)^{2}= \frac{\sqrt{ 2 }}{\sqrt{ 3 }}a
 \end{align}$$
-On the other hand:
-$$V= \frac{\sqrt{ 3 }}{2}a \cdot a \cdot \frac{1}{2} \cdot h \cdot \frac{1}{3}$$
-Then we can solve that:
-$$h= \frac{\sqrt{ 2 }}{\sqrt{ 3 }}a$$
 Then:
-$$\frac{c}{a}= \left( \frac{8}{3} \right)^{1/2}$$
+$$\frac{c}{a}= \frac{2 \frac{\sqrt{ 2 }}{\sqrt{ 3 }}a}{a}=\left( \frac{8}{3} \right)^{1/2}$$
 # 4.
 ## (a).
 It is a Bravais lattice. The primitive vectors are:
