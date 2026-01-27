@@ -202,3 +202,36 @@ P^{-1}d^{(1)}P & = P^{-1} \begin{pmatrix}
 -\sin \beta & 0 & \cos \beta
 \end{pmatrix}
 \end{align}$$
+# Sakurai 3.32
+## (a)
+
+By looking up the spherical harmonics table and doing the substitution, I have:
+$$\begin{align}
+ & T^{(2)}_{0}= \frac{1}{2}(3z^{2}-r^{2}) \\
+ & T^{(2)}_{-1}= \sqrt{ \frac{3}{2} }z(x-iy) \\
+ & T^{(2)}_{-2}= \sqrt{ \frac{3}{8} }(x-iy)^{2} \\
+ & T^{(2)}_{1}=- \sqrt{ \frac{3}{2} }z(x+{iy} 
+) \\ & 
+T^{(2)}_{2}= \sqrt{ \frac{3}{8} }(x+{iy}^{})^{2} 
+\end{align}$$
+Then it's easy to solve that:
+$$xy= \frac{i}{\sqrt{ 6 }}(T^{(2)}_{-2}-T^{(2)}_{2}),\ xz= \frac{1}{\sqrt{ 6 }}(T^{(2)}_{-1}-T^{(2)}_{1}),\ x^{2}-y^{2}= \frac{2}{\sqrt{ 6 }}T^{(2)}_{-2}+ \frac{2}{\sqrt{ 6 }}T^{(2)}_{2}$$
+## (b)
+
+We want:
+$$\begin{align}
+e\langle \alpha,j,m^{'}|(x^{2}-y^{2})\ket{\alpha,j,m=j}  & = \frac{2}{\sqrt{ 6 }}e[\bra{\alpha,j,m^{'}}T^{(2)}_{-2}\ket{\alpha,j,m=j} + \bra{\alpha,j,m^{'}} T^{(2)}_{2} \ket{\alpha,j,m=j}  ] \\
+ & = \frac{2}{\sqrt{ 6 }}eC[\bra{m=j,-2} j,m^{'}\rangle+ \bra{m=j,2} j,m^{'}\rangle] \\
+ 
+\end{align}$$
+where $C$ is a constant independent of $m,m^{'}$ by Wigner-Eckart theorem.
+
+We have that:
+$$\begin{align}
+Q & = e\bra{\alpha,j,m=j} (3z^{2}-r^{2})\ket{\alpha,j,m=j}  \\
+ & = 2e \bra{\alpha,j,m=j} T^{(2)}_{0}\ket{\alpha,j,m=j}  \\
+ & = 2eC\bra{m=j,0} j,m=j\rangle \\
+\end{align}$$
+Then:
+$$e\bra{\alpha,j,m^{'}} (x^{2}-y^{2})\ket{\alpha,j,m=j} = \frac{Q}{\sqrt{ 6 }\bra{m=j,0} j,m=j\rangle}[\bra{m=j,-2} j,m^{'}\rangle+\bra{m=j,2} j,m^{'}\rangle]$$
+
