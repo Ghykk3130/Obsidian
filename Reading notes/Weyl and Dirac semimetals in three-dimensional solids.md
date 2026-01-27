@@ -56,3 +56,22 @@ $$H=-v_{F}\vec{\sigma}\cdot \vec{k}$$
 $$H=v_{F}\tau_{x}\vec{\sigma}\cdot \vec{k}+m\tau_{z}+b\sigma_{z}+ b^{'}\tau_{z}\sigma_{x}$$
 第一项为Weyl动能。在系统完全处于两个orbital中的一个是不存在。第二项是能隙，假设能隙大小为$2m$。第三项是说两个obital都施加$z$方向磁场的偶极项。第四项是说两个orbital施加$x$方向相反的磁场的偶极项。
 
+可以计算当横向磁场$b^{'}=0$时，系统具有四条能带：
+$$\epsilon_{s\mu}=s\sqrt{ m^{2}+b^{2}+v^{2}k^{2}+\mu_{2}b\sqrt{ v^{2}k_{z}^{2}+m^{2} } },\ s=\pm 1,\mu=\pm 1$$
+代码如下：
+```Mathematica
+sx = {{0, 1}, {1, 0}};
+sy = {{0, -I}, {I, 0}};
+sz = {{1, 0}, {0, -1}};
+s0 = {{1, 0}, {0, 1}};
+
+H11 = m s0 + b sz;
+H12 = v (kx sx + ky sy + kz sz);
+H21 = H12;
+H22 = -m s0 + b sz;
+
+H = ArrayFlatten[{{H11, H12}, {H21, H22}}];
+Eigenvalues[H]
+```
+
+

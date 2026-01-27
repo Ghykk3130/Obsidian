@@ -359,12 +359,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Notes/Bravais lattice.md",
+                "file": "Reading notes/Weyl and Dirac semimetals in three-dimensional solids.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Bravais lattice"
+              "title": "Weyl and Dirac semimetals in three-dimensional solids"
             }
           }
         ],
@@ -439,7 +439,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 200,
+    "collapsed": true
   },
   "right": {
     "id": "9003d078f8dbc4ed",
@@ -539,6 +540,9 @@
   },
   "active": "7296791d37bcd355",
   "lastOpenFiles": [
+    "Reading notes/Weyl semimetal in a topological insulator multilayer.md",
+    "Reading notes/Weyl and Dirac semimetals in three-dimensional solids.md",
+    "Notes/Bravais lattice.md",
     "Pictures/Pasted image 20260127173329.png",
     "Homework/Physics 463/Physics 463 homework 2.md",
     "Pictures/Pasted image 20260127172146.png",
@@ -556,7 +560,6 @@
     "Notes/Fine Structure.md",
     "Notes/Fermi-Dirac statistics 与 Fermi gas.md",
     "Notes/Clebsch-Gordan系数.md",
-    "Notes/Bravais lattice.md",
     "Notes/Bose-Einstein statistics与BEC.md",
     "Notes/Baker-Campbell-Hausdorff Formula.md",
     "Notes/Graphene中的Dirac cone.md",
@@ -565,7 +568,6 @@
     "Notes/球坐标系下的位置本征矢.md",
     "Notes/最大功.md",
     "Notes/张量算子（1）.md",
-    "Notes/张量分析.md",
     "Homework/Physics 512",
     "Pictures/Pasted image 20260125235435.png",
     "Pictures/Pasted image 20260125234022.png",
@@ -582,7 +584,6 @@
     "Homework/Physics 510",
     "Homework/Physics 402",
     "Notes",
-    "Pictures/Pasted image 20260113144638.png",
     "AB效应",
     "Pictures/Spherical_harmonics.pdf"
   ]
