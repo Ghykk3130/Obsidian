@@ -76,3 +76,7 @@ These results are expected because the Lagrangian description $\vec{x}(\vec{\alp
 
 To express $c$ in terms of $x,y,t$, we do:
 $$c=\beta x^{2}ye^{-\alpha t}=\beta(Xe^{\alpha t})^{2}Ye^{-\alpha t}e^{-\alpha t}=\beta X^{2}Y$$
+# Acheson 1.8
+
+Let $\vec{\gamma}=\vec{\gamma}(s)$ be a streamline. Then:
+$$\frac{d \vec{\gamma}}{ds}= \frac{u_{0}}{\sqrt{ u_{0}^{2}+k^{2}t^{2} }}\hat{x}+ \frac{kt}{\sqrt{ u_{0}^{2}+k^{2}t^{2} }}\hat{y}\implies \vec{\gamma}=\left( \frac{u_{0}s}{\sqrt{ u_{0}^{2}+k^{2}t^{2} }}, \frac{kts}{\sqrt{ u_{0}^{2}+k^{2}t^{2} }},0 \right)$$

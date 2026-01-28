@@ -453,7 +453,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 200,
+    "collapsed": true
   },
   "right": {
     "id": "9003d078f8dbc4ed",
@@ -553,6 +554,8 @@
   },
   "active": "a0528f1f8f8374bb",
   "lastOpenFiles": [
+    "Notes/Ideal flow.md",
+    "Homework/Math 654/Homework 1.md",
     "Notes/Untitled.md",
     "Pictures/Pasted image 20260128134623.png",
     "Notes/Untitled 1.md",
@@ -581,7 +584,6 @@
     "Notes/Graphene中的Dirac cone.md",
     "Notes/微分几何.md",
     "Notes/球谐函数与旋转表示.md",
-    "Notes/球坐标系下的位置本征矢.md",
     "Homework/Physics 512",
     "Pictures/Pasted image 20260125235435.png",
     "Pictures/Pasted image 20260125234022.png",
