@@ -74,4 +74,9 @@ H = ArrayFlatten[{{H11, H12}, {H21, H22}}];
 Eigenvalues[H]
 ```
 
+令$k_{x}=0$，可以作$\epsilon_{s\mu}(k_{y},k_{z})$：
+![[Pasted image 20260127210056.png|center|600]]
+最左侧：$m=0,b=0$。四条能带在原点重合，称为Dirac node。 中：$m>b$。只是一个普通的semiconductor。右：$m<b$。最右显然产生了两个Weyl nodes。称为Zeeman splitting。
+
+
 
