@@ -79,4 +79,5 @@ $$c=\beta x^{2}ye^{-\alpha t}=\beta(Xe^{\alpha t})^{2}Ye^{-\alpha t}e^{-\alpha t
 # Acheson 1.8
 
 Let $\vec{\gamma}=\vec{\gamma}(s)$ be a streamline. Then:
-$$\frac{d \vec{\gamma}}{ds}= \frac{u_{0}}{\sqrt{ u_{0}^{2}+k^{2}t^{2} }}\hat{x}+ \frac{kt}{\sqrt{ u_{0}^{2}+k^{2}t^{2} }}\hat{y}\implies \vec{\gamma}=\left( \frac{u_{0}s}{\sqrt{ u_{0}^{2}+k^{2}t^{2} }}, \frac{kts}{\sqrt{ u_{0}^{2}+k^{2}t^{2} }},0 \right)$$
+$$\frac{d \vec{\gamma}}{ds}= \frac{u_{0}}{\sqrt{ u_{0}^{2}+k^{2}t^{2} }}\hat{x}+ \frac{kt}{\sqrt{ u_{0}^{2}+k^{2}t^{2} }}\hat{y}\implies \vec{\gamma}=\left( \frac{u_{0}s}{\sqrt{ u_{0}^{2}+k^{2}t^{2} }}+x_{0}, \frac{kts}{\sqrt{ u_{0}^{2}+k^{2}t^{2} }}+y_{0},z_{0} \right)$$
+where $(x_{0},y_{0},z_{0})$ depends on the initial condition. 
