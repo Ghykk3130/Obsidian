@@ -387,12 +387,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Homework/Math 654/Homework 1.md",
+                "file": "Notes/Untitled 2.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Homework 1"
+              "title": "Untitled 2"
             }
           }
         ],
@@ -467,8 +467,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200,
-    "collapsed": true
+    "width": 200
   },
   "right": {
     "id": "9003d078f8dbc4ed",
@@ -568,17 +567,21 @@
   },
   "active": "d434cbb551dcdccb",
   "lastOpenFiles": [
+    "Notes/Untitled 1.md",
+    "Notes/Untitled.md",
+    "Notes/Untitled 3.md",
+    "Notes/Untitled 2.md",
+    "Notes/Untitled 5.md",
+    "Notes/Viscous flow.md",
+    "Homework/Math 654/Homework 1.md",
+    "Pictures/Pasted image 20260128153403.png",
+    "Pictures/Pasted image 20260128153258.png",
     "Notes/流体的描述.md",
     "Notes/Ideal flow.md",
     "Reading notes/Weyl and Dirac semimetals in three-dimensional solids.md",
     "Reading notes/Weyl semimetal in a topological insulator multilayer.md",
-    "Homework/Math 654/Homework 1.md",
-    "Notes/Untitled.md",
     "Pictures/Pasted image 20260128134623.png",
-    "Notes/Untitled 1.md",
-    "Notes/Untitled 2.md",
     "Notes/Untitled 4.md",
-    "Notes/Untitled 5.md",
     "Notes/离散对称性.md",
     "Notes/Clebsch-Gordan系数.md",
     "Pictures/Pasted image 20260127210056.png",
@@ -586,7 +589,6 @@
     "Pictures/Pasted image 20260127173329.png",
     "Homework/Physics 463/Physics 463 homework 2.md",
     "Pictures/Pasted image 20260127172146.png",
-    "Notes/Untitled 3.md",
     "Homework/Physics 512/Physics 512 homework 1.md",
     "Notes/张量算子（2）.md",
     "Excalidraw/Drawing 2026-01-26 23.40.17.excalidraw.md",
@@ -597,7 +599,6 @@
     "Notes/Bose-Einstein statistics与BEC.md",
     "Notes/Baker-Campbell-Hausdorff Formula.md",
     "Notes/Graphene中的Dirac cone.md",
-    "Notes/微分几何.md",
     "Homework/Physics 512",
     "Pictures/Pasted image 20260125235435.png",
     "Pictures/Pasted image 20260125234022.png",
@@ -605,8 +606,6 @@
     "Pictures/Pasted image 20260120002933.png",
     "Notes",
     "Pictures/Pasted image 20260117161122.png",
-    "Pictures/Pasted image 20260117160547.png",
-    "Pictures/Pasted image 20260117160513.png",
     "Homework/Physics 463",
     "Homework/Physics 511",
     "Homework/Physics 510",

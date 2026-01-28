@@ -80,4 +80,14 @@ $$c=\beta x^{2}ye^{-\alpha t}=\beta(Xe^{\alpha t})^{2}Ye^{-\alpha t}e^{-\alpha t
 
 Let $\vec{\gamma}=\vec{\gamma}(s)$ be a streamline. Then:
 $$\frac{d \vec{\gamma}}{ds}= \frac{u_{0}}{\sqrt{ u_{0}^{2}+k^{2}t^{2} }}\hat{x}+ \frac{kt}{\sqrt{ u_{0}^{2}+k^{2}t^{2} }}\hat{y}\implies \vec{\gamma}=\left( \frac{u_{0}s}{\sqrt{ u_{0}^{2}+k^{2}t^{2} }}+x_{0}, \frac{kts}{\sqrt{ u_{0}^{2}+k^{2}t^{2} }}+y_{0},z_{0} \right)$$
-where $(x_{0},y_{0},z_{0})$ depends on the initial condition. 
+where $(x_{0},y_{0},z_{0})$ depends on the initial condition. Since:
+$$\frac{\frac{u_{0}s}{\sqrt{ u_{0}^{2}+k^{2}t^{2} }}}{\frac{kts}{\sqrt{ u_{0}^{2}+k^{2}t^{2} }}}= \frac{u_{0}}{kt}\text{ is a constant independent of }s$$
+Then $\vec{\gamma}(s)$ describes a straight line. Several representative streamlines are as follows:
+![[Pasted image 20260128153258.png|center|500]]
+![[Pasted image 20260128153403.png|center|500]]
+To solve the path of the particles, we have:
+$$\frac{dx}{dt}=u_{0},\ \frac{dy}{dt}=kt,\ \frac{dz}{dt}=0$$
+Then:
+$$x=u_{0}t+C_{1},\ y= \frac{1}{2}kt^{2}+C_{2},\ z=C_{3}\implies y-C_{2}= \frac{k}{2u_{0}^{2}}(x-C_{1})^{2}$$
+The path is clearly a parabolic curve in a plane parallel to the xy plane.
+
