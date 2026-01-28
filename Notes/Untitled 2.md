@@ -62,6 +62,8 @@ EE project核心是给AMO敲门砖。
 
 
 
+Unfortunately, decided to withdraw from the group. Main reason: misalignment of scheduling between my availability and availability of graduate students in the group. Hard to push things forward, get effective feedback, lose passion. Junior, feel sense of urgency as the application approaching. After some thoughts, decide to return for continuity.
+
 
 
 
