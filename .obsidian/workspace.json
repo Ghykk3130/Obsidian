@@ -429,12 +429,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Notes/Ideal flow.md",
+                "file": "Notes/流体的基本方程.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Ideal flow"
+              "title": "流体的基本方程"
             }
           }
         ],
@@ -505,7 +505,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 200,
+    "collapsed": true
   },
   "right": {
     "id": "9003d078f8dbc4ed",
@@ -605,10 +606,10 @@
   },
   "active": "bb67f902f44ecc35",
   "lastOpenFiles": [
+    "Notes/Ideal flow.md",
     "Notes/流体的基本方程.md",
     "Notes/流体的描述.md",
     "Notes/流体的动力学与热力学函数.md",
-    "Notes/Ideal flow.md",
     "Homework/Math 654/Homework 1.md",
     "Notes/Clebsch-Gordan系数.md",
     "Notes/Baker-Campbell-Hausdorff Formula.md",
