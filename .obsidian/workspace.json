@@ -491,7 +491,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 200,
+    "collapsed": true
   },
   "right": {
     "id": "9003d078f8dbc4ed",
@@ -591,8 +592,9 @@
   },
   "active": "4c2dfa5a5a0caf6f",
   "lastOpenFiles": [
-    "Notes/Clebsch-Gordan系数.md",
+    "Homework/Math 654/Homework 1.md",
     "Notes/流体的动力学与热力学函数.md",
+    "Notes/Clebsch-Gordan系数.md",
     "Notes/Baker-Campbell-Hausdorff Formula.md",
     "Notes/Laplace's method and Stirling approximation.md",
     "Notes/Fourier transform.md",
@@ -610,7 +612,6 @@
     "Notes/Untitled 3.md",
     "Notes/Untitled 5.md",
     "Notes/Viscous flow.md",
-    "Homework/Math 654/Homework 1.md",
     "Pictures/Pasted image 20260128153403.png",
     "Pictures/Pasted image 20260128153258.png",
     "Notes/流体的描述.md",

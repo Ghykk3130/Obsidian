@@ -78,11 +78,11 @@ To express $c$ in terms of $x,y,t$, we do:
 $$c=\beta x^{2}ye^{-\alpha t}=\beta(Xe^{\alpha t})^{2}Ye^{-\alpha t}e^{-\alpha t}=\beta X^{2}Y$$
 # Acheson 1.8
 
-Let $\vec{\gamma}=\vec{\gamma}(s)$ be a streamline. Then:
-$$\frac{d \vec{\gamma}}{ds}= \frac{u_{0}}{\sqrt{ u_{0}^{2}+k^{2}t^{2} }}\hat{x}+ \frac{kt}{\sqrt{ u_{0}^{2}+k^{2}t^{2} }}\hat{y}\implies \vec{\gamma}=\left( \frac{u_{0}s}{\sqrt{ u_{0}^{2}+k^{2}t^{2} }}+x_{0}, \frac{kts}{\sqrt{ u_{0}^{2}+k^{2}t^{2} }}+y_{0},z_{0} \right)$$
-where $(x_{0},y_{0},z_{0})$ depends on the initial condition. Since:
-$$\frac{\frac{u_{0}s}{\sqrt{ u_{0}^{2}+k^{2}t^{2} }}}{\frac{kts}{\sqrt{ u_{0}^{2}+k^{2}t^{2} }}}= \frac{u_{0}}{kt}\text{ is a constant independent of }s$$
-Then $\vec{\gamma}(s)$ describes a straight line. Several representative streamlines are as follows:
+Let ${\gamma}\subset \mathbb{R}^{3}$ be a streamline. Then the constraint along $\gamma$ is:
+$$\frac{dx}{u_{0}}= \frac{dy}{kt}$$
+and in particular, $dz=0$. We can solve:
+$$y=\frac{kt}{u_{0}}x+y_{0},\ z=z_{0}$$
+Then the streamlines are given by $\left( x, \frac{kt}{u_{0}}x+y_{0},z_{0} \right)$, where $y_{0},z_{0}$ depends on the initial condition. This clealy describes a straight line. Several representative streamlines are as follows:
 ![[Pasted image 20260128153258.png|center|500]]
 ![[Pasted image 20260128153403.png|center|500]]
 To solve the path of the particles, we have:
