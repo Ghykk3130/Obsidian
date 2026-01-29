@@ -102,3 +102,18 @@ $$\tau_{z}^{\dagger}\mathbf{k}\tau_{z}=-\mathbf{k}$$
 $$\implies\tau_{z}^{\dagger}H(\mathbf{k})\tau_{z}=H(-\mathbf{k})$$
 可由tight-binding得到：
 $$H=t_{z}(2-\cos k_{x}a-\cos k_{y}a+\gamma-\cos k_{z}a)\tau_{z}+t_{x}(\sin k_{x}a)\tau_{x}+t_{y}(\sin k_{y}a)\tau_{y}$$
+注意到，在Hamiltonian零点附近作一阶展开，可以得到：
+$$H=t_{z}\tau_{z}+t_{x}adk_{x}\tau_{x}+t_{y}adk_{y}\tau_{y}$$
+这正是$v_{x}=t_{x}a,v_{y}=t_{y}a,v_{z}=t_{z}$
+
+
+>[!Quote] Note: TRIM 点
+>在FBZ的$S^3$topology下，考虑$-\mathbf{k}=\mathbf{k}$的点，即$-\mathbf{k}=\mathbf{k}+\mathbf{G}$的点，称为TRIM(time-reversal-inverted-momentum)点。
+>
+>例如simple cubic lattice，其reciprocal lattice仍为simple cubic lattice。就选择八个各点构成的最小立方体为FBZ。则$-\mathbf{k}=\mathbf{k}+\mathbf{G}\implies 2\mathbf{k}=G$。那么$\mathbf{k}$可以取原点$\Gamma$，靠近原点的三条边的中心点$X,Y,Z$，靠近原点的三个面的中心点$M$，体对角线中心点$R$。
+>![[Drawing 2026-01-28 23.16.15.excalidraw|center|350]]
+
+注意到simple cubic lattice的TRIM点坐标分量要么是$\frac{\pi}{a}$，要么是$0$。所以在TRIM点上，Hamiltonian reduce为：
+$$H=t_{z}(2-\cos k_{x}a-\cos k_{y}a+\gamma-\cos k_{z}a)\tau_{z}$$
+注意到，在$\Gamma$点$2-\cos k_{x}a-\cos k_{y}a+\gamma-\cos k_{z}a$是最容易负的，在$R$点$2-\cos k_{x}a-\cos k_{y}a+\gamma-\cos k_{z}a$是最容易正的。
+
