@@ -100,5 +100,13 @@ $$\tau_{z} \begin{pmatrix}
 所以：
 $$\tau_{z}^{\dagger}\mathbf{k}\tau_{z}=-\mathbf{k}$$
 $$\implies\tau_{z}^{\dagger}H(\mathbf{k})\tau_{z}=H(-\mathbf{k})$$
+固定$\mathbf{k}$，Hilbert空间显然是二维的。那么令：
+$$H(\mathbf{k})=d_{0}(\mathbf{k})+d_{x}(\mathbf{k})\tau_{x}+d_{y}(\mathbf{k})\tau_{y}+d_{z}(\mathbf{k})\tau_{z}$$
+则：
+$$\tau_{z}^{\dagger}H(\mathbf{k})\tau_{z}=d_{0}(\mathbf{k})-d_{x}(\mathbf{k})\tau_{x}-d_{y}(\mathbf{k})\tau_{y}+d_{z}(\mathbf{k})\tau_{z}=H(-\mathbf{k})$$
+由Pauli matrix的独立性可知$d_{x}(\mathbf{k}),d_{y}(\mathbf{k})$为奇，$d_{x}(\mathbf{k}),d_{z}(\mathbf{k})$为偶。不妨设：
+$$d_{x}(\mathbf{k})=\sin(ak_{x}),\ d_{y}(\mathbf{k})=\sin(ak_{y}),\ d_{z}(\mathbf{k})=\cos(ak_{z})$$
+
+
 
 
