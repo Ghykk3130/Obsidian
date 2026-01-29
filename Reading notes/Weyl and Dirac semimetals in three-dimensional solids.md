@@ -77,6 +77,28 @@ Eigenvalues[H]
 令$k_{x}=0$，可以作$\epsilon_{s\mu}(k_{y},k_{z})$：
 ![[Pasted image 20260127210056.png|center|600]]
 最左侧：$m=0,b=0$。四条能带在原点重合，称为Dirac node。 中：$m>b$。只是一个普通的semiconductor。右：$m<b$。最右显然产生了两个Weyl nodes。称为Zeeman splitting。
+# 2. WSM with broken $\tau$ symmetry
 
+考虑一个simple cubic lattice。每个点上有两条orbital，为$s,p$轨道。则Hilbert空间是二维。
+
+注意到：
+$$\tau_{z} \begin{pmatrix}
+1 \\
+0 
+\end{pmatrix}= \begin{pmatrix}
+1 \\
+0
+\end{pmatrix},\ \tau_{z}\begin{pmatrix}
+0 \\
+1 
+\end{pmatrix}=- \begin{pmatrix}
+0 \\
+1
+\end{pmatrix}$$
+因为$s$是偶宇称，$p$是奇宇称，所以$\tau_{z}$为宇称算符在$s,p$基下的表示。
+
+所以：
+$$\tau_{z}^{\dagger}\mathbf{k}\tau_{z}=-\mathbf{k}$$
+$$\implies\tau_{z}^{\dagger}H(\mathbf{k})\tau_{z}=H(-\mathbf{k})$$
 
 
