@@ -79,7 +79,7 @@ Eigenvalues[H]
 最左侧：$m=0,b=0$。四条能带在原点重合，称为Dirac node。 中：$m>b$。只是一个普通的semiconductor。右：$m<b$。最右显然产生了两个Weyl nodes。称为Zeeman splitting。
 # 2. WSM with broken $\tau$ symmetry
 
-考虑一个simple cubic lattice。每个点上有两条orbital，为$s,p$轨道。则Hilbert空间是二维。
+考虑一个simple cubic lattice。每个点上有两条orbital，为$s,p$轨道。由$s$轨道的wannier态组合出一个Bloch态，由$p$轨道的wannier态组合出一个Bloch态。则固定$\mathbf{k}$后Hilbert空间是二维。
 
 注意到：
 $$\tau_{z} \begin{pmatrix}
@@ -100,13 +100,5 @@ $$\tau_{z} \begin{pmatrix}
 所以：
 $$\tau_{z}^{\dagger}\mathbf{k}\tau_{z}=-\mathbf{k}$$
 $$\implies\tau_{z}^{\dagger}H(\mathbf{k})\tau_{z}=H(-\mathbf{k})$$
-固定$\mathbf{k}$，Hilbert空间显然是二维的。那么令：
-$$H(\mathbf{k})=d_{0}(\mathbf{k})+d_{x}(\mathbf{k})\tau_{x}+d_{y}(\mathbf{k})\tau_{y}+d_{z}(\mathbf{k})\tau_{z}$$
-则：
-$$\tau_{z}^{\dagger}H(\mathbf{k})\tau_{z}=d_{0}(\mathbf{k})-d_{x}(\mathbf{k})\tau_{x}-d_{y}(\mathbf{k})\tau_{y}+d_{z}(\mathbf{k})\tau_{z}=H(-\mathbf{k})$$
-由Pauli matrix的独立性可知$d_{x}(\mathbf{k}),d_{y}(\mathbf{k})$为奇，$d_{x}(\mathbf{k}),d_{z}(\mathbf{k})$为偶。不妨设：
-$$d_{x}(\mathbf{k})=\sin(ak_{x}),\ d_{y}(\mathbf{k})=\sin(ak_{y}),\ d_{z}(\mathbf{k})=\cos(ak_{z})$$
-
-
-
-
+可由tight-binding得到：
+$$H=t_{z}(2-\cos k_{x}a-\cos k_{y}a+\gamma-\cos k_{z}a)\tau_{z}+t_{x}(\sin k_{x}a)\tau_{x}+t_{y}(\sin k_{y}a)\tau_{y}$$
