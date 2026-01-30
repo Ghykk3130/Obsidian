@@ -73,3 +73,4 @@ $$\begin{align}
 T_{ij} & =-p\delta_{ij}+a\left( \frac{\partial u_{i}}{\partial r_{j}}+ \frac{\partial u_{j}}{\partial r_{i}} \right)+b\delta_{ij} \frac{\partial u_{k}}{\partial r_{k}} \\
  & =-p\delta_{ij}+\mu\left( \frac{\partial u_{i}}{\partial r_{j}}+\frac{\partial u_{j}}{\partial r_{i}} - \frac{2}{3}\delta_{ij} \frac{\partial u_{k}}{\partial r_{k}} \right)+ \zeta \delta_{ij} \frac{\partial u_{k}}{\partial r_{k}}
 \end{align}$$
+其中，$\frac{\partial u_{i}}{\partial r_{j}}+ \frac{\partial u_{j}}{\partial r_{i}}- \frac{2}{3}\delta_{ij} \frac{\partial u_{k}}{\partial r_{k}}$无迹。
