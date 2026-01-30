@@ -141,12 +141,14 @@ Plans for measurement:
 	- Zero field: to 2K.  Then 0.1 T field. warm up to 340K. Possible transition at high temperature. 5K per minute.
 	- Field cool:?
 - Measure $m$ versus $H$:
+	- Field scan around the peak temperature in the H-T measurement. Probably use low field. To find S-shape, the field should be low according to the paper.
+	- Then do a m-H scan to follow one of the previous Nernst signal.
 	- 15K: -14 to 14
 	- 30K: 14 to -14
 	- 60K: -14 to 14
 	- 90K: double. 14 to -14 broken in the middle. -14 to 14 small defect in the middle.
 	- 120K: 14 to -14
 	- Temperatures followed should follow the normal order. Still need double measurement for broken data, checked with the lab notebook
-- Then do data repair measurement.
+- Then do Nernst repair measurement, plus the temperature we just found.
 - Then consider either $m$ versus $T$ under low field, or zoom in measurement of $S$ versus $H$.
  
