@@ -51,20 +51,6 @@ EE project核心是给AMO敲门砖。
 和luli谈，问东西，学自己不会的，然后分析可不可能，然后再回去根老板说。
 
 
-# 退组
 
-强调组里大家时间不合适。我luli那里有有趣的工作，hui组里人又没有需要。
-
-时间不多，想尽力集中在一个有搞头的，把一个做好。所以集中在luli组了。
-
-要让hui理解我的行为。如何消除误会：刚进组那段时间双方时间不合适。应对组里其他人恶评的辩解：大三急了。
-
-
-
-
-Unfortunately, decided to withdraw from the group. Main reason: misalignment of scheduling between my availability and availability of graduate students in the group. Hard to push things forward, get effective feedback, lose passion. Junior, feel sense of urgency as the application approaching. After some thoughts, decide to return for continuity.
-
-
-
-
+提前规划measurement。和luli谈。
 

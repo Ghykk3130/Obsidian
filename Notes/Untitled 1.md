@@ -137,7 +137,7 @@ Plans for measurement:
 - Ask Dechen for details of $m$ versus T zero-field cool and field cool, and the necessity of doing both.
 - Ask Dechen how to obtain better data for zoom in Nernst measurement. Can I lower the scanning rate to obtain more data points?
 - Measure $m$ versus $T$:
-	- Do field cool and zero-field cool
+	- Do field cool and zero-field cool. Field cool first.
 	- Zero field: to 2K.  Then 0.1 T field. warm up to 340K. Possible transition at high temperature. 5K per minute.
 	- Field cool:?
 - Measure $m$ versus $H$:
