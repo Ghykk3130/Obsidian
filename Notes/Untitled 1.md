@@ -123,7 +123,7 @@ Dirac Fermions in Solids: From High-Tc Cuprates and Graphene to Topological Ins
 
 
 
-m versus temperature. Zero field cool. zero field to 2K.  Then 0.1 T field. warm up to 340K. Possible transition at high temperature. 5K per minute.
+m versus temperature. Zero field cool. 
 
 0.1T then cool down to 2K then warm up to 300K
 
@@ -134,7 +134,12 @@ Plans for measurement:
 - Ask Dechen for $m$ versus $H$ measurement. Should the direction of scan of $m$ measurement matches with that of $S$ measurement? If yes, consider double directions.
 - Ask Dechen for temperature settings of $m$ versus $T$ measurement. How to go to $340K$?
 - Ask Dechen how to remove auto center on vsm.
+- Ask Dechen for details of $m$ versus T zero-field cool and field cool, and the necessity of doing both.
 - Ask Dechen how to obtain better data for zoom in Nernst measurement. Can I lower the scanning rate to obtain more data points?
+- Measure $m$ versus $T$:
+	- Do field cool and zero-field cool
+	- Zero field: to 2K.  Then 0.1 T field. warm up to 340K. Possible transition at high temperature. 5K per minute.
+	- Field cool:?
 - Measure $m$ versus $H$:
 	- 15K: -14 to 14
 	- 30K: 14 to -14
