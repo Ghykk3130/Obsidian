@@ -41,3 +41,6 @@
 - Go to file -> open -> ... to view the data
 - Possible problems with the auto center mode of field sweeping: sampling time too short. Increase the sampling time to 3 seconds, or turn off this mode. 
 
+# Common concerns
+- The time of temperature waiting should depend on whether under high-vac or not. High-vac needs longer time.
+- The rate of field scanning: $<6T$, use $40\ oe/ s$. $>6T$, use $100\ oe/ s$.
