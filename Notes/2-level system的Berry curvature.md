@@ -23,21 +23,21 @@ $$\begin{align}
  & = \Omega_{d_{1},d_{2}}^{+}dd_{1}\wedge dd_{2}
 \end{align}$$
 所以：
-$$\Omega^{+}_{d_{1},d_{2}}=\Omega_{\theta \phi}^{+} \frac{\partial(\theta,\phi)}{\partial (d_{1},d_{2})}= \frac{1}{2} \frac{\partial(\cos \theta,\phi)}{\partial (d_{1},d_{2})}$$
+$$\Omega^{+}_{d_{1},d_{2}}=\Omega_{\theta \phi}^{+} \frac{\partial(\theta,\phi)}{\partial (d_{1},d_{2})}$$
+可以计算：
+$$\Omega_{d_{1},d_{2}}^{+}=- \frac{d_{3}}{2d^{3}},\ \Omega^{+}_{d_{2},d_{3}}= -\frac{d_{1}}{2d^{3}},\ \Omega_{d_{3},d_{1}}^{+}= -\frac{d_{2}}{2d^{3}}$$
+计算Chern number可以发现：
+$$C= \frac{1}{2\pi} \int_{\text{BZ}}\boldsymbol{\Omega}=-1$$
+类似地：
+$$\Omega_{d_{1},d_{2}}^{-}= \frac{d_{3}}{2d^{3}},\ \Omega^{-}_{d_{2},d_{3}}= \frac{d_{1}}{2d^{3}},\ \Omega_{d_{3},d_{1}}^{-}= \frac{d_{2}}{2d^{3}}$$
+$$C=1$$
+所以可以猜想Poisson方程：
+$$\nabla \cdot\left( \frac{\boldsymbol{\Omega}}{2\pi} \right)=\sum_{i}\chi_{i}\delta^{3}(\mathbf{k}-\mathbf{k}_{i})$$
+其中$\mathbf{k}_{i}$为Weyl node位置，$\chi_{i}$为Weyl node chirality。
 
-
-
-
-若$\theta=\theta(R_{1},R_{2}),\phi=\phi(R_{1},R_{2})$，那么容易证明：
-$$\Omega^{-}_{R_{1}R_{2}}= \Omega^{-}_{\theta \phi} \frac{\partial(\theta,\phi)}{\partial(R_{1},R_{2})}= -\frac{1}{2} \frac{\partial(\cos \theta,\phi)}{\partial(R_{1},R_{2})}= \frac{1}{2} \frac{\partial(\phi,\cos \theta)}{\partial(R_{1},R_{2})}$$
-于是：
+还可以计算$\Omega^{+}_{k_{i},k_{j}}$：
 $$\begin{align}
- & \Omega^{-}_{xy}= \frac{z}{2h^{3}},\ \Omega_{yz}^{-}= \frac{x}{2h^{3}},\ \Omega_{zx}^{-}= \frac{y}{2h^{3}}
+\Omega^{+}_{k_{i},k_{j}} & = \Omega_{d_{l},d_{m}}^{+} \frac{\partial(d_{l},d_{m})}{\partial(k_{i},k_{j})} \\
+  & = - \epsilon_{lmn}\frac{d_{n}}{2d^{3}}\left( \frac{\partial d_{l}}{\partial k_{i}} \frac{\partial d_{m}}{\partial k_{j} }- \frac{\partial d_{l}}{\partial k_{j}} \frac{\partial d_{m}}{\partial k_{i}}  \right) \\
+ & = - \frac{\mathbf{d}}{2d^{3}}\cdot\left( \frac{\partial \mathbf{d}}{\partial k_{i}}\times \frac{\partial \mathbf{d}}{\partial k_{j}} \right)
 \end{align}$$
-于是，有矢量形式的Berry curvature：
-$$\vec{\Omega}_{-}= \frac{\vec{h}}{2h^{3}}$$
-这相当于一个原点处monopole产生的场，即：
-$$\nabla \cdot \vec{\Omega}_{-}=2\pi\delta(\vec{h})$$
-故：
-$$\gamma_{-}=\oint d\vec{S}\cdot \vec{\Omega}_{-}=2\pi$$
-我们发现，原点$\vec{h}=0$处$\ket{u_{\pm}}$重合。所以Berry curvature的源的奇点对应态重合的点。

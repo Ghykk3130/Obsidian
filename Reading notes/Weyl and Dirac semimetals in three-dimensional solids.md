@@ -120,8 +120,10 @@ $$H=t_{z}(2-\cos k_{x}a-\cos k_{y}a+\gamma-\cos k_{z}a)\tau_{z}$$
 
 由于Boltzmann factor，低温下电子占据能量更低的态。所以若$t_{z}(2-\cos k_{x}a-\cos k_{y}a+\gamma-\cos k_{z}a)$变号，电子占据的态switch。Parity相应switch。
 
-注意到，在$\Gamma$点$2-\cos k_{x}a-\cos k_{y}a+\gamma-\cos k_{z}a$是最容易负的，在$R$点$2-\cos k_{x}a-\cos k_{y}a+\gamma-\cos k_{z}a$是最容易正的。
+注意到，在$\Gamma$点$2-\cos k_{x}a-\cos k_{y}a+\gamma-\cos k_{z}a$是最容易负的，在$R$点$2-\cos k_{x}a-\cos k_{y}a+\gamma-\cos k_{z}a$是最容易正的。在$\gamma=0$，$\Gamma$和其它TRIM点parity不同。可以证明，奇数个parity不同的TRIM点暗示Weyl点的存在。
 
-注意到在$\gamma=0$，$\Gamma$和其它TRIM点parity不同。可以证明，奇数个parity不同的TRIM点暗示Weyl点的存在
+还发现，若$\gamma=0$，在$k_{z}=0$上算得$C=1$，在$k_{z}=\frac{\pi}{a}$上算得$C=0$。所以在$k_{z}=\text{const.}$平面沿z扫时，必定扫过$\boldsymbol{\Omega}$奇点，即Weyl点。
+
+
 
 
