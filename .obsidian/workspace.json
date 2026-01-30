@@ -443,12 +443,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Notes/AB效应.md",
+                "file": "Reading notes/Weyl and Dirac semimetals in three-dimensional solids.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "AB效应"
+              "title": "Weyl and Dirac semimetals in three-dimensional solids"
             }
           }
         ],
@@ -519,7 +519,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 200,
+    "collapsed": true
   },
   "right": {
     "id": "9003d078f8dbc4ed",
@@ -619,6 +620,7 @@
   },
   "active": "a5c0ee4c44ea99ad",
   "lastOpenFiles": [
+    "Notes/AB效应.md",
     "Notes/Baker-Campbell-Hausdorff Formula.md",
     "Notes/Ideal flow.md",
     "Notes/Spherical tensor.md",
@@ -644,7 +646,6 @@
     "Notes/渗透压.md",
     "Notes/液滴.md",
     "Notes/流体的基本方程.md",
-    "Notes/流体的动力学与热力学函数.md",
     "Pictures/Pasted image 20260128153403.png",
     "Pictures/Pasted image 20260128153258.png",
     "Pictures/Pasted image 20260128134623.png",
