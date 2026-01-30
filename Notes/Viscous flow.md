@@ -74,3 +74,12 @@ T_{ij} & =-p\delta_{ij}+a\left( \frac{\partial u_{i}}{\partial r_{j}}+ \frac{\pa
  & =-p\delta_{ij}+\mu\left( \frac{\partial u_{i}}{\partial r_{j}}+\frac{\partial u_{j}}{\partial r_{i}} - \frac{2}{3}\delta_{ij} \frac{\partial u_{k}}{\partial r_{k}} \right)+ \zeta \delta_{ij} \frac{\partial u_{k}}{\partial r_{k}}
 \end{align}$$
 其中，$\frac{\partial u_{i}}{\partial r_{j}}+ \frac{\partial u_{j}}{\partial r_{i}}- \frac{2}{3}\delta_{ij} \frac{\partial u_{k}}{\partial r_{k}}$无迹。
+# 2. Navier-Stokes方程
+
+对于粘滞流体列出牛二：
+$$\begin{align}
+ & \int_{V(t)} d^{3}r \rho \frac{D{u}_{i}}{Dt}=\int_{\partial V}dS \hat{n}_{j}T_{ij} \\
+\implies & \int d^{3}r\rho\left( \frac{\partial u_{i}}{\partial t}+ u_{j} \frac{\partial}{\partial r_{j}}u_{i} \right)=\int d^{3}r \partial_{j}T_{ij} \\
+\implies & \rho\left( \frac{\partial u_{i}}{\partial t}+ u_{j} \frac{\partial u_{i}}{\partial r_{j}} \right)= \frac{\partial}{\partial r_{j}}\left( -p\delta_{ij}+\eta\left( \frac{\partial u_{i}}{\partial r_{j}}+ \frac{\partial u_{j}}{\partial r_{i}}- \frac{2}{3}\delta_{ij} \frac{\partial u_{k}}{\partial r_{k}} \right)+ \zeta \delta_{ij} \frac{\partial u_{k}}{\partial r_{k}} \right) \\
+\implies & \rho\left( \frac{\partial u_{i}}{\partial t}+ u_{j} \frac{\partial u_{i}}{\partial r_{j}} \right)=- \frac{\partial p}{\partial r_{i}}+ \frac{\partial}{\partial r_{j}} \left[\eta\left( \frac{\partial u_{i}}{\partial r_{j}}+ \frac{\partial u_{j}}{\partial r_{i}}- \frac{2}{3}\delta_{ij} \frac{\partial u_{k}}{\partial r_{k}} \right)\right]+ \frac{\partial}{\partial r_{i}}\left( \zeta  \frac{\partial u_{k}}{\partial r_{k}} \right)
+\end{align}$$
