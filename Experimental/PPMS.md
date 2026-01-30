@@ -31,3 +31,4 @@
 - Then cover the sample with GE varnish. Bake again in the same way.
 - Note that the magnetic field is along the rod.
 - The sample size should be in consideration because strong magnetization might cause the sample to fly away.
+

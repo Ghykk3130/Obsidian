@@ -26,8 +26,8 @@ $$\begin{align}
 $$\Omega^{+}_{d_{1},d_{2}}=\Omega_{\theta \phi}^{+} \frac{\partial(\theta,\phi)}{\partial (d_{1},d_{2})}$$
 可以计算：
 $$\Omega_{d_{1},d_{2}}^{+}=- \frac{d_{3}}{2d^{3}},\ \Omega^{+}_{d_{2},d_{3}}= -\frac{d_{1}}{2d^{3}},\ \Omega_{d_{3},d_{1}}^{+}= -\frac{d_{2}}{2d^{3}}$$
-计算Chern number可以发现：
-$$C= \frac{1}{2\pi} \int_{\text{BZ}}\boldsymbol{\Omega}=-1$$
+取一个在BZ中包裹Weyl点的体积$V$。计算Chern number可以发现：
+$$C= \frac{1}{2\pi} \int_{\partial V}\boldsymbol{\Omega}=-1$$
 类似地：
 $$\Omega_{d_{1},d_{2}}^{-}= \frac{d_{3}}{2d^{3}},\ \Omega^{-}_{d_{2},d_{3}}= \frac{d_{1}}{2d^{3}},\ \Omega_{d_{3},d_{1}}^{-}= \frac{d_{2}}{2d^{3}}$$
 $$C=1$$

@@ -127,3 +127,21 @@ m versus temperature. Zero field cool. zero field to 2K.  Then 0.1 T field. warm
 
 0.1T then cool down to 2K then warm up to 300K
 
+
+
+Plans for measurement:
+- Check the magnetization sample. Still on the rod?
+- Ask Dechen for $m$ versus $H$ measurement. Should the direction of scan of $m$ measurement matches with that of $S$ measurement? If yes, consider double directions.
+- Ask Dechen for temperature settings of $m$ versus $T$ measurement. How to go to $340K$?
+- Ask Dechen how to remove auto center on vsm.
+- Ask Dechen how to obtain better data for zoom in Nernst measurement. Can I lower the scanning rate to obtain more data points?
+- Measure $m$ versus $H$:
+	- 15K: -14 to 14
+	- 30K: 14 to -14
+	- 60K: -14 to 14
+	- 90K: double. 14 to -14 broken in the middle. -14 to 14 small defect in the middle.
+	- 120K: 14 to -14
+	- Temperatures followed should follow the normal order. Still need double measurement for broken data, checked with the lab notebook
+- Then do data repair measurement.
+- Then consider either $m$ versus $T$ under low field, or zoom in measurement of $S$ versus $H$.
+ 

@@ -457,12 +457,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Notes/2-level system的Berry curvature.md",
+                "file": "Notes/Untitled 1.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "2-level system的Berry curvature"
+              "title": "Untitled 1"
             }
           }
         ],
@@ -533,7 +533,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 200,
+    "collapsed": true
   },
   "right": {
     "id": "9003d078f8dbc4ed",
@@ -633,8 +634,12 @@
   },
   "active": "41c69e3d4b5b23bd",
   "lastOpenFiles": [
-    "Reading notes/Weyl and Dirac semimetals in three-dimensional solids.md",
+    "Notes/Untitled 5.md",
+    "Experimental/Untitled 1.md",
+    "Experimental/Untitled.md",
+    "Experimental/PPMS.md",
     "Notes/2-level system的Berry curvature.md",
+    "Reading notes/Weyl and Dirac semimetals in three-dimensional solids.md",
     "Notes/Clebsch-Gordan系数.md",
     "Notes/Berry phase.md",
     "Reading notes/Berry phase effects on electronic properties.md",
@@ -648,7 +653,6 @@
     "Notes/Wigner-D矩阵与spherical harmonics.md",
     "Notes/任意坐标系下的nabla算子.md",
     "Notes/WKB.md",
-    "Notes/Untitled 5.md",
     "Notes/Viscous flow.md",
     "Excalidraw/Drawing 2026-01-29 18.26.22.excalidraw.md",
     "Notes/N维球.md",
@@ -656,9 +660,6 @@
     "Notes/Lagrangian Formulation of EM.md",
     "Notes/量子统计力学基础.md",
     "Notes/路径积分.md",
-    "Notes/规范变换.md",
-    "Notes/群论.md",
-    "Notes/相对论电动力学.md",
     "Pictures/Pasted image 20260128153403.png",
     "Pictures/Pasted image 20260128153258.png",
     "Pictures/Pasted image 20260128134623.png",
