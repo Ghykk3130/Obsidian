@@ -457,12 +457,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Notes/Untitled 1.md",
+                "file": "Reading notes/Topological properties and dynamics of magnetic skyrmions.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Untitled 1"
+              "title": "Topological properties and dynamics of magnetic skyrmions"
             }
           }
         ],
@@ -634,8 +634,14 @@
   },
   "active": "41c69e3d4b5b23bd",
   "lastOpenFiles": [
-    "Notes/Untitled 2.md",
+    "Reading notes/Electrical resistance of ferromagnetic metals.md",
+    "Reading notes/Dynamics and critical currents in fast superconducting vortices at high pulsed magnetic fields.md",
+    "Reading notes/Berry phase effects on electronic properties.md",
+    "Reading notes/Doping-induced spin reorientation in Kagome magnet TmMn6Sn6.md",
+    "Reading notes/Unconventional magnetic oscillations in a kagome Mott insulator.md",
+    "Reading notes/Topological properties and dynamics of magnetic skyrmions.md",
     "Notes/Untitled 1.md",
+    "Notes/Untitled 2.md",
     "Notes/Untitled.md",
     "Experimental/PPMS.md",
     "Notes/Untitled 3.md",
@@ -647,7 +653,6 @@
     "Reading notes/Weyl and Dirac semimetals in three-dimensional solids.md",
     "Notes/Clebsch-Gordan系数.md",
     "Notes/Berry phase.md",
-    "Reading notes/Berry phase effects on electronic properties.md",
     "Notes/AB效应.md",
     "Notes/Baker-Campbell-Hausdorff Formula.md",
     "Notes/Ideal flow.md",
@@ -655,11 +660,6 @@
     "Notes/Spin以及spinor formalism的基变换.md",
     "Notes/SU(2)和SO(3)的联系.md",
     "Notes/Thomas进动.md",
-    "Notes/Wigner-D矩阵与spherical harmonics.md",
-    "Notes/任意坐标系下的nabla算子.md",
-    "Notes/WKB.md",
-    "Notes/Viscous flow.md",
-    "Excalidraw/Drawing 2026-01-29 18.26.22.excalidraw.md",
     "Pictures/Pasted image 20260128153403.png",
     "Pictures/Pasted image 20260128153258.png",
     "Pictures/Pasted image 20260128134623.png",

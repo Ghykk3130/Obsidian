@@ -138,7 +138,7 @@ Plans for measurement:
 - Ask Dechen how to obtain better data for zoom in Nernst measurement. Can I lower the scanning rate to obtain more data points?
 - Measure $m$ versus $T$:
 	- Do field cool and zero-field cool. Field cool first.
-	- Zero field: to 2K.  Then 0.1 T field. warm up to 340K. Possible transition at high temperature. 5K per minute.
+	- Zero field: to 2K.  Then 0.1 T field. warm up to 340K. Possible transition at high temperature. 5K per minute. Should I sweep to 340K first and then cool down? like taking data during both cooling and warming.
 	- Field cool:?
 - Measure $m$ versus $H$:
 	- Field scan around the peak temperature in the H-T measurement. Probably use low field. To find S-shape, the field should be low according to the paper.

@@ -11,6 +11,9 @@
 
 例如第一行第二个，$\Phi=\phi+\pi$。所以$m=1,\gamma=\pi$。
 
+注意skyrmion的净磁化是非零的。在xy plane中磁化由于旋转对称性抵消。在z方向磁化由于接近$\infty$的大量朝上的spin而非零。
+
+
 # 2. DM作用
 
 考虑两个site上有两个spin。一个电子在这两个site之间跳跃。若不考虑电子自身LS耦合，可以计算体系能量为$J\vec{S}_{1}\cdot \vec{S}_{2}$为Heisenberg exchange。
