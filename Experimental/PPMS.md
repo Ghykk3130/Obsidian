@@ -32,3 +32,12 @@
 - Note that the magnetic field is along the rod.
 - The sample size should be in consideration because strong magnetization might cause the sample to fly away.
 
+# VSM Loading
+- Put the coil into the PPMS using the catcher. Then put in the VSM probe. Then put the rod onto the VSM core. Then put the core into the VSM probe. Then put on the motor. Then plugin the cable of the motor, and the data acquisition cable of VSM.
+- Go to utilities -> options to find the window of VSM pumping/motor control
+- First scan for offset.
+- Then close chamber.
+- Then go to the top left corner to find the sequence editor. Edit the sequence. Then click run at the top left corner
+- Go to file -> open -> ... to view the data
+- Possible problems with the auto center mode of field sweeping: sampling time too short. Increase the sampling time to 3 seconds, or turn off this mode. 
+
