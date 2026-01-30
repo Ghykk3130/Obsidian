@@ -35,7 +35,7 @@ $$C=1$$
 $$\nabla \cdot\left( \frac{\boldsymbol{\Omega}}{2\pi} \right)=\sum_{i}\chi_{i}\delta^{3}(\mathbf{k}-\mathbf{k}_{i})$$
 其中$\mathbf{k}_{i}$为Weyl node位置，$\chi_{i}$为Weyl node chirality。
 
-还可以计算$\Omega^{+}_{k_{i},k_{j}}$：
+同理还可以计算$\Omega^{+}_{k_{i},k_{j}}$：
 $$\begin{align}
 \Omega^{+}_{k_{i},k_{j}} & = \Omega_{d_{l},d_{m}}^{+} \frac{\partial(d_{l},d_{m})}{\partial(k_{i},k_{j})} \\
   & = - \epsilon_{lmn}\frac{d_{n}}{2d^{3}}\left( \frac{\partial d_{l}}{\partial k_{i}} \frac{\partial d_{m}}{\partial k_{j} }- \frac{\partial d_{l}}{\partial k_{j}} \frac{\partial d_{m}}{\partial k_{i}}  \right) \\
