@@ -20,13 +20,26 @@ $$\tau_{z}=I_{zi}  \dot{\omega}_{i}  +\epsilon_{zij}\omega_{i}I_{jk}\omega_{k}$$
 >[!Right]
 >$\blacksquare$
 
+对于对称张量，我们总可以做如下分解：
+
+>[!Success] Proposition 1.2
+>Let $T_{ij}$ be a type-$(0,2)$ symmetric tensor. We have the decomposition: $T_{ij}=\left( T_{ij}- \frac{1}{3}Tr(T)\delta_{ij} \right)+ \frac{1}{3}Tr(T)\delta_{ij}=$. Then $T^{\perp},T^{\parallel}$ are perpendicular.
+## Proof.
+
+WLOG，选择坐标系使得$T_{ij}$对角化。那么：
+$$T^{\perp}_{ij}=T_{ii}\delta_{ij}- \frac{1}{3}Tr(T)\delta_{ij}=Tr(T)-Tr(T)=0$$
+所以自然：
+$$\langle T^{\perp}v,T^{\parallel}v\rangle=0,\ \forall v$$
+>[!Right]
+>$\blacksquare$
+
 我们知道，$p$一定是应力张量的一部分。由于$p$描述挤压作用，我们一定可以分解：
 $$T_{ij}=-p\delta_{ij}+\sigma_{ij}$$
 
 >[!Note] Definition 1.1
 >Define:
 >- Hydrostatic pressure(tensor): $-p\delta_{ij}$
->- Viscous stress tensor: $\sigma_{ij}=T_{ij}+p\delta_{ij}$
+>- Viscous stress tensor: $T^{'}_{ij}=T_{ij}+p\delta_{ij}$
 
 考虑速度梯度的分解：
 $$\frac{\partial u_{i}}{\partial r_{j}}= \frac{1}{2}\left( \frac{\partial u_{i}}{\partial r_{j}}+ \frac{\partial u_{j}}{\partial r_{i}} \right)+ \frac{1}{2}\left( \frac{\partial u_{i}}{\partial r_{j}}- \frac{\partial u_{j}}{\partial r_{i}} \right)=E_{ij}+\Omega_{ij}$$
@@ -47,29 +60,16 @@ $$\begin{align}
 \end{align}$$
 其中$\epsilon_{ijk}E_{jk}=0$是因为$E_{jk}$是对称张量。这就是为什么$\Omega_{ij}$被称为vorticity tensor。
 
-我们假设流体为Newtonian的，即$\sigma_{ij}$对$\partial_{i}u_{j}$线性响应。注意到$\sigma_{ij}=T_{ij}+p\delta_{ij}$为对称张量。又因为$\Omega_{ij}$反对称。所以$\sigma_{ij}$只取决于$E_{ij}$。
+我们假设流体为Newtonian的，即$T^{'}_{ij}$对$\partial_{i}u_{j}$线性响应。注意到$\sigma_{ij}=T_{ij}+p\delta_{ij}$为对称张量。又因为$\Omega_{ij}$反对称。所以$T^{'}_{ij}$只取决于$E_{ij}$。
 
 >[!Note] Definition 1.3
 >We say a fluid is Newtonian if there exists a tensor $C_{ijkl}$ independent of spacetime such that:
->$$\sigma_{ij}=C_{ijkl} E_{kl}$$
+>$$T^{'}_{ij}=C_{ijkl} E_{kl}$$
 
-
-
-
-对于对称张量，我们总可以做如下分解：
-
->[!Success] Proposition 
->Let $T_{ij}$ be a type-$(0,2)$ symmetric tensor. We have the decomposition: $T_{ij}=\left( T_{ij}- \frac{1}{3}Tr(T)\delta_{ij} \right)+ \frac{1}{3}Tr(T)\delta_{ij}=$. Then $T^{\perp},T^{\parallel}$ are perpendicular.
-## Proof.
-
-WLOG，选择坐标系使得$T_{ij}$对角化。那么：
-$$T^{\perp}_{ij}=T_{ii}\delta_{ij}- \frac{1}{3}Tr(T)\delta_{ij}=Tr(T)-Tr(T)=0$$
-所以自然：
-$$\langle T^{\perp}v,T^{\parallel}v\rangle=0,\ \forall v$$
->[!Right]
->$\blacksquare$
-
-
-
-
-
+假设$T^{'}_{ij}$ isotropic，则：
+$$T^{'}_{ij}=a\left( \frac{\partial u_{i}}{\partial r_{j}}+ \frac{\partial u_{j}}{\partial r_{i}} \right)+b\delta_{ij} \frac{\partial u_{k}}{\partial r_{k}}$$
+于是重设系数，可写成：
+$$\begin{align}
+T_{ij} & =-p\delta_{ij}+a\left( \frac{\partial u_{i}}{\partial r_{j}}+ \frac{\partial u_{j}}{\partial r_{i}} \right)+b\delta_{ij} \frac{\partial u_{k}}{\partial r_{k}} \\
+ & =-p\delta_{ij}+\mu\left( \frac{\partial u_{i}}{\partial r_{j}}+\frac{\partial u_{j}}{\partial r_{i}} - \frac{2}{3}\delta_{ij} \frac{\partial u_{k}}{\partial r_{k}} \right)+ \zeta \delta_{ij} \frac{\partial u_{k}}{\partial r_{k}}
+\end{align}$$
