@@ -95,13 +95,15 @@ $$\begin{align}
 $$\rho\left( \frac{\partial \mathbf{u}}{\partial t}+\mathbf{u}\cdot \nabla \mathbf{u} \right)=- \nabla p+ \eta \nabla^{2}\mathbf{u}+\left( \zeta+ \frac{1}{3}\eta \right)\nabla \nabla \cdot \mathbf{u}$$
 假设不可压缩流体，则$\nabla \cdot \mathbf{u}=0$。获得：
 $$\frac{\partial \mathbf{u}}{\partial t}+\mathbf{u}\cdot \nabla \mathbf{u}=- \frac{1}{\rho}\nabla p+ \frac{\eta}{\rho}\nabla^{2}\mathbf{u}$$
->[!Success] Proposition 2.1 (Navier-Stokes equation)
-The velocity field of an incompressible, Newtonian, isotropic fluid satisfies:
-$$\frac{\partial \mathbf{u}}{\partial t}+ \mathbf{u}\cdot \nabla \mathbf{u}=- \frac{1}{\rho}\nabla p+ \frac{\eta}{\rho}\nabla^{2}\mathbf{u}$$
-
 >[!Note] Definition 2.1
 >Call $\eta$ dynamic viscosity. Define the kinetic viscosity $\nu= \frac{\eta}{\rho}$.
 
->![Note] Definition 2.2
+>[!Success] Proposition 2.1 (Navier-Stokes equation)
+The velocity field of an incompressible, Newtonian, isotropic fluid satisfies:
+$$\frac{\partial \mathbf{u}}{\partial t}+ \mathbf{u}\cdot \nabla \mathbf{u}=- \frac{1}{\rho}\nabla p+ \nu\nabla^{2}\mathbf{u}$$
+
+令$U$为流体大致速度，$L$为流体速度显著变化的长度。注意到$\mathbf{u}\cdot \nabla \mathbf{u}\sim \mathcal{O}\left( \frac{U^{2}}{L} \right),\ \nu \nabla^{2}\mathbf{u}\sim\mathcal{O}\left( \nu \frac{U}{L^{2}} \right)$。而$\frac{\frac{U^{2}}{L}}{\nu \frac{U}{L^{2}}}= \frac{UL}{\nu}$。所以可以根据这个数判断$\nu \nabla^{2}\mathbf{u}$是否可以忽略。
+
+>[!Note] Definition 2.2
 >Let $U$ be the typical speed of a fluid. Let $L$ be the extension of the fluid. Then define Reynolds number $R= \frac{UL}{\nu}$
 

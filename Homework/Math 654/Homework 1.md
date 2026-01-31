@@ -98,7 +98,9 @@ Know that for air, we have $\nu \sim 10^{-5} m^{2} /s$. Then:
 $$\begin{align}
 R  & \approx \frac{150\times 5}{10^{-5} }=7.5 \times 10^7\ 
 \end{align}$$
-So the order of magnitude is $10^7$.
+So the order of magnitude is $10^7$. The order of magnitude of the boundary layer thickness is given by:
+$$\delta \sim \mathcal{O}\left( LR^{-1/2}\right)$$
+So $\delta$ is of order $10^{-4} m$.
 ## (ii)
 
 Know that for water, we have $\nu \sim 10^{-6} m^{2} /s$. Then:
