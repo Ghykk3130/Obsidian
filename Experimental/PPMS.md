@@ -9,9 +9,11 @@
 - Then in chamber, click purge/seal.
 - After it says purged, click HiVac to go to high vacuum. Done until HiVac is displayed.
 # GPIB setup
+- Go to Daq launcher on the desktop, then click the white arrow in the top tool bar to initiate thermal transport program.
 - Then connect to GPIB. Click on devise setup on the upper right.
 - Set the first two rows to be PPMS temperature, PPMS field.
 - The rest of the rows should be current sources and multimeters. To look for GPIB address on the multimeter, click shift, then GPIB, then enter.
+- Refresh the device list when choosing the GPIB address. Newly connected device would only appear after getting refreshed.
 
 # Sequence setup
 - Go to datafile $\rightarrow$ new to setup a new file. Name it to test. Then run. Data would be recorded in real times in the file. 
