@@ -91,3 +91,27 @@ Then:
 $$x=u_{0}t+C_{1},\ y= \frac{1}{2}kt^{2}+C_{2},\ z=C_{3}\implies y-C_{2}= \frac{k}{2u_{0}^{2}}(x-C_{1})^{2}$$
 The path is clearly a parabolic curve in a plane parallel to the xy plane.
 
+# Acheson 2.1
+## (i)
+
+Know that for air, we have $\nu \sim 10^{-5} m^{2} /s$. Then:
+$$\begin{align}
+R  & \approx \frac{150\times 5}{10^{-5} }=7.5 \times 10^7\ 
+\end{align}$$
+So the order of magnitude is $10^7$.
+## (ii)
+
+Know that for water, we have $\nu \sim 10^{-6} m^{2} /s$. Then:
+$$R\approx \frac{0.05 \times{0}.02}{10^{-6}}=10^3$$
+So the order of magnitude is $10^3$.
+## (iii)
+
+Know that for syrup, we have $\nu \sim 10^{-2}m^{2} /s$. Then:
+$$R\approx\frac{10^{-2}\times 0.02}{10^{-2}}=2\times 10^{-2}$$
+So the order of magnitude is $10^{-2}$
+## (iv)
+
+We have:
+$$R\approx \frac{10^{-4}\times 10^{-5}}{10^{-6}}=10^{-3}$$
+So the order of magnitude is $10^{-3}$.
+

@@ -457,12 +457,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Experimental/PPMS.md",
+                "file": "Homework/Math 654/Homework 1.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "PPMS"
+              "title": "Homework 1"
             }
           }
         ],
@@ -533,7 +533,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 200,
+    "collapsed": true
   },
   "right": {
     "id": "9003d078f8dbc4ed",
@@ -633,9 +634,11 @@
   },
   "active": "41c69e3d4b5b23bd",
   "lastOpenFiles": [
-    "Notes/2-level system的Berry curvature.md",
-    "Experimental/PPMS.md",
     "Notes/Viscous flow.md",
+    "Notes/流体的动力学与热力学函数.md",
+    "Notes/流体的基本方程.md",
+    "Experimental/PPMS.md",
+    "Notes/2-level system的Berry curvature.md",
     "Notes/Solid state.md",
     "Reading notes/Topological properties and dynamics of magnetic skyrmions.md",
     "Reading notes/Dynamics and critical currents in fast superconducting vortices at high pulsed magnetic fields.md",
@@ -657,8 +660,6 @@
     "Notes/AB效应.md",
     "Notes/Baker-Campbell-Hausdorff Formula.md",
     "Notes/Ideal flow.md",
-    "Notes/Spherical tensor.md",
-    "Notes/Spin以及spinor formalism的基变换.md",
     "Pictures/Pasted image 20260128153403.png",
     "Pictures/Pasted image 20260128153258.png",
     "Pictures/Pasted image 20260128134623.png",

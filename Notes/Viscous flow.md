@@ -34,7 +34,7 @@ $$\langle T^{\perp}v,T^{\parallel}v\rangle=0,\ \forall v$$
 >$\blacksquare$
 
 我们知道，$p$一定是应力张量的一部分。由于$p$描述挤压作用，我们一定可以分解：
-$$T_{ij}=-p\delta_{ij}+\sigma_{ij}$$
+$$T_{ij}=-p\delta_{ij}+T^{'}_{ij}$$
 
 >[!Note] Definition 1.1
 >Define:
@@ -74,6 +74,9 @@ T_{ij} & =-p\delta_{ij}+a\left( \frac{\partial u_{i}}{\partial r_{j}}+ \frac{\pa
  & =-p\delta_{ij}+\mu\left( \frac{\partial u_{i}}{\partial r_{j}}+\frac{\partial u_{j}}{\partial r_{i}} - \frac{2}{3}\delta_{ij} \frac{\partial u_{k}}{\partial r_{k}} \right)+ \zeta \delta_{ij} \frac{\partial u_{k}}{\partial r_{k}}
 \end{align}$$
 其中，$\frac{\partial u_{i}}{\partial r_{j}}+ \frac{\partial u_{j}}{\partial r_{i}}- \frac{2}{3}\delta_{ij} \frac{\partial u_{k}}{\partial r_{k}}$无迹。
+## Ex:
+
+考虑不可压缩流体。则$\frac{\partial u_{k}}{\partial r_{k}}=0$。那么$T_{ij}=-p\delta_{ij}+\mu\left( \frac{\partial u_{i}}{\partial r_{j}}+ \frac{\partial u_{j}}{\partial r_{i}} \right)$
 # 2. Navier-Stokes方程
 
 对于粘滞流体列出牛二：
@@ -83,3 +86,22 @@ $$\begin{align}
 \implies & \rho\left( \frac{\partial u_{i}}{\partial t}+ u_{j} \frac{\partial u_{i}}{\partial r_{j}} \right)= \frac{\partial}{\partial r_{j}}\left( -p\delta_{ij}+\eta\left( \frac{\partial u_{i}}{\partial r_{j}}+ \frac{\partial u_{j}}{\partial r_{i}}- \frac{2}{3}\delta_{ij} \frac{\partial u_{k}}{\partial r_{k}} \right)+ \zeta \delta_{ij} \frac{\partial u_{k}}{\partial r_{k}} \right) \\
 \implies & \rho\left( \frac{\partial u_{i}}{\partial t}+ u_{j} \frac{\partial u_{i}}{\partial r_{j}} \right)=- \frac{\partial p}{\partial r_{i}}+ \frac{\partial}{\partial r_{j}} \left[\eta\left( \frac{\partial u_{i}}{\partial r_{j}}+ \frac{\partial u_{j}}{\partial r_{i}}- \frac{2}{3}\delta_{ij} \frac{\partial u_{k}}{\partial r_{k}} \right)\right]+ \frac{\partial}{\partial r_{i}}\left( \zeta  \frac{\partial u_{k}}{\partial r_{k}} \right)
 \end{align}$$
+假设$\eta,\zeta$都是常数，则：
+$$\begin{align}
+\rho\left( \frac{\partial u_{i}}{\partial t}+u_{j} \frac{\partial u_{i}}{\partial r_{j}} \right) & = - \frac{\partial p}{\partial r_{i}}+\eta \frac{\partial^{2}u_{i}}{\partial r_{j}^{2}}+ \eta \frac{\partial^{2}u_{j}}{\partial r_{i}r_{j}}+ \left( \zeta- \frac{2}{3}\eta \right) \frac{\partial^{2} u_{k}}{\partial r_{i}\partial r_{k}} \\
+ & = - \frac{\partial p}{\partial r_{i}}+ \eta \frac{\partial^{2}u_{i}}{\partial r_{j}^{2}}+\left( \zeta+ \frac{1}{3}\eta \right) \frac{\partial^{2}u_{k}}{\partial r_{i}\partial r_{k}}
+\end{align}$$
+即：
+$$\rho\left( \frac{\partial \mathbf{u}}{\partial t}+\mathbf{u}\cdot \nabla \mathbf{u} \right)=- \nabla p+ \eta \nabla^{2}\mathbf{u}+\left( \zeta+ \frac{1}{3}\eta \right)\nabla \nabla \cdot \mathbf{u}$$
+假设不可压缩流体，则$\nabla \cdot \mathbf{u}=0$。获得：
+$$\frac{\partial \mathbf{u}}{\partial t}+\mathbf{u}\cdot \nabla \mathbf{u}=- \frac{1}{\rho}\nabla p+ \frac{\eta}{\rho}\nabla^{2}\mathbf{u}$$
+>[!Success] Proposition 2.1 (Navier-Stokes equation)
+The velocity field of an incompressible, Newtonian, isotropic fluid satisfies:
+$$\frac{\partial \mathbf{u}}{\partial t}+ \mathbf{u}\cdot \nabla \mathbf{u}=- \frac{1}{\rho}\nabla p+ \frac{\eta}{\rho}\nabla^{2}\mathbf{u}$$
+
+>[!Note] Definition 2.1
+>Call $\eta$ dynamic viscosity. Define the kinetic viscosity $\nu= \frac{\eta}{\rho}$.
+
+>![Note] Definition 2.2
+>Let $U$ be the typical speed of a fluid. Let $L$ be the extension of the fluid. Then define Reynolds number $R= \frac{UL}{\nu}$
+
