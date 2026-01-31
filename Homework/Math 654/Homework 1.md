@@ -131,4 +131,21 @@ $$\begin{align}
  & \mathbf{u}=(U,0,0)\text{ as }x^{2}+y^{2}  \rightarrow \infty \implies \mathbf{u}^{'}=(1,0,0)\text{ as }x^{'2}+y^{'2}\rightarrow \infty
 \end{align}$$
 Then the boundary conditions are parameter-free. Notice that the only parameter comes from $R$ in the equation. Therefore, the streamline pattern should only depend on $R$.
+# Acheson 2.3
+## (i)
 
+We substitute the solution into the equation. We have:
+$$\frac{\partial \mathbf{u}}{\partial t}=0$$
+$$\begin{align}
+\mathbf{u}\cdot \nabla \mathbf{u} & = v \frac{\partial}{\partial y}\left( \frac{P}{2\mu}(h^{2}-y^{2})\hat{x} \right)=0
+\end{align}$$
+$$\begin{align}
+\nabla^{2}\mathbf{u} & = \frac{\partial^{2}}{\partial y^{2}}\left( \frac{P}{2\mu}(h^{2}-y^{2})\hat{x} \right)= - \frac{P}{\mu}\hat{x}
+\end{align}$$
+$$\nabla p= - P \hat{x}$$
+Then clearly:
+$$\begin{align}
+\frac{\partial \mathbf{u}}{\partial t}+\mathbf{u}\cdot \nabla \mathbf{u} & = 0= - \left( - \frac{P}{\rho}\hat{x} \right)+ \frac{\mu}{\rho}\left( - \frac{P}{\mu}\hat{x} \right)= - \frac{1}{\rho}\nabla p+ \frac{\mu}{\rho}\nabla^{2}\mathbf{u}
+\end{align}$$
+The boundary condition is satisfied, since at $y=\pm h$, $u= \frac{P}{2\mu}(h^{2}-y^{2})=0$.
+## (ii)
