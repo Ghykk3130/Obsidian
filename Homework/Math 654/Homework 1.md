@@ -125,3 +125,10 @@ $$\begin{align}
 \implies & \mathbf{u}^{'}\cdot \nabla^{'}\mathbf{u}^{'}= - \nabla^{'}\left(  \frac{p}{\rho U^{2}} \right)+ \frac{\nu}{aU}\nabla^{'2}\mathbf{u}^{'} \\
 \implies & \mathbf{u}^{'}\cdot \nabla^{'}\mathbf{u}^{'}= - \nabla^{'}p^{'}+ \frac{1}{R} \nabla^{'2}\mathbf{u}^{'} 
 \end{align}$$
+Notice that the boundary conditions also transforms:
+$$\begin{align}
+ &\mathbf{u}=0\text{ on } x^{2}+y^{2}=a^{2}\implies \mathbf{u}^{'}=0\text{ on }x^{'2}+y^{'2}=1 \\
+ & \mathbf{u}=(U,0,0)\text{ as }x^{2}+y^{2}  \rightarrow \infty \implies \mathbf{u}^{'}=(1,0,0)\text{ as }x^{'2}+y^{'2}\rightarrow \infty
+\end{align}$$
+Then the boundary conditions are parameter-free. Notice that the only parameter comes from $R$ in the equation. Therefore, the streamline pattern should only depend on $R$.
+
