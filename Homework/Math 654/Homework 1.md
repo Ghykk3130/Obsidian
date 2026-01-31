@@ -149,3 +149,13 @@ $$\begin{align}
 \end{align}$$
 The boundary condition is satisfied, since at $y=\pm h$, $u= \frac{P}{2\mu}(h^{2}-y^{2})=0$.
 ## (ii)
+
+Similarly, we compute:
+$$\frac{\partial \mathbf{u}}{\partial t}=0$$
+$$\mathbf{u}\cdot \nabla \mathbf{u}=\hat{z} u_{r}\frac{\partial}{\partial r}\left(  \frac{P}{4\mu}(a^{2}-r^{2}) \right)=0$$
+$$\nabla^{2}\mathbf{u}= \hat{z} \frac{1}{r} \frac{\partial}{\partial r}\left( r \frac{\partial u_{r}}{\partial r} \right)=\hat{z} \frac{1}{r}\left( - \frac{P}{\mu}r \right)=- \frac{P}{\mu}\hat{z} $$
+Then clearly:
+$$\frac{\partial \mathbf{u}}{\partial t}+\mathbf{u} \cdot \nabla \mathbf{u}=0=-\left( - \frac{P}{\rho}\hat{z} \right)+ \frac{\mu}{\rho}\left( - \frac{P}{\mu}\hat{z} \right)=- \frac{1}{\rho}\nabla p+ \frac{\mu}{\rho}\nabla^{2}\mathbf{u}$$
+At $r=a$, we have $u_{z}=\frac{P}{4\mu}(a^{2}-r^{2})=0$ so that the boundary condition is satisfied.
+# Acheson 2.5
+
