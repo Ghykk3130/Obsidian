@@ -1,0 +1,4 @@
+- Change angles if attaching wires is hard.
+- If contact resistance too large, try reattaching the wire to the puck several times.
+- If zero field, room temperature, order of magnitude in multimeters not the same, means anomaly. Noise should be of the same order of magnitude.
+- Check sample contact one day before loading. 
