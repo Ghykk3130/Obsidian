@@ -116,4 +116,12 @@ So the order of magnitude is $10^{-2}$
 We have:
 $$R\approx \frac{10^{-4}\times 10^{-5}}{10^{-6}}=10^{-3}$$
 So the order of magnitude is $10^{-3}$.
+# Acheson 2.2
 
+We have:
+$$\begin{align}
+ & \mathbf{u}\cdot \nabla \mathbf{u}= - \frac{1}{\rho}\nabla p +\nu \nabla^{2}\mathbf{u} \\
+\implies & (U\mathbf{u}^{'}) \frac{1}{a} \nabla^{'}(U\mathbf{u}^{'})= - \frac{1}{\rho} \frac{1}{a} \nabla^{'}p+ \nu \frac{1}{a^{2}} \nabla^{'2}(U\mathbf{u}^{'}) \\
+\implies & \mathbf{u}^{'}\cdot \nabla^{'}\mathbf{u}^{'}= - \nabla^{'}\left(  \frac{p}{\rho U^{2}} \right)+ \frac{\nu}{aU}\nabla^{'2}\mathbf{u}^{'} \\
+\implies & \mathbf{u}^{'}\cdot \nabla^{'}\mathbf{u}^{'}= - \nabla^{'}p^{'}+ \frac{1}{R} \nabla^{'2}\mathbf{u}^{'} 
+\end{align}$$
