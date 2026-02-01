@@ -252,3 +252,22 @@ Know that at $t=0,x=0$. Then $C=0$. So:
 $$x=\sin t-t$$
 The pathline is clearly a cycloid with $R=1$. The pathline with $0 < t < 6\pi$ is shown below:
 ![[Pasted image 20260201174303.png|center|700]]
+## c)
+
+Let the particle passes through the origin at $\tau$. :
+$$y-1=A\cos t+B\sin t$$
+with the conditions that:
+$$A\cos \tau+B\sin \tau=0-1,\ \left.\frac{dy}{dt}\right|_{t=\tau}=-A\sin \tau+B\cos \tau=\tau$$
+Then it's easy to solve:
+$$y=(-\cos \tau=\tau \sin \tau)\cos t+(-\sin \tau+\tau \cos \tau)\sin t+1$$
+Similarly, for $x$:
+$$x=\sin t-t+C$$
+We have:
+$$\sin \tau-\tau+C=0\implies C=-\sin \tau+\tau$$
+Then:
+$$x=\sin t-t-\sin \tau+\tau$$
+Let $t=6\pi$. We have:
+$$x=-6\pi-\sin \tau+\tau,\ y=-\cos \tau-\tau \sin \tau+1$$
+with $0\leq \tau \leq 6\pi$.
+ ![[Pasted image 20260201182608.png|center|300]]
+ 
