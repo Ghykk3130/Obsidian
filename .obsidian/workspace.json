@@ -471,12 +471,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Experimental/Untitled 2.md",
+                "file": "Homework/Math 654/Homework 1.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Untitled 2"
+              "title": "Homework 1"
             }
           }
         ],
@@ -547,7 +547,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 200,
+    "collapsed": true
   },
   "right": {
     "id": "9003d078f8dbc4ed",
@@ -647,8 +648,10 @@
   },
   "active": "e8a6c521b9748c0b",
   "lastOpenFiles": [
-    "Experimental/Isolation Transformer.md",
+    "Notes/Fourier transform.md",
+    "Experimental/PPMS.md",
     "Experimental/Untitled 2.md",
+    "Experimental/Isolation Transformer.md",
     "Homework/Math 654/Homework 1.md",
     "Notes/球谐函数与旋转表示.md",
     "Notes/球坐标系下的位置本征矢.md",
@@ -656,7 +659,6 @@
     "Notes/Viscous flow.md",
     "Notes/流体的动力学与热力学函数.md",
     "Notes/流体的基本方程.md",
-    "Experimental/PPMS.md",
     "Notes/2-level system的Berry curvature.md",
     "Notes/Solid state.md",
     "Reading notes/Topological properties and dynamics of magnetic skyrmions.md",
@@ -672,7 +674,6 @@
     "Notes/Untitled 4.md",
     "Notes/Untitled 5.md",
     "Experimental/Untitled 1.md",
-    "Experimental/Untitled.md",
     "Pictures/Pasted image 20260128153403.png",
     "Pictures/Pasted image 20260128153258.png",
     "Pictures/Pasted image 20260128134623.png",

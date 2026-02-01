@@ -159,3 +159,38 @@ $$\frac{\partial \mathbf{u}}{\partial t}+\mathbf{u} \cdot \nabla \mathbf{u}=0=-\
 At $r=a$, we have $u_{z}=\frac{P}{4\mu}(a^{2}-r^{2})=0$ so that the boundary condition is satisfied.
 # Acheson 2.5
 
+We have that:
+$$\begin{align}
+ & \frac{\partial u}{\partial t}+(u \partial_{x}+ v \partial_{y})u= - \frac{1}{\rho} \frac{dp}{dx}+ \nu \partial_{y}^{2}u \\
+\implies &  \frac{\partial u}{\partial t}+v \frac{\partial u}{\partial y}= \frac{P}{\rho}+\nu \frac{\partial^{2}u}{\partial y^{2}}
+\end{align}$$
+Observe that the fluid is incompressible:
+$$\frac{\partial u}{\partial x}+ \frac{\partial v}{\partial y}=0\implies \frac{\partial v}{\partial y}=0$$
+By the assumption in the problem, velocities only does not depend on $x$. So $v=\text{const.}$ Since we have $v=0$ on the wall, we obtain $v=0$. So:
+$$\frac{\partial u}{\partial t}=\nu \frac{\partial^{2}u}{\partial y^{2}}+ \frac{P}{\rho}$$
+The boundary condition is clearly $u(y=\pm h,t)=0$. The initial condition is $u(y,0)=0$.
+
+Let $u(y,t)=u_{1}(y)+u_{2}(y,t)$, where:
+$$\begin{align}
+ & 0= \nu \frac{\partial^{2}u_{1}}{\partial y^{2}}+ \frac{P}{\rho} \\
+ & \frac{\partial u_{2}}{\partial t}=\nu \frac{\partial^{2}u_{2}}{\partial y^{2}} \\
+ & u_{1},u_{2}=0\text{ on the wall},\ u_{1},u_{2}=0\text{ at }t=0
+\end{align}$$
+Then:
+$$\begin{align}
+ & 0= \nu \frac{\partial^{2}u_{1}}{\partial y^{2}}+\frac{P}{\rho} \\
+\implies & u_{1}= - \frac{P}{2\rho \nu}y^{2}+Ay+B
+\end{align}$$
+$$\begin{align}
+ & - \frac{P}{2\rho \nu}h^{2}+Ah+B=0,\ - \frac{P}{2\rho \nu}h^{2}-Ah+B=0\implies u_{1}= \frac{P}{2\mu}(h^{2}-y^{2})
+\end{align}$$
+Now consider $u_{2}$. Notice that the basis $\cos\left( \frac{y}{h}\left( \frac{\pi}{2}+n\pi \right) \right)$ satisfies the boundary condition. Then assume:
+$$u_{2}=  \sum_{m \in \mathbb{Z}} \sum_{n=0}^{\infty} \cos\left( \frac{y}{h}\left( \frac{\pi}{2}+n\pi \right) \right)e^{i\omega_{m} t}  \hat{u}_{2}$$
+Substituting into the wave equation:
+$$\begin{align}
+ & -\left[ \frac{1}{h}\left(  \frac{\pi}{2}+n\pi \right) \right]^{2}\nu=i\omega_{m} 
+\end{align}$$
+So:
+$$u_{2}=\int_{\mathbb{R}}d\omega \sum_{n=0}^{\infty}\cos\left( \frac{y}{h}\left( \frac{\pi}{2}+n\pi \right) \right)\exp\left[ - \frac{1}{h^{2}}\left( \frac{\pi}{2}+n\pi \right)^{2}\nu t \right]    \hat{u}_{2}$$
+The initial condition implies:
+$$$$
