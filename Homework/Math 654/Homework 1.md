@@ -231,3 +231,4 @@ $$0=0+C\implies C=0$$
 Set $t=1$ to obtain:
 $$- \frac{1}{2}y^{2}= \frac{1}{2}x^{2}+x$$
 ## b)
+ 
