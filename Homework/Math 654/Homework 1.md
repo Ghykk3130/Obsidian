@@ -231,4 +231,24 @@ $$0=0+C\implies C=0$$
 Set $t=1$ to obtain:
 $$- \frac{1}{2}y^{2}= \frac{1}{2}x^{2}+x$$
 ## b)
- 
+We have:
+$$\frac{dx}{dt}=u=-y,\ \frac{dy}{dt}=v=x+t$$
+Decouple the equations to get:
+$$\begin{align}
+ & \frac{d^{2}y}{dt^{2}}=-y+1 \\
+\implies  & y-1=A\cos t+B\sin t
+\end{align}$$
+Know that at $t=0, y=0$. Then:
+$$0-1=A\implies A=-1$$
+Know that $\frac{dy}{dt}|_{t=0}=v(x=0,t=0)=0$ at the origin. Then:
+$$0= B$$
+So:
+$$y= -\cos t+1$$
+Then:
+$$\begin{align}
+ & \frac{dx}{dt}=\cos t-1\implies x=\sin t-t+C
+\end{align}$$
+Know that at $t=0,x=0$. Then $C=0$. So:
+$$x=\sin t-t$$
+The pathline is clearly a cycloid with $R=1$. The pathline with $0 < t < 6\pi$ is shown below:
+![[Pasted image 20260201174303.png|center|700]]
