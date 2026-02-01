@@ -186,6 +186,15 @@ $$\begin{align}
 \end{align}$$
 Now consider $u_{2}$. Notice that the basis $\cos\left( \frac{y}{h}\left( \frac{\pi}{2}+n\pi \right) \right)$ satisfies the boundary condition. Then assume:
 $$u_{2}=  \sum_{m \in \mathbb{Z}} \sum_{n=0}^{\infty} \cos\left( \frac{y}{h}\left( \frac{\pi}{2}+n\pi \right) \right)e^{i\omega_{m} t}  \hat{u}_{2}$$
+Then we must have:
+$$\sum_{m,n} i\omega_{m}\cos\left( \frac{y}{h}\left( \frac{\pi}{2}+n\pi \right) \right)e^{i\omega_{m}t}  \hat{u}_{2}= \nu\sum_{m,n} \frac{1}{h^{2}}\left( \frac{\pi}{2}+n\pi \right)^{2} \cos\left( \frac{y}{h}\left( \frac{\pi_{2}}{2}+n\pi \right) \right)e^{i\omega_{m}t}\hat{u}_{2}$$
+Then fix $n$, it suffices to let:
+$$\sum_{m} i\omega_{m}\cos\left( \frac{y}{h}\left( \frac{\pi}{2}+n\pi \right) \right)e^{i\omega_{m}t}  \hat{u}_{2}= \nu\sum_{m} \frac{1}{h^{2}}\left( \frac{\pi}{2}+n\pi \right)^{2} \cos\left( \frac{y}{h}\left( \frac{\pi_{2}}{2}+n\pi \right) \right)e^{i\omega_{m}t}\hat{u}_{2}$$
+Then it suffices to let:
+$$i\omega_{m}= \nu \frac{1}{h^{2}}\left( \frac{\pi}{2}+n\pi \right)^{2},\ \forall m$$
+
+
+
 Substituting into the wave equation:
 $$\begin{align}
  & -\left[ \frac{1}{h}\left(  \frac{\pi}{2}+n\pi \right) \right]^{2}\nu=i\omega_{m} 
