@@ -195,4 +195,39 @@ $$i\omega_{n}=- \nu \frac{1}{h^{2}}\left( \frac{\pi}{2}+n\pi \right)^{2},\ n\in 
 Then:
 $$u_{2}=\sum_{n\in \mathbb{N}}\cos\left( \frac{y}{h}\left( \frac{\pi}{2}+n\pi \right) \right)\exp\left( - \nu \frac{1}{h^{2}}\left( \frac{\pi}{2}+n\pi \right)^{2}t \right)  \hat{u}_{2}$$
 The initial condition implies:
-$$$$
+$$\begin{align}
+ &  \frac{P}{2\mu}(h^{2}-y^{2})+\sum_{n\in \mathbb{N} } \cos\left( \frac{y}{h}\left( \frac{\pi}{2}+n\pi \right) \right)  \hat{u}_{2}= 0 \\
+\implies &  \hat{u}_{2}= - \frac{1}{h} \int_{-h}^hdy \frac{P}{2\mu}(h^{2}-y^{2})\cos\left( \frac{y}{h}\left( \frac{\pi}{2}+n\pi \right) \\
+ \right)
+\end{align}$$
+We first compute:
+$$\begin{align}
+\int_{-h}^h dy \cos\left( \frac{y}{h}\left( \frac{\pi}{2}+n\pi \right) \right)= \frac{4h(-1)^n}{\pi+2n\pi }
+\end{align}$$
+Next:
+$$\begin{align}
+\int_{-h}^h dyy^{2}\cos\left( \frac{y}{h}\left( \frac{\pi}{2}+n\pi \right) \right) & = - \frac{\partial^{2}}{\partial \omega^{2}} \int_{-h}^h\cos(\omega y)\text{ where }\omega= \frac{1}{h}\left( \frac{\pi}{2}+n\pi \right)  \\
+ & = - \frac{\partial^{2}}{\partial \omega^{2}}\left( \frac{2}{\omega} \sin \omega h \right) \\
+ & = \frac{4h\cos \omega h  }{\omega^{2} }- \frac{4\sin \omega h}{\omega^{3}}+ \frac{2h^{2}\sin(\omega h) }{\omega} \\
+ & = \frac{4(-1)^nh^{3}(-8+(\pi+2n\pi)^{2})}{(\pi+2n\pi)^{3}} 
+\end{align}$$
+Then:
+$$\hat{u}_{2}= - \frac{16(-1)^nh^{2}{P}}{\mu(\pi+2n\pi)^{3}}$$
+So:
+$$u_{2}=-\sum _{n\in \mathbb{N}} \cos\left( \frac{y}{h}\left( \frac{\pi}{2}+n\pi \right) \right)\exp\left( - \nu \frac{1}{h^{2}}\left( \frac{\pi}{2}+n\pi \right)^{2}t \right) \frac{16(-1)^nh^{2}P}{\mu(\pi+2n\pi)^{3}}  $$
+We have:
+$$u(y,t)= \frac{P}{2\mu}(h^{2}-y^{2})-\sum _{n\in \mathbb{N}} \cos\left( \frac{y}{h}\left( \frac{\pi}{2}+n\pi \right) \right)\exp\left( - \nu \frac{1}{h^{2}}\left( \frac{\pi}{2}+n\pi \right)^{2}t \right) \frac{16(-1)^nh^{2}P}{\mu(\pi+2n\pi)^{3}}  $$
+Observe that if $t \gg \frac{h^{2}}{\nu}$, the exponent $- \frac{\nu}{h^{2}}\left( \frac{\pi}{2}+n\pi \right)^{2}t \rightarrow -\infty$. So $u_{2}$ can be ignored. We have $u(y,t) \approx u(y,t)$.
+# HW1S1
+## a)
+Consider the constraint on a streamline:
+$$\begin{align}
+ & \frac{dx}{-y}= \frac{dy}{x+t} \\
+\implies & -ydy=(x+t)dx \\
+\implies & - \frac{1}{2 }y^{2}= \frac{1}{2}x^{2}+tx+C
+\end{align}$$
+Since the streamline crosses the origin, we have:
+$$0=0+C\implies C=0$$
+Set $t=1$ to obtain:
+$$- \frac{1}{2}y^{2}= \frac{1}{2}x^{2}+x$$
+## b)
