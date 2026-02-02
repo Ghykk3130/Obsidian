@@ -108,7 +108,7 @@ $$R\approx \frac{0.05 \times{0}.02}{10^{-6}}=10^3$$
 So the order of magnitude is $10^3$.
 ## (iii)
 
-Know that for syrup, we have $\nu \sim 10^{-2}m^{2} /s$. Then:
+Know that for syrup, we have $\nu \sim 10^{-2}m^{2} /s$. The typical length scale of a spoon is $2cm$. The typical speed might be $1cm /s$. Then:
 $$R\approx\frac{10^{-2}\times 0.02}{10^{-2}}=2\times 10^{-2}$$
 So the order of magnitude is $10^{-2}$
 ## (iv)
