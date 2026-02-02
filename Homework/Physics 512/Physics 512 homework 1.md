@@ -233,5 +233,14 @@ Q & = e\bra{\alpha,j,m=j} (3z^{2}-r^{2})\ket{\alpha,j,m=j}  \\
  & = 2eC\bra{m=j,0} j,m=j\rangle \\
 \end{align}$$
 Then:
-$$e\bra{\alpha,j,m^{'}} (x^{2}-y^{2})\ket{\alpha,j,m=j} = \frac{Q}{\sqrt{ 6 }\bra{m=j,0} j,m=j\rangle}[\bra{m=j,-2} j,m^{'}\rangle+\bra{m=j,2} j,m^{'}\rangle]$$
+$$\begin{align}
+e\bra{\alpha,j,m^{'}} (x^{2}-y^{2})\ket{\alpha,j,m=j}  &  = \frac{Q}{\sqrt{ 6 }\bra{m=j,0} j,m=j\rangle}[\bra{m=j,-2} j,m^{'}\rangle+\bra{m=j,2} j,m^{'}\rangle] 
+\end{align}$$
+Observe that $\bra{m=j,2}j,m^{'}\rangle=\bra{m=j,2}j,j+2\rangle=0$. So we have:
+$$e\bra{\alpha,j,m^{'}(x^{2}-y^{2})\ket{\alpha,j,m=j} } = \left\{\begin{align}
+ & \frac{Q}{\sqrt{ 6 }\bra{m=j,0} j,m=j\rangle} \bra{m=j,-2} j,j-2\rangle,\text{ if } m^{'}=j-2 \\
+ & 0,\text{ otherwise}
+\end{align}\right.$$
+
+
 
