@@ -94,12 +94,12 @@ The path is clearly a parabolic curve in a plane parallel to the xy plane.
 # Acheson 2.1
 ## (i)
 
-Know that for air, we have $\nu \sim 10^{-5} m^{2} /s$. Then:
+Know that for air, we have $\nu \sim 10^{-5} m^{2} /s$. The typical length scale is $5m$. Then:
 $$\begin{align}
 R  & \approx \frac{150\times 5}{10^{-5} }=7.5 \times 10^7\ 
 \end{align}$$
-So the order of magnitude is $10^7$. The order of magnitude of the boundary layer thickness is given by:
-$$\delta \sim \mathcal{O}\left( LR^{-1/2}\right)$$
+So the order of magnitude is $10^7$. Note that the Reynold's number is high, we have:
+$$\delta \sim \mathcal{O}\left( \sqrt{ \frac{\nu L}{U} }\right)$$
 So $\delta$ is of order $10^{-4} m$.
 ## (ii)
 
