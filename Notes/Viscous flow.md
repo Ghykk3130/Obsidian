@@ -103,13 +103,18 @@ The velocity field of an incompressible, Newtonian, isotropic fluid satisfies:
 $$\frac{\partial \mathbf{u}}{\partial t}+ \mathbf{u}\cdot \nabla \mathbf{u}=- \frac{1}{\rho}\nabla p+ \nu\nabla^{2}\mathbf{u}$$
 # 3. Reynold's number
 
-考虑NS方程以及边界条件：
+考虑stationary NS方程以及边界条件：
 $$\begin{align}
-\frac{\partial \mathbf{u}}{\partial t}+\mathbf{u}\cdot \nabla \mathbf{u}= - \frac{1}{\rho}\nabla p+\nu \nabla^{2}\mathbf{u},\ \mathbf{u}|_{\partial \Sigma}=0
+\mathbf{u}\cdot \nabla \mathbf{u}= - \frac{1}{\rho}\nabla p+\nu \nabla^{2}\mathbf{u},\ \mathbf{u}|_{\partial \Sigma}=0
 \end{align}$$
-
-
-令$U$为流体大致速度，$L$为流体速度显著变化的长度。注意到$\mathbf{u}\cdot \nabla \mathbf{u}\sim \mathcal{O}\left( \frac{U^{2}}{L} \right),\ \nu \nabla^{2}\mathbf{u}\sim\mathcal{O}\left( \nu \frac{U}{L^{2}} \right)$。而$\frac{\frac{U^{2}}{L}}{\nu \frac{U}{L^{2}}}= \frac{UL}{\nu}$。所以可以根据这个数判断$\nu \nabla^{2}\mathbf{u}$是否可以忽略。
+我们可以作rescaling。令$\mathbf{u}= \frac{\mathbf{u}^{'}}{U},\ \mathbf{r}= \frac{\mathbf{r}^{'}}{L},\ p= \frac{p^{'}}{P}$。代入方程得到：
+$$\begin{align}
+ & \frac{U^{2}}{L} \mathbf{u}^{'}\cdot \nabla^{'}\mathbf{u}^{'}=- \frac{1}{\rho LP}\nabla^{'}p^{'}+ \frac{\nu U}{L^{2}}\nabla^{'2}\mathbf{u}^{'} \\
+\implies & \mathbf{u}^{'}\cdot \nabla^{'}\mathbf{u}^{'}= - \frac{1}{\rho PU^{2}}\nabla^{'}p^{'}+ \frac{\nu}{UL}\nabla^{'2}\mathbf{u}^{'}
+\end{align}$$
+$U,L,P$为自由变量，没有约束。令$\rho PU^{2}=1$产生一个约束。令$R=\frac{\nu}{UL}$。相应地，boundary发生变化$\Sigma=  \frac{1}{L} \Sigma^{'}$。现在方程reduce成为：
+$$\mathbf{u}^{'}\cdot \nabla^{'} \mathbf{u}^{'}=- \nabla^{'} p^{'}+R\nabla^{'2}\mathbf{u}^{'},\ \mathbf{u}^{'}|_{\partial \Sigma^{'}}=0 $$
+现在$U,L$是自由的。注意到，若两个体系可以通过选取$U,L$使得rescaling后的boundary condition一样，那么两个系统的$\mathbf{u}^{'}$就一样。称为law of similarity。
 
 >[!Note] Definition 2.2
 >Let $U$ be the typical speed of a fluid. Let $L$ be the extension of the fluid. Then define Reynolds number $R= \frac{UL}{\nu}$
