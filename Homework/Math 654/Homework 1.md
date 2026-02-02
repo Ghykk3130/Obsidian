@@ -6,29 +6,29 @@ $$u_{\theta}=\left\{\begin{align}
  & \frac{\Omega a^{2}}{r},\ r>a 
 \end{align}\right.$$
 Then:
-$$\vec{\omega}= \left\{\begin{align}
- &  2\Omega \hat{z},\ r <a \\
+$$\boldsymbol{\omega}= \left\{\begin{align}
+ &  2\Omega \hat{\mathbf{z}},\ r <a \\
  & 0,\ r >a
 \end{align}\right.$$
 Then:
-$$\vec{\omega}\times \vec{u}=\left\{\begin{align}
- &  2\Omega^{2}r(-\hat{r}),\ r<a \\
+$$\boldsymbol{\omega}\times \mathbf{u}=\left\{\begin{align}
+ &  2\Omega^{2}r(-\hat{\mathbf{r}}),\ r<a \\
  & 0,\ r>a
 \end{align}\right.$$
 Then we have:
 $$\begin{align}
- & \frac{\partial \vec{u}}{\partial t}+\vec{\omega}\times \vec{u}=-\nabla\left(  \frac{1}{2}u^{2}+ \frac{p}{\rho}+\chi \right) \\
- \implies & \vec{\omega}\times \vec{u}=-\nabla\left(  \frac{1}{2}u^{2}+ \frac{p}{\rho}+\chi \right)\end{align}$$
+ & \frac{\partial \mathbf{u}}{\partial t}+\boldsymbol{\omega}\times \mathbf{u}=-\nabla\left(  \frac{1}{2}u^{2}+ \frac{p}{\rho}+\chi \right) \\
+ \implies & \boldsymbol{\omega}\times \mathbf{u}=-\nabla\left(  \frac{1}{2}u^{2}+ \frac{p}{\rho}+\chi \right)\end{align}$$
 Choose an integration path that is perpendicular to the z axis, from $r=0$ to $r=\infty$.
 $$ \begin{align}
-\implies & \int_{0}^{\infty}d\vec{r}\cdot(\vec{\omega}\times \vec{u})=-\left[ \frac{1}{2}u^{2}+\chi \right]_{r=0}^{\infty}-  \frac{1}{\rho}[p]_{r=0}^{\infty} \\
+\implies & \int_{0}^{\infty}d\vec{r}\cdot(\boldsymbol{\omega}\times \mathbf{u})=-\left[ \frac{1}{2}u^{2}+\chi \right]_{r=0}^{\infty}-  \frac{1}{\rho}[p]_{r=0}^{\infty} \\
 \implies &  -\Omega^{2}a^{2}= - \frac{1}{\rho}(p(r=\infty)-p(r=0)) \\
 \implies & p\left( r=\infty \right)-p(r=0)= \rho \Omega^{2}a^{2}
 \end{align}$$
 
 Now consider the free surface. The surface is an equal pressure surface. Then choose a integration path on the surface. Then path is perpendicular to $\nabla p$. Then we have:
 $$\begin{align}
- \implies & \int_{0}^{\infty}d\vec{r}\cdot(\vec{\omega}\times \vec{u})=- \left[ \frac{1}{2}u^{2} \right]_{r=0}^{\infty}-\chi(r=\infty)+\chi(r=0) \\
+ \implies & \int_{0}^{\infty}d\vec{r}\cdot(\boldsymbol{\omega}\times \mathbf{u})=- \left[ \frac{1}{2}u^{2} \right]_{r=0}^{\infty}-\chi(r=\infty)+\chi(r=0) \\
 \implies & - \Omega^{2}a^{2}=0-g\Delta z \\
 \implies & \Delta z= \frac{\Omega^{2}a^{2}}{g}
 \end{align}$$
@@ -36,9 +36,9 @@ $$\begin{align}
 
 We have:
 $$\begin{align}
- &  \frac{\partial \vec{u}}{\partial t}+\vec{\omega}\times \vec{u}=-\nabla\left( \frac{1}{2}u^{2}+ \frac{p}{\rho}+\chi \right) \\
-\implies & \rho \vec{u}\cdot \frac{\partial \vec{u}}{\partial t}=-\vec{u}\cdot\nabla\left( \frac{1}{2}\rho u^{2}+p+\rho \chi \right) \\
-\implies & \int_{V} dV\rho \vec{u}\cdot \frac{\partial \vec{u}}{\partial t}=-\int_{V}dV \vec{u}\cdot \nabla\left( \frac{1}{2}\rho u^{2}+p+\rho \chi \right) \\
+ &  \frac{\partial \mathbf{u}}{\partial t}+\boldsymbol{\omega}\times \mathbf{u}=-\nabla\left( \frac{1}{2}u^{2}+ \frac{p}{\rho}+\chi \right) \\
+\implies & \rho \mathbf{u}\cdot \frac{\partial \mathbf{u}}{\partial t}=-\mathbf{u}\cdot\nabla\left( \frac{1}{2}\rho u^{2}+p+\rho \chi \right) \\
+\implies & \int_{V} dV\rho \mathbf{u}\cdot \frac{\partial \mathbf{u}}{\partial t}=-\int_{V}dV \mathbf{u}\cdot \nabla\left( \frac{1}{2}\rho u^{2}+p+\rho \chi \right) \\
 \implies & \int_{V}dV \frac{1}{2}\rho \frac{\partial u^{2}}{\partial t}=-\int_{S}dS \hat{n}\cdot \vec{u}\left( p+\rho \chi+ \frac{1}{2}\rho u^{2} \right) \\
 \implies &  \frac{d}{dt}\int_{V}dV \frac{1}{2}\rho u^{2}=- \int_{S}dS\hat{n}\cdot \vec{u}\left( p+\rho \chi+ \frac{1}{2}\rho u^{2} \right)
 \end{align}$$
@@ -49,30 +49,30 @@ A sketch of the streamline is:
 
 The concentration of the pollutant doesn't change because:
 $$\begin{align}
-\frac{Dc}{Dt} & = \frac{\partial c}{\partial t}+\vec{u}\cdot \nabla c \\
- & = -\alpha \beta x^{2}ye^{-\alpha t}+(2\beta xye^{-\alpha t}\hat{x}+\beta x^{2}e^{-\alpha t}\hat{y})\cdot( \alpha \hat{x}-\alpha \hat{y}) \\
+\frac{Dc}{Dt} & = \frac{\partial c}{\partial t}+\mathbf{u}\cdot \nabla c \\
+ & = -\alpha \beta x^{2}ye^{-\alpha t}+(2\beta xye^{-\alpha t}\hat{x}+\beta x^{2}e^{-\alpha t}\hat{y})\cdot( \alpha \hat{\mathbf{x}}-\alpha \hat{\mathbf{y}}) \\
  & = -\alpha \beta x^{2}ye^{-\alpha t}+2\alpha \beta x^{2}ye^{-\alpha t}-\alpha \beta x^{2}ye^{-\alpha t} \\
  & = 0
 \end{align}$$
 In Lagrangian description, we have that:
 $$\begin{align}
-\frac{\partial \vec{x}}{\partial t} & = \alpha Xe^{\alpha t}\hat{x}- \alpha Ye^{-\alpha t}\hat{y} = \alpha x \hat{x}-\alpha y \hat{y}=\vec{u}
+\frac{\partial \mathbf{x}}{\partial t} & = \alpha Xe^{\alpha t}\hat{\mathbf{x}}- \alpha Ye^{-\alpha t}\hat{\mathbf{y}} = \alpha x \hat{\mathbf{x}}-\alpha y \hat{\mathbf{y}}=\mathbf{u}
 \end{align}$$
 We can also compute:
 $$\begin{align}
- \frac{D\vec{u}}{Dt}  & = \frac{\partial\vec{u}}{\partial t}+ \vec{u}\cdot \nabla \vec{u}\\
- & = 0 + \vec{u}\cdot \nabla \vec{u} \\
+ \frac{D\mathbf{u}}{Dt}  & = \frac{\partial \mathbf{u}}{\partial t}+ \mathbf{u}\cdot \nabla \mathbf{u}\\
+ & = 0 + \mathbf{u}\cdot \nabla \mathbf{u} \\
  & =  (\alpha x\partial_{x}-\alpha y \partial_{y})(\alpha x \hat{x}-\alpha y \hat{y}) \\
- & = \alpha^{2}x \hat{x}+\alpha^{2}y \hat{y}\end{align}$$
+ & = \alpha^{2}x \hat{\mathbf{x}}+\alpha^{2}y \hat{\mathbf{y}}\end{align}$$
  We also observe that:
  $$\begin{align}
- \left(\frac{\partial \vec{u}}{\partial t}\right)_{\vec{x}} & =  \frac{\partial}{\partial t}(\alpha Xe^{\alpha t}\hat{x}-\alpha Ye^{-\alpha t}\hat{y}) \\
- & = \alpha^{2}Xe^{\alpha t}\hat{x}+\alpha^{2}Ye^{-\alpha t}\hat{y} \\
- & = \alpha^{2} x \hat{x}+\alpha^{2}y \hat{y} 
+ \left(\frac{\partial \mathbf{u}}{\partial t}\right)_{\mathbf{x}} & =  \frac{\partial}{\partial t}(\alpha Xe^{\alpha t}\hat{\mathbf{x}}-\alpha Ye^{-\alpha t}\hat{\mathbf{y}}) \\
+ & = \alpha^{2}Xe^{\alpha t}\hat{\mathbf{x}}+\alpha^{2}Ye^{-\alpha t}\hat{\mathbf{y}} \\
+ & = \alpha^{2} x \hat{\mathbf{x}}+\alpha^{2}y \hat{\mathbf{y}} 
 \end{align}$$
 So we have that:
-$$\left( \frac{\partial \vec{u}}{\partial t} \right)_{\vec{x}}= \frac{D\vec{u}}{Dt}$$
-These results are expected because the Lagrangian description $\vec{x}(\vec{\alpha}, t)$ acts as the inverse mapping to the Eulerian labeling, explicitly tracking a specific particle's path through space. Since this mapping $\vec{x}(\vec{\alpha},t)$ defines exactly where the particle labeled $\vec{x}$ is at $t$, its time derivative is, by fundamental definition, that particle's velocity $\vec{u}$. For velocity, since the Eulerian velocity field $\vec{u}$ depends on the position $\vec{x}$, and $\vec{x}$ is determined by that Lagrangian mapping, taking the time derivative requires the chain rule, which mathematically results in the material derivative $\frac{D \vec{u}}{Dt}$. 
+$$\left( \frac{\partial \mathbf{u}}{\partial t} \right)_{\mathbf{x}}= \frac{D\mathbf{u}}{Dt}$$
+These results are expected because the Lagrangian description $\mathbf{x}(\boldsymbol{\alpha}, t)$ acts as the inverse mapping to the Eulerian labeling, explicitly tracking a specific particle's path through space. Since this mapping $\vec{x}(\vec{\alpha},t)$ defines exactly where the particle labeled $\mathbf{x}$ is at $t$, its time derivative is, by fundamental definition, that particle's velocity $\mathbf{u}$. For velocity, since the Eulerian velocity field $\mathbf{u}$ depends on the position $\mathbf{x}$, and $\mathbf{x}$ is determined by that Lagrangian mapping, taking the time derivative requires the chain rule, which mathematically results in the material derivative $\frac{D \mathbf{u}}{Dt}$. 
 
 To express $c$ in terms of $x,y,t$, we do:
 $$c=\beta x^{2}ye^{-\alpha t}=\beta(Xe^{\alpha t})^{2}Ye^{-\alpha t}e^{-\alpha t}=\beta X^{2}Y$$
@@ -134,29 +134,37 @@ Then the boundary conditions are parameter-free. Notice that the only parameter 
 # Acheson 2.3
 ## (i)
 
-We substitute the solution into the equation. We have:
-$$\frac{\partial \mathbf{u}}{\partial t}=0$$
+For a particular solution, assume that $v=w=0$ since the pressure gradient is in the x direction. Since the system is translational-symmetric in the x,z direction, we can consider $u=u(y,t)$.
+
+Then:
 $$\begin{align}
-\mathbf{u}\cdot \nabla \mathbf{u} & = v \frac{\partial}{\partial y}\left( \frac{P}{2\mu}(h^{2}-y^{2})\hat{x} \right)=0
+ &  \frac{\partial u}{\partial t}= \frac{P}{\rho}+ \frac{\mu}{\rho} \nabla^{2}u \\
 \end{align}$$
+Assume that the flow is steady. Then:
 $$\begin{align}
-\nabla^{2}\mathbf{u} & = \frac{\partial^{2}}{\partial y^{2}}\left( \frac{P}{2\mu}(h^{2}-y^{2})\hat{x} \right)= - \frac{P}{\mu}\hat{x}
+ & \mu \nabla^{2}u=\mu \frac{\partial^{2}}{\partial y^{2}}u=- P \\
+\implies & u=- \frac{P}{2\mu }y^{2}+Ay+B
 \end{align}$$
-$$\nabla p= - P \hat{x}$$
-Then clearly:
-$$\begin{align}
-\frac{\partial \mathbf{u}}{\partial t}+\mathbf{u}\cdot \nabla \mathbf{u} & = 0= - \left( - \frac{P}{\rho}\hat{x} \right)+ \frac{\mu}{\rho}\left( - \frac{P}{\mu}\hat{x} \right)= - \frac{1}{\rho}\nabla p+ \frac{\mu}{\rho}\nabla^{2}\mathbf{u}
-\end{align}$$
-The boundary condition is satisfied, since at $y=\pm h$, $u= \frac{P}{2\mu}(h^{2}-y^{2})=0$.
+On the boundary we have:
+$$- \frac{P}{2\mu }h^{2}+Ah+B=0,\ - \frac{P}{2\mu }h^{2}-Ah+B=0\implies A=h^{2},B=0 $$
+Then:
+$$u=\frac{P}{2\mu}(h^{2}-y^{2}),\ v=w=0$$
 ## (ii)
 
-Similarly, we compute:
-$$\frac{\partial \mathbf{u}}{\partial t}=0$$
-$$\mathbf{u}\cdot \nabla \mathbf{u}=\hat{z} u_{r}\frac{\partial}{\partial r}\left(  \frac{P}{4\mu}(a^{2}-r^{2}) \right)=0$$
-$$\nabla^{2}\mathbf{u}= \hat{z} \frac{1}{r} \frac{\partial}{\partial r}\left( r \frac{\partial u_{r}}{\partial r} \right)=\hat{z} \frac{1}{r}\left( - \frac{P}{\mu}r \right)=- \frac{P}{\mu}\hat{z} $$
-Then clearly:
-$$\frac{\partial \mathbf{u}}{\partial t}+\mathbf{u} \cdot \nabla \mathbf{u}=0=-\left( - \frac{P}{\rho}\hat{z} \right)+ \frac{\mu}{\rho}\left( - \frac{P}{\mu}\hat{z} \right)=- \frac{1}{\rho}\nabla p+ \frac{\mu}{\rho}\nabla^{2}\mathbf{u}$$
-At $r=a$, we have $u_{z}=\frac{P}{4\mu}(a^{2}-r^{2})=0$ so that the boundary condition is satisfied.
+For a particular solution, assume that $u_{r},u_{\theta}=0$. This is because the pressure gradient is along the z direction. Since the system is rotational-symmetric, we consider $u_{z}=u(r)$. Then:
+$$\frac{\partial u_{z}}{\partial t}=\frac{P}{\rho}+ \frac{\mu}{\rho} \nabla^{2}u_{z }= \frac{P}{\rho}+ \frac{\mu}{\rho} \frac{1}{r} \frac{d}{d r}\left( r \frac{d u_{z}}{d r} \right)$$
+Consider steady solution:
+$$\begin{align}
+ &  \mu \frac{1}{r} \frac{d }{d r }\left( r \frac{d}{dr}u_{z} \right)=-P \\
+\implies & r \frac{d}{dr}u_{z}=- \frac{P}{2\mu}r^{2}+A \\
+\implies &  u_{z}=- \frac{P}{4\mu}r^{2}+A\ln r+B
+\end{align}$$
+Set $A=0$ because of boundedness. Then on the boundary:
+$$\begin{align}
+ & 0=- \frac{P}{4\mu}a^{2}+B\implies B= \frac{P}{4\mu}a^{2}
+\end{align}$$
+So:
+$$u_{z}= \frac{P}{4\mu}(a^{2}-r^{2}),\ u_{r}=u_{\theta}=0$$
 # Acheson 2.5
 
 We have that:
@@ -188,9 +196,11 @@ Now consider $u_{2}$. Notice that the basis $\cos\left( \frac{y}{h}\left( \frac{
 $$u_{2}=  \sum_{m \in \mathbb{Z}} \sum_{n=0}^{\infty} \cos\left( \frac{y}{h}\left( \frac{\pi}{2}+n\pi \right) \right)e^{i\omega_{m} t}  \hat{u}_{2}$$
 Then we must have:
 $$\sum_{m,n} i\omega_{m}\cos\left( \frac{y}{h}\left( \frac{\pi}{2}+n\pi \right) \right)e^{i\omega_{m}t}  \hat{u}_{2}= -\nu\sum_{m,n} \frac{1}{h^{2}}\left( \frac{\pi}{2}+n\pi \right)^{2} \cos\left( \frac{y}{h}\left( \frac{\pi_{2}}{2}+n\pi \right) \right)e^{i\omega_{m}t}\hat{u}_{2}$$
-It suffices to let:
-$$i\omega_{m}=-\nu \frac{1}{h^{2}}\left( \frac{\pi}{2}+n\pi \right)^{2},\ \forall m,n$$
-Due to this constraint, we rewrite the angular frequency as $\omega_{n}$. Then:
+By linear independency, we have:
+$$i\omega_{m} \hat{u}_{2}=- \frac{\nu}{h^{2}}\left( \frac{\pi}{2}+n\pi \right)^{2}\hat{u}_{2}$$
+So for $m,n\text{ such that }\hat{u}_{2}(m,n)\neq 0$, we have
+$$i\omega_{m}=-\nu \frac{1}{h^{2}}\left( \frac{\pi}{2}+n\pi \right)^{2}$$
+Claim that fixing $m$, there exists at most one $n$ such that $\hat{u}_{2}(m,n)=0$. Otherwise, $\omega_{m}$ is mapped to multiple values$\rightarrow \leftarrow$. Due to this constraint, we rewrite the angular frequency as a function of n, denoted by $\omega_{n}$. Then:
 $$i\omega_{n}=- \nu \frac{1}{h^{2}}\left( \frac{\pi}{2}+n\pi \right)^{2},\ n\in \mathbb{N}$$
 Then:
 $$u_{2}=\sum_{n\in \mathbb{N}}\cos\left( \frac{y}{h}\left( \frac{\pi}{2}+n\pi \right) \right)\exp\left( - \nu \frac{1}{h^{2}}\left( \frac{\pi}{2}+n\pi \right)^{2}t \right)  \hat{u}_{2}$$
@@ -270,4 +280,29 @@ Let $t=6\pi$. We have:
 $$x=-6\pi-\sin \tau+\tau,\ y=-\cos \tau-\tau \sin \tau+1$$
 with $0\leq \tau \leq 6\pi$.
  ![[Pasted image 20260201182608.png|center|300]]
+
+# HW1S2
+
+For a particular solution, assume that $u_{r},u_{\theta}=0$. This is because the pressure gradient is along the z direction. Since the system is rotational-symmetric, we consider $u_{z}=u(r)$. Then:
+$$\frac{\partial u_{z}}{\partial t}=\frac{P}{\rho}+ \frac{\mu}{\rho} \nabla^{2}u_{z }= \frac{P}{\rho}+ \frac{\mu}{\rho} \frac{1}{r} \frac{d}{d r}\left( r \frac{d u_{z}}{d r} \right)$$
+Consider steady solution:
+$$\begin{align}
+ &  \mu \frac{1}{r} \frac{d }{d r }\left( r \frac{d}{dr}u_{z} \right)=-P \\
+\implies & r \frac{d}{dr}u_{z}=- \frac{P}{2\mu}r^{2}+A \\
+\implies &  u_{z}=- \frac{P}{4\mu}r^{2}+A\ln r+B
+\end{align}$$
+On the boundary we have:
+$$\begin{align}
+ & 0=- \frac{P}{4\mu}R_{i}^{2}+A\ln R_{i}+B= - \frac{P}{4\mu}R_{o}^{2}+A\ln R_{o }+B \\
+\implies & A= \frac{P}{4\mu} \frac{R_{i}^{2}-R_{o}^{2}}{\ln (R_{i} /R_{o})},\ B= \frac{P}{4\mu} \frac{R_{o}^{2}\ln R_{i}-R_{i}^{2}\ln R_{o}}{\ln(R_{i } /R_{o})}
+\end{align}$$
+Then:
+$$\begin{align}
+u_{z} & =\frac{P}{4\mu}\left( -r^{2}+ \frac{R_{i}^{2}-R_{o}^{2}}{\ln(R_{i} / R_{o})}\ln r+ \frac{R_{o}^{2}\ln R_{i}-R_{i}^{2}\ln R_{o}}{\ln(R_{i} /R_{o})} \right)
+ \\
+ & = \frac{P}{4\mu}\left( -r^{2}+ \frac{R_{o}^{2}\ln(R_{i} /r)-R_{i}^{2}\ln(R_{o} /r)}{\ln(R_{i} /R_{o})} \right)\end{align}$$
+Observe that if $r=R_{o}$, then:
+ $$u_{z}=\frac{P}{4\mu}(-r^{2}+R_{o}^{2})$$So only the flow on the outer boundary converges to the flow in a cylindrical pipe. 
+
+
  
