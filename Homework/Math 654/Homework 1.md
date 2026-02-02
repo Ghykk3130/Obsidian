@@ -300,9 +300,14 @@ Then:
 $$\begin{align}
 u_{z} & =\frac{P}{4\mu}\left( -r^{2}+ \frac{R_{i}^{2}-R_{o}^{2}}{\ln(R_{i} / R_{o})}\ln r+ \frac{R_{o}^{2}\ln R_{i}-R_{i}^{2}\ln R_{o}}{\ln(R_{i} /R_{o})} \right)
  \\
- & = \frac{P}{4\mu}\left( -r^{2}+ \frac{R_{o}^{2}\ln(R_{i} /r)-R_{i}^{2}\ln(R_{o} /r)}{\ln(R_{i} /R_{o})} \right)\end{align}$$
-Observe that if $r=R_{o}$, then:
- $$u_{z}=\frac{P}{4\mu}(-r^{2}+R_{o}^{2})$$So only the flow on the outer boundary converges to the flow in a cylindrical pipe. 
+ & = \frac{P}{4\mu}\left( -r^{2}+ \frac{R_{o}^{2}\ln(R_{i} /r)-R_{i}^{2}\ln(R_{o} /r)}{\ln(R_{i} /R_{o})}  \\
+\right) \\
+ & = \frac{P}{4\mu}\left( -r^{2}+ R_{o}^{2}-R_{o}^{2}+ \frac{R_{o}^{2}\ln(R_{i} /r)-R_{i}^{2}\ln(R_{o} /r)}{\ln(R_{i} /R_{o})} \right) \\
+ & = \frac{P}{4\mu}\left( -r^{2}+R_{o}^{2}+ (R_{o}^{2}-R_{i}^{2}) \frac{\ln(R_{o} /r)}{\ln(R_{i} /R_{o})} \right)\end{align}
+$$
+Observe that for $r\neq 0$, as $R_{i}\rightarrow{0}+$，we have $\frac{\ln(R_{o} /r)}{\ln(R_{i} /R_{o})}\rightarrow 0$. So:
+$$u_{z}\rightarrow \frac{P}{4\mu}(R_{o}^{2}-r^{2})$$
+So the flow that is not on the central axis converges to the flow in a cylindrical pipe. 
 
 
  
