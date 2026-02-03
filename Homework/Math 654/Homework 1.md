@@ -146,7 +146,7 @@ $$\begin{align}
 \implies & u=- \frac{P}{2\mu }y^{2}+Ay+B
 \end{align}$$
 On the boundary we have:
-$$- \frac{P}{2\mu }h^{2}+Ah+B=0,\ - \frac{P}{2\mu }h^{2}-Ah+B=0\implies A=h^{2},B=0 $$
+$$- \frac{P}{2\mu }h^{2}+Ah+B=0,\ - \frac{P}{2\mu }h^{2}-Ah+B=0\implies B=h^{2},A=0 $$
 Then:
 $$u=\frac{P}{2\mu}(h^{2}-y^{2}),\ v=w=0$$
 ## (ii)
