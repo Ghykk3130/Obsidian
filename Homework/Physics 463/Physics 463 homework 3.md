@@ -55,4 +55,6 @@ $$\frac{2\pi}{d}  \hat{\mathbf{n}}= \frac{2\pi}{\frac{a}{\sqrt{ 5 }}}\left( \fra
 ## (c)
 
 The Miller index is clearly $(12)$.
+# Kittel 2.5
+## (a)
 
