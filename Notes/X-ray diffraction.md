@@ -60,3 +60,20 @@ $$\sum_{\mathbf{R}\in \Lambda}e^{i\Delta \mathbf{k}\cdot \mathbf{R}}\neq 0\text{
 在$F=\sum_{\mathbf{R}\in \Lambda}e^{i\Delta \mathbf{k}\cdot \mathbf{R}}S(\Delta \mathbf{k})$中，前面的$\sum_{\mathbf{R}\in \Lambda}e^{i\Delta \mathbf{k}\cdot \mathbf{R}}$是三维中的Dirac comb。所以可以将$S(\Delta \mathbf{k})$当做包络，包住Dirac comb。实际情况中，sample不是无限大，所以$\sum e^{i\Delta \mathbf{k}\cdot \mathbf{R}}$也就不是Dirac comb。
 
 
+考虑$n_{}(\mathbf{r})$在primitive cell中可以分为多个部分，例如多个原子的电子密度。令：
+$$n(\mathbf{r})=\sum_{j}n_{j}(\mathbf{r}-\mathbf{r}_{j})$$
+假设$n_{j}$足够局域，那么：
+$$\begin{align}
+S_{\mathbf{G}} & = \int_{\text{primitive cell}}d^{3}r\sum_{j}n_{j}(\mathbf{r}-\mathbf{r}_{j})e^{i\mathbf{G}\cdot \mathbf{r}} \\ & =\int_{\mathbb{R}^{3}}d^{3}r\sum_{j}n_{j}(\mathbf{r}-\mathbf{r}_{j})e^{i\mathbf{G}\cdot \mathbf{r}} \\
+
+ & = \sum_{j}\int_{\mathbb{R}^{3}}d^{3}rn_{j}(\mathbf{r}-\mathbf{r}_{j})e^{i\mathbf{G}\cdot \mathbf{r}} \\
+ & = \sum_{j}e^{i\mathbf{G}\cdot \mathbf{r}_{j}}\int d^{3}rn_{j}(\mathbf{r})e^{i\mathbf{G}\cdot \mathbf{r}}
+\end{align}$$
+定义：
+
+>[!Note] Definition 3.2
+>Define atomic form factor:
+>$$f_{j}=\int_{\mathbb{R}^{3}}d^{3}rn_{j}(\mathbf{r})e^{i\mathbf{G}\cdot \mathbf{r}}$$
+
+那么sturcture factor可以分解为：
+$$S_{\mathbf{G}}=\sum_{j}e^{i\mathbf{G}\cdot \mathbf{r}_{j}}f_{j}$$
