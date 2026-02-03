@@ -541,12 +541,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Notes/X-ray diffraction.md",
+                "file": "Notes/Solid state.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "X-ray diffraction"
+              "title": "Solid state"
             }
           }
         ],
@@ -602,7 +602,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "domain",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -613,7 +613,8 @@
               "title": "Search"
             }
           }
-        ]
+        ],
+        "currentTab": 3
       }
     ],
     "direction": "horizontal",
@@ -718,8 +719,9 @@
   },
   "active": "9ee4ac001a2cf746",
   "lastOpenFiles": [
-    "Notes/Fourier transform.md",
+    "Experimental/PPMS.md",
     "Notes/X-ray diffraction.md",
+    "Notes/Fourier transform.md",
     "Excalidraw/Drawing 2026-02-03 00.59.24.excalidraw.md",
     "Notes/Ising Model.md",
     "Homework/Physics 463/Physics 463 homework 3.md",
@@ -745,7 +747,6 @@
     "Notes/算子平均值的含义.md",
     "Homework/Physics 512/Physics 512 homework 1.md",
     "Homework/Math 654/Homework problems 1.md",
-    "Experimental/PPMS.md",
     "Experimental/Untitled 2.md",
     "Experimental/Isolation Transformer.md",
     "Notes/球谐函数与旋转表示.md",

@@ -1741,7 +1741,9 @@ $$E_{1}= - \frac{\mu_{0}}{2}\int d^{3}r\vec{M}\cdot \vec{H}= - \frac{\mu_{0}}{2}
 $$E_{2}= \frac{1}{2}\pi R^{2} \sigma_{\text{BW}}^{90^{\circ}}\cdot{4}= 2\pi R^{2}\sigma_{\text{BW}}^{90^{\circ}}$$
 
 这两种configuration，哪种能量低就被favored。所以磁畴是有可能形成的。
+## Ex:
 
+考虑field cool(FC)和zero field cool(ZFC)。在FC时，由于有磁场克服了demagnitization energy，让能量更低，所以降到低温时有非零磁化。在ZFC时，由于形成domain会降低demagnitizaiton energy，克服了domain wall形成的能量，所以形成domain，所以降到低温时不同domain磁化宏观上抵消。
 # 5.3 The Stoner-Wohlfarth model
 
 ^f3485c
