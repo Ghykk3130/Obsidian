@@ -22,14 +22,41 @@ $$\begin{align}
 \end{align}$$
 其中，$\mathbf{k}\cdot \mathbf{r}$为平面波传播至$\mathbf{r}$的phase。$\delta$为从平面波传播到$\mathbf{r}$，到引起的电子振动的滞后产生的phase。$\mathbf{k}^{'}\cdot(\mathbf{r}_{0}-\mathbf{r})$为球面波传播到$\mathbf{r}_{0}$产生的phase。由于lattice point环境都一样，可以假设$\delta$为常数。所以最后：
 $$\begin{align}
-\psi(\mathbf{r}_{0}) & \propto \int_{\text{sample}} d^{3}rn(\mathbf{r}) e^{i(\mathbf{k}\cdot \mathbf{r}+\mathbf{k}^{'}\cdot(\mathbf{r}_{0}-\mathbf{r})+\delta)}
+\psi(\mathbf{r}_{0}) & \propto \int_{\text{sample}} d^{3}rn(\mathbf{r}) e^{i(\mathbf{k}\cdot \mathbf{r}+\mathbf{k}^{'}\cdot(\mathbf{r}_{0}-\mathbf{r})+\delta)} \approx \int_{\mathbb{R}^{3}}d^{3}rn(\mathbf{r})e^{i(\mathbf{k}\cdot \mathbf{r}+\mathbf{k}^{'}\cdot(\mathbf{r}_{0}-\mathbf{r})+\delta)}
 	\end{align}$$因为$\delta,\mathbf{r}_{0}$对于所有lattice point都一样，所以：
-$$\psi(\mathbf{r}_{0})\propto \int_{\text{sample}}d^{3}r n(\mathbf{r})e^{i(\mathbf{k}-\mathbf{k}^{'})\cdot \mathbf{r}}$$
+$$\psi(\mathbf{r}_{0})\propto \int_{\mathbb{R}^{3}}d^{3}r n(\mathbf{r})e^{i(\mathbf{k}-\mathbf{k}^{'})\cdot \mathbf{r}}$$
 定义scattering amplitude：
 
->[!Note] Definition 1
+>[!Note] Definition 2.2.1
 >Define the scattering amplitude:
->$$F=\int_{\text{sample}}d^{3}rn(\mathbf{r})e^{i\Delta \mathbf{k}\cdot \mathbf{r}}$$
+>$$F=\int_{\mathbb{R}^{3}}d^{3}rn(\mathbf{r})e^{i\Delta \mathbf{k}\cdot \mathbf{r}}$$
 
 显然当$\Delta \mathbf{k}\in \Lambda ^{*}$时，所有phase都为零，形成constructive interference。
+# 3. Structure factor, atomic form factor
+
+我们知道$n(\mathbf{r})=n(\mathbf{r}+\mathbf{R}),\ \forall \mathbf{R}\in \Lambda$。所以：
+$$\begin{align}
+F & = \int_{\mathbb{R}^{3}}d^{3}r n(\mathbf{r})e^{i\Delta \mathbf{k}\cdot \mathbf{r}} \\
+ & = \sum_{\mathbf{R}\in \Lambda} \int_{\text{primitive cell}}d^{3}r^{}n(\mathbf{r})e^{i\Delta \mathbf{k}\cdot(\mathbf{r}+\mathbf{R})} \\
+ & = \sum_{\mathbf{R}\in \Lambda}e^{i\Delta \mathbf{k}\cdot \mathbf{R}}\int_{\text{primitive cell}} d^{3}r n(\mathbf{r})e^{i\Delta \mathbf{k}\cdot \mathbf{r}} \\
+ & = \sum_{\mathbf{R}\in \Lambda}e^{i\Delta \mathbf{k}\cdot \mathbf{R}}S(\Delta \mathbf{k})
+\end{align}$$
+注意到：
+$$\begin{align}
+\sum_{\mathbf{R}\in \Lambda}e^{i\Delta \mathbf{k}\cdot \mathbf{R}} & = \sum_{\mathbf{R}\in \Lambda}\exp\left( i\sum_{j} \Delta k_{j}\mathbf{b}_{j} \cdot \sum_{l}n_{l}\mathbf{a}_{l} \right) \\
+ & = \sum_{n_{1},n_{2},n_{3}\in \mathbb{Z} }\exp\left( i 2\pi \sum_{j}\Delta k_{j}n_{j} \right) \\
+ & = \prod_{j}\sum_{n_{j}}\exp(i{2}\pi \Delta k_{j}n_{j}) \\
+ & = \prod_{j}\sum_{m_{j}\in \mathbb{Z}}2\pi\delta(2\pi \Delta k_{j}-2\pi m_{j})
+\end{align}$$
+所以：
+$$\sum_{\mathbf{R}\in \Lambda}e^{i\Delta \mathbf{k}\cdot \mathbf{R}}\neq 0\text{ for }\Delta \mathbf{k}\in \Lambda ^{*}$$
+所以只有在这些点上，$F$才非零。定义：
+
+>[!Note] Definition 3.1
+>Define the structure factor:
+>$$S_{\mathbf{G}}= \int_{\text{primitive cell}}d^{3}r n(\mathbf{r})e^{i\mathbf{G}\cdot \mathbf{r}}$$
+## Remark
+
+在$F=\sum_{\mathbf{R}\in \Lambda}e^{i\Delta \mathbf{k}\cdot \mathbf{R}}S(\Delta \mathbf{k})$中，前面的$\sum_{\mathbf{R}\in \Lambda}e^{i\Delta \mathbf{k}\cdot \mathbf{R}}$是三维中的Dirac comb。所以可以将$S(\Delta \mathbf{k})$当做包络，包住Dirac comb。实际情况中，sample不是无限大，所以$\sum e^{i\Delta \mathbf{k}\cdot \mathbf{R}}$也就不是Dirac comb。
+
 
