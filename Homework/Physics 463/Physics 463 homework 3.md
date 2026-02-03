@@ -40,4 +40,19 @@ Note that any lattice point must belong to some plane defined this way. Since gi
 $$\bigcup_{n\in \mathbb{Z}}\{ \mathbf{R}|\mathbf{G}\cdot \mathbf{R}=2\pi m \}=\text{Bravais lattice}$$
 Then clearly, the normal of $\{ \mathbf{R}|\mathbf{G}\cdot \mathbf{R}=2\pi m \}$ is along $\mathbf{G}$ by the definition of planes. The plane separation is clearly:
 $$d= \frac{1}{G} (2\pi (m+1)-2\pi m)= \frac{2\pi}{G}$$
+# 2.
+## (a)
+
+Choose the primitive vectors $\mathbf{a}_{1}=a \hat{\mathbf{x}},\ \mathbf{a}_{2}=a  \hat{\mathbf{y}}$. Then the reciprocal primitive vectors are:
+$$\mathbf{b}_{1}= \frac{2\pi}{a}  \hat{\mathbf{x}},\ \mathbf{b}_{2}= \frac{2\pi}{a}  \hat{\mathbf{y}}$$
+Let $\mathbf{R}=n_{1}\mathbf{a}_{1}+n_{2}\mathbf{a}_{2}$.Notice that the lattice planes are given by:
+$$\frac{n_{1}}{2na}+ \frac{n_{2}}{na}=1,\ n\in \mathbb{Z}$$
+Then the normal vectors are in the direction $(1,2)$. In terms of reciprocal primitive vectors, it is in the direction $\mathbf{b}_{1}+2\mathbf{b}_{2}$. Notice that $g.c.d.(1,2)=1$, so it is the shortest reciprocal lattice corresponding to the lattice planes. So $\mathbf{G}=\mathbf{b}_{1}+2\mathbf{b}_{2}$.
+## (b)
+
+It is easy to see from geometry that $d= \frac{a}{\sqrt{ 5 }}$. $\hat{\mathbf{n}}=\left( \frac{1}{\sqrt{ 5 }}, \frac{2}{\sqrt{ 5 }} \right)$. Then:
+$$\frac{2\pi}{d}  \hat{\mathbf{n}}= \frac{2\pi}{\frac{a}{\sqrt{ 5 }}}\left( \frac{1}{\sqrt{ 5 }}\hat{x}+ \frac{2}{\sqrt{ 5 }}\hat{y} \right)=\frac{2\pi}{a}(\hat{x}+2\hat{y})=\mathbf{b}_{1}+2\mathbf{b}_{2}=\mathbf{G}$$
+## (c)
+
+The Miller index is clearly $(12)$.
 
