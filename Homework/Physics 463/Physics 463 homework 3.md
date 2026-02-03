@@ -32,3 +32,12 @@ $$\begin{align}
 >[!Right]
 >$\blacksquare$
 
+Now the non-empty set $\{ \mathbf{R}|\mathbf{G}\cdot \mathbf{R}=2\pi n \}$ forms a plane. Note that these planes are disjoint:
+$$\{ \mathbf{R}|\mathbf{G}\cdot \mathbf{R}=2\pi n \}\cap \{ \mathbf{R}|\mathbf{G}\cdot \mathbf{R}=2\pi m \}=\phi \text{ for }m\neq n$$
+Since fix the projection of a lattice vector $\mathbf{R}$ onto $\mathbf{G}$ is unique. 
+
+Note that any lattice point must belong to some plane defined this way. Since given $\mathbf{R}$, we must have $\mathbf{G}\cdot \mathbf{R}=2\pi n\text{ for some }n$. Therefore:
+$$\bigcup_{n\in \mathbb{Z}}\{ \mathbf{R}|\mathbf{G}\cdot \mathbf{R}=2\pi m \}=\text{Bravais lattice}$$
+Then clearly, the normal of $\{ \mathbf{R}|\mathbf{G}\cdot \mathbf{R}=2\pi m \}$ is along $\mathbf{G}$ by the definition of planes. The plane separation is clearly:
+$$d= \frac{1}{G} (2\pi (m+1)-2\pi m)= \frac{2\pi}{G}$$
+
