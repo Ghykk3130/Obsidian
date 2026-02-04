@@ -57,4 +57,45 @@ $$\frac{2\pi}{d}  \hat{\mathbf{n}}= \frac{2\pi}{\frac{a}{\sqrt{ 5 }}}\left( \fra
 The Miller index is clearly $(12)$.
 # Kittel 2.5
 ## (a)
+![[Drawing 2026-02-03 17.30.27.excalidraw|center|400]]
+Note that the atoms with numbers can be chosen as bases. Choose the primitive vectors along the three edges extending from 1. Let the length of the cube be $a$. Then:
+$$\begin{align}
+\mathbf{a}_{1}= a \hat{\mathbf{x}},\ \mathbf{a}_{2}= a  \hat{\mathbf{y}},\ \mathbf{a}_{3}=a  \hat{\mathbf{z}}
+\end{align}$$
+Then the positions of atoms are given by:
+$$\begin{array}
+{|c|c|c|c|}\hline 
+ 1:(0,0,0)  &   2:\left( \frac{1}{2}, \frac{1}{2},0  \right)   & 3  :\left( 0, \frac{1}{2}, \frac{1}{2}  \right) &  4:\left( \frac{1}{2}, 0 , \frac{1}{2} \right) \\ \hline
+  5:\left( \frac{1}{4}, \frac{1}{4}, \frac{3}{4} \right) & 6:\left( \frac{3}{4}, \frac{3}{4}, \frac{3}{4}  \right) & 7:\left( \frac{1}{4}, \frac{3}{4}, \frac{1}{4} \right) & 8:\left( \frac{3}{4}, \frac{1}{4}, \frac{1}{4} \right) \\
+\hline  
+\end{array}$$
+Let $\mathbf{G}=\sum_{j}v_{j}\mathbf{b}_{j}$, we calculate the phases by $\mathbf{G}\cdot \mathbf{r}$:
+$$\begin{array}
+{|c|c|c|}\hline {1}:0 & 2:\pi(v_{1}+v_{2}) & 3:\pi(v_{2}+v_{3}) & 4:\pi (v_{1}+v_{3}) \\
+\hline 5: \frac{\pi}{2}v_{1}+ \frac{\pi}{2}v_{2}+ \frac{3}{2}\pi v_{3} & 6: \frac{3}{2}\pi(v_{1}+v_{2}+v_{3}) & 7: \frac{\pi}{2}v_{1}+ \frac{3}{2}\pi v_{2}+ \frac{\pi}{2}v_{3} & 8: \frac{3}{2}\pi v_{1}+ \frac{\pi}{2} v_{2}+ \frac{\pi }{2}v_{3} \\
+\hline
+\end{array}$$
+Since these are all carbon atoms, the atomic form factors $f$ are the same. Then we have:
+$$\begin{align}
+S_{\mathbf{G}} & =\left( \exp(i\cdot{0})+ \exp\left(  i\pi(v_{1}+v_{2}) \right) +\exp(i\pi(v_{2}+v_{3}))+\exp(i\pi(v_{1}+v_{3}))+\exp\left( i \frac{\pi}{2}(v_{1}+v_{2}+3v_{3}) \right)+\exp\left(  i \frac{3}{2}\pi (v_{1}+v_{2}+v_{3})\right)+\exp\left( i \frac{\pi}{2}(v_{1}+3v_{2}+v_{3}) \right)+\exp\left( i \frac{\pi}{2}(3v_{1}+v_{2}+v_{3}) \right)\right)f \\
+ & = (1+(-1)^{v_{1}+v_{2}}+(-1)^{v_{2}+v_{3}}+(-1)^{v_{1}+v_{3}}+i^{v_{1}+v_{2}+3v_{3}}+(-i)^{v_{1}+v_{2}+v_{3}}+i^{v_{1}+3v_{2}+v_{3}}+i^{3v_{1}+v_{2}+v_{3}} )f \\
+ & = (1+(-1)^{v_{1}+v_{2}}+(-1)^{v_{2}+v_{3}}+(-1)^{v_{1}+v_{3}}+i^{v_{1}+v_{2}+v_{3}}((-1)^{v_{1}}+(-1)^{v_{2}}+(-1)^{v_{3}}+(-1)^{v_{1}+v_{2}+v_{3}}))f
+\end{align}$$
+## (b)
+
+Note that $S_{\mathbf{G}}$ depends only on whether $v_{j}$'s are odd or even, not on their magnitude. 
+
+Suppose $v_{1},v_{2},v_{3}$ are all odd. Then the phase is complex since $i^{v_{1}+v_{2}+v_{3}}$ is imaginary. Note that the real part $1+(-1)^{v_{1}+v_{2}}+(-1)^{v_{2}+v_{3}}+(-1)^{v_{1}+v_{3}}=-2\neq 0$. So $S_{\mathbf{G}}\neq 0$.
+
+Suppose one of $v_{1},v_{2},v_{3}$ is odd, others are even. Without loss of generality, let $v_{1}$ be odd. Then the real part of the phase is $-1+1+1-1=0$. The imaginary part of the phase is $-1+1+1-1=0$. So $S_{\mathbf{G}}=0$.
+
+Suppose two of $v_{1},v_{2},v_{3}$ are odd, the other is even. Without loss of generality, let $v_{1},v_{2}$ be odd. Then the real part of the phase is $1+1-1-1=0$. The imaginary part of the phase is $-1-1+1+1=0$. So $S_{\mathbf{G}}=0$.
+
+Suppose $v_{1},v_{2},v_{3}$ are all even. If $\frac{v_{1}+v_{2}+v_{3}}{2}$ is even, then the phase factor is $4+4(-1)^{\frac{v_{1}+v_{2}+v_{3}}{2}}=8\neq 0$. If $\frac{v_{1}+v_{2}+v_{3}}{2}$ is odd, then the phase factor is $0$.
+
+Therefore, for $S_{\mathbf{G}}\neq 0$, we either have $v_{1},v_{2},v_{3}$ all odd, or $v_{1},v_{2},v_{3}, \frac{v_{1}+v_{2}+v_{3}}{2}$ all even. The latter one is equivalent to $v_{1},v_{2},v_{3}$ all even and $v_{1}+v_{2}+v_{3}=4n\text{ for some }n\in \mathbb{Z}$.
+
+
+
+
 
