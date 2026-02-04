@@ -77,3 +77,30 @@ S_{\mathbf{G}} & = \int_{\text{primitive cell}}d^{3}r\sum_{j}n_{j}(\mathbf{r}-\m
 
 那么sturcture factor可以分解为：
 $$S_{\mathbf{G}}=\sum_{j}e^{i\mathbf{G}\cdot \mathbf{r}_{j}}f_{j}$$
+## Ex:
+
+考虑一维双分子链的衍射。令入射波波矢垂直于分子链。Let the x axis align with the atom chain. 
+![[Drawing 2026-02-03 20.13.42.excalidraw|center|300]]
+Then the scattering amplitude is:
+$$F=\sum_{\mathbf{R}}e^{i\Delta \mathbf{k}\cdot \mathbf{R}}(f_{A}e^{i\Delta \mathbf{k}\cdot \mathbf{r}_{A}}+f_{B}e^{i\Delta \mathbf{k}\cdot \mathbf{r}_{B}})$$
+where $\mathbf{r}_{A},\mathbf{r}_{B}$ are the positions of $A,B$ in their primitive cell. Without loss of generality, let the origin of the primitive cell coincide with $A$. Then:
+$$\mathbf{r}_{A}=0,\ \mathbf{r}_{B}= \frac{a}{2}  \hat{\mathbf{x}}$$
+Observe that $\Delta k_{x}= k\cos \theta$. So:
+$$\begin{align}
+F=\sum_{\mathbf{R}}e^{i\Delta \mathbf{k}\cdot \mathbf{R}}\left( f_{A}+f_{B}e^{i \frac{ka}{2} \cos \theta} \right)
+\end{align}$$
+So we obtain the intensity:
+$$I\propto|f_{A}+f_{B}e^{i \frac{ka}{2}\cos \theta}|^{2}=|f_{A}+f_{B}\exp\left( i \frac{\pi a}{\lambda}\cos \theta \right)|^{2}$$
+Note that the constructive interference condition is:
+$$n\lambda=a\cos \theta$$
+If $n$ is odd, at peaks, we have $\frac{a\cos \theta}{\lambda}$ odd. So $I\propto|f_{A}-f_{B}|^{2}$. If $n$ is even, at peaks, we have $\frac{a\cos \theta}{\lambda}$ even. So $I\propto|f_{A}+f_{B}|^{2}$.
+
+>[!Warning]
+>注意constructive interference条件为$n\lambda=a\cos \theta$。这必须要将lattice point当做出射波波源来做。因为lattice point才是保持周期性的最小单位。单独用$A,B$原子作的话每个原子可能$\delta$系数都不同，无法计量相位差。
+
+
+
+
+
+
+
