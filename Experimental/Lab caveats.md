@@ -1,0 +1,6 @@
+- Change angles if attaching wires is hard.
+- If contact resistance too large, try reattaching the wire to the puck several times.
+- If zero field, room temperature, order of magnitude in multimeters not the same, means anomaly. Noise should be of the same order of magnitude.
+- Check sample contact one day before loading. 
+- When doing the thermal transport data analysis, the sign of the voltages, the sign of delta T should be checked. The former depends on the axis choice and the wire polarities. The latter depends on the sign of the heater signal. The sign of the delta T should be such that it is positive.
+

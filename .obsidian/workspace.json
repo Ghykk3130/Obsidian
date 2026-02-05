@@ -597,12 +597,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Notes/Bose-Einstein statistics与BEC.md",
+                "file": "Experimental/Lab caveats.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Bose-Einstein statistics与BEC"
+              "title": "Lab caveats"
             }
           }
         ],
@@ -773,6 +773,10 @@
   },
   "active": "574bf027e2e76d81",
   "lastOpenFiles": [
+    "Experimental/Untitled 1.md",
+    "Experimental/Untitled.md",
+    "Experimental/Transistor.md",
+    "Notes/Bose-Einstein statistics与BEC.md",
     "Notes/Berry phase.md",
     "Notes/Baker-Campbell-Hausdorff Formula.md",
     "Notes/AB效应.md",
@@ -796,10 +800,6 @@
     "Notes/Solid state.md",
     "Experimental/PPMS.md",
     "Excalidraw/Drawing 2026-02-03 00.59.24.excalidraw.md",
-    "Notes/Ising Model.md",
-    "Homework/Math 654/Homework 1.md",
-    "Notes/流体的描述.md",
-    "Homework/Math 654/Untitled.md",
     "Pictures/Pasted image 20260202133453.png",
     "Pictures/Pasted image 20260202133427.png",
     "Pictures/Pasted image 20260202133401.png",
