@@ -597,12 +597,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Experimental/Lab caveats.md",
+                "file": "Notes/Untitled.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Lab caveats"
+              "title": "Untitled"
             }
           }
         ],
@@ -773,6 +773,9 @@
   },
   "active": "574bf027e2e76d81",
   "lastOpenFiles": [
+    "Notes/Untitled 1.md",
+    "Experimental/N2 refilling.md",
+    "Experimental/Lab caveats.md",
     "Experimental/Untitled 1.md",
     "Experimental/Untitled.md",
     "Experimental/Transistor.md",
@@ -797,9 +800,6 @@
     "Excalidraw/Drawing 2026-02-03 17.30.27.excalidraw.md",
     "Pictures/Pasted Image 20260203173038_362.png",
     "Notes/Fourier transform.md",
-    "Notes/Solid state.md",
-    "Experimental/PPMS.md",
-    "Excalidraw/Drawing 2026-02-03 00.59.24.excalidraw.md",
     "Pictures/Pasted image 20260202133453.png",
     "Pictures/Pasted image 20260202133427.png",
     "Pictures/Pasted image 20260202133401.png",
