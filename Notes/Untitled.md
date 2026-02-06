@@ -1,19 +1,19 @@
-### **1. Three Things Learned About the Development of the Information Age**
+### 1.
 
-First, I learned about the profound significance of Shannon’s 1937 thesis. While I knew that computers run on logic gates, I hadn't fully appreciated that the mapping of Boolean algebra onto physical electrical circuits was a singular, revolutionary insight by a 21-year-old student. This realization that "logic is physical" provided the foundational blueprint for all digital computing hardware, shifting the paradigm from mechanical calculation to logical processing.
+After watching the video, the most impressive thing to me was Shannon’s 1937 thesis. It’s wild to think that he just looked at a bunch of messy electrical relays and realized they were essentially doing Boolean algebra. Before him, people just saw switches as hardware, but he formalized them with mathematics. 
 
-Second, I gained a new perspective on the radical abstraction of "information." Before Shannon, information was inextricably linked to semantics and human understanding. Shannon’s genius was in recognizing that for communication to be mathematically rigorous, it must be decoupled from meaning. By treating information as a degree of uncertainty (or the reduction thereof), he created a universal framework that allowed us to quantify something previously thought to be qualitative.
+Another thing that stood out was how he decided to separate meanings from messages . Usually, we think of information as "meaning," but Shannon realized that for a mathematical theory to work, you have to decouple the two. He focused on the choice between possibilities rather than the content itself. It demonstrates how Shannon used to think about things in an abstract way. 
 
-Third, I learned how the "Bit" acted as a unifying force. Prior to Shannon, different communication systems (telegraphy, telephony, radio) were treated as separate physical problems. Shannon proved that the "bit" is the universal currency of communication. This standardization is what eventually allowed the convergence of all media into the digital ecosystem we use today, making the hardware agnostic to the type of data it carries.
+The origin of the "Bit" is also interesting. You don’t usually think about it, but by formalizing binary as the standard, he basically gave the tech world a common tongue. It took all these isolated inventions and finally forced them to play nice together to initiate the information age.
 
-### **2. Three Things That Need to Be Explained More**
+### 2. 
 
-First, the connection between **Information Entropy and Thermodynamic Entropy** deserves a much deeper technical explanation. The video mentions that Shannon used the word "entropy" at the suggestion of John von Neumann because the mathematical form of his uncertainty measure was identical to the one found in statistical mechanics. As a physics student, I am eager to understand if this is a mere formalistic coincidence or if there is a fundamental physical constraint that links the microstates of a thermodynamic system to the logical states of an information system.
+As a physics student, I’m curious about the connection between Information Entropy and Thermodynamic Entropy. The video mentions that Von Neumann told Shannon to use the word "entropy" because the math looked the same, but it feels a bit like a "teaser." Is this just a formal coincidence in the formulas, or is there a deeper physical link between the microstates of a gas and the bits in a message? 
 
-Second, the **Noisy Channel Coding Theorem** is a concept that feels highly counterintuitive. The video suggests that error-free transmission is possible even in a noisy environment, provided the rate is below the "channel capacity." I would like to see a more detailed explanation of the mechanism behind this—specifically, how adding redundancy (error-correcting codes) can perfectly compensate for physical noise without requiring an infinite amount of time or energy.
+Second, the Noisy Channel Coding Theorem sounds almost impossible. The idea that you can send data with zero error through a noisy line, as long as you stay under a certain limit, is counterintuitive. I get the basic idea of adding "extra bits" for redundancy, but how do you add enough redundancy to fix errors without making the whole transmission too slow?
 
-Third, the **transition from Analog to Digital** in the context of the 1940s hardware requires more detail. At a time when the world was entirely vacuum tubes and continuous waves, the proposal to discretize all communication into pulses must have faced significant engineering skepticism. I would like to understand the specific signal-processing challenges Shannon and his colleagues faced when trying to prove that discrete bits were physically more robust against attenuation and interference than continuous analog signals.
+Third, I’d like to hear more about the engineering skepticism with digital circuits. The 1940s were all about analog signals and continuous waves. Moving to discrete digital must have seemed bold. What were the actual physical hardware hurdles they faced at Bell Labs when trying to prove that digital was actually more robust than analog?
 
-### **3. Speculation Question**
+### 3. 
 
-As we approach the physical "Shannon Limit" in our current fiber-optic and silicon-based infrastructure, will the development of a "Quantum Information Theory"—which replaces the binary bit with the probabilistic qubit—allow us to bypass these classical limits and redefine the fundamental capacity of global communication networks?
+We’re getting closer and closer to the "Shannon Limit" with our current fiber and silicon tech, so is the next big leap going to require a Quantum Information Theory that replaces the classic bit with qubits to fundamentally break through these classical communication limits?
