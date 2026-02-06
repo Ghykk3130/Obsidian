@@ -1,6 +1,14 @@
-# 1. Brillouin函数
+# 1. Brillouin函数与paramagnet
 
-考虑磁场中的spin-j粒子。我们在正则系综计算该粒子构成晶体的平均magnetization。令$m_{j}$为磁量子数，容易得到：
+考虑磁场中的spin-j粒子。spin之间没有coupling，alignment完全由磁场操纵，为paramagnet。
+
+令磁场平行于z-axis，为quantization axis。我们写出Hamiltonian：
+$$H=-\mu_{B}g\mathbf{J}\cdot \mathbf{B}$$
+我们在正则系综计算该粒子构成晶体的平均magnetization。正则系综有density operator：
+$$\rho= \frac{e^{-\beta H}}{Z}\ket{n} \bra{n} $$
+其中$\ket{n}$是Hamiltonian本征态。那么此处显然：
+$$\rho= \frac{1}{Z}\exp\left( \beta \mu_{B}gBm_{j} \right)\ket{m_{j}} \bra{m_{j}} $$
+容易得到：
 $$\begin{align}
   \langle m_{j} \rangle & = \frac{1}{Z}\sum_{m_{j}=-j}^j m_{j}\exp(\beta \mu_{B}Bgm_{j}) \\
  & =  \frac{\partial}{\partial(\beta \mu_{B}Bg)}\ln Z
@@ -35,7 +43,7 @@ $B_{1 /2}(y)= \tanh(y)$ reduces to spin-1/2 systems.
 
 ## Ex:
 
-室温低场下$y\ll 1$。我们展开Brillouin函数。注意到对于$\coth$：
+高温低场下$y\ll 1$。我们展开Brillouin函数。注意到对于$\coth$：
 $$\begin{align}
 \coth x & = \frac{\cosh x}{\sinh x} \\
  & = \frac{1+ \frac{1}{2}x^{2}+ \frac{1}{4!}x^4+\dots }{x+ \frac{1}{3!}x^{3}+ \frac{1}{5!}x^{5}+\dots } \\
@@ -52,4 +60,38 @@ $$\chi = \frac{\partial M}{\partial B}= \frac{1}{3}n(\mu_{B}g)^{2}\beta j(j+1) \
 ## Ex:
 
 低温高场下，$B_{j} \approx 1$。那么$M \approx M_{s}$ saturates。
+
+# 2. FM相
+
+假设无orbital angular momentum。选择z-axis为quantization axis，令$\mathbf{B} \parallel z\text{-axis}$。考虑Hamiltonian：
+$$H=-\sum_{i,j}J_{ij}\mathbf{S}_{i}\cdot \mathbf{S}_{j}-\mu_{B}g\sum_{i}\mathbf{B}\cdot \mathbf{S}_{i}$$
+在铁磁中，$J_{ij}>0$。为了引入平均场，我们作：
+$$\begin{align}
+H & =-\sum_{i}\mu_{B}g\mathbf{S}_{i}\cdot\left(  \frac{1}{\mu_{B}g}\sum_{j}J_{ij}\mathbf{S}_{j}+B \right)
+\end{align}$$
+令平均场为：
+$$\mathbf{B}_{mf}= \left\langle\frac{1}{\mu_{B}g}\sum_{j}J_{ij}\mathbf{S}_{j}\right\rangle$$
+显然，$\mathbf{B}_{mf}\propto \mathbf{M}$。我们令比例常数为$\lambda$。显然$J_{ij}>0 \implies \lambda> 0$。那么我们有磁场$\mathbf{B}+\mathbf{B}_{mf}$。Hamiltonian写为：
+$$H=-\mu_{B}g\sum_{i}\mathbf{S}_{i}\cdot(\mathbf{B}+\lambda \mathbf{M})$$
+根据对称性，假设$\mathbf{B}_{mf}=\lambda \mathbf{M}\parallel \mathbf{B}$。于是，我们解：
+$$\begin{align}
+ & M=M_{s}B_{j}(y),\ y= \beta\mu_{B}(B+\lambda {M})j
+\end{align}$$
+## 2.1 零场解
+
+我们将$M$写为$y$的函数：
+$$M=M_{s}B_{j}(y),\ M= \frac{y}{\lambda\beta \mu_{B}j}- \frac{B}{\lambda}$$
+零场时，phase transition发生在两曲线相切时。从一个交点变为三个交点。高温条件下，$B_{j}(y)\approx \frac{j+1}{3j}y$。且$\frac{B}{\lambda}\approx 0$。令斜率相等得到：
+$$\begin{align}
+ & \frac{j+1}{3j}= \frac{1}{\lambda\beta \mu_{B}j}\implies T_{C}= \frac{j+1}{3k}M_{s}\lambda \mu_{B}
+\end{align}$$
+称为Curie温度。
+![[Pasted image 20260205221007.png|center|400]]
+
+>[!Note] Definition 2.1
+>Define the order of phase transition as the order of derivatives of $F$ that is discontinous.
+
+因为$dF=-SdT-pdV-mdB$。所以$M \propto \frac{\partial F}{\partial B}$。而$M$的导数在Curie温度不连续，所以是second-ordre phase transition。
+## 2.2 低场解
+
 
