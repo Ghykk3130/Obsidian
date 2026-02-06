@@ -157,13 +157,64 @@ $$\mathbf{B}_{+}=-|\lambda|\mathbf{M}_{-},\ \mathbf{B}_{-}=-|\lambda|\mathbf{M}_
 
 考虑零场。在两个lattice中作统计力学。显然：
 $$M_{\pm}=M_{s}B_{j}(y_{\pm}),\ y_{\pm}=-\beta g\mu_{B}|\lambda|M_{\mp}j$$
-令$M=|M_{+}|=|M_{-}|$。则：
-$$M=M_{s}B_{j}(y),\ y=\beta g\mu_{B}|\lambda|Mj$$
+在低温下假设$M_{+}=-M_{-}$。则：
+$$M_{\pm}=M_{s}B_{j}(y_{\pm}),\ y_{\pm}=\beta g\mu_{B}|\lambda|M_{\pm}j$$
 同理可解得sublattice的相变温度：
 $$T_{N}= \frac{j+1}{3k}M_{s}|\lambda| g \mu_{B}$$
 称为Neel温度。在Neel温度以下，两个sublattice各自保持“铁磁”相，但是自旋刚好正反抵消。Neel温度以上，两个sublattice都变成顺磁相，宏观上同样没有自旋。
 ## 3.2 低场解
 
+高温时：
+
+>[!Success] Proposition 3.2.1 
+Under high temperature ($T>T_{N}$), $\chi \propto \frac{1}{T+T_{N}}$
+
+高温下，可作近似：
+$$B_{j}(y)\approx \frac{j+1}{3j}y$$
+于是：
+$$\begin{align}
+ M_{\pm} & = M_{s}B_{j}(y) \\
+ & \approx M_{s} \frac{j+1}{3j}y \\
+ & = M_{s} \frac{j+1}{3j} \cdot \beta g\mu_{B}(B-|\lambda| M_{\mp})j 
+\end{align}$$
+在高温下，in particular高于$T_{N}$，以至于两个sublattice都在各自的顺磁相。那么假设$M_{+}=M_{-}=M$。那么：
+$$\begin{align}
+M & =M_{s} \frac{j+1}{3j}\cdot \beta g\mu_{B}(B-|\lambda|M)j \\
+
+ & = M_{s} \frac{1}{3} \beta g\mu_{B}(B-|\lambda| M_{}) \frac{3kT_{N}}{M_{s}\lambda g\mu_{B}} \\
+ & = \frac{T_{N}}{T\lambda}(B-|\lambda| M_{}) \\
+\end{align}$$
+解得：
+$$M_{\pm}= \frac{T_{N}}{T+T_{N}} \frac{B}{|\lambda|}$$
+于是：
+$$\chi= \frac{T_{N}}{T+T_{N}} \frac{1}{|\lambda|}\propto \frac{1}{T+T_{N}}$$
+
+>[!Right]
+>$\blacksquare$
+
+低温时，我们定性讨论。令$T=0$，那么两个sublattice antialign。那么：
+- 若沿着spin方向施加小磁场，两个sublattice的spin不动。因为它们的Zeeman能刚好抵消。如果spin动了，使得不再完全antialigned，反而Heisenberg能会变高，显然不行。所以spin仍然保持完全antialigned的状态。$\chi_{\parallel}=0$
+- 若垂直spin方向施加小磁场，两个sublattice spin都会被往磁场方向扯。一般Zeeman能大于Heisenberg exchange。所以和磁场align带来的Zeemann能减少被favor。$\chi_{\perp}\neq 0$
+
+现升高小温度，sitll below $T_{N}$。则molecular field由于热涨落被削减。Parallel情况有可能两个sublattice上molecular field削减的不均等，然后瞬间被Zeeman能克服，导致spin旋转。而且spin一旦旋转，这种不均等进一步增加，使得$M$对$B$敏感。而perpendicular情况显然不受影响，response仍然和$T=0$时相同。于是：
+![[Pasted image 20260206010124.png|center|500]]
+在$T_{N}$处发生三阶相变。
+
+# 3.3 Spin flop, spin flip
+
+考虑在上面的系统加上anisotropy $- \frac{1}{2} \Delta(\cos ^{2}\theta+\cos ^{2}\phi)$。考虑沿easy-axis加磁场
+![[Pasted image 20260206011230.png|center|200]]
+那么：
+$$H=AM^{2}\cos(\theta+\phi)-BM\cos \theta-BM\cos \phi-  \frac{1}{2} \Delta(\cos ^{2}\theta+\cos ^{2}\phi)$$
+AFM相对应$\theta=0,\phi=\pi$。解得能量：
+$$E=-AM^{2}-\Delta$$
+考虑这样一个相，有$\theta=\phi\neq 0$。则：
+$$H=AM^{2}\cos(2\theta)-2BM\cos \theta-\Delta \cos ^{2}\theta$$
+令$\theta_{0}$为极值点，解得这个相对应的能量。由于$B$是任意的，显然可以取到$B$使得这个相比AFM相能量低。这在high field可以发生。称为spin-flop transition。例如下图$0-B_{1}$是AFM，$B_{1}$发生spin-flop，$B_{2}$饱和。
+![[Pasted image 20260206012358.png|center|300]]
+
+当$\Delta$极强，spin-flop的$\theta=\phi$会很小，以至于几乎是完全align。称为spin-flip transition。
+![[Pasted image 20260206012740.png|center|300]]
 
 
 
