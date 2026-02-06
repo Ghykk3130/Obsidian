@@ -3,4 +3,5 @@
 - If zero field, room temperature, order of magnitude in multimeters not the same, means anomaly. Noise should be of the same order of magnitude.
 - Check sample contact one day before loading. 
 - When doing the thermal transport data analysis, the sign of the voltages, the sign of delta T should be checked. The former depends on the axis choice and the wire polarities. The latter depends on the sign of the heater signal. The sign of the delta T should be such that it is positive.
+- If want to cut with precision, e.g. copper block in transport setup, make sure to press down the subject to the metal block so that the surface are closely in contact. Or the angle wouldn't be accurate.
 

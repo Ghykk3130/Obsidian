@@ -625,12 +625,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Notes/Magnetic ordering.md",
+                "file": "Experimental/Reflections.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Magnetic ordering"
+              "title": "Reflections"
             }
           }
         ],
@@ -701,8 +701,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200,
-    "collapsed": true
+    "width": 200
   },
   "right": {
     "id": "9003d078f8dbc4ed",
@@ -802,13 +801,15 @@
   },
   "active": "a10410698cd2bda2",
   "lastOpenFiles": [
+    "Experimental/Untitled 1.md",
+    "Experimental/Untitled.md",
+    "Notes/Magnetic ordering.md",
     "Pictures/Pasted image 20260206012740.png",
     "Pictures/Pasted image 20260206012358.png",
     "Pictures/Pasted image 20260206011230.png",
     "Pictures/Pasted image 20260206010124.png",
     "Pictures/Pasted image 20260205234116.png",
     "Excalidraw/Drawing 2026-02-05 22.53.26.excalidraw.md",
-    "Notes/Magnetic ordering.md",
     "Pictures/Pasted image 20260205221007.png",
     "Pictures/Pasted image 20260205210820.png",
     "Notes/Hubbard model.md",
@@ -819,9 +820,7 @@
     "Notes/Untitled.md",
     "Notes/Untitled 1.md",
     "Experimental/N2 refilling.md",
-    "Experimental/Lab caveats.md",
-    "Experimental/Untitled 1.md",
-    "Experimental/Untitled.md",
+    "Experimental/Reflections.md",
     "Experimental/Transistor.md",
     "Notes/Bose-Einstein statistics与BEC.md",
     "Notes/Berry phase.md",
@@ -837,7 +836,6 @@
     "Pictures/Pasted Image 20260203173038_362.png",
     "Pictures/Pasted image 20260202133453.png",
     "Pictures/Pasted image 20260202133427.png",
-    "Pictures/Pasted image 20260202133401.png",
     "Homework/Physics 512",
     "Homework/Math 654",
     "Notes",
