@@ -71,11 +71,11 @@ H & =-\sum_{i}\mu_{B}g\mathbf{S}_{i}\cdot\left(  \frac{1}{\mu_{B}g}\sum_{j}J_{ij
 \end{align}$$
 令平均场为：
 $$\mathbf{B}_{mf}= \left\langle\frac{1}{\mu_{B}g}\sum_{j}J_{ij}\mathbf{S}_{j}\right\rangle$$
-显然，$\mathbf{B}_{mf}\propto \mathbf{M}$。我们令比例常数为$\lambda$。显然$J_{ij}>0 \implies \lambda> 0$。那么我们有磁场$\mathbf{B}+\mathbf{B}_{mf}$。Hamiltonian写为：
+称$B_{mf}$为molecular field。显然，$\mathbf{B}_{mf}\propto \mathbf{M}$。我们令比例常数为$\lambda$。显然$J_{ij}>0 \implies \lambda> 0$。那么我们有磁场$\mathbf{B}+\mathbf{B}_{mf}$。Hamiltonian写为：
 $$H=-\mu_{B}g\sum_{i}\mathbf{S}_{i}\cdot(\mathbf{B}+\lambda \mathbf{M})$$
 根据对称性，假设$\mathbf{B}_{mf}=\lambda \mathbf{M}\parallel \mathbf{B}$。于是，我们解：
 $$\begin{align}
- & M=M_{s}B_{j}(y),\ y= \beta\mu_{B}(B+\lambda {M})j
+ & M=M_{s}B_{j}(y),\ y= \beta g\mu_{B}(B+\lambda {M})j
 \end{align}$$
 我们将$M$写为$y$的函数：
 $$M=M_{s}B_{j}(y),\ M= \frac{y}{\lambda\beta g\mu_{B}j}- \frac{B}{\lambda}$$
@@ -87,6 +87,8 @@ $$M=M_{s}B_{j}(y),\ M= \frac{y}{\lambda\beta g\mu_{B}j}- \frac{B}{\lambda}$$
 ## Ex:
 
 显然在有磁场时，低温下存在两个交点。容易证明$M>0$稳定。计算magnetizaiton，即$\frac{\partial M}{\partial B}$。移动$B$，就是移动y-intercept，但这时$M$已经不怎么变化，$\chi$为零。
+
+有磁场时，任何温度下都有非零交点。所以不存在相变。magnetization随温度的变化没有kink。
 
 ## 2.1 零场解
 
@@ -123,5 +125,46 @@ $$M= \frac{T_{C}}{T-T_{C}} \frac{B}{\lambda}$$
 $$\chi= \frac{T_{C}}{T-T_{C}} \frac{1}{\lambda}\propto \frac{1}{T-T_{C}}$$
 >[!Right]
 >$\blacksquare$
+
+>[!Success] Proposition 2.2.2
+>Near $T_{C}$, we have that $M\propto B^{1 /3}$
+## Proof.
+
+低场下，展开Brillouin函数。保留到$y^{3}$项：
+$$B_{j}(y)\approx \frac{j+1}{3j}y-\zeta y$$
+$\zeta$是展开得到的系数。则：
+$$\begin{align}
+M & =M_{s}B_{j}(y) \\
+ & = M_{s}\left(  \frac{j+1}{3j}y-\zeta y^{3} \right) \\
+ & = M_{s} \frac{j+1}{3j} \frac{1}{kT_{C}}\mu_{B}g(B+\lambda M)j-M_{s}\left(  \frac{1}{kT_{C}}\mu_{B}g(B+\lambda M)j  \right)^{3} \\
+ & = \frac{B}{\lambda}+M-M_{s}\left(  \frac{1}{kT_{C}}\mu_{B}g(B+\lambda M)j  \right)^{3} \\
+\implies & B \propto(B+\lambda M)^{3}
+\end{align}$$
+铁磁样品一般有$\lambda M\gg B$。那么：
+$$B\propto M^{3}\implies M\propto B^{1/3}$$
+>[!Right]
+>$\blacksquare$
+# 3. AFM相
+
+考虑同种spin构成的晶体。Spin之间的Heisenberg交换为：
+$$-J_{ij}\mathbf{S}_{i}\cdot \mathbf{S}_{j},\ J_{ij}< 0$$
+那么固定某个spin，周围spin都与之反向是favored的。考虑square lattice。这正好可以通过分成两个sublattice实现：
+![[Pasted image 20260205234116.png|center|500]]
+接下来，固定两个sublattice中各自spin的relative orientation。令一个sublattice的magnetization产生另一个sublattice的molecular field。那么：
+$$\mathbf{B}_{+}=-|\lambda|\mathbf{M}_{-},\ \mathbf{B}_{-}=-|\lambda|\mathbf{M}_{+}$$
+其中$\mathbf{B}_{\pm},\mathbf{M}_{\pm}$为$\pm$ sublattice受到的molacular field和magnetization。
+## 3.1 零场解
+
+考虑零场。在两个lattice中作统计力学。显然：
+$$M_{\pm}=M_{s}B_{j}(y_{\pm}),\ y_{\pm}=-\beta g\mu_{B}|\lambda|M_{\mp}j$$
+令$M=|M_{+}|=|M_{-}|$。则：
+$$M=M_{s}B_{j}(y),\ y=\beta g\mu_{B}|\lambda|Mj$$
+同理可解得sublattice的相变温度：
+$$T_{N}= \frac{j+1}{3k}M_{s}|\lambda| g \mu_{B}$$
+称为Neel温度。在Neel温度以下，两个sublattice各自保持“铁磁”相，但是自旋刚好正反抵消。Neel温度以上，两个sublattice都变成顺磁相，宏观上同样没有自旋。
+## 3.2 低场解
+
+
+
 
 
