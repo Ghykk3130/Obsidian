@@ -632,9 +632,21 @@
               "icon": "lucide-file",
               "title": "Reflections"
             }
+          },
+          {
+            "id": "ce7e8847b64db6f7",
+            "type": "leaf",
+            "state": {
+              "type": "release-notes",
+              "state": {
+                "currentVersion": "1.11.7"
+              },
+              "icon": "lucide-book-up",
+              "title": "Release Notes 1.11.7"
+            }
           }
         ],
-        "currentTab": 44
+        "currentTab": 45
       }
     ],
     "direction": "vertical"
@@ -799,7 +811,7 @@
       "obsidian-excalidraw-plugin:New drawing": false
     }
   },
-  "active": "a10410698cd2bda2",
+  "active": "ce7e8847b64db6f7",
   "lastOpenFiles": [
     "Experimental/Untitled 1.md",
     "Experimental/Untitled.md",
