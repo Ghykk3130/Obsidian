@@ -77,21 +77,51 @@ $$H=-\mu_{B}g\sum_{i}\mathbf{S}_{i}\cdot(\mathbf{B}+\lambda \mathbf{M})$$
 $$\begin{align}
  & M=M_{s}B_{j}(y),\ y= \beta\mu_{B}(B+\lambda {M})j
 \end{align}$$
+我们将$M$写为$y$的函数：
+$$M=M_{s}B_{j}(y),\ M= \frac{y}{\lambda\beta g\mu_{B}j}- \frac{B}{\lambda}$$
+有graphical solution：
+![[Drawing 2026-02-05 22.53.26.excalidraw|center|400]]
+## Ex:
+
+显然，在零场时，直线过原点。改变温度，就是改变斜率。有从三个交点到一个交点的相变。当然三角点时计算自由能只有非零磁化稳定。
+## Ex:
+
+显然在有磁场时，低温下存在两个交点。容易证明$M>0$稳定。计算magnetizaiton，即$\frac{\partial M}{\partial B}$。移动$B$，就是移动y-intercept，但这时$M$已经不怎么变化，$\chi$为零。
+
 ## 2.1 零场解
 
-我们将$M$写为$y$的函数：
-$$M=M_{s}B_{j}(y),\ M= \frac{y}{\lambda\beta \mu_{B}j}- \frac{B}{\lambda}$$
 零场时，phase transition发生在两曲线相切时。从一个交点变为三个交点。高温条件下，$B_{j}(y)\approx \frac{j+1}{3j}y$。且$\frac{B}{\lambda}\approx 0$。令斜率相等得到：
 $$\begin{align}
- & \frac{j+1}{3j}= \frac{1}{\lambda\beta \mu_{B}j}\implies T_{C}= \frac{j+1}{3k}M_{s}\lambda \mu_{B}
+ & \frac{j+1}{3j}= \frac{1}{\lambda\beta g \mu_{B}j}\implies T_{C}= \frac{j+1}{3k}M_{s}\lambda g \mu_{B}
 \end{align}$$
 称为Curie温度。
 ![[Pasted image 20260205221007.png|center|400]]
 
->[!Note] Definition 2.1
+>[!Note] Definition 2.1.1
 >Define the order of phase transition as the order of derivatives of $F$ that is discontinous.
 
 因为$dF=-SdT-pdV-mdB$。所以$M \propto \frac{\partial F}{\partial B}$。而$M$的导数在Curie温度不连续，所以是second-ordre phase transition。
 ## 2.2 低场解
+
+>[!Success] Proposition 2.2.1 (Curie-Weiss law)
+Under high temperature, $\chi \propto \frac{1}{T-T_{C}}$
+## Proof.
+
+高温下，可作近似：
+$$B_{j}(y)\approx \frac{j+1}{3j}y$$
+于是：
+$$\begin{align}
+ M & = M_{s}B_{j}(y) \\
+ & \approx M_{s} \frac{j+1}{3j}y \\
+ & = M_{s} \frac{j+1}{3j} \cdot \beta g\mu_{B}(B+\lambda M)j \\
+ & = M_{s} \frac{1}{3} \beta g\mu_{B}(B+\lambda M) \frac{3kT_{C}}{M_{s}\lambda g\mu_{B}} \\
+ & = \frac{T_{C}}{T\lambda}(B+\lambda M) \\
+\end{align}$$
+解得：
+$$M= \frac{T_{C}}{T-T_{C}} \frac{B}{\lambda}$$
+于是：
+$$\chi= \frac{T_{C}}{T-T_{C}} \frac{1}{\lambda}\propto \frac{1}{T-T_{C}}$$
+>[!Right]
+>$\blacksquare$
 
 
