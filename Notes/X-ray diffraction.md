@@ -13,7 +13,14 @@
 $$\Delta \phi=k\left( \mathbf{r}\cdot \frac{\mathbf{k}}{k}- \mathbf{r}\cdot \frac{\mathbf{k}^{'}}{k} \right)=\mathbf{r}\cdot(\mathbf{k}-\mathbf{k}^{'})=\mathbf{r}\cdot \Delta \mathbf{k}$$
 所以constructive interference条件为：
 $$\mathbf{r}\cdot \Delta \mathbf{k}=2\pi n,\ \forall \mathbf{r}\in \Lambda \Leftrightarrow \Delta \mathbf{k}\in \Lambda ^{*}$$
+## Ex:
 
+考虑入射波方向不变，观测方向不变。改变波长使得peak出现。这称为Laue法：
+![[Pasted image 20260207162956.png|center|200]]
+## Ex:
+
+考虑入射波方向，波长不变。sample呈粉状，orientation随机。我们在一个圆周上观察peak是否出现。这称为powder X-ray diffraction：
+![[Pasted image 20260207163200.png|center|200]]
 ## 2.2 Quantitative formulation
 
 考虑晶格点$\mathbf{r}$。假设散射后振幅$\propto n(\mathbf{r})\text{ local charge density}$。则在$\mathbf{r}_{0}$观察$\mathbf{r}$点产生的球面波。由于观测点在无限远处，球面波分母的距离衰减项对所有点都几乎一样。我们有：
