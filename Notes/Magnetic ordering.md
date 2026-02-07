@@ -232,4 +232,22 @@ $$\begin{align}
  & \text{AFM: }-J_{2}+4J_{2}>0 \\
  & \text{helical: }J_{2}<0\text{ and }|J_{1} |<4|J_{2}|\end{align}$$
  其中helical的第二个条件来自于helical解的存在性。
+# 5. Landau theory of ferromagnetism
+
+考虑自由能作为$M,T$的函数。即$F=F(M,T)$。显然宇称下$F$不变。故：
+$$F(M,T)=F(-M,T)$$
+将$F$展开为$M$的多项式。则显然只有偶次项：
+$$F=F_{0}+a(T)M^{2}+b(T)M^{4}$$
+此处展开到四次项是因为，二次项$F$只有$M=0$一个极值点，不可能出现磁化，至少要四次。
+
+接下来假设存在$T_{C}$使得$a(T)$在$T_{C}$穿过$0$。接着假设$b(T)>0$，否则系统最小值在$\pm \infty$，将跌入无限磁化。
+
+那么在$T_{C}$附近展开得到：
+$$F=F_{0}+a_{0}(T-T_{C})M^{2}+bM^{4},\ a_{0}>0$$
+求自由能极值得到：
+$$\begin{align}
+ & \frac{\partial F}{\partial M}=2a_{0}(T-T_{C})M+4bM^{3}=0\implies M=0\text{ or }\pm \sqrt{ - \frac{a_{0}}{2b}(T-T_{C}) }
+\end{align}$$
+第二个解只在$T<T_{C}$时存在。显然在$T<T_{C}$，只有这两个解是极小值。
+
 
