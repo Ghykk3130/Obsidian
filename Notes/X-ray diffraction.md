@@ -104,6 +104,19 @@ If $n$ is odd, at peaks, we have $\frac{a\cos \theta}{\lambda}$ odd. So $I\propt
 
 >[!Warning]
 >注意constructive interference条件为$n\lambda=a\cos \theta$。这必须要将lattice point当做出射波波源来做。因为lattice point才是保持周期性的最小单位。单独用$A,B$原子作的话每个原子可能$\delta$系数都不同，无法计量相位差。
+# 4. 
+
+
+
+考虑我们拿到一个一种元素构成的cubic lattice的样品。假设我们不知道它是cubic，如何确定？
+
+首先我们用PXRD，得到一系列peak的$\theta$。在Bragg视角下，reflection都是晶面反射形成的。我们计算cubic lattice的晶面。考虑晶面$(hkl)$。则对应reciprocal lattice模长为：
+$$G= \sqrt{ h^{2}+k^{2}+l^{2} } \frac{2\pi}{a}$$
+所以晶面间距为：
+$$d= \frac{2\pi}{G}= \frac{a}{\sqrt{ h^{2}+k^{2}+l^{2} }}$$
+则Bragg条件得到：
+$$2 \sin \theta \frac{a}{\sqrt{ h^{2}+k^{2}+l^{2} }}=n\lambda \implies \sin ^{2}\theta= \frac{n^{2}\lambda^{2}}{4a^{2}}(h^{2}+k^{2}+l^{2})$$
+
 
 
 
