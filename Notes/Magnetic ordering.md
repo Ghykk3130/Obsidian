@@ -226,7 +226,7 @@ $$\begin{align}
  & J_{1}\sin \theta+2J_{2}\sin(2\theta)=0 \\
 \implies & (J_{1}+4J_{2}\cos \theta)\sin \theta=0
 \end{align}$$
-解得$\theta=0\implies \text{FM},\ \theta=\pi \implies \text{AFM},\ \theta=\arccos\left( - \frac{J_{1}}{4J_{2}} \right)\implies \text{helical}$。考虑稳定性。计算三个零点处的二阶导，得到稳定条件：
+解得$\theta=0\implies \text{FM},\ \theta=\pi \implies \text{AFM},\ \theta=\arccos\left( - \frac{J_{1}}{4J_{2}} \right)\implies \text{helical}$。考虑稳定性。计算三个零点处的二阶导，得到metastable条件：
 $$\begin{align}
  &  \text{FM: }J_{1}+4J_{2}>0 \\
  & \text{AFM: }-J_{2}+4J_{2}>0 \\
