@@ -220,13 +220,16 @@ $$H=AM^{2}\cos(2\theta)-2BM\cos \theta-\Delta \cos ^{2}\theta$$
 考虑层内自旋ferromagnetic，层之间存在$\theta$的misalignment。Neighboring层之间存在direct exchange $J_{1}$，next nearest neighboring层之间存在superexchange $J_{2}$。
 
 那么：
-$$E=-2AS^{2}J_{1}\cos \theta-2AS^{2}J_{2}\cos(2\theta)$$
-令$\frac{\partial E}{\partial \theta}=0$得到：
+$$E=-2NS^{2}J_{1}\cos \theta-2NS^{2}J_{2}\cos(2\theta)$$
+其中$N$为每层内spin数量。令$\frac{\partial E}{\partial \theta}=0$得到：
 $$\begin{align}
  & J_{1}\sin \theta+2J_{2}\sin(2\theta)=0 \\
 \implies & (J_{1}+4J_{2}\cos \theta)\sin \theta=0
 \end{align}$$
- 
-
-
+解得$\theta=0\implies \text{FM},\ \theta=\pi \implies \text{AFM},\ \theta=\arccos\left( - \frac{J_{1}}{4J_{2}} \right)\implies \text{helical}$。考虑稳定性。计算三个零点处的二阶导，得到稳定条件：
+$$\begin{align}
+ &  \text{FM: }J_{1}+4J_{2}>0 \\
+ & \text{AFM: }-J_{2}+4J_{2}>0 \\
+ & \text{helical: }J_{2}<0\text{ and }|J_{1} |<4|J_{2}|\end{align}$$
+ 其中helical的第二个条件来自于helical解的存在性。
 
