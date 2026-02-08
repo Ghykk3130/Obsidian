@@ -17,3 +17,7 @@ FBZ is a cube centering at a Sm with length $\frac{2\pi }{a}$.
 ## (e)
 
 $$(\mathbf{k}^{'}-\mathbf{k})\cdot \mathbf{R}=2\pi n$$
+Let $\mathbf{k}^{'}-\mathbf{k}=\Delta \mathbf{k}=h \mathbf{b}_{1}+ k\mathbf{b}_{2}+l\mathbf{b}_{3}$
+$$\begin{align}
+f_{a}+f_{b}\left[ (-1)^{h+\left( 1-\sqrt{ 2 } \frac{b}{a} \right)k+ l}+(-1)^{h+k+ \left( 1-\sqrt{ 2 } \frac{b}{a} \right)l}+(-1)^{h+ \left( 1+\sqrt{ 2 } \frac{b}{a} \right)k+l}+(-1)^{h+k+\left( 1+ \sqrt{ 2 } \frac{b}{a} \right)l}+(-1)^{\left( 1-\sqrt{ 2 } \frac{b}{a} \right)h+k+l}+(-1)^{\left( 1+ \sqrt{ 2 } \frac{b}{a} \right)h+k+l} \right] 
+\end{align}$$
