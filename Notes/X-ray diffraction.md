@@ -5,7 +5,7 @@
 # 2. Laue's formulation
 ## 2.1 Geometric formulation
 
-考虑放置在空间中的样品，以及在极远处$\mathbf{r}_{0}$的观测仪器。用平面波照射样品。假设平面波不能穿过样品，只能引起样品内电子的振动。而电子振动发出的球面波传播至$\mathbf{r}_{0}$被观测。
+考虑放置在空间中的样品，在极远处的观测仪器。用平面波照射样品。假设平面波不能穿过样品，只能引起样品内电子的振动。而电子振动发出的球面波。由于在极远处观察，传播到观测点的波矢$\mathbf{k}^{'}$相互之间近乎于平行。
 
 令照射的平面波phase为$e^{i\mathbf{k}\cdot \mathbf{r}}$。考虑两晶格点$1,2$，$\mathbf{r}_{1}-\mathbf{r}_{2}=\mathbf{r}$。
 ![[Drawing 2026-02-03 00.59.24.excalidraw|center|400]]
@@ -21,6 +21,19 @@ $$\mathbf{r}\cdot \Delta \mathbf{k}=2\pi n,\ \forall \mathbf{r}\in \Lambda \Left
 
 考虑入射波方向，波长不变。sample呈粉状，orientation随机。我们在一个圆周上观察peak是否出现。这称为powder X-ray diffraction：
 ![[Pasted image 20260207163200.png|center|200]]
+
+我们可以得到Laue formulation和Bragg formulation的等价性。我们由Laue衍射条件推出Bragg衍射条件：
+
+考虑$\Delta \mathbf{k}=\mathbf{G}\in \Lambda ^{*}$。那么考虑$\mathbf{G}$方向最短倒格矢$\tilde{\mathbf{G}}= \frac{\mathbf{G}}{n}$。我们发现，对于$\tilde{\mathbf{G}}$定义的晶面，有：
+$$d= \frac{2\pi}{\tilde{G}}= \frac{2\pi n}{G}$$
+令$\mathbf{k}$与$\tilde{\mathbf{G}}$定义的晶面夹角为$\theta$。那么：
+$$2kd \sin \theta=2k \frac{2\pi n}{\Delta k}\sin \theta= 2k \frac{2\pi n}{2k\sin \theta}\sin \theta=2\pi n$$
+再由Bragg衍射条件推出Laue条件：
+
+定义$\Delta \mathbf{k}=\mathbf{k}^{'}-\mathbf{k}$。那么：
+$$\begin{align}
+\Delta \mathbf{k}\cdot \mathbf{R} & = md\Delta k= \frac{mn\pi }{k\sin \theta}\Delta k= \frac{mn\pi}{k\sin \theta} 2k\sin \theta=2mn\pi \implies \Delta \mathbf{k}\in \Lambda ^{*}
+\end{align}$$
 ## 2.2 Quantitative formulation
 
 考虑晶格点$\mathbf{r}$。假设散射后振幅$\propto n(\mathbf{r})\text{ local charge density}$。则在$\mathbf{r}_{0}$观察$\mathbf{r}$点产生的球面波。由于观测点在无限远处，球面波分母的距离衰减项对所有点都几乎一样。我们有：
@@ -57,7 +70,12 @@ $$\begin{align}
 \end{align}$$
 所以：
 $$\sum_{\mathbf{R}\in \Lambda}e^{i\Delta \mathbf{k}\cdot \mathbf{R}}\neq 0\text{ for }\Delta \mathbf{k}\in \Lambda ^{*}$$
-所以只有在这些点上，$F$才非零。定义：
+所以只有在这些点上，$F$才非零。所以得到衍射峰条件：
+
+>[!Success] Proposition 3.1
+>The peak corresponds to $\Delta \mathbf{k}=\mathbf{G}\in \Lambda ^{*}$
+
+定义：
 
 >[!Note] Definition 3.1
 >Define the structure factor:
