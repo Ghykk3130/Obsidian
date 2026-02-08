@@ -13,6 +13,10 @@
 $$\Delta \phi=k\left( \mathbf{r}\cdot \frac{\mathbf{k}}{k}- \mathbf{r}\cdot \frac{\mathbf{k}^{'}}{k} \right)=\mathbf{r}\cdot(\mathbf{k}-\mathbf{k}^{'})=\mathbf{r}\cdot \Delta \mathbf{k}$$
 所以constructive interference条件为：
 $$\mathbf{r}\cdot \Delta \mathbf{k}=2\pi n,\ \forall \mathbf{r}\in \Lambda \Leftrightarrow \Delta \mathbf{k}\in \Lambda ^{*}$$
+>[!Success] Proposition 2.1.1
+>The peak corresponds to $\Delta \mathbf{k}=\mathbf{G}\in \Lambda ^{*}$
+
+
 ## Ex:
 
 考虑入射波方向不变，观测方向不变。改变波长使得peak出现。这称为Laue法：
