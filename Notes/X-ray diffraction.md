@@ -13,10 +13,8 @@
 $$\Delta \phi=k\left( \mathbf{r}\cdot \frac{\mathbf{k}}{k}- \mathbf{r}\cdot \frac{\mathbf{k}^{'}}{k} \right)=\mathbf{r}\cdot(\mathbf{k}-\mathbf{k}^{'})=\mathbf{r}\cdot \Delta \mathbf{k}$$
 所以constructive interference条件为：
 $$\mathbf{r}\cdot \Delta \mathbf{k}=2\pi n,\ \forall \mathbf{r}\in \Lambda \Leftrightarrow \Delta \mathbf{k}\in \Lambda ^{*}$$
->[!Success] Proposition 2.1.1
+>[!Success] Proposition 2.1.1 (Laue's condition)
 >The peak corresponds to $\Delta \mathbf{k}=\mathbf{G}\in \Lambda ^{*}$
-
-
 ## Ex:
 
 考虑入射波方向不变，观测方向不变。改变波长使得peak出现。这称为Laue法：
@@ -76,7 +74,7 @@ $$\begin{align}
 $$\sum_{\mathbf{R}\in \Lambda}e^{i\Delta \mathbf{k}\cdot \mathbf{R}}\neq 0\text{ for }\Delta \mathbf{k}\in \Lambda ^{*}$$
 所以只有在这些点上，$F$才非零。所以得到衍射峰条件：
 
->[!Success] Proposition 3.1
+>[!Success] Proposition 3.1 (Laue's condition)
 >The peak corresponds to $\Delta \mathbf{k}=\mathbf{G}\in \Lambda ^{*}$
 
 定义：
@@ -126,18 +124,39 @@ If $n$ is odd, at peaks, we have $\frac{a\cos \theta}{\lambda}$ odd. So $I\propt
 
 >[!Warning]
 >注意constructive interference条件为$n\lambda=a\cos \theta$。这必须要将lattice point当做出射波波源来做。因为lattice point才是保持周期性的最小单位。单独用$A,B$原子作的话每个原子可能$\delta$系数都不同，无法计量相位差。
-# 4. 
 
-
+# 4. Practical considerations 
 
 考虑我们拿到一个一种元素构成的cubic lattice的样品。假设我们不知道它是cubic，如何确定？
+## Ex:
 
-首先我们用PXRD，得到一系列peak的$\theta$。在Bragg视角下，reflection都是晶面反射形成的。我们计算cubic lattice的晶面。考虑晶面$(hkl)$。则对应reciprocal lattice模长为：
+考虑simple cubic lattice。首先我们用PXRD，得到一系列peak的$\theta$。在Bragg视角下，reflection都是晶面反射形成的。
+![[Drawing 2026-02-07 20.36.04.excalidraw|center|400]]
+我们计算cubic lattice的晶面。考虑晶面$(hkl)$。则对应reciprocal lattice模长为：
 $$G= \sqrt{ h^{2}+k^{2}+l^{2} } \frac{2\pi}{a}$$
 所以晶面间距为：
 $$d= \frac{2\pi}{G}= \frac{a}{\sqrt{ h^{2}+k^{2}+l^{2} }}$$
 则Bragg条件得到：
-$$2 \sin \theta \frac{a}{\sqrt{ h^{2}+k^{2}+l^{2} }}=n\lambda \implies \sin ^{2}\theta= \frac{n^{2}\lambda^{2}}{4a^{2}}(h^{2}+k^{2}+l^{2})$$
+$$2 \sin \theta \frac{a}{\sqrt{ h^{2}+k^{2}+l^{2} }}=n\lambda \implies \sin ^{2}\theta= \frac{n^{2}\lambda^{2}}{4a^{2}}(h^{2}+k^{2}+l^{2}) \text{ where }g.c.d.(h,k,l)=1$$
+这等价于：
+$$\sin ^{2}\theta= \frac{\lambda^{2}}{4a^{2}}(h^{'2}+k^{'2}+l^{'2})\text{ where }h^{'},k^{'},l^{'}\in \mathbb{Z}$$
+这是因为，对于任意$(h^{'},k^{'},l^{'})$，都可以令$n=g.c.d.(h^{'},k^{'},l^{'})$，然后把$n$提出来。可以等效地将$(h^{'},k^{'},l^{'})=n(h,k,l)$看作虚晶面。那么$(hkl)$晶面的$n$级反射就等价于$(nh\ nk\ nl)$虚晶面的一级反射。
+
+那么，遍历可能的$(h^{'},k^{'},l^{'})$，我们得到一列$\{ \sin ^{2}\theta \}$。因为$a$尚未确定，这些$\sin ^{2}\theta$的相对大小如果与实验一致，那么实验得到的句式cubic lattice。
+
+当然，这是simple cubic lattice的情况。更复杂的cubic lattice可能某些符合Laue条件波矢却不出现峰。
+## Ex:
+
+考虑bcc晶体。则：
+$$\begin{align}
+S_{(hkl)} & =e^0 f+e^{i{2}\pi\left( \frac{h}{2}+ \frac{k}{2}+ \frac{l}{2} \right) }f= (1+(-1)^{h+k+l})f
+\end{align}$$
+显然，若structure factor为零，那么scattering amplitude也为零了。所以存在selection rule：
+$$\text{non-zero reflection only if }h+k+l\text{ is even}$$
+
+
+
+
 
 
 
