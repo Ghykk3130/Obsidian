@@ -1,8 +1,6 @@
-# 1. x-space bounded and continuous
+# 1. Dirac comb与Dirac delta
 
-考虑Hilbert空间$L^{2}\left( \left[ - \frac{L}{2}, \frac{L}{2} \right] \right)$中的函数。我们希望将它们写成级数。取Hilbert空间的基$\psi_{q}(x)=Ae^{iqx},\ q= \frac{2\pi n}{L}$。
-
-我们容易得到$\psi_{q}$的orthogonality和completeness。为此，我们先定义：
+我们先定义：
 
 >[!Note] Definition 1.1
 >Define the Dirichlet kernel:
@@ -10,7 +8,7 @@
 
 我们先证以下引理：
 
->[!Note] Theorem 1.1 (Riemann-Lebesgue lemma)
+>[!Success] Theorem 1.1 (Riemann-Lebesgue lemma)
 >Let $f\in L^1([a,b])$, then:
 >$$\lim_{ \lambda \to \infty } \int_{a}^bdxf(x)e^{i\lambda x}=0$$
 ## Proof.
@@ -35,7 +33,7 @@ $$\begin{align}
 
 接下来：
 
->[!Note] Proposition 1.1
+>[!Success] Proposition 1.1
 $$\lim_{ N \to \infty } D_{N}(x)=\sum_{m}2\pi\delta(x-2\pi m)$$
 ## Proof.
 我们有：
@@ -68,76 +66,56 @@ $$\begin{align}
 >[!Right]
 >$\blacksquare$
 
-于是：
-
->[!Note] Proposition 1.2
->Orthogonality: $\int_{-\frac{L}{2}}^{\frac{L}{2}}dx\psi_{q^{'}}^{*}(x)\psi_{q}(x)=|A|^{2}L\delta_{q,q^{'}}$
->Completeness: $\sum_{q}\psi_{q}(x)=AL\delta(x)$
+>[!Success] Proposition 1.2
+>$$\int_{\mathbb{R}}dq e^{iqx}=2\pi\delta(x)$$
 ## Proof.
 
-**Orthogonality:**
-
-我们有：
-$$\begin{align}
-\int_{- \frac{L}{2}}^{\frac{L}{2}}dx\psi ^{*}_{q^{'}}\psi_{q} & = |A|^{2}\int dxe^{i(q-q^{'})x} \\
- & = |A|^{2} \frac{2}{(q-q^{'})}  \sin\left( \frac{(q-q^{'})L}{2} \right) \\
- & = |A|^{2}L\delta_{q,q^{'}}
-\end{align}$$
-最后一步是因为$q=\frac{2\pi n}{L}$。代入便是显然。
-
-**Completeness:**
-
-我们有：
-$$\begin{align}
-\sum_{q}\psi_{q}(x) & = \sum_{n\in \mathbb{Z}}A\exp\left( i \frac{2\pi n}{L}x \right) \\
- & = \lim_{ N \to \infty }  \sum_{-N}^NA\exp\left( i \frac{2\pi n}{L}x \right) \\
- & = \lim_{ N \to \infty }  A \frac{\exp\left( - i\frac{2\pi N}{L}x \right)-\exp\left( i \frac{2\pi (N+1)}{L}x \right)}{1- \exp\left( i \frac{2\pi}{L}x \right)} \\
- & = \lim_{ N \to \infty } A \frac{e^{i \frac{\pi}{L}x}\left( \exp\left( -i \frac{2\pi}{L}\left( N- \frac{1}{2} \right)x \right) -\exp\left( i \frac{2\pi}{L}\left( N- \frac{1}{2} \right) x\right) \right)}{e^{i \frac{\pi}{L}x}\left( \exp\left( - i \frac{\pi}{L}x \right)-\exp\left( i \frac{\pi}{L}x \right) \right)} \\
- & = \lim_{ N \to \infty } A \frac{\sin\left( \frac{2\pi}{L}\left( N- \frac{1}{2} \right)x \right)}{\sin\left(  \frac{\pi}{L}x \right)} \\
- & = A\lim_{ N \to \infty } D_{N-1}\left( \frac{2\pi x}{L} \right) \\
- & = 2\pi A \delta\left( \frac{2\pi x}{L} \right) \\
- & = AL\delta(x)
-\end{align}$$
->[!Right]
->$\blacksquare$
-
-于是可以得到：
-
->[!Note] Theorem 1.2
->Let $f(x)\in L^{2}\left( \left[ - \frac{L}{2}, \frac{L}{2} \right] \right)$. Then :
->$$f= \sum_{q}\tilde{f}(q)\psi_{q}(x)\text{, where }\tilde{f}(q)= \frac{1}{AL}\int_{- \frac{L}{2}}^{\frac{L}{2}} dx f e^{-iqx}$$
-## Proof.
-$$\begin{align}
-\sum_{q}\tilde{f}(q)\psi_{q}(x) & = \sum_{q}\left( \frac{1}{AL} \int_{{- \frac{L}{2}}}^{\frac{L}{2}} dx^{'}f(x^{'}) \right)A e^{iqx} \\
- & = \frac{1}{L}\int dx^{'}f(x^{'})\sum_{q}\exp(iq(x-x^{'})) \\
- & = \frac{1}{L} \int dx^{'}f(x^{'}) \frac{1}{A}AL\delta(x-x^{'}) \\
- & = f(x)
-\end{align}$$
->[!Right]
->$\blacksquare$
-
-Convention一般取$A=\frac{1}{L}$。
-
-# 2. x-space is unbounded and continuous
-
+考虑$x\in\left[ - \frac{L}{2}, \frac{L}{2} \right]$。那么$\frac{2\pi x}{L}\in[-\pi,\pi]$。所以：
+$$\sum_{n\in \mathbb{Z}}e^{in \frac{2\pi x}{L}}=2\pi \sum_{m\in \mathbb{Z}}\delta\left( \frac{2\pi x}{L}-2\pi m \right)=2\pi\delta\left( \frac{2\pi x}{L} \right)=L\delta (x)$$
 令$L\rightarrow \infty$。则$q= \frac{2\pi n}{L}$连续化。则：
 $$\sum_{q} \leadsto \frac{L}{2\pi}\int dq$$
 故：
-
->[!Note] Proposition 2.1
->Orthogonality: $\int_{\mathbb{R}}dx \psi_{q}^{*}(x)\psi_{q^{'}}(x)=|A|^{2}\delta(q-q^{'})$
->Completeness: $\frac{1}{2\pi}\int_{\mathbb{R}} dq\psi_{q}=A\delta(x)$
-## Proof.
-
-Completeness由于测度替换便是显然。写得更explicit一点就是：
-$$\int_{\mathbb{R}}dq e^{iqx}=2\pi\delta(x)$$
-那么orthogonality就是显然。
+$$\int_{\mathbb{R}}dqe^{iqx}=2\pi\delta(x)$$
 >[!Right]
 >$\blacksquare$
+# 2. x-space bounded and continuous
+
+考虑Hilbert空间$L^{2}\left( \left[ - \frac{L}{2}, \frac{L}{2} \right] \right)$中的函数。我们希望将它们写成级数。取Hilbert空间的基$\psi_{q}(x)=e^{iqx},\ q= \frac{2\pi n}{L}$。
 
 于是可以得到：
 
->[!Note] Theorem 2.2
+>[!Success] Theorem 2.1
+>Let $f(x)\in L^{2}\left( \left[ - \frac{L}{2}, \frac{L}{2} \right] \right)$. Then :
+>$$f(x)= \sum_{n\in \mathbb{Z}}\tilde{f}(q_{n})e^{iq_{n}x}\text{, where }\tilde{f}(q_{n})= \frac{1}{L}\int_{- \frac{L}{2}}^{\frac{L}{2}} dx f(x) e^{-iq_{n}x}$$
+## Proof.
+
+令$f(x)=\sum_{n}\tilde{f}(q_{n})e^{iq_{n}x},\ q_{n}= \frac{2\pi n}{L}$。那么我们有：
+$$\begin{align}
+ & f(x)e^{-iq_{n^{'}}x}=\sum_{n}\tilde{f}(q_{n})e^{i(q_{n}-q_{n^{'}})x} \\
+\implies & \int_{-\frac{L}{2}}^{\frac{L}{2}}dxf(x)e^{-iq_{n^{'}}x}= \sum_{n}\tilde{f}\int_{- \frac{L}{2}}^{\frac{L}{2}}dxe^{i(q_{n}-q_{n^{'}})x}
+\end{align}$$
+容易证明：
+$$\begin{align}
+  \text{If }n\neq n^{'}:  & \\
+ & \int_{- \frac{L}{2}}^{\frac{L}{2}}dxe^{i(q_{n}-q_{n^{'}})x} = \frac{2i\sin\left( i(q_{n}-q_{n^{'}}) \frac{L}{2} \right)}{i(q_{n}-q_{n^{'}}) }=0 \\
+\text{If }n=n^{'}: &  \\
+ & \int_{-\frac{L}{2}}^{\frac{L}{2}}dx 1=L
+\end{align}$$
+那么：
+$$\int_{-\frac{L}{2}}^{\frac{L}{2}}dxf(x)e^{-iq_{n^{'}}x}= \sum_{n}\tilde{f}\int_{- \frac{L}{2}}^{\frac{L}{2}}dxe^{i(q_{n}-q_{n^{'}})x}=L\tilde{f}(q_{n^{'}})$$
+>[!Right]
+>$\blacksquare$
+
+Fourier变换前面的系数有一个自由度。若我们取基$\psi_{q}= \frac{1}{\sqrt{ L }}e^{iqx}$。这时我们作展开：
+$$f(x)= \frac{1}{\sqrt{ L }} \sum \tilde{f}(q_{n}) e^{iq_{n}x}$$
+那么由上面推导，我们得到：
+$$\frac{1}{\sqrt{ L }}\tilde{f}(q_{n})= \frac{1}{L} \int_{-\frac{L}{2}}^{\frac{L}{2}}dxf(x)e^{-iq_{n}x}\implies \tilde{f}(q_{n})= \frac{1}{\sqrt{ L }}\int dxf(x)e^{-iq_{n}x}$$
+
+# 3. x-space is unbounded and continuous
+
+于是可以得到：
+
+>[!Success] Theorem 3.1
 >Let $f(x)\in L^{2}$. Then :
 >$$f(x)= \frac{1}{2\pi} \int_{\mathbb{R}}dq\tilde{f}(q)e^{iqx}\text{, where }\tilde{f}(q)= \int_{\mathbb{R}} dx f(x) e^{-iqx}$$
 
