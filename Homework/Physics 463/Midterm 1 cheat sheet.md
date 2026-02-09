@@ -11,5 +11,11 @@
 - x-space bounded and discrete:
 	- $f(x_{l})=\sum_{n=0}^{N-1}\tilde{f}(q_{n})e^{iq_{n}x_{l}},\ \tilde{f}(q_{n})= \frac{1}{N}\sum_{l=0}^{N-1}f(x_{l})e^{-iq_{n}x_{l}},\ q_{n}= \frac{2\pi n}{Na}$
 	- $\sum_{l=0}^{N-1}e^{iq_{n}x_{l}}=N\delta_{q_{n},0}$
-
-
+# 2. Structures
+- Dimond:
+ ![[Drawing 2026-02-03 17.30.27.excalidraw|center|200]]
+ - bcc:
+ ![[Pasted image 20260208161837.png|center|200]]
+![[Pasted image 20260208161809.png|center|200]]
+ - fcc:
+![[Pasted image 20260208161916.png|center|200]]
