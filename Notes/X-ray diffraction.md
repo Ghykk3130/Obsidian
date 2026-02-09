@@ -10,7 +10,7 @@
 令照射的平面波phase为$e^{i\mathbf{k}\cdot \mathbf{r}}$。考虑两晶格点$1,2$，$\mathbf{r}_{1}-\mathbf{r}_{2}=\mathbf{r}$。
 ![[Drawing 2026-02-03 00.59.24.excalidraw|center|400]]
 散射后，假设$\omega$不变，色散关系不变，那么波矢大小仍为$k$。显然$1$的path length多$\mathbf{r}\cdot \frac{\mathbf{k}}{k}- \mathbf{r}\cdot \frac{\mathbf{k}^{'}}{k}$。所以相位差为：
-$$\Delta \phi=k\left( \mathbf{r}\cdot \frac{\mathbf{k}}{k}- \mathbf{r}\cdot \frac{\mathbf{k}^{'}}{k} \right)=\mathbf{r}\cdot(\mathbf{k}-\mathbf{k}^{'})=\mathbf{r}\cdot \Delta \mathbf{k}$$
+$$\Delta \phi=k\left( \mathbf{r}\cdot \frac{\mathbf{k}}{k}- \mathbf{r}\cdot \frac{\mathbf{k}^{'}}{k} \right)=\mathbf{r}\cdot(\mathbf{k}-\mathbf{k}^{'})=-\mathbf{r}\cdot \Delta \mathbf{k}$$
 所以constructive interference条件为：
 $$\mathbf{r}\cdot \Delta \mathbf{k}=2\pi n,\ \forall \mathbf{r}\in \Lambda \Leftrightarrow \Delta \mathbf{k}\in \Lambda ^{*}$$
 >[!Success] Proposition 2.1.1 (Laue's condition)
@@ -51,27 +51,27 @@ $$\psi(\mathbf{r}_{0})\propto \int_{\mathbb{R}^{3}}d^{3}r n(\mathbf{r})e^{i(\mat
 
 >[!Note] Definition 2.2.1
 >Define the scattering amplitude:
->$$F=\int_{\mathbb{R}^{3}}d^{3}rn(\mathbf{r})e^{i\Delta \mathbf{k}\cdot \mathbf{r}}$$
+>$$F=\int_{\mathbb{R}^{3}}d^{3}rn(\mathbf{r})e^{-i\Delta \mathbf{k}\cdot \mathbf{r}}$$
 
 显然当$\Delta \mathbf{k}\in \Lambda ^{*}$时，所有phase都为零，形成constructive interference。
 # 3. Structure factor, atomic form factor
 
 我们知道$n(\mathbf{r})=n(\mathbf{r}+\mathbf{R}),\ \forall \mathbf{R}\in \Lambda$。所以：
 $$\begin{align}
-F & = \int_{\mathbb{R}^{3}}d^{3}r n(\mathbf{r})e^{i\Delta \mathbf{k}\cdot \mathbf{r}} \\
- & = \sum_{\mathbf{R}\in \Lambda} \int_{\text{primitive cell}}d^{3}r^{}n(\mathbf{r})e^{i\Delta \mathbf{k}\cdot(\mathbf{r}+\mathbf{R})} \\
- & = \sum_{\mathbf{R}\in \Lambda}e^{i\Delta \mathbf{k}\cdot \mathbf{R}}\int_{\text{primitive cell}} d^{3}r n(\mathbf{r})e^{i\Delta \mathbf{k}\cdot \mathbf{r}} \\
- & = \sum_{\mathbf{R}\in \Lambda}e^{i\Delta \mathbf{k}\cdot \mathbf{R}}S(\Delta \mathbf{k})
+F & = \int_{\mathbb{R}^{3}}d^{3}r n(\mathbf{r})e^{-i\Delta \mathbf{k}\cdot \mathbf{r}} \\
+ & = \sum_{\mathbf{R}\in \Lambda} \int_{\text{primitive cell}}d^{3}r^{}n(\mathbf{r})e^{-i\Delta \mathbf{k}\cdot(\mathbf{r}+\mathbf{R})} \\
+ & = \sum_{\mathbf{R}\in \Lambda}e^{-i\Delta \mathbf{k}\cdot \mathbf{R}}\int_{\text{primitive cell}} d^{3}r n(\mathbf{r})e^{-i\Delta \mathbf{k}\cdot \mathbf{r}} \\
+ & = \sum_{\mathbf{R}\in \Lambda}e^{-i\Delta \mathbf{k}\cdot \mathbf{R}}S(\Delta \mathbf{k})
 \end{align}$$
 注意到：
 $$\begin{align}
-\sum_{\mathbf{R}\in \Lambda}e^{i\Delta \mathbf{k}\cdot \mathbf{R}} & = \sum_{\mathbf{R}\in \Lambda}\exp\left( i\sum_{j} \Delta k_{j}\mathbf{b}_{j} \cdot \sum_{l}n_{l}\mathbf{a}_{l} \right) \\
- & = \sum_{n_{1},n_{2},n_{3}\in \mathbb{Z} }\exp\left( i 2\pi \sum_{j}\Delta k_{j}n_{j} \right) \\
- & = \prod_{j}\sum_{n_{j}}\exp(i{2}\pi \Delta k_{j}n_{j}) \\
- & = \prod_{j}\sum_{m_{j}\in \mathbb{Z}}2\pi\delta(2\pi \Delta k_{j}-2\pi m_{j})
+\sum_{\mathbf{R}\in \Lambda}e^{-i\Delta \mathbf{k}\cdot \mathbf{R}} & = \sum_{\mathbf{R}\in \Lambda}\exp\left(-i\sum_{j} \Delta k_{j}\mathbf{b}_{j} \cdot \sum_{l}n_{l}\mathbf{a}_{l} \right) \\
+ & = \sum_{n_{1},n_{2},n_{3}\in \mathbb{Z} }\exp\left(- i 2\pi \sum_{j}\Delta k_{j}n_{j} \right) \\
+ & = \prod_{j}\sum_{n_{j}}\exp(-i{2}\pi \Delta k_{j}n_{j}) \\
+ & = \prod_{j}\sum_{m_{j}\in \mathbb{Z}}2\pi\delta(-2\pi \Delta k_{j}-2\pi m_{j})
 \end{align}$$
 所以：
-$$\sum_{\mathbf{R}\in \Lambda}e^{i\Delta \mathbf{k}\cdot \mathbf{R}}\neq 0\text{ for }\Delta \mathbf{k}\in \Lambda ^{*}$$
+$$\sum_{\mathbf{R}\in \Lambda}e^{-i\Delta \mathbf{k}\cdot \mathbf{R}}\neq 0\text{ for }\Delta \mathbf{k}\in \Lambda ^{*}$$
 所以只有在这些点上，$F$才非零。所以得到衍射峰条件：
 
 >[!Success] Proposition 3.1 (Laue's condition)
@@ -81,7 +81,7 @@ $$\sum_{\mathbf{R}\in \Lambda}e^{i\Delta \mathbf{k}\cdot \mathbf{R}}\neq 0\text{
 
 >[!Note] Definition 3.1
 >Define the structure factor:
->$$S_{\mathbf{G}}= \int_{\text{primitive cell}}d^{3}r n(\mathbf{r})e^{i\mathbf{G}\cdot \mathbf{r}}$$
+>$$S_{\mathbf{G}}= \int_{\text{primitive cell}}d^{3}r n(\mathbf{r})e^{-i\mathbf{G}\cdot \mathbf{r}}$$
 ## Remark
 
 在$F=\sum_{\mathbf{R}\in \Lambda}e^{i\Delta \mathbf{k}\cdot \mathbf{R}}S(\Delta \mathbf{k})$中，前面的$\sum_{\mathbf{R}\in \Lambda}e^{i\Delta \mathbf{k}\cdot \mathbf{R}}$是三维中的Dirac comb。所以可以将$S(\Delta \mathbf{k})$当做包络，包住Dirac comb。实际情况中，sample不是无限大，所以$\sum e^{i\Delta \mathbf{k}\cdot \mathbf{R}}$也就不是Dirac comb。
@@ -91,33 +91,33 @@ $$\sum_{\mathbf{R}\in \Lambda}e^{i\Delta \mathbf{k}\cdot \mathbf{R}}\neq 0\text{
 $$n(\mathbf{r})=\sum_{j}n_{j}(\mathbf{r}-\mathbf{r}_{j})$$
 假设$n_{j}$足够局域，那么：
 $$\begin{align}
-S_{\mathbf{G}} & = \int_{\text{primitive cell}}d^{3}r\sum_{j}n_{j}(\mathbf{r}-\mathbf{r}_{j})e^{i\mathbf{G}\cdot \mathbf{r}} \\ & =\int_{\mathbb{R}^{3}}d^{3}r\sum_{j}n_{j}(\mathbf{r}-\mathbf{r}_{j})e^{i\mathbf{G}\cdot \mathbf{r}} \\
+S_{\mathbf{G}} & = \int_{\text{primitive cell}}d^{3}r\sum_{j}n_{j}(\mathbf{r}-\mathbf{r}_{j})e^{-i\mathbf{G}\cdot \mathbf{r}} \\ & =\int_{\mathbb{R}^{3}}d^{3}r\sum_{j}n_{j}(\mathbf{r}-\mathbf{r}_{j})e^{-i\mathbf{G}\cdot \mathbf{r}} \\
 
- & = \sum_{j}\int_{\mathbb{R}^{3}}d^{3}rn_{j}(\mathbf{r}-\mathbf{r}_{j})e^{i\mathbf{G}\cdot \mathbf{r}} \\
- & = \sum_{j}e^{i\mathbf{G}\cdot \mathbf{r}_{j}}\int d^{3}rn_{j}(\mathbf{r})e^{i\mathbf{G}\cdot \mathbf{r}}
+ & = \sum_{j}\int_{\mathbb{R}^{3}}d^{3}rn_{j}(\mathbf{r}-\mathbf{r}_{j})e^{-i\mathbf{G}\cdot \mathbf{r}} \\
+ & = \sum_{j}e^{-i\mathbf{G}\cdot \mathbf{r}_{j}}\int d^{3}rn_{j}(\mathbf{r})e^{-i\mathbf{G}\cdot \mathbf{r}}
 \end{align}$$
 定义：
 
 >[!Note] Definition 3.2
 >Define atomic form factor:
->$$f_{j}=\int_{\mathbb{R}^{3}}d^{3}rn_{j}(\mathbf{r})e^{i\mathbf{G}\cdot \mathbf{r}}$$
+>$$f_{j}=\int_{\mathbb{R}^{3}}d^{3}rn_{j}(\mathbf{r})e^{-i\mathbf{G}\cdot \mathbf{r}}$$
 
 那么sturcture factor可以分解为：
-$$S_{\mathbf{G}}=\sum_{j}e^{i\mathbf{G}\cdot \mathbf{r}_{j}}f_{j}$$
+$$S_{\mathbf{G}}=\sum_{j}e^{-i\mathbf{G}\cdot \mathbf{r}_{j}}f_{j}$$
 ## Ex:
 
 考虑一维双分子链的衍射。令入射波波矢垂直于分子链。Let the x axis align with the atom chain. 
 ![[Drawing 2026-02-03 20.13.42.excalidraw|center|300]]
 Then the scattering amplitude is:
-$$F=\sum_{\mathbf{R}}e^{i\Delta \mathbf{k}\cdot \mathbf{R}}(f_{A}e^{i\Delta \mathbf{k}\cdot \mathbf{r}_{A}}+f_{B}e^{i\Delta \mathbf{k}\cdot \mathbf{r}_{B}})$$
+$$F=\sum_{\mathbf{R}}e^{-i\Delta \mathbf{k}\cdot \mathbf{R}}(f_{A}e^{-i\Delta \mathbf{k}\cdot \mathbf{r}_{A}}+f_{B}e^{-i\Delta \mathbf{k}\cdot \mathbf{r}_{B}})$$
 where $\mathbf{r}_{A},\mathbf{r}_{B}$ are the positions of $A,B$ in their primitive cell. Without loss of generality, let the origin of the primitive cell coincide with $A$. Then:
 $$\mathbf{r}_{A}=0,\ \mathbf{r}_{B}= \frac{a}{2}  \hat{\mathbf{x}}$$
 Observe that $\Delta k_{x}= k\cos \theta$. So:
 $$\begin{align}
-F=\sum_{\mathbf{R}}e^{i\Delta \mathbf{k}\cdot \mathbf{R}}\left( f_{A}+f_{B}e^{i \frac{ka}{2} \cos \theta} \right)
+F=\sum_{\mathbf{R}}e^{-i\Delta \mathbf{k}\cdot \mathbf{R}}\left( f_{A}+f_{B}e^{-i \frac{ka}{2} \cos \theta} \right)
 \end{align}$$
 So we obtain the intensity:
-$$I\propto|f_{A}+f_{B}e^{i \frac{ka}{2}\cos \theta}|^{2}=|f_{A}+f_{B}\exp\left( i \frac{\pi a}{\lambda}\cos \theta \right)|^{2}$$
+$$I\propto|f_{A}+f_{B}e^{-i \frac{ka}{2}\cos \theta}|^{2}=|f_{A}+f_{B}\exp\left( -i \frac{k a}{\lambda}\cos \theta \right)|^{2}$$
 Note that the constructive interference condition is:
 $$n\lambda=a\cos \theta$$
 If $n$ is odd, at peaks, we have $\frac{a\cos \theta}{\lambda}$ odd. So $I\propto|f_{A}-f_{B}|^{2}$. If $n$ is even, at peaks, we have $\frac{a\cos \theta}{\lambda}$ even. So $I\propto|f_{A}+f_{B}|^{2}$.

@@ -13,13 +13,8 @@
 	- $\sum_{l=0}^{N-1}e^{iq_{n}x_{l}}=N\delta_{q_{n},0}$
 # 2. Structures
 - Dimond:
- ![[Drawing 2026-02-03 17.30.27.excalidraw|center|200]]
- - bcc:
- 
- ![[Pasted image 20260208161837.png|center|200]]
-![[Pasted image 20260208161809.png|center|200]]
- - fcc:
-![[Pasted image 20260208161916.png|center|200]]
+ ![[Drawing 2026-02-03 17.30.27.excalidraw|center|100]]![[Pasted image 20260208161837.png|center|100]]![[Pasted image 20260208161809.png|center|100]]
+![[Pasted image 20260208161916.png|center|100]]
 # 3. Diffraction
-- $F=\int_{\mathbb{R}^{3}}d^{3}rn(\mathbf{r})e^{i\Delta \mathbf{k}\cdot \mathbf{r}}=\sum_{\mathbf{R}\in \Lambda}e^{i\Delta \mathbf{k}\cdot \mathbf{R}}S_{\mathbf{G}},\ S_{\mathbf{G}}=\int_{\text{unit cell}}d^{3}rn(\mathbf{r})e^{i\Delta \mathbf{k}\cdot \mathbf{r}},\ S_{\mathbf{G}}=\sum_{\mathbf{r}_{i}}e^{i\Delta \mathbf{k}\cdot \mathbf{r}_{i}}f_{i},\ f_{i}=\int_{\mathbb{R}^{3}}d^{3}rn_{i}(\mathbf{r})e^{i\Delta \mathbf{k}\cdot \mathbf{r}},\ \Delta \mathbf{k}=\mathbf{k}-\mathbf{k}^{'}$
+- $F=\int_{\mathbb{R}^{3}}d^{3}rn(\mathbf{r})e^{-i\Delta \mathbf{k}\cdot \mathbf{r}}=\sum_{\mathbf{R}\in \Lambda}e^{-i\Delta \mathbf{k}\cdot \mathbf{R}}S_{\mathbf{G}},\ S_{\mathbf{G}}=\int_{\text{unit cell}}d^{3}rn(\mathbf{r})e^{-i\Delta \mathbf{k}\cdot \mathbf{r}},\ S_{\mathbf{G}}=\sum_{\mathbf{r}_{i}}e^{-i\Delta \mathbf{k}\cdot \mathbf{r}_{i}}f_{i},\ f_{i}=\int_{\mathbb{R}^{3}}d^{3}rn_{i}(\mathbf{r})e^{-i\Delta \mathbf{k}\cdot \mathbf{r}},\ \Delta \mathbf{k}=\mathbf{k}^{'}-\mathbf{k}^{}$
 
