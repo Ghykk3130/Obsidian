@@ -15,7 +15,11 @@
 - Dimond:
  ![[Drawing 2026-02-03 17.30.27.excalidraw|center|200]]
  - bcc:
+ 
  ![[Pasted image 20260208161837.png|center|200]]
 ![[Pasted image 20260208161809.png|center|200]]
  - fcc:
 ![[Pasted image 20260208161916.png|center|200]]
+# 3. Diffraction
+- $F=\int_{\mathbb{R}^{3}}d^{3}rn(\mathbf{r})e^{i\Delta \mathbf{k}\cdot \mathbf{r}}=\sum_{\mathbf{R}\in \Lambda}e^{i\Delta \mathbf{k}\cdot \mathbf{R}}S_{\mathbf{G}},\ S_{\mathbf{G}}=\int_{\text{unit cell}}d^{3}rn(\mathbf{r})e^{i\Delta \mathbf{k}\cdot \mathbf{r}},\ S_{\mathbf{G}}=\sum_{\mathbf{r}_{i}}e^{i\Delta \mathbf{k}\cdot \mathbf{r}_{i}}f_{i},\ f_{i}=\int_{\mathbb{R}^{3}}d^{3}rn_{i}(\mathbf{r})e^{i\Delta \mathbf{k}\cdot \mathbf{r}},\ \Delta \mathbf{k}=\mathbf{k}-\mathbf{k}^{'}$
+
