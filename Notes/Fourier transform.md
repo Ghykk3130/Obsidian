@@ -113,118 +113,72 @@ $$\frac{1}{\sqrt{ L }}\tilde{f}(q_{n})= \frac{1}{L} \int_{-\frac{L}{2}}^{\frac{L
 
 # 3. x-space is unbounded and continuous
 
-于是可以得到：
-
 >[!Success] Theorem 3.1
 >Let $f(x)\in L^{2}$. Then :
 >$$f(x)= \frac{1}{2\pi} \int_{\mathbb{R}}dq\tilde{f}(q)e^{iqx}\text{, where }\tilde{f}(q)= \int_{\mathbb{R}} dx f(x) e^{-iqx}$$
+## Proof.
+
+令$f(x)= \frac{1}{2\pi}\int_{\mathbb{R}}dq\tilde{f}(q)e^{iqx}$，那么：
+$$\begin{align}
+ & f(x)e^{-iq^{'}x}= \frac{1}{2\pi}\int dq\tilde{f}(q)e^{i(q-q^{'})x} \\
+\implies & \int_{\mathbb{R}}dxf(x)e^{-iq^{'}x}= \frac{1}{2\pi}\int dq\tilde{f}(q)\int_{\mathbb{R}}dxe^{i(q-q^{'})x} \\
+\implies & \int dxf(x)e^{-iq^{'}x}= \frac{1}{2\pi}\int dq\tilde{f}(q)2\pi\delta(q-q^{'})= \tilde{f}(q^{'}) 
+\end{align}$$
+>[!Right]
+>$\blacksquare$
 
 # 3. x-space is unbounded and discrete
 
-考虑$x-\text{space}$离散化，只能取间隔为$a$的点。令$f\in l^{2}$。其横坐标$x_{n}=na\in a\mathbb{Z}$。我们取Hilbert空间的基$\psi_{q}(x_{n})=Ae^{iqx_{n}}$。发现：
-$$\psi_{q+ \frac{2\pi}{a}}(x_{n})=A\exp\left( iqx_{n}+iq \frac{2\pi}{a}x_{n} \right)=A\exp(iqx_{n})=\psi_{q}(x_{n})$$
-所以Hilbert空间的基为：$\psi_{q}(x_{n}),\ q\in\left[ - \frac{\pi}{a}, \frac{\pi}{a} \right)$。
+考虑$x-\text{space}$离散化，只能取间隔为$a$的点。令$f\in l^{2}$。其横坐标$x_{n}=na\in a\mathbb{Z}$。我们取Hilbert空间的基$e^{iqx_{n}}$。发现：
+$$\exp\left( i\left( q+ \frac{2\pi}{a} \right)x_{n} \right)=\exp(iqx_{n})$$
+所以可以约束：$q\in\left[ - \frac{\pi}{a}, \frac{\pi}{a} \right)$。于是可以得到：
 
->[!Note] Proposition 3.1
->Orthogonality: $\sum_{n=-\infty}^{\infty} \psi ^{*}_{q}(x_{n})\psi_{q^{'}}(x_{n})= |A|^{2} \frac{2\pi}{a}\delta(q-q^{'})$
->Completeness: $\int_{- \frac{\pi}{a}}^{\frac{\pi}{a}} dq\psi_{q}(x_{n})= A \frac{2\pi}{a}\delta_{n,0}$
-
-## Proof.
-
-**Orthogonality:**
-$$\begin{align}
-\sum_{-\infty}^{\infty}\psi_{q}^{*}(x_{n})\psi_{q^{'}}(x_{n}) & = \lim_{ M \to \infty }|A|^{2}\sum_{-M}^M \exp(i(q^{'}-q)na ) \\
- & = \lim_{ M \to \infty } |A|^{2}D_{M}((q^{'}-q)a) \\
- & = 2\pi|A|^{2}\delta((q^{'}-q)a) \\
-\end{align}$$
-注意此处$q,q^{'}\in\left[ -\frac{\pi}{a}, \frac{\pi}{a} \right)\implies (q-q^{'})\in\left( - \frac{2\pi}{a}, \frac{2\pi}{a} \right)$，不然$\lim_{ M \to \infty }D_{M}$不能被reduce成单个的dirac delta。
-
-**Completeness:**
-
-若$n\neq 0$，则：
-$$\begin{align}
-\int_{- \frac{\pi}{a}}^{\frac{\pi}{a}}dq Ae^{iqx_{n}} & = \frac{1}{ix_{n}}(e^{in\pi}-e^{-in\pi})=0
-\end{align}$$
-若$n=0$，则：
-$$\int_{- \frac{\pi}{a}}^{\frac{\pi}{a}}dq Ae^{iqx_{n}}=A \frac{2\pi}{a}$$
->[!Right]
->$\blacksquare$
-
-于是可以得到：
-
->[!Note] Theorem 3.1
+>[!Success] Theorem 3.1
 >Let $f(x_{n})\in l^1$. Then:
->$$f(x_{n})= \int_{- \frac{\pi}{a}}^{\frac{\pi}{a}}dq \tilde{f}(q) \psi_{q}(x_{n})\text{ where }\tilde{f}(q)= \frac{a}{2\pi |A|^{2}} \sum_{-\infty}^{\infty} f(x_{n})\psi_{q}^{*}(x_{n})$$
+>$$f(x_{n})= \int_{- \frac{\pi}{a}}^{\frac{\pi}{a}}dq \tilde{f}(q) e^{iqx_{n}}\text{ where }\tilde{f}(q)= \frac{a}{2\pi } \sum_{-\infty}^{\infty} f(x_{n})e^{-iqx_{n}}$$
 ## Proof.
+
+令$f(x_{n})=\int_{- \frac{\pi}{a}}^{\frac{\pi}{a}}dq\tilde{f}(q)e^{iqx_{n}}$。那么：
 $$\begin{align}
-\int_{- \frac{\pi}{a}}^{\frac{\pi}{a} }dq \frac{a}{2\pi A}\sum_{n^{'}=-\infty}^{\infty}f(x_{n^{'}})e^{-iqx_{n^{'}}} \cdot A e^{iqx_{n}} & = \frac{a}{2\pi }\sum_{n^{'}}f(x_{n^{'}}) \int dq e^{iq(x_{n}-x_{n^{'}}) } \\
- & = \frac{a}{2\pi}\sum_{n^{'}}f(x_{n^{'}})2\pi \delta(a(n-n^{'}))  \\
- & = f(x_{n}) 
+ & f(x_{n})e^{-iq^{'}x_{n}}=\int_{- \frac{\pi}{a}}^{\frac{\pi}{a}} dq \tilde{f}(q)e^{i(q-q^{'})x_{n}} \\
+\implies & \sum_{n\in \mathbb{Z}}f(x_{n})e^{-iq^{'}x_{n}}=\int dq\tilde{f}(q)\sum_{n\in \mathbb{Z}}e^{i(q-q^{'})x_{n}}=\int dq\tilde{f}(q)  2\pi \delta((q-q^{'})a)= \frac{2\pi}{a}\tilde{f}(q^{'})
 \end{align}$$
 >[!Right]
 >$\blacksquare$
-
-Convention一般取$A=1$。
 # 4. x-space is bounded and discrete
 
-考虑$x-\text{space}$离散化且有界，仅仅只有$N$个点。令$x_{n}=na,\ n=0,\dots,N-1$。考虑$f\in l^{2}(\{ 0,\dots,N-1 \})$。取Hilbert空间的基$\psi_{q_{m}}(x_{n})=Ae^{iq_{m}x_{n}}\text{, where }q_{m}= \frac{2\pi m}{Na}$。注意到：
+考虑$x-\text{space}$离散化且有界，仅仅只有$N$个点。令$x_{n}=na,\ n=0,\dots,N-1$。考虑$f\in l^{2}(\{ 0,\dots,N-1 \})$。取Hilbert空间的基$e^{iq_{m}x_{n}}\text{, where }q_{m}= \frac{2\pi m}{Na}$。注意到：
 $$\begin{align}
-\psi_{q_{m}+ \frac{2\pi}{a}}(x_{n})= A\exp(iq_{m}x_{n}+ i 2 \pi n)= A\exp(iq_{m}x_{n})=\psi_{q_{m}}(x_{n})
+\exp\left( i\left( q_{m}+ \frac{2\pi}{a} \right)x_{n} \right)=\exp(iq_{m}x_{n})
 \end{align}$$
 所以限制$q_{m}\in \left[0, \frac{2\pi}{a}\right)\implies m=0,\dots,N-1$。
 ## Remark
+
 由此可见，只要x-space是离散的，q-space就是bounded的。
 
-
-那么我们有：
-
->[!Note] Proposition 4.1
->Orthogonality: $\sum_{n=0}^{N-1}\psi_{q_{m}}^{*}(x_{n})\psi_{q_{m^{'}}(x_{n})}=N|A|^{2}\delta_{mm^{'}}$
->Completeness: $\sum _{m=0}^{N-1} \psi_{q_{m}}^{}(x_{n})=NA^{}\delta_{n,0}$
-## Proof.
-
-**Orthogonality:**
-
-若$m^{'}\neq m$，则：
-$$\begin{align}
-\sum_{0}^{N-1} \psi_{q_{m}}^{*}(x_{n})\psi_{q_{m^{'}}}(x_{n}) & = |A |^{2} \sum \exp(i(q_{m^{'} }-q_{m} )x_{n}) \\
- & = |A|^{2} \frac{1-\exp(i(q_{m^{'}}-q_{m})x_{N})}{1-\exp(i(q_{m^{'}}-q_{m})a)} \\
- & = |A|^{2} \frac{1-\exp(i 2\pi(m^{'}-m))}{1-\exp\left( i \frac{2\pi}{N}(m^{'}-m) \right)} \\
- & = 0
-\end{align}$$
-若$m^{'}=m$，则：
-$$\begin{align}
-\sum_{0}^{N-1}\psi ^{*}_{q_{m}}(x_{n})\psi_{q_{m^{'}}}(x_{n}) & = |A|^{2}\sum 1=N|A|^{2}
-\end{align}$$
-
-**Completeness:**
-
-若$m^{'}\neq m$，则：
-$$\begin{align}
-\sum_{0}^{N-1} \psi_{q_{m}}(x_{n}) & = A \sum \exp(i q_{m}x_{n}) \\
- & = A \frac{1-\exp(i 2\pi n)}{1-\exp\left( i \frac{2\pi}{N}n \right)} \\
- & = 0
-\end{align}$$
-若$m^{'}=m$，则：
-$$\begin{align}
-\sum_{0}^{N-1}\psi_{q_{m}}(x_{n}) & = \sum A=NA
-\end{align}$$
->[!Right]
->$\blacksquare$
-
->[!Note] Theorem 4.1
+>[!Success] Theorem 4.1
 >Let $f(x_{n})\in l^1(\{ 0,\dots,N-1 \})$. Then:
->$$f(x_{n})= \sum_{m=0}^{N-1}\tilde{f}(q_{m})\psi_{q_{m}}(x_{n})\text{ where }\tilde{f}(q)= \frac{1}{N|A|^{2}}\sum_{n=0}^{N-1}\psi ^{*}_{q_{m}}(x_{n})f(x_{n})$$
+>$$f(x_{n})= \sum_{m=0}^{N-1}\tilde{f}(q_{m})e^{iq_{m}x_{n}}\text{ where }\tilde{f}(q_{m})= \frac{1}{N}\sum_{n=0}^{N-1}f(x_{n})e^{-iq_{m}x_{n}}$$
 ## Proof.
+
+令$f(x_{n})=\sum_{m=0}^{N-1}\tilde{f}(q_{m})e^{iq_{m}x_{n}}$。那么：
 $$\begin{align}
-\sum_{m=0}^{N-1}\tilde{f}(q_{m}) \psi_{q_{m}}(x_{n}) & = \sum_{m} \frac{1}{N|A|^{2}} \sum_{n^{ '}} \psi ^{*}_{q_{m^{}}}(x_{n^{'}})f(x_{n^{'}}) \psi_{q_{m}} (x_{n}) \\
- & = \frac{1}{N|A|^{2}} \sum_{n^{'}} f(x_{n^{'}}) N|A|^{2} \delta_{n,n^{'}} \\
- & = f(x_{n})
+ & f(x_{n})e^{-iq_{m^{'}}x_{n}}=\sum_{m=0}^{N-1}\tilde{f}(q_{m})e^{i(q_{m}-q_{m^{'}})x_{n}} \\
+\implies & \sum_{n=0}^{N-1}f(x_{n})e^{-iq_{m^{'}}x_{n}}=\sum_{m}\tilde{f}(q_{m})\sum_{n=0}^{N-1}e^{i(q_{m}-q_{m^{'}})x_{n}}
+\end{align}$$
+注意到：
+$$\begin{align}
+\text{If }m\neq m^{'} & : \\
+ & \sum_{n=0}^{N-1}e^{i(q_{m}-q_{m^{'}})x_{n}}=\frac{1-e^{i(q_{m}-q_{m^{'}})aN}}{1-e^{i(q_{m}-q_{m^{'}})a}}=0 \\
+\text{If }m=m^{'} & : \\
+ & \sum_{n=0}^{N-1}e^{i(q_{m}-q_{m^{'}})x_{n}}=N 
+\end{align}$$
+所以：
+$$\begin{align}
+\sum_{m}\tilde{f}(q_{m})\sum_{n=0}^{N-1}e^{i(q_{m}-q_{m^{'}})x_{n}} & =\sum_{m}\tilde{f}(q_{m})N\delta_{mm^{'}}=N\tilde{f}(q_{m^{'}})
 \end{align}$$
 >[!Right]
 >$\blacksquare$
-
-Convention一般取$A=1$。
 
 
 
