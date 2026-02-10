@@ -54,3 +54,6 @@ EE project核心是给AMO敲门砖。
 
 提前规划measurement。和luli谈。
 
+
+
+Competing magnetic phases and fluctuation-driven scalar spin chirality in the kagome metal YMn6Sn6

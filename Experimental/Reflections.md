@@ -5,3 +5,4 @@
 - When doing the thermal transport data analysis, the sign of the voltages, the sign of delta T should be checked. The former depends on the axis choice and the wire polarities. The latter depends on the sign of the heater signal. The sign of the delta T should be such that it is positive.
 - If want to cut with precision, e.g. copper block in transport setup, make sure to press down the subject to the metal block so that the surface are closely in contact. Or the angle wouldn't be accurate.
 - When gluing samples on metal block, make sure the block surface is clean. Then put sample on. Then put crystal bond on.
+- When $< 10 K$, make sure $dT \approx 0.1T$ on the sample. When $> 10K$, make sure $dT\geq 1K$. If too much noise, meaning excitation is not large enough. Monitor and adjust the excitation for each one or two temperatures.
