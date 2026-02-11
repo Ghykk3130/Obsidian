@@ -277,8 +277,9 @@ $$\begin{align}
 We then calculate:
 $$\begin{align}
   |\hat{E}(q)|^{2} & = \left| \frac{s\mathrm{Re}(d)\omega_{0}-s\mathrm{Im}(d)\Omega+is\mathrm{Re}(d)\omega}{\Omega^{2}+(\omega_{0}+i\omega)^{2}}  \right|^{2}  \\
- & = \frac{|s\mathrm{Re}(d)\omega_{0}-s\mathrm{Im}(d)\Omega+is\mathrm{Re}(d)\omega |^{2}}{|\Omega^{2}+(\omega+iq)^{2} |^{2}} \\
- & = \frac{(s\mathrm{Re}(d)\omega-s\mathrm{Im}(d)\Omega)^{2}+s^{2}\mathrm{Re}^{2}(d)q^{2}}{(\Omega^{2}+\omega^{2}-q^{2})^{2}+4\omega^{2}q^{2}}
+ & = \frac{|s\mathrm{Re}(d)\omega_{0}-s\mathrm{Im}(d)\Omega+is\mathrm{Re}(d)\omega |^{2}}{|\Omega^{2}+(\omega_{0}+i\omega)^{2} |^{2}} \\
+ & = \frac{(s\mathrm{Re}(d)\omega_{0}-s\mathrm{Im}(d)\Omega)^{2}+s^{2}\mathrm{Re}^{2}(d)\omega^{2}}{(\Omega^{2}+\omega_{0}^{2}-\omega^{2})^{2}+4\omega_{0}^{2}\omega^{2}} 
 \end{align}$$
+
 
 
