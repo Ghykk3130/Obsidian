@@ -1,6 +1,6 @@
 # 1.
 ## a)
-We have that:
+Let $\mathbf{B}$ align with the z-axis. Then denote $\ket{g}=\ket{+  \hat{\mathbf{z}}},\ \ket{e}=\ket{-  \hat{\mathbf{z}}}$. We have that:
 $$\begin{align}
 C & = \sqrt{ \Gamma }\ket{g} \bra{e}  \\
  & = \begin{pmatrix}
@@ -128,7 +128,7 @@ Then we have:
 $$\begin{align}
  - \frac{1}{i\hbar}[\rho,H]+L & = \begin{pmatrix}
 \Gamma \rho_{e e} &  - \frac{1}{i\hbar} 2\mu_{B}B\rho_{ge}- \frac{1}{2}(\Gamma+\gamma_{g}+\gamma_{e})\rho_{ge} \\
-- \frac{1}{i\hbar}2\mu_{B}B\rho_{eg}- \frac{1}{2}(\Gamma+\gamma_{g}+\gamma_{e})\rho_{eg} & -\Gamma \rho_{e e}
+ \frac{1}{i\hbar}2\mu_{B}B\rho_{eg}- \frac{1}{2}(\Gamma+\gamma_{g}+\gamma_{e})\rho_{eg} & -\Gamma \rho_{e e}
 \end{pmatrix}
 \end{align}$$
 The initial condition is given by:
@@ -167,8 +167,98 @@ $$\begin{align}
 \end{align}$$
 Then the length of the Bloch vector is monotonically decreasing. It's obvious that at $t=0$, $u^{2}+v^{2}+w^{2}=1$. Then the ensemble is impure for $t> 0$.
 # 2.
+## a.
+It's easy to compute that:
+$$\begin{align}
+  L & =- \frac{1}{2} C^{\dagger}C\rho + \text{h.c.}+ C\rho C^{\dagger} \\
+ & = - \frac{1}{2} \begin{pmatrix}
+0 & 0 \\
+\sqrt{ \Gamma  } & 0
+\end{pmatrix}  \begin{pmatrix}
+0 & \sqrt{ \Gamma } \\
+0 & 0
+\end{pmatrix}\begin{pmatrix}
+\rho_{gg} & \rho_{ge} \\
+\rho_{eg} & \rho_{e e}
+\end{pmatrix}+\text{h.c.}+ \begin{pmatrix}
+0 & \sqrt{ \Gamma }  \\
+0 & 0 
+\end{pmatrix}\begin{pmatrix}
+\rho_{gg} & \rho_{ge} \\
+\rho_{eg} &  \rho_{e e}
+\end{pmatrix} \begin{pmatrix}
+0 & 0 \\
+\sqrt{ \Gamma } & 0
+\end{pmatrix} \\
+ & = - \frac{1}{2} \begin{pmatrix}
+0 & 0 \\
+\Gamma \rho_{eg} & \Gamma \rho_{e e}
+\end{pmatrix}+\text{h.c.}+ \begin{pmatrix}
+\Gamma \rho_{e e} & 0 \\
+0 & 0
+\end{pmatrix} \\
+ & =\begin{pmatrix}
+\Gamma \rho_{e e} & - \frac{1}{2}\Gamma\rho_{ge} \\
+- \frac{1}{2}\Gamma \rho_{eg} & -\Gamma \rho_{e e}
+\end{pmatrix}
+\end{align}$$
+Let $E_{e}=h \times 100MHz,\ E_{g}=0$, we have:
+$$H= \begin{pmatrix}
+E_{g} & 0  \\
+ 0 & E_{e}
+\end{pmatrix}$$
+Then:
+$$\begin{align}
+  \begin{pmatrix}
+\dot{\rho}_{gg} & \dot{\rho}_{ge} \\
+\dot{\rho}_{eg} & \dot{\rho}_{e e}
+\end{pmatrix}= - \frac{1}{i\hbar}[\rho,H]+L & =  \begin{pmatrix}
+\Gamma \rho_{e e} & - \frac{1}{2}\Gamma \rho_{ge}- \frac{1}{i\hbar}(E_{e}-E_{g})\rho_{ge} \\
+ - \frac{1}{2}\Gamma \rho_{eg}+ \frac{1}{i\hbar}(E_{e}-E_{g})\rho_{eg} & -\Gamma \rho_{e e}
+\end{pmatrix}
+\end{align}$$
+With the initial condition:
+$$\rho(t=0)= \begin{pmatrix}
+\frac{1}{\sqrt{ 2 }} \\
+\frac{1}{\sqrt{ 2 }}
+\end{pmatrix}  \begin{pmatrix}
+\frac{1}{\sqrt{ 2 }} &  \frac{1}{\sqrt{ 2 }}
+\end{pmatrix}= \begin{pmatrix}
+\frac{1}{2} & \frac{1}{2} \\
+\frac{1}{2} & \frac{1}{2}
+\end{pmatrix}$$
 
-
+Then it's easy to solve:
+$$\begin{align}
+ & \rho_{e e}(t)=\frac{1}{2}e^{-\Gamma t}= \frac{1}{2}e^{- 2\pi \times  10^{7}t},\ \rho_{gg}=1- \frac{1}{2}e^{-\Gamma t}=1- \frac{1}{2}e^{-2\pi  \times 10^{7}t} \\
+ & \rho_{ge}(t)= \frac{1}{2}\exp\left( \frac{i}{\hbar}(E_{e}-E_{g})t \right)e^{- \frac{\Gamma}{2}t}= \frac{1}{2}\exp(i 2\pi \times 10^{8}t)e^{-\pi \times 10^{7}t},\ \rho_{eg}(t)= \frac{1}{2}\exp(-i 2\pi \times 10^{8}t)e^{-\pi \times 10^{7}t}
+\end{align}$$
+## b.
+We have:
+$$\begin{align}
+d\rho & = \begin{pmatrix}
+0 & \rho ^{*} \\
+\rho & 0
+\end{pmatrix} \begin{pmatrix}
+\rho_{gg} & \rho_{ge} \\
+\rho_{eg} & \rho_{e e}
+\end{pmatrix}= \begin{pmatrix}
+d^{*}\rho_{eg} & d^{*}\rho_{e e} \\
+d\rho_{gg} & d\rho_{ge}
+\end{pmatrix}
+\end{align}$$
+Then:
+$$\begin{align}
+Tr(d\rho) & = d^{*}\rho_{eg}+d\rho_{ge} \\
+ & = 2\mathrm{Re}(d\rho_{ge}) \\
+ & = 2(\mathrm{Re}(d)\mathrm{Re}(\rho_{ge})-\mathrm{Im}(d)\mathrm{Im}(\rho_{ge})) \\
+ & = \mathrm{Re}(d)\cos(2\pi \times 10^{8}t)e^{-\pi \times 10^{7}t}- \mathrm{Im}(d) \sin (2\pi \times 10^{8}t)e^{-\pi \times 10^{7}t}
+\end{align}$$
+Therefore:
+$$\begin{align}
+E & = sTr(d\rho)  \\
+ & = s\mathrm{Re}(d)\cos(2\pi \times 10^{8}t)e^{-\pi \times 10^{7}t}- s\mathrm{Im}(d) \sin (2\pi \times 10^{8}t)e^{-\pi \times 10^{7}t}
+\end{align}$$
 
 
 
