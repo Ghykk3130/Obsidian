@@ -272,14 +272,85 @@ $$\begin{align}
 \end{align}$$
 Then we have:
 $$\begin{align}
-\hat{E}(q) & = s\mathrm{Re}(d) \frac{\omega_{0}+i\omega}{\Omega^{2}+(\omega_{0}+i\omega)^{2}}-s\mathrm{Im}(d) \frac{\Omega}{\Omega^{2}+(\omega_{0}+i\omega)^{2}}
+\hat{E}(\omega) & = s\mathrm{Re}(d) \frac{\omega_{0}+i\omega}{\Omega^{2}+(\omega_{0}+i\omega)^{2}}-s\mathrm{Im}(d) \frac{\Omega}{\Omega^{2}+(\omega_{0}+i\omega)^{2}}
 \end{align}$$
 We then calculate:
 $$\begin{align}
-  |\hat{E}(q)|^{2} & = \left| \frac{s\mathrm{Re}(d)\omega_{0}-s\mathrm{Im}(d)\Omega+is\mathrm{Re}(d)\omega}{\Omega^{2}+(\omega_{0}+i\omega)^{2}}  \right|^{2}  \\
+  |\hat{E}(\omega)|^{2} & = \left| \frac{s\mathrm{Re}(d)\omega_{0}-s\mathrm{Im}(d)\Omega+is\mathrm{Re}(d)\omega}{\Omega^{2}+(\omega_{0}+i\omega)^{2}}  \right|^{2}  \\
  & = \frac{|s\mathrm{Re}(d)\omega_{0}-s\mathrm{Im}(d)\Omega+is\mathrm{Re}(d)\omega |^{2}}{|\Omega^{2}+(\omega_{0}+i\omega)^{2} |^{2}} \\
  & = \frac{(s\mathrm{Re}(d)\omega_{0}-s\mathrm{Im}(d)\Omega)^{2}+s^{2}\mathrm{Re}^{2}(d)\omega^{2}}{(\Omega^{2}+\omega_{0}^{2}-\omega^{2})^{2}+4\omega_{0}^{2}\omega^{2}} 
 \end{align}$$
+Let $\nu= \frac{\omega}{2\pi}$. We rewrite in terms of frequency:
+$$\begin{align}
+| \hat{E}(\nu) |^{2} & = \frac{(s\mathrm{Re}(d)\omega_{0}-s\mathrm{Im}(d)\Omega)^{2}+s^{2}\mathrm{Re}^{2}(d)4\pi^{2}\nu^{2}}{(\Omega^{2}+\omega_{0}^{2}-4\pi^{2}\nu^{2})^{2}+16\pi^{2}\omega_{0}^{2}\nu^{2}}
+\end{align}$$
+For $\omega \approx \Omega$, we can approximate:
+$$\begin{align}
+|\hat{E}(\nu) |^{2}  & \approx \frac{(s\mathrm{Re}(d)\omega_{0}-s\mathrm{Im}(d)\Omega)^{2}+s^{2}\mathrm{Re}^{2}(d)\Omega^{2}}{[(\Omega-2\pi \nu)(\Omega+2\pi \nu)+\omega_{0}^{2}]^{2}+4\omega_{0}^{2}\Omega^{2} } \\
+ & \approx  \frac{(s\mathrm{Re}(d)\omega_{0}-s\mathrm{Im}(d)\Omega)^{2}+s^{2}\mathrm{Re}^{2}(d)\Omega^{2}}{[2\Omega(\Omega-2\pi \nu)+\omega_{0}^{2}]^{2}+4\omega_{0}^{2}\Omega^{2}}  \\
+ & \approx \frac{s^{2}\mathrm{Im}^{2}(d)\Omega^{2}+s^{2}\mathrm{Re}^{2}(d)\Omega^{2}}{4\Omega^{2}(\Omega^{}-2\pi \nu)^{2}+4\omega_{0}^{2}\Omega^{2}}= \frac{s^{2}|d|^{2}}{4(\Omega-2\pi \nu)^{2}+4\omega_{0}^{2}}\text{ where }\Omega=2\pi \times 10^{8} Hz,\ \omega_{0}=\pi \times 10^{7}Hz
+\end{align}$$
+This is a Lorentzian centering at $\nu=  \frac{\Omega}{2\pi}=10^{8 }Hz$.
+
+To calculate FWHM, we set:
+$$\begin{align}
+ & 4(\Omega-2\pi \nu)^{2}=4\omega_{0}^{2} \\
+\implies & \Omega-2\pi \nu=\pm 2\omega_{0} \\
+
+\implies & \nu \approx \frac{\Omega\mp 2\omega_{0}}{2\pi}
+\end{align}$$
+So:
+$$\text{FWHM}\approx \frac{4\omega_{0}}{2\pi}= \frac{2\omega_{0}}{\pi}$$
+# 3.
+## a.
+Obviously, by problem 1, we have:
+$$\begin{align}
+ & - \frac{1}{i\hbar}[\rho,H]+L  = \begin{pmatrix}
+\Gamma \rho_{e e} & - \frac{1}{2}(\Gamma+\gamma_{e})\rho_{ge}- \frac{1}{i\hbar}(E_{e}-E_{g})\rho_{ge} \\
+- \frac{1}{2}(\Gamma+\gamma_{e})\rho_{eg}+ \frac{1}{i\hbar }(E_{e}-E_{g})\rho_{eg} & -\Gamma \rho_{e e}
+\end{pmatrix}
+\end{align}$$
+Then we can solve:
+$$\begin{align}
+ & \rho_{e e}(t)= \frac{1}{2}e^{-\Gamma t}= \frac{1}{2}e^{-2\pi \times 10^{7} t} \\
+ & \rho_{ge}(t)= \frac{1}{2}\exp\left( \frac{i}{\hbar}(E_{e}-E_{g})t \right)e^{- \frac{1}{2}(\Gamma+\gamma_{e})t}= \frac{1}{2}\exp(i 2\pi \times 10^{8} t)e^{- 6 \pi \times 10^{7}t} \\
+ & \rho_{gg}(t)=1-\rho_{e e}(t),\ \rho_{eg}(t)=\rho ^{*}_{ge}(t)
+\end{align}$$
+Then:
+$$\begin{align}
+Tr(d\rho) & = d^{*}\rho_{eg}+d\rho_{ge} \\
+ & = 2\mathrm{Re}(d\rho_{ge}) \\
+ & = 2(\mathrm{Re}(d)\mathrm{Re}(\rho_{ge})-\mathrm{Im}(d)\mathrm{Im}(\rho_{ge})) \\
+ & = \mathrm{Re}(d)\cos(2\pi \times 10^{8}t)e^{-6\pi \times 10^{7}t}- \mathrm{Im}(d) \sin (2\pi \times 10^{8}t)e^{-6\pi \times 10^{7}t}
+\end{align}$$
+Therefore:
+$$\begin{align}
+E & = sTr(d\rho)  \\
+ & = s\mathrm{Re}(d)\cos(2\pi \times 10^{8}t)e^{-6\pi \times 10^{7}t}- s\mathrm{Im}(d) \sin (2\pi \times 10^{8}t)e^{-6\pi \times 10^{7}t}
+\end{align}$$
+Let $\Omega=2\pi \times 10^{8} Hz,\ \omega_{1}=6\pi \times 10^{7}Hz$. Then similarly we obtain:
+$$\begin{align}
+| \hat{E}(\nu) |^{2} & = \frac{(s\mathrm{Re}(d)\omega_{1}-s\mathrm{Im}(d)\Omega)^{2}+s^{2}\mathrm{Re}^{2}(d)4\pi^{2}\nu^{2}}{(\Omega^{2}+\omega_{1}^{2}-4\pi^{2}\nu^{2})^{2}+16\pi^{2}\omega_{1}^{2}\nu^{2}}
+\end{align}$$
+For $\omega \approx \Omega$, we can approximate:
+$$\begin{align}
+|\hat{E}(\nu) |^{2}  
+ & \approx \frac{s^{2}\mathrm{Im}^{2}(d)\Omega^{2}+s^{2}\mathrm{Re}^{2}(d)\Omega^{2}}{4\Omega^{2}(\Omega^{}-2\pi \nu)^{2}+4\omega_{1}^{2}\Omega^{2}}= \frac{s^{2}|d|^{2}}{4(\Omega-2\pi \nu)^{2}+4\omega_{1}^{2}}\text{ where }\Omega=2\pi \times 10^{8} Hz,\ \omega_{1}=6 \pi \times 10^{7}Hz
+\end{align}$$
+Then:
+$$\text{FWHM}\approx \frac{4\omega_{1}}{2\pi}= \frac{2\omega_{1}}{\pi}$$
+## b.
+
+We know that:
+$$\begin{align}
+P(t) & \propto|[\rho]|^{2} \\
+ & = (\mathrm{Re}(d)\cos(\Omega t)e^{-\omega_{1}t}-\mathrm{Im}(d)\sin(\Omega t)e^{-\omega_{1}t})^{2} \\
+ & = [\mathrm{Re}^{2}(d)\cos ^{2}(\Omega t)+\mathrm{Im}^{2}(d)\sin ^{2}(\Omega t)-2\mathrm{Re}(d)\mathrm{Im}(d)\cos(\Omega t)\sin(\Omega t)]e^{-2\omega_{1}t} \\
+ & = (\mathrm{Re}(d)\cos(\Omega t)-\mathrm{Im}(d)\sin(\Omega t))^{2}e^{-(\Gamma+\gamma_{e})t} \\
+ & = \mathrm{Re}^{2}(de^{i\Omega t})e^{-(\Gamma+\gamma_{e})t}
+\end{align}$$
+The decay time is given by $\frac{1}{\Gamma+\gamma_{e}}$.
+
 
 
 
