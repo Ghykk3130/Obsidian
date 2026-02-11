@@ -827,7 +827,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 200,
+    "collapsed": true
   },
   "right": {
     "id": "9003d078f8dbc4ed",
@@ -927,9 +928,11 @@
   },
   "active": "783d12501451d681",
   "lastOpenFiles": [
-    "Homework/Physics 512/Physics 512 homework 1.md",
-    "Homework/Physics 512/Physics 512 homework 2.md",
     "Notes/开放量子系统.md",
+    "Homework/Physics 512/Physics 512 homework 2.md",
+    "Notes/X-ray diffraction.md",
+    "Notes/Wigner-D矩阵与spherical harmonics.md",
+    "Homework/Physics 512/Physics 512 homework 1.md",
     "Experimental/Reflections.md",
     "Homework/Math 654/Untitled.md",
     "Notes/张量分析.md",
@@ -948,11 +951,9 @@
     "Reading notes/Electrical resistance of ferromagnetic metals.md",
     "Reading notes/Dynamics and critical currents in fast superconducting vortices at high pulsed magnetic fields.md",
     "Homework/Physics 463/Midterm 1 cheat sheet.md",
-    "Notes/X-ray diffraction.md",
     "Homework/Physics 463/Physics 463 homework 3.md",
     "Notes/晶体基础.md",
     "Homework/Physics 463/Physics 463 homework 1.md",
-    "Homework/Physics 463/Physics 463 homework 2.md",
     "Pictures/Pasted image 20260208161916.png",
     "Pictures/Pasted image 20260208161837.png",
     "Pictures/Pasted image 20260208161809.png",
