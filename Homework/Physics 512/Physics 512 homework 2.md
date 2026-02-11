@@ -259,6 +259,26 @@ $$\begin{align}
 E & = sTr(d\rho)  \\
  & = s\mathrm{Re}(d)\cos(2\pi \times 10^{8}t)e^{-\pi \times 10^{7}t}- s\mathrm{Im}(d) \sin (2\pi \times 10^{8}t)e^{-\pi \times 10^{7}t}
 \end{align}$$
- 
+## c.
+Let $\Omega=2\pi \times 10^{8} Hz,\ \omega_{0}=\pi \times 10^{7}Hz$. We have that:
+$$\begin{align}
+\hat{E}(\omega) & = \int_{0}^{\infty}dt[s\mathrm{Re}(d)\cos(\Omega t)e^{-\omega_{0} t}-s\mathrm{Im}(d)\sin(\Omega t)e^{-\omega_{0} t}]e^{-i\omega t}
+\end{align}$$
+We decompose:
+$$\cos(\Omega t)= \frac{e^{i\Omega t}+e^{-i\Omega t}}{2},\ \sin(\Omega t)= \frac{e^{i\Omega t}-e^{-i\Omega t}}{2i}$$
+Then it suffices to compute:
+$$\begin{align}
+\int_{0}^{\infty}dt e^{\pm i\Omega t}e^{-\omega_{0} t}e^{-i\omega t} & = \frac{-1}{\pm i\Omega-\omega_{0}-i\omega}
+\end{align}$$
+Then we have:
+$$\begin{align}
+\hat{E}(q) & = s\mathrm{Re}(d) \frac{\omega_{0}+i\omega}{\Omega^{2}+(\omega_{0}+i\omega)^{2}}-s\mathrm{Im}(d) \frac{\Omega}{\Omega^{2}+(\omega_{0}+i\omega)^{2}}
+\end{align}$$
+We then calculate:
+$$\begin{align}
+  |\hat{E}(q)|^{2} & = \left| \frac{s\mathrm{Re}(d)\omega_{0}-s\mathrm{Im}(d)\Omega+is\mathrm{Re}(d)\omega}{\Omega^{2}+(\omega_{0}+i\omega)^{2}}  \right|^{2}  \\
+ & = \frac{|s\mathrm{Re}(d)\omega_{0}-s\mathrm{Im}(d)\Omega+is\mathrm{Re}(d)\omega |^{2}}{|\Omega^{2}+(\omega+iq)^{2} |^{2}} \\
+ & = \frac{(s\mathrm{Re}(d)\omega-s\mathrm{Im}(d)\Omega)^{2}+s^{2}\mathrm{Re}^{2}(d)q^{2}}{(\Omega^{2}+\omega^{2}-q^{2})^{2}+4\omega^{2}q^{2}}
+\end{align}$$
 
 
