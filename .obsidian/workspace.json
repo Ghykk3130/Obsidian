@@ -751,12 +751,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Homework/Physics 512/Physics 512 homework 2.md",
+                "file": "Notes/Viscous flow.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Physics 512 homework 2"
+              "title": "Viscous flow"
             }
           }
         ],
@@ -827,8 +827,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200,
-    "collapsed": true
+    "width": 200
   },
   "right": {
     "id": "9003d078f8dbc4ed",
@@ -928,8 +927,9 @@
   },
   "active": "783d12501451d681",
   "lastOpenFiles": [
-    "Notes/Fourier transform.md",
+    "Notes/流体的基本方程.md",
     "Homework/Physics 512/Physics 512 homework 2.md",
+    "Notes/Fourier transform.md",
     "Notes/开放量子系统.md",
     "Notes/X-ray diffraction.md",
     "Notes/Wigner-D矩阵与spherical harmonics.md",
@@ -953,7 +953,6 @@
     "Reading notes/Dynamics and critical currents in fast superconducting vortices at high pulsed magnetic fields.md",
     "Homework/Physics 463/Midterm 1 cheat sheet.md",
     "Homework/Physics 463/Physics 463 homework 3.md",
-    "Notes/晶体基础.md",
     "Pictures/Pasted image 20260208161916.png",
     "Pictures/Pasted image 20260208161837.png",
     "Pictures/Pasted image 20260208161809.png",
