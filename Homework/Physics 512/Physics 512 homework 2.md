@@ -259,6 +259,6 @@ $$\begin{align}
 E & = sTr(d\rho)  \\
  & = s\mathrm{Re}(d)\cos(2\pi \times 10^{8}t)e^{-\pi \times 10^{7}t}- s\mathrm{Im}(d) \sin (2\pi \times 10^{8}t)e^{-\pi \times 10^{7}t}
 \end{align}$$
-
+ 
 
 
