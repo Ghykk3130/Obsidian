@@ -152,7 +152,6 @@ $$\begin{align}
  & w=1-e^{-\Gamma t}
 \end{align}$$
 ## b)
-
 We have:
 $$\begin{align}
 u^{2}+v^{2}+w^{2} & = \exp(-(\Gamma+\gamma_{g}+\gamma_{e})t)+(1-e^{-\Gamma t})^{2} \\
@@ -162,5 +161,14 @@ The time derivative is given by:
 $$\begin{align}
 -(\Gamma+\gamma_{g}+\gamma_{e})e^{-(\Gamma+\gamma_{g}+\gamma_{e})t}+ 2\Gamma e^{-\Gamma t}-2\Gamma e^{-2\Gamma t} & = -(\Gamma+\gamma_{g}+\gamma_{e})e^{-(\Gamma+\gamma_{g}+\gamma_{e})t}+2\Gamma e^{-\Gamma t}(1-e^{-\Gamma t}) \\
  & < -(\Gamma+\gamma_{g}+\gamma_{e})e^{-(\Gamma+\gamma_{g}+\gamma_{e})t}+2\Gamma e^{-\Gamma t}\text{ for }t>0 \\
-
+ & <-(\Gamma+\gamma_{g}+\gamma_{e})e^{-(\Gamma+\gamma_{g}+\gamma_{e})t}+\Gamma e^{-\Gamma t} \\
+ & <-(\Gamma+\gamma_{g}+\gamma_{e})e^{-(\Gamma+\gamma_{g}+\gamma_{e})t}+\Gamma e^{-(\Gamma+\gamma_{g}+\gamma_{e})t} \\
+ & = -(\gamma_{g}+\gamma_{e})e^{-(\Gamma+\gamma_{g}+\gamma_{e})t}<0
 \end{align}$$
+Then the length of the Bloch vector is monotonically decreasing. It's obvious that at $t=0$, $u^{2}+v^{2}+w^{2}=1$. Then the ensemble is impure for $t> 0$.
+# 2.
+
+
+
+
+
