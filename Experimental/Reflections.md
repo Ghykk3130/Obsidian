@@ -11,3 +11,5 @@
 - Decrease the excitation frequency such that $V_{th}$ can reach thermal equilibrium at $300K$. Once equilibrium is reached at 300K, most likely under low temperature, the equilibrium can still be reached.
 - Decrease the field scan rate to obtain more data points.
 - Adjust the excitation amplitude to be large enough.
+- For $T> 20K$, do excitation of $2K$. 
+- Measure the four-wire resistance of the sample, determine whether the contacts resistance are large or not.
