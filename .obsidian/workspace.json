@@ -751,16 +751,30 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Notes/流体的动力学与热力学函数.md",
+                "file": "Notes/流体的基本方程.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "流体的动力学与热力学函数"
+              "title": "流体的基本方程"
+            }
+          },
+          {
+            "id": "a4631e5770f728c3",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Notes/线性波.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "线性波"
             }
           }
         ],
-        "currentTab": 53
+        "currentTab": 54
       }
     ],
     "direction": "vertical"
@@ -827,7 +841,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 200,
+    "collapsed": true
   },
   "right": {
     "id": "9003d078f8dbc4ed",
@@ -925,12 +940,13 @@
       "obsidian-excalidraw-plugin:New drawing": false
     }
   },
-  "active": "783d12501451d681",
+  "active": "a4631e5770f728c3",
   "lastOpenFiles": [
+    "Notes/流体的基本方程.md",
+    "Notes/线性波.md",
+    "Notes/流体的动力学与热力学函数.md",
     "Notes/Viscous flow.md",
     "Homework/Physics 512/Physics 512 homework 2.md",
-    "Notes/流体的动力学与热力学函数.md",
-    "Notes/流体的基本方程.md",
     "Notes/Fourier transform.md",
     "Notes/开放量子系统.md",
     "Notes/X-ray diffraction.md",
@@ -952,7 +968,6 @@
     "Notes/Magnetic ordering.md",
     "Reading notes/Topological properties and dynamics of magnetic skyrmions.md",
     "Reading notes/Electrical resistance of ferromagnetic metals.md",
-    "Reading notes/Dynamics and critical currents in fast superconducting vortices at high pulsed magnetic fields.md",
     "Pictures/Pasted image 20260208161916.png",
     "Pictures/Pasted image 20260208161837.png",
     "Pictures/Pasted image 20260208161809.png",
