@@ -151,5 +151,3 @@ Plans for measurement:
 	- Temperatures followed should follow the normal order. Still need double measurement for broken data, checked with the lab notebook
 - Then do Nernst repair measurement, plus the temperature we just found.
 - Then consider either $m$ versus $T$ under low field, or zoom in measurement of $S$ versus $H$.
-
-
