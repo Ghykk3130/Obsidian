@@ -134,18 +134,6 @@
             }
           },
           {
-            "id": "5a01e80b516d7a01",
-            "type": "leaf",
-            "state": {
-              "type": "excalidraw",
-              "state": {
-                "file": "Excalidraw/Drawing 2026-01-25 16.48.54.excalidraw.md"
-              },
-              "icon": "excalidraw-icon",
-              "title": "Drawing 2026-01-25 16.48.54.excalidraw"
-            }
-          },
-          {
             "id": "26449e9312e7f09c",
             "type": "leaf",
             "state": {
@@ -157,18 +145,6 @@
               },
               "icon": "lucide-file",
               "title": "晶体基础"
-            }
-          },
-          {
-            "id": "01243b3896619e6a",
-            "type": "leaf",
-            "state": {
-              "type": "excalidraw",
-              "state": {
-                "file": "Excalidraw/Drawing 2026-01-25 23.14.14.excalidraw.md"
-              },
-              "icon": "excalidraw-icon",
-              "title": "Drawing 2026-01-25 23.14.14.excalidraw"
             }
           },
           {
@@ -774,19 +750,21 @@
             }
           },
           {
-            "id": "87ba52686b8ffa64",
+            "id": "53659691313925cb",
             "type": "leaf",
             "state": {
-              "type": "excalidraw",
+              "type": "markdown",
               "state": {
-                "file": "Excalidraw/Drawing 2026-02-12 21.55.49.excalidraw.md"
+                "file": "Notes/线性波.md",
+                "mode": "source",
+                "source": false
               },
-              "icon": "excalidraw-icon",
-              "title": "Drawing 2026-02-12 21.55.49.excalidraw"
+              "icon": "lucide-file",
+              "title": "线性波"
             }
           }
         ],
-        "currentTab": 55
+        "currentTab": 53
       }
     ],
     "direction": "vertical"
@@ -853,7 +831,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 200,
+    "collapsed": true
   },
   "right": {
     "id": "9003d078f8dbc4ed",
@@ -948,13 +927,25 @@
       "templates:Insert template": false,
       "command-palette:Open command palette": false,
       "obsidian-git:Open Git source control": false,
-      "obsidian-excalidraw-plugin:New drawing": false
+      "obsidian-excalidraw-plugin:New drawing": false,
+      "tldraw:Create new tldrawing": false
     }
   },
-  "active": "87ba52686b8ffa64",
+  "active": "53659691313925cb",
   "lastOpenFiles": [
-    "Notes/线性波.md",
+    "tldraw/Tldraw 2026-02-12 10.11PM.md",
+    "Excalidraw/Drawing 2025-11-28 21.25.38.excalidraw.md",
+    "Excalidraw/Drawing 2025-11-22 00.07.40.excalidraw.md",
+    "Excalidraw/Drawing 2026-02-12 22.23.34.excalidraw.md",
+    "Excalidraw/Drawing 2026-02-12 22.20.06.excalidraw.md",
+    "Excalidraw/Drawing 2026-02-10 00.09.41.excalidraw.md",
     "Excalidraw/Drawing 2026-02-12 21.55.49.excalidraw.md",
+    "tldraw",
+    "Excalidraw/Scripts/Downloaded/Convert freedraw to line.svg",
+    "Excalidraw/Scripts/Downloaded/Convert freedraw to line.md",
+    "Excalidraw/Scripts/Downloaded",
+    "Excalidraw/Scripts",
+    "Notes/线性波.md",
     "Notes/流体的基本方程.md",
     "Notes/流体的描述.md",
     "Notes/流体的动力学与热力学函数.md",
@@ -969,16 +960,9 @@
     "Homework/Physics 512/Physics 512 homework 1.md",
     "Homework/Math 654/Untitled.md",
     "Notes/张量分析.md",
-    "Excalidraw/Drawing 2026-02-10 00.09.41.excalidraw.md",
     "Excalidraw/Drawing 2026-02-09 23.33.59.excalidraw.md",
     "Excalidraw/Drawing 2026-02-09 22.51.49.excalidraw.md",
     "Notes/Untitled 2.md",
-    "Notes/规范变换.md",
-    "Notes/势阱对称性与波函数对称性.md",
-    "Notes/二次量子化.md",
-    "Notes/气体.md",
-    "Notes/Untitled.md",
-    "Notes/Magnetic ordering.md",
     "Pictures/Pasted image 20260208161916.png",
     "Pictures/Pasted image 20260208161837.png",
     "Pictures/Pasted image 20260208161809.png",
@@ -988,16 +972,12 @@
     "Pictures/Pasted image 20260206012740.png",
     "Pictures/Pasted image 20260206012358.png",
     "Pictures/Pasted image 20260206011230.png",
-    "Pictures/Pasted image 20260206010124.png",
     "Homework/Physics 512",
     "Homework/Math 654",
     "Notes",
     "Homework/Physics 463",
     "Homework/Physics 511",
     "Homework/Physics 510",
-    "Homework/Physics 402",
-    "Notes",
-    "AB效应",
-    "Pictures/Spherical_harmonics.pdf"
+    "Homework/Physics 402"
   ]
 }
