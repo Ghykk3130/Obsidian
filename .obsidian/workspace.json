@@ -831,7 +831,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 200,
+    "collapsed": true
   },
   "right": {
     "id": "9003d078f8dbc4ed",
@@ -932,10 +933,11 @@
   },
   "active": "53659691313925cb",
   "lastOpenFiles": [
+    "Notes/Ideal flow.md",
+    "Notes/线性波.md",
     "Notes/流体的描述.md",
     "Homework/Physics 512/Physics 512 homework 1.md",
     "Homework/Physics 512/Physics 512 homework 2.md",
-    "Notes/线性波.md",
     "tldraw/Tldraw 2026-02-12 10.11PM.md",
     "Excalidraw/Drawing 2025-11-28 21.25.38.excalidraw.md",
     "Excalidraw/Drawing 2025-11-22 00.07.40.excalidraw.md",
@@ -961,7 +963,6 @@
     "Notes/张量分析.md",
     "Excalidraw/Drawing 2026-02-09 23.33.59.excalidraw.md",
     "Excalidraw/Drawing 2026-02-09 22.51.49.excalidraw.md",
-    "Notes/Untitled 2.md",
     "Pictures/Pasted image 20260208161916.png",
     "Pictures/Pasted image 20260208161837.png",
     "Pictures/Pasted image 20260208161809.png",
