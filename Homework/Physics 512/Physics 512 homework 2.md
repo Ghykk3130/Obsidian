@@ -71,7 +71,8 @@ $$\begin{align}
 \end{pmatrix} \begin{pmatrix}
 \rho_{gg} & \rho_{ge} \\
 \rho_{eg} & \rho_{e e}
-\end{pmatrix}+ \text{h.c.}+ \begin{pmatrix}
+\end{pmatrix}+ \text{h.c.} \\
+ & + \begin{pmatrix}
 0 & \sqrt{ \gamma_{g} } \\
 0 & 0
 \end{pmatrix}\begin{pmatrix}
@@ -112,7 +113,7 @@ Then we have:
 $$\begin{align}
 L & = \begin{pmatrix}
 \Gamma \rho_{e e} & - \frac{1}{2}(\Gamma+\gamma_{g}+\gamma_{e})\rho_{ge} \\
- - \frac{1}{2}(\Gamma+\gamma_{g}+\gamma_{e})\rho_{eg} & -\Gamma \rho_{e^{  }}
+ - \frac{1}{2}(\Gamma+\gamma_{g}+\gamma_{e})\rho_{eg} & -\Gamma \rho_{e e }
 \end{pmatrix}
 \end{align}$$
 We then calculate:
