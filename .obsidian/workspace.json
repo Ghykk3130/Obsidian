@@ -755,12 +755,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Notes/线性波.md",
+                "file": "Homework/Physics 512/Physics 512 homework 2.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "线性波"
+              "title": "Physics 512 homework 2"
             }
           }
         ],
@@ -933,6 +933,7 @@
   },
   "active": "53659691313925cb",
   "lastOpenFiles": [
+    "Notes/线性波.md",
     "tldraw/Tldraw 2026-02-12 10.11PM.md",
     "Excalidraw/Drawing 2025-11-28 21.25.38.excalidraw.md",
     "Excalidraw/Drawing 2025-11-22 00.07.40.excalidraw.md",
@@ -945,7 +946,6 @@
     "Excalidraw/Scripts/Downloaded/Convert freedraw to line.md",
     "Excalidraw/Scripts/Downloaded",
     "Excalidraw/Scripts",
-    "Notes/线性波.md",
     "Notes/流体的基本方程.md",
     "Notes/流体的描述.md",
     "Notes/流体的动力学与热力学函数.md",

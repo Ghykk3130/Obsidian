@@ -252,15 +252,18 @@ $$\begin{align}
 Tr(d\rho) & = d^{*}\rho_{eg}+d\rho_{ge} \\
  & = 2\mathrm{Re}(d\rho_{ge}) \\
  & = 2(\mathrm{Re}(d)\mathrm{Re}(\rho_{ge})-\mathrm{Im}(d)\mathrm{Im}(\rho_{ge})) \\
- & = \mathrm{Re}(d)\cos(2\pi \times 10^{8}t)e^{-\pi \times 10^{7}t}- \mathrm{Im}(d) \sin (2\pi \times 10^{8}t)e^{-\pi \times 10^{7}t}
+ & = \mathrm{Re}(d)\cos(\Omega t)e^{-\omega_{0}t}- \mathrm{Im}(d) \sin (\Omega t)e^{-\omega_{0}t}
 \end{align}$$
+where $\Omega= \frac{E_{e}-E_{g}}{\hbar},\ \omega_{0}=- \frac{\Gamma}{2}$.
+
 Therefore:
 $$\begin{align}
 E & = sTr(d\rho)  \\
+ & =s\mathrm{Re}(d)\cos(\Omega t)e^{-\omega_{0}t}-s\mathrm{Im}(d)\sin(\Omega t)e^{-\omega_{0}t} \\
  & = s\mathrm{Re}(d)\cos(2\pi \times 10^{8}t)e^{-\pi \times 10^{7}t}- s\mathrm{Im}(d) \sin (2\pi \times 10^{8}t)e^{-\pi \times 10^{7}t}
 \end{align}$$
 ## c.
-Let $\Omega=2\pi \times 10^{8} Hz,\ \omega_{0}=\pi \times 10^{7}Hz$. We have that:
+We have that:
 $$\begin{align}
 \hat{E}(\omega) & = \int_{0}^{\infty}dt[s\mathrm{Re}(d)\cos(\Omega t)e^{-\omega_{0} t}-s\mathrm{Im}(d)\sin(\Omega t)e^{-\omega_{0} t}]e^{-i\omega t}
 \end{align}$$
