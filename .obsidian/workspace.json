@@ -772,9 +772,21 @@
               "icon": "lucide-file",
               "title": "线性波"
             }
+          },
+          {
+            "id": "87ba52686b8ffa64",
+            "type": "leaf",
+            "state": {
+              "type": "excalidraw",
+              "state": {
+                "file": "Excalidraw/Drawing 2026-02-12 21.55.49.excalidraw.md"
+              },
+              "icon": "excalidraw-icon",
+              "title": "Drawing 2026-02-12 21.55.49.excalidraw"
+            }
           }
         ],
-        "currentTab": 54
+        "currentTab": 55
       }
     ],
     "direction": "vertical"
@@ -841,8 +853,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200,
-    "collapsed": true
+    "width": 200
   },
   "right": {
     "id": "9003d078f8dbc4ed",
@@ -940,14 +951,15 @@
       "obsidian-excalidraw-plugin:New drawing": false
     }
   },
-  "active": "a4631e5770f728c3",
+  "active": "87ba52686b8ffa64",
   "lastOpenFiles": [
+    "Notes/线性波.md",
+    "Excalidraw/Drawing 2026-02-12 21.55.49.excalidraw.md",
     "Notes/流体的基本方程.md",
     "Notes/流体的描述.md",
     "Notes/流体的动力学与热力学函数.md",
     "Notes/Untitled 1.md",
     "Experimental/Reflections.md",
-    "Notes/线性波.md",
     "Notes/Viscous flow.md",
     "Homework/Physics 512/Physics 512 homework 2.md",
     "Notes/Fourier transform.md",
@@ -967,7 +979,6 @@
     "Notes/气体.md",
     "Notes/Untitled.md",
     "Notes/Magnetic ordering.md",
-    "Reading notes/Topological properties and dynamics of magnetic skyrmions.md",
     "Pictures/Pasted image 20260208161916.png",
     "Pictures/Pasted image 20260208161837.png",
     "Pictures/Pasted image 20260208161809.png",
