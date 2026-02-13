@@ -1,6 +1,6 @@
 # 1.
 ## a)
-Let $\mathbf{B}$ align with the z-axis. Then denote $\ket{g}=\ket{+  \hat{\mathbf{z}}},\ \ket{e}=\ket{-  \hat{\mathbf{z}}}$. We have that:
+Let $\mathbf{B}$ align with the z-axis. Then denote $\ket{e}=\ket{+  \hat{\mathbf{z}}},\ \ket{g}=\ket{-  \hat{\mathbf{z}}}$. We have that:
 $$\begin{align}
 C & = \sqrt{ \Gamma }\ket{g} \bra{e}  \\
  & = \begin{pmatrix}
@@ -157,7 +157,7 @@ $$\begin{align}
 u^{2}+v^{2}+w^{2} & = \exp(-(\Gamma+\gamma_{g}+\gamma_{e})t)+(1-e^{-\Gamma t})^{2} \\
  & = \exp(-(\Gamma+\gamma_{g}+\gamma_{e})t)+1- 2e^{-\Gamma t}+e^{-2\Gamma t }
 \end{align}$$
-The time derivative is given by:
+If $\Gamma,\gamma_{e},\gamma_{g}$ are not all zero, then we claim that the ensemble is impure for $t>0$. Since the time derivative of $u^{2}+v^{2}+w^{2}$ is given by:
 $$\begin{align}
 -(\Gamma+\gamma_{g}+\gamma_{e})e^{-(\Gamma+\gamma_{g}+\gamma_{e})t}+ 2\Gamma e^{-\Gamma t}-2\Gamma e^{-2\Gamma t} & = -(\Gamma+\gamma_{g}+\gamma_{e})e^{-(\Gamma+\gamma_{g}+\gamma_{e})t}+2\Gamma e^{-\Gamma t}(1-e^{-\Gamma t}) \\
  & < -(\Gamma+\gamma_{g}+\gamma_{e})e^{-(\Gamma+\gamma_{g}+\gamma_{e})t}+2\Gamma e^{-\Gamma t}\text{ for }t>0 \\
@@ -265,7 +265,7 @@ E & = sTr(d\rho)  \\
 ## c.
 We have that:
 $$\begin{align}
-\hat{E}(\omega) & = \int_{0}^{\infty}dt[s\mathrm{Re}(d)\cos(\Omega t)e^{-\omega_{0} t}-s\mathrm{Im}(d)\sin(\Omega t)e^{-\omega_{0} t}]e^{-i\omega t}
+\tilde{E}(\omega) & = \int_{0}^{\infty}dt[s\mathrm{Re}(d)\cos(\Omega t)e^{-\omega_{0} t}-s\mathrm{Im}(d)\sin(\Omega t)e^{-\omega_{0} t}]e^{-i\omega t}
 \end{align}$$
 We decompose:
 $$\cos(\Omega t)= \frac{e^{i\Omega t}+e^{-i\Omega t}}{2},\ \sin(\Omega t)= \frac{e^{i\Omega t}-e^{-i\Omega t}}{2i}$$
@@ -273,37 +273,32 @@ Then it suffices to compute:
 $$\begin{align}
 \int_{0}^{\infty}dt e^{\pm i\Omega t}e^{-\omega_{0} t}e^{-i\omega t} & = \frac{-1}{\pm i\Omega-\omega_{0}-i\omega}
 \end{align}$$
+Then we have that:
+$$\begin{align}
+\tilde{E}(\omega) & = s\mathrm{Re}(d) \frac{1}{2} \left(  \frac{-1}{i\Omega-\omega_{0}-i\omega}+ \frac{-1}{-i\Omega-\omega_{0}-i\omega}  \right)-s\mathrm{Im}(d) \frac{1}{2i}\left(  \frac{-1}{i\Omega-\omega_{0}-i\omega}- \frac{-1}{-i\Omega-\omega_{0}-i\omega} \right) \\
+ & = \frac{1}{i(\omega-\Omega)+\omega_{0}} \frac{s}{2}(\mathrm{Re}(d)+i\mathrm{Im}(d))+ \frac{1}{i(\omega+\Omega)+\omega_{0}} \frac{s}{2} (\mathrm{Re}(d)-i\mathrm{Im}(d)) \\
+ & = \frac{1}{i(\omega-\Omega)+\omega_{0}} \frac{s}{2}d+ \frac{1}{i(\omega+\Omega)+\omega_{0}} \frac{s}{2}d^{*}
+\end{align}$$
+Let $\tilde{E}_{+}(\omega)= \frac{1}{i(\omega-\Omega)+\omega_{0}} \frac{s}{2}d,\ \tilde{E}_{-}(\omega)= \frac{1}{i(\omega+\Omega)+\omega_{0}} \frac{s}{2}d^{*}$, then we have:
+$$\begin{align}
+|\tilde{E}(\omega) |^{2} & = |\tilde{E}_{+}|^{2}+ |\tilde{E}_{-}|^{2}+2\mathrm{Re}(\tilde{E}_{+}^{*}\tilde{E}_{-})
+\end{align}$$
+Since we have $\Omega= 2\pi \times 10^{8} s^{-1} \gg \omega_{0}=\pi \times 10^{7} s^{-1}$, $\tilde{E}_{+}$ is only prominent around $\omega \approx \Omega$, $\tilde{E}_{-}$ is only prominent around $\omega \approx -\Omega$. Then we take $2\mathrm{Re}(\tilde{E}^{*}_{+}\tilde{E}_{-})\approx 0$.
+
 Then we have:
 $$\begin{align}
-\hat{E}(\omega) & = s\mathrm{Re}(d) \frac{\omega_{0}+i\omega}{\Omega^{2}+(\omega_{0}+i\omega)^{2}}-s\mathrm{Im}(d) \frac{\Omega}{\Omega^{2}+(\omega_{0}+i\omega)^{2}}
+|\tilde{E}(\omega) |^{2} & \approx \frac{1}{4}s^{2}|d|^{2} \frac{1}{(\omega-\Omega)^{2}+\omega_{0}^{2}}+ \frac{1}{4}s^{2}|d|^{2}  \frac{1}{(\omega+\Omega)^{2}+\omega_{0}^{2}}
 \end{align}$$
-We then calculate:
+For realistic purposes, we only observe the part that peaks around the positive frequency. Then we have:
+$$|\tilde{E}(\omega)|^{2} \propto \frac{1}{(\omega-\Omega)^{2}+\omega_{0}^{2}}$$
+We convert to frequency by $\nu= \frac{\omega}{2\pi}$. Then:
+$$|\tilde{E}(\nu)|^{2}\propto \frac{1}{(2\pi \nu-\Omega)^{2}+\omega_{0}^{2}}, \text{ where }\Omega= \frac{E_{e}-E_{g}}{\hbar}= 2\pi \times 10^{8}\ s^{-1},\ \omega_{0}= \frac{\Gamma}{2}= \pi \times 10^{7}\ s^{-1}$$
+Note that here I wrote $s^{-1}$ because they are angular frequencies, not frequencies. The function is a  Lorentzian centered at $\nu= \frac{\Omega}{2\pi}=100\ MHz$. To find the FWHM, we set:
 $$\begin{align}
-  |\hat{E}(\omega)|^{2} & = \left| \frac{s\mathrm{Re}(d)\omega_{0}-s\mathrm{Im}(d)\Omega+is\mathrm{Re}(d)\omega}{\Omega^{2}+(\omega_{0}+i\omega)^{2}}  \right|^{2}  \\
- & = \frac{|s\mathrm{Re}(d)\omega_{0}-s\mathrm{Im}(d)\Omega+is\mathrm{Re}(d)\omega |^{2}}{|\Omega^{2}+(\omega_{0}+i\omega)^{2} |^{2}} \\
- & = \frac{(s\mathrm{Re}(d)\omega_{0}-s\mathrm{Im}(d)\Omega)^{2}+s^{2}\mathrm{Re}^{2}(d)\omega^{2}}{(\Omega^{2}+\omega_{0}^{2}-\omega^{2})^{2}+4\omega_{0}^{2}\omega^{2}} 
+ & (2\pi \nu-\Omega)^{2}=\omega_{0}^{2} \\
+\implies & 2\pi \Delta \nu= 2\omega_{0}\implies \Delta \nu= \frac{\omega_{0}}{\pi}=10\ MHz
 \end{align}$$
-Let $\nu= \frac{\omega}{2\pi}$. We rewrite in terms of frequency:
-$$\begin{align}
-| \hat{E}(\nu) |^{2} & = \frac{(s\mathrm{Re}(d)\omega_{0}-s\mathrm{Im}(d)\Omega)^{2}+s^{2}\mathrm{Re}^{2}(d)4\pi^{2}\nu^{2}}{(\Omega^{2}+\omega_{0}^{2}-4\pi^{2}\nu^{2})^{2}+16\pi^{2}\omega_{0}^{2}\nu^{2}}
-\end{align}$$
-For $\omega \approx \Omega$, we can approximate:
-$$\begin{align}
-|\hat{E}(\nu) |^{2}  & \approx \frac{(s\mathrm{Re}(d)\omega_{0}-s\mathrm{Im}(d)\Omega)^{2}+s^{2}\mathrm{Re}^{2}(d)\Omega^{2}}{[(\Omega-2\pi \nu)(\Omega+2\pi \nu)+\omega_{0}^{2}]^{2}+4\omega_{0}^{2}\Omega^{2} } \\
- & \approx  \frac{(s\mathrm{Re}(d)\omega_{0}-s\mathrm{Im}(d)\Omega)^{2}+s^{2}\mathrm{Re}^{2}(d)\Omega^{2}}{[2\Omega(\Omega-2\pi \nu)+\omega_{0}^{2}]^{2}+4\omega_{0}^{2}\Omega^{2}}  \\
- & \approx \frac{s^{2}\mathrm{Im}^{2}(d)\Omega^{2}+s^{2}\mathrm{Re}^{2}(d)\Omega^{2}}{4\Omega^{2}(\Omega^{}-2\pi \nu)^{2}+4\omega_{0}^{2}\Omega^{2}}= \frac{s^{2}|d|^{2}}{4(\Omega-2\pi \nu)^{2}+4\omega_{0}^{2}}\text{ where }\Omega=2\pi \times 10^{8} Hz,\ \omega_{0}=\pi \times 10^{7}Hz
-\end{align}$$
-This is a Lorentzian centering at $\nu=  \frac{\Omega}{2\pi}=10^{8 }Hz$.
 
-To calculate FWHM, we set:
-$$\begin{align}
- & 4(\Omega-2\pi \nu)^{2}=4\omega_{0}^{2} \\
-\implies & \Omega-2\pi \nu=\pm 2\omega_{0} \\
-
-\implies & \nu \approx \frac{\Omega\mp 2\omega_{0}}{2\pi}
-\end{align}$$
-So:
-$$\text{FWHM}\approx \frac{4\omega_{0}}{2\pi}= \frac{2\omega_{0}}{\pi}$$
 # 3.
 ## a.
 Obviously, by problem 1, we have:
@@ -331,17 +326,12 @@ $$\begin{align}
 E & = sTr(d\rho)  \\
  & = s\mathrm{Re}(d)\cos(2\pi \times 10^{8}t)e^{-6\pi \times 10^{7}t}- s\mathrm{Im}(d) \sin (2\pi \times 10^{8}t)e^{-6\pi \times 10^{7}t}
 \end{align}$$
-Let $\Omega=2\pi \times 10^{8} Hz,\ \omega_{1}=6\pi \times 10^{7}Hz$. Then similarly we obtain:
+Let $\Omega=\frac{E_{e}-E_{g}}{\hbar}= 2\pi \times 10^{8} s^{-1},\ \omega_{1}=\frac{1}{2}(\Gamma+\gamma_{e})=6\pi \times 10^{7} s^{-1}$. Then similarly we obtain:
 $$\begin{align}
-| \hat{E}(\nu) |^{2} & = \frac{(s\mathrm{Re}(d)\omega_{1}-s\mathrm{Im}(d)\Omega)^{2}+s^{2}\mathrm{Re}^{2}(d)4\pi^{2}\nu^{2}}{(\Omega^{2}+\omega_{1}^{2}-4\pi^{2}\nu^{2})^{2}+16\pi^{2}\omega_{1}^{2}\nu^{2}}
+| \hat{E}(\nu) |^{2} & = \frac{1}{(2\pi \nu-\Omega)^{2}+\omega_{1}^{2}}
 \end{align}$$
-For $\omega \approx \Omega$, we can approximate:
-$$\begin{align}
-|\hat{E}(\nu) |^{2}  
- & \approx \frac{s^{2}\mathrm{Im}^{2}(d)\Omega^{2}+s^{2}\mathrm{Re}^{2}(d)\Omega^{2}}{4\Omega^{2}(\Omega^{}-2\pi \nu)^{2}+4\omega_{1}^{2}\Omega^{2}}= \frac{s^{2}|d|^{2}}{4(\Omega-2\pi \nu)^{2}+4\omega_{1}^{2}}\text{ where }\Omega=2\pi \times 10^{8} Hz,\ \omega_{1}=6 \pi \times 10^{7}Hz
-\end{align}$$
-Then:
-$$\text{FWHM}\approx \frac{4\omega_{1}}{2\pi}= \frac{2\omega_{1}}{\pi}$$
+This is a Lorentzian centered at $\nu= \frac{\Omega}{2\pi}= 100\ MHz$. Then obviously, by substituting $\omega_{0}$ in problem 2 with $\omega_{1}$, we have:
+$$\text{FWHM}= \frac{\omega_{1}}{\pi}= 60\ MHz$$
 ## b.
 
 We know that:
@@ -350,9 +340,9 @@ P(t) & \propto|[\rho]|^{2} \\
  & = (\mathrm{Re}(d)\cos(\Omega t)e^{-\omega_{1}t}-\mathrm{Im}(d)\sin(\Omega t)e^{-\omega_{1}t})^{2} \\
  & = [\mathrm{Re}^{2}(d)\cos ^{2}(\Omega t)+\mathrm{Im}^{2}(d)\sin ^{2}(\Omega t)-2\mathrm{Re}(d)\mathrm{Im}(d)\cos(\Omega t)\sin(\Omega t)]e^{-2\omega_{1}t} \\
  & = (\mathrm{Re}(d)\cos(\Omega t)-\mathrm{Im}(d)\sin(\Omega t))^{2}e^{-(\Gamma+\gamma_{e})t} \\
- & = \mathrm{Re}^{2}(de^{i\Omega t})e^{-(\Gamma+\gamma_{e})t}
+ 
 \end{align}$$
-The decay time is given by $\frac{1}{\Gamma+\gamma_{e}}$.
+Since $\Gamma\gg \Omega$, we treat $e^{-(\Gamma+\gamma_{e})t}$ as an envelope. The decay time is given by $\frac{1}{\Gamma+\gamma_{e}}= \frac{1}{120\pi}\ \mu s\approx 2.65\ ns$.
 
 
 
