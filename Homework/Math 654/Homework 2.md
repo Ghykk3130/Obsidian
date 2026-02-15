@@ -15,9 +15,9 @@ $$\partial_{y}\phi=\partial_{t}\eta\text{ at }y=0$$
 Consider the Bernoulli equation on the surface:
 $$\begin{align}
 
- & \rho \frac{\partial \phi}{\partial t}+ \frac{1}{2}\rho |\nabla \phi |^{2}+ \rho g\eta+p{0}=f(t)\text{ on the surface} \
+ & \rho \frac{\partial \phi}{\partial t}+ \frac{1}{2}\rho |\nabla \phi |^{2}+ \rho g\eta+p{0}=f(t)\text{ on the surface} \\
 
-\implies &  \rho \frac{\partial \phi}{\partial t}+ \rho g\eta+ p_{0} =f(t) \
+\implies &  \rho \frac{\partial \phi}{\partial t}+ \rho g\eta+ p_{0} =f(t) \\
 
 \implies &  \partial_{t}\phi+g\eta= g(t)\text{, where }g(t)= \frac{f(t)-p_{0}}{\rho}\text{ at }y= \eta
 
@@ -66,5 +66,68 @@ $$\begin{align}
 \end{align}$$
 This is obviously an ellipse. The representative pathlines are drawn for $k=1,h=1,B=0.5,g=9.8$
 ![[Pasted image 20260214230535.png|center|500]]
+
+# Acheson 3.6
+
+Define the velocity potential $\phi(x,y,t)$ for $y>h(x,t)$ and $y< h(x,t)$. Consider the Fourier transform:
+$$\begin{align}
+\phi(x,y,t)= \int_{\mathbb{R}^{2}}dkd\omega \tilde{\phi}(k,y,t)e^{i(kx-\omega t)}
+\end{align}$$
+Then the Laplace equation reduces to:
+$$\nabla^{2}\phi=0\implies \partial_{yy}\tilde{\phi}=k^{2}\tilde{\phi}\implies \tilde{\phi}=Be ^{{|k|y}}+C e^{{-|k|}y}$$
+Know that:
+$$\begin{align}
+ & u < \infty\text{ at } y=\pm\infty \\
+\implies & |\nabla \phi |<  \infty\text{ at }y=\pm \infty \\
+\implies & \left|\partial_{x}\int dkd\omega \tilde{\phi}e^{i(kx-\omega t)} \right|< \infty  \text{ at }y=\pm \infty\\
+\implies & \left|\int dkd\omega \tilde{\phi} (ik)e^{i(kx-\omega t)}\right|<\infty \text{ at }y=\pm \infty\implies \tilde{\phi}= C e^{-|k|y}\text{ for }y >h,\ \tilde{\phi}=B e^{|k|y}\text{ for }y<h
+\end{align}$$
+Then we transform $\eta$:
+$$\begin{align}
+\tilde{\eta}(k^{'},\omega^{'}) & = \left( \frac{1}{2\pi} \right)^{2}\int_{\mathbb{R}^{2}}dxdt A e^{i(kx-\omega t)}e^{-i(k^{'}x-\omega^{'}t)} \\
+ & = A \delta(k^{'}-k)\delta(\omega^{'}-\omega)
+\end{align}$$
+For $y>h$, assume that $\mathbf{U}=U  \hat{\mathbf{x}}$. we have:
+$$\begin{align}
+ & \partial_{y}\phi= \partial_{t}\eta+ U \partial_{x}\eta \text{ at }y=0\\
+\implies &  \partial_{y}\tilde{\phi}= -i\omega^{'} \tilde{\eta}+iUk^{'} \tilde{\eta}\text{ at }y=0 \\
+\implies  & C= \frac{iUk^{'}-i\omega^{'}}{|k^{'}|}A\delta(k^{'}-k )\delta(\omega^{'}-\omega)
+\end{align}$$
+Then:
+$$\begin{align}
+\phi & = \int_{\mathbb{R}^{2}}dk^{'}d\omega^{'}\frac{iUk^{'}-i\omega^{'}}{|k^{'}|}A\delta(k^{'}-k )\delta(\omega^{'}-\omega)e^{-|k^{'}|y}e^{i(k^{'}x-\omega^{'}t)} \\
+ & = \frac{iUk-i\omega}{|k|}A e^{-|k|y}e^{i(kx-\omega t)}
+\end{align}$$
+Then:
+$$\begin{align}
+ & \left.\rho_{1} \frac{\partial \phi}{\partial t}\right|_{y=0}+\rho_{1} g\eta+p_{1}(x,y=\eta,t)=0 \\
+\implies & p_{1}(x,y=\eta,t)= -\rho_{1} \frac{Uk\omega-\omega^{2}}{|k|}Ae^{i(kx-\omega t)}-\rho_{1}gA e^{i(kx-\omega t)}
+\end{align}$$For $y< h$, we have:
+$$\begin{align}
+ & \partial_{y}\phi=\partial_{t}\eta\text{ at }y=0
+ \\
+\implies & \partial_{y}\tilde{\phi}=-i\omega^{'} A\delta(k^{'}-k)\delta(\omega^{'}-\omega)\text{ at }y=0 \\
+\implies 
+ & B= -i \frac{\omega^{'}}{|k^{'}|}A\delta(k^{'}-k )\delta(\omega^{'}-\omega)\end{align}$$
+ Then:
+ $$\begin{align}
+
+\phi & = \int_{\mathbb{R}^{2}}dk^{'}d\omega^{'}(-i) \frac{\omega^{'}}{|k^{'}|}A\delta(k^{'}-k)\delta(\omega^{'}-\omega)e^{|k^{'}|y}e^{i(k^{'}x-\omega^{'}t)} \\
+ & = -i \frac{\omega}{|k|} Ae^{|k|y}e^{i(kx-\omega t)}
+\end{align}$$
+Then:
+$$\begin{align}
+ & \left. \rho_{2} \frac{\partial \phi}{\partial t}\right|_{y=0}+\rho_{2}g\eta+p_{2}(x,y=\eta,t)=0 \\
+\implies & p_{2}(x,y=\eta,t)= \rho_{2} \frac{\omega^{2}}{|k|}Ae^{i(kx-\omega t)}-\rho_{2}gAe^{i(kx-\omega t)}
+\end{align}$$
+Therefore:
+$$\begin{align}
+ & p_{2}-p_{2}=-T\nabla \eta^{2} \\
+\implies & (\rho_{2}-\rho_{1})\omega^{2}+\rho_{1}Uk\omega-|k |(k^{2}T+(\rho_{1}+\rho_{2})g)=0
+\end{align}$$
+
+
+
+
 
 
