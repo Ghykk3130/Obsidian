@@ -783,12 +783,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Homework/Math 654/Untitled.md",
+                "file": "Notes/线性波.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Untitled"
+              "title": "线性波"
             }
           }
         ],
@@ -859,8 +859,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200,
-    "collapsed": true
+    "width": 200
   },
   "right": {
     "id": "9003d078f8dbc4ed",
@@ -961,11 +960,11 @@
   },
   "active": "03dcd09cdb0ff9f9",
   "lastOpenFiles": [
+    "Homework/Math 654/Untitled.md",
     "Homework/Math 654/Homework 2.md",
     "Notes/线性波.md",
     "Notes/表面张力.md",
     "Notes/统计力学的数学基础.md",
-    "Homework/Math 654/Untitled.md",
     "Pictures/Pasted image 20260214230927.png",
     "Pictures/Pasted image 20260214230535.png",
     "Homework/Math 654/Homework 1.md",
