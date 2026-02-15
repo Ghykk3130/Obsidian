@@ -37,3 +37,24 @@ $$\nabla^{2}\phi=\partial_{xx}\phi + \partial_{yy}\phi=0$$
 with the above boundary conditions. Consider the following ansatz:
 $$\phi(x,y)=A(y)\exp(i(kx-\omega t))
 $$We should take the real part as the physical solution at the end. Substitute into the Laplace equation to get: $$\partial_{yy}A=k^{2}A$$ We integrate to obtain: $$A(y)= Be^{iky}+Ce^{-iky}\tag{*}$$ Consider the boundary condition on the seabed: $$\partial_{y}\phi=0\implies \partial_{y}A=0\text{ at }y=-h$$ Substitute in the solution to get: $$A(y)= B \cosh(k(y+h))$$ Here $B$ is a constant different than the $B$ in $(*)$. Now we have another two boundary conditions: $$\begin{align}  & \partial_{t}\phi+g\eta=0 \implies -i\omega A+g\eta=0\text{ at }y=0 \\  & \partial_{y}\phi=\partial_{t}\eta \implies \partial_{y}A=-i\omega \eta\text{ at }y=0 \end{align}$$ Then combining the two to eliminate $\eta$: $$\begin{align}  & \partial_{y}A= \frac{\omega^{2}}{g}A\text{ at }y=0 \\ \implies & k\sinh(kh)= \frac{\omega^{2}}{g}\cosh(kh) \\ \implies & \omega^{2}=gk\tanh(kh) \\ \implies &  c^{2}= \frac{g}{k}\tanh(kh) \end{align}$$The above results are valid as long as $\eta\ll 1, \partial_{x}\phi,\ \partial_{y}\phi\ll 1, \partial_{x}\eta\ll 1$. And the spatial or time derivative of $\partial_{x}\phi,\ \partial_{y}\phi,\ \partial_{x}\eta$ be $\ll 1$. And we ignore the second-ordered small terms.
+
+Then we have:
+$$\phi=B\cosh(k(y+h))e^{i(kx-ckt)}$$
+We take the real part to write:
+$$\phi=B\cosh(k(y+h))\cos(kx-ckt)$$
+Then:
+$$\begin{align}
+ \mathbf{u} & = \nabla \phi=Bk\begin{pmatrix}-
+\cosh(k(y+h))\sin(kx-ckt) \\
+\sinh(k(y+h))\cos(kx-ckt)
+\end{pmatrix}
+\end{align}$$
+Assume that $x,y$ are close to their starting point $\mathbf{r}_{0}=(x_{0},y_{0})$. We solve the pathline by:
+$$\begin{align}
+ & \frac{D\mathbf{r}}{Dt}=\mathbf{u} \\
+\implies & \mathbf{r}=- \frac{B}{c}\begin{pmatrix}
+\cosh(k(y_{0}+h))\cos(kx_{0}-ckt) \\
+\sinh(k(y_0+h))\sin(kx_{0}-ckt)
+\end{pmatrix}+\mathbf{r}_{0}
+\end{align}$$
+
