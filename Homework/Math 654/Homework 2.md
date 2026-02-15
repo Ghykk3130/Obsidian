@@ -40,6 +40,8 @@ $$We should take the real part as the physical solution at the end. Substitute i
 
 Then we have:
 $$\phi=B\cosh(k(y+h))e^{i(kx-ckt)}$$
+$B$ can be determined by $\partial_{y}\phi=\partial_{t}\eta\text{ at }y=0$ once the $\eta(x,0)$ is given as the initial condition.
+
 We take the real part to write:
 $$\phi=B\cosh(k(y+h))\cos(kx-ckt)$$
 Then:
@@ -49,7 +51,12 @@ $$\begin{align}
 \sinh(k(y+h))\cos(kx-ckt)
 \end{pmatrix}
 \end{align}$$
-Assume that $x,y$ are close to their starting point $\mathbf{r}_{0}=(x_{0},y_{0})$. We solve the pathline by:
+Assume that $x,y$ are close to their starting point $\mathbf{r}_{0}=(x_{0},y_{0})$. Then the velocity is approximated by:
+$$\mathbf{u}\approx Bk\begin{pmatrix}
+-\cosh(k(y_{0}+h))\sin(kx_{0}-ckt) \\
+\sinh(k(y_{0}+h))\cos(kx_{0}-ckt)
+\end{pmatrix}$$
+We solve the pathline:
 $$\begin{align}
  & \frac{D\mathbf{r}}{Dt}=\mathbf{u} \\
 \implies & \mathbf{r}=- \frac{B}{c}\begin{pmatrix}
@@ -57,4 +64,7 @@ $$\begin{align}
 \sinh(k(y_0+h))\sin(kx_{0}-ckt)
 \end{pmatrix}+\mathbf{r}_{0}
 \end{align}$$
+This is obviously an ellipse. The representative pathlines are drawn for $k=1,h=1,B=0.5,g=9.8$
+![[Pasted image 20260214230535.png|center|500]]
+
 
