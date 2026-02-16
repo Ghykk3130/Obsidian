@@ -1,17 +1,14 @@
-考虑我们在一定边界下解波动方程，最终的解为Fourier模的积分：
-$$\psi(x,t)= \int_{\mathbb{R}^{2}} dkd\omega\tilde{\psi}(k,\omega)e^{i(kx-\omega t)}$$
-我们想知道，在$t\rightarrow \infty$时，解的渐进行为。
+考虑我们在一定边界条件下解波动方程。对解作Fourier变换得到：
+$$\psi(x,t)=\int_{\mathbb{R}^{2}}dkd\omega \tilde{\psi}(k,\omega)e^{i(kx-\omega t)}$$
+假设波动方程得到一个色散关系：
+$$f(k,\omega)\tilde{\psi}(k,\omega)=0$$
+其中$f(k,\omega)=0$引出色散关系$\omega=\omega(k)$。
 
->[!Quote] 一个naive的想法
->可能会想用Riemann-Lebesgue引理。我么想求：
->$$\lim_{ t \to \infty } \int_{\mathbb{R}^{2}}dkd\omega\tilde{\psi}(k,\omega)e^{i(kx-\omega t)}$$
->那么我们直接分部积分：
->$$\begin{align}
- \int dkd\omega\tilde{\psi}(k,\omega)e^{i(kx-\omega t)} & = \int d\omega e^{-i\omega t}\int dk\tilde{\psi}e^{ikx} \\
- & = \left[ - \frac{1}{it}e^{-i\omega t}\int dk\tilde{\psi}e^{ikx} \right]_{-\infty}^{\infty}- \int d\omega dk\left(  \frac{e^{-i\omega t}}{-it} \right)\left( \frac{\partial \tilde{\psi}}{\partial \omega} \right)e^{ikx}
-\end{align}$$
->由于$t$在分母，显然取$t\rightarrow \infty$不就全为零了吗？
->但这样忽略了色散关系$\omega=\omega(k)$。即$\omega$和$k$并不独立。这是波动方程的结构所决定的。
+>[!Quote] Idea 1
+>假设$\tilde{\psi}$是有界函数，那么必定得到在不符合色散关系的区域，$\tilde{\psi}=0$。那么积分$\int_{\mathbb{R}^{2}}dkd\omega \tilde{\psi}e^{i(kx-\omega t)}=0$，得到trivial解。
+>
+>想要得到non-trivial的解，我们必须放弃$\tilde{\psi}$的有界性。显然$\tilde{\psi}=C\delta(\omega-\omega(k))$。其中$C=C(k,\omega)$为任意有界函数。但是由于Dirac delta的约束，我们不妨直接写$C=C(k)$。那么非平凡解为：
+>$$\psi(x,t)=\int_{\mathbb{R}^{}}dkC(k)e^{i(kx-\omega(k)t)}$$
 
-
+我们想知道，在$t\rightarrow \infty$时，解的渐近行为。
 
