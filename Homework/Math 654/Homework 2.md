@@ -177,6 +177,19 @@ $$\begin{align}
 \implies & (\rho_{2}+\rho_{1})\omega^{2}-2\rho_{2}kU\omega+\rho_{2}U^{2}k^{2}-|k|(Tk^{2}+(\rho_{1}-\rho_{2})g)=0
 
 \end{align}$$
+In general, we can solve $\omega(k)$. There are two roots in $\mathbb{C}$ with opposite imaginary parts. If $\mathrm{Im}(\omega)> 0,\ \text{for some }k\in \mathbb{R}$, the velocity potential would include a $e^{\mathrm{Im}(\omega)t}$ term, which leads to instability for some $k$. Since the imaginary parts of the two solutions are of opposite signs, the positive imaginary part must exist if there are no real roots. Then we have:
+$$\begin{align}
+ & 4\rho_{2}^{2}k^{2}U^{2}-4(\rho_{2}+\rho_{1})[\rho_{2}U^{2}k^{2}-|k|(Tk^{2}+(\rho_{1}-\rho_{2})g)]<0 \\
+\implies & \rho_{1}\rho_{2}U^{2}k^{2}> (\rho_{1}+\rho_{2})|k|[k^{2}T+(\rho_{1}-\rho_{2})g] \\
+\implies & U^{2}> \left( \frac{1}{\rho_{1}}+ \frac{1}{\rho_{2}} \right) \left( T|k|+ \frac{\rho_{1}-\rho_{2}}{|k|}g \right),\ \text{for some } k\in \mathbb{R} \\
+\end{align}$$
+Then it suffices to let:
+$$\begin{align}
+ & U^{2}> min\left( \left( \frac{1}{\rho_{1}}+ \frac{1}{\rho_{2}} \right)\left( T|k|+ \frac{\rho_{1}-\rho_{2}}{|k|}g \right) \right) \\
+ \implies & U^{2}> \left( \frac{1}{\rho_{1}}+ \frac{1}{\rho_{2}} \right)2 \sqrt{ T(\rho_{1}-\rho_{2})g }
+\end{align}$$
+The minimum is found by using AM-GM inequality.
+
 
 
 
