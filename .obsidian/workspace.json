@@ -783,16 +783,44 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Homework/Math 654/Untitled.md",
+                "file": "Notes/虚功原理，d‘Alembert原理，与Lagrange方程.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Untitled"
+              "title": "虚功原理，d‘Alembert原理，与Lagrange方程"
+            }
+          },
+          {
+            "id": "18dc276abe1b2d83",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Notes/Stationary phase approximation.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Stationary phase approximation"
+            }
+          },
+          {
+            "id": "77bd1f73b0a76d73",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Notes/Stationary phase approximation.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Stationary phase approximation"
             }
           }
         ],
-        "currentTab": 55
+        "currentTab": 57
       }
     ],
     "direction": "vertical"
@@ -958,12 +986,16 @@
       "tldraw:Create new tldrawing": false
     }
   },
-  "active": "03dcd09cdb0ff9f9",
+  "active": "77bd1f73b0a76d73",
   "lastOpenFiles": [
-    "Pictures/Pasted image 20260215210708.png",
-    "Homework/Math 654/Homework 2.md",
-    "Homework/Math 654/Untitled.md",
     "Notes/线性波.md",
+    "Homework/Math 654/Homework 2.md",
+    "Notes/Stationary phase approximation.md",
+    "Excalidraw/Drawing 2026-02-15 21.45.49.excalidraw.md",
+    "Notes/虚功原理，d‘Alembert原理，与Lagrange方程.md",
+    "Notes/Fourier transform.md",
+    "Homework/Math 654/Untitled.md",
+    "Pictures/Pasted image 20260215210708.png",
     "Notes/表面张力.md",
     "Notes/统计力学的数学基础.md",
     "Pictures/Pasted image 20260214230927.png",
@@ -990,15 +1022,11 @@
     "Notes/流体的动力学与热力学函数.md",
     "Notes/Untitled 1.md",
     "Experimental/Reflections.md",
-    "Notes/Viscous flow.md",
-    "Notes/Fourier transform.md",
-    "Notes/开放量子系统.md",
     "Pictures/Pasted image 20260208161916.png",
     "Pictures/Pasted image 20260208161837.png",
     "Pictures/Pasted image 20260208161809.png",
     "Pictures/Pasted image 20260208151758.png",
     "Pictures/Pasted image 20260207163200.png",
-    "Pictures/Pasted image 20260207162956.png",
     "Homework/Physics 512",
     "Homework/Math 654",
     "Notes",
