@@ -69,62 +69,115 @@ This is obviously an ellipse. The representative pathlines are drawn for $k=1,h=
 
 # Acheson 3.6
 
-Define the velocity potential $\phi(x,y,t)$ for $y>h(x,t)$ and $y< h(x,t)$. Consider the Fourier transform:
+Define the velocity potential $\phi(x,y,t)$ for $y>h(x,t)$ and $y< h(x,t)$. For $y<h$, consider the Fourier transform:
 $$\begin{align}
+
 \phi(x,y,t)= \int_{\mathbb{R}^{2}}dkd\omega \tilde{\phi}(k,y,t)e^{i(kx-\omega t)}
+
 \end{align}$$
 Then the Laplace equation reduces to:
 $$\nabla^{2}\phi=0\implies \partial_{yy}\tilde{\phi}=k^{2}\tilde{\phi}\implies \tilde{\phi}=Be ^{{|k|y}}+C e^{{-|k|}y}$$
 Know that:
 $$\begin{align}
- & u < \infty\text{ at } y=\pm\infty \\
-\implies & |\nabla \phi |<  \infty\text{ at }y=\pm \infty \\
-\implies & \left|\partial_{x}\int dkd\omega \tilde{\phi}e^{i(kx-\omega t)} \right|< \infty  \text{ at }y=\pm \infty\\
-\implies & \left|\int dkd\omega \tilde{\phi} (ik)e^{i(kx-\omega t)}\right|<\infty \text{ at }y=\pm \infty\implies \tilde{\phi}= C e^{-|k|y}\text{ for }y >h,\ \tilde{\phi}=B e^{|k|y}\text{ for }y<h
+
+ & u < \infty\text{ at } y=-\infty \\
+
+\implies & |\nabla \phi |<  \infty\text{ at }y=- \infty \\
+
+\implies & \left|\partial_{x}\int dkd\omega \tilde{\phi}e^{i(kx-\omega t)} \right|< \infty  \text{ at }y=- \infty\\
+
+\implies & \left|\int dkd\omega \tilde{\phi} (ik)e^{i(kx-\omega t)}\right|<\infty \text{ at }y=- \infty\implies  \tilde{\phi}=B e^{|k|y}\text{ for }y<h
+
 \end{align}$$
 Then we transform $\eta$:
 $$\begin{align}
+
 \tilde{\eta}(k^{'},\omega^{'}) & = \left( \frac{1}{2\pi} \right)^{2}\int_{\mathbb{R}^{2}}dxdt A e^{i(kx-\omega t)}e^{-i(k^{'}x-\omega^{'}t)} \\
- & = A \delta(k^{'}-k)\delta(\omega^{'}-\omega)
+
+ & = A \delta(k^{'}-k)\delta(\omega^{'}-\omega)
+
 \end{align}$$
-For $y>h$, assume that $\mathbf{U}=U  \hat{\mathbf{x}}$. we have:
+we have:
 $$\begin{align}
- & \partial_{y}\phi= \partial_{t}\eta+ U \partial_{x}\eta \text{ at }y=0\\
-\implies &  \partial_{y}\tilde{\phi}= -i\omega^{'} \tilde{\eta}+iUk^{'} \tilde{\eta}\text{ at }y=0 \\
-\implies  & C= \frac{iUk^{'}-i\omega^{'}}{|k^{'}|}A\delta(k^{'}-k )\delta(\omega^{'}-\omega)
-\end{align}$$
-Then:
-$$\begin{align}
-\phi & = \int_{\mathbb{R}^{2}}dk^{'}d\omega^{'}\frac{iUk^{'}-i\omega^{'}}{|k^{'}|}A\delta(k^{'}-k )\delta(\omega^{'}-\omega)e^{-|k^{'}|y}e^{i(k^{'}x-\omega^{'}t)} \\
- & = \frac{iUk-i\omega}{|k|}A e^{-|k|y}e^{i(kx-\omega t)}
-\end{align}$$
-Then:
-$$\begin{align}
- & \left.\rho_{1} \frac{\partial \phi}{\partial t}\right|_{y=0}+\rho_{1} g\eta+p_{1}(x,y=\eta,t)=0 \\
-\implies & p_{1}(x,y=\eta,t)= -\rho_{1} \frac{Uk\omega-\omega^{2}}{|k|}Ae^{i(kx-\omega t)}-\rho_{1}gA e^{i(kx-\omega t)}
-\end{align}$$For $y< h$, we have:
-$$\begin{align}
- & \partial_{y}\phi=\partial_{t}\eta\text{ at }y=0
- \\
+
+ & \partial_{y}\phi=\partial_{t}\eta\text{ at }y=0
+
+ \\
+
 \implies & \partial_{y}\tilde{\phi}=-i\omega^{'} A\delta(k^{'}-k)\delta(\omega^{'}-\omega)\text{ at }y=0 \\
-\implies 
- & B= -i \frac{\omega^{'}}{|k^{'}|}A\delta(k^{'}-k )\delta(\omega^{'}-\omega)\end{align}$$
- Then:
- $$\begin{align}
+
+\implies 
+
+ & B= -i \frac{\omega^{'}}{|k^{'}|}A\delta(k^{'}-k )\delta(\omega^{'}-\omega)\end{align}$$
+ Then:
+ $$\begin{align}
 
 \phi & = \int_{\mathbb{R}^{2}}dk^{'}d\omega^{'}(-i) \frac{\omega^{'}}{|k^{'}|}A\delta(k^{'}-k)\delta(\omega^{'}-\omega)e^{|k^{'}|y}e^{i(k^{'}x-\omega^{'}t)} \\
- & = -i \frac{\omega}{|k|} Ae^{|k|y}e^{i(kx-\omega t)}
+
+ & = -i \frac{\omega}{|k|} Ae^{|k|y}e^{i(kx-\omega t)}
+
 \end{align}$$
+Then we choose the gauge such that the time dependent constant is zero in Bernoulli's equation:
+$$\begin{align}
+
+ & \left. \rho_{1} \frac{\partial \phi}{\partial t}\right|_{y=0}+\rho_{1}g\eta+p_{2}(x,y=\eta,t)=0 \\
+
+\implies & p_{2}(x,y=\eta,t)= \rho_{1} \frac{\omega^{2}}{|k|}Ae^{i(kx-\omega t)}-\rho_{1}gAe^{i(kx-\omega t)}
+
+\end{align}$$
+For $y>h$, assume that $\mathbf{U}=U  \hat{\mathbf{x}}$. Then $\phi \sim Ux$ at least for $y=\infty$, and $\forall x,t\in \mathbb{R}$. Then $\phi \not\in L^{1}$, we cannot perform Fourier transform. We make the ansatz:
+$$\phi=Ux+ \phi_{0}(y) e^{{i(kx-\omega t)}}$$
+we have:
+$$\nabla^{2}\phi=0\implies \phi_{0}(y)=C e^{-|k|y}\text{ for boundedness at }y=\infty$$
 Then:
 $$\begin{align}
- & \left. \rho_{2} \frac{\partial \phi}{\partial t}\right|_{y=0}+\rho_{2}g\eta+p_{2}(x,y=\eta,t)=0 \\
-\implies & p_{2}(x,y=\eta,t)= \rho_{2} \frac{\omega^{2}}{|k|}Ae^{i(kx-\omega t)}-\rho_{2}gAe^{i(kx-\omega t)}
+
+ & \partial_{y}\phi= \partial_{t}\eta+ (\partial_{x}\phi) \partial_{x}\eta \text{ at }y=0\\
+
+\implies & -|k|C =-i\omega Ae^{i(kx-\omega t)} +ikUAe^{i(kx-\omega t)}\\
+
+\implies  & C=  \frac{i\omega-ikU}{|k|}Ae^{i(kx-\omega t)}
+
+\end{align}$$
+Then:
+$$\phi=Ux+ \frac{i\omega-ikU}{|k|}A e^{-|k|y}e^{i(kx-\omega t)}$$
+Then:
+$$\begin{align}
+
+ & \nabla \phi = \begin{pmatrix}
+
+U+ \frac{k^{2}U-k\omega}{|k|} Ae^{-|k|y}e^{i(kx-\omega t)} \\
+
+  (ikU-i\omega)Ae^{-|k|y}e^{i(kx-\omega t)}
+
+\end{pmatrix}
+
+\end{align}$$
+Ignore $\mathcal{O}(A^{2})$ terms, we have:
+$$|\nabla \phi|^{2}\approx U^{2}+ 2U \frac{k^{2}U-k\omega}{|k|}Ae^{-|k|y}e^{i(kx-\omega t)}$$
+Then, choose the gauge such that the time dependent constant in Bernoulli's equation is zero:
+$$\begin{align}
+
+ & \left.\rho_{2} \frac{\partial \phi}{\partial t}\right|_{y=0}+\frac{1}{2}\rho_{2}\left(U^{2}+ 2U \frac{k^{2}U-k\omega}{|k|}Ae^{i(kx-\omega t)}\right)+\rho_{2} g\eta+p_{1}(x,y=\eta,t)=0\end{align}$$
+ Rechoose the gauge to eliminate $\frac{1}{2}\rho_{2}U^{2}$. Then we have:
+  $$\begin{align}
+
+ & \left.\rho_{2} \frac{\partial \phi}{\partial t}\right|_{y=0}+\frac{1}{2}\rho_{2}\left( 2U \frac{k^{2}U-k\omega}{|k|}Ae^{i(kx-\omega t)}\right)+\rho_{2} g\eta+p_{1}(x,y=\eta,t)=0 \\
+
+\implies & p_{1}(x,y=\eta,t)= -\rho_{2} \frac{\omega^{2}-kU\omega}{|k|}Ae^{i(kx-\omega t)}-\rho_{2}gA e^{i(kx-\omega t)}-\rho_{2}U \frac{k^{2}U-k\omega}{|k|}Ae^{i(kx-\omega t)}
+
 \end{align}$$
 Therefore:
 $$\begin{align}
- & p_{2}-p_{2}=-T\nabla \eta^{2} \\
-\implies & (\rho_{2}-\rho_{1})\omega^{2}+\rho_{1}Uk\omega-|k |(k^{2}T+(\rho_{1}+\rho_{2})g)=0
+
+ & p_{2}-p_{1}=-T\nabla \eta^{2} \\
+
+\implies & \rho_{1} \frac{\omega^{2}}{|k|}Ae^{i(kx-\omega t)}-\rho_{1}gAe^{i(kx-\omega t)}+\rho_{2} \frac{\omega^{2}-kU\omega}{|k|}Ae^{i(kx-\omega t)}+\rho_{2}gA e^{i(kx-\omega t)}+\rho_{2}U \frac{k^{2}U-k\omega}{|k|}Ae^{i(kx-\omega t)}-Tk^{2}A e^{i(kx-\omega t)}=0 \\
+
+\implies & (\rho_{2}+\rho_{1})\omega^{2}-2\rho_{2}kU\omega+\rho_{2}U^{2}k^{2}-|k|(Tk^{2}+(\rho_{1}-\rho_{2})g)=0
+
 \end{align}$$
+
 
 
 
