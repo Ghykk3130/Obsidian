@@ -982,8 +982,7 @@
       "templates:Insert template": false,
       "command-palette:Open command palette": false,
       "obsidian-git:Open Git source control": false,
-      "obsidian-excalidraw-plugin:New drawing": false,
-      "tldraw:Create new tldrawing": false
+      "obsidian-excalidraw-plugin:New drawing": false
     }
   },
   "active": "77bd1f73b0a76d73",
