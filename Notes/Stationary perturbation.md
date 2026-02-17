@@ -65,13 +65,16 @@ $$\begin{align}
 \implies & \bra{n^{(0)}} (E_{n}^{(0)}-H_{0})\ket{n} =\bra{n^{(0)}} (\lambda V-\Delta_{n})\ket{n}  \\
 \implies & \lambda \bra{n^{(0)}} V\ket{n}= \Delta_{n}\bra{n^{(0)}} n\rangle=\Delta_{n} \\
 \implies & \lambda \bra{n^{(0)}} V \sum_{k=0}^{\infty}\lambda^{k}\ket{n^{(k)}} = \sum_{k=1}^{\infty}\lambda^{k}\Delta_{n}^{(k)} \\
-\implies & \Delta_{n}^{(k)}= \lambda \bra{n^{(0)}} V \ket{n^{(k-1)}}   
+\implies & \Delta_{n}^{(k)}= \bra{n^{(0)}} V \ket{n^{(k-1)}}   
 \end{align}$$
 其中第三行最后是因为注意到由[[Stationary perturbation#^29d3b0|proposition 1.1]]，$\ket{n}$中除了$\ket{n^{(0)}}$部分其余都垂直于$\ket{n^{(0)}}$。
 >[!Right]
 >$\blacksquare$
 
-所以要计算能量修正，首先需要计算态修正。
+>[!Warning]
+>在真正写能量修正时，$k$阶修正不是$\Delta_{n}^{(k)}$，而是$\lambda^{k}\Delta_{n}^{(k)}$!
+
+要计算能量修正，首先需要计算态修正。
 
 >[!Success] Proposition 1.3
 >$$\begin{align}
@@ -113,6 +116,35 @@ $$\begin{align}
 \end{align}$$
 >[!Right]
 >$\blacksquare$
-## Ex:
+## Ex: quadratic stark shift
+
+考虑给氢原子$s$轨道加上$\mathbf{E}=E  \hat{\mathbf{z}}$。那么产生微扰$|e|E z$。则有一阶能量修正：
+$$\begin{align}
+\Delta^{(1)} & = \bra{1,0,0} z \ket{1,0,0} 
+\end{align}$$
+因为$z$具有odd parity，而$\ket{1,0,0}$具有even parity，所以：
+$$\Delta^{(1)}=0$$
+考虑二阶能量修正：
+$$\begin{align}
+\Delta^{(2)} & =  \sum_{n^{'}\neq 1,l^{'},m^{'}} \frac{|\bra{n^{'},l^{'},m^{'}} z \ket{1,0,0}|^{2} }{E_{1 }^{(0)}-E_{n^{'}}^{(0)}} \\
+ & = \sum \frac{\bra{1,0,0}z \ket{n^{'},l^{'},m^{'}} \bra{n^{'},l^{'},m^{'}} z \ket{1,0,0}  }{E_{1}^{(0)}-E_{n^{'}}^{(0)}}
+\end{align}$$
+我们注意到分母：
+$$E_{1}^{(0)}- E_{2}^{(0)} \leq E_{1}^{(0)}- E_{n^{'}}^{(0)}\leq E_{1}^{(0)}-E_{\infty}^{(0)}\implies \frac{3}{4} E_{1}^{(0)}\leq \text{denominator}\leq E_{1}^{(0)}$$
+所以可以求得$\Delta^{(2)}$的上下界：
+$$\begin{align}
+\text{bound}  & = \frac{1}{E_{1}^{(0)}-E_{m}^{(0)}} \sum_{n^{'}\neq 1,l^{'},m^{'}} \bra{1,0,0} z \ket{n^{'},l^{'},m^{'}} \bra{n^{'},l^{'},m^{'}} z \ket{1,0,0} \text{ where }m=2\text{ or }\infty\\
+ & = \frac{1}{E_{1}^{(0)}-E_{m}^{(0)} }\sum_{n^{'},l^{'},m^{'}}\bra{1,0,0} z \ket{n^{'},l^{'},m^{'}} \bra{n^{'},l^{'},m^{'}} z \ket{1,0,0} \\
+ & = \frac{1}{E_{1}^{(0)}-E_{m}^{(0)}  } \bra{1,0,0} z^{2}\ket{1,0,0}    
+\end{align}$$
+其中第一步到第二步是因为$\bra{1,0,0}z\ket{1,0,0}=0$。可以计算：
+$$\begin{align}
+\bra{1,0,0} z^{2}\ket{1,0,0}  & = \bra{1,0,0} r^{2}\cos ^{2}\theta \ket{1,0,0}  \\
+ & = a_{0}^{2}
+\end{align}$$
+所以：
+$$\frac{4}{3} \frac{e^{2}E^{2}}{E_{1}^{(0)}}a_{0}^{2}\leq e^{2}E^{2} \Delta^{(2)}\leq \frac{e^{2}E^{2}}{E_{1}^{(0)}}a_{0}^{2}$$
+其中$E_{1}^{(0)}\approx -13.6eV <0$。
+
 
 
