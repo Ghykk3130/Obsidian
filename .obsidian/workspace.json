@@ -839,12 +839,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Notes/WKB.md",
+                "file": "Homework/Physics 512/Physics 512 cheat sheet.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "WKB"
+              "title": "Physics 512 cheat sheet"
             }
           }
         ],
@@ -900,7 +900,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "node",
+                "query": "",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -911,8 +911,7 @@
               "title": "Search"
             }
           }
-        ],
-        "currentTab": 3
+        ]
       }
     ],
     "direction": "horizontal",
@@ -1016,6 +1015,7 @@
   },
   "active": "55839ad801b23604",
   "lastOpenFiles": [
+    "Notes/WKB.md",
     "Homework/Physics 512/Physics 512 cheat sheet.md",
     "Notes/开放量子系统.md",
     "Homework/Physics 512/Physics 512 homework 2.md",
@@ -1045,7 +1045,6 @@
     "Excalidraw/Drawing 2025-11-22 00.07.40.excalidraw.md",
     "Excalidraw/Drawing 2026-02-12 22.23.34.excalidraw.md",
     "Excalidraw/Drawing 2026-02-12 22.20.06.excalidraw.md",
-    "Excalidraw/Drawing 2026-02-10 00.09.41.excalidraw.md",
     "tldraw",
     "Excalidraw/Scripts/Downloaded/Convert freedraw to line.svg",
     "Excalidraw/Scripts/Downloaded",
