@@ -4,5 +4,8 @@
 
 - Spin: $\boldsymbol{\mu}= g \mu_{B} \frac{1}{\hbar}\mathbf{S},\ \mu_{B}= \frac{|e|\hbar}{2m}$
 - Wigner-Eckart: $\bra{\alpha;j,m}T_{q}^{(k)}\ket{\alpha^{'};j^{'},m^{'}}= \bra{j^{'},k,m^{'},q} j,m\rangle \frac{\bra{\alpha ,j}|T^{(k)}|\ket{\alpha^{'},j^{'}}}{\sqrt{ 2j+1 }}$
+- Tensor operators: $Y_{l}^m(R\hat{n} )=\sum_{m^{'}}\mathscr{D}^{(l)*}_{mm^{'}}Y_{l}^{m^{'}}(\hat{n})$,   $\cos \theta\leadsto \sqrt{ \frac{4\pi}{2l+1} } T_{z},\ \sin \theta e^{\pm i\phi}\leadsto \sqrt{ \frac{4\pi}{2l+1} }(T_{x}\pm iT_{y})$. For rank-1: $T^{(1)}_{\pm 1}= \mp \frac{T_{x}\pm T_{y}}{\sqrt{ 2 }},\ T^{(1)}_{0}=T_{z}$
+
+
 
 
