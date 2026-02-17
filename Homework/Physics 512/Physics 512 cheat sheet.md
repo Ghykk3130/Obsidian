@@ -1,0 +1,1 @@
+- Delta potential boundary condition: $[\psi^{'}]_{-\epsilon}^{\epsilon}= \frac{2ma}{\hbar^{2}}\psi(0)\text{ for }V=a\delta(x)$

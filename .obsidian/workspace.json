@@ -825,16 +825,30 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Notes/Stationary perturbation.md",
+                "file": "Homework/Physics 512/Physics 512 homework 2.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Stationary perturbation"
+              "title": "Physics 512 homework 2"
+            }
+          },
+          {
+            "id": "55839ad801b23604",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Homework/Physics 512/Physics 512 cheat sheet.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Physics 512 cheat sheet"
             }
           }
         ],
-        "currentTab": 58
+        "currentTab": 59
       }
     ],
     "direction": "vertical"
@@ -999,10 +1013,12 @@
       "obsidian-excalidraw-plugin:New drawing": false
     }
   },
-  "active": "b23e17f55bda658f",
+  "active": "55839ad801b23604",
   "lastOpenFiles": [
-    "Notes/Stationary phase approximation.md",
+    "Homework/Physics 512/Physics 512 homework 2.md",
+    "Homework/Physics 512/Physics 512 cheat sheet.md",
     "Notes/Stationary perturbation.md",
+    "Notes/Stationary phase approximation.md",
     "Notes/Spherical tensor.md",
     "Notes/Untitled 5.md",
     "Notes/Untitled.md",
@@ -1022,7 +1038,6 @@
     "Notes/Ideal flow.md",
     "Notes/流体的描述.md",
     "Homework/Physics 512/Physics 512 homework 1.md",
-    "Homework/Physics 512/Physics 512 homework 2.md",
     "tldraw/Tldraw 2026-02-12 10.11PM.md",
     "Excalidraw/Drawing 2025-11-28 21.25.38.excalidraw.md",
     "Excalidraw/Drawing 2025-11-22 00.07.40.excalidraw.md",
@@ -1032,7 +1047,6 @@
     "Excalidraw/Drawing 2026-02-12 21.55.49.excalidraw.md",
     "tldraw",
     "Excalidraw/Scripts/Downloaded/Convert freedraw to line.svg",
-    "Excalidraw/Scripts/Downloaded/Convert freedraw to line.md",
     "Excalidraw/Scripts/Downloaded",
     "Excalidraw/Scripts",
     "Pictures/Pasted image 20260208161916.png",
