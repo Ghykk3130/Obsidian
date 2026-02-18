@@ -146,5 +146,56 @@ $$\begin{align}
 $$\frac{4}{3} \frac{e^{2}E^{2}}{E_{1}^{(0)}}a_{0}^{2}\leq e^{2}E^{2} \Delta^{(2)}\leq \frac{e^{2}E^{2}}{E_{1}^{(0)}}a_{0}^{2}$$
 其中$E_{1}^{(0)}\approx -13.6eV <0$。
 
+## Ex: SHO
 
+考虑：
+$$H_{0}= \frac{p^{2}}{2m}+ \frac{1}{2}m\omega^{2}x^{2},\ V=\frac{1}{2}m\epsilon^{}\omega^{2}x^{2}$$
+我们研究$\ket{0^{(0)}}$的微扰。将$\frac{1}{2}m\epsilon^{2}\omega^{2}$当作tuning parameter，则有：
+$$\begin{align}
+ \Delta_{0}  ^{(1)} & = \bra{0^{(0)}} x^{2}\ket{0^{(0)}}  
+\end{align}$$
+>[!Quote] Idea 1.2
+>在SHO中，遇到$x,p$有关的项需要和本征态作运算，可以利用：
+>$$x= \sqrt{ \frac{\hbar}{2m\omega} }(a^{\dagger}+a),\ p=i \sqrt{ \frac{m\hbar \omega}{2} }(a^{\dagger}-a)$$
+
+那么容易计算：
+$$\begin{align}
+ \Delta_{0}  ^{(1)} & = \frac{\hbar}{2m\omega}\bra{0^{(0)}} (\sqrt{ 2 }\ket{2^{(0)}} +\ket{0^{(0)}} ) \\
+ & = \frac{\hbar}{2m\omega}
+\end{align}$$
+接着计算二阶能量修正。我们计算：
+$$\begin{align}
+x^{2}_{0 n^{'} } & = \bra{0^{(0)}} x^{2}\ket{n^{'(0)}}  \\
+ & = \frac{\hbar}{2m\omega} \bra{0^{(0)}}(\sqrt{ (n+1)(n+2) }\ket{n+2^{(0)}} + \sqrt{ n(n-1) }\ket{n-2^{(0)}} +(2n+1)\ket{n^{(0)}} ) \\
+ & = \frac{\hbar}{\sqrt{ 2 }m\omega}\delta_{n^{'},2}+ \frac{\hbar}{2m\omega}\delta_{n^{'},0} 
+\end{align}$$
+所以：
+$$\begin{align}
+\Delta_{0} ^{(2)} & = \sum_{n^{'}\neq 0} \frac{|x^{2}_{n^{'}0}|^{2}}{E_{0}^{(0)}-E_{n^{'}}^{(0)}} \\
+ & = - \frac{\hbar}{4m^{2}\omega^{3}}
+\end{align}$$
+那么保留到$\mathcal{O}(\epsilon^{2})$：
+$$\Delta_{0}\approx \hbar \omega\left( \frac{1}{4}\epsilon- \frac{1}{16}\epsilon^{2} \right)$$
+通过替换$\omega\leadsto \sqrt{ 1+\epsilon^{} }\omega$，我们可以获得精确解：
+$$\begin{align}
+E_{0} & = \frac{1}{2} \sqrt{ 1+\epsilon^{} }\hbar\omega \\
+ & \approx \frac{1}{2}\left( 1+ \frac{1}{2}\epsilon^{}- \frac{1}{8}\epsilon^{2} \right)\hbar \omega
+\end{align}$$
+和微扰的计算结果一致。
+
+我们可以计算本征态一阶修正：
+$$\begin{align}
+ \ket{0^{(1)}}  & = \sum_{n^{'}\neq 0}\ket{n^{'(0)}}  \frac{x^{2}_{n^{'}0}}{E_{0}^{(0)}-E_{n^{'}}^{(0)}} \\
+ & = - \frac{1}{2\sqrt{ 2 }m\omega^{2}}\ket{2^{(0)}} 
+\end{align}$$
+所以保留到$\mathcal{O}(\epsilon^{})$：
+$$\ket{0} = \ket{0^{(0)}} - \epsilon\frac{1}{4\sqrt{ 2 }}\ket{2^{(0)}} $$
+同理，我们可以精确解得本征态：
+$$\begin{align}
+ \bra{x} 0\rangle & = \frac{1}{\pi^{1/4}(\hbar /m\omega)^{1/4}} (1+\epsilon^{})^{1/8}\exp\left( - \frac{x^{2}}{2\hbar /m\omega}(1+\epsilon^{})^{1/2} \right) \\
+ & \approx \frac{1}{\pi^{1/4}(\hbar /m\omega)^{1/4}}\left( 1+ \frac{1}{8}\epsilon^{} \right)\exp\left( - \frac{x^{2}}{2\hbar /m\omega}\left( 1+ \frac{1}{2}\epsilon^{} \right) \right) \\
+ & \approx \frac{1}{\pi^{1/4}(\hbar /m\omega)^{1/4}}\left( 1+ \frac{1}{8}\epsilon^{} \right)\left[ \exp\left( - \frac{x^{2}}{2\hbar /m\omega} \right)- \frac{x^{2}}{4\hbar /m\omega}\epsilon\exp\left( - \frac{x^{2}}{2\hbar /m\omega} \right) \right] \\
+ & \approx \frac{1}{\pi^{1/4}(\hbar /m\omega)^{1/4}}\exp\left( - \frac{x^{2}}{2\hbar /m\omega} \right)+ \epsilon\left[\frac{1}{8\pi^{1/4}(\hbar /m\omega)^{1/4}}\exp\left( - \frac{x^{2}}{2\hbar /m\omega} \right)- \frac{1}{\pi^{1/4}(\hbar /m\omega)^{1/4}} \frac{x^{2}}{4\hbar /m\omega}\exp\left( - \frac{x^{2}}{2\hbar /m\omega} \right)\right] \\
+ & = \bra{x} 0^{(0)}\rangle- \epsilon \frac{1}{4\sqrt{ 2 }} \bra{x} 2^{(0)}\rangle
+\end{align}$$
 
