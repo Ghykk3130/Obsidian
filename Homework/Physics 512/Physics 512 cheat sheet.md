@@ -7,6 +7,10 @@
 - Tensor operators: $Y_{l}^m(R\hat{n} )=\sum_{m^{'}}\mathscr{D}^{(l)*}_{mm^{'}}Y_{l}^{m^{'}}(\hat{n})$,   $\cos \theta\leadsto \sqrt{ \frac{4\pi}{2l+1} } T_{z},\ \sin \theta e^{\pm i\phi}\leadsto \sqrt{ \frac{4\pi}{2l+1} }(T_{x}\pm iT_{y})$. For rank-1: $T^{(1)}_{\pm 1}= \mp \frac{T_{x}\pm T_{y}}{\sqrt{ 2 }},\ T^{(1)}_{0}=T_{z}$
 - SHO: $x= \sqrt{ \frac{\hbar}{2m\omega} }(a^{\dagger}+a),\ p=i \sqrt{ \frac{m\hbar \omega}{2} }(a^{\dagger}-a)$
 - Perturbation: $\Delta_{n}^{(k)}=\bra{n^{(0)}}V \ket{n^{(k)}}$, $\Delta_{n}^{(1)}= V_{nn}$, $\ket{n^{(1)}} = \sum_{n^{'}\neq n} \ket{n^{'(0)}} \frac{V_{n^{'}n} }{E_{n}^{(0)}-E_{n^{'}}^{(0)} }$, $\Delta_{n}^{(2)}= \sum_{n^{'}\neq n} \frac{|V_{n^{'}n}|^{2}}{E_{n}^{(0)}-E_{n^{'}}^{(0)}}$, $\ket{n^{(2)}} =\sum_{n^{'},n^{''}\neq n} \ket{n^{'(0)}}  \frac{V_{n^{'}n^{''}}}{E_{n^{}}^{(0)}-E_{n^{'}}^{(0)}} \frac{V_{n^{''}n}}{E_{n}^{(0)}-E_{n^{''}}^{(0)}}-\sum_{n^{'}\neq n}\ket{n^{'(0)}}  \frac{V_{n^{'}n}}{E_{n}^{(0)}-E_{n^{'}}^{(0)}} \frac{V_{nn}}{E_{n}^{(0)}-E_{n^{'}}^{(0)}}$, $\Delta_{n}^{(3)}=\sum_{n^{'},n^{''}\neq n} \frac{V_{nn^{'}}V_{n^{'}n^{''}}V_{n^{''}n}}{(E_{n}^{(0)}-E_{n^{'}}^{(0)})(E_{n}^{(0)}-E_{n^{'}}^{(0)})}- \sum_{n^{'}\neq n} \frac{|V_{n^{'}n}|^{2}V_{nn}}{(E_{n}^{(0)}-E_{n^{'}}^{(0)})^{2} }$
+- Bloch vector: $\begin{pmatrix}\rho_{11} & \rho_{12} \\ \rho_{21} & \rho_{22} \end{pmatrix}= \begin{pmatrix} \frac{1+w}{2} & \frac{u-iv}{2} \\ \frac{u+iv}{2} & \frac{1-w}{2}  \end{pmatrix}= \frac{1}{2}(1+\mathbf{B}\cdot \boldsymbol{\sigma})$. Ket $\ket{\psi}=\cos \frac{\theta}{2}\ket{+  \hat{\mathbf{z}}}+ e^{i\phi}\sin \frac{\theta}{2}\ket{-  \hat{\mathbf{z}}}$ corresponds to a Bloch vector $(\sin \theta \cos \phi,\sin \theta \sin \phi,\cos \theta)$
+- Rotations: $d^{(1)}=\begin{pmatrix}\cos ^{2} \frac{\beta}{2} & -\sqrt{ 2 }\sin \frac{\beta}{2}\cos \frac{\beta}{2} & \sin ^{2} \frac{\beta}{2} \\ \sqrt{ 2 }\sin \frac{\beta}{2}\cos \frac{\beta}{2} & \cos \beta & -\sqrt{ 2 }\sin \frac{\beta}{2}\cos \frac{\beta}{2} \\ \sin ^{2} \frac{\beta}{2} & \sqrt{ 2 }\sin  \frac{\beta}{2}\cos \frac{\beta}{2} & \cos ^{2} \frac{\beta}{2}\end{pmatrix}$
+
+
 
 
 
