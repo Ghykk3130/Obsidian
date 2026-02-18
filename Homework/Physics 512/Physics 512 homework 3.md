@@ -69,4 +69,35 @@ $$\begin{align}
 \end{align}$$
 The first order energy shift of the ground state is $\lambda \frac{L^{2}}{4}$.
 
+# Sakurai 5.11
+## (a)
 
+We compute the eigen energies:
+$$\begin{align}
+ & \begin{vmatrix}
+E_{1}^{0}-E & \lambda \Delta \\
+\lambda \Delta & E_{2}^{0} -E
+\end{vmatrix} =0\\
+\implies & E^{2}-(E_{1}^{0}E_{2}^{0})E+E_{1}^{0}E_{2}^{0}-\lambda^{2}\Delta^{2}=0 \\
+\implies & E_{\pm}= \frac{E_{1}^{0}+E_{2}^{0}\pm \sqrt{ (E_{1}^{0}-E_{2}^{0})^{2}+4\lambda^{2}\Delta^{2} }}{2}
+\end{align}
+$$
+To solve for the eigen states:
+$$\begin{align}
+ & \begin{pmatrix}
+E_{1}^{0}-\frac{E_{1}^{0}+E_{2}^{0}\pm \sqrt{ (E_{1}^{0}-E_{2}^{0})^{2}+4\lambda^{2}\Delta^{2} }}{2} & \lambda \Delta \\
+\lambda \Delta & E_{2}^{0}-\frac{E_{1}^{0}+E_{2}^{0}\pm \sqrt{ (E_{1}^{0}-E_{2}^{0})^{2}+4\lambda^{2}\Delta^{2} }}{2}
+\end{pmatrix}\ket{\psi} =0 \\
+\implies & \begin{pmatrix}
+\frac{E_{1}^{0}-E_{2}^{0}\mp \sqrt{  \delta }}{2} & \lambda \Delta \\
+\lambda \Delta &  \frac{E_{2}^{0}-E_{1}^{0}\mp \sqrt{ \delta }}{2}
+\end{pmatrix}\ket{\psi} =0\text{ where }\delta= (E_{1}^{0}-E_{2}^{0})^{2}+4\lambda^{2}\Delta^{2} \\
+\implies &  \begin{pmatrix}
+\frac{E_{1}^{0}-E_{2}^{0}\pm \sqrt{ \delta }}{2} & \lambda \Delta  \\
+0 & 0
+\end{pmatrix}\ket{\psi} =0 \\
+\implies & \ket{\psi_{\pm}} = \frac{1}{C_{\pm}}\begin{pmatrix}
+\lambda \Delta \\
+\frac{E_{1}^{0}-E_{2}^{0}\mp \sqrt{ \delta }}{2}
+\end{pmatrix}\text{ where }C_{\pm}^{2}= \frac{1}{4}[(E_{1}^{0}-E_{2}^{0})^{2}+\delta\mp 2\sqrt{ \delta }(E_{1}^{0}-E_{2})^{0}] +\lambda^{2}\Delta^{2}
+\end{align}$$
