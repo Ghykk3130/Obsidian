@@ -41,5 +41,32 @@ $$\begin{align}
  & \text{Ground state: }\psi_{1,1}(x,y)= \frac{2}{L}\sin\left( \frac{\pi}{L}x \right)\sin\left( \frac{\pi}{L}y \right) \\
  & \text{First excited states: } \psi_{2,1}(x,y)=\frac{2}{L} \sin\left( \frac{2\pi}{L}x \right)\sin\left( \frac{\pi}{L}y \right)\text{, }\psi_{1,2}(x,y)= \frac{2}{L} \sin\left( \frac{\pi}{L}x \right)\sin\left( \frac{2\pi}{L}y \right)
 \end{align}$$
+The zeroth order energy eigenfunction for the ground state is:
+$$\bra{x,y} 1,1^{(0)}\rangle= \frac{2}{L}\sin\left(  \frac{\pi}{L}x \right)\sin\left( \frac{\pi}{L}y \right)$$
+We have:
+$$\begin{align}
+ \Delta_{1,1}^{(0)} & = \frac{4}{L^{2}}\int_{[0,L]^{2}} dx dy \sin ^{2}\left( \frac{\pi}{L}x \right) \sin ^{2}\left(  \frac{\pi}{L}y \right)xy \\ & = \frac{4}{L^{2}}\left( \int_{0}^{L}dx x \sin ^{2}\left( \frac{\pi}{L}x \right) \right)
+\end{align}$$
+It suffices to compute:
+$$\begin{align}
+\int_{0}^{L}dx x \sin ^{2}\left( \frac{\pi}{L}x \right) & = \int dx x \frac{1-\cos\left( \frac{2\pi}{L}x \right)}{2}
+\end{align}$$
+We have:
+$$\begin{align}
+ \int_{0}^{L}dx x \cos\left( \frac{2\pi}{L}x \right) & = \int dx x \cos\left( \frac{2\pi}{L}\lambda x \right)\text{ with }\lambda=1 \\
+ & = \frac{L}{2\pi}\int dx \frac{\partial}{\partial \lambda}\sin\left( \frac{2\pi}{L}\lambda x \right) \\
+ & = \frac{L}{2\pi} \frac{\partial}{\partial \lambda}\left[  \frac{L}{2\pi \lambda}(\cos(2\pi \lambda)-1) \right] \\
+ & = \left( \frac{L}{2\pi} \right)^{2}\left[ - \frac{1}{\lambda^{2}}(\cos_{2}\pi \lambda-1)- 2\pi \frac{1}{\lambda}\sin(2\pi \lambda) \right]\text{ with }\lambda=1 \\
+ & = 0
+\end{align}$$
+Then:
+$$\begin{align}
+\int_{0}^{L}dx x \sin ^{2}\left( \frac{\pi}{L}x \right) & = \int dx \frac{x}{2}= \frac{L^{2}}{4}
+\end{align}$$
+Therefore:
+$$\begin{align}
+\Delta_{1,1}^{(0)} & = \frac{4}{L^{2}}\left( \frac{L^{2}}{4} \right)^{2} = \frac{L^{2}}{4}
+\end{align}$$
+The first order energy shift of the ground state is $\lambda \frac{L^{2}}{4}$.
 
 
