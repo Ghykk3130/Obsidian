@@ -853,12 +853,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Homework/Physics 512/Physics 512 homework 3.md",
+                "file": "Notes/张量算子（1）.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Physics 512 homework 3"
+              "title": "张量算子（1）"
             }
           }
         ],
@@ -914,7 +914,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "Wigner eckart theorem",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -925,7 +925,8 @@
               "title": "Search"
             }
           }
-        ]
+        ],
+        "currentTab": 3
       }
     ],
     "direction": "horizontal",
@@ -1030,14 +1031,15 @@
   },
   "active": "c83d4fa5d10a6e71",
   "lastOpenFiles": [
-    "Homework/Physics 512/Physics 512 cheat sheet.md",
-    "Homework/Physics 512/Physics 512 homework 2.md",
-    "Homework/Physics 512/Physics 512 homework 1.md",
     "Homework/Physics 512/Physics 512 homework 3.md",
+    "Homework/Physics 512/Physics 512 homework 1.md",
+    "Homework/Physics 512/Physics 512 cheat sheet.md",
+    "Homework/Physics 511/Physics 511 Cheat sheet.md",
+    "Homework/Physics 512/Physics 512 homework 2.md",
+    "Notes/张量算子（1）.md",
     "Notes/Stationary perturbation.md",
     "Homework/Physics 463/Midterm 1 cheat sheet.md",
     "Notes/张量算子（2）.md",
-    "Notes/张量算子（1）.md",
     "Notes/球谐函数与旋转表示.md",
     "Notes/WKB.md",
     "Notes/开放量子系统.md",
@@ -1059,7 +1061,6 @@
     "Homework/Math 654/Homework 1.md",
     "Pictures/Pasted image 20260214204110.png",
     "Notes/Ideal flow.md",
-    "Notes/流体的描述.md",
     "tldraw",
     "Excalidraw/Scripts/Downloaded/Convert freedraw to line.svg",
     "Excalidraw/Scripts/Downloaded",
