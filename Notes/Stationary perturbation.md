@@ -56,7 +56,7 @@ $$\begin{align}
 其中$\Delta_{n}$的求和从一次项开始是因为$\lambda=0$时显然没有能量修正。我们有：
 
 >[!Success] Proposition 1.2
->$$\Delta_{n}^{(k)}= \lambda \bra{n^{(0)}} V \ket{n^{(k-1)}} $$
+>$$\Delta_{n}^{(k)}=  \bra{n^{(0)}} V \ket{n^{(k-1)}} $$
 ## Proof.
 
 我们有：

@@ -915,7 +915,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 200,
+    "collapsed": true
   },
   "right": {
     "id": "9003d078f8dbc4ed",
@@ -1015,15 +1016,16 @@
   },
   "active": "55839ad801b23604",
   "lastOpenFiles": [
-    "Notes/张量算子（2）.md",
+    "Notes/Stationary perturbation.md",
     "Homework/Physics 512/Physics 512 cheat sheet.md",
+    "Homework/Physics 463/Midterm 1 cheat sheet.md",
+    "Notes/张量算子（2）.md",
     "Notes/张量算子（1）.md",
     "Notes/球谐函数与旋转表示.md",
     "Notes/WKB.md",
     "Notes/开放量子系统.md",
     "Homework/Physics 512/Physics 512 homework 2.md",
     "Homework/Physics 512/Physics 512 homework 1.md",
-    "Notes/Stationary perturbation.md",
     "Notes/Stationary phase approximation.md",
     "Notes/Spherical tensor.md",
     "Notes/Untitled 5.md",
@@ -1044,7 +1046,6 @@
     "Notes/Ideal flow.md",
     "Notes/流体的描述.md",
     "tldraw/Tldraw 2026-02-12 10.11PM.md",
-    "Excalidraw/Drawing 2025-11-28 21.25.38.excalidraw.md",
     "tldraw",
     "Excalidraw/Scripts/Downloaded/Convert freedraw to line.svg",
     "Excalidraw/Scripts/Downloaded",
