@@ -851,14 +851,10 @@
             "id": "c83d4fa5d10a6e71",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Notes/Stationary perturbation.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Stationary perturbation"
+              "type": "graph",
+              "state": {},
+              "icon": "lucide-git-fork",
+              "title": "Graph view"
             }
           }
         ],
@@ -929,8 +925,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200,
-    "collapsed": true
+    "width": 200
   },
   "right": {
     "id": "9003d078f8dbc4ed",
@@ -1030,6 +1025,8 @@
   },
   "active": "c83d4fa5d10a6e71",
   "lastOpenFiles": [
+    "Notes/Stationary perturbation.md",
+    "Notes/Perturbation.md",
     "Homework/Physics 512/Physics 512 homework 2.md",
     "Homework/Physics 512/Physics 512 homework 1.md",
     "Homework/Physics 512/Physics 512 homework 3.md",
@@ -1043,7 +1040,6 @@
     "Homework/Physics 512/Physics 512 cheat sheet.md",
     "Notes/张量算子（1）.md",
     "Homework/Physics 511/Physics 511 Cheat sheet.md",
-    "Notes/Stationary perturbation.md",
     "Homework/Physics 463/Midterm 1 cheat sheet.md",
     "Notes/球谐函数与旋转表示.md",
     "Notes/WKB.md",
@@ -1055,7 +1051,6 @@
     "Notes/线性波.md",
     "Homework/Math 654/Homework 2.md",
     "Excalidraw/Drawing 2026-02-15 21.45.49.excalidraw.md",
-    "Notes/虚功原理，d‘Alembert原理，与Lagrange方程.md",
     "Pictures/Pasted image 20260215210708.png",
     "Pictures/Pasted image 20260214230927.png",
     "Pictures/Pasted image 20260214230535.png",

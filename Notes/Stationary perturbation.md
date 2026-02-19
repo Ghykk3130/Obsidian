@@ -202,6 +202,11 @@ $$\begin{align}
 
 令$H_{0}$存在一简并本征空间$D$，本征能为$E_{D}^{(0)}$，由基$\ket{m_{}^{(0)}}$张成。其余空间由$\ket{n^{(0)}}$张成。考虑添加微扰$\lambda V$。添加微扰后的本征态是$\lambda$的函数。令$\lambda \rightarrow 0$，有一部分本征态会回到$D$。将这部分态称为$\ket{l_{}}$。有一部分本征态不会回到$D$。将它们称为$\ket{n}$。由于微扰是连续的，我们可以认为$|\{ \ket{l_{}} \}|=dim(D)$。
 
+>[!Success] Proposition 2.1
+>Let $P_{0}=\sum_{m\in D}\ket{m_{}^{(0)}}\bra{m_{}^{(0)}},\ P_{1}= 1-P_{0}$. Then:
+>$$P_{1}\ket{l}  =P_{1} \frac{\lambda}{E_{l}-H_{0} -\lambda V }P_{1}VP_{0}\ket{l} $$
+## Proof.
+
 令$P_{0}=\sum_{m\in D}\ket{m_{}^{(0)}}\bra{m_{}^{(0)}},\ P_{1}= 1-P_{0}$。那么我们有：
 $$\begin{align}
  & (H_{0}+\lambda V)\ket{l} =E_{l}\ket{l}  \\
@@ -233,6 +238,12 @@ $$\begin{align}
  & P_{1}\ket{l} = P_{1}\frac{\lambda }{E_{l}-H_{0}-\lambda P_{1}V}P_{1}VP_{0}\ket{l} =P_{1} \frac{\lambda}{E_{l}-H_{0} -\lambda V }P_{1}VP_{0}\ket{l} 
 \end{align}$$
 第二步根据定义是显然。
+>[!Right]
+>$\blacksquare$
+
+>[!Success] Proposition 2.2
+>$\Delta_{l}^{(1)}$ are the eigen energies of $P_{0}VP_{0}$, $\ket{l^{(0)}}$ are the eigenkets of $P_{0}VP_{0}$.
+## Proof.
 
 我们再考虑：
 $$\begin{align}
@@ -242,9 +253,11 @@ $$\begin{align}
 代入我们刚刚得到的结果：
 $$\begin{align}
  & (\Delta_{l}-\lambda P_{0}V)P_{0}\ket{l} -\lambda P_{0}VP_{1} \frac{\lambda}{E_{l}-H_{0}-\lambda V}P_{1}VP_{0}\ket{l} =0 \\
-\implies & \left( \Delta_{l}-\lambda P_{0}V- \lambda^{2}P_{0}VP_{1} \frac{1}{E_{l}-H_{0}-\lambda V}P_{1}V  \right)P_{0} \ket{l} =0\tag{*}
-\end{align}$$
-我们先展开$\frac{1}{E_{l}-H_{0}-\lambda V}$。
+\implies & \left( \Delta_{l}-\lambda P_{0}VP_{0}- \lambda^{2}P_{0}VP_{1} \frac{1}{E_{l}-H_{0}-\lambda V}P_{1}V P_{0} \right)P_{0} \ket{l} =0 \\
+\implies & \left(- \lambda P_{0}VP_{0}+\lambda^{2}P_{0}VP_{1} \frac{1}{E_{l}-H_{0}-\lambda V}P_{1}V P_{0}\right)P_{0}\ket{l} = \Delta_{l}P_{0}\ket{l} \\
+\implies & \left( -P_{0}VP_{0}+\lambda P_{0}VP_{1} \frac{1}{E_{l}-H_{0}-\lambda V}P_{1}V P_{0}\right)P_{0}\ket{l} =(\Delta_{l}^{(1)}+\lambda \Delta_{l}^{(2)}+\dots)P_{0}\ket{l}  
+\end{align}\tag{*}$$
+我们先估计$\frac{1}{E_{l}-H_{0}-\lambda V}$。
 
 >[!Quote] 算子的逆的级数
 >我们知道算子composition同态于实数乘法，算子逆同态于实数的倒数，算子加减同态于实数加减。既然集合级数$(a+b)^{-1}$的展开只需要用到这几种运算，那么对于算子也是成立的。（如果算子收敛性质足够好的话）
@@ -254,19 +267,68 @@ $$\begin{align}
 P_{1}(E_{l}-H_{0}-\lambda V)^{-1} P_{1}& = P_{1}(E_{D}^{(0)}-H_{0}+\lambda(\Delta_{l}^{(1)}+\dots-V))^{-1}P_{1} \\
  & = P_{1}\frac{1}{E_{D}^{(0)}-H_{0}}P_{1}+\mathcal{O}(\lambda^{}) 
 \end{align}$$
-令：
+我们展开$\ket{l}=\sum_{k=0}^{\infty} \lambda^{k}\ket{l^{(k)}}$，代入$(*)$后提取$\mathcal{O}(1)$项得到：
 $$\begin{align}
- & \Delta_{l}=\sum_{k=1}^{\infty}\lambda^{k}\Delta_{l}^{(k)} \\
- & \ket{l} =\sum_{k=0}^{\infty}\lambda^{k}\ket{l^{(k)}} 
-\end{align}$$
-代入$(*)$后提取$\mathcal{O}(\lambda)$项得到：
-$$\begin{align}
- & (\Delta_{l}^{(1)}-P_{0}V)P_{0}\ket{l^{(0)}} =0 \\
-\implies & (\Delta_{l}^{(1)}-P_{0}VP_{0})P_{0}\ket{l^{(0)}} =0
+ & \Delta_{l}^{(1)}P_{0}\ket{l^{(0)}} =(P_{0}VP_{0})P_{0}\ket{l^{(0)}}  \\
 \end{align}$$
 所以我们对角化$P_{0}VP_{0}$可以得到$P_{0}\ket{l^{(0)}},\ \Delta_{l}^{(1)}$。我们知道$\lambda=0$时$\ket{l}=\ket{l^{(0)}}\in D$。故$P_{0}\ket{l^{(0)}}=\ket{l^{(0)}}$。所以：
 $$\begin{align}
- & P_{0}VP_{0}P_{0}\ket{l^{(0)}} =\Delta_{l}^{(1)}\ket{l^{(0)}}  \\
-\implies & \bra{l^{(0)}} P_{0}VP_{0}^{2}\ket{l^{(0)}} =\Delta_{l}^{(1)} \\
+ & \bra{l^{(0)}} \Delta_{l}^{(1)}P_{0}\ket{l^{(0)}} = \bra{l^{(0)}} P_{0}VP^{2}_{0}\ket{l^{(0)}}   \\
+
 \implies & \Delta_{l}^{(1)}= \bra{l^{(0)}} V \ket{l^{(0)}} 
 \end{align} $$
+>[!Right]
+>$\blacksquare$
+
+我们不妨用$j$ label这些$\ket{l^{(0)}}$。那么：
+
+>[!Success ] Proposition 2.3
+$$P_{0}\ket{l_{j}^{(1)}} = \sum_{j^{'}\neq j} \frac{\ket{l_{j^{'}}^{(0)}} }{\nu_{j}-\nu_{j^{'}}}\sum_{n \not\in D} \frac{V_{j^{'}n}V_{nj}}{E_{D}^{(0)}-E_{n}^{(0)}}$$
+## Proof.
+
+假设$P_{0}\ket{l^{(0)}}$全部线性独立。观察$(*)$，发现可以将$-P_{0}V$当做Hamiltonian，$\lambda P_{0}VP_{1} \frac{1}{E_{l}-H_{0}-\lambda V}P_{1}V$当作微扰，$P_{0}\ket{l^{(0)}}$当作原本征态，$\Delta_{l}^{(1)}$当作原本征能，然后作non degenerate perturbation。将$\lambda P_{0}VP_{1} \frac{1}{E_{l}-H_{0}-\lambda V}P_{1}V$展开到一阶当做微扰，可以得到：
+$$\begin{align}
+ & (P_{0}\ket{l_{j}} )^{(1)}= \sum_{j^{'}\neq j} \frac{\ket{l_{j^{'}}^{(0)}} }{\nu_{j}-\nu_{j^{'}}} \bra{l_{j^{'}}^{(0)}} VP_{1} \frac{1}{E_{D}^{(0)}-H_{0}} P_{1}V\ket{l_{j}^{(0)}}   \\
+\implies & P_{0}\ket{l_{j}^{(1)}} = \sum_{j^{'}\neq j} \frac{\ket{l_{j^{'}}^{(0)}} }{\nu_{j}-\nu_{j^{'}}} \bra{l_{j^{'}}^{(0)}} V \sum_{n \not\in D} \frac{1}{E_{D}^{(0)}-E_{n}^{(0)}}\ket{n^{(0)}} \bra{n^{(0)}} V \ket{l_{j}^{(0)}} \\
+ \implies & P_{0}\ket{l_{j}^{(1)}} = \sum_{j^{'}\neq j} \frac{\ket{l_{j^{'}}^{(0)}} }{\nu_{j}-\nu_{j^{'}}}\sum_{n \not\in D} \frac{V_{j^{'}n}V_{nj}}{E_{D}^{(0)}-E_{n}^{(0)}}
+\end{align}$$
+其中$\nu_{j}=\Delta_{l_{j}}^{(1)}$。
+
+>[!Success] Proposition 2.4
+>$$\Delta_{l}^{(2)}  = \sum_{n\not\in D} \frac{|V_{nl}|^{2}}{E_{D}^{(0)}-E_{n}^{(0)}}
+$$
+## Proof.
+
+我们可以得到二阶能量修正：
+$$\begin{align}
+ & (H_{0}+\lambda V)\ket{l} =E_{l}\ket{l}  \\
+\implies &  \bra{l^{(0)}} (H_{0}+\lambda V)\ket{l} =E_{l}\bra{l^{(0)}} l\rangle
+\end{align}$$
+规定$\bra{l^{(0)}}l\rangle=1$。那么：
+$$\begin{align}
+ & \Delta_{l}= \lambda \bra{l^{(0)}} V\ket{l} 
+\end{align}$$
+匹配$\mathcal{O}(\lambda^{2})$项得到：
+$$\begin{align}
+  \Delta_{l}^{(2)} & = \bra{l^{(0)}} V \ket{l^{(1)}} \\
+   & = \bra{l^{(0)}} V (P_{1}\ket{l^{(1)}} +P_{0}\ket{l^{(1)}} )
+\end{align}$$
+注意到$P_{0}\ket{l_{}^{(1)}}$一定垂直于$\ket{l_{}^{(0)}}$，而且$V$在$\ket{l^{(0)}}$下是对角化的，所以$\bra{l^{(0)}}VP_{0}\ket{l^{(1)}}=0$。所以：
+$$\begin{align}
+\Delta_{l}^{(2)} & = \bra{l^{(0)}} V P_{1}\ket{l^{(1)}}  \\
+\end{align}$$
+而：
+$$\begin{align}
+ &P_{1}\ket{l}=P_{1} \frac{\lambda}{E_{l}-H_{0} -\lambda V }P_{1}VP_{0}\ket{l}   \\
+\implies & P_{1}\ket{l^{(1)}} = P_{1} \frac{1}{E_{D}^{(0)}-H_{0}} P_{1}VP_{0}\ket{l^{(0)}} 
+\end{align}$$
+所以：
+$$\begin{align}
+\Delta_{l}^{(2)} & = \bra{l^{(0)}} VP_{1} \frac{1}{E_{D}^{(0)}-H_{0}}P_{1}V\ket{l^{(0)}}  \\
+ & = \sum_{n\not\in D} \frac{|V_{nl}|^{2}}{E_{D}^{(0)}-E_{n}^{(0)}}
+\end{align}$$
+>[!Right]
+>$\blacksquare$
+
+
+
