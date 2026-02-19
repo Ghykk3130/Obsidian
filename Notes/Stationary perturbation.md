@@ -200,6 +200,31 @@ $$\begin{align}
 \end{align}$$
 # 2. Degenerate
 
-令$H_{0}$存在一简并本征空间$D$，由基$\ket{m_{j}^{(0)}}$张成。其余空间由$\ket{n^{(0)}}$张成。考虑添加微扰$\lambda V$。添加微扰后的本征态是$\lambda$的函数。令$\lambda \rightarrow 0$，有一部分本征态会回到$D$。将这部分态称为$\ket{l_{j}}$。有一部分本征态不会回到$D$。将它们称为$\ket{n}$。由于微扰是连续的，我们可以认为$|\{ \ket{l_{j}} \}|=dim(D)$。
+令$H_{0}$存在一简并本征空间$D$，本征能为$E_{D}^{(0)}$，由基$\ket{m_{}^{(0)}}$张成。其余空间由$\ket{n^{(0)}}$张成。考虑添加微扰$\lambda V$。添加微扰后的本征态是$\lambda$的函数。令$\lambda \rightarrow 0$，有一部分本征态会回到$D$。将这部分态称为$\ket{l_{}}$。有一部分本征态不会回到$D$。将它们称为$\ket{n}$。由于微扰是连续的，我们可以认为$|\{ \ket{l_{}} \}|=dim(D)$。
 
-令$P_{0}=\sum_{j}\ket{m_{j}^{(0)}}\bra{m_{j}^{(0)}},\ P_{1}= 1-P_{0}$。
+令$P_{0}=\sum_{m\in D}\ket{m_{}^{(0)}}\bra{m_{}^{(0)}},\ P_{1}= 1-P_{0}$。那么我们有：
+$$\begin{align}
+ & (H_{0}+\lambda V)\ket{l} =E_{l}\ket{l}  \\
+\implies & (E_{l}-H_{0}-\lambda V )\ket{l} =0 \\
+\implies & (E_{l}-H_{0}-\lambda V)(P_{0}+P_{1})\ket{l} =0 \\
+\implies & (E_{l}-E_{D}^{(0)}-\lambda V)P_{0}\ket{l} + (E_{l}-H_{0}-\lambda V)P_{1}\ket{l} \\
+\implies & (\Delta_{l}-\lambda V)P_{0}\ket{l} +(E_{l}-H_{0}-\lambda V )P_{1}\ket{l} =0 
+\end{align}$$
+其中$\Delta_{l}=E_{l}-E_{D}^{(0)}$。那么：
+$$\begin{align}
+ & P_{1} (\Delta_{l}-\lambda V)P_{0}\ket{l} + P_{1}(E_{l}-H_{0}-\lambda V)P_{1}\ket{l}=0 \\
+\implies & -\lambda P_{1}VP_{0}\ket{l} +E_{l}P_{1}\ket{l} -P_{1} H_{0}P_{1}\ket{l} -\lambda P_{1}VP_{1}\ket{l} =0  
+\end{align}$$
+我们容易计算：
+$$\begin{align}
+P_{1}H_{0}P_{1}\ket{l}  & = \left( 1-\sum_{m\in D}\ket{m^{(0)} } \bra{m^{(0)}}  \right)H_{0}P_{1}\ket{l}  \\
+ & = H_{0}P_{1}\ket{l} \text{ since }H_{0}P_{1}\ket{l} \in D^{\perp}\text{ an invariant subspace}
+\end{align}$$
+所以：
+$$\begin{align}
+ & -\lambda P_{1}VP_{0}\ket{l} +(E_{l}-H_{0}-\lambda P_{1}V)P_{1}\ket{l} =0
+\end{align}$$
+因为当$\lambda=0$时，$E_{l}-H_{0}-\lambda P_{1}V=E_{D}^{(0)}-H_{0}$，限制在$D^{\perp}$上是非异的。由于微扰是连续且微小的，可以认为$(E_{l}-H_{0}-\lambda P_{1}V)|_{D^{\perp}}$是非异的。那么：
+$$\begin{align}
+ & P_{1}\ket{l} = \frac{\lambda }{(E_{l}-H_{0}-\lambda P_{1}V)|_{D^{\perp}}}P_{1}VP_{0}\ket{l} 
+\end{align}$$
