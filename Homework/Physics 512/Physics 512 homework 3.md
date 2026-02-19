@@ -45,7 +45,7 @@ The zeroth order energy eigenfunction for the ground state is:
 $$\bra{x,y} 1,1^{(0)}\rangle= \frac{2}{L}\sin\left(  \frac{\pi}{L}x \right)\sin\left( \frac{\pi}{L}y \right)$$
 We have:
 $$\begin{align}
- \Delta_{1,1}^{(0)} & = \frac{4}{L^{2}}\int_{[0,L]^{2}} dx dy \sin ^{2}\left( \frac{\pi}{L}x \right) \sin ^{2}\left(  \frac{\pi}{L}y \right)xy \\ & = \frac{4}{L^{2}}\left( \int_{0}^{L}dx x \sin ^{2}\left( \frac{\pi}{L}x \right) \right)
+ \Delta_{1,1}^{(1)} & = \frac{4}{L^{2}}\int_{[0,L]^{2}} dx dy \sin ^{2}\left( \frac{\pi}{L}x \right) \sin ^{2}\left(  \frac{\pi}{L}y \right)xy \\ & = \frac{4}{L^{2}}\left( \int_{0}^{L}dx x \sin ^{2}\left( \frac{\pi}{L}x \right) \right)
 \end{align}$$
 It suffices to compute:
 $$\begin{align}
@@ -65,10 +65,54 @@ $$\begin{align}
 \end{align}$$
 Therefore:
 $$\begin{align}
-\Delta_{1,1}^{(0)} & = \frac{4}{L^{2}}\left( \frac{L^{2}}{4} \right)^{2} = \frac{L^{2}}{4}
+\Delta_{1,1}^{(1)} & = \frac{4}{L^{2}}\left( \frac{L^{2}}{4} \right)^{2} = \frac{L^{2}}{4}
 \end{align}$$
 The first order energy shift of the ground state is $\lambda \frac{L^{2}}{4}$.
 
+Now consider the first excited states. The subspace is 2-fold degenerate. Then we compute:
+$$\begin{align}
+\bra{1,2} xy\ket{1,2}  & = \bra{1} x\ket{1}\bra{2} y\ket{2}   
+\end{align}$$
+The by similar techniques, we have:
+$$\begin{align}
+\bra{1} x\ket{1}  & = \frac{2}{L} \int_{0}^{L}dx x \sin ^{2}\left( \frac{\pi x}{L} \right) \\
+ & = \frac{L}{2} 
+\end{align}$$
+$$\begin{align}
+\bra{2} y\ket{2}  & = \frac{2}{L}\int_{0}^{L}dy y \sin ^{2}\left(  \frac{2\pi y}{L} \right) \\
+ & = \frac{L}{2}
+\end{align}$$
+Obviously, $\bra{1,2}xy\ket{1,2}=\bra{1}x\ket{1}\bra{2}y\ket{2}=\bra{1}y\ket{1}\bra{2}x\ket{2}=\bra{2,1}xy\ket{2,1}$. Next we compute:
+$$\bra{1,2} xy \ket{2,1} =\bra{1} x\ket{2} \bra{2} y\ket{1}  $$
+We have:
+$$\begin{align}
+\bra{1} x\ket{2}  & = \frac{2}{L}\int_{0}^{L}dx x \sin\left( \frac{\pi x}{L} \right)\sin\left( \frac{2\pi x}{L} \right) \\
+ & = \frac{2}{L}\left( - \frac{1}{2}\int dx x \cos \left( \frac{3\pi}{L}x \right)+ \frac{1}{2}\int dx x \cos\left( \frac{\pi x}{L} \right) \right) 
+\end{align}$$
+We have:
+$$\begin{align}
+ \int_{0}^{L}dx x \cos\left( \frac{3\pi}{L}x \right) & = \int dx x \cos\left( \frac{3\pi}{L}\lambda x \right)\text{ with }\lambda=1 \\
+ & = \frac{L}{3\pi}\int dx \frac{\partial}{\partial \lambda}\sin\left( \frac{3\pi}{L}\lambda x \right) \\
+ & = \frac{L}{3\pi} \frac{\partial}{\partial \lambda}\left[  \frac{L}{3\pi \lambda}(\cos(2\pi \lambda)-1) \right] \\
+ & = \left( \frac{L}{3\pi} \right)^{2}\left[ - \frac{1}{\lambda^{2}}(\cos_{} 3\pi \lambda-1)- 3\pi \frac{1}{\lambda}\sin(3\pi \lambda) \right]\text{ with }\lambda=1 \\
+ & = 2\cdot\left( \frac{L}{3\pi} \right)^{2}
+\end{align}$$
+Similarly:
+$$\int_{0}^{L}dx x \cos\left( \frac{\pi x}{L} \right)= 2\cdot\left( \frac{L}{\pi} \right)^{2}$$
+Therefore:
+$$\bra{1} x \ket{2} = \frac{2}{L}\left( - \left( \frac{L}{3\pi} \right)^{2}+ \left( \frac{L}{\pi} \right)^{2} \right)= \frac{16}{9} \frac{L}{\pi^{2}}$$
+By symmetry, we know $\bra{2}y \ket{1}= \frac{16}{9} \frac{L}{\pi^{2}}$. Then we have:
+$$\bra{1,2} xy \ket{2,1} = \left( \frac{16}{9} \frac{L}{\pi^{2}} \right)^{2}= \frac{256}{81} \frac{L^{2}}{\pi^{4}}$$
+Again, by symmetry, we know:
+$$\bra{2,1} xy \ket{1,2} = \frac{256}{81} \frac{L^{2}}{\pi^{4}}$$
+Then:
+$$xy  \overset{\wedge}{=} \begin{pmatrix}
+\frac{L^{2}}{4} &  \frac{256}{81} \frac{L^{2}}{\pi^{4}} \\
+\frac{256}{81} \frac{L^{2}}{\pi^{4}} & \frac{L^{2}}{4}
+\end{pmatrix}$$
+The eigenequation is:
+$$\left( \frac{L^{2}}{4}-\nu \right)^{2}- \left( \frac{256}{81} \frac{L^{2}}{\pi^{4}} \right)=0\implies \nu= \frac{L^{2}}{4}\pm \frac{256}{81} \frac{L^{2}}{\pi^{4}}$$
+So the first order energy shifts of the first excited states are $\left(\frac{L^{2}}{4}\pm \frac{256}{81} \frac{L^{2}}{\pi^{4}}\right)\lambda$.
 # Sakurai 5.11
 ## (a)
 
