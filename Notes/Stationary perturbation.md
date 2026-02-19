@@ -228,7 +228,29 @@ $$\begin{align}
 >[!Quote] Pseudoinverse
 >考虑任意算符$A$。假设$A$只在特定不变子空间$W$上非异，那么令$P$为$W$的投影算符，我们可以定义pseudoinverse。我们用$PA^{-1}P$表示，先将$A$中对应$W$的子块求逆，其余部分写成零，然后左右各乘上$P$。这样保证了任何一个矢量都可以被$P$作用，强制拉入$W$，然后被$A$的子块的逆作用，然后再投影到$W$，然后再output。
 
-因为当$\lambda=0$时，$E_{l}-H_{0}-\lambda P_{1}V=E_{D}^{(0)}-H_{0}$，限制在$D^{\perp}$上是非异的。由于微扰是连续且微小的，可以认为$(E_{l}-H_{0}-\lambda P_{1}V)|_{D^{\perp}}$是非异的。那么：
+ 因为当$\lambda=0$时，$E_{l}-H_{0}-\lambda P_{1}V=E_{D}^{(0)}-H_{0}$，限制在$D^{\perp}$上是非异的。由于微扰是连续且微小的，可以认为$(E_{l}-H_{0}-\lambda P_{1}V)|_{D^{\perp}}$是非异的。那么：
 $$\begin{align}
- & P_{1}\ket{l} = \frac{\lambda }{(E_{l}-H_{0}-\lambda P_{1}V)|_{D^{\perp}}}P_{1}VP_{0}\ket{l} 
+ & P_{1}\ket{l} = P_{1}\frac{\lambda }{E_{l}-H_{0}-\lambda P_{1}V}P_{1}VP_{0}\ket{l} =P_{1} \frac{\lambda}{E_{l}-H_{0} -\lambda V }P_{1}VP_{0}\ket{l} 
 \end{align}$$
+第二步根据定义是显然。
+
+我们再考虑：
+$$\begin{align}
+ & P_{0}(\Delta_{l}-\lambda V)P_{0}\ket{l} +P_{0}(E_{l}-H_{0}-\lambda V)P_{1}\ket{l} =0 \\
+\implies  & (\Delta_{l}-\lambda P_{0}V)P_{0}\ket{l}  -\lambda P_{0}VP_{1}\ket{l} =0
+\end{align}$$
+代入我们刚刚得到的结果：
+$$\begin{align}
+ & (\Delta_{l}-\lambda P_{0}V)P_{0}\ket{l} -\lambda P_{0}VP_{1} \frac{\lambda}{E_{l}-H_{0}-\lambda V}P_{1}VP_{0}\ket{l} =0 \\
+\implies & \left( \Delta_{l}-\lambda P_{0}V- \lambda^{2}P_{0}VP_{1} \frac{1}{E_{l}-H_{0}-\lambda V}P_{1}V  \right)P_{0} \ket{l} =0
+\end{align}$$
+令：
+$$\begin{align}
+ & \Delta_{l}=\sum_{k=1}^{\infty}\lambda^{k}\Delta_{l}^{(k)} \\
+ & \ket{l} =\sum_{k=0}^{\infty}\lambda^{k}\ket{l^{(k)}} 
+\end{align}$$
+代入后提取$\mathcal{O}(\lambda)$项得到：
+$$\begin{align}
+ & (\Delta_{l}^{(1)}-P_{0}V)P_{0}\ket{l^{(0)}} =0
+\end{align}$$
+
