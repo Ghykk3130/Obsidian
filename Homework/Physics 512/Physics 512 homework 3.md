@@ -113,6 +113,28 @@ $$xy  \overset{\wedge}{=} \begin{pmatrix}
 The eigenequation is:
 $$\left( \frac{L^{2}}{4}-\nu \right)^{2}- \left( \frac{256}{81} \frac{L^{2}}{\pi^{4}} \right)=0\implies \nu= \frac{L^{2}}{4}\pm \frac{256}{81} \frac{L^{2}}{\pi^{4}}$$
 So the first order energy shifts of the first excited states are $\left(\frac{L^{2}}{4}\pm \frac{256}{81} \frac{L^{2}}{\pi^{4}}\right)\lambda$.
+# Sakurai 5.9
+## (a)
+
+The subspace is 2-fold degenerate. Treat $\lambda$ as a tuning parameter, we need:
+$$\bra{n,1,m^{'}} (x^{2}-y^{2})\ket{n,1,m} $$
+Know that:
+$$r^{(2)}_{-2}= \frac{\sqrt{ 6 }}{4}(x-iy)^{2},\ r^{(2)}_{2}= \frac{\sqrt{ 6 }}{4}(x+iy)^{2}$$
+Therefore:
+$$x^{2}-y^{2} \propto r^{(2)}_{2}+ r^{(2)}_{-2}$$
+Then the matrix element is given by:
+$$\bra{n,1,m^{'}} (x^{2}-y^{2})\ket{n,1,m} \propto \bra{n,1,m^{'}} (r^{(2)}_{2}+ r^{(2)}_{-2})\ket{n,1,m} $$
+Know that:
+$$\begin{align}
+\bra{n,1,m^{'}} r^{(2)}_{2}\ket{n,1,m}  & \propto \bra{1,2,m,2} 1,m^{'}\rangle\text{ is non-zero only when }m=-1,\ m^{'}=1
+\end{align}$$
+$$\bra{n,1,m^{'}} r^{(2)}_{-2}\ket{n,1,m} \propto \bra{1,2,m,-2}1,m^{'}\rangle\text{ is non-zero only when }m=1,\ m^{'}=-1 $$
+Then it suffices to diagonalize:
+$$V=\begin{pmatrix}
+0 & \bra{1,2,1,-1} 1,-1\rangle \\
+\bra{1,2,-1,2} 1,1\rangle & 0
+\end{pmatrix}$$
+where $m^{'}=-1,m=-1$ is on the top left. 
 # Sakurai 5.11
 ## (a)
 
