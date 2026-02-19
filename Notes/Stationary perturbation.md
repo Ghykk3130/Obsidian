@@ -224,6 +224,10 @@ P_{1}H_{0}P_{1}\ket{l}  & = \left( 1-\sum_{m\in D}\ket{m^{(0)} } \bra{m^{(0)}}  
 $$\begin{align}
  & -\lambda P_{1}VP_{0}\ket{l} +(E_{l}-H_{0}-\lambda P_{1}V)P_{1}\ket{l} =0
 \end{align}$$
+
+>[!Quote] Pseudoinverse
+>考虑任意算符$A$。假设$A$只在特定不变子空间$W$上非异，那么令$P$为$W$的投影算符，我们可以定义pseudoinverse。我们用$PA^{-1}P$表示，先将$A$中对应$W$的子块求逆，其余部分写成零，然后左右各乘上$P$。这样保证了任何一个矢量都可以被$P$作用，强制拉入$W$，然后被$A$的子块的逆作用，然后再投影到$W$，然后再output。
+
 因为当$\lambda=0$时，$E_{l}-H_{0}-\lambda P_{1}V=E_{D}^{(0)}-H_{0}$，限制在$D^{\perp}$上是非异的。由于微扰是连续且微小的，可以认为$(E_{l}-H_{0}-\lambda P_{1}V)|_{D^{\perp}}$是非异的。那么：
 $$\begin{align}
  & P_{1}\ket{l} = \frac{\lambda }{(E_{l}-H_{0}-\lambda P_{1}V)|_{D^{\perp}}}P_{1}VP_{0}\ket{l} 
