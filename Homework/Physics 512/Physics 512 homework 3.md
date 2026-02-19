@@ -133,8 +133,13 @@ Then it suffices to diagonalize:
 $$V=\begin{pmatrix}
 0 & \bra{1,2,1,-1} 1,-1\rangle \\
 \bra{1,2,-1,2} 1,1\rangle & 0
+\end{pmatrix}= \begin{pmatrix}
+0 & \sqrt{ \frac{3}{5} } \\
+\sqrt{ \frac{3}{5} } & 0
 \end{pmatrix}$$
-where $m^{'}=-1,m=-1$ is on the top left. 
+where $m^{'}=-1,m=-1$ is on the top left. It's easy to find that the eigenkets are:
+$$\ket{\psi_{1}} = \frac{1}{\sqrt{ 2 }}(\ket{n,1,1} + \ket{n,1,-1} ),\ \ket{\psi_{2}} = \frac{1}{\sqrt{ 2 }}(\ket{n,1,1} -\ket{n,1,-1} )$$
+Then obviously the degeneracy is removed.
 # Sakurai 5.11
 ## (a)
 
@@ -165,5 +170,18 @@ E_{1}^{0}-\frac{E_{1}^{0}+E_{2}^{0}\pm \sqrt{ (E_{1}^{0}-E_{2}^{0})^{2}+4\lambda
 \implies & \ket{\psi_{\pm}} = \frac{1}{C_{\pm}}\begin{pmatrix}
 \lambda \Delta \\
 \frac{E_{1}^{0}-E_{2}^{0}\mp \sqrt{ \delta }}{2}
-\end{pmatrix}\text{ where }C_{\pm}^{2}= \frac{1}{4}[(E_{1}^{0}-E_{2}^{0})^{2}+\delta\mp 2\sqrt{ \delta }(E_{1}^{0}-E_{2})^{0}] +\lambda^{2}\Delta^{2}
+\end{pmatrix}\text{ where }C_{\pm}^{2}= \frac{1}{4}[(E_{1}^{0}-E_{2}^{0})^{2}+\delta\mp 2\sqrt{ \delta }(E_{1}^{0}-E_{2}^{0})^{}] +\lambda^{2}\Delta^{2},\ \delta=(E_{1}^{0}-E_{2}^{0})^{2}+4\lambda^{2}\Delta^{2}
+\end{align}$$
+Or adopting the notation in the book,
+$$\begin{align}
+ & \ket{\psi_{1}} = \frac{1}{C_{1}}\begin{pmatrix}
+\lambda \Delta \\
+\frac{E_{1}^{0}-E_{2}^{0}- \sqrt{ \delta }}{2}
+\end{pmatrix},\ C_{1}^{2}= \frac{1}{4}[(E_{1}^{0}-E_{2}^{0})^{2}+\delta- 2\sqrt{ \delta }(E_{1}^{0}-E_{2}^{0})]+\lambda^{2}\Delta^{2} \\
+ & E_{1}= \frac{E_{1}^{0}+E_{2}^{0}+ \sqrt{ \delta }}{2} \\
+  & \ket{\psi_{2}} = \frac{1}{C_{2}}\begin{pmatrix}
+\lambda \Delta \\
+\frac{E_{1}^{0}-E_{2}^{0}+ \sqrt{ \delta }}{2}
+\end{pmatrix},\ C_{2}^{2}= \frac{1}{4}[(E_{1}^{0}-E_{2}^{0})^{2}+\delta+ 2\sqrt{ \delta }(E_{1}^{0}-E_{2}^{0})]+\lambda^{2}\Delta^{2} \\
+ & E_{2}= \frac{E_{1}^{0}+E_{2}^{0}- \sqrt{ \delta }}{2}
 \end{align}$$
