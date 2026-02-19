@@ -56,7 +56,7 @@ $$\begin{align}
  \int_{0}^{L}dx x \cos\left( \frac{2\pi}{L}x \right) & = \int dx x \cos\left( \frac{2\pi}{L}\lambda x \right)\text{ with }\lambda=1 \\
  & = \frac{L}{2\pi}\int dx \frac{\partial}{\partial \lambda}\sin\left( \frac{2\pi}{L}\lambda x \right) \\
  & = \frac{L}{2\pi} \frac{\partial}{\partial \lambda}\left[  \frac{L}{2\pi \lambda}(\cos(2\pi \lambda)-1) \right] \\
- & = \left( \frac{L}{2\pi} \right)^{2}\left[ - \frac{1}{\lambda^{2}}(\cos_{2}\pi \lambda-1)- 2\pi \frac{1}{\lambda}\sin(2\pi \lambda) \right]\text{ with }\lambda=1 \\
+ & = \left( \frac{L}{2\pi} \right)^{2}\left[ - \frac{1}{\lambda^{2}}(\cos_{} 2\pi \lambda-1)- 2\pi \frac{1}{\lambda}\sin(2\pi \lambda) \right]\text{ with }\lambda=1 \\
  & = 0
 \end{align}$$
 Then:
