@@ -853,12 +853,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Notes/张量算子（2）.md",
+                "file": "Notes/Stationary perturbation.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "张量算子（2）"
+              "title": "Stationary perturbation"
             }
           }
         ],
@@ -1030,13 +1030,19 @@
   },
   "active": "c83d4fa5d10a6e71",
   "lastOpenFiles": [
-    "Homework/Physics 512/Physics 512 cheat sheet.md",
-    "Notes/张量算子（2）.md",
-    "Notes/张量算子（1）.md",
-    "Homework/Physics 512/Physics 512 homework 3.md",
-    "Homework/Physics 512/Physics 512 homework 1.md",
-    "Homework/Physics 511/Physics 511 Cheat sheet.md",
     "Homework/Physics 512/Physics 512 homework 2.md",
+    "Homework/Physics 512/Physics 512 homework 1.md",
+    "Homework/Physics 512/Physics 512 homework 3.md",
+    "Notes/2-level system的Berry curvature.md",
+    "Notes/AB效应.md",
+    "Notes/Clebsch-Gordan系数.md",
+    "Notes/Hilbert空间.md",
+    "Notes/Ideal flow.md",
+    "Notes/微分几何.md",
+    "Notes/张量算子（2）.md",
+    "Homework/Physics 512/Physics 512 cheat sheet.md",
+    "Notes/张量算子（1）.md",
+    "Homework/Physics 511/Physics 511 Cheat sheet.md",
     "Notes/Stationary perturbation.md",
     "Homework/Physics 463/Midterm 1 cheat sheet.md",
     "Notes/球谐函数与旋转表示.md",
@@ -1050,16 +1056,10 @@
     "Homework/Math 654/Homework 2.md",
     "Excalidraw/Drawing 2026-02-15 21.45.49.excalidraw.md",
     "Notes/虚功原理，d‘Alembert原理，与Lagrange方程.md",
-    "Notes/Fourier transform.md",
-    "Homework/Math 654/Untitled.md",
     "Pictures/Pasted image 20260215210708.png",
-    "Notes/表面张力.md",
-    "Notes/统计力学的数学基础.md",
     "Pictures/Pasted image 20260214230927.png",
     "Pictures/Pasted image 20260214230535.png",
-    "Homework/Math 654/Homework 1.md",
     "Pictures/Pasted image 20260214204110.png",
-    "Notes/Ideal flow.md",
     "tldraw",
     "Excalidraw/Scripts/Downloaded/Convert freedraw to line.svg",
     "Excalidraw/Scripts/Downloaded",

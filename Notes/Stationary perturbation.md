@@ -198,4 +198,7 @@ $$\begin{align}
  & \approx \frac{1}{\pi^{1/4}(\hbar /m\omega)^{1/4}}\exp\left( - \frac{x^{2}}{2\hbar /m\omega} \right)+ \epsilon\left[\frac{1}{8\pi^{1/4}(\hbar /m\omega)^{1/4}}\exp\left( - \frac{x^{2}}{2\hbar /m\omega} \right)- \frac{1}{\pi^{1/4}(\hbar /m\omega)^{1/4}} \frac{x^{2}}{4\hbar /m\omega}\exp\left( - \frac{x^{2}}{2\hbar /m\omega} \right)\right] \\
  & = \bra{x} 0^{(0)}\rangle- \epsilon \frac{1}{4\sqrt{ 2 }} \bra{x} 2^{(0)}\rangle
 \end{align}$$
+# 2. Degenerate
+
+令$H_{0}$存在一简并本征空间$D$，由基$\ket{m_{j}^{(0)}}$张成。其余空间由$\ket{n^{(0)}}$张成。考虑添加微扰$\lambda V$。令微扰足够小，以至于$D$维度不变。设微扰后
 
