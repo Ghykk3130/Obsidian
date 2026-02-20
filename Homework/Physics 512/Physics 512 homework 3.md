@@ -241,7 +241,7 @@ Without loss of generality, we take the normalization constant to be negative. (
 $$\ket{\psi_{2}} =-\frac{1}{E_{2}^{0}-E_{1}^{0}}\begin{pmatrix}
 \lambda \Delta \\
 E_{1}^{0}-E_{2}^{0}
-\end{pmatrix}= \ket{\phi_{2}^{(0)}} + \ket{\phi_{1}^{(0)}} \frac{\lambda \Delta}{E_{1}^{0}-E_{2}^{0}}\text{ up to }\mathcal{O}(\lambda^{2}) $$
+\end{pmatrix}= \ket{\phi_{2}^{(0)}} + \ket{\phi_{1}^{(0)}} \frac{\lambda \Delta}{E_{1}^{0}-E_{2}^{0}}\text{ up to }\mathcal{O}(\lambda^{}) $$
 This is consistent with our perturbation. 
 
 Then expand the energy:
@@ -259,4 +259,49 @@ $$\begin{align}
  & E_{1}= E_{1}^{(0)}+ \frac{\lambda^{2}\Delta^{2}}{E_{1}^{0}-E_{2}^{0}} +\mathcal{O}(\lambda^{3}) 
 \end{align}$$
 They are also consistent with our perturbation.
+## (c)
+
+Set $E_{1}^{0}=E_{2}^{0}=E$. We perform degenerate perturbation. Treat $\lambda$ as the tuning parameter, we need to diagonalize:
+$$V=\begin{pmatrix}
+0 &  \Delta \\
+ \Delta & 0
+\end{pmatrix}$$
+The eigen equation is:
+$$x^{2}-\Delta^{2}=0\implies x=\pm \Delta$$
+So the first order eigen energy corrections are:
+$$\lambda\Delta_{l_{2}}^{(1)}=\lambda\Delta,\ \lambda\Delta_{l_{1}}^{(1)}=-\lambda\Delta$$
+The corresponding first order eigenket corrections are:
+$$\ket{l_{2}^{(0)}}= \frac{1}{\sqrt{ 2 }}(\ket{\phi_{1}^{(0)}} + \ket{\phi_{2}^{(0)}} ),\ \ket{l_{1}^{(0)}}= \frac{1}{\sqrt{ 2 }}(\ket{\phi_{1}^{(0)}} - \ket{\phi_{2}^{(0)}} ) $$
+Now we show that the expansion of the exact solutions is consistent with this. We first approximate:
+$$\begin{align}
+\sqrt{ \delta } & = \sqrt{ (E_{1}^{0}-E_{2}^{0})^{2}+4\lambda^{2}\Delta^{2} } \\
+ & =  2\lambda \Delta \sqrt{ 1+ \frac{(E_{1}^{0}-E_{2}^{0})^{2}}{4\lambda^{2}\Delta^{2}} } \\
+ & \approx 2\lambda \Delta+\mathcal{O}((E_{1}^{0}-E_{2}^{0})^{2})
+\end{align}$$
+Therefore:
+$$\begin{align}
+\ket{\psi_{1}}  & \propto \begin{pmatrix}
+\lambda \Delta \\
+ \frac{2\lambda \Delta}{2}
+\end{pmatrix}+\mathcal{O}(E_{1}^{0}-E_{2}^{0})
+\end{align}$$
+We normalize to get:
+$$\ket{\psi_{2}} \approx\frac{1}{\sqrt{ 2 }}\begin{pmatrix}
+1 \\
+1
+\end{pmatrix}= \frac{1}{\sqrt{ 2 }}(\ket{\phi_{1}^{(0)}} +\ket{\phi_{2}^{(0)}} )\text{ up to }\mathcal{O}(1)$$
+We find the energy approximation:
+$$\begin{align}
+E_{2} & = \frac{E_{1}^{0}+E_{2}^{0}+\sqrt{ \delta }}{2} \\
+ & \approx \frac{E_{1}^{0}+E_{2}^{0}+2\lambda \Delta}{2} \\
+ & \approx \frac{E+E+2\lambda \Delta}{2}=E+\lambda \Delta\text{ up to }\mathcal{O}(E_{1}^{0}-E_{2}^{0})
+\end{align}$$
+Clearly, these are consistent with degenerate perturbation.
+
+Similarly, we obtain:
+$$\begin{align}
+ & \ket{\psi_{1}} \approx \frac{1}{\sqrt{ 2 }}(\ket{\phi_{1}^{(0)}} -\ket{\phi_{2}^{(0)}} )\text{ up to }\mathcal{O}(1) \\
+ & E_{1}\approx E-\lambda \Delta\text{ up to }\mathcal{O}(E_{1}^{0}-E_{2}^{0})
+\end{align}$$
+These are also consistent with perturbation. 
 
