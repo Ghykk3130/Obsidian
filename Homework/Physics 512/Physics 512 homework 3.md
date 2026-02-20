@@ -174,14 +174,89 @@ E_{1}^{0}-\frac{E_{1}^{0}+E_{2}^{0}\pm \sqrt{ (E_{1}^{0}-E_{2}^{0})^{2}+4\lambda
 \end{align}$$
 Or adopting the notation in the book,
 $$\begin{align}
- & \ket{\psi_{1}} = \frac{1}{C_{1}}\begin{pmatrix}
+ & \ket{\psi_{2}} = \frac{1}{C_{2}}\begin{pmatrix}
 \lambda \Delta \\
 \frac{E_{1}^{0}-E_{2}^{0}- \sqrt{ \delta }}{2}
-\end{pmatrix},\ C_{1}^{2}= \frac{1}{4}[(E_{1}^{0}-E_{2}^{0})^{2}+\delta- 2\sqrt{ \delta }(E_{1}^{0}-E_{2}^{0})]+\lambda^{2}\Delta^{2} \\
- & E_{1}= \frac{E_{1}^{0}+E_{2}^{0}+ \sqrt{ \delta }}{2} \\
-  & \ket{\psi_{2}} = \frac{1}{C_{2}}\begin{pmatrix}
+\end{pmatrix},\ C_{2}^{2}= \frac{1}{4}[(E_{1}^{0}-E_{2}^{0})^{2}+\delta- 2\sqrt{ \delta }(E_{1}^{0}-E_{2}^{0})]+\lambda^{2}\Delta^{2} \\
+ & E_{2}= \frac{E_{1}^{0}+E_{2}^{0}+ \sqrt{ \delta }}{2} \\
+  & \ket{\psi_{1}} = \frac{1}{C_{1}}\begin{pmatrix}
 \lambda \Delta \\
 \frac{E_{1}^{0}-E_{2}^{0}+ \sqrt{ \delta }}{2}
-\end{pmatrix},\ C_{2}^{2}= \frac{1}{4}[(E_{1}^{0}-E_{2}^{0})^{2}+\delta+ 2\sqrt{ \delta }(E_{1}^{0}-E_{2}^{0})]+\lambda^{2}\Delta^{2} \\
- & E_{2}= \frac{E_{1}^{0}+E_{2}^{0}- \sqrt{ \delta }}{2}
+\end{pmatrix},\ C_{1}^{2}= \frac{1}{4}[(E_{1}^{0}-E_{2}^{0})^{2}+\delta+ 2\sqrt{ \delta }(E_{1}^{0}-E_{2}^{0})]+\lambda^{2}\Delta^{2} \\
+ & E_{1}= \frac{E_{1}^{0}+E_{2}^{0}- \sqrt{ \delta }}{2}
 \end{align}$$
+where $\delta=(E_{1}^{0}-E_{2}^{0})^{2}+4\lambda^{2}\Delta^{2}$
+## (b)
+
+Obviously,
+$$\begin{align}
+ & \Delta_{1}^{(0)}=0,\ \Delta_{2}^{(0)}=0
+\end{align}$$
+Since the perturbation operator is zero on the diagonal. Then:
+$$\begin{align}
+ & \ket{\phi_{1}^{(1)}} = \ket{\phi_{2}^{(0)}}  \frac{V_{21}}{E_{1}^{0}-E_{2}^{0}}= \ket{\phi_{2}^{(0)}}  \frac{\Delta}{E_{1}^{0}-E_{2}^{0}}
+\end{align}$$
+Similarly,
+$$\ket{\phi_{2}^{(1)}} = \ket{\phi_{1}^{(0)}}  \frac{\Delta}{E_{2}^{0}-E_{1}^{0}}$$
+So the kets are:
+$$\begin{align}
+ & \ket{\phi_{1}} = \ket{\phi_{1}^{(0)}} + \ket{\phi_{2}^{(0)}}  \frac{\lambda \Delta}{E_{1}^{0}-E_{2}^{0}}+\mathcal{O}(\lambda^{2}) \\
+ &  \ket{\phi_{2}} = \ket{\phi_{2}^{(0)}} + \ket{\phi_{1}^{(0)} } \frac{\lambda \Delta}{E_{2}^{0}-E_{1}^{0} }+ \mathcal{O}(\lambda^{2}) 
+\end{align}$$
+Next we compute the energy shifts:
+$$\begin{align}
+ & \Delta_{1}^{(2)}= \frac{|V_{21}|^{2}}{E_{1}^{0}-E_{2}^{0} }= \frac{\Delta^{2}}{E_{1}^{0}-E_{2}^{0}} \\
+ & \Delta_{2}^{(2)}= \frac{\Delta^{2}}{E_{2}^{0}-E_{1}^{0}}
+\end{align}$$
+So:
+$$\begin{align}
+ & E_{1}= E_{1}^{(0)}+ \frac{\lambda^{2}\Delta^{2}}{E_{1}^{0}-E_{2}^{0}} +\mathcal{O}(\lambda^{3}) \\
+ & E_{2}=E_{2}^{(0)}+ \frac{\lambda^{2}\Delta^{2}}{E_{2}^{0}-E_{1}^{0}}+\mathcal{O}(\lambda^{3})
+\end{align}$$
+To compare with the exact solutions, we first notice that:
+$$\begin{align}
+\sqrt{ \delta } & = \sqrt{ (E_{1}^{0}-E_{2}^{0})^{2}+4\lambda^{2}\Delta^{2} } \\
+ & \approx E_{2}^{0}-E_{1}^{0}+\mathcal{O}(\lambda^{2})
+\end{align}$$
+Therefore:
+$$\begin{align}
+\ket{\psi_{2}}  & \propto \begin{pmatrix}
+\lambda \Delta \\
+\frac{E_{1}^{0}-E_{2}^{0}-\sqrt{ \delta }}{2} 
+\end{pmatrix} \\
+ & \approx \begin{pmatrix}
+\lambda \Delta \\
+E_{1}^{0}-E_{2}^{0}
+\end{pmatrix}\text{ up to }\mathcal{O}(\lambda)
+\end{align}$$
+To normalize, we compute:
+$$\begin{align}
+\sqrt{ \lambda^{2}\Delta^{2}+ (E_{1}^{0}-E_{2}^{0})^{2} } & \approx E_{2}^{0}-E_{1}^{0}+ \mathcal{O}(\lambda^{2})
+\end{align}$$
+Therefore:
+$$\begin{align}
+(\lambda^{2}\Delta^{2}+(E_{1}^{0}-E_{2}^{0})^{2})^{-1/2} & \approx \frac{1}{E_{2}^{0}-E_{1}^{0}}+\mathcal{O}(\lambda^{2})
+\end{align}$$
+Without loss of generality, we take the normalization constant to be negative. (The arbitrariness of the sign is due because we have $\text{normalization constant}^{2}=\text{something}$, we can choose it to be either positive or negative.) Then:
+$$\ket{\psi_{2}} =-\frac{1}{E_{2}^{0}-E_{1}^{0}}\begin{pmatrix}
+\lambda \Delta \\
+E_{1}^{0}-E_{2}^{0}
+\end{pmatrix}= \ket{\phi_{2}^{(0)}} + \ket{\phi_{1}^{(0)}} \frac{\lambda \Delta}{E_{1}^{0}-E_{2}^{0}}\text{ up to }\mathcal{O}(\lambda^{2}) $$
+This is consistent with our perturbation. 
+
+Then expand the energy:
+$$\begin{align}
+E_{2} & = \frac{E_{1}^{0}+E_{2}^{0}+\sqrt{ (E_{1}^{0}-E_{2}^{0})^{2}+4\lambda^{2}\Delta^{2} }}{2} \\
+ & = \frac{E_{1}^{0}+E_{2}^{0}+(E_{2}^{0}-E_{1}^{0})\sqrt{ 1+ \frac{4\lambda^{2}\Delta^{2}}{(E_{2}^{0}-E_{1}^{0})} }}{2} \\
+ & \approx \frac{1}{2}\left[ E_{1}^{0}+E_{2}^{0}+(E_{2}^{0}-E_{1}^{0})\left( 1- \frac{2\lambda^{2}\Delta^{2}}{E_{2}^{0}-E_{1}^{0}} \right) \right]\text{ up to }\mathcal{O}(\lambda^{2}) \\
+ & = E_{2}^{0}+ \frac{\lambda^{2}\Delta^{2}}{E_{1}^{0}-E_{2}^{0}}
+\end{align}$$
+This is also consistent with our perturbation.
+
+Similarly, we can expand the exact solutions for $1$, and obtain:
+$$\begin{align}
+ & \ket{\phi_{1}} = \ket{\phi_{1}^{(0)}} + \ket{\phi_{2}^{(0)}}  \frac{\lambda \Delta}{E_{1}^{0}-E_{2}^{0}}+\mathcal{O}(\lambda^{2}) \\
+ & E_{1}= E_{1}^{(0)}+ \frac{\lambda^{2}\Delta^{2}}{E_{1}^{0}-E_{2}^{0}} +\mathcal{O}(\lambda^{3}) 
+\end{align}$$
+They are also consistent with our perturbation.
+
