@@ -304,4 +304,93 @@ $$\begin{align}
  & E_{1}\approx E-\lambda \Delta\text{ up to }\mathcal{O}(E_{1}^{0}-E_{2}^{0})
 \end{align}$$
 These are also consistent with perturbation. 
+# Sakurai 5.14
+
+Without loss of generality, let:
+$$\mathbf{E}=E  \hat{\mathbf{z}}$$
+Then the perturbation is $-|e| E z$. Treat $-|e|E$ as the tuning parameter. It suffices to diagonalize $\bra{3,l^{'},m^{'}}z\ket{3,l,m}$.
+
+Clearly, $z=r^{(1)}_{0}$. Therefore by selection rule, the non-zero matrix elements are:
+$$\bra{3,1,0} z\ket{3,0,0},\ \bra{3,2,0} z\ket{3,1,0} ,\ \bra{3,2,1} z\ket{3,1,1} ,\ \bra{3,2,-1} z\ket{3,1,-1} \text{ and their complex conjugates}$$
+By looking up the table of radial and angular matrix elements of hydrogen eigen states, we can evaluate:
+$$\begin{align}
+ & \bra{3,1,0} z\ket{3,0,0} = \bra{3,1} r\ket{3,0} \bra{1,0} \cos \theta \ket{0,0} =- 3\sqrt{ 6 }a_{0} \\
+ & \bra{3,2,0} z\ket{3,1,0} =\bra{3,2} r\ket{3,1} \bra{2,0} \cos \theta \ket{1,0} =- 3\sqrt{ 3 }a_{0} \\
+ & \bra{3,2,1} z\ket{3,1,1} =\bra{3,2} r\ket{3,1} \bra{2,1} \cos \theta \ket{1,1} =- \frac{9}{2}a_{0} \\
+ & \bra{3,2,-1} z \ket{3,1,-1} =\bra{3,2} z\ket{3,1} \bra{2,-1} \cos \theta \ket{1,-1} =- \frac{9}{2}a_{0}
+\end{align}$$
+We sort the matrix elements in the order $\{ \ket{3,2,2},\ket{3,2,1},\ket{3,1,1},\ket{3,2,0},\ket{3,1,0},\ket{3,0,0},\ket{3,2,-1},\ket{3,1,-1},\ket{3,2,-1}\}$. Then clearly, the matrix is block diagonalized. In the subspace corresponding to $\{ \ket{3,2,0},\ket{3,1,0},\ket{3,0,0} \}$, The perturbation is represented by:
+$$\begin{align}
+z \overset{\wedge}{=} \begin{pmatrix}
+0 & -3\sqrt{ 3 } a_{0} & 0 \\
+-3\sqrt{ 3 }a_{0} & 0 & -3\sqrt{ 6 }a_{0} \\
+0 & -3\sqrt{ 6 }a_{0} & 0
+\end{pmatrix}
+\end{align}$$
+The eigen equation is:
+$$\begin{align}
+ & x(x^{2}-54a_{0}^{2})-3\sqrt{ 3 }a_{0}^{2} \cdot 3\sqrt{ 3 }x=0 \\
+\implies & x(x^{2}-81)a_{0}^{2} =0 \\
+\implies  & x=0\text{ or }\pm 9a_{0}
+\end{align}$$
+For $x=0$, we can find the eigenket:
+$$\ket{\psi_{1}} = \begin{pmatrix}
+- \frac{2}{\sqrt{ 6 }} \\0 \\
+
+\frac{1}{\sqrt{ 3 }}
+\end{pmatrix}=- \frac{2}{\sqrt{ 6 }}\ket{3,2,0} + \frac{1}{\sqrt{ 3 }}\ket{3,0,0}\text{, with 1st order energy shift }\Delta_{1}^{(1)}=0 $$
+For $x= 9a_{0}$, we can find the eigenket:
+$$\ket{\psi_{2}} =\begin{pmatrix}
+- \frac{1}{\sqrt{ 6 }} \\
+\frac{ 1}{\sqrt{ 2 }} \\
+- \frac{1}{\sqrt{ 3 }}
+\end{pmatrix}=- \frac{1}{\sqrt{ 6 }} \ket{3,2,0} + \frac{1}{\sqrt{ 2 }}\ket{3,1,0} - \frac{1}{\sqrt{ 3 }}\ket{3,0,0}\text{, with 1st order energy shift }\Delta_{2}^{(1)}=-9|e|Ea_{0}  $$
+
+For $x=-9a_{0}$, we can find the eigenket:
+$$\ket{\psi_{3}} =\begin{pmatrix}
+\frac{1}{\sqrt{ 6 }}   \\ \frac{1}{\sqrt{ 2 }} \\
+\frac{1}{\sqrt{ 3 }}
+\end{pmatrix}= \frac{1}{\sqrt{ 6 }}\ket{3,2,0} + \frac{1}{\sqrt{ 2 }}\ket{3,1,0} - \frac{1}{\sqrt{ 3 }}\ket{3,0,0} \text{, with 1st order energy shift }\Delta_{3}^{(1)}=9|e|Ea_{0}$$
+In the subspace corresponding to $\{ \ket{3,2,1},\ket{3,1,1} \}$, the perturbation is represented by:
+$$z \overset{\wedge}{=}\begin{pmatrix}
+0 & - \frac{9}{2}a_{0} \\
+- \frac{9}{2}a_{0} & 0
+\end{pmatrix}$$
+The eigen equation is:
+$$x^{2}- \left( \frac{9}{2}a_{0} \right)^{2}=0\implies x=\pm \frac{9}{2}a_{0}$$
+For $x= \frac{9}{2}a_{0}$, we can find the eigenket:
+$$\ket{\psi_{4}} =\frac{1}{\sqrt{ 2 }}\begin{pmatrix}
+1 \\
+-1
+\end{pmatrix}=\frac{1}{\sqrt{ 2 }}\ket{3,2,1} - \frac{1}{\sqrt{ 2 }}\ket{3,1,1}\text{, with 1st order energy shift }\Delta_{4}^{(1)}=- \frac{9}{2}|e|Ea_{0} $$
+For $x=-\frac{9}{2}a_{0}$, we can find the eigenket:
+$$\ket{\psi_{5}} = \frac{1}{\sqrt{ 2 }}\begin{pmatrix}
+1 \\
+1
+\end{pmatrix}=\frac{1}{\sqrt{ 2 }}\ket{3,2,1} + \frac{1}{\sqrt{ 2 }}\ket{3,1,1} \text{, with 1st order energy shift }\Delta_{4}^{(1)}=\frac{9}{2}|e|Ea_{0}$$
+In the subspace corresponding to $\{ \ket{3,2,-1},\ket{3,1,-1} \}$, the perturbation is represented by:
+$$z \overset{\wedge}{=}\begin{pmatrix}
+0 & - \frac{9}{2}a_{0} \\
+- \frac{9}{2}a_{0} & 0
+\end{pmatrix}$$
+The eigen equation is:
+$$x^{2}- \left( \frac{9}{2}a_{0} \right)^{2}=0\implies x=\pm \frac{9}{2}a_{0}$$
+For $x= \frac{9}{2}a_{0}$, we can find the eigenket:
+$$\ket{\psi_{4}} =\frac{1}{\sqrt{ 2 }}\begin{pmatrix}
+1 \\
+-1
+\end{pmatrix}=\frac{1}{\sqrt{ 2 }}\ket{3,2,-1} - \frac{1}{\sqrt{ 2 }}\ket{3,1,-1}\text{, with 1st order energy shift }\Delta_{4}^{(1)}=- \frac{9}{2}|e|Ea_{0} $$
+For $x=-\frac{9}{2}a_{0}$, we can find the eigenket:
+$$\ket{\psi_{5}} = \frac{1}{\sqrt{ 2 }}\begin{pmatrix}
+1 \\
+1
+\end{pmatrix}=\frac{1}{\sqrt{ 2 }}\ket{3,2,-1} + \frac{1}{\sqrt{ 2 }}\ket{3,1,-1} \text{, with 1st order energy shift }\Delta_{4}^{(1)}=\frac{9}{2}|e|Ea_{0}$$
+Other kets do not need modification, and their first order energy shifts are zero. 
+
+Notice that in the problem, we are asked to calculate energy shifts to the lowest non-vanishing order. It's not clear whether we should calculate the second order energy shifts for the states with zero first order energy shift. This would be extremely tedious and cannot be carried out analytically. In principle, we just need to adopt the formula $\Delta^{(2)}=\sum_{n\neq 3,l,m} \frac{|\bra{3,l^{'},m^{'}}V\ket{n,l,m}|^{2}}{E_{3}^{(0)}-E_{n}^{(0)}}$, and throw the rest of the job to Mathematica. We need to truncate at some finite point to obtain an approximation (since the sum is infinite). 
+
+
+
+
+
 
