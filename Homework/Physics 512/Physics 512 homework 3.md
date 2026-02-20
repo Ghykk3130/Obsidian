@@ -116,7 +116,7 @@ So the first order energy shifts of the first excited states are $\left(\frac{L^
 # Sakurai 5.9
 ## (a)
 
-The subspace is 2-fold degenerate. Treat $\lambda$ as a tuning parameter, we need:
+Treat $\lambda$ as a tuning parameter, we need:
 $$\bra{n,1,m^{'}} (x^{2}-y^{2})\ket{n,1,m} $$
 Know that:
 $$r^{(2)}_{-2}= \frac{\sqrt{ 6 }}{4}(x-iy)^{2},\ r^{(2)}_{2}= \frac{\sqrt{ 6 }}{4}(x+iy)^{2}$$
@@ -129,16 +129,19 @@ $$\begin{align}
 \bra{n,1,m^{'}} r^{(2)}_{2}\ket{n,1,m}  & \propto \bra{1,2,m,2} 1,m^{'}\rangle\text{ is non-zero only when }m=-1,\ m^{'}=1
 \end{align}$$
 $$\bra{n,1,m^{'}} r^{(2)}_{-2}\ket{n,1,m} \propto \bra{1,2,m,-2}1,m^{'}\rangle\text{ is non-zero only when }m=1,\ m^{'}=-1 $$
-Then it suffices to diagonalize:
+Then in the subspace with ordered basis $\{ \ket{n,1,1},\ket{n,1,-1},\ket{n,1,0} \}$, it suffices to diagonalize:
 $$V=\begin{pmatrix}
-0 & \bra{1,2,1,-1} 1,-1\rangle \\
-\bra{1,2,-1,2} 1,1\rangle & 0
-\end{pmatrix}= \begin{pmatrix}
-0 & \sqrt{ \frac{3}{5} } \\
-\sqrt{ \frac{3}{5} } & 0
+0 & \bra{1,2,-1,2} 1,1\rangle & 0 \\
+ \bra{1,2,1,-2} 1,-1\rangle & 0 & 0 \\
+0 & 0 & 0 
+\end{pmatrix}=
+ \begin{pmatrix}
+0 & \sqrt{ \frac{3}{5} } & 0 \\
+\sqrt{ \frac{3}{5} } & 0 & 0 \\
+0 & 0 & 0
 \end{pmatrix}$$
-where $m^{'}=-1,m=-1$ is on the top left. It's easy to find that the eigenkets are:
-$$\ket{\psi_{1}} = \frac{1}{\sqrt{ 2 }}(\ket{n,1,1} + \ket{n,1,-1} ),\ \ket{\psi_{2}} = \frac{1}{\sqrt{ 2 }}(\ket{n,1,1} -\ket{n,1,-1} )$$
+It's easy to find that the eigenkets are:
+$$\ket{\psi_{1}} = \frac{1}{\sqrt{ 2 }}(\ket{n,1,1} + \ket{n,1,-1} ),\ \ket{\psi_{2}} = \frac{1}{\sqrt{ 2 }}(\ket{n,1,1} -\ket{n,1,-1} ),\ \ket{\psi_{3}} = \ket{n,{1},0} $$
 Then obviously the degeneracy is removed.
 # Sakurai 5.11
 ## (a)
@@ -280,7 +283,7 @@ $$\begin{align}
 \end{align}$$
 Therefore:
 $$\begin{align}
-\ket{\psi_{1}}  & \propto \begin{pmatrix}
+\ket{\psi_{2}}  & \propto \begin{pmatrix}
 \lambda \Delta \\
  \frac{2\lambda \Delta}{2}
 \end{pmatrix}+\mathcal{O}(E_{1}^{0}-E_{2}^{0})
@@ -312,7 +315,7 @@ Then the perturbation is $-|e| E z$. Treat $-|e|E$ as the tuning parameter. It s
 
 Clearly, $z=r^{(1)}_{0}$. Therefore by selection rule, the non-zero matrix elements are:
 $$\bra{3,1,0} z\ket{3,0,0},\ \bra{3,2,0} z\ket{3,1,0} ,\ \bra{3,2,1} z\ket{3,1,1} ,\ \bra{3,2,-1} z\ket{3,1,-1} \text{ and their complex conjugates}$$
-By looking up the table of radial and angular matrix elements of hydrogen eigen states, we can evaluate:
+By looking up the table of radial and angular matrix elements of hydrogen atom eigen states, we can evaluate:
 $$\begin{align}
  & \bra{3,1,0} z\ket{3,0,0} = \bra{3,1} r\ket{3,0} \bra{1,0} \cos \theta \ket{0,0} =- 3\sqrt{ 6 }a_{0} \\
  & \bra{3,2,0} z\ket{3,1,0} =\bra{3,2} r\ket{3,1} \bra{2,0} \cos \theta \ket{1,0} =- 3\sqrt{ 3 }a_{0} \\
