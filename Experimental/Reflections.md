@@ -6,10 +6,4 @@
 - If want to cut with precision, e.g. copper block in transport setup, make sure to press down the subject to the metal block so that the surface are closely in contact. Or the angle wouldn't be accurate.
 - When gluing samples on metal block, make sure the block surface is clean. Then put sample on. Then put crystal bond on.
 - When $< 10 K$, make sure $dT \approx 0.1T$ on the sample. When $> 10K$, make sure $dT\geq 1K$. If too much noise, meaning excitation is not large enough. Monitor and adjust the excitation for each one or two temperatures.
-
-# Plan for the next run
-- Decrease the excitation frequency such that $V_{th}$ can reach thermal equilibrium at $300K$. Once equilibrium is reached at 300K, most likely under low temperature, the equilibrium can still be reached.
-- Decrease the field scan rate to obtain more data points.
-- Adjust the excitation amplitude to be large enough.
-- For $T> 20K$, do excitation of $2K$. 
-- Measure the four-wire resistance of the sample, determine whether the contacts resistance are large or not.
+- Should look at previous data if observe anything unusual.

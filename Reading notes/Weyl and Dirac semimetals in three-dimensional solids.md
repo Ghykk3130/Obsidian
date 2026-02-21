@@ -107,20 +107,25 @@ $$H=t_{z}\tau_{z}+t_{x}adk_{x}\tau_{x}+t_{y}adk_{y}\tau_{y}$$
 >$$E(\mathbf{k})=\pm \sqrt{ d_{x}^{2}(\mathbf{k})+d_{y}^{2}(\mathbf{k})+d_{z}^{2}(\mathbf{k}) }$$
 >但是，我们难以知道哪个能量对应哪个态。若从微扰的角度来想，$\ket{\uparrow}$一定对应着unperturbed energy $d_{z}(\mathbf{k})$，$\ket{\downarrow}$一定对应着unperturbed energy $-d_{z}(\mathbf{k})$。所以，若$d_{z}>0$，那么$\ket{\uparrow}$对应的就是$\pm \sqrt{ d_{x}^{2}+d_{y}^{2}+d_{z}^{2} }$中正的那个。
 >
->能带反转指$\ket{\uparrow}$的能量从大于$\ket{\downarrow}$能量变成小于，或者反之。在本情况下，这对应着$d_{z}$的变号。
+>能带反转指$\ket{\uparrow}$的能量从大于$\ket{\downarrow}$能量变成小于，或者反之。在本情况下，这对应着$d_{z}$的变号。这种情况下，导带和价带互换。换一种视角，导带对应的本征态改变了，从$\ket{s}$变成$\ket{p}$或者反之。这被称为parity inversion.
 
-而能带一旦反转，代表着能带在某点重叠，产生Weyl点。
+可以证明如下定理：
 
-注意到simple cubic lattice的TRIM点坐标分量要么是$\frac{\pi}{a}$，要么是$0$。所以在TRIM点上，Hamiltonian reduce为：
-$$H=t_{z}(2-\cos k_{x}a-\cos k_{y}a+\gamma-\cos k_{z}a)\tau_{z}$$
-在TRIM点，两个能级分别为$\pm t_{z}(2-\cos k_{x}a-\cos k_{y}a+\gamma-\cos k_{z}a)$。
-其中$t_{z}(2-\cos k_{x}a-\cos k_{y}a+\gamma-\cos k_{z}a)$对应$\ket{s}$组合出的Bloch态，$-t_{z}(2-\cos k_{x}a-\cos k_{y}a+\gamma-\cos k_{z}a)$对应$\ket{p}$组合出的Bloch态。
+>[!Success]
+>In a two-dimensional BZ, 
+>$$(-1)^{C}=\prod_{j} \xi_{j}$$
+>where $\xi_{j}$ is the parity of the state corresponding to the occupied band at the jth TRIM point.
 
-由于Boltzmann factor，低温下电子占据能量更低的态。所以若$t_{z}(2-\cos k_{x}a-\cos k_{y}a+\gamma-\cos k_{z}a)$变号，电子占据的态switch。Parity相应switch。
+注意到4个TRIM点位于$k_{z}=\frac{\pi}{a}$面$S_{1}$，另外四个TRIM点位于$k_{z}=0$平面$S_{2}$。那么令两个平面各自的陈数为$C_{1},C_{0}$。我们有：
+$$(-1)^{C_{0}}=\prod_{\text{TRIM points in }k_{z}=0}\xi_{j},\ (-1)^{C_{1}}=\prod_{\text{TRIM points in }k_{z}=\frac{\pi}{a}} \xi_{j}\implies(-1)^{C_{1}+C_{0}}= \prod_{\text{all TRIM points}}\xi_{j}$$
+那么，若发生奇数次parity inversion，那么就有奇数个parity even和奇数个parity odd的TRIM点，因为总共有八个TRIM点。那么$\prod \xi_{j}=-1$。那么$C_{1}+C_{0}$为奇数。那么$C_{1}\neq C_{0}$。我们可以计算两个面夹出的体积$\left[ 0,\frac{2\pi}{a} \right]^{2}\times\left[ 0 , \frac{\pi}{a} \right]$中间的拓扑荷个数：
+$$\begin{align}
+C & = \frac{1}{2\pi} \int d\mathbf{S}\cdot \boldsymbol{\Omega} \\
+ & = \frac{1}{2\pi}\int_{S_{1}}d\mathbf{S}\cdot \boldsymbol{\Omega} + \frac{1}{2\pi}\int_{S_{2}} d\mathbf{S}\cdot \boldsymbol{\Omega} \\
+ & = C_{1}-C_{0}\neq 0
+\end{align}$$
 
-注意到，在$\Gamma$点$2-\cos k_{x}a-\cos k_{y}a+\gamma-\cos k_{z}a$是最容易负的，在$R$点$2-\cos k_{x}a-\cos k_{y}a+\gamma-\cos k_{z}a$是最容易正的。在$\gamma=0$，$\Gamma$和其它TRIM点parity不同。可以证明，奇数个parity不同的TRIM点暗示Weyl点的存在。
 
-还发现，若$\gamma=0$，在$k_{z}=0$上算得$C=1$，在$k_{z}=\frac{\pi}{a}$上算得$C=0$。所以在$k_{z}=\text{const.}$平面沿z扫时，必定扫过$\boldsymbol{\Omega}$奇点，即Weyl点。
 
 
 

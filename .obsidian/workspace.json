@@ -881,12 +881,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Reading notes/Weyl and Dirac semimetals in three-dimensional solids.md",
+                "file": "Experimental/Reflections.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Weyl and Dirac semimetals in three-dimensional solids"
+              "title": "Reflections"
             }
           }
         ],
@@ -957,8 +957,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200,
-    "collapsed": true
+    "width": 200
   },
   "right": {
     "id": "9003d078f8dbc4ed",
@@ -1058,9 +1057,9 @@
   },
   "active": "328cbad1eb1d9470",
   "lastOpenFiles": [
+    "Reading notes/Weyl and Dirac semimetals in three-dimensional solids.md",
     "Reading notes/Unconventional magnetic oscillations in a kagome Mott insulator.md",
     "Notes/Solid state.md",
-    "Reading notes/Weyl and Dirac semimetals in three-dimensional solids.md",
     "Notes/Untitled 4.md",
     "Notes/Untitled 6.md",
     "Notes/Untitled 1.md",
