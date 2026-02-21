@@ -81,31 +81,9 @@ Eigenvalues[H]
 
 考虑一个simple cubic lattice。每个点上有两条orbital，为$s,p$轨道。由$s$轨道的wannier态组合出一个Bloch态，由$p$轨道的wannier态组合出一个Bloch态。则固定$\mathbf{k}$后Hilbert空间是二维。
 
->[!Quote] 宇称算符对于含$\mathbf{k}$算符的作用
->我们知道：
->$$\pi ^{\dagger} \mathbf{r}\pi=-\mathbf{r} $$
->回忆起由wannier态组合出Bloch态：
->$$\ket{\psi_{n,\mathbf{k}}} =\sum_{\mathbf{R} \in \Lambda}e^{i\mathbf{k}\cdot \mathbf{r}}\ket{} $$
-
-
-
-注意到：
-$$\tau_{z} \begin{pmatrix}
-1 \\
-0 
-\end{pmatrix}= \begin{pmatrix}
-1 \\
-0
-\end{pmatrix},\ \tau_{z}\begin{pmatrix}
-0 \\
-1 
-\end{pmatrix}=- \begin{pmatrix}
-0 \\
-1
-\end{pmatrix}$$
-因为$s$是偶宇称，$p$是奇宇称，所以$\tau_{z}$为宇称算符在$s,p$基下的表示。
-
-所以：
+我们假设：
+$$\pi ^{\dagger} \mathbf{k}\pi=-\mathbf{k}$$
+注意到在这个问题里，$\pi \ket{s}=\ket{s},\ \pi \ket{p}=-\ket{p}$。所以$\pi \overset{\wedge}{=}\tau_{z}$。所以：
 $$\tau_{z}^{\dagger}\mathbf{k}\tau_{z}=-\mathbf{k}$$
 $$\implies\tau_{z}^{\dagger}H(\mathbf{k})\tau_{z}=H(-\mathbf{k})$$
 可由tight-binding得到：
