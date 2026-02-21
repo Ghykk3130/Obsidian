@@ -85,19 +85,31 @@ Eigenvalues[H]
 $$\pi ^{\dagger} \mathbf{k}\pi=-\mathbf{k}$$
 注意到在这个问题里，$\pi \ket{s}=\ket{s},\ \pi \ket{p}=-\ket{p}$。所以$\pi \overset{\wedge}{=}\tau_{z}$。所以：
 $$\tau_{z}^{\dagger}\mathbf{k}\tau_{z}=-\mathbf{k}$$
+这个系统显然有space inversion symmetry。那么$\pi ^{\dagger}H\pi=H$。而$\pi ^{\dagger}\mathbf{k}\pi=-\mathbf{k}$，所以：
 $$\implies\tau_{z}^{\dagger}H(\mathbf{k})\tau_{z}=H(-\mathbf{k})$$
 可由tight-binding得到：
-$$H=t_{z}(2-\cos k_{x}a-\cos k_{y}a+\gamma-\cos k_{z}a)\tau_{z}+t_{x}(\sin k_{x}a)\tau_{x}+t_{y}(\sin k_{y}a)\tau_{y}$$
+$$H=t_{z}(2-\cos k_{x}a-\cos k_{y}a+\gamma-\cos k_{z}a)\tau_{z}+t_{x}(\sin k_{x}a)\tau_{x}+t_{y}(\sin k_{y}a)\tau_{y}=\sum_{j}d_{j}(\mathbf{k})\tau_{j}$$
 注意到，在Hamiltonian零点附近作一阶展开，可以得到：
 $$H=t_{z}\tau_{z}+t_{x}adk_{x}\tau_{x}+t_{y}adk_{y}\tau_{y}$$
-这正是$v_{x}=t_{x}a,v_{y}=t_{y}a,v_{z}=t_{z}$
-
+这正是$v_{x}=t_{x}a,v_{y}=t_{y}a,v_{z}=t_{z}$。
 
 >[!Quote] Note: TRIM 点
 >在FBZ的$S^3$topology下，考虑$-\mathbf{k}=\mathbf{k}$的点，即$-\mathbf{k}=\mathbf{k}+\mathbf{G}$的点，称为TRIM(time-reversal-inverted-momentum)点。
 >
 >例如simple cubic lattice，其reciprocal lattice仍为simple cubic lattice。就选择八个各点构成的最小立方体为FBZ。则$-\mathbf{k}=\mathbf{k}+\mathbf{G}\implies 2\mathbf{k}=G$。那么$\mathbf{k}$可以取原点$\Gamma$，靠近原点的三条边的中心点$X,Y,Z$，靠近原点的三个面的中心点$M$，体对角线中心点$R$。
->![[Drawing 2026-01-28 23.16.15.excalidraw|center|350]]
+>
+>由于TRIM点都有$2\mathbf{k}=-\mathbf{G}$，所以TRIM点上的$\sin$成分就都消失了。那么在TRIM点上Hamiltonian就是对角化的。
+
+![[Drawing 2026-01-28 23.16.15.excalidraw|center|350]]
+
+>[!Quote] 能带反转
+>一般情况下，可以认为$d_{z}\tau_{z}$是Hamiltonain的主要成分。$d_{x}\tau_{x},d_{y}\tau_{y}$都可以看作是微扰。我们可以精确解得能带：
+>$$E(\mathbf{k})=\pm \sqrt{ d_{x}^{2}(\mathbf{k})+d_{y}^{2}(\mathbf{k})+d_{z}^{2}(\mathbf{k}) }$$
+>但是，我们难以知道哪个能量对应哪个态。若从微扰的角度来想，$\ket{\uparrow}$一定对应着unperturbed energy $d_{z}(\mathbf{k})$，$\ket{\downarrow}$一定对应着unperturbed energy $-d_{z}(\mathbf{k})$。所以，若$d_{z}>0$，那么$\ket{\uparrow}$对应的就是$\pm \sqrt{ d_{x}^{2}+d_{y}^{2}+d_{z}^{2} }$中正的那个。
+>
+>能带反转指$\ket{\uparrow}$的能量从大于$\ket{\downarrow}$能量变成小于，或者反之。在本情况下，这对应着$d_{z}$的变号。
+
+而能带一旦反转，代表着能带在某点重叠，产生Weyl点。
 
 注意到simple cubic lattice的TRIM点坐标分量要么是$\frac{\pi}{a}$，要么是$0$。所以在TRIM点上，Hamiltonian reduce为：
 $$H=t_{z}(2-\cos k_{x}a-\cos k_{y}a+\gamma-\cos k_{z}a)\tau_{z}$$
