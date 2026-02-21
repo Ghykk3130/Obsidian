@@ -81,6 +81,14 @@ Eigenvalues[H]
 
 考虑一个simple cubic lattice。每个点上有两条orbital，为$s,p$轨道。由$s$轨道的wannier态组合出一个Bloch态，由$p$轨道的wannier态组合出一个Bloch态。则固定$\mathbf{k}$后Hilbert空间是二维。
 
+>[!Quote] 宇称算符对于含$\mathbf{k}$算符的作用
+>我们知道：
+>$$\pi ^{\dagger} \mathbf{r}\pi=-\mathbf{r} $$
+>回忆起由wannier态组合出Bloch态：
+>$$\ket{\psi_{n,\mathbf{k}}} =\sum_{\mathbf{R} \in \Lambda}e^{i\mathbf{k}\cdot \mathbf{r}}\ket{} $$
+
+
+
 注意到：
 $$\tau_{z} \begin{pmatrix}
 1 \\

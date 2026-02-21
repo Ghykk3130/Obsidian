@@ -881,12 +881,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Notes/Untitled 6.md",
+                "file": "Reading notes/Weyl and Dirac semimetals in three-dimensional solids.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Untitled 6"
+              "title": "Weyl and Dirac semimetals in three-dimensional solids"
             }
           }
         ],
@@ -942,7 +942,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "Wigner eckart theorem",
+                "query": "",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -957,7 +957,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 200,
+    "collapsed": true
   },
   "right": {
     "id": "9003d078f8dbc4ed",
@@ -1057,8 +1058,19 @@
   },
   "active": "328cbad1eb1d9470",
   "lastOpenFiles": [
-    "Notes/Untitled 5.md",
+    "Reading notes/Unconventional magnetic oscillations in a kagome Mott insulator.md",
+    "Notes/Solid state.md",
+    "Reading notes/Weyl and Dirac semimetals in three-dimensional solids.md",
+    "Notes/Untitled 4.md",
     "Notes/Untitled 6.md",
+    "Notes/Untitled 1.md",
+    "Reading notes/Weyl semimetal in a topological insulator multilayer.md",
+    "Reading notes/Topological properties and dynamics of magnetic skyrmions.md",
+    "Reading notes/Electrical resistance of ferromagnetic metals.md",
+    "Reading notes/Dynamics and critical currents in fast superconducting vortices at high pulsed magnetic fields.md",
+    "Reading notes/Doping-induced spin reorientation in Kagome magnet TmMn6Sn6.md",
+    "Reading notes/Berry phase effects on electronic properties.md",
+    "Notes/Untitled 5.md",
     "Notes/路径积分.md",
     "Experimental/Wye-Delta Transformation.md",
     "Experimental/VTI.md",
@@ -1072,22 +1084,11 @@
     "Notes/开放量子系统.md",
     "Notes/Stationary perturbation.md",
     "Notes/SU(2)和SO(3)的联系.md",
-    "Notes/Symmetries in EM.md",
-    "Homework/Physics 512/Physics 512 homework 3.md",
-    "Homework/Physics 512/Untitled.md",
-    "Homework/Physics 512/Physics 512 homework 1.md",
     "Pictures/Pasted image 20260220165911.png",
     "Pictures/Pasted image 20260220165854.png",
     "Pictures/Pasted image 20260220165827.png",
     "Pictures/Pasted image 20260220165800.png",
     "Pictures/Pasted image 20260220165729.png",
-    "Homework/Physics 512/Physics 512 cheat sheet.md",
-    "Notes/张量算子（2）.md",
-    "Notes/Perturbation.md",
-    "Homework/Physics 512/Physics 512 homework 2.md",
-    "Notes/2-level system的Berry curvature.md",
-    "Notes/AB效应.md",
-    "Notes/Clebsch-Gordan系数.md",
     "Pictures/Pasted image 20260215210708.png",
     "Pictures/Pasted image 20260214230927.png",
     "Pictures/Pasted image 20260214230535.png",
