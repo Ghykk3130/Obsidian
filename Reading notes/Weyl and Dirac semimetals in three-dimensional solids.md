@@ -81,11 +81,55 @@ Eigenvalues[H]
 
 考虑一个simple cubic lattice。每个点上有两条orbital，为$s,p$轨道。由$s$轨道的wannier态组合出一个Bloch态，由$p$轨道的wannier态组合出一个Bloch态。则固定$\mathbf{k}$后Hilbert空间是二维。
 
-我们假设：
-$$\pi ^{\dagger} \mathbf{k}\pi=-\mathbf{k}$$
-注意到在这个问题里，$\pi \ket{s}=\ket{s},\ \pi \ket{p}=-\ket{p}$。所以$\pi \overset{\wedge}{=}\tau_{z}$。所以：
-$$\tau_{z}^{\dagger}\mathbf{k}\tau_{z}=-\mathbf{k}$$
-这个系统显然有space inversion symmetry。那么$\pi ^{\dagger}H\pi=H$。而$\pi ^{\dagger}\mathbf{k}\pi=-\mathbf{k}$，所以：
+>[!Quote] 含$\mathbf{k}$的物理量的变换
+>我们不认为$\mathbf{k}$是一个可观测量。但是可以作：
+>$$\begin{align}
+  \pi ^{\dagger} H(\mathbf{k})\pi & = \pi ^{\dagger}(e)(e^{i\mathbf{k}\cdot \mathbf{r}}H e^{-i\mathbf{k}\cdot \mathbf{r}})\pi \\
+ & =\pi ^{\dagger} e^{i\mathbf{k}\cdot \mathbf{r}}\pi \pi ^{\dagger}H \pi \pi ^{\dagger} e^{-i\mathbf{k}\cdot \mathbf{r}}\pi \\
+ & = e^{-i\mathbf{k}\cdot \mathbf{r}}H e^{i\mathbf{k}\cdot \mathbf{r}}\text{ if the system has spatial inversion symmetry } \pi ^{\dagger}H \pi=H \\
+ & = H(-\mathbf{k})
+\end{align}$$
+>$$\begin{align}
+\Theta H(\mathbf{k})\Theta ^{-1} & = \Theta  e ^{i\mathbf{k}\cdot \mathbf{r}}H e^{-i\mathbf{k}\cdot \mathbf{r}}\Theta ^{-1} \\
+ & = \Theta e^{i\mathbf{k}\cdot \mathbf{r}} \Theta ^{-1}  \Theta H \Theta ^{-1} \Theta e^{-i\mathbf{k}\cdot \mathbf{r}} \\
+ & = e^{-i\mathbf{k}\cdot \mathbf{r}}He^{i\mathbf{k}\cdot \mathbf{r}}\text{ if the system has time reversal symmetry }\Theta H \Theta ^{-1}=H \\
+ & = H(-\mathbf{k})
+\end{align}$$
+>我们可以得到态的变换：
+>$$\begin{align}
+  & \pi ^{\dagger} H(\mathbf{k})\pi=H(\mathbf{k})\implies \pi ^{\dagger}\ket{u_{\mathbf{k}}} =\ket{u_{-\mathbf{k}}} \implies \pi \ket{u_{\mathbf{k}}} =\ket{u_{-\mathbf{k}}} \text{ up to a }U(1)\text{ arbitrariness if the system has spatial inversion symmetry}  \\
+ & \Theta H(\mathbf{k})\Theta ^{-1}=H(-\mathbf{k})\implies \Theta \ket{u_{\mathbf{k}}} =\ket{u_{-\mathbf{k}}} \text{ up to a }U(1)\text{ arbitrariness if the system has time reversal symmetry} 
+\end{align}$$
+>接下来计算Berry connenction, Berry curvature的变化。由于规范不变性，不妨在上面两种情况取phase为1。那么若系统具有空间反转对称性：
+>$$\begin{align}
+\mathbf{A}(-\mathbf{k}) & = -i \bra{u_{-\mathbf{k}}} \frac{\partial}{\partial (-\mathbf{k})}\ket{u_{-\mathbf{k}}}  \\
+ & = i \bra{u_{-\mathbf{k}}}  \frac{\partial}{\partial \mathbf{k}}\ket{u_{-\mathbf{k}}}  \\
+ & = i \bra{u_{\mathbf{k}}} \pi ^{\dagger} \frac{\partial}{\partial \mathbf{k}} \pi \ket{u_{\mathbf{k}}}  \\
+ & = i \bra{u_{\mathbf{k}}}  \frac{\partial}{\partial \mathbf{k}}\ket{u_{\mathbf{k}}}  \\
+ & = -\mathbf{A}(\mathbf{k})
+\end{align}$$
+>这导致：
+>$$\begin{align}
+\boldsymbol{\Omega}(-\mathbf{k}) & = \frac{\partial}{\partial (-\mathbf{k})}A(-\mathbf{k}) \\
+ & = \frac{\partial}{\partial \mathbf{k}}A(\mathbf{k}) \\
+ & = \Omega(\mathbf{k})
+\end{align}$$
+>若系统具有时间反演对称性：
+>$$\begin{align}
+\mathbf{A}(-\mathbf{k}) & = -i \bra{u_{-\mathbf{k}}} \frac{\partial}{\partial(-\mathbf{k})} \ket{u_{-\mathbf{k}}}  \\
+ & = i \bra{\Theta u_{\mathbf{k}}} \frac{\partial}{\partial \mathbf{k}}\Theta \ket{u_{\mathbf{k}}}  \\
+ & = i \bra{\Theta u_{\mathbf{k}}} \Theta \frac{\partial}{\partial \mathbf{k}}\ket{u_{\mathbf{k}}}  \\
+ & = i\bra{ \frac{\partial}{\partial \mathbf{k}} u_{\mathbf{k}}} u_{\mathbf{k}}\rangle \\
+ & = A^{*}(\mathbf{k})=A(\mathbf{k})\text{ since Berry connection is real}
+\end{align}$$
+>那么：
+>$$\begin{align}
+\boldsymbol{\Omega}(-\mathbf{k}) & = \frac{\partial}{\partial(-\mathbf{k})}\mathbf{A}(-\mathbf{k}) \\
+ & = -\boldsymbol{\Omega}(\mathbf{k})
+\end{align}$$
+>所以，如果系统同时具有两种对称性，必定得到$\boldsymbol{\Omega}=0$。整个BZ中$\nabla \cdot \boldsymbol{\Omega}$没有奇点。
+
+这个系统显然有space inversion symmetry。那么$\pi ^{\dagger}H\pi=H$。所以：
 $$\implies\tau_{z}^{\dagger}H(\mathbf{k})\tau_{z}=H(-\mathbf{k})$$
 可由tight-binding得到：
 $$H=t_{z}(2-\cos k_{x}a-\cos k_{y}a+\gamma-\cos k_{z}a)\tau_{z}+t_{x}(\sin k_{x}a)\tau_{x}+t_{y}(\sin k_{y}a)\tau_{y}=\sum_{j}d_{j}(\mathbf{k})\tau_{j}$$
