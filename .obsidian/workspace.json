@@ -881,12 +881,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Reading notes/Weyl and Dirac semimetals in three-dimensional solids.md",
+                "file": "Notes/Stationary perturbation.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Weyl and Dirac semimetals in three-dimensional solids"
+              "title": "Stationary perturbation"
             }
           }
         ],
@@ -942,7 +942,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "perturbation",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -953,12 +953,12 @@
               "title": "Search"
             }
           }
-        ]
+        ],
+        "currentTab": 3
       }
     ],
     "direction": "horizontal",
-    "width": 200,
-    "collapsed": true
+    "width": 200
   },
   "right": {
     "id": "9003d078f8dbc4ed",
@@ -1058,11 +1058,13 @@
   },
   "active": "328cbad1eb1d9470",
   "lastOpenFiles": [
-    "Notes/离散对称性.md",
+    "Notes/Magnetic ordering.md",
+    "Notes/Solid state.md",
+    "Reading notes/Doping-induced spin reorientation in Kagome magnet TmMn6Sn6.md",
     "Reading notes/Weyl and Dirac semimetals in three-dimensional solids.md",
+    "Notes/离散对称性.md",
     "Experimental/Reflections.md",
     "Reading notes/Unconventional magnetic oscillations in a kagome Mott insulator.md",
-    "Notes/Solid state.md",
     "Notes/Untitled 4.md",
     "Notes/Untitled 6.md",
     "Notes/Untitled 1.md",
@@ -1070,7 +1072,6 @@
     "Reading notes/Topological properties and dynamics of magnetic skyrmions.md",
     "Reading notes/Electrical resistance of ferromagnetic metals.md",
     "Reading notes/Dynamics and critical currents in fast superconducting vortices at high pulsed magnetic fields.md",
-    "Reading notes/Doping-induced spin reorientation in Kagome magnet TmMn6Sn6.md",
     "Reading notes/Berry phase effects on electronic properties.md",
     "Notes/Untitled 5.md",
     "Notes/路径积分.md",
@@ -1083,7 +1084,6 @@
     "Experimental/SAS Comments.md",
     "Experimental/Cantilever.md",
     "Notes/表面张力.md",
-    "Notes/开放量子系统.md",
     "Pictures/Pasted image 20260220165911.png",
     "Pictures/Pasted image 20260220165854.png",
     "Pictures/Pasted image 20260220165827.png",

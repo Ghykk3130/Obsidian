@@ -330,5 +330,9 @@ $$\begin{align}
 >[!Right]
 >$\blacksquare$
 
+## Ex:
 
+考虑一个离子与周围的配体。离子自旋为$\mathbf{S}$。由于周围配体的电子波函数形状固定，而离子自身某个$\ket{n}$轨道不同$m_{l},l$对应波函数形状不同，这两个波函数的重叠对于不同$m_{l},l$来说不一样。于是$\ket{n}$发生分裂。此时不同的$l$能量不同。考虑coupling $\lambda \mathbf{L}\cdot \mathbf{S}$。将其当做微扰。可以证明一阶微扰为零。而二阶微扰为：
+$$\Delta^{(2)}_{n,l,m_{l},s,m_{s}}= \sum_{(n^{'},l^{'},m^{'}_{l^{'}},s ^{'},m^{'}_{s ^{'}})\neq (n,l,m_{l},s,m_{s})} \frac{|\bra{n,l,m_{l},s,m_{s}} \mathbf{L}\cdot \mathbf{S}\ket{n^{'},l^{'},m^{'}_{l^{'}},s ^{'},m^{'}_{s ^{'}}} |^{2}}{E_{n,l,m_{l},s,m_{s}}^{(0)}-E_{n^{'},l^{'},m^{'}_{l^{'}},s  ^{'},\ m^{'}_{s ^{'}}}^{(0)}}$$
+那么，由于$E_{n,l,m_{l},s,m_{s}}^{(0)}$对于不同$l,m_{l}$不一样，energy shift也不一样。所以spin倾向于和那些energy shift后低的本征态align，导致anisotropy。
 
