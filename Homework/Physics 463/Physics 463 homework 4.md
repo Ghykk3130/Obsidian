@@ -60,5 +60,44 @@ $$\begin{align}
 \end{align}$$
 Then the strain tensor is given by:
 $$\begin{align}
-\epsilon_{ij} & = \frac{1}{2}(\Lambda_{li}\Lambda_{lj}-\delta_{ij} )\implies\epsilon \overset{\wedge}{=}
+\epsilon_{ij} & = \frac{1}{2}(\Lambda_{li}\Lambda_{lj}-\delta_{ij} )\implies\epsilon \overset{\wedge}{=} \frac{1}{2}\begin{pmatrix}
+0 & \tan \theta \\
+\tan \theta & \tan ^{2}\theta
+\end{pmatrix}
 \end{align}$$
+## (2)
+
+We have:
+$$\begin{align}
+\epsilon^{2}= \frac{1}{4}\begin{pmatrix}
+\tan ^{2}\theta & \tan ^{3}\theta \\
+\tan ^{3}\theta & \tan ^{2}\theta+\tan ^{4}\theta
+\end{pmatrix}
+\end{align}$$
+Therefore:
+$$\begin{align}
+f & = \mu \left( \frac{1}{4}\tan ^{2}\theta+ \frac{1}{4}\tan ^{2}\theta+ \frac{1}{4}\tan ^{4}\theta \right)+ \frac{\lambda}{2}\left( \frac{1}{2}\tan ^{2}\theta \right)^{2} \\
+ & =\mu\left( \frac{1}{2}\tan ^{2}\theta+ \frac{1}{4}\tan ^{4}\theta \right)+ \lambda \frac{1}{8}\tan ^{4}\theta
+\end{align}$$
+Know that:
+$$\begin{align}
+ & \frac{1}{2}\tan ^{2}\theta+ \frac{1}{4}\tan ^{4}\theta= \frac{1}{2}\theta^{2}+ \mathcal{O}(\theta^{3}) \\
+ & \tan ^{4}\theta= \theta^{4}+\mathcal{O }(\theta^{5})
+\end{align}$$
+## (3)
+
+We know $\epsilon$. So it's easy to compute:
+$$F= \frac{1}{2}C_{11}\tan ^{4}\theta+ C_{44}\tan ^{2}\theta$$
+# Kittel 4.1
+## (a)
+
+Since the displacement is given by:
+$$u_{s}=u\cos(\omega t-sKa)$$
+Then the kinetic energy of atom s is $\frac{1}{2}M\left( \frac{du_{s}}{dt} \right)^{2}$. So the total kinetic energy is:
+$$\frac{1}{2}\sum_{s}\left( \frac{du_{s}}{dt} \right)^{2}$$
+The interaction between the nearest neighbors s, s+1 is $\frac{1}{2}C(u_{s}-u_{s+1})^{2}$. So the total interaction energy is:
+$$\frac{1}{2}C\sum_{s}(u_{s}-u_{s+1})^{2}$$
+So the total energy is:
+$$E= \frac{1}{2}\sum_{s}\left( \frac{du_{s}}{dt} \right)^{2}+ \frac{1}{2}C\sum_{s}(u_{s}-u_{s+1})^{2}$$
+## (b)
+
