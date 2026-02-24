@@ -909,12 +909,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Homework/Physics 463/Physics 463 homework 4.md",
+                "file": "Notes/Strain tensor.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Physics 463 homework 4"
+              "title": "Strain tensor"
             }
           }
         ],
@@ -1085,9 +1085,9 @@
   },
   "active": "c1016c775d1b938f",
   "lastOpenFiles": [
+    "Homework/Physics 463/Physics 463 homework 4.md",
     "Notes/Strain tensor.md",
     "Notes/量子统计力学基础.md",
-    "Homework/Physics 463/Physics 463 homework 4.md",
     "Homework/Physics 463/Physics 463 homework 3.md",
     "Notes/Stationary perturbation.md",
     "Notes/Magnetic ordering.md",

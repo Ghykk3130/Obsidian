@@ -94,10 +94,52 @@ $$F= \frac{1}{2}C_{11}\tan ^{4}\theta+ C_{44}\tan ^{2}\theta$$
 Since the displacement is given by:
 $$u_{s}=u\cos(\omega t-sKa)$$
 Then the kinetic energy of atom s is $\frac{1}{2}M\left( \frac{du_{s}}{dt} \right)^{2}$. So the total kinetic energy is:
-$$\frac{1}{2}\sum_{s}\left( \frac{du_{s}}{dt} \right)^{2}$$
+$$\frac{1}{2}M\sum_{s}\left( \frac{du_{s}}{dt} \right)^{2}$$
 The interaction between the nearest neighbors s, s+1 is $\frac{1}{2}C(u_{s}-u_{s+1})^{2}$. So the total interaction energy is:
 $$\frac{1}{2}C\sum_{s}(u_{s}-u_{s+1})^{2}$$
 So the total energy is:
-$$E= \frac{1}{2}\sum_{s}\left( \frac{du_{s}}{dt} \right)^{2}+ \frac{1}{2}C\sum_{s}(u_{s}-u_{s+1})^{2}$$
+$$E= \frac{1}{2}M\sum_{s}\left( \frac{du_{s}}{dt} \right)^{2}+ \frac{1}{2}C\sum_{s}(u_{s}-u_{s+1})^{2}$$
 ## (b)
 
+We have:
+$$\begin{align}
+\langle E \rangle & = \left\langle  \frac{1}{2}M\sum_{s}\left( \frac{du_{s}}{dt} \right)^{2}+ \frac{1}{2}C\sum_{s}(u_{s}-u_{s+1})^{2} \right\rangle \\
+ & = \frac{1}{2} M\sum_{s}\left\langle  \left( \frac{du_{s}}{dt} \right)^{2} \right\rangle+ \frac{1}{2}C \sum_{s}\langle (u_{s}-u_{s+1})^{2}\rangle
+\end{align}$$
+It's easy to compute:
+$$\begin{align}
+\left\langle  \left( \frac{du_{s}}{dt} \right)^{2} \right\rangle & = u^{2}\omega^{2}\langle \cos ^{2}(\omega t-sKa)\rangle \\
+ & = \frac{1}{2}u^{2}\omega^{2}\end{align}$$
+Next, we compute:
+$$\begin{align}
+\langle (u_{s}-u_{s+1})^{2}\rangle & = u^{2}\langle (\cos(\omega t-sKa)-\cos(\omega t-(s+1)Ka))^{2}\rangle \\
+ & = u^{2}\langle \cos ^{2}(\omega t-sKa)\rangle+ u^{2}\langle \cos ^{2}(\omega t-(s+1)Ka)\rangle- 2u^{2}\langle \cos(\omega t-sKa)\cos(\omega t-(s+1)Ka)\rangle \\
+ & = \frac{1}{2}u^{2}+ \frac{1}{2}u^{2}-2u^{2}\langle \cos(\omega t-sKa)\cos(\omega t-(s+1)Ka)\rangle
+\end{align}$$
+We have:
+$$\begin{align}
+2\langle \cos(\omega t-sKa)\cos(\omega t-(s+1)Ka) \rangle & = 2 \frac{1}{T}\int_{0}^{T}dt\cos(\omega t-sKa)\cos(\omega t-(s+1)Ka)  \\
+ & = \frac{1}{T}\int dt(\cos(-Ka)+\cos(2\omega t-(2s+1)Ka)) \\
+ & = \frac{1}{T }T \cos(Ka) \\
+ & = \cos(Ka)
+\end{align}$$
+Therefore:
+$$\langle (u_{s}-u_{s+1})^{2}\rangle= u^{2}-u^{2}\cos(Ka)$$
+Then:
+$$\langle E \rangle= \frac{1}{2}M\sum_{s}  \frac{1}{2}u^{2}\omega^{2}+ \frac{1}{2}C\sum_{s}u^{2}(1-\cos(Ka))= \frac{1}{4}MNu^{2}\omega^{2}+ \frac{1}{2}CNu^{2}(1-\cos(Ka))$$
+Average over atoms to to get:
+$$\frac{\langle E \rangle}{N}= \frac{1}{4}Mu^{2}\omega^{2}+ \frac{1}{2}Cu^{2}(1-\cos(Ka))= \frac{1}{2}Mu^{2}\omega^{2}$$
+
+# Kittel 4.2
+
+We have:
+$$M \frac{d^{2}u_{s}}{dt^{2}}=C(u_{s+1}+u_{s-1}-2u_{s})$$
+We approximate the righthand side. Under long wavelength limit, we have:
+$$\begin{align}
+ & u_{s+1}  \approx u_{s}+ \frac{\partial u_{s}}{\partial x}a+ \frac{1}{2} \frac{\partial^{2}u_{s}}{\partial x^{2}}a^{2},\ u_{s-1}\approx u_{s}- \frac{\partial u_{s}}{\partial x}a + \frac{1}{2} \frac{\partial^{2}u_{s}}{\partial x^{2}}a^{2} \\
+\implies & u_{s+1}+u_{s-1}-2u_{s}=(u_{s+1}-u_{s})-(u_{s}-u_{s-1})\approx \frac{\partial^{2}u_{s}}{\partial x^{2}}a^{2}
+\end{align}$$
+Therefore, the approximated equation is:
+$$M \frac{d^{2}u_{s}}{dt^{2}}=Ca^{2} \frac{\partial^{2}u_{s}}{\partial x^{2}}$$
+Suppress the subscript to get:
+$$\frac{d^{2}u}{dt^{2}}=v^{2} \frac{\partial^{2}u}{\partial x^{2}},\ v^{2}= \frac{Ca^{2}}{M}$$
