@@ -87,7 +87,10 @@ $$\begin{align}
 ## (3)
 
 We know $\epsilon$. So it's easy to compute:
-$$F= \frac{1}{2}C_{11}\tan ^{4}\theta+ C_{44}\tan ^{2}\theta$$
+$$\begin{align}
+F & = \frac{1}{2}C_{11}\left( \frac{1}{4}\tan ^{4}\theta \right)+C_{12} \cdot 0 \cdot \frac{1}{2}\tan ^{2} \theta+C_{44} \frac{1}{4}\tan ^{2}\theta  \\
+& =   \frac{1}{8}C_{11}\tan ^{4}\theta+ \frac{1}{4}C_{44}\tan ^{2}\theta
+\end{align}$$
 # Kittel 4.1
 ## (a)
 
@@ -113,7 +116,8 @@ $$\begin{align}
 Next, we compute:
 $$\begin{align}
 \langle (u_{s}-u_{s+1})^{2}\rangle & = u^{2}\langle (\cos(\omega t-sKa)-\cos(\omega t-(s+1)Ka))^{2}\rangle \\
- & = u^{2}\langle \cos ^{2}(\omega t-sKa)\rangle+ u^{2}\langle \cos ^{2}(\omega t-(s+1)Ka)\rangle- 2u^{2}\langle \cos(\omega t-sKa)\cos(\omega t-(s+1)Ka)\rangle \\
+ & = u^{2}\langle \cos ^{2}(\omega t-sKa)\rangle+ u^{2}\langle \cos ^{2}(\omega t-(s+1)Ka)\rangle \\
+ & -2u^{2}\langle \cos(\omega t-sKa)\cos(\omega t-(s+1)Ka)\rangle \\
  & = \frac{1}{2}u^{2}+ \frac{1}{2}u^{2}-2u^{2}\langle \cos(\omega t-sKa)\cos(\omega t-(s+1)Ka)\rangle
 \end{align}$$
 We have:

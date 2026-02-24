@@ -985,7 +985,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 200,
+    "collapsed": true
   },
   "right": {
     "id": "9003d078f8dbc4ed",
@@ -1085,8 +1086,9 @@
   },
   "active": "c1016c775d1b938f",
   "lastOpenFiles": [
-    "Notes/固体形变.md",
     "Homework/Physics 463/Physics 463 homework 4.md",
+    "Experimental/Reflections.md",
+    "Notes/固体形变.md",
     "Notes/量子统计力学基础.md",
     "Homework/Physics 463/Physics 463 homework 3.md",
     "Notes/Stationary perturbation.md",
@@ -1095,7 +1097,6 @@
     "Reading notes/Doping-induced spin reorientation in Kagome magnet TmMn6Sn6.md",
     "Reading notes/Weyl and Dirac semimetals in three-dimensional solids.md",
     "Notes/离散对称性.md",
-    "Experimental/Reflections.md",
     "Reading notes/Unconventional magnetic oscillations in a kagome Mott insulator.md",
     "Notes/Untitled 4.md",
     "Notes/Untitled 6.md",
