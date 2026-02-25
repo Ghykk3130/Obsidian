@@ -909,12 +909,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Reading notes/Weyl and Dirac semimetals in three-dimensional solids.md",
+                "file": "Notes/Magnetic ordering.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Weyl and Dirac semimetals in three-dimensional solids"
+              "title": "Magnetic ordering"
             }
           }
         ],
@@ -970,7 +970,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "magnetic ordering",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -981,11 +981,13 @@
               "title": "Search"
             }
           }
-        ]
+        ],
+        "currentTab": 3
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 200,
+    "collapsed": true
   },
   "right": {
     "id": "9003d078f8dbc4ed",
@@ -1085,14 +1087,14 @@
   },
   "active": "c1016c775d1b938f",
   "lastOpenFiles": [
+    "Experimental/Reflections.md",
+    "Reading notes/Weyl and Dirac semimetals in three-dimensional solids.md",
     "Reading notes/Berry phase effects on electronic properties.md",
     "Reading notes/Doping-induced spin reorientation in Kagome magnet TmMn6Sn6.md",
     "Reading notes/Unconventional magnetic oscillations in a kagome Mott insulator.md",
     "Reading notes/Weyl semimetal in a topological insulator multilayer.md",
-    "Reading notes/Weyl and Dirac semimetals in three-dimensional solids.md",
     "Homework/Physics 463/Physics 463 homework 4.md",
     "Notes/固体形变.md",
-    "Experimental/Reflections.md",
     "Notes/量子统计力学基础.md",
     "Homework/Physics 463/Physics 463 homework 3.md",
     "Notes/Stationary perturbation.md",

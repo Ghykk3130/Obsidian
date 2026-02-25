@@ -1,13 +1,15 @@
 # 1. Brillouin函数与paramagnet
 
-考虑磁场中的spin-j粒子。spin之间没有coupling，alignment完全由磁场操纵，为paramagnet。
+考虑磁场中的角动量为j的粒子。角动量之间之间没有coupling，alignment完全由磁场操纵，为paramagnet。
 
 令磁场平行于z-axis，为quantization axis。我们写出Hamiltonian：
-$$H=-\mu_{B}g\mathbf{J}\cdot \mathbf{B}$$
-我们在正则系综计算该粒子构成晶体的平均magnetization。正则系综有density operator：
-$$\rho= \frac{e^{-\beta H}}{Z}\ket{n} \bra{n} $$
+$$H=H_{0}-\mu_{B}g\mathbf{J}\cdot \mathbf{B}=H_{0}-\mu_{B}gJ_{z}B$$
+其中$\mathbf{J}$为无量纲角动量算子。可以将$-\mu_{B}g\mathbf{J}\cdot \mathbf{B}$当作微扰。若角动量本征空间简并，那么我们进行简并微扰。显然$\ket{n,l,j,m_{j}}$可以对角化微扰。那么我们可以计算一阶能量修正：
+$$\bra{n,l,j,m_{j}} (-\mu_{B}gJ_{z}B)\ket{n,l,j,m_{j}} = -\mu_{B}gm_{j}B $$
+接下来我们作统计力学研究。正则系综有density operator：
+$$\rho= \sum_{n}\frac{e^{-\beta H}}{Z}\ket{n} \bra{n} $$
 其中$\ket{n}$是Hamiltonian本征态。那么此处显然：
-$$\rho= \frac{1}{Z}\exp\left( \beta \mu_{B}gBm_{j} \right)\ket{m_{j}} \bra{m_{j}} $$
+$$\rho=\sum_{n,l,j,m_{j}} \frac{1}{Z}\exp\left( \beta \mu_{B}gBm_{j} \right)\ket{n,l,j,m_{j}} \bra{n,l,j,m_{j}} $$
 容易得到：
 $$\begin{align}
   \langle m_{j} \rangle & = \frac{1}{Z}\sum_{m_{j}=-j}^j m_{j}\exp(\beta \mu_{B}Bgm_{j}) \\
@@ -249,5 +251,9 @@ $$\begin{align}
  & \frac{\partial F}{\partial M}=2a_{0}(T-T_{C})M+4bM^{3}=0\implies M=0\text{ or }\pm \sqrt{ - \frac{a_{0}}{2b}(T-T_{C}) }
 \end{align}$$
 第二个解只在$T<T_{C}$时存在。显然在$T<T_{C}$，只有这两个解是极小值。
+
+# 6. Van Vleck paramagnetism
+
+
 
 
