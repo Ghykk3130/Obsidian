@@ -909,12 +909,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Notes/Magnetic ordering.md",
+                "file": "Notes/二次量子化.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Magnetic ordering"
+              "title": "二次量子化"
             }
           }
         ],
@@ -970,7 +970,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "magnetic ordering",
+                "query": "二次量子化",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -981,7 +981,8 @@
               "title": "Search"
             }
           }
-        ]
+        ],
+        "currentTab": 3
       }
     ],
     "direction": "horizontal",
@@ -1086,8 +1087,8 @@
   },
   "active": "c1016c775d1b938f",
   "lastOpenFiles": [
-    "Notes/Stationary perturbation.md",
     "Notes/Magnetic ordering.md",
+    "Notes/Stationary perturbation.md",
     "Experimental/Reflections.md",
     "Reading notes/Weyl and Dirac semimetals in three-dimensional solids.md",
     "Reading notes/Berry phase effects on electronic properties.md",
