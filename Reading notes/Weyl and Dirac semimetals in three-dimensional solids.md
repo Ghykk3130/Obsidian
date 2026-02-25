@@ -170,10 +170,27 @@ C & = \frac{1}{2\pi} \int d\mathbf{S}\cdot \boldsymbol{\Omega} \\
 \end{align}$$
 # 3. AHE
 
-我们先来看quantum Hall effect。考虑semiclassical EOM:
-$${\mathbf{v}}= \frac{1}{\hbar} \frac{\partial\epsilon}{\partial \mathbf{k}}-  \dot{\mathbf{k}}\times \boldsymbol{\Omega},\ \dot{\mathbf{k}}= -\frac{1}{\hbar}e\mathbf{E}$$
+>[!Quote] Quantum Hall effect
+>考虑一个没有fermisurface的样本。那么能带全满。样本有空间反转对称性和时间反演对称性，所以$\boldsymbol{\Omega}=0$。加上外场后有：
+>$$v= \frac{1}{\hbar} \frac{\partial\epsilon}{\partial \mathbf{k}},\ \dot{\mathbf{k}}= \frac{1}{\hbar}e\mathbf{E}+ e\mathbf{v}\times \mathbf{B},\ e\text{ is signed.}$$
+
+
+>[!Quote] Chern insulator
+考虑一个没有fermi surface的样本。样本时间反演对称性破缺，例如有内部磁化。那么其能带是全满的。考虑semiclassical EOM:
+$${\mathbf{v}}= \frac{1}{\hbar} \frac{\partial\epsilon}{\partial \mathbf{k}}-  \dot{\mathbf{k}}\times \boldsymbol{\Omega},\ \dot{\mathbf{k}}= \frac{1}{\hbar}e\mathbf{E},\ e\text{ is signed.}$$
 那么容易得到：
-$${\mathbf{v}}= \frac{1}{\hbar} \frac{\partial\epsilon}{\partial \mathbf{k}}+ \frac{1}{\hbar}e\mathbf{E}\times \Omega$$
+$${\mathbf{v}}= \frac{1}{\hbar} \frac{\partial\epsilon}{\partial \mathbf{k}}- \frac{1}{\hbar}e^{2}\mathbf{E}\times \Omega$$
+对于全满能带，我们有：
+$$\frac{1}{(2\pi)^{2}}\int_{\text{BZ}} d^{2}k \frac{1}{\hbar} \frac{\partial\epsilon}{\partial \mathbf{k}}= \frac{1}{(2\pi)^{2}}\int_{\partial\text{BZ}} dl   \hat{\mathbf{n}} \cdot \frac{1}{\hbar} \epsilon =0$$
+因为$\epsilon$在边界上相等，而$\hat{\mathbf{n}}$相反。所以$\frac{1}{\hbar} \frac{\partial\epsilon}{\partial \mathbf{k}}$没有电流贡献。所以longitudinal方向不导电，称为Chern insulator。但是Hall电流为：
+>$$\begin{align}
+\mathbf{j} & = - \frac{1}{\hbar} \frac{1}{(2\pi)^{2}}  \int_{\text{BZ}}d^{2}k e^{2}\mathbf{E}\times \boldsymbol{\Omega} \\ & = \frac{1}{\hbar} \frac{1}{(2\pi)^{2}}\int_{\text{BZ}}d^{2}k e^{2}\boldsymbol{\Omega} \times \mathbf{E}
+\end{align}$$
+若$\boldsymbol{\Omega}=\Omega  \hat{\mathbf{z}},\ \mathbf{E}=E  \hat{\mathbf{x}}$，则有：
+$$j_{y}= \frac{1}{\hbar} \frac{1}{(2\pi)^{2}}\int_{\text{BZ}}d^{2}k e^{2}\Omega_{z} E_{x}= \frac{e^{2}}{\hbar} \frac{C}{2\pi} E_{x}= \frac{e^{2}}{h}CE_{x}$$
+所以Hall conductivity为$\sigma_{yx}= \frac{e^{2}}{h}C$。因为时间反演对称性系统里面，$\boldsymbol{\Omega}(\mathbf{k})=-\boldsymbol{\Omega}(-\mathbf{k})$。所以当系统时间反演对称性破缺时就有可能有integer quantum hall effect。
+
+
  
 
 
