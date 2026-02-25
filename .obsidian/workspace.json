@@ -909,12 +909,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Notes/固体形变.md",
+                "file": "Reading notes/Weyl and Dirac semimetals in three-dimensional solids.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "固体形变"
+              "title": "Weyl and Dirac semimetals in three-dimensional solids"
             }
           }
         ],
@@ -985,8 +985,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200,
-    "collapsed": true
+    "width": 200
   },
   "right": {
     "id": "9003d078f8dbc4ed",
@@ -1086,26 +1085,26 @@
   },
   "active": "c1016c775d1b938f",
   "lastOpenFiles": [
+    "Reading notes/Berry phase effects on electronic properties.md",
+    "Reading notes/Doping-induced spin reorientation in Kagome magnet TmMn6Sn6.md",
+    "Reading notes/Unconventional magnetic oscillations in a kagome Mott insulator.md",
+    "Reading notes/Weyl semimetal in a topological insulator multilayer.md",
+    "Reading notes/Weyl and Dirac semimetals in three-dimensional solids.md",
     "Homework/Physics 463/Physics 463 homework 4.md",
-    "Experimental/Reflections.md",
     "Notes/固体形变.md",
+    "Experimental/Reflections.md",
     "Notes/量子统计力学基础.md",
     "Homework/Physics 463/Physics 463 homework 3.md",
     "Notes/Stationary perturbation.md",
     "Notes/Magnetic ordering.md",
     "Notes/Solid state.md",
-    "Reading notes/Doping-induced spin reorientation in Kagome magnet TmMn6Sn6.md",
-    "Reading notes/Weyl and Dirac semimetals in three-dimensional solids.md",
     "Notes/离散对称性.md",
-    "Reading notes/Unconventional magnetic oscillations in a kagome Mott insulator.md",
     "Notes/Untitled 4.md",
     "Notes/Untitled 6.md",
     "Notes/Untitled 1.md",
-    "Reading notes/Weyl semimetal in a topological insulator multilayer.md",
     "Reading notes/Topological properties and dynamics of magnetic skyrmions.md",
     "Reading notes/Electrical resistance of ferromagnetic metals.md",
     "Reading notes/Dynamics and critical currents in fast superconducting vortices at high pulsed magnetic fields.md",
-    "Reading notes/Berry phase effects on electronic properties.md",
     "Notes/Untitled 5.md",
     "Notes/路径积分.md",
     "Experimental/Wye-Delta Transformation.md",

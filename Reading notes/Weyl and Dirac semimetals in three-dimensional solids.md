@@ -168,7 +168,13 @@ C & = \frac{1}{2\pi} \int d\mathbf{S}\cdot \boldsymbol{\Omega} \\
  & = \frac{1}{2\pi}\int_{S_{1}}d\mathbf{S}\cdot \boldsymbol{\Omega} + \frac{1}{2\pi}\int_{S_{2}} d\mathbf{S}\cdot \boldsymbol{\Omega} \\
  & = C_{1}-C_{0}\neq 0
 \end{align}$$
+# 3. AHE
 
+我们先来看quantum Hall effect。考虑semiclassical EOM:
+$${\mathbf{v}}= \frac{1}{\hbar} \frac{\partial\epsilon}{\partial \mathbf{k}}-  \dot{\mathbf{k}}\times \boldsymbol{\Omega},\ \dot{\mathbf{k}}= -\frac{1}{\hbar}e\mathbf{E}$$
+那么容易得到：
+$${\mathbf{v}}= \frac{1}{\hbar} \frac{\partial\epsilon}{\partial \mathbf{k}}+ \frac{1}{\hbar}e\mathbf{E}\times \Omega$$
+ 
 
 
 
