@@ -254,6 +254,19 @@ $$\begin{align}
 
 # 6. Van Vleck paramagnetism
 
+刚刚我们计算了一阶微扰。现在计算二阶微扰。考虑：
+$$\begin{align}
+\Delta E^{(2)}_{n,l,j,m_{j}} & = (g\mu_{B})^{2} \sum_{n^{'}\neq n,\ m_{j}^{'}\neq m_{j}} \frac{|\bra{n,l,j,m_{j}} J_{z}B\ket{n^{'},l^{'},j^{'},m_{j}^{'}} |^{2}}{E_{n,l,j,m_{j}}-E_{n^{'},l^{'},j^{'},m_{j}^{'}}}   
+\end{align}$$
+对于非基态，分母有正有负，加起来贡献不显著。但是若$\ket{n,l,j,m_{j}}$是基态的话，则：
+$$\Delta E ^{(2)}_{0,0,j,m_{j}}=(g\mu_{B})^{2}B^{2}\sum_{n^{'}\neq 0,\ m_{j}^{'}\neq m_{j}} \frac{|\bra{0,0,j,m_{j}}J_{z}\ket{n^{'},l^{'},j^{'},m^{'}_{j}} |^{2} }{E_{0,0,j,m_{j}}-E_{n^{'},l^{'},j^{'},m_{j}^{'}}}< 0$$
+所以可以得到：
+$$M= - \frac{\partial \Delta E_{0,0,j,m_{j}}^{(2)}}{\partial B} \frac{N}{V}= 2B (g\mu_{B})^{2} \frac{N}{V}\sum_{n^{'}\neq 0,\ m_{j}^{'}\neq m_{j}} \frac{|\bra{0,0,j,m_{j}}J_{z}\ket{n^{'},l^{'},j^{'},m^{'}_{j}} |^{2} }{E_{n^{'},l^{'},j^{'},m_{j}^{'}}-E_{0,0,j,m_{j}}} \propto B$$
+其中$N$是由于我们算$N$个粒子的Zeeman term的总energy shift。所以：
+$$\chi= \frac{\partial M}{\partial B}=2 (g\mu_{B})^{2} \frac{N}{V}\sum_{n^{'}\neq 0,\ m_{j}^{'}\neq m_{j}} \frac{|\bra{0,0,j,m_{j}}J_{z}\ket{n^{'},l^{'},j^{'},m^{'}_{j}} |^{2} }{E_{n^{'},l^{'},j^{'},m_{j}^{'}}-E_{0,0,j,m_{j}}}> 0$$
+称为van Vleck顺磁。注意这里我们没有作统计力学研究，是因为我们假设系统处于基态的纯系综，即我们只考虑基态的paramagnetism。
+
+
 
 
 

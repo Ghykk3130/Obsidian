@@ -981,8 +981,7 @@
               "title": "Search"
             }
           }
-        ],
-        "currentTab": 3
+        ]
       }
     ],
     "direction": "horizontal",
@@ -1087,6 +1086,8 @@
   },
   "active": "c1016c775d1b938f",
   "lastOpenFiles": [
+    "Notes/Stationary perturbation.md",
+    "Notes/Magnetic ordering.md",
     "Experimental/Reflections.md",
     "Reading notes/Weyl and Dirac semimetals in three-dimensional solids.md",
     "Reading notes/Berry phase effects on electronic properties.md",
@@ -1097,8 +1098,6 @@
     "Notes/固体形变.md",
     "Notes/量子统计力学基础.md",
     "Homework/Physics 463/Physics 463 homework 3.md",
-    "Notes/Stationary perturbation.md",
-    "Notes/Magnetic ordering.md",
     "Notes/Solid state.md",
     "Notes/离散对称性.md",
     "Notes/Untitled 4.md",
