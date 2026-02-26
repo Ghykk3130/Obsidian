@@ -1,27 +1,45 @@
 # 1. Brillouin函数与paramagnet
 
-考虑磁场中的总角动量为j的粒子。这些角动量只能来自于未填充的能级电子角动量之和。各个粒子的角动量$j$之间没有coupling，alignment完全由磁场操纵，为paramagnet。
+考虑磁场中的总角动量为j的离子。这些角动量只能来自于未填充的能级电子角动量之和。各个离子的角动量$j$之间没有coupling，alignment完全由磁场操纵，为paramagnet。
 
-令磁场平行于z-axis，为quantization axis。我们写出Hamiltonian：
-$$H=H_{0}-\mu_{B}g\mathbf{J}\cdot \mathbf{B}=H_{0}-\mu_{B}gJ_{z}B$$
-其中$\mathbf{J}$为无量纲角动量算子。可以将$-\mu_{B}g\mathbf{J}\cdot \mathbf{B}$当作微扰。若角动量本征空间简并，那么我们进行简并微扰。显然$\ket{n,l,j,m_{j}}$可以对角化微扰。那么我们可以计算一阶能量修正：
-$$\bra{n,l,j,m_{j}} (-\mu_{B}gJ_{z}B)\ket{n,l,j,m_{j}} = -\mu_{B}gm_{j}B $$
+那么可以把所有电子能量加起来写出Hamiltonian：
+$$\begin{align}
+H & = \sum_{i} \left(\frac{|\mathbf{p}_{i}-|e|\mathbf{A}|^{2}}{2m}+V_{i}\right) -g(-\mu_{B}) \frac{1}{\hbar}\mathbf{S}\cdot \mathbf{B}
+\end{align}$$
+其中$\mathbf{S}=\sum_{i}\mathbf{S}_{i}$为总角动量算子。若$\mathbf{B}$为恒场，我们取：
+$$\mathbf{A}= \frac{1}{2}\mathbf{B}\times \mathbf{r}$$
+那么：
+$$\begin{align}
+H & = \sum_{i}\left(  \frac{p_{i}^{2}}{2m}+ \frac{e^{2}A^{2}}{2m}- \frac{|e|\mathbf{p}_{i}\cdot \mathbf{A}}{m}+V_{i} \right)+ g\mu_{B} \frac{1}{\hbar}\mathbf{S}\cdot \mathbf{B} \\
+ & = \sum_{i} \left(  \frac{p^{2}_{i}}{2m}+V_{i} \right)+ \sum_{i} \frac{e^{2}}{8m}(\mathbf{B}\times \mathbf{r}_{i})- \sum_{i} \frac{|e|}{2m}\mathbf{p}_{i}\cdot(\mathbf{B}\times \mathbf{r}_{i})+g\mu_{B} \frac{1}{\hbar}\mathbf{S}\cdot \mathbf{B} \\
+ & =  \sum_{i} \left(  \frac{p^{2}_{i}}{2m}+V_{i} \right)+ \sum_{i} \frac{e^{2}}{8m}(\mathbf{B}\times \mathbf{r}_{i})+ \mu_{B} \frac{1}{\hbar}(\mathbf{L}+g\mathbf{S})\cdot \mathbf{B}
+\end{align}$$
+我们先不考虑$\sum_{i} \frac{e^{2}}{8m}(\mathbf{B}\times \mathbf{r}_{i})$，其强度比Zeeman能更小。令磁场平行于z-axis，为quantization axis。我们写出Hamiltonian：
+$$\begin{align}
+H & = \sum_{i}\left( \frac{p^{2}_{i}}{2m}+V_{i} \right) + \mu_{B} \frac{1}{\hbar}(\mathbf{L}+g\mathbf{S})\cdot \mathbf{B} \\
+ & = \sum_{i}\left( \frac{p_{i}^{2}}{2m}+V_{i} \right)+\mu_{B} \frac{1}{\hbar}g_{j}\mathbf{J}\cdot \mathbf{B}
+\end{align}$$
+或者将采用无量纲角动量算子$\mathbf{J}$，写为：
+$$H=\sum_{i}\left( \frac{p_{i}^{2}}{2m}+V_{i} \right)+\mu_{B}g_{j}\mathbf{J}\cdot \mathbf{B}$$
+
+可以将$\mu_{B}g\mathbf{J}\cdot \mathbf{B}$当作微扰。若角动量本征空间简并，那么我们进行简并微扰。显然$\ket{n,l,j,m_{j}}$可以对角化微扰。那么我们可以计算一阶能量修正：
+$$\bra{n,l,j,m_{j}} \mu_{B}gJ_{z}B\ket{n,l,j,m_{j}} = \mu_{B}gm_{j}B $$
 接下来我们作统计力学研究。正则系综有density operator：
 $$\rho= \sum_{n}\frac{e^{-\beta H}}{Z}\ket{n} \bra{n} $$
 其中$\ket{n}$是Hamiltonian本征态。那么此处显然：
-$$\rho=\sum_{n,l,j,m_{j}} \frac{1}{Z}\exp\left( \beta \mu_{B}gBm_{j} \right)\ket{n,l,j,m_{j}} \bra{n,l,j,m_{j}} $$
+$$\rho=\sum_{n,l,j,m_{j}} \frac{1}{Z}\exp\left(- \beta \mu_{B}gBm_{j} \right)\ket{n,l,j,m_{j}} \bra{n,l,j,m_{j}} $$
 容易得到：
 $$\begin{align}
   \langle m_{j} \rangle & = \frac{1}{Z}\sum_{m_{j}=-j}^j m_{j}\exp(\beta \mu_{B}Bgm_{j}) \\
- & =  \frac{\partial}{\partial(\beta \mu_{B}Bg)}\ln Z
+ & =  -\frac{\partial}{\partial(\beta \mu_{B}Bg)}\ln Z
 \end{align}$$
 其中$g$为Lande g factor, 是$j$的函数。令粒子数体密度为$n$。则：
-$$M=n\mu_{B}g\langle m_{j}\rangle=n \frac{\partial}{\partial (\beta B)}\ln Z$$
+$$M=n\mu_{B}g\langle m_{j}\rangle=-n \frac{\partial}{\partial (\beta B)}\ln Z$$
 我们容易计算：
-$$\begin{align} Z & = \sum_{m_{j}}\exp(\beta \mu_{B}gBm_{j}) \\
- & = \frac{\exp(-\beta \mu_{B}Bj)}{1-\exp(\beta \mu_{B}gB)}- \frac{\exp(\beta \mu_{B}gB(j+1))}{1-\exp(\beta \mu_{B}gB)} \\
- & = \frac{\exp\left( \beta \mu_{B}gB \frac{1}{2} \right)\left( \exp\left( -\beta \mu_{B}gB\left( j+ \frac{1}{2} \right) \right)-\exp\left( \beta \mu_{B}gB\left( j+ \frac{1}{2} \right) \right) \right)}{\exp\left( \beta \mu_{B}gB \frac{1}{2} \right)\left( \exp\left( -\beta \mu_{B}gB \frac{1}{2} \right)-\exp\left( \beta \mu_{B}gB \frac{1}{2} \right) \right) } \\
- & = \frac{\sinh\left( \beta \mu_{B}gB\left( j+ \frac{1}{2} \right) \right)}{\sinh\left( \beta \mu_{B}B \frac{1}{2} \right)}
+$$\begin{align} Z & = \sum_{m_{j}}\exp(-\beta \mu_{B}gBm_{j}) \\
+ & = \frac{\exp(\beta \mu_{B}Bj)}{1-\exp(\beta \mu_{B}gB)}- \frac{\exp(-\beta \mu_{B}gB(j+1))}{1-\exp(\beta \mu_{B}gB)} \\
+ & = \frac{\exp\left( -\beta \mu_{B}gB \frac{1}{2} \right)\left( \exp\left( -\beta \mu_{B}gB\left( j+ \frac{1}{2} \right) \right)-\exp\left( \beta \mu_{B}gB\left( j+ \frac{1}{2} \right) \right) \right)}{\exp\left( -\beta \mu_{B}gB \frac{1}{2} \right)\left( \exp\left( \beta \mu_{B}gB \frac{1}{2} \right)-\exp\left( -\beta \mu_{B}gB \frac{1}{2} \right) \right) } \\
+ & = -\frac{\sinh\left( \beta \mu_{B}gB\left( j+ \frac{1}{2} \right) \right)}{\sinh\left( \beta \mu_{B}B \frac{1}{2} \right)}
 \end{align}$$
 那么：
 $$\begin{align}
@@ -269,6 +287,7 @@ $$\chi= \frac{\partial M}{\partial B}=2 (g\mu_{B})^{2} \frac{N}{V}\sum_{\alpha^{
 称为van Vleck顺磁。注意这里我们没有作统计力学研究，是因为我们假设系统处于基态的纯系综，即我们只考虑基态的paramagnetism。
 
 原则上来讲，我们应该将valence占据一个反平行于磁场的电子，内部全部充满作为$\ket{\alpha}$。因为更低轨道的energy splitting $E_{\alpha}-E_{\alpha^{'}}$太大，不足以贡献显著效果。
+# 7. Langevin diamagnetism
 
 
 
