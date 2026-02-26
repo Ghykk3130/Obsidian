@@ -12,3 +12,7 @@
 - M v.s. T goes up because of spin flop.
 - M v.s. H goes down because of Van Vleck.
 - Noise from contact is Johnson noise.
+
+# To do
+- Compare the power law of the scaling factors.
+- Measure whether the diamagnetism susceptibility is independent of the temperature.
