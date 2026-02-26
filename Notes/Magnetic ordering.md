@@ -1,6 +1,6 @@
 # 1. Brillouin函数与paramagnet
 
-考虑磁场中的角动量为j的粒子。角动量之间之间没有coupling，alignment完全由磁场操纵，为paramagnet。
+考虑磁场中的总角动量为j的粒子。这些角动量只能来自于未填充的能级电子角动量之和。各个粒子的角动量$j$之间没有coupling，alignment完全由磁场操纵，为paramagnet。
 
 令磁场平行于z-axis，为quantization axis。我们写出Hamiltonian：
 $$H=H_{0}-\mu_{B}g\mathbf{J}\cdot \mathbf{B}=H_{0}-\mu_{B}gJ_{z}B$$
@@ -256,15 +256,20 @@ $$\begin{align}
 
 刚刚我们计算了一阶微扰。现在计算二阶微扰。考虑：
 $$\begin{align}
-\Delta E^{(2)}_{n,l,j,m_{j}} & = (g\mu_{B})^{2} \sum_{n^{'}\neq n,\ m_{j}^{'}\neq m_{j}} \frac{|\bra{n,l,j,m_{j}} J_{z}B\ket{n^{'},l^{'},j^{'},m_{j}^{'}} |^{2}}{E_{n,l,j,m_{j}}-E_{n^{'},l^{'},j^{'},m_{j}^{'}}}   
+\Delta E^{(2)}_{\alpha} & = (g\mu_{B})^{2} \sum_{\alpha^{'}\neq \alpha} \frac{|\bra{\alpha} (L_{z}+gS_{z})B\ket{\alpha^{'}} |^{2}}{E_{\alpha}-E_{\alpha^{'}}}   
 \end{align}$$
-对于非基态，分母有正有负，加起来贡献不显著。但是若$\ket{n,l,j,m_{j}}$是基态的话，则：
-$$\Delta E ^{(2)}_{0,0,j,m_{j}}=(g\mu_{B})^{2}B^{2}\sum_{n^{'}\neq 0,\ m_{j}^{'}\neq m_{j}} \frac{|\bra{0,0,j,m_{j}}J_{z}\ket{n^{'},l^{'},j^{'},m^{'}_{j}} |^{2} }{E_{0,0,j,m_{j}}-E_{n^{'},l^{'},j^{'},m_{j}^{'}}}< 0$$
+其中，$\ket{\alpha},\ket{\alpha^{'}}$是多电子$\ket{n,l,j,m_{j}}$构成的Fock态。我们采用非简并二阶微扰，因为unperturbed Hamiltonian包含LS coupling，简并已经被移除。
+
+对于非基态，分母有正有负，加起来贡献不显著。但是若$\ket{\alpha}$是基态的话，则：
+$$\Delta E ^{(2)}_{\alpha}< 0$$
 所以可以得到：
-$$M= - \frac{\partial \Delta E_{0,0,j,m_{j}}^{(2)}}{\partial B} \frac{N}{V}= 2B (g\mu_{B})^{2} \frac{N}{V}\sum_{n^{'}\neq 0,\ m_{j}^{'}\neq m_{j}} \frac{|\bra{0,0,j,m_{j}}J_{z}\ket{n^{'},l^{'},j^{'},m^{'}_{j}} |^{2} }{E_{n^{'},l^{'},j^{'},m_{j}^{'}}-E_{0,0,j,m_{j}}} \propto B$$
+$$M= - \frac{\partial \Delta E_{\alpha}^{(2)}}{\partial B} \frac{N}{V}= 2B (g\mu_{B})^{2} \frac{N}{V}\sum_{\alpha^{'}\neq \alpha} \frac{|\bra{\alpha}J_{z}\ket{\alpha^{'}} |^{2} }{E_{\alpha}-E_{\alpha^{'}}} \propto B$$
 其中$N$是由于我们算$N$个粒子的Zeeman term的总energy shift。所以：
-$$\chi= \frac{\partial M}{\partial B}=2 (g\mu_{B})^{2} \frac{N}{V}\sum_{n^{'}\neq 0,\ m_{j}^{'}\neq m_{j}} \frac{|\bra{0,0,j,m_{j}}J_{z}\ket{n^{'},l^{'},j^{'},m^{'}_{j}} |^{2} }{E_{n^{'},l^{'},j^{'},m_{j}^{'}}-E_{0,0,j,m_{j}}}> 0$$
+$$\chi= \frac{\partial M}{\partial B}=2 (g\mu_{B})^{2} \frac{N}{V}\sum_{\alpha^{'}\neq \alpha} \frac{|\bra{\alpha}J_{z}\ket{\alpha^{'}} |^{2} }{E_{\alpha}-E_{\alpha^{'}}}> 0$$
 称为van Vleck顺磁。注意这里我们没有作统计力学研究，是因为我们假设系统处于基态的纯系综，即我们只考虑基态的paramagnetism。
+
+原则上来讲，我们应该将valence占据一个反平行于磁场的电子，内部全部充满作为$\ket{\alpha}$。因为更低轨道的energy splitting $E_{\alpha}-E_{\alpha^{'}}$太大，不足以贡献显著效果。
+
 
 
 
