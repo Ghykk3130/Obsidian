@@ -999,8 +999,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200,
-    "collapsed": true
+    "width": 200
   },
   "right": {
     "id": "9003d078f8dbc4ed",
@@ -1100,15 +1099,15 @@
   },
   "active": "a23cd78def318bef",
   "lastOpenFiles": [
-    "Notes/二次量子化.md",
+    "Reading notes/Doping-induced spin reorientation in Kagome magnet TmMn6Sn6.md",
     "Notes/Magnetic ordering.md",
+    "Notes/二次量子化.md",
     "Notes/精细结构.md",
     "Notes/Spherical tensor.md",
     "Notes/Stationary perturbation.md",
     "Experimental/Reflections.md",
     "Reading notes/Weyl and Dirac semimetals in three-dimensional solids.md",
     "Reading notes/Berry phase effects on electronic properties.md",
-    "Reading notes/Doping-induced spin reorientation in Kagome magnet TmMn6Sn6.md",
     "Reading notes/Unconventional magnetic oscillations in a kagome Mott insulator.md",
     "Reading notes/Weyl semimetal in a topological insulator multilayer.md",
     "Homework/Physics 463/Physics 463 homework 4.md",

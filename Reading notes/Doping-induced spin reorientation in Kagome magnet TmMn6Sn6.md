@@ -4,7 +4,7 @@ R166 一般指$RMn_{6}Sn_6$，其中$R$为稀土元素
 - $Mn$构成Kagome lattice层
 - $Mn$的Kagome lattice层间，要么隔着$Sn$层，要么隔着$Sn$和$R$混起来的层
 - $Sn_{3}$可以被doped称$Ga$
-
+注意到$Tm$电子排布为$[Xe]6s ^{2}5f^{13}$，具有一个电子的净磁矩，$Mn$电子排布为$[Ar]4s ^{2}3d^{5}$，具有五个电子的净磁矩。
 # Magnetic ordering
 
 离子自旋由未配对电子提供。内层电子总自旋为零。例如铁$[Ar]3d^{6}4s^{2}$，最外层$s$轨道tight binding成为conduction band。内层未配对的$6$个$d$上的电子之间全部是铁磁性耦合，加起来构成净磁矩。
