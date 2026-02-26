@@ -11,10 +11,10 @@ $$\mathbf{A}= \frac{1}{2}\mathbf{B}\times \mathbf{r}$$
 那么：
 $$\begin{align}
 H & = \sum_{i}\left(  \frac{p_{i}^{2}}{2m}+ \frac{e^{2}A^{2}}{2m}- \frac{|e|\mathbf{p}_{i}\cdot \mathbf{A}}{m}+V_{i} \right)+ g\mu_{B} \frac{1}{\hbar}\mathbf{S}\cdot \mathbf{B} \\
- & = \sum_{i} \left(  \frac{p^{2}_{i}}{2m}+V_{i} \right)+ \sum_{i} \frac{e^{2}}{8m}(\mathbf{B}\times \mathbf{r}_{i})- \sum_{i} \frac{|e|}{2m}\mathbf{p}_{i}\cdot(\mathbf{B}\times \mathbf{r}_{i})+g\mu_{B} \frac{1}{\hbar}\mathbf{S}\cdot \mathbf{B} \\
- & =  \sum_{i} \left(  \frac{p^{2}_{i}}{2m}+V_{i} \right)+ \sum_{i} \frac{e^{2}}{8m}(\mathbf{B}\times \mathbf{r}_{i})+ \mu_{B} \frac{1}{\hbar}(\mathbf{L}+g\mathbf{S})\cdot \mathbf{B}
+ & = \sum_{i} \left(  \frac{p^{2}_{i}}{2m}+V_{i} \right)+ \sum_{i} \frac{e^{2}}{8m}|\mathbf{B}\times \mathbf{r}_{i}|^{2}- \sum_{i} \frac{|e|}{2m}\mathbf{p}_{i}\cdot(\mathbf{B}\times \mathbf{r}_{i})+g\mu_{B} \frac{1}{\hbar}\mathbf{S}\cdot \mathbf{B} \\
+ & =  \sum_{i} \left(  \frac{p^{2}_{i}}{2m}+V_{i} \right)+ \sum_{i} \frac{e^{2}}{8m}|\mathbf{B}\times \mathbf{r}_{i}|^{2}+ \mu_{B} \frac{1}{\hbar}(\mathbf{L}+g\mathbf{S})\cdot \mathbf{B}
 \end{align}$$
-我们先不考虑$\sum_{i} \frac{e^{2}}{8m}(\mathbf{B}\times \mathbf{r}_{i})$，其强度比Zeeman能更小。令磁场平行于z-axis，为quantization axis。我们写出Hamiltonian：
+我们先不考虑$\sum_{i} \frac{e^{2}}{8m}|\mathbf{B}\times \mathbf{r}_{i}|^{2}$，其强度比Zeeman能更小。令磁场平行于z-axis，为quantization axis。我们写出Hamiltonian：
 $$\begin{align}
 H & = \sum_{i}\left( \frac{p^{2}_{i}}{2m}+V_{i} \right) + \mu_{B} \frac{1}{\hbar}(\mathbf{L}+g\mathbf{S})\cdot \mathbf{B} \\
  & = \sum_{i}\left( \frac{p_{i}^{2}}{2m}+V_{i} \right)+\mu_{B} \frac{1}{\hbar}g_{j}\mathbf{J}\cdot \mathbf{B}
@@ -274,20 +274,30 @@ $$\begin{align}
 
 刚刚我们计算了一阶微扰。现在计算二阶微扰。考虑：
 $$\begin{align}
-\Delta E^{(2)}_{\alpha} & = (g\mu_{B})^{2} \sum_{\alpha^{'}\neq \alpha} \frac{|\bra{\alpha} (L_{z}+gS_{z})B\ket{\alpha^{'}} |^{2}}{E_{\alpha}-E_{\alpha^{'}}}   
+\Delta E^{(2)}_{\alpha} & = \mu_{B}^{2} \sum_{\alpha^{'}\neq \alpha} \frac{|\bra{\alpha} (L_{z}+gS_{z})B\ket{\alpha^{'}} |^{2}}{E_{\alpha}-E_{\alpha^{'}}}   
 \end{align}$$
 其中，$\ket{\alpha},\ket{\alpha^{'}}$是多电子$\ket{n,l,j,m_{j}}$构成的Fock态。我们采用非简并二阶微扰，因为unperturbed Hamiltonian包含LS coupling，简并已经被移除。
 
 对于非基态，分母有正有负，加起来贡献不显著。但是若$\ket{\alpha}$是基态的话，则：
 $$\Delta E ^{(2)}_{\alpha}< 0$$
 所以可以得到：
-$$M= - \frac{\partial \Delta E_{\alpha}^{(2)}}{\partial B} \frac{N}{V}= 2B (g\mu_{B})^{2} \frac{N}{V}\sum_{\alpha^{'}\neq \alpha} \frac{|\bra{\alpha}J_{z}\ket{\alpha^{'}} |^{2} }{E_{\alpha}-E_{\alpha^{'}}} \propto B$$
+$$M= - \frac{\partial \Delta E_{\alpha}^{(2)}}{\partial B} \frac{N}{V}= 2B \mu_{B}^{2} \frac{N}{V}\sum_{\alpha^{'}\neq \alpha} \frac{|\bra{\alpha} L_{z}+gS_{z}\ket{\alpha^{'}}  |^{2} }{E_{\alpha}-E_{\alpha^{'}}} \propto B$$
 其中$N$是由于我们算$N$个粒子的Zeeman term的总energy shift。所以：
 $$\chi= \frac{\partial M}{\partial B}=2 (g\mu_{B})^{2} \frac{N}{V}\sum_{\alpha^{'}\neq \alpha} \frac{|\bra{\alpha}J_{z}\ket{\alpha^{'}} |^{2} }{E_{\alpha}-E_{\alpha^{'}}}> 0$$
 称为van Vleck顺磁。注意这里我们没有作统计力学研究，是因为我们假设系统处于基态的纯系综，即我们只考虑基态的paramagnetism。
 
-原则上来讲，我们应该将valence占据一个反平行于磁场的电子，内部全部充满作为$\ket{\alpha}$。因为更低轨道的energy splitting $E_{\alpha}-E_{\alpha^{'}}$太大，不足以贡献显著效果。
 # 7. Langevin diamagnetism
+
+考虑一个占据能级都是全满的离子。则总角动量为零。所以Zeeman项为零。则Hamiltonian为：
+$$H= \sum_{i}\left( \frac{p_{i}^{2}}{2m}+V_{i} \right)+\sum_{i} \frac{e^{2}}{8m}|\mathbf{B}\times \mathbf{r}_{i}|^{2}$$
+令$\mathbf{B}=B  \hat{\mathbf{z}}$。则$|\mathbf{B}\times \mathbf{r}_{i}|^{2}=B^{2}(x_{i}^{2}+y_{i}^{2})$。显然基态是non-degenerate的，因为不存在别的Fock态使得内层全满了。那么得到基态能量的一阶微扰：
+$$\Delta E^{(1)}_{\alpha}= \sum_{i} \frac{e^{2}}{8m}B^{2}\bra{\alpha} (x^{2}_{i}+y_{i}^{2})\ket{\alpha} $$
+那么可以得到：
+$$\begin{align}
+M & = - \frac{N}{V} \frac{\partial \Delta E^{(1)}_{\alpha}}{\partial B}=- \frac{N}{V} \frac{e^{2}B^{}}{4m}\sum_{i} \bra{\alpha} (x_{i}^{2}+y_{i}^{2})\ket{\alpha}  \\
+\chi & = \frac{\partial M}{\partial B}= - \frac{N}{V} \frac{e^{2}}{8m}\sum_{i}\bra{\alpha} (x_{i}^{2}+y_{i}^{2})\ket{\alpha} =-\frac{N}{V} \frac{e^{2}}{6m}\sum_{i}\langle r_{i}^{2}\rangle 
+\end{align}$$
+称为Langevin抗磁。
 
 
 
