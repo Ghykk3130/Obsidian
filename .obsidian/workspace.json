@@ -937,12 +937,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Homework/Math 654/Homework 2.md",
+                "file": "Notes/热力学中的求导.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Homework 2"
+              "title": "热力学中的求导"
             }
           }
         ],
@@ -1113,10 +1113,10 @@
   },
   "active": "4d018ad951f25457",
   "lastOpenFiles": [
+    "Homework/Math 654/Homework 2.md",
     "Notes/热力学中的求导.md",
     "Homework/Math 654/Untitled.md",
     "Pictures/Pasted image 20260306202340.png",
-    "Homework/Math 654/Homework 2.md",
     "Experimental/Untitled.md",
     "Experimental/Untitled 1.md",
     "Notes/线性波.md",
