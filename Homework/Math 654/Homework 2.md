@@ -231,6 +231,44 @@ So the local wavelength increases.
 
 # Acheson 3.13
 
-
-
+Let $\mathbf{u}=\nabla \phi$, we have the wave equation:
+$$\begin{align}
+\frac{\partial^{2}}{\partial t^{2}}\phi- a_{0}^{2}\nabla^{2}\phi=0,\text{ where }a_{0}^{2}= \gamma \frac{p_{0}}{\rho_{0}}
+\end{align}$$
+Assume that the solution is spherical symmetric, then $\phi=\phi(r)$. We make the ansatz:
+$$\phi= \frac{e^{i(kr-\omega t)}}{r}$$
+Then:
+$$\begin{align}
+\nabla^{2}\phi & = \frac{1}{r^{2}} \frac{\partial}{\partial r}\left( r^{2} \frac{\partial}{\partial r} \right)\phi \\
+ & = \frac{1}{r^{2}} \frac{\partial}{\partial r}(ik e^{i(kr-\omega t)}r- e^{i(kr-\omega t)}) \\
+ & = -k^{2} e^{i(kr-\omega t)}
+\end{align}$$
+Then we have the dispersion relation:
+$$\begin{align}
+ & -\omega^{2} +k^{2}a_{0}^{2}=0 \\
+\implies & k^{2}= \frac{\omega^{2}}{a_{0}^{2}}\implies k=\pm \frac{\omega}{a_{0}}
+\end{align}$$
+So we have:
+$$\phi= A \frac{1}{r}\exp\left( i\left(  \frac{\omega}{a_{0}}r-\omega t \right) \right)+ B \frac{1}{r}\exp\left( i\left( - \frac{\omega}{a_{0}}r-\omega t \right) \right)$$
+Require that $\phi< \infty$ as $r\rightarrow 0$. Then must have $B=-A$. Then after rewriting the constant:
+$$\begin{align}
+\phi=A \frac{1}{r} \sin\left(  \frac{\omega}{a_{0}}r \right) e^{-i\omega t}
+\end{align}$$
+The boundary is given by:
+$$F(r)=r-L=0$$
+So on the boundary, we have:
+$$\begin{align}
+\frac{DF}{Dt} & = \dot{r}=0
+\end{align}$$
+We know that:
+$$\mathbf{r}=r  \hat{\mathbf{r}}\implies  \mathbf{u}= \dot{r}  \hat{\mathbf{r}}+ r \boldsymbol{\omega}\times  \hat{\mathbf{r}}\implies u_{r}= \dot{r}$$
+since $\boldsymbol{\omega}\times   \hat{\mathbf{r}}$ is perpendicular to $\hat{\mathbf{r}}$. Then the boundary condition is:
+$$u_{r}|_{r=L}=0$$
+Then:
+$$\begin{align}
+u_{r}|_{r=L} & = \frac{\partial}{\partial r}\phi\text{ at }r=L \\
+ & = A \frac{\cos\left(  \frac{\omega}{a_{0}}L \right) \frac{\omega}{a_{0}}e^{-i\omega t}L-\sin\left(  \frac{\omega}{a_{0}}L \right)e^{-i\omega t}}{L^{2}}=0 \\
+\implies  & \cos\left( \frac{\omega}{a_{0}}L \right) \frac{\omega}{a_{0}} L -\sin\left( \frac{\omega}{a_{0}}L \right)=0 \\
+\implies & \tan\left( \frac{\omega}{a_{0}}L \right)= \frac{\omega}{a_{0}}L
+\end{align}$$
 
