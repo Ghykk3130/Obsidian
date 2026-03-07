@@ -229,5 +229,23 @@ Therefore:
 $$\lambda_{\text{loc}}= \frac{2\pi}{k_{\text{loc}}}\propto t^{2/3}$$
 So the local wavelength increases. 
 
+# Acheson 3.13
+
+$$\begin{align}
+\left( \frac{\partial p}{\partial V} \right)_{S} & = - \frac{(\partial S /\partial V )_{p} }{(\partial S /\partial p)_{V}}
+\end{align}$$
+Know that:
+$$\begin{align}
+\left( \frac{\partial S}{\partial V} \right)_{p} & = \left( \frac{\partial S}{\partial T} \right)_{p}\left(  \frac{\partial T}{\partial V} \right)_{p} \\
+ & = \frac{C_{p}}{T} \frac{1}{V\beta_{p}}
+\end{align}$$
+$$\begin{align}
+\left( \frac{\partial S}{\partial p} \right)_{V} & = \left( \frac{\partial S}{\partial T} \right)_{V}\left(  \frac{\partial T}{\partial p} \right)_{V} \\
+ & = -\frac{C_{V}}{T}  \frac{(\partial V /\partial p)_{T}}{(\partial V /\partial T)_{p}} \\
+ & = - \frac{C_{V}}{T} \frac{\kappa_{T}}{\beta_{p}}
+\end{align}$$
+Then:
+$$\left( \frac{\partial p}{\partial V} \right)_{S}= \frac{C_{p}}{C_{V}} \frac{1}{V\kappa_{T}}$$
+
 
 
