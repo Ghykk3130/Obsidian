@@ -189,11 +189,45 @@ $$\begin{align}
  \implies & U^{2}> \left( \frac{1}{\rho_{1}}+ \frac{1}{\rho_{2}} \right)2 \sqrt{ T(\rho_{1}-\rho_{2})g }
 \end{align}$$
 The minimum is found by using AM-GM inequality.
+# Acheson 3.10
 
-
-
-
-
+Consider the solution:
+$$\eta(x,t)= \int_{\mathbb{R}}dk  \hat{\eta}({k},\omega(k))e^{i(kx-\omega t)}$$
+We consider the stationary phase approximation. We first consider the phase:
+$$i(kx-\omega t)= it\left(  \frac{kx}{t}-\omega \right)=it\phi(k)$$
+By Riemann-Lebesgue lemma, the integral approximates zero as $t\rightarrow \infty$ if the interval over which we are integrating does not contain stationary points. So the integral is non-trivial only around the stationary point: 
+$$\begin{align}
+\eta(x,t) & = \int_{B(k_{0},\delta k)}dk   \hat{\eta}(k,\omega(k)) e^{it\phi(k)}\text{ where }k_{0}\text{ is the stationary point.}
+\end{align}$$
+Since $\delta k$ is small, we can approximate:
+$$\begin{align}
+\eta(x,t) & \approx \int_{B(k_{0},\delta k)}dk  \hat{\eta} \exp\left( i\left(t\phi(k_{0})+ \frac{t}{2}\phi^{''}(k_{0})(k-k_{0})^{2}\right) \right) \\
+ & = e^{i(k_{0}x-\omega(k_{0})t)}\int_{B(k_{0},\delta k)}dk  \hat{\eta}\exp\left( i \frac{t}{2}\phi^{''}(k_{0})(k-k_{0})^{2} \right)
+\end{align}$$
+Since as $t\rightarrow \infty$, the Gaussian becomes infinitely narrow, we can approximate and extend the integral to $\mathbb{R}$:
+$$\begin{align}
+\eta(x,t) & \approx e^{i(k_{0}x-\omega(k_{0})t)} \hat{\eta}(k_{0},\omega(k_{0})) \int_{\mathbb{R}} dk \exp\left( i \frac{t}{2}\phi^{''}(k_{0})(k-k_{0})^{2}  \right) \\
+ & = e^{i(k_{0}x-\omega(k_{0})t)  }  \hat{\eta}(k_{0},\omega(k_{0}) ) \sqrt{ \frac{2\pi}{-it \phi^{''}(k_{0})} } \\
+ & = e^{i(k_{0}x-\omega(k_{0})t)  }  \hat{\eta}(k_{0},\omega(k_{0}) ) \sqrt{ \frac{2\pi}{it \omega^{''}(k_{0})} }
+\end{align}$$
+To find the stationary point, we have:
+$$\phi^{'}(k_{0})= \frac{x}{t}- \omega^{'}(k_{0})=0\implies \frac{x}{t}- \sqrt{  \frac{T}{\rho} } \frac{3}{2}\sqrt{ k_{0} }=0\implies k_{0}= \frac{x^{2}}{t^{2}} \frac{\rho}{T} \frac{4}{9}$$
+Therefore, the phase is given by:
+$$\begin{align}
+k_{0}x-\omega(k_{0})t &  = \frac{x^{2}}{t^{2}} \frac{\rho}{T} \frac{4}{9} x- \frac{\rho}{T} \frac{x^{3}}{t^{3}} \frac{9}{27}t \\
+ & = \frac{4}{27} \frac{x^{3}}{t^{2}} \frac{\rho}{T}
+\end{align}$$
+Clearly, $\hat{\eta}(k_{0},\omega(k_{0}))$ is a function of $x,t$. Know that $\hat{ \eta}$ depends on the initial condition, so $\hat{\eta}(k_{0},\omega(k_{0}))$ depends on the initial condition. $\sqrt{ \frac{2\pi}{it\omega^{''}(k_{0})} }$ is also a function of $x,t$, and gives an extra phase factor coming from the imaginary number. Therefore, taking the real part, the solution can be written as:
+$$\begin{align}
+\eta(x,t) & \approx A(x,t) \cos\left(  \frac{4}{27}  \frac{x^{3}\rho}{Tt^{2}}+\epsilon\right)
+\end{align}$$
+Consider the local wave number:
+$$k_{\text{loc}}= \frac{\partial \phi}{\partial x}= \frac{4}{9} \frac{x^{2}\rho}{Tt^{2}}$$
+For points on the crest, we have:
+$$\frac{4}{27} \frac{x^{3}\rho}{Tt^{2}}=\text{const.}\implies x \propto t ^{2/3}$$
+Therefore:
+$$\lambda_{\text{loc}}= \frac{2\pi}{k_{\text{loc}}}\propto t^{2/3}$$
+So the local wavelength increases. 
 
 
 
