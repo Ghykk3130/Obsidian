@@ -303,4 +303,12 @@ $$\begin{align}
  & R_{-}= u-2c=2V-2c_{0} \\
  & R_{+}=u+2c=2c_{0}
 \end{align}\implies c= c_{0}- \frac{V}{2},\ u=V$$
-Similarly, we conclude that $C_{-}$ curves are linear since $u,c$ are fixed. They are all parallel since they have the same slope defined by $\frac{dx}{dt}=u-c= \frac{3}{2}V-c_{0}$. 
+Similarly, we conclude that $C_{-}$ curves are linear since $u,c$ are fixed. They are all parallel since they have the same slope defined by $\frac{dx}{dt}=u-c= \frac{3}{2}V-c_{0}$. Clearly, they are defined up to the origin. So the boundary is given by:
+$$\frac{x}{t}= \frac{3}{2}V-c_{0}$$
+In conclusion:
+$$c=\left\{\begin{align}
+ & c_{0},\ x< -c_{0}t \\
+ & \frac{1}{3}\left( 2c_{0}- \frac{x}{t} \right),\ -c_{0}t<x< \left( \frac{3}{2}V-c_{0} \right)t \\
+ & c_{0}- \frac{V}{2},\ \left( \frac{3}{2}V-c_{0} \right)t<x< Vt
+\end{align}\right.$$
+

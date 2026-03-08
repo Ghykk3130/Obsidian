@@ -993,12 +993,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Homework/Math 654/Homework 2.md",
+                "file": "Notes/流体的动力学与热力学函数.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Homework 2"
+              "title": "流体的动力学与热力学函数"
             }
           }
         ],
@@ -1054,7 +1054,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "热力学",
+                "query": "能流密度",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -1065,11 +1065,13 @@
               "title": "Search"
             }
           }
-        ]
+        ],
+        "currentTab": 3
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 200,
+    "collapsed": true
   },
   "right": {
     "id": "9003d078f8dbc4ed",
@@ -1169,7 +1171,11 @@
   },
   "active": "16f08b78992f0143",
   "lastOpenFiles": [
+    "Notes/流体的描述.md",
+    "Notes/流体的动力学与热力学函数.md",
     "Homework/Math 654/Untitled.md",
+    "Pictures/Pasted image 20260308002556.png",
+    "Pictures/Pasted image 20260308002532.png",
     "Homework/Math 654/Homework 2.md",
     "Notes/Dam-break问题.md",
     "Pictures/Pasted image 20260307203239.png",
@@ -1197,13 +1203,10 @@
     "Notes/Untitled 1.md",
     "Notes/Solid state.md",
     "Experimental/Ratio Transformer.md",
-    "Experimental/Transformer Comments.md",
     "Pictures/Pasted image 20260220165911.png",
     "Pictures/Pasted image 20260220165854.png",
     "Pictures/Pasted image 20260220165827.png",
     "Pictures/Pasted image 20260220165800.png",
-    "Pictures/Pasted image 20260220165729.png",
-    "Pictures/Pasted image 20260215210708.png",
     "tldraw",
     "Excalidraw/Scripts/Downloaded",
     "Excalidraw/Scripts",
