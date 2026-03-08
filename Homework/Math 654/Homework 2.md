@@ -388,4 +388,88 @@ $$\begin{align}
  & = \frac{\rho gq}{4h_{1}h_{2}}(h_{2}-h_{1})^{3} \\
  & = \frac{\rho gU_{1}}{4h_{2}}(h_{2}-h_{1})^{3}
 \end{align}$$
+# Acheson 4.4
 
+We have the Laplace equation:
+$$\nabla^{2}\phi=0\implies\begin{align}
+\left[ \frac{1}{r} \frac{\partial}{\partial r}\left( r \frac{\partial}{\partial r} \right)+ \frac{1}{r^{2}} \frac{\partial^{2}}{\partial \theta^{2}} \right]\phi=0
+\end{align}$$
+with the boundary conditions:
+$$\begin{align}
+ & \mathbf{u}|_{r=\infty}=U \hat{\mathbf{x}} \\
+ & u_{r}|_{r=a}= 0
+\end{align}$$
+The second boundary condition is due to that the flow cannot penetrate the cylinder.
+
+Let $\phi=R(r)\Theta(\theta)$. Then:
+$$\begin{align}
+ & \Theta \frac{1}{r} \frac{\partial}{\partial r}\left(  r \frac{\partial}{\partial r}R \right)+ \frac{1}{r^{2}}R \frac{\partial^{2}}{\partial \theta^{2}}\Theta=0 \\
+\implies & \frac{r}{R} \frac{\partial}{\partial r}\left( r \frac{\partial}{\partial r}R \right)+ \frac{1}{\Theta} \frac{\partial^{2}}{\partial \theta^{2}}\Theta=0 \\
+\implies &  \frac{r}{R} \frac{\partial}{\partial r}\left( r \frac{\partial}{\partial r}R \right)=n^{2},\ \frac{1}{\Theta} \frac{\partial^{2}}{\partial \theta^{2}}\Theta=-n^{2}
+\end{align}$$
+Then we have:
+$$\begin{align}
+ & r^{2}  \frac{\partial^{2}}{\partial r^{2}}R+r \frac{\partial}{\partial r}R- n^{2}R=0 \\
+ & \frac{\partial^{2}}{\partial \theta^{2}}\Theta=-n^{2}\Theta
+\end{align}$$
+Since we have:
+$$\begin{align}
+ & \mathbf{u}|_{r=\infty}=U  \hat{\mathbf{x}}= U(\cos \theta  \hat{\mathbf{r}}- \sin \theta  \hat{\boldsymbol{\theta}}) 
+\end{align}$$
+Then we can conclude that the angular dependence should imply that $n=1$ in $\frac{\partial^{2}}{\partial \theta^{2}}\Theta=-n^{2}\Theta$.
+
+Then:
+$$\begin{align}
+ & r^{2}  \frac{\partial^{2}}{\partial r^{2}}R+ r \frac{\partial}{\partial r}R-R=0
+\end{align}$$
+We make the ansatz $R=r^{\lambda}$. Then we obtain:
+$$\begin{align}
+ & \lambda(\lambda-1)+\lambda-1=0 \\
+\implies & \lambda=\pm 1
+\end{align}$$
+Then:
+$$R(r)= Ar+ \frac{C}{r}$$
+Therefore:
+$$\begin{align}
+ \phi(r,\theta)=\left( Ar+ \frac{C}{r} \right)\cos \theta
+\end{align}$$
+We compute:
+$$\begin{align}
+\mathbf{u} & = \left( \hat{\mathbf{r}} \frac{\partial}{\partial r}+ \hat{\boldsymbol{\theta}} \frac{1}{r} \frac{\partial}{\partial \theta} \right)\phi= \hat{\mathbf{r}}\left( A- \frac{C}{r^{2}} \right)\cos \theta- \hat{\boldsymbol{\theta}}\left( A+ \frac{C}{r^{2}} \right)\sin \theta
+\end{align}$$
+Then:
+$$\mathbf{u}|_{r=\infty}=U (\cos \theta  \hat{\mathbf{r}}- \sin \theta  \hat{\boldsymbol{\theta}})\implies A= U$$
+We then compute:
+$$\begin{align}
+u_{r} & = \left( U- \frac{C}{r^{2}} \right)\cos \theta
+\end{align}$$
+Then:
+$$u_{r}|_{r=a}=0\implies C=Ua^{2}$$
+Then:
+$$\phi(r,\theta)= U\left( r+ \frac{a^{2}}{r} \right)\cos \theta$$
+Now introduce the circulation. Then we have:
+$$\phi(r,\theta)=U\left( r+\frac{a^{2}}{r} \right)\cos \theta+ \frac{\Gamma}{2\pi}\theta$$
+Then:
+$$\begin{align}
+ & u_{r}= \frac{\partial \phi}{\partial r}=U\left( 1- \frac{a^{2}}{r^{2}} \right)\cos \theta \\
+ & u_{\theta}=-U\left( 1+ \frac{a^{2}}{r^{2}} \right)\sin \theta+ \frac{\Gamma}{2\pi r}
+\end{align}$$
+To find the stagnation point, we set:
+$$\begin{align}
+ & U\left( 1- \frac{a^{2}}{r^{2}} \right)\cos \theta=0 \\
+\implies & r=a\text{ or }\theta=\pm \frac{\pi}{2}
+\end{align}$$
+If $r=a$, we have:
+$$\begin{align}
+ & u_{\theta}=-U 2 \sin \theta+ \frac{\Gamma}{2\pi a}=0 \\
+\implies &  \sin \theta= \frac{\Gamma}{4\pi Ua}=- \frac{1}{2}B
+\end{align}$$
+So if $B\leq 2$, we have stagnation points at $r=a$, with $\sin \theta=- \frac{B}{2}$. There are two points since obviously $\sin \theta=- \frac{B}{2}$ has two solutions.
+
+If $B>2$, only $\theta=\pm \frac{\pi}{2}$ would produce stagnation points. Then:
+$$\begin{align}
+ & U\left( 1+ \frac{a^{2}}{r^{2}} \right)\sin \theta= \frac{\Gamma}{2\pi r} \\
+\implies & U\left( 1+ \frac{a^{2}}{r^{2}} \right)\sin \theta= - \frac{BUa}{r } \\
+\implies & \left( 1+ \frac{a^{2}}{r^{2}} \right)\sin \theta=-B \frac{a}{r}
+\end{align}$$
+Since $\text{RHS}<0,\ (1+ \frac{a^{2}}{r^{2}})>0$, we must have $\sin \theta <0$. So we take $\theta=- \frac{\pi}{2}$
