@@ -271,4 +271,36 @@ u_{r}|_{r=L} & = \frac{\partial}{\partial r}\phi\text{ at }r=L \\
 \implies  & \cos\left( \frac{\omega}{a_{0}}L \right) \frac{\omega}{a_{0}} L -\sin\left( \frac{\omega}{a_{0}}L \right)=0 \\
 \implies & \tan\left( \frac{\omega}{a_{0}}L \right)= \frac{\omega}{a_{0}}L
 \end{align}$$
+# Acheson 3.18
 
+Know that in the region $x<0,\ t<0$, the plate doesn't move. Therefore on the $C_{\pm}$ characteristic curves, we have:
+$$\begin{align}
+ & \frac{\partial t}{\partial \xi_{\pm}}=1,\  \frac{\partial x}{\partial \xi_{\pm}}=u\pm c\text{ where }\xi_{\pm} \text{ are the parameters} \\
+\implies & \frac{d x}{d t}=u\pm c
+\end{align}$$
+Since $u=0,\ c=c_{0}$, we have:
+$$\frac{d x }{d t}=\pm c_{0}$$
+Then the characteristic curves $C_{\pm}$ are all linear with slopes $\pm c_{0}$ in the region $x<0,\ t<0$. Consider the region slightly above $t=0$. Given a point $P$ that is the intersection of the characteristic curves emanating from $x<0,\ t<0$, we have:
+$$\frac{d x}{d t}=\pm c_{0}$$
+Therefore, the curves remain linear. Clearly, this region is bounded by $x=-c_{0}t$. Then, consider a $C_{-}$ curve intersecting with $C_{+}$ curves emanating from the region $x<-c_{0}t$. Suppose we have the Riemann invariants:
+$$\begin{align}
+ & R_{-}=u-2c \\
+ & R_{+}=u+2c=2c_{0}
+\end{align}$$
+Then given any intersection, $u,c$ are fixed. Then the slope $\frac{dx}{dt}= u-c$ of $C_{-}$ is fixed. Then $C_{-}$ is linear. Different $C_{-}$ curves cannot intersect at points with non-zero $u,c$, since the slope $u-c$ is different for different curves. But they have different slopes, then they have to intersect at the origin. Then we have:
+$$\begin{align}
+ & \frac{dx}{dt}=  \frac{x}{t}=u-c \\
+ & u+2c=2c_{0}
+\end{align}\implies c=\frac{1}{3}\left( 2c_{0}- \frac{x}{t} \right)$$
+Now assume that $C_{+}$ curves emanating from the $x<0,\ t<0$ region intersect $x=Vt$, since $V<2c_{0}$, and $x=Vt$ is a more strict boundary than $x=2c_{0}t$. Then we have:
+$$\begin{align}
+R_{+}=u+2c=V+2c=2c_{0}\implies c= c_{0}- \frac{V}{2}\text{ on }x=Vt
+\end{align}$$
+Then for $C_{-}$ curves intersecting $x=Vt$, we have:
+$$R_{-}=u-2c=V-2\left( c_{0}- \frac{V}{2} \right)=2V-2c_{0}$$
+Then at the intersections of the $C_{+},\ C_{-}$ curves, we have:
+$$\begin{align}
+ & R_{-}= u-2c=2V-2c_{0} \\
+ & R_{+}=u+2c=2c_{0}
+\end{align}\implies c= c_{0}- \frac{V}{2},\ u=V$$
+Similarly, we conclude that $C_{-}$ curves are linear since $u,c$ are fixed. They are all parallel since they have the same slope defined by $\frac{dx}{dt}=u-c= \frac{3}{2}V-c_{0}$. 
