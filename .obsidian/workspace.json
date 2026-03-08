@@ -1021,12 +1021,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Homework/Math 654/Homework 2.md",
+                "file": "Homework/Math 654/Untitled.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Homework 2"
+              "title": "Untitled"
             }
           }
         ],
@@ -1198,8 +1198,10 @@
   },
   "active": "9ec7f4b1c72e05a2",
   "lastOpenFiles": [
-    "Homework/Math 654/Untitled.md",
+    "Pictures/Pasted image 20260308170114.png",
+    "Pictures/Pasted image 20260308170052.png",
     "Homework/Math 654/Homework 2.md",
+    "Homework/Math 654/Untitled.md",
     "Pictures/Pasted image 20260308155506.png",
     "Pictures/Pasted image 20260308155433.png",
     "Notes/Flow past a cylinder.md",
@@ -1232,7 +1234,6 @@
     "Notes/色散关系.md",
     "Notes/量子统计力学基础.md",
     "Notes/精细结构.md",
-    "Pictures/Pasted image 20260220165911.png",
     "tldraw",
     "Excalidraw/Scripts/Downloaded",
     "Excalidraw/Scripts",

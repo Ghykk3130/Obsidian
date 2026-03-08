@@ -457,7 +457,7 @@ $$\begin{align}
 To find the stagnation point, we set:
 $$\begin{align}
  & U\left( 1- \frac{a^{2}}{r^{2}} \right)\cos \theta=0 \\
-\implies & r=a\text{ or }\theta=\pm \frac{\pi}{2}
+\implies & r=a\text{ or }\theta=\frac{\pi}{2}\text{ or }  \frac{3\pi}{2}
 \end{align}$$
 If $r=a$, we have:
 $$\begin{align}
@@ -466,10 +466,22 @@ $$\begin{align}
 \end{align}$$
 So if $B\leq 2$, we have stagnation points at $r=a$, with $\sin \theta=- \frac{B}{2}$. There are two points since obviously $\sin \theta=- \frac{B}{2}$ has two solutions.
 
-If $B>2$, only $\theta=\pm \frac{\pi}{2}$ would produce stagnation points. Then:
+If $B>2$, only $\theta= \frac{\pi}{2}\text{ or }  \frac{3\pi}{2}$ would produce stagnation points. Then:
 $$\begin{align}
  & U\left( 1+ \frac{a^{2}}{r^{2}} \right)\sin \theta= \frac{\Gamma}{2\pi r} \\
 \implies & U\left( 1+ \frac{a^{2}}{r^{2}} \right)\sin \theta= - \frac{BUa}{r } \\
 \implies & \left( 1+ \frac{a^{2}}{r^{2}} \right)\sin \theta=-B \frac{a}{r}
 \end{align}$$
-Since $\text{RHS}<0,\ (1+ \frac{a^{2}}{r^{2}})>0$, we must have $\sin \theta <0$. So we take $\theta=- \frac{\pi}{2}$
+Since $\text{RHS}<0,\ (1+ \frac{a^{2}}{r^{2}})>0$, we must have $\sin \theta <0$. So we take $\theta=\frac{3\pi}{2}$. Then:
+$$\begin{align}
+ & \left( 1+ \frac{a^{2}}{r^{2}} \right)
+- \frac{Ba}{r}=0 \\
+\implies & \frac{r}{a}= \frac{B\pm \sqrt{ B^{2}-4 }}{2}\end{align}$$
+We must have $\frac{r}{a}>1$, so we take:
+$$\begin{align}
+\frac{r}{a}= \frac{B+ \sqrt{ B^{2}-4 }}{2}= \frac{B}{2}+ \left( \frac{B^{2}}{4}-1 \right)^{1/2}
+\end{align}\text{ with }\theta= \frac{3\pi}{2}$$
+Clearly, the positions of the stagnations points vary as we tune $B$. When $B\leq 2$, as we increase $B$, clearly the solution to $\sin \theta=- \frac{B}{2}$ moves closer to each other and annihilate at $\theta=\frac{3\pi}{2}$. Then if we further increase $B$, the point moves off the surface of the cylinder vertically, with $\frac{r}{a}= \frac{B}{2}+\left( \frac{B^{2}}{4}-1 \right)^{1/2}$. 
+
+
+
