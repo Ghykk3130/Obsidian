@@ -1007,16 +1007,30 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Homework/Math 654/Untitled.md",
+                "file": "Notes/守恒律.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Untitled"
+              "title": "守恒律"
+            }
+          },
+          {
+            "id": "9ec7f4b1c72e05a2",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Notes/Flow past a cylinder.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Flow past a cylinder"
             }
           }
         ],
-        "currentTab": 71
+        "currentTab": 72
       }
     ],
     "direction": "vertical"
@@ -1181,11 +1195,14 @@
       "obsidian-excalidraw-plugin:New drawing": false
     }
   },
-  "active": "77655c81f08beb11",
+  "active": "9ec7f4b1c72e05a2",
   "lastOpenFiles": [
+    "Notes/守恒律.md",
+    "Notes/Flow past a cylinder.md",
+    "Notes/固体形变.md",
+    "Homework/Math 654/Untitled.md",
     "Pictures/Pasted image 20260308144933.png",
     "Homework/Math 654/Homework 2.md",
-    "Homework/Math 654/Untitled.md",
     "Notes/Hydraulic jump.md",
     "Notes/N维球.md",
     "Notes/流体的动力学与热力学函数.md",
@@ -1213,12 +1230,9 @@
     "Notes/量子统计力学基础.md",
     "Notes/精细结构.md",
     "Notes/Fourier transform.md",
-    "Notes/Laplace's method and Stirling approximation.md",
-    "Notes/Untitled.md",
     "Pictures/Pasted image 20260220165911.png",
     "Pictures/Pasted image 20260220165854.png",
     "Pictures/Pasted image 20260220165827.png",
-    "Pictures/Pasted image 20260220165800.png",
     "tldraw",
     "Excalidraw/Scripts/Downloaded",
     "Excalidraw/Scripts",
