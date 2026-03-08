@@ -347,5 +347,45 @@ $$\begin{align}
 \end{align}$$
 We can extend this to a vertical line:
 $$\mathscr{F}= \int_{0}^{h}dy \left( p+ \rho gy+ \frac{1}{2}\rho|\mathbf{u}|^{2} \right)u$$
-
+For fluids before the jump, we have:
+$$\begin{align}
+  \mathscr{F}_{1}  & = \int_{0}^{h}dy\left( p+ \rho gy+ \frac{1}{2}\rho|\mathbf{u}|^{2} \right)u \\
+ & \approx \int_{0}^{h}dy\left( p+\rho gy+ \frac{1}{2}\rho U_{1}^{2} \right)U_{1} \\
+ & \approx \int_{0}^{h}dy\left( \rho g(h_{1}-y)+ \rho gy+ \frac{1}{2}\rho U_{1}^{2} \right)U_{1} \\
+ & = \rho gh_{1}^{2}+ \frac{1}{2}\rho U_{1}^{3}h_{1}
+\end{align}$$
+Here we ignored the velocity in the $y$ direction, and we approximate the pressure by hydrostatic pressure. We also assumed that $u$ does not depend on $y$. Similarly:
+$$\mathscr{F}_{2}= \rho gh_{2}^{2}+ \frac{1}{2}\rho U_{2}^{3}h_{2}$$
+Then we have the energy loss:
+$$\begin{align}
+\Delta E & = \rho gh_{1}^{2}+ \frac{1}{2}\rho U_{1}^{3}h_{1}- \rho gh_{2}^{2}- \frac{1}{2}\rho U_{2}^{3}h_{2} \\
+ & = q\left[ \rho g(h_{1}-h_{2})+ \frac{1}{2}\rho(U_{1}^{2}-U_{2}^{2}) \right]
+\end{align}$$
+where $q=h_{1}u_{1}=h_{2}u_{2}$. We have:
+$$\begin{align}
+ & \frac{1}{2}gh_{1}^{2}+ U_{1}h_{1}^{2}= \frac{1}{2}gh_{2}^{2}+ U_{2}h_{2}^{2} \\
+\implies & \frac{1}{2}g(h_{1}^{2}-h_{2}^{2})=h_{2}U_{2}^{2}-h_{1}U_{1}^{2} \\
+\implies & \frac{1}{2}g(h_{1}^{2}-h_{2}^{2})=\frac{q^{2}}{h_{2}}- \frac{q^{2}}{h_{1}} = q^{2} \frac{h_{1}-h_{2}}{h_{1}h_{2}}
+\end{align}$$
+We assume that $h_{1} \neq h_{2}$, then:
+$$\begin{align}
+ & \frac{1}{2}g(h_{1}+h_{2})= \frac{q^{2}}{h_{1}h_{2}} \\
+\implies & q^{2}= \frac{1}{2}gh_{1}h_{2}(h_{1}+h_{2})
+\end{align}$$
+Therefore:
+$$U_{1}^{2}= \frac{q^{2}}{h_{1}^{2}}= \frac{gh_{2}(h_{1}+h_{2})}{2h_{1}},\ U_{2}^{2}= \frac{q^{2}}{h_{2}^{2}}= \frac{gh_{1}(h_{1}+h_{2})}{2h_{2}}$$
+Then:
+$$\begin{align}
+\frac{1}{2}(U_{1}^{2}-U_{2}^{2}) & = \frac{1}{2}\left[ \frac{gh_{2}(h_{1}+h_{2})}{2h_{1}}- \frac{gh_{1}(h_{1}+h_{2})}{2h_{2}} \right] \\
+ & = \frac{g(h_{1}+h_{2})}{4}\left( \frac{h_{2}}{h_{1}}- \frac{h_{1}}{h_{2}} \right) \\
+ & = \frac{g(h_{1}+h_{2})^{2}(h_{2}-h_{1})}{4h_{1}h_{2}}
+\end{align}$$
+Then:
+$$\begin{align}
+\Delta E & = \rho q\left( -g(h_{1}-h_{1})+ \frac{g(h_{1}+h_{2})^{2}(h_{2}-h_{1})}{4h_{1}h_{2}} \right) \\
+ & = \rho gq(h_{2}-h_{1})\left( \frac{(h_{1}+h_{2})^{2}}{4h_{1}h_{2}}-1 \right) \\
+ & = \rho gq(h_{2}-h_{1}) \frac{(h_{2}-h_{1})^{2}}{4h_{1}h_{2}} \\
+ & = \frac{\rho gq}{4h_{1}h_{2}}(h_{2}-h_{1})^{3} \\
+ & = \frac{\rho gU_{1}}{4h_{2}}(h_{2}-h_{1})^{3}
+\end{align}$$
 

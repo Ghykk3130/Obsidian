@@ -1007,12 +1007,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Notes/Hydraulic jump.md",
+                "file": "Homework/Math 654/Homework 2.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Hydraulic jump"
+              "title": "Homework 2"
             }
           }
         ],
@@ -1083,7 +1083,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 200,
+    "collapsed": true
   },
   "right": {
     "id": "9003d078f8dbc4ed",
@@ -1183,10 +1184,10 @@
   },
   "active": "77655c81f08beb11",
   "lastOpenFiles": [
-    "Notes/N维球.md",
-    "Notes/Hydraulic jump.md",
     "Homework/Math 654/Untitled.md",
     "Homework/Math 654/Homework 2.md",
+    "Notes/Hydraulic jump.md",
+    "Notes/N维球.md",
     "Notes/流体的动力学与热力学函数.md",
     "Notes/流体的描述.md",
     "Pictures/Pasted image 20260308002556.png",
