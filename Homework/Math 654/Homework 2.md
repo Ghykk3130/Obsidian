@@ -311,4 +311,41 @@ $$c=\left\{\begin{align}
  & \frac{1}{3}\left( 2c_{0}- \frac{x}{t} \right),\ -c_{0}t<x< \left( \frac{3}{2}V-c_{0} \right)t \\
  & c_{0}- \frac{V}{2},\ \left( \frac{3}{2}V-c_{0} \right)t<x< Vt
 \end{align}\right.$$
+# Acheson 3.20
+
+The energy density is clearly:
+$$\epsilon= \rho gy+ \frac{1}{2}\rho |\mathbf{u}|^{2}$$
+Therefore:
+$$\begin{align}
+\frac{\partial\epsilon}{\partial t} & = \frac{\partial}{\partial t}\left( \rho hy+ \frac{1}{2}\rho|\mathbf{u}|^{2} \right)  \\
+ & = \frac{1}{2} \rho \frac{\partial }{\partial t }(\mathbf{u}\cdot \mathbf{u}) \\
+ & = \rho \mathbf{u}\cdot \frac{\partial}{\partial t}\mathbf{u} 
+\end{align}$$
+We have:
+$$\begin{align}
+ & \rho\left( \frac{\partial \mathbf{u}}{\partial t}+ \mathbf{u}\cdot \nabla \mathbf{u} \right)=-\nabla p-\rho \nabla \chi \\
+\implies & \rho \frac{\partial \mathbf{u}}{\partial t}=-\nabla p-\rho \nabla \chi- \rho \mathbf{u}\cdot \nabla \mathbf{u} =-\nabla p-\rho \nabla \chi-\rho \nabla\left( \frac{1}{2}|\mathbf{u}|^{2} \right)+ \rho\mathbf{u}\times(\nabla \times \mathbf{u})
+\end{align}$$
+Then:
+$$\begin{align}
+\frac{\partial\epsilon}{\partial t} & = -\mathbf{u}\cdot\left( \nabla p+\rho \nabla \chi+\rho \nabla\left( \frac{1}{2}|\mathbf{u}|^{2} \right)+\rho \mathbf{u}\times(\nabla \times \mathbf{u})  \right) \\
+ & = -\mathbf{u}\cdot\left( \nabla p+\rho \nabla \chi+\rho \nabla\left( \frac{1}{2}|\mathbf{u}|^{2} \right) \right) \\
+ & = -\mathbf{u}\cdot \nabla\left( p+\rho gy+\frac{1}{2}\rho|\mathbf{u}|^{2} \right)
+\end{align}$$
+Know that:
+$$\begin{align}
+\nabla \cdot\left( \left( p+\rho gy+ \frac{1}{2}\rho|\mathbf{u}|^{2} \right)\mathbf{u} \right) & = \mathbf{u}\cdot \nabla\left( p+ \rho gy+ \frac{1}{2}\rho|\mathbf{u}|^{2} \right)+\left( p+ \rho gy+ \frac{1}{2}\rho|\mathbf{u}|^{2} \right)\nabla \cdot \mathbf{u} \\
+ & =  \mathbf{u}\cdot \nabla\left( p+ \rho gy+ \frac{1}{2}\rho|\mathbf{u}|^{2} \right)
+\end{align}$$
+Then:
+$$\frac{\partial\epsilon}{\partial t}=-\nabla \cdot\left( \left( p+\rho gy+ \frac{1}{2}\rho|\mathbf{u}|^{2} \right)\mathbf{u} \right)$$
+Then the flux across a closed boundary given by:
+$$\begin{align}
+\mathscr{F} & = -\int_{S} dA \frac{\partial\epsilon}{\partial t} \\
+ & = \int_{S}dA\nabla \cdot\left( \left( p+\rho gy+ \frac{1}{2}\rho|\mathbf{u}|^{2} \right)\mathbf{u} \right) \\
+ & = \int_{\partial S}dl \hat{\mathbf{n}}  \cdot\left( p+ \rho gy+\frac{1}{2}\rho|\mathbf{u}|^{2} \right)\mathbf{u}
+\end{align}$$
+We can extend this to a vertical line:
+$$\mathscr{F}= \int_{0}^{h}dy \left( p+ \rho gy+ \frac{1}{2}\rho|\mathbf{u}|^{2} \right)u$$
+
 
