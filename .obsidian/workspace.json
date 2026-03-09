@@ -1077,6 +1077,20 @@
             "state": {
               "type": "markdown",
               "state": {
+                "file": "Notes/Bose-Einstein statistics与BEC.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Bose-Einstein statistics与BEC"
+            }
+          },
+          {
+            "id": "ac87d09328b4386d",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
                 "file": "Homework/Math 654/Untitled.md",
                 "mode": "source",
                 "source": false
@@ -1086,7 +1100,7 @@
             }
           }
         ],
-        "currentTab": 76
+        "currentTab": 77
       }
     ],
     "direction": "vertical"
@@ -1138,7 +1152,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "能流密度",
+                "query": "",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -1153,8 +1167,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200,
-    "collapsed": true
+    "width": 200
   },
   "right": {
     "id": "9003d078f8dbc4ed",
@@ -1252,19 +1265,24 @@
       "obsidian-excalidraw-plugin:New drawing": false
     }
   },
-  "active": "dcac7e049e8f3dbe",
+  "active": "ac87d09328b4386d",
   "lastOpenFiles": [
+    "Pictures/Pasted image 20260308232014.png",
+    "Homework/Math 654/Homework 2.md",
+    "Homework/Math 654/Homework 1.md",
+    "Notes/Blasius定理，Chaplygin定理.md",
+    "Notes/Kutta-Joukowski定理.md",
+    "Notes/Ising Model.md",
+    "Notes/Lagrange Multiplier.md",
+    "Notes/Bose-Einstein statistics与BEC.md",
+    "Homework/Math 654/Untitled.md",
     "Pictures/Pasted image 20260308225017.png",
     "Pictures/Pasted image 20260308224955.png",
     "Pictures/Pasted image 20260308224922.png",
-    "Homework/Math 654/Homework 2.md",
-    "Homework/Math 654/Untitled.md",
     "Notes/圆柱绕流.md",
-    "Notes/Blasius定理，Chaplygin定理.md",
     "Excalidraw/Drawing 2026-03-08 21.56.19.excalidraw.md",
     "Notes/全纯函数.md",
     "Notes/保角变换.md",
-    "Notes/Bose-Einstein statistics与BEC.md",
     "Pictures/Pasted image 20260308191951.png",
     "Notes/Ideal flow.md",
     "Notes/Hamiltonian Formulation of EM.md",
@@ -1280,16 +1298,11 @@
     "Notes/流体的动力学与热力学函数.md",
     "Notes/流体的描述.md",
     "Pictures/Pasted image 20260308002556.png",
-    "Pictures/Pasted image 20260308002532.png",
     "Notes/Dam-break问题.md",
     "Excalidraw/Drawing 2026-03-07 20.20.08.excalidraw.md",
     "Notes/非线性波.md",
     "Notes/能均分定理，virial定理.md",
     "Notes/被动变换与主动变换.md",
-    "Notes/线性波.md",
-    "Notes/声波.md",
-    "Notes/热力学中的求导.md",
-    "Experimental/Untitled.md",
     "tldraw",
     "Excalidraw/Scripts/Downloaded",
     "Excalidraw/Scripts",

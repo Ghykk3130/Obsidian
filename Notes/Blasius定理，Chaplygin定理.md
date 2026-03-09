@@ -1,6 +1,6 @@
 考虑二维流体。不妨令$\zeta=x+iy$。对于速度势$\phi$，我们定义：
 $$w(\zeta)=\phi+i\psi$$
-我们要求Riemann-Cauchy条件：
+我们通过Cauchy-Riemann条件构造出复势：
 $$\frac{\partial \phi}{\partial x}= \frac{\partial \psi}{\partial y},\ \frac{\partial \phi}{\partial y}=- \frac{\partial \psi}{\partial x}$$
 >[!Success] Theorem 1 (Blasius' theorem)
 >For a 2D irrotational flow past a body with boundary $C$, we have:
@@ -96,6 +96,28 @@ $$\begin{align}
 \end{align}$$
 >[!Right]
 >$\blacksquare$
+
+## Ex:
+
+我们试图考虑一个圆柱的受力：
+$$F_{x}-iF_{y}= \frac{1}{2}\rho i \oint_{C}d \zeta \left( \frac{dw}{d\zeta} \right)^{2}$$考虑复势：
+$$w(\zeta)= U\left( \zeta+ \frac{r_{0}^{2}}{\zeta} \right)+ \frac{\Gamma}{2\pi i}\ln \zeta$$
+所以：
+$$\begin{align}
+\frac{dw}{d\zeta} & = U+ \frac{\Gamma}{2\pi i} \frac{1}{\zeta}- U \frac{r_{0}^{2}}{\zeta^{2}}
+\end{align}$$
+在$\zeta=0$处存在奇点。我们试图使用留数定理。所以我们只需要研究$\mathcal{O}\left( \frac{1}{\zeta} \right)$项即可。我们有：
+$$\begin{align}
+\left( \frac{dw}{d\zeta} \right)^{2} & = U^{2}+ \frac{\Gamma U}{\pi i} \frac{1}{\zeta}+\mathcal{O}\left( \frac{1}{\zeta^{2}} \right)
+\end{align}$$
+所以$\text{Res}\left( \left( \frac{dw}{d\zeta} \right)^{2},0 \right)= \frac{\Gamma U}{\pi i}$。所以：
+$$\begin{align}
+F_{x}-iF_{y} & = \frac{1}{2}\rho i 2\pi i \cdot \frac{\Gamma U}{\pi i} \\
+ & = i\rho U\Gamma
+\end{align}$$
+所以：
+$$F_{x}=0,\ F_{y}=-\rho U\Gamma$$
+
 
 
 
