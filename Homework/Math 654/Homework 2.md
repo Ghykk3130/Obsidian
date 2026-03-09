@@ -482,6 +482,57 @@ $$\begin{align}
 \frac{r}{a}= \frac{B+ \sqrt{ B^{2}-4 }}{2}= \frac{B}{2}+ \left( \frac{B^{2}}{4}-1 \right)^{1/2}
 \end{align}\text{ with }\theta= \frac{3\pi}{2}$$
 Clearly, the positions of the stagnations points vary as we tune $B$. When $B\leq 2$, as we increase $B$, clearly the solution to $\sin \theta=- \frac{B}{2}$ moves closer to each other and annihilate at $\theta=\frac{3\pi}{2}$. Then if we further increase $B$, the point moves off the surface of the cylinder vertically, with $\frac{r}{a}= \frac{B}{2}+\left( \frac{B^{2}}{4}-1 \right)^{1/2}$. 
+# Acheson 4.5
 
+Take a line element $d  \hat{\mathbf{l}}$ oriented counterclockwise along $C$. Then the force is:
+$$d F_{x}=-dl p  \sin \theta,\ dF_{y}= dlp \cos \theta$$
+Then the torque is:
+$$d\mathcal{N}= xdF_{y}-ydF_{x}$$
+Observe that:
+$$\begin{align}
+z(dF_{x}-idF_{y}) & = xdF_{x}+ydF_{y}-ixdF_{y}+iydF_{x}
+\end{align}$$
+Then:
+$$d\mathcal{N}= -\mathrm{Im}(z(dF_{x}-idF_{y}))=\mathrm{Re}(iz(dF_{x}-idF_{y}))$$
+We know that:
+$$\begin{align}
+dF_{x}-idF_{y} & = -dlp \sin \theta- i dlp \cos \theta  \\
+ & = -idlpe^{-i\theta} 
+\end{align}$$
+Recall the Bernoulli's theorem:
+$$\frac{1}{2}\rho|\mathbf{u}|^{2}+ p=k\text{ for some constant }k$$
+Then:
+$$dF_{x}-idF_{y}= -idl\left( k- \frac{1}{2}\rho|\mathbf{u}|^{2} \right)e^{-i\theta}$$
+Observe that:
+$$\begin{align}
+\frac{dw}{dz} & = \frac{dw}{dx} \\
+ & = \frac{\partial \phi}{\partial x}+ i \frac{\partial \psi}{\partial x} \\
+ & = u-iv
+\end{align}$$
+Since the velocity on $C$ cannot have perpendicular component, we have $(u,v)\parallel d  \hat{\mathbf{l}}$. Then:
+$$\begin{align}
+\frac{dw}{dz} & = |\mathbf{u}|\cos \theta-i |\mathbf{u}|\sin \theta \\
+ & = |\mathbf{u}| e^{-i\theta}
+\end{align}$$
+Therefore:
+$$\begin{align}
+dF_{x}-idF_{y} & = \left[ \frac{1}{2}\rho e^{2i\theta}\left(  \frac{dw}{dz} \right)^{2}-k \right] i e^{-i\theta}dl \\
+ & = \frac{1}{2}i \rho e^{i\theta}\left( \frac{dw}{dz} \right)^{2}dl- ki(dx-idy)
+\end{align}$$
+Then:
+$$\begin{align}
+iz(dF_{x}-idF_{y}) & = - \frac{1}{2}z \rho e^{i\theta}\left(  \frac{dw}{dz} \right)^{2}dl+ kz(dx-dy) \\
+ & = - \frac{1}{2}z \rho e^{i\theta}\left( \frac{dw}{dz} \right)^{2}dl+ k(xdx+ydy) \\
+\end{align}$$
+Then:
+$$\begin{align}
+\mathcal{N} & = \oint_{C} \mathrm{Re}(iz(dF_{x}-idF_{y})) \\
+ & = \oint \mathrm{Re}\left( - \frac{1}{2}z\rho e^{i\theta}\left( \frac{dw}{dz} \right)^{2} dl\right)+ \oint k(xdx+ydy) \\
+ & = \oint \mathrm{Re}\left( - \frac{1}{2}z \rho e^{i\theta}\left( \frac{dw}{dz} \right)^{2}dl \right)+ k\left[ \frac{1}{2}x^{2}+ \frac{1}{2}y^{2} \right]_{(x_{0},y_{0})}^{(x_{0},y_{0})} \\
+ & = \mathrm{Re}\left( \oint\left( - \frac{1}{2}z\rho e^{i\theta}\left( \frac{dw}{dz} \right)^{2}dl \right) \right)+0 \\
+ & = \mathrm{Re}\left( \oint\left( - \frac{1}{2}z\rho\left( \frac{dw}{dz} \right)^{2}dz \right) \right)
+\end{align}$$
+We can move $\mathrm{Re}$ out of the integral since in general:
+$$\int \mathrm{Re}((f+ig)dl)= \int fdl=\mathrm{Re}\left( \int fdl+ i  \int gdl \right)=\mathrm{Re}\left( \int(f+ig)dl \right)\text{ for }f(x,y),g(x,y)\in \mathbb{R}$$
 
 
