@@ -333,7 +333,7 @@ $$\begin{align}
 \end{align}$$
 where $q=h_{1}u_{1}=h_{2}u_{2}$. We have:
 $$\begin{align}
- & \frac{1}{2}gh_{1}^{2}+ U_{1}h_{1}^{2}= \frac{1}{2}gh_{2}^{2}+ U_{2}h_{2}^{2} \\
+ & \frac{1}{2}gh_{1}^{2}+ U_{1}^{2}h_{1}= \frac{1}{2}gh_{2}^{2}+ U_{2}^{2}h_{2} \\
 \implies & \frac{1}{2}g(h_{1}^{2}-h_{2}^{2})=h_{2}U_{2}^{2}-h_{1}U_{1}^{2} \\
 \implies & \frac{1}{2}g(h_{1}^{2}-h_{2}^{2})=\frac{q^{2}}{h_{2}}- \frac{q^{2}}{h_{1}} = q^{2} \frac{h_{1}-h_{2}}{h_{1}h_{2}}
 \end{align}$$
@@ -417,7 +417,7 @@ Then:
 $$u_{r}|_{r=a}=0\implies C=Ua^{2}$$
 Then:
 $$\phi(r,\theta)= U\left( r+ \frac{a^{2}}{r} \right)\cos \theta$$
-Now introduce the circulation. Then we have:
+Now introduce the circulation. Notice that the circulation $\frac{\Gamma}{2\pi}\theta$ has the property that $\nabla^{2}\left( \frac{\Gamma}{2\pi}\theta \right)=0$, and it satisfies the boundary conditions. Therefore we can add it to the original solution:
 $$\phi(r,\theta)=U\left( r+\frac{a^{2}}{r} \right)\cos \theta+ \frac{\Gamma}{2\pi}\theta$$
 Then:
 $$\begin{align}
@@ -546,9 +546,9 @@ w(z) & = U\left( r+ \frac{a^{2}}{r} \right)\cos \theta+ \frac{\Gamma}{2\pi}\thet
  & = Ur e^{i\theta}+ U \frac{a^{2}}{re^{i\theta}}+ \frac{\Gamma}{2\pi}(-i)(\ln r+i\theta) \\
  & = U\left(  z+ \frac{a^{2}}{z} \right)+ \frac{\Gamma}{2\pi i}\ln z
 \end{align}$$
-Now if the circle is centered at $ia\cot \beta$, we have:
+Now if the circle is centered at $ia\cot \beta$, with radius $a\csc \beta$ we have:
 $$\begin{align}
-w(z) & = U\left( (z-ia\cot \beta )+ \frac{a^{2}}{z-ia\cot \beta}  \right)+ \frac{\Gamma}{2\pi i}\ln(z-ia\cot \beta)
+w(z) & = U\left( (z-ia\cot \beta )+ \frac{a^{2}\csc ^{2}\beta}{z-ia\cot \beta}  \right)+ \frac{\Gamma}{2\pi i}\ln(z-ia\cot \beta)
 \end{align}$$
 Let $\tilde{w}$ be the transformed complex potential in the $Z$-plane. Then:
 $$\begin{align}
@@ -564,7 +564,7 @@ We must have that $z\approx Z\text{ at }r\rightarrow \infty$. Therefore must con
 $$z= \frac{Z+\sqrt{ Z^{2}-4a^{2} }}{2}$$
 Then:
 $$\begin{align}
-\tilde{w}(Z) & = U\left( \left( \frac{Z+\sqrt{ Z^{2}-4a^{2} }}{2} -ia\cot \beta\right) + \frac{a^{2}}{\frac{Z+\sqrt{ Z^{2}-4a^{2} }}{2}-ia\cot \beta} \right)+ \frac{\Gamma}{2\pi i}\ln\left( \frac{Z+\sqrt{ Z^{2}-4a^{2} }}{2}-ia\cot \beta \right)
+\tilde{w}(Z) & = U\left( \left( \frac{Z+\sqrt{ Z^{2}-4a^{2} }}{2} -ia\cot \beta\right) + \frac{a^{2}\csc ^{2}\beta}{\frac{Z+\sqrt{ Z^{2}-4a^{2} }}{2}-ia\cot \beta} \right)+ \frac{\Gamma}{2\pi i}\ln\left( \frac{Z+\sqrt{ Z^{2}-4a^{2} }}{2}-ia\cot \beta \right)
 \end{align}$$
 We have the complex velocity:
 $$\begin{align}
@@ -573,7 +573,7 @@ $$\begin{align}
 \end{align}$$
 Note that at the leading and trailing edges, we have $z=\pm a$. Then we must conclude that:
 $$\left. \frac{dw}{dz}\right|_{z=\pm a}=0$$
-so that the velocity doesn't blow up. We have:
+so that the velocity doesn't blow up. Let $R=a\csc ^{2}\beta$, we have:
 $$\begin{align}
 \frac{dw}{dz} & = U\left( 1- \frac{R^{2}}{(z-ia\cot \beta)^{2}} \right)+ \frac{\Gamma}{2\pi i(z-ia\cot \beta)}
 \end{align}$$
@@ -638,7 +638,7 @@ There is no contradiction because the two systems rely on fundamentally differen
 We have:
 $$\begin{align}
 w(z) & = z^{2/3}  \\
- & = r^{2/3} e^{\frac{2}{3}\theta} \\
+ & = r^{2/3} e^{\frac{2}{3}i\theta} \\
  & = r^{2/3} \cos \frac{2}{3}\theta+ i r ^{2/3} \sin \frac{2}{3}\theta
 \end{align}$$
 Then we have the stream function:
@@ -678,8 +678,8 @@ $$\begin{align}
 \end{align}$$
 Then:
 $$\begin{align}
- & \frac{\partial \psi}{\partial x}=- \frac{\partial \phi}{\partial y} =-\frac{A\omega}{k}ke^{ky}\sin(ky-\omega t) \\
-\implies &  -\frac{A\omega}{k}ke^{ky}\sin(kx-\omega t)+ \frac{\partial f}{\partial x}= - \frac{A\omega}{k}ke^{ky}\sin(ky-\omega t) \\
+ & \frac{\partial \psi}{\partial x}=- \frac{\partial \phi}{\partial y} =-\frac{A\omega}{k}ke^{ky}\sin(kx-\omega t) \\
+\implies &  -\frac{A\omega}{k}ke^{ky}\sin(kx-\omega t)+ \frac{\partial f}{\partial x}= - \frac{A\omega}{k}ke^{ky}\sin(kx-\omega t) \\
 \implies & f=C\text{ for some constant }C
 \end{align}$$
 Without loss of generality, take $C=0$. This is because only the derivative of $\psi$ would contribute to velocities, and there is a gauge freedom.
