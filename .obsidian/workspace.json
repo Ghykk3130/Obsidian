@@ -1167,7 +1167,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 200,
+    "collapsed": true
   },
   "right": {
     "id": "9003d078f8dbc4ed",
@@ -1267,6 +1268,9 @@
   },
   "active": "ac87d09328b4386d",
   "lastOpenFiles": [
+    "Notes/圆柱绕流.md",
+    "Notes/固体热容.md",
+    "Homework/Math 654/Untitled.md",
     "Pictures/Pasted image 20260308232014.png",
     "Homework/Math 654/Homework 2.md",
     "Homework/Math 654/Homework 1.md",
@@ -1275,11 +1279,9 @@
     "Notes/Ising Model.md",
     "Notes/Lagrange Multiplier.md",
     "Notes/Bose-Einstein statistics与BEC.md",
-    "Homework/Math 654/Untitled.md",
     "Pictures/Pasted image 20260308225017.png",
     "Pictures/Pasted image 20260308224955.png",
     "Pictures/Pasted image 20260308224922.png",
-    "Notes/圆柱绕流.md",
     "Excalidraw/Drawing 2026-03-08 21.56.19.excalidraw.md",
     "Notes/全纯函数.md",
     "Notes/保角变换.md",
@@ -1297,7 +1299,6 @@
     "Notes/N维球.md",
     "Notes/流体的动力学与热力学函数.md",
     "Notes/流体的描述.md",
-    "Pictures/Pasted image 20260308002556.png",
     "Notes/Dam-break问题.md",
     "Excalidraw/Drawing 2026-03-07 20.20.08.excalidraw.md",
     "Notes/非线性波.md",
