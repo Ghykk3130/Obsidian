@@ -534,5 +534,19 @@ $$\begin{align}
 \end{align}$$
 We can move $\mathrm{Re}$ out of the integral since in general:
 $$\int \mathrm{Re}((f+ig)dl)= \int fdl=\mathrm{Re}\left( \int fdl+ i  \int gdl \right)=\mathrm{Re}\left( \int(f+ig)dl \right)\text{ for }f(x,y),g(x,y)\in \mathbb{R}$$
+# Acheson 4.8
+
+We have the transformation:
+$$Z= z+ \frac{a^{2}}{z}$$
+Then:
+$$\begin{align}
+\frac{Z-2a}{Z+2a } & = \frac{z+ \frac{a^{2}}{z}-2a}{z+ \frac{a^{2}}{z}+2a} \\
+ & = \frac{(z-a)^{2}}{(z+a)^{2}}
+\end{align}$$
+Then we have:
+$$\begin{align}
+ & \text{arg}\left( \frac{Z-2a}{Z+2a} \right)= \text{arg}\left( \left( \frac{z-{a}}{z+a} \right)^{2} \right) \\
+\implies & \text{arg}(Z-2a)-\text{arg}(Z+2a)= 2 \text{arg}\left( \frac{z-a}{z+a} \right)=2\text{arg}(z-a)-2\text{arg}(z+a)
+\end{align}$$
 
 
