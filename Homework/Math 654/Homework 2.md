@@ -69,34 +69,10 @@ This is obviously an ellipse. The representative pathlines are drawn for $k=1,h=
 
 # Acheson 3.6
 
-Define the velocity potential $\phi(x,y,t)$ for $y>h(x,t)$ and $y< h(x,t)$. For $y<h$, consider the Fourier transform:
-$$\begin{align}
-
-\phi(x,y,t)= \int_{\mathbb{R}^{2}}dkd\omega \tilde{\phi}(k,y,t)e^{i(kx-\omega t)}
-
-\end{align}$$
+Define the velocity potential $\phi(x,y,t)$ for $y>h(x,t)$ and $y< h(x,t)$. For $y<h$, we make the ansatz:
+$$\phi(x,y,t)= \phi_{0}(k,y,t)e^{i(kx-\omega t)}$$
 Then the Laplace equation reduces to:
-$$\nabla^{2}\phi=0\implies \partial_{yy}\tilde{\phi}=k^{2}\tilde{\phi}\implies \tilde{\phi}=Be ^{{|k|y}}+C e^{{-|k|}y}$$
-Know that:
-$$\begin{align}
-
- & u < \infty\text{ at } y=-\infty \\
-
-\implies & |\nabla \phi |<  \infty\text{ at }y=- \infty \\
-
-\implies & \left|\partial_{x}\int dkd\omega \tilde{\phi}e^{i(kx-\omega t)} \right|< \infty  \text{ at }y=- \infty\\
-
-\implies & \left|\int dkd\omega \tilde{\phi} (ik)e^{i(kx-\omega t)}\right|<\infty \text{ at }y=- \infty\implies  \tilde{\phi}=B e^{|k|y}\text{ for }y<h
-
-\end{align}$$
-Then we transform $\eta$:
-$$\begin{align}
-
-\tilde{\eta}(k^{'},\omega^{'}) & = \left( \frac{1}{2\pi} \right)^{2}\int_{\mathbb{R}^{2}}dxdt A e^{i(kx-\omega t)}e^{-i(k^{'}x-\omega^{'}t)} \\
-
- & = A \delta(k^{'}-k)\delta(\omega^{'}-\omega)
-
-\end{align}$$
+$$\nabla^{2}\phi=0\implies \partial_{yy}\phi_{0}=k^{2}\phi_{0}\implies \phi_{0}=Be ^{{|k|y}}+C e^{{-|k|}y}$$
 we have:
 $$\begin{align}
 
@@ -104,17 +80,15 @@ $$\begin{align}
 
  \\
 
-\implies & \partial_{y}\tilde{\phi}=-i\omega^{'} A\delta(k^{'}-k)\delta(\omega^{'}-\omega)\text{ at }y=0 \\
+\implies & \partial_{y}\phi_{0}=-i\omega \text{ at }y=0 \\
 
 \implies 
 
- & B= -i \frac{\omega^{'}}{|k^{'}|}A\delta(k^{'}-k )\delta(\omega^{'}-\omega)\end{align}$$
+ & B= -i \frac{\omega^{}}{|k^{}|}A\end{align}$$
  Then:
  $$\begin{align}
 
-\phi & = \int_{\mathbb{R}^{2}}dk^{'}d\omega^{'}(-i) \frac{\omega^{'}}{|k^{'}|}A\delta(k^{'}-k)\delta(\omega^{'}-\omega)e^{|k^{'}|y}e^{i(k^{'}x-\omega^{'}t)} \\
-
- & = -i \frac{\omega}{|k|} Ae^{|k|y}e^{i(kx-\omega t)}
+\phi &  = -i \frac{\omega}{|k|} Ae^{|k|y}e^{i(kx-\omega t)}
 
 \end{align}$$
 Then we choose the gauge such that the time dependent constant is zero in Bernoulli's equation:
@@ -633,8 +607,142 @@ $$\begin{align}
 \implies & 2U\cos \beta+ \frac{\Gamma}{2\pi R}=0 \\
 \implies & \Gamma=-4\pi Ua\cot \beta
 \end{align}$$
+# Acheson 4.10
+
+Let $S$ be the boundary of the control region $ABCDA$ and the boundary of the airfoil $C$. Then:
+$$-\int_{S}p n_{x}dl= \int_{S}\rho u(\mathbf{u}\cdot \mathbf{n})dl$$
+On $C$, we have:
+$$F_{x}=-\int_{C}pn_{x}dl$$
+where $n_{x}$ points out of the airfoil. Since $\mathbf{u}\cdot \mathbf{n}=0$ on $C$, we have:
+$$\int_{C}\rho u(\mathbf{u}\cdot \mathbf{n})dl=0$$
+Then:
+$$-\int_{\text{ABCDA}}pn_{x}dl+F_{x}=\int_{\text{ABCDA}}\rho u(\mathbf{u}\cdot \mathbf{n})dl$$
+Assume that on AD, we have $\mathbf{u}=(U,0)$. On BC, we have $\mathbf{u}=(u^{'},v^{'})$.
+
+Since AB, DC are streamlines, we must have mass conservation throughout ABCDA:
+$$\rho Ud=\rho u^{'}d\implies u^{'}=U$$
+Here the integrals along AB and CD cancel out because the velocities on them are exactly the same. 
+
+Let the pressure be $p,p^{'}$ on AD, BC. Then Bernoulli's theorem implies that:
+$$p+ \frac{1}{2}\rho U^{2}=p^{'}+ \frac{1}{2}\rho\left( U^{2}+ \frac{\Gamma^{2}}{d^{2}}
+\right)\implies p-p^{'}= \frac{1}{2}\rho \frac{\Gamma^{2}}{d^{2}}$$
+Then we have:
+$$\begin{align}
+F_{x} & = \int_{\text{ABCDA}} pn_{x}dl+ \int_{\text{ABCDA}} \rho u(\mathbf{u}\cdot \mathbf{n})dl \\
+ & = -p^{'}d+pd+ \int_{\text{BC}} \rho U \cdot U dy+ \int_{\text{AD}}\rho U(-U)dy \\
+ & = \frac{1}{2}\rho \frac{\Gamma^{2}}{d}+\rho U^{2}d-\rho U^{2}d \\
+ & = \frac{\rho \Gamma^{2}}{2d}
+\end{align}$$
+For the same reason, the integrals along AB, CD are not considered because they cancel out. 
+
+There is no contradiction because the two systems rely on fundamentally different far-field boundary conditions. The Kutta-Joukowski theorem assumes an isolated body where the flow returns to a uniform state at infinity, yielding zero drag. In contrast, here the downstream flow is permanently deflected, and the velocity to the right infinity is no longer $U  \hat{\mathbf{x}}$. This creates a global static pressure drop that leads to a non-zero drag.
+# HW2S1
+## a)
+
+We have:
+$$\begin{align}
+w(z) & = z^{2/3}  \\
+ & = r^{2/3} e^{\frac{2}{3}\theta} \\
+ & = r^{2/3} \cos \frac{2}{3}\theta+ i r ^{2/3} \sin \frac{2}{3}\theta
+\end{align}$$
+Then we have the stream function:
+$$\psi=r^{2/3} \sin \frac{2}{3}\theta$$
+We know that the equipotential line of $\psi$ defines streamlines, since:
+$$\begin{align}
+d\psi & = \frac{\partial \psi}{\partial x}dx+ \frac{\partial \psi}{\partial y}dy \\
+ & = -vdx+ udy=0 \\
+\implies & \frac{dy}{dx}= \frac{v}{u}
+\end{align}$$
+Know that on the boundary, there's no perpendicular velocity component, then the boundary is a streamline. Then we must have:
+$$\psi=C\text{ for some constant }C$$
+on the boundary. If the boundary has a corner, we must conclude that the equipotential line passes through $r=0$ so that $C=0$. Otherwise, the equipotential line does not give a corner and is given by:
+$$r^{2/3}\sin \frac{2}{3}\theta=C,\ C\neq 0$$
+Therefore, we have:
+$$r^{2/3}\sin \frac{2}{3}\theta=0\implies r=0\text{ or }\theta=0\text{ or }  \frac{3}{2}\pi$$
+Then, the flow is limited in the first three quadrants.
+## b)
+![[Pasted image 20260309005734.png|center|500]]
+## c)
+
+We know that:
+$$|\mathbf{u}|= |  \frac{dw}{dz}|= \frac{2}{3}r^{-1/3}$$
+Then the constant in Bernoulli's theorem is:
+$$\frac{1}{2}\rho|\mathbf{u}|^{2}+ p=0+0\text{ at }r=\infty$$
+Then on the boundary wall, we have:
+$$\begin{align}
+ & p+ \frac{1}{2}\rho \frac{4}{9}r^{-2/3}=0 \\
+\implies & p=- \frac{2}{9} \rho r^{-2/3}
+\end{align}$$
+# HW2S2
+
+For $\phi= \frac{A\omega}{k}e^{ky}\sin(kx-\omega t)$, we have:
+$$\begin{align}
+ & \frac{\partial \psi}{\partial y}= \frac{\partial \phi}{\partial x}= A\omega e^{ky}\cos(kx-\omega t) \\
+\implies  & \psi= \frac{A\omega}{k}e^{ky}\cos(kx-\omega t)+f(x,t)
+\end{align}$$
+Then:
+$$\begin{align}
+ & \frac{\partial \psi}{\partial x}=- \frac{\partial \phi}{\partial y} =-\frac{A\omega}{k}ke^{ky}\sin(ky-\omega t) \\
+\implies &  -\frac{A\omega}{k}ke^{ky}\sin(kx-\omega t)+ \frac{\partial f}{\partial x}= - \frac{A\omega}{k}ke^{ky}\sin(ky-\omega t) \\
+\implies & f=C\text{ for some constant }C
+\end{align}$$
+Without loss of generality, take $C=0$. This is because only the derivative of $\psi$ would contribute to velocities, and there is a gauge freedom.
+
+Then:
+$$w(z)= \frac{A\omega}{k}e^{ky}(\sin(kx-\omega t)+i\cos(kx-\omega t))= i \frac{A\omega}{k}e^{ky}e^{-i(kx-\omega t)}= i \frac{A\omega}{k}e^{-ikz+i\omega t}$$
+![[Pasted image 20260309014003.png|center|600]]
 
 
+For the second case, suppose the surface is given by:
+$$\eta=A\cos(kx-\omega t)$$
+we propose an ansatz:
+$$\phi=\phi_{0}(y) \sin(kx-\omega t)$$
+We have:
+$$\nabla^{2}\phi=0$$
+with boundary conditions:
+$$\begin{align}
+ & \partial_{y}\phi=0\text{ at }y=-h \\
+ & \partial_{y}\phi=\partial_{t}\eta\text{ at }y=0 \\
+ & \partial_{t}\phi+g\eta=0\text{ at }y=0
+\end{align}$$
+Then:
+$$\begin{align}
+ & \nabla^{2}\phi=0\implies \partial_{yy}\phi_{0}=k^{2}\phi_{0}\implies \phi_{0}(y)=Be^{ky}+Ce^{-ky}
+\end{align}$$
+Then:
+$$\partial_{y}\phi=0\text{ at }y=-h\implies \phi_{0}(y)=B\cosh(k(y+h))$$
+Then:
+$$\phi=B\cosh(k(y+H))\sin(kx-\omega t)$$
+Then:
+$$\begin{align}
+ & \left.\frac{\partial \phi}{\partial y}\right|_{y=0}= Bk\sinh(kh)\sin(kx-\omega t)= \frac{\partial \eta}{\partial t}= A \omega \sin(kx-\omega t) \\
+\implies & B= \frac{A\omega}{k\sinh(kh)}
+\end{align}$$
+Then:
+$$\phi= \frac{A\omega}{k\sinh(kh)}\cosh(k(y+h))\sin(kx-\omega t)$$
+Similarly, we compute:
+$$\begin{align}
+ & \frac{\partial \psi}{\partial y}= \frac{\partial \phi}{\partial x}= \frac{A\omega}{\sinh(kh)}\cosh(k(y+h))\cos(kx-\omega t) \\
+\implies & \psi=\frac{A\omega}{k \sinh(kh)}\sinh(k(y+h))\cos(kx-\omega t)+f(x,t)
+\end{align}$$
+Similarly:
+$$\begin{align}
+ & \frac{\partial \psi}{\partial x}=- \frac{\partial \phi}{\partial y} \\
+\implies & \frac{\partial f}{\partial x}=0 \\
+\implies  & f=0
+\end{align}$$
+Here we take $f=0$ again without loss of generality. Then:
+$$w(z)= \frac{A\omega}{k\sinh(kh)}(\sin(kx-\omega t)\cosh(k(y+h))+i\cos(kx-\omega t)\sinh(k(y+h)))$$
+Know that:
+$$\begin{align}
+  \sin(\alpha+i\beta)  & = \sin \alpha \cos(i\beta)+ \cos \alpha \sin(i\beta) \\
+ & = \sin \alpha \cosh \beta+i\cos \alpha \sin \beta
+\end{align}$$
+Then:
+$$\begin{align}
+w(z) & = \frac{A\omega}{k\sinh(kh)}\sin(k(z+ih)-\omega t)
+\end{align}$$
+![[Pasted image 20260309014104.png|center|600]]
 
 
 

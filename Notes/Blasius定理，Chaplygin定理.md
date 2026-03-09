@@ -2,6 +2,19 @@
 $$w(\zeta)=\phi+i\psi$$
 我们通过Cauchy-Riemann条件构造出复势：
 $$\frac{\partial \phi}{\partial x}= \frac{\partial \psi}{\partial y},\ \frac{\partial \phi}{\partial y}=- \frac{\partial \psi}{\partial x}$$
+我们称$\psi$为stream function。接下来考虑流函数的物理意义。考虑$\psi$的等势面：
+$$\begin{align}
+ & d\psi=0 \\
+\implies &  \frac{\partial \psi}{\partial x}dx+ \frac{\partial \psi}{\partial y}dy=0 \\
+\implies & -u_{y}dx+ u_{x}dy=0 \\
+\implies & \frac{dy}{dx}=\frac{u_{y}}{u_{x}}
+\end{align}$$
+则必定是一条流线。
+
+## Ex:
+
+在固体边界$C$上，必定有垂直于$C$的速度为零。所以速度都是沿着$C$的，所以$C$是一条流线。所以$C$是流函数的等势面。
+
 >[!Success] Theorem 1 (Blasius' theorem)
 >For a 2D irrotational flow past a body with boundary $C$, we have:
 >$$F_{x}-iF_{y}=\frac{1}{2}i\rho \oint d\zeta\left( \frac{dw}{d\zeta} \right)^{2}$$
