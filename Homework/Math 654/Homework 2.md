@@ -14,13 +14,9 @@ Then:
 $$\partial_{y}\phi=\partial_{t}\eta\text{ at }y=0$$
 Consider the Bernoulli equation on the surface:
 $$\begin{align}
-
  & \rho \frac{\partial \phi}{\partial t}+ \frac{1}{2}\rho |\nabla \phi |^{2}+ \rho g\eta+p{0}=f(t)\text{ on the surface} \\
-
 \implies &  \rho \frac{\partial \phi}{\partial t}+ \rho g\eta+ p_{0} =f(t) \\
-
 \implies &  \partial_{t}\phi+g\eta= g(t)\text{, where }g(t)= \frac{f(t)-p_{0}}{\rho}\text{ at }y= \eta
-
 \end{align}$$
 We approximate:
 $$\partial_{t}\phi|_{y=\eta}\approx \partial_{t}\phi|_{y=0}+ \partial_{yt}\phi|_{y=0}\eta \approx \partial_{t}\phi|_{y=0}$$
@@ -523,7 +519,7 @@ $$\begin{align}
 \implies & \text{arg}(Z-2a)-\text{arg}(Z+2a)= 2 \text{arg}\left( \frac{z-a}{z+a} \right)=2\text{arg}(z-a)-2\text{arg}(z+a)
 \end{align}$$
 Consider the circle in the $z$-plane. 
-![[Drawing 2026-03-08 21.56.19.excalidraw|center|300]]
+![[Drawing 2026-03-08 21.56.19.excalidraw|300|center]]
 It's obvious from geometry that given a point $z$ on the circle, we have:
 $$\text{arg}(z-a)-\text{arg}(z+a)=\beta$$
 Then:

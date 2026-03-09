@@ -1103,12 +1103,14 @@
             "id": "c567bcbdbfd5ffb2",
             "type": "leaf",
             "state": {
-              "type": "release-notes",
+              "type": "markdown",
               "state": {
-                "currentVersion": "1.12.4"
+                "file": "Homework/Math 654/Homework 2.md",
+                "mode": "source",
+                "source": false
               },
-              "icon": "lucide-book-up",
-              "title": "Release Notes 1.12.4"
+              "icon": "lucide-file",
+              "title": "Homework 2"
             }
           }
         ],
@@ -1241,24 +1243,17 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Degenerate Fermi Gas.md"
+                "file": "Homework/Math 654/Homework 2.md",
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of Degenerate Fermi Gas"
-            }
-          },
-          {
-            "id": "0b9f087504e74676",
-            "type": "leaf",
-            "state": {
-              "type": "git-view",
-              "state": {},
-              "icon": "git-pull-request",
-              "title": "Source Control"
+              "title": "Outline of Homework 2"
             }
           }
         ],
-        "currentTab": 4
+        "currentTab": 3
       }
     ],
     "direction": "horizontal",
@@ -1280,8 +1275,9 @@
   "active": "c567bcbdbfd5ffb2",
   "lastOpenFiles": [
     "Homework/Math 654/Untitled.md",
-    "Pictures/Pasted image 20260309014952.png",
     "Homework/Math 654/Homework 2.md",
+    "Homework/Math 654/Homework 2.html",
+    "Pictures/Pasted image 20260309014952.png",
     "Pictures/Pasted image 20260309014104.png",
     "Pictures/Pasted image 20260309014003.png",
     "Pictures/Pasted image 20260309013942.png",
@@ -1322,7 +1318,6 @@
     "Notes",
     "Homework/Physics 463",
     "Homework/Physics 511",
-    "Homework/Physics 510",
-    "Homework/Physics 402"
+    "Homework/Physics 510"
   ]
 }
