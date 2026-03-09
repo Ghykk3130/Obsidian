@@ -548,5 +548,93 @@ $$\begin{align}
  & \text{arg}\left( \frac{Z-2a}{Z+2a} \right)= \text{arg}\left( \left( \frac{z-{a}}{z+a} \right)^{2} \right) \\
 \implies & \text{arg}(Z-2a)-\text{arg}(Z+2a)= 2 \text{arg}\left( \frac{z-a}{z+a} \right)=2\text{arg}(z-a)-2\text{arg}(z+a)
 \end{align}$$
+Consider the circle in the $z$-plane. 
+![[Drawing 2026-03-08 21.56.19.excalidraw|center|300]]
+It's obvious from geometry that given a point $z$ on the circle, we have:
+$$\text{arg}(z-a)-\text{arg}(z+a)=\beta$$
+Then:
+$$\text{arg}(Z-2a)-\text{arg}(Z+2a)=2\beta$$
+Therefore, the transformed circle is a circle intersecting the $x$-axis at $\pm 2a$, subtending an angle of $2\beta$.
+
+In the $z$-plane, by problem 4.4, we have:
+$$\phi(r,\theta)= U\left( r+ \frac{a^{2}}{r} \right)\cos \theta+ \frac{\Gamma}{2\pi }\theta$$
+Cauchy-Riemann condition implies that:
+$$\begin{align}
+ & r \frac{\partial \phi}{\partial r}= \frac{\partial \psi}{\partial \theta} \\
+\implies & \frac{\partial \psi}{\partial \theta}=U\cos \theta\left( r- \frac{a^{2}}{r} \right) \\
+\implies & \psi=U\sin \theta\left( r- \frac{a^{2}}{r} \right)+f(r)
+\end{align}$$
+Then:
+$$\begin{align}
+ & \frac{\partial \phi}{\partial \theta}=- r \frac{\partial \psi}{\partial r} \\
+\implies &  \frac{df}{dr}=- \frac{\Gamma}{2\pi r}\implies f(r)= - \frac{\Gamma}{2\pi}\ln r+C
+\end{align}$$
+Without loss of generality, set $C=0$. We have:
+$$\begin{align}
+w(z) & = U\left( r+ \frac{a^{2}}{r} \right)\cos \theta+ \frac{\Gamma}{2\pi}\theta+ i \left[ U\sin \theta\left( r- \frac{a^{2}}{r} \right)- \frac{\Gamma}{2\pi}\ln r \right] \\
+ & = Ur(\cos \theta+i\sin \theta)+ U \frac{a^{2}}{r}(\cos \theta- i\sin \theta)+ \frac{\Gamma}{2\pi}(\theta-i\ln r) \\
+ & = Ur e^{i\theta}+ U \frac{a^{2}}{re^{i\theta}}+ \frac{\Gamma}{2\pi}(-i)(\ln r+i\theta) \\
+ & = U\left(  z+ \frac{a^{2}}{z} \right)+ \frac{\Gamma}{2\pi i}\ln z
+\end{align}$$
+Now if the circle is centered at $ia\cot \beta$, we have:
+$$\begin{align}
+w(z) & = U\left( (z-ia\cot \beta )+ \frac{a^{2}}{z-ia\cot \beta}  \right)+ \frac{\Gamma}{2\pi i}\ln(z-ia\cot \beta)
+\end{align}$$
+Let $\tilde{w}$ be the transformed complex potential in the $Z$-plane. Then:
+$$\begin{align}
+\tilde{w}(Z) & = w(z)\text{ where }Z= z+ \frac{a^{2}}{z}
+\end{align}$$
+We can solve:
+$$\begin{align}
+ & Z=z+ \frac{a^{2}}{z} \\
+\implies &  z^{2}-Zz+a^{2}=0 \\
+\implies & z= \frac{Z\pm \sqrt{ Z^{2}-4a^{2} }}{2}
+\end{align}$$
+We must have that $z\approx Z\text{ at }r\rightarrow \infty$. Therefore must conclude that:
+$$z= \frac{Z+\sqrt{ Z^{2}-4a^{2} }}{2}$$
+Then:
+$$\begin{align}
+\tilde{w}(Z) & = U\left( \left( \frac{Z+\sqrt{ Z^{2}-4a^{2} }}{2} -ia\cot \beta\right) + \frac{a^{2}}{\frac{Z+\sqrt{ Z^{2}-4a^{2} }}{2}-ia\cot \beta} \right)+ \frac{\Gamma}{2\pi i}\ln\left( \frac{Z+\sqrt{ Z^{2}-4a^{2} }}{2}-ia\cot \beta \right)
+\end{align}$$
+We have the complex velocity:
+$$\begin{align}
+\frac{d\tilde{w}}{dZ} & = \frac{dw}{dz} \frac{dz}{dZ} \\
+ & = \frac{dw}{dz} \frac{1}{1- \frac{a^{2}}{z^{2}}}
+\end{align}$$
+Note that at the leading and trailing edges, we have $z=\pm a$. Then we must conclude that:
+$$\left. \frac{dw}{dz}\right|_{z=\pm a}=0$$
+so that the velocity doesn't blow up. We have:
+$$\begin{align}
+\frac{dw}{dz} & = U\left( 1- \frac{R^{2}}{(z-ia\cot \beta)^{2}} \right)+ \frac{\Gamma}{2\pi i(z-ia\cot \beta)}
+\end{align}$$
+At $z=a$, we have:
+$$\begin{align}
+\frac{dw}{dz} & = U\left( 1- \frac{R^{2}}{(a-ia\cot \beta)^{2}} \right)+ \frac{\Gamma}{2\pi i(a-ia\cot \beta)} \\
+ & = U\left( 1- \frac{R^{2}}{\left( \frac{a}{\sin \beta}e^{-i\left( \frac{\pi}{2}-\beta \right)} \right)^{2}} \right)+ \frac{\Gamma}{2\pi i\left( \frac{a}{\sin \beta}e^{-i\left( \frac{\pi}{2}-\beta \right)} \right)} \\
+ & = U(1- e^{2i(\pi /2-\beta)})+ \frac{\Gamma}{2\pi i\mathrm{Re}^{-i(\pi /2-\beta)}} \\
+ & = U(1+e^{-i{2}\beta})+ \frac{\Gamma}{2\pi \mathrm{Re}^{i\beta} }=0
+\end{align}$$
+Then:
+$$\begin{align}
+ & Ue^{-i\beta}(e^{i\beta}+e^{-i\beta})+ \frac{\Gamma e^{-i\beta}}{2\pi R}=0 \\
+\implies & 2U\cos \beta+ \frac{\Gamma}{2\pi R}=0 \\
+\implies & \Gamma=-4\pi RU\cos \beta=-4\pi Ua\cot \beta
+\end{align}$$
+Similarly, at $z=-a$, we have:
+$$\begin{align}
+\frac{dw}{dz} & = U\left( 1- \frac{R^{2}}{(a+ia\cot \beta)^{2}} \right)- \frac{\Gamma}{2\pi i(a+ia\cot \beta)} \\
+ & = U\left( 1- \frac{R^{2}}{\left( \frac{a}{\sin \beta}e^{-i\left( \beta- \frac{\pi}{2}\right)} \right)^{2}} \right)+ \frac{\Gamma}{2\pi i\left( \frac{a}{\sin \beta}e^{-i\left( \beta- \frac{\pi}{2}\right)} \right)} \\
+ & = U\left( 1- e^{2i\left( \beta- \frac{\pi}{2} \right)} \right)+ \frac{\Gamma}{2\pi i\mathrm{Re}^{-i\left( \beta- \frac{\pi}{2} \right)}} \\
+ & = U(1+e^{i{2}\beta})- \frac{\Gamma}{2\pi \mathrm{Re}^{-i\beta} }=0
+\end{align}$$
+Then:
+$$\begin{align}
+ & Ue^{i\beta}(e^{i\beta}+ e^{-i\beta})+ \frac{\Gamma e^{i\beta} }{2\pi R}=0 \\
+\implies & 2U\cos \beta+ \frac{\Gamma}{2\pi R}=0 \\
+\implies & \Gamma=-4\pi Ua\cot \beta
+\end{align}$$
+
+
+
 
 
