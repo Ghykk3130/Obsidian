@@ -655,7 +655,9 @@ on the boundary. If the boundary has a corner, we must conclude that the equipot
 $$r^{2/3}\sin \frac{2}{3}\theta=C,\ C\neq 0$$
 Therefore, we have:
 $$r^{2/3}\sin \frac{2}{3}\theta=0\implies r=0\text{ or }\theta=0\text{ or }  \frac{3}{2}\pi$$
-Then, the flow is limited in the first three quadrants.
+Then, the flow is limited in the first three quadrants. 
+
+One may argue that the fluid could also be in the fourth quadrant. But then the boundary should be given by $\theta= \frac{3}{2}\pi,\ \theta= 2\pi$. Here if the fluid is in the fourth quadrant, then $\theta=2\pi$ is not a equipotential line of $\psi$. Then fluid would flow through $\theta=2\pi$ $\rightarrow\leftarrow$.
 ## b)
 ![[Pasted image 20260309005734.png|center|500]]
 ## c)
