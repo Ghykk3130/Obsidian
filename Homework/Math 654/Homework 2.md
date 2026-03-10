@@ -1,6 +1,6 @@
 # Acheson 3.1
 
-Let $\eta\ll 1, \partial_{x}\phi,\ \partial_{y}\phi\ll 1, \partial_{x}\eta\ll 1$. Let the spatial or time derivative of $\partial_{x}\phi,\ \partial_{y}\phi,\ \partial_{x}\eta$ be $\ll 1$. We ignore the second-ordered small terms.
+Let $\eta\ll 1, \partial_{x}\phi,\ \partial_{y}\phi\ll 1, \partial_{x}\eta\ll 1$. Let the spatial or time derivative of $\partial_{x}\phi,\ \partial_{y}\phi,\ \partial_{x}\eta$ be $\ll 1$. We keep the linear terms.
 
 Consider the free boundary condition on the surface ($y=\eta$):
 $$\partial_{y}\phi= \partial_{t}\eta+ (\partial_{x}\phi) \partial_{x}\eta\text{ on the surface}$$
