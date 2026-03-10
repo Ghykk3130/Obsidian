@@ -14,7 +14,7 @@ Then:
 $$\partial_{y}\phi=\partial_{t}\eta\text{ at }y=0$$
 Consider the Bernoulli equation on the surface:
 $$\begin{align}
- & \rho \frac{\partial \phi}{\partial t}+ \frac{1}{2}\rho |\nabla \phi |^{2}+ \rho g\eta+p{0}=f(t)\text{ on the surface} \\
+ & \rho \frac{\partial \phi}{\partial t}+ \frac{1}{2}\rho |\nabla \phi |^{2}+ \rho g\eta+p_{0}=f(t)\text{ on the surface} \\
 \implies &  \rho \frac{\partial \phi}{\partial t}+ \rho g\eta+ p_{0} =f(t) \\
 \implies &  \partial_{t}\phi+g\eta= g(t)\text{, where }g(t)= \frac{f(t)-p_{0}}{\rho}\text{ at }y= \eta
 \end{align}$$
@@ -95,7 +95,7 @@ $$\begin{align}
 \implies & p_{2}(x,y=\eta,t)= \rho_{1} \frac{\omega^{2}}{|k|}Ae^{i(kx-\omega t)}-\rho_{1}gAe^{i(kx-\omega t)}
 
 \end{align}$$
-For $y>h$, assume that $\mathbf{U}=U  \hat{\mathbf{x}}$. Then $\phi \sim Ux$ at least for $y=\infty$, and $\forall x,t\in \mathbb{R}$. Then $\phi \not\in L^{1}$, we cannot perform Fourier transform. We make the ansatz:
+For $y>h$, assume that $\mathbf{U}=U  \hat{\mathbf{x}}$. Then $\phi \sim Ux$ at least for $y=\infty$, and $\forall x,t\in \mathbb{R}$. We make the ansatz:
 $$\phi=Ux+ \phi_{0}(y) e^{{i(kx-\omega t)}}$$
 we have:
 $$\nabla^{2}\phi=0\implies \phi_{0}(y)=C e^{-|k|y}\text{ for boundedness at }y=\infty$$
