@@ -1195,8 +1195,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200,
-    "collapsed": true
+    "width": 200
   },
   "right": {
     "id": "9003d078f8dbc4ed",
@@ -1299,8 +1298,10 @@
   },
   "active": "d597d74ee88eaa6b",
   "lastOpenFiles": [
-    "Notes/张量分析.md",
+    "Homework/Physics 463/Physics 463 homework 4.md",
+    "Homework/Physics 463/Physics 463 homework 3.md",
     "Notes/固体形变.md",
+    "Notes/张量分析.md",
     "Experimental/Nernst linear fit.md",
     "Experimental/PID Control.md",
     "Notes/Untitled.md",
@@ -1334,8 +1335,6 @@
     "Notes/Ideal flow.md",
     "Notes/Hamiltonian Formulation of EM.md",
     "Notes/守恒律.md",
-    "Notes/Hydraulic jump.md",
-    "Notes/N维球.md",
     "tldraw",
     "Excalidraw/Scripts/Downloaded",
     "Excalidraw/Scripts",
