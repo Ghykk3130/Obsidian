@@ -26,9 +26,30 @@ $$\begin{align}
 我们知道：
 $$\begin{align}
 H_{e}\sum_{m}\phi_{m}(\mathbf{R})\chi_{m}(\mathbf{r},\mathbf{R}) & = \left( T_{e}(\mathbf{r})+V_{e e}(\mathbf{r})+V_{en}(\mathbf{r},\mathbf{R})  \right)\sum_{m}\phi_{m}\chi_{m} \\
- & = \sum_{m}\phi_{m}T_{e}\chi
+ & = \sum_{m}\phi_{m}T_{e}\chi_{m}+\sum_{m}\phi_{m}(V_{e e}+V_{en})\chi_{m} \\
+ & = \sum_{m}\phi_{m}E_{m}\chi_{m}
 \end{align}$$
-
+还知道：
+$$\begin{align}
+T_{n}(\mathbf{R})\sum_{m}\phi_{m}(\mathbf{R})\chi_{m}(\mathbf{r},\mathbf{R}) & = - \frac{\hbar^{2}}{2M}\sum_{j} \nabla^{2}_{\mathbf{R}_{j}}\sum_{m}\phi_{m}\chi_{m}
+\end{align}$$
+其中$M$为离子质量。我们计算：
+$$\begin{align}
+\nabla^{2}_{\mathbf{R}_{j}}\sum_{m}\phi_{m}\chi_{m} & = \nabla_{\mathbf{R}_{j}}\cdot \sum_{m}(\chi_{m}\nabla_{\mathbf{R}_{j}} \phi_{m}+\phi_{m}\nabla_{\mathbf{R}_{j}} \chi_{m}) \\
+ & = \sum_{m}(\chi_{m}\nabla^{2}_{\mathbf{R}_{j}}\phi_{m}+(\nabla_{\mathbf{R}_{j}}\phi_{m})\cdot \nabla_{\mathbf{R}_{j}}\chi_{m}+\phi_{m}\nabla^{2}_{\mathbf{R}_{j}}\chi_{m}+(\nabla_{\mathbf{R}_{j}}\chi_{m})\cdot \nabla_{\mathbf{R}_{j}}\phi_{m} ) \\
+ & = \sum_{m}(\chi_{m}\nabla^{2}_{\mathbf{R}_{j}}\phi_{m}+\phi_{m}\nabla^{2}_{\mathbf{R}_{j}}\chi_{m}+2(\nabla_{\mathbf{R}_{j}}\phi_{m})\cdot(\nabla_{\mathbf{R}_{j}}\chi_{m}))
+\end{align}$$
+所以：
+$$\begin{align}& (H_{e}+T_{n}(\mathbf{R})+V_{nn}(\mathbf{R}))\sum_{m}\phi_{m}(\mathbf{R})\chi_{m}(\mathbf{r},\mathbf{R})=E\sum_{m}\phi_{m}(\mathbf{R})\chi_{m}(\mathbf{r},\mathbf{R}) \\
+ \implies& \sum_{m}\phi_{m}E_{m}\chi_{m}+ \sum_{m}T_{n} \phi_{m}\chi_{m}+\sum_{m}V_{nn}\phi_{m}\chi_{m} = \sum_{m}E\phi_{m}\chi_{m} \\
+\implies & \sum_{m}\phi_{m}E_{m}\chi_{m}- \frac{\hbar^{2}}{2M}\sum_{j,m}(\chi_{m}\nabla^{2}_{\mathbf{R}_{j}}\phi_{m}+\phi_{m}\nabla^{2}_{\mathbf{R}_{j}}\chi_{m}+2(\nabla_{\mathbf{R}_{j}}\phi_{m})\cdot(\nabla_{\mathbf{R}_{j}}\chi_{m}))+\sum_{m}V_{nn}\phi_{m}\chi_{m}=\sum_{m}E\phi_{m}\chi_{m}
+\end{align}$$
+两边同时乘以$\chi_{k}^{*}$，并对$\mathbf{r}$积分得到：
+$$\begin{align}
+ & \phi_{k}E_{k}- \frac{\hbar^{2}}{2M}\sum_{j}\nabla^{2}_{\mathbf{R}_{j}}\phi_{m}- \frac{\hbar^{2}}{2M}\sum_{j,m}\chi ^{*}_{k}[\phi_{m}\nabla^{2}_{\mathbf{R}_{j}}\chi_{m}+2(\nabla_{\mathbf{R}_{j}}\phi_{k})\cdot(\nabla_{\mathbf{R}_{j}}\chi_{m})] +V_{nn}\phi_{k}=E\phi_{k} \\
+\implies & \left[ - \frac{\hbar^{2}}{2M}\sum_{j}\nabla^{2}_{\mathbf{R}_{j}}+V_{nn}+E_{k}-E\right]\phi_{k}= \sum_{m}\Lambda_{km}\chi_{m} \\
+ & \text{where }\Lambda_{km}= \frac{\hbar^{2}}{2M}\sum_{j}\chi_{k}^{*} (\phi_{m}\nabla^{2}_{\mathbf{R}_{j}}+2(\nabla_{\mathbf{R}_{j}}\phi_{k})\cdot \nabla_{\mathbf{R}_{j}})
+\end{align}$$
 
 
 
