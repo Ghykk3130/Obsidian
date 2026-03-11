@@ -1119,12 +1119,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Experimental/Nernst linear fit.md",
+                "file": "Notes/固体形变.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Nernst linear fit"
+              "title": "固体形变"
             }
           }
         ],
@@ -1180,7 +1180,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "strain",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -1191,7 +1191,8 @@
               "title": "Search"
             }
           }
-        ]
+        ],
+        "currentTab": 3
       }
     ],
     "direction": "horizontal",
@@ -1257,17 +1258,27 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Experimental/Nernst linear fit.md",
+                "file": "Notes/固体形变.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of Nernst linear fit"
+              "title": "Outline of 固体形变"
+            }
+          },
+          {
+            "id": "b20f4bb1f0d33b7b",
+            "type": "leaf",
+            "state": {
+              "type": "git-view",
+              "state": {},
+              "icon": "git-pull-request",
+              "title": "Source Control"
             }
           }
         ],
-        "currentTab": 3
+        "currentTab": 4
       }
     ],
     "direction": "horizontal",
@@ -1288,8 +1299,8 @@
   },
   "active": "d597d74ee88eaa6b",
   "lastOpenFiles": [
-    "Experimental/PID Control.md",
     "Experimental/Nernst linear fit.md",
+    "Experimental/PID Control.md",
     "Notes/Untitled.md",
     "Notes/Untitled 1.md",
     "Homework/Math 654/Homework 2.md",
