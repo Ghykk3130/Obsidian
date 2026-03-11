@@ -46,30 +46,33 @@ $$\begin{align}& (H_{e}+T_{n}(\mathbf{R})+V_{nn}(\mathbf{R}))\sum_{m}\phi_{m}(\m
 \end{align}$$
 两边同时乘以$\chi_{k}^{*}$，并对$\mathbf{r}$积分得到：
 $$\begin{align}
- & \phi_{k}E_{k}- \frac{\hbar^{2}}{2M}\sum_{j}\nabla^{2}_{\mathbf{R}_{j}}\phi_{m}- \frac{\hbar^{2}}{2M}\sum_{j,m}\chi ^{*}_{k}[\phi_{m}\nabla^{2}_{\mathbf{R}_{j}}\chi_{m}+2(\nabla_{\mathbf{R}_{j}}\phi_{k})\cdot(\nabla_{\mathbf{R}_{j}}\chi_{m})] +V_{nn}\phi_{k}=E\phi_{k} \\
-\implies & \left[ - \frac{\hbar^{2}}{2M}\sum_{j}\nabla^{2}_{\mathbf{R}_{j}}+V_{nn}+E_{k}-E\right]\phi_{k}= \sum_{m}\Lambda_{km}\chi_{m} \\
- & \text{where }\Lambda_{km}= \frac{\hbar^{2}}{2M}\sum_{j}\chi_{k}^{*} (\phi_{m}\nabla^{2}_{\mathbf{R}_{j}}+2(\nabla_{\mathbf{R}_{j}}\phi_{k})\cdot \nabla_{\mathbf{R}_{j}})
+ & \phi_{k}E_{k}- \frac{\hbar^{2}}{2M}\sum_{j}\nabla^{2}_{\mathbf{R}_{j}}\phi_{m}- \frac{\hbar^{2}}{2M}\sum_{j,m}\chi ^{*}_{k}[\phi_{m}\nabla^{2}_{\mathbf{R}_{j}}\chi_{m}+2(\nabla_{\mathbf{R}_{j}}\phi_{m})\cdot(\nabla_{\mathbf{R}_{j}}\chi_{m})] +V_{nn}\phi_{k}=E\phi_{k} \\
+\implies & \left[ - \frac{\hbar^{2}}{2M}\sum_{j}\nabla^{2}_{\mathbf{R}_{j}}+V_{nn}+E_{k}-E\right]\phi_{k}= \sum_{m}\Lambda_{km}\phi_{m} \\
+ & \text{where }\Lambda_{km}= \frac{\hbar^{2}}{2M}\sum_{j}\chi_{k}^{*} (\nabla^{2}_{\mathbf{R}_{j}}\chi_{m}+2(\nabla_{\mathbf{R}_{j}}\chi_{m})\cdot \nabla_{\mathbf{R}_{j}})
 \end{align}$$
+到目前为止，结果都是精确的。接下来，我们作数量级估计：
+$$\nabla_{\mathbf{R}_{j}}\sim \frac{1}{a}\text{ where }a\text{ is the characterestic length of ions}$$
+而$\chi_{m}$仅在原子尺度上显著，$\phi_{\mathbf{k}}$在离子尺度上显著。所以$\chi_{m}$对于$|\nabla_{\mathbf{R}_{j}}\chi_{m}|\ll |\nabla_{\mathbf{R}_{j}\phi_{k}}|$。所以比起等号左手边，$\Lambda_{km}\approx 0$。
 
+于是：
+$$(T_{n}(\mathbf{R})+V_{nn}(\mathbf{R}))\phi_{k}(\mathbf{R})=(E_{k}-E)\phi_{k}(\mathbf{R})$$
+我们陈述结果：
 
-
-
-
-
-令$\mathbf{R}_{n}$为离子平衡位置。我们作：
-$$\begin{align}
-H & = (T_{e}(\mathbf{r})+V_{e e}(\mathbf{r})+V_{en}(\mathbf{r},\mathbf{R}_{n}) )+T_{n}(\mathbf{R})+V_{nn}(\mathbf{R})+V_{en}(\mathbf{r},\mathbf{R})-V_{en}(\mathbf{r},\mathbf{R}_{n}) \\
- 
-\end{align}$$
-可以定义电子Hamiltonian：
-$$H_{e}(\mathbf{r},\mathbf{R}_{n})=T_{e}(\mathbf{r})+V_{e e}(\mathbf{r})+V_{en}(\mathbf{r},\mathbf{R}_{n})$$
-其中$\mathbf{R}_{n}$为固定参数。
-
-令电子波函数为$\chi_{m}(\mathbf{r})$。这构成Hilbert空间的完备基。接下来可以将总波函数展开：
-$$\psi(\mathbf{r},\mathbf{R})=\sum_{m}\phi_{m}(\mathbf{R})\chi_{m}(\mathbf{r})$$
->[!Quote] 为什么$\phi_{m}=\phi_{m}(\mathbf{R})$ ？
->因为我们有：
+>[!Note] Born-Oppenheimer approximation
+>In solving the Schrodinger equation:
+>$$(T_{e}(\mathbf{r})+V_{e e}(\mathbf{r})+T_{n}(\mathbf{R})+V_{nn}(\mathbf{R})+V_{en}(\mathbf{r},\mathbf{R}))\psi=E\psi $$
+>We can assume that:
 >$$\begin{align}
-\phi_{m} & = \int d^{3}r \psi(\mathbf{r},\mathbf{R})\chi_{m}^{*}(\mathbf{r})
+ & \psi(\mathbf{r},\mathbf{R})=\phi(\mathbf{R})\chi({\mathbf{r},\mathbf{R}}
+)\end{align}$$
+>where:
+>$$\begin{align}
+ & (T_{e}+V_{e e}+V_{en})\chi=E_{e}\chi \\
+ & (T_{n}+V_{nn})\phi=E_{n}\phi
 \end{align}$$
+And
+$$E=E_{e}+E_{n}$$
+
+
+
 
