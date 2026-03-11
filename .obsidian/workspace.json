@@ -1191,8 +1191,7 @@
               "title": "Search"
             }
           }
-        ],
-        "currentTab": 3
+        ]
       }
     ],
     "direction": "horizontal",
@@ -1300,6 +1299,8 @@
   },
   "active": "d597d74ee88eaa6b",
   "lastOpenFiles": [
+    "Notes/张量分析.md",
+    "Notes/固体形变.md",
     "Experimental/Nernst linear fit.md",
     "Experimental/PID Control.md",
     "Notes/Untitled.md",
@@ -1333,10 +1334,8 @@
     "Notes/Ideal flow.md",
     "Notes/Hamiltonian Formulation of EM.md",
     "Notes/守恒律.md",
-    "Notes/固体形变.md",
     "Notes/Hydraulic jump.md",
     "Notes/N维球.md",
-    "Notes/流体的动力学与热力学函数.md",
     "tldraw",
     "Excalidraw/Scripts/Downloaded",
     "Excalidraw/Scripts",
