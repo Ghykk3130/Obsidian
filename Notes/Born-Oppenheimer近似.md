@@ -13,5 +13,11 @@ H & = (T_{e}(\mathbf{r})+V_{e e}(\mathbf{r})+V_{en}(\mathbf{r},\mathbf{R}_{n}) )
 $$H_{e}(\mathbf{r},\mathbf{R}_{n})=T_{e}(\mathbf{r})+V_{e e}(\mathbf{r})+V_{en}(\mathbf{r},\mathbf{R}_{n})$$
 其中$\mathbf{R}_{n}$为固定参数。
 
->[!Quote]
->如果你不设
+令电子波函数为$\chi_{m}(\mathbf{r})$。这构成Hilbert空间的完备基。接下来可以将总波函数展开：
+$$\psi(\mathbf{r},\mathbf{R})=\sum_{m}\phi_{m}(\mathbf{R})\chi_{m}(\mathbf{r})$$
+>[!Quote] 为什么$\phi_{m}=\phi_{m}(\mathbf{R})$ ？
+>因为我们有：
+>$$\begin{align}
+\phi_{m} & = \int d^{3}r \psi(\mathbf{r},\mathbf{R})\chi_{m}^{*}(\mathbf{r})
+\end{align}$$
+
