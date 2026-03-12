@@ -108,7 +108,7 @@ $$D(\omega)=0$$
 
 # (a)
 
-We assume that the dispersion relation is given by:
+Under Debye approximation, we assume that the dispersion relation is given by:
 $$\omega=ck$$
 where $\mathbf{k}$ is two-dimensional. Then $\omega=ck$ defines a circle on a plane with radius $\frac{\omega}{c}$. If we vary $\omega$ by $d\omega$, then the area enclosed by the circle changes by:
 $$dS= 2\pi \frac{\omega}{c} \cdot \frac{d\omega}{c}$$

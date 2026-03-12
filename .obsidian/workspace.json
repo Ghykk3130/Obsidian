@@ -1189,12 +1189,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Homework/Physics 463/Physics 463 homework 5.md",
+                "file": "Notes/Fine Structure.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Physics 463 homework 5"
+              "title": "Fine Structure"
             }
           }
         ],
@@ -1265,8 +1265,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200,
-    "collapsed": true
+    "width": 200
   },
   "right": {
     "id": "9003d078f8dbc4ed",
@@ -1369,8 +1368,8 @@
   },
   "active": "8b867dc49df8d8eb",
   "lastOpenFiles": [
-    "Notes/Bose-Einstein statistics与BEC.md",
     "Homework/Physics 463/Physics 463 homework 5.md",
+    "Notes/Bose-Einstein statistics与BEC.md",
     "Notes/声子.md",
     "Excalidraw/Drawing 2026-03-12 01.36.25.excalidraw.md",
     "Pictures/9eafeee1db7f4d13ddef893c34b80595.jpg",
