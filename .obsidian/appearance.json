@@ -1,7 +1,7 @@
 {
   "theme": "obsidian",
   "enabledCssSnippets": [
-    "right-align-math",
-    "Image Align"
+    "Image Align",
+    "right-align-math"
   ]
 }

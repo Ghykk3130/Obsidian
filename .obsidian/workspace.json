@@ -1208,7 +1208,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "fourier",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -1326,8 +1326,11 @@
   },
   "active": "41d6631c3266ad82",
   "lastOpenFiles": [
-    "Notes/Blasius定理，Chaplygin定理.md",
+    "Pictures/Pasted image 20260311213144.png",
+    "Notes/声波.md",
     "Notes/声子.md",
+    "Notes/Fourier transform.md",
+    "Notes/Blasius定理，Chaplygin定理.md",
     "Notes/Born-Oppenheimer近似.md",
     "Notes/固体热容.md",
     "Notes/固体形变.md",
@@ -1360,9 +1363,6 @@
     "Notes/Lagrange Multiplier.md",
     "Notes/Bose-Einstein statistics与BEC.md",
     "Excalidraw/Drawing 2026-03-08 21.56.19.excalidraw.md",
-    "Notes/全纯函数.md",
-    "Notes/保角变换.md",
-    "Notes/Ideal flow.md",
     "tldraw",
     "Excalidraw/Scripts/Downloaded",
     "Excalidraw/Scripts",
