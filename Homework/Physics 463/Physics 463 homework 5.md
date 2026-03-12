@@ -69,31 +69,38 @@ $$\omega^{2}_{\pm}= \left\{\begin{align}
 
 Know that the wavenumber satisfies the condition:
 $$Nak=2\pi m,\ m\in \mathbb{Z}\implies \Delta k= \frac{2\pi}{Na}$$
-Then the total number of states is:
+Then the density of modes in the $|k|$-space is:
+$$D^{'}(|k|)= 2 \cdot \frac{Na}{2\pi}= \frac{Na}{\pi}$$
+We know that:
 $$\begin{align}
-\sum_{k\in\text{FBZ}} 1 & = \frac{Na}{2\pi} \sum \Delta k \\
- & \approx \frac{Na}{2\pi}\int_{\text{FBZ}}dk
+\omega= 2 \sqrt{ \frac{C}{M} }  \left|\sin\left( \frac{ka}{2} \right)\right|\implies \frac{d\omega}{d|k|} & = a \sqrt{ \frac{C}{M} }\cos\left( \frac{|k|a}{2} \right)
 \end{align}$$
-The approximation is precise under thermodynamic limit. We know that:
+Then the density of modes is:
+$$\begin{align}
+D(\omega) & = \frac{1}{a} \sqrt{ \frac{M}{C} } \frac{1}{\cos\left( \frac{|k|a}{2} \right)} \cdot \frac{Na}{\pi} \\
+ & = \frac{1}{a}\sqrt{ \frac{M}{C} } \frac{1}{\sqrt{ 1- \frac{M}{4C}\omega^{2} }} \frac{Na}{\pi} \\
+ & = \frac{2N}{\pi} \frac{1}{\sqrt{ \frac{4C}{M}-\omega^{2} }} \\
+ & = \frac{2N}{\pi} \frac{1}{\sqrt{ \omega_{m}^{2}-\omega^{2} }}
+\end{align}$$
+The second step is because:
 $$\begin{align}
  & \omega^{2}= \frac{4C}{M}\sin ^{2}\left( \frac{ka}{2} \right) \\
-\implies & 2\omega d\omega=  \frac{8C}{M} \sin\left( \frac{ka}{2} \right)\cos\left( \frac{ka}{2} \right) \frac{a}{2}dk = \frac{2aC}{M}\sin(ka)dk \\
+\implies & \sin ^{2}\left( \frac{ka}{2} \right)= \frac{M}{4C}\omega^{2} \\
+\implies & \cos\left( \frac{ka}{2} \right)= \sqrt{ 1- \frac{M}{4C}\omega^{2} }\text{ since }\cos\left( \frac{ka}{2} \right)\geq 0\text{ in FBZ}
 \end{align}$$
-We also know:
-$$\begin{align}
- & \omega^{2}= \frac{4C}{M}\sin ^{2}\left( \frac{ka}{2} \right)= \frac{2C}{M}(1-\cos ka) \\
-\implies & \cos ka=1- \frac{M}{2C}\omega^{2}
-\end{align}$$
-Then:
-$$\begin{align}
- & 2\omega d\omega= \frac{2aC}{M}\sqrt{ 1-\left( 1- \frac{M}{2C}\omega^{2} \right)^{2} } dk  \\
-\implies & 2d\omega= \frac{a}{2}\sqrt{ \frac{4C}{M}-\omega^{2} }dk= \frac{a}{2}\sqrt{ \omega_{m}^{2}-\omega^{2} }dk \\
-\implies & dk=  \frac{4 }{a} \frac{1}{\sqrt{ \omega^{2}_{m}-\omega^{2} }}d\omega
-\end{align}$$
-Then then number of states is:
-$$\begin{align}
-\frac{Na}{2\pi}\int_{\text{FBZ}}dk & = \int \frac{2N}{\pi} \frac{1}{\sqrt{ \omega _{m}^{2}-\omega^{2} }}d\omega 
-\end{align}$$
-Then the density of states is:
-$$D(\omega)= \frac{2N}{\pi} \frac{1}{\sqrt{ \omega^{2}_{m}-\omega^{2} }}$$
+## (b)
 
+We know that:
+$$\omega=\omega_{0}-AK^{2}\implies K^{2}= \frac{\omega_{0}-\omega}{A}$$
+If $\omega< \omega_{0}$, this is a sphere of radius $\sqrt{ \frac{\omega_{0}-\omega_{}}{A} }$. Now we vary $\omega$ by $d\omega$. Then the volume enclosed by the sphere is varied by:
+$$\begin{align}
+dV & = 4\pi\left( \sqrt{ \frac{\omega_{0}-\omega_{}}{A} } \right)^{2}d\left( \sqrt{ \frac{\omega_{0}-\omega }{A} } \right) \\
+ & = -4\pi{ \frac{\omega_{0}-\omega}{A} } \frac{1}{2} \frac{1}{\sqrt{ A }} \frac{1}{\sqrt{ \omega_{0}-\omega }}d\omega \\
+ & = - \frac{2\pi}{A^{3/2}} \sqrt{ \omega_{0}-\omega }d\omega
+\end{align}$$
+Since one mode takes a volume of $\left( \frac{2\pi}{L} \right)^{3}$ in the $K$-space, then the number of modes varied is:
+$$- \left( \frac{2\pi}{L} \right)^{3}\frac{2\pi}{A^{3/2}}\sqrt{ \omega_{0}-\omega }d\omega$$
+Then the density of modes is:
+$$D(\omega)=\left( \frac{2\pi}{L} \right)^{3} \frac{2\pi}{A^{3/2}}\sqrt{ \omega_{0}-\omega }$$
+If $\omega>\omega_{0}$, then there is no region in the $K$-space that satisfies the dispersion relation. Then there is zero number of modes changes corresponding to variation $d\omega$. Then:
+$$D(\omega)=0$$
