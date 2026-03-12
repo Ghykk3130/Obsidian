@@ -7,7 +7,12 @@ K & = \sqrt{ m^{2}c^{4}+p^{2}c^{2} }-mc^{2} \\
  & \approx mc^{2}\left( 1+ \frac{p^{2}}{2m^{2}c^{2}}- \frac{1}{8} \frac{p^{4}}{m^{4}c^{4}} \right)-mc^{2} \\
  & = \frac{p^{2}}{2m}- \frac{1}{8} \frac{p^{4}}{m^{3}c^{2}}
 \end{align}$$
-所以存在微扰$- \frac{1}{8} \frac{p^{4}}{m^{3}c^{2}}$。接下来对角化矩阵。我们注意到矩阵在$\{ \ket{n,l,m} \}$基下已经是对角的了。因为：
+所以存在微扰
+
+>[!Success] Proposition 1.1
+$$H_{\text{rel}}=- \frac{1}{8} \frac{p^{4}}{m^{3}c^{2}}$$
+
+接下来对角化微扰。我们注意到矩阵在$\{ \ket{n,l,m} \}$基下已经是对角的了。因为：
 $$\begin{align}
 p^{4}\text{ is a scalar operator}\implies[\mathbf{L},p^{4}]=0
 \end{align}$$
@@ -27,7 +32,7 @@ $$\begin{align}
  & = - \frac{1}{2}mc^{2}Z^{4} \alpha^{4}\left[ - \frac{3}{4n^{4}}+ \frac{1}{n^{3}\left( l+ \frac{1}{2} \right)} \right]
 \end{align}$$
 
->[! Success] Proposition 1.1
+>[! Success] Proposition 1.2
 >The energy shift of $\ket{n,l,m}$ is given by:
 >$$\Delta E_{n,l,m}=- \frac{1}{2}mc^{2}Z^{4}\alpha^{4}\left[ - \frac{3}{4n^{4}}+ \frac{1}{n^{3}\left( l+ \frac{1}{2} \right)} \right]$$
 
@@ -37,54 +42,40 @@ $$\Delta E_{n,l,m}\text{ dominated by } \frac{\alpha^{4}}{n^{4}}$$
 $$\Delta E_{n,l,m}\text{ dominated by } \frac{\alpha^{4}}{n^{3}}$$
 # 2. L-S coupling
 
+电子受到的电场在电子系中变换为磁场，和电子自旋耦合在一起。则存在微扰：
+$$H_{\text{LS}}=\mu_{B} g \frac{1}{\hbar}\mathbf{S}\cdot \mathbf{B}$$
+其中没有负号是因为电子偶极矩为$-\mu_{B}g\mathbf{S}$。考虑磁场：
+$$\begin{align}
+\mathbf{B} & = - \frac{1}{c^{2}}\mathbf{v}\times \mathbf{E} 
+\end{align}$$
+而电场可以写为势能$V$的导数：
+$$\begin{align}
+\mathbf{E} & =- \nabla \phi \\
+  & = - \nabla\left( - \frac{V}{|e|} \right) \\
+ & = \frac{1}{|e|} \hat{\mathbf{r}} \frac{\partial V}{\partial r}
+\end{align}$$
+这里假设了球对称性。那么：
+$$\begin{align}
+\mathbf{B} & = - \frac{1}{c^{2} }\mathbf{v}\times \frac{1}{|e|}  \hat{\mathbf{r}} \frac{\partial V}{\partial r} \\
+ & = - \frac{1}{c^{2}|e|} \mathbf{v}\times \mathbf{r} \frac{1}{r} \frac{\partial V}{\partial r} \\
+ & = \frac{1}{mc^{2}|e|} \mathbf{L} \frac{1}{r} \frac{\partial V}{\partial r}
+\end{align}$$
+那么：
+$$\begin{align}
+H_{\text{LS}} & = \mu_{B}g \frac{1}{\hbar}\mathbf{S}\cdot \frac{1}{mc^{2}|e|} \mathbf{L} \frac{1}{r} \frac{\partial V}{\partial r} \\
+ & = \frac{1}{m^{2}c^{2}} \frac{1}{r} \frac{\partial V}{\partial r}\mathbf{L}\cdot \mathbf{S}
+\end{align}$$
+但是，这里我们假设了电子自身参考系平动。但实际上，电子自身参考系还会转动，导致场的变换更为复杂。实际上：
 
-# Big picture
-
-在初量的氢原子模型中，有两个主要的误差来源（当然还有其他的）：1）相对论下，动能项不再是$\frac{p^{2}}{2m}$。2）lab frame下的电场在电子系中变换为磁场，与电子这个磁偶极子相互作用，使得Hamiltonian需要添加一些项。
-
-# 动能项修正
->[! Idea]
->一般推导Hamiltonian的方法：我们先经典地写出Hamiltonian，再量子化。
-
-若不考虑相对论效应，动能为$\frac{1}{2}mv^{2}= \frac{p^{2}}{2m}$。
-
-若考虑相对论效应，动能为$\gamma mc^{2}-mc^{2}$。我们希望更精确地近似这个相对论动能，例如近似到二阶。
-## 一个错误的思路
-$K=\gamma mc^{2}-mc^{2}= \frac{1}{\sqrt{ 1-\beta^{2} }}mc^{2}-mc^{2} \simeq \left( 1+ \frac{1}{2}\beta^{2}- \frac{3}{8}\beta^{4} \right)mc^{2}-mc^{2} = \frac{1}{2}\beta^{2}mc^{2}- \frac{3}{8}\beta^{4}mc^{2}$
-
-我们最终这样做的话，我们发现没办法顺利化成动量$p$的函数。注意这里要用的动量不再是非相对论的$mv$而是相对论的$\gamma mv$。你尝试带入这个动量就会发现$\gamma$中含有的速度项又没法化成动量。所以我们需要一个直接完全是动量的函数的式子来表达动能，再作近似。
-
-## 正确的思路
-$K=\gamma mc^{2}-mc^{2}=\sqrt{ m^{2}c^{4}+p^{2}c^{2} }-mc^{2}$ 这显然完全是一个动量的函数。于是：
-
-$K=mc^{2}\sqrt{ 1+ \frac{p^{2}}{m^{2}c^{2}} }-mc^{2} \simeq mc^{2}\left( 1+ \frac{p^{2}}{2m^{2}c^{2}}- \frac{1}{8} \frac{p^4}{m^4c^4} \right)-mc^{2}= \frac{p^{2}}{2m}- \frac{1}{8} \frac{p^4}{m^{3}c^{2}}$
-
-## Energy correction
-这相当于引入一个微扰$\lambda \frac{1}{8} \frac{p^4}{m^{3}c^{2}}, \lambda=1$。一般情况下，fix $n$, 将会有许多$\ket{l,s,m_{l},m_{s}}$与之对应。所以这是一个degenerate perturbation。为什么要固定$n$呢？因为没微扰时，固定$n$，所有相应的态能量都一样的。我们是从此开始微扰的。
-
-所以我们想要对角化$\bra{n,l^{'},s^{'},m_{l}^{'},m_{s}^{'}} \frac{1}{8} \frac{p^4}{m^{3}c^{2}}\ket{n,l,s,m_{l},m_{s}}$。
-
-但这显然已经对角化了，因为$\ket{l,s,m_{l},m_{s}}$是算子$L_{z}$的本征态。$p^{4}$为标量算子$\implies$$[p^{4},\vec{L}]=0\implies[p^4,L_{z}]=0,[p^4,L^{2}]=0$
-### Caveat
-你不能直接说任取一组$L_{z},L^{2}$的特征基，就可以使$p^4$对角化。因为只是存在一组基同时对角化，而不是任取一组基就能同时对角化。况且使得$p^4,L_{z}$与$p^4,L^{2}$同时对角化的特征基还不一定一样。所以宣称$\ket{n,l,s,m_{l},m_{s}}$能将$p^4$对角化是没有道理的。
+>[!Success] Proposition 2.1
+>$$H_{\text{LS}}= \frac{1}{2m^{2}c^{2}} \frac{1}{r} \frac{\partial V}{\partial r}\mathbf{L}\cdot \mathbf{S}$$
 
 
-我们要更精细地论证。$[p^4,L_{z}]=0,[p^4,L^{2}]=0\implies$$L_{z},L^{2}$的特征子空间是$p^4$的不变子空间。
-$L_{z},L^{2}$的共同特征子空间的ket为$\ket{l,m_{l}}$。但是这是degenerate的，因为实际上我们没有考虑$\ket{n,l,s,m_{l},m_{s}}$中的$n,s,m_{s}$。我们仅仅知道$p^4$作用在$\ket{n,l,s,m_{l},m_{s}}$上不会改变$l,m_{l}$以至于跳出$L^{2},L_{z}$的特征子空间。并且，$p^4$作用在$\ket{n,l,s,m_{l},m_{s}}$上也不会改变$m_{s}$。于是：
 
-$p^4\ket{n,l,s,m_{l},m_{s}}=\text{a linear combination of }\ket{n^{'},l,s,m_{l},m_{s}}$ with $l,s,m_{l}$ fixed. (这里$s$没变是因为$s$只能取$\frac{1}{2}$。)
 
-所以矩阵元$\bra{n^{''},l^{''},s^{''},m_{l}^{''},m_{s}^{''}}p^4\ket{n,l,s,m_{l},m_{s}}$只有$l^{''}=l,s^{''}=s,m_{l}^{''}=m_{l},m_{s}=m_{s}^{''}$时是非零的。
 
-而考虑微扰时，我们已经固定$n$了，因为我们考虑的是对某个特定的能级$n$的所有degenerate的态进行微扰。所以不妨令$n^{''}=n$。
 
-$\implies$$\bra{n,l^{''},s^{''},m_{l}^{''},m_{s}^{''}} \frac{1}{8} \frac{p^4}{m^{3}c^{2}}\ket{n,l,s,m_{l},m_{s}}$已经“对角化”。
 
-所以first order energy correction就是特征值，也就是对角线上的元素，也就是$\bra{n,l,s,m_{l},m_{s}} \frac{1}{8} \frac{p^4}{m^{3}c^{2}}\ket{n,l,s,m_{l},m_{s}}=E_{n}^{(0)}\left(  \frac{Z^{2}\alpha^{2}}{n^{2}} \left( - \frac{3}{4}+ \frac{n}{l+ \frac{1}{2}} \right)\right)$
-
->[! Proposition 1]
->The first-order energy correction due to relativistic correction in kinetic energy is
->$E_{n}^{(0)}\left(  \frac{Z^{2}\alpha^{2}}{n^{2}}\left( - \frac{3}{4} + \frac{n}{l+ \frac{1}{2}} \right) \right)$
 
 # Spin-orbit interaction
 
