@@ -129,4 +129,15 @@ U & = \frac{A}{2\pi} \frac{\hbar}{c^{2}}\left( \frac{1}{\beta \hbar} \right)^{3}
 \end{align}$$
 Then clearly:
 $$C= \frac{\partial U}{\partial T}\propto T^{2}$$
+## (b)
+
+Consider the dispersion relation is modified into:
+$$\omega(\mathbf{k})=\sqrt{ c^{2}k_{x}^{2}+c^{2}k_{y}^{2}+\delta^{2}k_{z}^{2} }\text{ where }\delta\ll c$$
+From the occupation number of bosons $\frac{1}{e^{\hbar \omega \beta}-1}$, we know that the mode is highly occupied only when $\hbar \omega$ is small compared with $kT$. So here in this case, only $k_{x},k_{y}=0$ states contribute significantly, since $k_{x},k_{y}$ are too large compared with $kT$. Therefore, the system can be approximated by a 1D system with $k_{z}$ active. Then clearly, for a 1D system, 
+$$\begin{align}
+U & \propto \int_{0}^{\omega_{D}}d\omega \frac{\hbar \omega}{e^{\beta \hbar \omega}-1} \\
+ & \propto T^{2} \int_{0}^{\infty} dx\frac{x}{e^{x}-1}\propto T^{2}
+\end{align}$$
+So:
+$$C= \frac{\partial U}{\partial T}\propto T$$
 
