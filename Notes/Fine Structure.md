@@ -70,6 +70,11 @@ H_{\text{LS}} & = \mu_{B}g \frac{1}{\hbar}\mathbf{S}\cdot \frac{1}{mc^{2}|e|} \m
 >[!Success] Proposition 2.1
 >$$H_{\text{LS}}= \frac{1}{2m^{2}c^{2}} \frac{1}{r} \frac{\partial V}{\partial r}\mathbf{L}\cdot \mathbf{S}$$
 
+接下来，我们需要微扰的矩阵元。事实上，在$\{ \ket{n,j,m_{j}} \}_{j,m_{j}}$下，矩阵是对角化的。首先：
+$$\begin{align}
+\mathbf{L}\cdot \mathbf{S} \ket{n,j,m_{j}}  & = \frac{1}{2}(J^{2}-L^{2}-S^{2})\ket{n,j,m_{j}}  \\
+ & = \frac{1}{2}
+\end{align}$$
 
 
 
