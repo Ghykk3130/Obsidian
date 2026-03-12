@@ -1168,9 +1168,23 @@
               "icon": "lucide-file",
               "title": "Physics 463 homework 5"
             }
+          },
+          {
+            "id": "03505bbc696a2639",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Homework/Physics 463/Physics 463 homework 5.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Physics 463 homework 5"
+            }
           }
         ],
-        "currentTab": 82
+        "currentTab": 83
       }
     ],
     "direction": "vertical"
@@ -1338,11 +1352,14 @@
       "obsidian-excalidraw-plugin:New drawing": false
     }
   },
-  "active": "7b7a963fd013caba",
+  "active": "03505bbc696a2639",
   "lastOpenFiles": [
-    "Homework/Physics 463/Physics 463 homework 4.md",
-    "Homework/Physics 463/Physics 463 homework 5.md",
+    "Pictures/9eafeee1db7f4d13ddef893c34b80595.jpg",
     "Notes/声子.md",
+    "Homework/Physics 463/Physics 463 homework 5.md",
+    "Pictures/e53ff20bfefc26ceffbe66c872537c62.jpg",
+    "Excalidraw/Drawing 2026-03-12 00.25.50.excalidraw.md",
+    "Homework/Physics 463/Physics 463 homework 4.md",
     "Pictures/Pasted image 20260311231931.png",
     "Pictures/Pasted image 20260311223122.png",
     "Notes/Pasted.md",
@@ -1370,13 +1387,10 @@
     "Notes/线性波.md",
     "Pictures/Pasted image 20260309010737.png",
     "Pictures/Pasted image 20260309010414.png",
-    "Pictures/Pasted image 20260309010143.png",
     "Notes/圆柱绕流.md",
     "Homework/Math 654/Homework 1.md",
     "Notes/Kutta-Joukowski定理.md",
     "Notes/Ising Model.md",
-    "Notes/Lagrange Multiplier.md",
-    "Notes/Bose-Einstein statistics与BEC.md",
     "tldraw",
     "Excalidraw/Scripts/Downloaded",
     "Excalidraw/Scripts",
