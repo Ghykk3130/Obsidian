@@ -1265,7 +1265,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 200,
+    "collapsed": true
   },
   "right": {
     "id": "9003d078f8dbc4ed",
@@ -1366,7 +1367,7 @@
       "obsidian-excalidraw-plugin:New drawing": false
     }
   },
-  "active": "0bd5adf6a54a04e2",
+  "active": "8b867dc49df8d8eb",
   "lastOpenFiles": [
     "Homework/Physics 512/Physics 512 homework 3.md",
     "Notes/Fine Structure.md",

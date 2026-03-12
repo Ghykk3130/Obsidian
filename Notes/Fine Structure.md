@@ -7,13 +7,35 @@ K & = \sqrt{ m^{2}c^{4}+p^{2}c^{2} }-mc^{2} \\
  & \approx mc^{2}\left( 1+ \frac{p^{2}}{2m^{2}c^{2}}- \frac{1}{8} \frac{p^{4}}{m^{4}c^{4}} \right)-mc^{2} \\
  & = \frac{p^{2}}{2m}- \frac{1}{8} \frac{p^{4}}{m^{3}c^{2}}
 \end{align}$$
-所以存在微扰$- \frac{1}{8} \frac{p^{4}}{m^{3}c^{2}}$。
+所以存在微扰$- \frac{1}{8} \frac{p^{4}}{m^{3}c^{2}}$。接下来对角化矩阵。我们注意到矩阵在$\{ \ket{n,l,m} \}$基下已经是对角的了。因为：
+$$\begin{align}
+p^{4}\text{ is a scalar operator}\implies[\mathbf{L},p^{4}]=0
+\end{align}$$
+>[!Quote] Idea
+>在不方便将$[\mathbf{L},p^{4}]=0$转化为有用的条件时，可以考虑：
+>$$[\mathbf{L},p^{4}]\implies[L^{2},p^{4}]=0,\ [L_{z},p^{4}]=0$$
 
+所以：
+$$[L^{2},p^{4}]=0,\ [L_{z},p^{4}]=0$$
+回忆起：
+$$[A,B]=0\implies\text{Eigensubspaces of A are invariant subspaces of B}$$
+我们在简并子空间$\text{span}\{ \ket{n,l,m} \}_{l,m}$中操作。注意到$\text{span}\{ \ket{n,l,m} \}_{l}$是$L_{z}$的特征子空间，因为$L_{z}$的本征子空间中$m$是固定的。$[L_{z},p^{4}]=0$告诉我们，$\text{span}\{ \ket{n,l,m} \}_{n,l}$是$p^{4}$的不变子空间。在这个子空间中，$\text{span}\{ \ket{n,l,m} \}$是$L^{2}$的特征子空间。因为$L^{2}$特征子空间要求$l(l+1)-m(m+1)$固定，而$m$已经固定，$l>0$只能解出一个$l$，所以$l$也固定。所以固定$n$，$p^{4}\ket{n,l,m}$只能和$\ket{l,m}$平行。
 
+所以：
+$$\begin{align}
+\Delta E_{n,l,m} & =- \frac{1}{8} \frac{1}{m^{3}c^{2}}\bra{n,l,m} p^{4}\ket{n,l,m}  \\
+ & = - \frac{1}{2}mc^{2}Z^{4} \alpha^{4}\left[ - \frac{3}{4n^{4}}+ \frac{1}{n^{3}\left( l+ \frac{1}{2} \right)} \right]
+\end{align}$$
 
+>[! Success] Proposition 1.1
+>The energy shift of $\ket{n,l,m}$ is given by:
+>$$\Delta E_{n,l,m}=- \frac{1}{2}mc^{2}Z^{4}\alpha^{4}\left[ - \frac{3}{4n^{4}}+ \frac{1}{n^{3}\left( l+ \frac{1}{2} \right)} \right]$$
 
-
-
+注意到，若$n,l\gg 1$，则有：
+$$\Delta E_{n,l,m}\text{ dominated by } \frac{\alpha^{4}}{n^{4}}$$
+若$n,l \sim 1$，则有：
+$$\Delta E_{n,l,m}\text{ dominated by } \frac{\alpha^{4}}{n^{3}}$$
+# 2. L-S coupling
 
 
 # Big picture
