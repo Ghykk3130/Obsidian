@@ -104,3 +104,29 @@ Then the density of modes is:
 $$D(\omega)=\left( \frac{2\pi}{L} \right)^{3} \frac{2\pi}{A^{3/2}}\sqrt{ \omega_{0}-\omega }$$
 If $\omega>\omega_{0}$, then there is no region in the $K$-space that satisfies the dispersion relation. Then there is zero number of modes changes corresponding to variation $d\omega$. Then:
 $$D(\omega)=0$$
+# Kittel 5.4
+
+# (a)
+
+We assume that the dispersion relation is given by:
+$$\omega=ck$$
+where $\mathbf{k}$ is two-dimensional. Then $\omega=ck$ defines a circle on a plane with radius $\frac{\omega}{c}$. If we vary $\omega$ by $d\omega$, then the area enclosed by the circle changes by:
+$$dS= 2\pi \frac{\omega}{c} \cdot \frac{d\omega}{c}$$
+So the number of modes changes by:
+$$2\pi \frac{\omega}{c}\cdot \frac{d\omega}{c}\cdot\left( \frac{L}{2\pi} \right)^{2}= \frac{A}{2\pi} \frac{\omega}{c^{2}}d\omega\text{ where }A=L^{2}$$
+Then the density of modes is:
+$$D(\omega)= \frac{A}{2\pi} \frac{\omega}{c^{2}}$$
+Then we find the internal energy:
+$$\begin{align}
+U & = \int_{0}^{\omega_{D}} d\omega D(\omega) \frac{\hbar \omega}{e^{\beta \hbar \omega}-1} \\
+ & = \int d\omega \frac{A}{2\pi} \frac{\omega}{c^{2}} \frac{\hbar \omega}{e^{\beta \hbar \omega}-1} \\
+ & = \frac{A}{2\pi} \frac{\hbar}{c^{2}}\left( \frac{1}{\beta \hbar} \right)^{3} \int_{0}^{\beta \hbar \omega_{c}}dx \frac{x^{2}}{e^{x}-1}
+\end{align}$$
+Now let $T\rightarrow 0$ so that $\beta \rightarrow \infty$. Then:
+$$\begin{align}
+U & = \frac{A}{2\pi} \frac{\hbar}{c^{2}}\left( \frac{1}{\beta \hbar} \right)^{3} \int_{0 }^{\infty}dx \frac{x^{2}}{e^{x}-1} \\
+ & = \frac{A}{2\pi} \frac{1}{c^{2}\hbar^{2}}k^{3}T^{3} \Gamma(2)\zeta(2)
+\end{align}$$
+Then clearly:
+$$C= \frac{\partial U}{\partial T}\propto T^{2}$$
+

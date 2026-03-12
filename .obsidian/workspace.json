@@ -1250,7 +1250,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "fourier",
+                "query": "Bose-Eins",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -1369,9 +1369,10 @@
   },
   "active": "8b867dc49df8d8eb",
   "lastOpenFiles": [
+    "Notes/Bose-Einstein statistics与BEC.md",
+    "Homework/Physics 463/Physics 463 homework 5.md",
     "Notes/声子.md",
     "Excalidraw/Drawing 2026-03-12 01.36.25.excalidraw.md",
-    "Homework/Physics 463/Physics 463 homework 5.md",
     "Pictures/9eafeee1db7f4d13ddef893c34b80595.jpg",
     "Pictures/e53ff20bfefc26ceffbe66c872537c62.jpg",
     "Excalidraw/Drawing 2026-03-12 00.25.50.excalidraw.md",
@@ -1405,7 +1406,6 @@
     "Notes/圆柱绕流.md",
     "Homework/Math 654/Homework 1.md",
     "Notes/Kutta-Joukowski定理.md",
-    "Notes/Ising Model.md",
     "tldraw",
     "Excalidraw/Scripts/Downloaded",
     "Excalidraw/Scripts",
