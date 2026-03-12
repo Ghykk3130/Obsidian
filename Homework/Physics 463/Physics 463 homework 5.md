@@ -64,6 +64,36 @@ $$\omega^{2}_{\pm}= \left\{\begin{align}
  & 2 \frac{C}{m}
 \end{align}\right.\implies \omega_{+}= \sqrt{ \frac{20C}{m} },\ \omega_{-}= \sqrt{ \frac{2C}{m} }$$
 ![[9eafeee1db7f4d13ddef893c34b80595.jpg|center|300]]
+# Kittel 5.1
+## (a)
 
-
+Know that the wavenumber satisfies the condition:
+$$Nak=2\pi m,\ m\in \mathbb{Z}\implies \Delta k= \frac{2\pi}{Na}$$
+Then the total number of states is:
+$$\begin{align}
+\sum_{k\in\text{FBZ}} 1 & = \frac{Na}{2\pi} \sum \Delta k \\
+ & \approx \frac{Na}{2\pi}\int_{\text{FBZ}}dk
+\end{align}$$
+The approximation is precise under thermodynamic limit. We know that:
+$$\begin{align}
+ & \omega^{2}= \frac{4C}{M}\sin ^{2}\left( \frac{ka}{2} \right) \\
+\implies & 2\omega d\omega=  \frac{8C}{M} \sin\left( \frac{ka}{2} \right)\cos\left( \frac{ka}{2} \right) \frac{a}{2}dk = \frac{2aC}{M}\sin(ka)dk \\
+\end{align}$$
+We also know:
+$$\begin{align}
+ & \omega^{2}= \frac{4C}{M}\sin ^{2}\left( \frac{ka}{2} \right)= \frac{2C}{M}(1-\cos ka) \\
+\implies & \cos ka=1- \frac{M}{2C}\omega^{2}
+\end{align}$$
+Then:
+$$\begin{align}
+ & 2\omega d\omega= \frac{2aC}{M}\sqrt{ 1-\left( 1- \frac{M}{2C}\omega^{2} \right)^{2} } dk  \\
+\implies & 2d\omega= \frac{a}{2}\sqrt{ \frac{4C}{M}-\omega^{2} }dk= \frac{a}{2}\sqrt{ \omega_{m}^{2}-\omega^{2} }dk \\
+\implies & dk=  \frac{4 }{a} \frac{1}{\sqrt{ \omega^{2}_{m}-\omega^{2} }}d\omega
+\end{align}$$
+Then then number of states is:
+$$\begin{align}
+\frac{Na}{2\pi}\int_{\text{FBZ}}dk & = \int \frac{2N}{\pi} \frac{1}{\sqrt{ \omega _{m}^{2}-\omega^{2} }}d\omega 
+\end{align}$$
+Then the density of states is:
+$$D(\omega)= \frac{2N}{\pi} \frac{1}{\sqrt{ \omega^{2}_{m}-\omega^{2} }}$$
 
