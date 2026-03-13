@@ -88,9 +88,17 @@ $$\begin{align}
 
 >[!Success] Proposition 2.3
 >We have:
->$$\bra{j^{'},l^{'},s,m_{j}^{'}} j,l,s,m_{j}\rangle=\delta_{j,j^{'}}\delta_{l,l^{'}}\delta_{m_{j},m_{j}^{'}}$$
+>$$\bra{j^{'},l^{'},s,m_{j}^{'}} j,l,s,m_{j}\rangle=\delta_{l,l^{'}}\delta_{m_{j},m_{j}^{'}}$$
 ## Proof.
 
+Suppress $s$，我们有：
+$$\begin{align}
+\bra{j^{'},l^{'},m_{j}^{'} } j,l,m_{j}\rangle & = \bra{j^{'},l^{'},m_{j}^{'} }l^{''},m_{l}^{''},m_{s}^{''}\rangle \bra{l^{''},m_{l}^{''},m_{s}^{''}} j,l,m_{j}\rangle \\   & = \delta_{l^{'},l^{''}}C_{m_{l}^{''},m_{s}^{''}}^{j^{'},m_{j}^{'}}
+\end{align}$$
+我们有：
+$$\begin{align}
+\bra{l^{''}} 
+\end{align}$$
 
 
 
