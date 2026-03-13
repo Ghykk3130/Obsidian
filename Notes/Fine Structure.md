@@ -70,14 +70,47 @@ H_{\text{LS}} & = \mu_{B}g \frac{1}{\hbar}\mathbf{S}\cdot \frac{1}{mc^{2}|e|} \m
 >[!Success] Proposition 2.1
 >$$H_{\text{LS}}= \frac{1}{2m^{2}c^{2}} \frac{1}{r} \frac{\partial V}{\partial r}\mathbf{L}\cdot \mathbf{S}$$
 
-接下来，我们需要微扰的矩阵元。事实上，在$\{ \ket{n,j,m_{j}} \}_{j,m_{j}}$下，矩阵是对角化的。首先：
+接下来，我们需要微扰的矩阵元。为此，我们先研究一下的正交关系：
+
+>[!Success] Proposition 2.2
+>We have:
+>$$\bra{l^{'},s,m_{l}^{'},m_{s}^{'}} l,s,m_{l},m_{s}\rangle=\delta_{l,l^{'}}\delta_{m_{l},m_{l}^{'}}\delta_{m_{s},m_{s}^{'}}$$
+## Proof.
+
 $$\begin{align}
-\mathbf{L}\cdot \mathbf{S} \ket{n,j,m_{j}}  & = \frac{1}{2}(J^{2}-L^{2}-S^{2})\ket{n,j,m_{j}}  \\
- & = \frac{1}{2}\left[ j(j+1)-l(l+1)- \frac{3}{4}) \right]\ket{n,j,m_{j}} 
+\bra{l^{'},s,m_{l}^{'},m_{s}^{'}} l,s,m_{l},m_{s} \rangle & = \bra{l^{'},m_{l}^{'}} l,m_{l}\rangle \bra{s,m_{s}^{'}} s,m_{s}\rangle \\
+ & = \delta_{l,l^{'}}\delta_{m_{l},m_{l}^{'}}\delta_{m_{s},m_{s}^{'}}
 \end{align}$$
-所以$\mathbf{L}\cdot \mathbf{S}$是对角化的。齐次，由于$\frac{1}{r} \frac{\partial V}{\partial r}$具有旋转不变性：
-$$\left[ \mathbf{L}, \frac{1}{r} \frac{\partial V}{\partial r} \right]=0$$
-所以借用
+>[!Right]
+>$\blacksquare$
+
+接下来：
+
+>[!Success] Proposition 2.3
+>We have:
+>$$\bra{j^{'},l^{'},s,m_{j}^{'}} j,l,s,m_{j}\rangle=\delta_{j,j^{'}}\delta_{l,l^{'}}\delta_{m_{j},m_{j}^{'}}$$
+## Proof.
+
+
+
+
+事实上，在$\{ \ket{n,j,m_{j}} \}_{j,m_{j}}$下，矩阵是对角化的。因为：
+$$\begin{align}
+\bra{n,j^{'},m_{j}^{'}} \frac{1}{r} \frac{\partial V}{\partial r}\mathbf{L}\cdot \mathbf{S}\ket{n,j,m_{j}}  & =  \bra{n,l^{'}} \frac{1}{r} \frac{\partial V}{\partial r}\ket{n,l}  \bra{j^{'},m_{j}^{'}} \mathbf{L}\cdot \mathbf{S} \ket{j,m_{j}} 
+\end{align}$$
+首先：
+$$\begin{align}
+\mathbf{L}\cdot \mathbf{S} \ket{j,m_{j}}  & = \frac{1}{2}(J^{2}-L^{2}-S^{2})\ket{j,m_{j}}  \\
+ & = \frac{\hbar^{2}}{2}\left[ j(j+1)-l(l+1)- \frac{3}{4} \right]\ket{j,m_{j}} 
+\end{align}$$
+所以：
+$$\begin{align}
+\bra{j^{'},m_{j}^{'}} \mathbf{L} \cdot \mathbf{S} \ket{j,m_{j}}  & =  \frac{\hbar^{2}}{2}\left[ j(j+1)-l(l+1)-\frac{3}{4} \right] \delta _{m_{j},m_{j}^{'}}\delta_{l,l^{'}}
+\end{align}$$
+$$\bra{j^{'},l^{'},s,m_{j}^{'}} j,l,s,m_{j}\rangle=\delta_{m_{j}^{'},m_{j}}\delta_{l^{'},l}\text{ or }\delta_{m_{j}^{'},m_{j}}\delta_{j^{'},j}$$
+
+
+
 
 
 我们可以定义spin-angular function。考虑展开$\ket{n,j,m_{j}}$：
