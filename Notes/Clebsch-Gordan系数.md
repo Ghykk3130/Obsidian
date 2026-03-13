@@ -145,29 +145,36 @@ $$\bra{m+ \frac{1}{2}, \frac{1}{2}} m\rangle \geq 0$$
 $$B= \sqrt{ \frac{l-m+ \frac{1}{2}}{2l+1} }, C=- \sqrt{  \frac{l-m+ \frac{1}{2}}{2l+1} },A=D= \sqrt{ \frac{l+m+ \frac{1}{2}}{2l+1} }$$
 >[!Right]
 >$\blacksquare$
+# 4. Spin-angular function
 
+我们可以定义spin-angular function。考虑展开$\ket{n,j,m_{j}}$：
+$$\begin{align}
+\bra{\mathbf{r}} n,j,m_{j} \rangle & = \bra{\mathbf{r}} \left( C_{m_{j}- \frac{1}{2},  \frac{1}{2} }^{j,m_{j}}\ket{m_{j}- \frac{1}{2}, \frac{1}{2}} +C_{m_{j}+ \frac{1}{2}, - \frac{1}{2} }^{j,m_{j}}\ket{m_{j}+ \frac{1}{2}, - \frac{1}{2} }   \right) \\
+ & = R_{nl}(\mathbf{r}) \left[ C_{m_{j}- \frac{1}{2}, \frac{1}{2}}^{j,m_{j}}Y_{l}^{m_{j}- \frac{1}{2} }(\theta,\phi)\chi_{+}+C_{m_{j}+ \frac{1}{2}, - \frac{1}{2}}^{j,m_{j}}Y_{l}^{m_{j}+ \frac{1}{2}}(\theta,\phi)\chi_{-} \right]
+\end{align}$$
+我们将angular项分离，定义：
 
+>[!Note] Definition 4.1
+>Define the spin-angular function:
+>$$\mathscr{Y}_{l}^{j,m_{j}}=C_{m_{j}- \frac{1}{2}, \frac{1}{2}}^{j,m_{j}}Y_{l}^{m_{j}- \frac{1}{2} }(\theta,\phi)\chi_{+}+C_{m_{j}+ \frac{1}{2}, - \frac{1}{2}}^{j,m_{j}}Y_{l}^{m_{j}+ \frac{1}{2}}(\theta,\phi)\chi_{-} $$
 
+我们可以证明一个积分：
 
-
-将态$\ket{j= l+ \frac{1}{2},m}= \sqrt{ \frac{l+m+ \frac{1}{2}}{2l+1} }\ket{m_{l}=m- \frac{1}{2},m_{s}= \frac{1}{2}}+ \sqrt{ \frac{l-m+ \frac{1}{2}}{2l+1} }\ket{m_{l}=m+ \frac{1}{2},m_{s}= -\frac{1}{2}}$在表象下展开得到$\sqrt{ \frac{l+m+ \frac{1}{2}}{2l+1} }Y_{l}^{m- 1/2}(\theta,\phi)X_{+}+ \sqrt{ \frac{l-m+ \frac{1}{2}}{2l+1} }Y_{l}^{m+1/2}(\theta,\phi)X_{-}$
-
-同样将$\ket{j=l- \frac{1}{2},m}=-\sqrt{ \frac{l-m+ \frac{1}{2}}{2l+1} }\ket{m_{l}=m- \frac{1}{2},m_{s}= \frac{1}{2}}+ \sqrt{ \frac{l+m+ \frac{1}{2}}{2l+1} }\ket{m_{l}=m+ \frac{1}{2},m_{s}= -\frac{1}{2}}$在表象下展开得到$-\sqrt{ \frac{l-m+ \frac{1}{2}}{2l+1} }Y_{l}^{m- 1/2}(\theta,\phi)X_{+}+ \sqrt{ \frac{l+m+ \frac{1}{2}}{2l+1} }Y_{l}^{m+1/2}(\theta,\phi)X_{-}$
-
->[!Definition 2]
->Spin-angular functions:
->$\mathcal{Y}_{l}^{j=l \pm 1/2,m}= \pm \sqrt{ \frac{l \pm m+ \frac{1}{2}}{2l+1} }Y_{l}^{m- 1/2}(\theta,\phi)X_{+}+ \sqrt{ \frac{l \mp m+\frac{1}{2}}{2l+1} }Y_{l}^{m+ 1/2}(\theta,\phi)X_{-}$
-
->[! Proposition 4]
->$\int d\theta d\phi \sin \theta(\mathcal{Y}_{l^{'}}^{j^{'},m^{'}})^{*}\mathcal{Y_{l}^{j,m}}$ is nonzero unless $(j^{'},l^{'},m^{'})=(j,l,m)$
->
-
-^f94e92
-
+>[!Success] Proposition 4.2
+>$$\int_{S^{2}}d\Omega\mathscr{Y}_{l^{'}}^{j^{'},m_{j}^{'}*}\mathbf{L}\cdot \mathbf{S} \mathscr{Y}_{l}^{j,m_{j}}= \delta_{j,j^{'}}\delta_{m_{j},m_{j}^{'}}\delta_{l,l^{'}}\frac{\hbar^{2}}{2}\left\{\begin{align}
+ & l,\ j= l+ \frac{1}{2} \\
+ & -l-1,\ j=l- \frac{1}{2}
+\end{align}\right.$$
 ## Proof.
-我们知道$\int d\theta d\phi \sin \theta(\mathcal{Y}_{l^{'}}^{j^{'},m^{'}})^{*}\mathcal{Y_{l}^{j,m}}= \bra{l^{'},s= \frac{1}{2},j^{'},m^{'}}l,s= \frac{1}{2},j,m\rangle$
-于是proposition 4便是显然
->[! Right]
->$\blacksquare$
 
+$$\begin{align}
+\bra{j^{'},m_{j}^{'}} \mathbf{L}\cdot \mathbf{S}\ket{j,m_{j}}  & = \frac{\hbar^{2}}{2}\left[ j(j+1)-l(l+1)- \frac{3}{4} \right]\delta_{j,j^{'}}\delta_{m_{j},m_{j}^{'}}\delta_{l,l^{'}}
+\end{align}$$
+由于$j=l\pm \frac{1}{2}$，展开正积分就有所以：
+$$\int_{S^{2}}d\Omega\mathscr{Y}_{l^{'}}^{j^{'},m_{j}^{'}*}\mathbf{L}\cdot \mathbf{S} \mathscr{Y}_{l}^{j,m_{j}}= \delta_{j,j^{'}}\delta_{m_{j},m_{j}^{'}}\delta_{l,l^{'}}\frac{\hbar^{2}}{2}\left\{\begin{align}
+ & l,\ j= l+ \frac{1}{2} \\
+ & -l-1,\ j=l- \frac{1}{2}
+\end{align}\right.$$
+>[!Right]
+>$\blacksquare$
 
