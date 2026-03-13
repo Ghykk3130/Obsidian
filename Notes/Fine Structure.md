@@ -73,9 +73,38 @@ H_{\text{LS}} & = \mu_{B}g \frac{1}{\hbar}\mathbf{S}\cdot \frac{1}{mc^{2}|e|} \m
 接下来，我们需要微扰的矩阵元。事实上，在$\{ \ket{n,j,m_{j}} \}_{j,m_{j}}$下，矩阵是对角化的。首先：
 $$\begin{align}
 \mathbf{L}\cdot \mathbf{S} \ket{n,j,m_{j}}  & = \frac{1}{2}(J^{2}-L^{2}-S^{2})\ket{n,j,m_{j}}  \\
- & = \frac{1}{2}
+ & = \frac{1}{2}\left[ j(j+1)-l(l+1)- \frac{3}{4}) \right]\ket{n,j,m_{j}} 
 \end{align}$$
+所以$\mathbf{L}\cdot \mathbf{S}$是对角化的。齐次，由于$\frac{1}{r} \frac{\partial V}{\partial r}$具有旋转不变性：
+$$\left[ \mathbf{L}, \frac{1}{r} \frac{\partial V}{\partial r} \right]=0$$
+所以借用
 
+
+我们可以定义spin-angular function。考虑展开$\ket{n,j,m_{j}}$：
+$$\begin{align}
+\bra{\mathbf{r}} n,j,m_{j} \rangle & = \bra{\mathbf{r}} \left( C_{m_{j}- \frac{1}{2},  \frac{1}{2} }^{j,m_{j}}\ket{m_{j}- \frac{1}{2}, \frac{1}{2}} +C_{m_{j}+ \frac{1}{2}, - \frac{1}{2} }^{j,m_{j}}\ket{m_{j}+ \frac{1}{2}, - \frac{1}{2} }   \right) \\
+ & = R_{nl}(\mathbf{r}) \left[ C_{m_{j}- \frac{1}{2}, \frac{1}{2}}^{j,m_{j}}Y_{l}^{m_{j}- \frac{1}{2} }(\theta,\phi)\chi_{+}+C_{m_{j}+ \frac{1}{2}, - \frac{1}{2}}^{j,m_{j}}Y_{l}^{m_{j}+ \frac{1}{2}}(\theta,\phi)\chi_{-} \right]
+\end{align}$$
+我们将angular项分离，定义：
+
+>[!Note] Definition 2.1
+>Define the spin-angular function:
+>$$\mathscr{Y}_{l}^{j,m_{j}}=C_{m_{j}- \frac{1}{2}, \frac{1}{2}}^{j,m_{j}}Y_{l}^{m_{j}- \frac{1}{2} }(\theta,\phi)\chi_{+}+C_{m_{j}+ \frac{1}{2}, - \frac{1}{2}}^{j,m_{j}}Y_{l}^{m_{j}+ \frac{1}{2}}(\theta,\phi)\chi_{-} $$
+
+
+
+
+
+
+
+所以接下来需要考量：
+$$\begin{align}
+\bra{n,j^{'},m_{j}^{'}} \frac{1}{r} \frac{\partial V}{\partial r}\ket{n,j,m_{j}}  & = \bra{n,j^{'},m_{j}^{'}} \frac{1}{r} \frac{\partial V}{\partial r} \ket{n,l}  \left[ C_{m_{j}-\frac{1}{2},  \frac{1}{2} }^{j,m_{j}}\ket{m_{j}- \frac{1}{2}, \frac{1}{2}} +C_{m_{j}+ \frac{1}{2}, - \frac{1}{2} }^{j,m_{j}}\ket{m_{j}+ \frac{1}{2}, -\frac{1}{2}}  \right] \\
+ & = \left[ C_{m_{j}- \frac{1}{2}, \frac{1}{2}}^{j,m_{j}}C_{m_{j}- \frac{1}{2}, \frac{1}{2}}^{j^{'},m_{j}^{'}*}+ C_{m_{j}+ \frac{1}{2}, -\frac{1}{2}}^{j,m_{j}}C_{m_{j}+ \frac{1}{2}, -\frac{1}{2}}^{j^{'},m_{j}^{'}*} \right]\bra{n,l^{'}}  \frac{1}{r} \frac{\partial V}{\partial r}\ket{n,l} 
+\end{align}$$
+那么，我们必有：
+$$m_{j}= m_{j}^{'}$$
+并且$l=l^{'}$，否则$\bra{n,j^{'},m_{j}^{'}},\ \ket{m_{j}\mp \frac{1}{2}, \pm \frac{1}{2}}$属于不同的$l$的子空间，内积为零。
 
 
 
