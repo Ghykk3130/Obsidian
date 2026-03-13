@@ -14,5 +14,8 @@
 - Noise from contact is Johnson noise.
 
 # To do
-- Compare the power law of the scaling factors.
-- Measure whether the diamagnetism susceptibility is independent of the temperature.
+- Compare the python scaling with the manual scaling by imposing the python scaling to the magnetization, see if the magnetization matches with Nernst, and see how this compares with the manual scaling.
+- Subtract the scaled Nernst from the magnetization, to get the topological contribution. Do this for for $90K+$. Expect a dip at some positive field. 
+- Do the python scaling with the Hall data. Compare the scaling factor with the previous scaling factors using similar approaches above.
+
+
