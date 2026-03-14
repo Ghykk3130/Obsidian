@@ -1306,7 +1306,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "projection theorem",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -1321,7 +1321,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 200,
+    "collapsed": true
   },
   "right": {
     "id": "9003d078f8dbc4ed",
@@ -1424,9 +1425,10 @@
   },
   "active": "14d3c6f3b09eabe0",
   "lastOpenFiles": [
-    "Notes/物质中的Maxwell方程.md",
+    "Notes/张量算子（1）.md",
     "Notes/多电子原子精细结构.md",
     "Notes/氢原子精细结构.md",
+    "Notes/物质中的Maxwell方程.md",
     "Notes/Zeeman效应.md",
     "Pictures/Pasted image 20260314131900.png",
     "Excalidraw/Drawing 2026-03-14 13.15.40.excalidraw.md",
@@ -1450,7 +1452,6 @@
     "Excalidraw/Drawing 2026-03-12 21.50.31.excalidraw.md",
     "Excalidraw/Drawing 2026-03-12 01.36.25.excalidraw.md",
     "Excalidraw/Drawing 2026-03-12 21.53.11.excalidraw.md",
-    "Homework/Physics 512/Physics 512 homework 3.md",
     "Pictures/9eafeee1db7f4d13ddef893c34b80595.jpg",
     "Pictures/e53ff20bfefc26ceffbe66c872537c62.jpg",
     "Pictures/Pasted image 20260311231931.png",
