@@ -1224,9 +1224,23 @@
               "icon": "lucide-file",
               "title": "精细结构"
             }
+          },
+          {
+            "id": "b68de7d0ef360a92",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Notes/Zeeman效应.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Zeeman效应"
+            }
           }
         ],
-        "currentTab": 86
+        "currentTab": 87
       }
     ],
     "direction": "vertical"
@@ -1394,8 +1408,11 @@
       "obsidian-excalidraw-plugin:New drawing": false
     }
   },
-  "active": "d5703bbfaec58c41",
+  "active": "b68de7d0ef360a92",
   "lastOpenFiles": [
+    "Notes/精细结构.md",
+    "Pictures/Pasted image 20260314131900.png",
+    "Excalidraw/Drawing 2026-03-14 13.15.40.excalidraw.md",
     "Notes/Zeeman效应.md",
     "Experimental/Reflections.md",
     "Notes/Untitled.md",
@@ -1410,7 +1427,6 @@
     "Homework/Math 654/Untitled.md",
     "Notes/流体的基本方程.md",
     "Notes/流体的动力学与热力学函数.md",
-    "Notes/精细结构.md",
     "Notes/Clebsch-Gordan系数.md",
     "Notes/Hubbard model.md",
     "Notes/Hydraulic jump.md",
@@ -1420,8 +1436,6 @@
     "Excalidraw/Drawing 2026-03-12 21.53.11.excalidraw.md",
     "Homework/Physics 512/Physics 512 homework 3.md",
     "Notes/Baker-Campbell-Hausdorff Formula.md",
-    "Notes/Born-Oppenheimer近似.md",
-    "Notes/Blasius定理，Chaplygin定理.md",
     "Pictures/9eafeee1db7f4d13ddef893c34b80595.jpg",
     "Pictures/e53ff20bfefc26ceffbe66c872537c62.jpg",
     "Pictures/Pasted image 20260311231931.png",
@@ -1432,7 +1446,6 @@
     "Pictures/Pasted image 20260309014104.png",
     "Pictures/Pasted image 20260309014003.png",
     "Pictures/Pasted image 20260309013942.png",
-    "Pictures/Pasted image 20260309010737.png",
     "tldraw",
     "Excalidraw/Scripts/Downloaded",
     "Excalidraw/Scripts",

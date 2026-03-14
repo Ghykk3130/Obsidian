@@ -45,4 +45,5 @@ $$\begin{align}
 \end{align}$$
 那么：
 $$\Delta E_{n,j=l\pm \frac{1}{2}, l,m_{j}}= \mu_{B}Bm_{j}\left( 1\pm \frac{1}{2l+1} \right)$$
+可将$g_{j= l\pm \frac{1}{2}}= 1\pm \frac{1}{2l+1}$定义为$j$的Lande g factor。
 
