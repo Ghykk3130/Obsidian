@@ -1301,12 +1301,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Notes/固体热容.md",
+                "file": "Notes/固体形变.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "固体热容"
+              "title": "固体形变"
             }
           }
         ],
@@ -1362,7 +1362,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "primitive vector",
+                "query": "Bose",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -1377,8 +1377,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200,
-    "collapsed": true
+    "width": 200
   },
   "right": {
     "id": "9003d078f8dbc4ed",
@@ -1482,6 +1481,11 @@
   "active": "74ab83f5de5fe8f9",
   "lastOpenFiles": [
     "Homework/Physics 463/Midterm 2 cheat sheet.md",
+    "Notes/固体形变.md",
+    "Homework/Physics 463/Physics 463 homework 4.md",
+    "Homework/Physics 463/Physics 463 homework 5.md",
+    "Notes/Bose-Einstein statistics与BEC.md",
+    "Notes/固体热容.md",
     "Homework/Math 654/Homework 2.md",
     "Notes/声子.md",
     "Homework/Physics 463/Midterm 1 cheat sheet.md",
@@ -1503,11 +1507,6 @@
     "Experimental/Reflections.md",
     "Notes/Untitled.md",
     "Notes/Untitled 6.md",
-    "Notes/Untitled 5.md",
-    "Notes/Untitled 4.md",
-    "Notes/Untitled 3.md",
-    "Notes/Untitled 2.md",
-    "Notes/Untitled 1.md",
     "Pictures/9eafeee1db7f4d13ddef893c34b80595.jpg",
     "Pictures/e53ff20bfefc26ceffbe66c872537c62.jpg",
     "Pictures/Pasted image 20260311231931.png",
