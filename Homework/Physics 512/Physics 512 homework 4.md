@@ -1,4 +1,4 @@
-# Problem 4.
+# Problem 4
 ## (a)
 
 Consider a magnetic field along the z-axis. Consider a single electron. Then the canonical momentum is given by:
@@ -48,5 +48,26 @@ $$\begin{align}
 \end{align}$$
 ## (b)
 
-Let $\alpha$ be the collective quantum number other than the angular quantum numbers. Treat $H_{B}$ as a perturbation. Then the original basis is $\{ \ket{\alpha,J,L,S,m_{J} }\}$. Now want a basis that diagonalize:
-$$A\mathbf{L}\cdot \mathbf{S}+ \mu_{B}B \frac{1}{\hbar}(J_{z}+S_{z})$$
+Let $\alpha$ be the collective quantum number other than the angular quantum numbers. Treat $H_{B}$ as a perturbation. Then $\{ \ket{\alpha,J,L,S,m_{J} }\}$ is a good basis that diagonalizes $A\mathbf{L}\cdot \mathbf{S}$. Now have:
+$$\begin{align}
+\bra{\alpha,J,L,S,m_{J}^{'}} S_{z}\ket{\alpha,J,L,S,m_{J}}  & = \frac{\langle \mathbf{S}\cdot \mathbf{J}\rangle_{\alpha,J,L,S,m_{J}}  }{\hbar^{2}J(J+1)} \bra{\alpha,J,L,S,m_{J}^{'}} J_{z}\ket{\alpha,J,L,S,m_{J}}  \\
+ & = \frac{\langle \mathbf{S}\cdot \mathbf{J}\rangle_{\alpha,J,L,S,m_{J}}}{\hbar^{2}J(J+1)} \hbar m_{J}\delta_{m_{J},m_{J}^{'}}
+\end{align}$$
+know that $J_{z}$ must be diagonal under this basis, and we just showed that $S_{z}$ is also diagonal under this basis. Therefore $H_{B}$ is diagonal under this basis. We next compute:
+$$\begin{align}
+\langle \mathbf{S}\cdot \mathbf{J}\rangle_{\alpha,J,L,S,m_{J}} & = \langle S^{2}\rangle+\langle \mathbf{S}\cdot \mathbf{L}\rangle \\
+ & = \hbar^{2}S(S+1)+ \frac{\hbar^{2}}{2}(J(J+1)-S(S+1)-L(L+1)) \\
+ & = \frac{\hbar^{2}}{2}(J(J+1)+S(S+1)-L(L+1))
+\end{align}$$
+Then:
+$$\begin{align}
+\langle S_{z}\rangle_{\alpha,J,L,S,m_{J}} & = \frac{J(J+1)+S(S+1)-L(L+1)}{2J(J+1)}\hbar m_{J}
+\end{align}$$
+Then:
+$$\begin{align}
+\langle H_{B}\rangle_{\alpha,J,L,S,m_{J}} & = \mu_{B}B \frac{1}{\hbar}(\langle J_{z}\rangle+\langle S_{z}\rangle) \\
+ & = \mu_{B}B\left( 1+ \frac{J(J+1)+S(S+1)-L(L+1)}{2J(J+1)} \right)m_{J}
+\end{align}$$
+So:
+$$g_{J}=\left( 1+ \frac{J(J+1)+S(S+1)-L(L+1)}{2J(J+1)} \right)$$
+
