@@ -1301,12 +1301,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Homework/Physics 463/Midterm 2 cheat sheet.md",
+                "file": "Notes/固体热容.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Midterm 2 cheat sheet"
+              "title": "固体热容"
             }
           }
         ],
@@ -1377,7 +1377,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 200,
+    "collapsed": true
   },
   "right": {
     "id": "9003d078f8dbc4ed",
@@ -1480,9 +1481,9 @@
   },
   "active": "74ab83f5de5fe8f9",
   "lastOpenFiles": [
+    "Homework/Physics 463/Midterm 2 cheat sheet.md",
     "Homework/Math 654/Homework 2.md",
     "Notes/声子.md",
-    "Homework/Physics 463/Midterm 2 cheat sheet.md",
     "Homework/Physics 463/Midterm 1 cheat sheet.md",
     "Homework/Physics 463/Practice midterm.md",
     "Homework/Physics 512/Physics 512 homework 4.md",
