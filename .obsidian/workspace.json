@@ -1362,7 +1362,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "Bose",
+                "query": "magnetic ordering",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -1481,10 +1481,12 @@
   },
   "active": "74ab83f5de5fe8f9",
   "lastOpenFiles": [
+    "Notes/Magnetic ordering.md",
+    "Reading notes/Doping-induced spin reorientation in Kagome magnet TmMn6Sn6.md",
+    "Homework/Physics 512/Physics 512 homework 4.md",
     "Homework/Physics 463/Midterm 2 cheat sheet.md",
     "Homework/Physics 463/Midterm 1 cheat sheet.md",
     "Experimental/Reflections.md",
-    "Homework/Physics 512/Physics 512 homework 4.md",
     "Homework/Physics 463/Physics 463 homework 3.md",
     "Homework/Physics 463/Physics 463 homework 2.md",
     "Homework/Physics 463/Physics 463 homework 5.md",
@@ -1505,9 +1507,7 @@
     "Homework/Physics 512/Physics 512 cheat sheet.md",
     "Notes/Zeeman效应.md",
     "Notes/氢原子精细结构.md",
-    "Notes/物质中的Maxwell方程.md",
     "Pictures/Pasted image 20260314131900.png",
-    "Excalidraw/Drawing 2026-03-14 13.15.40.excalidraw.md",
     "Pictures/9eafeee1db7f4d13ddef893c34b80595.jpg",
     "Pictures/e53ff20bfefc26ceffbe66c872537c62.jpg",
     "Pictures/Pasted image 20260311231931.png",

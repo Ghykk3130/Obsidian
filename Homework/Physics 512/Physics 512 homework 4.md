@@ -93,7 +93,7 @@ The delta function is due to that $3z^{2}-r^{2}$ does not operate on spins. Then
 $$\begin{align}
  & \Delta m_{l}=0,\ \Delta m_{s}=0,\ |l-2|\leq l^{'}\leq l+2
 \end{align}$$
-Know that $3z^{2}-r^{2}$ is even, so $\Delta l^{'}$ must be odd. So:
+Know that $3z^{2}-r^{2}$ is even, so $\Delta l^{}$ must be odd. So:
 $$\Delta l=1$$
 **$xy$:**
 
@@ -119,6 +119,35 @@ Since $r^{(2)}_{-2}$ is even, we must have $\Delta l$ even. So:
 $$\Delta l=2$$
 In conclusion, $\Delta m_{l}=\pm 2,\ \Delta m_{s}=0,\ \Delta l=2$. 
 # Sakurai 5.18
+
+Without loss of generality, let $\mathbf{B}\parallel  \hat{\mathbf{z}}$. We can choose the gauge such that:
+$$\mathbf{A}= \frac{1}{2}B(-y \hat{\mathbf{x}}+ x  \hat{\mathbf{y}})$$
+Then the diamagnetism hamiltonian is:
+$$H_{L}= \frac{e^{2}}{8mc^{2}}B^{2}(x^{2}+y^{2})$$
+For the ground state, we restrict to the subspace with $n=1,j= \frac{1}{2}$. We switch to the $\{ \ket{n,l,m_{l},m_{s}} \}$ basis for convenience. Then $l=0,\ m_{l}=0$. Since $x^{2}+y^{2}$ does not operate on spins, its matrix is diagonal in $m_{s}$. Then the matrix is diagonalized. We need:
+$$\begin{align}
+\bra{1s,m_{l}=0}(x^{2}+y^{2})\ket{1s,m_{l}=0} & = \langle r^{2}\sin ^{2}\theta \rangle \\
+ & =\bra{1s} r^{2}\ket{1s} \bra{0,0} \sin ^{2}\theta \ket{0,0} 
+\end{align}  $$
+We have:
+$$\begin{align}
+\bra{0,0} \sin ^{2}\theta \ket{0,0}  & = \int_{S^{2}}d\Omega \frac{1}{4\pi}\sin ^{2}\theta \\
+ & = 2\pi \cdot \frac{1}{4\pi}\int_{0}^{\pi}d\theta \sin ^{3}\theta \\
+ & = -\frac{1}{2}\int d(\cos \theta)(1-\cos ^{2}\theta) \\
+ & = \frac{2}{3}
+\end{align}$$
+We then compute:
+$$\begin{align}
+\bra{1s} r^{2}\ket{1s}  & = \frac{1}{\pi a_{0}^{3}}\int_{\mathbb{R}^{2}}dr r^{2} \cdot r^{2} e^{-2r/a_{0}} \\
+ & = \frac{1}{\pi a_{0}^{3}}  \frac{4!}{\left( \frac{2}{a_{0}} \right)^{5}} \\
+ & = \frac{3}{4\pi}a_{0}^{2}
+\end{align}$$
+So:
+$$\begin{align}
+\langle H_{L}\rangle & = \frac{e^{2}}{8mc^{2}}B^{2} \frac{1}{2\pi}a_{0}^{2}
+\end{align}$$
+Then:
+$$\chi= - \frac{e^{2}}{8mc^{2}\pi}a_{0}^{2}$$
 # Problem 4
 ## (a)
 
@@ -148,7 +177,7 @@ $$\begin{align}
 \end{align}$$
 If we add up the interaction energies of multiple electrons, we get:
 $$H_{B}= \frac{|e|}{2m}B(L_{z}+2S_{z})= \mu_{B}B \frac{1}{\hbar}(L_{z}+2S_{z})= \mu_{B}B \frac{1}{\hbar}(J_{z}+S_{z})$$
-![[Drawing 2026-03-15 02.38.53.excalidraw|center|500]]
+![[Drawing 2026-03-15 02.38.53.excalidraw|200]]
 In the semiclassical picture, both $\mathbf{L},\mathbf{S}$ are in precession. Then $\mathbf{J}$ is rotating around the z-axis. Then:
 $$\begin{align}
 \langle S_{z}\rangle & = S \cos \beta \frac{J_{z}}{J}
@@ -198,7 +227,7 @@ Adopting the formula:
 $$g_{J}=\left( 1+ \frac{J(J+1)+S(S+1)-L(L+1)}{2J(J+1)} \right)$$
 It's easy to calculate that for $3^{2}S_{1 /2}$, $J=\frac{1}{2},S=1,L=0$. we get $g_{J}=2$. For $3^{2}P_{3 /2}$, $J=\frac{3}{2},S=1,L=1$, we get $g_{J}=\frac{2}{3}$. For $3^{2}P_{1 /2}$, $J=\frac{1}{2},S=1,L=1$, we get $g_{J}=\frac{4}{3}$.
 
-![[Drawing 2026-03-15 03.30.40.excalidraw|center|500]]
+![[Drawing 2026-03-15 03.30.40.excalidraw|300]]
 ## (b)
 
 We know that the dipole interaction is:
@@ -235,6 +264,6 @@ $$\begin{align}
 \end{align}$$
 Then we find the field:
 $$B= \frac{\Delta \nu_{\text{FS}}}{2.332\ MHz/ \text{Gauss}} \approx 22.1\ T$$
-The field should be much smaller than this value, so $B< 0.2 T$ is good.
+The field should be much smaller than this value. Let's say only under 1 percent is good. So $B< 0.2 T$ is good.
 
 
