@@ -11,6 +11,10 @@ $$\begin{align}
 \bra{n,j,l^{'},s,m_{j}^{'}} z \ket{n,j,l,s,m_{j}}  & = \bra{n,l^{'}} r\ket{n,l} \bra{j,m_{j}^{'}} \cos \theta \ket{j,m_{j}}  \\
  & = \bra{n,l^{'}} r\ket{n,l} \bra{j,m_{j}} \cos \theta \ket{j,m_{j}}\delta_{m_{j},m_{j}^{'}} 
 \end{align}$$
+
+
+
+
 Then evaluate $\bra{n,j,l^{'},s,m_{j}}z \ket{n,j,l,s,m_{j}}$. By parity selection rule, we have:
 $$\bra{2^{2}S_{1 /2},m_{j}}z \ket{2^{2}S_{1 /2},m_{j}} =0,\ \bra{2^{2}P_{1 /2},m_{j}}z \ket{2^{2}P_{1 /2},m_{j}} =0 $$
 since $z$ is odd. 
