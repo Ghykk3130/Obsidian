@@ -6,8 +6,7 @@ Now $\{ \ket{n,j,l,s,m_{j}} \}$ is a good basis that diagonalizes $H_{0}+H_{\tex
 
 Since $H_{0}+H_{\text{FS}}$ is a scalar in this subspace, and the representation of an identity is always an identity in any basis, we can ignore them because they don't affect diagonalization. Inside the subspace with $n=2,j= \frac{1}{2}$, we can switch back to the $\{ \ket{n,l,s,m_{l},m_{s}} \}$ basis since it's easier to work out the matrix elements of $z$. 
 
-
- Since both $H_{\delta},z$ don't operate on spins, the total matrix is also diagonalized with respect to $m_{s}$. Then we can also fix $m_{s}$. We have:
+Since both $H_{\delta},z$ don't operate on spins, the total matrix is also diagonalized with respect to $m_{s}$. Then we can also fix $m_{s}$. We have:
  $$\begin{align}
 \bra{n=2,l^{'},m_{l}^{'}, m_{s}^{}} z \ket{n=2,l,m_{l},m_{s}}  & = \bra{2l^{'}} r \ket{2l} \bra{l^{'},m_{l}^{'}} \cos \theta \ket{l,m_{l}}   
 \end{align}$$
@@ -108,7 +107,7 @@ $$\begin{align}
 \Delta m_{l}=2,\ \Delta m_{s}=0,\ |l-2|\leq l^{'}\leq l+2
 \end{align}$$
 Know that $r^{(2)}_{2}$ is even, then we must have $\Delta l$ even. So:
-$$\Delta l=2$$
+$$\Delta l=0,\pm 2$$
 For $r^{(2)}_{-2}$, we have:
 $$\begin{align}
 \bra{n^{'},l^{'},m_{l}^{'},m_{s}^{'}} r^{(2)}_{-2}\ket{n,l,m_{l},m_{s}}  & \propto \delta_{m_{s},m_{s}^{'}} \bra{2,l,-2,m_{l}} l^{'},m_{l}^{'}\rangle
@@ -116,8 +115,8 @@ $$\begin{align}
 Then:
 $$\Delta m_{l}=-2,\ \Delta m_{s}=0,\ |l-2|\leq l^{'}\leq l+2$$
 Since $r^{(2)}_{-2}$ is even, we must have $\Delta l$ even. So:
-$$\Delta l=2$$
-In conclusion, $\Delta m_{l}=\pm 2,\ \Delta m_{s}=0,\ \Delta l=2$. 
+$$\Delta l=0,\pm 2$$
+In conclusion, $\Delta m_{l}=\pm 2,\ \Delta m_{s}=0,\ \Delta l=\pm 2,0$. 
 # Sakurai 5.18
 
 Without loss of generality, let $\mathbf{B}\parallel  \hat{\mathbf{z}}$. We can choose the gauge such that:
