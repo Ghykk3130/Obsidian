@@ -17,6 +17,7 @@ $$\begin{align}
 and its complex conjugate. We compute:
 $$\begin{align}
 \bra{2s} r\ket{sp} \bra{0,0} \cos \theta \ket{1,0}  & = 3\sqrt{ 3 }a_{0} \int_{S^{2}}d\Omega Y_{0}^{0*} \cos \theta Y_{l}^{0} \\
+ & = 3\sqrt{ 3 }a_{0} \frac{1}{\sqrt{ 3 }} \\
  & = 3a_{0}
 \end{align}$$
 Next, we compute $\bra{2,l^{'},m_{l}^{'},m_{s}^{}}H_{\delta}\ket{2,l,m_{l},m_{s}}$. Know that $H_{\delta}= \delta \ket{2s}\bra{2s}$, then the only non-zero matrix elements are:
@@ -68,7 +69,7 @@ So the first order perturbation gives zero shift. We then consider:
 $$\begin{align}
 \sum_{(l^{'},m_{l}^{'})\neq (l,m_{l})} \frac{|\bra{l^{'},m_{l}^{'}}L_{y}\ket{l,m_{l}}  |^{2}}{E_{l,m_{l}}-E_{l^{'},m_{l}^{'}} } & = \sum_{m_{l}^{'}} \frac{|\bra{l,m_{l}^{'}} L_{y}\ket{l,m_{l}} |^{2}}{E_{l,m_{l}}-E_{l,m_{l}^{'}}} 
 \end{align}$$
-This is because $\{ \ket{l,m_{l}} \}$ is an invariant subspace. Then the only non-zero matrix elements are:
+This is because $\{ \ket{l,m_{l}} \}$ is an invariant subspace, and $L_{y}$ does not mix states with different $l$'s. Then the only non-zero matrix elements are:
 $$\begin{align}
  & \bra{l,m_{l}^{}+1}L_{y}\ket{l,m_{l}} = \bra{l,m_{l}+1}  \frac{L_{+}-L_{-}}{2i}\ket{l,m_{l}} = \frac{\sqrt{ m_{l}+1 }\hbar}{2i}  \\
  & \bra{l,m_{l}-1}L_{y}\ket{l,m_{l}} = \bra{l,m_{l}-1}  \frac{L_{+}-L_{-}}{2i}\ket{l,m_{l}} = \frac{\sqrt{ m_{l} }\hbar}{2i} 

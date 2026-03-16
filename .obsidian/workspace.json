@@ -1301,12 +1301,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Notes/多电子原子精细结构.md",
+                "file": "Homework/Physics 512/Physics 512 homework 4.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "多电子原子精细结构"
+              "title": "Physics 512 homework 4"
             }
           }
         ],
@@ -1362,7 +1362,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "magnetic ordering",
+                "query": "van vleck",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -1481,8 +1481,9 @@
   },
   "active": "74ab83f5de5fe8f9",
   "lastOpenFiles": [
-    "Homework/Physics 512/Physics 512 homework 4.md",
     "Notes/Magnetic ordering.md",
+    "Homework/Physics 512/Physics 512 homework 4.md",
+    "Notes/多电子原子精细结构.md",
     "Reading notes/Doping-induced spin reorientation in Kagome magnet TmMn6Sn6.md",
     "Homework/Physics 463/Midterm 2 cheat sheet.md",
     "Homework/Physics 463/Midterm 1 cheat sheet.md",
@@ -1498,7 +1499,6 @@
     "Homework/Math 654/Homework 2.md",
     "Notes/声子.md",
     "Excalidraw/Drawing 2026-03-15 03.30.40.excalidraw.md",
-    "Notes/多电子原子精细结构.md",
     "Excalidraw/Drawing 2026-03-15 02.38.53.excalidraw.md",
     "Notes/张量算子（1）.md",
     "Homework/Physics 512/Physics 512 homework 3.md",
