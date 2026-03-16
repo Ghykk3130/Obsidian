@@ -93,8 +93,8 @@ The delta function is due to that $3z^{2}-r^{2}$ does not operate on spins. Then
 $$\begin{align}
  & \Delta m_{l}=0,\ \Delta m_{s}=0,\ |l-2|\leq l^{'}\leq l+2
 \end{align}$$
-Know that $3z^{2}-r^{2}$ is even, so $\Delta l^{}$ must be odd. So:
-$$\Delta l=1$$
+Know that $3z^{2}-r^{2}$ is even, so $\Delta l^{}$ must be even. So:
+$$\Delta l=0,\pm 2$$
 **$xy$:**
 
 We know that $xy\propto r^{(2)}_{2}-r^{(2)}_{-2}$. For the selection rule, it suffices to let one of the matrices of $r^{(2)}_{2},r^{(2)}_{-2}$ to be non-zero. 
