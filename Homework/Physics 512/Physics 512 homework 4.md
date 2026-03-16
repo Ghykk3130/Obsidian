@@ -229,8 +229,8 @@ It's easy to calculate that for $3^{2}S_{1 /2}$, $J=\frac{1}{2},S=1,L=0$. we get
 ![[Drawing 2026-03-15 03.30.40.excalidraw|300]]
 ## (b)
 
-We know that the dipole interaction is:
-$$H_{d}=-|e|\mathbf{r}\cdot \mathbf{E}$$
+We know that the E1 transitions are induced by:
+$$d=-|e|\mathbf{r}$$
 Then is suffices to consider the non-zero matrix elements of $\mathbf{r}\cdot \mathbf{E}$. Know that:
 $$\begin{align}
  & x= \frac{r^{(1)}_{-1}-r^{(1)}_{1}}{\sqrt{ 2 }} \\

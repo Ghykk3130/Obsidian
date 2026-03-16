@@ -1301,12 +1301,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Homework/Physics 512/Physics 512 homework 4.md",
+                "file": "Notes/多电子原子精细结构.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Physics 512 homework 4"
+              "title": "多电子原子精细结构"
             }
           }
         ],
@@ -1481,9 +1481,9 @@
   },
   "active": "74ab83f5de5fe8f9",
   "lastOpenFiles": [
+    "Homework/Physics 512/Physics 512 homework 4.md",
     "Notes/Magnetic ordering.md",
     "Reading notes/Doping-induced spin reorientation in Kagome magnet TmMn6Sn6.md",
-    "Homework/Physics 512/Physics 512 homework 4.md",
     "Homework/Physics 463/Midterm 2 cheat sheet.md",
     "Homework/Physics 463/Midterm 1 cheat sheet.md",
     "Experimental/Reflections.md",
