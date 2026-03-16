@@ -56,9 +56,69 @@ E_{\pm} & = \pm3|e|a_{0}\epsilon \sqrt{ 1+ \frac{\delta^{2}}{36e^{2}a_{0}^{2}\ep
 \end{align}$$
 Then the energy level shifts are $\pm 3|e|a_{0}\epsilon+\mathcal{O}(\delta)\approx \pm 3|e|a_{0}\epsilon \approx \epsilon$ if we ignore the $\mathcal{O}(\delta)$ term.
 # Sakurai 5.17
+## (a)
 
+Let $H_{0}=AL^{2}+BL_{z}$. Obviously, the basis that diagonalizes $H_{0}$ is $\{ \ket{l,m_{l}} \}$. The energies are:
+$$\langle H_{0}\rangle= A\hbar^{2}l(l+1)-Bm_{l}\hbar $$
+We assume that the eigen subspaces are non-degenerate. Observe that:
+$$\begin{align}
+\bra{l,m_{l}} L_{y}\ket{l,m_{l}}  & = \bra{l,m_{l}} \frac{L_{+}-L_{-}}{2i}\ket{l,m_{l}}  \\
+ & = 0
+\end{align}$$
+So the first order perturbation gives zero shift. We then consider:
+$$\begin{align}
+\sum_{(l^{'},m_{l}^{'})\neq (l,m_{l})} \frac{|\bra{l^{'},m_{l}^{'}}L_{y}\ket{l,m_{l}}  |^{2}}{E_{l,m_{l}}-E_{l^{'},m_{l}^{'}} } & = \sum_{m_{l}^{'}} \frac{|\bra{l,m_{l}^{'}} L_{y}\ket{l,m_{l}} |^{2}}{E_{l,m_{l}}-E_{l,m_{l}^{'}}} 
+\end{align}$$
+This is because $\{ \ket{l,m_{l}} \}$ is an invariant subspace. Then the only non-zero matrix elements are:
+$$\begin{align}
+ & \bra{l,m_{l}^{}+1}L_{y}\ket{l,m_{l}} = \bra{l,m_{l}+1}  \frac{L_{+}-L_{-}}{2i}\ket{l,m_{l}} = \frac{\sqrt{ m_{l}+1 }\hbar}{2i}  \\
+ & \bra{l,m_{l}-1}L_{y}\ket{l,m_{l}} = \bra{l,m_{l}-1}  \frac{L_{+}-L_{-}}{2i}\ket{l,m_{l}} = \frac{\sqrt{ m_{l} }\hbar}{2i} 
+\end{align}$$
+Then:
+$$\begin{align}
+\sum_{m_{l}^{'}} \frac{|\bra{l,m_{l}^{'}} L_{y}\ket{l,m_{l}} |^{2}}{E_{l,m_{l}}-E_{l,m_{l}^{'}}} & = \frac{(m_{l}+1)\hbar^{2} /4 }{-B\hbar}+ \frac{m_{l} \hbar^{2} /4}{B\hbar} \\
+ & = - \frac{\hbar}{4B}
+\end{align}$$
+Then the energy eigenvalue is:
+$$E=A\hbar l(l+1)-Bm_{l}\hbar- \frac{C^{2}}{4B}\hbar$$
+## (b)
 
+**$3z^{2}-r^{2}$:**
 
+We know that $3z^{2}-r^{2}\propto r^{(2)}_{0}$. Therefore:
+$$\begin{align}
+\bra{n^{'},l^{'},m_{l}^{'},m_{s}^{'}} (3z^{2}-r^{2})\ket{n,l,m_{l},m_{s}} \propto \delta_{m_{s},m_{s}^{'}}\bra{2,l,0,m_{l}} l^{'},m_{l}^{'}\rangle 
+\end{align}$$
+The delta function is due to that $3z^{2}-r^{2}$ does not operate on spins. Then:
+$$\begin{align}
+ & \Delta m_{l}=0,\ \Delta m_{s}=0,\ |l-2|\leq l^{'}\leq l+2
+\end{align}$$
+Know that $3z^{2}-r^{2}$ is even, so $\Delta l^{'}$ must be odd. So:
+$$\Delta l=1$$
+**$xy$:**
+
+We know that $xy\propto r^{(2)}_{2}-r^{(2)}_{-2}$. For the selection rule, it suffices to let one of the matrices of $r^{(2)}_{2},r^{(2)}_{-2}$ to be non-zero. 
+
+For $r^{(2)}_{2}$, we have:
+$$\begin{align}
+\bra{n^{'},l^{'},m_{l}^{'},m_{s}^{'}} r^{(2)}_{2}\ket{n,l,m_{l},m_{s}}  & \propto \delta_{m_{s},m_{s}^{'}} \bra{2,l,2,m_{l}} l^{'},m_{l}^{'}\rangle
+\end{align}$$
+Then:
+$$\begin{align}
+\Delta m_{l}=2,\ \Delta m_{s}=0,\ |l-2|\leq l^{'}\leq l+2
+\end{align}$$
+Know that $r^{(2)}_{2}$ is even, then we must have $\Delta l$ even. So:
+$$\Delta l=2$$
+For $r^{(2)}_{-2}$, we have:
+$$\begin{align}
+\bra{n^{'},l^{'},m_{l}^{'},m_{s}^{'}} r^{(2)}_{-2}\ket{n,l,m_{l},m_{s}}  & \propto \delta_{m_{s},m_{s}^{'}} \bra{2,l,-2,m_{l}} l^{'},m_{l}^{'}\rangle
+\end{align}$$
+Then:
+$$\Delta m_{l}=-2,\ \Delta m_{s}=0,\ |l-2|\leq l^{'}\leq l+2$$
+Since $r^{(2)}_{-2}$ is even, we must have $\Delta l$ even. So:
+$$\Delta l=2$$
+In conclusion, $\Delta m_{l}=\pm 2,\ \Delta m_{s}=0,\ \Delta l=2$. 
+# Sakurai 5.18
 # Problem 4
 ## (a)
 
