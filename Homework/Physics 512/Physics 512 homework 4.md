@@ -78,5 +78,22 @@ $$g_{J}=\left( 1+ \frac{J(J+1)+S(S+1)-L(L+1)}{2J(J+1)} \right)$$
 It's easy to calculate that for $3^{2}S_{1 /2}$, $J=\frac{1}{2},S=1,L=0$. we get $g_{J}=2$. For $3^{2}P_{3 /2}$, $J=\frac{3}{2},S=1,L=1$, we get $g_{J}=\frac{2}{3}$. For $3^{2}P_{1 /2}$, $J=\frac{1}{2},S=1,L=1$, we get $g_{J}=\frac{4}{3}$.
 
 ![[Drawing 2026-03-15 03.30.40.excalidraw|center|500]]
+## (b)
 
-
+We know that the dipole interaction is:
+$$H_{d}=-|e|\mathbf{r}\cdot \mathbf{E}$$
+Then is suffices to consider the non-zero matrix elements of $\mathbf{r}\cdot \mathbf{E}$. Know that:
+$$\begin{align}
+ & x= \frac{r^{(1)}_{-1}-r^{(1)}_{1}}{\sqrt{ 2 }} \\
+ & y= - \frac{r^{(1)}_{-1}- r^{(1)}_{1}}{\sqrt{ 2 }i} \\
+ & z=r^{(1)}_{0}
+\end{align}$$
+Then as long as the matrix elements of one of $r^{(1)}_{1},r^{(1)}_{-1},r^{(1)}_{0}$ are non-zero, then the transition is allowed. Know that:
+$$\bra{J^{'},m_{J}^{'}} r^{(1)}_{q}\ket{J,m_{J}} \propto \bra{J,1,m_{J},q} J^{'},m_{J}^{'}\rangle$$
+Then:
+$$\Delta m_{J}=\pm 1,\ 0,\ |J-1|\leq J^{'}\leq J+1$$
+Know that $\ket{3S},\ket{3D}$ are even, $\ket{3P}$ is odd, and $\mathbf{r}$ is odd, then the upper state must be $\ket{3P}$ by parity selection rule. Then the allowed transitions are:
+$$\begin{array}{c|c|c} 
+\text{lower state} & \text{upper state} & \Delta E_{B}  \\
+\hline \ket{3^{2}S_{1 /2},- \frac{1}{2}}  & \ket{3^{2}P_{1 /2}, \frac{1}{2}}  & 
+\end{array}$$
