@@ -48,7 +48,14 @@ E_{\pm} & =\pm  \frac{\delta}{2}\sqrt{ 1+ \frac{36e^{2}a_{0}^{2}\epsilon^{2}}{\d
 \end{align}$$
 Then the energy level shifts are clearly $\pm \frac{9e^{2}a_{0}^{2}\epsilon^{2}}{\delta}\propto \epsilon^{2}$.
 
-
+If the field is strong, we have:
+$$\begin{align}
+E_{\pm} & = \pm3|e|a_{0}\epsilon \sqrt{ 1+ \frac{\delta^{2}}{36e^{2}a_{0}^{2}\epsilon^{2}} } \\
+ & \approx \pm 3|e|a_{0}\epsilon\left( 1+ \frac{\delta^{2}}{72e^{2}a_{0}^{2}\epsilon^{2}} \right) \\
+ & = \pm 3|e|a_{0}\epsilon+\mathcal{O}(\delta^{2})
+\end{align}$$
+Then the energy level shifts are $\pm 3|e|a_{0}\epsilon+\mathcal{O}(\delta)\approx \pm 3|e|a_{0}\epsilon \approx \epsilon$ if we ignore the $\mathcal{O}(\delta)$ term.
+# Sakurai 5.17
 
 
 
