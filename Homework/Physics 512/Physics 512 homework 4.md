@@ -1,3 +1,6 @@
+# Sakurai 5.13
+
+
 # Problem 4
 ## (a)
 
@@ -94,6 +97,26 @@ Then:
 $$\Delta m_{J}=\pm 1,\ 0,\ |J-1|\leq J^{'}\leq J+1$$
 Know that $\ket{3S},\ket{3D}$ are even, $\ket{3P}$ is odd, and $\mathbf{r}$ is odd, then the upper state must be $\ket{3P}$ by parity selection rule. Then the allowed transitions are:
 $$\begin{array}{c|c|c} 
-\text{lower state} & \text{upper state} & \Delta E_{B}  \\
-\hline \ket{3^{2}S_{1 /2},- \frac{1}{2}}  & \ket{3^{2}P_{1 /2}, \frac{1}{2}}  & 
+\text{lower state} & \text{upper state} & \Delta E_{B} /B(MHz /\text{Gauss})  \\
+\hline \ket{3^{2}S_{1 /2},- \frac{1}{2}}  & \ket{3^{2}P_{1 /2}, \frac{1}{2}}  & 1.865 \\
+\hline \ket{3^{2}S_{1 /2}, -\frac{1}{2}}     &  \ket{3^{2}P_{1 /2}, - \frac{1}{2} } & 0.933 \\
+\hline \ket{3^{2}S_{1 /2},- \frac{1}{2}}  & \ket{3^{2}P_{3 /2 }, \frac{1}{2}}  & 2.332 \\
+\hline  \ket{3^{2}S_{ 1 /2  },- \frac{1}{2} } & \ket{3^{2}P_{3/2}, - \frac{1}{2}}  & 0.466 \\
+\hline  \ket{3^{2}S_{ 1 /2}, - \frac{1}{2}}  & \ket{3^{2}P_{3 /2},- \frac{3}{2}}  & -1.399 \\
+\hline \ket{3^{2}S_{1 /2}, \frac{1}{2}}  & \ket{3^{2}P_{1 /2}, \frac{1}{2}}  &  -0.933\\
+\hline\ket{3^{2}S_{1 /2}, \frac{1}{2}}  & \ket{3^{2}P_{1 /2}, -\frac{1}{2}}  &  -1.865\\
+\hline \ket{3^{2}S_{ 1 /2}, \frac{1}{2} } &  \ket{3^{2}P_{ 3/2}, \frac{1}{2} } &  -0.466\\
+\hline \ket{3^{2}S_{ 1/ 2}, \frac{1}{2}} &  \ket{3^{2}P_{3 /2}, - \frac{1}{2}}  & -2.332 \\
+\hline \ket{3^{2}S_{ 1 /2}, \frac{1}{2}}  & \ket{3^{2}P_{3 /2}, \frac{3}{2}}  &   1.399 
 \end{array}$$
+## (c)
+
+The fine structure splitting is given by:
+$$\begin{align}
+\Delta \nu_{\text{FS}}= |c \frac{1}{\lambda_{1}}- c \frac{1}{\lambda_{2} }|=515.742\ GHz
+\end{align}$$
+Then we find the field:
+$$B= \frac{\Delta \nu_{\text{FS}}}{2.332\ MHz/ \text{Gauss}} \approx 22.1\ T$$
+The field should be much smaller than this value, so $B< 0.2 T$ is good.
+
+
