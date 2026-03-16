@@ -4,33 +4,51 @@ The hamiltonian is given by:
 $$H=H_{0}+H_{\text{FS}}+H_{\delta}- |e|z\epsilon$$
 Now $\{ \ket{n,j,l,s,m_{j}} \}$ is a good basis that diagonalizes $H_{0}+H_{\text{FS}}+H_{\delta}$. Since $|e|z\epsilon$ is small compared with the fine structure, and is definitely small compared with energy levels in $H_{0}$, we can fix $n=2,j= \frac{1}{2}$ and work in the subspace with $l=0,1$. 
 
-Since $H_{0}+H_{\text{FS}}$ is an identity in this subspace, we ignore them because they don't affect diagonalization. Then we need the matrix element $\bra{n,j,l^{'},s,m_{j}^{'}} (H_{\delta}-|e|z\epsilon) \ket{n,j,l,s,m_{j}}$. 
+Since $H_{0}+H_{\text{FS}}$ is a scalar in this subspace, and the representation of an identity is always an identity in any basis, we can ignore them because they don't affect diagonalization. Inside the subspace with $n=2,j= \frac{1}{2}$, we can switch back to the $\{ \ket{n,l,s,m_{l},m_{s}} \}$ basis since it's easier to work out the matrix elements of $z$. 
 
-Obviously, by selection rule, 
-$$\begin{align}
-\bra{n,j,l^{'},s,m_{j}^{'}} z \ket{n,j,l,s,m_{j}}  & = \bra{n,l^{'}} r\ket{n,l} \bra{j,m_{j}^{'}} \cos \theta \ket{j,m_{j}}  \\
- & = \bra{n,l^{'}} r\ket{n,l} \bra{j,m_{j}} \cos \theta \ket{j,m_{j}}\delta_{m_{j},m_{j}^{'}} 
+
+ Since both $H_{\delta},z$ don't operate on spins, the total matrix is also diagonalized with respect to $m_{s}$. Then we can also fix $m_{s}$. We have:
+ $$\begin{align}
+\bra{n=2,l^{'},m_{l}^{'}, m_{s}^{}} z \ket{n=2,l,m_{l},m_{s}}  & = \bra{2l^{'}} r \ket{2l} \bra{l^{'},m_{l}^{'}} \cos \theta \ket{l,m_{l}}   
 \end{align}$$
-
-
-
-
-Then evaluate $\bra{n,j,l^{'},s,m_{j}}z \ket{n,j,l,s,m_{j}}$. By parity selection rule, we have:
-$$\bra{2^{2}S_{1 /2},m_{j}}z \ket{2^{2}S_{1 /2},m_{j}} =0,\ \bra{2^{2}P_{1 /2},m_{j}}z \ket{2^{2}P_{1 /2},m_{j}} =0 $$
-since $z$ is odd. 
-
-We observe:
+Since $\cos \theta$ is odd, we must have $l^{'}\neq l$, or the matrix element vanishes by the parity selection rule. Moreover, since $\cos \theta=\left( \frac{\mathbf{r}}{r} \right)^{(1)}_{0}$, we must have $m_{l}^{'}= m_{l}$. Then the only non-zero matrix elements are:
 $$\begin{align}
-\bra{n,j,l^{'},s,m_{j}^{'}} H_{d}\ket{n,j,l,s,m_{j}} = \bra{n,j,l^{'},s,m_{j}} H_{d}\ket{n,j,l,s,m_{j}} \delta_{m_{j},m_{j}^{'}}
+ & \bra{2,l^{'}=0,m_{l}^{'}=0,m_{s}}z \ket{2,l=1,m_{l}=0,m_{s}} = \bra{2s} r \ket{2p}\bra{0,0} \cos \theta \ket{1,0}  
 \end{align}$$
-it suffices to fix $m_{j}$. 
+and its complex conjugate. We compute:
+$$\begin{align}
+\bra{2s} r\ket{sp} \bra{0,0} \cos \theta \ket{1,0}  & = 3\sqrt{ 3 }a_{0} \int_{S^{2}}d\Omega Y_{0}^{0*} \cos \theta Y_{l}^{0} \\
+ & = 3a_{0}
+\end{align}$$
+Next, we compute $\bra{2,l^{'},m_{l}^{'},m_{s}^{}}H_{\delta}\ket{2,l,m_{l},m_{s}}$. Know that $H_{\delta}= \delta \ket{2s}\bra{2s}$, then the only non-zero matrix elements are:
+$$\bra{2s}H_{\delta}\ket{2s} \delta_{m_{l},m_{l}^{'}}= \delta\delta_{m_{l},m_{l}^{'}}$$
+Therefore, we have:
+$$\begin{align}
+H_{\delta}-|e|z\epsilon \overset{\wedge}{=} \begin{pmatrix}
+ \delta & -3|e|a_{0}\epsilon \\
+-3|e|a_{0}\epsilon & 0
+\end{pmatrix}
+\end{align}$$
+where the first column corresponds to $\ket{n=2,l=0,m_{l}=0,m_{s}}$, and the second column corresponds to $\ket{n=2,l=1,m_{l}=0,m_{s}}$.
 
-
-Therefore:
-$$H_{\delta}-|e|z\epsilon \overset{\wedge}{=} \begin{pmatrix}
-\delta & -|e|\epsilon \bra{2s} z \ket{2p}  \\
--|e|\epsilon \bra{2p} z\ket{2s}  & 0
+We can subtract a scalar $\frac{\delta}{2}\mathbb{1}$ from the matrix, and this doesn't affect diagonalization, since the representation of an identity is always an identity in any basis. Then we rewrite:
+$$H_{\delta}-|e|z\epsilon  \overset{\wedge}{=} \begin{pmatrix}
+\delta /2 & -3|e|a_{0}\epsilon \\
+-3|e|a_{0}\epsilon & - \delta /2
 \end{pmatrix}$$
+We compute the eigenvalues:
+$$\begin{align}
+ & \left( \frac{\delta}{2}-E \right)\left( - \frac{\delta}{2}-E \right)- 9e^{2}a_{0}^{2}\epsilon^{2}=0 \\
+\implies & E_{\pm}= \pm \sqrt{ \frac{\delta^{2}}{4}+9e^{2}a_{0}^{2}\epsilon^{2} }
+\end{align}$$
+If the field is weak, we have:
+$$\begin{align}
+E_{\pm} & =\pm  \frac{\delta}{2}\sqrt{ 1+ \frac{36e^{2}a_{0}^{2}\epsilon^{2}}{\delta^{2}} } \\
+ & \approx \pm  \frac{\delta}{2}\left( 1+ \frac{18e^{2}a_{0}^{2}\epsilon^{2}}{\delta^{2}} \right) \\
+\end{align}$$
+Then the energy level shifts are clearly $\pm \frac{9e^{2}a_{0}^{2}\epsilon^{2}}{\delta}\propto \epsilon^{2}$.
+
+
 
 
 
