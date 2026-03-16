@@ -1,5 +1,34 @@
 # Sakurai 5.13
 
+The hamiltonian is given by:
+$$H=H_{0}+H_{\text{FS}}+H_{\delta}- |e|z\epsilon$$
+Now $\{ \ket{n,j,l,s,m_{j}} \}$ is a good basis that diagonalizes $H_{0}+H_{\text{FS}}+H_{\delta}$. Since $|e|z\epsilon$ is small compared with the fine structure, and is definitely small compared with energy levels in $H_{0}$, we can fix $n=2,j= \frac{1}{2}$ and work in the subspace with $l=0,1$. 
+
+Since $H_{0}+H_{\text{FS}}$ is an identity in this subspace, we ignore them because they don't affect diagonalization. Then we need the matrix element $\bra{n,j,l^{'},s,m_{j}^{'}} (H_{\delta}-|e|z\epsilon) \ket{n,j,l,s,m_{j}}$. 
+
+Obviously, by selection rule, 
+$$\begin{align}
+\bra{n,j,l^{'},s,m_{j}^{'}} z \ket{n,j,l,s,m_{j}}  & = \bra{n,l^{'}} r\ket{n,l} \bra{j,m_{j}^{'}} \cos \theta \ket{j,m_{j}}  \\
+ & = \bra{n,l^{'}} r\ket{n,l} \bra{j,m_{j}} \cos \theta \ket{j,m_{j}}\delta_{m_{j},m_{j}^{'}} 
+\end{align}$$
+Then evaluate $\bra{n,j,l^{'},s,m_{j}}z \ket{n,j,l,s,m_{j}}$. By parity selection rule, we have:
+$$\bra{2^{2}S_{1 /2},m_{j}}z \ket{2^{2}S_{1 /2},m_{j}} =0,\ \bra{2^{2}P_{1 /2},m_{j}}z \ket{2^{2}P_{1 /2},m_{j}} =0 $$
+since $z$ is odd. 
+
+We observe:
+$$\begin{align}
+\bra{n,j,l^{'},s,m_{j}^{'}} H_{d}\ket{n,j,l,s,m_{j}} = \bra{n,j,l^{'},s,m_{j}} H_{d}\ket{n,j,l,s,m_{j}} \delta_{m_{j},m_{j}^{'}}
+\end{align}$$
+it suffices to fix $m_{j}$. 
+
+
+Therefore:
+$$H_{\delta}-|e|z\epsilon \overset{\wedge}{=} \begin{pmatrix}
+\delta & -|e|\epsilon \bra{2s} z \ket{2p}  \\
+-|e|\epsilon \bra{2p} z\ket{2s}  & 0
+\end{pmatrix}$$
+
+
 
 # Problem 4
 ## (a)
