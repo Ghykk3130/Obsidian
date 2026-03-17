@@ -4,57 +4,80 @@ The hamiltonian is given by:
 $$H=H_{0}+H_{\text{FS}}+H_{\delta}- |e|z\epsilon$$
 Now $\{ \ket{n,j,l,s,m_{j}} \}$ is a good basis that diagonalizes $H_{0}+H_{\text{FS}}+H_{\delta}$. Since $|e|z\epsilon$ is small compared with the fine structure, and is definitely small compared with energy levels in $H_{0}$, we can fix $n=2,j= \frac{1}{2}$ and work in the subspace with $l=0,1$. 
 
-Since $H_{0}+H_{\text{FS}}$ is a scalar in this subspace, and the representation of an identity is always an identity in any basis, we can ignore them because they don't affect diagonalization. Inside the subspace with $n=2,j= \frac{1}{2}$, we can switch back to the $\{ \ket{n,l,s,m_{l},m_{s}} \}$ basis since it's easier to work out the matrix elements of $z$. 
-
-Since both $H_{\delta},z$ don't operate on spins, the total matrix is also diagonalized with respect to $m_{s}$. Then we can also fix $m_{s}$. We have:
- $$\begin{align}
-\bra{n=2,l^{'},m_{l}^{'}, m_{s}^{}} z \ket{n=2,l,m_{l},m_{s}}  & = \bra{2l^{'}} r \ket{2l} \bra{l^{'},m_{l}^{'}} \cos \theta \ket{l,m_{l}}   
-\end{align}$$
-Since $\cos \theta$ is odd, we must have $l^{'}\neq l$, or the matrix element vanishes by the parity selection rule. Moreover, since $\cos \theta=\left( \frac{\mathbf{r}}{r} \right)^{(1)}_{0}$, we must have $m_{l}^{'}= m_{l}$. Then the only non-zero matrix elements are:
+Since $H_{0}+H_{\text{FS}}$ is a scalar in this subspace, and the representation of an identity is always an identity in any basis, we can ignore them because they don't affect diagonalization. Inside the subspace with $n=2,j= \frac{1}{2}$, Since both $H_{\delta},z$ don't operate on $m_{j}$, the total matrix is also diagonalized with respect to $m_{j}$. Then we can also fix $m_{j}$. We need:
+$$\bra{2^{2}L^{'}_{1/ 2},m_{j}} z \ket{2^{2}L_{1 /2},m_{j}}  $$
+Since $z$ is odd, we must have that $L^{'}=S,L=P$ or the opposite. Due to the hermiticity, it suffices to find:
+$$\bra{2^{2}S_{1 /2},m_{j}} z \ket{2^{2}P_{1 /2},m_{j}} $$
+Know that:
 $$\begin{align}
- & \bra{2,l^{'}=0,m_{l}^{'}=0,m_{s}}z \ket{2,l=1,m_{l}=0,m_{s}} = \bra{2s} r \ket{2p}\bra{0,0} \cos \theta \ket{1,0}  
+ & \ket{2^{2}S_{1 /2}, \frac{1}{2}} =\ket{2S,0, \frac{1}{2}}  \\
+ & \ket{2^{2}S_{1 /2},- \frac{1}{2}} =\ket{2S,0,- \frac{1}{2}}  \\
+ & \ket{2^{2}P_{1 /2}, \frac{1}{2} }= \sqrt{ \frac{2}{3} }\ket{2P,1,- \frac{1}{2}} - \sqrt{ \frac{1}{3} } \ket{2P,0,  \frac{1}{2} } \\
+ & \ket{s^{2}P_{1 /2},- \frac{1}{2}} = - \sqrt{ \frac{2}{3} }\ket{2P,-1, \frac{1}{2}} +\sqrt{ \frac{1}{3} }\ket{2P,0,- \frac{1}{2}}  
 \end{align}$$
-and its complex conjugate. We compute:
+Then we have:
 $$\begin{align}
-\bra{2s} r\ket{sp} \bra{0,0} \cos \theta \ket{1,0}  & = 3\sqrt{ 3 }a_{0} \int_{S^{2}}d\Omega Y_{0}^{0*} \cos \theta Y_{l}^{0} \\
- & = 3\sqrt{ 3 }a_{0} \frac{1}{\sqrt{ 3 }} \\
- & = 3a_{0}
+\bra{2^{2}S_{1 /2}, \frac{1}{2}} z \ket{2^{2}P_{1 /2}, \frac{1}{2}}  & = \bra{2S,0, \frac{1}{2}} z\left( \sqrt{ \frac{2}{3} }\ket{2P,1,- \frac{1}{2}} - \sqrt{ \frac{1}{3} }\ket{2P,0, \frac{1}{2}}  \right) \\
+ & = - \sqrt{ \frac{1}{3} }\bra{2S,0, \frac{1}{2} }z \ket{2P,0, \frac{1}{2} } \\
+ & = - \sqrt{ \frac{1}{3} }\bra{2S} r\ket{2P} \bra{0,0} \cos \theta \ket{1,0}  =-\sqrt{ 3 }a_{0}  \\
+\bra{2^{2}S_{1 /2}, - \frac{1}{2}} z \ket{2^{2}P_{1 /2}, - \frac{1}{2}}  & = \bra{2S,0,- \frac{1}{2}} z\left( - \sqrt{ \frac{2}{3} }\ket{2P,-1, \frac{1}{2}} + \sqrt{ \frac{1}{3} }\ket{2P,0,- \frac{1}{2}}  \right) \\
+ & = \sqrt{ \frac{1}{3} }\bra{2S,0,- \frac{1}{2}} z\ket{2P,0,- \frac{1}{2}}  \\
+ & = \sqrt{ \frac{1}{3} }\bra{2S} r\ket{2P}  \bra{0,0} \cos \theta \ket{1,0} =\sqrt{ 3 }a_{0}
 \end{align}$$
-Next, we compute $\bra{2,l^{'},m_{l}^{'},m_{s}^{}}H_{\delta}\ket{2,l,m_{l},m_{s}}$. Know that $H_{\delta}= \delta \ket{2s}\bra{2s}$, then the only non-zero matrix elements are:
-$$\bra{2s}H_{\delta}\ket{2s} \delta_{m_{l},m_{l}^{'}}= \delta\delta_{m_{l},m_{l}^{'}}$$
-Therefore, we have:
+It's easy to compute that:
+$$\bra{0,0} \cos \theta \ket{1,0} = \int_{S^{2}} d\Omega Y_{0}^{0*}\cos \theta Y_{1}^{0}= \frac{\sqrt{ 3 }}{4\pi}\int_{S^{2}}d\Omega \cos ^{2} \theta =\frac{1}{\sqrt{ 3 }}$$
+Then:
+$$\begin{align}
+\bra{2^{2}S_{1 /2}, \frac{1}{2}} z \ket{2^{2}P_{1 /2}, \frac{1}{2}}   &  =-\sqrt{ 3 }a_{0}  \\
+\bra{2^{2}S_{1 /2}, - \frac{1}{2}} z \ket{2^{2}P_{1 /2}, - \frac{1}{2}}  &  =\sqrt{ 3 }a_{0}
+\end{align}$$
+Next, we compute $\bra{2^{2}L^{'}_{1 /2},m_{j}^{}}H_{\delta}\ket{2^{2}L_{1 /2},m_{j}}$. Know that $H_{\delta}= \delta \ket{2^{2}S_{1 /2}}\bra{2^{2}S_{1 /2}}$, then the only non-zero matrix element is:
+$$\bra{2^{2}S^{}_{1 /2},m_{j}^{}}H_{\delta}\ket{2^{2}S_{1 /2},m_{j}}= \delta$$
+Therefore, restrict to $m_{j}= \frac{1}{2}$
 $$\begin{align}
 H_{\delta}-|e|z\epsilon \overset{\wedge}{=} \begin{pmatrix}
- \delta & -3|e|a_{0}\epsilon \\
--3|e|a_{0}\epsilon & 0
+ \delta & \sqrt{ 3 }|e|a_{0}\epsilon \\
+\sqrt{ 3 }|e|a_{0}\epsilon & 0
 \end{pmatrix}
 \end{align}$$
-where the first column corresponds to $\ket{n=2,l=0,m_{l}=0,m_{s}}$, and the second column corresponds to $\ket{n=2,l=1,m_{l}=0,m_{s}}$.
-
 We can subtract a scalar $\frac{\delta}{2}\mathbb{1}$ from the matrix, and this doesn't affect diagonalization, since the representation of an identity is always an identity in any basis. Then we rewrite:
 $$H_{\delta}-|e|z\epsilon  \overset{\wedge}{=} \begin{pmatrix}
-\delta /2 & -3|e|a_{0}\epsilon \\
--3|e|a_{0}\epsilon & - \delta /2
+\delta /2 & \sqrt{ 3 }|e|a_{0}\epsilon \\
+\sqrt{ 3 }|e|a_{0}\epsilon & - \delta /2
 \end{pmatrix}$$
 We compute the eigenvalues:
 $$\begin{align}
- & \left( \frac{\delta}{2}-E \right)\left( - \frac{\delta}{2}-E \right)- 9e^{2}a_{0}^{2}\epsilon^{2}=0 \\
-\implies & E_{\pm}= \pm \sqrt{ \frac{\delta^{2}}{4}+9e^{2}a_{0}^{2}\epsilon^{2} }
+ & \left( \frac{\delta}{2}-E \right)\left( - \frac{\delta}{2}-E \right)- 3e^{2}a_{0}^{2}\epsilon^{2}=0 \\
+\implies & E_{\pm}= \pm \sqrt{ \frac{\delta^{2}}{4}+3e^{2}a_{0}^{2}\epsilon^{2} }
 \end{align}$$
 If the field is weak, we have:
 $$\begin{align}
-E_{\pm} & =\pm  \frac{\delta}{2}\sqrt{ 1+ \frac{36e^{2}a_{0}^{2}\epsilon^{2}}{\delta^{2}} } \\
- & \approx \pm  \frac{\delta}{2}\left( 1+ \frac{18e^{2}a_{0}^{2}\epsilon^{2}}{\delta^{2}} \right) \\
+E_{\pm} & =\pm  \frac{\delta}{2}\sqrt{ 1+ \frac{12e^{2}a_{0}^{2}\epsilon^{2}}{\delta^{2}} } \\
+ & \approx \pm  \frac{\delta}{2}\left( 1+ \frac{6e^{2}a_{0}^{2}\epsilon^{2}}{\delta^{2}} \right) \\
 \end{align}$$
-Then the energy level shifts are clearly $\pm \frac{9e^{2}a_{0}^{2}\epsilon^{2}}{\delta}\propto \epsilon^{2}$.
+Then the energy level shifts are clearly $\pm \frac{3e^{2}a_{0}^{2}\epsilon^{2}}{\delta}\propto \epsilon^{2}$.
 
 If the field is strong, we have:
 $$\begin{align}
-E_{\pm} & = \pm3|e|a_{0}\epsilon \sqrt{ 1+ \frac{\delta^{2}}{36e^{2}a_{0}^{2}\epsilon^{2}} } \\
- & \approx \pm 3|e|a_{0}\epsilon\left( 1+ \frac{\delta^{2}}{72e^{2}a_{0}^{2}\epsilon^{2}} \right) \\
- & = \pm 3|e|a_{0}\epsilon+\mathcal{O}(\delta^{2})
+E_{\pm} & = \pm \sqrt{ 3 }|e|a_{0}\epsilon \sqrt{ 1+ \frac{\delta^{2}}{12e^{2}a_{0}^{2}\epsilon^{2}} } \\
+ & \approx \pm \sqrt{ 3 }|e|a_{0}\epsilon\left( 1+ \frac{\delta^{2}}{24e^{2}a_{0}^{2}\epsilon^{2}} \right) \\
+ & = \pm \sqrt{ 3 }|e|a_{0}\epsilon+\mathcal{O}(\delta^{2})
 \end{align}$$
-Then the energy level shifts are $\pm 3|e|a_{0}\epsilon+\mathcal{O}(\delta)\approx \pm 3|e|a_{0}\epsilon \approx \epsilon$ if we ignore the $\mathcal{O}(\delta)$ term.
+Then the energy level shifts are $\pm \sqrt{ 3 }|e|a_{0}\epsilon+\mathcal{O}(\delta)\approx \pm \sqrt{ 3 }|e|a_{0}\epsilon \approx \epsilon$ if we ignore the $\mathcal{O}(\delta)$ term.
+
+If we restrict to $m_{j}=- \frac{1}{2}$,
+$$\begin{align}
+H_{\delta}-|e|z\epsilon \overset{\wedge}{=} \begin{pmatrix}
+ \delta & -\sqrt{ 3 }|e|a_{0}\epsilon \\
+-\sqrt{ 3 }|e|a_{0}\epsilon & 0
+\end{pmatrix}
+\end{align}$$
+We compute the eigenvalues:
+$$\begin{align}
+ & \left( \frac{\delta}{2}-E \right)\left( - \frac{\delta}{2}-E \right)- 3e^{2}a_{0}^{2}\epsilon^{2}=0 \\
+\implies & E_{\pm}= \pm \sqrt{ \frac{\delta^{2}}{4}+3e^{2}a_{0}^{2}\epsilon^{2} }
+\end{align}$$
+The results are obviously the same. 
 # Sakurai 5.17
 ## (a)
 
@@ -118,7 +141,7 @@ Then:
 $$\Delta m_{l}=-2,\ \Delta m_{s}=0,\ |l-2|\leq l^{'}\leq l+2$$
 Since $r^{(2)}_{-2}$ is even, we must have $\Delta l$ even. So:
 $$\Delta l=0,\pm 2$$
-More specifically, if $l=0$, only $\Delta l=2$ are allowed. If $l=1$, only $\Delta l=0,2$ is allowed. In conclusion, $\Delta m_{l}=\pm 2,\ \Delta m_{s}=0,\ \Delta l=\pm 2,0$ in general. If $l=0$, $\Delta l=2$. If $l=1$, $\Delta l=0,2$. 
+More specifically, if $l=0$, only $\Delta l=2$ are allowed. If $l=1$, only $\Delta l=0,2$ is allowed. In conclusion, $\Delta m_{l}=\pm 2,\ \Delta m_{s}=0,\ \Delta l=\pm 2,0$ in general. More specifically, if $l=0$, $\Delta l=2$. If $l=1$, $\Delta l=0,2$. 
 # Sakurai 5.18
 
 Without loss of generality, let $\mathbf{B}\parallel  \hat{\mathbf{z}}$. We can choose the gauge such that:
@@ -226,7 +249,7 @@ $$g_{J}=\left( 1+ \frac{J(J+1)+S(S+1)-L(L+1)}{2J(J+1)} \right)$$
 
 Adopting the formula:
 $$g_{J}=\left( 1+ \frac{J(J+1)+S(S+1)-L(L+1)}{2J(J+1)} \right)$$
-It's easy to calculate that for $3^{2}S_{1 /2}$, $J=\frac{1}{2},S=1,L=0$. we get $g_{J}=2$. For $3^{2}P_{3 /2}$, $J=\frac{3}{2},S=1,L=1$, we get $g_{J}=\frac{4}{3}$. For $3^{2}P_{1 /2}$, $J=\frac{1}{2},S=1,L=1$, we get $g_{J}=\frac{2}{3}$.
+It's easy to calculate that for $3^{2}S_{1 /2}$, $J=\frac{1}{2},S=\frac{1}{2},L=0$. we get $g_{J}=2$. For $3^{2}P_{3 /2}$, $J=\frac{3}{2},S=\frac{1}{2},L=1$, we get $g_{J}=\frac{4}{3}$. For $3^{2}P_{1 /2}$, $J=\frac{1}{2},S= \frac{1}{2},L=1$, we get $g_{J}=\frac{2}{3}$.
 
 ![[Drawing 2026-03-15 03.30.40.excalidraw|300]]
 ## (b)

@@ -1377,8 +1377,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200,
-    "collapsed": true
+    "width": 200
   },
   "right": {
     "id": "9003d078f8dbc4ed",
@@ -1482,12 +1481,12 @@
   "active": "74ab83f5de5fe8f9",
   "lastOpenFiles": [
     "Notes/Magnetic ordering.md",
+    "Experimental/Reflections.md",
     "Homework/Physics 512/Physics 512 homework 4.md",
     "Notes/多电子原子精细结构.md",
     "Reading notes/Doping-induced spin reorientation in Kagome magnet TmMn6Sn6.md",
     "Homework/Physics 463/Midterm 2 cheat sheet.md",
     "Homework/Physics 463/Midterm 1 cheat sheet.md",
-    "Experimental/Reflections.md",
     "Homework/Physics 463/Physics 463 homework 3.md",
     "Homework/Physics 463/Physics 463 homework 2.md",
     "Homework/Physics 463/Physics 463 homework 5.md",
