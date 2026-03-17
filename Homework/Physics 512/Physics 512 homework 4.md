@@ -118,7 +118,7 @@ Then:
 $$\Delta m_{l}=-2,\ \Delta m_{s}=0,\ |l-2|\leq l^{'}\leq l+2$$
 Since $r^{(2)}_{-2}$ is even, we must have $\Delta l$ even. So:
 $$\Delta l=0,\pm 2$$
-More specifically, if $l=0$, only $\Delta l=2$ are allowed. If $l=1$, only $\Delta l=0,2$ is allowed. In conclusion, $\Delta m_{l}=\pm 2,\ \Delta m_{s}=0,\ \Delta l=\pm 2,0$ in general. If $l=0$, $\Delta l=2$. If $l=1$, $\Delta l=0,2$.
+More specifically, if $l=0$, only $\Delta l=2$ are allowed. If $l=1$, only $\Delta l=0,2$ is allowed. In conclusion, $\Delta m_{l}=\pm 2,\ \Delta m_{s}=0,\ \Delta l=\pm 2,0$ in general. If $l=0$, $\Delta l=2$. If $l=1$, $\Delta l=0,2$. 
 # Sakurai 5.18
 
 Without loss of generality, let $\mathbf{B}\parallel  \hat{\mathbf{z}}$. We can choose the gauge such that:
