@@ -71,16 +71,16 @@ $$\begin{align}
 \end{align}$$
 This is because $\{ \ket{l,m_{l}} \}$ is an invariant subspace, and $L_{y}$ does not mix states with different $l$'s. Then the only non-zero matrix elements are:
 $$\begin{align}
- & \bra{l,m_{l}^{}+1}L_{y}\ket{l,m_{l}} = \bra{l,m_{l}+1}  \frac{L_{+}-L_{-}}{2i}\ket{l,m_{l}} = \frac{\sqrt{ m_{l}+1 }\hbar}{2i}  \\
- & \bra{l,m_{l}-1}L_{y}\ket{l,m_{l}} = \bra{l,m_{l}-1}  \frac{L_{+}-L_{-}}{2i}\ket{l,m_{l}} = \frac{\sqrt{ m_{l} }\hbar}{2i} 
+ & \bra{l,m_{l}^{}+1}L_{y}\ket{l,m_{l}} = \bra{l,m_{l}+1}  \frac{L_{+}-L_{-}}{2i}\ket{l,m_{l}} = \frac{\sqrt{ l(l+1)-m_{l}(m_{l}+1) }\hbar}{2i}  \\
+ & \bra{l,m_{l}-1}L_{y}\ket{l,m_{l}} = \bra{l,m_{l}-1}  \frac{L_{+}-L_{-}}{2i}\ket{l,m_{l}} = -\frac{\sqrt{ l(l+1)-m_{l}(m_{l}-1) }\hbar}{2i} 
 \end{align}$$
 Then:
 $$\begin{align}
-\sum_{m_{l}^{'}} \frac{|\bra{l,m_{l}^{'}} L_{y}\ket{l,m_{l}} |^{2}}{E_{l,m_{l}}-E_{l,m_{l}^{'}}} & = \frac{(m_{l}+1)\hbar^{2} /4 }{-B\hbar}+ \frac{m_{l} \hbar^{2} /4}{B\hbar} \\
- & = - \frac{\hbar}{4B}
+\sum_{m_{l}^{'}} \frac{|\bra{l,m_{l}^{'}} L_{y}\ket{l,m_{l}} |^{2}}{E_{l,m_{l}}-E_{l,m_{l}^{'}}} & = \frac{[l(l+1)-m_{l}(m_{l}+1)]\hbar^{2} /4 }{-B\hbar}+ \frac{[l(l+1)-m_{l}(m_{l}-1)] \hbar^{2} /4}{B\hbar} \\
+ & = \frac{\hbar^{}}{2B}m_{l}
 \end{align}$$
 Then the energy eigenvalue is:
-$$E=A\hbar l(l+1)-Bm_{l}\hbar- \frac{C^{2}}{4B}\hbar$$
+$$E=A\hbar l(l+1)-Bm_{l}\hbar+ \frac{C^{2}}{2B}m_{l}\hbar$$
 ## (b)
 
 **$3z^{2}-r^{2}$:**
@@ -95,6 +95,7 @@ $$\begin{align}
 \end{align}$$
 Know that $3z^{2}-r^{2}$ is even, so $\Delta l^{}$ must be even. So:
 $$\Delta l=0,\pm 2$$
+More specifically, if $l=0$, only $\Delta l=2$ is allowed. If $l=1$, only $\Delta l=0,2$ are allowed. 
 **$xy$:**
 
 We know that $xy\propto r^{(2)}_{2}-r^{(2)}_{-2}$. For the selection rule, it suffices to let one of the matrices of $r^{(2)}_{2},r^{(2)}_{-2}$ to be non-zero. 
@@ -117,7 +118,7 @@ Then:
 $$\Delta m_{l}=-2,\ \Delta m_{s}=0,\ |l-2|\leq l^{'}\leq l+2$$
 Since $r^{(2)}_{-2}$ is even, we must have $\Delta l$ even. So:
 $$\Delta l=0,\pm 2$$
-In conclusion, $\Delta m_{l}=\pm 2,\ \Delta m_{s}=0,\ \Delta l=\pm 2,0$. 
+More specifically, if $l=0$, only $\Delta l=2$ are allowed. If $l=1$, only $\Delta l=0,2$ is allowed. In conclusion, $\Delta m_{l}=\pm 2,\ \Delta m_{s}=0,\ \Delta l=\pm 2,0$ in general. If $l=0$, $\Delta l=2$. If $l=1$, $\Delta l=0,2$.
 # Sakurai 5.18
 
 Without loss of generality, let $\mathbf{B}\parallel  \hat{\mathbf{z}}$. We can choose the gauge such that:
@@ -126,28 +127,28 @@ Then the diamagnetism hamiltonian is:
 $$H_{L}= \frac{e^{2}}{8mc^{2}}B^{2}(x^{2}+y^{2})$$
 For the ground state, we restrict to the subspace with $n=1,j= \frac{1}{2}$. We switch to the $\{ \ket{n,l,m_{l},m_{s}} \}$ basis for convenience. Then $l=0,\ m_{l}=0$. Since $x^{2}+y^{2}$ does not operate on spins, its matrix is diagonal in $m_{s}$. Then the matrix is diagonalized. We need:
 $$\begin{align}
-\bra{1s,m_{l}=0}(x^{2}+y^{2})\ket{1s,m_{l}=0} & = \langle r^{2}\sin ^{2}\theta \rangle \\
- & =\bra{1s} r^{2}\ket{1s} \bra{0,0} \sin ^{2}\theta \ket{0,0} 
+\bra{1s,m_{l}=0}(x^{2}+y^{2})\ket{1s,m_{l}=0} & = \langle r^{2}\sin ^{2}\theta \rangle  \\
+ & = \int_{\mathbb{R}^{3}}dr  d\Omega r^{2}\sin \theta \frac{1}{\pi a_{0}^{3}}e^{-2r/a_{0}} r^{2}\sin ^{2} \theta \\
+ & =  \frac{1}{\pi a_{0}^{3}} \left( \int_{\mathbb{R}}dr r^{4}  e^{-2r/a_{0}} \right)\left( \int_{S^{2}}d\Omega\sin ^{2}\theta \right) 
 \end{align}  $$
 We have:
 $$\begin{align}
-\bra{0,0} \sin ^{2}\theta \ket{0,0}  & = \int_{S^{2}}d\Omega \frac{1}{4\pi}\sin ^{2}\theta \\
- & = 2\pi \cdot \frac{1}{4\pi}\int_{0}^{\pi}d\theta \sin ^{3}\theta \\
- & = -\frac{1}{2}\int d(\cos \theta)(1-\cos ^{2}\theta) \\
- & = \frac{2}{3}
+\int_{S^{2}}d\Omega \sin ^{2}\theta & = \int d\phi d\theta  \sin ^{3}\theta \\
+ & = -2\pi \int_{0}^{\pi} d(\cos \theta)(1-\cos ^{2} \theta) \\
+ & = \frac{8\pi}{3}
 \end{align}$$
 We then compute:
 $$\begin{align}
-\bra{1s} r^{2}\ket{1s}  & = \frac{1}{\pi a_{0}^{3}}\int_{\mathbb{R}^{2}}dr r^{2} \cdot r^{2} e^{-2r/a_{0}} \\
+\frac{1}{\pi ac_{0}^{3}}\int_{\mathbb{R}}dr r^{4}e^{-2r/a_{0}}  
  & = \frac{1}{\pi a_{0}^{3}}  \frac{4!}{\left( \frac{2}{a_{0}} \right)^{5}} \\
  & = \frac{3}{4\pi}a_{0}^{2}
 \end{align}$$
 So:
 $$\begin{align}
-\langle H_{L}\rangle & = \frac{e^{2}}{8mc^{2}}B^{2} \frac{1}{2\pi}a_{0}^{2}
+\langle H_{L}\rangle & =  \frac{e^{2}}{4mc^{2}}a_{0}^{2}B^{2}
 \end{align}$$
 Then:
-$$\chi= - \frac{e^{2}}{8mc^{2}\pi}a_{0}^{2}$$
+$$\chi= - \frac{e^{2}}{2mc^{2}}a_{0}^{2}$$
 # Problem 4
 ## (a)
 
