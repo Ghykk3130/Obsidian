@@ -641,7 +641,7 @@ $$\frac{d\langle\vec{p}\rangle}{dt}= - \frac{\langle \vec{p}\rangle}{\tau}+\vec{
 >The equation of motion of electrons under Drude model is:
 >$$\frac{d\langle\vec{p}\rangle}{dt}=- \frac{\langle \vec{p}\rangle}{\tau}+\vec{f}$$
 ## 3.1.1 电子对电场的response
-
+ 
 下面研究金属中电子在电场下的response。考虑电场的Fourier分解：
 $$\vec{E}(\vec{r},t)=\int d^{3}kd\omega \vec{E}(\vec{k},\omega)e^{i(\vec{k}\cdot \vec{r}-\omega t)}$$
 于是电子的equation of motion为：

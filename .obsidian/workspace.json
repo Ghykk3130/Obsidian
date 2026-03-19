@@ -1315,12 +1315,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Experimental/Reflections.md",
+                "file": "Notes/Solid state.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Reflections"
+              "title": "Solid state"
             }
           }
         ],
@@ -1376,7 +1376,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "sommerfeld",
+                "query": "drude",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -1387,11 +1387,13 @@
               "title": "Search"
             }
           }
-        ]
+        ],
+        "currentTab": 3
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 200,
+    "collapsed": true
   },
   "right": {
     "id": "9003d078f8dbc4ed",
@@ -1494,6 +1496,8 @@
   },
   "active": "cd7e82054561bdbf",
   "lastOpenFiles": [
+    "Reading notes/Berry phase effects on electronic properties.md",
+    "Experimental/Reflections.md",
     "Notes/Untitled 2.md",
     "Notes/Untitled 1.md",
     "Notes/Untitled.md",
@@ -1518,8 +1522,6 @@
     "Notes/Untitled 3.md",
     "Notes/Spherical tensor.md",
     "Notes/Solid state.md",
-    "Notes/Schrodinger's and Heisenberg's pictures.md",
-    "Notes/Berry phase.md",
     "Pictures/Pasted image 20260314131900.png",
     "Pictures/9eafeee1db7f4d13ddef893c34b80595.jpg",
     "Pictures/e53ff20bfefc26ceffbe66c872537c62.jpg",
