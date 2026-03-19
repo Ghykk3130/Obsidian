@@ -23,6 +23,21 @@ $$\begin{align}
 
 ## Ex:
 
+考虑存在$z$方向磁场。在xy面内用电场驱动电子。那么：
+$$\begin{align}
+ & \frac{d\mathbf{p} }{dt}=- \frac{\mathbf{p}}{\tau}+e\mathbf{v}\times \mathbf{B}+e\mathbf{E} \\
+
+\end{align}$$
+考虑稳态输运，则$\frac{d\mathbf{p}}{dt}=0$。那么：
+$$\begin{align}
+ &  \frac{m}{\tau}v_{x}=ev_{y}B+eE_{x} \\
+ & \frac{m}{\tau}v_{y}=e(-v_{x}B)+eE_{y}
+\end{align}$$
+若导线接在x方向，而y方向没有导线，不允许电子流动。那么$v_{y}=0$。回忆起$j_{x}=nev_{x}$，可以得到：
+$$E_{y}= \frac{B}{ne}j_{x}$$
+于是得到Hall resistivity：
+$$\rho_{yx}= \frac{B}{ne}$$
+
  
 
 
