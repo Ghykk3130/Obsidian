@@ -1315,12 +1315,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Notes/Untitled 2.md",
+                "file": "Experimental/Reflections.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Untitled 2"
+              "title": "Reflections"
             }
           }
         ],
@@ -1494,9 +1494,9 @@
   },
   "active": "cd7e82054561bdbf",
   "lastOpenFiles": [
+    "Notes/Untitled 2.md",
     "Notes/Untitled 1.md",
     "Notes/Untitled.md",
-    "Notes/Untitled 2.md",
     "Notes/Untitled 4.md",
     "Notes/Untitled 5.md",
     "Notes/Untitled 6.md",

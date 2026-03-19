@@ -14,8 +14,7 @@
 - Noise from contact is Johnson noise.
 
 # To do
-- Compare the python scaling with the manual scaling by imposing the python scaling to the magnetization, see if the magnetization matches with Nernst, and see how this compares with the manual scaling.
-- Subtract the scaled Nernst from the magnetization, to get the topological contribution. Do this for for $90K+$. Expect a dip at some positive field. 
-- Do the python scaling with the Hall data. Compare the scaling factor with the previous scaling factors using similar approaches above.
-
-
+- Scan $M\text{ v.s. }T$ around $180K$. 
+- Do $S_{\text{zx}}\text{ v.s. }B$ around $180K$ in steps of $5K$, for above and below 5 or 6 steps. Do the same for $M\text{ v.s. }B$, and then do a subtraction. 
+- Make better sample for the Nernst.
+- In $M\text{ v.s. }B$ landscape, for zero field, helical state, small field, cone state, then skyrmion in a narrow window, then paramagnetic phase. 
