@@ -51,9 +51,7 @@ EE project核心是给AMO敲门砖。
 和luli谈，问东西，学自己不会的，然后分析可不可能，然后再回去根老板说。
 
 
-
-提前规划measurement。和luli谈。
-
-
-
 Competing magnetic phases and fluctuation-driven scalar spin chirality in the kagome metal YMn6Sn6
+
+谈话要点：
+- 
