@@ -1418,7 +1418,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "drude",
+                "query": "二次量子化",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -1429,11 +1429,13 @@
               "title": "Search"
             }
           }
-        ]
+        ],
+        "currentTab": 3
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 200,
+    "collapsed": true
   },
   "right": {
     "id": "9003d078f8dbc4ed",
@@ -1536,8 +1538,9 @@
   },
   "active": "f562cc75468ee844",
   "lastOpenFiles": [
-    "Notes/Hubbard model.md",
+    "Notes/二次量子化.md",
     "Notes/二次量子化(2).md",
+    "Notes/Hubbard model.md",
     "Notes/Heisenberg模型.md",
     "Notes/Hamilton原理与Lagrange方程.md",
     "Notes/Ising模型.md",
@@ -1561,7 +1564,6 @@
     "Notes/非线性波.md",
     "Notes/正规矩阵的对角化.md",
     "Notes/晶体基础.md",
-    "Notes/时间演化.md",
     "Pictures/Pasted image 20260314131900.png",
     "Pictures/9eafeee1db7f4d13ddef893c34b80595.jpg",
     "Pictures/e53ff20bfefc26ceffbe66c872537c62.jpg",
