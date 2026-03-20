@@ -1,18 +1,18 @@
 # Table of contents
 ## 1. 无耦合的自旋系统
 
-1.1 [[Ising Model#^d2d6c4|无耦合的自旋系统]]
+1.1 [[Ising模型#^d2d6c4|无耦合的自旋系统]]
 ## 2. 双电子体系
 
-2.1 [[Ising Model#^ac0a90|双电子体系]]
+2.1 [[Ising模型#^ac0a90|双电子体系]]
 ## 3. Ising model
 
-3.1 [[Ising Model#^905a3e|Ising model]]
-3.2 [[Ising Model#^989fdc|Mean-field approximation]]
+3.1 [[Ising模型#^905a3e|Ising model]]
+3.2 [[Ising模型#^989fdc|Mean-field approximation]]
 ## 4. Ising model的模拟
 
-4.1 [[Ising Model#^660f47|Markov process]]
-4.2 [[Ising Model#^991ea4|Metropolis algorithm]]
+4.1 [[Ising模型#^660f47|Markov process]]
+4.2 [[Ising模型#^991ea4|Metropolis algorithm]]
 
 # 1. 无耦合的自旋系统
 
@@ -241,7 +241,7 @@ $$\begin{align}
  & p_{\mu}=\sum_{\nu}p_{\nu}P_{\mu \nu} \\
 \implies & \sum_{\nu}p_{\mu}P_{\nu \mu}=\sum_{\nu}p_{\nu}P_{\mu \nu}
 \end{align}$$
-所以满足[[Ising Model#^6328f7|proposition 4.1.3]]的充分条件为：
+所以满足[[Ising模型#^6328f7|proposition 4.1.3]]的充分条件为：
 $$p_{\mu}P_{\nu \mu}=p_{\nu}P_{\mu \nu}$$
 >[!Note] Definition 3
 >If the system satisfies that $p_{\mu}P_{\nu \mu}=p_{\nu}P_{\mu \nu},\forall \mu,\nu$, we say that the system is in detailed balancing.
