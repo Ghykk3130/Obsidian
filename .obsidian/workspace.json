@@ -1357,12 +1357,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Notes/二次量子化.md",
+                "file": "Notes/二次量子化(2).md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "二次量子化"
+              "title": "二次量子化(2)"
             }
           }
         ],
@@ -1429,8 +1429,7 @@
               "title": "Search"
             }
           }
-        ],
-        "currentTab": 3
+        ]
       }
     ],
     "direction": "horizontal",
@@ -1538,8 +1537,8 @@
   },
   "active": "f562cc75468ee844",
   "lastOpenFiles": [
-    "Notes/二次量子化(2).md",
     "Notes/二次量子化.md",
+    "Notes/二次量子化(2).md",
     "Notes/Hubbard model.md",
     "Notes/Heisenberg模型.md",
     "Notes/Hamilton原理与Lagrange方程.md",
