@@ -1,3 +1,15 @@
+# Sakurai 5.4
+## (a)
+
+The hamiltonian is additive:
+$$H=\left( \frac{p_{x}^{2}}{2m}+\frac{1}{2}m\omega^{2}x^{2} \right)+\left( \frac{p_{y}^{2}}{2m}+ \frac{1}{2}m\omega^{2} y^{2}\right)$$
+Therefore the Fock state $\ket{n_{x}}\otimes \ket{n_{y}}$ would solve the Schrodinger equation. Then eigen energy is:
+$$E= \left( n_{x}+ \frac{1}{2} \right)\hbar \omega+ \left( n_{y}+ \frac{1}{2} \right)\hbar \omega=(n_{x}+n_{y}+1)\hbar \omega$$
+The lowest energy is $\hbar \omega$, with no degeneracy. The second lowest level is $2\hbar \omega$, with degeneracy $g=2$. The third lowest level is $3\hbar \omega$, with degeneracy $g=3$.
+## (b)
+
+
+
 # Problem 4
 
 Before the compression, the system is in state $\ket{0}$. By sudden approximation, the state after the compression is $\ket{0}$. Know that the effective angular frequency after the compression is $\sqrt{ \eta }\omega$, then the state at $t>0$ is given approximately by:
