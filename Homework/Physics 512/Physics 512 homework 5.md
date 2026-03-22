@@ -8,8 +8,40 @@ $$E= \left( n_{x}+ \frac{1}{2} \right)\hbar \omega+ \left( n_{y}+ \frac{1}{2} \r
 The lowest energy is $\hbar \omega$, with no degeneracy. The second lowest level is $2\hbar \omega$, with degeneracy $g=2$. The third lowest level is $3\hbar \omega$, with degeneracy $g=3$.
 ## (b)
 
+Set $\hbar=1$. 
 
+**For $E=\hbar \omega$:**
 
+we compute:
+$$\begin{align}
+\bra{0,0} xy\ket{0,0} = \bra{0} x\ket{0} \bra{0} y\ket{0} =0
+\end{align}$$
+This is because $x,y$ are odd. Then the energy shift is $\Delta E=0$. Next we need $\bra{n_{x},n_{y}} xy\ket{0,0}= \bra{n_{x}}x\ket{0}\bra{n_{y}}y\ket{0}$. Know that $x= \sqrt{ \frac{1}{2m\omega} }(a^{\dagger}+a)$, we obtain:
+$$\bra{n_{x}} x \ket{0} = \bra{n_{x}}  \sqrt{ \frac{1}{2m\omega} }(a^{\dagger}+a)\ket{0} = \sqrt{ \frac{1}{2m\omega} } \delta_{n_{x},1}$$
+Therefore:
+$$\bra{n_{x},n_{y}} xy\ket{0,0} = \frac{1}{2m\omega}\delta_{n_{x},1}\delta_{n_{y},1}$$
+It suffices to consider $n_{x}=1,\ n_{y}=1$. Know that $E_{0,0}-E_{1,1}=-2\omega$. Then the perturbed ket is:
+$$\ket{0,0^{'}} = \ket{0,0}- \frac{\delta}{4}\ket{1,1}  $$
+**For $E=2\hbar \omega$:**
+
+Now restrict to the basis $\{ \ket{1,0},\ket{0,1} \}$. Know that:
+$$\begin{align}
+\bra{1,0} xy\ket{1,0} =\bra{1} x\ket{1} \bra{0} y\ket{0} =0=\bra{0,1} xy\ket{0,1}   
+\end{align}$$
+since $x,y$ are odd. Next we have:
+$$\begin{align}
+\bra{1,0} xy \ket{0,1}  & = \bra{1} x \ket{0} \bra{0} y\ket{1}  \\
+ & = \frac{1}{2m\omega}\bra{1} (a^{\dagger}_{x}+a_{x})\ket{0} \bra{0} (a_{y}^{\dagger}+a_{y})\ket{1}  \\
+ & = \frac{1}{2m\omega} 
+\end{align}$$
+Then:
+$$xy \overset{\wedge}{=}\begin{pmatrix}
+0 & \frac{1}{2m\omega} \\
+\frac{1}{2m\omega} & 0
+\end{pmatrix}$$
+The eigen equation is:
+$$\lambda^{2}-\frac{1}{4m^{2}\omega^{2}}=0\implies \lambda= \pm \frac{1}{2m\omega }$$
+Then the first order energy shift is $$
 # Problem 4
 
 Before the compression, the system is in state $\ket{0}$. By sudden approximation, the state after the compression is $\ket{0}$. Know that the effective angular frequency after the compression is $\sqrt{ \eta }\omega$, then the state at $t>0$ is given approximately by:
