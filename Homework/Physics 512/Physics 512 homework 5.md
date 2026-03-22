@@ -41,7 +41,10 @@ $$xy \overset{\wedge}{=}\begin{pmatrix}
 \end{pmatrix}$$
 The eigen equation is:
 $$\lambda^{2}-\frac{1}{4m^{2}\omega^{2}}=0\implies \lambda= \pm \frac{1}{2m\omega }$$
-Then the first order energy shift is $$
+Then the first order energy shift is 
+
+
+
 # Problem 4
 
 Before the compression, the system is in state $\ket{0}$. By sudden approximation, the state after the compression is $\ket{0}$. Know that the effective angular frequency after the compression is $\sqrt{ \eta }\omega$, then the state at $t>0$ is given approximately by:
