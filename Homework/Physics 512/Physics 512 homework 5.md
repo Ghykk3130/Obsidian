@@ -41,7 +41,31 @@ $$xy \overset{\wedge}{=}\begin{pmatrix}
 \end{pmatrix}$$
 The eigen equation is:
 $$\lambda^{2}-\frac{1}{4m^{2}\omega^{2}}=0\implies \lambda= \pm \frac{1}{2m\omega }$$
-Then the first order energy shift is 
+Then the first order energy shift is $\Delta E= \pm \frac{\delta}{2}\hbar \omega$. For $\Delta E= \frac{\delta}{2}\hbar \omega$, we have the eigenvector $\frac{1}{\sqrt{ 2 }} \begin{pmatrix}1 \\ -1\end{pmatrix}$. For $\Delta E= - \frac{\delta}{2}\hbar \omega$, we have the eigenvector $\frac{1}{\sqrt{ 2 }} \begin{pmatrix}1 \\ 1\end{pmatrix}$. So the unperturbed kets should be $\frac{1}{\sqrt{ 2 }}(\ket{1,0}-\ket{0,1}),\ \frac{1}{\sqrt{ 2 }}(\ket{1,0}+\ket{0,1})$.
+
+**For $E=3\hbar \omega$:**
+
+Now restrict to the basis $\{ \ket{2,0},\ket{0,2},\ket{1,1} \}$. Similarly, by parity selection rule, only $\bra{1,1}xy \ket{2,0}, \bra{1,1}xy\ket{0,2}$ and their conjugates are nonvanishing. We have:
+$$\begin{align}
+\bra{1} x\ket{2}  & = \bra{1}  \sqrt{ \frac{1}{2m\omega} }(a^{\dagger}+a)\ket{2} = \sqrt{ \frac{1}{m\omega} } \\
+\bra{1} y\ket{0}  & = \bra{1}  \sqrt{ \frac{1}{2m\omega} }(a^{\dagger}+a)\ket{0} = \sqrt{ \frac{1}{2m\omega} }
+\end{align}$$
+Then:
+$$\bra{1,1} xy\ket{2,0} = \frac{1}{\sqrt{ 2 }m\omega}$$
+Similarly, $\bra{1,1}xy\ket{0,2}= \frac{1}{\sqrt{ 2 }m\omega}$. Then the representation is:
+$$xy \overset{\wedge}{=}\begin{pmatrix}
+0 & 0 &  \frac{1}{\sqrt{ 2 }m\omega} \\
+0 & 0 &  \frac{1}{\sqrt{ 2 }m\omega} \\
+\frac{1}{\sqrt{ 2 }m\omega} &  \frac{1}{\sqrt{ 2 }m\omega} & 0
+\end{pmatrix}$$
+The eigen equation is:
+$$\begin{align}
+ & \lambda\left( \lambda^{2}- \frac{1}{2m^{2}\omega^{2}} \right)- \frac{1}{2m^{2}\omega^{2}}\lambda= \lambda\left( \lambda^{2}- \frac{1}{m^{2}\omega^{2}} \right)=0\implies \lambda=0,\ \pm \frac{1}{m\omega}
+\end{align}$$
+Then the energy shifts are $\Delta E=0,\ \pm \delta \hbar \omega$. 
+
+For $\Delta E=0$, the eigen vector is $\frac{1}{\sqrt{ 2 }}\begin{pmatrix}1 \\ -1 \\ 0\end{pmatrix}$. For $\Delta E= \delta \hbar \omega$, the eigen vector is $\begin{pmatrix}1 /2  \\ 1 /2 \\ 1/ \sqrt{ 2 }\end{pmatrix}$. For $\Delta E=-\delta \hbar \omega$, the eigen vector is $\begin{pmatrix} - 1 /2 \\ - 1 /2 \\ 1 /\sqrt{ 2 }  \end{pmatrix}$. Then the unperturbed kets are $\frac{1}{\sqrt{ 2 }}(\ket{2,0}-\ket{0,2}),\ \frac{1}{2}\ket{2,0}+ \frac{1}{2}\ket{0,2}+ \frac{1}{\sqrt{ 2 }}\ket{1,1},\ - \frac{1}{2}\ket{2,0}- \frac{1}{2}\ket{0,2}+ \frac{1}{\sqrt{ 2 }}\ket{1,1}$. 
+## (c)
 
 
 
