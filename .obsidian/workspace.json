@@ -1475,7 +1475,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 200,
+    "collapsed": true
   },
   "right": {
     "id": "9003d078f8dbc4ed",
@@ -1578,9 +1579,10 @@
   },
   "active": "a292f5e4583bbf52",
   "lastOpenFiles": [
-    "Notes/Blasius定理，Chaplygin定理.md",
-    "Notes/输运.md",
+    "Notes/量子统计力学基础.md",
     "Notes/Transport.md",
+    "Notes/输运.md",
+    "Notes/Blasius定理，Chaplygin定理.md",
     "Homework/Physics 512/Physics 512 homework 5.md",
     "Notes/Stationary perturbation.md",
     "Homework/Physics 512/Physics 512 homework 4.md",
@@ -1603,7 +1605,6 @@
     "Notes/Untitled 1.md",
     "Notes/Untitled.md",
     "Notes/Untitled 4.md",
-    "Notes/Untitled 5.md",
     "Pictures/Pasted image 20260314131900.png",
     "Pictures/9eafeee1db7f4d13ddef893c34b80595.jpg",
     "Pictures/e53ff20bfefc26ceffbe66c872537c62.jpg",
