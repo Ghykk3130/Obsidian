@@ -67,7 +67,86 @@ Then the energy shifts are $\Delta E=0,\ \pm \delta \hbar \omega$.
 For $\Delta E=0$, the eigen vector is $\frac{1}{\sqrt{ 2 }}\begin{pmatrix}1 \\ -1 \\ 0\end{pmatrix}$. For $\Delta E= \delta \hbar \omega$, the eigen vector is $\begin{pmatrix}1 /2  \\ 1 /2 \\ 1/ \sqrt{ 2 }\end{pmatrix}$. For $\Delta E=-\delta \hbar \omega$, the eigen vector is $\begin{pmatrix} - 1 /2 \\ - 1 /2 \\ 1 /\sqrt{ 2 }  \end{pmatrix}$. Then the unperturbed kets are $\frac{1}{\sqrt{ 2 }}(\ket{2,0}-\ket{0,2}),\ \frac{1}{2}\ket{2,0}+ \frac{1}{2}\ket{0,2}+ \frac{1}{\sqrt{ 2 }}\ket{1,1},\ - \frac{1}{2}\ket{2,0}- \frac{1}{2}\ket{0,2}+ \frac{1}{\sqrt{ 2 }}\ket{1,1}$. 
 ## (c)
 
-
+We first convert the hamiltonian into a quadratic form:
+$$\begin{align}
+H & = \frac{p_{x}^{2}}{2m}+ \frac{p_{y}^{2}}{2m}+ \frac{1}{2}m\omega^{2}x^{2}+ \frac{1}{2}m\omega^{2}y^{2}+ \delta m\omega^{2}xy \\
+ & = \begin{pmatrix}
+p_{x} & p_{y} & x & y 
+\end{pmatrix}\begin{pmatrix}
+ \frac{1}{2m} &  0 & 0 & 0 \\
+0 &  \frac{1}{2m} & 0 & 0 \\
+0 & 0 &  \frac{1}{2}m\omega^{2} &  \frac{1}{2}\delta m\omega^{2}  \\
+0 & 0 &  \frac{1}{2}\delta m\omega^{2} &  \frac{1}{2}m\omega^{2}
+\end{pmatrix} \begin{pmatrix}
+p_{x} \\
+p_{y} \\
+x \\
+y
+\end{pmatrix}
+\end{align}$$
+We observe that the matrix is diagonalizable. We first diagonalize the block on the lower left. We find the eigen values:
+$$\begin{align}
+ & \left( \frac{1}{2}m\omega^{2}-\lambda \right)^{2}- \left( \frac{1}{2}\delta m\omega^{2} \right)^{2}=0\implies \lambda= \frac{1}{2}m\omega^{2}\pm \frac{1}{2}\delta m\omega^{2}
+\end{align}$$
+The eigen vectors are $\begin{pmatrix} \frac{1}{\sqrt{ 2 }} \\  \frac{1}{\sqrt{ 2 }} \end{pmatrix},\ \begin{pmatrix} \frac{1}{\sqrt{ 2 }} \\ - \frac{1}{\sqrt{ 2 }} \end{pmatrix}$. Then we have:
+$$\begin{align}
+\begin{pmatrix}
+ \frac{1}{2m} &  0 & 0 & 0 \\
+0 &  \frac{1}{2m} & 0 & 0 \\
+0 & 0 &  \frac{1}{2}m\omega^{2} &  \frac{1}{2}\delta m\omega^{2}  \\
+0 & 0 &  \frac{1}{2}\delta m\omega^{2} &  \frac{1}{2}m\omega^{2}
+\end{pmatrix}= P\ \text{diag}\left( \frac{1}{2m}, \frac{1}{2m},  \frac{1}{2}m\omega^{2}+ \frac{1}{2}\delta m\omega^{2},  \frac{1}{2}m\omega^{2}- \frac{1}{2}\delta m\omega^{2} \right)P^{\dagger}
+\end{align}$$
+where:
+$$P= \begin{pmatrix}
+1 & 0 & 0 & 0 \\
+0 & 1 & 0 & 0 \\
+0 & 0 &  \frac{1}{\sqrt{ 2 }} &  \frac{1}{\sqrt{ 2 }} \\
+0 & 0 &  \frac{1}{\sqrt{ 2 }} & - \frac{1}{\sqrt{ 2 }}
+\end{pmatrix}$$
+Since the block on the top left is a scalar, it is always a scalar under any basis. So we can rechoose our $P$:
+$$P=\begin{pmatrix}
+\frac{1}{\sqrt{ 2 }} & \frac{1}{\sqrt{ 2 }} & 0 & 0 \\
+\frac{1}{\sqrt{ 2 }} & - \frac{1}{\sqrt{ 2 }} & 0 & 0 \\
+0 & 0 &  \frac{1}{\sqrt{ 2 }} & \frac{1}{\sqrt{ 2 }} \\
+0 & 0 & \frac{1}{\sqrt{ 2 }} & -\frac{1}{\sqrt{ 2 }}
+\end{pmatrix}$$
+Set $X= \frac{x+y}{\sqrt{ 2 }},\ Y= \frac{x-y}{\sqrt{ 2 }},\ p_{X}= \frac{p_{x}+p_{y}}{\sqrt{ 2 }},\ p_{Y}= \frac{p_{x}-p_{y}}{\sqrt{ 2 }}$. Then the hamiltonian is:
+$$H= \frac{p_{X}^{2}}{2m}+ \frac{p_{Y}^{2}}{2m}+ \frac{1}{2}m\omega^{2}(1+\delta)X^{2}+ \frac{1}{2}m\omega^{2}(1-\delta)Y^{2}$$
+Then the energy levels are clearly:
+$$E= \left( n_{X}+ \frac{1}{2} \right)\hbar \sqrt{ 1+\delta }\omega+ \left( n_{Y}+ \frac{1}{2} \right)\hbar \sqrt{ 1-\delta }\omega$$
+For $n_{X}=n_{Y}=0$, we have:
+$$E= \frac{1}{2}\hbar \sqrt{ 1+\delta }\omega+ \frac{1}{2}\hbar \sqrt{ 1-\delta }\omega \approx \frac{1}{2}\hbar \omega$$
+This is consistent with the case where $n_{x}=n_{y}=0$, and the energy shift is approximately zero. Adopting the ideas from second quantization, the ket $\ket{n_{X}=0,\ n_{Y}=0}$ is a vacuum ket. While $\ket{n_{x}=0,\ n_{y}=0}$ is also a vacuum ket, we know that the states are also consistent.
+ 
+For $n_{X}=1,n_{Y}=0$, or $n_{X}=0, n_{Y}=1$, we have:
+$$\begin{align}
+E & = \frac{3}{2}\sqrt{ 1+\delta }\hbar \omega+ \frac{\hbar}{2}\sqrt{ 1-\delta }\omega  \\
+ & \approx \frac{3}{2}\left( 1+ \frac{\delta}{2} \right)\hbar \omega+ \frac{1}{2}\left( 1- \frac{\delta}{2} \right)\hbar \omega \\
+ & = 2\hbar \omega+ \frac{\delta}{2}\hbar \omega
+\end{align}$$
+or
+$$\begin{align}
+E & = \frac{1}{2}\sqrt{ 1+\delta }\hbar \omega+ \frac{3}{2}\hbar \omega \sqrt{ 1-\delta } \\
+ & \approx \frac{1}{2}\left( 1+ \frac{\delta}{2} \right)\hbar \omega+ \frac{3}{2}\left( 1- \frac{\delta}{2} \right)\hbar \omega \\
+ & = 2\hbar \omega- \frac{\delta}{2}\hbar \omega
+\end{align}$$
+The energies are consistent with our previous analysis. To obtain the kets, we first observe that:
+$$\begin{align}
+c_{X}^{\dagger} & =\sqrt{ \frac{m\omega}{2} }X+ \frac{i}{\sqrt{ 2m\omega }}p_{X} \\
+ & = \sqrt{ \frac{m\omega }{2} } \frac{x+y}{\sqrt{ 2 }}+ \frac{i}{\sqrt{ 2m\omega }} \frac{p_{x}+p_{y}}{\sqrt{ 2 }} \\
+ & =  \frac{1}{\sqrt{ 2 }} a_{x}^{\dagger}+ \frac{1}{\sqrt{ 2 }} a_{y}^{\dagger}
+\end{align}$$
+Similarly,
+$$c^{\dagger}_{Y}= \frac{1}{\sqrt{ 2 }}a^{\dagger}_{x}- \frac{1}{\sqrt{ 2 }}a^{\dagger}_{y}$$
+Therefore:
+$$\begin{align}
+\ket{n_{X}=1,n_{Y}=0}  & = c_{X}^{\dagger}\ket{0}  \\
+ & = \frac{1}{\sqrt{ 2 }}\ket{n_{x}=1,n_{y}=0} + \frac{1}{\sqrt{ 2 }}\ket{n_{x}=0,n_{y}=1} \\
+\ket{n_{X}=0,n_{Y}=1}  & = c_{Y}^{\dagger}\ket{0}  \\
+ & =  \frac{1}{\sqrt{ 2 }}\ket{n_{x}=1,n_{y}=0} - \frac{1}{\sqrt{ 2 }}\ket{n_{x}=0,n_{y}=1}
+\end{align}$$
+Clearly, the states are consistent with our previous results from perturbation. 
 
 # Problem 4
 
