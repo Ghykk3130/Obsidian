@@ -1413,12 +1413,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Homework/Physics 512/Physics 512 homework 5.md",
+                "file": "Notes/Berry phase.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Physics 512 homework 5"
+              "title": "Berry phase"
             }
           }
         ],
@@ -1592,8 +1592,9 @@
   },
   "active": "8f3bba4979381f0e",
   "lastOpenFiles": [
-    "Excalidraw/Drawing 2026-03-23 21.34.08.excalidraw.md",
+    "Notes/AB效应.md",
     "Homework/Physics 512/Physics 512 homework 5.md",
+    "Excalidraw/Drawing 2026-03-23 21.34.08.excalidraw.md",
     "Notes/输运.md",
     "Notes/量子统计力学基础.md",
     "Notes/Transport.md",
@@ -1617,7 +1618,6 @@
     "Experimental/Reflections.md",
     "Notes/Untitled 2.md",
     "Notes/Untitled 1.md",
-    "Notes/Untitled.md",
     "Pictures/Pasted image 20260314131900.png",
     "Pictures/9eafeee1db7f4d13ddef893c34b80595.jpg",
     "Pictures/e53ff20bfefc26ceffbe66c872537c62.jpg",

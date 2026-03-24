@@ -1,52 +1,43 @@
-# 1. Adiabatic evolution
+# 1. 绝热近似
 
->[!Note] Proposition 1
->Let $\ket{\psi(t)}= \sum_{n} e^{i\theta_{n}(t)}c_{n}(t)\ket{n,t},\ \theta_{n}(t)= - \frac{1}{\hbar}\int_{0}^tdt^{'}E_{n}(t^{'})$ be a state. Fix $m$, if $| \frac{\bra{m,t}  \dot{H}\ket{n,t}}{E_{n}-E_{m}}|\ll \frac{E_{m}}{\hbar},\ \forall n\neq m,t\geq 0$, then:
->$$c_{m}(t)=c_{m}(0) e^{i\gamma_{m}(t)}\text{ where }\gamma_{m}(t)=i \int_{0}^tdt^{'}\bra{m,t^{'}} \partial / \partial t\ket{m,t^{'}} \in \mathbb{R}$$
-## Proof.
+假设hamiltonian是含时的，则每一瞬间可以写下方程：
+$$H(t)\ket{n(t)} =E_{n}(t)\ket{n(t)} $$
+称$\ket{n(t)}$为instantaneous ket。
 
-我们考虑含时系统波函数的演化。即$H=H(t)$。我们有：
-$$i\hbar \frac{\partial}{\partial t}\ket{\psi,t} =H\ket{\psi,t} $$
-令$\ket{n,t}$为fix $t$后的本征态。我们作：
-$$\ket{\psi,t} =\sum_{n}e^{i\theta_{n}(t)}c_{n}(t)\ket{n,t},\ \theta_{n}=- \frac{1}{\hbar}\int_{0}^tdt^{'}E_{n}(t^{'}) $$
-代入Schrodinger方程就有：
+令$\ket{\psi(t)}$为系统的态。我们知道若$H(t)$不含时，$\ket{\psi(t)}$在instantaneous ket上的投影应该出现一个phase $d_{n}(t)=- \frac{1}{\hbar}\int_{0}^{t}dt^{'}E_{n}(t^{'})$。我们将这个phase分离出来：
+$$\ket{\psi(t)} =\sum_{n}c_{n}(t) e^{id_{n}(t)} \ket{n(t)} $$
+为了解得$c_{n}$，我们考虑：
 $$\begin{align}
- & i\hbar\left( \sum_{n} i \frac{\partial \theta_{n} }{\partial t }e^{i\theta_{n}}c_{n}\ket{n,t} +\sum_{n}e^{i\theta_{n}}  \dot{c}_{n}\ket{n,t} + \sum_{n}e^{i\theta_{n}}c_{n} \frac{\partial}{\partial t}\ket{n,t}  \right)=\sum_{n}e^{i\theta_{n}}c_{n} E_{n}\ket{n,t} \\
-\implies & \sum \left( E_{n}e^{i\theta_{n}}c_{n}\ket{n,t} +e^{i\theta_{n}}  \dot{c}_{n}\ket{n,t} +e^{i\theta_{n}}c_{n} \frac{\partial}{\partial t}\ket{n,t}  \right) =\sum e^{i\theta_{n}}c_{n}E_{n}\ket{n,t} \\
-\implies & e^{i\theta_{m}}c_{m}E_{m}= e^{i\theta_{m}}c_{m}E_{m}+ e^{i\theta_{m} }  \dot{c}_{m}+ \sum_{n} e^{i\theta_{n}}c_{n} \bra{m,t}  \frac{\partial}{\partial t} \ket{n,t} \\
-\implies &   \dot{c}_{m}= - \sum_{n}e^{i(\theta_{n}-\theta_{m}) } c_{n} \bra{m,t}  \frac{\partial}{\partial t}\ket{n,t}     
+ & i\hbar \partial_{t} \ket{\psi(t)} =H(t)\ket{\psi(t)}  \\
+\implies & i\hbar \sum_{n} \frac{\partial c_{n}}{\partial t}e^{id_{n}}\ket{n} + \sum_{n}c_{n}e^{id_{n}}E_{n}\ket{n} + i\hbar \sum_{n} c_{n}e^{id_{n}}\ket{\frac{\partial}{\partial t}n} =H\ket{\psi}  \\
+\implies & \sum_{n} \frac{\partial c_{n}}{\partial t}e^{id_{n}}\ket{n} +\sum_{n}c_{n}e^{id_{n}}\ket{\frac{\partial}{\partial t}n} =0 \\
+\implies & \frac{\partial c_{n}}{\partial t}=-\sum_{n^{'}}c_{n^{'}}e^{i(d_{n^{'}}-d_{n})}\bra{n}  \frac{\partial}{\partial t}n^{'}\rangle
 \end{align}$$
-注意到：
+我们接下来将方程解耦。注意到若$m\neq n$，我们有：
 $$\begin{align}
- & H\ket{n,t} =E_{n}(t)\ket{n,t} \\
-\implies &  \dot{H}\ket{n,t} + H \frac{\partial}{\partial t}\ket{n,t} = \dot{E}_{n}\ket{n,t} +E_{n} \frac{\partial}{\partial t} \ket{n,t} \\
-\implies & \bra{m,t}   \dot{H}\ket{n,t} + E_{m}\bra{m,t}  \frac{\partial}{\partial t}\ket{n,t} = \dot{E}_{n}\delta_{mn} + E_{n}\bra{m,t}  \frac{\partial}{\partial t} \ket{n,t} \\
-\implies  & \bra{m,t}  \frac{\partial}{\partial t}\ket{n,t} =  \frac{\bra{m,t}   \dot{H}\ket{n,t} }{E_{n}-E_{m}}\text{ for }m\neq n    
+ & H(t)\ket{n(t)} =E_{n}(t)\ket{n(t)}  \\
+\implies & \frac{\partial H}{\partial t}\ket{n} +H\ket{\frac{\partial}{\partial t }n}= \frac{\partial E_{n}}{\partial t}\ket{n} +E_{n }\ket{\frac{\partial}{\partial t}n} \\
+\implies & \bra{m}  \frac{\partial H}{\partial t}\ket{n} =(E_{n}-E_{m})\bra{m}  \frac{\partial}{\partial t}n\rangle  
 \end{align}$$
-于是有：
-$$\begin{align}
-\dot{c}_{m} & = -c_{m}\bra{m,t}  \frac{\partial}{\partial t}\ket{m,t} - \sum_{n\neq m}e^{i(\theta_{n}-\theta_{m}) }c_{n}  \frac{\bra{m,t}  \dot{H}\ket{n,t} }{E_{n}-E_{m}} 
-\end{align}$$
-若：
-$$\begin{align}
-| \frac{\bra{m,t}  \dot{H}\ket{n,t} }{E_{n}-E_{m}} |  & \ll |\bra{m,t}  \frac{\partial}{\partial t}\ket{m,t}  | \\
- & = \frac{1}{\hbar} |\bra{m,t}  H \ket{m,t} |= \frac{E_{m}}{\hbar}
-\end{align}$$
-则：
-$$c_{m}(t)= c_{m}(0)e^{i\gamma_{m}(t)}\text{ where }\gamma_{m}(t)= i\int_{0}^tdt^{'}\bra{m,t^{'}}  \frac{\partial}{\partial t^{'}}\ket{m,t^{'}} $$
-又注意到：
-$$\begin{align}
- & \bra{m,t^{'}} m,t^{'}\rangle=1 \\
-\implies & \left(  \frac{\partial}{\partial t}\ket{m,t^{'}} ^{} \right)^{\dagger}\ket{m,t^{'}} + \bra{m,t^{'}}  \frac{\partial}{\partial t}\ket{m,t^{'}} =0 \\
-\implies & \left( \bra{m,t^{'}}  \frac{\partial}{\partial t}\ket{m,t^{'}}  \right)^{\dagger}+ \bra{m,t^{'}}  \frac{\partial}{\partial t}\ket{m,t^{'}} =0 \\
-\implies & \bra{m,t^{'}  } \frac{\partial}{\partial t}\ket{m,t^{'}} \text{ is imaginary}
-\end{align}$$
-## Remark
-这即是说，只要系统演化足够慢$\dot{H}\rightarrow 0$，那么任取系统态$\ket{\psi}$在本征态$\ket{m,t}$上投影，其演化参数都为$e^{i\theta_{m}}e^{i\gamma_{m}}$。
+故：
+$$\frac{\partial c_{n}}{\partial t}=-c_{n}\bra{n} \frac{\partial}{\partial t}n\rangle-\sum_{m\neq n}c_{m} e^{i(d_{m}-d_{n})}  \frac{\bra{n} \partial H /\partial t\ket{m} }{E_{m}-E_{n}} $$
+绝热近似假设能级之间间隔很大，以至于后面一项求和可以忽略。那么：
+$$\frac{\partial c_{n}}{\partial t}=-c_{n}\bra{n}  \frac{\partial}{\partial t}n\rangle$$
+解得：
+$$c_{n}(t)=c_{n}(0)\exp\left( -\int_{0}^{t}dt^{'}\bra{n}  \frac{\partial}{\partial t^{'}}n\rangle \right)$$
+记Berry phase为：
+$$\gamma_{n}=i \int_{0}^{t} dt^{'} \bra{n}  \frac{\partial }{\partial t^{'}}n\rangle$$
+于是：
+$$\ket{\psi(t)} =\sum_{n}e^{id_{n}(t)}e^{i\gamma_{n}(t)}c_{n}(0)\ket{n(t)} $$
+>[!Success] Proposition 1.1
+>Under adiabatic approximation, we have:
+>$$\ket{\psi(t)} = \sum_{n}e^{id_{n}(t)}e^{i\gamma_{n}(t)}c_{n}(0)\ket{n(t)}  $$
+>where $d_{n}(t)=- \frac{1}{\hbar}\int_{0}^{t}dt^{'}E_{n}(t^{'})$ is the dynamic phase, $\gamma_{n}(t)=i \int_{0}^{t}dt^{'}\bra{n {}} \frac{\partial}{\partial t^{'}}n\rangle$ is the Berry phase.
 
-## Ex:
-考虑$\dot{H}\rightarrow 0$。若最开始$\ket{\psi,0}=\ket{n,0}$，那么之后系统会一直处于态$\ket{n,t}$之中。
-
+容易证到Berry phase总是实的：
+$$\begin{align}
+ & \bra{n} n\rangle=1\implies \bra{\frac{\partial}{\partial t}n} n\rangle+ \bra{n}  \frac{\partial}{\partial t}n\rangle=0\implies \bra{n}  \frac{\partial}{\partial t}n\rangle\text{ is imaginary}\implies i \int_{0}^{t}dt^{'}\bra{n}  \frac{\partial}{\partial t^{'}}n\rangle\in \mathbb{R}
+\end{align}$$
 ## Ex:
 若$\frac{\partial}{\partial t}H=0$，那么：
 $$\begin{align}
@@ -60,51 +51,26 @@ $$\begin{align}
 
 # 2. Berry phase
 
-假设所有的time-dependence都来自于参数$\vec{R}(t)$。假设$\vec{R}\in \mathbb{R}^{3}$。那么就有：
-$$\gamma_{n}=i \int_{0}^tdt^{'}\bra{n,t^{'}} \frac{\partial }{\partial t^{'}}\ket{n,t^{'}}=\int dt^{'}i \dot{\vec{R}}\cdot \bra{n,t^{'}}  \frac{\partial }{\partial \vec{R}}\ket{n,t^{'}}   $$
-
->[!Note] Definition 1
->Define the Berry connection:
->$$\vec{A}_{n}(\vec{R})= i\bra{n,t}  \frac{\partial}{\partial \vec{R}}\ket{n,t} \in \mathbb{R}^{3}$$
-
-考虑$\vec{R}(t)$随时间演化一直在$C\subset \mathbb{R}^{3}$上周期性绕圈的情况。令周期为$T$。那么：
-
->[!Note] Definition 2
->Define the Berry phase as $\gamma_{n}(T)$.
-
-然后：
+假设所有的time dependence都来源于参数$\mathbf{R}(t)$。假设$\mathbf{R}$在参数空间中作周期运动。那么一个周期累积的Berry phase为：
 $$\begin{align}
-\gamma_{n}(T) & = \int_{0}^Tdt^{'} \dot{\vec{R}}\cdot \vec{A}_{n} \\
- & = \oint_{C} d\vec{R}\cdot \vec{A}_{n} \\
- & = \oint_{C}d\vec{S}\cdot \left( \frac{\partial}{\partial \vec{R}}\times \vec{A}_{n} \right) 
+\gamma_{n}= i\int_{0}^{T}dt\bra{n}  \frac{\partial}{\partial t}n\rangle= i \oint_{\partial S} d\mathbf{R}\cdot \bra{n}  \frac{\partial}{\partial \mathbf{R}}n\rangle
 \end{align}$$
+将$i\bra{n} \frac{\partial}{\partial \mathbf{R}}n\rangle=\mathbf{A}_{n}$定义为Berry connection。可以将线积分化为面积分：
+$$\gamma_{n}= \int_{S}d^{2}R^{}  \hat{\mathbf{n}}\cdot (\nabla \times \mathbf{A}_{n})$$
+将$\nabla \times \mathbf{A}_{n}=\boldsymbol{\Omega}_{n}$定义为Berry curvature。
 
->[!Note] Definition 3
->Define the Berry curvature:
->$$\vec{B}_{n}(\vec{R})= \frac{\partial}{\partial \vec{R}}\times \vec{A}_{n}\in \mathbb{R}^{3}$$
-
-显然，对于任意一个态$\ket{n(\vec{R})}$，其相应的Berry connection不是唯一的。因为$\ket{n(\vec{R})}$可以随便加上一个phase而物理实质不变，即$U(1)-\text{arbitrariness}$。所以，若作$\ket{n,t}\leadsto e^{i\delta(\vec{R})}\ket{n,t}$，那么相应地：
-$$\begin{align}
-\vec{A}_{n} & \leadsto i\bra{n,t} e^{-i\delta} \frac{\partial}{\partial \vec{R}}(e^{i\delta}\ket{n,t} ) \\
- & = i\bra{n,t} e^{-i\delta}\left( i \frac{\partial\delta}{\partial \vec{R}}e^{i\delta}\ket{n,t} + e^{i\delta} \frac{\partial}{\partial \vec{R}}\ket{n,t}  
- \right) \\
- & = \vec{A}_{n}- \frac{\partial\delta}{\partial \vec{R}}
-\end{align}$$
-所以波函数作$U(1)$变换，$\vec{A}_{n}$应加减某函数梯度。相应地，显然$\vec{B}_{n}$不变，$\gamma_{n}(T)$不变。物理实质不变。所以Berry curvature和Berry phase是相应变换下的不变量。
-
-Berry curvature可以进一步写开：
+Berry curvature具有规范自由度。注意到$\mathbf{A}_{n}\leadsto \mathbf{A}_{n}+ \nabla f(\mathbf{R})$，都不会改变Berry phase。Berry curvature可以进一步写开：
 
 >[!Note] Proposition 1
->$$\vec{B}_{n}=i \left( \frac{\partial}{\partial \vec{R}} \ket{n,t}  \right)^{\dagger}\times \frac{\partial}{\partial \vec{R}}\ket{n,t} $$
+>$$\boldsymbol{\Omega}_{n}=i\bra{\frac{\partial}{\partial \mathbf{R}}n} \times \ket{\frac{\partial}{\partial \mathbf{R}}n}  $$
 ## Proof.
+
+我们知道$A_{ni}=i\bra{n} \frac{\partial}{\partial R_{i}}n\rangle$。故：
 $$\begin{align}
-\vec{B}_{n} & = \frac{\partial}{\partial \vec{R}}\times \vec{A}_{n} \\
- & = i\frac{\partial}{\partial \vec{R}}\times \bra{n,t}  \frac{\partial}{\partial \vec{R}}\ket{n,t} \\
- & = ie_{k}\epsilon_{ijk} \frac{\partial}{\partial R_{i}}\bra{n,t}  \frac{\partial}{\partial R_{j}}\ket{n,t}  \\
- & = ie_{k}\epsilon_{ijk}\left(  \frac{\partial}{\partial R_{i}}\ket{n,t}  \right)^{\dagger} \frac{\partial}{\partial R_{j}}\ket{n,t} + ie_{k} \bra{n,t}  \frac{\partial}{\partial R_{i}} \frac{\partial}{\partial R_{j}} \ket{n,t}  \\
- & = i\left(  \frac{\partial}{\partial \vec{R}}\ket{n,t}  \right)^{\dagger} \times \frac{\partial}{\partial \vec{R}}\ket{n,t} + i\bra{n,t}  \frac{\partial}{\partial \vec{R}}\times\left(  \frac{\partial}{\partial \vec{R}}\ket{n,t}  \right) \\
- & =  i\left(  \frac{\partial}{\partial \vec{R}}\ket{n,t}  \right)^{\dagger} \times \frac{\partial}{\partial \vec{R}}\ket{n,t}
+\Omega_{ni} & =i \epsilon_{ijk}  \frac{\partial}{\partial R_{j}}\left( \bra{n}  \frac{\partial}{\partial R_{k}}n\rangle \right) \\
+ & = i\epsilon_{ijk}\bra{\frac{\partial}{\partial R_{j}}n}  \frac{\partial}{\partial R_{k}}n\rangle+ i\epsilon_{ijk}\bra{n}  \frac{\partial^{2}}{\partial R_{j}\partial R_{k}}n\rangle
 \end{align}$$
+注意到第二项实际上是$(i \bra{n} \nabla \times \ket{\nabla n})_{i}=0$。所以只剩下第一项。
 >[!Right]
 >$\blacksquare$
 
