@@ -41,7 +41,7 @@ $$xy \overset{\wedge}{=}\begin{pmatrix}
 \end{pmatrix}$$
 The eigen equation is:
 $$\lambda^{2}-\frac{1}{4m^{2}\omega^{2}}=0\implies \lambda= \pm \frac{1}{2m\omega }$$
-Then the first order energy shift is $\Delta E= \pm \frac{\delta}{2}\hbar \omega$. For $\Delta E= \frac{\delta}{2}\hbar \omega$, we have the eigenvector $\frac{1}{\sqrt{ 2 }} \begin{pmatrix}1 \\ -1\end{pmatrix}$. For $\Delta E= - \frac{\delta}{2}\hbar \omega$, we have the eigenvector $\frac{1}{\sqrt{ 2 }} \begin{pmatrix}1 \\ 1\end{pmatrix}$. So the unperturbed kets should be $\frac{1}{\sqrt{ 2 }}(\ket{1,0}-\ket{0,1}),\ \frac{1}{\sqrt{ 2 }}(\ket{1,0}+\ket{0,1})$.
+Then the first order energy shift is $\Delta E= \pm \frac{\delta}{2}\hbar \omega$. For $\Delta E= \frac{\delta}{2}\hbar \omega$, we have the eigenvector $\frac{1}{\sqrt{ 2 }} \begin{pmatrix}1 \\ 1\end{pmatrix}$. For $\Delta E= - \frac{\delta}{2}\hbar \omega$, we have the eigenvector $\frac{1}{\sqrt{ 2 }} \begin{pmatrix}1 \\ -1\end{pmatrix}$. So the unperturbed kets should be $\frac{1}{\sqrt{ 2 }}(\ket{1,0}+\ket{0,1}),\ \frac{1}{\sqrt{ 2 }}(\ket{1,0}-\ket{0,1})$.
 
 **For $E=3\hbar \omega$:**
 
@@ -147,6 +147,23 @@ $$\begin{align}
  & =  \frac{1}{\sqrt{ 2 }}\ket{n_{x}=1,n_{y}=0} - \frac{1}{\sqrt{ 2 }}\ket{n_{x}=0,n_{y}=1}
 \end{align}$$
 Clearly, the states are consistent with our previous results from perturbation. 
+
+For $n_{X}=2,n_{Y}=0$ or $n_{X}=0,n_{Y}=2$ or $n_{X}=n_{Y}=1$, we have:
+$$\begin{align}
+E & = \frac{5}{2}\hbar \sqrt{ 1+\delta }\omega+ \frac{\hbar}{2}\sqrt{ 1-\delta }\omega \\
+ & \approx 3\hbar \omega+\delta \hbar \omega
+\end{align}$$
+or
+$$E= \frac{\hbar}{2}\hbar\sqrt{ 1+\delta }\omega+ \frac{5}{2}\hbar\sqrt{ 1-\delta }\omega \approx {3}\hbar \omega-\delta \hbar \omega$$
+or 
+$$E= \frac{3}{2}\hbar \sqrt{ 1+\delta }\omega+ \frac{3}{2}\hbar \sqrt{ 1-\delta }\omega \approx 3\hbar \omega$$
+The corresponding kets are:
+$$\begin{align}
+  \ket{n_{X}=2,n_{Y}=0} & = \frac{c_{X}^{\dagger}}{\sqrt{ 2 } }\ket{n_{X}=1,n_{Y}=0} = \frac{1}{2}\ket{n_{x}=2,n_{y}=0} + \frac{1}{\sqrt{ 2 }}\ket{n_{x}=1,n_{y}=1} + \frac{1}{2}\ket{n_{x}=0,n_{y}=2} \\
+\ket{n_{X}=0,n_{Y}=2}  & = \frac{c_{Y}^{\dagger}}{\sqrt{ 2 }}\ket{n_{X}=0,n_{Y}=1} =  - \frac{1}{2}\ket{n_{x}=2,n_{y}=0}- \frac{1}{2}\ket{n_{x}=0,n_{y}=2}+ \frac{1}{\sqrt{ 2 }}\ket{n_{x}=1,n_{y}=1} \\
+\ket{n_{X}=1,n_{Y}=1} & = c_{Y}^{\dagger}\ket{n_{X}=1,n_{Y}=0} = \frac{1}{\sqrt{ 2 }}(\ket{n_{X}=2,n_{y}=0}-\ket{n_{x}=0,n_{y}=2})
+\end{align}$$
+These results are all consistent with perturbation.
 
 # Problem 4
 
