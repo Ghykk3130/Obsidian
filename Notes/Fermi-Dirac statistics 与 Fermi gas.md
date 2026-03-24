@@ -146,7 +146,7 @@ U & \approx \frac{3}{2} \frac{V}{\lambda^{3}} \frac{(\beta \mu)^{5/2}}{\Gamma\le
 >[!Right]
 >$\blacksquare$
 
-我们还想得到比热容。但是我们上面扔掉的$T$太多了。我们下面保留多一点，方便 对$T$求导。
+我们还想得到比热容。但是我们上面扔掉的$T$太多了。我们下面保留多一点，方便对$T$求导。
 
 >[!Note] Proposition 2
 For free Fermi gas at $T=0$, we have $\frac{U}{N}=\frac{3}{5}\epsilon_{F}\left( 1+  \frac{5}{12}\pi^{2} \left( \frac{kT}{\epsilon_{F}} \right)^{2} \right)$ up to $\mathcal{O}(T^{2})$

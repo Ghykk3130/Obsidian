@@ -37,6 +37,23 @@ $$\begin{align}
 $$E_{y}= \frac{B}{ne}j_{x}$$
 于是得到Hall resistivity：
 $$\rho_{yx}= \frac{B}{ne}$$
+## Ex:
+
+考虑材料对于电场的相应。限制在材料中一点。则$E=E_{0}e^{-i\omega t}$. 令$v=v_{0}e^{-i\omega t}$。 那么：
+$$\begin{align}
+ & m \frac{d v}{d t}=- \frac{mv}{\tau}-|e| E \\
+\implies &  -i\omega mv_{0}=- \frac{mv_{0}}{\tau}-|e|E_{0} \\
+\implies & v_{0}= \frac{|e|E_{0}}{m} \frac{1}{i\omega-1 /\tau}
+\end{align}$$
+那么：
+$$\begin{align}
+j & = -n|e| v \\
+ & = -n|e| v_{0}e^{-i\omega t} \\
+ & = \frac{ne^{2}\tau}{m} \frac{1+i\tau \omega}{1+\tau^{2}\omega^{2}}E_{0}e^{-i\omega t} \\
+ & = \frac{ne^{2}\tau}{m} \frac{1+i\tau \omega}{1+\tau^{2}\omega^{2}}E
+\end{align}$$
+于是$\sigma(\omega)=\sigma(0) \frac{1+i\tau \omega}{1+\tau^{2}\omega^{2}}\text{ where }\sigma(0)= \frac{ne^{2}\tau}{m}$.
+
 
  
 
