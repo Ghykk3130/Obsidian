@@ -1427,12 +1427,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Notes/N维球.md",
+                "file": "Notes/Fermi-Dirac statistics 与 Fermi gas.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "N维球"
+              "title": "Fermi-Dirac statistics 与 Fermi gas"
             }
           }
         ],
@@ -1488,7 +1488,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "N维球",
+                "query": "费米",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -1608,6 +1608,8 @@
   },
   "active": "a881d835fec5be45",
   "lastOpenFiles": [
+    "Notes/理想经典气体，玻色气体与费米气体.md",
+    "Notes/N维球.md",
     "Homework/Physics 463/Physics 463 homework 6.md",
     "Homework/Physics 463/Physics 463 homework 5.md",
     "Homework/Physics 512/Physics 512 homework 5.md",
@@ -1632,8 +1634,6 @@
     "Notes/Hamilton原理与Lagrange方程.md",
     "Notes/Ising模型.md",
     "Notes/Maxwell-Boltzmann 分布.md",
-    "Notes/Drude模型.md",
-    "Notes/Solid state.md",
     "Pictures/Pasted image 20260314131900.png",
     "Pictures/9eafeee1db7f4d13ddef893c34b80595.jpg",
     "Pictures/e53ff20bfefc26ceffbe66c872537c62.jpg",
