@@ -48,8 +48,8 @@ Then obviously:
 $$B=-V\left( \frac{\partial p}{\partial V} \right)_{N}=\frac{5p}{3}= \frac{10U_{0}}{9V}$$
 ## (c)
 
-We have $C=2.65\text{ cm}^{-3},\ \epsilon_{F}=3.23\ eV$. Then:
-$$B= \frac{10U_{0}}{9V}= \frac{2}{3}C\epsilon_{F}=9.13\times 10^{-13}\text{ Pa}$$
+We have $C=1.40\times 10^{22}\text{ cm}^{-3},\ \epsilon_{F}=2.12\ eV$. Then:
+$$B= \frac{10U_{0}}{9V}= \frac{2}{3}C\epsilon_{F}=3.17\times 10^{9}\text{ Pa}$$
 # Kittel 6.3
 
 Take a unit area. We have:
@@ -66,7 +66,7 @@ Then:
 $$\begin{align}
  & n  = \frac{m}{\pi \hbar^{2}}kT\ln(1+\mathcal{z}) \\
  \implies& z= e^{\beta \mu}= \exp\left( \frac{\pi \hbar^{2}n}{mkT} \right)-1 \\
-\implies & \mu= kT\ln\left( \exp\left( \frac{\pi \hbar n}{mkT} \right)-1 \right) 
+\implies & \mu= kT\ln\left( \exp\left( \frac{\pi \hbar^{2} n}{mkT} \right)-1 \right) 
 \end{align}$$
 # Kittel 6.6
 
