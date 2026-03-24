@@ -171,6 +171,43 @@ Obviously, the eigen energy is:
 $$E= \frac{\hbar^{2}}{2m}(k_{x}^{2}+k_{y}^{2}),\ k_{i}= \frac{\pi n_{i}}{a}$$
 The first lowest state corresponds to $E=0$. There is no degeneracy. The second lowest state corresponds to $E= \frac{\hbar^{2}\pi^{2}}{2a^{2}m}$. The degeneracy is $2$. The third lowest state corresponds to $E= \frac{\hbar^{2}\pi^{2}}{a^{2}m}$. There is no degeneracy.
 ## (b)
+### (i)
+
+For the first lowest state, we have $n_{x}=n_{y}=0$. For simplicity, we shift the potential, so that $V=0$ in $\left[ - \frac{a}{2}, \frac{a}{2} \right]^{2}$. The eigen energy should be unchanged. Then by parity selection rule we have:
+$$\bra{0,0} xy\ket{0,0} =\bra{0} x\ket{0} \bra{0} y\ket{0} =0$$
+Therefore, we resort to second order perturbation, and the energy shift is of order $\lambda^{2}$ in this case.
+
+For the second lowest state, we have $n_{x}=1,n_{y}=0$ or $n_{x}=0,n_{y}=1$. By parity selection rule, the only non vanishing matrix elements are $\bra{1,0}xy\ket{0,1}$ and its conjugate. It suffices to compute:
+$$\begin{align}
+\bra{1} x\ket{0}  & = \frac{2}{a}\int_{- \frac{a}{2}}^{\frac{a}{2}} dx x \cos\left( \frac{\pi}{a}x \right)\sin\left( \frac{2\pi}{a}x \right) \\
+ & = \frac{1}{a}\int_{- \frac{a}{2}}^{\frac{a}{2}}dx x\left( \sin\left( \frac{3\pi}{a}x \right)+\sin\left( \frac{\pi}{a}x \right) \right) \\
+\end{align}$$
+We have:
+$$\begin{align}
+\int_{- \frac{a}{2}}^{\frac{a}{2}}dx x \sin\left( \frac{3\pi}{a}x \right) & = \left[ -x\cos\left( \frac{3\pi}{a} x\right) \frac{a}{3\pi}\right]_{- \frac{a}{2}}^{\frac{a}{2}}+ \int dx \cos\left( \frac{3\pi}{a}x \right) \frac{a}{3\pi} \\
+ & = -2\left( \frac{a}{3\pi} \right)^{2}  \\
+\int_{- \frac{a}{2}}^{\frac{a}{2}}dx x \sin\left( \frac{\pi}{a}x \right) & =\left[  -x \cos\left( \frac{\pi}{a}x \right) \frac{a}{\pi} \right]_{- \frac{a}{2}}^{\frac{a}{2}}+\int dx \cos\left( \frac{\pi}{a}x \right) \frac{a}{\pi} \\
+ & = 2 \left( \frac{a}{\pi} \right)^{2}
+\end{align}$$
+Then:
+$$\bra{1} x\ket{0} = \frac{16}{9} \frac{a}{\pi^{2}}$$
+Similarly, $\bra{0}y\ket{1}= \frac{16}{9} \frac{a}{\pi^{2}}$. Then:
+$$xy \overset{\wedge}{=}\begin{pmatrix}
+0 & \frac{16}{9} \frac{a}{\pi^{2}} \\
+\frac{16}{9} \frac{a}{\pi^{2}} & 0
+\end{pmatrix}$$
+The eigen values are $\pm \frac{16}{9} \frac{a}{\pi^{2}}$. The eigen shifts are $\Delta E= \pm \frac{16}{9} \frac{a}{\pi^{2}}\lambda$, linear in $\lambda$.
+
+For the third lowest state, we have $n_{x}=1,n_{y}=1$. By parity selection rule, we have:
+$$\bra{1,1} xy\ket{1,1} =\bra{1} x\ket{1} \bra{1} y\ket{1} =0$$
+Then we resort to second order perturbation, and conclude that the energy shift is quadratic in $\lambda$.
+### (ii)
+
+As argued above, if we keep the $\mathcal{O}(\lambda)$ terms, the energy shift for the lowest level is $0$. The energy shift for the second lowest level is $\pm \frac{16}{9} \frac{a}{\pi^{2}}\lambda$. The energy shift for the third lowest level is $0$. 
+### (iii)
+
+![[Drawing 2026-03-23 21.34.08.excalidraw|500]]
+
 
 
 # Problem 4
