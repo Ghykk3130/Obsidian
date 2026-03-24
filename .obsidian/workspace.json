@@ -1413,12 +1413,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Notes/Berry phase.md",
+                "file": "Notes/旋转的表示.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Berry phase"
+              "title": "旋转的表示"
             }
           }
         ],
@@ -1474,7 +1474,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "boltzmann方程",
+                "query": "Euler",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -1485,11 +1485,13 @@
               "title": "Search"
             }
           }
-        ]
+        ],
+        "currentTab": 3
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 200,
+    "collapsed": true
   },
   "right": {
     "id": "9003d078f8dbc4ed",
@@ -1592,6 +1594,8 @@
   },
   "active": "8f3bba4979381f0e",
   "lastOpenFiles": [
+    "Notes/群论.md",
+    "Notes/Berry phase.md",
     "Notes/AB效应.md",
     "Homework/Physics 512/Physics 512 homework 5.md",
     "Excalidraw/Drawing 2026-03-23 21.34.08.excalidraw.md",
@@ -1616,8 +1620,6 @@
     "Reading notes/Topological properties and dynamics of magnetic skyrmions.md",
     "Reading notes/Berry phase effects on electronic properties.md",
     "Experimental/Reflections.md",
-    "Notes/Untitled 2.md",
-    "Notes/Untitled 1.md",
     "Pictures/Pasted image 20260314131900.png",
     "Pictures/9eafeee1db7f4d13ddef893c34b80595.jpg",
     "Pictures/e53ff20bfefc26ceffbe66c872537c62.jpg",

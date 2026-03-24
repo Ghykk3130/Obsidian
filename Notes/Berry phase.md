@@ -59,7 +59,9 @@ $$\begin{align}
 $$\gamma_{n}= \int_{S}d^{2}R^{}  \hat{\mathbf{n}}\cdot (\nabla \times \mathbf{A}_{n})$$
 将$\nabla \times \mathbf{A}_{n}=\boldsymbol{\Omega}_{n}$定义为Berry curvature。
 
-Berry curvature具有规范自由度。注意到$\mathbf{A}_{n}\leadsto \mathbf{A}_{n}+ \nabla f(\mathbf{R})$，都不会改变Berry phase。Berry curvature可以进一步写开：
+Berry curvature具有规范自由度。注意到$\mathbf{A}_{n}\leadsto \mathbf{A}_{n}+ \nabla f(\mathbf{R})$，都不会改变Berry phase。容易证明这种规范变换可由ket加上一个phase引起：
+$$\ket{n(\mathbf{R})} \leadsto e^{-if(\mathbf{R})}\ket{n(\mathbf{R})} $$
+Berry curvature可以进一步写开：
 
 >[!Note] Proposition 1
 >$$\boldsymbol{\Omega}_{n}=i\bra{\frac{\partial}{\partial \mathbf{R}}n} \times \ket{\frac{\partial}{\partial \mathbf{R}}n}  $$
