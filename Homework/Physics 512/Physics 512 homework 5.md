@@ -207,8 +207,76 @@ As argued above, if we keep the $\mathcal{O}(\lambda)$ terms, the energy shift f
 ### (iii)
 
 ![[Drawing 2026-03-23 21.34.08.excalidraw|500]]
+# Sakurai 5.37
 
-
+We rotate the $\ket{+z}$ state to get the $\ket{\uparrow}$ defined by $\mathbf{B}$. The rotation is given by:
+$$\mathscr{D}(R)=\mathscr{D}(R_{z}(\phi)R_{y}(\theta))= \exp\left( - \frac{i}{\hbar}J_{z}\phi \right)\exp\left( - \frac{i}{\hbar}J_{y}\theta \right)$$
+Know that:
+$$\exp\left( - \frac{i}{\hbar}J_{y}\theta \right)=\cos \frac{\theta}{2}-i \sigma_{y}\sin \frac{\theta}{2} \overset{\wedge}{=} \begin{pmatrix}
+\cos \frac{\theta}{2} &  - \sin \frac{\theta}{2} \\
+\sin \frac{\theta}{2} & \cos \frac{\theta}{2}
+\end{pmatrix}$$
+Then:
+$$\begin{align}
+\ket{\uparrow} &  \overset{\wedge}{=} \exp\left( - \frac{i}{\hbar}J_{z}\phi \right) \begin{pmatrix}
+\cos \frac{\theta}{2} & - \sin \frac{\theta}{2} \\
+\sin \frac{\theta}{2} &  \cos \frac{\theta}{2} 
+\end{pmatrix} \begin{pmatrix}
+1 \\
+0
+\end{pmatrix} \\
+ & = \begin{pmatrix}
+e^{- \frac{i\phi}{2}} & 0 \\
+0 & e^{ \frac{i\phi}{2}}
+\end{pmatrix} \begin{pmatrix}
+\cos \frac{\theta}{2} \\
+\sin \frac{\theta}{2}
+\end{pmatrix} \\
+ & = \begin{pmatrix}
+e^{- \frac{i\phi}{2}}\cos \frac{\theta}{2} \\
+e^{ \frac{i\phi}{2}}\sin \frac{\theta}{2}
+\end{pmatrix}
+\end{align}$$
+We have that:
+$$\begin{align}
+ \frac{\partial}{\partial B}\ket{\uparrow(B,\theta,\phi)}  & = 0 \\
+\frac{\partial}{\partial \theta}\ket{\uparrow}  & = \begin{pmatrix}
+- \frac{1}{2}e^{- \frac{i\phi}{2}}\sin \frac{\theta}{2} \\
+ \frac{1}{2}e^{ ^{ \frac{i\phi}{2}}\cos \frac{\theta}{2} } 
+\end{pmatrix} \\
+\frac{\partial}{\partial \phi}\ket{\uparrow}  & = \begin{pmatrix}
+- \frac{i}{2} e^{- \frac{i\phi}{2}}\cos \frac{\theta}{2} \\
+ \frac{i}{2}e^{i \frac{\phi}{2}}\sin \frac{\theta}{2}
+\end{pmatrix}
+\end{align}$$
+Then:
+$$\begin{align}
+ & A_{\uparrow B}=0 \\
+ & A_{\uparrow \theta}=i \begin{pmatrix}
+e^{ \frac{i\phi}{2}{} } \cos \frac{\theta}{2} & e^{ - \frac{i\phi}{2}}\sin \frac{\theta}{2}
+\end{pmatrix} \begin{pmatrix}
+- \frac{1}{2B} e^{- \frac{i\phi}{2}}\sin \frac{\theta}{2} \\
+ \frac{1}{2B} e^{\frac{i\phi}{2}} \cos \frac{\theta}{2}
+\end{pmatrix}=0 \\
+ & A_{\uparrow \phi}=i \begin{pmatrix}
+e^{\frac{i\phi}{2}}\cos \frac{\theta}{2}  & e^{- \frac{i\phi}{2}}\sin \frac{\theta}{2} 
+\end{pmatrix} \begin{pmatrix}
+- \frac{i}{2B\sin \theta} e^{- \frac{i\phi}{2}}\cos \frac{\theta}{2} \\
+ \frac{i}{2B\sin \theta}e^{i \frac{\phi}{2}}\sin \frac{\theta}{2}
+\end{pmatrix}= \frac{1}{2B\sin \theta}\cos \theta= \frac{\cot \theta}{2B}
+\end{align}$$
+Then the Berry connection is $\mathbf{A}_{\uparrow}= \frac{\cot \theta}{2B} \hat{\boldsymbol{\phi}}$. Then we compute the Berry phase. Obviously, $\Omega_{\uparrow \theta}, \Omega_{\uparrow \phi}=0$. We have:
+$$\begin{align}
+\Omega_{\uparrow B} & = \frac{1}{B\sin \theta} \frac{\partial}{\partial \theta}(A_{\uparrow \phi}\sin \theta) \\
+ & = - \frac{1}{2B^{2}}
+\end{align}$$
+Then the Berry phase is:
+$$\begin{align}
+\gamma_{+} & = \int d\theta d\phi B^{2} \sin \theta \left( - \frac{1}{2B^{2}} \right) \\
+ & = - \frac{1}{2}\int d\theta d\phi \sin \theta \\
+ & = - \frac{\Omega}{2}
+\end{align}$$
+Here $\Omega$ should be not be confused with the Berry curvature. It is the solid angle subtended by $\mathbf{B}$. I just ran out of notations. 
 
 # Problem 4
 
