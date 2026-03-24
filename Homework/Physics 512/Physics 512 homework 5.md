@@ -164,6 +164,14 @@ $$\begin{align}
 \ket{n_{X}=1,n_{Y}=1} & = c_{Y}^{\dagger}\ket{n_{X}=1,n_{Y}=0} = \frac{1}{\sqrt{ 2 }}(\ket{n_{X}=2,n_{y}=0}-\ket{n_{x}=0,n_{y}=2})
 \end{align}$$
 These results are all consistent with perturbation.
+# Sakurai 5.10
+## (a)
+
+Obviously, the eigen energy is:
+$$E= \frac{\hbar^{2}}{2m}(k_{x}^{2}+k_{y}^{2}),\ k_{i}= \frac{\pi n_{i}}{a}$$
+The first lowest state corresponds to $E=0$. There is no degeneracy. The second lowest state corresponds to $E= \frac{\hbar^{2}\pi^{2}}{2a^{2}m}$. The degeneracy is $2$. The third lowest state corresponds to $E= \frac{\hbar^{2}\pi^{2}}{a^{2}m}$. There is no degeneracy.
+## (b)
+
 
 # Problem 4
 
