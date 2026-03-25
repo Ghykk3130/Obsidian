@@ -1427,16 +1427,30 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Homework/Physics 512/Physics 512 homework 5.md",
+                "file": "Homework/Physics 512/Physics 512 homework 1.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Physics 512 homework 5"
+              "title": "Physics 512 homework 1"
+            }
+          },
+          {
+            "id": "e4552260c710b608",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Homework/Physics 512/Physics 512 cheat sheet.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Physics 512 cheat sheet"
             }
           }
         ],
-        "currentTab": 101
+        "currentTab": 102
       }
     ],
     "direction": "vertical"
@@ -1604,10 +1618,14 @@
       "obsidian-excalidraw-plugin:New drawing": false
     }
   },
-  "active": "a881d835fec5be45",
+  "active": "e4552260c710b608",
   "lastOpenFiles": [
-    "Excalidraw/Drawing 2026-03-23 21.34.08.excalidraw.md",
+    "Homework/Physics 512/Physics 512 cheat sheet 2.md",
+    "Homework/Physics 512/Physics 512 cheat sheet.md",
+    "Homework/Physics 512/Physics 512 homework 1.md",
+    "Homework/Physics 512/Untitled.md",
     "Homework/Physics 512/Physics 512 homework 5.md",
+    "Excalidraw/Drawing 2026-03-23 21.34.08.excalidraw.md",
     "Homework/Physics 463/Physics 463 homework 6.md",
     "Notes/Solid state.md",
     "Notes/Drude模型.md",
@@ -1628,10 +1646,6 @@
     "Homework/Physics 512/Physics 512 homework 3.md",
     "Notes/Hamiltonian with extreme time dependence.md",
     "Notes/Bose-Einstein statistics与BEC.md",
-    "Notes/二次量子化.md",
-    "Notes/二次量子化.md",
-    "Notes/Hubbard model.md",
-    "Notes/Heisenberg模型.md",
     "Pictures/Pasted image 20260314131900.png",
     "Pictures/9eafeee1db7f4d13ddef893c34b80595.jpg",
     "Pictures/e53ff20bfefc26ceffbe66c872537c62.jpg",
