@@ -133,17 +133,20 @@ E & = \frac{1}{2}\sqrt{ 1+\delta }\hbar \omega+ \frac{3}{2}\hbar \omega \sqrt{ 1
 \end{align}$$
 The energies are consistent with our previous analysis. To obtain the kets, we first observe that:
 $$\begin{align}
-c_{X}^{\dagger} & =\sqrt{ \frac{m\omega}{2} }X+ \frac{i}{\sqrt{ 2m\omega }}p_{X} \\
+c_{X}^{\dagger} & =\sqrt{ \frac{m\omega \sqrt{ 1+\delta }}{2} }X+ \frac{i}{\sqrt{ 2m\omega \sqrt{ 1+\delta } }}p_{X} \\ & \approx \sqrt{ \frac{m\omega}{2} }X+ \frac{i}{\sqrt{ 2m\omega }}p_{X} \\
+
  & = \sqrt{ \frac{m\omega }{2} } \frac{x+y}{\sqrt{ 2 }}+ \frac{i}{\sqrt{ 2m\omega }} \frac{p_{x}+p_{y}}{\sqrt{ 2 }} \\
  & =  \frac{1}{\sqrt{ 2 }} a_{x}^{\dagger}+ \frac{1}{\sqrt{ 2 }} a_{y}^{\dagger}
 \end{align}$$
+Note that in the approximation, we ignored $\mathcal{O}(\delta)$ terms. We can do this since we are aimed at using the creation operator to obtain the unperturbed kets, which do not have $\mathcal{O}(\delta)$ terms.
+
 Similarly,
-$$c^{\dagger}_{Y}= \frac{1}{\sqrt{ 2 }}a^{\dagger}_{x}- \frac{1}{\sqrt{ 2 }}a^{\dagger}_{y}$$
+$$c^{\dagger}_{Y}\approx \frac{1}{\sqrt{ 2 }}a^{\dagger}_{x}- \frac{1}{\sqrt{ 2 }}a^{\dagger}_{y}$$
 Therefore:
 $$\begin{align}
-\ket{n_{X}=1,n_{Y}=0}  & = c_{X}^{\dagger}\ket{0}  \\
+\ket{n_{X}=1,n_{Y}=0}  & \approx c_{X}^{\dagger}\ket{0}  \\
  & = \frac{1}{\sqrt{ 2 }}\ket{n_{x}=1,n_{y}=0} + \frac{1}{\sqrt{ 2 }}\ket{n_{x}=0,n_{y}=1} \\
-\ket{n_{X}=0,n_{Y}=1}  & = c_{Y}^{\dagger}\ket{0}  \\
+\ket{n_{X}=0,n_{Y}=1}  & \approx c_{Y}^{\dagger}\ket{0}  \\
  & =  \frac{1}{\sqrt{ 2 }}\ket{n_{x}=1,n_{y}=0} - \frac{1}{\sqrt{ 2 }}\ket{n_{x}=0,n_{y}=1}
 \end{align}$$
 Clearly, the states are consistent with our previous results from perturbation. 
@@ -159,51 +162,74 @@ or
 $$E= \frac{3}{2}\hbar \sqrt{ 1+\delta }\omega+ \frac{3}{2}\hbar \sqrt{ 1-\delta }\omega \approx 3\hbar \omega$$
 The corresponding kets are:
 $$\begin{align}
-  \ket{n_{X}=2,n_{Y}=0} & = \frac{c_{X}^{\dagger}}{\sqrt{ 2 } }\ket{n_{X}=1,n_{Y}=0} = \frac{1}{2}\ket{n_{x}=2,n_{y}=0} + \frac{1}{\sqrt{ 2 }}\ket{n_{x}=1,n_{y}=1} + \frac{1}{2}\ket{n_{x}=0,n_{y}=2} \\
-\ket{n_{X}=0,n_{Y}=2}  & = \frac{c_{Y}^{\dagger}}{\sqrt{ 2 }}\ket{n_{X}=0,n_{Y}=1} =  - \frac{1}{2}\ket{n_{x}=2,n_{y}=0}- \frac{1}{2}\ket{n_{x}=0,n_{y}=2}+ \frac{1}{\sqrt{ 2 }}\ket{n_{x}=1,n_{y}=1} \\
-\ket{n_{X}=1,n_{Y}=1} & = c_{Y}^{\dagger}\ket{n_{X}=1,n_{Y}=0} = \frac{1}{\sqrt{ 2 }}(\ket{n_{X}=2,n_{y}=0}-\ket{n_{x}=0,n_{y}=2})
+  \ket{n_{X}=2,n_{Y}=0} & \approx \frac{c_{X}^{\dagger}}{\sqrt{ 2 } }\ket{n_{X}=1,n_{Y}=0} = \frac{1}{2}\ket{n_{x}=2,n_{y}=0} + \frac{1}{\sqrt{ 2 }}\ket{n_{x}=1,n_{y}=1} + \frac{1}{2}\ket{n_{x}=0,n_{y}=2} \\
+\ket{n_{X}=0,n_{Y}=2}  & \approx \frac{c_{Y}^{\dagger}}{\sqrt{ 2 }}\ket{n_{X}=0,n_{Y}=1} =  - \frac{1}{2}\ket{n_{x}=2,n_{y}=0}- \frac{1}{2}\ket{n_{x}=0,n_{y}=2}+ \frac{1}{\sqrt{ 2 }}\ket{n_{x}=1,n_{y}=1} \\
+\ket{n_{X}=1,n_{Y}=1} & \approx c_{Y}^{\dagger}\ket{n_{X}=1,n_{Y}=0} = \frac{1}{\sqrt{ 2 }}(\ket{n_{X}=2,n_{y}=0}-\ket{n_{x}=0,n_{y}=2})
 \end{align}$$
 These results are all consistent with perturbation.
 # Sakurai 5.10
 ## (a)
 
 Obviously, the eigen energy is:
-$$E= \frac{\hbar^{2}}{2m}(k_{x}^{2}+k_{y}^{2}),\ k_{i}= \frac{\pi n_{i}}{a}$$
-The first lowest state corresponds to $E=0$. There is no degeneracy. The second lowest state corresponds to $E= \frac{\hbar^{2}\pi^{2}}{2a^{2}m}$. The degeneracy is $2$. The third lowest state corresponds to $E= \frac{\hbar^{2}\pi^{2}}{a^{2}m}$. There is no degeneracy.
+$$E= \frac{\hbar^{2}}{2m}(k_{x}^{2}+k_{y}^{2}),\ k_{i}= \frac{\pi n_{i}}{a},\ n_{i}=1,2,\dots$$
+The first lowest state corresponds to $E= \frac{\hbar^{2}\pi^{2}}{a^{2}m}$. There is no degeneracy. The second lowest state corresponds to $E= \frac{5\hbar^{2}\pi^{2}}{2a^{2}m}$. The degeneracy is $2$. The third lowest state corresponds to $E= \frac{4\hbar^{2}\pi^{2}}{a^{2}m}$. There is no degeneracy.
 ## (b)
 ### (i)
 
-For the first lowest state, we have $n_{x}=n_{y}=0$. For simplicity, we shift the potential, so that $V=0$ in $\left[ - \frac{a}{2}, \frac{a}{2} \right]^{2}$. The eigen energy should be unchanged. Then by parity selection rule we have:
-$$\bra{0,0} xy\ket{0,0} =\bra{0} x\ket{0} \bra{0} y\ket{0} =0$$
-Therefore, we resort to second order perturbation, and the energy shift is of order $\lambda^{2}$ in this case.
-
-For the second lowest state, we have $n_{x}=1,n_{y}=0$ or $n_{x}=0,n_{y}=1$. By parity selection rule, the only non vanishing matrix elements are $\bra{1,0}xy\ket{0,1}$ and its conjugate. It suffices to compute:
+For the first lowest state, we have $n_{x}=1,n_{y}=1$. We need to evaluate:
 $$\begin{align}
-\bra{1} x\ket{0}  & = \frac{2}{a}\int_{- \frac{a}{2}}^{\frac{a}{2}} dx x \cos\left( \frac{\pi}{a}x \right)\sin\left( \frac{2\pi}{a}x \right) \\
- & = \frac{1}{a}\int_{- \frac{a}{2}}^{\frac{a}{2}}dx x\left( \sin\left( \frac{3\pi}{a}x \right)+\sin\left( \frac{\pi}{a}x \right) \right) \\
+\bra{1} x \ket{1}  & = \frac{2}{a}\int_{0}^{a}dx \sin ^{2}\left( \frac{\pi}{a}x \right)x \\
+ & = \frac{2}{a}\int dx \frac{1-\cos\left( \frac{2\pi}{a}x \right)}{2}x \\
+ & = \frac{a}{2}
 \end{align}$$
-We have:
-$$\begin{align}
-\int_{- \frac{a}{2}}^{\frac{a}{2}}dx x \sin\left( \frac{3\pi}{a}x \right) & = \left[ -x\cos\left( \frac{3\pi}{a} x\right) \frac{a}{3\pi}\right]_{- \frac{a}{2}}^{\frac{a}{2}}+ \int dx \cos\left( \frac{3\pi}{a}x \right) \frac{a}{3\pi} \\
- & = -2\left( \frac{a}{3\pi} \right)^{2}  \\
-\int_{- \frac{a}{2}}^{\frac{a}{2}}dx x \sin\left( \frac{\pi}{a}x \right) & =\left[  -x \cos\left( \frac{\pi}{a}x \right) \frac{a}{\pi} \right]_{- \frac{a}{2}}^{\frac{a}{2}}+\int dx \cos\left( \frac{\pi}{a}x \right) \frac{a}{\pi} \\
- & = 2 \left( \frac{a}{\pi} \right)^{2}
-\end{align}$$
-Then:
-$$\bra{1} x\ket{0} = \frac{16}{9} \frac{a}{\pi^{2}}$$
-Similarly, $\bra{0}y\ket{1}= \frac{16}{9} \frac{a}{\pi^{2}}$. Then:
-$$xy \overset{\wedge}{=}\begin{pmatrix}
-0 & \frac{16}{9} \frac{a}{\pi^{2}} \\
-\frac{16}{9} \frac{a}{\pi^{2}} & 0
-\end{pmatrix}$$
-The eigen values are $\pm \frac{16}{9} \frac{a}{\pi^{2}}$. The eigen shifts are $\Delta E= \pm \frac{16}{9} \frac{a}{\pi^{2}}\lambda$, linear in $\lambda$.
+Similarly, $\bra{1}y\ket{1}= \frac{a}{2}$. Then $\bra{1,1}xy\ket{1,1}= \frac{a^{2}}{4}$. The energy shift is given by $\Delta E= \frac{a^{2}}{4}\lambda$.
 
-For the third lowest state, we have $n_{x}=1,n_{y}=1$. By parity selection rule, we have:
-$$\bra{1,1} xy\ket{1,1} =\bra{1} x\ket{1} \bra{1} y\ket{1} =0$$
-Then we resort to second order perturbation, and conclude that the energy shift is quadratic in $\lambda$.
+For the second lowest state, we have $n_{x}=2,\ n_{y}=1$ or $n_{x}=1,\ n_{y}=2$. We have:
+$$\begin{align}
+  \bra{2} x\ket{2}  &   = \frac{2}{a}\int_{0}^{a}dx \sin ^{2}\left( \frac{2\pi}{a}x \right)x  \\
+ & = \frac{a}{2}
+\end{align}$$
+$$\begin{align}
+\bra{1} y\ket{1}  & = \frac{2}{a}\int_{0}^{a}dy \sin ^{2}\left( \frac{\pi}{a}y \right)y \\
+ & = \frac{a}{2}
+\end{align}$$
+Then $\bra{2,1}xy\ket{2,1}= \frac{a^{2}}{4}$. Next we compute:
+$$\begin{align}
+\bra{2} x\ket{1}  & = \frac{2}{a}\int_{0}^{a}dx x \sin\left( \frac{2\pi}{a}x \right)\sin\left( \frac{\pi}{a}x \right)
+\end{align}$$
+Know that $\sin\left( \frac{2\pi}{a}x \right)\sin\left( \frac{\pi}{a}x \right)= - \frac{1}{2}\left[ \cos\left( \frac{3\pi}{a}x \right)-\cos\left( \frac{\pi }{a}x \right) \right]$. It suffices to compute:
+$$\begin{align}
+\int_{0}^{a}dx x \cos\left( \frac{2\pi}{a}x \right) & = \left[  \frac{a}{3\pi}\sin\left( \frac{3\pi}{a}x \right)x \right]_{0}^{a}- \frac{a}{3\pi}\int dx \sin\left( \frac{3\pi}{a}x \right) \\
+ & = -2 \left( \frac{a}{3\pi} \right)^{2} \\
+\int_{0}^{a}dx x \cos\left(  \frac{\pi}{a}x \right) & = \left[  \frac{a}{\pi}\sin\left( \frac{\pi}{a}x \right)x \right]_{0}^{a}- \frac{a}{\pi}\int_{0}^{a}dx \sin\left( \frac{\pi}{a}x \right) \\
+ & = -2\left(  \frac{a}{\pi} \right)^{2}
+\end{align}$$
+So:
+$$\begin{align}
+\bra{2} x\ket{1}  & = \frac{2}{a}\left(  - \frac{1}{2} \right)\left[ -2\left( \frac{a}{3\pi} \right)^{2}+2\left(  \frac{a}{\pi}^{2} \right) \right] \\
+ & = - \frac{16}{9} \frac{a}{\pi^{2}}
+\end{align} $$
+Similarly, $\bra{1}y\ket{2}= - \frac{16}{9} \frac{a}{\pi^{2}}$. Then $\bra{2,1}xy\ket{1,2}= \frac{256}{81} \frac{a^{2}}{\pi^{4}}$. Then:
+$$\begin{align}
+xy \overset{\wedge}{=} \begin{pmatrix}
+\frac{a^{2}}{4} & \frac{256}{81} \frac{a^{2}}{\pi^{4}} \\
+\frac{256}{81} \frac{a^{2}}{\pi^{4}} &  \frac{a^{2}}{4}
+\end{pmatrix}
+\end{align}$$
+The eigen values are $\frac{a^{2}}{4} \pm \frac{256}{81} \frac{a^{2}}{\pi^{4}}$. The energy shifts are $\Delta E= \left( \frac{a^{2}}{4}\pm \frac{256}{81} \frac{a^{2}}{\pi^{4}} \right)\lambda$. The eigen vectors are clearly $\frac{1}{\sqrt{ 2 }}\begin{pmatrix}1 \\ 1\end{pmatrix}= \frac{1}{\sqrt{ 2 }}(\ket{{2},1}+\ket{1,2}),\ \frac{1}{\sqrt{ 2 }}\begin{pmatrix}1 \\ -1\end{pmatrix}= \frac{1}{\sqrt{ 2 }}(\ket{2,1}-\ket{1,2})$. 
+
+For the third lowest state, we have $n_{x}=2,\ n_{y}=2$. We have:
+$$\begin{align}
+  \bra{2} x \ket{2}  & = \frac{2}{a}\int_{0}^{a} dx x \sin ^{2}\left( \frac{2\pi}{a}x \right) \\
+ & = \frac{a}{2} 
+\end{align}$$
+Then $\bra{2,2}xy\ket{2,2}= \frac{a^{2}}{4}$. The energy shift is $\Delta E= \frac{a^{2}}{4}\lambda$.
+
+The energy shifts for these levels are all linear
 ### (ii)
 
-As argued above, if we keep the $\mathcal{O}(\lambda)$ terms, the energy shift for the lowest level is $0$. The energy shift for the second lowest level is $\pm \frac{16}{9} \frac{a}{\pi^{2}}\lambda$. The energy shift for the third lowest level is $0$. 
+As calculated above, if we keep the $\mathcal{O}(\lambda)$ terms, the energy shift for the lowest level is $\frac{a^{2}}{4}\lambda$. The energy shifts for the second lowest level is $\left( \frac{a^{2}}{4}\pm \frac{256}{81} \frac{a^{2}}{\pi^{4}} \right)\lambda$. The energy shift for the third lowest level is $\frac{a^{2}}{4}\lambda$. 
+
 ### (iii)
 
 ![[Drawing 2026-03-23 21.34.08.excalidraw|500]]
@@ -292,23 +318,23 @@ $$\begin{align}
  & = \sqrt{ \frac{2 \eta^{1/4}}{1+\eta^{1/2}} }
 \end{align}$$
 $$\begin{align}
-\bra{0} 2^{'}\rangle & = \int_{\mathbb{R}}dx \left( \frac{m\omega}{\pi} \right)^{1/4}\exp\left( - \frac{m\omega x^{2}}{2} \right) \frac{1}{\sqrt{ 8 }}\left(  \frac{m\omega \sqrt{ \eta }}{\pi} \right)^{1/4}(4m\omega \sqrt{ \eta }x^{2}-1)\exp\left( - \frac{m\omega \sqrt{ \eta }}{2}x^{2} \right) \\
- & = \frac{1}{\sqrt{ 8 }}\left( \frac{m\omega}{\pi} \right)^{1/2}\eta^{1/8}\int dx(4m\sqrt{ \eta }\omega x^{2}-1)\exp\left( -m\omega\left(  \frac{1}{2}+ \frac{\sqrt{ \eta }}{2} \right)x^{2} \right)
+\bra{0} 2^{'}\rangle & = \int_{\mathbb{R}}dx \left( \frac{m\omega}{\pi} \right)^{1/4}\exp\left( - \frac{m\omega x^{2}}{2} \right) \frac{1}{\sqrt{ 8 }}\left(  \frac{m\omega \sqrt{ \eta }}{\pi} \right)^{1/4}(4m\omega \sqrt{ \eta }x^{2}-2)\exp\left( - \frac{m\omega \sqrt{ \eta }}{2}x^{2} \right) \\
+ & = \frac{1}{\sqrt{ 8 }}\left( \frac{m\omega}{\pi} \right)^{1/2}\eta^{1/8}\int dx(4m\sqrt{ \eta }\omega x^{2}-2)\exp\left( -m\omega\left(  \frac{1}{2}+ \frac{\sqrt{ \eta }}{2} \right)x^{2} \right)
 \end{align}$$
 Now it suffices to evaluate:
 $$\begin{align}
-\int_{\mathbb{R}}dx x^{2} e^{-x^{2}} & = \frac{1}{2}\int_{0}^{\infty}d(x^{2}) (x^{2})^{1/2}e^{-x^{2}} \\
- & = \frac{1}{4}\Gamma\left( \frac{3}{2} \right) \\
- & = \frac{\sqrt{ \pi }}{8}
+\int_{\mathbb{R}}dx x^{2} e^{-x^{2}} & = \int_{0}^{\infty}d(x^{2}) (x^{2})^{1/2}e^{-x^{2}} \\
+ & = \Gamma\left( \frac{3}{2} \right) \\
+ & = \frac{\sqrt{ \pi }}{2}
 \end{align}$$
 Then:
 $$\begin{align}
-\bra{0} 2^{'}\rangle & = \frac{1}{\sqrt{ 8 }}\left( \frac{m\omega}{\pi} \right)^{1/2}\eta^{1/8} \left[ 4m\sqrt{ \eta }\omega\left( \frac{1}{m\omega(1+\sqrt{ \eta })/2 } \right)^{3/2} \frac{\sqrt{ \pi }}{8}- \left( \frac{1}{m\omega(1+\sqrt{ \eta }) /2} \right)^{1/2}\sqrt{ \pi }   \right] \\
- & = \left[ \sqrt{ 2 } \sqrt{ \frac{\pi}{m\omega} }\left( \frac{\eta^{1/3}}{1+\eta^{1/2}} \right)^{3/2}- \sqrt{ 2 } \sqrt{ \frac{\pi}{m\omega} }\left( \frac{1}{1+\sqrt{ \eta }} \right)^{1/2} \right] \frac{1}{\sqrt{ 8 }}\left( \frac{m\omega}{\pi} \right)^{1/2}\eta^{1/8} \\
- & = \frac{1}{2}\left( \frac{\eta^{5/12}}{1+\eta^{1/2}} \right)^{3/2}- \frac{1}{2}\left( \frac{\eta^{1/4}}{1+\eta^{1/2}} \right)^{1/2}
+\bra{0} 2^{'}\rangle & = \left( \frac{m\omega}{\pi} \right)^{1/2}(\sqrt{ \eta })^{1/4} \cdot \frac{1}{2\sqrt{ 2 }}\left[ \left( \frac{2}{m\omega(\sqrt{ \eta }+1)} \right)^{3/2}4m \sqrt{ \eta }\omega \frac{\sqrt{ \pi }}{2}- 2 \left( \frac{2}{m\omega(\sqrt{ \eta }+1)} \right)^{1/2}\sqrt{ \pi } \right] \\
+ & = \left( \frac{m\omega}{\pi} \right)^{1/2}(\sqrt{ \eta })^{1/4} \cdot \frac{1}{2\sqrt{ 2 }} \cdot 2\sqrt{ 2 } \left( \frac{\pi}{m\omega} \right)^{1/2} \frac{\sqrt{ \eta }-1}{(\sqrt{ \eta }+1)^{3/2}}  \\
+ & = \frac{\eta^{1/8}(\sqrt{ \eta }-1)}{(\sqrt{ \eta }+1)^{3/2}}
 \end{align}$$
-If we denote $\bra{0}0^{'}\rangle=A,\ \bra{0}2^{'}\rangle=C,\ \frac{1}{2}\sqrt{ \eta }\omega=\omega_{A},\ \frac{3}{2}\sqrt{ \eta }\omega=\omega_{C}$, then $\ket{\psi}=Ae^{-i\omega_{A}t}\ket{0^{'}}+Ce^{-i\omega_{C}t}\ket{2^{'}}$. Know that:
-$$x= \sqrt{ \frac{1}{2m\omega} }(a^{\dagger}+a)\implies x^{2}= \frac{1}{2m\omega}(a^{\dagger{2}}+a^{2}+a^{\dagger}a+aa^{\dagger})$$
+If we denote $\bra{0}0^{'}\rangle=A,\ \bra{0}2^{'}\rangle=C,\ \frac{1}{2}\sqrt{ \eta }\omega=\omega_{A},\ \frac{5}{2}\sqrt{ \eta }\omega=\omega_{C}$, then $\ket{\psi}=Ae^{-i\omega_{A}t}\ket{0^{'}}+Ce^{-i\omega_{C}t}\ket{2^{'}}$. Know that:
+$$x= \sqrt{ \frac{1}{2m\omega \sqrt{ \eta }} }(a^{\dagger}+a)\implies x^{2}= \frac{1}{2m\omega \sqrt{ \eta }}(a^{\dagger{2}}+a^{2}+a^{\dagger}a+aa^{\dagger})$$
 We first compute:
 $$\begin{align}
 \bra{\psi} a^{\dagger 2}   \ket{\psi}  & = (Ae^{i\omega_{A}t}\bra{0^{'}} +Ce^{i\omega_{C}t}\bra{2^{'}}  )a^{\dagger 2}(Ae^{-i\omega_{A}t}\ket{0^{'}} +Ce^{-i\omega_{C}t}\ket{2^{'}} ) \\ & =CA e^{i(\omega_{C}-\omega_{A})t} \bra{2^{'}} a^{\dagger 2}\ket{0^{'}}    \\
@@ -325,17 +351,18 @@ $$\begin{align}
  & = 2C^{2}  
 \end{align}$$
 $$\begin{align}
-\bra{\psi} aa^{\dagger}\ket{\psi}  & = Ae^{i\omega_{A}t}\bra{1^{'}} A e^{-i\omega_{A}t}\ket{1^{'}}  \\
- & = A^{2} 
+\bra{\psi} aa^{\dagger}\ket{\psi}  & = \bra{\psi} (a^{\dagger}a+1)\ket{\psi}  \\
+ & = 2C^{2}+\bra{\psi} \psi\rangle \\
+ & = 3C^{2}+A^{2}
 \end{align}$$
 Then:
 $$\begin{align}
-\bra{\psi} x^{2}\ket{\psi}  & = \frac{1}{2m\omega}(CAe^{i(\omega_{C}-\omega_{A})t}+AC e^{i(\omega_{A}-\omega_{C})t}+2C^{2}+A^{2}) \\
- & = \frac{1}{2m\omega}(2AC\cos((\omega_{A}-\omega_{C})t)+2C^{2}+A^{2})
+\bra{\psi} x^{2}\ket{\psi}  & = \frac{1}{2m\omega \sqrt{ \eta }}(\sqrt{ 2 }CAe^{i(\omega_{C}-\omega_{A})t}+\sqrt{ 2 }AC e^{i(\omega_{A}-\omega_{C})t}+5C^{2}+A^{2}) \\
+ & = \frac{1}{2m\omega \sqrt{ \eta }}(2\sqrt{ 2 }AC\cos((\omega_{A}-\omega_{C})t)+5C^{2}+A^{2})
 \end{align}$$
 If we add back $\hbar$, we get:
 $$\begin{align}
-\bra{\psi} x^{2}\ket{\psi}  & = \frac{\hbar}{2m\omega}(2AC\cos(\sqrt{ \eta }\omega t)+2C^{2}+A^{2})
+\bra{\psi} x^{2}\ket{\psi}  & = \frac{\hbar}{2m\omega \sqrt{ \eta }}(2\sqrt{ 2 }AC\cos(2\sqrt{ \eta }\omega t)+5C^{2}+A^{2})
 \end{align}$$
-where $A=\sqrt{ \frac{2 \eta^{1/4}}{1+\eta^{1/2}} }, C=\frac{1}{2}\left( \frac{\eta^{5/12}}{1+\eta^{1/2}} \right)^{3/2}- \frac{1}{2}\left( \frac{\eta^{1/4}}{1+\eta^{1/2}} \right)^{1/2}$
+where $A=\sqrt{ 2 } \frac{\eta^{1/8}}{(\sqrt{ \eta }+1)^{1/2}} , C=\frac{\eta^{1/8}(\sqrt{ \eta }-1)}{(\sqrt{ \eta }+1)^{3/2}}$.
 
