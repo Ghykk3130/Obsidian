@@ -3,4 +3,6 @@
 - Wigner-Eckart: $\bra{\alpha;j,m}T_{q}^{(k)}\ket{\alpha^{'};j^{'},m^{'}}= \bra{j^{'},k,m^{'},q} j,m\rangle \frac{\bra{\alpha ,j}|T^{(k)}|\ket{\alpha^{'},j^{'}}}{\sqrt{ 2j+1 }}$, projection: $\bra{\alpha^{'},j,m^{'}} V^{(1)}_{q}\ket{\alpha,j,m} = \frac{\bra{\alpha^{'},j,m} \mathbf{J}\cdot \mathbf{V}\ket{\alpha,j,m} }{\hbar^{2}j(j+1)}\bra{\alpha,j,m^{'}} J^{(1)}_{q}\ket{\alpha,j,m}$
 - Lande g factor $g_{J}= 1+ \frac{J(J+1)+S(S+1)-L(L+1)}{2J(J+1)}$ 
 - SHO: $x= \sqrt{ \frac{\hbar}{2m\omega} }(a^{\dagger}+a),\ p=i \sqrt{ \frac{m\hbar \omega}{2} }(a^{\dagger}-a)$
+- Tensor operators: $Y_{l}^m(R\hat{n} )=\sum_{m^{'}}\mathscr{D}^{(l)*}_{mm^{'}}Y_{l}^{m^{'}}(\hat{n})$,   $\cos \theta\leadsto \sqrt{ \frac{4\pi}{2l+1} } T_{z},\ \sin \theta e^{\pm i\phi}\leadsto \sqrt{ \frac{4\pi}{2l+1} }(T_{x}\pm iT_{y})$. For rank-1: $T^{(1)}_{\pm 1}= \mp \frac{T_{x}\pm T_{y}}{\sqrt{ 2 }},\ T^{(1)}_{0}=T_{z}$
+- 
 
