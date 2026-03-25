@@ -1441,12 +1441,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Homework/Physics 512/Physics 512 cheat sheet 2.md",
+                "file": "Notes/Stationary perturbation.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Physics 512 cheat sheet 2"
+              "title": "Stationary perturbation"
             }
           }
         ],
@@ -1502,7 +1502,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "drude",
+                "query": "微扰",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -1513,11 +1513,13 @@
               "title": "Search"
             }
           }
-        ]
+        ],
+        "currentTab": 3
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 200,
+    "collapsed": true
   },
   "right": {
     "id": "9003d078f8dbc4ed",
@@ -1620,8 +1622,9 @@
   },
   "active": "e4552260c710b608",
   "lastOpenFiles": [
-    "Homework/Physics 512/Physics 512 cheat sheet.md",
+    "Notes/Lamour进动.md",
     "Homework/Physics 512/Physics 512 cheat sheet 2.md",
+    "Homework/Physics 512/Physics 512 cheat sheet.md",
     "Homework/Physics 512/Physics 512 homework 4.md",
     "Notes/多电子原子精细结构.md",
     "Notes/Fermi-Dirac statistics 与 Fermi gas.md",
@@ -1645,7 +1648,6 @@
     "Notes/Berry phase.md",
     "Notes/AB效应.md",
     "Notes/输运.md",
-    "Notes/量子统计力学基础.md",
     "Pictures/Pasted image 20260314131900.png",
     "Pictures/9eafeee1db7f4d13ddef893c34b80595.jpg",
     "Pictures/e53ff20bfefc26ceffbe66c872537c62.jpg",
