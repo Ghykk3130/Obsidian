@@ -1441,12 +1441,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Notes/Stationary perturbation.md",
+                "file": "Homework/Physics 512/Physics 512 cheat sheet 2.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Stationary perturbation"
+              "title": "Physics 512 cheat sheet 2"
             }
           }
         ],
@@ -1513,13 +1513,11 @@
               "title": "Search"
             }
           }
-        ],
-        "currentTab": 3
+        ]
       }
     ],
     "direction": "horizontal",
-    "width": 200,
-    "collapsed": true
+    "width": 200
   },
   "right": {
     "id": "9003d078f8dbc4ed",
@@ -1622,8 +1620,9 @@
   },
   "active": "e4552260c710b608",
   "lastOpenFiles": [
-    "Notes/Lamour进动.md",
+    "Notes/Stationary perturbation.md",
     "Homework/Physics 512/Physics 512 cheat sheet 2.md",
+    "Notes/Lamour进动.md",
     "Homework/Physics 512/Physics 512 cheat sheet.md",
     "Homework/Physics 512/Physics 512 homework 4.md",
     "Notes/多电子原子精细结构.md",
@@ -1647,7 +1646,6 @@
     "Notes/群论.md",
     "Notes/Berry phase.md",
     "Notes/AB效应.md",
-    "Notes/输运.md",
     "Pictures/Pasted image 20260314131900.png",
     "Pictures/9eafeee1db7f4d13ddef893c34b80595.jpg",
     "Pictures/e53ff20bfefc26ceffbe66c872537c62.jpg",
