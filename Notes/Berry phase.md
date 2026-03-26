@@ -107,7 +107,8 @@ $$\begin{align}
 \end{align}$$
 对于$n$，我们有：
 $$\frac{\partial c_{n}}{\partial t}=-c_{n}\bra{n}  \partial_{t}n\rangle\implies c_{n}= \exp\left( - \int_{0}^{t}dt^{'}\bra{n} \partial_{t} n\rangle \right)$$
-
+最后结果为：
+$$\ket{\psi} =e^{i\gamma_{n}}e^{id_{n}}\ket{n} - i\hbar \sum_{m\neq n} e^{id_{n}} \frac{\bra{m} \partial_{t}n\rangle}{E_{n}-E_{m}}\ket{m} $$
 
 
 
