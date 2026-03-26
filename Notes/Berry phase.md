@@ -76,6 +76,47 @@ $$\begin{align}
 >[!Right]
 >$\blacksquare$
 
+
+
+
+
+假设hamiltonian是含时的，则每一瞬间可以写下方程：
+$$H(t)\ket{n(t)} =E_{n}(t)\ket{n(t)} $$
+称$\ket{n(t)}$为instantaneous ket。
+
+令$\ket{\psi(t)}$为系统的态。我们知道若$H(t)$不含时，$\ket{\psi(t)}$在instantaneous ket上的投影应该出现一个phase $d_{n}(t)=- \frac{1}{\hbar}\int_{0}^{t}dt^{'}E_{n}(t^{'})$。我们将这个phase分离出来：
+$$\ket{\psi(t)} =\sum_{n}c_{n}(t) e^{id_{n}(t)} \ket{n(t)} $$
+为了解得$c_{n}$，我们考虑：
+$$\begin{align}
+ & i\hbar \partial_{t} \ket{\psi(t)} =H(t)\ket{\psi(t)}  \\
+\implies & i\hbar \sum_{n} \frac{\partial c_{n}}{\partial t}e^{id_{n}}\ket{n} + \sum_{n}c_{n}e^{id_{n}}E_{n}\ket{n} + i\hbar \sum_{n} c_{n}e^{id_{n}}\ket{\frac{\partial}{\partial t}n} =H\ket{\psi}  \\
+\implies & \sum_{n} \frac{\partial c_{n}}{\partial t}e^{id_{n}}\ket{n} +\sum_{n}c_{n}e^{id_{n}}\ket{\frac{\partial}{\partial t}n} =0 \\
+\implies & \frac{\partial c_{n}}{\partial t}=-\sum_{n^{'}}c_{n^{'}}e^{i(d_{n^{'}}-d_{n})}\bra{n}  \frac{\partial}{\partial t}n^{'}\rangle
+\end{align}$$
+我们接下来将方程解耦。注意到若$m\neq n$，我们有：
+$$\begin{align}
+ & H(t)\ket{n(t)} =E_{n}(t)\ket{n(t)}  \\
+\implies & \frac{\partial H}{\partial t}\ket{n} +H\ket{\frac{\partial}{\partial t }n}= \frac{\partial E_{n}}{\partial t}\ket{n} +E_{n }\ket{\frac{\partial}{\partial t}n} \\
+\implies & \bra{m}  \frac{\partial H}{\partial t}\ket{n} =(E_{n}-E_{m})\bra{m}  \frac{\partial}{\partial t}n\rangle  
+\end{align}$$
+故：
+$$\frac{\partial c_{n}}{\partial t}=-c_{n}\bra{n} \frac{\partial}{\partial t}n\rangle-\sum_{m\neq n}c_{m} e^{i(d_{m}-d_{n})}  \frac{\bra{n} \partial H /\partial t\ket{m} }{E_{m}-E_{n}} $$
+若系统最开始处于$\ket{n(0)}$中，忽略$\frac{\bra{n}\partial H / \partial t \ket{m}}{E_{m}-E_{n}}项，那么对于$$m\neq n$，我们有：
+$$\begin{align}
+\frac{\partial c_{m}}{\partial t} & = -c_{m} \bra{m}  \frac{\partial}{\partial t}m\rangle\implies c_{m}=0
+\end{align}$$
+对于$n$，我们有：
+$$\frac{\partial c_{n}}{\partial t}=-c_{n}\bra{n}  \partial_{t}n\rangle\implies c_{n}= \exp\left( - \int_{0}^{t}dt^{'}\bra{n} \partial_{t} n\rangle \right)$$
+
+
+
+
+
+
+
+
+
+
 还可以有另一种形式：
 
 >[!Note] Proposition 2

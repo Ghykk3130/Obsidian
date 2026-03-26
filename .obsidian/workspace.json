@@ -1441,12 +1441,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Homework/Physics 512/Physics 512 cheat sheet 2.md",
+                "file": "Notes/Berry phase.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Physics 512 cheat sheet 2"
+              "title": "Berry phase"
             }
           }
         ],
@@ -1517,7 +1517,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 200,
+    "collapsed": true
   },
   "right": {
     "id": "9003d078f8dbc4ed",
@@ -1620,10 +1621,11 @@
   },
   "active": "e4552260c710b608",
   "lastOpenFiles": [
+    "Homework/Physics 512/Physics 512 homework 5.md",
     "Homework/Physics 512/Physics 512 homework 4.md",
+    "Homework/Physics 512/Physics 512 cheat sheet 2.md",
     "Homework/Physics 512/Physics 512 homework 3.md",
     "Homework/Physics 512/Physics 512 homework 2.md",
-    "Homework/Physics 512/Physics 512 cheat sheet 2.md",
     "Notes/Berry phase.md",
     "Notes/Blasius定理，Chaplygin定理.md",
     "Homework/Physics 512/Physics 512 homework 1.md",
@@ -1639,7 +1641,6 @@
     "Notes/Zeeman效应.md",
     "Notes/氢原子精细结构.md",
     "Homework/Physics 512/Untitled.md",
-    "Homework/Physics 512/Physics 512 homework 5.md",
     "Excalidraw/Drawing 2026-03-23 21.34.08.excalidraw.md",
     "Homework/Physics 463/Physics 463 homework 6.md",
     "Notes/Solid state.md",
