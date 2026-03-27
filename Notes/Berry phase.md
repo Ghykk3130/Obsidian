@@ -75,6 +75,8 @@ $$\ket{\psi} =e^{i\gamma_{n}}e^{id_{n}}\ket{n} -i\hbar e^{i\gamma_{n}}e^{id_{n}}
 >The first order corrected $\ket{n}$ is:
 >$$\ket{\psi} =e^{i\gamma_{n}}e^{id_{n}}\left( \ket{n} - i\hbar \sum_{m\neq n} \frac{\ket{m} \bra{m} \partial_{t}n\rangle}{E_{n}-E_{m}} \right)$$
 
+^291c90
+
 # 2. Berry phase
 
 假设所有的time dependence都来源于参数$\mathbf{R}(t)$。假设$\mathbf{R}$在参数空间中作周期运动。那么一个周期累积的Berry phase为：
