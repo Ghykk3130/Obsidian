@@ -30,7 +30,7 @@ $$\gamma_{n}=i \int_{0}^{t} dt^{'} \bra{n}  \frac{\partial }{\partial t^{'}}n\ra
 于是：
 $$\ket{\psi(t)} =\sum_{n}e^{id_{n}(t)}e^{i\gamma_{n}(t)}c_{n}(0)\ket{n(t)} $$
 >[!Success] Proposition 1.1
->Under adiabatic approximation, we have:
+>Under adiabatic approximation, the zeroth order corrected $\ket{n}$ is:
 >$$\ket{\psi(t)} = \sum_{n}e^{id_{n}(t)}e^{i\gamma_{n}(t)}c_{n}(0)\ket{n(t)}  $$
 >where $d_{n}(t)=- \frac{1}{\hbar}\int_{0}^{t}dt^{'}E_{n}(t^{'})$ is the dynamic phase, $\gamma_{n}(t)=i \int_{0}^{t}dt^{'}\bra{n {}} \frac{\partial}{\partial t^{'}}n\rangle$ is the Berry phase.
 
@@ -48,6 +48,32 @@ $$\begin{align}
  & = i \left( - \frac{i}{\hbar}E_{n} \right)\int_{0}^t dt^{'}= \frac{1}{\hbar}E_{n}t
 \end{align}$$
 所以若一开始位于$\ket{\psi,0}=\ket{n,0}$，那么之后就有$\ket{\psi,t}=\ket{n,t}$。
+
+当然，上面仅仅是针对小量$\frac{\bra{n}\partial H / \partial t \ket{m}}{E_{m}-E_{n}}$的零阶近似。我们还可以获得一阶近似。我们知道在保留零阶项时，$c_{n}$的演化为：
+$$\frac{\partial c_{n}}{\partial t}=-c_{n} \bra{n} \partial_{t}n\rangle\implies c_{n}=e^{i\gamma_{n}}$$
+对于$m\neq n$的项，我们有：
+$$\begin{align}
+\frac{\partial c_{m}}{\partial t}=-c_{m}\bra{m} \partial_{t}m\rangle \implies c_{m}=c_{m}(0)\exp\left( - \int_{0}^{t}dt^{'}\bra{m} \partial_{t^{'}}m\rangle \right)=0\text{ since }c_{m}(0)=0
+\end{align}$$
+我们将$c_{m}$的微分方程保留到一阶，并在RHS代入这个解：
+$$\begin{align}
+ & \frac{\partial c_{m}}{\partial t}=-c_{m}\bra{n} \partial_{t}n\rangle - \sum_{l\neq m} c_{l}e^{i(d_{l}-d_{m})}\bra{m} \partial_{t}l\rangle \\
+ \implies&  \frac{\partial c_{m}}{\partial t}=-c_{n}e^{i(d_{n}-d_{m})}\bra{m} \partial_{t}n\rangle
+\end{align}$$
+积分得到：
+$$\begin{align}
+c_{m} & = -\int_{0}^{t}dt^{'}c_{n}(t^{'}) e^{i(d_{n}(t^{'})-d_{m}(t^{'}))} \bra{m}  \partial_{t^{'}}n\rangle +c_{m}(0)\\
+ & = -\int dt^{'} c_{n} \frac{1}{i(  \dot{d}_{n}-  \dot{d}_{m}) }  \frac{\partial}{\partial t^{'}} e^{i(d_{n}-d_{m})} \bra{m} \partial_{t^{'}}n\rangle = -i\hbar\int dt^{'}c_{n} \frac{1}{E_{n}-E_{m}} \frac{\partial}{\partial t^{'}}e^{i(d_{n}-d_{m})} \bra{m} \partial _{t^{'}}n\rangle \\
+ & = -i\hbar\left[  c_{n} \frac{e^{i(d_{n}-d_{m})}}{E_{n}-E_{m}}\bra{m} \partial_{t}n\rangle \right]_{0}^{t}+i\hbar \int dt^{'} \frac{\partial}{\partial t^{'}}\left( c_{n} \frac{1}{E_{n}-E_{m}}\bra{m} \partial_{t^{'}}n\rangle \right)e^{i(d_{n}-d_{m})} \\
+ & \approx -i\hbar\left[  c_{n} \frac{e^{i(d_{n}-d_{m})}}{E_{n}-E_{m}}\bra{m} \partial_{t}n\rangle \right]_{0}^{t}
+\end{align}$$
+我们在第一步代入$c_{m}(0)=0$。倒数第二行到倒数第一行是因为后一项是小量的导数，更小，直接忽略。我们假设在$t=0$时刻，hamiltonian开始从静止极慢地开启，那么$t=0$时刻$\bra{m}\partial_{t}n\rangle=0$。最终得到：
+$$c_{m}=-i\hbar c_{n} \frac{e^{i(d_{n}-d_{m})}}{E_{n}-E_{m}}\bra{m} \partial_{t}n\rangle=-i\hbar e^{i\gamma_{n}} \frac{e^{i(d_{n}-d_{m})}}{E_{n}-E_{m}} \bra{m} \partial_{t}n\rangle$$
+所以一阶修正后的态为：
+$$\ket{\psi} =e^{i\gamma_{n}}e^{id_{n}}\ket{n} -i\hbar e^{i\gamma_{n}}e^{id_{n}}\sum_{m\neq n}  \frac{\ket{m} \bra{m} \partial_{t}n\rangle}{E_{n}-E_{m}} $$
+>[!Success] Proposition 1.2
+>The first order corrected $\ket{n}$ is:
+>$$\ket{\psi} =e^{i\gamma_{n}}e^{id_{n}}\left( \ket{n} - i\hbar \sum_{m\neq n} \frac{\ket{m} \bra{m} \partial_{t}n\rangle}{E_{n}-E_{m}} \right)$$
 
 # 2. Berry phase
 
