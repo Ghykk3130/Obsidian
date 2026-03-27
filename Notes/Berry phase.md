@@ -89,7 +89,7 @@ Berry curvature具有规范自由度。注意到$\mathbf{A}_{n}\leadsto \mathbf{
 $$\ket{n(\mathbf{R})} \leadsto e^{-if(\mathbf{R})}\ket{n(\mathbf{R})} $$
 Berry curvature可以进一步写开：
 
->[!Note] Proposition 1
+>[!Success] Proposition 1
 >$$\boldsymbol{\Omega}_{n}=i\bra{\frac{\partial}{\partial \mathbf{R}}n} \times \ket{\frac{\partial}{\partial \mathbf{R}}n}  $$
 ## Proof.
 
@@ -101,80 +101,7 @@ $$\begin{align}
 注意到第二项实际上是$(i \bra{n} \nabla \times \ket{\nabla n})_{i}=0$。所以只剩下第一项。
 >[!Right]
 >$\blacksquare$
-
-
-
-
-
-假设hamiltonian是含时的，则每一瞬间可以写下方程：
-$$H(t)\ket{n(t)} =E_{n}(t)\ket{n(t)} $$
-称$\ket{n(t)}$为instantaneous ket。
-
-令$\ket{\psi(t)}$为系统的态。我们知道若$H(t)$不含时，$\ket{\psi(t)}$在instantaneous ket上的投影应该出现一个phase $d_{n}(t)=- \frac{1}{\hbar}\int_{0}^{t}dt^{'}E_{n}(t^{'})$。我们将这个phase分离出来：
-$$\ket{\psi(t)} =\sum_{n}c_{n}(t) e^{id_{n}(t)} \ket{n(t)} $$
-为了解得$c_{n}$，我们考虑：
-$$\begin{align}
- & i\hbar \partial_{t} \ket{\psi(t)} =H(t)\ket{\psi(t)}  \\
-\implies & i\hbar \sum_{n} \frac{\partial c_{n}}{\partial t}e^{id_{n}}\ket{n} + \sum_{n}c_{n}e^{id_{n}}E_{n}\ket{n} + i\hbar \sum_{n} c_{n}e^{id_{n}}\ket{\frac{\partial}{\partial t}n} =H\ket{\psi}  \\
-\implies & \sum_{n} \frac{\partial c_{n}}{\partial t}e^{id_{n}}\ket{n} +\sum_{n}c_{n}e^{id_{n}}\ket{\frac{\partial}{\partial t}n} =0 \\
-\implies & \frac{\partial c_{n}}{\partial t}=-\sum_{n^{'}}c_{n^{'}}e^{i(d_{n^{'}}-d_{n})}\bra{n}  \frac{\partial}{\partial t}n^{'}\rangle
-\end{align}$$
-我们接下来将方程解耦。注意到若$m\neq n$，我们有：
-$$\begin{align}
- & H(t)\ket{n(t)} =E_{n}(t)\ket{n(t)}  \\
-\implies & \frac{\partial H}{\partial t}\ket{n} +H\ket{\frac{\partial}{\partial t }n}= \frac{\partial E_{n}}{\partial t}\ket{n} +E_{n }\ket{\frac{\partial}{\partial t}n} \\
-\implies & \bra{m}  \frac{\partial H}{\partial t}\ket{n} =(E_{n}-E_{m})\bra{m}  \frac{\partial}{\partial t}n\rangle  
-\end{align}$$
-故：
-$$\frac{\partial c_{n}}{\partial t}=-c_{n}\bra{n} \frac{\partial}{\partial t}n\rangle-\sum_{m\neq n}c_{m} e^{i(d_{m}-d_{n})}  \frac{\bra{n} \partial H /\partial t\ket{m} }{E_{m}-E_{n}} $$
-若系统最开始处于$\ket{n(0)}$中，忽略$\frac{\bra{n}\partial H / \partial t \ket{m}}{E_{m}-E_{n}}项，那么对于$$m\neq n$，我们有：
-$$\begin{align}
-\frac{\partial c_{m}}{\partial t} & = -c_{m} \bra{m}  \frac{\partial}{\partial t}m\rangle\implies c_{m}=0
-\end{align}$$
-对于$n$，我们有：
-$$\frac{\partial c_{n}}{\partial t}=-c_{n}\bra{n}  \partial_{t}n\rangle\implies c_{n}= \exp\left( - \int_{0}^{t}dt^{'}\bra{n} \partial_{t} n\rangle \right)$$
-最后结果为：
-$$\ket{\psi} =e^{i\gamma_{n}}e^{id_{n}}\ket{n} - i\hbar \sum_{m\neq n} e^{id_{n}} \frac{\bra{m} \partial_{t}n\rangle}{E_{n}-E_{m}}\ket{m} $$
-
-
-
-
-
-
-
-
-
-还可以有另一种形式：
-
->[!Note] Proposition 2
->$$\vec{B}_{n}= i \sum_{m\neq n}  \frac{\bra{n,t}  \partial H / \partial \vec{R}\ket{m,t} \times \bra{m,t}  \partial H / \partial \vec{R} \ket{n,t} }{(E_{m}-E_{n})^{2}}$$
-## Proof.
-$$\begin{align}
-\vec{B}_{n} & = i \left(  \frac{\partial}{\partial \vec{R}}\ket{n,t}  \right)^{\dagger}\times \frac{\partial}{\partial \vec{R}}\ket{n,t}  \\
- & = i\sum_{m}\left(  \frac{\partial}{\partial \vec{R}}\ket{n,t}  \right)^{\dagger} \ket{m,t} \bra{m,t} \times \frac{\partial}{\partial \vec{R}}\ket{n,t}  \\
- & = i\sum_{m}\left( \bra{m,t}  \frac{\partial}{\partial \vec{R}}\ket{n,t}  \right)^{\dagger}\times \bra{m,t}  \frac{\partial}{\partial \vec{R}}\ket{n,t} 
-\end{align}$$
-我们有：
-$$\bra{n,t}  \frac{\partial}{\partial \vec{t}}\ket{n,t}= \dot{\vec{R}}\cdot \bra{n,t}  \frac{\partial}{\partial \vec{R}}\ket{n,t}  \text{ is imaginary}$$
-所以$\bra{n,t} \frac{\partial}{\partial \vec{R}}\ket{n,t}$是虚数域上的欧氏空间矢量。所以：
-$$\begin{align}
-\left( \bra{n,t}  \frac{\partial}{\partial \vec{R}}\ket{n,t}  \right)^{\dagger}\times \bra{n,t}  \frac{\partial}{\partial \vec{R}}\ket{n,t}  & = -\bra{n,t}  \frac{\partial}{\partial \vec{R}} \ket{n,t} \times \bra{n,t}  \frac{\partial}{\partial \vec{R}}\ket{n,t} =0
-\end{align}$$
-故：
-$$\begin{align}
-\vec{B}_{n} & = i \sum_{m\neq n } \left( \bra{m,t}  \frac{\partial}{\partial \vec{R}}\ket{n,t}  \right)^{\dagger}\times \bra{m,t}  \frac{\partial}{\partial \vec{R}}\ket{n,t}
-\end{align}$$
-回忆起：
-$$\begin{align}
- &  \bra{m,t}  \frac{\partial}{\partial t} \ket{n,t} = \frac{\bra{m,t}  \dot{H}\ket{n,t} }{E_{n}-E_{m}} \\
-\implies & \dot{\vec{R}}\cdot \bra{m,t}  \frac{\partial}{\partial \vec{R}}\ket{n,t} = \dot{\vec{R}}\cdot \frac{\bra{m,t}  \partial H / \partial \vec{R}\ket{n,t} }{E_{n}-E_{m}},\ \forall \vec{R} \\
-\implies &  \bra{m,t}  \frac{\partial}{\partial \vec{R}}\ket{n,t} =  \frac{\bra{m,t}  \partial H / \partial \vec{R}\ket{n,t} }{E_{n}-E_{m}}
-\end{align}$$
-Then done.
->[!Right]
->$\blacksquare$
-
-# 3. 磁场中的Spin-1/2粒子
+## Ex:
 
 考虑一个spin-1/2粒子。施加磁场$\vec{R}$。想要计算Berry phase。我们有：
 $$H=- g \frac{e}{2m}\vec{S}\cdot \vec{R}=- \frac{e}{m}\vec{S}\cdot \vec{R}$$
