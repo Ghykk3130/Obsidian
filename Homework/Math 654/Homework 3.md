@@ -126,7 +126,71 @@ F & = \int_{\mathbb{R}}dy\left( - \frac{\rho \Gamma^{2}d^{2}}{2\pi^{2}(y^{2}+d^{
  & = - \frac{\rho \Gamma^{2}d^{2}}{2\pi^{2}} \frac{\pi}{2d^{3}} \\
  & = - \frac{\rho \Gamma^{2}}{4\pi d}
 \end{align}$$
+# Acheson 5.16
 
+It suffices to evaluate $\frac{D}{Dt}(\mathbf{u}\cdot \boldsymbol{\omega})= \frac{D\mathbf{u}}{Dt}\cdot \boldsymbol{\omega}+ \mathbf{u}\cdot \frac{D\boldsymbol{\omega}}{Dt}$. We have:
+$$\begin{align}
+\frac{D\mathbf{u}}{Dt} & = - \nabla\left(  \frac{p}{\rho}+\chi \right)
+\end{align}$$
+Then:
+$$\begin{align}
+\frac{D\mathbf{u}}{Dt}\cdot \boldsymbol{\omega} &  = - \boldsymbol{\omega}\cdot \nabla\left(  \frac{p}{\rho}+\chi \right)  \\
+ & = -\nabla \cdot\left( \boldsymbol{\omega}\cdot\left( \frac{p}{\rho}+\chi \right) \right)+\left( \frac{p}{\rho}+\chi \right)\nabla \cdot \boldsymbol{\omega} \\
+ & = -\nabla \cdot\left( \boldsymbol{\omega}\cdot\left( \frac{p}{\rho}+\chi \right) \right)
+\end{align}$$
+We also have the vorticity equation:
+$$\begin{align}
+\frac{D\boldsymbol{\omega}}{Dt}=\boldsymbol{\omega}\cdot \nabla \mathbf{u}
+\end{align}$$
+Then:
+$$\begin{align}
+\mathbf{u}\cdot \frac{D\boldsymbol{\omega}}{Dt} & = \mathbf{u}\cdot(\boldsymbol{\omega}\cdot \nabla \mathbf{u}) \\
+ & = u_{i}\omega_{j} (\partial_{j}u_{i}) \\
+ & = \omega_{j} \partial_{j}\left( \frac{1}{2}u_{i}^{2} \right) \\
+ & = \boldsymbol{\omega}\cdot \nabla\left( \frac{1}{2}|\mathbf{u}|^{2} \right) \\
+ & = \nabla \cdot\left( \frac{1}{2}|\mathbf{u}|^{2}\boldsymbol{\omega} \right)- \frac{1}{2}|\mathbf{u}|^{2} \nabla \cdot \boldsymbol{\omega} \\
+ & = \nabla \cdot\left( \frac{1}{2}|\mathbf{u}|^{2}\boldsymbol{\omega} \right)
+\end{align}$$
+Then:
+$$\begin{align}
+\frac{d}{dt}\int_{V} dV \boldsymbol{\omega}\cdot \mathbf{u} &  = \int_{V} dV\left( -\nabla \cdot\left(\left( \frac{p}{\rho}+\chi \right)\boldsymbol{\omega}\right) +\nabla \cdot\left( \frac{1}{2}|\mathbf{u}|^{2}\boldsymbol{\omega} \right)\right) \\
+ & = \int dV \nabla \cdot\left[ \left( \frac{1}{2}|\mathbf{u}|^{2}- \frac{p}{\rho}-\chi \right)\boldsymbol{\omega} \right] \\
+ & = \int_{\partial V}dS  \hat{\mathbf{n}}\cdot \boldsymbol{\omega}\left( \frac{1}{2}|\mathbf{u}|^{2}- \frac{p}{\rho}-\chi \right) \\
+ & =0
+\end{align}$$
+The helicity is clearly conserved.
+# Acheson 5.25
 
+Say $\mathbf{u}$ is the irrotational velocity field satisfying the conditions given in the problem. $\mathbf{u}^{'}$ is another velocity field satisfying those conditions, but not necessarily irrotational. It suffices to show that $\int_{V}dV \frac{1}{2}|\mathbf{u}^{'}|^{2}- \int_{V}dV \frac{1}{2}|\mathbf{u}|^{2}\geq 0$
 
+Set $\mathbf{w}=\mathbf{u}^{'}-\mathbf{u}$. Then:
+$$\begin{align}
+\int_{V}dV \frac{1}{2}|\mathbf{u}^{'}|^{2}- \int_{V}dV \frac{1}{2}|\mathbf{u}|^{2} &  = \int dV \frac{1}{2}|\mathbf{u}+\mathbf{w} |^{2}- \int dV \frac{1}{2}|\mathbf{u}|^{2} \\
+ & = \frac{1}{2}\int_{}dV |\mathbf{w}|^{2}+ \int dV \mathbf{u}\cdot \mathbf{w}
+\end{align}$$
+Assume that $\mathbf{u}=\nabla \phi$. Then:
+$$\begin{align}
+\int dV\mathbf{u}\cdot \mathbf{w} & = \int dV \nabla \phi \cdot \mathbf{w} \\
+ & = \int dV[\nabla \cdot(\phi \boldsymbol{\omega})-\phi \nabla \cdot \boldsymbol{\omega}]
+\end{align}$$
+Know that:
+$$\nabla \cdot \boldsymbol{\omega}=\nabla \cdot \mathbf{u}^{'}-\nabla \cdot \mathbf{u}=0$$
+Then:
+$$\begin{align}
+\int dV \mathbf{u}\cdot \mathbf{w} & = \int dV \nabla \cdot(\phi \boldsymbol{\omega}) \\
+ & = \int_{\partial V}dS  \hat{\mathbf{n}}\cdot \phi \boldsymbol{\omega}
+\end{align}$$
+On the boundary, we have:
+$$\begin{align}
+\hat{\mathbf{n}}\cdot \boldsymbol{\omega} & = \hat{\mathbf{n}}\cdot \mathbf{u}^{'}-  \hat{\mathbf{n}}\cdot \mathbf{u} \\
+ & = f(\mathbf{x},t)-f(\mathbf{x},t) \\
+ & =0
+\end{align}$$
+Therefore:
+$$\int dV \mathbf{u}\cdot \mathbf{w}=0$$
+So:
+$$\begin{align}
+\int_{V}dV \frac{1}{2}|\mathbf{u}^{'}|^{2}- \int_{V}dV \frac{1}{2}|\mathbf{u}|^{2} 
+ & = \frac{1}{2}\int_{}dV |\mathbf{w}|^{2}\geq 0
+\end{align}$$
 
