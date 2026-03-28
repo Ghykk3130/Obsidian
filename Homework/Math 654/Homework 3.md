@@ -48,3 +48,9 @@ $$\begin{align}
  & = \int_{C(t)}d\mathbf{x}\cdot\left( \frac{\partial \mathbf{a}}{\partial t}+(\nabla \times \mathbf{a})\times \mathbf{u} \right)
 \end{align}$$
 The last step is because $\int d\mathbf{x}\cdot \nabla(\mathbf{u}\cdot \mathbf{a})= [\mathbf{u}\cdot \mathbf{a}]_{i}^{f}=0$ on any loop. 
+# Acheson 5.10
+
+We know that the complex potential for the vortex at $(d,y_{0})$ is $- \frac{i\Gamma}{2\pi}\ln(z-d-iy_{0})$. Know that the boundary condition is such that the flow cannot penetrate $x=0$. Then by method of image, if we put a line vortex with opposite vorticity at $(-d,y_{0})$, and remove the wall $x=0$, because of the symmetry of the problem, there is no flow penetrating $x=0$. Then the boundary condition is automatically satisfied. The Laplace equation in $x\geq 0$ is still satisfied since the line vortex we constructed is in $x<0$. Then we claim that:
+$$w(z)= - \frac{i\Gamma}{2\pi}\ln(z-d-iy_{0})+ \frac{i\Gamma}{2\pi}\ln(z+d-iy_{0})$$
+is a solution to the problem. By uniqueness theorem, this is the only solution.
+

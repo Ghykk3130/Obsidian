@@ -1553,12 +1553,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Homework/Math 654/Homework 3 problems.md",
+                "file": "Homework/Math 654/Homework 3.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Homework 3 problems"
+              "title": "Homework 3"
             }
           }
         ],
@@ -1614,7 +1614,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "微扰",
+                "query": "流函数",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -1629,8 +1629,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200,
-    "collapsed": true
+    "width": 200
   },
   "right": {
     "id": "9003d078f8dbc4ed",
@@ -1733,12 +1732,13 @@
   },
   "active": "b6a796024f298fac",
   "lastOpenFiles": [
+    "Homework/Math 654/Homework 3 problems.md",
+    "Homework/Math 654/Homework 3.md",
+    "Notes/Blasius定理，Chaplygin定理.md",
+    "Homework/Math 654/Homework 2.md",
     "Pictures/Pasted image 20260328144217.png",
     "Pictures/Pasted image 20260328144152.png",
     "Homework/Math 654/Untitled.md",
-    "Homework/Math 654/Homework 3.md",
-    "Homework/Math 654/Homework 3 problems.md",
-    "Homework/Math 654/Homework 2.md",
     "Notes/代数拓扑基本概念.md",
     "Excalidraw/Drawing 2026-03-27 19.37.41.excalidraw.md",
     "Pictures/Pasted image 20260328130029.png",
@@ -1755,7 +1755,6 @@
     "Notes/微分几何基础概念.md",
     "Notes/半经典运动方程.md",
     "Notes/Berry phase.md",
-    "Notes/Blasius定理，Chaplygin定理.md",
     "Homework/Physics 512/Physics 512 homework 4.md",
     "Homework/Physics 512/Physics 512 cheat sheet 2.md",
     "Homework/Physics 512/Physics 512 homework 3.md",
@@ -1769,7 +1768,6 @@
     "Pictures/Pasted image 20260311223122.png",
     "Pictures/Pasted image 20260311213144.png",
     "Homework/Math 654/Homework 2.html",
-    "Pictures/Pasted image 20260309014952.png",
     "tldraw",
     "Excalidraw/Scripts/Downloaded",
     "Excalidraw/Scripts",
