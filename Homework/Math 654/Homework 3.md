@@ -50,7 +50,7 @@ $$\begin{align}
 The last step is because $\int d\mathbf{x}\cdot \nabla(\mathbf{u}\cdot \mathbf{a})= [\mathbf{u}\cdot \mathbf{a}]_{i}^{f}=0$ on any loop. 
 # Acheson 5.10
 
-We know that the complex potential for the vortex at $(d,y_{0})$ is $- \frac{i\Gamma}{2\pi}\ln(z-d-iy_{0})$. Know that the boundary condition is such that the flow cannot penetrate $x=0$. Then by method of image, if we put a line vortex with opposite vorticity at $(-d,y_{0})$, and remove the wall $x=0$, because of the symmetry of the problem, there is no flow penetrating $x=0$. Then the boundary condition is automatically satisfied. The Laplace equation in $x\geq 0$ is still satisfied since the line vortex we constructed is in $x<0$. Then we claim that:
+We know that the complex potential for the vortex at $(d,y_{0})$ is $- \frac{i\Gamma}{2\pi}\ln(z-d-iy_{0})$. Know that the boundary condition is such that the flow cannot penetrate $x=0$. Then by method of image, if we put a line vortex with opposite circulation at $(-d,y_{0})$, and remove the wall $x=0$, because of the symmetry of the problem, there is no flow penetrating $x=0$. Then the boundary condition is automatically satisfied. The Laplace equation in $x\geq 0$ is still satisfied since the line vortex we constructed is in $x<0$. Then we claim that:
 $$w(z)= - \frac{i\Gamma}{2\pi}\ln(z-d-iy_{0})+ \frac{i\Gamma}{2\pi}\ln(z+d-iy_{0})$$
 is a solution to the problem. By uniqueness theorem, this is the only solution.
 
@@ -61,6 +61,72 @@ w & = - \frac{i\Gamma}{2\pi}(\ln|c|+i\theta)+ \frac{i\Gamma }{2\pi}(\ln|c|+i(\pi
 \implies \mathrm{Im}(w) & =0
 \end{align} $$
 So $\psi=0$. Therefore $x=0$ indeed defines a streamline, so that no flow penetrates through.
+
+Know that the motion of the vortex at $(d,y_{0})$ is due to $w^{'}(z)= \frac{i\Gamma}{2\pi}\ln(z+d-iy_{0})$. We have:
+$$\frac{dw^{'}}{dz}= \frac{i\Gamma}{2\pi} \frac{1}{z+d-iy_{0}}= \frac{i\Gamma}{2\pi} \frac{1}{2d}$$
+Then:
+$$u=0,\ v= - \frac{\Gamma}{4\pi d}$$
+If $y_{0}=0$, we have that:
+$$w=- \frac{i\Gamma}{2\pi}\ln(z-d)+ \frac{i\Gamma}{2\pi}\ln(z+d)$$
+We first compute the complex velocity:
+$$\begin{align}
+\frac{dw}{dz} & = - \frac{i\Gamma}{2\pi} \frac{1}{z-d}+ \frac{i\Gamma}{2\pi} \frac{1}{z+d}  \\
+ & = - \frac{i\Gamma d}{\pi(z^{2}-d^{2})}
+\end{align}$$
+At $x=0$, we have $\frac{dw}{dz}= - \frac{i\Gamma d}{\pi(z^{2}-d^{2})}= \frac{i\Gamma d}{\pi(y^{2}+d^{2})}$. Then:
+$$v= - \frac{\Gamma d}{\pi(y^{2}+d^{2})}$$
+For the potential, we have:
+$$\begin{align}
+\frac{\partial \phi}{\partial t}=\mathrm{Re}\left( \frac{\partial w}{\partial t} \right)
+\end{align}$$
+The change is induced entirely by the movement of the vortex. Since the vortex only moves in the y direction, we then compute:
+$$\begin{align}
+\frac{\partial w}{\partial t} & = \frac{\partial w}{\partial y_{0}}v_{0} \\
+ & = \left( - \frac{i\Gamma}{2\pi} \frac{-i}{z-d-iy_{0}}+ \frac{i\Gamma}{2\pi} \frac{-i}{z+d-iy_{0}} \right) v_{0} \\
+ & = \left( - \frac{i\Gamma}{2\pi} \frac{-i}{iy-d}+ \frac{i\Gamma}{2\pi} \frac{-i}{iy+d} \right) \left( - \frac{\Gamma}{4\pi d} \right) \\
+ & = - \frac{\Gamma^{2}}{4\pi^{2}(y^{2}+d^{2})}
+\end{align}$$
+So:
+$$\frac{\partial \phi}{\partial t}= - \frac{\Gamma^{2}}{4\pi^{2}(y^{2}+d^{2})}$$
+Adopting the result of exercise 5.9, we have:
+$$\frac{p}{\rho}+ \frac{1}{2}v^{2}+ \frac{\partial \phi}{\partial t}=0$$
+Here we ignore the gravitational potential, since the flow is 2d. We also choose the gauge for $\phi$ such that the right hand side is zero. Then:
+$$\begin{align}
+p & = - \rho \frac{\partial \phi}{\partial t}- \frac{1}{2}\rho v^{2} \\
+ & =\rho \frac{\Gamma^{2}}{4\pi^{2}(y^{2}+d^{2})}- \frac{\rho \Gamma^{2}d^{2}}{2\pi^{2}(y^{2}+d^{2})^{2}}
+\end{align}$$
+Then:
+$$\begin{align}
+F=\int_{\mathbb{R}}dyp
+\end{align}$$
+It suffices to evaluate:
+$$\begin{align}
+\int_{\mathbb{R}} dy \frac{1}{y^{2}+d^{2}} & = \frac{1}{d} \int_{\mathbb{R}} dx \frac{1}{x^{2}+1} \\
+ & = \frac{1}{d} [\arctan x]_{-\infty}^{\infty} \\
+ & = \frac{\pi}{d}
+\end{align}$$
+$$\begin{align}
+\int_{\mathbb{R}}dy \frac{1}{(y^{2}+d^{2})^{2}} & = \frac{1}{d^{3}} \int_{\mathbb{R}} dx \frac{1}{(x^{2}+1)^{2}} \\
+ & = \frac{1}{d^{3}}\int_{-\frac{\pi}{2}}^{\frac{\pi}{2}}d\theta \sec ^{2}\theta \frac{1}{\sec ^{4}\theta} \\
+ & = \frac{1}{d^{3}} \int d\theta \cos ^{2}\theta \\ & = \frac{1}{d^{3}}\int d\theta \frac{1+\cos{2}\theta}{2} \\
+
+ & = \frac{\pi }{2d^{3}}
+\end{align}$$
+Then:
+$$\begin{align}
+F & = \int_{\mathbb{R}}pdy \\
+ & = \frac{\rho \Gamma^{2}}{4\pi^{2}} \frac{\pi}{d}- \frac{\rho \Gamma^{2}d^{2}}{2\pi^{2}}\left( \frac{\pi}{2d^{3}} \right) \\
+ & = 0
+\end{align}$$
+If the vortex is places at $(d,0)$, then $\frac{\partial \phi}{\partial t}=0$. The Bernoulli equation is:
+$$p+\frac{1}{2}\rho v^{2}=0\implies p=- \frac{1}{2}\rho v^{2}= - \frac{\rho \Gamma^{2}d^{2}}{2\pi^{2}(y^{2}+d^{2})^{2}}$$
+Then:
+$$\begin{align}
+F & = \int_{\mathbb{R}}dy\left( - \frac{\rho \Gamma^{2}d^{2}}{2\pi^{2}(y^{2}+d^{2})^{2}} \right) \\
+ & = - \frac{\rho \Gamma^{2}d^{2}}{2\pi^{2}} \frac{\pi}{2d^{3}} \\
+ & = - \frac{\rho \Gamma^{2}}{4\pi d}
+\end{align}$$
+
 
 
 

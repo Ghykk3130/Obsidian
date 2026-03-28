@@ -1553,12 +1553,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Homework/Math 654/Homework 3.md",
+                "file": "Homework/Math 654/Homework 3 problems.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Homework 3"
+              "title": "Homework 3 problems"
             }
           }
         ],
@@ -1629,7 +1629,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 200,
+    "collapsed": true
   },
   "right": {
     "id": "9003d078f8dbc4ed",
@@ -1732,8 +1733,9 @@
   },
   "active": "b6a796024f298fac",
   "lastOpenFiles": [
-    "Homework/Math 654/Homework 3 problems.md",
     "Homework/Math 654/Homework 3.md",
+    "Homework/Math 654/Homework 3 problems.md",
+    "Pictures/Pasted image 20260328163248.png",
     "Notes/Blasius定理，Chaplygin定理.md",
     "Homework/Math 654/Homework 2.md",
     "Pictures/Pasted image 20260328144217.png",
@@ -1766,7 +1768,6 @@
     "Pictures/e53ff20bfefc26ceffbe66c872537c62.jpg",
     "Pictures/Pasted image 20260311231931.png",
     "Pictures/Pasted image 20260311223122.png",
-    "Pictures/Pasted image 20260311213144.png",
     "Homework/Math 654/Homework 2.html",
     "tldraw",
     "Excalidraw/Scripts/Downloaded",
