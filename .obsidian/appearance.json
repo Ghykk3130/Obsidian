@@ -2,6 +2,7 @@
   "theme": "obsidian",
   "enabledCssSnippets": [
     "Image Align",
-    "right-align-math"
+    "right-align-math",
+    "Image adjustment"
   ]
 }
