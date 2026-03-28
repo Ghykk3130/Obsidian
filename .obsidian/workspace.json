@@ -1523,12 +1523,14 @@
             "id": "5b9c8b3b4353aa0e",
             "type": "leaf",
             "state": {
-              "type": "release-notes",
+              "type": "markdown",
               "state": {
-                "currentVersion": "1.12.7"
+                "file": "Notes/代数拓扑基本概念.md",
+                "mode": "source",
+                "source": false
               },
-              "icon": "lucide-book-up",
-              "title": "Release Notes 1.12.7"
+              "icon": "lucide-file",
+              "title": "代数拓扑基本概念"
             }
           }
         ],
@@ -1599,7 +1601,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 200,
+    "collapsed": true
   },
   "right": {
     "id": "9003d078f8dbc4ed",
@@ -1702,6 +1705,11 @@
   },
   "active": "5b9c8b3b4353aa0e",
   "lastOpenFiles": [
+    "Homework/Physics 463/Physics 463 homework 1.md",
+    "Excalidraw/Drawing 2026-03-12 00.25.50.excalidraw.md",
+    "Homework/Physics 463/Physics 463 homework 5.md",
+    "Homework/Physics 463/Physics 463 homework 6.md",
+    "Homework/Physics 512/Physics 512 homework 5.md",
     "Excalidraw/Drawing 2026-03-27 20.17.26.excalidraw.md",
     "Notes/代数拓扑基本概念.md",
     "Excalidraw/Drawing 2026-03-27 20.06.26.excalidraw.md",
@@ -1712,7 +1720,6 @@
     "Notes/半经典运动方程.md",
     "Notes/Berry phase.md",
     "Notes/Blasius定理，Chaplygin定理.md",
-    "Homework/Physics 512/Physics 512 homework 5.md",
     "Homework/Physics 512/Physics 512 homework 4.md",
     "Homework/Physics 512/Physics 512 cheat sheet 2.md",
     "Homework/Physics 512/Physics 512 homework 3.md",
@@ -1724,10 +1731,6 @@
     "Notes/多电子原子精细结构.md",
     "Notes/Fermi-Dirac statistics 与 Fermi gas.md",
     "Notes/Drude模型.md",
-    "Notes/Dam-break问题.md",
-    "Notes/Clebsch-Gordan系数.md",
-    "Notes/Bose-Einstein statistics与BEC.md",
-    "Notes/Zeeman效应.md",
     "Pictures/Pasted image 20260314131900.png",
     "Pictures/9eafeee1db7f4d13ddef893c34b80595.jpg",
     "Pictures/e53ff20bfefc26ceffbe66c872537c62.jpg",
