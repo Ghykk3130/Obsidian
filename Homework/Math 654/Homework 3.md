@@ -54,3 +54,13 @@ We know that the complex potential for the vortex at $(d,y_{0})$ is $- \frac{i\G
 $$w(z)= - \frac{i\Gamma}{2\pi}\ln(z-d-iy_{0})+ \frac{i\Gamma}{2\pi}\ln(z+d-iy_{0})$$
 is a solution to the problem. By uniqueness theorem, this is the only solution.
 
+We can verify that $x=0$ is indeed a streamline. Set $z=iy, z-d-iy_{0}=|c|e^{i\theta}$. Then $z+d-iy_{0}=|c|e^{i(\pi-\theta)}$. Then:
+$$\begin{align}
+w & = - \frac{i\Gamma}{2\pi}(\ln|c|+i\theta)+ \frac{i\Gamma }{2\pi}(\ln|c|+i(\pi-\theta)) \\
+ & = \frac{\Gamma}{2\pi}(2\theta-\pi)\\
+\implies \mathrm{Im}(w) & =0
+\end{align} $$
+So $\psi=0$. Therefore $x=0$ indeed defines a streamline, so that no flow penetrates through.
+
+
+
