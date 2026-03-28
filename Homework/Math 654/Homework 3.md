@@ -193,4 +193,43 @@ $$\begin{align}
 \int_{V}dV \frac{1}{2}|\mathbf{u}^{'}|^{2}- \int_{V}dV \frac{1}{2}|\mathbf{u}|^{2} 
  & = \frac{1}{2}\int_{}dV |\mathbf{w}|^{2}\geq 0
 \end{align}$$
+# Acheson 6.6
+
+If $\mathbf{u}=\boldsymbol{\Omega}\times \mathbf{x}$, we have:
+$$\begin{align}
+\frac{\partial u_{j}}{\partial x_{i}}+ \frac{\partial u_{i}}{\partial x_{j}} & = \frac{\partial}{\partial x_{i}}(\epsilon_{jkl}\Omega_{k}x_{l})+ \frac{\partial}{\partial x_{j}}(\epsilon_{ikl}\Omega_{k}x_{l}) \\
+ & = \epsilon_{jkl}\Omega_{k}\delta_{il}+ \epsilon_{ikl}\Omega_{k}\delta_{jl} \\
+ & = \epsilon_{jki}\Omega_{k}+\epsilon_{ikj}\Omega_{k} \\
+ & = \epsilon_{jki}\Omega_{k}-\epsilon_{jki}\Omega_{k} \\
+ & =0
+\end{align}$$
+Then $\mu\left(  \frac{\partial u_{j}}{\partial x_{i}}+ \frac{\partial u_{i}}{\partial x_{j}} \right)=0$
+# Acheson 6.8
+
+The velocity field is $\mathbf{u}=(\beta x_{2},0,0)$. Then the velocity gradient is represented by:
+$$\nabla \mathbf{u} \overset{\wedge}{=}\begin{pmatrix}
+0 & 0 & 0 \\
+\beta & 0 & 0 \\
+0 & 0 & 0
+\end{pmatrix}$$
+The following decomposition applies:
+$$\begin{align}
+\begin{pmatrix}
+0 & 0 & 0 \\
+\beta & 0 & 0 \\
+0 & 0 & 0
+\end{pmatrix}= 0+  \begin{pmatrix}
+ 0 &  \frac{\beta}{2} & 0 \\
+\frac{\beta}{2} & 0 & 0 \\
+0 & 0 & 0
+\end{pmatrix}+\begin{pmatrix}
+0 & - \frac{\beta}{2} & 0 \\
+\frac{\beta}{2} & 0 & 0 \\
+0 & 0 & 0
+\end{pmatrix}
+\end{align}$$
+The translation part corresponds to $0$, the rotation part corresponds to $\begin{pmatrix}0 & - \frac{\beta}{2} & 0 \\ \frac{\beta}{2} & 0 & 0 \\ 0 & 0 & 0\end{pmatrix}$, and the straining part corresponds to $\begin{pmatrix}0 & \frac{\beta}{2} & 0 \\ \frac{\beta}{2} & 0 & 0 \\ 0 & 0 & 0\end{pmatrix}$.
+
+Obviously, the eigenvalues of the straining part are $\pm \frac{\beta}{2},0$, with eigen vectors $\frac{1}{\sqrt{ 2 }} \begin{pmatrix}1 \\ 1 \\ 0\end{pmatrix},\ \frac{1}{\sqrt{ 2 }}\begin{pmatrix}1 \\ -1 \\ 0\end{pmatrix},\ \begin{pmatrix}0  \\ 0 \\  1\end{pmatrix}$. 
+
 

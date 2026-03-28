@@ -1629,8 +1629,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200,
-    "collapsed": true
+    "width": 200
   },
   "right": {
     "id": "9003d078f8dbc4ed",
@@ -1734,7 +1733,9 @@
   "active": "b6a796024f298fac",
   "lastOpenFiles": [
     "Homework/Math 654/Homework 3 problems.md",
+    "Pictures/Pasted image 20260328185453.png",
     "Homework/Math 654/Homework 3.md",
+    "Pictures/Pasted image 20260328184927.png",
     "Pictures/Pasted image 20260328165348.png",
     "Pictures/Pasted image 20260328163248.png",
     "Notes/Blasius定理，Chaplygin定理.md",
@@ -1766,8 +1767,6 @@
     "Homework/Physics 512/Physics 512 cheat sheet.md",
     "Pictures/Pasted image 20260314131900.png",
     "Pictures/9eafeee1db7f4d13ddef893c34b80595.jpg",
-    "Pictures/e53ff20bfefc26ceffbe66c872537c62.jpg",
-    "Pictures/Pasted image 20260311231931.png",
     "Homework/Math 654/Homework 2.html",
     "tldraw",
     "Excalidraw/Scripts/Downloaded",
