@@ -206,10 +206,12 @@ $$\begin{align}
 Then $\mu\left(  \frac{\partial u_{j}}{\partial x_{i}}+ \frac{\partial u_{i}}{\partial x_{j}} \right)=0$
 # Acheson 6.8
 
-The velocity field is $\mathbf{u}=(\beta x_{2},0,0)$. Then the velocity gradient is represented by:
+The velocity field is $\mathbf{u}=(\beta x_{2},0,0)$. Fix $z$, in the $y\geq 0$ region, the flow is to the positive x direction. In the $y< 0$ region, the flow is to the negative x direction. This is consistent the the rightmost plot in the problem.
+
+Then the velocity gradient is represented by:
 $$\nabla \mathbf{u} \overset{\wedge}{=}\begin{pmatrix}
+0 & \beta & 0 \\
 0 & 0 & 0 \\
-\beta & 0 & 0 \\
 0 & 0 & 0
 \end{pmatrix}$$
 The following decomposition applies:
@@ -223,13 +225,34 @@ $$\begin{align}
 \frac{\beta}{2} & 0 & 0 \\
 0 & 0 & 0
 \end{pmatrix}+\begin{pmatrix}
-0 & - \frac{\beta}{2} & 0 \\
-\frac{\beta}{2} & 0 & 0 \\
+0 &  \frac{\beta}{2} & 0 \\
+-\frac{\beta}{2} & 0 & 0 \\
 0 & 0 & 0
 \end{pmatrix}
 \end{align}$$
-The translation part corresponds to $0$, the rotation part corresponds to $\begin{pmatrix}0 & - \frac{\beta}{2} & 0 \\ \frac{\beta}{2} & 0 & 0 \\ 0 & 0 & 0\end{pmatrix}$, and the straining part corresponds to $\begin{pmatrix}0 & \frac{\beta}{2} & 0 \\ \frac{\beta}{2} & 0 & 0 \\ 0 & 0 & 0\end{pmatrix}$.
+The translation part corresponds to $0$, the rotation part corresponds to $\begin{pmatrix}0 &  \frac{\beta}{2} & 0 \\ -\frac{\beta}{2} & 0 & 0 \\ 0 & 0 & 0\end{pmatrix}$, and the straining part corresponds to $\begin{pmatrix}0 & \frac{\beta}{2} & 0 \\ \frac{\beta}{2} & 0 & 0 \\ 0 & 0 & 0\end{pmatrix}$.
 
-Obviously, the eigenvalues of the straining part are $\pm \frac{\beta}{2},0$, with eigen vectors $\frac{1}{\sqrt{ 2 }} \begin{pmatrix}1 \\ 1 \\ 0\end{pmatrix},\ \frac{1}{\sqrt{ 2 }}\begin{pmatrix}1 \\ -1 \\ 0\end{pmatrix},\ \begin{pmatrix}0  \\ 0 \\  1\end{pmatrix}$. 
+For the rotation part, the velocity it induces is:
+$$\begin{pmatrix}
+0 &  \frac{\beta}{2} & 0 \\
+-\frac{\beta}{2} & 0 & 0 \\
+0 & 0 & 0
+\end{pmatrix}\begin{pmatrix}
+x_{1} \\
+x_{2} \\
+x_{3}
+\end{pmatrix}= \begin{pmatrix}
+ \frac{\beta}{2}x_{2} \\
+-\frac{\beta}{2}x_{1} \\
+0
+\end{pmatrix}$$
+The vorticity is:
+$$\boldsymbol{\omega}=\nabla \times \begin{pmatrix}
+ \frac{\beta}{2}x_{2} \\
+-\frac{\beta}{2}x_{1} \\
+0
+\end{pmatrix}=-\beta  \hat{\mathbf{z}}$$This corresponds to a clockwise rotation, consistent with the plot in the problem. For the straining part, the eigenvalues of the straining part are $\pm \frac{\beta}{2},0$, with eigen vectors $\frac{1}{\sqrt{ 2 }} \begin{pmatrix}1 \\ 1 \\ 0\end{pmatrix},\ \frac{1}{\sqrt{ 2 }}\begin{pmatrix}1 \\ -1 \\ 0\end{pmatrix},\ \begin{pmatrix}0  \\ 0 \\  1\end{pmatrix}$. So the "deformation" happens only in the xy-plane. There is a stretch of $\frac{\beta}{2}$ is the $\frac{1}{\sqrt{ 2 }}\begin{pmatrix}1 \\ 1 \\ 0 \end{pmatrix}$ direction, and a contraction of $- \frac{\beta}{2}$ in the $\frac{1}{\sqrt{ 2 }}\begin{pmatrix}1 \\ -1 \\ 0 \end{pmatrix}$ direction. This is also consistent with the plot in the problem. 
+
+
 
 
