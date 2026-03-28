@@ -1518,9 +1518,21 @@
               "icon": "lucide-file",
               "title": "代数拓扑基本概念"
             }
+          },
+          {
+            "id": "5b9c8b3b4353aa0e",
+            "type": "leaf",
+            "state": {
+              "type": "release-notes",
+              "state": {
+                "currentVersion": "1.12.7"
+              },
+              "icon": "lucide-book-up",
+              "title": "Release Notes 1.12.7"
+            }
           }
         ],
-        "currentTab": 107
+        "currentTab": 108
       }
     ],
     "direction": "vertical"
@@ -1688,7 +1700,7 @@
       "obsidian-excalidraw-plugin:New drawing": false
     }
   },
-  "active": "fc436861c576baae",
+  "active": "5b9c8b3b4353aa0e",
   "lastOpenFiles": [
     "Excalidraw/Drawing 2026-03-27 20.17.26.excalidraw.md",
     "Notes/代数拓扑基本概念.md",
