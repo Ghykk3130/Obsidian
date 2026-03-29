@@ -11,5 +11,5 @@
 
 定义Lorenz ratio $L_{ij}^{A}= \frac{\kappa_{ij}^{A}}{T\sigma_{ij}^{A}}$，$\boldsymbol{\kappa}^{A}$为热流对$\nabla T$的anomalous响应，$\boldsymbol{\sigma}^{A}$为电流对$\mathbf{E}$的anomalous响应。在$0.5K\sim100K$，$L_{ij}^{A}$等于$\frac{\pi^{2}}{3}\left(  \frac{k}{e} \right)^{2}$，符合WF律。
 
-相变大概是Neel温度很高，然后Neel温度以下是三角形转$120^{\circ}$的AFM，然后低温变成玻璃态，有较大c-axis方向的铁磁成分。
+相变大概是Neel温度很高370，然后Neel温度以下是三角形转$120^{\circ}$的AFM，然后低温变成玻璃态，有较大c-axis方向的铁磁成分。
 

@@ -1567,12 +1567,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Notes/Solid state.md",
+                "file": "Reading notes/Finite-temperature violation of the anomalous transverse Wiedmann-Franz law.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Solid state"
+              "title": "Finite-temperature violation of the anomalous transverse Wiedmann-Franz law"
             }
           }
         ],
@@ -1705,13 +1705,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Notes/Solid state.md",
+                "file": "Reading notes/Finite-temperature violation of the anomalous transverse Wiedmann-Franz law.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of Solid state"
+              "title": "Outline of Finite-temperature violation of the anomalous transverse Wiedmann-Franz law"
             }
           }
         ],
@@ -1737,6 +1737,7 @@
   },
   "active": "6e7811c4b3650396",
   "lastOpenFiles": [
+    "Notes/Solid state.md",
     "Experimental/PPMS.md",
     "Notes/Magnetic ordering.md",
     "Reading notes/Finite-temperature violation of the anomalous transverse Wiedmann-Franz law.md",
@@ -1772,7 +1773,6 @@
     "Excalidraw/Drawing 2026-03-27 20.17.26.excalidraw.md",
     "Excalidraw/Drawing 2026-03-27 20.06.26.excalidraw.md",
     "Notes/算子平均值的含义.md",
-    "Notes/惯量张量与刚体动能.md",
     "Homework/Math 654/Homework 2.html",
     "tldraw",
     "Excalidraw/Scripts/Downloaded",
