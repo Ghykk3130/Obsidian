@@ -1767,3 +1767,9 @@ $$u=K\cos ^{2}\phi- \mu_{0}MH\cos \phi$$
 
 ![[Drawing 2025-12-22 21.45.47.excalidraw|center|250]]
 
+>[!Quote] FC和ZFC有什么区别？
+>在施加外场时，spin的翻转有两种机制。第一种机制是domain wall的移动。Zeeman能较低的domain会扩大，吞噬掉Zeeman能较高的domain。第二种机制是domain内spin的翻转。具体参考Stoner-Wahlfarth模型。
+>
+>所以若不加外场，冷却到低温，冷却过程中自旋会随机地组成domain，使得净磁化为零。而施加外场，冷却过程中自旋仍然为了降低退磁能形成domain。但是Zeeman能低的domain会显著多于Zeeman能高的domain，使得净磁化不为零。
+
+
