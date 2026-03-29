@@ -1643,7 +1643,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 200,
+    "collapsed": true
   },
   "right": {
     "id": "9003d078f8dbc4ed",
@@ -1737,12 +1738,16 @@
   },
   "active": "6e7811c4b3650396",
   "lastOpenFiles": [
-    "Notes/Solid state.md",
-    "Experimental/PPMS.md",
+    "Reading notes/Electrical resistance of ferromagnetic metals.md",
+    "Experimental/Thermoelectric code.md",
+    "Experimental/Thermoelectric effect of.md",
+    "Experimental/Transformer Comments.md",
+    "Experimental/Transistor.md",
     "Notes/Magnetic ordering.md",
     "Reading notes/Finite-temperature violation of the anomalous transverse Wiedmann-Franz law.md",
+    "Notes/Solid state.md",
+    "Experimental/PPMS.md",
     "Reading notes/Weyl and Dirac semimetals in three-dimensional solids.md",
-    "Reading notes/Electrical resistance of ferromagnetic metals.md",
     "Reading notes/Berry phase effects on electronic properties.md",
     "Reading notes/Dynamics and critical currents in fast superconducting vortices at high pulsed magnetic fields.md",
     "Reading notes/Doping-induced spin reorientation in Kagome magnet TmMn6Sn6.md",
@@ -1769,10 +1774,6 @@
     "Excalidraw/Drawing 2026-03-12 00.25.50.excalidraw.md",
     "Homework/Physics 463/Physics 463 homework 5.md",
     "Homework/Physics 463/Physics 463 homework 6.md",
-    "Homework/Physics 512/Physics 512 homework 5.md",
-    "Excalidraw/Drawing 2026-03-27 20.17.26.excalidraw.md",
-    "Excalidraw/Drawing 2026-03-27 20.06.26.excalidraw.md",
-    "Notes/算子平均值的含义.md",
     "Homework/Math 654/Homework 2.html",
     "tldraw",
     "Excalidraw/Scripts/Downloaded",
