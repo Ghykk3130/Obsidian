@@ -1,8 +1,9 @@
 先分清几个效应：
-- Hall：纵向电流驱动横向电场
-- Nernst：纵向温度梯度驱动横向电场
-- Thermal Hall/Righi-Leduc：纵向温度梯度驱动横向热流
-- Ettingshausen：纵向电流驱动横向温度梯度
+- Hall：纵向电流驱动横向电场$\sigma_{zx}= \frac{E_{z}}{j^{e}_{x}}$
+- Nernst：纵向温度梯度驱动横向电场$S_{zx}= \frac{E_{z}}{\nabla_{x} T}$
+- Thermal Hall/Righi-Leduc：纵向温度梯度驱动横向热流$\kappa_{zx}= -\frac{j^{q}_{z}}{\nabla_{x} T}$
+- Ettingshausen：纵向电流驱动横向温度梯度$\epsilon_{zx}= \frac{\nabla_{z}T}{j^{e}_{x}}$
+- Thermoelectric conductivity：$\boldsymbol{\alpha}=- \frac{\mathbf{j}^{e}}{\nabla T}$
 几个关系：
 - Bridgman relation：联系Nernst和Ettingshausen。
 - Mott relation：
