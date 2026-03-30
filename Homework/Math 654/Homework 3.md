@@ -252,7 +252,8 @@ $$\boldsymbol{\omega}=\nabla \times \begin{pmatrix}
 -\frac{\beta}{2}x_{1} \\
 0
 \end{pmatrix}
-=-\beta  \hat{\mathbf{z}}$$This corresponds to a clockwise rotation, consistent with the plot in the problem. For the straining part, the eigenvalues of the straining part are $\pm \frac{\beta}{2},0$, with eigen vectors $\frac{1}{\sqrt{ 2 }} \begin{pmatrix}1 \\ 1 \\ 0\end{pmatrix},\ \frac{1}{\sqrt{ 2 }}\begin{pmatrix}1 \\ -1 \\ 0\end{pmatrix},\ \begin{pmatrix}0  \\ 0 \\  1\end{pmatrix}$. So the "deformation" happens only in the xy-plane. There is a stretch of $\frac{\beta}{2}$ is the $\frac{1}{\sqrt{ 2 }}\begin{pmatrix}1 \\ 1 \\ 0 \end{pmatrix}$ direction, and a contraction of $- \frac{\beta}{2}$ in the $\frac{1}{\sqrt{ 2 }}\begin{pmatrix}1 \\ -1 \\ 0 \end{pmatrix}$ direction. This is also consistent with the plot in the problem. 
+=-\beta  \hat{\mathbf{z}}$$
+This corresponds to a clockwise rotation, consistent with the plot in the problem. For the straining part, the eigenvalues of the straining part are $\pm \frac{\beta}{2},0$, with eigen vectors $\frac{1}{\sqrt{ 2 }} \begin{pmatrix}1 \\ 1 \\ 0\end{pmatrix},\ \frac{1}{\sqrt{ 2 }}\begin{pmatrix}1 \\ -1 \\ 0\end{pmatrix},\ \begin{pmatrix}0  \\ 0 \\  1\end{pmatrix}$. So the "deformation" happens only in the xy-plane. There is a stretch of $\frac{\beta}{2}$ is the $\frac{1}{\sqrt{ 2 }}\begin{pmatrix}1 \\ 1 \\ 0 \end{pmatrix}$ direction, and a contraction of $- \frac{\beta}{2}$ in the $\frac{1}{\sqrt{ 2 }}\begin{pmatrix}1 \\ -1 \\ 0 \end{pmatrix}$ direction. This is also consistent with the plot in the problem. 
 
 # Acheson 6.12
 
