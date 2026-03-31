@@ -50,3 +50,28 @@ $$\begin{align}
 \implies &  i\hbar \partial_{t}\bra{n} \psi_{I}\rangle= \sum_{m}\bra{n} V_{I}\ket{m} \bra{m} \psi_{I}\rangle=\sum_{m}\bra{n} e^{ \frac{i}{\hbar}H_{0}t}V e^{- \frac{i}{\hbar}H_{0}t}\ket{m} \bra{m} \psi_{I}\rangle \\
 \implies & i\hbar \partial_{t}c_{n}= \sum_{m} e^{i\omega_{nm}t} V_{nm} c_{m},\ \omega_{nm}= \frac{E_{n}-E_{m}}{\hbar}
 \end{align}$$
+# 2. Transition rate
+
+一般来说，$V(t_{0})=0$。我们想要得到$t$时刻观测$H_{0}$的谱，检查系统坍缩到本征态$\ket{f}$的概率。
+
+若系统$t_{0}$时刻处于本征态$\ket{i}$，我们不妨取一个phase，使得系统在Schrodinger绘景中处于$e^{- \frac{i}{\hbar}E_{n}t_{0}}\ket{i}$。那么在相互作用绘景中系统处于$\ket{i}$。那么：
+$$c_{f}(t)=\bra{f} U_{I}(t,t_{0})\ket{i} $$
+注意到在Schrodinger绘景下系统坍缩到本征态$\ket{f}$的概率为$|\bra{f}U(t,t_{0})e^{- \frac{i}{\hbar}E_{n}t_{0}}\ket{i}|^{2}=|\bra{f}U_{I}(t,t_{0})\ket{i}|^{2}=|c_{f}(t)|^{2}$。所以我们希望得到$U_{I}(t,t_{0})$。
+
+对于$U_{I}$作Dyson级数展开：
+$$\begin{align}
+ & i\hbar \partial_{t}U_{I}(t,t_{0})=V_{I}(t)U_{I}(t,t_{0}) \text{ with }U(t_{0},t_{0})=1 \\
+\implies  & U_{I}= 1- \frac{i}{\hbar}\int_{t_{0}}^{t}dt_{1} V_{I}(t_{1})U_{I}(t_{1},t_{0}) \\
+\implies & U_{I}=1- \frac{i}{\hbar}\int_{t_{0}}^{t}dt_{1}V_{I}(t_{1})\left( 1- \frac{i}{\hbar}\int_{t_{0}}^{t_{1}}dt_{2}V_{I}(t_{2})U_{I}(t_{2},t_{0}) \right) \\
+\implies & U_{I}= 1- \frac{i}{\hbar}\int_{t_{0}}^{t}dt_{1}V_{I}(t_{1})+ \left( -\frac{i}{\hbar} \right)^{2} \int_{t_{0}}^{t}dt_{1}\int_{t_{0}}^{t_{1}}dt_{2}  V_{I}(t_{1})V_{I}(t_{2})+\dots+ \left( - \frac{i}{\hbar} \right)^{n} \int_{t_{0}}^{t}dt_{1}\dots \int_{t_{0}}^{t_{n-1}}dt_{n}V_{I}(t_{1})\dots V_{I}(t_{n})+\dots
+\end{align}$$
+假设$V_{I}$很小，我们只需要取前几项即可。将$c_{f}$以$V_{I}$的阶数展开：
+$$c_{f}=c_{f}^{(0)}+c_{f}^{(1)}+\dots$$
+可以得到：
+$$\begin{align}
+ & c_{f}^{(0)}=\delta_{fi} \\
+ & c_{f}^{(1)}=- \frac{i}{\hbar}\int_{t_{0}}^{t}dt_{1} \bra{f} V_{I}(t_{1})\ket{i} = - \frac{i}{\hbar}\int_{t_{0}}^{t}dt_{1} e^{i\omega_{fi}t_{1}} V_{fi}(t_{1}) \\
+ & c_{f}^{(2)}=\left( - \frac{i}{\hbar} \right)^{2} \int_{t_{0}}^{t}dt_{1} \int_{t_{0}}^{t_{1}}dt_{2} \bra{f} V_{I}(t_{1})V_{I}(t_{2})\ket{i} =\left( - \frac{i}{\hbar} \right)^{2}\sum_{m}\int_{t_{0}}^{t}dt_{1}\int_{t_{0}}^{t_{1}}dt_{2} e^{i\omega_{fm}t_{1}}e^{i\omega_{mi}t_{2}}  V_{fm}(t_{1})V_{mi}(t_{2})
+\end{align}$$
+于是若$f\neq i$，我们有：
+$$P(i\rightarrow f)=|c_{f}|^{2}=|c_{f}^{(1)}+c_{f}^{(2)}+\dots|^{2}$$
