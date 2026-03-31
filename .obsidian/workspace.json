@@ -1670,7 +1670,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "perturbation",
+                "query": "dirac comb",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -1685,7 +1685,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 200,
+    "collapsed": true
   },
   "right": {
     "id": "9003d078f8dbc4ed",
@@ -1777,10 +1778,24 @@
       "obsidian-excalidraw-plugin:New drawing": false
     }
   },
-  "active": "0bd5adf6a54a04e2",
+  "active": "1b745d38a2ec76c1",
   "lastOpenFiles": [
-    "Notes/Schrodinger's and Heisenberg's pictures.md",
+    "Notes/Bose-Einstein statistics与BEC.md",
+    "Notes/Born-Oppenheimer近似.md",
+    "Notes/Blasius定理，Chaplygin定理.md",
+    "Notes/Berry phase.md",
+    "Notes/Baker-Campbell-Hausdorff Formula.md",
+    "Notes/AB效应.md",
+    "Notes/2-level system的Berry curvature.md",
+    "Notes/群论.md",
+    "Notes/电流与电荷.md",
+    "Notes/Fourier transform.md",
+    "Notes/氢原子精细结构.md",
+    "Notes/流体的描述.md",
+    "Notes/气体.md",
+    "Notes/正规矩阵的对角化.md",
     "Notes/Time-dependent perturbation.md",
+    "Notes/Schrodinger's and Heisenberg's pictures.md",
     "Notes/Stationary perturbation.md",
     "Notes/Pedrottis' introduction to optics.md",
     "Notes/Piston-gas Model.md",
@@ -1801,20 +1816,6 @@
     "Homework/Math 654/Homework 3.md",
     "Homework/Math 654/Homework 3 problems.md",
     "Reading notes/Finite-temperature violation of the anomalous transverse Wiedmann-Franz law.md",
-    "Reading notes/Topological properties and dynamics of magnetic skyrmions.md",
-    "Reading notes/Electrical resistance of ferromagnetic metals.md",
-    "Reading notes/Dynamics and critical currents in fast superconducting vortices at high pulsed magnetic fields.md",
-    "Reading notes/Berry phase effects on electronic properties.md",
-    "Notes/黑体辐射.md",
-    "Experimental/Thermoelectric code.md",
-    "Experimental/Thermoelectric effect of.md",
-    "Experimental/Transformer Comments.md",
-    "Experimental/Transistor.md",
-    "Notes/Magnetic ordering.md",
-    "Notes/Solid state.md",
-    "Experimental/PPMS.md",
-    "Reading notes/Weyl and Dirac semimetals in three-dimensional solids.md",
-    "Reading notes/Doping-induced spin reorientation in Kagome magnet TmMn6Sn6.md",
     "Homework/Math 654/Homework 2.html",
     "tldraw",
     "Excalidraw/Scripts/Downloaded",

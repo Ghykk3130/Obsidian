@@ -75,3 +75,22 @@ $$\begin{align}
 \end{align}$$
 于是若$f\neq i$，我们有：
 $$P(i\rightarrow f)=|c_{f}|^{2}=|c_{f}^{(1)}+c_{f}^{(2)}+\dots|^{2}$$
+# 3. Constant drive
+
+考虑如下含时微扰：
+$$V=\left\{\begin{align}
+ & 0,\ t\leq0 \\
+ & V,\ t>0
+\end{align}\right.$$
+则对于$f\neq i$，我们有：
+$$\begin{align}
+c^{(1)}_{f} & = \left( - \frac{i}{\hbar} \right)\int_{0}^{t}dt^{'}e^{i\omega_{fi}t^{'}}V_{fi}(t^{'}) \\
+ & = \frac{-1}{E_{f}-E_{i}} V_{fi}(e^{i\omega_{fi}t}-1) \\
+ & = \frac{-1}{E_{f}-E_{i} }V_{fi}e^{ i\frac{\omega_{fi}}{2}t}2i \sin\left(  \frac{i\omega_{fi}t}{2} \right)
+\end{align}$$
+则：
+$$\begin{align}
+P(i\rightarrow f) & = |c^{(1)}_{f} |^{2} \\
+ & = \frac{|V_{fi}|^{2}}{(E_{f}-E_{i})^{2}} 4 \sin ^{2}\left(  \frac{\omega_{fi}t}{2} \right) \\
+ & = \frac{|V_{fi}|^{2}}{\hbar^{2}}4t^{2} \text{sinc}^{2}\left(  \frac{E_{f}-E_{i}}{2\hbar}t \right)\text{, where } \text{sinc}x= \frac{\sin x}{x}
+\end{align}$$
