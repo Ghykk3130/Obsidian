@@ -27,6 +27,21 @@ $$\begin{align}
 \end{align}
 > $$
 
+特别地，定义相互作用绘景下的时间演化算子$U_{I}$：
+$$\ket{\psi_{I};t_{0},t_{}} =U_{I}(t,t_{0})\ket{\psi_{I};t_{0},t_{0}} $$
+则$U_{I}$的运动方程为：
+$$i\hbar \partial_{t}U_{I}=V_{I}U_{I}$$
+我们可以将相互作用绘景和Schrodinger绘景下的时间演化算子联系起来：
+$$\begin{align}
+\ket{\psi_{I};t_{0},t}  & = e^{ \frac{i}{\hbar}H_{0}t}\ket{\psi_{S};t_{0},t}  \\
+ & = e^{ \frac{i}{\hbar}H_{0}t}U(t,t_{0})\ket{\psi_{S};t_{0},t_{0}} \\
+ & = e^{ \frac{i}{\hbar}H_{0}t}U(t,t_{0})e^{- \frac{i}{\hbar}H_{0}t_{0}}\ket{\psi_{I};t_{0},t_{0}} \\ \\
+\implies U_{I}(t,t_{0}) & = e^{\frac{i}{\hbar}H_{0}t}U(t,t_{0})e^{- \frac{i}{\hbar}H_{0}t_{0}}  
+\end{align}$$
+
+>[!Success] Proposition 1.2
+>$U_{I}(t,t_{0})=e^{\frac{i}{\hbar}H_{0}t}U(t,t_{0})e^{- \frac{i}{\hbar}H_{0}t_{0}}$
+
 在相互作用绘景下，我们一般将$\ket{\psi_{I}}$在Schrodinger绘景的本征态下展开：
 $$\ket{\psi_{I}} =\sum_{n} c_{n}(t)\ket{n} $$
 我们想要得到$c_{n}(t)$的演化。我们从相互作用绘景下的Schrodinger方程入手：
