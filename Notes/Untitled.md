@@ -1,54 +1,22 @@
-# 1.
-**Starting poem:**
-	the snow is cold and white
-	silence of the winter night
-	he heard her voice in street
-**Generated poem:**
-	certain snow is cold whom white
-	silence of the long though kneedeep
-	he boats her full in the street
-# 2.
-**Starting poem 1:**
-	once sleep its  
-	is good a troubles  
-	watching hill no mountains
-**Generated poem 1:**
-	once sleep its
-	is good fire troubles
-	watching to no mountains
 
-**Starting poem 2:**
-	early like
-	to eyes you
-	who as mood
-**Generated poem 2:**
-	early drum
-	to eyes you
-	who as nerves
 
-**Starting poem 3:**
-	the ghost fire his blood
-	lids dead as skeletons
-	or the engulfing slept
-**Generated poem 3:**
-	the ghost molten his blood
-	lids dead as skeletons
-	or deaths engulfing slept
+Bee的F1为726.9631614927896 Hz，F2为2125.28747442543 Hz
+![[Pasted image 20260330193648.png]]
+笔的F1为345.38926862834444 Hz， F2为1673.4293680988144 Hz
+![[Pasted image 20260330194920.png]]
 
-**Starting poem 4:**
-	the turrets issue his midnight
-	pavements will as skeletons
-	or fires tongues grave
-**Generated poem 4:**
-	the turrets issue his midnight
-	pavements will as like
-	or melting tongues grave
+Loo的F1为355.84247876469544 Hz， F2为1688.4211186803204 Hz
+![[Pasted image 20260330194226.png]]
 
-**Starting poem 5:**
-	thoughts waste mood
-	for the creasing heart
-	always still pain me
-**Generated poem 5:**
-	breaks waste mood
-	for the creasing heart
-	always bleed pain me
+路的F1为446.23187014609795 Hz，F2为1832.5804674350316 Hz
+![[Pasted image 20260330194359.png]]
+
+Ma的F1为569.0266320227597 Hz，F2为1482.1032807698957 Hz
+![[Pasted image 20260330194714.png]]
+
+马的F1为544.8216072984599 Hz，F2为1488.9429681551148 Hz
+![[Pasted image 20260330194826.png]]
+
+
+
+

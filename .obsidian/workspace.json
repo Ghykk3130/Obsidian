@@ -1581,12 +1581,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Homework/Math 654/Homework 3.md",
-                "mode": "preview",
+                "file": "Notes/Untitled.md",
+                "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Homework 3"
+              "title": "Untitled"
             }
           }
         ],
@@ -1657,7 +1657,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 200,
+    "collapsed": true
   },
   "right": {
     "id": "9003d078f8dbc4ed",
@@ -1719,13 +1720,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Homework/Math 654/Homework 3.md",
+                "file": "Notes/Untitled.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of Homework 3"
+              "title": "Outline of Untitled"
             }
           }
         ],
@@ -1751,6 +1752,16 @@
   },
   "active": "bb46a12113008cf3",
   "lastOpenFiles": [
+    "Pictures/Pasted image 20260330194920.png",
+    "Pictures/Pasted image 20260330194907.png",
+    "Pictures/Pasted image 20260330194826.png",
+    "Pictures/Pasted image 20260330194714.png",
+    "Pictures/Pasted image 20260330194359.png",
+    "Pictures/Pasted image 20260330194226.png",
+    "Pictures/Pasted image 20260330193836.png",
+    "Pictures/Pasted image 20260330193648.png",
+    "Notes/Symmetries in EM.md",
+    "Homework/Math 654/Homework 3.md",
     "Homework/Math 654/Homework 3 problems.md",
     "Reading notes/Finite-temperature violation of the anomalous transverse Wiedmann-Franz law.md",
     "Reading notes/Topological properties and dynamics of magnetic skyrmions.md",
@@ -1768,25 +1779,15 @@
     "Experimental/PPMS.md",
     "Reading notes/Weyl and Dirac semimetals in three-dimensional solids.md",
     "Reading notes/Doping-induced spin reorientation in Kagome magnet TmMn6Sn6.md",
-    "Homework/Math 654/Homework 3.md",
     "Pictures/Pasted image 20260328201453.png",
     "Notes/流体的基本方程.md",
     "Notes/Viscous flow.md",
     "Pictures/Pasted image 20260328193136.png",
     "Pictures/Pasted image 20260328185453.png",
-    "Pictures/Pasted image 20260328184927.png",
-    "Pictures/Pasted image 20260328165348.png",
-    "Pictures/Pasted image 20260328163248.png",
     "Notes/Blasius定理，Chaplygin定理.md",
     "Homework/Math 654/Homework 2.md",
-    "Pictures/Pasted image 20260328144217.png",
-    "Pictures/Pasted image 20260328144152.png",
     "Homework/Math 654/Untitled.md",
     "Notes/代数拓扑基本概念.md",
-    "Excalidraw/Drawing 2026-03-27 19.37.41.excalidraw.md",
-    "Pictures/Pasted image 20260328130029.png",
-    "Pictures/Pasted image 20260328130005.png",
-    "Homework/Physics 463/Physics 463 homework 1.md",
     "Homework/Math 654/Homework 2.html",
     "tldraw",
     "Excalidraw/Scripts/Downloaded",
