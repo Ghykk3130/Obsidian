@@ -125,3 +125,6 @@ $$\begin{align}
 
 \end{align}$$
 Define the structure factor $S_{\mathbf{G}}=\sum_{\mathbf{r}_{j}}e^{-i\mathbf{G}\cdot \mathbf{r}_{j}}$. 
+
+For a diamond structure, if $\mathbf{G}=2\cdot \frac{2\pi}{a}  \hat{\mathbf{x}}$, then:
+$$$$
