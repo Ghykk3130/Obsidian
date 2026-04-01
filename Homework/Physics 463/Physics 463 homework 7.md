@@ -15,6 +15,13 @@ $$\begin{align}
 \implies &  \frac{1}{2m}e^{ikx}\left( - i\hbar \frac{d}{dx}+\hbar k \right)^{2}u_{k}= Ee^{ikx}u_{k} \\
 \implies &  \frac{1}{2m}\left( - i\hbar \frac{d}{dx}+\hbar k \right)^{2}u_{k}=Eu_{k}
 \end{align}$$
+Or we can also show the equivalence:
+$$\begin{align}
+\left( -i\hbar \frac{d}{dx}+\hbar k \right)^{2}u_{k} & =-\hbar^{2}u_{k}^{''}+2(-i\hbar)(\hbar k)u_{k}^{'}+\hbar^{2}k^{2}u_{k} \\
+  & = -\hbar^{2}(u_{k}^{''}+2iku_{k}^{'}-k^{2}u_{k})= 2mEu_{k}
+\end{align}$$
+Then substitute in $q= \frac{\sqrt{ 2mE }}{\hbar}$:
+$$u_{k}^{''}+2iku_{k}^{'}+(q^{2}-k^{2})u_{k}=0$$
 To solve the equation, we make the ansatz that $u_{k}(x)=Ae^{i\kappa x}$. Then:
 $$\begin{align}
  & \frac{1}{2m}\left( -i\hbar \frac{d}{dx}+\hbar k \right)(\hbar \kappa+\hbar k)u_{k}=Eu_{k} \\
@@ -82,7 +89,7 @@ $$\begin{align}
 \end{align}$$
 In order for the non-trivial solution $(C,D)$ to exist, we have:
 $$\begin{align}
- & \left[ i(q-k)(1-e^{i(1-k)a})- \frac{2m\lambda}{\hbar^{2}} \right](1-e^{-i(q+k)a})+\left[ i(q+k)\left( 1-e^{-i(q+k)a} \right)+ \frac{2m\lambda}{\hbar^{2}} \right](1-e^{i(q-k)a})=0 \\
+ & \left[ i(q-k)(1-e^{i(q-k)a})- \frac{2m\lambda}{\hbar^{2}} \right](1-e^{-i(q+k)a})+\left[ i(q+k)\left( 1-e^{-i(q+k)a} \right)+ \frac{2m\lambda}{\hbar^{2}} \right](1-e^{i(q-k)a})=0 \\
 \implies & 2(q-k)e^{-ika}(\cos qa-\cos ka)+2(q+k)e^{-ika}(\cos qa-\cos ka )+ \frac{4m\lambda}{\hbar^{2}}e^{- \frac{i}{2}(q+k)a}\sin\left(  \frac{q+k}{2}a \right)+ \frac{4m\lambda}{\hbar^{2}}e^{ \frac{i}{2}(q-k)a}\sin \left(  \frac{q-k}{2}a \right)=0
 \end{align}$$
 We know that:
@@ -133,7 +140,7 @@ $$\begin{align}
 \end{align}$$
 Then:
 $$\begin{align}
-\sum_{\mathbf{r}_{j}}e^{-i\mathbf{G}\cdot \mathbf{r}_{j}} & = -1-1+1+1-1-1+1=0
+\sum_{\mathbf{r}_{j}}e^{-i\mathbf{G}\cdot \mathbf{r}_{j}} & = 1+1+1+1-1-1-1-1=0
 \end{align}$$
 If $\mathbf{G}= 2\cdot \frac{2\pi}{a} \hat{\mathbf{y}}\text{ or }2\cdot \frac{2\pi}{a} \hat{\mathbf{z}}$, the calculations are similar, and we obtain an overall factor of $0$. 
 ## (b)
@@ -141,6 +148,28 @@ If $\mathbf{G}= 2\cdot \frac{2\pi}{a} \hat{\mathbf{y}}\text{ or }2\cdot \frac{2\
 In the first-order approximation, we know that if $\mathbf{k}$ is on the zone boundary, meaning that there exists a reciprocal lattice vector $\mathbf{G}$ such that $|\mathbf{k}|=|\mathbf{G}-\mathbf{k}|$, then the splitting from the perturbation would create a bandgap of size $2|U_{\mathbf{G}}|$.
 
 It's obvious from the geometry that if $\mathbf{k}$ is on the zone boundary defined by $\mathbf{A}$, then clearly $|\mathbf{k}|=|\mathbf{k}-2\mathbf{A}|$. Therefore $\mathbf{G}$ can be chosen to be $2\mathbf{A}$. We have proved that $U_{2\mathbf{A}}=0$, therefore, the bandgap vanishes.
+# Kittel 7.6
+
+First we compute the Fourier transform of $U$:
+$$\begin{align}
+U(x,y) & = -4U\cos\left( \frac{2\pi}{a}x \right)\cos\left( \frac{2\pi}{a}y \right) \\
+ & = -4U \frac{e^{i \frac{2\pi}{a}x}+e^{-i \frac{2\pi}{a}x}}{2} \frac{e^{i \frac{2\pi}{a}y}+e^{-i \frac{2\pi}{a}y}}{2} \\
+ & = -U\left[ \exp\left( i\left( \frac{2\pi}{a}x+ \frac{2\pi}{a}y \right) \right)+\exp\left( i\left( - \frac{2\pi}{a}x+ \frac{2\pi}{a}y \right) \right)+\exp\left( i\left( \frac{2\pi}{a}x- \frac{2\pi}{a}y \right) \right)+\exp\left( i\left( -\frac{2\pi}{a}x- \frac{2\pi}{a}y \right) \right) \right]
+\end{align}$$
+So there are only four choices of $\mathbf{G}$. We also need to satisfy the condition that $|\mathbf{k}^{'}|=|\mathbf{k}|$. Then we can only take $\mathbf{G}=\left(  \frac{2\pi}{a}, \frac{2\pi}{a} \right),\ (- \frac{2\pi}{a}, - \frac{2\pi}{a})$.
+
+Therefore, the matrix of central equation is:
+$$\begin{pmatrix}
+\frac{\hbar^{2}\pi^{2}}{ma^{2}}-\epsilon & -U \\
+-U & \frac{\hbar^{2}\pi^{2}}{ma^{2}}-\epsilon
+\end{pmatrix}$$
+Then:
+$$\begin{align}
+ & \left( \frac{\hbar^{2}\pi^{2}}{ma^{2}}-\epsilon \right)^{2}-U^{2}=0\implies\epsilon= \frac{\hbar^{2}\pi^{2}}{ma^{2}}\pm U
+\end{align}$$
+Then the bandgap is $2U$. It is not specified whether $U>0$ or not. For simplicity, I assumed this is the case. 
+
+
 
 
 
