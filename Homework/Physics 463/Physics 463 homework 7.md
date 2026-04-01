@@ -46,3 +46,71 @@ $$\begin{align}
  & \lim_{ x \to 0+ } (ike^{ikx}u_{k}+e^{ikx}u_{k}^{'})-\lim_{ x \to 0- } (ike^{ikx}u_{k}+e^{ikx}u_{k}^{'})= \frac{2m\lambda}{\hbar^{2}}u_{k}(0) \\
 \implies & \lim_{ x \to 0+ } u_{k}^{'}-\lim_{ x \to 0- } u_{k}^{'}= \frac{2m\lambda}{\hbar^{2}}u_{k}(0)
 \end{align}$$
+## (c)
+
+We assume that:
+$$\begin{align}
+ & u_{k}(x)=Ae^{i(q-k)x}+Be^{-i(q+k)x},\ x \in [-a,0) \\
+ & u_{k}(x)=Ce^{i(q-k)x}+De^{-i(q+k)x},\ x \in [0,a)
+\end{align}$$
+Then:
+$$\begin{align}
+ & \lim_{ x \to 0- } u_{k}=\lim_{ x \to 0+ } u_{k} \\
+\implies & A+B=C+D
+\end{align}\tag{ *}$$
+$$\begin{align}
+ & u_{k}(a^{-})=u_{k}(0^{-}) \\
+\implies & Ce^{i(q-k)a}+De^{-i(q+k)a}=A+B \\
+\implies & (Ce^{i(q-k)a}-A)+(De^{-i(q+k)a}-B )=0
+\end{align}\tag{* *}$$
+The periodicity in derivatives give:
+$$\begin{align}
+ & u_{k}^{'}(a^{-})=u_{k}^{'}(0^{-}) \\
+\implies & iC(q-k)e^{i(q-k)a}+(-i)D(q+k)e^{-i(q+k)a}=iA(q-k)+(-i)B(q+k) \\
+\implies & i(q-k)(Ce^{i(q-k)a}-A)+(-i)(q+k)(De^{-i(q+k)a }-B)=0
+\end{align}$$
+Then combined with $(* *)$, if $q\neq 0$, we obtain:
+$$A=Ce^{i(q-k)a},\ B=De^{-i(q+k)a}$$
+Then substitute into $(*)$, we get:
+$$\begin{align}
+ & (q-e^{i(q-k)a})C+(q-e^{-i(q+k)a})D=0
+\end{align}$$
+We also have:
+$$\begin{align}
+ & u_{k}^{'}(0^{+})-u_{k}^{'}(0^{-})= \frac{2m\lambda}{\hbar^{2}}u_{k}(0) \\
+\implies & \left[i(q-k)(1- e^{i(q-k)a})- \frac{2m\lambda}{\hbar^{2}}\right]C +\left[ (-i)(q+k)(q-e^{-i(q+k)a})- \frac{2m\lambda}{\hbar^{2}} \right]D=0
+\end{align}$$
+In order for the non-trivial solution $(C,D)$ to exist, we have:
+$$\begin{align}
+ & \left[ i(q-k)(1-e^{i(1-k)a})- \frac{2m\lambda}{\hbar^{2}} \right](1-e^{-i(q+k)a})+\left[ i(q+k)\left( 1-e^{-i(q+k)a} \right)+ \frac{2m\lambda}{\hbar^{2}} \right](1-e^{i(q-k)a})=0 \\
+\implies & 2(q-k)e^{-ika}(\cos qa-\cos ka)+2(q+k)e^{-ika}(\cos qa-\cos ka )+ \frac{4m\lambda}{\hbar^{2}}e^{- \frac{i}{2}(q+k)a}\sin\left(  \frac{q+k}{2}a \right)+ \frac{4m\lambda}{\hbar^{2}}e^{ \frac{i}{2}(q-k)a}\sin \left(  \frac{q-k}{2}a \right)=0
+\end{align}$$
+We know that:
+$$\begin{align}
+e^{- \frac{i}{2}(q+k)a}\sin\left(  \frac{q+k}{2}a \right)+ e^{ \frac{i}{2}(q-k)a} \sin\left(  \frac{q-k}{2}a \right) & = \frac{1}{2i}\left[ e^{- \frac{i}{2}(q+k)a}\left( e^{ \frac{i}{2}(q+k)a}- e^{- \frac{i}{2}(q+k)a} \right)+e^{ \frac{i}{2}(q-k)a} \left( e^{ \frac{i}{2}(q-k)a} - e^{ - \frac{i}{2}(q-k)a}\right) \right] \\
+ & = e^{-ika} \frac{1}{2i}(e^{iqa}-e^{-iqa}) \\
+ & = \sin(qa)e^{-ika} 
+\end{align}$$
+Then we obtain:
+$$\begin{align}
+ & 4qe^{-ika}(\cos qa-\cos ka)+ \frac{4m\lambda}{\hbar^{2}}e^{-ika}\sin qa=0 \\
+\implies & \cos ka= \cos qa+ \frac{m\lambda}{q\hbar^{2}}\sin qa
+\end{align}$$
+From this equation, we find that the assumption $q\neq 0$ makes sense, since if $q=0$, then $\text{RHS}=1+ \frac{m\lambda a}{\hbar^{2}}>1$, and there's no solution for $k$.
+## (d)
+
+We know that $|\cos ka|\leq 1$, therefore it makes sense to require $|\cos qa+ \frac{m\lambda}{q\hbar^{2}}\sin qa|\leq 1$. 
+
+![[Pasted image 20260331210712.png|center|500]]
+
+Here I plotted the RHS of the equation versus $q$. So for each $k$, there is a horizontal line $\cos ka$ corresponding to it. We find the intersection between this line and the curve in the plot to determine $q$, and thus determine $E$. Each intersection corresponds to a band. We see that bandgap arises for two neighboring intersections, if we scan $\cos ka$ from -1 to 1 and the two neighboring intersections don't collide. Roughly speaking, whenever the $-1,1$ lines truncate the curve, we get a bandgap. This simply means there is always an energy gap between them.
+## (e)
+
+Take $\lambda=0$. We then get:
+$$\begin{align}
+k=q= \frac{\sqrt{ 2mE }}{\hbar}
+ \end{align}$$
+This is exactly the dispersion relation for free electron gas. 
+
+If we increase $\lambda$, then the curve in part $(d)$ would be stretched vertically, making the band gap larger. 
+ 
