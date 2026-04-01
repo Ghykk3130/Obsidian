@@ -1684,7 +1684,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "dirac comb",
+                "query": "structure",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -1699,7 +1699,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 200,
+    "collapsed": true
   },
   "right": {
     "id": "9003d078f8dbc4ed",
@@ -1793,10 +1794,11 @@
   },
   "active": "0a51fb6cf1789a06",
   "lastOpenFiles": [
+    "Notes/X-ray diffraction.md",
+    "Homework/Physics 463/Physics 463 homework 7.md",
     "Pictures/Pasted image 20260331210712.png",
     "Pictures/Pasted image 20260331210644.png",
     "Homework/Physics 463/Physics 463 homework 6.md",
-    "Homework/Physics 463/Physics 463 homework 7.md",
     "Notes/Time-dependent perturbation.md",
     "Notes/Bose-Einstein statistics与BEC.md",
     "Notes/Born-Oppenheimer近似.md",
@@ -1827,7 +1829,6 @@
     "Pictures/Pasted image 20260330194826.png",
     "Pictures/Pasted image 20260330194714.png",
     "Pictures/Pasted image 20260330194359.png",
-    "Pictures/Pasted image 20260330194226.png",
     "Notes/Symmetries in EM.md",
     "Homework/Math 654/Homework 2.html",
     "tldraw",

@@ -113,4 +113,15 @@ k=q= \frac{\sqrt{ 2mE }}{\hbar}
 This is exactly the dispersion relation for free electron gas. 
 
 If we increase $\lambda$, then the curve in part $(d)$ would be stretched vertically, making the band gap larger. 
- 
+# Kittel 7.4
+## (a)
+
+Assume that the potential of a single atom is $u(\mathbf{r})$. Let $\mathbf{r}_{j}$ be the positions of atoms in the primitive cell. Then the total potential is:
+$$U(\mathbf{r})=\sum_{\mathbf{R}}\sum_{\mathbf{r}_{j}}u(\mathbf{r}-\mathbf{r}_{j}-\mathbf{R})$$
+If we do Fourier transform to $U$, we get:
+$$\begin{align}
+ & \sum_{\mathbf{G}}U_{\mathbf{G}}e^{i\mathbf{G}\cdot \mathbf{r}}= \sum_{\mathbf{R}}\sum_{\mathbf{r}_{j}}u(\mathbf{r}-\mathbf{r}_{j}-\mathbf{R}) \\
+\implies & U_{\mathbf{G}}= \frac{1}{(2\pi)^{3} } \sum_{\mathbf{R}}\sum_{\mathbf{r}_{j}}\int d^{3}r e^{-i\mathbf{G}\cdot \mathbf{r}}u(\mathbf{r}-\mathbf{r}_{j}-\mathbf{R}) = \frac{1}{(2\pi)^{3}} \sum_{\mathbf{R}}\sum_{\mathbf{r}_{j}}\int d^{3}r e^{-i\mathbf{G}\cdot \mathbf{r}}e^{-i\mathbf{G}\cdot \mathbf{r}_{j}}u(\mathbf{r})=\frac{N}{(2\pi)^{3}}\sum_{\mathbf{r}_{j}}e^{-i\mathbf{G}\cdot \mathbf{r}_{j}}\int d^{3}re^{-i\mathbf{G}\cdot \mathbf{r}}u(\mathbf{r})
+
+\end{align}$$
+Define the structure factor $S_{\mathbf{G}}=\sum_{\mathbf{r}_{j}}e^{-i\mathbf{G}\cdot \mathbf{r}_{j}}$. 
