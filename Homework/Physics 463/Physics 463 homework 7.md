@@ -136,4 +136,11 @@ $$\begin{align}
 \sum_{\mathbf{r}_{j}}e^{-i\mathbf{G}\cdot \mathbf{r}_{j}} & = -1-1+1+1-1-1+1=0
 \end{align}$$
 If $\mathbf{G}= 2\cdot \frac{2\pi}{a} \hat{\mathbf{y}}\text{ or }2\cdot \frac{2\pi}{a} \hat{\mathbf{z}}$, the calculations are similar, and we obtain an overall factor of $0$. 
+## (b)
+
+In the first-order approximation, we know that if $\mathbf{k}$ is on the zone boundary, meaning that there exists a reciprocal lattice vector $\mathbf{G}$ such that $|\mathbf{k}|=|\mathbf{G}-\mathbf{k}|$, then the splitting from the perturbation would create a bandgap of size $2|U_{\mathbf{G}}|$.
+
+It's obvious from the geometry that if $\mathbf{k}$ is on the zone boundary defined by $\mathbf{A}$, then clearly $|\mathbf{k}|=|\mathbf{k}-2\mathbf{A}|$. Therefore $\mathbf{G}$ can be chosen to be $2\mathbf{A}$. We have proved that $U_{2\mathbf{A}}=0$, therefore, the bandgap vanishes.
+
+
 
