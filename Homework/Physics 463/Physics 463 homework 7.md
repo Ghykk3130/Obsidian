@@ -126,5 +126,14 @@ $$\begin{align}
 \end{align}$$
 Define the structure factor $S_{\mathbf{G}}=\sum_{\mathbf{r}_{j}}e^{-i\mathbf{G}\cdot \mathbf{r}_{j}}$. 
 
-For a diamond structure, if $\mathbf{G}=2\cdot \frac{2\pi}{a}  \hat{\mathbf{x}}$, then:
-$$$$
+For a diamond structure, if $\mathbf{G}=2\cdot \frac{2\pi}{a}  \hat{\mathbf{x}}$. The positions are: 
+$$\begin{align}
+ & \mathbf{r}_{1}=(0,0,0),\ \mathbf{r}_{2}=\left( \frac{1}{2}, \frac{1}{2},0 \right)a,\ \mathbf{r}_{3}= \left( \frac{1}{2},0, \frac{1}{2}  \right)a,\ \mathbf{r}_{4}= \left( 0, \frac{1}{2}, \frac{1}{2} \right)a \\
+ & \mathbf{r}_{5}=\left( \frac{1}{4}, \frac{1}{4}, \frac{1}{4} \right)a,\ \mathbf{r}_{6}=\left( \frac{3}{4}, \frac{3}{4}, \frac{1}{4} \right)a,\ \mathbf{r}_{7}=\left( \frac{3}{4}, \frac{1}{4}, \frac{3}{4} \right)a,\ \mathbf{r}_{8}=\left( \frac{1}{4}, \frac{3}{4}, \frac{3}{4} \right)a
+\end{align}$$
+Then:
+$$\begin{align}
+\sum_{\mathbf{r}_{j}}e^{-i\mathbf{G}\cdot \mathbf{r}_{j}} & = -1-1+1+1-1-1+1=0
+\end{align}$$
+If $\mathbf{G}= 2\cdot \frac{2\pi}{a} \hat{\mathbf{y}}\text{ or }2\cdot \frac{2\pi}{a} \hat{\mathbf{z}}$, the calculations are similar, and we obtain an overall factor of $0$. 
+
