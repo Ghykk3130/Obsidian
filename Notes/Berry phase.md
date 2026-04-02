@@ -132,3 +132,5 @@ $$\vec{B}_{\pm}= \mp \frac{1}{2R^{2}}\hat{R}$$
 所以Berry phase为：
 $$\gamma_{n}(C)= \mp \frac{1}{2}\int_{C} d\vec{S}\cdot \frac{\hat{R}}{R^{2}}=\mp \frac{1}{2}\Omega(C)$$
 其中$\Omega(C)$为$\vec{R}$绕出的闭合曲线对应的立体角。
+# 3. Chern number
+
