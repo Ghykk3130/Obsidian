@@ -132,5 +132,46 @@ $$\vec{B}_{\pm}= \mp \frac{1}{2R^{2}}\hat{R}$$
 所以Berry phase为：
 $$\gamma_{n}(C)= \mp \frac{1}{2}\int_{C} d\vec{S}\cdot \frac{\hat{R}}{R^{2}}=\mp \frac{1}{2}\Omega(C)$$
 其中$\Omega(C)$为$\vec{R}$绕出的闭合曲线对应的立体角。
-# 3. Chern number
+# 3. 陈数在2-torus上的量子化
+
+我们将Berry curvature在整个BZ的积分定义为陈数。例如说，对于二维系统，定义：
+$$C= \frac{1}{2\pi}\int_{\text{BZ}}dk_{x} dk_{y} \Omega_{k_{z}}$$
+我们可以证明，陈数必为整数。不妨设$\text{BZ}=\left\{  \mathbf{k}|0\leq k_{x }< \frac{2\pi}{a},\ 0\leq k_{y}< \frac{2\pi}{b}  \right\}$。展开在平面上得到：
+
+![[Drawing 2026-04-02 16.22.11.excalidraw|center|500]]
+
+由于$\Omega_{k_{z}}= \frac{\partial}{\partial k_{x}} A_{k_{y}}- \frac{\partial}{\partial k_{y}} A_{k_{x}}$，运用Stokes公式得到：
+$$\begin{align}
+ C & = \frac{1}{2\pi}\left( \int_{\text{AB}}dk_{x} A_{k_{x}}(k_{x},0)+\int_{\text{BC}} dk_{y}A_{k_{y}}\left( \frac{2\pi}{a}, k_{y} \right)+\int_{\text{CD}}dk_{x}A_{k_{x}}\left( k_{x}, \frac{2\pi}{b} \right)+\int_{\text{DA}}dk_{y}A_{k_{y}}(0,k_{y}) \right) \\
+ & = \frac{1}{2\pi}\left[ \int_{0}^{\frac{2\pi}{a}}dk_{x}\left( A_{k_{x}}(k_{x},0)-A_{k_{x}}\left( k_{x}, \frac{2\pi}{b} \right) \right)+\int_{0}^{\frac{2\pi}{b}}dk_{y}\left( A_{k_{y}}\left( \frac{2\pi}{a}, k_{y} \right)-A_{k_{y}}(0,k_{y}) \right) \right]
+\end{align}$$
+由于$\ket{\psi(k_{x},0)},\ \ket{\psi\left( k_{x}, \frac{2\pi}{b} \right)}$表达的是同一个态，它们最多相差一个相位。显然这个相位应该是$k_{x}$的函数。即：
+$$\ket{\psi(k_{x},0)} =e^{i\theta(k_{x})}\ket{\psi\left( k_{x}, \frac{2\pi}{b} \right)} $$
+同理：
+$$\ket{\psi\left( \frac{2\pi}{a},k_{y} \right)} =e^{i\phi(k_{y})}\ket{\psi(0,k_{y})} $$
+那么：
+$$\begin{align}
+ A_{k_{x}}(k_{x},0)-A_{k_{z}}\left( k_{x}, \frac{2\pi}{b} \right) & = i \bra{\psi(k_{x},0)}  \frac{\partial}{\partial k_{x}}\ket{\psi(k_{x},0)} -i \bra{\psi\left( k_{x}, \frac{2\pi}{b} \right)}  \frac{\partial}{\partial k_{x}}\ket{\psi\left( k_{x}, \frac{2\pi}{b} \right)}  \\
+ & = i \bra{\psi\left( k_{x}, \frac{2\pi}{b} \right)}e^{-i\theta(k_{x})}  \frac{\partial}{\partial k_{x}} e^{i\theta(k_{x})} \ket{\psi\left( k_{x}, \frac{2\pi}{b} \right)}-i \bra{\psi\left( k_{x}, \frac{2\pi}{b} \right)}  \frac{\partial}{\partial k_{x}}\ket{\psi\left( k_{x}, \frac{2\pi}{b} \right)} \\
+ & = -  \frac{\partial \theta}{\partial k_{x}} \\
+A_{k_{y}}\left( \frac{2\pi}{a}, k_{y} \right)- A_{k_{y}}(0,k_{y}) & = - \frac{\partial \phi}{\partial k_{y}}
+\end{align}$$
+积分得到陈数：
+$$\begin{align}
+C & = \frac{1}{2\pi}\left( - \int_{0}^{\frac{2\pi}{a}}dk_{x} \frac{\partial \theta}{\partial k_{x}}- \int_{0}^{\frac{2\pi}{b}}dk_{y} \frac{\partial \phi}{\partial k_{y}} \right)= \frac{1}{2\pi}\left( \theta(0)-\theta\left( \frac{2\pi}{a} \right)+\phi(0)- \phi\left( \frac{2\pi}{b} \right) \right)
+\end{align}$$
+我们想要证明这是个整数。在ABCD四个角上的态存在如下关系：
+$$\begin{align}
+ & \ket{\psi\left( \frac{2\pi}{a},0 \right)} =e^{i\phi(0)}\ket{\psi(0,0)}  \\
+  & \ket{\psi\left( 0, \frac{2\pi}{b} \right)} =e^{-i\theta(0)}\ket{\psi(0,0)}  \\
+ & \ket{\psi\left( \frac{2\pi}{a}, \frac{2\pi}{b} \right)} = e^{-i\theta\left(  \frac{2\pi}{a} \right)}\ket{\psi\left(  \frac{2\pi}{a}, 0 \right)}  \\
+ & \ket{\psi\left(  \frac{2\pi}{a}, \frac{2\pi}{b} \right)} = e^{i\phi\left( \frac{2\pi}{b} \right)}\ket{\psi\left( 0, \frac{2\pi}{b} \right)} 
+\end{align}$$
+联立得到：
+$$\begin{align}
+e^{-i\theta\left( \frac{2\pi}{a} \right)}e^{i\phi(0)}=e^{i\phi\left( \frac{2\pi}{b} \right)}e^{-i\theta(0)}\implies \theta(0)-\theta\left( \frac{2\pi}{a} \right)+\phi(0)- \phi\left( \frac{2\pi}{b} \right)=2\pi m,\ m\in \mathbb{Z}
+\end{align}$$
+于是$C\in \mathbb{Z}$。
+
+
 
