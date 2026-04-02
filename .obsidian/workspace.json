@@ -1665,12 +1665,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Notes/半经典运动方程.md",
+                "file": "Experimental/Reflections.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "半经典运动方程"
+              "title": "Reflections"
             }
           }
         ],
@@ -1737,13 +1737,11 @@
               "title": "Search"
             }
           }
-        ],
-        "currentTab": 3
+        ]
       }
     ],
     "direction": "horizontal",
-    "width": 200,
-    "collapsed": true
+    "width": 200
   },
   "right": {
     "id": "9003d078f8dbc4ed",
@@ -1837,6 +1835,7 @@
   },
   "active": "d145477dda34193a",
   "lastOpenFiles": [
+    "Notes/半经典运动方程.md",
     "Notes/输运.md",
     "Notes/Berry phase.md",
     "Notes/AB效应.md",
@@ -1866,7 +1865,6 @@
     "Notes/气体.md",
     "Notes/正规矩阵的对角化.md",
     "Notes/Schrodinger's and Heisenberg's pictures.md",
-    "Notes/Stationary perturbation.md",
     "Pictures/Pasted image 20260330200335.png",
     "Pictures/Pasted image 20260330200247.png",
     "Pictures/Pasted image 20260330200139.png",
