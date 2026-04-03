@@ -88,3 +88,6 @@ $$\begin{align}
 \end{align}$$
 
 
+RSA encryption: $\sim \mathcal{O}(n^{1.58})$
+
+RSA decryption: $\sim \mathcal{O}(\exp(c\cdot n^{1/3}\cdot(\ln n)^{2/3})),\ c\approx 1.92$

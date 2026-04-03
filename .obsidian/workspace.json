@@ -1705,12 +1705,14 @@
             "id": "4df7dbde65c410f2",
             "type": "leaf",
             "state": {
-              "type": "excalidraw",
+              "type": "markdown",
               "state": {
-                "file": "Excalidraw/Drawing 2026-04-03 14.33.41.excalidraw.md"
+                "file": "Notes/Berry curvature的时间和空间反演对称性.md",
+                "mode": "preview",
+                "source": false
               },
-              "icon": "excalidraw-icon",
-              "title": "Drawing 2026-04-03 14.33.41.excalidraw"
+              "icon": "lucide-file",
+              "title": "Berry curvature的时间和空间反演对称性"
             }
           }
         ],
@@ -1777,8 +1779,7 @@
               "title": "Search"
             }
           }
-        ],
-        "currentTab": 3
+        ]
       }
     ],
     "direction": "horizontal",
@@ -1876,8 +1877,9 @@
   },
   "active": "4df7dbde65c410f2",
   "lastOpenFiles": [
-    "Notes/离散对称性.md",
+    "Notes/Bloch定理.md",
     "Excalidraw/Drawing 2026-04-03 14.33.41.excalidraw.md",
+    "Notes/离散对称性.md",
     "Notes/Berry curvature的时间和空间反演对称性.md",
     "Notes/固-气蒸气压.md",
     "Notes/半经典运动方程.md",
@@ -1888,7 +1890,6 @@
     "Notes/AB效应.md",
     "Homework/Physics 463/Physics 463 homework 7.md",
     "Notes/近自由电子模型.md",
-    "Notes/Bloch定理.md",
     "Notes/Fermi-Dirac statistics 与 Fermi gas.md",
     "Pictures/Pasted image 20260401023154.png",
     "Pictures/Pasted image 20260401023129.png",
