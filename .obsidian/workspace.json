@@ -1693,12 +1693,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Notes/Bloch态的时间和空间反演.md",
+                "file": "Notes/Berry curvature的时间和空间反演对称性.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Bloch态的时间和空间反演"
+              "title": "Berry curvature的时间和空间反演对称性"
             }
           }
         ],
@@ -1864,7 +1864,7 @@
   "active": "3fafe90ea10cf486",
   "lastOpenFiles": [
     "Notes/固-气蒸气压.md",
-    "Notes/Bloch态的时间和空间反演.md",
+    "Notes/Berry curvature的时间和空间反演对称性.md",
     "Notes/离散对称性.md",
     "Notes/半经典运动方程.md",
     "Notes/Berry phase.md",
