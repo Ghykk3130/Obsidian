@@ -1679,12 +1679,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Notes/半经典运动方程.md",
+                "file": "Notes/离散对称性.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "半经典运动方程"
+              "title": "离散对称性"
             }
           }
         ],
@@ -1740,7 +1740,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "半经典",
+                "query": "时间反演",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -1751,11 +1751,13 @@
               "title": "Search"
             }
           }
-        ]
+        ],
+        "currentTab": 3
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 200,
+    "collapsed": true
   },
   "right": {
     "id": "9003d078f8dbc4ed",
@@ -1849,8 +1851,8 @@
   },
   "active": "8446eddd043a9645",
   "lastOpenFiles": [
-    "Notes/Berry phase.md",
     "Notes/半经典运动方程.md",
+    "Notes/Berry phase.md",
     "Excalidraw/Drawing 2026-04-02 16.22.11.excalidraw.md",
     "Experimental/Reflections.md",
     "Notes/输运.md",
