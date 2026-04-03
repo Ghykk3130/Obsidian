@@ -1700,9 +1700,21 @@
               "icon": "lucide-file",
               "title": "离散对称性"
             }
+          },
+          {
+            "id": "4df7dbde65c410f2",
+            "type": "leaf",
+            "state": {
+              "type": "excalidraw",
+              "state": {
+                "file": "Excalidraw/Drawing 2026-04-03 14.33.41.excalidraw.md"
+              },
+              "icon": "excalidraw-icon",
+              "title": "Drawing 2026-04-03 14.33.41.excalidraw"
+            }
           }
         ],
-        "currentTab": 120
+        "currentTab": 121
       }
     ],
     "direction": "vertical"
@@ -1770,8 +1782,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200,
-    "collapsed": true
+    "width": 200
   },
   "right": {
     "id": "9003d078f8dbc4ed",
@@ -1863,11 +1874,12 @@
       "obsidian-excalidraw-plugin:New drawing": false
     }
   },
-  "active": "3fafe90ea10cf486",
+  "active": "4df7dbde65c410f2",
   "lastOpenFiles": [
+    "Notes/离散对称性.md",
+    "Excalidraw/Drawing 2026-04-03 14.33.41.excalidraw.md",
     "Notes/Berry curvature的时间和空间反演对称性.md",
     "Notes/固-气蒸气压.md",
-    "Notes/离散对称性.md",
     "Notes/半经典运动方程.md",
     "Notes/Berry phase.md",
     "Excalidraw/Drawing 2026-04-02 16.22.11.excalidraw.md",
@@ -1894,7 +1906,6 @@
     "Notes/2-level system的Berry curvature.md",
     "Notes/群论.md",
     "Notes/电流与电荷.md",
-    "Notes/Fourier transform.md",
     "Pictures/Pasted image 20260330200335.png",
     "Pictures/Pasted image 20260330200247.png",
     "Pictures/Pasted image 20260330200139.png",
