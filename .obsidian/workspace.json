@@ -1693,12 +1693,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Notes/Berry curvature的时间和空间反演对称性.md",
+                "file": "Notes/离散对称性.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Berry curvature的时间和空间反演对称性"
+              "title": "离散对称性"
             }
           }
         ],
@@ -1754,7 +1754,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "时间反演",
+                "query": "离散",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -1765,11 +1765,13 @@
               "title": "Search"
             }
           }
-        ]
+        ],
+        "currentTab": 3
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 200,
+    "collapsed": true
   },
   "right": {
     "id": "9003d078f8dbc4ed",
@@ -1863,8 +1865,8 @@
   },
   "active": "3fafe90ea10cf486",
   "lastOpenFiles": [
-    "Notes/固-气蒸气压.md",
     "Notes/Berry curvature的时间和空间反演对称性.md",
+    "Notes/固-气蒸气压.md",
     "Notes/离散对称性.md",
     "Notes/半经典运动方程.md",
     "Notes/Berry phase.md",
