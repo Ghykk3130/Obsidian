@@ -303,7 +303,7 @@ So we can have $\Gamma_{1}=2,\ z_{1}=1$, $\Gamma_{2}=2,\ z_{2}=-1$, $\Gamma_{3}=
 
 Assume that the velocity is $\mathbf{u}=w(x,y)  \hat{\mathbf{z}}$. Then:
 $$\begin{align}
-\mathbf{u}\cdot \nabla \mathbf{u} & = u \frac{\partial}{\partial z}\mathbf{u}=0
+\mathbf{u}\cdot \nabla \mathbf{u} & = w \frac{\partial}{\partial z}\mathbf{u}=0
 \end{align}$$
 The flow is stationary, so $\frac{\partial \mathbf{u}}{\partial t}=0$. Then the Navier-Stokes equation reduces to:
 $$\begin{align}
@@ -312,7 +312,7 @@ $$\begin{align}
 \end{align}$$
 The boundary condition implies that $w=0$ on the boundary. The equations of boundaries are $x=1,\ x+2-\sqrt{ 3 }y=0,\ x+2+\sqrt{ 3 }y=0$. Then it makes sense to guess:
 $$w(x,y)=C(x-1)(x+2-\sqrt{ 3 }y)(x+2+\sqrt{ 3 }y)$$
-Next we show that if $C$ is a constant, the Poisson equation would be satisfied. Know that $w(x,y)=C(x-1)(x+2-\sqrt{ 3 }y)(x+2+\sqrt{ 3 }y)=C(x^{3}+3x^{2}+3y^{2}-3y^{2}x)$. Then:
+Next we show that if $C$ is a constant, the Poisson equation would be satisfied. Know that $w(x,y)=C(x-1)(x+2-\sqrt{ 3 }y)(x+2+\sqrt{ 3 }y)=C(x^{3}+3x^{2}+3y^{2}-3y^{2}x-4)$. Then:
 $$\begin{align}
  & \frac{\partial^{2}}{\partial x^{2}}w= C(6x+6) \\
  & \frac{\partial^{2}}{\partial y^{2}}w=C(6-6x)
@@ -327,8 +327,10 @@ So long as $C$ is a constant and equal to $- \frac{P}{12\mu}$, $w$ proposed abov
 To find the tangential force, we know that the total tangential force on the fluid is:
 $$F_{1}= \mu\int_{\text{pipe}}dxdydz\nabla^{2}w$$
 Therefore the tangential force per unit length is:
-$$f_{1}=\mu \int_{\text{corss section of the pipe}}dxdy \nabla^{2}w= AP$$
-where $A=$ is 
+$$f_{1}=\mu \int_{\text{cross section of the pipe}}dxdy \nabla^{2}w= -AP$$
+where $A=3\sqrt{ 3 }$ is the area of the cross section of the pipe. Then by Newton's third law, the tangential force per unit length on the pipe is $AP=3\sqrt{ 3 }P$, in the $+z$ direction.
+
+
 
 
 

@@ -1768,7 +1768,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "离散",
+                "query": "navier stokes",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -1880,6 +1880,7 @@
   "lastOpenFiles": [
     "Homework/Math 654/Homework 3 problems.md",
     "Homework/Math 654/Homework 3.md",
+    "Notes/Viscous flow.md",
     "Pictures/Pasted image 20260403165837.png",
     "Notes/Berry curvature的时间和空间反演对称性.md",
     "Notes/Bloch定理.md",
