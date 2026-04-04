@@ -87,7 +87,3 @@ $$\begin{align}
  & = i \bra{ \frac{\partial \mathbf{}}{\partial \mathbf{k}}u_{\mathbf{k}}}\times \ket{ \frac{\partial}{\partial \mathbf{k}}u_{\mathbf{k}}} =\boldsymbol{\Omega}(\mathbf{k}) 
 \end{align}$$
 
-
-RSA encryption: $\sim \mathcal{O}(n^{1.58})$
-
-RSA decryption: $\sim \mathcal{O}(\exp(c\cdot n^{1/3}\cdot(\ln n)^{2/3})),\ c\approx 1.92$

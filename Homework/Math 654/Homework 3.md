@@ -263,6 +263,72 @@ $$\begin{align}
 \end{align}$$
 However, it just means that the total viscous force is zero. It does not imply that the force exerted on the particle in contact with the cylinder by the cylinder is zero. It could be non-zero, and is just canceled out by viscous forces on that particle by other particles. Then by Newton's third law, the net viscous force on the cylinder could be non-zero, which exerts a torque.
 
+# HW3S1
+
+Assume that the positions of the three vortices are $z_{j},\ j=1,2,3$. Let their circulations be $\Gamma_{j}$. Know that the complex potential created by the vortex at $z_{j}$ is:
+$$w_{j}(z)= -\frac{i\Gamma_{j}}{2\pi}\ln(z-z_{j})$$
+Then the velocity induced is:
+$$u-iv= \frac{\Gamma_{j}}{2\pi i(z-z_{j})}$$
+Then the equation of motion for vortex $j$ is:
+$$\begin{align}
+ & \frac{dz^{*}_{j}}{dt}= \frac{1}{2\pi i}\sum_{k\neq j} \frac{\Gamma_{k}}{(z_{j}-z_{k})}
+\end{align}$$
+We set it equal to zero, and obtain:
+$$\begin{align}
+ & \frac{\Gamma_{2}}{z_{1}-z_{2} }+ \frac{\Gamma_{3}}{z_{1}-z_{3}}=0 \\
+ &  \frac{\Gamma_{3}}{z_{2}-z_{3}}+ \frac{\Gamma_{1}}{z_{2}-z_{1}}=0 \\
+ & \frac{\Gamma_{1}}{z_{3}-z_{1}}+ \frac{\Gamma_{2}}{z_{3}-z_{2}}=0
+\end{align} \tag{*}$$
+Then:
+$$\begin{align}
+\frac{\Gamma_{3}}{\Gamma_{2}}= -\frac{z_{1}-z_{3}}{z_{1}-z_{2}}\in \mathbb{R}
+\end{align}$$
+We conclude that $z_{1}-z_{3},\ z_{1}-z_{2}$ are colinear. Therefore $z_{1},z_{2},z_{3}$ are colinear. 
+
+Next we solve:
+$$\begin{align}
+ & z_{2}-z_{3}  = \frac{\Gamma_{3}(z_{1}-z_{2})}{\Gamma_{1}} \\
+ & z_{3}-z_{1}= \frac{\Gamma_{3}(z_{1}-z_{2})}{\Gamma_{2}} \\
+ & z_{1}-z_{2}= \frac{\Gamma_{3}(z_{1}-z_{2})}{\Gamma_{3}}
+\end{align}$$
+Then:
+$$\begin{align}
+ & z_{1}-z_{2}+z_{2}-z_{3}+z_{3}-z_{1}=0 \\
+\implies & \Gamma_{3}(z_{1}-z_{2})\left(  \frac{1}{\Gamma_{1}}+ \frac{1}{\Gamma_{2}}+ \frac{1}{\Gamma_{3}} \right)=0
+\end{align}$$
+Clearly, we require that $\Gamma_{3}\neq 0,\ z_{1}-z_{2}\neq 0$. Then:
+$$\frac{1}{\Gamma_{1}}+ \frac{1}{\Gamma_{2}}+ \frac{1}{\Gamma_{3}}=0$$
+So we can have $\Gamma_{1}=2,\ z_{1}=1$, $\Gamma_{2}=2,\ z_{2}=-1$, $\Gamma_{3}=-1,\ z_{3}=0$ as an example. It's obvious that if the three vortices are constructed this way, then  $(*)$ is satisfied, and the three vortices are stationary.
+# HW3S2
+
+Assume that the velocity is $\mathbf{u}=w(x,y)  \hat{\mathbf{z}}$. Then:
+$$\begin{align}
+\mathbf{u}\cdot \nabla \mathbf{u} & = u \frac{\partial}{\partial z}\mathbf{u}=0
+\end{align}$$
+The flow is stationary, so $\frac{\partial \mathbf{u}}{\partial t}=0$. Then the Navier-Stokes equation reduces to:
+$$\begin{align}
+ & \mu \nabla^{2}\mathbf{u}=\nabla p \\
+\implies & \mu \nabla^{2}w(x,y)= -P
+\end{align}$$
+The boundary condition implies that $w=0$ on the boundary. The equations of boundaries are $x=1,\ x+2-\sqrt{ 3 }y=0,\ x+2+\sqrt{ 3 }y=0$. Then it makes sense to guess:
+$$w(x,y)=C(x-1)(x+2-\sqrt{ 3 }y)(x+2+\sqrt{ 3 }y)$$
+Next we show that if $C$ is a constant, the Poisson equation would be satisfied. Know that $w(x,y)=C(x-1)(x+2-\sqrt{ 3 }y)(x+2+\sqrt{ 3 }y)=C(x^{3}+3x^{2}+3y^{2}-3y^{2}x)$. Then:
+$$\begin{align}
+ & \frac{\partial^{2}}{\partial x^{2}}w= C(6x+6) \\
+ & \frac{\partial^{2}}{\partial y^{2}}w=C(6-6x)
+\end{align}$$
+Then:
+$$\begin{align}
+ & C(6x+6+6-6x)=- \frac{P}{\mu} \\
+\implies & C=- \frac{P}{12\mu}
+\end{align}$$
+So long as $C$ is a constant and equal to $- \frac{P}{12\mu}$, $w$ proposed above would be a solution. 
+
+To find the tangential force, we know that the total tangential force on the fluid is:
+$$F_{1}= \mu\int_{\text{pipe}}dxdydz\nabla^{2}w$$
+Therefore the tangential force per unit length is:
+$$f_{1}=\mu \int_{\text{corss section of the pipe}}dxdy \nabla^{2}w= AP$$
+where $A=$ is 
 
 
 
