@@ -10,5 +10,6 @@ j_{x} & = \frac{1}{A} \frac{A}{(2\pi)^{2}}\int_{\text{BZ}} d^{2}k e\mathbf{v} \\
 \implies \sigma_{xy} & = \frac{e^{2}}{h}C
 \end{align}$$
 这即是TKNN公式。由于$C$是量子化的，$\sigma_{xy}$也是量子化的。
+
 # 2. AHE
 
