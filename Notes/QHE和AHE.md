@@ -13,7 +13,12 @@ j_{x} & = \frac{1}{A} \frac{A}{(2\pi)^{2}}\int_{\text{BZ}} d^{2}k e\mathbf{v} \\
 
 # 2. AHE
 
-考虑一个二维电子气。存在强烈的z方向能量梯度将电子束缚在xy平面中。则存在spin-orbit coupling项$\frac{\hbar}{4m^{2}c^{2}}(\nabla V\times \mathbf{p})\cdot \boldsymbol{\sigma}$。可以由微扰证明，该项等效于k空间的$\lambda(\mathbf{k}\times \boldsymbol{\sigma})\cdot  \hat{\mathbf{z}}$，称为Rashba项。则Hamiltonian可以写为：
+考虑一个二维电子气。若系统在z方向空间反演对称性破缺，例如存在z方向的势能梯度$\nabla V$，则存在spin-orbit coupling项$\frac{\hbar}{4m^{2}c^{2}}(\nabla V\times \mathbf{p})\cdot \boldsymbol{\sigma}$。
+
+>[!Quote] 一个非对称性诱导出势能梯度的例子
+例如$Pt/ Co / AlO_{x}$构成的heterostructure中，$Pt /Co$界面和$Co / AlO_{x}$界面的非对称性会诱导出这样的coupling。在界面处，由于化学势的不同，电子会迁移从而建立电场。而电场由于屏蔽，几乎只存在在分界处。
+
+可以由微扰证明，该项等效于k空间的$\lambda(\mathbf{k}\times \boldsymbol{\sigma})\cdot  \hat{\mathbf{z}}$，称为Rashba项。则Hamiltonian可以写为：
 $$H(\mathbf{k})= \frac{\hbar^{2}k^{2}}{2m}+ \lambda(\mathbf{k}\times \boldsymbol{\sigma})\cdot  \hat{\mathbf{z}}- \Delta \sigma_{z}$$
 其中$-\Delta \sigma_{z}$代表平均场和该电子的交换耦合，取$\Delta>0$用来模拟铁磁体系。$m$为有效质量。
 
