@@ -1735,12 +1735,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Notes/k dot p微扰.md",
+                "file": "Notes/QHE和AHE.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "k dot p微扰"
+              "title": "QHE和AHE"
             }
           }
         ],
@@ -1796,7 +1796,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "LS coupling",
+                "query": "离散",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -1905,8 +1905,11 @@
   },
   "active": "b094c98db4200424",
   "lastOpenFiles": [
-    "Notes/Born-Oppenheimer近似.md",
+    "Pictures/Pasted image 20260405161624.png",
+    "Pictures/Pasted image 20260405160854.png",
+    "Notes/离散对称性.md",
     "Notes/k dot p微扰.md",
+    "Notes/Born-Oppenheimer近似.md",
     "Notes/Bloch定理.md",
     "Notes/QHE和AHE.md",
     "Notes/势阱对称性与波函数对称性.md",
@@ -1923,7 +1926,6 @@
     "Pictures/Pasted image 20260403165837.png",
     "Notes/Berry curvature的时间和空间反演对称性.md",
     "Excalidraw/Drawing 2026-04-03 14.33.41.excalidraw.md",
-    "Notes/离散对称性.md",
     "Notes/固-气蒸气压.md",
     "Excalidraw/Drawing 2026-04-02 16.22.11.excalidraw.md",
     "Experimental/Reflections.md",
@@ -1933,14 +1935,12 @@
     "Notes/Fermi-Dirac statistics 与 Fermi gas.md",
     "Pictures/Pasted image 20260401023154.png",
     "Pictures/Pasted image 20260401023129.png",
-    "Excalidraw/Drawing 2026-04-01 00.34.45.excalidraw.md",
     "Pictures/Pasted image 20260331210712.png",
     "Pictures/Pasted image 20260331210644.png",
     "Pictures/Pasted image 20260330200335.png",
     "Pictures/Pasted image 20260330200247.png",
     "Pictures/Pasted image 20260330200139.png",
     "Pictures/Pasted image 20260330194920.png",
-    "Pictures/Pasted image 20260330194907.png",
     "Homework/Math 654/Homework 2.html",
     "tldraw",
     "Excalidraw/Scripts/Downloaded",
