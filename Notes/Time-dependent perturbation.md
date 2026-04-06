@@ -142,7 +142,7 @@ $$\begin{align}
 \sum_{f\neq i}P(i\rightarrow f) & \approx \int_{\mathbb{R}}dE_{f}\rho(E_{f}) \frac{|V_{fi}|^{2}}{\hbar^{2}}t^{2} \frac{h}{t}\delta(E_{f}-E_{i}) \\
  & \approx \left.\frac{2\pi}{\hbar}t \overline{|V_{fi} |^{2}}\rho(E_{f})\right|_{E_{f} \approx E_{i}} \text{ for large }t
 \end{align}$$
-定义transition rate为transition probability的Radon-Nikodym导数。具体来说：
+定义transition rate为transition probability的Radon-Nikodym导数。它的物理意义为transition probability的瞬时变化。具体来说：
 $$w_{i\rightarrow f}= \frac{\partial}{\partial t}\left( \sum_{f\neq i}P(i\rightarrow f) \right)= \left.\frac{2\pi}{\hbar} \overline{|V_{fi}|^{2}}\rho(E_{f})\right|_{E_{f}\approx E_{i}}$$
 有时直接将转移到单态$f$的transition rate写为$w_{i\rightarrow f}= \frac{2\pi}{\hbar} \overline{|V_{fi}|^{2}}\delta(E_{f}-E_{i})$。则总transition rate需要乘上态密度再积分。
 
