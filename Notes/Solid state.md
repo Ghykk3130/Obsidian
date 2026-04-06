@@ -1178,7 +1178,7 @@ $$T= \frac{\hbar^{2}}{em} \frac{\partial A}{\partial\epsilon}= \frac{\pi \hbar^{
 
 考虑恒定磁场中的自由带电粒子$q$。我们将这个系统量子化。我们有Hamiltonian：
 $$H=\frac{1}{2m}|\vec{p}-q\vec{A}|^{2}$$
-WLOG我们令$\vec{B} \parallel z$，选择Landau gauge猜到：
+WLOG我们令$\vec{B} \parallel z$，选择Landau gauge：
 $$\vec{A}=xB\hat{y}$$
 于是Hamiltonian为：
 $$H= \frac{1}{2m}(p_{x}^{2}+(p_{y}-qxB)^{2}+p_{z}^{2})$$
