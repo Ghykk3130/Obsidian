@@ -92,5 +92,57 @@ c^{(1)}_{f} & = \left( - \frac{i}{\hbar} \right)\int_{0}^{t}dt^{'}e^{i\omega_{fi
 $$\begin{align}
 P(i\rightarrow f) & = |c^{(1)}_{f} |^{2} \\
  & = \frac{|V_{fi}|^{2}}{(E_{f}-E_{i})^{2}} 4 \sin ^{2}\left(  \frac{\omega_{fi}t}{2} \right) \\
- & = \frac{|V_{fi}|^{2}}{\hbar^{2}}4t^{2} \text{sinc}^{2}\left(  \frac{E_{f}-E_{i}}{2\hbar}t \right)\text{, where } \text{sinc}x= \frac{\sin x}{x}
+ & = \frac{|V_{fi}|^{2}}{\hbar^{2}}t^{2} \text{sinc}^{2}\left(  \frac{E_{f}-E_{i}}{2\hbar}t \right)\text{, where } \text{sinc}x= \frac{\sin x}{x}
 \end{align}$$
+![[Pasted image 20260405210936.png|center|500]]
+
+则转移走的概率为：
+$$\sum_{f\neq i}P(i\rightarrow f) \approx \int dE_{f}\rho(E_{f})P(i\rightarrow f)$$
+其中$\rho$为态密度。
+
+我们先来求解积分$\int_{\mathbb{R}}dx \frac{\sin x}{x}$。
+
+>[!Success] Proposition 3.1
+>$\int_{\mathbb{R}}dx \frac{\sin x}{x}=\pi$
+## Proof.
+
+我们决定采用复分析的方法。我们有：
+$$\int_{\mathbb{R}}dx \frac{\sin x}{x}= \mathrm{Im}\left(\int_{\mathbb{R}} dz \frac{e^{iz}}{z}\right)$$
+其中，在$z=0$存在一个一阶奇点，留数为$1$。
+![[Drawing 2026-04-05 20.03.17.excalidraw|center|500]]
+构造上面的contour。由于contour内没有奇点：
+$$\begin{align}
+ & \oint_{C}dz \frac{e^{iz}}{z} =\int_{\text{DA}}+\int_{\text{AB}}+\int_{\text{BC}}+\int_{CD} =0 
+\end{align}$$
+由于$\int_{\text{AD}}$半径取为无限，所以$\int_{\text{AD}}=0$。由小圆引力，在BC上顺时针积分半圆对应$-i\pi$。则：
+$$\int_{\text{AB}}+\int_{CD}=i\pi$$
+取小圆半径$\rightarrow 0$。则：
+$$\int_{\mathbb{R}}dz \frac{e^{iz}}{z}= \int_{\text{AB}}+\int_{\text{CD}}=i\pi$$
+>[!Right]
+>$\blacksquare$
+
+>[!Success] Proposition 3.2
+>$\int_{\mathbb{R}}dx \frac{\sin ^{2}x}{x^{2}}=\pi$
+## Proof.
+
+类似地：
+$$\int_{\mathbb{R}}dx \frac{\sin ^{2}x}{x^{2}}= \int_{\mathbb{R}}dx \frac{1-\cos{2}x}{2x^{2}}=\mathrm{Re}\left( \int_{\mathbb{R}}dz \frac{1-e^{2iz}}{2z^{2}} \right)$$
+取相同的contour，发现$0$处有一留数为$-i$的奇点。于是：
+$$\int_{\text{AB}}+\int_{\text{CD}}= \pi$$
+取小圆半径$\rightarrow 0$，然后取实部即可。
+>[!Right]
+>$\blacksquare$
+
+我们发现$\int_{\mathbb{R}}dE_{f}\text{sinc}^{2}\left( \frac{E_{f}-E_{i}}{2\hbar} t\right)= \frac{2\pi \hbar}{t}= \frac{h}{t}$，而当$t\rightarrow 0$时，只有$E_{i}$附近的取值显著。所以：
+$$\text{sinc}^{2}\left(  \frac{E_{f}-E_{i}}{2\hbar}t \right)\rightarrow \frac{h}{t}\delta(E_{f}-E_{i})\text{ as }t\rightarrow \infty$$
+这是合理的，因为$\text{sinc}^{2}\left(  \frac{E_{f}-E_{i}}{2\hbar}t \right)$的高度$\sim \frac{1}{t^{2}}$，而宽度$\sim t$。
+
+那么：
+$$\begin{align}
+\sum_{f\neq i}P(i\rightarrow f) & \approx \int_{\mathbb{R}}dE_{f}\rho(E_{f}) \frac{|V_{fi}|^{2}}{\hbar^{2}}t^{2} \frac{h}{t}\delta(E_{f}-E_{i}) \\
+ & \approx \left.\frac{2\pi}{\hbar}t \overline{|V_{fi} |^{2}}\rho(E_{f})\right|_{E_{f} \approx E_{i}} \text{ for large }t
+\end{align}$$
+定义transition rate为transition probability的Radon-Nikodym导数。具体来说：
+$$w_{i\rightarrow f}= \frac{\partial}{\partial t}\left( \sum_{f\neq i}P(i\rightarrow f) \right)= \left.\frac{2\pi}{\hbar} \overline{|V_{fi}|^{2}}\rho(E_{f})\right|_{E_{f}\approx E_{i}}$$
+有时直接将转移到单态$f$的transition rate写为$w_{i\rightarrow f}= \frac{2\pi}{\hbar} \overline{|V_{fi}|^{2}}\delta(E_{f}-E_{i})$。则总transition rate需要乘上态密度再积分。
+
