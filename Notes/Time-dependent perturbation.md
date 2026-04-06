@@ -50,7 +50,7 @@ $$\begin{align}
 \implies &  i\hbar \partial_{t}\bra{n} \psi_{I}\rangle= \sum_{m}\bra{n} V_{I}\ket{m} \bra{m} \psi_{I}\rangle=\sum_{m}\bra{n} e^{ \frac{i}{\hbar}H_{0}t}V e^{- \frac{i}{\hbar}H_{0}t}\ket{m} \bra{m} \psi_{I}\rangle \\
 \implies & i\hbar \partial_{t}c_{n}= \sum_{m} e^{i\omega_{nm}t} V_{nm} c_{m},\ \omega_{nm}= \frac{E_{n}-E_{m}}{\hbar}
 \end{align}$$
-# 2. Transition rate
+# 2. Fermi's golden rule
 
 一般来说，$V(t_{0})=0$。我们想要得到$t$时刻观测$H_{0}$的谱，检查系统坍缩到本征态$\ket{f}$的概率。
 
