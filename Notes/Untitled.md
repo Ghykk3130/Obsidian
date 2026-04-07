@@ -42,4 +42,4 @@ $$\text{Gauge choice: }\mathbf{E}= - \frac{\partial \mathbf{A}}{\partial t}$$
 
 $$H(\mathbf{q},t)=e^{-i\mathbf{q}\cdot \mathbf{r}}H(t)e^{i\mathbf{q}\cdot \mathbf{r}}= \frac{|\mathbf{p}+\hbar \mathbf{q}+|e|\mathbf{A}|^{2}}{2m}+V$$$$\epsilon_{n}=\epsilon_{n}(\mathbf{k})$$
 $$\mathbf{j}= \frac{1}{(2\pi)^{2}}\int_{\text{BZ}} d^{2}ke\mathbf{v}f(\epsilon_{n}(\mathbf{k}))$$
-$$C= \frac{1}{2\pi}\int_{\text{BZ}} d^{2}k\Omega$$
+$$C= \frac{1}{2\pi}\int_{\text{BZ}} d^{2}k\Omega_{k_{x},k_{y}}$$
