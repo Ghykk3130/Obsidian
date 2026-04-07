@@ -90,3 +90,16 @@ $$|\psi(t)\rangle = e^{id_n} e^{i\gamma_n} \left( |n\rangle \underbrace{ - i\hba
 > \end{aligned}
 > $$
 
+**Evaluating the Anomalous Term**
+Recall the velocity expectation value derived from the perturbed state:
+$$\langle v_i \rangle = \frac{\partial \epsilon_n(\mathbf{k})}{\hbar \partial k_i} + \Omega^n_{t, q_i}$$
+
+**Transformation of Derivatives**
+Using the definition $\mathbf{k} = \mathbf{q} + \frac{|e|}{\hbar}\mathbf{A}(t)$, the temporal derivative transforms according to the chain rule:
+$$\partial_t = \dot{\mathbf{k}} \cdot \nabla_{\mathbf{k}} = -\frac{|e|}{\hbar}\mathbf{E} \cdot \nabla_{\mathbf{k}}$$
+Substituting this into the definition of $\Omega^n_{t, q_i}$ directly yields the transverse anomalous component.
+
+> [!Success] Semiclassical Equation of Motion
+> The velocity of the Bloch electron acquires an anomalous term proportional to the Berry curvature $\boldsymbol{\Omega}^n(\mathbf{k})$:
+> $$\mathbf{v} = \frac{\partial \epsilon_n(\mathbf{k})}{\hbar \partial \mathbf{k}} + \frac{|e|}{\hbar} \mathbf{E} \times \boldsymbol{\Omega}^n(\mathbf{k})$$
+
