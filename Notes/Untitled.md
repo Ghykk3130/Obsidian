@@ -1,22 +1,38 @@
 
+$$\mathbf{v}= \frac{\mathbf{p}}{m}= \frac{1}{i\hbar}[\mathbf{r},H]$$
+$$\begin{align} \\
+ & \frac{1}{i\hbar}e^{-i\mathbf{k}\cdot \mathbf{r}}[\mathbf{r},H]e^{i\mathbf{k}\cdot \mathbf{r}}=\frac{\partial H(\mathbf{k})}{\hbar \partial \mathbf{k}},\ H(\mathbf{k})= \frac{|\mathbf{p}+\hbar \mathbf{k}|^{2}}{2m}+V(\mathbf{r}) \\
 
-Bee的F1为726.9631614927896 Hz，F2为2125.28747442543 Hz
-![[Pasted image 20260330193648.png]]
-笔的F1为345.38926862834444 Hz， F2为1673.4293680988144 Hz
-![[Pasted image 20260330194920.png]]
+\end{align}$$
+$$\begin{align}
+\implies & 
+\langle v_{j}\rangle= \bra{\psi_{n,\mathbf{k}}}  \frac{\partial H(\mathbf{k})}{\hbar \partial k_{j}}\ket{\psi_{n,\mathbf{k}}} = \frac{\partial\epsilon_{n}(\mathbf{k})}{\hbar \partial k_{j}}+\Omega^{n}_{t,k_{j}}
+\end{align}$$
 
-Loo的F1为355.84247876469544 Hz， F2为1688.4211186803204 Hz
-![[Pasted image 20260330194226.png]]
+$$\ket{\psi_{n,\mathbf{k}}}=e^{id_{n}}e^{i\gamma_{n}}\left( \ket{u_{n,\mathbf{k}}} -i\hbar \sum_{m\neq n} \frac{\ket{u_{m,\mathbf{k}}} \bra{u_{m,\mathbf{k}}} \partial_{t}u_{n,\mathbf{k}}\rangle}{\epsilon_{n}-\epsilon_{m}}\right)$$
 
-路的F1为446.23187014609795 Hz，F2为1832.5804674350316 Hz
-![[Pasted image 20260330194359.png]]
+$$\bra{\psi_{n,\mathbf{k}}} \mathcal{O}\ket{\psi_{n,\mathbf{k}}} = \bra{u_{n,\mathbf{k}}} e^{-i\mathbf{k}\cdot \mathbf{r}}\mathcal{O}e^{i\mathbf{k}\cdot \mathbf{r}}\ket{u_{n,\mathbf{k}}}\implies\text{suffices to use the basis }\{ \ket{u_{n,\mathbf{k}}}  \}  $$
 
-Ma的F1为569.0266320227597 Hz，F2为1482.1032807698957 Hz
-![[Pasted image 20260330194714.png]]
 
-马的F1为544.8216072984599 Hz，F2为1488.9429681551148 Hz
-![[Pasted image 20260330194826.png]]
-
+$$\mathbf{v}= \frac{\partial\epsilon(\mathbf{k})}{\hbar \partial \mathbf{k}}$$
 
 
 
+$H=H(\mathbf{R}(t)),\ \dot{\mathbf{H}}\text{ small}$
+
+$$\ket{\psi} = e^{id_{n}}e^{i\gamma_{n}} \left( \ket{n} - i\hbar \sum_{m\neq n}  \frac{\ket{m} \bra{m} \partial_{t}n\rangle}{\epsilon_{n}-\epsilon_{m}}\right)$$
+
+$$\begin{align}
+ & \ket{n(t)} \text{ - instantaneous eigenkets} \\
+ & d_{n}\text{ - dynamic phase} \\
+ & \gamma_{n}\text{ - Berry phase}
+\end{align}$$
+
+
+$$\gamma_{n}=\int_{0}^{T}dt i \bra{n} \frac{\partial}{\partial t}n\rangle=\oint d\mathbf{R}\cdot i\bra{n}  \frac{\partial}{\partial \mathbf{R}}n\rangle=\int d^{2}R \hat{\mathbf{n}}\cdot \boldsymbol{\Omega}$$
+
+
+
+
+
+$$\boldsymbol{\Omega}^{n}= i \bra{ \frac{\partial}{\partial \mathbf{R}}n}\times \ket{ \frac{\partial}{\partial \mathbf{R}}n}  $$
