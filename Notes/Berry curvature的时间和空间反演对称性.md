@@ -87,3 +87,4 @@ $$\begin{align}
  & = i \bra{ \frac{\partial \mathbf{}}{\partial \mathbf{k}}u_{\mathbf{k}}}\times \ket{ \frac{\partial}{\partial \mathbf{k}}u_{\mathbf{k}}} =\boldsymbol{\Omega}(\mathbf{k}) 
 \end{align}$$
 
+$$\text{Broken symmetry}\implies C\neq 0$$
