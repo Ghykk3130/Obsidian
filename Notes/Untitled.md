@@ -162,3 +162,4 @@ $$H(\mathbf{k}) = \underbrace{\frac{\hbar^2 k^2}{2m^{*}}}_{\text{Kinetic Energy}
 The Berry curvature $\Omega$ is determined by the solid angle subtended by the unit vector $\hat{\mathbf{n}}(\mathbf{k}) = \mathbf{h}/|\mathbf{h}|$ on the Bloch sphere.
 
 $$\Omega_{\pm} = \mp \frac{\Delta \lambda^2}{2(\lambda^2k^2 + \Delta^2)^{3/2}}$$
+$$\text{No symmetry breaking}\implies \boldsymbol{\Omega}(\mathbf{k})=0$$
