@@ -40,4 +40,4 @@ $$\boldsymbol{\Omega}^{n}= i \bra{ \frac{\partial}{\partial \mathbf{R}}n}\times 
 
 $$\text{Gauge choice: }\mathbf{E}= - \frac{\partial \mathbf{A}}{\partial t}$$
 
-$$H(\mathbf{q},t)=e^{-i\mathbf{q}\cdot \mathbf{r}}H(t)e^{i\mathbf{q}\cdot \mathbf{r}}= \frac{|\mathbf{p}+\hbar \mathbf{q}+|e|\mathbf{A}|^{2}}{2m}+V$$
+$$H(\mathbf{q},t)=e^{-i\mathbf{q}\cdot \mathbf{r}}H(t)e^{i\mathbf{q}\cdot \mathbf{r}}= \frac{|\mathbf{p}+\hbar \mathbf{q}+|e|\mathbf{A}|^{2}}{2m}+V$$$$\epsilon_{n}=\epsilon_{n}(\mathbf{k})$$
