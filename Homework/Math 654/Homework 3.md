@@ -206,7 +206,7 @@ $$\begin{align}
 Then $\mu\left(  \frac{\partial u_{j}}{\partial x_{i}}+ \frac{\partial u_{i}}{\partial x_{j}} \right)=0$
 # Acheson 6.8
 
-The velocity field is $\mathbf{u}=(\beta x_{2},0,0)$. Fix $z$, in the $y\geq 0$ region, the flow is to the positive x direction. In the $y< 0$ region, the flow is to the negative x direction. This is consistent the the rightmost plot in the problem.
+The velocity field is $\mathbf{u}=(\beta x_{2},0,0)$. Fix $z$, in the $y\geq 0$ region, the flow is to the positive x direction. In the $y< 0$ region, the flow is to the negative x direction. This is consistent with the rightmost plot in the problem.
 
 Then the velocity gradient is represented by:
 $$\nabla \mathbf{u} \overset{\wedge}{=}\begin{pmatrix}
@@ -217,8 +217,8 @@ $$\nabla \mathbf{u} \overset{\wedge}{=}\begin{pmatrix}
 The following decomposition applies:
 $$\begin{align}
 \begin{pmatrix}
+0 & \beta & 0 \\
 0 & 0 & 0 \\
-\beta & 0 & 0 \\
 0 & 0 & 0
 \end{pmatrix}= 0+  \begin{pmatrix}
  0 &  \frac{\beta}{2} & 0 \\
