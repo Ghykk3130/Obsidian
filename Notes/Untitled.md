@@ -123,6 +123,7 @@ $$2\pi C = \theta(0)-\theta\left(\frac{2\pi}{a}\right) + \phi(0)-\phi\left(\frac
 The four corners of the BZ correspond to the exact same point in reciprocal space. Evaluating the phase consistency along the corners requires:
 $$e^{-i\theta\left( \frac{2\pi}{a} \right)}e^{i\phi(0)}=e^{i\phi\left( \frac{2\pi}{b} \right)}e^{-i\theta(0)}$$
 
-> [!danger] Topological Quantization
+> [!Success] Topological Quantization
 > Taking the logarithm of the corner consistency condition strictly dictates that the total phase winding must be an integer multiple of $2\pi$:
 > $$2\pi C = 2\pi m \implies C \in \mathbb{Z}$$
+
