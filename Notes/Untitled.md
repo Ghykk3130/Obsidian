@@ -103,3 +103,26 @@ Substituting this into the definition of $\Omega^n_{t, q_i}$ directly yields the
 > The velocity of the Bloch electron acquires an anomalous term proportional to the Berry curvature $\boldsymbol{\Omega}^n(\mathbf{k})$:
 > $$\mathbf{v} = \frac{\partial \epsilon_n(\mathbf{k})}{\hbar \partial \mathbf{k}} + \frac{|e|}{\hbar} \mathbf{E} \times \boldsymbol{\Omega}^n(\mathbf{k})$$
 
+
+
+
+**1. Stokes' Theorem on the Brillouin Zone**
+The Chern number is defined over the 2-torus BZ: $C = \frac{1}{2\pi}\int_{\text{BZ}} \Omega_{k_z} d^2k$.
+Applying Stokes' theorem to the BZ boundary ($\partial\text{BZ} = \text{AB}\cup\text{BC}\cup\text{CD}\cup\text{DA}$):
+$$C = \frac{1}{2\pi} \left[ \int_{0}^{\frac{2\pi}{a}} \Delta A_{k_x}(k_x) dk_x + \int_{0}^{\frac{2\pi}{b}} \Delta A_{k_y}(k_y) dk_y \right]$$
+
+**2. Gauge Transformation across Edges**
+States on opposite BZ edges describe the same physical state up to a gauge phase:
+$$|\psi(k_x, 0)\rangle = e^{i\theta(k_x)}|\psi(k_x, \frac{2\pi}{b})\rangle \implies \Delta A_{k_x} = -\frac{\partial \theta}{\partial k_x}$$
+$$|\psi(\frac{2\pi}{a}, k_y)\rangle = e^{i\phi(k_y)}|\psi(0, k_y)\rangle \implies \Delta A_{k_y} = -\frac{\partial \phi}{\partial k_y}$$
+Integration directly yields the phase accumulation along the boundary:
+$$2\pi C = \theta(0)-\theta\left(\frac{2\pi}{a}\right) + \phi(0)-\phi\left(\frac{2\pi}{b}\right)$$
+
+**3. Single-Valuedness at BZ Corners**
+
+The four corners of the BZ correspond to the exact same point in reciprocal space. Evaluating the phase consistency along the corners requires:
+$$e^{-i\theta\left( \frac{2\pi}{a} \right)}e^{i\phi(0)}=e^{i\phi\left( \frac{2\pi}{b} \right)}e^{-i\theta(0)}$$
+
+> [!danger] Topological Quantization
+> Taking the logarithm of the corner consistency condition strictly dictates that the total phase winding must be an integer multiple of $2\pi$:
+> $$2\pi C = 2\pi m \implies C \in \mathbb{Z}$$
