@@ -7,6 +7,7 @@
 - When gluing samples on metal block, make sure the block surface is clean. Then put sample on. Then put crystal bond on.
 - When $< 10 K$, make sure $dT \approx 0.1T$ on the sample. When $> 10K$, make sure $dT\geq 1K$. If too much noise, meaning excitation is not large enough. Monitor and adjust the excitation for each one or two temperatures.
 - Should look at previous data if observe anything unusual.
+- Given $S_{ij}$, use the direction of j to determine the polarity of the contact. Then adjust the sign of vnernst.
 
 # Thoughts
 - M v.s. T goes up because of spin flop.
