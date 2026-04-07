@@ -154,3 +154,11 @@ $$j_x = -\frac{e^2}{h} C E$$
 $$\begin{aligned}
 j_x &= -\frac{e^2}{\hbar (2\pi)^2} E \int_{\text{BZ}} \Omega_{k_x, k_y} d^2k=- \frac{e^{2}}{h}CE
 \end{aligned}$$
+
+In a 2D system, breaking the $z \to -z$ inversion symmetry (e.g., via a potential gradient $\nabla V$) introduces a relativistic spin-orbit coupling.
+
+$$H(\mathbf{k}) = \underbrace{\frac{\hbar^2 k^2}{2m^{*}}}_{\text{Kinetic Energy}} + \underbrace{\lambda(\mathbf{k}\times \sigma)\cdot   \hat{\mathbf{z}}}_{\text{Rashba SOC}} - \underbrace{\Delta \sigma_z}_{\text{Exchange Interaction}}$$
+
+The Berry curvature $\Omega$ is determined by the solid angle subtended by the unit vector $\hat{\mathbf{n}}(\mathbf{k}) = \mathbf{h}/|\mathbf{h}|$ on the Bloch sphere.
+
+$$\Omega_{\pm} = \mp \frac{\Delta \lambda^2}{2(\lambda^2k^2 + \Delta^2)^{3/2}}$$

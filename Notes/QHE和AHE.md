@@ -24,7 +24,7 @@ $$H(\mathbf{k})= \frac{\hbar^{2}k^{2}}{2m}+ \lambda(\mathbf{k}\times \boldsymbol
 
 容易看出，本征态为$\ket{u_{\mathbf{k}}}$和方向在$(\lambda k_{x}, -\lambda k_{y},-\Delta)$的两个本征态的直积。显然能带结构为：
 $$\begin{align}
-\epsilon_{\pm}(\mathbf{k})= \frac{\hbar^{2}k^{2}}{2m}\pm \frac{\hbar}{2} \sqrt{ \lambda^{2}k^{2}+\Delta^{2} }
+\epsilon_{\pm}(\mathbf{k})= \frac{\hbar^{2}k^{2}}{2m^{}}\pm \frac{\hbar}{2} \sqrt{ \lambda^{2}k^{2}+\Delta^{2} }
 \end{align}$$
 ![[Pasted image 20260405160854.png|center|300]]
 
@@ -34,7 +34,7 @@ $$\Omega_{k_{x},k_{y}}= \frac{1}{2} \left|\frac{\partial(\phi,\cos \theta)}{\par
 $$\Omega_{\pm}= \mp \frac{\Delta \lambda^{2}}{(\lambda^{2}k^{2}+\Delta^{2})^{3/2}}$$
 则这两条能带贡献的Hall conductivity可以写为：
 $$\begin{align}
-\sigma_{xy} & = \frac{e^{2}}{\hbar} \frac{1}{(2\pi)^{2}} \int d^{2}kf(\epsilon_{-}) \Omega_{-} +\frac{e^{2}}{\hbar} \frac{1}{(2\pi)^{2}}\int d^{2}kf(\epsilon_{+})\Omega_{+}
+\sigma_{xy} & = -\frac{e^{2}}{\hbar} \frac{1}{(2\pi)^{2}} \int d^{2}kf(\epsilon_{-}) \Omega_{-} -\frac{e^{2}}{\hbar} \frac{1}{(2\pi)^{2}}\int d^{2}kf(\epsilon_{+})\Omega_{+}
 \end{align}$$
 若$\epsilon_{F}$太小，那么$f(\epsilon_{+})=0$，只有第一项贡献，积分区域为Fermi circle内部。由于$\epsilon_{F}$越高，Fermi circle就越大，且$\Omega_{-}>0$，我们知道$\sigma_{xy}$会随着$\epsilon_{F}$的上涨而上涨。若$\epsilon_{F}$，过大，则第一项和第二项都会贡献。此时第一项$f(\epsilon_{-})$，积分区域取BZ，为常数。第二项积分区域为Fermi circle内部。由于$\Omega_{+}<0$，$\epsilon_{F}$增大会导致$\sigma_{xy}$变小。故只有Fermi level在$\pm \Delta$之间时贡献主要Hall conductivity。
 
