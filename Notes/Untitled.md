@@ -36,3 +36,7 @@ $$\gamma_{n}=\int_{0}^{T}dt i \bra{n} \frac{\partial}{\partial t}n\rangle=\oint 
 
 
 $$\boldsymbol{\Omega}^{n}= i \bra{ \frac{\partial}{\partial \mathbf{R}}n}\times \ket{ \frac{\partial}{\partial \mathbf{R}}n}  $$
+
+
+$$\text{Gauge choice: }\mathbf{E}= - \frac{\partial \mathbf{A}}{\partial t}$$
+
