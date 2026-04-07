@@ -1777,12 +1777,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Notes/QHE和AHE.md",
+                "file": "Notes/Untitled.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "QHE和AHE"
+              "title": "Untitled"
             }
           }
         ],
@@ -1849,13 +1849,11 @@
               "title": "Search"
             }
           }
-        ],
-        "currentTab": 3
+        ]
       }
     ],
     "direction": "horizontal",
-    "width": 425.5,
-    "collapsed": true
+    "width": 508.5
   },
   "right": {
     "id": "9003d078f8dbc4ed",
@@ -1949,13 +1947,13 @@
   },
   "active": "0da080ac5fe9d2ce",
   "lastOpenFiles": [
+    "Notes/QHE和AHE.md",
     "Notes/AHE.md",
     "Notes/AB效应.md",
     "Notes/Untitled.md",
     "Notes/Berry phase.md",
     "Notes/Transport.md",
     "Notes/半经典运动方程.md",
-    "Notes/QHE和AHE.md",
     "Notes/Bloch定理.md",
     "Notes/Blasius定理，Chaplygin定理.md",
     "Notes/Baker-Campbell-Hausdorff Formula.md",

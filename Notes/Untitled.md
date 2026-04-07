@@ -127,3 +127,30 @@ $$e^{-i\theta\left( \frac{2\pi}{a} \right)}e^{i\phi(0)}=e^{i\phi\left( \frac{2\p
 > Taking the logarithm of the corner consistency condition strictly dictates that the total phase winding must be an integer multiple of $2\pi$:
 > $$2\pi C = 2\pi m \implies C \in \mathbb{Z}$$
 
+
+
+**Integrating the Hall Current**
+For a 2D insulator, the Fermi sea consists of completely filled bands. The integral of the band dispersion term over the periodic Brillouin zone exactly vanishes: $\int_{\text{BZ}} \frac{\partial \epsilon}{\partial \mathbf{k}} d^2k = 0$. 
+
+Applying an electric field $\mathbf{E} = E \hat{\mathbf{y}}$, the velocity becomes $\mathbf{v} = \frac{|e|}{\hbar}E\Omega_{k_x, k_y} \hat{\mathbf{x}}$.
+The macroscopic charge current density $j_x$ is obtained by integrating the velocity of all occupied states over the BZ:
+$$
+\begin{aligned}
+j_x &= \frac{1}{(2\pi)^2} \int_{\text{BZ}} e v_x d^2k \\
+&= \frac{1}{(2\pi)^2} \int_{\text{BZ}} e \left( \frac{|e|}{\hbar} \Omega_{k_x, k_y} E \right) d^2k \\
+&= -\frac{e^2}{\hbar (2\pi)^2} E \int_{\text{BZ}} \Omega_{k_x, k_y} d^2k
+\end{aligned}
+$$
+
+Using the definition of the Chern number $C = \frac{1}{2\pi}\int_{\text{BZ}} \Omega_{k_x, k_y} d^2k$, we substitute $\int \Omega d^2k = 2\pi C$:
+$$j_x = -\frac{e^2}{h} C E$$
+
+> [!Success] TKNN Formula (1982)
+> From $j_x = \sigma_{xy} E_y$, the Hall conductivity is strictly determined by the topological invariant of the bulk band:
+> $$\sigma_{xy} = -\frac{e^2}{h}C$$
+> Since the Chern number $C \in \mathbb{Z}$, the Hall conductivity must be exactly quantized.
+
+
+$$\begin{aligned}
+j_x &= -\frac{e^2}{\hbar (2\pi)^2} E \int_{\text{BZ}} \Omega_{k_x, k_y} d^2k=- \frac{e^{2}}{h}CE
+\end{aligned}$$
