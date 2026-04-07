@@ -43,3 +43,50 @@ $$\text{Gauge choice: }\mathbf{E}= - \frac{\partial \mathbf{A}}{\partial t}$$
 $$H(\mathbf{q},t)=e^{-i\mathbf{q}\cdot \mathbf{r}}H(t)e^{i\mathbf{q}\cdot \mathbf{r}}= \frac{|\mathbf{p}+\hbar \mathbf{q}+|e|\mathbf{A}|^{2}}{2m}+V$$$$\epsilon_{n}=\epsilon_{n}(\mathbf{k})$$
 $$\mathbf{j}= \frac{1}{(2\pi)^{2}}\int_{\text{BZ}} d^{2}ke\mathbf{v}f(\epsilon_{n}(\mathbf{k}))$$
 $$C= \frac{1}{2\pi}\int_{\text{BZ}} d^{2}k\Omega_{k_{x},k_{y}}$$
+
+>[!Note] Setup
+>Time-dependent Hamiltonian $H = H(\mathbf{R}(t))$, with $\dot{\mathbf{R}} \to 0$.
+>Let $|n(\mathbf{R})\rangle$ be the instantaneous eigenkets with energy $\epsilon_n$.
+
+> [!theorem] First-Order Perturbed State
+> The state evolves with a dynamic phase $d_n$ and Berry phase $\gamma_n$:
+> $$|\psi(t)\rangle = e^{id_n} e^{i\gamma_n} \left( |n\rangle \underbrace{ - i\hbar \sum_{m \neq n} \frac{|m\rangle\langle m|\partial_t n\rangle}{\epsilon_n - \epsilon_m} }_{\text{First-order correction}} \right)$$
+
+> [!Success] Geometric Phase (Closed Loop)
+> Using Stokes' theorem, the Berry phase over a closed path in parameter space is:
+> $$
+> \begin{aligned}
+> \gamma_n &= \oint d\mathbf{R} \cdot i\langle n | \nabla_{\mathbf{R}} | n \rangle \\
+> &= \int d\mathbf{S} \cdot \boldsymbol{\Omega}_n \quad (\text{Berry Curvature})
+> \end{aligned}
+> $$
+Define the velocity operator:
+$$\mathbf{v} = \frac{\mathbf{p}}{m} = \frac{1}{i\hbar}[\mathbf{r}, H]$$
+
+Transforming to the cell-periodic basis $\{|u_{n,\mathbf{k}}\rangle\}$, the effective operator becomes:
+$$\tilde{\mathbf{v}}(\mathbf{k}) = \frac{1}{i\hbar} e^{-i\mathbf{k}\cdot\mathbf{r}}[\mathbf{r}, H]e^{i\mathbf{k}\cdot\mathbf{r}} = \frac{\partial H(\mathbf{k})}{\hbar \partial \mathbf{k}}$$
+
+Evaluating the expectation value $\langle \psi_{n,\mathbf{k}} | \tilde{v}_j | \psi_{n,\mathbf{k}} \rangle$ using the first-order perturbed state:
+
+> [!Success] Emergence of Anomalous Velocity
+> The cross-terms between the 0th-order and 1st-order states yield an extra geometric contribution transverse to the band dispersion:
+> $$\langle v_j \rangle = \frac{\partial \epsilon_n(\mathbf{k})}{\hbar \partial k_j} + \Omega^n_{t, k_j}$$
+
+
+**1. Adiabatic Setup**
+Time-dependent Hamiltonian $H = H(\mathbf{R}(t))$, with $\dot{\mathbf{R}} \to 0$.
+Let $|n(\mathbf{R})\rangle$ be the instantaneous eigenkets with energy $\epsilon_n$.
+
+**2. First-Order Perturbed State**
+The state evolves with a dynamic phase $d_n$ and Berry phase $\gamma_n$:
+$$|\psi(t)\rangle = e^{id_n} e^{i\gamma_n} \left( |n\rangle \underbrace{ - i\hbar \sum_{m \neq n} \frac{|m\rangle\langle m|\partial_t n\rangle}{\epsilon_n - \epsilon_m} }_{\text{First-order correction}} \right)$$
+
+> [!success] Geometric Phase (Closed Loop)
+> Using Stokes' theorem, the Berry phase over a closed path in parameter space isolates the geometric contribution:
+> $$
+> \begin{aligned}
+> \gamma_n &= \oint d\mathbf{R} \cdot i\langle n | \nabla_{\mathbf{R}} | n \rangle \\
+> &= \int d\mathbf{S} \cdot \boldsymbol{\Omega}_n \quad (\text{Berry Curvature})
+> \end{aligned}
+> $$
+
