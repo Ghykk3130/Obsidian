@@ -36,5 +36,9 @@ Problems: lack micro-expressions. Cannot keep object colors. Energy cost. e.g. s
 
 method: public key and private key. symmetric cryptography and asymmetric cryptography
 
+key features: confidentiality, sender authenticity, message integrity
 
+Blockchain: sign the transaction as the private key. all people know the sending. transaction gets hashed. Ex: the CEO died, never get back the keys to the money
+
+Other uses: messaging, Limitations: losing private keys permenent. Man in the middle attacks, international vulnerabilities. 
 
