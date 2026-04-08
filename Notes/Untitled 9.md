@@ -20,3 +20,21 @@ Better agentic architectures: separate communication interface, writable state o
 
 analyze-can analyze scripts to provide insight on potential audience reception and suggest improvement. 
 
+AI acting: AI actors: Meet Tilly Norwood 
+
+AI in the production process: handle repetitive task like rotoscoping, animation, cost efficiency. 
+
+CGI: computer generated imagery: AI imagery
+
+AI video generation
+
+AI in editing: take raw footage from multiple cuts and join it in one in way that makes sense to the movie. Remove fluff like long pauses and words like uhh. 
+
+Problems: lack micro-expressions. Cannot keep object colors. Energy cost. e.g. sora closing down. ethical concerns like ai art.  
+
+# N to N encryption (E2EE)
+
+method: public key and private key. symmetric cryptography and asymmetric cryptography
+
+
+
