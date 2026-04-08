@@ -20,3 +20,8 @@
 - Make better sample for the Nernst.
 - In $M\text{ v.s. }B$ landscape, for zero field, helical state, small field, cone state, then skyrmion in a narrow window, then paramagnetic phase. 
 - Skyrmion phase likely between 220, 240. Broaden the range. 
+
+
+
+Haidong Zhou, david mandrus, nirmal ghimire, pengcheng dai,  
+
