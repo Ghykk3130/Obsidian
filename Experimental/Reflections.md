@@ -15,11 +15,9 @@
 - Noise from contact is Johnson noise.
 
 # To do
-- Scan $M\text{ v.s. }T$ around $180K$. 
-- Do $S_{\text{zx}}\text{ v.s. }B$ around $180K$ in steps of $5K$, for above and below 5 or 6 steps. Do the same for $M\text{ v.s. }B$, and then do a subtraction. 
-- Make better sample for the Nernst.
-- In $M\text{ v.s. }B$ landscape, for zero field, helical state, small field, cone state, then skyrmion in a narrow window, then paramagnetic phase. 
-- Skyrmion phase likely between 220, 240. Broaden the range. 
+- Suspect that the discrepency below 170K
+
+
 
 
 
