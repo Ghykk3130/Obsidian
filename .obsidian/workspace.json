@@ -1791,12 +1791,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Notes/Untitled 9.md",
+                "file": "Notes/Solid state.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Untitled 9"
+              "title": "Solid state"
             }
           }
         ],
@@ -1852,7 +1852,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "离散对称",
+                "query": "stoner",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -1863,11 +1863,13 @@
               "title": "Search"
             }
           }
-        ]
+        ],
+        "currentTab": 3
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 200,
+    "collapsed": true
   },
   "right": {
     "id": "9003d078f8dbc4ed",
@@ -1929,13 +1931,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Notes/Untitled 9.md",
+                "file": "Notes/Solid state.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of Untitled 9"
+              "title": "Outline of Solid state"
             }
           }
         ],
@@ -1960,13 +1962,14 @@
   },
   "active": "02266caad71d8da5",
   "lastOpenFiles": [
-    "Notes/Untitled.md",
-    "Notes/Untitled 9.md",
+    "Reading notes/Topological properties and dynamics of magnetic skyrmions.md",
+    "Notes/Solid state.md",
     "Experimental/Reflections.md",
+    "Notes/Untitled 9.md",
+    "Notes/Untitled.md",
     "Notes/输运.md",
     "Notes/Spin以及spinor formalism的基变换.md",
     "Notes/Spherical tensor.md",
-    "Notes/Solid state.md",
     "Notes/Schrodinger's and Heisenberg's pictures.md",
     "Notes/QHE和AHE.md",
     "Notes/Berry phase.md",
@@ -1985,7 +1988,6 @@
     "Notes/Bloch定理.md",
     "Notes/Blasius定理，Chaplygin定理.md",
     "Notes/Baker-Campbell-Hausdorff Formula.md",
-    "Notes/量子统计力学基础.md",
     "Pictures/Pasted image 20260405210936.png",
     "Pictures/Pasted image 20260405161624.png",
     "Pictures/Pasted image 20260405160854.png",
