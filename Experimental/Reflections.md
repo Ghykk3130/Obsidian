@@ -15,7 +15,10 @@
 - Noise from contact is Johnson noise.
 
 # To do
-- Suspect that the discrepency below 170K
+- In the discrepancy region, scan slowly. e.g. if you used 30 oe/s before, use 5 oe/s. Sweep up with heater on/off mode, to get the background. For sweeping down, keep the heater on, to get a continuum of points. The background is known for the up sweep.
+- Scan the rest of the region using higher rate. 
+- Observe that the gap before polarization is the largest with for 170K, so suspect there will be a peak below 170K. Choose some temperatures in this range. 
+- Suspect that the Nernst is not symmetric in the region before polarization.
 
 
 
