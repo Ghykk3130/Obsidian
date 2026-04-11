@@ -34,14 +34,10 @@ $$H=-2J \boldsymbol{\sigma}_{1}\cdot \boldsymbol{\sigma}_{2}+\epsilon_{0}\text{,
 $$H=-J\sum_{<ij>}\mathbf{S}_{i}\cdot \mathbf{S}_{j}$$
 令$\mathbf{S}_{i},\mathbf{S}_{j}$夹角为$\phi_{ij}$，那么：
 $$H=-J\sum_{<ij>}S^{2}\cos \phi_{ij}$$
-假设$\phi_{ij}$很小，展开后得到：
+假设$\phi_{ij}$很小，重新选取能量零点展开后得到：
 $$\begin{align}
-H & = -JS^{2}N+ \frac{JS^{2}}{2}\sum_{<ij>}\phi_{ij}^{2}
+H & = \frac{JS^{2}}{2}\sum_{<ij>}\phi_{ij}^{2}
 \end{align}$$
-第一项连续化得到：
-
-
-
 令$\mathbf{m}_{i}= \frac{\mathbf{M}_{i}}{M_{i}}$为磁矩密度的方向。那么$\phi_{ij}=|\mathbf{m}_{i}-\mathbf{m}_{j}|$。
 ![[Drawing 2026-04-10 20.16.16.excalidraw|center|500]]
 代入$\mathbf{m}_{j}$的展开$\mathbf{m}_{j}=\mathbf{m}_{i}+ \mathbf{r}_{ij}\cdot \nabla \mathbf{m}_{i}$，则有：
