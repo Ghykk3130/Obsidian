@@ -1833,12 +1833,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Reading notes/Skyrmion lattice in a chiral magnet.md",
+                "file": "Notes/Heisenberg交换.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Skyrmion lattice in a chiral magnet"
+              "title": "Heisenberg交换"
             }
           }
         ],
@@ -1972,13 +1972,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Reading notes/Skyrmion lattice in a chiral magnet.md",
+                "file": "Notes/Heisenberg交换.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of Skyrmion lattice in a chiral magnet"
+              "title": "Outline of Heisenberg交换"
             }
           }
         ],
@@ -2003,8 +2003,8 @@
   },
   "active": "9b0ad0bd227e116a",
   "lastOpenFiles": [
-    "Reading notes/Finite-temperature violation of the anomalous transverse Wiedmann-Franz law.md",
     "Reading notes/Skyrmion lattice in a chiral magnet.md",
+    "Reading notes/Finite-temperature violation of the anomalous transverse Wiedmann-Franz law.md",
     "Reading notes/Electrical resistance of ferromagnetic metals.md",
     "Reading notes/Dynamics and critical currents in fast superconducting vortices at high pulsed magnetic fields.md",
     "Reading notes/Doping-induced spin reorientation in Kagome magnet TmMn6Sn6.md",
