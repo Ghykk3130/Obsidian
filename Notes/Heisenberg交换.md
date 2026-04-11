@@ -1,3 +1,5 @@
+# 1. 离散情形
+
 考虑两个电子拥有总hamiltonian：
 $$H=H_{1}+H_{2}+V\text{, where }V(\mathbf{r}_{1},\mathbf{r}_{2})= \frac{e^{2}}{4\pi\epsilon} \frac{1}{|\mathbf{r}_{1}-\mathbf{r}_{2}|}$$
 设$H_{1}$具有本征态$\ket{\phi_{1}}$，$H_{2}$具有本征态$\ket{\phi_{2}}$，两个电子的空间态被锁死在这两个态的空间里面，不跃迁到别的态。那么系统Hilbert空间的基为：
@@ -26,4 +28,25 @@ $$\ket{\psi_{1,1}} \leftrightarrow \ket{1,1} ,\ \ket{\psi_{1,0}} \leftrightarrow
 那么$H$可以等效为：
 $$H=-2J \boldsymbol{\sigma}_{1}\cdot \boldsymbol{\sigma}_{2}+\epsilon_{0}\text{, where }\epsilon_{0}=\epsilon_{1}+\epsilon_{2}+C+ \frac{J}{2}$$
 
+# 2. 连续化
 
+不妨重新定义交换常数，将Heisenberg交换写为：
+$$H=-J\sum_{<ij>}\mathbf{S}_{i}\cdot \mathbf{S}_{j}$$
+令$\mathbf{S}_{i},\mathbf{S}_{j}$夹角为$\phi_{ij}$，那么：
+$$H=-J\sum_{<ij>}S^{2}\cos \phi_{ij}$$
+假设$\phi_{ij}$很小，展开后重新选取能量零点得到：
+$$\begin{align}
+H & = \frac{JS^{2}}{2}\sum_{<ij>}\phi_{ij}^{2}
+\end{align}$$
+令$\mathbf{m}_{i}= \frac{\mathbf{M}_{i}}{M_{i}}$为磁矩密度的方向。那么$\phi_{ij}=|\mathbf{m}_{i}-\mathbf{m}_{j}|$。
+![[Drawing 2026-04-10 20.16.16.excalidraw|center|500]]
+代入$\mathbf{m}_{j}$的展开$\mathbf{m}_{j}=\mathbf{m}_{i}+ \mathbf{r}_{ij}\cdot \nabla \mathbf{m}_{i}$，则有：
+$$\begin{align}
+H & = \frac{JS^{2}}{2}\sum_{<ij>}|\mathbf{r}_{ij}\cdot \nabla \mathbf{m}_{i} |^{2}
+\end{align}$$
+若晶体是简单立方晶体，重写系数然后连续化得到：
+$$\begin{align}
+H & = \frac{JS^{2}}{2}\sum_{<ij>}2a^{2}(\nabla \mathbf{m})^{2} \\
+ & = \frac{JS^{2}}{2}\cdot 2a^{2}\cdot \frac{1}{a^{3}}\int d^{3}r(\nabla \mathbf{m} )^{2} \\
+ & = J \int d^{3}r(\nabla \mathbf{m})^{2}
+\end{align}$$
