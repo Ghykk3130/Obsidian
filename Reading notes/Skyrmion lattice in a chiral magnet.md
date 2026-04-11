@@ -5,13 +5,15 @@ F[\mathbf{M}] & = \int d^{3}r[J(\nabla \mathbf{M})^{2}+2D\mathbf{M}\cdot(\nabla 
 \end{align}$$
 其中$r_{0}M^{2}+UM^{4}$为Landau铁磁项，$-\mathbf{B}\cdot \mathbf{M}$为Zeeman项。我们考虑一个ansatz：
 $$\mathbf{M}(\mathbf{r})=\mathbf{M}_{0}+\sum_{j}\mathbf{m}_{\mathbf{q}_{j}}e^{i\mathbf{q}_{j}\cdot \mathbf{r}}$$
+为保证$\mathbf{M}$是实的，令$\mathbf{m}_{-\mathbf{q}_{j}}=\mathbf{m}_{\mathbf{q}_{j}}^{*}$。
+
 接下来计算：
 $$\begin{align}
 (\nabla \mathbf{M})_{ij} & = \partial_{i}M_{j} \\
  & = \partial_{i}(m_{\mathbf{q}_{k}})_{j}e^{i\mathbf{q}_{k}\cdot \mathbf{r}} \\ & = i(\mathbf{q}_{k})_{i}(m_{\mathbf{q}_{k}})_{j}e^{i\mathbf{q}_{k}\cdot \mathbf{r}}
 \end{align}$$
 所以：
-$$(\nabla \mathbf{M})^{2}= |(\nabla \mathbf{M})_{ij}|^{2}=(\mathbf{q}_{k})_{i}^{2}(m_{\mathbf{q}_{k}})_{j}^{2}=q^{2} m_{\mathbf{q}_{k}}^{2}=q^{2}$$
+$$(\nabla \mathbf{M})^{2}= |(\nabla \mathbf{M})_{ij}|^{2}=(\mathbf{q}_{k})_{i}^{2}(m_{\mathbf{q}_{k}})_{j}^{2}=q^{2} m_{\mathbf{q}_{k}}^{2}$$
 接下来：
 $$\begin{align}
 \mathbf{M}\cdot(\nabla \times \mathbf{M}) & = M_{i} \epsilon_{ijk}\partial_{j}M_{k} \\
