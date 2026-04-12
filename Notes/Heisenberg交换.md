@@ -50,3 +50,18 @@ H & = \frac{JS^{2}}{2}\sum_{<ij>}2a^{2}(\nabla \mathbf{m})^{2} \\
  & = \frac{JS^{2}}{2}\cdot 2a^{2}\cdot \frac{1}{a^{3}}\int d^{3}r(\nabla \mathbf{m} )^{2} \\
  & = J \int d^{3}r(\nabla \mathbf{m})^{2}
 \end{align}$$
+
+# 3. 对称性
+
+我们可以通过对称性直接得到交换能。假设交换能是$\mathbf{m}$及其导数的函数。假设晶体具有空间反演对称性，那么$H$不会包含$\mathbf{m}$一次项。因为空间反演下$\mathbf{m}\rightarrow -\mathbf{m}$。类似地，$H$同样不会包含$\mathbf{m}$一阶导。那么$H$最少包含$\mathbf{m}$的二阶导：
+$$H=\int d^{3}r  C_{\alpha \beta}\frac{\partial m_{\gamma}}{\partial r_{\alpha}} \frac{\partial m_{\gamma}}{\partial r_{\beta}}$$
+因为系统具有空间反演对称性，并且还具有绕任何轴旋转$90^{\circ}$的对称性，令$R$为响应群算符，在变换后的系中写下能量：
+$$H=\int d^{3}rC_{\alpha^{'}\beta^{'}} \frac{\partial m_{\gamma}}{\partial r_{\alpha^{'}}} \frac{\partial m_{\gamma}}{\partial r_{\beta^{'}}}$$
+我们有$r_{\alpha^{'}}=R_{\alpha^{'}\alpha}r_{\alpha},\ r_{\beta^{'}}=R_{\beta^{'}\beta}r_{\beta}$，那么：
+$$H=\int d^{3}rC_{\alpha^{'}\beta^{'}}R_{\alpha^{'}\alpha}R_{\beta^{'}\beta} \frac{\partial m_{\gamma}}{\partial r_{\alpha}} \frac{\partial m_{\gamma}}{\partial r_{\beta}}$$
+它必须和变换前能量相等。所以：
+$$C_{\alpha \beta}=R_{\alpha^{'}\alpha}R_{\beta^{'}\beta}C_{\alpha^{'}\beta^{'}}$$
+容易发现唯一的可能性是$R_{\alpha \beta}=J\delta_{\alpha \beta}$。
+
+
+
