@@ -20,3 +20,4 @@ $$\begin{align}
 - 通过加磁场，stripe会逐渐断裂开来，形成bubble。具体来说，bubble是被$\mathbf{M}^{4}$项所favor的。当bubble形成时，降温使得bubble的wall从Ising-type变为Bloch-type。因为wall上spin的连续性，导致两侧$M_{y}$符号相反。从而两侧的Bloch wall的helicity相同。形成skyrmion。
 ![[ff9e81ae8ea1003adedba620aa732e55.jpg|center|100]]
 
+- Skyrmion之间helicity switching的原因是两个skrymion之间由于距离太远，磁矩之间无法相互作用。所以随便哪种helicity都可以。
