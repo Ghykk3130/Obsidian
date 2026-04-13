@@ -50,7 +50,7 @@ $$\begin{align}
 \implies &  i\hbar \partial_{t}\bra{n} \psi_{I}\rangle= \sum_{m}\bra{n} V_{I}\ket{m} \bra{m} \psi_{I}\rangle=\sum_{m}\bra{n} e^{ \frac{i}{\hbar}H_{0}t}V e^{- \frac{i}{\hbar}H_{0}t}\ket{m} \bra{m} \psi_{I}\rangle \\
 \implies & i\hbar \partial_{t}c_{n}= \sum_{m} e^{i\omega_{nm}t} V_{nm} c_{m},\ \omega_{nm}= \frac{E_{n}-E_{m}}{\hbar}
 \end{align}$$
-# 2. Fermi's golden rule
+# 2. Dyson's series
 
 一般来说，$V(t_{0})=0$。我们想要得到$t$时刻观测$H_{0}$的谱，检查系统坍缩到本征态$\ket{f}$的概率。
 
@@ -75,7 +75,7 @@ $$\begin{align}
 \end{align}$$
 于是若$f\neq i$，我们有：
 $$P(i\rightarrow f)=|c_{f}|^{2}=|c_{f}^{(1)}+c_{f}^{(2)}+\dots|^{2}$$
-# 3. Constant drive
+# 3. Constant drive的FGR
 
 考虑如下含时微扰：
 $$V=\left\{\begin{align}
@@ -146,3 +146,13 @@ $$\begin{align}
 $$w_{i\rightarrow f}= \frac{\partial}{\partial t}\left( \sum_{f\neq i}P(i\rightarrow f) \right)= \left.\frac{2\pi}{\hbar} \overline{|V_{fi}|^{2}}\rho(E_{f})\right|_{E_{f}\approx E_{i}}$$
 有时直接将转移到单态$f$的transition rate写为$w_{i\rightarrow f}= \frac{2\pi}{\hbar} \overline{|V_{fi}|^{2}}\delta(E_{f}-E_{i})$。则总transition rate需要乘上态密度再积分。
 
+>[!Success] Proposition 3.3 (Fermi's golden rule)
+>The transition rate from $i\rightarrow f$ is given by:
+>$$w_{i\rightarrow f}= \left.\frac{2\pi}{\hbar}  \overline{|V_{fi}|^{2}} \rho(E_{f})\right|_{E_{f}\approx E_{i}}$$
+
+我们可以往更高阶计算。考虑：
+$$\begin{align}
+c_{f}^{(2)} & = \left( - \frac{i}{\hbar} \right)^{2}\sum_{m}\int_{0}^{t}dt^{'}e^{i\omega_{fm}t^{'}} e^{i\omega_{mi}t^{ ''}} V_{fm}(t^{'})V_{mi}(t^{''}) \\
+ & = \left( - \frac{i}{\hbar} \right)^{2}\sum_{m}V_{fm}V_{mi}\int_{0}^{t}dt^{'}e^{i\omega_{fm}t^{'} } \frac{\hbar}{i(E_{m}-E_{i})} (e^{i\omega_{mi}t^{'}}-1)  \\
+ & = \frac{i}{\hbar}\sum_{m} \frac{V_{fm}V_{mi}}{E_{m}-E_{i}}\left[  e^{i\omega_{fi}t/2} \frac{2\sin(\omega_{fi}t)}{\omega_{fi}}-e^{i \omega_{fm}t/2} \frac{2\sin(\omega_{fm}t)}{\omega_{fm}} \right] 
+\end{align}$$
