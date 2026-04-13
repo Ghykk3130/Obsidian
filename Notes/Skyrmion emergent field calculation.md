@@ -11,4 +11,6 @@ $$\begin{align}
  & \Omega_{r}= \frac{1}{2}\mathbf{n}\cdot\left(  \frac{1}{r}\partial_{\phi}\mathbf{n}\times \partial_{z}\mathbf{n} \right)=0 \\
  & \Omega_{\phi}= \frac{1}{2}\mathbf{n}\cdot(\partial_{z}\mathbf{n}\times \partial_{r}\mathbf{n})=0
 \end{align}$$
+# Scaling analysis
 
+Let $D$ be skyrmion size, $h$ be sample thickness. The surface density of domain wall energy is $E_{\text{wall}}\propto \frac{h}{D}$. The 

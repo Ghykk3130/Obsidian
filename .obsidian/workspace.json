@@ -1936,7 +1936,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "landau theory",
+                "query": "磁畴",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -2044,8 +2044,9 @@
   },
   "active": "22d6c22ab3f8d02f",
   "lastOpenFiles": [
-    "Notes/2-level system的Berry curvature.md",
+    "Notes/Solid state.md",
     "Notes/Skyrmion emergent field calculation.md",
+    "Notes/2-level system的Berry curvature.md",
     "Reading notes/Magnetic stirpes and skyrmions with helicity reversals.md",
     "Reading notes/Dynamics and critical currents in fast superconducting vortices at high pulsed magnetic fields.md",
     "Pictures/ff9e81ae8ea1003adedba620aa732e55.jpg",
@@ -2071,7 +2072,6 @@
     "Notes/时间演化.md",
     "Notes/Untitled 5.md",
     "Notes/Untitled 6.md",
-    "Notes/Untitled 4.md",
     "Pictures/Pasted image 20260405210936.png",
     "Pictures/Pasted image 20260405161624.png",
     "Pictures/Pasted image 20260405160854.png",
