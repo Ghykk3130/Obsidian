@@ -1875,12 +1875,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Notes/Skyrmion emergent field calculation.md",
+                "file": "Notes/Fermi's golden rule.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Skyrmion emergent field calculation"
+              "title": "Fermi's golden rule"
             }
           }
         ],
@@ -1936,7 +1936,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "磁畴",
+                "query": "fermi golden",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -1947,11 +1947,13 @@
               "title": "Search"
             }
           }
-        ]
+        ],
+        "currentTab": 3
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 200,
+    "collapsed": true
   },
   "right": {
     "id": "9003d078f8dbc4ed",
@@ -2013,13 +2015,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Notes/Skyrmion emergent field calculation.md",
+                "file": "Notes/Fermi's golden rule.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of Skyrmion emergent field calculation"
+              "title": "Outline of Fermi's golden rule"
             }
           }
         ],
@@ -2044,8 +2046,8 @@
   },
   "active": "22d6c22ab3f8d02f",
   "lastOpenFiles": [
-    "Notes/Solid state.md",
     "Notes/Skyrmion emergent field calculation.md",
+    "Notes/Solid state.md",
     "Notes/2-level system的Berry curvature.md",
     "Reading notes/Magnetic stirpes and skyrmions with helicity reversals.md",
     "Reading notes/Dynamics and critical currents in fast superconducting vortices at high pulsed magnetic fields.md",
