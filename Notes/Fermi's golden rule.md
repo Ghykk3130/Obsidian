@@ -137,6 +137,9 @@ $$\int_{\text{AB}}+\int_{\text{CD}}= \pi$$
 $$\text{sinc}^{2}\left(  \frac{E_{f}-E_{i}}{2\hbar}t \right)\rightarrow \frac{h}{t}\delta(E_{f}-E_{i})\text{ as }t\rightarrow \infty$$
 这是合理的，因为$\text{sinc}^{2}\left(  \frac{E_{f}-E_{i}}{2\hbar}t \right)$的高度$\sim \frac{1}{t^{2}}$，而宽度$\sim t$。
 
+>[!Quote]
+>我们不能想当然地写$\text{sinc}(\alpha x) \rightarrow \frac{\pi}{\alpha}\delta(x),\text{ as }\alpha\rightarrow \infty$。这是因为$\text{sinc}$函数仍然在上下震荡，在零附近的正负号不确定。但是$\text{sinc}^{2}(\alpha x)$符号却是确定的。所以$\text{sinc}^{2}(\alpha x)\rightarrow \frac{\pi}{\alpha}\delta(x)$。
+
 那么：
 $$\begin{align}
 \sum_{f\neq i}P(i\rightarrow f) & \approx \int_{\mathbb{R}}dE_{f}\rho(E_{f}) \frac{|V_{fi}|^{2}}{\hbar^{2}}t^{2} \frac{h}{t}\delta(E_{f}-E_{i}) \\
@@ -176,4 +179,29 @@ $$\omega_{f\rightarrow i}= \left.\frac{2\pi}{\hbar} \overline{\left|V_{fi} +\sum
 >[!Success] Proposition 3.4 (second order Fermi's golden rule)
 >The transition rate from $i\rightarrow f$ is given by:
 >$$\omega_{f\rightarrow i}= \left.\frac{2\pi}{\hbar} \overline{\left|V_{fi} +\sum_{m} \frac{V_{fm}V_{mi}}{E_{i}-E_{m}}\right|^{2}}\rho(E_{f})\right|_{E_{f} \approx E_{i}}$$
+
+# 4. Harmonic drive
+
+考虑一个随时间简谐的微扰$Ve^{i\omega t}+V^{\dagger}e^{-i\omega t}$。这种写法是为了保证hermitian。计算一阶微扰：
+$$\begin{align}
+c_{f}^{(1)} & = - \frac{i}{\hbar}\int_{0}^{t}dt^{'}(e^{i(\omega_{fi}+\omega)t^{'}}V_{fi}+e^{i(\omega_{fi}-\omega)t^{'}}V^{\dagger}_{fi}) \\
+ & = - \frac{1}{\hbar}\left[  \frac{e^{i(\omega_{fi}+\omega) t}-1}{\omega_{fi}+\omega}V_{fi}+ \frac{e^{i(\omega_{fi}-\omega)t}-1}{\omega_{fi}-\omega}V^{\dagger}_{fi} \right] \\
+ & = - \frac{1}{\hbar}\left[ e^{i \frac{\omega_{fi}+\omega}{2}t} 2i \frac{\sin\left(  \frac{\omega_{fi}+\omega}{2}t \right)}{\omega_{fi}+\omega}V_{fi}+e^{i \frac{\omega_{fi}-\omega}{2}t} 2i \frac{\sin\left( \frac{\omega_{fi}-\omega}{2}t \right)}{\omega_{fi}-\omega}V^{\dagger}_{fi} \right]
+\end{align}$$
+由于第一项仅在$\omega_{fi}+\omega=0$时显著，第二项仅在$\omega_{fi}-\omega=0$时显著，若$\omega$很大，那么两项作为$E_{f}$的函数就几乎不重叠。那么：
+$$\begin{align}
+|c_{f}^{(1)} |^{2} & \approx \frac{4}{\hbar^{2}} \frac{\sin ^{2}\left(  \frac{\omega_{fi}+\omega}{2}t \right)}{(\omega_{fi}+\omega)^{2}}|V_{fi} |^{2}+ \frac{4}{\hbar^{2}} \frac{\sin ^{2}\left(  \frac{\omega_{fi}-\omega}{2}t \right)}{(\omega_{fi}-\omega)^{2}}|V_{if}|^{2}
+\end{align}$$
+所以：
+$$\begin{align}
+\sum_{f\neq i}|c_{f}^{(1)}|^{2} & \approx \int dE_{f}\rho(E_{f})|c_{f}^{(1)}|^{2} \\
+ & \approx \frac{2\pi}{\hbar}t |V_{fi}|^{2}+ \frac{2\pi}{\hbar}t|V_{if}|^{2}
+\end{align}$$
+于是转移导某个态$f$的transition rate可以写为：
+$$w_{i \rightarrow f}= \frac{2\pi}{\hbar} \left\{\begin{align}
+ & \overline{|V_{fi} |^{2}} \rho{(E_{f})},\ E_{f}\approx E_{i}-\omega \hbar \\
+ & \overline{|V_{if}|^{2}} \rho(E_{f}),\ E_{f}\approx E_{i}+\omega \hbar
+\end{align}\right.$$
+第一项对应emission，第二项对应absorption。
+![[Drawing 2026-04-13 21.31.25.excalidraw|center|500]]
 
