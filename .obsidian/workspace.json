@@ -1950,7 +1950,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "Riemann-Lebes",
+                "query": "开放",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -2058,8 +2058,10 @@
   },
   "active": "42ad996886b32c7e",
   "lastOpenFiles": [
-    "Excalidraw/Drawing 2026-04-13 21.31.25.excalidraw.md",
+    "Notes/Fermi-Dirac statistics 与 Fermi gas.md",
+    "Notes/开放量子系统.md",
     "Notes/Fermi's golden rule.md",
+    "Excalidraw/Drawing 2026-04-13 21.31.25.excalidraw.md",
     "Notes/Stationary phase.md",
     "Notes/Fourier transform.md",
     "Notes/Skyrmion emergent field calculation.md",
@@ -2084,8 +2086,6 @@
     "Reading notes/Topological properties and dynamics of magnetic skyrmions.md",
     "Excalidraw/Drawing 2026-04-10 20.16.16.excalidraw.md",
     "Notes/Berry curvature的时间和空间反演对称性.md",
-    "Notes/AHE.md",
-    "Notes/Magnetic ordering.md",
     "Pictures/Pasted image 20260405210936.png",
     "Pictures/Pasted image 20260405161624.png",
     "Pictures/Pasted image 20260405160854.png",

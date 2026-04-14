@@ -204,4 +204,15 @@ $$w_{i \rightarrow f}= \frac{2\pi}{\hbar} \left\{\begin{align}
 \end{align}\right.$$
 第一项对应emission，第二项对应absorption。
 ![[Drawing 2026-04-13 21.31.25.excalidraw|center|500]]
+# 5. E1跃迁
+
+考虑二能级系统$\{ \ket{g},\ket{e} \}=\{ \ket{i},\ket{f} \}$。施加一个线性极化电场$\mathbf{F}=F_{0}  \hat{\boldsymbol{\epsilon}}\cos (\omega t)$。那么产生的微扰为：
+$$\begin{align}
+-\mathbf{d}\cdot \mathbf{F} & = |e| \mathbf{r}\cdot F_{0}  \hat{\boldsymbol{\epsilon}}\cos(\omega t)  \\
+ & = \frac{|e|F_{0} }{2} \mathbf{r}\cdot  \hat{\boldsymbol{\epsilon}}(e^{i\omega t}+e^{-i\omega t})
+\end{align}$$
+令$V= \frac{|e|F_{0}}{2}\mathbf{r}\cdot  \hat{\boldsymbol{\epsilon}}$。我们忽略磁场造成的微扰。因为电场，磁场微扰的数量级分别为$dF \sim |e|a_{0}F,\ m \frac{F}{c}\sim \frac{\mu_{B}}{c}F$，可以证明后者很小。接下来计算矩阵元：
+$$V_{if}= \frac{|e|F_{0}}{2}\bra{i} \mathbf{r}\cdot  \hat{\boldsymbol{\epsilon}}\ket{f} $$
+定义Rabi frequency为$\Omega_{fi}= \frac{|e|F_{0} \bra{i}\mathbf{r}\cdot  \hat{\boldsymbol{\epsilon}}\ket{f}}{\hbar}$，那么矩阵元写为$V_{if}= \frac{\hbar}{2}\Omega_{fi}$。唯一可能的transition为：
+$$w_{i\rightarrow f}= \frac{2\pi}{\hbar}\left| \frac{\hbar}{2}\Omega_{fi} \right|^{2}\rho(E_{f}=E_{i}+\hbar \omega)$$
 
