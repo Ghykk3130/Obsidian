@@ -1936,7 +1936,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "fermi golden",
+                "query": "Riemann-Lebes",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -1947,8 +1947,7 @@
               "title": "Search"
             }
           }
-        ],
-        "currentTab": 3
+        ]
       }
     ],
     "direction": "horizontal",
@@ -2046,6 +2045,9 @@
   },
   "active": "22d6c22ab3f8d02f",
   "lastOpenFiles": [
+    "Notes/Stationary phase.md",
+    "Notes/Fourier transform.md",
+    "Notes/Fermi's golden rule.md",
     "Notes/Skyrmion emergent field calculation.md",
     "Notes/Solid state.md",
     "Notes/2-level system的Berry curvature.md",
@@ -2071,9 +2073,6 @@
     "Notes/AHE.md",
     "Notes/Magnetic ordering.md",
     "Notes/自由电子气磁性.md",
-    "Notes/时间演化.md",
-    "Notes/Untitled 5.md",
-    "Notes/Untitled 6.md",
     "Pictures/Pasted image 20260405210936.png",
     "Pictures/Pasted image 20260405161624.png",
     "Pictures/Pasted image 20260405160854.png",

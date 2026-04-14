@@ -146,7 +146,7 @@ $$\begin{align}
 $$w_{i\rightarrow f}= \frac{\partial}{\partial t}\left( \sum_{f\neq i}P(i\rightarrow f) \right)= \left.\frac{2\pi}{\hbar} \overline{|V_{fi}|^{2}}\rho(E_{f})\right|_{E_{f}\approx E_{i}}$$
 有时直接将转移到单态$f$的transition rate写为$w_{i\rightarrow f}= \frac{2\pi}{\hbar} \overline{|V_{fi}|^{2}}\delta(E_{f}-E_{i})$。则总transition rate需要乘上态密度再积分。
 
->[!Success] Proposition 3.3 (Fermi's golden rule)
+>[!Success] Proposition 3.3 (first order Fermi's golden rule)
 >The transition rate from $i\rightarrow f$ is given by:
 >$$w_{i\rightarrow f}= \left.\frac{2\pi}{\hbar}  \overline{|V_{fi}|^{2}} \rho(E_{f})\right|_{E_{f}\approx E_{i}}$$
 
@@ -156,3 +156,24 @@ c_{f}^{(2)} & = \left( - \frac{i}{\hbar} \right)^{2}\sum_{m}\int_{0}^{t}dt^{'}e^
  & = \left( - \frac{i}{\hbar} \right)^{2}\sum_{m}V_{fm}V_{mi}\int_{0}^{t}dt^{'}e^{i\omega_{fm}t^{'} } \frac{\hbar}{i(E_{m}-E_{i})} (e^{i\omega_{mi}t^{'}}-1)  \\
  & = \frac{i}{\hbar}\sum_{m} \frac{V_{fm}V_{mi}}{E_{m}-E_{i}}\left[  e^{i\omega_{fi}t/2} \frac{2\sin(\omega_{fi}t)}{\omega_{fi}}-e^{i \omega_{fm}t/2} \frac{2\sin(\omega_{fm}t)}{\omega_{fm}} \right] 
 \end{align}$$
+我们宣称，第二项在$t\rightarrow \infty$时为零。这是因为由于Riemann-Lebesgue引理，存在如下积分估计：
+$$\begin{align}
+\sum_{m} \frac{V_{fm}V_{mi}}{E_{m}-E_{i}} e^{i \omega_{fm}t /2} \frac{2\sin(\omega_{fm}t)}{\omega_{fm}} & \approx \int dE_{m}\rho(E_{m}) \frac{V_{fm}V_{mi}}{E_{m}-E_{i}}e^{i\omega_{fm}t /2} \frac{2\sin(\omega_{fm}t)}{\omega_{fm}}=0\text{ as }t\rightarrow \infty
+\end{align}$$
+>[!Warning]
+成立的前提是，相位$\omega_{fm}$没有驻相点，即不存在$\frac{\partial \omega_{fm}}{\partial E_{f}}=0$的点。这总是成立的，因为$\frac{\partial \omega_{fm}}{\partial E_{m}}= \frac{1}{\hbar}$。第二个前提是$\rho(E_{m}) \frac{V_{fm}V_{mi}}{E_{m}-E_{i}} \frac{2\sin(\omega_{fm}t)}{\omega_{fm}}$是可积的。这要求在$E_{m} \approx E_{i}$时，这个函数不能爆掉，即$V_{fm}V_{mi}\approx 0$。
+
+那么，现在有：
+$$\begin{align}
+ c_{f}^{(1)}+c_{f}^{(2)} & \approx -i e^{i \frac{\omega_{fi}t}{2}} \frac{2\sin(\omega_{fi}t)}{E_{f}-E_{i}} \left( V_{fi}+ \sum_{m} \frac{V_{fm}V_{mi}}{E_{i}-E_{m}} \right)
+\end{align}$$
+所以类似地，有：
+$$\begin{align}
+\sum_{f\neq i}P(i\rightarrow f) & \approx \left.\frac{2\pi}{\hbar}t \overline{\left|V_{fi} +\sum_{m} \frac{V_{fm}V_{mi}}{E_{i}-E_{m}}\right|^{2}}\rho(E_{f})\right|_{E_{f} \approx E_{i}} \text{ for large }t
+\end{align}$$
+同样可以得到：
+$$\omega_{f\rightarrow i}= \left.\frac{2\pi}{\hbar} \overline{\left|V_{fi} +\sum_{m} \frac{V_{fm}V_{mi}}{E_{i}-E_{m}}\right|^{2}}\rho(E_{f})\right|_{E_{f} \approx E_{i}}$$
+>[!Success] Proposition 3.4 (second order Fermi's golden rule)
+>The transition rate from $i\rightarrow f$ is given by:
+>$$\omega_{f\rightarrow i}= \left.\frac{2\pi}{\hbar} \overline{\left|V_{fi} +\sum_{m} \frac{V_{fm}V_{mi}}{E_{i}-E_{m}}\right|^{2}}\rho(E_{f})\right|_{E_{f} \approx E_{i}}$$
+
