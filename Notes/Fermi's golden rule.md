@@ -215,4 +215,7 @@ $$\begin{align}
 $$V_{if}= \frac{|e|F_{0}}{2}\bra{i} \mathbf{r}\cdot  \hat{\boldsymbol{\epsilon}}\ket{f} $$
 定义Rabi frequency为$\Omega_{fi}= \frac{|e|F_{0} \bra{i}\mathbf{r}\cdot  \hat{\boldsymbol{\epsilon}}\ket{f}}{\hbar}$，那么矩阵元写为$V_{if}= \frac{\hbar}{2}\Omega_{fi}$。唯一可能的transition为：
 $$w_{i\rightarrow f}= \frac{2\pi}{\hbar}\left| \frac{\hbar}{2}\Omega_{fi} \right|^{2}\rho(E_{f}=E_{i}+\hbar \omega)$$
-
+若不存在任何broadening，则$\rho(E_{f})=\delta(E_{f})$。这是荒谬的，导致无限的跃迁速率。考虑更现实的假设，唯象地映入末态地衰减。即$c_{f} \leadsto e^{- \frac{\Gamma_{E}}{2\hbar}t}c_{f}$。那么：
+$$\begin{align}
+c_{f}^{(1)} & = - \frac{i}{\hbar}\int_{0}^{t}dt^{'} e^{i\omega_{fi}t}
+\end{align}$$
