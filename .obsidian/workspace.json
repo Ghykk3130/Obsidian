@@ -1915,16 +1915,30 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Notes/半经典运动方程.md",
+                "file": "Notes/直角坐标和球坐标微分算子变换.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "半经典运动方程"
+              "title": "直角坐标和球坐标微分算子变换"
+            }
+          },
+          {
+            "id": "b0cd036809a8d153",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Notes/空穴.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "空穴"
             }
           }
         ],
-        "currentTab": 136
+        "currentTab": 137
       }
     ],
     "direction": "vertical"
@@ -1991,8 +2005,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200,
-    "collapsed": true
+    "width": 200
   },
   "right": {
     "id": "9003d078f8dbc4ed",
@@ -2054,13 +2067,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Notes/半经典运动方程.md",
+                "file": "Notes/空穴.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of 半经典运动方程"
+              "title": "Outline of 空穴"
             }
           }
         ],
@@ -2083,12 +2096,15 @@
       "obsidian-excalidraw-plugin:New drawing": false
     }
   },
-  "active": "232a69108e20ad77",
+  "active": "b0cd036809a8d153",
   "lastOpenFiles": [
+    "Notes/直角坐标和球坐标微分算子变换.md",
+    "Notes/空穴.md",
+    "Notes/输运.md",
+    "Notes/半经典运动方程.md",
     "Notes/k dot p微扰.md",
     "Notes/近自由电子模型.md",
     "Pictures/Pasted image 20260414203509.png",
-    "Notes/输运.md",
     "Notes/晶体基础.md",
     "Pictures/Pasted image 20260414193550.png",
     "Pictures/Pasted image 20260414193324.png",
@@ -2113,9 +2129,6 @@
     "Notes/退磁能.md",
     "Notes/Born-Oppenheimer近似.md",
     "Notes/Maxwell-Boltzmann 分布.md",
-    "Reading notes/Skyrmion lattice in a chiral magnet.md",
-    "Reading notes/Finite-temperature violation of the anomalous transverse Wiedmann-Franz law.md",
-    "Reading notes/Electrical resistance of ferromagnetic metals.md",
     "Pictures/Pasted image 20260405210936.png",
     "Pictures/Pasted image 20260405161624.png",
     "Pictures/Pasted image 20260405160854.png",
