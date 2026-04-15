@@ -5,3 +5,40 @@ $$\begin{align}
  &  i\hbar   \dot{c}_{1}= V_{12} e^{i\omega_{12}t}c_{2},\ i\hbar  \dot{c}_{2}= V_{21} e^{i\omega_{21}t}c_{1} \\
 \implies &    \dot{c}_{1}= \frac{\gamma}{i\hbar}e^{i(\omega_{12}+\omega)t}c_{2},\  \dot{c}_{2}= \frac{\gamma}{i\hbar}e^{i(\omega_{21}-\omega)t}c_{1}
 \end{align}$$
+To decouple the equations, we take derivatives:
+$$\begin{align}
+ & \ddot{c}_{1}= \frac{\gamma}{\hbar}(\omega_{12}+\omega)e^{i(\omega_{12}+\omega)t}c_{2}+ \frac{\gamma}{i\hbar}e^{i(\omega_{12}+\omega)t} \dot{c}_{2}=i(\omega_{12}+\omega)  \dot{c}_{1}- \frac{\gamma^{2}}{\hbar^{2}} c_{1}
+\end{align}$$
+The characteristic equation is:
+$$\begin{align}
+ & -\Omega^{2}=-(\omega_{12}+\omega)\Omega- \frac{\gamma^{2}}{\hbar^{2}} \\
+\implies & \Omega^{(1)}_{\pm}= \frac{\omega_{12}+\omega\pm \sqrt{ (\omega_{12}+\omega)^{2}+ \frac{4\gamma^{2}}{\hbar^{2}} }}{2}
+\end{align}$$
+The solution is:
+$$c_{1}=A_{+}e^{i\Omega^{(1)}_{+}t}+A_{-}e^{i\Omega^{(1)}_{-}t}$$
+Similarly, by replacing $(\omega_{12}+\omega)\leadsto (\omega_{21}-\omega)$, we obtained the solution for $c_{2}$:
+$$\begin{align}
+ & \Omega^{(2)}_{\pm}= \frac{\omega_{21}-\omega\pm \sqrt{ (\omega_{21}-\omega)^{2}+ \frac{4\gamma^{2}}{\hbar^{2}} }}{2} \\
+ & c_{2}=B_{+}e^{i\Omega^{(2)}_{+}t}+B_{-}e^{i\Omega^{(2)}_{-}t}
+\end{align}$$
+The initial conditions give:
+$$\begin{align}
+ & c_{1}(0)=1\implies A_{-}=1-A_{+} \\
+ & c_{2}(0)=0\implies B_{-}=-B_{+}
+\end{align}$$
+The initial conditions also enter into derivatives by:
+$$\begin{align}
+ & \left. \dot{c}_{2} \right|_{t=0}= i\Omega^{(2)}_{+}B_{+}-i\Omega^{(2)}_{-}B_{+}= \frac{\gamma}{i\hbar}c_{1}(0)= \frac{\gamma}{i\hbar}i \\
+\implies & B_{+}=- \frac{\gamma}{\hbar} \frac{1}{\sqrt{ (\omega_{21}-\omega)^{2}+ \frac{4\gamma^{2}}{\hbar^{2}} }}
+\end{align}$$
+Then:
+$$\begin{align}
+c_{2} &= - \frac{\gamma}{\hbar \sqrt{  (\omega_{12}-\omega)^{2}+ \frac{4\gamma^{2}}{\hbar^{2}} }}\left[ -\exp\left( it\Omega^{(2)}_{+} \right)+\exp(i\Omega^{(2)}_{-}t) \right] \\
+ & = \frac{\gamma}{\hbar} \frac{1}{\sqrt{ (\omega_{12}-\omega)^{2}+ \frac{4\gamma^{2}}{\hbar^{2}} }}\exp\left( i \frac{\omega_{21}-\omega}{2}t \right) 2i \sin \left( \frac{\sqrt{ (\omega_{21}-\omega)^{2}+ \frac{4\gamma^{2}}{\hbar^{2}} }}{2}t \right)
+\end{align}$$
+Therefore:
+$$\begin{align}
+|c_{2}|^{2} & = \frac{\gamma^{2} / \hbar^{2}}{\gamma^{2} /\hbar^{2}+(\omega-\omega_{21}^{} )^{2} /4} \sin ^{2}\left( \left[  \frac{\gamma^{2}}{\hbar^{2}}+ \frac{(\omega-\omega_{21}^{})^{2}}{4}\right]^{1/2}t  \right)
+\end{align}$$
+By probability conservation, $|c_{1}|^{2}=1-|c_{2}|^{2}$.
+## (b)
