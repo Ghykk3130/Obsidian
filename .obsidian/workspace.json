@@ -1999,16 +1999,44 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Homework/Physics 512/Physics 512.md",
+                "file": "Notes/Fourier transform.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Physics 512"
+              "title": "Fourier transform"
+            }
+          },
+          {
+            "id": "f0f5dd9138401289",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Notes/近自由电子模型.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "近自由电子模型"
+            }
+          },
+          {
+            "id": "80eb9fffb3aaf345",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Notes/散射.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "散射"
             }
           }
         ],
-        "currentTab": 142
+        "currentTab": 144
       }
     ],
     "direction": "vertical"
@@ -2075,8 +2103,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200,
-    "collapsed": true
+    "width": 200
   },
   "right": {
     "id": "9003d078f8dbc4ed",
@@ -2138,13 +2165,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Homework/Physics 512/Physics 512.md",
+                "file": "Notes/散射.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of Physics 512"
+              "title": "Outline of 散射"
             }
           }
         ],
@@ -2167,10 +2194,23 @@
       "obsidian-excalidraw-plugin:New drawing": false
     }
   },
-  "active": "babb40e97bb25127",
+  "active": "80eb9fffb3aaf345",
   "lastOpenFiles": [
-    "Homework/Physics 512/Physics 512 homework 5.md",
+    "Pictures/Pasted image 20260415231131.png",
+    "Notes/Untitled 10.md",
+    "Notes/近自由电子模型.md",
+    "Notes/E1跃迁.md",
+    "Notes/类氢杂质模型.md",
+    "Notes/量子统计力学基础.md",
+    "Notes/量子统计力学系综.md",
+    "Notes/非线性波.md",
+    "Notes/黑体辐射.md",
+    "Notes/线性波.md",
+    "Notes/电荷密度.md",
+    "Notes/Fermi's golden rule.md",
+    "Notes/Fourier transform.md",
     "Homework/Physics 512/Physics 512.md",
+    "Homework/Physics 512/Physics 512 homework 5.md",
     "Homework/Physics 511/Untitled.md",
     "Homework/Physics 511/Physics 511 Homework 7.md",
     "Homework/Physics 463/Physics 463 homework 8.md",
@@ -2187,19 +2227,6 @@
     "Notes/输运.md",
     "Notes/Transport.md",
     "Homework/Physics 510/Physics 510 Homework 8.md",
-    "Homework/Physics 510/Physics 510 Homework 10.md",
-    "Homework/Physics 463/Physics 463 homework 7.md",
-    "Notes/类氢杂质模型.md",
-    "Notes/空穴.md",
-    "Notes/Berry phase.md",
-    "Notes/AHE.md",
-    "Notes/AB效应.md",
-    "Notes/Ising模型.md",
-    "Notes/声波.md",
-    "Notes/相对论电动力学.md",
-    "Notes/直角坐标和球坐标微分算子变换.md",
-    "Notes/半经典运动方程.md",
-    "Notes/k dot p微扰.md",
     "Pictures/Pasted image 20260414203509.png",
     "Pictures/Pasted image 20260414193550.png",
     "Pictures/Pasted image 20260414193324.png",
