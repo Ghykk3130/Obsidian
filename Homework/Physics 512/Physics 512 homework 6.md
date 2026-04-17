@@ -42,3 +42,28 @@ $$\begin{align}
 \end{align}$$
 By probability conservation, $|c_{1}|^{2}=1-|c_{2}|^{2}$.
 ## (b)
+
+We know that:
+$$\begin{align}
+c_{2}^{(1)} & = - \frac{i}{\hbar}\int_{0}^{t}dt^{'}e^{i\omega_{21}t^{'}}V_{21} \\
+ & = - \frac{i}{\hbar}\int_{0}^{t}dt^{'}\exp(i(\omega_{21}-\omega)t^{'})\gamma \\
+ & = - \frac{\gamma}{\hbar} \frac{1}{\omega_{21}-\omega}(e^{i(\omega_{21}-\omega)t}-1) \\
+ & = \frac{\gamma}{\hbar(\omega-{\omega_{21}})}e^{i \frac{\omega_{21}-\omega}{2}t}2i \sin\left(  \frac{\omega_{21}-\omega}{2}t \right)
+\end{align}$$
+Then:
+$$|c_{2}^{(1)}|= \frac{4\gamma^{2}}{\hbar^{2}} \frac{\sin ^{2}\left(  \frac{\omega_{21}-\omega}{2}t \right)}{(\omega-\omega_{21})^{2}}= \frac{\gamma^{2} /\hbar^{2}}{(\omega-\omega_{21})^{2} /4}\sin ^{2}\left(  \frac{\omega_{21}-\omega}{2}t \right)$$
+Similarly,
+$$c_{1}^{(1)}= - \frac{i}{\hbar}\int_{0}^{t}dt^{'}e^{i\omega_{11}t^{'}}V_{11}=0\implies c_{1}^{(1)}=c_{1}^{(1)}(0)=1$$
+Now compare the actual solutions with the approximations. If $\gamma$ is small and $\omega$ is very different from $\omega_{21}$, then:
+$$\begin{align}
+|c_{2} |^{2} & = \frac{1}{1+ (\omega-\omega_{21})^{2}\hbar^{2} /(4\gamma^{2})} \sin ^{2}\left( \frac{|\omega-\omega_{21}|}{2}\left[ 1+ \frac{\gamma^{2}4}{(\omega-\omega_{21})^{2}\hbar^{2}} \right]^{1/2}t \right) \\
+ & \approx \frac{1}{(\omega-\omega_{21})^{2} \hbar^{2} /(4\gamma^{2})} \sin ^{2}\left(  \frac{|\omega-\omega_{21}|^{}}{2}t \right) \\
+ & = \frac{\gamma^{2} /\hbar^{2}}{(\omega-\omega_{21})^{2} /4 }\sin ^{2}\left(  \frac{\omega_{21}-\omega}{2}t \right)
+\end{align}$$
+The absolute value sign was wiped because $\sin ^{2}$ is even. This is consistent with the perturbation solution. Now if $\omega$ is very close to $\omega_{21}$, then:
+$$\begin{align}
+|c_{2}|^{2} & = \frac{1}{1+(\omega-\omega_{21})^{2}\hbar^{2} /(4\gamma^{2})}\sin ^{2}\left( \frac{\gamma^{}}{\hbar^{}}\left[ 1+ \frac{(\omega-\omega_{21})^{2}\hbar^{2}}{4\gamma^{2}} \right]^{1/2}t  \right) \\
+ & \approx \sin ^{2}\left( \frac{\gamma^{}}{\hbar^{}}t \right) \\
+ & \approx \frac{\gamma^{2}}{\hbar^{2}}t^{2}\text{ for small }\gamma
+\end{align}$$
+This is unbounded and therefore unphysical. It is very different from 
