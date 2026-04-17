@@ -52,18 +52,20 @@ c_{2}^{(1)} & = - \frac{i}{\hbar}\int_{0}^{t}dt^{'}e^{i\omega_{21}t^{'}}V_{21} \
 \end{align}$$
 Then:
 $$|c_{2}^{(1)}|= \frac{4\gamma^{2}}{\hbar^{2}} \frac{\sin ^{2}\left(  \frac{\omega_{21}-\omega}{2}t \right)}{(\omega-\omega_{21})^{2}}= \frac{\gamma^{2} /\hbar^{2}}{(\omega-\omega_{21})^{2} /4}\sin ^{2}\left(  \frac{\omega_{21}-\omega}{2}t \right)$$
-Similarly,
-$$c_{1}^{(1)}= - \frac{i}{\hbar}\int_{0}^{t}dt^{'}e^{i\omega_{11}t^{'}}V_{11}=0\implies c_{1}^{(1)}=c_{1}^{(1)}(0)=1$$
-Now compare the actual solutions with the approximations. If $\gamma$ is small and $\omega$ is very different from $\omega_{21}$, then:
+Now compare the actual solutions with the approximations. If $\gamma$ is small and $\omega$ is very different from $\omega_{21}$, or formally $|\omega-\omega_{21}|\gg \frac{\gamma}{\hbar}$, then:
 $$\begin{align}
 |c_{2} |^{2} & = \frac{1}{1+ (\omega-\omega_{21})^{2}\hbar^{2} /(4\gamma^{2})} \sin ^{2}\left( \frac{|\omega-\omega_{21}|}{2}\left[ 1+ \frac{\gamma^{2}4}{(\omega-\omega_{21})^{2}\hbar^{2}} \right]^{1/2}t \right) \\
  & \approx \frac{1}{(\omega-\omega_{21})^{2} \hbar^{2} /(4\gamma^{2})} \sin ^{2}\left(  \frac{|\omega-\omega_{21}|^{}}{2}t \right) \\
  & = \frac{\gamma^{2} /\hbar^{2}}{(\omega-\omega_{21})^{2} /4 }\sin ^{2}\left(  \frac{\omega_{21}-\omega}{2}t \right)
 \end{align}$$
-The absolute value sign was wiped because $\sin ^{2}$ is even. This is consistent with the perturbation solution. Now if $\omega$ is very close to $\omega_{21}$, then:
+The absolute value sign was wiped because $\sin ^{2}$ is even. This is consistent with the perturbation solution. Now if $\omega$ is very close to $\omega_{21}$, formally $|\omega-\omega_{21}|\ll \frac{\gamma}{\hbar}$, then:
 $$\begin{align}
-|c_{2}|^{2} & = \frac{1}{1+(\omega-\omega_{21})^{2}\hbar^{2} /(4\gamma^{2})}\sin ^{2}\left( \frac{\gamma^{}}{\hbar^{}}\left[ 1+ \frac{(\omega-\omega_{21})^{2}\hbar^{2}}{4\gamma^{2}} \right]^{1/2}t  \right) \\
- & \approx \sin ^{2}\left( \frac{\gamma^{}}{\hbar^{}}t \right) \\
- & \approx \frac{\gamma^{2}}{\hbar^{2}}t^{2}\text{ for small }\gamma
+|c_{2} |^{2} & = \frac{\frac{\gamma^{2}4}{\hbar^{2}(\omega-\omega_{21})^{2}}}{\frac{\gamma^{2}4}{\hbar^{2}(\omega-\omega_{21})^{2}}+1}\sin ^{2}\left( \frac{\gamma}{\hbar}\left[ 1+ \frac{\hbar^{2}(\omega-\omega_{21})^{2}}{4\gamma^{2}} \right]^{1/2}t \right) \\
+ & \approx \sin ^{2}\left( \frac{\gamma}{\hbar}t \right)
 \end{align}$$
-This is unbounded and therefore unphysical. It is very different from 
+However,
+$$\begin{align}
+|c_{2}^{(1)}|^{2} & \approx \frac{\gamma^{2} /\hbar^{2}}{(\omega-\omega_{21})^{2} /4} \frac{(\omega-\omega_{21})^{2}t^{2}}{4} \\
+ & = \frac{\gamma^{2}}{\hbar^{2}}t^{2}
+\end{align}$$
+This is unbounded and therefore unphysical. In this case, the two approaches disagree.
