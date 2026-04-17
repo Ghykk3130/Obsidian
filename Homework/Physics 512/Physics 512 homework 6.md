@@ -97,7 +97,20 @@ $$\begin{align}
 \end{align}$$
 Then:
 $$w= \frac{2\pi}{\hbar} \cdot 4 \frac{V_{0}^{2}\pi}{a_{0}^{3}L^{3}}\left( \frac{q}{1/ a_{0}^{2}+q^{2}} \right)^{2}\delta\left( \frac{p^{2}}{2m}=\hbar \omega+E_{1} \right) =\frac{8V_{0}^{2}\pi^{2}a_{0}}{\hbar L^{3}} \frac{q^{2}}{(1+a_{0}^{2}q^{2})^{2}} \delta\left( \frac{p^{2}}{2m}=\hbar \omega+E_{1} \right)$$
-To obtain the angular distribution of the electron, we first compute the transition probability to $\mathbf{p}$:
-$$P=wt$$
-We pick a region $p^{2}d\Omega dp$ in the momentum space that is centered on the surface defined by $\frac{p^{2}}{2m}=\hbar \omega+E_{1}$.
+Given a small region $p^{2}d\Omega dp$ in the momentum space, the rate of transitioning into this region is $w p^{2} d\Omega dp \rho(\mathbf{p})$, where $\rho(\mathbf{p})$ is the density of states with respect to the measure $d^{3}p$. Know that $\mathbf{p}$ is subject to periodic boundary conditions $\frac{p_{i}}{\hbar}L= 2\pi n_{i}$. Then each state takes a volume of $\frac{(2\pi \hbar)^{3}}{L^{3}}$ in the momentum space. Therefore $\rho(\mathbf{p})= \frac{L^{3}}{(2\pi \hbar)^{3}}$. 
 
+To obtain the rate of transitioning into the solid angle $d\Omega$, we integrate $p$:
+$$\begin{align}
+\frac{dW}{d\Omega} & = \int_{0}^{\infty}dpp^{2} w \rho(\mathbf{p}) \\
+ & = \frac{V_{0}^{2}a_{0}}{\hbar^{4}\pi}\int dp p^{2} \frac{q^{2}}{(1+a_{0}^{2}q^{2})^{2}}\delta\left( \frac{p^{2}}{2m}=\hbar \omega+E_{1} \right) \\
+ & = \frac{V_{0}^{2}a_{0} }{\hbar^{4}\pi } \int dp^{2} \frac{p}{2} \frac{q^{2}}{(1+a_{0}^{2}q^{2})^{2} }\delta\left(  \frac{p^{2}}{2m}=\hbar \omega+E_{1} \right) \\
+ & = \frac{V_{0}^{2}a_{0}}{2\hbar^{4}\pi} \frac{pq^{2}}{(1+a_{0}^{2}q^{2})^{2}},\ p= \sqrt{ 2m(E_{1}+\hbar \omega) } 
+\end{align}$$
+Let $\theta$ be the angle subtended by $\mathbf{p}$ and the z-axis. It is obvious from geometry that:
+$$q^{2}= \frac{p^{2}}{\hbar^{2}}+k^{2}- \frac{2p k}{\hbar}\cos \theta$$
+Then:
+$$\begin{align}
+\frac{dW}{d\Omega} & = \frac{V_{0}^{2}a_{0}}{2\hbar^{4}\pi} \frac{p\left(  \frac{p^{2}}{\hbar^{2}}+k^{2}- \frac{2pk}{\hbar}\cos \theta \right)}{\left( 1+ a_{0}^{2}\left(  \frac{p^{2}}{\hbar^{2}}+k^{2}- \frac{2pk}{\hbar}\cos \theta \right)^{2} \right)^{2}},\ p=\sqrt{ 2m(E_{1}+\hbar \omega) }
+\end{align}$$
+This is the distribution of the rate of observing the electron at $(\theta,\phi)$. To obtain the probability, we just multiplied the expression by $t$:
+$$\frac{dP}{d\Omega}=\frac{V_{0}^{2}a_{0}t}{2\hbar^{4}\pi} \frac{p\left(  \frac{p^{2}}{\hbar^{2}}+k^{2}- \frac{2pk}{\hbar}\cos \theta \right)}{\left( 1+ a_{0}^{2}\left(  \frac{p^{2}}{\hbar^{2}}+k^{2}- \frac{2pk}{\hbar}\cos \theta \right)^{2} \right)^{2}},\ p=\sqrt{ 2m(E_{1}+\hbar \omega) }$$
