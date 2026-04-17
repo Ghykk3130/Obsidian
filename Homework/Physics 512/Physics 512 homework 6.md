@@ -124,3 +124,10 @@ $$\begin{align}
 \end{align}$$
 This is the distribution of the rate of observing the electron at $(\theta,\phi)$. To obtain the probability, we just multiplied the expression by $t$:
 $$\frac{dP}{d\Omega}=\frac{2V_{0}^{2}a_{0}^{3}t}{\hbar^{4}\pi} \frac{p}{\left( 1+ a_{0}^{2}\left(  \frac{p^{2}}{\hbar^{2}}+k^{2}- \frac{2pk}{\hbar}\cos \theta \right)^{2} \right)^{4}},\ p=\sqrt{ 2m(E_{1}+\hbar \omega) }$$
+The primary distinction of this model from the realistic photoelectric problem that the realistic perturbation is $\frac{|e|}{m} \mathbf{A} \cdot \mathbf{p}$. The scalar potential model preserves azimuthal symmetry around the $z$-axis, whereas the realistic model breaks the symmetry by the $\mathbf{p}$ dependence and the polarization information encoded in $\mathbf{A}$. Therefore, we did not see any $\phi$ dependence in $\frac{dP}{d\Omega}$ here.
+# 3.
+
+
+
+
+
