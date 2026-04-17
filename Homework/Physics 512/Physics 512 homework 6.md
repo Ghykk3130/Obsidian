@@ -69,3 +69,14 @@ $$\begin{align}
  & = \frac{\gamma^{2}}{\hbar^{2}}t^{2}
 \end{align}$$
 This is unbounded and therefore unphysical. In this case, the two approaches disagree.
+# Sakurai 5.38
+
+The perturbation can be written as:
+$$\begin{align}
+V & =  V_{0}\cos(kz-\omega t) \\
+ & = \frac{V_{0}}{2}(e^{i(kz-\omega t)}+ e^{-i(kz-\omega t)})
+\end{align}$$
+Then $\mathscr{V}= \frac{V_{0}}{2}e^{ikz}$. We need to compute $\bra{\mathbf{p}}  \mathscr{V}\ket{1,0,0}$. It suffices to compute:
+$$\begin{align}
+\bra{\mathbf{p}} e^{ikz}\ket{1,0,0}  & = \int d^{3}r \frac{1}{L^{3/2}}e^{- \frac{i}{\hbar}\mathbf{p}\cdot \mathbf{r}} e^{ikz} \frac{1}{\sqrt{ \pi a_{0}^{3} }} e^{- \frac{r}{a_{0}}}
+\end{align}$$
