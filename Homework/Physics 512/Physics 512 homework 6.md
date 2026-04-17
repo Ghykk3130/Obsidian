@@ -100,3 +100,4 @@ $$w= \frac{2\pi}{\hbar} \cdot 4 \frac{V_{0}^{2}\pi}{a_{0}^{3}L^{3}}\left( \frac{
 To obtain the angular distribution of the electron, we first compute the transition probability to $\mathbf{p}$:
 $$P=wt$$
 We pick a region $p^{2}d\Omega dp$ in the momentum space that is centered on the surface defined by $\frac{p^{2}}{2m}=\hbar \omega+E_{1}$.
+
