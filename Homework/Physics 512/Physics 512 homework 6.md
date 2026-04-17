@@ -80,7 +80,7 @@ Then $\mathscr{V}= \frac{V_{0}}{2}e^{ikz}$. We need to compute $\bra{\mathbf{p}}
 $$\begin{align}
 \bra{\mathbf{p}} e^{ikz}\ket{1,0,0}  & = \int d^{3}r \frac{1}{L^{3/2}}e^{- \frac{i}{\hbar}\mathbf{p}\cdot \mathbf{r}} e^{ikz} \frac{1}{\sqrt{ \pi a_{0}^{3} }} e^{- \frac{r}{a_{0}}}
 \end{align}$$
-Let $\mathbf{k}=k  \hat{\mathbf{z}}$. Then the exponent can be written as $- \frac{i}{\hbar}\mathbf{p}\cdot \mathbf{r}+i\mathbf{k}\cdot \mathbf{r}- \frac{r}{a_{0}}=i\left( - \frac{\mathbf{p}}{\hbar}+\mathbf{k} \right)\cdot \mathbf{r}- \frac{r}{a_{0}}$. Let $\mathbf{q}= \frac{-\mathbf{p}}{\hbar}+\mathbf{k}$, and choose the z-axis to by parallel to $\mathbf{q}$. We integrate in the spherical coordinates:
+Let $\mathbf{k}=k  \hat{\mathbf{z}}$. Then the exponent can be written as $- \frac{i}{\hbar}\mathbf{p}\cdot \mathbf{r}+i\mathbf{k}\cdot \mathbf{r}- \frac{r}{a_{0}}=i\left( - \frac{\mathbf{p}}{\hbar}+\mathbf{k} \right)\cdot \mathbf{r}- \frac{r}{a_{0}}$. Let $\mathbf{q}= \frac{-\mathbf{p}}{\hbar}+\mathbf{k}$, and choose the z-axis to by parallel to $\mathbf{q}$. This z-axis should not be confused with the z-axis that defines $\cos(kz-\omega t)$. This z-axis is just for the convenience of integration. We integrate in the spherical coordinates:
 $$\begin{align}
 \int d^{3}r \exp\left( - \frac{i}{\hbar}\mathbf{p}\cdot \mathbf{r}+ikz - \frac{r}{a_{0}} \right) & = \int dr d\theta d\phi r^{2}\sin \theta \exp\left( iqr\cos \theta- \frac{r}{a_{0}} \right) \\
  & = -2\pi \int r^{2}dr \int d(\cos \theta)\exp\left( iqr\cos \theta- \frac{r}{a_{0}} \right) \\
@@ -96,4 +96,4 @@ $$\begin{align}
  & = 4 \frac{V_{0}^{2}\pi}{a_{0}^{3}L^{3}} \left( \frac{1}{1 /a_{0}^{2}+q^{2}} \right)^{2}
 \end{align}$$
 The density of states of free electrons in a box is obviously $\frac{L^{3}}{(2\pi)^{3}}$. Then:
-$$w= \frac{2\pi}{\hbar} \cdot 4 \frac{V_{0}^{2}\pi}{a_{0}^{3}L^{3}}\left( \frac{1}{1/ a_{0}^{2}+q^{2}} \right)^{2} \cdot \frac{L^{3}}{(2\pi)^{3}}=$$
+$$w= \frac{2\pi}{\hbar} \cdot 4 \frac{V_{0}^{2}\pi}{a_{0}^{3}L^{3}}\left( \frac{1}{1/ a_{0}^{2}+q^{2}} \right)^{2} \cdot \frac{L^{3}}{(2\pi)^{3}}=\frac{V_{0}^{2}a_{0}^{3}}{\pi \hbar } \left( \frac{1}{1 +a_{0}^{3}|\mathbf{k}- \mathbf{p} /\hbar|^{2}} \right)^{2}\text{, with } \frac{p^{2}}{2m}\approx\hbar \omega+E_{1}$$
