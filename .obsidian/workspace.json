@@ -2201,9 +2201,19 @@
               "icon": "lucide-list",
               "title": "Outline of 散射"
             }
+          },
+          {
+            "id": "4202f45e41daacdb",
+            "type": "leaf",
+            "state": {
+              "type": "git-view",
+              "state": {},
+              "icon": "git-pull-request",
+              "title": "Source Control"
+            }
           }
         ],
-        "currentTab": 3
+        "currentTab": 4
       }
     ],
     "direction": "horizontal",
@@ -2222,7 +2232,7 @@
       "obsidian-excalidraw-plugin:New drawing": false
     }
   },
-  "active": "74fb5b1453533302",
+  "active": "d6c613677debb448",
   "lastOpenFiles": [
     "Excalidraw/Drawing 2026-04-16 15.13.24.excalidraw.md",
     "Notes/散射.md",
