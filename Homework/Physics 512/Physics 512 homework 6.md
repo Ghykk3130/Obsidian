@@ -88,12 +88,15 @@ $$\begin{align}
  & = \frac{-2\pi}{iq} \int dr r\left[ \exp\left( -iqr- \frac{r}{a_{0}} \right)-\exp\left( iqr- \frac{r}{a_{0}} \right) \right]  \\
  & = \frac{-2\pi}{iq }\left(  \frac{-1}{-iq- \frac{1}{a_{0}}}- \frac{-1}{iq- \frac{1}{a_{0}}} \right) \\
  & = 2\pi\left( \frac{1}{-iq- \frac{1}{a_{0}}}- \frac{1}{iq- \frac{1}{a_{0}}} \right) \\
- & = \frac{4\pi}{1 /a_{0}^{2}+q^{2}}
+ & = \frac{4\pi iq}{1 /a_{0}^{2}+q^{2}}
 \end{align}$$
 Then we have:
 $$\begin{align}
-|\bra{\mathbf{p}} \mathscr{V}\ket{1,0,0}|^{2} & = \frac{v_{0}^{2}}{4} \frac{16\pi^{2}}{\pi a_{0}^{3}L^{3}}\left(  \frac{1}{1 /a_{0}^{2}+q^{2}} \right)^{2} \\
- & = 4 \frac{V_{0}^{2}\pi}{a_{0}^{3}L^{3}} \left( \frac{1}{1 /a_{0}^{2}+q^{2}} \right)^{2}
+|\bra{\mathbf{p}} \mathscr{V}\ket{1,0,0}|^{2} & = \frac{v_{0}^{2}}{4} \frac{16\pi^{2}}{\pi a_{0}^{3}L^{3}}\left(  \frac{q}{1 /a_{0}^{2}+q^{2}} \right)^{2} \\
+ & = 4 \frac{V_{0}^{2}\pi}{a_{0}^{3}L^{3}} \left( \frac{q}{1 /a_{0}^{2}+q^{2}} \right)^{2}
 \end{align}$$
-The density of states of free electrons in a box is obviously $\frac{L^{3}}{(2\pi)^{3}}$. Then:
-$$w= \frac{2\pi}{\hbar} \cdot 4 \frac{V_{0}^{2}\pi}{a_{0}^{3}L^{3}}\left( \frac{1}{1/ a_{0}^{2}+q^{2}} \right)^{2} \cdot \frac{L^{3}}{(2\pi)^{3}}=\frac{V_{0}^{2}a_{0}^{3}}{\pi \hbar } \left( \frac{1}{1 +a_{0}^{3}|\mathbf{k}- \mathbf{p} /\hbar|^{2}} \right)^{2}\text{, with } \frac{p^{2}}{2m}\approx\hbar \omega+E_{1}$$
+Then:
+$$w= \frac{2\pi}{\hbar} \cdot 4 \frac{V_{0}^{2}\pi}{a_{0}^{3}L^{3}}\left( \frac{q}{1/ a_{0}^{2}+q^{2}} \right)^{2}\delta\left( \frac{p^{2}}{2m}=\hbar \omega+E_{1} \right) =\frac{8V_{0}^{2}\pi^{2}a_{0}}{\hbar L^{3}} \frac{q^{2}}{(1+a_{0}^{2}q^{2})^{2}} \delta\left( \frac{p^{2}}{2m}=\hbar \omega+E_{1} \right)$$
+To obtain the angular distribution of the electron, we first compute the transition probability to $\mathbf{p}$:
+$$P=wt$$
+We pick a region $p^{2}d\Omega dp$ in the momentum space that is centered on the surface defined by $\frac{p^{2}}{2m}=\hbar \omega+E_{1}$.
