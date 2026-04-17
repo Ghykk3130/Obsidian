@@ -127,6 +127,44 @@ $$\frac{dP}{d\Omega}=\frac{2V_{0}^{2}a_{0}^{3}t}{\hbar^{4}\pi} \frac{p}{\left( 1
 The primary distinction of this model from the realistic photoelectric problem that the realistic perturbation is $\frac{|e|}{m} \mathbf{A} \cdot \mathbf{p}$. The scalar potential model preserves azimuthal symmetry around the $z$-axis, whereas the realistic model breaks the symmetry by the $\mathbf{p}$ dependence and the polarization information encoded in $\mathbf{A}$. Therefore, we did not see any $\phi$ dependence in $\frac{dP}{d\Omega}$ here.
 # 3.
 
+Under the first order Born approximation, we take $\phi(\mathbf{r})= \frac{1}{\sqrt{ (2\pi)^{3} }}e^{i\mathbf{k}\cdot \mathbf{r}}$. We compute the matrix element:
+$$\begin{align}
+\bra{\mathbf{k}^{'}} V \ket{\phi}  & = \frac{1}{(2\pi)^{3}}\int_{\mathbb{R}^{3}} d^{3}r e^{-i\mathbf{k}^{'}\cdot \mathbf{r}}V(\mathbf{r}) e^{i\mathbf{k}\cdot \mathbf{r}} \\
+\end{align}$$
+We have:
+$$\begin{align}
+\int_{\mathbb{R}^{3}} d^{3}r e^{i(\mathbf{k}-\mathbf{k}^{'})\cdot \mathbf{r}} V & = \int_{B(0,R)}d^{3}r e^{i(\mathbf{k}-\mathbf{k}^{'})\cdot \mathbf{r}}V_{0}  
+\end{align}$$
+Take $\mathbf{k}-\mathbf{k}^{'}$ to be the z-axis. Write $\mathbf{q}=\mathbf{k}-\mathbf{k}^{'}$. We have:
+$$\begin{align}
+\int_{B(0,R)} d^{3}r e^{i(\mathbf{k}-\mathbf{k}^{'})\cdot \mathbf{r}}V & = \int d^{ }r d\phi d\theta r^{2}\sin \theta e^{iqr\cos \theta}V_{0} &  \\
+ & = 2\pi V_{0} (-1)\int drr^{2} \int d(\cos \theta) e^{iqr\cos \theta} \\
+ & = (-2\pi V_{0})\int drr^{2} \frac{e^{-iqr}-e^{iqr}}{iqr} \\
+ & = \frac{2\pi V_{0}i}{q}\int_{0}^{R} dr r(e^{-iqr}-e^{iqr})
+\end{align}$$
+We compute:
+$$\begin{align}
+\int_{0}^{R} dr re^{-iqr} & = \left[ - \frac{1}{iq}re^{-iqr} \right]_{0}^{R}+ \frac{1}{iq}\int_{0}^{R}dr e^{-iqr} \\
+ & = \left[ - \frac{1}{iq}re^{-iqr}+ \frac{e^{-iqr}}{q^{2}} \right]_{0}^{R} \\
+ & = \frac{\mathrm{Re}^{-iqR}}{-iq}+ \frac{e^{-iqR}}{q^{2}}- \frac{1}{q^{2}}
+\end{align}$$
+Replace $q \leadsto -q$ to obtain $\int_{0}^{R}dr re^{iqr}$. Then:
+$$\begin{align}
+\bra{\mathbf{k}^{'}} V \ket{\phi}  & = \frac{1}{(2\pi)^{3}} \frac{2\pi V_{0}i}{q} \left[  \frac{\mathrm{Re}^{-iqR}}{-iq}+ \frac{e^{-iqR}}{q^{2}}- \frac{\mathrm{Re}^{iqR}}{iq}- \frac{e^{iqR}}{q^{2}} \right] \\
+ & = \frac{1}{(2\pi)^{3}} \frac{2\pi V_{0}i}{q} \left[ - \frac{iR}{q}(-e^{-iqR}-e^{iqR})+ \frac{1}{q^{2}}(e^{-iqR}-e^{iqR}) \right] \\
+ & = \frac{1}{(2\pi)^{3}} \frac{2\pi V_{0}i}{q}\left(  \frac{iR}{q}2\cos(qR)- \frac{2i}{q^{2}}\sin(qR) \right) \\
+ & = - \frac{4\pi V_{0}R}{q^{2}}\cos(qR)+ \frac{4V_{0}}{q^{3}}\sin(qR)
+\end{align}$$
+The scattering amplitude is:
+$$\begin{align}
+f(\theta) & = - \frac{4\pi^{2}m}{\hbar^{2}}\bra{\mathbf{k}^{'}} V \ket{\phi}  \\
+ & = \frac{2mV_{0}R}{\hbar^{2}q^{2}}\cos(qR)- \frac{2mV_{0}}{q^{3}\hbar^{2}\pi}\sin(qR)
+\end{align}$$
+By energy conservation, we have $k^{'}=k$. It's obvious from geometry that $q= 2k\sin\left( \frac{\theta}{2} \right)$. Know that $E= \frac{\hbar^{2}k^{2}}{2m}$, we have:
+$$\begin{align}
+f(\theta) & = \frac{2mV_{0}R}{\hbar^{2} 4k^{2}\sin ^{2}\left(  \frac{\theta}{2} \right)}\cos\left( 2kR\sin \frac{\theta}{2} \right)- \frac{2mV_{0}}{8k^{3}\sin ^{3}\left(  \frac{\theta}{2} \right)\hbar^{2}\pi}\sin\left(  2kR\sin \frac{\theta}{2} \right) \\
+ & = \frac{R}{4\sin ^{2} \frac{\theta}{2}} \frac{V_{0}}{E}\cos\left( 2kR\sin \frac{\theta}{2} \right)- \frac{1}{8\pi k\sin ^{3} \frac{\theta}{2}} \frac{V_{0}}{E} \sin\left( 2kR\sin \frac{\theta}{2} \right)
+\end{align}$$
 
 
 
