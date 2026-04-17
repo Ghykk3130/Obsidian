@@ -86,31 +86,41 @@ $$\begin{align}
  & = -2\pi \int r^{2}dr \int d(\cos \theta)\exp\left( iqr\cos \theta- \frac{r}{a_{0}} \right) \\
  & = -2\pi \int drr^{2} e^{- \frac{r}{a_{0}}} \frac{e^{-iqr}-e^{iqr}}{iqr} \\
  & = \frac{-2\pi}{iq} \int dr r\left[ \exp\left( -iqr- \frac{r}{a_{0}} \right)-\exp\left( iqr- \frac{r}{a_{0}} \right) \right]  \\
- & = \frac{-2\pi}{iq }\left(  \frac{-1}{-iq- \frac{1}{a_{0}}}- \frac{-1}{iq- \frac{1}{a_{0}}} \right) \\
- & = 2\pi\left( \frac{1}{-iq- \frac{1}{a_{0}}}- \frac{1}{iq- \frac{1}{a_{0}}} \right) \\
- & = \frac{4\pi iq}{1 /a_{0}^{2}+q^{2}}
+ 
+\end{align}$$
+We know that:
+$$\begin{align}
+\int_{0}^{\infty}dx x e^{-x} & = \int dx \left.\left( - \frac{\partial}{\partial \mu} \right)\right|_{\mu=1}e^{-\mu x} \\
+ & = \left.\left( - \frac{\partial}{\partial \mu} \right)\right|_{\mu=1}\left( \frac{1}{\mu} \right) \\
+ & = 1
+\end{align}$$
+Therefore:
+$$\begin{align}
+\frac{-2\pi}{iq} \int drr\left[ \exp\left( -iqr- \frac{r}{a_{0}} \right)-\exp\left( iqr- \frac{r}{a_{0}} \right) \right] & = \left( - \frac{2\pi}{iq} \right)\left[ \frac{1}{(iq+ 1 /a_{0})^{2}}- \frac{1}{(-iq+1 /a_{0})^{2}} \right] \\
+ & = \left( \frac{-2\pi}{iq} \right) \frac{- 4iq /a_{0}}{(iq+1 /a_{0})^{2}(iq-1 /a_{0})^{2}} \\
+ & = \frac{8\pi a_{0}^{3}}{(a_{0}^{2}q^{2}+1)^{2}}
 \end{align}$$
 Then we have:
 $$\begin{align}
-|\bra{\mathbf{p}} \mathscr{V}\ket{1,0,0}|^{2} & = \frac{v_{0}^{2}}{4} \frac{16\pi^{2}}{\pi a_{0}^{3}L^{3}}\left(  \frac{q}{1 /a_{0}^{2}+q^{2}} \right)^{2} \\
- & = 4 \frac{V_{0}^{2}\pi}{a_{0}^{3}L^{3}} \left( \frac{q}{1 /a_{0}^{2}+q^{2}} \right)^{2}
+|\bra{\mathbf{p}} \mathscr{V}\ket{1,0,0}|^{2} & = \frac{V_{0}^{2}}{4\pi a_{0}^{3}L^{3}} \frac{64\pi^{2}a_{0}^{6}}{(a_{0}^{2}q^{2}+1)^{4}} \\
+ & = \frac{16\pi V_{0}^{2}a_{0}^{3}}{L^{3}} \frac{1}{(a_{0}^{2}q^{2}+1)^{4}}
 \end{align}$$
 Then:
-$$w= \frac{2\pi}{\hbar} \cdot 4 \frac{V_{0}^{2}\pi}{a_{0}^{3}L^{3}}\left( \frac{q}{1/ a_{0}^{2}+q^{2}} \right)^{2}\delta\left( \frac{p^{2}}{2m}=\hbar \omega+E_{1} \right) =\frac{8V_{0}^{2}\pi^{2}a_{0}}{\hbar L^{3}} \frac{q^{2}}{(1+a_{0}^{2}q^{2})^{2}} \delta\left( \frac{p^{2}}{2m}=\hbar \omega+E_{1} \right)$$
+$$w= \frac{2\pi}{\hbar} \cdot \frac{16\pi V_{0}^{2}a_{0}^{3}}{L^{3}} \frac{1}{(a_{0}^{2}q^{2}+1)^{4}}  \cdot \delta\left( \frac{p^{2}}{2m}=\hbar \omega+E_{1} \right) =\frac{32V_{0}^{2}\pi^{2}a_{0}^{3}}{\hbar L^{3}} \frac{1}{(1+a_{0}^{2}q^{2})^{4}} \delta\left( \frac{p^{2}}{2m}=\hbar \omega+E_{1} \right)$$
 Given a small region $p^{2}d\Omega dp$ in the momentum space, the rate of transitioning into this region is $w p^{2} d\Omega dp \rho(\mathbf{p})$, where $\rho(\mathbf{p})$ is the density of states with respect to the measure $d^{3}p$. Know that $\mathbf{p}$ is subject to periodic boundary conditions $\frac{p_{i}}{\hbar}L= 2\pi n_{i}$. Then each state takes a volume of $\frac{(2\pi \hbar)^{3}}{L^{3}}$ in the momentum space. Therefore $\rho(\mathbf{p})= \frac{L^{3}}{(2\pi \hbar)^{3}}$. 
 
 To obtain the rate of transitioning into the solid angle $d\Omega$, we integrate $p$:
 $$\begin{align}
 \frac{dW}{d\Omega} & = \int_{0}^{\infty}dpp^{2} w \rho(\mathbf{p}) \\
- & = \frac{V_{0}^{2}a_{0}}{\hbar^{4}\pi}\int dp p^{2} \frac{q^{2}}{(1+a_{0}^{2}q^{2})^{2}}\delta\left( \frac{p^{2}}{2m}=\hbar \omega+E_{1} \right) \\
- & = \frac{V_{0}^{2}a_{0} }{\hbar^{4}\pi } \int dp^{2} \frac{p}{2} \frac{q^{2}}{(1+a_{0}^{2}q^{2})^{2} }\delta\left(  \frac{p^{2}}{2m}=\hbar \omega+E_{1} \right) \\
- & = \frac{V_{0}^{2}a_{0}}{2\hbar^{4}\pi} \frac{pq^{2}}{(1+a_{0}^{2}q^{2})^{2}},\ p= \sqrt{ 2m(E_{1}+\hbar \omega) } 
+ & = \frac{4V_{0}^{2}a_{0}^{3}}{\hbar^{4}\pi} \int dp p^{2} \frac{1}{(1+a_{0}^{2}q^{2})^{4}}\delta\left( \frac{p^{2}}{2m}=\hbar \omega+E_{1} \right) \\
+ & = \frac{4V_{0}^{2}a_{0}^{3} }{\hbar^{4}\pi } \int dp^{2} \frac{p}{2} \frac{1}{(1+a_{0}^{2}q^{2})^{4} }\delta\left(  \frac{p^{2}}{2m}=\hbar \omega+E_{1} \right) \\
+ & = \frac{2V_{0}^{2}a_{0}^{3}}{\hbar^{4}\pi} \frac{p}{(1+a_{0}^{2}q^{2})^{4}},\ p= \sqrt{ 2m(E_{1}+\hbar \omega) } 
 \end{align}$$
 Let $\theta$ be the angle subtended by $\mathbf{p}$ and the z-axis. It is obvious from geometry that:
 $$q^{2}= \frac{p^{2}}{\hbar^{2}}+k^{2}- \frac{2p k}{\hbar}\cos \theta$$
 Then:
 $$\begin{align}
-\frac{dW}{d\Omega} & = \frac{V_{0}^{2}a_{0}}{2\hbar^{4}\pi} \frac{p\left(  \frac{p^{2}}{\hbar^{2}}+k^{2}- \frac{2pk}{\hbar}\cos \theta \right)}{\left( 1+ a_{0}^{2}\left(  \frac{p^{2}}{\hbar^{2}}+k^{2}- \frac{2pk}{\hbar}\cos \theta \right)^{2} \right)^{2}},\ p=\sqrt{ 2m(E_{1}+\hbar \omega) }
+\frac{dW}{d\Omega} & = \frac{2V_{0}^{2}a_{0}^{3}}{\hbar^{4}\pi} \frac{p}{\left( 1+ a_{0}^{2}\left(  \frac{p^{2}}{\hbar^{2}}+k^{2}- \frac{2pk}{\hbar}\cos \theta \right)^{2} \right)^{4}},\ p=\sqrt{ 2m(E_{1}+\hbar \omega) }
 \end{align}$$
 This is the distribution of the rate of observing the electron at $(\theta,\phi)$. To obtain the probability, we just multiplied the expression by $t$:
-$$\frac{dP}{d\Omega}=\frac{V_{0}^{2}a_{0}t}{2\hbar^{4}\pi} \frac{p\left(  \frac{p^{2}}{\hbar^{2}}+k^{2}- \frac{2pk}{\hbar}\cos \theta \right)}{\left( 1+ a_{0}^{2}\left(  \frac{p^{2}}{\hbar^{2}}+k^{2}- \frac{2pk}{\hbar}\cos \theta \right)^{2} \right)^{2}},\ p=\sqrt{ 2m(E_{1}+\hbar \omega) }$$
+$$\frac{dP}{d\Omega}=\frac{2V_{0}^{2}a_{0}^{3}t}{\hbar^{4}\pi} \frac{p}{\left( 1+ a_{0}^{2}\left(  \frac{p^{2}}{\hbar^{2}}+k^{2}- \frac{2pk}{\hbar}\cos \theta \right)^{2} \right)^{4}},\ p=\sqrt{ 2m(E_{1}+\hbar \omega) }$$
