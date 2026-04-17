@@ -80,3 +80,20 @@ Then $\mathscr{V}= \frac{V_{0}}{2}e^{ikz}$. We need to compute $\bra{\mathbf{p}}
 $$\begin{align}
 \bra{\mathbf{p}} e^{ikz}\ket{1,0,0}  & = \int d^{3}r \frac{1}{L^{3/2}}e^{- \frac{i}{\hbar}\mathbf{p}\cdot \mathbf{r}} e^{ikz} \frac{1}{\sqrt{ \pi a_{0}^{3} }} e^{- \frac{r}{a_{0}}}
 \end{align}$$
+Let $\mathbf{k}=k  \hat{\mathbf{z}}$. Then the exponent can be written as $- \frac{i}{\hbar}\mathbf{p}\cdot \mathbf{r}+i\mathbf{k}\cdot \mathbf{r}- \frac{r}{a_{0}}=i\left( - \frac{\mathbf{p}}{\hbar}+\mathbf{k} \right)\cdot \mathbf{r}- \frac{r}{a_{0}}$. Let $\mathbf{q}= \frac{-\mathbf{p}}{\hbar}+\mathbf{k}$, and choose the z-axis to by parallel to $\mathbf{q}$. We integrate in the spherical coordinates:
+$$\begin{align}
+\int d^{3}r \exp\left( - \frac{i}{\hbar}\mathbf{p}\cdot \mathbf{r}+ikz - \frac{r}{a_{0}} \right) & = \int dr d\theta d\phi r^{2}\sin \theta \exp\left( iqr\cos \theta- \frac{r}{a_{0}} \right) \\
+ & = -2\pi \int r^{2}dr \int d(\cos \theta)\exp\left( iqr\cos \theta- \frac{r}{a_{0}} \right) \\
+ & = -2\pi \int drr^{2} e^{- \frac{r}{a_{0}}} \frac{e^{-iqr}-e^{iqr}}{iqr} \\
+ & = \frac{-2\pi}{iq} \int dr r\left[ \exp\left( -iqr- \frac{r}{a_{0}} \right)-\exp\left( iqr- \frac{r}{a_{0}} \right) \right]  \\
+ & = \frac{-2\pi}{iq }\left(  \frac{-1}{-iq- \frac{1}{a_{0}}}- \frac{-1}{iq- \frac{1}{a_{0}}} \right) \\
+ & = 2\pi\left( \frac{1}{-iq- \frac{1}{a_{0}}}- \frac{1}{iq- \frac{1}{a_{0}}} \right) \\
+ & = \frac{4\pi}{1 /a_{0}^{2}+q^{2}}
+\end{align}$$
+Then we have:
+$$\begin{align}
+|\bra{\mathbf{p}} \mathscr{V}\ket{1,0,0}|^{2} & = \frac{v_{0}^{2}}{4} \frac{16\pi^{2}}{\pi a_{0}^{3}L^{3}}\left(  \frac{1}{1 /a_{0}^{2}+q^{2}} \right)^{2} \\
+ & = 4 \frac{V_{0}^{2}\pi}{a_{0}^{3}L^{3}} \left( \frac{1}{1 /a_{0}^{2}+q^{2}} \right)^{2}
+\end{align}$$
+The density of states of free electrons in a box is obviously $\frac{L^{3}}{(2\pi)^{3}}$. Then:
+$$w= \frac{2\pi}{\hbar} \cdot 4 \frac{V_{0}^{2}\pi}{a_{0}^{3}L^{3}}\left( \frac{1}{1/ a_{0}^{2}+q^{2}} \right)^{2} \cdot \frac{L^{3}}{(2\pi)^{3}}=$$
