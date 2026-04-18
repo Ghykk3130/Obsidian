@@ -2055,12 +2055,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Notes/散射.md",
+                "file": "Notes/粒子流密度.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "散射"
+              "title": "粒子流密度"
             }
           }
         ],
@@ -2234,9 +2234,10 @@
   },
   "active": "74fb5b1453533302",
   "lastOpenFiles": [
+    "Notes/代数拓扑基本概念.md",
+    "Notes/散射.md",
     "Pictures/Pasted image 20260417195651.png",
     "Homework/Physics 512/Physics 512 homework 6.md",
-    "Notes/散射.md",
     "Notes/Delta函数的转化.md",
     "Notes/对偶矢量空间与伴随算子.md",
     "Notes/统计力学的数学基础.md",
@@ -2269,7 +2270,6 @@
     "Pictures/Pasted image 20260415001808.png",
     "Pictures/Pasted image 20260414203509.png",
     "Pictures/Pasted image 20260414193550.png",
-    "Pictures/Pasted image 20260414193324.png",
     "Homework/Math 654/Homework 2.html",
     "tldraw",
     "Excalidraw/Scripts/Downloaded",
