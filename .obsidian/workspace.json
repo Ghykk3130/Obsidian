@@ -2055,12 +2055,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Homework/Physics 512/Physics 512 homework 6.md",
+                "file": "Notes/散射.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Physics 512 homework 6"
+              "title": "散射"
             }
           }
         ],
@@ -2234,8 +2234,9 @@
   },
   "active": "74fb5b1453533302",
   "lastOpenFiles": [
-    "Notes/散射.md",
+    "Pictures/Pasted image 20260417195651.png",
     "Homework/Physics 512/Physics 512 homework 6.md",
+    "Notes/散射.md",
     "Notes/Delta函数的转化.md",
     "Notes/对偶矢量空间与伴随算子.md",
     "Notes/统计力学的数学基础.md",
@@ -2261,7 +2262,6 @@
     "Notes/电荷密度.md",
     "Notes/Fermi's golden rule.md",
     "Notes/Fourier transform.md",
-    "Homework/Physics 511/Untitled.md",
     "Pictures/d29cc9c5a7117e95778c59a93e947ab2.jpg",
     "Pictures/ff4fdd3d1f3d2e29b7f2d6cd14172a37.jpg",
     "Pictures/5e161970f3eb4d1a303e36770e989ea6.jpg",
