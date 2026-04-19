@@ -153,17 +153,34 @@ $$\begin{align}
 \bra{\mathbf{k}^{'}} V \ket{\phi}  & = \frac{1}{(2\pi)^{3}} \frac{2\pi V_{0}i}{q} \left[  \frac{\mathrm{Re}^{-iqR}}{-iq}+ \frac{e^{-iqR}}{q^{2}}- \frac{\mathrm{Re}^{iqR}}{iq}- \frac{e^{iqR}}{q^{2}} \right] \\
  & = \frac{1}{(2\pi)^{3}} \frac{2\pi V_{0}i}{q} \left[ - \frac{iR}{q}(-e^{-iqR}-e^{iqR})+ \frac{1}{q^{2}}(e^{-iqR}-e^{iqR}) \right] \\
  & = \frac{1}{(2\pi)^{3}} \frac{2\pi V_{0}i}{q}\left(  \frac{iR}{q}2\cos(qR)- \frac{2i}{q^{2}}\sin(qR) \right) \\
- & = - \frac{4\pi V_{0}R}{q^{2}}\cos(qR)+ \frac{4V_{0}}{q^{3}}\sin(qR)
+ & = - \frac{V_{0}R}{2\pi^{2}q^{2}}\cos(qR)+ \frac{V_{0}}{2\pi^{2}q^{3}}\sin(qR)
 \end{align}$$
 The scattering amplitude is:
 $$\begin{align}
 f(\theta) & = - \frac{4\pi^{2}m}{\hbar^{2}}\bra{\mathbf{k}^{'}} V \ket{\phi}  \\
- & = \frac{2mV_{0}R}{\hbar^{2}q^{2}}\cos(qR)- \frac{2mV_{0}}{q^{3}\hbar^{2}\pi}\sin(qR)
+ & = - \frac{2mV_{0}}{q^{2}\hbar^{2}}\left( -R\cos(qR)+ \frac{\sin(qR)}{q} \right)
 \end{align}$$
 By energy conservation, we have $k^{'}=k$. It's obvious from geometry that $q= 2k\sin\left( \frac{\theta}{2} \right)$. Know that $E= \frac{\hbar^{2}k^{2}}{2m}$, we have:
 $$\begin{align}
-f(\theta) & = \frac{2mV_{0}R}{\hbar^{2} 4k^{2}\sin ^{2}\left(  \frac{\theta}{2} \right)}\cos\left( 2kR\sin \frac{\theta}{2} \right)- \frac{2mV_{0}}{8k^{3}\sin ^{3}\left(  \frac{\theta}{2} \right)\hbar^{2}\pi}\sin\left(  2kR\sin \frac{\theta}{2} \right) \\
- & = \frac{R}{4\sin ^{2} \frac{\theta}{2}} \frac{V_{0}}{E}\cos\left( 2kR\sin \frac{\theta}{2} \right)- \frac{1}{8\pi k\sin ^{3} \frac{\theta}{2}} \frac{V_{0}}{E} \sin\left( 2kR\sin \frac{\theta}{2} \right)
+f(\theta) & = - \frac{V_{0}}{4E \sin ^{2}\left( \frac{\theta}{2} \right)}\left( -R\cos\left( 2kR\sin\left( \frac{\theta}{2} \right) \right)+ \frac{1}{2k\sin\left( \frac{\theta}{2} \right)} \sin\left( 2kR\sin\left( \frac{\theta}{2} \right) \right) \right)\end{align}$$
+# 4.
+
+Under Eikonal approximation, for $l\leq R$, we first compute:
+$$\begin{align}
+\Delta (l) & = - \frac{im}{2\hbar^{2} k}\int_{\mathbb{R}}dzV(\sqrt{ l^{2}+z^{2} }) \\
+ & = - \frac{im}{2\hbar^{2} k}V_{0} 2\sqrt{ R^{2}-l^{2} }  \\
+ & = - \frac{i {2}m}{\hbar^{2}k^{2} } \frac{kR}{2} V_{0}\sqrt{ 1- x^{2} },\ x= \frac{l}{R} \\
+ & = - i \frac{V_{0}}{E} \frac{kR}{2}\sqrt{ 1-x^{2} }
+\end{align}$$
+For $l>R$, since the potential is supported in $l\leq R$, we simply get $\Delta(l)=0$. Then:
+$$\begin{align}
+f(\theta) & = -ik \int_{0}^{\infty}dll J_{0}(kl\theta) (e^{2\Delta(l)}-1) \\ & = -ik\int_{0}^{R}dll J_{0}(kl\theta)(e^{2\Delta}-1) \\
+
+ & = -ikR^{2} \int_{0}^{1}dx xJ_{0}(kRx\theta)\left[ \exp\left( - i \frac{V_{0}}{E} kR\sqrt{ 1-x^{2} } \right)-1 \right]
+\end{align}$$
+Recall that $\int dx x J_{0}(x)=x J_{1}(x)+\text{const.}$ Then:
+$$\begin{align}
+f(\theta) & = i \frac{R}{\theta}J_{1}(kR\theta)-ikR^{2}\int_{0}^{1}dx x J_{0}(kRx\theta)\exp\left( -i \frac{V_{0}}{E}kR \sqrt{ 1-x^{2} } \right)
 \end{align}$$
 
 
