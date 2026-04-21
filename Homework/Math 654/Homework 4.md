@@ -43,7 +43,7 @@ $$\begin{align}
 Then:
 $$\begin{align}
  & \frac{d}{d\theta}\left[  \frac{1}{\sin \theta}\left( \frac{d\Theta}{d\theta}\sin \theta+\Theta \cos \theta \right) \right]+\lambda \Theta=0 \\
-\implies &  \frac{d^{2}\Theta}{d\theta^{2}}+\cot \theta \frac{d\Theta}{d\theta}+\left( \lambda- \frac{1}{\sin \theta \theta} \right)\Theta=0
+\implies &  \frac{d^{2}\Theta}{d\theta^{2}}+\cot \theta \frac{d\Theta}{d\theta}+\left( \lambda- \frac{1}{\sin ^{2} \theta } \right)\Theta=0
 \end{align}$$
 Let $x=\cos \theta$. Then:
 $$(1-x^{2}) \frac{d^{2}\Theta}{dx^{2}}- 2x \frac{d\Theta}{dx}+\left( \lambda- \frac{1}{1-x^{2}} \right)\Theta=0$$
@@ -226,7 +226,7 @@ u_{r} & = \frac{1}{r} \frac{\partial \psi}{\partial \theta} \\
 u_{\theta} & = - \frac{\partial \psi}{\partial r} \\
  & = -\Omega r \sin 2\theta\sim \mathcal{O}(\Omega r^{})
 \end{align}$$
-Then the characteristic length scale of the system is $\Omega r$. Since the boundaries are moving with $\Omega t$, the characteristic time scale of the system is $\frac{1}{\Omega}$. Therefore:
+Then the characteristic velocity scale of the system is $\Omega r$. Since the boundaries are moving with $\Omega t$, the characteristic time scale of the system is $\frac{1}{\Omega}$. The characteristic length scale is naturally $r$. Therefore:
 $$\begin{align}
  & \left| \frac{\partial \mathbf{u}}{\partial t}  \right|\sim \mathcal{O}\left( \frac{U}{T} \right) \sim \mathcal{O}(\Omega^{2}r) \\
  & |\mathbf{u}\cdot \nabla \mathbf{u} |\sim \mathcal{O}\left( U \cdot \frac{1}{r}\cdot U \right) \sim \mathcal{O}(\Omega^{2}r) \\
