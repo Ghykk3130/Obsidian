@@ -234,5 +234,68 @@ $$\begin{align}
 \end{align}$$
 In order for the viscous terms to dominate, we must have:
 $$\Omega^{2}r\ll \frac{\nu \Omega}{r}\implies \frac{\Omega r^{2}}{\nu}\ll 1$$
+# Acheson 8.2
 
+Know that:
+$$\nabla \cdot \mathbf{u}=0$$
+We can introduce the flow function $\psi$. We have:
+$$\begin{align}
+ & \frac{\partial \psi}{\partial y}=u \\
+\implies &  \psi=\int_{\text{stagnation point} }^{y} dy^{'}u =\int d(\eta^{'} g(x)) \alpha x f^{'}(\eta^{'})= \alpha x g(x)f(\eta)+C
+\end{align}$$
+Know that on the surface of the cylinder, we have $\psi=C$. The surface naturally defines a line of constant $\psi$ since no flow can penetrate the surface. Without loss of generality, we can take $C=0$. Then:
+$$\begin{align}
+v & = - \frac{\partial \psi}{\partial x} \\
+ & = - \frac{\partial \psi}{\partial x}- \frac{\partial \psi}{\partial \eta} \frac{\partial \eta}{\partial x} \\
+ & = -\alpha g(x)f(\eta)- \frac{\partial \psi}{\partial \eta}\left( - \frac{y g^{'}}{g^{2}} 
+ \right) \\
+ & = -\alpha g(x)f(\eta)- \frac{\partial \psi}{\partial \eta}\left( -\eta \frac{g^{'}}{g} \right) \\
+ & = -\alpha g f -\alpha x g^{'} f+ \alpha x g f^{'}\left( - \frac{\eta g^{'}}{g} \right) \\
+ & = -\alpha f (g+x g^{'})+ \alpha x \eta g^{'}f^{'}
+\end{align}$$
+Here the x derivatives in the first and second lines are different. The x derivative in the first line means to extract out all x dependence. The x derivatives in the second line just means to extract out the explicit x dependence. Then:
+$$\begin{align}
+ & \frac{\partial u}{\partial x}   = \frac{\partial}{\partial x}(\alpha x f^{'})= \alpha f^{'}+\alpha xf^{''}\left( - \eta \frac{g^{'}}{g} \right) \\
+ & u \frac{\partial u}{\partial x}= \alpha x f^{'}\left( \alpha f^{'}- \alpha x \eta \frac{g^{'}}{g}f^{''} \right)= \alpha^{2}x f^{'2}-\alpha^{2} x^{2} \eta \frac{g^{'}}{g} f^{'}f^{''}
+\end{align}$$
+$$\begin{align}
+ & \frac{\partial u}{\partial y}=\alpha x f^{''} \frac{1}{g} \\
+ & v \frac{\partial u}{\partial y}=(-\alpha f(g+xg^{'})+\alpha x\eta g^{'}f^{'})\left(  \frac{\alpha x }{g} f^{''} \right) = -\alpha^{2} x\left( 1+ \frac{xg^{'}}{g} \right)ff^{''}+ \alpha^{2} x^{2} \eta \frac{g^{'}}{g} f^{'}f^{''}
+\end{align}$$
+$$\begin{align}
+ & \frac{\partial^{2}u}{\partial y^{2}}= \frac{\partial}{\partial y}\left(  \frac{\alpha x}{g} f^{''} \right)= \frac{\alpha x}{g^{2}}f^{'''}
+\end{align}$$
+We have the momentum equation:
+$$\begin{align}
+ &  u \frac{\partial u}{\partial x}+ v \frac{\partial u}{\partial y}= U \frac{d U}{dx}+ \nu \frac{\partial^{2}u}{\partial y^{2}} \\
+\implies & \alpha^{2}x f^{'2}-\alpha^{2} x^{2} \eta \frac{g^{'}}{g} f^{'}f^{''}-\alpha^{2} x\left( 1+ \frac{xg^{'}}{g} \right)ff^{''}+ \alpha^{2} x^{2} \eta \frac{g^{'}}{g} f^{'}f^{''} = \alpha x \cdot \alpha+\nu \frac{\alpha x}{g^{2}}f^{'''} \\
+\implies & \alpha^{2}xf^{'2}-\alpha^{2}x\left( 1+ \frac{xg^{'}}{g} \right)f f^{''}=\alpha^{2}x + \frac{\nu \alpha x}{g^{2}}f^{'''} \\
+\implies & f^{'2}-\left( 1+ \frac{xg^{'}}{g} \right)f f^{''}=1+ \frac{\nu}{\alpha g^{2}}f^{'''} \\
+\implies & \frac{\nu}{\alpha g^{2}(x)}f^{'''}(\eta)+\left( 1+ \frac{xg^{'}(x)}{g(x)} \right)f(\eta) f^{''}(\eta)+1-f^{'2}(\eta)=0
+\end{align}$$
+Know that $x,\eta$ are independent from each other. If $g(x)$ is not a constant, then $f(\eta)$ satisfies an infinite set of differential equations, defined at each $x$. This is improbable for any non-trivial $f$. Therefore we must conclude that $g(x)=\text{const., }\forall x$. Then we have:
+$$\begin{align}
+ & \frac{\nu}{\alpha g^{2}}f^{'''}(\eta)+ff^{''}+1-f^{'2}=0 \tag{*}
+\end{align}$$
+We rescale: $\tilde{\eta}=\lambda \eta$, $\tilde{f}(\tilde{\eta})=\gamma f(\eta)$. Then:
+$$\frac{d}{d \eta}f= \frac{\lambda}{\gamma} \frac{d}{d \tilde{\eta}} \tilde{f}$$
+Know that:
+$$u=\alpha x \frac{d}{d \eta}f= \frac{\lambda}{\gamma}\alpha x \frac{d}{d \tilde{\eta}}\tilde{f}$$
+We choose $\gamma=\lambda$. Then:
+$$\begin{align}
+ &  \frac{d^{2}}{d \eta^{2}}f= \lambda \frac{d^{2}}{d \tilde{\eta}^{2}}\tilde{f} \\
+ & \frac{d^{3}}{d \eta^{3}} f= \lambda^{2} \frac{d^{3}}{d \tilde{\eta}^{3}}\tilde{f}
+\end{align}$$
+Substitute into $(*)$ to obtain:
+$$\begin{align}
+ & \frac{\nu}{\alpha g^{2}} \lambda \frac{d^{3}}{d \tilde{\eta}^{3}}\tilde{f}+ \frac{1}{\lambda}\tilde{f}  \cdot \lambda \frac{d^{2}}{d  \tilde{\eta}^{2}} \tilde{f}+1- \left( \frac{d}{d \tilde{\eta}}\tilde{f} \right) ^{2}=0 \\
+\implies & \left( \frac{\nu \lambda^{2}}{\alpha g^{2}} \right) \frac{d^{3}}{d \tilde{\eta}^{3}}\tilde{f}+ \tilde{f} \frac{d^{2}}{d \tilde{\eta}^{2}}\tilde{f}+1- \left( \frac{d}{d \tilde{\eta}}\tilde{f} \right)^{2}=0
+\end{align}$$
+Set $\frac{\nu \lambda^{2}}{\alpha g^{2}}=1\implies \lambda=g \sqrt{ \frac{\alpha}{\nu} }$. Then $\tilde{\eta}=\lambda \eta= g \frac{\sqrt{ \alpha }}{\sqrt{ \nu }}\cdot \frac{y}{g}= \frac{y}{\sqrt{ \nu /\alpha }}$. We obtain:
+$$\tilde{f}^{'''}+ \tilde{f} \tilde{f}^{''}+1- \tilde{f}^{'2}=0$$
+The boundary conditions are:
+$$u(x,0)=\alpha x  \tilde{f}^{'}(0)=0\implies \tilde{f}^{'}(0)=0\text{ at }y=0,\ \tilde{\eta}=0$$
+$$v(x,0)= - \alpha \sqrt{ \frac{\nu}{\alpha} }\tilde{f}(0)=0\implies \tilde{f}(0)=0\text{ at }y=0,\ \tilde{\eta}=0$$
+$$u(x,\infty)=\alpha x \tilde{f}^{'}(\infty)=U\implies \tilde{f}^{'}(\infty)=1\text{ as }y\rightarrow \infty,\ \tilde{\eta}\rightarrow \infty$$
+To be conformal with the notations in the problem, just replace $\tilde{f}$ by $f$, $\tilde{\eta}$ by $\eta$. 
 
