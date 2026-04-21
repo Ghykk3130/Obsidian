@@ -105,3 +105,134 @@ $$\tau=8\pi \mu \Omega a^{3}$$
 # Acheson 7.5
 
 The no-slip boundary condition gives:
+$$\begin{align}
+ & \text{At }\theta=\Omega t\text{ : }u_{r}=0,\ u_{\theta}=\Omega r \\
+ & \text{At }\theta=-\Omega t\text{ : }u_{r}=0,\ u_{\theta}=-\Omega r
+\end{align}$$
+For the stream function in polar coordinates:
+$$u_{r}= \frac{1}{r} \frac{\partial \psi}{\partial \theta},\ u_{\theta}= - \frac{\partial \psi}{\partial r}$$
+Therefore:
+$$\begin{align}
+ & - \left. \frac{\partial \psi}{\partial r}  \right|_{\theta=\pm \Omega t}=\pm \Omega r\implies \psi(r,\pm \Omega t)=\mp \frac{1}{2}\Omega r^{2}+f(\theta) \\
+ & \left.  \frac{1}{r} \frac{\partial \psi}{\partial \theta}  \right|_{\theta=\pm \Omega t}=0\implies \left. \frac{\partial \psi}{\partial \theta}  \right|_{\theta=\pm \Omega t}=0
+\end{align}$$
+Since at $r=0$, $\frac{\partial \psi}{\partial r}=f(\theta)$ is uniquely defined for any $\theta$, we must conclude that $f$ is independent of $\theta$, and therefore is a constant. Without loss of generality, take $f=0$. Then:
+$$\begin{align}
+ & \psi(r,+ \Omega t)= \mp \frac{1}{2}\Omega r^{2} \\
+ & \left.  \frac{\partial \psi}{\partial \theta}  \right|_{\theta=\pm \Omega t}=0
+\end{align}$$
+Under the assumption that the Reynold's number is small, we have:
+$$\begin{align}
+ & \nabla p=\mu \nabla^{2}\mathbf{u} \\
+ & \nabla \cdot \mathbf{u}=0
+\end{align}$$
+Then:
+$$0=\nabla \times \nabla p=\mu \nabla \times \nabla^{2}\mathbf{u}$$
+We adopt Einstein's summation convention:
+$$\begin{align}
+(\nabla \times \nabla^{2}\mathbf{u}) _{i} & = \epsilon_{ijk}\partial_{j}\partial_{l}^{2}u_{k} \\
+ & = \partial_{l}^{2}(\epsilon_{ijk}\partial_{j}u_{k}) \\
+ & = \nabla^{2}(\nabla \times \mathbf{u})_{i}
+\end{align}$$
+Then:
+$$\begin{align}
+\nabla^{2}(\nabla \times \mathbf{u})=0
+\end{align}$$
+The only existent component of $\nabla \times \mathbf{u}$ is:
+$$\begin{align}
+(\nabla \times \mathbf{u})_{z}= \frac{1}{r} \frac{\partial}{\partial r}(ru_{\theta})- \frac{1}{r} \frac{\partial u_{r}}{\partial \theta}
+\end{align}$$
+after we add a z-axis for convenience. Then:
+$$\begin{align}
+  (\nabla \times \mathbf{u})_{z} & = \frac{1}{r} \frac{\partial}{\partial r}\left( -r \frac{\partial \psi}{\partial r} \right)- \frac{1}{r} \frac{\partial}{\partial \theta}\left(  \frac{1}{r} \frac{\partial \psi}{\partial \theta} \right) \\
+ & = - \frac{\partial^{2}\psi}{\partial r^{2}}- \frac{1}{r} \frac{\partial \psi}{\partial r}- \frac{1}{r^{2}} \frac{\partial^{2}\psi}{\partial \theta^{2}} \\
+ & =-\nabla^{2}\psi
+\end{align}$$
+Then:
+$$\begin{align}
+ & \nabla^{2}(\nabla \times \mathbf{u})=0 \\
+\implies & \nabla^{2}(\nabla \times \mathbf{u})_{z}=0 \\
+\implies & \nabla^{4}\psi=0\implies\left( \frac{\partial^{2}}{\partial r^{2}}_{  } + \frac{1}{r} \frac{\partial}{\partial r}+ \frac{1}{r^{2}} \frac{\partial^{2}}{\partial \theta^{2}} \right)^{2}\psi=0
+\end{align}$$
+We make the ansatz that $\psi(r,\theta,t)= r^{2}g(\theta,t)$. Then:
+$$\begin{align}
+\nabla^{2}\psi & = \frac{\partial^{2}}{\partial r^{2}}(r^{2}g)+ \frac{1}{r} \frac{\partial}{\partial r}(r^{2}g)+ \frac{1}{r^{2}} \frac{\partial^{2}}{\partial \theta^{2}}(r^{2}g) \\
+ & = 4g+ \frac{\partial^{2}}{\partial \theta^{2}}g
+\end{align}$$
+Then:
+$$\begin{align}
+\nabla^{2}(\nabla^{2}\psi) & = \nabla^{2}\left( 4g+  \frac{\partial^{2}}{\partial \theta^{2}}g \right) \\
+ & = \frac{1}{r^{2}} \frac{\partial^{2}}{\partial \theta^{2}}\left( 4g+  \frac{\partial^{2}}{\partial \theta^{2}}g \right) \\
+ & = \frac{1}{r^{2}}\left(  4 \frac{\partial^{2}}{\partial \theta^{2}}g+ \frac{\partial^{4}}{\partial \theta^{4}}g \right)=0 \\
+\implies  & 4 \frac{\partial^{2}}{\partial \theta^{2}}g+ \frac{\partial^{4}}{\partial \theta^{4}}g=0
+\end{align}$$
+We integrate:
+$$\begin{align}
+ & 4 \frac{\partial}{\partial \theta}g+ \frac{\partial^{3}}{\partial \theta^{3}}g=A \\
+\implies & 4g+ \frac{\partial^{2}}{\partial \theta^{2}}g=A\theta+B
+\end{align}$$
+We rewrite the constants:
+$$\begin{align}
+ & 4(g+A\theta+B)+ \frac{\partial^{2}}{\partial \theta^{2}}g=0 \\
+\implies & 4(g+A\theta+B)+ \frac{\partial^{2}}{\partial \theta^{2}}(g+A\theta+B)=0
+\end{align}$$
+Obviously, the solution to the homogeneous equation above is $C\cos 2\theta+D\sin{2}\theta$. Then rewrite the constants, and we obtain:
+$$g=A\cos{2}\theta+B\sin 2\theta+C\theta+D$$
+We have:
+$$\begin{align}  &  g(\Omega t)=- \frac{1}{2}\Omega   \implies A\cos 2\Omega t + B\sin 2 \Omega t + C \Omega t + D = -\frac{1}{2}\Omega  \\   & g^{}(-\Omega t)= \frac{1}{2}\Omega  \implies A\cos 2 \Omega t - B\sin 2\Omega t - C\Omega t + D = \frac{1}{2}\Omega \ \\   & g^{'}(\Omega t)= 0 \implies -2A\sin 2\Omega t + 2B\cos 2\Omega t + C = 0  \\   & g^{'}(-\Omega t)=0\implies 2A\sin 2\Omega t + 2B\cos 2\Omega t + C = 0  \end{align}$$
+Add and subtract the third and fourth equations:
+$$\begin{align}
+ & B\cos 2\Omega t +C=0 \\
+ & A \sin 2 \Omega t=0 \implies A=0
+\end{align}$$
+Add and subtract the first and second equations:
+$$\begin{align}
+ & 2 A \cos 2\Omega t+2D=0\implies D=0 \\
+ & 2B \sin 2\Omega t+ 2C \Omega t =-\Omega
+\end{align}$$
+Then:
+$$\begin{align}
+ & 2B \sin 2\Omega t+ 2(-2B\cos 2\Omega t)\Omega t=-\Omega \\
+\implies & B= \frac{-\Omega /2}{\sin 2\Omega t-2\Omega t \cos 2\Omega t}
+\end{align}$$
+We then have:
+$$\begin{align}
+C & = -2 \cos 2\Omega t= \frac{\Omega \cos 2 \Omega t}{\sin 2\Omega t-2 \Omega t \cos 2\Omega t}
+\end{align}$$
+Then:
+$$\begin{align}
+g & = \frac{-\Omega /2}{\sin 2\Omega t-2\Omega t \cos 2\Omega t} \sin 2\Omega t+ \frac{\Omega \cos 2\Omega t}{\sin 2 \Omega t-2\Omega t \cos 2\Omega t}\theta \\
+ & = \frac{- \Omega /2}{\sin 2\Omega t-2\Omega t\cos 2\Omega t}(\sin 2\theta-2\theta \cos 2\Omega t)
+\end{align}$$
+Finally:
+$$\begin{align}
+\psi & = r^{2}g \\
+ & = - \frac{1}{2}\Omega r^{2}\left(  \frac{\sin 2\theta-2\theta \cos 2\Omega t}{\sin 2\Omega t-2\Omega t \cos 2\Omega t} \right)
+\end{align}$$
+Now take $2\Omega t= \frac{\pi}{2}$. Then:
+$$\begin{align}
+\psi & = - \frac{1}{2}\Omega r^{2}\sin{2}\theta \\
+ & = -\Omega r^{2}\sin \theta \cos \theta \\
+ & = -\Omega xy
+\end{align}$$
+Recall that the streamlines are given by $\psi=\text{const.}$ Therefore:
+$$-\Omega xy=\text{const.}$$
+This indeed defines a hyperbola. 
+
+Know that:
+$$\begin{align}
+u_{r} & = \frac{1}{r} \frac{\partial \psi}{\partial \theta} \\
+ & = \frac{1}{r}(-\Omega r^{2} \cos 2\theta) \sim \mathcal{O}(\Omega r^{})\\
+u_{\theta} & = - \frac{\partial \psi}{\partial r} \\
+ & = -\Omega r \sin 2\theta\sim \mathcal{O}(\Omega r^{})
+\end{align}$$
+Then the characteristic length scale of the system is $\Omega r$. Since the boundaries are moving with $\Omega t$, the characteristic time scale of the system is $\frac{1}{\Omega}$. Therefore:
+$$\begin{align}
+ & \left| \frac{\partial \mathbf{u}}{\partial t}  \right|\sim \mathcal{O}\left( \frac{U}{T} \right) \sim \mathcal{O}(\Omega^{2}r) \\
+ & |\mathbf{u}\cdot \nabla \mathbf{u} |\sim \mathcal{O}\left( U \cdot \frac{1}{r}\cdot U \right) \sim \mathcal{O}(\Omega^{2}r) \\
+ & |\nu \nabla^{2}\mathbf{u}|\sim \mathcal{O}\left( \nu \frac{U}{r^{2}} \right)\sim \mathcal{O}\left( \frac{\nu \Omega}{r} \right)
+\end{align}$$
+In order for the viscous terms to dominate, we must have:
+$$\Omega^{2}r\ll \frac{\nu \Omega}{r}\implies \frac{\Omega r^{2}}{\nu}\ll 1$$
+
+
