@@ -182,7 +182,7 @@ We have:
 $$\begin{align}  &  g(\Omega t)=- \frac{1}{2}\Omega   \implies A\cos 2\Omega t + B\sin 2 \Omega t + C \Omega t + D = -\frac{1}{2}\Omega  \\   & g^{}(-\Omega t)= \frac{1}{2}\Omega  \implies A\cos 2 \Omega t - B\sin 2\Omega t - C\Omega t + D = \frac{1}{2}\Omega \ \\   & g^{'}(\Omega t)= 0 \implies -2A\sin 2\Omega t + 2B\cos 2\Omega t + C = 0  \\   & g^{'}(-\Omega t)=0\implies 2A\sin 2\Omega t + 2B\cos 2\Omega t + C = 0  \end{align}$$
 Add and subtract the third and fourth equations:
 $$\begin{align}
- & B\cos 2\Omega t +C=0 \\
+ & 2B\cos 2\Omega t +C=0 \\
  & A \sin 2 \Omega t=0 \implies A=0
 \end{align}$$
 Add and subtract the first and second equations:
@@ -197,7 +197,7 @@ $$\begin{align}
 \end{align}$$
 We then have:
 $$\begin{align}
-C & = -2 \cos 2\Omega t= \frac{\Omega \cos 2 \Omega t}{\sin 2\Omega t-2 \Omega t \cos 2\Omega t}
+C & = -2B \cos 2\Omega t= \frac{\Omega \cos 2 \Omega t}{\sin 2\Omega t-2 \Omega t \cos 2\Omega t}
 \end{align}$$
 Then:
 $$\begin{align}
@@ -298,4 +298,217 @@ $$u(x,0)=\alpha x  \tilde{f}^{'}(0)=0\implies \tilde{f}^{'}(0)=0\text{ at }y=0,\
 $$v(x,0)= - \alpha \sqrt{ \frac{\nu}{\alpha} }\tilde{f}(0)=0\implies \tilde{f}(0)=0\text{ at }y=0,\ \tilde{\eta}=0$$
 $$u(x,\infty)=\alpha x \tilde{f}^{'}(\infty)=U\implies \tilde{f}^{'}(\infty)=1\text{ as }y\rightarrow \infty,\ \tilde{\eta}\rightarrow \infty$$
 To be conformal with the notations in the problem, just replace $\tilde{f}$ by $f$, $\tilde{\eta}$ by $\eta$. 
+# Acheson 8.3
 
+From the definition of the stream function:
+$$\begin{align}
+
+u & = \frac{\partial \psi}{\partial y}= \frac{\partial}{\partial y}(F(x)f(\eta)) \\
+
+& = F(x)f^{'}(\eta) \frac{\partial \eta}{\partial y}= \frac{F(x)}{g(x)}f^{'}(\eta)
+
+\end{align}$$
+Impose the mainstream condition as $\eta \rightarrow \infty$:
+$$\begin{align}
+
+\lim_{ \eta \rightarrow \infty } u & = U(x) \\
+
+\implies \frac{F(x)}{g(x)}\lim_{ \eta \rightarrow \infty } f^{'}(\eta) & = U(x)
+
+\end{align}$$
+Since $\lim_{ \eta \rightarrow \infty } f^{'}(\eta)$ must be a constant, say $c$, if the limit exists, we have:
+$$\begin{align}
+
+c \frac{F(x)}{g(x)} & = U(x)\implies F(x)= \frac{1}{c}U(x)g(x)
+
+\end{align}$$
+For convenience, choose $c=1$. We then have $F(x)=U(x)g(x)$. The stream function and the $x$-component velocity are:
+$$\begin{align}
+
+\psi & = U(x)g(x)f(\eta) \\
+
+u & = U(x)f^{'}(\eta)
+
+\end{align}$$
+We compute the necessary derivatives for the momentum equation. First, the $y$-component velocity:
+$$\begin{align}
+
+v & = - \frac{\partial \psi}{\partial x}= - \frac{\partial}{\partial x}(Ugf) \\
+
+& = -(U^{'}g+Ug^{'})f-Ugf^{'} \frac{\partial \eta}{\partial x} \\
+
+& = -(U^{'}g+Ug^{'})f-Ugf^{'}\left( -\eta \frac{g^{'}}{g} \right) \\
+
+& = -(U^{'}g+Ug^{'})f+U\eta g^{'}f^{'}
+
+\end{align}$$
+Then the spatial derivatives of $u$:
+$$\begin{align}
+
+\frac{\partial u}{\partial x} & = \frac{\partial}{\partial x}(Uf^{'}) \\
+
+& = U^{'}f^{'}+Uf^{''}\left( -\eta \frac{g^{'}}{g} \right)= U^{'}f^{'}-U\eta \frac{g^{'}}{g}f^{''} \\
+
+\frac{\partial u}{\partial y} & = \frac{\partial}{\partial y}(Uf^{'}) \\
+
+& = Uf^{''} \frac{1}{g}= \frac{U}{g}f^{''} \\
+
+\frac{\partial^{2}u}{\partial y^{2}} & = \frac{\partial}{\partial y}\left( \frac{U}{g}f^{''} \right)= \frac{U}{g^{2}}f^{'''}
+
+\end{align}$$
+We construct the convective terms:
+$$\begin{align}
+
+u \frac{\partial u}{\partial x} & = (Uf^{'}) \left( U^{'}f^{'}-U\eta \frac{g^{'}}{g}f^{''} \right) \\
+
+& = UU^{'}f^{'2}-U^{2}\eta \frac{g^{'}}{g}f^{'}f^{''} \\
+
+v \frac{\partial u}{\partial y} & = \left( -(U^{'}g+Ug^{'})f+U\eta g^{'}f^{'} \right)\left( \frac{U}{g}f^{''} \right) \\
+
+& = -U\left( U^{'}+U \frac{g^{'}}{g} \right)ff^{''}+U^{2}\eta \frac{g^{'}}{g}f^{'}f^{''}
+
+\end{align}$$
+Adding them up, the cross terms containing $\eta$ exactly cancel out:
+$$\begin{align}
+
+u \frac{\partial u}{\partial x}+v \frac{\partial u}{\partial y} & = UU^{'}f^{'2}-U\left( U^{'}+U \frac{g^{'}}{g} \right)ff^{''} \\
+
+& = UU^{'} \left[ f^{'2}-\left( 1+ \frac{Ug^{'}}{U^{'}g} \right)ff^{''} \right]
+
+\end{align}$$
+Substitute into the boundary layer momentum equation $u \frac{\partial u}{\partial x}+ v \frac{\partial u}{\partial y} = U \frac{dU}{dx}+ \nu \frac{\partial^{2}u}{\partial y^{2}}$:
+$$\begin{align}
+
+UU^{'} \left[ f^{'2}-\left( 1+ \frac{Ug^{'}}{U^{'}g} \right)ff^{''} \right] = UU^{'}+\nu \frac{U}{g^{2}}f^{'''}
+
+\end{align}$$
+Assuming $U^{'} \neq 0$, divide both sides by $UU^{'}$ (if $U^{'}=0$, it is just the Blasius flow we treated in the last homework, which is not our interest here):
+$$\begin{align}
+
+f^{'2}-\left( 1+ \frac{Ug^{'}}{U^{'}g} \right)ff^{''}= 1+ \frac{\nu}{g^{2}U^{'}}f^{'''}
+
+\end{align}$$
+For this equation to admit a similarity solution $f(\eta)$, the coefficients must be independent of $x$, as we argued in Acheson 8.2. We introduce constants $C_{1}$ and $C_{2}$:
+$$\begin{align}
+
+\frac{\nu}{g^{2}U^{'}} & = C_{1} \\
+
+1+ \frac{Ug^{'}}{U^{'}g} & = C_{2}
+
+\end{align}$$
+From the first condition, we have $g^{2}= \frac{\nu}{C_{1}U^{'} }$. Differentiating with respect to $x$:
+$$\begin{align}
+
+2gg^{'} & = - \frac{\nu U^{''}}{C_{1}U^{'2}} \\
+
+\implies \frac{g^{'}}{g} & = \frac{1}{2g^{2}}\left( - \frac{\nu U^{''}}{C_{1}U^{'2}} \right)= \frac{C_{1}U^{'}}{2\nu}\left( - \frac{\nu U^{''}}{C_{1}U^{'2}} \right)= - \frac{U^{''}}{2U^{'}}
+
+\end{align}$$
+Substitute this into the second condition:
+$$\begin{align}
+
+1+ \frac{U}{U^{'}}\left( - \frac{U^{''}}{2U^{'}} \right) & = C_{2} \\
+
+\implies \frac{UU^{''}}{U^{'2}} & = 2(1-C_{2}) \equiv K
+
+\end{align}$$
+We solve the differential equation $UU^{''}=KU^{'2}$, which can be rewritten as:
+$$\begin{align}
+
+\frac{U^{''}}{U^{'}} & = K \frac{U^{'}}{U}
+
+\end{align}$$
+Integrating with respect to $x$:
+$$\begin{align}
+
+\int \frac{dU^{'}}{U^{'}} & = K\int \frac{dU}{U} \\
+
+\ln U^{'} & = K\ln U + \ln C \\
+
+U^{'} & = CU^{K}
+
+\end{align}$$
+This is a separable equation $\frac{dU}{U^{K}}=Cdx$. We consider two cases based on the value of $K$.
+
+If $K=1$:
+
+$$\begin{align}
+
+\int \frac{dU}{U} & = \int Cdx \\
+
+\ln U & = Cx+D \\
+
+\implies U(x) & \propto e^{\alpha x}
+
+\end{align}$$
+If $K \neq 1$:
+
+$$\begin{align}
+
+\int U^{-K}dU & = \int Cdx \\
+
+\frac{U^{1-K}}{1-K} & = Cx+D \\
+
+U^{1-K} & = (1-K)(Cx+D)
+
+\end{align}$$
+Let $m= \frac{1}{1-K}$. We obtain:
+$$\begin{align}
+
+U(x) & \propto (x-x_{0})^{m}
+
+\end{align}$$
+Consider the specific case $U(x)=Ax^{m}$ with $A>0$. Then $U^{'}=mAx^{m-1}$. From the condition $g^{2}U^{'}=\text{const.}$, we have:
+$$\begin{align}
+
+g^{2}(x^{m-1}) & \propto 1 \\
+
+\implies g(x) & \propto x^{ \frac{1-m}{2} }
+
+\end{align}$$
+Choose the specific proportional constant as given in the problem:
+$$\begin{align}
+
+g(x) & = \left[ \frac{2\nu}{(m+1)Ax^{m-1}} \right]^{ \frac{1}{2} }
+
+\end{align}$$
+We evaluate the two constant coefficients in the differential equation with this choice of $g(x)$. First coefficient: 
+$$\begin{align} g^{2}U^{'} & = \left [\frac{2\nu}{(m+1)Ax^{m-1}} \right]= \frac{2m\nu}{m+1} \\ \implies \frac{\nu}{g^{2}U^{'}} & = \frac{\nu}{ \frac{2m\nu}{m+1} }= \frac{m+1}{2m} \end{align}$$ Second coefficient: Since $g \propto x^{ \frac{1-m}{2} }$, we have $\frac{g^{'}}{g}= \frac{1-m}{2x}$. Also $\frac{U}{U^{'}}= \frac{x}{m}$. Then: $$\begin{align} 1+ \frac{U}{U^{'}} \frac{g^{'}}{g} & = 1+\left( \frac{x}{m} \right)\left( \frac{1-m}{2x} \right)= 1+ \frac{1-m}{2m}= \frac{m+1}{2m} \end{align}$$
+Substitute these back into the differential equation:
+$$\begin{align}
+
+f^{'2}-\left( \frac{m+1}{2m} \right)ff^{''} & = 1+\left( \frac{m+1}{2m} \right)f^{'''}
+
+\end{align}$$
+Multiply by $\frac{2m}{m+1}$:
+$$\begin{align}
+
+\frac{2m}{m+1}f^{'2}-ff^{''} & = \frac{2m}{m+1}+f^{'''} \\
+
+\implies f^{'''}+ff^{''}+ \frac{2m}{m+1}(1-f^{'2}) & = 0
+
+\end{align}$$
+The boundary conditions are:
+$$\begin{align}
+
+u(x,0) & = U(x)f^{'}(0)=0\implies f^{'}(0)=0 \\
+
+v(x,0) & = 0\implies f(0)=0 \\
+
+u(x,\infty) & = U(x)f^{'}(\infty)=U(x)\implies f^{'}(\infty)=1
+
+\end{align}$$
+For flow past a flat plate, the mainstream velocity is constant $U(x)=U_{0}$. This corresponds to $m=0$. Substituting $m=0$ into the Falkner-Skan equation yields:
+$$\begin{align}
+
+f^{'''}+ff^{''}+0 & = 0\implies f^{'''}+ff^{''}=0
+
+\end{align}$$
+It is worth noting an apparent mathematical contradiction in the derivation regarding the flow past a flat plate ($m=0$). During the intermediate steps, we explicitly assumed $U^{'} \neq 0$ to divide the momentum equation by $U U^{'}$, which seemingly precludes the constant mainstream velocity case where $U^{'} = 0$. Consequently, the coefficient $\frac{m+1}{2m}$ exhibits an algebraic singularity at $m=0$. However, this contradiction is resolved in the final step when we multiply the entire equation by $\frac{2m}{m+1}$. This operation acts as an algebraic restoration that effectively eliminates the removable singularity in the parameter space. By taking the limit as $m \rightarrow 0$, the term $\frac{2m}{m+1}(1-f^{'2})$ smoothly vanishes, and the Falkner-Skan equation elegantly and safely degenerates into the classic Blasius equation ($f^{'''}+ff^{''}=0$). Thus, the final unified equation remains perfectly well-posed and valid even for the boundary case that was temporarily excluded during the derivation.
+
+For flow near a forward stagnation point, $U(x)=\alpha x$, which corresponds to $m=1$. Substituting $m=1$ yields:
+$$\begin{align}
+
+f^{'''}+ff^{''}+ \frac{2}{2}(1-f^{'2}) & = 0\implies f^{'''}+ff^{''}+1-f^{'2}=0
+
+\end{align}$$
