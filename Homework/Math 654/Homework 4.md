@@ -102,3 +102,6 @@ $$\tau^{'}=-8\pi \mu \Omega a^{3}$$
 The torque applied to maintain the rotation is therefore by Newton's third law:
 $$\tau=8\pi \mu \Omega a^{3}$$
 
+# Acheson 7.5
+
+The no-slip boundary condition gives:
