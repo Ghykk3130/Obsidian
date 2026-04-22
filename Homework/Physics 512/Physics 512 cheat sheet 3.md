@@ -12,6 +12,7 @@
 - $w_{i\rightarrow f}= \frac{2\pi}{\hbar}|V_{fi}|^{2}\rho(E_{f}=E_{i})$, $w_{i\rightarrow f}= \frac{2\pi}{\hbar}|\mathscr{V}^{\dagger}_{fi}|^{2}\rho(E_{f}=E_{i}+\hbar \omega)+ \frac{2\pi}{\hbar}|\mathscr{V}_{fi}|^{2}\rho(E_{f}=E_{i}-\hbar \omega)$
 - $\ket{\psi^{\pm}}= \frac{1}{E-H_{0}\pm i\epsilon}\ket{\psi^{\pm}}+\ket{\mathbf{k}}$, $T= V\sum_{n=0}^{\infty}(V\mathscr{G}^{+})^{n}$, $f(\mathbf{k}^{'},\mathbf{k})=- \frac{4\pi^{2}m}{\hbar^{2}}\bra{\mathbf{k}^{'}}T\ket{\mathbf{k}}$  
 - $\frac{R^{2}j_{\text{out}}}{j_{\text{in}}}= \frac{d\sigma }{d\Omega}$, $\frac{d\sigma}{d\Omega}= \frac{b}{\sin \theta}| \frac{db}{d\theta} |$, 
+- 1D DOS: $\rho(E)= \frac{2L}{h} \sqrt{ \frac{m}{2E} }$
 
 
 
