@@ -2153,12 +2153,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Homework/Physics 512/Physics 512 cheat sheet 3.md",
+                "file": "Homework/Math 654/Homework 4.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Physics 512 cheat sheet 3"
+              "title": "Homework 4"
             }
           }
         ],
@@ -2229,7 +2229,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 200,
+    "collapsed": true
   },
   "right": {
     "id": "9003d078f8dbc4ed",
@@ -2332,8 +2333,8 @@
   },
   "active": "ad6ba85f7b55fd8d",
   "lastOpenFiles": [
-    "Notes/散射.md",
     "Homework/Physics 512/Physics 512 cheat sheet 3.md",
+    "Notes/散射.md",
     "Homework/Physics 512/Untitled.md",
     "Homework/Physics 512/Physics 512 cheat sheet 2.md",
     "Homework/Physics 512/Physics 512 cheat sheet.md",
