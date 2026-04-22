@@ -176,7 +176,7 @@ $$\begin{align}
  & 4(g+A\theta+B)+ \frac{\partial^{2}}{\partial \theta^{2}}g=0 \\
 \implies & 4(g+A\theta+B)+ \frac{\partial^{2}}{\partial \theta^{2}}(g+A\theta+B)=0
 \end{align}$$
-Obviously, the solution to the homogeneous equation above is $C\cos 2\theta+D\sin{2}\theta$. Then rewrite the constants, and we obtain:
+Obviously, the solution to the homogeneous equation above is the linear combination $C\cos 2\theta+D\sin{2}\theta$. Then rewrite the constants, and we obtain:
 $$g=A\cos{2}\theta+B\sin 2\theta+C\theta+D$$
 We have:
 $$\begin{align}  &  g(\Omega t)=- \frac{1}{2}\Omega   \implies A\cos 2\Omega t + B\sin 2 \Omega t + C \Omega t + D = -\frac{1}{2}\Omega  \\   & g^{}(-\Omega t)= \frac{1}{2}\Omega  \implies A\cos 2 \Omega t - B\sin 2\Omega t - C\Omega t + D = \frac{1}{2}\Omega \ \\   & g^{'}(\Omega t)= 0 \implies -2A\sin 2\Omega t + 2B\cos 2\Omega t + C = 0  \\   & g^{'}(-\Omega t)=0\implies 2A\sin 2\Omega t + 2B\cos 2\Omega t + C = 0  \end{align}$$
@@ -297,7 +297,7 @@ The boundary conditions are:
 $$u(x,0)=\alpha x  \tilde{f}^{'}(0)=0\implies \tilde{f}^{'}(0)=0\text{ at }y=0,\ \tilde{\eta}=0$$
 $$v(x,0)= - \alpha \sqrt{ \frac{\nu}{\alpha} }\tilde{f}(0)=0\implies \tilde{f}(0)=0\text{ at }y=0,\ \tilde{\eta}=0$$
 $$u(x,\infty)=\alpha x \tilde{f}^{'}(\infty)=U\implies \tilde{f}^{'}(\infty)=1\text{ as }y\rightarrow \infty,\ \tilde{\eta}\rightarrow \infty$$
-To be conformal with the notations in the problem, just replace $\tilde{f}$ by $f$, $\tilde{\eta}$ by $\eta$. 
+To be consistent with the notations in the problem, just replace $\tilde{f}$ by $f$, $\tilde{\eta}$ by $\eta$. 
 # Acheson 8.3
 
 From the definition of the stream function:
@@ -376,13 +376,14 @@ u \frac{\partial u}{\partial x}+v \frac{\partial u}{\partial y} & = UU^{'}f^{'2}
 & = UU^{'} \left[ f^{'2}-\left( 1+ \frac{Ug^{'}}{U^{'}g} \right)ff^{''} \right]
 
 \end{align}$$
-Substitute into the boundary layer momentum equation $u \frac{\partial u}{\partial x}+ v \frac{\partial u}{\partial y} = U \frac{dU}{dx}+ \nu \frac{\partial^{2}u}{\partial y^{2}}$:
+We substitute into the boundary layer momentum equation to obtain:
 $$\begin{align}
-
+ & u \frac{\partial u}{\partial x}+ v \frac{\partial u}{\partial y} = U \frac{dU}{dx}+ \nu \frac{\partial^{2}u}{\partial y^{2}} \\
+ \implies& 
 UU^{'} \left[ f^{'2}-\left( 1+ \frac{Ug^{'}}{U^{'}g} \right)ff^{''} \right] = UU^{'}+\nu \frac{U}{g^{2}}f^{'''}
 
 \end{align}$$
-Assuming $U^{'} \neq 0$, divide both sides by $UU^{'}$ (if $U^{'}=0$, it is just the Blasius flow we treated in the last homework, which is not our interest here):
+Assuming $U^{'} \neq 0$, divide both sides by $UU^{'}$ (if $U^{'}=0$, it is just the Blasius flow we treated in the last homework, which is not our interest here. We'll discuss the treatment in this case at the end of the solution):
 $$\begin{align}
 
 f^{'2}-\left( 1+ \frac{Ug^{'}}{U^{'}g} \right)ff^{''}= 1+ \frac{\nu}{g^{2}U^{'}}f^{'''}
