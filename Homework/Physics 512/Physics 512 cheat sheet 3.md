@@ -13,7 +13,7 @@
 - $\ket{\psi^{\pm}}= \frac{1}{E-H_{0}\pm i\epsilon}\ket{\psi^{\pm}}+\ket{\mathbf{k}}$, $T= V\sum_{n=0}^{\infty}(V\mathscr{G}^{+})^{n}$, $f(\mathbf{k}^{'},\mathbf{k})=- \frac{4\pi^{2}m}{\hbar^{2}}\bra{\mathbf{k}^{'}}T\ket{\mathbf{k}}$  
 - $\frac{R^{2}j_{\text{out}}}{j_{\text{in}}}= \frac{d\sigma }{d\Omega}$, $\frac{d\sigma}{d\Omega}= \frac{b}{\sin \theta}| \frac{db}{d\theta} |$, 
 - 1D DOS: $\rho(E)= \frac{2L}{h} \sqrt{ \frac{m}{2E} }$
-- $\mathrm{Im}(f(\mathbf{k},\mathbf{k}))= \frac{k}{2\pi}\sigma_{\text{TOT}}$
+- $\mathrm{Im}(f(\mathbf{k},\mathbf{k}))= \frac{k}{4\pi}\sigma_{\text{TOT}}$
 - $c_{f}^{(0)}=\delta_{fi},\ c_{f}^{(1)}=- \frac{i}{\hbar}\int_{t_{0}}^{t}dt_{1} \bra{f} V_{I}(t_{1})\ket{i} = - \frac{i}{\hbar}\int_{t_{0}}^{t}dt_{1} e^{i\omega_{fi}t_{1}} V_{fi}(t_{1})$
 - $c_{f}^{(2)}=\left( - \frac{i}{\hbar} \right)^{2} \int_{t_{0}}^{t}dt_{1}\int_{t_{0}}^{t_{1}}dt_{2} \bra{f} V_{I}(t_{1})V_{I}(t_{2})\ket{i} =\left( - \frac{i}{\hbar}\right)^{2}\sum_{m}\int_{t_{0}}^{t}dt_{1}\int_{t_{0}}^{t_{1}}dt_{2} e^{i\omega_{fm}t_{1}}e^{i\omega_{mi}t_{2}}  V_{fm}(t_{1})V_{mi}(t_{2})$
 - $f(\mathbf{k}^{'},\mathbf{k})=-ik\int_{0}^{\infty}dl lJ_{0}(kl\theta)(e^{2\Delta(l)}-1),\ \Delta(l)=- \frac{im}{2\hbar^{2} k}\int_{-\infty}^{\infty}dz^{}V(\sqrt{ l^{2}+z^{2} })$, $J_{0}(0)=1$

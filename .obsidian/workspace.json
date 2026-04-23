@@ -2181,12 +2181,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Homework/Physics 512/Physics 512 cheat sheet 3.md",
+                "file": "Notes/光学定理.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Physics 512 cheat sheet 3"
+              "title": "光学定理"
             }
           }
         ],
@@ -2242,7 +2242,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "Eikonal",
+                "query": "光学定理",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -2253,7 +2253,8 @@
               "title": "Search"
             }
           }
-        ]
+        ],
+        "currentTab": 3
       }
     ],
     "direction": "horizontal",
@@ -2360,8 +2361,8 @@
   },
   "active": "5c52fa5b60521ea7",
   "lastOpenFiles": [
-    "Notes/散射.md",
     "Homework/Physics 512/Physics 512 cheat sheet 3.md",
+    "Notes/散射.md",
     "Notes/Fermi's golden rule.md",
     "Notes/光学定理.md",
     "Pictures/Pasted image 20260422203908.png",
