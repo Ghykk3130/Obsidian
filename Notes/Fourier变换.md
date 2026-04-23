@@ -78,13 +78,29 @@ $$\sum_{q} \leadsto \frac{L}{2\pi}\int dq$$
 $$\int_{\mathbb{R}}dqe^{iqx}=2\pi\delta(x)$$
 >[!Right]
 >$\blacksquare$
-# 2. x-space bounded and continuous
+# 2. Big picture
+
+给定函数$f(x)$，我们最普遍地，可以将其写为Hilbert空间的基$e^{ikx}$的线性组合。即：
+$$f(x)=\int \mkern-13mu \! \! \! \! \sum e^{ikx}f(k)$$
+**如何知道$k$是否离散：**
+
+若$f(x)$存在某种周期性，或者$x$直接是bounded的，以至于有周期性边界条件。那么$f(x+R)=f(x)$。那么：
+$$e^{ik(x+R)}=e^{ikx}\implies kR= 2\pi n$$
+**如何知道$k$是否有界：**
+
+若$x$是离散的，即$f(x)=f(na),\ n\in \mathbb{Z}$，那么：
+$$e^{i\left( k+ \frac{2\pi}{a} \right)x}=e^{ikx}$$
+这就是说，基$\{ e^{ikx} \}$是冗余的，可以将$k$限制在$\left[ - \frac{\pi}{a}, \frac{\pi}{a} \right]$或者$\left[ 0, \frac{2\pi}{a} \right]$
+
+当我们明确了是离散还是连续，以及求和/积分的范围，我们就可以通过正交性得出$f(k)$。
+
+# 3. x-space bounded and continuous
 
 考虑Hilbert空间$L^{2}\left( \left[ - \frac{L}{2}, \frac{L}{2} \right] \right)$中的函数。我们希望将它们写成级数。取Hilbert空间的基$\psi_{q}(x)=e^{iqx},\ q= \frac{2\pi n}{L}$。
 
 于是可以得到：
 
->[!Success] Theorem 2.1
+>[!Success] Theorem 3.1
 >Let $f(x)\in L^{2}\left( \left[ - \frac{L}{2}, \frac{L}{2} \right] \right)$. Then :
 >$$f(x)= \sum_{n\in \mathbb{Z}}\tilde{f}(q_{n})e^{iq_{n}x}\text{, where }\tilde{f}(q_{n})= \frac{1}{L}\int_{- \frac{L}{2}}^{\frac{L}{2}} dx f(x) e^{-iq_{n}x}$$
 ## Proof.
@@ -111,9 +127,9 @@ $$f(x)= \frac{1}{\sqrt{ L }} \sum \tilde{f}(q_{n}) e^{iq_{n}x}$$
 那么由上面推导，我们得到：
 $$\frac{1}{\sqrt{ L }}\tilde{f}(q_{n})= \frac{1}{L} \int_{-\frac{L}{2}}^{\frac{L}{2}}dxf(x)e^{-iq_{n}x}\implies \tilde{f}(q_{n})= \frac{1}{\sqrt{ L }}\int dxf(x)e^{-iq_{n}x}$$
 
-# 3. x-space is unbounded and continuous
+# 4. x-space is unbounded and continuous
 
->[!Success] Theorem 3.1
+>[!Success] Theorem 4.1
 >Let $f(x)\in L^{2}$. Then :
 >$$f(x)= \frac{1}{2\pi} \int_{\mathbb{R}}dq\tilde{f}(q)e^{iqx}\text{, where }\tilde{f}(q)= \int_{\mathbb{R}} dx f(x) e^{-iqx}$$
 ## Proof.
@@ -127,13 +143,13 @@ $$\begin{align}
 >[!Right]
 >$\blacksquare$
 
-# 3. x-space is unbounded and discrete
+# 5. x-space is unbounded and discrete
 
 考虑$x-\text{space}$离散化，只能取间隔为$a$的点。令$f\in l^{2}$。其横坐标$x_{n}=na\in a\mathbb{Z}$。我们取Hilbert空间的基$e^{iqx_{n}}$。发现：
 $$\exp\left( i\left( q+ \frac{2\pi}{a} \right)x_{n} \right)=\exp(iqx_{n})$$
 所以可以约束：$q\in\left[ - \frac{\pi}{a}, \frac{\pi}{a} \right)$。于是可以得到：
 
->[!Success] Theorem 3.1
+>[!Success] Theorem 5.1
 >Let $f(x_{n})\in l^1$. Then:
 >$$f(x_{n})= \int_{- \frac{\pi}{a}}^{\frac{\pi}{a}}dq \tilde{f}(q) e^{iqx_{n}}\text{ where }\tilde{f}(q)= \frac{a}{2\pi } \sum_{-\infty}^{\infty} f(x_{n})e^{-iqx_{n}}$$
 ## Proof.
@@ -145,7 +161,7 @@ $$\begin{align}
 \end{align}$$
 >[!Right]
 >$\blacksquare$
-# 4. x-space is bounded and discrete
+# 6. x-space is bounded and discrete
 
 考虑$x-\text{space}$离散化且有界，仅仅只有$N$个点。令$x_{n}=na,\ n=0,\dots,N-1$。考虑$f\in l^{2}(\{ 0,\dots,N-1 \})$。取Hilbert空间的基$e^{iq_{m}x_{n}}\text{, where }q_{m}= \frac{2\pi m}{Na}$。注意到：
 $$\begin{align}
@@ -156,7 +172,7 @@ $$\begin{align}
 
 由此可见，只要x-space是离散的，q-space就是bounded的。
 
->[!Success] Theorem 4.1
+>[!Success] Theorem 6.1
 >Let $f(x_{n})\in l^1(\{ 0,\dots,N-1 \})$. Then:
 >$$f(x_{n})= \sum_{m=0}^{N-1}\tilde{f}(q_{m})e^{iq_{m}x_{n}}\text{ where }\tilde{f}(q_{m})= \frac{1}{N}\sum_{n=0}^{N-1}f(x_{n})e^{-iq_{m}x_{n}}$$
 ## Proof.
