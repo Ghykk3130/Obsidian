@@ -2181,12 +2181,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Notes/光学定理.md",
+                "file": "Homework/Physics 512/Physics 512 cheat sheet 3.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "光学定理"
+              "title": "Physics 512 cheat sheet 3"
             }
           }
         ],
@@ -2242,7 +2242,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "态密度",
+                "query": "Eikonal",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -2360,15 +2360,16 @@
   },
   "active": "5c52fa5b60521ea7",
   "lastOpenFiles": [
+    "Notes/散射.md",
+    "Homework/Physics 512/Physics 512 cheat sheet 3.md",
+    "Notes/Fermi's golden rule.md",
+    "Notes/光学定理.md",
     "Pictures/Pasted image 20260422203908.png",
     "Excalidraw/Drawing 2026-04-22 20.08.58.excalidraw.md",
-    "Notes/光学定理.md",
     "Notes/SU(2)和SO(3)的联系.md",
     "Notes/Stationary phase.md",
     "Homework/Math 654/Homework 4.md",
-    "Homework/Physics 512/Physics 512 cheat sheet 3.md",
     "Notes/箱归一化粒子态密度.md",
-    "Notes/散射.md",
     "Homework/Physics 512/Untitled.md",
     "Homework/Physics 512/Physics 512 cheat sheet 2.md",
     "Homework/Physics 512/Physics 512 cheat sheet.md",
@@ -2396,7 +2397,6 @@
     "Pictures/Pasted image 20260420194653.png",
     "Untitled",
     "Pictures/Pasted image 20260418175712.png",
-    "Pictures/Pasted image 20260417195651.png",
     "Homework/Math 654/Homework 2.html",
     "tldraw",
     "Excalidraw/Scripts/Downloaded",
