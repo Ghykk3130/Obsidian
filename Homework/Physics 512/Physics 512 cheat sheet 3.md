@@ -10,15 +10,17 @@
 - Lindbladian: $L  = - \frac{1}{2}\sum_{m}C_{m}^{\dagger}C_{m}\rho + \text{h.c.}+\sum_{m}C_{m}\rho C_{m}^{\dagger} \text{, where }C_{m}=\sqrt{ \Gamma_{m} }\ket{g_{m}} \bra{e_{m}},\ \Gamma_{m}\in \mathbb{R}_{\geq 0}$ or replace with $(C_{m}\leftrightarrow D_{m}),\ D_{m}=\sqrt{ \gamma_{m} }\ket{\psi_{m}}\bra{\psi_{m}}$. 2-level system general form: $L= \begin{pmatrix} \Gamma \rho_{e e}& - \frac{1}{2}(\Gamma +\gamma_{g}+\gamma_{e}) \rho_{ge}  \\ - \frac{1}{2}(\Gamma+\gamma_{g}+\gamma_{e})\rho_{eg} & - \Gamma\rho_{e e}\end{pmatrix}$. Order: $\ket{g}, \ket{e}$. Say $H= \begin{pmatrix}E_{g} & 0 \\ 0 & E_{e}\end{pmatrix}$. Then $- \frac{1}{i\hbar}[\rho,H]=\begin{pmatrix}0 & - \frac{1}{i\hbar}(E_{e}-E_{g})\rho_{ge} \\  \frac{1}{ih}(E_{e}-E_{g})\rho_{eg} & 0\end{pmatrix}$
 - $\mathbf{A}_{n}=i \bra{\psi_{n}} \frac{\partial}{\partial \mathbf{R}}\psi_{n}\rangle, \boldsymbol{\Omega}_{n}= i \bra{ \frac{\partial}{\partial \mathbf{R}}\psi_{n}} \times \ket{ \frac{\partial}{\partial \mathbf{R}}\psi_{n}}$ 
 - $w_{i\rightarrow f}= \frac{2\pi}{\hbar}|V_{fi}|^{2}\rho(E_{f}=E_{i})$, $w_{i\rightarrow f}= \frac{2\pi}{\hbar}|\mathscr{V}^{\dagger}_{fi}|^{2}\rho(E_{f}=E_{i}+\hbar \omega)+ \frac{2\pi}{\hbar}|\mathscr{V}_{fi}|^{2}\rho(E_{f}=E_{i}-\hbar \omega)$
-- $\ket{\psi^{\pm}}= \frac{1}{E-H_{0}\pm i\epsilon}\ket{\psi^{\pm}}+\ket{\mathbf{k}}$, $T= V\sum_{n=0}^{\infty}(V\mathscr{G}^{+})^{n}$, $f(\mathbf{k}^{'},\mathbf{k})=- \frac{4\pi^{2}m}{\hbar^{2}}\bra{\mathbf{k}^{'}}T\ket{\mathbf{k}}$  
+- $\ket{\psi^{\pm}}= \frac{1}{E-H_{0}\pm i\epsilon}V\ket{\psi^{\pm}}+\ket{\mathbf{k}}$, $T= V\sum_{n=0}^{\infty}(V\mathscr{G}^{+})^{n}$, $f(\mathbf{k}^{'},\mathbf{k})=- \frac{4\pi^{2}m}{\hbar^{2}}\bra{\mathbf{k}^{'}}T\ket{\mathbf{k}}$, $G^{\pm}(\mathbf{r},\mathbf{r}^{'})=- \frac{2m}{\hbar^{2}} \frac{e^{\pm k|\mathbf{r}-\mathbf{r}^{'}|}}{4\pi|\mathbf{r}-\mathbf{r}^{'}|}$
 - $\frac{R^{2}j_{\text{out}}}{j_{\text{in}}}= \frac{d\sigma }{d\Omega}$, $\frac{d\sigma}{d\Omega}= \frac{b}{\sin \theta}| \frac{db}{d\theta} |$, 
 - 1D DOS: $\rho(E)= \frac{2L}{h} \sqrt{ \frac{m}{2E} }$
 - $\mathrm{Im}(f(\mathbf{k},\mathbf{k}))= \frac{k}{4\pi}\sigma_{\text{TOT}}$
 - $c_{f}^{(0)}=\delta_{fi},\ c_{f}^{(1)}=- \frac{i}{\hbar}\int_{t_{0}}^{t}dt_{1} \bra{f} V_{I}(t_{1})\ket{i} = - \frac{i}{\hbar}\int_{t_{0}}^{t}dt_{1} e^{i\omega_{fi}t_{1}} V_{fi}(t_{1})$
 - $c_{f}^{(2)}=\left( - \frac{i}{\hbar} \right)^{2} \int_{t_{0}}^{t}dt_{1}\int_{t_{0}}^{t_{1}}dt_{2} \bra{f} V_{I}(t_{1})V_{I}(t_{2})\ket{i} =\left( - \frac{i}{\hbar}\right)^{2}\sum_{m}\int_{t_{0}}^{t}dt_{1}\int_{t_{0}}^{t_{1}}dt_{2} e^{i\omega_{fm}t_{1}}e^{i\omega_{mi}t_{2}}  V_{fm}(t_{1})V_{mi}(t_{2})$
 - $f(\mathbf{k}^{'},\mathbf{k})=-ik\int_{0}^{\infty}dl lJ_{0}(kl\theta)(e^{2i\Delta(l)}-1),\ \Delta(l)=- \frac{m}{2\hbar^{2} k}\int_{-\infty}^{\infty}dz^{}V(\sqrt{ l^{2}+z^{2} })$, $J_{0}(x)\approx1- \frac{x^{2}}{4}$
-- $w_{i\rightarrow f}= \frac{2\pi}{\hbar}|V_{fi}|^{2} \rho(E_{f}=E_{i})$, $\Omega_{fi}= \frac{|e| F_{0}\hat{\boldsymbol{\epsilon}}\cdot \bra{f} \mathbf{r}\ket{i}}{\hbar}$, 
-
+- $w_{i\rightarrow f}= \frac{2\pi}{\hbar}|V_{fi}|^{2} \rho(E_{f}=E_{i})$, $\Omega_{fi}= \frac{|e| F_{0}\hat{\boldsymbol{\epsilon}}\cdot \bra{f} \mathbf{r}\ket{i}}{\hbar}$
+- $\ket{\psi_{I}} =e^{\frac{i}{\hbar}H_{0}t}\ket{\psi_{S}} ,\ A_{I}=e^{\frac{i}{\hbar}H_{0}t}A_{S}e^{- \frac{i}{\hbar}H_{0}t} ,\  i\hbar \partial_{t}\ket{\psi_{I}} =V_{I}\ket{\psi_{I}} ,\ \frac{dA_{I}}{dt}= \frac{1}{i\hbar}[A_{I},H_{0}]$
+- $\omega_{f\rightarrow i}= \left.\frac{2\pi}{\hbar} \overline{\left|V_{fi} +\sum_{m} \frac{V_{fm}V_{mi}}{E_{i}-E_{m}}\right|^{2}}\rho(E_{f})\right|_{E_{f} \approx E_{i}}$
+- $P(i\rightarrow f)  = |c^{(1)}_{f} |^{2} = \frac{|V_{fi}|^{2}}{\hbar^{2}}t^{2} \text{sinc}^{2}\left(  \frac{E_{f}-E_{i}}{2\hbar}t \right)$, $\text{sinc}^{2}\left(  \frac{E_{f}-E_{i}}{2\hbar}t \right)\rightarrow \frac{h}{t}\delta(E_{f}-E_{i})\text{ as }t\rightarrow \infty$
 
 
 
