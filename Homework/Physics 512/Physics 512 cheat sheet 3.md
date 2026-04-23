@@ -21,7 +21,10 @@
 - $\ket{\psi_{I}} =e^{\frac{i}{\hbar}H_{0}t}\ket{\psi_{S}} ,\ A_{I}=e^{\frac{i}{\hbar}H_{0}t}A_{S}e^{- \frac{i}{\hbar}H_{0}t} ,\  i\hbar \partial_{t}\ket{\psi_{I}} =V_{I}\ket{\psi_{I}} ,\ \frac{dA_{I}}{dt}= \frac{1}{i\hbar}[A_{I},H_{0}]$
 - $\omega_{f\rightarrow i}= \left.\frac{2\pi}{\hbar} \overline{\left|V_{fi} +\sum_{m} \frac{V_{fm}V_{mi}}{E_{i}-E_{m}}\right|^{2}}\rho(E_{f})\right|_{E_{f} \approx E_{i}}$
 - $P(i\rightarrow f)  = |c^{(1)}_{f} |^{2} = \frac{|V_{fi}|^{2}}{\hbar^{2}}t^{2} \text{sinc}^{2}\left(  \frac{E_{f}-E_{i}}{2\hbar}t \right)$, $\text{sinc}^{2}\left(  \frac{E_{f}-E_{i}}{2\hbar}t \right)\rightarrow \frac{h}{t}\delta(E_{f}-E_{i})\text{ as }t\rightarrow \infty$
-- E1 absorption: $w_{i\rightarrow f}= \left.\frac{2\pi}{\hbar}\left| \frac{\Omega_{fi}}{2} \right|^{2} \frac{\omega_{fi}^{2}}{\omega^{2}}\rho(E_{f})\right|_{E_{f}\approx E_{i}+\hbar \omega}= \frac{2\pi}{\hbar}\left| \frac{\Omega_{fi}}{2} \right|^{2} \rho(E_{f}= E_{i}+\hbar \omega)$
-
+- E1 absorption: $w_{i\rightarrow f}= \left.\frac{2\pi}{\hbar}\left| \frac{\hbar\Omega_{fi}}{2} \right|^{2} \frac{\omega_{fi}^{2}}{\omega^{2}}\rho(E_{f})\right|_{E_{f}\approx E_{i}+\hbar \omega}= \frac{2\pi}{\hbar}\left| \frac{\hbar\Omega_{fi}}{2} \right|^{2} \rho(E_{f}= E_{i}+\hbar \omega)$
+$\mathbf{F}=F  \hat{\mathbf{x}}e^{i(kz-\omega t)}$, $\nabla \times \mathbf{F}=- \partial_{t}\mathbf{B}\implies \mathbf{k}\times \mathbf{F}=-\omega \mathbf{B}$$\implies$$\mathbf{B}=\left( - \frac{kF}{\omega} \right) \hat{\mathbf{y}}e^{i(kz-\omega t)}$. $\nabla \times \mathbf{A}=\mathbf{B}$$\implies$$\mathbf{A}= \frac{iF}{\omega}  \hat{\mathbf{x}}e^{i(kz-\omega t)}$. Take the real part $\mathbf{A}=- \frac{F}{\omega}\hat{\mathbf{x}}\sin(kz-\omega t)$. Perturbation:
+$$\begin{align}
+\frac{|e|}{m}\mathbf{p}\cdot \mathbf{A} & = \frac{|e|}{m} \frac{F}{\omega} \frac{p_{x}}{2i}(e^{i(kz-\omega t)}-e^{-i(kz-\omega t)}),\ \mathscr{V}^{\dagger}= \frac{|e|}{m} \frac{F}{\omega} \frac{p_{x}}{2i}e^{ikz}
+\end{align}$$
 
 
