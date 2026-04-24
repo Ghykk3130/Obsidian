@@ -11,25 +11,23 @@ $$\begin{align}
 \end{align}$$
 线性函数符合这个条件。所以可令$\theta(\mathbf{R})=\mathbf{k}\cdot \mathbf{R}$，相应地本征态为$\ket{\psi_{\mathbf{k}}}$。
 
->[!Quote] $\mathbf{k}$对应的本征态的简并问题
->$\mathbf{k}$对应的本征值为$e^{i\mathbf{k}\cdot \mathbf{R}}$。由于$T_{\mathbf{R}}=\exp\left( - \frac{i}{\hbar}\mathbf{p}\cdot \mathbf{R} \right)$，所以任何$\ket{\mathbf{p}}$有$-\frac{\mathbf{p}}{\hbar}\cdot \mathbf{R}=\mathbf{k}\cdot \mathbf{R}$都在$e^{i\mathbf{k}\cdot \mathbf{R}}$本征空间中。我们再选取一个量子数$n$区分这些简并的态。所以本征态写为$\ket{\psi_{n,\mathbf{k}}}$。
+>[!Quote] 如何在$e^{i\mathbf{k}\cdot \mathbf{R}}$对应特征子空间中对角化$H$？
+现在我们已经知道$e^{i\mathbf{k}\cdot \mathbf{R}}$对应特征子空间是$H$的不变子空间。这个特征子空间一般是简并的，由所有形如$\ket{\psi_{\mathbf{k}}}$的态张成。我们不妨加一个变量区分简并，将特征矢记为$\ket{\psi^{(l)}_{k}}$。那么$\{ \ket{\psi_{\mathbf{k}}^{(l)}} \}$是$H$不变子空间。
 >
->又注意到，$e^{i\mathbf{k}\cdot \mathbf{R}}=e^{i(\mathbf{k}+\mathbf{G})\cdot \mathbf{R}}$。所以任何$\ket{\psi_{n,\mathbf{k}}}$与$\ket{\psi_{m,\mathbf{k}+\mathbf{G}}}$属于相同特征子空间。但这只是在增加上面构造出来的特征子空间的简并度而已。我们可以规定$\mathbf{k}\in\text{BZ}$，将$\mathbf{k}+\mathbf{G}$中的态通过重写$n$的方式归入$\ket{\psi_{n,\mathbf{k}}}$中。这称为reduced zone shceme。从上述论证可以看出，固定$n,\mathbf{k}$，得到的子空间就是一维的。
+>我们不妨设$\ket{\psi_{\mathbf{k}}^{(l)}}$就是$H$本征态。这总是可以做到的。因为即使不是本征态，也一定可以重新选取本征基。但由于平移算符的谱是连续的，$H$的谱是离散的，维度不同，所以我们大多数情况在一个特征子空间中，只能选出一个态为$H$本征态。将这个本征态记为$\ket{\psi_{\mathbf{k}}}$
 
-我们暂时先在reduced zone scheme中工作。现在我们知道$\{ \ket{\psi_{n,\mathbf{k}}} \}_{n}$张成子空间是$H$的不变子空间。我们可以不妨重新选取$\ket{\psi_{n,\mathbf{k}}}$使其也成为$H$本征态。那么需要满足：
-$$\left( \frac{p^{2}}{2m}+V(\mathbf{r}) \right)\ket{\psi_{n,\mathbf{k}}}=\epsilon_{n}(\mathbf{k})\ket{\psi_{n,\mathbf{k}}}  $$
+这种表示方式称为extended zone scheme，$\mathbf{k}$的大小范围没有限制。
+
+注意到$\ket{\psi_{\mathbf{k}}}$与$\ket{\psi_{\mathbf{k}+\mathbf{G}}}$有相同本征值，因为$e^{i\mathbf{k}\cdot \mathbf{R}}=e^{i(\mathbf{k}+\mathbf{G})\cdot \mathbf{R}}$。所以我们不妨将$e^{i(\mathbf{k}+\mathbf{G})\cdot \mathbf{R}}$的特征子空间折叠进$e^{i\mathbf{k}\cdot \mathbf{R}}$特征子空间。那么$\mathbf{k}$被限制在BZ内。我们用$n$标记这些新折叠进来的$\ket{\psi_{\mathbf{k}+\mathbf{G}}}$，记为$\ket{\psi_{n,\mathbf{k}}}$。这称为reduced zone scheme。
+
 容易证明$\ket{\psi_{n,\mathbf{k}}}=e^{i\mathbf{k}\cdot \mathbf{r}}\ket{u_{n,\mathbf{k}}}$，其中$u_{n,\mathbf{k}}(\mathbf{r}+\mathbf{R})=u_{n,\mathbf{k}}(\mathbf{r})$。只需要：$$\ket{\psi_{n,\mathbf{k}}} =e^{i\mathbf{k}\cdot \mathbf{r}}e^{-i\mathbf{k}\cdot \mathbf{r}}\ket{\psi_{n,\mathbf{k}}}=e^{i\mathbf{k}\cdot \mathbf{r}}\ket{u_{n,\mathbf{k}}},\ \ket{u_{n,\mathbf{k}}} =e^{-i\mathbf{k}\cdot \mathbf{r}}\ket{\psi_{n,\mathbf{k}}}   $$由于$e^{-i\mathbf{k}\cdot \mathbf{r}}\mathbf{p}e^{i\mathbf{k}\cdot \mathbf{r}}=\mathbf{p}+\hbar \mathbf{k}$，我们得到k空间中本征方程：
 $$\left( \frac{|\mathbf{p}+\hbar \mathbf{k}|^{2}}{2m}+V(\mathbf{r}) \right)\ket{u_{n,\mathbf{k}}} =\epsilon_{n}(\mathbf{k})\ket{u_{n,\mathbf{k}}} $$
-固定$\mathbf{k}$，$\ket{u_{n,\mathbf{k}}}$自带的边界条件使得$\epsilon_{n}(\mathbf{k})$离散化，从而$n$是离散的。
 
 >[!Success] Theorem 1.1 (Bloch's theorem)
 >For an electron in a periodic potential, its wavefunction can be written as $\ket{\psi_{n,\mathbf{k}}}=e^{i\mathbf{k}\cdot \mathbf{r}}\ket{u_{n,\mathbf{k}}}$, where $u_{n,\mathbf{k}}(\mathbf{r}+\mathbf{R})=u_{n,\mathbf{k}}(\mathbf{r}),\ \forall \mathbf{R}\in \Lambda$.
 
-# 2. 两种scheme
+# 2. 两种scheme的比较
 
-刚刚我们规定$\mathbf{k}\in\text{BZ}$，但这不是Bloch定理所必须要求的。假设不规定$\mathbf{k}\in\text{BZ}$，通过重新标记量子数，我们可以将刚刚我们吸收进$\ket{\psi_{n,\mathbf{k}}}$的$\ket{\psi_{m,\mathbf{k}+\mathbf{G}}}$再拿出来。那我们在每个BZ，而不只是某一个BZ，有如下方程：
-$$\left( \frac{p^{2}}{2m}+V(\mathbf{r}) \right)\ket{\psi_{n,\mathbf{k}}} =\epsilon_{n}(\mathbf{k})\ket{\psi_{n,\mathbf{k}}} $$
-如果要看某个$\mathbf{k}$对应的能带结构，只需要找出这个$\mathbf{k}$在哪个BZ中，相应地看这个$\mathbf{k}$的$\epsilon_{n}(\mathbf{k})$即可。这称为extended zone scheme。由于本质上我们只是改了一下labeling，并不影响能谱。也就是说两种scheme下，若将能谱看成$(n,\mathbf{k})$到实数的映射，则值域是一样的。
 ## Ex：
 
 自由电子气
