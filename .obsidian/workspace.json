@@ -2209,12 +2209,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Notes/半导体简介.md",
+                "file": "Homework/Physics 463/Physics 463 homework 7.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "半导体简介"
+              "title": "Physics 463 homework 7"
             }
           }
         ],
@@ -2285,7 +2285,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 200,
+    "collapsed": true
   },
   "right": {
     "id": "9003d078f8dbc4ed",
