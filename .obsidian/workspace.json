@@ -2195,12 +2195,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Notes/近自由电子模型.md",
+                "file": "Notes/空穴.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "近自由电子模型"
+              "title": "空穴"
             }
           }
         ],
@@ -2256,7 +2256,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "近自由",
+                "query": "空穴",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -2267,11 +2267,13 @@
               "title": "Search"
             }
           }
-        ]
+        ],
+        "currentTab": 3
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 200,
+    "collapsed": true
   },
   "right": {
     "id": "9003d078f8dbc4ed",
@@ -2375,10 +2377,11 @@
   "active": "34fac5c91c84ef51",
   "lastOpenFiles": [
     "Homework/Physics 463/Midterm 3 cheat sheet.md",
+    "Notes/空穴.md",
+    "Notes/近自由电子模型.md",
     "Homework/Physics 463/Midterm 2 cheat sheet.md",
     "Homework/Physics 463/Physics 463 homework 8.md",
     "Homework/Physics 463/Practice midterm.md",
-    "Notes/近自由电子模型.md",
     "Notes/Bloch定理.md",
     "Notes/Fourier变换.md",
     "Notes/晶体基础.md",
@@ -2399,7 +2402,6 @@
     "Notes/Fermi's golden rule.md",
     "Notes/Berry phase.md",
     "Notes/Hamiltonian with extreme time dependence.md",
-    "Notes/散射.md",
     "Pictures/Pasted image 20260422203908.png",
     "Pictures/Pasted image 20260421003453.png",
     "Pictures/Pasted image 20260421003428.png",
