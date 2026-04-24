@@ -2195,12 +2195,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Homework/Physics 463/Physics 463 homework 8.md",
+                "file": "Homework/Physics 463/Midterm 3 cheat sheet.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Physics 463 homework 8"
+              "title": "Midterm 3 cheat sheet"
             }
           }
         ],
@@ -2271,7 +2271,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 200,
+    "collapsed": true
   },
   "right": {
     "id": "9003d078f8dbc4ed",
@@ -2374,11 +2375,11 @@
   },
   "active": "34fac5c91c84ef51",
   "lastOpenFiles": [
+    "Homework/Physics 463/Physics 463 homework 8.md",
     "Homework/Physics 463/Midterm 3 cheat sheet.md",
     "Notes/空穴.md",
     "Notes/近自由电子模型.md",
     "Homework/Physics 463/Midterm 2 cheat sheet.md",
-    "Homework/Physics 463/Physics 463 homework 8.md",
     "Homework/Physics 463/Practice midterm.md",
     "Notes/Bloch定理.md",
     "Notes/Fourier变换.md",
