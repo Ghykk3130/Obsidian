@@ -19,6 +19,7 @@
 ![[Pasted image 20260208161916.png|center|100]]
 - $F=\int_{\mathbb{R}^{3}}d^{3}rn(\mathbf{r})e^{-i\Delta \mathbf{k}\cdot \mathbf{r}}=\sum_{\mathbf{R}\in \Lambda}e^{-i\Delta \mathbf{k}\cdot \mathbf{R}}S_{\mathbf{G}},\ S_{\mathbf{G}}=\int_{\text{unit cell}}d^{3}rn(\mathbf{r})e^{-i\Delta \mathbf{k}\cdot \mathbf{r}},\ S_{\mathbf{G}}=\sum_{\mathbf{r}_{i}}e^{-i\Delta \mathbf{k}\cdot \mathbf{r}_{i}}f_{i},\ f_{i}=\int_{\mathbb{R}^{3}}d^{3}rn_{i}(\mathbf{r})e^{-i\Delta \mathbf{k}\cdot \mathbf{r}},\ \Delta \mathbf{k}=\mathbf{k}^{'}-\mathbf{k}^{}$
 - NFE selection rule: $\mathbf{k}^{'}-\mathbf{k}=\mathbf{G},\ k^{'}=k$. Perturbation: $E=E_{0}\pm|V_{\mathbf{G}}|$
+- $\left( \frac{1}{m^{*}} \right)_{ij}=  \frac{1}{\hbar^{2}} \frac{\partial^{2}\epsilon}{\partial k_{i}\partial k_{j}}$
 
 
 

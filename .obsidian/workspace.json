@@ -2195,12 +2195,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Notes/空穴.md",
+                "file": "Homework/Physics 463/Physics 463 homework 8.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "空穴"
+              "title": "Physics 463 homework 8"
             }
           }
         ],
@@ -2267,13 +2267,11 @@
               "title": "Search"
             }
           }
-        ],
-        "currentTab": 3
+        ]
       }
     ],
     "direction": "horizontal",
-    "width": 200,
-    "collapsed": true
+    "width": 200
   },
   "right": {
     "id": "9003d078f8dbc4ed",
