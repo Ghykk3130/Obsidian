@@ -20,9 +20,9 @@
 - $F=\int_{\mathbb{R}^{3}}d^{3}rn(\mathbf{r})e^{-i\Delta \mathbf{k}\cdot \mathbf{r}}=\sum_{\mathbf{R}\in \Lambda}e^{-i\Delta \mathbf{k}\cdot \mathbf{R}}S_{\mathbf{G}},\ S_{\mathbf{G}}=\int_{\text{unit cell}}d^{3}rn(\mathbf{r})e^{-i\Delta \mathbf{k}\cdot \mathbf{r}},\ S_{\mathbf{G}}=\sum_{\mathbf{r}_{i}}e^{-i\Delta \mathbf{k}\cdot \mathbf{r}_{i}}f_{i},\ f_{i}=\int_{\mathbb{R}^{3}}d^{3}rn_{i}(\mathbf{r})e^{-i\Delta \mathbf{k}\cdot \mathbf{r}},\ \Delta \mathbf{k}=\mathbf{k}^{'}-\mathbf{k}^{}$
 - NFE selection rule: $\mathbf{k}^{'}-\mathbf{k}=\mathbf{G},\ k^{'}=k$. Perturbation: $E=E_{0}\pm|V_{\mathbf{G}}|$
 - $\left( \frac{1}{m^{*}} \right)_{ij}=  \frac{1}{\hbar^{2}} \frac{\partial^{2}\epsilon}{\partial k_{i}\partial k_{j}}$
-- If $E_{c}-\mu\gg kT$, $\mu-E_{v}\gg kT$,  $n=N_{c}\exp\left( - \frac{E_{c}-\mu}{kT} \right),\ p=N_{v}\exp\left( - \frac{\mu-E_{v}}{kT} \right)$, $N\propto(m^{*}T)^{d/2}$, $\mu= \frac{E_{c}+E_{v}}{2}+ \frac{d}{4} kT\ln\left( \frac{m_{h}}{m_{e}} \right)$
+- If $E_{c}-\mu\gg kT$, $\mu-E_{v}\gg kT$,  $n=N_{c}\exp\left( - \frac{E_{c}-\mu}{kT} \right),\ p=N_{v}\exp\left( - \frac{\mu-E_{v}}{kT} \right)$, $N\propto(m^{*}T)^{d/2}$, $\mu= \frac{E_{c}+E_{v}}{2}+ \frac{d}{4} kT\ln\left( \frac{m_{h}}{m_{e}} \right)= \frac{E_{c}+E_{v}}{2}+ \frac{1}{2}kT\ln\left( \frac{N_{v}}{N_{c}} \right)$
 - $E_{\text{ionization}}= 13.6\text{ eV}\times \frac{\frac{m_{e}}{m}}{\epsilon^{2}},\ r_{d}=a_{0} \times \frac{\epsilon}{m_{e} /m}$ 
-- $\sigma=n|e|\mu_{e}+p|e|\mu_{h},\ \mu= \frac{|e| \tau}{m^{*}}$, $R_{H}=- \frac{1}{n|e|},\ R_{H}= \frac{1}{p|e|}$
+- $\sigma=n|e|\mu_{e}+p|e|\mu_{h},\ \mu= \frac{|e| \tau}{m^{*}}$, $R_{H}=- \frac{1}{n|e|},\ R_{H}= \frac{1}{p|e|}$, $R_{H}= \frac{p\mu_{h}^{2}-n\mu_{e}^{2}}{|e|(p\mu_{h}+n\mu_{e})^{2}}$
 
 
 
