@@ -25,6 +25,9 @@
 - $\sigma=n|e|\mu_{e}+p|e|\mu_{h},\ \mu= \frac{|e| \tau}{m^{*}}$, $R_{H}=- \frac{1}{n|e|},\ R_{H}= \frac{1}{p|e|}$, $R_{H}= \frac{p\mu_{h}^{2}-n\mu_{e}^{2}}{|e|(p\mu_{h}+n\mu_{e})^{2}}$
 - $N_{c}=2\left( \frac{m^{*}kT}{2\pi \hbar^{2}} \right)^{3/2}$, thermal ionization of donors: $n=(N_{c}N_{d})^{1/2}e^{-(E_{c}-E_{d})/2kT}$, $N_{d}$ is the donor concentration
 - $\mathbf{k}_{h}=-\mathbf{k}_{e},\ \epsilon_{h}(\mathbf{k}_{h})=-\epsilon_{e}(\mathbf{k}_{e}),\ \mathbf{v}_{h}(\mathbf{k}_{h})=\mathbf{v}_{e}(\mathbf{k}_{e})$
+- $U(\mathbf{r})=\sum_{\mathbf{R}}\sum_{\mathbf{r}_{j}}u(\mathbf{r}-\mathbf{R}-\mathbf{r}_{j})$
+$\sum_{\mathbf{G}}U_{\mathbf{G}}e^{i\mathbf{G}\cdot \mathbf{r}}= \sum_{\mathbf{R}}\sum_{\mathbf{r}_{j}}u(\mathbf{r}-\mathbf{r}_{j}-\mathbf{R})$
+$U_{\mathbf{G}}= \frac{1}{(2\pi)^{3} } \sum_{\mathbf{R}}\sum_{\mathbf{r}_{j}}\int d^{3}r e^{-i\mathbf{G}\cdot \mathbf{r}}u(\mathbf{r}-\mathbf{r}_{j}-\mathbf{R}) = \frac{1}{(2\pi)^{3}} \sum_{\mathbf{R}}\sum_{\mathbf{r}_{j}}\int d^{3}r e^{-i\mathbf{G}\cdot \mathbf{r}}e^{-i\mathbf{G}\cdot \mathbf{r}_{j}}u(\mathbf{r})=\frac{N}{(2\pi)^{3}}\sum_{\mathbf{r}_{j}}e^{-i\mathbf{G}\cdot \mathbf{r}_{j}}\int d^{3}re^{-i\mathbf{G}\cdot \mathbf{r}}u(\mathbf{r})$
 
 
 
