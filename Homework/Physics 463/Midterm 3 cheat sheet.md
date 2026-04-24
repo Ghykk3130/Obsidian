@@ -23,6 +23,7 @@
 - If $E_{c}-\mu\gg kT$, $\mu-E_{v}\gg kT$,  $n=N_{c}\exp\left( - \frac{E_{c}-\mu}{kT} \right),\ p=N_{v}\exp\left( - \frac{\mu-E_{v}}{kT} \right)$, $N\propto(m^{*}T)^{d/2}$, $\mu= \frac{E_{c}+E_{v}}{2}+ \frac{d}{4} kT\ln\left( \frac{m_{h}}{m_{e}} \right)= \frac{E_{c}+E_{v}}{2}+ \frac{1}{2}kT\ln\left( \frac{N_{v}}{N_{c}} \right)$
 - $E_{\text{ionization}}= 13.6\text{ eV}\times \frac{\frac{m_{e}}{m}}{\epsilon^{2}},\ r_{d}=a_{0} \times \frac{\epsilon}{m_{e} /m}$ 
 - $\sigma=n|e|\mu_{e}+p|e|\mu_{h},\ \mu= \frac{|e| \tau}{m^{*}}$, $R_{H}=- \frac{1}{n|e|},\ R_{H}= \frac{1}{p|e|}$, $R_{H}= \frac{p\mu_{h}^{2}-n\mu_{e}^{2}}{|e|(p\mu_{h}+n\mu_{e})^{2}}$
+- $\mathbf{k}_{h}=-\mathbf{k}_{e},\ \epsilon_{h}(\mathbf{k}_{h})=-\epsilon_{e}(\mathbf{k}_{e}),\ \mathbf{v}_{h}(\mathbf{k}_{h})=\mathbf{v}_{e}(\mathbf{k}_{e})$
 
 
 
