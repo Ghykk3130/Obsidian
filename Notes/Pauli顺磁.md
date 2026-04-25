@@ -19,8 +19,8 @@ $$\begin{align}
 M & \approx \frac{\mu_{B}^{2}B}{kT}\int_{0}^{\infty}dE f(E)g(E) \\
  & = \frac{n\mu_{B}^{2}B}{kT}
 \end{align}$$
-得到：
-$$\chi= \frac{n\mu_{0}\mu_{B}}{kT}$$
+若$M$很小，那么$B\approx \mu_{0}H$。得到：
+$$\chi= \frac{\partial M}{\partial H}\approx \frac{n\mu_{0}\mu_{B}}{kT}$$
 这称为Pauli顺磁。
 
 
