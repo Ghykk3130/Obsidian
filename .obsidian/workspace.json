@@ -2237,16 +2237,30 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Notes/能带磁性.md",
+                "file": "Notes/量子统计力学系综.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "能带磁性"
+              "title": "量子统计力学系综"
+            }
+          },
+          {
+            "id": "bb43b05772ed969c",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Notes/满壳层角动量.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "满壳层角动量"
             }
           }
         ],
-        "currentTab": 159
+        "currentTab": 160
       }
     ],
     "direction": "vertical"
@@ -2313,8 +2327,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200,
-    "collapsed": true
+    "width": 200
   },
   "right": {
     "id": "9003d078f8dbc4ed",
@@ -2415,11 +2428,14 @@
       "obsidian-excalidraw-plugin:New drawing": false
     }
   },
-  "active": "ec2da6007248afd0",
+  "active": "bb43b05772ed969c",
   "lastOpenFiles": [
+    "Pictures/Pasted image 20260425201513.png",
+    "Notes/量子统计力学系综.md",
+    "Notes/满壳层角动量.md",
+    "Notes/能带磁性.md",
     "Pictures/Pasted image 20260425164142.png",
     "Notes/Pedrottis' introduction to optics.md",
-    "Notes/能带磁性.md",
     "Notes/Pauli顺磁.md",
     "Notes/Hydraulic jump.md",
     "Notes/E1跃迁.md",
@@ -2441,8 +2457,6 @@
     "Notes/Magnetic ordering.md",
     "Notes/Lie Algebras.md",
     "Notes/Lagrange Multiplier.md",
-    "Notes/Lagrangian Formulation of EM.md",
-    "Notes/Ising模型.md",
     "Pictures/Pasted image 20260422203908.png",
     "Pictures/Pasted image 20260421003453.png",
     "Pictures/Pasted image 20260421003428.png",
@@ -2453,7 +2467,6 @@
     "Pictures/Pasted image 20260420213413.png",
     "Pictures/Pasted image 20260420194653.png",
     "Untitled",
-    "Pictures/Pasted image 20260418175712.png",
     "Homework/Math 654/Homework 2.html",
     "tldraw",
     "Excalidraw/Scripts/Downloaded",
