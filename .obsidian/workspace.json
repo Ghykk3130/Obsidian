@@ -2265,16 +2265,30 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Notes/磁化和磁化率数据的解读.md",
+                "file": "Notes/相对论动力学.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "磁化和磁化率数据的解读"
+              "title": "相对论动力学"
+            }
+          },
+          {
+            "id": "6a826edab05960f9",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Notes/畴壁能量.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "畴壁能量"
             }
           }
         ],
-        "currentTab": 161
+        "currentTab": 162
       }
     ],
     "direction": "vertical"
@@ -2442,12 +2456,14 @@
       "obsidian-excalidraw-plugin:New drawing": false
     }
   },
-  "active": "a49843cfead540bc",
+  "active": "6a826edab05960f9",
   "lastOpenFiles": [
+    "Notes/相对论动力学.md",
+    "Notes/畴壁能量.md",
+    "Notes/磁化和磁化率数据的解读.md",
     "Pictures/Pasted image 20260428111717.png",
     "Pictures/Pasted image 20260428111113.png",
     "Notes/Magnetic ordering.md",
-    "Notes/磁化和磁化率数据的解读.md",
     "Notes/退磁能.md",
     "Notes/满壳层角动量.md",
     "Pictures/Pasted image 20260425201513.png",
@@ -2472,14 +2488,12 @@
     "Notes/Bloch定理.md",
     "Notes/Fourier变换.md",
     "Notes/晶体基础.md",
-    "Notes/Maxwell Stress Tensor and Momentum.md",
     "Pictures/Pasted image 20260422203908.png",
     "Pictures/Pasted image 20260421003453.png",
     "Pictures/Pasted image 20260421003428.png",
     "Pictures/Pasted image 20260421002933.png",
     "Pictures/Pasted image 20260420232425.png",
     "Pictures/Pasted image 20260420232326.png",
-    "Pictures/Pasted image 20260420213433.png",
     "Untitled",
     "Homework/Math 654/Homework 2.html",
     "tldraw",
