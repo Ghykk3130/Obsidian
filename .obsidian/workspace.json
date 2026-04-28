@@ -2467,13 +2467,21 @@
       "templates:Insert template": false,
       "command-palette:Open command palette": false,
       "obsidian-git:Open Git source control": false,
-      "obsidian-excalidraw-plugin:New drawing": false
+      "obsidian-excalidraw-plugin:New drawing": false,
+      "obsidian-shellcommands:Shell commands: Custom variables": false
     }
   },
   "active": "9101243b4858ab75",
   "lastOpenFiles": [
-    "Notes/直角坐标和球坐标微分算子变换.md",
+    "Pictures/drawing.pdf",
+    "Pictures/drawing.html",
+    "Pictures/drawing.svg",
     "Notes/条纹畴能量.md",
+    "Notes/正规矩阵的对角化.md",
+    "Pictures/e548bb0abc474128d805af7b387574f6.jpg",
+    "Pictures/wavefunction_contour (1).png",
+    "Excalidraw/Drawing 2026-04-22 20.08.58.excalidraw.md",
+    "Notes/直角坐标和球坐标微分算子变换.md",
     "Notes/畴壁能量.md",
     "Notes/相对论动力学.md",
     "Notes/磁化和磁化率数据的解读.md",
@@ -2499,15 +2507,9 @@
     "Homework/Physics 512/Physics 512 cheat sheet 3.md",
     "Notes/空穴.md",
     "Notes/近自由电子模型.md",
-    "Homework/Physics 463/Midterm 2 cheat sheet.md",
-    "Homework/Physics 463/Practice midterm.md",
-    "Notes/Bloch定理.md",
     "Pictures/Pasted image 20260422203908.png",
     "Pictures/Pasted image 20260421003453.png",
     "Pictures/Pasted image 20260421003428.png",
-    "Pictures/Pasted image 20260421002933.png",
-    "Pictures/Pasted image 20260420232425.png",
-    "Pictures/Pasted image 20260420232326.png",
     "Untitled",
     "Homework/Math 654/Homework 2.html",
     "tldraw",
@@ -2516,7 +2518,6 @@
     "Homework/Physics 512",
     "Homework/Math 654",
     "Notes",
-    "Homework/Physics 463",
-    "Homework/Physics 511"
+    "Homework/Physics 463"
   ]
 }
