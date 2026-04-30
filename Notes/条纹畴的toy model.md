@@ -25,7 +25,7 @@ M_{z} & = \frac{M}{\pi}\sum_{n\text{ odd}} \frac{2}{n}\sin\left(  \frac{n\pi}{2}
  & = \frac{M}{\pi}\sum_{n\text{ odd},\ n>0} \frac{2}{n} \sin\left(  \frac{n\pi}{2} \right)2 \cos\left(  \frac{\pi n}{w}x \right) \\
  & = \frac{4M}{\pi}\sum_{m=0}^{\infty} \frac{(-1)^{m}}{(2m+1)}\cos\left(  \frac{(2m+1)\pi}{w}x \right)
 \end{align}$$
-由于$\nabla \cdot \mathbf{B}=0\implies \nabla \cdot \mathbf{H}=-\nabla \cdot \mathbf{M}$，假设$\nabla \times \mathbf{H}=0$，我们令$\mathbf{H}=-\nabla \phi$，磁荷为$\nabla \cdot \mathbf{M}$。得到Poisson方程$\nabla^{2}\phi=\nabla \cdot \mathbf{M}$。现在取一支Fourier分量$\frac{4M}{\pi} \frac{(-1)^{m}}{2m+1}\cos\left(  \frac{(2m+1)\pi}{w}x \right)$，我们计算该分量的磁荷。由于对称性，我们有$\phi=\phi(x,z)$。在样品上表面去一个厚度很小的盒子。在盒子上积分Poisson方程得到边界条件：
+由于$\nabla \cdot \mathbf{B}=0\implies \nabla \cdot \mathbf{H}=-\nabla \cdot \mathbf{M}$，假设$\nabla \times \mathbf{H}=0$，我们令$\mathbf{H}=-\nabla \phi$，磁荷为$\nabla \cdot \mathbf{M}$。得到Poisson方程$\nabla^{2}\phi=\nabla \cdot \mathbf{M}$。现在取一支Fourier分量$\frac{4M}{\pi} \frac{(-1)^{m}}{2m+1}\cos\left(  \frac{(2m+1)\pi}{w}x \right)$，我们计算该分量的磁荷。由于对称性，我们有$\phi=\phi(x,z)$。在样品上表面取一个厚度很小的盒子。在盒子上积分Poisson方程得到边界条件：
 $$\begin{align} 
  &  [\hat{\mathbf{n}}\cdot \nabla \phi]^{\text{out}}_{in} = \mathbf{M}\cdot(-\hat{\mathbf{n}}) \\
 \implies & [\partial_{z}\phi]^{\text{out}}_{\text{in} }= -M_{z}
