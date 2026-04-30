@@ -50,7 +50,18 @@ H & = \frac{JS^{2}}{2}\sum_{<ij>}2a^{2}(\nabla \mathbf{m})^{2} \\
  & = \frac{JS^{2}}{2}\cdot 2a^{2}\cdot \frac{1}{a^{3}}\int d^{3}r(\nabla \mathbf{m} )^{2} \\
  & = J \int d^{3}r(\nabla \mathbf{m})^{2}
 \end{align}$$
+## Ex:
 
+如何由离散交换常数得到连续交换常数？考虑TmMn6Sn6-xGax。其中由于Mn层中强铁磁交换，我们可以在z方向将Mn层等价为一个一维Heisenberg链。层之间交替以$J_{1},J_{2}$作为交换常数。考虑相邻两层之间的$J_{1}$ couple $J_{1}\mathbf{m}_{i}\cdot \mathbf{m}_{i+1}$。我们有：
+$$\begin{align}
+\mathbf{m}_{i}\cdot \mathbf{m}_{i+1} & \approx \mathbf{m}_{i}\cdot\left( \mathbf{m}_{i}+ \frac{\partial \mathbf{m}_{i}}{\partial z}d_{1}+ \frac{1}{2} \frac{\partial^{2}\mathbf{m}_{i}}{\partial z^{2}}d_{1}^{2} \right)
+\end{align}$$
+其中$d_{1}$为$J_{1}$“键”的“键长”。由于$\mathbf{m}_{i}\cdot \mathbf{m}_{i}=1$，容易得到$\mathbf{m}_{i}\cdot \frac{\partial \mathbf{m}_{i}}{\partial z}=0,\ \left( \frac{\partial \mathbf{m}_{i}}{\partial z} \right)^{2}+ \mathbf{m}_{i}\cdot \frac{\partial^{2}\mathbf{m}_{i}}{\partial z^{2}}=0$。忽略常数，该交换作用为：
+$$- \frac{J_{1}d_{1}^{2}}{2}\left( \frac{\partial \mathbf{m}_{i}}{\partial z} \right)^{2}$$
+同理，$J_{2}$交换对应$- \frac{J_{2}d_{2}^{2}}{2}\left( \frac{\partial \mathbf{m}_{i}}{\partial z} \right)^{2}$。实际上，一个元胞内包含一个$J_{1}$交换，一个$J_{2}$交换，所以交换能密度实际上为：
+$$\frac{1}{V}\left( - \frac{1}{2}J_{1} d_{1}^{2}- \frac{1}{2}J_{2}d_{2}^{2}\right)\left(  \frac{\partial \mathbf{m}}{\partial z} \right)^{2}$$
+其中$V$为元胞体积。所以连续交换常数为：
+$$J= \frac{1}{V}\left( - \frac{1}{2}J_{1} d_{1}^{2}- \frac{1}{2}J_{2}d_{2}^{2}\right)$$
 # 3. 对称性
 
 我们可以通过对称性直接得到交换能。假设交换能是$\mathbf{m}$及其导数的函数。假设晶体具有空间反演对称性，那么$H$不会包含$\mathbf{m}$一次项。因为空间反演下$\mathbf{m}\rightarrow -\mathbf{m}$。类似地，$H$同样不会包含$\mathbf{m}$一阶导。那么$H$最少包含$\mathbf{m}$的二阶导：

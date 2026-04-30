@@ -2293,12 +2293,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Notes/磁泡的toy model.md",
+                "file": "Notes/Heisenberg交换.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "磁泡的toy model"
+              "title": "Heisenberg交换"
             }
           }
         ],
@@ -2354,7 +2354,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "条纹",
+                "query": "Heisenberg",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -2365,7 +2365,8 @@
               "title": "Search"
             }
           }
-        ]
+        ],
+        "currentTab": 3
       }
     ],
     "direction": "horizontal",
@@ -2474,6 +2475,7 @@
   },
   "active": "9101243b4858ab75",
   "lastOpenFiles": [
+    "Notes/磁泡的toy model.md",
     "Pictures/Pasted image 20260429145929.png",
     "Notes/最大功.md",
     "Notes/空穴.md",
@@ -2511,7 +2513,6 @@
     "Notes/半导体简介.md",
     "Homework/Physics 512/Physics 512 cheat sheet 3.md",
     "Pictures/Pasted image 20260422203908.png",
-    "Pictures/Pasted image 20260421003453.png",
     "Untitled",
     "Homework/Math 654/Homework 2.html",
     "tldraw",
