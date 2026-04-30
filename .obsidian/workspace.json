@@ -2307,12 +2307,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Notes/Fan state的toy model.md",
+                "file": "Notes/条纹畴的toy model.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Fan state的toy model"
+              "title": "条纹畴的toy model"
             }
           }
         ],
@@ -2368,7 +2368,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "Heisenberg",
+                "query": "条纹",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -2379,7 +2379,8 @@
               "title": "Search"
             }
           }
-        ]
+        ],
+        "currentTab": 3
       }
     ],
     "direction": "horizontal",
@@ -2488,14 +2489,15 @@
   },
   "active": "0e8c5269bf3217b7",
   "lastOpenFiles": [
-    "Notes/离散对称性.md",
-    "Notes/Fan state的toy model.md",
     "Notes/磁泡的toy model.md",
+    "Experimental/Untitled.md",
+    "Notes/Fan state的toy model.md",
+    "Notes/离散对称性.md",
     "Notes/Heisenberg交换.md",
     "Pictures/Pasted image 20260429145929.png",
     "Notes/最大功.md",
     "Notes/空穴.md",
-    "Notes/条纹畴能量.md",
+    "Notes/条纹畴的toy model.md",
     "Notes/畴壁能量.md",
     "Pictures/Pasted image 20260428163037.png",
     "Pictures/drawing.pdf",
@@ -2524,7 +2526,6 @@
     "Notes/Clebsch-Gordan系数.md",
     "Homework/Physics 512/Physics 512 homework 6.md",
     "Homework/Physics 463/Midterm 3 cheat sheet.md",
-    "Homework/Physics 463/Physics 463 homework 7.md",
     "Pictures/Pasted image 20260422203908.png",
     "Untitled",
     "Homework/Math 654/Homework 2.html",
