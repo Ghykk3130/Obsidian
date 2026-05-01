@@ -2382,7 +2382,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "条纹",
+                "query": "DFT",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -2393,7 +2393,8 @@
               "title": "Search"
             }
           }
-        ]
+        ],
+        "currentTab": 3
       }
     ],
     "direction": "horizontal",
@@ -2502,8 +2503,10 @@
   },
   "active": "6c2156e429604c65",
   "lastOpenFiles": [
-    "Notes/条纹畴的toy model.md",
+    "Reading notes/Doping-induced spin reorientation in Kagome magnet TmMn6Sn6.md",
+    "Notes/Lagrange Multiplier.md",
     "Notes/DFT.md",
+    "Notes/条纹畴的toy model.md",
     "Notes/磁泡的toy model.md",
     "Experimental/Untitled.md",
     "Notes/Fan state的toy model.md",
@@ -2537,8 +2540,6 @@
     "Notes/Pauli顺磁.md",
     "Notes/Hydraulic jump.md",
     "Notes/E1跃迁.md",
-    "Notes/Clebsch-Gordan系数.md",
-    "Homework/Physics 512/Physics 512 homework 6.md",
     "Pictures/Pasted image 20260422203908.png",
     "Untitled",
     "Homework/Math 654/Homework 2.html",

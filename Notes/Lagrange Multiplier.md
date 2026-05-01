@@ -39,27 +39,15 @@ $$\left\{ \begin{align}
  & \delta F=0 \\
  & G(x_{1},\dots,x_{N})=0
 \end{align}\right. \tag{1}$$
-那么我们必有：
-$$\left\{ \begin{align}
- & \frac{\partial F}{\partial x_{i}}\delta x_{i}=0 \\
- & \frac{\partial G}{\partial x_{i}}\delta x_{i} =0
-\end{align}\right.$$
-遵循相同的思路，第一个式子无法脱去$\delta x_{i}$，因为不独立。我们必有：
-$$\left( \frac{\partial F}{\partial x_{i}}- \lambda \frac{\partial G}{\partial x_{i}} \right)\delta x_{i}=0,\forall \lambda$$
-我们刻意选择$\lambda$，以至于$\delta x_{1}$的系数被消掉。那么$\delta x_{i},i\neq 1$立刻独立。于是我们必有：
-$$\left\{ \begin{align}
- & \frac{\partial F}{\partial x_{i}}- \lambda \frac{\partial G}{\partial x_{i}}=0,\forall i \\
- & G(x_{1},\dots,x_{N})=0
-\end{align}\right. \tag{2}$$
-还容易证明，这组方程和一下方程组等价：
-$$\left\{ \begin{align}
- & \frac{\partial}{\partial x_{i}}(F-\lambda G)=0,\forall i \\
- & G(x_{1},\dots,x_{N})=0
-\end{align}\right. \tag{3}$$
-容易证明，方程组$(1),(2),(3)$其实都等价。
-
-方程组$(3)$的第一个式子可以看作在取$F-\lambda G$的极值。
-
-
-
-
+此时，我们有：
+$$\begin{align}
+\delta F  & = \frac{\partial F}{\partial \mathbf{x} }\cdot \delta \mathbf{x} =0
+\end{align}$$
+但是由于约束，$\delta \mathbf{x}$不是任意的，所以我们不能直接脱去$\delta \mathbf{x}$。此时我们引入一个自由变量$\lambda$。我们构造辅助泛函：
+$$\mathcal{F}(\mathbf{x})=F(\mathbf{x})-\lambda G(\mathbf{x})$$
+我们发现，对$\lambda$变分，可以使得约束自动满足：
+$$\frac{\partial\mathcal{F}}{\partial \lambda} \delta \lambda=0 \implies G(\mathbf{x})=0$$
+所以我们不妨将$\lambda,\mathbf{x}$都看作自由变量，对这两个变量作极值化。这等价于对于不自由的$\mathbf{x}$作极值化。我们有：
+$$\begin{align}
+\frac{\partial\mathcal{F}}{\partial \mathbf{x}}\cdot\delta \mathbf{x} & = \frac{\partial F}{\partial \mathbf{x}} \cdot \delta \mathbf{x}- \lambda \frac{\partial G}{\partial \mathbf{x}}\cdot\delta \mathbf{x}=0\implies \frac{\partial F}{\partial \mathbf{x}}- \lambda \frac{\partial G}{\partial \mathbf{x}}=0
+\end{align}$$
