@@ -104,7 +104,7 @@ E & = T_{0}+ \int d^{3}r vn+ V_{H}+E_{\text{xc}} \\
  & = \sum_{i}\epsilon_{i}- \int d^{3}r \left( v+ \frac{1}{4\pi\epsilon_{0}}\int d^{3}r^{'} \frac{e^{2}}{|\mathbf{r}-\mathbf{r}^{'}|}n(\mathbf{r}^{'})+ v_{\text{ex}} \right)n(\mathbf{r})+\int d^{3}rn+ V_{H} +E_{\text{xc}} \\
  & = \sum_{i}\epsilon_{i}-V_{H}+E_{\text{xc}}-\int d^{3}r v_{\text{xc}}n
 \end{align}$$
-我们只需要找到足够好的$E_{\text{xc}}$即可。一般来说，$E_{\text{xc}}$可以分为交换和关联两部分。即$E_{\text{xc}}=E_{x}+E_{c}$。交换部分定义为$V_{\text{ee}}$在$\frac{1}{\sqrt{ N! }}\ket{\psi_{1}}\wedge\dots \wedge \ket{\psi_{N}}$下的期望值，减去Hartree能。我们计算
+我们只需要找到足够好的$E_{\text{xc}}$即可。一般来说，$E_{\text{xc}}$可以分为交换和关联两部分。即$E_{\text{xc}}=E_{x}+E_{c}$。交换部分定义为$V_{\text{ee}}$在$\frac{1}{\sqrt{ N! }}\ket{\psi_{1}}\wedge\dots \wedge \ket{\psi_{N}}$下的期望值，减去Hartree能。我们计算：
 $$\begin{align}
 \langle V_{\text{ee}}\rangle & = \frac{1}{2} \frac{1}{4\pi\epsilon_{0}}\sum_{i,j}\int d^{3}r_{1}\dots d^{3}r_{N} \frac{e^{2}}{|\mathbf{r}_{i}-\mathbf{r}_{j} |}\psi ^{*}_{i}(\mathbf{r}_{i}) 
 \end{align}$$
