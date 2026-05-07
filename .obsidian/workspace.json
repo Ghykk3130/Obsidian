@@ -2321,12 +2321,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Notes/散射.md",
+                "file": "Notes/二次量子化.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "散射"
+              "title": "二次量子化"
             }
           }
         ],
@@ -2382,7 +2382,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "散射",
+                "query": "二次量子化",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -2398,7 +2398,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 200,
+    "collapsed": true
   },
   "right": {
     "id": "9003d078f8dbc4ed",
@@ -2502,6 +2503,7 @@
   },
   "active": "6c2156e429604c65",
   "lastOpenFiles": [
+    "Notes/散射.md",
     "Notes/Solid state.md",
     "Notes/箱归一化粒子态密度.md",
     "Notes/Transport.md",
@@ -2527,7 +2529,6 @@
     "Notes/磁泡的toy model.md",
     "Notes/Fan state的toy model.md",
     "Notes/离散对称性.md",
-    "Notes/Heisenberg交换.md",
     "Pictures/Pasted image 20260429145929.png",
     "Pictures/Pasted image 20260428163037.png",
     "Pictures/drawing.pdf",
