@@ -2396,7 +2396,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "二次量子化",
+                "query": "von neumann",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -2516,8 +2516,9 @@
   },
   "active": "00c720cfdb5b0429",
   "lastOpenFiles": [
-    "Notes/路径积分.md",
+    "Notes/量子统计力学系综.md",
     "Notes/费米液体.md",
+    "Notes/路径积分.md",
     "Notes/二次量子化.md",
     "Notes/Blasius定理，Chaplygin定理.md",
     "Notes/守恒律.md",
@@ -2541,7 +2542,6 @@
     "Notes/Untitled 9.md",
     "Notes/Untitled 10.md",
     "Notes/DFT.md",
-    "Reading notes/Doping-induced spin reorientation in Kagome magnet TmMn6Sn6.md",
     "Pictures/Pasted image 20260429145929.png",
     "Pictures/Pasted image 20260428163037.png",
     "Pictures/drawing.pdf",
