@@ -2335,12 +2335,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Notes/费米液体.md",
+                "file": "Notes/半导体简介.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "费米液体"
+              "title": "半导体简介"
             }
           }
         ],
@@ -2396,7 +2396,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "Gibbs",
+                "query": "",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -2411,8 +2411,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200,
-    "collapsed": true
+    "width": 200
   },
   "right": {
     "id": "9003d078f8dbc4ed",
@@ -2516,8 +2515,9 @@
   },
   "active": "00c720cfdb5b0429",
   "lastOpenFiles": [
-    "Notes/量子统计力学系综.md",
+    "Notes/Transport.md",
     "Notes/费米液体.md",
+    "Notes/量子统计力学系综.md",
     "Notes/路径积分.md",
     "Notes/二次量子化.md",
     "Notes/Blasius定理，Chaplygin定理.md",
@@ -2525,7 +2525,6 @@
     "Notes/散射.md",
     "Notes/Solid state.md",
     "Notes/箱归一化粒子态密度.md",
-    "Notes/Transport.md",
     "Experimental/Reflections.md",
     "Experimental/Ratio Transformer.md",
     "Experimental/Untitled 1.md",
