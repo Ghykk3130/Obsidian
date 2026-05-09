@@ -2349,12 +2349,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Notes/半经典输运.md",
+                "file": "Notes/Untitled 6.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "半经典输运"
+              "title": "Untitled 6"
             }
           }
         ],
@@ -2425,8 +2425,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200,
-    "collapsed": true
+    "width": 200
   },
   "right": {
     "id": "9003d078f8dbc4ed",
@@ -2530,8 +2529,16 @@
   },
   "active": "a90c3ea8bd26f28d",
   "lastOpenFiles": [
-    "Notes/光学定理.md",
+    "Notes/Untitled 5.md",
+    "Notes/Untitled 4.md",
+    "Notes/Untitled 3.md",
+    "Notes/Untitled 2.md",
+    "Notes/Untitled 1.md",
+    "Notes/Untitled.md",
+    "Experimental/Untitled.md",
+    "Experimental/Untitled 1.md",
     "Notes/半经典输运.md",
+    "Notes/光学定理.md",
     "Notes/散射.md",
     "Notes/半经典运动方程.md",
     "Notes/半导体简介.md",
@@ -2546,14 +2553,6 @@
     "Notes/箱归一化粒子态密度.md",
     "Experimental/Reflections.md",
     "Experimental/Ratio Transformer.md",
-    "Experimental/Untitled 1.md",
-    "Experimental/Untitled.md",
-    "Notes/Untitled.md",
-    "Notes/Untitled 1.md",
-    "Notes/Untitled 2.md",
-    "Notes/Untitled 3.md",
-    "Notes/Untitled 4.md",
-    "Notes/Untitled 5.md",
     "Notes/Untitled 6.md",
     "Notes/Untitled 7.md",
     "Pictures/Pasted image 20260429145929.png",
