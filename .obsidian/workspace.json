@@ -2425,8 +2425,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200,
-    "collapsed": true
+    "width": 200
   },
   "right": {
     "id": "9003d078f8dbc4ed",
@@ -2530,8 +2529,9 @@
   },
   "active": "a90c3ea8bd26f28d",
   "lastOpenFiles": [
-    "Notes/散射.md",
+    "Notes/光学定理.md",
     "Notes/半经典输运.md",
+    "Notes/散射.md",
     "Notes/半经典运动方程.md",
     "Notes/半导体简介.md",
     "Notes/Transport.md",
@@ -2555,7 +2555,6 @@
     "Notes/Untitled 5.md",
     "Notes/Untitled 6.md",
     "Notes/Untitled 7.md",
-    "Notes/Untitled 8.md",
     "Pictures/Pasted image 20260429145929.png",
     "Pictures/Pasted image 20260428163037.png",
     "Pictures/drawing.pdf",
