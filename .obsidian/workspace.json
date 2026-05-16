@@ -2363,12 +2363,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Notes/电荷密度波.md",
+                "file": "Notes/电荷密度波，自旋密度波.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "电荷密度波"
+              "title": "电荷密度波，自旋密度波"
             }
           }
         ],
@@ -2546,7 +2546,7 @@
     "Pictures/Pasted image 20260516145407.png",
     "Pictures/Pasted image 20260516145046.png",
     "Notes/时间演化.md",
-    "Notes/电荷密度波.md",
+    "Notes/电荷密度波，自旋密度波.md",
     "Experimental/PID Control.md",
     "Notes/写作.md",
     "Notes/Untitled 10.md",
