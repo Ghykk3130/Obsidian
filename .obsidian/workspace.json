@@ -2349,16 +2349,30 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Notes/写作.md",
+                "file": "Notes/时间演化.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "写作"
+              "title": "时间演化"
+            }
+          },
+          {
+            "id": "c582cee42f063099",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Notes/电荷密度波.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "电荷密度波"
             }
           }
         ],
-        "currentTab": 167
+        "currentTab": 168
       }
     ],
     "direction": "vertical"
@@ -2527,8 +2541,14 @@
       "obsidian-shellcommands:Shell commands: Custom variables": false
     }
   },
-  "active": "0bd5adf6a54a04e2",
+  "active": "c582cee42f063099",
   "lastOpenFiles": [
+    "Pictures/Pasted image 20260516145407.png",
+    "Pictures/Pasted image 20260516145046.png",
+    "Notes/时间演化.md",
+    "Notes/电荷密度波.md",
+    "Experimental/PID Control.md",
+    "Notes/写作.md",
     "Notes/Untitled 10.md",
     "Notes/Untitled 2.md",
     "Notes/Untitled 1.md",
@@ -2544,17 +2564,12 @@
     "Notes/2-level system的Berry curvature.md",
     "Notes/半经典运动方程.md",
     "Notes/半经典输运.md",
-    "Notes/写作.md",
     "Notes/Transport.md",
     "Notes/费米液体.md",
     "Notes/Untitled 5.md",
     "Experimental/Untitled.md",
     "Experimental/Untitled 1.md",
     "Notes/光学定理.md",
-    "Notes/散射.md",
-    "Notes/半导体简介.md",
-    "Notes/量子统计力学系综.md",
-    "Notes/路径积分.md",
     "Pictures/Pasted image 20260429145929.png",
     "Pictures/Pasted image 20260428163037.png",
     "Pictures/drawing.pdf",
@@ -2566,7 +2581,6 @@
     "Pictures/Pasted image 20260428111113.png",
     "Pictures/Pasted image 20260425201513.png",
     "Pictures/Pasted image 20260425164142.png",
-    "Pictures/Pasted image 20260422203908.png",
     "Untitled",
     "Homework/Math 654/Homework 2.html",
     "tldraw",
