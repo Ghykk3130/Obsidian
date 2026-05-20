@@ -2363,12 +2363,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Notes/晶体基础.md",
+                "file": "Notes/半经典输运.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "晶体基础"
+              "title": "半经典输运"
             }
           }
         ],
@@ -2435,13 +2435,11 @@
               "title": "Search"
             }
           }
-        ],
-        "currentTab": 3
+        ]
       }
     ],
     "direction": "horizontal",
-    "width": 200,
-    "collapsed": true
+    "width": 200
   },
   "right": {
     "id": "9003d078f8dbc4ed",
@@ -2545,6 +2543,7 @@
   },
   "active": "c582cee42f063099",
   "lastOpenFiles": [
+    "Notes/晶体基础.md",
     "Notes/电荷密度波，自旋密度波.md",
     "Pictures/Pasted image 20260516145407.png",
     "Pictures/Pasted image 20260516145046.png",
