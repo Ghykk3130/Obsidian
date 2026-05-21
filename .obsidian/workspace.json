@@ -2405,12 +2405,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Notes/Nordheim-Gorter规则.md",
+                "file": "Notes/半经典输运.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Nordheim-Gorter规则"
+              "title": "半经典输运"
             }
           }
         ],
@@ -2466,7 +2466,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "mott relation",
+                "query": "输运",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -2477,11 +2477,13 @@
               "title": "Search"
             }
           }
-        ]
+        ],
+        "currentTab": 3
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 200,
+    "collapsed": true
   },
   "right": {
     "id": "9003d078f8dbc4ed",
@@ -2585,8 +2587,8 @@
   },
   "active": "9ef1986e82f18685",
   "lastOpenFiles": [
+    "Notes/多带以及多散射效应.md",
     "Notes/半经典输运.md",
-    "Notes/Nordheim-Gorter规则.md",
     "Notes/一维Acoustic wave的量子化.md",
     "Notes/输运系数与费米面.md",
     "Notes/密度矩阵非对角元含义.md",
