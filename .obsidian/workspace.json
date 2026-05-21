@@ -2391,16 +2391,30 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Notes/半经典输运.md",
+                "file": "Notes/一维Acoustic wave的量子化.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "半经典输运"
+              "title": "一维Acoustic wave的量子化"
+            }
+          },
+          {
+            "id": "9ef1986e82f18685",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Notes/Nordheim-Gorter规则.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Nordheim-Gorter规则"
             }
           }
         ],
-        "currentTab": 170
+        "currentTab": 171
       }
     ],
     "direction": "vertical"
@@ -2452,7 +2466,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "输运",
+                "query": "mott relation",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -2463,13 +2477,11 @@
               "title": "Search"
             }
           }
-        ],
-        "currentTab": 3
+        ]
       }
     ],
     "direction": "horizontal",
-    "width": 200,
-    "collapsed": true
+    "width": 200
   },
   "right": {
     "id": "9003d078f8dbc4ed",
@@ -2571,14 +2583,16 @@
       "obsidian-shellcommands:Shell commands: Custom variables": false
     }
   },
-  "active": "466b08384d9e877e",
+  "active": "9ef1986e82f18685",
   "lastOpenFiles": [
+    "Notes/半经典输运.md",
+    "Notes/Nordheim-Gorter规则.md",
+    "Notes/一维Acoustic wave的量子化.md",
     "Notes/输运系数与费米面.md",
     "Notes/密度矩阵非对角元含义.md",
     "Notes/密度矩阵.md",
     "Notes/半经典运动方程.md",
     "Notes/双缝实验.md",
-    "Notes/半经典输运.md",
     "Notes/晶体基础.md",
     "Notes/电荷密度波，自旋密度波.md",
     "Pictures/Pasted image 20260516145407.png",
@@ -2599,8 +2613,6 @@
     "Notes/AHE.md",
     "Notes/AB效应.md",
     "Notes/2-level system的Berry curvature.md",
-    "Notes/Transport.md",
-    "Notes/费米液体.md",
     "Pictures/Pasted image 20260429145929.png",
     "Pictures/Pasted image 20260428163037.png",
     "Pictures/drawing.pdf",
