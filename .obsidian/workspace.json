@@ -2419,12 +2419,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Notes/凝胶模型.md",
+                "file": "Notes/二次量子化.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "凝胶模型"
+              "title": "二次量子化"
             }
           }
         ],
@@ -2496,8 +2496,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200,
-    "collapsed": true
+    "width": 200
   },
   "right": {
     "id": "9003d078f8dbc4ed",
@@ -2601,8 +2600,8 @@
   },
   "active": "3d7251aa5ead3711",
   "lastOpenFiles": [
-    "Notes/二次量子化.md",
     "Notes/凝胶模型.md",
+    "Notes/二次量子化.md",
     "Notes/畴壁能量.md",
     "Notes/电荷密度波，自旋密度波.md",
     "Notes/半经典输运.md",
