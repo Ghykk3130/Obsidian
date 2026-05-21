@@ -2377,6 +2377,20 @@
             "state": {
               "type": "markdown",
               "state": {
+                "file": "Notes/半经典运动方程.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "半经典运动方程"
+            }
+          },
+          {
+            "id": "466b08384d9e877e",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
                 "file": "Notes/输运系数与费米面.md",
                 "mode": "source",
                 "source": false
@@ -2386,7 +2400,7 @@
             }
           }
         ],
-        "currentTab": 169
+        "currentTab": 170
       }
     ],
     "direction": "vertical"
@@ -2438,7 +2452,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "miller index",
+                "query": "输运",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -2449,11 +2463,13 @@
               "title": "Search"
             }
           }
-        ]
+        ],
+        "currentTab": 3
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 200,
+    "collapsed": true
   },
   "right": {
     "id": "9003d078f8dbc4ed",
@@ -2555,8 +2571,10 @@
       "obsidian-shellcommands:Shell commands: Custom variables": false
     }
   },
-  "active": "e571e080b8ae7f2a",
+  "active": "466b08384d9e877e",
   "lastOpenFiles": [
+    "Notes/密度矩阵非对角元含义.md",
+    "Notes/密度矩阵.md",
     "Notes/半经典运动方程.md",
     "Notes/输运系数与费米面.md",
     "Notes/双缝实验.md",
@@ -2583,8 +2601,6 @@
     "Notes/2-level system的Berry curvature.md",
     "Notes/Transport.md",
     "Notes/费米液体.md",
-    "Notes/Untitled 5.md",
-    "Experimental/Untitled.md",
     "Pictures/Pasted image 20260429145929.png",
     "Pictures/Pasted image 20260428163037.png",
     "Pictures/drawing.pdf",
