@@ -130,8 +130,13 @@ $$\begin{align}
  & = \frac{2Q}{\pi r}\int_{0}^{\infty}dq \frac{\sin(qr)}{q\epsilon(\mathbf{q})}
 \end{align}$$
 $x=1$对应$q=2k_{F}$。可以得到：
-$$\phi(\mathbf{r})\sim \frac{\cos(2k_{F}r)}{r^{3}}$$
+$$\boxed{\phi(\mathbf{r})\sim \frac{\cos(2k_{F}r)}{r^{3}}}$$
 于是总势从原点开始以$\frac{1}{r^{3}}$衰减，并且震荡。
 
 直觉上讲，若电子完全经典，则任何波矢的电子都可以参与屏蔽，在正电荷周围Fourier叠加出平滑衰减的势能。但是电子波矢实际上被限制在费米球内，所以高k电子是不存在的。于是电子无法平滑屏蔽掉正电荷电势，从而形成震荡。
+
+
+
+
+
 

@@ -2433,16 +2433,30 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Notes/库伦屏蔽.md",
+                "file": "Notes/Friedel震荡.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "库伦屏蔽"
+              "title": "Friedel震荡"
+            }
+          },
+          {
+            "id": "703bdd0aa234f867",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Notes/Friedel震荡.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Friedel震荡"
             }
           }
         ],
-        "currentTab": 173
+        "currentTab": 174
       }
     ],
     "direction": "vertical"
@@ -2494,7 +2508,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "能带磁性",
+                "query": "Friedel",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -2509,8 +2523,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200,
-    "collapsed": true
+    "width": 200
   },
   "right": {
     "id": "9003d078f8dbc4ed",
@@ -2612,10 +2625,11 @@
       "obsidian-shellcommands:Shell commands: Custom variables": false
     }
   },
-  "active": "d4baad6989955325",
+  "active": "0bd5adf6a54a04e2",
   "lastOpenFiles": [
+    "Notes/RKKY作用.md",
+    "Notes/Friedel震荡.md",
     "Notes/近自由电子模型.md",
-    "Notes/库伦屏蔽.md",
     "Notes/退磁能.md",
     "Notes/凝胶模型.md",
     "Notes/写作.md",
@@ -2641,7 +2655,6 @@
     "Notes/Untitled 1.md",
     "Notes/Untitled 3.md",
     "Notes/Untitled 4.md",
-    "Notes/Untitled 7.md",
     "Pictures/Pasted image 20260429145929.png",
     "Pictures/Pasted image 20260428163037.png",
     "Pictures/drawing.pdf",
