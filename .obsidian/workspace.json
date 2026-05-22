@@ -2419,12 +2419,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Notes/能带磁性.md",
+                "file": "Notes/退磁能.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "能带磁性"
+              "title": "退磁能"
             }
           }
         ],
@@ -2491,13 +2491,11 @@
               "title": "Search"
             }
           }
-        ],
-        "currentTab": 3
+        ]
       }
     ],
     "direction": "horizontal",
-    "width": 200,
-    "collapsed": true
+    "width": 200
   },
   "right": {
     "id": "9003d078f8dbc4ed",
@@ -2602,6 +2600,8 @@
   "active": "3d7251aa5ead3711",
   "lastOpenFiles": [
     "Notes/凝胶模型.md",
+    "Notes/写作.md",
+    "Notes/能带磁性.md",
     "Notes/二次量子化.md",
     "Notes/畴壁能量.md",
     "Notes/电荷密度波，自旋密度波.md",
@@ -2618,7 +2618,6 @@
     "Pictures/Pasted image 20260516145046.png",
     "Notes/时间演化.md",
     "Experimental/PID Control.md",
-    "Notes/写作.md",
     "Notes/Untitled 10.md",
     "Notes/Untitled 2.md",
     "Notes/Untitled 1.md",
@@ -2628,7 +2627,6 @@
     "Notes/Untitled 6.md",
     "Notes/Untitled 8.md",
     "Notes/Untitled 9.md",
-    "Notes/Baker-Campbell-Hausdorff Formula.md",
     "Pictures/Pasted image 20260429145929.png",
     "Pictures/Pasted image 20260428163037.png",
     "Pictures/drawing.pdf",
