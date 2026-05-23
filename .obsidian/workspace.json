@@ -2461,12 +2461,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Notes/磁子.md",
+                "file": "Notes/半经典输运.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "磁子"
+              "title": "半经典输运"
             }
           }
         ],
@@ -2522,7 +2522,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "Friedel",
+                "query": "mott",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -2533,12 +2533,12 @@
               "title": "Search"
             }
           }
-        ]
+        ],
+        "currentTab": 3
       }
     ],
     "direction": "horizontal",
-    "width": 200,
-    "collapsed": true
+    "width": 200
   },
   "right": {
     "id": "9003d078f8dbc4ed",
@@ -2573,12 +2573,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Homework/Physics 463/Physics 463 homework 1.md",
+                "file": "Notes/半经典输运.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Outgoing links from Physics 463 homework 1"
+              "title": "Outgoing links from 半经典输运"
             }
           },
           {
@@ -2588,7 +2588,9 @@
               "type": "tag",
               "state": {
                 "sortOrder": "frequency",
-                "useHierarchy": true
+                "useHierarchy": true,
+                "showSearch": false,
+                "searchQuery": ""
               },
               "icon": "lucide-tags",
               "title": "Tags"
@@ -2620,7 +2622,7 @@
             }
           }
         ],
-        "currentTab": 4
+        "currentTab": 2
       }
     ],
     "direction": "horizontal",
@@ -2640,10 +2642,10 @@
       "obsidian-shellcommands:Shell commands: Custom variables": false
     }
   },
-  "active": "c4137a48128bf705",
+  "active": "6ceac420a84e8c1d",
   "lastOpenFiles": [
+    "Notes/磁振子.md",
     "Notes/光学定理.md",
-    "Notes/磁子.md",
     "Notes/凝胶模型.md",
     "Notes/Friedel震荡.md",
     "Notes/RKKY作用.md",
