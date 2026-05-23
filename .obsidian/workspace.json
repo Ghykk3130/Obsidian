@@ -2538,7 +2538,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 200,
+    "collapsed": true
   },
   "right": {
     "id": "9003d078f8dbc4ed",
@@ -2642,8 +2643,10 @@
       "obsidian-shellcommands:Shell commands: Custom variables": false
     }
   },
-  "active": "6ceac420a84e8c1d",
+  "active": "c4137a48128bf705",
   "lastOpenFiles": [
+    "Notes/费米液体.md",
+    "Notes/半经典输运.md",
     "Notes/磁振子.md",
     "Notes/光学定理.md",
     "Notes/凝胶模型.md",
@@ -2656,7 +2659,6 @@
     "Notes/二次量子化.md",
     "Notes/畴壁能量.md",
     "Notes/电荷密度波，自旋密度波.md",
-    "Notes/半经典输运.md",
     "Notes/多带以及多散射效应.md",
     "Notes/一维Acoustic wave的量子化.md",
     "Notes/输运系数与费米面.md",
@@ -2671,7 +2673,6 @@
     "Experimental/PID Control.md",
     "Notes/Untitled 10.md",
     "Notes/Untitled 2.md",
-    "Notes/Untitled 1.md",
     "Pictures/Pasted image 20260429145929.png",
     "Pictures/Pasted image 20260428163037.png",
     "Pictures/drawing.pdf",
