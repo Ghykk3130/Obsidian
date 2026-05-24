@@ -2461,16 +2461,30 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Notes/半经典输运.md",
+                "file": "Notes/热力学平衡.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "半经典输运"
+              "title": "热力学平衡"
+            }
+          },
+          {
+            "id": "752ae10dacfa38bf",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Notes/AHE.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "AHE"
             }
           }
         ],
-        "currentTab": 175
+        "currentTab": 176
       }
     ],
     "direction": "vertical"
@@ -2522,7 +2536,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "mott",
+                "query": "AHE",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -2574,12 +2588,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Notes/半经典输运.md",
+                "file": "Notes/AHE.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Outgoing links from 半经典输运"
+              "title": "Outgoing links from AHE"
             }
           },
           {
@@ -2643,10 +2657,17 @@
       "obsidian-shellcommands:Shell commands: Custom variables": false
     }
   },
-  "active": "c4137a48128bf705",
+  "active": "752ae10dacfa38bf",
   "lastOpenFiles": [
-    "Notes/费米液体.md",
+    "Notes/Fermi's golden rule.md",
+    "Notes/AHE.md",
+    "Notes/热力学平衡.md",
+    "Notes/Untitled.md",
+    "Reading notes/Electrical resistance of ferromagnetic metals.md",
     "Notes/半经典输运.md",
+    "Notes/输运.md",
+    "Notes/散射.md",
+    "Notes/费米液体.md",
     "Notes/磁振子.md",
     "Notes/光学定理.md",
     "Notes/凝胶模型.md",
@@ -2664,15 +2685,8 @@
     "Notes/输运系数与费米面.md",
     "Notes/密度矩阵非对角元含义.md",
     "Notes/密度矩阵.md",
-    "Notes/半经典运动方程.md",
-    "Notes/双缝实验.md",
-    "Notes/晶体基础.md",
     "Pictures/Pasted image 20260516145407.png",
     "Pictures/Pasted image 20260516145046.png",
-    "Notes/时间演化.md",
-    "Experimental/PID Control.md",
-    "Notes/Untitled 10.md",
-    "Notes/Untitled 2.md",
     "Pictures/Pasted image 20260429145929.png",
     "Pictures/Pasted image 20260428163037.png",
     "Pictures/drawing.pdf",

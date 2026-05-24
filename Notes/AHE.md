@@ -1,32 +1,49 @@
 # 1. Skew scattering 机制
 
-考虑电子在杂质离子附近运动。杂质离子的电场通过spin-orbit coupling耦合，产生能量：
-$$H_{\text{SO}}=\lambda_{\text{SO}}(\nabla V \times \mathbf{v})\cdot \mathbf{S}$$
-我们采用半经典视角，求出力：
+考虑一个杂质离子有势能$V$，磁矩$\mathbf{M}$。一个准粒子被杂质散射。假设在散射过程中，$\boldsymbol{\sigma}$由于与杂质离子的$\mathbf{M}$强耦合而始终平行于$\mathbf{M}$。那么$\boldsymbol{\sigma}$为一常量。则准粒子的hamiltonian写为：
+$$H= \frac{p^{2}}{2m^{*}}+V+ \frac{\hbar}{4m^{2}c^{2}}\boldsymbol{\sigma}\cdot(\nabla V\times \mathbf{p})$$
+将$\frac{p^{2}}{2m^{*}}$当作unperturbed hamiltonian，拥有本征矢$\{ \ket{\mathbf{k}} \}$。将$V+ \frac{\hbar}{4m^{2}c^{2}}\boldsymbol{\sigma}\cdot(\nabla V\times \mathbf{p})$当作微扰。我们计算散射矩阵元。考虑：
 $$\begin{align}
-\mathbf{F}_{\text{SO}} & =-\nabla H_{\text{SO}} \\
- & = -\lambda_{\text{SO}}\nabla[(\mathbf{S}\times \mathbf{v})\cdot \nabla V] \\
- & = -\lambda_{\text{SO}}(\mathbf{S}\times \mathbf{v})\cdot \nabla \nabla V 
+\bra{\mathbf{k}^{'}} V \ket{\mathbf{k}}  & = \frac{1}{L^{3}}\int d^{3}r e^{i(\mathbf{k}-\mathbf{k}^{'})\cdot \mathbf{r}} V(\mathbf{r}) =V(\mathbf{k}^{'}-\mathbf{k})
 \end{align}$$
+然后：
+$$\begin{align}
+\bra{\mathbf{k}^{'}} \boldsymbol{\sigma}\cdot(\nabla V\times \mathbf{p})\ket{\mathbf{k}}  & = \boldsymbol{\sigma}\cdot \bra{\mathbf{k}^{'}} \nabla V\times \mathbf{p}  \ket{\mathbf{k}} \\
+ & = \boldsymbol{\sigma}\cdot[\bra{\mathbf{k}^{'}} \nabla V\ket{\mathbf{k}} \times \hbar \mathbf{k}] 
+\end{align}$$
+我们有：
+$$\begin{align}
+\bra{\mathbf{k}^{'}} \nabla V\ket{\mathbf{k}}  & = \frac{1}{L^{3}}\int d^{3}r e^{i(\mathbf{k}-\mathbf{k}^{'})\cdot \mathbf{r}} \nabla V \\
+ & = \frac{1}{L^{3}}\int d^{3}r  \left[\nabla(Ve^{i(\mathbf{k}-\mathbf{k}^{'})\cdot \mathbf{r}})- Vi(\mathbf{k}-\mathbf{k}^{'})e^{i(\mathbf{k}-\mathbf{k}^{'})\cdot \mathbf{r}} \right] \\
+ & = \frac{i(\mathbf{k}^{'}-\mathbf{k})}{L^{3}} \int d^{3}r V e^{-i(\mathbf{k}^{'}-\mathbf{k})\cdot \mathbf{r}} \\
+ & = i(\mathbf{k}^{'}-\mathbf{k})V(\mathbf{k}^{'}-\mathbf{k})
+\end{align}$$
+那么：
+$$\begin{align}
+W & = \frac{2\pi}{\hbar} |V(\mathbf{k}^{'}-\mathbf{k})+ V(\mathbf{k}^{'}-\mathbf{k})\lambda \mathbf{M}\cdot(\mathbf{k}^{'}\times \mathbf{k})|^{2} \\
+ & = w_{\mathbf{k}\rightarrow \mathbf{k}^{'}}|1+\lambda \mathbf{M}\cdot(\mathbf{k}^{'}\times \mathbf{k}) |^{2}
+\end{align}$$
+其中$w_{\mathbf{k}\rightarrow \mathbf{k}^{'}}= \frac{2\pi}{\hbar}|\bra{\mathbf{k}^{'}}V\ket{\mathbf{k}}|^{2}$为无SOI时散射率。由此可见，不同方位的$\mathbf{k}^{'}$会影响散射率，使得某个特定方向的$\mathbf{k}^{'}$是被favor的。Skew symmetric机制与散射率有关。因此与$\tau$有关。最终对于anomalous Hall resistivity的贡献是$\propto \frac{1}{\tau}$的。
 
->[!Quote] 为什么$\mathbf{S}\times \mathbf{v}$可以提出来？
->在通过势能求得力的时候，我们将速度和位置当做独立坐标。即$\mathbf{F}=-\nabla U(\mathbf{r},\mathbf{v})$时，$\nabla$仅对$\mathbf{r}$作用。这是合理的。回忆起正则方程：
->$$\dot{\mathbf{p}}=- \frac{\partial H}{\partial \mathbf{r}}$$
->这里$(\mathbf{r},\mathbf{p})$时独立的正则坐标。而$\dot{\mathbf{p}}$正是力的定义。所以求导应当只对坐标求导。
+# 2. Side jump机制
 
-假设$V=V(\mathbf{r})$是球对称势。那么：
+相同模型。有hamiltonian：
+$$H= \frac{p^{2}}{2m^{*}}+V+ \frac{\hbar}{4m^{2}c^{2}}\boldsymbol{\sigma}\cdot(\nabla V\times \mathbf{p})$$
+我们由Erenfest定理求准粒子经典速度：$\mathbf{v}= \frac{d}{dt} \langle \mathbf{r}\rangle= \frac{1}{i\hbar}\langle [\mathbf{r},H]\rangle$。显然$\left[ \mathbf{r}, \frac{p^{2}}{2m^{*}} \right]$给出一个平凡的速度$\mathbf{v}_{0}= \frac{\mathbf{p}}{m^{*}}$。而$[\mathbf{r},V]=0$无贡献。那么考虑：
 $$\begin{align}
-(\mathbf{S}\times \mathbf{v})\cdot \nabla \nabla V & = (\mathbf{S}\times \mathbf{v})_{r} \frac{\partial}{\partial r}\left(  \frac{\partial V}{\partial r}  \hat{\mathbf{r}} \right) \\
- & = (\mathbf{S}\times \mathbf{v})_{r} \frac{\partial^{2}V}{\partial \mathbf{r}}  \hat{\mathbf{r}}
+[r_{i}, \sigma_{j}\epsilon_{jkl}(\nabla V)_{k}p_{l}] & = \epsilon_{jkl}\sigma_{j}(\nabla V)_{k}[r_{i},p_{l}] \\
+ & = i\hbar \epsilon_{ijk}\sigma_{j}(\nabla V)_{k}
 \end{align}$$
-若电子在xy面内绕杂质离子作圆周运动，自旋沿z方向极化，那么：
-$$\mathbf{F}_{\text{SO}}= \lambda_{0}e  \mathbf{v}\times \mathbf{S}$$
-则半经典输运方程给出：
-$$m^{*} \frac{d\mathbf{v}}{dt}= - \frac{m^{*}\mathbf{v}}{\tau}+e\mathbf{E}+\lambda_{0}e\mathbf{v}\times \mathbf{S}$$
-稳态输运中，令LHS为零。我们在y方向通电流，在x方向断路测电压。x方向方程为：
+故$[\mathbf{r},\boldsymbol{\sigma}\cdot(\nabla V\times \mathbf{p})]= i\hbar \boldsymbol{\sigma}\times \nabla V$。于是得出一个非平凡速度：
+$$\mathbf{v}^{\text{sj}}=  \frac{\hbar}{4m^{2}c^{2}} \langle \boldsymbol{\sigma}\times \nabla V \rangle= \frac{\hbar}{4m^{2}c^{2}}\boldsymbol{\sigma}\times \nabla V$$
+最后一步是转换到半经典的图像。我们有：$\dot{\mathbf{p}}=-\nabla V$。于是：
+$$\mathbf{v}^{\text{sj}}= \frac{-\hbar}{4m^{2}c^{2}}\boldsymbol{\sigma}\times  \dot{\mathbf{p}}$$
+那么我们计算从散射开始到结束，以$\mathbf{v}^{\text{sj}}$运动了多少：
 $$\begin{align}
- & 0= eE_{x}+\lambda_{0}ev_{y}S \\
-\implies & E_{x}\propto S j_{y}\implies \rho_{xy}\propto S\propto M
+\delta \mathbf{r}^{\text{sj}} & = \int_{i}^{f}dt \mathbf{v}^{\text{sj}} \\
+ & = - \frac{\hbar}{4m^{2}c^{2}}\boldsymbol{\sigma}\times \int_{i}^{f}d\mathbf{p} \\
+ & = - \frac{\hbar^{2}}{4m^{2}c^{2}}\boldsymbol{\sigma}\times(\mathbf{k}^{'}-\mathbf{k})\propto \mathbf{M}\times \Delta \mathbf{k}
 \end{align}$$
+这让粒子在实空间于垂直于$\mathbf{M}$的方向上位移。我们看到，side jump机制与散射率无关。因此与$\tau$无关。最终对于anomalous Hall resistivity的贡献是与$\tau \propto \sigma_{x x}$无关的。
 
 
