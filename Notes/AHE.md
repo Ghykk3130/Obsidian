@@ -1,3 +1,5 @@
+# 1. AHE的定义
+
 考虑conductivity张量：
 $$\boldsymbol{\sigma}=\begin{pmatrix}
 \sigma_{x x} & \sigma_{xy} \\
@@ -14,7 +16,13 @@ $$\begin{align}
 $$\rho_{xy}= \frac{-\sigma_{xy}}{\sigma^{2}_{x x}+\sigma^{2}_{xy}}$$
 若Hall angle非常小，则$\sigma_{xy}\approx 0$。于是得到：
 $$\rho_{xy}= - \frac{\sigma_{xy}}{\sigma_{x x}^{2}}=-\sigma_{xy}\rho_{x x}^{2}$$
+宏观上，我们有经验公式：
+$$\rho_{xy}=R_{0}H+R_{1}M$$
+称$R_{0}$为Hall coefficient，$R_{1}$为anomalous Hall coefficient。
 
+一般来说，$\sigma_{xy}$可以拆成两部分：$\sigma_{xy}=\sigma_{xy}^{\text{OD}}+\sigma_{xy}^{\text{AHE}}$，即ordinary和anomalous两部分。我们知道$\sigma_{xy}^{\text{OD}}= \frac{|e|B}{n}$。这就贡献了$R_{0}H$部分。$\sigma_{xy}^{\text{AHE}}$贡献了$R_{1}M$部分。而$\sigma_{xy}^{\text{AHE}}$又可进一步拆分为三种微观机制：
+$$\sigma_{xy}^{\text{AHE}}=\sigma_{xy}^{\text{int}}+\sigma_{xy}^{\text{sk}}+\sigma_{xy}^{sj}$$
+分别为intrinsic, skew symmetric和side jump。
 
 # 2. Skew scattering 机制
 
@@ -41,7 +49,7 @@ $$\begin{align}
 W & = \frac{2\pi}{\hbar} |V(\mathbf{k}^{'}-\mathbf{k})+ V(\mathbf{k}^{'}-\mathbf{k})\lambda \mathbf{M}\cdot(\mathbf{k}^{'}\times \mathbf{k})|^{2} \\
  & = w_{\mathbf{k}\rightarrow \mathbf{k}^{'}}|1+\lambda \mathbf{M}\cdot(\mathbf{k}^{'}\times \mathbf{k}) |^{2}
 \end{align}$$
-其中$w_{\mathbf{k}\rightarrow \mathbf{k}^{'}}= \frac{2\pi}{\hbar}|\bra{\mathbf{k}^{'}}V\ket{\mathbf{k}}|^{2}$为无SOI时散射率。由此可见，不同方位的$\mathbf{k}^{'}$会影响散射率，使得某个特定方向的$\mathbf{k}^{'}$是被favor的。Skew symmetric机制与散射率有关。因此与$\tau$有关。最终对于anomalous Hall resistivity的贡献是$\propto \frac{1}{\tau}$的。
+其中$w_{\mathbf{k}\rightarrow \mathbf{k}^{'}}= \frac{2\pi}{\hbar}|\bra{\mathbf{k}^{'}}V\ket{\mathbf{k}}|^{2}$为无SOI时散射率。由此可见，不同方位的$\mathbf{k}^{'}$会影响散射率，使得某个特定方向的$\mathbf{k}^{'}$是被favor的。Skew symmetric机制与散射率有关。因此与$\tau$有关。可以证明，$\sigma^{\text{sk}}_{xy}\propto \tau \propto \frac{1}{\rho_{x x}}$。于是最终对于$R_{1}M$的贡献是$\propto \rho_{x x}^{2}\cdot \frac{1}{\rho_{x x}}\propto \rho_{xx}$的。
 
 # 3. Side jump机制
 
