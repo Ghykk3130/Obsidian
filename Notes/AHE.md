@@ -1,4 +1,4 @@
-# 1. AHE的定义
+# 1. 关于AHE的一般讨论
 
 考虑conductivity张量：
 $$\boldsymbol{\sigma}=\begin{pmatrix}
@@ -17,13 +17,16 @@ $$\rho_{xy}= \frac{-\sigma_{xy}}{\sigma^{2}_{x x}+\sigma^{2}_{xy}}$$
 若Hall angle非常小，则$\sigma_{xy}\approx 0$。于是得到：
 $$\rho_{xy}= - \frac{\sigma_{xy}}{\sigma_{x x}^{2}}=-\sigma_{xy}\rho_{x x}^{2}$$
 宏观上，我们有经验公式：
-$$\rho_{xy}=R_{0}H+R_{1}M$$
+$$\rho_{xy}=\rho^{\text{OD}}_{xy}+\rho^{\text{AHE}}_{xy}=R_{0}H+R_{1}M$$
 称$R_{0}$为Hall coefficient，$R_{1}$为anomalous Hall coefficient。
 
-一般来说，$\sigma_{xy}$可以拆成两部分：$\sigma_{xy}=\sigma_{xy}^{\text{OD}}+\sigma_{xy}^{\text{AHE}}$，即ordinary和anomalous两部分。我们知道$\sigma_{xy}^{\text{OD}}= \frac{|e|B}{n}$。这就贡献了$R_{0}H$部分。$\sigma_{xy}^{\text{AHE}}$贡献了$R_{1}M$部分。而$\sigma_{xy}^{\text{AHE}}$又可进一步拆分为三种微观机制：
+一般来说，$\sigma_{xy}$可以拆成两部分：$\sigma_{xy}=\sigma_{xy}^{\text{OD}}+\sigma_{xy}^{\text{AHE}}$，即ordinary和anomalous两部分。我们知道$\sigma_{xy}^{\text{OD}}= \frac{|e|B}{n}$。这就贡献了$\rho_{xy}^{\text{OD}}$部分。$\sigma_{xy}^{\text{AHE}}$贡献了$\rho^{\text{AHE}}_{xy}$部分。而$\sigma_{xy}^{\text{AHE}}$又可进一步拆分为三种微观机制：
 $$\sigma_{xy}^{\text{AHE}}=\sigma_{xy}^{\text{int}}+\sigma_{xy}^{\text{sk}}+\sigma_{xy}^{sj}$$
 分别为intrinsic, skew symmetric和side jump。
 
+可以证明，$\sigma_{xy}^{\text{sj}},\ \sigma_{xy}^{\text{int}}\propto \tau^{0}$，$\sigma_{xy}^{\text{sk}}\propto \tau \propto \frac{1}{\rho_{ x x}}$。且$\sigma_{xy}^{\text{int}},\ \sigma^{\text{sk}}_{xy},\ \sigma^{\text{sj}}_{xy}\propto M$。于是一般来说，我们有：
+$$R_{1}=a\rho_{x x}+b\rho_{x x}^{2}$$
+其中$a$由skew symmetric贡献，$b$由intrinsic和side jump贡献。
 # 2. Skew scattering 机制
 
 考虑一个杂质离子有势能$V$，磁矩$\mathbf{M}$。一个准粒子被杂质散射。假设在散射过程中，$\boldsymbol{\sigma}$由于与杂质离子的$\mathbf{M}$强耦合而始终平行于$\mathbf{M}$。那么$\boldsymbol{\sigma}$为一常量。则准粒子的hamiltonian写为：
@@ -49,7 +52,7 @@ $$\begin{align}
 W & = \frac{2\pi}{\hbar} |V(\mathbf{k}^{'}-\mathbf{k})+ V(\mathbf{k}^{'}-\mathbf{k})\lambda \mathbf{M}\cdot(\mathbf{k}^{'}\times \mathbf{k})|^{2} \\
  & = w_{\mathbf{k}\rightarrow \mathbf{k}^{'}}|1+\lambda \mathbf{M}\cdot(\mathbf{k}^{'}\times \mathbf{k}) |^{2}
 \end{align}$$
-其中$w_{\mathbf{k}\rightarrow \mathbf{k}^{'}}= \frac{2\pi}{\hbar}|\bra{\mathbf{k}^{'}}V\ket{\mathbf{k}}|^{2}$为无SOI时散射率。由此可见，不同方位的$\mathbf{k}^{'}$会影响散射率，使得某个特定方向的$\mathbf{k}^{'}$是被favor的。Skew symmetric机制与散射率有关。因此与$\tau$有关。可以证明，$\sigma^{\text{sk}}_{xy}\propto \tau \propto \frac{1}{\rho_{x x}}$。于是最终对于$R_{1}M$的贡献是$\propto \rho_{x x}^{2}\cdot \frac{1}{\rho_{x x}}\propto \rho_{xx}$的。
+其中$w_{\mathbf{k}\rightarrow \mathbf{k}^{'}}= \frac{2\pi}{\hbar}|\bra{\mathbf{k}^{'}}V\ket{\mathbf{k}}|^{2}$为无SOI时散射率。由此可见，不同方位的$\mathbf{k}^{'}$会影响散射率，使得某个特定方向的$\mathbf{k}^{'}$是被favor的。Skew symmetric机制与散射率有关。因此与$\tau$有关。可以证明，$\sigma^{\text{sk}}_{xy}\propto \tau \propto \frac{1}{\rho_{x x}}$。于是最终对于$\rho^{\text{AHE}}_{xy}$的贡献是$\propto \rho_{x x}^{2}\cdot \frac{1}{\rho_{x x}}\propto \rho_{xx}$的。
 
 # 3. Side jump机制
 
@@ -70,6 +73,6 @@ $$\begin{align}
  & = - \frac{\hbar}{4m^{2}c^{2}}\boldsymbol{\sigma}\times \int_{i}^{f}d\mathbf{p} \\
  & = - \frac{\hbar^{2}}{4m^{2}c^{2}}\boldsymbol{\sigma}\times(\mathbf{k}^{'}-\mathbf{k})\propto \mathbf{M}\times \Delta \mathbf{k}
 \end{align}$$
-这让粒子在实空间于垂直于$\mathbf{M}$的方向上位移。我们看到，side jump机制与散射率无关。因此与$\tau$无关。最终对于anomalous Hall resistivity的贡献是与$\tau \propto \sigma_{x x}$无关的。
+这让粒子在实空间于垂直于$\mathbf{M}$的方向上位移。我们看到，side jump机制与散射率无关。因此与$\tau$无关。可以证明$\sigma^{\text{sj}}_{xy}\propto \tau^{0}$。于是最终对于$\rho_{xy}^{\text{AHE}}$的贡献是$\propto \rho_{x x}^{2}$的。
 
 
