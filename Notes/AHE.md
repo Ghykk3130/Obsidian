@@ -1,4 +1,22 @@
-# 1. Skew scattering 机制
+考虑conductivity张量：
+$$\boldsymbol{\sigma}=\begin{pmatrix}
+\sigma_{x x} & \sigma_{xy} \\
+-\sigma_{xy} & \sigma_{x x}
+\end{pmatrix}$$
+求逆得到resistivity张量：
+$$\begin{align}
+\boldsymbol{\rho} & = \frac{1}{\sigma_{x x}^{2}+\sigma_{xy}^{2} }\begin{pmatrix}
+\sigma_{x x} & -\sigma_{xy} \\
+\sigma_{xy} & \sigma_{x x}
+\end{pmatrix}
+\end{align}$$
+于是得到Hall resistivity和Hall conductivity的关系：
+$$\rho_{xy}= \frac{-\sigma_{xy}}{\sigma^{2}_{x x}+\sigma^{2}_{xy}}$$
+若Hall angle非常小，则$\sigma_{xy}\approx 0$。于是得到：
+$$\rho_{xy}= - \frac{\sigma_{xy}}{\sigma_{x x}^{2}}=-\sigma_{xy}\rho_{x x}^{2}$$
+
+
+# 2. Skew scattering 机制
 
 考虑一个杂质离子有势能$V$，磁矩$\mathbf{M}$。一个准粒子被杂质散射。假设在散射过程中，$\boldsymbol{\sigma}$由于与杂质离子的$\mathbf{M}$强耦合而始终平行于$\mathbf{M}$。那么$\boldsymbol{\sigma}$为一常量。则准粒子的hamiltonian写为：
 $$H= \frac{p^{2}}{2m^{*}}+V+ \frac{\hbar}{4m^{2}c^{2}}\boldsymbol{\sigma}\cdot(\nabla V\times \mathbf{p})$$
@@ -25,7 +43,7 @@ W & = \frac{2\pi}{\hbar} |V(\mathbf{k}^{'}-\mathbf{k})+ V(\mathbf{k}^{'}-\mathbf
 \end{align}$$
 其中$w_{\mathbf{k}\rightarrow \mathbf{k}^{'}}= \frac{2\pi}{\hbar}|\bra{\mathbf{k}^{'}}V\ket{\mathbf{k}}|^{2}$为无SOI时散射率。由此可见，不同方位的$\mathbf{k}^{'}$会影响散射率，使得某个特定方向的$\mathbf{k}^{'}$是被favor的。Skew symmetric机制与散射率有关。因此与$\tau$有关。最终对于anomalous Hall resistivity的贡献是$\propto \frac{1}{\tau}$的。
 
-# 2. Side jump机制
+# 3. Side jump机制
 
 相同模型。有hamiltonian：
 $$H= \frac{p^{2}}{2m^{*}}+V+ \frac{\hbar}{4m^{2}c^{2}}\boldsymbol{\sigma}\cdot(\nabla V\times \mathbf{p})$$

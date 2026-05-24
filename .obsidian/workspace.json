@@ -2547,13 +2547,11 @@
               "title": "Search"
             }
           }
-        ],
-        "currentTab": 3
+        ]
       }
     ],
     "direction": "horizontal",
-    "width": 200,
-    "collapsed": true
+    "width": 200
   },
   "right": {
     "id": "9003d078f8dbc4ed",
@@ -2657,7 +2655,7 @@
       "obsidian-shellcommands:Shell commands: Custom variables": false
     }
   },
-  "active": "752ae10dacfa38bf",
+  "active": "0bd5adf6a54a04e2",
   "lastOpenFiles": [
     "Notes/Fermi's golden rule.md",
     "Notes/AHE.md",
