@@ -17,10 +17,10 @@ $$\rho_{xy}= \frac{-\sigma_{xy}}{\sigma^{2}_{x x}+\sigma^{2}_{xy}}$$
 若Hall angle非常小，则$\sigma_{xy}\approx 0$。于是得到：
 $$\rho_{xy}= - \frac{\sigma_{xy}}{\sigma_{x x}^{2}}=-\sigma_{xy}\rho_{x x}^{2}$$
 宏观上，我们有经验公式：
-$$\rho_{xy}=\rho^{\text{OD}}_{xy}+\rho^{\text{AHE}}_{xy}=R_{0}H+R_{1}M$$
+$$\rho_{xy}=\rho^{\text{O}}_{xy}+\rho^{\text{A}}_{xy}=R_{0}H+R_{1}M$$
 称$R_{0}$为Hall coefficient，$R_{1}$为anomalous Hall coefficient。
 
-一般来说，$\sigma_{xy}$可以拆成两部分：$\sigma_{xy}=\sigma_{xy}^{\text{OD}}+\sigma_{xy}^{\text{AHE}}$，即ordinary和anomalous两部分。我们知道$\sigma_{xy}^{\text{OD}}= \frac{|e|B}{n}$。这就贡献了$\rho_{xy}^{\text{OD}}$部分。$\sigma_{xy}^{\text{AHE}}$贡献了$\rho^{\text{AHE}}_{xy}$部分。而$\sigma_{xy}^{\text{AHE}}$又可进一步拆分为三种微观机制：
+一般来说，$\sigma_{xy}$可以拆成两部分：$\sigma_{xy}=\sigma_{xy}^{\text{O}}+\sigma_{xy}^{\text{A}}$，即ordinary和anomalous两部分。我们知道$\rho_{xy}^{\text{O}}= \frac{B}{ne}$。由$\sigma_{xy}=- \frac{\rho_{xy}}{\rho_{xx}^{2}}$，我们可以将其对应到$\sigma_{xy}^{\text{O}}=- \frac{\rho_{xy}^{\text{O}}}{\rho_{x x}^{2}}$。同理，$\rho^{\text{A}}_{xy}$可对应到$\sigma_{xy}^{\text{A}}$。而$\sigma_{xy}^{\text{AHE}}$又可进一步拆分为三种微观机制：
 $$\sigma_{xy}^{\text{AHE}}=\sigma_{xy}^{\text{int}}+\sigma_{xy}^{\text{sk}}+\sigma_{xy}^{sj}$$
 分别为intrinsic, skew scattering和side jump。
 
