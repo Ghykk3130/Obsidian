@@ -39,22 +39,16 @@ H_{0} & = \sum_{j,j^{'},\sigma} \bra{j} H_{0} \ket{j^{'}} c^{\dagger}_{j,\sigma}
 \end{align}$$
 由于第一项对于固定粒子数系统只是常数，不妨令：
 $$H_{0}=-\sum_{j,m,\sigma}t_{jm}c^{\dagger}_{j,\sigma}c_{m,\sigma}$$
-考虑对角化$t_{jm}$。我们有：
+我们有：
 $$\begin{align}
 H_{0} & = -\sum_{j,m,\sigma}t_{jm}\ket{j,\sigma} \bra{0} 0\rangle\bra{m,\sigma}  \\
- & = \sum_{j,m,\sigma}
+ & = \sum_{j,m,\sigma}t_{jm}\ket{j,\sigma} \bra{m,\sigma} 
 \end{align}$$
-
-
-
-令：
-$$A  (-t) A^{\dagger}=\mathcal{E}$$
-其中，$\mathcal{E}$为对角阵。那么：
+考虑存在一组本征基$\{ \ket{n,\sigma} \}$将$H_{0}$对角化，对角元为$\mathcal{E}_{n}$。那么$H_{0}$写为：
 $$\begin{align}
-H_{0} & = \sum_{j,m,\sigma}\sum_{k,l} A^{*}_{kj}\mathcal{E}_{kl}A_{lm}c^{\dagger}_{j,\sigma}c_{m,\sigma} \\
- & = \sum_{j,m,k,\sigma}A^{*}_{kj}\mathcal{E}_{kk}A_{km}c^{\dagger}_{j,\sigma}c_{m,\sigma} \\
- & = \sum_{k,\sigma}\mathcal{E}_{kk}\left( \sum_{j}A_{kj}^{*}c^{\dagger}_{j,\sigma} \right)\left( \sum_{m}A_{km}c_{m,\sigma} \right)
-\end{align}$$
-简写对角元$\mathcal{E}_{kk}=\mathcal{E}_{k}$，令$c_{k,\sigma}=\sum_{m}A_{km}c_{m,\sigma}$。那么：
-$$H_{0}=\sum_{n,\sigma}\mathcal{E}_{n}c^{\dagger}_{n,\sigma}c_{n,\sigma}$$
+H_{0} & =\sum_{n,\sigma}\mathcal{E}_{n}\ket{n,\sigma} \bra{n,\sigma} \\
+ & = \sum_{n,\sigma}\mathcal{E}_{n}\ket{n,\sigma} \bra{0} 0\rangle\bra{n,\sigma}  \\
+ & = \sum_{n,\sigma}\mathcal{E}_{n}c^{\dagger}_{n,\sigma}c_{n,\sigma}
+\end{align} $$
+新的生成湮灭算符定义为$c_{n,\sigma}=\ket{0}\bra{n,\sigma},\ c^{\dagger}_{n,\sigma}=\ket{n,\sigma}\bra{0}$。
 
