@@ -2589,13 +2589,11 @@
               "title": "Search"
             }
           }
-        ],
-        "currentTab": 3
+        ]
       }
     ],
     "direction": "horizontal",
-    "width": 200,
-    "collapsed": true
+    "width": 200
   },
   "right": {
     "id": "9003d078f8dbc4ed",
@@ -2701,9 +2699,9 @@
   },
   "active": "7f8cf99561f18cc6",
   "lastOpenFiles": [
-    "Notes/二次量子化.md",
-    "Notes/Hubbard模型.md",
     "Notes/Hubbard model.md",
+    "Notes/Hubbard模型.md",
+    "Notes/二次量子化.md",
     "Notes/线性波.md",
     "Notes/线性响应.md",
     "Notes/系综（未完成）.md",
