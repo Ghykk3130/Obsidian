@@ -24,7 +24,14 @@ $$\rho_{xy}=\rho^{\text{O}}_{xy}+\rho^{\text{A}}_{xy}=R_{0}H+R_{1}M$$
 $$\sigma_{xy}^{\text{AHE}}=\sigma_{xy}^{\text{int}}+\sigma_{xy}^{\text{sk}}+\sigma_{xy}^{sj}$$
 分别为intrinsic, skew scattering和side jump。
 
-可以证明，$\sigma_{xy}^{\text{sj}},\ \sigma_{xy}^{\text{int}}\propto \tau^{0}$，$\sigma_{xy}^{\text{sk}}\propto \tau \propto \frac{1}{\rho_{ x x}}$。且$\sigma_{xy}^{\text{int}},\ \sigma^{\text{sk}}_{xy},\ \sigma^{\text{sj}}_{xy}\propto M$。于是一般来说，我们有：
+可以证明，$\sigma_{xy}^{\text{sj}},\ \sigma_{xy}^{\text{int}}\propto \tau^{0}$，$\sigma_{xy}^{\text{sk}}\propto \tau \propto \frac{1}{\rho_{ x x}}$。且$\sigma_{xy}^{\text{int}},\ \sigma^{\text{sk}}_{xy},\ \sigma^{\text{sj}}_{xy}\propto M$。
+
+>[!Quote]
+>实际上，$\sigma^{\text{int}}_{xy}\propto M$是不一定的。因为$\sigma_{xy}^{\text{int}}$只取决于能带结构。如果我们将$\sigma^{\text{int}}_{xy}$写成$M$的函数，由于Onsager关系必须得到$\sigma^{\text{int}}_{xy}(-M)=-\sigma_{xy}^{\text{int}}(M)$。那么实际上：
+>$$\sigma^{\text{int}}_{xy}=aM+bM^{3}+\dots$$
+>我们只能在$M$很小的时候近似得到线性。
+
+于是一般来说，我们有：
 $$R_{1}=a\rho_{x x}+b\rho_{x x}^{2}$$
 其中$a$由skew scattering贡献，$b$由intrinsic和side jump贡献。
 # 2. Skew scattering 机制
