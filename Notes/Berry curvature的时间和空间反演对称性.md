@@ -1,6 +1,12 @@
 
 # 1. Bloch态的时间和空间反演
 
+若一个系统的各个可观测量满足如下关系：
+$$\pi ^{\dagger} \mathbf{p}\pi=-\mathbf{p},\ \pi ^{\dagger}\mathbf{J}\pi=\mathbf{J},\ \pi ^{\dagger}\mathbf{x}\pi=-\mathbf{x},\dots$$
+则我们称系统具有空间反演对称性。这表示，系统在$\{ \ket{\psi} \}$和$\{ \pi \ket{\psi} \}$下的各个可观测量平均值符合一个具有空间反演对称性的经典系统的相应规律。类似地，若可观测量满足如下关系：
+$$\Theta \mathbf{p} \Theta ^{-1}=-\mathbf{p},\ \Theta \mathbf{J}\Theta ^{-1}=-\mathbf{J},\ \Theta \mathbf{x}\Theta ^{-1}=\mathbf{x},\dots$$
+则称系统具有时间反演对称性。
+
 对于一个Bloch态$e^{i\mathbf{k}\cdot \mathbf{x}}\ket{u_{\mathbf{k}}}$，若系统具有时间反演对称性，我们想知道$\Theta e^{i\mathbf{k}\cdot \mathbf{x}}\ket{u_{\mathbf{k}}}$是否还具有相同的波矢$\mathbf{k}$。为此，我们先证明如下命题：
 
 >[!Success] Proposition 1
