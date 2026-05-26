@@ -7,6 +7,11 @@ $$\pi ^{\dagger} \mathbf{p}\pi=-\mathbf{p},\ \pi ^{\dagger}\mathbf{J}\pi=\mathbf
 $$\Theta \mathbf{p} \Theta ^{-1}=-\mathbf{p},\ \Theta \mathbf{J}\Theta ^{-1}=-\mathbf{J},\ \Theta \mathbf{x}\Theta ^{-1}=\mathbf{x},\dots$$
 则称系统具有时间反演对称性。
 
+>[!Quote] 判断一个晶体对称性的方式
+>上面说的仅仅是定义。在实际的晶体中，我们将晶体看作是$\Lambda$，以及附着在$\Lambda$上每个点的物理量，例如$\mathbf{M}$。实际上构成$\Lambda$本身的坐标也是物理量中的一种。所以晶体可以抽象地看待成$\{ (A_{i},B_{i},\dots) \}$。其中，$i$为晶格点的指标，$A,B,\dots$为物理量。例如$\{ (\mathbf{R}_{i},\mathbf{M}_{i},\dots) \}$。
+>
+>我们朴素地将晶体施加经典的变换，例如考虑$\{ \pi(A_{i},B_{i},\dots) \}$。我们只需要看这个（无序）集合和原来集合是否相等即可。若相等，即有空间反演对称性。
+
 对于一个Bloch态$e^{i\mathbf{k}\cdot \mathbf{x}}\ket{u_{\mathbf{k}}}$，若系统具有时间反演对称性，我们想知道$\Theta e^{i\mathbf{k}\cdot \mathbf{x}}\ket{u_{\mathbf{k}}}$是否还具有相同的波矢$\mathbf{k}$。为此，我们先证明如下命题：
 
 >[!Success] Proposition 1
