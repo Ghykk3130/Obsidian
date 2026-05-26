@@ -53,11 +53,20 @@ H_{0} & =\sum_{n,\sigma}\mathcal{E}_{n}\ket{n,\sigma} \bra{n,\sigma} \\
 新的生成湮灭算符定义为$c_{n,\sigma}=\ket{0}\bra{n,\sigma},\ c^{\dagger}_{n,\sigma}=\ket{n,\sigma}\bra{0}$。
 ## Ex: STM
 
-考虑两个费米气体，中间用一个隧穿结连接。隧穿结可以想象为两个费米气体盒子公共的一个壁，这个壁上有无限势能，构成delta函数。左侧的自由费米子态有$\{ \ket{L,k} \}$，右侧的自由费米子态有$\{ \ket{R,p} \}$。这些态构成完整的基。那么，最一般的二次量子化hamiltonian为：
+考虑两个费米气体，中间用一个隧穿结连接。隧穿结可以想象为两个费米气体盒子公共的一个壁$a\delta(x)$，这个壁上有无限势能，构成delta函数。左侧的自由费米子态有$\{ \ket{L,k} \}$，右侧的自由费米子态有$\{ \ket{R,p} \}$。这些态构成完整的基。那么，最一般的二次量子化hamiltonian为：
 $$\begin{align}
 H & = \sum_{k,p}H_{Lk,Lp}c^{\dagger}_{Lk}c_{Lp}+\sum_{k,p}H_{Rk,Rp}c^{\dagger}_{Rk}c_{Rp}+\sum_{k,p}H_{Lk,Rp}c^{\dagger}_{Lk}c_{Rp}+\sum_{k,p}H_{Rk,Lp}c^{\dagger}_{Rk}c_{Lp}
-\end{align}$$因为在左右两侧隧穿结的势都是零，于是：
+\end{align}$$因为在左右两侧隧穿结的势都是零，hamiltonian就是可加动能，于是：
 $$H_{Lk,Lp}= \mathcal{E}_{p}\bra{Lk} Lp\rangle=\mathcal{E}_{p}\delta_{k,p}$$
+容易证明：
+$$\begin{align}
+H_{Lk,Rp} & = \bra{Lk}  \frac{p^{2}}{2m}\ket{Rp} + \bra{Lk} a\delta(x)\ket{Rp}  \\
+ & = 0+ \bra{Lk} a\delta(x)\ket{Rp} \\
+ & = \int d^{d}x \frac{1}{V}e^{-ikx}e^{ipx}a\delta(x)=0
+\end{align}$$
+这是因为$\frac{1}{\sqrt{ V }}e^{-ikx}$被完全限制在左侧，$\frac{1}{\sqrt{ V }}e^{ipx}$被完全限制在右侧。
+
+
 故hamiltonian写为：
 $$\begin{align}
 H & = \sum_{k}\mathcal{E}_{k}c^{\dagger}_{Lk}c_{Lk}+\sum_{p}\mathcal{E}_{p}c^{\dagger}_{Rp}c_{Rp}+\sum_{k,p}T_{Lk,Rp}(c^{\dagger}_{Lk}c_{Rp}+c^{\dagger}_{Rp}c_{Lk})
