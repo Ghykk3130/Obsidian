@@ -51,4 +51,7 @@ H_{0} & =\sum_{n,\sigma}\mathcal{E}_{n}\ket{n,\sigma} \bra{n,\sigma} \\
  & = \sum_{n,\sigma}\mathcal{E}_{n}c^{\dagger}_{n,\sigma}c_{n,\sigma}
 \end{align} $$
 新的生成湮灭算符定义为$c_{n,\sigma}=\ket{0}\bra{n,\sigma},\ c^{\dagger}_{n,\sigma}=\ket{n,\sigma}\bra{0}$。
+## Ex: STM
+
+考虑两个费米气体，中间用一个隧穿结连接。左侧的态有$\{ \ket{L,k} \}$，右侧的态有$\{ \ket{R,p} \}$。这些态构成完整的基。
 
