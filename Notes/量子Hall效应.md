@@ -37,7 +37,7 @@ $$\boxed{\Delta \phi= \frac{e}{\hbar}\oint d\mathbf{r}\cdot \mathbf{A} }$$
 
 讨论二维QHE主要有三种几何：
 ![[Pasted image 20260527125955.png|center|400]]
-平板几何y方向是periodic boundary condition，x方向是open boundary condition，磁场均匀施加在z方向。圆盘几何是磁场仅在中间孔洞中。圆柱几何其实是圆柱面，磁场从中间穿过，y方向其实是$\hat{\boldsymbol{\phi}}$方向，z方向是$\hat{\mathbf{r}}$方向。
+平板几何y方向是periodic boundary condition，x方向是open boundary condition，磁场均匀施加在z方向。圆盘几何是磁场垂直于圆盘。圆柱几何其实是圆柱面，磁场沿径向，y方向其实是$-\hat{\boldsymbol{\phi}}$方向，z方向是$\hat{\mathbf{r}}$方向。
 
 我们宣称这三种几何是homeomorphic的。它们本质上都是$[0,1]\times S^{1}$。现在它们的几何对应上了。我们要求它们的场也要有某种对应。我们先来定义什么是拉回：
 
@@ -57,13 +57,35 @@ f_{*}v & = v^{i} \frac{\partial y^{j}}{\partial x^{i}} \frac{\partial }{\partial
 
 我们宣称，矢势$\mathbf{A}$是余切向量场。这是因为$\mathbf{A}$可以作线积分$\int_{C}\mathbf{A}=\int_{C}A_{i}dx^{i}$。于是$\mathbf{B}=d\mathbf{A}$是1-form。那么在上述QHE的几何里面，在几何构型同胚的情况下，我们还要求矢势可以pushforward。下面举例：
 
-考虑平板几何$x\in[0,L_{x}],\\ y\in[0,L_{y}]$，y方向有周期性边界条件，$\mathbf{B}=B  \hat{\mathbf{z}}$。显然$\mathbf{A}=A  \hat{\mathbf{y}}=A  dy$。我们希望圆盘几何和平板几何同胚。构造同胚：
-$$\phi= \frac{y}{L_{y}}2\pi,\ \frac{r-R_{\text{in}}}{R_{\text{out}}-R_{\text{in}}}= \frac{x}{L_{x}}$$
+考虑平板几何$x\in[0,L_{x}],\\ y\in[0,L_{y}]$，y方向有周期性边界条件，$\mathbf{B}=B  \hat{\mathbf{z}}$。显然$\mathbf{A}=A x \hat{\mathbf{y}}=A x dy$。我们希望圆盘几何和平板几何同胚。令$r$为到内环的距离，$R$为内外环的距离。构造同胚：
+$$\phi= \frac{y}{L_{y}}2\pi,\  \frac{r}{R} = \frac{x}{L_{x}}$$
 这样两个构型的几何就是同胚的。接下来将平板几何的矢势pushforward到圆盘几何。则有：
 $$\begin{align}
-\mathbf{A}   =Ady & = A \left( \frac{\partial y}{\partial \phi}d\phi+ \frac{\partial y}{\partial r}dr \right) \\
- & = A \frac{L_{y}}{2\pi}d\phi= A \frac{L_{y}}{2\pi} \hat{\boldsymbol{\phi}}
+\mathbf{A}   =Axdy & = A  \frac{L_{x}r}{R} \left( \frac{\partial y}{\partial \phi}d\phi+ \frac{\partial y}{\partial r}dr \right) \\
+ & = A \frac{L_{x}L_{y}r}{2\pi R}d\phi
 \end{align}$$
+
+>[!Quote] 如何从度规得知切矢量长度，以及切矢量和自然基矢的关系？
+>例如极坐标度规$g=dr\otimes dr+r^{2}d\phi \otimes d\phi$。我们可以切矢量长度：
+>$$\begin{align}
+ & \langle \partial_{r},\partial_{r}\rangle= g_{rr} \partial_{r}\otimes \partial_{r}= dr(\partial_{r})dr(\partial_{r})=1\implies|\partial_{r} |=1 \\
+ & \langle \partial_{\phi},\partial_{\phi}\rangle= g_{\phi \phi} \partial_{\phi}\otimes \partial_{\phi}=r^{2}d\phi(\partial_{\phi})d\phi(\partial_{\phi})=r^{2}\implies  |\partial_{\phi}|=r
+\end{align}$$
+>我们又知道：
+>$$\begin{align}
+dl & = dx  \hat{\mathbf{x}}+dy \hat{\mathbf{y}} \\
+ & = dx \partial_{x}+dy \partial_{y} \\
+ & = \left(  \frac{\partial x}{\partial r}dr+ \frac{\partial x}{\partial \phi}d\phi \right)\left(  \frac{\partial r}{\partial x}\partial_{r}+ \frac{\partial \phi}{\partial x}\partial_{\phi} \right)+ \left(  \frac{\partial y}{\partial r}dr+ \frac{\partial y}{\partial \phi}d\phi \right)\left(  \frac{\partial r}{\partial y}\partial_{r}+ \frac{\partial \phi}{\partial_{y}} \partial_{\phi}\right) \\
+ & = dr \partial_{r}+d\phi \partial_{\phi}
+\end{align}$$
+>另一方面$dl= dr  \hat{\mathbf{r}}+r d\phi \hat{\boldsymbol{\phi}}$。所以$\partial_{\phi}=r \hat{\boldsymbol{\phi}}$。又因为$d\phi(\partial_{\phi})=1$，所以$d\phi= \frac{1}{r} \hat{\boldsymbol{\phi}}$。
+
+我们知道测度为$dr^{2}+(r+R_{\text{in}})^{2}d\phi^{2}$。那么有$d\phi= \frac{1}{r+R_{\text{in}}}  \hat{\boldsymbol{\phi}}$。故$\mathbf{A}= A \frac{L_{x}L_{y}}{2\pi R} \frac{r}{r+R_{\text{in}}}  \hat{\boldsymbol{\phi}}$。
+
+
+
+
+
 
 
 
