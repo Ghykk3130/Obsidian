@@ -4,7 +4,7 @@
 $$\vec{E}=-\nabla \phi- \frac{\partial}{\partial t}\vec{A},\ \vec{B}=\nabla \times \vec{A}$$
 若作：
 $$\vec{A} \leadsto \vec{A}+\nabla \Lambda$$
-则$\vec{B}$不变。相应地，若要维持$\vec{E}$不变，电势可作变换：
+则$\vec{B}$不变。相应地，若要维持$\vec{E}$不变，电  势可作变换：
 $$\phi\leadsto \phi- \frac{\partial \Lambda}{\partial t}$$
 所以定义规范变换：
 
