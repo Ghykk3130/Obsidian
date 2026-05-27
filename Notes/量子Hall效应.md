@@ -47,7 +47,23 @@ $$\boxed{\Delta \phi= \frac{e}{\hbar}\oint d\mathbf{r}\cdot \mathbf{A} }$$
 >If $h(x),\ x\in M$ is a function over $M$, then the pushforward of $h$ is a function over $N$ defined as:
 >$$f_{*}h(y)= (f^{-1})^{*} h(y)= h(f^{-1}(y)),\ y\in N$$
 
-我们宣称，矢势$\mathbf{A}$是余切向量场。$\mathbf{B}=d\mathbf{A}$是1-form。
+同样的，pushforward和pullback可以对向量场或者切向量场定义。其中只需要对向量场或者切切向量场的基进行变换。
+## Ex:
+
+考虑$f:M\rightarrow N$。考虑$M$上的向量场$v=v^{i} \frac{\partial}{\partial x^{i}}$。那么这个向量场pushforward到$N$就是：
+$$\begin{align}
+f_{*}v & = v^{i} \frac{\partial y^{j}}{\partial x^{i}} \frac{\partial }{\partial y^{j}}= w^{j} \frac{\partial}{\partial y^{j}},\ w^{j}= v^{i} \frac{\partial y^{j}}{\partial x^{i}}
+\end{align}$$
+
+我们宣称，矢势$\mathbf{A}$是余切向量场。这是因为$\mathbf{A}$可以作线积分$\int_{C}\mathbf{A}=\int_{C}A_{i}dx^{i}$。于是$\mathbf{B}=d\mathbf{A}$是1-form。那么在上述QHE的几何里面，在几何构型同胚的情况下，我们还要求矢势可以pushforward。下面举例：
+
+考虑平板几何$x\in[0,L_{x}],\\ y\in[0,L_{y}]$，y方向有周期性边界条件，$\mathbf{B}=B  \hat{\mathbf{z}}$。显然$\mathbf{A}=A  \hat{\mathbf{y}}=A  dy$。我们希望圆盘几何和平板几何同胚。构造同胚：
+$$\phi= \frac{y}{L_{y}}2\pi,\ \frac{r-R_{\text{in}}}{R_{\text{out}}-R_{\text{in}}}= \frac{x}{L_{x}}$$
+这样两个构型的几何就是同胚的。接下来将平板几何的矢势pushforward到圆盘几何。则有：
+$$\begin{align}
+\mathbf{A}   =Ady & = A \left( \frac{\partial y}{\partial \phi}d\phi+ \frac{\partial y}{\partial r}dr \right) \\
+ & = A \frac{L_{y}}{2\pi}d\phi= A \frac{L_{y}}{2\pi} \hat{\boldsymbol{\phi}}
+\end{align}$$
 
 
 
