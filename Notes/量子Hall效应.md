@@ -33,11 +33,17 @@ $$\begin{align}
 $$- \frac{|e|}{\hbar}(\chi(b)-\chi(a))=- \frac{|e|}{\hbar}\int_{a}^{b}d\mathbf{r}\cdot \mathbf{A}$$
 若波包绕了周期为$T$的一圈，那么显然$\bra{\mathbf{r}}\psi(T)\rangle= \bra{\mathbf{r}}\psi(0)\rangle$。所以pick up的所有相位都为Berry phase，为：
 $$\boxed{\Delta \phi= \frac{e}{\hbar}\oint d\mathbf{r}\cdot \mathbf{A} }$$
-# 2. Laughlin几何
+# 2. 拓扑基础
 
 讨论二维QHE主要有三种几何：
 ![[Pasted image 20260527125955.png|center|400]]
 平板几何y方向是periodic boundary condition，x方向是open boundary condition，磁场均匀施加在z方向。圆盘几何是磁场仅在中间孔洞中。圆柱几何其实是圆柱面，磁场从中间穿过，y方向其实是$\hat{\boldsymbol{\phi}}$方向，z方向是$\hat{\mathbf{r}}$方向。
 
-我们宣称这三种几何是homeomorphic的。它们本质上都是$[0,1]\times S^{1}$。
+我们宣称这三种几何是homeomorphic的。它们本质上都是$[0,1]\times S^{1}$。我们先来定义什么是拉回：
+
+>[!Note] Definition 2.1
+>Given two manifolds $M,N$, and a homeomorphism $f:M\rightarrow N$. Let $g(y),\ y\in N$ be a function over $N$. Then then pullback of $g$ is a function over $M$ defined as:
+>$$f^{*}g(x)=g(f(x)),\ x\in M$$
+
+
 
