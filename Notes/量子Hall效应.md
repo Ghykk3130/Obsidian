@@ -81,11 +81,22 @@ dl & = dx  \hat{\mathbf{x}}+dy \hat{\mathbf{y}} \\
 >另一方面$dl= dr  \hat{\mathbf{r}}+r d\phi \hat{\boldsymbol{\phi}}$。所以$\partial_{\phi}=r \hat{\boldsymbol{\phi}}$。又因为$d\phi(\partial_{\phi})=1$，所以$d\phi= \frac{1}{r} \hat{\boldsymbol{\phi}}$。
 
 我们知道测度为$dr^{2}+(r+R_{\text{in}})^{2}d\phi^{2}$。那么有$d\phi= \frac{1}{r+R_{\text{in}}}  \hat{\boldsymbol{\phi}}$。故$\mathbf{A}= A \frac{L_{x}L_{y}}{2\pi R} \frac{r}{r+R_{\text{in}}}  \hat{\boldsymbol{\phi}}$。
+# 3. Landau量子化
 
+考虑二维电子气。其中磁场$\mathbf{B}$平行于z方向。选取Landau规范则有$\mathbf{A}=(0,Bx,0)$。那么机械动量为$\mathbf{p}-e\mathbf{A}=(p_{x},p_{y}-eBx)$。其中$e<0$。于是hamiltonian为：
+$$\begin{align}
+H & = \frac{1}{2m}|\mathbf{p}-e\mathbf{A} |^{2} \\
+ & = - \frac{\hbar^{2}}{2m}\left( \partial_{x}^{2}+\left( \partial_{y}- \frac{ieBx}{\hbar} \right)^{2} \right)
+\end{align}$$
+注意到$[p_{y},H]=0$。那么$p_{y}$的本征子空间为$H$的不变子空间。注意到$p_{y}$的y方向动量为$\hbar k$的本征态为$e^{iky}f_{n}(x)$。那么固定$k$，这些函数张成的空间是$H$的不变子空间。我们选取$f_{n}$来使得$H$对角化。$n$为$H$本征空间指标，即能级的指标。那么：
+$$\begin{align}
+ & - \frac{\hbar^{2}}{2m}\left( \partial_{x}^{2}+\left( \partial_{y}- \frac{ieBx}{\hbar} \right)^{2} \right)e^{iky}f_{n}=E_{n}e^{iky}f_{n} \\
+\implies & - \frac{\hbar^{2}}{2m}e^{-iky}\left( \partial_{x}^{2}+ \left( \partial_{y}- \frac{ieBx}{\hbar} \right)^{2} \right)e^{iky}f_{n}=E_{n}f_{n} \\
+\implies & - \frac{\hbar^{2}}{2m}\left( \partial_{x}^{2}+\left( \partial_{y}+ik- \frac{ieBx}{\hbar} \right)^{2} \right) f_{n}(x)=E_{n}f_{n}(x) \\
+\implies & - \frac{\hbar^{2}}{2m}\left( \partial_{x}^{2}+\left( ik- \frac{ieBx}{\hbar} \right)^{2} \right)f_{n}=E_{n}f_{n} \\
+\implies & \left[  \frac{p_{x}^{2}}{2m}+ \frac{1}{2}m\frac{e^{2}B^{2}}{m^{2}}\left( x- \frac{k\hbar}{eB} \right)^{2} \right]f_{n}=E_{n}f_{n}
+\end{align}$$
+所以这是一个频率为$\omega_{c}= \frac{|e|B}{m}$，中心在$\frac{k\hbar}{eB}=- \frac{k\hbar}{|e|B}$的一维谐振子。$E_{n}= \left( n+ \frac{1}{2} \right)\hbar \omega_{c}$。
 
-
-
-
-
-
+显然，每个Landau level，即固定$n$，其degeneracy全部来自于$k$。我们知道$k= \frac{2\pi n}{L_{y}}$，
 
