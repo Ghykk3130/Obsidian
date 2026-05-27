@@ -39,11 +39,15 @@ $$\boxed{\Delta \phi= \frac{e}{\hbar}\oint d\mathbf{r}\cdot \mathbf{A} }$$
 ![[Pasted image 20260527125955.png|center|400]]
 平板几何y方向是periodic boundary condition，x方向是open boundary condition，磁场均匀施加在z方向。圆盘几何是磁场仅在中间孔洞中。圆柱几何其实是圆柱面，磁场从中间穿过，y方向其实是$\hat{\boldsymbol{\phi}}$方向，z方向是$\hat{\mathbf{r}}$方向。
 
-我们宣称这三种几何是homeomorphic的。它们本质上都是$[0,1]\times S^{1}$。我们先来定义什么是拉回：
+我们宣称这三种几何是homeomorphic的。它们本质上都是$[0,1]\times S^{1}$。现在它们的几何对应上了。我们要求它们的场也要有某种对应。我们先来定义什么是拉回：
 
 >[!Note] Definition 2.1
->Given two manifolds $M,N$, and a homeomorphism $f:M\rightarrow N$. Let $g(y),\ y\in N$ be a function over $N$. Then then pullback of $g$ is a function over $M$ defined as:
+>Given two manifolds $M,N$, and a homeomorphism $f:M\rightarrow N$. Let $g(y),\ y\in N$ be a function over $N$. Then the pullback of $g$ is a function over $M$ defined as:
 >$$f^{*}g(x)=g(f(x)),\ x\in M$$
+>If $h(x),\ x\in M$ is a function over $M$, then the pushforward of $h$ is a function over $N$ defined as:
+>$$f_{*}h(y)= (f^{-1})^{*} h(y)= h(f^{-1}(y)),\ y\in N$$
+
+我们宣称，矢势$\mathbf{A}$是余切向量场。$\mathbf{B}=d\mathbf{A}$是1-form。
 
 
 
