@@ -2592,7 +2592,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "AB",
+                "query": "homeomorphism",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -2607,7 +2607,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 200,
+    "collapsed": true
   },
   "right": {
     "id": "9003d078f8dbc4ed",
@@ -2713,8 +2714,11 @@
   },
   "active": "5eda3f212336eaff",
   "lastOpenFiles": [
-    "Notes/Ideal flow.md",
+    "Notes/微分几何基础概念.md",
     "Notes/量子Hall效应.md",
+    "Pictures/Pasted image 20260527125955.png",
+    "Notes/代数拓扑基本概念.md",
+    "Notes/Ideal flow.md",
     "Notes/AB效应.md",
     "Notes/Berry curvature的时间和空间反演对称性.md",
     "Notes/半经典输运.md",
@@ -2737,8 +2741,6 @@
     "Notes/费米液体.md",
     "Notes/磁振子.md",
     "Notes/光学定理.md",
-    "Notes/凝胶模型.md",
-    "Notes/Friedel震荡.md",
     "Pictures/Pasted image 20260516145407.png",
     "Pictures/Pasted image 20260516145046.png",
     "Pictures/Pasted image 20260429145929.png",
@@ -2750,7 +2752,6 @@
     "Pictures/wavefunction_contour (1).png",
     "Pictures/Pasted image 20260428111717.png",
     "Pictures/Pasted image 20260428111113.png",
-    "Pictures/Pasted image 20260425201513.png",
     "Untitled",
     "Homework/Math 654/Homework 2.html",
     "tldraw",
