@@ -169,23 +169,25 @@ $$\Delta t= \frac{\Phi_{0}}{\partial \Phi_{L} /\partial t}= \frac{\Phi_{0}}{L_{y
 
 # 5. 边缘态
 
-考虑二维QHE的圆柱面几何。在quantum oscillation的平台上固定$\mathbf{B}$。我们发现Landau规范轨道不贡献纵向电流。因为$E_{n}=\left( n+ \frac{1}{2} \right)\hbar \omega_{c}$为定值，那么$\frac{\partial E_{n}}{\hbar \partial \mathbf{k}}=0$。
+考虑二维QHE的圆柱面几何。在quantum oscillation的平台上固定$\mathbf{B}$。我们发现Landau规范轨道不贡献电流。因为$E_{n}=\left( n+ \frac{1}{2} \right)\hbar \omega_{c}$为定值，那么$\frac{\partial E_{n}}{\hbar \partial \mathbf{k}}=0$。
 
-一般来说，样品上存在将电子约束在内的势能$V$。在bulk中，$V$为一常数，可以忽略。但是在样品边缘，由于$V$不再平坦，它会微扰作为本征态的Landau规范轨道。这些微扰后的态称为边缘态。它们的能谱不是$E_{n}=\left( n+ \frac{1}{2} \right)\hbar \omega_{c}$，而是有k dependence。它们能够贡献非零纵向电流。
+一般来说，样品上存在将电子约束在内的势能$V$。在bulk中，$V$为一常数，可以忽略。但是在样品边缘，由于$V$不再平坦，它会微扰作为本征态的Landau规范轨道。这些微扰后的态称为边缘态。它们的能谱不是$E_{n}=\left( n+ \frac{1}{2} \right)\hbar \omega_{c}$，而是有k dependence。它们能够贡献非零电流。
 
 >[!Quote]
 >边缘态如何表现在k-space中呢？边缘态似乎是一个实空间中的概念，和k-space没有关系。但实际上，注意到Landau规范轨道的中心与$k_{y}$是有关的，即$x_{0}= \frac{k_{y}\hbar}{eB}$。所以对于某些$k_{y}$，其Landau规范轨道会接近样品边缘，从而受到$V$的微扰。
 
 >[!Quote] 一个经典图像
->如何理解bulk中的Landau规范轨道无纵向导电，但是边缘的有纵向导电呢？
+>如何理解bulk中的Landau规范轨道无电流，但是边缘有电流呢？
 >
 >![[Pasted image 20260528161749.png|center|300]]
 >在经典极限下，Landau规范轨道退化为磁场中的回旋运动。在bulk中由于邻近的回旋运动抵消，从而无电流。在边缘，回旋运动会回弹着一直往一个方向走，所以有净电流。
 
-现计算边缘态色散关系。令$V(\mathbf{r},n)$为第n个Landau能级的约束势能。若$V(\mathbf{r},n)$相对于Landau规范轨道的波包宽度来说变化是缓慢的，那么$V$就是近似对角的。这带来一阶微扰$\int dx dy e^{-ik_{y}y}f^{*}_{n}(x)V(\mathbf{r},n)e^{ik_{y}y}f_{n}(x)=V(k_{y}, n)$。
-
->[!Warning]
->注意，$f_{n}(x)$实际上有$k_{y}$ dependence。这是因为$f_{n}(x)$是一个中心在$x_{0}= \frac{k_{y}\hbar}{eB}$的一维谐振子波函数。
+现计算边缘态色散关系。令$V(\mathbf{r},n)$为第n个Landau能级的约束势能。若$V(\mathbf{r},n)$相对于Landau规范轨道的波包宽度来说变化是缓慢的，那么$V$就是近似对角的。这带来一阶微扰：
+$$\begin{align}
+\int dx dy e^{-ik_{y}y}f^{*}_{n}(x)V(\mathbf{r},n)e^{ik_{y}y}f_{n}(x) & \approx V(x_{0},n)\int dxdy |e^{ik_{y}y}f_{n}(x) |^{2} \\
+ & =V(x_{0}, n)
+\end{align}$$
+将$V(x_{0},n)$记为$V(k_{y},n)$。
 
 那么修正的能谱为：
 $$E_{n}(k_{y})= \left( n+ \frac{1}{2} \right)\hbar \omega_{c}+ V(k_{y},n)$$
@@ -193,19 +195,23 @@ $$E_{n}(k_{y})= \left( n+ \frac{1}{2} \right)\hbar \omega_{c}+ V(k_{y},n)$$
 $$\left( n+ \frac{1}{2} \right)\hbar \omega_{c}+V(k_{F}^{n},n)=\epsilon_{F}$$
 那么在$k_{{y}}^{n}$附近展开有：
 $$E_{n}(k_{y})\approx \epsilon_{F}+ \frac{\partial V}{\partial k_{y}}(k_{y}-k_{F}^{n})=\epsilon_{F}+\hbar v_{F}^{n}(k_{y}-k_{F}^{n})$$
-其中，$v^{n}_{F}= \frac{\partial V}{\hbar\partial k_{y}}= \frac{\partial E_{n}(k_{y})}{\hbar \partial k_{y}}$为边缘态的费米速度。
-
-那么第n个Landau能级的一个边缘态的纵向电流为：
+其中，$v^{n}_{F}= \frac{\partial V}{\hbar\partial k_{y}}= \frac{\partial E_{n}(k_{y})}{\hbar \partial k_{y}}$为边缘态的费米速度。显然，这个费米速度是平行于$\mathbf{\hat{y}}$的，即沿着上下边缘跑的。注意到：
+$$ \frac{\partial V}{\hbar \partial k_{y}}= \frac{\partial V}{\hbar\partial x_{0}} \frac{\partial x_{0}}{\partial k_{y}}$$
+在上下边缘，$\frac{\partial V}{\partial x_{0}}$符号相反，所以上下边缘的边缘态的速度相反。此时净电流为零。若一个上边缘电压为$V$，下边缘电压为零，则上边缘电流为：
 $$\begin{align}
-I_{n} & = e \int \frac{dk_{y}}{2\pi} v_{F}^{n}f_{F}(E_{n}(k_{y})- \epsilon ) \\
- & = e \int \frac{dk_{y}}{2\pi} \frac{\partial E_{n}}{\hbar \partial k_{y}}f_{F}(E_{n}-\epsilon_{F}) \\
- & = \frac{e}{h} \int dE_{n}f_{F}(E_{n}-\epsilon_{F}) \\
- & = \frac{e}{h} \epsilon_{F}
+I^{\text{up}}_{n} & =  e \int \frac{dk_{y}}{2\pi} v_{F}^{n}f_{F}(E_{n}(k_{y})+eV) \\
+ & \approx e \int \frac{dk_{y}}{2\pi}v_{F}^{n}\left( f_{F}(E_{n})+ \frac{\partial f_{F}}{\partial E_{n}}eV \right) \\
+ & = e \int \frac{dk_{y}}{2\pi}v_{F}^{n}(f_{F}(E_{n})+\delta(E_{n})eV)
 \end{align}$$
-
-
-
-
-
-
-
+下边缘电流相反：
+$$\begin{align}
+I^{\text{dn}}_{n} & = -e \int \frac{dk_{y}}{2\pi}v_{F}^{n}f_{F}(E_{n}(k_{y}))
+\end{align}$$
+那么净电流为：
+$$\begin{align}
+I_{n} & = I^{\text{up}}_{n}+I^{\text{dn}}_{n}  \\
+ & = e^{2}V \int \frac{dk_{y}}{2\pi}v^{n}_{F}\delta(E_{n}) \\
+ & = e^{2}V\int \frac{dk_{y}}{2\pi}v_{F}^{n}\delta(\epsilon_{F}+\hbar v^{n}_{F}(k_{y}-k^{n}_{F})) \\
+ & =  \frac{e^{2}V}{h}
+\end{align}$$
+于是总Hall电流为$I=\sum_{n} \frac{e^{2}}{h}V=n \frac{e^{2}}{h}V$。得到Hall conductivity $n \frac{e^{2}}{h}$。
