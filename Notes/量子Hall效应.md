@@ -33,6 +33,7 @@ $$\begin{align}
 $$- \frac{|e|}{\hbar}(\chi(b)-\chi(a))=- \frac{|e|}{\hbar}\int_{a}^{b}d\mathbf{r}\cdot \mathbf{A}$$
 若波包绕了周期为$T$的一圈，那么显然$\bra{\mathbf{r}}\psi(T)\rangle= \bra{\mathbf{r}}\psi(0)\rangle$。所以pick up的所有相位都为Berry phase，为：
 $$\boxed{\Delta \phi= \frac{e}{\hbar}\oint d\mathbf{r}\cdot \mathbf{A} }$$
+为了使得饶了一圈后的波函数和一圈之前的波函数还是一样的，必须要求$\Delta \phi=2\pi n$。
 # 2. 拓扑基础
 
 讨论二维QHE主要有三种几何：
@@ -82,6 +83,7 @@ dl & = dx  \hat{\mathbf{x}}+dy \hat{\mathbf{y}} \\
 
 我们知道测度为$dr^{2}+(r+R_{\text{in}})^{2}d\phi^{2}$。那么有$d\phi= \frac{1}{r+R_{\text{in}}}  \hat{\boldsymbol{\phi}}$。故$\mathbf{A}= A \frac{L_{x}L_{y}}{2\pi R} \frac{r}{r+R_{\text{in}}}  \hat{\boldsymbol{\phi}}$。
 # 3. Landau量子化
+## 二维情形
 
 考虑二维电子气。其中磁场$\mathbf{B}$平行于z方向。选取Landau规范则有$\mathbf{A}=(0,Bx,0)$。那么机械动量为$\mathbf{p}-e\mathbf{A}=(p_{x},p_{y}-eBx)$。其中$e<0$。于是hamiltonian为：
 $$\begin{align}
@@ -96,12 +98,39 @@ $$\begin{align}
 \implies & - \frac{\hbar^{2}}{2m}\left( \partial_{x}^{2}+\left( ik- \frac{ieBx}{\hbar} \right)^{2} \right)f_{n}=E_{n}f_{n} \\
 \implies & \left[  \frac{p_{x}^{2}}{2m}+ \frac{1}{2}m\frac{e^{2}B^{2}}{m^{2}}\left( x- \frac{k\hbar}{eB} \right)^{2} \right]f_{n}=E_{n}f_{n}
 \end{align}$$
-所以这是一个频率为$\omega_{c}= \frac{|e|B}{m}$，中心在$\frac{k\hbar}{eB}=- \frac{k\hbar}{|e|B}$的一维谐振子。$E_{n}= \left( n+ \frac{1}{2} \right)\hbar \omega_{c}$。定义$l^{2}= \frac{\hbar}{|e|B}$为系统的length scale。
+所以这是一个频率为$\omega_{c}= \frac{|e|B}{m}$，中心在$\frac{k\hbar}{eB}=- \frac{k\hbar}{|e|B}$的一维谐振子。$E_{n}= \left( n+ \frac{1}{2} \right)\hbar \omega_{c}$。定义$l^{2}= \frac{\hbar}{|e|B}$为磁长度。
+
+>[!Quote] 磁长度的物理意义
+>我们知道对于谐振子$\frac{p^{2}}{2m}+ \frac{1}{2}m\omega^{2}$，基态波函数为宽度为$\sqrt{  \frac{\hbar }{m\omega} }$。所以这里磁长度$l=\sqrt{ \frac{\hbar}{m\omega_{c}} }$也就是这个等效谐振子的波函数宽度的length scale。
+>
+>在$lp\gg \hbar$时，粒子运动接近经典，为磁场中的回旋运动。
 
 显然，每个Landau level，即固定$n$，其degeneracy全部来自于$k$。我们知道$k= \frac{2\pi n}{L_{y}}$，并且显然需要限制$0\leq \frac{k\hbar}{|e|B}=kl^{2}\leq L_{x}$。所以能取得$k$的数量为：
-$$N= \frac{L_{x}L_{y}}{2\pi l^{2}}= \frac{L_{x}L_{y}|e|B}{h}$$
-这就是每个Landau能级的degeneracy。只与外场和sample geometry有关。Landau能级定义出来的等能量面就是Landau环。
+$$\boxed{N= \frac{L_{x}L_{y}}{2\pi l^{2}}= \frac{L_{x}L_{y}|e|B}{h}}$$
+这就是每个Landau能级的degeneracy。只与外场和sample geometry有关。Landau能级定义出来的等能量面就是Landau环，即：
+$$\frac{\hbar^{2}}{2m}(k_{x}^{2}+k_{y}^{2})=\left( n+ \frac{1}{2} \right)\hbar \omega_{c}$$
+可以看出，每个Landau环不是紧贴在一起的。它们在k-space中每个都间隔有限距离，是离散的。Landau环面积$\propto B$。
 
 因为费米面本身也是等能量面，所以Landau环扩张到费米面时必定和费米面重合。因此费米海中的Landau环个数必定是整数。如果Landau level必须要填满，那么令填满的Landau能级数量为$\nu$。于是Hall conductivity就是：
 $$\sigma_{xy}= \frac{ne}{B}= \frac{1}{L_{x}L_{y}}N\nu \frac{e}{B}=-\nu \frac{e^{2}}{h}$$
+## 三维情形
+
+考虑三维电子气。令磁场平行于z方向。类似地，我们有：
+$$H= - \frac{\hbar^{2}}{2m}\left( \partial_{x}^{2}+\partial_{z}^{2}+ \left( \partial_{y}- \frac{ieBx}{\hbar} \right)^{2} \right)$$
+同样地，由于$[p_{y},H]=0,\ [p_{z},H]=0$，我们取ansatz $e^{ik_{z}z}e^{ik_{y}y}f_{n}(x)$。于是：
+$$\begin{align}
+ & - \frac{\hbar^{2}}{2m}\left( \partial_{x}^{2}+\partial_{z}^{2}+ \left( \partial_{y}- \frac{ieBx}{\hbar} \right)^{2} \right)e^{ik_{z}z}e^{ik_{y}y}f_{n}(x)=E_{}e^{ik_{z}z}e^{ik_{y}y}f_{n}(x) \\
+  \implies & - \frac{\hbar^{2}}{2m}\left( \partial_{x}^{2}-k_{z}^{2}+\left( \partial_{y}+ik_{y}- \frac{ieBx}{\hbar} \right)^{2} \right)f_{n}(x)=E_{}f_{n}(x) \\
+\implies & - \frac{\hbar^{2}}{2m}\left( \partial_{x}^{2}-k_{z}^{2}-\left( k_{y}- \frac{eBx}{\hbar } \right)^{2} \right)f_{n}=E_{}f_{n} \\
+\implies & \left[  \frac{p_{x}^{2}}{2m}+ \frac{1}{2m}(\hbar k_{y}-eBx)^{2}+ \frac{\hbar^{2}k_{z}^{2}}{2m} \right]f_{n}=Ef_{n} 
+\end{align}$$
+显然，这是一个中心在$x=\frac{\hbar k_{y}}{eB}$的谐振子。能量为$E_{n,k_{z}}=\left( n+ \frac{1}{2} \right)\hbar \omega_{c}+ \frac{\hbar^{2}k_{z}^{2}}{2m}$。固定$k_{z},n$，简并度显然还是$N= \frac{L_{x}L_{y}|e|B}{h}$。
+
+电子能带给出的能谱为$\frac{\hbar^{2}k^{2}}{2m}$。联立得：
+$$\frac{\hbar^{2}}{2m}(k_{x}^{2}+k_{y}^{2})= \left( n+ \frac{1}{2} \right)\hbar \omega_{c}$$
+所以一个Landau level，即固定$k_{z},n$，就是k-space中垂直于z方向的一个Landau环。
+
+
+
+
 
