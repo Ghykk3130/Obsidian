@@ -195,6 +195,14 @@ $$\left( n+ \frac{1}{2} \right)\hbar \omega_{c}+V(k_{F}^{n},n)=\epsilon_{F}$$
 $$E_{n}(k_{y})\approx \epsilon_{F}+ \frac{\partial V}{\partial k_{y}}(k_{y}-k_{F}^{n})=\epsilon_{F}+\hbar v_{F}^{n}(k_{y}-k_{F}^{n})$$
 其中，$v^{n}_{F}= \frac{\partial V}{\hbar\partial k_{y}}= \frac{\partial E_{n}(k_{y})}{\hbar \partial k_{y}}$为边缘态的费米速度。
 
+那么第n个Landau能级的一个边缘态的纵向电流为：
+$$\begin{align}
+I_{n} & = e \int \frac{dk_{y}}{2\pi} v_{F}^{n}f_{F}(E_{n}(k_{y})- \epsilon ) \\
+ & = e \int \frac{dk_{y}}{2\pi} \frac{\partial E_{n}}{\hbar \partial k_{y}}f_{F}(E_{n}-\epsilon_{F}) \\
+ & = \frac{e}{h} \int dE_{n}f_{F}(E_{n}-\epsilon_{F}) \\
+ & = \frac{e}{h} \epsilon_{F}
+\end{align}$$
+
 
 
 
