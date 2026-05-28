@@ -102,12 +102,14 @@ $$\begin{align}
 \implies & - \frac{\hbar^{2}}{2m}\left( \partial_{x}^{2}+\left( ik- \frac{ieBx}{\hbar} \right)^{2} \right)f_{n}=E_{n}f_{n} \\
 \implies & \left[  \frac{p_{x}^{2}}{2m}+ \frac{1}{2}m\frac{e^{2}B^{2}}{m^{2}}\left( x- \frac{k\hbar}{eB} \right)^{2} \right]f_{n}=E_{n}f_{n}
 \end{align}$$
-所以这是一个频率为$\omega_{c}= \frac{|e|B}{m}$，中心在$\frac{k\hbar}{eB}=- \frac{k\hbar}{|e|B}$的一维谐振子。$E_{n}= \left( n+ \frac{1}{2} \right)\hbar \omega_{c}$。定义$l^{2}= \frac{\hbar}{|e|B}$为磁长度。
+所以这是一个频率为$\omega_{c}= \frac{|e|B}{m}$，中心在$x_{0}=\frac{k\hbar}{eB}$的一维谐振子。$E_{n}= \left( n+ \frac{1}{2} \right)\hbar \omega_{c}$。定义$l^{2}= \frac{\hbar}{|e|B}$为磁长度。
 ## Ex:
 
 考虑最低的Landau level $n=0$。那么$f_{n}$就是最低谐振子的态，概率密度为Gaussian的。容易看出$|e^{ik_{}y}f_{n}(x)|=|f_{n}(x)|^{2}$。所以一个Landau level的所有态就是xy面上的条带：
 
 ![[Pasted image 20260528141159.png|center|500]]
+
+这些条带被称为Landau规范轨道。
 
 >[!Quote] 磁长度的物理意义
 >我们知道对于谐振子$\frac{p^{2}}{2m}+ \frac{1}{2}m\omega^{2}$，基态波函数为宽度为$\sqrt{  \frac{\hbar }{m\omega} }$。所以这里磁长度$l=\sqrt{ \frac{\hbar}{m\omega_{c}} }$也就是这个等效谐振子的波函数宽度的length scale。
@@ -141,15 +143,13 @@ $$\frac{\hbar^{2}}{2m}(k_{x}^{2}+k_{y}^{2})= \left( n+ \frac{1}{2} \right)\hbar 
 
 # 4. Laughlin规范
 
-考虑圆柱面QHE几何。$\hat{\mathbf{y}}$切于圆柱面，外磁场$\mathbf{B}$垂直于圆柱面。则矢势为$\mathbf{A}=Bx \hat{\mathbf{y}}$。现考虑往圆柱中心竖直添加一个磁场，称为Laughlin磁场。令Laughlin磁场向下磁通量为$\Phi_{L}$。那么由$\oint  d\mathbf{r}\cdot \mathbf{A}=\Phi_{L}$可得一个矢势$\frac{\Phi_{L}}{L_{y}} \hat{\mathbf{y}}$。
+考虑圆柱面QHE几何。$\hat{\mathbf{y}}$切于圆柱面，$\mathbf{x}$平行于圆柱中轴朝上。外磁场$\mathbf{B}=B  \hat{\mathbf{z}}$垂直于圆柱面，外电场$\mathbf{E}=E  \hat{\mathbf{y}}$。则矢势为$\mathbf{A}=Bx \hat{\mathbf{y}}$。
+
+我们通过规范变换将电场吸收进矢势。现考虑往圆柱中心竖直添加一个磁场，称为Laughlin磁场。令Laughlin磁场向上磁通量为$\Phi_{L}$。那么Laughlin矢势必须满足$\mathbf{E}=- \frac{\partial \mathbf{A}}{\partial t}$。现固定$t$，那么由$\oint  d\mathbf{r}\cdot \mathbf{A}=\Phi_{L}$可得矢势$\mathbf{A}=\frac{\Phi_{L}}{L_{y}} \hat{\mathbf{y}}$。
 
 >[!Quote]
 >为什么这个矢势是一个常矢量？这不就代表它不产生磁场吗？其实，我们通过上述积分得到的矢势仅是矢势在圆柱面上的取值。矢势其实可以有空间dependence，只是我们已经在圆柱面上取值了。但因为我们是将$[0,1]\times S^{1}$嵌入到三维空间了，所以实际上在圆柱面上这个矢势就是一个常数。所以如果我们生活在圆柱面上，这就只是一个规范变换，没有引起任何圆柱面世界中的磁场。
 >
-
-和AB效应一样，令unperturbed hamiltonian为$\frac{1}{2m}|\mathbf{p}-eBx \hat{\mathbf{y}}|^{2}$。现在加上Laughlin矢势$\frac{\Phi_{L}}{L_{y}} \hat{\mathbf{y}}$后，hamiltonian变成$\frac{1}{2m}|\mathbf{p}-eBx  \hat{\mathbf{y}}- e \frac{\Phi_{L}}{L_{y}}  \hat{\mathbf{y}}|^{2}$。那么相应地，本征态会多出一个相位。波函数在转一圈后必须回到原来的态。这就导致：
-$$ \frac{e}{\hbar} \oint  d\mathbf{r}\cdot \mathbf{A}=  \frac{e}{\hbar} \Phi_{L}=2\pi n\implies \Phi_{L}=n \frac{h}{e}$$
-Laughlin磁通必须也是以$\Phi_{0}$为单位量子化的。
 
 接下来同Landau量子化一样，我们取$e^{ik_{y}y}f_{n}(x)$作为本征态。那么，现在重写二维Landau量子化中的hamiltonian：
 $$\begin{align}
@@ -161,9 +161,41 @@ $$\begin{align}
 x_{0} & =\frac{\hbar k_{y}}{eB}- \frac{\Phi_{L}}{L_{y}B} \\
  & = \frac{\Phi_{0}}{L_{y}B}\left( m- \frac{\Phi_{L}}{\Phi_{0}} \right)
 \end{align}$$
-我们发现，固定$\Phi_{L}$，则条带之间的距离为$\frac{\Phi_{0}}{L_{y}B}$。而$m$，即追踪某一个条带，$\Phi_{L}$每改变$\Phi_{0}$都会让该条带移动到下一个条带的位置。
+我们发现，固定$\Phi_{L}$，则Landau规范轨道之间的距离为$\frac{\Phi_{0}}{L_{y}B}$。而$m$，即追踪某一个Landau规范轨道，$\Phi_{L}$每改变$\Phi_{0}$都会让该轨道沿x方向移动到下一个轨道的位置。那么此时一个电子被从圆柱面上边缘泵至下边缘，或者反之。所以一个Landau能级中输运一个电荷所需时间为：
+$$\Delta t= \frac{\Phi_{0}}{\partial \Phi_{L} /\partial t}= \frac{\Phi_{0}}{L_{y}\partial A /\partial t}= - \frac{\Phi_{0}}{EL_{y}}$$
+那么电流为$I= \frac{e}{-\frac{\Phi_{0}}{EL_{y}}}=- \frac{e^{2}}{h}L_{y}E$。电流密度为$j=- \frac{e^{2}}{h}E$。电导率为$- \frac{e^{2}}{h}$。如果有$\nu$个全满的Landau能级，每个都发生上述泵涌，那么电导率为$- \nu\frac{e^{2}}{h}$。
+
+我们看到，量子Hall电导来自于全满能带。
 
 # 5. 边缘态
+
+考虑二维QHE的圆柱面几何。在quantum oscillation的平台上固定$\mathbf{B}$。我们发现Landau规范轨道不贡献纵向电流。因为$E_{n}=\left( n+ \frac{1}{2} \right)\hbar \omega_{c}$为定值，那么$\frac{\partial E_{n}}{\hbar \partial \mathbf{k}}=0$。
+
+一般来说，样品上存在将电子约束在内的势能$V$。在bulk中，$V$为一常数，可以忽略。但是在样品边缘，由于$V$不再平坦，它会微扰作为本征态的Landau规范轨道。这些微扰后的态称为边缘态。它们的能谱不是$E_{n}=\left( n+ \frac{1}{2} \right)\hbar \omega_{c}$，而是有k dependence。它们能够贡献非零纵向电流。
+
+>[!Quote]
+>边缘态如何表现在k-space中呢？边缘态似乎是一个实空间中的概念，和k-space没有关系。但实际上，注意到Landau规范轨道的中心与$k_{y}$是有关的，即$x_{0}= \frac{k_{y}\hbar}{eB}$。所以对于某些$k_{y}$，其Landau规范轨道会接近样品边缘，从而受到$V$的微扰。
+
+>[!Quote] 一个经典图像
+>如何理解bulk中的Landau规范轨道无纵向导电，但是边缘的有纵向导电呢？
+>
+>![[Pasted image 20260528161749.png|center|300]]
+>在经典极限下，Landau规范轨道退化为磁场中的回旋运动。在bulk中由于邻近的回旋运动抵消，从而无电流。在边缘，回旋运动会回弹着一直往一个方向走，所以有净电流。
+
+现计算边缘态色散关系。令$V(\mathbf{r},n)$为第n个Landau能级的约束势能。若$V(\mathbf{r},n)$相对于Landau规范轨道的波包宽度来说变化是缓慢的，那么$V$就是近似对角的。这带来一阶微扰$\int dx dy e^{-ik_{y}y}f^{*}_{n}(x)V(\mathbf{r},n)e^{ik_{y}y}f_{n}(x)=V(k_{y}, n)$。
+
+>[!Warning]
+>注意，$f_{n}(x)$实际上有$k_{y}$ dependence。这是因为$f_{n}(x)$是一个中心在$x_{0}= \frac{k_{y}\hbar}{eB}$的一维谐振子波函数。
+
+那么修正的能谱为：
+$$E_{n}(k_{y})= \left( n+ \frac{1}{2} \right)\hbar \omega_{c}+ V(k_{y},n)$$
+我们又知道，只有贴近费米面的态能够导电，所以只有$k_{y}$ such that $E_{n}(k_{y})\approx\epsilon_{F}$的边缘态才能导电。令$k_{F}^{n}$为费米面上的边缘态，满足：
+$$\left( n+ \frac{1}{2} \right)\hbar \omega_{c}+V(k_{F}^{n},n)=\epsilon_{F}$$
+那么在$k_{{y}}^{n}$附近展开有：
+$$E_{n}(k_{y})\approx \epsilon_{F}+ \frac{\partial V}{\partial k_{y}}(k_{y}-k_{F}^{n})=\epsilon_{F}+\hbar v_{F}^{n}(k_{y}-k_{F}^{n})$$
+其中，$v^{n}_{F}= \frac{\partial V}{\hbar\partial k_{y}}= \frac{\partial E_{n}(k_{y})}{\hbar \partial k_{y}}$为边缘态的费米速度。
+
+
 
 
 
