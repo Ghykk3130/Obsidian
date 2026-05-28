@@ -130,7 +130,14 @@ $$\begin{align}
 $$\frac{\hbar^{2}}{2m}(k_{x}^{2}+k_{y}^{2})= \left( n+ \frac{1}{2} \right)\hbar \omega_{c}$$
 所以一个Landau level，即固定$k_{z},n$，就是k-space中垂直于z方向的一个Landau环。
 
+# 4. Laughlin规范
 
+考虑圆柱面QHE几何。$\hat{\mathbf{y}}$切于圆柱面，外磁场$\mathbf{B}$垂直于圆柱面。则矢势为$\mathbf{A}=Bx \hat{\mathbf{y}}$。现考虑往圆柱中心竖直添加一个磁场，称为Laughlin磁场。令Laughlin磁场向下磁通量为$\Phi_{L}$。那么由$\oint  d\mathbf{r}\cdot \mathbf{A}=\Phi_{L}$可得一个矢势$\frac{\Phi_{L}}{L_{y}} \hat{\mathbf{y}}$。
+
+>[!Quote]
+>为什么这个矢势是一个常矢量？这不就代表它不产生磁场吗？其实，我们通过上述积分得到的矢势仅是矢势在圆柱面上的取值。矢势其实可以有空间dependence，只是我们已经在圆柱面上取值了。
+
+于是$\mathbf{A}=\left( Bx+ \frac{\Phi_{L}}{L_{y}} \right)\hat{\mathbf{y}}$。
 
 
 
