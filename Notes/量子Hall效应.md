@@ -96,7 +96,12 @@ $$\begin{align}
 \implies & - \frac{\hbar^{2}}{2m}\left( \partial_{x}^{2}+\left( ik- \frac{ieBx}{\hbar} \right)^{2} \right)f_{n}=E_{n}f_{n} \\
 \implies & \left[  \frac{p_{x}^{2}}{2m}+ \frac{1}{2}m\frac{e^{2}B^{2}}{m^{2}}\left( x- \frac{k\hbar}{eB} \right)^{2} \right]f_{n}=E_{n}f_{n}
 \end{align}$$
-所以这是一个频率为$\omega_{c}= \frac{|e|B}{m}$，中心在$\frac{k\hbar}{eB}=- \frac{k\hbar}{|e|B}$的一维谐振子。$E_{n}= \left( n+ \frac{1}{2} \right)\hbar \omega_{c}$。
+所以这是一个频率为$\omega_{c}= \frac{|e|B}{m}$，中心在$\frac{k\hbar}{eB}=- \frac{k\hbar}{|e|B}$的一维谐振子。$E_{n}= \left( n+ \frac{1}{2} \right)\hbar \omega_{c}$。定义$l^{2}= \frac{\hbar}{|e|B}$为系统的length scale。
 
-显然，每个Landau level，即固定$n$，其degeneracy全部来自于$k$。我们知道$k= \frac{2\pi n}{L_{y}}$，
+显然，每个Landau level，即固定$n$，其degeneracy全部来自于$k$。我们知道$k= \frac{2\pi n}{L_{y}}$，并且显然需要限制$0\leq \frac{k\hbar}{|e|B}=kl^{2}\leq L_{x}$。所以能取得$k$的数量为：
+$$N= \frac{L_{x}L_{y}}{2\pi l^{2}}= \frac{L_{x}L_{y}|e|B}{h}$$
+这就是每个Landau能级的degeneracy。只与外场和sample geometry有关。Landau能级定义出来的等能量面就是Landau环。
+
+因为费米面本身也是等能量面，所以Landau环扩张到费米面时必定和费米面重合。因此费米海中的Landau环个数必定是整数。如果Landau level必须要填满，那么令填满的Landau能级数量为$\nu$。于是Hall conductivity就是：
+$$\sigma_{xy}= \frac{ne}{B}= \frac{1}{L_{x}L_{y}}N\nu \frac{e}{B}=-\nu \frac{e^{2}}{h}$$
 
