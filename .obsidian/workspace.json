@@ -2545,12 +2545,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Notes/量子Hall效应.md",
+                "file": "Notes/gre数学.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "量子Hall效应"
+              "title": "gre数学"
             }
           }
         ],
@@ -2656,12 +2656,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Notes/量子Hall效应.md",
+                "file": "Notes/gre数学.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Outgoing links from 量子Hall效应"
+              "title": "Outgoing links from gre数学"
             }
           },
           {
@@ -2727,11 +2727,12 @@
   },
   "active": "3ba0a7b72a4ae06c",
   "lastOpenFiles": [
+    "Pictures/Pasted image 20260528204229.png",
+    "Notes/量子Hall效应.md",
     "Pictures/Pasted image 20260528175018.png",
     "Pictures/Pasted image 20260528161749.png",
     "Pictures/Pasted image 20260528141159.png",
     "Notes/半经典运动方程.md",
-    "Notes/量子Hall效应.md",
     "Notes/gre数学.md",
     "Pictures/Pasted image 20260527210945.png",
     "Pictures/Pasted image 20260527210615.png",
@@ -2762,7 +2763,6 @@
     "Reading notes/Electrical resistance of ferromagnetic metals.md",
     "Pictures/Pasted image 20260516145407.png",
     "Pictures/Pasted image 20260516145046.png",
-    "Pictures/Pasted image 20260429145929.png",
     "Pictures/drawing.pdf",
     "Pictures/drawing.html",
     "Untitled",

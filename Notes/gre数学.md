@@ -20,5 +20,8 @@ gre常见思路：
 ![[Pasted image 20260527210945.png|center|400]]
 除了fiction和biography，还有其它书。
 
+5.
 
+![[Pasted image 20260528204229.png|center|500]]
+实际上，用红色填满两个面，然后再用红色放在两条棱上不是最优。应该将两个面面心的红色也抠出来放在棱上。
 
