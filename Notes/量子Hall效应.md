@@ -201,7 +201,7 @@ $$ \frac{\partial V}{\hbar \partial k_{y}}= \frac{\partial V}{\hbar\partial x_{0
 $$\begin{align}
 I^{\text{up}}_{n} & =  e \int \frac{dk_{y}}{2\pi} v_{F}^{n}f_{F}(E_{n}(k_{y})+eV) \\
  & \approx e \int \frac{dk_{y}}{2\pi}v_{F}^{n}\left( f_{F}(E_{n})+ \frac{\partial f_{F}}{\partial E_{n}}eV \right) \\
- & = e \int \frac{dk_{y}}{2\pi}v_{F}^{n}(f_{F}(E_{n})+\delta(E_{n})eV)
+ & = e \int \frac{dk_{y}}{2\pi}v_{F}^{n}(f_{F}(E_{n})-\delta(E_{n})eV)
 \end{align}$$
 下边缘电流相反：
 $$\begin{align}
@@ -210,8 +210,9 @@ I^{\text{dn}}_{n} & = -e \int \frac{dk_{y}}{2\pi}v_{F}^{n}f_{F}(E_{n}(k_{y}))
 那么净电流为：
 $$\begin{align}
 I_{n} & = I^{\text{up}}_{n}+I^{\text{dn}}_{n}  \\
- & = e^{2}V \int \frac{dk_{y}}{2\pi}v^{n}_{F}\delta(E_{n}) \\
- & = e^{2}V\int \frac{dk_{y}}{2\pi}v_{F}^{n}\delta(\epsilon_{F}+\hbar v^{n}_{F}(k_{y}-k^{n}_{F})) \\
- & =  \frac{e^{2}V}{h}
+ & = -e^{2}V \int \frac{dk_{y}}{2\pi}v^{n}_{F}\delta(E_{n}) \\
+ & = -e^{2}V\int \frac{dk_{y}}{2\pi}v_{F}^{n}\delta(\epsilon_{F}+\hbar v^{n}_{F}(k_{y}-k^{n}_{F})) \\
+ & = - \frac{e^{2}V}{h}
 \end{align}$$
-于是总Hall电流为$I=\sum_{n} \frac{e^{2}}{h}V=n \frac{e^{2}}{h}V$。得到Hall conductivity $n \frac{e^{2}}{h}$。
+于是总Hall电流为$I=-\sum_{n} \frac{e^{2}}{h}V=-n \frac{e^{2}}{h}V$。得到Hall conductivity $-n \frac{e^{2}}{h}$。
+
