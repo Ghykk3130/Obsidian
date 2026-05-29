@@ -2645,7 +2645,8 @@
               "title": "Search"
             }
           }
-        ]
+        ],
+        "currentTab": 3
       }
     ],
     "direction": "horizontal",
@@ -2753,7 +2754,7 @@
       "obsidian-shellcommands:Shell commands: Custom variables": false
     }
   },
-  "active": "0bd5adf6a54a04e2",
+  "active": "f69ba2cf946ad0e0",
   "lastOpenFiles": [
     "Notes/Bloch定理.md",
     "Notes/石墨烯的tight-binding模型.md",

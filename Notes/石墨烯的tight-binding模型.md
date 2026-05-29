@@ -6,3 +6,4 @@ $$H=-t\sum_{i,\delta}(c^{\dagger}_{A,i}c_{B,i+\delta}+c^{\dagger}_{B,i+\delta}c_
 
 >[!Quote]
 >这个hamiltonian没有重复计数。例如考虑三个zui
+
