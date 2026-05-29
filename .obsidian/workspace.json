@@ -2545,16 +2545,30 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Notes/离散对称性.md",
+                "file": "Notes/退磁能.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "离散对称性"
+              "title": "退磁能"
+            }
+          },
+          {
+            "id": "4c693cbfa0db635b",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Notes/拓扑绝缘体.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "拓扑绝缘体"
             }
           }
         ],
-        "currentTab": 181
+        "currentTab": 182
       }
     ],
     "direction": "vertical"
@@ -2658,12 +2672,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Notes/离散对称性.md",
+                "file": "Notes/拓扑绝缘体.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Outgoing links from 离散对称性"
+              "title": "Outgoing links from 拓扑绝缘体"
             }
           },
           {
@@ -2727,12 +2741,17 @@
       "obsidian-shellcommands:Shell commands: Custom variables": false
     }
   },
-  "active": "3ba0a7b72a4ae06c",
+  "active": "4c693cbfa0db635b",
   "lastOpenFiles": [
+    "Notes/离散对称性.md",
+    "Notes/拓扑绝缘体.md",
+    "Notes/惯量张量与刚体动能.md",
+    "Notes/微分几何基础概念.md",
+    "Notes/退磁能.md",
+    "Notes/量子Hall效应.md",
     "Notes/gre数学.md",
     "Pictures/Pasted image 20260528205546.png",
     "Pictures/Pasted image 20260528204229.png",
-    "Notes/量子Hall效应.md",
     "Pictures/Pasted image 20260528175018.png",
     "Pictures/Pasted image 20260528161749.png",
     "Pictures/Pasted image 20260528141159.png",
@@ -2744,7 +2763,6 @@
     "Notes/gre写作.md",
     "Notes/Schrodinger's and Heisenberg's pictures.md",
     "Notes/Untitled.md",
-    "Notes/微分几何基础概念.md",
     "Pictures/Pasted image 20260527125955.png",
     "Notes/代数拓扑基本概念.md",
     "Notes/Ideal flow.md",
@@ -2761,9 +2779,6 @@
     "Notes/AHE.md",
     "Notes/ANE.md",
     "Notes/Baker-Campbell-Hausdorff Formula.md",
-    "Notes/Fermi's golden rule.md",
-    "Notes/热力学平衡.md",
-    "Reading notes/Electrical resistance of ferromagnetic metals.md",
     "Pictures/drawing.pdf",
     "Pictures/drawing.html",
     "Untitled",
