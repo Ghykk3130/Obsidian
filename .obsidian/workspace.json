@@ -2559,16 +2559,30 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Notes/拓扑绝缘体.md",
+                "file": "Notes/Bloch定理.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "拓扑绝缘体"
+              "title": "Bloch定理"
+            }
+          },
+          {
+            "id": "3788897a155cf63f",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Notes/石墨烯的tight-binding模型.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "石墨烯的tight-binding模型"
             }
           }
         ],
-        "currentTab": 182
+        "currentTab": 183
       }
     ],
     "direction": "vertical"
@@ -2635,8 +2649,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200,
-    "collapsed": true
+    "width": 200
   },
   "right": {
     "id": "9003d078f8dbc4ed",
@@ -2671,12 +2684,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Notes/拓扑绝缘体.md",
+                "file": "Notes/石墨烯的tight-binding模型.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Outgoing links from 拓扑绝缘体"
+              "title": "Outgoing links from 石墨烯的tight-binding模型"
             }
           },
           {
@@ -2740,10 +2753,12 @@
       "obsidian-shellcommands:Shell commands: Custom variables": false
     }
   },
-  "active": "4c693cbfa0db635b",
+  "active": "3788897a155cf63f",
   "lastOpenFiles": [
-    "Notes/离散对称性.md",
+    "Notes/Bloch定理.md",
+    "Notes/石墨烯的tight-binding模型.md",
     "Notes/拓扑绝缘体.md",
+    "Notes/离散对称性.md",
     "Notes/惯量张量与刚体动能.md",
     "Notes/微分几何基础概念.md",
     "Notes/退磁能.md",
@@ -2776,8 +2791,6 @@
     "Notes/系综（未完成）.md",
     "Notes/系综.md",
     "Notes/AHE.md",
-    "Notes/ANE.md",
-    "Notes/Baker-Campbell-Hausdorff Formula.md",
     "Pictures/drawing.pdf",
     "Pictures/drawing.html",
     "Untitled",
