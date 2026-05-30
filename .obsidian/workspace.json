@@ -2573,12 +2573,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Notes/石墨烯的tight-binding模型.md",
+                "file": "Notes/gre数学.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "石墨烯的tight-binding模型"
+              "title": "gre数学"
             }
           }
         ],
@@ -2645,8 +2645,7 @@
               "title": "Search"
             }
           }
-        ],
-        "currentTab": 3
+        ]
       }
     ],
     "direction": "horizontal",
@@ -2685,12 +2684,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Notes/石墨烯的tight-binding模型.md",
+                "file": "Notes/gre数学.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Outgoing links from 石墨烯的tight-binding模型"
+              "title": "Outgoing links from gre数学"
             }
           },
           {
@@ -2754,10 +2753,13 @@
       "obsidian-shellcommands:Shell commands: Custom variables": false
     }
   },
-  "active": "f69ba2cf946ad0e0",
+  "active": "3788897a155cf63f",
   "lastOpenFiles": [
-    "Notes/Bloch定理.md",
+    "Pictures/Pasted image 20260529194148.png",
+    "Pictures/Pasted image 20260529193556.png",
+    "Pictures/Pasted image 20260529193133.png",
     "Notes/石墨烯的tight-binding模型.md",
+    "Notes/Bloch定理.md",
     "Notes/拓扑绝缘体.md",
     "Notes/离散对称性.md",
     "Notes/惯量张量与刚体动能.md",
@@ -2774,11 +2776,9 @@
     "Pictures/Pasted image 20260527210945.png",
     "Pictures/Pasted image 20260527210615.png",
     "Pictures/Pasted image 20260527210253.png",
-    "Pictures/Pasted image 20260527205626.png",
     "Notes/gre写作.md",
     "Notes/Schrodinger's and Heisenberg's pictures.md",
     "Notes/Untitled.md",
-    "Pictures/Pasted image 20260527125955.png",
     "Notes/代数拓扑基本概念.md",
     "Notes/Ideal flow.md",
     "Notes/AB效应.md",
@@ -2791,7 +2791,6 @@
     "Notes/线性响应.md",
     "Notes/系综（未完成）.md",
     "Notes/系综.md",
-    "Notes/AHE.md",
     "Pictures/drawing.pdf",
     "Pictures/drawing.html",
     "Untitled",

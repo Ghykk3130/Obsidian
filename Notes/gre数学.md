@@ -1,6 +1,7 @@
 
 gre常见思路：
 - 看个位
+- 背诵正态分布多少sigma对应多少比例
 
 
 1.
@@ -36,4 +37,27 @@ $$\begin{align}
  & (1-1)^{31}= \binom{31}{1}- \binom{31}{2}+\dots+ \binom{31}{31}
 \end{align}$$
 两式相加除以二即可。
+
+7.
+
+![[Pasted image 20260529193133.png|center|500]]
+容易证明，$ab\text{ mod }k=(a \text{ mod }k)(b\text{ mod }k)\text{ mod }k$。令$a=n_{1}k+r_{1},\ b=n_{2}k+r_{2}$。那么$ab=n_{1}n_{2}k^{2}+(n_{1}+n_{2})k+r_{1}r_{2}$。于是显然。
+
+还容易证明，$(a+b)\text{ mod }k=(a\text{ mod }k+b\text{ mod }k)\text{ mod k}$。
+
+注意到$10^{n}\text{ mod }9=1,\ \forall n\in \mathbb{N}$。那么任取$a=a_{0}+10a_{1}+10^{2}a_{2}+\dots$，则：
+$$\begin{align}
+a\text{ mod }9 & = (a_{0}\text{ mod }9+a_{1}\text{ mod }9+ a_{2}\text{ mod }9+\dots )\text{ mod }9 
+\end{align}$$
+容易计算$A=B$。
+
+8.
+
+![[Pasted image 20260529193556.png|center|500]]
+最后比较的数是$X,83$，而不是$\frac{1}{X}, \frac{1}{83}$。别被坑。
+
+9.
+![[Pasted image 20260529194148.png|center|500]]
+这题的意思是说，36%男性讨厌夜车，不是说讨厌夜车的男性占总体的36%。
+
 
