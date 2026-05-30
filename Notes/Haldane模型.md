@@ -1,3 +1,5 @@
+# 1. Haldane模型
+
 考虑蜂窝晶格的如下hamiltonian：
 $$\begin{align}
 H & = -t\sum_{\langle i,j\rangle}(c^{\dagger}_{A,i}c_{B,j}+ c_{B,j}^{\dagger}c_{A,i})-t^{'}\sum_{\langle \langle i,j\rangle \rangle}e^{i\phi_{ij}}(c^{\dagger}_{A,i}c_{A,j}+c_{B,i}^{\dagger}c_{B,j})
@@ -49,3 +51,20 @@ c_{A,k} \\
 c_{B,k}
 \end{pmatrix}
 \end{align}$$
+对角化得到色散关系：
+$$\boxed{E_{\pm}(k)=\pm \sqrt{ t^{2}|f(k)|^{2}+4t^{'2}g^{2}(k) }}$$
+我们发现对比起最邻近tight-binding模型，Haldane模型能隙打开。
+
+![[Pasted image 20260530191658.png|center|500]]
+
+# 2. 同伦
+
+我们一般性地定义同伦：
+
+>[!Note] Definition 2.1
+>Let $X,Y$ be topological spaces. Given $f,g:X\rightarrow Y$, we say $f,g$ are homotopic to each other if there exists a continuous function $F:X\times[0,1]\rightarrow Y$ such that
+>$$F(x,0)=f(x),\ F(x,1)=g(x)$$
+>Write $f\sim g$.
+
+
+
