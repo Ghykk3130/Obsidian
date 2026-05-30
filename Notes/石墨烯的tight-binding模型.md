@@ -34,6 +34,7 @@ f(k) & = e^{iak_{x}}+e^{- i \frac{a}{2}k_{x}}2 \cos\left(  \frac{\sqrt{ 3 }}{2}a
 \end{align}$$
 于是：
 $$\begin{align}
-E_{\pm}(k) & = \pm t\sqrt{ 1+4\cos\left(  \frac{3}{2}ak_{x} \right)\cos\left(  \frac{\sqrt{ 3 }}{2}k_{y} \right)+ 4\cos ^{2}\left(  \frac{\sqrt{ 3 }}{2}k_{y} \right) } \\
- & = \pm t \sqrt{ 3+ 4\cos \left(  \frac{3}{2}ak_{x} \right)\cos\left(  \frac{\sqrt{ 3 }}{2}k_{y} \right)+2\cos(\sqrt{ 3 }k_{y}) }
+E_{\pm}(k) & = \pm t\sqrt{ 1+4\cos\left(  \frac{3}{2}ak_{x} \right)\cos\left(  \frac{\sqrt{ 3 }}{2}ak_{y} \right)+ 4\cos ^{2}\left(  \frac{\sqrt{ 3 }}{2}ak_{y} \right) } \\
+ & = \pm t \sqrt{ 3+ 4\cos \left(  \frac{3}{2}ak_{x} \right)\cos\left(  \frac{\sqrt{ 3 }}{2}ak_{y} \right)+2\cos(\sqrt{ 3 }ak_{y}) }
 \end{align}$$
+
