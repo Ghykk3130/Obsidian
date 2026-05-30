@@ -6,6 +6,8 @@ $$H=-t\sum_{i,\delta}(c^{\dagger}_{A,i}c_{B,i+\delta}+c^{\dagger}_{B,i+\delta}c_
 
 >[!Quote]
 >这个hamiltonian没有重复计数。固定$i$，求和路径如下所示：
+>![[Pasted image 20260530150426.png|center|400]]
+>总共有三个$\delta$的路径，每个往返都计入。
 
 我们作Fourier变换$c_{A,{i}}= \frac{1}{\sqrt{ N }}\sum_{k}e^{ikR_{i}}c_{A,k},\ c_{B,i}= \frac{1}{\sqrt{ N }}\sum_{k}e^{ikR_{i}}c_{B,i}$。其中，$N$为总元胞数。于是：
 $$\begin{align}
