@@ -2649,7 +2649,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 200,
+    "collapsed": true
   },
   "right": {
     "id": "9003d078f8dbc4ed",
@@ -2755,6 +2756,7 @@
   },
   "active": "3788897a155cf63f",
   "lastOpenFiles": [
+    "Pictures/Pasted image 20260530155447.png",
     "Pictures/Pasted image 20260530150426.png",
     "Notes/gre数学.md",
     "Pictures/Pasted image 20260529194148.png",
@@ -2775,7 +2777,6 @@
     "Pictures/Pasted image 20260528141159.png",
     "Notes/半经典运动方程.md",
     "Pictures/Pasted image 20260527210945.png",
-    "Pictures/Pasted image 20260527210615.png",
     "Notes/gre写作.md",
     "Notes/Schrodinger's and Heisenberg's pictures.md",
     "Notes/Untitled.md",

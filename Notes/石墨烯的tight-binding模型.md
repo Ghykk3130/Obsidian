@@ -1,7 +1,7 @@
 石墨烯的一个元胞里有不等价的$A,B$两个碳原子。考虑每个碳原子在只有一个导电电子轨道。用$i$标记所有碳原子，那么hamiltonian可以写为：
 $$H=-t\sum_{\langle i,j\rangle}c^{\dagger}_{i}c_{j}$$
 若假设一次量子化的可加hamiltonian为$H_{0}$，那么$t=-\bra{i}H_{0}\ket{j}$。我们假设若$i,j$不邻近的话，波函数重叠太少，以至于$t=0$。hamiltonian还可以写为：
-$$H=-t\sum_{i,\delta}(c^{\dagger}_{A,i}c_{B,i+\delta}+c^{\dagger}_{B,i+\delta}c_{A,i})$$
+$$\boxed{H=-t\sum_{i,\delta}(c^{\dagger}_{A,i}c_{B,i+\delta}+c^{\dagger}_{B,i+\delta}c_{A,i})}$$
 其中，$i$标记元胞，$i+\delta$标记离$A$最近的三个元胞（包含$i$）。
 
 >[!Quote]
@@ -33,8 +33,33 @@ $$\begin{align}
 f(k) & = e^{iak_{x}}+e^{- i \frac{a}{2}k_{x}}2 \cos\left(  \frac{\sqrt{ 3 }}{2}ak_{y} \right)
 \end{align}$$
 于是：
-$$\begin{align}
+$$\boxed{\begin{align}
 E_{\pm}(k) & = \pm t\sqrt{ 1+4\cos\left(  \frac{3}{2}ak_{x} \right)\cos\left(  \frac{\sqrt{ 3 }}{2}ak_{y} \right)+ 4\cos ^{2}\left(  \frac{\sqrt{ 3 }}{2}ak_{y} \right) } \\
  & = \pm t \sqrt{ 3+ 4\cos \left(  \frac{3}{2}ak_{x} \right)\cos\left(  \frac{\sqrt{ 3 }}{2}ak_{y} \right)+2\cos(\sqrt{ 3 }ak_{y}) }
+\end{align}}$$
+
+![[Pasted image 20260530155447.png|center|500]]
+
+取实空间基矢$\mathbf{a}_{1}= \frac{3}{2}a\left( 1, \frac{1}{\sqrt{ 3 }} \right),\ \mathbf{a}_{2}= \frac{3}{2}a\left(  \frac{1}{\sqrt{ 3 }},1 \right)$。容易计算k-space的基矢$\mathbf{G}_{1}= \frac{4\pi}{3a}(1,0),\ \mathbf{G}_{2}= \frac{4\pi}{3a}\left(  - \frac{1}{2}, \frac{\sqrt{ 3 }}{2} \right)$。于是FBZ的六个顶点为：
+$$\frac{4\pi}{3a}\left( 0,\pm \frac{1}{\sqrt{ 3 }} \right),\  \frac{4\pi}{3a}\left( \pm \frac{1}{2}, \pm \frac{1}{2\sqrt{ 3 }} \right)$$
+将这六个顶点称为K点。这六个点只有两个独立，即其它都相差一个$\mathbf{G}\in \Lambda ^{*}$。这两个独立的点取为$\frac{4\pi}{3a}\left( 0, \pm \frac{1}{\sqrt{ 3 }} \right)$，称为$K$和$K^{'}$点。容易证明K点上的能量为零。将FBZ这个六边形的边心称为M点。
+
+在$K$点附近展开：
+$$\begin{align}
+f(K+q) & = e^{iaq_{x}}+ e^{-i \frac{a}{2}q_{x} }2\cos\left(  \frac{2\pi}{3}+ \frac{\sqrt{ 3 }}{2}q_{y} \right) \\
+ & \approx 1+iaq_{x}+2\left( 1- i \frac{a}{2}q_{x} \right)\left( - \frac{1}{2}- \frac{3}{4}q_{y} \right) \\
+ & = i \frac{3}{2}aq_{x}- \frac{3}{2}aq_{y}
 \end{align}$$
+故：
+$$\begin{align}
+H(q) & = \begin{pmatrix}
+0 & -ta\left( i \frac{3}{2}q_{x}- \frac{3}{2}q_{y} \right)  \\
+-ta\left( -i \frac{3}{2}q_{x}- \frac{3}{2}q_{y} \right) & 0
+\end{pmatrix} \\
+ & = \frac{3at}{2}q_{x}\tau^{y}+ \frac{3at}{2}q_{y}\tau^{x}
+\end{align}$$
+我们知道，Dirac矩阵定义为$\alpha^{1}=\tau^{y},\ \alpha^{2}=\tau^{x}$。令$v_{F}= \frac{3at}{2}$，于是：
+$$H(q)=v_{F}\boldsymbol{\alpha}\cdot \mathbf{q}$$
+容易计算$E(q)=\pm v_{F}q$。这个线性色散关系称为Dirac cone。
+
 
