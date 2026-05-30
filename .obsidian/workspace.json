@@ -2573,12 +2573,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Notes/gre数学.md",
+                "file": "Notes/石墨烯的tight-binding模型.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "gre数学"
+              "title": "石墨烯的tight-binding模型"
             }
           }
         ],
@@ -2649,7 +2649,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 200,
+    "collapsed": true
   },
   "right": {
     "id": "9003d078f8dbc4ed",
@@ -2684,12 +2685,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Notes/gre数学.md",
+                "file": "Notes/石墨烯的tight-binding模型.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Outgoing links from gre数学"
+              "title": "Outgoing links from 石墨烯的tight-binding模型"
             }
           },
           {
@@ -2755,6 +2756,7 @@
   },
   "active": "3788897a155cf63f",
   "lastOpenFiles": [
+    "Notes/gre数学.md",
     "Pictures/Pasted image 20260529194148.png",
     "Pictures/Pasted image 20260529193556.png",
     "Pictures/Pasted image 20260529193133.png",
@@ -2766,7 +2768,6 @@
     "Notes/微分几何基础概念.md",
     "Notes/退磁能.md",
     "Notes/量子Hall效应.md",
-    "Notes/gre数学.md",
     "Pictures/Pasted image 20260528205546.png",
     "Pictures/Pasted image 20260528204229.png",
     "Pictures/Pasted image 20260528175018.png",
@@ -2775,7 +2776,6 @@
     "Notes/半经典运动方程.md",
     "Pictures/Pasted image 20260527210945.png",
     "Pictures/Pasted image 20260527210615.png",
-    "Pictures/Pasted image 20260527210253.png",
     "Notes/gre写作.md",
     "Notes/Schrodinger's and Heisenberg's pictures.md",
     "Notes/Untitled.md",
