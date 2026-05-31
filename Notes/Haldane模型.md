@@ -40,6 +40,8 @@ $$\begin{align}
  & = -2\left( \sin \sqrt{ 3 }ak_{y}-2\cos \frac{3}{2}ak_{x}\sin \frac{\sqrt{ 3 }}{2}ak_{y} \right) \\
  & =-2g(k)
 \end{align}$$
+其中，
+$$g(k)= \sin \sqrt{ 3 }ak_{y}-2\cos \frac{3}{2}ak_{x}\sin \frac{\sqrt{ 3 }}{2}ak_{y}$$
 对于$B$子格，容易发现$A$子格的顺时针路径对应其逆时针路径，而$A$子格的逆时针路径对应其顺时针路径。于是容易写出：
 $$\begin{align}
 H & = -t\sum_{k}(f(k)c^{\dagger}_{A,k}c_{B,k}+f^{*}(k)c^{\dagger}_{B,k}c_{A,k})+2t^{'}\sum_{k}g(k)(c^{\dagger}_{A,k}c_{A,k}-c^{\dagger}_{B,k}c_{B,k}) \\
@@ -126,10 +128,15 @@ $$\begin{align}
 H(k) & = -t\mathrm{Re}f(k)\tau^{x}+t\mathrm{Im}f(k)\tau^{y}+2t^{'}g(k)\tau^{z}  = \mathbf{d}(k)\cdot \boldsymbol{\tau}
 \end{align}$$
 我们有$\mathbf{d}(k)=(-t\mathrm{Re}f(k),t\mathrm{Im}f(k),2t^{'}g(k))$。接下来在$K= \frac{4\pi}{3a}\left( 0, \frac{1}{\sqrt{ 3 }} \right),\ K^{'}= \frac{4\pi}{3a}\left( 0,- \frac{1}{\sqrt{ 3 }} \right)$附近展开能谱。
-
-
-
-
+$$\begin{align}
+  & K:\ f(k)=f(K+q)\approx \frac{3}{2 }a(iq_{x}-q_{y}),\ g(k)=g(K+1)\approx - \frac{3}{2}\sqrt{ 3 } a \\
+ & K^{'}:\ f(k)=f(K+q)\approx \frac{3}{2}a(iq_{x}+q_{y}),\ g(k)=g(K+q)\approx \frac{3}{2}\sqrt{ 3 }a
+\end{align}$$
+那么在$K$点附近，$\mathbf{d}=(v_{F}q_{y},v_{F}q_{x}, -m)$：
+$$H(k)=v_{F}\boldsymbol{\alpha}\cdot \mathbf{q}-m \beta$$
+在$K^{'}$点附近，$\mathbf{d}=(-v_{F}q_{y},v_{F}q_{x},m)$：
+$$H(k)=v_{F}\boldsymbol{\alpha}\cdot     \tilde{\mathbf{q}}  +m\beta$$
+其中$v_{F}= \frac{3}{2}at,\ m=3\sqrt{ 3 }t^{'},\ \boldsymbol{\alpha}=(\alpha^{1},\alpha^{2})=(\tau^{y},\tau^{x}),\ \beta=\tau^{z},\ \mathbf{q}=(q_{x},q_{y}),\  \tilde{\mathbf{q}}=(q_{x},-q_{y})$。
 
 
 
