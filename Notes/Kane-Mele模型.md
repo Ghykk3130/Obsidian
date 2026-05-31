@@ -48,12 +48,50 @@ $$\begin{align}
 当$t^{'}\neq 0$时，自旋流非零。
 # 2. Kane-Mele模型的对称性
 
+## 时间反演对称性
+
 对于任意可观测量$X$，由于：
 $$\bra{\psi} X\ket{\psi}= \bra{X^{\dagger}\psi} \psi\rangle=\bra{\mathcal{T}\psi} \mathcal{T}X^{\dagger}\psi\rangle=\bra{\mathcal{T}\psi} \mathcal{T}X^{\dagger}\mathcal{T}^{-1}\ket{\mathcal{T}\psi} =\bra{\mathcal{T}\psi} \mathcal{T}X\mathcal{T}^{-1}\ket{\mathcal{T}\psi}  $$
-所以时间反演后的算子变为$\mathcal{T}X^{}\mathcal{T}^{-1}$。我们知道：
+所以时间反演后的算子变为$\mathcal{T}X^{}\mathcal{T}^{-1}$。对于非厄米的算子，我们作如下命题：
+
+>[!Success] Proposition 2.1
+>$\mathcal{T}\ket{a}\bra{b}\mathcal{T}^{-1}=\ket{\mathcal{T}a}\bra{\mathcal{T}b}$
+## Proof.
+
+任取$\ket{\psi}$。那么：
 $$\begin{align}
-\mathcal{T}c_{k,\uparrow}\mathcal{T}^{-1} & = \mathcal{T}\ket{0_{k,\uparrow}} \bra{k,\uparrow} \mathcal{T}^{-1}
+\mathcal{T}\ket{a} \bra{b} \mathcal{T}^{-1}\ket{\psi}  & = \mathcal{T}\ket{a} \bra{b} \mathcal{T}^{-1}\psi \rangle \\
+ & = \mathcal{T}\ket{a} \bra{\psi} \mathcal{T}b\rangle \\
+ & = \bra{\mathcal{Tb}} \psi\rangle \mathcal{T}\ket{a}  \\
+ & = \bra{\mathcal{T}b} \psi\rangle \ket{\mathcal{T}a}  \\
+ & = \ket{\mathcal{T}a} \bra{\mathcal{T}b} \psi\rangle
 \end{align}$$
+>[!Right]
+>$\blacksquare$
+
+对于spin-1/2粒子，时间反演算子为$-i\sigma_{y}$。它将$\ket{\uparrow}$映成$\ket{\downarrow}$，将$\ket{\downarrow}$映成$-\ket{\uparrow}$。对于动量本征态$\ket{k}$，时间反演算子将动量反转为$\ket{-k}$。于是：
+$$\begin{align}
+\mathcal{T}c_{k,\uparrow}\mathcal{T}^{-1} & = \mathcal{T}\ket{0_{k,\uparrow}} \bra{k,\uparrow} \mathcal{T}^{-1} \\
+ & = \ket{\mathcal{T}0_{k,\uparrow}} \bra{\mathcal{T}k\uparrow} \\
+ & = \ket{0_{-k,\downarrow}} \bra{-k,\downarrow} \\
+ & = c_{-k,\downarrow}  
+\end{align}$$
+类似地：
+$$\begin{align}
+\mathcal{T}c_{k,\downarrow}\mathcal{T}^{-1} & = \mathcal{T}\ket{0_{k,\downarrow}} \bra{k,\downarrow} \mathcal{T}^{-1} \\
+ & = -c_{-k,\uparrow}
+\end{align}$$
+于是：
+$$\begin{align}
+\mathcal{T}H\mathcal{T}^{-1} & = \mathcal{T}\sum_{k,\sigma}[2t^{'}g(k)\sigma(c^{\dagger}_{A,k,\sigma}c_{A,k,\sigma}-c^{\dagger}_{B,k,\sigma}c_{B,k,\sigma})-tf(k)c^{\dagger}_{A,k,\sigma}c_{B,k,\sigma}-tf^{*}(k)c^{\dagger}_{B,k,\sigma}c_{A,k,\sigma}]\mathcal{T}^{-1} \\
+ & = \sum_{k,\sigma}[2t^{'}g(k)\sigma(c^{\dagger}_{A,-k,-\sigma}c_{A,-k,-\sigma}-c^{\dagger}_{B,-k,-\sigma}c_{B,-k,-\sigma})-tf^{*}(k)c^{\dagger}_{A,-k,-\sigma}c_{B,-k,-\sigma}-tf(k)c^{\dagger}_{B,-k,-\sigma}c_{A,-k,-\sigma}] \\
+ & = \sum_{k,\sigma}[2t^{'}g(-k)(-\sigma)(c^{\dagger}_{A,k,\sigma}c_{A,k,\sigma}-c^{\dagger}_{B,k,\sigma}c_{B,k,\sigma})-tf^{*}(-k)c^{\dagger}_{A,k,\sigma}c_{B,k,\sigma}-tf(-k)c^{\dagger}_{B,k,\sigma}c_{A,k,\sigma}]
+\end{align}$$
+注意到$g(-k)=-g(k),\ f(-k)=f^{*}(k)$，故：
+$$\mathcal{T}H\mathcal{T}^{-1}=H$$
+所以Kane-Mele模型具有时间反演对称性。
+
+
  
 
 
