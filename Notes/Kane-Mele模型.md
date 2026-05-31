@@ -91,7 +91,60 @@ $$\begin{align}
 $$\mathcal{T}H\mathcal{T}^{-1}=H$$
 所以Kane-Mele模型具有时间反演对称性。
 
+接下来，注意到：
+$$\begin{align}
+\mathcal{T} \psi_{k}\mathcal{T}^{-1} & = \begin{pmatrix}
+c_{A,-k,\downarrow} \\
+c_{B,-k,\downarrow} \\
+-c_{A,-k,\uparrow} \\
+-c_{B,-k,\uparrow}
+\end{pmatrix}= \begin{pmatrix}
+0 & 0 & 1 & 0 \\
+0 & 0 & 0 & 1 \\
+-1 & 0 & 0 & 0 \\
+0 & -1 & 0 & 0
+\end{pmatrix} \begin{pmatrix}
+c_{A,-k,\uparrow} \\
+c_{B,-k,\uparrow} \\
+c_{A,-k,\downarrow} \\
+c_{B,-k,\downarrow}
+\end{pmatrix}=i( s ^{y}\otimes I_{2\times {2}}) \psi_{-k}
+\end{align}$$
+其中$s^{y}=\sigma_{y}$为Pauli矩阵。
 
+>[!Quote] 矩阵直积
+>矩阵直积规定为：
+>$$A \otimes B= \begin{pmatrix}
+A_{11} B& A_{12}B  & \dots \\
+A_{21} B  & A_{22}B & \dots \\
+\dots  & \dots & \dots
+\end{pmatrix}$$
+>而矩阵直积的运算性质基本上和算子直积相同。
+
+那么：
+$$\begin{align}
+\mathcal{T}H\mathcal{T}^{-1} & = \mathcal{T}\sum_{k}\psi_{k}^{\dagger}H(k)\psi_{k} \mathcal{T}^{-1}\\
+ & = \sum_{k}\mathcal{T}\psi ^{\dagger}_{k}\mathcal{T}^{-1}\mathcal{T}H(k)\mathcal{T}^{-1} \mathcal{T}\psi_{k}\mathcal{T}^{-1} \\
+ & = \sum_{k}\psi ^{\dagger}_{-k}(is^{y}\otimes I_{2\times{2}} )^{\dagger} \mathcal{T}H(k)\mathcal{T}^{-1} (i s ^{y}\otimes I_{2 \times 2}) \psi _{-k}
+\end{align}$$
+容易证明：
+$$\begin{align}
+\mathcal{T}H(k)\mathcal{T}^{-1} & = \mathcal{T}\begin{pmatrix}
+2t^{'}g(k) & -2t f(k) \\
+-2tf^{*}(k) & -2t^{'}g(k) 
+\end{pmatrix} \mathcal{T}^{-1} \\
+ & = \begin{pmatrix}
+2t^{'}g(k) & -2t f^{*}(k) \\
+-2tf(k) & -2t^{'}g(k) \\
  
+\end{pmatrix} \\
+ & = H^{*}(k)
+\end{align}$$
+于是：
+$$\begin{align}
+\mathcal{T}H\mathcal{T}^{-1} & = \sum_{k}\psi ^{\dagger}_{-k}(i s ^{y}\otimes I_{2 \times 2})^{\dagger}H^{*}(k)(i s ^{y}\otimes I_{2 \times 2})\psi_{-k} \\
+ & = \sum_{k}\psi ^{\dagger}_{-k}(i s ^{y}\otimes I _{ 2 \times 2})^{\dagger} K H(k)K(i s ^{y}\otimes I_{2 \times 2})\psi_{-k}
+\end{align}$$
+容易证明$K(i s ^{y}\otimes I_{2 \times 2})= (K i s^{y})\otimes(KI_{2 \times 2})=(is ^{y}K)\otimes(I_{2 \times 2}K)=(is ^{y}\otimes I_{2\times 2})K$。
 
 

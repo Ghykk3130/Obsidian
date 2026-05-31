@@ -2694,7 +2694,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Thermal Transport.md",
+                "file": "Notes/Kane-Mele模型.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -2704,7 +2704,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for Thermal Transport"
+              "title": "Backlinks for Kane-Mele模型"
             }
           },
           {
@@ -2762,7 +2762,7 @@
             }
           }
         ],
-        "currentTab": 2
+        "currentTab": 4
       }
     ],
     "direction": "horizontal",
@@ -2782,7 +2782,7 @@
       "obsidian-shellcommands:Shell commands: Custom variables": false
     }
   },
-  "active": "ad29c534102b7cd5",
+  "active": "a39b5f6c1df34942",
   "lastOpenFiles": [
     "Notes/离散对称性.md",
     "Notes/Kane-Mele模型.md",
