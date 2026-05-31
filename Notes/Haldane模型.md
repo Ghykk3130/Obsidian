@@ -57,7 +57,7 @@ $$\boxed{E_{\pm}(k)=\pm \sqrt{ t^{2}|f(k)|^{2}+4t^{'2}g^{2}(k) }}$$
 
 ![[Pasted image 20260530191658.png|center|500]]
 
-# 2. 同伦
+# 2. 同伦群
 
 我们一般性地定义同伦：
 
@@ -66,7 +66,13 @@ $$\boxed{E_{\pm}(k)=\pm \sqrt{ t^{2}|f(k)|^{2}+4t^{'2}g^{2}(k) }}$$
 >$$F(x,0)=f(x),\ F(x,1)=g(x)$$
 >Write $f\sim g$.
 
-可以证明，互为同伦的映射构成等价类。将这些等价类收集起来，某些情况下可以构成群。考虑如下情况：
+可以证明，互为同伦的映射构成等价类。可以将这些同伦类收集起来构成同伦集：
+
+>[!Note] Definition 2.2
+>Let $X,Y$ be topological space. Let $C(X,Y)=\{ f:X\rightarrow Y| f\text{ continuous} \}$. Define free homotopy set as:
+>$$[X,Y]=C(X,Y)/ \sim$$
+>Fix $x_{0}\in X,\ y_{0}\in Y$, define the based homotopy set as: 
+>$$[X,Y]_{0}=\{ f\in C(X,Y)|f(x_{0})=y_{0} \}/ \sim$$
 
 若$X$是具有周期性结构的$S^{n}$，那么函数$f:X=S^{n}\rightarrow Y$不管在$Y$中看起来多复杂，其在$S^{n}$中绕一圈后必定在$Y$中也绕回原来的位置。
 ## Ex:
@@ -75,7 +81,7 @@ $$\boxed{E_{\pm}(k)=\pm \sqrt{ t^{2}|f(k)|^{2}+4t^{'2}g^{2}(k) }}$$
 
 >[!Note] Definition 2.2
 >Given a topological space $Y$, $y_{0}\in Y,\ s_{0}\in S^{n}$, define its nth order homotopy group as:
->$$\pi_{n}(Y,y_{0})=\{ f:S^{n}\rightarrow Y |f\text{ continuous, }f(s_{0})=y_{0}\}/ \sim$$
+>$$\pi_{n}(Y,y_{0})=[S^{n},Y]_{0}$$
 
 由于$S^{n}$的周期性结构，$s_{0}$点的选取是不重要的。
 ## Ex:
@@ -88,12 +94,33 @@ $$\boxed{E_{\pm}(k)=\pm \sqrt{ t^{2}|f(k)|^{2}+4t^{'2}g^{2}(k) }}$$
 >Given $f,g:S^{n}=[0,1]^{n}\rightarrow Y$, $f(0)=g(0)=y_{0}$, $s_{1}=\left( \frac{1}{2}, \frac{1}{2},\dots \right),\ s_{2}=(1,1,\dots)$, define the product of $f,g$ as:
 >$$f*g(s)= \left\{\begin{align}
  & g(2s),\ 0\leq s< s_{1} \\
- & f(2s-y_{2}),\ s_{1}\leq x\leq s_{2}
+ & f(2s-s_{2}),\ s_{1}\leq x\leq s_{2}
 \end{align}\right.$$
 
 可以证明，$[f*g]=[f]*[g]$。这构成了同伦群的群运算。
 
-对于集合$Y$，若其中任意两点之间存在一条曲线连接，那么称$Y$是arcwise connected的。可以证明，若$Y$是arcwise connected的，那么$\pi_{n}(Y,y_{0}) \cong \pi_{n}(Y,y_{1}),\ \forall y_{0},\ y_{1}\in Y$。所以我们省略$y_{0}$的标记，直接将同伦群记为$\pi_{n}(Y)$。
+对于集合$Y$，若其中任意两点之间存在一条曲线连接，那么称$Y$是arcwise connected的。可以证明，若$Y$是arcwise connected的，那么$\pi_{n}(Y,y_{0}) \cong \pi_{n}(Y,y_{1}),\ \forall y_{0},\ y_{1}\in Y$。所以我们省略$y_{0}$的标记，直接将同伦群记为$\pi_{n}(Y)$。若$Y$是一个“中间有洞”的结构，那么这些同伦群同构于整数。
+
+>[!Success] Theorem 2.1
+>$\pi_{n}(S^{n}) \cong \mathbb{Z}$
+
+## Ex:
+
+例如$\pi_{1}(S^{1})$。所有绕在$Y$中绕一圈的loop构成的同伦类和$1\in \mathbb{Z}$同构。所有在$Y$中绕两圈的loop构成的同伦类和$2\in \mathbb{Z}$同构，...。因为$S^{1}$中间有洞，所以更复杂的loop不会出现。
+
+
+类似地，可以证明$[T^{2},S^{2}]$也是一个群，因为$T^{2}$也具有周期结构。并且也有$[T^{2},S^{2}]\cong\mathbb{Z}$。其中第一Chern数将每个同伦群类的函数映射成相应的整数。
+
+>[!Note] Definition 2.4
+>Take $[f]\in[T^{2},S^{2}]$, and take $\mathbf{m}\in[f]$. Define the first Chern number as:
+>$$C_{1}= \frac{1}{4\pi}\int d^{2}k \mathbf{m}\cdot\left(  \frac{\partial \mathbf{m}}{\partial k_{x}}\times \frac{\partial \mathbf{m}}{\partial k_{y}} \right) $$
+
+所以处于同一个同伦类中的函数都具有相同的Chern数。
+
+# 3. Haldane模型与拓扑
+
+
+
 
 
 
