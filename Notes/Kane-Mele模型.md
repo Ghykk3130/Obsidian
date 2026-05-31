@@ -145,6 +145,18 @@ $$\begin{align}
 \mathcal{T}H\mathcal{T}^{-1} & = \sum_{k}\psi ^{\dagger}_{-k}(i s ^{y}\otimes I_{2 \times 2})^{\dagger}H^{*}(k)(i s ^{y}\otimes I_{2 \times 2})\psi_{-k} \\
  & = \sum_{k}\psi ^{\dagger}_{-k}(i s ^{y}\otimes I _{ 2 \times 2})^{\dagger} K H(k)K(i s ^{y}\otimes I_{2 \times 2})\psi_{-k}
 \end{align}$$
-容易证明$K(i s ^{y}\otimes I_{2 \times 2})= (K i s^{y})\otimes(KI_{2 \times 2})=(is ^{y}K)\otimes(I_{2 \times 2}K)=(is ^{y}\otimes I_{2\times 2})K$。
+容易证明$K(i s ^{y}\otimes I_{2 \times 2})= (K i s^{y})\otimes(KI_{2 \times 2})=(is ^{y}K)\otimes(I_{2 \times 2}K)=(is ^{y}\otimes I_{2\times 2})K$。接下来证明：
+
+>[!Success] Proposition 2.2
+>$K^{\dagger}=K$
+## Proof.
+
+首先回忆起反线性算符hermitian的定义。任取$\ket{\psi},\ket{\phi}$，我们有：
+$$\bra{K ^{\dagger}\psi} \phi\rangle= \bra{K\phi} \psi\rangle$$
+而显然$\bra{K\phi}\psi\rangle=\bra{K\psi}\phi\rangle$。
+>[!Right]
+>$\blacksquare$
+
+于是$(i s ^{y}\otimes I_{2 \times 2})^{\dagger} K=[K^{\dagger}(i s ^{y}\otimes I_{2 \times 2})]^{\dagger}=[ K (i s ^{y}\otimes I_{2 \times 2})]^{\dagger}=[ (i s ^{y}\otimes I_{2 \times 2})K]^{\dagger}$。
 
 
