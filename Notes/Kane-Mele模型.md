@@ -48,9 +48,12 @@ $$\begin{align}
 当$t^{'}\neq 0$时，自旋流非零。
 # 2. Kane-Mele模型的对称性
 
-对于任意算子$X$，由于：
-$$\bra{\psi} X\ket{\psi}= \bra{X^{\dagger}\psi} \psi\rangle=\bra{\mathcal{T}\psi} \mathcal{T}X^{\dagger}\psi\rangle=\bra{\mathcal{T}\psi} \mathcal{T}X^{\dagger}\mathcal{T}^{-1}\ket{\mathcal{T}\psi}  $$
-所以时间反演后的算子变为$\mathcal{T}X^{\dagger}\mathcal{T}^{-1}$。
-
+对于任意可观测量$X$，由于：
+$$\bra{\psi} X\ket{\psi}= \bra{X^{\dagger}\psi} \psi\rangle=\bra{\mathcal{T}\psi} \mathcal{T}X^{\dagger}\psi\rangle=\bra{\mathcal{T}\psi} \mathcal{T}X^{\dagger}\mathcal{T}^{-1}\ket{\mathcal{T}\psi} =\bra{\mathcal{T}\psi} \mathcal{T}X\mathcal{T}^{-1}\ket{\mathcal{T}\psi}  $$
+所以时间反演后的算子变为$\mathcal{T}X^{}\mathcal{T}^{-1}$。我们知道：
+$$\begin{align}
+\mathcal{T}c_{k,\uparrow}\mathcal{T}^{-1} & = \mathcal{T}\ket{0_{k,\uparrow}} \bra{k,\uparrow} \mathcal{T}^{-1}
+\end{align}$$
+ 
 
 

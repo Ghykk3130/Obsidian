@@ -2601,12 +2601,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Notes/离散对称性.md",
+                "file": "Notes/Kane-Mele模型.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "离散对称性"
+              "title": "Kane-Mele模型"
             }
           }
         ],
@@ -2673,13 +2673,11 @@
               "title": "Search"
             }
           }
-        ],
-        "currentTab": 3
+        ]
       }
     ],
     "direction": "horizontal",
-    "width": 200,
-    "collapsed": true
+    "width": 200
   },
   "right": {
     "id": "9003d078f8dbc4ed",
@@ -2785,8 +2783,8 @@
   },
   "active": "ad29c534102b7cd5",
   "lastOpenFiles": [
-    "Notes/Kane-Mele模型.md",
     "Notes/离散对称性.md",
+    "Notes/Kane-Mele模型.md",
     "Notes/Haldane模型.md",
     "Notes/QHE和AHE.md",
     "Notes/Hamiltonian Formulation of EM.md",
