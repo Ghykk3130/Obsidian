@@ -91,6 +91,9 @@ $$\begin{align}
 $$\mathcal{T}H\mathcal{T}^{-1}=H$$
 所以Kane-Mele模型具有时间反演对称性。
 
+>[!Success] Proposition 2.2
+>Kane-Mele model preserves times-reversal symmetry.
+
 接下来，注意到：
 $$\begin{align}
 \mathcal{T} \psi_{k}\mathcal{T}^{-1} & = \begin{pmatrix}
@@ -108,7 +111,7 @@ c_{A,-k,\uparrow} \\
 c_{B,-k,\uparrow} \\
 c_{A,-k,\downarrow} \\
 c_{B,-k,\downarrow}
-\end{pmatrix}=i( s ^{y}\otimes I_{2\times {2}}) \psi_{-k}
+\end{pmatrix}=(i s ^{y}\otimes I_{2\times {2}}) \psi_{-k}
 \end{align}$$
 其中$s^{y}=\sigma_{y}$为Pauli矩阵。
 
@@ -145,18 +148,31 @@ $$\begin{align}
 \mathcal{T}H\mathcal{T}^{-1} & = \sum_{k}\psi ^{\dagger}_{-k}(i s ^{y}\otimes I_{2 \times 2})^{\dagger}H^{*}(k)(i s ^{y}\otimes I_{2 \times 2})\psi_{-k} \\
  & = \sum_{k}\psi ^{\dagger}_{-k}(i s ^{y}\otimes I _{ 2 \times 2})^{\dagger} K H(k)K(i s ^{y}\otimes I_{2 \times 2})\psi_{-k}
 \end{align}$$
-容易证明$K(i s ^{y}\otimes I_{2 \times 2})= (K i s^{y})\otimes(KI_{2 \times 2})=(is ^{y}K)\otimes(I_{2 \times 2}K)=(is ^{y}\otimes I_{2\times 2})K$。接下来证明：
-
->[!Success] Proposition 2.2
->$K^{\dagger}=K$
-## Proof.
-
-首先回忆起反线性算符hermitian的定义。任取$\ket{\psi},\ket{\phi}$，我们有：
-$$\bra{K ^{\dagger}\psi} \phi\rangle= \bra{K\phi} \psi\rangle$$
-而显然$\bra{K\phi}\psi\rangle=\bra{K\psi}\phi\rangle$。
->[!Right]
->$\blacksquare$
-
-于是$(i s ^{y}\otimes I_{2 \times 2})^{\dagger} K=[K^{\dagger}(i s ^{y}\otimes I_{2 \times 2})]^{\dagger}=[ K (i s ^{y}\otimes I_{2 \times 2})]^{\dagger}=[ (i s ^{y}\otimes I_{2 \times 2})K]^{\dagger}$。
-
+由于$is ^{y}\otimes I_{2\times 2}$是实矩阵，所以$K(i s ^{y}\otimes I_{2 \times 2})=(is ^{y}\otimes I_{2\times 2})K$。且注意到$is ^{y},\ I_{2\times 2}$都是unitary的。于是$(i s^{y}\otimes I_{2\times 2})^{-1}=(is ^{y})^{-1}\otimes I_{2\times 2}^{-1}=(i s ^{y})^{\dagger}\otimes I_{2\times 2}^{\dagger}=(is ^{y}\otimes I_{2\times 2})^{\dagger}$。那么：
+$$\begin{align}
+\mathcal{T}H\mathcal{T}^{-1} & = \sum_{k}\psi ^{\dagger}_{-k}K(is ^{y}\otimes I_{2\times 2})^{\dagger}H(k)(is ^{y}\otimes I_{2 \times 2})K\psi_{-k} \\
+ & = \sum_{k}\psi ^{\dagger}_{-k}[(is ^{y}\otimes I_{2\times 2})K]^{-1} H(k)[(is ^{y}\otimes I_{2\times 2})K]\psi_{-k}
+\end{align}$$
+定义$\Theta=(is ^{y}\otimes I_{2\times 2})K$。于是便有：
+$$\mathcal{T}H \mathcal{T}^{-1}=\sum_{k}\psi ^{\dagger}_{-k}\Theta ^{-1}H(k)\Theta \psi_{-k}$$
+而由于$\mathcal{T}H\mathcal{T}^{-1}=H=\sum_{k}\psi ^{\dagger}_{k}H(k)\psi_{k}=\sum_{k}\psi ^{\dagger}_{-k}H(-k)\psi_{-k}$。所以必有：
+$$\Theta ^{-1}H(k)\Theta=H(-k)$$
+而容易计算：
+$$\begin{align}
+\Theta ^{-1}H(k)\Theta & = \begin{pmatrix}
+0 & -I_{2 \times 2} \\
+I_{2\times 2} & 0
+\end{pmatrix} \begin{pmatrix}
+H^{*}_{\uparrow}(k) & 0 \\
+0 & H^{*}_{\downarrow}(k)
+\end{pmatrix} \begin{pmatrix}
+0 & I_{2\times 2} \\
+-I_{2\times 2} & 0
+\end{pmatrix} \\
+ & = \begin{pmatrix}
+H^{*}_{\downarrow}(k ) & 0 \\
+0 & H^{*}_{\uparrow}(k)
+\end{pmatrix}
+\end{align}$$
+于是必有$H_{\uparrow}(-k)=H^{*}_{\downarrow}(k),\ H_{\downarrow}(-k)=H^{*}_{\uparrow}(k)$。
 
