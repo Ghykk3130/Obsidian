@@ -137,7 +137,12 @@ $$H(k)=v_{F}\boldsymbol{\alpha}\cdot \mathbf{q}-m \beta$$
 在$K^{'}$点附近，$\mathbf{d}=(-v_{F}q_{y},v_{F}q_{x},m)$：
 $$H(k)=v_{F}\boldsymbol{\alpha}\cdot     \tilde{\mathbf{q}}  +m\beta$$
 其中$v_{F}= \frac{3}{2}at,\ m=3\sqrt{ 3 }t^{'},\ \boldsymbol{\alpha}=(\alpha^{1},\alpha^{2})=(\tau^{y},\tau^{x}),\ \beta=\tau^{z},\ \mathbf{q}=(q_{x},q_{y}),\  \tilde{\mathbf{q}}=(q_{x},-q_{y})$。容易计算：
-$$E_{\pm}(\mathbf{k})= \pm d(\mathbf{k})$$
+$$E_{\pm}(\mathbf{k})= \pm d(\mathbf{k})=\pm \sqrt{ v_{F}^{2}q^{2}+m^{2} }$$
+我们发现，正是质量项$m$的出现阻止了能隙闭合。
+
+定义$\hat{\mathbf{d}}= \frac{\mathbf{d}}{d}$。于是$\hat{\mathbf{d}}$是一个$T^{2}\rightarrow S^{2}$的映射。可以计算Chern数。可以计算，系统Chern数为：
+$$C_{1}= \text{sgn}(m)=\text{sgn}(t^{'})$$
+若$t^{'}\neq 0$，则必有$C_{1}=1\text{ or }-1$。由TKNN公式$\sigma_{H}=C_{1} \frac{e^{2}}{h}$可得非零Hall电导率。但是由于能隙存在，系统又是绝缘体。所以被称为Chern绝缘体。
 
 
 
@@ -153,7 +158,8 @@ $$E_{\pm}(\mathbf{k})= \pm d(\mathbf{k})$$
 
 
 
-定义$\hat{\mathbf{d}}= \frac{\mathbf{d}}{d}$。于是$\hat{\mathbf{d}}$是一个$T^{2}\rightarrow S^{2}$的映射。
+
+
 
 
 
