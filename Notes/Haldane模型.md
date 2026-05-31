@@ -13,6 +13,8 @@ $$\begin{align}
 \end{align}$$
 考虑Fourier变换$c_{A,i}= \frac{1}{\sqrt{ N }}\sum_{k}e^{ikR_{i}}c_{A,k},\ c_{B,i}= \frac{1}{\sqrt{ N }}\sum_{k}e^{ikR_{i}}c_{B,k}$。由[[石墨烯的tight-binding模型]]可得这一项为：
 $$-t\sum_{k}(f(k)c^{\dagger}_{A,k}c_{B,k}+f^{*}(k)c_{B,k}^{\dagger}c_{A,k}),\ f(k)=\sum_{\delta}e^{ik\delta}$$
+容易计算：
+$$f(k)  = e^{iak_{x}}+e^{- i \frac{a}{2}k_{x}}2 \cos\left(  \frac{\sqrt{ 3 }}{2}ak_{y} \right)$$
 类似地，第二项可以写为：
 $$\begin{align}
 -t^{'}\sum_{i,\delta^{'}}e^{i\phi_{i,i+\delta^{'}}}(c^{\dagger}_{A,i}c_{A,i+\delta^{'}}+c^{\dagger}_{B,i}c_{B,i+\delta^{'}})
@@ -119,7 +121,30 @@ $$\boxed{E_{\pm}(k)=\pm \sqrt{ t^{2}|f(k)|^{2}+4t^{'2}g^{2}(k) }}$$
 
 # 3. Haldane模型与拓扑
 
+记$\psi_{k}= \begin{pmatrix}c^{}_{A,k} \\ c_{B,k}\end{pmatrix}$。那么hamiltonian写为$H=\sum_{k}\psi_{k}^{\dagger}H(k)\psi_{k}$。其中：
+$$\begin{align}
+H(k) & = -t\mathrm{Re}f(k)\tau^{x}+t\mathrm{Im}f(k)\tau^{y}+2t^{'}g(k)\tau^{z}  = \mathbf{d}(k)\cdot \boldsymbol{\tau}
+\end{align}$$
+我们有$\mathbf{d}(k)=(-t\mathrm{Re}f(k),t\mathrm{Im}f(k),2t^{'}g(k))$。接下来在$K= \frac{4\pi}{3a}\left( 0, \frac{1}{\sqrt{ 3 }} \right),\ K^{'}= \frac{4\pi}{3a}\left( 0,- \frac{1}{\sqrt{ 3 }} \right)$附近展开能谱。
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+定义$\hat{\mathbf{d}}= \frac{\mathbf{d}}{d}$。于是$\hat{\mathbf{d}}$是一个$T^{2}\rightarrow S^{2}$的映射。
 
 
 

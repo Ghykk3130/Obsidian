@@ -2663,7 +2663,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 200,
+    "collapsed": true
   },
   "right": {
     "id": "9003d078f8dbc4ed",
@@ -2769,11 +2770,11 @@
   },
   "active": "2bc65030a174d0e2",
   "lastOpenFiles": [
-    "Notes/Graphene中的Dirac cone.md",
+    "Notes/石墨烯的tight-binding模型.md",
     "Notes/Haldane模型.md",
+    "Notes/Graphene中的Dirac cone.md",
     "Notes/代数拓扑基本概念.md",
     "Pictures/Pasted image 20260530191658.png",
-    "Notes/石墨烯的tight-binding模型.md",
     "Pictures/Pasted image 20260530170459.png",
     "Pictures/Pasted image 20260530170136.png",
     "Notes/Hamilton原理与Lagrange方程.md",
