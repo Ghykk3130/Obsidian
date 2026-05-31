@@ -1,3 +1,5 @@
+# 1. Kane-Mele模型
+
 考虑蜂窝晶格。在[[Haldane模型]]的基础上加入自旋。假设电子在进行次邻近跃迁时，由于SOI产生了依赖自旋的项。Hamiltonian写为：
 $$\begin{align}
 H & = -t\sum_{\langle i,j\rangle,\sigma}(c^{\dagger}_{A,i,\sigma}c_{B,j,\sigma}+c_{B,j,\sigma}^{\dagger}c_{A,i,\sigma}  )-t^{'}\sum_{\langle \langle i,j\rangle \rangle,\sigma}\sigma e^{i\phi_{ij}}(c^{\dagger}_{A,i,\sigma}c_{A,j,\sigma}+c^{\dagger}_{B,i,\sigma}c_{B,j,\sigma})
@@ -44,6 +46,11 @@ $$\begin{align}
  & = \frac{e}{2\pi}\text{sgn}(t^{'})
 \end{align}$$
 当$t^{'}\neq 0$时，自旋流非零。
+# 2. Kane-Mele模型的对称性
+
+对于任意算子$X$，由于：
+$$\bra{\psi} X\ket{\psi}= \bra{X^{\dagger}\psi} \psi\rangle=\bra{\mathcal{T}\psi} \mathcal{T}X^{\dagger}\psi\rangle=\bra{\mathcal{T}\psi} \mathcal{T}X^{\dagger}\mathcal{T}^{-1}\ket{\mathcal{T}\psi}  $$
+所以时间反演后的算子变为$\mathcal{T}X^{\dagger}\mathcal{T}^{-1}$。
 
 
 
