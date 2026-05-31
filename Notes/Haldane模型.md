@@ -129,14 +129,16 @@ H(k) & = -t\mathrm{Re}f(k)\tau^{x}+t\mathrm{Im}f(k)\tau^{y}+2t^{'}g(k)\tau^{z}  
 \end{align}$$
 我们有$\mathbf{d}(k)=(-t\mathrm{Re}f(k),t\mathrm{Im}f(k),2t^{'}g(k))$。接下来在$K= \frac{4\pi}{3a}\left( 0, \frac{1}{\sqrt{ 3 }} \right),\ K^{'}= \frac{4\pi}{3a}\left( 0,- \frac{1}{\sqrt{ 3 }} \right)$附近展开能谱。
 $$\begin{align}
-  & K:\ f(k)=f(K+q)\approx \frac{3}{2 }a(iq_{x}-q_{y}),\ g(k)=g(K+1)\approx - \frac{3}{2}\sqrt{ 3 } a \\
+  & K:\ f(k)=f(K+q)\approx \frac{3}{2 }a(iq_{x}-q_{y}),\ g(k)=g(K+q)\approx - \frac{3}{2}\sqrt{ 3 } a \\
  & K^{'}:\ f(k)=f(K+q)\approx \frac{3}{2}a(iq_{x}+q_{y}),\ g(k)=g(K+q)\approx \frac{3}{2}\sqrt{ 3 }a
 \end{align}$$
 那么在$K$点附近，$\mathbf{d}=(v_{F}q_{y},v_{F}q_{x}, -m)$：
 $$H(k)=v_{F}\boldsymbol{\alpha}\cdot \mathbf{q}-m \beta$$
 在$K^{'}$点附近，$\mathbf{d}=(-v_{F}q_{y},v_{F}q_{x},m)$：
 $$H(k)=v_{F}\boldsymbol{\alpha}\cdot     \tilde{\mathbf{q}}  +m\beta$$
-其中$v_{F}= \frac{3}{2}at,\ m=3\sqrt{ 3 }t^{'},\ \boldsymbol{\alpha}=(\alpha^{1},\alpha^{2})=(\tau^{y},\tau^{x}),\ \beta=\tau^{z},\ \mathbf{q}=(q_{x},q_{y}),\  \tilde{\mathbf{q}}=(q_{x},-q_{y})$。
+其中$v_{F}= \frac{3}{2}at,\ m=3\sqrt{ 3 }t^{'},\ \boldsymbol{\alpha}=(\alpha^{1},\alpha^{2})=(\tau^{y},\tau^{x}),\ \beta=\tau^{z},\ \mathbf{q}=(q_{x},q_{y}),\  \tilde{\mathbf{q}}=(q_{x},-q_{y})$。容易计算：
+$$E_{\pm}(\mathbf{k})= \pm d(\mathbf{k})$$
+
 
 
 
