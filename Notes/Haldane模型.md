@@ -62,9 +62,43 @@ $$\boxed{E_{\pm}(k)=\pm \sqrt{ t^{2}|f(k)|^{2}+4t^{'2}g^{2}(k) }}$$
 我们一般性地定义同伦：
 
 >[!Note] Definition 2.1
->Let $X,Y$ be topological spaces. Given $f,g:X\rightarrow Y$, we say $f,g$ are homotopic to each other if there exists a continuous function $F:X\times[0,1]\rightarrow Y$ such that
+>Let $X,Y$ be topological spaces. Given continuous mappings $f,g:X\rightarrow Y$, we say $f,g$ are homotopic to each other if there exists a continuous function $F:X\times[0,1]\rightarrow Y$ such that
 >$$F(x,0)=f(x),\ F(x,1)=g(x)$$
 >Write $f\sim g$.
+
+可以证明，互为同伦的映射构成等价类。将这些等价类收集起来，某些情况下可以构成群。考虑如下情况：
+
+若$X$是具有周期性结构的$S^{n}$，那么函数$f:X=S^{n}\rightarrow Y$不管在$Y$中看起来多复杂，其在$S^{n}$中绕一圈后必定在$Y$中也绕回原来的位置。
+## Ex:
+
+例如$f:S^{1}\rightarrow Y$。考虑$f$从$f(e^{i\theta})$出发。显然必有$f(e^{i\theta})=f(e^{i(\theta+ 2\pi)})$。所以不管在$0\sim 2\pi$之间发生了什么，绕到$2\pi$后又必须回来。
+
+>[!Note] Definition 2.2
+>Given a topological space $Y$, $y_{0}\in Y,\ s_{0}\in S^{n}$, define its nth order homotopy group as:
+>$$\pi_{n}(Y,y_{0})=\{ f:S^{n}\rightarrow Y |f\text{ continuous, }f(s_{0})=y_{0}\}/ \sim$$
+
+由于$S^{n}$的周期性结构，$s_{0}$点的选取是不重要的。
+## Ex:
+
+例如$\pi_{1}(Y,y_{0})$就是必定经过$y_{0}$的一些loop。
+
+将$S^{n}$记为$[0,1]^{n}$，其中认为$0$和$1$等价，实际上应该写成商集。那么构建这样一种运算：
+
+>[!Note] Definition 2.3
+>Given $f,g:S^{n}=[0,1]^{n}\rightarrow Y$, $f(0)=g(0)=y_{0}$, $s_{1}=\left( \frac{1}{2}, \frac{1}{2},\dots \right),\ s_{2}=(1,1,\dots)$, define the product of $f,g$ as:
+>$$f*g(s)= \left\{\begin{align}
+ & g(2s),\ 0\leq s< s_{1} \\
+ & f(2s-y_{2}),\ s_{1}\leq x\leq s_{2}
+\end{align}\right.$$
+
+可以证明，$[f*g]=[f]*[g]$。这构成了同伦群的群运算。
+
+对于集合$Y$，若其中任意两点之间存在一条曲线连接，那么称$Y$是arcwise connected的。可以证明，若$Y$是arcwise connected的，那么$\pi_{n}(Y,y_{0}) \cong \pi_{n}(Y,y_{1}),\ \forall y_{0},\ y_{1}\in Y$。所以我们省略$y_{0}$的标记，直接将同伦群记为$\pi_{n}(Y)$。
+
+
+
+
+
 
 
 
