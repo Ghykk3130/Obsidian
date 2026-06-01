@@ -156,7 +156,7 @@ $$\begin{align}
 定义$\Theta=(is ^{y}\otimes I_{2\times 2})K$。于是便有：
 $$\mathcal{T}H \mathcal{T}^{-1}=\sum_{k}\psi ^{\dagger}_{-k}\Theta ^{-1}H(k)\Theta \psi_{-k}$$
 而由于$\mathcal{T}H\mathcal{T}^{-1}=H=\sum_{k}\psi ^{\dagger}_{k}H(k)\psi_{k}=\sum_{k}\psi ^{\dagger}_{-k}H(-k)\psi_{-k}$。所以必有：
-$$\Theta ^{-1}H(k)\Theta=H(-k)$$
+$$\boxed{\Theta ^{-1}H(k)\Theta=H(-k)}$$
 而容易计算：
 $$\begin{align}
 \Theta ^{-1}H(k)\Theta & = \begin{pmatrix}
@@ -277,7 +277,8 @@ $$\begin{align}
 \end{pmatrix} \\
  & = H_{\uparrow}(-k)
 \end{align}$$
-同理$\tau^{x}H_{\downarrow}(k)\tau^{x}=H_{\downarrow}(-k)$。于是$\pi ^{\dagger}H(k)\pi=H(-k)$。那么：
+同理$\tau^{x}H_{\downarrow}(k)\tau^{x}=H_{\downarrow}(-k)$。于是：
+$$\boxed{\pi ^{\dagger}H(k)\pi=H(-k)}$$那么：
 $$\begin{align}
 \mathcal{P}H\mathcal{P}^{\dagger} & = \sum_{k}\psi ^{\dagger}_{-k}H(-k)\psi_{-k} \\
  & = \sum_{k}\psi ^{\dagger}_{k}H(k)\psi_{k} \\
@@ -287,5 +288,35 @@ $$\begin{align}
 >[!Success] Proposition 2.3
 >The Kane-Mele model preserves the space-inversion symmetry.
 
+# 3. Fu-Kane公式
+
+令$\boldsymbol{\tau},\ \mathbf{s}$分别为动量$\pm k$，自旋$\uparrow,\downarrow$的Pauli矩阵。定义Dirac矩阵：
+
+>[!Note] Definition 3.1
+>Define the Dirac matrices:
+>$$\Gamma^{1,2,3,4,5}=(I_{2\times 2}\otimes \tau^{x},I_{2\times 2}\otimes \tau^{y},s ^{x}\otimes \tau^{z},s ^{y} \otimes \tau^{z}, s ^{ z}\otimes \tau^{z})$$
+>Define the commutators of Dirac matrices:
+>$$\Gamma^{ab}= \frac{[\Gamma^{a},\Gamma^{b}]}{2i}$$
+
+
+可以证明，$I_{4\times 4},\ \Gamma^{a},\ \Gamma^{ab}$是16个互相线性独立的矩阵。它们构成$\text{Mat}_{4\times 4}(\mathbb{C})$的基。那么记Kane-Mele模型的hamiltonian为：
+$$H(k)=d_{0}(k)I+\sum_{a}d_{a}(k)\Gamma^{a}+\sum_{a<b}d_{ab}(k)\Gamma^{ab}$$
+可以硬算：
+$$\begin{align}
+ & \Theta ^{-1}\Gamma^{1}\Theta=\Gamma_{1} \\
+ & \Theta ^{-1}\Gamma^{a}\Theta=-\Gamma^{a},\ a>1 \\
+ & \Theta ^{-1}\Gamma^{1b}\Theta=\Gamma^{1b},\ b>1 \\
+ & \Theta ^{-1}\Gamma^{ab}\Theta=-\Gamma^{ab},\ 1<a<b \\
+ & \pi ^{\dagger}\Gamma^{1}\pi=\Gamma_{1} \\
+ & \pi ^{\dagger}\Gamma^{a}\pi=-\Gamma^{a},\ a>1 \\
+ & \pi ^{\dagger} \Gamma^{1b}\pi=-\Gamma^{1b},\ b>1 \\
+ & \pi ^{\dagger}\Gamma^{ab}\pi=\Gamma^{ab},\ 1<a<b
+\end{align}$$
+那么：
+$$\Theta ^{-1}H(k)\Theta=d_{0}(k)I+d_{1}(k)\Gamma^{1}-\sum_{a=2}^{5}d_{a}(k)\Gamma^{a}+\sum_{b=2}^{5}d_{1b}(k)\Gamma^{1b}-\sum_{1<a<b}^{5}d_{ab}(k)\Gamma^{ab}$$
+我们知道$\Theta ^{-1}H(k)\Theta=H(-k)$。所以$d_{0},d_{1},d_{1b},\ b>1$为偶函数，$d_{a},d_{ab},\ a,b>1$为奇函数。而：
+$$\pi ^{\dagger}H(k)\pi=d_{0}(k)I+d_{1}(k)\Gamma^{1}-\sum_{a=2}^{5}d_{a}(k)\Gamma^{a}-\sum_{b=2}^{5}d_{1b}(k)\Gamma^{1b}+\sum_{1<a<b}^{5}d_{ab}(k)\Gamma^{ab}$$
+我们知道$\pi ^{\dagger}H(k)\pi=H(-k)$。所以$d_{0},d_{1},d_{ab},\ a,b>1$为偶函数，$d_{a},d_{1b},\ b>1$为奇函数。故$d_{ab}=0,\ d_{1b}=0,\ a,b>1$。所以：
+$$H(k)=d_{0}(k)I+\sum_{a=1}^{5}d_{a}(k)\Gamma^{a}$$
 
 
