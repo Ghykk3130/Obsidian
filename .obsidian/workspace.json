@@ -2608,9 +2608,23 @@
               "icon": "lucide-file",
               "title": "Kane-Mele模型"
             }
+          },
+          {
+            "id": "40941fb841ce9ac6",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Notes/表面态.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "表面态"
+            }
           }
         ],
-        "currentTab": 185
+        "currentTab": 186
       }
     ],
     "direction": "vertical"
@@ -2694,7 +2708,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Notes/Kane-Mele模型.md",
+                "file": "Notes/表面态.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -2704,7 +2718,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for Kane-Mele模型"
+              "title": "Backlinks for 表面态"
             }
           },
           {
@@ -2782,11 +2796,12 @@
       "obsidian-shellcommands:Shell commands: Custom variables": false
     }
   },
-  "active": "ad29c534102b7cd5",
+  "active": "40941fb841ce9ac6",
   "lastOpenFiles": [
+    "Notes/Kane-Mele模型.md",
+    "Notes/表面态.md",
     "Notes/Haldane模型.md",
     "Notes/石墨烯的tight-binding模型.md",
-    "Notes/Kane-Mele模型.md",
     "Notes/离散对称性.md",
     "Notes/QHE和AHE.md",
     "Notes/Hamiltonian Formulation of EM.md",
@@ -2819,7 +2834,6 @@
     "Notes/AB效应.md",
     "Notes/Berry curvature的时间和空间反演对称性.md",
     "Notes/半经典输运.md",
-    "Notes/Hubbard模型.md",
     "Pictures/drawing.pdf",
     "Pictures/drawing.html",
     "Untitled",
