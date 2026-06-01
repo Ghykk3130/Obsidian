@@ -2662,7 +2662,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "时间反演",
+                "query": "石墨烯",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -2782,14 +2782,14 @@
       "obsidian-shellcommands:Shell commands: Custom variables": false
     }
   },
-  "active": "a39b5f6c1df34942",
+  "active": "ad29c534102b7cd5",
   "lastOpenFiles": [
-    "Notes/离散对称性.md",
-    "Notes/Kane-Mele模型.md",
     "Notes/Haldane模型.md",
+    "Notes/石墨烯的tight-binding模型.md",
+    "Notes/Kane-Mele模型.md",
+    "Notes/离散对称性.md",
     "Notes/QHE和AHE.md",
     "Notes/Hamiltonian Formulation of EM.md",
-    "Notes/石墨烯的tight-binding模型.md",
     "Notes/Graphene中的Dirac cone.md",
     "Notes/代数拓扑基本概念.md",
     "Pictures/Pasted image 20260530191658.png",

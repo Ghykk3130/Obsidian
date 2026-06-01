@@ -69,7 +69,7 @@ $$\begin{align}
 >[!Right]
 >$\blacksquare$
 
-对于spin-1/2粒子，时间反演算子为$-i\sigma_{y}$。它将$\ket{\uparrow}$映成$\ket{\downarrow}$，将$\ket{\downarrow}$映成$-\ket{\uparrow}$。对于动量本征态$\ket{k}$，时间反演算子将动量反转为$\ket{-k}$。于是：
+对于spin-1/2粒子，时间反演算子为$-i\sigma_{y}K$。它将$\ket{\uparrow}$映成$\ket{\downarrow}$，将$\ket{\downarrow}$映成$-\ket{\uparrow}$。对于动量本征态$\ket{k}$，时间反演算子将动量反转为$\ket{-k}$。于是：
 $$\begin{align}
 \mathcal{T}c_{k,\uparrow}\mathcal{T}^{-1} & = \mathcal{T}\ket{0_{k,\uparrow}} \bra{k,\uparrow} \mathcal{T}^{-1} \\
  & = \ket{\mathcal{T}0_{k,\uparrow}} \bra{\mathcal{T}k\uparrow} \\
@@ -318,5 +318,22 @@ $$\Theta ^{-1}H(k)\Theta=d_{0}(k)I+d_{1}(k)\Gamma^{1}-\sum_{a=2}^{5}d_{a}(k)\Gam
 $$\pi ^{\dagger}H(k)\pi=d_{0}(k)I+d_{1}(k)\Gamma^{1}-\sum_{a=2}^{5}d_{a}(k)\Gamma^{a}-\sum_{b=2}^{5}d_{1b}(k)\Gamma^{1b}+\sum_{1<a<b}^{5}d_{ab}(k)\Gamma^{ab}$$
 我们知道$\pi ^{\dagger}H(k)\pi=H(-k)$。所以$d_{0},d_{1},d_{ab},\ a,b>1$为偶函数，$d_{a},d_{1b},\ b>1$为奇函数。故$d_{ab}=0,\ d_{1b}=0,\ a,b>1$。所以：
 $$H(k)=d_{0}(k)I+\sum_{a=1}^{5}d_{a}(k)\Gamma^{a}$$
+
+>[!Success] Proposition 3.1
+>For the Kane-Mele model, the symmetry requires $H(k)=d_{0}(k)I+\sum_{a=1}^{5}d_{a}(k)\Gamma^{a}$
+
+那么在TRIM点$\Gamma_{i}$，由于$-k=k$，且$d_{a},\ a>1$都是奇函数，所以$H(\Gamma_{i})=d_{0}(\Gamma_{i})I+d_{1}(\Gamma_{i})\Gamma^{1}$。令本征态为$\ket{u(\Gamma_{i})}$，容易解得色散关系：
+$$\begin{align}
+ & [d_{0}(\Gamma_{i})I+d_{1}(\Gamma_{i})\Gamma^{1}]\ket{u(\Gamma_{i})} =\lambda \ket{u(\Gamma_{i})} \\
+\implies & \lambda_{\pm}=d_{0}(\Gamma_{i})\pm|d_{1}(\Gamma_{i})| 
+\end{align}$$
+注意到$\Gamma^{1}=I_{2\times 2}\otimes \tau^{x}=\pi$，我们可以得到空间反演后的本征态：
+$$\pi \ket{u(\Gamma_{i})} = \frac{\lambda-d_{0}(\Gamma_{i})}{d_{1}(\Gamma_{i})}\ket{u(\Gamma_{i})} $$我们研究绝缘体。假设电子处在$\lambda_{-}$。于是：
+$$\begin{align}
+\pi \ket{u(\Gamma_{i})} =- \frac{|d_{1}(\Gamma_{i}) |}{d_{1}(\Gamma_{i})} \ket{u(\Gamma_{i})} 
+\end{align}$$
+所以$\ket{u(\Gamma_{i})}$的宇称为$\delta_{i}=-\text{sgn}(d_{1}(\Gamma_{i}))$。
+
+
 
 
