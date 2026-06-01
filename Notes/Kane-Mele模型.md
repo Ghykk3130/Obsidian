@@ -332,7 +332,14 @@ $$\pi \ket{u(\Gamma_{i})} = \frac{\lambda-d_{0}(\Gamma_{i})}{d_{1}(\Gamma_{i})}\
 $$\begin{align}
 \pi \ket{u(\Gamma_{i})} =- \frac{|d_{1}(\Gamma_{i}) |}{d_{1}(\Gamma_{i})} \ket{u(\Gamma_{i})} 
 \end{align}$$
-所以$\ket{u(\Gamma_{i})}$的宇称为$\delta_{i}=-\text{sgn}(d_{1}(\Gamma_{i}))$。
+所以$\ket{u(\Gamma_{i})}$的宇称为$\delta_{i}=-\text{sgn}(d_{1}(\Gamma_{i}))$。我们定义Fu-Kane公式：
+$$\boxed{(-1)^{\nu}=\prod_{i}\delta_{i}}$$
+不妨考虑系统所有hermitian算子构成的空间$\text{Herm}$。不妨设$\epsilon_{F}=0$，那么依据$0$是否属于这些算子的能谱，可将空间分解为有能隙算子和无能隙算子。即$\text{Herm}=\text{Herm}^{\text{gap}} \oplus\text{Herm}^{\text{gapless}}$。那么从$T^{2}\rightarrow\text{Herm}^{\text{gap}}$可以构成一些同伦映射。系统hamiltonian就是这样的映射。可以证明$[T^{2},\text{Herm}^{\text{gap}}] \cong \mathbb{Z}_{2}$。可以证明$\nu$就是hamiltonian构成的同伦类的isomorphism。于是$\nu$是一个$\mathbb{Z}_{2}$拓扑不变量。其中，$\nu=0$称为平凡绝缘体。$\nu=1$称为拓扑绝缘体。
+
+
+
+
+
 
 
 
