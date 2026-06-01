@@ -113,7 +113,7 @@ c_{A,-k,\downarrow} \\
 c_{B,-k,\downarrow}
 \end{pmatrix}=(i s ^{y}\otimes I_{2\times {2}}) \psi_{-k}
 \end{align}$$
-其中$s^{y}=\sigma_{y}$为Pauli矩阵。
+此处两边夹上$\mathcal{T}$仅仅是对于$\psi_{k}$矩阵中的元素作pointwise的作用，而不是对矩阵本身作用。其中$s^{y}=\sigma_{y}$为Pauli矩阵。
 
 >[!Quote] 矩阵直积
 >矩阵直积规定为：
@@ -175,4 +175,117 @@ H^{*}_{\downarrow}(k ) & 0 \\
 \end{pmatrix}
 \end{align}$$
 于是必有$H_{\uparrow}(-k)=H^{*}_{\downarrow}(k),\ H_{\downarrow}(-k)=H^{*}_{\uparrow}(k)$。
+
+## 空间反演对称性
+
+对于任意可观测量$X$，由于：
+$$\bra{\psi} X\ket{\psi} = \bra{\mathcal{P}\psi} \mathcal{P}X \mathcal{P}^{\dagger}\ket{\mathcal{P}\psi} $$
+所以空间反演后可观测量变为$\mathcal{P}X\mathcal{P}^{\dagger}$。
+
+我们先研究$\mathcal{P}$对湮灭算符的作用：
+$$\begin{align}
+\mathcal{P}^{}c_{A,k,\sigma}\mathcal{P}^{\dagger} & = \mathcal{P}^{}\ket{0_{A,k,\sigma}} \bra{A,k,\sigma} \mathcal{P}^{\dagger} \\
+ & = \ket{\mathcal{P}0_{A,k,\sigma}} \bra{\mathcal{P}A,k,\sigma} \\
+ & = \ket{0_{B,-k,\sigma}} \bra{B,-k,\sigma}  \\
+ & = c_{B,-k,\sigma}  
+\end{align}$$
+>[!Quote]
+>具体来说，要计算$\mathcal{P}\ket{A,k,\sigma}$，可以考虑平移。在实空间中，首先对于$R$指示的格子中的$A$点有：
+>$$\ket{A,R,\sigma} =T_{R}\ket{A,0,\sigma} $$
+>由于$\mathcal{P}T_{R}\mathcal{P}^{\dagger}=\exp\left( - \frac{i}{\hbar}\mathcal{P}p\mathcal{P}^{\dagger}R \right)=\exp\left(  \frac{i}{\hbar}pR \right)=T_{-R}$，我们有：
+>$$\begin{align}
+\mathcal{P}\ket{A,R,\sigma} & = \mathcal{P}T_{R}\ket{A,0,\sigma}  \\
+ & = T_{-R}\mathcal{P}\ket{A,0,\sigma}  \\
+ & = T_{-R}\mathcal{P}T_{r_{A}}\ket{0,0,\sigma}  \\
+ & = T_{-R}T_{-r_{A}}\mathcal{P}\ket{0,0,\sigma}=T_{-R}T_{-r_{A}}\ket{0,0,\sigma} =T_{-R}\ket{B,0,\sigma}=\ket{B,-R,\sigma}    
+\end{align} $$
+>Fourier变换得到：
+>$$\begin{align}
+\ket{A,k,\sigma}  & = \frac{1}{\sqrt{ N }}\sum_{R}e^{-ikR}\ket{A,R,\sigma}  \\
+ \implies & \mathcal{P}\ket{A,k,\sigma}  & = \frac{1}{\sqrt{ N }}\sum_{R}e^{-ikR}\ket{B,-R,\sigma}  \\
+ & = \frac{1}{\sqrt{ N }}\sum_{R}e^{ikR}\ket{B,R,\sigma}  \\
+ & = \frac{1}{\sqrt{ N }}\sum_{R}e^{-i(-k)R}\ket{B,R,\sigma}  \\
+ & =  \ket{B,-k,\sigma} 
+\end{align}$$
+>对$B$同理。
+
+同理，$\mathcal{P}c_{B,k,\sigma}\mathcal{P}^{\dagger}=c_{A,-k,\sigma}$。于是：
+$$\begin{align}
+\mathcal{P}\psi_{k}\mathcal{P}^{-1} & = \begin{pmatrix}
+c_{B,-k,\uparrow} \\
+c_{A,-k,\uparrow} \\
+c_{B,-k,\downarrow} \\
+c_{A,-k,\downarrow}
+\end{pmatrix}= \begin{pmatrix}
+0 & 1 & 0 & 0 &  \\
+1 & 0 & 0 & 0 \\
+0 & 0 & 0 & 1 \\
+0 & 0 & 1 & 0
+\end{pmatrix} \begin{pmatrix}
+c_{A,-k,\uparrow} \\
+c_{B,-k,\uparrow} \\
+c_{A,-k,\downarrow} \\
+c_{B,-k,\downarrow}
+\end{pmatrix}= (I_{2\times 2}\otimes \tau^{x})\psi_{-k}
+\end{align}$$
+于是：
+$$\begin{align}
+\mathcal{P}H\mathcal{P}^{\dagger} & = \mathcal{P}\sum_{k}\psi ^{\dagger}_{k}H(k)\psi_{k}\mathcal{P}^{\dagger} \\
+ & = \sum_{k}\mathcal{P}\psi ^{\dagger}_{k}\mathcal{P}^{\dagger}\mathcal{P}H(k)\mathcal{P}^{\dagger} \mathcal{P}\psi_{k}\mathcal{P}^{\dagger} \\
+ & = \sum_{k}\psi ^{\dagger}_{-k}(I_{2 \times 2}\otimes \tau^{x})^{\dagger}H(k)(I_{2 \times 2}\otimes \tau^{x})\psi_{-k}
+\end{align}$$
+定义$\pi=I_{2\times 2}\otimes \tau^{x}$。那么可以写：
+$$\begin{align}
+\mathcal{P}H\mathcal{P}^{\dagger}= \sum_{k}\psi ^{\dagger}_{-k}\pi ^{\dagger}H(k)\pi \psi_{-k}
+\end{align}$$
+而：
+$$\begin{align}
+\pi ^{\dagger}H(k)\pi & = \begin{pmatrix}
+\tau^{x} & 0 \\
+0 & \tau^{x} 
+\end{pmatrix} \begin{pmatrix}
+H_{\uparrow}(k) & 0 \\
+0 & H_{ \downarrow}(k)
+\end{pmatrix}\begin{pmatrix}
+\tau^{x} & 0 \\
+0 & \tau^{x}
+\end{pmatrix} \\
+ & = \begin{pmatrix}
+\tau^{x}H_{\uparrow}(k)\tau^{x} & 0 \\
+0 & \tau^{x}H_{\downarrow}(k)\tau^{x}
+\end{pmatrix}
+\end{align}$$
+可以计算：
+$$\begin{align}
+\tau^{x}H_{\uparrow}(k)\tau^{x} & = \begin{pmatrix}
+0 & 1 \\
+1 & 0
+\end{pmatrix} \begin{pmatrix}
+2t^{'}g(k) & -2tf(k) \\
+-2tf^{*}(k) & -2t^{'}g(k)
+\end{pmatrix} \begin{pmatrix}
+0 & 1 \\
+1 & 0
+\end{pmatrix} \\
+ & = \begin{pmatrix}
+-2t^{'}g(k) & -2tf^{*}(k) \\
+-2tf(k) & 2t^{'}g(k)
+\end{pmatrix} \\
+ & = \begin{pmatrix}
+2t^{'}g(-k) & -2tf(-k) \\
+-2tf^{*} (-k) & -2t^{'}g(-k)
+\end{pmatrix} \\
+ & = H_{\uparrow}(-k)
+\end{align}$$
+同理$\tau^{x}H_{\downarrow}(k)\tau^{x}=H_{\downarrow}(-k)$。于是$\pi ^{\dagger}H(k)\pi=H(-k)$。那么：
+$$\begin{align}
+\mathcal{P}H\mathcal{P}^{\dagger} & = \sum_{k}\psi ^{\dagger}_{-k}H(-k)\psi_{-k} \\
+ & = \sum_{k}\psi ^{\dagger}_{k}H(k)\psi_{k} \\
+ & = H
+\end{align}$$
+
+>[!Success] Proposition 2.3
+>The Kane-Mele model preserves the space-inversion symmetry.
+
+
 
