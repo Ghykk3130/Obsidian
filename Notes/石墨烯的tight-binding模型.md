@@ -1,3 +1,5 @@
+# 1. 石墨烯的tight-binding模型
+
 石墨烯的一个元胞里有不等价的$A,B$两个碳原子。考虑每个碳原子在只有一个导电电子轨道。用$i$标记所有碳原子，那么hamiltonian可以写为：
 $$H=-t\sum_{\langle i,j\rangle}c^{\dagger}_{i}c_{j}$$
 若假设一次量子化的可加hamiltonian为$H_{0}$，那么$t=-\bra{i}H_{0}\ket{j}$。我们假设若$i,j$不邻近的话，波函数重叠太少，以至于$t=0$。hamiltonian还可以写为：
@@ -17,13 +19,17 @@ H & = -t\sum_{i,\delta} \left(  \frac{1}{N}\sum_{k,k^{'}}e^{-ikR_{i}}c_{A,k}^{\d
  & = -t\sum_{k} \sum_{\delta}e^{ik\delta}c^{\dagger}_{A,k}c_{B,k}+\text{h.c.} \\
  & = -t\sum_{k}(f(k)c^{\dagger}_{A,k}c_{B,k}+f^{*}(k)c_{B,k}^{\dagger}c_{A,k}),\ f(k)=\sum_{\delta}e^{ik\delta} \\
  & = \sum_{k}\begin{pmatrix}
-c^{\dagger}_{A,k} & c_{B,k} 
+c^{\dagger}_{A,k} & c_{B,k}^{\dagger} 
 \end{pmatrix} \begin{pmatrix}
 0 &  -tf(k)  \\
 -tf^{*}(k)  &0 
 \end{pmatrix} \begin{pmatrix}
-c^{\dagger}_{A,k} \\
+c^{}_{A,k} \\
 c^{}_{B,k}
+\end{pmatrix} \\
+ & = \sum_{k}\psi_{k}^{\dagger}H(k) \psi_{k},\ \psi_{k}=\begin{pmatrix}
+c_{A,k} \\
+c_{B,k}
 \end{pmatrix}
 \end{align}$$
 对角化hamiltonian得到色散关系$E_{\pm}(k)=\pm t^{2}|f(k)|$。因为$\delta$有如下三种取值：
@@ -61,5 +67,51 @@ H(q) & = \begin{pmatrix}
 我们知道，Dirac矩阵定义为$\alpha^{1}=\tau^{y},\ \alpha^{2}=\tau^{x}$。令$v_{F}= \frac{3at}{2}$，于是：
 $$H(q)=v_{F}\boldsymbol{\alpha}\cdot \mathbf{q}$$
 容易计算$E(q)=\pm v_{F}q$。这个线性色散关系称为Dirac cone。
+
+# 2. 对称性
+## 时间反演对称性
+
+回忆起，对于任意可观测量$A$，其时间反演后被映射为$\mathcal{T}A \mathcal{T}^{-1}$。虽然$c_{k}$不是可观测量，我们仍然可以研究$\mathcal{T}c_{k}\mathcal{T}^{-1}$。任取$\ket{\psi}$。考虑：
+$$\begin{align}
+\mathcal{T}c_{k}\mathcal{T}^{-1} \ket{\psi}  & = \mathcal{T}\ket{0_{k}} \bra{k} \mathcal{T}^{-1}\psi\rangle \\
+ & = \bra{\mathcal{T}^{-1}\psi} k\rangle \mathcal{T}\ket{0_{k}}  \\
+ & = \bra{\mathcal{T}k}\psi\rangle\ket{0_{-k} } \\
+ & = \bra{-k} \psi \rangle \ket{0_{-k}}  \\
+ & = c_{-k}\ket{\psi}    
+\end{align}$$
+得到$\mathcal{T}c_{k}\mathcal{T}^{-1}=c_{-k}$。同理可得$\mathcal{T}c_{k}^{\dagger}\mathcal{T}^{-1}=c^{\dagger}_{-k}$。故：
+
+>[!Success] Proposition 2.1
+>$\mathcal{T}c_{k}\mathcal{T}^{-1}=c_{-k},\ \mathcal{T}c^{\dagger}_{k}\mathcal{T}^{-1}=c^{\dagger}_{-k}$
+
+那么：
+$$\mathcal{T}\psi_{k}\mathcal{T}^{-1}=\psi_{-k},\ \mathcal{T}\psi_{k}^{\dagger}\mathcal{T}^{-1}=\psi ^{\dagger}_{-k}$$
+其中，$\mathcal{T}$的作用是element-wise的。我们考虑：
+$$\begin{align}
+\mathcal{T}H \mathcal{T}^{-1} & = \mathcal{T}\sum_{k}\psi ^{\dagger}_{k}H(k)\psi_{k}\mathcal{T}^{-1} \\
+ & = \sum_{k}\mathcal{T}\psi ^{\dagger}_{k}\mathcal{T}^{-1} \mathcal{T}H(k)\mathcal{T}^{-1} \mathcal{T}\psi_{k}\mathcal{T}^{-1} \\
+ & = \sum_{k}\psi ^{\dagger}_{-k} \mathcal{T}H(k)\mathcal{T}^{-1} \psi_{-k}
+\end{align}$$
+容易计算：
+$$\begin{align}
+\mathcal{T}H(k)\mathcal{T}^{-1} & = \begin{pmatrix}
+0 & \mathcal{T}(-2tf(k))\mathcal{T^{-1}} \\
+\mathcal{T}(-2tf^{*}(k))\mathcal{T}^{-1} & 0
+\end{pmatrix}
+\end{align}= \begin{pmatrix}
+0 & -2tf^{*}(k) \\
+-2tf(k) & 0
+\end{pmatrix}= \begin{pmatrix}
+0 & -2tf(-k) \\
+-2tf^{*}(-k) & 0
+\end{pmatrix}=H(-k)$$
+故：
+$$\mathcal{T}H\mathcal{T}^{-1}=\sum_{k}\psi ^{\dagger}_{-k}H(-k)\psi_{-k}=\sum_{k}\psi ^{\dagger}_{k}H(k)\psi_{k}=H$$
+考虑给系统加上自旋。由于hamiltonian不与自旋相关，上述推导仍然有效。系统保持时间反演对称性。
+
+>[!Success] Proposition 2.2
+>The tight-binding model for graphene preserves time-reversal symmetry.
+
+模型具有两条能带。由于保持时间反演对称性，每条能带的态与它的Kramer pair具有相同能量。所以每条能态是二重简并的。
 
 
