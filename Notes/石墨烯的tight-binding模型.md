@@ -32,7 +32,7 @@ c_{A,k} \\
 c_{B,k}
 \end{pmatrix}
 \end{align}$$
-对角化hamiltonian得到色散关系$E_{\pm}(k)=\pm t^{2}|f(k)|$。因为$\delta$有如下三种取值：
+对角化hamiltonian得到色散关系$E_{\pm}(k)=\pm t^{}|f(k)|$。因为$\delta$有如下三种取值：
 $$\delta_{1}=a(1,0),\ \delta_{2}=a\left( - \frac{1}{2}, \frac{\sqrt{ 3 }}{2} \right),\ \delta_{3}= a\left( - \frac{1}{2},- \frac{\sqrt{ 3 }}{2} \right)$$
 所以：
 $$\begin{align}
@@ -107,11 +107,15 @@ $$\begin{align}
 \end{pmatrix}=H(-k)$$
 故：
 $$\mathcal{T}H\mathcal{T}^{-1}=\sum_{k}\psi ^{\dagger}_{-k}H(-k)\psi_{-k}=\sum_{k}\psi ^{\dagger}_{k}H(k)\psi_{k}=H$$
-考虑给系统加上自旋。由于hamiltonian不与自旋相关，上述推导仍然有效。系统保持时间反演对称性。
-
 >[!Success] Proposition 2.2
 >The tight-binding model for graphene preserves time-reversal symmetry.
 
-模型具有两条能带。由于保持时间反演对称性，每条能带的态与它的Kramer pair具有相同能量。所以每条能态是二重简并的。
+# 自旋翻转对称性
+
+考虑给系统加上自旋。由于hamiltonian不与自旋相关，所以上下自旋拥有相同能量。所以每条能带都是二重简并的。
+
+
+
+
 
 
