@@ -2615,12 +2615,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Notes/Untitled.md",
+                "file": "Notes/表面态.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Untitled"
+              "title": "表面态"
             }
           }
         ],
@@ -2676,7 +2676,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "Bloch定理",
+                "query": "Kane-Mele",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -2691,7 +2691,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 200,
+    "collapsed": true
   },
   "right": {
     "id": "9003d078f8dbc4ed",
@@ -2797,10 +2798,11 @@
   },
   "active": "40941fb841ce9ac6",
   "lastOpenFiles": [
-    "Notes/Bloch定理.md",
-    "Notes/表面态.md",
-    "Pictures/Pasted image 20260601153850.png",
     "Notes/Kane-Mele模型.md",
+    "Notes/表面态.md",
+    "Notes/Untitled.md",
+    "Notes/Bloch定理.md",
+    "Pictures/Pasted image 20260601153850.png",
     "Notes/Haldane模型.md",
     "Notes/石墨烯的tight-binding模型.md",
     "Notes/离散对称性.md",
@@ -2828,7 +2830,6 @@
     "Notes/半经典运动方程.md",
     "Notes/gre写作.md",
     "Notes/Schrodinger's and Heisenberg's pictures.md",
-    "Notes/Untitled.md",
     "Notes/Ideal flow.md",
     "Notes/AB效应.md",
     "Notes/Berry curvature的时间和空间反演对称性.md",
