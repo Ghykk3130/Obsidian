@@ -1,0 +1,6 @@
+- Schedule a meeting with my PI talking about what 
+- Ask PI should I do analysis in our meeting. What is expected from me?
+- Prepare 2-4 slides for my project for the next meeting with Marc. In very easy-to-understand terms. Use this as a fundation for the draft.
+- When making slides, make one or two slides showing what has been changed from last time, and what I have tried. 
+- Check with my PI about the VTI. 
+- Draft in google doc shared with Marc. 
