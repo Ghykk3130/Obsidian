@@ -2704,7 +2704,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "tight-binding",
+                "query": "dirac",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -2827,10 +2827,10 @@
   },
   "active": "f8d955723e2b6997",
   "lastOpenFiles": [
+    "Notes/表面态.md",
+    "Notes/石墨烯的tight-binding模型.md",
     "Notes/Haldane模型.md",
     "Notes/Kane-Mele模型.md",
-    "Notes/石墨烯的tight-binding模型.md",
-    "Notes/表面态.md",
     "Notes/Kohler定律.md",
     "Notes/Untitled 11.md",
     "Notes/Hydraulic jump.md",

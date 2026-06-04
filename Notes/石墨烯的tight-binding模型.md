@@ -66,7 +66,7 @@ H(q) & = \begin{pmatrix}
 \end{align}$$
 我们知道，Dirac矩阵定义为$\alpha^{1}=\tau^{y},\ \alpha^{2}=\tau^{x}$。令$v_{F}= \frac{3at}{2}$，于是：
 $$H(q)=v_{F}\boldsymbol{\alpha}\cdot \mathbf{q}$$
-容易计算$E(q)=\pm v_{F}q$。这个线性色散关系称为Dirac cone。
+得到无质量Dirac费米子。容易计算$E(q)=\pm v_{F}q$。这个线性色散关系称为Dirac cone。
 
 # 2. 对称性
 ## 时间反演对称性
@@ -132,6 +132,15 @@ c_{B,k,\sigma}
 $$H=\sum_{k}\psi_{k}^{\dagger} H(k)\psi_{k}$$
 $$H(k)=-t\mathrm{Re}f(k)I_{2\times 2}\otimes \tau^{x}+t\mathrm{Im}f(k)I_{2\times 2}\otimes \tau^{y}$$
 显然，$H(k)$分块对角化。在$\sigma=\uparrow$不变子空间中对角化得到能谱$\epsilon_{\pm,\uparrow}(k)=\pm t|f(k)|$。在$\sigma=\downarrow$不变子空间中对角化得到能谱$\epsilon_{\pm,\downarrow}(k)=\pm t|f(k)|$。所以$t|f(k)|$能带是二重简并的，$-t|f(k)|$能带也是二重简并的。
+
+类似地，在$K$点附近展开，得到：
+$$\begin{align}
+H(k)=H(K+q) & = \frac{3at}{2}q_{x}I_{2 \times 2}\otimes \tau^{y}+ \frac{3at}{2}q_{y}I_{2\times 2}\otimes \tau^{x} \\
+ & = v_{F}\mathbf{q}\cdot \boldsymbol{\alpha}
+\end{align}$$
+其中$\boldsymbol{\alpha}=(I_{2\times 2}\otimes \tau^{y},\ I_{2\times 2}\otimes \tau^{x})$。
+
+
 
 
 
