@@ -14,7 +14,7 @@ c^{\dagger}_{A,k,\sigma} & c^{\dagger}_{B,k,\sigma}
 c_{A,k,\sigma} \\
 c_{B,k,\sigma}
 \end{pmatrix}$$
-令$\psi_{k}=(c_{A,k,\uparrow},c_{B,k,\uparrow},c_{A,k,\downarrow}, c_{B,k,\downarrow})$。那么：
+令$\psi_{k}=(c_{A,k,\uparrow},c_{B,k,\uparrow},c_{A,k,\downarrow}, c_{B,k,\downarrow})= \begin{pmatrix}c_{\uparrow} \\ c_{\downarrow}\end{pmatrix} \otimes \begin{pmatrix}c_{A,k} \\ c_{B,k}\end{pmatrix}$。那么：
 $$\begin{align}
 H & = \sum_{k}\psi_{k}^{\dagger}H(k)\psi_{k}
 \end{align}$$
@@ -31,6 +31,15 @@ H_{\uparrow} (k) & 0 \\
 -2t^{'}g(k) & -tf(k) \\
 -tf^{*}(k) & 2t^{'}g(k)
 \end{pmatrix}$$
+注意到：
+$$\begin{align}
+ & H_{\uparrow}(k)= 2t^{'}g(k)\tau^{z}-t\mathrm{Re}f(k)\tau^{x}+t\mathrm{Im}f(k)\tau^{y} \\
+ & H_{\downarrow}(k)=-2t^{'}g(k)\tau^{z}-t\mathrm{Re}f(k)\tau^{x}+t\mathrm{Im}f(k)\tau^{y}
+\end{align}$$
+于是：
+$$H(k)=2t^{'}g(k) \sigma^{z}\otimes \tau^{z}-t\mathrm{Re}f(k)I_{2\times 2}\otimes \tau^{x}+t\mathrm{Im}f(k)I_{2\times{2}} \otimes \tau^{y}$$
+其中，$\boldsymbol{\sigma}$作用在自旋自由度上，$\tau$作用在轨道自由度上。（即A, B原子。）
+
 子块$H_{\uparrow}(k)$对角化得到两条能带：
 $$E_{\uparrow,\pm}(k)=\pm \sqrt{ t^{2}|f(k)|^{2}+t^{'2}g^{2}(k) }$$
 子块$H_{\downarrow,\pm}(k)$对角化得到两条能带：
