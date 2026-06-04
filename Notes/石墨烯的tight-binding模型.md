@@ -1,4 +1,4 @@
-# 1. 石墨烯的tight-binding模型
+# 1. 无自旋石墨烯的tight-binding模型
 
 石墨烯的一个元胞里有不等价的$A,B$两个碳原子。考虑每个碳原子在只有一个导电电子轨道。用$i$标记所有碳原子，那么hamiltonian可以写为：
 $$H=-t\sum_{\langle i,j\rangle}c^{\dagger}_{i}c_{j}$$
@@ -110,9 +110,29 @@ $$\mathcal{T}H\mathcal{T}^{-1}=\sum_{k}\psi ^{\dagger}_{-k}H(-k)\psi_{-k}=\sum_{
 >[!Success] Proposition 2.2
 >The tight-binding model for graphene preserves time-reversal symmetry.
 
-# 自旋翻转对称性
+## 自旋翻转对称性
 
 考虑给系统加上自旋。由于hamiltonian不与自旋相关，所以上下自旋拥有相同能量。所以每条能带都是二重简并的。
+
+# 3. 有自旋石墨烯tight-binding模型
+
+现在加上自旋。显然hamiltonian可以写为：
+$$H=-t\sum_{i,\delta,\sigma}(c^{\dagger}_{A,i,\sigma}c_{B,i+\delta,\sigma}+c^{\dagger}_{B,i+\delta,\sigma}c_{A,i,\sigma})$$
+那么显然，经过Fourier变换，得到：
+$$H=\sum_{k,\sigma} \begin{pmatrix}
+c^{\dagger}_{A,k,\sigma} & c^{\dagger}_{B,k,\sigma}
+\end{pmatrix} \begin{pmatrix}
+0 & -tf(k) \\
+-tf^{*}(k) & 0
+\end{pmatrix} \begin{pmatrix}
+c_{A,k,\sigma} \\
+c_{B,k,\sigma}
+\end{pmatrix}$$
+令$\psi_{k}=\begin{pmatrix}c_{A,k,\uparrow} \\ c_{B,k,\uparrow} \\ c_{A,k,\downarrow} \\ c_{B,k,\downarrow}\end{pmatrix}=\begin{pmatrix}c_{\uparrow} \\ c_{\downarrow} \end{pmatrix} \otimes \begin{pmatrix}c_{A,k} \\ c_{B,k}\end{pmatrix}$。那么hamiltonian可以写为：
+$$H=\sum_{k}\psi_{k}^{\dagger} H(k)\psi_{k}$$
+$$H(k)=-t\mathrm{Re}f(k)I_{2\times 2}\otimes \tau^{x}+t\mathrm{Im}f(k)I_{2\times 2}\otimes \tau^{y}$$
+显然，$H(k)$分块对角化。在$\sigma=\uparrow$不变子空间中对角化得到能谱$\epsilon_{\pm,\uparrow}(k)=\pm t|f(k)|$。在$\sigma=\downarrow$不变子空间中对角化得到能谱$\epsilon_{\pm,\downarrow}(k)=\pm t|f(k)|$。所以$t|f(k)|$能带是二重简并的，$-t|f(k)|$能带也是二重简并的。
+
 
 
 

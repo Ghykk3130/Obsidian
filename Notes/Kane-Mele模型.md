@@ -14,7 +14,7 @@ c^{\dagger}_{A,k,\sigma} & c^{\dagger}_{B,k,\sigma}
 c_{A,k,\sigma} \\
 c_{B,k,\sigma}
 \end{pmatrix}$$
-令$\psi_{k}=(c_{A,k,\uparrow},c_{B,k,\uparrow},c_{A,k,\downarrow}, c_{B,k,\downarrow})= \begin{pmatrix}c_{\uparrow} \\ c_{\downarrow}\end{pmatrix} \otimes \begin{pmatrix}c_{A,k} \\ c_{B,k}\end{pmatrix}$。那么：
+令$\psi_{k}=(c_{A,k,\uparrow},c_{B,k,\uparrow},c_{A,k,\downarrow}, c_{B,k,\downarrow})^{\text{T}}= \begin{pmatrix}c_{\uparrow} \\ c_{\downarrow}\end{pmatrix} \otimes \begin{pmatrix}c_{A,k} \\ c_{B,k}\end{pmatrix}$。那么：
 $$\begin{align}
 H & = \sum_{k}\psi_{k}^{\dagger}H(k)\psi_{k}
 \end{align}$$
@@ -37,13 +37,13 @@ $$\begin{align}
  & H_{\downarrow}(k)=-2t^{'}g(k)\tau^{z}-t\mathrm{Re}f(k)\tau^{x}+t\mathrm{Im}f(k)\tau^{y}
 \end{align}$$
 于是：
-$$H(k)=2t^{'}g(k) \sigma^{z}\otimes \tau^{z}-t\mathrm{Re}f(k)I_{2\times 2}\otimes \tau^{x}+t\mathrm{Im}f(k)I_{2\times{2}} \otimes \tau^{y}$$
-其中，$\boldsymbol{\sigma}$作用在自旋自由度上，$\tau$作用在轨道自由度上。（即A, B原子。）
+$$H(k)=2t^{'}g(k) s^{z}\otimes \tau^{z}-t\mathrm{Re}f(k)I_{2\times 2}\otimes \tau^{x}+t\mathrm{Im}f(k)I_{2\times{2}} \otimes \tau^{y}$$
+其中，$\boldsymbol{s}$作用在自旋自由度上，$\boldsymbol{\tau}$作用在轨道自由度上。（即A, B原子。）
 
 子块$H_{\uparrow}(k)$对角化得到两条能带：
-$$E_{\uparrow,\pm}(k)=\pm \sqrt{ t^{2}|f(k)|^{2}+t^{'2}g^{2}(k) }$$
+$$E_{\uparrow,\pm}(k)=\pm \sqrt{ t^{2}|f(k)|^{2}+4t^{'2}g^{2}(k) }$$
 子块$H_{\downarrow,\pm}(k)$对角化得到两条能带：
-$$E_{\downarrow,\pm}(k)=\pm \sqrt{ t^{2}|f(k)|^{2}+t^{'2}g^{2}(k) }$$
+$$E_{\downarrow,\pm}(k)=\pm \sqrt{ t^{2}|f(k)|^{2}+4t^{'2}g^{2}(k) }$$
 可以看到，两种自旋的能带完全一样的。但是，它们的Chern数不同。显然，由[[Kane-Mele模型]]，两种自旋的Chern数分别为：
 $$C^{\uparrow}_{1}=\text{sgn}(t^{'}),\ C^{\downarrow}_{1}=\text{sgn}(-t^{'})=-\text{sgn}(t^{'})$$
 于是$C_{1}=C^{\uparrow}_{1}+C^{\downarrow}_{1}=0$。这使得$\sigma_{H}=0$。对于两种自旋，可以得到各自的自旋流：
