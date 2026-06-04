@@ -58,5 +58,4 @@ $$\begin{align}
  & = \frac{\rho_{x x}(B)}{\rho_{x x}(0)}-1 \\
  & = \frac{\sigma_{e}\sigma_{h}(\mu_{e}+\mu_{h})^{2}B^{2}}{(\sigma_{e}+\sigma_{h})^{2}+(\sigma_{h}\mu_{e}-\sigma_{e}\mu_{h})^{2}B^{2}}
 \end{align}$$
-
-
+所以$\text{MR}=f(\tau B)$。
