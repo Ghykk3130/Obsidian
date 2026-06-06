@@ -1,6 +1,6 @@
 # 1. Drude模型推导
 
-考虑同时存在电子和空穴。那么它们满足方程：
+考虑两条能带，一条电子导电，一条空穴导电。那么它们满足方程：
 $$\begin{align}
  & 0= - \frac{m^{*}_{e}\mathbf{v}_{e}}{\tau_{e}}-|e|(\mathbf{E}+\mathbf{v}_{e}\times \mathbf{B}) \\
  & 0=- \frac{m^{*}_{h}\mathbf{v}_{h}}{\tau_{h}}+|e|(\mathbf{E}+\mathbf{v}_{h}\times \mathbf{B})
@@ -58,4 +58,10 @@ $$\begin{align}
  & = \frac{\rho_{x x}(B)}{\rho_{x x}(0)}-1 \\
  & = \frac{\sigma_{e}\sigma_{h}(\mu_{e}+\mu_{h})^{2}B^{2}}{(\sigma_{e}+\sigma_{h})^{2}+(\sigma_{h}\mu_{e}-\sigma_{e}\mu_{h})^{2}B^{2}}
 \end{align}$$
-所以$\text{MR}=f(\tau B)$。
+所以$\text{MR}=f(\tau B)$。这被称为Kohler定律。接下来容易计算$\rho_{xy}$。我们有：
+$$\begin{align}
+\rho_{xy} & =  \frac{-\sigma_{xy}}{\sigma_{x x}^{2}+\sigma_{xy}^{2}} \\
+ & = \frac{B}{|e|} \frac{n_{e}\mu_{e}^{2}-n_{h}\mu_{h}^{2}+(n_{e}-n_{h})\mu_{e}^{2}\mu_{h}^{2}B^{2}}{(n_{e}\mu_{e}+n_{h}\mu_{h})^{2}+(n_{h}-n_{e})^{2}\mu_{e}^{2}\mu_{h}^{2}B^{2}} \\
+ & = - \frac{B[\sigma_{h}\mu_{h}-\sigma_{e}\mu_{e}+\mu_{e}\mu_{h}(\sigma_{h}\mu_{e}-\sigma_{e}\mu_{h})B^{2}]}{(\sigma_{e}+\sigma_{h})^{2}+(\sigma_{h}\mu_{e}-\sigma_{e}\mu_{h})^{2}B^{2}}
+\end{align}$$
+
