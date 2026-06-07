@@ -1,3 +1,5 @@
+# 1. ANE的scaling law
+
 我们先来讨论Peltier张量$\boldsymbol{\alpha}$的分解。在[[AHE]]中，我们已知$\sigma_{xy}$可分解为两部分：
 $$\sigma_{xy}=\sigma_{xy}^{\text{A}}+\sigma_{xy}^{\text{O}}$$
 而$\sigma_{xy}^{A}$可分解为三部分：
@@ -24,4 +26,20 @@ $$\begin{align}
 约等于号是近似到小Hall angle $\sigma_{xy}\approx 0$。由于$\alpha_{xy},\sigma_{xy}$都有分解，相应地，$S_{xy}$也存在分解。显然，有如下scaling law：
 $$S_{xy}^{\text{O}}\propto B,\ S_{xy}^{\text{A}}\propto M$$
 但是，关于$\sigma_{x x}$的scaling law就较为复杂了。
+# 2. Sondheimer cancellation
 
+我们知道：
+$$\begin{align}
+ & \alpha_{x y} = - \frac{\pi^{2}k^{2}T}{3|e|}  \frac{\partial \sigma_{x y}}{\partial\epsilon_{F}} \\
+ & S_{x x}= - \frac{\pi^{2}k^{2}T}{3|e|} \frac{\partial \ln \sigma_{x x}}{\partial\epsilon_{F}}
+\end{align}$$
+
+
+那么得到Nernst系数：
+$$\begin{align}
+S_{ xy} & = - \frac{\pi^{2}k^{2}T}{3|e|}\left[  \frac{1}{\sigma_{x x}} \frac{\partial \sigma_{xy}}{\partial\epsilon_{F}}- \tan \theta \frac{\partial \ln \sigma_{x x}}{\partial\epsilon_{F}} \right] \\  & = - \frac{\pi^{2}k^{2}T}{3|e|}\left[ \frac{1}{\sigma_{x x}} \frac{\partial \sigma_{xy}}{\partial\epsilon_{F}}-  \frac{\sigma_{xy}}{\sigma_{x x}^{2}} \frac{\partial \sigma_{x x}}{\partial\epsilon_{F}}\right]\\
+
+ &= - \frac{\pi^{2}k^{2}T}{3|e|} \frac{\partial}{\partial\epsilon_{F}}\left(  \frac{\sigma_{xy}}{\sigma_{x x}} \right) \\
+ & = - \frac{\pi^{2}k^{2}T}{3|e|} \frac{\partial}{\partial\epsilon_{F}}\tan \theta_{H}
+\end{align}$$
+所以，如果Hall angle不随化学势的改变而改变，那么Nernst系数为零。

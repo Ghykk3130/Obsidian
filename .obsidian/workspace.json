@@ -2657,12 +2657,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Notes/2-band effect.md",
+                "file": "Notes/ANE.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "2-band effect"
+              "title": "ANE"
             }
           }
         ],
@@ -2718,7 +2718,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "2-band",
+                "query": "Mott",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -2734,7 +2734,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 200,
+    "collapsed": true
   },
   "right": {
     "id": "9003d078f8dbc4ed",
@@ -2840,9 +2841,15 @@
   },
   "active": "2cbf4eb72ae2d1df",
   "lastOpenFiles": [
-    "Notes/AHE.md",
-    "Notes/2-band effect.md",
+    "Notes/半经典输运.md",
     "Notes/ANE.md",
+    "Notes/半经典运动方程.md",
+    "Notes/半导体简介.md",
+    "Notes/线性响应.md",
+    "Notes/类氢杂质模型.md",
+    "Notes/凝胶模型.md",
+    "Notes/2-band effect.md",
+    "Notes/AHE.md",
     "Notes/开放量子系统.md",
     "Notes/Weyl半金属.md",
     "Notes/被动变换与主动变换.md",
@@ -2852,7 +2859,6 @@
     "Notes/Kane-Mele模型.md",
     "Notes/Untitled 11.md",
     "Notes/Hydraulic jump.md",
-    "Notes/半经典输运.md",
     "Notes/拓扑绝缘体.md",
     "Pictures/Pasted image 20260603152224.png",
     "Notes/Untitled.md",
@@ -2866,16 +2872,11 @@
     "Pictures/Pasted image 20260530191658.png",
     "Pictures/Pasted image 20260530170459.png",
     "Pictures/Pasted image 20260530170136.png",
-    "Notes/Hamilton原理与Lagrange方程.md",
-    "Experimental/Mother tape preparation.md",
     "Pictures/Pasted image 20260530155447.png",
     "Pictures/Pasted image 20260530150426.png",
-    "Notes/gre数学.md",
     "Pictures/Pasted image 20260529194148.png",
     "Pictures/Pasted image 20260529193556.png",
     "Pictures/Pasted image 20260529193133.png",
-    "Notes/惯量张量与刚体动能.md",
-    "Notes/微分几何基础概念.md",
     "Pictures/drawing.pdf",
     "Pictures/drawing.html",
     "Untitled",
