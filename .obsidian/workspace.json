@@ -2718,7 +2718,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "kohler",
+                "query": "2-band",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -2734,8 +2734,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200,
-    "collapsed": true
+    "width": 200
   },
   "right": {
     "id": "9003d078f8dbc4ed",
@@ -2841,8 +2840,9 @@
   },
   "active": "2cbf4eb72ae2d1df",
   "lastOpenFiles": [
-    "Notes/ANE.md",
+    "Notes/AHE.md",
     "Notes/2-band effect.md",
+    "Notes/ANE.md",
     "Notes/开放量子系统.md",
     "Notes/Weyl半金属.md",
     "Notes/被动变换与主动变换.md",
@@ -2853,7 +2853,6 @@
     "Notes/Untitled 11.md",
     "Notes/Hydraulic jump.md",
     "Notes/半经典输运.md",
-    "Notes/AHE.md",
     "Notes/拓扑绝缘体.md",
     "Pictures/Pasted image 20260603152224.png",
     "Notes/Untitled.md",

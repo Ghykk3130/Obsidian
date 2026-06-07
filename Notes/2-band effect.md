@@ -1,6 +1,6 @@
 # 1. Drude模型推导
 
-考虑两条能带，一条电子导电，一条空穴导电。那么它们满足方程：
+考虑半导体导电的导带和价带。导带中用电子picture，价带中用空穴picture。那么它们满足方程：
 $$\begin{align}
  & 0= - \frac{m^{*}_{e}\mathbf{v}_{e}}{\tau_{e}}-|e|(\mathbf{E}+\mathbf{v}_{e}\times \mathbf{B}) \\
  & 0=- \frac{m^{*}_{h}\mathbf{v}_{h}}{\tau_{h}}+|e|(\mathbf{E}+\mathbf{v}_{h}\times \mathbf{B})
