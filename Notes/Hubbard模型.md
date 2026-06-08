@@ -53,22 +53,40 @@ H_{0} & =\sum_{n,\sigma}\mathcal{E}_{n}\ket{n,\sigma} \bra{n,\sigma} \\
 新的生成湮灭算符定义为$c_{n,\sigma}=\ket{0}\bra{n,\sigma},\ c^{\dagger}_{n,\sigma}=\ket{n,\sigma}\bra{0}$。
 ## Ex: STM
 
-考虑两个费米气体，中间用一个隧穿结连接。隧穿结可以想象为两个费米气体盒子公共的一个壁$a\delta(x)$，这个壁上有无限势能，构成delta函数。左侧的自由费米子态有$\{ \ket{L,k} \}$，右侧的自由费米子态有$\{ \ket{R,p} \}$。这些态构成完整的基。那么，最一般的二次量子化hamiltonian为：
+考虑两个费米气体，中间用一个隧穿结连接。假设跃迁矩阵元与左右无关，那么hamiltonian写为：
 $$\begin{align}
-H & = \sum_{k,p}H_{Lk,Lp}c^{\dagger}_{Lk}c_{Lp}+\sum_{k,p}H_{Rk,Rp}c^{\dagger}_{Rk}c_{Rp}+\sum_{k,p}H_{Lk,Rp}c^{\dagger}_{Lk}c_{Rp}+\sum_{k,p}H_{Rk,Lp}c^{\dagger}_{Rk}c_{Lp}
-\end{align}$$因为在左右两侧隧穿结的势都是零，hamiltonian就是可加动能，于是：
-$$H_{Lk,Lp}= \mathcal{E}_{p}\bra{Lk} Lp\rangle=\mathcal{E}_{p}\delta_{k,p}$$
-容易证明：
-$$\begin{align}
-H_{Lk,Rp} & = \bra{Lk}  \frac{p^{2}}{2m}\ket{Rp} + \bra{Lk} a\delta(x)\ket{Rp}  \\
- & = 0+ \bra{Lk} a\delta(x)\ket{Rp} \\
- & = \int d^{d}x \frac{1}{V}e^{-ikx}e^{ipx}a\delta(x)=0
+H & = \sum_{k}\mathcal{E}_{k}c^{\dagger}_{Lk}c_{Lk}+\sum_{p}\mathcal{E}_{p}c^{\dagger}_{Rp}c_{Rp}+\sum_{k,p}T_{k,p}(c^{\dagger}_{Lk}c_{Rp}+c^{\dagger}_{Rp}c_{Lk})
 \end{align}$$
-这是因为$\frac{1}{\sqrt{ V }}e^{-ikx}$被完全限制在左侧，$\frac{1}{\sqrt{ V }}e^{ipx}$被完全限制在右侧。
-
-
-故hamiltonian写为：
+我们计算从左侧跃迁到右侧的transition rate：
 $$\begin{align}
-H & = \sum_{k}\mathcal{E}_{k}c^{\dagger}_{Lk}c_{Lk}+\sum_{p}\mathcal{E}_{p}c^{\dagger}_{Rp}c_{Rp}+\sum_{k,p}T_{Lk,Rp}(c^{\dagger}_{Lk}c_{Rp}+c^{\dagger}_{Rp}c_{Lk})
+w_{L\rightarrow R } & = \frac{2\pi}{\hbar}\sum_{i,f}|\bra{f} H\ket{i}  |^{2}\delta(\epsilon_{f}=\epsilon_{i}) \\
 \end{align}$$
+若$\ket{i}=\ket{\dots,n_{Lk},\dots,n_{Rp},\dots}$，而$\ket{f}\propto c^{\dagger}_{Rp}c_{Lk}\ket{i}$，那么：
+$$\begin{align}
+|\bra{f} H\ket{i}|^{2}  & = |\bra{f} T_{k,p} c^{\dagger}_{Lk}c_{Rp}\ket{i}|^{2}  \\
+ & = |\bra{f} T_{k,p}\sqrt{ 1-n_{Lk} }\sqrt{ n_{Rp} }|f\rangle|^{2} \\
+ & = |T_{k,p }|^{2} (1-n_{Lk})n_{Rp}
+\end{align}$$
+于是：
+$$\begin{align}
+w_{L\rightarrow R} & = \frac{2\pi}{\hbar}\sum_{k,p} |T_{k,p} |^{2} (1-n_{Lk})n_{Rp}\delta(\mathcal{E}_{k}=\mathcal{E}_{p}) \\
+\end{align}$$
+同理$w_{R\rightarrow L}= \frac{2\pi }{\hbar}\sum_{k,p}|T_{k,p}|^{2}(1-n_{Lk})n_{Rp}\delta(\mathcal{E}_{k}=\mathcal{E}_{p})$。于是可以计算向右隧穿的隧穿电流：
+$$\begin{align}
+I & = e(w_{L\rightarrow R}-w_{R\rightarrow L}) \\
+ & =-\frac{2\pi |e|}{\hbar}\sum_{k,p}|T_{k,p} |^{2}(n_{Rp}-n_{Lk})\delta(\mathcal{E}_{k}=\mathcal{E}_{p})
+\end{align}$$
+令$\xi_{k}=\mathcal{E}_{k}-\mu_{L},\ \xi_{p}=\mathcal{E}_{p}-\mu_{R}$。假设给左侧加上电压$V$。那么$\mu_{L}-\mu_{R}=-|e|V$。假设$T_{k,p}=T$为常数，那么：
+$$\begin{align}
+I & = - \frac{2\pi|e|}{\hbar}|T|^{2}\sum_{k,p}(-\theta(\xi_{p})+\theta(\xi_{k}))\delta(\xi_{k}-\xi_{p}=|e|V) \\
+ & = \frac{2\pi|e|}{\hbar}|T|^{2}\int d\omega N_{R}(\omega)N_{L}(\omega-|e|V)(\theta(\omega+|e|V)-\theta(\omega)) \\
+ & \approx \frac{2\pi|e|}{\hbar}|T|^{2} \int d\omega N_{R}(\omega)N_{L}(\omega-|e|V) \frac{\partial \theta}{\partial \omega}|e|V \\
+ & \approx \frac{2\pi|e|}{\hbar}|T|^{2}\int d\omega N_{R}(\omega-|e|V)N_{L}(\omega-|e|V) \frac{\partial \theta}{\partial \omega}|e|V
+\end{align}$$
+最后一步是因为我们假设了弱场。于是：
+$$\begin{align}
+\frac{dI}{d(|e|V)} & = \frac{2\pi|e|}{\hbar}|T|^{2}\int d\omega N_{R}(\omega-|e|V)N_{L}(\omega-|e|V) \frac{\partial \theta}{\partial \omega} \\
+ & \approx \frac{2\pi|e|}{\hbar}|T|^{2}N_{R}(-|e|V)N_{L}(-|e|V)
+\end{align}$$
+假设$N_{L}(-|e|V)$已知，那么可以测出$N_{R}(-|e|V)$的大小。
 
