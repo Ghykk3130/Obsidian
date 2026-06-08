@@ -113,7 +113,53 @@ $$\mathcal{T}H\mathcal{T}^{-1}=\sum_{k}\psi ^{\dagger}_{-k}H(-k)\psi_{-k}=\sum_{
 ## 自旋翻转对称性
 
 考虑给系统加上自旋。由于hamiltonian不与自旋相关，所以上下自旋拥有相同能量。所以每条能带都是二重简并的。
+## 空间反演对称性。
 
+考虑宇称算符的作用$\mathcal{P} c_{A,k}\mathcal{P}^{\dagger}=c_{B,-k},\ \mathcal{P}c_{B,k}\mathcal{P}^{\dagger}=c_{A,-k}$。那么：
+$$\begin{align}
+\mathcal{P}\psi_{k}\mathcal{P}^{\dagger} & = \begin{pmatrix}
+c_{B,k} \\
+c_{A,k}
+\end{pmatrix} \\
+ & = \tau^{ x} \psi_{-k}
+\end{align}$$
+那么：
+$$\begin{align}
+\mathcal{P}H\mathcal{P}^{\dagger} & = \mathcal{P}\sum_{k}\psi ^{\dagger}_{k}H(k)\psi_{k}\mathcal{P}^{\dagger} \\
+ & = \sum_{k}\mathcal{P}\psi ^{\dagger}_{k}\mathcal{P}^{\dagger}\mathcal{P}H(k)\mathcal{P}^{\dagger}\mathcal{P} \psi_{k}\mathcal{P}^{\dagger} \\
+ & = \sum_{k}\psi ^{\dagger}_{-k}\tau^{x} \mathcal{P}H(k)\mathcal{P}^{\dagger}  \tau^{x}\psi_{k}
+\end{align}$$
+容易计算：
+$$\begin{align}
+\mathcal{P}H(k)\mathcal{P}^{\dagger} & = \begin{pmatrix}
+0 & \mathcal{P}f(k)\mathcal{P}^{\dagger} \\
+\mathcal{P}f^{*}(k)\mathcal{P}^{\dagger} & 0
+\end{pmatrix} \\
+ & = \begin{pmatrix}
+0 & f(k) \\
+f^{*}(k) & 0
+\end{pmatrix} \\
+ & = H(k)
+\end{align}$$
+而：
+$$\begin{align}
+\tau^{x} H(k)\tau^{x} & = \begin{pmatrix}
+0 & f^{*}(k) \\
+f(k) & 0
+\end{pmatrix} \\
+ & = \begin{pmatrix}
+0 & f(-k) \\
+f^{*}(-k) & 0
+\end{pmatrix}=H(-k)
+\end{align}$$
+故：
+$$\begin{align}
+\mathcal{P}H\mathcal{P}^{\dagger} & = \sum_{k}\psi ^{\dagger}_{-k}H(-k)\psi_{-k} \\
+ & = \sum_{k}\psi ^{\dagger}_{k}H(k)\psi_{k} \\
+ & = H
+\end{align}$$
+>[!Success] Proposition 2.3
+>The tight-binding model for graphene preserves space inversion symmetry.
 # 3. 有自旋石墨烯tight-binding模型
 
 现在加上自旋。显然hamiltonian可以写为：
@@ -139,6 +185,10 @@ H(k)=H(K+q) & = \frac{3at}{2}q_{x}I_{2 \times 2}\otimes \tau^{y}+ \frac{3at}{2}q
  & = v_{F}\mathbf{q}\cdot \boldsymbol{\alpha}
 \end{align}$$
 其中$\boldsymbol{\alpha}=(I_{2\times 2}\otimes \tau^{y},\ I_{2\times 2}\otimes \tau^{x})$。
+
+# 4. Semenoff mass
+
+考虑A, B子格有不同的onsite energy。那么hamiltonian应该加上一项
 
 
 
