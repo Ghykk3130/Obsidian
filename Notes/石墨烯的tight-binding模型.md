@@ -188,7 +188,23 @@ H(k)=H(K+q) & = \frac{3at}{2}q_{x}I_{2 \times 2}\otimes \tau^{y}+ \frac{3at}{2}q
 
 # 4. Semenoff mass
 
-考虑A, B子格有不同的onsite energy。那么hamiltonian应该加上一项
+考虑A, B子格有不同的onsite energy。那么hamiltonian应该加上一项$\sum_{i}\Delta c^{\dagger}_{A,i}c_{A,i}-\sum_{i}\Delta c^{\dagger}_{B,i}c_{B,i}$。容易计算：
+$$\begin{align}
+\sum_{i}\Delta c^{\dagger}_{A,i}c_{A,i} & = \frac{1}{N}\Delta\sum_{i}\sum_{k,k^{'}} e^{-ikR_{i}} e^{ik^{'}R_{i}}c^{\dagger}_{A,k}c_{A,k^{'}} \\
+ & = \Delta \sum_{k}c^{\dagger}_{A,k}c_{A,k}
+\end{align}$$
+对B也是同理。于是hamiltonian多一项：
+$$\begin{align}
+\Delta H & = \Delta \sum_{k}(c^{\dagger}_{A,k}c_{A,k}-c^{\dagger}_{B,k}c_{B,k}) \\
+ & = \Delta \sum_{k}\psi_{k}^{\dagger}\tau^{z}\psi_{k}
+\end{align}$$
+那么k-space的hamiltonian就多一项$\Delta \tau^{z}$。那么在K点附近：
+$$H(k)=v_{F}\boldsymbol{\alpha}\cdot \mathbf{q}+\Delta \tau^{z}$$
+得到色散关系：
+$$E(q)=\pm \sqrt{ v_{F}^{2}q^{2}+\Delta^{2} }$$
+于是能隙打开。
+
+
 
 
 
