@@ -14,8 +14,11 @@ $$\begin{align}
 \sigma_{H} & = \frac{e^{2}}{\hbar}C_{1} \\
  & = \frac{1}{2}\text{sgn}(\Delta) \frac{e^{2}}{\hbar}
 \end{align}$$
+![[Pasted image 20260609164507.png|center|200]]
+若费米能级在导带中，令$E_{D}$为Dirac cone中心的能量。此时由于不是绝缘体，TKNN公式失效。我们直接计算：
+$$\begin{align}
+\sigma_{H} & = -|e| \int \frac{d^{2}k}{(2\pi)^{2}} 
+\end{align}$$
 
 
-
-
-若费米能级在导带中，
+![[Pasted image 20260609164727.png|center|200]]
