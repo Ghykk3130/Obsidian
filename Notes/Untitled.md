@@ -1,0 +1,1 @@
+- Bring a published paper related to your research. Annotate it. Analyze the structure of the paper. 
