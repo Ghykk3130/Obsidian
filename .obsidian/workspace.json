@@ -2685,12 +2685,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Notes/Dirac cone的输运贡献.md",
+                "file": "Notes/Kane-Mele模型.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Dirac cone的输运贡献"
+              "title": "Kane-Mele模型"
             }
           }
         ],
@@ -2746,7 +2746,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "dirac",
+                "query": "Kane-Mele",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -2757,7 +2757,8 @@
               "title": "Search"
             }
           }
-        ]
+        ],
+        "currentTab": 3
       }
     ],
     "direction": "horizontal",
@@ -2867,9 +2868,9 @@
   },
   "active": "15df3c891812d607",
   "lastOpenFiles": [
+    "Notes/Dirac cone的输运贡献.md",
     "Notes/Berry curvature的时间和空间反演对称性.md",
     "Notes/费米液体.md",
-    "Notes/Dirac cone的输运贡献.md",
     "Pictures/Pasted image 20260609164727.png",
     "Pictures/Pasted image 20260609164507.png",
     "Notes/Berry phase.md",
