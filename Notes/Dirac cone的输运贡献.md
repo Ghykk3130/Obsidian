@@ -15,10 +15,10 @@ $$\begin{align}
  & = \frac{1}{2}\text{sgn}(\Delta) \frac{e^{2}}{\hbar}
 \end{align}$$
 ![[Pasted image 20260609164507.png|center|200]]
-若费米能级在导带中，令$E_{D}$为Dirac cone中心的能量。此时由于不是绝缘体，TKNN公式失效。我们直接计算：
+若费米能级在导带中，令$E_{D}$为Dirac cone中心的能量。此时由于不是绝缘体，TKNN公式失效。由线性相应，我们直接计算：
 $$\begin{align}
-\sigma_{H} & = -|e| \int \frac{d^{2}k}{(2\pi)^{2}} 
+\sigma_{H} & = - \frac{e^{2}}{\hbar}\left[ \int \frac{d^{2}k}{(2\pi)^{2}} \Omega_{-}+ \int_{k<k_{F}} \frac{d^{2}k}{(2\pi)^{2}}\Omega_{+}\right],\ \epsilon_{F}-E_{D}=\sqrt{ v^{2}k_{F}^{2}+\Delta^{2} } \\
+ & = - \frac{e^{2}}{2h} \frac{\Delta}{\epsilon_{F}-E_{D}}
 \end{align}$$
-
-
 ![[Pasted image 20260609164727.png|center|200]]
+此时，intrinsic Hall conductivity不再量子化。
