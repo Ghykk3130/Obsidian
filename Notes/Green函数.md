@@ -72,7 +72,7 @@ $$\begin{align}
 >[!Right]
 >$\blacksquare$
 
-我们还可以证明：
+我们还可以证明Green函数的谱定理：
 
 >[!Success] Proposition 1.3
 >$$\langle BA \rangle = \int_{-\infty}^{\infty} d\omega f_{F/B}(\omega)A_{AB}(\omega)$$
