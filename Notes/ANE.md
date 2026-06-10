@@ -23,6 +23,9 @@ $$\begin{align}
  & S_{x x}= \frac{\sigma_{x x}\alpha_{x x}+\sigma_{xy}\alpha_{xy}}{\sigma_{x x}^{2}+\sigma_{xy}^{2}}\approx \frac{\alpha_{x x}}{\sigma_{x x}} \\
  & S_{xy}= \frac{\sigma_{x x}\alpha_{xy}-\sigma_{xy}\alpha_{x x}}{\sigma_{xx }^{2}+\sigma_{xy}^{2}}\approx \frac{\alpha_{xy} }{\sigma_{x x} }- \frac{\sigma_{xy}}{\sigma_{x x}} \frac{\alpha_{x x}}{\sigma_{x x}}= \frac{\alpha_{xy}}{\sigma_{x x}}- \tan \theta_{H} S_{x x}
 \end{align}$$
+>[!Quote]
+>在$S_{xy}= \frac{\alpha_{xy}}{\sigma_{x x}}- \tan \theta_{H}S_{x x}$中，可以认为Nernst电场由两项贡献。一个是Peltier电流输运产生的电场，一个是Seebeck电场被“偏转”产生的横向电场。很多时候，这两项贡献完全相同从而抵消。这被称为Sondheimer cancellation。
+
 约等于号是近似到小Hall angle $\sigma_{xy}\approx 0$。由于$\alpha_{xy},\sigma_{xy}$都有分解，相应地，$S_{xy}$也存在分解。显然，有如下scaling law：
 $$S_{xy}^{\text{O}}\propto B,\ S_{xy}^{\text{A}}\propto M$$
 但是，关于$\sigma_{x x}$的scaling law就较为复杂了。
