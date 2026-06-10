@@ -51,13 +51,14 @@ $$\begin{align}
 
 >[!Success] Proposition 1.2
 >$$\omega \langle\langle A|B\rangle\rangle_{\omega}= \langle [A,B]_{\pm}\rangle + \langle \langle [A,H]|B\rangle\rangle_{\omega}$$
+>This equation holds for both retarded and advanced Green's functions.
 ## Proof.
 
 我们有：
 $$\begin{align}
 \frac{d}{dt}G^{R}_{AB}(t) & = -i \delta(t) \langle [A(t),B]_{\pm}\rangle-i\theta(t) \frac{d}{dt}\langle [A(t),B]_{\pm}\rangle
 \end{align}$$
-由于$\delta(t)$只在$t=0$显著，所以第一项为$-i\delta(t)\langle [A,B]_{\pm}\rangle$。因为$\langle .\rangle$运算本质是求和，容易证明是线性的。所以：
+由于$\delta(t)$只在$t=0$显著，所以第一项为$-i\delta(t)\langle [A,B]_{\pm}\rangle$。因为$\langle .\rangle$运算本质是求加权平均，容易证明是线性的。所以：
 $$\begin{align}
 \frac{d}{dt}\langle [A(t),B]_{\pm}\rangle & = \left\langle  \left[  \frac{d}{dt}A(t),B \right]_{\pm} \right\rangle \\
  & = \langle \left[ \frac{1}{i}[A(t),H],B \right]_{\pm}\rangle \\
@@ -69,6 +70,7 @@ $$\begin{align}
 \implies & \int_{-\infty}^{\infty}dt e^{i\omega t} \frac{d}{dt}G^{R}_{AB}(t) =-i \langle[A,B]_{\pm}\rangle -i\langle\langle[A,H]|B\rangle\rangle_{\omega} \\
 \implies & -i\omega\langle\langle A|B\rangle\rangle_{\omega}=-i\langle[A,B]_{\pm}\rangle-i \langle\langle[A,H]|B\rangle\rangle_{\omega}
 \end{align}$$
+类似地可以证明对于超前Green函数也成立。
 >[!Right]
 >$\blacksquare$
 
