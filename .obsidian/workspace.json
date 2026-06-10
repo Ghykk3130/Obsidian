@@ -2775,8 +2775,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200,
-    "collapsed": true
+    "width": 200
   },
   "right": {
     "id": "9003d078f8dbc4ed",
@@ -2882,8 +2881,9 @@
   },
   "active": "556254150d398537",
   "lastOpenFiles": [
-    "Notes/正规矩阵的对角化.md",
+    "Notes/Friedel震荡.md",
     "Notes/Green函数.md",
+    "Notes/正规矩阵的对角化.md",
     "Notes/拓扑绝缘体.md",
     "Notes/散射.md",
     "Notes/Haldane模型.md",
@@ -2909,7 +2909,6 @@
     "Notes/QHE和AHE.md",
     "Notes/ANE.md",
     "Notes/半经典输运.md",
-    "Notes/半经典运动方程.md",
     "Pictures/Pasted image 20260603152224.png",
     "Pictures/Pasted image 20260601153850.png",
     "Pictures/Pasted image 20260530191658.png",
