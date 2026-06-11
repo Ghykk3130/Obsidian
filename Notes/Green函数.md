@@ -127,6 +127,10 @@ $$\begin{align}
  & G^{R}_{cc^{\dagger}}(t)  = \frac{a}{2\pi} e^{-i\epsilon t} + \frac{i\pi}{2\pi}e^{-i\epsilon t} =0 \\
  \implies & a=-i\pi
 \end{align}$$
-于是得到推迟Green函数的谱函数$A^{R}_{cc^{\dagger}}(\omega)=i \delta(\omega-\epsilon)$。
+于是得到推迟Green函数的谱函数$A^{R}_{cc^{\dagger}}(\omega)= \delta(\omega-\epsilon)$。于是可以得到：
+$$\begin{align}
+\langle c^{\dagger}c\rangle & = \int_{-\infty}^{\infty}d\omega f_{F}(\omega) \delta(\omega-\epsilon)=f_{F}(\epsilon)
+\end{align}$$
+
 
 
