@@ -3,7 +3,7 @@
 令$A,B$为Schrodinger绘景中的可观测量。令$A(t)=e^{iHt}Ae^{-iHt}$为Heisenberg绘景中的$A$算子。那么定义Green函数为：
 
 >[!Note] Definition 1.1
->Define the retarded and advanced Green's functions:
+>Define the retarded and advanced Green functions:
 >$$G^{R}_{AB}(t)=-i\theta(t) \langle [A(t),B]_{\pm}\rangle,\ G^{A}_{AB}(t)=i\theta(-t)\langle [A(t),B]_{\pm}\rangle$$
 >where $+$ is for fermions and $-$ is for bosons.
 
@@ -56,7 +56,7 @@ $$\begin{align}
 
 >[!Success] Proposition 1.2
 >$$\omega \langle\langle A|B\rangle\rangle_{\omega}= \langle [A,B]_{\pm}\rangle + \langle \langle [A,H]|B\rangle\rangle_{\omega}$$
->This equation holds for both retarded and advanced Green's functions.
+>This equation holds for both retarded and advanced Green functions.
 ## Proof.
 
 我们有：
@@ -96,6 +96,17 @@ $$\begin{align}
 \end{align}$$
 >[!Right]
 >$\blacksquare$
+## Ex:
+
+考虑真空中费米子处于某个特定能量中。则$H=\epsilon c^{\dagger}c$。我们想求$\langle c^{\dagger}c\rangle$。由谱定理，我们需要$\langle \langle c|c^{\dagger}\rangle\rangle_{\omega}$。利用运动方程。注意到：
+$$[c,H]= \epsilon cc^{\dagger}c-\epsilon c^{\dagger}c^{2}=\epsilon c-2\epsilon c^{\dagger}c^{2}=\epsilon c$$
+所以：
+$$\begin{align}
+ & \omega\langle\langle c|c^{\dagger}\rangle\rangle_{\omega}= \langle [c,c^{\dagger}]_{+}\rangle + \epsilon\langle\langle c|c^{\dagger}\rangle\rangle_{\omega} \\
+\implies & (\omega-\epsilon)\langle\langle c|c^{\dagger}\rangle\rangle_{\omega}=1
+\end{align}$$
+注意这是一个分布函数的方程。即我们希望$\langle (\omega-\epsilon) \langle\langle c|c^{\dagger}\rangle\rangle_{\omega},g\rangle=\langle 1,g\rangle$。显然，由于$\mathcal{P} \frac{1}{\omega-\epsilon}$满足要求。这是特解。而注意到Dirac delta作为分布函数满足$(\omega-\epsilon)\delta(\omega-\epsilon)=0$，得到一个齐次解。那么：
+$$\langle\langle c|c^{\dagger}\rangle\rangle_{\omega}= \mathcal{P} \frac{1}{\omega-\epsilon}+a\delta(\omega-\epsilon)$$
 
 
 

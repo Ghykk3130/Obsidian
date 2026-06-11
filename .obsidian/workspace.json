@@ -2713,12 +2713,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Notes/广义函数.md",
+                "file": "Notes/Green函数.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "广义函数"
+              "title": "Green函数"
             }
           }
         ],
@@ -2774,7 +2774,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "广义函数",
+                "query": "Green",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -2790,7 +2790,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 200,
+    "collapsed": true
   },
   "right": {
     "id": "9003d078f8dbc4ed",
@@ -2896,8 +2897,8 @@
   },
   "active": "3611c77f1e3e7585",
   "lastOpenFiles": [
-    "Notes/Green函数.md",
     "Notes/广义函数.md",
+    "Notes/Green函数.md",
     "Notes/gre数学.md",
     "Notes/二次量子化.md",
     "Notes/线性响应.md",
