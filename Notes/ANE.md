@@ -45,4 +45,4 @@ S_{ xy} & = - \frac{\pi^{2}k^{2}T}{3|e|}\left[  \frac{1}{\sigma_{x x}} \frac{\pa
  &= - \frac{\pi^{2}k^{2}T}{3|e|} \frac{\partial}{\partial\epsilon_{F}}\left(  \frac{\sigma_{xy}}{\sigma_{x x}} \right) \\
  & = - \frac{\pi^{2}k^{2}T}{3|e|} \frac{\partial}{\partial\epsilon_{F}}\tan \theta_{H}
 \end{align}$$
-所以，如果Hall angle不随化学势的改变而改变，那么Nernst系数为零。
+所以，如果Hall angle不随化学势的改变而改变，那么Nernst系数为零。因为$\theta_{H}(\epsilon_{F})$描述的是处于费米能级处粒子的输运响应。所以

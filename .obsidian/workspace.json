@@ -2774,7 +2774,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "mott",
+                "query": "Mott relation",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -2790,8 +2790,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200,
-    "collapsed": true
+    "width": 200
   },
   "right": {
     "id": "9003d078f8dbc4ed",
@@ -2898,6 +2897,7 @@
   "active": "3611c77f1e3e7585",
   "lastOpenFiles": [
     "Notes/ANE.md",
+    "Notes/半经典输运.md",
     "Notes/Green函数.md",
     "Notes/广义函数.md",
     "Notes/gre数学.md",
@@ -2924,7 +2924,6 @@
     "Notes/HSF Assignment.md",
     "Notes/石墨烯的tight-binding模型.md",
     "Notes/量子Hall效应.md",
-    "Notes/表面态.md",
     "Pictures/Pasted image 20260603152224.png",
     "Pictures/Pasted image 20260601153850.png",
     "Pictures/Pasted image 20260530191658.png",
