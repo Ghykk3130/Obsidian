@@ -31,6 +31,11 @@ G^{A}_{AB}(\omega)=   \frac{1}{Z} \sum_{n,m}e^{-\beta E_{n}}\left[  \frac{A_{nm}
 $$\boxed{G^{R}_{AB}(\omega)=G^{A*}_{AB}(\omega)}$$
 回忆起$\frac{1}{x+i 0^{+}}= \frac{1}{x}-i\pi \delta(x)$。不妨假设$A_{nm}B_{mn},\ B_{nm}A_{mn}\in \mathbb{R}$。那么可以计算：
 $$\mathrm{Im}G^{R}_{AB}(\omega)=- \frac{\pi}{Z}\sum_{n,m}e^{-\beta E_{n}}[A_{nm}B_{mn}\delta(\omega+E_{n}-E_{m})\pm B_{nm}A_{mn}\delta(\omega+E_{m}-E_{n})]$$
+>[!Quote]
+>实际上，Green函数由于要进入卷积计算，都可以看作是分布函数。例如$\frac{1}{x+ i{0}^{+}}\in\mathcal{D}^{'}(\mathbb{R})$实际上是一个线性泛函，定义为：
+>$$\left\langle  \frac{1}{x + i 0^{+}},g \right\rangle= \lim_{ \epsilon \to 0 ^{+} } \int_{\mathbb{R}}dx \frac{1}{x+i\epsilon}g(x)$$
+>而$\frac{1}{x+i 0^{+}}= \frac{1}{x}-i\pi\delta(x)$实际上应该写为$\frac{1}{x+i 0^{+}}= \mathcal{P} \frac{1}{x}-i\pi\delta(x)$。应当将$\frac{1}{x}$当成其Cauchy主值来理解。
+
 定义谱函数：
 $$\boxed{A_{AB}(\omega)=- \frac{1}{\pi}\mathrm{Im}G^{R}_{AB}(\omega)}$$
 我们容易得到：

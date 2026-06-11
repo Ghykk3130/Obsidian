@@ -2774,7 +2774,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "green函数",
+                "query": "广义函数",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -2785,12 +2785,12 @@
               "title": "Search"
             }
           }
-        ]
+        ],
+        "currentTab": 3
       }
     ],
     "direction": "horizontal",
-    "width": 200,
-    "collapsed": true
+    "width": 200
   },
   "right": {
     "id": "9003d078f8dbc4ed",
@@ -2896,9 +2896,9 @@
   },
   "active": "3611c77f1e3e7585",
   "lastOpenFiles": [
-    "Notes/gre数学.md",
-    "Notes/广义函数.md",
     "Notes/Green函数.md",
+    "Notes/广义函数.md",
+    "Notes/gre数学.md",
     "Notes/二次量子化.md",
     "Notes/线性响应.md",
     "Notes/Dirac cone的输运贡献.md",
