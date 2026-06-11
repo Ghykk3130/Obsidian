@@ -107,6 +107,26 @@ $$\begin{align}
 \end{align}$$
 注意这是一个分布函数的方程。即我们希望$\langle (\omega-\epsilon) \langle\langle c|c^{\dagger}\rangle\rangle_{\omega},g\rangle=\langle 1,g\rangle$。显然，由于$\mathcal{P} \frac{1}{\omega-\epsilon}$满足要求。这是特解。而注意到Dirac delta作为分布函数满足$(\omega-\epsilon)\delta(\omega-\epsilon)=0$，得到一个齐次解。那么：
 $$\langle\langle c|c^{\dagger}\rangle\rangle_{\omega}= \mathcal{P} \frac{1}{\omega-\epsilon}+a\delta(\omega-\epsilon)$$
-
+我们通过条件$G^{R}_{cc^{\dagger}}(t)=0\text{ for }t<0$来确定$a$。考虑：
+$$\begin{align}
+G^{R}_{cc^{\dagger}}(t) & = \frac{1}{2\pi}\int_{-\infty}^{\infty} d\omega e^{-i\omega t} \left[  \mathcal{P} \frac{1}{\omega-\epsilon}+a\delta(\omega-\epsilon) \right] \\
+ & = \frac{a}{2\pi}e^{-i\epsilon t}+ \frac{1}{2\pi}\int_{-\infty}^{\infty}d\omega e^{-i\omega t}\mathcal{P} \frac{1}{\omega-\epsilon} 
+\end{align}$$
+接下来研究积分，$x<0$：
+$$\begin{align}
+\int_{-\infty}^{\infty}dk e^{-ikx} \mathcal{P} \frac{1}{k} & = \lim_{ \delta \to 0^{+} } \int_{|k|>\delta}dk \frac{e^{-ikx}}{k} \\
+\end{align}$$
+注意到极点为$k=0$。取上半平面，绕开极点，逆时针的积分路劲$C$。那么：
+$$\begin{align}
+ & \oint_{C} dk \frac{e^{-ikx}}{k}=0 \\
+\implies & \lim_{ \delta \to 0^{+} } \int_{|k|>\delta } dk \frac{e^{-ikx}}{k}- i\pi=0 \\
+\implies &  \int_{-\infty}^{\infty}dk e^{-ikx}\mathcal{P} \frac{1}{k} = i\pi
+\end{align}$$
+所以得到：
+$$\begin{align}
+ & G^{R}_{cc^{\dagger}}(t)  = \frac{a}{2\pi} e^{-i\epsilon t} + \frac{i\pi}{2\pi}e^{-i\epsilon t} =0 \\
+ \implies & a=-i\pi
+\end{align}$$
+于是得到推迟Green函数的谱函数$A^{R}_{cc^{\dagger}}(\omega)=i \delta(\omega-\epsilon)$。
 
 
