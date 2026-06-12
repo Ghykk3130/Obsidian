@@ -1,5 +1,7 @@
 # 1. ANE的scaling law
 
+## 随磁场的scaling
+
 我们先来讨论Peltier张量$\boldsymbol{\alpha}$的分解。在[[AHE]]中，我们已知$\sigma_{xy}$可分解为两部分：
 $$\sigma_{xy}=\sigma_{xy}^{\text{A}}+\sigma_{xy}^{\text{O}}$$
 而$\sigma_{xy}^{A}$可分解为三部分：
@@ -29,6 +31,22 @@ $$\begin{align}
 约等于号是近似到小Hall angle $\sigma_{xy}\approx 0$。由于$\alpha_{xy},\sigma_{xy}$都有分解，相应地，$S_{xy}$也存在分解。显然，有如下scaling law：
 $$S_{xy}^{\text{O}}\propto B,\ S_{xy}^{\text{A}}\propto M$$
 但是，关于$\sigma_{x x}$的scaling law就较为复杂了。
+## 随温度的scaling
+
+考虑到$\mathbf{S}= \frac{\boldsymbol{\alpha}}{\boldsymbol{\sigma}}=\boldsymbol{\alpha} \cdot \boldsymbol{\rho}$。提取对角的anomalous部分，容易得到：
+$$S^{A}_{xy}=\rho_{x x}\alpha^{A}_{xy}+\rho^{A}_{xy}\alpha_{x x}$$
+并且在小Hall角下，容易得到：
+$$\alpha_{x x}= \frac{S_{x x}}{\rho_{x x}}$$
+我们知道$\rho^{A}_{xy}$随着$\rho_{x x}^{}$有scaling law。一般是$\rho^{A}_{xy}=a\rho_{x x}+b\rho_{x x}^{2}$。这里我们直接假设指数是单一的。令$\rho^{A}_{xy}=\lambda \rho_{x x}^{\beta}$。于是在小Hall角下：
+$$\begin{align}
+\sigma_{xy}^{A}= -\frac{\rho_{xy}^{A}}{\rho_{x x}^{2}}=-\lambda \rho_{x x}^{\beta-2}
+\end{align}$$
+考虑Mott关系$\alpha^{A}_{xy}=A \frac{\partial \sigma_{xy}^{A}}{\partial\epsilon_{F}}$。我们得到：
+$$\begin{align}
+S_{xy}^{A} & = \rho_{x x} A \frac{\partial}{\partial\epsilon_{F}}(-\lambda \rho^{\beta-2}_{x x}) + \lambda \rho_{x x}^{\beta} \frac{S_{x x}}{\rho_{x x}} \\
+ & = \rho_{x x}^{\beta-1}[-A \lambda^{'}+( \beta-1)\lambda S_{x x}],\ A= \frac{\pi^{2}k^{2}T}{3|e|}
+\end{align}$$
+我们可以通过$\beta$得知AHE的机制更接近于哪一种。
 # 2. Sondheimer cancellation
 
 我们知道：
@@ -36,8 +54,6 @@ $$\begin{align}
  & \alpha_{x y} = - \frac{\pi^{2}k^{2}T}{3|e|}  \frac{\partial \sigma_{x y}}{\partial\epsilon_{F}} \\
  & S_{x x}= - \frac{\pi^{2}k^{2}T}{3|e|} \frac{\partial \ln \sigma_{x x}}{\partial\epsilon_{F}}
 \end{align}$$
-
-
 那么得到Nernst系数：
 $$\begin{align}
 S_{ xy} & = - \frac{\pi^{2}k^{2}T}{3|e|}\left[  \frac{1}{\sigma_{x x}} \frac{\partial \sigma_{xy}}{\partial\epsilon_{F}}- \tan \theta \frac{\partial \ln \sigma_{x x}}{\partial\epsilon_{F}} \right] \\  & = - \frac{\pi^{2}k^{2}T}{3|e|}\left[ \frac{1}{\sigma_{x x}} \frac{\partial \sigma_{xy}}{\partial\epsilon_{F}}-  \frac{\sigma_{xy}}{\sigma_{x x}^{2}} \frac{\partial \sigma_{x x}}{\partial\epsilon_{F}}\right]\\
