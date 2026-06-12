@@ -2727,12 +2727,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Notes/Drude模型.md",
+                "file": "Notes/半经典输运.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Drude模型"
+              "title": "半经典输运"
             }
           }
         ],
@@ -2788,7 +2788,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "drude",
+                "query": "mott",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -2804,8 +2804,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200,
-    "collapsed": true
+    "width": 200
   },
   "right": {
     "id": "9003d078f8dbc4ed",
@@ -2911,6 +2910,7 @@
   },
   "active": "36d771de59eb56f4",
   "lastOpenFiles": [
+    "Notes/Drude模型.md",
     "Notes/Transport.md",
     "Notes/半经典输运.md",
     "Notes/2-band effect.md",
@@ -2928,7 +2928,6 @@
     "Notes/线性响应.md",
     "Notes/Dirac cone的输运贡献.md",
     "Notes/AHE.md",
-    "Notes/Drude模型.md",
     "Notes/Friedel震荡.md",
     "Notes/正规矩阵的对角化.md",
     "Notes/拓扑绝缘体.md",
