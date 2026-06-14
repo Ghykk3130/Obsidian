@@ -2741,12 +2741,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Notes/线性响应与电导率.md",
+                "file": "Notes/GRE词汇.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "线性响应与电导率"
+              "title": "GRE词汇"
             }
           }
         ],
@@ -2802,7 +2802,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "Friede",
+                "query": "GRE",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -2813,12 +2813,12 @@
               "title": "Search"
             }
           }
-        ]
+        ],
+        "currentTab": 3
       }
     ],
     "direction": "horizontal",
-    "width": 200,
-    "collapsed": true
+    "width": 200
   },
   "right": {
     "id": "9003d078f8dbc4ed",
@@ -2924,8 +2924,16 @@
   },
   "active": "b264cabd9cc8c671",
   "lastOpenFiles": [
-    "Notes/Friedel震荡.md",
+    "Notes/GRE数学.md",
+    "Notes/Untitled 3.md",
+    "Notes/Untitled 5.md",
+    "Notes/Untitled 10.md",
+    "Notes/Untitled 11.md",
+    "Notes/Untitled 2.md",
+    "Notes/Transport.md",
+    "Notes/Untitled 1.md",
     "Notes/线性响应与电导率.md",
+    "Notes/Friedel震荡.md",
     "Notes/线性响应.md",
     "Notes/量子Hall效应.md",
     "Notes/AB效应.md",
@@ -2935,22 +2943,14 @@
     "Notes/GRE写作.md",
     "Notes/Ideal flow.md",
     "Notes/GRE词汇.md",
-    "Notes/GRE数学.md",
     "Notes/ANE.md",
     "Notes/半经典输运.md",
     "Notes/Drude模型.md",
-    "Notes/Transport.md",
     "Notes/2-band effect.md",
     "Pictures/GRE镇考机经词7.0-乱序（2026年版）.pdf",
     "Notes/Fermi-Dirac statistics 与 Fermi gas.md",
     "Notes/Green函数.md",
     "Notes/广义函数.md",
-    "Notes/二次量子化.md",
-    "Notes/Dirac cone的输运贡献.md",
-    "Notes/AHE.md",
-    "Notes/正规矩阵的对角化.md",
-    "Notes/拓扑绝缘体.md",
-    "Notes/散射.md",
     "Pictures/Pasted image 20260609164727.png",
     "Pictures/Pasted image 20260609164507.png",
     "Pictures/Pasted image 20260603152224.png",
