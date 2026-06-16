@@ -1,0 +1,9 @@
+# General principles
+- When looking for papers, work in a certain direction in a single day. If feel like this direction does not work, make sure you understand why this direction does not work. Imagine you are going to email the PI, be sure you can express your struggles clearly, or convince him/her.  
+- Make plans for the next day when you are done with today's work. Write down explicitly whether should continue on this direction tomorrow. If not, work out the new direction to look at tomorrow. 
+# Plans for the next step
+**6/16/2026**
+- Idea: The topological signal is due possibly to the non-trivial spin chirality. 
+- Difficulty: But data other than Nernst are trivial. Want to make sure if non-trivial spin chirality is possible. 
+- To-do: Read magnetic structures of R166 compound, look for non-trivial spin chirality. Look for zero-field or low field magnetization data, since my feature is in low field, expect the magnetic structures to be continuous somehow. If cannot get any clue, email Lu. 
+- Reflection: 
