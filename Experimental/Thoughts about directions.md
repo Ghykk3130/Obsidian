@@ -5,5 +5,5 @@
 **6/16/2026**
 - Idea: The topological signal is due possibly to the non-trivial spin chirality. 
 - Difficulty: But data other than Nernst are trivial. Want to make sure if non-trivial spin chirality is possible. 
-- To-do: Read magnetic structures of R166 compound, look for non-trivial spin chirality. Look for zero-field or low field magnetization data, since my feature is in low field, expect the magnetic structures to be continuous somehow. If cannot get any clue, email Lu. 
+- To-do: Read magnetic structures of R166 compound, look for non-trivial spin chirality. Look for zero-field or low field magnetization data, since my feature is in low field, expect the magnetic structures to be continuous somehow. Analyze Sxx. If cannot get any clue, email Lu. 
 - Reflection: 
