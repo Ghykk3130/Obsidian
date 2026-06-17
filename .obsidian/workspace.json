@@ -2844,7 +2844,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "热输运",
+                "query": "drude",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -2855,7 +2855,8 @@
               "title": "Search"
             }
           }
-        ]
+        ],
+        "currentTab": 3
       }
     ],
     "direction": "horizontal",
@@ -2973,7 +2974,7 @@
       "obsidian-shellcommands:Shell commands: Custom variables": false
     }
   },
-  "active": "79fd45f194371e72",
+  "active": "f69ba2cf946ad0e0",
   "lastOpenFiles": [
     "Notes/GRE词汇.md",
     "Experimental/Thoughts about directions.md",
