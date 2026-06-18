@@ -11,4 +11,8 @@
 **6/17/2026**
 - Idea: it is possible that the apparent topological signal is due to chiral structures other than skyrmions. Or the apparent signal is due to some mixing.
 - To-do: continue on the paper about mixings and false identification of skyrmions. Read about other possible chiral structures in Beyond skyrmions: Review and perspectives of alternative magnetic quasiparticles. There is also another paper with similar observation as mine. Do a Hall effect test if possible. Read this one as well. I could tell Lu that I have studied the possible chiral structures, but there are scarce materials about the magnetic structures on the doped system. I could also tell Lu the possibility that some of the magnetic structures could give non-trivial chirality, but there are simply too many options. 
-- Reflection: 
+- Reflection: Still in the process of reading the similar-result paper. Should continuous. The fake skyrmion signal paper doesn't work, because that one applies to system with hysteresis. 
+
+**6/18/2026**
+- To-do: Continue on the similar-result paper. Then read the two chiral structure papers. Combined with the magnetic structures of this system, try to identify if chiral textures could contribute. Possibly try a Hall test at room temperature. 
+- Reflections: 

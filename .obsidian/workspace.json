@@ -2797,12 +2797,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Notes/HSF draft.md",
+                "file": "Experimental/Thoughts about directions.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "HSF draft"
+              "title": "Thoughts about directions"
             }
           }
         ],
@@ -2873,7 +2873,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 200,
+    "collapsed": true
   },
   "right": {
     "id": "9003d078f8dbc4ed",
@@ -2989,8 +2990,21 @@
   },
   "active": "34f4049ec04498da",
   "lastOpenFiles": [
-    "Notes/2-level system的Berry curvature.md",
+    "Experimental/Untitled 1.md",
+    "Experimental/Untitled.md",
+    "Experimental/PPMS.md",
+    "Experimental/Nernst linear fit.md",
+    "Experimental/Mother tape preparation.md",
+    "Experimental/Laplace Transform.md",
+    "Experimental/ECDL Comments.md",
+    "Experimental/FET Amplifier.md",
+    "Experimental/Exfoliation.md",
+    "Experimental/Transformer Comments.md",
+    "Experimental/Thoughts about directions.md",
+    "Experimental/Thermoelectric effect of.md",
+    "Experimental/Thermoelectric code.md",
     "Notes/HSF draft.md",
+    "Notes/2-level system的Berry curvature.md",
     "Notes/2-band effect.md",
     "Notes/Untitled 11.md",
     "Notes/Untitled.md",
@@ -3002,19 +3016,6 @@
     "Notes/Untitled 6.md",
     "Notes/Untitled 8.md",
     "Notes/Untitled 7.md",
-    "Notes/Untitled 9.md",
-    "Notes/Untitled 10.md",
-    "Experimental/Thoughts about directions.md",
-    "Notes/GRE词汇.md",
-    "Experimental/Untitled.md",
-    "Experimental/Reflections.md",
-    "Experimental/Untitled 1.md",
-    "Experimental/PPMS.md",
-    "Notes/热输运系数的含义.md",
-    "Notes/半经典输运.md",
-    "Notes/X-ray diffraction.md",
-    "Notes/全纯函数.md",
-    "Notes/Zeeman效应.md",
     "Pictures/GRE镇考机经词7.0-乱序（2026年版）.pdf",
     "Pictures/Pasted image 20260609164727.png",
     "Pictures/Pasted image 20260609164507.png",
