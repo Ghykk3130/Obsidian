@@ -14,5 +14,5 @@
 - Reflection: Still in the process of reading the similar-result paper. Should continuous. The fake skyrmion signal paper doesn't work, because that one applies to system with hysteresis. 
 
 **6/18/2026**
-- To-do: Continue on the similar-result paper. Then read the two chiral structure papers. Combined with the magnetic structures of this system, try to identify if chiral textures could contribute. Possibly try a Hall test at room temperature. 
+- To-do: Continue on the similar-result paper. Then read the two chiral structure papers. Combined with the magnetic structures of this system, try to identify if chiral textures could contribute. Possibly try a Hall test at room temperature. Investigate vibe researching. 
 - Reflections: 

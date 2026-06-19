@@ -2858,7 +2858,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "drude",
+                "query": "lande",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -2873,8 +2873,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200,
-    "collapsed": true
+    "width": 200
   },
   "right": {
     "id": "9003d078f8dbc4ed",
@@ -2990,6 +2989,12 @@
   },
   "active": "34f4049ec04498da",
   "lastOpenFiles": [
+    "Notes/Magnetic ordering.md",
+    "Notes/Zeeman效应.md",
+    "Notes/氢原子精细结构.md",
+    "Homework/Physics 512/Physics 512 cheat sheet 3.md",
+    "Notes/张量算子（1）.md",
+    "Experimental/Thoughts about directions.md",
     "Experimental/Untitled 1.md",
     "Experimental/Untitled.md",
     "Experimental/PPMS.md",
@@ -3000,7 +3005,6 @@
     "Experimental/FET Amplifier.md",
     "Experimental/Exfoliation.md",
     "Experimental/Transformer Comments.md",
-    "Experimental/Thoughts about directions.md",
     "Experimental/Thermoelectric effect of.md",
     "Experimental/Thermoelectric code.md",
     "Notes/HSF draft.md",
@@ -3011,11 +3015,6 @@
     "Notes/Untitled 1.md",
     "Notes/Untitled 2.md",
     "Notes/Untitled 3.md",
-    "Notes/Untitled 4.md",
-    "Notes/Untitled 5.md",
-    "Notes/Untitled 6.md",
-    "Notes/Untitled 8.md",
-    "Notes/Untitled 7.md",
     "Pictures/GRE镇考机经词7.0-乱序（2026年版）.pdf",
     "Pictures/Pasted image 20260609164727.png",
     "Pictures/Pasted image 20260609164507.png",
