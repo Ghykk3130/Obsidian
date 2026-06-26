@@ -2797,12 +2797,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Experimental/Thoughts about directions.md",
+                "file": "Notes/线性响应与电导率.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Thoughts about directions"
+              "title": "线性响应与电导率"
             }
           }
         ],
@@ -2858,7 +2858,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "lande",
+                "query": "线性响应",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -2869,11 +2869,13 @@
               "title": "Search"
             }
           }
-        ]
+        ],
+        "currentTab": 3
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 200,
+    "collapsed": true
   },
   "right": {
     "id": "9003d078f8dbc4ed",
@@ -2989,12 +2991,18 @@
   },
   "active": "34f4049ec04498da",
   "lastOpenFiles": [
+    "Notes/线性响应.md",
+    "Notes/线性响应与电导率.md",
+    "Notes/Hamiltonian with extreme time dependence.md",
+    "Notes/GRE数学.md",
+    "Notes/DFT.md",
+    "Notes/Dirac cone的输运贡献.md",
+    "Experimental/Thoughts about directions.md",
     "Notes/Magnetic ordering.md",
     "Notes/Zeeman效应.md",
     "Notes/氢原子精细结构.md",
     "Homework/Physics 512/Physics 512 cheat sheet 3.md",
     "Notes/张量算子（1）.md",
-    "Experimental/Thoughts about directions.md",
     "Experimental/Untitled 1.md",
     "Experimental/Untitled.md",
     "Experimental/PPMS.md",
@@ -3009,12 +3017,6 @@
     "Experimental/Thermoelectric code.md",
     "Notes/HSF draft.md",
     "Notes/2-level system的Berry curvature.md",
-    "Notes/2-band effect.md",
-    "Notes/Untitled 11.md",
-    "Notes/Untitled.md",
-    "Notes/Untitled 1.md",
-    "Notes/Untitled 2.md",
-    "Notes/Untitled 3.md",
     "Pictures/GRE镇考机经词7.0-乱序（2026年版）.pdf",
     "Pictures/Pasted image 20260609164727.png",
     "Pictures/Pasted image 20260609164507.png",
