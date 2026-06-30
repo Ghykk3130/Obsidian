@@ -15,4 +15,7 @@
 
 **6/18/2026**
 - To-do: Continue on the similar-result paper. Then read the two chiral structure papers. Combined with the magnetic structures of this system, try to identify if chiral textures could contribute. Possibly try a Hall test at room temperature. Investigate vibe researching. 
-- Reflections: 
+- Reflections: haven't finished chiral structure studies. Should continue.
+
+**6/30/2026**
+- To-do: Investigate the possibility of misalignment and solutions. Continue with 6/18 chiral structure reading. 
