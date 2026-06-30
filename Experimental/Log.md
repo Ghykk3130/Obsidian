@@ -18,4 +18,4 @@
 - Reflections: haven't finished chiral structure studies. Should continue.
 
 **6/30/2026**
-- To-do: Investigate the possibility of misalignment and solutions. Continue with 6/18 chiral structure reading. 
+- To-do: Investigate the possibility of misalignment and solutions. Continue with 6/18 chiral structure reading. Try multi-band fitting.
