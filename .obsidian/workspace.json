@@ -2825,12 +2825,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Notes/磁光效应.md",
+                "file": "Experimental/Log.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "磁光效应"
+              "title": "Log"
             }
           }
         ],
@@ -2901,8 +2901,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200,
-    "collapsed": true
+    "width": 200
   },
   "right": {
     "id": "9003d078f8dbc4ed",
@@ -3018,8 +3017,11 @@
   },
   "active": "8c49c5e58d073fe0",
   "lastOpenFiles": [
-    "Notes/Drude模型.md",
+    "Experimental/Reflections.md",
+    "Experimental/Untitled.md",
+    "Experimental/Untitled 1.md",
     "Notes/磁光效应.md",
+    "Notes/Drude模型.md",
     "Notes/Planar Hall effect.md",
     "Notes/Fermi's golden rule.md",
     "Experimental/Log.md",
@@ -3037,13 +3039,10 @@
     "Notes/氢原子精细结构.md",
     "Homework/Physics 512/Physics 512 cheat sheet 3.md",
     "Notes/张量算子（1）.md",
-    "Experimental/Untitled 1.md",
-    "Experimental/Untitled.md",
     "Experimental/PPMS.md",
     "Experimental/Nernst linear fit.md",
     "Experimental/Mother tape preparation.md",
     "Experimental/Laplace Transform.md",
-    "Experimental/ECDL Comments.md",
     "Pictures/GRE镇考机经词7.0-乱序（2026年版）.pdf",
     "Pictures/Pasted image 20260609164727.png",
     "Pictures/Pasted image 20260609164507.png",

@@ -23,4 +23,8 @@
  
  **7/1/2026**
  - To-do: Finish the multi-band. Read PHE and think about ways to eliminate the PHE errors.
- - Reflections:
+ - Reflections: Multi-band fitting not possible for 95K. Suspect that the OHE multi-band would not work. Now investigate the two-channel AHE fitting. The observed resistivity-M deviation can be attributed to temperature calibration or misalignment. 
+
+**7/2/2026**
+- To-do: Continue with two-channel AHE reading. Also try Lu's suggestion.
+- Reflections:
