@@ -19,3 +19,8 @@
 
 **6/30/2026**
 - To-do: Investigate the possibility of misalignment and solutions. Continue with 6/18 chiral structure reading. Try multi-band fitting.
+- Reflections: obtained reasonable multi-band fitting. Observes negative magnetoresistance. Observed systematic deviation of AHE+OHE and HE. Suspect this could be due to PHE induced by misalignment. 
+ 
+ **7/1/2026**
+ - To-do: Finish the multi-band. Read PHE and think about ways to eliminate the PHE errors.
+ - Reflections:
