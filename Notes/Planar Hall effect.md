@@ -64,5 +64,7 @@ $$\begin{align}
  & \rho_{x x}= \rho_{\perp}+(\rho_{\parallel}-\rho_{\perp})\cos ^{2}\alpha \\
  & \rho_{yx}= (\rho_{\parallel}-\rho_{\perp})\sin \alpha \cos \alpha
 \end{align}$$
-其中，$\rho_{yx}=(\rho_{\parallel}-\rho_{\perp})\sin \alpha \cos \alpha$被称为planar Hall effect贡献。显然$\rho_{yx}$是随磁场对称的。
+其中，$\rho_{yx}=(\rho_{\parallel}-\rho_{\perp})\sin \alpha \cos \alpha$被称为planar Hall effect贡献。显然$\rho_{yx}$是随磁场对称的。注意到magnetoresistivity和Hall resistivity都是三角函数。两者相位相差$45^{\circ}$。
+
+
 
