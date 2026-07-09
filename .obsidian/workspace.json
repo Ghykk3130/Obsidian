@@ -2867,12 +2867,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Notes/Untitled 12.md",
+                "file": "Notes/HSF Assignment.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Untitled 12"
+              "title": "HSF Assignment"
             }
           }
         ],
@@ -2928,7 +2928,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "物质中",
+                "query": "hsf",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -2939,7 +2939,8 @@
               "title": "Search"
             }
           }
-        ]
+        ],
+        "currentTab": 3
       }
     ],
     "direction": "horizontal",
@@ -3059,8 +3060,9 @@
   },
   "active": "ed0b3b5d2d9b8601",
   "lastOpenFiles": [
-    "Notes/Untitled 11.md",
+    "Notes/HSF draft.md",
     "Notes/Untitled 12.md",
+    "Notes/Untitled 11.md",
     "Notes/Untitled.md",
     "Notes/Untitled 1.md",
     "Notes/物质中的Maxwell方程2.md",
@@ -3073,7 +3075,6 @@
     "Notes/HSF Assignment.md",
     "Pictures/Pasted image 20260707143600.png",
     "Pictures/Pasted image 20260707142052.png",
-    "Notes/HSF draft.md",
     "Experimental/Log.md",
     "Experimental/Reflections.md",
     "Experimental/Untitled.md",
