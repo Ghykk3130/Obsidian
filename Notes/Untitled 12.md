@@ -49,6 +49,27 @@ F & = qE\left( x+ \frac{a}{2} \right)- qE\left( x- \frac{a}{2} \right) \\
  & = q a\cdot \nabla E
 \end{align}$$
 >如果对偶极naive地使用Lorentz力公式，只会得到$F=\langle q \rangle\langle E\rangle=0\cdot \langle E\rangle=0$。
+# 2. Polarization
+
+考虑电中性样本。固定一些电荷$\rho_{f}$，产生电场$\mathbf{E}_{\text{ext}}$。那么样本中的电荷将重新分布。令样本重新分布后产生的面电荷为$\sigma_{b}$，体电荷为$\rho_{b}$。那么：
+$$\begin{align}
+\int_{\partial\text{sample}} d^{2}r \sigma_{b}+\int_{\text{sample}} d^{3}r \rho_{b}=0
+\end{align}$$
+若存在一个分布$\mathbf{P}$，使得$\sigma_{b}= \hat{\mathbf{n}}\cdot \mathbf{P},\ \rho_{b}=-\nabla \cdot \mathbf{P}$，那么上述方程自动满足。
+
+为了获得$\mathbf{P}$的物理意义，我们作：
+$$\begin{align}
+\int_{\text{sample}} d^{3}r P_{j} & = \int d^{3}r P_{i}\delta_{ij} \\
+ & = \int d^{3}r P_{i}\partial_{i}r_{j} \\
+ & = \int d^{3}r \partial_{i}(P_{i}r_{j})-\int d^{3}r r_{j}\partial_{i}P_{i} \\
+ & = \int_{\partial\text{sample}} d^{2}r  \hat{n}_{i}P_{i}r_{j}+ \int d^{3}r r_{j}\rho_{b} \\
+ & = \int d^{2} r r_{j} \sigma_{b}+ \int d^{3}r r_{j}\rho_{b} \\
+ & = p_{j}
+\end{align}$$
+所以$\mathbf{P}$可以被视作某种局部的偶极。Lorentz模型提供一种近似$\mathbf{P}$的方法。Lorentz模型中，样本的微观粒子是偶极，然后将偶极分布连续化得到$\mathbf{P}$。即$\mathbf{P}(\mathbf{R})= \frac{1}{\Omega}\int d^{3}r \rho(\mathbf{R}+\mathbf{r})$，其中$\Omega$是一个比样本小得多，但是比微观偶极大得多的尺度。
+
+
+
 
 
 考虑four-field formulation。引入$\mathbf{H},\mathbf{D}$场。我们有：
