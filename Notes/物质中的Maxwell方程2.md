@@ -75,8 +75,32 @@ $$\begin{align}
 $$\mathbf{M}(\mathbf{r})=\sum_{i}\mathbf{m}_{i}\delta(\mathbf{r}-\mathbf{r}_{i})$$
 那么$\mathbf{B}_{M}$来源于磁矩分布$\mathbf{M}$。已知原点处偶极$\mathbf{m}$产生的外磁场等价于原点处的电流$\nabla \times(\mathbf{m}\delta(\mathbf{r}))$。所以$\mathbf{M}(\mathbf{r})$可以等效为电流$\mathbf{j}_{M}=\nabla \times \mathbf{M}$。
 
+已知$\mathbf{r}^{'}$处的偶极矩产生的磁场为：
+$$\mathbf{B}(\mathbf{r})=\mu_{0}\left[ \mathbf{m}\delta(\mathbf{r}-\mathbf{r}^{'})-\nabla \frac{1}{4\pi} \frac{\mathbf{m}\cdot(\mathbf{r}-\mathbf{r}^{'})}{|\mathbf{r}-\mathbf{r}^{'}|^{3}} \right]$$
+那么样品自身磁化产生的磁场为：
+$$\begin{align}
+\mathbf{B}_{M}(\mathbf{r}) & = \int d^{3}r^{'} \mu_{0}\mathbf{M}(\mathbf{r}^{'})\delta(\mathbf{r}-\mathbf{r}^{'})- \int d^{3}r^{'}\mu_{0} \nabla \frac{1}{4\pi} \frac{\mathbf{M}\cdot(\mathbf{r}-\mathbf{r}^{'})}{|\mathbf{r}-\mathbf{r}^{'}|^{3}} \\
+ & = \mu_{0}(\mathbf{M}(\mathbf{r})+\mathbf{H}_{M}(\mathbf{r})),\ \mathbf{H}_{M}(\mathbf{r})=- \int d^{3}r^{'} \nabla \frac{1}{4\pi} \frac{\mathbf{M}\cdot(\mathbf{r}-\mathbf{r}^{'})}{|\mathbf{r}-\mathbf{r}^{'}|^{3}}
+\end{align}$$
+可以证明，
+$$\begin{align}
+ & \mathbf{H}_{M}=-\nabla \psi_{M} \\
+ & \psi_{M}(\mathbf{r}) = \frac{1}{4\pi}\int d^{3}r^{'} \frac{\rho ^{*}(\mathbf{r}^{'})}{|\mathbf{r}-\mathbf{r}^{'}|}+ \frac{1}{4\pi}\int d^{2}r^{'} \frac{\sigma ^{*}(\mathbf{r}^{'})}{|\mathbf{r}-\mathbf{r}^{'}|},\ \rho ^{*}=-\nabla \cdot \mathbf{M},\ \sigma ^{*}=\mathbf{M}\cdot  \hat{\mathbf{n}}
+\end{align}$$
+将$\mathbf{H}_{M}$称为退磁场。我们发现，$\mathbf{H}_{M}$是一个关于$\mathbf{M}$的复杂函数。可以证明，在椭圆体样本中，$\mathbf{H}_{M}=-\mathbf{N}\cdot \mathbf{M}$，其中$\mathbf{N}$为退磁张量。
 
-
+接下来：
+$$\begin{align}
+\nabla \times \mathbf{B} & = \nabla \times \mathbf{B}_{M}+\nabla \times \mathbf{B}_{f} \\
+ & = \mu_{0}(\nabla \times \mathbf{M}+\mathbf{j}_{f})
+\end{align}$$
+于是，定义：
+$$\mathbf{H}=\mu_{0}^{-1}\mathbf{B}-\mathbf{M}$$
+则有：
+$$\begin{align}
+ & \nabla \times \mathbf{H}=\mathbf{j}_{f},\ \nabla \cdot \mathbf{H}=\rho ^{*}
+\end{align}$$
+# 4. 物质中的Maxwell方程
 
 考虑four-field formulation。引入$\mathbf{H},\mathbf{D}$场。我们有：
 $$\begin{align}
