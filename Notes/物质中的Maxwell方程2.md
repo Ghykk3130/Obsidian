@@ -90,6 +90,10 @@ $$\begin{align}
  & \psi_{M}(\mathbf{r}) = \frac{1}{4\pi}\int d^{3}r^{'} \frac{\rho ^{*}(\mathbf{r}^{'})}{|\mathbf{r}-\mathbf{r}^{'}|}+ \frac{1}{4\pi}\int d^{2}r^{'} \frac{\sigma ^{*}(\mathbf{r}^{'})}{|\mathbf{r}-\mathbf{r}^{'}|},\ \rho ^{*}=-\nabla \cdot \mathbf{M},\ \sigma ^{*}=\mathbf{M}\cdot  \hat{\mathbf{n}}
 \end{align}$$
 将$\mathbf{H}_{M}$称为退磁场。我们发现，$\mathbf{H}_{M}$是一个关于$\mathbf{M}$的复杂函数。可以证明，在椭圆体样本中，$\mathbf{H}_{M}=-\mathbf{N}\cdot \mathbf{M}$，其中$\mathbf{N}$为退磁张量。
+## Ex:
+
+对于薄膜样品，$N=1$。
+
 
 接下来：
 $$\begin{align}
