@@ -51,6 +51,36 @@ F & = qE\left( x+ \frac{a}{2} \right)- qE\left( x- \frac{a}{2} \right) \\
 >如果对偶极naive地使用Lorentz力公式，只会得到$F=\langle q \rangle\langle E\rangle=0\cdot \langle E\rangle=0$。
 
 
+考虑four-field formulation。引入$\mathbf{H},\mathbf{D}$场。我们有：
+$$\begin{align}
+\mathbf{H} & = \mu_{0}^{-1}\mathbf{B}+\mathbf{M} \\
+\mathbf{D} & = \epsilon_{0}\mathbf{E}+\mathbf{P}
+\end{align}$$
+在物质中，我们有：
+$$\begin{align}
+ & \nabla \cdot \mathbf{D}  = \rho_{f},\ \nabla \cdot\mathbf{B}=0 \\
+ & \nabla \times \mathbf{E}= - \frac{\partial \mathbf{B}}{\partial t},\ \nabla \times \mathbf{H}= \mathbf{j}_{f}+ \frac{\partial \mathbf{D}}{\partial t}
+\end{align}$$
+进行变量数统计。一般，$\rho_{f},\ \mathbf{j}_{f}$给定。上面第一行2个方程构成约束，第二行6个方程构成演化。
+
+>[!Quote]
+>将$\nabla \cdot \mathbf{D}=\rho_{f},\ \nabla \cdot \mathbf{B}=0$称为约束方程。因为单独给出这两个方程，并不能决定解在“相空间”中的流动。它们唯一地作用只是将解约束在“相空间”的子流形上。
+>
+>可以证明，一旦初始条件确定满足约束方程，那么解就永远在子流形中流动了。例如，容易得到：
+>$$\begin{align}
+ & \nabla \cdot(\nabla \times \mathbf{E})=0=- \frac{\partial}{\partial t}(\nabla \cdot \mathbf{B})
+\end{align}$$
+>所以，若$\nabla \cdot \mathbf{B}(\mathbf{r},t=0)=0$，那么此后任意时刻就永远满足$\nabla \cdot \mathbf{B}(\mathbf{r},t)=0$。所以约束方程如同不等式，不能真正用等式约束变量。
+
+那么实际上只有6个方程。但是$\mathbf{E},\mathbf{D},\mathbf{B},\mathbf{H}$共有12个变量。此时还需要本构关系$\mathbf{D}=\mathbf{D}(\mathbf{E},\mathbf{B}),\ \mathbf{H}=\mathbf{H}(\mathbf{E},\mathbf{B})$给出另外6个方程。线性近似下，本构关系为：
+$$\begin{align}
+ & \mathbf{D} = \epsilon \mathbf{E},\ \mathbf{H}=\mu ^{-1}\mathbf{B}
+\end{align}$$
+有时，也写成：
+$$\begin{align}
+\mathbf{D} & = \epsilon_{0}\chi \mathbf{E},\ \mathbf{H}=\chi_{m}^{-1}\mathbf{M}
+\end{align}$$
+
 
 
 
