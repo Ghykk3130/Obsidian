@@ -49,6 +49,7 @@ F & = qE\left( x+ \frac{a}{2} \right)- qE\left( x- \frac{a}{2} \right) \\
  & = q a\cdot \nabla E
 \end{align}$$
 >如果对偶极naive地使用Lorentz力公式，只会得到$F=\langle q \rangle\langle E\rangle=0\cdot \langle E\rangle=0$。
+
 # 2. Polarization
 
 考虑电中性样本。固定一些电荷$\rho_{f}$，产生电场$\mathbf{E}_{\text{ext}}$。那么样本中的电荷将重新分布。这些电荷产生电场$\mathbf{E}_{b}$。则总电场为$\mathbf{E}=\mathbf{E}_{\text{ext}}+\mathbf{E}_{b}$。令样本重新分布后产生的面电荷为$\sigma_{b}$，体电荷为$\rho_{b}$。那么：
@@ -67,6 +68,7 @@ $$\begin{align}
  & = p_{j}
 \end{align}$$
 所以$\mathbf{P}$可以被视作某种局部的偶极。Lorentz模型提供一种近似$\mathbf{P}$的方法。Lorentz模型中，样本的微观粒子是偶极，然后将偶极分布连续化得到$\mathbf{P}$。即$\mathbf{P}(\mathbf{R})= \frac{1}{\Omega}\int d^{3}r \rho(\mathbf{R}+\mathbf{r})$，其中$\Omega$是一个比样本小得多，但是比微观偶极大得多的尺度。
+
 # 3. Magnetization
 
 考虑一块样品。固定一些电流$\mathbf{j}_{f}$，产生磁场$\mathbf{B}_{\text{ext}}$。那么，样品作为响应将自身磁化产生磁场$\mathbf{B}_{M}$。则总磁场为$\mathbf{B}=\mathbf{B}_{\text{ext}}+\mathbf{B}_{M}$。令$\mathbf{B}_{M}$的源为$\mathbf{j}_{M}$。
@@ -100,11 +102,40 @@ $$\mathbf{H}=\mu_{0}^{-1}\mathbf{B}-\mathbf{M}$$
 $$\begin{align}
  & \nabla \times \mathbf{H}=\mathbf{j}_{f},\ \nabla \cdot \mathbf{H}=\rho ^{*}
 \end{align}$$
+但应当注意，虽然看起来$\mathbf{H}$只有一个源$\mathbf{j}_{f}$，实际上$\mathbf{H}$却是两个场的叠加：
+$$\begin{align}
+\mathbf{H} & = \mu_{0}^{-1}\mathbf{B}-\mathbf{M} \\
+ & = \mu_{0}^{-1}\mathbf{B}_{\text{ext}}+\mathbf{H}_{M}
+\end{align}$$
+其中，$\mathbf{H}_{M}$无旋。
+
+>[!Quote]
+>将样品放入测量仪器中，仪器上磁场读数一般为$B_{\text{ext}}$。所以，样品内部一个磁矩感受到的磁场实际上是：
+>$$\begin{align}
+\mathbf{B} & = \mu_{0}(\mathbf{H}+\mathbf{M}) \\
+ & = \mu_{0}(\mu_{0}^{-1}\mathbf{B}_{\text{ext}}-\mathbf{N}\cdot \mathbf{M}+\mathbf{M}) \\
+ & = \mathbf{B}_{\text{ext}}+\mu_{0}(1-\mathbf{N})\cdot \mathbf{M}
+\end{align}$$
+
+我们知道：
+$$\begin{align}
+\mathbf{M} & = \chi \mathbf{H} \\
+\mathbf{H} & = \mu_{0}^{-1}\mathbf{B}_{\text{ext}}-\mathbf{N}\cdot \mathbf{M}
+\end{align}$$
+所以：
+$$\begin{align}
+ & \frac{\mathbf{M}}{\chi}= \mu_{0}^{-1}\mathbf{B}_{\text{ext}}-\mathbf{N}\mathbf{M} \\
+\implies & \mathbf{M} = \frac{\mathbf{B}_{\text{ext}}}{\mu_{0}(\mathbf{N}+ 1 /\chi)}
+\end{align}$$
+我们可以得到一个表观susceptibility：
+$$\chi^{'}= \frac{\mathbf{M}}{\mu_{0}^{-1}\mathbf{B}_{\text{ext}}}=  \frac{1}{\mathbf{N}+1 /\chi}$$
+这一般是实验上测得的磁化率。
+
 # 4. 物质中的Maxwell方程
 
 考虑four-field formulation。引入$\mathbf{H},\mathbf{D}$场。我们有：
 $$\begin{align}
-\mathbf{H} & = \mu_{0}^{-1}\mathbf{B}+\mathbf{M} \\
+\mathbf{H} & = \mu_{0}^{-1}\mathbf{B}-\mathbf{M} \\
 \mathbf{D} & = \epsilon_{0}\mathbf{E}+\mathbf{P}
 \end{align}$$
 在物质中，我们有：
@@ -129,7 +160,7 @@ $$\begin{align}
 \end{align}$$
 有时，也写成：
 $$\begin{align}
-\mathbf{D} & = \epsilon_{0}\chi \mathbf{E},\ \mathbf{H}=\chi_{m}^{-1}\mathbf{M}
+\mathbf{D} & = \epsilon_{0}\chi_{e} \mathbf{E},\ \mathbf{H}=\chi_{}^{-1}\mathbf{M}
 \end{align}$$
 
 
