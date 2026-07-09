@@ -51,7 +51,7 @@ F & = qE\left( x+ \frac{a}{2} \right)- qE\left( x- \frac{a}{2} \right) \\
 >如果对偶极naive地使用Lorentz力公式，只会得到$F=\langle q \rangle\langle E\rangle=0\cdot \langle E\rangle=0$。
 # 2. Polarization
 
-考虑电中性样本。固定一些电荷$\rho_{f}$，产生电场$\mathbf{E}_{\text{ext}}$。那么样本中的电荷将重新分布。令样本重新分布后产生的面电荷为$\sigma_{b}$，体电荷为$\rho_{b}$。那么：
+考虑电中性样本。固定一些电荷$\rho_{f}$，产生电场$\mathbf{E}_{\text{ext}}$。那么样本中的电荷将重新分布。这些电荷产生电场$\mathbf{E}_{b}$。则总电场为$\mathbf{E}=\mathbf{E}_{\text{ext}}+\mathbf{E}_{b}$。令样本重新分布后产生的面电荷为$\sigma_{b}$，体电荷为$\rho_{b}$。那么：
 $$\begin{align}
 \int_{\partial\text{sample}} d^{2}r \sigma_{b}+\int_{\text{sample}} d^{3}r \rho_{b}=0
 \end{align}$$
@@ -67,7 +67,13 @@ $$\begin{align}
  & = p_{j}
 \end{align}$$
 所以$\mathbf{P}$可以被视作某种局部的偶极。Lorentz模型提供一种近似$\mathbf{P}$的方法。Lorentz模型中，样本的微观粒子是偶极，然后将偶极分布连续化得到$\mathbf{P}$。即$\mathbf{P}(\mathbf{R})= \frac{1}{\Omega}\int d^{3}r \rho(\mathbf{R}+\mathbf{r})$，其中$\Omega$是一个比样本小得多，但是比微观偶极大得多的尺度。
+# 3. Magnetization
 
+考虑一块样品。固定一些电流$\mathbf{j}_{f}$，产生磁场$\mathbf{B}_{\text{ext}}$。那么，样品作为响应将自身磁化产生磁场$\mathbf{B}_{M}$。则总磁场为$\mathbf{B}=\mathbf{B}_{\text{ext}}+\mathbf{B}_{M}$。令$\mathbf{B}_{M}$的源为$\mathbf{j}_{M}$。
+
+样品磁化可以来源于自旋角动量和轨道角动量。考虑一个角动量的分布：
+$$\mathbf{M}(\mathbf{r})=\sum_{i}\mathbf{m}_{i}\delta(\mathbf{r}-\mathbf{r}_{i})$$
+那么$\mathbf{B}_{M}$来源于磁矩分布$\mathbf{M}$。已知原点处偶极$\mathbf{m}$产生的外磁场等价于原点处的电流$\nabla \times(\mathbf{m}\delta(\mathbf{r}))$。所以$\mathbf{M}(\mathbf{r})$可以等效为电流$\mathbf{j}_{M}=\nabla \times \mathbf{M}$。
 
 
 
