@@ -55,4 +55,8 @@ Competing magnetic phases and fluctuation-driven scalar spin chirality in the ka
 
 
 谈话要点：
-- 
+
+Summary是失败的文章。写文章是项目的一部分。
+
+method是最简单的部分。文章最重要的是图+图注+解释。这就是discussion，或者说result。
+

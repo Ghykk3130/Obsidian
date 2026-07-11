@@ -2867,12 +2867,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Notes/HSF Assignment.md",
+                "file": "Notes/Untitled 2.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "HSF Assignment"
+              "title": "Untitled 2"
             }
           }
         ],
@@ -2939,8 +2939,7 @@
               "title": "Search"
             }
           }
-        ],
-        "currentTab": 3
+        ]
       }
     ],
     "direction": "horizontal",
@@ -3060,10 +3059,12 @@
   },
   "active": "ed0b3b5d2d9b8601",
   "lastOpenFiles": [
+    "Notes/Untitled.md",
+    "Experimental/Untitled.md",
+    "Notes/HSF Assignment.md",
     "Notes/HSF draft.md",
     "Notes/Untitled 12.md",
     "Notes/Untitled 11.md",
-    "Notes/Untitled.md",
     "Notes/Untitled 1.md",
     "Notes/物质中的Maxwell方程2.md",
     "Experimental/Untitled 2.md",
@@ -3072,12 +3073,10 @@
     "Notes/2-level system的Berry curvature.md",
     "Notes/2-band effect.md",
     "Notes/Untitled 9.md",
-    "Notes/HSF Assignment.md",
     "Pictures/Pasted image 20260707143600.png",
     "Pictures/Pasted image 20260707142052.png",
     "Experimental/Log.md",
     "Experimental/Reflections.md",
-    "Experimental/Untitled.md",
     "Experimental/Untitled 1.md",
     "Notes/磁光效应.md",
     "Notes/Drude模型.md",
