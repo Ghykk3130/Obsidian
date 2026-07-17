@@ -30,4 +30,4 @@
 - Reflections: Observed constant shifts for temperatures below 200K. The misalignment angle might be 30 degree-ish. The two-channel AHE is not inspiring, because it is mainly for samples with hysteresis loops. 
 **7/6/2026**
 - To-do: Try rescale the horizontal axis to compensate for the misalignment. Try to think about ways to do two-channel AHE for samples without hysteresis loops. 
-- Reflections: 
+- Reflections: Did not work.
