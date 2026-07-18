@@ -31,3 +31,6 @@
 **7/6/2026**
 - To-do: Try rescale the horizontal axis to compensate for the misalignment. Try to think about ways to do two-channel AHE for samples without hysteresis loops. 
 - Reflections: Did not work.
+**7/17/2026**
+- To-do: Continue to take the hysteretic Hall data. Can explain the hysteretic Hall resistivity based on the argument in Hysteretic magnetoresistance...
+- Reflections: 
