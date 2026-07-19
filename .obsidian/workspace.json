@@ -2895,12 +2895,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Experimental/Log.md",
+                "file": "Notes/线性响应与电导率.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Log"
+              "title": "线性响应与电导率"
             }
           }
         ],
@@ -2956,7 +2956,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "Haidong",
+                "query": "线性响应",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -2967,11 +2967,13 @@
               "title": "Search"
             }
           }
-        ]
+        ],
+        "currentTab": 3
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 200,
+    "collapsed": true
   },
   "right": {
     "id": "9003d078f8dbc4ed",
@@ -3087,6 +3089,13 @@
   },
   "active": "2303ddb613906d7c",
   "lastOpenFiles": [
+    "Notes/线性响应.md",
+    "Notes/线性响应与电导率.md",
+    "Notes/箱归一化粒子态密度.md",
+    "Notes/磁化和磁化率数据的解读.md",
+    "Notes/磁光效应.md",
+    "Notes/Dam-break问题.md",
+    "Experimental/Log.md",
     "Experimental/Reflections.md",
     "Notes/如何处理输运与磁测量样本几何不同的问题.md",
     "Notes/多电子原子精细结构.md",
@@ -3096,7 +3105,6 @@
     "Experimental/Thermoelectric effect of.md",
     "Experimental/Transformer Comments.md",
     "Experimental/PID Control.md",
-    "Experimental/Log.md",
     "Notes/DFT.md",
     "Notes/Fourier变换.md",
     "Experimental/Untitled.md",
@@ -3107,12 +3115,6 @@
     "Notes/Untitled 3.md",
     "Notes/Untitled 4.md",
     "Notes/Untitled 5.md",
-    "Notes/Untitled 6.md",
-    "Notes/Untitled 7.md",
-    "Notes/Untitled 8.md",
-    "Notes/Untitled 9.md",
-    "Notes/Untitled 10.md",
-    "Notes/Untitled 11.md",
     "Pictures/Pasted image 20260707143600.png",
     "Pictures/Pasted image 20260707142052.png",
     "Pictures/GRE镇考机经词7.0-乱序（2026年版）.pdf",
