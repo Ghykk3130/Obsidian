@@ -2895,12 +2895,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Notes/线性响应与电导率.md",
+                "file": "Experimental/Log.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "线性响应与电导率"
+              "title": "Log"
             }
           }
         ],
@@ -2956,7 +2956,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "线性响应",
+                "query": "kramer",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -2967,8 +2967,7 @@
               "title": "Search"
             }
           }
-        ],
-        "currentTab": 3
+        ]
       }
     ],
     "direction": "horizontal",
@@ -3088,8 +3087,9 @@
   },
   "active": "2303ddb613906d7c",
   "lastOpenFiles": [
-    "Notes/二次量子化.md",
+    "Notes/拓扑绝缘体.md",
     "Notes/线性响应与电导率.md",
+    "Notes/二次量子化.md",
     "Notes/线性响应.md",
     "Notes/箱归一化粒子态密度.md",
     "Notes/磁化和磁化率数据的解读.md",
@@ -3113,7 +3113,6 @@
     "Notes/Untitled 1.md",
     "Notes/Untitled 2.md",
     "Notes/Untitled 3.md",
-    "Notes/Untitled 4.md",
     "Pictures/Pasted image 20260707143600.png",
     "Pictures/Pasted image 20260707142052.png",
     "Pictures/GRE镇考机经词7.0-乱序（2026年版）.pdf",

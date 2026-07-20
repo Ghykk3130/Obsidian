@@ -33,4 +33,7 @@
 - Reflections: Did not work.
 **7/17/2026**
 - To-do: Continue to take the hysteretic Hall data. Can explain the hysteretic Hall resistivity based on the argument in Hysteretic magnetoresistance...
-- Reflections: 
+- Reflections: completed.
+**7/20/2026**
+- To-do: Try mapping out the phase diagram by cooling down under different fields in the next run. 
+- 
