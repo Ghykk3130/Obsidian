@@ -39,3 +39,7 @@
 - Reflections: done.
 **7/23/2026**
 - To-do: Investigate the Hall hysteresis data. Read the paper. Do the sample preparations. 
+- Reflections: Took the Nernst sample down successfully. Break the vsm sample. Suspect the vsm sample and the Nernst sample are not from the same piece.
+**7/24/2026**
+- To-do: Remake a vsm sapphire platform for the Nernst sample. See if vsm sample can be wired.
+- Reflections:
