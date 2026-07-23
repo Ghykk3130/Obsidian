@@ -36,4 +36,6 @@
 - Reflections: completed.
 **7/20/2026**
 - To-do: Try mapping out the phase diagram by cooling down under different fields in the next run. 
-- 
+- Reflections: done.
+**7/23/2026**
+- To-do: Investigate the Hall hysteresis data. Read the paper. Do the sample preparations. 
