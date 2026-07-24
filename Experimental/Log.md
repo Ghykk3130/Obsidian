@@ -42,4 +42,7 @@
 - Reflections: Took the Nernst sample down successfully. Break the vsm sample. Suspect the vsm sample and the Nernst sample are not from the same piece.
 **7/24/2026**
 - To-do: Remake a vsm sapphire platform for the Nernst sample. See if vsm sample can be wired.
-- Reflections:
+- Reflections: The vsm sapphire platform roughly fits with sample1. Mounted.
+**7/25/2026**
+- To-do: Mount the vsm platform on the rod.
+- Reflections: 

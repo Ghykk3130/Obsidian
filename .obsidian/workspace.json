@@ -2985,8 +2985,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200,
-    "collapsed": true
+    "width": 200
   },
   "right": {
     "id": "9003d078f8dbc4ed",
@@ -3102,12 +3101,12 @@
   },
   "active": "a42df45ec895e219",
   "lastOpenFiles": [
-    "Notes/Bose-Einstein statistics与BEC.md",
+    "Experimental/Log.md",
     "Notes/GRE物理.md",
+    "Notes/Bose-Einstein statistics与BEC.md",
     "Notes/热力学中的求导.md",
     "Notes/GRE数学.md",
     "Notes/Hamiltonian with extreme time dependence.md",
-    "Experimental/Log.md",
     "Notes/拓扑绝缘体.md",
     "Notes/线性响应与电导率.md",
     "Notes/二次量子化.md",
