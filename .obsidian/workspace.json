@@ -2909,12 +2909,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Notes/Bose-Einstein statistics与BEC.md",
+                "file": "Notes/GRE物理.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Bose-Einstein statistics与BEC"
+              "title": "GRE物理"
             }
           }
         ],
@@ -2985,7 +2985,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 200,
+    "collapsed": true
   },
   "right": {
     "id": "9003d078f8dbc4ed",
@@ -3099,8 +3100,9 @@
       "obsidian-shellcommands:Shell commands: Custom variables": false
     }
   },
-  "active": "0bd5adf6a54a04e2",
+  "active": "a42df45ec895e219",
   "lastOpenFiles": [
+    "Notes/Bose-Einstein statistics与BEC.md",
     "Notes/GRE物理.md",
     "Notes/热力学中的求导.md",
     "Notes/GRE数学.md",
@@ -3126,7 +3128,6 @@
     "Notes/DFT.md",
     "Notes/Fourier变换.md",
     "Experimental/Untitled.md",
-    "Experimental/Untitled 1.md",
     "Pictures/Pasted image 20260707143600.png",
     "Pictures/Pasted image 20260707142052.png",
     "Pictures/GRE镇考机经词7.0-乱序（2026年版）.pdf",
