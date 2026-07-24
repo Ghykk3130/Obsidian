@@ -2909,12 +2909,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Notes/GRE物理.md",
+                "file": "Notes/Bose-Einstein statistics与BEC.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "GRE物理"
+              "title": "Bose-Einstein statistics与BEC"
             }
           }
         ],
@@ -2970,7 +2970,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "kramer",
+                "query": "gamma函数",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -3099,10 +3099,11 @@
       "obsidian-shellcommands:Shell commands: Custom variables": false
     }
   },
-  "active": "a42df45ec895e219",
+  "active": "0bd5adf6a54a04e2",
   "lastOpenFiles": [
-    "Notes/GRE数学.md",
     "Notes/GRE物理.md",
+    "Notes/热力学中的求导.md",
+    "Notes/GRE数学.md",
     "Notes/Hamiltonian with extreme time dependence.md",
     "Experimental/Log.md",
     "Notes/拓扑绝缘体.md",
@@ -3126,7 +3127,6 @@
     "Notes/Fourier变换.md",
     "Experimental/Untitled.md",
     "Experimental/Untitled 1.md",
-    "Experimental/Untitled 2.md",
     "Pictures/Pasted image 20260707143600.png",
     "Pictures/Pasted image 20260707142052.png",
     "Pictures/GRE镇考机经词7.0-乱序（2026年版）.pdf",
