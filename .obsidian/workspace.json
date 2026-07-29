@@ -2923,16 +2923,30 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Notes/音程.md",
+                "file": "Notes/满壳层角动量.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "音程"
+              "title": "满壳层角动量"
+            }
+          },
+          {
+            "id": "b8c21fd44896ef86",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Notes/对位法.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "对位法"
             }
           }
         ],
-        "currentTab": 208
+        "currentTab": 209
       }
     ],
     "direction": "vertical"
@@ -3113,10 +3127,12 @@
       "obsidian-shellcommands:Shell commands: Custom variables": false
     }
   },
-  "active": "0bd5adf6a54a04e2",
+  "active": "b8c21fd44896ef86",
   "lastOpenFiles": [
-    "Notes/Hilbert空间.md",
+    "Notes/满壳层角动量.md",
+    "Notes/对位法.md",
     "Notes/音程.md",
+    "Notes/Hilbert空间.md",
     "Notes/GRE物理.md",
     "Notes/Hubbard模型.md",
     "Notes/Hydraulic jump.md",
@@ -3139,8 +3155,6 @@
     "Experimental/Reflections.md",
     "Notes/如何处理输运与磁测量样本几何不同的问题.md",
     "Notes/多电子原子精细结构.md",
-    "Notes/多级展开.md",
-    "Notes/Pauli顺磁.md",
     "Pictures/Pasted image 20260707143600.png",
     "Pictures/Pasted image 20260707142052.png",
     "Pictures/GRE镇考机经词7.0-乱序（2026年版）.pdf",
