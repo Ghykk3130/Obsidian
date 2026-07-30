@@ -2937,12 +2937,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Notes/Untitled 6.md",
+                "file": "Notes/多电子原子精细结构.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Untitled 6"
+              "title": "多电子原子精细结构"
             }
           }
         ],
@@ -2998,7 +2998,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "gamma函数",
+                "query": "规则",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -3009,7 +3009,8 @@
               "title": "Search"
             }
           }
-        ]
+        ],
+        "currentTab": 3
       }
     ],
     "direction": "horizontal",
@@ -3129,6 +3130,9 @@
   },
   "active": "b8c21fd44896ef86",
   "lastOpenFiles": [
+    "Notes/Solid state.md",
+    "Notes/Magnetic ordering.md",
+    "Notes/Untitled 6.md",
     "Notes/音程.md",
     "Notes/对位法.md",
     "Notes/守恒律.md",
@@ -3152,9 +3156,6 @@
     "Notes/二次量子化.md",
     "Notes/线性响应.md",
     "Notes/箱归一化粒子态密度.md",
-    "Notes/磁化和磁化率数据的解读.md",
-    "Notes/磁光效应.md",
-    "Notes/Dam-break问题.md",
     "Pictures/Pasted image 20260707143600.png",
     "Pictures/Pasted image 20260707142052.png",
     "Pictures/GRE镇考机经词7.0-乱序（2026年版）.pdf",
