@@ -2949,12 +2949,14 @@
             "id": "ffe8daa430dc6efd",
             "type": "leaf",
             "state": {
-              "type": "release-notes",
+              "type": "markdown",
               "state": {
-                "currentVersion": "1.13.4"
+                "file": "Notes/对位法.md",
+                "mode": "source",
+                "source": false
               },
-              "icon": "lucide-book-up",
-              "title": "Release Notes 1.13.4"
+              "icon": "lucide-file",
+              "title": "对位法"
             }
           }
         ],
@@ -3010,7 +3012,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "抗磁",
+                "query": "对位法",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -3026,8 +3028,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200,
-    "collapsed": true
+    "width": 200
   },
   "right": {
     "id": "9003d078f8dbc4ed",
@@ -3143,11 +3144,11 @@
   },
   "active": "ffe8daa430dc6efd",
   "lastOpenFiles": [
+    "Notes/音程.md",
     "Notes/多电子原子精细结构.md",
     "Notes/Solid state.md",
     "Notes/Magnetic ordering.md",
     "Notes/Untitled 6.md",
-    "Notes/音程.md",
     "Notes/对位法.md",
     "Notes/守恒律.md",
     "Notes/密度矩阵非对角元含义.md",
