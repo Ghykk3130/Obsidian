@@ -2951,12 +2951,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Notes/GRE物理.md",
+                "file": "Notes/对位法.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "GRE物理"
+              "title": "对位法"
             }
           }
         ],
@@ -3025,7 +3025,8 @@
               "title": "Search"
             }
           }
-        ]
+        ],
+        "currentTab": 3
       }
     ],
     "direction": "horizontal",
@@ -3145,6 +3146,8 @@
   },
   "active": "ffe8daa430dc6efd",
   "lastOpenFiles": [
+    "Pictures/0f8c9de417f9dbabb4ed5123f4d67158.jpg",
+    "Notes/GRE物理.md",
     "Pictures/Pasted image 20260731170126.png",
     "Notes/Hubbard模型.md",
     "Experimental/Log.md",
@@ -3159,7 +3162,6 @@
     "Notes/对偶矢量空间与伴随算子.md",
     "Notes/满壳层角动量.md",
     "Notes/Hilbert空间.md",
-    "Notes/GRE物理.md",
     "Notes/Hydraulic jump.md",
     "Notes/Hamiltonian Formulation of EM.md",
     "Notes/Heisenberg交换.md",
@@ -3181,7 +3183,6 @@
     "Pictures/Pasted image 20260530191658.png",
     "Pictures/Pasted image 20260530170459.png",
     "Pictures/Pasted image 20260530170136.png",
-    "Pictures/Pasted image 20260530155447.png",
     "Pictures/drawing.pdf",
     "Pictures/drawing.html",
     "Untitled",
