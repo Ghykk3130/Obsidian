@@ -3030,7 +3030,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 200,
+    "collapsed": true
   },
   "right": {
     "id": "9003d078f8dbc4ed",
@@ -3146,6 +3147,12 @@
   },
   "active": "ffe8daa430dc6efd",
   "lastOpenFiles": [
+    "Pictures/Pasted image 20260802144851.png",
+    "Pictures/Pasted image 20260802144454.png",
+    "Pictures/Pasted image 20260802143957.png",
+    "Pictures/Pasted image 20260802143514.png",
+    "Pictures/Pasted image 20260802143340.png",
+    "Pictures/Pasted image 20260802143225.png",
     "Pictures/0f8c9de417f9dbabb4ed5123f4d67158.jpg",
     "Notes/GRE物理.md",
     "Pictures/Pasted image 20260731170126.png",
@@ -3177,12 +3184,6 @@
     "Pictures/Pasted image 20260707142052.png",
     "Pictures/GRE镇考机经词7.0-乱序（2026年版）.pdf",
     "Pictures/Pasted image 20260609164727.png",
-    "Pictures/Pasted image 20260609164507.png",
-    "Pictures/Pasted image 20260603152224.png",
-    "Pictures/Pasted image 20260601153850.png",
-    "Pictures/Pasted image 20260530191658.png",
-    "Pictures/Pasted image 20260530170459.png",
-    "Pictures/Pasted image 20260530170136.png",
     "Pictures/drawing.pdf",
     "Pictures/drawing.html",
     "Untitled",
