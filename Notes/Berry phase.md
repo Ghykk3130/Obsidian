@@ -1,4 +1,4 @@
-# 1. 绝热近似
+# 1. Berry phase的第一种引入方式
 
 假设hamiltonian是含时的，则每一瞬间可以写下方程：
 $$H(t)\ket{n(t)} =E_{n}(t)\ket{n(t)} $$
@@ -76,8 +76,41 @@ $$\ket{\psi} =e^{i\gamma_{n}}e^{id_{n}}\ket{n} -i\hbar e^{i\gamma_{n}}e^{id_{n}}
 >$$\ket{\psi} =e^{i\gamma_{n}}e^{id_{n}}\left( \ket{n} - i\hbar \sum_{m\neq n} \frac{\ket{m} \bra{m} \partial_{t}n\rangle}{E_{n}-E_{m}} \right)$$
 
 ^291c90
+# 2. Berry phase的第二种引入方式
 
-# 2. Berry phase
+一般来说，若不同时刻的hamiltonian不对易，那么求解时间演化必须用Dyson级数展开。这非常困难。但是，在时间演化非常缓慢的情况下，即绝热演化，可以比较容易地近似求解。
+
+在任意时刻存在instantaneous Schrodinger equation：
+$$H(t)\ket{n(t)} =E_{n}(t)\ket{n(t)} $$
+由于整个系统的基在不断地转动，我们构造基变换算符$W(t)=\sum_{n}\ket{n(t)}\bra{n(0)}$。
+
+>[!Warning]
+>注意，$W$不是时间演化算符。你可能认为，$W$作用在初态$\ket{n(0)}$上得到$\ket{n(t)}$，所以是时间演化算符。但$\ket{n(t)}$并不是$\ket{n(0)}$自然根据Schrodinger方程流动，演化成的态。$\ket{n(t)}$是相当任意的，只是符合瞬时Schrodinger方程的任意一组本征态而已，并不唯一。既然它不唯一，显然就不一定是$\ket{n(0)}$自然流动到$t$的态。因为这个态是唯一的。$\{ \ket{n(t)} \}$就如同是流形上任意取的local坐标架一样，具有任意性。
+
+令系统从$\ket{\psi(0)}$开始，通过Schrodinger方程流动到$t$的态为$\ket{\psi(t)}$。令：
+$$\ket{\phi(t)} =W(t)\ket{\psi(t)} $$
+
+
+
+
+
+
+
+
+
+算符$H_{0}(t)=\sum_{n}E_{n}(t)\ket{n(0)}\bra{n(0)}$。那么$H_{0}$在任意时刻都对易。接下来构造含时微扰：
+$$V(t)=H(t)-H_{0}(t)=\sum_{n}E_{n}(t)(\ket{n(t)} \bra{n(t)} -\ket{n(0)} \bra{n(0)} )$$
+令系统在Schrodinger绘景下的态为$\ket{\psi(t)}$，那么可以变换到相互作用绘景：
+$$\ket{\psi_{I}(t)} =e^{\frac{i}{\hbar}H_{0}t}\ket{\psi(t)} $$
+我们不妨作展开$\ket{\psi_{I}(t)}=\sum_{n}c_{n}(t)\ket{n(0)}$。那么代入Schrodinger方程：
+$$\begin{align}
+ & i\hbar \partial_{t}\ket{\psi_{I}} =V\ket{\psi_{I}} 
+\end{align}$$
+
+
+
+
+# 3. Berry curvature
 
 假设所有的time dependence都来源于参数$\mathbf{R}(t)$。假设$\mathbf{R}$在参数空间中作周期运动。那么一个周期累积的Berry phase为：
 $$\begin{align}
@@ -132,7 +165,7 @@ $$\vec{B}_{\pm}= \mp \frac{1}{2R^{2}}\hat{R}$$
 所以Berry phase为：
 $$\gamma_{n}(C)= \mp \frac{1}{2}\int_{C} d\vec{S}\cdot \frac{\hat{R}}{R^{2}}=\mp \frac{1}{2}\Omega(C)$$
 其中$\Omega(C)$为$\vec{R}$绕出的闭合曲线对应的立体角。
-# 3. 陈数在2-torus上的量子化
+# 4. 陈数在2-torus上的量子化
 
 我们将Berry curvature在整个BZ的积分定义为陈数。例如说，对于二维系统，定义：
 $$C= \frac{1}{2\pi}\int_{\text{BZ}}dk_{x} dk_{y} \Omega_{k_{z}}$$
