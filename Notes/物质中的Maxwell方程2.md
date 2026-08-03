@@ -124,6 +124,8 @@ $$\begin{align}
 
 对于磁性薄膜，我们有总磁场$\mathbf{B}=\mu_{0}(\mathbf{H}_{\text{ext}}+(1-\mathbf{N})\cdot \mathbf{M})$。那么样本中的自旋感受到的Zeeman coupling为$-\frac{1}{2}\int d^{2}r\mu_{0}\mathbf{M}\cdot(\mathbf{H}_{\text{ext}}+(1-\mathbf{N})\cdot \mathbf{M})$。其中1/2系数是为了去掉重复。考虑不存在外场。那么Zeeman coupling$- \frac{1}{2}\int d^{2}r \mu_{0}\mathbf{M}\cdot(1-\mathbf{N})\cdot \mathbf{M}$实际上只取决于$\frac{1}{2}\mathbf{M}\cdot \mathbf{N} \cdot \mathbf{M}$。由于$\mathbf{N}$是取决于磁化方向的，选取磁化方向在面内时$N=0$为最小值。此时Zeeman能被最小化。所以自旋倾向于躺在面内。
 
+也可以从另外一个角度理解。两个偶极之间的作用为$\frac{\mathbf{m}^{'}\cdot \mathbf{m}-3 \mathbf{m}^{'}\cdot  \widehat{(\mathbf{r}^{'}-\mathbf{r})} \mathbf{m}\cdot  \widehat{(\mathbf{r}^{'}-\mathbf{r})}}{|\mathbf{r}^{'}-\mathbf{r}|^{3}}$。
+
 
 
 我们知道：
