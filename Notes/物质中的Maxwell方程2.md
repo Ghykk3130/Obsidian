@@ -92,7 +92,7 @@ $$\begin{align}
 将$\mathbf{H}_{M}$称为退磁场。我们发现，$\mathbf{H}_{M}$是一个关于$\mathbf{M}$的复杂函数。可以证明，在椭圆体样本中，$\mathbf{H}_{M}=-\mathbf{N}\cdot \mathbf{M}$，其中$\mathbf{N}$为退磁张量。
 ## Ex:
 
-对于薄膜样品，沿着z方向磁化，有$N=1$。
+对于薄膜样品，沿着z方向磁化，有$N=1$。在面内磁化，有$N=0$。这是因为，将磁化想象成磁荷的堆积，若磁化都在面内，那么就磁荷就不能堆积在面内的任何方向上，因为面是无限大的。
 
 
 接下来：
@@ -122,7 +122,7 @@ $$\begin{align}
 \end{align}$$
 ## Ex:
 
-对于磁性薄膜，我们有总磁场$\mathbf{B}=\mu_{0}(\mathbf{H}_{\text{ext}}+(1-\mathbf{N})\cdot \mathbf{M})$。那么样本中的自旋感受到的Zeeman coupling为$g\mu_{B}\mu_{0}\mathbf{S}\cdot(\mathbf{H}_{\text{ext}}+(1-\mathbf{N})\cdot \mathbf{M})$。考虑样品是铁磁的，并且不存在外场。那么Zeeman coupling为$g\mu_{B}\mu_{0}\mathbf{S}\cdot(1-\mathbf{N})\cdot \mathbf{M}$。由于$\mathbf{N}$是取决于磁化方向的，选取磁化方向在z轴时$N=1$为最大值。此时Zeeman能被最小化。
+对于磁性薄膜，我们有总磁场$\mathbf{B}=\mu_{0}(\mathbf{H}_{\text{ext}}+(1-\mathbf{N})\cdot \mathbf{M})$。那么样本中的自旋感受到的Zeeman coupling为$-\frac{1}{2}\int d^{2}r\mu_{0}\mathbf{M}\cdot(\mathbf{H}_{\text{ext}}+(1-\mathbf{N})\cdot \mathbf{M})$。其中1/2系数是为了去掉重复。考虑不存在外场。那么Zeeman coupling$- \frac{1}{2}\int d^{2}r \mu_{0}\mathbf{M}\cdot(1-\mathbf{N})\cdot \mathbf{M}$实际上只取决于$\frac{1}{2}\mathbf{M}\cdot \mathbf{N} \cdot \mathbf{M}$。由于$\mathbf{N}$是取决于磁化方向的，选取磁化方向在面内时$N=0$为最小值。此时Zeeman能被最小化。所以自旋倾向于躺在面内。
 
 
 

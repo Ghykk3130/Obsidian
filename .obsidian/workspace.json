@@ -3025,8 +3025,7 @@
               "title": "Search"
             }
           }
-        ],
-        "currentTab": 3
+        ]
       }
     ],
     "direction": "horizontal",
@@ -3144,7 +3143,7 @@
       "obsidian-shellcommands:Shell commands: Custom variables": false
     }
   },
-  "active": "ffe8daa430dc6efd",
+  "active": "0bd5adf6a54a04e2",
   "lastOpenFiles": [
     "Notes/对位法.md",
     "Pictures/Pasted image 20260802155254.png",
