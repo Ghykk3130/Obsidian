@@ -92,7 +92,7 @@ $$\begin{align}
 将$\mathbf{H}_{M}$称为退磁场。我们发现，$\mathbf{H}_{M}$是一个关于$\mathbf{M}$的复杂函数。可以证明，在椭圆体样本中，$\mathbf{H}_{M}=-\mathbf{N}\cdot \mathbf{M}$，其中$\mathbf{N}$为退磁张量。
 ## Ex:
 
-对于薄膜样品，$N=1$。
+对于薄膜样品，沿着z方向磁化，有$N=1$。
 
 
 接下来：
@@ -120,6 +120,11 @@ $$\begin{align}
  & = \mu_{0}(\mu_{0}^{-1}\mathbf{B}_{\text{ext}}-\mathbf{N}\cdot \mathbf{M}+\mathbf{M}) \\
  & = \mathbf{B}_{\text{ext}}+\mu_{0}(1-\mathbf{N})\cdot \mathbf{M}
 \end{align}$$
+## Ex:
+
+对于磁性薄膜，我们有总磁场$\mathbf{B}=\mu_{0}(\mathbf{H}_{\text{ext}}+(1-\mathbf{N})\cdot \mathbf{M})$。那么样本中的自旋感受到的Zeeman coupling为$g\mu_{B}\mu_{0}\mathbf{S}\cdot(\mathbf{H}_{\text{ext}}+(1-\mathbf{N})\cdot \mathbf{M})$。考虑样品是铁磁的，并且不存在外场。那么Zeeman coupling为$g\mu_{B}\mu_{0}\mathbf{S}\cdot(1-\mathbf{N})\cdot \mathbf{M}$。由于$\mathbf{N}$是取决于磁化方向的，选取磁化方向在z轴时$N=1$为最大值。此时Zeeman能被最小化。
+
+
 
 我们知道：
 $$\begin{align}
@@ -134,6 +139,7 @@ $$\begin{align}
 我们可以得到一个表观susceptibility：
 $$\chi^{'}= \frac{\mathbf{M}}{\mu_{0}^{-1}\mathbf{B}_{\text{ext}}}=  \frac{1}{\mathbf{N}+1 /\chi}$$
 这一般是实验上测得的磁化率。
+
 
 # 4. 物质中的Maxwell方程
 
