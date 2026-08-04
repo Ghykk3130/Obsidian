@@ -87,9 +87,15 @@ $$H(t)\ket{n(t)} =E_{n}(t)\ket{n(t)} $$
 >[!Warning]
 >注意，$W$不是时间演化算符。你可能认为，$W$作用在初态$\ket{n(0)}$上得到$\ket{n(t)}$，所以是时间演化算符。但$\ket{n(t)}$并不是$\ket{n(0)}$自然根据Schrodinger方程流动，演化成的态。$\ket{n(t)}$是相当任意的，只是符合瞬时Schrodinger方程的任意一组本征态而已，并不唯一。既然它不唯一，显然就不一定是$\ket{n(0)}$自然流动到$t$的态。因为这个态是唯一的。$\{ \ket{n(t)} \}$就如同是流形上任意取的local坐标架一样，具有任意性。
 
-令系统从$\ket{\psi(0)}$开始，通过Schrodinger方程流动到$t$的态为$\ket{\psi(t)}$。令：
-$$\ket{\phi(t)} =W(t)\ket{\psi(t)} $$
-
+令系统从$\ket{\psi(0)}$开始，通过Schrodinger方程流动到$t$的态为$\ket{\psi(t)}$。我们可以尝试将坐标轴转回去。令：
+$$\ket{\phi(t)} =W^{\dagger}(t)\ket{\psi(t)} $$
+那么容易得到$\ket{\phi}$遵守的Shrodinger方程：
+$$\begin{align}
+  i\hbar \frac{\partial}{\partial t}\ket{\phi(t)} & = i\hbar \frac{\partial W^{\dagger}}{\partial t}\ket{\psi} + i\hbar W^{\dagger} \frac{\partial \ket{\psi} }{\partial t}  \\
+ & = i\hbar  \frac{\partial W^{\dagger}}{\partial t }\ket{\psi}  + W^{\dagger}H\ket{\psi} \\
+ & = (i\hbar (\partial_{t}W^{\dagger})W+W^{\dagger}HW) \ket{\phi}    
+\end{align}$$
+于是可以定义等效hamiltonian $H_{\text{eff}}=i\hbar(\partial_{t}W^{\dagger})W+W^{\dagger}HW$。
 
 
 
