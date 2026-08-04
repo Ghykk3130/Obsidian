@@ -6,7 +6,7 @@
 - Thermoelectric conductivity：$\boldsymbol{\alpha}=- \frac{\mathbf{j}^{e}}{\nabla T}$
 几个关系：
 - Bridgman relation：联系Nernst和Ettingshausen。
-- Mott relation：
+- eMott relation：
 - Wiedmann-Franz law：联系Hall与Nernst。
 
 
