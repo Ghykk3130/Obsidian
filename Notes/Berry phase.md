@@ -100,32 +100,45 @@ $$W^{\dagger}HW=\sum_{n}E_{n}(t)\ket{n(0)} \bra{n(0)} $$
 所以任意时刻都是相互对易的。所以这个算子可以作为良好的unpertubed hamiltonian，而我们将$i\hbar(\partial_{t}W^{\dagger})W$当作perturbation。我们切换到相互作用绘景。令：
 $$\begin{align}
 \ket{\phi_{I}(t)}  & = \exp\left( \frac{i}{\hbar}W^{\dagger}HWt \right)\ket{\phi(t)}  \\
- & = \exp\left( \frac{i}{\hbar}\sum_{n}E_{n}(t) \ket{n(0)} \bra{n(0)}  \right)\ket{\phi} \\
+ & = \exp\left( \frac{i}{\hbar}\sum_{n}E_{n}(t) \ket{n(0)} \bra{n(0)} t \right)\ket{\phi} \\
  & = \sum_{n}\ket{n(0)} e^{\frac{i}{\hbar}E_{n}t} \bra{n(0)} \phi\rangle  
 \end{align}$$
 在相互作用绘景中，获得$\ket{\phi_{I}}$的演化方程：
 $$\begin{align}
  & i\hbar \partial_{t}\ket{\phi_{I}}= i\hbar(\partial_{t}W^{\dagger})W\ket{\phi_{I}}  
 \end{align}$$
-
-
-
-
-
-
-
-
-算符$H_{0}(t)=\sum_{n}E_{n}(t)\ket{n(0)}\bra{n(0)}$。那么$H_{0}$在任意时刻都对易。接下来构造含时微扰：
-$$V(t)=H(t)-H_{0}(t)=\sum_{n}E_{n}(t)(\ket{n(t)} \bra{n(t)} -\ket{n(0)} \bra{n(0)} )$$
-令系统在Schrodinger绘景下的态为$\ket{\psi(t)}$，那么可以变换到相互作用绘景：
-$$\ket{\psi_{I}(t)} =e^{\frac{i}{\hbar}H_{0}t}\ket{\psi(t)} $$
-我们不妨作展开$\ket{\psi_{I}(t)}=\sum_{n}c_{n}(t)\ket{n(0)}$。那么代入Schrodinger方程：
+继续化简：
 $$\begin{align}
- & i\hbar \partial_{t}\ket{\psi_{I}} =V\ket{\psi_{I}} 
+ &   i\hbar \partial_{t}\ket{\phi_{I}}  = \sum_{n,n^{'}}i\hbar \ket{n(0)} \bra{\partial_{t}n(t)} n^{'}(t) \rangle \bra{n^{'}(0)}\phi_{I}\rangle  \\
+\implies &  \bra{n(0)} \partial_{t}\phi_{I}\rangle=\sum_{n^{'}} \bra{\partial_{t}n(t)} n^{'}(t)\rangle \bra{n^{'}(0)} \phi_{I}\rangle
 \end{align}$$
+同样地，当$n^{'}\neq n$时，我们用绝热近似：
+$$\begin{align}
+ & H\ket{n(t)} =E_{n}\ket{n(t)}  \\
+\implies & \frac{\partial H}{\partial t}\ket{n(t)} + H \ket{\partial_{t}n} = \frac{\partial E_{n}}{\partial t}\ket{n(t)} + E_{n}\ket{\partial_{t}n} \\
+\implies & \bra{n^{'}(t)}  \partial_{t}H\ket{n(t)} = (E_{n}-E_{n^{'}})\bra{n^{'}} \partial_{t}n\rangle \\
+\implies &  \bra{n^{'}} \partial_{t}n\rangle= \frac{\bra{n^{'}(t)} \partial_{t}H\ket{n(t)}  }{E_{n}-E_{n^{'}}} \approx 0  
+\end{align}$$
+于是：
+$$\begin{align}
+ & \bra{n(0)} \partial_{t}\phi_{I}\rangle=\partial_{t}\bra{n(0)} \phi_{I}\rangle= \bra{\partial_{t}n(t)} n(t)\rangle \bra{n(0)} \phi_{I}\rangle \\
+\implies & \bra{n(0)} \phi_{I}(t)\rangle= \exp\left( \int ^{t}dt^{'}\bra{\partial_{t^{'}}n(t^{'})} n(t^{'})\rangle \right)  \bra{n(0)} \phi_{I}(0)\rangle
+\end{align}$$
+容易证明$\bra{\partial_{t}n(t)}n(t)\rangle$是纯虚数。然后我们可以计算：
+$$\begin{align}
+  \bra{n(0)} \phi_{I}(t)\rangle & = e^{- \frac{i}{\hbar}E_{n}(t)t} \bra{n(0)} \phi_{I}(t)\rangle \\
+ & = e^{- \frac{i}{\hbar}E_{n}t}\exp\left(  -\int ^{t}dt^{'}\bra{n(t^{'})} \partial_{t^{'}}n(t^{'})\rangle \right) \bra{n(0)} \phi_{I}(0)\rangle
+\end{align}$$
+于是：
+$$\begin{align}
+\ket{\psi(t)}  & = W\ket{\phi(t)}  \\
+ & = \sum_{n}   e^{- \frac{i}{\hbar}E_{n}t}\exp\left(  -\int_{0} ^{t}dt^{'}\bra{n(t^{'})} \partial_{t^{'}}n(t^{'})\rangle \right)    \bra{n(0)}\phi_{I}(0)\rangle \ket{n(t)}  
+\end{align}$$
+>[!Quote] Berry phase的直觉
+>我们看到，Berry phase是除了单纯转动坐标架之外，额外引起的效应。它是hamiltonian自身随时间变动引起的效应。举一个简单的例子，若hamiltonian不随时间变动，那么显然$\int_{0}^{t}dt^{'}\bra{n}\partial_{t^{'}}n\rangle=0$，系统的演化就只剩下dynamical phase $e^{- \frac{i}{\hbar}E_{n}t}$。反过来也就是说，只要hamiltonian自身变化，Berry phase就会作为一种额外的相位被引起。
 
-
-
+>[!Warning]
+>在上面的计算中，$i\hbar \ket{\partial_{t}n(t)}\neq H\ket{n(t)}$。这是因为$\ket{n(t)}$是在每个时间点随意选取的本征态。不同时间的两套instantaneous kets $\{ \ket{n(t)} \},\ \{ \ket{n(t^{'})} \}$之间不构成连续演化关系。
 
 # 3. Berry curvature
 
