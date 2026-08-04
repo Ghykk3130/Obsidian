@@ -2951,12 +2951,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Notes/对位法.md",
+                "file": "Notes/Berry phase.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "对位法"
+              "title": "Berry phase"
             }
           }
         ],
@@ -3025,13 +3025,11 @@
               "title": "Search"
             }
           }
-        ],
-        "currentTab": 3
+        ]
       }
     ],
     "direction": "horizontal",
-    "width": 200,
-    "collapsed": true
+    "width": 200
   },
   "right": {
     "id": "9003d078f8dbc4ed",
@@ -3147,24 +3145,24 @@
   },
   "active": "ffe8daa430dc6efd",
   "lastOpenFiles": [
+    "Notes/Blasius定理，Chaplygin定理.md",
+    "Notes/Berry phase.md",
+    "Notes/对位法.md",
+    "Pictures/Pasted image 20260804031645.png",
     "Pictures/Pasted image 20260804023713.png",
     "Pictures/Pasted image 20260804023311.png",
     "Pictures/Pasted image 20260804011534.png",
     "Pictures/Pasted image 20260804010519.png",
     "Pictures/Pasted image 20260804005551.png",
     "Pictures/Pasted image 20260804004922.png",
-    "Notes/Berry phase.md",
     "Notes/Fermi's golden rule.md",
     "Notes/时间演化.md",
     "Notes/路径积分.md",
     "Notes/AB效应.md",
     "Notes/物质中的Maxwell方程2.md",
-    "Notes/对位法.md",
     "Pictures/Pasted image 20260802155254.png",
     "Pictures/Pasted image 20260802153303.png",
     "Pictures/Pasted image 20260802144851.png",
-    "Pictures/Pasted image 20260802144454.png",
-    "Pictures/Pasted image 20260802143957.png",
     "Notes/GRE物理.md",
     "Notes/Hubbard模型.md",
     "Experimental/Log.md",
