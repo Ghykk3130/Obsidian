@@ -93,9 +93,20 @@ $$\ket{\phi(t)} =W^{\dagger}(t)\ket{\psi(t)} $$
 $$\begin{align}
   i\hbar \frac{\partial}{\partial t}\ket{\phi(t)} & = i\hbar \frac{\partial W^{\dagger}}{\partial t}\ket{\psi} + i\hbar W^{\dagger} \frac{\partial \ket{\psi} }{\partial t}  \\
  & = i\hbar  \frac{\partial W^{\dagger}}{\partial t }\ket{\psi}  + W^{\dagger}H\ket{\psi} \\
- & = (i\hbar (\partial_{t}W^{\dagger})W+W^{\dagger}HW) \ket{\phi}    
+ & = (i\hbar (\partial_{t}W^{\dagger})W+W^{\dagger}HW) \ket{\phi}    \\ 
 \end{align}$$
-于是可以定义等效hamiltonian $H_{\text{eff}}=i\hbar(\partial_{t}W^{\dagger})W+W^{\dagger}HW$。
+于是可以定义等效hamiltonian $H_{\text{eff}}=i\hbar(\partial_{t}W^{\dagger})W+W^{\dagger}HW$。注意到这个hamiltonian的第二部分为：
+$$W^{\dagger}HW=\sum_{n}E_{n}(t)\ket{n(0)} \bra{n(0)} $$
+所以任意时刻都是相互对易的。所以这个算子可以作为良好的unpertubed hamiltonian，而我们将$i\hbar(\partial_{t}W^{\dagger})W$当作perturbation。我们切换到相互作用绘景。令：
+$$\begin{align}
+\ket{\phi_{I}(t)}  & = \exp\left( \frac{i}{\hbar}W^{\dagger}HWt \right)\ket{\phi(t)}  \\
+ & = \exp\left( \frac{i}{\hbar}\sum_{n}E_{n}(t) \ket{n(0)} \bra{n(0)}  \right)\ket{\phi} \\
+ & = \sum_{n}\ket{n(0)} e^{\frac{i}{\hbar}E_{n}t} \bra{n(0)} \phi\rangle  
+\end{align}$$
+在相互作用绘景中，获得$\ket{\phi_{I}}$的演化方程：
+$$\begin{align}
+ & i\hbar \partial_{t}\ket{\phi_{I}}= i\hbar(\partial_{t}W^{\dagger})W\ket{\phi_{I}}  
+\end{align}$$
 
 
 
