@@ -22,3 +22,8 @@ $$\begin{align}
 想要判断电场是否在xy面内，显然可以通过对称性。对系统作关于xy面的镜面对称，系统不变。所以电场必在xy面内。
 
 11. dielectric constant指$\epsilon_{r}=\frac{\epsilon}{\epsilon_{0}}$。理想导体，$\epsilon_{r}=\infty$。
+12. ![[Pasted image 20260807170242.png|centering|400]]
+只需要根据u是常数就可以判断了。u具有速度量纲，又是常数，所以肯定是E。
+
+13. 令交流电源内部impedance为$Z$。当外电路impedance为$Z^{*}$时具有最大功率。
+14. 尺缩效应指动尺变短，因子为$\sqrt{ 1- \left( \frac{v}{c} \right)^{2} }$。
