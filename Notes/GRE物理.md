@@ -21,4 +21,4 @@ $$\begin{align}
 10. ![[Pasted image 20260807160248.png|centering|300]]
 想要判断电场是否在xy面内，显然可以通过对称性。对系统作关于xy面的镜面对称，系统不变。所以电场必在xy面内。
 
-11. dielectric constant指$\frac{\epsilon}{\epsilon_{0}}$。
+11. dielectric constant指$\epsilon_{r}=\frac{\epsilon}{\epsilon_{0}}$。理想导体，$\epsilon_{r}=\infty$。

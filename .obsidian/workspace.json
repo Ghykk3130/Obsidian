@@ -2951,12 +2951,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Notes/物质中的Maxwell方程2.md",
+                "file": "Notes/GRE物理.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "物质中的Maxwell方程2"
+              "title": "GRE物理"
             }
           }
         ],
@@ -3025,8 +3025,7 @@
               "title": "Search"
             }
           }
-        ],
-        "currentTab": 3
+        ]
       }
     ],
     "direction": "horizontal",
@@ -3146,6 +3145,7 @@
   },
   "active": "ffe8daa430dc6efd",
   "lastOpenFiles": [
+    "Notes/物质中的Maxwell方程2.md",
     "Notes/GRE物理.md",
     "Pictures/Pasted image 20260807160248.png",
     "Pictures/Pasted image 20260807160239.png",
@@ -3171,7 +3171,6 @@
     "Notes/时间演化.md",
     "Notes/路径积分.md",
     "Notes/AB效应.md",
-    "Notes/物质中的Maxwell方程2.md",
     "Notes/Hubbard模型.md",
     "Experimental/Log.md",
     "Notes/音程.md",
