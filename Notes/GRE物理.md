@@ -27,3 +27,6 @@ $$\begin{align}
 
 13. 令交流电源内部impedance为$Z$。当外电路impedance为$Z^{*}$时具有最大功率。
 14. 尺缩效应指动尺变短，因子为$\sqrt{ 1- \left( \frac{v}{c} \right)^{2} }$。
+15. ![[Pasted image 20260807193051.png|centering|400]]
+你可能算出来是1/4。注意圆偏振光变成线偏振光强度会减半。
+
