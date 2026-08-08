@@ -52,3 +52,17 @@ $$\begin{align}
 
 24. 光电效应中，我们不认为外加电场能有助于电子逸出材料。因为我们假设电场是足够小的。如果电场足够大，能够直接通过偶极作用将电子拉出材料，这就不是光电效应了。电场只影响电子飞出后的运动。
 25. 不要看错题干要求求什么。
+26. ![[Pasted image 20260808163434.png|centering|300]]
+Bragg diffraction条件是有2的。$2d\cos \theta=n\lambda$。选D。
+
+27. ![[Pasted image 20260808164036.png|centering|300]]
+显然，当$\mu=1$时，由于横向的推力严格小于纵向压力等于摩擦力，所以$M=\infty$。所以选C, D。然后取$\mu \rightarrow 0$，此时显然$M$必须非常小。那么压力几乎由$m$提供。而推力为$\frac{Mg}{2}$。故$\frac{Mg}{2}= \mu mg\implies M=2m$。所以选D。
+
+28. ![[Pasted image 20260808164617.png|centering|300]]
+显然可以选IV。接下来II也不对。因为若$\nabla \cdot \mathbf{B}\neq 0$，那么$\mathbf{B}$不能写成某个矢量场的旋度。但是II却告诉我们$\mathbf{B}=- \nabla \times\left( \int dt \mathbf{E} \right)$，所以II也不对。正确的II应该加上磁荷流。即$\nabla \times \mathbf{E}=- \frac{\partial \mathbf{B}}{\partial t}+\mathbf{j}_{m}$。
+29. ![[Pasted image 20260808165802.png|centering|300]]
+如果负载和线的阻抗不匹配，就会发生反射。具体来说，反射系数为$\Gamma= \frac{Z_{1}-Z_{2}}{Z_{1}+Z_{2}}$。
+30. ![[Pasted image 20260808170829.png|centering|300]]
+回忆起单缝衍射暗纹推导：$\frac{w}{2}\sin \theta= n\frac{\lambda}{2}$。这个不能用来推导亮纹。因为类似地如果考虑亮纹$\frac{w}{2}\sin \theta=n\lambda$，那么亮纹中间位置的光又会和它们相消形成暗纹。
+
+所以此中，每条缝的暗纹为$w\sin \theta=n\lambda$。同时，也可将这个看作双缝干涉。那么干涉的亮纹条件为$d\sin \theta=m\lambda$。如果过两个单缝衍射的亮纹恰好被双缝干涉给消掉，那么我们就观察不到纹样了。这等价于两个单缝衍射的暗纹处于双缝干涉的亮纹。于是将上面两个方程相除得到$\frac{d}{w}= \frac{m}{n}$ for some $m,n\in \mathbb{Z}$。结合$d>w$，就可以选D。
