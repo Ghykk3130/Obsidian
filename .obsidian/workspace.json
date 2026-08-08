@@ -3028,7 +3028,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "物质中的",
+                "query": "GRE物理",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -3039,7 +3039,8 @@
               "title": "Search"
             }
           }
-        ]
+        ],
+        "currentTab": 3
       }
     ],
     "direction": "horizontal",
@@ -3159,12 +3160,17 @@
   },
   "active": "62989d722a9b4e13",
   "lastOpenFiles": [
+    "Pictures/Pasted image 20260807202115.png",
+    "Pictures/Pasted image 20260807201315.png",
+    "Notes/Solid state.md",
+    "Homework/Physics 512/Physics 512 cheat sheet.md",
+    "Notes/GRE物理.md",
+    "Pictures/Pasted image 20260807195305.png",
     "Pictures/Pasted image 20260807193051.png",
     "Pictures/Pasted image 20260807170242.png",
     "Notes/全息.md",
     "Pictures/Pasted image 20260807163534.png",
     "Notes/GRE数学.md",
-    "Notes/GRE物理.md",
     "Notes/物质中的Maxwell方程2.md",
     "Pictures/Pasted image 20260807160248.png",
     "Pictures/Pasted image 20260807160239.png",
@@ -3182,9 +3188,6 @@
     "Notes/Berry phase.md",
     "Notes/Blasius定理，Chaplygin定理.md",
     "Pictures/Pasted image 20260804031645.png",
-    "Pictures/Pasted image 20260804023713.png",
-    "Pictures/Pasted image 20260804023311.png",
-    "Pictures/Pasted image 20260804011534.png",
     "Notes/时间演化.md",
     "Notes/路径积分.md",
     "Notes/AB效应.md",
@@ -3192,9 +3195,7 @@
     "Experimental/Log.md",
     "Notes/音程.md",
     "Notes/多电子原子精细结构.md",
-    "Notes/Solid state.md",
     "Notes/Magnetic ordering.md",
-    "Notes/Untitled 6.md",
     "Pictures/GRE镇考机经词7.0-乱序（2026年版）.pdf",
     "Pictures/drawing.pdf",
     "Pictures/drawing.html",

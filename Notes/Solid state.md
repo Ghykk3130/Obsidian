@@ -570,7 +570,7 @@ $$\begin{align}
 给定一条原子轨道，假设轨道量子数遵循这样的规则：
 - $s$最大化。这代表电子尽量多地被align，以至于Pauli exclusion principle迫使它们原理，降低Coulomb作用。
 - $l$最大化。这代表电子尽量多地朝一个方向旋转，电子不会被强迫接近对方，以至于Coulomb作用被降低。
-- 若半满以下，$j=|l-s|$。这即是令$\vec{L} \parallel -\vec{S}$来最小化spin-orbit coupling $H=\lambda \vec{L}\cdot \vec{S},\ \lambda>0$。若半满以上，$j=l+s$。我们想象carrier是空穴，那么由于电荷相反，自旋引起的相对论电磁作用也相反，那么$\lambda< 0$。要最小化$H$就需要$\vec{L} \parallel \vec{S}$
+- 若半满以下，$j=|l-s|$。这即是令$\vec{L} \parallel -\vec{S}$来最小化spin-orbit coupling $H=\lambda \vec{L}\cdot \vec{S},\ \lambda>0$。若半满以上，$j=l+s$。我们想象carrier是空穴，那么由于电荷相反，自旋引起的相对论电磁作用也相反，那么$\lambda< 0$。要最小化$H$就需要$\vec{L} \parallel \vec{S}$。刚好半满时由于$L=0$，这两个都是一样的。
 
 ## Ex:
 考虑$4f^9$的排布。Naive地想，$S=9 \times \frac{1}{2}$为最大，但这不对。因为$f\implies l=3$，$S_{z}=7\times \frac{1}{2}- 2 \times \frac{1}{2}= \frac{5}{2}$为$S_{z}$最大。这就意味$S$最大也是$\frac{5}{2}$。若$S$最大超过$\frac{5}{2}$，那么一定可以用$S_{+}$作用在$\ket{m_{S}= \frac{5}{2}}$上来得到非零的$\ket{m_{S}= \frac{9}{2}}$。但这在Pauli exclusion principle看来是不可能的。

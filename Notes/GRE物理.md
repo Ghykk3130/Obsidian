@@ -30,3 +30,11 @@ $$\begin{align}
 15. ![[Pasted image 20260807193051.png|centering|400]]
 你可能算出来是1/4。注意圆偏振光变成线偏振光强度会减半。
 
+16. ![[Pasted image 20260807195305.png|centering|400]]
+应该变宽。增加密度，其实电子的跃迁就越迅速地发生。会想起FGR中，谱线最开始应该很宽，然后之后缩成dirac delta的。这其实也是$\Delta E \Delta t\geq \hbar$的体现。
+
+17. ![[Pasted image 20260807201315.png|centering|300]]
+选B。
+
+18. ![[Pasted image 20260807202115.png|centering|400]]
+选C。尽管选D也可以，但是D没法很精确。原子电中性的本质是电场的平方反比定律。将原子看作是正电中心以及周围的负电球壳。
