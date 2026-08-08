@@ -2965,16 +2965,30 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Notes/GRE物理.md",
+                "file": "Notes/Hamiltonian with extreme time dependence.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "GRE物理"
+              "title": "Hamiltonian with extreme time dependence"
+            }
+          },
+          {
+            "id": "c741470ddf311a31",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Notes/对位法.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "对位法"
             }
           }
         ],
-        "currentTab": 211
+        "currentTab": 212
       }
     ],
     "direction": "vertical"
@@ -3028,7 +3042,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "GRE物理",
+                "query": "对位法",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -3158,8 +3172,22 @@
       "obsidian-shellcommands:Shell commands: Custom variables": false
     }
   },
-  "active": "62989d722a9b4e13",
+  "active": "c741470ddf311a31",
   "lastOpenFiles": [
+    "Notes/动机发展.md",
+    "Pictures/Pasted image 20260808012852.png",
+    "Pictures/Pasted image 20260808012813.png",
+    "Pictures/Pasted image 20260808012348.png",
+    "Pictures/Pasted image 20260808011732.png",
+    "Pictures/Pasted image 20260808011104.png",
+    "Pictures/Pasted image 20260808011006.png",
+    "Pictures/Pasted image 20260808010900.png",
+    "Pictures/Pasted image 20260808010202.png",
+    "Pictures/Pasted image 20260808005937.png",
+    "Pictures/Pasted image 20260808005214.png",
+    "Notes/凝胶模型.md",
+    "Notes/Hamiltonian with extreme time dependence.md",
+    "Notes/GRE物理.md",
     "Homework/Physics 512/Physics 512 cheat sheet 2.md",
     "Homework/Physics 512/Physics 512 cheat sheet.md",
     "Homework/Physics 511/Physics 511 Cheat sheet.md",
@@ -3170,32 +3198,17 @@
     "Notes/张量算子（2）.md",
     "Notes/Spherical tensor.md",
     "Notes/Berry phase.md",
-    "Notes/GRE物理.md",
     "Notes/E1跃迁.md",
     "Notes/不确定关系.md",
-    "Pictures/Pasted image 20260807210421.png",
-    "Pictures/Pasted image 20260807202115.png",
-    "Pictures/Pasted image 20260807201315.png",
     "Notes/Solid state.md",
-    "Pictures/Pasted image 20260807195305.png",
-    "Pictures/Pasted image 20260807193051.png",
-    "Pictures/Pasted image 20260807170242.png",
     "Notes/全息.md",
-    "Pictures/Pasted image 20260807163534.png",
     "Notes/GRE数学.md",
     "Notes/物质中的Maxwell方程2.md",
-    "Pictures/Pasted image 20260807160248.png",
-    "Pictures/Pasted image 20260807160239.png",
     "Notes/固体热容.md",
     "Notes/Fermi's golden rule.md",
     "Experimental/Carrier-Photon Rate Equations.md",
     "Homework/Physics 512/Physics 512 homework 4.md",
     "Notes/对位法.md",
-    "Pictures/Pasted image 20260806164551.png",
-    "Notes/半经典输运.md",
-    "Reading notes/Finite-temperature violation of the anomalous transverse Wiedmann-Franz law.md",
-    "Notes/Blasius定理，Chaplygin定理.md",
-    "Notes/时间演化.md",
     "Pictures/GRE镇考机经词7.0-乱序（2026年版）.pdf",
     "Pictures/drawing.pdf",
     "Pictures/drawing.html",
