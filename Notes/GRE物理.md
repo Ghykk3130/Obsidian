@@ -43,4 +43,5 @@ $$\begin{align}
 我们考虑的矩阵元是$\bra{n^{'},l^{'},m_{l}^{'},s ^{'}, m_{s}^{'}}\mathbf{r}\ket{n,l,m_{l},s,m_{s}}$。我们量子化的轴是z轴，但是电场不一定是沿着z轴的，所以必须要考虑$\mathbf{r}$的矩阵元，而不是只是$z$的矩阵元。我们知道$\mathbf{r}$可以分解为球张量$r^{(1)}_{0}= z,\ r^{(1)}_{\pm_{1}}= \mp\frac{x\pm iy}{\sqrt{ 2 }}$，然后用Wigner-Eckart定理得到selection rule。但是，由于$r^{(1)}$算子只和轨道角动量作用，所以只需要对于$l,m_{l}$用selection rule即可。
 
 20. 对于包含电感的电路，初始条件为电感电流连续。因为$V=-L \frac{dI}{dt}$。假设电路中电压都是有限的。那么在电路状态变化前后取小区间积分得到变化：$\Delta I= \lim_{ \epsilon \to 0 }\int_{-\epsilon}^{\epsilon} dt \left( - \frac{V}{L} \right)=-\lim_{ \epsilon \to 0 } \frac{V}{L}\epsilon=0$。对于包含电容的电路，初始条件为电压连续。因为$q=CV\implies I=C \frac{dV}{dt}$。假设电路中电流是有限的，同样积分得到$\Delta V=0$。
+21. 回忆起Carnot cycle的守恒量为$\Delta S=0$ for one cycle。这是因为系统可逆，而$S$是状态量。因为绝热膨胀不改变熵，所以实际上熵的变化仅发生在等温膨胀中。高温等温膨胀系统获得$\Delta S_{1}= \frac{Q_{1}}{T_{1}}$。低温等温膨胀系统获得$\Delta S_{2}=- \frac{Q_{2}}{T_{2}}$。所以$\frac{Q_{1}}{T_{1}}= \frac{Q_{2}}{T_{2}}$。
 
