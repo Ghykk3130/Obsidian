@@ -2979,16 +2979,30 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Notes/GRE物理.md",
+                "file": "Notes/半经典输运.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "GRE物理"
+              "title": "半经典输运"
+            }
+          },
+          {
+            "id": "bea3eb92b6bdd117",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Notes/三和弦.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "三和弦"
             }
           }
         ],
-        "currentTab": 212
+        "currentTab": 213
       }
     ],
     "direction": "vertical"
@@ -3053,8 +3067,7 @@
               "title": "Search"
             }
           }
-        ],
-        "currentTab": 3
+        ]
       }
     ],
     "direction": "horizontal",
@@ -3172,8 +3185,12 @@
       "obsidian-shellcommands:Shell commands: Custom variables": false
     }
   },
-  "active": "c741470ddf311a31",
+  "active": "bea3eb92b6bdd117",
   "lastOpenFiles": [
+    "Pictures/Pasted image 20260808230755.png",
+    "Notes/半经典输运.md",
+    "Notes/三和弦.md",
+    "Notes/GRE物理.md",
     "Pictures/Pasted image 20260808170829.png",
     "Pictures/Pasted image 20260808165802.png",
     "Pictures/Pasted image 20260808164617.png",
@@ -3182,13 +3199,11 @@
     "Pictures/Pasted image 20260808153318.png",
     "Pictures/Pasted image 20260808152032.png",
     "Notes/Stationary perturbation.md",
-    "Notes/GRE物理.md",
     "Notes/对位法.md",
     "Notes/动机发展.md",
     "Pictures/Pasted image 20260808012852.png",
     "Pictures/Pasted image 20260808012813.png",
     "Pictures/Pasted image 20260808012348.png",
-    "Pictures/Pasted image 20260808011732.png",
     "Notes/凝胶模型.md",
     "Notes/Hamiltonian with extreme time dependence.md",
     "Homework/Physics 512/Physics 512 cheat sheet 2.md",
@@ -3208,8 +3223,6 @@
     "Notes/GRE数学.md",
     "Notes/物质中的Maxwell方程2.md",
     "Notes/固体热容.md",
-    "Notes/Fermi's golden rule.md",
-    "Experimental/Carrier-Photon Rate Equations.md",
     "Pictures/GRE镇考机经词7.0-乱序（2026年版）.pdf",
     "Pictures/drawing.pdf",
     "Pictures/drawing.html",
