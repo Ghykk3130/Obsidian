@@ -2993,12 +2993,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Notes/Untitled.md",
+                "file": "Notes/GRE物理.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Untitled"
+              "title": "GRE物理"
             }
           }
         ],
@@ -3067,7 +3067,8 @@
               "title": "Search"
             }
           }
-        ]
+        ],
+        "currentTab": 3
       }
     ],
     "direction": "horizontal",
@@ -3187,6 +3188,9 @@
   },
   "active": "bea3eb92b6bdd117",
   "lastOpenFiles": [
+    "Pictures/Pasted image 20260809152116.png",
+    "Notes/Pedrottis' introduction to optics.md",
+    "Notes/Untitled.md",
     "Notes/Untitled 2.md",
     "Notes/Untitled 1.md",
     "Notes/三和弦.md",
@@ -3220,9 +3224,6 @@
     "Notes/E1跃迁.md",
     "Notes/不确定关系.md",
     "Notes/Solid state.md",
-    "Notes/全息.md",
-    "Notes/GRE数学.md",
-    "Notes/物质中的Maxwell方程2.md",
     "Pictures/GRE镇考机经词7.0-乱序（2026年版）.pdf",
     "Pictures/drawing.pdf",
     "Pictures/drawing.html",
