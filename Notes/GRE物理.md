@@ -118,3 +118,18 @@ $$\begin{align}
 41. ![[Pasted image 20260810162132.png|centering|300]]
 这题没什么好说的。不要将等式错列成$100m^{2}c^{4}=m^{2}c^{4}+p^{2}c^{2}$就行。应该是$(100m^{}c^{2})^{2}=m^{2}c^{4}+p^{2}c^{2}$。
 
+42. ![[Pasted image 20260810164411.png|centering|300]]
+别乱套公式。记得normalize。应该是$N_{0}\frac{e^{0}}{e^{0}+e^{-\beta\epsilon}}$。选B。
+
+43. ![[Pasted image 20260810165458.png|centering|300]]
+读题这一块。C的意思是，当熵为$N_{0}k\ln 2$时，系统温度是$\infty$。这是一个负温度系统。在$T=\infty$时，二能级的两个态概率严格相等，导致$S=k \ln( 2^{N_{0}})=N_{0}k\ln 2$。当系统能量再度升高时，温度转变为负。
+44. ![[Pasted image 20260810165957.png|centering|300]]
+遇到振动问题，首先想一下微分方程是二阶还是一阶，根据这个来判断是否开根号。比如这里就是B，对$\frac{1}{4}$开根号。
+
+45. ![[Pasted image 20260810170319.png|centering|400]]
+转动惯量是$m\left(  \frac{b}{2} \right)^{2}+ m\left(  \frac{b}{2} \right)^{2}$！两个要加起来！
+
+
+
+
+
