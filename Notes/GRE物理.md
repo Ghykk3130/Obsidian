@@ -82,3 +82,24 @@ Bragg diffraction条件是有2的。$2d\cos \theta=n\lambda$。选D。
 33. 如何理解电导率越大，趋肤深度越小？电导率越大，导体中引起的感应电流越大。电磁场的能量迅速被传递给了电子，自身能量衰减很快。那么电磁波就越难以在导体中传播。理想导体趋肤深度为零。导体内部将没有电磁场。电磁场就都在表面（外侧）。在得到导体界面边界条件$\hat{\mathbf{n}}\times(\mathbf{E}_{1}-\mathbf{E}_{2})=0$时，我们总是想象电磁场的变化是足够平缓的，以至于电磁场不可能是Dirac delta之类的东西。那么这个边界条件通过对$\nabla \times \mathbf{E}=- \frac{\partial \mathbf{B}}{\partial t}$积分得到。右手边在面积极限下为零。而为什么我们不对于$\nabla \cdot \mathbf{E}= \frac{\rho}{\epsilon_{0}}$积分呢？因为$\rho$可以是Dirac delta。即使在面积极限下也可以非零。
 34. ![[Pasted image 20260810133047.png|centering|300]]
 这题思路非常明确。首先肯定是奇函数。然后只能AB。AB的区别就是有没有偶数项。取一个偶数项出来看看Fourier coefficient是不是零就可以了。例如取$\sin 2\omega t$成分。只需要检验$\int_{-\pi  /\omega}^{\pi /\omega}dt V(t)\sin 2\omega t=0$。而且不用真的算积分，画画图就一目了然了。
+
+35. 若$X, Y$独立，容易通过计算直接证明：
+$$\begin{align}
+\text{Var}(XY) & = \mathbb{E}(X^{2}Y^{2})-\mathbb{E}(X)^{2}\mathbb{E}(Y)^{2} \\
+ & = \mathbb{E}(X^{2})\mathbb{E}(Y^{2})-\mathbb{E}(X)^{2}\mathbb{E}(Y)^{2} \\
+ & = [\text{Var}(X)+\mathbb{E}(X)^{2}][\text{Var}(Y)+\mathbb{E}(Y)^{2}]-\mathbb{E}(X)^{2}\mathbb{E}(Y)^{2} \\
+ & = \text{Var}(X) \text{Var}(Y)+\mathbb{E}(X)^{2}\text{Var}(X)+\mathbb{E}(Y)^{2}\text{Var}(Y)
+\end{align}$$
+对于任意物理量$f=f(x,y)$，它距离平衡值的偏移都必须由$x,y$的偏移贡献。那么：
+$$\begin{align}
+\delta f & = \frac{\partial f}{\partial x}\delta x+ \frac{\partial f}{\partial y}\delta y
+\end{align}$$
+显然：
+$$\begin{align}
+\text{Var}(f) & = \text{Var}(\delta f) \\
+ & = \text{Var}\left(  \frac{\partial f}{\partial x}\delta x \right)+ \text{Var}\left(  \frac{\partial f}{\partial y}\delta y \right) \\
+ & = \left(  \frac{\partial f}{\partial x} \right)^{2} \sigma_{x}^{2}+ \left(  \frac{\partial f}{\partial y} \right)^{2}\sigma_{y}^{2}
+\end{align}$$
+例如$Z=XY$。那么近似有$\left( \frac{\sigma_{Z}}{Z} \right)^{2}=\left(  \frac{\sigma_{X}}{X} \right)^{2}+\left(  \frac{\sigma_{Y}}{Y} \right)^{2}$。类似地，$Z= \frac{X}{Y}$，同样有$\left( \frac{\sigma_{Z}}{Z} \right)^{2}=\left(  \frac{\sigma_{X}}{X} \right)^{2}+\left(  \frac{\sigma_{Y}}{Y} \right)^{2}$。
+
+
