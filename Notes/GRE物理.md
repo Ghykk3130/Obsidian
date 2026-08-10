@@ -80,3 +80,5 @@ Bragg diffraction条件是有2的。$2d\cos \theta=n\lambda$。选D。
 例如截距是$6\times 10^{3}$。所以实际上对应的纵轴点是$lg(6 \times 10^{3})=3+lg{6}$。那么可以得到线的解析式$lg y=kx+b$。然后$y= 10^{kx+b}$。
 
 33. 如何理解电导率越大，趋肤深度越小？电导率越大，导体中引起的感应电流越大。电磁场的能量迅速被传递给了电子，自身能量衰减很快。那么电磁波就越难以在导体中传播。理想导体趋肤深度为零。导体内部将没有电磁场。电磁场就都在表面（外侧）。在得到导体界面边界条件$\hat{\mathbf{n}}\times(\mathbf{E}_{1}-\mathbf{E}_{2})=0$时，我们总是想象电磁场的变化是足够平缓的，以至于电磁场不可能是Dirac delta之类的东西。那么这个边界条件通过对$\nabla \times \mathbf{E}=- \frac{\partial \mathbf{B}}{\partial t}$积分得到。右手边在面积极限下为零。而为什么我们不对于$\nabla \cdot \mathbf{E}= \frac{\rho}{\epsilon_{0}}$积分呢？因为$\rho$可以是Dirac delta。即使在面积极限下也可以非零。
+34. ![[Pasted image 20260810133047.png|centering|300]]
+这题思路非常明确。首先肯定是奇函数。然后只能AB。AB的区别就是有没有偶数项。取一个偶数项出来看看Fourier coefficient是不是零就可以了。例如取$\sin 2\omega t$成分。只需要检验$\int_{-\pi  /\omega}^{\pi /\omega}dt V(t)\sin 2\omega t=0$。而且不用真的算积分，画画图就一目了然了。
