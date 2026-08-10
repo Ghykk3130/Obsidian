@@ -102,4 +102,12 @@ $$\begin{align}
 \end{align}$$
 例如$Z=XY$。那么近似有$\left( \frac{\sigma_{Z}}{Z} \right)^{2}=\left(  \frac{\sigma_{X}}{X} \right)^{2}+\left(  \frac{\sigma_{Y}}{Y} \right)^{2}$。类似地，$Z= \frac{X}{Y}$，同样有$\left( \frac{\sigma_{Z}}{Z} \right)^{2}=\left(  \frac{\sigma_{X}}{X} \right)^{2}+\left(  \frac{\sigma_{Y}}{Y} \right)^{2}$。
 
+36. ![[Pasted image 20260810150406.png|centering|300]]
+不要用$\hbar k$乱猜。稍微算一下，都不用动笔，根据积分的奇偶selection rule就知道是A。
+
+37.
+![[Pasted image 20260810150548.png|centering|300]]
+显然，面积的变化是线性的。不要忘了还要对时间求导。所以感生电动势是常数。
+
+
 
