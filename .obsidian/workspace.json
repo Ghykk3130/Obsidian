@@ -3014,9 +3014,21 @@
               "icon": "lucide-file",
               "title": "GRE物理"
             }
+          },
+          {
+            "id": "d19fcf1b8f9f9ebe",
+            "type": "leaf",
+            "state": {
+              "type": "release-notes",
+              "state": {
+                "currentVersion": "1.13.6"
+              },
+              "icon": "lucide-book-up",
+              "title": "Release Notes 1.13.6"
+            }
           }
         ],
-        "currentTab": 214
+        "currentTab": 215
       }
     ],
     "direction": "vertical"
@@ -3200,7 +3212,7 @@
       "obsidian-shellcommands:Shell commands: Custom variables": false
     }
   },
-  "active": "44ffe7b9dd2a229e",
+  "active": "d19fcf1b8f9f9ebe",
   "lastOpenFiles": [
     "Pictures/Pasted image 20260810170319.png",
     "Pictures/Pasted image 20260810165957.png",
