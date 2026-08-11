@@ -3019,12 +3019,14 @@
             "id": "d19fcf1b8f9f9ebe",
             "type": "leaf",
             "state": {
-              "type": "release-notes",
+              "type": "markdown",
               "state": {
-                "currentVersion": "1.13.6"
+                "file": "Notes/GRE物理.md",
+                "mode": "source",
+                "source": false
               },
-              "icon": "lucide-book-up",
-              "title": "Release Notes 1.13.6"
+              "icon": "lucide-file",
+              "title": "GRE物理"
             }
           }
         ],
@@ -3082,7 +3084,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "GRE物理",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -3214,6 +3216,8 @@
   },
   "active": "d19fcf1b8f9f9ebe",
   "lastOpenFiles": [
+    "Notes/磁光效应.md",
+    "Notes/GRE物理.md",
     "Pictures/Pasted image 20260810170319.png",
     "Pictures/Pasted image 20260810165957.png",
     "Pictures/Pasted image 20260810165458.png",
@@ -3226,8 +3230,6 @@
     "Pictures/Pasted image 20260810133047.png",
     "Notes/电磁系统边界条件.md",
     "Notes/开放量子系统.md",
-    "Notes/GRE物理.md",
-    "Pictures/Pasted image 20260809164327.png",
     "Notes/Pedrottis' introduction to optics.md",
     "Notes/Untitled.md",
     "Notes/Untitled 2.md",
