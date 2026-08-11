@@ -3109,7 +3109,8 @@
               "title": "Search"
             }
           }
-        ]
+        ],
+        "currentTab": 3
       }
     ],
     "direction": "horizontal",
@@ -3229,13 +3230,15 @@
   },
   "active": "bb014e4dfa7d304a",
   "lastOpenFiles": [
+    "Pictures/Pasted image 20260811163746.png",
+    "Notes/散射.md",
+    "Notes/GRE物理.md",
     "Pictures/Pasted image 20260811155838.png",
     "Pictures/Pasted image 20260811154746.png",
     "Pictures/Pasted image 20260811153117.png",
     "Pictures/Pasted image 20260811152731.png",
     "Notes/位力定理.md",
     "Notes/Hamiltonian with extreme time dependence.md",
-    "Notes/GRE物理.md",
     "Notes/磁光效应.md",
     "Pictures/Pasted image 20260810170319.png",
     "Pictures/Pasted image 20260810165957.png",
@@ -3243,7 +3246,6 @@
     "Pictures/Pasted image 20260810164411.png",
     "Pictures/Pasted image 20260810162132.png",
     "Pictures/Pasted image 20260810161625.png",
-    "Pictures/Pasted image 20260810153410.png",
     "Notes/电磁系统边界条件.md",
     "Notes/开放量子系统.md",
     "Notes/Pedrottis' introduction to optics.md",
@@ -3264,7 +3266,6 @@
     "Homework/Physics 463/Midterm 1 cheat sheet.md",
     "Notes/张量算子（1）.md",
     "Notes/张量算子（2）.md",
-    "Notes/Spherical tensor.md",
     "Pictures/GRE镇考机经词7.0-乱序（2026年版）.pdf",
     "Pictures/drawing.pdf",
     "Pictures/drawing.html",
