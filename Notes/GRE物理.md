@@ -167,6 +167,13 @@ $$\begin{align}
 60. ![[Pasted image 20260812163015.png|centering|300]]
 无语了。这题它说speed increasing，意思是说切向加速度。不是说总加速度。
 
+61. ![[Pasted image 20260812164831.png|centering|300]]
+如果要用自然单位制的话，SI单位的速度也要换算。选D。
+62. ![[Pasted image 20260812165118.png|centering|300]]
+读题问题。$S^{'}$中同时发生的意思不是说这两个事件在两个参考系发生的时间点一样。而是说这两个事件是在$S^{'}$中同时发生的，间隔为零。显然$(\Delta x)^{2}-c^{2}(\Delta t)^{2}=(\Delta x^{'})^{2}>0$选C。
+63. ![[Pasted image 20260812165349.png|centering|300]]
+选D。用右手定则看积分正负是不可靠的。
+
 
 
 
