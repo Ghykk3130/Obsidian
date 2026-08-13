@@ -194,6 +194,8 @@ $$\begin{align}
 74. 考虑一个参考系$\mathcal{O}^{'}$在lab frame中以$u$运动。$\mathcal{O}^{'}$中物体速度为$v^{'}$。那么lab frame中物体速度为$v= \frac{1}{1+ \frac{uv^{'}}{c^{2}}}(u+v^{'})$。狭义相对论速度变换。
 75. 回忆Bloch球。将实空间任意轴$\hat{\mathbf{n}}$映射到Bloch球上的$(\theta,\phi)$位置。然后$+ \frac{1}{2}$对应的量子态为$\left( \cos \frac{\theta}{2}, e^{i\phi} \sin \frac{\theta}{2} \right)$。$- \frac{1}{2}$对应的是$(\theta,\phi)$的对径点$(\pi-\theta,\pi+\phi)$。对应的量子态是$\left( \sin \frac{\theta}{2},-e^{i\phi}\cos \frac{\theta}{2} \right)$。
 
+76. ![[Pasted image 20260813162838.png|centering|300]]
+可以记一下，电流圆环中心磁场为$\frac{\mu_{0}I}{2R}$。
 
 
 
