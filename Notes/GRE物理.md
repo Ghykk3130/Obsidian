@@ -175,6 +175,10 @@ $$\begin{align}
 选D。用右手定则看积分正负是不可靠的。
 64. 对于理想气体，其速度rms可以这样计算：$\frac{1}{2}m\langle v^{2}\rangle= \frac{3}{2}kT$。但是，速度rms绝不是Maxwell分布的最高点。由于Maxwell分布是boltzmann factor推出来的，简单推导会发现最高点速度满足$\frac{1}{2}mv^{2}= kT$。
 65. ![[Pasted image 20260813133710.png|centering|300]]该题中，波矢$k$应当不变。
+66. ![[Pasted image 20260813140352.png|centering|300]]
+回忆起，primitive cell是一种特殊的unit cell。它将每个真实原子当作格点。primitive cell的每个只包含一个原子。bcc的primitive cell的primitive vector都是斜着取的。不是沿着棱取的。这里一个conventional unit cell体积$a^{3}$，包含两个原子。所以一个primitive cell只包含一个原子。
+67. ![[Pasted image 20260813140749.png|centering|300]]
+选B。不用考虑高温的声子散射使得电阻率再升高的情况。
 
 
 
