@@ -196,6 +196,10 @@ $$\begin{align}
 
 76. ![[Pasted image 20260813162838.png|centering|300]]
 可以记一下，电流圆环中心磁场为$\frac{\mu_{0}I}{2R}$。
+77. ![[Pasted image 20260813170705.png|centereing|300]]
+体系电偶极矩为零。因为球体的对称性，没有电偶极矩。选E。回忆起偶极辐射$P\propto \omega^{4}p^{2}\sin ^{2}\theta$。
+78. ![[Pasted image 20260813171023.png|centering|300]]
+要相信代换是能代换出来的。选E。
 
 
 
