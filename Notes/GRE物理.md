@@ -192,6 +192,7 @@ $$\begin{align}
 73. ![[Pasted image 20260813153456.png|centering|200]]
 读题问题。downward acceleration指未叠加前的向下加速度的和。不是指总加速度。
 74. 考虑一个参考系$\mathcal{O}^{'}$在lab frame中以$u$运动。$\mathcal{O}^{'}$中物体速度为$v^{'}$。那么lab frame中物体速度为$v= \frac{1}{1+ \frac{uv^{'}}{c^{2}}}(u+v^{'})$。狭义相对论速度变换。
+75. 回忆Bloch球。将实空间任意轴$\hat{\mathbf{n}}$映射到Bloch球上的$(\theta,\phi)$位置。然后$+ \frac{1}{2}$对应的量子态为$\left( \cos \frac{\theta}{2}, e^{i\phi} \sin \frac{\theta}{2} \right)$。$- \frac{1}{2}$对应的是$(\theta,\phi)$的对径点$(\pi-\theta,\pi+\phi)$。对应的量子态是$\left( \sin \frac{\theta}{2},-e^{i\phi}\cos \frac{\theta}{2} \right)$。
 
 
 
