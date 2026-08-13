@@ -179,6 +179,15 @@ $$\begin{align}
 回忆起，primitive cell是一种特殊的unit cell。它将每个真实原子当作格点。primitive cell的每个只包含一个原子。bcc的primitive cell的primitive vector都是斜着取的。不是沿着棱取的。这里一个conventional unit cell体积$a^{3}$，包含两个原子。所以一个primitive cell只包含一个原子。
 67. ![[Pasted image 20260813140749.png|centering|300]]
 选B。不用考虑高温的声子散射使得电阻率再升高的情况。
+68. ![[Pasted image 20260813144115.png|centering|300]]
+注意，这里给的是频率，不是角频率。
+
+69. ![[Pasted image 20260813144323.png|centering|300]]
+如果衰变有两个通道，那么总的分布就是这两个Poisson分布的乘积。或者更简单一点，就是两个exponential decay的乘积。那么$e^{- \frac{t}{\tau_{1}}}\cdot e^{- \frac{t}{\tau_{2}}}= e^{-\left(  \frac{1}{\tau_{1}}+ \frac{1}{\tau_{2}} \right)t}$。所以新的衰变常数满足$\frac{1}{\tau}= \frac{1}{\tau_{1}}+ \frac{1}{\tau_{2}}$。直观上来讲，由于衰变的通道变多，总的衰变常数一定比每个单独的衰变常数要短。
+70. ![[Pasted image 20260813145604.png|centering|300]]
+应当记住，结合能是负的。因为这是吸引所造成的一个凹陷的势阱。那么令裂变产物结合能为$V$。那么$-238\times 7.6=2V+2\times 100$。选E。
+71. ![[Pasted image 20260813145842.png|centering|300]]不要忘记，光从空气进入油相位要变180。
+
 
 
 
