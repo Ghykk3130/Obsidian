@@ -173,6 +173,8 @@ $$\begin{align}
 读题问题。$S^{'}$中同时发生的意思不是说这两个事件在两个参考系发生的时间点一样。而是说这两个事件是在$S^{'}$中同时发生的，间隔为零。显然$(\Delta x)^{2}-c^{2}(\Delta t)^{2}=(\Delta x^{'})^{2}>0$选C。
 63. ![[Pasted image 20260812165349.png|centering|300]]
 选D。用右手定则看积分正负是不可靠的。
+64. 对于理想气体，其速度rms可以这样计算：$\frac{1}{2}m\langle v^{2}\rangle= \frac{3}{2}kT$。但是，速度rms绝不是Maxwell分布的最高点。由于Maxwell分布是boltzmann factor推出来的，简单推导会发现最高点速度满足$\frac{1}{2}mv^{2}= kT$。
+65. ![[Pasted image 20260813133710.png|centering|300]]该题中，波矢$k$应当不变。
 
 
 
