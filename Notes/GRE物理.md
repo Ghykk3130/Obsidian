@@ -187,6 +187,11 @@ $$\begin{align}
 70. ![[Pasted image 20260813145604.png|centering|300]]
 应当记住，结合能是负的。因为这是吸引所造成的一个凹陷的势阱。那么令裂变产物结合能为$V$。那么$-238\times 7.6=2V+2\times 100$。选E。
 71. ![[Pasted image 20260813145842.png|centering|300]]不要忘记，光从空气进入油相位要变180。
+72. ![[Pasted image 20260813153117.png|centering|300]]
+这里速度很大，运用相对论Dopler公式。红移：$\frac{\lambda_{\text{shifted}}}{\lambda}= \sqrt{  \frac{1+\beta}{1-\beta} },\ \beta= \frac{v}{c}$。蓝移：$\frac{\lambda_{\text{shifted}}}{\lambda}=\sqrt{  \frac{1-\beta}{1+\beta} }$。选D。
+73. ![[Pasted image 20260813153456.png|centering|200]]
+读题问题。downward acceleration指未叠加前的向下加速度的和。不是指总加速度。
+74. 考虑一个参考系$\mathcal{O}^{'}$在lab frame中以$u$运动。$\mathcal{O}^{'}$中物体速度为$v^{'}$。那么lab frame中物体速度为$v= \frac{1}{1+ \frac{uv^{'}}{c^{2}}}(u+v^{'})$。狭义相对论速度变换。
 
 
 

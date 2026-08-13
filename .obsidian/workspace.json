@@ -3035,12 +3035,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Notes/GRE物理.md",
+                "file": "Notes/Spin以及spinor formalism的基变换.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "GRE物理"
+              "title": "Spin以及spinor formalism的基变换"
             }
           }
         ],
@@ -3098,7 +3098,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "Bloch",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -3228,8 +3228,11 @@
       "obsidian-shellcommands:Shell commands: Custom variables": false
     }
   },
-  "active": "bb014e4dfa7d304a",
+  "active": "f69ba2cf946ad0e0",
   "lastOpenFiles": [
+    "Notes/GRE物理.md",
+    "Pictures/Pasted image 20260813153456.png",
+    "Pictures/Pasted image 20260813153117.png",
     "Pictures/Pasted image 20260813145842.png",
     "Pictures/Pasted image 20260813145604.png",
     "Pictures/Pasted image 20260813144323.png",
@@ -3237,12 +3240,8 @@
     "Pictures/Pasted image 20260813140749.png",
     "Pictures/Pasted image 20260813140352.png",
     "Notes/晶体基础.md",
-    "Notes/GRE物理.md",
     "Pictures/Pasted image 20260813133710.png",
     "Pictures/Pasted image 20260812165349.png",
-    "Pictures/Pasted image 20260812165118.png",
-    "Pictures/Pasted image 20260812164831.png",
-    "Pictures/Pasted image 20260812163015.png",
     "Notes/Pedrottis' introduction to optics.md",
     "Notes/散射.md",
     "Notes/位力定理.md",
