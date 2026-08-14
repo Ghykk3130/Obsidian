@@ -213,7 +213,10 @@ $$\begin{align}
 83. 
 ![[Pasted image 20260814153852.png|300]]
 这题给了$\theta$什么的，让人想要动量守恒来看。但这是恶意引导。只需要能量守恒来算就可以了。
-84. ![[Pasted image 20260814160758.png|centering|]]
+84. ![[Pasted image 20260814160758.png|centering|300]]
+回忆起Bernoulli方程$P_{1}+ \frac{1}{2}\rho v_{1}^{2}+\rho gh_{1}=P_{2}+ \frac{1}{2}\rho v_{2}^{2}+ \rho gh_{2}$。再加上流量守恒$v_{1}A_{1}=v_{2}A_{2}$即可。选A。
+85. ![[Pasted image 20260814161042.png|centering|300]]
+不要忘记把摄氏度换成开尔文。
 
 
 
