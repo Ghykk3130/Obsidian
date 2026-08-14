@@ -218,6 +218,8 @@ $$\begin{align}
 85. ![[Pasted image 20260814161042.png|centering|300]]
 不要忘记把摄氏度换成开尔文。
 
+86
+
 
 
 
