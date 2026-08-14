@@ -200,6 +200,8 @@ $$\begin{align}
 体系电偶极矩为零。因为球体的对称性，没有电偶极矩。选E。回忆起偶极辐射$P\propto \omega^{4}p^{2}\sin ^{2}\theta$。
 78. ![[Pasted image 20260813171023.png|centering|300]]
 要相信代换是能代换出来的。选E。
+79. ![[Pasted image 20260813172655.png|centering|300]]
+能量守恒$E+ mc^{2}= \gamma 3mc^{2}$。动量守恒$\frac{E}{c}= \gamma 3mv$。能量守恒得到$\left(  \frac{E+mc^{2}}{3mc^{2}} \right)^{2}= \frac{1}{1-v^{2}}$。动量守恒得到$\frac{E^{2}}{9m^{2}c^{2}}= \frac{v^{2}}{1-v^{2}}$。两式相减消去$v$。选D。
 
 
 
