@@ -202,6 +202,11 @@ $$\begin{align}
 要相信代换是能代换出来的。选E。
 79. ![[Pasted image 20260813172655.png|centering|300]]
 能量守恒$E+ mc^{2}= \gamma 3mc^{2}$。动量守恒$\frac{E}{c}= \gamma 3mv$。能量守恒得到$\left(  \frac{E+mc^{2}}{3mc^{2}} \right)^{2}= \frac{1}{1-v^{2}}$。动量守恒得到$\frac{E^{2}}{9m^{2}c^{2}}= \frac{v^{2}}{1-v^{2}}$。两式相减消去$v$。选D。
+80. 回忆起标准差性质。$\text{Var}(cX)= c^{2}\text{Var}(X),\text{Var}(X+Y)=\text{Var}(X)+\text{Var}(Y)+2\text{Cov}(X,Y)$。这可以用来考虑两个分布相加的误差。另外回忆起正态分布相加$N(\mu_{1},\sigma_{1}^{2})+N(\mu_{2},\sigma_{2}^{2})=N(\mu_{1}+\mu_{2}, \sigma_{1}^{2}+\sigma_{2}^{2})$。这也可以用来考虑两个分布相加的误差。
+![[Pasted image 20260814143945.png|centering|300]]
+这里其实是说，为了让合起来的方差最小，我们可以给两次测量加特定的权重。令权重为$a$。那么其实也就是计算$\text{Var(aX)}+\text{Var}((1-a)X)$的最小化。算出$a$后可以计算方差。一般公式为$\frac{1}{\sigma^{2}}= \frac{1}{\sigma_{1}^{2}}+ \frac{1}{\sigma_{2}^{2}}$。
+
+
 
 
 
