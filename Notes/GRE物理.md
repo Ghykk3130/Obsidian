@@ -218,9 +218,8 @@ $$\begin{align}
 85. ![[Pasted image 20260814161042.png|centering|300]]
 不要忘记把摄氏度换成开尔文。
 
-86. ![[Pasted image 20260814162507.png|centering]]
-87. 
-
+86. ![[Pasted image 20260814162507.png|centering|300]]
+碰撞后两个粒子动量都是$p$。能量守恒有$Mc^{2}=\sqrt{ m^{2}c^{4}+p^{2}c^{2} }+pc$。可以解得$p$。不要用$M^{2}c^{4}=m^{2}c^{4}+p^{2}c^{2}+p^{2}c^{2}$。
 
 
 
