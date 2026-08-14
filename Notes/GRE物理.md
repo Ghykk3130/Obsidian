@@ -221,7 +221,12 @@ $$\begin{align}
 86. ![[Pasted image 20260814162507.png|centering|300]]
 碰撞后两个粒子动量都是$p$。能量守恒有$Mc^{2}=\sqrt{ m^{2}c^{4}+p^{2}c^{2} }+pc$。可以解得$p$。不要用$M^{2}c^{4}=m^{2}c^{4}+p^{2}c^{2}+p^{2}c^{2}$。
 87. ![[Pasted image 20260814164625.png|centering|300]]
-可以想象成
+可以想象成观察者和波源都在介质中朝着同一个方向移动。这是没有效果的。选C。
+88. ![[Pasted image 20260814164753.png|centering|300]]
+不要想当然选C。开放边界条件。最低能模式是容纳$\frac{\lambda}{2}$。此低能模式是容纳$\frac{3}{2}\lambda$。选D。
+89. ![[Pasted image 20260814165032.png|centering|500]]
+
+
 
 
 
