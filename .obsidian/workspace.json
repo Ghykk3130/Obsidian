@@ -3049,12 +3049,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Notes/属七和弦.md",
+                "file": "Notes/七和弦.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "属七和弦"
+              "title": "七和弦"
             }
           }
         ],
@@ -3123,8 +3123,7 @@
               "title": "Search"
             }
           }
-        ],
-        "currentTab": 3
+        ]
       }
     ],
     "direction": "horizontal",
@@ -3242,11 +3241,11 @@
       "obsidian-shellcommands:Shell commands: Custom variables": false
     }
   },
-  "active": "c6241cd291104762",
+  "active": "0bd5adf6a54a04e2",
   "lastOpenFiles": [
     "Pictures/Pasted image 20260819083853.png",
     "Notes/动机发展.md",
-    "Notes/属七和弦.md",
+    "Notes/七和弦.md",
     "Pictures/Pasted image 20260818234538.png",
     "Notes/三和弦.md",
     "Pictures/Pasted image 20260818232257.png",
