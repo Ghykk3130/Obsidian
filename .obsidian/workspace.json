@@ -3035,12 +3035,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Notes/GRE物理.md",
+                "file": "Notes/三和弦.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "GRE物理"
+              "title": "三和弦"
             }
           }
         ],
@@ -3098,7 +3098,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "GRE物理",
+                "query": "三和弦",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -3230,6 +3230,13 @@
   },
   "active": "bb014e4dfa7d304a",
   "lastOpenFiles": [
+    "Notes/音程.md",
+    "Notes/三和弦.md",
+    "Notes/X-ray diffraction.md",
+    "Notes/Untitled 1.md",
+    "Notes/Spherical tensor.md",
+    "Notes/Planar Hall effect.md",
+    "Notes/GRE物理.md",
     "Pictures/Pasted image 20260814165032.png",
     "Pictures/Pasted image 20260814164753.png",
     "Pictures/Pasted image 20260814164625.png",
@@ -3240,9 +3247,7 @@
     "Pictures/Pasted image 20260814150751.png",
     "Pictures/Pasted image 20260814143945.png",
     "Pictures/Pasted image 20260813172655.png",
-    "Pictures/Pasted image 20260813171023.png",
     "Notes/Spin以及spinor formalism的基变换.md",
-    "Notes/GRE物理.md",
     "Notes/晶体基础.md",
     "Notes/Pedrottis' introduction to optics.md",
     "Notes/散射.md",
@@ -3253,8 +3258,6 @@
     "Notes/开放量子系统.md",
     "Notes/Untitled.md",
     "Notes/Untitled 2.md",
-    "Notes/Untitled 1.md",
-    "Notes/三和弦.md",
     "Notes/半经典输运.md",
     "Notes/Stationary perturbation.md",
     "Notes/对位法.md",
@@ -3263,9 +3266,6 @@
     "Homework/Physics 512/Physics 512 cheat sheet 2.md",
     "Homework/Physics 512/Physics 512 cheat sheet.md",
     "Homework/Physics 511/Physics 511 Cheat sheet.md",
-    "Homework/Physics 463/Midterm 3 cheat sheet.md",
-    "Homework/Physics 463/Midterm 2 cheat sheet.md",
-    "Homework/Physics 463/Midterm 1 cheat sheet.md",
     "Pictures/GRE镇考机经词7.0-乱序（2026年版）.pdf",
     "Pictures/drawing.pdf",
     "Pictures/drawing.html",
