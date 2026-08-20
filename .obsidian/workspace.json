@@ -3049,12 +3049,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Notes/七和弦.md",
+                "file": "Notes/对位法.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "七和弦"
+              "title": "对位法"
             }
           }
         ],
@@ -3112,7 +3112,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "七和弦",
+                "query": "键盘",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -3244,6 +3244,8 @@
   },
   "active": "c6241cd291104762",
   "lastOpenFiles": [
+    "Notes/七和弦.md",
+    "Pictures/Pasted image 20260820001137.png",
     "Pictures/Pasted image 20260819234403.png",
     "Experimental/Amplifier.md",
     "Experimental/Basic Electronics.md",
@@ -3263,7 +3265,6 @@
     "Experimental/ECDL Comments.md",
     "Experimental/Cold amplifier.md",
     "Experimental/Carrier-Photon Rate Equations.md",
-    "Notes/七和弦.md",
     "Pictures/Pasted image 20260819083853.png",
     "Notes/动机发展.md",
     "Pictures/Pasted image 20260818234538.png",
@@ -3278,8 +3279,6 @@
     "Pictures/Pasted image 20260814164625.png",
     "Pictures/Pasted image 20260814162507.png",
     "Pictures/Pasted image 20260814161042.png",
-    "Pictures/Pasted image 20260814160758.png",
-    "Pictures/Pasted image 20260814153852.png",
     "Pictures/GRE镇考机经词7.0-乱序（2026年版）.pdf",
     "Pictures/drawing.pdf",
     "Pictures/drawing.html",
