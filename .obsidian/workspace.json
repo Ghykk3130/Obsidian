@@ -3063,12 +3063,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Notes/和弦织体.md",
+                "file": "Notes/和弦.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "和弦织体"
+              "title": "和弦"
             }
           }
         ],
@@ -3260,7 +3260,7 @@
   "lastOpenFiles": [
     "Notes/能带磁性.md",
     "Notes/自由电子气磁性.md",
-    "Notes/和弦织体.md",
+    "Notes/和弦.md",
     "Notes/系综.md",
     "Notes/球坐标系下的位置本征矢.md",
     "Notes/Lamour进动.md",
