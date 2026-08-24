@@ -225,9 +225,11 @@ $$\begin{align}
 88. ![[Pasted image 20260814164753.png|centering|300]]
 不要想当然选C。开放边界条件。最低能模式是容纳$\frac{\lambda}{2}$。此低能模式是容纳$\frac{3}{2}\lambda$。选D。
 89. ![[Pasted image 20260814165032.png|centering|500]]
-90. 凸面镜成像：$\frac{1}{s}+ \frac{1}{s ^{'}}=- \frac{2}{R}$。其中当透镜曲率中心与入射光同侧时，$R>0$ 。
+90. 凸面镜成像：$\frac{1}{s}+ \frac{1}{s ^{'}}=- \frac{2}{R}$。其中当透镜曲率中心与入射光对侧时，$R>0$ 。
 91. ![[Pasted image 20260824150302.png|centering|300]]
 选D。
+92. ![[Pasted image 20260824152730.png|centering|300]]
+肥皂水的前后都是空气。光在前表面发生180度相变，但是后表面不会。那么总光程为实际光程加上180度相变的“瞬移”产生的光程，为$2nt+ \frac{\lambda}{2}$。这个光程等于整数倍波长发生增强。即$2nt+ \frac{\lambda}{2}=m\lambda$。选B。
 
 
 
