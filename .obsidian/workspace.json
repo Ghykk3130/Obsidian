@@ -3140,7 +3140,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "GRE物理",
+                "query": "compton",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -3270,7 +3270,7 @@
       "obsidian-shellcommands:Shell commands: Custom variables": false
     }
   },
-  "active": "a6950b9b00477c7b",
+  "active": "f69ba2cf946ad0e0",
   "lastOpenFiles": [
     "Pictures/Pasted image 20260824154822.png",
     "Pictures/Pasted image 20260824152730.png",
