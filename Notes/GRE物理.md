@@ -225,6 +225,9 @@ $$\begin{align}
 88. ![[Pasted image 20260814164753.png|centering|300]]
 不要想当然选C。开放边界条件。最低能模式是容纳$\frac{\lambda}{2}$。此低能模式是容纳$\frac{3}{2}\lambda$。选D。
 89. ![[Pasted image 20260814165032.png|centering|500]]
+90. 凸面镜成像：$\frac{1}{s}+ \frac{1}{s ^{'}}=- \frac{2}{R}$。其中当透镜曲率中心与入射光同侧时，$R>0$ 。
+91. ![[Pasted image 20260824150302.png|centering|300]]
+选D。
 
 
 
