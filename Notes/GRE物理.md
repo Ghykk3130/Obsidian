@@ -230,6 +230,7 @@ $$\begin{align}
 选D。
 92. ![[Pasted image 20260824152730.png|centering|300]]
 肥皂水的前后都是空气。光在前表面发生180度相变，但是后表面不会。那么总光程为实际光程加上180度相变的“瞬移”产生的光程，为$2nt+ \frac{\lambda}{2}$。这个光程等于整数倍波长发生增强。即$2nt+ \frac{\lambda}{2}=m\lambda$。选B。
+93. ![[Pasted image 20260824154822.png]]
 
 
 
