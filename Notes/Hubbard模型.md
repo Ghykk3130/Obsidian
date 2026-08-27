@@ -131,5 +131,10 @@ $$\begin{align}
 \end{align}$$
 
 
-
+接下来考虑$\sum_{\sigma,\sigma^{'},j,k,j,k}$。我们有：
+$$\begin{align}
+ &  \frac{1}{2}\sum_{\sigma,\sigma^{'},j,k,j,k}V_{jkjk}c^{\dagger}_{j\sigma}c^{\dagger}_{k\sigma^{'}}c_{j\sigma^{'}}c_{k\sigma} \\
+= &  \frac{1}{2}\sum_{j,k}V_{jkjk}(c^{\dagger}_{j \uparrow}c^{\dagger}_{k \uparrow}c_{j \uparrow}c_{k\uparrow}+ c^{\dagger}_{j \uparrow}c^{\dagger}_{k \downarrow}c_{j \downarrow}c_{k \uparrow}+ c^{\dagger}_{j \downarrow} c^{\dagger}_{k \uparrow}c_{k \uparrow}c_{j \downarrow}+ c^{\dagger}_{j\downarrow}c^{\dagger}_{k \downarrow}c_{k\downarrow}c_{j\downarrow})
+\end{align}$$
+注意到这其实是由$c^{\dagger}_{j\uparrow}c^{\dagger}_{k\uparrow}$一个双线性型。
 
