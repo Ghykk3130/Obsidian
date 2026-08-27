@@ -111,13 +111,25 @@ H_{\text{int}} & = \frac{1}{2} \sum_{\sigma,\sigma^{'}, j,k,l,m}\int d^{d}xd^{d}
 这相当于就是两个电子，自旋分别为$\sigma^{'},\sigma$，从格点$l,m$跳跃到格点$k,j$。
 # 4. Hubbard模型
 
-考察相互作用hamiltonian的对角元：
-$$\begin{align}
- & \frac{1}{2}\sum_{j}V_{jjjj} (c^{\dagger}_{j\uparrow}c^{\dagger}_{j\uparrow}c_{j\downarrow}c_{j\downarrow}+ c^{\dagger}_{j\uparrow}c^{\dagger}_{j \downarrow} c_{j\downarrow}c_{j\uparrow}+ c^{\dagger}_{j \downarrow}c^{\dagger}_{j \uparrow}c_{j\uparrow}c_{j \downarrow}+ c^{\dagger}_{j \downarrow}c^{\dagger}_{j \downarrow}c_{j\downarrow}c_{j \downarrow}) \\
-   & =  \frac{1}{2}\sum_{j}V_{jjjj}(c^{\dagger}_{j\uparrow}c^{\dagger}_{j\downarrow}c_{j\downarrow}c_{j\uparrow}+c^{\dagger}_{j\downarrow}c^{\dagger}_{j\uparrow}c_{j\uparrow}c_{j\downarrow}) \\
- & = \sum_{j}V_{jjjj}c^{\dagger}_{j\uparrow}c^{\dagger}_{j\downarrow}c_{j\downarrow}c_{j\uparrow} \\
- & = \sum_{j}V_{jjjj}c^{\dagger}_{j\uparrow}c_{j\uparrow} c^{\dagger}_{j\downarrow}c_{j\downarrow}=\sum_{j}V_{jjjj}n_{j\uparrow}n_{j\downarrow}
+在相互作用hamiltonian的求和$\sum_{\sigma,\sigma^{'},j,k,l,m}$中，首先考虑$j,k,l,m$四个指标全部一样的。即先$\sum_{\sigma,\sigma^{'},j,j,j,j}$。我们有：
+$$\begin{align}  & \frac{1}{2} \sum_{\sigma,\sigma^{'},j,j,j,j} V_{jjjj}c^{\dagger}_{j\sigma}c^{\dagger}_{j \sigma^{'}}c_{l\sigma^{'}}c_{m\sigma} \\
+
+  = & \frac{1}{2}\sum_{j}V_{jjjj} (c^{\dagger}_{j\uparrow}c^{\dagger}_{j\uparrow}c_{j\downarrow}c_{j\downarrow}+ c^{\dagger}_{j\uparrow}c^{\dagger}_{j \downarrow} c_{j\downarrow}c_{j\uparrow}+ c^{\dagger}_{j \downarrow}c^{\dagger}_{j \uparrow}c_{j\uparrow}c_{j \downarrow}+ c^{\dagger}_{j \downarrow}c^{\dagger}_{j \downarrow}c_{j\downarrow}c_{j \downarrow}) \\
+    = &   \frac{1}{2}\sum_{j}V_{jjjj}(c^{\dagger}_{j\uparrow}c^{\dagger}_{j\downarrow}c_{j\downarrow}c_{j\uparrow}+c^{\dagger}_{j\downarrow}c^{\dagger}_{j\uparrow}c_{j\uparrow}c_{j\downarrow}) \\
+  =  & \sum_{j}V_{jjjj}c^{\dagger}_{j\uparrow}c^{\dagger}_{j\downarrow}c_{j\downarrow}c_{j\uparrow} \\
+ = &  \sum_{j}V_{jjjj}c^{\dagger}_{j\uparrow}c_{j\uparrow} c^{\dagger}_{j\downarrow}c_{j\downarrow}=\sum_{j}V_{jjjj}n_{j\uparrow}n_{j\downarrow}
 \end{align}$$
 注意到对于排斥的相互作用，$v(x-y)>0$。那么显然$V_{jjjj}= \int d^{d}x d^{d}y |w(x-R_{j})|^{2}|w(y-R_{j})|^{2} v(x-y)>0$。显然$V_{jjjj}$具有平移不变性，也就是$V_{jjjj}=V_{kkkk},\ \forall k$。那么令$U=V_{jjjj}$。对角元$U\sum_{j}n_{j\uparrow}n_{j\downarrow}$描述两个电子处于同一个格点上的排斥。
+
+接下来考虑$j,k,l,m$四个指标两两一样的。考虑$\sum_{\sigma,\sigma^{'},j,j,l,l}$。我们有：
+$$\begin{align}
+ & \frac{1}{2}\sum_{\sigma,\sigma^{'},j,j,l,l} V_{jjll}c^{\dagger}_{j\sigma}c^{\dagger}_{j\sigma^{'}}c_{l \sigma^{'}}c_{l\sigma} \\
+= & \frac{1}{2}\sum_{j,l}V_{jjll}(c^{\dagger}_{j \uparrow}c^{\dagger}_{j\uparrow}c_{l \uparrow}c_{l\uparrow}+ c^{\dagger}_{j \uparrow}c^{\dagger}_{j \downarrow}c_{l\downarrow}c_{l \uparrow}+ c^{\dagger}_{j \downarrow}c^{\dagger}_{j \uparrow}c_{l\uparrow}c_{l\downarrow}+ c^{\dagger}_{j \downarrow}c^{\dagger}_{j\downarrow}c_{l \downarrow}c_{l \downarrow}) \\
+= &  \frac{1}{2}\sum_{j,l}V_{jjll}(c^{\dagger}_{j\uparrow}c^{\dagger}_{j\downarrow}c_{l\downarrow}c_{l\uparrow}+ c^{\dagger}_{j\downarrow}c^{\dagger}_{j\uparrow}c_{l\uparrow}c_{l\downarrow}) \\
+ = &  \sum_{j,l}V_{jjll}c^{\dagger}_{j\uparrow}c^{\dagger}_{j\downarrow}c_{l\downarrow}c_{l\uparrow} \\
+ = & 
+\end{align}$$
+
+
 
 
