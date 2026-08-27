@@ -108,6 +108,7 @@ $$\begin{align}
 H_{\text{int}} & = \frac{1}{2} \sum_{\sigma,\sigma^{'}, j,k,l,m}\int d^{d}xd^{d}y  w^{*}(x-R_{j})w^{*}(y-R_{k})w(y-R_{l})w(x-R_{m})v(x-y)c^{\dagger}_{j\sigma}c^{\dagger}_{k\sigma^{'}}c_{l\sigma^{'}}c_{m\sigma} \\
  & = \frac{1}{2}\sum_{\sigma,\sigma^{'},j,k,l,m} V_{jklm} c^{\dagger}_{j\sigma}c^{\dagger}_{k\sigma^{'}}c_{l\sigma^{'}}c_{m\sigma},\ V_{jklm}=\int d^{d}x d^{d}y w^{*}(x-R_{j})w^{*}(y-R_{k})w(y-R_{l})w(x-R_{m})v(x-y)
 \end{align}$$
+这相当于就是两个电子，自旋分别为$\sigma^{'},\sigma$，从格点$l,m$跳跃到格点$k,j$。
 # 4. Hubbard模型
 
 考察相互作用hamiltonian的对角元：
@@ -117,6 +118,6 @@ $$\begin{align}
  & = \sum_{j}V_{jjjj}c^{\dagger}_{j\uparrow}c^{\dagger}_{j\downarrow}c_{j\downarrow}c_{j\uparrow} \\
  & = \sum_{j}V_{jjjj}c^{\dagger}_{j\uparrow}c_{j\uparrow} c^{\dagger}_{j\downarrow}c_{j\downarrow}=\sum_{j}V_{jjjj}n_{j\uparrow}n_{j\downarrow}
 \end{align}$$
-注意到对于排斥的相互作用，$v(x-y)>0$。那么显然$V_{jjjj}= \int d^{d}x d^{d}y |w(x-R_{j})|^{2}|w(y-R_{j})|^{2} v(x-y)>0$。
+注意到对于排斥的相互作用，$v(x-y)>0$。那么显然$V_{jjjj}= \int d^{d}x d^{d}y |w(x-R_{j})|^{2}|w(y-R_{j})|^{2} v(x-y)>0$。显然$V_{jjjj}$具有平移不变性，也就是$V_{jjjj}=V_{kkkk},\ \forall k$。那么令$U=V_{jjjj}$。对角元$U\sum_{j}n_{j\uparrow}n_{j\downarrow}$描述两个电子处于同一个格点上的排斥。
 
 
