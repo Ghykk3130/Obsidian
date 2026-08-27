@@ -17,6 +17,13 @@
 \end{align}$$
 >也就是说，这个在原点的Wannier函数一样。
 
+我们可以用Wannier函数来展开场算符：
+$$\begin{align}
+\psi_{\sigma}(x) & = \ket{0} \bra{x,\sigma}  \\
+ & = \ket{0} \bra{x,\sigma} \sum_{j,\sigma^{'}} \ket{j,\sigma^{'}} \bra{j,\sigma^{'}}  \\
+ & = \ket{0} \bra{x} \sum_{j}\ket{j} \bra{j,\sigma} \\
+ & = \sum_{j}w(x-R_{j})c_{j\sigma} 
+\end{align}$$
 # 2. 单粒子部分
 
 令一次量子化hamiltonian为：
