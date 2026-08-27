@@ -3140,7 +3140,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "hubbard",
+                "query": "二次量子化",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -3156,7 +3156,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 200,
+    "collapsed": true
   },
   "right": {
     "id": "9003d078f8dbc4ed",

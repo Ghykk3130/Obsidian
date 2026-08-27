@@ -49,7 +49,7 @@ $$H_{0}=-\sum_{j,m,\sigma}t_{jm}c^{\dagger}_{j,\sigma}c_{m,\sigma}$$
 我们有：
 $$\begin{align}
 H_{0} & = -\sum_{j,m,\sigma}t_{jm}\ket{j,\sigma} \bra{0} 0\rangle\bra{m,\sigma}  \\
- & = \sum_{j,m,\sigma}t_{jm}\ket{j,\sigma} \bra{m,\sigma} 
+ & = -\sum_{j,m,\sigma}t_{jm}\ket{j,\sigma} \bra{m,\sigma} 
 \end{align}$$
 考虑存在一组本征基$\{ \ket{n,\sigma} \}$将$H_{0}$对角化，对角元为$\mathcal{E}_{n}$。那么$H_{0}$写为：
 $$\begin{align}
@@ -96,4 +96,27 @@ $$\begin{align}
  & \approx \frac{2\pi|e|}{\hbar}|T|^{2}N_{R}(-|e|V)N_{L}(-|e|V)
 \end{align}$$
 假设$N_{L}(-|e|V)$已知，那么可以测出$N_{R}(-|e|V)$的大小。
+
+# 3. 相互作用部分
+
+回忆起相互作用hamiltonian为：
+$$\begin{align}
+H_{\text{int}} & = \frac{1}{2}\sum_{\sigma,\sigma^{'}}\int d^{d}x d^{d}y \psi ^{\dagger}_{\sigma}(x)\psi ^{\dagger}_{\sigma^{'}}(y)v(x-y) \psi_{\sigma^{'}}(y)\psi_{\sigma}(x)
+\end{align}$$
+代入Wannier函数展开的场算符$\psi_{\sigma}(x)= \sum_{j}w(x-R_{j})c_{j\sigma}$得到：
+$$\begin{align}
+H_{\text{int}} & = \frac{1}{2} \sum_{\sigma,\sigma^{'}, j,k,l,m}\int d^{d}xd^{d}y  w^{*}(x-R_{j})w^{*}(y-R_{k})w(y-R_{l})w(x-R_{m})v(x-y)c^{\dagger}_{j\sigma}c^{\dagger}_{k\sigma^{'}}c_{l\sigma^{'}}c_{m\sigma} \\
+ & = \frac{1}{2}\sum_{\sigma,\sigma^{'},j,k,l,m} V_{jklm} c^{\dagger}_{j\sigma}c^{\dagger}_{k\sigma^{'}}c_{l\sigma^{'}}c_{m\sigma},\ V_{jklm}=\int d^{d}x d^{d}y w^{*}(x-R_{j})w^{*}(y-R_{k})w(y-R_{l})w(x-R_{m})v(x-y)
+\end{align}$$
+# 4. Hubbard模型
+
+考察相互作用hamiltonian的对角元：
+$$\begin{align}
+ & \frac{1}{2}\sum_{j}V_{jjjj} (c^{\dagger}_{j\uparrow}c^{\dagger}_{j\uparrow}c_{j\downarrow}c_{j\downarrow}+ c^{\dagger}_{j\uparrow}c^{\dagger}_{j \downarrow} c_{j\downarrow}c_{j\uparrow}+ c^{\dagger}_{j \downarrow}c^{\dagger}_{j \uparrow}c_{j\uparrow}c_{j \downarrow}+ c^{\dagger}_{j \downarrow}c^{\dagger}_{j \downarrow}c_{j\downarrow}c_{j \downarrow}) \\
+   & =  \frac{1}{2}\sum_{j}V_{jjjj}(c^{\dagger}_{j\uparrow}c^{\dagger}_{j\downarrow}c_{j\downarrow}c_{j\uparrow}+c^{\dagger}_{j\downarrow}c^{\dagger}_{j\uparrow}c_{j\uparrow}c_{j\downarrow}) \\
+ & = \sum_{j}V_{jjjj}c^{\dagger}_{j\uparrow}c^{\dagger}_{j\downarrow}c_{j\downarrow}c_{j\uparrow} \\
+ & = \sum_{j}V_{jjjj}c^{\dagger}_{j\uparrow}c_{j\uparrow} c^{\dagger}_{j\downarrow}c_{j\downarrow}=\sum_{j}V_{jjjj}n_{j\uparrow}n_{j\downarrow}
+\end{align}$$
+注意到对于排斥的相互作用，$v(x-y)>0$。那么显然$V_{jjjj}= \int d^{d}x d^{d}y |w(x-R_{j})|^{2}|w(y-R_{j})|^{2} v(x-y)>0$。
+
 
