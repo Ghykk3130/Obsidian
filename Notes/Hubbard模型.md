@@ -147,4 +147,35 @@ $$\begin{align}
 = & - \sum_{j,k}V_{jkjk}\left( S^{z}_{j}S^{z}_{k}+ \frac{1}{4}n_{j}n_{k}+ \frac{1}{2}S^{+}_{j}S^{-}_{k}+ \frac{1}{2}S^{-}_{j}S^{+}_{k} \right) \\
 = & - \sum_{j,k}V_{jkjk}\left( \mathbf{S}_{j}\cdot \mathbf{S}_{k}+ \frac{1}{4}n_{j}n_{k} \right)
 \end{align}$$
+>[!Note]
+>注意到：
+>$$\begin{align}
+ & S^{z}= \frac{1}{2}(c^{\dagger}_{\uparrow}c_{\uparrow}-c^{\dagger}_{\downarrow}c_{\downarrow}) = \begin{pmatrix}
+c^{\dagger}_{\uparrow} & c^{\dagger}_{\downarrow}
+\end{pmatrix} \frac{\sigma^{z}}{2} \begin{pmatrix}
+c_{\uparrow} \\
+c_{\downarrow}
+\end{pmatrix} \\
+ & S^{x}= \frac{S^{+}+S^{-}}{2}= \frac{1}{2}(c^{\dagger}_{\uparrow}c_{\downarrow}+ c^{\dagger}_{\downarrow}c_{\uparrow})= \begin{pmatrix}
+c^{\dagger}_{\uparrow} &  c^{\dagger}_{\downarrow}
+\end{pmatrix}   \frac{\sigma^{x}}{2} \begin{pmatrix}
+c_{\uparrow} \\
+c_{\downarrow}
+\end{pmatrix}\\
+ &  S^{y}= \frac{S^{+}-S^{-}}{2i}= \frac{1}{2i}(c^{\dagger}_{\uparrow}c_{\downarrow}-c^{\dagger}_{\downarrow}c_{\uparrow})= \begin{pmatrix}
+ c^{\dagger}_{\uparrow} & c^{\dagger}_{\downarrow}
+\end{pmatrix} \frac{\sigma^{y}}{2} \begin{pmatrix}
+c_{\uparrow} \\
+c_{\downarrow}
+\end{pmatrix}
+\end{align}$$
+>所以，我们有：
+>$$\mathbf{S}= \sum_{\alpha, \beta} c^{\dagger}_{\alpha} \frac{\boldsymbol{\sigma}_{\alpha \beta}}{2} c_{\beta} $$
 
+
+接下来考虑$\sum_{\sigma,\sigma^{'},k,l,l,k},\ k\neq l$。我们有：
+$$\begin{align}
+ & \frac{1}{2}\sum_{\sigma,\sigma^{'},k,l,l,k}V_{kllk} c^{\dagger}_{k\sigma}c^{\dagger}_{l\sigma^{'}}c_{l\sigma^{'}}c_{k\sigma} \\
+= & \frac{1}{2}\sum_{k,l} V_{kllk}\sum_{\sigma}c^{\dagger}_{k\sigma}c_{k\sigma}\sum_{\sigma^{'}}c^{\dagger}_{l \sigma^{'}}c_{l \sigma^{'}} \\
+ = &  \frac{1}{2} \sum_{k,l}V_{kllk}n_{k}n_{l}
+\end{align}$$
