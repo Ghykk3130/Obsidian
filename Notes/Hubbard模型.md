@@ -186,3 +186,6 @@ $$\begin{align}
 
 于是我们可以得到扩展Hubbard模型：
 $$\boxed{H=-\sum_{\sigma,j,m}t_{jm}c^{\dagger}_{j\sigma}c_{m\sigma}+U\sum_{j}n_{j\uparrow}n_{j\downarrow}+\sum_{j\neq m} \left[ -J_{F}\mathbf{S}._{j}\cdot \mathbf{S}_{m}+\left(  \frac{V}{2}- \frac{J_{F}}{4} \right)n_{j}n_{m}+ \frac{U_{p}}{2}c^{\dagger}_{j\uparrow}c^{\dagger}_{j\downarrow}c_{m \downarrow}c_{m\uparrow} \right]}$$
+这里人为截断求和中的其它项。甚至可以截断更多，得到Hubbard模型：
+$$\boxed{H=-t\sum_{\sigma,<j,m>}c^{\dagger}_{j\sigma}c_{m\sigma} + U\sum_{j}n_{j\uparrow}n_{j\downarrow}}$$
+
