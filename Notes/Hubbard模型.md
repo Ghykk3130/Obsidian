@@ -126,10 +126,9 @@ $$\begin{align}
  & \frac{1}{2}\sum_{\sigma,\sigma^{'},j,j,l,l} V_{jjll}c^{\dagger}_{j\sigma}c^{\dagger}_{j\sigma^{'}}c_{l \sigma^{'}}c_{l\sigma} \\
 = & \frac{1}{2}\sum_{j,l}V_{jjll}(c^{\dagger}_{j \uparrow}c^{\dagger}_{j\uparrow}c_{l \uparrow}c_{l\uparrow}+ c^{\dagger}_{j \uparrow}c^{\dagger}_{j \downarrow}c_{l\downarrow}c_{l \uparrow}+ c^{\dagger}_{j \downarrow}c^{\dagger}_{j \uparrow}c_{l\uparrow}c_{l\downarrow}+ c^{\dagger}_{j \downarrow}c^{\dagger}_{j\downarrow}c_{l \downarrow}c_{l \downarrow}) \\
 = &  \frac{1}{2}\sum_{j,l}V_{jjll}(c^{\dagger}_{j\uparrow}c^{\dagger}_{j\downarrow}c_{l\downarrow}c_{l\uparrow}+ c^{\dagger}_{j\downarrow}c^{\dagger}_{j\uparrow}c_{l\uparrow}c_{l\downarrow}) \\
- = &  \sum_{j,l}V_{jjll}c^{\dagger}_{j\uparrow}c^{\dagger}_{j\downarrow}c_{l\downarrow}c_{l\uparrow} \\
- = & 
+ = &  \sum_{j,l}V_{jjll}c^{\dagger}_{j\uparrow}c^{\dagger}_{j\downarrow}c_{l\downarrow}c_{l\uparrow} \\ = &  \frac{1}{2}\sum_{j,l} U_{p} c^{\dagger}_{j\uparrow}c^{\dagger}_{j\downarrow}c_{l\downarrow}c_{l\uparrow},\ U_{p}=2V_{jjll}
 \end{align}$$
-
+这一项描述两个电子从$l$ site跳跃到$j$ site，被称为pair hopping。
 
 接下来考虑$\sum_{\sigma,\sigma^{'},j,k,j,k},\ j\neq k$。我们有：
 $$\begin{align}
@@ -145,8 +144,10 @@ S^{+}=c^{\dagger}_{\uparrow}c_{\downarrow},\ S^{-}=c^{\dagger}_{\downarrow}c_{\u
 $$\begin{align}
  & \frac{1}{2}\sum_{\sigma,\sigma^{'},j,k,j,k}V_{jkjk}c^{\dagger}_{j\sigma}c^{\dagger}_{k\sigma^{'}}c_{j\sigma^{'}}c_{k\sigma}  \\
 = & - \sum_{j,k}V_{jkjk}\left( S^{z}_{j}S^{z}_{k}+ \frac{1}{4}n_{j}n_{k}+ \frac{1}{2}S^{+}_{j}S^{-}_{k}+ \frac{1}{2}S^{-}_{j}S^{+}_{k} \right) \\
-= & - \sum_{j,k}V_{jkjk}\left( \mathbf{S}_{j}\cdot \mathbf{S}_{k}+ \frac{1}{4}n_{j}n_{k} \right)
+= & - \sum_{j,k}V_{jkjk}\left( \mathbf{S}_{j}\cdot \mathbf{S}_{k}+ \frac{1}{4}n_{j}n_{k} \right) \\
+= & -\sum_{j,k}J_{F}\left( \mathbf{S}_{j}\cdot \mathbf{S}_{k}+ \frac{1}{4}n_{j}n_{k} \right),\ J_{F}=V_{jljl}
 \end{align}$$
+这类似于交换作用。自旋之间产生$\propto \mathbf{S}_{j}\cdot \mathbf{S}_{k}$的交换能。电荷密度之间产生$\propto n_{j}n_{k}$的交换能。这一项被称为交换/自旋交换作用。
 
 >[!Note]
 >注意到：
@@ -178,5 +179,10 @@ c_{\downarrow}
 $$\begin{align}
  & \frac{1}{2}\sum_{\sigma,\sigma^{'},k,l,l,k}V_{kllk} c^{\dagger}_{k\sigma}c^{\dagger}_{l\sigma^{'}}c_{l\sigma^{'}}c_{k\sigma} \\
 = & \frac{1}{2}\sum_{k,l} V_{kllk}\sum_{\sigma}c^{\dagger}_{k\sigma}c_{k\sigma}\sum_{\sigma^{'}}c^{\dagger}_{l \sigma^{'}}c_{l \sigma^{'}} \\
- = &  \frac{1}{2} \sum_{k,l}V_{kllk}n_{k}n_{l}
+ = &  \frac{1}{2} \sum_{k,l}V_{kllk}n_{k}n_{l} \\
+= &  \frac{1}{2}\sum_{j,l}Vn_{j}n_{l}
 \end{align}$$
+这一项被称为直接密度-密度相互作用。
+
+于是我们可以得到扩展Hubbard模型：
+$$\boxed{H=-\sum_{\sigma,j,m}t_{jm}c^{\dagger}_{j\sigma}c_{m\sigma}+U\sum_{j}n_{j\uparrow}n_{j\downarrow}+\sum_{j\neq m} \left[ -J_{F}\mathbf{S}._{j}\cdot \mathbf{S}_{m}+\left(  \frac{V}{2}- \frac{J_{F}}{4} \right)n_{j}n_{m}+ \frac{U_{p}}{2}c^{\dagger}_{j\uparrow}c^{\dagger}_{j\downarrow}c_{m \downarrow}c_{m\uparrow} \right]}$$
