@@ -147,6 +147,7 @@ $$\begin{align}
 = & - \sum_{j,k}V_{jkjk}\left( S^{z}_{j}S^{z}_{k}+ \frac{1}{4}n_{j}n_{k}+ \frac{1}{2}S^{+}_{j}S^{-}_{k}+ \frac{1}{2}S^{-}_{j}S^{+}_{k} \right) \\
 = & - \sum_{j,k}V_{jkjk}\left( \mathbf{S}_{j}\cdot \mathbf{S}_{k}+ \frac{1}{4}n_{j}n_{k} \right)
 \end{align}$$
+
 >[!Note]
 >注意到：
 >$$\begin{align}
