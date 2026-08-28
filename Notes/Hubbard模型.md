@@ -121,7 +121,7 @@ $$\begin{align}  & \frac{1}{2} \sum_{\sigma,\sigma^{'},j,j,j,j} V_{jjjj}c^{\dagg
 \end{align}$$
 注意到对于排斥的相互作用，$v(x-y)>0$。那么显然$V_{jjjj}= \int d^{d}x d^{d}y |w(x-R_{j})|^{2}|w(y-R_{j})|^{2} v(x-y)>0$。显然$V_{jjjj}$具有平移不变性，也就是$V_{jjjj}=V_{kkkk},\ \forall k$。那么令$U=V_{jjjj}$。对角元$U\sum_{j}n_{j\uparrow}n_{j\downarrow}$描述两个电子处于同一个格点上的排斥。
 
-接下来考虑$j,k,l,m$四个指标两两一样的。考虑$\sum_{\sigma,\sigma^{'},j,j,l,l}$。我们有：
+接下来考虑$j,k,l,m$四个指标两两一样的。考虑$\sum_{\sigma,\sigma^{'},j,j,l,l},\ j\neq l$。我们有：
 $$\begin{align}
  & \frac{1}{2}\sum_{\sigma,\sigma^{'},j,j,l,l} V_{jjll}c^{\dagger}_{j\sigma}c^{\dagger}_{j\sigma^{'}}c_{l \sigma^{'}}c_{l\sigma} \\
 = & \frac{1}{2}\sum_{j,l}V_{jjll}(c^{\dagger}_{j \uparrow}c^{\dagger}_{j\uparrow}c_{l \uparrow}c_{l\uparrow}+ c^{\dagger}_{j \uparrow}c^{\dagger}_{j \downarrow}c_{l\downarrow}c_{l \uparrow}+ c^{\dagger}_{j \downarrow}c^{\dagger}_{j \uparrow}c_{l\uparrow}c_{l\downarrow}+ c^{\dagger}_{j \downarrow}c^{\dagger}_{j\downarrow}c_{l \downarrow}c_{l \downarrow}) \\
@@ -131,11 +131,20 @@ $$\begin{align}
 \end{align}$$
 
 
-接下来考虑$\sum_{\sigma,\sigma^{'},j,k,j,k}$。我们有：
+接下来考虑$\sum_{\sigma,\sigma^{'},j,k,j,k},\ j\neq k$。我们有：
 $$\begin{align}
  &  \frac{1}{2}\sum_{\sigma,\sigma^{'},j,k,j,k}V_{jkjk}c^{\dagger}_{j\sigma}c^{\dagger}_{k\sigma^{'}}c_{j\sigma^{'}}c_{k\sigma} \\
 = &  \frac{1}{2}\sum_{j,k}V_{jkjk}(c^{\dagger}_{j \uparrow}c^{\dagger}_{k \uparrow}c_{j \uparrow}c_{k\uparrow}+ c^{\dagger}_{j \uparrow}c^{\dagger}_{k \downarrow}c_{j \downarrow}c_{k \uparrow}+ c^{\dagger}_{j \downarrow} c^{\dagger}_{k \uparrow}c_{j \uparrow}c_{k \downarrow}+ c^{\dagger}_{j\downarrow}c^{\dagger}_{k \downarrow}c_{j\downarrow}c_{k\downarrow}) \\
 = &  \frac{1}{2}\sum_{j,k}V_{jkjk}(c^{\dagger}_{j\uparrow}c_{j\uparrow}c^{\dagger}_{k\uparrow}c_{k\uparrow}+ c^{\dagger}_{j\uparrow}c_{j\downarrow}c^{\dagger}_{k\downarrow}c_{k\uparrow}+ c^{\dagger}_{j\downarrow}c_{j\uparrow}c^{\dagger}_{k\uparrow}c_{k\downarrow}+ c^{\dagger}_{j\downarrow}c_{j\downarrow}c^{\dagger}_{k\downarrow}c_{k\downarrow})
 \end{align}$$
-注意到这其实是由$c^{\dagger}_{j\uparrow}c_{j\uparrow},c^{\dagger}_{k\uparrow}c_{k\uparrow},c^{\dagger}_{j\uparrow}c_{j\downarrow},c^{\dagger}_{k\downarrow}c_{k\uparrow}$
+注意这里面其实就只有四个算子$c^{\dagger}_{\uparrow}c_{\uparrow},c^{\dagger}_{\uparrow}c_{\downarrow},c^{\dagger}_{\downarrow}c_{\uparrow},c^{\dagger}_{\downarrow}c_{\downarrow}$，相当于这四个算子构成的双线性型。我们可以做一个变换：
+$$\begin{align}
+S^{+}=c^{\dagger}_{\uparrow}c_{\downarrow},\ S^{-}=c^{\dagger}_{\downarrow}c_{\uparrow},\ S^{z}= \frac{1}{2}(c^{\dagger}_{\uparrow}c_{\uparrow}-c^{\dagger}_{\downarrow}c_{\downarrow}),\ n= c^{\dagger}_{\uparrow}c_{\uparrow}+c^{\dagger}_{\downarrow}c_{\downarrow} 
+\end{align}$$
+那么反解后代入得到：
+$$\begin{align}
+ & \frac{1}{2}\sum_{\sigma,\sigma^{'},j,k,j,k}V_{jkjk}c^{\dagger}_{j\sigma}c^{\dagger}_{k\sigma^{'}}c_{j\sigma^{'}}c_{k\sigma}  \\
+= & - \sum_{j,k}V_{jkjk}\left( S^{z}_{j}S^{z}_{k}+ \frac{1}{4}n_{j}n_{k}+ \frac{1}{2}S^{+}_{j}S^{-}_{k}+ \frac{1}{2}S^{-}_{j}S^{+}_{k} \right) \\
+= & - \sum_{j,k}V_{jkjk}\left( \mathbf{S}_{j}\cdot \mathbf{S}_{k}+ \frac{1}{4}n_{j}n_{k} \right)
+\end{align}$$
 
