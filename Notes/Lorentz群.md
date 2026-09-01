@@ -128,3 +128,6 @@ $$\begin{align}
 >[!Success] Proposition 3.2
 >$$(\Lambda ^{-1})^{\mu}{}_{\nu}=\Lambda_{\nu}{}^{\mu}$$
 
+注意，这里并不是说这两个张量相等。而只是它们的component相等。其中，$(\Lambda ^{-1})^{\mu}{}_{\nu}:V \times V\rightarrow \mathbb{R},\ \Lambda_{\nu}{}^{\mu}:V^{*}  \times V^{*}\rightarrow \mathbb{R}$，不可能是同一个张量。
+
+
