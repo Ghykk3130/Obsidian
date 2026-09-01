@@ -2,7 +2,7 @@
 
 考虑一个性质足够好的流形$M$。给定流形上函数$f:M\rightarrow \mathbb{R}$。取一点$p\in M$，以及过$p$的曲线$\mathbf{x}:\mathbb{R}\rightarrow M,\ t\mapsto \mathbf{x}(t)$。不妨设曲线都在$t=0$时过$p$点。我们可以构造：
 $$X_{p}:f\mapsto \left.\frac{d}{dt}\right|_{t=0}f(\mathbf{x}(t))$$
-固定$p$，集合$\{ X_{p} \}$满足矢量空间的性质。例如线性性：取$X_{p},\ Y_{p}$，构造$aX_{p}+Y_{p}$。那么是否存在一条曲线$\mathbf{z}$使得$\mathbf{z}$诱导出来的$Z_{p}=aX_{p}+Y_{p}$呢？令：
+固定$p$，集合$T_{p}(M)=\{ X_{p} \}$满足矢量空间的性质。例如线性封闭：取$X_{p},\ Y_{p}$，构造$aX_{p}+Y_{p}$。那么是否存在一条曲线$\mathbf{z}$使得$\mathbf{z}$诱导出来的$Z_{p}=aX_{p}+Y_{p}$呢？令：
 $$\mathbf{z}(t)=p+ t(a \left. \frac{d\mathbf{x}}{dt} \right|_{t=0}+ \left.  \frac{d\mathbf{y}}{dt} \right|_{t=0}) $$
 那么：
 $$\begin{align}
@@ -12,10 +12,34 @@ Z_{p}(f) & = \left. \frac{d}{dt}  \right|_{t=0}f(\mathbf{z}(t)) \\
  & = a \frac{df(\mathbf{x}(t))}{dt}+ \frac{df(\mathbf{y}(t))}{dt} \\
  & = aX_{p}(f)+Y_{p}(f)
 \end{align}$$
+这里$\frac{\partial f}{\partial z^{\mu}}$可以被写成$\frac{\partial f}{\partial x^{\mu}}$，因为反正是对于$f$的自变量在微分，只是一个dummy variable。另外，这里直接默认了在流形$M$上已经取好了chart，可以直接谈论坐标分量。
+
+将这样定义出来的矢量称为切矢量。它们是流形上的泛函。
+
+>[!Note] Definition 1.1
+>Given a manifold $M$, take a point $p\in M$, and a curve $\mathbf{x}: \mathbb{R}\rightarrow M,\ t\mapsto \mathbf{x}(t)$, define the tangent vector:
+>$$X_{p}:C^{\infty}(M)\rightarrow \mathbb{R},\ f\mapsto \left. \frac{d}{dt} \right|_{t=0}f(\mathbf{x}(t))$$
+>Define the tangent space at $p$ as:
+>$$T_{p}(M)=\{ X_{p}|\mathbf{x}(t)\text{ passes through }p \}$$
+>Define the tangent bundle as:
+>$$T(M)=\cup_{p\in M}T_{p}(M)$$
+
+那么，$T_{p}$是否存在基矢量呢？给定任意曲线$\mathbf{x}(t)$，它诱导的矢量为：
+$$\begin{align}
+X_{p} & = \left. \frac{d}{dt} \right|_{t=0} \\
+ & = \left.\frac{d x^{\mu}(t)}{dt}\right|_{t=0} \left.\frac{\partial}{\partial x^{\mu}}\right|_{p}
+\end{align}$$
+前面的$\frac{dx^{\mu}}{dt}$仅仅是一个线性组合系数。所以$\frac{\partial}{\partial x^{\mu}}$为基矢量。
+## Ex:
+
+在naive的欧氏空间中，任取矢量$\mathbf{v}=(v^{1},\dots,v^{n})\in \mathbb{R}^{n}$。基矢量为$\mathbf{e}_{k}=(0,\dots,1,\dots,0)$。任取一点$p\in \mathbb{R}^{n}$。我们构造同构：$\phi:\mathbb{R}^{n}\rightarrow T_{p}(\mathbb{R}^{n}),\ \mathbf{v}\mapsto v^{i} \frac{\partial}{\partial x^{i}}$。那么：
+$$\phi(\mathbf{e}_{1})= \frac{\partial}{\partial x^{1}}$$
+
+接下来，定义切空间基矢$\frac{\partial}{\partial x^{\mu}}$的对偶矢量为$dx^{\mu}$，满足$dx^{\mu}\left(  \frac{\partial}{\partial x^{\nu}} \right)=\delta^{\mu}{}_{\nu}$。此处$\delta^{\mu}_{\ \nu}$只是一个单纯的函数。我们认为无论上下标在哪个位置，Kronecker delta都是一样的。定义余切空间$T^{*}_{p}(M)$。定义余切丛$T^{*}(M)=\cup_{p\in M}T^{*}_{p}(M)$。
 
 # 1. 指标升降
 
-物理上将四维的实空间记为$V$。可以取$\{ \mathbf{e}_{\mu} \}$作为一组基。然后，我们可以构造$V^{*}$。通过$\langle \mathbf{e}^{\mu} ,\mathbf{e}_{\nu}\rangle=\delta^{\mu}{}_{\nu}$构造对偶空间的基。此处$\delta^{\mu}_{\ \nu}$只是一个单纯的函数。我们认为无论上下标在哪个位置，Kronecker delta都是一样的。
+物理上将四维的实空间记为$V$。可以取$\{ \mathbf{e}_{\mu} \}$作为一组基。然后，我们可以构造$V^{*}$。通过$\langle \mathbf{e}^{\mu} ,\mathbf{e}_{\nu}\rangle=\delta^{\mu}{}_{\nu}$构造对偶空间的基。
 
 >[!Warning]
 >Kronecker delta的指标不可被升降。
