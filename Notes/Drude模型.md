@@ -54,6 +54,12 @@ j & = -n|e| v \\
 \end{align}$$
 于是$\sigma(\omega)=\sigma(0) \frac{1+i\tau \omega}{1+\tau^{2}\omega^{2}}\text{ where }\sigma(0)= \frac{ne^{2}\tau}{m}$.
 
+## Ex:
+
+可以认为，Drude模型的电流完全是极化电流。每个电子相对于其原子核有位移，产生一个偶极。假设系统被电场$E_{0}e^{-i\omega t}$驱动。那么：
+$$\begin{align}
+ & j= \frac{\partial P}{\partial t}
+\end{align}$$
 
  
 

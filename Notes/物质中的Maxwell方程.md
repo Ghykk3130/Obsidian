@@ -37,6 +37,7 @@ $$\left. \begin{align}
 \nabla \cdot \vec{E} & =\frac{\rho}{\epsilon_{0}}
 \end{align}\right\}$$
 即可知道，电荷可以分为两类，即束缚电荷和自由电荷。写作$\rho=\rho_{f}+\rho_{b}$
+
 >[! Proposition 1]
 $\nabla \cdot \vec{E}=  \frac{1}{\epsilon_{0}}\rho=\frac{1}{\epsilon_{0}}(\rho_{f}+\rho_{b}) = \frac{1}{\epsilon_{0}}(\rho_{f}-\nabla \cdot \vec{P})$
 # 对$\nabla \times \vec{B}=\mu_{0}\vec{J}+\mu_{0}\epsilon_{0}  \frac{\partial \vec{E}}{\partial t}$的改写
@@ -53,6 +54,7 @@ $\nabla\times\vec{B}=\mu_{0}\vec{J}+\mu_{0}\nabla\times \vec{M}$（这里没有$
 于是在上述两种电流之上，还应再添加一种电流$\vec{J_{m}}=\nabla\times \vec{M}$，即磁极化电流。我们发现磁极化电流显然不能造成电荷变化，因为$\nabla \cdot \vec{J_{m}} = 0$，散度为零，所以可以加到总电流$\vec{J}$中而不影响流守恒。
 
 所以在静电情况下有三种电流$\vec{J} = \vec{J_{f}}+ \vec{J_{p}}+ \vec{J_{m}}$, 而在非静电情况下还应加上位移电流$\vec{J_{d}}$。注意此处我们所说的“总电流”$\vec{J}$不包含位移电流。这种定义是合理的因为位移电流只是在没有真实电流的情况下“补偿”真实电流，自然不应算在真实总电流当中。
+
 >[! Proposition 2]
 >$\nabla\times \vec{B}=\mu_{0}\left( \vec{J}+\epsilon_{0}  \frac{\partial \vec{E}}{\partial t} \right)=\mu_{0}(\vec{J_{f}}+\vec{J_{p}}+\vec{J_{m}}+\vec{J_{d}})=\mu_{0}\left( \vec{J_{f}}+  \frac{\partial \vec{P}}{\partial t}+ \nabla \times \vec{m} +\epsilon_{0}  \frac{\partial \vec{E}}{\partial t} \right)$
 

@@ -3119,12 +3119,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Notes/物质中的Maxwell方程.md",
+                "file": "Notes/Drude模型.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "物质中的Maxwell方程"
+              "title": "Drude模型"
             }
           }
         ],
@@ -3182,7 +3182,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "极化电流",
+                "query": "drude",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -3315,6 +3315,7 @@
   },
   "active": "b3803d047c13e1d0",
   "lastOpenFiles": [
+    "Notes/物质中的Maxwell方程.md",
     "Homework/Physics 520/Physics 520 homework 0.md",
     "Notes/Drude模型.md",
     "Homework/Physics 512/Untitled.md",
@@ -3352,7 +3353,6 @@
     "Pictures/Pasted image 20260820001137.png",
     "Pictures/Pasted image 20260819234403.png",
     "Experimental/Amplifier.md",
-    "Experimental/Basic Electronics.md",
     "Pictures/GRE镇考机经词7.0-乱序（2026年版）.pdf",
     "Pictures/drawing.pdf",
     "Pictures/drawing.html",
