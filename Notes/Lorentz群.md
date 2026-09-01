@@ -96,6 +96,15 @@ dx^{'\mu} & = \frac{\partial x^{'\mu}}{\partial x^{\nu} }dx^{\nu} \\
  & = \Lambda^{\mu}{}_{\nu}dx^{\nu} \\
 \implies \frac{\partial x^{'\mu}}{\partial x^{\nu}} & = \Lambda^{\mu}{}_{\nu}
 \end{align}$$
+## Ex:
+$$\begin{align}
+\Lambda_{\mu}{}^{\nu} & = g_{\mu \lambda}g^{\nu \gamma}\Lambda^{\lambda}{}_{\gamma} \\
+ & = g_{\mu \lambda}g^{\nu \gamma} \frac{\partial x^{'\lambda}}{\partial x^{\gamma}} \\
+ & = \frac{\partial(g_{\mu \lambda}x^{'\lambda})}{\partial(g^{\nu \gamma}x^{\gamma})} \\
+ & = \frac{\partial(g_{\mu \lambda}x^{' \lambda})}{\partial(g_{\nu \gamma}x^{\gamma})} \\
+ & = \frac{\partial x^{'}_{\mu}}{\partial x_{\nu}}
+\end{align}$$
+
 规定Lorentz变换保持Minkowski度规。具体来说：
 $$\begin{align}
  & x^{'}_{\mu}x^{'\mu}=x_{\mu}x^{\mu} \\
@@ -108,11 +117,14 @@ $$\begin{align}
 >[!Note] Definition 2.1
 >A Lorentz transformation is a 2-tensor $\Lambda$ such that:
 >$$g_{\nu \mu}\Lambda^{\nu}{}_{\eta}\Lambda^{\mu}{}_{\gamma}=g_{\eta \gamma}$$
-## Ex:
+
+可以证明$(\Lambda ^{-1})^{\mu}{}_{\nu}=\Lambda_{\nu}{}^{\mu}$。我们有：
 $$\begin{align}
-\Lambda_{\mu}{}^{\nu} & = g_{\mu \lambda}g^{\nu \gamma}\Lambda^{\lambda}{}_{\gamma} \\
- & = g_{\mu \lambda}g^{\nu \gamma} \frac{\partial x^{'\lambda}}{\partial x^{\gamma}} \\
- & = \frac{\partial(g_{\mu \lambda}x^{'\lambda})}{\partial(g^{\nu \gamma}x^{\gamma})} \\
- & = \frac{\partial(g_{\mu \lambda}x^{' \lambda})}{\partial(g_{\nu \gamma}x^{\gamma})} \\
- & = \frac{\partial x^{'}_{\mu}}{\partial x_{\nu}}
-\end{align}$$ 
+\Lambda_{\nu}{}^{\mu}\Lambda^{\nu}{}_{\rho} & = g_{\nu \alpha}g^{\mu \beta}\Lambda^{\alpha}{}_{\beta}\Lambda^{\nu}{}_{\rho} \\
+ & = g^{\mu \beta}g_{\beta \rho} \\
+ & = \delta^{\mu}{}_{\rho}
+\end{align}$$
+
+>[!Success] Proposition 3.2
+>$$(\Lambda ^{-1})^{\mu}{}_{\nu}=\Lambda_{\nu}{}^{\mu}$$
+
