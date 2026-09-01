@@ -1,3 +1,18 @@
+# 1. 微分几何基础
+
+考虑一个性质足够好的流形$M$。给定流形上函数$f:M\rightarrow \mathbb{R}$。取一点$p\in M$，以及过$p$的曲线$\mathbf{x}:\mathbb{R}\rightarrow M,\ t\mapsto \mathbf{x}(t)$。不妨设曲线都在$t=0$时过$p$点。我们可以构造：
+$$X_{p}:f\mapsto \left.\frac{d}{dt}\right|_{t=0}f(\mathbf{x}(t))$$
+固定$p$，集合$\{ X_{p} \}$满足矢量空间的性质。例如线性性：取$X_{p},\ Y_{p}$，构造$aX_{p}+Y_{p}$。那么是否存在一条曲线$\mathbf{z}$使得$\mathbf{z}$诱导出来的$Z_{p}=aX_{p}+Y_{p}$呢？令：
+$$\mathbf{z}(t)=p+ t(a \left. \frac{d\mathbf{x}}{dt} \right|_{t=0}+ \left.  \frac{d\mathbf{y}}{dt} \right|_{t=0}) $$
+那么：
+$$\begin{align}
+Z_{p}(f) & = \left. \frac{d}{dt}  \right|_{t=0}f(\mathbf{z}(t)) \\
+ & = \frac{dz^{\mu}}{dt} \frac{\partial f}{\partial z^{\mu}} \\
+ & = \left( a \frac{dx^{\mu}}{dt}+ \frac{dy^{\mu}}{dt} \right) \frac{\partial f}{\partial x^{\mu}} \\
+ & = a \frac{df(\mathbf{x}(t))}{dt}+ \frac{df(\mathbf{y}(t))}{dt} \\
+ & = aX_{p}(f)+Y_{p}(f)
+\end{align}$$
+
 # 1. 指标升降
 
 物理上将四维的实空间记为$V$。可以取$\{ \mathbf{e}_{\mu} \}$作为一组基。然后，我们可以构造$V^{*}$。通过$\langle \mathbf{e}^{\mu} ,\mathbf{e}_{\nu}\rangle=\delta^{\mu}{}_{\nu}$构造对偶空间的基。此处$\delta^{\mu}_{\ \nu}$只是一个单纯的函数。我们认为无论上下标在哪个位置，Kronecker delta都是一样的。

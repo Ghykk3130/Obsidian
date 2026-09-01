@@ -56,11 +56,18 @@ j & = -n|e| v \\
 
 ## Ex:
 
-可以认为，Drude模型的电流完全是极化电流。每个电子相对于其原子核有位移，产生一个偶极。假设系统被电场$E_{0}e^{-i\omega t}$驱动。那么：
+可以认为，Drude模型的电流完全是极化电流。每个电子相对于其原子核有位移，产生一个偶极。假设系统被电场$E_{0}e^{-i\omega t}$驱动。我们有：
 $$\begin{align}
- & j= \frac{\partial P}{\partial t}
+ & j= \frac{\partial P}{\partial t} \\
+\implies & j= -i\omega P \\
+\implies & P= i\frac{j}{\omega}
 \end{align}$$
-
- 
+那么：
+$$\begin{align}
+D & =\epsilon_{0}E+P \\
+ & = \left( \epsilon_{0}+ \frac{i\sigma}{\omega}  \right)E
+\end{align}$$
+所以dielectric constant为：
+$$\epsilon_{r}= 1+ \frac{i\sigma}{\epsilon_{0}\omega}$$
 
 
