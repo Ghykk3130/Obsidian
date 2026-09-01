@@ -37,7 +37,7 @@ $$\phi(\mathbf{e}_{1})= \frac{\partial}{\partial x^{1}}$$
 
 接下来，定义切空间基矢$\frac{\partial}{\partial x^{\mu}}$的对偶矢量为$dx^{\mu}$，满足$dx^{\mu}\left(  \frac{\partial}{\partial x^{\nu}} \right)=\delta^{\mu}{}_{\nu}$。此处$\delta^{\mu}_{\ \nu}$只是一个单纯的函数。我们认为无论上下标在哪个位置，Kronecker delta都是一样的。定义余切空间$T^{*}_{p}(M)$。定义余切丛$T^{*}(M)=\cup_{p\in M}T^{*}_{p}(M)$。
 
-# 1. 指标升降
+# 2. 指标升降
 
 物理上将四维的实空间记为$V$。可以取$\{ \mathbf{e}_{\mu} \}$作为一组基。然后，我们可以构造$V^{*}$。通过$\langle \mathbf{e}^{\mu} ,\mathbf{e}_{\nu}\rangle=\delta^{\mu}{}_{\nu}$构造对偶空间的基。
 
@@ -66,19 +66,54 @@ $$\begin{align}
  & g^{\mu \nu}= g^{\mu \lambda}\delta^{\nu}{}_{\lambda}= g^{\mu \lambda}g^{\nu \eta}g_{\eta \lambda} 
 \end{align}$$
 
-# 2. Lorentz变换
+# 3. Lorentz变换
 
+考虑一个映射$\Lambda$将$V$中每个点变换：$x^{'\mu}=\Lambda^{\mu}{}_{\nu}x^{\nu}$。我们首先证明：
+
+>[!Success] Proposition 3.1
+>$$dx^{'\mu}= \frac{\partial x^{'\mu}}{\partial x^{\nu}}dx^{\nu}$$
+## Proof.
+
+左右手都是$T^{*}_{p}(V)$中的元素。只需要证明对于$V$中矢量的作用是一样的即可。任取$\frac{\partial}{\partial x^{'\lambda}}\in T_{p}(V)$。那么左手边：
+$$\begin{align}
+dx^{'\mu}\left(  \frac{\partial}{\partial x^{'\lambda}} \right)=\delta^{\mu}{}_{\lambda}
+\end{align}$$
+右手边：
+$$\begin{align}
+  &  \frac{\partial x^{'\mu}}{\partial x^{\nu}}dx^{\nu}\left(  \frac{\partial}{\partial x^{'\lambda}} \right)  \\
+ = &  dx^{\nu}\left(  \frac{\partial x^{'\mu}}{\partial x^{\nu}} \frac{\partial}{\partial x^{'\lambda}} \right) \\
+ = &  dx^{\nu}\left(  \frac{\partial x^{'\mu}}{\partial x^{'\lambda}} \frac{\partial}{\partial x^{\nu}} \right) \\
+ = &  dx^{\nu}\left(  \delta^{\mu \lambda} \frac{\partial}{\partial x^{\nu}} \right)=\delta^{\mu \lambda}=\delta^{\mu}{}_{\lambda}
+\end{align}$$
+其中第二行利用了$dx^{\nu}$泛函的线性性。而第三行中由于$\frac{\partial}{\partial x^{\nu}}$只是$V$上的泛函，本身就是naive的导数，其微分性质和普通导数没有区别。随意变换顺序也没问题。现在左右手两边对于基矢量作用都相同，所以都是一样的对偶矢。
+>[!Right]
+>$\blacksquare$
+
+可以证明，变换的Jacobian矩阵的系数其实就是这个微分系数：
+$$\begin{align}
+dx^{'\mu} & = \frac{\partial x^{'\mu}}{\partial x^{\nu} }dx^{\nu} \\
+ & = \Lambda^{\mu}{}_{\lambda} \frac{\partial x^{\lambda}}{\partial x^{\nu}}dx^{\nu} \\
+ & = \Lambda^{\mu}{}_{\nu}dx^{\nu} \\
+\implies \frac{\partial x^{'\mu}}{\partial x^{\nu}} & = \Lambda^{\mu}{}_{\nu}
+\end{align}$$
 定义Lorentz变换为保持Minkowski的变换。具体来说：
 
 >[!Note] Definition 2.1
->A Lorentz transformation is a (1,1)-type tensor $\Lambda$ such that:
+>A Lorentz transformation is a 2-tensor $\Lambda$ such that:
 >$$\Lambda_{\mu}{}^{\nu}\Lambda_{\lambda}{}^{\gamma}g_{\nu \gamma}=g_{\mu \lambda}$$
 
-令Lorentz变换为$\Lambda$。在进行变换时，保持矢量实体的不变性，而基矢量变化$\mathbf{e}_{\mu}\rightarrow \mathbf{e}_{\mu}^{'}$。那么：
 $$\begin{align}
- & \mathbf{x}= x^{\mu}\mathbf{e}_{\mu}=x^{'\mu}\mathbf{e}_{\mu}^{'} \\
-\implies & x^{\mu}\mathbf{e}^{'}_{\nu}\mathbf{e}^{'\nu}(\mathbf{e}_{\mu})=x^{'\mu}\mathbf{e}^{'}_{\nu}\mathbf{e}^{'\nu}(\mathbf{e}^{'}_{\mu} )=x^{'\mu}\mathbf{e}^{'}_{\nu}\delta^{\nu}{}_{\mu}=x^{'\mu}\mathbf{e}^{'}_{\mu}\\
+(\Lambda^{T}g\Lambda)_{\mu \nu} & = (\Lambda^{T})_{\mu}{}^{\alpha}g_{\alpha \beta}\Lambda^{\beta}{}_{\nu} \\
+ & = g_{\mu \lambda}g^{\alpha \gamma}(\Lambda^{T})^{\lambda}{}_{\gamma}g_{\alpha \beta}\Lambda^{\beta}{}_{\nu} \\
+ & = g_{\mu \lambda}g^{\alpha \gamma}\Lambda^{\gamma}{}_{\lambda}g_{\alpha \beta}\Lambda^{\beta}{}_{\nu} \\
+ & = g_{\mu \lambda}\delta^{\alpha \gamma}\Lambda^{\gamma}{}_{\lambda}g_{\alpha \beta}\Lambda^{\beta}{}_{\nu} \\
+ & = g_{\mu \lambda}\Lambda^{\alpha}{}_{\lambda}g_{\alpha \beta}\Lambda^{\beta}{}_{\nu}
 \end{align}$$
-可以定义$\mathbf{e}^{'\nu}(\mathbf{e}_{\mu})=\Lambda^{\nu}{_{\mu}}$。那么$x^{'\mu}=\Lambda^{\mu}{_{\nu}}x^{\nu}$。
 
-
+## Ex:
+$$\begin{align}
+\Lambda_{\mu}{}^{\nu} & = g_{\mu \lambda}g^{\nu \gamma}\Lambda^{\lambda}{}_{\gamma} \\
+ & = g_{\mu \lambda}g^{\nu \gamma} \frac{\partial x^{'\lambda}}{\partial x^{\gamma}} \\
+ & = \frac{\partial(g_{\mu \lambda}x^{'\lambda})}{\partial(g^{\nu \gamma}x^{\gamma})} \\
+ & \neq \frac{\partial x^{'}_{\mu}}{\partial x_{\nu}}
+\end{align}$$
