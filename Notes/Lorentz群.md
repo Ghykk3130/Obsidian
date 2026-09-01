@@ -96,24 +96,22 @@ dx^{'\mu} & = \frac{\partial x^{'\mu}}{\partial x^{\nu} }dx^{\nu} \\
  & = \Lambda^{\mu}{}_{\nu}dx^{\nu} \\
 \implies \frac{\partial x^{'\mu}}{\partial x^{\nu}} & = \Lambda^{\mu}{}_{\nu}
 \end{align}$$
-定义Lorentz变换为保持Minkowski的变换。具体来说：
+规定Lorentz变换保持Minkowski度规。具体来说：
+$$\begin{align}
+ & x^{'}_{\mu}x^{'\mu}=x_{\mu}x^{\mu} \\
+\implies & g_{\mu \nu}x^{'\nu}x^{'\mu}=g_{\mu \nu}x^{\nu}x^{\mu} \\
+\implies & g_{\mu \nu}\Lambda^{\nu}{}_{\eta}\Lambda^{\mu}{}_{\gamma}x^{\eta}x^{\gamma}=g_{\gamma \eta}x^{\eta}x^{\gamma} \\
+\implies & g_{\mu \nu}\Lambda^{\nu}{}_{\eta}\Lambda^{\mu}{}_{\gamma}=g_{\gamma \eta} \\
+\implies & g_{\nu \mu}\Lambda^{\nu}{}_{\eta}\Lambda^{\mu}{}_{\gamma}=g_{\eta \gamma}
+\end{align}$$
 
 >[!Note] Definition 2.1
 >A Lorentz transformation is a 2-tensor $\Lambda$ such that:
->$$\Lambda_{\mu}{}^{\nu}\Lambda_{\lambda}{}^{\gamma}g_{\nu \gamma}=g_{\mu \lambda}$$
-
-$$\begin{align}
-(\Lambda^{T}g\Lambda)_{\mu \nu} & = (\Lambda^{T})_{\mu}{}^{\alpha}g_{\alpha \beta}\Lambda^{\beta}{}_{\nu} \\
- & = g_{\mu \lambda}g^{\alpha \gamma}(\Lambda^{T})^{\lambda}{}_{\gamma}g_{\alpha \beta}\Lambda^{\beta}{}_{\nu} \\
- & = g_{\mu \lambda}g^{\alpha \gamma}\Lambda^{\gamma}{}_{\lambda}g_{\alpha \beta}\Lambda^{\beta}{}_{\nu} \\
- & = g_{\mu \lambda}\delta^{\alpha \gamma}\Lambda^{\gamma}{}_{\lambda}g_{\alpha \beta}\Lambda^{\beta}{}_{\nu} \\
- & = g_{\mu \lambda}\Lambda^{\alpha}{}_{\lambda}g_{\alpha \beta}\Lambda^{\beta}{}_{\nu}
-\end{align}$$
-
+>$$g_{\nu \mu}\Lambda^{\nu}{}_{\eta}\Lambda^{\mu}{}_{\gamma}=g_{\eta \gamma}$$
 ## Ex:
 $$\begin{align}
 \Lambda_{\mu}{}^{\nu} & = g_{\mu \lambda}g^{\nu \gamma}\Lambda^{\lambda}{}_{\gamma} \\
  & = g_{\mu \lambda}g^{\nu \gamma} \frac{\partial x^{'\lambda}}{\partial x^{\gamma}} \\
  & = \frac{\partial(g_{\mu \lambda}x^{'\lambda})}{\partial(g^{\nu \gamma}x^{\gamma})} \\
  & \neq \frac{\partial x^{'}_{\mu}}{\partial x_{\nu}}
-\end{align}$$
+\end{align}$$ 
