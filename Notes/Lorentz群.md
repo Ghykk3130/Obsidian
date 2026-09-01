@@ -113,5 +113,6 @@ $$\begin{align}
 \Lambda_{\mu}{}^{\nu} & = g_{\mu \lambda}g^{\nu \gamma}\Lambda^{\lambda}{}_{\gamma} \\
  & = g_{\mu \lambda}g^{\nu \gamma} \frac{\partial x^{'\lambda}}{\partial x^{\gamma}} \\
  & = \frac{\partial(g_{\mu \lambda}x^{'\lambda})}{\partial(g^{\nu \gamma}x^{\gamma})} \\
- & \neq \frac{\partial x^{'}_{\mu}}{\partial x_{\nu}}
+ & = \frac{\partial(g_{\mu \lambda}x^{' \lambda})}{\partial(g_{\nu \gamma}x^{\gamma})} \\
+ & = \frac{\partial x^{'}_{\mu}}{\partial x_{\nu}}
 \end{align}$$ 
