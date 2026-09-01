@@ -38,7 +38,8 @@ $$\begin{align}
 令Lorentz变换为$\Lambda$。在进行变换时，保持矢量实体的不变性，而基矢量变化$\mathbf{e}_{\mu}\rightarrow \mathbf{e}_{\mu}^{'}$。那么：
 $$\begin{align}
  & \mathbf{x}= x^{\mu}\mathbf{e}_{\mu}=x^{'\mu}\mathbf{e}_{\mu}^{'} \\
-\implies & x^{'\mu}= x^{\nu}\langle \mathbf{e}_{\nu},\mathbf{e}^{'\mu}\rangle= \Lambda^{\mu}{}_{\nu}x^{\nu}
+\implies & x^{\mu}\mathbf{e}^{'}_{\nu}\mathbf{e}^{'\nu}(\mathbf{e}_{\mu})=x^{'\mu}\mathbf{e}^{'}_{\nu}\mathbf{e}^{'\nu}(\mathbf{e}^{'}_{\mu} )=x^{'\mu}\mathbf{e}^{'}_{\nu}\delta^{\nu}{}_{\mu}=x^{'\mu}\mathbf{e}^{'}_{\mu}\\
 \end{align}$$
+可以定义$\mathbf{e}^{'\nu}(\mathbf{e}_{\mu})=\Lambda^{\nu}{_{\mu}}$。那么$x^{'\mu}=\Lambda^{\mu}{_{\nu}}x^{\nu}$。
 
 
