@@ -94,7 +94,7 @@ $$\begin{align}
 dx^{'\mu} & = \frac{\partial x^{'\mu}}{\partial x^{\nu} }dx^{\nu} \\
  & = \Lambda^{\mu}{}_{\lambda} \frac{\partial x^{\lambda}}{\partial x^{\nu}}dx^{\nu} \\
  & = \Lambda^{\mu}{}_{\nu}dx^{\nu} \\
-\implies \frac{\partial x^{'\mu}}{\partial x^{\nu}} & = \Lambda^{\mu}{}_{\nu}
+\implies  & \boxed{\frac{\partial x^{'\mu}}{\partial x^{\nu}}  = \Lambda^{\mu}{}_{\nu}}
 \end{align}$$
 ## Ex:
 $$\begin{align}
@@ -113,21 +113,50 @@ $$\begin{align}
 \implies & g_{\mu \nu}\Lambda^{\nu}{}_{\eta}\Lambda^{\mu}{}_{\gamma}=g_{\gamma \eta} \\
 \implies & g_{\nu \mu}\Lambda^{\nu}{}_{\eta}\Lambda^{\mu}{}_{\gamma}=g_{\eta \gamma}
 \end{align}$$
+或者，等价地来说，我们有：
+$$\begin{align}
+ & x^{'}_{\mu}x^{'\mu}=x_{\mu}x^{\mu} \\
+\implies & x^{'}_{\mu}g^{\mu \gamma}x^{'}_{\gamma}=x_{\mu}g^{\mu \gamma}x_{\gamma} \\
+\implies & \Lambda_{\mu}{}^{\sigma}x_{\sigma}g^{\mu \gamma}\Lambda_{\gamma}{}^{\rho}=x_{\mu}g^{\mu \gamma}x_{\gamma} \\
+\implies & g^{\mu \gamma}\Lambda_{\mu}{}^{\sigma}\Lambda_{\gamma}{}^{\rho}=g^{\sigma \rho}
+\end{align}$$
 
->[!Note] Definition 2.1
+>[!Note] Definition 3.1
 >A Lorentz transformation is a 2-tensor $\Lambda$ such that:
 >$$g_{\nu \mu}\Lambda^{\nu}{}_{\eta}\Lambda^{\mu}{}_{\gamma}=g_{\eta \gamma}$$
+>Or:
+>$$g^{\nu \mu}\Lambda_{\nu}{}^{\eta}\Lambda_{\mu}{}^{\gamma}=g^{\eta \gamma}$$
 
-可以证明$(\Lambda ^{-1})^{\mu}{}_{\nu}=\Lambda_{\nu}{}^{\mu}$。我们有：
+我们来研究$\Lambda ^{-1}$。可以证明$(\Lambda ^{-1})^{\mu}{}_{\nu}=\Lambda_{\nu}{}^{\mu}$。我们有：
 $$\begin{align}
 \Lambda_{\nu}{}^{\mu}\Lambda^{\nu}{}_{\rho} & = g_{\nu \alpha}g^{\mu \beta}\Lambda^{\alpha}{}_{\beta}\Lambda^{\nu}{}_{\rho} \\
  & = g^{\mu \beta}g_{\beta \rho} \\
  & = \delta^{\mu}{}_{\rho}
 \end{align}$$
-
 >[!Success] Proposition 3.2
 >$$(\Lambda ^{-1})^{\mu}{}_{\nu}=\Lambda_{\nu}{}^{\mu}$$
 
-注意，这里并不是说这两个张量相等。而只是它们的component相等。其中，$(\Lambda ^{-1})^{\mu}{}_{\nu}:V \times V\rightarrow \mathbb{R},\ \Lambda_{\nu}{}^{\mu}:V^{*}  \times V^{*}\rightarrow \mathbb{R}$，不可能是同一个张量。
+注意，这里不是说两个张量相等。只是它们component的值相等。这两个张量一个在$V \times V^{*}\rightarrow \mathbb{R}$，另一个在$V^{*}\times V\rightarrow \mathbb{R}$。
 
+接下来我们定义张量转置：
+
+>[!Note] Definition 3.2
+>Given $\Lambda:V^{}\times V^{*} \rightarrow \mathbb{R}$, define its transpose as $\Lambda^{T}:V^{*}\times V^{}\rightarrow \mathbb{R},\ (\Lambda^{T})_{\mu}{}^{\nu}=\Lambda^{\nu}{}_{\mu}$
+
+那么$g_{\mu \nu}\Lambda^{\mu}{}_{\gamma}\Lambda^{\nu}{}_{\rho}=g_{\gamma \rho}$可以等价写为：
+$$\begin{align}
+ & (\Lambda^{T})_{\gamma}{}^{\mu}g_{\mu \nu}\Lambda^{\nu}{}_{\rho}=g_{\gamma \rho} \\
+\implies & \Lambda^{T}g\Lambda=g
+\end{align}$$
+我们可以证明，Lorentz变换构成一个群。例如我们可以验证逆元性质，证明$\Lambda ^{-1}$仍然是Lorentz变换：
+$$\begin{align}
+ & g_{\mu \nu}\Lambda^{\mu}{}_{\gamma}\Lambda^{\nu}{}_{\rho}=g_{\gamma \rho} \\
+\implies & g_{\mu \nu}\Lambda^{\mu}{}_{\gamma}\Lambda^{\nu}{}_{\rho}(\Lambda ^{-1})^{\gamma}{}_{\eta}(\Lambda ^{-1})^{\rho}{}_{\phi}=g_{\gamma \rho}(\Lambda ^{-1})^{\gamma}{}_{\eta}(\Lambda ^{-1})^{\rho}{}_{\phi} \\
+\implies & g_{\mu \nu}\delta^{\mu}{}_{\eta}\delta^{\nu}{}_{\phi}=g_{\gamma \rho}(\Lambda ^{-1})^{\gamma}{}_{\eta}(\Lambda ^{-1})^{\rho}{}_{\phi} \\
+\implies & g_{\gamma \rho}(\Lambda ^{-1})^{\gamma}{}_{\eta}(\Lambda ^{-1})^{\rho}{}_{\phi}=g_{\eta \phi}
+\end{align}$$
+将这个群称为Lorentz群，记为$O(1,3)$，表示在Minkowski度规下垂直的矩阵。其中，满足$\text{det}(\Lambda)=+1$的称为proper Lorentz transformation。可以证明proper Lorentz变换构成一个子群，记为$SO(1,3)$。
+## Ex:
+
+宇称算符$\mathcal{P}=\text{diag}(1,-1,-1,-1)$，时间反演$\mathcal{T}=\text{diag}(-1,1,1,1)$都属于improper Lorentz transformation。
 
