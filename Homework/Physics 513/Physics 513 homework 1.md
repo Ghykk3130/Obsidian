@@ -196,3 +196,9 @@ q^{2} & =(E_{4}-m_{2})^{2}-(E_{4}^{2}-m_{4}^{2}) \\
 \end{align}$$
 ## (f)
 
+Let $E_{1},E_{2}$ be the energy of 1, 2 in the lab frame. Then $(p_{1}+p_{2})^{2}$ is the square of the total 4-momentum. Since $(p_{1}+p_{2})^{2}$ is an invariant, and the total 4-momentum in the cms is just $(E_{\text{cms}},0)$, we have:
+$$\begin{align}
+(p_{1}+p_{2})^{2}=E^{2}_{\text{cms}}-0=E^{2}_{\text{cms}}=s
+\end{align}$$
+Now it is clear from the graph that:
+$$\sqrt{ \sum_{\mu=1}^{3}q_{\mu}q^{\mu} }= 2 \sqrt{ \sum_{\mu=1}^{3}p^{'}_{\mu}p^{'\mu} }\sin \frac{\theta^{'}}{2}$$
