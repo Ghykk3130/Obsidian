@@ -174,4 +174,25 @@ $$\begin{align}
 \implies & E^{2}_{\text{cms}}(p^{'2}+m_{2}^{2})=m_{2}^{2}(E^{2}_{\text{cms}}+p^{2}_{\text{lab}}) \\
 \implies & p^{'}= \frac{m_{2}p_{\text{lab}}}{E_{\text{cms}}}
 \end{align}$$
+## (e)
+
+From the conservation of 4-momentum, we have:
+$$\begin{align}
+ & p_{1}^{\mu}+p_{2}^{\mu}=p_{3}^{\mu}+p_{4}^{\mu} \\
+\implies & p_{1}^{\mu}-p_{3}^{\mu}=p_{4}^{\mu}-p_{2}^{\mu}
+\end{align}$$
+Then:
+$$\begin{align}
+q^{2} & = (p_{4}-p_{2})_{\mu}(p_{4}-p_{2})^{\mu} 
+\end{align}$$
+Obviously, $p_{2}^{\mu}=(m_{2},0,0,0)$. $p_{4}^{0}=E_{4}$. Then:
+$$\begin{align}
+q^{2} & = (E_{4}-m_{2})^{2}-\sum_{\lambda=1}^{3}(p_{4}^{\lambda})^{2}
+\end{align}$$
+We have $\sum_{\lambda=1}^{3}(p_{4}^{\lambda})^{2}=E_{4}^{2}-m_{4}^{2}$. Then:
+$$\begin{align}
+q^{2} & =(E_{4}-m_{2})^{2}-(E_{4}^{2}-m_{4}^{2}) \\
+ & = -2m_{4}(E_{4}-m_{4})
+\end{align}$$
+## (f)
 
