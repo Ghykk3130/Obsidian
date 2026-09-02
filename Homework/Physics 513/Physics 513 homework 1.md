@@ -106,4 +106,34 @@ $$\begin{align}
  & = 248.55\ \text{fm}
 \end{align}$$
 The length scale that would be typically probed would be around $248.55\ \text{fm}$.
+# Problem 5
+## (a)
+
+Lab frame:
+![[f7de5dbc610573c63a4baa02fac8a524.jpg|centering|300]]
+COM frame:
+![[1efa853734d938604c7bf46a7bd6aa43.jpg|centering|300]]
+## (b)
+
+The 3-momentum of 1 is given by:
+$$\begin{align}
+ & E_{\text{lab}}^{2}-p_{\text{lab}}^{2}=m_{1}^{2} \\
+\implies & p_{\text{lab}}=\sqrt{ E^{2}_{\text{lab}}-m_{1}^{2} }
+\end{align}$$
+The 3-momentum of 2 is clearly zero. The energy of 2 is just $m_{2}$. Then the total 4-momentum is $(E_{\text{lab}}+m_{2},p_{\text{lab}})$.
+
+After the collision, the 4-momentum in the lab frame is still unchanged. The the 4-momentum in the cms is $(E_{\text{cms}},0)$. Then:
+$$\begin{align}
+  E_{\text{cms}}^{2} & = (E_{\text{lab}}+m_{2})^{2}-p_{\text{lab}}^{2}
+ \\
+ & = m_{1}^{2}+m_{2}^{2}+2m_{2}E_{\text{lab}}\end{align}$$
+## (c)
+
+If we collide beams in their cms, we know that before and after the collision, the total momenta are zero. Therefore, by the invariant of 4-momentum, we have:
+$$\begin{align}
+ & E_{\text{before}}^{2}=E^{2}_{\text{after}} \\
+\implies & E_{\text{after}}=E_{\text{before}}
+\end{align}$$
+If $E_{\text{before}}\sim \mathcal{O}(E_{\text{lab}})$, then $E_{\text{after}}\sim \mathcal{O}(E_{\text{lab}})$. However, if we expose a stationary target to a high energy beam, assuming that $E_{\text{lab}}$ is large, we have $E_{\text{cms}}\sim \mathcal{O}(\sqrt{ E_{\text{lab}} })$. This means that in this case, a lot of energy goes into the particle motion instead of the energy after collision. But in the first case, nothing goes into particle motion, so the collision is more efficient. 
+## (d)
 
