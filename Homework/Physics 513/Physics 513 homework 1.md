@@ -215,5 +215,65 @@ $$\begin{align}
 t=q^{2}= -4 \mathscr{p}^{'2}\sin ^{2} \frac{\theta^{'}}{2 }
 \end{align}$$
 Or adopt the notation in the problem to write $t= -4p^{'2}\sin ^{2} \frac{\theta^{'}}{2}$
+# Problem 6
+## (a)
+$$\begin{align}
+\partial_{\mu}\rho & = \partial_{\mu}(x_{\nu}x^{\nu}) \\
+ & = (\partial_{\mu}x_{\nu})x^{\nu}+ x_{\nu}\partial_{\mu}x^{\nu} \\
+ & = g_{\nu \sigma}(\partial_{\mu}x^{\sigma})x^{\nu}+x_{\nu}\delta_{\mu}{}^{\nu} \\
+ & = g_{\nu \sigma} \delta_{\mu}{}^{\sigma}x^{\nu}+ x_{\mu} \\
+ & = g_{\mu \nu}x^{\nu}+x_{\mu}
+\end{align}$$
+## (b)
+$$\begin{align}
+\partial_{\mu}\partial_{\nu}\rho & = \partial_{\mu}(g_{\nu \lambda}x^{\lambda}+x_{\nu}) \\
+ & = g_{\nu \lambda}\delta_{\mu}{}^{\lambda}+ \partial_{\mu}(g_{\nu \lambda}x^{\lambda}) \\
+ & = g_{\mu \nu}+g_{\nu \lambda}\delta_{\mu}{}^{\lambda} \\
+ & = 2g_{\mu \nu}
+\end{align}$$
+## (c)
+$$\begin{align}
+\Box\rho & = \partial^{\mu}\partial_{\mu}(x_{\nu}x^{\nu}) \\
+ & = \partial^{\mu}(g_{\mu \nu}x^{\nu}+x_{\mu}) \\ & = \partial^{\mu}(g_{\mu \nu}x^{\nu})+\partial^{\mu}x_{\mu} \\
 
+ & = g^{\mu \sigma}\partial_{\sigma}(g_{\mu \nu}x^{\nu})+4 \\
+ & = g^{\mu \sigma}g_{\mu \nu}\delta_{\sigma}{}^{\nu}+4 \\
+ & = g^{\mu \nu}g_{\nu \mu}+4 \\ & = \delta^{\mu}{}_{\mu}+4 \\
+ 
+ & = 4+4 \\
+ & =8
+\end{align}$$
+## (d)
+$$\begin{align}
+\Box^{2}\rho^{2} & = \Box \Box(\rho^{2}) \\
+ & = \Box(2\rho\Box\rho) \\
+ & = 16\Box\rho \\
+ & = 128
+\end{align}$$
+## (e)
+$$\begin{align}
+\partial_{\sigma}(x^{\mu}\partial_{\mu}f(\rho)) & = \partial_{\sigma}(x^{\mu}f^{'}\partial_{\mu}\rho) \\
+ & = (\partial_{\sigma}x^{\mu})f^{'}\partial_{\mu}\rho+x^{\mu}(\partial_{\mu}\rho)(\partial_{\sigma}f^{'})+x^{\mu}f^{'}\partial_{\sigma}  \partial_{\mu}\rho \\
+ & = \delta_{\sigma}{^{\mu}}f^{'}\partial_{\mu}\rho +x^{\mu}(\partial_{\mu}\rho)f^{''}\partial_{\sigma}\rho+x^{\mu}f^{'}\partial_{\sigma}\partial_{\mu}\rho \\
+ & = f^{'}(g_{\sigma \mu}x^{\mu}+x_{\sigma})+f^{''}x^{\mu}(g_{\mu \nu }x^{\nu}+x_{\mu} )(g_{\sigma \lambda}x^{\lambda}+x_{\sigma})+2f^{'}x^{\mu}g_{\sigma \mu} \\
+ & = 3f^{'}g_{\sigma \mu}x^{\mu}+f^{'}x_{\sigma}+f^{''}(x_{\nu}x^{\nu}+x_{\mu}x^{\mu})(g_{\sigma \lambda}x^{\lambda}+x_{\sigma}) \\
+ & = 3f^{'}g_{\sigma \mu}x^{\mu}+f^{'}x_{\sigma}+2\rho f^{''}(g_{\sigma \lambda }x^{\lambda}+x_{\sigma}) \\
+ &= 3f^{'}g_{\sigma \mu}x^{\mu}+f^{'}x_{\sigma}+2\rho f^{''}x_{\sigma}+2\rho f^{''}g_{\sigma \mu}x^{\mu}
+\end{align}$$
+## (f)
+
+It suffices to show that $\Box\left(  \frac{1}{\rho} \right)=0$. We have:
+$$\begin{align}
+\Box\left(  \frac{1}{\rho} \right) & = \partial^{\mu}\partial_{\mu}\left(  \frac{1}{\rho} \right) \\
+ & = \partial^{\mu}\left( - \frac{1}{\rho^{2}}\partial_{\mu}\rho \right) \\
+ & = \frac{2}{\rho^{3}}(\partial^{\mu}\rho)(\partial_{\mu}\rho)- \frac{1}{\rho^{2}}\partial^{\mu}\partial_{\mu}\rho \\
+ & = \frac{2}{\rho^{3}}g^{\mu \nu}(\partial_{\nu}\rho)(\partial_{\mu}\rho)- \frac{8}{\rho^{2}} \\
+ & = \frac{2}{\rho^{3}}g^{\mu \nu}(g_{\nu \lambda}x^{\lambda}+x_{\nu})(\partial_{\mu}\rho)- \frac{8}{\rho^{2}} \\
+ & = \frac{2}{\rho^{3}}(x^{\mu}+x^{\mu})(\partial_{\mu}\rho)- \frac{8}{\rho^{2}} \\
+ & = \frac{4}{\rho^{3}}x^{\mu}(g_{\mu \nu}x^{\nu}+x_{\mu})- \frac{8}{\rho^{2}} \\
+ & = \frac{4}{\rho^{3}}x^{\mu}2x_{\mu}- \frac{8}{\rho^{2}} \\
+ & = \frac{8}{\rho^{2}}- \frac{8}{\rho^{2}} \\
+ & =0
+\end{align}$$
+It's also obvious that $\Box c_{2}=0$. Then by linearity, we have $\Box\left(  \frac{c_{1}}{\rho}+c_{2} \right)=0$
 
