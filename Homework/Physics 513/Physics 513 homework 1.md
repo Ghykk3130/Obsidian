@@ -68,7 +68,7 @@ p_{i\mu}=\begin{pmatrix}
 p_{10} & p_{11} & p_{12} & p_{13} \\
 p_{20} & p_{21} & p_{22} & p_{23} \\p_{30} & p_{31} & p_{32} & p_{33} \\
 
-p_{40} & p_{41} & p_{42} & p_{42} \\
+p_{40} & p_{41} & p_{42} & p_{43} \\
 
 \end{pmatrix}
 \end{align}$$
@@ -99,13 +99,14 @@ $$E_{CM}=\sqrt{ 2m_{e}c^{2}(E+m_{e}c^{2}) }$$
 For photons, we have: $E^{2}-0=p^{2}\implies E=p$. In the COM frame, since the total momentum is zero, the magnitude of the momenta of the two photons are equal. Then their energy are equal. We have:
 $$E_{ph}= \frac{E_{CM}}{2}= \sqrt{ \frac{m_{e}(E+m_{e})}{2} }$$
 ## (d)
-
+We have:
+$$E_{\text{ph}}\approx \sqrt{  \frac{1}{2}\times 0.511\times(50+0.511) }MeV\approx 3.59\ \text{MeV}$$
 $$\begin{align}
-\lambda & = \frac{h}{p} \\
- & = \frac{h}{E} \\
- & = 248.55\ \text{fm}
+\lambda & = \frac{h}{p_{\text{ph}}} \\
+ & = \frac{hc}{E_{\text{ph}}} \\
+ & = 346.17\ \text{fm}
 \end{align}$$
-The length scale that would be typically probed would be around $248.55\ \text{fm}$.
+The length scale that would be typically probed would be around $346.17\ \text{fm}$.
 # Problem 5
 ## (a)
 
@@ -246,10 +247,15 @@ $$\begin{align}
 ## (d)
 $$\begin{align}
 \Box^{2}\rho^{2} & = \Box \Box(\rho^{2}) \\
- & = \Box(2\rho\Box\rho) \\
- & = 16\Box\rho \\
- & = 128
-\end{align}$$
+  & = \Box(\partial^{\mu}\partial_{\mu}\rho^{2}) \\
+ & = \Box(\partial^{\mu}(2\rho \partial_{\mu}\rho)) \\
+ & = 2 \Box((\partial^{\mu}\rho)(\partial_{\mu}\rho)+\rho\Box\rho) \\
+ & = 2 \Box(g^{\mu \nu}(\partial_{\nu}\rho)(\partial_{\mu}\rho)+8\rho) \\
+ & = 2\Box(g^{\mu \nu}(g_{\nu \lambda}x^{\lambda}+x_{\nu})(\partial_{\mu}\rho)+8\rho)  \\
+ & = 2\Box(2x^{\mu}(g_{\mu \nu}x^{\nu}+x_{\mu})+8\rho) \\
+ & = 2\Box(4\rho + 8 \rho) \\
+ & = 24 \Box\rho \\
+ & = 192\end{align}$$
 ## (e)
 $$\begin{align}
 \partial_{\sigma}(x^{\mu}\partial_{\mu}f(\rho)) & = \partial_{\sigma}(x^{\mu}f^{'}\partial_{\mu}\rho) \\
@@ -258,7 +264,8 @@ $$\begin{align}
  & = f^{'}(g_{\sigma \mu}x^{\mu}+x_{\sigma})+f^{''}x^{\mu}(g_{\mu \nu }x^{\nu}+x_{\mu} )(g_{\sigma \lambda}x^{\lambda}+x_{\sigma})+2f^{'}x^{\mu}g_{\sigma \mu} \\
  & = 3f^{'}g_{\sigma \mu}x^{\mu}+f^{'}x_{\sigma}+f^{''}(x_{\nu}x^{\nu}+x_{\mu}x^{\mu})(g_{\sigma \lambda}x^{\lambda}+x_{\sigma}) \\
  & = 3f^{'}g_{\sigma \mu}x^{\mu}+f^{'}x_{\sigma}+2\rho f^{''}(g_{\sigma \lambda }x^{\lambda}+x_{\sigma}) \\
- &= 3f^{'}g_{\sigma \mu}x^{\mu}+f^{'}x_{\sigma}+2\rho f^{''}x_{\sigma}+2\rho f^{''}g_{\sigma \mu}x^{\mu}
+ &= 3f^{'}g_{\sigma \mu}x^{\mu}+f^{'}x_{\sigma}+2\rho f^{''}x_{\sigma}+2\rho f^{''}g_{\sigma \mu}x^{\mu} \\
+ & = 4f^{'}x_{\sigma}+4\rho f^{''}x_{\sigma}
 \end{align}$$
 ## (f)
 
