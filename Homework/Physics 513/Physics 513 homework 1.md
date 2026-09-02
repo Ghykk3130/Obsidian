@@ -137,3 +137,41 @@ $$\begin{align}
 If $E_{\text{before}}\sim \mathcal{O}(E_{\text{lab}})$, then $E_{\text{after}}\sim \mathcal{O}(E_{\text{lab}})$. However, if we expose a stationary target to a high energy beam, assuming that $E_{\text{lab}}$ is large, we have $E_{\text{cms}}\sim \mathcal{O}(\sqrt{ E_{\text{lab}} })$. This means that in this case, a lot of energy goes into the particle motion instead of the energy after collision. But in the first case, nothing goes into particle motion, so the collision is more efficient. 
 ## (d)
 
+In the cms, set the energy of 1 to be $E_{1}$, the energy of 2 to be $E_{2}$. Then we have:
+$$\begin{align}
+ & E_{1}^{2}-p^{'2}=m_{1}^{2} \tag{1} \\
+ & E_{2}^{2}-p^{'2}=m_{2}^{2}\tag{2}
+\end{align}$$
+From the derivation of (b) we know that:
+$$E^{2}_{\text{cms}}=(E_{\text{lab}}+m_{2})^{2}-p_{\text{lab}}^{2} \tag{3}$$
+From the conservation of energy, we know that:
+$$\begin{align}
+E_{1}+E_{2}=E_{\text{cms}} \tag{4}
+\end{align}$$
+From (2), we have:
+$$E_{2}=\sqrt{ p^{'2}+m_{2}^{2} }$$
+Substitute into (4) to get:
+$$\begin{align}
+E_{1}=E_{\text{cms}}-E_{2}=E_{\text{cms}}-\sqrt{ p^{'2}+m_{2}^{2} }
+\end{align}$$
+Substitute into (1) to get:
+$$(E_{\text{cms}}-\sqrt{ p^{'2}+m_{2}^{2} })^{2}-p^{'2}=m_{1}^{2}\tag{5}$$
+We also know that:
+$$E_{\text{lab}}=\sqrt{ p_{\text{lab}}^{2}+m_{1}^{2} }$$
+Substitute this into (3) to get:
+$$E_{\text{cms}}^{2}=(\sqrt{ p_{\text{lab}}^{2}+m_{1}^{2} }+m_{2})^{2}-p_{\text{lab}}^{2} \tag{6}$$
+It suffices to eliminate $m_{1}$ from (5) and (6). From (6) we know:
+$$\begin{align}
+ & (\sqrt{ p^{2}_{\text{lab}}+m_{1}^{2} }+m_{2})^{2}=E_{\text{cms}}^{2}+p_{\text{lab}}^{2} \\
+\implies & \sqrt{ p^{2}_{\text{lab}}+m_{1}^{2} }=\sqrt{ E^{2}_{\text{cms}}+p^{2}_{\text{lab}} }-m_{2} \\
+\implies & m_{1}^{2}=(\sqrt{ E^{2}_{\text{cms}}+p_{\text{lab}}^{2} }-m_{2})^{2}-p^{2}_{\text{lab}}
+\end{align}$$
+Then substitute this into (5) to get:
+$$\begin{align}
+ & (E_{\text{cms}}-\sqrt{ p^{'2}+m_{2}^{2} })^{2}-p^{'2}=(\sqrt{ E^{2}_{\text{cms}}+p_{\text{lab}}^{2} }-m_{2})^{2}-p^{2}_{\text{lab}} \\
+\implies & E_{\text{cms}}^{2}+m_{2}^{2}-2E_{\text{cms}}\sqrt{ p^{'2}+m_{2}^{2} }=E^{2}_{\text{cms}}+m_{2}^{2}-2m_{2}\sqrt{ E^{2}_{\text{cms}} +p^{2}_{\text{lab}}}  \\
+\implies & E_{\text{cms}}\sqrt{ p^{'2}+m_{2}^{2} }=m_{2}\sqrt{ E^{2}_{\text{cms}}+p^{2}_{\text{lab}} } \\
+\implies & E^{2}_{\text{cms}}(p^{'2}+m_{2}^{2})=m_{2}^{2}(E^{2}_{\text{cms}}+p^{2}_{\text{lab}}) \\
+\implies & p^{'}= \frac{m_{2}p_{\text{lab}}}{E_{\text{cms}}}
+\end{align}$$
+
