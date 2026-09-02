@@ -62,6 +62,48 @@ B^{\lambda}{}_{\rho}D^{\alpha}{}_{\mu}A^{\mu}{}_{\lambda}C^{\rho}{}_{\alpha} & =
 $$\epsilon^{0123}=1,\ \epsilon^{1230}=-1,\ \epsilon^{1213}=0$$
 ## (b)
 
+Observe that $p_{i\mu}$ is a matrix with zero determinant. Since:
+$$\begin{align}
+p_{i\mu}=\begin{pmatrix}
+p_{10} & p_{11} & p_{12} & p_{13} \\
+p_{20} & p_{21} & p_{22} & p_{23} \\p_{30} & p_{31} & p_{32} & p_{33} \\
 
+p_{40} & p_{41} & p_{42} & p_{42} \\
 
+\end{pmatrix}
+\end{align}$$
+We perform the third type of elementary row operation: we add row 1 to row 4, then row 2 to row 4, then row 3 to row 4. Then we obtain a matrix with a row of zeros since $\sum_{i}p_{i\mu}=0$. Recall that the third type of elementary row operation does not change the determinant. Then $\det(p_{i\mu})=0$.
+
+Recall that $\det(p_{i\mu})=\epsilon^{\mu \nu \rho \sigma}p_{1\mu}p_{2\nu}p_{3\rho}p_{4\sigma}$. Therefore $\epsilon^{\mu \nu \rho \sigma}p_{1\mu}p_{2\nu}p_{3\rho}p_{4\sigma}=0$.
+# Problem 4
+## (a)
+
+The 3-momentum of the positron given by:
+$$\begin{align}
+ & E^{2}-p_{p}^{2}=m_{e}^{2}\implies p_{p}=\sqrt{ E^{2}-m_{e}^{2} }
+\end{align}$$
+Since the electron is stationary, the total 3-momentum of the system is:
+$$P=p_{p}=\sqrt{ E^{2}-m_{e}^{2} }$$
+The energy of the electron is clearly $E_{e}=m_{e}$. Then the total 4-momentum of the system is $(E+m_{e},\mathbf{P})$. 
+
+By the conservation of energy and the conservation of momentum, the 4-momentum does not change after the collision. Since the 4-momentum is an invariant, and the total momentum in the COM frame is zero, we have:
+$$\begin{align}
+ & E_{CM}^{2}-0= (E+m_{e})^{2}-P^{2} \\
+\implies & E_{CM}=\sqrt{ (E+m_{e})^{2}-(E^{2}-m_{e}^{2}) }=\sqrt{ 2m_{e}(E+m_{e}) }
+\end{align}$$
+## (b)
+
+$$E_{CM}=\sqrt{ 2m_{e}c^{2}(E+m_{e}c^{2}) }$$
+## (c)
+
+For photons, we have: $E^{2}-0=p^{2}\implies E=p$. In the COM frame, since the total momentum is zero, the magnitude of the momenta of the two photons are equal. Then their energy are equal. We have:
+$$E_{ph}= \frac{E_{CM}}{2}= \sqrt{ \frac{m_{e}(E+m_{e})}{2} }$$
+## (d)
+
+$$\begin{align}
+\lambda & = \frac{h}{p} \\
+ & = \frac{h}{E} \\
+ & = 248.55\ \text{fm}
+\end{align}$$
+The length scale that would be typically probed would be around $248.55\ \text{fm}$.
 

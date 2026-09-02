@@ -160,3 +160,4 @@ $$\begin{align}
 
 宇称算符$\mathcal{P}=\text{diag}(1,-1,-1,-1)$，时间反演$\mathcal{T}=\text{diag}(-1,1,1,1)$都属于improper Lorentz transformation。
 
+
