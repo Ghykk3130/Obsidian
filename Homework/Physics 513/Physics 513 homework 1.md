@@ -200,5 +200,20 @@ Let $E_{1},E_{2}$ be the energy of 1, 2 in the lab frame. Then $(p_{1}+p_{2})^{2
 $$\begin{align}
 (p_{1}+p_{2})^{2}=E^{2}_{\text{cms}}-0=E^{2}_{\text{cms}}=s
 \end{align}$$
-Now it is clear from the graph that:
-$$\sqrt{ \sum_{\mu=1}^{3}q_{\mu}q^{\mu} }= 2 \sqrt{ \sum_{\mu=1}^{3}p^{'}_{\mu}p^{'\mu} }\sin \frac{\theta^{'}}{2}$$
+Now we work in the cms. Assume that in the cms, the 4-momentum of the four particles are $(\mathcal{E}_{1}, \vec{\mathscr{p}}),\ (\mathcal{E}_{2},- \vec{\mathscr{p}})$ before the collision, and $(\mathcal{E}_{3}, \vec{\mathscr{p}^{'}}), (\mathcal{E}_{4},- \vec{\mathscr{p}^{'}})$ after the collision. 
+
+Then by the conservation of energy, we have:
+$$\begin{align}
+ & \mathcal{E}_{1}+\mathcal{E}_{2}=\mathcal{E}_{3}+\mathcal{E}_{4} \\
+\implies & \sqrt{ m_{1}^{2}+\mathscr{p}_{}^{2} }+\sqrt{ m_{2}^{2}+\mathscr{p_{}}^{2} }=\sqrt{ m_{1}^{2}+\mathscr{p}^{'2} }+\sqrt{ m_{2}^{2}+\mathscr{p}^{'2} } \\
+\implies & \mathscr{p}=\mathscr{p}^{'}
+\end{align}$$
+Then $q=(\mathcal{E}_{1}-\mathcal{E}_{3},  \vec{\mathscr{p}}  - \vec{\mathscr{p}^{'}} )=(0, \vec{\mathscr{p}}- \vec{{\mathscr{p}}^{'}})$. Then it's clear from the graph that $|\vec{\mathscr{p}}-\vec{\mathscr{p}^{'}}|=2 \mathscr{p}^{'}\sin \frac{\theta^{'}}{2}$. 
+![[85f1cc43893fcc0332cb3aedc78da08d.jpg|centering|300]]
+Then:
+$$\begin{align}
+t=q^{2}= -4 \mathscr{p}^{'2}\sin ^{2} \frac{\theta^{'}}{2 }
+\end{align}$$
+Or adopt the notation in the problem to write $t= -4p^{'2}\sin ^{2} \frac{\theta^{'}}{2}$
+
+
