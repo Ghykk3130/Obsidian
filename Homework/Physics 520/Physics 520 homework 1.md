@@ -2,15 +2,53 @@
 ## (1)
 
 ![[b6b008242f3cc06a5cb15010ad864727.jpg|centering|300]]
+## (2)
 
-给定实空间晶格，可以证明$[T_{{R}},H]=0$。于是可以用$T_{R}$本征矢对角化hamiltonian。猜测本征矢为$e^{ikx}f(x)$，满足$f(x+R)=f(x)$。
+Define the path length along the high-symmetry lines as $s$. Then it is clear from the geometry that from $\Gamma\rightarrow M$, we have $\mathbf{k}=\left(  \frac{s}{\sqrt{ 2 }}, \frac{s}{\sqrt{ 2 }} \right)$. From $M\rightarrow X$, we have $\mathbf{k}=\left( \frac{\pi}{a}, (\sqrt{ 2 }+1) \frac{\pi}{a}-s \right)$. From $X\rightarrow \Gamma$, we have $\mathbf{k}=\left(  ( \sqrt{ 2 }+2) \frac{\pi}{a}-s,0 \right)$.
 
-我们发现，$e^{i(k+G)x}f(x)=e^{ikx}(e^{iGx}f(x))$。令$f^{'}(x)=e^{iGx}f(x)$的话，其实这个本征态也是$e^{ikx}f(x)$的形式。我们不妨将所有对于$k+G$的信息吸收进$f$，即强行规定$k\in\text{FBZ}$。然后通过解Schrodinger方程获得$f$。这样得到的是reduced zone scheme。
+**For $\mathbf{G}=0$:**
 
-代入Schrodinger方程：
-$$\left(  \frac{(p-\hbar k)^{2}}{2m}+V \right)f(x)=Ef(x)$$
-把$f$解出来即可。实际上，固定$k$，$f$有很多解。每个能级是退化的。这些$f$的degeneracy实际上就是刚刚将$k+G$吸收进$k$的degeneracy。
+We have $E= \frac{\hbar^{2}k^{2}}{2m_{e}}$. In $\Gamma\rightarrow M$, we have:
+$$\begin{align}
+E & = \frac{\hbar^{2}}{2m_{e}}s^{2},\ 0\leq s < \sqrt{ 2 } \frac{\pi}{a}
+\end{align}$$
+In $M\rightarrow X$, we have:
+$$E= \frac{\hbar^{2}}{2m_{e}}\left[ \left(  \frac{\pi}{a} \right)^{2}+   \left(  (\sqrt{ 2 }+1) \frac{\pi}{a}-s \right)^{2} \right],\ \sqrt{ 2 } \frac{\pi}{a}\leq s< (\sqrt{ 2 }+1) \frac{\pi}{a}$$
+In $X\rightarrow \Gamma$, we have:
+$$\begin{align}
+E= \frac{\hbar^{2}}{2m_{e}}\left( (\sqrt{ 2 }+2) \frac{\pi}{a}-s  \right)^{2},\ (\sqrt{ 2 }+1) \frac{\pi}{a}\leq s \leq (\sqrt{ 2 }+2) \frac{\pi}{a}
+\end{align}$$
+![[9b95f89639111d180225ad4831bc840b.jpg|centering|300]]
+**For $\mathbf{G}= \frac{2\pi}{a} \hat{\mathbf{x}}:$**
 
-标记为$f_{n}$。每个对应能量$E_{n}$。于是将Bloch态标记为$\ket{n,k}$。
+We have $E= \frac{\hbar^{2}}{2m_{e}}\left[ \left( k_{x}- \frac{2\pi}{a} \right)^{2}+ k_{y}^{2} \right]$. In $\Gamma\rightarrow M$, we have:
+$$E= \frac{\hbar^{2}}{2m_{e}}\left[ \left( \frac{s}{\sqrt{ 2 }} - \frac{2\pi}{a} \right)^{2}+ \left(  \frac{s}{\sqrt{ 2 }}^{2} \right) \right],\ 0\leq s < \sqrt{ 2 } \frac{\pi}{a}$$
+In $M\rightarrow X$, we have:
+$$E= \frac{\hbar^{2}}{2m_{e}} \left[ \frac{\pi^{2}}{a^{2}}+ \left((\sqrt{ 2 }+1) \frac{\pi}{a}-s\right)^{2}\right] ,\ \sqrt{ 2 } \frac{\pi}{a} \leq s< (\sqrt{ 2 }+1) \frac{\pi}{a}$$
+In $X\rightarrow \Gamma$, we have:
+$$\begin{align}
+E= \frac{\hbar^{2}}{2m_{e}}\left(  \sqrt{ 2 } \frac{\pi}{a}-s \right)^{2},\ (\sqrt{ 2 }+1) \frac{\pi}{a}\leq s \leq (\sqrt{ 2 }+2) \frac{\pi}{a}
+\end{align}$$
+![[e397e3110a4f7d58903dd8a32db6c52b.jpg|centering|300]]
+**For $\mathbf{G}= -\frac{2\pi}{a}  \hat{\mathbf{x}}:$**
 
-我们同样也可以不规定$k\in \text{FBZ}$，那么将$e^{ikx}f$代入Schrodinger方程，同样，$f$也可能有几个解，但是没有reduced zone scheme的多。$f$的degeneracy来自两方面：一方面来自于$k+G$引起的degeneracy，另一方面来自于微分方程解的intrinsic degeneracy。在reduced zone schceme中，两个degeneracy都被算进$n$中。在extended zone scheme中，只有第二种degeneracy被算进$n$中，所以看起来能带要少一点。但实际上，把能带全部都折叠到FBZ，是一样多的。
+We have $E= \frac{\hbar^{2}}{2m_{e}}\left[ \left( k_{x}+ \frac{2\pi}{a} \right)^{2}+k_{y}^{2} \right]$. In $\Gamma\rightarrow M$, we have:
+$$E= \frac{\hbar^{2}}{2m_{e}}\left[ \left( \frac{s}{\sqrt{ 2 }} + \frac{2\pi}{a} \right)^{2}+ \left(  \frac{s}{\sqrt{ 2 }}^{2} \right) \right],\ 0\leq s < \sqrt{ 2 } \frac{\pi}{a}$$
+In $M\rightarrow X$, we have:
+$$E= \frac{\hbar^{2}}{2m_{e}} \left[ 9\frac{\pi^{2}}{a^{2}}+ \left((\sqrt{ 2 }+1) \frac{\pi}{a}-s\right)^{2}\right] ,\ \sqrt{ 2 } \frac{\pi}{a} \leq s< (\sqrt{ 2 }+1) \frac{\pi}{a}$$
+In $X\rightarrow \Gamma$, we have:
+$$\begin{align}
+E= \frac{\hbar^{2}}{2m_{e}}\left(  (\sqrt{ 2 }+4) \frac{\pi}{a} -s \right)^{2},\ (\sqrt{ 2 }+1) \frac{\pi}{a}\leq s \leq (\sqrt{ 2 }+2) \frac{\pi}{a}
+\end{align}$$
+![[b1cf1a8d5fa264522ff5eeb605b6d09e.jpg|centering|300]]
+**For $\mathbf{G}= \frac{2\pi}{a} \hat{\mathbf{y}}$:**
+
+We have $E= \frac{\hbar^{2}}{2m_{e}}\left[ k_{x}^{2}+\left( k_{y}- \frac{2\pi}{a} \right)^{2} \right]$. In $\Gamma\rightarrow M$, we have:
+$$E= \frac{\hbar^{2}}{2m_{e}}\left[ \left(  \frac{s}{\sqrt{ 2 }}^{} \right)^{2}+ \left(  \frac{s}{\sqrt{ 2 }}- \frac{2\pi}{a} \right)^{2} \right],\ 0\leq s < \sqrt{ 2 } \frac{\pi}{a}$$
+In $M\rightarrow X$, we have:
+$$E= \frac{\hbar^{2}}{2m_{e}}\left[ \frac{\pi^{2}}{a^{2}}+\left( (\sqrt{ 2 }-1) \frac{\pi}{a}-s \right)^{2} \right] ,\ \sqrt{ 2 } \frac{\pi}{a} \leq s< (\sqrt{ 2 }+1) \frac{\pi}{a}$$
+In $X\rightarrow \Gamma$, we have:
+$$\begin{align}
+E= \frac{\hbar^{2}}{2m_{e}}\left[ \left( (\sqrt{ 2 }+2) \frac{\pi}{a}- s \right)^{2}+ 4 \frac{\pi^{2}}{a^{2}} \right]  ,\ (\sqrt{ 2 }+1) \frac{\pi}{a}\leq s \leq (\sqrt{ 2 }+2) \frac{\pi}{a}
+\end{align}$$
+
