@@ -3161,16 +3161,30 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Homework/Physics 520/Physics 520 homework 1.md",
+                "file": "Notes/Untitled 13.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Physics 520 homework 1"
+              "title": "Untitled 13"
+            }
+          },
+          {
+            "id": "ccca60186663a2a5",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Notes/Untitled 14.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Untitled 14"
             }
           }
         ],
-        "currentTab": 225
+        "currentTab": 226
       }
     ],
     "direction": "vertical"
@@ -3224,7 +3238,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "Bloch定理",
+                "query": "table",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -3353,8 +3367,21 @@
       "obsidian-shellcommands:Shell commands: Custom variables": false
     }
   },
-  "active": "6b27046ab761c6a1",
+  "active": "ccca60186663a2a5",
   "lastOpenFiles": [
+    "Notes/Untitled 13.md",
+    "Notes/Untitled 14.md",
+    "Notes/Viscous flow.md",
+    "Notes/Weyl半金属.md",
+    "Notes/Untitled 12.md",
+    "Notes/Untitled 11.md",
+    "Notes/Untitled 10.md",
+    "Notes/Untitled 9.md",
+    "Notes/Untitled 7.md",
+    "Notes/Untitled 1.md",
+    "Notes/Untitled.md",
+    "Notes/Untitled 5.md",
+    "Homework/Physics 520/Physics 520 homework 1.md",
     "Pictures/b1cf1a8d5fa264522ff5eeb605b6d09e.jpg",
     "Pictures/e397e3110a4f7d58903dd8a32db6c52b.jpg",
     "Pictures/fc619b8eb78cb797e246e1a12c339aca.jpg",
@@ -3362,11 +3389,8 @@
     "Notes/Bloch定理2.md",
     "Notes/Bloch定理.md",
     "Notes/AB效应.md",
-    "Homework/Physics 520/Physics 520 homework 1.md",
     "Homework/Physics 520/Physics 520 homework 1 problem set.md",
     "Homework/Physics 520/Physics 520 homework 0.md",
-    "Notes/Untitled 12.md",
-    "Notes/Untitled 13.md",
     "Pictures/b6b008242f3cc06a5cb15010ad864727.jpg",
     "Pictures/Pasted image 20260902150952.png",
     "Homework/Physics 513/Physics 513 homework 1.md",
@@ -3382,17 +3406,7 @@
     "Homework/Physics 512/Physics 512 homework 6.md",
     "Homework/Physics 520",
     "Homework/Physics 513",
-    "Notes/Maxwell-Boltzmann 分布.md",
-    "Notes/Hubbard模型.md",
-    "Notes/二次量子化.md",
-    "Experimental/Untitled.md",
-    "Notes/GRE物理.md",
-    "Notes/和弦分析.md",
     "Pictures/Pasted image 20260824163107.png",
-    "Pictures/Pasted image 20260824161231.png",
-    "Notes/Pedrottis' introduction to optics.md",
-    "Notes/位力定理.md",
-    "Notes/七和弦.md",
     "Pictures/GRE镇考机经词7.0-乱序（2026年版）.pdf",
     "Pictures/drawing.pdf",
     "Pictures/drawing.html",
