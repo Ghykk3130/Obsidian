@@ -3147,12 +3147,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Homework/Physics 520/Physics 520 homework 1.md",
+                "file": "Notes/Untitled 12.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Physics 520 homework 1"
+              "title": "Untitled 12"
             }
           }
         ],
@@ -3225,8 +3225,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200,
-    "collapsed": true
+    "width": 200
   },
   "right": {
     "id": "9003d078f8dbc4ed",
@@ -3342,9 +3341,10 @@
   },
   "active": "8e5d0964d68d743b",
   "lastOpenFiles": [
+    "Notes/Untitled 13.md",
+    "Homework/Physics 520/Physics 520 homework 1.md",
     "Pictures/b6b008242f3cc06a5cb15010ad864727.jpg",
     "Homework/Physics 520/Physics 520 homework 1 problem set.md",
-    "Homework/Physics 520/Physics 520 homework 1.md",
     "Pictures/Pasted image 20260902150952.png",
     "Homework/Physics 520/Physics 520 homework 0.md",
     "Homework/Physics 513/Physics 513 homework 1.md",
@@ -3374,12 +3374,10 @@
     "Notes/Pedrottis' introduction to optics.md",
     "Notes/位力定理.md",
     "Notes/七和弦.md",
-    "Notes/Untitled 13.md",
     "Notes/电磁系统边界条件.md",
     "Notes/能带磁性.md",
     "Notes/自由电子气磁性.md",
     "Notes/系综.md",
-    "Pictures/Pasted image 20260820185731.png",
     "Pictures/GRE镇考机经词7.0-乱序（2026年版）.pdf",
     "Pictures/drawing.pdf",
     "Pictures/drawing.html",
