@@ -67,4 +67,8 @@ Take $n_{x}=0,\ n_{y}=-2$. Then $E= \frac{\hbar^{2}}{2m_{e}}\left[  k_{x}^{2}+(k
 We do not consider other $\mathbf{G}$'s since other $\mathbf{G}$ would only make the energy higher by at least $\frac{\hbar^{2}}{2m_{e}} \frac{\pi^{2}}{a^{2}}$, which must exceed $\frac{10 \hbar^{2}\pi^{2}}{2m_{e}a^{2}}$. 
 
 Then combine everything together, we obtain the spaghetti diagram:
+![[6e64df5ae183be6ec137d4dc7a093708.jpg|centering|600]]
+Note that here $\mathbf{G}$ is represented in the $\{ \hat{\mathbf{x}}, \hat{\mathbf{y}} \}$ basis, not the $\{ \mathbf{b}_{1},\mathbf{b}_{2} \}$ basis. 
+
+
 
