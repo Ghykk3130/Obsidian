@@ -71,7 +71,7 @@ In $M\rightarrow X$, we have:
 $$E= \frac{\hbar^{2}}{2m_{e}}\left[ 9 \frac{\pi^{2}}{a^{2}}+\left( (\sqrt{ 2 }+1) \frac{\pi}{a}-s \right)^{2} \right],\ \sqrt{ 2 } \frac{\pi}{a} \leq s< (\sqrt{ 2 }+1) \frac{\pi}{a}$$
 In $X\rightarrow \Gamma$, we have:
 $$\begin{align}
-E= \frac{\hbar^{2}}{2m_{e}}\left[ \left( (\sqrt{ 2 }-2) \frac{\pi}{a} -s\right)^{2}  ,\ (\sqrt{ 2 }+1) \frac{\pi}{a}\leq s \leq (\sqrt{ 2 }+2) \frac{\pi}{a}
+E= \frac{\hbar^{2}}{2m_{e}}\left[ \left( (\sqrt{ 2 }+2) \frac{\pi}{a} -s\right)^{2}+ 4 \frac{\pi^{2}}{a^{2}} \right]  ,\ (\sqrt{ 2 }+1) \frac{\pi}{a}\leq s \leq (\sqrt{ 2 }+2) \frac{\pi}{a}
 \end{align}$$
 
 
