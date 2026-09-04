@@ -313,5 +313,5 @@ $$\begin{align}
  & = \frac{8}{\rho^{2}}- \frac{8}{\rho^{2}}  \\
 & =0
 \end{align}$$
-It's also obvious that $\Box c_{2}=0$. Then by linearity, we have $\Box\left(  \frac{c_{1}}{\rho}+c_{2} \right)=0$
+It's also obvious that $\Box c_{2}=0$. Then by linearity, we have $\Box\left(  \frac{c_{1}}{\rho}+c_{2} \right)=0$. 
 
