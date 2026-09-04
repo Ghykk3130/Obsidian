@@ -80,15 +80,15 @@ Recall that $\det(p_{i\mu})=\epsilon^{\mu \nu \rho \sigma}p_{1\mu}p_{2\nu}p_{3\r
 
 The 3-momentum of the positron given by:
 $$\begin{align}
- & E^{2}-p_{p}^{2}=m_{e}^{2}\implies p_{p}=\sqrt{ E^{2}-m_{e}^{2} }
+ & E^{2}-|\mathbf{p}_{p}|^{2}=m_{e}^{2}\implies | \mathbf{p}_{p}|=\sqrt{ E^{2}-m_{e}^{2} }
 \end{align}$$
 Since the electron is stationary, the total 3-momentum of the system is:
-$$P=p_{p}=\sqrt{ E^{2}-m_{e}^{2} }$$
+$$|\mathbf{P}|=|\mathbf{p}_{p}|=\sqrt{ E^{2}-m_{e}^{2} }$$
 The energy of the electron is clearly $E_{e}=m_{e}$. Then the total 4-momentum of the system is $(E+m_{e},\mathbf{P})$. 
 
 By the conservation of energy and the conservation of momentum, the 4-momentum does not change after the collision. Since the 4-momentum is an invariant, and the total momentum in the COM frame is zero, we have:
 $$\begin{align}
- & E_{CM}^{2}-0= (E+m_{e})^{2}-P^{2} \\
+ & E_{CM}^{2}-0= (E+m_{e})^{2}-|\mathbf{P}|^{2} \\
 \implies & E_{CM}=\sqrt{ (E+m_{e})^{2}-(E^{2}-m_{e}^{2}) }=\sqrt{ 2m_{e}(E+m_{e}) }
 \end{align}$$
 ## (b)
@@ -96,7 +96,7 @@ $$\begin{align}
 $$E_{CM}=\sqrt{ 2m_{e}c^{2}(E+m_{e}c^{2}) }$$
 ## (c)
 
-For photons, we have: $E^{2}-0=p^{2}\implies E=p$. In the COM frame, since the total momentum is zero, the magnitude of the momenta of the two photons are equal. Then their energy are equal. We have:
+For photons, we have: $E^{2}-0=|\mathbf{p}|^{2}\implies E=|\mathbf{p}|$. In the COM frame, since the total momentum is zero, the magnitude of the momenta of the two photons are equal. Then their energy are equal. We have:
 $$E_{ph}= \frac{E_{CM}}{2}= \sqrt{ \frac{m_{e}(E+m_{e})}{2} }$$
 ## (d)
 We have:
@@ -118,30 +118,27 @@ COM frame:
 
 The 3-momentum of 1 is given by:
 $$\begin{align}
- & E_{\text{lab}}^{2}-p_{\text{lab}}^{2}=m_{1}^{2} \\
-\implies & p_{\text{lab}}=\sqrt{ E^{2}_{\text{lab}}-m_{1}^{2} }
+ & E_{\text{lab}}^{2}-|\mathbf{p}_{\text{lab}}|^{2}=m_{1}^{2} \\
+\implies & |\mathbf{p}_{\text{lab}}|=\sqrt{ E^{2}_{\text{lab}}-m_{1}^{2} }
 \end{align}$$
-The 3-momentum of 2 is clearly zero. The energy of 2 is just $m_{2}$. Then the total 4-momentum is $(E_{\text{lab}}+m_{2},p_{\text{lab}})$.
+The 3-momentum of 2 is clearly zero. The energy of 2 is just $m_{2}$. Then the total 4-momentum is $(E_{\text{lab}}+m_{2},\mathbf{p}_{\text{lab}})$.
 
 After the collision, the 4-momentum in the lab frame is still unchanged. The the 4-momentum in the cms is $(E_{\text{cms}},0)$. Then:
 $$\begin{align}
-  E_{\text{cms}}^{2} & = (E_{\text{lab}}+m_{2})^{2}-p_{\text{lab}}^{2}
+  E_{\text{cms}}^{2} & = (E_{\text{lab}}+m_{2})^{2}-|\mathbf{p}_{\text{lab}}|^{2}
  \\
  & = m_{1}^{2}+m_{2}^{2}+2m_{2}E_{\text{lab}}\end{align}$$
 ## (c)
 
-If we collide beams in their cms, we know that before and after the collision, the total momenta are zero. Therefore, by the invariant of 4-momentum, we have:
-$$\begin{align}
- & E_{\text{before}}^{2}=E^{2}_{\text{after}} \\
-\implies & E_{\text{after}}=E_{\text{before}}
-\end{align}$$
-If $E_{\text{before}}\sim \mathcal{O}(E_{\text{lab}})$, then $E_{\text{after}}\sim \mathcal{O}(E_{\text{lab}})$. However, if we expose a stationary target to a high energy beam, assuming that $E_{\text{lab}}$ is large, we have $E_{\text{cms}}\sim \mathcal{O}(\sqrt{ E_{\text{lab}} })$. This means that in this case, a lot of energy goes into the particle motion instead of the energy after collision. But in the first case, nothing goes into particle motion, so the collision is more efficient. 
+Assume that the energy is high, so that approximately $E_{\text{cms}}^{2}= 2m_{2}E_{\text{lab}}\implies\left(  \frac{E\text{cms}}{m_{2}}^{} \right)^{2}=2 \frac{E_{\text{lab}}}{m_{2}}$. This means that roughly, the energy required to create particles in the lab frame per mass is almost the square of the energy required to create particles in the COM frame. If the energy is high, then a square would cause a huge energy difference. Therefore, collision in the lab frame is highly inefficient.
 ## (d)
+
+**The brut-force solution:**
 
 In the cms, set the energy of 1 to be $E_{1}$, the energy of 2 to be $E_{2}$. Then we have:
 $$\begin{align}
- & E_{1}^{2}-p^{'2}=m_{1}^{2} \tag{1} \\
- & E_{2}^{2}-p^{'2}=m_{2}^{2}\tag{2}
+ & E_{1}^{2}-|\mathbf{p}^{'}|^{2}=m_{1}^{2} \tag{1} \\
+ & E_{2}^{2}-|\mathbf{p}^{'}|^{2}=m_{2}^{2}\tag{2}
 \end{align}$$
 From the derivation of (b) we know that:
 $$E^{2}_{\text{cms}}=(E_{\text{lab}}+m_{2})^{2}-p_{\text{lab}}^{2} \tag{3}$$
@@ -150,31 +147,67 @@ $$\begin{align}
 E_{1}+E_{2}=E_{\text{cms}} \tag{4}
 \end{align}$$
 From (2), we have:
-$$E_{2}=\sqrt{ p^{'2}+m_{2}^{2} }$$
+$$E_{2}=\sqrt{ |\mathbf{p}|^{2}+m_{2}^{2} }$$
 Substitute into (4) to get:
 $$\begin{align}
-E_{1}=E_{\text{cms}}-E_{2}=E_{\text{cms}}-\sqrt{ p^{'2}+m_{2}^{2} }
+E_{1}=E_{\text{cms}}-E_{2}=E_{\text{cms}}-\sqrt{ |\mathbf{p}|^{2}+m_{2}^{2} }
 \end{align}$$
 Substitute into (1) to get:
-$$(E_{\text{cms}}-\sqrt{ p^{'2}+m_{2}^{2} })^{2}-p^{'2}=m_{1}^{2}\tag{5}$$
+$$(E_{\text{cms}}-\sqrt{ | \mathbf{p}^{'}|^{2}+m_{2}^{2} })^{2}-|\mathbf{p}^{'}|^{2}=m_{1}^{2}\tag{5}$$
 We also know that:
-$$E_{\text{lab}}=\sqrt{ p_{\text{lab}}^{2}+m_{1}^{2} }$$
+$$E_{\text{lab}}=\sqrt{ |\mathbf{p}_{\text{lab}}|^{2}+m_{1}^{2} }$$
 Substitute this into (3) to get:
-$$E_{\text{cms}}^{2}=(\sqrt{ p_{\text{lab}}^{2}+m_{1}^{2} }+m_{2})^{2}-p_{\text{lab}}^{2} \tag{6}$$
+$$E_{\text{cms}}^{2}=(\sqrt{ |\mathbf{p}_{\text{lab}}|^{2}+m_{1}^{2} }+m_{2})^{2}-|\mathbf{p}_{\text{lab}}|^{2} \tag{6}$$
 It suffices to eliminate $m_{1}$ from (5) and (6). From (6) we know:
 $$\begin{align}
- & (\sqrt{ p^{2}_{\text{lab}}+m_{1}^{2} }+m_{2})^{2}=E_{\text{cms}}^{2}+p_{\text{lab}}^{2} \\
-\implies & \sqrt{ p^{2}_{\text{lab}}+m_{1}^{2} }=\sqrt{ E^{2}_{\text{cms}}+p^{2}_{\text{lab}} }-m_{2} \\
-\implies & m_{1}^{2}=(\sqrt{ E^{2}_{\text{cms}}+p_{\text{lab}}^{2} }-m_{2})^{2}-p^{2}_{\text{lab}}
+ & (\sqrt{ |\mathbf{p}_{\text{lab}}|^{2}+m_{1}^{2} }+m_{2})^{2}=E_{\text{cms}}^{2}+|\mathbf{p}_{\text{lab}}|^{2} \\
+\implies & \sqrt{ |\mathbf{p}_{\text{lab}}|^{2}+m_{1}^{2} }=\sqrt{ E^{2}_{\text{cms}}+|\mathbf{p}^{}_{\text{lab}}|^{2} }-m_{2} \\
+\implies & m_{1}^{2}=(\sqrt{ E^{2}_{\text{cms}}+|\mathbf{p}_{\text{lab}}|^{2} }-m_{2})^{2}-|\mathbf{p}^{}_{\text{lab}}|^{2}
 \end{align}$$
 Then substitute this into (5) to get:
 $$\begin{align}
- & (E_{\text{cms}}-\sqrt{ p^{'2}+m_{2}^{2} })^{2}-p^{'2}=(\sqrt{ E^{2}_{\text{cms}}+p_{\text{lab}}^{2} }-m_{2})^{2}-p^{2}_{\text{lab}} \\
-\implies & E_{\text{cms}}^{2}+m_{2}^{2}-2E_{\text{cms}}\sqrt{ p^{'2}+m_{2}^{2} }=E^{2}_{\text{cms}}+m_{2}^{2}-2m_{2}\sqrt{ E^{2}_{\text{cms}} +p^{2}_{\text{lab}}}  \\
-\implies & E_{\text{cms}}\sqrt{ p^{'2}+m_{2}^{2} }=m_{2}\sqrt{ E^{2}_{\text{cms}}+p^{2}_{\text{lab}} } \\
-\implies & E^{2}_{\text{cms}}(p^{'2}+m_{2}^{2})=m_{2}^{2}(E^{2}_{\text{cms}}+p^{2}_{\text{lab}}) \\
+ & (E_{\text{cms}}-\sqrt{ |\mathbf{p}^{'}|^{2}+m_{2}^{2} })^{2}-|\mathbf{p}^{'}|^{2}=(\sqrt{ E^{2}_{\text{cms}}+|\mathbf{p}_{\text{lab}}|^{2} }-m_{2})^{2}-|\mathbf{p}^{}_{\text{lab}}|^{2} \\
+\implies & E_{\text{cms}}^{2}+m_{2}^{2}-2E_{\text{cms}}\sqrt{ |\mathbf{p}^{'}|^{2}+m_{2}^{2} }=E^{2}_{\text{cms}}+m_{2}^{2}-2m_{2}\sqrt{ E^{2}_{\text{cms}} +|\mathbf{p}^{}_{\text{lab}}}|^{2}  \\
+\implies & E_{\text{cms}}\sqrt{ |\mathbf{p}^{'}|^{2}+m_{2}^{2} }=m_{2}\sqrt{ E^{2}_{\text{cms}}+|\mathbf{p}^{}_{\text{lab}}|^{2} } \\
+\implies & E^{2}_{\text{cms}}(|\mathbf{p}^{'}|^{2}+m_{2}^{2})=m_{2}^{2}(E^{2}_{\text{cms}}+|\mathbf{p}_{\text{lab}}|^{2}) \\
 \implies & p^{'}= \frac{m_{2}p_{\text{lab}}}{E_{\text{cms}}}
 \end{align}$$
+**The elegant solution:**
+
+Observe that the lab frame and the COM frame is connected by a Lorentz boost given by the velocity of the COM $\mathbf{v}_{\text{COM}}$ in the lab frame. Since 2 is not moving in the lab frame, $\mathbf{v}_{\text{COM}}$ is parallel to $\mathbf{p}_{lab}$. Then Set z-axis to be parallel to $\mathbf{p}_{\text{lab}}$. 
+
+Note that for a Lorentz boost in the z direction, the x, y components are unchanged. Therefore $T_{12}=T^{'}_{12}$. Let $p^{\mu}_{1},\ p^{\mu}_{2}$ be the 4-momenta of 1, 2 in the lab frame before collision. Let $p^{'\mu}_{1},p^{'\mu}_{2}$ be the 4-momenta of 1,2 in the COM frame before collision. Then we have:
+$$\begin{align}
+ & p^{\mu}_{1}+p^{\mu}_{2}  = (E_{\text{cms}},\mathbf{p}_{\text{lab}})+ (m_{2},0)=(E_{\text{cms}}+m_{2},\mathbf{p}_{\text{lab}}) \\
+ & p^{\mu}_{1}-p^{\mu}_{2} =(E_{\text{cms}},\mathbf{p}_{\text{lab}})-(m_{2},0)=(E_{\text{cms}}-m_{2},\mathbf{p}_{\text{lab}})
+\end{align}$$
+After the collision, we have:
+$$\begin{align}
+ & p^{'\mu}_{1}+p^{'\mu}_{2}=(E^{'}_{1},\mathbf{p}^{'})+(E^{'}_{2},-\mathbf{p}^{'})=(E_{\text{lab}},0) \\
+ & p^{'\mu}_{1}-p^{'\mu}_{2}=(E^{'}_{1},\mathbf{p}^{'} )-(E^{'}_{2},-\mathbf{p}^{'})=(E_{1}^{'}-E_{2}^{'},2\mathbf{p}^{'})
+\end{align}$$
+We compute the matrix element:
+$$\begin{align}
+T_{12} & = (p_{1}+p_{2})^{0}(p_{1}-p_{2})^{3}-(p_{1}+p_{2})^{3}(p_{1}-p_{2})^{0} \\
+ & = (E_{\text{lab}}+m_{2})  p^{3}_{\text{lab}}-(E_{\text{lab}}-m_{2})p^{3}_{\text{lab}} \\
+ & = 2m_{2}p^{3}_{\text{lab}}
+\end{align}$$
+$$\begin{align}
+T^{'}_{12} & = (p_{1}^{'}+p_{2}^{'})^{0}(p^{'}_{1}-p^{'}_{2})^{3}-(p^{'}_{1}+p^{'}_{2})^{3}(p^{'}_{1}-p^{'}_{2})^{0} \\
+ & = E_{\text{cms}}2p^{'3}
+\end{align}$$
+We note that the 3-momentum $\mathbf{p}_{\text{lab}}$ only has the third component. Want to argue that $\mathbf{p}^{'}$ also only has the third component. We have:
+$$\Lambda^{\mu}{}_{\nu}=\begin{pmatrix}
+\gamma & 0 & 0 & -\gamma v_{\text{COM}} \\
+0 & 1 & 0 & 0 \\
+0 & 0 & 1 & 0 \\
+-\gamma v_{\text{COM}} & 0 & 0 & \gamma
+\end{pmatrix}$$
+Note that in the third column (I'm counting from zero.), $\Lambda^{1}{}_{3}=0,\ \Lambda^{2}{}_{3}=0$. Then $p^{'1}=\Lambda^{1}{}_{\nu}p_{1}^{\nu}=\Lambda^{1}{}_{3}p_{1}^{3}=0$. Similar for $p^{'2}$. Then $T_{12}=2m_{2}p_{\text{lab}},\ T^{'}_{12}=E_{\text{cms}}2p^{'}$. We have:
+$$\begin{align}
+ & 2m_{2}p_{\text{lab}}=E_{\text{cms}}2p^{'}\implies p^{'}=\frac{m_{2}p_{\text{lab}}}{E_{\text{cms}}}
+\end{align}$$
+
 ## (e)
 
 From the conservation of 4-momentum, we have:
@@ -206,7 +239,7 @@ Now we work in the cms. Assume that in the cms, the 4-momentum of the four parti
 Then by the conservation of energy, we have:
 $$\begin{align}
  & \mathcal{E}_{1}+\mathcal{E}_{2}=\mathcal{E}_{3}+\mathcal{E}_{4} \\
-\implies & \sqrt{ m_{1}^{2}+\mathscr{p}_{}^{2} }+\sqrt{ m_{2}^{2}+\mathscr{p_{}}^{2} }=\sqrt{ m_{1}^{2}+\mathscr{p}^{'2} }+\sqrt{ m_{2}^{2}+\mathscr{p}^{'2} } \\
+\implies & \sqrt{ m_{1}^{2}+|\vec{\mathscr{p}}|^{2} }+\sqrt{ m_{2}^{2}+|\vec{\mathscr{p_{}}}|^{2} }=\sqrt{ m_{1}^{2}+|\vec{\mathscr{p}}^{'}|^{2} }+\sqrt{ m_{2}^{2}+|\vec{\mathscr{p}}^{'}|^{2} } \\
 \implies & \mathscr{p}=\mathscr{p}^{'}
 \end{align}$$
 Then $q=(\mathcal{E}_{1}-\mathcal{E}_{3},  \vec{\mathscr{p}}  - \vec{\mathscr{p}^{'}} )=(0, \vec{\mathscr{p}}- \vec{{\mathscr{p}}^{'}})$. Then it's clear from the graph that $|\vec{\mathscr{p}}-\vec{\mathscr{p}^{'}}|=2 \mathscr{p}^{'}\sin \frac{\theta^{'}}{2}$. 
@@ -223,25 +256,22 @@ $$\begin{align}
  & = (\partial_{\mu}x_{\nu})x^{\nu}+ x_{\nu}\partial_{\mu}x^{\nu} \\
  & = g_{\nu \sigma}(\partial_{\mu}x^{\sigma})x^{\nu}+x_{\nu}\delta_{\mu}{}^{\nu} \\
  & = g_{\nu \sigma} \delta_{\mu}{}^{\sigma}x^{\nu}+ x_{\mu} \\
- & = g_{\mu \nu}x^{\nu}+x_{\mu}
+ & = g_{\mu \nu}x^{\nu}+x_{\mu} \\
+ & = 2x_{\mu}
 \end{align}$$
 ## (b)
 $$\begin{align}
-\partial_{\mu}\partial_{\nu}\rho & = \partial_{\mu}(g_{\nu \lambda}x^{\lambda}+x_{\nu}) \\
- & = g_{\nu \lambda}\delta_{\mu}{}^{\lambda}+ \partial_{\mu}(g_{\nu \lambda}x^{\lambda}) \\
- & = g_{\mu \nu}+g_{\nu \lambda}\delta_{\mu}{}^{\lambda} \\
+\partial_{\mu}\partial_{\nu}\rho & = \partial_{\mu}(2x_{\nu}) \\
+ & = 2g_{\nu \lambda }\partial_{\mu}x^{\lambda}  \\
+ & = 2g_{\nu \lambda}\delta_{\mu}{}^{\lambda}\\
  & = 2g_{\mu \nu}
 \end{align}$$
 ## (c)
 $$\begin{align}
 \Box\rho & = \partial^{\mu}\partial_{\mu}(x_{\nu}x^{\nu}) \\
- & = \partial^{\mu}(g_{\mu \nu}x^{\nu}+x_{\mu}) \\ & = \partial^{\mu}(g_{\mu \nu}x^{\nu})+\partial^{\mu}x_{\mu} \\
+ & = \partial^{\mu}(2x_{\mu})  \\
+ & =  2\delta^{\mu}{}_{\mu}\\
 
- & = g^{\mu \sigma}\partial_{\sigma}(g_{\mu \nu}x^{\nu})+4 \\
- & = g^{\mu \sigma}g_{\mu \nu}\delta_{\sigma}{}^{\nu}+4 \\
- & = g^{\mu \nu}g_{\nu \mu}+4 \\ & = \delta^{\mu}{}_{\mu}+4 \\
- 
- & = 4+4 \\
  & =8
 \end{align}$$
 ## (d)
@@ -251,8 +281,8 @@ $$\begin{align}
  & = \Box(\partial^{\mu}(2\rho \partial_{\mu}\rho)) \\
  & = 2 \Box((\partial^{\mu}\rho)(\partial_{\mu}\rho)+\rho\Box\rho) \\
  & = 2 \Box(g^{\mu \nu}(\partial_{\nu}\rho)(\partial_{\mu}\rho)+8\rho) \\
- & = 2\Box(g^{\mu \nu}(g_{\nu \lambda}x^{\lambda}+x_{\nu})(\partial_{\mu}\rho)+8\rho)  \\
- & = 2\Box(2x^{\mu}(g_{\mu \nu}x^{\nu}+x_{\mu})+8\rho) \\
+ & = 2\Box(g^{\mu \nu}4x_{\nu}x_{\mu}+8\rho)  \\
+ & = 2\Box(4x_{\mu}x^{\mu}+8\rho) \\
  & = 2\Box(4\rho + 8 \rho) \\
  & = 24 \Box\rho \\
  & = 192\end{align}$$
@@ -261,10 +291,8 @@ $$\begin{align}
 \partial_{\sigma}(x^{\mu}\partial_{\mu}f(\rho)) & = \partial_{\sigma}(x^{\mu}f^{'}\partial_{\mu}\rho) \\
  & = (\partial_{\sigma}x^{\mu})f^{'}\partial_{\mu}\rho+x^{\mu}(\partial_{\mu}\rho)(\partial_{\sigma}f^{'})+x^{\mu}f^{'}\partial_{\sigma}  \partial_{\mu}\rho \\
  & = \delta_{\sigma}{^{\mu}}f^{'}\partial_{\mu}\rho +x^{\mu}(\partial_{\mu}\rho)f^{''}\partial_{\sigma}\rho+x^{\mu}f^{'}\partial_{\sigma}\partial_{\mu}\rho \\
- & = f^{'}(g_{\sigma \mu}x^{\mu}+x_{\sigma})+f^{''}x^{\mu}(g_{\mu \nu }x^{\nu}+x_{\mu} )(g_{\sigma \lambda}x^{\lambda}+x_{\sigma})+2f^{'}x^{\mu}g_{\sigma \mu} \\
- & = 3f^{'}g_{\sigma \mu}x^{\mu}+f^{'}x_{\sigma}+f^{''}(x_{\nu}x^{\nu}+x_{\mu}x^{\mu})(g_{\sigma \lambda}x^{\lambda}+x_{\sigma}) \\
- & = 3f^{'}g_{\sigma \mu}x^{\mu}+f^{'}x_{\sigma}+2\rho f^{''}(g_{\sigma \lambda }x^{\lambda}+x_{\sigma}) \\
- &= 3f^{'}g_{\sigma \mu}x^{\mu}+f^{'}x_{\sigma}+2\rho f^{''}x_{\sigma}+2\rho f^{''}g_{\sigma \mu}x^{\mu} \\
+ & = f^{'}2x_{\sigma}+f^{''}x^{\mu}4x_{\mu}x_{\sigma}+2f^{'}x^{\mu}g_{\sigma \mu} \\
+  & = 2f^{'}x_{\sigma}+4\rho f^{''}x_{\sigma}+2f^{'}x_{\sigma} \\
  & = 4f^{'}x_{\sigma}+4\rho f^{''}x_{\sigma}
 \end{align}$$
 ## (f)
@@ -275,12 +303,10 @@ $$\begin{align}
  & = \partial^{\mu}\left( - \frac{1}{\rho^{2}}\partial_{\mu}\rho \right) \\
  & = \frac{2}{\rho^{3}}(\partial^{\mu}\rho)(\partial_{\mu}\rho)- \frac{1}{\rho^{2}}\partial^{\mu}\partial_{\mu}\rho \\
  & = \frac{2}{\rho^{3}}g^{\mu \nu}(\partial_{\nu}\rho)(\partial_{\mu}\rho)- \frac{8}{\rho^{2}} \\
- & = \frac{2}{\rho^{3}}g^{\mu \nu}(g_{\nu \lambda}x^{\lambda}+x_{\nu})(\partial_{\mu}\rho)- \frac{8}{\rho^{2}} \\
- & = \frac{2}{\rho^{3}}(x^{\mu}+x^{\mu})(\partial_{\mu}\rho)- \frac{8}{\rho^{2}} \\
- & = \frac{4}{\rho^{3}}x^{\mu}(g_{\mu \nu}x^{\nu}+x_{\mu})- \frac{8}{\rho^{2}} \\
- & = \frac{4}{\rho^{3}}x^{\mu}2x_{\mu}- \frac{8}{\rho^{2}} \\
- & = \frac{8}{\rho^{2}}- \frac{8}{\rho^{2}} \\
- & =0
+ & = \frac{2}{\rho^{3}}g^{\mu \nu}4x_{\nu}x_{\mu}- \frac{8}{\rho^{2}} \\
+ & = \frac{8}{\rho^{3}}x_{\mu}x^{\mu}- \frac{8}{\rho^{2}} \\
+ & = \frac{8}{\rho^{2}}- \frac{8}{\rho^{2}}  \\
+& =0
 \end{align}$$
 It's also obvious that $\Box c_{2}=0$. Then by linearity, we have $\Box\left(  \frac{c_{1}}{\rho}+c_{2} \right)=0$
 
