@@ -287,3 +287,4 @@ Features:
 5. Measure $TAP 5 - TAP 6$. See bandwidth limitation at $f = 1MHz$. Below $1MHz$, the output is relatively stable. 
 6. The signal from $TAP 2 - TAP5$ is clean from $100 K Hz \sim 2 MHz$.  
 
+
