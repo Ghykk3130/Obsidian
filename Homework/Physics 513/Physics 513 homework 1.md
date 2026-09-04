@@ -201,7 +201,7 @@ $$\begin{align}
 T^{'}_{12} & = (p_{1}^{'}+p_{2}^{'})^{0}(p^{'}_{1}-p^{'}_{2})^{3}-(p^{'}_{1}+p^{'}_{2})^{3}(p^{'}_{1}-p^{'}_{2})^{0} \\
  & = E_{\text{cms}}2p^{'3}
 \end{align}$$
-We note that the 3-momentum $\mathbf{p}_{\text{lab}}$ only has the third component. Want to argue that $\mathbf{p}^{'}$ also only has the third component. We have:
+We note that the 3-momentum $\mathbf{p}_{\text{lab}}$ only has the third component. Want to argue that $\mathbf{p}^{'}$ also only has the third component. This is obvious since $\mathbf{p}^{'}$ is the transformation of $\mathbf{p}_{\text{lab}}$, and we argued before that the x, y components should be unaffected, therefore they are equal to zero. We can show this more specifically. We have:
 $$\Lambda^{\mu}{}_{\nu}=\begin{pmatrix}
 \gamma & 0 & 0 & -\gamma v_{\text{COM}} \\
 0 & 1 & 0 & 0 \\

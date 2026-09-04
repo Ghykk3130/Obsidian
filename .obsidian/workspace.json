@@ -3175,12 +3175,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Homework/Physics 513/Physics 513 homework 1.md",
+                "file": "Homework/Physics 520/Physics 520 homework 1.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Physics 513 homework 1"
+              "title": "Physics 520 homework 1"
             }
           }
         ],
@@ -3249,8 +3249,7 @@
               "title": "Search"
             }
           }
-        ],
-        "currentTab": 3
+        ]
       }
     ],
     "direction": "horizontal",
@@ -3371,9 +3370,13 @@
   },
   "active": "ccca60186663a2a5",
   "lastOpenFiles": [
+    "Homework/Physics 513/Physics 513 homework 1.md",
+    "Homework/Physics 520/Physics 520 homework 1.md",
+    "Pictures/e9fe743e210eb191f71c2bdd70ab2122.jpg",
+    "Pictures/d50b544474bb78038b2b769f204c9eac.jpg",
+    "Homework/Physics 520/Physics 520 homework 1 problem set.md",
     "Experimental/Ratio Transformer.md",
     "Experimental/Isolation Transformer.md",
-    "Homework/Physics 513/Physics 513 homework 1.md",
     "Notes/Untitled 14.md",
     "Notes/Untitled 13.md",
     "Notes/Viscous flow.md",
@@ -3386,7 +3389,6 @@
     "Notes/Untitled 1.md",
     "Notes/Untitled.md",
     "Notes/Untitled 5.md",
-    "Homework/Physics 520/Physics 520 homework 1.md",
     "Pictures/b1cf1a8d5fa264522ff5eeb605b6d09e.jpg",
     "Pictures/e397e3110a4f7d58903dd8a32db6c52b.jpg",
     "Pictures/fc619b8eb78cb797e246e1a12c339aca.jpg",
@@ -3394,21 +3396,17 @@
     "Notes/Bloch定理2.md",
     "Notes/Bloch定理.md",
     "Notes/AB效应.md",
-    "Homework/Physics 520/Physics 520 homework 1 problem set.md",
     "Homework/Physics 520/Physics 520 homework 0.md",
     "Pictures/b6b008242f3cc06a5cb15010ad864727.jpg",
     "Pictures/Pasted image 20260902150952.png",
     "Pictures/85f1cc43893fcc0332cb3aedc78da08d.jpg",
     "Pictures/1efa853734d938604c7bf46a7bd6aa43.jpg",
-    "Pictures/f7de5dbc610573c63a4baa02fac8a524.jpg",
     "Notes/Lorentz群.md",
     "Notes/微分几何基础概念.md",
     "Notes/Drude模型.md",
     "Notes/物质中的Maxwell方程.md",
-    "Homework/Physics 512/Untitled.md",
     "Homework/Physics 520",
     "Homework/Physics 513",
-    "Pictures/Pasted image 20260824163107.png",
     "Pictures/GRE镇考机经词7.0-乱序（2026年版）.pdf",
     "Pictures/drawing.pdf",
     "Pictures/drawing.html",
