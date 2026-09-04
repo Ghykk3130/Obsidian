@@ -117,7 +117,7 @@ The length scale that would be typically probed would be around $346.17\ \text{f
 
 Lab frame:
 ![[f7de5dbc610573c63a4baa02fac8a524.jpg|centering|300]]
-COM frame:
+cms frame:
 ![[1efa853734d938604c7bf46a7bd6aa43.jpg|centering|300]]
 ## (b)
 
@@ -135,7 +135,7 @@ $$\begin{align}
  & = m_{1}^{2}+m_{2}^{2}+2m_{2}E_{\text{lab}}\end{align}$$
 ## (c)
 
-Assume that the energy is high, so that approximately $E_{\text{cms}}^{2}= 2m_{2}E_{\text{lab}}\implies\left(  \frac{E\text{cms}}{m_{2}}^{} \right)^{2}=2 \frac{E_{\text{lab}}}{m_{2}}$. This means that roughly, the energy required to create particles in the lab frame per mass is almost the square of the energy required to create particles in the COM frame. If the energy is high, then a square would cause a huge energy difference. Therefore, collision in the lab frame is highly inefficient.
+Assume that the energy is high, so that approximately $E_{\text{cms}}^{2}= 2m_{2}E_{\text{lab}}\implies\left(  \frac{E\text{cms}}{m_{2}}^{} \right)^{2}=2 \frac{E_{\text{lab}}}{m_{2}}$. This means that roughly, the energy required to create particles in the lab frame per mass is almost the square of the energy required to create particles in the cms frame. If the energy is high, then a square would cause a huge energy difference. Therefore, collision in the lab frame is highly inefficient.
 ## (d)
 
 **The brut-force solution:**
@@ -179,9 +179,9 @@ $$\begin{align}
 \end{align}$$
 **The elegant solution:**
 
-Observe that the lab frame and the COM frame is connected by a Lorentz boost given by the velocity of the COM $\mathbf{v}_{\text{COM}}$ in the lab frame. Since 2 is not moving in the lab frame, $\mathbf{v}_{\text{COM}}$ is parallel to $\mathbf{p}_{lab}$. Then Set z-axis to be parallel to $\mathbf{p}_{\text{lab}}$. 
+Observe that the lab frame and the cms frame is connected by a Lorentz boost given by the velocity of the cms $\mathbf{v}_{\text{COM}}$ in the lab frame. Since 2 is not moving in the lab frame, $\mathbf{v}_{\text{COM}}$ is parallel to $\mathbf{p}_{lab}$. Then Set z-axis to be parallel to $\mathbf{p}_{\text{lab}}$. 
 
-Note that for a Lorentz boost in the z direction, the x, y components are unchanged. Therefore $T_{12}=T^{'}_{12}$. Let $p^{\mu}_{1},\ p^{\mu}_{2}$ be the 4-momenta of 1, 2 in the lab frame before collision. Let $p^{'\mu}_{1},p^{'\mu}_{2}$ be the 4-momenta of 1,2 in the COM frame before collision. Then we have:
+Note that for a Lorentz boost in the z direction, the x, y components are unchanged. Therefore $T_{12}=T^{'}_{12}$. Let $p^{\mu}_{1},\ p^{\mu}_{2}$ be the 4-momenta of 1, 2 in the lab frame before collision. Let $p^{'\mu}_{1},p^{'\mu}_{2}$ be the 4-momenta of 1,2 in the cms frame before collision. Then we have:
 $$\begin{align}
  & p^{\mu}_{1}+p^{\mu}_{2}  = (E_{\text{cms}},\mathbf{p}_{\text{lab}})+ (m_{2},0)=(E_{\text{cms}}+m_{2},\mathbf{p}_{\text{lab}}) \\
  & p^{\mu}_{1}-p^{\mu}_{2} =(E_{\text{cms}},\mathbf{p}_{\text{lab}})-(m_{2},0)=(E_{\text{cms}}-m_{2},\mathbf{p}_{\text{lab}})
