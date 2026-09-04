@@ -22,10 +22,12 @@
 
 # Problem 2
 ## (a)
+We can reorder the indices freely once the upper and lower indices are paired with each other. Then it is easy to write:
 $$\begin{align}
 C_{\sigma \lambda}B^{\nu}{}_{\rho}B^{\mu}{}_{\nu}D^{\rho \sigma}=B^{\mu}{}_{\nu}B^{\nu}{}_{\rho}D^{\rho \sigma}C_{\sigma \lambda}
 \end{align}$$
 ## (b)
+The index $\nu,\ \mu$ are contracted, leaving $\rho,\ \alpha$ as the free upper indices.
 $$A^{\mu}{}_{\nu}\eta^{\nu \rho}A^{\alpha}{}_{\mu}=B^{\rho \alpha}$$
 ## (c)
 
@@ -59,6 +61,8 @@ B^{\lambda}{}_{\rho}D^{\alpha}{}_{\mu}A^{\mu}{}_{\lambda}C^{\rho}{}_{\alpha} & =
 \end{align}$$
 # Problem 3
 ## (a)
+
+Since $0123$ is an even permutation, $1230$ is an odd permutation, and $1213$ has repeated $1$'s, we have:
 $$\epsilon^{0123}=1,\ \epsilon^{1230}=-1,\ \epsilon^{1213}=0$$
 ## (b)
 
@@ -93,6 +97,7 @@ $$\begin{align}
 \end{align}$$
 ## (b)
 
+$m_{e}$ should have the same unit as $E$. So we add $c^{2}$ to it. Note that the LHS is energy, so $2m_{e}$ outside the parenthesis should have the same unit as energy. We add $c^{2}$ to it as well. We get:
 $$E_{CM}=\sqrt{ 2m_{e}c^{2}(E+m_{e}c^{2}) }$$
 ## (c)
 

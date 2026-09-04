@@ -3175,12 +3175,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Experimental/Ratio Transformer.md",
+                "file": "Homework/Physics 513/Physics 513 homework 1.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Ratio Transformer"
+              "title": "Physics 513 homework 1"
             }
           }
         ],
@@ -3238,7 +3238,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "table",
+                "query": "513 homework",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -3249,11 +3249,13 @@
               "title": "Search"
             }
           }
-        ]
+        ],
+        "currentTab": 3
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 200,
+    "collapsed": true
   },
   "right": {
     "id": "9003d078f8dbc4ed",
@@ -3369,9 +3371,9 @@
   },
   "active": "ccca60186663a2a5",
   "lastOpenFiles": [
+    "Experimental/Ratio Transformer.md",
     "Experimental/Isolation Transformer.md",
     "Homework/Physics 513/Physics 513 homework 1.md",
-    "Experimental/Ratio Transformer.md",
     "Notes/Untitled 14.md",
     "Notes/Untitled 13.md",
     "Notes/Viscous flow.md",
