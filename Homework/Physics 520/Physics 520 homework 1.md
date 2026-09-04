@@ -68,9 +68,12 @@ E= \frac{\hbar^{2}}{2m_{e}}\left[ \left( (\sqrt{ 2 }+2) \frac{\pi}{a} -s\right)^
 We have $E= \frac{\hbar^{2}}{2m_{e}}\left[ \left( k_{x}- \frac{4\pi}{a} \right)^{2}+k_{y} ^{2} \right]$. In $\Gamma\rightarrow M$, we have $E= \frac{\hbar^{2}}{2m_{e}}\left[ \left( k_{x}- \frac{4\pi}{a} \right)^{2}+k_{x}^{2} \right]$ if we impose the constraint $k_{y}=k_{x}$. The function is decreasing from $\Gamma\rightarrow M$, and just reaches $\frac{10\hbar^{2}\pi^{2}}{2m_{e}a^{2}}$ at $M$. 
 
 In $M\rightarrow X$, we have:
+$$E= \frac{\hbar^{2}}{2m_{e}}\left[ 9 \frac{\pi^{2}}{a^{2}}+\left( (\sqrt{ 2 }+1) \frac{\pi}{a}-s \right)^{2} \right],\ \sqrt{ 2 } \frac{\pi}{a} \leq s< (\sqrt{ 2 }+1) \frac{\pi}{a}$$
+In $X\rightarrow \Gamma$, we have:
+$$\begin{align}
+E= \frac{\hbar^{2}}{2m_{e}}\left[ \left( (\sqrt{ 2 }-2) \frac{\pi}{a} -s\right)^{2}  ,\ (\sqrt{ 2 }+1) \frac{\pi}{a}\leq s \leq (\sqrt{ 2 }+2) \frac{\pi}{a}
+\end{align}$$
 
-
-$$$$
 
 ## (3)
 
