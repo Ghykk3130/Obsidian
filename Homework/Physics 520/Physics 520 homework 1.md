@@ -54,10 +54,17 @@ Take $n_{x}=2,\ n_{y}=0$. The curve is:
 ![[2b3b2050065bb313d9f0e1726c1917ec.jpg|centering|300]]
 **For $\mathbf{G}=- \frac{4\pi}{a}  \hat{\mathbf{x}}$:**
 
-Take $n_{x}=-2,\ n_{y}=0$. The curve is:
+Take $n_{x}=-2,\ n_{y}=0$. Then $E= \frac{\hbar^{2}}{2m_{e}}\left[ \left( k_{x}+ \frac{4\pi}{a} \right)^{2}+k_{y}^{2} \right]\geq \frac{16\hbar^{2}\pi^{2}}{2m_{e}a^{2}},\ \text{for }k_{x},k_{y}\geq0$. We don't need to plot this curve.
 
+**For $\mathbf{G}= \frac{4\pi}{a} \hat{\mathbf{y}}$:**
 
+Take $n_{x}=0,\ n_{y}=2$. Then $E= \frac{\hbar^{2}}{2m_{e}}\left[ k_{x}^{2}+\left( k_{y}- \frac{4\pi}{a} \right)^{2} \right]$. From $\Gamma\rightarrow M$, it achieves a minimum of $\frac{10\hbar^{2}\pi^{2}}{2m_{e}a^{2}}$. From $M\rightarrow X$, it achieves a minimum of $\frac{10\hbar^{2}\pi^{2}}{2m_{e}a^{2}}$. From $X\rightarrow \Gamma$, it achieves a minimum of $\frac{16\hbar^{2}\pi^{2}}{2m_{e}a^{2}}$. Therefore, we don't need to plot this curve.
 
-## (3)
+**For $\mathbf{G}=- \frac{4\pi}{a}  \hat{\mathbf{y}}$:**
 
+Take $n_{x}=0,\ n_{y}=-2$. Then $E= \frac{\hbar^{2}}{2m_{e}}\left[  k_{x}^{2}+(k_{y}+ \frac{4\pi}{a}) ^{2} \right]\geq \frac{16\hbar^{2}\pi^{2}}{2m_{e}a^{2}},\ \text{for }k_{x},k_{y}\geq0$. We don't need to plot this curve.
+
+We do not consider other $\mathbf{G}$'s since other $\mathbf{G}$ would only make the energy higher by at least $\frac{\hbar^{2}}{2m_{e}} \frac{\pi^{2}}{a^{2}}$, which must exceed $\frac{10 \hbar^{2}\pi^{2}}{2m_{e}a^{2}}$. 
+
+Then combine everything together, we obtain the spaghetti diagram:
 
