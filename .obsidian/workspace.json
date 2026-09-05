@@ -3175,12 +3175,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Homework/Physics 520/Physics 520 homework 1.md",
+                "file": "Notes/GRE物理.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Physics 520 homework 1"
+              "title": "GRE物理"
             }
           }
         ],
@@ -3238,7 +3238,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "513 homework",
+                "query": "GRE物理",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -3249,12 +3249,12 @@
               "title": "Search"
             }
           }
-        ]
+        ],
+        "currentTab": 3
       }
     ],
     "direction": "horizontal",
-    "width": 200,
-    "collapsed": true
+    "width": 200
   },
   "right": {
     "id": "9003d078f8dbc4ed",
@@ -3370,12 +3370,12 @@
   },
   "active": "ccca60186663a2a5",
   "lastOpenFiles": [
+    "Homework/Physics 520/Physics 520 homework 1.md",
     "Pictures/6e64df5ae183be6ec137d4dc7a093708.jpg",
     "Pictures/443bad11be3ddcbaeee5359c2f7864b4.jpg",
     "Pictures/29fc2e8a72c2073267052dcabe9d8240.jpg",
     "Pictures/5ae625922ff714d6970936cddec3c77f.jpg",
     "Homework/Physics 513/Physics 513 homework 1.md",
-    "Homework/Physics 520/Physics 520 homework 1.md",
     "Pictures/9e852bc6cd6908e5c9f9a0ce8ea397a1.jpg",
     "Pictures/2b3b2050065bb313d9f0e1726c1917ec.jpg",
     "Pictures/e9fe743e210eb191f71c2bdd70ab2122.jpg",
@@ -3397,7 +3397,6 @@
     "Notes/Untitled 5.md",
     "Pictures/b1cf1a8d5fa264522ff5eeb605b6d09e.jpg",
     "Pictures/e397e3110a4f7d58903dd8a32db6c52b.jpg",
-    "Pictures/fc619b8eb78cb797e246e1a12c339aca.jpg",
     "Notes/Bloch定理2.md",
     "Notes/Bloch定理.md",
     "Notes/AB效应.md",
