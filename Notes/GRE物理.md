@@ -1,7 +1,7 @@
 1. Dopler公式$$f^{'}= f^{} \frac{v\pm v_{o}}{v\mp v_{s}}$$
 2. 衰变有alpha衰变。释放alpha粒子，即氦核。还有beta衰变。beta+衰变是$p\rightarrow \bar{e}+\beta+\nu_{e}$。其中$\bar{e}=e^{+}$。beta-衰变是$n\rightarrow p+e+\bar{\nu}$。其中中微子必须被生成，否则轻子数不守恒。gamma衰变是原子核自身的能级跃迁，释放光子。
 3. 轻子包含$\tau,\mu,e$（带负电）以及它们的中微子$\nu_{\tau},\nu_{\mu},\nu_{e}$（不带电）。它们全都有轻子数$+1$。而它们的反粒子有轻子数$-1$。从质量上讲，$m_{\tau}>m_{\mu}>m_{e}$。
-4. SR公式：$E^{2}=p^{2}c^{2}+m^{2}c^{4}$，$p=\gamma mv= \frac{1}{\sqrt{ 1-\left( \frac{v}{c} \right)^{2} }}mv$，$E=\gamma mc^{2}$。
+4. SR公式：$E^{2}=p^{2}c^{2}+m^{2}c^{4}$，$p=\gamma mv= \frac{1}{\sqrt{ 1-\left( \frac{v}{c} \right)^{2} }}mv$，$E=\gamma mc^{2}$，$u^{'}= \frac{u-v}{1-uv}$。
 5. 令$\mathcal{O}^{'}$系沿x轴运动。那么：
 $$\begin{align}
  & E^{'}_{x}=E_{x} \\

@@ -65,6 +65,23 @@ $$\begin{align}
  & g_{\mu \nu}  = g_{\mu \lambda}\delta^{\lambda}{}_{\nu}= g_{\mu \lambda}g^{\lambda \eta}g_{\eta \nu}= g_{\mu \lambda}g_{\eta \nu}g^{\lambda \eta} \\
  & g^{\mu \nu}= g^{\mu \lambda}\delta^{\nu}{}_{\lambda}= g^{\mu \lambda}g^{\nu \eta}g_{\eta \lambda} 
 \end{align}$$
+## Ex:
+
+定义EM tensor：
+$$F^{\mu \nu}=\begin{pmatrix}
+0 & -E_{x} & -E_{y} & -E_{z} \\
+E_{x} & 0 & -B_{z} & B_{y} \\
+E_{y} & B_{z} & 0 & -B_{x} \\
+E_{z} & -B_{y} & B_{x} & 0
+\end{pmatrix}$$
+对于逆变张量$F^{\mu \nu}$，我们想快速得到$F_{\mu \nu}$。如果$\mu,\nu$中有一个是空间指标，则出一个负号。如果是时间指标，则不出负号。例如$F_{0 1}=-F^{01}$。所以：
+$$F_{\mu \nu}=\begin{pmatrix}
+0 & E_{x} & E_{y} & E_{z} \\
+-E_{x} & 0 & -B_{z} & B_{y} \\
+-E_{y} & B_{z} & 0 & -B_{x} \\
+-E_{z} & -B_{y} & B_{x} & 0
+\end{pmatrix}$$
+
 
 # 3. Lorentz变换
 
