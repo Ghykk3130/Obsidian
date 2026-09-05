@@ -3175,12 +3175,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Notes/GRE物理.md",
+                "file": "Notes/Lorentz群.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "GRE物理"
+              "title": "Lorentz群"
             }
           }
         ],
@@ -3238,7 +3238,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "GRE物理",
+                "query": "Lorentz群",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -3370,8 +3370,8 @@
   },
   "active": "ccca60186663a2a5",
   "lastOpenFiles": [
-    "Notes/Lorentz群.md",
     "Notes/GRE物理.md",
+    "Notes/Lorentz群.md",
     "Homework/Physics 520/Physics 520 homework 1.md",
     "Pictures/6e64df5ae183be6ec137d4dc7a093708.jpg",
     "Pictures/443bad11be3ddcbaeee5359c2f7864b4.jpg",

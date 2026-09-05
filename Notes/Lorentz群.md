@@ -1,4 +1,4 @@
-# 1. 微分几何基础
+# 1. 矢量与切矢量
 
 考虑一个性质足够好的流形$M$。给定流形上函数$f:M\rightarrow \mathbb{R}$。取一点$p\in M$，以及过$p$的曲线$\mathbf{x}:\mathbb{R}\rightarrow M,\ t\mapsto \mathbf{x}(t)$。不妨设曲线都在$t=0$时过$p$点。我们可以构造：
 $$X_{p}:f\mapsto \left.\frac{d}{dt}\right|_{t=0}f(\mathbf{x}(t))$$
