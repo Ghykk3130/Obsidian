@@ -1,9 +1,7 @@
 # Problem 1
-## (1)
 
+We have $\mathbf{b}_{1}= \frac{2\pi}{a}  \hat{\mathbf{x}},\ \mathbf{b}_{2}= \frac{2\pi}{a}  \hat{\mathbf{y}}$ spanning the reciprocal lattice. Then the first Brillouin zone is a square with length $\frac{2\pi}{a}$ centered at $0$.
 ![[b6b008242f3cc06a5cb15010ad864727.jpg|centering|300]]
-## (2)
-
 Define the path length along the high-symmetry lines as $s$. Then it is clear from the geometry that from $\Gamma\rightarrow M$, we have $\mathbf{k}=\left(  \frac{s}{\sqrt{ 2 }}, \frac{s}{\sqrt{ 2 }} \right)$. From $M\rightarrow X$, we have $\mathbf{k}=\left( \frac{\pi}{a}, (\sqrt{ 2 }+1) \frac{\pi}{a}-s \right)$. From $X\rightarrow \Gamma$, we have $\mathbf{k}=\left(  ( \sqrt{ 2 }+2) \frac{\pi}{a}-s,0 \right)$.
 
 Let $\mathbf{G}= \frac{2\pi}{a}(n_{x},n_{y})$. Then:
@@ -66,7 +64,7 @@ Take $n_{x}=0,\ n_{y}=-2$. Then $E= \frac{\hbar^{2}}{2m_{e}}\left[  k_{x}^{2}+(k
 
 We do not consider other $\mathbf{G}$'s since other $\mathbf{G}$ would only make the energy higher by at least $\frac{\hbar^{2}}{2m_{e}} \frac{\pi^{2}}{a^{2}}$, which must exceed $\frac{10 \hbar^{2}\pi^{2}}{2m_{e}a^{2}}$. 
 
-Then combine everything together, we obtain the spaghetti diagram:
+Then combine everything together, we obtain the spaghetti diagram. Each curve is labeled with a number, and the corresponding $\mathbf{G}$'s are written below. 
 ![[6e64df5ae183be6ec137d4dc7a093708.jpg|centering|600]]
 Note that here $\mathbf{G}$ is represented in the $\{ \hat{\mathbf{x}}, \hat{\mathbf{y}} \}$ basis, not the $\{ \mathbf{b}_{1},\mathbf{b}_{2} \}$ basis. 
 
