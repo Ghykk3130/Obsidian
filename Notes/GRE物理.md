@@ -1,4 +1,5 @@
-1. Dopler公式$$f^{'}= f^{} \frac{v\pm v_{o}}{v\mp v_{s}}$$
+1. Doppler公式$$f^{'}= f^{} \frac{v\pm v_{o}}{v\mp v_{s}}$$
+Doppler红移公式$\frac{\lambda_{\text{shifted}}}{\lambda}=\sqrt{\frac{1+v}{1-v} }$。蓝移：$\frac{\lambda_{\text{shifted}}}{\lambda}= \sqrt{ \frac{1-v}{1+v} }$
 2. 衰变有alpha衰变。释放alpha粒子，即氦核。还有beta衰变。beta+衰变是$p\rightarrow \bar{e}+\beta+\nu_{e}$。其中$\bar{e}=e^{+}$。beta-衰变是$n\rightarrow p+e+\bar{\nu}$。其中中微子必须被生成，否则轻子数不守恒。gamma衰变是原子核自身的能级跃迁，释放光子。
 3. 轻子包含$\tau,\mu,e$（带负电）以及它们的中微子$\nu_{\tau},\nu_{\mu},\nu_{e}$（不带电）。它们全都有轻子数$+1$。而它们的反粒子有轻子数$-1$。从质量上讲，$m_{\tau}>m_{\mu}>m_{e}$。
 4. SR公式：$E^{2}=p^{2}c^{2}+m^{2}c^{4}$，$p=\gamma mv= \frac{1}{\sqrt{ 1-\left( \frac{v}{c} \right)^{2} }}mv$，$E=\gamma mc^{2}$，$u^{'}= \frac{u-v}{1-uv}$。
@@ -190,16 +191,16 @@ $$\begin{align}
 如果衰变有两个通道，那么总的分布就是这两个Poisson分布的乘积。或者更简单一点，就是两个exponential decay的乘积。那么$e^{- \frac{t}{\tau_{1}}}\cdot e^{- \frac{t}{\tau_{2}}}= e^{-\left(  \frac{1}{\tau_{1}}+ \frac{1}{\tau_{2}} \right)t}$。所以新的衰变常数满足$\frac{1}{\tau}= \frac{1}{\tau_{1}}+ \frac{1}{\tau_{2}}$。直观上来讲，由于衰变的通道变多，总的衰变常数一定比每个单独的衰变常数要短。选D。
 70. ![[Pasted image 20260813145604.png|centering|300]]
 应当记住，结合能是负的。因为这是吸引所造成的一个凹陷的势阱。那么令裂变产物结合能为$V$。那么$-238\times 7.6=2V+2\times 100$。选E。
-71. ![[Pasted image 20260813145842.png|centering|300]]不要忘记，光从空气进入油相位要变180。
+71. ![[Pasted image 20260813145842.png|centering|300]]不要忘记，光从空气进入油反射光相位要变180。选B。
 72. ![[Pasted image 20260813153117.png|centering|300]]
 这里速度很大，运用相对论Dopler公式。红移：$\frac{\lambda_{\text{shifted}}}{\lambda}= \sqrt{  \frac{1+\beta}{1-\beta} },\ \beta= \frac{v}{c}$。蓝移：$\frac{\lambda_{\text{shifted}}}{\lambda}=\sqrt{  \frac{1-\beta}{1+\beta} }$。选D。
 73. ![[Pasted image 20260813153456.png|centering|200]]
-读题问题。downward acceleration指未叠加前的向下加速度的和。不是指总加速度。
+读题问题。downward acceleration指未叠加前的向下加速度的和。不是指总加速度。为$2g$。
 74. 考虑一个参考系$\mathcal{O}^{'}$在lab frame中以$u$运动。$\mathcal{O}^{'}$中物体速度为$v^{'}$。那么lab frame中物体速度为$v= \frac{1}{1+ \frac{uv^{'}}{c^{2}}}(u+v^{'})$。狭义相对论速度变换。
 75. 回忆Bloch球。将实空间任意轴$\hat{\mathbf{n}}$映射到Bloch球上的$(\theta,\phi)$位置。然后$+ \frac{1}{2}$对应的量子态为$\left( \cos \frac{\theta}{2}, e^{i\phi} \sin \frac{\theta}{2} \right)$。$- \frac{1}{2}$对应的是$(\theta,\phi)$的对径点$(\pi-\theta,\pi+\phi)$。对应的量子态是$\left( \sin \frac{\theta}{2},-e^{i\phi}\cos \frac{\theta}{2} \right)$。
 
 76. ![[Pasted image 20260813162838.png|centering|300]]
-可以记一下，电流圆环中心磁场为$\frac{\mu_{0}I}{2R}$。
+可以记一下，电流圆环中心磁场为$\frac{\mu_{0}I}{2R}$。选C。
 77. ![[Pasted image 20260813170705.png|centereing|300]]
 体系电偶极矩为零。因为球体的对称性，没有电偶极矩。选E。回忆起偶极辐射$P\propto \omega^{4}p^{2}\sin ^{2}\theta$。
 78. ![[Pasted image 20260813171023.png|centering|300]]
