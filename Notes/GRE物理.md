@@ -158,29 +158,29 @@ $$\begin{align}
 只需要知道pion是介子。然后实际上ABCD就都排除了。然后只有弱相互作用能改变奇异数。强相互作用和电磁奇异数都守恒。选E。
 52. 记住等温膨胀$p\propto V^{-1}$，绝热膨胀$p\propto V^{-5 /3}$。在试图比较谁更陡峭时，我们不能直接求导。因为二者的比例系数是未知的，即使求导也没用。我们可以假设气体从同一点开始，进行等温或者绝热膨胀。等温体积膨胀两倍时，压强为原来的$\frac{1}{2}$。绝热体积膨胀两倍时，压强为原来的$\left( \frac{1}{2} \right)^{5 /3}$。所以降得更小。一个直觉时，等温膨胀时，气体做功压强下降后，还可以从外界吸热，使得自己压强降得没那么厉害。但是绝热膨胀就无法吸热，所以压强下降得更加迅速。
 53. ![[Pasted image 20260812151524.png|centering|200]]
-选C。
+将加速度分解为切向加速度和径向加速度。选C。
 54. 球面镜成像公式$\frac{1}{s}+ \frac{1}{s ^{'}}=- \frac{2}{R}$。若对于入射光来说，球面镜是凸的，那么$R>0$。如果是凹的，那么，$R<0$。$s ^{'}>0$为实像，在入射光同侧。$s ^{'}<0$为虚像，在入射光对侧。
-55. 对于Poisson分布，$\sigma=\sqrt{ \lambda }$。
+55. 对于Poisson分布，$\sigma=\sqrt{ \lambda }$。Poisson分布是无量纲的。
 56. ![[Pasted image 20260812155746.png|centering|300]]
-立体角一圈下来是$4\pi$。不要光算一个立体角就选D。应该看这个立体角占总立体角的比例。所以选C。
+立体角一圈下来是$4\pi$。不要光算一个立体角就选D。应该看这个立体角占总立体角的比例。那个50 percent纯属迷惑信息，不要选。选C。
 57. ![[Pasted image 20260812155901.png|centering|300]]
 无语了。选个方差最小的就行了。
 58. ![[Pasted image 20260812160502.png|centering|300]]
-选E。X射线使用电子轰击金属。电子被金属电磁作用导致减速，释放连续谱的辐射。这是第一种辐射，也就是bremsstrahlung。然后金属的内层电子被激发，又跃迁下来，产生离散谱的辐射。这是第二种辐射。第二种要能量足够大，才行。
+选E。X射线使用电子轰击金属。电子被金属电磁作用导致减速，释放连续谱的辐射。这是第一种辐射，也就是bremsstrahlung。（回忆起电荷加速产生的辐射为$\propto e^{2}a^{2}$。）然后金属的内层电子被激发，又跃迁下来，产生离散谱的辐射。这是第二种辐射。第二种要能量足够大，才行。
 59. 平行轴定理。令刚体绕过质心的轴的转动惯量为$I$。那么刚体绕距离质心$a$的平行轴的转动惯量为$I+Ma^{2}$。圆盘转动惯量$\frac{1}{2}MR^{2}$。实心球转动惯量$\frac{2}{5}MR^{2}$。空心球壳转动惯量$\frac{2}{3}MR^{2}$。实心长方体转动惯量$\frac{1}{12}M(a^{2}+b^{2})$。杆绕中心的转动惯量$\frac{1}{12}ML^{2}$。
 60. ![[Pasted image 20260812163015.png|centering|300]]
-无语了。这题它说speed increasing，意思是说切向加速度。不是说总加速度。
+无语了。这题它说speed increasing，意思是说切向加速度。不是说总加速度。选C。
 
 61. ![[Pasted image 20260812164831.png|centering|300]]
 如果要用自然单位制的话，SI单位的速度也要换算。选D。
 62. ![[Pasted image 20260812165118.png|centering|300]]
 读题问题。$S^{'}$中同时发生的意思不是说这两个事件在两个参考系发生的时间点一样。而是说这两个事件是在$S^{'}$中同时发生的，间隔为零。显然$(\Delta x)^{2}-c^{2}(\Delta t)^{2}=(\Delta x^{'})^{2}>0$选C。
 63. ![[Pasted image 20260812165349.png|centering|300]]
-选D。用右手定则看积分正负是不可靠的。
+选D。注意是work done by the gas，而不是work done on the gas。用右手定则看积分正负是不可靠的。
 64. 对于理想气体，其速度rms可以这样计算：$\frac{1}{2}m\langle v^{2}\rangle= \frac{3}{2}kT$。但是，速度rms绝不是Maxwell分布的最高点。由于Maxwell分布是boltzmann factor推出来的，简单推导会发现最高点速度满足$\frac{1}{2}mv^{2}= kT$。
-65. ![[Pasted image 20260813133710.png|centering|300]]该题中，波矢$k$应当不变。
+65. ![[Pasted image 20260813133710.png|centering|300]]该题中，波矢$k$应当不变。选$B$。
 66. ![[Pasted image 20260813140352.png|centering|300]]
-回忆起，primitive cell是一种特殊的unit cell。它将每个真实原子当作格点。primitive cell的每个只包含一个原子。bcc的primitive cell的primitive vector都是斜着取的。不是沿着棱取的。这里一个conventional unit cell体积$a^{3}$，包含两个原子。所以一个primitive cell只包含一个原子。
+回忆起，primitive cell是一种特殊的unit cell。它将每个真实原子当作格点。primitive cell的每个只包含一个原子。bcc的primitive cell的primitive vector都是斜着取的。不是沿着棱取的。这里一个conventional unit cell体积$a^{3}$，包含两个原子。所以一个primitive cell只包含一个原子。选C。
 67. ![[Pasted image 20260813140749.png|centering|300]]
 选B。不用考虑高温的声子散射使得电阻率再升高的情况。
 68. ![[Pasted image 20260813144115.png|centering|300]]
