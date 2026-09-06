@@ -105,7 +105,7 @@ $$\begin{align}
  & = \text{Var}\left(  \frac{\partial f}{\partial x}\delta x \right)+ \text{Var}\left(  \frac{\partial f}{\partial y}\delta y \right) \\
  & = \left(  \frac{\partial f}{\partial x} \right)^{2} \sigma_{x}^{2}+ \left(  \frac{\partial f}{\partial y} \right)^{2}\sigma_{y}^{2}
 \end{align}$$
-例如$Z=XY$。那么近似有$\left( \frac{\sigma_{Z}}{Z} \right)^{2}=\left(  \frac{\sigma_{X}}{X} \right)^{2}+\left(  \frac{\sigma_{Y}}{Y} \right)^{2}$。类似地，$Z= \frac{X}{Y}$，同样有$\left( \frac{\sigma_{Z}}{Z} \right)^{2}=\left(  \frac{\sigma_{X}}{X} \right)^{2}+\left(  \frac{\sigma_{Y}}{Y} \right)^{2}$。
+例如$Z=XY$。那么近似有$\left( \frac{\sigma_{Z}}{Z} \right)^{2}=\left(  \frac{\sigma_{X}}{X} \right)^{2}+\left(  \frac{\sigma_{Y}}{Y} \right)^{2}$。此处，$X,Y$必须是不同变量。类似地，$Z= \frac{X}{Y}$，同样有$\left( \frac{\sigma_{Z}}{Z} \right)^{2}=\left(  \frac{\sigma_{X}}{X} \right)^{2}+\left(  \frac{\sigma_{Y}}{Y} \right)^{2}$。
 
 36. ![[Pasted image 20260810150406.png|centering|300]]
 不要用$\hbar k$乱猜。稍微算一下，都不用动笔，根据积分的奇偶selection rule就知道是A。
@@ -256,6 +256,17 @@ $$\begin{align}
 
 100. ![[Pasted image 20260906170204.png|centering|300]]
 选A。要扫描比较广的波长范围，B, C, D, E中的激光器都做不到。因为它们都是频率相当固定的。只有A，用染料分子作介质。由于染料分子结构复杂，自由度很多，可以激发的谱更加“连续”，所以可以产生比较广范围的光。
+
+101. ![[Pasted image 20260906171517.png|centering|300]]
+选E。可以证明，任何球面上的电势都只与球面内电荷有关，并且可以写成$\frac{Q_{\text{tot}}}{4\pi\epsilon_{0}r}$的形式。取任意球面，作面积分可以得到$4\pi r^{2}E= \frac{Q_{\text{tot}}}{\epsilon_{0}}$。然后可以解得$E$垂直于面的分量。从无穷远处沿垂直方向对$E$积分即得到电势。可以看出，电场不一定垂直于球面，但是电势由于只在意沿着积分线的分量，一定具有$\frac{Q_{\text{tot}}}{4\pi\epsilon_{0}r}$的形式。电场却不一定有良好的形式。
+102. ![[Pasted image 20260906172226.png|centering|300]]
+显然，$T= \frac{1}{2}mv^{2}\implies\delta T= mv \delta v\implies \frac{\delta T}{T}=2 \frac{\delta v}{v}$。所以选D。
+103. ![[Pasted image 20260906172356.png|centering|300]]
+一定要看清楚，$k$是$x<0$的波矢。选A而不是D。
+104. ![[Pasted image 20260906172528.png|centering|300]]
+Resolving power的定义为$\frac{\lambda}{\Delta \lambda}= \frac{500}{502-500}=250$选B。
+105. ![[Pasted image 20260906173459.png|centering|500]]
+电子被加速，如果达到气体分子的离散能级，那么非弹性碰撞。自身能量降低，呈现出电流的低点。第一个低点是发生一次碰撞。之后再增加电压，由于能量脱离了离散的能级，又不碰撞，电流增加。直到增加到能发生两次碰撞（二阶散射）的情况。这时刚好是两次离散的能级，即$9.8=2\times{4}.9$。之后就是三次。选C。
 
 
 
