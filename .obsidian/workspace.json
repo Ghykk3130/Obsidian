@@ -3249,8 +3249,7 @@
               "title": "Search"
             }
           }
-        ],
-        "currentTab": 3
+        ]
       }
     ],
     "direction": "horizontal",
@@ -3368,8 +3367,13 @@
       "obsidian-shellcommands:Shell commands: Custom variables": false
     }
   },
-  "active": "f69ba2cf946ad0e0",
+  "active": "ccca60186663a2a5",
   "lastOpenFiles": [
+    "Pictures/Pasted image 20260906170204.png",
+    "Pictures/Pasted image 20260906165812.png",
+    "Pictures/Pasted image 20260906165445.png",
+    "Pictures/Pasted image 20260906165042.png",
+    "Pictures/Pasted image 20260906164825.png",
     "Notes/位力定理.md",
     "Notes/GRE物理.md",
     "Notes/熵.md",
@@ -3383,8 +3387,6 @@
     "Homework/Physics 513/Physics 513 homework 1.md",
     "Pictures/9e852bc6cd6908e5c9f9a0ce8ea397a1.jpg",
     "Pictures/2b3b2050065bb313d9f0e1726c1917ec.jpg",
-    "Pictures/e9fe743e210eb191f71c2bdd70ab2122.jpg",
-    "Pictures/d50b544474bb78038b2b769f204c9eac.jpg",
     "Homework/Physics 520/Physics 520 homework 1 problem set.md",
     "Experimental/Ratio Transformer.md",
     "Experimental/Isolation Transformer.md",
@@ -3400,12 +3402,9 @@
     "Notes/Untitled 1.md",
     "Notes/Untitled.md",
     "Notes/Untitled 5.md",
-    "Pictures/b1cf1a8d5fa264522ff5eeb605b6d09e.jpg",
-    "Pictures/e397e3110a4f7d58903dd8a32db6c52b.jpg",
     "Notes/Bloch定理2.md",
     "Notes/Bloch定理.md",
     "Notes/AB效应.md",
-    "Homework/Physics 520/Physics 520 homework 0.md",
     "Homework/Physics 520",
     "Homework/Physics 513",
     "Pictures/GRE镇考机经词7.0-乱序（2026年版）.pdf",
