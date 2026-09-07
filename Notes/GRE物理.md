@@ -250,7 +250,7 @@ $$\begin{align}
 排布是$[\text{He}]2s^{2}2p^{{3}}$。其中看$J$我们只需要看最外层，也就是p轨道。显然三个电子有$m_{S}= \frac{3}{2}$，$m_{L}=0$。所以$S= \frac{3}{2},\ L=0$。所以$J=|S-L|= \frac{3}{2}$。选C。回忆起Hund规则要求小于等于半满，取$J=|S-L|$。大于半满取$J=S+L$。
 
 98. ![[Pasted image 20260906165445.png|centering|400]]
-看清楚题。说的是核子释放的电磁波，不是原子释放的电磁波。核子跃迁产生gamma射线，选A。
+看清楚题。说的是核子释放的电磁波，不是原子释放的电磁波。核子跃迁产生gamma射线，选A。注意读题。
 99. ![[Pasted image 20260906165812.png|centering|400]]
 自己接受自己的反射波。这就相当于波源和接收者同时在动，并且是对向移动。计算$f^{'}=f \frac{v+v_{o}}{v-v_{s}}$。选E。
 
@@ -262,11 +262,35 @@ $$\begin{align}
 102. ![[Pasted image 20260906172226.png|centering|300]]
 显然，$T= \frac{1}{2}mv^{2}\implies\delta T= mv \delta v\implies \frac{\delta T}{T}=2 \frac{\delta v}{v}$。所以选D。
 103. ![[Pasted image 20260906172356.png|centering|300]]
-一定要看清楚，$k$是$x<0$的波矢。选A而不是D。
+一定要看清楚，$k$是$x<0$的波矢。选A而不是D。注意读题。
 104. ![[Pasted image 20260906172528.png|centering|300]]
 Resolving power的定义为$\frac{\lambda}{\Delta \lambda}= \frac{500}{502-500}=250$选B。
 105. ![[Pasted image 20260906173459.png|centering|500]]
 电子被加速，如果达到气体分子的离散能级，那么非弹性碰撞。自身能量降低，呈现出电流的低点。第一个低点是发生一次碰撞。之后再增加电压，由于能量脱离了离散的能级，又不碰撞，电流增加。直到增加到能发生两次碰撞（二阶散射）的情况。这时刚好是两次离散的能级，即$9.8=2\times{4}.9$。之后就是三次。选C。
+106. ![[Pasted image 20260906190853.png|centering|400]]
+强子hadron分为介子meson和重子baryon。介子有两个相反的夸克构成。重子由三个夸克构成。轻子不由夸克构成。
+107. ![[Pasted image 20260906191627.png|centering|300]]
+对m列出运动方程，发现离心力为$\frac{GmM}{r^{2}}+ \frac{Gm^{2}}{(2r)^{2}}$。和普通的单体行星绕恒星运动问题的离心力$\frac{GmM^{'}}{r^{2}}$比较，可以看出$M^{'}= M+ \frac{m}{4}$。选D。
+108. ![[Pasted image 20260906192249.png|centering|300]]
+注意，这里说表面是完全反射的。所以实际上光子动量是从$p$变成$-p$。传导给地球的动量应该是$1000\times{3} \times 2 \frac{1}{c}$。选C。注意读题。
+109. ![[Pasted image 20260906192531.png|centering|300]]
+不要忘记算垂直速度。选B。
+
+110. ![[Pasted image 20260906192804.png|centering|300]]
+好好算吧，不要因为对称性就选B。实际上守恒量是电荷。总电荷为$CV_{0}$。假设终态原来的电容器电压变为$V$。那么$CV+ \frac{C}{2}V=Q=CV_{0}\implies V= \frac{2V_{0}}{3}$。
+
+111. GRE的计算很多时候并没有想象中耗时间。要勇于计算。
+112. 读题非常重要。
+113. ![[Pasted image 20260906193150.png|centering|300]]
+注意题中给出介质是抗磁介质。所以$\mu_{r}<1$。选C。注意读题。
+114. ![[Pasted image 20260906193636.png|centering|300]]
+这其实就是说，存在$\theta_{1}$使得$2d \cos \theta_{1}=\lambda$，并且存在$\theta_{2}$使得$2d\cos \theta_{2}=2\lambda$。而由$\cos \theta_{1}, \cos \theta_{2}<1$解得$\lambda<2d, \lambda<d$两个条件。显然应该取更加严格的条件。选D。
+115. ![[Pasted image 20260906193844.png|centering|300]]
+不要忘记电偶极跃迁选择规则还有parity selection rule，因为$\bra{l_{f},m_{l_{f}}}r^{1}_{q}\ket{l_{i},m_{l_{i}}}\propto \bra{1, l_{i},q,m_{l_{i}}}l_{f},m_{l_{f}}\rangle$。它不为零的其中一个条件为满足三角不等式$|l_{i}-1|\leq l_{f}\leq l_{i}+1$，得到$l_{f}=0,1,2$。但是由于$\ket{l_{f}=1,m_{l_{f}}}, \ket{l_{i}=1,m_{l_{i}}}$都是奇宇称，$r$也是奇宇称，会得到零。回忆起宇称为$(-1)^{l}$。选B。
+116. ![[Pasted image 20260906195443.png|centering|600]]
+考虑原子在移动。那么由Doppler公式可得释放的光子的频率为$f^{'}=f \sqrt{  \frac{1-v}{1+v} }=f(1-v)^{1/2}(1+ v)^{-1/2}\approx f\left( 1- \frac{v}{2} \right)\left( 1- \frac{v}{2} \right)\approx f(1-v)$。这来源于Doppler波长偏移公式$\lambda^{'}=\lambda \sqrt{ \frac{1+v}{1-v} }$。于是lab frame中观测到的频率偏移为$\frac{|\Delta f|}{f}=v$。由于$E= hf\implies \frac{\Delta E}{E}= \frac{\Delta f}{f}=v = \frac{v}{c}$。这里看到偏移的$v$大概是$0.1\text{ mm/s}$。所以$\Delta E= \frac{10^{-4}}{3 \times 10^{8}} \times 14.4 \times 10^{3}\times 1.6 \times 10^{-19}=\frac{14.4 \times 1.6}{3}\times 10^{-28}$。于是$\Delta t\sim \frac{\hbar}{\Delta E}\approx 100\text{ ns}$。选C。
+
+
 
 
 
