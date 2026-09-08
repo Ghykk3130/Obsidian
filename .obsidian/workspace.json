@@ -3217,16 +3217,30 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Notes/量纲分析.md",
+                "file": "Homework/Physics 513/Physics 513 homework 1.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "量纲分析"
+              "title": "Physics 513 homework 1"
+            }
+          },
+          {
+            "id": "0f036ed6a1f7f76f",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Homework/Physics 513/Physics 513 homework 2.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Physics 513 homework 2"
             }
           }
         ],
-        "currentTab": 229
+        "currentTab": 230
       }
     ],
     "direction": "vertical"
@@ -3295,7 +3309,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 200,
+    "collapsed": true
   },
   "right": {
     "id": "9003d078f8dbc4ed",
@@ -3409,11 +3424,13 @@
       "obsidian-shellcommands:Shell commands: Custom variables": false
     }
   },
-  "active": "72282f12cda9bb11",
+  "active": "0f036ed6a1f7f76f",
   "lastOpenFiles": [
+    "Notes/量纲分析.md",
+    "Homework/Physics 513/Physics 513 homework 2.md",
+    "Homework/Physics 513/Physics 513 homework 1.md",
     "Notes/黑体辐射.md",
     "Notes/音程.md",
-    "Notes/量纲分析.md",
     "Notes/正规矩阵的对角化.md",
     "Notes/标量场.md",
     "Notes/流体的基本方程.md",
@@ -3435,7 +3452,6 @@
     "Notes/最大功.md",
     "Notes/Lorentz群.md",
     "Homework/Physics 520/Physics 520 homework 1.md",
-    "Homework/Physics 513/Physics 513 homework 1.md",
     "Homework/Physics 520/Physics 520 homework 1 problem set.md",
     "Experimental/Ratio Transformer.md",
     "Experimental/Isolation Transformer.md",
@@ -3446,7 +3462,6 @@
     "Notes/Untitled 12.md",
     "Notes/Untitled 11.md",
     "Notes/Untitled 10.md",
-    "Notes/Untitled 9.md",
     "Homework/Physics 520",
     "Homework/Physics 513",
     "Pictures/GRE镇考机经词7.0-乱序（2026年版）.pdf",
