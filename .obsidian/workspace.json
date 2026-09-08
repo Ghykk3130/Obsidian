@@ -3231,16 +3231,30 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Homework/Physics 513/Physics 513 homework 2.md",
+                "file": "Notes/标量场.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Physics 513 homework 2"
+              "title": "标量场"
+            }
+          },
+          {
+            "id": "32e2ed3f87da9bf6",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Notes/经典场论.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "经典场论"
             }
           }
         ],
-        "currentTab": 230
+        "currentTab": 231
       }
     ],
     "direction": "vertical"
@@ -3294,7 +3308,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "Riemann cauchy",
+                "query": "",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -3424,11 +3438,12 @@
       "obsidian-shellcommands:Shell commands: Custom variables": false
     }
   },
-  "active": "0f036ed6a1f7f76f",
+  "active": "32e2ed3f87da9bf6",
   "lastOpenFiles": [
-    "Notes/全纯函数.md",
-    "Homework/Physics 513/Physics 513 homework 2.md",
     "Notes/标量场.md",
+    "Notes/经典场论.md",
+    "Homework/Physics 513/Physics 513 homework 2.md",
+    "Notes/全纯函数.md",
     "Homework/Physics 520/Physics 520 homework 1.md",
     "Notes/Bloch定理2.md",
     "Notes/Bloch定理.md",
@@ -3461,7 +3476,6 @@
     "Notes/最大功.md",
     "Notes/Lorentz群.md",
     "Homework/Physics 520/Physics 520 homework 1 problem set.md",
-    "Experimental/Ratio Transformer.md",
     "Homework/Physics 520",
     "Homework/Physics 513",
     "Pictures/GRE镇考机经词7.0-乱序（2026年版）.pdf",
