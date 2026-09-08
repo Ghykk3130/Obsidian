@@ -91,7 +91,32 @@ Similarly, $[\mu \phi_{1}\phi_{2}^{2}]=4\implies[\mu]=1$. $[\lambda \phi_{1}^{2}
 We have:
 $$\begin{align}
 \frac{\partial\mathcal{L}}{\partial(\partial_{\mu}\phi)} & = \frac{\partial}{\partial(\partial_{\mu }\phi)}(g^{\rho \sigma}\partial_{\sigma}\phi ^{*}\partial_{\rho}\phi) \\
- & = 
+ & = g^{\mu \sigma}\partial_{\sigma }\phi ^{*} \\
+ & = \partial^{\mu}\phi ^{*}
 \end{align}$$
+We also have:
+$$\begin{align}
+\frac{\partial\mathcal{L}}{\partial \phi} & = -m^{2}\phi ^{*}- V^{'}\phi ^{*}
+\end{align}$$
+Therefore, the Euler-Lagrange equation for $\phi ^{*}$ is:
+$$\begin{align}
+ & \partial_{\mu}\partial^{\mu}\phi ^{*}+m^{2}\phi ^{*}+V^{'}\phi ^{*}=0 \\
+\implies & (\Box+m^{2}+V^{'})\phi ^{*}=0
+\end{align}$$
+Next, we compute:
+$$\begin{align}
+\frac{\partial\mathcal{L}}{\partial(\partial_{\mu}\phi ^{*})} & = \partial^{\mu}\phi
+\end{align}$$
+Similarly:
+$$\begin{align}
+\frac{\partial\mathcal{L}}{\partial \phi ^{*}} & = -m^{2}\phi- V^{'}\phi
+\end{align}$$
+Therefore, the Euler-Lagrange equation for $\phi$ is:
+$$\begin{align}
+ & \partial_{\mu}\partial^{\mu}\phi+m^{2}\phi+V^{'}\phi=0 \\
+\implies & (\Box\phi+m^{2}+V^{'})\phi=0
+\end{align}$$
+## (b)
+
 
 
