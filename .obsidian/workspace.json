@@ -3231,12 +3231,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Notes/标量场.md",
+                "file": "Notes/近自由电子模型.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "标量场"
+              "title": "近自由电子模型"
             }
           }
         ],
@@ -3294,7 +3294,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "标量场",
+                "query": "近自由",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -3310,8 +3310,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200,
-    "collapsed": true
+    "width": 200
   },
   "right": {
     "id": "9003d078f8dbc4ed",
@@ -3427,12 +3426,12 @@
   },
   "active": "0f036ed6a1f7f76f",
   "lastOpenFiles": [
+    "Notes/标量场.md",
     "Homework/Physics 513/Physics 513 homework 2.md",
     "Notes/Hamiltonian Formulation of EM.md",
     "Notes/流体的动力学与热力学函数.md",
     "Notes/热力学势.md",
     "Homework/Physics 513/Physics 513 homework 1.md",
-    "Notes/标量场.md",
     "Notes/量纲分析.md",
     "Notes/黑体辐射.md",
     "Notes/音程.md",
