@@ -3294,7 +3294,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "标量场",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -3426,13 +3426,13 @@
   },
   "active": "0f036ed6a1f7f76f",
   "lastOpenFiles": [
-    "Notes/量纲分析.md",
-    "Homework/Physics 513/Physics 513 homework 2.md",
     "Homework/Physics 513/Physics 513 homework 1.md",
+    "Homework/Physics 513/Physics 513 homework 2.md",
+    "Notes/标量场.md",
+    "Notes/量纲分析.md",
     "Notes/黑体辐射.md",
     "Notes/音程.md",
     "Notes/正规矩阵的对角化.md",
-    "Notes/标量场.md",
     "Notes/流体的基本方程.md",
     "Notes/李群，李代数.md",
     "Notes/Berry curvature的时间和空间反演对称性.md",
