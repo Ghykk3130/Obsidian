@@ -62,15 +62,36 @@ $$\begin{align}
 \pi_{1} & = \frac{\partial\mathcal{L}}{\partial(\partial_{0}\phi_{1})} \\
  & = \frac{\partial}{\partial(\partial_{0}\phi_{1})}((\partial_{0}\phi_{1})^{2}) \\
  & = 2\partial_{0}\phi_{1} \\
- & = 2\partial^{0}\phi_{1}
+ & = 2  \dot{\phi}_{1}
 \end{align}$$
 Similarly:
 $$\begin{align}
 \pi_{2} & = \frac{\partial\mathcal{L}}{\partial(\partial_{0}\phi_{2})} \\
  & = \frac{\partial}{\partial(\partial_{0}\phi_{1})}((\partial_{0}\phi_{2})^{2}) \\
  & = 2\partial_{0}\phi_{2} \\
- & = 2\partial^{0}\phi_{2}
+ & = 2  \dot{\phi}_{2}
 \end{align}
 $$
 ## (c)
+
+We perform the Legendre transformation:
+$$\begin{align}
+\mathcal{H} & = \pi_{a}  \dot{\phi}_{a}-\mathcal{L} \\
+ & = 2(\dot{\phi}_{1})^{2}+  2(\dot{\phi}_{2})^{2}-\partial_{\mu}\phi_{1}\partial^{\mu}\phi_{1}-\partial_{\mu}\phi_{2}\partial^{\mu}\phi_{2}+m^{2}\phi_{1}^{2}+\mu \phi_{1}\phi^{2}+\lambda \phi_{1}^{2}\phi_{2}^{2} \\
+ & = (\dot{\phi}_{1})^{2}+|\nabla \phi_{1}|^{2}+(\dot{\phi}_{2})^{2}+|\nabla \phi_{2} |^{2}+m^{2}\phi_{1}^{2}+\mu \phi_{1}\phi_{2}^{2}+\lambda \phi_{1}^{2}\phi_{2}^{2}
+\end{align}$$
+## (d)
+
+Know that $[\mathcal{L}]=4$, and $[\partial_{\mu}]=[\partial^{\mu}]=1$. Therefore $[\phi]=1$. Observe in the lagrangian we have the term $m^{2}\phi_{1}^{2}$. Then $[m^{2}\phi_{1}^{2}]=4$. Then $[m]=1$. 
+
+Similarly, $[\mu \phi_{1}\phi_{2}^{2}]=4\implies[\mu]=1$. $[\lambda \phi_{1}^{2}\phi_{2}^{2}]=4\implies [\lambda]=0$.
+# Problem 3
+## (a)
+
+We have:
+$$\begin{align}
+\frac{\partial\mathcal{L}}{\partial(\partial_{\mu}\phi)} & = \frac{\partial}{\partial(\partial_{\mu }\phi)}(g^{\rho \sigma}\partial_{\sigma}\phi ^{*}\partial_{\rho}\phi) \\
+ & = 
+\end{align}$$
+
 
