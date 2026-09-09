@@ -118,5 +118,85 @@ $$\begin{align}
 \end{align}$$
 ## (b)
 
+We have:
+$$\begin{align}
+\pi_{1} & = \frac{\partial\mathcal{L}}{\partial(  \dot{\phi})}= \dot{\phi}^{*}
+\end{align}$$
+This is the canonical momenta conjugate to $\phi$. Similarly:
+$$\begin{align}
+\pi_{2} & = \frac{\partial\mathcal{L}}{\partial   \dot{\phi}^{*}}= \dot{\phi}
+\end{align}$$
+The hamiltonian is given by:
+$$\begin{align}
+\mathcal{H} & = \pi_{1}  \dot{\phi}+\pi_{2}  \dot{\phi}^{*}-\partial_{\mu}\phi ^{*}\partial^{\mu}\phi+m^{2}\phi ^{*}\phi-V \\
+ & = 2|\dot{\phi} |^{2}-|\dot{\phi} |^{2}+|\nabla \phi|^{2}+m^{2} |\phi|^{2}-V \\
+ & = |\dot{\phi} |^{2}+|\nabla \phi|^{2}+m^{2}|\phi |^{2}-V
+\end{align}$$
+## (c)
+
+Since $\alpha$ is independent of $x^{\mu}$, we have:
+$$\begin{align}
+\partial_{\mu}\phi ^{*} \partial^{\mu}\phi & = \partial_{\mu}(e^{-i\alpha}\phi ^{*})\partial^{\mu}(e^{i\alpha}\phi ^{*}) \\
+ & = e^{-i\alpha}e^{i\alpha}\partial_{\mu}\phi ^{*}\partial^{\mu}\phi \\
+ & = \partial_{\mu}\phi ^{*}\partial^{\mu}\phi
+\end{align}$$
+Even more obviously:
+$$(e^{-i\alpha}\phi ^{*})e^{i\alpha}\phi= \phi ^{*}\phi$$
+Therefore:
+$$\begin{align}
+\mathcal{L}^{'} & = \partial_{\mu}(e^{-i\alpha}\phi ^{*})\partial^{\mu}(e^{i\alpha}\phi)-m^{2}(e^{-i\alpha}\phi ^{*})(e^{i\alpha}\phi)-V(e^{-i\alpha}\phi ^{*}e^{i\alpha}\phi) \\
+ & = \partial_{\mu}\phi ^{*}\partial^{\mu}\phi-m^{2}\phi ^{*}\phi-V(\phi ^{*}\phi)=\mathcal{L}
+\end{align}$$
+The lagrangian is invariant.
+## (c)
+
+Assume that $\alpha$ is infinitesimal, the field is transformed by:
+$$\begin{align}
+\phi & \mapsto e^{i\alpha}\phi \\
+ & = (1+i\alpha)\phi
+\end{align}$$
+Then $\bar{\delta}\phi=i\alpha \phi$. Similarly, $\bar{\delta}\phi ^{*}=-i\alpha \phi ^{*}$. Then Noether current is given by:
+$$\begin{align}
+j^{\mu} & =   \frac{\partial\mathcal{L}}{\partial(\partial_{\mu}\phi)}\bar{\delta}\phi+ \frac{\partial\mathcal{L}}{\partial(\partial_{\mu}\phi ^{*})}\bar{\delta}\phi ^{*} \\
+ & = (\partial^{\mu}\phi ^{*} )i\alpha \phi+(\partial^{\mu}\phi)(-i\alpha \phi ^{*}) \\
+ & = -i\alpha \phi ^{*} \overset{\leftrightarrow}{\partial^{\mu}}\phi ^{} 
+\end{align}$$
+# Problem 4
+## (a)
+
+We have:
+$$\begin{align}
+\mathcal{L}&=- \frac{1}{4}F_{\mu \nu}F^{\mu \nu}
+ \\
+ & =- \frac{1}{4}(\partial_{\mu}A_{\nu}-\partial_{\nu}A_{\mu})(\partial^{\mu}A^{\nu}-\partial^{\nu}A^{\mu}) \\
+ & = - \frac{1}{4}(\partial_{\mu}A_{\nu})\partial^{\mu}A^{\nu}+ \frac{1}{4}(\partial_{\nu}A_{\mu})\partial^{\mu}A^{\nu}+ \frac{1}{4}(\partial_{\mu}A_{\nu})\partial^{\nu}A^{\mu}- \frac{1}{4}(\partial_{\nu}A_{\mu})\partial^{\nu}A^{\mu}
+\end{align}$$
+Then $\frac{\partial\mathcal{L}}{\partial A_{\mu}}=0$. It's easy to compute:
+$$\begin{align}
+\frac{\partial}{\partial (\partial_{\mu}A_{\nu})}((\partial_{\rho}A_{\sigma})\partial^{\rho}A^{\sigma}) & = \frac{\partial}{\partial(\partial_{\mu}A_{\nu})}(g^{\rho \alpha}g^{\sigma \beta}(\partial_{\rho}A_{\sigma})\partial_{\alpha}A_{\beta}) \\
+ & = g^{\mu \alpha}g^{\nu \beta}\partial_{\alpha}A_{\beta}+ g^{\rho \mu}g^{\sigma \nu}\partial_{\rho}A_{\sigma} \\
+ & = 2\partial^{\mu}A^{\nu}
+\end{align}$$
+$$\begin{align}
+\frac{\partial}{\partial(\partial_{\mu}A_{\nu})} ((\partial_{\rho}A_{\sigma})\partial^{\sigma}A^{\rho}) & = \frac{\partial }{\partial(\partial_{\mu}A_{\nu}) }(g^{\sigma \alpha}g^{\rho \beta}(\partial_{\rho}A_{\sigma})\partial_{\alpha}A_{\beta}) \\
+ & = g^{\nu \alpha}g^{\mu \beta}\partial_{\alpha}A_{\beta}+ g^{\sigma \mu}g^{\rho \nu}\partial_{\rho}A_{\sigma} \\
+ & = \partial_{}^{\nu}A_{}^{\mu}
+\end{align}$$
+Therefore:
+$$\begin{align}
+\frac{\partial\mathcal{L}}{\partial(\partial_{\mu}A_{\nu})} &=- \frac{1}{2}\partial^{\mu}A^{\nu}+ \frac{1}{2}\partial^{\nu}A^{\mu}+ \frac{1}{2}\partial^{\nu}A^{\mu}- \frac{1}{2}\partial^{\mu}A^{\nu}\\
+ & = \partial^{\nu}A^{\mu}-\partial^{\mu}A^{\nu}
+\end{align}$$
+Then:
+$$\begin{align}
+\partial_{\mu} \frac{\mathcal{L}}{\partial(\partial_{\mu}A_{\nu})} & = \partial_{\mu}\partial^{\nu}A^{\mu}-\Box A^{\nu}=0
+\end{align}$$
+Take $\nu=0$, we have:
+$$\begin{align}
+ & \partial_{\mu}\partial^{0}A^{\mu}-\Box \phi=0 \\
+\implies & \frac{\partial}{\partial t}\left(  \frac{\partial \phi}{\partial t}-\nabla \cdot \mathbf{A} \right)-\Box\phi=0 \\
+\implies & \nabla^{2}\phi= \frac{\partial}{\partial t}(\nabla \cdot \mathbf{A}) \\
+\implies & \nabla \cdot \mathbf{E}=- \frac{\partial}{\partial t}(\nabla \cdot \mathbf{A})
+\end{align}$$
 
 
