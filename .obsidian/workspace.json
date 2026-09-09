@@ -3245,12 +3245,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Notes/经典场论.md",
+                "file": "Notes/群论.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "经典场论"
+              "title": "群论"
             }
           }
         ],
@@ -3308,7 +3308,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "经典场论",
+                "query": "群论",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
