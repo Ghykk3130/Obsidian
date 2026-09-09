@@ -3245,12 +3245,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Homework/Physics 513/Physics 513 homework 2.md",
+                "file": "Notes/经典场论.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Physics 513 homework 2"
+              "title": "经典场论"
             }
           }
         ],
@@ -3308,7 +3308,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "标量场",
+                "query": "经典场论",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -3319,7 +3319,8 @@
               "title": "Search"
             }
           }
-        ]
+        ],
+        "currentTab": 3
       }
     ],
     "direction": "horizontal",
@@ -3440,9 +3441,9 @@
   },
   "active": "32e2ed3f87da9bf6",
   "lastOpenFiles": [
-    "Notes/标量场.md",
-    "Notes/经典场论.md",
     "Homework/Physics 513/Physics 513 homework 2.md",
+    "Notes/经典场论.md",
+    "Notes/标量场.md",
     "Notes/全纯函数.md",
     "Homework/Physics 520/Physics 520 homework 1.md",
     "Notes/Bloch定理2.md",
