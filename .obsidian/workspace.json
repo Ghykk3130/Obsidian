@@ -3259,12 +3259,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Notes/经典场论.md",
+                "file": "Homework/Physics 520/Physics 520 homework 1.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "经典场论"
+              "title": "Physics 520 homework 1"
             }
           }
         ],
@@ -3333,8 +3333,7 @@
               "title": "Search"
             }
           }
-        ],
-        "currentTab": 3
+        ]
       }
     ],
     "direction": "horizontal",
@@ -3455,11 +3454,12 @@
   },
   "active": "ea5cfdcafcd4ca9d",
   "lastOpenFiles": [
+    "Homework/Physics 520/Physics 520 homework 1 problem set.md",
+    "Notes/经典场论.md",
     "Notes/Poincare群.md",
     "Notes/Pedrottis' introduction to optics.md",
     "Notes/群论.md",
     "Homework/Physics 513/Physics 513 homework 2.md",
-    "Notes/经典场论.md",
     "Notes/标量场.md",
     "Notes/全纯函数.md",
     "Homework/Physics 520/Physics 520 homework 1.md",
@@ -3490,7 +3490,6 @@
     "Pictures/Pasted image 20260906190853.png",
     "Pictures/Pasted image 20260906173459.png",
     "Notes/位力定理.md",
-    "Notes/熵.md",
     "Homework/Physics 520",
     "Homework/Physics 513",
     "Pictures/GRE镇考机经词7.0-乱序（2026年版）.pdf",
