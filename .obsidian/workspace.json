@@ -3259,12 +3259,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Notes/Poincare群.md",
+                "file": "Notes/经典场论.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Poincare群"
+              "title": "经典场论"
             }
           }
         ],
@@ -3322,7 +3322,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "群论",
+                "query": "经典场论",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -3333,11 +3333,13 @@
               "title": "Search"
             }
           }
-        ]
+        ],
+        "currentTab": 3
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 200,
+    "collapsed": true
   },
   "right": {
     "id": "9003d078f8dbc4ed",
@@ -3453,8 +3455,8 @@
   },
   "active": "ea5cfdcafcd4ca9d",
   "lastOpenFiles": [
-    "Notes/Pedrottis' introduction to optics.md",
     "Notes/Poincare群.md",
+    "Notes/Pedrottis' introduction to optics.md",
     "Notes/群论.md",
     "Homework/Physics 513/Physics 513 homework 2.md",
     "Notes/经典场论.md",
