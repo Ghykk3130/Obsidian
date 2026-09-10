@@ -3259,12 +3259,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Notes/经典场论.md",
+                "file": "Notes/标量场.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "经典场论"
+              "title": "标量场"
             }
           }
         ],
@@ -3322,7 +3322,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "经典场论",
+                "query": "标量场",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -3454,15 +3454,15 @@
   },
   "active": "ea5cfdcafcd4ca9d",
   "lastOpenFiles": [
+    "Notes/经典场论.md",
+    "Notes/标量场.md",
     "Homework/Physics 513/Physics 513 homework 2.md",
     "Homework/Physics 520/Physics 520 homework 1.md",
     "Homework/Physics 520/Physics 520 homework 1 problem set.md",
     "Pictures/Pasted image 20260909021636.png",
-    "Notes/经典场论.md",
     "Notes/Poincare群.md",
     "Notes/Pedrottis' introduction to optics.md",
     "Notes/群论.md",
-    "Notes/标量场.md",
     "Notes/全纯函数.md",
     "Notes/Bloch定理2.md",
     "Notes/Bloch定理.md",
