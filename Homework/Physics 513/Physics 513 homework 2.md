@@ -278,6 +278,68 @@ F^{\mu \rho}F_{\rho}{}^{\nu} & = g_{\rho \sigma}F^{\mu \rho}F^{\sigma \nu} \\
  & = g_{\sigma \rho}F^{\rho \mu}F^{\nu \sigma} \\
  & = F^{\nu \sigma}F_{\sigma}{}^{\mu}
 \end{align}$$
+## (e)
+
+We already showed that:
+$$\hat{T}^{\mu \nu}=-F^{\mu \rho}F_{\rho}{}^{\nu}+ \frac{1}{4}g^{\mu \nu}F_{\rho \sigma}F^{\rho \sigma}$$
+Notice that $F_{\rho \sigma}F^{\rho \sigma}=-F_{\sigma \rho}F^{\rho \sigma}$ is just the trace. Write down the matrix multiplication:
+$$\begin{align}
+F_{\alpha \rho}F^{\rho \beta}= \begin{pmatrix}
+0 & E_{x} & E_{y} & E_{z} \\
+-E_{x} & 0 & -B_{z} & B_{y} \\
+-E_{y} & B_{z} & 0 & -B_{x} \\
+-E_{z} & -B_{y} & B_{x} & 0
+\end{pmatrix} \begin{pmatrix}
+0 & -E_{x} & -E_{y} & -E_{z} \\
+E_{x} & 0 & -B_{z} & B_{y} \\
+E_{y} & B_{z} & 0 & -B_{x} \\
+E_{z} & -B_{y} & B_{x} & 0
+\end{pmatrix}
+\end{align}$$
+The diagonal elements are just:
+$$\begin{align}
+ & F_{0\rho}F^{\rho{0}}= |\mathbf{E} |^{2} \\
+ & F_{1\rho}F^{\rho 1}= E_{x}^{2}-B_{y}^{2}-B_{z}^{2} \\
+ & F_{2 \rho}F^{\rho 2}= E_{y}^{2}-B_{z}^{2}-B_{x}^{2} \\
+ & F_{3\rho}F^{\rho 3}= E_{z}^{2}-B_{y}^{2}-B_{x}^{2}
+\end{align}$$
+Then:
+$$\begin{align}
+F_{\rho \sigma}F^{\rho \sigma} & = -(F_{0\rho}F^{\rho 0}+F_{1\rho}F^{\rho 1}+F_{2\rho}F^{\rho 2}+F_{3\rho}F^{\rho 3}) \\
+ & = -2|\mathbf{E}|^{2}+2|\mathbf{B}|^{2}
+\end{align}$$
+Similarly, we also write down the matrix multiplication:
+$$\begin{align}
+F^{\mu \rho}F_{\rho}{}^{\mu}= \begin{pmatrix}
+0 & -E_{x} & -E_{y} & -E_{z} \\
+E_{x} & 0 & -B_{z} & B_{y} \\
+E_{y} & B_{z} & 0 & -B_{x} \\
+E_{z} & -B_{y} & B_{x} & 0
+\end{pmatrix} \begin{pmatrix}
+0 & -E_{x} & -E_{y} & -E_{z} \\
+-E_{x} & 0 & B_{z} & -B_{y} \\
+-E_{y} & -B_{z} & 0 & B_{x} \\
+-E_{z} & B_{y} & -B_{x} & 0
+\end{pmatrix}
+\end{align}$$
+The elements in the first row are just:
+$$\begin{align}
+ & F^{0\rho}F_{\rho}{}^{0}=|\mathbf{E}|^{2} \\
+ & F^{0 \rho}F_{\rho}{}^{1}=(\mathbf{E}\times \mathbf{B})_{x } \\
+ & F^{0 \rho}F_{\rho}{}^{2}=(\mathbf{E}\times \mathbf{B})_{y } \\
+ & F^{0 \rho}F_{\rho}{}^{3}=(\mathbf{E}\times \mathbf{B})_{z }  
+\end{align}$$
+Then:
+$$\begin{align}
+\mathcal{E} & = \hat{T}^{00} \\
+ & = |\mathbf{E}|^{2}+ \frac{1}{4}(-2|\mathbf{E}|^{2}+2|\mathbf{B}|^{2}) \\
+ & = \frac{1}{2}(|\mathbf{E}|^{2}+|\mathbf{B}|^{2})
+\end{align}$$
+$$\begin{align}
+S^{i} & = \hat{T}^{0i} \\
+ & = F^{0\rho}F_{\rho}{}^{i} \\
+ & = (\mathbf{E}\times \mathbf{B})^{i}
+\end{align}$$
 
 
 
