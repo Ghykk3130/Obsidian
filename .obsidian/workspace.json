@@ -3259,12 +3259,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Notes/标量场.md",
+                "file": "Notes/Lorentz群.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "标量场"
+              "title": "Lorentz群"
             }
           }
         ],
@@ -3322,7 +3322,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "标量场",
+                "query": "Lorentz群",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -3338,7 +3338,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 200,
+    "collapsed": true
   },
   "right": {
     "id": "9003d078f8dbc4ed",
@@ -3454,8 +3455,8 @@
   },
   "active": "ea5cfdcafcd4ca9d",
   "lastOpenFiles": [
-    "Notes/经典场论.md",
     "Notes/标量场.md",
+    "Notes/经典场论.md",
     "Homework/Physics 513/Physics 513 homework 2.md",
     "Homework/Physics 520/Physics 520 homework 1.md",
     "Homework/Physics 520/Physics 520 homework 1 problem set.md",
