@@ -133,13 +133,13 @@ Observe these two momenta are complex conjugate to each other, just denote them 
 
 The hamiltonian is given by:
 $$\begin{align}
-\mathcal{H} & = \pi_{1}  \dot{\phi}+\pi_{2}  \dot{\phi}^{*}-\partial_{\mu}\phi ^{*}\partial^{\mu}\phi+m^{2}\phi ^{*}\phi-V \\
- & = 2|\dot{\phi} |^{2}-|\dot{\phi} |^{2}+|\nabla \phi|^{2}+m^{2} |\phi|^{2}-V \\
- & = |\dot{\phi} |^{2}+|\nabla \phi|^{2}+m^{2}|\phi |^{2}-V \\
- & = |\pi|^{2}+|\nabla \phi|^{2}+m^{2}|\phi|^{2}-V
+\mathcal{H} & = \pi_{1}  \dot{\phi}+\pi_{2}  \dot{\phi}^{*}-\partial_{\mu}\phi ^{*}\partial^{\mu}\phi+m^{2}\phi ^{*}\phi+V \\
+ & = 2|\dot{\phi} |^{2}-|\dot{\phi} |^{2}+|\nabla \phi|^{2}+m^{2} |\phi|^{2}+V \\
+ & = |\dot{\phi} |^{2}+|\nabla \phi|^{2}+m^{2}|\phi |^{2}+V \\
+ & = |\pi|^{2}+|\nabla \phi|^{2}+m^{2}|\phi|^{2}+V
 \end{align}$$
 To emphasize the independence between the variables and their complex conjugate, we can also write:
-$$\mathcal{H}= \pi \pi ^{*}+ \nabla \phi ^{*}\cdot \nabla \phi+m^{2}\phi \phi ^{*}-V(\phi \phi ^{*})$$
+$$\mathcal{H}= \pi \pi ^{*}+ \nabla \phi ^{*}\cdot \nabla \phi+m^{2}\phi \phi ^{*}+V(\phi \phi ^{*})$$
 ## (c)
 
 Since $\alpha$ is independent of $x^{\mu}$, we have:
@@ -166,8 +166,8 @@ $$\begin{align}
 Then $\alpha \Delta \phi=i\alpha \phi$. Similarly, $\alpha \Delta \phi ^{*}=-i\alpha \phi ^{*}$. We also notice that the lagrangian is invariant under the gauge transformation. Therefore the $J^{\mu}$ term in the Noether current vanishes. Then Noether current is given by:
 $$\begin{align}
 j^{\mu} & =   \frac{\partial\mathcal{L}}{\partial(\partial_{\mu}\phi)} \Delta \phi+ \frac{\partial\mathcal{L}}{\partial(\partial_{\mu}\phi ^{*})} \Delta \phi ^{*} \\
- & = (\partial^{\mu}\phi ^{*} )i\alpha \phi+(\partial^{\mu}\phi)(-i\alpha \phi ^{*}) \\
- & = -i\alpha \phi ^{*} \overset{\leftrightarrow}{\partial^{\mu}}\phi ^{} ,\ \text{where } f  \overset{\leftrightarrow}{\partial^{\mu}}g=f\partial^{\mu}g-g\partial^{\mu}f
+ & = (\partial^{\mu}\phi ^{*} )i \phi+(\partial^{\mu}\phi)(-i \phi ^{*}) \\
+ & = -i\phi ^{*} \overset{\leftrightarrow}{\partial^{\mu}}\phi ^{} ,\ \text{where } f  \overset{\leftrightarrow}{\partial^{\mu}}g=f\partial^{\mu}g-g\partial^{\mu}f
 \end{align}$$
 # Problem 4
 ## (a)
@@ -261,62 +261,34 @@ We already showed that:
 $$\hat{T}^{\mu \nu}=-F^{\mu \rho}F_{\rho}{}^{\nu}+ \frac{1}{4}g^{\mu \nu}F_{\rho \sigma}F^{\rho \sigma}$$
 Notice that $F_{\rho \sigma}F^{\rho \sigma}=-F_{\sigma \rho}F^{\rho \sigma}$ is just the trace. We have:
 $$\begin{align}
-F_{\rho \sigma}F^{\rho \sigma} & = F_{0\sigma}F^{0\sigma}+F_{\rho{0}}F^{\rho{0}}+\sum_{\rho,\sigma\neq 0}F_{\rho \sigma}F^{\rho \sigma} \\
- & = -2(F^{0\sigma})^{2}
+F_{\rho \sigma}F^{\rho \sigma} & = F_{0\sigma}F^{0\sigma}+F_{\rho{0}}F^{\rho{0}}+\sum_{\rho,\sigma\neq 0,i,j}F_{\rho \sigma}F^{\rho \sigma} \\
+ & = -2(F^{0\sigma})^{2}+\sum_{\rho,\sigma,i,j}g_{\rho \alpha}g_{\sigma \beta}\epsilon^{\alpha \beta j}B^{j}\epsilon^{\rho \sigma i}B^{i} \\
+ & = -2|\mathbf{E}|^{2}+ \sum_{\rho,\sigma,i,j}\delta^{\rho}{}_{\alpha}\delta^{\sigma}{}_{\beta}\epsilon^{\alpha \beta j}B^{j}\epsilon^{\rho \sigma i}B^{i} \\
+ & = -2|\mathbf{E}|^{2}+ \sum_{\rho,\sigma,i,j}\epsilon^{\rho \sigma j}B^{j}\epsilon^{\rho \sigma i}B^{i} \\
+ & = -2|\mathbf{E}|^{2}+\sum_{\sigma,i,j}(\delta^{\sigma}{}_{\sigma}\delta^{j}{}_{i}-\delta^{\sigma}{}_{i}\delta^{j}{}_{\sigma} )B^{j}B^{i} \\
+ & = -2|\mathbf{E}|^{2}+\sum_{i,j}(3\delta^{j}{}_{i}-\delta^{j}{}_{i})B^{j}B^{i} \\
+ & = -2|\mathbf{E}|^{2}+ 2|\mathbf{B} |^{2}
 \end{align}$$
+Note that we use the relation that if the indices are restricted to spatial, then $g_{\rho \alpha}$ is just a delta function with a minus sign.
 
+If $\mu\neq 0$, combined with the fact that $F^{0 0}=0$, we can restrict the indices in the expression below to the spatial. We have:
+$$\begin{align}
+F^{0 \rho }F_{\rho}{}^{\mu} & =
+ g_{\rho \sigma}F^{0 \rho}F^{\sigma \mu} \\
+ & = g_{\rho \sigma}E^{\rho}\epsilon^{\sigma \mu \alpha}B^{\alpha} \\
+ & = -E^{\rho}\epsilon^{\rho \mu \alpha}B^{\alpha} \\
+ & = \epsilon^{\mu \rho \alpha}E^{\rho}B^{\alpha} \\
+ & = (\mathbf{E}\times \mathbf{B})^{\mu}
+\end{align}$$
+If $\mu=0$, restrict $\rho$ to spatial to have:
+$$\begin{align}
+F^{0 \rho}F_{\rho}{}^{0} & = F^{0 \rho}g_{\rho \mu}F^{\mu{0}} \\
+ & = -F^{0\rho}F^{\rho{0}} \\
 
-
-
-
-Write down the matrix multiplication:
-$$\begin{align}
-F_{\alpha \rho}F^{\rho \beta}= \begin{pmatrix}
-0 & E_{x} & E_{y} & E_{z} \\
--E_{x} & 0 & -B_{z} & B_{y} \\
--E_{y} & B_{z} & 0 & -B_{x} \\
--E_{z} & -B_{y} & B_{x} & 0
-\end{pmatrix} \begin{pmatrix}
-0 & -E_{x} & -E_{y} & -E_{z} \\
-E_{x} & 0 & -B_{z} & B_{y} \\
-E_{y} & B_{z} & 0 & -B_{x} \\
-E_{z} & -B_{y} & B_{x} & 0
-\end{pmatrix}
+ & = (F^{0\rho})^{2} \\
+ & = |\mathbf{E}|^{2}
 \end{align}$$
-The diagonal elements are just:
-$$\begin{align}
- & F_{0\rho}F^{\rho{0}}= |\mathbf{E} |^{2} \\
- & F_{1\rho}F^{\rho 1}= E_{x}^{2}-B_{y}^{2}-B_{z}^{2} \\
- & F_{2 \rho}F^{\rho 2}= E_{y}^{2}-B_{z}^{2}-B_{x}^{2} \\
- & F_{3\rho}F^{\rho 3}= E_{z}^{2}-B_{y}^{2}-B_{x}^{2}
-\end{align}$$
-Then:
-$$\begin{align}
-F_{\rho \sigma}F^{\rho \sigma} & = -(F_{0\rho}F^{\rho 0}+F_{1\rho}F^{\rho 1}+F_{2\rho}F^{\rho 2}+F_{3\rho}F^{\rho 3}) \\
- & = -2|\mathbf{E}|^{2}+2|\mathbf{B}|^{2}
-\end{align}$$
-Similarly, we also write down the matrix multiplication:
-$$\begin{align}
-F^{\mu \rho}F_{\rho}{}^{\mu}= \begin{pmatrix}
-0 & -E_{x} & -E_{y} & -E_{z} \\
-E_{x} & 0 & -B_{z} & B_{y} \\
-E_{y} & B_{z} & 0 & -B_{x} \\
-E_{z} & -B_{y} & B_{x} & 0
-\end{pmatrix} \begin{pmatrix}
-0 & -E_{x} & -E_{y} & -E_{z} \\
--E_{x} & 0 & B_{z} & -B_{y} \\
--E_{y} & -B_{z} & 0 & B_{x} \\
--E_{z} & B_{y} & -B_{x} & 0
-\end{pmatrix}
-\end{align}$$
-The elements in the first row are just:
-$$\begin{align}
- & F^{0\rho}F_{\rho}{}^{0}=|\mathbf{E}|^{2} \\
- & F^{0 \rho}F_{\rho}{}^{1}=(\mathbf{E}\times \mathbf{B})_{x } \\
- & F^{0 \rho}F_{\rho}{}^{2}=(\mathbf{E}\times \mathbf{B})_{y } \\
- & F^{0 \rho}F_{\rho}{}^{3}=(\mathbf{E}\times \mathbf{B})_{z }  
-\end{align}$$
-Then:
+I also restrict $\mu=1,2,3$ above, since $F^{\mu{0}}=0\text{ for }\mu=0$. Then:
 $$\begin{align}
 \mathcal{E} & = \hat{T}^{00} \\
  & = |\mathbf{E}|^{2}+ \frac{1}{4}(-2|\mathbf{E}|^{2}+2|\mathbf{B}|^{2}) \\
