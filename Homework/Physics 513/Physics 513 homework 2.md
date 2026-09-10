@@ -215,52 +215,19 @@ The above two equations should give the familiar Maxwell's equations. Although t
 
 For $\partial_{\mu}F^{\mu \nu}=0$. Take $\nu=0$, we have:
 $$\begin{align}
- & 
+ & \partial_{\mu}F^{\mu{0}}=0 \\
+\implies & \partial_{\mu}F^{0\mu}=0 \\
+\implies & \frac{\partial}{\partial x^{\mu}}E^{\mu}=0 \\
+\implies & \nabla \cdot \mathbf{E}=0
 \end{align}$$
-
-
-
+Now take $\nu=1,2,3$, we have:
 $$\begin{align}
- & \partial_{\mu}\partial^{0}A^{\mu}-\Box \phi=0 \\
-\implies & \frac{\partial}{\partial t}\left(  \frac{\partial \phi}{\partial t}+\nabla \cdot \mathbf{A} \right)-\Box\phi=0 \\
-\implies & \frac{\partial^{2}}{\partial t^{2}}\phi+\frac{\partial}{\partial t}(\nabla \cdot \mathbf{A})-\left(  \frac{\partial^{2}}{\partial t^{2}}-\nabla^{2} \right)\phi=0 \\
-\implies & \nabla \cdot \frac{\partial \mathbf{A}}{\partial t}+\nabla \cdot \nabla \phi=0 \\
-\implies & \nabla \cdot\left( -\nabla \phi- \frac{\partial \mathbf{A}}{\partial t} \right)=0 \\
-\implies & \nabla \cdot \mathbf{E}=0 \end{align}$$
-Next take $\nu=1,2,3$, we have:
-$$\begin{align} \\
- & \partial_{\mu}\partial^{\nu}A^{\mu}-\Box A^{\nu}=0 \\
-
-\implies   &  \partial^{\nu}(\partial_{0}A^{0}+\partial_{1}A^{1}  +\partial_{2}A^{2}+\partial_{3}A^{3})-(\partial_{0}\partial_{0}-\partial_{1}\partial_{1}-\partial_{2}\partial_{2}-\partial_{3}\partial_{3})A^{\nu}=0 \\
-\implies & -\partial_{\nu}(\partial_{0}A^{0}+\partial_{1}A^{1}  +\partial_{2}A^{2}+\partial_{3}A^{3})-(\partial_{0}\partial_{0}-\partial_{1}\partial_{1}-\partial_{2}\partial_{2}-\partial_{3}\partial_{3})A^{\nu}=0 \\
-\implies & -\partial_{\nu}\left(  \frac{\partial \phi}{\partial t}+\nabla \cdot \mathbf{A} \right)- \frac{\partial^{2}}{\partial t^{2}}A^{\nu}+ \nabla^{2}A^{\nu}=0 \\
-\implies & \frac{\partial}{\partial t}(-\nabla \phi)-\nabla(\nabla \cdot \mathbf{A})- \frac{\partial^{2}}{\partial t^{2}}\mathbf{A}+\nabla^{2}\mathbf{A}=0
+ & \partial_{\mu}F^{\mu \nu}=0 \\
+\implies & \partial_{0}F^{0\nu}+\sum_{\mu=1}^{3}\partial_{\mu}F^{\mu \nu}=0 \\
+\implies & - \frac{\partial E^{\nu}}{\partial t}-\sum_{\mu}\epsilon^{\mu \nu \alpha}\partial_{\mu}B^{\alpha}=0 \\
+\implies & - \frac{\partial E^{\nu}}{\partial t}+(\nabla \times \mathbf{B})^{\nu}=0 \\
+\implies & \nabla \times \mathbf{B}= \frac{\partial \mathbf{E}}{\partial t}
 \end{align}$$
-Recall that:
-$$\begin{align}
- \nabla \times \mathbf{B} & = \nabla \times(\nabla \times \mathbf{A}) \\
- & = \nabla(\nabla \cdot \mathbf{A})-\nabla^{2}\mathbf{A} \\
- 
-\end{align}$$
-Then:
-$$\begin{align}
- & \frac{\partial}{\partial t}\left( -\nabla \phi- \frac{\partial \mathbf{A}}{\partial t} \right)-\nabla \times \mathbf{B}=0 \\
-\implies & \frac{\partial \mathbf{E}}{\partial t}=\nabla \times \mathbf{B}
-\end{align}$$
-For $\partial_{[\lambda}F_{\mu \nu]}=0$,  take $(\lambda,\mu,\nu)=(1,2,3)$, we have:
-$$\begin{align}
- & \partial_{1}F_{23}+\partial_{2}F_{31}+\partial_{3}F_{21}=0 \\
-\implies & \partial_{1}(-B_{x})+\partial_{2}(-B_{y})+\partial_{3}(-B_{z})=0 \\
-\implies & \nabla \cdot \mathbf{B}=0
-\end{align}$$
-Take $(\lambda,\mu,\nu)=(0,1,2)$, we have:
-$$\begin{align}
- & \partial_{0}F_{12}+\partial_{1}F_{20}+\partial_{2}F_{01}=0 \\
-\implies & \partial_{0}(-B_{z}) +\partial_{1}(-E_{y})+\partial_{2}(E_{x})=0 \\
-\implies & (\nabla \times \mathbf{E})_{z}=-\frac{\partial}{\partial t}B_{z}
-\end{align}$$
-Take $(\lambda,\mu,\nu)=(0,2,3)$, similarly we get $(\nabla \times \mathbf{E})_{x}=- \frac{\partial}{\partial t}B_{x}$. Take $(\lambda,\mu,\nu)=(0,1,3)$, similarly we get $(\nabla \times \mathbf{E})_{y}=- \frac{\partial}{\partial t}B_{y}$. Then:
-$$\nabla \times \mathbf{E}=- \frac{\partial}{\partial t}\mathbf{B}$$
 ## (c)
 
 We have:
@@ -292,7 +259,17 @@ F^{\mu \rho}F_{\rho}{}^{\nu} & = g_{\rho \sigma}F^{\mu \rho}F^{\sigma \nu} \\
 
 We already showed that:
 $$\hat{T}^{\mu \nu}=-F^{\mu \rho}F_{\rho}{}^{\nu}+ \frac{1}{4}g^{\mu \nu}F_{\rho \sigma}F^{\rho \sigma}$$
-Notice that $F_{\rho \sigma}F^{\rho \sigma}=-F_{\sigma \rho}F^{\rho \sigma}$ is just the trace. Write down the matrix multiplication:
+Notice that $F_{\rho \sigma}F^{\rho \sigma}=-F_{\sigma \rho}F^{\rho \sigma}$ is just the trace. We have:
+$$\begin{align}
+F_{\rho \sigma}F^{\rho \sigma} & = F_{0\sigma}F^{0\sigma}+F_{\rho{0}}F^{\rho{0}}+\sum_{\rho,\sigma\neq 0}F_{\rho \sigma}F^{\rho \sigma} \\
+ & = -2(F^{0\sigma})^{2}
+\end{align}$$
+
+
+
+
+
+Write down the matrix multiplication:
 $$\begin{align}
 F_{\alpha \rho}F^{\rho \beta}= \begin{pmatrix}
 0 & E_{x} & E_{y} & E_{z} \\
