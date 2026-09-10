@@ -3323,7 +3323,7 @@
               "type": "search",
               "state": {
                 "query": "标量场",
-                "matchingCase": false,
+                "matchingCase": true,
                 "explainSearch": false,
                 "collapseAll": false,
                 "extraContext": false,
@@ -3454,9 +3454,9 @@
   },
   "active": "ea5cfdcafcd4ca9d",
   "lastOpenFiles": [
-    "Notes/Lorentz群.md",
-    "Notes/标量场.md",
     "Notes/经典场论.md",
+    "Notes/标量场.md",
+    "Notes/Lorentz群.md",
     "Homework/Physics 513/Physics 513 homework 2.md",
     "Homework/Physics 520/Physics 520 homework 1.md",
     "Homework/Physics 520/Physics 520 homework 1 problem set.md",
