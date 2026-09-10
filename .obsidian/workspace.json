@@ -3322,7 +3322,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "能动",
+                "query": "EM tensor",
                 "matchingCase": true,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -3454,10 +3454,10 @@
   },
   "active": "ea5cfdcafcd4ca9d",
   "lastOpenFiles": [
-    "Notes/经典场论.md",
-    "Homework/Physics 513/Physics 513 homework 2.md",
-    "Notes/标量场.md",
     "Notes/Lorentz群.md",
+    "Homework/Physics 513/Physics 513 homework 2.md",
+    "Notes/经典场论.md",
+    "Notes/标量场.md",
     "Homework/Physics 520/Physics 520 homework 1.md",
     "Homework/Physics 520/Physics 520 homework 1 problem set.md",
     "Pictures/Pasted image 20260909021636.png",

@@ -260,6 +260,24 @@ T^{\mu \nu} & = \frac{\partial\mathcal{L}}{\partial(\partial_{\mu}A_{\rho})}\par
 \end{align}$$
 ## (d)
 
+We have:
+$$\begin{align}
+\hat{T}^{\mu \nu} & = -F^{\mu \rho}\partial^{\nu}A_{\rho}+ \frac{1}{4}g^{\mu \nu}F_{\rho \sigma}F^{\rho \sigma}+\partial_{\lambda}(F^{\mu \lambda}A^{\nu}) \\
+\end{align}$$
+Obviously, $\frac{1}{4}g^{\mu \nu}F_{\rho \sigma}F^{\rho \sigma}$ is symmetric. It suffices to show the remaining part is symmetric. Recall we derived that $\partial_{\lambda}F^{\lambda \mu}=0\implies-\partial_{\lambda}F^{\mu \lambda}=0$. Then:
+$$\begin{align}
+-F^{\mu \rho}\partial^{\nu}A_{\rho}+\partial_{\lambda}(F^{\mu \lambda}A^{\nu}) & = -F^{\mu \rho}\partial^{\nu}A_{\rho}+(\partial_{\lambda}F^{\mu \lambda})A^{\nu}+F^{\mu \lambda}\partial_{\lambda}A^{\nu} \\
+ & = -F^{\mu \rho}\partial^{\nu}A_{\rho}+F^{\mu \lambda}\partial_{\lambda}A^{\nu} \\
+ & = -F^{\mu \rho}\partial^{\nu}A_{\rho}+F^{\mu \rho}\partial_{\rho}A^{\nu} \\
+ & = F^{\mu \rho}F_{\rho}{}^{\nu} 
+\end{align}$$
+This tensor must be symmetric since:
+$$\begin{align}
+F^{\mu \rho}F_{\rho}{}^{\nu} & = g_{\rho \sigma}F^{\mu \rho}F^{\sigma \nu} \\
+ & = g_{\rho \sigma}(-F^{\rho \mu})(-F^{\nu \sigma}) \\
+ & = g_{\sigma \rho}F^{\rho \mu}F^{\nu \sigma} \\
+ & = F^{\nu \sigma}F_{\sigma}{}^{\mu}
+\end{align}$$
 
 
 
