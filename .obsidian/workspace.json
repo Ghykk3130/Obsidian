@@ -3259,12 +3259,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Notes/标量场.md",
+                "file": "Homework/Physics 513/Physics 513 homework 2.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "标量场"
+              "title": "Physics 513 homework 2"
             }
           }
         ],
@@ -3322,7 +3322,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "标量场",
+                "query": "能动",
                 "matchingCase": true,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -3333,12 +3333,12 @@
               "title": "Search"
             }
           }
-        ],
-        "currentTab": 3
+        ]
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 200,
+    "collapsed": true
   },
   "right": {
     "id": "9003d078f8dbc4ed",
@@ -3455,9 +3455,9 @@
   "active": "ea5cfdcafcd4ca9d",
   "lastOpenFiles": [
     "Notes/经典场论.md",
+    "Homework/Physics 513/Physics 513 homework 2.md",
     "Notes/标量场.md",
     "Notes/Lorentz群.md",
-    "Homework/Physics 513/Physics 513 homework 2.md",
     "Homework/Physics 520/Physics 520 homework 1.md",
     "Homework/Physics 520/Physics 520 homework 1 problem set.md",
     "Pictures/Pasted image 20260909021636.png",

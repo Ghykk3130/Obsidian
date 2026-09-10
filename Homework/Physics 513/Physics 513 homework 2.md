@@ -78,13 +78,14 @@ We perform the Legendre transformation:
 $$\begin{align}
 \mathcal{H} & = \pi_{a}  \dot{\phi}_{a}-\mathcal{L} \\
  & = 2(\dot{\phi}_{1})^{2}+  2(\dot{\phi}_{2})^{2}-\partial_{\mu}\phi_{1}\partial^{\mu}\phi_{1}-\partial_{\mu}\phi_{2}\partial^{\mu}\phi_{2}+m^{2}\phi_{1}^{2}+\mu \phi_{1}\phi^{2}+\lambda \phi_{1}^{2}\phi_{2}^{2} \\
- & = (\dot{\phi}_{1})^{2}+|\nabla \phi_{1}|^{2}+(\dot{\phi}_{2})^{2}+|\nabla \phi_{2} |^{2}+m^{2}\phi_{1}^{2}+\mu \phi_{1}\phi_{2}^{2}+\lambda \phi_{1}^{2}\phi_{2}^{2}
+ & = (\dot{\phi}_{1})^{2}+|\nabla \phi_{1}|^{2}+(\dot{\phi}_{2})^{2}+|\nabla \phi_{2} |^{2}+m^{2}\phi_{1}^{2}+\mu \phi_{1}\phi_{2}^{2}+\lambda \phi_{1}^{2}\phi_{2}^{2} \\
+ & = \frac{1}{4}\pi_{1}^{2}+ \frac{1}{4}\pi_{2}^{2}+|\nabla \phi_{1} |^{2}+|\nabla \phi_{2}|^{2}+m^{2}\phi_{1}^{2}+\mu \phi_{1}\phi_{2}^{2}+\lambda \phi_{1}^{2}\phi_{2}^{2}
 \end{align}$$
 ## (d)
 
-Know that $[\mathcal{L}]=4$, and $[\partial_{\mu}]=[\partial^{\mu}]=1$. Therefore $[\phi]=1$. Observe in the lagrangian we have the term $m^{2}\phi_{1}^{2}$. Then $[m^{2}\phi_{1}^{2}]=4$. Then $[m]=1$. 
+Know that $[\mathcal{L}]=M^{4}$, and $[\partial_{\mu}]=[\partial^{\mu}]=M^{1}$. Therefore $[\phi]=M^{1}$. Observe in the lagrangian we have the term $m^{2}\phi_{1}^{2}$. Then $[m^{2}\phi_{1}^{2}]=M^{4}$. Then $[m]=M^{1}$. The mass dimension of $m^{2}$ is $2$
 
-Similarly, $[\mu \phi_{1}\phi_{2}^{2}]=4\implies[\mu]=1$. $[\lambda \phi_{1}^{2}\phi_{2}^{2}]=4\implies [\lambda]=0$.
+Similarly, $[\mu \phi_{1}\phi_{2}^{2}]=M^{4}\implies[\mu]=M^{1}$. Its mass dimension is $1$. $[\lambda \phi_{1}^{2}\phi_{2}^{2}]=M^{4}\implies [\lambda]=M^{0}$. Its mass dimension is $0$.
 # Problem 3
 ## (a)
 
@@ -126,11 +127,14 @@ This is the canonical momenta conjugate to $\phi$. Similarly:
 $$\begin{align}
 \pi_{2} & = \frac{\partial\mathcal{L}}{\partial   \dot{\phi}^{*}}= \dot{\phi}
 \end{align}$$
+Observe these two momenta are complex conjugate to each other, just denote them as $\pi=\pi_{1},\ \pi ^{*}=\pi_{2}$.
+
 The hamiltonian is given by:
 $$\begin{align}
 \mathcal{H} & = \pi_{1}  \dot{\phi}+\pi_{2}  \dot{\phi}^{*}-\partial_{\mu}\phi ^{*}\partial^{\mu}\phi+m^{2}\phi ^{*}\phi-V \\
  & = 2|\dot{\phi} |^{2}-|\dot{\phi} |^{2}+|\nabla \phi|^{2}+m^{2} |\phi|^{2}-V \\
- & = |\dot{\phi} |^{2}+|\nabla \phi|^{2}+m^{2}|\phi |^{2}-V
+ & = |\dot{\phi} |^{2}+|\nabla \phi|^{2}+m^{2}|\phi |^{2}-V \\
+ & = |\pi|^{2}+|\nabla \phi|^{2}+m^{2}|\phi|^{2}-V
 \end{align}$$
 ## (c)
 
@@ -155,11 +159,11 @@ $$\begin{align}
 \phi & \mapsto e^{i\alpha}\phi \\
  & = (1+i\alpha)\phi
 \end{align}$$
-Then $\bar{\delta}\phi=i\alpha \phi$. Similarly, $\bar{\delta}\phi ^{*}=-i\alpha \phi ^{*}$. Then Noether current is given by:
+Then $\alpha \Delta \phi=i\alpha \phi$. Similarly, $\alpha \Delta \phi ^{*}=-i\alpha \phi ^{*}$. Then Noether current is given by:
 $$\begin{align}
-j^{\mu} & =   \frac{\partial\mathcal{L}}{\partial(\partial_{\mu}\phi)}\bar{\delta}\phi+ \frac{\partial\mathcal{L}}{\partial(\partial_{\mu}\phi ^{*})}\bar{\delta}\phi ^{*} \\
+j^{\mu} & =   \frac{\partial\mathcal{L}}{\partial(\partial_{\mu}\phi)} \Delta \phi+ \frac{\partial\mathcal{L}}{\partial(\partial_{\mu}\phi ^{*})} \Delta \phi ^{*} \\
  & = (\partial^{\mu}\phi ^{*} )i\alpha \phi+(\partial^{\mu}\phi)(-i\alpha \phi ^{*}) \\
- & = -i\alpha \phi ^{*} \overset{\leftrightarrow}{\partial^{\mu}}\phi ^{} 
+ & = -i\alpha \phi ^{*} \overset{\leftrightarrow}{\partial^{\mu}}\phi ^{} ,\ \text{where } f  \overset{\leftrightarrow}{\partial^{\mu}}g=f\partial^{\mu}g-g\partial^{\mu}f
 \end{align}$$
 # Problem 4
 ## (a)
@@ -249,6 +253,12 @@ Take $(\lambda,\mu,\nu)=(0,2,3)$, similarly we get $(\nabla \times \mathbf{E})_{
 $$\nabla \times \mathbf{E}=- \frac{\partial}{\partial t}\mathbf{B}$$
 ## (c)
 
+We have:
+$$\begin{align}
+T^{\mu \nu} & = \frac{\partial\mathcal{L}}{\partial(\partial_{\mu}A_{\rho})}\partial^{\nu}A_{\rho}-g^{\mu \nu}\mathcal{L} \\
+ & = -F^{\mu \rho}\partial^{\nu}A_{\rho}+ \frac{1}{4}g^{\mu \nu}F_{\rho \sigma}F^{\rho \sigma}
+\end{align}$$
+## (d)
 
 
 
