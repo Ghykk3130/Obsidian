@@ -55,6 +55,8 @@ Next we compute:
 $$\frac{\partial\mathcal{L}}{\partial \phi_{2}}= -2\mu \phi_{1}\phi_{2}-2\lambda \phi_{1}^{2}\phi_{2}$$
 Then the EOM of $\phi_{2}$ is:
 $$2\Box\phi_{2}+2\mu \phi_{1}\phi_{2}+2\lambda \phi_{1}^{2}\phi_{2}=0$$
+Cancel the $2$ to write it as:
+$$\Box\phi_{2}+\mu \phi_{1}\phi_{2}+\lambda \phi_{1}^{2}\phi_{2}=0$$
 ## (b)
 
 We have:
@@ -136,6 +138,8 @@ $$\begin{align}
  & = |\dot{\phi} |^{2}+|\nabla \phi|^{2}+m^{2}|\phi |^{2}-V \\
  & = |\pi|^{2}+|\nabla \phi|^{2}+m^{2}|\phi|^{2}-V
 \end{align}$$
+To emphasize the independence between the variables and their complex conjugate, we can also write:
+$$\mathcal{H}= \pi \pi ^{*}+ \nabla \phi ^{*}\cdot \nabla \phi+m^{2}\phi \phi ^{*}-V(\phi \phi ^{*})$$
 ## (c)
 
 Since $\alpha$ is independent of $x^{\mu}$, we have:
@@ -152,14 +156,14 @@ $$\begin{align}
  & = \partial_{\mu}\phi ^{*}\partial^{\mu}\phi-m^{2}\phi ^{*}\phi-V(\phi ^{*}\phi)=\mathcal{L}
 \end{align}$$
 The lagrangian is invariant.
-## (c)
+## (d)
 
 Assume that $\alpha$ is infinitesimal, the field is transformed by:
 $$\begin{align}
 \phi & \mapsto e^{i\alpha}\phi \\
  & = (1+i\alpha)\phi
 \end{align}$$
-Then $\alpha \Delta \phi=i\alpha \phi$. Similarly, $\alpha \Delta \phi ^{*}=-i\alpha \phi ^{*}$. Then Noether current is given by:
+Then $\alpha \Delta \phi=i\alpha \phi$. Similarly, $\alpha \Delta \phi ^{*}=-i\alpha \phi ^{*}$. We also notice that the lagrangian is invariant under the gauge transformation. Therefore the $J^{\mu}$ term in the Noether current vanishes. Then Noether current is given by:
 $$\begin{align}
 j^{\mu} & =   \frac{\partial\mathcal{L}}{\partial(\partial_{\mu}\phi)} \Delta \phi+ \frac{\partial\mathcal{L}}{\partial(\partial_{\mu}\phi ^{*})} \Delta \phi ^{*} \\
  & = (\partial^{\mu}\phi ^{*} )i\alpha \phi+(\partial^{\mu}\phi)(-i\alpha \phi ^{*}) \\
@@ -206,10 +210,16 @@ $$\begin{align}
  & = \partial_{\mu}\partial_{\lambda}A_{\rho}-\partial_{\lambda}\partial_{\mu}A_{\rho}+\partial_{\rho}\partial_{\mu}A_{\lambda}-\partial_{\mu}\partial_{\rho}A_{\lambda}+\partial_{\lambda}\partial_{\rho}A_{\mu}-\partial_{\rho}\partial_{\lambda}A_{\mu} \\
  & =0
 \end{align}$$
-The above two equations should give the familiar Maxwell's equations.
+The above two equations should give the familiar Maxwell's equations. Although the second so-called Bianchi equation is not asked for, I still derived it here. 
 ## (b)
 
 For $\partial_{\mu}F^{\mu \nu}=0$. Take $\nu=0$, we have:
+$$\begin{align}
+ & 
+\end{align}$$
+
+
+
 $$\begin{align}
  & \partial_{\mu}\partial^{0}A^{\mu}-\Box \phi=0 \\
 \implies & \frac{\partial}{\partial t}\left(  \frac{\partial \phi}{\partial t}+\nabla \cdot \mathbf{A} \right)-\Box\phi=0 \\
