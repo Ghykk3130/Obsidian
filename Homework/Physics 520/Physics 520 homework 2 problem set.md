@@ -1,0 +1,6 @@
+![[Pasted image 20260911163203.png|centering|700]]
+![[Pasted image 20260911163237.png|centering|700]]
+![[Pasted image 20260911163305.png|centering|700]]
+![[Pasted image 20260911163408.png|centering|700]]
+![[Pasted image 20260911163438.png|centering|700]]
+![[Pasted image 20260911163457.png|centering|700]]

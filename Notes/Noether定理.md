@@ -108,4 +108,9 @@ $$\begin{align}
 $$\boxed{T^{\mu \nu}= \frac{\partial\mathcal{L}}{\partial(\partial_{\mu}\phi)}\partial^{\nu}\phi-g^{\mu \nu}\mathcal{L}}$$
 于是存在能动张量守恒：
 $$\partial_{\mu}T^{\mu \nu}=0$$
-若最开始的$a^{\mu}$只发生在时间component，那么$\nu=0$。（一步一步看会发现$a^{\mu}$最终消掉的时候index记录为$\nu$。）得到能量守恒$\frac{\partial}{\partial t}\mathcal{H}=0$。如果最开始的$a^{\mu}$发生在空间component，那么$\nu=1,2,3$。得到动量守恒
+将空间部分积分得到：
+$$\begin{align}
+ & \frac{d}{dt}\int_{\mathbb{R}^{3}} d^{3}x T^{0\nu}=0
+\end{align}$$
+$\frac{d}{dt}\int_{\mathbb{R}^{3}}d^{3}x T^{00}=0\implies  \frac{d}{dt} \int d^{3}x \mathcal{H}=0$得到能量守恒。$\frac{d}{dt}\int_{\mathbb{R}^{3}}d^{3}x T^{0\nu}=0,\ \nu=1,2,3\implies \frac{d}{dt}\int d^{3}x \pi\partial^{\nu}\phi=0$得到动量守恒。
+

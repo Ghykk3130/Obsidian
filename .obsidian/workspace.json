@@ -3287,16 +3287,44 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Notes/Noether定理.md",
+                "file": "Homework/Physics 520/Physics 520 homework 1 problem set.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Noether定理"
+              "title": "Physics 520 homework 1 problem set"
+            }
+          },
+          {
+            "id": "611e4a23e99192f3",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Homework/Physics 520/Physics 520 homework 2 problem set.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Physics 520 homework 2 problem set"
+            }
+          },
+          {
+            "id": "9e79173734a14dbe",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Homework/Physics 520/Physics 520 homework 2.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Physics 520 homework 2"
             }
           }
         ],
-        "currentTab": 234
+        "currentTab": 236
       }
     ],
     "direction": "vertical"
@@ -3361,12 +3389,12 @@
               "title": "Search"
             }
           }
-        ],
-        "currentTab": 3
+        ]
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 200,
+    "collapsed": true
   },
   "right": {
     "id": "9003d078f8dbc4ed",
@@ -3480,11 +3508,22 @@
       "obsidian-shellcommands:Shell commands: Custom variables": false
     }
   },
-  "active": "95dc21f71800077a",
+  "active": "9e79173734a14dbe",
   "lastOpenFiles": [
-    "Notes/经典场论.md",
-    "Notes/Noether定理.md",
+    "Pictures/5e0748b5a0735528d877f86f86d9090b.jpg",
+    "Homework/Physics 520/Physics 520 homework 2 problem set.md",
     "Homework/Physics 513/Physics 513 homework 2.md",
+    "Homework/Physics 520/Physics 520 homework 2.md",
+    "Homework/Physics 520/Physics 520 homework 1.md",
+    "Pictures/Pasted image 20260911163457.png",
+    "Pictures/Pasted image 20260911163438.png",
+    "Pictures/Pasted image 20260911163408.png",
+    "Pictures/Pasted image 20260911163305.png",
+    "Pictures/Pasted image 20260911163237.png",
+    "Pictures/Pasted image 20260911163203.png",
+    "Homework/Physics 520/Physics 520 homework 1 problem set.md",
+    "Notes/Noether定理.md",
+    "Notes/经典场论.md",
     "Notes/申请.md",
     "trace-cookies.txt",
     "max-page-cookies.txt",
@@ -3496,8 +3535,6 @@
     "Notes/Berry curvature的时间和空间反演对称性.md",
     "Notes/Lorentz群.md",
     "Notes/标量场.md",
-    "Homework/Physics 520/Physics 520 homework 1.md",
-    "Homework/Physics 520/Physics 520 homework 1 problem set.md",
     "Pictures/Pasted image 20260909021636.png",
     "Notes/Poincare群.md",
     "Notes/Pedrottis' introduction to optics.md",
@@ -3512,17 +3549,9 @@
     "Notes/热力学势.md",
     "Homework/Physics 513/Physics 513 homework 1.md",
     "Notes/量纲分析.md",
-    "Notes/黑体辐射.md",
-    "Notes/音程.md",
     "Pictures/Pasted image 20260906195443.png",
     "Pictures/Pasted image 20260906193844.png",
     "Pictures/Pasted image 20260906193636.png",
-    "Pictures/Pasted image 20260906193150.png",
-    "Pictures/Pasted image 20260906192804.png",
-    "Pictures/Pasted image 20260906192531.png",
-    "Pictures/Pasted image 20260906192249.png",
-    "Pictures/Pasted image 20260906191627.png",
-    "Pictures/Pasted image 20260906190853.png",
     "Homework/Physics 520",
     "Homework/Physics 513",
     "Pictures/GRE镇考机经词7.0-乱序（2026年版）.pdf",

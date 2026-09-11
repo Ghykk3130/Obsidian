@@ -230,10 +230,93 @@ $$\begin{align}
 \end{align}$$
 ## (c)
 
-We have:
+First, we derive the energy-momentum tensor for a theory containing multiple fields. Assume:
+$$
+\mathcal{L}=\mathcal{L}(\Phi_{i},\partial_{\mu}\Phi_{i}).
+$$
+For an infinitesimal translation, take
+$$
+\Phi_{i}^{'}(x^{\mu})=\Phi_{i}(x^{\mu}+a^{\mu})
+=\Phi_{i}+a^{\nu}\partial_{\nu}\Phi_{i}
+$$
+On the one hand, after substituting the transformed fields into the lagrangian, we have:
+$$
+\delta\mathcal{L}=a^{\nu}\partial_{\nu}\mathcal{L}.
+$$
+On the other hand, the chain rule gives:
 $$\begin{align}
-T^{\mu \nu} & = \frac{\partial\mathcal{L}}{\partial(\partial_{\mu}A_{\rho})}\partial^{\nu}A_{\rho}-g^{\mu \nu}\mathcal{L} \\
- & = -F^{\mu \rho}\partial^{\nu}A_{\rho}+ \frac{1}{4}g^{\mu \nu}F_{\rho \sigma}F^{\rho \sigma}
+\delta\mathcal{L}
+&=\frac{\partial\mathcal{L}}{\partial\Phi_{i}}
+  a^{\nu}\partial_{\nu}\Phi_{i}
+  +\frac{\partial\mathcal{L}}
+  {\partial(\partial_{\mu}\Phi_{i})}
+  a^{\nu}\partial_{\mu}\partial_{\nu}\Phi_{i}
+\end{align}$$
+Then:
+$$\begin{align}
+ & a^{\nu}\partial_{\nu}\mathcal{L}= \frac{\partial\mathcal{L}}{\partial\Phi_{i}}
+  a^{\nu}\partial_{\nu}\Phi_{i}
+  +\frac{\partial\mathcal{L}}
+  {\partial(\partial_{\mu}\Phi_{i})}
+  a^{\nu}\partial_{\mu}\partial_{\nu}\Phi_{i} \\
+\implies & a^{\nu}\partial_{\nu}\mathcal{L}= \frac{\partial\mathcal{L}}{\partial \Phi_{i}}a^{\nu}\partial_{\nu}\Phi_{i}+ \partial_{\mu}\left(  \frac{\partial\mathcal{L}}{\partial(\partial_{\mu}\Phi_{i})}a^{\nu}\partial_{\nu}\Phi_{i} \right)- \partial_{\mu} \frac{\partial\mathcal{L}}{\partial(\partial_{\mu}\Phi_{i})}a^{\nu}\partial_{\nu}\Phi_{i} \\
+\implies & a^{\nu}\partial_{\nu}\mathcal{L}= \partial_{\mu}\left(  \frac{\partial\mathcal{L}}{\partial(\partial_{\mu}\Phi_{i})}a^{\nu}\partial_{\nu}\Phi_{i} \right) \\
+\implies & a^{\nu}\partial_{\mu}\left(  \frac{\partial\mathcal{L}}{\partial(\partial_{\mu}\Phi_{i})}\partial_{\nu}\Phi_{i}-\delta^{\mu }{}_{\nu}\mathcal{L}  \right)=0 \\
+\implies & \partial_{\mu}\left(  \frac{\partial\mathcal{L}}{\partial(\partial_{\mu}\Phi_{i})}\partial_{\nu}\Phi_{i}-\delta^{\mu}{}_{\nu}\mathcal{L} \right)=0
+\end{align}$$
+The define the energy-momentum tensor:
+$$
+{
+T^{\mu}{}_{\nu}
+=
+\frac{\partial\mathcal{L}}{\partial(\partial_{\mu}\Phi_{i})}
+\partial_{\nu}\Phi_{i}
+-\delta^{\mu}{}_{\nu}\mathcal{L}
+}.
+$$
+Raising the second index gives:
+$$
+{
+T^{\mu\nu}
+=
+\frac{\partial\mathcal{L}}{\partial(\partial_{\mu}\Phi_{i})}
+\partial^{\nu}\Phi_{i}
+-g^{\mu\nu}\mathcal{L}
+}.
+$$
+
+For the electromagnetic field, the four components $A_{\rho}$ are the fields $\Phi_{i}$. Thus:
+$$
+T^{\mu\nu}
+=
+\frac{\partial\mathcal{L}}
+{\partial(\partial_{\mu}A_{\rho})}\partial^{\nu}A_{\rho}
+-g^{\mu\nu}\mathcal{L}.
+$$
+For
+$$
+\mathcal{L}=-\frac{1}{4}F_{\rho\sigma}F^{\rho\sigma},
+\qquad
+F_{\rho\sigma}=\partial_{\rho}A_{\sigma}
+-\partial_{\sigma}A_{\rho},
+$$
+we have:
+$$\begin{align}
+\frac{\partial\mathcal{L}}
+{\partial(\partial_{\mu}A_{\rho})}
+&=-F^{\mu\rho}.
+\end{align}$$
+Therefore:
+$$\begin{align}
+T^{\mu\nu}
+&=-F^{\mu\rho}\partial^{\nu}A_{\rho}
+-g^{\mu\nu}\left(
+-\frac{1}{4}F_{\rho\sigma}F^{\rho\sigma}
+\right) \\
+&={
+-F^{\mu\rho}\partial^{\nu}A_{\rho}
++\frac{1}{4}g^{\mu\nu}F_{\rho\sigma}F^{\rho\sigma}
+}.
 \end{align}$$
 ## (d)
 
@@ -299,7 +382,5 @@ S^{i} & = \hat{T}^{0i} \\
  & = F^{0\rho}F_{\rho}{}^{i} \\
  & = (\mathbf{E}\times \mathbf{B})^{i}
 \end{align}$$
-
-
 
 
