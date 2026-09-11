@@ -3,7 +3,7 @@ $$\mathcal{L}(\phi,\partial_{\mu}\phi)\rightarrow \mathcal{L}^{'}(\phi^{'},\part
 其中，$\mathcal{L},\mathcal{L}^{'}$的functional form都一样。定义：
 $$\begin{align}
  & S= \int_{\Omega}d^{4}\mathcal{L}(\phi,\partial_{\mu}\phi) \\
- & S^{'}=\int_{\Omega^{'}}d^{4}\mathcal{L}^{'}(\phi,\partial_{\mu}\phi^{'})
+ & S^{'}=\int_{\Omega^{'}}d^{4}\mathcal{L}^{'}(\phi^{'},\partial_{\mu}\phi^{'})
 \end{align}$$
 如果在该变换下，作用量保持不变，即任何时间段的作用量$S=S^{'}$，称系统具有这个变换的对称性。
 
