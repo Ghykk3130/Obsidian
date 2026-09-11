@@ -3482,6 +3482,12 @@
   },
   "active": "95dc21f71800077a",
   "lastOpenFiles": [
+    "trace-cookies.txt",
+    "max-page-cookies.txt",
+    "max-cookies.txt",
+    "max-page-headers.txt",
+    "max-chain-headers.txt",
+    "max-headers.txt",
     "Notes/Magnetic ordering.md",
     "Notes/申请.md",
     "Notes/经典场论.md",
@@ -3508,7 +3514,6 @@
     "Notes/量纲分析.md",
     "Notes/黑体辐射.md",
     "Notes/音程.md",
-    "Notes/正规矩阵的对角化.md",
     "Pictures/Pasted image 20260906195443.png",
     "Pictures/Pasted image 20260906193844.png",
     "Pictures/Pasted image 20260906193636.png",
@@ -3522,11 +3527,6 @@
     "Homework/Physics 513",
     "Pictures/GRE镇考机经词7.0-乱序（2026年版）.pdf",
     "Pictures/drawing.pdf",
-    "Pictures/drawing.html",
-    "Homework/Math 654/Homework 2.html",
-    "tldraw",
-    "Excalidraw/Scripts/Downloaded",
-    "Excalidraw/Scripts",
-    "Homework/Physics 512"
+    "Pictures/drawing.html"
   ]
 }
