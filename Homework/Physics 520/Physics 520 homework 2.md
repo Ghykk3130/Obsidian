@@ -14,3 +14,5 @@ There are three inequivalent M points. We have:
 $$M=\left( \frac{1}{2}, \frac{1}{2} \right),\ M^{'}=(0,1),\ M^{''}=(-1,0)$$
 Similarly, there are three inequivalent K points. We have:
 $$K=\left(  \frac{1}{6} , \frac{2}{3} \right),\ K^{'}=\left( -\frac{1}{6}, \frac{1}{3} \right),K^{''}=\left( - \frac{2}{3}, - \frac{1}{6} \right)$$
+## (3)
+
