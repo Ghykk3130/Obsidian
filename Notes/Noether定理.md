@@ -19,4 +19,5 @@ $$\begin{align}
 $$\phi(x^{\mu})\mapsto \phi^{'}(x^{'\mu}(x^{\mu}))=\phi(x^{\mu})+\alpha \Delta \phi(x^{\mu})$$
 其中，无穷小参数为$\alpha$。相应地，为了保证$S$的不变性$\mathcal{L}$必须满足：
 $$\mathcal{L}(\phi,\partial_{\mu}\phi)\mapsto \mathcal{L}^{'}(\phi^{'},\partial_{\mu}\phi^{'})+\alpha \partial_{\mu}\mathcal{J}^{\mu}(\phi,\partial_{\mu}\phi)$$
-由于场是$x^{\mu}$的函数，$\mathcal{J}^{\mu}$也可以写成$x^{\mu}$的函数。要求$\mathcal{J}^{\mu}$在$x^{1,2,3}=\infty$时为零。上式
+由于场是$x^{\mu}$的函数，$\mathcal{J}^{\mu}$也可以写成$x^{\mu}$的函数。要求$\mathcal{J}^{\mu}$在$x^{1,2,3}=\infty$时为零。上式之所以能保证作用量不变，是因为：
+$$\int_{t_{1}}^{t_{2}} dt\int_{\mathbb{R}^{3}}d^{3}x \partial_{\mu}J^{\mu}(\phi,\partial_{\mu}\phi)$$
