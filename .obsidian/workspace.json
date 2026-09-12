@@ -3329,12 +3329,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Notes/紧束缚模型.md",
+                "file": "Notes/申请.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "紧束缚模型"
+              "title": "申请"
             }
           }
         ],
@@ -3392,7 +3392,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "紧缚",
+                "query": "申请",
                 "matchingCase": true,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -3525,9 +3525,9 @@
   },
   "active": "bd36cb4417331f26",
   "lastOpenFiles": [
+    "Notes/紧束缚模型.md",
     "Pictures/b376f77c1c2672ec8d14a4ce8a3812bd.jpg",
     "Notes/群论.md",
-    "Notes/紧束缚模型.md",
     "Notes/申请.md",
     "Notes/Noether定理.md",
     "Notes/Born-Oppenheimer近似.md",
@@ -3566,7 +3566,6 @@
     "Notes/流体的动力学与热力学函数.md",
     "Notes/热力学势.md",
     "Pictures/Pasted image 20260906195443.png",
-    "Pictures/Pasted image 20260906193844.png",
     "Homework/Physics 520",
     "Homework/Physics 513",
     "Pictures/GRE镇考机经词7.0-乱序（2026年版）.pdf",
