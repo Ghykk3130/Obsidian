@@ -3329,12 +3329,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Notes/申请.md",
+                "file": "Notes/紧束缚模型.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "申请"
+              "title": "紧束缚模型"
             }
           }
         ],
@@ -3392,7 +3392,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "申请",
+                "query": "紧缚",
                 "matchingCase": true,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -3525,8 +3525,11 @@
   },
   "active": "bd36cb4417331f26",
   "lastOpenFiles": [
+    "Pictures/b376f77c1c2672ec8d14a4ce8a3812bd.jpg",
+    "Notes/群论.md",
+    "Notes/紧束缚模型.md",
+    "Notes/申请.md",
     "Notes/Noether定理.md",
-    "Notes/紧缚模型.md",
     "Notes/Born-Oppenheimer近似.md",
     "Notes/近自由电子模型.md",
     "Homework/Physics 520/Physics 520 homework 2.md",
@@ -3542,7 +3545,6 @@
     "Pictures/Pasted image 20260911163203.png",
     "Homework/Physics 520/Physics 520 homework 1 problem set.md",
     "Notes/经典场论.md",
-    "Notes/申请.md",
     "trace-cookies.txt",
     "max-page-cookies.txt",
     "max-cookies.txt",
@@ -3556,7 +3558,6 @@
     "Pictures/Pasted image 20260909021636.png",
     "Notes/Poincare群.md",
     "Notes/Pedrottis' introduction to optics.md",
-    "Notes/群论.md",
     "Notes/全纯函数.md",
     "Notes/Bloch定理2.md",
     "Notes/Bloch定理.md",
@@ -3564,7 +3565,6 @@
     "Notes/Hamiltonian Formulation of EM.md",
     "Notes/流体的动力学与热力学函数.md",
     "Notes/热力学势.md",
-    "Homework/Physics 513/Physics 513 homework 1.md",
     "Pictures/Pasted image 20260906195443.png",
     "Pictures/Pasted image 20260906193844.png",
     "Homework/Physics 520",
