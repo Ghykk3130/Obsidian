@@ -3403,13 +3403,11 @@
               "title": "Search"
             }
           }
-        ],
-        "currentTab": 3
+        ]
       }
     ],
     "direction": "horizontal",
-    "width": 200,
-    "collapsed": true
+    "width": 200
   },
   "right": {
     "id": "9003d078f8dbc4ed",
@@ -3523,12 +3521,13 @@
       "obsidian-shellcommands:Shell commands: Custom variables": false
     }
   },
-  "active": "bd36cb4417331f26",
+  "active": "0bd5adf6a54a04e2",
   "lastOpenFiles": [
     "Notes/紧束缚模型.md",
+    "Pictures/09402305e94c6ffb0ebefc491d6e8786.jpg",
+    "Notes/申请.md",
     "Pictures/b376f77c1c2672ec8d14a4ce8a3812bd.jpg",
     "Notes/群论.md",
-    "Notes/申请.md",
     "Notes/Noether定理.md",
     "Notes/Born-Oppenheimer近似.md",
     "Notes/近自由电子模型.md",
@@ -3565,7 +3564,6 @@
     "Notes/Hamiltonian Formulation of EM.md",
     "Notes/流体的动力学与热力学函数.md",
     "Notes/热力学势.md",
-    "Pictures/Pasted image 20260906195443.png",
     "Homework/Physics 520",
     "Homework/Physics 513",
     "Pictures/GRE镇考机经词7.0-乱序（2026年版）.pdf",
