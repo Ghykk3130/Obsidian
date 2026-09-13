@@ -16,3 +16,4 @@ Similarly, there are three inequivalent K points. We have:
 $$K=\left(  \frac{1}{6} , \frac{2}{3} \right),\ K^{'}=\left( -\frac{1}{6}, \frac{1}{3} \right),K^{''}=\left( - \frac{2}{3}, - \frac{1}{6} \right)$$
 ## (3)
 
+
