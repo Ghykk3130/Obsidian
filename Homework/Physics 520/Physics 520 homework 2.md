@@ -52,10 +52,11 @@ $$\begin{align}
 \end{align}$$
 Then:
 $$\begin{align}
- & (\epsilon^{A}_{0}-E)(\epsilon^{B}_{0}-E)-t^{2}\left( \sum_{i}e^{i\mathbf{k}\cdot\boldsymbol{\delta}_{i}} \right)^{2}=0 \\
-\implies & E^{2}-(\epsilon_{0}^{A}+\epsilon_{0}^{B})E+\epsilon_{0}^{A}\epsilon_{0}^{B}-t^{2}\left( 2\cos(k_{x}a)+2\cos\left( - \frac{1}{2}ak_{x}+ \frac{\sqrt{ 3 }}{2}ak_{y} \right)+2\cos\left( - \frac{1}{2}a k_{x}- \frac{\sqrt{ 3 }}{2}ak_{y} \right) \right)^{2}=0 \\
-\implies & E^{2}-(\epsilon_{0}^{A}+\epsilon_{0}^{B})E+\epsilon_{0}^{A}\epsilon_{0}^{B}-4t^{2}\left( \cos (k_{x}a)+ 2 \cos\left(  \frac{a}{2}k_{x} \right) \cos\left(  \frac{\sqrt{ 3 }}{2}ak_{y} \right)  \right)^{2}=0 \\
-\implies & E= \frac{\epsilon^{A}_{0}+\epsilon_{0}^{B}}{2}\pm \frac{1}{2}\sqrt{ (\epsilon_{0}^{A}-\epsilon_{0}^{B})^{2}+16t^{2}\left(\cos k_{x}a+ 2 \cos\left(  \frac{a}{2}k_{x} \right)\cos\left(  \frac{\sqrt{ 3 }}{2}ak_{y} \right)\right) ^{2}}
+ & (\epsilon^{A}_{0}-E)(\epsilon^{B}_{0}-E)-t^{2}\left| \sum_{i}e^{i\mathbf{k}\cdot\boldsymbol{\delta}_{i}} \right|^{2}=0 \\
+\implies & E^{2}-(\epsilon_{0}^{A}+\epsilon_{0}^{B})E+\epsilon_{0}^{A}\epsilon_{0}^{B}-t^{2}\left| e^{ik_{x}a}+ e^{i\left( - \frac{a}{2}k_{x}+ \frac{\sqrt{ 3 }}{2}ak_{y} \right)}+ e^{i\left( - \frac{a}{2}k_{x}- \frac{\sqrt{ 3 }}{2}ak_{y} \right)}\right|^{2}=0 \\
+\implies & E^{2}-(\epsilon_{0}^{A}+\epsilon_{0}^{B})E+\epsilon_{0}^{A}\epsilon_{0}^{B}-4t^{2}\left(1+ 4\cos\left(  \frac{3a}{2}k_{x} \right)\cos\left( \frac{\sqrt{ 3 }}{2}ak_{y} \right)+4 \cos ^{2}\left(  \frac{\sqrt{ 3 }}{2}ak_{y} \right)  \right)^{2}=0 \\
+\implies & E= \frac{\epsilon^{A}_{0}+\epsilon_{0}^{B}}{2}\pm \frac{1}{2}\sqrt{ (\epsilon_{0}^{A}-\epsilon_{0}^{B})^{2}+16t^{2}\left(1+ 4\cos\left(  \frac{3a}{2}k_{x} \right)\cos\left( \frac{\sqrt{ 3 }}{2}ak_{y} \right)+4 \cos ^{2}\left(  \frac{\sqrt{ 3 }}{2}ak_{y} \right)  \right)^{2}}
 \end{align}$$
+
 
 
