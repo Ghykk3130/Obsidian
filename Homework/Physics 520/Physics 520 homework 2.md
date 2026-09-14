@@ -63,6 +63,9 @@ $$E= \epsilon_{0}\pm |t|\sqrt{ 1+4\cos\left(  \frac{3a}{2}k_{x} \right)+4 }$$
 From $\Gamma\rightarrow K$, we have $k_{x}=\sqrt{ 3 }k_{y},\ 0\leq k_{y}\leq \frac{2\pi}{3\sqrt{ 3 }a}$:
 $$E= \epsilon_{0}\pm \sqrt{ 1+4\cos\left(  \frac{3\sqrt{ 3 }a}{2}k_{y} \right)\cos\left(  \frac{\sqrt{ 3 }}{2}ak_{y} \right)+4\cos ^{2}\left(  \frac{\sqrt{ 3 }}{2}ak_{y} \right) }$$
 ![[53ec8da443c114a6fc59ad9b41bbe974.jpg|centering|300]]
+Observe that each atom contribute one electron, and there are $2N$ atoms in total. Know that the number of available sites in the Brillouin zone is equal to the number of unit cells which is $N$, and each site can hold two electrons due to spin degeneracy. We conclude that electrons must spread the area of the Brillouin zone. Note that the maximum energy of the lower band is achieved at K, so we take $\epsilon_{F}=\epsilon_{0}$ so that the lower band is fully occupied. 
+
+
 
 
 
