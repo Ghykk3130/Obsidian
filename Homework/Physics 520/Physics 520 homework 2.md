@@ -99,6 +99,27 @@ $$\begin{align}
 \end{align}$$
 ## (4)
 
+There are three inequivalent atoms within a unit cell of a Kagome lattice. Name them as A, B, C. Their nearest neighbors vectors are denoted by $\boldsymbol{\delta}_{A},\ \boldsymbol{\delta}_{B},\ \boldsymbol{\delta}_{C}$. 
+![[3b3d2ee9a8c29f054866dfd1dbe29001.jpg|centering|500]]
+Then similar to problem 1, we write down the hamiltonian:
+$$H= \epsilon_{0}\sum_{n} \ket{\mathbf{R}^{A}_{n}} \bra{\mathbf{R}^{A}_{n}} +\sum_{n,\boldsymbol{\delta}_{A}}(-t)\ket{\mathbf{R}^{A}_{n}+\boldsymbol{\delta}_{A}} \bra{\mathbf{R}^{A}_{n}} +(A\leftrightarrow B)+(A\leftrightarrow C)$$
+We guess the eigenfunction: $\ket{\phi_{\mathbf{k}}}=\sum_{m}(\beta_{A}e^{i\mathbf{k}\cdot \mathbf{R}^{A}_{m}}\ket{\mathbf{R}^{A}_{m}}+\beta_{B}e^{i\mathbf{k}\cdot \mathbf{R}^{B}_{m}}\ket{\mathbf{R}^{B}_{m}}+\beta_{c} e^{i\mathbf{k}\cdot \mathbf{R}^{C}_{m}}\ket{\mathbf{R}^{C}_{m}})$
+Write down the Schrodinger's equation $H\ket{\phi_{\mathbf{k}}}=E\ket{\phi_{\mathbf{k}}}$. The LHS gives:
+$$\begin{align}
+H\ket{\phi_{\mathbf{k}}}   = &  \sum_{m}\epsilon_{0}\beta_{A}e^{i\mathbf{k}\cdot \mathbf{R}^{A}_{m}}\ket{\mathbf{R}^{A}_{m}} +\sum_{m,\boldsymbol{\delta}_{A}} \ket{\mathbf{R}^{A}_{m}+\boldsymbol{\delta}_{A}} \beta_{A}e^{i\mathbf{k}\cdot \mathbf{R}^{A}_{m}}+(A\leftrightarrow B)+(A\leftrightarrow C) \\
+ = &  \sum_{m}\epsilon_{0}\beta_{A}e^{i\mathbf{k}\cdot \mathbf{R}^{A}_{m}}\ket{\mathbf{R}^{A}_{m}} + \sum_{m,\boldsymbol{\delta}_{A}}(-t)\ket{\mathbf{R}^{B}_{m}} \beta_{A}e^{i\mathbf{k}\cdot(\mathbf{R}^{B}_{m}-\boldsymbol{\delta}_{A})}+ \sum_{m,\boldsymbol{\delta}_{A}}(-t)\ket{\mathbf{R}^{C}_{m}} \beta_{A}e^{i\mathbf{k}\cdot (\mathbf{R}^{C}_{m}-\boldsymbol{\delta}_{A})} \\
+ & +\sum_{m}\epsilon_{0}\beta_{B}e^{i\mathbf{k}\cdot \mathbf{R}^{B}_{m}}\ket{\mathbf{R}^{B}_{m}} + \sum_{m,\boldsymbol{\delta}_{B}}(-t)\ket{\mathbf{R}^{C}_{m}} \beta_{B}e^{i\mathbf{k}\cdot(\mathbf{R}^{C}_{m}-\boldsymbol{\delta}_{B})}+ \sum_{m,\boldsymbol{\delta}_{B}}(-t)\ket{\mathbf{R}^{A}_{m}} \beta_{B}e^{i\mathbf{k}\cdot (\mathbf{R}^{A}_{m}-\boldsymbol{\delta}_{B})} \\
+  & +\sum_{m}\epsilon_{0}\beta_{C}e^{i\mathbf{k}\cdot \mathbf{R}^{C}_{m}}\ket{\mathbf{R}^{C}_{m}} + \sum_{m,\boldsymbol{\delta}_{C}}(-t)\ket{\mathbf{R}^{A}_{m}} \beta_{C}e^{i\mathbf{k}\cdot(\mathbf{R}^{A}_{m}-\boldsymbol{\delta}_{C})}+ \sum_{m,\boldsymbol{\delta}_{C}}(-t)\ket{\mathbf{R}^{B}_{m}} \beta_{C}e^{i\mathbf{k}\cdot (\mathbf{R}^{B}_{m}-\boldsymbol{\delta}_{C})} 
+\end{align}$$
+The RHS is just:
+$$E\ket{\phi_{\mathbf{k}}} =E\sum_{m}(\beta_{A}e^{i\mathbf{k}\cdot \mathbf{R}^{A}_{m}}\ket{\mathbf{R}^{A}_{m}}+\beta_{B}e^{i\mathbf{k}\cdot \mathbf{R}^{B}_{m}}\ket{\mathbf{R}^{B}_{m}}+\beta_{c} e^{i\mathbf{k}\cdot \mathbf{R}^{C}_{m}}\ket{\mathbf{R}^{C}_{m}})$$
+Due to the linear independence of the basis kets, we have:
+$$\begin{align}
+ & E\beta_{A}=\epsilon_{0}\beta_{A}-t\sum_{\boldsymbol{\delta}_{B}}\beta_{B}e^{-i\mathbf{k}\cdot\boldsymbol{\delta}_{B}}-t\sum_{\boldsymbol{\delta}_{C}}\beta_{C}e^{-i\mathbf{k}\cdot\boldsymbol{\delta}_{C}} \\
+ & E\beta_{B}=\epsilon_{0}\beta_{B}-t\sum_{\boldsymbol{\delta}_{C}}\beta_{C}e^{-i\mathbf{k}\cdot\boldsymbol{\delta}_{C}}-t\sum_{\boldsymbol{\delta}_{A}}\beta_{A}e^{-i\mathbf{k}\cdot\boldsymbol{\delta}_{A}} \\
+& E\beta_{C}=\epsilon_{0}\beta_{C}-t\sum_{\boldsymbol{\delta}_{A}}\beta_{A}e^{-i\mathbf{k}\cdot\boldsymbol{\delta}_{A}}-t\sum_{\boldsymbol{\delta}_{B}}\beta_{B}e^{-i\mathbf{k}\cdot\boldsymbol{\delta}_{B}}
+\end{align}$$
+
 
 
 
