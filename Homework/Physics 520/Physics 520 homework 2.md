@@ -64,6 +64,23 @@ From $\Gamma\rightarrow K$, we have $k_{x}=\sqrt{ 3 }k_{y},\ 0\leq k_{y}\leq \fr
 $$E= \epsilon_{0}\pm \sqrt{ 1+4\cos\left(  \frac{3\sqrt{ 3 }a}{2}k_{y} \right)\cos\left(  \frac{\sqrt{ 3 }}{2}ak_{y} \right)+4\cos ^{2}\left(  \frac{\sqrt{ 3 }}{2}ak_{y} \right) }$$
 ![[53ec8da443c114a6fc59ad9b41bbe974.jpg|centering|300]]
 Observe that each atom contribute one electron, and there are $2N$ atoms in total. Know that the number of available sites in the Brillouin zone is equal to the number of unit cells which is $N$, and each site can hold two electrons due to spin degeneracy. We conclude that electrons must spread the area of the Brillouin zone. Note that the maximum energy of the lower band is achieved at K, so we take $\epsilon_{F}=\epsilon_{0}$ so that the lower band is fully occupied. 
+## (4)
+
+The chemical potential is only reached at the K points. We expand around $\mathbf{k}= \frac{2\pi}{3a}  \hat{\mathbf{x}}+ \frac{2\pi}{3\sqrt{ 3 }a} \hat{\mathbf{y}}$. We have:
+$$\begin{align}
+ & \cos\left(  \frac{3a}{2}\left( k_{x}+ \frac{p_{x}}{\hbar} \right) \right)\approx \left.\cos\left(  \frac{3a}{2}k_{x} \right)\right|_{\mathbf{k}}+ \left.\cos ^{'}\left(  \frac{3a}{2}k_{x} \right)\right|_{\mathbf{k}} \frac{p_{x}}{\hbar}+ \frac{1}{2} \left. \cos ^{''}\left(  \frac{3a}{2}k_{x} \right)\right|_{\mathbf{k}} \frac{p_{x}^{2}}{\hbar^{2}}= -1+ \frac{9a^{2}}{8} \frac{p_{x}^{2}}{\hbar^{2}} \\
+ & \cos\left(  \frac{\sqrt{ 3 }a}{2}\left( k_{y}+ \frac{p_{y}}{\hbar} \right) \right)\approx \left. \cos\left(  \frac{\sqrt{ 3 }a}{2}k_{y} \right)  \right|_{\mathbf{k}}+ \left. \cos ^{}\left(  \frac{\sqrt{ 3 }a}{2}k_{y} \right)  \right|_{\mathbf{k}} \frac{p_{y}}{\hbar}+  \frac{1}{2} \left. \cos ^{''}\left(  \frac{\sqrt{ 3 }a}{2}k_{y} \right)  \right|_{\mathbf{k}} \frac{p_{y}^{2}}{\hbar^{2}}= \frac{1}{2}- \frac{3}{4}a  \frac{p_{y}}{\hbar}- \frac{3}{16}a^{2} \frac{p_{y}^{2}}{\hbar^{2}}\end{align}$$
+ Then keep to the second order term:
+ $$\begin{align}
+1+4\cos\left(  \frac{3 a}{2}\left( k_{x}+ \frac{p_{x}}{\hbar} \right) \right)\cos\left(  \frac{\sqrt{ 3 }}{2}a\left( k_{y }+ \frac{p_{y}}{\hbar}  \right) \right)+ 4\cos ^{2}\left(  \frac{\sqrt{ 3 }}{2}a\left( k_{y}+ \frac{p_{y}}{\hbar} \right) \right) & \approx 1+4\left( -1+ \frac{9a^{2}}{8} \frac{p_{x}^{2}}{\hbar^{2}} \right)\left(  \frac{1}{2}- \frac{3}{4}a \frac{p_{y}}{\hbar}- \frac{3}{16}a^{2} \frac{p_{y}^{2}}{\hbar^{2}} \right)+4\left( \frac{1}{2}- \frac{3}{4}a \frac{p_{y}}{\hbar}- \frac{3}{16}a^{2} \frac{p_{y}^{2}}{\hbar^{2}} \right)^{2} \\
+ & \approx 1+4\left( - \frac{1}{2}+ \frac{3}{4}a \frac{p_{y}}{\hbar}+ \frac{3}{16}a^{2} \frac{p_{y}^{2}}{\hbar^{2}}  + \frac{9}{16}a^{2} \frac{p_{x}^{2}}{\hbar^{2}} \right)+4\left(  \frac{1}{4}+ \frac{9}{16}a^{2} \frac{p_{y}^{2}}{\hbar^{2}}- \frac{3}{4}a \frac{p_{y}}{\hbar}- \frac{3}{16}a^{2} \frac{p_{y}^{2}}{\hbar^{2}} \right) \\
+ & = \frac{9}{4}a^{2} \frac{p^{2}}{\hbar^{2}}
+\end{align}$$
+Then the dispersion is linear:
+$$E\approx \epsilon_{0}\pm |t| \frac{3}{2} \frac{a}{\hbar}|p|$$
+Due to the symmetry of the bands, the expansion near other K points should yield the same result.
+
+
 
 
 
