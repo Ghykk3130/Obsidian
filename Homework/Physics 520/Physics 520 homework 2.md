@@ -79,6 +79,27 @@ $$\begin{align}
 Then the dispersion is linear:
 $$E\approx \epsilon_{0}\pm |t| \frac{3}{2} \frac{a}{\hbar}|p|$$
 Due to the symmetry of the bands, the expansion near other K points should yield the same result.
+# Problem 2
+## (1)
+
+The unit cell in real space is a triangular lattice with length $2a$. The unit vectors are:
+$$\mathbf{a}_{1}= 2a  \hat{\mathbf{x}},\ \mathbf{a}_{2}=a  \hat{\mathbf{x}}+ \sqrt{ 3 }a  \hat{\mathbf{y}}$$
+## (2)
+
+The reciprocal lattice is also a triangular lattice. We find its unit vectors by:
+$$\begin{align}
+\mathbf{b}_{1}= \frac{2\hat{\pi}\mathbf{z}\times \mathbf{a}_{2}}{\mathbf{a}_{1}\cdot(\mathbf{z}\times \mathbf{a}_{2})}= \frac{2\pi}{\sqrt{ 3 }a}  \hat{\mathbf{y}},\ \mathbf{b}_{2}= \frac{2\pi \mathbf{a}_{1}\times   \hat{\mathbf{z}} }{\mathbf{a}_{2}\cdot(\mathbf{a}_{1}\times  \hat{\mathbf{z}})}= \frac{\pi}{a}  \hat{\mathbf{x}}+  \frac{\pi}{\sqrt{ 3 }a}  \hat{\mathbf{y}}
+\end{align}$$
+## (3)
+![[749e65f5ccd64de180bd177d6f23949f.jpg|centering|300]]
+$$\begin{align}
+ & M=\left(  \frac{1}{2}, \frac{1}{2} \right),\ K=\left(  \frac{1}{3}, \frac{2}{3} \right) \\
+ & M^{'}=\left( 0, \frac{1}{2} \right),\ K^{'}=\left( - \frac{1}{3}, \frac{1}{3} \right) \\
+ & M^{''}=\left( - \frac{1}{2},0 \right),\ K^{''}=\left( - \frac{2}{3},- \frac{1}{3} \right)
+\end{align}$$
+## (4)
+
+
 
 
 

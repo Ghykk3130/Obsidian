@@ -3329,12 +3329,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Notes/申请.md",
+                "file": "Homework/Physics 520/Physics 520 homework 2.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "申请"
+              "title": "Physics 520 homework 2"
             }
           }
         ],
@@ -3403,8 +3403,7 @@
               "title": "Search"
             }
           }
-        ],
-        "currentTab": 3
+        ]
       }
     ],
     "direction": "horizontal",
@@ -3525,7 +3524,10 @@
   },
   "active": "bd36cb4417331f26",
   "lastOpenFiles": [
+    "Notes/申请.md",
     "Homework/Physics 520/Physics 520 homework 2.md",
+    "Pictures/749e65f5ccd64de180bd177d6f23949f.jpg",
+    "Pictures/ff07cbf9275d903e7a14acdd3ccfcca7.jpg",
     "Pictures/53ec8da443c114a6fc59ad9b41bbe974.jpg",
     "Pictures/e1e6a87f5b7d48f7973e2755bab38e23.jpg",
     "Notes/石墨烯的tight-binding模型.md",
@@ -3534,7 +3536,6 @@
     "Notes/紧束缚模型.md",
     "Homework/Physics 520/Physics 520 homework 2 problem set.md",
     "Pictures/076303b0c67d2a0ef173586c8357961d.jpg",
-    "Notes/申请.md",
     "Pictures/09402305e94c6ffb0ebefc491d6e8786.jpg",
     "Pictures/b376f77c1c2672ec8d14a4ce8a3812bd.jpg",
     "Notes/群论.md",
@@ -3545,8 +3546,6 @@
     "Homework/Physics 513/Physics 513 homework 2.md",
     "Homework/Physics 520/Physics 520 homework 1.md",
     "Pictures/Pasted image 20260911163457.png",
-    "Pictures/Pasted image 20260911163438.png",
-    "Pictures/Pasted image 20260911163408.png",
     "Notes/经典场论.md",
     "trace-cookies.txt",
     "max-page-cookies.txt",
