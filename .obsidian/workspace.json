@@ -3329,12 +3329,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Notes/紧束缚模型.md",
+                "file": "Homework/Physics 520/Physics 520 homework 2.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "紧束缚模型"
+              "title": "Physics 520 homework 2"
             }
           }
         ],
@@ -3392,7 +3392,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "紧束缚模型",
+                "query": "紧束缚",
                 "matchingCase": true,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -3403,12 +3403,12 @@
               "title": "Search"
             }
           }
-        ],
-        "currentTab": 3
+        ]
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 200,
+    "collapsed": true
   },
   "right": {
     "id": "9003d078f8dbc4ed",
@@ -3524,9 +3524,11 @@
   },
   "active": "bd36cb4417331f26",
   "lastOpenFiles": [
-    "Homework/Physics 520/Physics 520 homework 2.md",
+    "Pictures/7ea829d5fe8f2dc0b192b660cb082e7b.jpg",
+    "Homework/Physics 520/Physics 520 homework 1 problem set.md",
     "Notes/紧束缚模型.md",
     "Notes/石墨烯的tight-binding模型.md",
+    "Homework/Physics 520/Physics 520 homework 2.md",
     "Homework/Physics 520/Physics 520 homework 2 problem set.md",
     "Pictures/076303b0c67d2a0ef173586c8357961d.jpg",
     "Notes/申请.md",
@@ -3545,7 +3547,6 @@
     "Pictures/Pasted image 20260911163305.png",
     "Pictures/Pasted image 20260911163237.png",
     "Pictures/Pasted image 20260911163203.png",
-    "Homework/Physics 520/Physics 520 homework 1 problem set.md",
     "Notes/经典场论.md",
     "trace-cookies.txt",
     "max-page-cookies.txt",
@@ -3565,7 +3566,6 @@
     "Notes/Solid state.md",
     "Notes/Hamiltonian Formulation of EM.md",
     "Notes/流体的动力学与热力学函数.md",
-    "Notes/热力学势.md",
     "Homework/Physics 520",
     "Homework/Physics 513",
     "Pictures/GRE镇考机经词7.0-乱序（2026年版）.pdf",
