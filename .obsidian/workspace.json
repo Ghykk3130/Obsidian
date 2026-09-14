@@ -3392,7 +3392,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "紧束缚",
+                "query": "石墨烯",
                 "matchingCase": true,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -3524,11 +3524,13 @@
   },
   "active": "bd36cb4417331f26",
   "lastOpenFiles": [
+    "Pictures/53ec8da443c114a6fc59ad9b41bbe974.jpg",
+    "Pictures/e1e6a87f5b7d48f7973e2755bab38e23.jpg",
+    "Notes/石墨烯的tight-binding模型.md",
+    "Homework/Physics 520/Physics 520 homework 2.md",
     "Pictures/7ea829d5fe8f2dc0b192b660cb082e7b.jpg",
     "Homework/Physics 520/Physics 520 homework 1 problem set.md",
     "Notes/紧束缚模型.md",
-    "Notes/石墨烯的tight-binding模型.md",
-    "Homework/Physics 520/Physics 520 homework 2.md",
     "Homework/Physics 520/Physics 520 homework 2 problem set.md",
     "Pictures/076303b0c67d2a0ef173586c8357961d.jpg",
     "Notes/申请.md",
@@ -3545,8 +3547,6 @@
     "Pictures/Pasted image 20260911163438.png",
     "Pictures/Pasted image 20260911163408.png",
     "Pictures/Pasted image 20260911163305.png",
-    "Pictures/Pasted image 20260911163237.png",
-    "Pictures/Pasted image 20260911163203.png",
     "Notes/经典场论.md",
     "trace-cookies.txt",
     "max-page-cookies.txt",
