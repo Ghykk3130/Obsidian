@@ -129,3 +129,346 @@ $$\begin{align}
 
 
 
+
+### Matrix diagonalization
+
+The four vectors listed under each \(\boldsymbol{\delta}_{A,B,C}\) describe the four nearest neighbors of the corresponding site. In each term of the three coupled equations above, we use the two vectors that connect the two sublattices appearing in that term. Thus, the two vectors used in a particular sum are opposite to one another, and their phase factors give a cosine. In the expressions below, the factor \(a\) is included in the \(y\)-components of \(\boldsymbol{\delta}_{B}\) for dimensional consistency.
+
+In the first equation, the \(\boldsymbol{\delta}_{B}\) vectors connecting \(B\) to \(A\) are
+$$
+\frac{a}{2}\hat{\mathbf{x}}-\frac{\sqrt{3}a}{2}\hat{\mathbf{y}},
+\qquad
+-\frac{a}{2}\hat{\mathbf{x}}+\frac{\sqrt{3}a}{2}\hat{\mathbf{y}}.
+$$
+Therefore,
+$$
+\begin{align}
+\sum_{\boldsymbol{\delta}_{B}}e^{-i\mathbf{k}\cdot\boldsymbol{\delta}_{B}}
+&=e^{-i\left(\frac{a k_x}{2}-\frac{\sqrt{3}a k_y}{2}\right)}
+ +e^{-i\left(-\frac{a k_x}{2}+\frac{\sqrt{3}a k_y}{2}\right)}\\
+&=e^{-i\left(\frac{a k_x}{2}-\frac{\sqrt{3}a k_y}{2}\right)}
+ +e^{i\left(\frac{a k_x}{2}-\frac{\sqrt{3}a k_y}{2}\right)}\\
+&=2\cos\left(\frac{a k_x}{2}-\frac{\sqrt{3}a k_y}{2}\right).
+\end{align}
+$$
+
+The \(\boldsymbol{\delta}_{C}\) vectors connecting \(C\) to \(A\) are
+$$
+\frac{a}{2}\hat{\mathbf{x}}+\frac{\sqrt{3}a}{2}\hat{\mathbf{y}},
+\qquad
+-\frac{a}{2}\hat{\mathbf{x}}-\frac{\sqrt{3}a}{2}\hat{\mathbf{y}}.
+$$
+Thus,
+$$
+\begin{align}
+\sum_{\boldsymbol{\delta}_{C}}e^{-i\mathbf{k}\cdot\boldsymbol{\delta}_{C}}
+&=e^{-i\left(\frac{a k_x}{2}+\frac{\sqrt{3}a k_y}{2}\right)}
+ +e^{-i\left(-\frac{a k_x}{2}-\frac{\sqrt{3}a k_y}{2}\right)}\\
+&=e^{-i\left(\frac{a k_x}{2}+\frac{\sqrt{3}a k_y}{2}\right)}
+ +e^{i\left(\frac{a k_x}{2}+\frac{\sqrt{3}a k_y}{2}\right)}\\
+&=2\cos\left(\frac{a k_x}{2}+\frac{\sqrt{3}a k_y}{2}\right).
+\end{align}
+$$
+
+For the second equation, the \(\boldsymbol{\delta}_{C}\) vectors connecting \(C\) to \(B\) are \(a\hat{\mathbf{x}}\) and \(-a\hat{\mathbf{x}}\). Hence,
+$$
+\begin{align}
+\sum_{\boldsymbol{\delta}_{C}}e^{-i\mathbf{k}\cdot\boldsymbol{\delta}_{C}}
+&=e^{-i a k_x}+e^{-i(-a k_x)}\\
+&=e^{-i a k_x}+e^{i a k_x}\\
+&=2\cos(a k_x).
+\end{align}
+$$
+The \(\boldsymbol{\delta}_{A}\) vectors connecting \(A\) to \(B\) are
+$$
+\frac{a}{2}\hat{\mathbf{x}}-\frac{\sqrt{3}a}{2}\hat{\mathbf{y}},
+\qquad
+-\frac{a}{2}\hat{\mathbf{x}}+\frac{\sqrt{3}a}{2}\hat{\mathbf{y}},
+$$
+so
+$$
+\begin{align}
+\sum_{\boldsymbol{\delta}_{A}}e^{-i\mathbf{k}\cdot\boldsymbol{\delta}_{A}}
+&=e^{-i\left(\frac{a k_x}{2}-\frac{\sqrt{3}a k_y}{2}\right)}
+ +e^{-i\left(-\frac{a k_x}{2}+\frac{\sqrt{3}a k_y}{2}\right)}\\
+&=2\cos\left(\frac{a k_x}{2}-\frac{\sqrt{3}a k_y}{2}\right).
+\end{align}
+$$
+
+For the third equation, the \(\boldsymbol{\delta}_{A}\) vectors connecting \(A\) to \(C\) are
+$$
+\frac{a}{2}\hat{\mathbf{x}}+\frac{\sqrt{3}a}{2}\hat{\mathbf{y}},
+\qquad
+-\frac{a}{2}\hat{\mathbf{x}}-\frac{\sqrt{3}a}{2}\hat{\mathbf{y}},
+$$
+and therefore
+$$
+\begin{align}
+\sum_{\boldsymbol{\delta}_{A}}e^{-i\mathbf{k}\cdot\boldsymbol{\delta}_{A}}
+&=e^{-i\left(\frac{a k_x}{2}+\frac{\sqrt{3}a k_y}{2}\right)}
+ +e^{-i\left(-\frac{a k_x}{2}-\frac{\sqrt{3}a k_y}{2}\right)}\\
+&=2\cos\left(\frac{a k_x}{2}+\frac{\sqrt{3}a k_y}{2}\right).
+\end{align}
+$$
+The \(\boldsymbol{\delta}_{B}\) vectors connecting \(B\) to \(C\) are \(a\hat{\mathbf{x}}\) and \(-a\hat{\mathbf{x}}\), giving
+$$
+\begin{align}
+\sum_{\boldsymbol{\delta}_{B}}e^{-i\mathbf{k}\cdot\boldsymbol{\delta}_{B}}
+&=e^{-i a k_x}+e^{-i(-a k_x)}\\
+&=2\cos(a k_x).
+\end{align}
+$$
+
+Substituting these sums into the three equations already obtained gives
+$$
+\begin{align}
+E\beta_A
+&=\epsilon_0\beta_A
+-2t\cos\left(\frac{a k_x}{2}-\frac{\sqrt{3}a k_y}{2}\right)\beta_B
+-2t\cos\left(\frac{a k_x}{2}+\frac{\sqrt{3}a k_y}{2}\right)\beta_C,\\
+E\beta_B
+&=\epsilon_0\beta_B
+-2t\cos(a k_x)\beta_C
+-2t\cos\left(\frac{a k_x}{2}-\frac{\sqrt{3}a k_y}{2}\right)\beta_A,\\
+E\beta_C
+&=\epsilon_0\beta_C
+-2t\cos\left(\frac{a k_x}{2}+\frac{\sqrt{3}a k_y}{2}\right)\beta_A
+-2t\cos(a k_x)\beta_B.
+\end{align}
+$$
+
+Therefore, the matrix equation is
+$$
+E
+\begin{pmatrix}
+\beta_A\\
+\beta_B\\
+\beta_C
+\end{pmatrix}
+=
+\begin{pmatrix}
+\epsilon_0
+&
+-2t\cos\left(\frac{a k_x}{2}-\frac{\sqrt{3}a k_y}{2}\right)
+&
+-2t\cos\left(\frac{a k_x}{2}+\frac{\sqrt{3}a k_y}{2}\right)
+\\
+-2t\cos\left(\frac{a k_x}{2}-\frac{\sqrt{3}a k_y}{2}\right)
+&
+\epsilon_0
+&
+-2t\cos(a k_x)
+\\
+-2t\cos\left(\frac{a k_x}{2}+\frac{\sqrt{3}a k_y}{2}\right)
+&
+-2t\cos(a k_x)
+&
+\epsilon_0
+\end{pmatrix}
+\begin{pmatrix}
+\beta_A\\
+\beta_B\\
+\beta_C
+\end{pmatrix}.
+$$
+
+For a nonzero solution, the determinant of the matrix on the right minus \(E I\) must vanish:
+$$
+\begin{align}
+0
+&=\det
+\begin{pmatrix}
+\epsilon_0-E
+&
+-2t\cos\left(\frac{a k_x}{2}-\frac{\sqrt{3}a k_y}{2}\right)
+&
+-2t\cos\left(\frac{a k_x}{2}+\frac{\sqrt{3}a k_y}{2}\right)
+\\
+-2t\cos\left(\frac{a k_x}{2}-\frac{\sqrt{3}a k_y}{2}\right)
+&
+\epsilon_0-E
+&
+-2t\cos(a k_x)
+\\
+-2t\cos\left(\frac{a k_x}{2}+\frac{\sqrt{3}a k_y}{2}\right)
+&
+-2t\cos(a k_x)
+&
+\epsilon_0-E
+\end{pmatrix}\\
+&=(\epsilon_0-E)
+\left[(\epsilon_0-E)^2-4t^2\cos^2(a k_x)\right]\\
+&\quad
+-\left[-2t\cos\left(\frac{a k_x}{2}-\frac{\sqrt{3}a k_y}{2}\right)\right]
+\left[
+-2t\cos\left(\frac{a k_x}{2}-\frac{\sqrt{3}a k_y}{2}\right)(\epsilon_0-E)\right.\\
+&\qquad\left.
+-4t^2\cos\left(\frac{a k_x}{2}+\frac{\sqrt{3}a k_y}{2}\right)\cos(a k_x)
+\right]\\
+&\quad
++\left[-2t\cos\left(\frac{a k_x}{2}+\frac{\sqrt{3}a k_y}{2}\right)\right]
+\left[
+4t^2\cos\left(\frac{a k_x}{2}-\frac{\sqrt{3}a k_y}{2}\right)\cos(a k_x)\right.\\
+&\qquad\left.
++2t(\epsilon_0-E)\cos\left(\frac{a k_x}{2}+\frac{\sqrt{3}a k_y}{2}\right)
+\right]\\
+&=(\epsilon_0-E)^3\\
+&\quad
+-4t^2(\epsilon_0-E)\left[
+\cos^2\left(\frac{a k_x}{2}-\frac{\sqrt{3}a k_y}{2}\right)
++\cos^2\left(\frac{a k_x}{2}+\frac{\sqrt{3}a k_y}{2}\right)
++\cos^2(a k_x)
+\right]\\
+&\quad
+-16t^3\cos\left(\frac{a k_x}{2}-\frac{\sqrt{3}a k_y}{2}\right)
+\cos\left(\frac{a k_x}{2}+\frac{\sqrt{3}a k_y}{2}\right)
+\cos(a k_x).
+\end{align}
+$$
+
+Expanding the powers of \((\epsilon_0-E)\), this is the following cubic equation directly in \(E\):
+$$
+\begin{align}
+0
+&=-E^3+3\epsilon_0E^2
+-\left[3\epsilon_0^2-4t^2\left\{
+\cos^2\left(\frac{a k_x}{2}-\frac{\sqrt{3}a k_y}{2}\right)
++\cos^2\left(\frac{a k_x}{2}+\frac{\sqrt{3}a k_y}{2}\right)
++\cos^2(a k_x)
+\right\}\right]E\\
+&\quad
++\epsilon_0^3
+-4\epsilon_0t^2\left\{
+\cos^2\left(\frac{a k_x}{2}-\frac{\sqrt{3}a k_y}{2}\right)
++\cos^2\left(\frac{a k_x}{2}+\frac{\sqrt{3}a k_y}{2}\right)
++\cos^2(a k_x)
+\right\}\\
+&\quad
+-16t^3\cos\left(\frac{a k_x}{2}-\frac{\sqrt{3}a k_y}{2}\right)
+\cos\left(\frac{a k_x}{2}+\frac{\sqrt{3}a k_y}{2}\right)
+\cos(a k_x).
+\end{align}
+$$
+
+We now simplify the trigonometric part directly:
+$$
+\begin{align}
+&\cos^2\left(\frac{a k_x}{2}-\frac{\sqrt{3}a k_y}{2}\right)
++\cos^2\left(\frac{a k_x}{2}+\frac{\sqrt{3}a k_y}{2}\right)\\
+&=1+\cos(a k_x)\cos(\sqrt{3}a k_y),
+\end{align}
+$$
+because
+$$
+2\cos\left(\frac{a k_x}{2}-\frac{\sqrt{3}a k_y}{2}\right)
+\cos\left(\frac{a k_x}{2}+\frac{\sqrt{3}a k_y}{2}\right)
+=\cos(a k_x)+\cos(\sqrt{3}a k_y).
+$$
+Therefore,
+$$
+\begin{align}
+&\cos^2\left(\frac{a k_x}{2}-\frac{\sqrt{3}a k_y}{2}\right)
++\cos^2\left(\frac{a k_x}{2}+\frac{\sqrt{3}a k_y}{2}\right)
++\cos^2(a k_x)\\
+&=1+\cos(a k_x)\cos(\sqrt{3}a k_y)+\cos^2(a k_x),
+\end{align}
+$$
+while
+$$
+\begin{align}
+&2\cos\left(\frac{a k_x}{2}-\frac{\sqrt{3}a k_y}{2}\right)
+\cos\left(\frac{a k_x}{2}+\frac{\sqrt{3}a k_y}{2}\right)
+\cos(a k_x)\\
+&=\cos^2(a k_x)+\cos(a k_x)\cos(\sqrt{3}a k_y).
+\end{align}
+$$
+Thus,
+$$
+\begin{align}
+&\cos^2\left(\frac{a k_x}{2}-\frac{\sqrt{3}a k_y}{2}\right)
++\cos^2\left(\frac{a k_x}{2}+\frac{\sqrt{3}a k_y}{2}\right)
++\cos^2(a k_x)\\
+&=1+2\cos\left(\frac{a k_x}{2}-\frac{\sqrt{3}a k_y}{2}\right)
+\cos\left(\frac{a k_x}{2}+\frac{\sqrt{3}a k_y}{2}\right)
+\cos(a k_x).
+\end{align}
+$$
+
+Substituting this identity into the determinant equation and factoring gives
+$$
+\begin{align}
+0
+&=(\epsilon_0-E)^3
+-4t^2(\epsilon_0-E)
+-8t^2(\epsilon_0-E)
+\cos\left(\frac{a k_x}{2}-\frac{\sqrt{3}a k_y}{2}\right)
+\cos\left(\frac{a k_x}{2}+\frac{\sqrt{3}a k_y}{2}\right)
+\cos(a k_x)\\
+&\quad
+-16t^3\cos\left(\frac{a k_x}{2}-\frac{\sqrt{3}a k_y}{2}\right)
+\cos\left(\frac{a k_x}{2}+\frac{\sqrt{3}a k_y}{2}\right)
+\cos(a k_x)\\
+&=\left[
+\epsilon_0-E+2t
+\right]\\
+&\quad\times\left[
+(\epsilon_0-E)^2-2t(\epsilon_0-E)
+-8t^2\cos\left(\frac{a k_x}{2}-\frac{\sqrt{3}a k_y}{2}\right)
+\cos\left(\frac{a k_x}{2}+\frac{\sqrt{3}a k_y}{2}\right)
+\cos(a k_x)
+\right].
+\end{align}
+$$
+
+Therefore, the three solutions are obtained from the two factors:
+$$
+\epsilon_0-E+2t=0
+\qquad\Longrightarrow\qquad
+E_1=\epsilon_0+2t,
+$$
+and
+$$
+\begin{align}
+0
+&=(\epsilon_0-E)^2-2t(\epsilon_0-E)
+-8t^2\cos\left(\frac{a k_x}{2}-\frac{\sqrt{3}a k_y}{2}\right)
+\cos\left(\frac{a k_x}{2}+\frac{\sqrt{3}a k_y}{2}\right)
+\cos(a k_x).
+\end{align}
+$$
+Solving this quadratic equation for \(\epsilon_0-E\) gives
+$$
+\begin{align}
+\epsilon_0-E
+&=\frac{2t\pm\sqrt{4t^2
++32t^2\cos\left(\frac{a k_x}{2}-\frac{\sqrt{3}a k_y}{2}\right)
+\cos\left(\frac{a k_x}{2}+\frac{\sqrt{3}a k_y}{2}\right)
+\cos(a k_x)}}{2}\\
+&=t\pm t\sqrt{1+8\cos\left(\frac{a k_x}{2}-\frac{\sqrt{3}a k_y}{2}\right)
+\cos\left(\frac{a k_x}{2}+\frac{\sqrt{3}a k_y}{2}\right)
+\cos(a k_x)}.
+\end{align}
+$$
+Consequently, the two dispersive bands are
+$$
+\begin{align}
+E_{\pm}(\mathbf{k})
+&=\epsilon_0-t\pm t\sqrt{
+1+8\cos\left(\frac{a k_x}{2}-\frac{\sqrt{3}a k_y}{2}\right)
+\cos\left(\frac{a k_x}{2}+\frac{\sqrt{3}a k_y}{2}\right)
+\cos(a k_x)
+}.
+\end{align}
+$$
+The full diagonalized spectrum is therefore
+$$
+\boxed{
+E_1(\mathbf{k})=\epsilon_0+2t,\qquad
+E_{\pm}(\mathbf{k})=\epsilon_0-t\pm t\sqrt{
+1+8\cos\left(\frac{a k_x}{2}-\frac{\sqrt{3}a k_y}{2}\right)
+\cos\left(\frac{a k_x}{2}+\frac{\sqrt{3}a k_y}{2}\right)
+\cos(a k_x)
+}
+}.
+$$
+The first band is independent of \(\mathbf{k}\), so it is the Kagome flat band. For \(t>0\), the other two bands are the dispersive bands.
