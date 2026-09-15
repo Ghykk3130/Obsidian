@@ -119,6 +119,12 @@ $$\begin{align}
  & E\beta_{B}=\epsilon_{0}\beta_{B}-t\sum_{\boldsymbol{\delta}_{C}}\beta_{C}e^{-i\mathbf{k}\cdot\boldsymbol{\delta}_{C}}-t\sum_{\boldsymbol{\delta}_{A}}\beta_{A}e^{-i\mathbf{k}\cdot\boldsymbol{\delta}_{A}} \\
 & E\beta_{C}=\epsilon_{0}\beta_{C}-t\sum_{\boldsymbol{\delta}_{A}}\beta_{A}e^{-i\mathbf{k}\cdot\boldsymbol{\delta}_{A}}-t\sum_{\boldsymbol{\delta}_{B}}\beta_{B}e^{-i\mathbf{k}\cdot\boldsymbol{\delta}_{B}}
 \end{align}$$
+in which
+$$\begin{align}
+ & \boldsymbol{\delta}_{A}\in \left\{  \frac{1}{2}a   \hat{\mathbf{x}}+ \frac{\sqrt{ 3 }}{2}a  \hat{\mathbf{y}},\ \frac{1}{2}a  \hat{\mathbf{x}}- \frac{\sqrt{ 3 }}{2}a \hat{\mathbf{y}},\ - \frac{1}{2}a  \hat{\mathbf{x}}+ \frac{\sqrt{ 3 }}{2}a  \hat{\mathbf{y}},\  - \frac{1}{2}a \hat{\mathbf{x}}- \frac{\sqrt{ 3 }}{2}a  \hat{\mathbf{y}}  \right\} \\
+ & \boldsymbol{\delta}_{B}\in \left\{  a \hat{\mathbf{x}}, \frac{1}{2}a \hat{\mathbf{x}}- \frac{\sqrt{ 3 }}{2}  \hat{\mathbf{y}},\ -a  \hat{\mathbf{x}},\ - \frac{1}{2}a  \hat{\mathbf{x}}+ \frac{\sqrt{ 3 }}{2}  \hat{\mathbf{y}}  \right\} \\
+ & \boldsymbol{\delta}_{C}\in \left\{  a  \hat{\mathbf{x}},\  \frac{1}{2}a \hat{\mathbf{x}}+ \frac{\sqrt{ 3 }}{2}a  \hat{\mathbf{y}},\ -a  \hat{\mathbf{x}},\ - \frac{1}{2}a  \hat{\mathbf{x}}- \frac{\sqrt{ 3 }}{2}a  \hat{\mathbf{y}}  \right\}
+\end{align}$$
 
 
 
