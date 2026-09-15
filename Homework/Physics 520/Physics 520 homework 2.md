@@ -1,18 +1,18 @@
 # Problem 1
-## (1)
+## (a)
 
 The unit cell in the real space is a triangular lattice with length $\sqrt{ 3 }a$. The lattice unit vectors are:
 $$\mathbf{a}_{1}= \frac{{ 3 }}{2}  \hat{\mathbf{x}}+ \frac{\sqrt{ 3 }}{2} \hat{\mathbf{y}},\ \mathbf{a}_{2}= \frac{3}{2}  \hat{\mathbf{x}}- \frac{\sqrt{ 3 }}{2}  \hat{\mathbf{y}}$$
 The reciprocal lattice vectors are given by:
 $$\mathbf{b}_{1}=  \frac{2\pi\mathbf{z}\times \mathbf{a}_{2}}{\mathbf{a}_{1}\cdot(\mathbf{z}\times \mathbf{a}_{2})}= \frac{2\pi}{3}  \hat{\mathbf{x}}+ \frac{2}{3}\sqrt{ 3 }{\pi}  \hat{\mathbf{y}},\ \mathbf{b}_{2}= \frac{2\pi \mathbf{a}_{1}\times \mathbf{z}}{\mathbf{a}_{2}\cdot(\mathbf{a}_{1}\times \mathbf{a})}= \frac{2\pi}{3}  \hat{\mathbf{x}}- \frac{2}{3}\sqrt{ 3 }\pi   \hat{\mathbf{y}}$$
-## (2)
+## (b)
 
 ![[5e0748b5a0735528d877f86f86d9090b.jpg|centering|400]]
 There are three inequivalent M points. We have:
 $$M=\left( \frac{1}{2}, \frac{1}{2} \right),\ M^{'}=(0,1),\ M^{''}=(-1,0)$$
 Similarly, there are three inequivalent K points. We have:
 $$K=\left(  \frac{1}{6} , \frac{2}{3} \right),\ K^{'}=\left( -\frac{1}{6}, \frac{1}{3} \right),K^{''}=\left( - \frac{2}{3}, - \frac{1}{6} \right)$$
-## (3)
+## (d)
 
 Let the nearest neighbor vectors be $\boldsymbol{\delta}_{1}=  a  \hat{\mathbf{x}},\ \boldsymbol{\delta}_{2}=- \frac{1}{2}a  \hat{\mathbf{x}}+ \frac{\sqrt{ 3 }}{2}  a \hat{\mathbf{y}},\ \boldsymbol{\delta}_{3}=- \frac{1}{2}a \hat{\mathbf{x}}- \frac{\sqrt{ 3 }}{2}a  \hat{\mathbf{y}}$. Let $\ket{\mathbf{R}_{n}^{A}},\ \ket{\mathbf{R}_{n}^{B}}= \ket{\mathbf{R}_{n}^{A}+  a  \hat{\mathbf{x}}}$ denote the pz orbitals at position $\mathbf{R}^{A}_{n},\ \mathbf{R}^{B}_{n}$ respectively. 
 ![[7ea829d5fe8f2dc0b192b660cb082e7b.jpg|centering|300]]
@@ -64,7 +64,7 @@ From $\Gamma\rightarrow K$, we have $k_{x}=\sqrt{ 3 }k_{y},\ 0\leq k_{y}\leq \fr
 $$E= \epsilon_{0}\pm t\sqrt{ 1+4\cos\left(  \frac{3\sqrt{ 3 }a}{2}k_{y} \right)\cos\left(  \frac{\sqrt{ 3 }}{2}ak_{y} \right)+4\cos ^{2}\left(  \frac{\sqrt{ 3 }}{2}ak_{y} \right) }$$
 ![[53ec8da443c114a6fc59ad9b41bbe974.jpg|centering|300]]
 Observe that each atom contribute one electron, and there are $2N$ atoms in total. Know that the number of available sites in the Brillouin zone is equal to the number of unit cells which is $N$, and each site can hold two electrons due to spin degeneracy. We conclude that electrons must spread the area of the Brillouin zone. Note that the maximum energy of the lower band is achieved at K, so we take $\epsilon_{F}=\epsilon_{0}$ so that the lower band is fully occupied. 
-## (4)
+## (e)
 
 The chemical potential is only reached at the K points. We expand around $\mathbf{k}= \frac{2\pi}{3a}  \hat{\mathbf{x}}+ \frac{2\pi}{3\sqrt{ 3 }a} \hat{\mathbf{y}}$. We have:
 $$\begin{align}
@@ -80,24 +80,24 @@ Then the dispersion is linear:
 $$E\approx \epsilon_{0}\pm t \frac{3}{2} \frac{a}{\hbar}|p|$$
 Due to the symmetry of the bands, the expansion near other K points should yield the same result.
 # Problem 2
-## (1)
+## (a)
 
 The unit cell in real space is a triangular lattice with length $2a$. The unit vectors are:
 $$\mathbf{a}_{1}= 2a  \hat{\mathbf{x}},\ \mathbf{a}_{2}=a  \hat{\mathbf{x}}+ \sqrt{ 3 }a  \hat{\mathbf{y}}$$
-## (2)
+## (b)
 
 The reciprocal lattice is also a triangular lattice. We find its unit vectors by:
 $$\begin{align}
 \mathbf{b}_{1}= \frac{2\hat{\pi}\mathbf{z}\times \mathbf{a}_{2}}{\mathbf{a}_{1}\cdot(\mathbf{z}\times \mathbf{a}_{2})}= \frac{2\pi}{\sqrt{ 3 }a}  \hat{\mathbf{y}},\ \mathbf{b}_{2}= \frac{2\pi \mathbf{a}_{1}\times   \hat{\mathbf{z}} }{\mathbf{a}_{2}\cdot(\mathbf{a}_{1}\times  \hat{\mathbf{z}})}= \frac{\pi}{a}  \hat{\mathbf{x}}+  \frac{\pi}{\sqrt{ 3 }a}  \hat{\mathbf{y}}
 \end{align}$$
-## (3)
+## (c)
 ![[749e65f5ccd64de180bd177d6f23949f.jpg|centering|300]]
 $$\begin{align}
  & M=\left(  \frac{1}{2}, \frac{1}{2} \right),\ K=\left(  \frac{1}{3}, \frac{2}{3} \right) \\
  & M^{'}=\left( 0, \frac{1}{2} \right),\ K^{'}=\left( - \frac{1}{3}, \frac{1}{3} \right) \\
  & M^{''}=\left( - \frac{1}{2},0 \right),\ K^{''}=\left( - \frac{2}{3},- \frac{1}{3} \right)
 \end{align}$$
-## (4)
+## (d)
 
 There are three inequivalent atoms within a unit cell of a Kagome lattice. Name them as A, B, C. Their nearest neighbors vectors are
 
@@ -338,18 +338,18 @@ The drawing is:![[246446d327258d74173034a0d77be130.jpg|centering|300]]
 From $\Gamma\rightarrow K$, we have that $k_{y}=0, 0\leq k_{x}\leq \frac{2\pi}{3a}$. The lower two bands are:
 $$E= \epsilon_{0}-t\pm t\sqrt{ 1+8 \cos ^{2}\left(  \frac{ak_{x}}{2} \right)\cos(ak_{x}) }=\epsilon_{0}-t\pm t\sqrt{ 1+ 4\cos ^{2}(ak_{x})+4\cos(ak_{x}) }$$
 The drawing is:
-![[a5847da500f7c1d936aaa49da07056d6.jpg|centering|300]]The band energy at M point are $\epsilon_{0}+2t,\ \epsilon_{0},\ \epsilon_{0}-2t$ respectively. The band energy at K point are $\epsilon_{0}+2t,\ \epsilon_{0}-t$ respectively.
-## (5)
+![[a5847da500f7c1d936aaa49da07056d6.jpg|centering|300]]The band energies at M point are $\epsilon_{0}+2t,\ \epsilon_{0},\ \epsilon_{0}-2t$ respectively. The band energies at K point are $\epsilon_{0}+2t,\ \epsilon_{0}-t$ respectively.
+## (e)
 
 As derived above, the dispersion of the flat band is $E=\epsilon_{0}+2t$.
 
 # Problem 3
-## (1)
+## (a)
 
 The unit cell is a cube with length $2a$. The unit vectors are given by:
 $$\mathbf{a}_{1}= 2a  \hat{\mathbf{x}},\ \mathbf{a}_{2}= 2a  \hat{\mathbf{y}},\ \mathbf{a}_{3}=2a  \hat{\mathbf{z}}$$
 ![[924d827a37bd1cbec04e5e7c75061c7c.jpg|centering|400]]
-## (2)
+## (b)
 
 Since the three lattice vectors in the real space are already orthogonal to each other, the length of the reciprocal lattice vectors is just $\frac{2\pi}{2a}= \frac{\pi}{a}$. Clearly, they should be parallel to their counterparts in the real space. We have:
 $$\mathbf{b}_{1}= \frac{\pi}{a}  \hat{\mathbf{x}},\ \mathbf{b}_{2}= \frac{\pi}{a}  \hat{\mathbf{y}},\ \mathbf{b}_{3}= \frac{\pi}{a}  \hat{\mathbf{z}}$$
@@ -359,7 +359,7 @@ $$\begin{align}
  & \Gamma=(0,0,0),\ A=(1,0,1),\ X=(1,0,0) \\
  & M=(1,1,0),\ H=(1,1,1)  
 \end{align}$$
-## (3)
+## (c)
 
 Define the nearest neighbor vectors:
 $$\begin{align}
@@ -390,6 +390,68 @@ $$\begin{align}
  & E \beta_{C}=\epsilon_{0}\beta_{C}-t\sum_{\boldsymbol{\delta}_{CA}}\beta_{A}e^{i\mathbf{k}\cdot\boldsymbol{\delta}_{CA}} \\
  & E \beta_{D}=\epsilon_{0}\beta_{D}-t\sum_{\boldsymbol{\delta}_{DA}}\beta_{A}e^{i\mathbf{k}\cdot\boldsymbol{\delta}_{DA}}
 \end{align}$$
+We calculate:
+$$\begin{align}
+\gamma_{AB} & =\sum_{\boldsymbol{\delta}_{AB}}e^{i\mathbf{k}\cdot\boldsymbol{\delta}_{AB}} \\
+ & = e^{ik_{z}a}+e^{-ik_{z}a} \\
+ & = 2\cos(k_{z}a) \\
+\gamma_{AC} & = \sum_{\boldsymbol{\delta}_{AC}}e^{i\mathbf{k}\cdot\boldsymbol{\delta}_{AC}} \\
+ & = e^{ik_{y}a}+e^{-ik_{y}a} \\
+ & = 2\cos(k_{y}a) \\
+ \gamma_{AD} & = \sum_{\boldsymbol{\delta}_{AD}}e^{i\mathbf{k}\cdot\boldsymbol{\delta}_{AD}} \\
+ & = e^{ik_{x}a}+e^{-ik_{x}a} \\
+ & = 2\cos(k_{x}a)
+\end{align}$$
+Then we need to solve:
+$$\begin{align}
+ & \begin{vmatrix}
+\epsilon_{0}-E & -2t\cos(k_{z}a) & -2t\cos(k_{y}a) & -2t\cos*k_{x}a &  \\
+-2t\cos(k_{z}a) & \epsilon_{0}-E & 0 & 0 \\
+-2t\cos(k_{y}a)0 & \epsilon_{0}-E & 0 \\
+-2t\cos(k_{x}a) & 0 & 0 & \epsilon_{0}-E
+\end{vmatrix}=0 \\
+\implies & (\epsilon_{0}-E)^{4} +2t \cos(k_{y}a) (-2t)\cos(k_{z}a)  (\epsilon_{0}-E)^{2}-2t\cos(k_{y}a)(\epsilon_{0}-E)^{2}2t \cos(k_{y}a)-2t\cos(k_{y}a)(\epsilon_{0}-E)^{2}2t\cos (k_{y}a)=0 \\
+\implies & (\epsilon_{0}-E)^{4}-4t^{2}(\cos ^{2}(k_{z}a)+\cos ^{2}(k_{y}a)+\cos ^{2}(k_{x}a))(\epsilon_{0}-E)^{2}=0 \\
+\end{align}$$
+Two solutions are:
+$$E=\epsilon_{0}$$
+Another two solutions are:
+$$\begin{align}
+ & (\epsilon_{0}-E)^{2}-4t^{2}(\cos ^{2}(k_{z}a)+\cos ^{2}(k_{y}a)+\cos ^{2}(k_{x}a))=0 \\
+\implies & E=\epsilon_{0}\pm 2t \sqrt{ \cos ^{2}(k_{x}a)+\cos ^{2}(k_{y}a)+\cos ^{2}(k_{z}a) }
+\end{align}$$
+## (d)
+
+For $\Gamma$, $k_{x}=0,\ k_{y}=0$. The band energies are:
+$$\epsilon_{0},\ \epsilon_{0},\ \epsilon_{0}\pm 2\sqrt{ 3 }t$$
+For X, $k_{x}= \frac{\pi}{2a},\ k_{y}=k_{z}=0$. The band energies are:
+$$\epsilon_{0},\ \epsilon_{0},\ \epsilon_{0}\pm 2\sqrt{ 2 }t$$
+For M, $k_{x}= \frac{\pi}{2a},\ k_{y}= \frac{\pi}{2a},\ k_{z}=0$. The band energies are:
+$$\epsilon_{0},\ \epsilon_{0},\ \epsilon_{0}\pm 2t$$
+For L, $k_{x}= \frac{\pi}{2a},\ k_{y}=0,\ k_{z}= \frac{\pi}{2a}$. The band energies are:
+$$\epsilon_{0},\ \epsilon_{0},\ \epsilon_{0}\pm 2t$$
+For A, $k_{x}=k_{y}=0,\ k_{z}= \frac{\pi}{2a}$. The band energies are:
+$$\epsilon_{0},\ \epsilon_{0},\ \epsilon_{0}\pm 2\sqrt{ 2 }t$$
+For H, $k_{x}=k_{y}=k_{z}= \frac{\pi}{2a}$. The band energies are:
+$$\epsilon_{0},\ \epsilon_{0},\ \epsilon_{0},\ \epsilon_{0}$$
+## (e)
+
+As shown in part (c), the energy of the flat bands is $\epsilon_{0}$. 
+
+According to the calculation above, H should be a Dirac point. Let the moment be $\mathbf{k}= \frac{\pi}{2a} \hat{\mathbf{x}}+ \frac{\pi}{2a}  \hat{\mathbf{y}}+ \frac{\pi}{2a}  \hat{\mathbf{z}}+ \frac{\mathbf{p}}{\hbar}$, where $p$ is small. Then we have:
+$$\begin{align}
+\cos(k_{j}a)\approx-a \frac{p_{j}}{\hbar}
+\end{align}$$
+Therefore the dispersion of the two bands that are not flat is approximated by:
+$$\begin{align}
+E & \approx \epsilon_{0}\pm 2t \sqrt{ \left( \frac{a}{\hbar} \right)^{2}(p_{x}^{2}+p_{y}^{2}+p_{z}^{2}) } \\
+ &= \epsilon_{0}\pm \frac{2at}{\hbar}p
+\end{align}$$
+The group velocity is given by:
+$$\frac{\partial E}{\partial p}= \pm \frac{2at}{\hbar}$$
+Or if you want the group velocity to be a vector, we simply have $\frac{\partial E}{\partial \mathbf{p}}= \pm \frac{2at}{\hbar}  \hat{\mathbf{p}}$.
+
+
 
 
 

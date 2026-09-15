@@ -3343,12 +3343,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Homework/Physics 520/Physics 520 homework 2.md",
+                "file": "Notes/申请.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Physics 520 homework 2"
+              "title": "申请"
             }
           }
         ],
@@ -3417,11 +3417,13 @@
               "title": "Search"
             }
           }
-        ]
+        ],
+        "currentTab": 3
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 200,
+    "collapsed": true
   },
   "right": {
     "id": "9003d078f8dbc4ed",
@@ -3537,9 +3539,9 @@
   },
   "active": "af0d7e1848bf9839",
   "lastOpenFiles": [
+    "Homework/Physics 520/Physics 520 homework 2.md",
     "Pictures/fe8263df5cbac56b02cb4e291f09043f.jpg",
     "Homework/Physics 520/Untitled.md",
-    "Homework/Physics 520/Physics 520 homework 2.md",
     "Pictures/a5847da500f7c1d936aaa49da07056d6.jpg",
     "Pictures/246446d327258d74173034a0d77be130.jpg",
     "Pictures/b5198f3ef6a0e71a1de9fe6fa80ab5c4.jpg",
@@ -3551,7 +3553,6 @@
     "Pictures/749e65f5ccd64de180bd177d6f23949f.jpg",
     "Pictures/ff07cbf9275d903e7a14acdd3ccfcca7.jpg",
     "Pictures/53ec8da443c114a6fc59ad9b41bbe974.jpg",
-    "Pictures/e1e6a87f5b7d48f7973e2755bab38e23.jpg",
     "Notes/石墨烯的tight-binding模型.md",
     "Homework/Physics 520/Physics 520 homework 1 problem set.md",
     "Notes/紧束缚模型.md",
