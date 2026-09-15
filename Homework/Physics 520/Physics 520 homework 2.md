@@ -434,6 +434,7 @@ For A, $k_{x}=k_{y}=0,\ k_{z}= \frac{\pi}{2a}$. The band energies are:
 $$\epsilon_{0},\ \epsilon_{0},\ \epsilon_{0}\pm 2\sqrt{ 2 }t$$
 For H, $k_{x}=k_{y}=k_{z}= \frac{\pi}{2a}$. The band energies are:
 $$\epsilon_{0},\ \epsilon_{0},\ \epsilon_{0},\ \epsilon_{0}$$
+
 ## (e)
 
 As shown in part (c), the energy of the flat bands is $\epsilon_{0}$. 
