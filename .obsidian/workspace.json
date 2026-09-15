@@ -3343,12 +3343,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Homework/Physics 520/Physics 520 homework 2.md",
+                "file": "Notes/申请.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Physics 520 homework 2"
+              "title": "申请"
             }
           }
         ],
@@ -3417,7 +3417,8 @@
               "title": "Search"
             }
           }
-        ]
+        ],
+        "currentTab": 3
       }
     ],
     "direction": "horizontal",
@@ -3538,8 +3539,8 @@
   },
   "active": "af0d7e1848bf9839",
   "lastOpenFiles": [
-    "Notes/申请.md",
     "Homework/Physics 520/Physics 520 homework 2.md",
+    "Notes/申请.md",
     "Pictures/fe8263df5cbac56b02cb4e291f09043f.jpg",
     "Homework/Physics 520/Untitled.md",
     "Pictures/a5847da500f7c1d936aaa49da07056d6.jpg",
