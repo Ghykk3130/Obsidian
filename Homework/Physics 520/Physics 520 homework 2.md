@@ -56,12 +56,12 @@ $$\begin{align}
 \implies & E= \frac{\epsilon^{A}_{0}+\epsilon_{0}^{B}}{2}\pm \frac{1}{2}\sqrt{ (\epsilon_{0}^{A}-\epsilon_{0}^{B})^{2}+4t^{2}\left(1+ 4\cos\left(  \frac{3a}{2}k_{x} \right)\cos\left( \frac{\sqrt{ 3 }}{2}ak_{y} \right)+4 \cos ^{2}\left(  \frac{\sqrt{ 3 }}{2}ak_{y} \right)  \right)^{}}
 \end{align}$$
 For graphene, assume that $\epsilon_{0}^{A}=\epsilon_{0}^{B}=\epsilon_{0}$, we write:
-$$E= \epsilon_{0}\pm |t| \sqrt{  1+4 \cos\left(  \frac{3a}{2}k_{x} \right)\cos\left(  \frac{\sqrt{ 3 }}{2}ak_{y} \right)+4\cos ^{2}\left(  \frac{\sqrt{ 3 }}{2}ak_{y} \right)}$$
+$$E= \epsilon_{0}\pm t \sqrt{  1+4 \cos\left(  \frac{3a}{2}k_{x} \right)\cos\left(  \frac{\sqrt{ 3 }}{2}ak_{y} \right)+4\cos ^{2}\left(  \frac{\sqrt{ 3 }}{2}ak_{y} \right)}$$
 From $\Gamma\rightarrow M$, we have $k_{y}=0,\ 0\leq k_{x}\leq \frac{2\pi}{3a}$:
-$$E= \epsilon_{0}\pm |t|\sqrt{ 1+4\cos\left(  \frac{3a}{2}k_{x} \right)+4 }$$
+$$E= \epsilon_{0}\pm t\sqrt{ 1+4\cos\left(  \frac{3a}{2}k_{x} \right)+4 }$$
 ![[e1e6a87f5b7d48f7973e2755bab38e23.jpg|centering|300]]
 From $\Gamma\rightarrow K$, we have $k_{x}=\sqrt{ 3 }k_{y},\ 0\leq k_{y}\leq \frac{2\pi}{3\sqrt{ 3 }a}$:
-$$E= \epsilon_{0}\pm \sqrt{ 1+4\cos\left(  \frac{3\sqrt{ 3 }a}{2}k_{y} \right)\cos\left(  \frac{\sqrt{ 3 }}{2}ak_{y} \right)+4\cos ^{2}\left(  \frac{\sqrt{ 3 }}{2}ak_{y} \right) }$$
+$$E= \epsilon_{0}\pm t\sqrt{ 1+4\cos\left(  \frac{3\sqrt{ 3 }a}{2}k_{y} \right)\cos\left(  \frac{\sqrt{ 3 }}{2}ak_{y} \right)+4\cos ^{2}\left(  \frac{\sqrt{ 3 }}{2}ak_{y} \right) }$$
 ![[53ec8da443c114a6fc59ad9b41bbe974.jpg|centering|300]]
 Observe that each atom contribute one electron, and there are $2N$ atoms in total. Know that the number of available sites in the Brillouin zone is equal to the number of unit cells which is $N$, and each site can hold two electrons due to spin degeneracy. We conclude that electrons must spread the area of the Brillouin zone. Note that the maximum energy of the lower band is achieved at K, so we take $\epsilon_{F}=\epsilon_{0}$ so that the lower band is fully occupied. 
 ## (4)
@@ -77,7 +77,7 @@ $$\begin{align}
  & = \frac{9}{4}a^{2} \frac{p^{2}}{\hbar^{2}}
 \end{align}$$
 Then the dispersion is linear:
-$$E\approx \epsilon_{0}\pm |t| \frac{3}{2} \frac{a}{\hbar}|p|$$
+$$E\approx \epsilon_{0}\pm t \frac{3}{2} \frac{a}{\hbar}|p|$$
 Due to the symmetry of the bands, the expansion near other K points should yield the same result.
 # Problem 2
 ## (1)
@@ -99,143 +99,52 @@ $$\begin{align}
 \end{align}$$
 ## (4)
 
-There are three inequivalent atoms within a unit cell of a Kagome lattice. Name them as A, B, C. Their nearest neighbors vectors are denoted by $\boldsymbol{\delta}_{A},\ \boldsymbol{\delta}_{B},\ \boldsymbol{\delta}_{C}$. 
-![[3b3d2ee9a8c29f054866dfd1dbe29001.jpg|centering|500]]
+There are three inequivalent atoms within a unit cell of a Kagome lattice. Name them as A, B, C. Their nearest neighbors vectors are
+
+$$\begin{align}
+ & \boldsymbol{\delta}_{BA}\in \left\{   \frac{1}{2}a  \hat{\mathbf{x}}- \frac{\sqrt{ 3 }}{2}a \hat{\mathbf{y}},\ - \frac{1}{2}a  \hat{\mathbf{x}}+ \frac{\sqrt{ 3 }}{2}a  \hat{\mathbf{y}}  \right\} \\
+ & \boldsymbol{\delta}_{CA}\in \left\{  \frac{1}{2}a  \hat{\mathbf{x}}+ \frac{\sqrt{ 3 }}{2}a \hat{\mathbf{y}},\ - \frac{1}{2}a  \hat{\mathbf{x}}- \frac{\sqrt{ 3 }}{2}a \hat{\mathbf{y}}  \right\} \\
+ & \boldsymbol{\delta}_{BC}\in \{ \hat{a}\mathbf{x},  -\hat{a}\mathbf{x} \}
+\end{align}$$
+Other nearest neighbor vectors are defined in the opposite direction. (e.g. $\boldsymbol{\delta}_{BA}=-\boldsymbol{\delta}_{AB}$.)
+![[b5198f3ef6a0e71a1de9fe6fa80ab5c4.jpg|centering|400]]
 Then similar to problem 1, we write down the hamiltonian:
-$$H= \epsilon_{0}\sum_{n} \ket{\mathbf{R}^{A}_{n}} \bra{\mathbf{R}^{A}_{n}} +\sum_{n,\boldsymbol{\delta}_{A}}(-t)\ket{\mathbf{R}^{A}_{n}+\boldsymbol{\delta}_{A}} \bra{\mathbf{R}^{A}_{n}} +(A\leftrightarrow B)+(A\leftrightarrow C)$$
-We guess the eigenfunction: $\ket{\phi_{\mathbf{k}}}=\sum_{m}(\beta_{A}e^{i\mathbf{k}\cdot \mathbf{R}^{A}_{m}}\ket{\mathbf{R}^{A}_{m}}+\beta_{B}e^{i\mathbf{k}\cdot \mathbf{R}^{B}_{m}}\ket{\mathbf{R}^{B}_{m}}+\beta_{c} e^{i\mathbf{k}\cdot \mathbf{R}^{C}_{m}}\ket{\mathbf{R}^{C}_{m}})$
+$$H= \sum_{\text{cyc}(A,B,C)}\left( \epsilon_{0}\sum_{n} \ket{\mathbf{R}^{A}_{n}} \bra{\mathbf{R}^{A}_{n}} +\sum_{n,\boldsymbol{\delta}_{AB}}(-t)\ket{\mathbf{R}^{A}_{n}+\boldsymbol{\delta}_{AB}} \bra{\mathbf{R}^{A}_{n}} +\sum_{n,\boldsymbol{\delta}_{AC}}(-t)\ket{\mathbf{R}^{A}_{n}+\boldsymbol{\delta}_{AC}} \bra{\mathbf{R}^{A}_{n}} \right) $$
+Here $\sum_{\text{cyc}(A,B,C)}$ represents the cyclic sum by summing all cyclic permutations of $(A,B,C)$. We guess the eigenfunction: $\ket{\phi_{\mathbf{k}}}=\sum_{m}(\beta_{A}e^{i\mathbf{k}\cdot \mathbf{R}^{A}_{m}}\ket{\mathbf{R}^{A}_{m}}+\beta_{B}e^{i\mathbf{k}\cdot \mathbf{R}^{B}_{m}}\ket{\mathbf{R}^{B}_{m}}+\beta_{c} e^{i\mathbf{k}\cdot \mathbf{R}^{C}_{m}}\ket{\mathbf{R}^{C}_{m}})$
 Write down the Schrodinger's equation $H\ket{\phi_{\mathbf{k}}}=E\ket{\phi_{\mathbf{k}}}$. The LHS gives:
 $$\begin{align}
-H\ket{\phi_{\mathbf{k}}}   = &  \sum_{m}\epsilon_{0}\beta_{A}e^{i\mathbf{k}\cdot \mathbf{R}^{A}_{m}}\ket{\mathbf{R}^{A}_{m}} +\sum_{m,\boldsymbol{\delta}_{A}} \ket{\mathbf{R}^{A}_{m}+\boldsymbol{\delta}_{A}} \beta_{A}e^{i\mathbf{k}\cdot \mathbf{R}^{A}_{m}}+(A\leftrightarrow B)+(A\leftrightarrow C) \\
- = &  \sum_{m}\epsilon_{0}\beta_{A}e^{i\mathbf{k}\cdot \mathbf{R}^{A}_{m}}\ket{\mathbf{R}^{A}_{m}} + \sum_{m,\boldsymbol{\delta}_{A}}(-t)\ket{\mathbf{R}^{B}_{m}} \beta_{A}e^{i\mathbf{k}\cdot(\mathbf{R}^{B}_{m}-\boldsymbol{\delta}_{A})}+ \sum_{m,\boldsymbol{\delta}_{A}}(-t)\ket{\mathbf{R}^{C}_{m}} \beta_{A}e^{i\mathbf{k}\cdot (\mathbf{R}^{C}_{m}-\boldsymbol{\delta}_{A})} \\
- & +\sum_{m}\epsilon_{0}\beta_{B}e^{i\mathbf{k}\cdot \mathbf{R}^{B}_{m}}\ket{\mathbf{R}^{B}_{m}} + \sum_{m,\boldsymbol{\delta}_{B}}(-t)\ket{\mathbf{R}^{C}_{m}} \beta_{B}e^{i\mathbf{k}\cdot(\mathbf{R}^{C}_{m}-\boldsymbol{\delta}_{B})}+ \sum_{m,\boldsymbol{\delta}_{B}}(-t)\ket{\mathbf{R}^{A}_{m}} \beta_{B}e^{i\mathbf{k}\cdot (\mathbf{R}^{A}_{m}-\boldsymbol{\delta}_{B})} \\
-  & +\sum_{m}\epsilon_{0}\beta_{C}e^{i\mathbf{k}\cdot \mathbf{R}^{C}_{m}}\ket{\mathbf{R}^{C}_{m}} + \sum_{m,\boldsymbol{\delta}_{C}}(-t)\ket{\mathbf{R}^{A}_{m}} \beta_{C}e^{i\mathbf{k}\cdot(\mathbf{R}^{A}_{m}-\boldsymbol{\delta}_{C})}+ \sum_{m,\boldsymbol{\delta}_{C}}(-t)\ket{\mathbf{R}^{B}_{m}} \beta_{C}e^{i\mathbf{k}\cdot (\mathbf{R}^{B}_{m}-\boldsymbol{\delta}_{C})} 
+H\ket{\phi_{\mathbf{k}}} = &  \sum_{\text{cyc}(A,B,C)}\left( \sum_{m}\epsilon_{0}\beta_{A}e^{i\mathbf{k}\cdot \mathbf{R}^{A}_{m}}\ket{\mathbf{R}^{A}_{m}} + \sum_{m,\boldsymbol{\delta}_{AB}}(-t)\ket{\mathbf{R}^{A}_{m}+\boldsymbol{\delta}_{AB}} \beta_{A} e^{i\mathbf{k}\cdot \mathbf{R}^{A}_{m}}+ \sum_{m,\boldsymbol{\delta}_{AC}}(-t)\ket{\mathbf{R}^{A}_{m}+\boldsymbol{\delta}_{AC}} \beta_{A}e^{i\mathbf{k}\cdot \mathbf{R}^{A}_{m}} \right)   \\
+
+ = &  \sum_{\text{cyc}(A,B,C)}\left(\sum_{m}\epsilon_{0}\beta_{A}e^{i\mathbf{k}\cdot \mathbf{R}^{A}_{m}}\ket{\mathbf{R}^{A}_{m}} + \sum_{m,\boldsymbol{\delta}_{BA}}(-t)\ket{\mathbf{R}^{B}_{m}} \beta_{A}e^{i\mathbf{k}\cdot(\mathbf{R}^{B}_{m}+\boldsymbol{\delta}_{BA})}+ \sum_{m,\boldsymbol{\delta}_{CA}}(-t)\ket{\mathbf{R}^{C}_{m}} \beta_{A}e^{i\mathbf{k}\cdot (\mathbf{R}^{C}_{m}+\boldsymbol{\delta}_{CA})}  \right)
 \end{align}$$
 The RHS is just:
 $$E\ket{\phi_{\mathbf{k}}} =E\sum_{m}(\beta_{A}e^{i\mathbf{k}\cdot \mathbf{R}^{A}_{m}}\ket{\mathbf{R}^{A}_{m}}+\beta_{B}e^{i\mathbf{k}\cdot \mathbf{R}^{B}_{m}}\ket{\mathbf{R}^{B}_{m}}+\beta_{c} e^{i\mathbf{k}\cdot \mathbf{R}^{C}_{m}}\ket{\mathbf{R}^{C}_{m}})$$
 Due to the linear independence of the basis kets, we have:
 $$\begin{align}
- & E\beta_{A}=\epsilon_{0}\beta_{A}-t\sum_{\boldsymbol{\delta}_{B}}\beta_{B}e^{-i\mathbf{k}\cdot\boldsymbol{\delta}_{B}}-t\sum_{\boldsymbol{\delta}_{C}}\beta_{C}e^{-i\mathbf{k}\cdot\boldsymbol{\delta}_{C}} \\
- & E\beta_{B}=\epsilon_{0}\beta_{B}-t\sum_{\boldsymbol{\delta}_{C}}\beta_{C}e^{-i\mathbf{k}\cdot\boldsymbol{\delta}_{C}}-t\sum_{\boldsymbol{\delta}_{A}}\beta_{A}e^{-i\mathbf{k}\cdot\boldsymbol{\delta}_{A}} \\
-& E\beta_{C}=\epsilon_{0}\beta_{C}-t\sum_{\boldsymbol{\delta}_{A}}\beta_{A}e^{-i\mathbf{k}\cdot\boldsymbol{\delta}_{A}}-t\sum_{\boldsymbol{\delta}_{B}}\beta_{B}e^{-i\mathbf{k}\cdot\boldsymbol{\delta}_{B}}
+ & E\beta_{A}=\epsilon_{0}\beta_{A}-t\sum_{\boldsymbol{\delta}_{BA}}\beta_{BA}e^{i\mathbf{k}\cdot\boldsymbol{\delta}_{BA}}-t\sum_{\boldsymbol{\delta}_{CA}}\beta_{C}e^{i\mathbf{k}\cdot\boldsymbol{\delta}_{CA}} \\
+ & E\beta_{B}=\epsilon_{0}\beta_{B}-t\sum_{\boldsymbol{\delta}_{CB}}\beta_{C}e^{i\mathbf{k}\cdot\boldsymbol{\delta}_{CB}}-t\sum_{\boldsymbol{\delta}_{AB}}\beta_{A}e^{i\mathbf{k}\cdot\boldsymbol{\delta}_{AB}} \\
+& E\beta_{C}=\epsilon_{0}\beta_{C}-t\sum_{\boldsymbol{\delta}_{AC}}\beta_{A}e^{i\mathbf{k}\cdot\boldsymbol{\delta}_{AC}}-t\sum_{\boldsymbol{\delta}_{BC}}\beta_{B}e^{i\mathbf{k}\cdot\boldsymbol{\delta}_{BC}}
 \end{align}$$
-in which
+We have:
 $$\begin{align}
- & \boldsymbol{\delta}_{A}\in \left\{  \frac{1}{2}a   \hat{\mathbf{x}}+ \frac{\sqrt{ 3 }}{2}a  \hat{\mathbf{y}},\ \frac{1}{2}a  \hat{\mathbf{x}}- \frac{\sqrt{ 3 }}{2}a \hat{\mathbf{y}},\ - \frac{1}{2}a  \hat{\mathbf{x}}+ \frac{\sqrt{ 3 }}{2}a  \hat{\mathbf{y}},\  - \frac{1}{2}a \hat{\mathbf{x}}- \frac{\sqrt{ 3 }}{2}a  \hat{\mathbf{y}}  \right\} \\
- & \boldsymbol{\delta}_{B}\in \left\{  a \hat{\mathbf{x}}, \frac{1}{2}a \hat{\mathbf{x}}- \frac{\sqrt{ 3 }}{2}  \hat{\mathbf{y}},\ -a  \hat{\mathbf{x}},\ - \frac{1}{2}a  \hat{\mathbf{x}}+ \frac{\sqrt{ 3 }}{2}  \hat{\mathbf{y}}  \right\} \\
- & \boldsymbol{\delta}_{C}\in \left\{  a  \hat{\mathbf{x}},\  \frac{1}{2}a \hat{\mathbf{x}}+ \frac{\sqrt{ 3 }}{2}a  \hat{\mathbf{y}},\ -a  \hat{\mathbf{x}},\ - \frac{1}{2}a  \hat{\mathbf{x}}- \frac{\sqrt{ 3 }}{2}a  \hat{\mathbf{y}}  \right\}
+\gamma_{BA  } & = \sum_{\boldsymbol{\delta}_{BA}}e^{i\mathbf{k}\cdot\boldsymbol{\delta}_{BA}} \\
+&=e^{i\left(\frac{a k_x}{2}-\frac{\sqrt{3}a k_y}{2}\right)}
+ +e^{i\left(-\frac{a k_x}{2}+\frac{\sqrt{3}a k_y}{2}\right)}\\
+&=2\cos\left(\frac{a k_x}{2}-\frac{\sqrt{3}a k_y}{2}\right)
 \end{align}$$
+$$\begin{align}
+\gamma_{CA} & =\sum_{\boldsymbol{\delta}_{CA}}e^{i\mathbf{k}\cdot\boldsymbol{\delta}_{CA}} \\
+&=e^{i\left(\frac{a k_x}{2}+\frac{\sqrt{3}a k_y}{2}\right)}
+ +e^{i\left(-\frac{a k_x}{2}-\frac{\sqrt{3}a k_y}{2}\right)}\\
 
-
-
-
-
-### Matrix diagonalization
-
-The four vectors listed under each \(\boldsymbol{\delta}_{A,B,C}\) describe the four nearest neighbors of the corresponding site. In each term of the three coupled equations above, we use the two vectors that connect the two sublattices appearing in that term. Thus, the two vectors used in a particular sum are opposite to one another, and their phase factors give a cosine. In the expressions below, the factor \(a\) is included in the \(y\)-components of \(\boldsymbol{\delta}_{B}\) for dimensional consistency.
-
-In the first equation, the \(\boldsymbol{\delta}_{B}\) vectors connecting \(B\) to \(A\) are
-$$
-\frac{a}{2}\hat{\mathbf{x}}-\frac{\sqrt{3}a}{2}\hat{\mathbf{y}},
-\qquad
--\frac{a}{2}\hat{\mathbf{x}}+\frac{\sqrt{3}a}{2}\hat{\mathbf{y}}.
-$$
-Therefore,
-$$
-\begin{align}
-\sum_{\boldsymbol{\delta}_{B}}e^{-i\mathbf{k}\cdot\boldsymbol{\delta}_{B}}
-&=e^{-i\left(\frac{a k_x}{2}-\frac{\sqrt{3}a k_y}{2}\right)}
- +e^{-i\left(-\frac{a k_x}{2}+\frac{\sqrt{3}a k_y}{2}\right)}\\
-&=e^{-i\left(\frac{a k_x}{2}-\frac{\sqrt{3}a k_y}{2}\right)}
- +e^{i\left(\frac{a k_x}{2}-\frac{\sqrt{3}a k_y}{2}\right)}\\
-&=2\cos\left(\frac{a k_x}{2}-\frac{\sqrt{3}a k_y}{2}\right).
-\end{align}
-$$
-
-The \(\boldsymbol{\delta}_{C}\) vectors connecting \(C\) to \(A\) are
-$$
-\frac{a}{2}\hat{\mathbf{x}}+\frac{\sqrt{3}a}{2}\hat{\mathbf{y}},
-\qquad
--\frac{a}{2}\hat{\mathbf{x}}-\frac{\sqrt{3}a}{2}\hat{\mathbf{y}}.
-$$
-Thus,
-$$
-\begin{align}
-\sum_{\boldsymbol{\delta}_{C}}e^{-i\mathbf{k}\cdot\boldsymbol{\delta}_{C}}
-&=e^{-i\left(\frac{a k_x}{2}+\frac{\sqrt{3}a k_y}{2}\right)}
- +e^{-i\left(-\frac{a k_x}{2}-\frac{\sqrt{3}a k_y}{2}\right)}\\
-&=e^{-i\left(\frac{a k_x}{2}+\frac{\sqrt{3}a k_y}{2}\right)}
- +e^{i\left(\frac{a k_x}{2}+\frac{\sqrt{3}a k_y}{2}\right)}\\
-&=2\cos\left(\frac{a k_x}{2}+\frac{\sqrt{3}a k_y}{2}\right).
-\end{align}
-$$
-
-For the second equation, the \(\boldsymbol{\delta}_{C}\) vectors connecting \(C\) to \(B\) are \(a\hat{\mathbf{x}}\) and \(-a\hat{\mathbf{x}}\). Hence,
-$$
-\begin{align}
-\sum_{\boldsymbol{\delta}_{C}}e^{-i\mathbf{k}\cdot\boldsymbol{\delta}_{C}}
-&=e^{-i a k_x}+e^{-i(-a k_x)}\\
-&=e^{-i a k_x}+e^{i a k_x}\\
-&=2\cos(a k_x).
-\end{align}
-$$
-The \(\boldsymbol{\delta}_{A}\) vectors connecting \(A\) to \(B\) are
-$$
-\frac{a}{2}\hat{\mathbf{x}}-\frac{\sqrt{3}a}{2}\hat{\mathbf{y}},
-\qquad
--\frac{a}{2}\hat{\mathbf{x}}+\frac{\sqrt{3}a}{2}\hat{\mathbf{y}},
-$$
-so
-$$
-\begin{align}
-\sum_{\boldsymbol{\delta}_{A}}e^{-i\mathbf{k}\cdot\boldsymbol{\delta}_{A}}
-&=e^{-i\left(\frac{a k_x}{2}-\frac{\sqrt{3}a k_y}{2}\right)}
- +e^{-i\left(-\frac{a k_x}{2}+\frac{\sqrt{3}a k_y}{2}\right)}\\
-&=2\cos\left(\frac{a k_x}{2}-\frac{\sqrt{3}a k_y}{2}\right).
-\end{align}
-$$
-
-For the third equation, the \(\boldsymbol{\delta}_{A}\) vectors connecting \(A\) to \(C\) are
-$$
-\frac{a}{2}\hat{\mathbf{x}}+\frac{\sqrt{3}a}{2}\hat{\mathbf{y}},
-\qquad
--\frac{a}{2}\hat{\mathbf{x}}-\frac{\sqrt{3}a}{2}\hat{\mathbf{y}},
-$$
-and therefore
-$$
-\begin{align}
-\sum_{\boldsymbol{\delta}_{A}}e^{-i\mathbf{k}\cdot\boldsymbol{\delta}_{A}}
-&=e^{-i\left(\frac{a k_x}{2}+\frac{\sqrt{3}a k_y}{2}\right)}
- +e^{-i\left(-\frac{a k_x}{2}-\frac{\sqrt{3}a k_y}{2}\right)}\\
-&=2\cos\left(\frac{a k_x}{2}+\frac{\sqrt{3}a k_y}{2}\right).
-\end{align}
-$$
-The \(\boldsymbol{\delta}_{B}\) vectors connecting \(B\) to \(C\) are \(a\hat{\mathbf{x}}\) and \(-a\hat{\mathbf{x}}\), giving
-$$
-\begin{align}
-\sum_{\boldsymbol{\delta}_{B}}e^{-i\mathbf{k}\cdot\boldsymbol{\delta}_{B}}
-&=e^{-i a k_x}+e^{-i(-a k_x)}\\
-&=2\cos(a k_x).
-\end{align}
-$$
-
-Substituting these sums into the three equations already obtained gives
-$$
-\begin{align}
-E\beta_A
-&=\epsilon_0\beta_A
--2t\cos\left(\frac{a k_x}{2}-\frac{\sqrt{3}a k_y}{2}\right)\beta_B
--2t\cos\left(\frac{a k_x}{2}+\frac{\sqrt{3}a k_y}{2}\right)\beta_C,\\
-E\beta_B
-&=\epsilon_0\beta_B
--2t\cos(a k_x)\beta_C
--2t\cos\left(\frac{a k_x}{2}-\frac{\sqrt{3}a k_y}{2}\right)\beta_A,\\
-E\beta_C
-&=\epsilon_0\beta_C
--2t\cos\left(\frac{a k_x}{2}+\frac{\sqrt{3}a k_y}{2}\right)\beta_A
--2t\cos(a k_x)\beta_B.
-\end{align}
-$$
+&=2\cos\left(\frac{a k_x}{2}+\frac{\sqrt{3}a k_y}{2}\right)
+\end{align}$$
+$$\begin{align}
+\gamma_{BC} & = \sum_{\boldsymbol{\delta}_{BC}}e^{i\mathbf{k}\cdot\boldsymbol{\delta}_{BC}} \\
+ & = e^{iak_{x}}+e^{-iak_{x}} \\
+ & = 2\cos ak_{x}
+\end{align}$$
+Notice the $\gamma$'s have spatial inversion symmetry. Then $\gamma_{AB}(\mathbf{k})=\gamma_{BA}(-\mathbf{k})=\gamma_{BA}(\mathbf{k})$. Similar for other $\gamma$'s. 
 
 Therefore, the matrix equation is
 $$
@@ -269,15 +178,15 @@ E
 \beta_A\\
 \beta_B\\
 \beta_C
-\end{pmatrix}.
+\end{pmatrix}
 $$
 
-For a nonzero solution, the determinant of the matrix on the right minus \(E I\) must vanish:
+We derive the eigen equation:
 $$
 \begin{align}
 0
-&=\det
-\begin{pmatrix}
+&=
+\begin{vmatrix}
 \epsilon_0-E
 &
 -2t\cos\left(\frac{a k_x}{2}-\frac{\sqrt{3}a k_y}{2}\right)
@@ -295,7 +204,7 @@ $$
 -2t\cos(a k_x)
 &
 \epsilon_0-E
-\end{pmatrix}\\
+\end{vmatrix}\\
 &=(\epsilon_0-E)
 \left[(\epsilon_0-E)^2-4t^2\cos^2(a k_x)\right]\\
 &\quad
@@ -322,14 +231,12 @@ $$
 &\quad
 -16t^3\cos\left(\frac{a k_x}{2}-\frac{\sqrt{3}a k_y}{2}\right)
 \cos\left(\frac{a k_x}{2}+\frac{\sqrt{3}a k_y}{2}\right)
-\cos(a k_x).
+\cos(a k_x)
 \end{align}
 $$
-
-Expanding the powers of \((\epsilon_0-E)\), this is the following cubic equation directly in \(E\):
 $$
 \begin{align}
-0
+\implies0
 &=-E^3+3\epsilon_0E^2
 -\left[3\epsilon_0^2-4t^2\left\{
 \cos^2\left(\frac{a k_x}{2}-\frac{\sqrt{3}a k_y}{2}\right)
@@ -346,31 +253,16 @@ $$
 &\quad
 -16t^3\cos\left(\frac{a k_x}{2}-\frac{\sqrt{3}a k_y}{2}\right)
 \cos\left(\frac{a k_x}{2}+\frac{\sqrt{3}a k_y}{2}\right)
-\cos(a k_x).
+\cos(a k_x)
 \end{align}
 $$
+Observe that:
+$$
+\begin{align}
+&\cos^2\left(\frac{a k_x}{2}-\frac{\sqrt{3}a k_y}{2}\right)
++\cos^2\left(\frac{a k_x}{2}+\frac{\sqrt{3}a k_y}{2}\right)\\ & =  \frac{1+\cos(ak_{x}-\sqrt{ 3 }ak_{y})}{2}+ \frac{1+ \cos(ak_{x}+\sqrt{ 3 }ak_{y})}{2} \\
 
-We now simplify the trigonometric part directly:
-$$
-\begin{align}
-&\cos^2\left(\frac{a k_x}{2}-\frac{\sqrt{3}a k_y}{2}\right)
-+\cos^2\left(\frac{a k_x}{2}+\frac{\sqrt{3}a k_y}{2}\right)\\
-&=1+\cos(a k_x)\cos(\sqrt{3}a k_y),
-\end{align}
-$$
-because
-$$
-2\cos\left(\frac{a k_x}{2}-\frac{\sqrt{3}a k_y}{2}\right)
-\cos\left(\frac{a k_x}{2}+\frac{\sqrt{3}a k_y}{2}\right)
-=\cos(a k_x)+\cos(\sqrt{3}a k_y).
-$$
-Therefore,
-$$
-\begin{align}
-&\cos^2\left(\frac{a k_x}{2}-\frac{\sqrt{3}a k_y}{2}\right)
-+\cos^2\left(\frac{a k_x}{2}+\frac{\sqrt{3}a k_y}{2}\right)
-+\cos^2(a k_x)\\
-&=1+\cos(a k_x)\cos(\sqrt{3}a k_y)+\cos^2(a k_x),
+&=1+\cos(a k_x)\cos(\sqrt{3}a k_y)
 \end{align}
 $$
 while
@@ -379,7 +271,7 @@ $$
 &2\cos\left(\frac{a k_x}{2}-\frac{\sqrt{3}a k_y}{2}\right)
 \cos\left(\frac{a k_x}{2}+\frac{\sqrt{3}a k_y}{2}\right)
 \cos(a k_x)\\
-&=\cos^2(a k_x)+\cos(a k_x)\cos(\sqrt{3}a k_y).
+&=\cos^2(a k_x)+\cos(a k_x)\cos(\sqrt{3}a k_y)
 \end{align}
 $$
 Thus,
@@ -390,11 +282,10 @@ $$
 +\cos^2(a k_x)\\
 &=1+2\cos\left(\frac{a k_x}{2}-\frac{\sqrt{3}a k_y}{2}\right)
 \cos\left(\frac{a k_x}{2}+\frac{\sqrt{3}a k_y}{2}\right)
-\cos(a k_x).
+\cos(a k_x)
 \end{align}
 $$
-
-Substituting this identity into the determinant equation and factoring gives
+Then the eigen equation turns into:
 $$
 \begin{align}
 0
@@ -408,67 +299,69 @@ $$
 -16t^3\cos\left(\frac{a k_x}{2}-\frac{\sqrt{3}a k_y}{2}\right)
 \cos\left(\frac{a k_x}{2}+\frac{\sqrt{3}a k_y}{2}\right)
 \cos(a k_x)\\
-&=\left[
+&=\left(
 \epsilon_0-E+2t
-\right]\\
-&\quad\times\left[
+\right)
+\quad\left[
 (\epsilon_0-E)^2-2t(\epsilon_0-E)
 -8t^2\cos\left(\frac{a k_x}{2}-\frac{\sqrt{3}a k_y}{2}\right)
 \cos\left(\frac{a k_x}{2}+\frac{\sqrt{3}a k_y}{2}\right)
 \cos(a k_x)
-\right].
+\right]
 \end{align}
 $$
-
-Therefore, the three solutions are obtained from the two factors:
+Therefore, the three solutions are:
 $$
 \epsilon_0-E+2t=0
 \qquad\Longrightarrow\qquad
-E_1=\epsilon_0+2t,
+E=\epsilon_0+2t
 $$
-and
+And
 $$
 \begin{align}
-0
-&=(\epsilon_0-E)^2-2t(\epsilon_0-E)
+ & 0
+=(\epsilon_0-E)^2-2t(\epsilon_0-E)
 -8t^2\cos\left(\frac{a k_x}{2}-\frac{\sqrt{3}a k_y}{2}\right)
 \cos\left(\frac{a k_x}{2}+\frac{\sqrt{3}a k_y}{2}\right)
-\cos(a k_x).
+\cos(a k_x) \\
+\implies & \epsilon_{0}-E= t\pm t\sqrt{1+8\cos\left(\frac{a k_x}{2}-\frac{\sqrt{3}a k_y}{2}\right)
+\cos\left(\frac{a k_x}{2}+\frac{\sqrt{3}a k_y}{2}\right)
+\cos(a k_x)} \\
+\implies & E=\epsilon_{0}-t\pm t\sqrt{1+8\cos\left(\frac{a k_x}{2}-\frac{\sqrt{3}a k_y}{2}\right)
+\cos\left(\frac{a k_x}{2}+\frac{\sqrt{3}a k_y}{2}\right)
+\cos(a k_x)}
 \end{align}
 $$
-Solving this quadratic equation for \(\epsilon_0-E\) gives
-$$
-\begin{align}
-\epsilon_0-E
-&=\frac{2t\pm\sqrt{4t^2
-+32t^2\cos\left(\frac{a k_x}{2}-\frac{\sqrt{3}a k_y}{2}\right)
-\cos\left(\frac{a k_x}{2}+\frac{\sqrt{3}a k_y}{2}\right)
-\cos(a k_x)}}{2}\\
-&=t\pm t\sqrt{1+8\cos\left(\frac{a k_x}{2}-\frac{\sqrt{3}a k_y}{2}\right)
-\cos\left(\frac{a k_x}{2}+\frac{\sqrt{3}a k_y}{2}\right)
-\cos(a k_x)}.
-\end{align}
-$$
-Consequently, the two dispersive bands are
-$$
-\begin{align}
-E_{\pm}(\mathbf{k})
-&=\epsilon_0-t\pm t\sqrt{
-1+8\cos\left(\frac{a k_x}{2}-\frac{\sqrt{3}a k_y}{2}\right)
-\cos\left(\frac{a k_x}{2}+\frac{\sqrt{3}a k_y}{2}\right)
-\cos(a k_x)
-}.
-\end{align}
-$$
-The full diagonalized spectrum is therefore
-$$
-\boxed{
-E_1(\mathbf{k})=\epsilon_0+2t,\qquad
-E_{\pm}(\mathbf{k})=\epsilon_0-t\pm t\sqrt{
-1+8\cos\left(\frac{a k_x}{2}-\frac{\sqrt{3}a k_y}{2}\right)
-\cos\left(\frac{a k_x}{2}+\frac{\sqrt{3}a k_y}{2}\right)
-\cos(a k_x)
-}
-}.
-$$
-The first band is independent of \(\mathbf{k}\), so it is the Kagome flat band. For \(t>0\), the other two bands are the dispersive bands.
+The top band is clearly a flat band. From $\Gamma\rightarrow M$, we have that $k_{x}=\sqrt{ 3 }k_{y},\ 0\leq k_{y}\leq \frac{\pi}{2\sqrt{ 3 }a}$. The lower two bands are:
+$$E=\epsilon_{0}-t\pm t \sqrt{ 1+ 8\cos ^{2} (\sqrt{ 3 }ak_{y}) }$$
+The drawing is:![[246446d327258d74173034a0d77be130.jpg|centering|300]]
+From $\Gamma\rightarrow K$, we have that $k_{y}=0, 0\leq k_{x}\leq \frac{2\pi}{3a}$. The lower two bands are:
+$$E= \epsilon_{0}-t\pm t\sqrt{ 1+8 \cos ^{2}\left(  \frac{ak_{x}}{2} \right)\cos(ak_{x}) }=\epsilon_{0}-t\pm t\sqrt{ 1+ 4\cos ^{2}(ak_{x})+4\cos(ak_{x}) }$$
+The drawing is:
+![[a5847da500f7c1d936aaa49da07056d6.jpg|centering|300]]The band energy at M point are $\epsilon_{0}+2t,\ \epsilon_{0},\ \epsilon_{0}-2t$ respectively. The band energy at K point are $\epsilon_{0}+2t,\ \epsilon_{0}-t$ respectively.
+## (5)
+
+As derived above, the dispersion of the flat band is $E=\epsilon_{0}+2t$.
+
+# Problem 3
+## (1)
+
+The unit cell is a cube with length $2a$. The unit vectors are given by:
+$$\mathbf{a}_{1}= 2a  \hat{\mathbf{x}},\ \mathbf{a}_{2}= 2a  \hat{\mathbf{y}},\ \mathbf{a}_{3}=2a  \hat{\mathbf{z}}$$
+![[924d827a37bd1cbec04e5e7c75061c7c.jpg|centering|400]]
+## (2)
+
+Since the three lattice vectors in the real space are already orthogonal to each other, the length of the reciprocal lattice vectors is just $\frac{2\pi}{2a}= \frac{\pi}{a}$. Clearly, they should be parallel to their counterparts in the real space. We have:
+$$\mathbf{b}_{1}= \frac{\pi}{a}  \hat{\mathbf{x}},\ \mathbf{b}_{2}= \frac{\pi}{a}  \hat{\mathbf{y}},\ \mathbf{b}_{3}= \frac{\pi}{a}  \hat{\mathbf{z}}$$
+![[0629a4b90aaaf686dc3e9be04e69dda4.jpg|centering|300]]
+The high symmetry points are:
+$$\begin{align}
+ & \Gamma=(0,0,0),\ A=(1,0,1),\ X=(1,0,0) \\
+ & M=(1,1,0),\ H=(1,1,1)  
+\end{align}$$
+## (3)
+
+
+
+
+
