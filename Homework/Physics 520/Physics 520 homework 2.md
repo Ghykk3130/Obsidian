@@ -361,6 +361,36 @@ $$\begin{align}
 \end{align}$$
 ## (3)
 
+Define the nearest neighbor vectors:
+$$\begin{align}
+ & \boldsymbol{\delta}_{AB}\in \{  a \hat{\mathbf{z}},\ -a \hat{\mathbf{z}} \} \\
+ & \boldsymbol{\delta}_{AC}\in \{ a \hat{\mathbf{y}},-a  \hat{\mathbf{y}} \} \\
+ & \boldsymbol{\delta}_{AD}\in \{ a \hat{\mathbf{x}},-\hat{a}\mathbf{x} \} \\
+
+\end{align}$$
+![[fe8263df5cbac56b02cb4e291f09043f.jpg|centering|300]]
+Similar to problem 2, we can write down the hamiltonian:
+$$\begin{align}
+H = &   \epsilon_{0}\sum_{n}\ket{\mathbf{R}^{A}_{n}} \bra{\mathbf{R}^{A}_{n}} +\sum_{n,\boldsymbol{\delta}_{AB}}(-t)\ket{\mathbf{R}^{A}_{n}+\boldsymbol{\delta}_{AB}} \bra{\mathbf{R}^{A}_{n}} + \sum_{n,\boldsymbol{\delta}_{AC}}(-t)\ket{\mathbf{R}^{A}_{n}+\boldsymbol{\delta}_{AC}} \bra{\mathbf{R}^{A}_{n}} +\sum_{n,\boldsymbol{\delta}_{AD}} (-t)\ket{\mathbf{R}^{A}_{n}+\boldsymbol{\delta}_{AD}} \bra{\mathbf{R}^{A}_{n}}  \\
+ & + \left[  \epsilon_{0}\sum_{n}\ket{\mathbf{R}^{B}_{n}} \bra{\mathbf{R}^{B}_{n}} + \sum_{n,\boldsymbol{\delta}_{BA}}(-t)|\mathbf{R}^{B}_{n}+\boldsymbol{\delta}_{BA}\rangle\bra{\mathbf{R}^{B}_{n}}  +(B\leftrightarrow C)+(C\leftrightarrow D)\right]
+\end{align}$$
+We guess the eigen function:
+$$\ket{\phi_{\mathbf{k}}} =\sum_{n}\beta_{A}e^{i\mathbf{k}\cdot \mathbf{R}^{A}_{n}}\ket{\mathbf{R}^{A}_{n}} +(A\leftrightarrow B)+(A\leftrightarrow C)+(A\leftrightarrow D)$$
+Substitute into the Schrodinger's equation to get:
+$$\begin{align}
+H\ket{\phi_{\mathbf{k}}}  = &  \epsilon_{0}\sum_{n}\beta_{A}e^{i\mathbf{k}\cdot \mathbf{R}^{A}_{n}}\ket{\mathbf{R}^{A}_{n}} + \sum_{n,\boldsymbol{\delta}_{BA}}(-t)\beta_{A}\ket{\mathbf{R}^{B}_{n}} e^{i\mathbf{k}\cdot(\mathbf{R}^{B}_{n}+\boldsymbol{\delta}_{BA})}+\sum_{n,\boldsymbol{\delta}_{CA}}(-t)\beta_{A}\ket{\mathbf{R}^{C}_{n}} e^{i\mathbf{k}\cdot(\mathbf{R}^{C}_{n}+\boldsymbol{\delta}_{CA})}+ \sum_{n,\boldsymbol{\delta}_{DA}}(-t)\beta_{A}\ket{\mathbf{R}^{D}_{n}} e^{i\mathbf{k}\cdot(\mathbf{R}^{D}_{n}+\boldsymbol{\delta}_{DA})} \\
+ & + \left[ \epsilon_{0} \sum_{n}\beta_{B}\ket{\mathbf{R}^{B}_{n}}  +\sum_{n,{\boldsymbol{\delta}_{AB}}} (-t)\beta_{B} \ket{\mathbf{R}^{A}_{n}} e^{i\mathbf{k}\cdot(\mathbf{R}^{A}_{n}+\boldsymbol{\delta}_{AB})}+(B\leftrightarrow C)+(C\leftrightarrow D) \right]
+\end{align}$$
+On the other hand:
+$$E\ket{\phi_{\mathbf{k}}} =E\left[\sum_{n}\beta_{A}e^{i\mathbf{k}\cdot \mathbf{R}^{A}_{n}}\ket{\mathbf{R}^{A}_{n}} +(A\leftrightarrow B)+(A\leftrightarrow C)+(A\leftrightarrow D)\right]$$
+Due to the linear independence of the basis, we get:
+$$\begin{align}
+ & E\beta_{A}=\epsilon_{0}\beta_{A}-t\sum_{\boldsymbol{\delta}_{AB}}\beta_{B}e^{i\mathbf{k}\cdot\boldsymbol{\delta}_{AB}}-t\sum_{\boldsymbol{\delta}_{AC}}\beta_{C}e^{i\mathbf{k}\cdot\boldsymbol{\delta}_{AC}}-t \sum_{\boldsymbol{\delta}_{AD}} \beta_{D}e^{i\mathbf{k}\cdot\boldsymbol{\delta}_{AD}} \\
+ & E \beta_{B}= \epsilon_{0}\beta_{B}-t \sum_{\boldsymbol{\delta}_{BA}}\beta_{A}e^{i\mathbf{k}\cdot\boldsymbol{\delta}_{BA}} \\
+ & E \beta_{C}=\epsilon_{0}\beta_{C}-t\sum_{\boldsymbol{\delta}_{CA}}\beta_{A}e^{i\mathbf{k}\cdot\boldsymbol{\delta}_{CA}} \\
+ & E \beta_{D}=\epsilon_{0}\beta_{D}-t\sum_{\boldsymbol{\delta}_{DA}}\beta_{A}e^{i\mathbf{k}\cdot\boldsymbol{\delta}_{DA}}
+\end{align}$$
+
 
 
 
