@@ -74,6 +74,36 @@ Then:
 $$H= \int d^{3}x  (\pi ^{*}\pi+\nabla \phi ^{*}codt\nabla \phi+m^{2}\phi ^{*}\phi)$$
 ## (a2)
 
+We have:
+$$\begin{align}
+[\phi(\mathbf{x}^{'}),\pi ^{*}(\mathbf{x})\pi(\mathbf{x})] & = \phi(\mathbf{x}^{'})\pi ^{*}(\mathbf{x})\pi(\mathbf{x})- \pi ^{*}(\mathbf{x})\pi(\mathbf{x})\phi(\mathbf{x}^{'}) \\
+ & = \pi ^{*}\phi \pi-\pi ^{*}\pi \phi \\
+ & = \pi ^{*}(i\delta^{3}(\mathbf{x}^{'}-\mathbf{x})+\pi \phi)-\pi ^{*}\pi \phi \\
+ & = i\pi ^{*}\delta^{3}(\mathbf{x}^{'}-\mathbf{x})
+\end{align}$$
+$$\begin{align}
+[\phi(\mathbf{x}^{'}),\nabla \phi ^{*}(\mathbf{x})\cdot \nabla \phi(\mathbf{x})] & = \phi(\mathbf{x}^{'})\nabla \phi ^{*}(\mathbf{x})\cdot \nabla \phi (\mathbf{x})-\nabla \phi ^{*}(\mathbf{x})\cdot \nabla \phi(\mathbf{x}) \phi(\mathbf{x}^{'}) \\
+ & = \nabla \phi ^{*}\cdot \phi \nabla \phi-\nabla \phi ^{*}\cdot (\nabla \phi )\phi \\
+ & = \nabla \phi ^{*}\cdot (\nabla \phi)\phi-\nabla \phi ^{*}\cdot(\nabla \phi)\phi \\
+ & = 0
+\end{align}$$
+$$\begin{align}
+[\phi(\mathbf{x}^{'}),\phi ^{*}(\mathbf{x})\phi(\mathbf{x})] & = \phi(\mathbf{x}^{'})\phi ^{*}(\mathbf{x})\phi(\mathbf{x})-\phi ^{*}(\mathbf{x})\phi(\mathbf{x})\phi(\mathbf{x}^{'}) \\
+ & = \phi ^{*}(\mathbf{x})\phi(\mathbf{x})\phi(\mathbf{x}^{'})-\phi ^{*}(\mathbf{x})\phi(\mathbf{x})\phi(\mathbf{x}^{'}) \\
+ & =0
+\end{align}$$
+Then we have:
+$$\begin{align}
+[\phi(\mathbf{x}^{'}),H] & = \left[ \phi(x^{'}),\int d^{3}x(\pi ^{*}\pi+\nabla \phi ^{*}\cdot\nabla \phi+m^{2}\phi ^{*}\phi) \right] \\
+ & = \int d^{3}x([\phi,\pi ^{*}\pi]+[\phi,\nabla \phi ^{*}\cdot \nabla \phi]+m^{2}[\phi,\phi ^{*}\phi]) \\
+ & = \int d^{3}x i\pi(\mathbf{x})\delta^{3}(\mathbf{x}^{'}-\mathbf{x}) \\
+ & = i\pi(\mathbf{x}^{'}) 
+\end{align}$$
+From Heisenberg's EOM we get:
+$$\partial_{t}\phi=\pi$$
+
+
+
 
 
 
