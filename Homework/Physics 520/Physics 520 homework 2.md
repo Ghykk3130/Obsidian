@@ -2,30 +2,21 @@
 ## (a)
 
 The unit cell in the real space is a triangular lattice with length $\sqrt{ 3 }a$. The lattice unit vectors are:
-$$\mathbf{a}_{1}= \frac{{ 3 }}{2}  a\hat{\mathbf{x}}+ \frac{\sqrt{ 3 }}{2}a \hat{\mathbf{y}},\ \mathbf{a}_{2}= \frac{3}{2}  \hat{\mathbf{x}}a- \frac{\sqrt{ 3 }}{2} a \hat{\mathbf{y}}$$
+$$\mathbf{a}_{1}= \frac{{ 3 }}{2}  a\hat{\mathbf{x}}- \frac{\sqrt{ 3 }}{2}a \hat{\mathbf{y}},\ \mathbf{a}_{2}= \frac{3}{2}  \hat{\mathbf{x}}a+ \frac{\sqrt{ 3 }}{2} a \hat{\mathbf{y}}$$
 ![[966c66f45a73572375ad6f7a7180ea17.jpg|centering|300]]
 The reciprocal lattice vectors are given by:
-$$\mathbf{b}_{1}=  \frac{2\pi\mathbf{z}\times \mathbf{a}_{2}}{\mathbf{a}_{1}\cdot(\mathbf{z}\times \mathbf{a}_{2})}= \frac{2\pi}{3a}  \hat{\mathbf{x}}+ \frac{2}{3a}\sqrt{ 3 }{\pi}  \hat{\mathbf{y}},\ \mathbf{b}_{2}= \frac{2\pi \mathbf{a}_{1}\times \mathbf{z}}{\mathbf{a}_{2}\cdot(\mathbf{a}_{1}\times \mathbf{a})}= \frac{2\pi}{3a}  \hat{\mathbf{x}}- \frac{2}{3a}\sqrt{ 3 }\pi   \hat{\mathbf{y}}$$
+$$\mathbf{b}_{1}=  \frac{2\pi \mathbf{a}_{2}\times  \hat{\mathbf{z}}}{\mathbf{a}_{1}\cdot(\mathbf{a}_{2}\times   \hat{\mathbf{z}})}= \frac{2\pi}{3a} \hat{\mathbf{x}}- \frac{2\sqrt{ 3 }\pi}{3a} \hat{\mathbf{y}},\ \mathbf{b}_{2}= \frac{2\pi  \hat{\mathbf{z}}\times \mathbf{a}_{1}}{\mathbf{a}_{2}\cdot(  \hat{\mathbf{z}}\times \mathbf{a}_{1})}= \frac{2\pi}{3a} \hat{\mathbf{x}}+ \frac{2\sqrt{ 3 }\pi}{3a}  \hat{\mathbf{y}}$$
 ## (b)
 
 ![[4cfb9e8f8a7ee939439ab908c0e40a83.jpg|centering|300]]
 We have:
 $$\begin{align}
- M  =  & \left( \frac{1}{2}, \frac{1}{2}  \right),\ \left( 0 , \frac{1}{2}  \right),\ \left( - \frac{1}{2},0 \right) \\
- & \left( - \frac{1}{2},- \frac{1}{2} \right),\ \left( 0, - \frac{1}{2} \right),\ \left(  \frac{1}{2}, 0 \right)
+ M= & \frac{2\pi}{3a} \hat{\mathbf{x}},\ \frac{\pi}{3a} \hat{\mathbf{x}}+ \frac{\sqrt{ 3 }\pi}{3a} \hat{\mathbf{y}},\ - \frac{\pi}{3a} \hat{\mathbf{x}}+ \frac{\sqrt{ 3 }\pi }{3a} \hat{\mathbf{y}}, \\
+ & - \frac{2\pi}{3a}  \hat{\mathbf{x}},\ - \frac{\pi}{3a}  \hat{\mathbf{x}}- \frac{\sqrt{ 3 }\pi}{3a} \hat{\mathbf{y}},\ \frac{\pi}{3a} \hat{\mathbf{x}}- \frac{\sqrt{ 3 }\pi}{3a} \hat{\mathbf{y}}
 \end{align}$$
 $$\begin{align}
-K & = \left( \frac{1}{2}, \frac{5}{6} \right),\ \left( - \frac{5}{6},- \frac{1}{3} \right),\ \left( \frac{1}{6},- \frac{1}{3} \right) \\
-K^{'} & = \left( - \frac{1}{3}, \frac{1}{3} \right),\ \left( - \frac{1}{3},- \frac{5}{6} \right),\ \left( \frac{5}{6}, \frac{1}{3} \right)
-\end{align}$$
-
-Using $\mathbf{k}=u\mathbf{b}_{1}+v\mathbf{b}_{2}$, the positions in the $\hat{\mathbf{x}},\hat{\mathbf{y}}$ basis are:
-$$\begin{align}
-\Gamma = & \mathbf{0} \\
-M  =  & \frac{2\pi}{3a}\hat{\mathbf{x}},\ \frac{\pi}{3a}\hat{\mathbf{x}}-\frac{\sqrt{3}\pi}{3a}\hat{\mathbf{y}},\ -\frac{\pi}{3a}\hat{\mathbf{x}}-\frac{\sqrt{3}\pi}{3a}\hat{\mathbf{y}} \\
-& -\frac{2\pi}{3a}\hat{\mathbf{x}},\ -\frac{\pi}{3a}\hat{\mathbf{x}}+\frac{\sqrt{3}\pi}{3a}\hat{\mathbf{y}},\ \frac{\pi}{3a}\hat{\mathbf{x}}+\frac{\sqrt{3}\pi}{3a}\hat{\mathbf{y}} \\
-K = & \frac{8\pi}{9a}\hat{\mathbf{x}}-\frac{2\sqrt{3}\pi}{9a}\hat{\mathbf{y}},\ -\frac{7\pi}{9a}\hat{\mathbf{x}}-\frac{\sqrt{3}\pi}{3a}\hat{\mathbf{y}},\ -\frac{\pi}{9a}\hat{\mathbf{x}}+\frac{\sqrt{3}\pi}{3a}\hat{\mathbf{y}} \\
-K^{'} = & -\frac{4\sqrt{3}\pi}{9a}\hat{\mathbf{y}},\ -\frac{7\pi}{9a}\hat{\mathbf{x}}+\frac{\sqrt{3}\pi}{3a}\hat{\mathbf{y}},\ \frac{7\pi}{9a}\hat{\mathbf{x}}+\frac{\sqrt{3}\pi}{3a}\hat{\mathbf{y}}
+K & = \frac{2\pi}{3a} \hat{\mathbf{x}}+ \frac{2\pi}{3\sqrt{ 3 }a}  \hat{\mathbf{y}},\ - \frac{2\pi}{3a}  \hat{\mathbf{x}}+ \frac{2\pi}{3\sqrt{ 3 }a}  \hat{\mathbf{y}},\ - \frac{4\pi}{3\sqrt{ 3 }a}  \hat{\mathbf{y}} \\
+K^{'} & = \frac{4\pi}{3\sqrt{ 3 }a} \hat{\mathbf{y}},\ - \frac{2\pi}{3a}  \hat{\mathbf{x}}- \frac{2\pi}{3\sqrt{ 3 }a}  \hat{\mathbf{y}},\ \frac{2\pi}{3a}  \hat{\mathbf{x}}- \frac{2\pi}{3\sqrt{ 3 }a}  \hat{\mathbf{y}}
 \end{align}$$
 ## (d)
 
@@ -84,7 +75,7 @@ Observe that each atom contribute one electron, and there are $2N$ atoms in tota
 The chemical potential is only reached at the K points. We expand around $\mathbf{k}= \frac{2\pi}{3a}  \hat{\mathbf{x}}+ \frac{2\pi}{3\sqrt{ 3 }a} \hat{\mathbf{y}}$. We have:
 $$\begin{align}
  & \cos\left(  \frac{3a}{2}\left( k_{x}+ \frac{p_{x}}{\hbar} \right) \right)\approx \left.\cos\left(  \frac{3a}{2}k_{x} \right)\right|_{\mathbf{k}}+ \left.\cos ^{'}\left(  \frac{3a}{2}k_{x} \right)\right|_{\mathbf{k}} \frac{p_{x}}{\hbar}+ \frac{1}{2} \left. \cos ^{''}\left(  \frac{3a}{2}k_{x} \right)\right|_{\mathbf{k}} \frac{p_{x}^{2}}{\hbar^{2}}= -1+ \frac{9a^{2}}{8} \frac{p_{x}^{2}}{\hbar^{2}} \\
- & \cos\left(  \frac{\sqrt{ 3 }a}{2}\left( k_{y}+ \frac{p_{y}}{\hbar} \right) \right)\approx \left. \cos\left(  \frac{\sqrt{ 3 }a}{2}k_{y} \right)  \right|_{\mathbf{k}}+ \left. \cos ^{}\left(  \frac{\sqrt{ 3 }a}{2}k_{y} \right)  \right|_{\mathbf{k}} \frac{p_{y}}{\hbar}+  \frac{1}{2} \left. \cos ^{''}\left(  \frac{\sqrt{ 3 }a}{2}k_{y} \right)  \right|_{\mathbf{k}} \frac{p_{y}^{2}}{\hbar^{2}}= \frac{1}{2}- \frac{3}{4}a  \frac{p_{y}}{\hbar}- \frac{3}{16}a^{2} \frac{p_{y}^{2}}{\hbar^{2}}\end{align}$$
+ & \cos\left(  \frac{\sqrt{ 3 }a}{2}\left( k_{y}+ \frac{p_{y}}{\hbar} \right) \right)\approx \left. \cos\left(  \frac{\sqrt{ 3 }a}{2}k_{y} \right)  \right|_{\mathbf{k}}+ \left. \cos ^{'}\left(  \frac{\sqrt{ 3 }a}{2}k_{y} \right)  \right|_{\mathbf{k}} \frac{p_{y}}{\hbar}+  \frac{1}{2} \left. \cos ^{''}\left(  \frac{\sqrt{ 3 }a}{2}k_{y} \right)  \right|_{\mathbf{k}} \frac{p_{y}^{2}}{\hbar^{2}}= \frac{1}{2}- \frac{3}{4}a  \frac{p_{y}}{\hbar}- \frac{3}{16}a^{2} \frac{p_{y}^{2}}{\hbar^{2}}\end{align}$$
  Then keep to the second order term:
  $$\begin{align}
 1+4\cos\left(  \frac{3 a}{2}\left( k_{x}+ \frac{p_{x}}{\hbar} \right) \right)\cos\left(  \frac{\sqrt{ 3 }}{2}a\left( k_{y }+ \frac{p_{y}}{\hbar}  \right) \right)+ 4\cos ^{2}\left(  \frac{\sqrt{ 3 }}{2}a\left( k_{y}+ \frac{p_{y}}{\hbar} \right) \right) & \approx 1+4\left( -1+ \frac{9a^{2}}{8} \frac{p_{x}^{2}}{\hbar^{2}} \right)\left(  \frac{1}{2}- \frac{3}{4}a \frac{p_{y}}{\hbar}- \frac{3}{16}a^{2} \frac{p_{y}^{2}}{\hbar^{2}} \right)+4\left( \frac{1}{2}- \frac{3}{4}a \frac{p_{y}}{\hbar}- \frac{3}{16}a^{2} \frac{p_{y}^{2}}{\hbar^{2}} \right)^{2} \\
@@ -110,21 +101,13 @@ $$\begin{align}
 ![[bf3540103208f70e17eb809b289a4fa5.jpg|centering|300]]
 We have:
 $$\begin{align}
- M  =  & \left( \frac{1}{2}, \frac{1}{2}  \right),\ \left( 0 , \frac{1}{2}  \right),\ \left( - \frac{1}{2},0 \right) \\
- & \left( - \frac{1}{2},- \frac{1}{2} \right),\ \left( 0, - \frac{1}{2} \right),\ \left(  \frac{1}{2}, 0 \right)
+ M  =   & \frac{\pi}{2a}  \hat{\mathbf{x}}+ \frac{\pi}{2\sqrt{ 3 }a}  \hat{\mathbf{y}},\ \frac{\pi}{\sqrt{ 3 }a}  \hat{\mathbf{y}},\ - \frac{\pi}{2a} \hat{\mathbf{x}}+ \frac{\pi}{2\sqrt{ 3 }a}  \hat{\mathbf{y}}, \\
+ &  - \frac{\pi }{2a }  \hat{\mathbf{x}}- \frac{\pi}{2\sqrt{ 3 }a}  \hat{\mathbf{y}},\ - \frac{\pi}{\sqrt{ 3 }a}  \hat{\mathbf{y}},\ \frac{\pi}{2a}  \hat{\mathbf{x}}- \frac{\pi}{2\sqrt{ 3 }a} \hat{\mathbf{y}}\\
+ 
 \end{align}$$
 $$\begin{align}
-K & = \left( \frac{1}{2}, \frac{5}{6} \right),\ \left( - \frac{5}{6},- \frac{1}{3} \right),\ \left( \frac{1}{6},- \frac{1}{3} \right) \\
-K^{'} & = \left( - \frac{1}{3}, \frac{1}{3} \right),\ \left( - \frac{1}{3},- \frac{5}{6} \right),\ \left( \frac{5}{6}, \frac{1}{3} \right)
-\end{align}$$
-
-Using $\mathbf{k}=u\mathbf{b}_{1}+v\mathbf{b}_{2}$, the positions in the $\hat{\mathbf{x}},\hat{\mathbf{y}}$ basis are:
-$$\begin{align}
-\Gamma = & \mathbf{0} \\
-M  =  & \frac{\pi}{2a}\hat{\mathbf{x}}+\frac{\sqrt{3}\pi}{2a}\hat{\mathbf{y}},\ \frac{\pi}{2a}\hat{\mathbf{x}}+\frac{\pi}{2\sqrt{3}a}\hat{\mathbf{y}},\ -\frac{\pi}{\sqrt{3}a}\hat{\mathbf{y}} \\
-& -\frac{\pi}{2a}\hat{\mathbf{x}}-\frac{\sqrt{3}\pi}{2a}\hat{\mathbf{y}},\ -\frac{\pi}{2a}\hat{\mathbf{x}}-\frac{\pi}{2\sqrt{3}a}\hat{\mathbf{y}},\ \frac{\pi}{\sqrt{3}a}\hat{\mathbf{y}} \\
-K = & \frac{5\pi}{6a}\hat{\mathbf{x}}+\frac{11\pi}{6\sqrt{3}a}\hat{\mathbf{y}},\ -\frac{\pi}{3a}\hat{\mathbf{x}}-\frac{2\pi}{\sqrt{3}a}\hat{\mathbf{y}},\ -\frac{\pi}{3a}\hat{\mathbf{x}} \\
-K^{'} = & \frac{\pi}{3a}\hat{\mathbf{x}}-\frac{\pi}{3\sqrt{3}a}\hat{\mathbf{y}},\ -\frac{5\pi}{6a}\hat{\mathbf{x}}-\frac{\sqrt{3}\pi}{2a}\hat{\mathbf{y}},\ \frac{\pi}{3a}\hat{\mathbf{x}}+\frac{2\pi}{\sqrt{3}a}\hat{\mathbf{y}}
+K & = \frac{\pi}{3a}  \hat{\mathbf{x}}+ \frac{\pi}{\sqrt{ 3 }a}  \hat{\mathbf{y}},\ - \frac{2\pi}{3a}  \hat{\mathbf{x}},\ \frac{\pi}{3a} \hat{\mathbf{x}}- \frac{\pi}{\sqrt{ 3 }a}  \hat{\mathbf{y}} \\
+K^{'} & =  \frac{2\pi}{3a} \hat{\mathbf{x}},\ - \frac{\pi}{3a} \hat{\mathbf{x}}+ \frac{\pi}{\sqrt{ 3 }a} \hat{\mathbf{y}},\ - \frac{\pi}{3a} \hat{\mathbf{x}}- \frac{\pi}{\sqrt{ 3 }a}  \hat{\mathbf{y}}
 \end{align}$$
 ## (d)
 
@@ -150,7 +133,7 @@ The RHS is just:
 $$E\ket{\phi_{\mathbf{k}}} =E\sum_{m}(\beta_{A}e^{i\mathbf{k}\cdot \mathbf{R}^{A}_{m}}\ket{\mathbf{R}^{A}_{m}}+\beta_{B}e^{i\mathbf{k}\cdot \mathbf{R}^{B}_{m}}\ket{\mathbf{R}^{B}_{m}}+\beta_{c} e^{i\mathbf{k}\cdot \mathbf{R}^{C}_{m}}\ket{\mathbf{R}^{C}_{m}})$$
 Due to the linear independence of the basis kets, we have:
 $$\begin{align}
- & E\beta_{A}=\epsilon_{0}\beta_{A}-t\sum_{\boldsymbol{\delta}_{BA}}\beta_{BA}e^{i\mathbf{k}\cdot\boldsymbol{\delta}_{BA}}-t\sum_{\boldsymbol{\delta}_{CA}}\beta_{C}e^{i\mathbf{k}\cdot\boldsymbol{\delta}_{CA}} \\
+ & E\beta_{A}=\epsilon_{0}\beta_{A}-t\sum_{\boldsymbol{\delta}_{BA}}\beta_{B}e^{i\mathbf{k}\cdot\boldsymbol{\delta}_{BA}}-t\sum_{\boldsymbol{\delta}_{CA}}\beta_{C}e^{i\mathbf{k}\cdot\boldsymbol{\delta}_{CA}} \\
  & E\beta_{B}=\epsilon_{0}\beta_{B}-t\sum_{\boldsymbol{\delta}_{CB}}\beta_{C}e^{i\mathbf{k}\cdot\boldsymbol{\delta}_{CB}}-t\sum_{\boldsymbol{\delta}_{AB}}\beta_{A}e^{i\mathbf{k}\cdot\boldsymbol{\delta}_{AB}} \\
 & E\beta_{C}=\epsilon_{0}\beta_{C}-t\sum_{\boldsymbol{\delta}_{AC}}\beta_{A}e^{i\mathbf{k}\cdot\boldsymbol{\delta}_{AC}}-t\sum_{\boldsymbol{\delta}_{BC}}\beta_{B}e^{i\mathbf{k}\cdot\boldsymbol{\delta}_{BC}}
 \end{align}$$
@@ -385,12 +368,6 @@ $$\mathbf{b}_{1}= \frac{\pi}{a}  \hat{\mathbf{x}},\ \mathbf{b}_{2}= \frac{\pi}{a
 ![[0629a4b90aaaf686dc3e9be04e69dda4.jpg|centering|300]]
 The high symmetry points are:
 $$\begin{align}
- & \Gamma=(0,0,0),\ A=\left( 0,0, \frac{1}{2}  \right),\ X=\left(  \frac{1}{2} ,0,0 \right) \\
- & M=\left(  \frac{1}{2} , \frac{1}{2} ,0 \right),\ H=\left(  \frac{1}{2} , \frac{1}{2} , \frac{1}{2} \right)  
-\end{align}$$
-
-Using $\mathbf{k}=u\mathbf{b}_{1}+v\mathbf{b}_{2}+w\mathbf{b}_{3}$, the positions in the $\hat{\mathbf{x}},\hat{\mathbf{y}},\hat{\mathbf{z}}$ basis are:
-$$\begin{align}
 \Gamma = & \mathbf{0},\qquad A=\frac{\pi}{2a}\hat{\mathbf{z}},\qquad X=\frac{\pi}{2a}\hat{\mathbf{x}} \\
 M = & \frac{\pi}{2a}\hat{\mathbf{x}}+\frac{\pi}{2a}\hat{\mathbf{y}},\qquad L=\frac{\pi}{2a}\hat{\mathbf{x}}+\frac{\pi}{2a}\hat{\mathbf{z}},\qquad H=\frac{\pi}{2a}\hat{\mathbf{x}}+\frac{\pi}{2a}\hat{\mathbf{y}}+\frac{\pi}{2a}\hat{\mathbf{z}}
 \end{align}$$
@@ -440,22 +417,25 @@ $$\begin{align}
 Then we need to solve:
 $$\begin{align}
  & \begin{vmatrix}
-\epsilon_{0}-E & -2t\cos(k_{z}a) & -2t\cos(k_{y}a) & -2t\cos*k_{x}a &  \\
+\epsilon_{0}-E & -2t\cos(k_{z}a) & -2t\cos(k_{y}a) & -2t\cos k_{x}a &  \\
 -2t\cos(k_{z}a) & \epsilon_{0}-E & 0 & 0 \\
--2t\cos(k_{y}a)0 & \epsilon_{0}-E & 0 \\
+-2t\cos(k_{y}a) & 0 & \epsilon_{0}-E & 0 \\
 -2t\cos(k_{x}a) & 0 & 0 & \epsilon_{0}-E
 \end{vmatrix}=0 \\
 \implies & (\epsilon_{0}-E)^{4} +2t \cos(k_{y}a) (-2t)\cos(k_{z}a)  (\epsilon_{0}-E)^{2}-2t\cos(k_{y}a)(\epsilon_{0}-E)^{2}2t \cos(k_{y}a)-2t\cos(k_{y}a)(\epsilon_{0}-E)^{2}2t\cos (k_{y}a)=0 \\
 \implies & (\epsilon_{0}-E)^{4}-4t^{2}(\cos ^{2}(k_{z}a)+\cos ^{2}(k_{y}a)+\cos ^{2}(k_{x}a))(\epsilon_{0}-E)^{2}=0 \\
 \end{align}$$
 Two solutions are:
-$$E=\epsilon_{0}$$
+$$E_{1}=E_{2}=\epsilon_{0}$$
 Another two solutions are:
 $$\begin{align}
  & (\epsilon_{0}-E)^{2}-4t^{2}(\cos ^{2}(k_{z}a)+\cos ^{2}(k_{y}a)+\cos ^{2}(k_{x}a))=0 \\
 \implies & E=\epsilon_{0}\pm 2t \sqrt{ \cos ^{2}(k_{x}a)+\cos ^{2}(k_{y}a)+\cos ^{2}(k_{z}a) }
 \end{align}$$
+Take $E_{3}$ to be $+$, $E_{4}$ to be $-$.
 ## (d)
+
+The energies below are listed in the order of $E_{1},E_{2},E_{3},E_{4}$.
 
 For $\Gamma$, $k_{x}=0,\ k_{y}=0$. The band energies are:
 $$\epsilon_{0},\ \epsilon_{0},\ \epsilon_{0}\pm 2\sqrt{ 3 }t$$

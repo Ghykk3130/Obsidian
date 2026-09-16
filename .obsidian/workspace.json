@@ -3435,8 +3435,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200,
-    "collapsed": true
+    "width": 200
   },
   "right": {
     "id": "9003d078f8dbc4ed",
@@ -3552,10 +3551,11 @@
   },
   "active": "78abbc48c8d49f4f",
   "lastOpenFiles": [
-    "Notes/Lorentz群.md",
-    "Homework/Physics 513/Physics 513 homework 3.md",
-    "Homework/Physics 513/Physics 513 homework 1.md",
     "Homework/Physics 520/Physics 520 homework 2.md",
+    "Homework/Physics 520/Physics 520 homework 2 problem set.md",
+    "Homework/Physics 513/Physics 513 homework 3.md",
+    "Notes/Lorentz群.md",
+    "Homework/Physics 513/Physics 513 homework 1.md",
     "Pictures/bf3540103208f70e17eb809b289a4fa5.jpg",
     "Pictures/b8dc30937e6df70f00830668d26a2180.jpg",
     "Pictures/4cfb9e8f8a7ee939439ab908c0e40a83.jpg",
@@ -3568,7 +3568,6 @@
     "Notes/申请.md",
     "Pictures/fe8263df5cbac56b02cb4e291f09043f.jpg",
     "Pictures/a5847da500f7c1d936aaa49da07056d6.jpg",
-    "Homework/Physics 520/Physics 520 homework 2 problem set.md",
     "Notes/石墨烯的tight-binding模型.md",
     "Homework/Physics 520/Physics 520 homework 1 problem set.md",
     "Notes/紧束缚模型.md",
