@@ -56,5 +56,24 @@ $$\begin{align}
 \end{align}$$
 It is indeed Lorentz-invariant.
 # Problem 2
+## (a1)
+
+The lagrangian is $\mathcal{L}= \partial_{\mu}\phi ^{*}\partial^{\mu}\phi-m^{2}\phi^{2}$. Then we have:
+$$\begin{align}
+\pi_{1} & = \frac{\partial\mathcal{L}}{\partial \dot{\phi}}=\dot{\phi}^{*} \\
+\pi_{2} & = \frac{\partial\mathcal{L}}{\partial   \dot{\phi}^{*}}=\dot{\phi}
+\end{align}$$
+Since $\pi_{1},\pi_{2}$ are complex conjugate to each other, denote them as $\pi,\pi ^{*}$. We then have:
+$$\begin{align}
+\mathcal{H} & = \pi ^{*}  \dot{\phi}^{*}+\pi  \dot{\phi}-\mathcal{L} \\
+ & = \dot{\phi}  \dot{\phi}^{*}+  \dot{\phi}^{*} \dot{\phi}- \partial_{\mu}\phi ^{*}\partial^{\mu}\phi+m^{2}\phi ^{*}\phi \\
+ & = \dot{\phi}  \dot{\phi}^{*}+(\nabla \phi ^{*})\cdot(\nabla \phi)+m^{2}\phi ^{*}\phi \\
+ & = \pi ^{*}\pi+\nabla \phi ^{*}\cdot \nabla \phi+m^{2}\phi ^{*}\phi
+\end{align}$$
+Then:
+$$H= \int d^{3}x  (\pi ^{*}\pi+\nabla \phi ^{*}codt\nabla \phi+m^{2}\phi ^{*}\phi)$$
+## (a2)
+
+
 
 
