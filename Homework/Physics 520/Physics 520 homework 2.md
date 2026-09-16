@@ -18,6 +18,15 @@ $$\begin{align}
 K & = \left( \frac{1}{2}, \frac{5}{6} \right),\ \left( - \frac{5}{6},- \frac{1}{3} \right),\ \left( \frac{1}{6},- \frac{1}{3} \right) \\
 K^{'} & = \left( - \frac{1}{3}, \frac{1}{3} \right),\ \left( - \frac{1}{3},- \frac{5}{6} \right),\ \left( \frac{5}{6}, \frac{1}{3} \right)
 \end{align}$$
+
+Using $\mathbf{k}=u\mathbf{b}_{1}+v\mathbf{b}_{2}$, the positions in the $\hat{\mathbf{x}},\hat{\mathbf{y}}$ basis are:
+$$\begin{align}
+\Gamma = & \mathbf{0} \\
+M  =  & \frac{2\pi}{3a}\hat{\mathbf{x}},\ \frac{\pi}{3a}\hat{\mathbf{x}}-\frac{\sqrt{3}\pi}{3a}\hat{\mathbf{y}},\ -\frac{\pi}{3a}\hat{\mathbf{x}}-\frac{\sqrt{3}\pi}{3a}\hat{\mathbf{y}} \\
+& -\frac{2\pi}{3a}\hat{\mathbf{x}},\ -\frac{\pi}{3a}\hat{\mathbf{x}}+\frac{\sqrt{3}\pi}{3a}\hat{\mathbf{y}},\ \frac{\pi}{3a}\hat{\mathbf{x}}+\frac{\sqrt{3}\pi}{3a}\hat{\mathbf{y}} \\
+K = & \frac{8\pi}{9a}\hat{\mathbf{x}}-\frac{2\sqrt{3}\pi}{9a}\hat{\mathbf{y}},\ -\frac{7\pi}{9a}\hat{\mathbf{x}}-\frac{\sqrt{3}\pi}{3a}\hat{\mathbf{y}},\ -\frac{\pi}{9a}\hat{\mathbf{x}}+\frac{\sqrt{3}\pi}{3a}\hat{\mathbf{y}} \\
+K^{'} = & -\frac{4\sqrt{3}\pi}{9a}\hat{\mathbf{y}},\ -\frac{7\pi}{9a}\hat{\mathbf{x}}+\frac{\sqrt{3}\pi}{3a}\hat{\mathbf{y}},\ \frac{7\pi}{9a}\hat{\mathbf{x}}+\frac{\sqrt{3}\pi}{3a}\hat{\mathbf{y}}
+\end{align}$$
 ## (d)
 
 Let the nearest neighbor vectors be $\boldsymbol{\delta}_{1}=  a  \hat{\mathbf{x}},\ \boldsymbol{\delta}_{2}=- \frac{1}{2}a  \hat{\mathbf{x}}+ \frac{\sqrt{ 3 }}{2}  a \hat{\mathbf{y}},\ \boldsymbol{\delta}_{3}=- \frac{1}{2}a \hat{\mathbf{x}}- \frac{\sqrt{ 3 }}{2}a  \hat{\mathbf{y}}$. Let $\ket{\mathbf{R}_{n}^{A}},\ \ket{\mathbf{R}_{n}^{B}}= \ket{\mathbf{R}_{n}^{A}+  a  \hat{\mathbf{x}}}$ denote the pz orbitals at position $\mathbf{R}^{A}_{n},\ \mathbf{R}^{B}_{n}$ respectively. 
@@ -107,6 +116,15 @@ $$\begin{align}
 $$\begin{align}
 K & = \left( \frac{1}{2}, \frac{5}{6} \right),\ \left( - \frac{5}{6},- \frac{1}{3} \right),\ \left( \frac{1}{6},- \frac{1}{3} \right) \\
 K^{'} & = \left( - \frac{1}{3}, \frac{1}{3} \right),\ \left( - \frac{1}{3},- \frac{5}{6} \right),\ \left( \frac{5}{6}, \frac{1}{3} \right)
+\end{align}$$
+
+Using $\mathbf{k}=u\mathbf{b}_{1}+v\mathbf{b}_{2}$, the positions in the $\hat{\mathbf{x}},\hat{\mathbf{y}}$ basis are:
+$$\begin{align}
+\Gamma = & \mathbf{0} \\
+M  =  & \frac{\pi}{2a}\hat{\mathbf{x}}+\frac{\sqrt{3}\pi}{2a}\hat{\mathbf{y}},\ \frac{\pi}{2a}\hat{\mathbf{x}}+\frac{\pi}{2\sqrt{3}a}\hat{\mathbf{y}},\ -\frac{\pi}{\sqrt{3}a}\hat{\mathbf{y}} \\
+& -\frac{\pi}{2a}\hat{\mathbf{x}}-\frac{\sqrt{3}\pi}{2a}\hat{\mathbf{y}},\ -\frac{\pi}{2a}\hat{\mathbf{x}}-\frac{\pi}{2\sqrt{3}a}\hat{\mathbf{y}},\ \frac{\pi}{\sqrt{3}a}\hat{\mathbf{y}} \\
+K = & \frac{5\pi}{6a}\hat{\mathbf{x}}+\frac{11\pi}{6\sqrt{3}a}\hat{\mathbf{y}},\ -\frac{\pi}{3a}\hat{\mathbf{x}}-\frac{2\pi}{\sqrt{3}a}\hat{\mathbf{y}},\ -\frac{\pi}{3a}\hat{\mathbf{x}} \\
+K^{'} = & \frac{\pi}{3a}\hat{\mathbf{x}}-\frac{\pi}{3\sqrt{3}a}\hat{\mathbf{y}},\ -\frac{5\pi}{6a}\hat{\mathbf{x}}-\frac{\sqrt{3}\pi}{2a}\hat{\mathbf{y}},\ \frac{\pi}{3a}\hat{\mathbf{x}}+\frac{2\pi}{\sqrt{3}a}\hat{\mathbf{y}}
 \end{align}$$
 ## (d)
 
@@ -370,6 +388,12 @@ $$\begin{align}
  & \Gamma=(0,0,0),\ A=\left( 0,0, \frac{1}{2}  \right),\ X=\left(  \frac{1}{2} ,0,0 \right) \\
  & M=\left(  \frac{1}{2} , \frac{1}{2} ,0 \right),\ H=\left(  \frac{1}{2} , \frac{1}{2} , \frac{1}{2} \right)  
 \end{align}$$
+
+Using $\mathbf{k}=u\mathbf{b}_{1}+v\mathbf{b}_{2}+w\mathbf{b}_{3}$, the positions in the $\hat{\mathbf{x}},\hat{\mathbf{y}},\hat{\mathbf{z}}$ basis are:
+$$\begin{align}
+\Gamma = & \mathbf{0},\qquad A=\frac{\pi}{2a}\hat{\mathbf{z}},\qquad X=\frac{\pi}{2a}\hat{\mathbf{x}} \\
+M = & \frac{\pi}{2a}\hat{\mathbf{x}}+\frac{\pi}{2a}\hat{\mathbf{y}},\qquad L=\frac{\pi}{2a}\hat{\mathbf{x}}+\frac{\pi}{2a}\hat{\mathbf{z}},\qquad H=\frac{\pi}{2a}\hat{\mathbf{x}}+\frac{\pi}{2a}\hat{\mathbf{y}}+\frac{\pi}{2a}\hat{\mathbf{z}}
+\end{align}$$
 ## (c)
 
 Define the nearest neighbor vectors:
@@ -463,7 +487,6 @@ E & \approx \epsilon_{0}\pm 2t \sqrt{ \left( \frac{a}{\hbar} \right)^{2}(p_{x}^{
 The group velocity is given by:
 $$\frac{\partial E}{\partial p}= \pm \frac{2at}{\hbar}$$
 Or if you want the group velocity to be a vector, we simply have $\frac{\partial E}{\partial \mathbf{p}}= \pm \frac{2at}{\hbar}  \hat{\mathbf{p}}$.
-
 
 
 
