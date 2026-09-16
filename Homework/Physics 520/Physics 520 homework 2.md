@@ -2,16 +2,22 @@
 ## (a)
 
 The unit cell in the real space is a triangular lattice with length $\sqrt{ 3 }a$. The lattice unit vectors are:
-$$\mathbf{a}_{1}= \frac{{ 3 }}{2}  \hat{\mathbf{x}}+ \frac{\sqrt{ 3 }}{2} \hat{\mathbf{y}},\ \mathbf{a}_{2}= \frac{3}{2}  \hat{\mathbf{x}}- \frac{\sqrt{ 3 }}{2}  \hat{\mathbf{y}}$$
+$$\mathbf{a}_{1}= \frac{{ 3 }}{2}  a\hat{\mathbf{x}}+ \frac{\sqrt{ 3 }}{2}a \hat{\mathbf{y}},\ \mathbf{a}_{2}= \frac{3}{2}  \hat{\mathbf{x}}a- \frac{\sqrt{ 3 }}{2} a \hat{\mathbf{y}}$$
+![[966c66f45a73572375ad6f7a7180ea17.jpg|centering|300]]
 The reciprocal lattice vectors are given by:
-$$\mathbf{b}_{1}=  \frac{2\pi\mathbf{z}\times \mathbf{a}_{2}}{\mathbf{a}_{1}\cdot(\mathbf{z}\times \mathbf{a}_{2})}= \frac{2\pi}{3}  \hat{\mathbf{x}}+ \frac{2}{3}\sqrt{ 3 }{\pi}  \hat{\mathbf{y}},\ \mathbf{b}_{2}= \frac{2\pi \mathbf{a}_{1}\times \mathbf{z}}{\mathbf{a}_{2}\cdot(\mathbf{a}_{1}\times \mathbf{a})}= \frac{2\pi}{3}  \hat{\mathbf{x}}- \frac{2}{3}\sqrt{ 3 }\pi   \hat{\mathbf{y}}$$
+$$\mathbf{b}_{1}=  \frac{2\pi\mathbf{z}\times \mathbf{a}_{2}}{\mathbf{a}_{1}\cdot(\mathbf{z}\times \mathbf{a}_{2})}= \frac{2\pi}{3a}  \hat{\mathbf{x}}+ \frac{2}{3a}\sqrt{ 3 }{\pi}  \hat{\mathbf{y}},\ \mathbf{b}_{2}= \frac{2\pi \mathbf{a}_{1}\times \mathbf{z}}{\mathbf{a}_{2}\cdot(\mathbf{a}_{1}\times \mathbf{a})}= \frac{2\pi}{3a}  \hat{\mathbf{x}}- \frac{2}{3a}\sqrt{ 3 }\pi   \hat{\mathbf{y}}$$
 ## (b)
 
-![[5e0748b5a0735528d877f86f86d9090b.jpg|centering|400]]
-There are three inequivalent M points. We have:
-$$M=\left( \frac{1}{2}, \frac{1}{2} \right),\ M^{'}=(0,1),\ M^{''}=(-1,0)$$
-Similarly, there are three inequivalent K points. We have:
-$$K=\left(  \frac{1}{6} , \frac{2}{3} \right),\ K^{'}=\left( -\frac{1}{6}, \frac{1}{3} \right),K^{''}=\left( - \frac{2}{3}, - \frac{1}{6} \right)$$
+![[4cfb9e8f8a7ee939439ab908c0e40a83.jpg|centering|300]]
+We have:
+$$\begin{align}
+ M  =  & \left( \frac{1}{2}, \frac{1}{2}  \right),\ \left( 0 , \frac{1}{2}  \right),\ \left( - \frac{1}{2},0 \right) \\
+ & \left( - \frac{1}{2},- \frac{1}{2} \right),\ \left( 0, - \frac{1}{2} \right),\ \left(  \frac{1}{2}, 0 \right)
+\end{align}$$
+$$\begin{align}
+K & = \left( \frac{1}{2}, \frac{5}{6} \right),\ \left( - \frac{5}{6},- \frac{1}{3} \right),\ \left( \frac{1}{6},- \frac{1}{3} \right) \\
+K^{'} & = \left( - \frac{1}{3}, \frac{1}{3} \right),\ \left( - \frac{1}{3},- \frac{5}{6} \right),\ \left( \frac{5}{6}, \frac{1}{3} \right)
+\end{align}$$
 ## (d)
 
 Let the nearest neighbor vectors be $\boldsymbol{\delta}_{1}=  a  \hat{\mathbf{x}},\ \boldsymbol{\delta}_{2}=- \frac{1}{2}a  \hat{\mathbf{x}}+ \frac{\sqrt{ 3 }}{2}  a \hat{\mathbf{y}},\ \boldsymbol{\delta}_{3}=- \frac{1}{2}a \hat{\mathbf{x}}- \frac{\sqrt{ 3 }}{2}a  \hat{\mathbf{y}}$. Let $\ket{\mathbf{R}_{n}^{A}},\ \ket{\mathbf{R}_{n}^{B}}= \ket{\mathbf{R}_{n}^{A}+  a  \hat{\mathbf{x}}}$ denote the pz orbitals at position $\mathbf{R}^{A}_{n},\ \mathbf{R}^{B}_{n}$ respectively. 
@@ -78,12 +84,13 @@ $$\begin{align}
 \end{align}$$
 Then the dispersion is linear:
 $$E\approx \epsilon_{0}\pm t \frac{3}{2} \frac{a}{\hbar}|p|$$
-Due to the symmetry of the bands, the expansion near other K points should yield the same result.
+Similarly, we can show that the expansion near other K points should yield the same result.
 # Problem 2
 ## (a)
 
 The unit cell in real space is a triangular lattice with length $2a$. The unit vectors are:
 $$\mathbf{a}_{1}= 2a  \hat{\mathbf{x}},\ \mathbf{a}_{2}=a  \hat{\mathbf{x}}+ \sqrt{ 3 }a  \hat{\mathbf{y}}$$
+![[b8dc30937e6df70f00830668d26a2180.jpg|centering|300]]
 ## (b)
 
 The reciprocal lattice is also a triangular lattice. We find its unit vectors by:
@@ -91,11 +98,15 @@ $$\begin{align}
 \mathbf{b}_{1}= \frac{2\hat{\pi}\mathbf{z}\times \mathbf{a}_{2}}{\mathbf{a}_{1}\cdot(\mathbf{z}\times \mathbf{a}_{2})}= \frac{2\pi}{\sqrt{ 3 }a}  \hat{\mathbf{y}},\ \mathbf{b}_{2}= \frac{2\pi \mathbf{a}_{1}\times   \hat{\mathbf{z}} }{\mathbf{a}_{2}\cdot(\mathbf{a}_{1}\times  \hat{\mathbf{z}})}= \frac{\pi}{a}  \hat{\mathbf{x}}+  \frac{\pi}{\sqrt{ 3 }a}  \hat{\mathbf{y}}
 \end{align}$$
 ## (c)
-![[749e65f5ccd64de180bd177d6f23949f.jpg|centering|300]]
+![[bf3540103208f70e17eb809b289a4fa5.jpg|centering|300]]
+We have:
 $$\begin{align}
- & M=\left(  \frac{1}{2}, \frac{1}{2} \right),\ K=\left(  \frac{1}{3}, \frac{2}{3} \right) \\
- & M^{'}=\left( 0, \frac{1}{2} \right),\ K^{'}=\left( - \frac{1}{3}, \frac{1}{3} \right) \\
- & M^{''}=\left( - \frac{1}{2},0 \right),\ K^{''}=\left( - \frac{2}{3},- \frac{1}{3} \right)
+ M  =  & \left( \frac{1}{2}, \frac{1}{2}  \right),\ \left( 0 , \frac{1}{2}  \right),\ \left( - \frac{1}{2},0 \right) \\
+ & \left( - \frac{1}{2},- \frac{1}{2} \right),\ \left( 0, - \frac{1}{2} \right),\ \left(  \frac{1}{2}, 0 \right)
+\end{align}$$
+$$\begin{align}
+K & = \left( \frac{1}{2}, \frac{5}{6} \right),\ \left( - \frac{5}{6},- \frac{1}{3} \right),\ \left( \frac{1}{6},- \frac{1}{3} \right) \\
+K^{'} & = \left( - \frac{1}{3}, \frac{1}{3} \right),\ \left( - \frac{1}{3},- \frac{5}{6} \right),\ \left( \frac{5}{6}, \frac{1}{3} \right)
 \end{align}$$
 ## (d)
 
@@ -356,8 +367,8 @@ $$\mathbf{b}_{1}= \frac{\pi}{a}  \hat{\mathbf{x}},\ \mathbf{b}_{2}= \frac{\pi}{a
 ![[0629a4b90aaaf686dc3e9be04e69dda4.jpg|centering|300]]
 The high symmetry points are:
 $$\begin{align}
- & \Gamma=(0,0,0),\ A=(1,0,1),\ X=(1,0,0) \\
- & M=(1,1,0),\ H=(1,1,1)  
+ & \Gamma=(0,0,0),\ A=\left( 0,0, \frac{1}{2}  \right),\ X=\left(  \frac{1}{2} ,0,0 \right) \\
+ & M=\left(  \frac{1}{2} , \frac{1}{2} ,0 \right),\ H=\left(  \frac{1}{2} , \frac{1}{2} , \frac{1}{2} \right)  
 \end{align}$$
 ## (c)
 
@@ -434,7 +445,8 @@ For A, $k_{x}=k_{y}=0,\ k_{z}= \frac{\pi}{2a}$. The band energies are:
 $$\epsilon_{0},\ \epsilon_{0},\ \epsilon_{0}\pm 2\sqrt{ 2 }t$$
 For H, $k_{x}=k_{y}=k_{z}= \frac{\pi}{2a}$. The band energies are:
 $$\epsilon_{0},\ \epsilon_{0},\ \epsilon_{0},\ \epsilon_{0}$$
-
+The spaghetti diagram is:
+![[508b2c80cf79d3418ac9799d61b9aaad.jpg|centering|500]]
 ## (e)
 
 As shown in part (c), the energy of the flat bands is $\epsilon_{0}$. 
