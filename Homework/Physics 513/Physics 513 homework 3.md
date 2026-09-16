@@ -97,10 +97,43 @@ $$\begin{align}
 [\phi(\mathbf{x}^{'}),H] & = \left[ \phi(x^{'}),\int d^{3}x(\pi ^{*}\pi+\nabla \phi ^{*}\cdot\nabla \phi+m^{2}\phi ^{*}\phi) \right] \\
  & = \int d^{3}x([\phi,\pi ^{*}\pi]+[\phi,\nabla \phi ^{*}\cdot \nabla \phi]+m^{2}[\phi,\phi ^{*}\phi]) \\
  & = \int d^{3}x i\pi(\mathbf{x})\delta^{3}(\mathbf{x}^{'}-\mathbf{x}) \\
- & = i\pi(\mathbf{x}^{'}) 
+ & = i\pi ^{*}(\mathbf{x}^{'}) 
 \end{align}$$
 From Heisenberg's EOM we get:
-$$\partial_{t}\phi=\pi$$
+$$\partial_{t}\phi=\pi ^{*}\tag{1}$$
+Similarly, we compute:
+$$\begin{align}
+[\pi(\mathbf{x}^{'}),\pi ^{*}(\mathbf{x})\pi(\mathbf{x})] & = 0
+\end{align}$$
+$$\begin{align}
+[\pi(\mathbf{x}^{'}),\nabla \phi ^{*}\cdot \nabla \phi] & = \pi \nabla \phi ^{*}\cdot \nabla \phi-\nabla \phi ^{*}\cdot \nabla \phi \pi \\
+ & = \nabla \phi ^{*}\cdot \nabla(\pi(\mathbf{x}^{'})\phi(\mathbf{x}))-\nabla \phi ^{*}\cdot \nabla \phi \pi \\
+ & = \nabla \phi ^{*}\cdot \nabla(\phi(\mathbf{x})\pi(\mathbf{x}^{'})-i\delta^{3}(\mathbf{x}-\mathbf{x}^{'}))-\nabla \phi ^{*}\cdot \nabla \phi \pi \\
+ & = -i\nabla \phi ^{*}\cdot \nabla\delta^{3}(\mathbf{x}-\mathbf{x}^{'})
+\end{align}$$
+$$\begin{align}
+[\pi(\mathbf{x}^{'}),\phi ^{*}(\mathbf{x})\phi(x)] & = \pi \phi ^{*}\phi-\phi ^{*}\phi \pi \\
+ & = \phi ^{*}\pi \phi-\phi ^{*}\phi \pi \\
+ & = \phi ^{*}(-i\delta^{3}(\mathbf{x}-\mathbf{x}^{'})+ \phi \pi)-\phi ^{*}\phi \pi \\
+ & = -i\phi ^{*}\delta^{3}(\mathbf{x}-\mathbf{x}^{'})
+\end{align}$$
+Then we have:
+$$\begin{align}
+[\pi(\mathbf{x}^{'}),H] & = \int d^{3}x([\pi(\mathbf{x}^{'}),\pi ^{*}(\mathbf{x})\pi(\mathbf{x})]+ [\pi(\mathbf{x}^{'}),\nabla \phi ^{*}\cdot \nabla \phi]+m^{2}[\pi(\mathbf{x}^{'}),\phi ^{*}(\mathbf{x})\phi(\mathbf{x})]) \\
+ & = -i \int d^{3}x \nabla \phi ^{*}(\mathbf{x})\cdot \nabla\delta^{3}(\mathbf{x}-\mathbf{x}^{'})-im^{2}\int d^{3}x \phi ^{*}(\mathbf{x})\delta^{3}(\mathbf{x}-\mathbf{x}^{'}) \\
+ & = -i \int d^{3}x \nabla \cdot(\nabla \phi ^{*}\delta^{3}(\mathbf{x}-\mathbf{x}^{'} ))+ i \int d^{3}x \delta^{3}(\mathbf{x}-\mathbf{x}^{'})\nabla^{2}\phi^{*}-im^{2}\phi ^{*}(\mathbf{x}^{'}) \\ & = i\nabla^{2}\phi ^{*}(\mathbf{x}^{'})-im^{2}\phi ^{*}(\mathbf{x}^{'})
+
+\end{align}$$
+The divergence term vanishes because that integral over $\mathbb{R}^{3}$ can be viewed as the limit of integrating over a big box. By divergence theorem, it's just an integral over the boundary of the box. Since $\mathbf{x}^{'}$ is finite, we can always choose a box that is large enough so that $\mathbf{x}^{'}$ is within the box, and the surface integral vanishes.
+
+From Heisenberg's EOM we get:
+$$\partial_{t}\pi=\nabla^{2}\phi ^{*}-m^{2}\phi ^{*}\tag{2}$$
+Taking derivative of (1) to get $\partial_{t}^{2}\phi=\partial_{t}\pi ^{*}\implies \partial_{t}\pi=\partial_{t}^{2}\phi ^{*}$. Then equate this with (2) to get:
+$$\partial_{t}^{2}\phi ^{*}=\nabla^{2}\phi ^{*}-m^{2}\phi ^{*}\implies(\Box^{2}+m^{2})\phi ^{*}=0$$
+Similarly, we can also obtain $(\Box^{2}+m^{2})\phi=0$.
+## (b)
+
+
 
 
 
