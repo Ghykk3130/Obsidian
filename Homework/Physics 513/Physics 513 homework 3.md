@@ -74,57 +74,31 @@ Then:
 $$H= \int d^{3}x  (\pi ^{*}\pi+\nabla \phi ^{*}\cdot\nabla \phi+m^{2}\phi ^{*}\phi)$$
 ## (a2)
 
-Assume that the following fields have the same time $t$. We suppress the variable $t$. We have:
+Assume that the following fields have the same time $t$. We have:
 $$\begin{align}
-[\phi(\mathbf{x}^{'}),\pi ^{*}(\mathbf{x})\pi(\mathbf{x})] & = \phi(\mathbf{x}^{'})\pi ^{*}(\mathbf{x})\pi(\mathbf{x})- \pi ^{*}(\mathbf{x})\pi(\mathbf{x})\phi(\mathbf{x}^{'}) \\
+[\phi({x}^{'}),\pi ^{*}({x})\pi({x})] & = \phi({x}^{'})\pi ^{*}({x})\pi({x})- \pi ^{*}({x})\pi({x})\phi({x}^{'}) \\
  & = \pi ^{*}\phi \pi-\pi ^{*}\pi \phi \\
- & = \pi ^{*}(i\delta^{3}(\mathbf{x}^{'}-\mathbf{x})+\pi \phi)-\pi ^{*}\pi \phi \\
+ & = \pi ^{*}(i\delta^{3}({x}^{'}-{x})+\pi \phi)-\pi ^{*}\pi \phi \\
  & = i\pi ^{*}\delta^{3}(\mathbf{x}^{'}-\mathbf{x})
 \end{align}$$
-$$\begin{align}
-[\phi(\mathbf{x}^{'}),\nabla \phi ^{*}(\mathbf{x})\cdot \nabla \phi(\mathbf{x})] & = \phi(\mathbf{x}^{'})\nabla \phi ^{*}(\mathbf{x})\cdot \nabla \phi (\mathbf{x})-\nabla \phi ^{*}(\mathbf{x})\cdot \nabla \phi(\mathbf{x}) \phi(\mathbf{x}^{'}) \\
- & = \nabla \phi ^{*}\cdot \phi \nabla \phi-\nabla \phi ^{*}\cdot (\nabla \phi )\phi \\
- & = \nabla \phi ^{*}\cdot (\nabla \phi)\phi-\nabla \phi ^{*}\cdot(\nabla \phi)\phi \\
- & = 0
-\end{align}$$
-$$\begin{align}
-[\phi(\mathbf{x}^{'}),\phi ^{*}(\mathbf{x})\phi(\mathbf{x})] & = \phi(\mathbf{x}^{'})\phi ^{*}(\mathbf{x})\phi(\mathbf{x})-\phi ^{*}(\mathbf{x})\phi(\mathbf{x})\phi(\mathbf{x}^{'}) \\
- & = \phi ^{*}(\mathbf{x})\phi(\mathbf{x})\phi(\mathbf{x}^{'})-\phi ^{*}(\mathbf{x})\phi(\mathbf{x})\phi(\mathbf{x}^{'}) \\
- & =0
-\end{align}$$
+$$\begin{align} [\phi({x}^{'}),\nabla \phi ^{*}({x})\cdot \nabla \phi({x})] & = \phi({x}^{'})\nabla \phi ^{*}({x})\cdot \nabla \phi ({x})-\nabla \phi ^{*}({x})\cdot \nabla \phi({x}) \phi({x}^{'}) \\ & = \nabla \phi ^{*}\cdot \phi \nabla \phi-\nabla \phi ^{*}\cdot (\nabla \phi )\phi \\ & = \nabla \phi ^{*}\cdot (\nabla \phi)\phi-\nabla \phi ^{*}\cdot(\nabla \phi)\phi \\ & = 0 \end{align}$$
+$$\begin{align} [\phi({x}^{'}),\phi ^{*}({x})\phi({x})] & = \phi({x}^{'})\phi ^{*}({x})\phi({x})-\phi ^{*}({x})\phi({x})\phi({x}^{'}) \\ & = \phi ^{*}({x})\phi({x})\phi({x}^{'})-\phi ^{*}({x})\phi({x})\phi({x}^{'}) \\ & =0 \end{align}$$
 Then we have:
-$$\begin{align}
-[\phi(\mathbf{x}^{'}),H] & = \left[ \phi(x^{'}),\int d^{3}x(\pi ^{*}\pi+\nabla \phi ^{*}\cdot\nabla \phi+m^{2}\phi ^{*}\phi) \right] \\
- & = \int d^{3}x([\phi,\pi ^{*}\pi]+[\phi,\nabla \phi ^{*}\cdot \nabla \phi]+m^{2}[\phi,\phi ^{*}\phi]) \\
- & = \int d^{3}x i\pi(\mathbf{x})\delta^{3}(\mathbf{x}^{'}-\mathbf{x}) \\
- & = i\pi ^{*}(\mathbf{x}^{'}) 
-\end{align}$$
+$$\begin{align} [\phi({x}^{'}),H] & = \left[ \phi(x^{'}),\int d^{3}x(\pi ^{*}\pi+\nabla \phi ^{*}\cdot\nabla \phi+m^{2}\phi ^{*}\phi) \right] \\ & = \int d^{3}x([\phi,\pi ^{*}\pi]+[\phi,\nabla \phi ^{*}\cdot \nabla \phi]+m^{2}[\phi,\phi ^{*}\phi]) \\ & = \int d^{3}x i\pi({x})\delta^{3}({\mathbf{x}}^{'}-{\mathbf{x}}) \\ & = i\pi ^{*}({x}^{'}) \end{align}$$
 From Heisenberg's EOM we get:
 $$\partial_{t}\phi=\pi ^{*}\tag{1}$$
 Similarly, we compute:
-$$\begin{align}
-[\pi(\mathbf{x}^{'}),\pi ^{*}(\mathbf{x})\pi(\mathbf{x})] & = 0
-\end{align}$$
-$$\begin{align}
-[\pi(\mathbf{x}^{'}),\nabla \phi ^{*}\cdot \nabla \phi] & = \pi \nabla \phi ^{*}\cdot \nabla \phi-\nabla \phi ^{*}\cdot \nabla \phi \pi \\
- & = \nabla \phi ^{*}\cdot \nabla(\pi(\mathbf{x}^{'})\phi(\mathbf{x}))-\nabla \phi ^{*}\cdot \nabla \phi \pi \\
- & = \nabla \phi ^{*}\cdot \nabla(\phi(\mathbf{x})\pi(\mathbf{x}^{'})-i\delta^{3}(\mathbf{x}-\mathbf{x}^{'}))-\nabla \phi ^{*}\cdot \nabla \phi \pi \\
- & = -i\nabla \phi ^{*}\cdot \nabla\delta^{3}(\mathbf{x}-\mathbf{x}^{'})
-\end{align}$$
-$$\begin{align}
-[\pi(\mathbf{x}^{'}),\phi ^{*}(\mathbf{x})\phi(x)] & = \pi \phi ^{*}\phi-\phi ^{*}\phi \pi \\
- & = \phi ^{*}\pi \phi-\phi ^{*}\phi \pi \\
- & = \phi ^{*}(-i\delta^{3}(\mathbf{x}-\mathbf{x}^{'})+ \phi \pi)-\phi ^{*}\phi \pi \\
- & = -i\phi ^{*}\delta^{3}(\mathbf{x}-\mathbf{x}^{'})
-\end{align}$$
-Then we have:
-$$\begin{align}
-[\pi(\mathbf{x}^{'}),H] & = \int d^{3}x([\pi(\mathbf{x}^{'}),\pi ^{*}(\mathbf{x})\pi(\mathbf{x})]+ [\pi(\mathbf{x}^{'}),\nabla \phi ^{*}\cdot \nabla \phi]+m^{2}[\pi(\mathbf{x}^{'}),\phi ^{*}(\mathbf{x})\phi(\mathbf{x})]) \\
- & = -i \int d^{3}x \nabla \phi ^{*}(\mathbf{x})\cdot \nabla\delta^{3}(\mathbf{x}-\mathbf{x}^{'})-im^{2}\int d^{3}x \phi ^{*}(\mathbf{x})\delta^{3}(\mathbf{x}-\mathbf{x}^{'}) \\
- & = -i \int d^{3}x \nabla \cdot(\nabla \phi ^{*}\delta^{3}(\mathbf{x}-\mathbf{x}^{'} ))+ i \int d^{3}x \delta^{3}(\mathbf{x}-\mathbf{x}^{'})\nabla^{2}\phi^{*}-im^{2}\phi ^{*}(\mathbf{x}^{'}) \\ & = i\nabla^{2}\phi ^{*}(\mathbf{x}^{'})-im^{2}\phi ^{*}(\mathbf{x}^{'})
 
-\end{align}$$
-The divergence term vanishes because that integral over $\mathbb{R}^{3}$ can be viewed as the limit of integrating over a big box. By divergence theorem, it's just an integral over the boundary of the box. Since $\mathbf{x}^{'}$ is finite, we can always choose a box that is large enough so that $\mathbf{x}^{'}$ is within the box, and the surface integral vanishes.
+  
+
+$$\begin{align} [\pi({x}^{'}),\pi ^{*}({x})\pi({x})] & = 0 \end{align}$$
+
+$$\begin{align} [\pi({x}^{'}),\nabla \phi ^{*}\cdot \nabla \phi] & = \pi \nabla \phi ^{*}\cdot \nabla \phi-\nabla \phi ^{*}\cdot \nabla \phi \pi \\ & = \nabla \phi ^{*}\cdot \nabla(\pi({x}^{'})\phi({x}))-\nabla \phi ^{*}\cdot \nabla \phi \pi \\ & = \nabla \phi ^{*}\cdot \nabla(\phi({x})\pi({x}^{'})-i\delta^{3}({\mathbf{x}}-{\mathbf{x}}^{'}))-\nabla \phi ^{*}\cdot \nabla \phi \pi \\ & = -i\nabla \phi ^{*}\cdot \nabla\delta^{3}({\mathbf{x}}-{\mathbf{x}}^{'}) \end{align}$$
+
+$$\begin{align} [\pi({x}^{'}),\phi ^{*}({x})\phi(x)] & = \pi \phi ^{*}\phi-\phi ^{*}\phi \pi \\ & = \phi ^{*}\pi \phi-\phi ^{*}\phi \pi \\ & = \phi ^{*}(-i\delta^{3}({\mathbf{x}}-{\mathbf{x}}^{'})+ \phi \pi)-\phi ^{*}\phi \pi \\ & = -i\phi ^{*}\delta^{3}({\mathbf{x}}-{\mathbf{x}}^{'}) \end{align}$$
+Then we have:
+$$\begin{align} [\pi({x}^{'}),H] & = \int d^{3}x([\pi({x}^{'}),\pi ^{*}({x})\pi({x})]+ [\pi({x}^{'}),\nabla \phi ^{*}\cdot \nabla \phi]+m^{2}[\pi({x}^{'}),\phi ^{*}({x})\phi({x})]) \\ & = -i \int d^{3}x \nabla \phi ^{*}({x})\cdot \nabla\delta^{3}({\mathbf{x}}-{\mathbf{x}}^{'})-im^{2}\int d^{3}x \phi ^{*}({x})\delta^{3}({\mathbf{x}}-{\mathbf{x}}^{'}) \\ & = -i \int d^{3}x \nabla \cdot(\nabla \phi ^{*}\delta^{3}({\mathbf{x}}-{\mathbf{x}}^{'} ))+ i \int d^{3}x \delta^{3}({\mathbf{x}}-{\mathbf{x}}^{'})\nabla^{2}\phi^{*}-im^{2}\phi ^{*}({x}^{'}) \\ & = i\nabla^{2}\phi ^{*}({x}^{'})-im^{2}\phi ^{*}({x}^{'}) \end{align}$$
+The divergence term vanishes because that integral over $\mathbb{R}^{3}$ can be viewed as the limit of integrating over a big box. By divergence theorem, it's just an integral over the boundary of the box. Since ${x}^{'}$ is finite, we can always choose a box that is large enough so that ${x}^{'}$ is within the box, and the surface integral vanishes.
 
 From Heisenberg's EOM we get:
 $$\partial_{t}\pi=\nabla^{2}\phi ^{*}-m^{2}\phi ^{*}\tag{2}$$
@@ -134,17 +108,9 @@ Similarly, we can also obtain $(\Box^{2}+m^{2})\phi=0$.
 ## (b)
 
 Set:
-$$\begin{align}
- & \phi(\mathbf{x} )=\int \frac{d^{3}p}{(2\pi)^{3}} \frac{1}{\sqrt{ 2\omega_{\mathbf{p}} }}  (a_{\mathbf{p} }e^{i\mathbf{p} \cdot \mathbf{x}}+a^{\dagger}_{\mathbf{p}}e^{-i\mathbf{p}\cdot \mathbf{x}}) \\
- & \pi(\mathbf{x})= \int \frac{d^{3}p}{(2\pi)^{3}}\left( -i \sqrt{ \frac{1}{2\omega_{\mathbf{p}}} }  \right)(a_{\mathbf{p}}e^{i\mathbf{p}\cdot \mathbf{x}}-a_{\mathbf{p}}^{\dagger}e^{-i\mathbf{p}\cdot \mathbf{x}})
-\end{align}$$
+$$\begin{align} & \phi({x} )=\int \frac{d^{3}p}{(2\pi)^{3}} \frac{1}{\sqrt{ 2\omega_{{p}} }} (a_{{p} }e^{-i{p} \cdot {x}}+a^{\dagger}_{{p}}e^{i{p}\cdot {x}}) \\ & \pi({x})= \int \frac{d^{3}p}{(2\pi)^{3}}\left( -i \sqrt{ \frac{1}{2\omega_{{p}}} } \right)(a_{{p}}e^{-i{p}\cdot {x}}-a_{{p}}^{\dagger}e^{i{p}\cdot {x}}) \end{align}$$
 We compute:
-$$\begin{align}
-\int d^{3}x \pi ^{\dagger}(\mathbf{x})\pi(\mathbf{x}) & = \int d^{3}x \frac{d^{3}pd^{3}p^{'}}{(2\pi)^{6}} \frac{1}{4 \omega_{\mathbf{p}}\omega_{\mathbf{p}^{'}}}(e^{-i\mathbf{p}\cdot \mathbf{x}}a_{\mathbf{p}}^{\dagger}-e^{i\mathbf{p}\cdot \mathbf{x}}a_{\mathbf{p}})(e^{i\mathbf{p}^{'}\cdot \mathbf{x} }a_{\mathbf{p}^{'}}-e^{-i\mathbf{p}^{'}\cdot \mathbf{x}}a_{\mathbf{p}^{'}}^{\dagger}) \\
- & = \int d^{3}x \frac{d^{3}pd^{3}p^{'}}{(2\pi)^{6}} \frac{1}{4\omega_{\mathbf{p}}\omega_{\mathbf{p}^{'}}}(e^{-i\mathbf{p}\cdot \mathbf{x}}a^{\dagger}_{\mathbf{p}}-e^{-i\mathbf{p}\cdot \mathbf{x}}a_{-\mathbf{k}})(e^{i\mathbf{p}^{'}\cdot \mathbf{x}}a_{\mathbf{p}^{'}}-e^{i\mathbf{p}\cdot \mathbf{x}}a^{\dagger}_{-\mathbf{p}^{'}} ) \\
- & = \int \frac{d^{3}p d^{3}p^{'}}{(2\pi )^{3}} \frac{1}{4\omega_{\mathbf{p}}\omega_{\mathbf{p}^{'}}}\delta^{3}(\mathbf{p}^{'}-\mathbf{p})(a^{\dagger}_{\mathbf{p}}-a^{}_{-\mathbf{p}})(a_{\mathbf{p}^{'}}-a_{-\mathbf{p}^{'}}^{\dagger}) \\
- & = \int \frac{d^{3}p}{(2\pi)^{3}} \frac{1}{4\omega_{\mathbf{p}}^{2}}(a^{\dagger}_{\mathbf{p}}-a_{-\mathbf{p}} )(a_{\mathbf{p}}-a^{\dagger}_{-\mathbf{p}})
-\end{align}$$
+$$\begin{align} \int d^{3}x \pi ^{\dagger}({x})\pi({x}) & = \int d^{3}x \frac{d^{3}pd^{3}p^{'}}{(2\pi)^{6}} \frac{1}{2  \sqrt{ \omega_{{\mathbf{p}}}\omega_{{\mathbf{p}}^{'}} }}(e^{i{p}\cdot {x}}a_{{\mathbf{p}}}^{\dagger}-e^{-i{p}\cdot {x}}a_{{\mathbf{p}}})(e^{-i{p}^{'}\cdot {x} }a_{{\mathbf{p}}^{'}}-e^{ i{p}^{'}\cdot {x}}a_{{\mathbf{p}}^{'}}^{\dagger}) \\ & = \int d^{3}x \frac{d^{3}pd^{3}p^{'}}{(2\pi)^{6}} \frac{1}{2  \sqrt{ \omega_{{\mathbf{p}}}\omega_{{p}^{'}} }}(e^{i{p}\cdot {x}}a^{\dagger}_{{\mathbf{p}}}-e^{i{p}\cdot {x}}a_{-{\mathbf{p}}})(e^{-i{{p}}^{'}\cdot {x}}a_{{\mathbf{p}}^{'}}-e^{-i{p^{'}}\cdot {x}}a^{\dagger}_{-{\mathbf{p}}^{'}} ) \\ & = \int \frac{d^{3}p d^{3}p^{'}}{(2\pi )^{3}} \frac{1}{2  \sqrt{ \omega_{{p}}\omega_{{p}^{'}} }}\delta^{3}({\mathbf{p}}^{'}-{\mathbf{p}})(a^{\dagger}_{{\mathbf{p}}}-a^{}_{-{\mathbf{p}}})(a_{{\mathbf{p}}^{'}}-a_{-{\mathbf{p}}^{'}}^{\dagger}) \\ & = \int \frac{d^{3}p}{(2\pi)^{3}} \frac{1}{2\omega_{{\mathbf{p}}}^{}}(a^{\dagger}_{{\mathbf{p}}}-a_{-{\mathbf{p}}} )(a_{{\mathbf{p}}}-a^{\dagger}_{-{\mathbf{p}}}) \end{align}$$
 
 
 
