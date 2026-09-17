@@ -71,10 +71,10 @@ $$\begin{align}
  & = \pi ^{*}\pi+\nabla \phi ^{*}\cdot \nabla \phi+m^{2}\phi ^{*}\phi
 \end{align}$$
 Then:
-$$H= \int d^{3}x  (\pi ^{*}\pi+\nabla \phi ^{*}codt\nabla \phi+m^{2}\phi ^{*}\phi)$$
+$$H= \int d^{3}x  (\pi ^{*}\pi+\nabla \phi ^{*}\cdot\nabla \phi+m^{2}\phi ^{*}\phi)$$
 ## (a2)
 
-We have:
+Assume that the following fields have the same time $t$. We suppress the variable $t$. We have:
 $$\begin{align}
 [\phi(\mathbf{x}^{'}),\pi ^{*}(\mathbf{x})\pi(\mathbf{x})] & = \phi(\mathbf{x}^{'})\pi ^{*}(\mathbf{x})\pi(\mathbf{x})- \pi ^{*}(\mathbf{x})\pi(\mathbf{x})\phi(\mathbf{x}^{'}) \\
  & = \pi ^{*}\phi \pi-\pi ^{*}\pi \phi \\
@@ -133,7 +133,18 @@ $$\partial_{t}^{2}\phi ^{*}=\nabla^{2}\phi ^{*}-m^{2}\phi ^{*}\implies(\Box^{2}+
 Similarly, we can also obtain $(\Box^{2}+m^{2})\phi=0$.
 ## (b)
 
-
+Set:
+$$\begin{align}
+ & \phi(\mathbf{x} )=\int \frac{d^{3}p}{(2\pi)^{3}} \frac{1}{\sqrt{ 2\omega_{\mathbf{p}} }}  (a_{\mathbf{p} }e^{i\mathbf{p} \cdot \mathbf{x}}+a^{\dagger}_{\mathbf{p}}e^{-i\mathbf{p}\cdot \mathbf{x}}) \\
+ & \pi(\mathbf{x})= \int \frac{d^{3}p}{(2\pi)^{3}}\left( -i \sqrt{ \frac{1}{2\omega_{\mathbf{p}}} }  \right)(a_{\mathbf{p}}e^{i\mathbf{p}\cdot \mathbf{x}}-a_{\mathbf{p}}^{\dagger}e^{-i\mathbf{p}\cdot \mathbf{x}})
+\end{align}$$
+We compute:
+$$\begin{align}
+\int d^{3}x \pi ^{\dagger}(\mathbf{x})\pi(\mathbf{x}) & = \int d^{3}x \frac{d^{3}pd^{3}p^{'}}{(2\pi)^{6}} \frac{1}{4 \omega_{\mathbf{p}}\omega_{\mathbf{p}^{'}}}(e^{-i\mathbf{p}\cdot \mathbf{x}}a_{\mathbf{p}}^{\dagger}-e^{i\mathbf{p}\cdot \mathbf{x}}a_{\mathbf{p}})(e^{i\mathbf{p}^{'}\cdot \mathbf{x} }a_{\mathbf{p}^{'}}-e^{-i\mathbf{p}^{'}\cdot \mathbf{x}}a_{\mathbf{p}^{'}}^{\dagger}) \\
+ & = \int d^{3}x \frac{d^{3}pd^{3}p^{'}}{(2\pi)^{6}} \frac{1}{4\omega_{\mathbf{p}}\omega_{\mathbf{p}^{'}}}(e^{-i\mathbf{p}\cdot \mathbf{x}}a^{\dagger}_{\mathbf{p}}-e^{-i\mathbf{p}\cdot \mathbf{x}}a_{-\mathbf{k}})(e^{i\mathbf{p}^{'}\cdot \mathbf{x}}a_{\mathbf{p}^{'}}-e^{i\mathbf{p}\cdot \mathbf{x}}a^{\dagger}_{-\mathbf{p}^{'}} ) \\
+ & = \int \frac{d^{3}p d^{3}p^{'}}{(2\pi )^{3}} \frac{1}{4\omega_{\mathbf{p}}\omega_{\mathbf{p}^{'}}}\delta^{3}(\mathbf{p}^{'}-\mathbf{p})(a^{\dagger}_{\mathbf{p}}-a^{}_{-\mathbf{p}})(a_{\mathbf{p}^{'}}-a_{-\mathbf{p}^{'}}^{\dagger}) \\
+ & = \int \frac{d^{3}p}{(2\pi)^{3}} \frac{1}{4\omega_{\mathbf{p}}^{2}}(a^{\dagger}_{\mathbf{p}}-a_{-\mathbf{p}} )(a_{\mathbf{p}}-a^{\dagger}_{-\mathbf{p}})
+\end{align}$$
 
 
 

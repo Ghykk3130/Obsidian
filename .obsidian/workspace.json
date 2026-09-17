@@ -3420,7 +3420,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "Lorentz群",
+                "query": "线性响应",
                 "matchingCase": true,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -3552,9 +3552,12 @@
   },
   "active": "78abbc48c8d49f4f",
   "lastOpenFiles": [
+    "Notes/线性响应.md",
+    "Notes/Solid state.md",
+    "Notes/线性响应与电导率.md",
+    "Homework/Physics 513/Physics 513 homework 3.md",
     "Homework/Physics 520/Physics 520 homework 2.md",
     "Homework/Physics 520/Physics 520 homework 2 problem set.md",
-    "Homework/Physics 513/Physics 513 homework 3.md",
     "Notes/Lorentz群.md",
     "Homework/Physics 513/Physics 513 homework 1.md",
     "Pictures/bf3540103208f70e17eb809b289a4fa5.jpg",
@@ -3591,9 +3594,6 @@
     "Notes/Poincare群.md",
     "Notes/Pedrottis' introduction to optics.md",
     "Notes/全纯函数.md",
-    "Notes/Bloch定理2.md",
-    "Notes/Bloch定理.md",
-    "Notes/Solid state.md",
     "Homework/Physics 520",
     "Homework/Physics 513",
     "Pictures/GRE镇考机经词7.0-乱序（2026年版）.pdf",
