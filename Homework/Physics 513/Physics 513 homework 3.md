@@ -109,6 +109,10 @@ Similarly, we can also obtain $(\Box^{2}+m^{2})\phi=0$.
 
 Set:
 $$\begin{align} & \phi({x} )=\int \frac{d^{3}p}{(2\pi)^{3}} \frac{1}{\sqrt{ 2\omega_{{p}} }} (a_{{p} }e^{-i{p} \cdot {x}}+a^{\dagger}_{{p}}e^{i{p}\cdot {x}}) \\ & \pi({x})= \int \frac{d^{3}p}{(2\pi)^{3}}\left( -i \sqrt{ \frac{1}{2\omega_{{p}}} } \right)(a_{{p}}e^{-i{p}\cdot {x}}-a_{{p}}^{\dagger}e^{i{p}\cdot {x}}) \end{align}$$
+$$\begin{align}
+\phi ^{*}(x)= 
+\end{align}$$
+
 We compute:
 $$\begin{align} \int d^{3}x \pi ^{\dagger}({x})\pi({x}) & = \int d^{3}x \frac{d^{3}pd^{3}p^{'}}{(2\pi)^{6}} \frac{\sqrt{ \omega_{{\mathbf{p}}}\omega_{{\mathbf{p}}^{'}} }}{2  }(e^{i{p}\cdot {x}}a_{{\mathbf{p}}}^{\dagger}-e^{-i{p}\cdot {x}}a_{{\mathbf{p}}})(e^{-i{p}^{'}\cdot {x} }a_{{\mathbf{p}}^{'}}-e^{ i{p}^{'}\cdot {x}}a_{{\mathbf{p}}^{'}}^{\dagger}) \\ & = \int d^{3}x \frac{d^{3}pd^{3}p^{'}}{(2\pi)^{6}} \frac{\sqrt{ \omega_{{\mathbf{p}}}\omega_{{\mathbf{p}}^{'}} }}{2  }(e^{i{p}\cdot {x}}a^{\dagger}_{{\mathbf{p}}}-e^{i{p}\cdot {x}}a_{-{\mathbf{p}}})(e^{-i{{p}}^{'}\cdot {x}}a_{{\mathbf{p}}^{'}}-e^{-i{p^{'}}\cdot {x}}a^{\dagger}_{-{\mathbf{p}}^{'}} ) \\ & = \int \frac{d^{3}p d^{3}p^{'}}{(2\pi )^{3}} \frac{\sqrt{ \omega_{{\mathbf{p}}}\omega_{{\mathbf{p}}^{'}} }}{2  }\delta^{3}({\mathbf{p}}^{'}-{\mathbf{p}})(a^{\dagger}_{{\mathbf{p}}}-a^{}_{-{\mathbf{p}}})(a_{{\mathbf{p}}^{'}}-a_{-{\mathbf{p}}^{'}}^{\dagger}) \\ & = \int \frac{d^{3}p}{(2\pi)^{3}}  \frac{\omega_{\mathbf{p}}}{2}  (a^{\dagger}_{{\mathbf{p}}}-a_{-{\mathbf{p}}} )(a_{{\mathbf{p}}}-a^{\dagger}_{-{\mathbf{p}}}) \end{align}$$
 $$\begin{align}
