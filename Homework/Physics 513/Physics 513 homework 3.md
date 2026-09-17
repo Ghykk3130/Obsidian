@@ -89,12 +89,8 @@ From Heisenberg's EOM we get:
 $$\partial_{t}\phi=\pi ^{*}\tag{1}$$
 Similarly, we compute:
 
-  
-
 $$\begin{align} [\pi({x}^{'}),\pi ^{*}({x})\pi({x})] & = 0 \end{align}$$
-
 $$\begin{align} [\pi({x}^{'}),\nabla \phi ^{*}\cdot \nabla \phi] & = \pi \nabla \phi ^{*}\cdot \nabla \phi-\nabla \phi ^{*}\cdot \nabla \phi \pi \\ & = \nabla \phi ^{*}\cdot \nabla(\pi({x}^{'})\phi({x}))-\nabla \phi ^{*}\cdot \nabla \phi \pi \\ & = \nabla \phi ^{*}\cdot \nabla(\phi({x})\pi({x}^{'})-i\delta^{3}({\mathbf{x}}-{\mathbf{x}}^{'}))-\nabla \phi ^{*}\cdot \nabla \phi \pi \\ & = -i\nabla \phi ^{*}\cdot \nabla\delta^{3}({\mathbf{x}}-{\mathbf{x}}^{'}) \end{align}$$
-
 $$\begin{align} [\pi({x}^{'}),\phi ^{*}({x})\phi(x)] & = \pi \phi ^{*}\phi-\phi ^{*}\phi \pi \\ & = \phi ^{*}\pi \phi-\phi ^{*}\phi \pi \\ & = \phi ^{*}(-i\delta^{3}({\mathbf{x}}-{\mathbf{x}}^{'})+ \phi \pi)-\phi ^{*}\phi \pi \\ & = -i\phi ^{*}\delta^{3}({\mathbf{x}}-{\mathbf{x}}^{'}) \end{align}$$
 Then we have:
 $$\begin{align} [\pi({x}^{'}),H] & = \int d^{3}x([\pi({x}^{'}),\pi ^{*}({x})\pi({x})]+ [\pi({x}^{'}),\nabla \phi ^{*}\cdot \nabla \phi]+m^{2}[\pi({x}^{'}),\phi ^{*}({x})\phi({x})]) \\ & = -i \int d^{3}x \nabla \phi ^{*}({x})\cdot \nabla\delta^{3}({\mathbf{x}}-{\mathbf{x}}^{'})-im^{2}\int d^{3}x \phi ^{*}({x})\delta^{3}({\mathbf{x}}-{\mathbf{x}}^{'}) \\ & = -i \int d^{3}x \nabla \cdot(\nabla \phi ^{*}\delta^{3}({\mathbf{x}}-{\mathbf{x}}^{'} ))+ i \int d^{3}x \delta^{3}({\mathbf{x}}-{\mathbf{x}}^{'})\nabla^{2}\phi^{*}-im^{2}\phi ^{*}({x}^{'}) \\ & = i\nabla^{2}\phi ^{*}({x}^{'})-im^{2}\phi ^{*}({x}^{'}) \end{align}$$
