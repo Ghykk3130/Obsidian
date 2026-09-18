@@ -3434,7 +3434,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "标量场",
                 "matchingCase": true,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -3445,11 +3445,13 @@
               "title": "Search"
             }
           }
-        ]
+        ],
+        "currentTab": 3
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 200,
+    "collapsed": true
   },
   "right": {
     "id": "9003d078f8dbc4ed",
@@ -3565,8 +3567,9 @@
   },
   "active": "bfdef854aeb5d6a1",
   "lastOpenFiles": [
-    "Homework/Physics 513/Physics 513 homework 3.md",
+    "Notes/经典场论.md",
     "Notes/标量场的正则量子化.md",
+    "Homework/Physics 513/Physics 513 homework 3.md",
     "Notes/线性响应.md",
     "Notes/Solid state.md",
     "Notes/线性响应与电导率.md",
@@ -3595,7 +3598,6 @@
     "Notes/近自由电子模型.md",
     "Homework/Physics 513/Physics 513 homework 2.md",
     "Homework/Physics 520/Physics 520 homework 1.md",
-    "Notes/经典场论.md",
     "trace-cookies.txt",
     "max-page-cookies.txt",
     "max-cookies.txt",
