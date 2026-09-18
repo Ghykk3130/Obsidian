@@ -8,3 +8,9 @@ education把gre和gre sub都放上去。
 recommender写多于三个，到最后可以讨论筛选。
 
 写report可以塞进CV。
+
+
+
+研究经历：
+Lu Li lab project 1:
+- 先搭建了电桥。发现了grounding issue的问题。
