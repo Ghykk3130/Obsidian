@@ -3434,7 +3434,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "标量场",
+                "query": "正则量子化",
                 "matchingCase": true,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -3450,8 +3450,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200,
-    "collapsed": true
+    "width": 200
   },
   "right": {
     "id": "9003d078f8dbc4ed",
