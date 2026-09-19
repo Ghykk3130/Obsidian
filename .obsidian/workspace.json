@@ -3371,12 +3371,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Notes/标量场的正则量子化.md",
+                "file": "Notes/申请.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "标量场的正则量子化"
+              "title": "申请"
             }
           }
         ],
@@ -3434,7 +3434,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "正则量子化",
+                "query": "申请",
                 "matchingCase": true,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -3566,9 +3566,9 @@
   },
   "active": "bfdef854aeb5d6a1",
   "lastOpenFiles": [
+    "Notes/标量场的正则量子化.md",
     "Homework/Physics 513/Physics 513 homework 3.md",
     "Homework/Physics 513/Physics 513 homework 2.md",
-    "Notes/标量场的正则量子化.md",
     "Notes/密度矩阵.md",
     "Notes/满壳层角动量.md",
     "Notes/热力学平衡.md",
