@@ -3434,7 +3434,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "经典场论",
+                "query": "正则量子化",
                 "matchingCase": true,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -3445,8 +3445,7 @@
               "title": "Search"
             }
           }
-        ],
-        "currentTab": 3
+        ]
       }
     ],
     "direction": "horizontal",
@@ -3564,12 +3563,12 @@
       "obsidian-shellcommands:Shell commands: Custom variables": false
     }
   },
-  "active": "f69ba2cf946ad0e0",
+  "active": "bfdef854aeb5d6a1",
   "lastOpenFiles": [
-    "Notes/经典场论.md",
     "Notes/标量场的正则量子化.md",
-    "Homework/Physics 513/Physics 513 homework 2.md",
     "Homework/Physics 513/Physics 513 homework 3.md",
+    "Notes/经典场论.md",
+    "Homework/Physics 513/Physics 513 homework 2.md",
     "Notes/Noether定理.md",
     "Notes/申请.md",
     "Notes/密度矩阵.md",
