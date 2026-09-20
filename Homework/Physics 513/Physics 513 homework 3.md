@@ -104,33 +104,64 @@ Similarly, we can also obtain $(\Box^{2}+m^{2})\phi=0$.
 ## (b)
 
 Set:
-$$\begin{align} & \phi({x} )=\int \frac{d^{3}p}{(2\pi)^{3}} \frac{1}{\sqrt{ 2\omega_{{p}} }} (a_{{p} }e^{-i{p} \cdot {x}}+b^{\dagger}_{{p}}e^{i{p}\cdot {x}}) \\ & \pi({x})= \int \frac{d^{3}p}{(2\pi)^{3}}\left( -i \sqrt{ \frac{\omega_{\mathbf{p}}}{2} } \right)(a_{{p}}e^{-i{p}\cdot {x}}-b_{{p}}^{\dagger}e^{i{p}\cdot {x}}) \end{align}$$
+$$\begin{align} & \phi({x} )=\int \frac{d^{3}p}{(2\pi)^{3}} \frac{1}{\sqrt{ 2\omega_{{\mathbf{p}}} }} (a_{{p} }e^{-i{p} \cdot {x}}+b^{\dagger}_{{p}}e^{i{p}\cdot {x}}) \\ &  \\
+ & \phi ^{*}(x)= \int \frac{d^{3}p}{(2\pi)^{3}} \frac{1}{\sqrt{ 2\omega_{\mathbf{p}} }}(a^{\dagger}_{\mathbf{p}}e^{ip\cdot x}+ b_{\mathbf{p}}e^{-ip\cdot x}) \\
+ & \pi(x)= \partial_{t}\phi ^{*}(x)= \int \frac{d^{3}p}{(2\pi)^{3}} i \sqrt{ \frac{\omega_{\mathbf{p}}}{2} }(a^{\dagger}_{\mathbf{p}}e^{ip\cdot x}-b_{\mathbf{p}}e^{-ip\cdot x}) \\
+ & \pi ^{*}(x)= \partial_{t}\phi_{x}= \int \frac{d^{3}p}{(2\pi)^{3}}\left( -i \sqrt{  \frac{\omega_{\mathbf{p}}}{2} }(a_{\mathbf{p}}e^{-ip\cdot x}-b^{\dagger}_{\mathbf{p}}e^{ip\cdot x}) \right) \end{align}$$
 We compute:
-$$\begin{align} \int d^{3}x \pi ^{\dagger}(x)\pi(x) & = \int d^{3}x \frac{d^{3}pd^{3}p^{'}}{(2\pi)^{6}} \frac{\sqrt{ \omega_{\mathbf{p}}\omega_{\mathbf{p}^{'}} }}{2}(a_{p}^{\dagger}e^{ip\cdot x}-b_{\mathbf{p}}^{}e^{-ip\cdot x} )(a_{\mathbf{p}^{'}}e^{-ip^{'}\cdot x}-b_{\mathbf{p}^{'}}^{\dagger}e^{ip^{'}\cdot x}) \\ & = \int d^{3}x \frac{d^{3}pd^{3}p^{'}}{(2\pi)^{6} } \frac{\sqrt{ \omega_{\mathbf{p}}\omega_{\mathbf{p}^{'}} }}{2}(e^{ip\cdot x}a^{\dagger}_{\mathbf{p}}-b^{}_{-\mathbf{p}}e^{ip\cdot x} )(a_{\mathbf{p}^{'}}e^{-ip^{'}\cdot x}-b^{\dagger}_{-\mathbf{p}^{'}}e^{-ip^{'}\cdot x}) \\ & = \int \frac{d^{3}p d^{3}p^{'}}{(2\pi)^{3}} \frac{\sqrt{ \omega_{\mathbf{p}}\omega_{\mathbf{p}^{'}} }}{2}\delta^{3}(\mathbf{p}^{'}-\mathbf{p})(a^{\dagger}_{\mathbf{p}}-b^{}_{-\mathbf{p}}) (a_{\mathbf{p}^{'}}-b^{\dagger}_{-\mathbf{p}^{'}}) \\ & = \int \frac{d^{3}p}{(2\pi)^{3}} \frac{\omega_{\mathbf{p}}}{2}(a^{\dagger}_{\mathbf{p}}-b^{}_{-\mathbf{p}})(a_{\mathbf{p}}-b^{\dagger}_{\mathbf{p}}) \end{align}$$
-$$\begin{align} \int d^{3}x \nabla \phi ^{*} \cdot \nabla \phi & = \int d^{3}x \frac{d^{3}pd^{3}p^{'}}{(2\pi)^{6}} \frac{1}{2\sqrt{ \omega_{\mathbf{p}}\omega_{\mathbf{p}^{'}} }} \nabla(a_{\mathbf{p}}^{\dagger}e^{ip\cdot x}+ b^{}_{\mathbf{p}}e^{-ip\cdot x})\cdot \nabla(a_{\mathbf{p}^{'}}e^{-ip^{'}\cdot x}+b^{\dagger}_{\mathbf{p}^{'}}e^{ip^{'}\cdot x}) \\ & = \int d^{3}x \frac{d^{3}pd^{3}p^{'} }{(2\pi)^{6} } \frac{1}{2\sqrt{ \omega_{\mathbf{p}}\omega_{\mathbf{p}^{'}} }}\nabla(e^{ip\cdot x}(a^{\dagger}_{\mathbf{p}}+b^{}_{-\mathbf{p}}))\cdot \nabla(e^{-ip^{'}\cdot x}(a_{\mathbf{p}^{'}}+b^{\dagger}_{-\mathbf{p}^{'}})) \\ & = \int d^{3}x \frac{d^{3}pd^{3}p^{'}}{(2\pi)^{6}} \frac{1}{2\sqrt{ \omega_{\mathbf{p}}\omega_{\mathbf{p}^{'}} }}\mathbf{p}\cdot \mathbf{p}^{'} e^{i(\mathbf{p}^{'}-\mathbf{p})\cdot \mathbf{x}} (a^{\dagger}_{\mathbf{p}}+b^{}_{-\mathbf{p}})(a_{\mathbf{p}^{'}}+b^{\dagger}_{-\mathbf{p}^{'}}) \\ & = \int \frac{d^{3}p}{(2\pi)^{3}} \frac{\vert{}\mathbf{p} \vert{}^{2}}{2\omega_{\mathbf{p}}}(a^{\dagger}_{\mathbf{p}}+b^{}_{-\mathbf{p}})(a_{\mathbf{p}}+b^{\dagger}_{-\mathbf{p}}) \end{align}$$
-$$\begin{align} \int d^{3}x \phi ^{*}\phi & = \int d^{3}x \frac{d^{3}pd^{3}p^{'}}{(2\pi)^{6}} \frac{1}{2\sqrt{ \omega_{\mathbf{p}}\omega_{\mathbf{p}^{'}} }} (a_{\mathbf{p}}^{\dagger}e^{ip\cdot x}+ b^{}_{\mathbf{p}}e^{-ip\cdot x})(a_{\mathbf{p}^{'}}e^{-ip^{'}\cdot x}+b^{\dagger}_{\mathbf{p}^{'}}e^{ip^{'}\cdot x}) \\ & = \int d^{3}x \frac{d^{3}pd^{3}p^{'} }{(2\pi)^{6} } \frac{1}{2\sqrt{ \omega_{\mathbf{p}}\omega_{\mathbf{p}^{'}} }}(e^{ip\cdot x}(a^{\dagger}_{\mathbf{p}}+b^{}_{-\mathbf{p}}))(e^{-ip^{'}\cdot x}(a_{\mathbf{p}^{'}}+b^{\dagger}_{-\mathbf{p}^{'}})) \\ & = \int d^{3}x \frac{d^{3}pd^{3}p^{'}}{(2\pi)^{6}} \frac{1}{2\sqrt{ \omega_{\mathbf{p}}\omega_{\mathbf{p}^{'}} }} e^{i(\mathbf{p}^{'}-\mathbf{p})\cdot \mathbf{x}} (a^{\dagger}_{\mathbf{p}}+b^{}_{-\mathbf{p}})(a_{\mathbf{p}^{'}}+b^{\dagger}_{-\mathbf{p}^{'}}) \\ & = \int \frac{d^{3}p}{(2\pi)^{3}} \frac{1}{2\omega_{\mathbf{p}}}(a^{\dagger}_{\mathbf{p}}+b^{}_{-\mathbf{p}})(a_{\mathbf{p}}+b^{\dagger}_{-\mathbf{p}}) \end{align}$$
+$$\begin{align}
+\int d^{3}x \pi ^{*}\pi & = \int d^{3}x \frac{d^{3}pd^{3}p^{'}}{(2\pi)^{6}} \frac{\sqrt{ \omega_{\mathbf{p}}\omega_{\mathbf{p}^{'}} }}{2}(a_{\mathbf{p}}e^{-ip\cdot x}-b^{\dagger}_{\mathbf{p}}e^{ip\cdot x})(a^{\dagger}_{\mathbf{p}^{'}}e^{ip^{'}\cdot x}-b_{\mathbf{p}^{'}}e^{-ip^{'}\cdot x}) \\
+ & = \int d^{3}pd^{3}p^{'} \frac{1}{(2\pi)^{3}} \frac{\sqrt{ \omega_{\mathbf{p}}\omega_{\mathbf{p}^{'}} }}{2}[a_{\mathbf{p}}a^{\dagger}_{\mathbf{p}^{'}}\delta^{3}(\mathbf{p}-\mathbf{p}^{'})- b^{\dagger}_{\mathbf{p}}a^{\dagger}_{\mathbf{p}^{'}}\delta^{3}(\mathbf{p}+\mathbf{p}^{'})- a_{\mathbf{p}}b_{\mathbf{p}^{'}}\delta^{3}(\mathbf{p}+\mathbf{p}^{'})+ b^{\dagger}_{\mathbf{p}}b_{\mathbf{p}^{'}}\delta^{3}(\mathbf{p}-\mathbf{p}^{'}) ] \\
+ & = \int \frac{d^{3}p}{(2\pi)^{3}} \frac{\omega_{\mathbf{p}}}{2}(a^{\dagger}_{\mathbf{p}}a_{\mathbf{p}}-a^{\dagger}_{\mathbf{p}}b^{\dagger}_{-\mathbf{p}}e^{2ip^{0}t}-b_{\mathbf{p}}a_{-\mathbf{p}}e^{-2ip^{0}t}+b_{\mathbf{p}}b^{\dagger}_{\mathbf{p}})
+\end{align}$$
+Similarly:
+$$\begin{align}
+\int d^{3}x \nabla \phi ^{*} \cdot \nabla \phi & = \int d^{3}x \frac{d^{3}pd^{3}p^{'}}{(2\pi)^{6} } \frac{1}{2\sqrt{ \omega_{\mathbf{p}}\omega_{\mathbf{p}^{'}} }} (i\mathbf{p}a^{\dagger}_{\mathbf{p}}e^{ip\cdot x}-i\mathbf{p}b_{\mathbf{p}}e^{-ip\cdot x})(-i\mathbf{p}^{'}a_{\mathbf{p}^{'}}e^{-ip^{'}\cdot x}+i\mathbf{p}^{'}b^{\dagger}_{\mathbf{p}^{'}}e^{ip^{'}\cdot x}) \\
+ & = \int  \frac{d^{3}p}{(2\pi)^{3}} \frac{|\mathbf{p}|^{2}}{2}( a^{\dagger}_{\mathbf{p}}a_{\mathbf{p}}+b_{\mathbf{p}}a_{-\mathbf{p}}e^{-2ip^{0}t}+a^{\dagger}_{\mathbf{p}}b^{\dagger}_{-\mathbf{p}}e^{2ip^{0}t}+b_{\mathbf{p}}b^{\dagger}_{\mathbf{p}})
+\end{align}$$
+$$\begin{align}
+\int d^{3}x m^{2}\phi ^{*}\phi & = \int d^{3}x \frac{d^{3}pd^{3}p^{'}}{(2\pi)^{6} } \frac{1}{2\sqrt{ \omega_{\mathbf{p}}\omega_{\mathbf{p}^{'}} }}( a^{\dagger}_{\mathbf{p}}e^{ip\cdot x}+b_{\mathbf{p}}e^{-ip\cdot x})(a_{\mathbf{p}^{' }}e^{-ip^{'}\cdot x}+ib^{\dagger}_{\mathbf{p}^{'}}e^{ip^{'}\cdot x}) \\
+ & = \int \frac{d^{3}p}{(2\pi)^{3}} \frac{m^{2}}{2\omega_{\mathbf{p}}}(a^{\dagger}_{\mathbf{p}}a_{\mathbf{p}}+b^{\dagger}_{\mathbf{p}}a^{\dagger}_{-\mathbf{p}}e^{2ip^{0}t}+a_{\mathbf{p}}b_{-\mathbf{p}}e^{-2ip^{0}t}+b^{\dagger}_{\mathbf{p}}b_{\mathbf{p}})
+\end{align}$$
 Then we have:
-$$\begin{align} H & = \int d^{3}x (\pi ^{*}\pi+\nabla \phi ^{*}\cdot \nabla \phi+m^{2}\phi ^{*}\phi) \\ & = \int d^{3}x\left[ \frac{\omega_{\mathbf{p}}}{2}(a^{\dagger}_{\mathbf{p}}-b^{}_{-\mathbf{p}})(a_{\mathbf{p}}-b^{\dagger}_{-\mathbf{p}})+ \frac{\vert{}\mathbf{p}\vert{}^{2}}{2\omega_{\mathbf{p}}}(a^{\dagger}_{\mathbf{p}}+ b^{}_{-\mathbf{p}})(a_{\mathbf{p}}+ b^{\dagger}_{-\mathbf{p}})+ \frac{m^{2}}{2\omega_{\mathbf{p}}}(a^{\dagger}_{\mathbf{p}}+b^{}_{-\mathbf{p}})(a_{\mathbf{p}}+b^{\dagger}_{-\mathbf{p}}) \right] \\ & = \int d^{3}x\left[ \frac{\omega_{\mathbf{p}}}{2}(a^{\dagger}_{\mathbf{p}}-b^{}_{-\mathbf{p}})(a_{\mathbf{p}}-b^{\dagger}_{-\mathbf{p}})+ \frac{\omega_{\mathbf{p}}}{2}(a^{\dagger}_{\mathbf{p}}+ b^{}_{-\mathbf{p}})(a_{\mathbf{p}}+ b^{\dagger}_{-\mathbf{p}}) \right] \\ & = \int d^{3}x\omega_{\mathbf{p}} (a^{\dagger}_{\mathbf{p}}a_{\mathbf{p}}+b^{}_{\mathbf{p}}b^{\dagger}_{\mathbf{p}}) \\
- & = \int d^{3} x \omega_{\mathbf{p}}(a^{\dagger}_{\mathbf{p}}a_{\mathbf{p}}+b^{\dagger}_{\mathbf{p}}b^{}_{\mathbf{p}})+ \int d^{3}x\omega_{\mathbf{p}} (2\pi)^{3}\delta^{3}(\mathbf{p}-\mathbf{p}) \end{align}$$
-Ignore the zero-point energy $\int d^{3}x \omega_{\mathbf{p}}(2\pi)^{3}\delta^{3}(\mathbf{p}-\mathbf{p})$, the hamiltonian is $H= \int d^{3}x \omega_{\mathbf{p}}(a^{\dagger}_{\mathbf{p}}a_{\mathbf{p}}+b^{\dagger}_{\mathbf{p}}b_{\mathbf{p}})$. Clearly, $a_{\mathbf{p}},\ b^{\dagger}_{\mathbf{p}}$ are independent with each other. Since they both correspond to $\omega_{\mathbf{p}}=\sqrt{ \vert{}\mathbf{p}\vert{}^{2}+m^{2} }$, meaning that they have the same $m$.
+$$\begin{align}
+H & = \int d^{3}x(\pi ^{*}\pi+\nabla \phi ^{*}\cdot \nabla \phi+m^{2}\phi ^{*}\phi) \\
+ & =  \int \frac{d^{3}p}{(2\pi)^{3}} \frac{\omega_{\mathbf{p}}}{2}(a^{\dagger}_{\mathbf{p}}a_{\mathbf{p}}-a^{\dagger}_{\mathbf{p}}b^{\dagger}_{-\mathbf{p}}e^{2ip^{0}t}-b_{\mathbf{p}}a_{-\mathbf{p}}e^{-2ip^{0}t}+b_{\mathbf{p}}b^{\dagger}_{\mathbf{p}}) \\
+ & +\int  \frac{d^{3}p}{(2\pi)^{3}} \frac{|\mathbf{p}|^{2}}{2\omega_{\mathbf{p}}}( a^{\dagger}_{\mathbf{p}}a_{\mathbf{p}}+b_{\mathbf{p}}a_{-\mathbf{p}}e^{-2ip^{0}t}+a^{\dagger}_{\mathbf{p}}b^{\dagger}_{-\mathbf{p}}e^{2ip^{0}t}+b_{\mathbf{p}}b^{\dagger}_{\mathbf{p}}) \\
+ & +\int \frac{d^{3}p}{(2\pi)^{3}} \frac{m^{2}}{2\omega_{\mathbf{p}}}(a^{\dagger}_{\mathbf{p}}a_{\mathbf{p}}+b^{\dagger}_{\mathbf{p}}a^{\dagger}_{-\mathbf{p}}e^{2ip^{0}t}+a_{\mathbf{p}}b_{-\mathbf{p}}e^{-2ip^{0}t}+b^{\dagger}_{\mathbf{p}}b_{\mathbf{p}}) \\
+ & = \int \frac{d^{3}p}{(2\pi)^{3}} \frac{\omega_{\mathbf{p}}}{2}(a^{\dagger}_{\mathbf{p}}a_{\mathbf{p}}-a^{\dagger}_{\mathbf{p}}b^{\dagger}_{-\mathbf{p}}e^{2ip^{0}t}-b_{\mathbf{p}}a_{-\mathbf{p}}e^{-2ip^{0}t}+b_{\mathbf{p}}b^{\dagger}_{\mathbf{p}}) \\
+ & + \int \frac{d^{3}p}{(2\pi)^{3}} \frac{\omega_{\mathbf{p}}}{2}(a^{\dagger}_{\mathbf{p}}a_{\mathbf{p}}+b^{\dagger}_{\mathbf{p}}a^{\dagger}_{-\mathbf{p}}e^{2ip^{0}t}+a_{\mathbf{p}}b_{-\mathbf{p}}e^{-2ip^{0}t}+b^{\dagger}_{\mathbf{p}}b_{\mathbf{p}}) \\
+ & = \int \frac{d^{3}p}{(2\pi)^{3}} \omega_{\mathbf{p}}(a^{\dagger}_{\mathbf{p}}a_{\mathbf{p}}+b^{\dagger}_{\mathbf{p}}b_{\mathbf{p}}) + \int \frac{d^{3}p}{(2\pi)^{3}}(b^{\dagger}_{\mathbf{p}}a^{\dagger}_{-\mathbf{p}}e^{2ip^{0}t}-a^{\dagger}_{\mathbf{p}}b^{\dagger}_{-\mathbf{p}}e^{2ip^{0}t}) \\
+ & + \int \frac{d^{3}p}{(2\pi)^{3}}(a_{\mathbf{p}}b_{-\mathbf{p}}e^{-2ip^{0}t}-b_{\mathbf{p}}a_{-\mathbf{p}}e^{-2ip^{0}t})
+\end{align}$$
+Observe that the last two terms vanish. Because:
+$$\begin{align}
+\int d^{3}p (b^{\dagger}_{\mathbf{p}}a^{\dagger}_{-\mathbf{p}}-a^{\dagger}_{\mathbf{p}}b^{\dagger}_{-\mathbf{p}}) & = \int d^{3}p (b^{\dagger}_{-\mathbf{p}}a^{\dagger}_{\mathbf{p}}-a^{\dagger}_{-\mathbf{p}}b^{\dagger}_{\mathbf{p}}) \\
+ & = -\int d^{3}p(b^{\dagger}_{\mathbf{p}}a^{\dagger}_{-\mathbf{p}}-a^{\dagger}_{\mathbf{p}}b^{\dagger}_{-\mathbf{p}}) \\
+\implies \int d^{3}p (b^{\dagger}_{\mathbf{p}}a^{\dagger}_{-\mathbf{p}}-a^{\dagger}_{\mathbf{p}}b^{\dagger}_{-\mathbf{p}}) & =0
+\end{align}$$
+Similarly, $\int d^{3}p (a_{\mathbf{p}}b_{-\mathbf{p}}-b_{\mathbf{p}}a_{-\mathbf{p}})=0$. Then:
+$$H= \int \frac{d^{3}p}{(2\pi)^{3}}\omega_{\mathbf{p}}(a^{\dagger}_{\mathbf{p}}a_{\mathbf{p}}+b^{\dagger}_{\mathbf{p}}b_{\mathbf{p}})$$
+Clearly, $a_{\mathbf{p}},\ b^{\dagger}_{\mathbf{p}}$ are independent with each other. Since they both correspond to $\omega_{\mathbf{p}}=\sqrt{ \vert{}\mathbf{p}\vert{}^{2}+m^{2} }$, meaning that they represent two different kinds of bosons with the same $m$.
 ## (c)
 
 We have:
 $$\begin{align}
-\int d^{3}x \phi ^{*}\pi ^{*} &  = \int d^{3} x \frac{d^{3}p d^{3}p^{'}}{(2\pi)^{6}}\left(  \frac{i}{2} \sqrt{ \frac{\omega_{\mathbf{p}^{'}}}{\omega_{\mathbf{p}}} }\right)(a^{\dagger}_{\mathbf{p}}e^{ip\cdot x}+ b_{\mathbf{p}}e^{-ip\cdot x}) )( a^{\dagger}_{\mathbf{p}^{'}}e^{ip^{'}\cdot x}-b_{\mathbf{p}^{'}}e^{-ip^{'}\cdot x}) \\
- & = \frac{i}{2} \int \frac{d^{3}p}{(2\pi)^{3}} ( a^{\dagger}_{\mathbf{p}}a^{\dagger}_{-\mathbf{p}}e^{2ip^{0}t}- a^{\dagger}_{\mathbf{p}}b_{\mathbf{p}}+ b_{\mathbf{p}}a^{\dagger}_{\mathbf{p}}-b_{\mathbf{p}}b_{-\mathbf{p}}e^{-2i p^{0}t}) \\
- 
+\int d^{3}x \phi ^{*}\pi ^{*} & = \int d^{3}x \frac{d^{3}pd^{3}p^{'}}{(2\pi)^{6}}\left( - \frac{i}{2} \right) \sqrt{ \frac{\omega_{\mathbf{p}^{'}}}{\omega_{\mathbf{p}}} }(a^{\dagger}_{\mathbf{p}}e^{ip\cdot x}+b_{\mathbf{p}}e^{-ip\cdot x})(a_{\mathbf{p}^{'}}e^{-ip^{'}\cdot x}-b^{\dagger}_{\mathbf{p}^{'}}e^{ip^{'}\cdot x}) \\
+ & = - \frac{i}{2} \int \frac{d^{3}p}{(2\pi)^{3}}( a^{\dagger}_{\mathbf{p}}a_{\mathbf{p}}+b_{\mathbf{p}}a_{-\mathbf{p}}e^{-2ip^{0}t}-a^{\dagger}_{\mathbf{p}}b^{\dagger}_{-\mathbf{p}}e^{2ip^{0}t}-b_{\mathbf{p}}b^{\dagger}_{\mathbf{p}})
 \end{align}$$
 Similarly:
 $$\begin{align}
-\int d^{3}x \pi \phi & = \int d^{3}x \frac{d^{3}pd^{3}p^{'}}{(2\pi)^{6}}\left( - \frac{i}{2} \sqrt{ \frac{\omega_{\mathbf{p}^{'}}}{\omega_{\mathbf{p}}} }  \right)(a_{\mathbf{p}}e^{-ip\cdot x}-b^{\dagger}_{\mathbf{p}}e^{ip\cdot x})(a_{\mathbf{p}}e^{-ip^{'}\cdot x}+ b^{\dagger}_{\mathbf{p}^{'}}e^{ip^{'}\cdot x}) \\
- & = - \frac{i}{2}\int \frac{d^{3}p}{(2\pi)^{3}}( a_{\mathbf{p}}a_{-\mathbf{p}}e^{-2ip^{0}t}-b^{\dagger}_{\mathbf{p}}a_{\mathbf{p}}+a_{\mathbf{p}}b^{\dagger}_{\mathbf{p}}-b_{\mathbf{p}}b^{\dagger}_{-\mathbf{p}}e^{2ip^{0}t})
+\int d^{3}x \pi \phi & =  \int d^{3}x \frac{d^{3}pd^{3}p^{'}}{(2\pi)^{6}} \frac{i}{2} \sqrt{ \frac{\omega_{\mathbf{p}}}{\omega_{\mathbf{p}^{'}}} }(a_{\mathbf{p}}^{\dagger}e^{ip\cdot x}-b_{\mathbf{p}}e^{-ip\cdot x})(a_{\mathbf{p}^{'}}e^{-ip^{'}\cdot x}+ b^{\dagger}_{\mathbf{p}^{'}}e^{ip^{'}\cdot x}) \\
+ & = \frac{i}{2} \int \frac{d^{3}p}{(2\pi)^{3}}( a^{\dagger}_{\mathbf{p}}a_{\mathbf{p}}-b_{\mathbf{p}}a_{-\mathbf{p}}e^{-2ip^{0}t}+a^{\dagger}_{\mathbf{p}}b^{\dagger}_{-\mathbf{p}}e^{2ip^{0}t}-b_{\mathbf{p}}b^{\dagger}_{\mathbf{p}}) 
 \end{align}$$
 Then:
 $$\begin{align}
-\int d^{3}x(\phi ^{*}\pi ^{*}-\pi \phi) & = \frac{i}{2}\int  \frac{d^{3}p}{(2\pi)^{3}}  (-a^{\dagger}_{\mathbf{p}}b_{\mathbf{p}}+b_{\mathbf{p}}a^{\dagger}_{\mathbf{p}}-b^{\dagger}_{\mathbf{p}}a_{\mathbf{p}}+a_{\mathbf{p}}b^{\dagger}_{\mathbf{p}}) \\
- & + \frac{i}{2} \int \frac{d^{3}p}{(2\pi)^{3}}(a^{\dagger}_{\mathbf{p}}a^{\dagger}_{-\mathbf{p}}e^{2ip^{0}t}+ a_{\mathbf{p}}a_{-\mathbf{p}}e^{-2ip^{0}t}) \\
- & - \frac{i}{2}\int \frac{d^{3}p}{(2\pi)^{3}}(b_{\mathbf{p}}b_{-\mathbf{p}}e^{-2ip^{0}t}+b^{\dagger}_{\mathbf{p}}b^{\dagger}_{-\mathbf{p}}e^{2ip^{0}t}) \\
- & =  + \frac{i}{2} \int \frac{d^{3}p}{(2\pi)^{3}}(a^{\dagger}_{\mathbf{p}}a^{\dagger}_{-\mathbf{p}}e^{2ip^{0}t}+ a_{\mathbf{p}}a_{-\mathbf{p}}e^{-2ip^{0}t}) \\
- & - \frac{i}{2}\int \frac{d^{3}p}{(2\pi)^{3}}(b_{\mathbf{p}}b_{-\mathbf{p}}e^{-2ip^{0}t}+b^{\dagger}_{\mathbf{p}}b^{\dagger}_{-\mathbf{p}}e^{2ip^{0}t}) \\
+\int d^{3}x(\phi ^{*}\pi ^{*}-\pi \phi) & = - \frac{i}{2} \int \frac{d^{3}p}{(2\pi)^{3}}(2a^{\dagger}_{\mathbf{p}}a_{\mathbf{p}}-2b_{\mathbf{p}}b^{\dagger}_{\mathbf{p}})
 \end{align}$$
+Then:
+$$Q=\frac{i}{2}\int d^{3}x(\phi ^{*}\pi ^{*}-\pi \phi)= \frac{1}{2}\int \frac{d^{3}p}{(2\pi)^{3}}(a^{\dagger}_{\mathbf{p}}a_{\mathbf{p}}-b_{\mathbf{p}}b^{\dagger}_{\mathbf{p}})$$
+Obviously, the charge carried by the type created by $a^{\dagger}_{\mathbf{p}}$ is $\frac{1}{2}\int \frac{d^{3}p}{(2\pi)^{3}}a^{\dagger}_{\mathbf{p}}a_{\mathbf{p}}$. The charge carried by the type created by $b^{\dagger}_{\mathbf{p}}$ is $-\frac{1}{2}\int \frac{d^{3}p}{(2\pi)^{3}}b^{\dagger}_{\mathbf{p}}b_{\mathbf{p}}$.
+# Problem 3
+
+
