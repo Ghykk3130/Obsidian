@@ -311,6 +311,11 @@ $$\begin{align}
 \langle \Delta N^{2}\rangle & = \int \frac{d^{3}kd^{3}p}{(2\pi)^{6}} \frac{|\eta_{\mathbf{k}}|^{2}|\eta_{\mathbf{p}}|^{2}}{4E_{\mathbf{k}}E_{\mathbf{p}} }+ \int \frac{d^{3}k}{(2\pi)^{3}} \frac{|\eta_{\mathbf{k}}|^{2}}{2E_{\mathbf{k}}}-\left(\int \frac{d^{3}k}{(2\pi)^{3}} \frac{|\eta_{\mathbf{k}}|^{2}}{2E_{\mathbf{k}}}\right)^{2} \\
  & = \int \frac{d^{3}k}{(2\pi)^{3}} \frac{|\eta_{\mathbf{k}}|^{2}}{2E_{\mathbf{k}}}
 \end{align}$$
+Observe that $\langle \Delta N^{2}\rangle= \bar{N}$. Then classical limit requires:
+$$\begin{align}
+ & \sqrt{ \bar{N} }\ll \bar{N}
+ \implies  \sqrt{ \bar{N} }\gg 1\implies  \bar{N}\gg 1
+\end{align}$$
 
 
 
