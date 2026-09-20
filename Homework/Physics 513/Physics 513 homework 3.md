@@ -163,5 +163,64 @@ Then:
 $$Q=\frac{i}{2}\int d^{3}x(\phi ^{*}\pi ^{*}-\pi \phi)= \frac{1}{2}\int \frac{d^{3}p}{(2\pi)^{3}}(a^{\dagger}_{\mathbf{p}}a_{\mathbf{p}}-b_{\mathbf{p}}b^{\dagger}_{\mathbf{p}})$$
 Obviously, the charge carried by the type created by $a^{\dagger}_{\mathbf{p}}$ is $\frac{1}{2}\int \frac{d^{3}p}{(2\pi)^{3}}a^{\dagger}_{\mathbf{p}}a_{\mathbf{p}}$. The charge carried by the type created by $b^{\dagger}_{\mathbf{p}}$ is $-\frac{1}{2}\int \frac{d^{3}p}{(2\pi)^{3}}b^{\dagger}_{\mathbf{p}}b_{\mathbf{p}}$.
 # Problem 3
+## (a)
+
+We have:
+$$\begin{align}
+\frac{d}{dt}(f,g) & = i \int d^{3}x \frac{\partial}{\partial t}( f^{*} \partial_{0}g-g \partial_{0}f^{*}) \\
+ & = i \int d^{3}x (\partial_{0}f^{*}\partial_{0}g+ f^{*}\partial_{0}^{2}g-\partial_{0}g \partial_{0}f^{*}- g\partial_{0}^{2}f^{*})  \\
+ & = i \int d^{3}x (f^{*}\partial_{0}^{2}g-g\partial_{0}^{2}f^{*})
+\end{align}$$
+From Klein-Gordon equation:
+$$\begin{align}
+ & \partial_{0}^{2}g= \nabla^{2}g-m^{2}g \\
+ & \partial_{0}^{2}f^{*}=\nabla^{2}f^{*}-m^{2}f^{*}
+\end{align}$$
+Then:
+$$\begin{align}
+\frac{d}{dt}(f,g) & = i \int d^{3}x(f^{*}\nabla^{2}g-m^{2}f^{*}g-g\nabla^{2}f^{*}+m^{2}gf^{*}) \\
+ & = i \int d^{3}x \nabla \cdot(f^{*}\nabla g)- i \int d^{3}x \nabla f^{*}\cdot \nabla g- i \int d^{3}x \nabla \cdot(g\nabla f^{*})+ i \int d^{3}x \nabla g\cdot \nabla f^{*} \\
+ & = i \int d^{3}x \nabla \cdot(f^{*}\nabla g)-i \int d^{3}x \nabla \cdot(g\nabla f^{*}) \\
+ & = 0
+\end{align}$$
+In the second to last line, the two integrals vanish since they are just two boundary terms. 
+## (b)
+
+We have:
+$$\begin{align}
+ & \phi_{H}(x) = \int \frac{d^{3}p}{(2\pi)^{3}} \frac{1}{\sqrt{ 2\omega_{\mathbf{p}} }}(a_{\mathbf{p}}e^{-ip\cdot x}+a^{\dagger}_{\mathbf{p}}e^{ip\cdot x}) \\
+\implies & \int d^{3} x e^{-i \mathbf{p}\cdot \mathbf{x}}\phi_{H}(x)=  \int \frac{d^{3}p^{'}}{(2\pi)^{3}} \frac{1}{\sqrt{ 2\omega_{\mathbf{p}^{'}} }}(a_{\mathbf{p}}e^{-ip^{'0}t} e^{i(\mathbf{p}-\mathbf{p}^{'})\cdot \mathbf{x} }+a^{\dagger}_{\mathbf{p}^{'}}e^{ip^{'0}t}e^{-i(\mathbf{p}+\mathbf{p}^{'})\cdot \mathbf{x}}) \\
+\implies & \int d^{3}x e^{-i\mathbf{p}\cdot \mathbf{x}}\phi_{H}(x)= \frac{1}{\sqrt{ 2\omega_{\mathbf{p}} }}(a_{\mathbf{p}}e^{-ip^{'0}t}+ a^{\dagger}_{-\mathbf{p}}e^{ip^{'0}t}) 
+\end{align}$$
+Similarly, we have:
+$$\begin{align}
+ & \pi_{H}(x)= \int \frac{d^{3}p}{(2\pi)}^{} \left( -i \sqrt{ \frac{\omega_{\mathbf{p}}}{2} }  \right)(a_{\mathbf{p}}e^{-ip\cdot x}-a^{\dagger}_{\mathbf{p}}e^{ip\cdot x}) \\
+\implies & \int d^{3} x e^{-i\mathbf{p}\cdot \mathbf{x}}\pi_{H}(x)= -i \sqrt{ \frac{\omega_{\mathbf{p}}}{2} }(a_{\mathbf{p}}e^{-ip^{'0}t}-a^{\dagger}_{-\mathbf{p}}e^{ip^{'0}t})
+\end{align}$$
+Then it's easy to solve:
+$$\begin{align}
+ & a_{\mathbf{p}}e^{-ip^{'0}t}= \frac{1}{2} \int d^{3}x e^{-i\mathbf{p}\cdot \mathbf{x}}\left( \sqrt{ 2\omega_{\mathbf{p}} }\phi_{H}(x)+ i \sqrt{ \frac{2}{\omega_{\mathbf{p}}} }\pi_{H}(x)  \right) \\
+\implies & a_{\mathbf{P}}= \frac{1}{2} \int d^{3}x e^{ip\cdot x}\left( \sqrt{ 2\omega_{\mathbf{p}} }\phi_{H}(x)+i \sqrt{ \frac{2}{\omega_{\mathbf{p}}} }\pi_{H}(x) \right) \\
+ & =   \int d^{3}x \frac{1}{\sqrt{ 2\omega_{\mathbf{p}} }}( \omega_{\mathbf{p}}\phi_{H}(x)e^{ip\cdot x}+ i \pi_{H}(x)e^{ip\cdot x}) \\
+ & = \int d^{3}x \frac{1}{\sqrt{ 2\omega_{\mathbf{p}} }}(-i\phi_{H}(x)\partial_{0}e^{ip\cdot x}+ i e^{ip\cdot x}\partial_{0}\phi_{H}(x)) \\
+ & = i \int d^{3}x \frac{1}{\sqrt{ 2\omega_{\mathbf{p}} }}e^{ip\cdot x}  \overset{\leftrightarrow}{\partial_{0}}\phi_{H}(x) \\
+ & = (f_{p}(x),\phi_{H}(x))
+\end{align}$$
+## (c)
+
+From part (b), we get:
+$$\begin{align}
+a^{\dagger}_{\mathbf{p}} & = \left( \frac{1}{\sqrt{ 2\omega_{\mathbf{p}} }}\int d^{3}x  \omega_{\mathbf{p}}\phi_{H}(x)e^{ip\cdot x}+ i \pi_{H}(x)e^{ip\cdot x} \right)^{\dagger} \\
+ & =  \frac{1}{\sqrt{ 2\omega_{\mathbf{p}} }} \int d^{3}x (\omega_{\mathbf{p}}\phi_{H}(x)e^{-ip\cdot x}-i\pi_{H}(x)e^{-ip\cdot x}) 
+\end{align}$$
+We have:
+$$\begin{align}
+[a_{\mathbf{k}},a^{\dagger}_{\mathbf{p}}] & = \left[  \frac{1}{\sqrt{ 2\omega_{\mathbf{k}} }}\int d^{3}x (\omega_{\mathbf{k}}\phi_{H}(x)e^{ik\cdot x}+i\pi_{H}(x)e^{ik\cdot x}), \frac{1}{\sqrt{ 2\omega_{\mathbf{p}} }} \int d^{3}x^{'}(\omega_{\mathbf{p}}\phi_{H}(x^{'})e^{-ip\cdot x^{'}}-i\pi_{H}(x^{'})e^{-ip\cdot x^{'}})\right] \\
+ & = \frac{1}{2\sqrt{ \omega_{\mathbf{k}}\omega_{\mathbf{p}} }}\int d^{3}x d^{3}x^{'}(-i\omega_{\mathbf{k}}e^{ik\cdot x-ip\cdot x^{'}}[\phi_{H}(x),\pi_{H}(x^{'})]+i\omega_{\mathbf{p}}e^{ik\cdot x-ip\cdot x^{'}}[\pi_{H}(x),\phi_{H}(x^{'})]) \\
+ & = \frac{1}{2\sqrt{ \omega_{\mathbf{k}}\omega_{\mathbf{p}} }} \int d^{3}x (\omega_{\mathbf{k}}e^{i(k-p)\cdot {x}}+\omega_{\mathbf{p}}e^{i(k-p)\cdot x}) \\
+ & = \frac{1}{2\sqrt{ \omega_{\mathbf{k}}\omega_{\mathbf{p}} }} (2\pi)^{3}(\omega_{\mathbf{K}}\delta^{3}(\mathbf{k}-\mathbf{p})+\omega_{\mathbf{p}}\delta^{3}(\mathbf{k}-\mathbf{p})) \\
+ & = (2\pi)^{3} \delta^{3}(\mathbf{k}-\mathbf{p})
+\end{align}$$
+
 
 
