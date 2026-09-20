@@ -277,6 +277,16 @@ $$\begin{align}
 \end{align}$$
 ## (c)
 
+We have:
+$$\begin{align}
+\bra{\{ \eta_{\mathbf{k}} \}} \phi(x)\ket{\{ \eta_{\mathbf{k}} \}}   & = \bra{\{ \eta_{\mathbf{k}} \}} \left( \int \frac{d^{3}p}{(2\pi)^{3}} \frac{1}{\sqrt{ 2E_{\mathbf{p}} }}(a_{\mathbf{p}}e^{-ip\cdot x}+a^{\dagger}_{\mathbf{p}}e^{ip\cdot x}) \right)\ket{\{ \eta_{\mathbf{k}} \}} \\
+ & = \int \frac{d^{3}p}{(2\pi)^{3}} \frac{1}{\sqrt{ 2E_{\mathbf{p}} }}(\bra{\{ \eta_{\mathbf{k}} \}}a_{\mathbf{p}}\ket{\{ \eta_{\mathbf{k}} \}} e^{-ip\cdot x}+\text{h.c.}) \\
+ & = \int \frac{d^{3}p}{(2\pi)^{3}} \frac{1}{2E_{\mathbf{p}}}(\eta_{\mathbf{p}}e^{-ip\cdot x}+\text{h.c.}) \\
+ & = \int \frac{d^{3}p}{(2\pi)^{3}} \frac{1}{E_{p}}\mathrm{Re}(\eta_{\mathbf{p}}e^{-ip\cdot x}) 
+\end{align}$$
+## (d)
+
+
 
 
 
