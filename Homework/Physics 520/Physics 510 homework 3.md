@@ -14,3 +14,11 @@ $$\begin{align}
  & = \frac{\hbar \mathbf{k}}{m}
 \end{align}$$
 Since $\mathbf{k}$ is 
+
+
+We have:
+$$\begin{align}
+\mathbf{v} \cdot  \dot{\mathbf{k}} & = \mathbf{v}\cdot \frac{1}{\hbar}(-e\mathbf{v}\times \mathbf{B})=0
+\end{align}$$
+This means that the infinitesimal movements in $\mathbf{r}$ and $\mathbf{k}$ are perpendicular. Then the path in the real space and in the k-space are perpendicular. 
+
