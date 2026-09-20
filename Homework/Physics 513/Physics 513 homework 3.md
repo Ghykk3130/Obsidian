@@ -255,7 +255,7 @@ a_{\mathbf{p}}\ket{\{ \eta_{\mathbf{k}} \}}  &  = a_{\mathbf{p}}\mathcal{N} \exp
 \end{align}$$
 ## (b)
 
-We have:
+Without loss of generality, take $\mathcal{N}\in \mathbb{R}$. We have:
 $$\begin{align}
 \bra{\{ \eta_{\mathbf{k}} \}}  \{ \eta_{\mathbf{k}} \}\rangle & = \mathcal{N} \bra{0} \exp\left( \int \frac{d^{3}k}{(2\pi)^{3}} \frac{\eta ^{*}_{\mathbf{k}}a_{\mathbf{k}}}{\sqrt{ 2E_{\mathbf{k}} }} \right)\ket{\{ \eta_{\mathbf{k}} \}}  \\
  & = \mathcal{N}\bra{0} \sum_{n=0}^{\infty} \frac{1}{n!} \int   \frac{d^{3}k_{1}\dots d^{3}k_{n}}{(2\pi)^{3n}} \frac{\eta ^{*}_{\mathbf{k}_{1}}\dots \eta ^{*}_{\mathbf{k}_{n}}}{2^{n /2}\sqrt{ E_{\mathbf{k}_{1}}\dots E_{\mathbf{k}_{n}} } }a_{\mathbf{k}_{1}}\dots a_{\mathbf{k}_{n}}\ket{\{ \eta_{\mathbf{k}} \}} \\
@@ -302,8 +302,16 @@ $$\begin{align}
 We compute:
 $$\begin{align}
 \langle N^{2}\rangle & = \bra{\{ \eta_{\mathbf{k}} \}} \int \frac{d^{3}kd^{3}p}{(2\pi)^{6}} a_{\mathbf{k}}^{\dagger}a_{\mathbf{k}}a^{\dagger}_{\mathbf{p}}a_{\mathbf{p}}\ket{\{ \eta_{\mathbf{p}} \}}  \\
- & = \bra{\{ \eta_{\mathbf{k}} \}} \left(\int \frac{d^{3}kd^{3}p }{(2\pi)^{6} }a^{\dagger}_{\mathbf{k}}a^{\dagger}_{\mathbf{p}}a_{\mathbf{k}}a_{\mathbf{p}}+ \int \frac{d^{3}kd^{3}p}{(2\pi)^{6}}a^{\dagger}_{\mathbf{k}}a_{\mathbf{p}}(2\pi)^{3}\delta(\mathbf{k}-\mathbf{p})\right) 
+ & = \bra{\{ \eta_{\mathbf{k}} \}} \left(\int \frac{d^{3}kd^{3}p }{(2\pi)^{6} }a^{\dagger}_{\mathbf{k}}a^{\dagger}_{\mathbf{p}}a_{\mathbf{k}}a_{\mathbf{p}}+ \int \frac{d^{3}kd^{3}p}{(2\pi)^{6}}a^{\dagger}_{\mathbf{k}}a_{\mathbf{p}}(2\pi)^{3}\delta(\mathbf{k}-\mathbf{p})\right) \ket{\{ \eta_{\mathbf{k}} \}}  \\
+ & = \int \frac{d^{3}kd^{3}p}{(2\pi)^{6}} \bra{\{ \eta_{\mathbf{k}} \}} a^{\dagger}_{\mathbf{k}}a^{\dagger}_{\mathbf{p}}a_{\mathbf{k}}a_{\mathbf{p}}\ket{\{ \eta_{\mathbf{k}} \}} + \int \frac{d^{3}k}{(2\pi)^{3}}\bra{\{ \eta_{\mathbf{k}} \}} a^{\dagger}_{\mathbf{k}}a_{\mathbf{k}}\ket{\{ \eta_{\mathbf{k}} \}} \\
+ & = \int \frac{d^{3}kd^{3}p}{(2\pi)^{6}} \frac{|\eta_{\mathbf{k}}|^{2}|\eta_{\mathbf{p}}|^{2}}{4E_{\mathbf{k}}E_{\mathbf{p}} }+ \int \frac{d^{3}k}{(2\pi)^{3}} \frac{|\eta_{\mathbf{k}}|^{2}}{2E_{\mathbf{k}}} 
 \end{align}$$
+Then:
+$$\begin{align}
+\langle \Delta N^{2}\rangle & = \int \frac{d^{3}kd^{3}p}{(2\pi)^{6}} \frac{|\eta_{\mathbf{k}}|^{2}|\eta_{\mathbf{p}}|^{2}}{4E_{\mathbf{k}}E_{\mathbf{p}} }+ \int \frac{d^{3}k}{(2\pi)^{3}} \frac{|\eta_{\mathbf{k}}|^{2}}{2E_{\mathbf{k}}}-\left(\int \frac{d^{3}k}{(2\pi)^{3}} \frac{|\eta_{\mathbf{k}}|^{2}}{2E_{\mathbf{k}}}\right)^{2} \\
+ & = \int \frac{d^{3}k}{(2\pi)^{3}} \frac{|\eta_{\mathbf{k}}|^{2}}{2E_{\mathbf{k}}}
+\end{align}$$
+
 
 
 
