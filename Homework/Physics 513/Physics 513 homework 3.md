@@ -249,10 +249,11 @@ Then:
 $$\left[a_{\mathbf{p}},\exp\left(  \int \frac{d^{3}k}{(2\pi)^{3}} \frac{\eta_{\mathbf{k}}a^{\dagger}_{\mathbf{k}}}{\sqrt{ 2E_{\mathbf{k}} }} \right)\right]= \frac{\eta_{\mathbf{p}}}{\sqrt{ 2E_{\mathbf{p}} }}\exp\left(  \int \frac{d^{3}k}{(2\pi)^{3}} \frac{\eta_{\mathbf{k}}a^{\dagger}_{\mathbf{k}}}{\sqrt{ 2E_{\mathbf{k}} }} \right)$$
 Then:
 $$\begin{align}
-a_{\mathbf{p}}\ket{\{ \eta_{\mathbf{k}} \}}  &  = a_{\mathbf{p}} \exp\left(  \int \frac{d^{3}k}{(2\pi)^{3}} \frac{\eta_{\mathbf{k}}a^{\dagger}_{\mathbf{k}}}{\sqrt{ 2E_{\mathbf{k}} }} \right)\ket{0}  \\
- & = \frac{\eta_{\mathbf{p}}}{\sqrt{ 2E_{\mathbf{p}} }} \exp\left(  \int \frac{d^{3}k}{(2\pi)^{3}} \frac{\eta_{\mathbf{k}}a^{\dagger}_{\mathbf{k}}}{\sqrt{ 2E_{\mathbf{k}} }} \right)\ket{0} +\exp\left(  \int \frac{d^{3}k}{(2\pi)^{3}} \frac{\eta_{\mathbf{k}}a^{\dagger}_{\mathbf{k}}}{\sqrt{ 2E_{\mathbf{k}} }} \right)a_{\mathbf{p}}\ket{0}  \\
+a_{\mathbf{p}}\ket{\{ \eta_{\mathbf{k}} \}}  &  = a_{\mathbf{p}}\mathcal{N} \exp\left(  \int \frac{d^{3}k}{(2\pi)^{3}} \frac{\eta_{\mathbf{k}}a^{\dagger}_{\mathbf{k}}}{\sqrt{ 2E_{\mathbf{k}} }} \right)\ket{0}  \\
+ & = \frac{\eta_{\mathbf{p}}}{\sqrt{ 2E_{\mathbf{p}} }} \mathcal{N} \exp\left(  \int \frac{d^{3}k}{(2\pi)^{3}} \frac{\eta_{\mathbf{k}}a^{\dagger}_{\mathbf{k}}}{\sqrt{ 2E_{\mathbf{k}} }} \right)\ket{0} +\mathcal{N}\exp\left(  \int \frac{d^{3}k}{(2\pi)^{3}} \frac{\eta_{\mathbf{k}}a^{\dagger}_{\mathbf{k}}}{\sqrt{ 2E_{\mathbf{k}} }} \right)a_{\mathbf{p}}\ket{0}  \\
  & = \frac{\eta_{\mathbf{p}}}{\sqrt{ 2E_{\mathbf{p}} }} \ket{\{ \eta_{\mathbf{k}} \}} 
 \end{align}$$
+
 
 
 
