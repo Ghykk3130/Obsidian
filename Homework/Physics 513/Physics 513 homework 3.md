@@ -221,6 +221,27 @@ $$\begin{align}
  & = \frac{1}{2\sqrt{ \omega_{\mathbf{k}}\omega_{\mathbf{p}} }} (2\pi)^{3}(\omega_{\mathbf{K}}\delta^{3}(\mathbf{k}-\mathbf{p})+\omega_{\mathbf{p}}\delta^{3}(\mathbf{k}-\mathbf{p})) \\
  & = (2\pi)^{3} \delta^{3}(\mathbf{k}-\mathbf{p})
 \end{align}$$
+# Problem 4
+## (a)
 
+We have:
+$$\begin{align}
+a_{\mathbf{p}} \exp\left( \int \frac{d^{3}k}{(2\pi)^{3}} \frac{\eta_{\mathbf{k}}a^{\dagger}_{\mathbf{k}}}{\sqrt{ 2E_{\mathbf{k}} }} \right) &= a_{\mathbf{p}} \sum_{n=0 }^{\infty} \int \frac{d^{3}k_{1}\dots d^{3}k_{n}}{(2\pi)^{3n}} \frac{\eta_{\mathbf{k}_{1}} \dots \eta_{\mathbf{k}_{n}}a^{\dagger}_{\mathbf{k}_{1}}\dots a^{\dagger}_{\mathbf{k}_{n}}}{2^{n /2}\sqrt{ E_{\mathbf{k}_{1}}\dots E_{\mathbf{k}_{n}} }} \frac{1}{n!}
+\end{align}$$
+Observe that:
+$$\begin{align}
+a_{\mathbf{p}} a^{\dagger}_{\mathbf{k}_{1}}\dots a^{\dagger}_{\mathbf{k}_{n}} & = a^{\dagger}_{\mathbf{k}_{1}}a_{\mathbf{p}} a_{\mathbf{k}_{2}}^{\dagger}\dots a^{\dagger}_{\mathbf{k}_{n}}+(2\pi)^{3}\delta(\mathbf{p}-\mathbf{k}_{1})a^{\dagger}_{\mathbf{k}_{2}}\dots a^{\dagger}_{\mathbf{k}_{n}}
+\end{align}$$
+And the second term integrates to:
+$$\begin{align}
+ & \int \frac{d^{3}k_{1}\dots d^{3}k_{n}}{(2\pi)^{3n}} \frac{\eta_{\mathbf{k}_{1}}\dots \eta_{\mathbf{k}_{n}} (2\pi)^{3}\delta(\mathbf{p}-\mathbf{k}_{1}) a^{\dagger}_{\mathbf{k}_{2}}\dots a^{\dagger}_{\mathbf{k}_{n}} }{2^{n /2}\sqrt{ E_{\mathbf{k}_{1}}\dots E_{\mathbf{k}_{n}} }} \frac{1}{n!} \\
+ = &   \frac{\eta_{\mathbf{p}}}{\sqrt{ 2E_{\mathbf{p}} }} \int \frac{d^{3}k_{2}\dots d^{3}k_{n}}{(2\pi)^{3n-3} } \frac{\eta_{\mathbf{k}_{2}}\dots \eta_{\mathbf{k}_{n}}}{2^{(n-1) /2}} \frac{a^{\dagger}_{\mathbf{k}_{2}}\dots a^{\dagger}_{\mathbf{k}_{n}}}{\sqrt{ E_{\mathbf{k}_{2}}\dots E_{\mathbf{k}_{n}}  }} \frac{1}{n!} \\
+ = &  \frac{\eta_{\mathbf{p}}}{\sqrt{ 2E_{\mathbf{p}} }} \left( \int \frac{d^{3}k}{(2\pi)^{3}} \frac{\eta_{\mathbf{k}}a^{\dagger}_{\mathbf{k}}}{\sqrt{ 2E_{\mathbf{k}} }}  \right)^{n-1} \frac{1}{n!}
+\end{align}$$
+Using the same technique, we commute $a_{\mathbf{p}}$ through until the end of the sequence. Since this operation is done $n$ times, we get $n$ terms equal to the expression above. Then we get:
+$$\begin{align}
+ &  a_{\mathbf{p}} \sum_{n=0 }^{\infty} \int \frac{d^{3}k_{1}\dots d^{3}k_{n}}{(2\pi)^{3n}} \frac{\eta_{\mathbf{k}_{1}} \dots \eta_{\mathbf{k}_{n}}a^{\dagger}_{\mathbf{k}_{1}}\dots a^{\dagger}_{\mathbf{k}_{n}}}{2^{n /2}\sqrt{ E_{\mathbf{k}_{1}}\dots E_{\mathbf{k}_{n}} }} \frac{1}{n!} \\
+=  & \sum_{n} \frac{\eta_{\mathbf{p}}}{}
+\end{align}$$
 
 
