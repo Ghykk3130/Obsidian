@@ -253,7 +253,13 @@ a_{\mathbf{p}}\ket{\{ \eta_{\mathbf{k}} \}}  &  = a_{\mathbf{p}}\mathcal{N} \exp
  & = \frac{\eta_{\mathbf{p}}}{\sqrt{ 2E_{\mathbf{p}} }} \mathcal{N} \exp\left(  \int \frac{d^{3}k}{(2\pi)^{3}} \frac{\eta_{\mathbf{k}}a^{\dagger}_{\mathbf{k}}}{\sqrt{ 2E_{\mathbf{k}} }} \right)\ket{0} +\mathcal{N}\exp\left(  \int \frac{d^{3}k}{(2\pi)^{3}} \frac{\eta_{\mathbf{k}}a^{\dagger}_{\mathbf{k}}}{\sqrt{ 2E_{\mathbf{k}} }} \right)a_{\mathbf{p}}\ket{0}  \\
  & = \frac{\eta_{\mathbf{p}}}{\sqrt{ 2E_{\mathbf{p}} }} \ket{\{ \eta_{\mathbf{k}} \}} 
 \end{align}$$
+## (b)
 
+We have:
+$$\begin{align}
+\bra{\{ \eta_{\mathbf{k}} \}}  \{ \eta_{\mathbf{k}} \}\rangle & = \mathcal{N} \bra{0} \exp\left( \int \frac{d^{3}k}{(2\pi)^{3}} \frac{\eta ^{*}_{\mathbf{k}}a_{\mathbf{k}}}{\sqrt{ 2E_{\mathbf{k}} }} \right)\ket{\{ \eta_{\mathbf{k}} \}}  \\
+ & = \mathcal{N}\bra{0} \sum_{n=0}^{\infty} \frac{1}{n!} \int   \frac{d^{3}k_{1}\dots d^{3}k_{n}}{(2\pi)^{3n}} \frac{\eta ^{*}_{\mathbf{k}_{1}}..}{}
+\end{align}$$
 
 
 
