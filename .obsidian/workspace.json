@@ -3371,12 +3371,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Homework/Physics 513/Physics 513 homework 3.md",
+                "file": "Homework/Physics 520/Physics 520 homework 3 problem set.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Physics 513 homework 3"
+              "title": "Physics 520 homework 3 problem set"
             }
           }
         ],
@@ -3449,8 +3449,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200,
-    "collapsed": true
+    "width": 200
   },
   "right": {
     "id": "9003d078f8dbc4ed",
@@ -3566,8 +3565,11 @@
   },
   "active": "bfdef854aeb5d6a1",
   "lastOpenFiles": [
-    "Notes/标量场的正则量子化.md",
+    "Pictures/Pasted image 20260920153458.png",
+    "Homework/Physics 520/Physics 520 homework 2 problem set.md",
+    "Homework/Physics 520/Physics 520 homework 3 problem set.md",
     "Homework/Physics 513/Physics 513 homework 3.md",
+    "Notes/标量场的正则量子化.md",
     "Notes/经典场论.md",
     "Homework/Physics 513/Physics 513 homework 2.md",
     "Notes/Noether定理.md",
@@ -3585,7 +3587,6 @@
     "Notes/Solid state.md",
     "Notes/线性响应与电导率.md",
     "Homework/Physics 520/Physics 520 homework 2.md",
-    "Homework/Physics 520/Physics 520 homework 2 problem set.md",
     "Notes/Lorentz群.md",
     "Homework/Physics 513/Physics 513 homework 1.md",
     "Pictures/bf3540103208f70e17eb809b289a4fa5.jpg",
@@ -3596,12 +3597,10 @@
     "Pictures/e78240a3740c8b20f6494b44479e8163.jpg",
     "Pictures/0e711823ca478af360a8b804b3fcbf96.jpg",
     "Pictures/508b2c80cf79d3418ac9799d61b9aaad.jpg",
-    "Homework/Physics 520/Untitled.md",
     "Pictures/fe8263df5cbac56b02cb4e291f09043f.jpg",
     "Pictures/a5847da500f7c1d936aaa49da07056d6.jpg",
     "Notes/石墨烯的tight-binding模型.md",
     "Homework/Physics 520/Physics 520 homework 1 problem set.md",
-    "Notes/紧束缚模型.md",
     "trace-cookies.txt",
     "max-page-cookies.txt",
     "max-cookies.txt",
