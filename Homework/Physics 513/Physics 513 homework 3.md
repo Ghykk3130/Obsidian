@@ -258,8 +258,26 @@ a_{\mathbf{p}}\ket{\{ \eta_{\mathbf{k}} \}}  &  = a_{\mathbf{p}}\mathcal{N} \exp
 We have:
 $$\begin{align}
 \bra{\{ \eta_{\mathbf{k}} \}}  \{ \eta_{\mathbf{k}} \}\rangle & = \mathcal{N} \bra{0} \exp\left( \int \frac{d^{3}k}{(2\pi)^{3}} \frac{\eta ^{*}_{\mathbf{k}}a_{\mathbf{k}}}{\sqrt{ 2E_{\mathbf{k}} }} \right)\ket{\{ \eta_{\mathbf{k}} \}}  \\
- & = \mathcal{N}\bra{0} \sum_{n=0}^{\infty} \frac{1}{n!} \int   \frac{d^{3}k_{1}\dots d^{3}k_{n}}{(2\pi)^{3n}} \frac{\eta ^{*}_{\mathbf{k}_{1}}..}{}
+ & = \mathcal{N}\bra{0} \sum_{n=0}^{\infty} \frac{1}{n!} \int   \frac{d^{3}k_{1}\dots d^{3}k_{n}}{(2\pi)^{3n}} \frac{\eta ^{*}_{\mathbf{k}_{1}}\dots \eta ^{*}_{\mathbf{k}_{n}}}{2^{n /2}\sqrt{ E_{\mathbf{k}_{1}}\dots E_{\mathbf{k}_{n}} } }a_{\mathbf{k}_{1}}\dots a_{\mathbf{k}_{n}}\ket{\{ \eta_{\mathbf{k}} \}} \\
+ & = \mathcal{N}\bra{0} \{ \eta_{\mathbf{k}} \}\rangle \sum_{n} \frac{1}{n! }  \int \frac{d^{3}k_{1}\dots d^{3}k_{n}}{(2\pi)^{3n}} \frac{|\eta_{\mathbf{k}_{1}}|^{2}\dots|\eta_{\mathbf{k}_{n}}|^{2}}{2^{n}E_{\mathbf{k}_{1}}\dots E_{\mathbf{k}_{n}}} \\
+ & = \mathcal{N}\bra{0} \{ \eta_{\mathbf{k}} \}\rangle  \exp\left( \int \frac{d^{3}k}{(2\pi)^{3}} \frac{|\eta_{\mathbf{k}}|^{2}}{2E_{\mathbf{k}}} \right)
 \end{align}$$
+We can compute:
+$$\begin{align}
+\bra{0} \{ \eta_{\mathbf{k}} \}\rangle & = \bra{0} \mathcal{N} \sum_{n=0}^{\infty} \frac{1}{n!} \int \frac{d^{3}k_{1}\dots d^{3}k_{n}}{(2\pi)^{3n}} \frac{\eta_{\mathbf{k}_{1}}\dots \eta_{\mathbf{k}_{n}}}{2^{n /2}\sqrt{ E_{\mathbf{k}_{1}}\dots E_{\mathbf{k}_{n}} }} a^{\dagger}_{\mathbf{k}_{1}}\dots a^{\dagger}_{\mathbf{k}_{n}}\ket{0} \\
+ & = \mathcal{N}\bra{0} 0\rangle \\
+ & =\mathcal{N}
+\end{align}$$
+This is because in the expansion, if we let $a^{\dagger}_{\mathbf{k}_{1}}$ act on $\bra{0}$ from the right, then it is just $(a_{\mathbf{k}_{1}}\ket{0})^{\dagger}=0$. This is true for all terms in the expansion except for the zeroth term. But the zeroth term is just $\left( \int \frac{d^{3}k}{(2\pi)^{3}} \frac{\eta_{\mathbf{k}}a^{\dagger}_{\mathbf{k}}}{\sqrt{ 2E_{\mathbf{k}} }} \right)^{0}=1$. So we are left with $1 \ket{0}=\ket{0}$ acting on $\bra{0}$ from the right. 
+
+Then:
+$$\begin{align}
+ & \bra{\{ \eta_{\mathbf{k}} \}} \{ \eta_{\mathbf{k}} \}\rangle  = \mathcal{N}^{2} \exp\left( \int \frac{d^{3}k}{(2\pi)^{3}} \frac{|\eta_{\mathbf{k}}|^{2}}{2E_{\mathbf{k}}} \right) =1 \\
+ \implies & \mathcal{N}=\exp\left( - \int \frac{d^{3}k}{(2\pi)^{3}} \frac{|\eta_{\mathbf{k}}|^{2}}{4E_{\mathbf{k}}} \right)
+\end{align}$$
+## (c)
+
+
 
 
 
