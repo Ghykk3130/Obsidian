@@ -241,7 +241,19 @@ $$\begin{align}
 Using the same technique, we commute $a_{\mathbf{p}}$ through until the end of the sequence. Since this operation is done $n$ times, we get $n$ terms equal to the expression above. Then we get:
 $$\begin{align}
  &  a_{\mathbf{p}} \sum_{n=0 }^{\infty} \int \frac{d^{3}k_{1}\dots d^{3}k_{n}}{(2\pi)^{3n}} \frac{\eta_{\mathbf{k}_{1}} \dots \eta_{\mathbf{k}_{n}}a^{\dagger}_{\mathbf{k}_{1}}\dots a^{\dagger}_{\mathbf{k}_{n}}}{2^{n /2}\sqrt{ E_{\mathbf{k}_{1}}\dots E_{\mathbf{k}_{n}} }} \frac{1}{n!} \\
-=  & \sum_{n} \frac{\eta_{\mathbf{p}}}{}
+=  & \sum_{n}\left[n \frac{\eta_{\mathbf{p}}}{\sqrt{ 2E_{\mathbf{p}} }}\left( \int \frac{d^{3}k}{(2\pi)^{3}} \frac{\eta_{\mathbf{k}}a^{\dagger}_{\mathbf{k}}}{\sqrt{ 2E_{\mathbf{k}} }} \right)^{n-1} \frac{1}{n!}+  \int\frac{ d^{3}k_{1}\dots d^{3}k_{n}}{(2\pi)^{3n}} \frac{\eta_{\mathbf{k}_{1}}\dots \eta_{\mathbf{k}_{n}}a^{\dagger}_{\mathbf{k}_{1}}\dots a^{\dagger}_{\mathbf{k}_{n}}a_{\mathbf{p}}}{2^{n /2}\sqrt{ E_{\mathbf{k}_{1}}\dots E_{\mathbf{k}_{n}} }} \frac{1}{n!}\right] \\
+ & = \sum_{n} \frac{\eta_{\mathbf{p}}}{\sqrt{ 2E_{\mathbf{p}} }}\left( \int \frac{d^{3}k}{(2\pi)^{3}} \frac{\eta_{\mathbf{k}}a^{\dagger}_{\mathbf{k}}}{\sqrt{ 2E_{\mathbf{k}} }} \right)^{n-1} \frac{1}{(n-1)!}+ \exp\left(  \int \frac{d^{3}k}{(2\pi)^{3}} \frac{\eta_{\mathbf{k}}a^{\dagger}_{\mathbf{k}}}{\sqrt{ 2E_{\mathbf{k}} }} \right)a_{\mathbf{p}} \\
+ & = \frac{\eta_{\mathbf{p}}}{\sqrt{ 2E_{\mathbf{p}} }}\exp\left(  \int \frac{d^{3}k}{(2\pi)^{3}} \frac{\eta_{\mathbf{k}}a^{\dagger}_{\mathbf{k}}}{\sqrt{ 2E_{\mathbf{k}} }} \right)+ \exp\left(  \int \frac{d^{3}k}{(2\pi)^{3}} \frac{\eta_{\mathbf{k}}a^{\dagger}_{\mathbf{k}}}{\sqrt{ 2E_{\mathbf{k}} }} \right)a_{\mathbf{p}}
 \end{align}$$
+Then:
+$$\left[a_{\mathbf{p}},\exp\left(  \int \frac{d^{3}k}{(2\pi)^{3}} \frac{\eta_{\mathbf{k}}a^{\dagger}_{\mathbf{k}}}{\sqrt{ 2E_{\mathbf{k}} }} \right)\right]= \frac{\eta_{\mathbf{p}}}{\sqrt{ 2E_{\mathbf{p}} }}\exp\left(  \int \frac{d^{3}k}{(2\pi)^{3}} \frac{\eta_{\mathbf{k}}a^{\dagger}_{\mathbf{k}}}{\sqrt{ 2E_{\mathbf{k}} }} \right)$$
+Then:
+$$\begin{align}
+a_{\mathbf{p}}\ket{\{ \eta_{\mathbf{k}} \}}  &  = a_{\mathbf{p}} \exp\left(  \int \frac{d^{3}k}{(2\pi)^{3}} \frac{\eta_{\mathbf{k}}a^{\dagger}_{\mathbf{k}}}{\sqrt{ 2E_{\mathbf{k}} }} \right)\ket{0}  \\
+ & = \frac{\eta_{\mathbf{p}}}{\sqrt{ 2E_{\mathbf{p}} }} \exp\left(  \int \frac{d^{3}k}{(2\pi)^{3}} \frac{\eta_{\mathbf{k}}a^{\dagger}_{\mathbf{k}}}{\sqrt{ 2E_{\mathbf{k}} }} \right)\ket{0} +\exp\left(  \int \frac{d^{3}k}{(2\pi)^{3}} \frac{\eta_{\mathbf{k}}a^{\dagger}_{\mathbf{k}}}{\sqrt{ 2E_{\mathbf{k}} }} \right)a_{\mathbf{p}}\ket{0}  \\
+ & = \frac{\eta_{\mathbf{p}}}{\sqrt{ 2E_{\mathbf{p}} }} \ket{\{ \eta_{\mathbf{k}} \}} 
+\end{align}$$
+
+
 
 
