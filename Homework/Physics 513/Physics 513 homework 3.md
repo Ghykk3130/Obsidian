@@ -37,7 +37,7 @@ $$\begin{align}
 \end{align}$$
 We notice that the solution to $k^{2}-m^{2}$ is given by $k^{0}=\pm \omega_{\mathbf{k}}$. But since $k^{0}\geq{0}$, we have:
 $$\begin{align}
-\delta(k^{2}-m^{2}) & = \frac{\delta(k^{0}-\omega_{\mathbf{k}})}{|\partial k^{2} /\partial k^{0}  |}+ \frac{\delta(k^{0}+\omega_{\mathbf{k}})}{|  \partial rk^{2}  /k^{0} |} \\
+\delta(k^{2}-m^{2}) & = \frac{\delta(k^{0}-\omega_{\mathbf{k}})}{|\partial k^{2} /\partial k^{0}  |}+ \frac{\delta(k^{0}+\omega_{\mathbf{k}})}{|  \partial k^{2}  /k^{0} |} \\
  & = \frac{\delta(k^{0}-\omega_{\mathbf{k}})}{|\partial k^{2} /\partial k^{0} |} \\
  & = \frac{\delta(k^{0}-\omega_{\mathbf{k}})}{2k_{0}|_{k_{0}=\omega_{\mathbf{k}}}} \\
  & = \frac{\delta(k^{0}-\omega_{\mathbf{k}})}{2\omega_{\mathbf{k}}}
@@ -52,13 +52,13 @@ $$\begin{align}
 Say $k^{'\mu}=\Lambda^{\mu}{}_{\nu}k^{\nu}$. Then:
 $$\begin{align}
  &  \int d^{4}k\delta(k^{2}-m^{2})\theta(k^{0})= \int d^{4}k^{'}\delta(k^{'2}-m^{2})\theta(k^{'0}) \\
-\implies & \int_{}d^{3}k \frac{1}{(2\pi)^{3}\omega_{\mathbf{k}}}=\int d^{3}k^{'} \frac{1}{(2\pi)^{3}\omega_{\mathbf{k}^{'}}}
+\implies & \int_{}d^{3}k \frac{1}{(2\pi)^{3}2\omega_{\mathbf{k}}}=\int d^{3}k^{'} \frac{1}{(2\pi)^{3}2\omega_{\mathbf{k}^{'}}}
 \end{align}$$
 It is indeed Lorentz-invariant.
 # Problem 2
 ## (a1)
 
-The lagrangian is $\mathcal{L}= \partial_{\mu}\phi ^{*}\partial^{\mu}\phi-m^{2}\phi^{2}$. Then we have:
+The lagrangian is $\mathcal{L}= \partial_{\mu}\phi ^{*}\partial^{\mu}\phi-m^{2}\phi ^{*}\phi^{}$. Then we have:
 $$\begin{align}
 \pi_{1} & = \frac{\partial\mathcal{L}}{\partial \dot{\phi}}=\dot{\phi}^{*} \\
 \pi_{2} & = \frac{\partial\mathcal{L}}{\partial   \dot{\phi}^{*}}=\dot{\phi}
@@ -84,7 +84,7 @@ $$\begin{align}
 $$\begin{align} [\phi({x}^{'}),\nabla \phi ^{*}({x})\cdot \nabla \phi({x})] & = \phi({x}^{'})\nabla \phi ^{*}({x})\cdot \nabla \phi ({x})-\nabla \phi ^{*}({x})\cdot \nabla \phi({x}) \phi({x}^{'}) \\ & = \nabla \phi ^{*}\cdot \phi \nabla \phi-\nabla \phi ^{*}\cdot (\nabla \phi )\phi \\ & = \nabla \phi ^{*}\cdot (\nabla \phi)\phi-\nabla \phi ^{*}\cdot(\nabla \phi)\phi \\ & = 0 \end{align}$$
 $$\begin{align} [\phi({x}^{'}),\phi ^{*}({x})\phi({x})] & = \phi({x}^{'})\phi ^{*}({x})\phi({x})-\phi ^{*}({x})\phi({x})\phi({x}^{'}) \\ & = \phi ^{*}({x})\phi({x})\phi({x}^{'})-\phi ^{*}({x})\phi({x})\phi({x}^{'}) \\ & =0 \end{align}$$
 Then we have:
-$$\begin{align} [\phi({x}^{'}),H] & = \left[ \phi(x^{'}),\int d^{3}x(\pi ^{*}\pi+\nabla \phi ^{*}\cdot\nabla \phi+m^{2}\phi ^{*}\phi) \right] \\ & = \int d^{3}x([\phi,\pi ^{*}\pi]+[\phi,\nabla \phi ^{*}\cdot \nabla \phi]+m^{2}[\phi,\phi ^{*}\phi]) \\ & = \int d^{3}x i\pi({x})\delta^{3}({\mathbf{x}}^{'}-{\mathbf{x}}) \\ & = i\pi ^{*}({x}^{'}) \end{align}$$
+$$\begin{align} [\phi({x}^{'}),H] & = \left[ \phi(x^{'}),\int d^{3}x(\pi ^{*}\pi+\nabla \phi ^{*}\cdot\nabla \phi+m^{2}\phi ^{*}\phi) \right] \\ & = \int d^{3}x([\phi,\pi ^{*}\pi]+[\phi,\nabla \phi ^{*}\cdot \nabla \phi]+m^{2}[\phi,\phi ^{*}\phi]) \\ & = \int d^{3}x i\pi ^{*}({x})\delta^{3}({\mathbf{x}}^{'}-{\mathbf{x}}) \\ & = i\pi ^{*}({x}^{'}) \end{align}$$
 From Heisenberg's EOM we get:
 $$\partial_{t}\phi=\pi ^{*}\tag{1}$$
 Similarly, we compute:
@@ -99,8 +99,8 @@ The divergence term vanishes because that integral over $\mathbb{R}^{3}$ can be 
 From Heisenberg's EOM we get:
 $$\partial_{t}\pi=\nabla^{2}\phi ^{*}-m^{2}\phi ^{*}\tag{2}$$
 Taking derivative of (1) to get $\partial_{t}^{2}\phi=\partial_{t}\pi ^{*}\implies \partial_{t}\pi=\partial_{t}^{2}\phi ^{*}$. Then equate this with (2) to get:
-$$\partial_{t}^{2}\phi ^{*}=\nabla^{2}\phi ^{*}-m^{2}\phi ^{*}\implies(\Box^{2}+m^{2})\phi ^{*}=0$$
-Similarly, we can also obtain $(\Box^{2}+m^{2})\phi=0$.
+$$\partial_{t}^{2}\phi ^{*}=\nabla^{2}\phi ^{*}-m^{2}\phi ^{*}\implies(\Box^{}+m^{2})\phi ^{*}=0$$
+Similarly, we can also obtain $(\Box^{}+m^{2})\phi=0$.
 ## (b)
 
 Set:
@@ -120,7 +120,7 @@ $$\begin{align}
  & = \int  \frac{d^{3}p}{(2\pi)^{3}} \frac{|\mathbf{p}|^{2}}{2}( a^{\dagger}_{\mathbf{p}}a_{\mathbf{p}}+b_{\mathbf{p}}a_{-\mathbf{p}}e^{-2ip^{0}t}+a^{\dagger}_{\mathbf{p}}b^{\dagger}_{-\mathbf{p}}e^{2ip^{0}t}+b_{\mathbf{p}}b^{\dagger}_{\mathbf{p}})
 \end{align}$$
 $$\begin{align}
-\int d^{3}x m^{2}\phi ^{*}\phi & = \int d^{3}x \frac{d^{3}pd^{3}p^{'}}{(2\pi)^{6} } \frac{1}{2\sqrt{ \omega_{\mathbf{p}}\omega_{\mathbf{p}^{'}} }}( a^{\dagger}_{\mathbf{p}}e^{ip\cdot x}+b_{\mathbf{p}}e^{-ip\cdot x})(a_{\mathbf{p}^{' }}e^{-ip^{'}\cdot x}+ib^{\dagger}_{\mathbf{p}^{'}}e^{ip^{'}\cdot x}) \\
+\int d^{3}x m^{2}\phi ^{*}\phi & = \int d^{3}x \frac{d^{3}pd^{3}p^{'}}{(2\pi)^{6} } \frac{1}{2\sqrt{ \omega_{\mathbf{p}}\omega_{\mathbf{p}^{'}} }}( a^{\dagger}_{\mathbf{p}}e^{ip\cdot x}+b_{\mathbf{p}}e^{-ip\cdot x})(a_{\mathbf{p}^{' }}e^{-ip^{'}\cdot x}+b^{\dagger}_{\mathbf{p}^{'}}e^{ip^{'}\cdot x}) \\
  & = \int \frac{d^{3}p}{(2\pi)^{3}} \frac{m^{2}}{2\omega_{\mathbf{p}}}(a^{\dagger}_{\mathbf{p}}a_{\mathbf{p}}+b^{\dagger}_{\mathbf{p}}a^{\dagger}_{-\mathbf{p}}e^{2ip^{0}t}+a_{\mathbf{p}}b_{-\mathbf{p}}e^{-2ip^{0}t}+b^{\dagger}_{\mathbf{p}}b_{\mathbf{p}})
 \end{align}$$
 Then we have:
@@ -160,8 +160,13 @@ $$\begin{align}
 \int d^{3}x(\phi ^{*}\pi ^{*}-\pi \phi) & = - \frac{i}{2} \int \frac{d^{3}p}{(2\pi)^{3}}(2a^{\dagger}_{\mathbf{p}}a_{\mathbf{p}}-2b_{\mathbf{p}}b^{\dagger}_{\mathbf{p}})
 \end{align}$$
 Then:
-$$Q=\frac{i}{2}\int d^{3}x(\phi ^{*}\pi ^{*}-\pi \phi)= \frac{1}{2}\int \frac{d^{3}p}{(2\pi)^{3}}(a^{\dagger}_{\mathbf{p}}a_{\mathbf{p}}-b_{\mathbf{p}}b^{\dagger}_{\mathbf{p}})$$
-Obviously, the charge carried by the type created by $a^{\dagger}_{\mathbf{p}}$ is $\frac{1}{2}\int \frac{d^{3}p}{(2\pi)^{3}}a^{\dagger}_{\mathbf{p}}a_{\mathbf{p}}$. The charge carried by the type created by $b^{\dagger}_{\mathbf{p}}$ is $-\frac{1}{2}\int \frac{d^{3}p}{(2\pi)^{3}}b^{\dagger}_{\mathbf{p}}b_{\mathbf{p}}$.
+$$\begin{align}
+Q & = \frac{i}{2}\int d^{3}x(\phi ^{*}\pi ^{*}-\pi \phi) \\
+ & = \frac{1}{2}\int \frac{d^{3}p}{(2\pi)^{3}}(a^{\dagger}_{\mathbf{p}}a_{\mathbf{p}}-b_{\mathbf{p}}b^{\dagger}_{\mathbf{p}}) \\
+ 
+ 
+\end{align}$$
+By normal ordering, take $Q= \frac{1}{2}\int \frac{d^{3}p}{(2\pi)^{3}}(a^{\dagger}_{\mathbf{p}}a_{\mathbf{p}}-b^{\dagger}_{\mathbf{p}}b_{\mathbf{p}})$. Obviously, the charge carried by the type created by $a^{\dagger}_{\mathbf{p}}$ is $\frac{1}{2}$. The charge carried by the type created by $b^{\dagger}_{\mathbf{p}}$ is $-\frac{1}{2}$. 
 # Problem 3
 ## (a)
 
@@ -183,7 +188,7 @@ $$\begin{align}
  & = i \int d^{3}x \nabla \cdot(f^{*}\nabla g)-i \int d^{3}x \nabla \cdot(g\nabla f^{*}) \\
  & = 0
 \end{align}$$
-In the second to last line, the two integrals vanish since they are just two boundary terms. 
+In the second to last line, the two integrals vanish since they are just two boundary terms. We assume that $f,g$ vanish on the boundary. 
 ## (b)
 
 We have:
@@ -194,13 +199,13 @@ $$\begin{align}
 \end{align}$$
 Similarly, we have:
 $$\begin{align}
- & \pi_{H}(x)= \int \frac{d^{3}p}{(2\pi)}^{} \left( -i \sqrt{ \frac{\omega_{\mathbf{p}}}{2} }  \right)(a_{\mathbf{p}}e^{-ip\cdot x}-a^{\dagger}_{\mathbf{p}}e^{ip\cdot x}) \\
+ & \pi_{H}(x)= \int \frac{d^{3}p}{(2\pi)^{3}}^{} \left( -i \sqrt{ \frac{\omega_{\mathbf{p}}}{2} }  \right)(a_{\mathbf{p}}e^{-ip\cdot x}-a^{\dagger}_{\mathbf{p}}e^{ip\cdot x}) \\
 \implies & \int d^{3} x e^{-i\mathbf{p}\cdot \mathbf{x}}\pi_{H}(x)= -i \sqrt{ \frac{\omega_{\mathbf{p}}}{2} }(a_{\mathbf{p}}e^{-ip^{'0}t}-a^{\dagger}_{-\mathbf{p}}e^{ip^{'0}t})
 \end{align}$$
 Then it's easy to solve:
 $$\begin{align}
  & a_{\mathbf{p}}e^{-ip^{'0}t}= \frac{1}{2} \int d^{3}x e^{-i\mathbf{p}\cdot \mathbf{x}}\left( \sqrt{ 2\omega_{\mathbf{p}} }\phi_{H}(x)+ i \sqrt{ \frac{2}{\omega_{\mathbf{p}}} }\pi_{H}(x)  \right) \\
-\implies & a_{\mathbf{P}}= \frac{1}{2} \int d^{3}x e^{ip\cdot x}\left( \sqrt{ 2\omega_{\mathbf{p}} }\phi_{H}(x)+i \sqrt{ \frac{2}{\omega_{\mathbf{p}}} }\pi_{H}(x) \right) \\
+\implies & a_{\mathbf{p}}= \frac{1}{2} \int d^{3}x e^{ip\cdot x}\left( \sqrt{ 2\omega_{\mathbf{p}} }\phi_{H}(x)+i \sqrt{ \frac{2}{\omega_{\mathbf{p}}} }\pi_{H}(x) \right) \\
  & =   \int d^{3}x \frac{1}{\sqrt{ 2\omega_{\mathbf{p}} }}( \omega_{\mathbf{p}}\phi_{H}(x)e^{ip\cdot x}+ i \pi_{H}(x)e^{ip\cdot x}) \\
  & = \int d^{3}x \frac{1}{\sqrt{ 2\omega_{\mathbf{p}} }}(-i\phi_{H}(x)\partial_{0}e^{ip\cdot x}+ i e^{ip\cdot x}\partial_{0}\phi_{H}(x)) \\
  & = i \int d^{3}x \frac{1}{\sqrt{ 2\omega_{\mathbf{p}} }}e^{ip\cdot x}  \overset{\leftrightarrow}{\partial_{0}}\phi_{H}(x) \\
@@ -218,7 +223,7 @@ $$\begin{align}
 [a_{\mathbf{k}},a^{\dagger}_{\mathbf{p}}] & = \left[  \frac{1}{\sqrt{ 2\omega_{\mathbf{k}} }}\int d^{3}x (\omega_{\mathbf{k}}\phi_{H}(x)e^{ik\cdot x}+i\pi_{H}(x)e^{ik\cdot x}), \frac{1}{\sqrt{ 2\omega_{\mathbf{p}} }} \int d^{3}x^{'}(\omega_{\mathbf{p}}\phi_{H}(x^{'})e^{-ip\cdot x^{'}}-i\pi_{H}(x^{'})e^{-ip\cdot x^{'}})\right] \\
  & = \frac{1}{2\sqrt{ \omega_{\mathbf{k}}\omega_{\mathbf{p}} }}\int d^{3}x d^{3}x^{'}(-i\omega_{\mathbf{k}}e^{ik\cdot x-ip\cdot x^{'}}[\phi_{H}(x),\pi_{H}(x^{'})]+i\omega_{\mathbf{p}}e^{ik\cdot x-ip\cdot x^{'}}[\pi_{H}(x),\phi_{H}(x^{'})]) \\
  & = \frac{1}{2\sqrt{ \omega_{\mathbf{k}}\omega_{\mathbf{p}} }} \int d^{3}x (\omega_{\mathbf{k}}e^{i(k-p)\cdot {x}}+\omega_{\mathbf{p}}e^{i(k-p)\cdot x}) \\
- & = \frac{1}{2\sqrt{ \omega_{\mathbf{k}}\omega_{\mathbf{p}} }} (2\pi)^{3}(\omega_{\mathbf{K}}\delta^{3}(\mathbf{k}-\mathbf{p})+\omega_{\mathbf{p}}\delta^{3}(\mathbf{k}-\mathbf{p})) \\
+ & = \frac{1}{2\sqrt{ \omega_{\mathbf{k}}\omega_{\mathbf{p}} }} (2\pi)^{3}(\omega_{\mathbf{k}}\delta^{3}(\mathbf{k}-\mathbf{p})+\omega_{\mathbf{p}}\delta^{3}(\mathbf{k}-\mathbf{p})) \\
  & = (2\pi)^{3} \delta^{3}(\mathbf{k}-\mathbf{p})
 \end{align}$$
 # Problem 4
