@@ -286,7 +286,24 @@ $$\begin{align}
 \end{align}$$
 ## (d)
 
+We compute:
+$$\begin{align}
+\bra{\{ \eta_{\mathbf{k}} \}} \int \frac{d^{3}k}{(2\pi)^{3}}a^{\dagger}_{\mathbf{k}}a_{\mathbf{k}}\ket{\{ \eta_{\mathbf{k}} \}}  & = \int \frac{d^{3}k}{(2\pi)^{3}}\bra{\{ \eta_{\mathbf{k}} \}} a^{\dagger}_{\mathbf{k}}a_{\mathbf{k}}\ket{\{ \eta_{\mathbf{k}} \} }  \\
+ & = \int \frac{d^{3}k}{(2\pi)^{3}} \frac{\eta_{\mathbf{k}}^{*}}{\sqrt{ 2E_{\mathbf{k}} }} \frac{\eta_{\mathbf{k}}}{\sqrt{ 2E_{\mathbf{k}} }}\bra{\{ \eta_{\mathbf{k}} \}} \{ \eta_{\mathbf{k}} \}\rangle \\
+ & = \int \frac{d^{3}k}{(2\pi)^{3}} \frac{|\eta_{\mathbf{k}}|^{2}}{2E_{\mathbf{k}}}
+\end{align}$$
+## (e)
 
+Clearly:
+$$\begin{align}
+\langle (N- \bar{N})^{2}\rangle & = \langle N^{2}-2N  \bar{N}+  \bar{N}^{2}\rangle \\
+ & = \langle N^{2}\rangle- \bar{N}^{2}
+\end{align}$$
+We compute:
+$$\begin{align}
+\langle N^{2}\rangle & = \bra{\{ \eta_{\mathbf{k}} \}} \int \frac{d^{3}kd^{3}p}{(2\pi)^{6}} a_{\mathbf{k}}^{\dagger}a_{\mathbf{k}}a^{\dagger}_{\mathbf{p}}a_{\mathbf{p}}\ket{\{ \eta_{\mathbf{p}} \}}  \\
+ & = \bra{\{ \eta_{\mathbf{k}} \}} \left(\int \frac{d^{3}kd^{3}p }{(2\pi)^{6} }a^{\dagger}_{\mathbf{k}}a^{\dagger}_{\mathbf{p}}a_{\mathbf{k}}a_{\mathbf{p}}+ \int \frac{d^{3}kd^{3}p}{(2\pi)^{6}}a^{\dagger}_{\mathbf{k}}a_{\mathbf{p}}(2\pi)^{3}\delta(\mathbf{k}-\mathbf{p})\right) 
+\end{align}$$
 
 
 
