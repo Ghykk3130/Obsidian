@@ -56,6 +56,31 @@ Clearly, the radius is scaled with a factor $\frac{\hbar}{eB}$.
 Let $\mathbf{B}=B \hat{\mathbf{z}}$. Choose the Landau gauge so that $\mathbf{A}=xB \hat{\mathbf{y}}$. Then:
 $$\begin{align}
 H & = \frac{|\mathbf{p}-exB \hat{\mathbf{y}}|^{2}}{2m_{e}} \\
+ & = \frac{1}{2m_{e}}(p_{x}^{2}+(p_{y}-exB)^{2})
+\end{align}$$
+Observe that :
+$$\begin{align}
+[p_{y},H] =0
+\end{align}$$
+Then write the eigenstate as $\psi(\mathbf{r})= e^{ik_{y}y}f(x)$. Then:
+$$\begin{align}
+ & \frac{1}{2m_{e}}(p_{x}^{2}+(p_{y}-exB)^{2})e^{ik_{y}y}f(x)=E e^{ik_{y}y}f(x) \\
+\implies & \frac{1}{2m_{e}}(\hbar k_{y}-exB)^{2}e^{ik_{y}y}f+ e^{ik_{y}y} \frac{1}{2m_{e}}p_{x}^{2}f=E e^{ik_{y}y}f \\
+\implies & \left[  \frac{p_{x}^{2}}{2m_{e}}+ \frac{1}{2} \frac{(\hbar k_{y}-exB)^{2}}{m_{e}} \right]f=Ef
+\end{align}$$
+Observe that $\frac{p_{x}^{2}}{2m_{e}}+ \frac{1}{2} \frac{(\hbar k_{y}-exB)^{2}}{m_{e}}$ is just the hamiltonian of a harmonic oscillator centered at $x_{0}= \frac{\hbar k_{y}}{eB}$ with angular frequency $\omega_{c}= \frac{eB}{m_{e}}$. Then we obtain the spectrum:
+$$\begin{align}
+E_{n}= \left( n+ \frac{1}{2} \right)\hbar \frac{eB}{m_{e}}
+\end{align}$$
+## (b)
+
+
+
+## (c)
+
+Let $\mathbf{B}=B \hat{\mathbf{z}}$. Choose the Landau gauge so that $\mathbf{A}=xB \hat{\mathbf{y}}$. Then:
+$$\begin{align}
+H & = \frac{|\mathbf{p}-exB \hat{\mathbf{y}}|^{2}}{2m_{e}} \\
  & = \frac{1}{2m_{e}}(p_{x}^{2}+p_{z}^{2}+(p_{y}-exB)^{2})
 \end{align}$$
 Observe that :
@@ -72,5 +97,4 @@ Observe that $\frac{p_{x}^{2}}{2m_{e}}+ \frac{1}{2} \frac{(\hbar k_{y}-exB)^{2}}
 $$\begin{align}
 E_{n,k_{z}}= \left( n+ \frac{1}{2} \right)\hbar \frac{eB}{m_{e}}+ \frac{\hbar^{2}k_{z}^{2}}{2m_{e}}
 \end{align}$$
-## (b)
 
