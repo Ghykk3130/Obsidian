@@ -85,4 +85,11 @@ $$\begin{align}
 \end{align}$$
 令$A(0,k_{z})= \frac{2\pi|e|B}{\hbar}\gamma,\ \gamma<1$。我们有：
 $$\boxed{A(l,k_{z})= \frac{2\pi|e|B}{\hbar}(l+\gamma)}$$
+# 3. Degeneracy
+
+考虑二维系统。我们可以获得一个Landau tube中的态数。我们有：
+$$\delta A=A(l+1)-A(l)= \frac{2\pi|e|B}{\hbar}$$
+故：
+$$\delta N= \frac{\delta A}{(2\pi /L)^{2}}= \frac{|e|B}{h} L^{2}$$
+
 
