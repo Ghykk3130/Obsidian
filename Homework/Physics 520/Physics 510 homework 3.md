@@ -55,8 +55,8 @@ Clearly, the radius is scaled with a factor $\frac{\hbar}{eB}$.
 
 Let $\mathbf{B}=B \hat{\mathbf{z}}$. Choose the Landau gauge so that $\mathbf{A}=xB \hat{\mathbf{y}}$. Then:
 $$\begin{align}
-H & = \frac{|\mathbf{p}-exB \hat{\mathbf{y}}|^{2}}{2m_{e}} \\
- & = \frac{1}{2m_{e}}(p_{x}^{2}+(p_{y}-exB)^{2})
+H & = \frac{|\mathbf{p}+exB \hat{\mathbf{y}}|^{2}}{2m_{e}} \\
+ & = \frac{1}{2m_{e}}(p_{x}^{2}+(p_{y}+exB)^{2})
 \end{align}$$
 Observe that :
 $$\begin{align}
@@ -64,14 +64,16 @@ $$\begin{align}
 \end{align}$$
 Then write the eigenstate as $\psi(\mathbf{r})= e^{ik_{y}y}f(x)$. Then:
 $$\begin{align}
- & \frac{1}{2m_{e}}(p_{x}^{2}+(p_{y}-exB)^{2})e^{ik_{y}y}f(x)=E e^{ik_{y}y}f(x) \\
-\implies & \frac{1}{2m_{e}}(\hbar k_{y}-exB)^{2}e^{ik_{y}y}f+ e^{ik_{y}y} \frac{1}{2m_{e}}p_{x}^{2}f=E e^{ik_{y}y}f \\
-\implies & \left[  \frac{p_{x}^{2}}{2m_{e}}+ \frac{1}{2} \frac{(\hbar k_{y}-exB)^{2}}{m_{e}} \right]f=Ef
+ & \frac{1}{2m_{e}}(p_{x}^{2}+(p_{y}+exB)^{2})e^{ik_{y}y}f(x)=E e^{ik_{y}y}f(x) \\
+\implies & \frac{1}{2m_{e}}(\hbar k_{y}+exB)^{2}e^{ik_{y}y}f+ e^{ik_{y}y} \frac{1}{2m_{e}}p_{x}^{2}f=E e^{ik_{y}y}f \\
+\implies & \left[  \frac{p_{x}^{2}}{2m_{e}}+ \frac{1}{2} \frac{(\hbar k_{y}+exB)^{2}}{m_{e}} \right]f=Ef
 \end{align}$$
-Observe that $\frac{p_{x}^{2}}{2m_{e}}+ \frac{1}{2} \frac{(\hbar k_{y}-exB)^{2}}{m_{e}}$ is just the hamiltonian of a harmonic oscillator centered at $x_{0}= \frac{\hbar k_{y}}{eB}$ with angular frequency $\omega_{c}= \frac{eB}{m_{e}}$. Then we obtain the spectrum:
+Observe that $\frac{p_{x}^{2}}{2m_{e}}+ \frac{1}{2} \frac{(\hbar k_{y}+exB)^{2}}{m_{e}}$ is just the hamiltonian of a harmonic oscillator centered at $x_{0}=- \frac{\hbar k_{y}}{eB}$ with angular frequency $\omega_{c}= \frac{eB}{m_{e}}$. Then we obtain the spectrum:
 $$\begin{align}
 E_{n}= \left( n+ \frac{1}{2} \right)\hbar \frac{eB}{m_{e}}
 \end{align}$$
+固定$n$，我们发现简并度完全来自于$k_{y}$。由于$k_{y}= \frac{2\pi n_{y}}{L_{y}}$，要将$k_{y}$限制在FBZ，则$n_{y}\sim L_{y}$。
+
 ## (b)
 
 
@@ -80,8 +82,8 @@ E_{n}= \left( n+ \frac{1}{2} \right)\hbar \frac{eB}{m_{e}}
 
 Let $\mathbf{B}=B \hat{\mathbf{z}}$. Choose the Landau gauge so that $\mathbf{A}=xB \hat{\mathbf{y}}$. Then:
 $$\begin{align}
-H & = \frac{|\mathbf{p}-exB \hat{\mathbf{y}}|^{2}}{2m_{e}} \\
- & = \frac{1}{2m_{e}}(p_{x}^{2}+p_{z}^{2}+(p_{y}-exB)^{2})
+H & = \frac{|\mathbf{p}+exB \hat{\mathbf{y}}|^{2}}{2m_{e}} \\
+ & = \frac{1}{2m_{e}}(p_{x}^{2}+p_{z}^{2}+(p_{y}+exB)^{2})
 \end{align}$$
 Observe that :
 $$\begin{align}
@@ -89,11 +91,11 @@ $$\begin{align}
 \end{align}$$
 Then write the eigenstate as $\psi(\mathbf{r})= e^{ik_{y}y+ik_{z}z}f(x)$. Then:
 $$\begin{align}
- & \frac{1}{2m_{e}}(p_{x}^{2}+p_{z}^{2}+(p_{y}-exB)^{2})e^{ik_{y}y+ik_{z}z}f(x)=E e^{ik_{y}y+ik_{z}z}f(x) \\
-\implies & \frac{1}{2m_{e}}(\hbar^{2}k_{z}^{2}+(\hbar k_{y}-exB)^{2})e^{ik_{y}y+ik_{z}z}f+ e^{ik_{y}y+ik_{z}z} \frac{1}{2m_{e}}p_{x}^{2}f=E e^{ik_{y}y+ik_{z}z}f \\
-\implies & \left[  \frac{p_{x}^{2}}{2m_{e}}+  \frac{\hbar^{2}k_{z}^{2}}{2m_{e}}+ \frac{1}{2} \frac{(\hbar k_{y}-exB)^{2}}{m_{e}} \right]f=Ef
+ & \frac{1}{2m_{e}}(p_{x}^{2}+p_{z}^{2}+(p_{y}+exB)^{2})e^{ik_{y}y+ik_{z}z}f(x)=E e^{ik_{y}y+ik_{z}z}f(x) \\
+\implies & \frac{1}{2m_{e}}(\hbar^{2}k_{z}^{2}+(\hbar k_{y}+exB)^{2})e^{ik_{y}y+ik_{z}z}f+ e^{ik_{y}y+ik_{z}z} \frac{1}{2m_{e}}p_{x}^{2}f=E e^{ik_{y}y+ik_{z}z}f \\
+\implies & \left[  \frac{p_{x}^{2}}{2m_{e}}+  \frac{\hbar^{2}k_{z}^{2}}{2m_{e}}+ \frac{1}{2} \frac{(\hbar k_{y}+exB)^{2}}{m_{e}} \right]f=Ef
 \end{align}$$
-Observe that $\frac{p_{x}^{2}}{2m_{e}}+ \frac{1}{2} \frac{(\hbar k_{y}-exB)^{2}}{m_{e}}$ is just the hamiltonian of a harmonic oscillator centered at $x_{0}= \frac{\hbar k_{y}}{eB}$ with angular frequency $\omega_{c}= \frac{eB}{m_{e}}$. Then we obtain the spectrum:
+Observe that $\frac{p_{x}^{2}}{2m_{e}}+ \frac{1}{2} \frac{(\hbar k_{y}+exB)^{2}}{m_{e}}$ is just the hamiltonian of a harmonic oscillator centered at $x_{0}= -\frac{\hbar k_{y}}{eB}$ with angular frequency $\omega_{c}= \frac{eB}{m_{e}}$. Then we obtain the spectrum:
 $$\begin{align}
 E_{n,k_{z}}= \left( n+ \frac{1}{2} \right)\hbar \frac{eB}{m_{e}}+ \frac{\hbar^{2}k_{z}^{2}}{2m_{e}}
 \end{align}$$
