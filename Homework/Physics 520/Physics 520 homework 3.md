@@ -72,7 +72,7 @@ Observe that $\frac{p_{x}^{2}}{2m_{e}}+ \frac{1}{2} \frac{(\hbar k_{y}+exB)^{2}}
 $$\begin{align}
 E_{n}= \left( n+ \frac{1}{2} \right)\hbar \frac{eB}{m_{e}}
 \end{align}$$
-固定$n$，我们发现简并度完全来自于$k_{y}$。由于$k_{y}= \frac{2\pi n_{y}}{L_{y}}$，要将$k_{y}$限制在FBZ，则$n_{y}\sim L_{y}$。
+
 
 ## (b)
 

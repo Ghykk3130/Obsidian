@@ -3413,12 +3413,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Homework/Physics 520/Physics 520 homework 2 problem set.md",
+                "file": "Notes/Landau量子化.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Physics 520 homework 2 problem set"
+              "title": "Landau量子化"
             }
           }
         ],
@@ -3476,12 +3476,12 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "半经典输运",
+                "query": "磁场",
                 "matchingCase": true,
                 "explainSearch": false,
                 "collapseAll": false,
                 "extraContext": false,
-                "sortOrder": "alphabetical"
+                "sortOrder": "byCreatedTime"
               },
               "icon": "lucide-search",
               "title": "Search"
@@ -3605,23 +3605,24 @@
       "obsidian-shellcommands:Shell commands: Custom variables": false
     }
   },
-  "active": "93a12e7e656fe3b8",
+  "active": "0bd5adf6a54a04e2",
   "lastOpenFiles": [
+    "Notes/半经典输运2.md",
+    "Homework/Physics 520/Physics 520 homework 3.md",
+    "Notes/AB效应.md",
+    "Homework/Physics 520/Physics 520 homework 2 problem set.md",
     "Homework/Physics 520/Physics 520 homework 3 problem set.md",
-    "Homework/Physics 520/Physics 510 homework 3.md",
-    "Notes/磁场微扰下的能带.md",
+    "Notes/Landau量子化.md",
     "Pictures/Pasted image 20260921114441.png",
     "Pictures/Pasted image 20260921113556.png",
     "Pictures/Pasted image 20260921111906.png",
     "Notes/Heisenberg交换.md",
     "Homework/Physics 520/Physics 520 homework 0.md",
-    "Homework/Physics 520/Physics 520 homework 2 problem set.md",
     "Pictures/Pasted image 20260920194708.png",
     "Homework/Physics 520/Physics 520 homework 1.md",
     "Homework/Physics 520/Physics 520 homework 1 problem set.md",
     "Homework/Physics 520/Physics 520 homework 2.md",
     "Homework/Physics 513/Physics 513 homework 3.md",
-    "Notes/半经典输运2.md",
     "Notes/DFT.md",
     "Notes/Dirac cone的输运贡献.md",
     "Pictures/Pasted image 20260920153458.png",
