@@ -136,4 +136,20 @@ $$\begin{align}
  & = \frac{2eB}{\pi h}V \sum_{n} \frac{\Theta(E-E_{n})}{\hbar \sqrt{ \frac{2}{m_{e}}(E-E_{n}) }} \\
  & = \frac{2eB}{h^{2}}\sqrt{ 2m_{e} }V \sum_{n} \frac{\Theta\left( E-\left( n+ \frac{1}{2}\hbar \omega_{c} \right) \right)}{\sqrt{ E-\left( n+ \frac{1}{2}\hbar \omega_{c} \right) }}
 \end{align}$$
+# Problem 3
+
+The reason why there are two frequencies observed is because all the Bellies have the same area, and all the necks have the same area. Therefore overall they give two distinct oscillation frequencies.
+
+Know that the each extremal orbit corresponds to a period given by:
+$$\Delta\left(  \frac{1}{B} \right)= \frac{2\pi e}{h} \frac{1}{A_{F}}$$
+By direct counting, we find that the ratio between the shorter period and the longer period is $\frac{1}{52}$. The shorter period corresponds to a larger extremal orbit, which should be the Belly. The longer period corresponds to  a shorter extremal orbit, which should be the neck. Then the radius ratio between the neck and the belly should be $\sqrt{ 52 }$. 
+# Problem 4
+
+To deduce property (a), we rotate $\mathbf{B}$ around to detect the oscillation frequency for all angles. If the frequency keeps the same, then we know that the extremal orbits have the same area. Then the Fermi surface is isotropic and therefore spherical. 
+
+To deduce property (b), we first take the oscillation frequency $F$, and calculate:
+$$\begin{align}
+ & \frac{1}{F}= \frac{2\pi e}{h} \frac{1}{A_{F}}= \frac{2\pi e}{h} \frac{1}{\pi k_{F}^{2}} \\
+\implies & k_{F}= \sqrt{  \frac{2eF}{h} }
+\end{align}$$
 
