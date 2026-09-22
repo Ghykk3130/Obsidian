@@ -120,4 +120,20 @@ Observe that $\frac{p_{x}^{2}}{2m_{e}}+ \frac{1}{2} \frac{(\hbar k_{y}+exB)^{2}}
 $$\begin{align}
 E(n,k_{z})= \left( n+ \frac{1}{2} \right)\hbar \frac{eB}{m_{e}}+ \frac{\hbar^{2}k_{z}^{2}}{2m_{e}}
 \end{align}$$
+To obtain the DOS, we first argue that if we fix $n,k_{z}$, we get a Landau level $\left( n+ \frac{1}{2} \right)\hbar \omega_{c}+ \frac{\hbar^{2}k_{z}^{2}}{2m_{e}}$. The number of states contained in this level is just $2 \frac{eB}{h}L^{2}$, same as 2D, since if $k_{z}$ is fixed, we are essentially sweeping in 2D. As $E$ moves across this level when we adjust it by $dE$, the number of states requires is therefore $2 \frac{eB}{h}L^{2}$. Then:
+$$\begin{align}
+\rho(E) & = 2 \frac{eB}{h}L^{2} \sum_{n,k_{z}}\delta\left( E- E_{n}- \frac{\hbar^{2}k_{z}^{2}}{2m_{e}} \right),\ E_{n}= \left(  n+ \frac{1}{2} \right)\hbar \omega_{c} \\
+ & = 2 \frac{eB}{h}L^{2} \sum_{n} \frac{L}{2\pi}\int_{-\infty}^{\infty} dk_{z}\delta\left( E-E_{n}- \frac{\hbar^{2}k_{z}^{2}}{2m_{e}} \right)\text{, as we take the thermodynamic limit} \\
+\end{align}$$
+Since:
+$$\begin{align}
+\delta\left( E-E_{n}- \frac{\hbar^{2}k_{z}^{2}}{2m_{e}} \right) & =  \left[\frac{\delta\left( k_{z}- \sqrt{ \frac{2m_{e}}{\hbar^{2}}(E-E_{n}) } \right)}{\left| \frac{\partial}{\partial k_{z}} \frac{\hbar^{2}}{2m_{e}}k_{z}^{2} \right|}+ \frac{\delta\left( k_{z}+ \sqrt{ \frac{2m_{e}}{\hbar^{2}}(E-E_{n}) } \right)}{\left| \frac{\partial}{\partial k_{z}} \frac{\hbar^{2}}{2m_{e}}k_{z}^{2} \right|}\right]\Theta(E-E_{n})  \\
+ & = \frac{1}{\hbar \sqrt{  \frac{2}{m_{e}} }(E-E_{n})}\left( \delta\left( k_{z}- \sqrt{  \frac{2m_{e}}{\hbar^{2}}(E-E_{n}) } \right)+ \delta\left( k_{z}+ \sqrt{  \frac{2m_{e}}{\hbar^{2}}(E-E_{n}) } \right) \right)\Theta(E-E_{n})
+\end{align}$$
+The Heaviside function is just to ensure that $k_{z}$ has real solutions. Then:
+$$\begin{align}
+\rho(E) & = \frac{2eB}{2\pi h}V \sum_{n} \int_{-\infty}^{\infty} \frac{1}{\hbar \sqrt{  \frac{2}{m_{e}} }(E-E_{n})}\left( \delta\left( k_{z}- \sqrt{  \frac{2m_{e}}{\hbar^{2}}(E-E_{n}) } \right)+ \delta\left( k_{z}+ \sqrt{  \frac{2m_{e}}{\hbar^{2}}(E-E_{n}) } \right) \right)\Theta(E-E_{n}) \\
+ & = \frac{2eB}{\pi h}V \sum_{n} \frac{\Theta(E-E_{n})}{\hbar \sqrt{ \frac{2}{m_{e}}(E-E_{n}) }} \\
+ & = \frac{2eB}{h^{2}}\sqrt{ 2m_{e} }V \sum_{n} \frac{\Theta\left( E-\left( n+ \frac{1}{2}\hbar \omega_{c} \right) \right)}{\sqrt{ E-\left( n+ \frac{1}{2}\hbar \omega_{c} \right) }}
+\end{align}$$
 
