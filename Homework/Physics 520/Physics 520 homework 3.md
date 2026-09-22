@@ -204,8 +204,10 @@ $$\begin{align}
 We calculate:
 $$\begin{align}
 \frac{df}{d \eta} & = \frac{-1}{(e^{\eta}+1)^{2}}e^{\eta} \\
- & = \frac{-1}{e^{\eta}+e^{-\eta}+2} \\
- & = - \frac{1}{2} \frac{1}{1+\cosh \eta}
+  & = \frac{-1}{(e^{\eta /2}+e^{-\eta /2})^{2}} \\
+ & = - \frac{1}{4} \frac{1}{\cosh ^{2}( \eta /2)}
 \end{align}$$
+
+
 
 
