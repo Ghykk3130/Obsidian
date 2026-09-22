@@ -141,7 +141,7 @@ $$\begin{align}
 The reason why there are two frequencies observed is because all the Bellies have the same area, and all the necks have the same area. Therefore overall they give two distinct oscillation frequencies.
 
 Know that the each extremal orbit corresponds to a period given by:
-$$\Delta\left(  \frac{1}{B} \right)= \frac{2\pi e}{h} \frac{1}{A_{F}}$$
+$$\Delta\left(  \frac{1}{B} \right)= \frac{2\pi e}{\hbar} \frac{1}{A_{F}}$$
 By direct counting, we find that the ratio between the shorter period and the longer period is $\frac{1}{52}$. The shorter period corresponds to a larger extremal orbit, which should be the Belly. The longer period corresponds to  a shorter extremal orbit, which should be the neck. Then the radius ratio between the neck and the belly should be $\sqrt{ 52 }$. 
 # Problem 4
 
@@ -149,15 +149,23 @@ To deduce property (a), we rotate $\mathbf{B}$ around to detect the oscillation 
 
 To deduce property (b), we first take the oscillation frequency $F$, and calculate:
 $$\begin{align}
- & \frac{1}{F}= \frac{2\pi e}{h} \frac{1}{A_{F}}= \frac{2\pi e}{h} \frac{1}{\pi k_{F}^{2}} \\
-\implies & k_{F}= \sqrt{  \frac{2eF}{h} }
+ & \frac{1}{F}= \frac{2\pi e}{\hbar} \frac{1}{A_{F}}= \frac{2\pi e}{\hbar} \frac{1}{\pi k_{F}^{2}} \\
+\implies & k_{F}= \sqrt{  \frac{2eF}{\hbar} }
 \end{align}$$
 
 We calculate the frequency:
 $$\begin{align}
-F & = \frac{hk_{F}^{2}}{2e} \\
- & = \frac{6.628 \times 10^{-34} \times(9.1\times 10^{9})^{2}}{ 2 \times 1.6 \times 10^{-19}}\ T \\
- & \approx 17150\ T
+F & = \frac{\hbar k_{F}^{2}}{2e} \\
+ & = \frac{ \frac{6.628}{6.28} \times 10^{-34} \times(9.1\times 10^{9})^{2}}{ 2 \times 1.6 \times 10^{-19}}\ T \\
+ & \approx 2730.89\ T
+\end{align}$$
+We calculate the electron density:
+$$\begin{align}
+n & = \frac{N}{V} \\
+ & = \frac{1}{V} \frac{\frac{4}{3}\pi k_{F}^{3}}{(2\pi /L)^{3}}\cdot 2 \\
+ & = \frac{1}{3} \frac{k_{F}^{3}}{\pi^{2}} \\
+ & = \frac{1}{3} \times \frac{1}{3.14^{2}}\times(9.1 \times 10^{9})^{3} \\
+ & \approx 2.55 \times 10 ^{28}\ m^{-3}
 \end{align}$$
 We calculate the Fermi energy:
 $$\begin{align}
