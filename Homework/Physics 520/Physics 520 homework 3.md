@@ -153,3 +153,17 @@ $$\begin{align}
 \implies & k_{F}= \sqrt{  \frac{2eF}{h} }
 \end{align}$$
 
+We calculate the frequency:
+$$\begin{align}
+F & = \frac{hk_{F}^{2}}{2e} \\
+ & = \frac{6.628 \times 10^{-34} \times(9.1\times 10^{9})^{2}}{ 2 \times 1.6 \times 10^{-19}}\ T \\
+ & \approx 17150\ T
+\end{align}$$
+We calculate the Fermi energy:
+$$\begin{align}
+\epsilon_{F} & = \frac{\hbar^{2}k_{F}^{2}}{2m^{*}} \\
+ & = \frac{\left( \frac{6.628}{6.28}\times 10^{-34} \right)^{2}\times(9.1\times 10^{9})^{2}}{2 \times 1.3 \times 9.1 \times 10^{-31}}\ J \\
+ & \approx 1.43 \times 10^{-18}\ J
+\end{align}$$
+
+
