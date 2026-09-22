@@ -85,6 +85,21 @@ $$\begin{align}
 \end{align}$$
 令$A(0,k_{z})= \frac{2\pi|e|B}{\hbar}\gamma,\ \gamma<1$。我们有：
 $$\boxed{A(l,k_{z})= \frac{2\pi|e|B}{\hbar}(l+\gamma)}$$
+考虑我们增大磁场，使得$B_{l}$时第$l$个Landau level穿过$\epsilon_{F}$，$B_{l+1}$时第$l+1$个Landau level穿过$\epsilon_{F}$。令$A_{F}$为$k_{z}$处费米面截面面积。那么：
+$$\begin{align}
+ & A_{F}  = A(l,k_{z},B_{l})= \frac{2\pi|e|B_{l}}{\hbar }(l+\gamma) \\
+  & A_{F}=A(l+1,k_{z},B_{l+1})= \frac{2\pi|e|B_{l+1}}{\hbar}(l+1+\gamma) \\
+\implies & \frac{1}{B_{l+1}}- \frac{1}{B_{l}}= \frac{2\pi e}{\hbar} \frac{1}{A_{F}} \\
+\implies & \boxed{\Delta\left(  \frac{1}{B} \right)= \frac{2\pi |e|}{\hbar} \frac{1}{A_{F}}}
+\end{align}$$
+故轨道越大，震荡周期越短。类似地，我们还有：
+$$\begin{align}
+ & \epsilon_{F}= \left(  l+ \frac{1}{2} \right)\hbar \frac{eB_{l}}{m} \\
+ & \epsilon_{F}=\left( l+1+ \frac{1}{2} \right) \hbar \frac{eB_{l+1}}{m} \\
+\implies & \Delta\left(  \frac{1}{B} \right)= \frac{|e|\hbar}{m\epsilon_{F}}
+\end{align}$$
+对应频率$F= \frac{1}{\Delta}= \frac{m\epsilon_{F}}{|e|\hbar}$。所以物理量的震荡部分常常写成$\sim \cos\left(  \frac{2\pi m\epsilon_{F}}{|e|\hbar} \frac{1}{B}+\varphi \right)= \cos\left(  \frac{2\pi \epsilon_{F}}{\hbar \omega_{c}}+\varphi \right)$。
+
 # 3. Degeneracy
 
 考虑二维系统。我们可以获得一个Landau tube中的态数。我们有：
@@ -92,4 +107,27 @@ $$\delta A=A(l+1)-A(l)= \frac{2\pi|e|B}{\hbar}$$
 故：
 $$\delta N= \frac{\delta A}{(2\pi /L)^{2}}= \frac{|e|B}{h} L^{2}$$
 
+
+
+我们知道态密度为：
+$$\boxed{\rho(E)= 2 \frac{eBL^{2}}{h}\sum_{n}\delta\left( E- \left(  \frac{1}{2}+n \right)\hbar \omega_{c} \right)}$$
+# 4. LK公式
+
+考虑一个物理量$\mathcal{O}(E)$。在零温下，我们假设态密度的震荡由$\rho \propto\cos\left(  \frac{2\pi\epsilon_{F}}{\hbar \omega_{c}}+\varphi \right)$给出，即$\rho=\tilde{\rho}(E) \cos\left(  \frac{2\pi\epsilon_{F}}{\hbar \omega_{c}}+\varphi \right)$。令$a(E)=\mathcal{O}(E)  \tilde{\rho}(E)$。那么这个物理量的平均为：
+$$\begin{align}
+\langle \mathcal{O}\rangle(T=0,\epsilon_{F}) & = \int_{-\infty}^{\infty}dE \rho(E)\mathcal{O}(E) \theta(E-\epsilon_{F}) \\
+ & = \int_{\epsilon_{F}}^{\infty}dE a(E)\cos\left(  \frac{2\pi\epsilon_{F}}{\hbar \omega_{c}}+\varphi \right)
+\end{align}$$
+在有限温度下，注意到：
+$$\begin{align}
+\int_{-\infty}^{\infty}dE\left( - \frac{\partial f}{\partial E} \right)\theta(E-E^{'}) & = \left[ - \frac{\partial f}{\partial E}\theta(E-\epsilon_{F}) \right]_{-\infty}^{\infty}+ \int_{-\infty}^{\infty} dEf \delta(E-E^{'}) \\
+ & = f(E^{'})
+\end{align}$$
+故在有限温度下：
+$$\begin{align}
+\langle \mathcal{O}\rangle (T,\epsilon_{F}) & = \int_{-\infty}^{\infty}dE a(E)\cos\left(  \frac{2\pi\epsilon_{F}}{\hbar \omega_{c}}+\varphi \right)f(E) \\
+ & = \int_{}dE dE^{'}a(E)\cos\left(  \frac{2\pi\epsilon_{F}}{\hbar \omega_{c}}+\varphi \right)\left( - \frac{\partial f}{\partial E^{'}} \right)\theta(E^{'}-E) \\
+ & = \int dE^{'}  \frac{\partial f}{\partial E^{'}}\int dE a(E)\cos\left(  \frac{2\pi\epsilon_{F}}{\hbar \omega_{c}}+\varphi \right) \theta(E-E^{'}) \\
+ & = \int dE^{'} \frac{\partial f}{\partial E^{'}} \langle \mathcal{O}\rangle(T=0,E^{'})
+\end{align}$$
 

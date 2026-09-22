@@ -3491,8 +3491,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200,
-    "collapsed": true
+    "width": 200
   },
   "right": {
     "id": "9003d078f8dbc4ed",
@@ -3609,9 +3608,12 @@
   "active": "93a12e7e656fe3b8",
   "lastOpenFiles": [
     "Homework/Physics 520/Physics 520 homework 3 problem set.md",
-    "Pictures/Pasted image 20260921220921.png",
+    "Pictures/Pasted image 20260922002647.png",
+    "Pictures/Pasted image 20260922002623.png",
     "Homework/Physics 520/Physics 520 homework 3.md",
     "Notes/Landau量子化.md",
+    "Notes/Fourier变换.md",
+    "Pictures/Pasted image 20260921220921.png",
     "Homework/Physics 520/Physics 520 homework 1.md",
     "Homework/Physics 520/Physics 520 homework 1 problem set.md",
     "Notes/半经典输运2.md",
@@ -3638,11 +3640,8 @@
     "Notes/热力学平衡.md",
     "Notes/理想经典气体，玻色气体与费米气体.md",
     "Notes/生成湮灭算符与角动量.md",
-    "Notes/自由电子气磁性.md",
     "Pictures/bf3540103208f70e17eb809b289a4fa5.jpg",
     "Pictures/b8dc30937e6df70f00830668d26a2180.jpg",
-    "Pictures/4cfb9e8f8a7ee939439ab908c0e40a83.jpg",
-    "Pictures/966c66f45a73572375ad6f7a7180ea17 1.jpg",
     "trace-cookies.txt",
     "max-page-cookies.txt",
     "max-cookies.txt",

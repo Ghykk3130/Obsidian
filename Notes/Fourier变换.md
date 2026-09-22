@@ -34,7 +34,7 @@ $$\begin{align}
 接下来：
 
 >[!Success] Proposition 1.1
-$$\lim_{ N \to \infty } D_{N}(x)=\sum_{m}2\pi\delta(x-2\pi m)$$
+$$\lim_{ N \to \infty } D_{N}(x)= \sum_{n=-\infty}^{\infty}e^{inx}=\sum_{m}2\pi\delta(x-2\pi m)$$
 ## Proof.
 我们有：
 $$\begin{align}
