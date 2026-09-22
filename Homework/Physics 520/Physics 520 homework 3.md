@@ -207,6 +207,59 @@ $$\begin{align}
   & = \frac{-1}{(e^{\eta /2}+e^{-\eta /2})^{2}} \\
  & = - \frac{1}{4} \frac{1}{\cosh ^{2}( \eta /2)}
 \end{align}$$
+## (b)
+
+Then we need to evaluate:
+$$\begin{align}
+\delta A= \int_{-\infty}^{\infty}d \eta\cos\left( 2\pi \frac{k_{B}T}{\hbar \omega}\eta \right)\left( - \frac{1}{4} \right) \frac{1}{\cosh ^{2}(\eta /2)}
+\end{align}$$
+It suffices to evaluate:
+$$I= \int_{-\infty}^{\infty}d \eta \cos(\alpha \eta) \frac{1}{\cosh ^{2}(\eta /2)}$$
+We extend this integral to complex. We want to evaluate:
+$$I^{'}= \int_{-\infty}^{\infty} d \eta \frac{e^{i\alpha \eta}}{\cosh ^{2}(\eta /2)}$$
+Take $\alpha>0$. We took a contour that is from $-\infty$ to $\infty$ on the real axis, and then a counterclockwise circular path connecting back to $-\infty$. Since $e^{i\alpha \eta}\rightarrow 0$ for $\eta$ traveling on the second part of the contour, we have:
+$$I^{'}= \oint d \eta \frac{e^{i\alpha \eta}}{\cosh ^{2}(\eta /2)}$$
+It's easy to find the singularities of the integrand. Take $\eta=i\omega$, then the denominator becomes $\cos ^{2}(\omega /2)$. We take $\omega= \frac{\pi}{2}+ m\pi$. Then $\eta_{m}=i\left(  \frac{\pi}{2}+m\pi \right)$ on the imaginary axis. 
+
+We find the residual around $\eta_{m}$. We have:
+$$\begin{align}
+\cosh ^{2}\left(  \frac{\eta_{m}+\delta \eta}{2} \right) & = \left(  \cosh\left(  \frac{\eta_{m}}{2}\ \right)\cosh\left(  \frac{\delta \eta_{}}{2} \right)+ \sinh\left(  \frac{\eta_{m}}{2} \right)\sinh\left(  \frac{\delta \eta_{}}{2} \right)  \right)^{2} \\
+ & = \sinh ^{2}\left(  \frac{\eta_{m}}{2} \right)\sinh ^{2}\left(  \frac{\delta \eta}{2} \right) \\
+ & = \sinh ^{2}\left(  \frac{\delta \eta}{2} \right) \\
+  & \approx   \frac{(\delta \eta)^{2}}{4}
+\end{align}$$
+Also:
+$$\begin{align}
+e^{i\alpha (\eta_{m}+\delta \eta)} & = e^{i\alpha \eta_{m}}-i\alpha^{2} e^{i\alpha \eta_{m}}\delta \eta
+\end{align}$$
+Then:
+$$\begin{align}
+\frac{e^{i\alpha(\eta_{m}+\delta \eta)}}{\cosh ^{2}((\eta_{m}+\delta \eta) /2)} & \approx 4 \frac{e^{i\alpha \eta_{m}}-i\alpha^{2}e^{i\alpha \eta_{m}}\delta \eta}{(\delta \eta)^{2}}
+\end{align}$$
+Clearly, the residual is:
+$$\begin{align}
+-4i\alpha^{2}e^{i\alpha \eta_{m}}
+\end{align}$$
+Then by residual theorem, we have:
+$$\begin{align}
+I^{'} & = 2\pi i \sum_{m}(-4i)\alpha^{2}e^{i\alpha \eta_{m}} \\
+ & = 8\pi \alpha^{2} \frac{e^{-\alpha \pi /2}}{1-e^{-\alpha \pi}} \\
+ & = 4\pi \alpha^{2} \frac{1}{\sinh(\alpha \pi /2)}
+\end{align}$$
+Then:
+$$\begin{align}
+I & = \text{Re}(I^{'}) \\
+ & = 4\pi \alpha^{2} \frac{1}{\sinh(\alpha \pi /2)}
+\end{align}$$
+Therefore, we have:
+$$\begin{align}
+\delta A & = - \frac{1}{4} \frac{4\pi\left(  \frac{2\pi k_{B}T}{\hbar \omega} \right)}{\sinh\left(  \frac{\pi^{2} k_{B}T}{\hbar \omega} \right)} \\
+ & = -2 \frac{\frac{\pi^{2}k_{B}T}{\hbar \omega}}{\sinh\left(  \frac{\pi^{2}k_{B}T}{\hbar \omega } \right)}
+\end{align}$$
+Then we have:
+$$a= \frac{\pi^{2}k_{B}T}{\hbar \omega}= \frac{\pi^{2}mk_{B}T}{\hbar eB}$$
+The dependence of $a$ on physical constants is very clear from the expression above.
+
 
 
 
