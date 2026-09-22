@@ -97,7 +97,7 @@ g & = 2\frac{A_{n+1}-A_{n}}{(2\pi / L)^{2} } \\
 \end{align}$$
 Where $2$ counts for the spin degeneracy. The density of states is clearly given by:
 $$\begin{align}
-\mathcal{D}(E) & = \sum_{n} \frac{2eB}{h}L^{2}\delta\left( E- \left( n+ \frac{1}{2} \right)\hbar \omega_{c} \right)
+\rho(E) & = \sum_{n} \frac{2eB}{h}L^{2}\delta\left( E- \left( n+ \frac{1}{2} \right)\hbar \omega_{c} \right)
 \end{align}$$
 ## (c)
 
