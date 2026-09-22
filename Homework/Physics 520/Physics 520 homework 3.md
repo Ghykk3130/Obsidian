@@ -72,12 +72,33 @@ Observe that $\frac{p_{x}^{2}}{2m_{e}}+ \frac{1}{2} \frac{(\hbar k_{y}+exB)^{2}}
 $$\begin{align}
 E_{n}= \left( n+ \frac{1}{2} \right)\hbar \frac{eB}{m_{e}}
 \end{align}$$
-
-
 ## (b)
 
-
-
+We have:
+$$\begin{align}
+ & E_{n+1}-E_{n}= \hbar \frac{eB}{m_{e}}
+\end{align}$$
+For a quadratic dispersion, it is easy to show that:
+$$\begin{align}
+m_{\text{CR}} & =  \frac{\hbar^{2}}{2\pi} \frac{\partial A}{\partial E} \\
+ & = \frac{\hbar^{2}}{2\pi} \frac{\partial}{\partial E}\pi k^{2} \\
+ & = \frac{\hbar^{2}}{2\pi} \frac{\partial}{\partial E} \frac{2\pi m_{e}}{\hbar^{2}}E \\
+ & = m_{e}
+\end{align}$$
+Then:
+$$\begin{align}
+ & E_{n+1}-E_{n}= \hbar \frac{eB}{ \frac{\hbar^{2}}{2\pi} \frac{\partial A}{\partial E}} \\
+\implies & A_{n+1}-A_{n}= \frac{2\pi eB}{\hbar}
+\end{align}$$
+Therefore, each Landau level has degeneracy:
+$$\begin{align}
+g & = 2\frac{A_{n+1}-A_{n}}{(2\pi / L)^{2} } \\
+ & = \frac{2eB}{h}L^{2}
+\end{align}$$
+Where $2$ counts for the spin degeneracy. The density of states is clearly given by:
+$$\begin{align}
+\mathcal{D}(E) & = \sum_{n} \frac{2eB}{h}L^{2}\delta\left( E- \left( n+ \frac{1}{2} \right)\hbar \omega_{c} \right)
+\end{align}$$
 ## (c)
 
 Let $\mathbf{B}=B \hat{\mathbf{z}}$. Choose the Landau gauge so that $\mathbf{A}=xB \hat{\mathbf{y}}$. Then:
@@ -97,6 +118,6 @@ $$\begin{align}
 \end{align}$$
 Observe that $\frac{p_{x}^{2}}{2m_{e}}+ \frac{1}{2} \frac{(\hbar k_{y}+exB)^{2}}{m_{e}}$ is just the hamiltonian of a harmonic oscillator centered at $x_{0}= -\frac{\hbar k_{y}}{eB}$ with angular frequency $\omega_{c}= \frac{eB}{m_{e}}$. Then we obtain the spectrum:
 $$\begin{align}
-E_{n,k_{z}}= \left( n+ \frac{1}{2} \right)\hbar \frac{eB}{m_{e}}+ \frac{\hbar^{2}k_{z}^{2}}{2m_{e}}
+E(n,k_{z})= \left( n+ \frac{1}{2} \right)\hbar \frac{eB}{m_{e}}+ \frac{\hbar^{2}k_{z}^{2}}{2m_{e}}
 \end{align}$$
 
