@@ -152,7 +152,6 @@ $$\begin{align}
  & \frac{1}{F}= \frac{2\pi e}{\hbar} \frac{1}{A_{F}}= \frac{2\pi e}{\hbar} \frac{1}{\pi k_{F}^{2}} \\
 \implies & k_{F}= \sqrt{  \frac{2eF}{\hbar} }
 \end{align}$$
-
 We calculate the frequency:
 $$\begin{align}
 F & = \frac{\hbar k_{F}^{2}}{2e} \\
@@ -172,6 +171,41 @@ $$\begin{align}
 \epsilon_{F} & = \frac{\hbar^{2}k_{F}^{2}}{2m^{*}} \\
  & = \frac{\left( \frac{6.628}{6.28}\times 10^{-34} \right)^{2}\times(9.1\times 10^{9})^{2}}{2 \times 1.3 \times 9.1 \times 10^{-31}}\ J \\
  & \approx 1.43 \times 10^{-18}\ J
+\end{align}$$
+Next we calculate the bulk modulus. Observe that the functional dependence $F$ on volume could be obtained by:
+$$\begin{align}
+F & = \frac{\hbar k_{F}^{2}}{2e} \\
+ & = \frac{\hbar}{2e}( 2\pi^{2}n)^{2/3} \\
+ & = \frac{\hbar}{2e}\left(  \frac{2\pi^{2}N}{V} \right)^{2/3}
+\end{align}$$
+Then we have:
+$$\begin{align}
+ & \frac{F(P)}{F(0) }= \left(  \frac{V(0)}{V(P)} \right)^{2/3} 
+\end{align}$$
+On the other hand, we have:
+$$\begin{align}
+dV & = - \frac{V}{B}dP 
+\end{align}$$
+So for small $P$ we have:
+$$\begin{align}
+\frac{F(P)}{F(0)} & = \left(  \frac{V(0)}{V(0)- \frac{V(0)}{B}P} \right)^{2/3} \\
+ & \approx \left( 1+ \frac{1}{B}P \right)^{2/3} \\
+ & \approx 1+ \frac{2}{3} \frac{1}{B}P
+\end{align}$$
+Then compare with the graph to get:
+$$\begin{align}
+ & \frac{2}{3} \frac{1}{B}=\text{slope}= 0.12\ \text{GPa}^{-1} \\
+\implies & B\approx 5.56\text{ GPa}
+\end{align}$$
+# Problem 5
+
+## (a)
+
+We calculate:
+$$\begin{align}
+\frac{df}{d \eta} & = \frac{-1}{(e^{\eta}+1)^{2}}e^{\eta} \\
+ & = \frac{-1}{e^{\eta}+e^{-\eta}+2} \\
+ & = - \frac{1}{2} \frac{1}{1+\cosh \eta}
 \end{align}$$
 
 
