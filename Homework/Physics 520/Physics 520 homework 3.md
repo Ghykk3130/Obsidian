@@ -4,52 +4,18 @@
 The electron in the k-space moves on an orbit that is an intersection of a plane perpendicular to the magnetic field and an energy contour.
 ## (b)
 
-Know that:
+Know that in the real space, $\mathbf{v}_{\perp}$ would induce a Lorentz force that is in the plane perpendicular to the field, contributing to the circular motion in the same plane. The $\mathbf{v}_{\parallel}$ component does not induce a force. 
+
+This means that the infinitesimal movements in $\mathbf{r}$ and $\mathbf{k}$ are perpendicular. Then the path in the real space and in the k-space are $90^{\circ}$ away. 
+
+We also have:
 $$\begin{align}
-\dot{\mathbf{k}}\cdot \mathbf{B} & = \frac{1}{\hbar}(-e\mathbf{v}\times \mathbf{B})\cdot \mathbf{B}=0
+\dot{\mathbf{k}} & = \frac{1}{\hbar}(-e)\mathbf{v}\times \mathbf{B} \\
+\implies & d\mathbf{k}= \frac{1}{\hbar}(-e)d\mathbf{r}\times \mathbf{B}= \frac{1}{\hbar}(-e)B  dr_{\perp}  \widehat{\mathbf{v}\times \mathbf{B}}
 \end{align}$$
-Then the orbit in the k-space is perpendicular to $\mathbf{B}$. Assume that the band is parabolic $\epsilon= \frac{\hbar^{2}k^{2}}{2m}$. Then:
-$$\begin{align}
-\mathbf{v} & = \frac{\partial\epsilon}{\hbar\partial \mathbf{k}} \\
- & = \frac{\hbar \mathbf{k}}{m}
-\end{align}$$
-Since $\mathbf{k}$ is 
+Then it's clear that the radius ratio between the real space path and the k-space path is $\frac{\hbar}{eB}$. 
 
 
-We have:
-$$\begin{align}
-\mathbf{v} \cdot  \dot{\mathbf{k}} & = \mathbf{v}\cdot \frac{1}{\hbar}(-e\mathbf{v}\times \mathbf{B})=0
-\end{align}$$
-This means that the infinitesimal movements in $\mathbf{r}$ and $\mathbf{k}$ are perpendicular. Then the path in the real space and in the k-space are perpendicular. 
-
-Let $\hat{\mathbf{e}}_{\parallel}= \frac{\mathbf{B}}{B}$, $\hat{\mathbf{e}_{}}_{\perp}= \frac{\mathbf{k}_{\perp}}{k_{\perp}}$. Define $\hat{\mathbf{e}}_{\phi}=\hat{\mathbf{e}_{}}_{\perp}\times   \hat{\mathbf{e}}_{\parallel}$. For parabolic band, we have:
-$$\begin{align}
- & \dot{\mathbf{k}}= \frac{1}{\hbar}(-e) \mathbf{v}\times \mathbf{B}= \frac{1}{\hbar}(-e) \frac{\partial}{\hbar\partial \mathbf{k}}\left(  \frac{\hbar^{2}k^{2}}{2m} \right)\times \mathbf{B} \\
-\implies & \dot{\mathbf{k}}= \frac{-eB}{m} \mathbf{k}\times \mathbf{B} 
-\end{align}$$
-Decompose to get:
-$$\begin{align}
- & \frac{d}{dt}(k_{\parallel} \hat{\mathbf{e}}_{\parallel})= \dot{k}_{\parallel} \hat{\mathbf{e}}_{\parallel}= - \frac{e}{m}\mathbf{k}\times \mathbf{B}=0 \\
- & \frac{d}{dt}(k_{\perp}  \hat{\mathbf{e}}_{\perp})= \dot{ k}_{\perp}  \hat{\mathbf{e}}_{\perp}+ k_{\perp} \frac{d}{dt}  \hat{\mathbf{e}}_{\perp}= \frac{-eB}{m}k_{\perp}  \hat{\mathbf{e}}_{\phi}
-\end{align}$$
-The first equation just gives $\dot{ k}_{\parallel}=0$. The second equation gives:
-$$\begin{align}
- & \dot{k}_{\perp}+ k_{\perp}  \hat{\mathbf{e}}_{\perp}\cdot \frac{d}{dt}  \hat{\mathbf{e}}_{\perp}=0 \\
-\implies &  \dot{k}_{\perp}+ k_{\perp} \frac{1}{2} \frac{d}{dt}|\hat{\mathbf{e}}_{\perp}|^{2}= \dot{k}_{\perp}=0
-\end{align}$$
-And:
-$$\begin{align}
-\frac{d}{dt}  \hat{\mathbf{e}}_{\perp}= \frac{-eB}{m}  \hat{\mathbf{e}}_{\phi}
-\end{align}$$
-Let $\hat{\mathbf{e}}_{\perp}=\cos(\omega t+\varphi) \hat{\mathbf{x}}+ \sin(\omega t+\varphi) \hat{\mathbf{y}}$, $\hat{\mathbf{e}}_{\phi}=\sin(\omega t+\varphi) \hat{\mathbf{x}}- \cos(\omega t+\varphi) \hat{\mathbf{y}}$. Then $\omega= \frac{eB}{m}$. Then the k-space orbit is circular with angular frequency $\frac{eB}{m}$ and radius $k_{\perp}$. Now:
-$$\begin{align}
-\mathbf{v}= \frac{\hbar}{m}\mathbf{k}\implies  \dot{\mathbf{r}}= \frac{\hbar}{m}\mathbf{k}= \frac{\hbar}{m}(k_{\parallel} \hat{\mathbf{e}}_{\parallel}+ k_{\perp} \hat{\mathbf{e}}_{\perp})
-\end{align}$$
-Decompose:
-$$\begin{align}
-\dot{x}= \frac{\hbar k_{\perp}}{m} \cos (\omega t+\varphi)\implies x= k_{\perp} \frac{\hbar}{eB}\sin(\omega t+ \varphi)
-\end{align}$$
-Clearly, the radius is scaled with a factor $\frac{\hbar}{eB}$. 
 # Problem 2
 ## (a)
 
@@ -125,16 +91,18 @@ $$\begin{align}
 \rho(E) & = 2 \frac{eB}{h}L^{2} \sum_{n,k_{z}}\delta\left( E- E_{n}- \frac{\hbar^{2}k_{z}^{2}}{2m_{e}} \right),\ E_{n}= \left(  n+ \frac{1}{2} \right)\hbar \omega_{c} \\
  & = 2 \frac{eB}{h}L^{2} \sum_{n} \frac{L}{2\pi}\int_{-\infty}^{\infty} dk_{z}\delta\left( E-E_{n}- \frac{\hbar^{2}k_{z}^{2}}{2m_{e}} \right)\text{, as we take the thermodynamic limit} \\
 \end{align}$$
-Since:
+To further convert the delta function to a delta function of $k_{z}$, we recall that given $f(x)$ with roots $x_{0}$, we have:
+$$\delta(f(x))= \sum_{x_{0}} \frac{\delta(x-x_{0})}{|f^{'}(x_{0})|}$$
+Then:
 $$\begin{align}
 \delta\left( E-E_{n}- \frac{\hbar^{2}k_{z}^{2}}{2m_{e}} \right) & =  \left[\frac{\delta\left( k_{z}- \sqrt{ \frac{2m_{e}}{\hbar^{2}}(E-E_{n}) } \right)}{\left| \frac{\partial}{\partial k_{z}} \frac{\hbar^{2}}{2m_{e}}k_{z}^{2} \right|}+ \frac{\delta\left( k_{z}+ \sqrt{ \frac{2m_{e}}{\hbar^{2}}(E-E_{n}) } \right)}{\left| \frac{\partial}{\partial k_{z}} \frac{\hbar^{2}}{2m_{e}}k_{z}^{2} \right|}\right]\Theta(E-E_{n})  \\
- & = \frac{1}{\hbar \sqrt{  \frac{2}{m_{e}} }(E-E_{n})}\left( \delta\left( k_{z}- \sqrt{  \frac{2m_{e}}{\hbar^{2}}(E-E_{n}) } \right)+ \delta\left( k_{z}+ \sqrt{  \frac{2m_{e}}{\hbar^{2}}(E-E_{n}) } \right) \right)\Theta(E-E_{n})
+ & = \frac{1}{\hbar \sqrt{  \frac{2}{m_{e}}(E-E_{n}) }}\left( \delta\left( k_{z}- \sqrt{  \frac{2m_{e}}{\hbar^{2}}(E-E_{n}) } \right)+ \delta\left( k_{z}+ \sqrt{  \frac{2m_{e}}{\hbar^{2}}(E-E_{n}) } \right) \right)\Theta(E-E_{n})
 \end{align}$$
 The Heaviside function is just to ensure that $k_{z}$ has real solutions. Then:
 $$\begin{align}
-\rho(E) & = \frac{2eB}{2\pi h}V \sum_{n} \int_{-\infty}^{\infty} \frac{1}{\hbar \sqrt{  \frac{2}{m_{e}} }(E-E_{n})}\left( \delta\left( k_{z}- \sqrt{  \frac{2m_{e}}{\hbar^{2}}(E-E_{n}) } \right)+ \delta\left( k_{z}+ \sqrt{  \frac{2m_{e}}{\hbar^{2}}(E-E_{n}) } \right) \right)\Theta(E-E_{n}) \\
+\rho(E) & = \frac{2eB}{2\pi h}V \sum_{n} \int_{-\infty}^{\infty} \frac{1}{\hbar \sqrt{  \frac{2}{m_{e}}(E-E_{n}) }}\left( \delta\left( k_{z}- \sqrt{  \frac{2m_{e}}{\hbar^{2}}(E-E_{n}) } \right)+ \delta\left( k_{z}+ \sqrt{  \frac{2m_{e}}{\hbar^{2}}(E-E_{n}) } \right) \right)\Theta(E-E_{n}) \\
  & = \frac{2eB}{\pi h}V \sum_{n} \frac{\Theta(E-E_{n})}{\hbar \sqrt{ \frac{2}{m_{e}}(E-E_{n}) }} \\
- & = \frac{2eB}{h^{2}}\sqrt{ 2m_{e} }V \sum_{n} \frac{\Theta\left( E-\left( n+ \frac{1}{2}\hbar \omega_{c} \right) \right)}{\sqrt{ E-\left( n+ \frac{1}{2}\hbar \omega_{c} \right) }}
+ & = \frac{2eB}{h^{2}}\sqrt{ 2m_{e} }V \sum_{n} \frac{\Theta\left( E-\left( n+ \frac{1}{2}\hbar\right) \omega_{c}  \right)}{\sqrt{ E-\left( n+ \frac{1}{2}\hbar \omega_{c} \right) }}
 \end{align}$$
 # Problem 3
 
@@ -142,7 +110,7 @@ The reason why there are two frequencies observed is because all the Bellies hav
 
 Know that the each extremal orbit corresponds to a period given by:
 $$\Delta\left(  \frac{1}{B} \right)= \frac{2\pi e}{\hbar} \frac{1}{A_{F}}$$
-By direct counting, we find that the ratio between the shorter period and the longer period is $\frac{1}{52}$. The shorter period corresponds to a larger extremal orbit, which should be the Belly. The longer period corresponds to  a shorter extremal orbit, which should be the neck. Then the radius ratio between the neck and the belly should be $\sqrt{ 52 }$. 
+I count that between two peaks of the envelope, there are $52$ small peaks, meaning that their frequency ratio is $\frac{1}{52}$. The shorter period corresponds to a larger extremal orbit, which should be the Belly. The longer period corresponds to a smaller extremal orbit, which should be the neck. Know that $R \propto \sqrt{ A }$. Then the radius ratio between the neck and the belly should be $\frac{1}{\sqrt{ 52 }}$. 
 # Problem 4
 
 To deduce property (a), we rotate $\mathbf{B}$ around to detect the oscillation frequency for all angles. If the frequency keeps the same, then we know that the extremal orbits have the same area. Then the Fermi surface is isotropic and therefore spherical. 
@@ -170,7 +138,7 @@ We calculate the Fermi energy:
 $$\begin{align}
 \epsilon_{F} & = \frac{\hbar^{2}k_{F}^{2}}{2m^{*}} \\
  & = \frac{\left( \frac{6.628}{6.28}\times 10^{-34} \right)^{2}\times(9.1\times 10^{9})^{2}}{2 \times 1.3 \times 9.1 \times 10^{-31}}\ J \\
- & \approx 1.43 \times 10^{-18}\ J
+ & \approx 3.9\times 10^{-19}\ J
 \end{align}$$
 Next we calculate the bulk modulus. Observe that the functional dependence $F$ on volume could be obtained by:
 $$\begin{align}
@@ -219,45 +187,46 @@ We extend this integral to complex. We want to evaluate:
 $$I^{'}= \int_{-\infty}^{\infty} d \eta \frac{e^{i\alpha \eta}}{\cosh ^{2}(\eta /2)}$$
 Take $\alpha>0$. We took a contour that is from $-\infty$ to $\infty$ on the real axis, and then a counterclockwise circular path connecting back to $-\infty$. Since $e^{i\alpha \eta}\rightarrow 0$ for $\eta$ traveling on the second part of the contour, we have:
 $$I^{'}= \oint d \eta \frac{e^{i\alpha \eta}}{\cosh ^{2}(\eta /2)}$$
-It's easy to find the singularities of the integrand. Take $\eta=i\omega$, then the denominator becomes $\cos ^{2}(\omega /2)$. We take $\omega= \frac{\pi}{2}+ m\pi$. Then $\eta_{m}=i\left(  \frac{\pi}{2}+m\pi \right)$ on the imaginary axis. 
+It's easy to find the singularities of the integrand. Take $\eta=i\omega$, then the denominator becomes $\cos ^{2}(\omega /2)$. We take $\frac{\omega}{2}  = \frac{\pi}{2}+ m\pi$. Then $\eta_{m}=i\left(  \pi+2m\pi \right)$ on the imaginary axis. 
 
 We find the residual around $\eta_{m}$. We have:
 $$\begin{align}
 \cosh ^{2}\left(  \frac{\eta_{m}+\delta \eta}{2} \right) & = \left(  \cosh\left(  \frac{\eta_{m}}{2}\ \right)\cosh\left(  \frac{\delta \eta_{}}{2} \right)+ \sinh\left(  \frac{\eta_{m}}{2} \right)\sinh\left(  \frac{\delta \eta_{}}{2} \right)  \right)^{2} \\
  & = \sinh ^{2}\left(  \frac{\eta_{m}}{2} \right)\sinh ^{2}\left(  \frac{\delta \eta}{2} \right) \\
- & = \sinh ^{2}\left(  \frac{\delta \eta}{2} \right) \\
-  & \approx   \frac{(\delta \eta)^{2}}{4}
+ & = -\sinh ^{2}\left(  \frac{\delta \eta}{2} \right) \\
+  & \approx -  \frac{(\delta \eta)^{2}}{4}
 \end{align}$$
 Also:
 $$\begin{align}
-e^{i\alpha (\eta_{m}+\delta \eta)} & = e^{i\alpha \eta_{m}}-i\alpha^{2} e^{i\alpha \eta_{m}}\delta \eta
+e^{i\alpha (\eta_{m}+\delta \eta)} & = e^{i\alpha \eta_{m}}e^{i\alpha\delta \eta} \\
+ & \approx e^{i\alpha \eta_{m}}(1+i\alpha\delta \eta)
 \end{align}$$
 Then:
 $$\begin{align}
-\frac{e^{i\alpha(\eta_{m}+\delta \eta)}}{\cosh ^{2}((\eta_{m}+\delta \eta) /2)} & \approx 4 \frac{e^{i\alpha \eta_{m}}-i\alpha^{2}e^{i\alpha \eta_{m}}\delta \eta}{(\delta \eta)^{2}}
+\frac{e^{i\alpha(\eta_{m}+\delta \eta)}}{\cosh ^{2}((\eta_{m}+\delta \eta) /2)} & \approx -4 \frac{e^{i\alpha \eta_{m}}+i\alpha^{}e^{i\alpha \eta_{m}}\delta \eta}{(\delta \eta)^{2}}
 \end{align}$$
 Clearly, the residual is:
 $$\begin{align}
--4i\alpha^{2}e^{i\alpha \eta_{m}}
+-4i\alpha^{}e^{i\alpha \eta_{m}}
 \end{align}$$
 Then by residual theorem, we have:
 $$\begin{align}
-I^{'} & = 2\pi i \sum_{m}(-4i)\alpha^{2}e^{i\alpha \eta_{m}} \\
- & = 8\pi \alpha^{2} \frac{e^{-\alpha \pi /2}}{1-e^{-\alpha \pi}} \\
- & = 4\pi \alpha^{2} \frac{1}{\sinh(\alpha \pi /2)}
+I^{'} & = 2\pi i \sum_{m}(-4i)\alpha^{}e^{i\alpha \eta_{m}} \\
+ & = 8\pi \alpha^{} \frac{e^{-\alpha \pi }}{1-e^{-2\alpha \pi}} \\
+ & = 4\pi \alpha^{} \frac{1}{\sinh(\alpha \pi )}
 \end{align}$$
 Then:
 $$\begin{align}
 I & = \text{Re}(I^{'}) \\
- & = 4\pi \alpha^{2} \frac{1}{\sinh(\alpha \pi /2)}
+ & = 4\pi \alpha^{} \frac{1}{\sinh(\alpha \pi )}
 \end{align}$$
 Therefore, we have:
 $$\begin{align}
-\delta A & = - \frac{1}{4} \frac{4\pi\left(  \frac{2\pi k_{B}T}{\hbar \omega} \right)}{\sinh\left(  \frac{\pi^{2} k_{B}T}{\hbar \omega} \right)} \\
- & = -2 \frac{\frac{\pi^{2}k_{B}T}{\hbar \omega}}{\sinh\left(  \frac{\pi^{2}k_{B}T}{\hbar \omega } \right)}
+\delta A & = - \frac{1}{4} \frac{4\pi\left(  \frac{2\pi k_{B}T}{\hbar \omega} \right)}{\sinh\left(  \frac{2\pi^{2} k_{B}T}{\hbar \omega} \right)} \\
+ & = -\frac{\frac{2\pi^{2}k_{B}T}{\hbar \omega}}{\sinh\left(  \frac{2\pi^{2}k_{B}T}{\hbar \omega } \right)}
 \end{align}$$
 Then we have:
-$$a= \frac{\pi^{2}k_{B}T}{\hbar \omega}= \frac{\pi^{2}mk_{B}T}{\hbar eB}$$
+$$a= \frac{2\pi^{2}k_{B}}{\hbar \omega}= \frac{2\pi^{2}mk_{B}}{\hbar eB}$$
 The dependence of $a$ on physical constants is very clear from the expression above.
 
 
