@@ -74,7 +74,31 @@ When we increase the temperature, $\tau$ would be shortened due to collision. Th
 ## (c)
 
 We have:
-$$\nu= \frac{N}{\Phi / \Phi_{0}}=  \frac{nL^{2}\Phi_{0}}{\Phi} = \frac{nh}{eB}$$
+$$\begin{align}
+n & = \frac{N}{L^{2}} \\
+ & = \frac{A/(2\pi /L)^{2} }{L^{2}} \\
+ & = \frac{A}{(2\pi)^{2}}
+\end{align}$$
+Where $A$ is the area enclosed by the Fermi surface. Recall that:
+$$\begin{align}
+F & = \frac{\hbar}{2\pi e}A
+\end{align}$$
+Then:
+$$\begin{align}
+n & = \frac{e}{h}F
+\end{align}$$
+We observed a peak at $B=2.5\ T$, another peak at $B=8\ T$. So:
+$$\begin{align}
+F & = \frac{1}{\frac{1}{2.5}- \frac{1}{8}} \\
+ & \approx 3.64\ T
+\end{align}$$
+Then:
+$$\begin{align}
+n\approx 8.79\times 10^{14}\ m^{-2}
+\end{align}$$
+In the above calculation, we ignored the spin degeneracy. Now add back the spin degeneracy to get:
+$$n\approx 1.76\times 10^{15}\ m^{-2}$$
+
 
 # Problem 3
 ## (a)
