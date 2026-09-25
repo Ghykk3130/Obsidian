@@ -64,6 +64,10 @@ $$m^{*}_{h}\approx 1.565 \times 10^{-31}\text{ kg}$$
 # Problem 2
 ## (b)
 ![[d8cc28a2c4779c13b56e7ca7a579826a.jpg|centering|300]]
+## (c)
+
+We have:
+$$\nu= \frac{N}{\Phi / \Phi_{0}}=  \frac{nL^{2}\Phi_{0}}{\Phi} = \frac{nh}{eB}$$
 
 # Problem 3
 ## (a)
