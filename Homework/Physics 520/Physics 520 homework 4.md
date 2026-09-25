@@ -61,6 +61,9 @@ $$\begin{align}
 \end{align}$$
 Then:
 $$m^{*}_{h}\approx 1.565 \times 10^{-31}\text{ kg}$$
+# Problem 2
+## (b)
+![[d8cc28a2c4779c13b56e7ca7a579826a.jpg|centering|300]]
 
 # Problem 3
 ## (a)
