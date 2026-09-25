@@ -61,3 +61,41 @@ $$\begin{align}
 \end{align}$$
 Then:
 $$m^{*}_{h}\approx 1.565 \times 10^{-31}\text{ kg}$$
+
+# Problem 3
+## (a)
+
+Choose the Landau gauge $\mathbf{A}=eBx  \hat{\mathbf{y}}$. We have:
+$$\begin{align}
+H & = \frac{1}{2m}(p_{x}^{2}+(p_{y}+eBx)^{2}+p_{z}^{2})+ \frac{1}{2}m\omega_{0}^{2}x^{2} \\
+\end{align}$$
+Observe that:
+$$\begin{align}
+[p_{y},H ] & = \frac{1}{2m}[p_{y},(p_{y}+eBx)^{2}] =0 \\
+[p_{z},H] & = \frac{1}{2m}[p_{z},p_{z}]=0
+\end{align}$$
+We guess the eigen function: $\psi= e^{ik_{y}y+ik_{z}z}f(x)$. Then we have:
+$$\begin{align}
+ & H\psi(\mathbf{r})=E\psi(\mathbf{r}) \\
+\implies & \frac{1}{2m}(p_{x}^{2}+ (\hbar k_{y}+eBx)^{2}+ \hbar^{2}k_{z}^{2})e^{ik_{y}y+ik_{z}z}f(x)+ \frac{1}{2}m^{}\omega_{0}^{2}x^{2}e^{ik_{y}y+ik_{z}z}f(x)=Ee^{ik_{y}y+ik_{z}z}f(x) \\
+\implies &  \frac{1}{2m}(p_{x}^{2}+(\hbar k_{y}+eBx)^{2}+\hbar^{2}k_{z}^{2}+ m^{2}\omega_{0}^{2}x^{2})f=Ef
+\end{align}$$
+We compute:
+$$\begin{align}
+(\hbar k_{y}+eBx)^{2}+m^{2}\omega_{0}^{2}x^{2} & = \hbar^{2}k_{y}^{2}+e^{2}B^{2}x^{2}+2\hbar k_{y}eBx+m^{2}\omega_{0}^{2}x^{2} \\
+ & = \left(1- \frac{\hbar^{2}k_{y}^{2}e^{2}B^{2}}{e^{2}B^{2}+m^{2}\omega_{0}^{2}}\right)\hbar^{2}k_{y}^{2}+ (e^{2}B^{2}+m^{2}\omega_{0}^{2})\left( x+ \frac{\hbar k_{y}eB}{e^{2}B^{2}+m^{2}\omega_{0}^{2}} \right)^{2} \\
+ & = \frac{m^{2}\omega_{0}^{2}}{e^{2}B^{2}+m^{2}\omega_{0}^{2}} \hbar^{2}k_{y}^{2}+(e^{2}B^{2}+m^{2}\omega_{0}^{2})\left( x+ \frac{\hbar k_{y}eB}{e^{2}B^{2}+m^{2}\omega_{0}^{2}} \right)^{2}
+\end{align}$$
+We define:
+$$\Omega_{c}= \sqrt{ \frac{e^{2}B^{2}+m^{2}\omega_{0}^{2}}{m^{2}} },\ x_{0}= \frac{\hbar k_{y}eB}{e^{2}B^{2}+m^{2}\omega_{0}^{2}}$$
+Then:
+$$\begin{align}
+(\hbar k_{y}+eBx)^{2}+m^{2}\omega_{0}^{2}x^{2} & = \hbar^{2}k_{y}^{2} \left(\frac{\omega_{0}}{\Omega_{c}}\right)^{2}+ m^{2}\Omega_{c}^{2}\left( x+ x_{0} \right)
+\end{align}$$Then:
+$$\begin{align}
+ & \left[  \frac{p_{x}^{2}}{2m}+ \frac{\hbar^{2}k_{y}^{2}}{2m}\left(  \frac{\omega_{0}}{\Omega_{c}} \right)^{2}+ \frac{\hbar^{2}k_{z}^{2}}{2m} + \frac{1}{2}m\Omega_{c}^{2}(x+x_{0})^{2} \right]f=Ef
+\end{align}$$
+Then clearly $\frac{p_{x}^{2}}{2m}+ \frac{1}{2}m\Omega_{c}^{2}(x+x_{0})^{2}$ forms a harmonic oscillator. We have:
+$$\begin{align}
+E(l,k_{y},k_{z})= \left( \frac{1}{2}+l \right)\hbar \Omega_{c}+ \frac{\hbar^{2}k_{y}^{2}}{2m}\left(  \frac{\omega_{0}}{\Omega_{c}} \right)^{2}+ \frac{\hbar^{2}k_{z}^{2}}{2m}
+\end{align}$$
