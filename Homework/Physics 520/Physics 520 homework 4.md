@@ -64,10 +64,13 @@ $$m^{*}_{h}\approx 1.565 \times 10^{-31}\text{ kg}$$
 # Problem 2
 # (a)
 
-From the plot I observe that 
+From the plot I observe that $\nu=1,\ \nu=2$ splitting is quite pronounced. And this splitting feature begins to show roughly at $B=4\ T$.
 
 ## (b)
 ![[d8cc28a2c4779c13b56e7ca7a579826a.jpg|centering|300]]
+We always assume that the linewidth is finite due to a finite lifetime. Say the lifetime is $\tau$. For small field, $g^{*}\mu_{B}B \ll \frac{\hbar}{\tau}$. Then the two peaks look like one peak. Only when the field becomes comparable to $\frac{\hbar}{\tau}$ or even larger can we resolve the difference between two peaks, which is $g^{*}\mu_{B}B$. 
+
+When we increase the temperature, $\tau$ would be shortened due to collision. Then the linewidth $\frac{\hbar}{\tau}$ increases. So when we are scanning the field through a specific peak, even if we are slightly away from the peak, we still get available states. Therefore the peaks are wider. And the peaks are also larger because we have more available states, meaning that more electrons can be excited and create current through the sample.
 ## (c)
 
 We have:
