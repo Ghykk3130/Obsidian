@@ -3504,7 +3504,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "申请",
+                "query": "virial",
                 "matchingCase": true,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -3636,8 +3636,9 @@
   },
   "active": "3c84d8dd0bc7112b",
   "lastOpenFiles": [
-    "Homework/Physics 520/Physics 520 homework 3.md",
+    "Notes/能均分定理，virial定理.md",
     "Homework/Physics 520/Physics 520 homework 4.md",
+    "Homework/Physics 520/Physics 520 homework 3.md",
     "Homework/Physics 520/Physics 520 homework 3 problem set.md",
     "Homework/Physics 520/Physics 520 homework 4 problem set.md",
     "Pictures/Pasted image 20260924195153.png",
@@ -3671,7 +3672,6 @@
     "Notes/密度矩阵.md",
     "Notes/满壳层角动量.md",
     "Notes/热力学平衡.md",
-    "Notes/理想经典气体，玻色气体与费米气体.md",
     "trace-cookies.txt",
     "max-page-cookies.txt",
     "max-cookies.txt",
