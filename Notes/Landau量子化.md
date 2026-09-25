@@ -54,36 +54,50 @@ $$\boxed{E(n,k_{z})= \left( \frac{1}{2}+n \right)\hbar \omega_{c}+ \frac{\hbar^{
 
 在二维系统中，令$k_{z}=0$。于是$E_{n}= ( \frac{1}{2}+n) \hbar \omega_{c}$。DOS如下：
 ![[Pasted image 20260921113556.png|centering|400]]
-我们可以将Landau能级map到自由电子气的k空间中：
+显然Landau能级的degeneracy全部来自于$k_{y}$。注意到谐振子中心为$x= -\frac{\hbar k_{y}}{|e|B}$。由于电子必须在样本内，所以存在约束：
+$$-L \leq \frac{\hbar k_{y}}{|e|B} \leq 0$$
+因为$k_{y}$满足周期性边界条件$k_{y}= \frac{2\pi n_{y}}{L}$，所以$k_{y}$以$\frac{2\pi}{L}$为单位增长。故最多放下$N_{\Phi}= \frac{|e|BL^{2}}{h}$个态。故我们有：
+$$\boxed{N_{\Phi}= 2\frac{\Phi}{\Phi_{0}},\ \Phi_{0}= \frac{h}{|e|}}$$
+其中，$N_{\Phi}$为Landau能级简并度。$\Phi_{0}$为磁通量子。$\Phi$为样本总磁通。$2$来自自旋简并度。我们还可以定义filling factor $\nu= \frac{N}{N_{\Phi}}\in \mathbb{Z}$，即总电子数和每个Landau能级能填充的电子数的比例。
+
+>[!Quote]
+>实际上，还另外存在约束$- \frac{\pi}{a}\leq k_{y}\leq \frac{\pi}{a}$。但是这个约束的结果是$N \sim \frac{L}{a}$。简单估算数量级发现这个约束非常松。不如上面那个约束。
+
+于是，在二维系统中：
+$${\rho(E)= 2 \frac{eBL^{2}}{h}\sum_{n}\delta\left( E- \left(  \frac{1}{2}+n \right)\hbar \omega_{c} \right)}$$
+
+# 3. Landau能级的几何理解
+
+现在我们回到自由电子气的k空间。我们找到一组具有Landau能级的曲面：
 $$\begin{align}  & \frac{\hbar^{2}k^{2}}{2m}=\left(  \frac{1}{2}+n \right)\hbar \omega_{c}+ \frac{\hbar^{2}k_{z}^{2}}{2m}\\
 
-\implies & \frac{\hbar^{2}}{2m}(k_{x}^{2}+k_{y}^{2})= \left(  \frac{1}{2}+n \right)\hbar \omega_{c}
+\implies & \frac{\hbar^{2}}{2m}(k_{x}^{2}+k_{y}^{2})= \frac{\hbar^{2}}{2m}k_{\perp}^{2} = \left(  \frac{1}{2}+n \right)\hbar \omega_{c}
 \end{align}$$
-它所定义出来的面称为Landau tube。自由电子气中，Landau tube上的电子的能量就都是Landau能级的能量。
+它所定义出来的面称为Landau tube。注意到Landau tube并非等能量面。这里的k空间在打开磁场后已经由于$k_{x}$不是好量子数而被破坏。这里只是纯数学上的操作。![[Pasted image 20260921114441.png|centering|200]]
+令Landau tube垂直于磁场横截面积为$A$。两个Ladau tube横截面积之差为：
+$$\begin{align}
+\Delta A & = 2\pi k_{\perp}\Delta k_{\perp}
+\end{align}$$
+而显然：
+$$\begin{align}
+ & \frac{\hbar^{2}k_{\perp}^{2}}{2m}=\left( \frac{1}{2}+l \right)\hbar \omega_{c} \\
+\implies & \frac{\hbar^{2}}{2m}k_{\perp}\Delta k_{\perp}=\Delta l\hbar \omega_{c}=\hbar \omega_{c}
+\end{align}$$
+所以：
+$$\begin{align}
+\Delta A & = \frac{2\pi |e|B}{\hbar}
+\end{align}$$
+其中包含的态数为：
+$$\begin{align}
+2\frac{\Delta A}{(2\pi /L)^{2}}= 2\frac{\Phi}{\Phi_{0}}=N
+\end{align}$$
+其中$2$来自自旋简并度。所以，我们可以想象，自由电子气中两个Landau tube之间的所有态都被压缩到一个tube上，形成了degeneracy。
 
-注意到Landau tube并非等能量面。![[Pasted image 20260921114441.png|centering|200]]
-由于k-space orbit能量不变，并且现在的等能量面已经退化成Landau tube和自由电子气等能量面的交线，那么电子只能在这些交线上运动。而且由于k-space orbit必须垂直于$\mathbf{B}$，所以这些交线必定$\perp \mathbf{B}$。
+由于每往外扩一个Landau tube，面积增加$\Delta A$。所以：
+$$\boxed{A(l,k_{z})= \frac{2\pi |e| B}{\hbar}(l+\gamma)}$$
+考虑我们增大磁场，使得$B_{l}$时第$l$个Landau level穿过$\epsilon_{F}$，$B_{l+1}$时第$l+1$个Landau level穿过$\epsilon_{F}$。显然，自由电子气空间中Landau tube穿过费米面时$\Leftrightarrow$Landau能级也越过了$\epsilon_{F}$
 
-我们可以得到相邻Landau tube之间（在同一水平面上）相差的面积。我们有：
-$$\begin{align}
- & E(l+1,k_{z})-E(l,k_{z})= \frac{|e|B}{m} \hbar
-\end{align}$$
-容易计算在这个setup下：
-$$\begin{align}
-m_{\text{CR}} & = \frac{\hbar^{2}}{2\pi} \frac{\partial A}{\partial E} \\
- & = \frac{\hbar^{2}}{2\pi} \frac{\partial}{\partial E}\pi(k_{x}^{2}+k_{y}^{2}) \\
- & = \frac{\hbar^{2}}{2\pi} \frac{\partial}{\partial E} \frac{2m}{\hbar^{2}}\pi E \\
- & = m
-\end{align}$$
-其中，$A(l,k_{z})$为Landau tube在$k_{z}=\text{const.}$平面上交出的面积。于是：
-$$\begin{align}
- & E(l+1,k_{z} )-E(l,k_{z})= \frac{|e|B}{m}\hbar \\
-\implies & E(l+1,k_{z} )-E(l,k_{z})= \frac{|e|B}{ \frac{\hbar^{2}}{2\pi} \frac{\partial A}{\partial E}  }\hbar \\
-\implies & A(l+1,k_{z})-A(l,k_{z})= \frac{2\pi|e|B}{\hbar}
-\end{align}$$
-令$A(0,k_{z})= \frac{2\pi|e|B}{\hbar}\gamma,\ \gamma<1$。我们有：
-$$\boxed{A(l,k_{z})= \frac{2\pi|e|B}{\hbar}(l+\gamma)}$$
-考虑我们增大磁场，使得$B_{l}$时第$l$个Landau level穿过$\epsilon_{F}$，$B_{l+1}$时第$l+1$个Landau level穿过$\epsilon_{F}$。令$A_{F}$为$k_{z}$处费米面截面面积。那么：
+令$A_{F}$为$k_{z}$处费米面截面面积。那么：
 $$\begin{align}
  & A_{F}  = A(l,k_{z},B_{l})= \frac{2\pi|e|B_{l}}{\hbar }(l+\gamma) \\
   & A_{F}=A(l+1,k_{z},B_{l+1})= \frac{2\pi|e|B_{l+1}}{\hbar}(l+1+\gamma) \\
@@ -98,17 +112,22 @@ $$\begin{align}
 \end{align}$$
 对应频率$F= \frac{1}{\Delta}= \frac{m\epsilon_{F}}{|e|\hbar}$。所以物理量的震荡部分常常写成$\sim \cos\left(  \frac{2\pi m\epsilon_{F}}{|e|\hbar} \frac{1}{B}+\varphi \right)= \cos\left(  \frac{2\pi \epsilon_{F}}{\hbar \omega_{c}}+\varphi \right)$。
 
-# 3. Degeneracy
+# 4. Quantum Hall effect
 
-考虑二维系统。我们可以获得一个Landau tube中的态数。我们有：
-$$\delta A=A(l+1)-A(l)= \frac{2\pi|e|B}{\hbar}$$
-故：
-$$\delta N= \frac{\delta A}{(2\pi /L)^{2}}= \frac{|e|B}{h} L^{2}$$
+载流子密度为：
+$$\begin{align}
+n & = \frac{N}{L^{2}} \\
+ & = \frac{\nu N_{\phi}}{L^{2}} \\
+ & = 2 \frac{|e|B}{h}\nu
+\end{align}$$
+于是：
+$$\begin{align}
+\rho_{xy} & = \frac{B}{ne} \\
+ & = \frac{h}{e^{2}} \frac{1}{2\nu}
+\end{align}$$
+另一方面，$\rho_{x x}$显然为零。因为Landau能级为平带，群速度为零。$\rho_{x x}$只有在能级扫过$\epsilon_{F}$时才变化。
 
 
-
-我们知道态密度为：
-$$\boxed{\rho(E)= 2 \frac{eBL^{2}}{h}\sum_{n}\delta\left( E- \left(  \frac{1}{2}+n \right)\hbar \omega_{c} \right)}$$
 # 4. LK公式
 
 考虑一个物理量$\mathcal{O}(E)$。在零温下，我们假设态密度的震荡由$\rho \propto\cos\left(  \frac{2\pi\epsilon_{F}}{\hbar \omega_{c}}+\varphi \right)$给出，即$\rho=\tilde{\rho}(E) \cos\left(  \frac{2\pi\epsilon_{F}}{\hbar \omega_{c}}+\varphi \right)$。令$a(E)=\mathcal{O}(E)  \tilde{\rho}(E)$。那么这个物理量的平均为：
@@ -129,3 +148,35 @@ $$\begin{align}
  & = \int dE^{'} \frac{\partial f}{\partial E^{'}} \langle \mathcal{O}\rangle(T=0,E^{'})
 \end{align}$$
 
+
+
+
+
+
+
+
+
+
+
+
+由于k-space orbit能量不变，并且现在的等能量面已经退化成Landau tube和自由电子气等能量面的交线，那么电子只能在这些交线上运动。而且由于k-space orbit必须垂直于$\mathbf{B}$，所以这些交线必定$\perp \mathbf{B}$。
+
+我们可以得到相邻Landau tube之间（在同一水平面上）相差的面积。我们有：
+$$\begin{align}
+ & E(l+1,k_{z})-E(l,k_{z})= \frac{|e|B}{m} \hbar
+\end{align}$$
+容易计算在这个setup下：
+$$\begin{align}
+m_{\text{CR}} & = \frac{\hbar^{2}}{2\pi} \frac{\partial A}{\partial E} \\
+ & = \frac{\hbar^{2}}{2\pi} \frac{\partial}{\partial E}\pi(k_{x}^{2}+k_{y}^{2}) \\
+ & = \frac{\hbar^{2}}{2\pi} \frac{\partial}{\partial E} \frac{2m}{\hbar^{2}}\pi E \\
+ & = m
+\end{align}$$
+其中，$A(l,k_{z})$为Landau tube在$k_{z}=\text{const.}$平面上交出的面积。于是：
+$$\begin{align}
+ & E(l+1,k_{z} )-E(l,k_{z})= \frac{|e|B}{m}\hbar \\
+\implies & E(l+1,k_{z} )-E(l,k_{z})= \frac{|e|B}{ \frac{\hbar^{2}}{2\pi} \frac{\partial A}{\partial E}  }\hbar \\
+\implies & A(l+1,k_{z})-A(l,k_{z})= \frac{2\pi|e|B}{\hbar}
+\end{align}$$
+令$A(0,k_{z})= \frac{2\pi|e|B}{\hbar}\gamma,\ \gamma<1$。我们有：
+$$$$
