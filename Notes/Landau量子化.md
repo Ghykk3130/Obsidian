@@ -54,16 +54,14 @@ $$\boxed{E(n,k_{z})= \left( \frac{1}{2}+n \right)\hbar \omega_{c}+ \frac{\hbar^{
 
 在二维系统中，令$k_{z}=0$。于是$E_{n}= ( \frac{1}{2}+n) \hbar \omega_{c}$。DOS如下：
 ![[Pasted image 20260921113556.png|centering|400]]
-我们是在原先能带基础上开启磁场微扰。假设费米液体图景，每个$\mathbf{k}$态都绝热得演化成准粒子态，所以态仍然可以用$\mathbf{k}$来标记。不过能谱已经变为Landau level。
-
-我们假设磁场的微扰非常小，以至于用$\mathbf{k}$标记的准粒子态仍然满足色散关系：
-$$E= \frac{\hbar^{2}k^{2}}{2m}$$
-固定$n$，联立Landau能级$E(n,k_{z})$与这个色散得到：
+我们可以将Landau能级map到自由电子气的k空间中：
 $$\begin{align}  & \frac{\hbar^{2}k^{2}}{2m}=\left(  \frac{1}{2}+n \right)\hbar \omega_{c}+ \frac{\hbar^{2}k_{z}^{2}}{2m}\\
 
 \implies & \frac{\hbar^{2}}{2m}(k_{x}^{2}+k_{y}^{2})= \left(  \frac{1}{2}+n \right)\hbar \omega_{c}
 \end{align}$$
-它所定义出来的面称为Landau tube。注意到Landau tube并非等能量面。![[Pasted image 20260921114441.png|centering|200]]
+它所定义出来的面称为Landau tube。自由电子气中，Landau tube上的电子的能量就都是Landau能级的能量。
+
+注意到Landau tube并非等能量面。![[Pasted image 20260921114441.png|centering|200]]
 由于k-space orbit能量不变，并且现在的等能量面已经退化成Landau tube和自由电子气等能量面的交线，那么电子只能在这些交线上运动。而且由于k-space orbit必须垂直于$\mathbf{B}$，所以这些交线必定$\perp \mathbf{B}$。
 
 我们可以得到相邻Landau tube之间（在同一水平面上）相差的面积。我们有：
