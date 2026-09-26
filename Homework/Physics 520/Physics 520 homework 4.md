@@ -134,7 +134,7 @@ $$\begin{align}
 \end{align}$$
 Then clearly $\frac{p_{x}^{2}}{2m}+ \frac{1}{2}m\Omega_{c}^{2}(x+x_{0})^{2}$ forms a harmonic oscillator. We have:
 $$\begin{align}
-E(l,k_{y},k_{z})= \left( \frac{1}{2}+l \right)\hbar \Omega_{c}+ \frac{\hbar^{2}k_{y}^{2}}{2m}\left(  \frac{\omega_{0}}{\Omega_{c}} \right)^{2}
+E(l,k_{y})= \left( \frac{1}{2}+l \right)\hbar \Omega_{c}+ \frac{\hbar^{2}k_{y}^{2}}{2m}\left(  \frac{\omega_{0}}{\Omega_{c}} \right)^{2}
 \end{align}$$
 ## (b)
 
@@ -142,3 +142,24 @@ Here we plot the perturbed Landau levels. Notice that if we are close to the sam
 
 If $\epsilon_{F}$ is between the jth ant the (j+1)th level, then there are j levels below. If we are close to the sample edge, then $x_{0}$ would be close to the sample edge. This would correspond to some $k_{y}$ on the $E\text{ v.s. }k_{y}$ plot. Nearby these $k_{y}$'s, the slope of the dispersion would become so large such that $\epsilon_{F}$ intersects with the first j levels. By the argument above, each of such interactions correspond to a state on the edge. Then there would be j channels on the sample edge.  
 ![[5694cce8c04d25a30dc4e235e1095b12.jpg|centering|400]]
+## (c)
+
+Assume that $\mu_{L}>\mu_{R}=\epsilon_{F}$. Assume that the potential connecting the sample and the electron reservoirs are infinitely flat, so that the energy conservation is assumed as electrons are emitted or received. 
+
+For electrons coming our from the left, the occupation number is $f(E-\mu_{L})$. For electrons coming out from the right, the occupation number is $f(E-\mu_{R})$. It is very clear that the electrons traveling on the two edges have the opposite velocity, since the perturbed Landau level is an even function of $k_{y}$, so that the group velocity is an odd function of $k_{y}$. Each electron carries charge $-e$ and the current is normalized by sample width $L$. 
+
+Then:
+$$\begin{align}
+I & = - 2\frac{e}{L} \sum_{n}\sum_{k_{y}} \frac{1}{\hbar} \frac{\partial E(n,k_{y})}{\partial k_{y} }(f(E-\mu_{L})-f(E-\mu_{R})) \\
+ & = - 2\frac{e}{L }\sum_{n} \int_{-\infty}^{\infty} \frac{dk_{y}}{2\pi /L } \frac{1}{\hbar} \frac{\partial E}{\partial k_{y}}(f(E-\mu_{L})-f(E-\mu_{R})) \\
+ & = - 2\frac{e}{h}\sum_{n} \int_{-\infty}^{\infty} dk_{y} \frac{\partial E}{\partial k_{y}}(\theta(\mu_{L}-E)-\theta(\mu_{R}-E)) \\
+ & = - 2\frac{e}{h}\sum_{n} \int_{E_{n}}^{\infty}dE(\theta(\mu_{L}-E)-\theta(\mu_{R}-E)),\ E_{n}= \left( n+ \frac{1}{2} \right) \hbar \Omega_{c} \\
+ & = - 2\frac{e}{h}\sum_{E_{n}\leq \mu_{R}}(\mu_{L}-E_{n}-\mu_{R}+E_{n}) \\
+ & = -2 \frac{e}{h}(\mu_{L}-\mu_{R})j
+\end{align}$$
+Here $j$ is the number of Landau levels below $\mu_{R}=\epsilon_{F}$. The 2 counts for spin degeneracy. Then:
+$$\begin{align}
+R & = \frac{V}{I} \\
+ & = \frac{(\mu_{L}-\mu_{R}) /(-e)}{-2 \frac{e}{h}(\mu_{L}-\mu_{R})j} \\
+ & = \frac{h}{e^{2}} \frac{1}{2j} 
+\end{align}$$
