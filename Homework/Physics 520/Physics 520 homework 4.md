@@ -105,18 +105,17 @@ $$n\approx 1.76\times 10^{15}\ m^{-2}$$
 
 Choose the Landau gauge $\mathbf{A}=eBx  \hat{\mathbf{y}}$. We have:
 $$\begin{align}
-H & = \frac{1}{2m}(p_{x}^{2}+(p_{y}+eBx)^{2}+p_{z}^{2})+ \frac{1}{2}m\omega_{0}^{2}x^{2} \\
+H & = \frac{1}{2m}(p_{x}^{2}+(p_{y}+eBx)^{2})+ \frac{1}{2}m\omega_{0}^{2}x^{2} \\
 \end{align}$$
 Observe that:
 $$\begin{align}
-[p_{y},H ] & = \frac{1}{2m}[p_{y},(p_{y}+eBx)^{2}] =0 \\
-[p_{z},H] & = \frac{1}{2m}[p_{z},p_{z}]=0
+[p_{y},H ] & = \frac{1}{2m}[p_{y},(p_{y}+eBx)^{2}] =0 
 \end{align}$$
-We guess the eigen function: $\psi= e^{ik_{y}y+ik_{z}z}f(x)$. Then we have:
+We guess the eigen function: $\psi= e^{ik_{y}y}f(x)$. Then we have:
 $$\begin{align}
  & H\psi(\mathbf{r})=E\psi(\mathbf{r}) \\
-\implies & \frac{1}{2m}(p_{x}^{2}+ (\hbar k_{y}+eBx)^{2}+ \hbar^{2}k_{z}^{2})e^{ik_{y}y+ik_{z}z}f(x)+ \frac{1}{2}m^{}\omega_{0}^{2}x^{2}e^{ik_{y}y+ik_{z}z}f(x)=Ee^{ik_{y}y+ik_{z}z}f(x) \\
-\implies &  \frac{1}{2m}(p_{x}^{2}+(\hbar k_{y}+eBx)^{2}+\hbar^{2}k_{z}^{2}+ m^{2}\omega_{0}^{2}x^{2})f=Ef
+\implies & \frac{1}{2m}(p_{x}^{2}+ (\hbar k_{y}+eBx)^{2})e^{ik_{y}y}f(x)+ \frac{1}{2}m^{}\omega_{0}^{2}x^{2}e^{ik_{y}y}f(x)=Ee^{ik_{y}y}f(x) \\
+\implies &  \frac{1}{2m}(p_{x}^{2}+(\hbar k_{y}+eBx)^{2}+ m^{2}\omega_{0}^{2}x^{2})f=Ef
 \end{align}$$
 We compute:
 $$\begin{align}
@@ -131,9 +130,15 @@ $$\begin{align}
 (\hbar k_{y}+eBx)^{2}+m^{2}\omega_{0}^{2}x^{2} & = \hbar^{2}k_{y}^{2} \left(\frac{\omega_{0}}{\Omega_{c}}\right)^{2}+ m^{2}\Omega_{c}^{2}\left( x+ x_{0} \right)
 \end{align}$$Then:
 $$\begin{align}
- & \left[  \frac{p_{x}^{2}}{2m}+ \frac{\hbar^{2}k_{y}^{2}}{2m}\left(  \frac{\omega_{0}}{\Omega_{c}} \right)^{2}+ \frac{\hbar^{2}k_{z}^{2}}{2m} + \frac{1}{2}m\Omega_{c}^{2}(x+x_{0})^{2} \right]f=Ef
+ & \left[  \frac{p_{x}^{2}}{2m}+ \frac{\hbar^{2}k_{y}^{2}}{2m}\left(  \frac{\omega_{0}}{\Omega_{c}} \right)^{2}+ \frac{1}{2}m\Omega_{c}^{2}(x+x_{0})^{2} \right]f=Ef
 \end{align}$$
 Then clearly $\frac{p_{x}^{2}}{2m}+ \frac{1}{2}m\Omega_{c}^{2}(x+x_{0})^{2}$ forms a harmonic oscillator. We have:
 $$\begin{align}
-E(l,k_{y},k_{z})= \left( \frac{1}{2}+l \right)\hbar \Omega_{c}+ \frac{\hbar^{2}k_{y}^{2}}{2m}\left(  \frac{\omega_{0}}{\Omega_{c}} \right)^{2}+ \frac{\hbar^{2}k_{z}^{2}}{2m}
+E(l,k_{y},k_{z})= \left( \frac{1}{2}+l \right)\hbar \Omega_{c}+ \frac{\hbar^{2}k_{y}^{2}}{2m}\left(  \frac{\omega_{0}}{\Omega_{c}} \right)^{2}
 \end{align}$$
+## (b)
+
+Here we plot the perturbed Landau levels. Notice that if we are close to the sample edge, then $\omega_{0}$ would become very large, so that the potential $\frac{1}{2}m\omega_{0}^{2}x^{2}$ can still confine the electrons to the sample. 
+
+If $\epsilon_{F}$ is between the jth ant the (j+1)th level, then there are j levels below. If we are close to the sample edge, then $x_{0}$ would be close to the sample edge. This would correspond to some $k_{y}$ on the $E\text{ v.s. }k_{y}$ plot. Nearby these $k_{y}$'s, the slope of the dispersion would become so large such that $\epsilon_{F}$ intersects with the first j levels. By the argument above, each of such interactions correspond to a state on the edge. Then there would be j channels on the sample edge.  
+![[5694cce8c04d25a30dc4e235e1095b12.jpg|centering|400]]
