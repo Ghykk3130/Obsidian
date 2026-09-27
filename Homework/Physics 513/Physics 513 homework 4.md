@@ -256,7 +256,13 @@ $$\begin{align}
 \end{align}$$
 ## (c)
 
-
+If $x^{0}\geq y^{0}$, then:
+$$\begin{align}
+(\Box+m^{2})D_{F}(x-y) &= (\Box+m^{2})(\theta(x^{0}-y^{0})D_{W}(x-y)) \\
+ & = (\Box\theta)D_{W}+\theta \Box D_{W}+m^{2}\theta D_{W} \\
+ & = (\Box\theta)D_{W} \\
+ & = \delta(x^{0}-y^{0})D_{W}(x-y)
+\end{align}$$
 
 
 
