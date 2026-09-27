@@ -319,3 +319,17 @@ Therefore, we conclude that:
 $$\begin{align}
 [\mathcal{J}^{\mu \nu},\mathcal{J}^{\rho \sigma}] & = i(g^{\nu \rho}\mathcal{J}^{\mu \sigma}-g^{\mu \rho}\mathcal{J}^{\nu \sigma}-g^{\nu \sigma}\mathcal{J}^{\mu \rho}+g^{\mu \sigma}\mathcal{J}^{\nu \rho})
 \end{align}$$
+## (b)
+
+We compute:
+$$\begin{align}
+[\gamma^{\mu},S^{\rho \sigma}] & = \frac{i}{4}[\gamma^{\mu},[\gamma^{\rho},\gamma^{\sigma}]] \\
+ & = \frac{i}{4}[\gamma^{\mu},\gamma^{\rho}\gamma^{\sigma}-\gamma^{\sigma}\gamma^{\rho}] \\
+ & = \frac{i}{4}(\{ \gamma^{\mu},\gamma^{\rho} \}\gamma^{\sigma}-\gamma^{\rho}\{ \gamma^{\mu},\gamma^{\sigma} \}-\{ \gamma^{\mu},\gamma^{\sigma} \}\gamma^{\rho}+\gamma^{\sigma}\{ \gamma^{\mu},\gamma^{\rho} \}) \\
+ & = \frac{i}{2}(g^{\mu \rho}\gamma^{\sigma}-\gamma^{\rho}g^{\mu \sigma}-g^{\mu \sigma}\gamma^{\rho}+\gamma^{\sigma }g^{\mu \rho}) \\
+ & = i(g^{\rho \mu}\gamma^{\sigma}-g^{\sigma \mu}\gamma^{\rho}) \\
+ & = i(g^{\rho \mu}\delta^{\sigma}{}_{\nu}\gamma^{\nu}-g^{\sigma \mu}\delta^{\rho}{}_{\nu}\gamma^{\nu} ) \\
+ & = (\mathcal{J}^{\rho \sigma})^{\mu}{}_{\nu}\gamma^{\nu}
+\end{align}$$
+## (c)
+
