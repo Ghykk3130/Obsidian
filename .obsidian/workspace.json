@@ -3532,7 +3532,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "申请",
+                "query": "主值",
                 "matchingCase": true,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -3664,8 +3664,9 @@
   },
   "active": "b6471c76959dd352",
   "lastOpenFiles": [
-    "Notes/申请.md",
+    "Notes/光学定理.md",
     "Homework/Physics 513/Physics 513 homework 4.md",
+    "Notes/申请.md",
     "Notes/标量场的正则量子化.md",
     "Homework/Physics 513/Physics 513 homework 3.md",
     "Homework/Physics 520/Physics 520 homework 4.md",
@@ -3699,7 +3700,6 @@
     "Notes/Dirac cone的输运贡献.md",
     "Notes/经典场论.md",
     "Homework/Physics 513/Physics 513 homework 2.md",
-    "Notes/Noether定理.md",
     "trace-cookies.txt",
     "max-page-cookies.txt",
     "max-cookies.txt",
