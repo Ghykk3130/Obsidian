@@ -146,7 +146,7 @@ If $\epsilon_{F}$ is between the jth ant the (j+1)th level, then there are j lev
 
 Assume that $\mu_{L}>\mu_{R}=\epsilon_{F}$. Assume that the potential connecting the sample and the electron reservoirs are infinitely flat, so that the energy conservation is assumed as electrons are emitted or received. 
 
-For electrons coming our from the left, the occupation number is $f(E-\mu_{L})$. For electrons coming out from the right, the occupation number is $f(E-\mu_{R})$. It is very clear that the electrons traveling on the two edges have the opposite velocity, since the perturbed Landau level is an even function of $k_{y}$, so that the group velocity is an odd function of $k_{y}$. Each electron carries charge $-e$ and the current is normalized by sample width $L$. 
+For electrons coming our from the left, the occupation number is $f(E-\mu_{L})$. For electrons coming out from the right, the occupation number is $f(E-\mu_{R})$. It is very clear that the electrons traveling on the two edges have the opposite velocity, since the perturbed Landau level is an even function of $k_{y}$, so that the group velocity is an odd function of $k_{y}$. Each electron carries charge $-e$. 
 
 Then:
 $$\begin{align}
@@ -157,9 +157,31 @@ I & = - 2\frac{e}{L} \sum_{n}\sum_{k_{y}} \frac{1}{\hbar} \frac{\partial E(n,k_{
  & = - 2\frac{e}{h}\sum_{E_{n}\leq \mu_{R}}(\mu_{L}-E_{n}-\mu_{R}+E_{n}) \\
  & = -2 \frac{e}{h}(\mu_{L}-\mu_{R})j
 \end{align}$$
-Here $j$ is the number of Landau levels below $\mu_{R}=\epsilon_{F}$. The 2 counts for spin degeneracy. Then:
+Here $j$ is the number of Landau levels below $\mu_{R}=\epsilon_{F}$. In the derivation above, we also assume $\mu_{L}-\mu_{R}<\hbar \Omega_{c}$. The 2 counts for spin degeneracy. Then:
 $$\begin{align}
 R & = \frac{V}{I} \\
  & = \frac{(\mu_{L}-\mu_{R}) /(-e)}{-2 \frac{e}{h}(\mu_{L}-\mu_{R})j} \\
  & = \frac{h}{e^{2}} \frac{1}{2j} 
 \end{align}$$
+The detected longitudinal voltage is in fact the Hall voltage, since on the two edges, the electrons are distributed according to $\mu_{L}, \mu_{R}$ respectively. If we measure the Hall volage, it would give us $\frac{\mu_{L}-\mu_{R}}{-e}$, which is equal to what we measure along the longitudinal direction. 
+## (d)
+
+For simplicity, assume that $\mathbf{B}$ points out of plane. Assume that $\mu_{L}>\mu_{R}$. If the carrier is hole, then the current flows clockwise. 
+
+$V_{1,4}, V_{1,2},V_{1,3}, V_{4,6},V_{4,5}$ gives the Hall voltage. Since the upper edge carries the same chemical potential as $1$, and the lower edge carries the same chemical potential as $4$. 
+
+Then by the same reasoning, $V_{1,6},V_{1,5},V_{6,5},V_{2,4},V_{3,4},V_{2,3}$ gives zero resistance, since these terminal share the same chemical potential. 
+
+If the carrier is electron, then the current flows counterclockwise.
+
+Then $V_{1,4},V_{1,6},V_{1,5},V_{2,4},V_{3,4}$ gives the Hall resistance. $V_{1,2},V_{1,3},V_{2,3},V_{4,6},V_{4,6},V_{5,6}$ gives zero resistance. The reasoning is similar.
+## (e)
+
+For simplicity, assume that $\mathbf{B}$ points out of plane. Assume that $\mu_{L}>\mu_{R}$. If the carrier is hole, then the current flows clockwise. 
+
+Then $V_{L,R},V_{T,R}$ gives the Hall resistance. Since upper edge, which connects $L,T$ has the same chemical potential. $V_{L,T}$ then measures the zero longitudinal resistance. 
+
+If the carrier is electron, then the current flows counterclockwise. Then $V_{L,R},V_{L,T}$ gives the Hall resistance. $V_{T,R}$ gives the zero longitudinal resistance. The reasoning is similar.
+
+
+
