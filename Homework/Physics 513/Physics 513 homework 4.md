@@ -169,7 +169,92 @@ Notice that this is a function of $r$. So we can write:
 $$\begin{align}
 D_{W}(r) & = - \frac{i}{2(2\pi)^{2}r}\int_{0}^{\infty}dp \frac{p}{\sqrt{ p^{2}+m^{2} }}(e^{ipr}-e^{-ipr})
 \end{align}$$
+We take $r\leadsto r+i\epsilon$ to write:
+$$\int_{0}^{\infty}dp \frac{p}{\sqrt{ p^{2}+m^{2} }}e^{ip(r+i\epsilon)}=\int_{0}^{\infty}dp \frac{p}{\sqrt{ p^{2}+m^{2} }}e^{ipr}e^{-p\epsilon}$$
+We take $r\leadsto r-i\epsilon$ to write:
+$$\begin{align}
+\int_{0}^{\infty}dp \frac{p}{\sqrt{ p^{2}+m^{2} }}e^{-ip(r-i\epsilon)} & = \int_{0}^{\infty}dp \frac{p}{\sqrt{ p^{2}+m^{2} }}e^{ipr}e^{-p\epsilon}
+\end{align}$$
+Now it suffices to compute:
+$$\begin{align}
+\int_{0}^{\infty}dp \frac{p}{\sqrt{ p^{2}+m^{2} }}(e^{ipr}-e^{-ipr})  & = \int_{0}^{\infty} dp \frac{p}{\sqrt{ p^{2}+m^{2} }} e^{-p\epsilon}(e^{ipr}-e^{-ipr}) \\
+& = 2i\int dp  e^{-p\epsilon} \frac{p}{\sqrt{ p^{2}+m^{2} }}\sin(pr) \\
+ & = -2i \int dp e^{-p\epsilon}\frac{1}{\sqrt{ p^{2}+m^{2} }} \frac{\partial}{\partial r}(\cos(pr)) \\
+ & = -2i \frac{\partial}{\partial r}\int_{0}^{\infty}dpe^{-p\epsilon} \frac{\cos(pr)}{\sqrt{ p^{2}+m^{2} }}
+\end{align}$$
+We change the variable by setting $p=m\sinh t$. Then clearly:
+$$\begin{align}
+\int_{0}^{\infty}dp e^{-p\epsilon}\frac{\cos(pr)}{\sqrt{ p^{2}+m^{2} }} & = \int_{0}^{\infty} e^{-m\epsilon\sinh t}m \cosh tdt \frac{\cos(mr\sinh t)}{m\cosh t} \\
+ & = \int_{0}^{\infty}dt e^{-m\epsilon \sinh t}\cos(mr\sinh t) \\
+\end{align}$$
+Here we take $\epsilon\rightarrow 0$. Then:
+$$\begin{align}
+\lim_{ \epsilon \to 0^{+} }  \int_{0}^{\infty}dpe^{-p\epsilon} \frac{\cos(pr)}{\sqrt{ p^{2}+m^{2} }} & = \int_{0}^{\infty}dt \cos(mr\sinh t) \\
+ & = K_{0}(mr) 
+\end{align}$$Then:
+$$\begin{align}
+\frac{\partial}{\partial r}K_{0}(mr) & = -mK_{1}(mr)
+\end{align}$$
+Therefore:
+$$\begin{align}
+D_{W}(x) & = - \frac{i}{2(2\pi)^{2}r}(-2i) \lim_{ \epsilon \to 0^{+} }  \frac{\partial}{\partial r}\int_{0}^{\infty}dp  e^{-p\epsilon} \frac{\cos(pr)}{\sqrt{ p^{2}+m^{2} }}\\  & = - \frac{i}{2(2\pi)^{2}r}(-2i) \frac{\partial}{\partial r}K_{0}(mr)\\
 
+ & = - \frac{i}{2(2\pi)^{2}r}(-2i)(-m)K_{1}(mr) \\
+ & = \frac{m}{(2\pi)^{2}r}K_{1}(mr) \\
+ & = \frac{m}{4\pi^{2}\sqrt{ -x^{2} }}K_{1}(m\sqrt{ -x^{2} })
+\end{align}$$
+## (b)
+
+We have:
+$$\begin{align}
+\bra{0}[\phi(x),\phi(0)]\ket{0}  & = \bra{0} \phi(x)\phi(0)\ket{0} - \bra{0} \phi(0)\phi(x)\ket{0}  \\
+ & = D_{W}(x)-D_{W}(-x) \\
+ & = \frac{m}{4\pi^{2}\sqrt{ -x^{2} }}K_{1}(m\sqrt{ -x^{2} })- \frac{m}{4\pi^{2}\sqrt{ -x^{2} }}K_{1}(m\sqrt{ -x^{2} }) \\
+ & = 0
+\end{align}$$
+Then the commutator function just gives $D(x)=0$. 
+
+Next we compute the Wightman function:
+$$\begin{align}
+D_{1}(x) & = \bra{0} \{ \phi(x),\phi(0) \} \ket{0}  \\
+ & = D_{W}(x)+D_{W}(-x) \\
+ & = \frac{m}{2\pi^{2}\sqrt{ -x^{2} }}K_{1}(m\sqrt{ -x^{2} })
+\end{align}$$
+Witch back to $-x^{2}=r^{2}$. Take $r\rightarrow \infty$, we have:
+$$\begin{align}
+D_{1}(r) & \approx \frac{m}{2\pi^{2}r} \sqrt{ \frac{\pi}{2r} }e^{-r} \\
+ &= \frac{1}{2\sqrt{ 2 }\pi^{3/2} } m \frac{e^{-r}}{r^{3 /2}} 
+\end{align}$$
+# Problem 4
+## (a)
+
+Say $x^{0}> y^{0}$. Then $T(\phi(x)\phi(y))=\phi(x)\phi(y)$. Say $y^{0}>x^{0}$, we get the opposite: $T(\phi(x)\phi(y))=\phi(y)\phi(x)$. Therefore, we have:
+$$\begin{align}
+T(\phi(x)\phi(y)) & = \theta(x^{0}-y^{0}) \phi(x)\phi(y)+\theta(y^{0}-x^{0})\phi(y)\phi(x)
+\end{align}$$
+$$\begin{align}
+\bra{0} \phi(x)\phi(y)\ket{0}  & = \bra{0} \int \frac{d^{3}pd^{3}p^{'}}{(2\pi)^{6}} \frac{1}{2\sqrt{ \omega_{\mathbf{p}}\omega_{\mathbf{p}^{'}} } } (a_{\mathbf{p}}e^{-ip\cdot x}+a^{\dagger}_{\mathbf{p}}e^{ip\cdot x})(a_{\mathbf{p}^{'}}e^{-ip^{'}\cdot y}+a^{\dagger}_{\mathbf{p}^{'}}e^{ip^{'}\cdot y})\ket{0} \\
+ & = \int \frac{d^{3}pd^{3}p^{'}}{(2\pi)^{6}} \frac{1}{2\sqrt{ \omega_{\mathbf{p}}\omega_{\mathbf{p}^{'}} }}\bra{0} a_{\mathbf{p}}a^{\dagger}_{\mathbf{p}^{'}}\ket{0} e^{-ip\cdot x}e^{ip^{'}\cdot y} \\ 
+\end{align}$$
+Since $a_{\mathbf{p}}a^{\dagger}_{\mathbf{p}^{'}}=a^{\dagger}_{\mathbf{p}^{'}}a_{\mathbf{p}}+(2\pi)^{3}\delta(\mathbf{p}-\mathbf{p}^{'})$, and $\bra{0}a^{\dagger}_{\mathbf{p}^{'}}a_{\mathbf{p}}\ket{0}=0$. Then:
+$$\begin{align}
+\bra{0} \phi(x)\phi(y)\ket{0}  & = \int \frac{d^{3}p}{(2\pi)^{3}} \frac{1}{2E_{\mathbf{p}}}e^{-ip\cdot(x-y)}
+\end{align}$$
+Define this as $D_{W}(x-y)$. By the same manner, $\bra{0}\phi(y)\phi(x)\ket{0}=D_{W}(y-x)$. Then:
+$$\begin{align}
+\bra{0} T(\phi(x)\phi(y))\ket{0}  & = \theta(x^{0}-y^{0})\bra{0} \phi(x)\phi(y)\ket{0} +\theta(y^{0}-x^{0})\bra{0} \phi(y)\phi(x)\ket{0}  \\
+ & = \theta(x^{0}-y^{0})D_{W}(x-y)+\theta(y^{0}-x^{0})D_{W}(y-x)
+\end{align}$$
+## (b)
+
+We have:
+$$\begin{align}
+(\Box+m^{2})D_{W}(x-y) & = \int \frac{d^{3}p}{(2\pi)^{3}} \frac{1}{2E_{\mathbf{p}}}(\partial_{\mu}\partial^{\mu}+m^{2})e^{-ip\cdot(x-y)} \\
+ & = \int \frac{d^{3}p}{(2\pi)^{3}} \frac{1}{2E_{\mathbf{p}}}(-p^{2}+m^{2})e^{-ip\cdot(x-y)} \\
+ & = \int \frac{d^{3}p}{(2\pi)^{3}} \frac{1}{2E_{\mathbf{p}}}(-E_{\mathbf{p}}^{2}+|\mathbf{p}|^{2}+m^{2})e^{-ip\cdot(x-y)} \\
+ & = 0
+\end{align}$$
+## (c)
 
 
 
