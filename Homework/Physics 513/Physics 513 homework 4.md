@@ -105,14 +105,15 @@ $$\begin{align}
 \int_{0}^{\infty}dr e^{-ir(t-i\epsilon)}\sin(r|\mathbf{x}|) & = \frac{1}{2i}\int_{0}^{\infty} dr e^{-irt-r\epsilon}(e^{ir|\mathbf{x}|}-e^{-ir|\mathbf{x}|}) \\
  & = \frac{1}{2i}\left(  \frac{1}{i|\mathbf{x}|-it-\epsilon} - \frac{1}{-i|\mathbf{x}|-it-\epsilon} \right) \\
  & = \frac{1}{2i} \frac{-2i|\mathbf{x}|}{(it+\epsilon)^{2}+|\mathbf{x}|^{2}} \\
- & = \frac{-1}{(it+\epsilon)^{2}+|\mathbf{x}|^{2}}
+ & = \frac{-|\mathbf{x}|}{(it+\epsilon)^{2}+|\mathbf{x}|^{2}}
 \end{align}$$
-We take $\epsilon\rightarrow 0$. Then we get:
+Then we get:
 $$\begin{align}
-D_{W}(x) & = \lim_{ \epsilon \to 0 } \frac{1}{2(2\pi)^{3}} \cdot \frac{-4\pi}{|\mathbf{x}|}  \frac{-1}{(it+\epsilon)^{2}+|\mathbf{x}|^{2}} \\
- & = \frac{1}{4\pi^{2}} \frac{1}{|\mathbf{x}|^{2}-t^{2}} \\
- & = - \frac{1}{4\pi^{2}} \frac{1}{x^{2}}
+D_{W}(x) & =  \frac{1}{2(2\pi)^{3}} \cdot (-4\pi)  \frac{-1}{(it+\epsilon)^{2}+|\mathbf{x}|^{2}} \\
+ & = \frac{1}{4\pi^{2}} \frac{1}{|\mathbf{x}|^{2}-(t-i\epsilon)^{2}} 
 \end{align}$$
+
+
 
 
 
