@@ -294,3 +294,7 @@ $$\begin{align}
 # Problem 5
 ## (a)
 
+We compute:
+$$\begin{align}
+[\mathcal{J}^{\mu \nu},\mathcal{J}^{\rho \sigma}]^{\alpha}{}_{\beta} & = (\mathcal{J}^{\mu \nu})^{\alpha}{}_{\gamma}(\mathcal{J}^{\rho \sigma})^{\gamma}{}_{\beta}- (\mathcal{J}^{\rho \sigma})^{\alpha}{}_{\gamma}(\mathcal{J}^{\mu \nu})^{\gamma}{}_{\beta} 
+\end{align}$$
