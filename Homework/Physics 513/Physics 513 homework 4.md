@@ -145,6 +145,31 @@ D_{1}(x) & = \bra{0} \{ \phi(x),\phi(0) \}\ket{0}  \\
 # Problem 3
 ## (a)
 
+Recall that Wightman function is defined as:
+$$D_{W}(x)= \int \frac{d^{3}p}{(2\pi)^{3}} \frac{e^{-ip\cdot x}}{2E_{\mathbf{p}}}$$
+In the last homework, we showed that $\frac{d^{3}p}{E_{\mathbf{p}}}$ is Lorentz-invariant. Also notice that $p\cdot x$ is Lorentz-invariant.
+
+Then we are free to choose reference frame such that $x^{'\mu}=(0,\mathbf{r})$. This is always possible for a spacelike $x$. Suppose in the frame $\mathcal{O}$, we choose the x axis to be parallel to the spatial coordinate. Then we consider a Lorentz boost in the x direction with $v= \frac{t}{x}< 1$. Then:
+$$\begin{align}
+t^{'}= \gamma t-\gamma v x=0
+\end{align}$$
+And we clearly have:
+$$x^{'2}=-r^{2}=x^{2}$$
+Here we denote $r=|\mathbf{r}|$. Then in the new frame, we have:
+$$\begin{align}
+D_{W}(x^{'})  & = \int \frac{d^{3}p^{'}}{(2\pi)^{3}} \frac{e^{-ip^{'}\cdot x^{'}}}{2E_{\mathbf{p}^{'}}} \\
+ & = \frac{1}{2(2\pi)^{3}}\int d\phi d\theta dp^{'} p^{'2} \sin \theta \frac{e^{ip^{'}r\cos \theta}}{E_{\mathbf{p}^{'}}}  \\
+ & =  \frac{-1}{2(2\pi)^{3}} 2\pi \int dp^{'}p^{'2}  \frac{1}{ip^{'}r} \frac{1}{E_{\mathbf{p}^{'}}}(e^{-ip^{'}r}-e^{ip^{'}r})
+\end{align}$$
+We rewrite $p^{'}$ as $p$, then we get:
+$$\begin{align}
+D_{W}(x^{'}) & = - \frac{i}{2(2\pi)^{2}r}\int_{0}^{\infty}dp \frac{p}{\sqrt{ p^{2}+m^{2} }}(e^{ipr}-e^{-ipr})
+\end{align}$$
+Notice that this is a function of $r$. So we can write:
+$$\begin{align}
+D_{W}(r) & = - \frac{i}{2(2\pi)^{2}r}\int_{0}^{\infty}dp \frac{p}{\sqrt{ p^{2}+m^{2} }}(e^{ipr}-e^{-ipr})
+\end{align}$$
+
 
 
 
