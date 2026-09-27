@@ -114,30 +114,38 @@ D_{W}(x) & =  \frac{1}{2(2\pi)^{3}} \cdot (-4\pi)  \frac{-1}{(it+\epsilon)^{2}+|
 \end{align}$$
 ## (b)
 
-Clearly, we have:
+We first compute:
 $$\begin{align}
-\bra{0} \phi(0)\phi(x)\ket{0} =iD(-x)
+D_{W}(x) & = \frac{1}{4\pi^{2}} \frac{1}{|\mathbf{x}|^{2}-(t-i\epsilon)^{2}} \\
+ & = \frac{1}{4\pi^{2}} \frac{1}{|\mathbf{x}|^{2}-t^{2}+\epsilon^{2}+2i\epsilon t} \\
+ & = \frac{1}{4\pi^{2}} \frac{1}{|\mathbf{x}|^{2}-t^{2}+2i\epsilon t} \\
+ & = \frac{1}{4\pi^{2}}\left(  \frac{P}{|\mathbf{x}|^{2}-t^{2}}-i\pi\text{sgn}(t)\delta(|\mathbf{x}|^{2}-t^{2}) \right)
 \end{align}$$
-Then we get:
+We know that :
+$$\begin{align}
+iD_{W}(-x)= \bra{0} \phi(0)\phi(x)\ket{0} 
+\end{align}$$
+Then:
 $$\begin{align}
 \bra{0} [\phi(x),\phi(0)]\ket{0}  & = D_{W}(x)-D_{W}(-x) \\
- & = \frac{1}{4\pi^{2}}\left[  \frac{1}{|\mathbf{x}|^{2}-(t-i\epsilon)^{2}}- \frac{1}{|\mathbf{x}|^{2}-(-t-i\epsilon)^{2}} \right] \\
- & = \frac{1}{4\pi^{2}} \frac{-4i\epsilon t }{(|\mathbf{x}|^{2}-(t-i\epsilon)^{2}  )(|\mathbf{x}|^{2}-(t+i\epsilon)^{2})} \\
- & = - \frac{i\epsilon t}{\pi^{2} } \frac{1}{(|\mathbf{x}|^{2}-(t-i\epsilon)^{2})(|\mathbf{x}|^{2}-(t+i\epsilon)^{2})} \\
- & = - \frac{i\epsilon t}{\pi^{2} } \frac{1}{(|\mathbf{x}|^{2}-t^{2}+\epsilon^{2})^{2}+4\epsilon^{2}t^{2}}
+ & = \frac{1}{4\pi^{2}}\left[  \frac{P}{|\mathbf{x}|^{2}-t^{2}}-i\pi\text{sgn}(t)\delta(|\mathbf{x}|^{2}-t^{2})- \frac{P}{|\mathbf{x}|^{2}-t^{2}}-i\pi\text{sgn}(-t)\delta(|\mathbf{x}|^{2}-t^{2})  \right] \\
+ & = \frac{-i}{2\pi^{}}\text{sgn}(t)\delta(|\mathbf{x}|^{2}-t^{2})
 \end{align}$$
-Then the commutator function is given by:
+Then we have:
 $$\begin{align}
-D(x) & = = - \frac{\epsilon t}{\pi^{2} } \frac{1}{(|\mathbf{x}|^{2}-t^{2}+\epsilon^{2})^{2}+4\epsilon^{2}t^{2}}
+D(x) & = - \frac{1}{2\pi}\text{sgn}(t)\delta(|\mathbf{x}|^{2}-t^{2})
 \end{align}$$
 Similarly, the Hadamard function is given by:
 $$\begin{align}
 D_{1}(x) & = \bra{0} \{ \phi(x),\phi(0) \}\ket{0}  \\
  & = D_{W}(x)+D_{W}(-x) \\
- & = \frac{1}{4\pi^{2}}\left[  \frac{1}{|\mathbf{x}|^{2}-(t-i\epsilon)^{2}}+ \frac{1}{|\mathbf{x}|^{2}-(t+i\epsilon)^{2} } \right] \\
- & = \frac{1}{2\pi^{2}} \frac{|\mathbf{x}|^{2}-t^{2}+\epsilon^{2}}{(|\mathbf{x}|^{2}-(t-i\epsilon)^{2})(|\mathbf{x}|^{2}-(t+i\epsilon)^{2})} \\
- & = \frac{1}{2\pi^{2}} \frac{|\mathbf{x}|^{2}-t^{2}+\epsilon^{2}}{(|\mathbf{x}|^{2}-t^{2}+\epsilon^{2})^{2}+4\epsilon^{2}t^{2}}
+ & = \frac{1}{4\pi^{2}}\left[  \frac{P}{|\mathbf{x}|^{2}-t^{2}}-i\pi\text{sgn}(t)\delta(|\mathbf{x}|^{2}-t^{2})+ \frac{P}{|\mathbf{x}|^{2}-t^{2}}-i\pi\text{sgn}(-t)\delta(|\mathbf{x}|^{2}-t^{2})  \right] \\
+ & = \frac{1}{2\pi^{2}} \frac{P}{|\mathbf{x}|^{2}-t^{2}}
 \end{align}$$
+# Problem 3
+## (a)
+
+
 
 
 
