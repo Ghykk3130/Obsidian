@@ -88,5 +88,31 @@ I & = \int_{-\infty}^{\infty}dx \frac{1}{1+x^{2}} \\
  & = \frac{\pi}{2}-\left( - \frac{\pi}{2} \right) \\
  & = \pi
 \end{align}$$
+# Problem 2
+## (a)
+
+We need to evaluate:
+$$\begin{align}
+\int d^{3}p \frac{e^{-ip\cdot x}}{E_{\mathbf{p}}} & = \int d\phi d\theta dr r^{2}\sin \theta \frac{e^{-iE_{\mathbf{p}}t}e^{ir|\mathbf{x}|\cos \theta}}{E_{\mathbf{p}}} \\
+ & = -2\pi \int d(\cos \theta) \int_{0}^{\infty}dr r^{2} \frac{e^{-iE_{\mathbf{p}}t}e^{ir|\mathbf{x}|\cos \theta}}{E_{\mathbf{p}}} \\
+ &= -2\pi \int dr r^{2} \frac{e^{-iE_{\mathbf{p}}t}}{E_{\mathbf{p}}} \frac{1}{ir|\mathbf{x}|} (e^{ir|\mathbf{x}|}-e^{-ir|\mathbf{x}|} ) \\
+ & = -4\pi \int dr \frac{r}{|\mathbf{x}|}  \frac{e^{-iE_{\mathbf{p}}t}}{E_{\mathbf{p}}}\sin(r|\mathbf{x}|) \\
+ & = -4\pi \int_{0}^{\infty} dr  \frac{r}{|\mathbf{x}|}  \frac{e^{-irt}}{r} \sin(r|\mathbf{x}|)   \\
+ & = -4\pi \int_{0}^{\infty}dr \frac{1}{|\mathbf{x}|} e^{-irt}\sin(r|\mathbf{x}|)
+\end{align}$$
+For convergence, we replace $t\leadsto t-i\epsilon$. We have:
+$$\begin{align}
+\int_{0}^{\infty}dr e^{-ir(t-i\epsilon)}\sin(r|\mathbf{x}|) & = \frac{1}{2i}\int_{0}^{\infty} dr e^{-irt-r\epsilon}(e^{ir|\mathbf{x}|}-e^{-ir|\mathbf{x}|}) \\
+ & = \frac{1}{2i}\left(  \frac{1}{i|\mathbf{x}|-it-\epsilon} - \frac{1}{-i|\mathbf{x}|-it-\epsilon} \right) \\
+ & = \frac{1}{2i} \frac{-2i|\mathbf{x}|}{(it+\epsilon)^{2}+|\mathbf{x}|^{2}} \\
+ & = \frac{-1}{(it+\epsilon)^{2}+|\mathbf{x}|^{2}}
+\end{align}$$
+We take $\epsilon\rightarrow 0$. Then we get:
+$$\begin{align}
+D_{W}(x) & = \frac{1}{2(2\pi)^{3}} \cdot \frac{-4\pi}{|\mathbf{x}|}  \frac{-1}{(it+\epsilon)^{2}+|\mathbf{x}|^{2}} \\
+ & = 
+\end{align}$$
+
+
 
 
