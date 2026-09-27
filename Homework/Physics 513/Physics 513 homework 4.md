@@ -9,31 +9,25 @@ $$\begin{align}
 \end{align}$$
 ## (b)
 
-If the contour is traversed in the clockwise direction, then we take $\int_{2\pi}^{0}=- \int_{0}^{2\pi}$. Then the result is just $-2\pi i$.
+If the contour is traversed in the clockwise direction, then we take $\int_{2\pi}^{0} d\theta=- \int_{0}^{2\pi}d\theta$. The integral just gets a minus sign. Then the result is just $-2\pi i$.
 ## (c)
 
-If $n=0$, we clearly have:
+We have:
 $$\begin{align}
-\int_{\mathcal{C}}dz=0
-\end{align}$$
-since we go back to the starting point.
-
-If $n=1$, we get $2\pi i$ as in part (a).
-
-If $n>1$, we have:
-$$\begin{align}
-\int_{\mathcal{C}}dz \frac{1}{z^{n} } & = \int_{0}^{2\pi} Ri e^{i\theta}d\theta \frac{1}{R^{n}e^{ni\theta}} \\
- & = \frac{i}{R^{n-1}} \int_{0}^{2\pi}d\theta e^{(1-n)i\theta} \\
- & = \frac{i}{R^{n-1}} \frac{1}{(1-n)i}[e^{(1-n)i\theta}]_{0}^{2\pi} \\
+\int_{\mathcal{C}}dz z^{n} & = \int_{0}^{2\pi} d\theta i\mathrm{Re}^{i\theta} R^{n}e^{ in \theta} \\
+ & = iR^{n+1} \frac{1}{i(n+1)}[e^{i(n+1)\theta}]^{2\pi}_{0} \\
  & = 0
 \end{align}$$
+This is because $(n+1)\in \mathbb{Z}$, which dictates the exponential to rotate back to the starting point. 
 ## (d)
 
-For $n\leq -1$ we still have:
+For $n=-1$ we just computed the result in part (a), which is $2\pi i$.
+
+For $n< -1$ we still have:
 $$\begin{align}
-\int_{\mathcal{C}}dz \frac{1}{z^{n} } & = \int_{0}^{2\pi} Ri e^{i\theta}d\theta \frac{1}{R^{n}e^{ni\theta}} \\
- & = \frac{i}{R^{n-1}} \int_{0}^{2\pi}d\theta e^{(1-n)i\theta} \\
- & = \frac{i}{R^{n-1}} \frac{1}{(1-n)i}[e^{(1-n)i\theta}]_{0}^{2\pi} \\
+\int_{\mathcal{C}}dz z^{n} & = \int_{0}^{2\pi} Ri e^{i\theta}d\theta R^{n}e^{ni\theta} \\
+ & = iR^{n+1} \int_{0}^{2\pi}d\theta e^{(1+n)i\theta} \\
+ & = iR^{n+1} \frac{1}{(1+n)i}[e^{(1+n)i\theta}]_{0}^{2\pi} \\
  & = 0
 \end{align}$$
 ## (e)
@@ -44,8 +38,8 @@ $$\begin{align}
 \end{align}$$
 For $R\rightarrow \infty$ the integrand is suppressed to zero. We have:
 $$\begin{align}
- & \left|\int_{0}^{\pi} d\phi \frac{1}{1+R^{2}e^{2i\phi}} \right|\leq \int_{0}^{\pi}d\phi \left| \frac{1}{1+R^{2}e^{2i\phi}} \right|=0 \\
-\implies & \int_{0}^{\pi}d\phi \frac{1}{1+R^{2}e^{2i\phi}}  =0
+ & \left|\int_{0}^{\pi} d\phi \frac{1}{1+R^{2}e^{2i\phi}} \right|\leq \int_{0}^{\pi}d\phi \left| \frac{1}{1+R^{2}e^{2i\phi}} \right|\rightarrow0\text{ as }R\rightarrow \infty \\
+\implies & \int_{0}^{\pi}d\phi \frac{1}{1+R^{2}e^{2i\phi}}  \rightarrow  0\text{ as }R\rightarrow \infty
 \end{align}$$
 Then the integral does not change its value by the closing of the contour.
 ## (f)
@@ -68,7 +62,7 @@ $$\begin{align}
  & = \pi
 \end{align}$$
 The $\frac{1}{z+i}$ does not contribute since its pole is not enclosed by the contour. 
-## (f)
+## (h)
 
 If we close the contour in the lower half-plane, then since we are going clockwise, we get a minus sign:
 $$\begin{align}
@@ -78,7 +72,7 @@ $$\begin{align}
  & = \pi
 \end{align}$$
 Here only the pole $z_{0}^{'}=-i$ contributes.
-## (h)
+## (i)
 
 We have:
 $$\begin{align}
@@ -123,7 +117,7 @@ D_{W}(x) & = \frac{1}{4\pi^{2}} \frac{1}{|\mathbf{x}|^{2}-(t-i\epsilon)^{2}} \\
 \end{align}$$
 We know that :
 $$\begin{align}
-iD_{W}(-x)= \bra{0} \phi(0)\phi(x)\ket{0} 
+D_{W}(-x)= \bra{0} \phi(0)\phi(x)\ket{0} 
 \end{align}$$
 Then:
 $$\begin{align}
@@ -223,8 +217,8 @@ D_{1}(x) & = \bra{0} \{ \phi(x),\phi(0) \} \ket{0}  \\
 \end{align}$$
 Witch back to $-x^{2}=r^{2}$. Take $r\rightarrow \infty$, we have:
 $$\begin{align}
-D_{1}(r) & \approx \frac{m}{2\pi^{2}r} \sqrt{ \frac{\pi}{2r} }e^{-r} \\
- &= \frac{1}{2\sqrt{ 2 }\pi^{3/2} } m \frac{e^{-r}}{r^{3 /2}} 
+D_{1}(r) & \approx \frac{m}{2\pi^{2}r} \sqrt{ \frac{\pi}{2mr} }e^{-mr} \\
+ &= \frac{1}{2\sqrt{ 2 }\pi^{3/2} } \sqrt{ m } \frac{e^{-mr}}{r^{3 /2}} 
 \end{align}$$
 # Problem 4
 ## (a)
@@ -278,7 +272,7 @@ $$\begin{align}
  & = \partial_{t}\delta(x^{0}-y^{0}) \bra{0 } [\phi(x),\phi(y)]\ket{0} + \delta(x^{0}-y^{0}) \partial_{t}\bra{0} [\phi(x),\phi(y)]\ket{0}  \\
  & = \delta(x^{0}-y^{0})\partial_{t}\bra{0} [\phi(x),\phi(y)]\ket{0} 
 \end{align}$$
-We compute:
+Here we used the relation $[\phi(x),\phi(y)]=0$ for equal-times commutator. We are allowed to use it because in the second to last line, we $x^{0}=y^{0}$ due to the Dirac delta. We compute:
 $$\begin{align}
 \partial_{t}\bra{0} [\phi(x),\phi(y)]\ket{0}  & = \bra{0} [\partial_{t}\phi(x),\phi(y)]\ket{0}  \\
  & = \bra{0} [\pi(x),\phi(y)]\ket{0}  \\
@@ -358,7 +352,8 @@ $$\begin{align}
 By replacing $\mu\leftrightarrow \nu,\ \sigma\leftrightarrow \rho$, we obtain:
 $$\begin{align}
 [\gamma^{\nu}\gamma^{\mu},\gamma^{\sigma}\gamma^{\rho}]-[\gamma^{\mu}\gamma^{\nu},\gamma^{\sigma}\gamma^{\rho}] & = \frac{8}{i}(g^{\mu \sigma}S^{\nu \rho}-g^{\mu \rho}S^{\nu \sigma}+g^{\nu \sigma}S^{\rho \mu}-g^{\nu \rho}S^{\sigma \mu})
-\end{align}$$Then recall that $S^{\mu \nu}= \frac{i}{4}[\gamma^{\mu},\gamma^{\nu}]=- \frac{i}{4}[\gamma^{\nu},\gamma^{\mu}]=-S^{\nu \mu}$. We add together the results above:
+\end{align}$$
+Then recall that $S^{\mu \nu}= \frac{i}{4}[\gamma^{\mu},\gamma^{\nu}]=- \frac{i}{4}[\gamma^{\nu},\gamma^{\mu}]=-S^{\nu \mu}$. We add together the results above:
 $$\begin{align}
 [S^{\mu \nu},S^{\rho \sigma}] & = - \frac{1}{16} \frac{8}{i}(2g^{\nu \rho}S^{\mu \sigma}-2g^{\nu \sigma}S^{\mu \rho}+2g^{\mu \rho}S^{\sigma \nu}-2g^{\mu \sigma}S^{\rho \nu}) \\
  & = i(g^{\nu \rho}S^{\mu \sigma}-g^{\nu \sigma}S^{\mu \rho}+g^{\mu \rho}S^{\sigma \nu}-g^{\mu \sigma}S^{\rho \nu}) \\
