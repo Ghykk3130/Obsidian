@@ -108,12 +108,16 @@ D_{W}(x) & =  \frac{1}{2(2\pi)^{3}} \cdot (-4\pi)  \frac{-1}{(it+\epsilon)^{2}+|
 \end{align}$$
 ## (b)
 
-We first compute:
+We first want to rewrite the Wightman function. We have:
 $$\begin{align}
-D_{W}(x) & = \frac{1}{4\pi^{2}} \frac{1}{|\mathbf{x}|^{2}-(t-i\epsilon)^{2}} \\
- & = \frac{1}{4\pi^{2}} \frac{1}{|\mathbf{x}|^{2}-t^{2}+\epsilon^{2}+2i\epsilon t} \\
- & = \frac{1}{4\pi^{2}} \frac{1}{|\mathbf{x}|^{2}-t^{2}+2i\epsilon t} \\
- & = \frac{1}{4\pi^{2}}\left(  \frac{P}{|\mathbf{x}|^{2}-t^{2}}-i\pi\text{sgn}(t)\delta(|\mathbf{x}|^{2}-t^{2}) \right)
+\frac{1}{(t-i\epsilon)^{2}-|\mathbf{x}|^{2}} & = \frac{1}{(t-|\mathbf{x}|-i\epsilon)(t+|\mathbf{x}|-i\epsilon)} \\
+ & = \frac{1}{2r} \frac{t+|\mathbf{x}|-i\epsilon-(t-|\mathbf{x}|-i\epsilon)}{(t-|\mathbf{x}|-i\epsilon)(t+|\mathbf{x}|-i\epsilon)} \\
+ & = \frac{1}{2r}\left(  \frac{1}{t-|\mathbf{x}|-i\epsilon}- \frac{1}{t+|\mathbf{x}|-i\epsilon}  \right)
+\end{align}$$
+Then we compute:
+$$\begin{align}
+D_{W}(x) & = \frac{1}{8\pi^{2}r}\left(  \frac{1}{t+|\mathbf{x}|-i\epsilon}- \frac{1}{t-|\mathbf{x}|-i\epsilon} \right) \\
+ & = \frac{1}{8\pi^{2}r}\left(  \frac{P}{t+|\mathbf{x}|}- \frac{P}{t-|\mathbf{x}|} +i\pi\delta(t+|\mathbf{x}|)-i\pi\delta(t-|\mathbf{x}|)\right)
 \end{align}$$
 We know that :
 $$\begin{align}
@@ -122,19 +126,19 @@ D_{W}(-x)= \bra{0} \phi(0)\phi(x)\ket{0}
 Then:
 $$\begin{align}
 \bra{0} [\phi(x),\phi(0)]\ket{0}  & = D_{W}(x)-D_{W}(-x) \\
- & = \frac{1}{4\pi^{2}}\left[  \frac{P}{|\mathbf{x}|^{2}-t^{2}}-i\pi\text{sgn}(t)\delta(|\mathbf{x}|^{2}-t^{2})- \frac{P}{|\mathbf{x}|^{2}-t^{2}}-i\pi\text{sgn}(-t)\delta(|\mathbf{x}|^{2}-t^{2})  \right] \\
- & = \frac{-i}{2\pi^{}}\text{sgn}(t)\delta(|\mathbf{x}|^{2}-t^{2})
+ & = \frac{1}{8\pi^{2}r}(2i\pi\delta(t+|\mathbf{x}|)-2i\pi\delta(t-|\mathbf{x}|)) \\
+ & = \frac{i}{4\pi^{}r}(\delta(t+|\mathbf{x}|)-\delta(t-|\mathbf{x}|))
 \end{align}$$
 Then we have:
 $$\begin{align}
-D(x) & = - \frac{1}{2\pi}\text{sgn}(t)\delta(|\mathbf{x}|^{2}-t^{2})
+D(x) & = \frac{1}{4\pi^{}r}(\delta(t+|\mathbf{x}|)-\delta(t-|\mathbf{x}|))
 \end{align}$$
 Similarly, the Hadamard function is given by:
 $$\begin{align}
 D_{1}(x) & = \bra{0} \{ \phi(x),\phi(0) \}\ket{0}  \\
  & = D_{W}(x)+D_{W}(-x) \\
- & = \frac{1}{4\pi^{2}}\left[  \frac{P}{|\mathbf{x}|^{2}-t^{2}}-i\pi\text{sgn}(t)\delta(|\mathbf{x}|^{2}-t^{2})+ \frac{P}{|\mathbf{x}|^{2}-t^{2}}-i\pi\text{sgn}(-t)\delta(|\mathbf{x}|^{2}-t^{2})  \right] \\
- & = \frac{1}{2\pi^{2}} \frac{P}{|\mathbf{x}|^{2}-t^{2}}
+ & = \frac{1}{8\pi^{2}r}\left(  \frac{2P}{t+|\mathbf{x}|} - \frac{2P}{t-|\mathbf{x}|}\right) \\
+ & = \frac{1}{4\pi^{2} r}\left(  \frac{P}{t+|\mathbf{x}|} - \frac{P}{t-|\mathbf{x}|}\right)
 \end{align}$$
 # Problem 3
 ## (a)
