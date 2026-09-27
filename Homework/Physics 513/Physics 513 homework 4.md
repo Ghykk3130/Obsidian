@@ -191,7 +191,8 @@ Here we take $\epsilon\rightarrow 0$. Then:
 $$\begin{align}
 \lim_{ \epsilon \to 0^{+} }  \int_{0}^{\infty}dpe^{-p\epsilon} \frac{\cos(pr)}{\sqrt{ p^{2}+m^{2} }} & = \int_{0}^{\infty}dt \cos(mr\sinh t) \\
  & = K_{0}(mr) 
-\end{align}$$Then:
+\end{align}$$
+Then:
 $$\begin{align}
 \frac{\partial}{\partial r}K_{0}(mr) & = -mK_{1}(mr)
 \end{align}$$
@@ -332,4 +333,35 @@ $$\begin{align}
  & = (\mathcal{J}^{\rho \sigma})^{\mu}{}_{\nu}\gamma^{\nu}
 \end{align}$$
 ## (c)
+
+We compute:
+$$\begin{align}
+[S^{\mu \nu},S^{\rho \sigma}] & = - \frac{1}{16}\left[[\gamma^{\mu},\gamma^{\nu}],[\gamma^{\rho},\gamma^{\sigma}]\right] \\
+ & = - \frac{1}{16}([\gamma^{\mu}\gamma^{\nu},\gamma^{\rho}\gamma^{\sigma}]-[\gamma^{\nu}\gamma^{\mu},\gamma^{\rho}\gamma^{\sigma}]-[\gamma^{\mu}\gamma^{\nu},\gamma^{\sigma}\gamma^{\rho}]+[\gamma^{\nu}\gamma^{\mu},\gamma^{\sigma}\gamma^{\rho}])
+\end{align}$$
+We have:
+$$\begin{align}
+[\gamma^{\mu}\gamma^{\nu},\gamma^{\rho}\gamma^{\sigma}] & = \gamma^{\mu}[\gamma^{\nu},\gamma^{\rho}\gamma^{\sigma}]+[\gamma^{\mu},\gamma^{\rho}\gamma^{\sigma}]\gamma^{\nu} \\
+ & = \gamma^{\mu}(\{ \gamma^{\nu},\gamma^{\rho} \}\gamma^{\sigma}-\gamma^{\rho}\{ \gamma^{\nu},\gamma^{\sigma} \})+(\{ \gamma^{\mu},\gamma^{\rho} \}\gamma^{\sigma}-\gamma^{\rho}\{ \gamma^{\mu},\gamma^{\sigma} \})\gamma^{\nu} \\
+ & = 2(g^{\nu \rho}\gamma^{\mu}\gamma^{\sigma}-g^{\nu \sigma}\gamma^{\mu}\gamma^{\rho}+g^{\mu \rho}\gamma^{\sigma}\gamma^{\nu}-g^{\mu \sigma}\gamma^{\rho}\gamma^{\nu}) \\
+
+\end{align}$$
+By replacing $\mu\leftrightarrow \nu$, we obtain:
+$$\begin{align}
+[\gamma^{\nu}\gamma^{\mu},\gamma^{\rho}\gamma^{\sigma}] & = 2(g^{\mu \rho}\gamma^{\nu}\gamma^{\sigma}-g^{\mu \sigma}\gamma^{\nu}\gamma^{\rho}+g^{\nu \rho}\gamma^{\sigma}\gamma^{\mu}-g^{\nu \sigma}\gamma^{\rho}\gamma^{\mu})
+\end{align}$$
+Then:
+$$\begin{align}
+[\gamma^{\mu}\gamma^{\nu},\gamma^{\rho},\gamma^{\sigma}]-[\gamma^{\nu}\gamma^{\mu},\gamma^{\rho}\gamma^{\sigma}] & = 2g^{\nu \rho}[\gamma^{\nu},\gamma^{\sigma}]-2g^{\nu \sigma}[\gamma^{\mu}\gamma^{\rho}]+2g^{\mu \rho}[\gamma^{\sigma},\gamma^{\nu}]-2g^{\mu \sigma}[\gamma^{\rho},\gamma^{\nu}] \\
+ & = \frac{8}{i}(g^{\nu \rho}S^{\nu \sigma}-g^{\nu \sigma}S^{\mu \rho}+g^{\mu \rho}S^{\sigma \nu}-g^{\mu \sigma}S^{\rho \nu})
+\end{align}$$
+By replacing $\mu\leftrightarrow \nu,\ \sigma\leftrightarrow \rho$, we obtain:
+$$\begin{align}
+[\gamma^{\nu}\gamma^{\mu},\gamma^{\sigma}\gamma^{\rho}]-[\gamma^{\mu}\gamma^{\nu},\gamma^{\sigma}\gamma^{\rho}] & = \frac{8}{i}(g^{\mu \sigma}S^{\nu \rho}-g^{\mu \rho}S^{\nu \sigma}+g^{\nu \sigma}S^{\rho \mu}-g^{\nu \rho}S^{\sigma \mu})
+\end{align}$$Then recall that $S^{\mu \nu}= \frac{i}{4}[\gamma^{\mu},\gamma^{\nu}]=- \frac{i}{4}[\gamma^{\nu},\gamma^{\mu}]=-S^{\nu \mu}$. We add together the results above:
+$$\begin{align}
+[S^{\mu \nu},S^{\rho \sigma}] & = - \frac{1}{16} \frac{8}{i}(2g^{\nu \rho}S^{\mu \sigma}-2g^{\nu \sigma}S^{\mu \rho}+2g^{\mu \rho}S^{\sigma \nu}-2g^{\mu \sigma}S^{\rho \nu}) \\
+ & = i(g^{\nu \rho}S^{\mu \sigma}-g^{\nu \sigma}S^{\mu \rho}+g^{\mu \rho}S^{\sigma \nu}-g^{\mu \sigma}S^{\rho \nu}) \\
+ & = i(g^{\nu \rho}S^{\mu \sigma}-g^{\mu \rho}S^{\nu \sigma}-g^{\nu \sigma}S^{\mu \rho}+g^{\mu \sigma}S^{\nu \rho})
+\end{align}$$
 
