@@ -109,9 +109,11 @@ $$\begin{align}
 \end{align}$$
 We take $\epsilon\rightarrow 0$. Then we get:
 $$\begin{align}
-D_{W}(x) & = \frac{1}{2(2\pi)^{3}} \cdot \frac{-4\pi}{|\mathbf{x}|}  \frac{-1}{(it+\epsilon)^{2}+|\mathbf{x}|^{2}} \\
- & = 
+D_{W}(x) & = \lim_{ \epsilon \to 0 } \frac{1}{2(2\pi)^{3}} \cdot \frac{-4\pi}{|\mathbf{x}|}  \frac{-1}{(it+\epsilon)^{2}+|\mathbf{x}|^{2}} \\
+ & = \frac{1}{4\pi^{2}} \frac{1}{|\mathbf{x}|^{2}-t^{2}} \\
+ & = - \frac{1}{4\pi^{2}} \frac{1}{x^{2}}
 \end{align}$$
+
 
 
 
