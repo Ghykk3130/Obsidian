@@ -256,17 +256,41 @@ $$\begin{align}
 \end{align}$$
 ## (c)
 
-If $x^{0}\geq y^{0}$, then:
+We have:
 $$\begin{align}
-(\Box+m^{2})D_{F}(x-y) &= (\Box+m^{2})(\theta(x^{0}-y^{0})D_{W}(x-y)) \\
- & = (\Box\theta)D_{W}+\theta \Box D_{W}+m^{2}\theta D_{W} \\
- & = (\Box\theta)D_{W} \\
- & = \delta(x^{0}-y^{0})D_{W}(x-y)
+D_{F}(x-y) & = \theta(x^{0}-y^{0})D_{W}(x-y)+ \theta(y^{0}-x^{0})D_{W}(y-x) \\
+ & = \theta(x^{0}-y^{0})D_{W}(x-y)+\theta(y^{0}-x^{0})[D_{W}(x-y)- \bra{0} [\phi(x),\phi(y)] \ket{0} ] \\
+ & = D_{W}(x-y)-\theta(y^{0}-x^{0})\bra{0} [\phi(x),\phi(y)]\ket{0} 
 \end{align}$$
+Since $D_{W}(x-y)$ satisfies the homogeneous Klein-Gordon equation, we focus on $-\theta(y^{0}-x^{0})\bra{0}[\phi(x),\phi(y)]\ket{0}$. 
 
-
-
-
-
-
+Observe that:
+$$\begin{align}
+(\Box+m^{2})\bra{0} [\phi(x),\phi(y)]\ket{0}  & = (\Box+m^{2})(D_{W}(x-y)-D_{W}(y-x)) \\
+ & = 0
+\end{align}$$
+Then:
+$$\begin{align}
+(\Box+m^{2})(\theta(y^{0}-x^{0})\bra{0} [\phi(x),\phi(y)]\ket{0} ) & = \Box( \theta \bra{0} [\phi(x),\phi(y)]\ket{0} ) +m^{2}( \theta \bra{0} [\phi(x),\phi(y)]\ket{0} ) \\
+ & = (\Box \theta) \bra{0 } [\phi(x),\phi(y)]\ket{0} + (\partial_{\mu}\theta)\partial^{\mu}\bra{0} [\phi(x),\phi(y)]\ket{0}  \\
+  & + \theta \Box\bra{0} [\phi(x),\phi(y)]\ket{0} + m^{2} \theta \bra{0} [\phi(x),\phi(y)]\ket{0}  \\
+ & = \partial_{t}\delta(x^{0}-y^{0}) \bra{0 } [\phi(x),\phi(y)]\ket{0} + \delta(x^{0}-y^{0}) \partial_{t}\bra{0} [\phi(x),\phi(y)]\ket{0}  \\
+ & = \delta(x^{0}-y^{0})\partial_{t}\bra{0} [\phi(x),\phi(y)]\ket{0} 
+\end{align}$$
+We compute:
+$$\begin{align}
+\partial_{t}\bra{0} [\phi(x),\phi(y)]\ket{0}  & = \bra{0} [\partial_{t}\phi(x),\phi(y)]\ket{0}  \\
+ & = \bra{0} [\pi(x),\phi(y)]\ket{0}  \\
+\end{align}$$
+Since $\delta(x^{0}-y^{0})$ enforces equal time, we evaluate this for equal-times commutator:
+$$\begin{align}
+\bra{0} [\pi(x),\phi(y)]\ket{0} = -i \delta^{3}(\mathbf{x}-\mathbf{y})
+\end{align}$$
+Then:
+$$\begin{align}
+(\Box+m^{2})(\theta(y^{0}-x^{0})\bra{0} [\phi(x),\phi(y)]\ket{0} ) & = \delta(x^{0}-y^{0})(-i)\delta^{3}(\mathbf{x}-\mathbf{y}) \\
+ & = -i\delta(x-y)
+\end{align}$$
+# Problem 5
+## (a)
 
