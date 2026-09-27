@@ -298,3 +298,24 @@ We compute:
 $$\begin{align}
 [\mathcal{J}^{\mu \nu},\mathcal{J}^{\rho \sigma}]^{\alpha}{}_{\beta} & = (\mathcal{J}^{\mu \nu})^{\alpha}{}_{\gamma}(\mathcal{J}^{\rho \sigma})^{\gamma}{}_{\beta}- (\mathcal{J}^{\rho \sigma})^{\alpha}{}_{\gamma}(\mathcal{J}^{\mu \nu})^{\gamma}{}_{\beta} 
 \end{align}$$
+We compute:
+$$\begin{align}
+(\mathcal{J}^{\mu \nu})^{\alpha}{}_{\gamma}(\mathcal{J}^{\rho \sigma})^{\gamma}{}_{\beta} & = (-1)(g^{\mu \alpha}\delta^{\nu}{}_{\gamma}-g^{\nu \alpha}\delta^{\mu}{}_{\gamma})(g^{\rho \gamma}\delta^{\sigma}{}_{\beta}-g^{\sigma \gamma}\delta^{\rho}{}_{\beta} ) \\
+ & = (-1)(g^{\mu \alpha}g^{\rho \nu}\delta^{\sigma}{}_{\beta}-g^{\nu \alpha}g^{\rho \mu}\delta^{\sigma}{}_{\beta}-g^{\mu \alpha}g^{\sigma \nu}\delta^{\rho}{}_{\beta}+g^{\nu \alpha}g^{\sigma \mu}\delta^{\rho}{}_{\beta})
+\end{align}$$
+By replacing $\mu\leftrightarrow \rho,\ \sigma\leftrightarrow \nu$, we obtain:
+$$\begin{align}
+(\mathcal{J}^{\rho \sigma})^{\alpha}{}_{\gamma}(\mathcal{J}^{\mu \nu})^{\gamma}{}_{\beta} & = (-1)(g^{\rho \alpha}g^{\mu \sigma}\delta^{\nu}{}_{\beta}-g^{\sigma \alpha}g^{\mu \rho}\delta^{\nu}{}_{\beta}-g^{\rho \alpha}g^{\nu \sigma}\delta^{\mu}{}_{\beta}+g^{\sigma \alpha}g^{\nu \rho}\delta^{\rho}{}_{\beta})
+\end{align}$$
+Then we have:
+$$\begin{align}
+[\mathcal{J}^{\mu \nu},\mathcal{J}^{\rho \sigma}]^{\alpha}{}_{\beta} & = (-1)(g^{\mu \alpha}g^{\rho \nu}\delta^{\sigma}{}_{\beta}-g^{\nu \alpha}g^{\rho \mu}\delta^{\sigma}{}_{\beta}-g^{\mu \alpha}g^{\sigma \nu}\delta^{\rho}{}_{\beta}+g^{\nu \alpha}g^{\sigma \mu}\delta^{\rho}{}_{\beta}) \\
+ & +(g^{\rho \alpha}g^{\mu \sigma}\delta^{\nu}{}_{\beta}-g^{\sigma \alpha}g^{\mu \rho}\delta^{\nu}{}_{\beta}-g^{\rho \alpha}g^{\nu \sigma}\delta^{\mu}{}_{\beta}+g^{\sigma \alpha}g^{\nu \rho}\delta^{\rho}{}_{\beta}) \\
+ & = (-1)g^{\rho \nu}(g^{\mu \alpha}\delta^{\sigma}{}_{\beta}-g^{\sigma \alpha}\delta^{\rho}{}_{\beta})+g^{\rho \mu}(g^{\nu \alpha}\delta^{\sigma}{}_{\beta}-g^{\sigma \alpha}\delta^{\nu}{}_{\beta}) \\
+ & +g^{\sigma \nu}(g^{\mu \alpha}\delta^{\rho}{}_{\beta}-g^{\rho \alpha}\delta^{\mu}{}_{\beta})-g^{\sigma \mu}(g^{\nu \alpha}\delta^{\rho}{}_{\beta}-g^{\rho \alpha}\delta^{\nu}{}_{\beta}) \\
+ & = i g^{\rho \nu}(\mathcal{J}^{\mu \sigma})^{\alpha}{}_{\beta}-i g^{\rho \mu}(\mathcal{J}^{\nu \sigma})^{\alpha}{}_{\beta}-i g^{\sigma \nu}(\mathcal{J}^{\mu \rho})^{\alpha}{}_{\beta}+i g^{\sigma \mu}(\mathcal{J}^{\nu \rho})^{\alpha}{}_{\beta}
+\end{align}$$
+Therefore, we conclude that:
+$$\begin{align}
+[\mathcal{J}^{\mu \nu},\mathcal{J}^{\rho \sigma}] & = i(g^{\nu \rho}\mathcal{J}^{\mu \sigma}-g^{\mu \rho}\mathcal{J}^{\nu \sigma}-g^{\nu \sigma}\mathcal{J}^{\mu \rho}+g^{\mu \sigma}\mathcal{J}^{\nu \rho})
+\end{align}$$
