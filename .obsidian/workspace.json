@@ -3483,12 +3483,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Homework/Physics 520/Physics 520 homework 4.md",
+                "file": "Homework/Physics 402/Physics 402 homework 1.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Physics 520 homework 4"
+              "title": "Physics 402 homework 1"
             }
           }
         ],
@@ -3546,7 +3546,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "ABCD",
+                "query": "申请",
                 "matchingCase": true,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -3561,8 +3561,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200,
-    "collapsed": true
+    "width": 200
   },
   "right": {
     "id": "9003d078f8dbc4ed",
@@ -3678,8 +3677,18 @@
   },
   "active": "846cb416e4b7dba4",
   "lastOpenFiles": [
-    "Homework/Physics 520/Physics 520 homework 4 problem set.md",
+    "Notes/申请.md",
+    "Homework/Physics 510/Physics 510 Homework 11.md",
+    "Homework/Physics 510/Physics 510 Homework 12.md",
+    "Notes/Untitled 8.md",
+    "Notes/Untitled 9.md",
+    "Notes/Untitled 10.md",
+    "Notes/Untitled 11.md",
+    "Notes/Untitled 12.md",
+    "Notes/Untitled 13.md",
+    "Notes/Untitled 14.md",
     "Homework/Physics 520/Physics 520 homework 4.md",
+    "Homework/Physics 520/Physics 520 homework 4 problem set.md",
     "Homework/Physics 520/Physics 520 homework 3.md",
     "Homework/Physics 402/Physics 402 homework 1.md",
     "Notes/Pedrottis' introduction to optics.md",
@@ -3698,20 +3707,10 @@
     "Homework/Physics 402/Physics 402 Class Prep 1.md",
     "Homework/Physics 513/Physics 513 homework 4.md",
     "Notes/标量场的正则量子化.md",
-    "Notes/光学定理.md",
-    "Notes/申请.md",
-    "Homework/Physics 513/Physics 513 homework 3.md",
-    "Notes/量子输运.md",
     "Pictures/Pasted image 20260926140801.png",
-    "Notes/Born-Oppenheimer近似.md",
     "Pictures/5694cce8c04d25a30dc4e235e1095b12.jpg",
-    "Notes/Landau量子化.md",
     "Pictures/d8cc28a2c4779c13b56e7ca7a579826a.jpg",
-    "Notes/能均分定理，virial定理.md",
-    "Homework/Physics 520/Physics 520 homework 3 problem set.md",
     "Pictures/Pasted image 20260924195153.png",
-    "Homework/Physics 520/Physics 520 homework 2 problem set.md",
-    "Homework/Physics 520/Physics 520 homework 1 problem set.md",
     "Pictures/Pasted image 20260922150242.png",
     "Pictures/Pasted image 20260922002647.png",
     "trace-cookies.txt",
