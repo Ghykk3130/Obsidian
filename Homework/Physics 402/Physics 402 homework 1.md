@@ -292,4 +292,53 @@ $$\begin{align}
 \implies & \frac{1}{f_{1}}= -C  = - \left( 1+t \frac{n-n_{L}}{n_{L}R_{1}} \right) \frac{n_{L}-n^{'}}{n^{'}R_{2}}- \frac{n_{L}}{n^{'}} \frac{n-n_{L}}{n_{L}R_{1}} \\
  & = \frac{n^{'}-n_{L}}{n^{'}R_{2}}- \frac{n-n_{L}}{n^{'}R_{1}}+\frac{(n_{L}-n)(n_{L}-n^{'})}{n^{'}n_{L}} \frac{t}{R_{1}R_{2}}
 \end{align}$$
+Now we want to find $f_{2}$. Let the outgoing light be $\begin{pmatrix}y^{'} \\ 0\end{pmatrix}$. Then:
+$$\begin{align}
+\begin{pmatrix}
+y \\
+\alpha 
+\end{pmatrix} & = M^{-1} \begin{pmatrix}
+y^{'} \\
+0
+\end{pmatrix}= \frac{1}{AD-BC}\begin{pmatrix}
+D & -B \\
+-C & A
+\end{pmatrix} \begin{pmatrix}
+y^{'} \\
+0
+\end{pmatrix}
+\end{align}$$
+Then:
+$$\begin{align}
+y & = y^{'} \frac{D}{AD-CB} \\
+\alpha & = y^{'} \frac{-C}{AD-CB}
+\end{align}$$
+Then the curve of incident light is $\tan \alpha x+ y= y^{'} \frac{-C}{AD-CB}x+y^{'} \frac{D}{AD-CB}$. Then the x coordinated of the intersections of this curve with the x axis and $y^{'}$ are:
+$$\begin{align}
+\frac{D}{C},\ \frac{D}{C}- \frac{AD-CB}{C}
+\end{align}$$
+respectively. Then we have:
+$$\begin{align}
+f_{2} & = \frac{D}{C}- \frac{AD-CB}{C }- \frac{D}{C} \\
+ & = - \frac{AD-CB}{C} \\
+ & = - \frac{\text{det}(M)}{C}
+\end{align}$$
+Know that:
+$$\begin{align}
+\text{det}(M) & = \text{det} \begin{pmatrix}
+1 & 0 \\
+\frac{n_{L}-n^{'}}{n^{'}R_{2}} & \frac{n_{L}}{n^{'}}
+\end{pmatrix} \text{det}\begin{pmatrix}
+1 & t \\
+0 & 1
+\end{pmatrix} \begin{pmatrix}
+ 1 & 0 \\
+\frac{n-n_{L}}{n_{L}R_{1}} & \frac{n}{n_{L}}
+\end{pmatrix} \\
+ & = \frac{n_{L}}{n^{'}}\cdot \frac{n}{n_{L}} \\
+ & = \frac{n}{n^{'}}
+\end{align}$$
+Then:
+$$f_{2}=- \frac{n}{n^{'}} \left( - \frac{1}{C}
+\right)= - \frac{n}{n^{'}}f_{1}$$
 
