@@ -128,7 +128,8 @@ $$\Omega_{c}= \sqrt{ \frac{e^{2}B^{2}+m^{2}\omega_{0}^{2}}{m^{2}} },\ x_{0}= \fr
 Then:
 $$\begin{align}
 (\hbar k_{y}+eBx)^{2}+m^{2}\omega_{0}^{2}x^{2} & = \hbar^{2}k_{y}^{2} \left(\frac{\omega_{0}}{\Omega_{c}}\right)^{2}+ m^{2}\Omega_{c}^{2}\left( x+ x_{0} \right)^{2}
-\end{align}$$Then:
+\end{align}$$
+Then:
 $$\begin{align}
  & \left[  \frac{p_{x}^{2}}{2m}+ \frac{\hbar^{2}k_{y}^{2}}{2m}\left(  \frac{\omega_{0}}{\Omega_{c}} \right)^{2}+ \frac{1}{2}m\Omega_{c}^{2}(x+x_{0})^{2} \right]f=Ef
 \end{align}$$
@@ -151,8 +152,12 @@ Without loss of generality, we assume the charge carrier is electron. For electr
 Then the current flowing out from the left reservoir is:
 $$\begin{align}
 I_{L} & = -2 \frac{e}{L}\sum_{n}\sum_{k_{y}} \frac{1}{\hbar} \frac{\partial E(n,k_{y})}{\partial k_{y}}f(E-\mu_{L}) \\
- & = -2 \frac{e}{L}\sum_{n} \int_{-\infty}^{\infty} \frac{dk_{y}}{2\pi /L} \frac{1}{\hbar} \frac{\partial E}{\partial k_{y}}\theta(\mu_{L}-E) \\
- & = -2 \frac{e}{h}\sum_{n} \int_{-\infty}^{\infty}dk_{y} \frac{\partial E}{\partial k_{y}}\theta(\mu_{L}-E) \\
+ 
+\end{align}$$
+Here we require that the sum $\sum_{k_{y}}$ is taken for $k_{y}\geq 0$. Since these $k_{y}$'s correspond to guiding centers of states in the upper half of the sample. We want the upper half because  the electron flows clockwise, the upper edge is where electrons are coming from the left reservoir. Then:
+$$\begin{align}
+ I_{L}&  = -2 \frac{e}{L}\sum_{n} \int_{0}^{\infty} \frac{dk_{y}}{2\pi /L} \frac{1}{\hbar} \frac{\partial E}{\partial k_{y}}\theta(\mu_{L}-E) \\
+ & = -2 \frac{e}{h}\sum_{n} \int_{0}^{\infty} dk_{y} \frac{\partial E}{\partial k_{y}}\theta(\mu_{L}-E) \\
  & = -2 \frac{e}{h}\sum_{n}\int_{E_{n}}^{\infty}dE \theta(\mu_{L}-E) \\
  & = -2 \frac{e}{h}\sum_{E_{n}\leq \mu_{L}} (\mu_{L}-E_{n}),\ E_{n}=\left( n+ \frac{1}{2} \right)\hbar \Omega_{c}
 \end{align}$$
@@ -176,22 +181,22 @@ R & = \frac{V}{I} \\
 The detected longitudinal voltage is in fact the Hall voltage, since on the two edges, the electrons are distributed according to $\mu_{L}, \mu_{R}$ respectively. If we measure the Hall volage, it would give us $\frac{\mu_{L}-\mu_{R}}{-e}$, which is equal to what we measure along the longitudinal direction. 
 ## (d)
 
-For simplicity, assume that $\mathbf{B}$ points out of plane. Assume that $\mu_{L}>\mu_{R}$. If the carrier is hole, then the current flows clockwise. 
+For simplicity, assume that $\mathbf{B}$ points out of plane. Assume that $\mu_{L}>\mu_{R}$. If the carrier is hole, then the carrier flows counterclockwise. Note that here we talk about carrier flow direction, not the current flow direction. Because it is the carrier flow direction that determines where the carriers come from, and thus we can determine the chemical potential. 
 
-$V_{1,2},V_{1,3},V_{1,4},V_{6,4},V_{6,3},V_{6,2},V_{5,4},V_{5,3},V_{5,2}$ gives the Hall voltage. Since the upper edge carries the same chemical potential as $1$, and the lower edge carries the same chemical potential as $4$. 
+$V_{1,6},V_{1,5},V_{1,4},V_{2,6},V_{2,5},V_{2,4},V_{3,6},V_{3,5},V_{3,4}$ gives the Hall voltage. Since the upper edge carries the same chemical potential as $1$, and the lower edge carries the same chemical potential as $4$. 
 
-Then by the same reasoning, $V_{1,6},V_{1,5},V_{6,5},V_{2,4},V_{3,4},V_{2,3}$ gives zero resistance, since these terminal share the same chemical potential. 
+Then by the same reasoning, $V_{1,2},V_{1,3},V_{2,3},V_{4,5},V_{4,6},V_{5,6}$ gives zero resistance, since these terminal share the same chemical potential. 
 
-If the carrier is electron, then the current flows counterclockwise.
+If the carrier is electron, then the carrier flows clockwise.
 
-Then $V_{1,6},V_{1,5},V_{1,4},V_{2,6},V_{2,5},V_{2,4},V_{3,6},V_{3,5},V_{3,4}$ gives the Hall resistance. $V_{1,2},V_{1,3},V_{2,3},V_{4,5},V_{4,6},V_{5,6}$ gives zero resistance. The reasoning is similar.
+Then $V_{1,2},V_{1,3},V_{1,4},V_{6,4},V_{6,3},V_{6,2},V_{5,4},V_{5,3},V_{5,2}$ gives the Hall resistance. $V_{1,6},V_{1,5},V_{6,5},V_{2,4},V_{3,4},V_{2,3}$ gives zero resistance. The reasoning is similar.
 ## (e)
 
-For simplicity, assume that $\mathbf{B}$ points out of plane. Assume that $\mu_{L}>\mu_{R}$. If the carrier is hole, then the current flows clockwise. 
+For simplicity, assume that $\mathbf{B}$ points out of plane. Assume that $\mu_{L}>\mu_{R}$. If the carrier is hole, then the carrier flows counterclockwise. 
 
-Then $V_{L,R},V_{T,R}$ gives the Hall resistance. Since upper edge, which connects $L,T$ has the same chemical potential. $V_{L,T}$ then measures the zero longitudinal resistance. 
+Then $V_{L,R},V_{L,T}$ gives the Hall resistance. Since upper edge, which connects $R,T$ has the same chemical potential. $V_{T,R}$ then measures the zero longitudinal resistance. 
 
-If the carrier is electron, then the current flows counterclockwise. Then $V_{L,R},V_{L,T}$ gives the Hall resistance. $V_{T,R}$ gives the zero longitudinal resistance. The reasoning is similar.
+If the carrier is electron, then the current flows counterclockwise. Then $V_{L,R},V_{T,R}$ gives the Hall resistance. $V_{L,T}$ gives the zero longitudinal resistance. The reasoning is similar.
 
 
 
