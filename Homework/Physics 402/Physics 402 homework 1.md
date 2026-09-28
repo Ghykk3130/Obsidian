@@ -46,3 +46,167 @@ $$\begin{align}
 
 The time it takes for light to travel through $x_{i}$ is $\frac{x_{i}}{\frac{c}{n_{i}}}= \frac{n_{i}x_{i}}{c}$. Then the corresponding optical path length is $n_{i}x_{i}$. Then the total optical path length is:
 $$\sum_{i}n_{i}x_{i}$$
+## 2)
+
+By definition of the optical path length, which is just the effective distance traveled by light in the vacuum in the same amount of time as light travels through the media, the total time it takes to travel through the system is:
+$$\begin{align}
+t & = \frac{\text{OPL}}{c} \\
+ & = \frac{1}{c}\sum_{i}n_{i}x_{i}
+\end{align}$$
+# Question 4
+
+The first image is formed by the light coming out of the bubble and travels directly through the plane interface. Adopt the apparent depth formula to get:
+$$\begin{align}
+s_{1}= \frac{s}{n}\approx 3.33\ cm
+\end{align}$$
+The firs image is $3.33\ cm$ below the plane interface.
+
+If the light first touches the spherical mirror and gets reflected back, and then pass through the plane interface, we get another image. To calculate the position of the image formed by the spherical mirror, we have:
+$$\begin{align}
+ & \frac{1}{7.5-2.5}+ \frac{1}{s_{2}^{'}}= - \frac{2}{-7.5} \\
+\implies & s_{2}^{'}=-7.5
+\end{align}$$
+Then adopt the apparent depth formula again to get:
+$$\begin{align}
+s_{2}= \frac{7.5}{n}\approx 5\ cm
+\end{align}$$
+The second image is $5\ cm$ below the plane interface. 
+# Question 5
+
+Notice that there are four possibilities. 
+
+If $R_{1}=5\ cm,\ R_{2}=10\ cm$, we have:
+$$\begin{align}
+ & \frac{1}{f}= \frac{1.5-1}{1}\left(  \frac{1}{5}- \frac{1}{10} \right) \\
+\implies & f=20\ cm
+\end{align}$$
+![[8e2c3b8f1b998ab8049d9fe7ae5da82e.jpg|centering|200]]
+If $R_{1}=-5\ cm,\ R_{2}=10\ cm$, we have:
+$$\begin{align}
+ & \frac{1}{f}= \frac{1.5-1}{1}\left( - \frac{1}{5}- \frac{1}{10} \right) \\
+ \implies & f=- \frac{20}{3}\ cm\approx - 6.67\ cm
+\end{align}$$
+![[d32f010de2ae7f8a3e3506d6c998483b.jpg|centering|200]]
+If $R_{1}= 5\ cm,\ R_{2}=-10\ cm$, we have:
+$$\begin{align}
+ &  \frac{1}{f}= \frac{1.5-1}{1}\left(  \frac{1}{5}+ \frac{1}{10} \right) \\
+\implies & f= \frac{20}{3}\ cm\approx 6.67\ cm
+\end{align}$$
+![[ad8612a3d1862b585721dac97bacd1f4.jpg|centering|200]]
+If $R_{1}=-5\ cm,\ R_{2}=-10\ cm$, we have:
+$$\begin{align}
+ &  \frac{1}{f}= \frac{1.5-1}{1}\left(  - \frac{1}{5}+ \frac{1}{10} \right) \\
+\implies & f= -20\ cm
+\end{align}$$
+![[1ea34c77acda998ec15addc14c6432e8.jpg|centering|200]]
+
+Since addition operation is commutative, the situation where the first lens has $|R_{1}|=10\ cm$, and the second lens has $|R_{2}|=5\ cm$ is repetitive. 
+# Question 6
+
+Let the separation between the lenses be $t$. For the first lens we have:
+$$\begin{align}
+ &  \frac{1}{s_{1}}+ \frac{1}{s_{1}^{'} }= \frac{1}{f_{1}} \\
+ & \frac{1}{s_{2}}+ \frac{1}{s_{2}^{'}}=\frac{1}{f_{2}}
+\end{align}$$
+The constraint by geometry is:
+$$\begin{align}
+s_{1}^{'}+s_{2}=t
+\end{align}$$
+To derive the focal length, we consider parallel beams. Let $s_{1}=\infty$. Then it's easy to solve:
+$$\begin{align}
+f=s_{2}^{'}= \frac{f_{2}(t-f_{1})}{t-(f_{1}+f_{2})}
+\end{align}$$
+## 1)
+
+Let $t=0,\ f_{1}=-5\ cm,\ f_{2}= 15\ cm$. We have:
+$$\begin{align}
+f & = -7.5
+\end{align}$$
+In this case, the order does not matter. Since:
+$$\begin{align}
+f & = \frac{f_{1}f_{2}}{f_{1}+f_{2}}
+\end{align}$$
+Due to the symmetry in the expression, interchanging  $f_{1},f_{2}$ wouldn't make a difference. 
+## 2)
+
+Let $t=8\ cm,\ f_{1}=-5\ cm,\ f_{2}=15\ cm$. We have:
+$$\begin{align}
+f= -97.5\ cm
+\end{align}$$
+In this case, the order matters. Since the symmetry of $f_{1},f_{2}$ within the expression is broken. Although there might be accidental "degeneracy". Here we can verify by direct computation that interchanging indeed makes a difference:
+$$\begin{align}
+\frac{-5 \times(8-15)}{8-(15-5)}= -17.5\neq -97.5
+\end{align}$$
+# Question 7
+## 1)
+
+We have:
+$$\begin{align}
+ &  \frac{1}{s}+ \frac{1}{s ^{'}} = \frac{1}{f} \\
+ & s+ s ^{'}=L
+\end{align}$$
+Then we have:
+$$\begin{align}
+ & \frac{1}{s}+ \frac{1}{L-s}= \frac{1}{f} \\
+\implies & (L-s +s)f=s(L-s) \\
+\implies & s^{2}-Ls+Lf =0
+\end{align}$$
+Know that $s_{1}+s_{2}=L,\ s_{1}s_{2}=Lf$. Then:
+$$\begin{align}
+ & |s_{1}-s_{2} |= \sqrt{ (s_{1}+s_{2})^{2}-4s_{1}s_{2} }= \sqrt{ L(L-4f) }=D \\
+\implies & f= \frac{L^{2}-D^{2}}{4L}
+\end{align}$$
+## 2)
+
+If $L< 4f$, we have:
+$$\begin{align}
+L^{2}-4Lf <0
+\end{align}$$
+Then the quadratic equation has no real solution. Therefore no image could be formed. 
+## 3)
+
+We have:
+$$\begin{align}
+\delta f & = \frac{\partial f}{\partial L}\delta L+ \frac{\partial f}{\partial D}\delta D \\
+ & = \left(  \frac{1}{4}+ \frac{D^{2}}{4L^{2}} \right)\delta L - \frac{D}{2L}\delta D
+\end{align}$$
+Then:
+$$\begin{align}
+\sigma_{f}= \sqrt{ \left(  \frac{1}{4}+ \frac{D^{2}}{4L^{2}} \right)^{2} \sigma_{L}^{2}+ \frac{D^{2}}{4L^{2}}\sigma_{D}^{2} }
+\end{align}$$
+
+Clearly, the error is a monotonically increasing function of $D^{2}$. If $L \approx 4f$, then $D\approx 0$. Then the error in $\sigma_{f}$ would be small.  So $L \approx 4f$ is better.
+# Question 8
+## 1)
+
+Obviously, the system matrix is a composition of a translation, a thin lens refraction, and then a translation. We have:
+$$\begin{align}
+M & = \begin{pmatrix}
+1 & 15 \\
+0 & 1
+\end{pmatrix}  \begin{pmatrix}
+1 & 0 \\
+- \frac{1}{10} & 1
+\end{pmatrix} \begin{pmatrix}
+1 & 30 \\
+0 & 1
+\end{pmatrix} \\
+ & = \begin{pmatrix}
+1 & 15 \\
+0 & 1
+\end{pmatrix}\begin{pmatrix}
+1 & 30 \\
+- \frac{1}{10} & - 2
+\end{pmatrix} \\
+ & = \begin{pmatrix}
+- \frac{1}{2} & 0 \\
+- \frac{1}{10} & - 2
+\end{pmatrix}
+\end{align}$$
+## 2)
+
+$B=0$ just means that the input and output planes are conjugate to each other. Since the final height is independent of the incident angle. If there is a point on the input plane, there would necessarily be an image on the output plane. 
+
+$A$ in this case is the linear magnification. We have $y^{'}=Ay$ in this case. 
+# Question 9
+
