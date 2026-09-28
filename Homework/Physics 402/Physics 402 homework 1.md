@@ -245,16 +245,15 @@ M & =  \begin{pmatrix}
 \frac{1}{3} & \frac{40}{3} \\
 - \frac{1}{15} & \frac{1}{3}
 \end{pmatrix}\end{align}$$
-We know immediately that:
-$$f=15\ cm$$
-And also:
+Take an incident light $\begin{pmatrix}y \\ 0\end{pmatrix}$. Then:
 $$\begin{align}
-1- \frac{p }{15 }= \frac{1}{3}\implies p=10\ cm
+y^{'}= yA,\ \alpha^{'}=yC
 \end{align}$$
-This is also the same for the other principal point, since the matrix element is also $\frac{1}{3}$. Then the two principal points are all located at the center of the ball.
+The curve is given by $\alpha^{'}x+y^{'}=yCx+yA$. Then the light is focused at $- \frac{A}{C}$ to the right of the surface of the ball. Set $y=yCx+yA$, we find the intersection  is at $x= \frac{1-A}{C}$. The focal length is $f_{1}=- \frac{A}{C}- \frac{1-A}{C}=- \frac{1}{C}$. And in this specific case, the intersection is at $x=-10\ cm$, which is $10\ cm$ away from the ball surface. Then the first principal point is located at the center of the ball.  By symmetry, the second principal point should also be located at the center of the ball. 
+
 ## 2)
 
-For sunlight, the image formed by the effective system is at the focal point: $15\ cm$ away from the second principal point. Since the second principal point is at the center of the ball, and the ball radius is $10\ cm$, the sunlight would be focused $5\ cm$ to the ball surface.
+For sunlight, the image formed by the effective system is at the focal point: $- \frac{1}{C}= 15\ cm$ away from the second principal point. Obviously $f_{1}=f_{2}$ since the system is spherically symmetric. Since the second principal point is at the center of the ball, and the ball radius is $10\ cm$, the sunlight would be focused $5\ cm$ to the ball surface.
 # Question 10
 ## 1)
 $$\begin{align}
@@ -287,9 +286,10 @@ $$\begin{align}
 \alpha^{'} & = \left[\left( 1+ t \frac{n-n_{L}}{n_{L}R_{1}} \right) \frac{n_{L}-n^{'}}{n^{'}R_{2}}+ \frac{n_{L}}{n^{'}} \frac{n-n_{L}}{n_{L}R_{1}}\right]y \\
 y^{'} & = \left( 1+t \frac{n-n_{L}}{n_{L}R_{1}} \right)y
 \end{align}$$
-The focal length is clearly given by:
+We already derived in question 9 that:
 $$\begin{align}
-\frac{1}{f_{1}} & = \frac{\tan \alpha^{'}}{y^{'} } \\
- & \approx \frac{\alpha^{'}}{y} \\
- & = 
+ & f_{1}=- \frac{1}{C} \\
+\implies & \frac{1}{f_{1}}= -C  = - \left( 1+t \frac{n-n_{L}}{n_{L}R_{1}} \right) \frac{n_{L}-n^{'}}{n^{'}R_{2}}- \frac{n_{L}}{n^{'}} \frac{n-n_{L}}{n_{L}R_{1}} \\
+ & = \frac{n^{'}-n_{L}}{n^{'}R_{2}}- \frac{n-n_{L}}{n^{'}R_{1}}+\frac{(n_{L}-n)(n_{L}-n^{'})}{n^{'}n_{L}} \frac{t}{R_{1}R_{2}}
 \end{align}$$
+
