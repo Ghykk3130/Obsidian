@@ -210,3 +210,86 @@ $B=0$ just means that the input and output planes are conjugate to each other. S
 $A$ in this case is the linear magnification. We have $y^{'}=Ay$ in this case. 
 # Question 9
 
+Since the radius is $10\ cm$, the system matrix is a translation sandwiched between two refractions.
+
+We compute:
+$$\begin{align}
+M & =  \begin{pmatrix}
+1 & 0 \\
+- \frac{1}{10}\left(  \frac{1.5}{1}-1 \right) & 1.5
+\end{pmatrix}   \begin{pmatrix}
+1 & 20 \\
+0 & 1
+\end{pmatrix}  \begin{pmatrix}
+1 & 0 \\
+ \frac{1}{10}\left(  \frac{1}{1.5}-1 \right)
+ & \frac{1}{1.5}\end{pmatrix}  \\
+ & = \begin{pmatrix}
+1 & 0 \\
+- \frac{1}{20} & \frac{3}{2}
+\end{pmatrix} \begin{pmatrix}
+1 & 20 \\
+0 & 1
+\end{pmatrix} \begin{pmatrix}
+1 & 0 \\
+- \frac{1}{30} & \frac{2}{3}
+\end{pmatrix} \\
+ & = \begin{pmatrix}
+1 & 0 \\
+- \frac{1}{20} & \frac{3}{2} 
+\end{pmatrix}\begin{pmatrix}
+\frac{1}{3} & \frac{40}{3} \\
+- \frac{1}{30} & \frac{2}{3}
+\end{pmatrix} \\
+ & = \begin{pmatrix}
+\frac{1}{3} & \frac{40}{3} \\
+- \frac{1}{15} & \frac{1}{3}
+\end{pmatrix}\end{align}$$
+We know immediately that:
+$$f=15\ cm$$
+And also:
+$$\begin{align}
+1- \frac{p }{15 }= \frac{1}{3}\implies p=10\ cm
+\end{align}$$
+This is also the same for the other principal point, since the matrix element is also $\frac{1}{3}$. Then the two principal points are all located at the center of the ball.
+## 2)
+
+For sunlight, the image formed by the effective system is at the focal point: $15\ cm$ away from the second principal point. Since the second principal point is at the center of the ball, and the ball radius is $10\ cm$, the sunlight would be focused $5\ cm$ to the ball surface.
+# Question 10
+## 1)
+$$\begin{align}
+M & = \begin{pmatrix}
+1 & 0 \\
+\frac{n_{L}-n^{'}}{n^{'}R_{2}} &  \frac{n_{L}}{n^{'}}
+\end{pmatrix} \begin{pmatrix}
+ 1 & t \\
+0 & 1
+\end{pmatrix} \begin{pmatrix}
+1 & 0 \\
+\frac{n-n_{L}}{n_{L}R_{1}} & \frac{n}{n_{L}}
+\end{pmatrix} \\
+ & = \begin{pmatrix}
+ 1 & 0 \\
+\frac{n_{L}-n^{'}}{n^{'}R_{2}} & \frac{n_{L}}{n^{'}}
+\end{pmatrix} \begin{pmatrix}
+1+ t \frac{n-n_{L}}{n_{L}R_{1}} & t \frac{n}{n_{L}} \\
+\frac{n-n_{L}}{n_{L}R_{1}} & \frac{n}{n_{L}}
+\end{pmatrix} \\
+ & = \begin{pmatrix}
+1+ t \frac{n-n_{L}}{n_{L}R_{1}} & t \frac{n}{n_{L}} \\
+\left( 1+ t \frac{n-n_{L}}{n_{L}R_{1}}  \right) \frac{n_{L}-n^{'}}{n^{'}R_{2}}+ \frac{n_{L}}{n^{'}} \frac{n-n_{L}}{n_{L}R_{1}} & t \frac{n}{n_{L}} \frac{n_{L}-n^{'}}{n^{'}R_{2}}+ \frac{n}{n^{'}}
+\end{pmatrix}
+\end{align}$$
+## 2)
+
+To obtain $f_{1}$, consider an incident light $\begin{pmatrix}y & 0\end{pmatrix}$. Then:
+$$\begin{align}
+\alpha^{'} & = \left[\left( 1+ t \frac{n-n_{L}}{n_{L}R_{1}} \right) \frac{n_{L}-n^{'}}{n^{'}R_{2}}+ \frac{n_{L}}{n^{'}} \frac{n-n_{L}}{n_{L}R_{1}}\right]y \\
+y^{'} & = \left( 1+t \frac{n-n_{L}}{n_{L}R_{1}} \right)y
+\end{align}$$
+The focal length is clearly given by:
+$$\begin{align}
+\frac{1}{f_{1}} & = \frac{\tan \alpha^{'}}{y^{'} } \\
+ & \approx \frac{\alpha^{'}}{y} \\
+ & = 
+\end{align}$$
