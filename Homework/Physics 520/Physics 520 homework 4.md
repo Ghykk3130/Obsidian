@@ -57,10 +57,10 @@ This should be the effective mass of the electron. Write $m^{*}_{e}=0.036m_{0}$.
 From part (a) we have:
 $$\begin{align}
  & \Delta E= \hbar(\omega_{h}+\omega_{e}) =\hbar eB\left( \frac{1}{m_{h}^{*}}+ \frac{1}{m_{e}^{*}} \right) \\
-\implies &  \frac{1}{m^{*}_{h}}=\frac{\Delta E}{\hbar eB}- \frac{1}{m^{*}_{e}}\approx 6.391\times 10^{31}\text{ kg}^{-1}
+\implies &  \frac{1}{m^{*}_{h}}=\frac{\Delta E}{\hbar eB}- \frac{1}{m^{*}_{e}}\approx 0.73\times 10^{31}\text{ kg}^{-1}
 \end{align}$$
 Then:
-$$m^{*}_{h}\approx 1.565 \times 10^{-31}\text{ kg}$$
+$$m^{*}_{h}\approx 1.36 \times 10^{-31}\text{ kg}$$
 # Problem 2
 # (a)
 
@@ -103,7 +103,7 @@ $$n\approx 1.76\times 10^{15}\ m^{-2}$$
 # Problem 3
 ## (a)
 
-Choose the Landau gauge $\mathbf{A}=eBx  \hat{\mathbf{y}}$. We have:
+Choose the Landau gauge $\mathbf{A}=Bx  \hat{\mathbf{y}}$. We have:
 $$\begin{align}
 H & = \frac{1}{2m}(p_{x}^{2}+(p_{y}+eBx)^{2})+ \frac{1}{2}m\omega_{0}^{2}x^{2} \\
 \end{align}$$
@@ -127,7 +127,7 @@ We define:
 $$\Omega_{c}= \sqrt{ \frac{e^{2}B^{2}+m^{2}\omega_{0}^{2}}{m^{2}} },\ x_{0}= \frac{\hbar k_{y}eB}{e^{2}B^{2}+m^{2}\omega_{0}^{2}}$$
 Then:
 $$\begin{align}
-(\hbar k_{y}+eBx)^{2}+m^{2}\omega_{0}^{2}x^{2} & = \hbar^{2}k_{y}^{2} \left(\frac{\omega_{0}}{\Omega_{c}}\right)^{2}+ m^{2}\Omega_{c}^{2}\left( x+ x_{0} \right)
+(\hbar k_{y}+eBx)^{2}+m^{2}\omega_{0}^{2}x^{2} & = \hbar^{2}k_{y}^{2} \left(\frac{\omega_{0}}{\Omega_{c}}\right)^{2}+ m^{2}\Omega_{c}^{2}\left( x+ x_{0} \right)^{2}
 \end{align}$$Then:
 $$\begin{align}
  & \left[  \frac{p_{x}^{2}}{2m}+ \frac{\hbar^{2}k_{y}^{2}}{2m}\left(  \frac{\omega_{0}}{\Omega_{c}} \right)^{2}+ \frac{1}{2}m\Omega_{c}^{2}(x+x_{0})^{2} \right]f=Ef
@@ -146,18 +146,28 @@ If $\epsilon_{F}$ is between the jth ant the (j+1)th level, then there are j lev
 
 Assume that $\mu_{L}>\mu_{R}=\epsilon_{F}$. Assume that the potential connecting the sample and the electron reservoirs are infinitely flat, so that the energy conservation is assumed as electrons are emitted or received. 
 
-For electrons coming our from the left, the occupation number is $f(E-\mu_{L})$. For electrons coming out from the right, the occupation number is $f(E-\mu_{R})$. It is very clear that the electrons traveling on the two edges have the opposite velocity, since the perturbed Landau level is an even function of $k_{y}$, so that the group velocity is an odd function of $k_{y}$. Each electron carries charge $-e$. 
+Without loss of generality, we assume the charge carrier is electron. For electrons coming our from the left, the occupation number is $f(E-\mu_{L})$. For electrons coming out from the right, the occupation number is $f(E-\mu_{R})$. It is very clear that the electrons traveling on the two edges have the opposite velocity, since the perturbed Landau level is an even function of $k_{y}$, so that the group velocity is an odd function of $k_{y}$. Each electron carries charge $-e$. 
 
-Then:
+Then the current flowing out from the left reservoir is:
 $$\begin{align}
-I & = - 2\frac{e}{L} \sum_{n}\sum_{k_{y}} \frac{1}{\hbar} \frac{\partial E(n,k_{y})}{\partial k_{y} }(f(E-\mu_{L})-f(E-\mu_{R})) \\
- & = - 2\frac{e}{L }\sum_{n} \int_{-\infty}^{\infty} \frac{dk_{y}}{2\pi /L } \frac{1}{\hbar} \frac{\partial E}{\partial k_{y}}(f(E-\mu_{L})-f(E-\mu_{R})) \\
- & = - 2\frac{e}{h}\sum_{n} \int_{-\infty}^{\infty} dk_{y} \frac{\partial E}{\partial k_{y}}(\theta(\mu_{L}-E)-\theta(\mu_{R}-E)) \\
- & = - 2\frac{e}{h}\sum_{n} \int_{E_{n}}^{\infty}dE(\theta(\mu_{L}-E)-\theta(\mu_{R}-E)),\ E_{n}= \left( n+ \frac{1}{2} \right) \hbar \Omega_{c} \\
- & = - 2\frac{e}{h}\sum_{E_{n}\leq \mu_{R}}(\mu_{L}-E_{n}-\mu_{R}+E_{n}) \\
+I_{L} & = -2 \frac{e}{L}\sum_{n}\sum_{k_{y}} \frac{1}{\hbar} \frac{\partial E(n,k_{y})}{\partial k_{y}}f(E-\mu_{L}) \\
+ & = -2 \frac{e}{L}\sum_{n} \int_{-\infty}^{\infty} \frac{dk_{y}}{2\pi /L} \frac{1}{\hbar} \frac{\partial E}{\partial k_{y}}\theta(\mu_{L}-E) \\
+ & = -2 \frac{e}{h}\sum_{n} \int_{-\infty}^{\infty}dk_{y} \frac{\partial E}{\partial k_{y}}\theta(\mu_{L}-E) \\
+ & = -2 \frac{e}{h}\sum_{n}\int_{E_{n}}^{\infty}dE \theta(\mu_{L}-E) \\
+ & = -2 \frac{e}{h}\sum_{E_{n}\leq \mu_{L}} (\mu_{L}-E_{n}),\ E_{n}=\left( n+ \frac{1}{2} \right)\hbar \Omega_{c}
+\end{align}$$
+The 2 counts for spin degeneracy. The current flowing out from the right reservoir is similarly:
+$$\begin{align}
+I_{R} & = 2 \frac{e}{h}\sum_{E_{n}\leq \mu_{R}}(\mu_{R}-E_{n})
+\end{align}$$
+Here the minus sign in the front disappears because the directions of the current flow on the edges are opposite. We assume that the gate voltage is small, such that $\mu_{R},\mu_{L}$ don't cross levels. Then $\sum_{E_{n}\leq \mu_{R}}1=\sum_{E_{n}\leq \mu_{L}}1$Then the total current is:
+$$\begin{align}
+I & = I_{L}+I_{R} \\
+ & = -2 \frac{e}{h} \sum_{E_{n}\leq \mu_{R}}(\mu_{L}-E_{n}-\mu_{R}+E_{n}) \\
+ & = -2 \frac{e}{h}\sum_{E_{n}\leq \mu_{R}} (\mu_{L}-\mu_{R}) \\
  & = -2 \frac{e}{h}(\mu_{L}-\mu_{R})j
 \end{align}$$
-Here $j$ is the number of Landau levels below $\mu_{R}=\epsilon_{F}$. In the derivation above, we also assume $\mu_{L}-\mu_{R}<\hbar \Omega_{c}$. The 2 counts for spin degeneracy. Then:
+Then:
 $$\begin{align}
 R & = \frac{V}{I} \\
  & = \frac{(\mu_{L}-\mu_{R}) /(-e)}{-2 \frac{e}{h}(\mu_{L}-\mu_{R})j} \\
@@ -168,13 +178,13 @@ The detected longitudinal voltage is in fact the Hall voltage, since on the two 
 
 For simplicity, assume that $\mathbf{B}$ points out of plane. Assume that $\mu_{L}>\mu_{R}$. If the carrier is hole, then the current flows clockwise. 
 
-$V_{1,4}, V_{1,2},V_{1,3}, V_{4,6},V_{4,5}$ gives the Hall voltage. Since the upper edge carries the same chemical potential as $1$, and the lower edge carries the same chemical potential as $4$. 
+$V_{1,2},V_{1,3},V_{1,4},V_{6,4},V_{6,3},V_{6,2},V_{5,4},V_{5,3},V_{5,2}$ gives the Hall voltage. Since the upper edge carries the same chemical potential as $1$, and the lower edge carries the same chemical potential as $4$. 
 
 Then by the same reasoning, $V_{1,6},V_{1,5},V_{6,5},V_{2,4},V_{3,4},V_{2,3}$ gives zero resistance, since these terminal share the same chemical potential. 
 
 If the carrier is electron, then the current flows counterclockwise.
 
-Then $V_{1,4},V_{1,6},V_{1,5},V_{2,4},V_{3,4}$ gives the Hall resistance. $V_{1,2},V_{1,3},V_{2,3},V_{4,6},V_{4,6},V_{5,6}$ gives zero resistance. The reasoning is similar.
+Then $V_{1,6},V_{1,5},V_{1,4},V_{2,6},V_{2,5},V_{2,4},V_{3,6},V_{3,5},V_{3,4}$ gives the Hall resistance. $V_{1,2},V_{1,3},V_{2,3},V_{4,5},V_{4,6},V_{5,6}$ gives zero resistance. The reasoning is similar.
 ## (e)
 
 For simplicity, assume that $\mathbf{B}$ points out of plane. Assume that $\mu_{L}>\mu_{R}$. If the carrier is hole, then the current flows clockwise. 
