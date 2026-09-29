@@ -3560,7 +3560,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "申请",
+                "query": "Feynman",
                 "matchingCase": true,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -3571,7 +3571,8 @@
               "title": "Search"
             }
           }
-        ]
+        ],
+        "currentTab": 3
       }
     ],
     "direction": "horizontal",
@@ -3692,8 +3693,10 @@
   },
   "active": "264aedcb39ee2fa7",
   "lastOpenFiles": [
-    "Notes/Drude模型.md",
+    "Pictures/Pasted image 20260929131846.png",
+    "Notes/标量场的正则量子化.md",
     "Notes/Feynman传播子.md",
+    "Notes/Drude模型.md",
     "Homework/Physics 402/Physics 402 homework 1.md",
     "Notes/申请.md",
     "Homework/Physics 510/Physics 510 Homework 11.md",
@@ -3720,8 +3723,6 @@
     "Homework/Physics 402/Physics 402 problem set 1.md",
     "Homework/Physics 402/Physics 402 Class Prep 4.md",
     "Homework/Physics 402/Physics 402 Class Prep 3.md",
-    "Homework/Physics 402/Physics 402 Class Prep 2.md",
-    "Homework/Physics 402/Physics 402 Class Prep 1.md",
     "Pictures/Pasted image 20260926140801.png",
     "Pictures/5694cce8c04d25a30dc4e235e1095b12.jpg",
     "Pictures/d8cc28a2c4779c13b56e7ca7a579826a.jpg",
