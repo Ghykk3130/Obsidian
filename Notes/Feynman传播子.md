@@ -66,4 +66,7 @@ $$\begin{align}
 $$\begin{align}
 \boxed{D_{F}(x-y)=\bra{0} T[\phi(x),\phi(y)]\ket{0} = \int \frac{d^{4}p}{(2\pi)^{4} } \frac{i}{p^{2}-m^{2}+i\epsilon}e^{-ip\cdot(x-y)}}
 \end{align}$$
+注意，这里的$p$是无需符合质壳条件的。四个分量全部都是自由的，可以取$(-\infty,\infty)$。
+
+
 
