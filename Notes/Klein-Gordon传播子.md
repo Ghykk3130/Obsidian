@@ -24,3 +24,21 @@ $$\begin{align}
 D(x-y) & =  \int \frac{d^{4}p}{(2\pi)^{4}} \frac{i}{p^{2}-m^{2}}e^{-ip\cdot(x-y)}
 \end{align}$$
 但这个方程显然不可积，因为$p^{0}$的积分线穿过了奇点。所以怎么办？是看作广义函数，通过一些argument说明在广义函数上，稍微偏离奇点结果是一样的吗？显然在精确意义下，$D$是积不出来的。
+
+
+我们希望找到分布函数$D$。如果：
+$$\begin{align}
+(\Box+m^{2})D_{av}(x-y)=-i\delta_{av}(x-y)
+\end{align}$$
+那么：
+$$\begin{align}
+\phi & =i \langle D,j\rangle \\
+ & = i \int d^{4}x D_{av}j \\
+ & = j
+\end{align}$$
+为了找到$D_{av}$，我们对于$D_{av}$进行Fourier变换。
+
+那么，在我的notation下，是否有：
+$$\begin{align}
+\left( \frac{1}{p^{2}-m^{2}}  \right)_{av}= P\left(  \frac{1}{p^{2}-m^{2}} \right)+i\pi \delta_{av}(p^{2}-m^{2})
+\end{align}$$
