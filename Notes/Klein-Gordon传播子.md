@@ -42,3 +42,16 @@ $$\begin{align}
 $$\begin{align}
 \left( \frac{1}{p^{2}-m^{2}}  \right)_{av}= P\left(  \frac{1}{p^{2}-m^{2}} \right)+i\pi \delta_{av}(p^{2}-m^{2})
 \end{align}$$
+
+我好像有点懂了，但又没懂。我们希望：
+$$\tilde{D}_{av}(p^{2}-m^{2})=i$$
+对所有点满足。于是我们不妨让：
+$$\tilde{D}_{av}= \frac{i}{p^{2}-m^{2}+i\epsilon}$$
+其中$\epsilon$非常非常小。那么：
+$$\begin{align}
+\tilde{D}_{av} (p^{2}-m^{2})= i \frac{p^{2}-m^{2}}{p^{2}-m^{2}+i\epsilon}
+\end{align}$$
+显然在$p^{2}-m^{2}\neq 0$时是成立的。但是在$p^{2}-m^{2}=0$时照样不成立啊。
+
+还是说，我们希望的不是$$\tilde{D}_{av}(p^{2}-m^{2})=i$$
+对所有点满足。而是$\tilde{D}_{av}$Fourier变换回去再积分等等总之一系列操作之后给出正确的KG场解吗？
