@@ -9,9 +9,13 @@ $$\begin{align}
 $$\phi_{a}^{'}(x)=M_{ab}(\Lambda)\phi_{b}(\Lambda ^{-1}x)$$
 # 1. SO(3)的表示
 
+给定任意李群$\{ R \}$或者其表示，我们可以考虑无穷小变换：
+$$\begin{align}
+R(\theta)=1-i \theta_{i}J_{i}
+\end{align}$$
+其中，$J_{i}$称为生成元。生成元将满足一定的对易关系$[J_{i},J_{j}]=$
 
-
-
+可以证明，如果过两个表示的生成元的对易关系一样，那么两个表示等价。
 
 考虑绕z轴无穷小旋转。我们有：
 $$R_{\hat{\mathbf{z}}}(\theta)= \begin{pmatrix}
