@@ -9,11 +9,43 @@ $$\begin{align}
 $$\phi_{a}^{'}(x)=M_{ab}(\Lambda)\phi_{b}(\Lambda ^{-1}x)$$
 # 1. SO(3)的表示
 
-给定任意李群$\{ R \}$或者其表示，我们可以考虑无穷小变换：
+给定任意李群的表示$\{ R \}$，我们可以考虑无穷小变换：
 $$\begin{align}
 R(\theta)=1-i \theta_{i}J_{i}
 \end{align}$$
-其中，$J_{i}$称为生成元。生成元将满足一定的对易关系$[J_{i},J_{j}]=$
+其中，$J_{i}$称为生成元。我们可以把有限变换拆分成无穷小变换，从而用指数表示有限变换：
+$$\begin{align}
+R(\theta) & = \lim_{ N \to \infty } \left( 1- i \frac{\theta_{i}}{N}J_{i} \right)^{N} \\
+ & = \exp\left( -i \theta_{i}J_{i} \right)
+\end{align}$$
+任取李代数中元素$X,\ Y$。令$\alpha$为一无穷小参数。（$\alpha$不是矢量。）考虑：
+$$\begin{align}
+\exp(-i\alpha X)Y \exp(i\alpha X) & = (1-i\alpha X)Y(1+i\alpha X) \\
+ & = Y-i\alpha[X,Y]
+\end{align}$$
+
+
+
+
+任意考虑两个无穷小变换，修正到二阶，$R(\alpha),R(\beta)$。不妨记$R(\alpha)=\exp(- i\alpha_{i}J_{i})=\exp(-A)$，$R(\beta)=\exp(-i\beta_{i}J_{i})=\exp(-B)$。我们有：
+$$\begin{align}
+R(\alpha)R(\beta)R^{-1}(\alpha)R^{-1}(\beta) & =\left( 1-A+ \frac{A^{2}}{2} \right)\left( 1-B+ \frac{B^{2}}{2} \right)\left( 1+A+ \frac{A^{2}}{2} \right)\left( 1+B+ \frac{B^{2}}{2} \right) \\
+ & = 1+(-A-B+A+B)+ \left( AB-A^{2}-AB-BA-B^{2}+AB+ \frac{A^{2}}{2}+ \frac{B^{2}}{2}+ \frac{A^{2}}{2}+ \frac{B^{2}}{2} \right) \\
+ & = 1+AB-BA \\
+ & = 1+ [A,B] \\
+ & = 1-\alpha_{i}\beta_{j}[J_{i},J_{j}]
+\end{align}$$
+因为左手边显然还是一个无穷小变换。所以一定存在$\gamma$使得：
+$$\begin{align}
+i\gamma_{i}J_{i}=\alpha_{i}\beta_{j}[J_{i},J_{j}]
+\end{align}$$
+
+
+
+生成元将满足一定的对易关系$[J_{i},J_{j}]=$
+
+
+
 
 可以证明，如果过两个表示的生成元的对易关系一样，那么两个表示等价。
 
