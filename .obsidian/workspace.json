@@ -3574,7 +3574,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "Klein Go",
                 "matchingCase": true,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -3585,12 +3585,12 @@
               "title": "Search"
             }
           }
-        ]
+        ],
+        "currentTab": 3
       }
     ],
     "direction": "horizontal",
-    "width": 200,
-    "collapsed": true
+    "width": 200
   },
   "right": {
     "id": "9003d078f8dbc4ed",
@@ -3706,8 +3706,11 @@
   },
   "active": "1c5306841e068934",
   "lastOpenFiles": [
-    "Notes/Noether定理.md",
+    "Pictures/24fd794455aa6fef3032eee3dd7b8e00.jpg",
+    "Notes/光学定理.md",
+    "Notes/广义函数.md",
     "Notes/Klein-Gordon传播子.md",
+    "Notes/Noether定理.md",
     "Notes/Lagrange Multiplier.md",
     "Notes/Hamilton原理与Lagrange方程.md",
     "Notes/Feynman传播子.md",
@@ -3734,9 +3737,6 @@
     "Pictures/ad8612a3d1862b585721dac97bacd1f4.jpg",
     "Pictures/d32f010de2ae7f8a3e3506d6c998483b.jpg",
     "Pictures/8e2c3b8f1b998ab8049d9fe7ae5da82e.jpg",
-    "Homework/Physics 402/Physics 402 real world optics 1.md",
-    "Homework/Physics 402/Physics 402 Problem Set 3.md",
-    "Homework/Physics 402/Physics 402 problem set 2.md",
     "Pictures/Pasted image 20260926140801.png",
     "Pictures/5694cce8c04d25a30dc4e235e1095b12.jpg",
     "Pictures/d8cc28a2c4779c13b56e7ca7a579826a.jpg",
