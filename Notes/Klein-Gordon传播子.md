@@ -1,3 +1,28 @@
+# 1. 广义函数
+
+我们取任意$C^{\infty}$函数，称为测试函数。广义函数是测试函数的泛函。
+
+一般来说，一个性质足够好的函数可以引出一个广义函数。令$f$为一个性质足够好的函数。取测试函数$g$。那么：
+$$g \mapsto \int_{-\infty}^{\infty}dxf(x)g(x)$$
+就是一个广义函数。
+
+当然，不是所有的广义函数都拥有一个函数与之对应。例如说Dirac delta：
+$$\delta:g \mapsto \int_{-\infty}^{\infty}\delta(x)g(x)=g(0)$$
+尽管我们形式上想象了一个函数$\delta$，但它实际上不是一个合法的函数。真实的Dirac delta应该被想象成$\delta: g\mapsto g(0)$。把它写成一个$\delta$“函数”和$g$的积分只是一个形式上的对应。原则上，广义函数$\delta$和它对应的函数$\delta$应该在符号上有所区分。但是我们不区分它们的符号。如果$\delta$被写在积分里面，就当作是广义函数相应的函数。如果没有积分，则一般当成广义函数本身。
+
+类似的广义函数还有principal value：
+$$P \frac{1}{x}:g\mapsto \int_{-\infty}^{\infty}dxP \frac{1}{x}g(x)=\lim_{ \epsilon \to 0^{+} }  \int_{x>|\epsilon|}dx \frac{1}{x}g(x)$$
+此外还有：
+$$\frac{1}{x-i\epsilon}:g \mapsto \lim_{ \epsilon \to 0^{+} } \int_{-\infty}^{\infty}  \frac{1}{x-i\epsilon}g(x)$$
+我们可以证明如下引理：
+
+>[!Success] Theorem1.1
+>$$\frac{1}{x-i\epsilon}= P \frac{1}{x}+i\pi\delta(x)$$
+
+
+
+# 2. 
+
 考虑非齐次Klein-Gordon方程：
 $$\begin{align}
 (\Box+m^{2})\phi(x)=j(x)
