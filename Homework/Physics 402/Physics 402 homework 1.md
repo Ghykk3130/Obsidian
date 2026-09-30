@@ -174,8 +174,11 @@ Then:
 $$\begin{align}
 \sigma_{f}= \sqrt{ \left(  \frac{1}{4}+ \frac{D^{2}}{4L^{2}} \right)^{2} \sigma_{L}^{2}+ \frac{D^{2}}{4L^{2}}\sigma_{D}^{2} }
 \end{align}$$
-
-Clearly, the error is a monotonically increasing function of $D^{2}$. If $L \approx 4f$, then $D\approx 0$. Then the error in $\sigma_{f}$ would be small.  So $L \approx 4f$ is better.
+If $L \approx 4f$, then $D\approx 0$. Then the error in $\sigma_{f}$ would just be:
+$$\begin{align}
+\sigma_{f}\approx \sqrt{ \left(  \frac{1}{4} \right)^{2} \sigma_{L}^{2} }
+\end{align}$$
+It is smaller than when $D\neq 0$.  So $L \approx 4f$ is better.
 # Question 8
 ## 1)
 
@@ -205,7 +208,7 @@ M & = \begin{pmatrix}
 \end{align}$$
 ## 2)
 
-$B=0$ just means that the input and output planes are conjugate to each other. Since the final height is independent of the incident angle. If there is a point on the input plane, there would necessarily be an image on the output plane. 
+$B=0$ just means that the input and output planes are conjugate to each other. Since the final height is independent of the incident angle. If light is emitted from a source on the input plane, it would converge on the output plane.  
 
 $A$ in this case is the linear magnification. We have $y^{'}=Ay$ in this case. 
 # Question 9
@@ -245,11 +248,11 @@ M & =  \begin{pmatrix}
 \frac{1}{3} & \frac{40}{3} \\
 - \frac{1}{15} & \frac{1}{3}
 \end{pmatrix}\end{align}$$
-Take an incident light $\begin{pmatrix}y \\ 0\end{pmatrix}$. Then:
-$$\begin{align}
-y^{'}= yA,\ \alpha^{'}=yC
-\end{align}$$
-The curve is given by $\alpha^{'}x+y^{'}=yCx+yA$. Then the light is focused at $- \frac{A}{C}$ to the right of the surface of the ball. Set $y=yCx+yA$, we find the intersection  is at $x= \frac{1-A}{C}$. The focal length is $f_{1}=- \frac{A}{C}- \frac{1-A}{C}=- \frac{1}{C}$. And in this specific case, the intersection is at $x=-10\ cm$, which is $10\ cm$ away from the ball surface. Then the first principal point is located at the center of the ball.  By symmetry, the second principal point should also be located at the center of the ball. 
+We first find the distance between the focal point and the input plane:
+$$p= \frac{D}{C}=-5\ cm$$
+Then we find the focal length:
+$$f_{1}= \frac{1}{C}= -15\ cm$$
+Therefore the distance between the left principal point and the input plane is $|-15-(-5)|=10\ cm$. Since the first focal point is to the left of the input plane, clearly the left principal point is to the right of the input plane. It is at the center of the ball. By symmetry, the second principal point should also be located at the center of the ball. 
 
 ## 2)
 
@@ -281,64 +284,16 @@ M & = \begin{pmatrix}
 \end{align}$$
 ## 2)
 
-To obtain $f_{1}$, consider an incident light $\begin{pmatrix}y & 0\end{pmatrix}$. Then:
+We have that:
 $$\begin{align}
-\alpha^{'} & = \left[\left( 1+ t \frac{n-n_{L}}{n_{L}R_{1}} \right) \frac{n_{L}-n^{'}}{n^{'}R_{2}}+ \frac{n_{L}}{n^{'}} \frac{n-n_{L}}{n_{L}R_{1}}\right]y \\
-y^{'} & = \left( 1+t \frac{n-n_{L}}{n_{L}R_{1}} \right)y
+\frac{1}{f_{1}} & = \frac{n^{'}}{n}C \\
+ & = \frac{n^{'}}{n}\left[  \left( 1+t \frac{n-n_{L}}{n_{L}R_{1}} \right) \frac{n_{L}-n^{'}}{n^{'}R_{2}}+ \frac{n_{L}}{n^{'}} \frac{n-n_{L}}{n_{L}R_{1}} \right] \\
+ & = \frac{n^{'}}{n}\left(  \frac{n_{L}-n^{'}}{n^{'}R_{2}} + \frac{n-n_{L}}{n^{'}R_{1}}+ t \frac{(n-n_{L})(n_{L}-n^{'})}{n^{'}n_{L}R_{1}R_{2}}\right) \\
+ & = \frac{n_{L}-n^{'}}{n^{}R_{2}}- \frac{n_{L}-n}{nR_{1}}+ \frac{(n_{L}-n^{'})(n_{L}-n)}{n^{'}n_{L}} \frac{t}{R_{1}R_{2}}
 \end{align}$$
-We already derived in question 9 that:
+We also have:
 $$\begin{align}
- & f_{1}=- \frac{1}{C} \\
-\implies & \frac{1}{f_{1}}= -C  = - \left( 1+t \frac{n-n_{L}}{n_{L}R_{1}} \right) \frac{n_{L}-n^{'}}{n^{'}R_{2}}- \frac{n_{L}}{n^{'}} \frac{n-n_{L}}{n_{L}R_{1}} \\
- & = \frac{n^{'}-n_{L}}{n^{'}R_{2}}- \frac{n-n_{L}}{n^{'}R_{1}}+\frac{(n_{L}-n)(n_{L}-n^{'})}{n^{'}n_{L}} \frac{t}{R_{1}R_{2}}
+f_{2} & =- \frac{1}{C} \\
+ & = - \frac{n^{'}}{n}f_{1}
 \end{align}$$
-Now we want to find $f_{2}$. Let the outgoing light be $\begin{pmatrix}y^{'} \\ 0\end{pmatrix}$. Then:
-$$\begin{align}
-\begin{pmatrix}
-y \\
-\alpha 
-\end{pmatrix} & = M^{-1} \begin{pmatrix}
-y^{'} \\
-0
-\end{pmatrix}= \frac{1}{AD-BC}\begin{pmatrix}
-D & -B \\
--C & A
-\end{pmatrix} \begin{pmatrix}
-y^{'} \\
-0
-\end{pmatrix}
-\end{align}$$
-Then:
-$$\begin{align}
-y & = y^{'} \frac{D}{AD-CB} \\
-\alpha & = y^{'} \frac{-C}{AD-CB}
-\end{align}$$
-Then the curve of incident light is $\tan \alpha x+ y= y^{'} \frac{-C}{AD-CB}x+y^{'} \frac{D}{AD-CB}$. Then the x coordinated of the intersections of this curve with the x axis and $y^{'}$ are:
-$$\begin{align}
-\frac{D}{C},\ \frac{D}{C}- \frac{AD-CB}{C}
-\end{align}$$
-respectively. Then we have:
-$$\begin{align}
-f_{2} & = \frac{D}{C}- \frac{AD-CB}{C }- \frac{D}{C} \\
- & = - \frac{AD-CB}{C} \\
- & = - \frac{\text{det}(M)}{C}
-\end{align}$$
-Know that:
-$$\begin{align}
-\text{det}(M) & = \text{det} \begin{pmatrix}
-1 & 0 \\
-\frac{n_{L}-n^{'}}{n^{'}R_{2}} & \frac{n_{L}}{n^{'}}
-\end{pmatrix} \text{det}\begin{pmatrix}
-1 & t \\
-0 & 1
-\end{pmatrix} \begin{pmatrix}
- 1 & 0 \\
-\frac{n-n_{L}}{n_{L}R_{1}} & \frac{n}{n_{L}}
-\end{pmatrix} \\
- & = \frac{n_{L}}{n^{'}}\cdot \frac{n}{n_{L}} \\
- & = \frac{n}{n^{'}}
-\end{align}$$
-Then:
-$$f_{2}=- \frac{n}{n^{'}} \left( - \frac{1}{C}
-\right)= - \frac{n}{n^{'}}f_{1}$$
 
