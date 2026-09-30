@@ -6,15 +6,20 @@
 $$g \mapsto \int_{-\infty}^{\infty}dxf(x)g(x)$$
 就是一个广义函数。
 
-当然，不是所有的广义函数都拥有一个函数与之对应。例如说Dirac delta：
-$$\delta:g \mapsto \int_{-\infty}^{\infty}\delta(x)g(x)=g(0)$$
+当然，不是所有的广义函数都拥有一个函数与之对应。但是广义函数总可以写成一个函数的积分外面套一个极限。例如说Dirac delta：
+$$\delta:g \mapsto  \lim_{ w \to 0^{+} } \int_{-\infty}^{\infty}dx\exp\left( - \frac{x^{2}}{2w^{2}} \right)g(x)=   \int_{-\infty}^{\infty}\delta(x)g(x)=g(0)$$
 尽管我们形式上想象了一个函数$\delta$，但它实际上不是一个合法的函数。真实的Dirac delta应该被想象成$\delta: g\mapsto g(0)$。把它写成一个$\delta$“函数”和$g$的积分只是一个形式上的对应。原则上，广义函数$\delta$和它对应的函数$\delta$应该在符号上有所区分。但是我们不区分它们的符号。如果$\delta$被写在积分里面，就当作是广义函数相应的函数。如果没有积分，则一般当成广义函数本身。
 
 类似的广义函数还有principal value：
 $$P \frac{1}{x}:g\mapsto \int_{-\infty}^{\infty}dxP \frac{1}{x}g(x)=\lim_{ \epsilon \to 0^{+} }  \int_{|x|>\epsilon}dx \frac{1}{x}g(x)$$
 此外还有：
 $$\frac{1}{x-i\epsilon}:g \mapsto \lim_{ \epsilon \to 0^{+} } \int_{-\infty}^{\infty}  \frac{1}{x-i\epsilon}g(x)$$
-有时我们直接省略外面的极限符号不写。我们可以证明如下引理：
+有时我们直接省略外面的极限符号不写。
+
+>[!Quote]
+>这种极限形式定义的广义函数应该是一个函数列与测试函数相乘并积分，然后积分外面取极限。但直觉上来讲，我们可以想成是这些广义函数对应了一个形式上的函数，这个函数就是函数列的极限。类似于把Dirac delta相乘Gaussian的极限。严格来讲，对这样的函数列取极限后就不是函数了。
+
+我们可以证明如下引理：
 
 >[!Success] Theorem1.1
 >$$\frac{1}{x-i\epsilon}= P \frac{1}{x}+i\pi\delta(x)$$
@@ -60,21 +65,35 @@ $$\begin{align}
 \end{align}$$
 为了解出Green函数，我们作Fourier变换：
 $$\begin{align}
-D(x-y)= \int \frac{d^{4}p}{(2\pi)^{4} }  \tilde{D} e^{-ip\cdot(x-y)},\ \delta(x-y)= \int \frac{d^{4}p}{(2\pi)^{4} } e^{-ip\cdot(x-y)}
+D(x-y)= \int \frac{d^{4}p}{(2\pi)^{4} }  \tilde{D} e^{-ip\cdot(x-y)},\ -i\delta(x-y)= -i\int \frac{d^{4}p}{(2\pi)^{4} } e^{-ip\cdot(x-y)}
 \end{align}$$
 那么代入方程，根据基的独立性脱去积分后得到：
 $$\begin{align}
  & (-p^{2}+m^{2}) \tilde{D}(p)= -i \\
 \end{align}$$
-这里，$\tilde{D}(p)$是一个广义函数。
-
 >[!Quote]
->如果一旦一个广义函数$\tilde{D}$满足：
->$$(-p^{2}+m^{2})\tilde{D}(p)=-i$$
->那么$D$就将符合:
+>这里，其实我们脱去积分过于草率了。我们思考脱去积分的时候到底做了什么。我们有：
 >$$\begin{align}
-  (\Box+m^{2})D & = \int \frac{d^{4}p}{(2\pi)^{4}} \tilde{D} (\Box+m^{2})e^{-ip\cdot(x-y)} \\
- & = \int \frac{d^{4}p}{(2\pi)^{4} }(-p^{2}+m^{2})\tilde{D}e^{-ip\cdot(x-y)} \\
- & = \int \frac{d^{4}p}{(2\pi)^{4}}(-i) e^{-ip\cdot(x-y)} \\
- & = -i\delta(x-y) 
+ & (\Box+m^{2})\int \frac{d^{4}p}{(2\pi)^{4}} \tilde{D(p)}e^{-ip\cdot(x-y)}=\int \frac{d^{4}p}{(2\pi)^{4}}(-i)e^{-ip\cdot(x-y)} \\
+\implies & \int \frac{d^{4}p}{(2\pi)^{4}}(-p^{2}+m^{2}) \tilde{D}e^{-ip\cdot(x-y)}= \int \frac{d^{4}p}{(2\pi)^{4}}(-i)e^{-ip\cdot(x-y)}
 \end{align}$$
+>我们发现，这里$\tilde{D}$只需要是一个广义函数对应的函数就可以了。这个广义函数对应的函数需要满足的方程是：
+>$$\int \frac{d^{4}p}{(2\pi)^{4}}(-p^{2}+m^{2})\tilde{D} g(p)=\int \frac{d^{4}p}{(2\pi)^{4}}(-i)g(p),\ \forall g\in C^{\infty}$$
+>只是我们把这个方程形式上写成：
+>$$(-p^{2}+m^{2})\tilde{D}(p)=-i$$
+
+我们发现，$\tilde{D}$可以是这个广义函数：
+$$\tilde{D}(p)= \frac{i}{2E_{\mathbf{p}}}\left[  \frac{1}{p^{0}-E_{\mathbf{p}}+i\epsilon} - \frac{1}{p^{0}+E_{\mathbf{p}}+i\epsilon}\right]$$
+## Ex:
+
+我们可以验证：
+$$\begin{align}
+ & \int \frac{d^{4}p}{(2\pi)^{4}}(-p^{2}+m^{2}) \frac{i}{2E_{\mathbf{p}}}\left[  \frac{1}{p^{0}-E_{\mathbf{p}}+i\epsilon}- \frac{1}{p^{0}+E_{\mathbf{p}}+i\epsilon} \right] g(p)\\
+ = & \int \frac{d^{4}p}{(2\pi)^{4}}(-p^{2}+m^{2}) \frac{i}{2E_{\mathbf{p}}}\left(  P \frac{1}{p^{0}-E_{\mathbf{p}}}- P \frac{1}{p^{0}+E_{\mathbf{p}}} \right)g(p) \\
+ = &  \int \frac{d^{3}p}{(2\pi)^{4}} \frac{i}{2E_{\mathbf{p}}} \lim_{ \delta \to 0^{+} } \left[ \int_{|p^{0}-E_{\mathbf{p}}|>\delta}dp^{0}(-p^{2}+m^{2}) \frac{1}{p^{0}-E_{\mathbf{p}}}g(p) -\int_{|p^{0}+E_{\mathbf{p}}|>\delta}dp^{0}(-p^{2}+m^{2}) \frac{1}{p^{0}+E_{\mathbf{p}}}g(p) \right] \\
+ = &  \int \frac{d^{3}p}{(2\pi)^{4}} \frac{i}{2E_{\mathbf{p}}}\lim_{ \delta \to 0^{+} } \int_{|p^{0}-E_{\mathbf{p}}|>\delta,\ |p^{0}+E_{\mathbf{p}} |>\delta }dp^{0}(-p^{2}+m^{2})\left[  \frac{1}{p^{0}-E_{\mathbf{p}}}- \frac{1}{p^{0}+E_{\mathbf{p}}} \right]g(p) \\
+ =  &  \int \frac{d^{3}p}{(2\pi)^{4}}(-i)\lim_{ \delta \to 0^{+} } \int_{|p^{0}-E_{\mathbf{p}}|>\delta,\ |p^{0}+E_{\mathbf{p}} |>\delta}dp^{0}g(p) \\
+ = & \int \frac{d^{3}p}{(2\pi)^{4}}(-i)\int dp^{0}g(p) \\
+ = &  \int \frac{d^{4}p}{(2\pi)^{4}}(-i)g(p)
+\end{align}$$
+
