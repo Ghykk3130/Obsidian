@@ -9,7 +9,7 @@ $$\begin{align}
  & = \frac{i}{2}(\epsilon^{ikl}\epsilon^{jkn}J^{l n}- \epsilon^{ikl}\epsilon^{jmk}J^{lm})  \\ & = i \epsilon^{ikl}\epsilon^{jkn}J^{l n}
 \\
  & = i(\delta^{ij}\delta^{ln}-\delta^{in}\delta^{lj})J^{l n} \\
- & = i(\delta^{ij}J^{ll}-J^{ij}) 
+ & = i(\delta^{ij}J^{ll}-J^{ji}) 
 \end{align}$$
 Similarly, we compute:
 $$\begin{align}
@@ -26,4 +26,21 @@ $$\begin{align}
 [K^{i},K^{j}] & = i(g^{i 0}J^{0 j}+g^{0 j}J^{i 0}-g^{ij }J^{0 0}-g^{0 0}J^{ij}) \\
  & = -ig^{ij}J^{0 0}-i g^{0 0}J^{ij} \\
  & = i(\delta^{ij}J^{00}-J^{ij})
+\end{align}$$
+## (b)
+
+We have:
+$$\begin{align}
+[J^{i}_{+},J^{j}_{-}] & = \left[  \frac{1}{2}(L^{i}+iK^{i}), \frac{1}{2}(L^{j}-iK^{j}) \right] \\
+ & = \frac{1}{4}[L^{i},L^{j}]+ \frac{1}{4}[K^{i},K^{j}]+ \frac{i}{4}[K^{i},L^{j}]- \frac{i}{4}[L^{i},K^{j}] \\
+ & = \frac{i}{4}(\delta^{ij}J^{ll}-J^{ji})+ \frac{i}{4}(\delta^{ij}J^{00}-J^{ij})+ \frac{i}{4}\cdot i\epsilon^{ijk}J^{k 0}- \frac{i}{4}\cdot i \epsilon^{ijk}J^{k 0} \\
+ & = \frac{i}{4}\delta^{ij}\text{Tr}(J)+ \frac{i}{4}(-J^{ji}-J^{ij}) \\
+ & = 0
+\end{align}$$
+This is because $J$ is antisymmetric. The trace is zero. 
+
+Clearly, if we are computing $[J^{i}_{+},J^{j}_{+}]$, we only need to change a sign. we get:
+$$\begin{align}
+[J^{i}_{+},J^{j}_{+}] & = \frac{i}{4}(\delta^{ij}J^{ll}-J^{ji})- \frac{i}{4}(\delta^{ij}J^{00}-J^{ij})+ \frac{i}{4}\cdot i \epsilon^{ijk}J^{k 0}+ \frac{i}{4}\cdot i \epsilon^{ijk}J^{k 0} \\
+ & = \frac{i}{4}
 \end{align}$$
