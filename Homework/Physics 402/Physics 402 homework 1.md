@@ -4,7 +4,7 @@ For $400\ nm$, we have:
 $$\begin{align}
 E & = \frac{hc}{\lambda}\approx \frac{6.63\times 10^{-34}\times 3\times 10^{8}}{400\times 10^{-9}\times 1.6 \times 10^{-19}}\approx 3.11\ eV
 \end{align}$$
-For $100\ nm$, we have:
+For $1000\ nm$, we have:
 $$E= \frac{hc}{\lambda}\approx \frac{6.63 \times 10^{-34}\times 3 \times 10^{8}}{1000\times 10^{-9}\times 1.6 \times 10^{-19}}\approx 1.24\ eV$$
 For $12\ \mu m$, we have:
 $$\begin{align}
@@ -63,14 +63,14 @@ The firs image is $3.33\ cm$ below the plane interface.
 
 If the light first touches the spherical mirror and gets reflected back, and then pass through the plane interface, we get another image. To calculate the position of the image formed by the spherical mirror, we have:
 $$\begin{align}
- & \frac{1}{7.5-2.5}+ \frac{1}{s_{2}^{'}}= - \frac{2}{-7.5} \\
-\implies & s_{2}^{'}=-7.5
+ & \frac{1}{7.5-5}+ \frac{1}{s_{2}^{'}}= - \frac{2}{-7.5} \\
+\implies & s_{2}^{'}=-7.5\ cm
 \end{align}$$
-Then adopt the apparent depth formula again to get:
+This is a virtual image. So the distance of this image to the plane interface is $7.5+7.5=15\ cm$. Then adopt the apparent depth formula again to get:
 $$\begin{align}
-s_{2}= \frac{7.5}{n}\approx 5\ cm
+s_{2}= \frac{15}{n}\approx 10\ cm
 \end{align}$$
-The second image is $5\ cm$ below the plane interface. 
+The second image is $10\ cm$ below the plane interface. 
 # Question 5
 
 Notice that there are four possibilities. 
@@ -103,40 +103,50 @@ $$\begin{align}
 Since addition operation is commutative, the situation where the first lens has $|R_{1}|=10\ cm$, and the second lens has $|R_{2}|=5\ cm$ is repetitive. 
 # Question 6
 
-Let the separation between the lenses be $t$. For the first lens we have:
+Let the separation between the lenses be $t$. We calculate the ABCD matrix:
 $$\begin{align}
- &  \frac{1}{s_{1}}+ \frac{1}{s_{1}^{'} }= \frac{1}{f_{1}} \\
- & \frac{1}{s_{2}}+ \frac{1}{s_{2}^{'}}=\frac{1}{f_{2}}
+M & = \begin{pmatrix}
+1 & 0 \\
+- \frac{1}{f_{2}} & 1
+\end{pmatrix} \begin{pmatrix}
+1 & t \\
+0 & 1
+\end{pmatrix} \begin{pmatrix}
+1 & 0 \\
+- \frac{1}{f_{1}} & 1
+\end{pmatrix} \\
+ & = \begin{pmatrix}
+1 & 0 \\
+- \frac{1}{f_{2}} & 1
+\end{pmatrix} \begin{pmatrix}
+1- \frac{t}{f_{1}} & t \\
+- \frac{1}{f_{1}} & 1
+\end{pmatrix} \\
+ & = \begin{pmatrix}
+1- \frac{t}{f_{1}}- \frac{1}{f_{1}} & t \\
+- \frac{1}{f_{2}}\left( 1- \frac{t}{f_{1}} \right)- \frac{1}{f_{1}} & - \frac{t}{f_{2}} +1
+\end{pmatrix}
 \end{align}$$
-The constraint by geometry is:
+We know that:
 $$\begin{align}
-s_{1}^{'}+s_{2}=t
+\frac{1}{f} & = - C \\
+ & = \frac{1}{f_{1}}+ \frac{1}{f_{2}}- \frac{t}{f_{1}f_{2}}
 \end{align}$$
-To derive the focal length, we consider parallel beams. Let $s_{1}=\infty$. Then it's easy to solve:
-$$\begin{align}
-f=s_{2}^{'}= \frac{f_{2}(t-f_{1})}{t-(f_{1}+f_{2})}
-\end{align}$$
+
 ## 1)
 
 Let $t=0,\ f_{1}=-5\ cm,\ f_{2}= 15\ cm$. We have:
 $$\begin{align}
-f & = -7.5
+f & = -7.5\ cm
 \end{align}$$
-In this case, the order does not matter. Since:
-$$\begin{align}
-f & = \frac{f_{1}f_{2}}{f_{1}+f_{2}}
-\end{align}$$
-Due to the symmetry in the expression, interchanging  $f_{1},f_{2}$ wouldn't make a difference. 
+In this case, the order does not matter, since the expression is symmetric in $f_{1},f_{2}$. Due to the symmetry in the expression, interchanging  $f_{1},f_{2}$ wouldn't make a difference. 
 ## 2)
 
 Let $t=8\ cm,\ f_{1}=-5\ cm,\ f_{2}=15\ cm$. We have:
 $$\begin{align}
-f= -97.5\ cm
+f= -37.5\ cm
 \end{align}$$
-In this case, the order matters. Since the symmetry of $f_{1},f_{2}$ within the expression is broken. Although there might be accidental "degeneracy". Here we can verify by direct computation that interchanging indeed makes a difference:
-$$\begin{align}
-\frac{-5 \times(8-15)}{8-(15-5)}= -17.5\neq -97.5
-\end{align}$$
+In this case, the order still doesn't matter, for that the expression is symmetric in $f_{1},f_{2}$. 
 # Question 7
 ## 1)
 
@@ -289,7 +299,7 @@ $$\begin{align}
 \frac{1}{f_{1}} & = \frac{n^{'}}{n}C \\
  & = \frac{n^{'}}{n}\left[  \left( 1+t \frac{n-n_{L}}{n_{L}R_{1}} \right) \frac{n_{L}-n^{'}}{n^{'}R_{2}}+ \frac{n_{L}}{n^{'}} \frac{n-n_{L}}{n_{L}R_{1}} \right] \\
  & = \frac{n^{'}}{n}\left(  \frac{n_{L}-n^{'}}{n^{'}R_{2}} + \frac{n-n_{L}}{n^{'}R_{1}}+ t \frac{(n-n_{L})(n_{L}-n^{'})}{n^{'}n_{L}R_{1}R_{2}}\right) \\
- & = \frac{n_{L}-n^{'}}{n^{}R_{2}}- \frac{n_{L}-n}{nR_{1}}+ \frac{(n_{L}-n^{'})(n_{L}-n)}{n^{'}n_{L}} \frac{t}{R_{1}R_{2}}
+ & = \frac{n_{L}-n^{'}}{n^{}R_{2}}- \frac{n_{L}-n}{nR_{1}}- \frac{(n_{L}-n^{'})(n_{L}-n)}{n^{}n_{L}} \frac{t}{R_{1}R_{2}}
 \end{align}$$
 We also have:
 $$\begin{align}
