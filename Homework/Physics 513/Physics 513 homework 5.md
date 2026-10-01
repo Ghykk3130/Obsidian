@@ -25,5 +25,5 @@ Similarly, we compute:
 $$\begin{align}
 [K^{i},K^{j}] & = i(g^{i 0}J^{0 j}+g^{0 j}J^{i 0}-g^{ij }J^{0 0}-g^{0 0}J^{ij}) \\
  & = -ig^{ij}J^{0 0}-i g^{0 0}J^{ij} \\
- & = i\delta^{ij}J^{00}-iJ^{ij}
+ & = i(\delta^{ij}J^{00}-J^{ij})
 \end{align}$$
