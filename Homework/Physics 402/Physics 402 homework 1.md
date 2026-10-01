@@ -123,7 +123,7 @@ M & = \begin{pmatrix}
 - \frac{1}{f_{1}} & 1
 \end{pmatrix} \\
  & = \begin{pmatrix}
-1- \frac{t}{f_{1}}- \frac{1}{f_{1}} & t \\
+1- \frac{t}{f_{1}} & t \\
 - \frac{1}{f_{2}}\left( 1- \frac{t}{f_{1}} \right)- \frac{1}{f_{1}} & - \frac{t}{f_{2}} +1
 \end{pmatrix}
 \end{align}$$
@@ -222,7 +222,7 @@ $B=0$ just means that the input and output planes are conjugate to each other. S
 
 $A$ in this case is the linear magnification. We have $y^{'}=Ay$ in this case. 
 # Question 9
-
+## 1)
 Since the radius is $10\ cm$, the system matrix is a translation sandwiched between two refractions.
 
 We compute:
