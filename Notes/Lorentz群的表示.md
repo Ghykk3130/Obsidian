@@ -7,7 +7,11 @@ $$\begin{align}
 
 对于一个矢量场，假设$\phi_{a}(x)$是矢量场的component，那么不同component会混合。我们一般有：
 $$\phi_{a}^{'}(x)=M_{ab}(\Lambda)\phi_{b}(\Lambda ^{-1}x)$$
-# 1. 李代数
+# 1. Lorentz群的李代数
+
+
+
+
 
 
 
