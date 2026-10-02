@@ -17,7 +17,21 @@ $$\begin{align}
 \implies & (X^{T}g)^{\mu}{}_{\nu}+(gX)^{\mu}{}_{\nu}=0 \\
 
 \implies & (X^{T})^{\mu}{}_{\rho}g^{\rho}{}_{\nu}+g^{\mu}{}_{\rho}X^{\rho}{}_{\nu}=0 \\
-\implies & X^{\rho}{}_{\mu}g^{\rho}{}_{\nu}+g^{\mu}{}_{\rho}X^{\rho}{}_{\nu}=0
+\implies & X^{\rho}{}_{\mu}g^{\rho}{}_{\nu}+g^{\mu}{}_{\rho}X^{\rho}{}_{\nu}=0 \\
+\implies & X^{\nu}{}_{\mu}+X^{\mu}{}_{\nu}=0
+\end{align}$$
+
+解释这个矛盾。我有两种展开方式：
+$$\begin{align}
+(X^{T}g)^{\mu}{}_{\nu} & = (X^{T})^{\mu \rho}g_{\rho \nu} \\
+ & = X^{\rho \mu}g_{\rho \nu} \\
+ & = X_{\rho}{}^{\mu}g^{\rho}{}_{\nu} \\
+ & = X_{\nu}{}^{\mu}
+\end{align}$$
+$$\begin{align}
+(X^{T}g)^{\mu}{}_{\nu} & = (X^{T})^{\mu}{}_{\rho}g^{\rho}{}_{\nu} \\
+ & = X^{\rho}{}_{\mu}g^{\rho}{}_{\nu} \\
+ & = X^{\nu}{}_{\mu}
 \end{align}$$
 
 

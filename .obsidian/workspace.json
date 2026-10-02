@@ -3618,8 +3618,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200.5,
-    "collapsed": true
+    "width": 200.5
   },
   "right": {
     "id": "9003d078f8dbc4ed",
@@ -3735,9 +3734,9 @@
   },
   "active": "cb1c62b1d4db36be",
   "lastOpenFiles": [
-    "Notes/李群，李代数.md",
-    "Notes/Lorentz群的表示.md",
     "Notes/Lorentz群.md",
+    "Notes/Lorentz群的表示.md",
+    "Notes/李群，李代数.md",
     "Notes/张量分析.md",
     "Notes/微分几何基础概念.md",
     "Notes/Lie Group.md",
