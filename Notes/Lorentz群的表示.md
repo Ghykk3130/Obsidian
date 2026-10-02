@@ -1,12 +1,3 @@
-给定一个Lorentz变换$x^{'\mu}=\Lambda^{\mu}{}_{\nu}x^{\nu}$。对于一个标量场$\phi(x)$，我们通常有：
-$$\begin{align}
- & \phi_{}^{'}(x^{'})=\phi_{}(x) \\
-\implies & \phi^{'}_{}(x^{'})= \phi_{}(\Lambda ^{-1}x^{'})
-\end{align}$$
-或者可以写成$\phi^{'}_{}(x)=\phi_{}(\Lambda ^{-1}x)$。通过将所有变化吸收进场的functional dependence本身。
-
-对于一个矢量场，假设$\phi_{a}(x)$是矢量场的component，那么不同component会混合。我们一般有：
-$$\phi_{a}^{'}(x)=M_{ab}(\Lambda)\phi_{b}(\Lambda ^{-1}x)$$
 # 1. Lorentz群的李代数
 
 >[!Success] Proposition 1.1
@@ -43,89 +34,84 @@ $$\begin{align}
 >[!Right]
 >$\blacksquare$
 
-于是$X_{\mu \nu}$是一个反对称阵。有六个自由分量，取为李代数的基底。
+于是$X_{\mu \nu}$是一个反对称阵。有六个自由分量，取为李代数的基底，称为生成元。
+## Ex:
 
-SO(3)的表示
-
-给定任意李群的表示$\{ R \}$，我们可以考虑无穷小变换：
-$$\begin{align}
-R(\theta)=1-i \theta_{i}J_{i}
-\end{align}$$
-其中，$J_{i}$称为生成元。我们可以把有限变换拆分成无穷小变换，从而用指数表示有限变换：
-$$\begin{align}
-R(\theta) & = \lim_{ N \to \infty } \left( 1- i \frac{\theta_{i}}{N}J_{i} \right)^{N} \\
- & = \exp\left( -i \theta_{i}J_{i} \right)
-\end{align}$$
-
-
-
-
-任取李代数中元素$X,\ Y$。令$\alpha$为一无穷小参数。（$\alpha$不是矢量。）考虑：
-$$\begin{align}
-\exp(-i\alpha X)Y \exp(i\alpha X) & = (1-i\alpha X)Y(1+i\alpha X) \\
- & = Y-i\alpha[X,Y]
-\end{align}$$
-
-
-
-
-
-
-
-任意考虑两个无穷小变换，修正到二阶，$R(\alpha),R(\beta)$。不妨记$R(\alpha)=\exp(- i\alpha_{i}J_{i})=\exp(-A)$，$R(\beta)=\exp(-i\beta_{i}J_{i})=\exp(-B)$。我们有：
-$$\begin{align}
-R(\alpha)R(\beta)R^{-1}(\alpha)R^{-1}(\beta) & =\left( 1-A+ \frac{A^{2}}{2} \right)\left( 1-B+ \frac{B^{2}}{2} \right)\left( 1+A+ \frac{A^{2}}{2} \right)\left( 1+B+ \frac{B^{2}}{2} \right) \\
- & = 1+(-A-B+A+B)+ \left( AB-A^{2}-AB-BA-B^{2}+AB+ \frac{A^{2}}{2}+ \frac{B^{2}}{2}+ \frac{A^{2}}{2}+ \frac{B^{2}}{2} \right) \\
- & = 1+AB-BA \\
- & = 1+ [A,B] \\
- & = 1-\alpha_{i}\beta_{j}[J_{i},J_{j}]
-\end{align}$$
-因为左手边显然还是一个无穷小变换。所以一定存在$\gamma$使得：
-$$\begin{align}
-i\gamma_{i}J_{i}=\alpha_{i}\beta_{j}[J_{i},J_{j}]
-\end{align}$$
-
-
-
-生成元将满足一定的对易关系$[J_{i},J_{j}]=$
-
-
-
-
-可以证明，如果过两个表示的生成元的对易关系一样，那么两个表示等价。
-
-考虑绕z轴无穷小旋转。我们有：
-$$R_{\hat{\mathbf{z}}}(\theta)= \begin{pmatrix}
-\cos \theta & -\sin \theta & 0 \\
-\sin \theta & \cos \theta & 0 \\
-0 & 0 & 1
-\end{pmatrix}\approx 1+ \theta\begin{pmatrix}
-0 & -1 & 0 \\
-1 & 0 & 0 \\
-0 & 0 & 1
-\end{pmatrix}=1-i\theta \begin{pmatrix}
-0 & -i & 0 \\
-i & 0 & 0 \\
-0 & 0 & i
+考虑$X_{\mu \nu}=\begin{pmatrix}0 &  &  &  \\  & 0 & 1 &  \\  &  -1 & 0 &    \\  &  &  & 0\end{pmatrix}$作为一个生成元。提升指标得到：
+$$X^{\mu}{}_{\nu}= \begin{pmatrix}
+0 &  &  &  \\
+ & 0 & -1 &  \\
+ & 1 & 0 &  \\
+ &  &  & 0
 \end{pmatrix}$$
-不妨定义：
-$$J_{z}= \begin{pmatrix}
-0 & -i & 0 \\
-i & 0 & 0 \\
-0 & 0 & i
-\end{pmatrix}$$
-同理可以得到：
+它产生的有限变换为：
 $$\begin{align}
-J_{x}= \begin{pmatrix}
-i & 0 & 0 \\
-0 & 0 & -i \\
-0 & i & 0
-\end{pmatrix},\ J_{y}=\begin{pmatrix}
-0 & 0 & -i \\
-0 & i & 0 \\
-i & 0 & 0
+\exp\left(\theta X^{\mu}{}_{\nu}\right) = \begin{pmatrix}
+0 &  &  &  \\
+ & 0 & \sin -\theta &  \\
+ & \sin \theta & 0 &  \\
+ &  &  & 0
+\end{pmatrix}+\begin{pmatrix}
+1 &  &  &  \\
+ & \cos \theta &  &  \\
+ &  & \cos \theta &  \\
+ &  &  & 1
+\end{pmatrix} =\begin{pmatrix}
+ 1 &  &  &  \\
+ & \cos \theta & -\sin \theta &  \\
+ & \sin \theta & \cos \theta &  \\
+ &  &  & 1
 \end{pmatrix}
 \end{align}$$
+是绕z轴的旋转。
+## Ex:
 
+考虑$X_{\mu \nu}=\begin{pmatrix}0 & -1 &  &  \\ 1 & 0 &  &  \\  &  & 0 &  \\  &  &  & 0\end{pmatrix}$作为一个生成元。提升指标得到：
+$$X^{\mu}{}_{\nu}=\begin{pmatrix}
+0 & -1 &  &  \\
+-1 & 0 &  &  \\
+ &  & 0 &  \\
+ &  &  & 0
+\end{pmatrix}$$
 
+它产生的有限变换为：
+$$\begin{align}
+\exp\left(\xi X^{\mu}{}_{\nu}\right)=\begin{pmatrix}
+0 & -\sinh \xi &  &  \\
+-\sinh \xi & 0 &  &  \\
+ &  & 0 &  \\
+ &  &  & 0
+\end{pmatrix} + \begin{pmatrix}
+\cosh \xi &  &  &  \\
+ & \cosh \xi &  &  \\
+ &  & 1 &  \\
+ &  &  & 1
+\end{pmatrix}= \begin{pmatrix}
+\cosh \xi & -\sinh \xi &  &  \\
+-\sinh \xi & \cosh \xi &  &  \\
+ &  & 1 &  \\
+ &  &  & 1
+\end{pmatrix}
+\end{align}$$
+令$\cosh \xi=\gamma$。那么$v^{2}= \frac{\gamma^{2}-1}{\gamma^{2}}= \tanh ^{2}\xi$。于是$v=\tanh \xi$。那么$\gamma v=\sinh \xi$。是x方向的boost。
+# 2. Lorentz群的表示
 
+给定一个Lorentz变换$x^{'\mu}=\Lambda^{\mu}{}_{\nu}x^{\nu}$。对于一个标量场$\phi(x)$，我们通常有：
+$$\begin{align}
+ & \phi_{}^{'}(x^{'})=\phi_{}(x) \\
+\implies & \phi^{'}_{}(x^{'})= \phi_{}(\Lambda ^{-1}x^{'})
+\end{align}$$
+或者可以写成$\phi^{'}_{}(x)=\phi_{}(\Lambda ^{-1}x)$。通过将所有变化吸收进场的functional dependence本身。
+
+对于一个矢量场，假设$\phi_{a}(x)$是矢量场的component，那么不同component会混合。我们一般有：
+$$\phi_{a}^{'}(x)=M_{ab}(\Lambda)\phi_{b}(\Lambda ^{-1}x)$$
+考虑两次Lorentz变换$x\rightarrow x^{'}=\Lambda_{1}x\rightarrow x^{''}=\Lambda_{2}\Lambda_{1}x$。我们有：
+$$\begin{align}
+\phi^{''}_{a}(x) & =M_{ab}(\Lambda_{2})\phi^{'}_{b}(\Lambda_{2} ^{-1}x) \\
+ & = M_{ab}(\Lambda_{2})M_{bc}(\Lambda_{1})\phi_{c}^{}(\Lambda_{1}^{-1}\Lambda_{2}^{-1}x) \\
+ & = M_{ab}(\Lambda_{2})M_{bc}(\Lambda_{1})\phi_{c}((\Lambda_{2}\Lambda_{1})^{-1}x) \end{align}$$
+ 另一方面，$\phi_{a}^{''}(x)=M_{ac}(\Lambda_{2}\Lambda_{1})\phi_{c}((\Lambda_{2}\Lambda_{1})^{-1}x)$。所以：
+ $$M_{ac}(\Lambda_{2}\Lambda_{1})=M_{ab}(\Lambda_{2})M_{bc}(\Lambda_{1})$$
+这构成Lorentz群的一个表示。
+
+对于任意一个无穷小变换，总可以写成$e^{\omega}$的形式。其中$\omega\in\mathfrak{so}(1,3)$是一个值很小的矩阵。
