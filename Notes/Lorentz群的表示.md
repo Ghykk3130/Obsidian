@@ -9,6 +9,10 @@ $$\begin{align}
 $$\phi_{a}^{'}(x)=M_{ab}(\Lambda)\phi_{b}(\Lambda ^{-1}x)$$
 # 1. Lorentz群的李代数
 
+>[!Success] Proposition 1.1
+>$\mathfrak{so}(1,3)=\{ X\in \text{M}(4,\mathbb{R})|X_{\mu \nu}+X_{\nu \mu}=0 \}$
+## Proof.
+
 任取一个李代数中的元素$X$。那么：
 $$\begin{align}
  & (e^{tX})^{T}ge^{tX}=g,\ \forall t\in \mathbb{R} \\
@@ -22,8 +26,24 @@ $$\begin{align}
 \implies &  X_{\nu \mu}+X_{\mu \nu}=0
 \end{align}$$
 反过来可以证明，如果$X$满足$X_{\mu \nu}+X_{\nu \mu}=0$，那么：
+$$\begin{align}
+ & X^{T}g=-gX \\
+\implies & (X^{T})^{2}g=-(X^{T}g)X=(-1)^{2}gX^{2} \\
+\implies & (X^{T})^{n}g=(-1^{})^{n}gX^{n}
+\end{align}$$
+于是：
+$$\begin{align}
+(e^{tX})^{T}g e^{tX} & = e^{tX^{T}}ge^{tX} \\
+ & = \sum_{n} \frac{1}{n!}(tX^{T})^{n}ge^{tX} \\
+ & = g\sum_{n}  \frac{1}{n!}(-tX)^{n}e^{tX} \\
+ & = g e^{-tX}e^{tX} \\
+ & =g
+\end{align}$$
+那么$X$满足李代数条件。
+>[!Right]
+>$\blacksquare$
 
-
+于是$X_{\mu \nu}$是一个反对称阵。有六个自由分量，取为李代数的基底。
 
 SO(3)的表示
 
