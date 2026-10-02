@@ -9,8 +9,16 @@ $$\begin{align}
 $$\phi_{a}^{'}(x)=M_{ab}(\Lambda)\phi_{b}(\Lambda ^{-1}x)$$
 # 1. Lorentz群的李代数
 
+任取一个李代数中的元素$X$。那么：
+$$\begin{align}
+ & (e^{tX})^{T}ge^{tX}=g,\ \forall t\in \mathbb{R} \\
+\implies &  \left. \frac{d}{dt}  \right|_{t=0} (e^{tX^{T}}ge^{tX})=0 \\
+\implies & X^{T}g+gX=0 \\  \implies & (X^{T}g+gX)^{\mu}{}_{\nu}=0 \\
+\implies & (X^{T}g)^{\mu}{}_{\nu}+(gX)^{\mu}{}_{\nu}=0 \\
 
-
+\implies & (X^{T})^{\mu}{}_{\rho}g^{\rho}{}_{\nu}+g^{\mu}{}_{\rho}X^{\rho}{}_{\nu}=0 \\
+\implies & X^{\rho}{}_{\mu}g^{\rho}{}_{\nu}+g^{\mu}{}_{\rho}X^{\rho}{}_{\nu}=0
+\end{align}$$
 
 
 
