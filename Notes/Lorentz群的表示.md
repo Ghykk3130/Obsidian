@@ -7,7 +7,13 @@ $$\begin{align}
 
 对于一个矢量场，假设$\phi_{a}(x)$是矢量场的component，那么不同component会混合。我们一般有：
 $$\phi_{a}^{'}(x)=M_{ab}(\Lambda)\phi_{b}(\Lambda ^{-1}x)$$
-# 1. SO(3)的表示
+# 1. 李代数
+
+
+
+
+
+SO(3)的表示
 
 给定任意李群的表示$\{ R \}$，我们可以考虑无穷小变换：
 $$\begin{align}
