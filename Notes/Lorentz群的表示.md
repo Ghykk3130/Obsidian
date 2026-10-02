@@ -18,11 +18,18 @@ $$\begin{align}
 R(\theta) & = \lim_{ N \to \infty } \left( 1- i \frac{\theta_{i}}{N}J_{i} \right)^{N} \\
  & = \exp\left( -i \theta_{i}J_{i} \right)
 \end{align}$$
+
+
+
+
 任取李代数中元素$X,\ Y$。令$\alpha$为一无穷小参数。（$\alpha$不是矢量。）考虑：
 $$\begin{align}
 \exp(-i\alpha X)Y \exp(i\alpha X) & = (1-i\alpha X)Y(1+i\alpha X) \\
  & = Y-i\alpha[X,Y]
 \end{align}$$
+
+
+
 
 
 
