@@ -17,10 +17,11 @@ $$\begin{align}
 \implies & (X^{T}g)^{\mu}{}_{\nu}+(gX)^{\mu}{}_{\nu}=0 \\
 
 \implies & (X^{T})^{\mu}{}_{\rho}g^{\rho}{}_{\nu}+g^{\mu}{}_{\rho}X^{\rho}{}_{\nu}=0 \\
-\implies & X^{\rho}{}_{\mu}g^{\rho}{}_{\nu}+g^{\mu}{}_{\rho}X^{\rho}{}_{\nu}=0 \\
-\implies & X^{\nu}{}_{\mu}+X^{\mu}{}_{\nu}=0
+\implies & X_{\rho}{}^{\mu}g^{\rho}{}_{\nu}+g^{\mu}{}_{\rho}X^{\rho}{}_{\nu}=0 \\
+\implies & X_{\nu}{}^{\mu}+X^{\mu}{}_{\nu}=0 \\
+\implies &  X_{\nu \mu}+X_{\mu \nu}=0
 \end{align}$$
-所以$X$必须反对称。反过来可以证明，如果$X$反对称，那么：
+反过来可以证明，如果$X$满足$X_{\mu \nu}+X_{\nu \mu}=0$，那么：
 
 
 
