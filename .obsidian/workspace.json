@@ -3553,12 +3553,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Notes/Lorentz群的表示.md",
+                "file": "Homework/Physics 513/Physics 513 homework 5.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Lorentz群的表示"
+              "title": "Physics 513 homework 5"
             }
           }
         ],
@@ -3616,7 +3616,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "李代数",
+                "query": "",
                 "matchingCase": true,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -3627,8 +3627,7 @@
               "title": "Search"
             }
           }
-        ],
-        "currentTab": 3
+        ]
       }
     ],
     "direction": "horizontal",
@@ -3749,15 +3748,20 @@
   },
   "active": "c6f0e57e2b8dded9",
   "lastOpenFiles": [
-    "Notes/李代数.md",
-    "Notes/Lorentz群的表示.md",
+    "Homework/Physics 513/Physics 513 homework 1.md",
+    "Homework/Physics 513/Physics 513 homework 2.md",
+    "Homework/Physics 513/Physics 513 homework 3.md",
+    "Homework/Physics 513/Physics 513 homework 4.md",
+    "Homework/Physics 513/Physics 513 homework 5.md",
+    "Homework/Physics 510/Physics 510 Homework 2.md",
+    "Homework/Physics 510/Physics 510 Homework 8.md",
     "Notes/Dirac旋量.md",
+    "Notes/Lorentz群的表示.md",
+    "Notes/李代数.md",
     "Notes/Lorentz群.md",
     "Notes/张量分析.md",
     "Notes/微分几何基础概念.md",
     "Notes/Lie Group.md",
-    "Homework/Physics 513/Physics 513 homework 5.md",
-    "Homework/Physics 513/Physics 513 homework 4.md",
     "Homework/Math 654/Homework 4 problems.md",
     "Homework/Math 654/Homework 4.md",
     "Homework/Physics 402/Physics 402 homework 1.md",
@@ -3770,11 +3774,6 @@
     "Notes/Landau量子化.md",
     "Homework/Physics 520/Physics 520 homework 1.md",
     "Homework/Physics 520/Physics 520 homework 0.md",
-    "Homework/Physics 511/Physics 511 Homework 4.md",
-    "Notes/Bose-Einstein statistics与BEC.md",
-    "Homework/Physics 520/Physics 520 homework 2 problem set.md",
-    "Homework/Physics 520/Physics 520 homework 4 problem set.md",
-    "Notes/Klein-Gordon传播子.md",
     "Pictures/24fd794455aa6fef3032eee3dd7b8e00.jpg",
     "Pictures/Pasted image 20260929131846.png",
     "Pictures/1ea34c77acda998ec15addc14c6432e8.jpg",
