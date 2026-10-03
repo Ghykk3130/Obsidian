@@ -34,7 +34,9 @@ $$\begin{align}
 >[!Right]
 >$\blacksquare$
 
-于是$X_{}^{\mu \nu}$是一个反对称阵。有六个自由分量，取为李代数的基底，称为生成元。我们将李代数的参数写成纯虚数，那么李代数的基底也要乘以虚数。不妨取：
+于是$X_{}^{\mu \nu}$是一个反对称阵。有六个自由分量，取为李代数的基底，称为生成元。
+
+每个李群中元素$e^{tX}$都可以写成$e^{-it(iX)}$。于是我们可以将找到的六个反对称基底乘上$i$，并相应地在变换系数前面乘上$-i$。不妨取：
 $$\begin{align}
  & K_{1}= i\begin{pmatrix}  0 & 1 &  &    \\
 1 & 0 &   &   \\
@@ -121,6 +123,11 @@ $$\begin{align}
  & [J_{i},K_{j}]=i\epsilon_{ijk}K_{k} \\
  & [K_{i},K_{j}]=-i\epsilon_{ijk}J_{k}
 \end{align}$$
+>[!Quote]
+>李代数是实数域上的代数，对于Lie bracket封闭。那么为什么Lie bracket的结果却不是生成元的实系数的线性组合？这是因为我们前面已经给生成元乘上了虚数。令没有乘上虚数的生成元为$J^{'}_{i},K^{'}_{i}$。那么这些对易关系相应地变化。例如：
+>$$[J_{i},J_{j}]=i\epsilon_{ijk}J_{k}\implies[iJ^{'}_{i},iJ^{'}_{j}]=i\epsilon_{ijk}iJ^{'}_{k}\implies[J^{'}_{i},J^{'}_{j}]=\epsilon_{ijk}J^{'}_{k}$$
+>所以现在李代数并不对于Lie bracket封闭。而是对于$\frac{1}{i}[\cdot,\cdot]$封闭。
+
 我们可以构建：
 $$\begin{align}
 \mathcal{J}^{\mu \nu}=\begin{pmatrix}

@@ -3553,12 +3553,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Notes/Dirac旋量.md",
+                "file": "Notes/Lorentz群的表示.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Dirac旋量"
+              "title": "Lorentz群的表示"
             }
           }
         ],
@@ -3616,7 +3616,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "Dirac",
+                "query": "李代数",
                 "matchingCase": true,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -3749,9 +3749,9 @@
   },
   "active": "c6f0e57e2b8dded9",
   "lastOpenFiles": [
+    "Notes/李代数.md",
     "Notes/Lorentz群的表示.md",
     "Notes/Dirac旋量.md",
-    "Notes/李代数.md",
     "Notes/Lorentz群.md",
     "Notes/张量分析.md",
     "Notes/微分几何基础概念.md",
