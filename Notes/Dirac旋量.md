@@ -52,8 +52,8 @@ $$\begin{align}
 >$\blacksquare$
 
 进一步的，我们猜Dirac方程：
-$$(i\gamma^{\mu}\partial_{\mu}-m^{})\psi=0$$
-也是针对Dirac旋量不变的。
+$$\boxed{(i\gamma^{\mu}\partial_{\mu}-m^{})\psi=0}$$
+它是针对Dirac旋量不变的。
 
 >[!Success] Proposition 1.2
 >The Dirac equation is invariant under transformations of Dirac spinors.
@@ -97,6 +97,20 @@ $$\begin{align}
  & = \Box
 \end{align}$$
 那么得证。
+
+我们定义Dirac conjugate：
+$$\bar{\psi}=\psi ^{\dagger}\gamma^{0}$$
+我们发现，通过坐标变换诱导的新场的Dirac conjugate为：
+$$\begin{align}
+\bar{\psi^{'}}(x) & = \psi^{' {\dagger}}(x) \gamma^{0} \\
+ & = \left( \Lambda_{\frac{1}{2}}\psi(\Lambda ^{-1}x) \right)^{\dagger} \gamma^{0} \\
+ & = \psi ^{\dagger} \Lambda_{\frac{1}{2}}^{\dagger}\gamma^{0}
+\end{align}$$
+考虑$\Lambda_{\frac{1}{2}}=\exp\left( - \frac{i}{2}\omega_{\mu \nu}S^{\mu \nu} \right)$。对于空间部分，显然$\{ \gamma^{i},\gamma^{0} \}=2g^{i{0}}=0$。
+
+
+构造lagrangian：
+$$\mathcal{L}= \bar{\psi}(i\gamma^{\mu }\partial_{\mu}-m)\psi$$
 
 
 
