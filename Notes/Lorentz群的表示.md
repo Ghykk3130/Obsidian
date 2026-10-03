@@ -151,40 +151,27 @@ $$\exp\left( - \frac{i_{}}{2}\omega_{\mu \nu}\mathcal{J}^{\mu \nu} \right)$$
 其中，$\omega_{\mu \nu}$为参数，满足$\omega_{\mu \nu}=-\omega_{\nu \mu}$。其中$\frac{1}{2}$只是为了去重复。
 # 2. Lorentz群的一般表示
 
-我们先来研究$\mathfrak{so}(3)$。取$R(\theta)=\exp(-i \theta X)$。$iX\in\text{M}(3,\mathbb{R})$，因为$\text{SO}(3)$中都是实阵。那么存在约束：
-$$\begin{align}
- & (\exp(-i\theta X))^{T}\exp(-i\theta X)=1 \\
-\implies & \exp(-i\theta X^{T})\exp(-i\theta X)=1 \\
-\implies & \left. \frac{d}{d\theta}  \right|_{\theta=0}[\exp(-i\theta X^{T})\exp(-i\theta X)]=0 \\
-\implies & X^{T}=X
-\end{align}$$
-由$\text{det}(R)=1$得到：
-$$\text{det}(R)=\exp(-i\theta\text{tr}(R))=1\implies\text{tr}(R)=0$$
-所以纯虚阵$X$的基底可以取为：
-$$J_{1}=i\begin{pmatrix}
-0 &  &  \\
- & 0 & -1 \\
- & 1 & 0
-\end{pmatrix},\ J_{2}=i\begin{pmatrix}
-0 &  & 1 \\
- & 0 &  \\
--1 &  & 0
-\end{pmatrix},\ J_{3}=i\begin{pmatrix}
-0 & -1 &  \\
-1 & 0 &  \\
- &  & 0
-\end{pmatrix}$$
-符合结构常数：
-$$[J_{i},J_{j}]=i\epsilon_{ijk}J_{k}$$
-接下来研究$\mathfrak{su}(2)$。取$U(\theta)=\exp(-i \theta X)$。同样地，由$U^{\dagger}(\theta)U(\theta)=1$，并求导，得到：
+我们先来研究$\mathfrak{su}(2)$。取$U(\theta)=\exp(-i \theta X)$。由$U^{\dagger}(\theta)U(\theta)=1$，并在$\theta=0$处求导，得到：
 $$X^{\dagger}=X$$
 由$\text{det}(U)=1$，得到：
 $$\text{det}(U)=\exp(-i\theta\text{tr}(X))=1\implies\text{tr}(X)=0$$
-所以$\text{su}(2)$基底可以取为：
+所以$\mathfrak{su}(2)$基底可以取为：
 $$J_{i}= \frac{\sigma_{i}}{2}$$
 符合结构常数：
 $$[J_{i},J_{j}]=i\epsilon_{ijk}J_{k}$$
+将$\mathfrak{su}(2)$复化。令$J_{\pm}=J_{1}\pm iJ_{2}$。取$\{ J\pm,\ J_{3}\}$为新基。我们知道可以构造出一个不可约的不变子空间$\{ \ket{j,m_{j}} \}$。此时，无论$J_{\pm},J_{3}$如何作用，都无法从这个空间出去。这时，再变换回$J_{1}= \frac{1}{2}(J_{+}+J_{-}),\ J_{2}= \frac{1}{2i}(J_{+}-J_{-}),\ J_{3}=J_{3}$。那么显然$J_{1},J_{2},J_{3}$作用在这个空间上也不会出去。我们便获得了$\text{SU}(2)$的一个不可约表示。
 
+对于$\mathfrak{so}(1,3)$，我们作：
+$$\begin{align}
+J^{+}_{i} & = \frac{1}{2}(J_{i}+iK_{i}),\ J^{-}_{i}=\frac{1}{2}(J_{i}-iK_{i})
+\end{align}$$
+我们将$\mathfrak{so}(1,3)$分成两个子空间。$\mathfrak{so}(1,3)=\{ J^{+}_{i} \}\cup \{ J^{-}_{i} \}$。容易证明，$\{ J^{+}_{i} \},\ \{ J^{-}_{i} \}$各自对于线性组合，Lie bracket封闭。例如对于Lie bracket，直接计算可以证明：
+$$\begin{align}
+ & [J_{i}^{+},J^{+}_{j}]=i\epsilon_{ijk}J^{+}_{k} \in \{ J^{+}_{i} \} \\
+ & [J^{-}_{i},J^{-}_{j}]=i\epsilon_{ijk}J^{-}_{k}  \in \{ J^{-}_{i} \}\\
+ & [J^{+}_{i},J^{-}_{j}]=0
+\end{align}$$
+所以$\mathfrak{so}(1,3)=\{ J^{+}_{i} \}\oplus \{ J^{-}_{i} \}$。而显然，由于上述对易关系，$J^{+}_{i},\ J^{-}_{i}$各自可以构造出一套$\mathfrak{su}(2)$的不可约表示。所以$\mathfrak{so}(1,3)\cong\mathfrak{su}(2) \oplus \mathfrak{su}(2)$。
 
 # 3. Lorentz群的矢量表示
 
@@ -227,6 +214,8 @@ $$\begin{align}
 
 >[!Quote]
 >实际上，每个李代数生成的表示只是和单位元简单连通的李群的子群的表示，而不是整个李群的表示。因为这里我们局限在$\text{SO}^{+}(1,3)$，即包含单位元，由旋转，boost生成的Lorentz群分支。这个分支是简单连通的，不含$P,T$，所以$S^{\mu \nu}$可以生成这个分支的表示。
+>
+>用李代数生成的群称为universal cover。我们知道$\mathfrak{su}(2)=\mathfrak{so}(3)$。而$\mathfrak{su}(2)$仅能生成$\text{SU}(2)$。所以$\text{SU}(2)$是$\text{SO}(3)$的universal cover。
 
 显然，$S^{\mu \nu}$是反对称的。若考虑一个Lorentz变换：
 $$\Lambda=\exp\left( - \frac{i}{2}\omega_{\mu \nu}\mathcal{J}^{\mu \nu} \right)$$
