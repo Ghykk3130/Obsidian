@@ -251,7 +251,6 @@ D^{-1}(\Lambda)S^{\mu \nu}D(\Lambda) & = \frac{i}{4}D^{-1}(\Lambda)[\gamma^{\mu}
 \end{align}$$
 # 4. Dirac spinor
 
-
 若$\mu=0,1,2,3$，旋量表示空间维数为$4$，可以取：
 $$\gamma^{0}=\begin{pmatrix}
 0 & 1 \\
@@ -283,6 +282,21 @@ $$\begin{align}
 \psi^{'}_{a}(x)= (\Lambda_{\frac{1}{2}})_{ab}\psi_{b}(\Lambda ^{-1}x)
 \end{align}$$
 那么称$\psi_{a}(x)$为Dirac旋量。
+## Ex:
 
+我们可以证明Klein-Gordon方程对于Dirac旋量是不变的。
 
+>[!Quote]
+>这是什么意思呢？对于任意场$\psi(x)$，变换$x\rightarrow \Lambda x$，并将$\Lambda$吸收进场的functional dependence。这引出一个新的场的构型$\psi^{'}(x)$。Klein-Gordon方程不变的意思是，如果$(\Box+m^{2})\psi(x)=0$。那么可以推出$(\Box+m^{2})\psi^{'}(x)=0$
+
+这是显然。因为：
+$$\begin{align}
+(\Box+m^{2})\psi^{'}_{a}(x) & = (\Box+m^{2})\left( \Lambda_{\frac{1}{2}} \right)_{ab}\psi_{b}(\Lambda ^{-1}x) \\
+ & = \left( \Lambda_{\frac{1}{2}} \right)_{ab}(\Box+m^{2})\psi_{b}(\Lambda ^{-1}x) \\
+ & = 0
+\end{align}$$
+
+进一步的，我们猜Dirac方程：
+$$(i\gamma^{\mu}\partial_{\mu}-m^{})\psi=0$$
+也是针对Dirac旋量不变的。
 
