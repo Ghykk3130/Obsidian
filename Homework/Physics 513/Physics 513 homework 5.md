@@ -115,6 +115,35 @@ $$\begin{align}
 Here we adopted our result from part (a).
 ## (d)
 
+We have:
+$$\begin{align}
+\gamma_{\mu}\rlap{/}k\rlap{/}p\rlap{/}q \gamma^{\mu} & = \gamma_{\mu}k^{\nu}\gamma_{\nu} \rlap{/}p \rlap{/}q \gamma^{\mu}  \\
+ & = k^{\nu}(2g_{\mu \nu}-\gamma_{\nu}\gamma_{\mu})\rlap{/}p \rlap{/}q\gamma^{\mu} \\
+ & = 2\rlap{/}p\rlap{/}q \rlap{/}k - \rlap{/}k\gamma_{\mu}\rlap{/}p\rlap{/}q \gamma^{\mu} \\
+ & = 2\rlap{/}p\rlap{/}q \rlap{/}k-\rlap{/}k 4 p\cdot q \\
+ & = 2\rlap{/}p\rlap{/}q \rlap{/}k- 4 p\cdot q \rlap{/}k \\
+ & = 2\rlap{/}p\rlap{/}q \rlap{/}k- \gamma_{\mu}\rlap{/}p\rlap{/}q \gamma^{\mu}\rlap{/}k
+\end{align}$$
+Then we compute:
+$$\begin{align}
+ \gamma_{\mu}\rlap{/}p\rlap{/}q \gamma^{\mu} & =  \gamma_{\mu}p^{\nu}\gamma_{\nu}\rlap{/}q\gamma^{\mu} \\
+ & = p^{\nu}(2g_{\mu \nu}-\gamma_{\nu}\gamma_{\mu})\rlap{/}q \gamma^{\mu} \\
+ & =  \rlap{/}q \rlap{/}p-  \rlap{/}p \gamma_{\mu}\rlap{/}q \gamma^{\mu}
+\end{align}$$
+Similarly, we obtain:
+$$\begin{align}
+\rlap{/}p\gamma_{\mu}\rlap{/}q\gamma^{\mu} & =  \rlap{/}p q^{\nu}(2g_{\mu \nu}-\gamma_{\nu}\gamma_{\mu})\gamma^{\mu} \\
+ & = 2\rlap{/}p\rlap{/}q - 4 \rlap{/}p\rlap{/}q  \\
+ & = -2 \rlap{/}p\rlap{/}q
+\end{align}$$
+Then:
+$$\begin{align}
+\gamma_{\mu}\rlap{/}k  \rlap{/ }p \rlap{/}q \gamma^{\mu} &=  2\rlap{/}p\rlap{/}q \rlap{/}k-2 \rlap{/}q \rlap{/}p\rlap{/}k-2 \rlap{/}p\rlap{/}q\rlap{/}k \\
+ & = -2 \rlap{/}q \rlap{/}p\rlap{/}k
+\end{align}$$
+
+# Problem 3
+
 
 
 
