@@ -34,7 +34,13 @@ $$\begin{align}
 >[!Right]
 >$\blacksquare$
 
-于是$X_{\mu \nu}$是一个反对称阵。有六个自由分量，取为李代数的基底，称为生成元。
+于是$X_{\mu \nu}$是一个反对称阵。有六个自由分量，取为李代数的基底，称为生成元。我们将这六个生成元取为：
+$$\begin{align}
+X_{01}= \begin{pmatrix}
+\end{pmatrix}
+\end{align}$$
+
+
 ## Ex:
 
 考虑$X_{\mu \nu}=\begin{pmatrix}0 &  &  &  \\  & 0 & 1 &  \\  &  -1 & 0 &    \\  &  &  & 0\end{pmatrix}$作为一个生成元。提升指标得到：
