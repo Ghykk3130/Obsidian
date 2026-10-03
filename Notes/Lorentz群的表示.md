@@ -36,7 +36,14 @@ $$\begin{align}
 
 于是$X_{}^{\mu \nu}$是一个反对称阵。有六个自由分量，取为李代数的基底，称为生成元。
 
-每个李群中元素$e^{tX}$都可以写成$e^{-it(iX)}$。于是我们可以将找到的六个反对称基底乘上$i$，并相应地在变换系数前面乘上$-i$。不妨取：
+>[!Quote]
+>对于李群中元素$e^{tX}$，物理上常见的做法是$e^{tX}=e^{-it(iX)}$，令$X^{'}=iX$，将$i\mathfrak{g}$当成李代数。物理上经常直接将$i\mathfrak{g}$写成$\mathfrak{g}$。
+>
+>我们来研究这样定义下的运算封闭性。任取$a\in \mathbb{R}$。$e^{taX}=e^{-it(a iX)}\in G$。所以$i\mathfrak{g}$对于实数数乘封闭。任取$X,Y\in\mathfrak{g}$。我们有：$e^{t(X+Y)}=e^{-it(iX+iY)}\in G$。所以$i\mathfrak{g}$对于加法封闭。$e^{t[X,Y]}=e^{-it \frac{1}{i}[iX,iY]}\in G$，所以$i\mathfrak{g}$对于$\frac{1}{i}[\cdot,\cdot]$封闭。
+>
+>如果原先在$\mathfrak{g}$中存在结构常数$[X_{i},X_{j}]=\sum_{k}f_{ijk}X_{k}$。那么$[iX_{i},iX_{j}]=-\sum_{k}f_{ijk}X_{k}=\sum_{k}if_{ijk}(iX_{k})\implies[X^{'}_{i},X^{'}_{j}]=\sum_{k}if_{ijk}X^{'}_{k}$。所以$i\mathfrak{g}$中结构常数要多乘一个$i$。
+
+不妨取：
 $$\begin{align}
  & K_{1}= i\begin{pmatrix}  0 & 1 &  &    \\
 1 & 0 &   &   \\
@@ -63,7 +70,7 @@ $$\begin{align}
  & 0 & -1 &  \\
  & 1 & 0 &  \\
  &  &  & 0
-\end{pmatrix},\ J_{2}=\begin{pmatrix}
+\end{pmatrix},\ J_{2}=i\begin{pmatrix}
 0 &  &  &  \\
  & 0 &  & 1 \\
  &  & 0 &  \\
@@ -123,10 +130,6 @@ $$\begin{align}
  & [J_{i},K_{j}]=i\epsilon_{ijk}K_{k} \\
  & [K_{i},K_{j}]=-i\epsilon_{ijk}J_{k}
 \end{align}$$
->[!Quote]
->李代数是实数域上的代数，对于Lie bracket封闭。那么为什么Lie bracket的结果却不是生成元的实系数的线性组合？这是因为我们前面已经给生成元乘上了虚数。令没有乘上虚数的生成元为$J^{'}_{i},K^{'}_{i}$。那么这些对易关系相应地变化。例如：
->$$[J_{i},J_{j}]=i\epsilon_{ijk}J_{k}\implies[iJ^{'}_{i},iJ^{'}_{j}]=i\epsilon_{ijk}iJ^{'}_{k}\implies[J^{'}_{i},J^{'}_{j}]=\epsilon_{ijk}J^{'}_{k}$$
->所以现在李代数并不对于Lie bracket封闭。而是对于$\frac{1}{i}[\cdot,\cdot]$封闭。
 
 我们可以构建：
 $$\begin{align}
@@ -146,8 +149,44 @@ $$\begin{align}
 于是李群中元素可以写为：
 $$\exp\left( - \frac{i_{}}{2}\omega_{\mu \nu}\mathcal{J}^{\mu \nu} \right)$$
 其中，$\omega_{\mu \nu}$为参数，满足$\omega_{\mu \nu}=-\omega_{\nu \mu}$。其中$\frac{1}{2}$只是为了去重复。
+# 2. Lorentz群的一般表示
 
-# 2. Lorentz群的矢量表示
+我们先来研究$\mathfrak{so}(3)$。取$R(\theta)=\exp(-i \theta X)$。$iX\in\text{M}(3,\mathbb{R})$，因为$\text{SO}(3)$中都是实阵。那么存在约束：
+$$\begin{align}
+ & (\exp(-i\theta X))^{T}\exp(-i\theta X)=1 \\
+\implies & \exp(-i\theta X^{T})\exp(-i\theta X)=1 \\
+\implies & \left. \frac{d}{d\theta}  \right|_{\theta=0}[\exp(-i\theta X^{T})\exp(-i\theta X)]=0 \\
+\implies & X^{T}=X
+\end{align}$$
+由$\text{det}(R)=1$得到：
+$$\text{det}(R)=\exp(-i\theta\text{tr}(R))=1\implies\text{tr}(R)=0$$
+所以纯虚阵$X$的基底可以取为：
+$$J_{1}=i\begin{pmatrix}
+0 &  &  \\
+ & 0 & -1 \\
+ & 1 & 0
+\end{pmatrix},\ J_{2}=i\begin{pmatrix}
+0 &  & 1 \\
+ & 0 &  \\
+-1 &  & 0
+\end{pmatrix},\ J_{3}=i\begin{pmatrix}
+0 & -1 &  \\
+1 & 0 &  \\
+ &  & 0
+\end{pmatrix}$$
+符合结构常数：
+$$[J_{i},J_{j}]=i\epsilon_{ijk}J_{k}$$
+接下来研究$\mathfrak{su}(2)$。取$U(\theta)=\exp(-i \theta X)$。同样地，由$U^{\dagger}(\theta)U(\theta)=1$，并求导，得到：
+$$X^{\dagger}=X$$
+由$\text{det}(U)=1$，得到：
+$$\text{det}(U)=\exp(-i\theta\text{tr}(X))=1\implies\text{tr}(X)=0$$
+所以$\text{su}(2)$基底可以取为：
+$$J_{i}= \frac{\sigma_{i}}{2}$$
+符合结构常数：
+$$[J_{i},J_{j}]=i\epsilon_{ijk}J_{k}$$
+
+
+# 3. Lorentz群的矢量表示
 
 给定一个Lorentz变换$x^{'\mu}=\Lambda^{\mu}{}_{\nu}x^{\nu}$。对于一个标量场$\phi(x)$，我们通常有：
 $$\begin{align}
@@ -166,7 +205,7 @@ $$\begin{align}
  另一方面，$\phi_{a}^{''}(x)=M_{ac}(\Lambda_{2}\Lambda_{1})\phi_{c}((\Lambda_{2}\Lambda_{1})^{-1}x)$。所以：
  $$M_{ac}(\Lambda_{2}\Lambda_{1})=M_{ab}(\Lambda_{2})M_{bc}(\Lambda_{1})$$
 这构成Lorentz群的一个表示。
-# 3. Lorentz群的旋量表示
+# 4. Lorentz群的旋量表示
 
 假设存在一列矩阵$\gamma^{\mu}\in\text{M}(n)$，满足：
 $$\begin{align}
@@ -197,7 +236,7 @@ $$D(\Lambda)=\exp\left( - \frac{i}{2}\omega_{\mu \nu}S^{\mu \nu} \right)$$
 >[!Quote]
 >这里，$\omega_{\mu \nu}$必须是反对称的。假设这个表示是$N$维空间上的，而我们知道$S^{\mu \nu}=-S^{\nu \mu}$。所以Dirac矩阵最多构造出对角线以上的$(N-1)!$那么多个独立基底。我们可以将求和拓展到对角线另一侧，并自然地要求$\omega_{\mu \nu}=-\omega_{\nu \mu}$。
 
->[!Success] Proposition 3.1
+>[!Success] Proposition 4.1
 >$$[\gamma^{\mu},S^{\rho \sigma}]=(\mathcal{J}^{\rho \sigma})^{\mu}{}_{\nu}\gamma^{\nu}$$
 ## Proof.
 
@@ -219,7 +258,7 @@ $$\begin{align}
 
 我们可以证明Dirac矩阵在李群旋量表示的共轭下按照四矢量变换。
 
->[!Success] Proposition 3.2
+>[!Success] Proposition 4.2
 >Given $D(\Lambda)=\exp\left( - \frac{i}{2}\omega_{\mu \nu}S^{\mu \nu} \right)$, we have:
 >$$D^{-1}(\Lambda)\gamma^{\mu}D(\Lambda)=\Lambda^{\mu}{}_{\nu}\gamma^{\nu}$$
 ## Proof.
