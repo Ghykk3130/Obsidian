@@ -3617,7 +3617,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200.5
+    "width": 200.5,
+    "collapsed": true
   },
   "right": {
     "id": "9003d078f8dbc4ed",
@@ -3731,7 +3732,7 @@
       "obsidian-shellcommands:Shell commands: Custom variables": false
     }
   },
-  "active": "0bd5adf6a54a04e2",
+  "active": "cb1c62b1d4db36be",
   "lastOpenFiles": [
     "Notes/李代数.md",
     "Notes/Lorentz群的表示.md",

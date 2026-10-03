@@ -134,13 +134,13 @@ $$\begin{align}
 $$\boxed{[\mathcal{J}^{\mu \nu},\mathcal{J}^{\rho \sigma}]=i(g^{\mu \sigma}\mathcal{J}^{\nu \rho}+ g^{\nu \rho}\mathcal{J}^{\mu \sigma}-g^{\mu \rho}\mathcal{J}^{\nu \sigma}-g^{\nu \sigma}\mathcal{J}^{\mu \rho})}$$
 可以证明：
 $$\begin{align}
-\boxed{(\mathcal{J}^{\mu \nu})^{\alpha}{}_{\beta}=i(g^{\mu \alpha}\delta^{\nu}{}_{\beta}-g^{\mu \beta}\delta^{\nu}{}_{\alpha})}
+\boxed{(\mathcal{J}^{\mu \nu})^{\alpha}{}_{\beta}=i(g^{\mu \alpha}\delta^{\nu}{}_{\beta}-g^{\nu \alpha}\delta^{\mu}{}_{\beta})}
 \end{align}$$
 于是李群中元素可以写为：
 $$\exp\left( - \frac{i_{}}{2}\omega_{\mu \nu}\mathcal{J}^{\mu \nu} \right)$$
 其中，$\omega_{\mu \nu}$为参数，满足$\omega_{\mu \nu}=-\omega_{\nu \mu}$。其中$\frac{1}{2}$只是为了去重复。
 
-# 2. Lorentz群的表示
+# 2. Lorentz群的矢量表示
 
 给定一个Lorentz变换$x^{'\mu}=\Lambda^{\mu}{}_{\nu}x^{\nu}$。对于一个标量场$\phi(x)$，我们通常有：
 $$\begin{align}
@@ -159,4 +159,91 @@ $$\begin{align}
  另一方面，$\phi_{a}^{''}(x)=M_{ac}(\Lambda_{2}\Lambda_{1})\phi_{c}((\Lambda_{2}\Lambda_{1})^{-1}x)$。所以：
  $$M_{ac}(\Lambda_{2}\Lambda_{1})=M_{ab}(\Lambda_{2})M_{bc}(\Lambda_{1})$$
 这构成Lorentz群的一个表示。
+# 3. Lorentz群的旋量表示
+
+假设存在一列矩阵$\gamma^{\mu}\in\text{M}(n),\ \mu=0,1,2,3$，满足：
+$$\begin{align}
+\boxed{\{ \gamma^{\mu},\gamma^{\nu} \}= 2 g^{\mu \nu}\mathbb{1}}
+\end{align}$$
+称为Dirac矩阵。我们再定义：
+$$\boxed{S^{\mu \nu}= \frac{i}{4}[\gamma^{\mu},\gamma^{\nu}]}$$
+可以证明：
+$$[S^{\mu \nu},S^{\rho \sigma}]=i(g^{\mu \sigma}S^{\nu \rho}+g^{\nu \rho}S^{\mu \sigma}-g^{\mu \rho}S^{\nu \sigma}-g^{\nu \sigma}S^{\mu \rho})$$
+于是$\{ S^{\mu \nu} \}$构成Lorentz代数的表示。我们用$\{ S^{\mu \nu} \}$生成一个表示，称为Lorentz群的旋量表示。
+
+>[!Quote]
+>实际上，每个李代数生成的表示只是和单位元简单连通的李群的子群的表示，而不是整个李群的表示。因为这里我们局限在$\text{SO}^{+}(1,3)$，即包含单位元，由旋转，boost生成的Lorentz群分支。这个分支是简单连通的，不含$P,T$，所以$S^{\mu \nu}$可以生成这个分支的表示。
+
+显然，$S^{\mu \nu}$是反对称的。若考虑一个Lorentz变换：
+$$\Lambda=\exp\left( - \frac{i}{2}\omega_{\mu \nu}\mathcal{J}^{\mu \nu} \right)$$
+它的旋量表示就是：
+$$D(\Lambda)=\exp\left( - \frac{i}{2}\omega_{\mu \nu}S^{\mu \nu} \right)$$
+
+>[!Quote]
+>这里，$\omega_{\mu \nu}$必须是反对称的。因为我们知道$S^{\mu \nu}=-S^{\nu \mu}$。所以Dirac矩阵最多构造出六个相互独立的李代数基底。那么这六个基底生成的群就有六个参数。我们可以将求和拓展到对角线另一侧的部分，并自然地要求$\omega_{\mu \nu}=-\omega_{\nu \mu}$。
+
+>[!Success] Proposition 3.1
+>$$[\gamma^{\mu},S^{\rho \sigma}]=(\mathcal{J}^{\rho \sigma})^{\mu}{}_{\nu}\gamma^{\nu}$$
+## Proof.
+
+我们考虑对易子公式：
+$$[AB,C]=ABC-CAB=ABC+ACB-ACB-CAB=A\{ B,C \}-\{ A,C \}B$$
+我们计算：
+$$\begin{align}
+[\gamma^{\mu},S^{\rho \sigma}] & = \frac{i}{4}[\gamma^{\mu},\gamma^{\rho}\gamma^{\sigma}-\gamma^{\sigma}\gamma^{\rho}] \\
+ & = \frac{i}{4}[\gamma^{\mu},\gamma^{\rho}\gamma^{\sigma}-(2g^{\sigma \rho}-\gamma^{\rho}\gamma^{\sigma})] \\
+ & = \frac{i}{2}[\gamma^{\mu},\gamma^{\rho}\gamma^{\sigma}]- \frac{i}{2}[\gamma^{\mu},g^{\sigma \rho}] \\
+ & = \frac{i}{2}[\gamma^{\mu},\gamma^{\rho}\gamma^{\sigma}] \\
+ & = - \frac{i}{2}(\gamma^{\rho}\{ \gamma^{\sigma},\gamma^{\mu} \}-\{ \gamma^{\rho},\gamma^{\mu} \}\gamma^{\sigma}) \\
+ & = i(\gamma^{\sigma}g^{\rho \mu}-\gamma^{\rho}g^{\sigma \mu}) \\
+ & = i(g^{\rho \mu}\delta^{\sigma}{}_{\nu}-g^{\sigma \mu}\delta^{\rho}{}_{\nu})\gamma^{\nu} \\
+ & = (\mathcal{J}^{\rho \sigma})^{\mu}{}_{\nu} \gamma^{\nu}
+\end{align}$$
+>[!Right]
+>$\blacksquare$
+
+我们可以证明Dirac矩阵在李群旋量表示的共轭下按照四矢量变换。
+
+>[!Success] Proposition 3.2
+>Given $D(\Lambda)=\exp\left( - \frac{i}{2}\omega_{\mu \nu}S^{\mu \nu} \right)$, we have:
+>$$D^{-1}(\Lambda)\gamma^{\mu}D(\Lambda)=\Lambda^{\mu}{}_{\nu}\gamma^{\nu}$$
+## Proof.
+
+令$Y= - \frac{i}{2}\omega_{\mu \nu}S^{\mu \nu}$，$X=- \frac{i}{2}\omega_{\mu \nu}\mathcal{J}^{\mu \nu}$。我们计算：
+$$\begin{align}
+e^{-Y}\gamma^{\mu}e^{Y} & = \gamma^{\mu}+[\gamma^{\mu},Y]+ \frac{1}{2!}[[\gamma^{\mu},Y],Y]+\dots
+\end{align}$$
+容易发现：
+$$\begin{align}
+[\gamma^{\mu},Y] & = - \frac{i}{2}\omega_{\rho \sigma}[\gamma^{\mu},S^{\rho \sigma}] \\
+ & = - \frac{i}{2}\omega_{\rho \sigma}(\mathcal{J}^{\rho \sigma})^{\mu}{}_{\nu}\gamma^{\nu} \\
+ & = X^{\mu}{}_{\nu}\gamma^{\nu}
+\end{align}$$
+$$\begin{align}
+[[\gamma^{\mu},Y],Y ] & = \left[ - \frac{i}{2}\omega_{\rho \sigma}(\mathcal{J}^{\rho \sigma})^{\mu}{}_{\nu}\gamma^{\nu},Y \right] \\
+ & = - \frac{i}{2}\omega_{\rho \sigma}(\mathcal{J}^{\rho \sigma})^{\mu}{}_{\nu}[\gamma^{\nu},Y] \\
+ & = \left( - \frac{i}{2} \right)^{2} \omega_{\rho \sigma} (\mathcal{J}^{\rho \sigma})^{\mu}{}_{\nu}\omega_{\alpha \beta}(\mathcal{J}^{\alpha \beta})^{\nu}{}_{\lambda}\gamma^{\lambda} \\
+ & = \left( - \frac{i}{2} \right)^{2}((\omega_{\rho \sigma}\mathcal{J}^{\rho \sigma})^{2})^{\mu}{}_{\lambda}\gamma^{\lambda} \\
+ & = (X^{2})^{\mu}{}_{\lambda}\gamma^{\lambda}
+\end{align}$$
+所以：
+$$\begin{align}
+e^{-Y}\gamma^{\mu}e^{Y} & = (e^{X})^{\mu}{}_{\nu}\gamma^{\nu}= \Lambda^{\mu}{}_{\nu}\gamma^{\nu}
+\end{align}$$
+>[!Right]
+>$\blacksquare$
+## Ex:
+
+容易证明：
+$$\begin{align}
+D^{-1}(\Lambda)S^{\mu \nu}D(\Lambda) & = \frac{i}{4}D^{-1}(\Lambda)[\gamma^{\mu},\gamma^{\nu}]D(\Lambda) \\
+ & = \frac{i}{4}(D^{-1}\gamma^{\mu}DD^{-1}\gamma^{\nu} D-D^{-1} \gamma^{\nu}D D^{-1}\gamma^{\mu}D) \\
+ & = \frac{i}{4}(\Lambda^{\mu}{}_{\alpha}\gamma^{\alpha}\Lambda^{\nu}{}_{\beta}\gamma^{\beta}- \Lambda^{\nu}{}_{\beta}\gamma^{\beta}\Lambda^{\mu}{}_{\alpha}\gamma^{\alpha}) \\
+ & = \Lambda^{\mu}{}_{\alpha}\Lambda^{\nu}{}_{\beta}S^{\alpha \beta}
+\end{align}$$
+
+
+
+
+
 
