@@ -161,7 +161,7 @@ $$\begin{align}
 这构成Lorentz群的一个表示。
 # 3. Lorentz群的旋量表示
 
-假设存在一列矩阵$\gamma^{\mu}\in\text{M}(n),\ \mu=0,1,2,3$，满足：
+假设存在一列矩阵$\gamma^{\mu}\in\text{M}(n)$，满足：
 $$\begin{align}
 \boxed{\{ \gamma^{\mu},\gamma^{\nu} \}= 2 g^{\mu \nu}\mathbb{1}}
 \end{align}$$
@@ -170,6 +170,14 @@ $$\boxed{S^{\mu \nu}= \frac{i}{4}[\gamma^{\mu},\gamma^{\nu}]}$$
 可以证明：
 $$[S^{\mu \nu},S^{\rho \sigma}]=i(g^{\mu \sigma}S^{\nu \rho}+g^{\nu \rho}S^{\mu \sigma}-g^{\mu \rho}S^{\nu \sigma}-g^{\nu \sigma}S^{\mu \rho})$$
 于是$\{ S^{\mu \nu} \}$构成Lorentz代数的表示。我们用$\{ S^{\mu \nu} \}$生成一个表示，称为Lorentz群的旋量表示。
+## Ex:
+
+若$j=1,2,3$，旋量表示空间维数为$2$，可以取：
+$$\begin{align}
+\gamma^{j}=i\sigma^{j}
+\end{align}$$
+满足反对易关系$\{ \gamma^{i},\gamma^{j} \}=2g^{ij}$。这是一个Lorentz代数的表示。
+
 
 >[!Quote]
 >实际上，每个李代数生成的表示只是和单位元简单连通的李群的子群的表示，而不是整个李群的表示。因为这里我们局限在$\text{SO}^{+}(1,3)$，即包含单位元，由旋转，boost生成的Lorentz群分支。这个分支是简单连通的，不含$P,T$，所以$S^{\mu \nu}$可以生成这个分支的表示。
@@ -180,7 +188,7 @@ $$\Lambda=\exp\left( - \frac{i}{2}\omega_{\mu \nu}\mathcal{J}^{\mu \nu} \right)$
 $$D(\Lambda)=\exp\left( - \frac{i}{2}\omega_{\mu \nu}S^{\mu \nu} \right)$$
 
 >[!Quote]
->这里，$\omega_{\mu \nu}$必须是反对称的。因为我们知道$S^{\mu \nu}=-S^{\nu \mu}$。所以Dirac矩阵最多构造出六个相互独立的李代数基底。那么这六个基底生成的群就有六个参数。我们可以将求和拓展到对角线另一侧的部分，并自然地要求$\omega_{\mu \nu}=-\omega_{\nu \mu}$。
+>这里，$\omega_{\mu \nu}$必须是反对称的。假设这个表示是$N$维空间上的，而我们知道$S^{\mu \nu}=-S^{\nu \mu}$。所以Dirac矩阵最多构造出对角线以上的$(N-1)!$那么多个独立基底。我们可以将求和拓展到对角线另一侧，并自然地要求$\omega_{\mu \nu}=-\omega_{\nu \mu}$。
 
 >[!Success] Proposition 3.1
 >$$[\gamma^{\mu},S^{\rho \sigma}]=(\mathcal{J}^{\rho \sigma})^{\mu}{}_{\nu}\gamma^{\nu}$$
@@ -241,9 +249,40 @@ D^{-1}(\Lambda)S^{\mu \nu}D(\Lambda) & = \frac{i}{4}D^{-1}(\Lambda)[\gamma^{\mu}
  & = \frac{i}{4}(\Lambda^{\mu}{}_{\alpha}\gamma^{\alpha}\Lambda^{\nu}{}_{\beta}\gamma^{\beta}- \Lambda^{\nu}{}_{\beta}\gamma^{\beta}\Lambda^{\mu}{}_{\alpha}\gamma^{\alpha}) \\
  & = \Lambda^{\mu}{}_{\alpha}\Lambda^{\nu}{}_{\beta}S^{\alpha \beta}
 \end{align}$$
+# 4. Dirac spinor
 
 
-
+若$\mu=0,1,2,3$，旋量表示空间维数为$4$，可以取：
+$$\gamma^{0}=\begin{pmatrix}
+0 & 1 \\
+1 & 0
+\end{pmatrix},\ \gamma^{i}=\begin{pmatrix}
+0 & \sigma^{i} \\
+-\sigma^{i} & 0
+\end{pmatrix}$$
+这称为Weyl表示。容易计算：
+$$\begin{align}
+S^{0 i}= \frac{i}{4}[\gamma^{0},\gamma^{i}]= - \frac{i}{2}\begin{pmatrix}
+\sigma^{i} & 0 \\
+0 & -\sigma^{i}
+\end{pmatrix}
+\end{align}$$
+$$\begin{align}
+S^{ij} & = \frac{i}{4}[\gamma^{i},\gamma^{j}] \\
+ & = \frac{i}{4}\begin{pmatrix}
+-\sigma^{i}\sigma^{j} +\sigma^{j}\sigma^{i} & 0 \\
+0 & -\sigma^{i}\sigma^{j}+\sigma^{j}\sigma^{i}
+\end{pmatrix} \\
+ & = \frac{1}{2}\epsilon^{ijk}\begin{pmatrix}
+\sigma^{k} & 0 \\
+0 & \sigma^{k}
+\end{pmatrix}
+\end{align}$$
+考虑一个四个分量的矢量场$\psi_{a}(x)$。我们通过$x\rightarrow \Lambda x$，并将$\Lambda$吸收进functional dependence，引出一个新的场的构型$\psi^{'}_{a}(x)$。令$\Lambda=\exp\left( - \frac{i}{2}\omega_{\mu \nu}\mathcal{J}^{\mu \nu} \right)$的旋量表示为$\Lambda_{\frac{1}{2}}=\exp\left( - \frac{i}{2}\omega_{\mu \nu}S^{\mu \nu} \right)$。如果：
+$$\begin{align}
+\psi^{'}_{a}(x)= (\Lambda_{\frac{1}{2}})_{ab}\psi_{b}(\Lambda ^{-1}x)
+\end{align}$$
+那么称$\psi_{a}(x)$为Dirac旋量。
 
 
 
