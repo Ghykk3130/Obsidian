@@ -3613,13 +3613,11 @@
               "title": "Search"
             }
           }
-        ],
-        "currentTab": 3
+        ]
       }
     ],
     "direction": "horizontal",
-    "width": 200.5,
-    "collapsed": true
+    "width": 200.5
   },
   "right": {
     "id": "9003d078f8dbc4ed",
@@ -3733,7 +3731,7 @@
       "obsidian-shellcommands:Shell commands: Custom variables": false
     }
   },
-  "active": "cb1c62b1d4db36be",
+  "active": "0bd5adf6a54a04e2",
   "lastOpenFiles": [
     "Notes/李代数.md",
     "Notes/Lorentz群的表示.md",
