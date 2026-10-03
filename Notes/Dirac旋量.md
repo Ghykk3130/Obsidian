@@ -98,19 +98,93 @@ $$\begin{align}
 \end{align}$$
 那么得证。
 
+
+
 我们定义Dirac conjugate：
-$$\bar{\psi}=\psi ^{\dagger}\gamma^{0}$$
+$$\boxed{\bar{\psi}=\psi ^{\dagger}\gamma^{0}}$$
 我们发现，通过坐标变换诱导的新场的Dirac conjugate为：
 $$\begin{align}
 \bar{\psi^{'}}(x) & = \psi^{' {\dagger}}(x) \gamma^{0} \\
  & = \left( \Lambda_{\frac{1}{2}}\psi(\Lambda ^{-1}x) \right)^{\dagger} \gamma^{0} \\
  & = \psi ^{\dagger} \Lambda_{\frac{1}{2}}^{\dagger}\gamma^{0}
 \end{align}$$
-考虑$\Lambda_{\frac{1}{2}}=\exp\left( - \frac{i}{2}\omega_{\mu \nu}S^{\mu \nu} \right)$。对于空间部分，显然$\{ \gamma^{i},\gamma^{0} \}=2g^{i{0}}=0$。
-
+考虑$\Lambda_{\frac{1}{2}}=\exp\left( - \frac{i}{2}\omega_{\mu \nu}S^{\mu \nu} \right)$。我们知道$(\gamma^{i})^{\dagger}=-\gamma^{i},\ (\gamma^{0})^{\dagger}=\gamma^{0}$。所以：
+$$\begin{align}
+(S^{ij})^{\dagger} & = - \frac{i}{4}[\gamma^{i},\gamma^{j}]^{\dagger} \\
+ & = - \frac{i}{4}(\gamma^{j}\gamma^{i}-\gamma^{i}\gamma^{j}) \\
+ & = S^{ij}
+\end{align}$$
+而$\gamma^{0}$与$\gamma^{i}$反对易。所以：
+$$\begin{align}
+(S^{ij})^{\dagger}\gamma^{0} &=S^{ij}\gamma^{0} = \frac{i}{4}[\gamma^{i},\gamma^{j}]\gamma^{0} \\
+ 
+ & = \gamma^{0}S^{ij}
+\end{align}$$
+类似地：
+$$\begin{align}
+(S^{0i})^{\dagger} & = - \frac{i}{4}[\gamma^{0},\gamma^{i}]^{\dagger} \\
+ & = - \frac{i}{4}(-\gamma^{i}\gamma^{0}+\gamma^{0}\gamma^{i}) \\
+ & = - S^{0i}
+\end{align}$$
+还有：
+$$\begin{align}
+(S^{0i})^{\dagger}\gamma^{0} & = -S^{0i}\gamma^{0} = - \frac{i}{4}[ \gamma^{0},\gamma^{i}]\gamma^{0}  \\
+ & =\gamma^{0}S^{0i}
+\end{align}$$
+故：
+$$\begin{align}
+\bar{\psi^{'}} & = \psi ^{\dagger}\exp\left( \frac{i}{2}\omega_{\mu \nu}(S^{\mu \nu})^{\dagger} \right) \gamma^{0} \\
+ & = \psi ^{\dagger}\gamma^{0}\exp\left(  \frac{i}{2}\omega_{\mu \nu}S^{\mu \nu} \right) \\
+ & = \psi ^{\dagger}\gamma^{0}\Lambda_{\frac{1}{2}}^{-1} \\
+ & = \bar{\psi}(\Lambda ^{-1}x)\Lambda ^{-1}_{\frac{1}{2}}
+\end{align}$$
 
 构造lagrangian：
-$$\mathcal{L}= \bar{\psi}(i\gamma^{\mu }\partial_{\mu}-m)\psi$$
+$$\boxed{\mathcal{L}= \bar{\psi}(i\gamma^{\mu }\partial_{\mu}-m)\psi}$$
+可以证明这个lagrangian是不变的：
+$$\begin{align}
+\bar{\psi^{'}}(x)(i\gamma^{\mu}\partial_{\mu}-m)\psi^{'}(x) &  =  \bar{\psi}(\Lambda ^{-1}x)\Lambda ^{-1}_{\frac{1}{2}}(i\gamma^{\mu}\partial_{\mu}-m)\Lambda_{\frac{1}{2}}\psi(\Lambda ^{-1}x) \\
+ & = \bar{\psi}\left( i \Lambda^{\mu}{}_{\nu}\gamma^{\nu} \frac{\partial}{\partial x^{\mu}}-m  \right)\psi(\Lambda ^{-1}x) \\
+ & = \bar{\psi}(i\Lambda^{\mu}{}_{\nu}\gamma^{\nu}(\Lambda ^{-1})^{\rho}{}_{\mu} \partial_{\rho}-m)\psi \\
+ & = \bar{\psi}(i\gamma^{\mu}\partial_{\mu}-m)\psi
+\end{align}$$
+# 2. Weyl方程
+
+将Dirac旋量分成两个二维的旋量。写作：
+$$\psi(x)= \begin{pmatrix}
+\psi_{L}(x) \\
+\psi_{R}(x)
+\end{pmatrix}$$
+称$\psi_{L},\psi_{R}$为Weyl旋量。这样一来，Dirac方程变为：
+$$\begin{align}
+ & (i\gamma^{\mu}\partial_{\mu}-m)\begin{pmatrix}
+\psi_{L} \\
+\psi_{R}
+\end{pmatrix}=0 \\
+\implies & \begin{pmatrix}
+-m & i(\partial_{0}+\boldsymbol{\sigma}\cdot \nabla) \\
+i(\partial_{0}-\boldsymbol{\sigma}\cdot \nabla) & -m
+\end{pmatrix} \begin{pmatrix}
+\psi_{L} \\
+\psi_{R}
+\end{pmatrix}=0
+\end{align}$$
+定义$\sigma^{\mu}:=(1,\boldsymbol{\sigma}),\ \bar{\sigma}^{\mu}=(1,-\boldsymbol{\sigma})$。那么：
+$$\begin{align}
+\begin{pmatrix}
+-m & i\sigma^{\mu}\partial_{\mu} \\
+i\bar{\sigma}^{\mu}\partial_{\mu} & -m
+\end{pmatrix} \begin{pmatrix}
+\psi_{L} \\
+\psi_{R}
+\end{pmatrix}=0
+\end{align}$$
+若是无质量粒子。那么得到解耦的方程：
+$$\begin{align}
+i\sigma^{\mu}\partial_{\mu}\psi_{R}=0,\ i \bar{\sigma}^{\mu}\partial_{\mu}\psi_{L}=0
+\end{align}$$
+称为Weyl方程。
+
 
 
 
