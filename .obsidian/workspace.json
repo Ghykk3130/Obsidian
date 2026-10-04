@@ -3616,7 +3616,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "Dirac",
+                "query": "Noether",
                 "matchingCase": true,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -3748,8 +3748,9 @@
   },
   "active": "c6f0e57e2b8dded9",
   "lastOpenFiles": [
-    "Notes/Dirac旋量.md",
+    "Notes/Noether定理.md",
     "Homework/Physics 513/Physics 513 homework 5.md",
+    "Notes/Dirac旋量.md",
     "Notes/Lorentz群的表示.md",
     "Homework/Physics 513/Physics 513 homework 1.md",
     "Homework/Physics 513/Physics 513 homework 2.md",
@@ -3773,7 +3774,6 @@
     "Homework/Physics 520/Physics 520 homework 1 problem set.md",
     "Notes/Landau量子化.md",
     "Homework/Physics 520/Physics 520 homework 1.md",
-    "Homework/Physics 520/Physics 520 homework 0.md",
     "Pictures/24fd794455aa6fef3032eee3dd7b8e00.jpg",
     "Pictures/Pasted image 20260929131846.png",
     "Pictures/1ea34c77acda998ec15addc14c6432e8.jpg",
