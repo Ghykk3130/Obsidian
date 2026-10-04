@@ -144,6 +144,70 @@ $$\begin{align}
 
 # Problem 3
 
+We know that:
+$$\begin{align}
+ & (\gamma^{\mu}p_{\mu}-m)u(p)=0 \\
+ & (\gamma^{\mu}p^{'}_{\mu}-m)u(p^{'})=0
+\end{align}$$
+We take hermitian of the second equation:
+$$\begin{align}
+u^{\dagger}(p^{'}_{\mu}(\gamma^{\mu})^{\dagger}-m)=0
+\end{align}$$
+It's easy to verify that $(\gamma^{\mu})^{\dagger}=\gamma^{0} \gamma^{\mu}\gamma^{0}$. For $\mu=0$, this is trivial. For $\mu=i$, we have:
+$$\begin{align}
+\gamma^{0}\gamma^{i}\gamma^{0} & = \begin{pmatrix}
+0 & 1 \\
+1 & 0
+\end{pmatrix}\begin{pmatrix}
+0 &  \sigma_{i} \\
+- \sigma_{i} & 0
+\end{pmatrix} \begin{pmatrix}
+0  & 1 \\
+1 & 0
+\end{pmatrix} \\
+ & = \begin{pmatrix}
+0 & 1 \\
+1 & 0
+\end{pmatrix}\begin{pmatrix}
+\sigma_{i} & 0 \\
+0 & -\sigma_{i}
+\end{pmatrix} \\
+ & = \begin{pmatrix}
+0 & -\sigma_{i} \\
+\sigma_{i} & 0
+\end{pmatrix} \\
+ & = (\gamma^{i})^{\dagger}
+\end{align}$$
+We can also show that:
+$$\begin{align}
+\bar{u}=u^{\dagger}\gamma^{0}\implies \bar{u}\gamma^{0}=u^{\dagger}
+\end{align}$$
+Then we have:
+$$\begin{align}
+ & \bar{u}\gamma^{0}(p^{'}_{\mu}\gamma^{0}\gamma^{\mu}\gamma^{0}-m)=0 \\
+\implies & \bar{u}(p^{'}_{\mu}\gamma^{\mu}-m)\gamma^{0}=0 \\
+\implies & \bar{u}(p^{'}_{\mu}\gamma^{\mu}-m)=0
+\end{align}$$
+Then we have:
+$$\begin{align}
+\bar{u}(p^{'}) \gamma^{\mu}u(p) & = \frac{1}{2}\bar{u}\gamma^{\mu}u+ \frac{1}{2}\bar{u}\gamma^{\mu}u \\
+ & = \frac{1}{2}\bar{u} \frac{p^{'}_{\nu}\gamma^{\nu}}{m}\gamma^{\mu}u  + \frac{1}{2}\bar{u} \gamma^{\mu} \frac{\gamma^{\nu}p_{\nu}}{m}u \\
+ & = \frac{1}{2m}\bar{u}( p^{'}_{\nu}\gamma^{\nu}\gamma^{\mu}+ \gamma^{\mu}\gamma^{\nu}p_{\nu})u
+\end{align}$$
+$$\begin{align}
+p^{'}_{\nu}\gamma^{\nu}\gamma^{\mu}+p_{\nu}\gamma^{\mu}\gamma^{\nu} & = \left(  \frac{p^{'}_{\nu}+p_{\nu}}{2}+ \frac{q_{\nu}}{2} \right)\gamma^{\nu}\gamma^{\mu}+ \left(  \frac{p^{'}_{\nu}+p_{\nu}}{2}- \frac{q_{\nu}}{2}  \right)\gamma^{\mu}\gamma^{\nu} \\
+ & =  \frac{p^{'}_{\nu}+p_{\nu}}{2}\{ \gamma^{\nu},\gamma^{\mu} \}+ \frac{q_{\nu}}{2}[\gamma^{\nu},\gamma^{\mu}] \\
+ & = (p^{'}_{\nu}+p_{\nu})g^{\mu \nu}+ i q_{\nu}\sigma^{\mu \nu} \\
+ & = p^{'\mu}+p^{\mu}+iq_{\nu}\sigma^{\mu \nu} 
+\end{align}$$
+Then we have:
+$$\begin{align}
+\bar{u} \gamma^{\mu}u & = \frac{1}{2m}\bar{u}( p^{'\mu}+p^{\mu}+iq_{\nu}\sigma^{\mu \nu})u \\
+ & = \bar{u}(p^{'})\left(  \frac{p^{\mu}+p^{'\mu}}{2m}+ \frac{i\sigma^{\mu \nu}q_{\nu}}{2m} \right)u(p)
+\end{align}$$
+# Problem 4
+
+
 
 
 
