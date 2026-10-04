@@ -206,7 +206,49 @@ $$\begin{align}
  & = \bar{u}(p^{'})\left(  \frac{p^{\mu}+p^{'\mu}}{2m}+ \frac{i\sigma^{\mu \nu}q_{\nu}}{2m} \right)u(p)
 \end{align}$$
 # Problem 4
+## (a)
 
+If $\psi$ satisfies the Dirac equation, then:
+$$\mathcal{L}= \bar{\psi}(i\gamma^{\mu}\partial_{\mu}-m)\psi=0$$
+Then we have:
+$$\begin{align}
+ & (i\gamma^{\mu}\partial_{\mu}-m)\psi=0 \\
+\implies & (-i\partial_{\mu}\psi ^{\dagger}(\gamma^{\mu})^{\dagger}-m\psi ^{\dagger})=0 \\
+\implies & (-i\partial_{\mu}\bar{\psi}\gamma^{0} \gamma^{0}\gamma^{\mu}\gamma^{0}-m\bar{\psi}\gamma^{0} )=0 \\
+\implies & (-i\partial_{\mu}\bar{\psi}\gamma^{\mu}-m\bar{\psi})=0 \\
+\implies & i\partial^{\mu}\bar{\psi}\gamma_{\mu}=-m\bar{\psi}
+\end{align}$$
+Also, we have:
+$$\begin{align}
+(i\gamma_{\mu}\partial^{\mu}-m)\psi=0
+\end{align}$$
+Therefore:
+$$\begin{align}
+\partial^{\mu}T_{\mu \nu} & = i (\partial^{\mu}\bar{\psi})\gamma_{\mu}\partial_{\nu}\psi+ i \bar{\psi}\gamma_{\mu}\partial_{}^{\mu}\partial_{\nu}\psi \\
+ & = -m \bar{\psi}\partial_{\nu}\psi+m\bar{\psi}\partial_{\nu}\psi \\
+ & = 0
+\end{align}$$
+We can integrate the spatial part:
+$$\begin{align}
+\partial_{t}\int d^{3}xT_{0\nu}= \int d^{3}x \partial_{i}T_{i\nu}=0
+\end{align}$$
+The energy momentum tensor is indeed conserved.
+## (b)
+
+I have already derived this in (a). The momentum operator may be chosen as:
+$$P_{\nu}=\int d^{3}xT_{0\nu}$$
+# Problem 5
+## (a)
+
+Without loss of generality, let $\mu=2$. Then to commute through each $\gamma^{\nu},\ \nu\neq \mu$, we just get a minus sign. This is because $\{ \gamma^{\mu},\gamma^{\nu} \}=0,\ \mu\neq \nu$. Then:
+$$\begin{align}
+\gamma^{5}\gamma^{2} & = i\gamma^{0}\gamma^{1}\gamma^{2}\gamma^{3}\gamma^{2} \\
+ & = -i\gamma^{0}\gamma^{1}\gamma^{2}\gamma^{2}\gamma^{3} \\
+ & = i\gamma^{0}\gamma^{2}\gamma^{1}\gamma^{2}\gamma^{3} \\
+ & = -i\gamma^{2}\gamma^{0}\gamma^{1}\gamma^{2}\gamma^{3} \\
+ & = -\gamma^{2}\gamma^{5}
+\end{align}$$
+The proofs for $\mu=0,1,3$ should be very similar and obvious. Then $\gamma^{5}\gamma^{\mu}=-\gamma^{\mu}\gamma^{5}$
 
 
 
