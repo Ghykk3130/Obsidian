@@ -10,7 +10,8 @@ $$\begin{align}
 \\
  & = i(\delta^{ij}\delta^{ln}-\delta^{in}\delta^{lj})J^{l n} \\
  & = i(\delta^{ij}J^{ll}-J^{ji})  \\
- & = iJ^{ij}
+ & = iJ^{ij} \\
+ & = i\epsilon^{ijk}L^{k}
 \end{align}$$
 This is because $J^{ij}$ is antisymmetric, and we have $J^{ll}=0,\ \forall l$. Similarly, we compute:
 $$\begin{align}
@@ -27,7 +28,8 @@ Similarly, we compute:
 $$\begin{align}
 [K^{i},K^{j}] & = i(g^{i 0}J^{0 j}+g^{0 j}J^{i 0}-g^{ij }J^{0 0}-g^{0 0}J^{ij}) \\
  & = -ig^{ij}J^{0 0}-i g^{0 0}J^{ij} \\
- & = iJ^{ji}
+ & = iJ^{ji} \\
+ &  =-i\epsilon^{ijk}L^{k}
 \end{align}$$
 Then we can show the commutation relation of the complexification of the Lorentz algebra.
 
@@ -97,20 +99,24 @@ $$\begin{align}
 We have:
 $$\begin{align}
 \gamma_{\mu}\rlap{/}k\gamma^{\mu} & = \gamma_{\mu}k^{\nu}\gamma_{\nu}\gamma^{\mu} \\
- & = \frac{1}{2}\{ \gamma_{\mu},\gamma_{\nu} \}k^{\nu}\gamma^{\mu} \\
- & = g_{\mu \nu }k^{\nu}\gamma^{\mu} \\
- & = k^{\nu}\gamma_{\nu} \\
- & = \rlap{/}k
+ & = k^{\nu}(2g_{\mu \nu}-\gamma_{\nu}\gamma_{\mu})\gamma^{\mu} \\
+ & = 2\rlap{/}k- \rlap{/}k\gamma_{\mu}\gamma^{\mu} \\
+ & = -2 \rlap{/}k
 \end{align}$$
 ## (c)
 
 We have:
 $$\begin{align}
 \gamma_{\mu}\rlap{/}p\rlap{/}q \gamma^{\mu} & = \gamma_{\mu}p^{\nu}\gamma_{\nu}q^{\rho}\gamma_{\rho}\gamma^{\mu} \\
-  & = \gamma_{\mu}p^{\nu}q^{\rho} \frac{1}{2}\{ \gamma_{\nu},\gamma_{\rho} \}\gamma^{\mu} \\
- & = \gamma_{\mu}p^{\nu}q^{\rho}g_{\nu \rho}\gamma^{\mu} \\
- & = \gamma_{\mu}\gamma^{\mu}p\cdot q \\
- & = 4p\cdot q
+ & =p^{\nu}(2g_{\mu \nu}-\gamma_{\nu}\gamma_{\mu}) \rlap{/}q \gamma^{\mu} \\
+ & = 2 \rlap{/}q  \rlap{/}p-\rlap{/}p \gamma _{\mu}q^{\rho}\gamma_{\rho} \gamma^{\mu} \\
+ & =  2 \rlap{/}q \rlap{/}p - \rlap{/}p q^{\rho}(2g_{\mu \rho}-\gamma_{\rho}\gamma_{\mu})\gamma^{\mu} \\
+ & = 2\rlap{/}q\rlap{/}p - 2\rlap{/}p\rlap{/}q+4\rlap{/}p \rlap{/}q  \\
+
+ & = 2 \rlap{/}q\rlap{/}p+ 2\rlap{/}p\rlap{/}q \\
+ & = 2q^{\mu}\gamma_{\mu}p^{\nu}\gamma_{\nu}+2 \rlap{/}p\rlap{/}q \\
+ & = 2 q^{\mu } p^{\nu}(2g_{\mu \nu}-\gamma_{\nu}\gamma_{\mu})+2 \rlap{/}p\rlap{/}q \\
+ & = 4 p\cdot q
 \end{align}$$
 Here we adopted our result from part (a).
 ## (d)
@@ -236,7 +242,11 @@ The energy momentum tensor is indeed conserved.
 ## (b)
 
 I have already derived this in (a). The momentum operator may be chosen as:
-$$P_{\nu}=\int d^{3}xT_{0\nu}$$
+$$\begin{align}
+P_{i} & =\int d^{3}xT_{0i} \\
+ & = \int d^{3}x i \bar{\psi}\gamma_{0} \partial_{i}\psi \\
+ & = \int d^{3}x i \psi ^{\dagger}\partial_{i}\psi
+\end{align}$$
 # Problem 5
 ## (a)
 
@@ -332,10 +342,16 @@ $$\begin{align}
 \end{align}$$
 where $\lambda,\mu,\nu\neq \kappa$ are the three remaining indices but in arbitrary order. Here we do not take the sum.
 
-To insert $\kappa\neq \lambda,\mu,\nu$ into the indices, we observe that $\epsilon^{\lambda \mu \nu}$ is equal to the the four-index Levi-Civita symbol with $\kappa$ inserted into a position where indices to the left of $\kappa$ are smaller than $\kappa$, and indices to the right of $\kappa$ are larger than $\kappa$. So to move $\kappa$ to the right most position, we need to do $4-\kappa$ more permutations. So:
+To insert $\kappa\neq \lambda,\mu,\nu$ into the indices, we observe that $\epsilon^{\lambda \mu \nu}$ is equal to the the four-index Levi-Civita symbol with $\kappa$ inserted into a position where indices to the left of $\kappa$ are smaller than $\kappa$, and indices to the right of $\kappa$ are larger than $\kappa$. So to move $\kappa$ to the right most position, we need to do $3-\kappa$ more permutations. So:
 $$\begin{align}
-(-1)^{\kappa}\epsilon^{\lambda \mu \nu}=(-1)^{\kappa}(-1)^{4-\kappa}\epsilon^{\lambda \mu \nu \kappa}=\epsilon^{\lambda \mu \nu \kappa}
+(-1)^{\kappa}\epsilon^{\lambda \mu \nu}=(-1)^{\kappa}(-1)^{3-\kappa}\epsilon^{\lambda \mu \nu \kappa}=-\epsilon^{\lambda \mu \nu \kappa}
 \end{align}$$
+Then:
+$$\begin{align}
+\gamma_{\kappa }\gamma^{5}=-i\epsilon^{\lambda \mu \nu \kappa} \gamma^{\lambda}\gamma^{\mu}\gamma^{\nu}
+\end{align}$$
+We do not take the sum here. Now multiplying $i\epsilon^{\lambda \mu \nu \kappa}$ on both sides, and observing that $\gamma^{[\lambda}\gamma^{\mu}\gamma^{\nu]}=\gamma^{\lambda}\gamma^{\mu}\gamma^{\nu}$. The observation is because each permutation gives us a minus sign, and the Levi-Civita symbol corrects that. There are $3! = 6$ copies, which is also taken account of by the definition of $\gamma^{[\lambda}\gamma^{\mu}\gamma^{\nu]}$. Then:
+$$\gamma^{[\lambda}\gamma^{\mu}\gamma^{\nu]}=i\epsilon^{\lambda \mu \nu \kappa}\gamma_{\kappa}\gamma^{5}$$
 
 Next we prove the other identity. We consider:
 $$\begin{align}
@@ -396,12 +412,27 @@ e^{i\phi}\sin \theta & -\cos \theta
 \end{pmatrix} \xi_{+}=\xi_{+}
 \end{align}$$
 It's easy to get:
-$$\xi_{+}=\begin{pmatrix}
+$$\begin{align}
+ & \begin{pmatrix}
+\cos \theta-1 & e^{-i\phi}\sin \theta \\
+e^{i\phi }\sin \theta & -\cos \theta-1
+\end{pmatrix} \xi_{+}=0 \\
+\implies & \xi_{+} =C \begin{pmatrix}
+e^{-i\phi}\sin \theta  \\
+1-\cos \theta
+\end{pmatrix}= C \begin{pmatrix}
+e^{-i\phi}2 \sin \frac{\theta}{2}\cos \frac{\theta}{2} \\
+  2 \sin ^{2} \frac{\theta}{2}
+\end{pmatrix}=C \begin{pmatrix}
 e^{-i\phi}\cos \frac{\theta}{2} \\
 \sin \frac{\theta}{2}
+\end{pmatrix}
+\end{align}$$
+The normalization condition gives $|C|=1$. To choose the phase, notice that for $\mathbf{p}\parallel \mathbf{z}$, we have $\theta=0$. Then $\xi_{+}$ must be reduced to $\begin{pmatrix}1 \\ 0 \end{pmatrix}$. We require that $C=e^{i\phi}$. Therefore:
+$$\xi_{+}=\begin{pmatrix}
+\cos \frac{\theta}{2} \\
+e^{i\phi}\sin \frac{\theta}{2}
 \end{pmatrix}$$
-This solution is already normalized. 
-
 For the other helicity, we have:
 $$\begin{align}
 \begin{pmatrix}
@@ -410,20 +441,18 @@ e^{i\phi}\sin \theta & -\cos \theta
 \end{pmatrix} \xi_{-}=-\xi_{-}
 \end{align}$$
 It's easy to get:
-$$\xi_{-}=\begin{pmatrix}
- e^{-i\phi}\sin \frac{\theta}{2}\\
+$$\xi_{-}=C\begin{pmatrix}
+ -e^{-i\phi}\sin \frac{\theta}{2}\\
 \cos \frac{\theta}{2}
 \end{pmatrix}$$
-To choose the phase, notice that for $\mathbf{p}\parallel \mathbf{z}$, we have $\theta=0$. Then the solution must be reduced to the usual spin-up/down forms. Therefore we need to rewrite:
+To choose the phase, notice that $\xi_{-}=\begin{pmatrix}0 \\ 1\end{pmatrix}$ for $\theta=0$. So $C=1$. Then 
 $$\begin{align}
-\xi_{+}=\begin{pmatrix}
-\cos \frac{\theta}{2} \\
-e^{i\phi}\sin \frac{\theta}{2}
-\end{pmatrix},\ \xi_{-}=\begin{pmatrix}
-\sin \frac{\theta}{2} \\
-e^{i\phi} \cos \frac{\theta}{2}
-\end{pmatrix}
+\xi_{-}=\begin{pmatrix}
+-e^{-i\phi}\sin \frac{\theta}{2} \\
+\cos \frac{\theta}{2}\end{pmatrix}
 \end{align}$$
+
+
 
 
 
