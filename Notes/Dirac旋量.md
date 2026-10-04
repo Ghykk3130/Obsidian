@@ -185,6 +185,78 @@ i\sigma^{\mu}\partial_{\mu}\psi_{R}=0,\ i \bar{\sigma}^{\mu}\partial_{\mu}\psi_{
 \end{align}$$
 称为Weyl方程。
 
+# 3. Dirac方程的解。
+
+注意到Dirac旋量符合Klein-Gordon方程。那么将解写为一个Klein-Gordon方程的本征模$\psi(x)=u(p)e^{-ip\cdot x}$。$u(p)$是一个4-component column vector。代入Dirac方程得到：
+$$\begin{align}
+ & (\gamma^{\mu}p_{\mu}-m)u(p)=0
+\end{align}$$
+在静止参考系中，我们有$p_{i}=0$。那么解得：
+$$\begin{align}
+u(p_{0})= \sqrt{ m }\begin{pmatrix}
+\xi \\
+\xi
+\end{pmatrix}
+\end{align}$$
+其中，不妨取$\xi ^{\dagger}\xi=1$。
+
+接下来我们考虑$x^{3}$方向的boost。在Dirac spinor表示中，计算：
+$$\begin{align}
+K_{3} & = S^{03} \\
+ & = \frac{i}{4}[\gamma^{0},\gamma^{3}] \\
+ & = \frac{i}{2}\begin{pmatrix}
+-\sigma^{3} & 0 \\
+0 & \sigma^{3}
+\end{pmatrix}
+\end{align}$$
+于是boost的表示就是：
+$$\begin{align}
+\Lambda_{\frac{1}{2}} & = \exp\left( - i\eta K_{3} \right)  \\
+ & = \exp\left( - \frac{1}{2}\eta \begin{pmatrix}
+\sigma^{3}& 0 \\
+0 & -\sigma^{3}
+\end{pmatrix} \right)
+\end{align}$$
+那么运动参考系中的Dirac spinor就是：
+$$\begin{align}
+u^{'}(p) & = \Lambda_{\frac{1}{2}}u(\Lambda ^{-1}p) \\
+ & = \Lambda_{\frac{1}{2}}u(p_{0}) \\
+ & = \exp\left( - \frac{1}{2} \eta \begin{pmatrix}
+\sigma^{3}& 0 \\
+0 & -\sigma^{3}
+\end{pmatrix} \right)\sqrt{ m }\begin{pmatrix}
+\xi \\
+\xi
+\end{pmatrix} \\
+ & = \left[ \cosh \frac{\eta}{2} -\sinh \frac{\eta}{2} \begin{pmatrix}
+\sigma^{3} & 0 \\
+0 & -\sigma^{3} 
+\end{pmatrix} \right] \sqrt{ m }\begin{pmatrix}
+\xi \\
+\xi 
+\end{pmatrix} \\
+ & = \begin{pmatrix}
+e^{\eta /2}\left(  \frac{1-\sigma^{3}}{2} \right) + e^{- \eta /2} \left(  \frac{1+\sigma^{3}}{2} \right) & 0 \\
+0 & e^{\eta /2}\left(  \frac{1+\sigma^{3}}{2} \right)+ e^{-\eta /2}\left(  \frac{1-\sigma^{3}}{2} \right)
+\end{pmatrix} \sqrt{ m }\begin{pmatrix}
+\xi \\
+\xi
+\end{pmatrix} 
+\end{align}$$
+注意到：
+$$\begin{align}
+\sqrt{ m }e^{ \eta /2} & = \sqrt{ me^{\eta} } \\
+ & = \sqrt{ m\cosh \eta+m\sinh \eta } \\
+ & = \sqrt{ m\gamma+m\gamma v } \\
+ & = \sqrt{ E+p^{3} }
+\end{align}$$
+所以解得：
+$$\begin{align}
+u^{'}(p)=\begin{pmatrix}
+\left( \sqrt{ E+p^{3} } \frac{1-\sigma^{3}}{2}+\sqrt{ E-p^{3} } \frac{1+\sigma^{3}}{2}  \right)\xi \\
+\left( \sqrt{ E+p^{3} } \frac{1+\sigma^{3}}{2} + \sqrt{ E-p^{3} } \frac{1-\sigma^{3}}{2} \right)\xi
+\end{pmatrix}
+\end{align}$$
 
 
 

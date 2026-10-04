@@ -3553,12 +3553,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Homework/Physics 513/Physics 513 homework 5.md",
+                "file": "Notes/Dirac旋量.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Physics 513 homework 5"
+              "title": "Dirac旋量"
             }
           }
         ],
@@ -3616,7 +3616,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "Dirac",
                 "matchingCase": true,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -3627,7 +3627,8 @@
               "title": "Search"
             }
           }
-        ]
+        ],
+        "currentTab": 3
       }
     ],
     "direction": "horizontal",
@@ -3748,11 +3749,11 @@
   },
   "active": "c6f0e57e2b8dded9",
   "lastOpenFiles": [
+    "Homework/Physics 513/Physics 513 homework 5.md",
     "Homework/Physics 513/Physics 513 homework 1.md",
     "Homework/Physics 513/Physics 513 homework 2.md",
     "Homework/Physics 513/Physics 513 homework 3.md",
     "Homework/Physics 513/Physics 513 homework 4.md",
-    "Homework/Physics 513/Physics 513 homework 5.md",
     "Homework/Physics 510/Physics 510 Homework 2.md",
     "Homework/Physics 510/Physics 510 Homework 8.md",
     "Notes/Dirac旋量.md",
