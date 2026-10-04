@@ -304,15 +304,16 @@ $$\begin{align}
 \gamma_{\kappa}\gamma^{5} & = i \gamma_{\kappa} \gamma^{0}\gamma^{1}\gamma^{2}\gamma^{3} \\
  & = i (-1)^{\kappa}\gamma^{\alpha}\gamma^{\beta}\gamma^{\rho}
 \end{align}$$
-where $\alpha,\beta,\rho\neq \kappa$ are the three remaining indices. They are arranged in the order of increasing indices. Since permuting just gives a permutation sign, then we have:
+where $\alpha,\beta,\rho\neq \kappa$ are the three remaining indices. Here we do not take the sum. They are arranged in the order of increasing indices. Since permuting just gives a permutation sign, then we have:
 $$\begin{align}
 \gamma_{\kappa}\gamma^{5}=i(-1)^{\kappa}\epsilon^{\lambda \mu \nu}\gamma^{\lambda}\gamma^{\mu}\gamma^{\nu}
 \end{align}$$
-where $\lambda,\mu,\nu\neq \kappa$ are the three remaining indices but in arbitrary order. It's easy to verify that:
+where $\lambda,\mu,\nu\neq \kappa$ are the three remaining indices but in arbitrary order. Here we do not take the sum.
+
+To insert $\kappa\neq \lambda,\mu,\nu$ into the indices, we observe that $\epsilon^{\lambda \mu \nu}$ is equal to the the four-index Levi-Civita symbol with $\kappa$ inserted into a position where indices to the left of $\kappa$ are smaller than $\kappa$, and indices to the right of $\kappa$ are larger than $\kappa$. So to move $\kappa$ to the right most position, we need to do $4-\kappa$ more permutations. So:
 $$\begin{align}
-
+(-1)^{\kappa}\epsilon^{\lambda \mu \nu}=(-1)^{\kappa}(-1)^{4-\kappa}\epsilon^{\lambda \mu \nu \kappa}=\epsilon^{\lambda \mu \nu \kappa}
 \end{align}$$
-
 
 
 
