@@ -337,5 +337,94 @@ $$\begin{align}
 (-1)^{\kappa}\epsilon^{\lambda \mu \nu}=(-1)^{\kappa}(-1)^{4-\kappa}\epsilon^{\lambda \mu \nu \kappa}=\epsilon^{\lambda \mu \nu \kappa}
 \end{align}$$
 
+Next we prove the other identity. We consider:
+$$\begin{align}
+\gamma^{0}\gamma^{1}\gamma^{2}\gamma^{3}\gamma_{\mu}\gamma_{\nu}
+\end{align}$$
+We have:
+$$\begin{align}
+ & \gamma^{0}\gamma^{1}\gamma^{2}\gamma^{3}\gamma_{0}\gamma_{1}=-\gamma^{2}\gamma^{3} =\gamma^{3}\gamma^{2}\\
+ & \gamma^{0}\gamma^{1}\gamma^{2}\gamma^{3}\gamma_{0}\gamma_{2}=\gamma^{1}\gamma^{3} \\
+ & \gamma^{0}\gamma^{1}\gamma^{2}\gamma^{3}\gamma_{0}\gamma_{3}= -\gamma^{1}\gamma^{2}=\gamma^{2}\gamma^{1} \\
+ & \gamma^{0}\gamma^{1}\gamma^{2}\gamma^{3}\gamma_{1}\gamma_{2}=-\gamma^{0}\gamma^{3}=\gamma^{3}\gamma^{0} \\
+ & \gamma^{0}\gamma^{1}\gamma^{2}\gamma^{3}\gamma_{1}\gamma _{3}=\gamma^{0}\gamma^{2} \\
+ & \gamma^{0}\gamma^{1}\gamma^{2}\gamma^{3}\gamma_{2}\gamma_{3}=-\gamma^{0}\gamma^{1}=\gamma^{1}\gamma^{0}
+\end{align}$$
+We summarize:
+$$\begin{align}
+\gamma^{0}\gamma^{1}\gamma^{2}\gamma^{3}\gamma_{\mu}\gamma_{\nu}=-\epsilon^{\mu \nu \rho \sigma }\gamma^{\rho}\gamma^{\sigma}=\epsilon_{\mu \nu \rho \sigma}\gamma^{\rho}\gamma^{\sigma}
+\end{align}$$
+We did not take the sum here. Note that we do not need to consider other possibilities, for example, like $\gamma^{0}\gamma^{1}\gamma^{2}\gamma^{3}\gamma_{1}\gamma_{0}$, because flipping $\gamma_{1}\gamma_{0}$ just gives a minus sign, and it is already captured by the Levi-Civita symbol.
+
+Then if we sum $\rho,\sigma$, we have:
+$$\begin{align}
+ \sum_{\rho,\sigma}\epsilon_{\mu \nu \rho \sigma}\gamma^{\rho}\gamma^{\sigma} & = \epsilon_{\mu \nu \rho \sigma }\gamma^{\rho}\gamma^{\sigma}+\epsilon_{\mu \nu \sigma \rho }\gamma^{\sigma}\gamma^{\rho} \\
+ & =2\epsilon_{\mu \nu \rho \sigma}\gamma^{\rho}\gamma^{\sigma} \\
+ & = 2\gamma^{0}\gamma^{1}\gamma^{2}\gamma^{3}\gamma_{\mu}\gamma_{\nu}
+\end{align}$$
+
+Then:
+$$\begin{align}
+\gamma^{0}\gamma^{1}\gamma^{2}\gamma^{3}\gamma_{\mu}\gamma_{\nu}= \frac{1}{2} \epsilon_{\mu \nu \rho \sigma} \gamma^{\rho}\gamma^{\sigma}
+\end{align}$$
+Here we take the sum with $\rho,\sigma$. Then:
+$$\begin{align}
+\gamma^{5}\sigma_{\mu \nu} & =  \frac{1}{4i} (\gamma^{5}\gamma_{\mu}\gamma_{\nu}-\gamma^{5}\gamma_{\nu}\gamma_{\mu} )\\ & = \frac{1}{4i} \frac{i}{2}(\gamma^{0}\gamma^{1}\gamma^{2}\gamma^{3}\gamma_{\mu}\gamma_{\nu}-\gamma^{0}\gamma^{1}\gamma^{2}\gamma^{3}\gamma_{\nu}\gamma_{\mu}) \\
+
+ & = \frac{i}{2}\epsilon_{\mu \nu \alpha \beta} \frac{1}{4i}(\gamma^{\alpha}\gamma^{\beta}-\gamma^{\beta}\gamma^{\alpha}) \\
+ & = \frac{i}{2}\epsilon_{\mu \nu \alpha \beta}\sigma^{\alpha \beta}
+\end{align}$$
+# Problem 6
+
+We compute:
+$$\begin{align}
+\hat{\mathbf{p}}\cdot \boldsymbol{\sigma} & = \sin \theta \cos \phi \sigma_{1}+\sin \theta \sin \phi \sigma_{2}+\cos \theta \sigma_{3} \\
+ & = \begin{pmatrix}
+\cos \theta & \sin \theta \cos \phi-i\sin \theta \sin \phi \\
+\sin \theta \cos \phi+i\sin \theta \sin \phi & -\cos \theta
+\end{pmatrix} \\
+ & = \begin{pmatrix}
+\cos \theta & e^{-i\phi}\sin \theta \\
+e^{i\phi}\sin \theta & -\cos \theta
+\end{pmatrix}
+\end{align}$$
+We solve:
+$$\begin{align}
+\begin{pmatrix}
+\cos \theta & e^{-i\phi}\sin \theta \\
+e^{i\phi}\sin \theta & -\cos \theta
+\end{pmatrix} \xi_{+}=\xi_{+}
+\end{align}$$
+It's easy to get:
+$$\xi_{+}=\begin{pmatrix}
+e^{-i\phi}\cos \frac{\theta}{2} \\
+\sin \frac{\theta}{2}
+\end{pmatrix}$$
+This solution is already normalized. 
+
+For the other helicity, we have:
+$$\begin{align}
+\begin{pmatrix}
+\cos \theta & e^{-i\phi}\sin \theta \\
+e^{i\phi}\sin \theta & -\cos \theta
+\end{pmatrix} \xi_{-}=-\xi_{-}
+\end{align}$$
+It's easy to get:
+$$\xi_{-}=\begin{pmatrix}
+ e^{-i\phi}\sin \frac{\theta}{2}\\
+\cos \frac{\theta}{2}
+\end{pmatrix}$$
+To choose the phase, notice that for $\mathbf{p}\parallel \mathbf{z}$, we have $\theta=0$. Then the solution must be reduced to the usual spin-up/down forms. Therefore we need to rewrite:
+$$\begin{align}
+\xi_{+}=\begin{pmatrix}
+\cos \frac{\theta}{2} \\
+e^{i\phi}\sin \frac{\theta}{2}
+\end{pmatrix},\ \xi_{-}=\begin{pmatrix}
+\sin \frac{\theta}{2} \\
+e^{i\phi} \cos \frac{\theta}{2}
+\end{pmatrix}
+\end{align}$$
+
+
 
 
