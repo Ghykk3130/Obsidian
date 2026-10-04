@@ -1,7 +1,7 @@
 [
   "obsidian-excalidraw-plugin",
-  "obsidian-git",
   "obsidian-latex-suite",
   "obsidian-open-in-other-editor",
-  "obsidian-shellcommands"
+  "obsidian-shellcommands",
+  "obsidian-git"
 ]
