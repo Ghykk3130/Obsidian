@@ -282,28 +282,6 @@ $$\begin{align}
 \end{align}$$
 Then:
 $$(\gamma^{5})^{2}= 1$$
-
-In PS, the explicit form of $\gamma^{5}$ is:
-$$\gamma^{5}=\begin{pmatrix}
--1 & 0 \\
-0 & 1
-\end{pmatrix}$$
-Obviously it is hermitian. 
-
-Next we compute:
-$$\begin{align}
-(\gamma^{5})^{2} & = -\gamma^{0}\gamma^{1}\gamma^{2}\gamma^{3}\gamma^{0}\gamma^{1}\gamma^{2}\gamma^{3} \\
- & = (\gamma^{0})^{2}\gamma^{1}\gamma^{2}\gamma^{3}\gamma^{1}\gamma^{2}\gamma^{3} \\
- & = (\gamma^{0})^{2}(\gamma^{1})^{2}\gamma^{2}\gamma^{3}\gamma^{2}\gamma^{3} \\
- & = -(\gamma^{0})^{2}(\gamma^{1})^{2}(\gamma^{2})^{2}(\gamma^{3})^{2}
-\end{align}$$
-Know that:
-$$\begin{align}
-  & \{ \gamma^{0},\gamma^{0} \}=2\implies (\gamma^{0})^{2}=1 \\
- & \{ \gamma^{i},\gamma^{i} \}=-2\implies(\gamma^{i})^{2}=-1
-\end{align}$$
-Then:
-$$(\gamma^{5})^{2}= 1$$
 ## (c)
 
 $\epsilon_{\kappa \lambda \mu \nu}$ dictates that the indices are different. We consider $\gamma^{\kappa}\gamma^{\lambda}\gamma^{\mu}\gamma^{\nu}$ as a permutation of $\gamma^{0}\gamma^{1}\gamma^{2}\gamma^{3}$. Each time we commute a Dirac matrix through another Dirac matrix, since their indices are different, they anti-commute. Then we just get a minus sign. Let $N$ be the number of times we perform the operation above to get back to $\gamma^{0}\gamma^{1}\gamma^{2}\gamma^{3}$. Then the sign in the front is just $(-1)^{N}$. But this is equal to the sign of the permutation of $(\kappa\ \lambda\ \mu\ \nu)\in S_{4}$. And the sign is just $\epsilon^{\kappa \lambda \mu \nu}$. 
