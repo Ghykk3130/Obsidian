@@ -248,7 +248,71 @@ $$\begin{align}
  & = -i\gamma^{2}\gamma^{0}\gamma^{1}\gamma^{2}\gamma^{3} \\
  & = -\gamma^{2}\gamma^{5}
 \end{align}$$
-The proofs for $\mu=0,1,3$ should be very similar and obvious. Then $\gamma^{5}\gamma^{\mu}=-\gamma^{\mu}\gamma^{5}$
+The proofs for $\mu=0,1,3$ should be very similar and obvious. Then $\gamma^{5}\gamma^{\mu}=-\gamma^{\mu}\gamma^{5}$.
+## (b)
+
+In PS, the explicit form of $\gamma^{5}$ is:
+$$\gamma^{5}=\begin{pmatrix}
+-1 & 0 \\
+0 & 1
+\end{pmatrix}$$
+Obviously it is hermitian. 
+
+Next we compute:
+$$\begin{align}
+(\gamma^{5})^{2} & = -\gamma^{0}\gamma^{1}\gamma^{2}\gamma^{3}\gamma^{0}\gamma^{1}\gamma^{2}\gamma^{3} \\
+ & = (\gamma^{0})^{2}\gamma^{1}\gamma^{2}\gamma^{3}\gamma^{1}\gamma^{2}\gamma^{3} \\
+ & = (\gamma^{0})^{2}(\gamma^{1})^{2}\gamma^{2}\gamma^{3}\gamma^{2}\gamma^{3} \\
+ & = -(\gamma^{0})^{2}(\gamma^{1})^{2}(\gamma^{2})^{2}(\gamma^{3})^{2}
+\end{align}$$
+Know that:
+$$\begin{align}
+  & \{ \gamma^{0},\gamma^{0} \}=2\implies (\gamma^{0})^{2}=1 \\
+ & \{ \gamma^{i},\gamma^{i} \}=-2\implies(\gamma^{i})^{2}=-1
+\end{align}$$
+Then:
+$$(\gamma^{5})^{2}= 1$$
+## (c)
+
+$\epsilon_{\kappa \lambda \mu \nu}$ dictates that the indices are different. We consider $\gamma^{\kappa}\gamma^{\lambda}\gamma^{\mu}\gamma^{\nu}$ as a permutation of $\gamma^{0}\gamma^{1}\gamma^{2}\gamma^{3}$. Each time we commute a Dirac matrix through another Dirac matrix, since their indices are different, they anti-commute. Then we just get a minus sign. Let $N$ be the number of times we perform the operation above to get back to $\gamma^{0}\gamma^{1}\gamma^{2}\gamma^{3}$. Then the sign in the front is just $(-1)^{N}$. But this is equal to the sign of the permutation of $(\kappa\ \lambda\ \mu\ \nu)\in S_{4}$. And the sign is just $\epsilon^{\kappa \lambda \mu \nu}$. 
+
+Notice that there are $4! =24$ permutations. Then we normalize by $24$ to get:
+$$\gamma^{5}= \frac{i}{24}\epsilon^{\kappa \lambda \mu \nu}\gamma^{\kappa}\gamma^{\lambda}\gamma^{\mu}\gamma^{\nu}=- \frac{i}{24}\epsilon^{}_{\kappa \lambda \mu \nu}\gamma^{\kappa}\gamma^{\lambda}\gamma^{\mu}\gamma^{\nu}$$
+
+The next proof is similar. Since we just showed that the sign we get from permutation is $\epsilon^{\kappa \lambda \mu \nu}$, then:
+$$\gamma^{\kappa}\gamma^{\lambda}\gamma^{\mu}\gamma^{\nu}=\epsilon^{\kappa \lambda \mu \nu}\gamma^{0}\gamma^{1}\gamma^{2}\gamma^{3}=-i \epsilon^{\kappa \lambda \mu \nu}\gamma^{5}$$
+Here we did not sum over the indices. Now since permuting each time just give us a minus sign, so if we add a minus sign in the front, we get the same thing. For example:
+$$\gamma^{\kappa}\gamma^{\lambda}\gamma^{\mu}\gamma^{\nu}=-\gamma^{\lambda}\gamma^{\kappa}\gamma^{\mu}\gamma^{\nu}$$
+So the terms in $\gamma^{[\kappa}\gamma^{\lambda}\gamma^{\mu}\gamma^{\nu]}$ are all equal. And there are $4! =24$ copies of them. So we should normalize them by $24$. But the normalization is already taken into account by definition. So we have:
+$$\gamma^{[\kappa}\gamma^{\lambda}\gamma^{\mu}\gamma^{\nu]}=-i\epsilon^{\kappa \lambda \mu \nu}\gamma^{5}$$
+## (d)
+
+We first notice that:
+$$\begin{align}
+ & \{ \gamma_{\mu},\gamma^{\mu} \}= g_{\mu \nu}\{ \gamma^{\nu},\gamma^{\mu} \}= 2g_{\mu \nu}g^{\nu \mu}=2 \\
+\end{align}$$
+And it is obvious that:
+$$\begin{align}
+\gamma_{\mu }\gamma^{\mu} = g_{\mu \nu}\gamma^{\nu}\gamma^{\mu}=\gamma^{\nu}\gamma_{\nu}=\gamma^{\mu}\gamma_{\mu}
+\end{align}$$
+Then:
+$$\begin{align}
+ & \{ \gamma_{\mu},\gamma^{\mu} \}=2\gamma_{\mu}\gamma^{\mu}=2\implies \gamma_{\mu}\gamma^{\mu}=1
+\end{align}$$
+Since commuting through each Dirac matrix gives a minus sign, and $\gamma_{\kappa}$ would commute through until it meets $\gamma^{\kappa}$ and "annihilates", we have:
+$$\begin{align}
+\gamma_{\kappa}\gamma^{5} & = i \gamma_{\kappa} \gamma^{0}\gamma^{1}\gamma^{2}\gamma^{3} \\
+ & = i (-1)^{\kappa}\gamma^{\alpha}\gamma^{\beta}\gamma^{\rho}
+\end{align}$$
+where $\alpha,\beta,\rho\neq \kappa$ are the three remaining indices. They are arranged in the order of increasing indices. Since permuting just gives a permutation sign, then we have:
+$$\begin{align}
+\gamma_{\kappa}\gamma^{5}=i(-1)^{\kappa}\epsilon^{\lambda \mu \nu}\gamma^{\lambda}\gamma^{\mu}\gamma^{\nu}
+\end{align}$$
+where $\lambda,\mu,\nu\neq \kappa$ are the three remaining indices but in arbitrary order. It's easy to verify that:
+$$\begin{align}
+
+\end{align}$$
+
 
 
 
