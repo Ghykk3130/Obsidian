@@ -3630,7 +3630,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "申请",
+                "query": "紧束缚",
                 "matchingCase": true,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -3752,11 +3752,13 @@
   },
   "active": "031dfd46135d0382",
   "lastOpenFiles": [
-    "Homework/Physics 520/Physics 520 homework 4.md",
+    "Homework/Physics 513/Physics 513 homework 5.md",
+    "Notes/紧束缚模型.md",
+    "Notes/石墨烯的tight-binding模型.md",
     "Homework/Physics 520/Physics 520 homework 5.md",
+    "Homework/Physics 520/Physics 520 homework 4.md",
     "Homework/Physics 520/Physics 520 homework 4 problem set.md",
     "Notes/申请.md",
-    "Homework/Physics 513/Physics 513 homework 5.md",
     "Notes/Noether定理.md",
     "Notes/Dirac旋量.md",
     "Notes/Lorentz群的表示.md",
@@ -3776,8 +3778,6 @@
     "Homework/Physics 402/Physics 402 homework 1.md",
     "Notes/能均分定理，virial定理.md",
     "Homework/Physics 520/Physics 520 homework 3.md",
-    "Homework/Physics 520/Physics 520 homework 3 problem set.md",
-    "Homework/Physics 520/Physics 520 homework 2.md",
     "Pictures/24fd794455aa6fef3032eee3dd7b8e00.jpg",
     "Pictures/Pasted image 20260929131846.png",
     "Pictures/1ea34c77acda998ec15addc14c6432e8.jpg",
