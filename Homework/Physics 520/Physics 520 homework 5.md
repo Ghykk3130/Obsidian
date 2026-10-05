@@ -197,12 +197,24 @@ $$\begin{align}
  & = eB[p_{x},x] \\
  & = -ieB\hbar
 \end{align}$$
+Then:
+$$\begin{align}
+[P_{x}-iP_{y},P_{x}+iP_{y}] & = i[P_{x},P_{y}]-i[P_{y},P_{x}] \\
+ & = 2eB\hbar
+\end{align}$$
+Then define:
+$$\begin{align}
+a= \frac{1}{\sqrt{ 2eB\hbar }}(P_{x}-iP_{y})
+\end{align}$$
+We would have:
+$$[a,a^{\dagger}]=1$$
 Now we have:
 $$\begin{align}
 w & = v_{F}(P_{x}-iP_{y}) \\
- & = \epsilon_{D} \frac{v_{F}}{\epsilon_{D}}(P_{x}-iP_{y})
+ & =  v_{F}\sqrt{ 2eB\hbar } \frac{P_{x}-iP_{y}}{\sqrt{ 2eB\hbar }} \\
+ & = \epsilon_{D} a,\ \epsilon_{D}=v_{F}\sqrt{ 2eB\hbar }
 \end{align}$$
-We define $a= \frac{v_{F}}{\epsilon_{F}}(P_{x}-iP_{y})$. Then we need to solve the "massless Dirac equation":
+Then we need to solve the "massless Dirac equation":
 $$\begin{align}
 \epsilon_{D}\begin{pmatrix}
 0 & a \\
@@ -215,33 +227,93 @@ a^{\dagger} & 0
 \psi_{B}
 \end{pmatrix}
 \end{align}$$
-Recall that squaring the Dirac equation we get the Klein-Gordon equation. We compute:
+We first notice that:
 $$\begin{align}
-H^{2} & = \epsilon_{D}^{2} \begin{pmatrix}
+[a,(a^{\dagger})^{n}] & = a(a^{\dagger})^{n}-(a^{\dagger})^{n}a \\
+ & = (1+a^{\dagger}a) (a^{\dagger})^{n-1}-(a^{\dagger})^{n}a \\
+ & = \dots \\
+ & = n (a^{\dagger})^{n-1}
+\end{align}$$
+Then:
+$$\begin{align}
+ & [a,(a^{\dagger})^{n}]\ket{0}   = n(a^{\dagger})^{n-1}\ket{0}  \\
+\implies & a(a^{\dagger})^{n}\ket{0} =n (a^{\dagger})^{n-1}\ket{0}  \\
+\implies & a^{\dagger}\ket{n} =\sqrt{ n+1 }\ket{n+1} 
+\end{align}$$
+Therefore $\ket{n}= \frac{(a^{\dagger})^{n}}{\sqrt{ n! }}$. We would have:
+$$\begin{align}
+a\ket{n}  & = a \frac{(a^{\dagger})^{n}}{\sqrt{ n! }}\ket{0}  \\
+ & = n \frac{(a^{\dagger})^{n-1}}{\sqrt{ n! }}\ket{0} \\ & = \sqrt{ n } \frac{(a^{\dagger})^{n-1}}{\sqrt{ (n-1)! }}\ket{0}  \\
+
+ & = \sqrt{ n }\ket{n-1}  
+\end{align}$$
+Then:
+$$\begin{align}
+a^{\dagger}a\ket{n}  & = a^{\dagger} \sqrt{ n }\ket{n-1}  \\
+ & = n \ket{n} 
+\end{align}$$
+$$\begin{align}
+aa^{\dagger}\ket{n}  & = (1+a^{\dagger}a)\ket{n}  \\
+ & = (n+1)\ket{n} 
+\end{align}$$
+So if the hamiltonian can be transformed into a diagonal matrix, it would be helpful. We have:
+$$\begin{align}
+ & \epsilon_{D}\begin{pmatrix}
+0 & a \\
+a^{\dagger} & 0
+\end{pmatrix} \begin{pmatrix}
+\psi_{A} \\
+\psi_{B}
+\end{pmatrix}=E\begin{pmatrix}
+\psi_{A} \\
+\psi_{B}
+\end{pmatrix} \\
+\implies & \epsilon_{D}^{2} \begin{pmatrix}
 aa^{\dagger} & 0 \\
 0 & a^{\dagger}a
+\end{pmatrix} \begin{pmatrix}
+\psi_{A} \\
+\psi_{B}
+\end{pmatrix}= E^{2} \begin{pmatrix}
+\psi_{A} \\
+\psi_{B}
 \end{pmatrix}
 \end{align}$$
-Let $\{ \ket{n} \}$ be the Fock states corresponding to $a,a^{\dagger}$. Assume that $a^{\dagger}\ket{n}=C\ket{n+1}$. We have:
+We let:
 $$\begin{align}
- & \bra{n} a a^{\dagger}\ket{n}= |C|^{2} \\
-\implies & \bra{n} ( a^{\dagger}a+ [a,a^{\dagger}])\ket{n} =|C|^{2} \\
-\implies &  \bra{n} [a,a^{\dagger}]\ket{n} =|C|^{2} \\
-\implies & \frac{v_{F}^{2}}{\epsilon_{D}^{2}}2eB\hbar=|C|^{2} \\
-\implies & C= \frac{v_{F}}{\epsilon_{D}} \sqrt{ 2eB\hbar } 
+\begin{pmatrix}
+\psi_{A} \\
+\psi_{B}
+\end{pmatrix}= C \begin{pmatrix}
+\ket{n-1} \\
+\ket{n}  
+\end{pmatrix}
 \end{align}$$
-
-
-
-
-
-We can compute the commutator:
+Then:
 $$\begin{align}
-[a,a^{\dagger}] & = \frac{v_{F}^{2}}{\epsilon_{D}^{2}}[P_{x}-iP_{y},P_{x}+iP_{y}] \\
- & = \frac{v_{F}^{2}}{\epsilon_{D}^{2}} 2eB\hbar
+ & \epsilon_{D}^{2} \begin{pmatrix}
+n \ket{n-1}  \\
+n \ket{n} 
+\end{pmatrix}=E^{2} \begin{pmatrix}
+\ket{n-1}  \\
+\ket{n} 
+\end{pmatrix}
 \end{align}$$
+Then we have:
+$$\begin{align}
+ & E^{2}=\epsilon_{D}^{2} n \\
+\implies & E(n,B)=\pm \epsilon_{D}\sqrt{ n },\ \epsilon_{D}=v_{F}\sqrt{ 2eB\hbar }
+\end{align}$$
+## (c)
 
-
-
-
+Imagine at $B_{n}$, the magnetic field is such that the $E(n,B_{n})=\epsilon_{F}$. Then we change the magnetic field to $B_{n+1}$, such that $E(n+1,B_{n+1})=\epsilon_{F}$. Then we have:
+$$\begin{align}
+ & v_{F}\sqrt{ 2eB_{n}\hbar }\sqrt{ n }=\epsilon_{F} \\
+ & v_{F}\sqrt{ 2eB_{n+1}\hbar }\sqrt{ n+1 }=\epsilon_{F} \\
+\implies & n= \frac{\epsilon_{F}^{2}}{v_{F}^{2}2eB_{n}\hbar} \\
+ & n+1= \frac{\epsilon_{F}^{2}}{v_{F}^{2} 2eB_{n+1}\hbar} \\
+\implies & \Delta\left(  \frac{1}{B} \right)= \frac{1}{B_{n+1}}- \frac{1}{B_{n}}= \frac{2v_{F}^{2} e\hbar}{\epsilon_{F}^{2}}
+\end{align}$$
+Therefore the oscillation is still periodic in $\frac{1}{B}$.
+## (d)
 
