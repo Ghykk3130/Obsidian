@@ -183,6 +183,63 @@ where:
 $$w=v_{F}(p_{x}+eA_{x}-i(p_{y}+eA_{y}))$$
 ## (b)
 
+We choose the Landau gauge $\mathbf{A}=xB \hat{\mathbf{y}}$. Then we have:
+$$\begin{align}
+w= v_{F}[p_{x}-i(p_{y}+eBx)]
+\end{align}$$
+Observe that this looks like the raising and lowering operators. We define:
+$$\begin{align}
+P_{x}=p_{x},P_{y}=p_{y}+eBx,a=P_{x}-iP_{y}
+\end{align}$$
+We observe that:
+$$\begin{align}
+[P_{x},P_{y}] & = [p_{x},p_{y}+eBx] \\
+ & = eB[p_{x},x] \\
+ & = -ieB\hbar
+\end{align}$$
+Now we have:
+$$\begin{align}
+w & = v_{F}(P_{x}-iP_{y}) \\
+ & = \epsilon_{D} \frac{v_{F}}{\epsilon_{D}}(P_{x}-iP_{y})
+\end{align}$$
+We define $a= \frac{v_{F}}{\epsilon_{F}}(P_{x}-iP_{y})$. Then we need to solve the "massless Dirac equation":
+$$\begin{align}
+\epsilon_{D}\begin{pmatrix}
+0 & a \\
+a^{\dagger} & 0
+\end{pmatrix} \begin{pmatrix}
+\psi_{A} \\
+\psi_{B}
+\end{pmatrix}=E\begin{pmatrix}
+\psi_{A} \\
+\psi_{B}
+\end{pmatrix}
+\end{align}$$
+Recall that squaring the Dirac equation we get the Klein-Gordon equation. We compute:
+$$\begin{align}
+H^{2} & = \epsilon_{D}^{2} \begin{pmatrix}
+aa^{\dagger} & 0 \\
+0 & a^{\dagger}a
+\end{pmatrix}
+\end{align}$$
+Let $\{ \ket{n} \}$ be the Fock states corresponding to $a,a^{\dagger}$. Assume that $a^{\dagger}\ket{n}=C\ket{n+1}$. We have:
+$$\begin{align}
+ & \bra{n} a a^{\dagger}\ket{n}= |C|^{2} \\
+\implies & \bra{n} ( a^{\dagger}a+ [a,a^{\dagger}])\ket{n} =|C|^{2} \\
+\implies &  \bra{n} [a,a^{\dagger}]\ket{n} =|C|^{2} \\
+\implies & \frac{v_{F}^{2}}{\epsilon_{D}^{2}}2eB\hbar=|C|^{2} \\
+\implies & C= \frac{v_{F}}{\epsilon_{D}} \sqrt{ 2eB\hbar } 
+\end{align}$$
+
+
+
+
+
+We can compute the commutator:
+$$\begin{align}
+[a,a^{\dagger}] & = \frac{v_{F}^{2}}{\epsilon_{D}^{2}}[P_{x}-iP_{y},P_{x}+iP_{y}] \\
+ & = \frac{v_{F}^{2}}{\epsilon_{D}^{2}} 2eB\hbar
+\end{align}$$
 
 
 
