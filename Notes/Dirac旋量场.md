@@ -140,7 +140,7 @@ $$\begin{align}
 \end{align}$$
 
 构造lagrangian：
-$$\boxed{\mathcal{L}= \bar{\psi}(i\gamma^{\mu }\partial_{\mu}-m)\psi}$$
+$$\boxed{\mathcal{L}= \bar{\psi}(i\gamma^{\mu }\partial_{\mu}-m)\psi=\bar{\psi}(i\rlap{/}\partial-m)\psi}$$
 可以证明这个lagrangian是不变的：
 $$\begin{align}
 \bar{\psi^{'}}(x)(i\gamma^{\mu}\partial_{\mu}-m)\psi^{'}(x) &  =  \bar{\psi}(\Lambda ^{-1}x)\Lambda ^{-1}_{\frac{1}{2}}(i\gamma^{\mu}\partial_{\mu}-m)\Lambda_{\frac{1}{2}}\psi(\Lambda ^{-1}x) \\
@@ -185,9 +185,9 @@ i\sigma^{\mu}\partial_{\mu}\psi_{R}=0,\ i \bar{\sigma}^{\mu}\partial_{\mu}\psi_{
 \end{align}$$
 称为Weyl方程。
 
-# 3. Dirac方程的解。
+# 3. Dirac方程的解
 
-注意到Dirac旋量符合Klein-Gordon方程。那么将解写为一个Klein-Gordon方程的本征模$\psi(x)=u(p)e^{-ip\cdot x}$。$u(p)$是一个4-component column vector。代入Dirac方程得到：
+注意到Dirac旋量符合Klein-Gordon方程。那么将解写为一个Klein-Gordon方程的本征模$\psi(x)=u(p)e^{-ip\cdot x}$。$u(p)$是一个4-component column vector。代入Dirac方程得到动量空间中的方程：
 $$\begin{align}
  & (\gamma^{\mu}p_{\mu}-m)u(p)=0
 \end{align}$$
@@ -200,7 +200,7 @@ u(p_{0})= \sqrt{ m }\begin{pmatrix}
 \end{align}$$
 其中，不妨取$\xi ^{\dagger}\xi=1$。
 
-接下来我们考虑$x^{3}$方向的boost。在Dirac spinor表示中，计算：
+考虑任意方向的boost。不妨取坐标系使得boost在$x^{3}$方向。在Dirac spinor表示中，计算：
 $$\begin{align}
 K_{3} & = S^{03} \\
  & = \frac{i}{4}[\gamma^{0},\gamma^{3}] \\
@@ -250,13 +250,40 @@ $$\begin{align}
  & = \sqrt{ m\gamma+m\gamma v } \\
  & = \sqrt{ E+p^{3} }
 \end{align}$$
-所以解得：
+所以得到动量空间中的解：
 $$\begin{align}
 u^{'}(p)=\begin{pmatrix}
 \left( \sqrt{ E+p^{3} } \frac{1-\sigma^{3}}{2}+\sqrt{ E-p^{3} } \frac{1+\sigma^{3}}{2}  \right)\xi \\
 \left( \sqrt{ E+p^{3} } \frac{1+\sigma^{3}}{2} + \sqrt{ E-p^{3} } \frac{1-\sigma^{3}}{2} \right)\xi
 \end{pmatrix}
 \end{align}$$
+注意到$\frac{1-\sigma^{3}}{2},\ \frac{1+\sigma^{3}}{2}$是投影算子。
+
+>[!Quote] 投影算子
+>回忆起投影算子$\{ P_{i} \}$的要求：
+>1. $\sum_{i}P_{i}=1$
+>2. $P_{i}P_{j}=\delta_{ij}$
+>可以一一验证$\frac{1-\sigma^{3}}{2},\ \frac{1+\sigma^{3}}{2}$满足这些要求。
+
+那么：
+$$\begin{align}
+\sqrt{ E+p^{3} } \frac{1-\sigma^{3}}{2 }+ \sqrt{ E-p^{3} } \frac{1+\sigma^{3}}{2} & = \sqrt{ (E+p^{3}) \frac{1-\sigma^{3}}{2}+(E-p^{3}) \frac{1+\sigma^{3}}{2}  } \\
+ & = \sqrt{ E-p^{3}\sigma^{3} } \\
+ & = \sqrt{ p\cdot \sigma }
+\end{align}$$
+同理可得：
+$$\begin{align}
+\sqrt{ E+p^{3} } \frac{1+\sigma^{3}}{2}+\sqrt{ E-p^{3} } \frac{1-\sigma^{3}}{2} & = \sqrt{ p\cdot \bar{\sigma} }
+\end{align}$$
+其中$\sigma=(1,\boldsymbol{\sigma}),\ \bar{\sigma}=(1,-\boldsymbol{\sigma})$。现在得到的解不取决于参考系。忽略prime不写可以得到解：
+$$\psi(x)=u(p)e^{-ip\cdot x},\ u(p)= \begin{pmatrix}
+\sqrt{ p\cdot \sigma }\xi \\
+\sqrt{ p\cdot \bar{\sigma} }\xi
+\end{pmatrix}$$
+其中$\xi ^{\dagger}\xi=1$。我们一般取$\xi=\begin{pmatrix}1 \\ 0\end{pmatrix}$或者$\xi=\begin{pmatrix}0 \\ 1\end{pmatrix}$。
+
+
+
 
 
 
