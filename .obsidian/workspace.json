@@ -3595,12 +3595,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Notes/Dirac旋量场.md",
+                "file": "Notes/申请.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Dirac旋量场"
+              "title": "申请"
             }
           }
         ],
@@ -3658,7 +3658,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "Dirac",
+                "query": "申请",
                 "matchingCase": true,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -3669,12 +3669,12 @@
               "title": "Search"
             }
           }
-        ]
+        ],
+        "currentTab": 3
       }
     ],
     "direction": "horizontal",
-    "width": 200.5,
-    "collapsed": true
+    "width": 200.5
   },
   "right": {
     "id": "9003d078f8dbc4ed",
@@ -3780,9 +3780,9 @@
   },
   "active": "fd343e5dfdea5544",
   "lastOpenFiles": [
-    "Notes/Dirac场的量子化.md",
-    "Notes/Dirac旋量场.md",
     "Homework/Physics 513/Physics 513 homework 6.md",
+    "Notes/Dirac旋量场.md",
+    "Notes/Dirac场的量子化.md",
     "Notes/申请.md",
     "Homework/Physics 513/Physics 513 homework 5.md",
     "Homework/Physics 513/Physics 513 homework 3.md",

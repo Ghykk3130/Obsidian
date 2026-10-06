@@ -323,7 +323,8 @@ $$
 \end{pmatrix} \\
  & \bar{u}^{r}(p)u^{s}(p)=2m\delta^{rs},\ u^{r\dagger}(p)u^{s}(p)=2E_{\mathbf{p}}\delta^{rs} \\
   & \bar{v}^{r}(p)v^{s}(p)=-2m\delta^{rs},\ v^{r\dagger}(p)v^{s}(p)=2E_{\mathbf{p}}\delta^{rs} \\
- & \bar{u}^{r}(p)v^{s}(p)=\bar{v}^{r}(p)u^{s}(p)=0
+ & \bar{u}^{r}(p)v^{s}(p)=\bar{v}^{r}(p)u^{s}(p)=0 \\
+ & u^{r \dagger}(p)v^{s}(-p)=v^{r\dagger}(p)u^{s}(-p)=0
 \end{align}}$$
 
 对于Lorentz群生成元$S^{\mu \nu}$，空间部分有：
