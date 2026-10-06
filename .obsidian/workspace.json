@@ -3588,9 +3588,23 @@
               "icon": "lucide-file",
               "title": "Dirac旋量场"
             }
+          },
+          {
+            "id": "fd343e5dfdea5544",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Notes/Dirac旋量场.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Dirac旋量场"
+            }
           }
         ],
-        "currentTab": 255
+        "currentTab": 256
       }
     ],
     "direction": "vertical"
@@ -3655,8 +3669,7 @@
               "title": "Search"
             }
           }
-        ],
-        "currentTab": 3
+        ]
       }
     ],
     "direction": "horizontal",
@@ -3765,10 +3778,11 @@
       "obsidian-shellcommands:Shell commands: Custom variables": false
     }
   },
-  "active": "a5f2c201abca5d8b",
+  "active": "fd343e5dfdea5544",
   "lastOpenFiles": [
-    "Homework/Physics 513/Physics 513 homework 6.md",
+    "Notes/Dirac场的量子化.md",
     "Notes/Dirac旋量场.md",
+    "Homework/Physics 513/Physics 513 homework 6.md",
     "Notes/申请.md",
     "Homework/Physics 513/Physics 513 homework 5.md",
     "Homework/Physics 513/Physics 513 homework 3.md",
@@ -3792,7 +3806,6 @@
     "Homework/Math 654/Homework 4 problems.md",
     "Homework/Math 654/Homework 4.md",
     "Homework/Physics 402/Physics 402 homework 1.md",
-    "Notes/能均分定理，virial定理.md",
     "Pictures/24fd794455aa6fef3032eee3dd7b8e00.jpg",
     "Pictures/Pasted image 20260929131846.png",
     "Pictures/1ea34c77acda998ec15addc14c6432e8.jpg",

@@ -280,16 +280,71 @@ $$\psi(x)=u(p)e^{-ip\cdot x},\ u(p)= \begin{pmatrix}
 \sqrt{ p\cdot \sigma }\xi \\
 \sqrt{ p\cdot \bar{\sigma} }\xi
 \end{pmatrix}$$
-其中$\xi ^{\dagger}\xi=1$。我们一般取$\xi=\begin{pmatrix}1 \\ 0\end{pmatrix}$或者$\xi=\begin{pmatrix}0 \\ 1\end{pmatrix}$。
+其中$\xi ^{\dagger}\xi=1$。我们一般取$\xi^{1}=\begin{pmatrix}1 \\ 0\end{pmatrix}$或者$\xi^{2}=\begin{pmatrix}0 \\ 1\end{pmatrix}$。相应的方程解为：
+$$\psi^{s}(x)=u^{s}(p)e^{-ip\cdot x}= \begin{pmatrix}
+\sqrt{ p\cdot \sigma } \xi^{s} \\
+\sqrt{ p\cdot \bar{\sigma} } \xi^{s}
+\end{pmatrix}e^{-ip\cdot x}$$
+我们来计算正交关系。我们有：
+$$\begin{align}
+\bar{u}^{r}(p)u^{s}(p) & = u^{r\dagger}\gamma^{0}u^{s} \\
+ & = \begin{pmatrix}
+\sqrt{ p\cdot \sigma }\xi ^{r\dagger} & \sqrt{ p\cdot \bar{\sigma} }\xi ^{r\dagger}
+\end{pmatrix} \gamma^{0}\begin{pmatrix}
+\sqrt{ p\cdot \sigma }\xi^{s} \\
+\sqrt{ p\cdot \bar{\sigma} }\xi^{s}
+\end{pmatrix} \\
+ & = \begin{pmatrix}
+\sqrt{ p\cdot \sigma }\xi ^{r\dagger} & \sqrt{ p\cdot \bar{\sigma} }\xi ^{r\dagger}
+\end{pmatrix} \begin{pmatrix}
+\sqrt{ p\cdot \bar{\sigma} }\xi^{s} \\
+\sqrt{ p\cdot \sigma }\xi^{s}
+\end{pmatrix} \\
+ & = 2m \xi ^{r\dagger}\xi^{s} \\
+ & = 2m\delta^{rs}
+\end{align}$$
+其中利用了$(p\cdot \sigma)(p\cdot \bar{\sigma})=p^{2}=m^{2}$。同理可以证明：
+$$u^{r\dagger}(p)u^{s}(p)=2E_{\mathbf{p}}\delta^{rs}$$
+类似地，我们令取另外一个本征模式$\psi(x)=v(p) e^{ip\cdot x}$。同样可以解得：
+$$v^{s}(p)= \begin{pmatrix}
+\sqrt{ p\cdot \sigma } \xi^{s} \\
+-\sqrt{p\cdot \bar{\sigma}  } \xi^{s}
+\end{pmatrix}$$
+并且得到：
+$$\bar{v}^{r}(p)v^{s}(p)=-2m \delta^{rs},\ v^{r\dagger}(p)v^{s}(p)=2E_{\mathbf{p}}\delta^{rs}$$
+我们还可以证明$u,v$之间都是垂直的。我们总结：
+$$
+  \text{The solutions are: }  \boxed{\begin{align}&u^{s}(p)^{}e^{ip\cdot x},\ v^{s}(p)^{}e^{-ip\cdot x},\ u^{s}(p)^{}= \begin{pmatrix}
+\sqrt{ p\cdot \sigma }\xi^{s} \\
+\sqrt{ p\cdot \bar{\sigma} }\xi^{s}
+\end{pmatrix},\ v^{s}(p)= \begin{pmatrix}
+\sqrt{ p\cdot \sigma }\xi^{s} \\
+-\sqrt{ p\cdot \bar{\sigma} }\xi^{s}
+\end{pmatrix} \\
+ & \bar{u}^{r}(p)u^{s}(p)=2m\delta^{rs},\ u^{r\dagger}(p)u^{s}(p)=2E_{\mathbf{p}}\delta^{rs} \\
+  & \bar{v}^{r}(p)v^{s}(p)=-2m\delta^{rs},\ v^{r\dagger}(p)v^{s}(p)=2E_{\mathbf{p}}\delta^{rs} \\
+ & \bar{u}^{r}(p)v^{s}(p)=\bar{v}^{r}(p)u^{s}(p)=0
+\end{align}}$$
 
 对于Lorentz群生成元$S^{\mu \nu}$，空间部分有：
 $$\begin{align}
 S^{ij}= \frac{1}{2}\epsilon^{ijk} \begin{pmatrix}
 \sigma^{k} & 0 \\
-0 & \sigma_{k}
+0 & \sigma^{k}
 \end{pmatrix}
 \end{align}$$
-这里没有求和。两边乘以$\epsilon^{ijk}$并对$ij$求和得到Hodge对偶
+这里没有求和。两边乘以$\epsilon^{ijk}$得到：
+$$\begin{align}
+\epsilon^{ijk}S^{ij}= \frac{1}{2}\begin{pmatrix}
+\sigma^{k} & 0 \\
+0 & \sigma^{k}
+\end{pmatrix}
+\end{align}$$
+这里仍然没有求和。定义$S^{k}= \frac{1}{2}\begin{pmatrix}\sigma^{k} & 0 \\ 0 & \sigma^{k}\end{pmatrix}$。注意到$\epsilon^{ijk}S^{ij}=\frac{1}{2}\sum_{i,j}\epsilon^{ijk}S^{ij}$。那么对两边求和得到：
+$$\frac{1}{2}\epsilon^{kij}S^{ij}= S^{k}$$
+我们定义helicity算符：
+$$h= \mathbf{p}\cdot \mathbf{S}$$
+对应特征值为$\frac{1}{2}$的粒子称为right-handed。特征值为$- \frac{1}{2}$的粒子称为left-handed。
 
 
 
