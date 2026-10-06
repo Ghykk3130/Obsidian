@@ -282,6 +282,15 @@ $$\psi(x)=u(p)e^{-ip\cdot x},\ u(p)= \begin{pmatrix}
 \end{pmatrix}$$
 其中$\xi ^{\dagger}\xi=1$。我们一般取$\xi=\begin{pmatrix}1 \\ 0\end{pmatrix}$或者$\xi=\begin{pmatrix}0 \\ 1\end{pmatrix}$。
 
+对于Lorentz群生成元$S^{\mu \nu}$，空间部分有：
+$$\begin{align}
+S^{ij}= \frac{1}{2}\epsilon^{ijk} \begin{pmatrix}
+\sigma^{k} & 0 \\
+0 & \sigma_{k}
+\end{pmatrix}
+\end{align}$$
+这里没有求和。两边乘以$\epsilon^{ijk}$并对$ij$求和得到Hodge对偶
+
 
 
 
