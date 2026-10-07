@@ -3616,9 +3616,21 @@
               "icon": "lucide-file",
               "title": "Physics 513 homework 6"
             }
+          },
+          {
+            "id": "9faedde0cdd6cd92",
+            "type": "leaf",
+            "state": {
+              "type": "release-notes",
+              "state": {
+                "currentVersion": "1.14.4"
+              },
+              "icon": "lucide-book-up",
+              "title": "Release Notes 1.14.4"
+            }
           }
         ],
-        "currentTab": 257
+        "currentTab": 258
       }
     ],
     "direction": "vertical"
@@ -3792,7 +3804,7 @@
       "obsidian-shellcommands:Shell commands: Custom variables": false
     }
   },
-  "active": "d1dcdfbcef0bb964",
+  "active": "9faedde0cdd6cd92",
   "lastOpenFiles": [
     "Notes/经典场论.md",
     "Homework/Physics 513/Physics 513 homework 6.md",
