@@ -329,3 +329,6 @@ $$\begin{align}
 Therefore the oscillation is still periodic in $\frac{1}{B}$.
 ## (d)
 
+To confirm the band structure, we could use cyclotron resonance. If it is regular Landau levels, then the absorption frequency would be a constant frequency plus an integer times a frequency. If it is the Landau levels in our case, then (without considering any selection rules) the absorption frequency would be separated by a frequency proportional to the sum of square roots of two integers.
+
+
