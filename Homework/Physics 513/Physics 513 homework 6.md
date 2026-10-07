@@ -18,7 +18,7 @@ Q & = \int d^{3}x \psi ^{\dagger}(x)\psi(x) \\
  & = \sum_{r,s}\int \frac{d^{3}p}{(2\pi)^{3}} \frac{1}{2E_{\mathbf{p}}}(a^{s\dagger}_{\mathbf{p}}a^{r}_{\mathbf{p}^{}}u^{s\dagger}(p) u^{r}(p)+ b^{s}_{\mathbf{p}}b^{r\dagger}_{\mathbf{p}}v^{s\dagger}(p)v^{s}(p)) \\ & = \sum_{s}\int \frac{d^{3}p}{(2\pi)^{3}}(a^{s\dagger}_{\mathbf{p}}a^{s}_{\mathbf{p}}+ b^{s}_{\mathbf{p}}b^{s\dagger}_{\mathbf{p}}) \\
  & = \sum_{s}\int \frac{d^{3}p}{(2\pi)^{3}}(a^{s\dagger}_{\mathbf{p}}a^{s}_{\mathbf{p}}-b^{s}_{\mathbf{p}}b^{s\dagger}_{\mathbf{p}})
 \end{align}$$
-In the last line we ignored the vacuum energy, and adopt the normal ordering.
+In the last line we ignored the vacuum energy, and adopt the normal ordering. Note that for anti-commutators, normal ordering pull out a minus sign, since $\{ b^{s}_{\mathbf{p}},b^{s\dagger}_{\mathbf{q}} \}=\delta(\mathbf{p}-\mathbf{q})\implies b^{s}_{\mathbf{p}}b^{s\dagger}_{\mathbf{q}}=\delta(\mathbf{p}-\mathbf{q})-b^{s\dagger}_{\mathbf{q}}b^{s}_{\mathbf{p}}$.
 # Problem 3
 ## (a)
 
