@@ -52,6 +52,48 @@ $$\begin{align}
 1
 \end{pmatrix}
 \end{align}$$
+For $S_{x}$, we compute:
+$$\begin{align}
+  & \frac{1}{2}\begin{pmatrix}
+0 & 1 \\
+1 & 0
+\end{pmatrix}\xi_{+}= \frac{1}{2}\xi_{+} \\
+\implies  & \xi_{+}= \frac{1}{\sqrt{ 2 }}\begin{pmatrix}
+1 \\
+1
+\end{pmatrix}
+\end{align}$$
+$$\begin{align}
+ & \frac{1}{2}\begin{pmatrix}
+0 & 1 \\
+1 & 0
+\end{pmatrix} \xi_{-}= \frac{1}{2}\xi_{-} \\
+\implies & \xi_{-}=- \frac{1}{\sqrt{ 2 }}\begin{pmatrix}
+ 1 \\
+-1
+\end{pmatrix} 
+\end{align}$$
+For $S_{y}$, we compute:
+$$\begin{align}
+ & \frac{1}{2}\begin{pmatrix}
+0 & -i \\
+i & 0
+\end{pmatrix} \xi_{+}= \frac{1}{2}\xi_{+} \\
+\implies & \xi_{+}= \frac{1}{\sqrt{ 2 }}\begin{pmatrix}
+1 \\
+i
+\end{pmatrix}
+\end{align}$$
+$$\begin{align}
+ & \frac{1}{2}\begin{pmatrix}
+0 & -i \\
+i & 0
+\end{pmatrix} \xi_{-}= - \frac{1}{2}\xi_{-} \\
+\implies & \xi_{-}= \frac{1}{\sqrt{ 2 }}\begin{pmatrix}
+1 \\
+-i
+\end{pmatrix}
+\end{align}$$
 ## (c)
 
 We have:
