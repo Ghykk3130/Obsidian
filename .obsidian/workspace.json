@@ -3621,12 +3621,14 @@
             "id": "9faedde0cdd6cd92",
             "type": "leaf",
             "state": {
-              "type": "release-notes",
+              "type": "markdown",
               "state": {
-                "currentVersion": "1.14.4"
+                "file": "Homework/Physics 513/Physics 513 homework 6.md",
+                "mode": "source",
+                "source": false
               },
-              "icon": "lucide-book-up",
-              "title": "Release Notes 1.14.4"
+              "icon": "lucide-file",
+              "title": "Physics 513 homework 6"
             }
           }
         ],
@@ -3684,7 +3686,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "Noether",
+                "query": "表示",
                 "matchingCase": true,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -3806,11 +3808,11 @@
   },
   "active": "9faedde0cdd6cd92",
   "lastOpenFiles": [
-    "Notes/经典场论.md",
+    "Notes/Lorentz群的表示.md",
     "Homework/Physics 513/Physics 513 homework 6.md",
+    "Notes/经典场论.md",
     "Notes/Noether定理.md",
     "Homework/Physics 513/Physics 513 homework 5.md",
-    "Notes/Lorentz群的表示.md",
     "Notes/Dirac场的量子化.md",
     "Notes/Dirac旋量场.md",
     "Homework/Physics 520/Physics 520 homework 4 problem set.md",

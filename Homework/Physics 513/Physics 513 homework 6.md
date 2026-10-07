@@ -284,16 +284,28 @@ $$\begin{align}
  & = \begin{pmatrix}
 -\sinh \frac{\eta}{2} \sigma^{3}+ \cosh \frac{\eta}{2} & 0 \\
 0 & \sinh \frac{\eta}{2}\sigma^{3}+\cosh \frac{\eta}{2}
+\end{pmatrix} \\
+ & = \begin{pmatrix}
+e^{- \eta /2} &  &  &  \\
+ & e^{\eta /2} &  &  \\
+ &  &  e^{\eta /2}&  \\
+ &  &  & e^{-\eta /2}
 \end{pmatrix}
 \end{align}$$
 ## (b)
 
-No. Dirac spinors does not have any invariant components, since it's all the components have to be transformed by some linear combination of $\sinh \frac{\eta}{2}$ and $\cosh \frac{\eta}{2}$.
+No. Dirac spinors does not have any invariant components, since it's all the components have to be transformed by $e^{\pm \eta /2}$.
 ## (c)
 
-Here I just notices that the problem said the detailed derivation is not needed. Since I already derive part (a), I'll leave it there. For part (c), the derivation is very similar, and I can write down the results directly:
-
-For the vector representation, we have:
+Here I just notices that the problem said the detailed derivation is not needed. Since I already derived part (a), I'll leave it there. For part (c), the derivation is very similar. The matrix to look at is:
+$$\begin{align} \mathcal{J}^{ 12}=i\begin{pmatrix}
+0 &  &  &  \\
+ & 0 & -1 &  \\
+ & 1 & 0 &  \\
+ &  &  & 0
+\end{pmatrix}
+\end{align}$$
+Then by similar technique, I expand the exponential. For the vector representation, we have:
 $$\begin{align}
 \exp\left( - \frac{i}{2}\omega_{\mu \nu}\mathcal{J}^{\mu \nu} \right) & = \begin{pmatrix}
 1 &  &  &  \\
@@ -302,7 +314,15 @@ $$\begin{align}
  &  &  & 1
 \end{pmatrix}
 \end{align}$$
-For the spinor representation, we have:
+For the spinor representation, we take:
+$$\begin{align}
+S^{12} & = \frac{i}{4}[\gamma^{1},\gamma^{2}] \\
+ & = \frac{1}{2}\begin{pmatrix}
+\sigma^{3} & 0 \\
+0 & \sigma^{3}
+\end{pmatrix}
+\end{align}$$
+we have:
 $$\begin{align}
 \exp\left( - \frac{i}{2}\omega_{\mu \nu}S^{\mu \nu} \right) & = \begin{pmatrix}
 e^{- i \theta /2} &  &  &  \\
@@ -400,7 +420,7 @@ $$\begin{align}
 j_{5}^{\mu} & = \frac{\partial\mathcal{L}}{\partial(\partial_{\mu}\psi)}\Delta \psi \\
  & = -\bar{\psi} \gamma^{\mu}\gamma^{5}\psi
 \end{align}$$
-## (3)
+## (e)
 
 We have:
 $$\begin{align}
