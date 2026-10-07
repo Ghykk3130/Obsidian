@@ -135,6 +135,18 @@ $$\begin{align}
 
 We have:
 $$\begin{align}
+S_{z}S_{-}\ket{S,S_{z}}  & = ([S_{z},S_{-}]+S_{-}S_{z})\ket{S,S_{z}}  \\
+ & = (S_{z}-1)S_{-}\ket{S,S_{z}} 
+\end{align}$$
+Then $S_{-}\ket{S,S_{z}} \propto \ket{S,S_{z}-1}$. Similarly:
+$$\begin{align}
+S_{z}S_{+}\ket{S,S_{z}}  & = ([S_{z},S_{+}]+S_{+}S_{z})\ket{S,S_{z}}  \\
+ & = (S_{z}+1)S_{+}\ket{S,S_{z}} 
+\end{align}$$
+Then $S_{+}\ket{S,S_{z}}\propto \ket{S,S_{z}+1}$.
+
+We have:
+$$\begin{align}
 S^{2} & = S_{x}^{2}+S_{y}^{2}+S_{z}^{2} \\
  & = S_{z}^{2}+S_{+}S_{-}-i[S_{y},S_{x}] \\
  & = S_{z}^{2}-S_{z}+S_{+}S_{-}
