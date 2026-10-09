@@ -289,6 +289,8 @@ Resolving power的定义为$\frac{\lambda}{\Delta \lambda}= \frac{500}{502-500}=
 不要忘记电偶极跃迁选择规则还有parity selection rule，因为$\bra{l_{f},m_{l_{f}}}r^{1}_{q}\ket{l_{i},m_{l_{i}}}\propto \bra{1, l_{i},q,m_{l_{i}}}l_{f},m_{l_{f}}\rangle$。它不为零的其中一个条件为满足三角不等式$|l_{i}-1|\leq l_{f}\leq l_{i}+1$，得到$l_{f}=0,1,2$。但是由于$\ket{l_{f}=1,m_{l_{f}}}, \ket{l_{i}=1,m_{l_{i}}}$都是奇宇称，$r$也是奇宇称，会得到零。回忆起宇称为$(-1)^{l}$。选B。
 116. ![[Pasted image 20260906195443.png|centering|600]]
 考虑原子在移动。那么由Doppler公式可得释放的光子的频率为$f^{'}=f \sqrt{  \frac{1-v}{1+v} }=f(1-v)^{1/2}(1+ v)^{-1/2}\approx f\left( 1- \frac{v}{2} \right)\left( 1- \frac{v}{2} \right)\approx f(1-v)$。这来源于Doppler波长偏移公式$\lambda^{'}=\lambda \sqrt{ \frac{1+v}{1-v} }$。于是lab frame中观测到的频率偏移为$\frac{|\Delta f|}{f}=v$。由于$E= hf\implies \frac{\Delta E}{E}= \frac{\Delta f}{f}=v = \frac{v}{c}$。这里看到偏移的$v$大概是$0.1\text{ mm/s}$。所以$\Delta E= \frac{10^{-4}}{3 \times 10^{8}} \times 14.4 \times 10^{3}\times 1.6 \times 10^{-19}=\frac{14.4 \times 1.6}{3}\times 10^{-28}$。于是$\Delta t\sim \frac{\hbar}{\Delta E}\approx 100\text{ ns}$。选C。
+117. ![[Pasted image 20261008224121.png|centering|600]]
+Klein悖论指粒子穿过极高势垒，透射不减少反而增强。因为在界面产生正反粒子。
 
 
 

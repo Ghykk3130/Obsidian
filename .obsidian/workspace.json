@@ -3623,12 +3623,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Notes/申请.md",
+                "file": "Notes/GRE物理.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "申请"
+              "title": "GRE物理"
             }
           }
         ],
@@ -3686,7 +3686,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "申请",
+                "query": "GRE",
                 "matchingCase": true,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -3809,6 +3809,8 @@
   },
   "active": "9faedde0cdd6cd92",
   "lastOpenFiles": [
+    "Pictures/Pasted image 20261008224121.png",
+    "Notes/申请.md",
     "Homework/Physics 513/Physics 513 homework 6.md",
     "Notes/Lorentz群的表示.md",
     "Notes/经典场论.md",
@@ -3821,7 +3823,6 @@
     "Homework/Physics 511/Physics 511 Homework 10.md",
     "Homework/Physics 520/Physics 520 homework 4.md",
     "Notes/Untitled 15.md",
-    "Notes/申请.md",
     "Homework/Physics 520/Physics 520 homework 2.md",
     "Homework/Physics 520/Physics 520 homework 1 problem set.md",
     "Homework/Physics 520/Physics 520 homework 3 problem set.md",
@@ -3834,7 +3835,6 @@
     "Homework/Physics 513/Physics 513 homework 2.md",
     "Homework/Physics 510/Physics 510 Homework 2.md",
     "Homework/Physics 510/Physics 510 Homework 8.md",
-    "Notes/李代数.md",
     "Pictures/24fd794455aa6fef3032eee3dd7b8e00.jpg",
     "Pictures/Pasted image 20260929131846.png",
     "Pictures/1ea34c77acda998ec15addc14c6432e8.jpg",
