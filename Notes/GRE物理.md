@@ -23,14 +23,14 @@ $$\begin{align}
 11. ![[Pasted image 20260807160248.png|centering|300]]
 想要判断电场是否在xy面内，显然可以通过对称性。对系统作关于xy面的镜面对称，系统不变。所以电场必在xy面内。
 
-12. dielectric constant指$\epsilon_{r}=\frac{\epsilon}{\epsilon_{0}}$。理想导体，$\epsilon_{r}=\infty$。这是因为$E= \frac{D}{\epsilon}$。如果$\epsilon_{r}=\infty$，那么导体内部$E=0$。
+12. dielectric constant指$\epsilon_{r}=\frac{\epsilon}{\epsilon_{0}}$。理想导体，$\epsilon_{r}=\infty$。这是因为理想导体$E=0$。这就要求$D=P$。那么$E=\epsilon_{r}\epsilon_{0}D$就要求$\epsilon_{r}=\infty$。
 13. ![[Pasted image 20260807170242.png|centering|400]]
 只需要根据u是常数就可以判断了。u具有速度量纲，又是常数，所以肯定是E。
 
 14. 令交流电源内部impedance为$Z$。当外电路impedance为$Z^{*}$时具有最大功率。
 15. 尺缩效应指动尺变短，因子为$\sqrt{ 1- \left( \frac{v}{c} \right)^{2} }$。
 16. ![[Pasted image 20260807193051.png|centering|400]]
-你可能算出来是1/4。注意圆偏振光变成线偏振光强度会减半。
+你可能算出来是1/4。注意圆偏振光变成线偏振光强度会减半。注意是强度减半而不是振幅减半。选$B$。
 
 16. ![[Pasted image 20260807195305.png|centering|400]]
 应该变宽。增加密度，其实电子的跃迁就越迅速地发生。会想起FGR中，谱线最开始应该很宽，然后之后缩成dirac delta的。这其实也是$\Delta E \Delta t\geq \hbar$的体现。
