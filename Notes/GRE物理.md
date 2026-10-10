@@ -68,7 +68,7 @@ Bragg diffraction条件是有2的。$2d\cos \theta=n\lambda$。选D。
 30. ![[Pasted image 20260808170829.png|centering|300]]
 回忆起单缝衍射暗纹推导：$\frac{w}{2}\sin \theta= n\frac{\lambda}{2}$。这个不能用来推导亮纹。因为类似地如果考虑亮纹$\frac{w}{2}\sin \theta=n\lambda$，那么亮纹中间位置的光又会和它们相消形成暗纹。
 
-所以此中，每条缝的暗纹为$w\sin \theta=n\lambda$。同时，也可将这个看作双缝干涉。那么干涉的亮纹条件为$d\sin \theta=m\lambda$。如果过两个单缝衍射的亮纹恰好被双缝干涉给消掉，那么我们就观察不到纹样了。这等价于两个单缝衍射的暗纹处于双缝干涉的亮纹。于是将上面两个方程相除得到$\frac{d}{w}= \frac{m}{n}$ for some $m,n\in \mathbb{Z}$。结合$d>w$，就可以选D。
+所以此中，每条缝的暗纹为$w\sin \theta=n\lambda$。同时，也可将这个看作双缝干涉。那么干涉的亮纹条件为$d\sin \theta=m\lambda$。如果过两个单缝衍射的亮纹恰好被双缝干涉给消掉，那么我们就观察不到纹样了。这等价于两个单缝衍射的暗纹处于双缝干涉的亮纹。于是将上面两个方程相除得到$\frac{d}{w}= \frac{m}{n}$ for some $m,n\in \mathbb{Z}$。结合$d>w$，就可以选D。其实直接impose $w<d$也可以选出D。
 
 31. ![[Pasted image 20260809152116.png|centering|500]]
 望远镜由两个凸透镜组成。非常遥远的天体的光，近似为平行光，透过物镜，成像在焦点。（其实是焦点稍微靠右一点。）如果是完全成像在交点，那么物体完全缩成一个点。但现在稍微骗了一点，如何找到这个很小的像的高度？可以通过过物镜中心不偏折的光线，找它与焦点的垂线的交点。目镜的焦点和物镜重合。实像的光再透过目镜成平行光。所以眼睛看到的是无穷远处的虚像。之所以要成像在无穷远处，是因为眼睛不需要调焦，避免疲劳。
@@ -291,6 +291,11 @@ Resolving power的定义为$\frac{\lambda}{\Delta \lambda}= \frac{500}{502-500}=
 考虑原子在移动。那么由Doppler公式可得释放的光子的频率为$f^{'}=f \sqrt{  \frac{1-v}{1+v} }=f(1-v)^{1/2}(1+ v)^{-1/2}\approx f\left( 1- \frac{v}{2} \right)\left( 1- \frac{v}{2} \right)\approx f(1-v)$。这来源于Doppler波长偏移公式$\lambda^{'}=\lambda \sqrt{ \frac{1+v}{1-v} }$。于是lab frame中观测到的频率偏移为$\frac{|\Delta f|}{f}=v$。由于$E= hf\implies \frac{\Delta E}{E}= \frac{\Delta f}{f}=v = \frac{v}{c}$。这里看到偏移的$v$大概是$0.1\text{ mm/s}$。所以$\Delta E= \frac{10^{-4}}{3 \times 10^{8}} \times 14.4 \times 10^{3}\times 1.6 \times 10^{-19}=\frac{14.4 \times 1.6}{3}\times 10^{-28}$。于是$\Delta t\sim \frac{\hbar}{\Delta E}\approx 100\text{ ns}$。选C。
 117. ![[Pasted image 20261008224121.png|centering|600]]
 Klein悖论指粒子穿过极高势垒，透射不减少反而增强。因为在界面产生正反粒子。
+
+118. ![[Pasted image 20261009230555.png|centering|500]]
+选E。
+
+
 
 
 
