@@ -3623,12 +3623,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Notes/申请.md",
+                "file": "Notes/GRE物理.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "申请"
+              "title": "GRE物理"
             }
           }
         ],
@@ -3697,8 +3697,7 @@
               "title": "Search"
             }
           }
-        ],
-        "currentTab": 3
+        ]
       }
     ],
     "direction": "horizontal",
@@ -3808,9 +3807,9 @@
   },
   "active": "9faedde0cdd6cd92",
   "lastOpenFiles": [
+    "Notes/申请.md",
     "Notes/GRE物理.md",
     "Pictures/Pasted image 20261008224121.png",
-    "Notes/申请.md",
     "Homework/Physics 513/Physics 513 homework 6.md",
     "Notes/Lorentz群的表示.md",
     "Notes/经典场论.md",
