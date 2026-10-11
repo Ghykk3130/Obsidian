@@ -67,10 +67,11 @@ $$\begin{align}
 $$\begin{align}
 D(x-y)= \int \frac{d^{4}p}{(2\pi)^{4} }  \tilde{D} e^{-ip\cdot(x-y)},\ -i\delta(x-y)= -i\int \frac{d^{4}p}{(2\pi)^{4} } e^{-ip\cdot(x-y)}
 \end{align}$$
-那么代入方程，根据基的独立性脱去积分后得到：
+注意这里我们在整个p空间积分，$\mathbf{p},m$不必满足质壳条件。将变换代入方程，根据基的独立性脱去积分后得到：
 $$\begin{align}
  & (-p^{2}+m^{2}) \tilde{D}(p)= -i \\
 \end{align}$$
+
 >[!Quote]
 >这里，其实我们脱去积分过于草率了。我们思考脱去积分的时候到底做了什么。我们有：
 >$$\begin{align}
@@ -82,6 +83,10 @@ $$\begin{align}
 >只是我们把这个方程形式上写成：
 >$$(-p^{2}+m^{2})\tilde{D}(p)=-i$$
 
+$$\begin{align}
+\tilde{D}(p) & = \frac{i}{m^{2}-p^{2}} \\
+ & = \frac{i}{E_{\mathbf{p}}^{2}-(p^{0})^{2}}
+\end{align}$$
 我们发现，$\tilde{D}$可以是这个广义函数：
 $$\tilde{D}(p)= \frac{i}{2E_{\mathbf{p}}}\left[  \frac{1}{p^{0}-E_{\mathbf{p}}+i\epsilon} - \frac{1}{p^{0}+E_{\mathbf{p}}+i\epsilon}\right]$$
 ## Ex:
