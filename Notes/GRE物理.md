@@ -296,6 +296,9 @@ Klein悖论指粒子穿过极高势垒，透射不减少反而增强。因为在
 选E。
 119. ![[Pasted image 20261010194858.png|centering|500]]
 布鲁斯特角$\tan \theta= \frac{n_{2}}{n_{1}}$。选A。
+120. ![[Pasted image 20261010201355.png|centering|700]]
+选D。
+
 
 
 
