@@ -298,6 +298,10 @@ Klein悖论指粒子穿过极高势垒，透射不减少反而增强。因为在
 布鲁斯特角$\tan \theta= \frac{n_{2}}{n_{1}}$。选A。
 120. ![[Pasted image 20261010201355.png|centering|700]]
 选D。
+121. ![[Pasted image 20261010203801.png|centering|600]]
+认真代入计算。$\frac{1}{1+e^{\beta(E-\mu)}}= \frac{1}{1+1}= \frac{1}{2}$。
+122. ![[Pasted image 20261010204543.png|centering|600]]
+escape velocti指第二宇宙速度，脱离太阳系的速度。通过$\frac{1}{2}mv^{2}= G \frac{mM}{r^{}}$计算。  7.9 km/s仅仅是脱离地表，近地卫星。
 
 
 

@@ -3702,8 +3702,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200.5,
-    "collapsed": true
+    "width": 200.5
   },
   "right": {
     "id": "9003d078f8dbc4ed",
@@ -3809,15 +3808,17 @@
   },
   "active": "9faedde0cdd6cd92",
   "lastOpenFiles": [
+    "Pictures/Pasted image 20261010204543.png",
+    "Homework/Physics 513/Physics 513 homework 6.md",
+    "Notes/GRE物理.md",
+    "Pictures/Pasted image 20261010203801.png",
     "Pictures/Pasted image 20261010201355.png",
     "Pictures/Pasted image 20261010194858.png",
     "Notes/标量场的正则量子化.md",
     "Notes/Dirac场的量子化.md",
-    "Notes/GRE物理.md",
     "Pictures/Pasted image 20261009230555.png",
     "Notes/申请.md",
     "Pictures/Pasted image 20261008224121.png",
-    "Homework/Physics 513/Physics 513 homework 6.md",
     "Notes/Lorentz群的表示.md",
     "Notes/经典场论.md",
     "Notes/Noether定理.md",
@@ -3843,8 +3844,6 @@
     "Pictures/1ea34c77acda998ec15addc14c6432e8.jpg",
     "Pictures/ad8612a3d1862b585721dac97bacd1f4.jpg",
     "Pictures/d32f010de2ae7f8a3e3506d6c998483b.jpg",
-    "Pictures/8e2c3b8f1b998ab8049d9fe7ae5da82e.jpg",
-    "Pictures/Pasted image 20260926140801.png",
     "trace-cookies.txt",
     "max-page-cookies.txt",
     "max-cookies.txt",

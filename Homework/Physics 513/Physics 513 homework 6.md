@@ -16,9 +16,9 @@ Q & = \int d^{3}x \psi ^{\dagger}(x)\psi(x) \\
  & = \int \frac{d^{3}xd^{3}pd^{3}p^{'}}{(2\pi)^{6}} \frac{1}{2\sqrt{ E_{\mathbf{p}}E_{\mathbf{p}^{'}} }} \sum_{s,r}(a^{s\dagger}_{\mathbf{p}}u^{s\dagger}(p)e^{ip\cdot x}+b^{s}_{\mathbf{p}}v^{s\dagger}(p)e^{-ip\cdot x})(a^{r}_{\mathbf{p}^{'}}u^{r}(p^{'})e^{-ip^{'}\cdot x}+b^{r\dagger}_{\mathbf{p}^{'}}v^{r}(p^{'})e^{ip^{'}\cdot x}) \\
  & = \sum_{r,s}\int \frac{d^{3}p}{(2\pi)^{3}} \frac{1}{2E_{\mathbf{p}}}(a^{s\dagger}_{\mathbf{p}}a^{r}_{\mathbf{p}^{'}}u^{s\dagger}(p) u^{r}(p)+a^{s \dagger}_{\mathbf{p}}b^{r \dagger}_{-\mathbf{p}}u^{s\dagger}(p) v^{r}(-p)e^{2ip^{0}t}+ b^{s}_{\mathbf{p}}a^{r}_{-\mathbf{p}}v^{s\dagger}(p)u^{r}(-p)e^{-2ip^{0}t}+b^{s}_{\mathbf{p}}b^{r\dagger}_{\mathbf{p}}v^{s\dagger}(p)v^{s}(p)) \\
  & = \sum_{r,s}\int \frac{d^{3}p}{(2\pi)^{3}} \frac{1}{2E_{\mathbf{p}}}(a^{s\dagger}_{\mathbf{p}}a^{r}_{\mathbf{p}^{}}u^{s\dagger}(p) u^{r}(p)+ b^{s}_{\mathbf{p}}b^{r\dagger}_{\mathbf{p}}v^{s\dagger}(p)v^{s}(p)) \\ & = \sum_{s}\int \frac{d^{3}p}{(2\pi)^{3}}(a^{s\dagger}_{\mathbf{p}}a^{s}_{\mathbf{p}}+ b^{s}_{\mathbf{p}}b^{s\dagger}_{\mathbf{p}}) \\
- & = \sum_{s}\int \frac{d^{3}p}{(2\pi)^{3}}(a^{s\dagger}_{\mathbf{p}}a^{s}_{\mathbf{p}}-b^{s}_{\mathbf{p}}b^{s\dagger}_{\mathbf{p}})
+ & = \sum_{s}\int \frac{d^{3}p}{(2\pi)^{3}}(a^{s\dagger}_{\mathbf{p}}a^{s}_{\mathbf{p}}-b^{s{\dagger}}_{\mathbf{p}}b^{s}_{\mathbf{p}})
 \end{align}$$
-In the last line we ignored the vacuum energy, and adopt the normal ordering. Note that for anti-commutators, normal ordering pull out a minus sign, since $\{ b^{s}_{\mathbf{p}},b^{s\dagger}_{\mathbf{q}} \}=\delta(\mathbf{p}-\mathbf{q})\implies b^{s}_{\mathbf{p}}b^{s\dagger}_{\mathbf{q}}=\delta(\mathbf{p}-\mathbf{q})-b^{s\dagger}_{\mathbf{q}}b^{s}_{\mathbf{p}}$.
+In the last line we ignored the vacuum energy, and adopt the normal ordering. Note that for anti-commutators, normal ordering pull out a minus sign, since $\{ b^{s}_{\mathbf{p}},b^{s\dagger}_{\mathbf{q}} \}=\delta(\mathbf{p}-\mathbf{q})\implies b^{s}_{\mathbf{p}}b^{s\dagger}_{\mathbf{q}}=(2\pi)^{3}\delta(\mathbf{p}-\mathbf{q})-b^{s\dagger}_{\mathbf{q}}b^{s}_{\mathbf{p}}$.
 # Problem 3
 ## (a)
 
@@ -164,7 +164,7 @@ Then $\psi(x)$ is indeed a solution.
 We compute:
 $$\begin{align}
 \bar{u}_{D}(p)u_{D}(p) & = \frac{1}{E_{\mathbf{p}}+m} \begin{pmatrix}
-(E_{\mathbf{p}}+m)\xi ^{\dagger} & (\boldsymbol{\sigma}\cdot \mathbf{p})^{\dagger}\xi ^{\dagger}
+(E_{\mathbf{p}}+m)\xi ^{\dagger} & \xi ^{\dagger} (\boldsymbol{\sigma}\cdot \mathbf{p})^{\dagger}
 \end{pmatrix} \begin{pmatrix}
 1 & 0 \\
 0 & -1
@@ -173,13 +173,13 @@ $$\begin{align}
 \boldsymbol{\sigma}\cdot \mathbf{p} \xi
 \end{pmatrix} \\
  & = \frac{1}{E_{\mathbf{p}}+m} \begin{pmatrix}
-(E_{\mathbf{p}}+m)\xi ^{\dagger} & (\boldsymbol{\sigma}\cdot \mathbf{p})\xi ^{\dagger}
+(E_{\mathbf{p}}+m)\xi ^{\dagger} & \xi ^{\dagger} (\boldsymbol{\sigma}\cdot \mathbf{p})
 \end{pmatrix}\begin{pmatrix}
 (E_{\mathbf{p}}+m)\xi \\
 -\boldsymbol{\sigma}\cdot \mathbf{p} \xi
 \end{pmatrix} \\
- & = \frac{1}{E_{\mathbf{P}}+m}((E_{\mathbf{p}}+m)^{2}-(\boldsymbol{\sigma}\cdot \mathbf{p})^{2}) \\
- & = \frac{1}{E_{\mathbf{p}}+m}(E_{\mathbf{p}}^{2}+2mE_{\mathbf{p}}+m^{2}-|\mathbf{p}|^{2}) \\
+ & = \frac{1}{E_{\mathbf{P}}+m}((E_{\mathbf{p}}+m)^{2}-\xi ^{\dagger}(\boldsymbol{\sigma}\cdot \mathbf{p})^{2}\xi) \\
+ & = \frac{1}{E_{\mathbf{p}}+m}(E_{\mathbf{p}}^{2}+2mE_{\mathbf{p}}+(m^{2}-|\mathbf{p}|^{2})\xi ^{\dagger} \xi) \\
  & = \frac{1}{E_{\mathbf{p}}+m}(2mE_{\mathbf{p}}+2m^{2}) \\
  & = 2m
 \end{align}$$
