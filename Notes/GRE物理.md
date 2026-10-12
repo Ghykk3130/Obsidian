@@ -194,7 +194,7 @@ $$\begin{align}
 71. ![[Pasted image 20260813145842.png|centering|300]]不要忘记，光从空气进入油反射光相位要变180。这里有两次相位变化。一次是从空气进入油，一次是从油进入玻璃。巨坑。选B。
 72. ![[Pasted image 20260813153117.png|centering|300]]
 这里速度很大，运用相对论Dopler公式。红移：$\frac{\lambda_{\text{shifted}}}{\lambda}= \sqrt{  \frac{1+\beta}{1-\beta} },\ \beta= \frac{v}{c}$。蓝移：$\frac{\lambda_{\text{shifted}}}{\lambda}=\sqrt{  \frac{1-\beta}{1+\beta} }$。选D。
-73. ![[Pasted image 20260813153456.png|centering|200]]
+73. ![[Pasted image 20260813153456.png|centering|400]]
 读题问题。downward acceleration指未叠加前的向下加速度的和。不是指总加速度。为$2g$。
 74. 考虑一个参考系$\mathcal{O}^{'}$在lab frame中以$u$运动。$\mathcal{O}^{'}$中物体速度为$v^{'}$。那么lab frame中物体速度为$v= \frac{1}{1+ \frac{uv^{'}}{c^{2}}}(u+v^{'})$。狭义相对论速度变换。
 75. 回忆Bloch球。将实空间任意轴$\hat{\mathbf{n}}$映射到Bloch球上的$(\theta,\phi)$位置。然后$+ \frac{1}{2}$对应的量子态为$\left( \cos \frac{\theta}{2}, e^{i\phi} \sin \frac{\theta}{2} \right)$。$- \frac{1}{2}$对应的是$(\theta,\phi)$的对径点$(\pi-\theta,\pi+\phi)$。对应的量子态是$\left( \sin \frac{\theta}{2},-e^{i\phi}\cos \frac{\theta}{2} \right)$。
