@@ -63,7 +63,10 @@ We first maximize $S$. This is because we want spins to be as "parallel" as poss
 
 Then we maximize $L$. This because we want the electrons to "rotate" in the same direction, so that the Coulomb interaction between them is minimized.
 
-Then if the shell is more than half-filled, we choose $J=L+S$. 
+Then if the shell is less than half-filled, we choose $J=|L-S|$. This is because the LS coupling favors anti-parallel alignments. If the shell is more than half-filled, we choose $J=L+S$. 
+ (i) The electron configuration is $[\text{Ne}]3s^{2}3p^{5}$. Then $S=\frac{5}{2}$, $L=0$, $J= \frac{5}{2}$.
+ (ii) The electron configuration is $[\text{Ar}]4s^{2}4p^{3}$. Then $S=\frac{3}{2}$, $L=3$, $J=\frac{3}{2}$.
+ (iii) The electron configuration is 
 
 
 
