@@ -3,20 +3,34 @@
 
 We have:
 $$\begin{align}
-(\boldsymbol{\sigma}\cdot(\mathbf{p}+e\mathbf{A}))^{2} & = (\boldsymbol{\sigma}\cdot \mathbf{p})^{2}+e^{2}(\boldsymbol{\sigma}\cdot \mathbf{A})^{2}+ (\boldsymbol{\sigma}\cdot \mathbf{p})(e\boldsymbol{\sigma}\cdot \mathbf{A})+(e\boldsymbol{\sigma}\cdot \mathbf{A})(\boldsymbol{\sigma}\cdot \mathbf{p})
+(\boldsymbol{\sigma}\cdot(\mathbf{p}+e\mathbf{A}))^{2} & = (\mathbf{p}+e\mathbf{A} )^{2}+i\boldsymbol{\sigma}\cdot[(\mathbf{p}+e\mathbf{A})\times(\mathbf{p}+e\mathbf{A})]
 \end{align}$$
-We then compute:
+We compute:
 $$\begin{align}
-(\boldsymbol{\sigma} \cdot \mathbf{p})(e\boldsymbol{\sigma} \cdot \mathbf{A}) & = e \mathbf{p}\cdot \mathbf{A}+ie\boldsymbol{\sigma}\cdot(\mathbf{p}\times \mathbf{A}) \\
- & = e(-i\hbar \nabla \cdot \mathbf{A}-i\hbar \mathbf{A}\cdot \nabla)+ ie(-i\hbar)\boldsymbol{\sigma}\cdot(\nabla \times \mathbf{A}) \\
- & = e(-i\hbar \nabla \cdot \mathbf{A}-i\hbar \mathbf{A}\cdot \nabla)+e\hbar \boldsymbol{\sigma}\cdot(\mathbf{B}-\mathbf{A}\times \nabla)
+(\mathbf{p}+e\mathbf{A})\times(\mathbf{p}+e\mathbf{A}) & = e\mathbf{p}\times \mathbf{A}+e\mathbf{A}\times \mathbf{p} \\ & = e(-i\hbar)\nabla \times \mathbf{A}+e\mathbf{A}\times \mathbf{p} 
+
 \end{align}$$
-Similarly:
+We have:
 $$\begin{align}
-(e\boldsymbol{\sigma}\cdot \mathbf{A})(\boldsymbol{\sigma}\cdot \mathbf{p}) & = e\mathbf{A}\cdot \mathbf{p}+i(-i\hbar)\boldsymbol{\sigma}\cdot(\mathbf{A} \times \mathbf{p}) \\
- & = e(-i\hbar)\mathbf{A}\cdot \nabla+e\hbar \boldsymbol{\sigma}\cdot(\mathbf{A}\times \nabla)
+(\nabla \times \mathbf{A})_{i} & = \epsilon_{ijk}\partial_{j}A_{k} \\
+ & = \epsilon_{ijk}(\partial_{j}A_{k})+\epsilon_{ijk}A_{k}\partial_{j} \\
+ & = B_{i}-(\mathbf{A}\times \nabla)_{i}
 \end{align}$$
 Then:
 $$\begin{align}
-e^{2}(\boldsymbol{\sigma}\cdot \mathbf{A})^{2}+ (\boldsymbol{\sigma}\cdot \mathbf{p})(e\boldsymbol{\sigma}\cdot \mathbf{A})+(e\boldsymbol{\sigma}\cdot \mathbf{A})(\boldsymbol{\sigma}\cdot \mathbf{p}) & = e^{2}A^{2}+e\hbar \mathbf{B}\cdot \boldsymbol{\sigma}-i\hbar \nabla \cdot \mathbf{A}-2i\hbar \mathbf{A}\cdot \nabla
+(\mathbf{p}+e\mathbf{A})\times(\mathbf{p}+e\mathbf{A})  & = e(-i\hbar)(\mathbf{B}-A\times \nabla)+e\mathbf{A}\times \mathbf{p} \\  & = e(-i\hbar)\mathbf{B}
 \end{align}$$
+Then:
+$$\begin{align}
+(\boldsymbol{\sigma}\cdot(\mathbf{p}+e\mathbf{A}))^{2} & = (\mathbf{p}+e\mathbf{A})^{2}+e\hbar \mathbf{B}\cdot \boldsymbol{\sigma} \\
+ & = (\mathbf{p}+e\mathbf{A})^{2}+ 2e\hbar \mathbf{B}\cdot \mathbf{S}
+\end{align}$$
+Then:
+$$\begin{align}
+\frac{(\boldsymbol{\sigma}\cdot(\mathbf{p}+e\mathbf{A}))^{2}}{2m_{e}} & = \frac{(\mathbf{p}+e\mathbf{A})^{2}}{2m_{e}}+ \frac{e\hbar}{m_{e}}\mathbf{B}\cdot \mathbf{S} \\
+ & = \frac{(\mathbf{p}^{}+e\mathbf{A})^{2}}{2m_{e}}+ 2 \mu_{B}\mathbf{B}\cdot \mathbf{S} \\
+ & = \frac{(\mathbf{p}+e\mathbf{A} )^{2}}{2m_{e} }+g\mu_{B}\mathbf{B}\cdot \mathbf{S},\ g=2
+\end{align}$$
+## (b)
+
+
