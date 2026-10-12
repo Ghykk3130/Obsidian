@@ -64,10 +64,54 @@ We first maximize $S$. This is because we want spins to be as "parallel" as poss
 Then we maximize $L$. This because we want the electrons to "rotate" in the same direction, so that the Coulomb interaction between them is minimized.
 
 Then if the shell is less than half-filled, we choose $J=|L-S|$. This is because the LS coupling favors anti-parallel alignments. If the shell is more than half-filled, we choose $J=L+S$. 
- (i) The electron configuration is $[\text{Ne}]3s^{2}3p^{5}$. Then $S=\frac{3}{2}$, $L=0$, $J= \frac{3}{2}$.
- (ii) The electron configuration is $[\text{Ar}]4s^{2}4p^{3}$. Then $S=\frac{3}{2}$, $L=3$, $J=\frac{3}{2}$.
+ (i) The electron configuration is $[\text{Ne}]3s^{2}3p^{4}$. Then $S=1$, $L=1$, $J= 2$.
+ (ii) The electron configuration is $[\text{Ar}]4s^{2}3d^{3}$. Then $S=\frac{3}{2}$, $L=3$, $J=\frac{3}{2}$.
  (iii) The electron configuration is $[\text{Kr}]5s^{2}4d^{2}$. Then $S=1$, $L=3$, $J=2$.
- (iv) The electron configuration is 
+ (iv) The electron configuration is $[\text{Xe}]6s^{2}4f^{10}$。Then $S=2$, $L=6$, $J= 8$.
+## (c)
+
+$f$ holds 11 electrons. So $S=\frac{3}{2}$, $L=5$, $J= \frac{13}{2}$. Then Lande g factor is:
+$$g_{J}= \frac{3}{2}+ \frac{S(S+1)-L(L+1)}{2J(J+1)}= \frac{16}{13}$$
+Then effective moment is therefore:
+$$\mu_{\text{eff}}= g_{J}\mu_{B}\sqrt{ J(J+1) }= \frac{16}{13}\cdot \sqrt{ \frac{195}{4} }\mu_{B}= \frac{8}{13}\sqrt{ 195 }\mu_{B}$$
+## (d)
+
+Similarly, $f$ holds 7 electrons. So $S= \frac{7}{2}$, $L=0$, $J= \frac{7}{2}$. Then:
+$$g_{J}= \frac{3}{2}+ \frac{S(S+1)-L(L+1)}{2J(J+1)}= 2$$
+Then:
+$$\mu_{\text{eff}}= g_{J}\mu_{B}\sqrt{ J(J+1) }= \sqrt{ 63 }\mu_{B}$$
+## (e)
+
+(i) 
+
+The electron configuration of Mn is $[\text{Ar}]4s^{2} 3d^{5}$. Then $S=\frac{5}{2}$, $L=0$, $J= \frac{5}{2}$. 
+
+We calculate:
+$$g_{J}= \frac{3}{2}+ \frac{S(S+1)-L(L+1)}{2J(J+1)}= 2$$
+Then:
+$$\mu_{\text{eff}}= g_{J}\mu_{B}\sqrt{ J(J+1) }= \sqrt{ 35 }\mu_{B}$$
+Then the susceptibility is given by:
+$$\chi= \frac{n\mu_{0}}{3k_{B}T} 35 \mu_{B}^{2}\approx  1.7 \times 10^{-7}\ $$
+
+(ii)
+
+The number of core electrons is $18$. We have:
+$$\begin{align}
+\chi & = \frac{\partial M}{\partial H} \\
+ & = -\frac{\partial}{\partial H} \frac{\partial \Delta E}{\partial B} \\
+ & = - \frac{Ze^{2}\langle r^{2}\rangle}{6\mu_{0}m_{e}}
+\end{align}$$
+So:
+$$\begin{align}
+\chi & = 18  \frac{e^{2}\langle r^{2}\rangle}{6\mu_{0}m_{e}} \cdot \langle r^{2}\rangle \\
+ & \approx 6.7 \times 10^{-22}
+\end{align}$$
+
+$$$$
+
+
+
+ 
 
 
 
