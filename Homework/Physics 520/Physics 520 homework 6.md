@@ -107,7 +107,11 @@ $$\begin{align}
  & \approx 6.7 \times 10^{-22}
 \end{align}$$
 
-$$$$
+# Problem 3
+
+The first point that I didn't know is that when the temperature is close to $\theta_{\text{CW}}$, then the Curie-Weiss law breaks down. This is close to the phase transition critical point, and the fluctuation is strong. Because the mean-field approximation assumes small fluctuation, then it breaks down.
+
+
 
 
 

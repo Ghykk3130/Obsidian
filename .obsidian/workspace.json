@@ -3651,12 +3651,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Notes/申请.md",
+                "file": "Homework/Physics 520/Physics 520 homework 6.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "申请"
+              "title": "Physics 520 homework 6"
             }
           }
         ],
@@ -3714,7 +3714,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "申请",
+                "query": "",
                 "matchingCase": true,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -3725,8 +3725,7 @@
               "title": "Search"
             }
           }
-        ],
-        "currentTab": 3
+        ]
       }
     ],
     "direction": "horizontal",
@@ -3837,9 +3836,10 @@
   },
   "active": "4cea16ebaf849ba8",
   "lastOpenFiles": [
+    "Homework/Physics 520/Physics 520 homework 5.md",
+    "Notes/申请.md",
     "Homework/Physics 520/Physics 520 homework 6.md",
     "Notes/磁性.md",
-    "Homework/Physics 520/Physics 520 homework 5.md",
     "Notes/Zeeman效应.md",
     "Notes/张量算子（1）.md",
     "Notes/自由电子气磁性.md",
@@ -3848,7 +3848,6 @@
     "Notes/Ideal flow.md",
     "Homework/Physics 513/Physics 513 homework 6.md",
     "Homework/Physics 520/Physics 520 homework 4 problem set.md",
-    "Notes/申请.md",
     "Notes/Klein-Gordon传播子.md",
     "Notes/Dirac旋量场.md",
     "Notes/GRE物理.md",
