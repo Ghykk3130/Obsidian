@@ -200,9 +200,9 @@ $$\begin{align}
 75. 回忆Bloch球。将实空间任意轴$\hat{\mathbf{n}}$映射到Bloch球上的$(\theta,\phi)$位置。然后$+ \frac{1}{2}$对应的量子态为$\left( \cos \frac{\theta}{2}, e^{i\phi} \sin \frac{\theta}{2} \right)$。$- \frac{1}{2}$对应的是$(\theta,\phi)$的对径点$(\pi-\theta,\pi+\phi)$。对应的量子态是$\left( \sin \frac{\theta}{2},-e^{i\phi}\cos \frac{\theta}{2} \right)$。
 
 76. ![[Pasted image 20260813162838.png|centering|300]]
-可以记一下，电流圆环中心磁场为$\frac{\mu_{0}I}{2R}$。选C。
+可以记一下，电流圆环中心磁场为$\frac{\mu_{0}I}{2R}$。选C。这种情况按照Biot-Savart计算更加容易。
 77. ![[Pasted image 20260813170705.png|centereing|300]]
-体系电偶极矩为零。因为球体的对称性，没有电偶极矩。选E。回忆起偶极辐射$P\propto \omega^{4}p^{2}\sin ^{2}\theta$。
+体系电偶极矩为零。因为球体的对称性，没有电偶极矩。选E。回忆起偶极辐射$P\propto \omega^{4}p^{2}\sin ^{2}\theta$。顺便回忆，加速产生的辐射为$P\propto a^{2}q^{2}$。
 78. ![[Pasted image 20260813171023.png|centering|300]]
 要相信代换是能代换出来的。选E。
 79. ![[Pasted image 20260813172655.png|centering|300]]
