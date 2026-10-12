@@ -3651,12 +3651,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Notes/磁性.md",
+                "file": "Homework/Physics 520/Physics 520 homework 6.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "磁性"
+              "title": "Physics 520 homework 6"
             }
           }
         ],
@@ -3836,8 +3836,8 @@
   },
   "active": "4cea16ebaf849ba8",
   "lastOpenFiles": [
-    "Notes/HSF draft.md",
     "Notes/磁性.md",
+    "Notes/HSF draft.md",
     "Notes/Ideal flow.md",
     "Homework/Physics 513/Physics 513 homework 6.md",
     "Homework/Physics 520/Physics 520 homework 6.md",
