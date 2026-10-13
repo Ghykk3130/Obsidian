@@ -111,6 +111,8 @@ $$\begin{align}
 
 The first point that I didn't know is that when the temperature is close to $\theta_{\text{CW}}$, then the Curie-Weiss law breaks down. This is close to the phase transition critical point, and the fluctuation is strong. Because the mean-field approximation assumes small fluctuation, then it breaks down.
 
+The second point that I didn't know is that Curie-Weiss law requires localized moments. Then the unfilled shell that's producing the net moment must be sufficiently localized. But how localized they are also affect exchange. For example, in rare earth magnets, because 4f electrons are too localized, the exchange is weak. Therefore ordering often takes place $< 1\ \text{K}$. 
+
 
 
 

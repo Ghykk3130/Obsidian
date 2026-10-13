@@ -3651,12 +3651,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Notes/GRE物理.md",
+                "file": "Homework/Physics 520/Physics 520 homework 6.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "GRE物理"
+              "title": "Physics 520 homework 6"
             }
           }
         ],
@@ -3725,13 +3725,11 @@
               "title": "Search"
             }
           }
-        ],
-        "currentTab": 3
+        ]
       }
     ],
     "direction": "horizontal",
-    "width": 200.5,
-    "collapsed": true
+    "width": 200.5
   },
   "right": {
     "id": "9003d078f8dbc4ed",
@@ -3837,6 +3835,7 @@
   },
   "active": "4cea16ebaf849ba8",
   "lastOpenFiles": [
+    "Notes/GRE物理.md",
     "Homework/Physics 520/Physics 520 homework 6.md",
     "Homework/Physics 520/Physics 520 homework 5.md",
     "Notes/申请.md",
@@ -3851,7 +3850,6 @@
     "Homework/Physics 520/Physics 520 homework 4 problem set.md",
     "Notes/Klein-Gordon传播子.md",
     "Notes/Dirac旋量场.md",
-    "Notes/GRE物理.md",
     "Pictures/Pasted image 20261010204543.png",
     "Pictures/Pasted image 20261010203801.png",
     "Pictures/Pasted image 20261010201355.png",
