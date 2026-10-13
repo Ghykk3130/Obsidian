@@ -320,6 +320,10 @@ Klein悖论指粒子穿过极高势垒，透射不减少反而增强。因为在
 122. ![[Pasted image 20261010204543.png|centering|600]]
 escape velocti指第二宇宙速度，脱离太阳系的速度。通过$\frac{1}{2}mv^{2}= G \frac{mM}{r^{}}$计算。  7.9 km/s仅仅是脱离地表，近地卫星。
 
+123.  ![[Pasted image 20261012211942.png|centering|600]]
+Rayleigh条件指len的angular resolution为$\theta= \frac{1.22\lambda}{D}$，其中$D$为lens直径。
+124. ![[Pasted image 20261012213007.png|centering|500]]
+使用$U= \frac{1}{2}CV^{2}$。选D。使用最直接的公式。不要去想$\frac{\epsilon_{0}}{2}E^{2}$之类的。
 
 
 
