@@ -113,6 +113,8 @@ The first point that I didn't know is that when the temperature is close to $\th
 
 The second point that I didn't know is that Curie-Weiss law requires localized moments. Then the unfilled shell that's producing the net moment must be sufficiently localized. But how localized they are also affect exchange. For example, in rare earth magnets, because 4f electrons are too localized, the exchange is weak. Therefore ordering often takes place $< 1\ \text{K}$. 
 
+The third thing that I didn't know is that the crystal field splitting can lead to different moments due to different angular momenta in those split states. Therefore the moments can deviate greatly from Hund's rule, as in the 3d element case. Since the 3d wavefunctions are much extended, they interact more strongly with the crystal fields, which may exceed the energy lowering predicted by Hund's rule.
+
 
 
 
