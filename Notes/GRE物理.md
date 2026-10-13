@@ -330,6 +330,29 @@ $$\begin{align}
  & \frac{\hbar^{2}k_{F}^{2}}{2m}=\epsilon_{F},\ 2\frac{\frac{4}{3}k_{F}^{3} }{(2\pi /L)^{3}}=N
 \end{align}$$
 于是$\epsilon_{F}\propto n^{ 2/3}$。于是选D。
+126. ![[Pasted image 20261012222249.png|centering|500]]
+识别考点出了问题。需要识别出考察的是色散关系。我们有$\hbar \omega= \frac{\hbar^{2}k^{2}}{2m}$。那么选C。
+127. ![[Pasted image 20261012222457.png|centering|400]]
+注意看题。这道题考察destructive interference，不是constructive。选D。
+
+128. ![[Pasted image 20261012222822.png|centering|500]]
+注意，这个true angle也是从水平面开始量的，选A。
+
+129.
+![[Pasted image 20261012223055.png|centering|500]]
+可能会选C。C的反例为：两个lens都成实像，反转两遍，最后形成正的实像。
+
+130. ![[Pasted image 20261012223235.png|centering|500]]
+我们有：
+$$\begin{align}
+ & 1.5 \times 1000\times 2 = n \lambda+ \frac{\lambda}{2}
+\end{align}$$
+要耐心检查到较大阶数。发现$n=7$是可以的。选A。
+
+
+>[!Quote]
+>光学常见的坑：两个界面都要反射，destructive看错成constructive，角度看清楚是和什么的夹角。
+
 
 >[!Quote]
 >薄弱点：费米能级，光学，
