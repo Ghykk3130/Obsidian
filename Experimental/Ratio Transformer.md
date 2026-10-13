@@ -1,4 +1,5 @@
 # Configuration 1
+
 Configuration: $lock\ in\ amplifier \rightarrow isolation\ transformer \rightarrow ratio\ transformer \rightarrow   resistor\ connected\ in\ parallel\ with\ the\ oscilloscope$
 Reading: 
 	Frequency: stable
@@ -42,6 +43,7 @@ Pictures:
 	($R = 47 \Omega$ , oscilloscope input impedance = $1 M \Omega$, $f = 2 M Hz$, before charging the laptop)
 	![[e0b0d6ecb0786fd68c8c1bf222dc48c.jpg|400]]
 # Configuration 2
+
 Configuration: $lock\ in\ amplifier \rightarrow \times 11(5.6K \Omega + 56 K \Omega)\ noninverting\ amplifier \rightarrow isolation\ transformer \rightarrow ratio\ transformer \rightarrow oscilloscope$
 Problems:
 1. Amplifier on $\rightarrow$ the center of the curve $1.16V$. Amplifier off $\rightarrow$ the center of the curve almost $0$ 
