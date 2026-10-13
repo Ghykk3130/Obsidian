@@ -324,6 +324,17 @@ escape velocti指第二宇宙速度，脱离太阳系的速度。通过$\frac{1}
 Rayleigh条件指len的angular resolution为$\theta= \frac{1.22\lambda}{D}$，其中$D$为lens直径。
 124. ![[Pasted image 20261012213007.png|centering|500]]
 使用$U= \frac{1}{2}CV^{2}$。选D。使用最直接的公式。不要去想$\frac{\epsilon_{0}}{2}E^{2}$之类的。
+125. ![[Pasted image 20261012214416.png|centering|400]]
+要联系费米能与样本大小，只需要两个关系：
+$$\begin{align}
+ & \frac{\hbar^{2}k_{F}^{2}}{2m}=\epsilon_{F},\ 2\frac{\frac{4}{3}k_{F}^{3} }{(2\pi /L)^{3}}=N
+\end{align}$$
+于是$\epsilon_{F}\propto n^{ 2/3}$。于是选D。
+
+>[!Quote]
+>薄弱点：费米能级，光学，
+
+
 
 
 
