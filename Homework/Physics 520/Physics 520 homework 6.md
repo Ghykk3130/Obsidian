@@ -95,7 +95,7 @@ $$\chi= \frac{n\mu_{0}}{3k_{B}T} 35 \mu_{B}^{2}\approx  1.7 \times 10^{-7}\ $$
 
 (ii)
 
-The number of core electrons is $18$. We have:
+Mn has 25 electrons. The number of core electrons is $20$. We have:
 $$\begin{align}
 \chi & = \frac{\partial M}{\partial H} \\
  & = -\frac{\partial}{\partial H} \frac{\partial \Delta E}{\partial B} \\
