@@ -3714,7 +3714,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "磁性",
                 "matchingCase": true,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -3835,6 +3835,8 @@
   },
   "active": "4cea16ebaf849ba8",
   "lastOpenFiles": [
+    "Notes/磁性.md",
+    "Homework/Physics 520/Physics 520 homework 6.md",
     "Experimental/Ratio Transformer.md",
     "Experimental/PPMS.md",
     "Experimental/Transistor.md",
@@ -3849,9 +3851,7 @@
     "Pictures/Pasted image 20261012213007.png",
     "Pictures/Pasted image 20261012211942.png",
     "Pictures/Pasted image 20261012211930.png",
-    "Homework/Physics 520/Physics 520 homework 6.md",
     "Homework/Physics 520/Physics 520 homework 5.md",
-    "Notes/磁性.md",
     "Notes/Zeeman效应.md",
     "Notes/张量算子（1）.md",
     "Notes/自由电子气磁性.md",
