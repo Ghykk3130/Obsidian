@@ -110,7 +110,7 @@ $$\begin{align}
 So:
 $$\begin{align}
 \chi & = -20  \frac{p\mu_{0}e^{2}\langle r^{2}\rangle}{6k_{B}Tm_{e}} \cdot  \\
- & \approx -4.28 \times 10^{-10}\end{align}$$
+ & \approx -4.28 \times 10^{-9}\end{align}$$
 
 # Problem 3
 
