@@ -3725,8 +3725,7 @@
               "title": "Search"
             }
           }
-        ],
-        "currentTab": 3
+        ]
       }
     ],
     "direction": "horizontal",
@@ -3834,7 +3833,7 @@
       "obsidian-shellcommands:Shell commands: Custom variables": false
     }
   },
-  "active": "4cea16ebaf849ba8",
+  "active": "0bd5adf6a54a04e2",
   "lastOpenFiles": [
     "Pictures/Pasted image 20261015155449.png",
     "Pictures/Pasted image 20261015155239.png",
