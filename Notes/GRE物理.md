@@ -357,6 +357,28 @@ $$\begin{align}
 >[!Quote]
 >薄弱点：费米能级，光学，
 
+131. ![[Pasted image 20261015195331.png|centering|500]]
+我们记忆偶极磁场$\propto \frac{3(\mathbf{m}\cdot  \hat{\mathbf{r}})  \hat{\mathbf{r}}-\mathbf{m}}{r^{3}}$。不要想当然。我们知道磁场是朝下的。问的是对于电子的作用，不是对整个线圈的作用。选B。
+132. ![[Pasted image 20261015200847.png|centering|400]]
+对整个线圈里面积一圈，得到$2\pi r B= \mu_{0}NI$。然后积分得到能量：
+$$\begin{align}
+U & = \frac{1}{2\mu_{0}}\int r dr d\phi \left(  \frac{\mu_{0}NI}{2\pi r} \right)^{2} a 
+\end{align}$$
+选A。
+133. ![[Pasted image 20261015201144.png|centering|500]]
+我们得到电场的变化率：$\frac{\partial E}{\partial t}= \frac{dQ /dt}{Cd}= \frac{I}{\epsilon_{0} A}$。那么积分电通量得到：$2\pi r B= \mu_{0}\frac{I}{\epsilon_{0}A} \pi r^{2}\implies B= \frac{\mu_{0}Ir}{2\epsilon_{0}A}$
+134. ![[Pasted image 20261015201618.png|centering|400]]
+在平板内部，我们有：$D=0$。这是因为没有自由电流。在平板外部，$D=0$，因为没有表面自由电流，$D$垂直分量必须连续。而外部同样$P=0$。所以外部无电场。选E。
+135. ![[Pasted image 20261015202345.png|centering|400]]
+好好画图。选D。
+136. ![[Pasted image 20261015202937.png|centering|400]]
+能量公式$U= \frac{1}{2}LI^{2}$。选C。
+
+
+>[!Quote]
+>错误主要来自于两方面。没仔细看题。没理性推导。
+
+
 
 
 

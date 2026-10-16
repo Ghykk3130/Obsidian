@@ -3651,12 +3651,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Notes/申请.md",
+                "file": "Notes/GRE物理.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "申请"
+              "title": "GRE物理"
             }
           }
         ],
@@ -3714,7 +3714,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "申请",
+                "query": "GRE",
                 "matchingCase": true,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -3725,7 +3725,8 @@
               "title": "Search"
             }
           }
-        ]
+        ],
+        "currentTab": 3
       }
     ],
     "direction": "horizontal",
@@ -3833,26 +3834,26 @@
       "obsidian-shellcommands:Shell commands: Custom variables": false
     }
   },
-  "active": "0bd5adf6a54a04e2",
+  "active": "4cea16ebaf849ba8",
   "lastOpenFiles": [
+    "Pictures/Pasted image 20261015202937.png",
+    "Pictures/Pasted image 20261015202345.png",
+    "Pictures/Pasted image 20261015201618.png",
+    "Pictures/Pasted image 20261015201144.png",
+    "Pictures/Pasted image 20261015200847.png",
+    "Pictures/Pasted image 20261015195331.png",
+    "Notes/申请.md",
     "Pictures/Pasted image 20261015155449.png",
     "Pictures/Pasted image 20261015155239.png",
     "Pictures/Pasted image 20261015155210.png",
     "Pictures/Pasted image 20261015154925.png",
     "Pictures/Pasted image 20261015145318.png",
-    "Pictures/Pasted image 20261015144859.png",
-    "Pictures/Pasted image 20261015144424.png",
-    "Pictures/Pasted image 20261015144014.png",
     "Homework/Physics 520/Physics 520 homework 6.md",
-    "Notes/申请.md",
     "Notes/磁性.md",
     "Experimental/Ratio Transformer.md",
     "Experimental/PPMS.md",
     "Experimental/Transistor.md",
     "Notes/GRE物理.md",
-    "Pictures/Pasted image 20261012223235.png",
-    "Pictures/Pasted image 20261012223055.png",
-    "Pictures/Pasted image 20261012222822.png",
     "Homework/Physics 520/Physics 520 homework 5.md",
     "Notes/Zeeman效应.md",
     "Notes/张量算子（1）.md",
