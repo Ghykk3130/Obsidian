@@ -10,5 +10,7 @@ $$(\Box-m^{2})\phi=- \frac{\lambda}{2!}\phi^{2}$$
 $\gamma_{\mu}\gamma^{\mu}=4$, $\gamma_{\mu}\rlap{/}k\gamma^{\mu}=-3 \rlap{/}k$.
 ## (d)
 
+The label for the four-vector field is $\left( \frac{1}{2}, \frac{1}{2} \right)$. The label for the left-handed Weyl spinor is $\left( \frac{1}{2},0 \right)$。
+# Problem 2
 
 
