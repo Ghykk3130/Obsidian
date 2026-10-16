@@ -238,7 +238,7 @@ $$\begin{align}
 84. ![[Pasted image 20260814160758.png|centering|300]]
 回忆起Bernoulli方程$P_{1}+ \frac{1}{2}\rho v_{1}^{2}+\rho gh_{1}=P_{2}+ \frac{1}{2}\rho v_{2}^{2}+ \rho gh_{2}$。再加上流量守恒$v_{1}A_{1}=v_{2}A_{2}$即可。选A。
 85. ![[Pasted image 20260814161042.png|centering|300]]
-不要忘记把摄氏度换成开尔文。
+不要忘记把摄氏度换成开尔文。选B。
 
 86. ![[Pasted image 20260814162507.png|centering|300]]
 碰撞前四动量为$(M,0)$。碰撞后四动量为$(\sqrt{ m^{2}+p^{2} }+p,0)$。四动量守恒得到B。
