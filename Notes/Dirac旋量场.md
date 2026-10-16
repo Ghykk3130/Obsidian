@@ -143,11 +143,14 @@ $$\begin{align}
 $$\boxed{\mathcal{L}= \bar{\psi}(i\gamma^{\mu }\partial_{\mu}-m)\psi=\bar{\psi}(i\rlap{/}\partial-m)\psi}$$
 可以证明这个lagrangian是不变的：
 $$\begin{align}
-\bar{\psi^{'}}(x)(i\gamma^{\mu}\partial_{\mu}-m)\psi^{'}(x) &  =  \bar{\psi}(\Lambda ^{-1}x)\Lambda ^{-1}_{\frac{1}{2}}(i\gamma^{\mu}\partial_{\mu}-m)\Lambda_{\frac{1}{2}}\psi(\Lambda ^{-1}x) \\
+\bar{\psi^{'}}(x)(i\gamma^{\mu}\partial_{\mu}-m)\psi^{'}(x) &  =  \bar{\psi}(\Lambda ^{-1}x)\Lambda ^{-1}_{\frac{1}{2}}\gamma^{0}(i\gamma^{\mu}\partial_{\mu}-m)\Lambda_{\frac{1}{2}}\psi(\Lambda ^{-1}x) \\
  & = \bar{\psi}\left( i \Lambda^{\mu}{}_{\nu}\gamma^{\nu} \frac{\partial}{\partial x^{\mu}}-m  \right)\psi(\Lambda ^{-1}x) \\
  & = \bar{\psi}(i\Lambda^{\mu}{}_{\nu}\gamma^{\nu}(\Lambda ^{-1})^{\rho}{}_{\mu} \partial_{\rho}-m)\psi \\
  & = \bar{\psi}(i\gamma^{\mu}\partial_{\mu}-m)\psi
 \end{align}$$
+因为：
+$$\gamma^{0}\gamma^{\mu}\gamma^{0}=(\gamma^{\mu})^{\dagger}$$
+
 # 2. Weyl方程
 
 将Dirac旋量分成两个二维的旋量。写作：
@@ -314,7 +317,7 @@ $$v^{s}(p)= \begin{pmatrix}
 $$\bar{v}^{r}(p)v^{s}(p)=-2m \delta^{rs},\ v^{r\dagger}(p)v^{s}(p)=2E_{\mathbf{p}}\delta^{rs}$$
 我们还可以证明$u,v$之间都是垂直的。我们总结：
 $$
-  \text{The solutions are: }  \boxed{\begin{align}&u^{s}(p)^{}e^{ip\cdot x},\ v^{s}(p)^{}e^{-ip\cdot x},\ u^{s}(p)^{}= \begin{pmatrix}
+  \text{The solutions are: }  \boxed{\begin{aligned}&u^{s}(p)^{}e^{ip\cdot x},\ v^{s}(p)^{}e^{-ip\cdot x},\ u^{s}(p)^{}= \begin{pmatrix}
 \sqrt{ p\cdot \sigma }\xi^{s} \\
 \sqrt{ p\cdot \bar{\sigma} }\xi^{s}
 \end{pmatrix},\ v^{s}(p)= \begin{pmatrix}
@@ -325,7 +328,7 @@ $$
   & \bar{v}^{r}(p)v^{s}(p)=-2m\delta^{rs},\ v^{r\dagger}(p)v^{s}(p)=2E_{\mathbf{p}}\delta^{rs} \\
  & \bar{u}^{r}(p)v^{s}(p)=\bar{v}^{r}(p)u^{s}(p)=0 \\
  & u^{r \dagger}(p)v^{s}(-p)=v^{r\dagger}(p)u^{s}(-p)=0
-\end{align}}$$
+\end{aligned}}$$
 
 对于Lorentz群生成元$S^{\mu \nu}$，空间部分有：
 $$\begin{align}
