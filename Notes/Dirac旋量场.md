@@ -141,16 +141,24 @@ $$\begin{align}
 
 构造lagrangian：
 $$\boxed{\mathcal{L}= \bar{\psi}(i\gamma^{\mu }\partial_{\mu}-m)\psi=\bar{\psi}(i\rlap{/}\partial-m)\psi}$$
-可以证明这个lagrangian是不变的：
+可以证明这个lagrangian是不变的。首先注意到：
+$$\gamma^{0}(\gamma^{\mu})^{\dagger}\gamma^{0}=\gamma^{\mu}$$
+所以$\gamma^{0}(S^{\mu \nu})^{\dagger}\gamma^{0}=S^{\mu \nu}$。于是：
 $$\begin{align}
-\bar{\psi^{'}}(x)(i\gamma^{\mu}\partial_{\mu}-m)\psi^{'}(x) &  =  \bar{\psi}(\Lambda ^{-1}x)\Lambda ^{-1}_{\frac{1}{2}}\gamma^{0}(i\gamma^{\mu}\partial_{\mu}-m)\Lambda_{\frac{1}{2}}\psi(\Lambda ^{-1}x) \\
+\gamma^{0}\Lambda_{\frac{1}{2}}^{\dagger}\gamma^{0} & = \gamma^{0}\exp(i \omega_{\mu \nu}(S^{\mu \nu})^{\dagger})\gamma^{0} \\
+ & = \exp(i\omega_{\mu \nu}\gamma^{0}(S^{\mu \nu})^{\dagger}\gamma^{0}) \\
+ & = \exp(i\omega_{\mu \nu}S^{\mu \nu}) \\
+ & = \Lambda_{\frac{1}{2}}^{-1}
+\end{align}$$
+那么：
+$$\begin{align}
+\bar{\psi^{'}}(x)(i\gamma^{\mu}\partial_{\mu}-m)\psi^{'}(x) &  =  {\psi}^{\dagger}(\Lambda ^{-1}x)\Lambda ^{\dagger}_{\frac{1}{2}}\gamma^{0}(i\gamma^{\mu}\partial_{\mu}-m)\Lambda_{\frac{1}{2}}\psi(\Lambda ^{-1}x) \\
+ & = \psi ^{\dagger} \gamma^{0}\gamma^{0}\Lambda ^{\dagger}_{\frac{1}{2}}\gamma^{0}(i\gamma^{\mu}\partial_{\mu}-m)\Lambda_{\frac{1}{2}}\psi \\
+ & = \bar{\psi}\Lambda ^{-1}_{\frac{1}{2}}(i\gamma^{\mu}\partial_{\mu}-m)\Lambda_{\frac{1}{2}}\psi \\
  & = \bar{\psi}\left( i \Lambda^{\mu}{}_{\nu}\gamma^{\nu} \frac{\partial}{\partial x^{\mu}}-m  \right)\psi(\Lambda ^{-1}x) \\
  & = \bar{\psi}(i\Lambda^{\mu}{}_{\nu}\gamma^{\nu}(\Lambda ^{-1})^{\rho}{}_{\mu} \partial_{\rho}-m)\psi \\
  & = \bar{\psi}(i\gamma^{\mu}\partial_{\mu}-m)\psi
 \end{align}$$
-因为：
-$$\gamma^{0}\gamma^{\mu}\gamma^{0}=(\gamma^{\mu})^{\dagger}$$
-
 # 2. Weyl方程
 
 将Dirac旋量分成两个二维的旋量。写作：
