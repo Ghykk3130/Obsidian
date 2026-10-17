@@ -218,6 +218,16 @@ U(T)\psi(x)U^{-1}(T) & = U(T)\int \frac{d^{3}p}{(2\pi)^{3}} \frac{1}{\sqrt{ 2E_{
  \implies &  \boxed{U(T)\psi(x)U^{-1}(T) = \gamma^{1}\gamma^{3}\psi(Tx)}
 \end{align}$$
 最后一步是因为$\tilde{p}\cdot \tilde{x}=-\tilde{p}\cdot(-t,\mathbf{x})=-\tilde{p}\cdot Tx$。
+## Ex:
+$$\begin{align}
+U(T)\bar{\psi}(x)U^{-1}(T) & = U \psi ^{\dagger}\gamma^{0}U^{-1} \\
+ & = U\psi ^{\dagger}U^{-1}\gamma^{0} \\
+ & = (U\psi U^{-1})^{\dagger}\gamma^{0} \\
+ & = \psi ^{\dagger}(Tx)(\gamma^{3})^{\dagger}(\gamma^{1})^{\dagger}\gamma^{0} \\
+ & = \psi ^{\dagger}\gamma^{3} \gamma^{1}\gamma^{0} \\
+ & = \bar{\psi}(Tx)\gamma^{3}\gamma^{1}
+\end{align}$$
+
 # 3. Charge conjugation
 
 不妨假设charge conjugation将粒子变成反粒子：
@@ -268,3 +278,19 @@ U(C)\psi(x)U^{-1}(C) & = -i\gamma^{2}\psi ^{*}(x) \\
  & = -i(\bar{\psi}\gamma^{0}\gamma^{2})^{T}
 \end{align}$$
 其中，容易通过直接计算证明$(\gamma^{2})^{T}=\gamma^{2}$。
+## Ex:
+
+$$\begin{align}
+U(C)\bar{\psi} U^{-1}(C) & =U {\psi}^{\dagger}U^{-1}\gamma^{0} \\
+ & =  (U\psi U^{-1})^{\dagger}\gamma^{0} \\
+ & = (-i(\bar{\psi}\gamma^{0}\gamma^{2})^{T} )^{\dagger}\gamma^{0} \\
+ & = i(\bar{\psi}\gamma^{0}\gamma^{2})^{*}\gamma^{0} \\
+ & = i(\bar{\psi})^{*}\gamma^{0}(-\gamma^{2})\gamma^{0} \\
+ & = i(\bar{\psi})^{*} \gamma^{2} \\
+ & = i(\psi ^{\dagger} \gamma^{0})^{*}\gamma^{2} \\
+ & = i(\psi ^{\dagger})^{*}\gamma^{0}\gamma^{2} \\
+ & = i\psi^{T}\gamma^{0}\gamma^{2} \\
+ & = i\psi^{T}(\gamma^{0})^{T}(\gamma^{2})^{T} \\
+ & = i(\gamma^{2}\gamma^{0}\psi)^{T} \\
+ & = -i(\gamma^{0}\gamma^{2}\psi)^{T}
+\end{align}$$
