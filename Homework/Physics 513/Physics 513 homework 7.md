@@ -25,5 +25,18 @@ U(P)\bar{\psi}(x)\gamma^{\mu}\gamma^{5}\psi(x)U^{-1}(P) & = U\bar{\psi}U^{-1}\ga
  & \bar{\psi}\gamma^{\mu}\gamma^{5}\psi,\ \mu=1,2,3
 \end{aligned}\right.
 \end{align}$$
+We have:
+$$\begin{align}
+U(P)\bar{\psi}\sigma^{\mu \nu}\psi U^{-1}(P) & = U \bar{\psi} \frac{i}{2}[\gamma^{\mu},\gamma^{\nu}]\psi U^{-1} \\
+ & = U \bar{\psi} U ^{-1} \frac{i}{2}[\gamma^{\mu},\gamma^{\nu}]U\psi U^{-1} \\
+ & = \eta_{a}^{*} \bar{\psi}(Px) \gamma^{0} \frac{i}{2}[\gamma^{\mu},\gamma^{\nu}] \eta_{a}\gamma^{0}\psi(Px) \\
+ & = \bar{\psi} \frac{i}{2}[(\gamma^{\mu} )^{\dagger},(\gamma^{\nu})^{\dagger}]\psi \\
+ & = \left\{ \begin{aligned}
+ & -\bar{\psi}\sigma^{\mu \nu}\psi,\ \text{one of }\mu,\nu \text{ is temoral, another is spatial} \\
+ & \bar{\psi}\sigma^{\mu \nu}\psi,\ \mu,\nu\text{ are both spatial or both temporal}
+\end{aligned}\right.
+\end{align}$$
+## (b)
+
 
 
