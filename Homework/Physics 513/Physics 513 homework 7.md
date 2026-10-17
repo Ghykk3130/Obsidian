@@ -16,6 +16,14 @@ The label for the four-vector field is $\left( \frac{1}{2}, \frac{1}{2} \right)$
 
 We have:
 $$\begin{align}
-
+U(P)\bar{\psi}(x)\gamma^{\mu}\gamma^{5}\psi(x)U^{-1}(P) & = U\bar{\psi}U^{-1}\gamma^{\mu}\gamma^{5}U \psi U^{-1} \\
+ & = \eta_{a}^{*}\bar{\psi}(Px)\gamma^{0}\gamma^{\mu}\gamma^{5}\eta_{a}\gamma^{0}\psi(Px) \\
+ & = \bar{\psi}\gamma^{0}\gamma^{\mu}\gamma^{0}\gamma^{0}\gamma^{5}\gamma^{0}\psi \\
+ & = -\bar{\psi}(\gamma^{\mu})^{\dagger}\gamma^{5}\psi \\
+ & = \left\{ \begin{aligned}
+ & -\bar{\psi}\gamma^{\mu}\gamma^{5}\psi,\ \mu=0 \\
+ & \bar{\psi}\gamma^{\mu}\gamma^{5}\psi,\ \mu=1,2,3
+\end{aligned}\right.
 \end{align}$$
+
 

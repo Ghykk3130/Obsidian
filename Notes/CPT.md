@@ -122,7 +122,8 @@ U(P)\bar{\psi}(x)\gamma^{\mu}\psi(x)U^{-1}(P) & = U\bar{\psi}U^{-1}U\gamma^{\mu}
  & = \left\{ \begin{aligned}
  & \bar{\psi}\gamma^{\mu}\psi(Px),\ \mu=0 \\
  & -\bar{\psi}\gamma^{\mu}\psi(Px),\ \mu=1,2,3
-\end{aligned}\right.
+\end{aligned}\right. \\
+ & = P^{\mu}{}_{\nu}\bar{\psi}\gamma^{\nu}\psi(Px)
 \end{align}$$
 可见空间部分变换时获得负号。
 ## Ex:
