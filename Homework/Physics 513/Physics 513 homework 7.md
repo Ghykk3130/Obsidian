@@ -12,5 +12,10 @@ $\gamma_{\mu}\gamma^{\mu}=4$, $\gamma_{\mu}\rlap{/}k\gamma^{\mu}=-3 \rlap{/}k$.
 
 The label for the four-vector field is $\left( \frac{1}{2}, \frac{1}{2} \right)$. The label for the left-handed Weyl spinor is $\left( \frac{1}{2},0 \right)$。
 # Problem 2
+## (a)
 
+We have:
+$$\begin{align}
+
+\end{align}$$
 
