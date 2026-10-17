@@ -45,5 +45,54 @@ $$\begin{pmatrix}
 \end{pmatrix}
 $$
 于是这也构成一个Lorentz表示。称为Dirac spinor。
-# 2. 
+# 2. Parity
+
+不妨令宇称算符引出变换：
+$$\begin{align}
+U(P)a_{\mathbf{p}}U^{-1}(P) & = \eta_{a}a_{-\mathbf{p}},\ U(P)b_{\mathbf{p}}U^{-1}(P)=\eta_{b}b_{-\mathbf{p}}
+\end{align}$$
+那么作用在场上得到：
+$$\begin{align}
+U(P)\psi(x)U^{-1}(P) & = U(P)\int \frac{d^{3}p}{(2\pi)^{3}} \frac{1}{\sqrt{ 2E_{\mathbf{p}} }}\sum_{s}(a^{s}_{\mathbf{p}}u^{s}(p)e^{-ip\cdot x}+ (b^{s}_{\mathbf{p}})^{\dagger} v^{s}(p)e^{ip\cdot x})U^{-1}(P) \\
+ & = \int \frac{d^{3}p}{(2\pi)^{3}} \frac{1}{\sqrt{ 2E_{\mathbf{p}} }}\sum_{s}( \eta_{a}a^{s}_{-\mathbf{p}}u^{s}e^{-ip\cdot x}+\eta ^{*}_{b}(b^{s}_{-\mathbf{p}})^{\dagger} v^{s}e^{ip\cdot x})
+\end{align}$$
+由于：
+$$\begin{align}
+u^{}(p) & = \begin{pmatrix}
+\sqrt{ p\cdot \sigma } \xi \\
+\sqrt{ p\cdot \bar{\sigma} }\xi 
+\end{pmatrix} \\
+ & = \begin{pmatrix}
+\sqrt{ \tilde{p}\cdot \bar{\sigma} }\xi \\
+\sqrt{ \tilde{p}\cdot \sigma }\xi 
+\end{pmatrix} \\
+ & = \gamma^{0} \begin{pmatrix}
+\sqrt{ \tilde{p}\cdot \sigma }\xi \\
+\sqrt{ \tilde{p}\cdot \bar{\sigma} }\xi
+\end{pmatrix} \\
+ & = \gamma^{0} u(\tilde{p})
+\end{align}$$
+$$\begin{align}
+v(p) & = \begin{pmatrix}
+\sqrt{ p\cdot \sigma }\xi \\
+-\sqrt{ p\cdot \sigma }\xi
+\end{pmatrix} \\
+ & = \begin{pmatrix}
+\sqrt{ \tilde{p}\cdot \bar{\sigma} }\xi \\
+-\sqrt{ \tilde{p}\cdot {\sigma} }\xi
+\end{pmatrix} \\
+ & = -\gamma^{0} v(\tilde{p})
+\end{align}$$
+所以：
+$$\begin{align}
+U(P)\psi(x)U^{-1}(P) & = \int \frac{d^{3}p}{(2\pi)^{3}} \frac{1}{\sqrt{ 2E_{\mathbf{p}} }}\sum_{s}(\eta_{a}a^{s}_{-\mathbf{p}}\gamma^{0}u^{s}(\tilde{p})e^{-i\tilde{p}\cdot \tilde{x}}- \eta ^{*}_{b}(b^{s}_{-\mathbf{p}})^{\dagger} \gamma^{0} v^{s(\tilde{p})}e^{i\tilde{p} \cdot \tilde{x}})
+\end{align}$$
+假设$\eta ^{*}_{b}=-\eta_{a}$，那么：
+$$\begin{align}
+U(P)\psi(x)U^{-1}(P) & = \eta_{a}\gamma^{0}\psi(\tilde{x})=\eta_{a}\gamma^{0}\psi(Px)
+\end{align}$$
+# 2. Time reversal
+
+
+
 
