@@ -93,6 +93,19 @@ U(P)\psi(x)U^{-1}(P) & = \eta_{a}\gamma^{0}\psi(\tilde{x})=\eta_{a}\gamma^{0}\ps
 \end{align}$$
 # 2. Time reversal
 
+我们定义spin-flip算子：
+$$\xi^{-s}=-i\sigma^{2}(\xi^{s})^{*}=\begin{pmatrix}
+0 & -1 \\
+1 & 0
+\end{pmatrix}(\xi^{s})^{*}$$
+若取$\xi^{s}=\begin{pmatrix}1 \\ 0\end{pmatrix},\ \begin{pmatrix}0 \\ 1\end{pmatrix}$。容易计算：
+$$(\xi^{-1},\xi^{-2})=(\xi^{2},-\xi^{1})$$
+不妨选取：
+$$(\eta^{1},\eta^{2})=(\xi^{-1},\xi^{-2})=(\xi^{2},-\xi^{1})$$
+我们可以证明：
+$$\begin{align}
+\sqrt{ \tilde{p}\cdot \sigma } \sigma^{2}=\sigma^{2}\sqrt{ p\cdot \sigma ^{*} }
+\end{align}$$
 
 
 
