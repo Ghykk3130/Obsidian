@@ -74,12 +74,12 @@ u^{}(p) & = \begin{pmatrix}
 \end{align}$$
 $$\begin{align}
 v(p) & = \begin{pmatrix}
-\sqrt{ p\cdot \sigma }\xi \\
--\sqrt{ p\cdot \sigma }\xi
+\sqrt{ p\cdot \sigma }\eta \\
+-\sqrt{ p\cdot \sigma }\eta
 \end{pmatrix} \\
  & = \begin{pmatrix}
-\sqrt{ \tilde{p}\cdot \bar{\sigma} }\xi \\
--\sqrt{ \tilde{p}\cdot {\sigma} }\xi
+\sqrt{ \tilde{p}\cdot \bar{\sigma} }\eta \\
+-\sqrt{ \tilde{p}\cdot {\sigma} }\eta
 \end{pmatrix} \\
  & = -\gamma^{0} v(\tilde{p})
 \end{align}$$
