@@ -3707,12 +3707,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Notes/申请.md",
+                "file": "Notes/磁性.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "申请"
+              "title": "磁性"
             }
           }
         ],
@@ -3770,7 +3770,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "磁性",
                 "matchingCase": true,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -3781,7 +3781,8 @@
               "title": "Search"
             }
           }
-        ]
+        ],
+        "currentTab": 3
       }
     ],
     "direction": "horizontal",
@@ -3892,6 +3893,7 @@
   },
   "active": "ace4f94b77772cdc",
   "lastOpenFiles": [
+    "Notes/申请.md",
     "Homework/Physics 513/Physics 513 homework 7.md",
     "Homework/Physics 513/Untitled.md",
     "Notes/CPT.md",
@@ -3907,7 +3909,6 @@
     "Notes/Noether定理.md",
     "Homework/Physics 513/Physics 513 homework 2.md",
     "Homework/Physics 513/Physics 513 homework 1.md",
-    "Notes/申请.md",
     "Notes/GRE物理.md",
     "Pictures/Pasted image 20261015202937.png",
     "Pictures/Pasted image 20261015202345.png",
