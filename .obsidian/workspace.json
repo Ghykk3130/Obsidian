@@ -3784,7 +3784,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "Lande",
+                "query": "磁性",
                 "matchingCase": true,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -3908,6 +3908,7 @@
   "lastOpenFiles": [
     "Notes/磁性.md",
     "Homework/Physics 520/Physics 520 homework 7.md",
+    "Pictures/8307835e524d9e20ddee6ba174f94e69.jpg",
     "Pictures/Pasted image 20261019163631.png",
     "Pictures/Pasted image 20261019163438.png",
     "Homework/Physics 520/Physics 520 homework 6.md",
@@ -3935,7 +3936,6 @@
     "Pictures/Pasted image 20261015200847.png",
     "Pictures/Pasted image 20261015195331.png",
     "Pictures/Pasted image 20261015155449.png",
-    "Pictures/Pasted image 20261015155239.png",
     "Experimental/Ratio Transformer.md",
     "Experimental/PPMS.md",
     "Experimental/Transistor.md",

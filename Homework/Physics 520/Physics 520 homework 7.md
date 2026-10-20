@@ -94,10 +94,136 @@ g_{J} & = \frac{3}{2}+ \frac{S(S+1)-L(L+1)}{2J(J+1)} \\
 \end{align}$$
 The effective moment is:
 $$\begin{align}
-\mu_{\text{eff}}= g_{J}\mu_{B}\sqrt{ J(J+1) } \\
+\mu_{\text{eff}} & = g_{J}\mu_{B}\sqrt{ J(J+1) } \\
  & = \sqrt{ 63 }\mu_{B}
 \end{align}$$
 # Problem 2
+## (a)
+
+Let $s$ be the number of nearest neighbors. We choose the axis such that $\mathbf{B}=B \hat{\mathbf{z}}$. Then:
+$$\begin{align}
+H & = -Js \langle S_{j}\rangle\sum_{i}S_{i}^{z}+g\mu_{B}B\sum_{i}S^{z}_{i} \\
+ & = g\mu_{B}\left( B- \frac{Js\langle S_{j}\rangle}{g\mu_{B}} \right)\sum_{i}S^{z}_{i} \\
+ & = g\mu_{B}B_{\text{eff}}\sum_{i}S^{z}_{i},\ B_{\text{eff}}=B- \frac{Js\langle S_{j}\rangle}{g\mu_{B}}
+\end{align}$$
+## (b)
+
+This is exactly the model we encountered in Curie, with an effective field. We have:
+$$\begin{align}
+M & = M_{s} \tanh(y) \\
+ & = \frac{ng\mu_{B} }{2} \tanh(y),\ y=\beta \mu_{B}B_{\text{eff}}= \beta \mu_{B}\left( B- \frac{Js\langle S\rangle }{g\mu_{B}} \right)
+\end{align}$$
+By assumption, we have:
+$$\begin{align}
+M & =- n\mu_{B} \langle S\rangle
+\end{align}$$
+Here the minus sign is be because electrons carry negative charge. Therefore the self-exact equation is:
+$$\begin{align}
+M & = \frac{ng\mu_{B}}{2}\tanh\left( \beta \mu_{B}\left( B+ \frac{sJM}{ng\mu_{B}^{2}} \right) \right)
+\end{align}$$
+
+## (c)
+
+At high temperatures, we have $y\rightarrow 0$. Then:
+$$\begin{align}
+M & \approx \frac{ng\mu_{B}}{2} \beta \mu_{B}\left( B+ \frac{sJM}{ng\mu_{B}^{2}} \right) \\
+\implies & M= \frac{ng\mu_{B}^{2}\beta B}{2-\beta sJ}
+\end{align}$$
+Therefore:
+$$\begin{align}
+\chi & = \frac{M}{\mu_{0}B} \\
+ & = \frac{ng\mu_{B}^{2}\mu_{0}}{(2k_{B}T-sJ)}
+\end{align}$$
+## (d)
+
+The critical point of the second order phase transition is where the second derivative of the free energy diverges. So:
+$$\begin{align}
+ & 2k_{B}T_{c}-sJ=0 \\
+\implies & T_{c}= \frac{sJ}{2k_{B}}
+\end{align}$$
+Then the susceptibility can be written as:
+$$\chi=  \frac{ng\mu_{B}^{2}\mu_{0}}{2k_{B}(T-T_{c})} $$
+## (e)
+
+![[8307835e524d9e20ddee6ba174f94e69.jpg|centering|400]]
+## (f)
+
+To repeat part (a), we find that nothing changes. We still write down:
+$$\begin{align}
+H  = g\mu_{B}B_{\text{eff}}\sum_{i}S^{z}_{i},\ B_{\text{eff}}=B- \frac{Js\langle S_{j}\rangle}{g\mu_{B}}
+\end{align}$$
+To repeat part (b), we replace the hyperbolic tangent with $B_{1}$:
+$$\begin{align}
+M & = M_{s} B_{1}(y) \\
+ & = \mu_{B}gB B_{1}(y),\ y=\beta \mu_{B}B_{\text{eff}}= \beta \mu_{B}\left( B- \frac{Js\langle S\rangle }{g\mu_{B}} \right)
+\end{align}$$
+This equation still holds:
+$$\begin{align}
+M & =- n\mu_{B} \langle S\rangle
+\end{align}$$
+Then we get:
+$$\begin{align}
+M & = ng\mu_{B}B_{1}\left( \beta \mu_{B}\left( B+ \frac{sJM}{ng\mu_{B}^{2}} \right) \right)
+\end{align}$$
+Then we repeat part (c): at high temperatures, we have $y\rightarrow 0$. Then:
+$$\begin{align}
+M & \approx ng\mu_{B}\beta \mu_{B}\cdot \frac{1+1}{3} \left( B+ \frac{sJM}{ng\mu_{B}^{2}} \right)  \\
+ & = \frac{2}{3}ng\mu_{B}^{2}\beta\left( B+ \frac{sJM}{ng\mu_{B}^{2}} \right) \\
+\implies & M= \frac{ng\mu_{B}^{2}\beta B}{ \frac{3}{2} -\beta sJ}
+\end{align}$$
+Therefore:
+$$\begin{align}
+\chi & = \frac{M}{\mu_{0}B} \\
+ & = \frac{ng\mu_{B}^{2}\mu_{0}}{\left(  \frac{3}{2} k_{B}T-sJ \right)}
+\end{align}$$
+We calculate the critical temperature:
+$$\begin{align}
+ & \frac{3}{2}k_{B}T_{c}-sJ=0\implies T_{c}=\frac{2}{3} \frac{sJ}{k_{B}}
+\end{align}$$
+Then:
+$$\begin{align}
+\chi= \frac{2ng\mu_{B}^{2}\mu_{0}}{3k_{B}(T-T_{c})}
+\end{align}$$
+# Problem 3
+## (a)
+
+For spins on the + sublattice, the field is:
+$$B_{\text{eff}}=B-\gamma M_{-}-|\lambda|M_{+}$$
+Then:
+$$\begin{align}
+M_{+} & = M_{s}B_{J}(y) \\
+ & = M_{s}B_{J}\left( - \frac{g_{J}\mu_{B}J}{k_{B}T}(-B+\gamma M_{-}+|\lambda|M_{+}) \right) \\
+ & = M_{s}B_{J}\left( - \frac{g_{J}\mu_{B}J}{k_{B}T}(\gamma M_{-}+|\lambda|M_{+}) \right)\text{ under zero field}
+\end{align}$$
+Similarly, for spins on the - sublattice, it's easy to show that under zero field:
+$$\begin{align}
+M_{-}=M_{s}B_{J}\left( - \frac{g_{J}\mu_{B}J}{k_{B}T}(\gamma M_{+}+|\lambda|M_{-}) \right)
+\end{align}$$
+Then:
+$$\begin{align}
+M_{\pm}= M_{s}B_{J}\left( - \frac{g_{J}\mu_{B}J(\gamma M_{\pm}+|\lambda|M_{\mp})}{k_{B}T} \right)
+\end{align}$$
+We can expand:
+$$M_{\pm}\approx M_{s} \frac{J+1}{3J}\left( - \frac{g_{J}\mu_{B}J(\gamma M_{\pm}+|\lambda|M_{\mp})}{k_{B}T} \right)$$
+Let $A= M_{s} \frac{g_{J}\mu_{B}J}{k_{B}T} \frac{J+1}{3J}$, $\mathcal{M}=M_{+}-M_{-}$. By taking the difference of the two equations above, we get:
+$$\begin{align}
+\mathcal{M}=A(|\lambda|-\gamma )\mathcal{M}
+\end{align}$$
+Then we have:
+$$[1-A(|\lambda|-\gamma)]\mathcal{M}=0$$
+For non-zero $\mathcal{M}$, we must have:
+$$\begin{align}  & A= \frac{1}{|\lambda|-\gamma}
+  \\
+\implies& M_{s} \frac{g_{J}\mu_{B}(J+1)}{3k_{B}T_{N}}=  \frac{1}{|\lambda|-\gamma} \\
+\implies & T_{N}= M_{s} \frac{g_{J}\mu_{B}(J+1)(|\lambda|-\gamma)}{3k_{B}} = \frac{n(|\lambda|-\gamma)\mu_{\text{eff}^{}}^{2}}{3k_{B}}
+\end{align}$$
+If the field is non-zero, we have:
+$$\begin{align}
+M_{\pm}= M_{s} \frac{J+1}{3J}\left( - \frac{g_{J}\mu_{B}J(\gamma M_{\pm}+|\lambda|M_{\mp})}{k_{B}T} \right)
+\end{align}$$
+
+
+
 
 
 
