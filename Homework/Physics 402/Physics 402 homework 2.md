@@ -192,6 +192,9 @@ $$\begin{align}
 \implies & \lambda_{1}+\lambda_{2}= \sqrt{ 1+\cos ^{2}\delta }>0,\ \lambda_{1}\lambda_{2}=\cos ^{2}\delta>0
 \end{align}$$
 Then the quadratic form is positive definite. Then it is an ellipse.
+## (b)
+
+If $\delta=0$, clearly $E_{x}=E_{y}$. Therefore the light is 
 
 
 
