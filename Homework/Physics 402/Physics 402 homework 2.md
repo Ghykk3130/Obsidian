@@ -136,12 +136,63 @@ $$\begin{align}
 \end{align}$$
 # Question 7
 
+If the irradiance is $N$ times, then the amplitude is $\sqrt{ N }$ times. Let the phases of the two beams be $\varphi, \psi$. We have:
+$$\begin{align}
+\Phi & = \sqrt{ N }e^{i\varphi}+ e^{i\psi}
+\end{align}$$
+Then:
+$$\begin{align}
+I & = |\Phi |^{2} \\
+ & = (\sqrt{ N }e^{i\varphi}+e^{is\pi})(\sqrt{ N }e^{-i\varphi}+e^{-i\psi}) \\
+ & = N+2\sqrt{ N }\cos(\varphi-\psi)+1
+\end{align}$$
+Then:
+$$\begin{align}
+ & I_{\text{max}} = N+2\sqrt{ N }+1 \\
+ & I_{\text{min}}=N-2\sqrt{ N } +1
+\end{align}$$
+We hav:
+$$\begin{align}
+V & = \frac{4\sqrt{ N }}{2N+2}= \frac{2\sqrt{ N }}{N+1}
+\end{align}$$
+
 # Question 8
 ## (a)
 $$\begin{align}
 E_{x} & = E_{0} \cos(kz-\omega t) \\
 E_{y} & = E_{0}\cos(kz-\omega t+\delta)
 \end{align}$$
-At $z=0$, 
+At $z=0$, we have:
+$$\begin{align}
+ & E_{x}= E_{0}\cos \omega t \\
+ & E_{y}=E_{0}\cos(\omega t-\delta)= \cos \omega t\cos\delta+\sin \omega t\sin\delta
+\end{align}$$
+Then:
+$$\begin{align}
+\sin\delta= \frac{E_{y}-E_{0}\cos \omega t\cos\delta}{E_{0}\sin\delta}= \frac{E_{y}-E_{x}\cos\delta} {E_{0}\sin\delta}
+\end{align}$$
+Then:
+$$\begin{align}
+ & \sin ^{2}\delta+\cos ^{2}\delta=1 \\
+\implies & \left(  \frac{E_{y}-E_{x}\cos\delta}{E_{0}\sin\delta} \right)^{2}+ \left(  \frac{E_{x}}{E_{0}} \right)^{2}=1 \\
+\implies & (1+\cos ^{2}\delta)E_{x}^{2}+ E_{y}^{2}-2\cos\delta E_{x}E_{y}= E_{0}^{2}\sin ^{2}\delta \\
+\implies & \begin{pmatrix}
+E_{x} & E_{y} 
+\end{pmatrix} \begin{pmatrix}
+\sqrt{ 1+\cos ^{2}\delta } & -\cos\delta \\
+-\cos\delta & 1
+\end{pmatrix} \begin{pmatrix}
+E_{x} \\
+E_{y}
+\end{pmatrix}=E_{0}^{2}\sin ^{2}\delta
+\end{align}$$
+The eigen equation is:
+$$\begin{align}
+ & \lambda^{2}- \sqrt{ 1+\cos ^{2}\delta }\lambda+\cos ^{2}\delta=0 \\
+\implies & \lambda_{1}+\lambda_{2}= \sqrt{ 1+\cos ^{2}\delta }>0,\ \lambda_{1}\lambda_{2}=\cos ^{2}\delta>0
+\end{align}$$
+Then the quadratic form is positive definite. Then it is an ellipse.
+
+
 
 
