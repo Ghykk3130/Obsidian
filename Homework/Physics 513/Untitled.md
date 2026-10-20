@@ -4,8 +4,10 @@ $\sigma^{\mu \nu}=\frac{i}{2}[\gamma^{\mu},\gamma^{\nu}]$,
 
 $U(P)\psi(x) U^{-1}(P)=\eta_{a}\gamma^{0}\psi(Px),\ U(P)\bar{\psi}(x)U^{-1}(P)=\eta_{a}^{*}\bar{\psi}(Px)\gamma^{0}$
 
-$$U(C)\psi(x)U^{-1}(C)= -i(\bar{\psi}\gamma^{0}\gamma^{2})^{T},\ U(C)\bar{\psi} U^{-1}(C)=-i(\gamma^{0}\gamma^{2}\psi)^{T}$$
+$U(C)\psi(x)U^{-1}(C)= -i(\bar{\psi}\gamma^{0}\gamma^{2})^{T},\ U(C)\bar{\psi} U^{-1}(C)=-i(\gamma^{0}\gamma^{2}\psi)^{T}$
 
 $$U(T)\psi U^{-1}(T)=\gamma^{1}\gamma^{3}\psi,\ U(T)\bar{\psi}U^{-1}(T)= \bar{\psi}\gamma^{3}\gamma^{1}$$
 $\{ \psi_{a}(x),\psi ^{\dagger}_{b}(y) \}_{\text{ET}}=\delta(\mathbf{x}-\mathbf{y})\delta_{ab}$, $\{ \psi_{a}(x),\bar{\psi}_{b}(y) \}_{\text{ET}}=\delta(\mathbf{x}-\mathbf{y})(\gamma^{0})_{ab}$
+
+
 
