@@ -9,7 +9,7 @@ M & = \frac{nB}{3k_{B}T} \mu_{\text{eff}}^{2} \\
 \end{align}$$
 Then susceptibility is given by:
 $$\begin{align}
-\chi & = \frac{M}{\mu_{0}B} \\
+\chi & = \frac{M}{H} \\
  & = \frac{3}{4} \frac{n\mu_{0}\mu_{B}^{2}}{k_{B}T}
 \end{align}$$
 ## (b)
@@ -131,7 +131,7 @@ M & \approx \frac{ng\mu_{B}}{2} \beta \mu_{B}\left( B+ \frac{sJM}{ng\mu_{B}^{2}}
 \end{align}$$
 Therefore:
 $$\begin{align}
-\chi & = \frac{M}{\mu_{0}B} \\
+\chi & = \frac{M}{H} \\
  & = \frac{ng\mu_{B}^{2}\mu_{0}}{(2k_{B}T-sJ)}
 \end{align}$$
 ## (d)
@@ -173,7 +173,7 @@ M & \approx ng\mu_{B}\beta \mu_{B}\cdot \frac{1+1}{3} \left( B+ \frac{sJM}{ng\mu
 \end{align}$$
 Therefore:
 $$\begin{align}
-\chi & = \frac{M}{\mu_{0}B} \\
+\chi & = \frac{M}{H} \\
  & = \frac{ng\mu_{B}^{2}\mu_{0}}{\left(  \frac{3}{2} k_{B}T-sJ \right)}
 \end{align}$$
 We calculate the critical temperature:
@@ -219,9 +219,78 @@ $$\begin{align}  & A= \frac{1}{|\lambda|-\gamma}
 \end{align}$$
 If the field is non-zero, we have:
 $$\begin{align}
-M_{\pm}= M_{s} \frac{J+1}{3J}\left( - \frac{g_{J}\mu_{B}J(\gamma M_{\pm}+|\lambda|M_{\mp})}{k_{B}T} \right)
+M_{\pm} & = M_{s} \frac{J+1}{3J}\left( - \frac{g_{J}\mu_{B}J(-B+\gamma M_{\pm}+|\lambda|M_{\mp})}{k_{B}T} \right) \\
+ & = A(B-\gamma M_{\pm}-|\lambda|M_{\mp})
 \end{align}$$
+By adding the two equations together, we get:
+$$\begin{align}
+ & M=A(2B-(\gamma+|\lambda|)M) \\
+\implies & M= \frac{2AB}{(\gamma+|\lambda|)A+1}
+\end{align}$$
+Then the susceptibility is given by:
+$$\begin{align}
+\chi & = \frac{M}{H} \\
+ & = \frac{2A\mu_{0}}{(\gamma+|\lambda|)A+1} \\
+ & = \frac{2\mu_{0}\cdot M_{s} \frac{g_{J}\mu_{B}(J+1)}{3k_{B}}}{M_{s} \frac{g_{J}\mu_{B}(J+1)}{3k_{B}}+T} \\
+  & \propto \frac{1}{T-\theta}
+\end{align}$$
+where:
+$$\begin{align}
+\theta & =- M_{s} \frac{g_{J}\mu_{B}(J+1)}{3k_{B}} \\
+ & = - \frac{n(|\lambda|+\gamma)\mu_{\text{eff}}^{2} }{3k_{B}}
+\end{align}$$
+## (b)
 
+We have:
+$$\begin{align}
+S_{i}^{\pm}= S_{i}^{x}\pm iS^{y}_{i}\implies S^{x}_{i}= \frac{S^{+}_{i}+S^{-}_{i}}{2},\ S_{i}^{y}= \frac{S^{+}_{i}-S^{-}_{i}}{2i}
+\end{align}$$
+Similarly, 
+$$S^{x}_{j}= \frac{S^{+}_{j}+S^{-}_{j}}{2},\ S_{j}^{y}= \frac{S^{+}_{j}-S^{-}_{j}}{2i}$$
+Then:
+$$\begin{align}
+\mathbf{S}_{i}\cdot \mathbf{S}_{j} & = S^{z}_{i}S^{z}_{j}+ S^{x}_{i}S^{x}_{j}+S^{y}_{i}S^{y}_{j} \\
+ & = S^{z}_{i}S^{z}_{j}+ \frac{S^{+}_{i}+S^{-}_{i}}{2} \frac{S^{+}_{j}+S^{-}_{j}}{2}+ \frac{S^{+}_{i}-S^{-}_{i}}{2i} \frac{S^{+}_{j}-S^{-}_{j}}{2i} \\
+ & = S^{z}_{i}S^{z}_{j}+ \frac{1}{2}S^{+}_{i}S^{-}_{j}+ \frac{1}{2}S^{-}_{i}S^{+}_{j}
+\end{align}$$
+Then the hamiltonian can be rewritten as:
+$$\begin{align}
+H & = -\sum_{<i,j>}J[S^{z}_{i}S^{z}_{j}+ \frac{1}{2}S^{+}_{i}S^{-}_{j}+ \frac{1}{2}S^{-}_{i}S^{+}_{j}]
+\end{align}$$
+## (c)
+
+Consider the naive ground state:
+$$\ket{g} =\bigotimes_{i}\ket{S,m_{S_{i}}=S} \otimes \bigotimes_{j}\ket{S_{},m_{S_{j}}=-S_{}}   $$
+where $i$ refers to the upward pointing sites, $j$ refers to the downward pointing sites. 
+
+Then:
+$$\begin{align}
+H\ket{g}  & = -\sum_{<i,j>}J(-S^{2})\ket{g} - 2 \cdot\frac{1}{2}J \sum_{i} \sqrt{ 2S }\sqrt{ 2S }\ket{e_{i}} 
+\end{align}$$
+where $\ket{e_{i}}$ corresponding to $\ket{g}$ with the upward pointing spin at site $i$ decreasing to $\ket{S,m_{S_{i}}=S-1}$, and the downward pointing spin at the neighbor of site $i$ decreasing to $\ket{S,m_{S_{j}}=-S+1}$. Since $\ket{S,m_{S_{i}}=S-1}$ is orthogonal to any of the kets in $\ket{g}$, then $\ket{e_{i}}\perp \ket{g}$. Therefore $H\ket{g}$ is nor parallel to $\ket{g}$. 
+
+Then the state we obtain is not an eigenstate.
+## (d)
+
+For $\text{Yb}^{2+}$, the electron configuration is $[\text{Xe}]4f^{14}$. Then $S= 0,\ L=0,\ J= 0$. Then:
+$$g_{J}= \frac{3}{2}+ \frac{S(S+1)-L(L+1)}{2J(J+1)}=\frac{3}{2}$$
+The effective momentum is:
+$$\mu_{\text{eff}}=g_{J}\mu_{B}\sqrt{ J(J+1) }=0$$
+For $\text{Yb}^{3+}$, the electron configuration is $[\text{Xe}]4f^{13}$. Then $S= \frac{1}{2},\ L=3,\ J=\frac{7}{2}$. Then:
+$$g_{J}= \frac{3}{2}+ \frac{S(S+1)-L(L+1)}{2J(J+1)}=\frac{8}{7}$$
+The effective momentum is:
+$$\mu_{\text{eff}}=\frac{4}{7}\sqrt{ 63 }\mu_{B}$$
+$\text{Yb}^{3+}$ must dominate, since the material nearly follows the Curie-Weiss law at high temperature, meaning that the effective moment is not zero.
+## (e)
+
+The vertical line of fitting is just $\chi ^{-1}$. Know that $\chi \propto \frac{1}{T-\theta}$, then $\chi ^{-1}\propto T-\theta$. Then the intercept of the curve with the x-axis should be $\theta$. Then $\theta< 0$. From part (a) we know that AFM gives $\theta<0$. So $J<0$. 
+
+We read $\theta = -125\text{ K}$. The exchange energy should be comparable to this value. We estimate:
+$$\begin{align}
+J & \sim k_{B}|\theta| \\
+ & \approx 1.73 \times 10^{-21}\text{ J} \\
+ & \approx 1.08 \times 10^{-2}\text{ eV}
+\end{align}$$
 
 
 
