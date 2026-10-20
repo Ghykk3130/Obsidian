@@ -23,7 +23,7 @@ m & = \left( - \frac{12}{3000} \right)\cdot\left( - \frac{15}{-4} \right)= - \fr
 \end{align}$$
 Then the size of the image is:
 $$\begin{align}
-2 \times \frac{3}{200}=3\text{ cm}
+200 \times \frac{3}{200}=3\text{ cm}
 \end{align}$$
 # Question 2
 
@@ -69,9 +69,9 @@ $$\begin{align}
 \end{align}$$
 ## (c)
 
-We have:
+The wavenumber is $\frac{2\pi}{\lambda}= 8.98 \times 10^{6}\text{ m}^{-1}$. The angular frequency is $\omega=ck=2.69 \times 10^{15}\text{ s}^{-1}$. Then we have:
 $$\begin{align}
-\mathbf{E}=(1.01 \times 10^{3}) \hat{\mathbf{x}}\cos((8.98 \times 10^{6}\text{ m})z-(2.69 \times 10^{15}\text{ s}^{-1})t)
+\mathbf{E}=(1.01 \times 10^{3}) \hat{\mathbf{x}}\cos((8.98 \times 10^{6}\text{ m}^{-1})z-(2.69 \times 10^{15}\text{ s}^{-1})t)
 \end{align}$$
 # Question 4
 
@@ -165,7 +165,7 @@ E_{y} & = E_{0}\cos(kz-\omega t+\delta)
 At $z=0$, we have:
 $$\begin{align}
  & E_{x}= E_{0}\cos \omega t \\
- & E_{y}=E_{0}\cos(\omega t-\delta)= \cos \omega t\cos\delta+\sin \omega t\sin\delta
+ & E_{y}=E_{0}\cos(\omega t-\delta)=E_{0}( \cos \omega t\cos\delta+\sin \omega t\sin\delta)
 \end{align}$$
 Then:
 $$\begin{align}
@@ -186,7 +186,7 @@ E_{x} \\
 E_{y}
 \end{pmatrix}=E_{0}^{2}\sin ^{2}\delta
 \end{align}$$
-The eigen values are $\lambda=1\pm \cos\delta$, then the quadratic form is positive definite. Then it is an ellipse.
+The eigen values are $\lambda=1\pm \cos\delta$, then the quadratic form is positive definite for $n\pi$. Then it is an ellipse. But if $\delta=n\pi$, the curve is a line.  
 ## (b)
 
 If $\delta=0$, clearly $E_{x}=E_{y}$. Therefore the light is linearly polarized. Since the angle between the polarization vector and the x axis is $45^{\circ}$, it is diagonal polarized.
@@ -253,7 +253,7 @@ $$\begin{align}
 E & = E_{0}\cos(k_{1}x-\omega_{1}t)+E_{0}\cos(k_{2}x-\omega_{2}t) \\
  & = 2E_{0}\cos\left(  \frac{k_{1}+k_{2}}{2}x- \frac{\omega_{1}+\omega_{2}}{2}t  \right)\cos\left(  \frac{k_{1}-k_{2}}{2}x- \frac{\omega_{1}-\omega_{2}}{2}t \right)
 \end{align}$$
-The rapidly oscillating carrier is $\cos\left(  \frac{k_{1}+k_{2}}{2}x- \frac{\omega_{1}+\omega_{2}}{2}t \right)$. The slowly varying envelope is $2E_{0}\cos\left(  \frac{k_{1}-k_{2}}{2}x- \frac{\omega_{1}-\omega_{2}}{2}t \right)$. If $\omega_{1}\approx \omega_{2}$, then the interference between two close frequencies produces a slowly varying amplitude envelope that modulates the high-frequency carrier wave. At any fixed observation point, this causes the wave intensity to periodically swell and diminish at the beat frequency $\Delta \omega = \vert{}\omega_1 - \omega_2\vert{}$, creating a rhythmic pulsation resembling an acoustic beat.
+The rapidly oscillating carrier is $\cos\left(  \frac{k_{1}+k_{2}}{2}x- \frac{\omega_{1}+\omega_{2}}{2}t \right)$. The slowly varying envelope is $2E_{0}\cos\left(  \frac{k_{1}-k_{2}}{2}x- \frac{\omega_{1}-\omega_{2}}{2}t \right)$. If $\omega_{1}\approx \omega_{2}$, then the interference between two close frequencies produces a slowly varying amplitude envelope that modulates the high-frequency carrier wave. At any fixed observation point, this causes the wave intensity to periodically swell and diminish at the beat angular frequency $\Delta \omega = \vert{}\omega_1 - \omega_2\vert{}$, creating a rhythmic pulsation resembling an acoustic beat.
 ## (b)
 
 We have:
@@ -263,8 +263,8 @@ y(0,t) & = 2E_{0}\cos\left(  \frac{\omega_{1}+\omega_{2}}{2}t \right)\cos\left( 
 ![[a7c546a54e0440e4f65d30c03a93bde8.jpg|centering|400]]
 ## (c)
 1. $\bar{\nu}= \frac{\nu_{1}+\nu_{2}}{2}= 500.1\text{ THz}$. 
-2. $\frac{|\nu_{1}-\nu_{2}|}{2}=0.1\text{ THz}$
-3. $T= \frac{2}{|\nu_{1}-\nu_{2}|}= 10\text{ ps}$
+2. $\frac{|\nu_{1}-\nu_{2}|}{2}=0.1\text{ THz}$. But since the envelope has period that is half of the period corresponding to $\frac{|\nu_{1}-\nu_{2}|}{2}$, the beat frequency is $0.2\text{ THz}$
+3. $T= \frac{1}{0.2\text{ THz}}= 5\text{ ps}$
 
 
 
