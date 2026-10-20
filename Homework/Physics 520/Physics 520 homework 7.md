@@ -37,7 +37,7 @@ S & = -\frac{\partial F}{\partial T} \\
 Know that the internal energy is:
 $$\begin{align}
 U & = -Ng_{J}\mu_{B}\langle m_{J}\rangle B  \\
- & = -N\mu_{B}g_{J}J B_{J}(y)\\
+ & = -N\mu_{B}g_{J}J B_{J}(y)B\\
  & = -N\mu_{B}B \tanh(y)
 \end{align}$$
 Then we take the derivative:
@@ -71,9 +71,10 @@ $$\begin{align}
 \end{align}$$
 Then we have:
 $$\begin{align}
-M & = n\mu_{B}g_{J}\langle m_{J}\rangle  \\
+M & = -n\mu_{B}g_{J}\langle m_{J}\rangle  \\
    &   = M_{s} B_{J}(y),\ M_{s}=n\mu_{B}g_{J}J,\ y=Jx=J\mu_{B}g_{J}\beta B
 \end{align}$$
+Here the minus sign is because electrons carry negative charge.
 ## (d)
 
 For $y\ll 1$, we have:
