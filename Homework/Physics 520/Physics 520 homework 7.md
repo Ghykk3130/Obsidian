@@ -4,45 +4,57 @@
 We have:
 $$\begin{align}
 M & = \frac{nB}{3k_{B}T} \mu_{\text{eff}}^{2} \\
- & = \frac{nB}{3k_{B}T}\left( 2 \mu_{B}\cdot \frac{3}{4} \right)^{2} \\
- & = \frac{3}{4} \frac{nB\mu_{B}^{2}}{k_{B}T}
+ & = \frac{nB}{3k_{B}T}\left( 2 \mu_{B}\cdot \sqrt{ \frac{3}{4} } \right)^{2} \\
+ & =  \frac{nB\mu_{B}^{2}}{k_{B}T}
 \end{align}$$
 Then susceptibility is given by:
 $$\begin{align}
 \chi & = \frac{M}{H} \\
- & = \frac{3}{4} \frac{n\mu_{0}\mu_{B}^{2}}{k_{B}T}
+ & =  \frac{n\mu_{0}\mu_{B}^{2}}{k_{B}T}
 \end{align}$$
 ## (b)
 
+The partition function is:
+$$\begin{align}
+Z & = \left( \sum_{m}\exp(\beta g_{J}\mu_{B}Bm_{J}) \right)^{N} \\
+ & = (\exp(\beta \mu_{B}B)+\exp(-\beta \mu_{B}B))^{N} \\
+ & = (2\cosh(\beta \mu_{B}B))^{N}
+\end{align}$$
+Then the free energy is:
+$$\begin{align}
+F & = - \frac{1}{\beta}\ln Z \\
+ & = -Nk_{B}T(\ln \cosh(\beta \mu_{B}B)+\ln{2})
+\end{align}$$
+Then the entropy is:
+$$\begin{align}
+S & = -\frac{\partial F}{\partial T} \\
+ & = Nk_{B}(\ln \cosh(\beta \mu_{B}B)+\ln{2}) - Nk_{B}T \tanh(\beta \mu_{B}B) \frac{\mu_{B}B}{k_{B}T^{2}}  \\
+ & = Nk_{B}(\ln \cosh(y)-y\tanh y+\ln{2})
+\end{align}$$
+
+![[Pasted image 20261020152457.png|centering|600]]
+
 Know that the internal energy is:
 $$\begin{align}
-U & = Ng_{J}\mu_{B}\langle m_{J}\rangle B  \\
- & = N\mu_{B}g_{J}J B_{J}(y)\\
- & = N\mu_{B}B \tanh(y)
+U & = -Ng_{J}\mu_{B}\langle m_{J}\rangle B  \\
+ & = -N\mu_{B}g_{J}J B_{J}(y)\\
+ & = -N\mu_{B}B \tanh(y)
 \end{align}$$
 Then we take the derivative:
 $$\begin{align}
-S & = \frac{\partial U}{\partial T} \\
- & = N\mu_{B}B \frac{\partial \tanh(y)}{\partial y} \frac{\partial y}{\partial T} \\
- & = N\mu_{B}B \frac{1}{\cosh ^{2}y} \left( - \frac{\mu_{B}B}{k_{B}T^{2}} \right) \\
- & = - \frac{N\mu_{B}^{2}B^{2}}{\cosh ^{2}y} \frac{1}{k_{B}T^{2}} \\
- & = -  Nk_{B} \frac{y^{2}}{\cosh ^{2}y} ,\ y=\beta \mu_{B}B
+c & = \frac{1}{N} \frac{\partial U}{\partial T} \\
+ & = -\mu_{B}B \frac{\partial \tanh(y)}{\partial y} \frac{\partial y}{\partial T} \\
+ & = -\mu_{B}B \frac{1}{\cosh ^{2}y} \left( - \frac{\mu_{B}B}{k_{B}T^{2}} \right) \\
+ & =  \frac{\mu_{B}^{2}B^{2}}{\cosh ^{2}y} \frac{1}{k_{B}T^{2}} \\
+ & =   k_{B} \frac{y^{2}}{\cosh ^{2}y} ,\ y=\beta \mu_{B}B
 \end{align}$$
 ![[Pasted image 20261019163438.png|centering|600]]
-We then calculate the specific heat:
-$$\begin{align}
-c & = \frac{1}{N} T \frac{\partial S }{\partial T} \\
- & = - \frac{1}{N}T \cdot Nk_{B} \frac{\partial}{\partial T}\left(  \frac{y^{2}}{\cosh ^{2}y} \right) \\
- & = -k_{B}T \frac{2y \cosh ^{2}y-2\cosh y\sinh y \cdot y^{2}}{\cosh ^{4}y} \frac{\partial y}{\partial T} \\
- & = k_{B}^{} \frac{2y^{2}\cosh ^{2}y-2y^{3}\cosh y\sinh y}{\cosh ^{4}y} \\
- & = 2k_{B}y^{2} \text{sech}^{2}y(1-y \tanh y)
-\end{align}$$
-![[Pasted image 20261019163631.png|centering|600]]
+
 ## (c)
 
 Without loss of generality, we let $\mathbf{B}=B \hat{\mathbf{z}}$. We have:
 $$\begin{align}
-\langle m_{J}\rangle & = \sum_{m_{J}}m_{J}\exp(-\beta g_{J} \mu_{B}m_{J}B) \\ & = -\sum_{m_{J}} \frac{\partial}{\partial(\beta g_{J}\mu_{B}B)} \exp(-\beta g_{J}\mu_{B}m_{J}B) \\
+\langle m_{J}\rangle & =  \frac{1}{Z} \sum_{m_{J}}m_{J}\exp(-\beta g_{J} \mu_{B}m_{J}B) \\ & = - \frac{1}{Z} \sum_{m_{J}} \frac{\partial}{\partial(\beta g_{J}\mu_{B}B)} \exp(-\beta g_{J}\mu_{B}m_{J}B) \\
 
  & = - \frac{\partial}{\partial x}\ln Z, x= \beta g_{J}\mu_{B}B
 \end{align}$$
@@ -76,7 +88,7 @@ B_{J}(y) & \approx \frac{2J+1}{2J}\left(  \frac{2J}{2J+ 1} \frac{1}{y} + \frac{2
  & =  \frac{J+1}{3J}y
 \end{align}$$
 
-Then we get the low-temperature magnetization:
+Then we get the high-temperature magnetization:
 $$\begin{align}
 M & = M_{s} \frac{J+1}{3J}y \\
  & = ng_{J}\mu_{B}J \frac{J+1}{3J} J \beta \mu_{B}BJ g_{J} \\
@@ -111,38 +123,38 @@ H & = -Js \langle S_{j}\rangle\sum_{i}S_{i}^{z}+g\mu_{B}B\sum_{i}S^{z}_{i} \\
 This is exactly the model we encountered in Curie, with an effective field. We have:
 $$\begin{align}
 M & = M_{s} \tanh(y) \\
- & = \frac{ng\mu_{B} }{2} \tanh(y),\ y=\beta \mu_{B}B_{\text{eff}}= \beta \mu_{B}\left( B- \frac{Js\langle S\rangle }{g\mu_{B}} \right)
+ & = \frac{ng\mu_{B} }{2} \tanh(y),\ y= g \beta \mu_{B}B_{\text{eff}} \frac{1}{2}=  \frac{g\beta \mu_{B}}{2} \left( B- \frac{Js\langle S\rangle }{g\mu_{B}} \right)
 \end{align}$$
 By assumption, we have:
 $$\begin{align}
-M & =- n\mu_{B} \langle S\rangle
+M & =- n\mu_{B} g\langle S\rangle
 \end{align}$$
 Here the minus sign is be because electrons carry negative charge. Therefore the self-exact equation is:
 $$\begin{align}
-M & = \frac{ng\mu_{B}}{2}\tanh\left( \beta \mu_{B}\left( B+ \frac{sJM}{ng\mu_{B}^{2}} \right) \right)
+M & = \frac{ng\mu_{B}}{2}\tanh\left(  \frac{\beta \mu_{B}g}{2} \left( B+ \frac{sJM}{ng^{2}\mu_{B}^{2}} \right) \right)
 \end{align}$$
 
 ## (c)
 
 At high temperatures, we have $y\rightarrow 0$. Then:
 $$\begin{align}
-M & \approx \frac{ng\mu_{B}}{2} \beta \mu_{B}\left( B+ \frac{sJM}{ng\mu_{B}^{2}} \right) \\
-\implies & M= \frac{ng\mu_{B}^{2}\beta B}{2-\beta sJ}
+M & \approx \frac{ng\mu_{B}}{2}  \frac{g\beta \mu_{B}}{2} \left( B+ \frac{sJM}{ng^{2}\mu_{B}^{2}} \right) \\
+\implies & M= \frac{ng^{2}\mu_{B}^{2}\beta B}{4-\beta sJ}
 \end{align}$$
 Therefore:
 $$\begin{align}
 \chi & = \frac{M}{H} \\
- & = \frac{ng\mu_{B}^{2}\mu_{0}}{(2k_{B}T-sJ)}
+ & = \frac{ng^{2}\mu_{B}^{2}\mu_{0}}{(4k_{B}T-sJ)}
 \end{align}$$
 ## (d)
 
 The critical point of the second order phase transition is where the second derivative of the free energy diverges. So:
 $$\begin{align}
- & 2k_{B}T_{c}-sJ=0 \\
-\implies & T_{c}= \frac{sJ}{2k_{B}}
+ & 4k_{B}T_{c}-sJ=0 \\
+\implies & T_{c}= \frac{sJ}{4k_{B}}
 \end{align}$$
 Then the susceptibility can be written as:
-$$\chi=  \frac{ng\mu_{B}^{2}\mu_{0}}{2k_{B}(T-T_{c})} $$
+$$\chi=  \frac{ng^{2}\mu_{B}^{2}\mu_{0}}{4k_{B}(T-T_{c})} $$
 ## (e)
 
 ![[8307835e524d9e20ddee6ba174f94e69.jpg|centering|400]]
@@ -155,26 +167,26 @@ H  = g\mu_{B}B_{\text{eff}}\sum_{i}S^{z}_{i},\ B_{\text{eff}}=B- \frac{Js\langle
 To repeat part (b), we replace the hyperbolic tangent with $B_{1}$:
 $$\begin{align}
 M & = M_{s} B_{1}(y) \\
- & = \mu_{B}gB B_{1}(y),\ y=\beta \mu_{B}B_{\text{eff}}= \beta \mu_{B}\left( B- \frac{Js\langle S\rangle }{g\mu_{B}} \right)
+ & = \mu_{B}gB B_{1}(y),\ y=g\beta \mu_{B}B_{\text{eff}}= \beta g\mu_{B}\left( B- \frac{Js\langle S\rangle }{g\mu_{B}} \right)
 \end{align}$$
 This equation still holds:
 $$\begin{align}
-M & =- n\mu_{B} \langle S\rangle
+M & =- n\mu_{B}g \langle S\rangle
 \end{align}$$
 Then we get:
 $$\begin{align}
-M & = ng\mu_{B}B_{1}\left( \beta \mu_{B}\left( B+ \frac{sJM}{ng\mu_{B}^{2}} \right) \right)
+M & = ng\mu_{B}B_{1}\left( \beta g\mu_{B}\left( B+ \frac{sJM}{ng^{2}\mu_{B}^{2}} \right) \right)
 \end{align}$$
 Then we repeat part (c): at high temperatures, we have $y\rightarrow 0$. Then:
 $$\begin{align}
-M & \approx ng\mu_{B}\beta \mu_{B}\cdot \frac{1+1}{3} \left( B+ \frac{sJM}{ng\mu_{B}^{2}} \right)  \\
- & = \frac{2}{3}ng\mu_{B}^{2}\beta\left( B+ \frac{sJM}{ng\mu_{B}^{2}} \right) \\
-\implies & M= \frac{ng\mu_{B}^{2}\beta B}{ \frac{3}{2} -\beta sJ}
+M & \approx ng^{2}\mu_{B}\beta \mu_{B}\cdot \frac{1+1}{3} \left( B+ \frac{sJM}{ng^{2}\mu_{B}^{2}} \right)  \\
+ & = \frac{2}{3}ng^{2}\mu_{B}^{2}\beta\left( B+ \frac{sJM}{ng^{2}\mu_{B}^{2}} \right) \\
+\implies & M= \frac{ng^{2}\mu_{B}^{2}\beta B}{ \frac{3}{2} -\beta sJ}
 \end{align}$$
 Therefore:
 $$\begin{align}
 \chi & = \frac{M}{H} \\
- & = \frac{ng\mu_{B}^{2}\mu_{0}}{\left(  \frac{3}{2} k_{B}T-sJ \right)}
+ & = \frac{ng^{2}\mu_{B}^{2}\mu_{0}}{\left(  \frac{3}{2} k_{B}T-sJ \right)}
 \end{align}$$
 We calculate the critical temperature:
 $$\begin{align}
@@ -182,7 +194,7 @@ $$\begin{align}
 \end{align}$$
 Then:
 $$\begin{align}
-\chi= \frac{2ng\mu_{B}^{2}\mu_{0}}{3k_{B}(T-T_{c})}
+\chi= \frac{2ng^{2}\mu_{B}^{2}\mu_{0}}{3k_{B}(T-T_{c})}
 \end{align}$$
 # Problem 3
 ## (a)
@@ -272,10 +284,10 @@ where $\ket{e_{i}}$ corresponding to $\ket{g}$ with the upward pointing spin at 
 Then the state we obtain is not an eigenstate.
 ## (d)
 
-For $\text{Yb}^{2+}$, the electron configuration is $[\text{Xe}]4f^{14}$. Then $S= 0,\ L=0,\ J= 0$. Then:
-$$g_{J}= \frac{3}{2}+ \frac{S(S+1)-L(L+1)}{2J(J+1)}=\frac{3}{2}$$
-The effective momentum is:
-$$\mu_{\text{eff}}=g_{J}\mu_{B}\sqrt{ J(J+1) }=0$$
+For $\text{Yb}^{2+}$, the electron configuration is $[\text{Xe}]4f^{14}$. Then $S= 0,\ L=0,\ J= 0$. The Lande g factor is not well-defined, since $J(J+1)=0$ is on the denominator.
+
+The effective momentum is $0$ since the shell is completely filled.
+
 For $\text{Yb}^{3+}$, the electron configuration is $[\text{Xe}]4f^{13}$. Then $S= \frac{1}{2},\ L=3,\ J=\frac{7}{2}$. Then:
 $$g_{J}= \frac{3}{2}+ \frac{S(S+1)-L(L+1)}{2J(J+1)}=\frac{8}{7}$$
 The effective momentum is:
