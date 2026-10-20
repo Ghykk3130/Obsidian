@@ -194,7 +194,34 @@ $$\begin{align}
 Then the quadratic form is positive definite. Then it is an ellipse.
 ## (b)
 
-If $\delta=0$, clearly $E_{x}=E_{y}$. Therefore the light is 
+If $\delta=0$, clearly $E_{x}=E_{y}$. Therefore the light is linearly polarized. Since the angle between the polarization vector and the x axis is $45^{\circ}$, it is diagonal polarized.
+
+If $\delta= \frac{\pi}{2}$, then we have $E_{x}=E_{0}\cos(kz-\omega t),\ E_{y}=-E_{0}\sin(kz-\omega t)$. Then the light is circular and rotating counterclockwise if we face the source. It is left circular polarized.
+
+If $\delta=\pi$, then we have $E_{x}=E_{0}\cos(kz-\omega t),\ E_{y}=-E_{0}\cos(kz-\omega t)$. Then the light is linearly polarized. Since the angle between the polarization vector and the x axis is $135^{\circ}$, it is anti-diagonal polarized.
+## (c)
+
+We have:
+$$\begin{align}
+\mathbf{E}_{1} & = E_{0} \hat{\mathbf{x}}e^{i(kz-\omega t)} \\
+\mathbf{E}_{2} & = E_{0}\hat{\mathbf{y}}e^{i(kz-\omega t+\delta)}
+\end{align}$$
+If $\delta= \frac{\pi}{2}$, the complex amplitude for $\mathbf{E}_{2}$ is $iE_{0}$. We take the real parts:
+$$\begin{align}
+ & \mathrm{Re}(E_{0}\hat{\mathbf{x}}e^{i(kz-\omega t)})= E_{0}\hat{\mathbf{x}}\cos(kz-\omega t) \\
+ & \mathrm{Re}(E_{0}\hat{\mathbf{y}}e^{i(kz-\omega t+\delta)})= E_{0}\hat{\mathbf{y}}\cos(kz-\omega t+\delta)
+\end{align}$$
+Then we restore the physical fields.
+## (d)
+
+We have:
+$$\begin{align}
+E^{2} & = (E_{0} \hat{\mathbf{x}}e^{i(kz-\omega t)}+E_{0}\hat{\mathbf{y}}e^{i(kz-\omega t+\delta)})\cdot(E_{0}\hat{\mathbf{x}}e^{-i(kz-\omega t)}+E_{0} \hat{\mathbf{y}}e^{-i(kz-\omega t+\delta)}) \\
+ & = E_{0}^{2}+E_{0}^{2} \\
+ & = 2E_{0}^{2}
+\end{align}$$
+Therefore, the time-averaged intensity is 
+
 
 
 
