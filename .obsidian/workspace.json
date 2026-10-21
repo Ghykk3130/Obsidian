@@ -3735,12 +3735,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Homework/Physics 513/Cheat sheet.md",
+                "file": "Homework/Physics 513/Physics 513 homework 4.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Cheat sheet"
+              "title": "Physics 513 homework 4"
             }
           }
         ],
@@ -3798,7 +3798,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "Wightman",
+                "query": "Green函数",
                 "matchingCase": true,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -3813,8 +3813,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200.5,
-    "collapsed": true
+    "width": 200.5
   },
   "right": {
     "id": "9003d078f8dbc4ed",
@@ -3920,9 +3919,12 @@
   },
   "active": "917f153d9e4d16c5",
   "lastOpenFiles": [
+    "Homework/Physics 513/Physics 513 homework 3.md",
+    "Homework/Physics 513/Physics 513 homework 2.md",
+    "Homework/Physics 513/Cheat sheet.md",
+    "Notes/Klein-Gordon传播子.md",
     "Homework/Physics 513/Physics 513 homework 4.md",
     "Homework/Physics 513/Physics 513 homework 7.md",
-    "Homework/Physics 513/Cheat sheet.md",
     "Notes/Feynman传播子.md",
     "Homework/Physics 513/Physics 513 homework 5.md",
     "Notes/Noether定理.md",
@@ -3952,9 +3954,6 @@
     "Notes/Dam-break问题.md",
     "Notes/标量场的正则量子化.md",
     "Notes/Maxwell-Boltzmann 分布.md",
-    "Notes/经典场论.md",
-    "Homework/Physics 513/Physics 513 homework 2.md",
-    "Homework/Physics 513/Physics 513 homework 1.md",
     "Pictures/Pasted image 20261015202937.png",
     "trace-cookies.txt",
     "max-page-cookies.txt",

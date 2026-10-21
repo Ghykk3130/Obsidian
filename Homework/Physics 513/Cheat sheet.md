@@ -9,7 +9,9 @@ $\{ \psi_{a}(x),\psi ^{\dagger}_{b}(y) \}_{\text{ET}}=\delta(\mathbf{x}-\mathbf{
 
 $\partial_{\mu} \frac{\partial\mathcal{L}}{\partial(\partial_{\mu}\phi)}- \frac{\partial\mathcal{L}}{\partial \phi}=0$, $j^{\mu}= \frac{\partial\mathcal{L}}{\partial(\partial_{\mu}\phi)} \Delta \phi -\mathcal{J}^{\mu}$, $\phi \rightarrow \phi+\alpha \Delta \phi$, $\mathcal{L}\rightarrow \mathcal{L}+\alpha \partial_{\mu}\mathcal{J}^{\mu}$, $\partial_{\mu}j^{\mu}=0$, $T^{\mu \nu}= \frac{\partial\mathcal{L}}{\partial(\partial_{\mu}\phi)}\partial^{\nu}\phi-g^{\mu \nu}\mathcal{L}$, $\partial_{\mu}T^{\mu \nu}=0$, $P^{i}=\int d^{3}x T^{0 i}$, 
 
-$D_{W}(x-y)=\bra{0}\phi(x)\phi(y)\ket{0}= \int \frac{d^{3}p}{(2\pi)^{3}} \frac{e^{-ip \cdot(x-y)}}{2E_{\mathbf{p}}}$
+$D_{W}(x-y)=\bra{0}\phi(x)\phi(y)\ket{0}= \int \frac{d^{3}p}{(2\pi)^{3}} \frac{e^{-ip \cdot(x-y)}}{2E_{\mathbf{p}}}$, $\frac{1}{x-i\epsilon}=P \frac{1}{x}+i\pi\delta(x)$, $(\Box_{x}+m^{2})D(x-y)=-i\delta(x-y)$
+
+$[A,BC]=\{ A,B \}C-B\{ A,C \}$, 
 
 
 
