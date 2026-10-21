@@ -1,4 +1,4 @@
-# 1. 
+# 1. 解方程
 
 首先证明，Dirac方程的解都满足Klein-Gordon方程：
 $$\begin{align}
@@ -107,7 +107,7 @@ $$\begin{align}
 \end{align}$$
 实际上，$\{ \xi^{s} \},\ \{ \eta^{s} \}$是任意符合$(\xi^{s})^{\dagger}\xi^{r}=\delta^{s r},\ (\eta^{s})^{\dagger}\eta^{r}=\delta^{s r}$的基都可以。
 
-# 2. 
+# 2. 正交关系
 
 容易计算：
 $$\begin{align}
