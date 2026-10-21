@@ -232,7 +232,7 @@ U(T)\bar{\psi}(x)U^{-1}(T) & = U \psi ^{\dagger}\gamma^{0}U^{-1} \\
 
 不妨假设charge conjugation将粒子变成反粒子：
 $$U(C)a^{s}_{\mathbf{p}}U^{-1}(C)=b^{s}_{\mathbf{p}},\ U(C)b^{s}_{\mathbf{p}}U^{-1}(C)=a^{s}_{\mathbf{p}}$$
-我们计算：
+约定$\eta^{s}=-i\sigma^{2}(\xi^{s})^{*}$，我们计算：
 $$\begin{align}
 (v^{s}(p))^{*} & = \begin{pmatrix}
 \sqrt{ p\cdot \sigma }\eta^{s} \\
