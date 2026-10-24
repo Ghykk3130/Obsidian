@@ -401,6 +401,12 @@ $l$是角动量不是距离。量纲分析选A。
 145. ![[Pasted image 20261024161502.png|centering|400]]
 我么有$\Delta P= \frac{1}{2}\rho \Delta v^{2}+\rho g \Delta h$。但是$\Delta v^{2}<0$，这点需要注意！Bernoulli的题吧注意那个量大，哪个量小。
 
+146. ![[Pasted image 20261024190902.png|centering|300]]
+首先，$\gamma= \frac{\text{DOF+2}}{\text{DOF}}$。若是双原子分子，低温下只有平动自由度。则$\gamma= \frac{5}{3}$。升高温度，转动自由度被激发。由于orientation需要两个角度描述，所以转动有两个自由度。所以$\gamma= \frac{5+2}{5}$。再升高温度，由于振动自由度包含$\mathbf{r}_{1}-\mathbf{r}_{2}$运动的动能和$\frac{1}{2}k|\mathbf{r}_{1}-\mathbf{r}_{2}|^{2}$的势能，所以有两个自由度，$\gamma= \frac{7+2}{7}$。选E。
+
+147. ![[Pasted image 20261024191358.png|centering|400]]
+二维分子有两个平动自由度$x,y$，以及一个转动自由度$\phi$。所以$C_{V}= \frac{3}{2}k_{B}$。
+
 
 
 
