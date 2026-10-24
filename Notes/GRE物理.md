@@ -377,10 +377,35 @@ U & = \frac{1}{2\mu_{0}}\int r dr d\phi \left(  \frac{\mu_{0}NI}{2\pi r} \right)
 137. ![[Pasted image 20261024144946.png|centering|400]]
 需要考虑角动量守恒。$\int dr T$。而$T=M \frac{v^{2}}{r^{2}}= \frac{L^{2}}{Mr^{3}}$。其中$L$是守恒的。圆周运动想不到约束时都可以想一下角动量守恒。
 
+138. ![[Pasted image 20261024154029.png|centering|500]]
+![[Pasted image 20261024154059.png|centering|300]]
+选B。题目问的是加速度，不是力。还需除以5kg的质量。
+
+139. ![[Pasted image 20261024155115.png|centering|500]]
+首先注意到==🔴转动惯量是对于距离轴的长度积分，而不是对于radial长度积分==。于是$I= \int r^{2}\sin \theta dr d\theta d\phi A r (r \sin \theta)^{2}$。很容易选A。但是系数$A$实际上也是$M$的函数。所以实际上$I\propto R^{2}$。计算后发现选B。
+
+140. ![[Pasted image 20261024155815.png|centering|400]]
+很容易选B。但实际上B， C速度的x分量都是v/2而不是v。所以夹角实际上是$\arccos\left( \frac{1}{4} \right)$。或者直接化成首尾相接的三角形更不容易错。以后粒子碰撞看矢量都画成首尾相接的三角形吧。选D。
+
+141. ![[Pasted image 20261024160301.png|centering|400]]
+$l$是角动量不是距离。量纲分析选A。
+142. ![[Pasted image 20261024160552.png|centering|500]]
+抛物线轨道的核心是，机械能为零。椭圆轨道机械能小于零。那么$\frac{1}{2}mv^{2}- \frac{GmM}{d}=0$。得到$d= \frac{2GM}{v^{2}}$。
+
+143. ![[Pasted image 20261024160858.png|centering|400]]
+你是瞎吗？M的弹簧是串联的。鉴定为没圈出信息。选D。
+
+144. ![[Pasted image 20261024161145.png|centering|400]]
+受迫振动振幅满足$A\propto \frac{1}{|\omega^{2}-\omega_{0}^{2}|}$。这个函数必定在$\omega_{0}$发散。（共振振幅无穷大）。选B。
+
+145. ![[Pasted image 20261024161502.png|centering|400]]
+我么有$\Delta P= \frac{1}{2}\rho \Delta v^{2}+\rho g \Delta h$。但是$\Delta v^{2}<0$，这点需要注意！Bernoulli的题吧注意那个量大，哪个量小。
+
+
 
 
 >[!Quote]
->错误主要来自于两方面。没仔细看题。没理性推导。打破第二点的方式就是用写代替思考。
+>错误主要来自于两方面。没仔细看题。没理性推导。打破第一点的方法是，思考中有例如条件不明确的地方，回到题干圈出信息。不圈出来不继续做题。打破第二点的方式就是用写代替思考。
 
 
 
