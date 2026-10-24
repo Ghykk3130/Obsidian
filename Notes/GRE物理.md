@@ -374,6 +374,10 @@ U & = \frac{1}{2\mu_{0}}\int r dr d\phi \left(  \frac{\mu_{0}NI}{2\pi r} \right)
 136. ![[Pasted image 20261015202937.png|centering|400]]
 能量公式$U= \frac{1}{2}LI^{2}$。选C。
 
+137. ![[Pasted image 20261024144946.png|centering|400]]
+需要考虑角动量守恒。$\int dr T$。而$T=M \frac{v^{2}}{r^{2}}= \frac{L^{2}}{Mr^{3}}$。其中$L$是守恒的。圆周运动想不到约束时都可以想一下角动量守恒。
+
+
 
 >[!Quote]
 >错误主要来自于两方面。没仔细看题。没理性推导。打破第二点的方式就是用写代替思考。
