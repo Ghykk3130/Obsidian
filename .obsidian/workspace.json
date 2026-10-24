@@ -3742,9 +3742,21 @@
               "icon": "lucide-file",
               "title": "申请"
             }
+          },
+          {
+            "id": "aacdb03cc2890fe4",
+            "type": "leaf",
+            "state": {
+              "type": "release-notes",
+              "state": {
+                "currentVersion": "1.14.5"
+              },
+              "icon": "lucide-book-up",
+              "title": "Release Notes 1.14.5"
+            }
           }
         ],
-        "currentTab": 266
+        "currentTab": 267
       }
     ],
     "direction": "vertical"
@@ -3919,7 +3931,7 @@
       "obsidian-shellcommands:Shell commands: Custom variables": false
     }
   },
-  "active": "917f153d9e4d16c5",
+  "active": "aacdb03cc2890fe4",
   "lastOpenFiles": [
     "Homework/Physics 513/Physics 513 homework 6.md",
     "Homework/Physics 513/Cheat sheet.md",
