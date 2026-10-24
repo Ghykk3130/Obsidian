@@ -389,3 +389,4 @@ U & = \frac{1}{2\mu_{0}}\int r dr d\phi \left(  \frac{\mu_{0}NI}{2\pi r} \right)
 
 
 
+

@@ -3747,12 +3747,14 @@
             "id": "aacdb03cc2890fe4",
             "type": "leaf",
             "state": {
-              "type": "release-notes",
+              "type": "markdown",
               "state": {
-                "currentVersion": "1.14.5"
+                "file": "Notes/GRE物理.md",
+                "mode": "source",
+                "source": false
               },
-              "icon": "lucide-book-up",
-              "title": "Release Notes 1.14.5"
+              "icon": "lucide-file",
+              "title": "GRE物理"
             }
           }
         ],
@@ -3810,7 +3812,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "申请",
+                "query": "GRE",
                 "matchingCase": true,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -3826,8 +3828,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200.5,
-    "collapsed": true
+    "width": 200.5
   },
   "right": {
     "id": "9003d078f8dbc4ed",
