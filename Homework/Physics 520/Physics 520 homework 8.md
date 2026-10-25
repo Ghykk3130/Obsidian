@@ -115,5 +115,74 @@ $$\begin{align}
 \end{align}$$
 ## (e)
 
+For part (a), the derivation is the same. The only difference is that $J$ should be negative. 
+
+For part (b), we can assume sublattices $A, B$, and $S^{z}_{A,i}=S,\ S^{z}_{B,i}=-S$. Then it's easy to obtain:
+$$\begin{align}
+\hbar \frac{dS^{x}_{A,i}}{dt} & =J\sum_{j}(\delta S^{y}_{A,i}S^{z}_{B,j}-S^{z}_{A,i}\delta S^{y}_{B,j}) \\
+ & = \sum_{j}J(\delta S^{y}_{A,i}(-S)-S\delta S^{y}_{B,j}) \\
+ & = -JS \sum_{j}(\delta S^{y}_{A,i}+\delta S^{y}_{B,j})
+\end{align}$$
+Similarly, we can obtain:
+$$\begin{align}
+\hbar \frac{dS^{y}_{A,i}}{dt} & = J\sum_{j}(S^{z}_{A,i}\delta S^{x}_{B,j}-\delta S^{x}_{A,i}S^{z}_{B,j}) \\
+ & = JS\sum_{j}(\delta S^{x}_{B,j}+\delta S^{x}_{A,i})
+\end{align}$$
+We multiply the second equation by $i$ and add it to the first equation:
+$$\begin{align}
+\hbar \frac{dS^{+}_{A,i}}{dt} & = -JS \sum_{j}(\delta S^{y}_{B,j}-i\delta S^{x}_{B,j}+\delta S^{y}_{A,i}-i\delta S^{x}_{A,i}) \\
+ & = iJS\sum_{j}(S^{+}_{B,j}+S^{+}_{A,i})
+\end{align}$$
+For B, we can obtain similar equations:
+$$\begin{align}
+ & \hbar \frac{dS^{x}_{B,i}}{dt}= JS\sum_{j} (\delta S^{y}_{B,i}+\delta S^{y}_{A,j}) \\
+ & \hbar \frac{dS^{y}_{B,i}}{dt}= -JS\sum_{j}(\delta S^{x}_{A,j}+\delta S^{x}_{B,i}) \\
+\implies & \hbar \frac{dS^{+}_{B,i}}{dt}=-iJS \sum_{j}(S^{+}_{A,j}+S^{+}_{B,i})
+\end{align}$$
+We assume $S^{+}_{A,i}=A e^{i\omega t-\mathbf{k}\cdot \mathbf{r}},\ S^{+}_{B,i}=Be^{i\omega t-\mathbf{k}\cdot \mathbf{r}}$. Then:
+$$\begin{align}
+ & \hbar i\omega A= iJS\sum_{j}(Be^{-i\mathbf{k}\cdot(\mathbf{R}_{i}-\mathbf{R}_{j})} +A)= 6iJSA+iJSB\gamma \\
+ & \hbar i\omega B=-iJS\sum_{j}(Ae^{-i\mathbf{k}\cdot(\mathbf{R}_{i}-\mathbf{R}_{j})}+B)=-6iJSB-iJS\gamma A
+\end{align}$$
+Then:
+$$\begin{align}
+\begin{pmatrix}
+6iJS-i\hbar \omega & iJS\gamma \\
+iJS\gamma & i\hbar \omega+6iJS
+\end{pmatrix} \begin{pmatrix}
+A \\
+B
+\end{pmatrix}=0
+\end{align}$$
+We set the determinant to zero to obtain:
+$$\begin{align}
+ & (6JS-\hbar \omega)(6JS+\hbar \omega)=J^{2}S^{2}\gamma^{2} \\
+\implies & \hbar \omega= JS\sqrt{ 36-\gamma^{2} }=2JS\sqrt{ 9-(\cos k_{x}a+\cos k_{y}a+\cos k_{z}a)^{2} }
+\end{align}$$
+Then under long wavelength limit, we have:
+$$\begin{align}
+9-(\cos k_{x}a+\cos k_{y}a+\cos k_{z}a )^{2} & \approx 9-\left( 3- \frac{k_{x}^{2}a^{2}}{2}- \frac{k_{y}^{2}a^{2}}{2}- \frac{k_{z}^{2}a^{2}}{2} \right)^{2} \\
+ & \approx 9-(9-3 k_{x}^{2}a^{2}-3k_{y}^{2}a^{2}-3k_{z}^{2}a^{2}) \\
+ & \propto k^{2}
+\end{align}$$
+Therefore:
+$$\begin{align}
+\hbar \omega \propto k
+\end{align}$$
+Then:
+$$\begin{align}
+\rho(\omega)= \frac{4\pi k^{2} }{(2\pi /L)^{3}}\propto \omega^{2}
+\end{align}$$
+Then we have:
+$$\begin{align}
+U & = \int d\omega \rho(\omega) \frac{\hbar \omega}{e^{\beta \hbar \omega}-1} \\
+ & \propto \int d\omega \frac{\omega^{3}}{e^{\beta \hbar \omega}-1} \\
+ & \propto \frac{1}{\beta^{4}}\propto T^{4}
+\end{align}$$
+Then:
+$$\begin{align}
+C & = \frac{\partial U}{\partial T}\propto T^{3}
+\end{align}$$
+
 
 
