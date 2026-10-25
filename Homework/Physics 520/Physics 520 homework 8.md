@@ -107,5 +107,13 @@ C & = \frac{\partial U}{\partial T}\propto T^{3 /2}
 \end{align}$$
 ## (d)
 
+We know that for each magnon we excite, the angular momentum decreases by $\hbar$. Then $M(0)-M(T)\propto\text{number of magnons}$. Then we have:
+$$\begin{align}
+   \frac{M(0)-M(T)}{M(0)} & \propto \int d\omega \rho(\omega) \frac{1}{e^{\beta \hbar \omega}-1} \\
+ & \propto \int d\omega \sqrt{ \omega } \frac{1}{e^{\beta \hbar \omega}-1}\text{, for }T\rightarrow 0 \\
+ & \propto \frac{1}{\beta^{3 /2}}\propto T^{3 /2}
+\end{align}$$
+## (e)
+
 
 
