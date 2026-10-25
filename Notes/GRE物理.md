@@ -407,7 +407,29 @@ $l$是角动量不是距离。量纲分析选A。
 147. ![[Pasted image 20261024191358.png|centering|400]]
 二维分子有两个平动自由度$x,y$，以及一个转动自由度$\phi$。所以$C_{V}= \frac{3}{2}k_{B}$。
 
+148. ![[Pasted image 20261024192450.png|centering|500]]
+首先，三维谐振子定义$n=n_{1}+n_{2}+n_{3}$。所以$n=1$有三个态。$n=2$有六个态。故$\Delta S= k_{B}\ln{6}-k_{B}\ln 3 = k_{B}\ln 3$。选E。
 
+149. ![[Pasted image 20261024193609.png|centering|400]]
+选A，就是adiabatic的定义。B可以是不可逆过程，产生一些不可逆的熵，例如绝热容器快速压缩。
+
+150. ![[Pasted image 20261024193801.png|centering|400]]
+首先肯定在3,4里面选。而3$\rightarrow 4$是一个adiabatic。所以$3$的pV更高，温度更高。选C。
+
+151. ![[Pasted image 20261024194504.png|centering|400]]
+
+
+选C。直觉上来讲（当然可以直接计算），内能整体降低常数$U\leadsto U-Na$。于是对于$T$的微分是与$a$无关的。自然比热不受影响。
+
+152. ![[Pasted image 20261024194706.png|centering|400]]
+对于相对论粒子，色散关系不再是二次，而是$E\approx pc$，所以能均分定理前提失效。我们计算：
+$$Z\sim \int p^{2} dp \exp(-e\beta pc)\sim \beta^{-3}\cdot \text{const.}$$
+$$\begin{align}
+U & \sim  \frac{1}{Z} \int p^{2} dp \exp(-\beta pc) \cdot pc \\
+ & = - \frac{\partial}{\partial \beta}\ln Z \\
+ &\sim \frac{3}{\beta}+\text{const.}
+\end{align}$$
+所以$C= \frac{\partial U}{\partial T}\sim  3k_{B}$. 
 
 
 >[!Quote]
