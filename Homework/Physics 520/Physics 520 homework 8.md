@@ -90,3 +90,22 @@ $$\begin{align}
 We ignore the negative branch since we assume positive energy.
 ## (c)
 
+We find the heat capacity under low temperatures. For $T\rightarrow 0$, only low wavelength excitations exist. We can expand:
+$$\begin{align}
+\hbar \omega & \approx JS\left( 6-2\left( 1- \frac{k_{x}^{2}a^{2}}{2}+1- \frac{k_{y}^{2}a^{2}}{2}+1- \frac{k_{z}^{2}a^{2}}{2} \right) \right) \\
+ & = A+B k^{2}
+\end{align}$$
+where $A,B$ are some constants. Then the dispersion is free-fermi-gas-like. Then clearly $\rho(\omega)\propto \sqrt{ \omega }$. Since spin waves are bosonic, we have:
+$$\begin{align}
+U & = \int d\omega \rho(\omega) \frac{\hbar \omega}{e^{\beta\hbar \omega}-1} \\
+ & \propto \int d\omega \frac{\omega^{3/2}}{e^{\beta \hbar \omega}-1} \\
+ & \propto \frac{1}{\beta^{5 /2}}\propto T^{5 /2}
+\end{align}$$
+Then:
+$$\begin{align}
+C & = \frac{\partial U}{\partial T}\propto T^{3 /2}
+\end{align}$$
+## (d)
+
+
+
