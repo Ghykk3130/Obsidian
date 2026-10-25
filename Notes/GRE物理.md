@@ -434,7 +434,7 @@ U & \sim  \frac{1}{Z} \int p^{2} dp \exp(-\beta pc) \cdot pc \\
 153. ![[Pasted image 20261024205255.png|centering|400]]
 回忆起，$n$是按照穿过x轴的节点个数来计算的。
 154. ![[Pasted image 20261024205354.png|centering|400]]
-胡闹厨房。直接算$p\sim \frac{h}{l}=6.63 \times 10 ^{-24}$。然后$E\sim \frac{p^{2}}{2m}=$
+胡闹厨房。直接算$p\sim \frac{\hbar}{l}=1 \times 10 ^{-24}$。然后$E\sim \frac{p^{2}}{2m}$。选B。
 
 155. ![[Pasted image 20261024205825.png|centering|400]]
 虽然$E\propto m e^{4}Z^{2}$，但是如果只有电子电荷增加，而核电荷不变，只会按照平方增长。因为$e^{4}$中有$e^{2}$来自电子，$e^{2}$来自核电荷。选E。
