@@ -3763,12 +3763,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Homework/Physics 520/Physics 520 homework 8.md",
+                "file": "Notes/GRE物理.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Physics 520 homework 8"
+              "title": "GRE物理"
             }
           }
         ],
@@ -3826,7 +3826,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "GRE",
+                "query": "GRE物理",
                 "matchingCase": true,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -3837,7 +3837,8 @@
               "title": "Search"
             }
           }
-        ]
+        ],
+        "currentTab": 3
       }
     ],
     "direction": "horizontal",
@@ -3948,9 +3949,9 @@
   },
   "active": "a515b687b5b2beb3",
   "lastOpenFiles": [
+    "Homework/Physics 520/Physics 520 homework 8.md",
     "Pictures/22eef311cea9111f36efba40847d0b93.jpg",
     "Homework/Physics 520/Physics 520 homework 7.md",
-    "Homework/Physics 520/Physics 520 homework 8.md",
     "Notes/GRE物理.md",
     "Pictures/Pasted image 20261024212343.png",
     "Pictures/Pasted image 20261024205825.png",
@@ -3961,7 +3962,6 @@
     "Pictures/Pasted image 20261024193801.png",
     "Pictures/Pasted image 20261024193609.png",
     "Pictures/Pasted image 20261024192450.png",
-    "Pictures/Pasted image 20261024191358.png",
     "Notes/位力定理.md",
     "Homework/Physics 513/Physics 513 homework 6.md",
     "Homework/Physics 513/Cheat sheet.md",
