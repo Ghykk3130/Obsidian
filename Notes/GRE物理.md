@@ -444,6 +444,15 @@ U & \sim  \frac{1}{Z} \int p^{2} dp \exp(-\beta pc) \cdot pc \\
 157. ![[Pasted image 20261025195553.png|centering|400]]
 基态时两个电子都处于$1s$。于是空间波函数只能对称。那么自旋波函数只能反对称，得到singlet。选A。
 
+158. ![[Pasted image 20261025202954.png|centering|400]]
+采用相对论动量。质量相应替换为$\gamma m$。于是$\gamma m \omega^{2}r=q \omega rB\implies \omega= \frac{qB}{\gamma m}$。选B。
+
+159. ![[Pasted image 20261025203607.png|centering|400]]
+弹性碰撞中，粒子的种类不变。静质量不变。所以选C。
+
+160. ![[Pasted image 20261025204043.png|centering|400]]可以计算，战舰在企业号参考系中速度为$\frac{0.1 c-6\times 10^{6}}{0.1}=0.8c$。所以在静止系中速度为$\frac{0.5c+0.8c}{1+ \frac{0.5c \cdot{0}.8 c}{c^{2}}}= \frac{13}{14}c$。选C。注意公式$v^{'}= \frac{u+v}{1+uv}$中速度是带有正负号的。
+161. ![[Pasted image 20261025204629.png|centering|400]]
+==🔴不要忘记$\lambda^{'}=\lambda \sqrt{ \frac{1+\beta}{1-\beta} }$中要开根号。==
 
 
 
