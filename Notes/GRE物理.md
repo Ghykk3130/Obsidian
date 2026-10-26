@@ -464,6 +464,33 @@ NOR是先OR再取NOT。NAND是先AND再取NOT。选D。
 164. ![[Pasted image 20261025212636.png|centering|400]]
 记住Poisson分布公式$P(n)= \frac{\lambda^{n}e^{-\lambda}}{n!}$。得到$\lambda= 5$。所以选B。
 
+165. ![[Pasted image 20261026000547.png|centering|400]]
+选A就可以了。
+166. ![[Pasted image 20261026000726.png|centering|400]]
+选B就可以了。内部总电荷为零。所以外部无电场。
+167. ![[Pasted image 20261026000910.png|centering|400]]
+释放光子是在核系中。实际加上由于动量守恒，核会向反方向运动，导致实际上看到的频率更小。选E。
+168. ![[Pasted image 20261026001052.png|centering|400]]
+别直接选B。这不是自由气体。hamiltonian还包含来自$U$的额外两个自由度。选D。
+169. ![[Pasted image 20261026001340.png|centering|400]]
+离心能为$\frac{l^{2}}{2mr^{2}}$。那么能量为$\frac{l^{2}}{2mr^{2}}- \frac{k}{r}$。我们通过求导最小化这个能量。得到$B$。
+170. ![[Pasted image 20261026001550.png|centering|400]]
+redshift这个index是指在原来波长的基础上增加的波长倍数。所以这里波长实际上是原来的3倍。选E。
+171. ![[Pasted image 20261026001832.png|centering|400]]
+注意由于空间被二分了，电场能仅仅是全空间电场能得一半。为$- \frac{1}{4\pi\epsilon_{0}} \frac{q^{2}}{4d}$。选A。
+
+172. ![[Pasted image 20261026002009.png|centering|500]]
+看清楚题目。最低有修正的是二阶微扰。所以选C。
+
+173. ![[Pasted image 20261026002147.png|centering|400]]
+向心加速度是一个纯运动推出来的东西。与牛顿定律的形式无关。所以仍然有$a= \frac{v^{2}}{r}$。所以$\frac{m}{a_{0}}\left(  \frac{v^{2}}{r} \right)^{2} = \frac{GmM}{r^{2}}$。选A。
+
+174. ![[Pasted image 20261026002432.png|centering|400]]
+$|R_{21}|^{2}$还要乘以$r^{2}$测度才是概率。还有题目问的是最大概率，不是平均。选D。
+
+
+
+
 >[!Quote]
 >错误主要来自于两方面。没仔细看题。没理性推导。打破第一点的方法是，思考中有例如条件不明确的地方，回到题干圈出信息。不圈出来不继续做题。打破第二点的方式就是用写代替思考。
 
