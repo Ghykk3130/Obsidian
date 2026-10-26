@@ -441,6 +441,10 @@ U & \sim  \frac{1}{Z} \int p^{2} dp \exp(-\beta pc) \cdot pc \\
 
 156. ![[Pasted image 20261024212343.png|centering|400]]
 首先，由于电子仅带有$\frac{1}{2}$的角动量。所以核角动量必定为$l= 1$。否则加不出$j= \frac{3}{2}$。而$l=2$的只有triplet。所以只能从II, III, IV里面选。而IV的$m_{l}= -1$。这和电子的$m_{s}= \frac{1}{2}$相加不可能得到$m_{j}= \frac{1}{2}$。所以只能选II, III。
+157. ![[Pasted image 20261025195553.png|centering|400]]
+基态时两个电子都处于$1s$。于是空间波函数只能对称。那么自旋波函数只能反对称，得到singlet。选A。
+
+
 
 
 
