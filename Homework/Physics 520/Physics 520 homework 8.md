@@ -1,4 +1,4 @@
-# Problem 1
+  # Problem 1
 ## (a)
 
 Choose $M$ to minimize the free energy. We find the minimum:
