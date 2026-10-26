@@ -454,8 +454,15 @@ U & \sim  \frac{1}{Z} \int p^{2} dp \exp(-\beta pc) \cdot pc \\
 161. ![[Pasted image 20261025204629.png|centering|400]]
 ==🔴不要忘记$\lambda^{'}=\lambda \sqrt{ \frac{1+\beta}{1-\beta} }$中要开根号。==
 
+162. ![[Pasted image 20261025212114.png|centering|400]]
+![[Pasted image 20261025212137.png|centering|400]]
 
+这指的是带电粒子穿过物质去电离的过程。速度越大，这种电离越微弱。所以我们选择动能大，质量小的粒子。选择E。
 
+163. ![[Pasted image 20261025212507.png|centering|300]]
+NOR是先OR再取NOT。NAND是先AND再取NOT。选D。
+164. ![[Pasted image 20261025212636.png|centering|400]]
+记住Poisson分布公式$P(n)= \frac{\lambda^{n}e^{-\lambda}}{n!}$。得到$\lambda= 5$。所以选B。
 
 >[!Quote]
 >错误主要来自于两方面。没仔细看题。没理性推导。打破第一点的方法是，思考中有例如条件不明确的地方，回到题干圈出信息。不圈出来不继续做题。打破第二点的方式就是用写代替思考。
