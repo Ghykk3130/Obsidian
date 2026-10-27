@@ -507,7 +507,16 @@ $|R_{21}|^{2}$还要乘以$r^{2}$测度才是概率。还有题目问的是最�
 当p,n放到一起，n的电子会扩散到p。所以n反而带有正电。于是建立指向p的电场。选A。
 181. ![[Pasted image 20261027132119.png|centering|400]]
 采用Poisson分布$P(N)= \frac{\mu^{N}e^{-\mu}}{N!}$。我们希望找一个$\mu$，使得“观察到0个事件”变成$1-0.9=0.1$可能的。于是$e^{-\mu}=0.1$。得到$RT=-\ln 0.1$。于是得到rate $R=- \frac{1}{T}\ln 0.1$。
+182. ![[Pasted image 20261027133810.png|centering|400]]
+由于对称性，如果存在电偶极矩的话，一定平行于自旋。那么耦合hamiltonian为$-pE$。显然parity下，$-pE\rightarrow pE$。time reversal下$-pE\rightarrow pE$。所以选I, III。而由于重子不带电，所以电荷不可能进入hamiltonian。所以不存在C破缺。
 
+183. ![[Pasted image 20261027134608.png|centering|400]]
+在接地之前，导体内表面感应出$-Q$的电荷。由于电荷守恒，外表面感应出$Q$的电荷。（在导体内部作一个Gauss面就知道为什么导体内表面一定带有-Q电荷了。）。接地之后，内表面仍然带有$-Q$电荷。但是外表面由于接地的电中性从而带有0的电荷。所以唯一变化的部分是导体外部的电场变化。我们计算：
+$$\begin{align}
+ \int_{\text{outer}} r^{2} \sin \theta  dr d\theta d\phi \frac{\epsilon_{0}}{2}\left(  \frac{Q}{4\pi\epsilon_{0} r^{2}} \right)^{2} & = 4\pi \cdot \frac{\epsilon_{0}}{2} \frac{Q^{2}}{(4\pi\epsilon_{0})^{2}} \int_{a}^{\infty} dr \frac{1}{r^{2}} \\
+ & =  \frac{Q^{2}}{8\pi \epsilon_{0} a} 
+\end{align}$$
+所以总变化为$0- \frac{Q^{2}}{8\pi\epsilon_{0}a}=- \frac{Q^{2}}{8\pi\epsilon_{0}a}$。
 
 
 
