@@ -390,7 +390,7 @@ U & = \frac{1}{2\mu_{0}}\int r dr d\phi \left(  \frac{\mu_{0}NI}{2\pi r} \right)
 141. ![[Pasted image 20261024160301.png|centering|400]]
 $l$是角动量不是距离。量纲分析选A。
 142. ![[Pasted image 20261024160552.png|centering|500]]
-抛物线轨道的核心是，机械能为零。椭圆轨道机械能小于零。那么$\frac{1}{2}mv^{2}- \frac{GmM}{d}=0$。得到$d= \frac{2GM}{v^{2}}$。
+抛物线轨道的核心是，机械能为零。椭圆轨道机械能小于零。那么$\frac{1}{2}mv^{2}- \frac{GmM}{d}=0$。得到$d= \frac{2GM}{v^{2}}$。这其实就是计算逃逸速度类的题。
 
 143. ![[Pasted image 20261024160858.png|centering|400]]
 你是瞎吗？M的弹簧是串联的。鉴定为没圈出信息。选D。
@@ -432,7 +432,7 @@ U & \sim  \frac{1}{Z} \int p^{2} dp \exp(-\beta pc) \cdot pc \\
 所以$C= \frac{\partial U}{\partial T}\sim  3k_{B}$. 
 
 153. ![[Pasted image 20261024205255.png|centering|400]]
-回忆起，$n$是按照穿过x轴的节点个数来计算的。
+回忆起，$n$是按照穿过x轴的节点个数来计算的。选D。
 154. ![[Pasted image 20261024205354.png|centering|400]]
 胡闹厨房。直接算$p\sim \frac{\hbar}{l}=1 \times 10 ^{-24}$。然后$E\sim \frac{p^{2}}{2m}$。选B。
 
@@ -450,7 +450,7 @@ U & \sim  \frac{1}{Z} \int p^{2} dp \exp(-\beta pc) \cdot pc \\
 159. ![[Pasted image 20261025203607.png|centering|400]]
 弹性碰撞中，粒子的种类不变。静质量不变。所以选C。
 
-160. ![[Pasted image 20261025204043.png|centering|400]]可以计算，战舰在企业号参考系中速度为$\frac{0.1 c-6\times 10^{6}}{0.1}=0.8c$。所以在静止系中速度为$\frac{0.5c+0.8c}{1+ \frac{0.5c \cdot{0}.8 c}{c^{2}}}= \frac{13}{14}c$。选C。注意公式$v^{'}= \frac{u+v}{1+uv}$中速度是带有正负号的。
+160. ![[Pasted image 20261025204043.png|centering|400]]可以计算，战舰在企业号参考系中速度为$\frac{0.1 c-6\times 10^{6}}{0.1}=0.8c$。所以在静止系中速度为$\frac{0.5c+0.8c}{1+ \frac{0.5c \cdot{0}.8 c}{c^{2}}}= \frac{13}{14}c$。选C。企业号是在追击，所以二者是同向行驶的。注意公式$v^{'}= \frac{u+v}{1+uv}$中速度是带有正负号的。
 161. ![[Pasted image 20261025204629.png|centering|400]]
 ==🔴不要忘记$\lambda^{'}=\lambda \sqrt{ \frac{1+\beta}{1-\beta} }$中要开根号。==
 
