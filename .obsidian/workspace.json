@@ -3763,12 +3763,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Homework/Physics 520/Physics 520 homework 8.md",
+                "file": "Notes/GRE物理.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Physics 520 homework 8"
+              "title": "GRE物理"
             }
           }
         ],
@@ -3826,7 +3826,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "申请",
+                "query": "",
                 "matchingCase": true,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -3945,9 +3945,10 @@
       "obsidian-shellcommands:Shell commands: Custom variables": false
     }
   },
-  "active": "a515b687b5b2beb3",
+  "active": "0bd5adf6a54a04e2",
   "lastOpenFiles": [
     "Notes/申请.md",
+    "Homework/Physics 520/Physics 520 homework 8.md",
     "Pictures/Pasted image 20261026104747.png",
     "Notes/GRE物理.md",
     "Pictures/Pasted image 20261026010459.png",
@@ -3959,7 +3960,6 @@
     "Pictures/Pasted image 20261026002147.png",
     "Pictures/Pasted image 20261026002009.png",
     "Pictures/Pasted image 20261026001832.png",
-    "Homework/Physics 520/Physics 520 homework 8.md",
     "Homework/Physics 520/Physics 520 homework 7.md",
     "Notes/位力定理.md",
     "Homework/Physics 513/Physics 513 homework 6.md",
