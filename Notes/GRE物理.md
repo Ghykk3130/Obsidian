@@ -503,6 +503,9 @@ $|R_{21}|^{2}$还要乘以$r^{2}$测度才是概率。还有题目问的是最�
 179. ![[Pasted image 20261026010459.png|centering|400]]
 问的是transmitted wave。
 
+180. ![[Pasted image 20261027130947.png|centering|400]]
+当p,n放到一起，n的电子会扩散到p。所以n反而带有正电。于是建立指向p的电场。选A。
+
 
 
 
