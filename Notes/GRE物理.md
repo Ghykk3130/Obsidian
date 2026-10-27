@@ -366,11 +366,11 @@ U & = \frac{1}{2\mu_{0}}\int r dr d\phi \left(  \frac{\mu_{0}NI}{2\pi r} \right)
 \end{align}$$
 选A。
 133. ![[Pasted image 20261015201144.png|centering|500]]
-我们得到电场的变化率：$\frac{\partial E}{\partial t}= \frac{dQ /dt}{Cd}= \frac{I}{\epsilon_{0} A}$。那么积分电通量得到：$2\pi r B= \mu_{0}\frac{I}{\epsilon_{0}A} \pi r^{2}\implies B= \frac{\mu_{0}Ir}{2\epsilon_{0}A}$
+我们得到电场的变化率：$\frac{\partial E}{\partial t}= \frac{dQ /dt}{Cd}= \frac{I}{\epsilon_{0} A}$。那么积分电通量得到：$2\pi r B= \mu_{0}\epsilon_{0}\frac{I}{\epsilon_{0}A} \pi r^{2}\implies B= \frac{\mu_{0}Ir}{2A}$
 134. ![[Pasted image 20261015201618.png|centering|400]]
 在平板内部，我们有：$D=0$。这是因为没有自由电流。在平板外部，$D=0$，因为没有表面自由电流，$D$垂直分量必须连续。而外部同样$P=0$。所以外部无电场。选E。
 135. ![[Pasted image 20261015202345.png|centering|400]]
-好好画图。选D。
+好好画图。这非常坑。波是朝着+x方向前进的。选D。
 136. ![[Pasted image 20261015202937.png|centering|400]]
 能量公式$U= \frac{1}{2}LI^{2}$。选C。
 
