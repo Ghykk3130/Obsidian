@@ -3763,16 +3763,30 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Notes/GRE物理.md",
+                "file": "Notes/Lorentz群的表示.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "GRE物理"
+              "title": "Lorentz群的表示"
+            }
+          },
+          {
+            "id": "559931348b524015",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Notes/相互作用理论.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "相互作用理论"
             }
           }
         ],
-        "currentTab": 268
+        "currentTab": 269
       }
     ],
     "direction": "vertical"
@@ -3826,7 +3840,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "相互作用绘景",
                 "matchingCase": true,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -3837,11 +3851,13 @@
               "title": "Search"
             }
           }
-        ]
+        ],
+        "currentTab": 3
       }
     ],
     "direction": "horizontal",
-    "width": 200.5
+    "width": 200.5,
+    "collapsed": true
   },
   "right": {
     "id": "9003d078f8dbc4ed",
@@ -3945,8 +3961,13 @@
       "obsidian-shellcommands:Shell commands: Custom variables": false
     }
   },
-  "active": "a515b687b5b2beb3",
+  "active": "559931348b524015",
   "lastOpenFiles": [
+    "Notes/Fermi's golden rule.md",
+    "Notes/线性响应.md",
+    "Notes/相互作用理论.md",
+    "Notes/Lorentz群的表示.md",
+    "Notes/GRE物理.md",
     "Pictures/Pasted image 20261027134608.png",
     "Pictures/Pasted image 20261027133810.png",
     "Pictures/Pasted image 20261027132119.png",
@@ -3954,13 +3975,11 @@
     "Notes/申请.md",
     "Homework/Physics 520/Physics 520 homework 8.md",
     "Pictures/Pasted image 20261026104747.png",
-    "Notes/GRE物理.md",
     "Pictures/Pasted image 20261026010459.png",
     "Pictures/Pasted image 20261026005701.png",
     "Pictures/Pasted image 20261026005143.png",
     "Pictures/Pasted image 20261026004958.png",
     "Pictures/Pasted image 20261026004132.png",
-    "Pictures/Pasted image 20261026002432.png",
     "Homework/Physics 520/Physics 520 homework 7.md",
     "Notes/位力定理.md",
     "Homework/Physics 513/Physics 513 homework 6.md",
@@ -3974,15 +3993,12 @@
     "Notes/Feynman传播子.md",
     "Homework/Physics 513/Physics 513 homework 5.md",
     "Notes/Noether定理.md",
-    "Notes/Lorentz群的表示.md",
     "Notes/CPT.md",
     "Notes/Dirac旋量场.md",
     "Notes/Dirac场的量子化.md",
     "Homework/Physics 402/Physics 402 homework 2.md",
     "Homework/Physics 402/Physics 402 Problem Set 3.md",
     "Homework/Physics 402/Physics 402 real world optics 5.md",
-    "Homework/Physics 402/Physics 402 homework 1.md",
-    "Notes/磁性.md",
     "trace-cookies.txt",
     "max-page-cookies.txt",
     "max-cookies.txt",
