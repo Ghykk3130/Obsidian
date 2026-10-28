@@ -4,15 +4,16 @@
 Choose $M$ to minimize the free energy. We find the minimum:
 $$\begin{align}
  & \frac{\partial F}{\partial M}= 2a_{0}(T-T_{c})M+4bM^{3}-\mu_{0}H=0 \\
-\implies & 2a_{0}(T-T_{c})dM+12bM^{2}dM-\mu_{0}dH=0 \\
-\implies & \chi=\frac{dM}{dH}= \frac{\mu_{0}}{2a_{0}(T-T_{c})  +12bM^{2}}
 \end{align}$$
 Since susceptibility is defined for $H\rightarrow 0$, then we set $H=0$ to find the $M$. For $T>T_{c}$, we have:
 $$\begin{align}
  & \frac{\partial F}{\partial M}=2a_{0}(T-T_{c})M+4bM^{3}=0
 \end{align}$$
-It's very obvious that the only root is $M=0$, since $2a_{0}(T-T_{c})+4bM^{2}=0$ has no real solution. It's also obvious that this root is a minimum from the graph. Then:
-$$\chi = \frac{\mu_{0}}{2a_{0}(T-T_{c})}$$
+It's very obvious that the only root is $M=0$, since $2a_{0}(T-T_{c})+4bM^{2}=0$ has no real solution. Then if $H$ is small, we are still confident that $M$ is very close to $0$. Then we ignore the $\mathcal{O}(M^{3})$ term to obtain:
+$$\begin{align}
+ & 2a_{0}(T-T_{c})M-\mu_{0}H=0 \\
+\implies & \chi= \frac{\mu_{0}}{2a_{0}(T-T_{c})}
+\end{align}$$
 ## (b)
 
 We have:
@@ -157,7 +158,7 @@ B
 We set the determinant to zero to obtain:
 $$\begin{align}
  & (6JS-\hbar \omega)(6JS+\hbar \omega)=J^{2}S^{2}\gamma^{2} \\
-\implies & \hbar \omega= JS\sqrt{ 36-\gamma^{2} }=2JS\sqrt{ 9-(\cos k_{x}a+\cos k_{y}a+\cos k_{z}a)^{2} }
+\implies & \hbar \omega= |J|S\sqrt{ 36-\gamma^{2} }=2|J|S\sqrt{ 9-(\cos k_{x}a+\cos k_{y}a+\cos k_{z}a)^{2} }
 \end{align}$$
 Then under long wavelength limit, we have:
 $$\begin{align}

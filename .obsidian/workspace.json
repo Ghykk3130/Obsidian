@@ -3856,8 +3856,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200.5,
-    "collapsed": true
+    "width": 200.5
   },
   "right": {
     "id": "9003d078f8dbc4ed",
@@ -3963,9 +3962,10 @@
   },
   "active": "559931348b524015",
   "lastOpenFiles": [
+    "Homework/Physics 520/Physics 520 homework 8.md",
+    "Notes/相互作用理论.md",
     "Notes/Fermi's golden rule.md",
     "Notes/线性响应.md",
-    "Notes/相互作用理论.md",
     "Notes/Lorentz群的表示.md",
     "Notes/GRE物理.md",
     "Pictures/Pasted image 20261027134608.png",
@@ -3973,7 +3973,6 @@
     "Pictures/Pasted image 20261027132119.png",
     "Pictures/Pasted image 20261027130947.png",
     "Notes/申请.md",
-    "Homework/Physics 520/Physics 520 homework 8.md",
     "Pictures/Pasted image 20261026104747.png",
     "Pictures/Pasted image 20261026010459.png",
     "Pictures/Pasted image 20261026005701.png",
