@@ -3777,12 +3777,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Notes/相互作用理论.md",
-                "mode": "source",
+                "file": "Homework/Physics 520/Physics 520 homework 8.md",
+                "mode": "preview",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "相互作用理论"
+              "title": "Physics 520 homework 8"
             }
           }
         ],
@@ -3840,7 +3840,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "相互作用绘景",
+                "query": "申请",
                 "matchingCase": true,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -3851,13 +3851,11 @@
               "title": "Search"
             }
           }
-        ],
-        "currentTab": 3
+        ]
       }
     ],
     "direction": "horizontal",
-    "width": 200.5,
-    "collapsed": true
+    "width": 200.5
   },
   "right": {
     "id": "9003d078f8dbc4ed",
@@ -3963,8 +3961,9 @@
   },
   "active": "559931348b524015",
   "lastOpenFiles": [
-    "Homework/Physics 520/Physics 520 homework 8.md",
+    "Notes/申请.md",
     "Notes/相互作用理论.md",
+    "Homework/Physics 520/Physics 520 homework 8.md",
     "Notes/Fermi's golden rule.md",
     "Notes/线性响应.md",
     "Notes/Lorentz群的表示.md",
@@ -3973,7 +3972,6 @@
     "Pictures/Pasted image 20261027133810.png",
     "Pictures/Pasted image 20261027132119.png",
     "Pictures/Pasted image 20261027130947.png",
-    "Notes/申请.md",
     "Pictures/Pasted image 20261026104747.png",
     "Pictures/Pasted image 20261026010459.png",
     "Pictures/Pasted image 20261026005701.png",
