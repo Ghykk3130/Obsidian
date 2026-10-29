@@ -376,12 +376,26 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "SimpleWick Obsidian Test.md",
+                "file": "Homework/Physics 513/Physics 513 homework 7.md",
                 "mode": "preview",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "SimpleWick Obsidian Test"
+              "title": "Physics 513 homework 7"
+            }
+          },
+          {
+            "id": "e11a532f9f7b74d5",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Homework/Physics 513/Physics 513 homework 8.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Physics 513 homework 8"
             }
           },
           {
@@ -4163,7 +4177,7 @@
             }
           }
         ],
-        "currentTab": 26
+        "currentTab": 27
       }
     ],
     "direction": "vertical"
@@ -4228,12 +4242,12 @@
               "title": "Search"
             }
           }
-        ],
-        "currentTab": 3
+        ]
       }
     ],
     "direction": "horizontal",
-    "width": 200.5
+    "width": 200.5,
+    "collapsed": true
   },
   "right": {
     "id": "9003d078f8dbc4ed",
@@ -4337,11 +4351,13 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "15ce65975c80b8ce",
+  "active": "e11a532f9f7b74d5",
   "lastOpenFiles": [
+    "Homework/Physics 513/Physics 513 homework 7.md",
+    "Homework/Physics 513/Physics 513 homework 8.md",
+    "SimpleWick Obsidian Test.md",
     "SimpleWick Obsidian Report.pdf",
     "Notes/Wick定理.md",
-    "SimpleWick Obsidian Test.md",
     "Notes/相互作用理论.md",
     "Notes/Untitled.md",
     "Notes/申请.md",
@@ -4364,7 +4380,6 @@
     "Notes/位力定理.md",
     "Homework/Physics 513/Physics 513 homework 6.md",
     "Homework/Physics 513/Cheat sheet.md",
-    "Homework/Physics 513/Physics 513 homework 7.md",
     "Notes/Dirac方程的解.md",
     "Homework/Physics 513/Physics 513 homework 4.md",
     "Homework/Physics 513/Physics 513 homework 3.md",
@@ -4383,7 +4398,6 @@
     "max-headers.txt",
     "Homework/Physics 520",
     "Homework/Physics 513",
-    "Pictures/GRE镇考机经词7.0-乱序（2026年版）.pdf",
-    "Pictures/drawing.pdf"
+    "Pictures/GRE镇考机经词7.0-乱序（2026年版）.pdf"
   ]
 }
