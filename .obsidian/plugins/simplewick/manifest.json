@@ -1,0 +1,9 @@
+{
+  "id": "simplewick",
+  "name": "SimpleWick",
+  "version": "1.0.0",
+  "minAppVersion": "1.5.0",
+  "description": "Wick-contraction macros for Obsidian's MathJax renderer.",
+  "author": "SimpleWick port",
+  "isDesktopOnly": false
+}
