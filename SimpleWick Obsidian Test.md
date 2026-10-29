@@ -33,10 +33,19 @@ Contact macro: $\simplewickcontact$
 
 ## Test result
 
-The test result is recorded below after the note is rendered in Obsidian:
+Tested directly in Obsidian 1.14.5 on October 28, 2026 using the active vault
+`D:/Obsidian/Physics` after a clean restart.
 
-- Plugin load: pending
-- MathJax macro rendering: pending
-- Optional height argument: pending
-- Convenience and compatibility macros: pending
+- Plugin load from `.obsidian/plugins/simplewick/`: PASS
+- Automatic enablement from `community-plugins.json`: PASS
+- MathJax macro rendering: PASS
+- Optional height argument (`[2ex]`, `[1.5ex]`): PASS
+- Convenience and compatibility macros: PASS
+- Contact and `\nomathglue` helpers: PASS
+- Rendered MathJax containers inspected: 5
+- MathJax error-colored nodes detected: 0
+- Over/under contraction structures detected: 28
+
+All public macros in this note rendered without an undefined-control-sequence
+error. The same result is documented in [[SimpleWick Obsidian Report.pdf]].
 
