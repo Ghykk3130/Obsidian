@@ -3854,7 +3854,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "相互作用理论",
+                "query": "Wick",
                 "matchingCase": true,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -3865,11 +3865,13 @@
               "title": "Search"
             }
           }
-        ]
+        ],
+        "currentTab": 3
       }
     ],
     "direction": "horizontal",
-    "width": 200.5
+    "width": 200.5,
+    "collapsed": true
   },
   "right": {
     "id": "9003d078f8dbc4ed",
@@ -3975,9 +3977,9 @@
   },
   "active": "ab834e48241e1a42",
   "lastOpenFiles": [
-    "Notes/Untitled.md",
-    "Notes/Wick定理.md",
     "Notes/相互作用理论.md",
+    "Notes/Wick定理.md",
+    "Notes/Untitled.md",
     "Notes/申请.md",
     "Homework/Physics 520/Physics 520 homework 8.md",
     "Notes/Fermi's golden rule.md",

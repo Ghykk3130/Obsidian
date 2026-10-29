@@ -10,3 +10,19 @@ $$\begin{align}
 
 令$N$为正规序算子
 
+
+若$x^{0}>y^{0}$，那么：
+$$\begin{align}
+\bra{0} [\phi^{+}(x),\phi^{-}(y)]\ket{0}  & = \bra{0} (\phi^{+}(x)\phi^{-}(y)-\phi^{-}(y)\phi^{+}(x))\ket{0}  \\
+ & = \bra{0} \phi^{+}(x)\phi^{-}(y)\ket{0} 
+\end{align}$$
+注意到Feynman传播子为：
+$$\begin{align}
+\bra{0} T\phi(x)\phi(y)\ket{0}  & = \bra{0} \phi(x)\phi(y)\ket{0}  \\
+ & = \bra{0}( \phi^{+}(x)\phi^{+}(y)+\phi^{+}(x)\phi^{-}(y)+\phi^{-}(x)\phi^{+}(y)+\phi^{-}(x)\phi^{-}(y))\ket{0}  \\
+ & = \bra{0} \phi^{+}(x)\phi^{-}(y)\ket{0} 
+\end{align}$$
+对于$x^{0}<y^{0}$，也可同样得证。所以：
+$$\begin{align}
+\bra{0} 
+\end{align}$$
