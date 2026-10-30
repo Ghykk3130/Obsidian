@@ -268,7 +268,7 @@ $$\begin{align}
 \end{align}$$
 Then:
 $$\begin{align}
-d\phi \frac{1}{a\cos \phi+b} & = \frac{2dy}{1+y^{2} }  \frac{1}{b \frac{1-y^{2}}{1+y^{2}}+a}= \frac{2dy}{b(1-y^{2})+a(1+y^{2})}
+d\phi \frac{1}{b\cos \phi+a} & = \frac{2dy}{1+y^{2} }  \frac{1}{b \frac{1-y^{2}}{1+y^{2}}+a}= \frac{2dy}{b(1-y^{2})+a(1+y^{2})}
 \end{align}$$
 Know that $y$ is only monotonic for $(0,\pi)$ and $(\pi,2\pi)$. So we split the integral:
 $$\begin{align}
@@ -276,24 +276,47 @@ $$\begin{align}
  & = \int _{-\infty}^{\infty} dy \frac{2}{b(1-y^{2})+a(1+y^{2})} \\
  & = \int dy \frac{2}{a+b+ (a-b)y^{2}} \\
  & = \frac{2}{a+b}\int dy \frac{1}{1+ \frac{a-b}{a+b}y^{2}} \\
- & = \frac{2}{a+b}\sqrt{  \frac{a+b}{a-b} } \left[\arcsin\left(  \frac{a-b}{a+b}y^{} \right)\right]_{-\infty}^{\infty} \\
+ & = \frac{2}{a+b}\sqrt{  \frac{a+b}{a-b} } \left[arctan\left(  \sqrt{ \frac{a-b}{a+b} }y^{} \right)\right]_{-\infty}^{\infty} \\
  & = 2\pi \sqrt{ \frac{1}{a^{2}-b^{2}} }
 \end{align}$$
-Therefore:
+If $q> 2k_{F}$, then:
 $$\begin{align}
-\int_{k<k_{F}}d^{2}k \frac{1}{|\mathbf{k}+\mathbf{q}|^{2}-k^{2}} & = \frac{1}{q} \int k dk 2\pi \sqrt{ \frac{1}{q^{2}-(2k)^{2}} } \\
- & = \frac{\pi}{4q} \int d((2k)^{2})\sqrt{  \frac{1}{q^{2}-(2k)^{2}} } \\
- & = \frac{\pi}{2q}(q-\sqrt{ q^{2}-(2k_{F})^{2} })
+\int_{k<k_{F}}d^{2}k \frac{1}{|\mathbf{k}+\mathbf{q}|^{2}-k^{2}}  & = \int kdkd\phi \frac{1}{2kq\cos \phi+q^{2}} \\
+ & = \int kdk 2\pi \sqrt{ \frac{1}{q^{4}-4q^{2}k^{2}} }\\
+  & = \frac{1}{|q|} \int k dk 2\pi \sqrt{ \frac{1}{q^{2}-(2k)^{2}} } \\
+ & = \frac{\pi}{4|q|} \int d((2k)^{2})\sqrt{  \frac{1}{q^{2}-(2k)^{2}} } \\
+ & = \frac{\pi}{2|q|}(|q|-\sqrt{ q^{2}-(2k_{F})^{2} }) \\
+ & = \frac{\pi}{2}\left( 1- \sqrt{ 1- \left(  \frac{2k_{F}}{q} \right)^{2} } \right)
 \end{align}$$
 Then similarly we get:
 $$\begin{align}
-\int_{k<k_{F}} d^{2}k \frac{1}{|\mathbf{k}-\mathbf{q}|^{2}-k^{2}} & = - \frac{\pi}{2q}(-q-\sqrt{ q^{2}-(2k_{F})^{2} })
+\int_{k<k_{F}} d^{2}k \frac{1}{|\mathbf{k}-\mathbf{q}|^{2}-k^{2}} & = \frac{\pi}{2}\left( 1- \sqrt{ 1- \left(  \frac{2k_{F}}{q} \right)^{2} } \right)
 \end{align}$$
 Then:
 $$\begin{align}
-M_{\mathbf{q}} & = \frac{g^{2}\mu_{0}\mu_{B}^{2}m_{e}H_{\mathbf{q}}}{\hbar^{2}} \frac{1}{(2\pi)^{2}} \cdot \frac{\pi}{4q}\arcsin\left(  \frac{2k_{F}}{q} \right) \\
-\implies \chi_{\mathbf{q}} & = \frac{g^{2}\mu_{0}\mu_{B}^{2}m_{e}}{h^{2}}  \cdot \frac{\pi}{2q}\arcsin\left(  \frac{2k_{F}}{q} \right)
+M_{\mathbf{q}} & = \frac{g^{2}\mu_{0}\mu_{B}^{2}m_{e}H_{\mathbf{q}}}{\hbar^{2}} \frac{1}{(2\pi)^{2}} \cdot \pi\left( 1- \sqrt{ 1- \left(  \frac{2k_{F}}{q} \right)^{2} } \right) \\
+\implies \chi_{\mathbf{q}} & = \frac{g^{2}\mu_{0}\mu_{B}^{2}m_{e}}{4\pi \hbar^{2}}  \cdot \left( 1- \sqrt{ 1- \left(  \frac{2k_{F}}{q} \right)^{2} } \right)
 \end{align}$$
+If $q<2k_{F}$, we observe that we pass through the singularity during the integration here:
+$$\frac{1}{|q|} \int_{0}^{k_{F}} k dk 2\pi \sqrt{ \frac{1}{q^{2}-(2k)^{2}} }$$
+We know that $\chi_{\mathbf{q}}$ is some kind of distribution function in the k-space, so we can adopt Feynman's prescription. We have:
+$$\begin{align}
+\frac{1}{|q|} \int_{0}^{k_{F}}k dk 2\pi \sqrt{ \frac{1}{q^{2}-(2k)^{2}+i\epsilon} } & = \frac{\pi}{2|q|}(|q|-\sqrt{ q^{2}-(2k_{F})^{2} +i\epsilon}) \\
+ & = \frac{\pi}{2}\left( 1- \sqrt{ 1- \left(  \frac{2k_{F}}{q} \right)^{2}+i\epsilon } \right)
+\end{align}$$
+We know that $1- \left( \frac{2k_{F}}{q} \right)^{2}+i\epsilon$ has angle very close to $\pi$. So taking the square root would be very close to $\frac{\pi}{2}$, with magnitude $\sqrt{ \left(  \frac{2k_{F}}{q} \right)^{2}-1 }$. So we have:
+$$\begin{align}
+\frac{1}{|q|} \int_{0}^{k_{F}}k dk 2\pi \sqrt{ \frac{1}{q^{2}-(2k)^{2}+i\epsilon} }  & = \frac{\pi}{2}\left( 1- i \sqrt{ \left(  \frac{2k_{F}}{q} \right)^{2}-1 } \right)
+\end{align}$$
+Then similarly, we replace $q\leadsto -q$ to obtain $\int_{k<k_{F}}d^{2}k \frac{1}{|\mathbf{k}+\mathbf{q}|^{2}-k^{2}}$. And finally we can get:
+$$\begin{align}
+\chi_{\mathbf{q}}= \frac{g^{2}\mu_{0}\mu_{B}^{2}m_{e}}{4\pi \hbar^{2}} \left( 1- i \sqrt{ \left(  \frac{2k_{F}}{q} \right)^{2}-1 } \right)
+\end{align}$$
+Observe that this is exactly the same as 
+$$\frac{g^{2}\mu_{0}\mu_{B}^{2}m_{e}}{4\pi \hbar^{2}}  \cdot \left( 1- \sqrt{ 1- \left(  \frac{2k_{F}}{q} \right)^{2} } \right)$$
+just by taking a $\sqrt{ -1 }=i$ out. Then:
+$$\chi_{\mathbf{q}}=\frac{g^{2}\mu_{0}\mu_{B}^{2}m_{e}}{4\pi \hbar^{2}}  \cdot \left( 1- \sqrt{ 1- \left(  \frac{2k_{F}}{q} \right)^{2} } \right)$$
+
 For the 1D case, we have:
 $$\begin{align}
 \int_{0}^{k_{F}} dk \frac{1}{(k+q)^{2}-k^{2}} & = \int dk \frac{1}{2kq+q^{2}} \\
@@ -306,8 +329,125 @@ $$\begin{align}
 \end{align}$$
 Then:
 $$\begin{align}
-\chi_{\mathbf{q}} & = \frac{g^{2}\mu_{0}\mu_{B}^{2}m_{e}}{\hbar^{2}} \frac{1}{2\pi} \left(  \frac{1}{2q}\ln\left| \frac{2k_{F}+q}{q} \right|- \frac{1}{2q}\ln\left| \frac{2k_{F}-q}{1} \right| \right) \\
-	 & = \frac{g^{2}\mu_{0}\mu_{B}^{2}m_{e} }{\hbar^{2}} \frac{1}{4q} \ln\left| \frac{2k_{F}+q}{2k_{F}-q} \right|
+\chi_{\mathbf{q}} & = \frac{g^{2}\mu_{0}\mu_{B}^{2}m_{e}}{\hbar^{2}} \frac{1}{2\pi} \left(  \frac{1}{2q}\ln\left| \frac{2k_{F}+q}{q} \right|- \frac{1}{2q}\ln\left| \frac{2k_{F}-q}{q} \right| \right) \\
+	 & = \frac{g^{2}\mu_{0}\mu_{B}^{2}m_{e} }{\hbar^{2}} \frac{1}{4q\pi} \ln\left| \frac{2k_{F}+q}{2k_{F}-q} \right|
 
 \end{align}$$
+
+The susceptibility are plotted:
+![[Pasted image 20261030160445.png|centering|600]]
+Observe that 1D has singularity around $x=2$.
+
+The derivatives of susceptibility are plotted:
+![[Pasted image 20261030160546.png|centering|600]]
+Observe that all curves have singularities.
+## (d)
+
+We first compute:
+$$\begin{align}
+\chi & = \int \frac{d^{3}q}{(2\pi)^{3}}e^{i\mathbf{q}\cdot \mathbf{r}}\chi_{\mathbf{q}} \\
+ & = \frac{\chi_{0}}{(2\pi)^{3}}\int(2k_{F})^{3} d^{3}x e^{i\mathbf{x}\cdot 2 k_{F}\mathbf{r}}f(x),\ \mathbf{x}= \frac{\mathbf{q}}{2k_{F}}
+\end{align}$$
+We further define $\mathbf{R}=2 k_{F}\mathbf{r}$. Then it suffices to evaluate:
+$$\begin{align}
+\int d^{3}x e^{i\mathbf{x}\cdot \mathbf{R}}  \frac{1-x^{2}}{2x}\ln\left| \frac{x+1}{x-1} \right| & = -2\pi\int x^{2}dxd(\cos \theta)e^{ixR\cos \theta} \frac{1-x^{2}}{2x}\ln \left| \frac{x+1}{x-1} \right|  \\
+ & = \int dx x^{2} (2\pi) \frac{e^{ixR}-e^{-iXR}}{ixR} \frac{1-x^{2}}{2x}\ln\left| \frac{x+1}{x-1} \right| \\
+ & = 2\pi \int dx \frac{1}{R} \sin(xR) (1-x^{2})\ln\left| \frac{x+1}{x-1} \right|
+\end{align}$$
+We set:
+$$\begin{align}
+F(x,a,R) & = \int_{0}^{\infty} dx \sin(xR)\ln\left| \frac{x+a}{x-a} \right| 
+\end{align}$$
+Then 
+$$\begin{align}
+\int d^{3}x e^{i\mathbf{x}\cdot \mathbf{R}}  \frac{1-x^{2}}{2x}\ln\left| \frac{x+1}{x-1} \right|  & = \frac{2\pi}{R} \left( F(x,1,R)+ \frac{\partial^{2}}{\partial R^{2}}F(x,1,R) \right)
+\end{align}$$
+It suffices to compute $F$. We observe:
+$$\begin{align}
+\frac{\partial F}{\partial a} & = \int_{0}^{\infty}dx \sin(xR)\left(  \frac{1}{x+a}+ \frac{1}{x-a} \right) \\
+ & = \int_{a}^{\infty}dy \frac{\sin((y-a)R)}{y} + \int_{-a}^{\infty}dy \frac{\sin((y+a)R)}{y} \\
+ & = \int_{0}^{\infty}dy \frac{\sin((y-a)R)}{y}+ \int_{0}^{\infty}dy \frac{\sin((y+a)R)}{y}- \int_{0}^{a}dy \frac{\sin((y-a)R)}{y}+ \int_{-a}^{0}dy \frac{\sin((y+a)R)}{y}
+\end{align}$$
+Observe that:
+$$\begin{align}
+- \int_{0}^{a}dy \frac{\sin((y-a)R)}{y}+ \int_{-a}^{0}dy \frac{\sin((y+a)R)}{y} & = \int_{0}^{-a}d(-y) \frac{\sin((-y+a)R)}{-y}+  \int_{-a}^{0}dy \frac{\sin((y+a)R)}{y} \\
+ & = \int_{0}^{-a}dy \frac{\sin((y+a)R)}{y}+\int_{-a}^{0}dy \frac{\sin((y+a)R)}{y} \\
+ & =0
+\end{align}$$
+Then:
+$$\begin{align}
+\frac{\partial F}{\partial a} & = \int_{0}^{\infty}dy \frac{\sin((y-a)R)}{y}+ \int_{0}^{\infty}dy \frac{\sin((y+a)R)}{y} \\
+ & = \int_{0}^{\infty}dy \frac{1}{y}(\sin yR\cos aR-\cos yR\sin aR+\sin yR\cos aR+\cos yR\sin aR) \\
+ & = 2\cos aR\int_{0}^{\infty}dy \frac{\sin yR}{y} \\
+\end{align}$$
+Then it remains to calculate integral of this type:
+$$\begin{align}
+I(R,\lambda) & = \int_{0}^{\infty}dy e^{-\lambda y}\frac{\sin yR}{y} \\
+\implies \frac{\partial I}{\partial R} & =  \int_{0}^{\infty}dy e^{-\lambda y} \cos(yR)\\
+ & = \int dy \frac{1}{2}(e^{-\lambda y+iRy}+e^{-\lambda y-iRy}) \\
+ & = \frac{1}{2}\left( \frac{-1}{-\lambda+iR}+ \frac{-1}{-\lambda-iR} \right) \\
+ & = \frac{\lambda}{\lambda^{2}+R^{2}}
+\end{align}$$
+Observe that $I(R=0,\lambda)=0$. So:
+$$\begin{align}
+I(R,\lambda) & = \int_{0}^{R}dR^{'} \frac{\lambda}{\lambda^{2}+R^{'2}} \\
+ & = \arctan \frac{R}{\lambda}
+\end{align}$$
+We take $\lambda=0$ to get:
+$$\begin{align}
+\int_{0}^{\infty}dy \frac{\sin yR}{y}= I(R,0)= \arctan(\infty)= \frac{\pi}{2}
+\end{align}$$
+Then:
+$$\begin{align}
+\frac{\partial F}{\partial a}= \pi \cos(aR)
+\end{align}$$
+Observe that:
+$$\begin{align}
+F(x,0,R)=0
+\end{align}$$
+Then:
+$$\begin{align}
+F(x,a,R) & = \int_{0}^{a} da^{'}\pi \cos(a^{'}R) \\
+ & = \frac{\pi}{R}\sin(aR)
+\end{align}$$
+Then:
+$$\begin{align}
+\int d^{3}x e^{i\mathbf{x}\cdot \mathbf{R}}  \frac{1-x^{2}}{2x}\ln\left| \frac{x+1}{x-1} \right|  & = \frac{2\pi}{R}\left( 1+ \frac{\partial^{2}}{\partial R^{2}} \right)F(x,1,R) \\
+ & = \frac{2\pi}{R}F+ \frac{2\pi}{R} \frac{\partial}{\partial R}\left(  \frac{\pi R\cos R-\sin R}{R^{2}} \right) \\
+ & = \frac{2\pi}{R}F+ \frac{2\pi^{2}}{R}\left( - \frac{\sin R}{R}- \frac{2\cos R}{R^{2}}+ \frac{2\sin R}{R^{3}} \right) \\
+ & = \frac{4\pi^{2}}{R^{4}}(\sin R-R\cos R)
+\end{align}$$
+Then:
+$$\begin{align}
+\chi(\mathbf{r}) & = \frac{\chi_{0}}{(2\pi)^{3}}(2k_{F})^{3} \cdot \frac{4\pi^{2}}{R^{4}}(\sin R-R\cos R) \\
+ & = \frac{4\chi_{0}k_{F}^{3}}{\pi^{} }  \frac{1}{R^{4}}(-R\cos R+\sin R) \\
+ & = \frac{2k_{F}^{3}\chi_{P}}{\pi}\mathcal{F}(2k_{F}r)
+\end{align}$$
+where:
+$$\begin{align}
+\chi_{P}= 2\chi_{0},\ \mathcal{F}(x)= \frac{-x\cos x+\sin x}{x^{4}}
+\end{align}$$
+Clearly when $x\gg 1$, we have:
+$$\begin{align}
+\mathcal{F}(x) & = - \frac{\cos x}{x^{3}}+ \frac{\sin x}{x^{4}} \\
+ & \approx - \frac{\cos x}{x^{3}}
+\end{align}$$
+Therefore:
+$$\begin{align}
+\chi(\mathbf{r}) & \approx -\frac{\chi_{P}}{4\pi} \frac{\cos(2k_{F}r)}{r^{3}}
+\end{align}$$
+It is clearly oscillatory.
+## (e)
+
+We have:
+$$\begin{align}
+\int_{0}^{k_{F}}2\pi k^{2}dk \int_{0}^{\pi}e^{ikr\cos \theta} \sin \theta d\theta &  = (-2\pi)\int_{0}^{k_{F}}k^{2}dk \int d(\cos \theta)e^{ikr\cos \theta} \\
+ & = (-2\pi)\int k^{2}dk \frac{e^{-ikr}-e^{ikr}}{ikr} \\
+ & =  \frac{4\pi}{r}\int dk k \sin(kr) \\
+ & = -\frac{4\pi}{r} \int dk \frac{\partial}{\partial r}(\cos kr) \\
+ & = -\frac{4\pi}{r} \frac{\partial}{\partial r}\int dk \cos kr \\
+ & = - \frac{4\pi}{r} \frac{\partial}{\partial r}\left(  \frac{\sin(k_{F}r)}{r} 
+ \right) \\
+ & = - \frac{4\pi}{r} \frac{k_{F}r\cos k_{F}r-\sin k_{F}r}{r^{2}} \\
+ & = \frac{4\pi}{r^{3}}(\sin k_{F}r-k_{F}r\cos k_{F}r)\end{align}$$
 
