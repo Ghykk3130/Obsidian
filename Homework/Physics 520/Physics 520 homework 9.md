@@ -249,17 +249,24 @@ $$\begin{align}
 
 For the 2D case, it suffices to evaluate:
 $$\begin{align}
-\int_{k<k_{F}}d^{2}k \frac{1}{|\mathbf{k}+\mathbf{q}|^{2}-k^{2}} & = \int kdkd\phi \frac{1}{2kq\cos \phi-q^{2}} 
+\int_{k<k_{F}}d^{2}k \frac{1}{|\mathbf{k}+\mathbf{q}|^{2}-k^{2}} & = \int kdkd\phi \frac{1}{2kq\cos \phi+q^{2}} 
 \end{align}$$
-We first evaluate:
+We first evaluate integrals of this type:
 $$\begin{align}
-\int dx x \frac{x}{x-a} & = \int dx + \int dx \frac{-a}{x+a} \\
- & = x- a \ln|x+a|
+\int_{0}^{2\pi} d \phi \frac{1}{a\cos \phi+b}
+\end{align}$$
+Observe that:
+$$\begin{align}
+\cos \phi & = \cos ^{2} \frac{\phi}{2}-\sin ^{2} \frac{\phi}{2} \\
+ & = \frac{1- \tan ^{2} \frac{\phi}{2} }{\sec ^{2} \frac{\phi}{2} } \\
+ & = \frac{1-\tan ^{2} \frac{\phi}{2} }{1+ \tan ^{2} \frac{\phi}{2}}
+\end{align}$$
+Set $y= \tan \frac{\phi}{2}$, we have:
+$$\begin{align}
+ dy & = \sec ^{2} \frac{\phi }{2} \frac{d\phi}{2 } \\
+\implies d\phi & = \frac{2dy}{\sec ^{2} \frac{\phi}{2}}= \frac{2dy}{1+y^{2}}
 \end{align}$$
 Then:
 $$\begin{align}
-\int_{k<k_{F}}d^{2}k \frac{1}{|\mathbf{k}+\mathbf{q}|^{2}-k^{2}} & =\int_{0}^{2\pi}d\phi \frac{1}{q}\left(  \frac{1}{2\cos \phi} \right)^{2} \left[ 2k\cos \phi-q\ln|2k\cos \phi+q| \right] _{0}^{k_{F }} \\
- & = \frac{1}{4q}\int d\phi \left[  \frac{2k_{F}}{\cos \phi}- \frac{q}{\cos \phi }\ln| \frac{2k_{F}\cos \phi+q}{q} |  \right]
+d\phi \frac{1}{a\cos \phi+b} & = \frac{2dy}{1+y^{2} }  \frac{1}{a \frac{}{}}
 \end{align}$$
-
-
