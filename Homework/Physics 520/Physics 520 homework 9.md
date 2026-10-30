@@ -75,16 +75,11 @@ We can treat each group of spins as non-interacting Fermi gas. Then:
 $$\begin{align}
 \frac{E}{V} & = n_{\uparrow}E_{\text{min}}+Cn_{\uparrow}^{5/3}+ n_{\downarrow}E_{\text{min}}+Cn_{\downarrow}^{5/3} \\
  & = nE_{\text{min}}+C(n_{\uparrow}^{5/3}+n_{\downarrow}^{5/3}) \\
- & = nE_{\text{min}}+C\left[ \left(  \frac{n}{2}^{} \right)^{5/3}(1+\alpha)^{5/3}- \left(  \frac{n}{2} \right)^{5/3}(1-\alpha)^{5/3} \right] \\
- & \approx nE_{\text{min}}+C\left(  \frac{n}{2} \right)^{5/3}\left[ 1+ \frac{5}{3}\alpha^{}+ \frac{5}{9}\alpha^{2} - \frac{5}{81}\alpha^{3}+ \frac{5}{243}\alpha^{4} \right]
+ & = nE_{\text{min}}+C\left[ \left(  \frac{n}{2}^{} \right)^{5/3}(1+\alpha)^{5/3}+\left(  \frac{n}{2} \right)^{5/3}(1-\alpha)^{5/3} \right] \\
+ & \approx nE_{\text{min}}+C\left(  \frac{n}{2} \right)^{5/3}\left[ 1+ \frac{5}{3}\alpha^{}+ \frac{5}{9}\alpha^{2} - \frac{5}{81}\alpha^{3}+ \frac{5}{243}\alpha^{4}+(\alpha \leftrightarrow -\alpha) \right] \\
+ & = nE_{\text{min}}+ 2C\left(  \frac{n}{2} \right)^{5/3} \left[ 1+ \frac{5}{9}\alpha^{2}+ \frac{5}{243}\alpha^{4} \right]
 \end{align}$$
-We know that for $0<\alpha < 1$, we must have:
-$$\begin{align}
-\frac{5}{81}\alpha^{3} < \frac{5}{9}\alpha^{3}< \frac{5}{9}\alpha^{2}
-\end{align}$$
-Then we must have:
-$$\frac{5}{3}\alpha+ \frac{5}{9}\alpha^{2}- \frac{5}{81}\alpha^{3}+ \frac{5}{243}\alpha^{4}\geq 0$$
-The only point where it takes zero is $\alpha=0$. So $\alpha=0$ gives the lowest possible energy.
+Obviously, this is a monotonically increasing function of $\alpha$. The only point where it takes zero is $\alpha=0$. So $\alpha=0$ gives the lowest possible energy.
 ## (c)
 
 We have:
@@ -94,4 +89,36 @@ H_{\text{interaction}} & = U\sum_{i}n^{i}_{\uparrow}n^{i}_{\downarrow} \\
  & = \frac{1}{4}Un^{2}N(1-\alpha^{2})
 \end{align}$$
 ## (d)
+
+We have:
+$$\begin{align}
+ &  E_{\text{interaction}}= \frac{1}{4}Un^{2}N(1-\alpha^{2}) \\
+\implies &  \frac{E_{\text{interaction}}}{V}= \frac{1}{4}Un^{3}(1-\alpha^{2})
+\end{align}$$
+Then:
+$$\begin{align}
+\frac{E}{V}= nE_{\text{min}}+ 2C\left(  \frac{n}{2} \right)^{5/3} \left[ 1+ \frac{5}{9}\alpha^{2}+ \frac{5}{243}\alpha^{4} \right]+ \frac{1}{4}Un^{3}(1-\alpha^{2})
+\end{align}$$
+We know that from phase transition theory, the stability changes if the coefficient of the second-order term changes sign. So we set:
+$$\begin{align}
+ & 2C\left(  \frac{n}{2} \right)^{5/3} \frac{5}{9}- \frac{1}{4}Un^{3}=0 \\
+\implies & U_{c}= \frac{5}{9}C \left(  \frac{2}{n} \right)^{4/3}
+\end{align}$$
+Ignoring the constant terms, we have:
+$$\begin{align}
+\frac{E}{V} & = \left( 2C\left(  \frac{n}{2} \right)^{5/3} \frac{5}{9}- \frac{1}{4}Un^{3} \right)\alpha^{2}+ \frac{10}{243}C\left(  \frac{n}{2} \right)^{5/3}\alpha^{4} \\
+ & = \left( 2C\left(  \frac{n}{2} \right)^{5/3} \frac{5}{9}- \frac{1}{4}U_{c}n^{3}+ \frac{1}{4}(U_{c}-U)n^{3} \right)\alpha^{2}+ \frac{10}{243}C\left(  \frac{n}{2} \right)^{5/3}\alpha^{4} \\
+ & = \frac{1}{4}(U_{c}-U)n^{3}\alpha^{2}+ \frac{10}{243}C\left(  \frac{n}{2} \right)^{5/3}\alpha^{4}
+\end{align}$$
+We differentiate and ignore the $\alpha=0$ solution:
+$$\begin{align}
+ & \frac{1}{2}(U_{c}-U)n^{3}\alpha+ \frac{40}{243}C\left(  \frac{n}{2} \right)^{5/3}\alpha^{3}=0 \\
+\implies & \alpha= \pm \sqrt{ \frac{243}{40C}2^{2/3}n^{4/3}(U-U_{c}) }
+\end{align}$$
+Then:
+$$\begin{align}
+M & = \mu_{B}n\alpha \\
+ & = \pm \mu_{B}n^{5/3}2^{1/3}\sqrt{  \frac{243}{40C}(U-U_{c}) }
+\end{align}$$
+# Problem 3
 
