@@ -155,4 +155,30 @@ M & = \mu_{B}n\alpha \\
 # Problem 3
 ## (a)
 
-
+Since $\mathcal{H}^{'}$ doesn't operate on spins, we know that $\ket{+}$ must mix with $\ket{+}$, and $\ket{-}$ must mix with $\ket{-}$. Then we have:
+$$\begin{align}
+\bra{\psi_{\mathbf{k}^{'}\pm}} \cos(\mathbf{q}\cdot \mathbf{r})\ket{\psi_{\mathbf{k}\pm}}  & = \frac{1}{V}\int d^{3}r e^{-i\mathbf{k}^{'}\cdot \mathbf{r}} \cos(\mathbf{q}\cdot \mathbf{r}) e^{i\mathbf{k}\cdot \mathbf{r}} \\
+ & = \frac{1}{V}\int d^{3}r e^{-i\mathbf{k}^{'}\cdot \mathbf{r}} \frac{e^{i\mathbf{q}\cdot \mathbf{r}}+e^{-i\mathbf{q}\cdot \mathbf{r}}}{2}e^{i\mathbf{k}\cdot \mathbf{r}} \\
+ & = \frac{1}{2}(\delta(-\mathbf{k}^{'}+\mathbf{q}+\mathbf{k}=0)+\delta(-\mathbf{k}^{'}-\mathbf{q}+\mathbf{k}=0))
+\end{align}$$
+Therefore:
+$$\begin{align}
+\sum_{\mathbf{k}^{'}} \psi_{\mathbf{k}^{'}\pm} \frac{\bra{\psi_{\mathbf{k}^{'}\pm}} \mathcal{H}^{'}\ket{\psi_{\mathbf{k}\pm}} }{E_{\mathbf{k}^{'}}-E_{\mathbf{k}}} & = \frac{1}{2}\cdot\left( \pm \frac{g}{2}\mu_{0}\mu_{B}H_{\mathbf{q}} \right) \left[  \frac{\psi_{(\mathbf{k}+\mathbf{q})\pm}}{E_{\mathbf{k}+\mathbf{q}}-E_{\mathbf{k}}}+  \frac{\psi_{(\mathbf{k}-\mathbf{q}})\pm}{E_{\mathbf{k}-\mathbf{q}}-E_{\mathbf{k}}}  \right] \\
+ & = \pm \frac{g}{4}\mu_{0}\mu_{B}H_{\mathbf{q}}\left[  \frac{e^{i(\mathbf{k}+\mathbf{q})\cdot \mathbf{r}}}{E_{\mathbf{k}+\mathbf{q}}-E_{\mathbf{k}}} + \frac{e^{i(\mathbf{k}-\mathbf{q})\cdot \mathbf{r}}}{E_{\mathbf{k}-\mathbf{q}}-E_{\mathbf{k}}}\right] \frac{1}{\sqrt{ V }}\ket{\pm} 
+\end{align}$$
+Then the perturbed ket is:
+$$\begin{align}
+\psi_{\mathbf{k}\pm}(\mathbf{r})= \frac{1}{\sqrt{ V }}\left( e^{i\mathbf{k}\cdot \mathbf{r}}\pm \frac{g\mu_{0}\mu_{B}H_{\mathbf{q}}}{4}\left[  \frac{e^{i(\mathbf{k}+\mathbf{q})\cdot \mathbf{r}}}{E_{\mathbf{k}+\mathbf{q}}-E_{\mathbf{k}}}+ \frac{e^{i(\mathbf{k}-\mathbf{q})\cdot \mathbf{r}}}{E_{\mathbf{k}-\mathbf{q}}-E_{\mathbf{k}}} \right] \right)\ket{\pm} 
+\end{align}$$
+Keeping only the terms that are linear in $H_{\mathbf{q}}$, we get:
+$$\begin{align}
+|\psi_{\mathbf{k}\pm}(\mathbf{r}) |^{2} & = \frac{1}{V}\left( e^{-i\mathbf{k}\cdot \mathbf{r}}\pm \frac{g\mu_{0}\mu_{B}H_{\mathbf{q}}}{4}\left(  \frac{e^{-i(\mathbf{k}+\mathbf{q})\cdot \mathbf{r}}}{E_{\mathbf{k}+\mathbf{q}}-E_{\mathbf{k}}}+ \frac{e^{-i(\mathbf{k}-\mathbf{q})\cdot \mathbf{r} }}{E_{\mathbf{k}-\mathbf{q}}-E_{\mathbf{k}}} \right) \right)(\text{c.c.}) \\
+ & \approx \frac{1}{V}\pm  \frac{1}{V}\frac{g\mu_{0}\mu_{B}H_{\mathbf{q}}}{4}e^{-i\mathbf{k}\cdot \mathbf{r}}\left(  \frac{e^{i(\mathbf{k}+\mathbf{q})\cdot \mathbf{r}}}{E_{\mathbf{k}+\mathbf{q}}-E_{\mathbf{k}}}+ \frac{e^{i(\mathbf{k}-\mathbf{q})\cdot \mathbf{r}}}{E_{\mathbf{k}-\mathbf{q}}-E_{\mathbf{k}}} \right)\pm \text{c.c.} \\
+ & = \frac{1}{V}\pm  \frac{1}{V}\frac{g\mu_{0}\mu_{B}H_{\mathbf{q}}}{2}\cos(\mathbf{q}\cdot \mathbf{r})\left(  \frac{1}{E_{\mathbf{k}+\mathbf{q}}-E_{\mathbf{k}}}+ \frac{1}{E_{\mathbf{k}-\mathbf{q}}-E_{\mathbf{k}}} \right) \\
+ & = \frac{1}{V}\pm  \frac{1}{V}\frac{g\mu_{0}\mu_{B}H_{\mathbf{q}}m_{e}}{\hbar^{2}}\cos(\mathbf{q}\cdot \mathbf{r})\left(  \frac{1}{|\mathbf{k}+\mathbf{q}|^{2}-k^{2}}+ \frac{1}{|\mathbf{k}-\mathbf{q}|^{2}-k^{2}}^{} \right) \\
+ & = \frac{1}{V}\left(1\pm \frac{1}{V}\frac{g\mu_{0}\mu_{B}H_{\mathbf{q}}}{2}\cos(\mathbf{q}\cdot \mathbf{r})\left(  \frac{1}{E_{\mathbf{k}+\mathbf{q}}-E_{\mathbf{k}}}+ \frac{1}{E_{\mathbf{k}-\mathbf{q}}-E_{\mathbf{k}}} \right)\right)
+\end{align}$$
+Then according to the problem, the next step is to calculate the magnetization. It suffices to calculate:
+$$\begin{align}
+\int_{k<k_{F}} d^{3}k \frac{1}{|\mathbf{k}+\mathbf{q}|^{2}-k^{2}} & = 2\pi \int k^{2}\sin \theta dkd\theta \frac{1}{2kq\cos \theta+q^{2}}
+\end{align}$$
