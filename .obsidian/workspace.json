@@ -418,12 +418,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Homework/Physics 520/Physics 520 homework 9.md",
+                "file": "Notes/申请.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Physics 520 homework 9"
+              "title": "申请"
             }
           },
           {
@@ -4259,7 +4259,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "Landau",
+                "query": "申请",
                 "matchingCase": true,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -4270,12 +4270,12 @@
               "title": "Search"
             }
           }
-        ]
+        ],
+        "currentTab": 3
       }
     ],
     "direction": "horizontal",
-    "width": 200.5,
-    "collapsed": true
+    "width": 200.5
   },
   "right": {
     "id": "9003d078f8dbc4ed",
@@ -4381,8 +4381,8 @@
   },
   "active": "861f308719488995",
   "lastOpenFiles": [
-    "Notes/Landau量子化.md",
     "Homework/Physics 520/Physics 520 homework 9.md",
+    "Notes/Landau量子化.md",
     "Notes/Pauli顺磁.md",
     "Homework/Physics 520/Physics 520 homework 8.md",
     "Notes/Untitled 16.md",

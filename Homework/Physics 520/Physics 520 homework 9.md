@@ -180,5 +180,69 @@ $$\begin{align}
 \end{align}$$
 Then according to the problem, the next step is to calculate the magnetization. It suffices to calculate:
 $$\begin{align}
-\int_{k<k_{F}} d^{3}k \frac{1}{|\mathbf{k}+\mathbf{q}|^{2}-k^{2}} & = 2\pi \int k^{2}\sin \theta dkd\theta \frac{1}{2kq\cos \theta+q^{2}}
+\int_{k<k_{F}} d^{3}k \frac{1}{|\mathbf{k}+\mathbf{q}|^{2}-k^{2}} & = 2\pi \int k^{2}\sin \theta dkd\theta \frac{1}{2kq\cos \theta+q^{2}} \\
+ & = -\frac{2\pi}{q}\int k^{2}dk d(\cos \theta) \frac{1}{2k\cos \theta+q} \\
+ & = - \frac{2\pi}{q}\int k^{2}dk \frac{1}{2k} \ln\left| \frac{-2k+q }{2k+q} \right| \\
+ & = - \frac{\pi}{q}\int dk k \ln\left| \frac{-2k+q}{2k+q} \right|
 \end{align}$$
+It suffices to compute:
+$$\begin{align}
+\int dx x \ln\left| \frac{1-x}{1+x} \right| & = \frac{x^{2}}{2}\ln\left| \frac{1-x}{1+x} \right|- \int dx \frac{x^{2}}{2} \frac{1+x}{1-x} \frac{d}{dx} \frac{1-x}{1+x} \\
+ & = \frac{x^{2}}{2}\ln\left| \frac{1-x}{1+x} \right| + \int dx \frac{x^{2}}{1-x^{2}}
+\end{align}$$
+Know that:
+$$\begin{align}
+\int dx \frac{x^{2}}{1-x^{2}} & = \int dx (-1)+ \int dx \frac{1}{1-x^{2}} \\
+ & = -x+  \frac{1}{2} \int dx \left(  \frac{1}{1-x}+ \frac{1}{1+x} \right) \\
+ & = -x+ \frac{1}{2}(-\ln|1-x|+\ln|1+x|)+C \\
+ & = -x+ \frac{1}{2}\ln\left| \frac{1+x}{1-x} \right|+C
+\end{align}$$
+Then:
+$$\begin{align}
+\int dx x \ln\left| \frac{1-x}{1+x} \right| & = -x+ \frac{x^{2}-1}{2}\ln\left| \frac{1-x}{1+x} \right|+C
+\end{align}$$
+Then we have:
+$$\begin{align}
+\int d^{3}k \frac{1}{|\mathbf{k}+\mathbf{q}|^{2}-k^{2} } & = - \frac{\pi}{q}\left(  \frac{q}{2} \right)^{2} \left[ - \frac{2k}{q}+ \frac{\left(  \frac{2k}{q} \right)^{2}-1}{2}\ln\left| \frac{q-2k}{q+2k} \right| \right]_{0}^{k_{F}} \\
+ & = - \frac{\pi q}{4}\left[ - \frac{2k_{F}}{q}+ \frac{\left(  \frac{2k_{F}}{q} \right)^{2}-1}{2}\ln\left| \frac{q-2k_{F}}{q+2k_{F}} \right| \right]
+\end{align}$$
+Then by replacing $q$ with $-q$, we easily get:
+$$\begin{align}
+\int_{k<k_{F}} d^{3}k \frac{1}{|\mathbf{k}-\mathbf{q}|^{2}-k^{2}} = \frac{\pi q}{4}\left[ \frac{2k_{F}}{q}+ \frac{\left(  \frac{2k_{F}}{q} \right)^{2}-1}{2}\ln\left| \frac{q+2k_{F}}{q-2k_{F}} \right| \right]
+\end{align}$$
+Then:
+$$\begin{align}
+\int d^{3}k \frac{1}{|\mathbf{k}+\mathbf{q}|^{2}-k^{2} }+ \int d^{3}k \frac{1}{|\mathbf{k}-\mathbf{q}|^{2}-k^{2}} & = \frac{\pi q}{2}\left[  \frac{2k_{F}}{q}+ \frac{\left(  \frac{2k_{F}}{q} \right)^{2}-1}{2} \ln\left| \frac{q+2k_{F}}{q-2k_{F}} \right| \right]
+\end{align}$$
+Therefore:
+$$\begin{align}
+M_{\mathbf{q}} & = \frac{g^{2}\mu_{0}\mu_{B}^{2}m_{e}H_{\mathbf{q}}}{\hbar^{2}(2\pi)^{3}} \cdot \frac{\pi q}{2}\left[  \frac{2k_{F}}{q}+ \frac{\left(  \frac{2k_{F}}{q} \right)^{2}-1}{2} \ln\left| \frac{q+2k_{F}}{q-2k_{F}} \right| \right] \\
+\end{align}$$
+## (b)
+
+Then we calculate the susceptibility:
+$$\begin{align}
+\chi_{\mathbf{q}} & = \frac{M_{\mathbf{q}}}{H_{\mathbf{q}}} \\
+ & = \frac{g^{2}\mu_{0}\mu_{B}^{2}m_{e}}{\hbar^{2}(2\pi)^{3}} \cdot \frac{\pi q}{2}\left[  \frac{2k_{F}}{q}+ \frac{\left(  \frac{2k_{F}}{q} \right)^{2}-1}{2} \ln\left| \frac{q+2k_{F}}{q-2k_{F}} \right| \right] \\
+ & = \frac{g^{2}\mu_{0}\mu_{B}^{2}m_{e}}{\hbar^{2}(2\pi)^{3}} \cdot \pi k_{F}\left[ 1+ \frac{\left(  \frac{2k_{F}}{q}  \right)- \frac{q}{2k_{F}} }{2}\ln\left| \frac{q+2k_{F}}{q-2k_{F}} \right| \right] \\
+ & = \frac{g^{2}\mu_{0}\mu_{B}^{2}m_{e}}{\hbar^{2}8\pi^{2}}k_{F}\left[ 1+ \frac{1-x^{2}}{2x}\ln\left| \frac{x+1}{x-1} \right| \right],\ x= \frac{q}{2k_{F}} \\
+ & = \chi_{0}f\left(  \frac{q}{2k_{F}} \right),\ \chi_{0}= \frac{g^{2}\mu_{0}\mu_{B}^{2}m_{e}}{\hbar^{2}4\pi^{2}}k_{F},\ f(x)= \frac{1}{2}\left( 1+   \frac{1-x^{2}}{2x} \ln\left|  \frac{x+1}{x-1}\right|  \right),\ x= \frac{q}{2k_{F}}
+\end{align}$$
+Take $q\rightarrow 0$, we have $x\rightarrow 0$. Then:
+$$\begin{align}
+\frac{1-x^{2}}{2x}\ln\left| \frac{x+1}{x-1} \right| & \approx \frac{1-x^{2}}{2x}\ln\left| (x+1)^{2} \right| \\
+ & = \frac{1-x^{2}}{x}\ln(1+x) \\
+ & \approx 1-x^{2}
+\end{align}$$
+So:
+$$\begin{align}
+f(x) & \approx \frac{1}{2}(1+1-x^{2}) \\
+ & \approx 1
+\end{align}$$
+Then:
+$$\begin{align}
+\chi & = \chi_{0} \\
+ & = \frac{g^{2}\mu_{0}\mu_{B}^{2}m_{e}}{\hbar^{2}4\pi^{2}}k_{F} \\
+ & = \frac{g^{2}\mu_{0}\mu_{B}^{2}m_{e}}{h^{2}}k_{F}
+\end{align}$$
+
