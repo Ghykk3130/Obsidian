@@ -247,4 +247,19 @@ $$\begin{align}
 \end{align}$$
 ## (c)
 
+For the 2D case, it suffices to evaluate:
+$$\begin{align}
+\int_{k<k_{F}}d^{2}k \frac{1}{|\mathbf{k}+\mathbf{q}|^{2}-k^{2}} & = \int kdkd\phi \frac{1}{2kq\cos \phi-q^{2}} 
+\end{align}$$
+We first evaluate:
+$$\begin{align}
+\int dx x \frac{x}{x-a} & = \int dx + \int dx \frac{-a}{x+a} \\
+ & = x- a \ln|x+a|
+\end{align}$$
+Then:
+$$\begin{align}
+\int_{k<k_{F}}d^{2}k \frac{1}{|\mathbf{k}+\mathbf{q}|^{2}-k^{2}} & =\int_{0}^{2\pi}d\phi \frac{1}{q}\left(  \frac{1}{2\cos \phi} \right)^{2} \left[ 2k\cos \phi-q\ln|2k\cos \phi+q| \right] _{0}^{k_{F }} \\
+ & = \frac{1}{4q}\int d\phi \left[  \frac{2k_{F}}{\cos \phi}- \frac{q}{\cos \phi }\ln| \frac{2k_{F}\cos \phi+q}{q} |  \right]
+\end{align}$$
+
 
