@@ -245,4 +245,6 @@ $$\begin{align}
  & = \frac{g^{2}\mu_{0}\mu_{B}^{2}m_{e}}{\hbar^{2}4\pi^{2}}k_{F} \\
  & = \frac{g^{2}\mu_{0}\mu_{B}^{2}m_{e}}{h^{2}}k_{F}
 \end{align}$$
+## (c)
+
 
