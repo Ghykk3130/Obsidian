@@ -43,6 +43,38 @@ $$\chi= - \frac{\mu_{0}e^{2}k_{F}}{12\pi^{2}m^{*}}$$
 Copper is paramagnetic probably because the effective mass is large, so that the Pauli paramagnetism outweighs the Landau diamagnetism. Conversely, graphite is diamagnetic probably because its effective mass is small. 
 ## (d)
 
+Imagine some of down spins are moved to the up spins, so that the Fermi energy of up spins is lifted to $E_{F}+\delta E$, and the Fermi energy of the down spins is lifted to $E_{F}-\delta E$. Let $\bar{n}$ be the spinless DOS. Let $\delta n_{\uparrow},\ \delta n_{\downarrow}$ denote the induced change in the density of up spins and down spins.
+
+Then we have:
+$$\begin{align}
+\Delta E & = \delta E \delta E\bar{n}(E_{F})+U(n_{\uparrow}+\delta n_{\uparrow})(n_{\downarrow}-\delta n_{\downarrow})-Un_{\uparrow}n_{\downarrow} \\
+ & = (\delta E)^{2}\bar{n}-U\delta n_{\uparrow}\delta n_{\downarrow}
+\end{align}$$
+where we assumed $n_{\uparrow}=n_{\downarrow}$. Know that:
+$$\begin{align}
+\delta n_{\uparrow}=\delta E \bar{n}(E_{F}),\ \delta n_{\downarrow}=\delta E \bar{n}(E_{F}) 
+\end{align}$$
+Then we have:
+$$\begin{align}
+\Delta E & = (\delta E)^{2}\bar{n}-U(\delta E)^{2} \bar{n}^{2}
+\end{align}$$
+The induced magnetization is:
+$$\begin{align}
+M & = \mu_{B}(n_{\uparrow}+\delta n_{\uparrow}-n_{\downarrow}+\delta n_{\downarrow}) \\
+ & = \mu_{B} 2\delta E \bar{n}
+\end{align}$$
+So after adding Zeeman interaction into the energy change, we get:
+$$\begin{align}
+\Delta E & = (\delta E)^{2}\bar{n}-U(\delta E)^{2}\bar{n}^{2}-MB \\
+ & = \frac{M^{2}}{4\mu^{2}_{B}\bar{n}}(1-U \bar{n})-MB
+\end{align}$$
+To minimize, we take the derivative:
+$$\begin{align}
+ & \frac{M}{2\mu_{B}^{2}\bar{n}}(1-U\bar{n})-B=0 \\
+\implies & M= \frac{2\mu_{B}^{2}\bar{n}(E_{F})B}{1-U \bar{n}(E_{F})} \\
+ \implies & \chi= \frac{2\mu_{0}\mu_{B}^{2}\bar{n}(E_{F})}{1-U\bar{n}(E_{F})}
+\end{align}$$
+Notice that if $U$ is large, the susceptibility is indeed enhanced. 
 # Problem 2
 ## (a)
 
@@ -121,4 +153,6 @@ M & = \mu_{B}n\alpha \\
  & = \pm \mu_{B}n^{5/3}2^{1/3}\sqrt{  \frac{243}{40C}(U-U_{c}) }
 \end{align}$$
 # Problem 3
+## (a)
+
 
