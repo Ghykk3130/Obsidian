@@ -253,7 +253,7 @@ $$\begin{align}
 \end{align}$$
 We first evaluate integrals of this type:
 $$\begin{align}
-\int_{0}^{2\pi} d \phi \frac{1}{a\cos \phi+b}
+\int_{0}^{2\pi} d \phi \frac{1}{b\cos \phi+a}
 \end{align}$$
 Observe that:
 $$\begin{align}
@@ -268,5 +268,48 @@ $$\begin{align}
 \end{align}$$
 Then:
 $$\begin{align}
-d\phi \frac{1}{a\cos \phi+b} & = \frac{2dy}{1+y^{2} }  \frac{1}{a \frac{}{}}
+d\phi \frac{1}{a\cos \phi+b} & = \frac{2dy}{1+y^{2} }  \frac{1}{b \frac{1-y^{2}}{1+y^{2}}+a}= \frac{2dy}{b(1-y^{2})+a(1+y^{2})}
 \end{align}$$
+Know that $y$ is only monotonic for $(0,\pi)$ and $(\pi,2\pi)$. So we split the integral:
+$$\begin{align}
+\int_{0}^{2\pi} d\phi \frac{1}{b\cos \phi+a} & = \left( \int_{0}^{\infty}+ \int _{-\infty}^{0} \right) \frac{2dy}{b(1-y^{2})+a(1+y^{2})} \\
+ & = \int _{-\infty}^{\infty} dy \frac{2}{b(1-y^{2})+a(1+y^{2})} \\
+ & = \int dy \frac{2}{a+b+ (a-b)y^{2}} \\
+ & = \frac{2}{a+b}\int dy \frac{1}{1+ \frac{a-b}{a+b}y^{2}} \\
+ & = \frac{2}{a+b}\sqrt{  \frac{a+b}{a-b} } \left[\arcsin\left(  \frac{a-b}{a+b}y^{} \right)\right]_{-\infty}^{\infty} \\
+ & = 2\pi \sqrt{ \frac{1}{a^{2}-b^{2}} }
+\end{align}$$
+Therefore:
+$$\begin{align}
+\int_{k<k_{F}}d^{2}k \frac{1}{|\mathbf{k}+\mathbf{q}|^{2}-k^{2}} & = \frac{1}{q} \int k dk 2\pi \sqrt{ \frac{1}{q^{2}-(2k)^{2}} } \\
+ & = \frac{\pi}{4q} \int d((2k)^{2})\sqrt{  \frac{1}{q^{2}-(2k)^{2}} } \\
+ & = \frac{\pi}{4q}\left[ \arcsin\left(  \frac{2k}{q} \right) \right]_{0}^{k_{F}} \\
+ & = \frac{\pi}{4q} \arcsin\left(  \frac{2k_{F}}{q} \right)
+\end{align}$$
+Then similarly we get:
+$$\begin{align}
+\int_{k<k_{F}} d^{2}k \frac{1}{|\mathbf{k}-\mathbf{q}|^{2}-k^{2}} & = \frac{\pi}{4(-q)}\arcsin\left(  \frac{2k_{F}}{(-q)} \right) \\
+ & = \frac{\pi}{4q} \arcsin\left(  \frac{2k_{F}}{q} \right)
+\end{align}$$
+Then:
+$$\begin{align}
+M_{\mathbf{q}} & = \frac{g^{2}\mu_{0}\mu_{B}^{2}m_{e}H_{\mathbf{q}}}{\hbar^{2}} \frac{1}{(2\pi)^{2}} \cdot \frac{\pi}{4q}\arcsin\left(  \frac{2k_{F}}{q} \right) \\
+\implies \chi_{\mathbf{q}} & = \frac{g^{2}\mu_{0}\mu_{B}^{2}m_{e}}{h^{2}}  \cdot \frac{\pi}{2q}\arcsin\left(  \frac{2k_{F}}{q} \right)
+\end{align}$$
+For the 1D case, we have:
+$$\begin{align}
+\int_{0}^{k_{F}} dk \frac{1}{(k+q)^{2}-k^{2}} & = \int dk \frac{1}{2kq+q^{2}} \\
+ & = \frac{1}{q}\int dk \frac{1}{2k+q} \\
+ & = \frac{1}{2q} \ln\left| \frac{2k_{F}+q}{q} \right|
+\end{align}$$
+Then:
+$$\begin{align}
+\int_{0}^{k_{F}} dk \frac{1}{(k-q)^{2}-k^{2}} & = - \frac{1}{2q}\ln\left| \frac{2k_{F}-q}{q} \right|
+\end{align}$$
+Then:
+$$\begin{align}
+\chi_{\mathbf{q}} & = \frac{g^{2}\mu_{0}\mu_{B}^{2}m_{e}}{\hbar^{2}} \frac{1}{2\pi} \left(  \frac{1}{2q}\ln\left| \frac{2k_{F}+q}{q} \right|- \frac{1}{2q}\ln\left| \frac{2k_{F}-q}{1} \right| \right) \\
+	 & = \frac{g^{2}\mu_{0}\mu_{B}^{2}m_{e} }{\hbar^{2}} \frac{1}{4q} \ln\left| \frac{2k_{F}+q}{2k_{F}-q} \right|
+
+\end{align}$$
+
