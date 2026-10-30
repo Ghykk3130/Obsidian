@@ -283,13 +283,11 @@ Therefore:
 $$\begin{align}
 \int_{k<k_{F}}d^{2}k \frac{1}{|\mathbf{k}+\mathbf{q}|^{2}-k^{2}} & = \frac{1}{q} \int k dk 2\pi \sqrt{ \frac{1}{q^{2}-(2k)^{2}} } \\
  & = \frac{\pi}{4q} \int d((2k)^{2})\sqrt{  \frac{1}{q^{2}-(2k)^{2}} } \\
- & = \frac{\pi}{4q}\left[ \arcsin\left(  \frac{2k}{q} \right) \right]_{0}^{k_{F}} \\
- & = \frac{\pi}{4q} \arcsin\left(  \frac{2k_{F}}{q} \right)
+ & = \frac{\pi}{2q}(q-\sqrt{ q^{2}-(2k_{F})^{2} })
 \end{align}$$
 Then similarly we get:
 $$\begin{align}
-\int_{k<k_{F}} d^{2}k \frac{1}{|\mathbf{k}-\mathbf{q}|^{2}-k^{2}} & = \frac{\pi}{4(-q)}\arcsin\left(  \frac{2k_{F}}{(-q)} \right) \\
- & = \frac{\pi}{4q} \arcsin\left(  \frac{2k_{F}}{q} \right)
+\int_{k<k_{F}} d^{2}k \frac{1}{|\mathbf{k}-\mathbf{q}|^{2}-k^{2}} & = - \frac{\pi}{2q}(-q-\sqrt{ q^{2}-(2k_{F})^{2} })
 \end{align}$$
 Then:
 $$\begin{align}
