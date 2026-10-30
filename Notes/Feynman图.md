@@ -14,3 +14,4 @@ $$\begin{align}
 \implies & g_{1}^{-1}g_{2}=h_{1}h_{2}^{-1}\in H
 \end{align}$$
 于是$g_{2}\in g_{1}H$。令$g_{2}=g_{1}h| for s\omega$
+
