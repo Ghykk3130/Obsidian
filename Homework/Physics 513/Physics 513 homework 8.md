@@ -227,6 +227,35 @@ $$\begin{align}
  & = \int d^{4}x \frac{d^{3}k}{(2\pi)^{3}} \frac{1}{\sqrt{ 2E_{\mathbf{k}} }} \frac{d^{3}q}{(2\pi)^{3}} \frac{1}{\sqrt{ 2E_{\mathbf{q}} }} \frac{d^{3}p}{(2\pi)^{3}} \frac{1}{\sqrt{ 2E_{\mathbf{p}} }} \bra{0} b_{\mathbf{p}_{A}}b_{\mathbf{p}_{B}}a_{\mathbf{k}}e^{-k\cdot x} b_{\mathbf{q}}^{\dagger}e^{iq\cdot x} b_{\mathbf{p}}^{\dagger}e^{ip\cdot x}a^{\dagger}_{\mathbf{P}}\ket{0}  \\
  & = \int  \frac{d^{3}k}{(2\pi)^{3}} \frac{1}{\sqrt{ 2E_{\mathbf{k}} }} \frac{d^{3}q}{(2\pi)^{3}} \frac{1}{\sqrt{ 2E_{\mathbf{q}} }} \frac{d^{3}p}{(2\pi)^{3}} \frac{1}{\sqrt{ 2E_{\mathbf{p}} }}(2\pi)^{4}\delta(-k+q+p) \bra{0} b_{\mathbf{p}_{A}}b_{\mathbf{p}_{B}}a_{\mathbf{k}}b^{\dagger}_{\mathbf{q}} b^{\dagger}_{\mathbf{p}}a^{\dagger}_{\mathbf{P}}\ket{0} 
 \end{align}$$
-
-
-
+By Wick's theorem, we know that:
+$$\begin{align}
+\bra{0} b_{\mathbf{p}_{A}}b_{\mathbf{p}_{B}}a_{\mathbf{k}}b^{\dagger}_{\mathbf{q}}b^{\dagger}_{\mathbf{p}}a^{\dagger}_{\mathbf{P}}\ket{0}  & = [b_{\mathbf{p}_{A}}, b^{\dagger}_{\mathbf{q}}][b_{\mathbf{p}_{B}},b^{\dagger}_{\mathbf{p}}][a_{\mathbf{k}}a^{\dagger}_{\mathbf{P}}]+ [b_{\mathbf{p}_{A}}, b^{\dagger}_{\mathbf{p}}][b_{\mathbf{p}_{B}},b^{\dagger}_{\mathbf{q}}][a_{\mathbf{k}}a^{\dagger}_{\mathbf{P}}]
+\end{align}$$
+Know that:
+$$\begin{align}
+\int  d^{3}k \frac{1}{\sqrt{ 2E_{\mathbf{k}} }} d^{3}q \frac{1}{\sqrt{ 2E_{\mathbf{q}} }} d^{3}p \frac{1}{\sqrt{ 2E_{\mathbf{p}} }}(2\pi)^{4}\delta(-k+q+p) \delta(\mathbf{p}_{A}-\mathbf{q})\delta(\mathbf{p}_{B}-\mathbf{p})\delta(\mathbf{k}-\mathbf{P}) & = \frac{1}{\sqrt{ 2^{3}E_{\mathbf{P}}E_{\mathbf{p}_{A}}E_{\mathbf{p}_{B}} }} (2\pi)^{4} \delta(-P+p_{A}+p_{B})
+\end{align}$$
+And also:
+$$\begin{align}
+\int  d^{3}k \frac{1}{\sqrt{ 2E_{\mathbf{k}} }} d^{3}q \frac{1}{\sqrt{ 2E_{\mathbf{q}} }} d^{3}p \frac{1}{\sqrt{ 2E_{\mathbf{p}} }}(2\pi)^{4}\delta(-k+q+p) \delta(\mathbf{p}_{A}-\mathbf{p})\delta(\mathbf{p}_{B}-\mathbf{q})\delta(\mathbf{k}-\mathbf{P}) & = \frac{1}{\sqrt{ 2^{3}E_{\mathbf{P}}E_{\mathbf{p}_{A}}E_{\mathbf{p}_{B}} }} (2\pi)^{4} \delta(-P+p_{A}+p_{B})
+\end{align}$$
+Then:
+$$\begin{align}
+\int d^{4}x \bra{\mathbf{p}_{A},\mathbf{p}_{B}} \Phi \phi^{2}\ket{\mathbf{P}} & = \frac{2(2\pi)^{4}}{\sqrt{ 2^{3}E_{\mathbf{P}}E_{\mathbf{p}_{A}}E_{\mathbf{p}_{B}} }}\delta(-P+p_{A}+p_{B})
+\end{align}$$
+Know that:
+$$\begin{align}
+\bra{\mathbf{p}_{A},\mathbf{p}_{B}}iT \ket{\mathbf{P}}  & =  \frac{-2\mu(2\pi)^{4}}{\sqrt{ 2^{3}E_{\mathbf{P}}E_{\mathbf{p}_{A}}E_{\mathbf{p}_{B}} }}\delta(-P+p_{A}+p_{B}) =  \frac{(2\pi)^{4}\delta(-P+p_{A}+p_{B})}{\sqrt{ 2^{^{3}}E_{\mathbf{P}}E_{\mathbf{p}_{A}}E_{\mathbf{p}_{B}} }} \mathcal{M}
+\end{align}$$
+Then the corresponding M-matrix is:
+$$\begin{align}
+\mathcal{M} & = -2\mu
+\end{align}$$
+Then the decay rate is given by:
+$$\begin{align}
+\Gamma & = \frac{1}{2M} \int |\mathcal{M} |^{2}  \frac{1}{2!} \frac{d^{3}p_{A}}{(2\pi)^{3}} \frac{1}{2E_{\mathbf{p}_{A}}} \frac{d^{3}p_{B}}{(2\pi)^{3}} \frac{1}{2E_{\mathbf{p}_{B}}}(2\pi)^{4}\delta(-P+p_{A}+p_{B}) \\
+\end{align}$$
+We then evaluate:
+$$\begin{align}
+\int \frac{d^{3}p_{A}}{(2\pi)^{3}2E_{\mathbf{p}_{A}} } \frac{d^{3}p_{B}}{(2\pi)^{3}2E_{\mathbf{p}_{B}}}(2\pi)^{4}\delta(p_{A}+p_{B}-P) & = \int \frac{d^{3}p_{A}}{(2\pi)^{3}2E_{\mathbf{p}_{A}}} \frac{1}{(2\pi)^{3}2E_{\mathbf{P}-\mathbf{p}_{A}}} (2\pi)^{4}
+\end{align}$$

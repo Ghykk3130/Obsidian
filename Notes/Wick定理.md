@@ -26,3 +26,17 @@ $$\begin{align}
 $$\begin{align}
 \bra{0} 
 \end{align}$$
+
+
+
+>[!Success] Theorem 1 (Wick's theorem)
+>Let $T$ be the time-ordering operator, $N$ be the normal ordering operator. Then:
+>$$\begin{align}
+\bra{0} T\phi(x_{1})\dots \phi(x_{n})\ket{0} = \bra{0} N \phi(x_{1})\dots \phi(x_{n})\ket{0} + \text{all possible contractions} 
+\end{align}$$
+
+Wick定理还有变体。如果将commutator定义为生成湮灭算符的contraction，那么：
+
+>[!Success] Theorem 2
+>$$\text{Any order of the product of annihilation and creation operators}=\text{Normal order}+\text{all possible contractions}$$
+

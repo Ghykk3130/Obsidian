@@ -4273,7 +4273,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "标量场",
+                "query": "Wick",
                 "matchingCase": true,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -4288,8 +4288,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200.5,
-    "collapsed": true
+    "width": 200.5
   },
   "right": {
     "id": "9003d078f8dbc4ed",
@@ -4395,8 +4394,9 @@
   },
   "active": "8b0660ba0f7ce7e5",
   "lastOpenFiles": [
-    "Notes/标量场的正则量子化.md",
+    "Notes/Wick定理.md",
     "Homework/Physics 513/Physics 513 homework 8.md",
+    "Notes/标量场的正则量子化.md",
     "Pictures/314f71ce6984887603e87ee09cf9ebd5.jpg",
     "Pictures/f6c6faea058dd756eddae7f54b08300d.jpg",
     "Pictures/ce075a0f3145ab73be8fbf5fa7681352.jpg",
@@ -4423,7 +4423,6 @@
     "Homework/Physics 513/Physics 513 homework 7.md",
     "SimpleWick Obsidian Test.md",
     "SimpleWick Obsidian Report.pdf",
-    "Notes/Wick定理.md",
     "Notes/Untitled.md",
     "Notes/Fermi's golden rule.md",
     "Notes/线性响应.md",
