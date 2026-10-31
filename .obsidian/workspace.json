@@ -432,12 +432,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Homework/Physics 513/Physics 513 homework 8.md",
+                "file": "Notes/相互作用理论.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Physics 513 homework 8"
+              "title": "相互作用理论"
             }
           },
           {
@@ -4273,7 +4273,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "申请",
+                "query": "相互作用",
                 "matchingCase": true,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -4284,7 +4284,8 @@
               "title": "Search"
             }
           }
-        ]
+        ],
+        "currentTab": 3
       }
     ],
     "direction": "horizontal",
@@ -4395,6 +4396,7 @@
   },
   "active": "8b0660ba0f7ce7e5",
   "lastOpenFiles": [
+    "Homework/Physics 513/Physics 513 homework 8.md",
     "Pictures/57a195a9cab7564ab4e3aa780e5a198c.jpg",
     "Pictures/11a9d591074ee52685a7413ab749ad39.jpg",
     "Pictures/2d31baeb22a19079d5efd744895bf1d3.jpg",
@@ -4413,7 +4415,6 @@
     "Homework/Physics 402/Physics 402 Problem Set 3.md",
     "Homework/Physics 402/Physics 402 problem set 1.md",
     "Homework/Physics 402/Physics 402 problem set 2.md",
-    "Homework/Physics 513/Physics 513 homework 8.md",
     "Homework/Physics 513/Physics 513 homework 7.md",
     "SimpleWick Obsidian Test.md",
     "SimpleWick Obsidian Report.pdf",
@@ -4428,7 +4429,6 @@
     "Pictures/Pasted image 20261027133810.png",
     "Pictures/Pasted image 20261027132119.png",
     "Pictures/Pasted image 20261027130947.png",
-    "Pictures/Pasted image 20261026104747.png",
     "Homework/Physics 520/Physics 520 homework 7.md",
     "Notes/位力定理.md",
     "Homework/Physics 513/Physics 513 homework 6.md",
