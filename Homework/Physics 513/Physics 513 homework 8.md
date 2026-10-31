@@ -33,6 +33,60 @@ P(0) & = \left| \bra{0} T\exp\left( i \int d^{4}x j(x)\phi_{I}(x) \right)\ket{0}
 \end{align}$$
 ## (b)
 
+We first expand to the second order:
+$$\begin{align}
+\bra{0} T\exp\left( i \int d^{4}xj(x)\phi_{I}(x)  \right)\ket{0}  & \approx \bra{0} \left( T\left\{  1+ i \int d^{4}x j\phi_{I}+\left( \frac{i^{2}}{2} \right)\left( \int d^{4}x j\phi_{I} \right)  \right\} \right)\ket{0}  \\
+ & = 1+ i \int d^{4}x j \bra{0}\phi_{I}\ket{0}- \frac{1}{2}\int d^{4}x \int d^{4}y\bra{0} T\phi_{I}(x)\phi_{I}(y)\ket{0} j(x)j(y)  
+\end{align}$$
+Observe that:
+$$\begin{align}
+\bra{0} \phi_{I}\ket{0}  & = \bra{0} (\phi^{+}_{I}+\phi^{-}_{I})\ket{0}  \\
+ & = \bra{0} \phi^{+}_{I}\ket{0} + \bra{0} \phi^{-}_{I}\ket{0}  \\
+ & = 0
+\end{align}$$
+Then we have:
+$$\begin{align}
+\bra{0} T\exp\left( i \int d^{4}x j(x)\phi_{I}(x)  \right)\ket{0}  & \approx 1- \frac{1}{2}\int d^{4}x d^{4}y \bra{0} T\phi_{I}(x)\phi_{I}(y)\ket{0} j(x)j(y) \\
+ & = 1- \frac{1}{2}\int d^{4 }x d^{4}y D_{F}(x-y)j(x)j(y) \\
+ & = 1- A,\ A= \frac{1}{2}\int d^{4 }x d^{4}y D_{F}(x-y)j(x)j(y)
+\end{align}$$
+where $A\sim\mathcal{O}(j^{2})$. Then:
+$$\begin{align}
+P(0) & = (1-A^{*})(1-A) \\
+ & = 1-2\mathrm{Re}(A)+A^{*}A \\
+ & \approx 1-2\mathrm{Re}(A)
+\end{align}$$
+We calculate:
+$$\begin{align}
+A & = \frac{1}{2} \int d^{4}x d^{4}y D_{F}(x-y)j(x)j(y) \\
+ & = \frac{1}{2}\int d^{4}xd^{4}y \frac{d^{4}k}{(2\pi)^{4}} \frac{i}{k^{2}-m^{2}+i\epsilon}e^{-ik\cdot(x-y)}j(x)j(y) \\
+ & = \frac{1}{2}\int d^{4}x d^{4}y \frac{d^{4}k}{(2\pi)^{4}} i\left(  P \frac{1}{k^{2}-m^{2}}-i\pi\delta(k^{2}-m^{2}) \right)e^{-ik\cdot(x-y)}j(x)j(y) \\
+\end{align}$$
+Then:
+$$\begin{align}
+\mathrm{Re}(A) & =  \frac{\pi}{2}\int d^{4}xd^{4}y \frac{d^{4}k}{(2\pi)^{4}} \delta(k^{2}-m^{2})e^{-ik\cdot(x-y)}j(x)j(y) \\
+ & =  \frac{\pi}{2}\int \frac{d^{4}k}{(2\pi)^{4}}\delta(k^{2}-m^{2})\tilde{j}(-k)\tilde{j}(k) \\
+ & =  \frac{\pi}{2}\int \frac{d^{4}k}{(2\pi)^{4}} \left(\frac{\delta(k^{0}= E_{\mathbf{k}})}{2|E_{\mathbf{k}}|} + \frac{\delta(k^{0}= -E_{\mathbf{k}})}{2|E_{\mathbf{k}}|} \right)|\tilde{j}(k) |^{2} \\
+ & =  \frac{1}{4}\int d^{3}k \frac{|\tilde{j}(k)|^{2}}{|E_{\mathbf{k}}|} \\
+ & =  \frac{1}{2}\int d^{3}k \frac{1}{2|E_{\mathbf{k}} |}|\tilde{j}(k) |^{2}
+\end{align}$$
+Then clearly we have:
+$$\begin{align}
+P(0) & \approx 1- \int d^{3}k \frac{1}{2|E_{\mathbf{k}}|}|\tilde{j}(k) |^{2}
+\end{align}$$
+## (c)
+
+The Feynman diagram for part (b) is:
+![[0d1b2a1b0e4d301034349eb9ccb3d440.jpg|centering|300]]
+The Feynman diagrams of higher order terms are:
+![[ce075a0f3145ab73be8fbf5fa7681352.jpg|centering|600]]
+Observe that only the eventh order terms exist, since we need complete contraction. And this is effectively a $\phi^{1}$ theory, each vertex accepts one connection. So the total number needed is always even. 
+
+And it's also obvious that for the $2n$ th order term, the number of Feynman diagrams is $n!$. And each diagram has $S=1$. Therefore:
+$$\begin{align}
+
+\end{align}$$
+
 
 
 
