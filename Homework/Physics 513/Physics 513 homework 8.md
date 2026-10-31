@@ -219,7 +219,14 @@ $$\begin{align}
 \end{align}$$
 Then we need:
 $$\begin{align}
--\int d^{4}x \mu \bra{\mathbf{p}_{A},\mathbf{p}_{B}}T \Phi \phi^{2}\ket{\mathbf{P}} 
+-\int d^{4}x \mu \bra{\mathbf{p}_{A},\mathbf{p}_{B}}T \Phi \phi^{2}\ket{\mathbf{P}} = - \int d^{4}x \mu \bra{\mathbf{p}_{A},\mathbf{p}_{B}} \Phi \phi^{2}\ket{\mathbf{P}} 
 \end{align}$$
+We evaluate:
+$$\begin{align}
+\int d^{4}x \bra{\mathbf{p}_{A},\mathbf{p}_{B}} \Phi \phi^{2}\ket{\mathbf{P}}  & = \int d^{4}x \frac{d^{3}k}{(2\pi)^{3}} \frac{1}{\sqrt{ 2E_{\mathbf{k}} }} \frac{d^{3}q}{(2\pi)^{3}} \frac{1}{\sqrt{ 2E_{\mathbf{q}} }} \frac{d^{3}p}{(2\pi)^{3}} \frac{1}{\sqrt{ 2E_{\mathbf{p}} }} \bra{0} b_{\mathbf{p}_{A}}b_{\mathbf{p}_{B}}  (a_{\mathbf{k}}e^{-k\cdot x}+\text{c.c.})(b_{\mathbf{q}}e^{-q\cdot x}+\text{c.c.})(b_{\mathbf{p}}e^{-p\cdot x}+\text{c.c.})a^{\dagger}_{\mathbf{P}}\ket{0}  \\
+ & = \int d^{4}x \frac{d^{3}k}{(2\pi)^{3}} \frac{1}{\sqrt{ 2E_{\mathbf{k}} }} \frac{d^{3}q}{(2\pi)^{3}} \frac{1}{\sqrt{ 2E_{\mathbf{q}} }} \frac{d^{3}p}{(2\pi)^{3}} \frac{1}{\sqrt{ 2E_{\mathbf{p}} }} \bra{0} b_{\mathbf{p}_{A}}b_{\mathbf{p}_{B}}a_{\mathbf{k}}e^{-k\cdot x} b_{\mathbf{q}}^{\dagger}e^{iq\cdot x} b_{\mathbf{p}}^{\dagger}e^{ip\cdot x}a^{\dagger}_{\mathbf{P}}\ket{0}  \\
+ & = \int  \frac{d^{3}k}{(2\pi)^{3}} \frac{1}{\sqrt{ 2E_{\mathbf{k}} }} \frac{d^{3}q}{(2\pi)^{3}} \frac{1}{\sqrt{ 2E_{\mathbf{q}} }} \frac{d^{3}p}{(2\pi)^{3}} \frac{1}{\sqrt{ 2E_{\mathbf{p}} }}(2\pi)^{4}\delta(-k+q+p) \bra{0} b_{\mathbf{p}_{A}}b_{\mathbf{p}_{B}}a_{\mathbf{k}}b^{\dagger}_{\mathbf{q}} b^{\dagger}_{\mathbf{p}}a^{\dagger}_{\mathbf{P}}\ket{0} 
+\end{align}$$
+
 
 
