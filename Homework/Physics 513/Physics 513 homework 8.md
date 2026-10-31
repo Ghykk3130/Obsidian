@@ -9,7 +9,11 @@ For (a), $S=1$. For (b), $S=1$. For (c), $S=2$
 # Problem 2
 ## (a)
 
-![[2d31baeb22a19079d5efd744895bf1d3.jpg|centering|600]]
+![[11a9d591074ee52685a7413ab749ad39.jpg|centering|400]]
 ## (b)
+
+![[57a195a9cab7564ab4e3aa780e5a198c.jpg|centering|500]]
+## (c)
+
 
 
