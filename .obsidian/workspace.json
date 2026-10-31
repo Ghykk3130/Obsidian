@@ -4273,7 +4273,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "相互作用",
+                "query": "标量场",
                 "matchingCase": true,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -4395,12 +4395,13 @@
   },
   "active": "8b0660ba0f7ce7e5",
   "lastOpenFiles": [
+    "Notes/标量场的正则量子化.md",
+    "Homework/Physics 513/Physics 513 homework 8.md",
     "Pictures/314f71ce6984887603e87ee09cf9ebd5.jpg",
     "Pictures/f6c6faea058dd756eddae7f54b08300d.jpg",
     "Pictures/ce075a0f3145ab73be8fbf5fa7681352.jpg",
     "Pictures/0d1b2a1b0e4d301034349eb9ccb3d440.jpg",
     "Notes/相互作用理论.md",
-    "Homework/Physics 513/Physics 513 homework 8.md",
     "Pictures/57a195a9cab7564ab4e3aa780e5a198c.jpg",
     "Pictures/11a9d591074ee52685a7413ab749ad39.jpg",
     "Pictures/2d31baeb22a19079d5efd744895bf1d3.jpg",
@@ -4428,7 +4429,6 @@
     "Notes/线性响应.md",
     "Notes/Lorentz群的表示.md",
     "Notes/GRE物理.md",
-    "Pictures/Pasted image 20261027134608.png",
     "Homework/Physics 520/Physics 520 homework 7.md",
     "Notes/位力定理.md",
     "Homework/Physics 513/Physics 513 homework 6.md",

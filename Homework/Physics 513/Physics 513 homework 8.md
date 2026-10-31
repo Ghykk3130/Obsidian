@@ -114,7 +114,28 @@ P(0) & = e^{-A^{^{*}}}e^{-A} \\
 \end{align}$$
 ## (d)
 
-
+We first expand:
+$$\begin{align}
+\bra{\mathbf{k}} i \int d^{4}x j(x)\phi_{I}(x)\ket{0}  & = i \int d^{4}x j\bra{\mathbf{k}} \phi \ket{0} 
+\end{align}$$
+We then compute:
+$$\begin{align}
+\bra{\mathbf{k}} \phi \ket{0}  & = \bra{0} a_{\mathbf{k}}\int \frac{d^{3}p}{(2\pi)^{3}} \frac{1}{\sqrt{ 2E_{\mathbf{p}} }} (a_{\mathbf{p}}e^{-ip\cdot x}+a^{\dagger}_{\mathbf{p}}e^{ip\cdot x})\ket{0}  \\
+ & = \int \frac{d^{3}p}{(2\pi)^{3}} \frac{1}{\sqrt{ 2E_{\mathbf{p}} }}e^{ip\cdot x}\bra{0} a_{\mathbf{k}}a^{\dagger}_{\mathbf{p}}\ket{0}  \\
+ & = \frac{e^{ik\cdot x}}{\sqrt{ 2E_{\mathbf{k}} }} 
+\end{align}$$
+Then:
+$$\begin{align}
+\bra{\mathbf{k}} i \int d^{4}x j(x)\phi_{I}(x)\ket{0} & = i \int d^{4}x j(x) \frac{e^{ik\cdot x} }{\sqrt{ 2E_{\mathbf{k}}}} \\
+ & = i \int d^{4}x \frac{d^{4}p}{(2\pi)^{4}} \tilde{j}(p) \frac{e^{i(p+k)\cdot x}}{\sqrt{ 2E_{\mathbf{k}} }} \\
+ & = i \tilde{j}(-k) \frac{1}{\sqrt{ 2E_{\mathbf{k}} }}
+\end{align}$$
+So:
+$$\begin{align}
+P(0) & \approx \left( 1-i \tilde{j}^{*}(-k) \frac{1}{\sqrt{ 2E_{\mathbf{k}} }}  \right)\left( 1+i\tilde{j}(-k) \frac{1}{\sqrt{ 2E_{\mathbf{k}} }} \right) \\
+ & =1+   \sqrt{ \frac{2}{E_{\mathbf{k}}} } \mathrm{Im}\tilde{j}(k)
+\end{align}$$
+Now consider all orders. 
 
 
 
