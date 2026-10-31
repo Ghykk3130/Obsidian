@@ -23,7 +23,17 @@ We first switch to the interaction picture:
 $$\begin{align}
 H_{I} & = -\int d^{3} x j(x)\phi_{I}(x)
 \end{align}$$
-Since the state where there is no particle is $\ket{0}$, 
+Since the state where there is no particle is $\ket{0}$, the evolved state is:
+$$\begin{align}
+T \exp\left( i \int d^{4}x j(x)\phi_{I}(x) \right) \ket{0} 
+\end{align}$$
+We want to find how much it overlaps with the no-particle-state. So:
+$$\begin{align}
+P(0) & = \left| \bra{0} T\exp\left( i \int d^{4}x j(x)\phi_{I}(x) \right)\ket{0}  \right|^{2}
+\end{align}$$
+## (b)
+
+
 
 
 
