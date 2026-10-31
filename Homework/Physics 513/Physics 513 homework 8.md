@@ -211,4 +211,15 @@ $$\begin{align}
 \end{align}$$
 # Problem 4
 
+We know that:
+$$\mathcal{H}_{\text{int}}= \mu \Phi \phi^{2}$$
+Then the S-matrix is:
+$$\begin{align}
+\bra{\mathbf{p}_{A},\mathbf{p}_{B}} Te^{-i \int d^{4}x \mu \Phi \phi^{2}}\ket{\mathbf{P}}  & \approx -i \int d ^{4}x \mu \bra{\mathbf{p}_{A},\mathbf{p}_{B}} T\Phi(x) \phi^{2}(x)\ket{\mathbf{P}} 
+\end{align}$$
+Then we need:
+$$\begin{align}
+-\int d^{4}x \mu \bra{\mathbf{p}_{A},\mathbf{p}_{B}}T \Phi \phi^{2}\ket{\mathbf{P}} 
+\end{align}$$
+
 
