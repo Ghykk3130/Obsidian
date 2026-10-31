@@ -78,17 +78,41 @@ P(0) & \approx 1- \int d^{3}k \frac{1}{2|E_{\mathbf{k}}|}|\tilde{j}(k) |^{2}
 
 The Feynman diagram for part (b) is:
 ![[0d1b2a1b0e4d301034349eb9ccb3d440.jpg|centering|300]]
-The Feynman diagrams of higher order terms are:
-![[ce075a0f3145ab73be8fbf5fa7681352.jpg|centering|600]]
+The Feynman diagrams of some higher order terms are:
+![[f6c6faea058dd756eddae7f54b08300d.jpg|centering|600]]![[314f71ce6984887603e87ee09cf9ebd5.jpg|centering|600]]
 Observe that only the eventh order terms exist, since we need complete contraction. And this is effectively a $\phi^{1}$ theory, each vertex accepts one connection. So the total number needed is always even. 
 
-And it's also obvious that for the $2n$ th order term, the number of Feynman diagrams is $n!$. And each diagram has $S=1$. Therefore:
+For $2n$ points, we first arrange them. There are $(2n)!$ ways. Then we pair the neighboring points. Within each pair, there is a degeneracy of $2$. And any arrangement of the pairs is also viewed as equivalent Feynman diagrams. There are $n!$ such ways. So in total, the number of Feynman diagrams is $\frac{(2n)!}{2^{n}n!}$. 
+
+Then we have:
 $$\begin{align}
-
+\bra{0} \frac{i^{2n}}{(2n)!} \int d^{4}x_{1} \dots d^{4}x_{2n} T\phi_{1}\dots \phi_{2n} j_{1}\dots j_{2n} \ket{0}  & = \frac{i^{2n}}{(2n)!}\int d^{4}x_{1}\dots d^{4}x_{2n} \bra{0} T\phi_{1}\dots \phi_{2n}j_{1}\dots j_{2n}\ket{0}  \\
+ & = \frac{i^{2n}}{(2n)! } \int d^{4}x_{1}\dots d^{4}x_{2n}(D_{12}\dots+D_{13}\dots+\dots)j_{1}\dots j_{2n}  \\
+ & = \left(  \frac{i^{2n}}{(2n)!} \int d^{4}x_{1}\dots d^{4}x_{2n}D_{12}\dots j_{1}\dots j_{2n}\right)+ \left(  \frac{i^{2n}}{(2n)!} \int d^{4}x_{1}\dots d^{4}x_{2n}D_{13}\dots j_{1}\dots j_{2n}\right)+ \dots
 \end{align}$$
-
-
-
+Know that:
+$$\begin{align}
+\frac{i^{2n}}{(2n)!} \int d^{4}x_{1}\dots d^{4}x_{2n}D_{12}\dots j_{1}\dots j_{2n} & = \frac{i^{2n}}{(2n)!} \int \frac{d^{4}k_{1}}{(2\pi)^{4}}\dots \frac{d^{4}k_{n}}{(2\pi)^{4}}  \frac{i}{k_{1}^{2}-m^{2}+i\epsilon}\dots \frac{i}{k_{n}^{2}-m^{2}+i\epsilon} |\tilde{j}_{1}|^{2}\dots |\tilde{j}_{n}|^{2} \\
+ & = \frac{i^{2n}}{(2n)!} \left( \int \frac{d^{4}k}{(2\pi)^{4}} \frac{i}{k^{2}-m^{2}+i\epsilon}|\tilde{j}|^{2} \right)^{n}
+\end{align}$$
+Then:
+$$\begin{align}
+\bra{0} \frac{i^{2n}}{(2n)!} \int d^{4}x_{1} \dots d^{4}x_{2n} T\phi_{1}\dots \phi_{2n} j_{1}\dots j_{2n} \ket{0}  & = \frac{(2n)!}{2^{n}n!} \frac{i^{2n}}{(2n)!} \left( \int \frac{d^{4}k}{(2\pi)^{4}} \frac{i}{k^{2}-m^{2}+i\epsilon}|\tilde{j}|^{2} \right)^{n} \\
+ & = \frac{(-1)^{n}}{n!}\left(  \frac{1}{2}\int  \frac{d^{4}k}{(2\pi)^{4}} \frac{i}{k^{2}-m^{2}+i\epsilon}|\tilde{j}|^{2} \right)^{n} \\
+ & = \frac{(-1)^{n}}{n!}A^{n} 
+\end{align}$$
+Then we have:
+$$\begin{align}
+\bra{0} T\exp\left( i \int d^{4}x  j(x)\phi_{I}(x) \right)\ket{0}  & = \sum_{n} \frac{(-1)^{n}}{n!}A^{n} \\
+ & = e^{-A}
+\end{align}$$
+Then we have:
+$$\begin{align}
+P(0) & = e^{-A^{^{*}}}e^{-A} \\
+ & = e^{-2\mathrm{Re}(A)} \\
+ & = e^{-\lambda}
+\end{align}$$
+## (d)
 
 
 
