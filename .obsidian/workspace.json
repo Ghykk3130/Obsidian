@@ -432,12 +432,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Homework/Physics 513/Physics 513 homework 8.md",
-                "mode": "preview",
+                "file": "Notes/申请.md",
+                "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Physics 513 homework 8"
+              "title": "申请"
             }
           },
           {
@@ -4273,7 +4273,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "Wick",
+                "query": "申请",
                 "matchingCase": true,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -4284,7 +4284,8 @@
               "title": "Search"
             }
           }
-        ]
+        ],
+        "currentTab": 3
       }
     ],
     "direction": "horizontal",
@@ -4395,9 +4396,9 @@
   },
   "active": "8b0660ba0f7ce7e5",
   "lastOpenFiles": [
+    "Homework/Physics 513/Physics 513 homework 8.md",
     "Pictures/49e584201d663adf13db95c715c0b224.jpg",
     "Notes/Wick定理.md",
-    "Homework/Physics 513/Physics 513 homework 8.md",
     "Notes/标量场的正则量子化.md",
     "Pictures/314f71ce6984887603e87ee09cf9ebd5.jpg",
     "Pictures/f6c6faea058dd756eddae7f54b08300d.jpg",
@@ -4410,7 +4411,6 @@
     "Homework/Physics 520/Physics 520 homework 9.md",
     "Pictures/Pasted image 20261030165831.png",
     "Pictures/Pasted image 20261030160546.png",
-    "Pictures/Pasted image 20261030160445.png",
     "Notes/Feynman图.md",
     "Notes/Bose-Einstein statistics与BEC.md",
     "Notes/申请.md",
