@@ -127,15 +127,39 @@ $$\begin{align}
 Then:
 $$\begin{align}
 \bra{\mathbf{k}} i \int d^{4}x j(x)\phi_{I}(x)\ket{0} & = i \int d^{4}x j(x) \frac{e^{ik\cdot x} }{\sqrt{ 2E_{\mathbf{k}}}} \\
- & = i \int d^{4}x \frac{d^{4}p}{(2\pi)^{4}} \tilde{j}(p) \frac{e^{i(p+k)\cdot x}}{\sqrt{ 2E_{\mathbf{k}} }} \\
- & = i \tilde{j}(-k) \frac{1}{\sqrt{ 2E_{\mathbf{k}} }}
+ & = i \int d^{4}x \frac{d^{4}p}{(2\pi)^{4}} \tilde{j}(p) \frac{e^{i(-p+k)\cdot x}}{\sqrt{ 2E_{\mathbf{k}} }} \\
+ & = i \tilde{j}(k) \frac{1}{\sqrt{ 2E_{\mathbf{k}} }}
 \end{align}$$
-So:
+Notice that since $\ket{\mathbf{k}}\perp \ket{0}$, we don't have constant term. So:
 $$\begin{align}
-P(0) & \approx \left( 1-i \tilde{j}^{*}(-k) \frac{1}{\sqrt{ 2E_{\mathbf{k}} }}  \right)\left( 1+i\tilde{j}(-k) \frac{1}{\sqrt{ 2E_{\mathbf{k}} }} \right) \\
- & =1+   \sqrt{ \frac{2}{E_{\mathbf{k}}} } \mathrm{Im}\tilde{j}(k)
+P(\mathbf{k}) & \approx \left| i\bar{j} \frac{1}{\sqrt{ 2E_{\mathbf{k}} }} \right|^{2} \\
+ & = \frac{|\tilde{j}(k)|^{2}}{2E_{\mathbf{k}}}
 \end{align}$$
-Now consider all orders. 
+Now consider all orders. Obviously, only oddth order terms would survive. Then:
+$$\begin{align}
+\bra{\mathbf{k}} \frac{i^{2n+1}}{(2n+1)!} \int d^{4}_{1}\dots d^{4}x_{2n+1}j_{1}\dots j_{2n+1} T\phi_{1}\dots \phi_{2n+1}\ket{0}  & = \frac{i^{2n+1}}{(2n+1)!}\int d^{4}x_{1}\dots d^{4}x_{2n+1}j_{1}\dots j_{2n+1} \bra{\mathbf{k}} T\phi_{1}\dots \phi_{2n+1}\ket{0}   
+\end{align}$$
+The Feynman diagram for $\bra{\mathbf{k}}T\phi_{1}\dots \phi_{2n+1}\ket{0}$ is clearly with $\mathbf{k}$ as the final external point, and we choose one internal points to connect with it. There are $2n+1$ choice. Then there are $2n+1-1=2n$ internal points remaining. So similar to part (c), there are $\frac{(2n)!}{2^{n}n!}$ ways of arranging them. Then we get:
+$$\begin{align}
+\bra{\mathbf{k}} \frac{i^{2n+1}}{(2n+1)!} \int d^{4}_{1}\dots d^{4}x_{2n+1}j_{1}\dots j_{2n+1} T\phi_{1}\dots \phi_{2n+1}\ket{0}   & = \frac{i^{2n+1}}{(2n+1)!} \left( \int d^{4}x \bra{\mathbf{k}} \phi \ket{0} j \right)\left(  \int ^{4}x D_{12}j_{1}j_{2} \right)^{n} \frac{(2n)!}{2^{n}n!} \cdot (2n+1)\\
+ & = \frac{i^{2n}}{(2n)!} \left( i\int d^{4}x \bra{\mathbf{k}} \phi \ket{0} j \right)\left(  \frac{1}{2} \int ^{4}x D_{12}j_{1}j_{2} \right)^{n} \frac{(2n)!}{n!} \\
+ & = i^{2n}\frac{1}{n!}BA^{n},\ B= \bra{\mathbf{k}} i \int d^{4}x j(x)\phi_{I}(x)\ket{0} =i \tilde{j}(-k) \frac{1}{\sqrt{ 2E_{\mathbf{k}} }} \\
+ & = \frac{(-1)^{n}}{n!}BA^{n}
+\end{align}$$
+Therefore:
+$$\begin{align}
+\bra{\mathbf{k}} T\exp\left( i \int d^{4}x j\phi \right) \ket{0}  & = \sum_{n=0}^{\infty} \frac{(-1)^{n}}{n!}BA^{n} \\
+ & = B e^{-A}
+\end{align}$$
+Then:
+$$\begin{align}
+P(\mathbf{k}) & = B^{*}e^{-A^{*}}Be^{-A} \\
+ & = |B |^{2} e^{-2\mathrm{Re}A} \\
+ & = \frac{|\tilde{j}(k)|^{2}}{2E_{\mathbf{k}}} e^{-\lambda}
+\end{align}$$
+## (e)
 
-
-
+We want to compute:
+$$\begin{align}
+P(\mathbf{k}_{1},\dots,\mathbf{k}_{n}) & = \left|\bra{\mathbf{k}_{1},\dots,\mathbf{k}_{n}} T\exp\left( i \int d^{4}x j\phi \right)\ket{0} \right|^{2}
+\end{align}$$
