@@ -143,13 +143,13 @@ The Feynman diagram for $\bra{\mathbf{k}}T\phi_{1}\dots \phi_{2n+1}\ket{0}$ is c
 $$\begin{align}
 \bra{\mathbf{k}} \frac{i^{2n+1}}{(2n+1)!} \int d^{4}_{1}\dots d^{4}x_{2n+1}j_{1}\dots j_{2n+1} T\phi_{1}\dots \phi_{2n+1}\ket{0}   & = \frac{i^{2n+1}}{(2n+1)!} \left( \int d^{4}x \bra{\mathbf{k}} \phi \ket{0} j \right)\left(  \int ^{4}x D_{12}j_{1}j_{2} \right)^{n} \frac{(2n)!}{2^{n}n!} \cdot (2n+1)\\
  & = \frac{i^{2n}}{(2n)!} \left( i\int d^{4}x \bra{\mathbf{k}} \phi \ket{0} j \right)\left(  \frac{1}{2} \int ^{4}x D_{12}j_{1}j_{2} \right)^{n} \frac{(2n)!}{n!} \\
- & = i^{2n}\frac{1}{n!}BA^{n},\ B= \bra{\mathbf{k}} i \int d^{4}x j(x)\phi_{I}(x)\ket{0} =i \tilde{j}(-k) \frac{1}{\sqrt{ 2E_{\mathbf{k}} }} \\
- & = \frac{(-1)^{n}}{n!}BA^{n}
+ & = i^{2n}\frac{1}{n!}B(\mathbf{k})A^{n},\ B(\mathbf{k})= \bra{\mathbf{k}} i \int d^{4}x j(x)\phi_{I}(x)\ket{0} =i \tilde{j}(-k) \frac{1}{\sqrt{ 2E_{\mathbf{k}} }} \\
+ & = \frac{(-1)^{n}}{n!}B(\mathbf{k})A^{n}
 \end{align}$$
 Therefore:
 $$\begin{align}
 \bra{\mathbf{k}} T\exp\left( i \int d^{4}x j\phi \right) \ket{0}  & = \sum_{n=0}^{\infty} \frac{(-1)^{n}}{n!}BA^{n} \\
- & = B e^{-A}
+ & = B(\mathbf{k}) e^{-A}
 \end{align}$$
 Then:
 $$\begin{align}
@@ -157,9 +157,58 @@ P(\mathbf{k}) & = B^{*}e^{-A^{*}}Be^{-A} \\
  & = |B |^{2} e^{-2\mathrm{Re}A} \\
  & = \frac{|\tilde{j}(k)|^{2}}{2E_{\mathbf{k}}} e^{-\lambda}
 \end{align}$$
+But this is just a probability density in the k-space. The probability should be:
+$$\frac{d^{3}k}{(2\pi)^{3}}\frac{|\tilde{j}(k)|^{2}}{2E_{\mathbf{k}}} e^{-\lambda}$$
 ## (e)
 
 We want to compute:
 $$\begin{align}
 P(\mathbf{k}_{1},\dots,\mathbf{k}_{n}) & = \left|\bra{\mathbf{k}_{1},\dots,\mathbf{k}_{n}} T\exp\left( i \int d^{4}x j\phi \right)\ket{0} \right|^{2}
 \end{align}$$
+We first expand to the mth order:
+$$\begin{align}
+\bra{\mathbf{k}_{1},\dots,\mathbf{k}_{n}}   \frac{i^{m}}{m!}\int d^{4}x_{1}\dots d^{4}x_{m}T\phi_{1}\dots \phi_{m}j_{1}\dots j_{m}\ket{0}  & = \frac{i^{m}}{m!}\int d^{4}x_{1}  \dots d^{4}x_{m}j_{1}\dots j_{m}\bra{\mathbf{k}_{1},\dots,\mathbf{k}_{n}} T\phi_{1}\dots \phi_{m}\ket{0}  
+\end{align}$$
+Then we look at the Feynman diagram. Notice that we must have $m> n$. Then there are $n$ external points and $m$ internal points. We first choose $n$ out of $m$ internal points to connect with the external points. There are $\frac{m!}{(m-n)!}$ ways of doing so. Next we connect the internal points. There are $m-n$ points remaining. Due to the pairing as explained above, we must have $m-n\in 2\mathbb{N}$. We set $m-n=2l$. Then there are $\frac{(2l)!}{2^{l}l!}$ ways of paring. Then:
+$$\begin{align}
+\bra{\mathbf{k}_{1},\dots,\mathbf{k}_{n}}   \frac{i^{m}}{m!}\int d^{4}x_{1}\dots d^{4}x_{m}T\phi_{1}\dots \phi_{m}j_{1}\dots j_{m}\ket{0}  & =  \frac{i^{m}}{m!} \frac{m!}{(m-n)!} \prod_{r=1}^{n}\left(  \int d^{4}j \bra{\mathbf{k}_{r}} \phi \ket{0}  \right)^{} \left(  \int d^{4}x d^{4}y D_{xy}j_{x}j_{y} \right)^{l} \cdot \frac{(2l)!}{2^{l}l! } \\
+ & = \frac{i^{2l}}{l!}\prod_{r=1}^{n}\left( i \int d^{4}x j\bra{\mathbf{k}_{r}} \phi \ket{0}  \right)\left(  \frac{1}{2}\int d^{4}d^{4}y D_{xy}j_{x}j_{y} \right)^{l} \\
+ & = \frac{(-1)^{l}}{l!}\prod_{r=1}^{n}B^{n}(\mathbf{k}_{r})A^{l}
+\end{align}$$
+Then:
+$$\begin{align}
+\bra{\mathbf{k}_{1},\dots,\mathbf{k}_{n}} T\exp\left( i \int d^{4}x j\phi \right)\ket{0}  & = \sum_{l} \frac{(-1)^{l}}{l!}\prod_{r=1}^{n}B^{n}(\mathbf{k}_{r})A^{l} \\
+ & = \prod_{r=1}^{n}B^{n}(\mathbf{k}_{r})e^{-A}
+\end{align}$$
+Then:
+$$\begin{align}
+P(\mathbf{k}_{1},\dots,\mathbf{k}_{n}) & = \prod_{r=1}^{n}B^{*n}(\mathbf{k}_{r})e^{-A^{*}}\prod_{s=1}^{n}B^{n}(\mathbf{k}_{s})e^{A} \\
+ & = \prod_{r=1}^{n} |B(\mathbf{k}_{r})|^{n}e^{-2\mathrm{Re}A} \\
+ & =\prod_{r=1}^{n}\frac{|\tilde{j}(k_{r})|^{2}}{2E_{\mathbf{k}_{r}}} e^{-\lambda}
+\end{align}$$
+We calculate the total probability in the k-space:
+$$\begin{align}
+\int  \frac{d^{3}k_{1}}{(2\pi)^{3}} \dots \frac{d^{3}k_{n}}{(2\pi)^{3}} \prod_{r=1}^{n}\frac{|\tilde{j}(k_{r})|^{2}}{2E_{\mathbf{k}_{r}}} e^{-\lambda} & = \left( \int \frac{d^{3}k}{(2\pi)^{3}} \frac{|\tilde{j}(k)|^{2}}{2E_{\mathbf{k}}} \right)^{n}e^{-\lambda} \\
+ & = (2\mathrm{Re}(A))^{n}e^{-\lambda} \\
+ & = \lambda^{n}e^{-\lambda}
+\end{align}$$
+Since the Fock states doesn't care about the order of $\mathbf{k}$'s, so we are overcounting by a factor of $n!$. Then the true probability is:
+$$P(n)= \frac{\lambda^{n}e^{-\lambda}}{n!}$$
+## (f)
+
+We have:
+$$\begin{align}
+\sum_{n=0}^{\infty} \frac{\lambda^{n}e^{-\lambda}}{n!} & = e^{-\lambda}\sum_{n} \frac{\lambda^{n}}{n!} \\
+ & = e^{-\lambda}e^{\lambda} \\
+ & = 1
+\end{align}$$
+We have:
+$$\begin{align}
+\sum_{n=0}^{\infty}n \cdot \frac{\lambda^{n}e^{-\lambda}}{n!} & = e^{-\lambda}\sum_{n=1}^{\infty} \frac{\lambda^{n}}{(n-1)!} \\
+ & = e^{-\lambda}\lambda \sum_{n} \frac{\lambda^{n-1}}{(n-1)!} \\
+ & = e^{-\lambda}e^{\lambda}\lambda \\
+ & = \lambda
+\end{align}$$
+# Problem 4
+
+
