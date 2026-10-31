@@ -432,12 +432,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Notes/相互作用理论.md",
+                "file": "Homework/Physics 513/Physics 513 homework 8.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "相互作用理论"
+              "title": "Physics 513 homework 8"
             }
           },
           {
@@ -4284,8 +4284,7 @@
               "title": "Search"
             }
           }
-        ],
-        "currentTab": 3
+        ]
       }
     ],
     "direction": "horizontal",
@@ -4396,6 +4395,7 @@
   },
   "active": "8b0660ba0f7ce7e5",
   "lastOpenFiles": [
+    "Notes/相互作用理论.md",
     "Homework/Physics 513/Physics 513 homework 8.md",
     "Pictures/57a195a9cab7564ab4e3aa780e5a198c.jpg",
     "Pictures/11a9d591074ee52685a7413ab749ad39.jpg",
@@ -4419,7 +4419,6 @@
     "SimpleWick Obsidian Test.md",
     "SimpleWick Obsidian Report.pdf",
     "Notes/Wick定理.md",
-    "Notes/相互作用理论.md",
     "Notes/Untitled.md",
     "Notes/Fermi's golden rule.md",
     "Notes/线性响应.md",

@@ -19,6 +19,11 @@ Their symmetry factors are all equal to one, because there is no way to permute 
 # Problem 3
 ## (a)
 
+We first switch to the interaction picture:
+$$\begin{align}
+H_{I} & = -\int d^{3} x j(x)\phi_{I}(x)
+\end{align}$$
+Since the state where there is no particle is $\ket{0}$, 
 
 
 
