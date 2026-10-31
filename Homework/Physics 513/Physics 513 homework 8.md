@@ -132,7 +132,7 @@ $$\begin{align}
 \end{align}$$
 Notice that since $\ket{\mathbf{k}}\perp \ket{0}$, we don't have constant term. So:
 $$\begin{align}
-P(\mathbf{k}) & \approx \left| i\bar{j} \frac{1}{\sqrt{ 2E_{\mathbf{k}} }} \right|^{2} \\
+P(\mathbf{k}) & \approx \left| i\tilde{j} \frac{1}{\sqrt{ 2E_{\mathbf{k}} }} \right|^{2} \\
  & = \frac{|\tilde{j}(k)|^{2}}{2E_{\mathbf{k}}}
 \end{align}$$
 Now consider all orders. Obviously, only oddth order terms would survive. Then:
@@ -143,7 +143,7 @@ The Feynman diagram for $\bra{\mathbf{k}}T\phi_{1}\dots \phi_{2n+1}\ket{0}$ is c
 $$\begin{align}
 \bra{\mathbf{k}} \frac{i^{2n+1}}{(2n+1)!} \int d^{4}_{1}\dots d^{4}x_{2n+1}j_{1}\dots j_{2n+1} T\phi_{1}\dots \phi_{2n+1}\ket{0}   & = \frac{i^{2n+1}}{(2n+1)!} \left( \int d^{4}x \bra{\mathbf{k}} \phi \ket{0} j \right)\left(  \int ^{4}x D_{12}j_{1}j_{2} \right)^{n} \frac{(2n)!}{2^{n}n!} \cdot (2n+1)\\
  & = \frac{i^{2n}}{(2n)!} \left( i\int d^{4}x \bra{\mathbf{k}} \phi \ket{0} j \right)\left(  \frac{1}{2} \int ^{4}x D_{12}j_{1}j_{2} \right)^{n} \frac{(2n)!}{n!} \\
- & = i^{2n}\frac{1}{n!}B(\mathbf{k})A^{n},\ B(\mathbf{k})= \bra{\mathbf{k}} i \int d^{4}x j(x)\phi_{I}(x)\ket{0} =i \tilde{j}(-k) \frac{1}{\sqrt{ 2E_{\mathbf{k}} }} \\
+ & = i^{2n}\frac{1}{n!}B(\mathbf{k})A^{n},\ B(\mathbf{k})= \bra{\mathbf{k}} i \int d^{4}x j(x)\phi_{I}(x)\ket{0} =i \tilde{j}(k) \frac{1}{\sqrt{ 2E_{\mathbf{k}} }} \\
  & = \frac{(-1)^{n}}{n!}B(\mathbf{k})A^{n}
 \end{align}$$
 Therefore:
@@ -173,17 +173,17 @@ Then we look at the Feynman diagram. Notice that we must have $m> n$. Then there
 $$\begin{align}
 \bra{\mathbf{k}_{1},\dots,\mathbf{k}_{n}}   \frac{i^{m}}{m!}\int d^{4}x_{1}\dots d^{4}x_{m}T\phi_{1}\dots \phi_{m}j_{1}\dots j_{m}\ket{0}  & =  \frac{i^{m}}{m!} \frac{m!}{(m-n)!} \prod_{r=1}^{n}\left(  \int d^{4}j \bra{\mathbf{k}_{r}} \phi \ket{0}  \right)^{} \left(  \int d^{4}x d^{4}y D_{xy}j_{x}j_{y} \right)^{l} \cdot \frac{(2l)!}{2^{l}l! } \\
  & = \frac{i^{2l}}{l!}\prod_{r=1}^{n}\left( i \int d^{4}x j\bra{\mathbf{k}_{r}} \phi \ket{0}  \right)\left(  \frac{1}{2}\int d^{4}d^{4}y D_{xy}j_{x}j_{y} \right)^{l} \\
- & = \frac{(-1)^{l}}{l!}\prod_{r=1}^{n}B^{n}(\mathbf{k}_{r})A^{l}
+ & = \frac{(-1)^{l}}{l!}\prod_{r=1}^{n}B^{}(\mathbf{k}_{r})A^{l}
 \end{align}$$
 Then:
 $$\begin{align}
-\bra{\mathbf{k}_{1},\dots,\mathbf{k}_{n}} T\exp\left( i \int d^{4}x j\phi \right)\ket{0}  & = \sum_{l} \frac{(-1)^{l}}{l!}\prod_{r=1}^{n}B^{n}(\mathbf{k}_{r})A^{l} \\
- & = \prod_{r=1}^{n}B^{n}(\mathbf{k}_{r})e^{-A}
+\bra{\mathbf{k}_{1},\dots,\mathbf{k}_{n}} T\exp\left( i \int d^{4}x j\phi \right)\ket{0}  & = \sum_{l} \frac{(-1)^{l}}{l!}\prod_{r=1}^{n}B^{}(\mathbf{k}_{r})A^{l} \\
+ & = \prod_{r=1}^{n}B^{}(\mathbf{k}_{r})e^{-A}
 \end{align}$$
 Then:
 $$\begin{align}
-P(\mathbf{k}_{1},\dots,\mathbf{k}_{n}) & = \prod_{r=1}^{n}B^{*n}(\mathbf{k}_{r})e^{-A^{*}}\prod_{s=1}^{n}B^{n}(\mathbf{k}_{s})e^{A} \\
- & = \prod_{r=1}^{n} |B(\mathbf{k}_{r})|^{n}e^{-2\mathrm{Re}A} \\
+P(\mathbf{k}_{1},\dots,\mathbf{k}_{n}) & = \prod_{r=1}^{n}B^{*}(\mathbf{k}_{r})e^{-A^{*}}\prod_{s=1}^{n}B^{}(\mathbf{k}_{s})e^{A} \\
+ & = \prod_{r=1}^{n} |B(\mathbf{k}_{r})|^{2}e^{-2\mathrm{Re}A} \\
  & =\prod_{r=1}^{n}\frac{|\tilde{j}(k_{r})|^{2}}{2E_{\mathbf{k}_{r}}} e^{-\lambda}
 \end{align}$$
 We calculate the total probability in the k-space:
@@ -207,6 +207,24 @@ $$\begin{align}
 \sum_{n=0}^{\infty}n \cdot \frac{\lambda^{n}e^{-\lambda}}{n!} & = e^{-\lambda}\sum_{n=1}^{\infty} \frac{\lambda^{n}}{(n-1)!} \\
  & = e^{-\lambda}\lambda \sum_{n} \frac{\lambda^{n-1}}{(n-1)!} \\
  & = e^{-\lambda}e^{\lambda}\lambda \\
+ & = \lambda
+\end{align}$$
+Next we compute:
+$$\begin{align}
+\langle N^{2}\rangle & = \sum_{n=0}^{\infty}n^{2} \frac{\lambda^{n}e^{-\lambda}}{n!} \\
+  & = \sum_{n}n \frac{\lambda^{n}e^{-\lambda}}{(n-1)!}
+\end{align}$$
+Observe that:
+$$\begin{align}
+ & \frac{\partial}{\partial \lambda}\left(  \frac{\lambda^{n}e^{-\lambda}}{(n-1)!} \right)= n \frac{\lambda^{n-1}e^{-\lambda}}{(n-1)!}- \frac{\lambda^{n}e^{-\lambda}}{(n-1)!} \\
+\implies & n \frac{\lambda^{n}e^{-\lambda}}{(n-1)!}= \lambda \frac{\partial}{\partial \lambda}\left(  \frac{\lambda^{n}e^{-\lambda}}{(n-1)!} \right)+ \lambda \frac{\lambda^{n}e^{-\lambda}}{(n-1)!} \\
+\implies & \sum_{n}n \frac{\lambda^{n}e^{-\lambda}}{(n-1)!}= \sum_{n}\lambda \frac{\partial}{\partial \lambda}\left(  \frac{\lambda^{n}e^{-\lambda}}{(n-1)!} \right)+ \sum_{n}\lambda \frac{\lambda^{n}e^{-\lambda}}{(n-1)!} \\
+\implies & \langle N^{2}\rangle= \lambda \frac{\partial}{\partial \lambda}\lambda+ \lambda^{2}= \lambda^{2}+\lambda
+\end{align}$$
+Then:
+$$\begin{align}
+\langle (N-\langle N\rangle)^{2}\rangle^{} & = \langle N^{2} \rangle- \langle N \rangle^{2} \\
+ & = \lambda^{2}+\lambda-\lambda^{2} \\
  & = \lambda
 \end{align}$$
 # Problem 4
@@ -245,9 +263,9 @@ $$\begin{align}
 \end{align}$$
 Know that:
 $$\begin{align}
-\bra{\mathbf{p}_{A},\mathbf{p}_{B}}iT \ket{\mathbf{P}}  & =  \frac{-2\mu(2\pi)^{4}}{\sqrt{ 2^{3}E_{\mathbf{P}}E_{\mathbf{p}_{A}}E_{\mathbf{p}_{B}} }}\delta(-P+p_{A}+p_{B}) =  \frac{(2\pi)^{4}\delta(-P+p_{A}+p_{B})}{\sqrt{ 2^{^{3}}E_{\mathbf{P}}E_{\mathbf{p}_{A}}E_{\mathbf{p}_{B}} }} \mathcal{M}
+\bra{\mathbf{p}_{A},\mathbf{p}_{B}}iT \ket{\mathbf{P}}  & = i \frac{-2\mu(2\pi)^{4}}{\sqrt{ 2^{3}E_{\mathbf{P}}E_{\mathbf{p}_{A}}E_{\mathbf{p}_{B}} }}\delta(-P+p_{A}+p_{B}) =  \frac{i(2\pi)^{4}\delta(-P+p_{A}+p_{B})}{\sqrt{ 2^{^{3}}E_{\mathbf{P}}E_{\mathbf{p}_{A}}E_{\mathbf{p}_{B}} }} \mathcal{M}
 \end{align}$$
-Then the corresponding M-matrix is:
+Here $T$ is the T-matrix, not the time-ordering operator. Then the corresponding M-matrix is:
 $$\begin{align}
 \mathcal{M} & = -2\mu
 \end{align}$$
@@ -257,5 +275,19 @@ $$\begin{align}
 \end{align}$$
 We then evaluate:
 $$\begin{align}
-\int \frac{d^{3}p_{A}}{(2\pi)^{3}2E_{\mathbf{p}_{A}} } \frac{d^{3}p_{B}}{(2\pi)^{3}2E_{\mathbf{p}_{B}}}(2\pi)^{4}\delta(p_{A}+p_{B}-P) & = \int \frac{d^{3}p_{A}}{(2\pi)^{3}2E_{\mathbf{p}_{A}}} \frac{1}{(2\pi)^{3}2E_{\mathbf{P}-\mathbf{p}_{A}}} (2\pi)^{4}
+\int \frac{d^{3}p_{A}}{(2\pi)^{3}2E_{\mathbf{p}_{A}} } \frac{d^{3}p_{B}}{(2\pi)^{3}2E_{\mathbf{p}_{B}}}(2\pi)^{4}\delta(p_{A}+p_{B}-P) & = \int \frac{d^{3}p_{A}}{(2\pi)^{3}2E_{\mathbf{p}_{A}} } \frac{d^{3}p_{B}}{(2\pi)^{3}2E_{\mathbf{p}_{B}}}(2\pi)^{4}\delta(\mathbf{p}_{A}+\mathbf{p}_{B}-\mathbf{P})\delta(E_{\mathbf{p}_{A}}+E_{\mathbf{p}_{B}}-E_{\mathbf{P}}) \text{ where }\mathbf{P}=0\\
+ & = \int \frac{d^{3}p_{A}}{(2\pi)^{3}2E_{\mathbf{p}_{A}}} \frac{1}{(2\pi)^{3}2E_{-\mathbf{p}_{A}}} (2\pi)^{4} \delta(E_{\mathbf{p}_{A}}+E_{-\mathbf{p}_{A}}-E_{\mathbf{P}}) \\
+ & = \frac{1}{(2\pi)^{2}} \int  \frac{d^{3}p_{A}}{(2E_{\mathbf{p}_{A}})^{2}} \delta(2E_{\mathbf{p}_{A}}-E_{\mathbf{P}}) \\
+ & = \frac{4\pi}{(2\pi)^{2}}\int \frac{d|\mathbf{p}_{A}|}{(2E_{\mathbf{p}_{A}})^{2}} |\mathbf{p}_{A} |^{2} \frac{\delta\left( |\mathbf{p}_{A}|= \sqrt{  \frac{E_{\mathbf{P}}^{2}}{4}-m^{2} } \right)}{2|\mathbf{p}_{A}| /E_{\mathbf{p}_{A}}} \\
+ & = \frac{4\pi}{(2\pi)^{2}} \frac{1}{4E_{\mathbf{P}}} \sqrt{  \frac{E_{\mathbf{P}}^{2}}{4}-m^{2} } \\
+ & = \frac{1}{4\pi} \frac{1}{E_{\mathbf{P}}^{}} \sqrt{  \frac{E_{\mathbf{P}}^{2}}{4}-m^{2} }
+\end{align}$$
+Then:
+$$\begin{align}
+\Gamma & = \frac{\mu^{2}}{4M^{2}\pi}\sqrt{  \frac{M^{2}}{4}-m^{2} }
+\end{align}$$
+Then the lifetime is:
+$$\begin{align}
+\tau & = \frac{1}{\Gamma} \\
+ & = \frac{4M^{2}\pi}{\mu^{2}} \left(  \frac{M^{2}}{4}-m^{2} \right)^{-1/2}
 \end{align}$$
