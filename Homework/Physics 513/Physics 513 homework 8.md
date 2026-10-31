@@ -12,7 +12,7 @@ For (a), $S=1$. For (b), $S=1$. For (c), $S=2$
 ![[11a9d591074ee52685a7413ab749ad39.jpg|centering|400]]
 ## (b)
 
-![[57a195a9cab7564ab4e3aa780e5a198c.jpg|centering|500]]
+![[49e584201d663adf13db95c715c0b224.jpg|centering|600]]
 ## (c)
 
 Their symmetry factors are all equal to one, because there is no way to permute the internal points to generate a new Feynman diagram. Among all the Feynman diagrams above, there is only one line connecting a pair of internal points.
