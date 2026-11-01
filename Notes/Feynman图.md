@@ -22,6 +22,46 @@ $$|G|=|G /H|\cdot|H|$$
 >[!Right]
 >$\blacksquare$
 
+接下来我们定义orbit和stabilizer：
+
+>[!Note] Definition 1.1
+>Let $G$ act on $X$. Given $x\in X$, we define:
+>$$\begin{align}
+ & \text{Orbit: }\text{orb}_{}(x) = \{ gx\in X|\forall g\in G \} \\
+ & \text{Stabilizer: }\text{stab}_{}(x)= \{ g| g x =x \}
+\end{align}$$
+
+容易证明，$\text{stab}(x)\subset G$是一个子群。显然，$\text{orb}(x)=G /\text{stab}(x)$。那么于是：
+
+>[!Success] Theorem 1.2
+>Let $G$ be a group, Let $G$ act on $X$. For any $x\in X$, we have $|G|=|\text{orb}(x)|\cdot|\text{stab}|(x)$.
+# 2. Feynman图
+
+我们以$\phi^{4}$理论为例子。考虑微扰$\mathcal{H}_{\text{int}}= \frac{\lambda}{4!}\phi^{4}$。假设我们计算如下矩阵元：
+$$\begin{align}
+\bra{0} \phi(x_{1})\phi(x_{2})  T \exp\left( -i \int d^{4}z   \frac{\lambda}{4!}\phi^{4}(z) \right) \phi(x_{A})\phi(x_{B})\ket{0}  
+\end{align}$$
+假设我们展开到二阶：
+$$\begin{align}
+\left(  \frac{-i\lambda}{4!} \right)^{2} \frac{1}{2!}  \int d^{4}z_{1} d^{4}{z_{2}} \bra{0} \phi(x_{1})\phi(x_{2})T\{ \phi^{4}(z_{1})\phi^{4}(z_{2}) \} \phi(x_{A})\phi(x_{B})\ket{0} 
+\end{align}$$
+我们简写为：
+$$\begin{align}
+\left(  \frac{-i\lambda}{4!} \right)^{2} \frac{1}{2!}\int d^{4}z_{1}d^{4}z_{2} \bra{0} \phi_{1}\phi_{2}T\{ \phi^{4}_{z_{1}}\phi^{4}_{z_{2}}  \} \phi_{A}\phi_{B}\ket{0} 
+\end{align}$$
+我们使用Wick定理，考虑如下式子的所有完全缩并：
+$$\begin{align}
+\bra{0} \phi_{1}\phi_{2}\phi^{4}_{z_{1}}\phi^{4}_{z_{2}}\phi_{A}\phi_{B}\ket{0} 
+\end{align}$$
+缩并后得到一个Feynman propagator的多项式。
+
+
+我们把每个$\phi$当成一个点画在一张图上，然后图上每连接两个点代表一次缩并。将没有进行积分的点称为外点，进行积分的点称为内点。其中，$\phi^{4}_{z_{1}}$对应的点实际上都是同一个点，因为他们的变量名都是一样的。$\phi^{4}_{z_{2}}$对应的点实际上也都是同一个点。
+
+当我任意画一张Feynman图，我们实际上选择了一种缩并方式。但是这种缩并方式可能是"degenerate"的。即别的连接方式不同的Feyman图，可能缩并出来得到同样的结果。
+
+
+
 
 
 
