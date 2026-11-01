@@ -60,7 +60,7 @@ $$\begin{align}
 
 当我任意画一张Feynman图，我们实际上选择了一种缩并方式。但是这种缩并方式可能是"degenerate"的。即别的连接方式不同的Feyman图，可能缩并出来得到同样的结果。由于$\phi^{4}_{z_{1}}$对应的点实际上都是同一个点，那么permute这四个点得到的是同一种缩并。有$4!$种方式。同理，由于$\phi^{4}_{z_{2}}$对应的点实际上也都是同一个点，那么我们又得到一个$4!$。那么任何一张Feynman图都有$(4!)^{2}$的degeneracy。这刚好和$\frac{\lambda}{4!}\phi^{4}$的分母抵消。
 
-所以我们只需要数模掉内点交换带来的degeneracy剩下的不同的Feynman图。这种Feynman图
+所以我们只需要数模掉内点交换带来的degeneracy剩下的不同的Feynman图。这种Feynman图的个数称为symmetry factor。
 
 
 
