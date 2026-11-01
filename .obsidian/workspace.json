@@ -432,12 +432,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Notes/Feynman图.md",
+                "file": "Notes/申请.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Feynman图"
+              "title": "申请"
             }
           },
           {
@@ -4273,7 +4273,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "Feynman图",
+                "query": "申请",
                 "matchingCase": true,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -4289,8 +4289,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200.5,
-    "collapsed": true
+    "width": 200.5
   },
   "right": {
     "id": "9003d078f8dbc4ed",
@@ -4396,6 +4395,7 @@
   },
   "active": "8b0660ba0f7ce7e5",
   "lastOpenFiles": [
+    "Notes/Feynman图.md",
     "Notes/申请.md",
     "Homework/Physics 513/Physics 513 homework 8.md",
     "Pictures/49e584201d663adf13db95c715c0b224.jpg",
@@ -4412,7 +4412,6 @@
     "Homework/Physics 520/Physics 520 homework 9.md",
     "Pictures/Pasted image 20261030165831.png",
     "Pictures/Pasted image 20261030160546.png",
-    "Notes/Feynman图.md",
     "Notes/Bose-Einstein statistics与BEC.md",
     "Notes/Landau量子化.md",
     "Notes/Pauli顺磁.md",
