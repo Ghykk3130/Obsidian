@@ -95,11 +95,11 @@ We also have:
 $$\begin{align}
 \int_{k<k_{F}} \frac{d^{3}k}{(2\pi)^{3}} \frac{\hbar^{2}k^{2}}{2m^{*}} & = \frac{1}{(2\pi)^{3}} \frac{\hbar^{2}}{2m^{*}} 4\pi \int_{0}^{k_{F}} k^{2}dk k^{2} \\
  & = \frac{1}{(2\pi)^{3}} \frac{\hbar^{2}}{2m^{*}}4\pi \frac{k_{F}^{5}}{5} \\
- & = \frac{6^{5/3}}{20}\pi^{3} \frac{\hbar^{2}}{m^{*}}n^{5/3}
+ & = \frac{6^{5/3}}{20}\pi^{4/3} \frac{\hbar^{2}}{m^{*}}n^{5/3}
 \end{align}$$
 Therefore:
 $$\begin{align}
-\frac{E}{V} & = E_{\text{min}}n+ Cn^{5/3},\ C= \frac{6^{5/3}}{20}\pi^{3} \frac{\hbar^{2}}{m^{*}}
+\frac{E}{V} & = E_{\text{min}}n+ Cn^{5/3},\ C= \frac{6^{5/3}}{20}\pi^{4/3} \frac{\hbar^{2}}{m^{*}}
 \end{align}$$
 ## (b)
 
@@ -116,7 +116,7 @@ Obviously, this is a monotonically increasing function of $\alpha$. The only poi
 
 We have:
 $$\begin{align}
-H_{\text{interaction}} & = U\sum_{i}n^{i}_{\uparrow}n^{i}_{\downarrow} \\
+\frac{E_{\text{interaction}}}{V} & = U\sum_{i}n^{i}_{\uparrow}n^{i}_{\downarrow} \\
  & = U \frac{n^{2}}{4}\sum_{i}(1+\alpha)(1-\alpha) \\
  & = \frac{1}{4}Un^{2}N(1-\alpha^{2})
 \end{align}$$
@@ -124,8 +124,8 @@ H_{\text{interaction}} & = U\sum_{i}n^{i}_{\uparrow}n^{i}_{\downarrow} \\
 
 We have:
 $$\begin{align}
- &  E_{\text{interaction}}= \frac{1}{4}Un^{2}N(1-\alpha^{2}) \\
-\implies &  \frac{E_{\text{interaction}}}{V}= \frac{1}{4}Un^{3}(1-\alpha^{2})
+ &  \frac{E_{\text{interaction}}}{V}= \frac{1}{4}Un^{2}N(1-\alpha^{2}) \\
+
 \end{align}$$
 Then:
 $$\begin{align}
