@@ -124,33 +124,33 @@ $$\begin{align}
 
 We have:
 $$\begin{align}
- &  \frac{E_{\text{interaction}}}{V}= \frac{1}{4}Un^{2}N(1-\alpha^{2}) \\
+ &  \frac{E_{\text{interaction}}}{V}= \frac{1}{4}Un^{2}(1-\alpha^{2}) \\
 
 \end{align}$$
 Then:
 $$\begin{align}
-\frac{E}{V}= nE_{\text{min}}+ 2C\left(  \frac{n}{2} \right)^{5/3} \left[ 1+ \frac{5}{9}\alpha^{2}+ \frac{5}{243}\alpha^{4} \right]+ \frac{1}{4}Un^{3}(1-\alpha^{2})
+\frac{E}{V}= nE_{\text{min}}+ 2C\left(  \frac{n}{2} \right)^{5/3} \left[ 1+ \frac{5}{9}\alpha^{2}+ \frac{5}{243}\alpha^{4} \right]+ \frac{1}{4}Un^{2}(1-\alpha^{2})
 \end{align}$$
 We know that from phase transition theory, the stability changes if the coefficient of the second-order term changes sign. So we set:
 $$\begin{align}
- & 2C\left(  \frac{n}{2} \right)^{5/3} \frac{5}{9}- \frac{1}{4}Un^{3}=0 \\
-\implies & U_{c}= \frac{5}{9}C \left(  \frac{2}{n} \right)^{4/3}
+ & 2C\left(  \frac{n}{2} \right)^{5/3} \frac{5}{9}- \frac{1}{4}U_{c}n^{2}=0 \\
+\implies & U_{c}= \frac{5}{9}C \left( \frac{16}{n} \right)^{1/3}
 \end{align}$$
 Ignoring the constant terms, we have:
 $$\begin{align}
-\frac{E}{V} & = \left( 2C\left(  \frac{n}{2} \right)^{5/3} \frac{5}{9}- \frac{1}{4}Un^{3} \right)\alpha^{2}+ \frac{10}{243}C\left(  \frac{n}{2} \right)^{5/3}\alpha^{4} \\
- & = \left( 2C\left(  \frac{n}{2} \right)^{5/3} \frac{5}{9}- \frac{1}{4}U_{c}n^{3}+ \frac{1}{4}(U_{c}-U)n^{3} \right)\alpha^{2}+ \frac{10}{243}C\left(  \frac{n}{2} \right)^{5/3}\alpha^{4} \\
- & = \frac{1}{4}(U_{c}-U)n^{3}\alpha^{2}+ \frac{10}{243}C\left(  \frac{n}{2} \right)^{5/3}\alpha^{4}
+\frac{E}{V} & = \left( 2C\left(  \frac{n}{2} \right)^{5/3} \frac{5}{9}- \frac{1}{4}Un^{2} \right)\alpha^{2}+ \frac{10}{243}C\left(  \frac{n}{2} \right)^{5/3}\alpha^{4} \\
+ & = \left( 2C\left(  \frac{n}{2} \right)^{5/3} \frac{5}{9}- \frac{1}{4}U_{c}n^{2}+ \frac{1}{4}(U_{c}-U)n^{2} \right)\alpha^{2}+ \frac{10}{243}C\left(  \frac{n}{2} \right)^{5/3}\alpha^{4} \\
+ & = \frac{1}{4}(U_{c}-U)n^{2}\alpha^{2}+ \frac{10}{243}C\left(  \frac{n}{2} \right)^{5/3}\alpha^{4}
 \end{align}$$
 We differentiate and ignore the $\alpha=0$ solution:
 $$\begin{align}
- & \frac{1}{2}(U_{c}-U)n^{3}\alpha+ \frac{40}{243}C\left(  \frac{n}{2} \right)^{5/3}\alpha^{3}=0 \\
-\implies & \alpha= \pm \sqrt{ \frac{243}{40C}2^{2/3}n^{4/3}(U-U_{c}) }
+ & \frac{1}{2}(U_{c}-U)n^{2}\alpha+ \frac{40}{243}C\left(  \frac{n}{2} \right)^{5/3}\alpha^{3}=0 \\
+\implies & \alpha= \pm \sqrt{ \frac{243}{80C}2^{5/3}n^{1/3}(U-U_{c}) }
 \end{align}$$
 Then:
 $$\begin{align}
 M & = \mu_{B}n\alpha \\
- & = \pm \mu_{B}n^{5/3}2^{1/3}\sqrt{  \frac{243}{40C}(U-U_{c}) }
+ & = \pm \mu_{B}n\sqrt{ \frac{243}{80C}2^{5/3}n^{1/3}(U-U_{c}) }
 \end{align}$$
 # Problem 3
 ## (a)
@@ -176,7 +176,7 @@ $$\begin{align}
  & \approx \frac{1}{V}\pm  \frac{1}{V}\frac{g\mu_{0}\mu_{B}H_{\mathbf{q}}}{4}e^{-i\mathbf{k}\cdot \mathbf{r}}\left(  \frac{e^{i(\mathbf{k}+\mathbf{q})\cdot \mathbf{r}}}{E_{\mathbf{k}+\mathbf{q}}-E_{\mathbf{k}}}+ \frac{e^{i(\mathbf{k}-\mathbf{q})\cdot \mathbf{r}}}{E_{\mathbf{k}-\mathbf{q}}-E_{\mathbf{k}}} \right)\pm \text{c.c.} \\
  & = \frac{1}{V}\pm  \frac{1}{V}\frac{g\mu_{0}\mu_{B}H_{\mathbf{q}}}{2}\cos(\mathbf{q}\cdot \mathbf{r})\left(  \frac{1}{E_{\mathbf{k}+\mathbf{q}}-E_{\mathbf{k}}}+ \frac{1}{E_{\mathbf{k}-\mathbf{q}}-E_{\mathbf{k}}} \right) \\
  & = \frac{1}{V}\pm  \frac{1}{V}\frac{g\mu_{0}\mu_{B}H_{\mathbf{q}}m_{e}}{\hbar^{2}}\cos(\mathbf{q}\cdot \mathbf{r})\left(  \frac{1}{|\mathbf{k}+\mathbf{q}|^{2}-k^{2}}+ \frac{1}{|\mathbf{k}-\mathbf{q}|^{2}-k^{2}}^{} \right) \\
- & = \frac{1}{V}\left(1\pm \frac{1}{V}\frac{g\mu_{0}\mu_{B}H_{\mathbf{q}}}{2}\cos(\mathbf{q}\cdot \mathbf{r})\left(  \frac{1}{E_{\mathbf{k}+\mathbf{q}}-E_{\mathbf{k}}}+ \frac{1}{E_{\mathbf{k}-\mathbf{q}}-E_{\mathbf{k}}} \right)\right)
+ & = \frac{1}{V}\left(1\pm \frac{g\mu_{0}\mu_{B}H_{\mathbf{q}}}{2}\cos(\mathbf{q}\cdot \mathbf{r})\left(  \frac{1}{E_{\mathbf{k}+\mathbf{q}}-E_{\mathbf{k}}}+ \frac{1}{E_{\mathbf{k}-\mathbf{q}}-E_{\mathbf{k}}} \right)\right)
 \end{align}$$
 Then according to the problem, the next step is to calculate the magnetization. It suffices to calculate:
 $$\begin{align}
@@ -297,49 +297,93 @@ $$\begin{align}
 M_{\mathbf{q}} & = \frac{g^{2}\mu_{0}\mu_{B}^{2}m_{e}H_{\mathbf{q}}}{\hbar^{2}} \frac{1}{(2\pi)^{2}} \cdot \pi\left( 1- \sqrt{ 1- \left(  \frac{2k_{F}}{q} \right)^{2} } \right) \\
 \implies \chi_{\mathbf{q}} & = \frac{g^{2}\mu_{0}\mu_{B}^{2}m_{e}}{4\pi \hbar^{2}}  \cdot \left( 1- \sqrt{ 1- \left(  \frac{2k_{F}}{q} \right)^{2} } \right)
 \end{align}$$
-If $q<2k_{F}$, we observe that we pass through the singularity during the integration here:
-$$\frac{1}{|q|} \int_{0}^{k_{F}} k dk 2\pi \sqrt{ \frac{1}{q^{2}-(2k)^{2}} }$$
-We know that $\chi_{\mathbf{q}}$ is some kind of distribution function in the k-space, so we can adopt Feynman's prescription. We have:
+If $q<2k_{F}$, we observe that the angular integral develops a singularity. We therefore take the Cauchy principal value. For $k<q/2$, the angular integral is the same as before, while for $k>q/2$ its principal value vanishes. Thus,
 $$\begin{align}
-\frac{1}{|q|} \int_{0}^{k_{F}}k dk 2\pi \sqrt{ \frac{1}{q^{2}-(2k)^{2}+i\epsilon} } & = \frac{\pi}{2|q|}(|q|-\sqrt{ q^{2}-(2k_{F})^{2} +i\epsilon}) \\
- & = \frac{\pi}{2}\left( 1- \sqrt{ 1- \left(  \frac{2k_{F}}{q} \right)^{2}+i\epsilon } \right)
+\operatorname{P.V.}\int_{k<k_{F}}d^{2}k
+\frac{1}{|\mathbf{k}+\mathbf{q}|^{2}-k^{2}}
+&=
+\frac{1}{q}\int_{0}^{q/2}k\,dk\,
+2\pi\sqrt{\frac{1}{q^{2}-(2k)^{2}}}\\
+&=
+\frac{\pi}{2}.
 \end{align}$$
-We know that $1- \left( \frac{2k_{F}}{q} \right)^{2}+i\epsilon$ has angle very close to $\pi$. So taking the square root would be very close to $\frac{\pi}{2}$, with magnitude $\sqrt{ \left(  \frac{2k_{F}}{q} \right)^{2}-1 }$. So we have:
+Similarly,
 $$\begin{align}
-\frac{1}{|q|} \int_{0}^{k_{F}}k dk 2\pi \sqrt{ \frac{1}{q^{2}-(2k)^{2}+i\epsilon} }  & = \frac{\pi}{2}\left( 1- i \sqrt{ \left(  \frac{2k_{F}}{q} \right)^{2}-1 } \right)
+\operatorname{P.V.}\int_{k<k_{F}}d^{2}k
+\frac{1}{|\mathbf{k}-\mathbf{q}|^{2}-k^{2}}
+&=\frac{\pi}{2}.
 \end{align}$$
-Then similarly, we replace $q\leadsto -q$ to obtain $\int_{k<k_{F}}d^{2}k \frac{1}{|\mathbf{k}+\mathbf{q}|^{2}-k^{2}}$. And finally we can get:
+Therefore,
 $$\begin{align}
-\chi_{\mathbf{q}}= \frac{g^{2}\mu_{0}\mu_{B}^{2}m_{e}}{4\pi \hbar^{2}} \left( 1- i \sqrt{ \left(  \frac{2k_{F}}{q} \right)^{2}-1 } \right)
+\chi_{\mathbf{q}}
+&=
+\frac{g^{2}\mu_{0}\mu_{B}^{2}m_{e}}
+{\hbar^{2}}
+\frac{1}{(2\pi)^{2}}\cdot\pi\\
+&=
+\frac{g^{2}\mu_{0}\mu_{B}^{2}m_{e}}
+{4\pi\hbar^{2}}.
 \end{align}$$
-Observe that this is exactly the same as 
-$$\frac{g^{2}\mu_{0}\mu_{B}^{2}m_{e}}{4\pi \hbar^{2}}  \cdot \left( 1- \sqrt{ 1- \left(  \frac{2k_{F}}{q} \right)^{2} } \right)$$
-just by taking a $\sqrt{ -1 }=i$ out. Then:
-$$\chi_{\mathbf{q}}=\frac{g^{2}\mu_{0}\mu_{B}^{2}m_{e}}{4\pi \hbar^{2}}  \cdot \left( 1- \sqrt{ 1- \left(  \frac{2k_{F}}{q} \right)^{2} } \right)$$
-
-For the 1D case, we have:
+Combining the two regimes, we obtain
 $$\begin{align}
-\int_{0}^{k_{F}} dk \frac{1}{(k+q)^{2}-k^{2}} & = \int dk \frac{1}{2kq+q^{2}} \\
- & = \frac{1}{q}\int dk \frac{1}{2k+q} \\
- & = \frac{1}{2q} \ln\left| \frac{2k_{F}+q}{q} \right|
+\chi_{\mathbf{q}}
+=
+\frac{g^{2}\mu_{0}\mu_{B}^{2}m_{e}}
+{4\pi\hbar^{2}}
+\begin{cases}
+1, & q<2k_{F},\\[6pt]
+1-\sqrt{1-\left(\dfrac{2k_{F}}{q}\right)^{2}},
+& q>2k_{F}.
+\end{cases}
+\end{align}$$
+For the 1D case, the occupied states range from $-k_F$ to $k_F$. We have:
+$$\begin{align}
+\int_{-k_{F}}^{k_{F}} dk\,
+\frac{1}{(k+q)^{2}-k^{2}}
+&=
+\int_{-k_{F}}^{k_{F}} dk\,
+\frac{1}{2kq+q^{2}}\\
+&=
+\frac{1}{2q}
+\ln\left|
+\frac{2k_{F}+q}{2k_{F}-q}
+\right|.
+\end{align}$$
+Similarly,
+$$\begin{align}
+\int_{-k_{F}}^{k_{F}} dk\,
+\frac{1}{(k-q)^{2}-k^{2}}
+&=
+\frac{1}{2q}
+\ln\left|
+\frac{2k_{F}+q}{2k_{F}-q}
+\right|.
 \end{align}$$
 Then:
 $$\begin{align}
-\int_{0}^{k_{F}} dk \frac{1}{(k-q)^{2}-k^{2}} & = - \frac{1}{2q}\ln\left| \frac{2k_{F}-q}{q} \right|
+\chi_{\mathbf{q}}
+&=
+\frac{g^{2}\mu_{0}\mu_{B}^{2}m_{e}}{\hbar^{2}}
+\frac{1}{2\pi}
+\left[
+\frac{1}{q}
+\ln\left|
+\frac{2k_{F}+q}{2k_{F}-q}
+\right|
+\right]\\
+&=
+\frac{g^{2}\mu_{0}\mu_{B}^{2}m_{e}}
+{2\pi\hbar^{2}q}
+\ln\left|
+\frac{2k_{F}+q}{2k_{F}-q}
+\right|.
 \end{align}$$
-Then:
-$$\begin{align}
-\chi_{\mathbf{q}} & = \frac{g^{2}\mu_{0}\mu_{B}^{2}m_{e}}{\hbar^{2}} \frac{1}{2\pi} \left(  \frac{1}{2q}\ln\left| \frac{2k_{F}+q}{q} \right|- \frac{1}{2q}\ln\left| \frac{2k_{F}-q}{q} \right| \right) \\
-	 & = \frac{g^{2}\mu_{0}\mu_{B}^{2}m_{e} }{\hbar^{2}} \frac{1}{4q\pi} \ln\left| \frac{2k_{F}+q}{2k_{F}-q} \right|
-
-\end{align}$$
-
 The susceptibility are plotted:
-![[Pasted image 20261030160445.png|centering|600]]
+![[Pasted image 20261101233833.png|centering|600]]
 Observe that 1D has singularity around $x=2$.
 
 The derivatives of susceptibility are plotted:
-![[Pasted image 20261030160546.png|centering|600]]
+![[Pasted image 20261101233906.png|centering|600]]
 Observe that all curves have singularities.
 ## (d)
 
@@ -420,12 +464,12 @@ $$\begin{align}
 Then:
 $$\begin{align}
 \chi(\mathbf{r}) & = \frac{\chi_{0}}{(2\pi)^{3}}(2k_{F})^{3} \cdot \frac{4\pi^{2}}{R^{4}}(\sin R-R\cos R) \\
- & = \frac{4\chi_{0}k_{F}^{3}}{\pi^{} }  \frac{1}{R^{4}}(-R\cos R+\sin R) \\
- & = \frac{2k_{F}^{3}\chi_{P}}{\pi}\mathcal{F}(2k_{F}r)
+ & = \frac{2\chi_{0}k_{F}^{3}}{\pi^{} }  \frac{1}{R^{4}}(-R\cos R+\sin R) \\
+ & = \frac{k_{F}^{3}\chi_{P}}{\pi}\mathcal{F}(2k_{F}r)
 \end{align}$$
 where:
 $$\begin{align}
-\chi_{P}= 2\chi_{0},\ \mathcal{F}(x)= \frac{-x\cos x+\sin x}{x^{4}}
+\chi_{P}= \chi_{0},\ \mathcal{F}(x)= \frac{-x\cos x+\sin x}{x^{4}}
 \end{align}$$
 Clearly when $x\gg 1$, we have:
 $$\begin{align}
