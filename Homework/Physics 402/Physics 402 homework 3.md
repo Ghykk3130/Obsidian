@@ -274,7 +274,7 @@ $$\begin{align}
 # Question 8
 ## (a)
 
-This is because of beating phenomenon.
+This is because of beating phenomenon. the two waves have slightly different wavelengths, so their relative phase changes slowly as the optical path difference varies, producing a slowly varying envelope.
 ## (b)
 
 Let $\lambda_{1},\lambda_{2}$ be the wavelengths corresponding to the two beams. Then the phase shift for beam 1 is:
@@ -301,6 +301,22 @@ $$\begin{align}
 \end{align}$$
 ## (d)
 
+For ordinary fringes, it's just the regular Michelson interferometer application. So we have:
+$$\begin{align}
+N & = \frac{2D}{\lambda} \\
+ & \approx 981
+\end{align}$$
+This means that we have one envelope brightness change every $981$ ordinary changes. This means that we need to move a lot to see a small wavelength distance. Then we are capable of observing very fine wavelength splittings. 
+# Question 9
+## (a)
+
+We have:
+$$\begin{align}
+E & = \sum_{n=0}^{N}E_{0}e^{in\delta} \\
+ & = \frac{E_{0}-E_{0}e^{i(N+1)\delta}}{1-e^{i\delta}} \\
+ & = \frac{e^{i \frac{N+1}{2}\delta}E_{0}\left( e^{-i \frac{N+1}{2}\delta}-e^{i \frac{N+1}{2}\delta} \right)}{e^{i \frac{\delta}{2}}\left( e^{-i \frac{\delta}{2}}-e^{i \frac{\delta}{2}} \right)} \\
+ & = e^{i \frac{N}{2}\delta} E_{0} \frac{\sin }{}
+\end{align}$$
 
 
 
