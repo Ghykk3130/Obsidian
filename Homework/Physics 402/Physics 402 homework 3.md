@@ -365,8 +365,25 @@ T & = \frac{1}{1+F\sin ^{2}\left( \frac{\delta}{2} \right)},\ F= \frac{4R}{(1-R)
 \end{align}$$
 The round-trip phase is:
 $$\begin{align}
-\delta & = 
+\delta & = \frac{2\pi}{\lambda}\cdot 2L\cos \theta\cdot n \\
+ &\approx 3.97 \times 10^{5}\text{ rad}
 \end{align}$$
+## (b)
+
+We take $n=1,\ L=2\text{ cm}$, then:
+$$\begin{align}
+\Delta \nu_{\text{FSR}} & = \frac{3\times 10^{8}}{2\times{1}\times 2\times{1}0^{-2}} \\
+ & = 7.5 \times 10^{9}\text{ Hz}
+\end{align}$$
+## (c)
+
+We calculate:
+$$\begin{align}
+\mathcal{F} & = \frac{\pi \sqrt{ R }}{1-R} \\
+ & \approx 29.8
+\end{align}$$
+Since finesse is essentially the ratio between the peak separation and the FWHM in some spectrum, we take the frequency spectrum
+
 
 
 
