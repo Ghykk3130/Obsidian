@@ -218,6 +218,38 @@ $$\begin{align}
 
 For normal incidence, we have:
 $$\begin{align}
-t^{'} & = 
+r^{'} & = \frac{n_{2}-n_{1}}{n_{2}+n_{1}} \\
+t^{'} & = \frac{2n_{2}}{n_{1}+n_{2}}
 \end{align}$$
+Then:
+$$\begin{align}
+tt^{'} & = \frac{4n_{1}n_{2}}{(n_{1}+n_{2})^{2}} \\
+ & = \frac{(n_{1}+n_{2})^{2}-(n_{1}-n_{2})^{2}}{(n_{1}+n_{2})^{2}} \\
+ & = 1- \left(  \frac{n_{1}-n_{2}}{n_{1}+n_{2}} \right)^{2} \\
+ & = 1- r^{2}
+\end{align}$$
+$$\begin{align}
+r^{'} & = \frac{n_{2}-n_{1}}{n_{2}+n_{1}} \\
+ & = - \frac{n_{1}-n_{2}}{n_{1}+n_{2}} \\
+ & = -r
+\end{align}$$
+## (c)
+
+If $n_{2}>n_{2}$, then $r<0$. This means that the sign of the amplitude changes. This is effectively introducing a $\pi$ phase shift. It is the external reflection carries the phase shift, because light shoots from air into some medium with higher refraction index.
+## (d)
+
+Because if we are going from a medium with higher $n$ into a medium with lower $n$, we do not have the sign flip, so that we do not have the phase shift.
+# Question 7
+
+## (a)
+
+The light traverses the cell twice because in one arm of the Michelson interferometer, you have a mirror to do reflection. That means light going through would eventually come back. 
+
+The change in OPL is:
+$$\begin{align}
+\Delta\text{OPL} & = 2(n-n_{0})L
+\end{align}$$
+## (b)
+
+
 
