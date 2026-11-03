@@ -446,12 +446,24 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Homework/Physics 402/Physics 402 homework 3.md",
+                "file": "Notes/申请.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Physics 402 homework 3"
+              "title": "申请"
+            }
+          },
+          {
+            "id": "c0ac861d60aa56f5",
+            "type": "leaf",
+            "state": {
+              "type": "release-notes",
+              "state": {
+                "currentVersion": "1.15.0"
+              },
+              "icon": "lucide-book-up",
+              "title": "Release Notes 1.15.0"
             }
           },
           {
@@ -4233,7 +4245,7 @@
             }
           }
         ],
-        "currentTab": 31
+        "currentTab": 32
       }
     ],
     "direction": "vertical"
@@ -4287,7 +4299,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "申请",
                 "matchingCase": true,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -4298,12 +4310,12 @@
               "title": "Search"
             }
           }
-        ]
+        ],
+        "currentTab": 3
       }
     ],
     "direction": "horizontal",
-    "width": 200.5,
-    "collapsed": true
+    "width": 200.5
   },
   "right": {
     "id": "9003d078f8dbc4ed",
@@ -4407,11 +4419,11 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "04bf959732ba849b",
+  "active": "c0ac861d60aa56f5",
   "lastOpenFiles": [
+    "Homework/Physics 402/Physics 402 homework 3.md",
     "Pictures/fa9eebf93978e6c0248a14a7d65a7dc9.jpg",
     "Homework/Physics 402/Physics 402 homework 2.md",
-    "Homework/Physics 402/Physics 402 homework 3.md",
     "Notes/申请.md",
     "Homework/Physics 402/Physics 402 homework 1.md",
     "Homework/Physics 402/Physics 402 real world optics 5.md",
@@ -4430,7 +4442,6 @@
     "Pictures/0d1b2a1b0e4d301034349eb9ccb3d440.jpg",
     "Notes/相互作用理论.md",
     "Pictures/57a195a9cab7564ab4e3aa780e5a198c.jpg",
-    "Pictures/11a9d591074ee52685a7413ab749ad39.jpg",
     "Notes/Bose-Einstein statistics与BEC.md",
     "Notes/Landau量子化.md",
     "Notes/Pauli顺磁.md",
