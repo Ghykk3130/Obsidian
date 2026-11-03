@@ -204,4 +204,20 @@ where $E_{r_{1}}, E_{i_{1}}$ are the reflected and incident field amplitude in m
 
 Consider an incident beam. Then:
 $$E_{r_{1}}=rE_{i_{1}},\ E_{t_{2}}=tE_{i_{1}}$$
+Now reverse the direction. We have:
+$$\begin{align}
+ & E_{t_{1}}=t^{'}E_{t_{2}}+r E_{r_{1}}=t^{'}tE_{i_{1}}+r^{2}E_{i_{1}} \\
+ & E_{r_{2}}=r^{'}E_{t_{2}}+tE_{t_{1}}=r^{'}tE_{i_{1}}+trE_{i_{1}}
+\end{align}$$
+Due to light reversibility, we must have:
+$$\begin{align}
+ & t^{'}tE_{i_{1}}+r^{2}E_{i_{1}}=E_{i_{1}}\implies t^{'}t=1-r^{2} \\
+ & r^{'}tE_{i_{1}}+trE_{i_{1}}=0\implies r^{'}t+tr=0\implies r^{'}=-r
+\end{align}$$
+## (b)
+
+For normal incidence, we have:
+$$\begin{align}
+t^{'} & = 
+\end{align}$$
 
