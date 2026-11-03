@@ -164,3 +164,31 @@ The positions of the bright and dark fringes change. But the fringe spacing is n
 # Question 5
 ## (a)
 
+![[fa9eebf93978e6c0248a14a7d65a7dc9.jpg|centering|300]]
+By symmetry, we first consider one side. Consider a paraxial beam at $\theta$. Then the height of P on the prism is $a \tan \theta \approx a\theta$. The beam is bent by $\gamma$. Therefore the height difference between S1 and P is:
+$$|h_{S_{1}}-h_{P}|= a \tan(\theta-\gamma)\approx a(\theta-\gamma)$$
+Then:
+$$\begin{align}
+h_{S_{1}}= h_{P}-a(\theta-\gamma)=a\theta-a(\theta-\gamma)= a\gamma
+\end{align}$$
+This is independent of $\theta$, meaning that all light converge at S1. By symmetry, the location of S2 is $a\gamma$ below. Then we have two coherent sources. The separation is:
+$$\begin{align}
+d & = 2a\gamma \approx 2.182\text{ mm}
+\end{align}$$
+## (b)
+
+We have:
+$$\begin{align}
+\Delta y & = \frac{(a+b)\lambda}{d} \\
+ & \approx 337.6\ \mu\text{m}
+\end{align}$$
+## (c)
+
+We have:
+$$\begin{align}
+\lambda & = \frac{d\Delta y}{(a+b)} \\
+ & \approx 590\text{ nm}
+\end{align}$$
+## (d)
+
+because they are the virtual images of the same light source. 
