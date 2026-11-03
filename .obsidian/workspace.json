@@ -458,12 +458,14 @@
             "id": "c0ac861d60aa56f5",
             "type": "leaf",
             "state": {
-              "type": "release-notes",
+              "type": "markdown",
               "state": {
-                "currentVersion": "1.15.0"
+                "file": "Notes/磁性.md",
+                "mode": "source",
+                "source": false
               },
-              "icon": "lucide-book-up",
-              "title": "Release Notes 1.15.0"
+              "icon": "lucide-file",
+              "title": "磁性"
             }
           },
           {
@@ -4299,7 +4301,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "申请",
+                "query": "磁性",
                 "matchingCase": true,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -4315,7 +4317,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200.5
+    "width": 200.5,
+    "collapsed": true
   },
   "right": {
     "id": "9003d078f8dbc4ed",
@@ -4421,13 +4424,15 @@
   },
   "active": "c0ac861d60aa56f5",
   "lastOpenFiles": [
+    "Homework/Physics 520/Physics 520 homework 9.md",
+    "Notes/Pauli顺磁.md",
+    "Notes/磁性.md",
     "Homework/Physics 402/Physics 402 homework 3.md",
     "Pictures/fa9eebf93978e6c0248a14a7d65a7dc9.jpg",
     "Homework/Physics 402/Physics 402 homework 2.md",
     "Notes/申请.md",
     "Homework/Physics 402/Physics 402 homework 1.md",
     "Homework/Physics 402/Physics 402 real world optics 5.md",
-    "Homework/Physics 520/Physics 520 homework 9.md",
     "Pictures/Pasted image 20261101233906.png",
     "Pictures/Pasted image 20261101233833.png",
     "Pictures/Pasted image 20261101233825.png",
@@ -4444,7 +4449,6 @@
     "Pictures/57a195a9cab7564ab4e3aa780e5a198c.jpg",
     "Notes/Bose-Einstein statistics与BEC.md",
     "Notes/Landau量子化.md",
-    "Notes/Pauli顺磁.md",
     "Homework/Physics 520/Physics 520 homework 8.md",
     "Notes/Untitled 16.md",
     "Notes/HSF poster.md",
