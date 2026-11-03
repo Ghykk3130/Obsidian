@@ -312,11 +312,32 @@ This means that we have one envelope brightness change every $981$ ordinary chan
 
 We have:
 $$\begin{align}
-E & = \sum_{n=0}^{N}E_{0}e^{in\delta} \\
- & = \frac{E_{0}-E_{0}e^{i(N+1)\delta}}{1-e^{i\delta}} \\
- & = \frac{e^{i \frac{N+1}{2}\delta}E_{0}\left( e^{-i \frac{N+1}{2}\delta}-e^{i \frac{N+1}{2}\delta} \right)}{e^{i \frac{\delta}{2}}\left( e^{-i \frac{\delta}{2}}-e^{i \frac{\delta}{2}} \right)} \\
- & = e^{i \frac{N}{2}\delta} E_{0} \frac{\sin }{}
+E & = \sum_{n=0}^{N-1}E_{0}e^{in\delta} \\
+ & = \frac{E_{0}-E_{0}e^{iN\delta}}{1-e^{i\delta}} \\
+ & = \frac{e^{i \frac{N}{2}\delta}E_{0}\left( e^{-i \frac{N}{2}\delta}-e^{i \frac{N}{2}\delta} \right)}{e^{i \frac{\delta}{2}}\left( e^{-i \frac{\delta}{2}}-e^{i \frac{\delta}{2}} \right)} \\
+ & = e^{i \frac{N-1}{2}\delta} E_{0} \frac{\sin \frac{N}{2}\delta  }{\sin \frac{\delta}{2}}
 \end{align}$$
+Therefore:
+$$\begin{align}
+I(\delta) & = I_{1} |e^{i \frac{N-1}{2}\delta} \frac{\sin\left(  N \frac{\delta}{2} \right)}{\sin \frac{\delta}{2}}|^{2} \\
+ & = I_{1} \left(  \frac{\sin\left( N \frac{\delta}{2} \right)}{\sin \frac{\delta}{2}} \right)^{2}
+\end{align}$$
+## (b)
+
+Observe that if $\delta=2\pi m$, then the neighboring beams interfere constructively. Therefore this must be maximum. In this case, we have:
+$$\begin{align}
+\lim_{ \delta \to 0 }  \frac{\sin \left(  N \frac{\delta}{2} \right)}{\sin \frac{\delta}{2}} & = \frac{N \frac{\delta}{2}}{\frac{\delta}{2} } \\
+ & = N
+\end{align}$$
+Then:
+$$\begin{align}
+I(\delta=2\pi m)= I_{1}N^{2}
+\end{align}$$
+## (c)
+
+Let $N=6$. We observe that the only zero points are achieved when the numerator is zero. We set:
+$$\sin(3\delta)=0$$
+
 
 
 
