@@ -74,3 +74,93 @@ If we add a glass, then the path length difference becomes $d\sin \theta+ nt-t$.
 $$\begin{align}
  d\sin \theta+nt-t= m\lambda
 \end{align}$$
+The the shifted fringe position is:
+$$\begin{align}
+y_{m}^{'} & = D \tan \theta \\
+ & \approx \frac{m\lambda+t-nt}{d}
+\end{align}$$
+The corresponding displacement is:
+$$\begin{align}
+\frac{(n-1)t}{d} & \approx 8.67\text{ mm}
+\end{align}$$
+## (d)
+
+The central fringe shifts toward the unblocked slit. Since the in part (c), the path length of the blocked slit is $d\sin t\theta+nt-t$ more than the unblocked slit. It is clear from $y^{'}_{m}= \frac{m\lambda+t-nt}{d}$ that the $y^{'}_{m}$ gets smaller, since $t-nt<0$.
+# Question 3
+## (a)
+
+The reflection of the beam first incident on the soap experiences a $\pi$ phase shift. 
+
+For the second reflected beam, the path length difference is $2tn+ \frac{\lambda}{2}$. 
+
+Then for constructive interference, we have:
+$$\begin{align}
+ & 2tn+ \frac{\lambda}{2}= m\lambda \\
+\implies & t= \frac{\left( m- \frac{1}{2} \right)\lambda}{2n}
+\end{align}$$
+For destructive interference, we have:
+$$\begin{align}
+ & 2tn+ \frac{\lambda}{2}=\left( m+ \frac{1}{2} \right)\lambda \\
+\implies & t= \frac{m\lambda}{2n}
+\end{align}$$
+## (b)
+
+We find that:
+$$\begin{align}
+\lambda & = \frac{2nt}{m- \frac{1}{2}} = \frac{831}{m- \frac{1}{2}}\text{ nm}
+\end{align}$$
+Then since $400< \lambda<700$, we must take $m=2$. Then $\lambda= 553\text{ nm}$.
+## (c)
+
+We find that:
+$$\lambda= \frac{2nt}{m}= \frac{831}{m}\text{ nm}$$
+Then since $400<\lambda<700$, we must take $m=2$. Then $\lambda= 415.5\text{ nm}$.
+## (d)
+
+We have:
+$$\begin{align}
+t= \frac{\left( m- \frac{1}{2} \right)\lambda}{2n}
+\end{align}$$
+We take $m=1$. Then:
+$$\begin{align}
+t\approx 103.38\text{ nm}
+\end{align}$$
+# Question 4
+## (a)
+
+We have:
+$$\begin{align}
+d & = 2h= 1.6\text{ mm}
+\end{align}$$
+The bright fringes are given by:
+$$\begin{align}
+ & d\sin \theta+ \frac{\lambda}{2}= m\lambda 
+\end{align}$$
+Then:
+$$\begin{align}
+y_{m} & = D\tan {\theta} \\
+ & \approx \frac{D}{d}\left( m- \frac{1}{2} \right)\lambda
+\end{align}$$
+Then the spacing is:
+$$\begin{align}
+\Delta y= \frac{D\lambda}{d}= 562.5\ \mu\text{m}
+\end{align}$$
+## (b)
+
+The optical path length difference is introduced solely by reflection. It is $\frac{\lambda}{2}$. Therefore the center is dark.
+## (c)
+
+We already have:
+$$y_{m}= \frac{D}{d}\left( m- \frac{1}{2} \right)\lambda$$
+The first three bright fringes are at:
+$$\begin{align}
+y_{1} & = \frac{D\lambda}{2d}= 281.25\ \mu\text{m} \\
+y_{2} & = y_{1}+\Delta y= 843.75\ \mu\text{m} \\
+y_{3} & = y_{2}+\Delta y= 1406.25\ \mu\text{m}
+\end{align}$$
+## (d)
+
+The positions of the bright and dark fringes change. But the fringe spacing is not changed.
+# Question 5
+## (a)
+
