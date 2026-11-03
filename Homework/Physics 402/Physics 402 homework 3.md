@@ -373,7 +373,7 @@ $$\begin{align}
 We take $n=1,\ L=2\text{ cm}$, then:
 $$\begin{align}
 \Delta \nu_{\text{FSR}} & = \frac{3\times 10^{8}}{2\times{1}\times 2\times{1}0^{-2}} \\
- & = 7.5 \times 10^{9}\text{ Hz}
+ & = 7.5  \text{ GHz}
 \end{align}$$
 ## (c)
 
@@ -382,7 +382,30 @@ $$\begin{align}
 \mathcal{F} & = \frac{\pi \sqrt{ R }}{1-R} \\
  & \approx 29.8
 \end{align}$$
-Since finesse is essentially the ratio between the peak separation and the FWHM in some spectrum, we take the frequency spectrum
+Since finesse is essentially the ratio between the peak separation and the FWHM in some spectrum, we take the frequency spectrum and write down:
+$$\begin{align}
+\Delta \nu_{\text{FWHM}} & = \frac{\Delta \nu_{\text{FSR}}}{\mathcal{F}} \\
+ & = \frac{7.5}{29.8} \\
+ & \approx 0.252\text{ GHz}
+\end{align}$$
+## (d)
+
+We calculate:
+$$\begin{align}
+\nu & = \frac{c}{\lambda} \\
+ & \approx 4.74 \times 10^{14}\text{ Hz}
+\end{align}$$
+Then:
+$$\begin{align}
+\frac{\nu}{\Delta \nu} & = \frac{4.74\times 10^{14}}{0.252 \times 10^{9}} \\
+ & \approx 1.9 \times 10^{6}
+\end{align}$$
+## (e)
+
+If we increase $R$, we are effectively making the beam "more trapped" in the cavity. Therefore the beams can undergo more reflections before getting too weak. This would therefore produce strong sharpness in the peaks. 
+
+
+
 
 
 
