@@ -432,12 +432,26 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Notes/申请.md",
+                "file": "Homework/Physics 402/Physics 402 homework 2.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "申请"
+              "title": "Physics 402 homework 2"
+            }
+          },
+          {
+            "id": "04bf959732ba849b",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Homework/Physics 402/Physics 402 homework 3.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Physics 402 homework 3"
             }
           },
           {
@@ -4219,7 +4233,7 @@
             }
           }
         ],
-        "currentTab": 30
+        "currentTab": 31
       }
     ],
     "direction": "vertical"
@@ -4273,7 +4287,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "申请",
+                "query": "",
                 "matchingCase": true,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -4284,12 +4298,12 @@
               "title": "Search"
             }
           }
-        ],
-        "currentTab": 3
+        ]
       }
     ],
     "direction": "horizontal",
-    "width": 200.5
+    "width": 200.5,
+    "collapsed": true
   },
   "right": {
     "id": "9003d078f8dbc4ed",
@@ -4393,12 +4407,13 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "8b0660ba0f7ce7e5",
+  "active": "04bf959732ba849b",
   "lastOpenFiles": [
     "Homework/Physics 402/Physics 402 homework 2.md",
+    "Homework/Physics 402/Physics 402 homework 3.md",
+    "Notes/申请.md",
     "Homework/Physics 402/Physics 402 homework 1.md",
     "Homework/Physics 402/Physics 402 real world optics 5.md",
-    "Notes/申请.md",
     "Homework/Physics 520/Physics 520 homework 9.md",
     "Pictures/Pasted image 20261101233906.png",
     "Pictures/Pasted image 20261101233833.png",
@@ -4431,7 +4446,6 @@
     "Notes/Fermi's golden rule.md",
     "Notes/线性响应.md",
     "Notes/Lorentz群的表示.md",
-    "Notes/GRE物理.md",
     "trace-cookies.txt",
     "max-page-cookies.txt",
     "max-cookies.txt",
