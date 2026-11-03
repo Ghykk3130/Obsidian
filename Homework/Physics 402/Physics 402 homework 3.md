@@ -191,4 +191,17 @@ $$\begin{align}
 \end{align}$$
 ## (d)
 
-because they are the virtual images of the same light source. 
+The two virtual sources are mutually coherent because they are virtual images of the same light source. Therefore, the waves originating from them maintain a constant phase relationship, even though the virtual sources are spatially separated.
+# Question 6
+
+We define:
+$$\begin{align}
+ & r= \frac{E_{r_{1}}}{E_{i_{1}}},\ t= \frac{E_{t_{2}}}{E_{i_{1}}} \\
+ & r^{'}= \frac{E_{r_{2}}}{E_{i_{2}}},\ t^{'}= \frac{E_{t_{1}}}{E_{i_{2}}}
+\end{align}$$
+where $E_{r_{1}}, E_{i_{1}}$ are the reflected and incident field amplitude in medium 1, $E_{r_{2}},E_{i_{2}}$ are the reflected and incident field amplitude in medium 2.
+## (a)
+
+Consider an incident beam. Then:
+$$E_{r_{1}}=rE_{i_{1}},\ E_{t_{2}}=tE_{i_{1}}$$
+
