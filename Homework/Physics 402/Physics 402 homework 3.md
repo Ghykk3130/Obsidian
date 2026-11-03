@@ -251,5 +251,30 @@ $$\begin{align}
 \end{align}$$
 ## (b)
 
+If there are $N$ fringes pass, then:
+$$\begin{align}
+2(n-n_{0})L & = N\lambda \\
+\implies N=  & \frac{2(n_{}-n_{0})L}{\lambda}
+\end{align}$$
+## (c)
+
+Take $n_{0}=1,\ L=5\text{ cm},\ \lambda=632.8\text{ nm},\ N=42$, we get:
+$$n\approx 1.000266$$
+## (d)
+
+Know that:
+$$\begin{align}
+n & = \frac{N\lambda}{2L}+n_{0}
+\end{align}$$
+Then:
+$$\begin{align}
+\delta n & = \frac{\lambda}{2L}\delta N \\
+ & \approx \pm 6.328\times 10^{-6}
+\end{align}$$
+# Question 8
+## (a)
+
+
+
 
 
