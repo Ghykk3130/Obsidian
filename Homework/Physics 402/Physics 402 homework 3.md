@@ -336,8 +336,37 @@ I(\delta=2\pi m)= I_{1}N^{2}
 ## (c)
 
 Let $N=6$. We observe that the only zero points are achieved when the numerator is zero. We set:
-$$\sin(3\delta)=0$$
+$$\sin(3\delta)=0\implies\delta= \pm \frac{\pi}{3}$$
+for the first zeros. The width is $\frac{2\pi}{3}$. 
 
+If $N=2$, we set:
+$$\begin{align}
+\sin(\delta)=0\implies\delta=\pm \pi
+\end{align}$$
+for the first zeros. The width is $2\pi$. 
+
+In the 6-beam case, the width is 3 times smaller. 
+## (d)
+
+We have:
+$$\begin{align}
+\frac{I\left(  \frac{\pi}{6} \right)}{I_{1}} & = \left| \frac{\sin\left( 6 \cdot \frac{\pi}{12} \right)}{\sin \left(  \frac{\pi}{12} \right)} \right|^{2}\approx 14.9
+\end{align}$$
+$$\begin{align}
+\frac{I\left(  \frac{\pi}{3} \right)}{I_{1}}=\left| \frac{\sin\left( 6\cdot \frac{\pi}{6} \right)}{\sin\left(  \frac{\pi}{6} \right)} \right|^{2}= 0
+\end{align}$$
+These values show that multibeam interference can produce strong constructive interference at some phase differences and complete destructive interference at others. And in general, the intensity curves look "narrower". 
+# Question 10
+## (a)
+
+We have:
+$$\begin{align}
+T & = \frac{1}{1+F\sin ^{2}\left( \frac{\delta}{2} \right)},\ F= \frac{4R}{(1-R)^{2}}
+\end{align}$$
+The round-trip phase is:
+$$\begin{align}
+\delta & = 
+\end{align}$$
 
 
 
