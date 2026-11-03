@@ -274,6 +274,32 @@ $$\begin{align}
 # Question 8
 ## (a)
 
+This is because of beating phenomenon.
+## (b)
+
+Let $\lambda_{1},\lambda_{2}$ be the wavelengths corresponding to the two beams. Then the phase shift for beam 1 is:
+$$\begin{align}
+\frac{2\pi}{\lambda_{1}}\cdot{2}D
+\end{align}$$
+The phase shift for beam 2 is:
+$$\frac{2\pi}{\lambda_{2}}\cdot 2D$$
+So there phase difference accumulation is:
+$$\begin{align}
+\frac{2\pi}{\lambda_{1}}\cdot 2D- \frac{2\pi}{\lambda_{2}}\cdot 2D & = 4\pi D\left(  \frac{1}{\lambda_{1}}- \frac{1}{\lambda_{2}} \right)
+\end{align}$$
+Since we observe max $\rightarrow$ min $\rightarrow$ max pattern, this means that the phase difference accumulation is $2\pi$. So:
+$$\begin{align}
+ & 4\pi D\left(  \frac{1}{\lambda_{1}}- \frac{1}{\lambda_{2}} \right)=2\pi \\
+\implies & \frac{\Delta \lambda}{\lambda^{2}}\approx \frac{1}{2D} \\
+\implies & \Delta \lambda \approx \frac{\lambda^{2}}{2D}
+\end{align}$$
+## (c)
+
+Set $D=0.289\text{ mm},\ \lambda=589.3\text{ nm}$, we get:
+$$\begin{align}
+\Delta \lambda \approx 0.601\text{ nm}
+\end{align}$$
+## (d)
 
 
 
