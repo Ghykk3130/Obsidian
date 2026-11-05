@@ -30,7 +30,7 @@ S_{F}(x-y)= (i\rlap{/}\partial+m)\left[\theta(x^{0}-y^{0})D_{W}(x-y)-\theta(y^{0
 # Problem 3
 ## (a)
 
-
+![[4fa8755d794197d07337dd3be0804483.jpg|centering|400]]
 
 # Problem 4
 
