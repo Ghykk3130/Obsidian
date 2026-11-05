@@ -1,6 +1,6 @@
 我们定义S矩阵为：
 $$\begin{align}
-S=T\exp\left( i \int d^{4}x H_{\text{int}}  \right) 
+S=T\exp\left( -i \int d^{4}x H_{\text{int}}  \right) 
 \end{align}$$
 那么S矩阵的矩阵元就是从从$\ket{i}$散射进$\bra{f}$的概率：
 $$\begin{align}

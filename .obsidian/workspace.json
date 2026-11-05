@@ -516,12 +516,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Homework/Physics 513/Physics 513 homework 9.md",
+                "file": "Notes/S矩阵.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Physics 513 homework 9"
+              "title": "S矩阵"
             }
           },
           {
@@ -4357,7 +4357,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "散射",
                 "matchingCase": true,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -4368,7 +4368,8 @@
               "title": "Search"
             }
           }
-        ]
+        ],
+        "currentTab": 3
       }
     ],
     "direction": "horizontal",
@@ -4479,10 +4480,10 @@
   },
   "active": "3a9cc6faa6aaa95f",
   "lastOpenFiles": [
+    "Homework/Physics 513/Physics 513 homework 9.md",
     "Notes/S矩阵.md",
     "Notes/Dirac场的量子化.md",
     "Notes/Untitled 17.md",
-    "Homework/Physics 513/Physics 513 homework 9.md",
     "Pictures/4fa8755d794197d07337dd3be0804483.jpg",
     "Homework/Physics 513/Physics 513 homework 8.md",
     "Homework/Physics 513/Physics 513 homework 6.md",
