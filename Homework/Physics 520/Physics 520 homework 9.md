@@ -15,7 +15,7 @@ M & = -\mu_{B}(n_{\uparrow}-n_{\downarrow}) \\
  & =  \mu_{B}^{2}B \int_{0}^{\infty}dE \rho(E)\delta(E-E_{F}) \\
  & = \mu_{B}^{2}B \rho(E_{F})
 \end{align}$$
-Here $\rho(E)$ is the unsplit DOS, so the $\frac{1}{2}$ factor comes from splitting. The minus sign in the front counts for the negative charge carried by electrons. Then:
+Here $\rho(E)$ is the unsplit DOS, so the $\frac{1}{2}$ factor co  mes from splitting. The minus sign in the front counts for the negative charge carried by electrons. Then:
 $$\begin{align}
 \chi & = \frac{M}{B / \mu_{0}} \\
  & = \mu_{0}\mu_{B}^{2}\rho(E_{F})
