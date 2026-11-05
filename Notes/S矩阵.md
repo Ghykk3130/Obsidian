@@ -16,6 +16,6 @@ M矩阵相当于某种振幅。
 
 可以证明$\bra{f}S\ket{i}$ Feynman图中所有amputated的合起来是M矩阵：
 $$\begin{align}
-\bra{f} S \ket{i} _{\text{amputated}} = (2\pi)^{4}\delta\left( \sum_{\text{incoming}}p-\sum_{\text{outgoing}}p \right)\mathcal{M}
+\bra{f} S \ket{i} _{\text{amputated}} = i(2\pi)^{4}\delta\left( \sum_{\text{incoming}}p-\sum_{\text{outgoing}}p \right)\mathcal{M}
 \end{align}$$
 
