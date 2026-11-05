@@ -1,18 +1,18 @@
 # Question 1
 ## (a)
 
-Assume $I_{1}$ corresponds to $\mathbf{E}_{1}e^{i\omega t}$. $I_{2}$ corresponds to $\mathbf{E}_{2}e^{i\omega t+\delta}$. Then:
+Assume $I_{1}$ corresponds to $\mathbf{E}_{1}e^{i\omega t}$. $I_{2}$ corresponds to $\mathbf{E}_{2}e^{i\omega t+i\delta}$. Then:
 $$\begin{align}
 \mathbf{E} & = \mathbf{E}_{1}e^{i\omega t}+\mathbf{E}_{2}e^{i\omega t+i\delta}
 \end{align}$$
 Then:
 $$\begin{align}
-I & = \frac{\epsilon_{0}}{2}E^{2} \\
- & = \frac{\epsilon_{0}}{2}(\mathbf{E}_{1}e^{-i\omega t}+\mathbf{E}_{2}e^{-i\omega t-i\delta} )\cdot(\mathbf{E}_{1}e^{i\omega t}+\mathbf{E}_{2}e^{-i\omega t+i\delta}) \\
- & = \frac{\epsilon_{0}}{2}(E_{1}^{2}+E_{2}^{2}+\mathbf{E}_{1}\cdot \mathbf{E}_{2} e^{-i\delta}+\mathbf{E}_{1}\cdot \mathbf{E}_{2}e^{i\delta}) \\
- & = \frac{\epsilon_{0}}{2}(E_{1}^{2}+E_{2}^{2}+2\mathbf{E}_{1}\cdot \mathbf{E}_{2}\cos\delta)
+I  & \propto E^{2} \\
+ & =(\mathbf{E}_{1}e^{-i\omega t}+\mathbf{E}_{2}e^{-i\omega t-i\delta} )\cdot(\mathbf{E}_{1}e^{i\omega t}+\mathbf{E}_{2}e^{i\omega t+i\delta}) \\
+ & = E_{1}^{2}+E_{2}^{2}+\mathbf{E}_{1}\cdot \mathbf{E}_{2} e^{-i\delta}+\mathbf{E}_{1}\cdot \mathbf{E}_{2}e^{i\delta} \\
+ & = E_{1}^{2}+E_{2}^{2}+2\mathbf{E}_{1}\cdot \mathbf{E}_{2}\cos\delta
 \end{align}$$
-Assume that the polarization vectors are parallel. Then $E_{1}= \sqrt{ \frac{2I_{1}}{\epsilon_{0}} },\ E_{2}=\sqrt{ \frac{2I_{2}}{\epsilon_{0}} },\ \mathbf{E}_{1}\cdot \mathbf{E}_{2}=E_{1}E_{2}$. Then:
+Since $I_{1}\propto E_{1}^{2},\ I_{2}\propto E_{2}^{2}$, and the proportionality constant is such that we have an equal sign. Then:
 $$\begin{align}
 I & = I_{1}+I_{2}+2\sqrt{ I_{1}I_{2} }\cos\delta
 \end{align}$$
@@ -27,7 +27,8 @@ $$I_{\text{min}}=I_{1}+I_{2}-2\sqrt{ I_{1}I_{2} }$$
 Then the visibility is given by:
 $$\begin{align}
 V & = \frac{I_{\text{max}}-I_{\text{min}}}{I_{\text{max}}+I_{\text{min}}} \\
- & = \frac{2\sqrt{ I_{1}I_{2} }}{I_{1}+I_{2}}
+ & = \frac{2\sqrt{ I_{1}I_{2} }}{I_{1}+I_{2}} \\
+ & = \frac{12}{13}
 \end{align}$$
 ## (c)
 
@@ -70,22 +71,22 @@ y_{4} & = 4 \times \Delta y \\
 \end{align}$$
 ## (c)
 
-If we add a glass, then the path length difference becomes $d\sin \theta+ nt-t$. Then:
+If we add a glass, then the path length difference becomes $d\sin \theta+ (nt-t)$. Then:
 $$\begin{align}
- d\sin \theta+nt-t= m\lambda
+ d\sin \theta+(nt-t)= m\lambda
 \end{align}$$
 The the shifted fringe position is:
 $$\begin{align}
 y_{m}^{'} & = D \tan \theta \\
- & \approx \frac{m\lambda+t-nt}{d}
+ & \approx \frac{m\lambda+t-nt}{d}D
 \end{align}$$
 The corresponding displacement is:
 $$\begin{align}
-\frac{(n-1)t}{d} & \approx 8.67\text{ mm}
+\frac{(1-n)t}{d}D & \approx- 17.3\text{ mm}
 \end{align}$$
 ## (d)
 
-The central fringe shifts toward the unblocked slit. Since the in part (c), the path length of the blocked slit is $d\sin t\theta+nt-t$ more than the unblocked slit. It is clear from $y^{'}_{m}= \frac{m\lambda+t-nt}{d}$ that the $y^{'}_{m}$ gets smaller, since $t-nt<0$.
+The central fringe shifts toward the blocked slit. Since the in part (c), the path length of the blocked slit is $d\sin \theta+nt-t$ more than the unblocked slit. It is clear from $y^{'}_{m}= \frac{m\lambda+t-nt}{d}$ that the $y^{'}_{m}$ gets smaller, since $t-nt>0$.
 # Question 3
 ## (a)
 
@@ -107,14 +108,14 @@ $$\begin{align}
 
 We find that:
 $$\begin{align}
-\lambda & = \frac{2nt}{m- \frac{1}{2}} = \frac{831}{m- \frac{1}{2}}\text{ nm}
+\lambda & = \frac{2nt}{m- \frac{1}{2}} = \frac{931}{m- \frac{1}{2}}\text{ nm}
 \end{align}$$
-Then since $400< \lambda<700$, we must take $m=2$. Then $\lambda= 553\text{ nm}$.
+Then since $400< \lambda<700$, we must take $m=2$. Then $\lambda= 621\text{ nm}$.
 ## (c)
 
 We find that:
-$$\lambda= \frac{2nt}{m}= \frac{831}{m}\text{ nm}$$
-Then since $400<\lambda<700$, we must take $m=2$. Then $\lambda= 415.5\text{ nm}$.
+$$\lambda= \frac{2nt}{m}= \frac{931}{m}\text{ nm}$$
+Then since $400<\lambda<700$, we must take $m=2$. Then $\lambda= 466\text{ nm}$.
 ## (d)
 
 We have:
@@ -235,7 +236,7 @@ r^{'} & = \frac{n_{2}-n_{1}}{n_{2}+n_{1}} \\
 \end{align}$$
 ## (c)
 
-If $n_{2}>n_{2}$, then $r<0$. This means that the sign of the amplitude changes. This is effectively introducing a $\pi$ phase shift. It is the external reflection carries the phase shift, because light shoots from air into some medium with higher refraction index.
+If $n_{2}>n_{1}$, then $r<0$. This means that the sign of the amplitude changes. This is effectively introducing a $\pi$ phase shift. It is the external reflection carries the phase shift, because light shoots from air into some medium with higher refraction index.
 ## (d)
 
 Because if we are going from a medium with higher $n$ into a medium with lower $n$, we do not have the sign flip, so that we do not have the phase shift.

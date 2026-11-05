@@ -460,12 +460,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Homework/Physics 520/Physics 520 homework 9.md",
+                "file": "Homework/Physics 402/Physics 402 homework 3.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Physics 520 homework 9"
+              "title": "Physics 402 homework 3"
             }
           },
           {
@@ -4301,7 +4301,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "Curie",
+                "query": "申请",
                 "matchingCase": true,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -4316,7 +4316,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200.5
+    "width": 200.5,
+    "collapsed": true
   },
   "right": {
     "id": "9003d078f8dbc4ed",
@@ -4422,6 +4423,8 @@
   },
   "active": "c0ac861d60aa56f5",
   "lastOpenFiles": [
+    "Notes/申请.md",
+    "Homework/Physics 520/Physics 520 homework 9.md",
     "Homework/Physics 520/Physics 520 homework 8.md",
     "Homework/Physics 520/Physics 520 homework 7.md",
     "Homework/Physics 520/Physics 520 homework 6.md",
@@ -4433,9 +4436,7 @@
     "Homework/Physics 402/Physics 402 homework 2.md",
     "Homework/Physics 402/Physics 402 homework 3.md",
     "Homework/Physics 520/Physics 520 homework 4.md",
-    "Homework/Physics 520/Physics 520 homework 9.md",
     "Notes/Hamiltonian Formulation of EM.md",
-    "Notes/申请.md",
     "Notes/能带磁性.md",
     "Experimental/Ratio Transformer.md",
     "Notes/Pauli顺磁.md",
