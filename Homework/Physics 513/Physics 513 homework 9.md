@@ -125,8 +125,18 @@ So:
 $$\begin{align}
 S_{F}(x-y) & = (i\rlap{/}\partial+m) \int \frac{d^{3}p}{(2\pi)^{3}} \frac{1}{2E_{\mathbf{p}}}e^{i\mathbf{p}\cdot(\mathbf{x}-\mathbf{y})}e^{-iE_{\mathbf{p}}(y^{0}-x^{0})} \\
  & = (i\rlap{/}\partial+m) \int \frac{d^{3}p}{(2\pi)^{3}} \frac{1}{2E_{\mathbf{p}}}e^{-i\mathbf{p}\cdot(\mathbf{x}-\mathbf{y})}e^{-iE_{\mathbf{p}}(y^{0}-x^{0})} \\
- & = (i\rlap{/}\partial+m)\int \frac{d}{}
+ & = (i\rlap{/}\partial+m)\int \frac{d^{3}p}{(2\pi)^{3}} \frac{1}{2E_{\mathbf{p}}}e^{-ip\cdot(y-x)} \\
+ & = (i\rlap{/}\partial+m)D_{W}(y-x)
 \end{align}$$
+Then:
+$$S_{F}= (i\rlap{/}\partial+m)(\theta(x^{0}-y^{0})D_{W}(x-y)+\theta(y^{0}-x^{0})D_{W}(y-x))$$
+# Problem 2
+## (a)
+
+![[82f14706b4f5e49fddef792db131b112.jpg|centering|300]]
+## (b)
+
+
 # Problem 3
 ## (a)
 
