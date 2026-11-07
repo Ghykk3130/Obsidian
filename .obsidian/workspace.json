@@ -516,12 +516,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Notes/Wick定理.md",
+                "file": "Homework/Physics 513/Physics 513 homework 9.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Wick定理"
+              "title": "Physics 513 homework 9"
             }
           },
           {
@@ -4357,7 +4357,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "Wick定理",
+                "query": "Feynman",
                 "matchingCase": true,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -4368,12 +4368,12 @@
               "title": "Search"
             }
           }
-        ],
-        "currentTab": 3
+        ]
       }
     ],
     "direction": "horizontal",
-    "width": 200.5
+    "width": 200.5,
+    "collapsed": true
   },
   "right": {
     "id": "9003d078f8dbc4ed",
@@ -4479,15 +4479,21 @@
   },
   "active": "3a9cc6faa6aaa95f",
   "lastOpenFiles": [
-    "Notes/散射矩阵.md",
+    "Pictures/d57373321170c3cded3726e509cd144a.jpg",
     "Notes/Feynman图.md",
+    "Pictures/17d7babfb6a3056a158fc327cf3476db.jpg",
+    "Pictures/Pasted image 20261106235701.png",
     "Homework/Physics 513/Physics 513 homework 9.md",
+    "Pictures/be1a6d1e2ffed29817f6207c40983fe0.jpg",
+    "Homework/Physics 513/Physics 513 homework 8.md",
+    "Notes/散射矩阵.md",
+    "Notes/Wick定理.md",
+    "Pictures/00c59b586c9fd34f643561c4e3b7e074.jpg",
     "Pictures/82f14706b4f5e49fddef792db131b112.jpg",
     "Notes/申请.md",
     "Notes/Dirac场的量子化.md",
     "Notes/Untitled 17.md",
     "Pictures/4fa8755d794197d07337dd3be0804483.jpg",
-    "Homework/Physics 513/Physics 513 homework 8.md",
     "Homework/Physics 513/Physics 513 homework 6.md",
     "Notes/费米子的Feynman规则.md",
     "Notes/Green函数.md",
@@ -4505,15 +4511,10 @@
     "Homework/Physics 520/Physics 520 homework 4.md",
     "Notes/Hamiltonian Formulation of EM.md",
     "Notes/能带磁性.md",
-    "Experimental/Ratio Transformer.md",
     "Pictures/fa9eebf93978e6c0248a14a7d65a7dc9.jpg",
     "Pictures/Pasted image 20261101233906.png",
     "Pictures/Pasted image 20261101233833.png",
     "Pictures/Pasted image 20261101233825.png",
-    "Pictures/49e584201d663adf13db95c715c0b224.jpg",
-    "Pictures/314f71ce6984887603e87ee09cf9ebd5.jpg",
-    "Pictures/f6c6faea058dd756eddae7f54b08300d.jpg",
-    "Pictures/ce075a0f3145ab73be8fbf5fa7681352.jpg",
     "SimpleWick Obsidian Report.pdf",
     "trace-cookies.txt",
     "max-page-cookies.txt",

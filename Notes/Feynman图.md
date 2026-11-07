@@ -67,12 +67,17 @@ $$\begin{align}
 \frac{1}{n!} \frac{1}{(4!)^{n}} |\text{orb}(x) | & = \frac{1}{n!(4!)^{n} } \frac{|G|}{|\text{stab}(x)|} \\
  & = \frac{1}{|\text{stab}(x)|}
 \end{align}$$
-我们称$S=|\text{stab}(x)|$为对称系数。
+我们称$S=|\text{stab}(x)|$为对称系数。在计算stabilizer的时候，我们区分vertex内部的四个点，并且固定外点与内点的连接而不改变。
 ## Ex: 
 
 考虑如下的s,t,u-channel
 ![[82f14706b4f5e49fddef792db131b112.jpg|centering|300]]
 显然，三者都有$S=1$。
+## Ex:
+
+![[17d7babfb6a3056a158fc327cf3476db.jpg|centering|600]]
+我们将每个4-vertex拆开。我们区分拆开后的所有内点。显然，做对换$x_{2} \leftrightarrow x_{4}$, $y_{1} \leftrightarrow y_{3}$后，图还是一样的。所以$S=2$。
+
 
 
 
