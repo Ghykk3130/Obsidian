@@ -92,6 +92,14 @@ S_{C}(x-y) & = \int_{C} \frac{d^{4}p}{(2\pi)^{4}} \frac{i(\rlap{/}p+m)}{p^{2}-m^
 \end{align}$$
 ## (d)
 
+We integrate:
+$$\begin{align}
+S_{F}(x-y) & = (i\rlap{/}\partial+m)\int \frac{d^{4}p}{(2\pi)^{4} } \frac{i}{p^{2}-m^{2}+i\epsilon}e^{-ip\cdot(x-y)}
+\end{align}$$
+Observe that:
+$$\begin{align}
+\frac{i}{p^{2}-m^{2}+i\epsilon} & = \frac{i}{(p^{0})^{2}-E_{\mathbf{p}}^{2}+i\epsilon}
+\end{align}$$
 
 # Problem 3
 ## (a)
