@@ -68,6 +68,29 @@ $$\begin{align}
 \implies & (i\rlap{/}\partial-m)_{ca} \int \frac{d^{4}p}{(2\pi)^{4}}\tilde{S}_{C}(p)e^{-ip\cdot(x-y)}=i\delta_{c b}\int \frac{d^{4}p}{(2\pi)^{4}}e^{-ip\cdot(x-y)} \\
 \implies & (\rlap{/}p-m )_{ca}(\tilde{S}_{C} )_{ab}=i\delta_{c b}
 \end{align}$$
+Observe that:
+$$\begin{align}
+(\rlap{/}p+m)(\rlap{/}p-m) & = \rlap{/}p \rlap{/}p-m^{2} \\
+ & = p_{\mu}\gamma^{\mu}p_{\nu}\gamma^{\nu}-m^{2} \\
+ & = \frac{1}{2}p_{\mu}\gamma^{\mu}p_{\nu}\gamma^{\nu}+ \frac{1}{2}p_{\nu}\gamma^{\mu}p_{\mu}\gamma^{\nu}-m^{2} \\
+ & = \frac{1}{2}p_{\mu}\gamma^{\mu}p_{\nu}\gamma^{\nu}+ \frac{1}{2}p_{\mu}\gamma^{\nu}p_{\nu}\gamma^{\mu}-m^{2} \\
+ & = \frac{1}{2}p_{\mu}p_{\nu}\{ \gamma^{\mu},\gamma^{\nu} \}-m^{2} \\
+ & = p^{2}-m^{2}
+\end{align}$$
+Then $(\rlap{/}p-m)^{-1}= \frac{\rlap{/}p+m}{p^{2}-m^{2}}$. We have:
+$$\begin{align}
+ & (\rlap{/}p-m )\tilde{S}_{C}=i \\
+\implies & (p^{2}-m^{2})\tilde{S}_{C}=i(\rlap{/}p+m) \\
+\implies & \tilde{S}_{C}= \frac{i(\rlap{/}p+m)}{p^{2}-m^{2}}
+\end{align}$$
+Then:
+$$\begin{align}
+S_{C}(x-y) & = \int_{C} \frac{d^{4}p}{(2\pi)^{4}} \frac{i(\rlap{/}p+m)}{p^{2}-m^{2}}e^{-ip\cdot(x-y)} \\
+ & = \int \frac{d^{4}p}{(2\pi)^{4}} \frac{(-\rlap{/}\partial_{x}+im)e^{-ip\cdot(x-y)} }{p^{2}-m^{2} } \\
+ & = (i \rlap{/}\partial+m)\int \frac{d^{4}p}{(2\pi)^{4}} \frac{i}{p^{2}-m^{2}}e^{-ip\cdot(x-y)} \\
+ & = (i\rlap{/}\partial+m) D_{C}(x-y)
+\end{align}$$
+## (d)
 
 
 # Problem 3
