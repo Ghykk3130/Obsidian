@@ -72,7 +72,10 @@ $$\begin{align}
 
 考虑如下的s,t,u-channel
 ![[82f14706b4f5e49fddef792db131b112.jpg|centering|300]]
-显然，
+显然，三者都有$S=1$。
+
+
+
 
 
 
