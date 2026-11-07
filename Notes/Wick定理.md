@@ -8,6 +8,8 @@ $$\begin{align}
 
 令$N$为正规序算子。我们定义Wick contraction：
 $$\text{contraction of }\phi_{1}\phi_{2}=T\phi_{1}\phi_{2}-N\phi_{1}\phi_{2}$$
+可以证明，这只是一个c-number乘上一个identity。多个算子乘积的二算子Wick contraction定义为两个算子contraction乘上剩下的normal ordering。
+
 
 
 若$x^{0}>y^{0}$，那么：
