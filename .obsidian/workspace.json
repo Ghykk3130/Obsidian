@@ -516,12 +516,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Homework/Physics 513/Physics 513 homework 9.md",
+                "file": "Notes/Feynman图.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Physics 513 homework 9"
+              "title": "Feynman图"
             }
           },
           {
@@ -4357,7 +4357,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "申请",
+                "query": "Feynman图",
                 "matchingCase": true,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -4368,7 +4368,8 @@
               "title": "Search"
             }
           }
-        ]
+        ],
+        "currentTab": 3
       }
     ],
     "direction": "horizontal",
@@ -4479,10 +4480,10 @@
   },
   "active": "3a9cc6faa6aaa95f",
   "lastOpenFiles": [
+    "Homework/Physics 513/Physics 513 homework 9.md",
     "Pictures/82f14706b4f5e49fddef792db131b112.jpg",
     "Notes/申请.md",
     "Notes/Feynman图.md",
-    "Homework/Physics 513/Physics 513 homework 9.md",
     "Notes/S矩阵.md",
     "Notes/Dirac场的量子化.md",
     "Notes/Untitled 17.md",
@@ -4514,7 +4515,6 @@
     "Pictures/314f71ce6984887603e87ee09cf9ebd5.jpg",
     "Pictures/f6c6faea058dd756eddae7f54b08300d.jpg",
     "Pictures/ce075a0f3145ab73be8fbf5fa7681352.jpg",
-    "Pictures/0d1b2a1b0e4d301034349eb9ccb3d440.jpg",
     "SimpleWick Obsidian Report.pdf",
     "trace-cookies.txt",
     "max-page-cookies.txt",
