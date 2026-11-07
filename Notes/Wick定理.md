@@ -4,11 +4,10 @@ $$\begin{align}
  & = \int \frac{d^{3}p}{(2\pi)^{3}} \frac{1}{\sqrt{ 2E_{\mathbf{p}} }}a_{\mathbf{p}}e^{-ip\cdot x}+ \int \frac{d^{3}p}{(2\pi)^{3}} \frac{1}{\sqrt{ 2E_{\mathbf{p}} }}a_{\mathbf{p}}^{\dagger}e^{ip\cdot x} \\
  & = \phi^{+}(x)+\phi^{-}(x)
 \end{align}$$
-其中，$\phi^+$只包含湮灭算子，$\phi^{-}$只包含生成算子。那么$\phi^{+},\phi^{-}$可以形成正规序。那么可以将$T\phi(x_{1})\phi(x_{2})\dots$按照这个分解展开，再通过commutator弄成正规序。$\overbrace  {a}$
+其中，$\phi^+$只包含湮灭算子，$\phi^{-}$只包含生成算子。那么$\phi^{+},\phi^{-}$可以形成正规序。那么可以将$T\phi(x_{1})\phi(x_{2})\dots$按照这个分解展开，再通过commutator弄成正规序。
 
-
-
-令$N$为正规序算子
+令$N$为正规序算子。我们定义Wick contraction：
+$$\text{contraction of }\phi_{1}\phi_{2}=T\phi_{1}\phi_{2}-N\phi_{1}\phi_{2}$$
 
 
 若$x^{0}>y^{0}$，那么：
