@@ -96,11 +96,37 @@ We integrate:
 $$\begin{align}
 S_{F}(x-y) & = (i\rlap{/}\partial+m)\int \frac{d^{4}p}{(2\pi)^{4} } \frac{i}{p^{2}-m^{2}+i\epsilon}e^{-ip\cdot(x-y)}
 \end{align}$$
-Observe that:
+Observe that if we ignore the $\epsilon^{2}$ term:
 $$\begin{align}
-\frac{i}{p^{2}-m^{2}+i\epsilon} & = \frac{i}{(p^{0})^{2}-E_{\mathbf{p}}^{2}+i\epsilon}
+\frac{i}{p^{2}-m^{2}+i\epsilon} & = \frac{i}{(p^{0})^{2}-E_{\mathbf{p}}^{2}+i\epsilon} \\
+ & = \frac{i}{2E_{\mathbf{p}}}\left[  \frac{1}{p^{0}-E_{\mathbf{p}}+i\epsilon}- \frac{1}{p^{0}+E_{\mathbf{p}}-i\epsilon} \right]
+\end{align}$$
+When $x^{0}> y^{0}$, we choose the lower half plane as our contour. Then:
+$$\begin{align}
+\int \frac{dp^{0}}{2\pi} \frac{i}{p^{2}-m^{2}+i\epsilon}e^{-ip\cdot(x-y)} & = \int \frac{dp^{0}}{2\pi} \frac{i}{2E_{\mathbf{p}}}\left[  \frac{1}{p^{0}-E_{\mathbf{p}}+i\epsilon}- \frac{1}{p^{0}+E_{\mathbf{p}}-i\epsilon} \right]e^{-ip\cdot(x-y)} \\
+ & = \int \frac{dp^{0}}{2\pi} \frac{i}{2E_{\mathbf{p}}} \frac{1}{p^{0}-E_{\mathbf{p}}+i\epsilon}e^{-ip\cdot(x-y)} \\
+ & = \frac{1}{2\pi} \frac{i}{2E_{\mathbf{p}}}e^{i\mathbf{p}\cdot(\mathbf{x}-\mathbf{y})}e^{-iE_{\mathbf{p}}(x^{0}-y^{0})} (-2\pi i) \\
+ & = \frac{1}{2E_{\mathbf{p}}}e^{-ip\cdot(x-y)}\text{ where }p\text{ lies on the mass sheel}
+\end{align}$$
+So:
+$$\begin{align}
+S_{F}(x-y) & = (i\rlap{/}\partial+m) \int \frac{d^{3}p}{(2\pi)^{3}} \frac{e^{-ip\cdot(x-y)}}{2E_{\mathbf{p}}} \\
+ & = (i\rlap{/}\partial+m) D_{W}(x-y)
 \end{align}$$
 
+When $x^{0}<y^{0}$, we choose the upper half plane as our contour. Then:
+$$\begin{align}
+\int \frac{dp^{0}}{2\pi} \frac{i}{p^{2}-m^{2}+i\epsilon}e^{-ip\cdot(x-y)} & = \int \frac{dp^{0}}{2\pi} \frac{i}{2E_{\mathbf{p}}}\left[  \frac{1}{p^{0}-E_{\mathbf{p}}+i\epsilon}- \frac{1}{p^{0}+E_{\mathbf{p}}-i\epsilon} \right]e^{-ip\cdot(x-y)} \\
+ & = -\int \frac{dp^{0}}{2\pi} \frac{i}{2E_{\mathbf{p}}} \frac{1}{p^{0}+E_{\mathbf{p}}-i\epsilon}e^{-ip\cdot(x-y)} \\
+ & = -\frac{1}{2\pi} \frac{i}{2E_{\mathbf{p}}}e^{i\mathbf{p}\cdot(\mathbf{x}-\mathbf{y})}e^{iE_{\mathbf{p}}(x^{0}-y^{0})} 2\pi i \\
+ & = \frac{1}{2E_{\mathbf{p}}}e^{i\mathbf{p}\cdot(\mathbf{x}-\mathbf{y})} e^{-iE_{\mathbf{p}}(y^{0}-x^{0})}\text{ where }p\text{ lies on the mass sheel} \\
+\end{align}$$
+So:
+$$\begin{align}
+S_{F}(x-y) & = (i\rlap{/}\partial+m) \int \frac{d^{3}p}{(2\pi)^{3}} \frac{1}{2E_{\mathbf{p}}}e^{i\mathbf{p}\cdot(\mathbf{x}-\mathbf{y})}e^{-iE_{\mathbf{p}}(y^{0}-x^{0})} \\
+ & = (i\rlap{/}\partial+m) \int \frac{d^{3}p}{(2\pi)^{3}} \frac{1}{2E_{\mathbf{p}}}e^{-i\mathbf{p}\cdot(\mathbf{x}-\mathbf{y})}e^{-iE_{\mathbf{p}}(y^{0}-x^{0})} \\
+ & = (i\rlap{/}\partial+m)\int \frac{d}{}
+\end{align}$$
 # Problem 3
 ## (a)
 
