@@ -35,7 +35,7 @@ $$|G|=|G /H|\cdot|H|$$
 
 >[!Success] Theorem 1.2
 >Let $G$ be a group, Let $G$ act on $X$. For any $x\in X$, we have $|G|=|\text{orb}(x)|\cdot|\text{stab}|(x)$.
-# 2. Feynman图
+# 2. 对称因子
 
 我们以$\phi^{4}$理论为例子。考虑微扰$\mathcal{H}_{\text{int}}= \frac{\lambda}{4!}\phi^{4}$。假设我们计算如下矩阵元：
 $$\begin{align}
@@ -58,16 +58,21 @@ $$\begin{align}
 
 我们把每个$\phi$当成一个点画在一张图上，然后图上每连接两个点代表一次缩并。将没有进行积分的点称为外点，进行积分的点称为内点。其中，$\phi^{4}_{z_{1}}$对应的点实际上都是同一个点，因为他们的变量名都是一样的。$\phi^{4}_{z_{2}}$对应的点实际上也都是同一个点。
 
-当我任意画一张Feynman图，我们实际上选择了一种缩并方式。但是这种缩并方式可能是"degenerate"的。即别的连接方式不同的Feyman图，可能缩并出来得到同样的结果。我们对于这个图所有的合法操作是交换顶点内部四个点的顺序，以及交换顶点本身。将这个群记为$G$。对于$n$阶Feynman图，显然$|G|=n! \cdot(4!)^{n}$。这是因为有$n$个顶点，顶点内部有$4!$种交换，顶点之间有$n!$种交换。
+当我任意画一张Feynman图，我们实际上选择了一种缩并方式。但是这种缩并方式可能是"degenerate"的。即别的连接方式不同的Feyman图，可能缩并出来得到同样的结果。
 
+我们我们考虑两种操作：交换顶点内部四个点的顺序，以及交换顶点本身。将这个群记为$G$。显然任意一个Feynman图$x$在$G$的作用下不变。那么degeneracy $=|\text{orb}(x)|$。对于$n$阶Feynman图，显然$|G|=n! \cdot(4!)^{n}$。这是因为有$n$个顶点，顶点内部有$4!$种交换，顶点之间有$n!$种交换。
 
-由于$\phi^{4}_{z_{1}}$对应的点实际上都是同一个点，那么permute这四个点得到的是同一种缩并。有$4!$种方式。同理，由于$\phi^{4}_{z_{2}}$对应的点实际上也都是同一个点，那么我们又得到一个$4!$。那么任何一张Feynman图都有$(4!)^{2}$的degeneracy。这刚好和$\frac{\lambda}{4!}\phi^{4}$的分母抵消。
+但是，由于$n$阶展开自带系数$\frac{1}{n!} \frac{1}{(4!)^{n}}$，那么实际上的系数为：
+$$\begin{align}
+\frac{1}{n!} \frac{1}{(4!)^{n}} |\text{orb}(x) | & = \frac{1}{n!(4!)^{n} } \frac{|G|}{|\text{stab}(x)|} \\
+ & = \frac{1}{|\text{stab}(x)|}
+\end{align}$$
+我们称$S=|\text{stab}(x)|$为对称系数。
+## Ex: 
 
-所以我们只需要数模掉内点交换带来的degeneracy剩下的不同的Feynman图。这种Feynman图的个数称为symmetry factor。
-
-
-
-
+考虑如下的s,t,u-channel
+![[82f14706b4f5e49fddef792db131b112.jpg|centering|300]]
+显然，
 
 
 
