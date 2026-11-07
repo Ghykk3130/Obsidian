@@ -190,15 +190,34 @@ We note that if the states are indistinguishable, there might be a factor of $\f
 
 Since the incident beam is unpolarized, their spin state is $\ket{m_{a},m_{b}}$ with all possible $m_{a},m_{b}$. Assume that the probability to choose each $\ket{m_{a},m_{b}}$ are equal. Then the probability must be $\frac{1}{(2s_{a}+1)(2s_{b}+1)}$. The initial and states are unpolarized. So we add the probability of starting from any possible spins and ending in any possible spins, each with probability $\frac{1}{(2s_{a}+1)(2s_{b}+1)}$:
 $$\begin{align}
-\frac{d\sigma}{d\Omega^{'}}(a+b\rightarrow a^{'}+b^{'}) & \propto\frac{(2s_{a}+1)(2s_{b}+1) (2s_{a}^{'}+1)(2s_{b}^{'}+1)}{(2s_{a}+1)(2s_{b}+1)} |\mathcal{M}(a+b\rightarrow a^{'}+b^{'})|^{2} \frac{|\mathbf{k}^{'}|}{|\mathbf{k}|} \\
- & = (2s ^{'}_{a}+1 )(2s ^{'}_{b}+1) |\mathcal{M}(a+b\rightarrow a^{'}+b^{'}) |^{2} \frac{|\mathbf{k}^{'}|}{|\mathbf{k}|}
+\frac{d\sigma}{d\Omega^{'}}(a+b\rightarrow a^{'}+b^{'}) & \propto\frac{1}{(2s_{a}+1)(2s_{b}+1)} \sum_{m_{a},m_{b},m_{a^{'}},m_{b^{'}}}|\mathcal{M}(a+b\rightarrow a^{'}+b^{'})|^{2} \frac{|\mathbf{k}^{'}|}{|\mathbf{k}|} \\
+ 
 \end{align}$$
 Similarly:
 $$\begin{align}
-\frac{d\sigma}{d\Omega}(a^{'}+b^{'}\rightarrow a+b)= (2s_{a}+1)(2s_{b}+1)|\mathcal{M}(a^{'}+b^{'}\rightarrow a+b) |^{2} \frac{|\mathbf{k}^{}|}{|\mathbf{k}^{'}|}
+\frac{d\sigma}{d\Omega}(a^{'}+b^{'}\rightarrow a+b)= \sum_{m_{a},m_{b},m_{a^{'}},m_{b^{'}}} \frac{1 }{(2s^{'}_{a}+1)(2s ^{'}_{b}+1)} |\mathcal{M}(a^{'}+b^{'}\rightarrow a+b) |^{2} \frac{|\mathbf{k}^{}|}{|\mathbf{k}^{'}|}
 \end{align}$$
-It suffices to show:
+We know that:
 $$\begin{align}
-|\bra{a^{'},b^{'}} S \ket{a,b} |= |\bra{a,b} S\ket{a^{'},b^{'}} |
+\sum_{m_{a},m_{b},m_{a^{'}},m_{b^{'}}}|\langle \mathbf{p}_{a^{'}}, m_{a^{'}},\mathbf{p}_{b^{'}},m_{b^{'}}| T \ket{\mathbf{p}_{a},m_{a},\mathbf{p}_{b},m_{b}}|^{2} & =\sum_{m_{a},m_{b},m_{a^{'}},m_{b^{'}}}| \bra{-\mathbf{p}_{a^{'}},-m_{a^{'}},-\mathbf{p}_{b^{'} },m_{b^{'}}}\mathcal{T}^{} T \mathcal{T}^{-1}\ket{-\mathbf{p}_{a},-m_{a},-\mathbf{p}_{b},-m_{b}}  |^{2}\\
+ & =   \sum_{m_{a},m_{b},m_{a^{'}},m_{b^{'}}}|\bra{-\mathbf{p}_{a^{'}},-m_{a^{'}},-\mathbf{p}_{b^{'} },m_{b^{'}}}T^{\dagger}\ket{-\mathbf{p}_{a},-m_{a},-\mathbf{p}_{b},-m_{b}}  |^{2}\\
+ & = \sum_{m_{a},m_{b},m_{a^{'}},m_{b^{'}}}|\bra{-\mathbf{p}_{a},-m_{a},-\mathbf{p}_{b},-m_{b}}T^{}\ket{-\mathbf{p}_{a^{'}},-m_{a^{'}},-\mathbf{p}_{b^{'} },-m_{b^{'}}}  |^{2} \\
+ & = \sum_{m_{a},m_{b},m_{a^{'}},m_{b^{'}}}|\bra{-\mathbf{p}_{a},m_{a},-\mathbf{p}_{b},m_{b}}T^{}\ket{-\mathbf{p}_{a^{'}},m_{a^{'}},-\mathbf{p}_{b^{'} },m_{b^{'}}}  |^{2} \\
 \end{align}$$
-
+Here we just flip the label of $m$ however we want, since we have a sum outside. Next we need a rotation to bring $\ket{-\mathbf{p}_{a^{}},-\mathbf{p}_{b^{}}}\rightarrow \ket{\mathbf{p}_{a},\mathbf{p}_{b}}$. It's always possible to choose such a rotation, so that $\ket{-\mathbf{p}_{a^{'}},-\mathbf{p}_{b^{'}}}\rightarrow \ket{\mathbf{p}_{a^{'}},\mathbf{p}_{b^{'}}}$ is achieved as well. We choose the quantization axis to be the rotation axis, so that the spin state doesn't get mixed. Suppress spin states to write:
+$$\begin{align}
+|\bra{-\mathbf{p}_{a},-\mathbf{p}_{b}} T \ket{-\mathbf{p}_{a^{'}},-\mathbf{p}_{b^{'}}}  | & = |\bra{R\mathbf{p}_{a^{}},R\mathbf{p}_{b^{}}} T\ket{R\mathbf{p}_{a^{'}},R\mathbf{p}_{b^{'}}} | \\
+ & = |\bra{\mathbf{p}_{a^{}},\mathbf{p}_{b^{}}}R^{-1}T R \ket{\mathbf{p}_{a^{'}},\mathbf{p}_{b^{'}}}  | 
+\end{align}$$
+This is because rotation would at most change the state it self and spit out a phase factor, which is ignored after we take the modulus. We also have:
+$$\begin{align}
+R^{-1}TR= T
+\end{align}$$
+This is because $$R^{-1}\mathcal{H}(t,\mathbf{x})R= \mathcal{H}(t,R^{-1}\mathbf{x}R) $$And in $T$, we integrate over the entire $\mathbb{R}^{3}$, which doesn't make a difference by a change of variable. Then:
+$$\sum_{m_{a},m_{b},m_{a^{'}},m_{b^{'}}}|\langle \mathbf{p}_{a^{'}}, m_{a^{'}},\mathbf{p}_{b^{'}},m_{b^{'}}| T \ket{\mathbf{p}_{ar},m_{a},\mathbf{p}_{b},m_{b}}|^{2}=\sum_{m_{a},m_{b},m_{a^{'}},m_{b^{'}}}|\bra{\mathbf{p}_{a^{}},m_{a^{}},\mathbf{p}_{b^{}},m_{b^{}}}R^{-1}T R \ket{\mathbf{p}_{a^{'}},m_{a^{'}},\mathbf{p}_{b^{'}},m_{b^{'}}}  |^{2} $$
+Since $T\propto \mathcal{M}$, we have:
+$$\sum_{m_{a},m_{b},m_{a^{'}},m_{b^{'}}}|\langle \mathbf{p}_{a^{'}}, m_{a^{'}},\mathbf{p}_{b^{'}},m_{b^{'}}| \mathcal{M} \ket{\mathbf{p}_{ar},m_{a},\mathbf{p}_{b},m_{b}}|^{2}=\sum_{m_{a},m_{b},m_{a^{'}},m_{b^{'}}}|\bra{\mathbf{p}_{a^{}},m_{a^{}},\mathbf{p}_{b^{}},m_{b^{}}}R^{-1}\mathcal{M} R \ket{\mathbf{p}_{a^{'}},m_{a^{'}},\mathbf{p}_{b^{'}},m_{b^{'}}}  |^{2} $$
+Then:
+$$\begin{align}
+\frac{\frac{d\sigma}{d\Omega^{'}}(a+b\rightarrow a^{'}+b^{'})}{ \frac{d\sigma}{d\Omega}(a^{'}+b^{'}\rightarrow a+b) }= \frac{|\mathbf{k}^{'}|^{2}(2s_{a^{'}}+1)(2s_{b^{'}}+1) }{|\mathbf{k}|^{2}(2s_{a}+1)(2s_{b}+1)}
+\end{align}$$
