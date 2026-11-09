@@ -3,7 +3,7 @@
 
 We first evaluate:
 $$\begin{align}
- \bra{0} \psi(x)\bar{\psi}(y)\ket{0}  & = \int \frac{d^{3}p}{(2\pi)^{3}} \frac{1}{\sqrt{ 2E_{\mathbf{p}} }} \frac{d^{3}q}{(2\pi)^{3}} \frac{1}{\sqrt{ 2E_{\mathbf{q}} }}\sum_{s,r}\bra{0} (a^{s}_{\mathbf{p}}u^{s}(p)e^{-ip\cdot x}+(b^{\dagger}_{\mathbf{p}})^{s}v^{s}(p)e^{ip\cdot x})((a^{\dagger}_{\mathbf{q}})^{r}\bar{u}^{r}(q)e^{ip\cdot y}+b^{r}_{\mathbf{q}}\bar{v}^{r}(q)e^{-ip\cdot y})\ket{0}  \\
+ \bra{0} \psi(x)\bar{\psi}(y)\ket{0}  & = \int \frac{d^{3}p}{(2\pi)^{3}} \frac{1}{\sqrt{ 2E_{\mathbf{p}} }} \frac{d^{3}q}{(2\pi)^{3}} \frac{1}{\sqrt{ 2E_{\mathbf{q}} }}\sum_{s,r}\bra{0} (a^{s}_{\mathbf{p}}u^{s}(p)e^{-ip\cdot x}+(b^{\dagger}_{\mathbf{p}})^{s}v^{s}(p)e^{ip\cdot x})((a^{\dagger}_{\mathbf{q}})^{r}\bar{u}^{r}(q)e^{ip\cdot y}+b^{r}_{\mathbf{q}}\bar{v}^{r}(q)e^{-iq\cdot y})\ket{0}  \\
  & = \int \frac{d^{3}p}{(2\pi)^{3}} \frac{1}{\sqrt{ 2E_{\mathbf{p}} }} \frac{d^{3}q}{(2\pi)^{3}} \frac{1}{\sqrt{ 2E_{\mathbf{q}} }}\sum_{s,r} \bra{0} a^{s}_{\mathbf{p}}(a^{\dagger}_{\mathbf{q}})^{r}u^{s}(p)\bar{u}^{r}(q)e^{-ip\cdot x+iq\cdot y} \ket{0}  \\
  & = \int \frac{d^{3}p}{(2\pi)^{3}} \frac{1}{\sqrt{ 2E_{\mathbf{p}} }} \frac{d^{3}q}{(2\pi)^{3}} \frac{1}{\sqrt{ 2E_{\mathbf{q}} }}\sum_{s,r} (2\pi)^{3}\delta(\mathbf{p}-\mathbf{q})\delta^{s r} u^{s}(p)\bar{u}^{r}(q)e^{-ip\cdot x+iq\cdot y} \\
  & = \int \frac{d^{3}p}{(2\pi)^{{3}}} \frac{1}{ 2E_{\mathbf{p}} }\sum_{s} u^{s}(p)\bar{u}^{s}(p)e^{-ip\cdot(x-y)} \\
@@ -13,7 +13,7 @@ $$\begin{align}
 \end{align}$$
 Similarly:
 $$\begin{align}
- \bra{0} \bar{\psi}(y){\psi}(x)\ket{0}  & = \int \frac{d^{3}p}{(2\pi)^{3}} \frac{1}{\sqrt{ 2E_{\mathbf{p}} }} \frac{d^{3}q}{(2\pi)^{3}} \frac{1}{\sqrt{ 2E_{\mathbf{q}} }}\sum_{s,r}\bra{0}((a^{\dagger}_{\mathbf{q}})^{r}\bar{u}^{r}(q)e^{ip\cdot y}+b^{r}_{\mathbf{q}}\bar{v}(q)e^{-ip\cdot y}) (a^{s}_{\mathbf{p}}u^{s}(p)e^{-ip\cdot x}+(b^{\dagger}_{\mathbf{p}})^{s}v^{s}(p)e^{ip\cdot x})\ket{0}  \\
+ \bra{0} \bar{\psi}(y){\psi}(x)\ket{0}  & = \int \frac{d^{3}p}{(2\pi)^{3}} \frac{1}{\sqrt{ 2E_{\mathbf{p}} }} \frac{d^{3}q}{(2\pi)^{3}} \frac{1}{\sqrt{ 2E_{\mathbf{q}} }}\sum_{s,r}\bra{0}((a^{\dagger}_{\mathbf{q}})^{r}\bar{u}^{r}(q)e^{iq\cdot y}+b^{r}_{\mathbf{q}}\bar{v}(q)e^{-iq\cdot y}) (a^{s}_{\mathbf{p}}u^{s}(p)e^{-ip\cdot x}+(b^{\dagger}_{\mathbf{p}})^{s}v^{s}(p)e^{ip\cdot x})\ket{0}  \\
  & = \int \frac{d^{3}p}{(2\pi)^{3}} \frac{1}{\sqrt{ 2E_{\mathbf{p}} }} \frac{d^{3}q}{(2\pi)^{3}} \frac{1}{\sqrt{ 2E_{\mathbf{q}} }}\sum_{s,r} \bra{0} b^{r}_{\mathbf{q}}(b^{\dagger}_{\mathbf{p}})^{s}v^{r}(q)\bar{v}^{s}(p)e^{-ip\cdot y+iq\cdot x} \ket{0}  \\
  & = \int \frac{d^{3}p}{(2\pi)^{3}} \frac{1}{\sqrt{ 2E_{\mathbf{p}} }} \frac{d^{3}q}{(2\pi)^{3}} \frac{1}{\sqrt{ 2E_{\mathbf{q}} }}\sum_{s,r} (2\pi)^{3}\delta(\mathbf{p}-\mathbf{q})\delta^{s r} v^{r}(q)\bar{v}^{s}(p)e^{-ip\cdot y+iq\cdot x} \\
  & = \int \frac{d^{3}p}{(2\pi)^{{3}}} \frac{1}{ 2E_{\mathbf{p}} }\sum_{s} v^{s}(p)\bar{v}^{s}(p)e^{-ip\cdot(y-x)} \\
@@ -106,7 +106,7 @@ $$\begin{align}
 \int \frac{dp^{0}}{2\pi} \frac{i}{p^{2}-m^{2}+i\epsilon}e^{-ip\cdot(x-y)} & = \int \frac{dp^{0}}{2\pi} \frac{i}{2E_{\mathbf{p}}}\left[  \frac{1}{p^{0}-E_{\mathbf{p}}+i\epsilon}- \frac{1}{p^{0}+E_{\mathbf{p}}-i\epsilon} \right]e^{-ip\cdot(x-y)} \\
  & = \int \frac{dp^{0}}{2\pi} \frac{i}{2E_{\mathbf{p}}} \frac{1}{p^{0}-E_{\mathbf{p}}+i\epsilon}e^{-ip\cdot(x-y)} \\
  & = \frac{1}{2\pi} \frac{i}{2E_{\mathbf{p}}}e^{i\mathbf{p}\cdot(\mathbf{x}-\mathbf{y})}e^{-iE_{\mathbf{p}}(x^{0}-y^{0})} (-2\pi i) \\
- & = \frac{1}{2E_{\mathbf{p}}}e^{-ip\cdot(x-y)}\text{ where }p\text{ lies on the mass sheel}
+ & = \frac{1}{2E_{\mathbf{p}}}e^{-ip\cdot(x-y)}\text{ where }p\text{ lies on the mass shell}
 \end{align}$$
 So:
 $$\begin{align}
@@ -133,24 +133,32 @@ $$S_{F}= (i\rlap{/}\partial+m)(\theta(x^{0}-y^{0})D_{W}(x-y)+\theta(y^{0}-x^{0})
 # Problem 2
 ## (a)
 
-![[be1a6d1e2ffed29817f6207c40983fe0.jpg|centering|300]]
+![[c08f9947d3550b812383643cf5ff38e5.jpg|centering|400]]
 ## (b)
+
+For the first order term, we have:
+$$\begin{align}
+(-i\lambda)\int d^{4}x e^{-ip_{1}\cdot x}e^{-ip_{2}\cdot x}e^{ip_{3}\cdot x}e^{ip_{4}\cdot x}= (-i\lambda)(2\pi)^{4}\delta(p_{3}+p_{4}-p_{1}-p_{2})
+\end{align}$$
 
 For the s-channel-like Feynman diagram, we count that $S=2$. Then the k-space propagator is:
 $$\begin{align}
- \frac{(-i\lambda)^{2}}{2} \int d^{4}x d^{4}y{e^{-ip_{1}\cdot x}} {e^{-ip_{2}\cdot x}} {e^{ip_{3}\cdot y}} {e^{ip_{4}\cdot y}}D^{2}_{F}(y-x) & = \int d^{4}x d^{4}y \frac{d^{4}p}{(2\pi)^{4}  } \frac{d^{4}q}{(2\pi)^{4}} \frac{i}{p^{2}-m^{2}+i\epsilon} \frac{i}{q^{2}-m^{2}+i\epsilon}\exp(-ip_{1}\cdot x-ip_{2}\cdot x+ip_{3}\cdot y+ip_{4}\cdot y-ip\cdot(y-x)-iq\cdot(y-x)) \\
+ \frac{(-i\lambda)^{2}}{2} \int d^{4}x d^{4}y{e^{-ip_{1}\cdot x}} {e^{-ip_{2}\cdot x}} {e^{ip_{3}\cdot y}} {e^{ip_{4}\cdot y}}D^{2}_{F}(y-x) & = \int d^{4}x d^{4}y \frac{d^{4}p}{(2\pi)^{4}  } \frac{d^{4}q}{(2\pi)^{4}} \frac{i}{p^{2}-m^{2}+i\epsilon} \frac{i}{q^{2}-m^{2}+i\epsilon}\exp(-ip_{1}\cdot x-ip_{2}\cdot x+ip_{3}\cdot y+ip_{4}\cdot y \\
+ & -ip\cdot(y-x)-iq\cdot(y-x)) \\
  & = \frac{(-i\lambda)^{2}}{2}\int {d^{4}p}{d^{4}q} \frac{i}{p^{2}-m^{2}+i\epsilon} \frac{i}{q^{2}-m^{2}+i\epsilon}\delta(-p_{1}-p_{2}+p+q)\delta(p_{3}+p_{4}-p-q) \\
  & = \frac{(-i\lambda)^{2}}{2}\delta(p_{3}+p_{4}-p_{1}-p_{2}) \int {d^{4}p}{d^{4}q} \frac{i}{p^{2}-m^{2}+i\epsilon} \frac{i}{q^{2}-m^{2}+i\epsilon}\delta(-p_{1}-p_{2}+p+q) \\
- & =\frac{(-i\lambda)^{2}}{2} \delta(p_{3}+p_{4}-p_{1}-p_{2})\int d^{4}p \frac{i}{p^{2}-m^{2}+i\epsilon} \frac{i}{(p_{1}+p_{2}-p)^{2}-m^{2}+i\epsilon}
+ & =\frac{(-i\lambda)^{2}}{2} \delta(p_{3}+p_{4}-p_{1}-p_{2})\int d^{4}p \frac{i}{p^{2}-m^{2}+i\epsilon} \frac{i}{(p_{1}+p_{2}-p)^{2}-m^{2}+i\epsilon} \\
+ & = \frac{(-i\lambda)^{2}}{2}(2\pi)^{4}\delta(p_{3}+p_{4}-p_{1}-p_{2})\int \frac{d^{4}p}{(2\pi)^{4}} \frac{i}{p^{2}-m^{2}+i\epsilon} \frac{i}{(p_{1}+p_{2}-p)^{2}-m^{2}+i\epsilon}
 \end{align}$$
 For the t-channel-like Feynman diagram, the k-space propagator is:
 $$\begin{align}
 \frac{(-i\lambda)^{2}}{2}\int d^{4}x d^{4}y e^{-ip_{1}\cdot x}e^{ip_{3}\cdot x}e^{-ip_{2}\cdot y}e^{ip_{4}\cdot y}D_{F}^{2}(y-x) & = \frac{(-i\lambda)^{2}}{2}\int d^{4}p d^{4}q \frac{i}{p^{2}-m^{2}+i\epsilon} \frac{i}{q^{2}-m^{2}+i\epsilon}\delta(-p_{1}+p_{3}+p+q)\delta(-p_{2}+p_{4}-p-q) \\
- & = \frac{(-i\lambda)^{2}}{2}\delta(p_{3}+p_{4}-p_{1}-p_{2})\int d^{4}p \frac{i}{p^{2}-m^{2}+i\epsilon} \frac{i}{(p_{1}-p_{3}-p)^{2}-m^{2}+i\epsilon}
+ & = \frac{(-i\lambda)^{2}}{2}\delta(p_{3}+p_{4}-p_{1}-p_{2})\int d^{4}p \frac{i}{p^{2}-m^{2}+i\epsilon} \frac{i}{(p_{1}-p_{3}-p)^{2}-m^{2}+i\epsilon} \\
+ & = \frac{(-i\lambda)^{2}}{2}(2\pi)^{4}\delta(p_{3}+p_{4}-p_{1}-p_{2})\int \frac{d^{4}p}{(2\pi)^{4}}  \frac{i}{p^{2}-m^{2}+i\epsilon} \frac{i}{(p_{1}-p_{3}-p)^{2}-m^{2}+i\epsilon}
 \end{align}$$
 Similarly, For the u-channel-like Feynman diagram, the k-space propagator is:
 $$\begin{align}
-\frac{(-i\lambda)^{2}}{2}\int d^{4}x d^{4}y e^{-ip_{1}\cdot x} e^{ip_{4}\cdot x}e^{-ip_{2}\cdot y}e^{ip_{3}\cdot y}D^{2}_{F}(y-x)= \frac{(-i\lambda)^{2}}{2}\delta(p_{3}+p_{4}-p_{1}-p_{2})\int d^{4}p \frac{i}{p^{2}-m^{2}+i\epsilon} \frac{i}{(p_{1}-p_{4}-p)^{2}-m^{2}+i\epsilon}
+\frac{(-i\lambda)^{2}}{2}\int d^{4}x d^{4}y e^{-ip_{1}\cdot x} e^{ip_{4}\cdot x}e^{-ip_{2}\cdot y}e^{ip_{3}\cdot y}D^{2}_{F}(y-x)= \frac{(-i\lambda)^{2}}{2}(2\pi)^{4}\delta(p_{3}+p_{4}-p_{1}-p_{2})\int \frac{d^{4}p}{(2\pi)^{4}} \frac{i}{p^{2}-m^{2}+i\epsilon} \frac{i}{(p_{1}-p_{4}-p)^{2}-m^{2}+i\epsilon}
 \end{align}$$
 
 
@@ -197,10 +205,10 @@ Similarly:
 $$\begin{align}
 \frac{d\sigma}{d\Omega}(a^{'}+b^{'}\rightarrow a+b)= \sum_{m_{a},m_{b},m_{a^{'}},m_{b^{'}}} \frac{1 }{(2s^{'}_{a}+1)(2s ^{'}_{b}+1)} |\mathcal{M}(a^{'}+b^{'}\rightarrow a+b) |^{2} \frac{|\mathbf{k}^{}|}{|\mathbf{k}^{'}|}
 \end{align}$$
-We know that:
+We know that the sum of T-matrix elements is (here it is the T-matrix, not the time reversal operator. Time reversal operator is $\mathcal{T}$.):
 $$\begin{align}
-\sum_{m_{a},m_{b},m_{a^{'}},m_{b^{'}}}|\langle \mathbf{p}_{a^{'}}, m_{a^{'}},\mathbf{p}_{b^{'}},m_{b^{'}}| T \ket{\mathbf{p}_{a},m_{a},\mathbf{p}_{b},m_{b}}|^{2} & =\sum_{m_{a},m_{b},m_{a^{'}},m_{b^{'}}}| \bra{-\mathbf{p}_{a^{'}},-m_{a^{'}},-\mathbf{p}_{b^{'} },m_{b^{'}}}\mathcal{T}^{} T \mathcal{T}^{-1}\ket{-\mathbf{p}_{a},-m_{a},-\mathbf{p}_{b},-m_{b}}  |^{2}\\
- & =   \sum_{m_{a},m_{b},m_{a^{'}},m_{b^{'}}}|\bra{-\mathbf{p}_{a^{'}},-m_{a^{'}},-\mathbf{p}_{b^{'} },m_{b^{'}}}T^{\dagger}\ket{-\mathbf{p}_{a},-m_{a},-\mathbf{p}_{b},-m_{b}}  |^{2}\\
+\sum_{m_{a},m_{b},m_{a^{'}},m_{b^{'}}}|\langle \mathbf{p}_{a^{'}}, m_{a^{'}},\mathbf{p}_{b^{'}},m_{b^{'}}| T \ket{\mathbf{p}_{a},m_{a},\mathbf{p}_{b},m_{b}}|^{2} & =\sum_{m_{a},m_{b},m_{a^{'}},m_{b^{'}}}| \bra{-\mathbf{p}_{a^{'}},-m_{a^{'}},-\mathbf{p}_{b^{'} },-m_{b^{'}}}\mathcal{T}^{} T \mathcal{T}^{-1}\ket{-\mathbf{p}_{a},-m_{a},-\mathbf{p}_{b},-m_{b}}  |^{2}\\
+ & =   \sum_{m_{a},m_{b},m_{a^{'}},m_{b^{'}}}|\bra{-\mathbf{p}_{a^{'}},-m_{a^{'}},-\mathbf{p}_{b^{'} },-m_{b^{'}}}T^{\dagger}\ket{-\mathbf{p}_{a},-m_{a},-\mathbf{p}_{b},-m_{b}}  |^{2}\\
  & = \sum_{m_{a},m_{b},m_{a^{'}},m_{b^{'}}}|\bra{-\mathbf{p}_{a},-m_{a},-\mathbf{p}_{b},-m_{b}}T^{}\ket{-\mathbf{p}_{a^{'}},-m_{a^{'}},-\mathbf{p}_{b^{'} },-m_{b^{'}}}  |^{2} \\
  & = \sum_{m_{a},m_{b},m_{a^{'}},m_{b^{'}}}|\bra{-\mathbf{p}_{a},m_{a},-\mathbf{p}_{b},m_{b}}T^{}\ket{-\mathbf{p}_{a^{'}},m_{a^{'}},-\mathbf{p}_{b^{'} },m_{b^{'}}}  |^{2} \\
 \end{align}$$
@@ -216,7 +224,7 @@ R^{-1}TR= T
 This is because $$R^{-1}\mathcal{H}(t,\mathbf{x})R= \mathcal{H}(t,R^{-1}\mathbf{x}R) $$And in $T$, we integrate over the entire $\mathbb{R}^{3}$, which doesn't make a difference by a change of variable. Then:
 $$\sum_{m_{a},m_{b},m_{a^{'}},m_{b^{'}}}|\langle \mathbf{p}_{a^{'}}, m_{a^{'}},\mathbf{p}_{b^{'}},m_{b^{'}}| T \ket{\mathbf{p}_{ar},m_{a},\mathbf{p}_{b},m_{b}}|^{2}=\sum_{m_{a},m_{b},m_{a^{'}},m_{b^{'}}}|\bra{\mathbf{p}_{a^{}},m_{a^{}},\mathbf{p}_{b^{}},m_{b^{}}}R^{-1}T R \ket{\mathbf{p}_{a^{'}},m_{a^{'}},\mathbf{p}_{b^{'}},m_{b^{'}}}  |^{2} $$
 Since $T\propto \mathcal{M}$, we have:
-$$\sum_{m_{a},m_{b},m_{a^{'}},m_{b^{'}}}|\langle \mathbf{p}_{a^{'}}, m_{a^{'}},\mathbf{p}_{b^{'}},m_{b^{'}}| \mathcal{M} \ket{\mathbf{p}_{ar},m_{a},\mathbf{p}_{b},m_{b}}|^{2}=\sum_{m_{a},m_{b},m_{a^{'}},m_{b^{'}}}|\bra{\mathbf{p}_{a^{}},m_{a^{}},\mathbf{p}_{b^{}},m_{b^{}}}R^{-1}\mathcal{M} R \ket{\mathbf{p}_{a^{'}},m_{a^{'}},\mathbf{p}_{b^{'}},m_{b^{'}}}  |^{2} $$
+$$\sum_{m_{a},m_{b},m_{a^{'}},m_{b^{'}}}|\langle \mathbf{p}_{a^{'}}, m_{a^{'}},\mathbf{p}_{b^{'}},m_{b^{'}}| \mathcal{M} \ket{\mathbf{p}_{a},m_{a},\mathbf{p}_{b},m_{b}}|^{2}=\sum_{m_{a},m_{b},m_{a^{'}},m_{b^{'}}}|\bra{\mathbf{p}_{a^{}},m_{a^{}},\mathbf{p}_{b^{}},m_{b^{}}}R^{-1}\mathcal{M} R \ket{\mathbf{p}_{a^{'}},m_{a^{'}},\mathbf{p}_{b^{'}},m_{b^{'}}}  |^{2} $$
 Then:
 $$\begin{align}
 \frac{\frac{d\sigma}{d\Omega^{'}}(a+b\rightarrow a^{'}+b^{'})}{ \frac{d\sigma}{d\Omega}(a^{'}+b^{'}\rightarrow a+b) }= \frac{|\mathbf{k}^{'}|^{2}(2s_{a^{'}}+1)(2s_{b^{'}}+1) }{|\mathbf{k}|^{2}(2s_{a}+1)(2s_{b}+1)}
