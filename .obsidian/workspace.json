@@ -516,12 +516,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Notes/申请.md",
+                "file": "Experimental/Ratio Transformer.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "申请"
+              "title": "Ratio Transformer"
             }
           },
           {
@@ -4357,7 +4357,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "申请",
+                "query": "ratio transformer",
                 "matchingCase": true,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -4373,8 +4373,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200.5,
-    "collapsed": true
+    "width": 200.5
   },
   "right": {
     "id": "9003d078f8dbc4ed",
@@ -4480,6 +4479,7 @@
   },
   "active": "3a9cc6faa6aaa95f",
   "lastOpenFiles": [
+    "Notes/申请.md",
     "Pictures/Pasted image 20261110112615.png",
     "Pictures/Pasted image 20261110112018.png",
     "Pictures/Pasted image 20261110112003.png",
@@ -4490,11 +4490,9 @@
     "Pictures/Pasted image 20261110105213.png",
     "Pictures/Pasted image 20261110104558.png",
     "Pictures/Pasted image 20261110104239.png",
-    "Pictures/Pasted image 20261110103942.png",
     "Homework/Physics 402/Physics 402 homework 3.md",
     "Homework/Physics 402/Physics 402 homework 2.md",
     "Homework/Physics 513/Physics 513 homework 9.md",
-    "Notes/申请.md",
     "Notes/Feynman图.md",
     "Homework/Physics 513/Physics 513 homework 8.md",
     "Notes/散射矩阵.md",
