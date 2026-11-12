@@ -24,3 +24,19 @@ $$\begin{align}
 \end{align}$$
 ## (a2)
 
+Let:
+$$\mathcal{L}_{\text{int}}=- \frac{\lambda}{4}(\Phi^{i}\Phi^{i})^{2}$$
+We know that the coefficient in front of $\Phi^{i}\Phi^{j}\Phi^{k}\Phi^{l}$ is $\frac{\partial^{4}}{\partial \Phi_{i}\partial \Phi_{j}\partial \Phi_{k}\partial \Phi_{l}}\left( - \frac{\lambda}{4}(\Phi^{i}\Phi^{i})^{2} \right)$. We compute:
+$$\begin{align}
+\frac{\partial}{\partial \Phi^{i}} (\Phi^{n}\Phi^{n})^{2} & = \frac{\partial}{\partial \Phi^{i}}(\Phi^{n}\Phi^{n}\Phi^{m}\Phi^{m}) \\
+ & = 2\Phi^{i}(\Phi^{m})^{2}+ (\Phi^{n})^{2} 2\Phi^{i} \\
+ & = 4\Phi^{i}(\Phi^{n})^{2}
+\end{align}$$
+Then:
+$$\begin{align}
+ & \frac{\partial^{2}}{\partial \Phi^{j}\partial \Phi^{i}} (\Phi^{n}\Phi^{n})^{2} = 4\delta^{ij}(\Phi^{n})^{2}+ 8\Phi^{n}\Phi^{j} \\
+\implies &  \frac{\partial^{3}}{\partial \Phi^{k}\partial \Phi^{j}\partial \Phi^{i}}(\Phi^{n}\Phi^{n})^{2}= 8\delta^{ij}\Phi^{k}+8\Phi^{k}\Phi^{j}+8\Phi^{n}\delta^{jk} \\
+\implies & \frac{\partial^{4}}{\partial \Phi^{l}\partial \Phi^{k}\partial \Phi^{j}\partial \Phi^{i}}(\Phi^{n}\Phi^{n})^{2}  = 8\delta^{ij}\delta^{kl}+8\delta^{kl}\Phi^{j}+8\Phi^{k}\delta^{jl}+8\Phi^{l}\delta^{jk}
+\end{align}$$
+
+
