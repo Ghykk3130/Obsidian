@@ -4,5 +4,6 @@
     "Image Align",
     "right-align-math",
     "Image adjustment"
-  ]
+  ],
+  "showRibbon": true
 }

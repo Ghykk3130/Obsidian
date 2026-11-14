@@ -553,6 +553,18 @@
             }
           },
           {
+            "id": "2cd5837a4e1d3b4f",
+            "type": "leaf",
+            "state": {
+              "type": "release-notes",
+              "state": {
+                "currentVersion": "1.15.1"
+              },
+              "icon": "lucide-book-up",
+              "title": "Release Notes 1.15.1"
+            }
+          },
+          {
             "id": "6e2a2579733358f4",
             "type": "leaf",
             "state": {
@@ -4331,7 +4343,7 @@
             }
           }
         ],
-        "currentTab": 38
+        "currentTab": 39
       }
     ],
     "direction": "vertical"
@@ -4505,7 +4517,7 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "0bafbda78dfca4a8",
+  "active": "2cd5837a4e1d3b4f",
   "lastOpenFiles": [
     "Notes/Yukawa理论.md",
     "Homework/Physics 513/Physics 513 homework 10.md",
