@@ -251,7 +251,7 @@ $$\begin{align}
 \bra{p^{'}} iT \ket{p}  & = -ie\int d^{4}xA_{\mu}e^{-i(p-p^{'})\cdot x}\bar{u}(p^{'})\gamma^{\mu}u(p) \\
  & = -ie \bar{u}(p^{'})\gamma^{\mu}u(p)\tilde{A}_{\mu}(p^{'}-p),\ \tilde{A}_{\mu}(q)=\int d^{4}x e^{iq\cdot x}A_{\mu}(x)
 \end{align}$$
-## (b)
+## (b1)
 
 We first assume an incoming wave:
 $$\begin{align}
@@ -279,6 +279,69 @@ $$\begin{align}
 Then:
 $$\begin{align}
  & \int \frac{d^{3}p_{1}}{(2\pi)^{3}} \frac{d^{3}p_{2}}{(2\pi)^{3}} \frac{1}{\sqrt{ 2E_{\mathbf{p}_{1}} }} \frac{1}{\sqrt{ 2E_{\mathbf{p}_{2}} }} \bra{\mathbf{k}} iT \ket{\mathbf{p}_{1}} \bra{\mathbf{p}_{2}} (iT)^{\dagger}\ket{\mathbf{k}} A(\mathbf{p}_{1})A^{*}(\mathbf{p}_{2})(2\pi)^{2}\delta(\mathbf{p}^{\perp}_{1}-\mathbf{p}^{\perp}_{2}) \\
-  =  & \int \frac{d^{3}p_{1}}{(2\pi)^{3}} \frac{dp_{2}^{\parallel}}{(2\pi)^{3}}(2\pi)^{2} \frac{1}{\sqrt{ 2E_{\mathbf{p}_{1}} }} \frac{1}{\sqrt{ 2E_{\mathbf{p}_{2}} }}\bra{\mathbf{k}} iT \ket{\mathbf{p }_{1}}\bra{\mathbf{p}_{2}} (iT)^{\dagger}\ket{\mathbf{k}} A(\mathbf{p}_{1})A^{*}(\mathbf{p}_{2})\text{ with }\mathbf{p}_{1} ^{\perp}=\mathbf{p}_{2}^{\perp}
+  =  & \int \frac{d^{3}p_{1}}{(2\pi)^{3}} \frac{dp_{2}^{\parallel}}{(2\pi)^{3}}(2\pi)^{2} \frac{1}{\sqrt{ 2E_{\mathbf{p}_{1}} }} \frac{1}{\sqrt{ 2E_{\mathbf{p}_{2}} }}\bra{\mathbf{k}} iT \ket{\mathbf{p }_{1}}\bra{\mathbf{p}_{2}} (iT)^{\dagger}\ket{\mathbf{k}} A(\mathbf{p}_{1})A^{*}(\mathbf{p}_{2})\text{ with }\mathbf{p}_{1} ^{\perp}=\mathbf{p}_{2}^{\perp} \\
+ = & \int \frac{d^{3}p_{1}}{(2\pi)^{3}} \frac{dp_{2}^{\parallel}}{(2\pi)^{3}}(2\pi)^{2} \frac{1}{\sqrt{ 2E_{\mathbf{p}_{1}} }} \frac{1}{\sqrt{ 2E_{\mathbf{p}_{2}} }}(2\pi)i\mathcal{M}(p_{1}\rightarrow k)\delta(E_{\mathbf{k}}-E_{\mathbf{p}_{1}})(2\pi)(-i)\mathcal{M}(p_{2}\rightarrow k) \delta(E_{\mathbf{k}}-E_{\mathbf{p}_{2}}) A(\mathbf{p}_{1})A^{*}(\mathbf{p}_{2}) \\
+ = &  \int \frac{d^{3}p_{1}}{(2\pi)^{3}} \frac{dp_{2}^{\parallel}}{(2\pi)^{3}}(2\pi)^{4} \frac{1}{\sqrt{ 2E_{\mathbf{p}_{1}} }} \frac{1}{\sqrt{ 2E_{\mathbf{p}_{2}} }}\mathcal{M}\mathcal{M}^{*}\delta(E_{\mathbf{k}}-E_{\mathbf{p}_{1}})A(\mathbf{p}_{1})A^{*}(\mathbf{p}_{2})\left[  \frac{\delta(p_{2}^{\parallel}-p_{1}^{\parallel})}{p_{1}^{\parallel} / E_{\mathbf{k}}}+ \frac{\delta(p_{2}^{\parallel}+p_{1}^{\parallel})}{-p_{1}^{\parallel} / E_{\mathbf{k}}}  \right]
 \end{align}$$
+Assume that $A(\mathbf{p})$ is strongly peaked around $\mathbf{p}_{i}$. Then:
+$$\begin{align}
+ & \int \frac{d^{3}p_{1}}{(2\pi)^{3}} \frac{dp_{2}^{\parallel}}{(2\pi)^{3}}(2\pi)^{4} \frac{1}{\sqrt{ 2E_{\mathbf{p}_{1}} }} \frac{1}{\sqrt{ 2E_{\mathbf{p}_{2}} }}\mathcal{M}\mathcal{M}^{*}\delta(E_{\mathbf{k}}-E_{\mathbf{p}_{1}})A(\mathbf{p}_{1})A^{*}(\mathbf{p}_{2})\left[  \frac{\delta(p_{2}^{\parallel}-p_{1}^{\parallel})}{p_{1}^{\parallel} / E_{\mathbf{k}}}+ \frac{\delta(p_{2}^{\parallel}+p_{1}^{\parallel})}{-p_{1}^{\parallel} / E_{\mathbf{k}}}  \right] \\
+ = &  \int \frac{d^{3}p_{1}}{(2\pi)^{3}} \frac{dp_{2}^{\parallel}}{(2\pi)^{3}}(2\pi)^{4} \frac{1}{\sqrt{ 2E_{\mathbf{p}_{1}} }} \frac{1}{\sqrt{ 2E_{\mathbf{p}_{2}} }}\mathcal{M}\mathcal{M}^{*}\delta(E_{\mathbf{k}}-E_{\mathbf{p}_{1}})A(\mathbf{p}_{1})A^{*}(\mathbf{p}_{2})  \frac{\delta(p_{2}^{\parallel}-p_{1}^{\parallel})}{p_{1}^{\parallel} / E_{\mathbf{k}}}  \\
+ = &  \int \frac{d^{3}p_{1}}{(2\pi)^{3}} (2\pi) \frac{1}{ 2E_{\mathbf{p}_{1}} }|\mathcal{M} |^{2} |A(\mathbf{p}_{1})|^{2} \frac{1}{v_{1}^{\parallel}}\delta(E_{\mathbf{k}}-E_{\mathbf{p}_{1}})
+\end{align}$$
+Then also because that $A(\mathbf{p})$ is strongly peaked, we have:
+$$\begin{align}
+ & \int \frac{d^{3}p_{1}}{(2\pi)^{3}} (2\pi) \frac{1}{ 2E_{\mathbf{p}_{1}} }|\mathcal{M} |^{2} |A(\mathbf{p}_{1})|^{2} \frac{1}{v_{1}^{\parallel}}\delta(E_{\mathbf{k}}-E_{\mathbf{p}_{1}}) \\
+\approx & 2\pi \frac{1}{2E_{\mathbf{p}_{i}}} |\mathcal{M}(p_{i}\rightarrow k) |^{2} \frac{1}{v_{i}^{\parallel}}\delta(E_{\mathbf{k}}-E_{\mathbf{p}_{i}}) \int \frac{d^{3}p_{1}}{(2\pi)^{3}}|A(\mathbf{p}_{1})|^{2} 
+\end{align}$$
+The normalization of $A$ is obtained by setting:
+$$\begin{align}
+ & \left(\int \frac{d^{3}p^{'}}{(2\pi)^{3}}A(\mathbf{p}^{'}) a^{\dagger}_{\mathbf{p}^{'}}\ket{0}\right)^{\dagger}\left(\int \frac{d^{3}p}{(2\pi)^{3}}A(\mathbf{p}) a^{\dagger}_{\mathbf{p}}\ket{0}\right)^{}=1 \\
+\implies & \int \frac{d^{3}p^{'}}{(2\pi)^{3}} \frac{d^{3}p}{(2\pi)^{3}}A^{*}(\mathbf{p}^{'})A(\mathbf{p}) \bra{0} a_{\mathbf{p}^{'}}a_{\mathbf{p}}^{\dagger}\ket{0} =1 \\
+\implies & \int \frac{d^{3}p}{(2\pi)^{3}}|A(\mathbf{p}) |^{2}=1
+\end{align}$$
+Then:
+$$\begin{align}
+ & 2\pi \frac{1}{2E_{\mathbf{p}_{i}}} |\mathcal{M}(p_{i}\rightarrow k) |^{2} \frac{1}{v_{i}^{\parallel}} \delta(E_{\mathbf{k}}-E_{\mathbf{p}_{i}}) \int \frac{d^{3}p_{1}}{(2\pi)^{3}}|A(\mathbf{p}_{1})|^{2} \\
+= &  2\pi \frac{1}{2E_{\mathbf{p}_{i}}} |\mathcal{M} |^{2} \frac{1}{v^{\parallel}_{i}} \delta(E_{\mathbf{k}}-E_{\mathbf{p}_{i}})\\
+ = & 2\pi \frac{1}{2E_{\mathbf{p}_{i}}}|\mathcal{M}|^{2} \frac{1}{v_{i}}\delta(E_{\mathbf{k}}-E_{\mathbf{p}_{i}})
+\end{align}$$
+This is because we assume incoming $\mathbf{v}_{i}$ is parallel to the axis. Then:
+$$\begin{align}
+d\sigma & = \frac{d^{3}k}{(2\pi)^{3}} \frac{1}{2E_{\mathbf{k}}} 2\pi \frac{1}{2E_{\mathbf{p}_{i}}} |\mathcal{M}|^{2} \frac{1}{v_{i}} \delta(E_{\mathbf{k}}-E_{\mathbf{p}_{i}})\\
+ & = \frac{1}{v_{i}} \frac{1}{2E_{i}} \frac{d^{3}p_{f}}{(2\pi)^{3}} \frac{1}{2E_{f}}|\mathcal{M}|^{2} 2\pi\delta(E_{f}-E_{i})
+\end{align}$$
+In the last line, we switch to the notation in the problem, and rearrange the terms. 
+## (b2)
+
+We integrate:
+$$\begin{align}
+ & \sigma= \frac{1}{v_{i}} \frac{1}{2E_{i}} \int \frac{d\Omega dp_{f}p^{2}_{f}}{(2\pi)^{3}} \frac{1}{2E_{f}} |\mathcal{M} |^{2}2\pi\delta(E_{f}-E_{i}) \\
+\implies &  \frac{d\sigma}{d\Omega}= \frac{1}{v_{i}} \frac{1}{2E_{i}} \int_{0}^{\infty} \frac{dp_{f}}{(2\pi)^{3}}p^{2}_{f} \frac{1}{2E_{f}}|\mathcal{M} |^{2}2\pi\delta(E_{f}-E_{i}) \\
+ & \phantom{www}= \frac{1}{v_{i}} \frac{1}{2E_{i}} \int_{0}^{\infty} \frac{dp_{f}}{(2\pi)^{3}}  \frac{p^{2}_{f}}{2E_{f}}|\mathcal{M}|^{2}   \frac{\delta(|\mathbf{p}_{f}|=|\mathbf{p}_{i}|)}{|\mathbf{p}_{i} | /E_{i}}2\pi \\
+ & \phantom{www}= \frac{1}{v_{i}} \frac{|\mathbf{p}_{i}|}{2E_{i}} \frac{1}{2(2\pi)^{3}} |\mathcal{M}|^{2}    2\pi \\
+ & \phantom{www}= \frac{1}{16\pi^{2}}|\mathcal{M}|^{2}
+\end{align}$$
+## (c)
+
+We have the Fourier transform:
+$$\begin{align}
+\tilde{A}_{0} & = \int d^{3}r e^{i\mathbf{q}\cdot \mathbf{r}} \frac{Ze}{4\pi r}e^{-\epsilon r}
+\end{align}$$
+The $e^{-\epsilon r}$ is just for convergence. We compute:
+$$\begin{align}
+\int d^{3}r e^{i\mathbf{q}\cdot \mathbf{r}} \frac{e^{-\epsilon r}}{r} & = 2\pi \int r^{2} \sin \theta dr d\theta e^{iqr\cos \theta} \frac{e^{-\epsilon r}}{r} \\
+ & = (-2\pi) \int dr \frac{1}{iqr}(e^{-iqr}-e^{iqr}) \frac{e^{-\epsilon r}}{r} \\
+ & = \frac{2\pi}{iq}\int dr (e^{iqr}-e^{-iqr})e^{-\epsilon r} \\
+ & = \frac{2\pi}{iq}\left(  \frac{-1}{iq-\epsilon}- \frac{1}{iq+\epsilon} \right) \\
+ & = \frac{2\pi}{iq} \frac{-2}{iq}\text{ if we take }\epsilon\rightarrow 0 \\
+ & = \frac{4\pi}{q^{2}}
+\end{align}$$
+Then:
+$$\begin{align}
+\tilde{A}_{0}(\mathbf{q})= \frac{Ze}{|\mathbf{q}|^{2}}
+\end{align}$$
+
+
+
 
