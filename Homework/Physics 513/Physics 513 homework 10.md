@@ -175,4 +175,45 @@ i\mathcal{M} & = 2i\lambda\left[  \frac{s}{2\mu^{2}}+ \frac{t}{2\mu^{2}}+ \frac{
 \end{align}$$
 ## (d)
 
+Now:
+$$\begin{align}
+V & = \frac{1}{2}m^{2}\Phi^{i}\Phi^{i}+ \frac{\lambda}{4}(\Phi^{i}\Phi^{i})^{2}-a\Phi^{N}
+\end{align}$$
+We have:
+$$\begin{align}
+ & \frac{\partial V}{\partial \Phi^{j}}= (M^{2}+\lambda \Phi^{i}\Phi^{i})\Phi^{j}=0,\ j=1,\dots,N-1 \\
+ & \frac{\partial V}{\partial \Phi^{N}} = (m^{2}+\lambda \Phi^{i}\Phi^{i})\Phi^{N}-a=0
+\end{align}$$
+Know that $a\neq 0$. Then $m^{2}+\lambda \Phi^{i}\Phi^{i}\neq 0$. Then $\Phi^{j}=0$. Then $v^{2}=\Phi^{i}\Phi^{i}=\Phi^{N}\Phi^{N}$. We take $\Phi^{N}=v$. Then the second equation reduces to:
+$$\begin{align}
+(m^{2}+\lambda v^{2})v-a=0
+\end{align}$$
+We know that:
+$$\begin{align}
+\mathcal{L} & = \frac{1}{2}\partial_{\mu}\pi^{i}\partial^{\mu}\pi^{i}+ \frac{1}{2} \partial_{\mu}\sigma \partial^{\mu}\sigma- \frac{1}{2}m^{2}\pi^{i}\pi^{i}- \frac{1}{2}m^{2}(v+\sigma)^{2}- \frac{\lambda}{4}(\pi^{i}\pi^{i}(v+\sigma)^{2})^{2} -a(v+\sigma)\\
+ & = \frac{1}{2}\partial_{\mu}\pi^{i}\partial^{\mu}\pi^{i}- \frac{1}{2}m^{2}\pi^{i}\pi^{i}- \frac{\lambda}{4}(\pi^{i}\pi^{i})^{2}- \frac{\lambda}{2}\pi^{i}\pi^{i}(v^{2}+\sigma^{2}+2v\sigma)+  \\
+ & \frac{1}{2}\partial_{\mu}\sigma \partial^{\mu}\sigma- \frac{1}{2}m^{2}(v^{2}+\sigma^{2}+2v\sigma)- \frac{\lambda}{4}(v+\sigma)^{4}+a(v+\sigma) \\
+  & = \left[   \frac{1}{2}\partial_{\mu}\pi^{i}\partial^{\mu}\pi^{i}- \frac{1}{2}(m^{2}+\lambda v^{2})\pi^{i}\pi^{i}- \frac{\lambda}{4}(\pi^{i}\pi^{i})^{2}  \right]+\left[  \frac{1}{2}\partial_{\mu}\sigma \partial^{\mu}\sigma- \frac{1}{2}(m^{2}+3\lambda v^{2})\sigma^{2}- \frac{\lambda}{4}\sigma^{4} \right] \\
+ & - \frac{\lambda}{2}\pi^{i}\pi^{i}\sigma^{2}- \lambda v \pi^{i}\pi^{i}\sigma-m^{2}v\sigma- \lambda v^{3}\sigma-\lambda v\sigma^{3}+a\sigma- \frac{1}{2}m^{2}v^{2}- \frac{\lambda }{4}v^{4}+av \\
+ & = \left[   \frac{1}{2}\partial_{\mu}\pi^{i}\partial^{\mu}\pi^{i}- \frac{1}{2}(m^{2}+\lambda v^{2})\pi^{i}\pi^{i}- \frac{\lambda}{4}(\pi^{i}\pi^{i})^{2}  \right]+\left[  \frac{1}{2}\partial_{\mu}\sigma \partial^{\mu}\sigma- \frac{1}{2}(m^{2}+3\lambda v^{2})\sigma^{2}- \frac{\lambda}{4}\sigma^{4} \right] \\
+ & - \frac{\lambda}{2}\pi^{i}\pi^{i}\sigma^{2}- \lambda v \pi^{i}\pi^{i}\sigma-\lambda v\sigma^{3}- \frac{1}{2}m^{2}v^{2}- \frac{\lambda }{4}v^{4}+av 
+\end{align}$$
+Clearly, the masses are:
+$$\begin{align}
+m_{\pi}^{2}=m^{2}+\lambda v^{2},\ m_{\sigma}^{2}= m^{2}+3\lambda v^{2}
+\end{align}$$
+Know that $a\neq 0$. Then $m^{2}+\lambda v^{2}=m_{\pi}^{2}\neq 0$. Pions are massive.
+
+Observe that:
+$$\begin{align}
+m_{\pi}^{2} & = m^{2}+\lambda v^{2}= \frac{a}{v} \\
+m_{\sigma}^{2} & = m^{2}+3\lambda v^{2}= -2m^{2}+ \frac{3a}{v} \\
+\lambda v & =  \frac{a}{v^{2}}- \frac{m^{2}}{\lambda} \\
+\lambda & = \frac{a}{v^{3}}- \frac{m^{2}}{\lambda v}
+\end{align}$$
+So the relevant terms $\sim \mathcal{O}(a)$ are:
+$$\begin{align}
+ - \frac{1}{4} \frac{a}{v^{3}}(\pi^{i}\pi^{i})^{2} - \frac{1}{2} \frac{a}{v}\pi^{i}\pi^{i}- \frac{1}{2} \frac{3a}{v}\sigma^{2}- \frac{a}{v^{2}}\pi^{i}\pi^{i}\sigma- \frac{a}{v^{2}}\sigma^{3}
+\end{align}$$
+
 
