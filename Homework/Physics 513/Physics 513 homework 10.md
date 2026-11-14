@@ -253,3 +253,32 @@ $$\begin{align}
 \end{align}$$
 ## (b)
 
+We first assume an incoming wave:
+$$\begin{align}
+\int \frac{d^{3}p}{(2\pi)^{3}}A(\mathbf{p}) a^{\dagger}_{\mathbf{p}}\ket{0} = \int \frac{d^{3}p}{(2\pi)^{3}} \frac{1}{\sqrt{ 2E_{\mathbf{p}} }}A(\mathbf{p})\ket{\mathbf{p}} 
+\end{align}$$
+Then if we displace this wave along the collision plane by the collision parameter $\mathbf{b}$, we get the incoming wave:
+$$\begin{align}
+\ket{i}  & = e^{-i\mathbf{b}\cdot \mathbf{p}} \int \frac{d^{3}p}{(2\pi)^{3}} \frac{1}{\sqrt{ 2E_{\mathbf{p}} }}A(\mathbf{p})\ket{\mathbf{p}}  \\
+ & = \int \frac{d^{3}p}{(2\pi)^{3}} \frac{1}{\sqrt{ 2E_{\mathbf{p}} }}A(\mathbf{p})e^{-i\mathbf{b}\cdot \mathbf{p}}\ket{\mathbf{p}} 
+\end{align}$$
+The probability that this wave scattered into the state $\ket{\mathbf{k}}$ is:
+$$ \begin{align}
+\frac{d^{3}k}{(2\pi)^{3}} \left|  \frac{1}{\sqrt{ 2E_{\mathbf{k}} }}\bra{\mathbf{k}} iT\ket{i}    \right|^{2}= \frac{d^{3}k}{(2\pi)^{3}} \frac{1}{2E_{\mathbf{k}}}|\bra{\mathbf{k}} iT\ket{i}  |^{2}
+\end{align} $$
+Then the infinitesimal cross-section is:
+$$\begin{align}
+d\sigma & = \int d^{2}b \frac{d^{3}k}{(2\pi)^{3}} \frac{1}{2E_{\mathbf{k}}}|\bra{\mathbf{k}} iT\ket{i}  |^{2} \\
+ & = \frac{d^{3}k}{(2\pi)^{3}} \frac{1}{2E_{\mathbf{k}}} \int d^{2}b\int  \frac{d^{3}p_{1}}{(2\pi)^{3} } \frac{d^{3}p_{2}}{(2\pi)^{3}} \frac{1}{\sqrt{ 2E_{\mathbf{p}_{1}} }} \frac{1}{\sqrt{ 2E_{\mathbf{p}_{2}} }} \bra{\mathbf{k}} iT\ket{\mathbf{p}_{1}} \bra{\mathbf{p}_{2}} (iT)^{\dagger}\ket{\mathbf{k}} A(\mathbf{p}_{1})A^{*}(\mathbf{p}_{2})e^{-i(\mathbf{p}_{1}-\mathbf{p}_{2})\cdot \mathbf{b}} 
+\end{align}$$
+We first decompose $\mathbf{p}_{i}=\mathbf{p}_{i}^{\perp}+\mathbf{p}_{i}^{\parallel}$, where $\mathbf{p}^{\perp}_{i}$ is the component perpendicular to the axis. Then:
+$$\begin{align}
+\int d^{2}b e^{-i(\mathbf{p}_{1}-\mathbf{p}_{2})\cdot \mathbf{b}} & = \int d^{2}b e^{-i(\mathbf{p}^{\perp}_{1}-\mathbf{p}^{\perp}_{2})\cdot \mathbf{b}} \\
+ & = (2\pi)^{2} \delta(\mathbf{p}^{\perp}_{1}-\mathbf{p}^{\perp}_{2})
+\end{align}$$
+Then:
+$$\begin{align}
+ & \int \frac{d^{3}p_{1}}{(2\pi)^{3}} \frac{d^{3}p_{2}}{(2\pi)^{3}} \frac{1}{\sqrt{ 2E_{\mathbf{p}_{1}} }} \frac{1}{\sqrt{ 2E_{\mathbf{p}_{2}} }} \bra{\mathbf{k}} iT \ket{\mathbf{p}_{1}} \bra{\mathbf{p}_{2}} (iT)^{\dagger}\ket{\mathbf{k}} A(\mathbf{p}_{1})A^{*}(\mathbf{p}_{2})(2\pi)^{2}\delta(\mathbf{p}^{\perp}_{1}-\mathbf{p}^{\perp}_{2}) \\
+  =  & \int \frac{d^{3}p_{1}}{(2\pi)^{3}} \frac{dp_{2}^{\parallel}}{(2\pi)^{3}}(2\pi)^{2} \frac{1}{\sqrt{ 2E_{\mathbf{p}_{1}} }} \frac{1}{\sqrt{ 2E_{\mathbf{p}_{2}} }}\bra{\mathbf{k}} iT \ket{\mathbf{p }_{1}}\bra{\mathbf{p}_{2}} (iT)^{\dagger}\ket{\mathbf{k}} A(\mathbf{p}_{1})A^{*}(\mathbf{p}_{2})\text{ with }\mathbf{p}_{1} ^{\perp}=\mathbf{p}_{2}^{\perp}
+\end{align}$$
+

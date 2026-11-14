@@ -556,12 +556,14 @@
             "id": "2cd5837a4e1d3b4f",
             "type": "leaf",
             "state": {
-              "type": "release-notes",
+              "type": "markdown",
               "state": {
-                "currentVersion": "1.15.1"
+                "file": "Homework/Physics 513/Physics 513 homework 10.md",
+                "mode": "source",
+                "source": false
               },
-              "icon": "lucide-book-up",
-              "title": "Release Notes 1.15.1"
+              "icon": "lucide-file",
+              "title": "Physics 513 homework 10"
             }
           },
           {
@@ -4397,7 +4399,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "Yukawa",
+                "query": "申请",
                 "matchingCase": true,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -4412,8 +4414,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200.5,
-    "collapsed": true
+    "width": 200.5
   },
   "right": {
     "id": "9003d078f8dbc4ed",
@@ -4519,8 +4520,9 @@
   },
   "active": "2cd5837a4e1d3b4f",
   "lastOpenFiles": [
-    "Notes/Yukawa理论.md",
+    "Notes/申请.md",
     "Homework/Physics 513/Physics 513 homework 10.md",
+    "Notes/Yukawa理论.md",
     "Notes/散射理论.md",
     "Pictures/9747f08ddeb607447115a418331a604d.jpg",
     "Pictures/7e8d438bd81921a801414463ef969ff7.jpg",
@@ -4530,7 +4532,6 @@
     "Pictures/dd9b81a791cec0312d8d3864a90cf591.jpg",
     "Pictures/a977d970caf868d5b0eb47c9a267b07e.jpg",
     "Notes/Feynman图.md",
-    "Notes/申请.md",
     "Homework/Physics 513/Physics 513 homework 9.md",
     "Pictures/Pasted image 20261112143440.png",
     "Notes/HSF Assignment.md",
