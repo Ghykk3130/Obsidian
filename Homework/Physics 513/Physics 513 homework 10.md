@@ -154,7 +154,6 @@ i\mathcal{M} & =  4\lambda^{}m^{2}i \left[   \frac{\delta^{ij}\delta^{kl}}{2m^{2
  & = 2i\lambda(\delta^{ij}\delta^{kl}+\delta^{ik}\delta^{jl}+\delta^{jk}\delta^{il})-2i\lambda(\delta^{ij}\delta^{kl}+\delta^{ik}\delta^{jl}+\delta^{jk}\delta^{il}) \\
  & = 0
 \end{align}$$
-
 For $N=2$, we take those delta functions to be equal to $1$. Then:
 $$\begin{align}
 i\mathcal{M} & = 4\lambda m^{2}i\left[  \frac{1}{s^{}-2\mu^{2}+i\epsilon}+ \frac{1}{t^{}-2\mu^{2}+i\epsilon}+ \frac{1}{u^{}-2\mu^{2}+i\epsilon} \right]-6i\lambda \\
@@ -204,16 +203,53 @@ m_{\pi}^{2}=m^{2}+\lambda v^{2},\ m_{\sigma}^{2}= m^{2}+3\lambda v^{2}
 \end{align}$$
 Know that $a\neq 0$. Then $m^{2}+\lambda v^{2}=m_{\pi}^{2}\neq 0$. Pions are massive.
 
+Then we have:
+$$\begin{align}
+i\mathcal{M} & = -4\lambda^{2}v^{2}i\left[  \frac{\delta^{ij}\delta^{kl}}{s-m^{2}_{\sigma}}+ \frac{\delta^{ik}\delta^{jl}}{t-m^{2}_{\sigma} }+ \frac{\delta^{il}\delta^{jk}}{u-m_{\sigma}^{2}} \right]-2i\lambda(\delta^{ij}\delta^{kl}+\delta^{ik}\delta^{jl}+\delta^{il}\delta^{jk}) \\
+ & = -4\lambda^{2}v^{2}i\left[  \frac{\delta^{ij}\delta^{kl}}{4m^{2}_{\pi}-m^{2}_{\sigma}}- \frac{\delta^{ik}\delta^{jl}}{m^{2}_{\sigma}}- \frac{\delta^{il}\delta^{jk}}{m^{2}_{\sigma}}   \right]-2i\lambda(\delta^{ij}\delta^{kl}+\delta^{ik}\delta^{jl}+\delta^{il}\delta^{jk}) 
+\end{align}$$
+Know that:
+$$\begin{align}
+m_{\sigma}^{2}= 2\lambda v^{2}+ m^{2}+\lambda v^{2}= 2\lambda v^{2}+m^{2}_{\pi}
+\end{align}$$
+Then:
+$$\begin{align}
+i\mathcal{M} & = -2\lambda^{}i\left[  \frac{m^{2}_{\sigma}-m^{2}_{\pi}}{4m^{2}_{\pi}-m^{2}_{\sigma}}\delta^{ij}\delta^{kl}- \frac{m^{2}_{\sigma}-m^{2}_{\pi}}{m^{2}_{\sigma}} \delta^{ik}\delta^{jl}- \frac{m^{2}_{\sigma}-m^{2}_{\pi}}{m^{2}_{\sigma}}\delta^{il}\delta^{jk} \right]-2i\lambda(\delta^{ij}\delta^{kl}+\delta^{ik}\delta^{jl}+\delta^{il}\delta^{jk})  \\
+ & = -2\lambda i\left[   \frac{3m^{2}_{\pi}}{4m^{2}_{\pi}-m^{2}_{\sigma}} \delta^{ij}\delta^{kl}+ \frac{m^{2}_{\pi}}{m^{2}_{\sigma}}\delta^{ik}\delta^{jl}+ \frac{m^{2}_{\pi}}{m^{2}_{\sigma}}\delta^{il}\delta^{jk} \right] \\
+ & = -2\lambda m^{2}_{\pi}i\left[   \frac{3}{4m^{2}_{\pi}-m^{2}_{\sigma}} \delta^{ij}\delta^{kl}+ \frac{1}{m^{2}_{\sigma}}\delta^{ik}\delta^{jl}+ \frac{1}{m^{2}_{\sigma}}\delta^{il}\delta^{jk} \right]
+\end{align}$$
 Observe that:
 $$\begin{align}
 m_{\pi}^{2} & = m^{2}+\lambda v^{2}= \frac{a}{v} \\
 m_{\sigma}^{2} & = m^{2}+3\lambda v^{2}= -2m^{2}+ \frac{3a}{v} \\
-\lambda v & =  \frac{a}{v^{2}}- \frac{m^{2}}{\lambda} \\
-\lambda & = \frac{a}{v^{3}}- \frac{m^{2}}{\lambda v}
-\end{align}$$
-So the relevant terms $\sim \mathcal{O}(a)$ are:
-$$\begin{align}
- - \frac{1}{4} \frac{a}{v^{3}}(\pi^{i}\pi^{i})^{2} - \frac{1}{2} \frac{a}{v}\pi^{i}\pi^{i}- \frac{1}{2} \frac{3a}{v}\sigma^{2}- \frac{a}{v^{2}}\pi^{i}\pi^{i}\sigma- \frac{a}{v^{2}}\sigma^{3}
-\end{align}$$
 
+\end{align}$$
+So:
+$$\begin{align}
+i\mathcal{M} & \approx -2\lambda  \frac{a}{v}i\left[  \frac{3}{2m^{2}}\delta^{ij}\delta^{kl}- \frac{1}{2m^{2}}\delta^{ik}\delta^{jl}- \frac{1}{2m^{2}}\delta^{il}\delta^{jk}  \right]
+\end{align}$$
+We know that $a$ is small, so the solution of $v$ could be approximated by:
+$$\begin{align}
+ & v(m^{2}+\lambda v^{2})=a \\
+\implies & m^{2}+\lambda v^{2}\approx 0 \\
+\implies & v\approx \sqrt{ \frac{\mu^{2}}{\lambda} }
+\end{align}$$
+Then:
+$$\begin{align}
+i\mathcal{M} & \approx - 2 a^{2} \frac{\lambda^{3/2}}{\mu^{}}i\left[  \frac{3}{2m^{2}}\delta^{ij}\delta^{kl}- \frac{1}{2m^{2}}\delta^{ik}\delta^{jl}- \frac{1}{2m^{2}}\delta^{il}\delta^{jk}  \right] \\
+ & = ia \frac{\lambda^{3 /2}}{\mu^{3}}(3\delta^{ij}\delta^{kl}- \delta^{ik}\delta^{jl}-\delta^{il}\delta^{jk})
+\end{align}$$
+# Problem 2
+## (a)
+
+We have that:
+$$\begin{align}
+\bra{p^{'}} \bar{\psi}\gamma^{\mu}\psi \ket{p}  & =  e^{-i(p-p^{'})\cdot x}\bar{u}(p^{'})\gamma^{\mu}u(p)
+\end{align}$$
+Then to the first order, we have:
+$$\begin{align}
+\bra{p^{'}} iT \ket{p}  & = -ie\int d^{4}xA_{\mu}e^{-i(p-p^{'})\cdot x}\bar{u}(p^{'})\gamma^{\mu}u(p) \\
+ & = -ie \bar{u}(p^{'})\gamma^{\mu}u(p)\tilde{A}_{\mu}(p^{'}-p),\ \tilde{A}_{\mu}(q)=\int d^{4}x e^{iq\cdot x}A_{\mu}(x)
+\end{align}$$
+## (b)
 
