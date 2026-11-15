@@ -425,6 +425,76 @@ $$\begin{align}
 \end{align}$$
 ## (b)
 
+We have:
+$$\begin{align}
+\sum_{s,r}\left| \bar{u}^{s}(p^{'})\gamma^{0}u^{r}(p) \right| & = \sum_{s,r}(\bar{u}^{s}(p^{'})\gamma^{0}u^{r}(p))(\bar{u}^{s}(p^{'})\gamma^{0}u^{r}(p))^{*} \\
+ & = \sum_{s,r} (\bar{u}^{s}(p^{'})\gamma^{0}u^{r}(p))(\bar{u}^{r}(p)\gamma^{0}u^{s}(p^{'})) \\
+ & = \sum_{s}\bar{u}^{s}(p^{'})\gamma^{0}\sum_{r}u^{r}(p)\bar{u}^{r}(p)\gamma^{0}u^{s}(p^{'}) \\
+  & = \sum_{s}\bar{u}^{s}(p^{'})\gamma^{0}(\rlap{/}p+m)\gamma^{0}u^{s}(p^{'}) \\
+ & = \sum_{s}\bar{u}^{s}_{a}A_{ab}u_{b}^{s},\ A=\gamma^{0}(\rlap{/}p+m)\gamma^{0} \\
+ & = A_{ab} \sum_{s}\bar{u}^{s}_{a}u^{s}_{b} \\
+ & = A_{ab}(\rlap{/}p^{'}+m)_{ba} \\
+ & =\text{Tr}( \gamma^{0}(\rlap{/}p+m)\gamma^{0}(\rlap{/}p^{'}+m)) \\
+ & = \text{Tr}(\gamma^{0}\rlap{/}p\gamma^{0}\rlap{/}p^{'})+\text{Tr}(m\rlap{/}p^{'})+\text{Tr}(m^{2})+\text{Tr}(\gamma^{0}\rlap{/}p\gamma^{0}m)
+\end{align}$$
+We claim that the trace of an odd number of gamma matrices multiplied together is zero. Here is the proof. Take:
+$$\begin{align}
+\text{Tr}(\gamma^{r_{1}}\dots \gamma^{r_{n}}) & = \text{Tr}(\gamma^{r_{1}}\dots \gamma^{r_{n}}\gamma^{5}\gamma^{5}) \\
+ & = \text{Tr}(\gamma^{5}\gamma^{r_{1}}\dots \gamma^{r_{n}}\gamma^{5}) \\
+ & = (-1)^{^{n}}\text{Tr}(\gamma^{r_{1}}\dots \gamma^{r_{n}}\gamma^{5}\gamma^{5}) \\
+ & = (-1)^{n}\text{Tr}(\gamma^{r_{1}}\dots \gamma^{r_{n}}) \\
+ & = -\text{Tr}(\gamma^{r_{1}}\dots \gamma^{r_{n}})\text{ for }n\text{ odd} \\
+\implies\text{Tr}(\gamma^{r_{1}}\dots \gamma^{r_{n}}) & =0
+\end{align}$$
+Therefore:
+$$\begin{align}
+\sum_{s,r}\left| \bar{u}^{s}(p^{'})\gamma^{0}u^{r}(p) \right| & = \text{Tr}(\gamma^{0}\rlap{/}p\gamma^{0}\rlap{/}p^{'})+\text{Tr}(m^{2}) \\
+ & = \text{Tr}(\gamma^{0}\rlap{/}p\gamma^{0}\rlap{/}p^{'})+ 4m^{2}
+\end{align}$$
+In order to compute the first term, we claim that:
+
+>[!Success] Claim
+>$$\text{Tr}(\gamma^{\mu}\gamma^{\nu}\gamma^{\rho}\gamma^{\sigma})=4(g^{\mu \nu}g^{\rho \sigma}-g^{\mu \rho}g^{\nu \sigma}+g^{\nu \rho}g^{\mu \sigma})$$
+## Proof of claim
+
+Know that:
+$$\begin{align}
+\text{Tr}(\gamma^{\mu}\gamma^{\nu}) & = \frac{1}{2}(\text{Tr}(\gamma^{\mu}\gamma^{\nu})+\text{Tr}(\gamma^{\nu}\gamma^{\mu}) ) \\
+ & = \frac{1}{2}\text{Tr}\{ \gamma^{\mu},\gamma^{\nu} \} \\
+ & = 4g^{\mu \nu}
+\end{align}$$
+Then:
+$$\begin{align}
+\text{Tr}(\gamma^{\mu}\gamma^{\nu}\gamma^{\rho}\gamma^{\sigma}) & = \text{Tr}((2g^{\mu \nu}-\gamma^{\nu}\gamma^{\mu})\gamma^{\rho}\gamma^{\sigma}) \\
+ & = 2g^{\mu \nu}\text{Tr}(\gamma^{\rho}\gamma^{\sigma})-\text{Tr}(\gamma^{\nu}\gamma^{\mu}\gamma^{\rho}\gamma^{\sigma}) \\
+ & = 8g^{\mu \nu}g^{\rho \sigma}-\text{Tr}(\gamma^{\nu}(2g^{\mu \rho}-\gamma^{\rho}\gamma^{\mu})\gamma^{\sigma}) \\
+ & = 8g^{\mu \nu}g^{\rho \sigma}-8g^{\mu \rho}g^{\nu \sigma}+\text{Tr}(\gamma^{\nu}\gamma^{\rho}\gamma^{\mu}\gamma^{\sigma}) \\
+ & = 8g^{\mu \nu}g^{\rho \sigma}-8g^{\mu \rho}g^{\nu \sigma}+\text{Tr}(\gamma^{\nu}\gamma^{\rho}(2g^{\mu \sigma}-\gamma^{\sigma}\gamma^{\mu})) \\
+ & = 84(g^{\mu \nu}g^{\rho \sigma}-g^{\mu \rho}g^{\nu \sigma}+g^{\nu \rho}g^{\mu \sigma})-\text{Tr}(\gamma^{\nu}\gamma^{\rho}\gamma^{\sigma}\gamma^{\mu}) \\
+\implies\text{Tr}(\gamma^{\mu}\gamma^{\nu}\gamma^{\rho}\gamma^{\sigma}) & =4(g^{\mu \nu}g^{\rho \sigma}-g^{\mu \rho}g^{\nu \sigma}+g^{\nu \rho}g^{\mu \sigma})
+\end{align}$$
+>[!Right]
+>$\blacksquare$
+
+Then:
+$$\begin{align}
+\text{Tr}(\gamma^{0}\rlap{/}p\gamma^{0}\rlap{/}p^{'}) & = p_{\mu}p^{'}_{\nu}4(g^{0\mu}g^{0\nu}-g^{00}g^{\mu \nu}+g^{\mu{0}}g^{0\nu}) \\
+ & = p_{\mu}p^{'}_{\nu}4(2g^{0\mu}g^{0\nu}-g^{00}g^{\mu \nu}) \\
+ & = 4(2p^{0}p^{' 0}-p\cdot p^{'}) \\
+ & = 4(p^{0}p^{' 0}+\mathbf{p}\cdot \mathbf{p}^{'}) \\
+ & = 4(E^{2}+\mathbf{p}\cdot \mathbf{p}^{'})
+\end{align}$$
+Then:
+$$\begin{align}
+\frac{1}{2}\sum_{s,r}\left| \bar{u}^{s}(p^{'})\gamma^{0}u^{r}(p)  \right|^{2} & = \frac{1}{2}(4E^{2}+4\mathbf{p}\cdot \mathbf{p}^{'}+4m^{2}) \\
+ & = 2(E^{2}+|\mathbf{p}|^{2}\cos \theta+E^{2}-|\mathbf{p}|^{2} ) \\
+ & = 2\left( 2E^{2}-2|\mathbf{p}|^{2}\sin ^{2} \frac{\theta}{2}  \right) \\
+ & = 4E^{2}\left( 1- \beta^{2}\sin ^{2} \frac{\theta}{2} \right)
+\end{align}$$
+## (c)
+
+
+
 
 
 
