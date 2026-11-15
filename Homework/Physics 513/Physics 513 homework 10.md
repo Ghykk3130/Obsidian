@@ -341,6 +341,90 @@ Then:
 $$\begin{align}
 \tilde{A}_{0}(\mathbf{q})= \frac{Ze}{|\mathbf{q}|^{2}}
 \end{align}$$
+We compute:
+$$\begin{align}
+\bra{\mathbf{p}_{f}}iT \ket{\mathbf{p}_{i}}  & = -ie \bar{u}(p_{f})\gamma^{\mu}u(p_{i})\tilde{A}_{\mu}(p_{f}-p_{i}) \\
+ & = -ie \bar{u}\gamma^{0 }u\tilde{A}_{0} \\
+ & = -ie u^{\dagger}u\tilde{A}_{0}  
+\end{align}$$
+Know that:
+$$\begin{align}
+u^{\dagger}(p_{f})u(p_{i}) & = \begin{pmatrix}
+\xi ^{\dagger} \sqrt{ p_{f}\cdot \sigma } & \xi ^{\dagger}\sqrt{ p_{f}\cdot \bar{\sigma} }
+\end{pmatrix} \begin{pmatrix}
+ \sqrt{ p_{i}\cdot \sigma }\xi \\
+\sqrt{ p_{i}\cdot \bar{\sigma} }\xi
+\end{pmatrix} \\
+ & = \xi ^{\dagger}(\sqrt{ p_{f}\cdot \sigma }\sqrt{ p_{i}\cdot \sigma }+\sqrt{ p_{f}\cdot \bar{\sigma} }\sqrt{ p_{i}\cdot \bar{\sigma} })\xi
+\end{align}$$
+Under relativistic limit, we choose the spatial axis to be align with the third direction, we study (keep to $\mathcal{O}\left(  \frac{|\mathbf{p}|^{2}}{m^{2}} \right)$):
+$$\begin{align}
+\sqrt{ q\cdot \sigma } & = \sqrt{ E-\mathbf{q}\cdot \boldsymbol{\sigma} } \\
+  & = \sqrt{ \begin{pmatrix}
+E-q^{3} & 0 \\0 & E+q^{3}
+\end{pmatrix} } \\
+ & = \begin{pmatrix}
+\sqrt{ E-q^{3} } & 0 \\
+0 & \sqrt{ E+q^{3} }
+\end{pmatrix} \\
+\sqrt{ E\pm q^{3} } & = \sqrt{ \sqrt{ |\mathbf{q}|^{2}+m^{2} }\pm q^{3} } \\
+ & \approx \sqrt{  m+ \frac{|\mathbf{q}|^{2}}{2m}\pm q^{3} } \\
+ & = \sqrt{ m }\sqrt{ 1+ \frac{|\mathbf{q}|^{2}}{2m^{2}}\pm \frac{q^{3}}{m} }  \\
+ & \approx \sqrt{ m }\left( 1+ \frac{|\mathbf{q}|^{2}}{4m^{2}}\pm \frac{q^{3}}{2m}- \frac{1}{8}\left(  \frac{|\mathbf{q}|^{2}}{2m^{2}}\pm \frac{q^{3}}{m} \right)^{2} \right) \\
+ & \approx \sqrt{ m }\left( 1+ \frac{|\mathbf{q}|^{2}}{8m^{2}}\pm \frac{q^{3}}{2m} \right)\\
+\implies \sqrt{ q\cdot \sigma } & = \sqrt{ m }\left( 1+ \frac{|\mathbf{q}|^{2}}{8m^{2}} \right) - \frac{q^{3}}{2\sqrt{ m }}\sigma^{3} \\
+ & = \sqrt{ m }\left( 1+ \frac{|\mathbf{q}|^{2}}{8m^{2}} - \frac{1}{2m}\mathbf{q}\cdot \boldsymbol{\sigma}\right)
+\end{align}$$
+Therefore if $\frac{|\mathbf{p}|}{m}\ll 1$:
+$$\begin{align}
+\sqrt{ p_{f} \cdot\sigma} \sqrt{ p_{i}\cdot \sigma }+ \sqrt{ p_{f}\cdot \bar{\sigma} }\sqrt{ p_{i}\cdot \bar{\sigma} } & = m\left( 1+ \frac{|\mathbf{p}_{f}|^{2}}{8m^{2}}- \frac{\mathbf{p}_{f}\cdot \boldsymbol{\sigma}}{2m} \right)\left( 1+ \frac{|\mathbf{p}_{i}|^{2}}{8m^{2}}- \frac{\mathbf{p}_{i}\cdot \boldsymbol{\sigma}}{2m} \right)+ (\sigma \leftrightarrow -\sigma) \\
+ & = m\left( 1+ \frac{|\mathbf{p}_{f}|^{2}}{8m^{2}}+ \frac{|\mathbf{p}_{i}|^{2}}{8m^{2}}- \frac{\mathbf{p}_{f}\cdot \sigma}{2m}- \frac{\mathbf{p}_{i}\cdot \boldsymbol{\sigma}}{2m}+ \frac{(\mathbf{p}_{f}\cdot\sigma)(\mathbf{p}_{i}\cdot \boldsymbol{\sigma})}{4m^{2}} \right)+(\sigma\leftrightarrow -\sigma) \\
+ & = m\left( 2+ \frac{|\mathbf{p}_{f}|^{2}}{4m^{2}}+ \frac{|\mathbf{p}_{i}|^{2}}{4m^{2}}+ \frac{(\mathbf{p}_{f}\cdot \boldsymbol{\sigma})(\mathbf{p}_{i}\cdot \boldsymbol{\sigma})}{2m^{2}} \right) \\
+ & \approx 2m
+\end{align}$$
+Then:
+$$\begin{align}
+u^{\dagger}(p_{f})u(p_{i}) & \approx 2m \xi ^{\dagger} \xi \\
+ & =2m \delta^{s r}\text{ where }s,r\text{ are spins for }i,f
+\end{align}$$
+Then:
+$$\begin{align}
+\bra{p_{f},r} iT \ket{p_{i},s} \approx -ie 2m\delta^{s r} \frac{Ze}{|\mathbf{p}_{f}-\mathbf{p}_{i} |^{2}} 2\pi \delta(E_{f}-E_{i})
+\end{align}$$
+where the extra $2\pi\delta(E_{f}-E_{i})$ comes from the temporal Fourier transformation. Remember that we only did spatial part at the beginning. Since $A$ does not depend on time, the temporal part just gives $2\pi\delta$. Then:
+$$\begin{align}
+|\mathcal{M}|^{2} & = 4m^{2}\delta^{s r} \frac{Z^{2}e^{4}}{|\mathbf{p}_{f}-\mathbf{p}_{i}|^{4}} \\
+ & = 4m^{2} \delta^{s r} \frac{Z^{2}e^{4}}{(2mv \sin \theta /2)^{4}} \\
+ & = \delta^{s r} \frac{Z^{2}e^{4}}{4m^{2}v^{4} \sin ^{4} \frac{\theta}{2}}
+\end{align}$$
+Then:
+$$\begin{align}
+\frac{d\sigma}{d\Omega} & = \frac{1}{16\pi^{2}}|\mathcal{M}|^{2} \\
+ & = \delta^{s r} \frac{Z^{2}\alpha^{2}}{4m^{2}v^{4} \sin ^{4} \frac{\theta}{2}}
+\end{align}$$
+If we are completely in classical, we don't have spins. We can just remove the $\delta^{s r}$ in the front, and write:
+$$\begin{align}
+ \frac{d\sigma}{d\Omega}= \frac{Z^{2}\alpha^{2}}{4m^{2}v^{4}\sin ^{4} \frac{\theta}{2}}
+\end{align}$$
+# Problem 3
+## (a)
+
+Know that:
+$$\begin{align}
+\bra{\mathbf{p}^{'}}iT \ket{p} & = -ie \bar{u}(p^{'})\gamma^{\mu}u(p)\tilde{A}_{\mu}(p^{'}-p) \\
+ & = -ie \bar{u}(p^{'})\gamma^{0}u(0)\tilde{A}_{0}(p^{'}-p) 2\pi\delta(E_{\mathbf{p}^{'}}-E_{\mathbf{p}}) \\
+\end{align}$$
+Then clearly:
+$$\begin{align}
+i\mathcal{M} & = -ie \bar{u}^{s ^{'}}(p^{'})\gamma^{0}u^{s}(p)\tilde{A}_{0}(\mathbf{q}),\ \mathbf{q}=\mathbf{p}^{'}-\mathbf{p}
+\end{align}$$
+where:
+$$\begin{align}
+\tilde{A}_{0}(\mathbf{q}) & = \frac{Ze}{|\mathbf{q}|^{2}} \\
+ & = \frac{Ze}{4|\mathbf{p}|^{2}\sin ^{2} \frac{\theta}{2}}
+\end{align}$$
+## (b)
+
 
 
 

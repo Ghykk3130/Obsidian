@@ -558,12 +558,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Homework/Physics 513/Physics 513 homework 10.md",
+                "file": "Notes/Dirac方程的解.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Physics 513 homework 10"
+              "title": "Dirac方程的解"
             }
           },
           {
@@ -4399,7 +4399,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "申请",
+                "query": "Dirac",
                 "matchingCase": true,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -4410,7 +4410,8 @@
               "title": "Search"
             }
           }
-        ]
+        ],
+        "currentTab": 3
       }
     ],
     "direction": "horizontal",
@@ -4521,8 +4522,9 @@
   },
   "active": "2cd5837a4e1d3b4f",
   "lastOpenFiles": [
-    "Notes/申请.md",
     "Homework/Physics 513/Physics 513 homework 10.md",
+    "Notes/Dirac方程的解.md",
+    "Notes/申请.md",
     "Notes/Yukawa理论.md",
     "Notes/散射理论.md",
     "Pictures/9747f08ddeb607447115a418331a604d.jpg",
