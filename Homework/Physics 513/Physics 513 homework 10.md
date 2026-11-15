@@ -357,7 +357,7 @@ u^{\dagger}(p_{f})u(p_{i}) & = \begin{pmatrix}
 \end{pmatrix} \\
  & = \xi ^{\dagger}(\sqrt{ p_{f}\cdot \sigma }\sqrt{ p_{i}\cdot \sigma }+\sqrt{ p_{f}\cdot \bar{\sigma} }\sqrt{ p_{i}\cdot \bar{\sigma} })\xi
 \end{align}$$
-Under relativistic limit, we choose the spatial axis to be align with the third direction, we study (keep to $\mathcal{O}\left(  \frac{|\mathbf{p}|^{2}}{m^{2}} \right)$):
+Under non-relativistic limit, we choose the spatial axis to be align with the third direction, we study (keep to $\mathcal{O}\left(  \frac{|\mathbf{p}|^{2}}{m^{2}} \right)$):
 $$\begin{align}
 \sqrt{ q\cdot \sigma } & = \sqrt{ E-\mathbf{q}\cdot \boldsymbol{\sigma} } \\
   & = \sqrt{ \begin{pmatrix}
@@ -493,7 +493,16 @@ $$\begin{align}
 \end{align}$$
 ## (c)
 
-
+Clearly:
+$$\begin{align}
+\frac{d\sigma}{d\Omega} & = \frac{1}{16\pi^{2}} \frac{1}{2}\sum_{\text{spins}}|\mathcal{M} |^{2} \\
+ & = \frac{1}{16\pi^{2}} 4E^{2}\left( 1- \beta^{2} \sin ^{2} \frac{\theta}{2} \right)  \frac{Z^{2}e^{4}}{16|\mathbf{p}|^{4}\sin ^{4} \frac{\theta}{2}} \\
+ & = \frac{Z^{2}\alpha^{2}}{4|\mathbf{p}|^{2}\beta^{2} \sin ^{4} \frac{\theta}{2}}\left( 1- \beta^{2} \sin ^{2} \frac{\theta}{2} \right)
+\end{align}$$
+In the non-relativistic limit, we take $|\mathbf{p}|\approx mv$, $\beta \approx 0$. Then:
+$$\begin{align}
+\frac{d\sigma}{d\Omega}= \frac{Z^{2}\alpha^{2}}{4m^{2}v}
+\end{align}$$
 
 
 
