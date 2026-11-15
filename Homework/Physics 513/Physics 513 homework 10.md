@@ -499,10 +499,12 @@ $$\begin{align}
  & = \frac{1}{16\pi^{2}} 4E^{2}\left( 1- \beta^{2} \sin ^{2} \frac{\theta}{2} \right)  \frac{Z^{2}e^{4}}{16|\mathbf{p}|^{4}\sin ^{4} \frac{\theta}{2}} \\
  & = \frac{Z^{2}\alpha^{2}}{4|\mathbf{p}|^{2}\beta^{2} \sin ^{4} \frac{\theta}{2}}\left( 1- \beta^{2} \sin ^{2} \frac{\theta}{2} \right)
 \end{align}$$
-In the non-relativistic limit, we take $|\mathbf{p}|\approx mv$, $\beta \approx 0$. Then:
+In the non-relativistic limit, take $E\approx m,\ \beta \approx 0$. We have:
 $$\begin{align}
-\frac{d\sigma}{d\Omega}= \frac{Z^{2}\alpha^{2}}{4m^{2}v}
+\frac{d\sigma}{d\Omega} & \approx \frac{Z^{2}\alpha^{2}}{4 \frac{m^{4}v^{4}}{m^{2}}\sin ^{4} \frac{\theta}{2} }(1) \\
+ & = \frac{Z^{2}\alpha^{2}}{4m^{2}v^{4}\sin ^{4} \frac{\theta}{2}}
 \end{align}$$
+This is exactly the classical Rutherford's formula.
 
 
 
