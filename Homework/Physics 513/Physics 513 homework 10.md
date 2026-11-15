@@ -61,8 +61,8 @@ $$\begin{align}\sqrt{ |\mathbf{p}_{i}|^{2}+m_{1}^{2} }+\sqrt{ |\mathbf{p}_{i} |^
 Then:
 $$\begin{align}
  &  \frac{d\sigma}{d\Omega}= \frac{1}{64\pi^{2}E^{2}_{\text{CM}}} |\mathcal{M} |^{2} \\
-\implies & \sigma= \frac{1}{2} \int d\Omega \frac{1}{64\pi^{2}E^{2}_{\text{CM}} }|\mathcal{M} |^{2} \\ & = \frac{1}{2} 4\pi \frac{1}{64\pi^{2}E^{2}_{\text{CM}}}|\mathcal{M} |^{2} \\
- & = \frac{\lambda^{2}}{8\pi E^{2}_{\text{CM}}}
+\implies & \sigma=  \int d\Omega \frac{1}{64\pi^{2}E^{2}_{\text{CM}} }|\mathcal{M} |^{2} \\ & =  4\pi \frac{1}{64\pi^{2}E^{2}_{\text{CM}}}|\mathcal{M} |^{2} \\
+ & = \frac{\lambda^{2}}{4\pi E^{2}_{\text{CM}}}
 \end{align}$$
 For $\Phi^{1}\Phi^{1}\rightarrow \Phi^{2}\Phi^{2}$, we take $i=j=2,\ k=l=1$. Then we get:
 $$\begin{align}
@@ -126,10 +126,10 @@ $$\begin{align}
 \implies & -\lambda v i \cdot{6}=-6\lambda vi
 \end{align}$$
 ![[e836f139b25fe128f006f86c94ffc7a3.jpg|centering|200]]
-We find the vertex factor associated with $- \frac{1}{2}\pi^{i}\pi^{i}\sigma^{2}$:
+We find the vertex factor associated with $- \frac{\lambda}{2}\pi^{i}\pi^{i}\sigma^{2}$:
 $$\begin{align}
  & \frac{\partial^{4}}{\partial \pi^{i}\partial \pi^{j}\partial \sigma^{2}} (\pi^{i}\pi^{i}\sigma^{2})=4\delta^{ij} \\
-\implies & - \frac{1}{2}i\cdot 4 \delta^{ij}=-2i\delta^{ij}
+\implies & - \frac{1}{2}i\lambda\cdot 4 \delta^{ij}=-2\lambda i\delta^{ij}
 \end{align}$$
 ![[7e8d438bd81921a801414463ef969ff7.jpg|centering|200]]
 We find the vertex factor associated with $-\lambda v\pi^{i}\pi^{i}\sigma$:
