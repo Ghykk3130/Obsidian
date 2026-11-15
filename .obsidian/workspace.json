@@ -558,12 +558,26 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Notes/申请.md",
+                "file": "Notes/Dirac方程的解.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "申请"
+              "title": "Dirac方程的解"
+            }
+          },
+          {
+            "id": "343dd41807b67c09",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Notes/London方程.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "London方程"
             }
           },
           {
@@ -4345,7 +4359,7 @@
             }
           }
         ],
-        "currentTab": 39
+        "currentTab": 40
       }
     ],
     "direction": "vertical"
@@ -4410,13 +4424,11 @@
               "title": "Search"
             }
           }
-        ],
-        "currentTab": 3
+        ]
       }
     ],
     "direction": "horizontal",
-    "width": 200.5,
-    "collapsed": true
+    "width": 200.5
   },
   "right": {
     "id": "9003d078f8dbc4ed",
@@ -4520,11 +4532,14 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "2cd5837a4e1d3b4f",
+  "active": "343dd41807b67c09",
   "lastOpenFiles": [
-    "Homework/Physics 513/Physics 513 homework 10.md",
     "Notes/Dirac方程的解.md",
+    "Notes/London方程.md",
+    "Notes/Dirac旋量场.md",
+    "Notes/Drude模型.md",
     "Notes/申请.md",
+    "Homework/Physics 513/Physics 513 homework 10.md",
     "Notes/Yukawa理论.md",
     "Notes/散射理论.md",
     "Pictures/9747f08ddeb607447115a418331a604d.jpg",
@@ -4555,9 +4570,6 @@
     "Homework/Physics 520/Physics 520 homework 7.md",
     "Homework/Physics 520/Physics 520 homework 6.md",
     "Homework/Physics 520/Physics 520 homework 4 problem set.md",
-    "Notes/磁性.md",
-    "Homework/Physics 520/Physics 520 homework 5.md",
-    "Homework/Physics 520/Physics 520 homework 3 problem set.md",
     "SimpleWick Obsidian Report.pdf",
     "trace-cookies.txt",
     "max-page-cookies.txt",
