@@ -4,7 +4,7 @@ $$\begin{align}
 \implies & \frac{\partial}{\partial t}\mathbf{j}_{s}=-en_{s} \frac{\partial \mathbf{v}_{s}}{\partial t} \\
 \implies &  \boxed{\frac{\partial}{\partial t}\mathbf{j}_{s}=  \frac{n_{s}e^{2}}{m}\mathbf{E}}
 \end{align}$$
-这成为第一London方程。其中没有考虑$\frac{\partial n_{s}}{\partial t}$是因为假设输运已经稳定，不存在$n_{s}$的变化。
+这称为第一London方程。其中没有考虑$\frac{\partial n_{s}}{\partial t}$是因为假设输运已经稳定，不存在$n_{s}$的变化。
 
 >[!Quote]
 >为什么不是$\frac{\partial \mathbf{v}_{s}}{\partial t}= \frac{-e}{m}(\mathbf{E}+\mathbf{v}_{s}\times \mathbf{B})$？这是因为，我们选择了London gauge $\nabla \cdot \mathbf{A}=0,\ \phi=0$。这会导致正则动量$\mathbf{p}=0$。从而有：
