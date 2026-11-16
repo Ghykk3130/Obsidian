@@ -68,8 +68,11 @@ For $\Phi^{1}\Phi^{1}\rightarrow \Phi^{2}\Phi^{2}$, we take $i=j=2,\ k=l=1$. The
 $$\begin{align}
 i\mathcal{M}=-2\lambda i
 \end{align}$$
-Then clearly, we still have:
-$$\sigma= \frac{\lambda^{2}}{8\pi E^{2}_{\text{CM}}}$$
+Then clearly, we have:
+$$\begin{align}
+ & \frac{d\sigma}{d\Omega}=   \frac{1}{64\pi^{2}E_{\text{CM}}^{2}} |\mathcal{M} |^{2} \\
+\implies & \sigma= \frac{1}{2}\cdot\frac{\lambda^{2}}{4\pi E^{2}_{\text{CM}}}
+\end{align}$$
 For $\Phi^{1}\Phi^{1}\rightarrow \Phi^{1}\Phi^{1}$, we take $i=j=k=l=1$. Then we get:
 $$\begin{align}
 i\mathcal{M}= -6\lambda i
@@ -89,7 +92,7 @@ $$\begin{align}\Phi^{i}\Phi^{i}=- \frac{\frac{1}{2}m^{2}}{2 \cdot \frac{\lambda}
 \end{align}$$
 Now we have:
 $$\begin{align}
-\mathcal{L} & = \frac{1}{2}\partial_{\mu}\pi^{i}\partial^{\mu}\pi^{i}+ \frac{1}{2} \partial_{\mu}\sigma \partial^{\mu}\sigma- \frac{1}{2}m^{2}\pi^{i}\pi^{i}- \frac{1}{2}m^{2}(v+\sigma)^{2}- \frac{\lambda}{4}(\pi^{i}\pi^{i}(v+\sigma)^{2})^{2} \\
+\mathcal{L} & = \frac{1}{2}\partial_{\mu}\pi^{i}\partial^{\mu}\pi^{i}+ \frac{1}{2} \partial_{\mu}\sigma \partial^{\mu}\sigma- \frac{1}{2}m^{2}\pi^{i}\pi^{i}- \frac{1}{2}m^{2}(v+\sigma)^{2}- \frac{\lambda}{4}(\pi^{i}\pi^{i}+(v+\sigma)^{2})^{2} \\
  & = \frac{1}{2}\partial_{\mu}\pi^{i}\partial^{\mu}\pi^{i}- \frac{1}{2}m^{2}\pi^{i}\pi^{i}- \frac{\lambda}{4}(\pi^{i}\pi^{i})^{2}- \frac{\lambda}{2}\pi^{i}\pi^{i}(v^{2}+\sigma^{2}+2v\sigma)+  \\
  & \frac{1}{2}\partial_{\mu}\sigma \partial^{\mu}\sigma- \frac{1}{2}m^{2}(v^{2}+\sigma^{2}+2v\sigma)- \frac{\lambda}{4}(v+\sigma)^{4} \\
  & = \frac{1}{2}\partial_{\mu}\pi^{i}\partial^{\mu}\pi^{i}- \frac{\lambda}{4}(\pi^{i}\pi^{i})^{2}+ \frac{1}{2}\partial_{\mu}\sigma \partial^{\mu}\sigma- \frac{1}{2}m^{2}\sigma^{2}- \frac{3}{2}\lambda v^{2}\sigma^{2}- \frac{\lambda}{4}\sigma^{4}- \frac{1}{2}m^{2}v^{2}-m^{2}v\sigma \\
@@ -281,12 +284,12 @@ $$\begin{align}
  & \int \frac{d^{3}p_{1}}{(2\pi)^{3}} \frac{d^{3}p_{2}}{(2\pi)^{3}} \frac{1}{\sqrt{ 2E_{\mathbf{p}_{1}} }} \frac{1}{\sqrt{ 2E_{\mathbf{p}_{2}} }} \bra{\mathbf{k}} iT \ket{\mathbf{p}_{1}} \bra{\mathbf{p}_{2}} (iT)^{\dagger}\ket{\mathbf{k}} A(\mathbf{p}_{1})A^{*}(\mathbf{p}_{2})(2\pi)^{2}\delta(\mathbf{p}^{\perp}_{1}-\mathbf{p}^{\perp}_{2}) \\
   =  & \int \frac{d^{3}p_{1}}{(2\pi)^{3}} \frac{dp_{2}^{\parallel}}{(2\pi)^{3}}(2\pi)^{2} \frac{1}{\sqrt{ 2E_{\mathbf{p}_{1}} }} \frac{1}{\sqrt{ 2E_{\mathbf{p}_{2}} }}\bra{\mathbf{k}} iT \ket{\mathbf{p }_{1}}\bra{\mathbf{p}_{2}} (iT)^{\dagger}\ket{\mathbf{k}} A(\mathbf{p}_{1})A^{*}(\mathbf{p}_{2})\text{ with }\mathbf{p}_{1} ^{\perp}=\mathbf{p}_{2}^{\perp} \\
  = & \int \frac{d^{3}p_{1}}{(2\pi)^{3}} \frac{dp_{2}^{\parallel}}{(2\pi)^{3}}(2\pi)^{2} \frac{1}{\sqrt{ 2E_{\mathbf{p}_{1}} }} \frac{1}{\sqrt{ 2E_{\mathbf{p}_{2}} }}(2\pi)i\mathcal{M}(p_{1}\rightarrow k)\delta(E_{\mathbf{k}}-E_{\mathbf{p}_{1}})(2\pi)(-i)\mathcal{M}(p_{2}\rightarrow k) \delta(E_{\mathbf{k}}-E_{\mathbf{p}_{2}}) A(\mathbf{p}_{1})A^{*}(\mathbf{p}_{2}) \\
- = &  \int \frac{d^{3}p_{1}}{(2\pi)^{3}} \frac{dp_{2}^{\parallel}}{(2\pi)^{3}}(2\pi)^{4} \frac{1}{\sqrt{ 2E_{\mathbf{p}_{1}} }} \frac{1}{\sqrt{ 2E_{\mathbf{p}_{2}} }}\mathcal{M}\mathcal{M}^{*}\delta(E_{\mathbf{k}}-E_{\mathbf{p}_{1}})A(\mathbf{p}_{1})A^{*}(\mathbf{p}_{2})\left[  \frac{\delta(p_{2}^{\parallel}-p_{1}^{\parallel})}{p_{1}^{\parallel} / E_{\mathbf{k}}}+ \frac{\delta(p_{2}^{\parallel}+p_{1}^{\parallel})}{-p_{1}^{\parallel} / E_{\mathbf{k}}}  \right]
+ = &  \int \frac{d^{3}p_{1}}{(2\pi)^{3}} \frac{dp_{2}^{\parallel}}{(2\pi)^{3}}(2\pi)^{4} \frac{1}{\sqrt{ 2E_{\mathbf{p}_{1}} }} \frac{1}{\sqrt{ 2E_{\mathbf{p}_{2}} }}\mathcal{M}\mathcal{M}^{*}\delta(E_{\mathbf{k}}-E_{\mathbf{p}_{1}})A(\mathbf{p}_{1})A^{*}(\mathbf{p}_{2})\left[  \frac{\delta(p_{2}^{\parallel}-p_{1}^{\parallel})}{\left|p_{1}^{\parallel} / E_{\mathbf{k}}\right|}+ \frac{\delta(p_{2}^{\parallel}+p_{1}^{\parallel})}{\left|p_{1}^{\parallel} / E_{\mathbf{k}}\right|}  \right]
 \end{align}$$
 Assume that $A(\mathbf{p})$ is strongly peaked around $\mathbf{p}_{i}$. Then:
 $$\begin{align}
- & \int \frac{d^{3}p_{1}}{(2\pi)^{3}} \frac{dp_{2}^{\parallel}}{(2\pi)^{3}}(2\pi)^{4} \frac{1}{\sqrt{ 2E_{\mathbf{p}_{1}} }} \frac{1}{\sqrt{ 2E_{\mathbf{p}_{2}} }}\mathcal{M}\mathcal{M}^{*}\delta(E_{\mathbf{k}}-E_{\mathbf{p}_{1}})A(\mathbf{p}_{1})A^{*}(\mathbf{p}_{2})\left[  \frac{\delta(p_{2}^{\parallel}-p_{1}^{\parallel})}{p_{1}^{\parallel} / E_{\mathbf{k}}}+ \frac{\delta(p_{2}^{\parallel}+p_{1}^{\parallel})}{-p_{1}^{\parallel} / E_{\mathbf{k}}}  \right] \\
- = &  \int \frac{d^{3}p_{1}}{(2\pi)^{3}} \frac{dp_{2}^{\parallel}}{(2\pi)^{3}}(2\pi)^{4} \frac{1}{\sqrt{ 2E_{\mathbf{p}_{1}} }} \frac{1}{\sqrt{ 2E_{\mathbf{p}_{2}} }}\mathcal{M}\mathcal{M}^{*}\delta(E_{\mathbf{k}}-E_{\mathbf{p}_{1}})A(\mathbf{p}_{1})A^{*}(\mathbf{p}_{2})  \frac{\delta(p_{2}^{\parallel}-p_{1}^{\parallel})}{p_{1}^{\parallel} / E_{\mathbf{k}}}  \\
+ & \int \frac{d^{3}p_{1}}{(2\pi)^{3}} \frac{dp_{2}^{\parallel}}{(2\pi)^{3}}(2\pi)^{4} \frac{1}{\sqrt{ 2E_{\mathbf{p}_{1}} }} \frac{1}{\sqrt{ 2E_{\mathbf{p}_{2}} }}\mathcal{M}\mathcal{M}^{*}\delta(E_{\mathbf{k}}-E_{\mathbf{p}_{1}})A(\mathbf{p}_{1})A^{*}(\mathbf{p}_{2})\left[  \frac{\delta(p_{2}^{\parallel}-p_{1}^{\parallel})}{\left|p_{1}^{\parallel} / E_{\mathbf{k}}\right|}+ \frac{\delta(p_{2}^{\parallel}+p_{1}^{\parallel})}{\left|p_{1}^{\parallel} / E_{\mathbf{k}}\right|}  \right] \\
+ = &  \int \frac{d^{3}p_{1}}{(2\pi)^{3}} \frac{dp_{2}^{\parallel}}{(2\pi)^{3}}(2\pi)^{4} \frac{1}{\sqrt{ 2E_{\mathbf{p}_{1}} }} \frac{1}{\sqrt{ 2E_{\mathbf{p}_{2}} }}\mathcal{M}\mathcal{M}^{*}\delta(E_{\mathbf{k}}-E_{\mathbf{p}_{1}})A(\mathbf{p}_{1})A^{*}(\mathbf{p}_{2})  \frac{\delta(p_{2}^{\parallel}-p_{1}^{\parallel})}{\left|p_{1}^{\parallel} / E_{\mathbf{k}}\right|}  \\
  = &  \int \frac{d^{3}p_{1}}{(2\pi)^{3}} (2\pi) \frac{1}{ 2E_{\mathbf{p}_{1}} }|\mathcal{M} |^{2} |A(\mathbf{p}_{1})|^{2} \frac{1}{v_{1}^{\parallel}}\delta(E_{\mathbf{k}}-E_{\mathbf{p}_{1}})
 \end{align}$$
 Then also because that $A(\mathbf{p})$ is strongly peaked, we have:
@@ -402,9 +405,10 @@ $$\begin{align}
 \frac{d\sigma}{d\Omega} & = \frac{1}{16\pi^{2}}|\mathcal{M}|^{2} \\
  & = \delta^{s r} \frac{Z^{2}\alpha^{2}}{4m^{2}v^{4} \sin ^{4} \frac{\theta}{2}}
 \end{align}$$
-If we are completely in classical, we don't have spins. We can just remove the $\delta^{s r}$ in the front, and write:
-$$\begin{align}
- \frac{d\sigma}{d\Omega}= \frac{Z^{2}\alpha^{2}}{4m^{2}v^{4}\sin ^{4} \frac{\theta}{2}}
+If we take the spin average, we need to compute:
+$$\begin{align} & \frac{d\sigma}{d\Omega}= \frac{1}{2}\sum_{s,r}\delta^{sr } \frac{Z^{2}\alpha^{2}}{4m^{2}v^{4}\sin ^{4} \frac{\theta}{2}} \\
+
+  \implies& \frac{d\sigma}{d\Omega}= \frac{Z^{2}\alpha^{2}}{4m^{2}v^{4}\sin ^{4} \frac{\theta}{2}}
 \end{align}$$
 # Problem 3
 ## (a)

@@ -83,12 +83,47 @@ Observe that this current is indeed not a surface current with Dirac distributio
 # Problem 2
 ## (a)
 
-In the most general sense, assume that there is a magnetic field. Then:
+Know that $\psi$ does not depend on $\mathbf{r}$. So:
 $$\begin{align}
-\Delta F= \int d^{3}r\left[  \left|\frac{\hbar^{2}}{2m^{*}}\left( -i\nabla- \frac{e^{*}\mathbf{A}}{\hbar} \right)\psi\right|^{2} +a|\psi|^{2}+ \frac{b}{2}|\psi |^{4}+ \frac{B^{2}}{2\mu_{0}} \right]
+\Delta F & = \int d^{3}r\left( a|\psi|^{2}+ \frac{b}{2}|\psi |^{4} \right) \\
+ & = V\left( a|\psi|^{2}+ \frac{b}{2}|\psi|^{4} \right)
 \end{align}$$
 ## (b)
 
+We set:
+$$\begin{align}
+ &  \frac{\partial \Delta F}{\partial|\psi|}=2aV|\psi|+2b|\psi |^{3}=0 \\
+\implies & |\psi|(aV+b|\psi|^{2})=0
+\end{align}$$
+We know that if we are slightly below $T_{c}$, the non-zero $|\psi|$ is stable. Then we have:
+$$\begin{align}
+ & a_{0}(T-T_{c})V+ b|\psi|^{2}=0 \\
+\implies & |\psi|= \sqrt{  \frac{a_{0}(T_{c}-T)}{b} }
+\end{align}$$
+If we are slightly above $T_{c}$, then $|\psi|=0$ is stable. Then:
+$$\begin{align}
+|\psi|=\left\{\begin{aligned}
+ & 0,\ T>T_{c} \\
+ & \sqrt{ \frac{a_{0}(T_{c}-T)}{b} },\ T<T_{c}
+\end{aligned}\right.
+\end{align}$$
+For $T<T_{c}$, we have:
+$$\begin{align}
+\Delta F & = V\left[ a \frac{a_{0}(T_{c}-T)}{b}+ \frac{b}{2}\left(  \frac{a_{0}(T_{c}-T)}{b} \right)^{2} \right] \\
+ & = - \frac{a_{0}^{2}V}{2b}(T_{c}-T)^{2}
+\end{align}$$
+$$\begin{align}
+S & = - \frac{\partial \Delta F}{\partial T} \\
+ & =  \frac{a_{0}^{2}V}{b}(T-T_{c}) \\
+\implies \frac{\partial S}{\partial T} & = \frac{a_{0}^{2}V}{b} \\
+\implies C & = \frac{T\partial S}{\partial T}= \frac{a_{0}^{2}V}{b}T
+\end{align}$$
+For $T>T_{c}$, we have:
+$$\begin{align}
+ & \Delta F=0 \\
+\implies &  S= -\frac{\partial \Delta F}{\partial T}=0 \\
+\implies & C= T \frac{\partial S}{\partial T }= 0
+\end{align}$$
 
 
 
