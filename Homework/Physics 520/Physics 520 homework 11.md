@@ -253,4 +253,47 @@ $$\begin{align}
 This is because $v_{s}$ is non-zero. Here the cylinder is too thin, so that the magnetic field is everywhere inside the superconductor. Therefore, the supercurrent is non-zero everywhere. So $v_{s}\neq 0$, therefore $\Phi$ is not quantized.
 ## (f)
 
+# Problem 6
+## (a)
 
+If there is no magnetic field or current, and we assume the wavefunction to be uniform, we know that:
+$$\begin{align}
+\Delta F & = \int dx \left( a|\psi|^{2}+ \frac{b}{2}|\psi|^{4} \right) \\
+ & = L\left( a|\psi|^{2}+ \frac{b}{2}|\psi|^{4} \right)
+\end{align}$$
+Then:
+$$\begin{align}
+ & \frac{\partial \Delta F}{\partial|\psi|}=0 \\
+\implies & |\psi_{0} |= \sqrt{ \frac{a_{0}(T_{c}-T)}{b} }
+\end{align}$$
+Here we know that the non-zero solution corresponds to the minimum. If we take into account the phase factor, we have:
+$$\begin{align}
+\psi_{0}= \sqrt{ \frac{a_{0}(T_{c}-T)}{b} }e^{i\theta_{0}}
+\end{align}$$
+## (b)
+
+The second GL equation tells us that:
+$$\begin{align}
+j_{s} & = \frac{\hbar e^{*}}{2m^{*}} i \psi \overset{\leftrightarrow}{\partial_{x}}\psi ^{*}- \frac{(e^{*})^{2}}{m^{*} }A
+\end{align}$$
+We compute:
+$$\begin{align}
+\psi \overset{\leftrightarrow}{\partial_{x}}\psi ^{*} &  = |\psi|^{2} e^{iqx}\partial_{x}e^{-iqx}-|\psi|^{2} e^{-iqx}\partial_{x}e^{iqx} \\
+ & = -2iq|\psi|^{2}
+\end{align}$$
+Then:
+$$\begin{align}
+ & j_{s}= |\psi|^{2} e^{*} v_{s}= \frac{\hbar e^{*}}{2m^{*}}2q|\psi|^{2}- \frac{(e^{*})^{2}}{m^{*}}A \\
+\implies & v_{s}= \frac{1}{m^{*}}(\hbar q-e^{*}A)
+\end{align}$$
+## (c)
+
+We have:
+$$\begin{align}
+(-i\hbar \nabla-e^{*}A)\psi & = (\hbar q-e^{*}A)\psi \\
+ & = m^{*}v_{s} \psi
+\end{align}$$
+Then:
+$$\begin{align}
+\Delta F & = \int dx\left[ a|\psi|^{2}+ \frac{b}{2}|\psi|^{4}+ \frac{1}{2m^{*}}(m^{*}v_{s})^{2}|\psi|^{2}+ \frac{B^{2}}{2\mu_{0}} \right] 
+\end{align}$$

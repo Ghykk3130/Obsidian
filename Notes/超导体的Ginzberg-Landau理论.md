@@ -27,7 +27,7 @@ $$\begin{align}
 $$\begin{align}
 \boxed{\frac{\hbar^{2}}{2m^{*}}\left( i\nabla+ \frac{e^{*}\mathbf{A}}{\hbar} \right)^{2}\psi+a\psi+b|\psi|^{2}\psi=0}
 \end{align}$$
-这称为第一Landau-Ginzberg方程。
+这称为第一Ginzberg-Landau方程。
 
 接下来考虑变分$\delta \mathbf{A}$。那么：
 $$\begin{align}
@@ -51,5 +51,5 @@ $$\begin{align}
 \delta F & =  \frac{\hbar^{2}}{2m^{*}}\left( \int d^{3}r\frac{e^{*}\delta \mathbf{A}}{\hbar}\cdot i \psi ^{*} \overset{\leftrightarrow}{\nabla}\psi+ \int d^{3}r \frac{2(e^{*})^{2}}{\hbar^{2}} \mathbf{A}|\psi |^{2}\cdot\delta \mathbf{A}\right)+\int d^{3}r \delta \mathbf{A}\cdot \mathbf{j}_{s}=0 \\
 \implies  & \boxed{\mathbf{j}_{s}=\frac{\hbar e^{*}}{2m^{*}}i \psi ^{}  \overset{\leftrightarrow}{\nabla}\psi ^{*}- \frac{(e^{*})^{2}}{m^{*}}\mathbf{A}|\psi |^{2}}
 \end{align}$$
-这称为第二Landau-Ginzberg方程。
+这称为第二Ginzberg-Landau方程。
 
