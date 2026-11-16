@@ -92,12 +92,12 @@ $$\begin{align}
 
 We set:
 $$\begin{align}
- &  \frac{\partial \Delta F}{\partial|\psi|}=2aV|\psi|+2b|\psi |^{3}=0 \\
-\implies & |\psi|(aV+b|\psi|^{2})=0
+ &  \frac{\partial \Delta F}{\partial|\psi|}=2aV|\psi|+2bV|\psi |^{3}=0 \\
+\implies & |\psi|(a+b|\psi|^{2})=0
 \end{align}$$
 We know that if we are slightly below $T_{c}$, the non-zero $|\psi|$ is stable. Then we have:
 $$\begin{align}
- & a_{0}(T-T_{c})V+ b|\psi|^{2}=0 \\
+ & a_{0}(T-T_{c})+ b|\psi|^{2}=0 \\
 \implies & |\psi|= \sqrt{  \frac{a_{0}(T_{c}-T)}{b} }
 \end{align}$$
 If we are slightly above $T_{c}$, then $|\psi|=0$ is stable. Then:
@@ -113,16 +113,16 @@ $$\begin{align}
  & = - \frac{a_{0}^{2}V}{2b}(T_{c}-T)^{2}
 \end{align}$$
 $$\begin{align}
-S & = - \frac{\partial \Delta F}{\partial T} \\
+\Delta S & = - \frac{\partial \Delta F}{\partial T} \\
  & =  \frac{a_{0}^{2}V}{b}(T-T_{c}) \\
 \implies \frac{\partial S}{\partial T} & = \frac{a_{0}^{2}V}{b} \\
-\implies C & = \frac{T\partial S}{\partial T}= \frac{a_{0}^{2}V}{b}T
+\implies \Delta C & = \frac{T\partial S}{\partial T}= \frac{a_{0}^{2}V}{b}T
 \end{align}$$
-For $T>T_{c}$, we have:
+Here $\Delta S$ is $S_{s}-S_{n}$, $\Delta C$ is $C_{s}-C_{n}$. For $T>T_{c}$, we have:
 $$\begin{align}
  & \Delta F=0 \\
-\implies &  S= -\frac{\partial \Delta F}{\partial T}=0 \\
-\implies & C= T \frac{\partial S}{\partial T }= 0
+\implies &  \Delta S= -\frac{\partial \Delta F}{\partial T}=0 \\
+\implies & \Delta C= T \frac{\partial S}{\partial T }= 0
 \end{align}$$
 
 
