@@ -131,6 +131,31 @@ $$\begin{align}
 ![[e05018f14922ee171554b29273a426cd.jpg|centering|400]]
 
 ![[9b2672e6bf5124208a6ad38e21f09278.jpg|centering|400]]
+# Problem 3
+## (a)
+
+If the magnetic field is zero, the GL equation reduces to:
+$$\begin{align}
+ & - \frac{\hbar^{2} \partial^{2}_{x}}{2m^{*}}\psi+a\psi+b|\psi|^{2}\psi=0 \\
+\implies & - \frac{\hbar^{2}\partial^{2}_{x}}{2m^{*}}\psi+a\psi+b\psi^{3}=0
+\end{align}$$
+if $\psi\in \mathbb{R}$. Then:
+$$\begin{align}
+ & - \frac{\hbar^{2} \partial_{x}^{2}}{2m^{*}b \psi_{0}^{3}}\psi+ \frac{a}{b} \frac{\psi}{\psi_{0}^{3}}+ f^{3}=0
+\end{align}$$
+Observe that:
+$$\begin{align}
+ & \frac{a}{b} \frac{1}{\psi_{0}^{3}}= \frac{a}{b} \frac{b}{|a|} \sqrt{  \frac{b}{|a|} }=- \frac{1}{\psi_{0}} \\
+ & \frac{1}{b\psi_{0}^{2}}= \frac{1}{b\cdot \frac{|a|}{b}}= \frac{1}{|a|}
+\end{align}$$
+Then:
+$$\begin{align}
+ & - |a|\frac{\hbar^{2}\partial^{2}_{x}}{2m^{*}}f- f+f^{3}=0 \\
+\implies & \xi^{2} \frac{d^{2}}{dx^{2}}f=-f+f^{3},\ \xi= \hbar \sqrt{  \frac{|a|}{2m^{*}} }
+\end{align}$$
+## (b)
+
+
 # Problem 4
 ## (a)
 
