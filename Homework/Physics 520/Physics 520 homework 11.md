@@ -155,6 +155,39 @@ $$\begin{align}
 \end{align}$$
 ## (b)
 
+We have:
+$$\begin{align}
+ & \xi^{2} \frac{d^{2}f}{dx^{2}}=-f+f^{3} \\
+\implies & \xi^{2} 2 \frac{df}{dx} \frac{d^{2}f}{dx^{2}}=(-f+f^{3})2 \frac{df}{dx} \\
+\implies & \xi^{2} \frac{d}{dx}\left(  \left(  \frac{df}{dx} \right)^{2} \right)= \frac{d}{dx}\left( - f^{2}+ \frac{f^{4}}{2} \right) \\
+\implies & \xi^{2} \left(  \frac{df}{dx} \right)^{2}=-f^{2}+ \frac{f^{4}}{2}+C
+\end{align}$$
+Take $x\rightarrow \infty$. Then $\frac{df}{dx}=0$, $f= \frac{\psi}{\psi_{0}}=1$. Then:
+$$\begin{align}
+0=-1+ \frac{1}{2}+C\implies C= \frac{1}{2}
+\end{align}$$
+Then:
+$$\begin{align}
+ & \xi^{2}\left(  \frac{df}{dx} \right)^{2}=\frac{1}{2}(f^{2}-1)^{2} \\
+\implies &  \xi \frac{df}{dx}=\pm \frac{1}{\sqrt{ 2 }}(f^{2}-1)
+\end{align}$$
+If we take $+$， then:
+$$\begin{align}
+ & \int \frac{df}{f^{2}-1}= \frac{1}{\sqrt{ 2 }\xi}\int dx \\
+\implies & \frac{1}{2} \int \frac{df}{f-1}- \frac{1}{2} \int \frac{df}{f+1}= \frac{1}{\sqrt{ 2 }\xi}\int dx \\
+\implies &  \frac{1}{2} \ln| \frac{f-1}{f+1} |= \frac{1}{\sqrt{ 2 }} \frac{x}{\xi}+C
+\end{align}$$
+If $x\rightarrow \infty$, then $f\rightarrow -1$, conflicting our assumption. Then we must have:
+$$\begin{align}
+ & \xi \frac{df}{dx}=- \frac{1}{\sqrt{ 2 }}(f^{2}-1) \\
+\implies & - \int \frac{df}{f^{2}-1}= \frac{1}{\sqrt{ 2 }\xi}\int dx \\
+\implies & \frac{1}{2}\ln | \frac{f-1}{f+1} |= - \frac{1}{\sqrt{ 2 }\xi}x+C \\
+\implies & \left| \frac{f-1}{f+1} \right|= C\exp\left( -  \frac{\sqrt{ 2 }}{\xi}x \right) \\
+\implies & \frac{1-f}{f+1}=C \exp\left( - \frac{\sqrt{ 2 }}{\xi}x  \right) \\
+\implies & f= \frac{1-Ce^{-\sqrt{ 2 }x/\xi}}{1+Ce^{-\sqrt{ 2x/\xi }}}= \frac{1-\exp\left( - \frac{\sqrt{ 2 }x}{\xi}+C^{'} \right)}{1+ \exp\left( - \frac{\sqrt{ 2 }x}{\xi}+C^{'} \right)}=\tanh\left( \frac{x}{\sqrt{ 2 }\xi}+ C^{''} \right)
+\end{align}$$
+Clearly, we have:
+$$c= \frac{1}{\sqrt{ 2 }\xi}$$
 
 # Problem 4
 ## (a)
@@ -275,8 +308,11 @@ $$\begin{align}
 \end{align}$$
 ## (e)
 
-This is because $v_{s}$ is non-zero. Here the cylinder is too thin, so that the magnetic field is everywhere inside the superconductor. Therefore, the supercurrent is non-zero everywhere. So $v_{s}\neq 0$, therefore $\Phi$ is not quantized.
+If the cylinder is thick, then we are effectively having a lot of superconducting loops. Each loop has quantized flux, but with difference area. Then if you take average of their magnetic flux, it would turn out to be not quantized!
+
 ## (f)
+
+
 
 # Problem 6
 ## (a)
