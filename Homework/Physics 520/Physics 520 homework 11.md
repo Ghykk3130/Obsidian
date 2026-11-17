@@ -324,7 +324,15 @@ $$\begin{align}
  & = V\left( - \frac{a^{2}}{2b} \right)\left( 1+ \frac{m^{*}}{2a}v^{2}_{s} \right)^{2} \\
  & = V\left(  - \frac{a^{2}}{2b} \right)\left( 1- \frac{m^{*}}{2|a|}v^{2}_{s} \right)^{2}
 \end{align}$$
-
+Know that $|\psi|^{2}> 0$, then $1- \frac{m^{*}}{2|a|}v^{2}_{s}>0$. Therefore to minimize $\Delta F$, we maximize $\left( 1- \frac{m^{*}}{2|a|}v^{2}_{s} \right)^{2}$, meaning that we minimize $v^{2}_{s}$. Then we minimize $\left| n- \frac{\Phi}{\Phi_{0}} \right|$
+$$\begin{align}
+n= \left\lfloor   \frac{\Phi}{\Phi_{0}}+ \frac{1}{2}  \right\rfloor 
+\end{align}$$
+And:
+$$\begin{align}
+|\psi|^{2}= \left( - \frac{a}{b} \right)\left( 1- \frac{1}{2|a|^{3}} \frac{\hbar^{2}}{m^{*}}\left( \left\lfloor   \frac{\Phi}{\Phi_{0}}+ \frac{1}{2}  \right\rfloor - \frac{\Phi}{\Phi_{0}} \right)^{2} \right)
+\end{align}$$
+![[6663e639d2ff12df6a93396accea8fec.jpg|centering|400]]
 
 
 # Problem 6
