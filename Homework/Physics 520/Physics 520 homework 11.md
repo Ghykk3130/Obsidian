@@ -268,9 +268,9 @@ $$\begin{align}
 \Delta F & = \int d^{3}r \left[  \frac{\hbar^{2}}{2m^{*}}\left| \left( -i\nabla- \frac{e^{*}\mathbf{A}}{\hbar} \right)\psi \right| ^{2} +a|\psi|^{2}+ \frac{b}{2}|\psi|^{4}+ \frac{B^{2}}{2\mu_{0}}\right] \\
  & = \int d^{3}r \left[  \frac{\hbar^{2}}{2m^{*}}\left|\left( \nabla \theta- \frac{e^{*}\mathbf{A}}{\hbar} \right)\psi\right|^{2}+a|\psi|^{2}+ \frac{b}{2}|\psi|^{4}+ \frac{B^{2}}{2\mu_{0}}  \right] \\
  & = \int d^{3}r \left[   \frac{m^{*}}{2}v_{s}^{2}|\psi|^{2}+a|\psi|^{2}+ \frac{b}{2}|\psi|^{4}+ \frac{B_{0}^{2}}{2\mu_{0}}  \right] \\
- & = \left(  \frac{m^{*}}{2}v^{2}_{s}|\psi|^{2}+a|\psi|^{2}+ \frac{b}{2}|\psi|^{4}+ \frac{B^{2}_{0}}{2\mu_{0}} \right)2\pi adL
+ & = \left(  \frac{m^{*}}{2}v^{2}_{s}|\psi|^{2}+a|\psi|^{2}+ \frac{b}{2}|\psi|^{4}+ \frac{B^{2}_{0}}{2\mu_{0}} \right)V
 \end{align}$$
-where $L$ is the length of the cylinder. 
+where $V=2\pi adL$ is the volume of the cylinder. 
 ## (c)
 
 Now we have:
@@ -311,6 +311,19 @@ $$\begin{align}
 If the cylinder is thick, then we are effectively having a lot of superconducting loops. Each loop has quantized flux, but with difference area. Then if you take average of their magnetic flux, it would turn out to be not quantized!
 
 ## (f)
+
+We have:
+$$\begin{align}
+\frac{\delta \Delta F}{\delta \psi ^{*}} & = \frac{1}{2}m^{*}v^{2}_{s}\psi+ a\psi+ b|\psi|^{2}\psi=0 \\
+\implies|\psi|^{2} & = \left( - \frac{a}{b} \right)\left( 1+ \frac{m^{*}}{2a}v_{s}^{2} \right)
+\end{align}$$
+Then:
+$$\begin{align}
+\Delta F & = V\left(  \frac{1}{2}m^{*}v^{2}_{s}|\psi|^{2}+ a|\psi|^{2}+ \frac{b}{2}|\psi|^{4} \right) \\
+ & = V\left[ \left( - \frac{a^{2}}{b} \right)\left( 1+ \frac{m^{*}}{2a}v^{2}_{s} \right)^{2}+ \frac{b}{2}\cdot \frac{a^{2}}{b^{2}}\left( 1+ \frac{m^{*}}{2a}v^{2}_{s} \right)^{2} \right] \\
+ & = V\left( - \frac{a^{2}}{2b} \right)\left( 1+ \frac{m^{*}}{2a}v^{2}_{s} \right)^{2} \\
+ & = V\left(  - \frac{a^{2}}{2b} \right)\left( 1- \frac{m^{*}}{2|a|}v^{2}_{s} \right)^{2}
+\end{align}$$
 
 
 
