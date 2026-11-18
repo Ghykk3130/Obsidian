@@ -150,8 +150,8 @@ $$\begin{align}
 \end{align}$$
 Then:
 $$\begin{align}
- & - |a|\frac{\hbar^{2}\partial^{2}_{x}}{2m^{*}}f- f+f^{3}=0 \\
-\implies & \xi^{2} \frac{d^{2}}{dx^{2}}f=-f+f^{3},\ \xi= \hbar \sqrt{  \frac{|a|}{2m^{*}} }
+ & - \frac{\hbar^{2}\partial^{2}_{x}}{2m^{*}|a|}f- f+f^{3}=0 \\
+\implies & \xi^{2} \frac{d^{2}}{dx^{2}}f=-f+f^{3},\ \xi= \hbar \sqrt{  \frac{1}{2m^{*}|a|} }
 \end{align}$$
 ## (b)
 
@@ -328,10 +328,6 @@ Know that $|\psi|^{2}> 0$, then $1- \frac{m^{*}}{2|a|}v^{2}_{s}>0$. Therefore to
 $$\begin{align}
 n= \left\lfloor   \frac{\Phi}{\Phi_{0}}+ \frac{1}{2}  \right\rfloor 
 \end{align}$$
-And:
-$$\begin{align}
-|\psi|^{2}= \left( - \frac{a}{b} \right)\left( 1- \frac{1}{2|a|^{3}} \frac{\hbar^{2}}{m^{*}}\left( \left\lfloor   \frac{\Phi}{\Phi_{0}}+ \frac{1}{2}  \right\rfloor - \frac{\Phi}{\Phi_{0}} \right)^{2} \right)
-\end{align}$$
 ![[6663e639d2ff12df6a93396accea8fec.jpg|centering|400]]
 
 
@@ -356,7 +352,7 @@ $$\begin{align}
 
 The second GL equation tells us that:
 $$\begin{align}
-j_{s} & = \frac{\hbar e^{*}}{2m^{*}} i \psi \overset{\leftrightarrow}{\partial_{x}}\psi ^{*}- \frac{(e^{*})^{2}}{m^{*} }A
+j_{s} & = \frac{\hbar e^{*}}{2m^{*}} i \psi \overset{\leftrightarrow}{\partial_{x}}\psi ^{*}- \frac{(e^{*})^{2}}{m^{*} }A|\psi|^{2}
 \end{align}$$
 We compute:
 $$\begin{align}
@@ -365,7 +361,7 @@ $$\begin{align}
 \end{align}$$
 Then:
 $$\begin{align}
- & j_{s}= |\psi|^{2} e^{*} v_{s}= \frac{\hbar e^{*}}{2m^{*}}2q|\psi|^{2}- \frac{(e^{*})^{2}}{m^{*}}A \\
+ & j_{s}= |\psi|^{2} e^{*} v_{s}= \frac{\hbar e^{*}}{2m^{*}}2q|\psi|^{2}- \frac{(e^{*})^{2}}{m^{*}}A|\psi|^{2} \\
 \implies & v_{s}= \frac{1}{m^{*}}(\hbar q-e^{*}A)
 \end{align}$$
 ## (c)
@@ -379,3 +375,34 @@ Then:
 $$\begin{align}
 \Delta F & = \int dx\left[ a|\psi|^{2}+ \frac{b}{2}|\psi|^{4}+ \frac{1}{2m^{*}}(m^{*}v_{s})^{2}|\psi|^{2}+ \frac{B^{2}}{2\mu_{0}} \right] 
 \end{align}$$
+We take:
+$$\begin{align}
+\frac{\delta \Delta F}{\delta \psi ^{*}} & = \frac{1}{2}m^{*}v^{2}_{s}\psi+ a\psi+ b|\psi|^{2}\psi=0 \\
+\implies|\psi|^{2} & = \left( - \frac{a}{b} \right)\left( 1+ \frac{m^{*}}{2a}v_{s}^{2} \right) \\
+\implies |\psi|^{} & = \psi_{0}\sqrt{ 1- \frac{m^{*}}{2|a|}v^{2}_{s} }
+\end{align}$$
+Know that $j_{s}=|\psi|^{2}e^{*}v_{s}$, then:
+$$\begin{align}
+ & |\psi |^{2}= \psi_{0}^{2}\left( 1- \frac{m^{*}}{2|a||\psi|^{4}(e^{*})^{2}}j_{s}^{2} \right) \\
+\implies & j_{s}^{2}= \frac{2|a|(e^{*})^{2}}{m^{*}\psi_{0}^{2}}|\psi |^{4}(\psi_{0}^{2}-|\psi|^{2}) \\
+\implies & j_{s}= e^{*} \sqrt{ \frac{2b}{m^{*}} }|\psi|^{2}\sqrt{ \psi_{0}^{2}-|\psi|^{2} }
+\end{align}$$
+![[36fc8676e4ab4568bd0093f2bf5036fd.jpg|centering|400]]
+## (d)
+
+If the current is larger than the maximum of the function $j_{s}=e^{*} \sqrt{ \frac{2b}{m^{*}} }|\psi|^{2}\sqrt{ \psi_{0}^{2}- |\psi|^{2} }$, then $\frac{1}{2}m^{*}v^{2}_{s}+a+b|\psi|^{2}=0$ has no solution. In order for $\frac{\delta \Delta F}{\delta \psi ^{*}}=0$, we must have $\psi=0$, meaning that the superconducting state is destroyed. 
+
+We have:
+$$\begin{align}
+j_{s}^{2}= \frac{2b(e^{*})^{2}}{m^{*}}|\psi|^{4}(\psi^{2}_{0}-|\psi|^{2})
+\end{align}$$
+It suffices to maximize this against $|\psi|^{2}$. We take the derivative:
+$$\begin{align}
+ & 2|\psi|^{2}(\psi_{0}^{2}-|\psi|^{2})+ |\psi|^{4}(-1)=0 \\
+\implies & |\psi|=\sqrt{ \frac{2}{3} }\psi_{0}
+\end{align}$$
+Then:
+$$\begin{align}
+ & j_{s}= \frac{2\sqrt{ 2 }}{3\sqrt{ 3 }} e^{*} \sqrt{ \frac{b}{m^{*}} } \psi_{0}^{3}= \frac{2}{3} \frac{e^{*}}{b^{}} \sqrt{ \frac{2}{3m^{*}} } (a_{0}(T_{c}-T))^{3/2}
+\end{align}$$
+
