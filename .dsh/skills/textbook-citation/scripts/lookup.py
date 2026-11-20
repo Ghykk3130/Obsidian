@@ -26,7 +26,9 @@ try:
 except AttributeError:
     pass
 
-DEFAULT_DATA = Path.cwd() / ".dsh" / "textbooks"
+HERE = Path(__file__).resolve()
+_VAULT_DATA = HERE.parents[3] / "textbooks" if len(HERE.parents) > 3 else None
+DEFAULT_DATA = _VAULT_DATA if _VAULT_DATA and _VAULT_DATA.exists() else Path.cwd() / ".dsh" / "textbooks"
 
 
 def load_catalog(data_dir: Path) -> dict:

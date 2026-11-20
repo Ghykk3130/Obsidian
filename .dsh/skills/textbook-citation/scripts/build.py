@@ -24,7 +24,9 @@ from collections import Counter
 from datetime import datetime, timezone
 from pathlib import Path
 
-DEFAULT_DATA = Path.cwd() / ".dsh" / "textbooks"
+HERE = Path(__file__).resolve()
+_VAULT_DATA = HERE.parents[3] / "textbooks" if len(HERE.parents) > 3 else None
+DEFAULT_DATA = _VAULT_DATA if _VAULT_DATA and _VAULT_DATA.exists() else Path.cwd() / ".dsh" / "textbooks"
 
 LIGATURES = {
     "\ufb00": "ff", "\ufb01": "fi", "\ufb02": "fl", "\ufb03": "ffi",
