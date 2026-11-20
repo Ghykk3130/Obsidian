@@ -4471,8 +4471,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200.5,
-    "collapsed": true
+    "width": 200.5
   },
   "right": {
     "id": "9003d078f8dbc4ed",
@@ -4579,6 +4578,11 @@
   "active": "4d895fc9a86331f2",
   "lastOpenFiles": [
     "Homework/Physics 513/Physics 513 homework 11.md",
+    "Homework/Physics 463/Physics 463 homework 3.md",
+    "Homework/Physics 463/Physics 463 homework 6.md",
+    "Homework/Physics 463/Physics 463 homework 8.md",
+    "Homework/Physics 463/Physics 463 homework 1.md",
+    "Notes/Yukawa理论.md",
     "_probe.out",
     "_probe.js",
     "_probe.js~RF14d69f1.TMP",
@@ -4610,7 +4614,6 @@
     "Notes/Dirac方程的解.md",
     "Notes/Dirac旋量场.md",
     "Notes/Drude模型.md",
-    "Notes/Yukawa理论.md",
     "Notes/散射理论.md",
     "Notes/Feynman图.md",
     "Homework/Physics 513/Physics 513 homework 9.md",
@@ -4619,9 +4622,6 @@
     "Homework/Physics 402/Physics 402 homework 3.md",
     "Homework/Physics 402/Physics 402 homework 2.md",
     "Homework/Physics 513/Physics 513 homework 8.md",
-    "Notes/Wick定理.md",
-    "Notes/Dirac场的量子化.md",
-    "Notes/Untitled 17.md",
-    "Homework/Physics 513/Physics 513 homework 6.md"
+    "Notes/Wick定理.md"
   ]
 }

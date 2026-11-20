@@ -1,6 +1,6 @@
 Yukawa理论描述费米子场与标量场的相互作用。我们假设Yukawa相互作用lagrangian为：
 $$\begin{align}
-\mathcal{L}_{\text{Y}}=-g\bar{\psi}\phi \psi
+\mathcal{L}_{\text{Y}}=-g\bar{\psi} \phi\psi
 \end{align}$$
 假设散射过程为两个费米子变两个费米子。省略掉自旋，我们试图计算二阶项：
 $$\begin{align}

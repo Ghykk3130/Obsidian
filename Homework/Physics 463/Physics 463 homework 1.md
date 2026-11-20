@@ -26,6 +26,7 @@ h(s) & = \int_{\mathbb{R}}dqg(q)e^{-iqs} \\
  & = \int dx f(x)2\pi\delta(x+s) \\
  & = 2\pi f(-s)
 \end{align}$$
+
 # 3.
 We require that $q$ satisfies the periodic boundary condition:
 $$q_{m}L= 2\pi m\text{ where }L=5a\text{ is the x-space length of the lattice}$$

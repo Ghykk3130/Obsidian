@@ -1,5 +1,6 @@
 # Kittel 8.1
 ## (a)
+
 We have:
 $$E_{d}= \frac{13.6}{\epsilon^{2}} \frac{m_{e}}{m}\text{ eV}\approx 629.63\ \mu\text{eV}$$
 ## (b)
@@ -16,6 +17,7 @@ $$\begin{align}
 So the concentration should roughly be between $10^{20}$ and $10^{21}$.
 # Kittel 8.2
 ## (a)
+
 By Kittel's book, we have:
 $$n=(n_{0}N_{d})^{1/2} \exp(- E_{d} / 2kT),\ n_{0}=2\left( \frac{m_{e}kT}{2\pi \hbar^{2}} \right)^{3/2}$$
 We have:
