@@ -1,3 +1,5 @@
+# 1. Yukawa顶点
+
 Yukawa理论描述费米子场与标量场的相互作用。我们假设Yukawa相互作用lagrangian为：
 $$\begin{align}
 \mathcal{L}_{\text{Y}}=-g\bar{\psi} \phi\psi
@@ -39,6 +41,32 @@ Q & = \int d^{3}x \psi ^{\dagger}(x)\psi(x) \\
 如果我们看的是M-matrix，那么我们就要去掉平面波积分得到的$(2\pi)^{4}\delta$，以及normalization最终会消掉的$\frac{1}{\sqrt{ 2E_{\mathbf{p}} }}$。Feynamn规则则总结为下图：
 ![[Pasted image 20261112143440.png|centering|600]]
 其中实线上的箭头表示荷的流动。如果荷的流动荷动量方向相反，则在实线下面另用箭头标出。
+# 2. 手性
+
+考虑投影算符：
+$$\begin{align}
+P_{L,R}= \frac{1\pm \gamma^{5}}{2}
+\end{align}$$
+那么，这些投影算符存在本征态：
+$$\begin{align}
+\psi_{L,R}=P_{L,R}\psi_{L,R}
+\end{align}$$
+## Ex:
+
+这个条件等价于：
+$$\begin{align}
+  \bar{\psi}_{L}P_{R} & = (P_{L}\psi)^{\dagger}\gamma^{0}P_{R} \\
+ & = \psi ^{\dagger}P_{L}\gamma^{0}P_{R} \\
+ & = \psi ^{\dagger}\gamma^{0}P_{R}P_{R} \\
+ & = \psi ^{\dagger}\gamma^{0} \\
+ & =  \bar{\psi} \\
+\implies \bar{\psi}_{L} & = \bar{\psi}P_{R}
+\end{align}$$
+另一个手性同理。其中用到了$\{ \gamma^{0},\gamma^{5} \}=0$。
+
+
+由于$P_{L,R}$只会在spinor上作用，所以我们还可以将$u,v$分解成$P_{L,R}$的本征基，从而定义$u_{L,R}$。
+
 
 
 
