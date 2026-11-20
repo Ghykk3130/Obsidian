@@ -1,0 +1,18 @@
+[
+  {
+    "slug": "peskin",
+    "file": "D:\\textbooks\\An Introduction To Quantum Field Theory (Michael E. Peskin Daniel V. Schroeder) (Z-Library).pdf",
+    "title": "An Introduction to Quantum Field Theory",
+    "authors": "Michael E. Peskin, Daniel V. Schroeder",
+    "year": 1995,
+    "publisher": "Westview Press"
+  },
+  {
+    "slug": "schwartz",
+    "file": "D:\\textbooks\\Quantum Field Theory and the Standard Model (Matthew D. Schwartz) (z-library.sk, 1lib.sk, z-lib.sk).pdf",
+    "title": "Quantum Field Theory and the Standard Model",
+    "authors": "Matthew D. Schwartz",
+    "year": 2014,
+    "publisher": "Cambridge University Press"
+  }
+]

@@ -1,0 +1,34 @@
+{
+  "books": [
+    {
+      "slug": "peskin",
+      "file": "D:\\textbooks\\An Introduction To Quantum Field Theory (Michael E. Peskin Daniel V. Schroeder) (Z-Library).pdf",
+      "title": "An Introduction to Quantum Field Theory",
+      "authors": "Michael E. Peskin, Daniel V. Schroeder",
+      "year": 1995,
+      "publisher": "Westview Press",
+      "pages": 865,
+      "text_pages": 865,
+      "offset": -23,
+      "offset_votes": 417,
+      "chars": 2199236,
+      "text_file": "text/peskin.txt",
+      "extracted_at": "2026-11-20T20:19:02+00:00"
+    },
+    {
+      "slug": "schwartz",
+      "file": "D:\\textbooks\\Quantum Field Theory and the Standard Model (Matthew D. Schwartz) (z-library.sk, 1lib.sk, z-lib.sk).pdf",
+      "title": "Quantum Field Theory and the Standard Model",
+      "authors": "Matthew D. Schwartz",
+      "year": 2014,
+      "publisher": "Cambridge University Press",
+      "pages": 870,
+      "text_pages": 870,
+      "offset": -20,
+      "offset_votes": 439,
+      "chars": 3014277,
+      "text_file": "text/schwartz.txt",
+      "extracted_at": "2026-11-20T20:19:23+00:00"
+    }
+  ]
+}
