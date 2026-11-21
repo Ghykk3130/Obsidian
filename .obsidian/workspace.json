@@ -628,12 +628,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Homework/Physics 513/Physics 513 homework 11.md",
+                "file": "Notes/申请.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Physics 513 homework 11"
+              "title": "申请"
             }
           },
           {
@@ -4469,7 +4469,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "Yukawa",
+                "query": "申请",
                 "matchingCase": true,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -4480,12 +4480,12 @@
               "title": "Search"
             }
           }
-        ]
+        ],
+        "currentTab": 3
       }
     ],
     "direction": "horizontal",
-    "width": 200.5,
-    "collapsed": true
+    "width": 200.5
   },
   "right": {
     "id": "9003d078f8dbc4ed",
@@ -4591,9 +4591,9 @@
   },
   "active": "158d1a9d9e56705e",
   "lastOpenFiles": [
+    "Homework/Physics 513/Physics 513 homework 11.md",
     "Notes/QED.md",
     "Notes/Skyrmion emergent field calculation.md",
-    "Homework/Physics 513/Physics 513 homework 11.md",
     "Pictures/23ca828460e638741bec1154446c3f99.jpg",
     "Pictures/Pasted image 20261121003036.png",
     "Notes/Berry curvature的时间和空间反演对称性.md",
