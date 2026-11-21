@@ -253,6 +253,42 @@ The helicity would be largest if $\lambda=\lambda^{'},\mu=\mu^{'}$, meaning that
 ## (d)
 
 For backward limit, $p-k^{'}\approx 0$. Then $(-1)(-ie)^{2}\bar{u}_{\lambda^{'}}(p^{'})\gamma^{\rho}u_{\mu}(k) \frac{-ig_{\rho \sigma}}{(p-k^{'})^{2}} \bar{u}_{\mu^{'}}(k^{'})\gamma^{\sigma}u_{\lambda}(p)$ dominates. Similarly, we notice that there would be $\delta_{\lambda^{'}\mu}\delta_{\mu^{'}\lambda}$ term. Then the largest amplitude would be when $\lambda^{'}=\mu,\ \mu^{'}=\lambda$. Meaning that the chirality gets switched. 
+# Problem 3
+## (a)
+
+We consider $\sum_{i,j}p_{i}\cdot p_{j}$. Observe that:
+$$\begin{align}
+p_{i}\cdot p_{i} & = m_{i}^{2}
+\end{align}$$
+Also:
+$$\begin{align}
+ & s= (p_{1}+p_{2})^{2}=m_{1}^{2}+m_{2}^{2}+2p_{1}\cdot p_{2} \\
+\implies & p_{1}\cdot p_{2}= \frac{s-m_{1}^{2}-m_{2}^{2}}{2}
+\end{align}$$
+Similarly:
+$$\begin{align}
+t=(p_{1}-p_{3})^{2}\implies p_{1}\cdot p_{3}= \frac{m_{1}^{2}+m_{3}^{2}-t}{2}
+\end{align}$$
+$$u=(p_{1}-p_{4})^{2}\implies p_{1}\cdot p_{4}= \frac{m_{1}^{2}+m_{4}^{2}-u}{2}$$
+Since $p_{1}+p_{2}=p_{3}+p_{4}$, we have:
+$$\begin{align}
+s=(p_{3}+p_{4})^{2}\implies p_{3}\cdot p_{4}= \frac{s-m_{3}^{2}-m_{4}^{2}}{2}
+\end{align}$$
+$$t=(p_{4}-p_{2})^{2}\implies p_{2}\cdot p_{4}= \frac{m_{2}^{2}+m_{4}^{2}-t}{2}$$
+$$u=(p_{3}-p_{2})^{2}\implies p_{2}\cdot p_{3}= \frac{m_{2}^{2}+m_{3}^{2}-u}{2}$$
+Then all $p_{i}\cdot p_{j}$ are expressed.
+## (b)
+
+We have:
+$$\begin{align}
+s+t+u & = (p_{1}+p_{2})^{2}+(p_{1}-p_{3})^{2}+(p_{1}-p_{4})^{2} \\
+ & = m_{1}^{2}+m_{2}^{2}+2p_{1}\cdot p_{2}+m_{1}^{2}+m_{3}^{2}-2p_{1}\cdot p_{3}+m_{1}^{2}+m_{4}^{2}-2p_{1}\cdot p_{4} \\
+ & = m_{1}^{2}+m_{2}^{2}+m_{3}^{2}+m_{4}^{2}+2m_{1}^{2}+ 2p_{1}\cdot((p_{2}-p_{3}-p_{4})) \\
+ & = m_{1}^{2}+m_{2}^{2}+m_{3}^{2}+m_{4}^{2}+ 2m_{1}^{2}-2p_{1}^{2} \\
+ & = m_{1}^{2}+m_{2}^{2}+m_{3}^{2}+m_{4}^{2}
+\end{align}$$
+## (c)
+
 
 
 
