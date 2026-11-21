@@ -17,8 +17,6 @@ $$(\lambda^{'},\mu^{'})=(-\mu,-\lambda)$$
 This is the non-vanishing condition for the second term. Here the minus sign just means flipping the chirality. 
 ## (b)
 
-## (c)
-
 If $(\lambda,\mu)=(L,L)$, then the non-vanishing conditions of both terms are satisfied. The only non-vanishing option is $(\lambda^{'},\mu^{'})=(R,R)$.
 
 If $(\lambda,\mu)=(R,R)$, it is similar. We have $(\lambda^{'},\mu^{'})=(L,L)$ for $i\mathcal{M}$ to be non-vanishing. 
@@ -28,4 +26,83 @@ If $(\lambda,\mu)=(L,R)$ and $(\lambda^{'},\mu^{'})=(R,L)$, then the first term 
 If $(\lambda,\mu)=(R,L)$ and $(\lambda^{'},\mu^{'})=(L,R)$, then the first term is non-vanishing. If $(\lambda,\mu)=(R,L)$ and $(\lambda^{'},\mu^{'})=(R,L)$, then the second term is non-vanishing. 
 
 If none of the above is satisfied, then $i\mathcal{M}=0$.
+## (c)
 
+We have:
+$$\begin{align}
+\xi_{+}= \begin{pmatrix}
+\cos  \frac{\theta}{2} \\
+e^{i\phi}\sin \frac{\theta}{2}
+\end{pmatrix},\ \xi_{-}= \begin{pmatrix}
+ -e^{-i\phi}\sin \frac{\theta}{2} \\
+\cos \frac{\theta}{2}
+\end{pmatrix}
+\end{align}$$
+
+>[!Success] Lemma
+>$$\sqrt{ p\cdot \sigma }= \frac{p\cdot \sigma+m}{\sqrt{ 2(E+m) }}$$
+## Proof of lemma.
+
+We have:
+$$\begin{align}
+p\cdot \sigma & = E- |\mathbf{p}| \hat{\mathbf{p}}\cdot \boldsymbol{\sigma}
+\end{align}$$
+Then:
+$$\begin{align}
+(p\cdot \sigma+m)^{2} & = (E-\mathbf{p}\cdot \boldsymbol{\sigma}+m)^{2} \\
+ & = (E+m)^{2}+|\mathbf{p} |^{2}-2(E+m)\mathbf{p}\cdot \boldsymbol{\sigma} \\
+ & = (E+m)^{2}+E^{2}-m^{2}-2(E+m)\mathbf{p}\cdot \boldsymbol{\sigma} \\
+ & = 2(E+m)(E-\mathbf{p}\cdot \boldsymbol{\sigma}) \\
+ & = 2(E+m)p\cdot \sigma
+\end{align}$$
+Then:
+$$\begin{align}
+p\cdot \sigma= \frac{(p\cdot \sigma+m)^{2}}{2(E+m)}
+\end{align}$$
+>[!Right]
+>$\blacksquare$
+
+We have:
+$$\begin{align}
+u & = \frac{1}{\sqrt{ 2(E+m) }}\begin{pmatrix}
+(p\cdot \sigma+m) \xi \\
+(p\cdot \bar{\sigma}+m)\xi
+\end{pmatrix}
+\end{align}$$
+Under relativistic limit, we have:
+$$\begin{align}
+p\cdot \sigma+m & = E-|\mathbf{p}| \hat{\mathbf{p}}\cdot \boldsymbol{\sigma}+m \\
+ & \approx E- |\mathbf{p}| \hat{\mathbf{p}}\cdot \boldsymbol{\sigma} \\
+ & \approx E- E \hat{\mathbf{p}}\cdot \boldsymbol{\sigma}
+\end{align}$$
+Then:
+$$\begin{align}
+u & \approx \frac{1}{\sqrt{ 2(E+m) }}\begin{pmatrix}
+(E(1-\hat{\mathbf{p}}\cdot \boldsymbol{\sigma}))\xi \\
+E(1-\hat{\mathbf{p}}\cdot   \bar{\boldsymbol{\sigma}})\xi
+\end{pmatrix} \\
+ & \approx \sqrt{ \frac{E}{2} } \begin{pmatrix}
+(1- \hat{\mathbf{p}}\cdot \boldsymbol{\sigma})\xi \\
+(1- \hat{\mathbf{p}}\cdot   \bar{\boldsymbol{\sigma}} )\xi
+\end{pmatrix}
+\end{align}$$
+Observe that:
+$$\begin{align}
+ & (1- \hat{\mathbf{p}}\cdot \boldsymbol{\sigma})\xi_{+}  = (1-1)\xi_{+}=0 \\
+ & (1- \hat{\mathbf{p}}\cdot  \bar{\boldsymbol{\sigma}} )\xi_{-}= (1+(-1))\xi_{-}=0
+\end{align}$$
+Then:
+$$\begin{align}
+u^{+} & \approx \sqrt{ \frac{E}{2} }\begin{pmatrix}
+0 \\
+(1- \hat{\mathbf{p}}\cdot  \bar{\boldsymbol{\sigma}})\xi_{+}
+\end{pmatrix} \\
+u^{-} & \approx \sqrt{ \frac{E}{2} } \begin{pmatrix}
+(1- \hat{\mathbf{p}}\cdot \boldsymbol{\sigma})\xi_{-} \\
+0
+\end{pmatrix}
+\end{align}$$
+By definition, observe that:
+$$\begin{align}
+
+\end{align}$$
