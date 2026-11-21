@@ -41,6 +41,12 @@ Q & = \int d^{3}x \psi ^{\dagger}(x)\psi(x) \\
 如果我们看的是M-matrix，那么我们就要去掉平面波积分得到的$(2\pi)^{4}\delta$，以及normalization最终会消掉的$\frac{1}{\sqrt{ 2E_{\mathbf{p}} }}$。Feynamn规则则总结为下图：
 ![[Pasted image 20261112143440.png|centering|600]]
 其中实线上的箭头表示荷的流动。如果荷的流动荷动量方向相反，则在实线下面另用箭头标出。
+
+那么对于Yukawa顶点，我们计算$(-ig)\bar{\psi}\psi \phi$的contraction。$\psi$可以入射一个正粒子或者出射一个反粒子。Noether荷流入顶点。$\bar{\psi}$可以入射一个反粒子或者入射一个正粒子。Noether荷流出顶点。$\phi$可以与别的$\phi$缩并为Feynman propagator。所以Yukawa顶点为：
+![[Pasted image 20261120194212.png|centering|300]]
+另外还有传播子：
+![[Pasted image 20261120194252.png|centering|400]]
+
 # 2. 手性
 
 考虑投影算符：
