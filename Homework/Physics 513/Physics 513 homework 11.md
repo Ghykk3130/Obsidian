@@ -209,9 +209,51 @@ $$\begin{align}
 ![[23ca828460e638741bec1154446c3f99.jpg|centering|500]]
 For the first diagram, we have:
 $$\begin{align}
-(-1)(-ie)\bar{u}_{\lambda^{'}}(p^{'})\gamma^{\rho}u_{\mu}(k) \frac{-ig_{\rho \sigma}}{(p-k^{'})^{2}} \bar{u}_{\mu^{'}}(k^{'})\gamma^{\sigma}u_{\lambda}(p)
+(-1)(-ie)^{2}\bar{u}_{\lambda^{'}}(p^{'})\gamma^{\rho}u_{\mu}(k) \frac{-ig_{\rho \sigma}}{(p-k^{'})^{2}} \bar{u}_{\mu^{'}}(k^{'})\gamma^{\sigma}u_{\lambda}(p)
 \end{align}$$
 For the second diagram, we have:
 $$\begin{align}
-(-1)(-ie)  \bar{u}_{\lambda}(p^{'})\gamma^{\rho}u_{\mu}(p)\frac{-ig_{\rho \sigma}}{(p-p^{'})^{2}}(-ie)\bar{u}_{\mu^{'}}(k^{'})\gamma^{\sigma}u_{\mu}(k) 
+(-ie) ^{2} \bar{u}_{\lambda^{'}}(p^{'})\gamma^{\rho}u_{\lambda}(p)\frac{-ig_{\rho \sigma}}{(p-p^{'})^{2}}\bar{u}_{\mu^{'}}(k^{'})\gamma^{\sigma}u_{\mu}(k) 
 \end{align}$$
+Then we have:
+$$\begin{align}
+i\mathcal{M} & = (-ie)^{2}\left[ \bar{u}_{\lambda^{'}}(p^{'})\gamma^{\rho}u_{\lambda}(p)\frac{-ig_{\rho \sigma}}{(p-p^{'})^{2}}(-ie)\bar{u}_{\mu^{'}}(k^{'})\gamma^{\sigma}u_{\mu}(k)-\bar{u}_{\lambda^{'}}(p^{'})\gamma^{\rho}u_{\mu}(k) \frac{-ig_{\rho \sigma}}{(p-k^{'})^{2}} \bar{u}_{\mu^{'}}(k^{'})\gamma^{\sigma}u_{\lambda}(p)\right]
+\end{align}$$
+For the two cases, we are effectively considering:
+$$\begin{align}
+\bra{0} a_{\mathbf{k}^{'}}a_{\mathbf{p}^{'}} \bar{\psi}\gamma^{\mu}\psi A_{\mu}\bar{\psi}\gamma^{\nu}\psi A_{\nu}a_{\mathbf{p}}a_{\mathbf{k}}\ket{0} 
+\end{align}$$
+If we draw the contraction lines for the first case, we find that the lines cross each other for odd number of times. Then we get a minus sign out. If we draw the contraction lines for the second case, we find that the lines cross each other for even number of times. Then we still have plus sign. 
+## (b)
+
+We have:
+$$\begin{align}
+\bar{u}_{\lambda^{'}}(p)\gamma^{\mu}u_{\lambda}(p) & = \bar{u} P_{-\lambda^{'}} \gamma^{\mu}P_{\lambda}u \\
+ & = \bar{u}\gamma^{\mu}P_{\lambda^{'} }P_{\lambda}u \\
+ & = \delta_{\lambda^{'}\lambda}\bar{u}\gamma^{\mu}u
+\end{align}$$
+We know from Gorden's identity that:
+$$\begin{align}
+\bar{u}(p^{'})\gamma^{\mu}u(p) & = \bar{u}(p^{'})\left[  \frac{(p^{'}+p)^{\mu}}{2m}+ \frac{i\sigma^{\mu \nu}q_{\nu}}{2m} \right]u(p) \\
+ & = \bar{u}(p^{'}) \frac{2p^{\mu}}{2m}u(p) \\
+ & = p^{\mu}\bar{u}u
+\end{align}$$
+Then:
+$$\begin{align}
+\bar{u}_{\lambda^{'}}(p)\gamma^{\mu}u_{\lambda}(p)= 2p^{\mu}\delta_{\lambda \lambda^{'}}
+\end{align}$$
+## (c)
+
+Observe that in the forward limit, we have $p \approx p^{'}$, $k\approx k^{'}$. Then clearly $(-ie) ^{2} \bar{u}_{\lambda^{'}}(p^{'})\gamma^{\rho}u_{\lambda}(p)\frac{-ig_{\rho \sigma}}{(p-p^{'})^{2}}\bar{u}_{\mu^{'}}(k^{'})\gamma^{\sigma}u_{\mu}(k)$ dominates. Then:
+$$\begin{align}
+i\mathcal{M} & \approx (-ie)^{2} 2p^{\rho}\delta_{\lambda \lambda^{'}} \frac{-ig_{\rho \sigma}}{(p-p^{'})^{2}} 2p^{\sigma}\delta_{\mu^{'}\mu} \\
+ & = (-ie)^{2} \frac{-4ip^{2}}{(p-p^{'})^{2}}\delta_{\lambda^{'}\lambda}\delta_{\mu^{'}\mu}
+\end{align}$$
+The helicity would be largest if $\lambda=\lambda^{'},\mu=\mu^{'}$, meaning that the chirality does not change. 
+## (d)
+
+For backward limit, $p-k^{'}\approx 0$. Then $(-1)(-ie)^{2}\bar{u}_{\lambda^{'}}(p^{'})\gamma^{\rho}u_{\mu}(k) \frac{-ig_{\rho \sigma}}{(p-k^{'})^{2}} \bar{u}_{\mu^{'}}(k^{'})\gamma^{\sigma}u_{\lambda}(p)$ dominates. Similarly, we notice that there would be $\delta_{\lambda^{'}\mu}\delta_{\mu^{'}\lambda}$ term. Then the largest amplitude would be when $\lambda^{'}=\mu,\ \mu^{'}=\lambda$. Meaning that the chirality gets switched. 
+
+
+
+
