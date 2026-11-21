@@ -289,6 +289,22 @@ s+t+u & = (p_{1}+p_{2})^{2}+(p_{1}-p_{3})^{2}+(p_{1}-p_{4})^{2} \\
 \end{align}$$
 ## (c)
 
+The Mandelson variables are:
+$$s_{ij}$$
+We do not need to consider $s_{ijk}$, since it is automatically determined by $\sum_{i}p_{i}=0$. 
+
+There are $\frac{5!}{2!3!}=10$ Mandelson variables. But we know that there are five degrees of freedom, so only five of them are independent. 
+
+Particles are massless so that $p_{i}^{2}=0$. Observe that:
+$$\begin{align}
+s_{12}+s_{13}+s_{14}+s_{15} & = 2(p_{1}\cdot p_{2}+p_{1}\cdot p_{3}+p_{1}\cdot p_{4}+p_{1}\cdot p_{5}) \\
+ & = -2p_{1}\cdot p_{1} \\
+ & = 0
+\end{align}$$
+Similarly, it's easy to show:
+$$\begin{align}
+\sum_{j\neq i}s_{ij}=0
+\end{align}$$
 
 
 
