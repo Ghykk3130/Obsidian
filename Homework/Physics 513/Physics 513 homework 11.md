@@ -295,7 +295,7 @@ s_{1} & = p_{1}^{2}=0
 \end{align}$$
 since the particles are massless. By momentum conservation, meaning that $p_{1}+(p_{2}+p_{3}+p_{4}+p_{5})=0$, we know that:
 $$s_{2345}=(-p_{1})^{2}=0$$
-By similar method, it is easy to show that $s_{i}=0,\ \forall i$ and $s_{ijkl},\ \forall \text{ distinct}i,j,k,l$. 
+By similar method, it is easy to show that $s_{i}=0,\ \forall i$ and $s_{ijkl}=0,\ \forall \text{ distinct}i,j,k,l$. These Mandelson variables are determined and are not free.
 
 Next we consider $s_{ij}$. Still due to momentum conservation, $s_{ijk}$ are known once $s_{ij}$ are known. This reduces to degree of freedom to $\frac{5!}{2!3!}=10$.
 
