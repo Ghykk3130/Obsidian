@@ -159,12 +159,12 @@ $$\begin{align}
 \cos \frac{\theta}{2} & e^{-i\phi}\sin \frac{\theta}{2} & 0 & 0
 \end{pmatrix}
 \end{align}$$
-By definition, $\mathbf{p}^{},\mathbf{k}$ should have angle $\theta=0$, and $\theta = \pi$. $\mathbf{p}^{'}$ should have angle $\theta$, $\mathbf{k}^{'}$ should have angle $\pi+\theta$, due to momentum conservation. We choose our frame such that $\phi=0$.
+By definition, $\mathbf{p}^{},\mathbf{k}$ should have angle $\theta=0$, and $\theta = \pi$. $\mathbf{p}^{'}$ should have angle $\theta$, $\mathbf{k}^{'}$ should have angle $\pi-\theta$, due to momentum conservation. We choose our frame such that $\phi=0$.
 
 Then:
 $$\begin{align}
 \bar{u}_{R}(p^{'})u_{L}(p) & = 2E \sin \frac{\theta}{2} \\
-\bar{u}_{R}(k^{'})u_{L}(k) & = 2E \sin \frac{\theta}{2} \\
+\bar{u}_{R}(k^{'})u_{L}(k) & = -2E \sin \frac{\theta}{2} \\
 \bar{u}_{R}(p^{'})u_{L}(k) & = -2E \cos \frac{\theta}{2} \\
 \bar{u}_{R}(k^{'})u_{L}(p) & = 2E \cos \frac{\theta}{2}
 \end{align}$$
@@ -236,11 +236,11 @@ We know from Gorden's identity that:
 $$\begin{align}
 \bar{u}(p^{'})\gamma^{\mu}u(p) & = \bar{u}(p^{'})\left[  \frac{(p^{'}+p)^{\mu}}{2m}+ \frac{i\sigma^{\mu \nu}q_{\nu}}{2m} \right]u(p) \\
  & = \bar{u}(p^{'}) \frac{2p^{\mu}}{2m}u(p) \\
- & = p^{\mu}\bar{u}u
+ 
 \end{align}$$
 Then:
 $$\begin{align}
-\bar{u}_{\lambda^{'}}(p)\gamma^{\mu}u_{\lambda}(p)= 2p^{\mu}\delta_{\lambda \lambda^{'}}
+\bar{u}_{\lambda^{'}}(p)\gamma^{\mu}u_{\lambda}(p)=  \frac{p^{\mu}}{m}2m \delta_{\lambda^{'}\lambda}=  2p^{\mu}\delta_{\lambda \lambda^{'}}
 \end{align}$$
 ## (c)
 
@@ -252,7 +252,7 @@ i\mathcal{M} & \approx (-ie)^{2} 2p^{\rho}\delta_{\lambda \lambda^{'}} \frac{-ig
 The helicity would be largest if $\lambda=\lambda^{'},\mu=\mu^{'}$, meaning that the chirality does not change. 
 ## (d)
 
-For backward limit, $p-k^{'}\approx 0$. Then $(-1)(-ie)^{2}\bar{u}_{\lambda^{'}}(p^{'})\gamma^{\rho}u_{\mu}(k) \frac{-ig_{\rho \sigma}}{(p-k^{'})^{2}} \bar{u}_{\mu^{'}}(k^{'})\gamma^{\sigma}u_{\lambda}(p)$ dominates. Similarly, we notice that there would be $\delta_{\lambda^{'}\mu}\delta_{\mu^{'}\lambda}$ term. Then the largest amplitude would be when $\lambda^{'}=\mu,\ \mu^{'}=\lambda$. Meaning that the chirality gets switched. 
+For backward limit, $p-k^{'}\approx 0$. Then $(-1)(-ie)^{2}\bar{u}_{\lambda^{'}}(p^{'})\gamma^{\rho}u_{\mu}(k) \frac{-ig_{\rho \sigma}}{(p-k^{'})^{2}} \bar{u}_{\mu^{'}}(k^{'})\gamma^{\sigma}u_{\lambda}(p)$ dominates. Similarly, we notice that there would be $\delta_{\lambda^{'}\mu}\delta_{\mu^{'}\lambda}$ term. Then the largest amplitude would be when $\lambda^{'}=\mu,\ \mu^{'}=\lambda$.  
 # Problem 3
 ## (a)
 
@@ -289,23 +289,29 @@ s+t+u & = (p_{1}+p_{2})^{2}+(p_{1}-p_{3})^{2}+(p_{1}-p_{4})^{2} \\
 \end{align}$$
 ## (c)
 
-The Mandelson variables are:
-$$s_{ij}$$
-We do not need to consider $s_{ijk}$, since it is automatically determined by $\sum_{i}p_{i}=0$. 
+We first find that:
+$$\begin{align}
+s_{1} & = p_{1}^{2}=0
+\end{align}$$
+since the particles are massless. By momentum conservation, meaning that $p_{1}+(p_{2}+p_{3}+p_{4}+p_{5})=0$, we know that:
+$$s_{2345}=(-p_{1})^{2}=0$$
+By similar method, it is easy to show that $s_{i}=0,\ \forall i$ and $s_{ijkl},\ \forall \text{ distinct}i,j,k,l$. 
 
-There are $\frac{5!}{2!3!}=10$ Mandelson variables. But we know that there are five degrees of freedom, so only five of them are independent. 
+Next we consider $s_{ij}$. Still due to momentum conservation, $s_{ijk}$ are known once $s_{ij}$ are known. This reduces to degree of freedom to $\frac{5!}{2!3!}=10$.
 
-Particles are massless so that $p_{i}^{2}=0$. Observe that:
+From the handwavy point of view, we aregue that there are five degrees of freedom, because we know that the natural free dynamical variables are $p_{i}$, and there are five of them. And changing to Mandelson variables does not reduce the degree of freedom. 
+
+To show this more rigorously, we observe the constraint:
 $$\begin{align}
 s_{12}+s_{13}+s_{14}+s_{15} & = 2(p_{1}\cdot p_{2}+p_{1}\cdot p_{3}+p_{1}\cdot p_{4}+p_{1}\cdot p_{5}) \\
  & = -2p_{1}\cdot p_{1} \\
  & = 0
 \end{align}$$
-Similarly, it's easy to show:
+Similarly, it's easy to show (with $i$ fixed):
 $$\begin{align}
 \sum_{j\neq i}s_{ij}=0
 \end{align}$$
-
+There are five such equations in total. This would give $10-5=5$ degree of freedom. 
 
 
 

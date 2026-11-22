@@ -628,12 +628,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Notes/申请.md",
-                "mode": "source",
+                "file": "Homework/Physics 513/Physics 513 homework 11.md",
+                "mode": "preview",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "申请"
+              "title": "Physics 513 homework 11"
             }
           },
           {
@@ -4480,8 +4480,7 @@
               "title": "Search"
             }
           }
-        ],
-        "currentTab": 3
+        ]
       }
     ],
     "direction": "horizontal",
@@ -4591,8 +4590,8 @@
   },
   "active": "158d1a9d9e56705e",
   "lastOpenFiles": [
-    "Experimental/Ratio Transformer.md",
     "Notes/申请.md",
+    "Experimental/Ratio Transformer.md",
     "Homework/Physics 513/Physics 513 homework 11.md",
     "Notes/QED.md",
     "Notes/Skyrmion emergent field calculation.md",
