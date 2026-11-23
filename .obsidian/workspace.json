@@ -97,12 +97,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Notes/BCS理论.md",
+                "file": "Homework/Physics 513/Physics 513 homework 11.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "BCS理论"
+              "title": "Physics 513 homework 11"
             }
           }
         ],
@@ -264,11 +264,13 @@
   },
   "active": "d1edf234aaf59fe4",
   "lastOpenFiles": [
+    "_fix.py",
+    "_check.py",
+    "Notes/BCS理论.md",
     "_patch.py",
     "_probe.out",
     "_probe.js",
     "Notes/QED.md",
-    "Notes/BCS理论.md",
     "Notes/费米子的Feynman规则.md",
     "Notes/Feynman传播子.md",
     "Notes/Feynman图.md",

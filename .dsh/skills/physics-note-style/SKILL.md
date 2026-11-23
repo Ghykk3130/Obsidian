@@ -6,7 +6,7 @@ whenToUse: "当任务要求按用户的笔记风格写物理内容，或需要�
 
 # 物理笔记写作风格（physics-note-style）
 
-读这份 skill 后，你要写的不是"介绍某个物理主题的文章"，而是一篇**用户自己在 Obsidian 里推公式时留下的笔记**：以系统/模型为起点，公式推进为主干，中文只做粘合与评论，最后停在一个结果、一个 caveat 或一个 QED 上。
+读这份 skill 后，你要写的不是"介绍某个物理主题的文章"，而是一篇**用户自己推公式时留下的笔记**：默认在聊天里显示，只有明确要求才落盘 Obsidian。以系统/模型为起点，公式推进为主干，中文只做粘合与评论，最后停在一个结果、一个 caveat 或一个 QED 上。
 
 ## 一、先记住语料事实
 
@@ -133,6 +133,8 @@ whenToUse: "当任务要求按用户的笔记风格写物理内容，或需要�
 - **Quote**：旁支问题、补充推导、提醒。把"这里其实有个 subtlety"放进 Quote，不打断主线。
 
 ## 四、八种结构模板
+
+以下模板按落盘 Obsidian 写；聊天输出时把 `> [!X]` 换成 `**X.**`，并删掉 `^blockid` 和 `[[...]]`。
 
 ### A. 概念 / 定理型
 
@@ -300,8 +302,9 @@ $$E=E_{\text{ex}}+E_{\text{ani}}+E_{\text{dip}}+E_{\text{Ze}}$$
 **排版规则**：
 
 - 行内只用 `$...$`；不要在行内写 `\begin{align}`。
-- 独立公式 `$$` 单独起行、单独收行，`$$` 内不要空行；`$$` 前后各留一个空行，避免被并进上一段。
-- 单行公式直接 `$$ ... $$`；多行才用 `$$\begin{aligned} ... \end{aligned}$$`，每行 `&` 数量一致。
+- 独立公式的 `$$` 必须**单独占一行**：开 `$$` 一行、闭 `$$` 一行。不要写成 `$$...$$` 同行，也不要把 `$$` 贴在 `\end{aligned}` 后面——这会让渲染器把后文吞进公式。
+- 单行公式：`$$` 换行 → 表达式 → `$$`；多行：`$$` → `\begin{aligned}` → 各行 → `\end{aligned}` → `$$`。
+- 每行 `&` 数量一致；`$$` 内不要空行。
 - 关键结果 `\boxed{}`；编号用 `\tag{1}`，不要用 `\tag{*}`。
 - 中文写在公式外，不要塞进 `\text{}`；不要用 Unicode 数学符号（`−`、`×`、`≈`、`→`），用 `-`、`\times`、`\approx`、`\to`。
 - `\left` / `\right` 必须成对。
@@ -315,11 +318,17 @@ $$E=E_{\text{ex}}+E_{\text{ani}}+E_{\text{dip}}+E_{\text{Ze}}$$
 ```
 **Definition 1.** ...
 
-$$ ... $$
+$$
+...
+
+$$
 
 **Proof.** ...
 
-$$ ... $$
+$$
+...
+
+$$
 
 $\blacksquare$
 ```
@@ -404,46 +413,60 @@ Callout：
 
 考虑一个二维电子气，结构反演对称性被界面破坏。电子感受到 Rashba 自旋轨道耦合。我们取：
 
-$$\begin{aligned}
+$$
+\begin{aligned}
 H & = \frac{p^{2}}{2m}+\alpha(\boldsymbol{\sigma}\times \mathbf{k})\cdot \hat{\mathbf{z}}
-\end{aligned}$$
+\end{aligned}
+$$
 
 其中 $\alpha$ 为 Rashba 系数。将第二项写开：
 
-$$\begin{aligned}
+$$
+\begin{aligned}
 (\boldsymbol{\sigma}\times \mathbf{k})\cdot \hat{\mathbf{z}} & = \sigma_{x}k_{y}-\sigma_{y}k_{x}
-\end{aligned}$$
+\end{aligned}
+$$
 
 于是：
 
-$$H= \frac{\hbar^{2}k^{2}}{2m}+\alpha(k_{y}\sigma_{x}-k_{x}\sigma_{y})$$
+$$
+H= \frac{\hbar^{2}k^{2}}{2m}+\alpha(k_{y}\sigma_{x}-k_{x}\sigma_{y})
+$$
 
 # 2. 能带与自旋结构
 
 令 $k_{x}=k\cos \phi,\ k_{y}=k\sin \phi$。那么：
 
-$$\begin{aligned}
+$$
+\begin{aligned}
 H & = \frac{\hbar^{2}k^{2}}{2m}+\alpha k(\sin \phi \sigma_{x}-\cos \phi \sigma_{y})
-\end{aligned}$$
+\end{aligned}
+$$
 
 这是 $\mathbf{d}\cdot\boldsymbol{\sigma}$ 型的二能级 hamiltonian，$\mathbf{d}=\alpha k(\sin \phi,-\cos \phi,0)$。容易得到：
 
-$$\begin{aligned}
+$$
+\begin{aligned}
 \epsilon_{\pm}(k) & = \frac{\hbar^{2}k^{2}}{2m}\pm \alpha k
-\end{aligned}$$
+\end{aligned}
+$$
 
 本征态为：
 
-$$\begin{aligned}
+$$
+\begin{aligned}
 |+\rangle & = \frac{1}{\sqrt{2}}\begin{pmatrix}1\\-ie^{i\phi}\end{pmatrix},\ |-\rangle=\frac{1}{\sqrt{2}}\begin{pmatrix}1\\ ie^{i\phi}\end{pmatrix}
-\end{aligned}$$
+\end{aligned}
+$$
 
 计算 $|+\rangle$ 的自旋期望值：
 
-$$\begin{aligned}
+$$
+\begin{aligned}
 \langle \sigma_{x}\rangle & = 2\mathrm{Re}(a^{*}b)=\sin \phi \\
 \langle \sigma_{y}\rangle & = 2\mathrm{Im}(a^{*}b)=-\cos \phi
-\end{aligned}$$
+\end{aligned}
+$$
 
 所以 $\langle \boldsymbol{\sigma}\rangle=(\sin \phi,-\cos \phi)$，垂直于 $\mathbf{k}$。绕费米面一圈，自旋转 $2\pi$。这就是 spin-momentum locking。
 
@@ -454,9 +477,11 @@ $$\begin{aligned}
 
 $H$ 在时间反演下不变：
 
-$$\begin{aligned}
+$$
+\begin{aligned}
 \mathcal{T}H(\mathbf{k})\mathcal{T}^{-1} & = H(-\mathbf{k})
-\end{aligned}$$
+\end{aligned}
+$$
 
 但空间反演被界面破坏，所以 $\epsilon_{\uparrow}(\mathbf{k})\neq \epsilon_{\downarrow}(\mathbf{k})$，自旋简并消失。
 
