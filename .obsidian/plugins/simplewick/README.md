@@ -27,6 +27,8 @@ Obsidian 渲染任何公式都走 `MathJax.tex2chtml()`；插件包住这个函�
 \wick{...}              横线 + 两端钩子，在上方
 \bwick{...}             同上，在下方
 \wick[1.4]{...}         手动指定横线高度（单位 em，默认 1.05）
+\wickcross{A}{B}{C}     交叉收缩：一条线盖 A+B（低），一条盖 B+C（高）
+\bwickcross{A}{B}{C}    同上，在下方
 \contraction{前}{A}{中}{B}   排出「前 A 中 B」，标记只覆盖「A 中 B」
 \bcontraction{前}{A}{中}{B}  同上，标记在下方
 ```
@@ -59,6 +61,26 @@ Obsidian 渲染任何公式都走 `MathJax.tex2chtml()`；插件包住这个函�
 
 ```latex
 \wick{\phi_1\phi_2}\,\wick{\phi_3\phi_4}
+```
+
+## 交叉收缩
+
+两条线**重叠但互不包含**时用 `\wickcross`。把表达式切成三段 A｜B｜C，
+`\wickcross` 会画一条线盖 A+B、另一条盖 B+C：
+
+```latex
+\wickcross{\phi_1}{\phi_2\phi_3}{\phi_4}
+```
+
+就是 (1,3) 与 (2,4) 同时收缩。后一条线自动高一档，它的钩子正落在前一条线上——
+Peskin (4.39) 里就是这么印的。
+
+三种配对方式对照（四个场）：
+
+```latex
+\wick{\phi_1\phi_2}\,\wick{\phi_3\phi_4}      % (1,2)(3,4) 不相交
+\wick{\phi_1\wick{\phi_2\phi_3}\phi_4}        % (1,4)(2,3) 嵌套
+\wickcross{\phi_1}{\phi_2\phi_3}{\phi_4}      % (1,3)(2,4) 交叉
 ```
 
 ## 命令

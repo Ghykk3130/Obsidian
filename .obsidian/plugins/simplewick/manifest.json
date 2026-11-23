@@ -1,9 +1,9 @@
 {
   "id": "simplewick",
   "name": "SimpleWick",
-  "version": "1.2.0",
+  "version": "1.3.0",
   "minAppVersion": "1.5.0",
-  "description": "Peskin-style field contractions: \\wick{...} draws a rule with hooks dropping to the contracted fields.",
+  "description": "Peskin-style field contractions: \\wick{...} draws a rule with hooks dropping to the contracted fields, \\wickcross for crossing pairs.",
   "author": "SimpleWick",
   "isDesktopOnly": false
 }

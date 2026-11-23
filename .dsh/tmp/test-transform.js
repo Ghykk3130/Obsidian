@@ -96,5 +96,27 @@ const struts = (tex) => [...tex.matchAll(/\\rule\{0pt\}\{([\d.]+)em\}/g)].map((m
   check("idempotent", ok);
 }
 
+// 10. crossing marks
+{
+  const out = t("\\wickcross{\\phi_1}{\\phi_2\\phi_3}{\\phi_4}");
+  console.log("\n--- wickcross output ---\n" + out + "\n");
+  const s = struts(out);
+  check("cross: two rails", s.length === 2, JSON.stringify(s));
+  check("cross: later rail higher", s[0] > s[1], JSON.stringify(s));
+  check("cross: gap equals hook drop", Math.abs(s[0] - (s[1] + 0.35)) < 0.005, JSON.stringify(s));
+  check("cross: real text printed last", out.endsWith("\\phi_1\\phi_2\\phi_3\\phi_4"), out.slice(-40));
+  check("cross: low rail spans A+B", out.includes("\\phantom{\\phi_1\\phi_2\\phi_3}"));
+  check("cross: high rail spans B+C", out.includes("\\phantom{\\phi_2\\phi_3\\phi_4}"));
+}
+
+// 11. crossing, below
+{
+  const out = t("\\bwickcross{a}{b}{c}");
+  console.log("\n--- bwickcross output ---\n" + out + "\n");
+  check("below-cross rails below", (out.match(/\\underline\{/g) || []).length === 2, out);
+  check("below-cross two negative rails", (out.match(/\\rule\[-1\.17em\]/g) || []).length === 2, out);
+  check("below-cross second rail lower", (out.match(/\\rule\[-1\.52em\]/g) || []).length === 2, out);
+}
+
 console.log(failed === 0 ? "\nall good" : `\n${failed} failing`);
 process.exit(failed === 0 ? 0 : 1);

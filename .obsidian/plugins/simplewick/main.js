@@ -27,6 +27,8 @@
  *   \bwick[n]{X}                 same, rule with hooks below
  *   \contraction[n]{pre}{A}{mid}{B}   typeset pre A mid B, mark over A mid B
  *   \bcontraction[n]{pre}{A}{mid}{B}  same, mark below
+ *   \wickcross[n]{A}{B}{C}     crossing marks: over A+B (low) and B+C (high)
+ *   \bwickcross[n]{A}{B}{C}    same, below
  *   \acontraction, \contracted, \acontracted, \bcontracted — aliases
  *
  * `n` is the height of the rule above the baseline, in em (default 1.05).
@@ -42,8 +44,11 @@ const HOOK_W = 0.05; // hook thickness
 const SIDE = 0.09; // rule overhang past the fields, each side
 const STACK_GAP = 0.30; // minimum clearance between stacked rules
 const RAIL = 0.08; // height a finished mark adds above its strut
+// For crossing marks the later rule sits exactly one hook-drop higher, so its
+// hooks land on the earlier rule — the way Peskin prints Eq. (4.39).
+const CROSS_GAP = HOOK_DROP;
 
-/** name -> { below: boolean, arity: 1 | 4 } */
+/** name -> { below: boolean, arity: 1 | 3 | 4 } */
 const CONTRACTION_COMMANDS = Object.create(null);
 for (const name of ["wick", "contraction", "acontraction", "contracted", "acontracted"]) {
   CONTRACTION_COMMANDS[name] = { below: false, arity: name === "wick" ? 1 : 4 };
@@ -51,6 +56,8 @@ for (const name of ["wick", "contraction", "acontraction", "contracted", "acontr
 for (const name of ["bwick", "bcontraction", "bcontracted"]) {
   CONTRACTION_COMMANDS[name] = { below: true, arity: name === "bwick" ? 1 : 4 };
 }
+CONTRACTION_COMMANDS.wickcross = { below: false, arity: 3 };
+CONTRACTION_COMMANDS.bwickcross = { below: true, arity: 3 };
 
 // Cheap reject so ordinary formulas never enter the character loop.
 const TRIGGER = /\\[ab]?(?:wick|contraction|contracted)/;
@@ -101,28 +108,46 @@ function skipSpaces(s, i) {
   return i;
 }
 
-/** Rule-with-hooks above `inner`, its rule `strut` em above the baseline. */
-function markAbove(inner, strut) {
+/**
+ * A rule with hooks, spanning the natural width of `widthText`.
+ * `widthText` is either the real content (a wrapping mark) or a \phantom of it
+ * (an overlay mark, where the real content is printed afterwards).
+ */
+function railAbove(widthText, strut) {
   const raise = fmt(strut - HOOK_DROP);
   const hook = `\\rule[${raise}em]{${fmt(HOOK_W)}em}{${fmt(HOOK_LEN)}em}`;
   return (
     `\\rlap{${hook}}` +
     `\\overline{\\vphantom{\\rule{0pt}{${fmt(strut)}em}}` +
-    `\\hspace{${fmt(SIDE)}em}${inner}\\hspace{${fmt(SIDE)}em}}` +
+    `\\hspace{${fmt(SIDE)}em}${widthText}\\hspace{${fmt(SIDE)}em}}` +
     `\\llap{${hook}}`
   );
 }
 
-/** Rule-with-hooks below `inner`, its rule `strut` em below the baseline. */
-function markBelow(inner, strut) {
+/** Same, mirror-below the baseline. */
+function railBelow(widthText, strut) {
   const raise = fmt(-(strut + 0.12));
   const hook = `\\rule[${raise}em]{${fmt(HOOK_W)}em}{${fmt(HOOK_LEN)}em}`;
   return (
     `\\rlap{${hook}}` +
     `\\underline{\\vphantom{\\rule[-${fmt(strut)}em]{0pt}{0.01em}}` +
-    `\\hspace{${fmt(SIDE)}em}${inner}\\hspace{${fmt(SIDE)}em}}` +
+    `\\hspace{${fmt(SIDE)}em}${widthText}\\hspace{${fmt(SIDE)}em}}` +
     `\\llap{${hook}}`
   );
+}
+
+/**
+ * Two crossing marks sharing the middle segment: one over A+B, one over B+C.
+ * Both are zero-width overlays laid on top of the text A B C that follows, so
+ * the same tokens are printed once and marked twice.
+ */
+function crossMarks(A, B, C, h1, h2, below) {
+  const rail = below ? railBelow : railAbove;
+  // low mark: starts at the very beginning, covers A+B
+  const low = `\\rlap{${rail(`\\phantom{${A}${B}}`, h1)}}`;
+  // high mark: starts after A, covers B+C
+  const high = `\\rlap{\\phantom{${A}}\\rlap{${rail(`\\phantom{${B}${C}}`, h2)}}}`;
+  return `${high}${low}${A}${B}${C}`;
 }
 
 /**
@@ -208,8 +233,12 @@ function transformNode(s) {
 
     touched = true;
 
-    // The marked span: one group for \wick, A mid B for the 4-arg forms.
-    const parts = spec.arity === 1 ? [groups[0]] : [groups[1], groups[2], groups[3]];
+    // The marked span: one group for \wick, A mid B for the 4-arg forms,
+    // the three segments for \wickcross.
+    const parts =
+      spec.arity === 1 ? [groups[0]]
+        : spec.arity === 3 ? groups
+          : [groups[1], groups[2], groups[3]];
     const nodes = parts.map(transformNode);
     const body = nodes.map((n) => n.tex).join("");
     const bodyTop = nodes.reduce((m, n) => Math.max(m, n.top), 0);
@@ -221,8 +250,14 @@ function transformNode(s) {
       top = Math.max(top, pre.top);
     }
 
-    out += spec.below ? markBelow(body, strut) : markAbove(body, strut);
-    if (!spec.below) top = Math.max(top, strut + RAIL);
+    if (spec.arity === 3) {
+      const h2 = strut + CROSS_GAP;
+      out += crossMarks(nodes[0].tex, nodes[1].tex, nodes[2].tex, strut, h2, spec.below);
+      if (!spec.below) top = Math.max(top, h2 + RAIL);
+    } else {
+      out += spec.below ? railBelow(body, strut) : railAbove(body, strut);
+      if (!spec.below) top = Math.max(top, strut + RAIL);
+    }
 
     i = cursor;
   }
