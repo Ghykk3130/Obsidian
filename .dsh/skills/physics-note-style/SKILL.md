@@ -414,17 +414,13 @@ Callout：
 考虑一个二维电子气，结构反演对称性被界面破坏。电子感受到 Rashba 自旋轨道耦合。我们取：
 
 $$
-\begin{aligned}
-H & = \frac{p^{2}}{2m}+\alpha(\boldsymbol{\sigma}\times \mathbf{k})\cdot \hat{\mathbf{z}}
-\end{aligned}
+H = \frac{p^{2}}{2m}+\alpha(\boldsymbol{\sigma}\times \mathbf{k})\cdot \hat{\mathbf{z}}
 $$
 
 其中 $\alpha$ 为 Rashba 系数。将第二项写开：
 
 $$
-\begin{aligned}
-(\boldsymbol{\sigma}\times \mathbf{k})\cdot \hat{\mathbf{z}} & = \sigma_{x}k_{y}-\sigma_{y}k_{x}
-\end{aligned}
+(\boldsymbol{\sigma}\times \mathbf{k})\cdot \hat{\mathbf{z}} = \sigma_{x}k_{y}-\sigma_{y}k_{x}
 $$
 
 于是：
@@ -438,25 +434,19 @@ $$
 令 $k_{x}=k\cos \phi,\ k_{y}=k\sin \phi$。那么：
 
 $$
-\begin{aligned}
-H & = \frac{\hbar^{2}k^{2}}{2m}+\alpha k(\sin \phi \sigma_{x}-\cos \phi \sigma_{y})
-\end{aligned}
+H = \frac{\hbar^{2}k^{2}}{2m}+\alpha k(\sin \phi \sigma_{x}-\cos \phi \sigma_{y})
 $$
 
 这是 $\mathbf{d}\cdot\boldsymbol{\sigma}$ 型的二能级 hamiltonian，$\mathbf{d}=\alpha k(\sin \phi,-\cos \phi,0)$。容易得到：
 
 $$
-\begin{aligned}
-\epsilon_{\pm}(k) & = \frac{\hbar^{2}k^{2}}{2m}\pm \alpha k
-\end{aligned}
+\epsilon_{\pm}(k) = \frac{\hbar^{2}k^{2}}{2m}\pm \alpha k
 $$
 
 本征态为：
 
 $$
-\begin{aligned}
-|+\rangle & = \frac{1}{\sqrt{2}}\begin{pmatrix}1\\-ie^{i\phi}\end{pmatrix},\ |-\rangle=\frac{1}{\sqrt{2}}\begin{pmatrix}1\\ ie^{i\phi}\end{pmatrix}
-\end{aligned}
+|+\rangle = \frac{1}{\sqrt{2}}\begin{pmatrix}1\\-ie^{i\phi}\end{pmatrix},\ |-\rangle=\frac{1}{\sqrt{2}}\begin{pmatrix}1\\ ie^{i\phi}\end{pmatrix}
 $$
 
 计算 $|+\rangle$ 的自旋期望值：
@@ -478,9 +468,7 @@ $$
 $H$ 在时间反演下不变：
 
 $$
-\begin{aligned}
-\mathcal{T}H(\mathbf{k})\mathcal{T}^{-1} & = H(-\mathbf{k})
-\end{aligned}
+\mathcal{T}H(\mathbf{k})\mathcal{T}^{-1} = H(-\mathbf{k})
 $$
 
 但空间反演被界面破坏，所以 $\epsilon_{\uparrow}(\mathbf{k})\neq \epsilon_{\downarrow}(\mathbf{k})$，自旋简并消失。
