@@ -1,7 +1,7 @@
 ---
 name: physics-note-style
-description: "用用户本人的物理学笔记风格撰写或续写 Obsidian 中文物理笔记：中英混排、以推导为主体、theorem–proof–remark 分层、公式密集、口语化连接。适用于知识点笔记、模型分析、效应机制、toy model 估算与讲义整理。"
-whenToUse: "当任务要求按用户的笔记风格写物理内容，或需要把一段物理知识/推导整理成可放进 Obsidian 的 markdown 笔记时。"
+description: "用用户本人的物理学笔记风格撰写物理笔记：中英混排、以推导为主体、theorem–proof–remark 分层。默认输出到 DSH 聊天，用 KaTeX 安全子集（禁用 \\ket、\\bra、\\mathscr 等），保证公式能渲染；落盘 Obsidian 时再切换 callout/wikilink。"
+whenToUse: "当任务要求按用户的笔记风格写物理内容，或需要把一段物理知识/推导整理成可直接在聊天里阅读的笔记时；明确要求写入 Obsidian 时也用，但切换到落盘版语法。"
 ---
 
 # 物理笔记写作风格（physics-note-style）
@@ -122,7 +122,7 @@ whenToUse: "当任务要求按用户的笔记风格写物理内容，或需要�
 
 - **Handwave**：量级 / 直觉 / 泰勒展开，先看出答案。
 - **Theorem / Proposition**：用英文精确陈述，条件写全。
-- **Proof.**：中文严格推导，每步只做一件事；结束用 `>$\blacksquare$`。
+- **Proof.**：中文严格推导，每步只做一件事；聊天里结束用单独一行 `$\blacksquare$`，落盘 Obsidian 时再套 `> [!Right]`。
 
 "可以证明"只用于真正标准的结论（如 TKNN、Kramers、Wick），不要用它跳过本文该推的步骤。
 
@@ -259,28 +259,85 @@ $$E=E_{\text{ex}}+E_{\text{ani}}+E_{\text{dip}}+E_{\text{Ze}}$$
 
 骨架更短：定义 → 例子 → 命题 → 三行证明。允许 `Done` 结尾；叙述更冷，少物理评论。
 
-## 五、Markdown / LaTeX 约定
+## 五、输出格式与渲染兼容性
 
-结构：
+### 5.1 先决定输出目标
+
+默认输出到 DSH 聊天，不是 Obsidian 文件。聊天渲染器只认标准 Markdown + KaTeX，不认 Obsidian 专有语法：
+
+| 落盘 Obsidian | 聊天里改成 |
+|---|---|
+| `> [!Note] Definition 1` | `**Definition 1.**` |
+| `> [!Right]` + `$\blacksquare$` | 单独一行 `$\blacksquare$` |
+| `[[Haldane模型]]` | 文字 `Haldane 模型`，或 `[Haldane 模型](路径)` |
+| `^theorem1` | 省略 |
+| `![[Pasted image...]]` | 普通图片链接，或省略 |
+
+只有用户明确说"写进 Obsidian / 保存到 Notes / 新建一篇"时，才用左列语法。第四节模板按落盘版写；聊天里把 callout 换成加粗小标题即可。
+
+### 5.2 KaTeX 安全子集（DSH Web）
+
+聊天用 KaTeX 渲染 `$...$` 和 `$$...$$`。未定义宏不会报错，而是把整段公式显示成红色原文——这就是"渲染不成功"。
+
+**不要用**：`\ket{}`、`\bra{}`、`\braket{}`、`\abs{}`、`\norm{}`、`\expectationvalue{}`、`\mel{}{}{}`、`\ip{}{}`、`\ev{}`、`\dv{}{}`、`\pdv{}{}`、`\dd`、`\qty{}`、`\pqty{}`、`\bm{}`、`\tr`、`\Tr`、`\mathscr{}`、`\ce{}`、`\SI{}{}`。
+
+**替换表**：
+
+| 不要写 | 写成 |
+|---|---|
+| `\ket{\psi}` | `|\psi\rangle` |
+| `\bra{\psi}` | `\langle\psi|` |
+| `\braket{\phi|\psi}` | `\langle\phi|\psi\rangle` |
+| `\abs{x}` | `|x|` 或 `\lvert x\rvert` |
+| `\norm{x}` | `\|x\|` |
+| `\bm{\sigma}` | `\boldsymbol{\sigma}` |
+| `\mathscr{L}` | `\mathcal{L}` |
+| `\tr` / `\Tr` | `\operatorname{tr}` |
+| `\dv{f}{x}` | `\frac{df}{dx}` |
+| `\pdv{f}{x}` | `\frac{\partial f}{\partial x}` |
+| `\qty(...)` | `\left(...\right)` |
+
+**排版规则**：
+
+- 行内只用 `$...$`；不要在行内写 `\begin{align}`。
+- 独立公式 `$$` 单独起行、单独收行，`$$` 内不要空行；`$$` 前后各留一个空行，避免被并进上一段。
+- 单行公式直接 `$$ ... $$`；多行才用 `$$\begin{aligned} ... \end{aligned}$$`，每行 `&` 数量一致。
+- 关键结果 `\boxed{}`；编号用 `\tag{1}`，不要用 `\tag{*}`。
+- 中文写在公式外，不要塞进 `\text{}`；不要用 Unicode 数学符号（`−`、`×`、`≈`、`→`），用 `-`、`\times`、`\approx`、`\to`。
+- `\left` / `\right` 必须成对。
+- 张量用 `\mathbf{}` 或 `\vec{}`；算符用 `\hat{}` 或 `\mathcal{}`。
+- 自然单位制要明说："采用自然单位制 $c=1$"。
+
+如果公式还是红字：把它拆成更小的 `$$` 块，逐个删宏定位。九成是 `\ket`、`\bra`、`\mathscr`、`\bm`、`\tag{*}` 或 `\left/\right` 不配对。
+
+聊天版最小骨架（照这个排最稳）：
+
+```
+**Definition 1.** ...
+
+$$ ... $$
+
+**Proof.** ...
+
+$$ ... $$
+
+$\blacksquare$
+```
+
+### 5.3 结构
 
 - `# 1. xxx`、`# 2. xxx` 作大节（编号可重复，不必全局连续）。
 - `## Proof.`、`## Remark`、`## Ex:`、`## Caveat`、`## Big picture`、`## Handwave` 作小节。
 - `###` 很少用；需要三级时用 `## 2.1`。
 - 标题中英混排是正常的："# 1. 熵的热力学 formulation"。
 
+### 5.4 落盘版专用（聊天不要用）
+
 Callout：
 
 ```
 > [!Note] Definition 1
 > Let ... We call ... if ...
-> [!Proposition 1]
-> ...
-> [!Theorem 1]
-> ...
-> [!Quote]
-> （旁支推导 / 提醒）
-> [!Warning]
-> （符号 / 约定陷阱）
 ```
 
 证明结束：
@@ -292,20 +349,14 @@ Callout：
 
 （新笔记统一用这个；旧笔记里的 `Done` / `STS` 不再使用。）
 
-公式：
-
-- 独立公式一律 `$$\begin{align} ... \end{align}$$`，用 `&` 对齐等号，用 `\implies` 起新行。
-- 行内 `$...$`，不要把整句塞进公式。
-- 关键结果 `\boxed{}`；中间结果需要后文引用时加 `\tag{*}`，后文写"在 $*)$ 中"。
-- 张量用 `\mathbf{}` 或 `\vec{}`（两种都有，同一篇内保持一致）；算符用 `\hat{}` 或 `\mathcal{}`。
-- 自然单位制要明说："采用自然单位制 $c=1$"。
-
 引用与图：
 
 - 跨笔记：`[[Haldane模型]]`；带锚点：`[[熵#^theorem1|theorem 1.1]]`。
-- 图片：`![[Pasted image 2026...png|center|400]]`；旧笔记也用 `<div style="text-align:center"><img src="..." width=500></div>`。
-- 定理块 id：`^theorem1`、`^d5e805`，用于 transclusion。
-- 文献只用轻量标注："(c.f. Mermin chapter 5)"，不编参考文献列表。
+- 图片：`![[Pasted image 2026...png|center|400]]`。
+- 定理块 id：`^theorem1`、`^d5e805`。
+- 文献只用轻量标注："(c.f. Mermin chapter 5)"。
+
+聊天里这些都不渲染，改成 5.1 的写法。
 
 ## 六、写作流程
 
@@ -313,10 +364,10 @@ Callout：
 2. 列 3–6 个 H1，先定推导链，不写引言。
 3. 第一段：系统 + 已知 + 目标，3 句以内。
 4. 写方程链；每个方程前一句"为什么"，后一句"所以"。
-5. 关键结果 boxed；需要引用的中间结果加 tag。
+5. 关键结果 boxed；需要编号时用 `\tag{1}`，不要用 `\tag{*}`。
 6. 加 1–3 个 Remark/Caveat，必须具体到这一步推导，不写泛泛的"需要注意"。
 7. 删除任何总结段、任何"本文将"、任何表格。
-8. 只输出 markdown 正文，不加"以下是笔记"之类的前后缀。
+8. 只输出 markdown 正文，不加"以下是笔记"之类的前后缀；不要用 ``` 包整篇，也不要用 Obsidian callout（聊天里会显示成普通引用块）。
 
 ## 七、不要做
 
@@ -329,6 +380,7 @@ Callout：
 - 不要伪造引用、文献、实验数据。
 - 不要故意写错别字；但也不要润色成论文腔。
 - 不要在结尾强行升华；停在公式 / QED / Caveat 就好。
+- 不要用 KaTeX 不支持的宏（`\ket`、`\bra`、`\mathscr`、`\bm`、`\tag{*}` 等），聊天里会整段显示成红字。
 
 ## 八、自检
 
@@ -340,42 +392,59 @@ Callout：
 - [ ] 是否有"约化到已知模型"或"对称性论证"？
 - [ ] 结尾是否停在结果，而不是总结？
 - [ ] 中文里是否自然夹着英文术语？
+- [ ] 公式里没有 `\ket`、`\bra`、`\mathscr`、`\bm`、`\tag{*}` 等禁用宏？
+- [ ] 整篇没有被 ``` 包起来？callout 已换成聊天可渲染的加粗标题？
 
 ## 九、范例（照这个密度写）
+
+下面围栏只用于展示；实际回答不要用 ``` 包整篇，否则聊天会把它显示成代码块。
 
 ```markdown
 # 1. 模型
 
 考虑一个二维电子气，结构反演对称性被界面破坏。电子感受到 Rashba 自旋轨道耦合。我们取：
-$$\begin{align}
+
+$$\begin{aligned}
 H & = \frac{p^{2}}{2m}+\alpha(\boldsymbol{\sigma}\times \mathbf{k})\cdot \hat{\mathbf{z}}
-\end{align}$$
+\end{aligned}$$
+
 其中 $\alpha$ 为 Rashba 系数。将第二项写开：
-$$\begin{align}
+
+$$\begin{aligned}
 (\boldsymbol{\sigma}\times \mathbf{k})\cdot \hat{\mathbf{z}} & = \sigma_{x}k_{y}-\sigma_{y}k_{x}
-\end{align}$$
+\end{aligned}$$
+
 于是：
+
 $$H= \frac{\hbar^{2}k^{2}}{2m}+\alpha(k_{y}\sigma_{x}-k_{x}\sigma_{y})$$
 
 # 2. 能带与自旋结构
 
 令 $k_{x}=k\cos \phi,\ k_{y}=k\sin \phi$。那么：
-$$\begin{align}
+
+$$\begin{aligned}
 H & = \frac{\hbar^{2}k^{2}}{2m}+\alpha k(\sin \phi \sigma_{x}-\cos \phi \sigma_{y})
-\end{align}$$
+\end{aligned}$$
+
 这是 $\mathbf{d}\cdot\boldsymbol{\sigma}$ 型的二能级 hamiltonian，$\mathbf{d}=\alpha k(\sin \phi,-\cos \phi,0)$。容易得到：
-$$\begin{align}
+
+$$\begin{aligned}
 \epsilon_{\pm}(k) & = \frac{\hbar^{2}k^{2}}{2m}\pm \alpha k
-\end{align}$$
+\end{aligned}$$
+
 本征态为：
-$$\begin{align}
-\ket{+} & = \frac{1}{\sqrt{ 2 }}\begin{pmatrix}1\\-ie^{i\phi}\end{pmatrix},\ \ket{-}=\frac{1}{\sqrt{ 2 }}\begin{pmatrix}1\\ ie^{i\phi}\end{pmatrix}
-\end{align}$$
-计算 $\ket{+}$ 的自旋期望值：
-$$\begin{align}
+
+$$\begin{aligned}
+|+\rangle & = \frac{1}{\sqrt{2}}\begin{pmatrix}1\\-ie^{i\phi}\end{pmatrix},\ |-\rangle=\frac{1}{\sqrt{2}}\begin{pmatrix}1\\ ie^{i\phi}\end{pmatrix}
+\end{aligned}$$
+
+计算 $|+\rangle$ 的自旋期望值：
+
+$$\begin{aligned}
 \langle \sigma_{x}\rangle & = 2\mathrm{Re}(a^{*}b)=\sin \phi \\
 \langle \sigma_{y}\rangle & = 2\mathrm{Im}(a^{*}b)=-\cos \phi
-\end{align}$$
+\end{aligned}$$
+
 所以 $\langle \boldsymbol{\sigma}\rangle=(\sin \phi,-\cos \phi)$，垂直于 $\mathbf{k}$。绕费米面一圈，自旋转 $2\pi$。这就是 spin-momentum locking。
 
 ## Remark
@@ -384,9 +453,11 @@ $$\begin{align}
 # 3. 对称性
 
 $H$ 在时间反演下不变：
-$$\begin{align}
+
+$$\begin{aligned}
 \mathcal{T}H(\mathbf{k})\mathcal{T}^{-1} & = H(-\mathbf{k})
-\end{align}$$
+\end{aligned}$$
+
 但空间反演被界面破坏，所以 $\epsilon_{\uparrow}(\mathbf{k})\neq \epsilon_{\downarrow}(\mathbf{k})$，自旋简并消失。
 
 ## Caveat
