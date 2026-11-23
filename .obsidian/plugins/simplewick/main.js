@@ -1,297 +1,361 @@
 /*
- * SimpleWick for Obsidian
+ * SimpleWick — Peskin-style field contractions for Obsidian.
  *
- * A MathJax port of the public definitions in simplewick.sty v1.2a.
- * The original package uses TeX boxes and dimensions.  MathJax does not
- * expose those TeX primitives, so the contraction marks below use stretchy
- * overbrace/underbrace nodes over invisible copies of the supplied math.
- * The four argument grouping and the optional height argument are retained.
+ * Obsidian renders every piece of math through MathJax.tex2chtml(latex, opts)
+ * (that is what the public renderMath() API does).  We wrap that function and
+ * rewrite contraction commands into a small LaTeX construction that draws the
+ * mark the way Peskin & Schroeder print it: a horizontal rule with a short
+ * vertical hook dropping down at each end, reaching towards the two fields.
+ *
+ * The mark is built from primitives every MathJax build has:
+ *
+ *     \rlap{\rule[raise]{w}{h}} \overline{\vphantom{\rule{0pt}{strut}} ... }
+ *     \llap{\rule[raise]{w}{h}}
+ *
+ * `\overline` supplies the horizontal rule with exactly the width of the
+ * fields (plus a small overhang from \hspace), and the two \rule's are zero
+ * width laps placed at the left and right ends, so their hooks line up with
+ * the ends of the rule without measuring anything.
+ *
+ * Because TeX in MathJax cannot measure a box, the hook geometry is expressed
+ * in em against the baseline.  Nested contractions are handled by raising the
+ * outer rule: the rewriter tracks the tallest mark it produced inside a body
+ * and gives the enclosing one a taller strut, so stacked rules stay apart.
+ *
+ * Syntax
+ *   \wick[n]{X}                  typeset X, rule with hooks above
+ *   \bwick[n]{X}                 same, rule with hooks below
+ *   \contraction[n]{pre}{A}{mid}{B}   typeset pre A mid B, mark over A mid B
+ *   \bcontraction[n]{pre}{A}{mid}{B}  same, mark below
+ *   \acontraction, \contracted, \acontracted, \bcontracted — aliases
+ *
+ * `n` is the height of the rule above the baseline, in em (default 1.05).
  */
 
-const { Plugin, Notice } = require("obsidian");
+const { Plugin, MarkdownView, Notice, loadMathJax } = require("obsidian");
 
-// MathJax's config-macros syntax is [replacement, totalArgumentCount,
-// optionalFirstArgumentDefault].  A total count of 5 therefore means the
-// optional height plus the four required arguments from simplewick.sty.
-const SIMPLEWICK_MACROS = {
-  // Private helpers.  They are intentionally prefixed to avoid colliding with
-  // macros in a user's vault.
-  simplewickAbove: [
-    String.raw`\hphantom{#2}\overset{\overbrace{\vphantom{\rule{0pt}{#1}}\phantom{#3#4#5}}}{\vphantom{#3#4#5}}`,
-    5
-  ],
-  simplewickBelow: [
-    String.raw`\hphantom{#2}\underset{\underbrace{\vphantom{\rule{0pt}{#1}}\phantom{#3#4#5}}}{\vphantom{#3#4#5}}`,
-    5
-  ],
+// Geometry, all in em against the baseline.
+const DEFAULT_STRUT = 1.05; // rule height when nothing forces it higher
+const HOOK_DROP = 0.35; // how far a hook reaches down below the rule
+const HOOK_LEN = 0.42; // hook length; the extra 0.07 is buried in the rule
+const HOOK_W = 0.05; // hook thickness
+const SIDE = 0.09; // rule overhang past the fields, each side
+const STACK_GAP = 0.30; // minimum clearance between stacked rules
+const RAIL = 0.08; // height a finished mark adds above its strut
 
-  // \acontraction[height]{before}{start}{bridge}{end}
-  acontraction: [String.raw`\simplewickAbove{#1}{#2}{#3}{#4}{#5}`, 5, "1ex"],
-
-  // \acontracted[height]{before}{start}{bridge}{end}
-  acontracted: [
-    String.raw`\simplewickAbove{#1}{#2}{#3}{#4}{#5}{#2#3#4#5}`,
-    5,
-    "1ex"
-  ],
-
-  // The package's historical spelling is an alias of \acontraction.
-  contraction: [String.raw`\simplewickAbove{#1}{#2}{#3}{#4}{#5}`, 5, "1ex"],
-
-  // \bcontraction[height]{before}{start}{bridge}{end}
-  bcontraction: [String.raw`\simplewickBelow{#1}{#2}{#3}{#4}{#5}`, 5, "1ex"],
-
-  // \bcontracted[height]{before}{start}{bridge}{end}
-  bcontracted: [
-    String.raw`\simplewickBelow{#1}{#2}{#3}{#4}{#5}{#2#3#4#5}`,
-    5,
-    "1ex"
-  ],
-
-  // MathJax already uses fixed rendering metrics for TeX glue.  Grouping the
-  // argument preserves the macro's scope and is the closest portable mapping.
-  nomathglue: [String.raw`{#1}`, 1],
-
-  simplewickcontact: String.raw`\texttt{kolorenc@fzu.cz}`
-};
-
-const MACRO_NAMES = Object.keys(SIMPLEWICK_MACROS);
-
-function getMathJax() {
-  return typeof window !== "undefined" && window.MathJax ? window.MathJax : null;
+/** name -> { below: boolean, arity: 1 | 4 } */
+const CONTRACTION_COMMANDS = Object.create(null);
+for (const name of ["wick", "contraction", "acontraction", "contracted", "acontracted"]) {
+  CONTRACTION_COMMANDS[name] = { below: false, arity: name === "wick" ? 1 : 4 };
+}
+for (const name of ["bwick", "bcontraction", "bcontracted"]) {
+  CONTRACTION_COMMANDS[name] = { below: true, arity: name === "bwick" ? 1 : 4 };
 }
 
-function getTexConfig(mathJax) {
-  if (!mathJax.config) mathJax.config = {};
-  if (!mathJax.config.tex) mathJax.config.tex = {};
-  if (!mathJax.config.tex.macros) mathJax.config.tex.macros = {};
-  return mathJax.config.tex;
+// Cheap reject so ordinary formulas never enter the character loop.
+const TRIGGER = /\\[ab]?(?:wick|contraction|contracted)/;
+
+const IS_LETTER = /[A-Za-z]/;
+const IS_SPACE = /[ \t\r\n]/;
+
+const fmt = (n) => (Math.round(n * 100) / 100).toFixed(2);
+
+/**
+ * s[i] must be "{". Returns the balanced group starting there, honouring
+ * backslash escapes (so "\{" does not open a group) and "\\" line breaks.
+ */
+function matchGroup(s, i) {
+  if (s[i] !== "{") return null;
+  let depth = 0;
+  for (let j = i; j < s.length; j++) {
+    const c = s[j];
+    if (c === "\\") {
+      j++; // skip the escaped character, whatever it is
+      continue;
+    }
+    if (c === "{") depth++;
+    else if (c === "}") {
+      depth--;
+      if (depth === 0) return { content: s.slice(i + 1, j), end: j + 1 };
+    }
+  }
+  return null;
+}
+
+/** s[i] must be "[". Returns the optional argument up to the first unescaped "]". */
+function matchOptional(s, i) {
+  if (s[i] !== "[") return null;
+  for (let j = i + 1; j < s.length; j++) {
+    const c = s[j];
+    if (c === "\\") {
+      j++;
+      continue;
+    }
+    if (c === "]") return { content: s.slice(i + 1, j), end: j + 1 };
+  }
+  return null;
+}
+
+function skipSpaces(s, i) {
+  while (i < s.length && IS_SPACE.test(s[i])) i++;
+  return i;
+}
+
+/** Rule-with-hooks above `inner`, its rule `strut` em above the baseline. */
+function markAbove(inner, strut) {
+  const raise = fmt(strut - HOOK_DROP);
+  const hook = `\\rule[${raise}em]{${fmt(HOOK_W)}em}{${fmt(HOOK_LEN)}em}`;
+  return (
+    `\\rlap{${hook}}` +
+    `\\overline{\\vphantom{\\rule{0pt}{${fmt(strut)}em}}` +
+    `\\hspace{${fmt(SIDE)}em}${inner}\\hspace{${fmt(SIDE)}em}}` +
+    `\\llap{${hook}}`
+  );
+}
+
+/** Rule-with-hooks below `inner`, its rule `strut` em below the baseline. */
+function markBelow(inner, strut) {
+  const raise = fmt(-(strut + 0.12));
+  const hook = `\\rule[${raise}em]{${fmt(HOOK_W)}em}{${fmt(HOOK_LEN)}em}`;
+  return (
+    `\\rlap{${hook}}` +
+    `\\underline{\\vphantom{\\rule[-${fmt(strut)}em]{0pt}{0.01em}}` +
+    `\\hspace{${fmt(SIDE)}em}${inner}\\hspace{${fmt(SIDE)}em}}` +
+    `\\llap{${hook}}`
+  );
 }
 
 /**
- * Best-effort registration for an input jax that was created before this
- * plugin loaded. MathJax's internal modules are deliberately optional here:
- * Obsidian versions that do not expose them still receive tex.macros and the
- * startup hook below.
+ * Rewrite contractions inside `s`.
+ * Returns { tex, top } where `top` is how far the tallest mark reaches above
+ * the baseline, so an enclosing mark can be placed above it.
  */
-function installIntoActiveInputJax(mathJax) {
-  const startup = mathJax.startup;
-  const inputJaxCollection = startup && startup.document && startup.document.inputJax;
-  const inputJax = Array.isArray(inputJaxCollection)
-    ? inputJaxCollection.find((jax) => jax && (jax.name === "TeX" || jax.constructor?.name === "TeX")) || inputJaxCollection[0]
-    : inputJaxCollection;
-  // MathJax 3 stores the parser state as _parseOptions after startup. Older
-  // builds expose parseOptions directly, so support both layouts.
-  const parseOptions = inputJax && (inputJax._parseOptions || inputJax.parseOptions);
-  const handlers = parseOptions && parseOptions.handlers;
-  if (!handlers) return null;
+function transformNode(s) {
+  if (typeof s !== "string" || !TRIGGER.test(s)) return { tex: s, top: 0 };
 
-  let map;
-  if (typeof handlers.retrieve === "function") {
-    try {
-      map = handlers.retrieve("configmacros-map");
-    } catch (_error) {
-      map = null;
+  let out = "";
+  let i = 0;
+  let top = 0;
+  let touched = false;
+
+  while (i < s.length) {
+    const c = s[i];
+
+    if (c !== "\\") {
+      out += c;
+      i++;
+      continue;
     }
-  }
-  // In Obsidian's bundled MathJax, handlers.get('macro')._configuration.items
-  // contains the active MacroMap instances. The config-macros map is the one
-  // that must be updated after the input jax has already been constructed.
-  if (!map && typeof handlers.get === "function") {
-    const macroHandler = handlers.get("macro");
-    const items = macroHandler && macroHandler._configuration && macroHandler._configuration.items;
-    for (const entry of Object.values(items || {})) {
-      const candidate = entry && entry.item;
-      if (candidate && candidate._name === "configmacros-map") {
-        map = candidate.map;
-        break;
+
+    // "\\" is a line break, not the start of a command.
+    if (s[i + 1] === "\\") {
+      out += "\\\\";
+      i += 2;
+      continue;
+    }
+
+    let j = i + 1;
+    let name = "";
+    while (j < s.length && IS_LETTER.test(s[j])) {
+      name += s[j];
+      j++;
+    }
+
+    const spec = name ? CONTRACTION_COMMANDS[name] : null;
+    if (!spec) {
+      // Control symbol (\{, \,, …) or an unrelated command: copy it verbatim
+      // and resume after it so its letters are not rescanned.
+      const stop = j === i + 1 ? i + 1 : j;
+      out += s.slice(i, stop);
+      i = stop;
+      continue;
+    }
+
+    // optional [height], then 1 or 4 mandatory {...} groups
+    let k = skipSpaces(s, j);
+    let explicit = null;
+    if (s[k] === "[") {
+      const opt = matchOptional(s, k);
+      if (opt) {
+        const n = parseFloat(opt.content);
+        if (Number.isFinite(n) && n > 0) explicit = n;
+        k = skipSpaces(s, opt.end);
       }
     }
-  }
-  if (!map || typeof map.add !== "function") return null;
 
-  const texInternals = mathJax._ && mathJax._.input && mathJax._.input.tex;
-  const Macro = texInternals && texInternals.Token && texInternals.Token.Macro;
-  const newcommand = texInternals && texInternals.newcommand && texInternals.newcommand.NewcommandMethods;
-  const macroMethod =
-    (newcommand && newcommand.default && newcommand.default.Macro) ||
-    (newcommand && newcommand.Macro);
-  if (typeof Macro !== "function" || typeof macroMethod !== "function") return null;
+    if (s[k] !== "{") {
+      // Not a call we understand (e.g. the user defined the name themselves).
+      out += s.slice(i, j);
+      i = j;
+      continue;
+    }
 
-  const previous = new Map();
-  const added = new Map();
-  for (const name of MACRO_NAMES) {
-    const old = typeof map.lookup === "function" ? map.lookup(name) : null;
-    previous.set(name, old || null);
-    const definition = typeof SIMPLEWICK_MACROS[name] === "string"
-      ? [SIMPLEWICK_MACROS[name]]
-      : SIMPLEWICK_MACROS[name];
-    const replacement = new Macro(name, macroMethod, definition);
-    map.add(name, replacement);
-    added.set(name, replacement);
+    const groups = [];
+    let cursor = k;
+    while (groups.length < spec.arity) {
+      cursor = skipSpaces(s, cursor);
+      const g = matchGroup(s, cursor);
+      if (!g) break;
+      groups.push(g.content);
+      cursor = g.end;
+    }
+
+    if (groups.length !== spec.arity) {
+      out += s.slice(i, j);
+      i = j;
+      continue;
+    }
+
+    touched = true;
+
+    // The marked span: one group for \wick, A mid B for the 4-arg forms.
+    const parts = spec.arity === 1 ? [groups[0]] : [groups[1], groups[2], groups[3]];
+    const nodes = parts.map(transformNode);
+    const body = nodes.map((n) => n.tex).join("");
+    const bodyTop = nodes.reduce((m, n) => Math.max(m, n.top), 0);
+    const strut = explicit !== null ? explicit : Math.max(DEFAULT_STRUT, bodyTop + STACK_GAP);
+
+    if (spec.arity === 4) {
+      const pre = transformNode(groups[0]);
+      out += pre.tex;
+      top = Math.max(top, pre.top);
+    }
+
+    out += spec.below ? markBelow(body, strut) : markAbove(body, strut);
+    if (!spec.below) top = Math.max(top, strut + RAIL);
+
+    i = cursor;
   }
-  return { map, previous, added };
+
+  return { tex: touched ? out : s, top };
 }
 
-/**
- * Add the definitions both to the startup configuration and, when possible,
- * to an already-created TeX input jax.  The latter makes the plugin tolerant
- * of Obsidian versions that initialize MathJax before community plugins load.
- */
-function installIntoMathJax(mathJax) {
-  if (!mathJax) return null;
-
-  const tex = getTexConfig(mathJax);
-  const macros = tex.macros;
-  const previous = new Map();
-
-  for (const name of MACRO_NAMES) {
-    previous.set(name, {
-      present: Object.prototype.hasOwnProperty.call(macros, name),
-      value: macros[name]
-    });
-    macros[name] = SIMPLEWICK_MACROS[name];
-  }
-
-  // MathJax reads tex.macros while its startup document is being built.  Hook
-  // defaultReady so a plugin loaded during startup is registered before that
-  // document is created.  The wrapper is restored on unload.
-  const startup = mathJax.startup;
-  let originalDefaultReady = null;
-  let wrappedDefaultReady = null;
-  if (startup && typeof startup.defaultReady === "function") {
-    originalDefaultReady = startup.defaultReady;
-    wrappedDefaultReady = function simplewickDefaultReady() {
-      // Keep the config current in case another plugin replaced tex.macros.
-      const currentTex = getTexConfig(mathJax);
-      Object.assign(currentTex.macros, SIMPLEWICK_MACROS);
-      return originalDefaultReady.apply(this, arguments);
-    };
-
-    // Avoid wrapping the same startup object more than once.
-    if (!startup.defaultReady.__simplewickWrapped) {
-      wrappedDefaultReady.__simplewickWrapped = true;
-      wrappedDefaultReady.__simplewickOriginal = originalDefaultReady;
-      startup.defaultReady = wrappedDefaultReady;
-    } else {
-      wrappedDefaultReady = startup.defaultReady;
-      originalDefaultReady = wrappedDefaultReady.__simplewickOriginal || null;
-    }
-  }
-
-  // If MathJax is already running, update the active input-jax options too.
-  // This is harmless on builds that expose only config.tex.macros and lets a
-  // subsequent typeset pass see the definitions on builds that expose options.
-  const activeDocument = startup && startup.document;
-  const inputJax = activeDocument && activeDocument.inputJax;
-  const activeMapState = installIntoActiveInputJax(mathJax);
-  if (inputJax) {
-    if (inputJax.options && inputJax.options.macros) {
-      Object.assign(inputJax.options.macros, SIMPLEWICK_MACROS);
-    }
-    if (inputJax.parseOptions && inputJax.parseOptions.options && inputJax.parseOptions.options.macros) {
-      Object.assign(inputJax.parseOptions.options.macros, SIMPLEWICK_MACROS);
-    }
-  }
-
-  return {
-    mathJax,
-    tex,
-    macros,
-    previous,
-    startup,
-    originalDefaultReady,
-    wrappedDefaultReady,
-    activeMapState
-  };
-}
-
-function uninstallFromMathJax(state) {
-  if (!state) return;
-
-  const restore = (macros) => {
-    if (!macros) return;
-    for (const name of MACRO_NAMES) {
-      const old = state.previous.get(name);
-      if (!old) continue;
-      // Do not erase a value installed by a later plugin/user after us.
-      if (macros[name] !== SIMPLEWICK_MACROS[name]) continue;
-      if (old.present) macros[name] = old.value;
-      else delete macros[name];
-    }
-  };
-
-  restore(state.macros);
-  if (state.tex && state.tex.macros !== state.macros) restore(state.tex.macros);
-
-  if (state.activeMapState) {
-    const { map, previous, added } = state.activeMapState;
-    for (const name of MACRO_NAMES) {
-      if (!map || typeof map.lookup !== "function" || map.lookup(name) !== added.get(name)) continue;
-      const old = previous.get(name);
-      if (old && typeof map.add === "function") map.add(name, old);
-      else if (typeof map.remove === "function") map.remove(name);
-    }
-  }
-
-  if (
-    state.startup &&
-    state.wrappedDefaultReady &&
-    state.startup.defaultReady === state.wrappedDefaultReady &&
-    state.originalDefaultReady
-  ) {
-    state.startup.defaultReady = state.originalDefaultReady;
-  }
+/** Public entry point: rewrite contractions, return the LaTeX string. */
+function transformContractions(s) {
+  return transformNode(s).tex;
 }
 
 class SimpleWickPlugin extends Plugin {
   async onload() {
-    this._simplewickState = null;
-    this._simplewickTimer = null;
-
-    const tryInstall = () => {
-      if (this._simplewickState) return true;
-      const mathJax = getMathJax();
-      if (!mathJax) return false;
-      this._simplewickState = installIntoMathJax(mathJax);
-      return Boolean(this._simplewickState);
-    };
-
-    if (!tryInstall() && typeof window !== "undefined" && window.setInterval) {
-      // MathJax can be loaded lazily by Obsidian.  Retry briefly rather than
-      // failing plugin startup when the renderer is not ready yet.
-      this._simplewickTimer = window.setInterval(() => {
-        if (tryInstall()) {
-          window.clearInterval(this._simplewickTimer);
-          this._simplewickTimer = null;
-        }
-      }, 250);
-      this.register(() => {
-        if (this._simplewickTimer !== null) {
-          window.clearInterval(this._simplewickTimer);
-          this._simplewickTimer = null;
-        }
-      });
-    }
+    this._patch = null;
+    this._cancelled = false;
+    this.register(() => {
+      this._cancelled = true;
+    });
 
     this.addCommand({
-      id: "show-macro-list",
-      name: "Show SimpleWick macro list",
-      callback: () => {
-        new Notice("SimpleWick: \\acontraction, \\acontracted, \\contraction, \\bcontraction, \\bcontracted, \\nomathglue, \\simplewickcontact");
-      }
+      id: "wrap-contraction-above",
+      name: "Wrap selection in field contraction (mark above)",
+      editorCallback: (editor) => this.wrapSelection(editor, "wick"),
     });
+
+    this.addCommand({
+      id: "wrap-contraction-below",
+      name: "Wrap selection in field contraction (mark below)",
+      editorCallback: (editor) => this.wrapSelection(editor, "bwick"),
+    });
+
+    this.addCommand({
+      id: "show-status",
+      name: "Show contraction support status",
+      callback: () => {
+        new Notice(this.isActive() ? "SimpleWick: active." : "SimpleWick: inactive — MathJax was not patched.");
+      },
+    });
+
+    // Do not block Obsidian's startup on MathJax.  Notes rendered before the
+    // patch lands are fixed up by the re-render at the end of install().
+    this._installing = this.install();
+  }
+
+  wrapSelection(editor, command) {
+    const selected = editor.getSelection();
+    const inner = selected.trim();
+    if (!inner) return;
+    const leading = selected.slice(0, selected.indexOf(inner));
+    const trailing = selected.slice(leading.length + inner.length);
+    editor.replaceSelection(`${leading}\\${command}{${inner}}${trailing}`);
+  }
+
+  async install() {
+    try {
+      if (typeof loadMathJax === "function") {
+        await loadMathJax();
+      }
+    } catch (error) {
+      console.error("SimpleWick: loadMathJax() failed", error);
+    }
+
+    // MathJax may still be warming up (or loadMathJax may be missing on an old
+    // build); poll briefly instead of giving up.
+    const mathJax = await this.waitForMathJax(200, 60);
+    if (this._cancelled) return;
+    if (!mathJax) {
+      console.error("SimpleWick: MathJax.tex2chtml never became available; contractions are inactive");
+      new Notice("SimpleWick: MathJax was not found, contractions are inactive.");
+      return;
+    }
+
+    const original = mathJax.tex2chtml;
+    const patched = function (tex, options) {
+      let input = tex;
+      if (typeof tex === "string" && tex.indexOf("\\") >= 0) {
+        try {
+          input = transformContractions(tex);
+        } catch (error) {
+          console.error("SimpleWick: could not rewrite contractions", error);
+          input = tex;
+        }
+      }
+      return original.call(this, input, options);
+    };
+    // Mark the wrapper so a second install (plugin reload) does not stack.
+    patched.__simplewick = true;
+    if (!original.__simplewick) {
+      mathJax.tex2chtml = patched;
+      this._patch = { mathJax, original, patched };
+    }
+
+    this.rerenderActiveNote();
+  }
+
+  async waitForMathJax(intervalMs, attempts) {
+    for (let n = 0; n < attempts && !this._cancelled; n++) {
+      const mj = typeof window !== "undefined" ? window.MathJax : null;
+      if (mj && typeof mj.tex2chtml === "function") return mj;
+      if (n < attempts - 1) {
+        await new Promise((resolve) => window.setTimeout(resolve, intervalMs));
+      }
+    }
+    const mj = typeof window !== "undefined" ? window.MathJax : null;
+    return mj && typeof mj.tex2chtml === "function" ? mj : null;
+  }
+
+  isActive() {
+    const mj = typeof window !== "undefined" ? window.MathJax : null;
+    return !!(mj && typeof mj.tex2chtml === "function" && mj.tex2chtml.__simplewick);
+  }
+
+  rerenderActiveNote() {
+    try {
+      const view = this.app.workspace.getActiveViewOfType(MarkdownView);
+      const preview = view && view.previewMode;
+      if (preview && typeof preview.rerender === "function") preview.rerender(true);
+    } catch (error) {
+      // A non-markdown view, or an Obsidian version without previewMode: the
+      // next render picks up the patch anyway.
+    }
   }
 
   onunload() {
-    if (this._simplewickTimer !== null && typeof window !== "undefined") {
-      window.clearInterval(this._simplewickTimer);
-      this._simplewickTimer = null;
+    const patch = this._patch;
+    if (patch && patch.mathJax.tex2chtml === patch.patched) {
+      patch.mathJax.tex2chtml = patch.original;
     }
-    uninstallFromMathJax(this._simplewickState);
-    this._simplewickState = null;
+    this._patch = null;
   }
 }
 
 module.exports = SimpleWickPlugin;
-
+module.exports.transformContractions = transformContractions;
+module.exports.CONTRACTION_COMMANDS = CONTRACTION_COMMANDS;

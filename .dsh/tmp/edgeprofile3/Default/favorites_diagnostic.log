@@ -1,0 +1,43 @@
+2026-11-23 01:51:56.494: [INFO] CurrentProfilePath: D:\Obsidian\Physics\.dsh\tmp\edgeprofile3\Default
+2026-11-23 01:51:56.494: [INFO] Profiles total count: 1
+2026-11-23 01:51:56.494: [INFO] Profile: name=Profile 1 path=D:\Obsidian\Physics\.dsh\tmp\edgeprofile3\Default lastActive=2026-11-23T01:51:56.483Z
+2026-11-23 01:51:56.494: [INFO] LastUsedProfileDir: D:\Obsidian\Physics\.dsh\tmp\edgeprofile3\Default
+2026-11-23 01:51:56.494: [INFO] MostRecentlyActiveProfile: name=Profile 1 path=D:\Obsidian\Physics\.dsh\tmp\edgeprofile3\Default lastActive=2026-11-23T01:51:56.483Z
+2026-11-23 01:51:56.494: [INFO] OnDoneLoading sync enabled: 0
+2026-11-23 01:51:56.494: [INFO] BookmarkModelLoaded, ids_reassigned: 0
+2026-11-23 01:51:56.494: [INFO] BookmarksLoadDropped droppedNodes=0
+2026-11-23 01:51:56.494: [INFO] BookmarksSnapshot Startup total=2 bar=2 other=0 mobile=0 showBar=0 showBarNTP=1
+2026-11-23 01:51:56.563: [INFO] RecordSyncInitDuration has_sync_been_enabled: 0 state: 0
+2026-11-23 01:51:56.703: [INFO] VisibilityChanged: 0
+2026-11-23 01:51:57.266: [INFO] RecordSyncInitDuration has_sync_been_enabled: 0 state: 0
+2026-11-23 01:51:57.271: [INFO] RecordSyncInitDuration has_sync_been_enabled: 0 state: 3
+2026-11-23 01:51:57.275: [INFO] Primary account changed.
+2026-11-23 01:51:57.275: [INFO] OnPrimaryAccountChanged PrimaryAccountChangeEvent::Type::kSet
+2026-11-23 01:51:57.284: [INFO] RecordSyncInitDuration has_sync_been_enabled: 0 state: 3
+2026-11-23 01:51:57.294: [INFO] RecordSyncInitDuration has_sync_been_enabled: 0 state: 3
+2026-11-23 01:52:02.483: [INFO] BookmarkNodeAdded, ABU: 0
+2026-11-23 01:52:02.483: [INFO] BookmarkNodeAdded, ABU: 0
+2026-11-23 01:52:02.483: [INFO] BookmarkNodeAdded, ABU: 0
+2026-11-23 01:52:02.483: [INFO] BookmarkNodeAdded, ABU: 0
+2026-11-23 01:52:02.483: [INFO] BookmarkNodeAdded, ABU: 0
+2026-11-23 01:52:02.483: [INFO] BookmarkNodeAdded, ABU: 0
+2026-11-23 01:52:02.483: [INFO] BookmarkNodeAdded, ABU: 0
+2026-11-23 01:52:02.484: [INFO] BookmarkNodeAdded, ABU: 0
+2026-11-23 01:52:02.484: [INFO] BookmarkNodeAdded, ABU: 0
+2026-11-23 01:52:02.484: [INFO] BookmarkNodeAdded, ABU: 0
+2026-11-23 01:52:02.484: [INFO] BookmarkNodeAdded, ABU: 0
+2026-11-23 01:52:02.484: [INFO] BookmarkNodeAdded, ABU: 0
+2026-11-23 01:52:02.484: [INFO] BookmarkNodeAdded, ABU: 0
+2026-11-23 01:52:02.484: [INFO] BookmarkNodeAdded, ABU: 0
+2026-11-23 01:52:02.484: [INFO] BookmarkNodeAdded, ABU: 0
+2026-11-23 01:52:02.484: [INFO] BookmarkNodeAdded, ABU: 0
+2026-11-23 01:52:02.484: [INFO] BookmarkNodeAdded, ABU: 0
+2026-11-23 01:52:02.484: [INFO] BookmarkNodeAdded, ABU: 0
+2026-11-23 01:52:02.484: [INFO] BookmarkNodeAdded, ABU: 0
+2026-11-23 01:52:02.485: [INFO] BookmarkNodeAdded, ABU: 0
+2026-11-23 01:52:02.485: [INFO] BookmarkNodeAdded, ABU: 0
+2026-11-23 01:52:02.485: [INFO] BookmarkNodeAdded, ABU: 0
+2026-11-23 01:52:02.485: [INFO] BookmarkNodeAdded, ABU: 0
+2026-11-23 01:52:02.485: [INFO] BookmarkNodeAdded, ABU: 0
+2026-11-23 01:52:02.485: [INFO] BookmarkNodeAdded, ABU: 0
+2026-11-23 01:52:02.888: [INFO] Sync initialization duration: 5519ms

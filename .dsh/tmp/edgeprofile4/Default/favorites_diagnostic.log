@@ -1,0 +1,18 @@
+2026-11-23 01:58:10.860: [INFO] CurrentProfilePath: D:\Obsidian\Physics\.dsh\tmp\edgeprofile4\Default
+2026-11-23 01:58:10.860: [INFO] Profiles total count: 1
+2026-11-23 01:58:10.860: [INFO] Profile: name=Profile 1 path=D:\Obsidian\Physics\.dsh\tmp\edgeprofile4\Default lastActive=null
+2026-11-23 01:58:10.861: [INFO] LastUsedProfileDir: D:\Obsidian\Physics\.dsh\tmp\edgeprofile4\Default
+2026-11-23 01:58:10.861: [INFO] VisibilityChanged: 0
+2026-11-23 01:58:10.891: [INFO] BookmarkNodeAdded, ABU: 0
+2026-11-23 01:58:10.891: [INFO] BookmarkNodeAdded, ABU: 0
+2026-11-23 01:58:10.891: [INFO] OnDoneLoading sync enabled: 0
+2026-11-23 01:58:10.891: [INFO] BookmarkModelLoaded, ids_reassigned: 0
+2026-11-23 01:58:10.891: [INFO] BookmarksLoadDropped droppedNodes=0
+2026-11-23 01:58:10.891: [INFO] BookmarksSnapshot Startup total=2 bar=2 other=0 mobile=0 showBar=0 showBarNTP=1
+2026-11-23 01:58:10.895: [INFO] RecordSyncInitDuration has_sync_been_enabled: 0 state: 0
+2026-11-23 01:58:12.539: [INFO] RecordSyncInitDuration has_sync_been_enabled: 0 state: 0
+2026-11-23 01:58:12.544: [INFO] RecordSyncInitDuration has_sync_been_enabled: 0 state: 3
+2026-11-23 01:58:12.546: [INFO] Primary account changed.
+2026-11-23 01:58:12.546: [INFO] OnPrimaryAccountChanged PrimaryAccountChangeEvent::Type::kSet
+2026-11-23 01:58:12.558: [INFO] RecordSyncInitDuration has_sync_been_enabled: 0 state: 3
+2026-11-23 01:58:12.573: [INFO] RecordSyncInitDuration has_sync_been_enabled: 0 state: 3

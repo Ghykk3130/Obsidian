@@ -1,0 +1,390 @@
+{
+   "checksum": "9d01db4a51f5f07e6bb8cf5752f07ff7",
+   "roots": {
+      "bookmark_bar": {
+         "children": [ {
+            "date_added": "13337179243448738",
+            "date_last_used": "0",
+            "guid": "2fd472d4-79b6-4c1b-a21b-52978134bd5d",
+            "id": "8",
+            "name": "Canvas",
+            "show_icon": false,
+            "source": "sync",
+            "type": "url",
+            "url": "https://uncch.instructure.com/?login_success=1",
+            "visit_count": 0
+         }, {
+            "date_added": "13337549893661248",
+            "date_last_used": "0",
+            "guid": "d8a98321-cc6b-41de-b913-00cc401ea5de",
+            "id": "9",
+            "name": "DeepL翻译：全世界最准确的翻译",
+            "show_icon": false,
+            "source": "sync",
+            "type": "url",
+            "url": "https://www.deepl.com/translator",
+            "visit_count": 0
+         }, {
+            "date_added": "13337181113654847",
+            "date_last_used": "0",
+            "guid": "8cce8031-3a37-4fce-82d9-cbac4a8174c0",
+            "id": "10",
+            "name": "MyLab Math | Pearson",
+            "show_icon": false,
+            "source": "sync",
+            "type": "url",
+            "url": "https://mlm.pearson.com/northamerica/mymathlab/",
+            "visit_count": 0
+         }, {
+            "date_added": "13337181129789786",
+            "date_last_used": "0",
+            "guid": "9e238494-f682-4a65-bffb-caf0a7f19056",
+            "id": "11",
+            "name": "The Expert TA | Human-like Grading, Automated!",
+            "show_icon": false,
+            "source": "sync",
+            "type": "url",
+            "url": "https://ust35nc.theexpertta.com/common/default.aspx",
+            "visit_count": 0
+         }, {
+            "date_added": "13337181143999733",
+            "date_last_used": "0",
+            "guid": "6b604e94-a24e-4585-9f5a-3faa83d4ddbf",
+            "id": "12",
+            "name": "The Expert TA",
+            "show_icon": false,
+            "source": "sync",
+            "type": "url",
+            "url": "https://theexpertta.com/",
+            "visit_count": 0
+         }, {
+            "date_added": "13337299581170762",
+            "date_last_used": "0",
+            "guid": "80e6dee7-3ed6-4761-821e-9f531f77ec34",
+            "id": "13",
+            "name": "(1) Discord | #general | phys55",
+            "show_icon": false,
+            "source": "sync",
+            "type": "url",
+            "url": "https://discord.com/channels/752250969256886344/1137482343951638599",
+            "visit_count": 0
+         }, {
+            "date_added": "13337303079840091",
+            "date_last_used": "0",
+            "guid": "177376c3-8cee-410e-abde-8f57ff425224",
+            "id": "14",
+            "name": "Organizations - Heel Life",
+            "show_icon": false,
+            "source": "sync",
+            "type": "url",
+            "url": "https://heellife.unc.edu/organizations",
+            "visit_count": 0
+         }, {
+            "date_added": "13337207375713681",
+            "date_last_used": "0",
+            "guid": "f6fdbca6-c693-43ef-b7c8-75d9b92b3a57",
+            "id": "15",
+            "name": "Your Courses | Gradescope",
+            "show_icon": false,
+            "source": "sync",
+            "type": "url",
+            "url": "https://www.gradescope.com/",
+            "visit_count": 0
+         }, {
+            "date_added": "13337303092970201",
+            "date_last_used": "0",
+            "guid": "2eb2f1f7-6dff-425d-84b7-04d10e8f3973",
+            "id": "16",
+            "name": "Upcoming Events - Heel Life",
+            "show_icon": false,
+            "source": "sync",
+            "type": "url",
+            "url": "https://heellife.unc.edu/events",
+            "visit_count": 0
+         }, {
+            "date_added": "13337471228144216",
+            "date_last_used": "0",
+            "guid": "e7a7a7ee-d70d-42af-a6f8-8f0203e541ac",
+            "id": "17",
+            "name": "Homepage - UNC-Chapel Hill Libraries",
+            "show_icon": false,
+            "source": "sync",
+            "type": "url",
+            "url": "https://library.unc.edu/",
+            "visit_count": 0
+         }, {
+            "date_added": "13337805751097943",
+            "date_last_used": "0",
+            "guid": "7d1a1ad3-47ce-479c-89ae-6dccaa4d2ba7",
+            "id": "18",
+            "name": "beam.unc.edu",
+            "show_icon": false,
+            "source": "sync",
+            "type": "url",
+            "url": "https://beam.unc.edu/",
+            "visit_count": 0
+         }, {
+            "date_added": "13340207900411818",
+            "date_last_used": "0",
+            "guid": "40c20e68-a58b-40dd-a1ce-9288a172b78d",
+            "id": "19",
+            "meta_info": {
+               "power_bookmark_meta": ""
+            },
+            "name": "How it Works | Babbage Engine | Computer History Museum",
+            "show_icon": false,
+            "source": "sync",
+            "type": "url",
+            "url": "https://www.computerhistory.org/babbage/howitworks/",
+            "visit_count": 0
+         }, {
+            "date_added": "13340213055944726",
+            "date_last_used": "0",
+            "guid": "8a7ed214-b31a-4550-a912-c22d42560d03",
+            "id": "20",
+            "meta_info": {
+               "power_bookmark_meta": ""
+            },
+            "name": "Your Projects - Overleaf, Online LaTeX Editor",
+            "show_icon": false,
+            "source": "sync",
+            "type": "url",
+            "url": "https://www.overleaf.com/project",
+            "visit_count": 0
+         }, {
+            "date_added": "13341709434097370",
+            "date_last_used": "0",
+            "guid": "26b907f7-8a9c-4a67-a2fd-60b15f182258",
+            "id": "21",
+            "meta_info": {
+               "power_bookmark_meta": ""
+            },
+            "name": "osu!",
+            "show_icon": false,
+            "source": "sync",
+            "type": "url",
+            "url": "https://osu.ppy.sh/home",
+            "visit_count": 0
+         }, {
+            "date_added": "13344395765772772",
+            "date_last_used": "0",
+            "guid": "a237429e-692a-42f3-8ffe-3e7f9e033f09",
+            "id": "22",
+            "meta_info": {
+               "power_bookmark_meta": ""
+            },
+            "name": "Cambridge Dictionary | English Dictionary, Translations & Thesaurus",
+            "show_icon": false,
+            "source": "sync",
+            "type": "url",
+            "url": "https://dictionary.cambridge.org/",
+            "visit_count": 0
+         }, {
+            "date_added": "13345327175850807",
+            "date_last_used": "0",
+            "guid": "5bf28151-1595-4f52-9ed6-b8780eb6a3cb",
+            "id": "23",
+            "meta_info": {
+               "power_bookmark_meta": ""
+            },
+            "name": "arduino delay - 搜索",
+            "show_icon": false,
+            "source": "sync",
+            "type": "url",
+            "url": "https://www.bing.com/search?q=arduino+delay&qs=n&form=QBRE&sp=-1&lq=0&pq=arduino+de&sc=12-10&sk=&cvid=8136A7E1D75441BF9E19E92301041799&ghsh=0&ghacc=0&ghpl=",
+            "visit_count": 0
+         }, {
+            "date_added": "13345582877192372",
+            "date_last_used": "0",
+            "guid": "957dae31-dea2-4057-b0fd-11eb8c2d4430",
+            "id": "24",
+            "meta_info": {
+               "power_bookmark_meta": ""
+            },
+            "name": "stable_diffusion Nov 2023.ipynb - Colaboratory",
+            "show_icon": false,
+            "source": "sync",
+            "type": "url",
+            "url": "https://colab.research.google.com/drive/1M-4uLQbNchkaBuUjol7VtIOAw5fFi3U3?usp=sharing",
+            "visit_count": 0
+         }, {
+            "date_added": "13346458699615917",
+            "date_last_used": "0",
+            "guid": "89a947c7-019b-4bb7-b652-01990f966ec0",
+            "id": "25",
+            "meta_info": {
+               "power_bookmark_meta": ""
+            },
+            "name": "ISSS Portal Services Home Page",
+            "show_icon": false,
+            "source": "sync",
+            "type": "url",
+            "url": "https://isssportal.unc.edu/istart/controllers/client/ClientEngine.cfm",
+            "visit_count": 0
+         }, {
+            "date_added": "13349457280501738",
+            "date_last_used": "0",
+            "guid": "3b51e76d-9b6b-48f7-8627-bceac74f1a2e",
+            "id": "26",
+            "meta_info": {
+               "power_bookmark_meta": ""
+            },
+            "name": "COMP 116 Spring 2024",
+            "show_icon": false,
+            "source": "sync",
+            "type": "url",
+            "url": "https://comp116.cs.unc.edu/",
+            "visit_count": 0
+         }, {
+            "date_added": "13352087782191605",
+            "date_last_used": "0",
+            "guid": "cf83b78b-5760-4238-9c2c-cd94e3266744",
+            "id": "27",
+            "meta_info": {
+               "power_bookmark_meta": ""
+            },
+            "name": "账号登录",
+            "show_icon": false,
+            "source": "sync",
+            "type": "url",
+            "url": "https://passport.oray.com/login/pgy?tplname=qrcode&s_url=https%3A%2F%2Fconsole.sdwan.oray.com",
+            "visit_count": 0
+         }, {
+            "date_added": "13354082578067420",
+            "date_last_used": "0",
+            "guid": "4ddb0e02-a245-41f0-bedf-210aaf8bfa52",
+            "id": "28",
+            "meta_info": {
+               "power_bookmark_meta": ""
+            },
+            "name": "William_Gibson-The_Gernsback_Continuum.pdf",
+            "show_icon": false,
+            "source": "sync",
+            "type": "url",
+            "url": "https://gebseng.com/media_archeology/reading_materials/William_Gibson-The_Gernsback_Continuum.pdf",
+            "visit_count": 0
+         }, {
+            "date_added": "13354432434494104",
+            "date_last_used": "0",
+            "guid": "b0c4cc31-aa7d-4211-9779-d624340d49be",
+            "id": "29",
+            "meta_info": {
+               "power_bookmark_meta": ""
+            },
+            "name": "Math 312, Spring 2014",
+            "show_icon": false,
+            "source": "sync",
+            "type": "url",
+            "url": "https://www2.math.upenn.edu/~kazdan/312S14/",
+            "visit_count": 0
+         }, {
+            "date_added": "13354489430218129",
+            "date_last_used": "0",
+            "guid": "d21cea5b-ba99-4787-82dc-ddef82d37519",
+            "id": "30",
+            "meta_info": {
+               "power_bookmark_meta": ""
+            },
+            "name": "Math 260, Spring 2012",
+            "show_icon": false,
+            "source": "sync",
+            "type": "url",
+            "url": "https://www2.math.upenn.edu/~kazdan/312F12/",
+            "visit_count": 0
+         }, {
+            "date_added": "13358978649706355",
+            "date_last_used": "0",
+            "guid": "37609411-9a00-45e5-9e09-ca69af24950b",
+            "id": "31",
+            "meta_info": {
+               "power_bookmark_meta": ""
+            },
+            "name": "Welcome to UNC's ISSS Portal for International Students and Scholars",
+            "show_icon": false,
+            "source": "sync",
+            "type": "url",
+            "url": "https://isssportal.unc.edu/istart/controllers/start/StartEngine.cfm",
+            "visit_count": 0
+         }, {
+            "date_added": "13366297164655610",
+            "date_last_used": "0",
+            "guid": "e183248c-5cef-46ef-87bc-08a26a6f02c3",
+            "id": "32",
+            "meta_info": {
+               "power_bookmark_meta": ""
+            },
+            "name": "osu",
+            "show_icon": false,
+            "source": "sync",
+            "type": "url",
+            "url": "https://osu.ppy.sh/",
+            "visit_count": 0
+         }, {
+            "date_added": "13439872316494042",
+            "date_last_used": "0",
+            "guid": "2e1fedf0-b554-4028-b6af-bfd1fc6ba4fe",
+            "id": "7",
+            "name": "Lenovo Support",
+            "show_icon": false,
+            "source": "oem_preload",
+            "type": "url",
+            "url": "https://support.lenovo.com/",
+            "visit_count": 0
+         }, {
+            "date_added": "13439872316493688",
+            "date_last_used": "0",
+            "guid": "9bf1ff12-ef15-4513-8b2c-f0d5af042eeb",
+            "id": "6",
+            "name": "Lenovo",
+            "show_icon": false,
+            "source": "oem_preload",
+            "type": "url",
+            "url": "https://www.lenovo.com/",
+            "visit_count": 0
+         } ],
+         "date_added": "13439872316348301",
+         "date_last_used": "0",
+         "date_modified": "13439872316494042",
+         "guid": "0bc5d13f-2cba-5d74-951f-3f233fe6c908",
+         "id": "1",
+         "name": "Favorites bar",
+         "source": "unknown",
+         "type": "folder"
+      },
+      "other": {
+         "children": [  ],
+         "date_added": "13439872316348301",
+         "date_last_used": "0",
+         "date_modified": "0",
+         "guid": "82b081ec-3dd3-529c-8475-ab6c344590dd",
+         "id": "2",
+         "name": "Other favorites",
+         "source": "unknown",
+         "type": "folder"
+      },
+      "synced": {
+         "children": [  ],
+         "date_added": "13439872316348301",
+         "date_last_used": "0",
+         "date_modified": "0",
+         "guid": "4cf2e351-0e85-532b-bb37-df045d8f8d0f",
+         "id": "3",
+         "name": "Mobile favorites",
+         "source": "unknown",
+         "type": "folder"
+      },
+      "workspaces_v2": {
+         "children": [  ],
+         "date_added": "13439872316348301",
+         "date_last_used": "0",
+         "date_modified": "0",
+         "guid": "75aa6670-344f-549d-b742-660f029506ab",
+         "id": "4",
+         "name": "Workspaces",
+         "source": "unknown",
+         "type": "folder"
+      }
+   },
+   "sync_metadata": "CkEKHgiIgQISCAnXFQaiAQAAKg4QABgBIAAoBTAAOABAABIAKhgzZmlVMjVLRkdXVkZXMmVKRVduMnZnPT1IA6AGDBKMAQgCEocBChxZY1NUb252RVNQd3FDczRMMmNyVmh2NjhMOTg9EiQ2NzFkOGRkNy00ZjhiLTVlNzgtYWI2Mi0zN2RmNTRhMTI2ZDcYACAAKAAw+eCW45YxOOjmluOWMUDo5pbjljFKHG9QVmtod0JSYlY2NUtDV1IyK0lPTkhXb091OD1lAAAAAMI+AmAAEq8BCCASqgEKHDFrNXRvZ3Btb211Z2F0cWVJVU5ROHFPMXJvVT0SJGUxODMyNDhjLTVjZWYtNDZlZi04N2JjLTA4YTI2YTZmMDJjMxgAIAAoADCa57qljjI48866pY4yQPPOuqWOMkocSXVnZkoxS3dkZGkrNHE2RENIOUM3clFwUXhJPVohIh////9JdGNteDAwTDNVZDk4Y2xrUStCbmwrSG00OUE9ZdXzm3jCPgJgBRKvAQgeEqoBChxqWGd4SHRndE5wdGJTdTZFK2w3bktFV3J0cFk9EiRkMjFjZWE1Yi1iYTk5LTQ3ODctODJkYy1kZGVmODJkMzc1MTkYACAAKAAwx8iLp+IxOLnLi6fiMUC5y4un4jFKHHE2dkR5UFhsN3RmcFpHdnpBK3Zqc1UxNU4rbz1aISIf///9WE1CcThzdVUvMzB4L3FnTnJ1WjZUTlM0RWtRPWUAAAAAwj4CYAUSrwEIHRKqAQocRHovcnJOQTJNTzk4NjNmU01WQUtsUEYvTFlVPRIkYjBjNGNjMzEtYWE3ZC00MjExLTk3NzktZDYyNDM0MGQ0OWJlGAAgACgAMOnt9IviMTjT8PSL4jFA0/D0i+IxShxrTHR0OHBucFJSNHRCSDh2SCtvRHZvTzdJWmM9WiEiH///+2N0ZzlsYWJydjFxMWIvRHBwNjg5dnVUdmQ4Yz1lAAAAAMI+AmAFEq0BCA8SqAEKHFVoWitDSHZhdHV3U3VIWE94QXhzT0k5c3VQQT0SJGY2ZmRiY2E2LWM2OTMtNDNlZi1iN2M4LTc1ZDliOTJiM2E1NxgAIAAoADCFj/G+3zE42d2u9qExQNndrvahMUocRE9jb0ViN24zYWRULzMrN1dhRnMyS2RtaFl3PVofIh3+WktuMW12Y2l5RlNWNjF6SytNVHhGd294ZU0wPWUzlNeRwj4CYAUSrgEIGBKpAQocNGVvTmp6eW1Dd2xvY1hLZGJlNDM1VFNwbHlFPRIkOTU3ZGFlMzEtZGVhMi00MDU3LWIwZmQtMTFlYjhjMmQ0NDMwGAAgACgAMJDNjpDBMTif0Y6QwTFAn9GOkMExShw0QmxQVDBiRFZ4ZUFaaHNGVzZaOGw4VlFEVHc9WiAiHv//d1dNbmV0bkM5WXhEcjRqdVZMeE5JamRiWm5RPWU9Yqxdwj4CYAUSrwEIGxKqAQocU0dMdDJXWlRSc2tZN2dmK0IrY1JuRmtHQ1FzPRIkY2Y4M2I3OGItNTc2MC00MjM4LTljMmMtY2Q5NGUzMjY2NzQ0GAAgACgAMOzS8q3ZMTiU1/Kt2TFAlNfyrdkxShxrdkIyTlIzcGJ1b2NGemVrZFRPSWpTOGpwOWM9WiEiH///7mZIcVYxS3F2aVlQUVpEdFZweHB3Q0Q1T0ZWVT1l7gYodcI+AmAFEq4BCBQSqQEKHDVONCszQkg3bUYrS0hqRkFNZDJlMUhpU2NWTT0SJDhhN2VkMjE0LWIzMWEtNDU1MC1hOTEyLWMyMmQ0MjU2MGQwMxgAIAAoADCo68qPrTE4gu/Kj60xQILvyo+tMUocZ2Z6OU9wOHhBTkQ0OVpHNUlPKzduYlFJM2ZNPVogIh7/9nhIdHRNTkp4dFo4dkZrR3BJSkMrdkZJZ0lxOD1lRD4J8sI+AmAFEq8BCBoSqgEKHHlQUkNoc09uUm81M0JENkp0OFExaXRwTVpPOD0SJDNiNTFlNzZkLTliNmItNDhmNy04NjI3LWJjZWFjNzRmMWEyZRgAIAAoADC8vMnHzzE4nsDJx88xQJ7AycfPMUocbmtEM1RjTnRFcFFjL01QL2xIR1R3T2RWeXZRPVohIh///901TGJKalAxK2pPbnNaeGMyZVk5Z1YwOWpSTWs9ZQ7ezGDCPgJgBRKvAQgZEqoBChx2QWhHTURoUHlqSXR2VkxSQVl6SjAzK2l1MXM9EiQ4OWE5NDdjNy0wMTliLTRiYjctYjY1Mi0wMTk5MGY5NjZlYzAYACAAKAAwhNDescQxOL7S3rHEMUC+0t6xxDFKHGxOYU5yUVVEZnYxeERJaFRpd1VnR1BQNXNScz1aISIf//+7YTdDdXM4SXBMSURHVU1qZmJNWXlnNVNVRWZnPWVwr+EOwj4CYAUSjAEIBBKHAQocd1JCclpMKzZQQTlhdktnak5QN0pYRExjZnZzPRIkZjA2OTVmMmMtMzYxZi01ODkxLTg3MGEtMjg2NTJlYjBhNDYxGAAgACgAMPfa5b+lMziU3eW/pTNAlN3lv6UzShxubXg2NXNRRHZ4SThUZ0VlditBK250dG9TbjQ9ZQAAAADCPgJgABKuAQgXEqkBChxQSkdPRkRoR25iajIzbktwY2hLQ1FIQkduN289EiQ1YmYyODE1MS0xNTk1LTRmNTItOWVkNi1iODc4MGViNmEzY2IYACAAKAAw1bTM46MzOP2PmJbAMUD9j5iWwDFKHFFlUWhoU1g1cUJNL2g4b1RXOW5pRWZlNklITT1aICIe//5Wa3l5OEJIUUdVZy94N01WUlpnVlJXZFNDb1E9ZfTwSyjCPgJgBRKuAQgWEqkBChxyT1JPWWk4Y1FDeUhvTDRLK1FiUXd1MzEzNzA9EiRhMjM3NDI5ZS02OTJhLTQyZjMtOGZmZS0zZTdmOWUwMzNmMDkYACAAKAAwvqCH2rwxONikh9q8MUDYpIfavDFKHE1uWHd0U0FTaFpYdURNVGs5Wi9ZNjgwTXNvZz1aICIe//1MZWY1YzdlUU1DZ0oxR2JjVkM5eGt4T3dURjA9ZSdre6rCPgJgBRKuAQgVEqkBChxWRWZ2ZHgrTHM2eWV3b05CTXROaXNWZWI1ZlU9EiQyNmI5MDdmNy04YTljLTRhNjctYTJmZC02MGIxNWYxODIyNTgYACAAKAAw5PuO2bIxOIa+jtmyMUCGvo7ZsjFKHExKb2xybVl0Zkp2Y0pSNHFqdDVJejRJOGR1QT1aICIe//taTmp4N0VLYkswWjFFck93enFKbnZTMjBqUFU9ZdXzm3jCPgJgBRKuAQgTEqkBChxGekFxb2x4UUxvYko0VzZUemFrdFQ0OXV2dGs9EiQ0MGMyMGU2OC1hNThiLTQwZGQtYTFjZS05Mjg4YTE3MmI3OGQYACAAKAAw1JKQja0xOPyXkI2tMUD8l5CNrTFKHDF2bjVWQmRCOG91Q25Tb2gyZ2xHSmRlVVo2MD1aICIe/+xSOG5vV0hxTXlMSUNCd1l1ZS9BanY4M0xuZ009ZWrlrF/CPgJgBRKtAQgREqgBChxGZm5OQnJPZnRNQ1BLMTNkT2dMOUxacUhyQnc9EiRlN2E3YTdlZS1kNzBkLTQyYWYtYTZmOC04ZjAyMDNlNTQxYWMYACAAKAAwlISX9KIxOMOHl/SiMUDDh5f0ojFKHHJsUGtmRWxXbGduZm4zNm1hTm92aFFNSUxIQT1aHyId/zRXTE9RWmpkd2xRY3VSdEJXR05TWlE5NTdCQT1lJdLvV8I+AmAFEq0BCAsSqAEKHEhtbXJraFhQcjFvVnVEVkk3bzRRd0pJK1B2bz0SJDllMjM4NDk0LWY2ODItNGE2NS1iZmZiLWNhZjBhN2YxOTA1NhgAIAAoADDXr7iCxDE4rOXs6aExQKzl7OmhMUocZXFONUpxV1BKWmc1Qnd0QktoaW9LWFdnT1JrPVofIh3SSm1DakhxSkx6VXN2Vnk5aUs1TTVUQ2pKSCswPWXYod0ewj4CYAUSrQEIEBKoAQocbHM2R3dLQkRkcHJsMWtPV2dYU2RRY0ZscVVVPRIkMmViMmYxZjctNmRmZi00MjVkLTg0YjctMDRkMTBlOGYzOTczGAAgACgAMN/N+oDpMTjl54CkojFA5eeApKIxShx2WlZaSExaQlJKVDU0N08vL01UaUZtVW1lSzQ9Wh8iHf5uT2U0eXg1QUxpWHdyVUFsc0FKY3ZXM1BUejg9ZT4sNVzCPgJgBRKuAQgSEqkBChxxeUo1OWVvTTBxaTY2N0xORzhvN0dQSngxc3c9EiQ3ZDFhMWFkMy00N2NlLTQ3OWMtODlhZS02ZGNjYWE0ZDJiYTcYACAAKAAwuJq72bExOLDQ2JOkMUCw0NiTpDFKHG95S29SVDVvem51U2UrVU1FT3d1S3Y4V2pnbz1aICIe/9hiWWxQL1hiaFk0SUI1VnFZYU9uZk13S0J4SjA9ZewLYfLCPgJgBRKMAQgBEocBChx5eEovNmZ2a2VjcjdrcDVFUXpCNHRXTHBkYkU9EiQ1MzkzMjY4Mi0xNDcyLTUzNzItYWQwMS0yYTNjZjY2NWUzYTIYACAAKAAw+OCW45YxOM3mluOWMUDN5pbjljFKHGFSQ1dMZ2hGOWI1SW5xS0lEdnVKL2p2UWtGYz1lAAAAAMI+AmAAEqwBCAgSpwEKHDd5ZVNFQXRhTThrMTI2c2hRODdBSXJMQWFQMD0SJDJmZDQ3MmQ0LTc5YjYtNGMxYi1hMjFiLTUyOTc4MTM0YmQ1ZBgAIAAoADD0jProoTE4qdT56KExQKnU+eihMUoccFp6QmNBdDNVUXZRTFVOM3F5U2RJaDVuMWtvPVoeIhxJdlcxcEhRdlJmeFZieGl6aUtva0VRZXliTWs9ZQrBK/7CPgJgBRKsAQgJEqcBChx3NFRTVmpBTE1KU3hwc0ZVWG1rQ1BRNUowRXc9EiRkOGE5ODMyMS1jYzZiLTQxZGUtYjkxMy0wMGNjNDAxZWE1ZGUYACAAKAAw+YyPkcgxONGp2JmjMUDRqdiZozFKHENEeGNMdFYzMG03czVlUGhRWlEva0RNUzZyQT1aHiIcYTI5ajE5cHp5eTFGNnNFOE9PMDIrcFJDRG44PWUYdM+lwj4CYAUSrQEIDRKoAQocSUpBMngzUUJQbmVvdlZwMkZCbklpRVlGYndFPRIkODBlNmRlZTctM2VkNi00NzYxLTgyMWUtOWY1MzFmNzdlYzM0GAAgACgAMOWrkYCpMTjIwaqiojFAyMGqoqIxShw3K3hXVG9nNE1INGhBRFltbjBkdGNuaW1wYXM9Wh8iHfpsMWFCRngxZDlHS3l5NjFCa1k2SWZYcWRraGc9ZfXrsiHCPgJgBRKtAQgOEqgBChxDcEFRdE5UbDZTNUdZc0E0MXRjSlJCTlkwT3M9EiQxNzczNzZjMy04Y2VlLTQxMGUtYWJkZS04ZjU3ZmY0MjUyMjQYACAAKAAw3s36gOkxONqDgKSiMUDag4CkojFKHFUzb0l0YVhhSGw1OURYUG9CMTRtRjdwbXNuWT1aHyId/WhhczIyVnJURkFkd0F6RThsZkZyN1pIbmxiMD1lPiw1XMI+AmAFEq8BCB8SqgEKHFFqcm1wTlNUbFREcnN5L1F3R24raWFuUnJROD0SJDM3NjA5NDExLTlhMDAtNDVlNS05ZTA5LWNhNjlhZjI0OTUwYhgAIAAoADDA7tuD8zE4zPHbg/MxQMzx24PzMUocclh1TGhRc0RsdGN0VVRiSHNpL2NLSERudFdZPVohIh////5sdXdiNHcrSFB6RS85MkRuaFpDeE5maUc5UUk9ZXCv4Q7CPgJgBRKtAQgMEqgBChx6amdkZTgzVmE0NGhidEsyeDloVnFpRENXRjg9EiQ2YjYwNGU5NC1hMjRlLTQ1ODUtOWY1YS0zZmFhODNkNGRkYmYYACAAKAAwqdHt6aExOLrU7emhMUC61O3poTFKHDJ6VE01NExJYWVVR1VIRlEvaXd5VXRhQytlWT1aHyId6U5QdGFUQ0MyUDBsRURwZWNIT29VelpZS2NKTT1l2KHdHsI+AmAFEq8BCBwSqgEKHHBqc3h0ekcrc2RLL21zRjZFT2YyZXdNRUpqcz0SJDRkZGIwZTAyLWEyNDUtNDFmMC1iZWRmLTIxMGFhZjhiZmE1MhgAIAAoADCoo4vl4DE4vKaL5eAxQLymi+XgMUocLzdsSDlrQ1g0QlJnTTdHSVhncGZaQmRCTys0PVohIh////dqTDRRTW8xbmxVQTU0ekMxbjN0Wk1QWWI1V2c9ZRnHxADCPgJgBRKtAQgKEqgBChxUc09kbVBsZk9GbHpHQW5yVGtaLytVYW92RXc9EiQ4Y2NlODAzMS0zYTM3LTRmY2UtODJkOS1jYmFjNGE4MTc0YzAYACAAKAAw0+Tr6aExOP7n6+mhMUD+5+vpoTFKHEQzRXVZUzlaelN0ZHdMV0ZPOEYxZkVocnpnST1aHyIdpEU2cGc4M3cvYmZPOWJhdXg5VkFLbG00Q3RxQT1lESdGKcI+AmAFEowBCAMShwEKHG5qZ0R1ODhlQ3J2WHA4NnBEN2ZIR2NxRnA4OD0SJGJhMWQwN2U0LTE4ZjYtNWRkOS1hNDQzLTA3YTJmMjdjNWZhNBgAIAAoADD+4JbjljE4veeW45YxQL3nluOWMUoceXpOQjAxY241NEE3Y1JVMHVUKy9QZ21UdFVvPWUAAAAAwj4CYAAwADgA",
+   "version": 1
+}

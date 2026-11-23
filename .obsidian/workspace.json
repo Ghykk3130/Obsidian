@@ -629,7 +629,7 @@
               "type": "markdown",
               "state": {
                 "file": "Homework/Physics 513/Physics 513 homework 11.md",
-                "mode": "preview",
+                "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
@@ -4469,7 +4469,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "申请",
+                "query": "申请申请",
                 "matchingCase": true,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -4480,7 +4480,8 @@
               "title": "Search"
             }
           }
-        ]
+        ],
+        "currentTab": 3
       }
     ],
     "direction": "horizontal",
@@ -4588,7 +4589,7 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "158d1a9d9e56705e",
+  "active": "f69ba2cf946ad0e0",
   "lastOpenFiles": [
     "Notes/申请.md",
     "Homework/Physics 513/Physics 513 homework 11.md",

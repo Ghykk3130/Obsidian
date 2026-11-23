@@ -1,0 +1,31 @@
+<!doctype html>
+<html><head><meta charset="utf-8"><title>chtml-check</title>
+<style>body{background:#fff;font-family:Consolas,monospace;font-size:14px;color:#000;padding:8px}
+#diag{white-space:pre-wrap}</style>
+<script>
+window.MathJax={tex:{packages:{'[+]':["ams","mathtools","color","enclose","boldsymbol","mhchem","html","bbox","cancel","physics","braket"]},inlineMath:[],displayMath:[],processEscapes:false,processEnvironments:false,processRefs:false},startup:{typeset:false},options:{enableMenu:false}};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js"></script>
+</head><body>
+<div id="diag">start</div>
+<div id="a"></div>
+<script>
+const TEX = String.raw`\rlap{\rule[0.70em]{0.05em}{0.42em}}\overline{\vphantom{\rule{0pt}{1.05em}}\hspace{0.09em}\phi(x)\phi(y)\hspace{0.09em}}\llap{\rule[0.70em]{0.05em}{0.42em}}`;
+MathJax.startup.promise.then(()=>{
+  document.head.appendChild(MathJax.chtmlStylesheet());
+  const lines=[];
+  try{
+    const n=MathJax.tex2chtml(TEX,{display:true});
+    document.getElementById('a').appendChild(n);
+    const html=n.outerHTML;
+    lines.push('ok: rendered');
+    lines.push('nodes: ' + n.querySelectorAll('*').length);
+    lines.push('has mpadded: ' + /mpadded/.test(html));
+    lines.push('has mjx-munderover/overline: ' + /mover|munderover|mo\b/.test(html));
+    const texts=[...n.querySelectorAll('*')].map(e=>e.tagName).join(',');
+    lines.push('tags: ' + texts.slice(0,300));
+  }catch(e){ lines.push('ERROR: '+e.message); }
+  document.getElementById('diag').textContent=lines.join('\n');
+  document.title='DONE';
+});
+</script></body></html>

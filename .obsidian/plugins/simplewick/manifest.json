@@ -1,9 +1,9 @@
 {
   "id": "simplewick",
   "name": "SimpleWick",
-  "version": "1.0.0",
+  "version": "1.2.0",
   "minAppVersion": "1.5.0",
-  "description": "Wick-contraction macros for Obsidian's MathJax renderer.",
-  "author": "SimpleWick port",
+  "description": "Peskin-style field contractions: \\wick{...} draws a rule with hooks dropping to the contracted fields.",
+  "author": "SimpleWick",
   "isDesktopOnly": false
 }
