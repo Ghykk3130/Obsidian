@@ -46,6 +46,11 @@ const HOOK_W = 0.05; // hook thickness
 const RAIL_GAP = 0.18;
 const RAIL_THICK = 0.06;
 const HOOK_LEN = HOOK_DROP + RAIL_GAP + RAIL_THICK / 2; // 0.56
+// The hooks sit inside the ends of the marked span, over the fields themselves
+// rather than at the outer edge of the whole expression — that is where Peskin
+// puts them.  The rule is shortened by the same amount on both sides so the
+// corner stays a clean right angle.
+const HOOK_INSET = 0.25;
 const STACK_GAP = 0.30; // minimum clearance between stacked rules
 const RAIL = RAIL_GAP + RAIL_THICK + 0.02; // height a finished mark adds above its strut
 // For crossing marks the later rule sits exactly one hook-drop higher, so its
@@ -120,9 +125,13 @@ function skipSpaces(s, i) {
 function railAbove(widthText, strut) {
   const raise = fmt(strut - HOOK_DROP);
   const hook = `\\rule[${raise}em]{${fmt(HOOK_W)}em}{${fmt(HOOK_LEN)}em}`;
+  const i = fmt(HOOK_INSET);
+  // \hspace{i} shifts the rule inward; the matching \hspace{-i} inside the
+  // \overline shortens it, so rule and hooks stay a square corner while the
+  // content itself is still typeset at its natural position.
   return (
-    `\\rlap{${hook}}` +
-    `\\overline{\\vphantom{\\rule{0pt}{${fmt(strut)}em}}${widthText}}` +
+    `\\rlap{\\hspace{${i}em}${hook}}` +
+    `\\hspace{${i}em}\\overline{\\hspace{-${i}em}\\vphantom{\\rule{0pt}{${fmt(strut)}em}}${widthText}\\hspace{-${i}em}}` +
     `\\llap{${hook}}`
   );
 }
@@ -131,9 +140,10 @@ function railAbove(widthText, strut) {
 function railBelow(widthText, strut) {
   const raise = fmt(-(strut + HOOK_LEN - HOOK_DROP));
   const hook = `\\rule[${raise}em]{${fmt(HOOK_W)}em}{${fmt(HOOK_LEN)}em}`;
+  const i = fmt(HOOK_INSET);
   return (
-    `\\rlap{${hook}}` +
-    `\\underline{\\vphantom{\\rule[-${fmt(strut)}em]{0pt}{0.01em}}${widthText}}` +
+    `\\rlap{\\hspace{${i}em}${hook}}` +
+    `\\hspace{${i}em}\\underline{\\hspace{-${i}em}\\vphantom{\\rule[-${fmt(strut)}em]{0pt}{0.01em}}${widthText}\\hspace{-${i}em}}` +
     `\\llap{${hook}}`
   );
 }

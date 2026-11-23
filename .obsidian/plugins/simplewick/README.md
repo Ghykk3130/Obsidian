@@ -10,12 +10,14 @@ Obsidian 渲染任何公式都走 `MathJax.tex2chtml()`；插件包住这个函�
 `\wick{...}` 改写成下面这套 TeX 原语（都是 MathJax 自带的）：
 
 ```latex
-\rlap{\rule[0.70em]{0.05em}{0.56em}}
-\overline{\vphantom{\rule{0pt}{1.05em}} ... }
+\rlap{\hspace{0.25em}\rule[0.70em]{0.05em}{0.56em}}
+\hspace{0.25em}\overline{\hspace{-0.25em} ... \hspace{-0.25em}}
 \llap{\rule[0.70em]{0.05em}{0.56em}}
 ```
 
-`\overline` 负责横线，宽度正好等于场的宽度；两条零宽的 `\rule` 用 `\rlap`/`\llap` 贴在内容两端——注意是**内容**的两端，不是横线两端，所以钩子落在场的正上方。钩子顶端算到横线里（`\overline` 的横线在内容顶部上方 0.18em，钩子多留 0.21em），拐角是严丝合缝的直角。
+`\hspace{0.25em}` 把横线起点向里挪，`\overline` 里配一个 `\hspace{-0.25em}` 把宽度减回去，
+所以横线和钩子仍是直角，而钩子落在**场**上、不是表达式最外沿——Peskin 原书就是这样排的。
+钩子顶端算到横线里（`\overline` 的横线在内容顶部上方 0.18em，钩子多留 0.21em），拐角无缝。
 
 嵌套时外层横线会**自动抬高**：改写器知道里面那条线有多高，会给外层一个更高的
 `struts`，所以叠两条不会贴在一起。
