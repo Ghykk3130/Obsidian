@@ -1,7 +1,0 @@
-[
-  { "label": "crossing: (1,3) low + (2,4) high", "tex": "\\wickcross{\\phi_1}{\\phi_2\\phi_3}{\\phi_4}" },
-  { "label": "same, inside the Wick expansion line", "tex": "+ \\wickcross{\\phi_1}{\\phi_2\\phi_3}{\\phi_4} + \\wick{\\phi_1\\phi_2}\\,\\phi_3\\phi_4" },
-  { "label": "crossing with wider middle: (1,3)+(2,5)", "tex": "\\wickcross{\\phi_1}{\\phi_2\\phi_3}{\\phi_4\\phi_5}" },
-  { "label": "below crossing", "tex": "\\bwickcross{\\phi_1}{\\phi_2\\phi_3}{\\phi_4}" },
-  { "label": "nested for comparison: (1,4)+(2,3)", "tex": "\\wick{\\phi_1\\wick{\\phi_2\\phi_3}\\phi_4}" }
-]

@@ -39,11 +39,15 @@ const { Plugin, MarkdownView, Notice, loadMathJax } = require("obsidian");
 // Geometry, all in em against the baseline.
 const DEFAULT_STRUT = 1.05; // rule height when nothing forces it higher
 const HOOK_DROP = 0.35; // how far a hook reaches down below the rule
-const HOOK_LEN = 0.42; // hook length; the extra 0.07 is buried in the rule
 const HOOK_W = 0.05; // hook thickness
-const SIDE = 0.09; // rule overhang past the fields, each side
+// \overline puts its rule RAIL_GAP above the top of the box (0.18em is what
+// Obsidian's CHTML output uses: mjx-over { padding-bottom: 0.18em }).  The hook
+// is made long enough to run into the rule instead of stopping short of it.
+const RAIL_GAP = 0.18;
+const RAIL_THICK = 0.06;
+const HOOK_LEN = HOOK_DROP + RAIL_GAP + RAIL_THICK / 2; // 0.56
 const STACK_GAP = 0.30; // minimum clearance between stacked rules
-const RAIL = 0.08; // height a finished mark adds above its strut
+const RAIL = RAIL_GAP + RAIL_THICK + 0.02; // height a finished mark adds above its strut
 // For crossing marks the later rule sits exactly one hook-drop higher, so its
 // hooks land on the earlier rule — the way Peskin prints Eq. (4.39).
 const CROSS_GAP = HOOK_DROP;
@@ -118,20 +122,18 @@ function railAbove(widthText, strut) {
   const hook = `\\rule[${raise}em]{${fmt(HOOK_W)}em}{${fmt(HOOK_LEN)}em}`;
   return (
     `\\rlap{${hook}}` +
-    `\\overline{\\vphantom{\\rule{0pt}{${fmt(strut)}em}}` +
-    `\\hspace{${fmt(SIDE)}em}${widthText}\\hspace{${fmt(SIDE)}em}}` +
+    `\\overline{\\vphantom{\\rule{0pt}{${fmt(strut)}em}}${widthText}}` +
     `\\llap{${hook}}`
   );
 }
 
 /** Same, mirror-below the baseline. */
 function railBelow(widthText, strut) {
-  const raise = fmt(-(strut + 0.12));
+  const raise = fmt(-(strut + HOOK_LEN - HOOK_DROP));
   const hook = `\\rule[${raise}em]{${fmt(HOOK_W)}em}{${fmt(HOOK_LEN)}em}`;
   return (
     `\\rlap{${hook}}` +
-    `\\underline{\\vphantom{\\rule[-${fmt(strut)}em]{0pt}{0.01em}}` +
-    `\\hspace{${fmt(SIDE)}em}${widthText}\\hspace{${fmt(SIDE)}em}}` +
+    `\\underline{\\vphantom{\\rule[-${fmt(strut)}em]{0pt}{0.01em}}${widthText}}` +
     `\\llap{${hook}}`
   );
 }

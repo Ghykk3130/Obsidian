@@ -25,12 +25,12 @@ const struts = (tex) => [...tex.matchAll(/\\rule\{0pt\}\{([\d.]+)em\}/g)].map((m
   const out = t("\\wick{\\phi(x)\\phi(y)}");
   console.log("\n--- \\wick output ---\n" + out + "\n");
   check("no command left", !/\\wick/.test(out));
-  check("has rlap hook", out.includes("\\rlap{\\rule[0.70em]{0.05em}{0.42em}}"));
-  check("has llap hook", out.includes("\\llap{\\rule[0.70em]{0.05em}{0.42em}}"));
+  check("hook starts at strut - drop", out.includes("\\rlap{\\rule[0.70em]{0.05em}{0.56em}}"));
+  check("hook reaches into the rule", out.includes("\\llap{\\rule[0.70em]{0.05em}{0.56em}}"));
   check("has overline rail", out.includes("\\overline{"));
-  check("has side overhang", out.includes("\\hspace{0.09em}"));
+  check("no horizontal overhang", !out.includes("\\hspace"));
   check("default strut 1.05em", struts(out)[0] === 1.05, JSON.stringify(struts(out)));
-  check("body preserved", out.includes("\\phi(x)\\phi(y)"));
+  check("body preserved", out.includes("\\overline{\\vphantom{\\rule{0pt}{1.05em}}\\phi(x)\\phi(y)}"));
 }
 
 // 2. below variant
@@ -38,7 +38,7 @@ const struts = (tex) => [...tex.matchAll(/\\rule\{0pt\}\{([\d.]+)em\}/g)].map((m
   const out = t("\\bwick{A B}");
   check("below uses underline", out.includes("\\underline{"));
   check("below has no overline", !out.includes("\\overline{"));
-  check("below hook raise negative", out.includes("\\rule[-1.17em]"), out);
+  check("below hook raised past the rule", out.includes("\\rule[-1.26em]{0.05em}{0.56em}"), out);
 }
 
 // 3. nesting raises the outer rail
@@ -48,7 +48,7 @@ const struts = (tex) => [...tex.matchAll(/\\rule\{0pt\}\{([\d.]+)em\}/g)].map((m
   console.log("\n--- nested output ---\n" + out + "\n");
   check("two rails", s.length === 2, JSON.stringify(s));
   check("outer rail above inner", s[0] > s[1] + 0.2, JSON.stringify(s));
-  check("outer = inner + gap", Math.abs(s[0] - (s[1] + 0.08 + 0.30)) < 0.005, JSON.stringify(s));
+  check("outer = inner top + gap", Math.abs(s[0] - (s[1] + 0.26 + 0.30)) < 0.005, JSON.stringify(s));
 }
 
 // 4. explicit height overrides
@@ -61,7 +61,7 @@ const struts = (tex) => [...tex.matchAll(/\\rule\{0pt\}\{([\d.]+)em\}/g)].map((m
 {
   const out = t("\\contraction{i}{A_\\mu}{}{\\,B^\\mu}");
   check("prefix outside", out.startsWith("i\\rlap{"), out.slice(0, 30));
-  check("body joined", out.includes("\\overline{\\vphantom{\\rule{0pt}{1.05em}}\\hspace{0.09em}A_\\mu\\,B^\\mu\\hspace{0.09em}}"));
+  check("body joined", out.includes("\\overline{\\vphantom{\\rule{0pt}{1.05em}}A_\\mu\\,B^\\mu}"));
 }
 
 // 6. untouched cases
@@ -99,7 +99,6 @@ const struts = (tex) => [...tex.matchAll(/\\rule\{0pt\}\{([\d.]+)em\}/g)].map((m
 // 10. crossing marks
 {
   const out = t("\\wickcross{\\phi_1}{\\phi_2\\phi_3}{\\phi_4}");
-  console.log("\n--- wickcross output ---\n" + out + "\n");
   const s = struts(out);
   check("cross: two rails", s.length === 2, JSON.stringify(s));
   check("cross: later rail higher", s[0] > s[1], JSON.stringify(s));
@@ -112,10 +111,9 @@ const struts = (tex) => [...tex.matchAll(/\\rule\{0pt\}\{([\d.]+)em\}/g)].map((m
 // 11. crossing, below
 {
   const out = t("\\bwickcross{a}{b}{c}");
-  console.log("\n--- bwickcross output ---\n" + out + "\n");
   check("below-cross rails below", (out.match(/\\underline\{/g) || []).length === 2, out);
-  check("below-cross two negative rails", (out.match(/\\rule\[-1\.17em\]/g) || []).length === 2, out);
-  check("below-cross second rail lower", (out.match(/\\rule\[-1\.52em\]/g) || []).length === 2, out);
+  check("below-cross two negative rails", (out.match(/\\rule\[-1\.26em\]/g) || []).length === 2, out);
+  check("below-cross second rail lower", (out.match(/\\rule\[-1\.61em\]/g) || []).length === 2, out);
 }
 
 console.log(failed === 0 ? "\nall good" : `\n${failed} failing`);
