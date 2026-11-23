@@ -38,6 +38,13 @@ async function main() {
   const rect = await evalJs(`(async () => {
     const mj = window.MathJax;
     document.querySelectorAll('#sw-probe').forEach(e => e.remove());
+    // let Obsidian run its own math pipeline once, so the CHTML glyph rules and
+    // web fonts are initialised exactly as they are for a normal note.
+    for (const leaf of app.workspace.getLeavesOfType('markdown')) {
+      const pm = leaf.view && leaf.view.previewMode;
+      if (pm && typeof pm.rerender === 'function') { try { pm.rerender(true); } catch (_) {} }
+    }
+    await new Promise(r => setTimeout(r, 1500));
     await new Promise(r => requestAnimationFrame(r));
     const box = document.createElement('div');
     box.id = 'sw-probe';
@@ -60,8 +67,10 @@ async function main() {
       s.dataset.change = s.dataset.change === '1' ? '2' : '1';
     }
     void box.offsetHeight;
+    // the web fonts must be in before CHTML glyphs have their real size
+    try { await document.fonts.ready; } catch (_) {}
     await new Promise(r => requestAnimationFrame(() => requestAnimationFrame(r)));
-    await new Promise(r => setTimeout(r, 250));
+    await new Promise(r => setTimeout(r, 600));
     const r2 = box.getBoundingClientRect();
     return { x: r2.x, y: r2.y, w: r2.width, h: r2.height };
   })()`);
