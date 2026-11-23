@@ -1,5 +1,0 @@
-2026/11/22-20:58:12.944 4ec4 Creating DB D:\Obsidian\Physics\.dsh\tmp\edgeprofile4\Default\EdgeCoupons/coupons_data.db since it was missing.
-2026/11/22-20:58:12.969 4ec4 Reusing MANIFEST D:\Obsidian\Physics\.dsh\tmp\edgeprofile4\Default\EdgeCoupons/coupons_data.db/MANIFEST-000001
-2026/11/22-20:58:13.084 9e0c Level-0 table #5: started
-2026/11/22-20:58:13.088 9e0c Level-0 table #5: 683273 bytes OK
-2026/11/22-20:58:13.090 9e0c Delete type=0 #3
