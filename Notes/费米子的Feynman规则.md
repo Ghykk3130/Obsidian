@@ -14,3 +14,5 @@ S_{F}(x-y) & =\bra{0} T\psi(x)\bar{\psi}(y)\ket{0}  \\
 $$\begin{align}
 \bra{0} \psi(x)\bar{\psi}(y)\ket{0}  & = 
 \end{align}$$
+
+$$\wick{\psi, \gamma^{\mu}\bar{\psi}}$$
