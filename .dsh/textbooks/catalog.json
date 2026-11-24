@@ -1,6 +1,21 @@
 {
   "books": [
     {
+      "slug": "annett",
+      "file": "D:\\textbooks\\Superconductivity, superfluids, and condensates (James F. Annett) (z-library.sk, 1lib.sk, z-lib.sk).pdf",
+      "title": "Superconductivity, Superfluids and Condensates",
+      "authors": "James F. Annett",
+      "year": 2004,
+      "publisher": "Oxford University Press",
+      "pages": 141,
+      "text_pages": 141,
+      "offset": -3,
+      "offset_votes": 67,
+      "chars": 346521,
+      "text_file": "text/annett.txt",
+      "extracted_at": "2026-11-24T01:18:02+00:00"
+    },
+    {
       "slug": "peskin",
       "file": "D:\\textbooks\\An Introduction To Quantum Field Theory (Michael E. Peskin Daniel V. Schroeder) (Z-Library).pdf",
       "title": "An Introduction to Quantum Field Theory",
