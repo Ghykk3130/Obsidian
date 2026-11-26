@@ -97,16 +97,30 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Notes/申请.md",
+                "file": "Notes/Spin以及spinor formalism的基变换.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "申请"
+              "title": "Spin以及spinor formalism的基变换"
+            }
+          },
+          {
+            "id": "959074e37b100d7f",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Notes/超流序参量.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "超流序参量"
             }
           }
         ],
-        "currentTab": 6
+        "currentTab": 7
       }
     ],
     "direction": "vertical"
@@ -140,7 +154,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "申请",
+                "query": "",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -164,12 +178,12 @@
               "title": "Bookmarks"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "right": {
     "id": "46a80f8c4abe6250",
@@ -263,11 +277,13 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "d1edf234aaf59fe4",
+  "active": "959074e37b100d7f",
   "lastOpenFiles": [
+    "Notes/Spin以及spinor formalism的基变换.md",
+    "Notes/超流序参量.md",
+    "Notes/申请.md",
     "Homework/Physics 510/Physics 510 Homework 12.md",
     "Homework/Physics 513/Physics 513 homework 8.md",
-    "Notes/申请.md",
     "Homework/Physics 513/Physics 513 homework 11.md",
     "_fix.py",
     "_check.py",
