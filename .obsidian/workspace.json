@@ -111,12 +111,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Notes/超流序参量.md",
+                "file": "Notes/申请.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "超流序参量"
+              "title": "申请"
             }
           }
         ],
@@ -154,7 +154,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "申请",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -178,12 +178,12 @@
               "title": "Bookmarks"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "right": {
     "id": "46a80f8c4abe6250",
@@ -279,8 +279,8 @@
   },
   "active": "959074e37b100d7f",
   "lastOpenFiles": [
-    "Notes/Spin以及spinor formalism的基变换.md",
     "Notes/超流序参量.md",
+    "Notes/Spin以及spinor formalism的基变换.md",
     "Notes/申请.md",
     "Homework/Physics 510/Physics 510 Homework 12.md",
     "Homework/Physics 513/Physics 513 homework 8.md",
